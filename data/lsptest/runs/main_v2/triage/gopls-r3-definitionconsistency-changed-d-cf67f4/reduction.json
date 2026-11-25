@@ -1,0 +1,93 @@
+{
+ "vid": "41cf2f692422-v00",
+ "ops_before": 0,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 0,
+ "cache_hits": 0,
+ "reduce_seconds": 0.0,
+ "budget_exhausted": false,
+ "probe_log": [],
+ "logs": [
+  "gopls-v0.23.0-trcf67f4-r3-replay-baseline-20261118-235852-ee553a.jsonl.gz",
+  "gopls-v0.23.0-trcf67f4-r3-replay-control-20261118-235857-adb335.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [
+   [
+    "task/governor_command_test.go",
+    22,
+    1,
+    22,
+    37
+   ]
+  ],
+  "actual": [
+   [
+    "temp/lsp_servers/gopath/pkg/mod/github.com/stretchr/testify@v1.10.0/assert/assertion_compare.go",
+    0,
+    0,
+    7,
+    1
+   ],
+   [
+    "temp/lsp_servers/gopath/pkg/mod/github.com/stretchr/testify@v1.10.0/assert/assertion_format.go",
+    2,
+    0,
+    8,
+    1
+   ],
+   [
+    "temp/lsp_servers/gopath/pkg/mod/github.com/stretchr/testify@v1.10.0/assert/assertion_forward.go",
+    2,
+    0,
+    8,
+    1
+   ],
+   [
+    "temp/lsp_servers/gopath/pkg/mod/github.com/stretchr/testify@v1.10.0/assert/assertion_order.go",
+    0,
+    0,
+    5,
+    1
+   ],
+   [
+    "temp/lsp_servers/gopath/pkg/mod/github.com/stretchr/testify@v1.10.0/assert/assertions.go",
+    0,
+    0,
+    24,
+    1
+   ],
+   [
+    "temp/lsp_servers/gopath/pkg/mod/github.com/stretchr/testify@v1.10.0/assert/doc.go",
+    45,
+    0,
+    45,
+    14
+   ],
+   [
+    "temp/lsp_servers/gopath/pkg/mod/github.com/stretchr/testify@v1.10.0/assert/errors.go",
+    0,
+    0,
+    4,
+    1
+   ],
+   [
+    "temp/lsp_servers/gopath/pkg/mod/github.com/stretchr/testify@v1.10.0/assert/forward_assertions.go",
+    0,
+    0,
+    0,
+    14
+   ],
+   [
+    "temp/lsp_servers/gopath/pkg/mod/github.com/stretchr/testify@v1.10.0/assert/http_assertions.go",
+    0,
+    0,
+    8,
+    1
+   ]
+  ]
+ },
+ "ops_after": 0,
+ "total_seconds": 42.3
+}

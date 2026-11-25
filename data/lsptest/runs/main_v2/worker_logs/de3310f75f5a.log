@@ -1,0 +1,3 @@
+2026-11-18 14:08:54,061 INFO campaign_run run de3310f75f5a: r5_transforms on ts6 6.0.3, pear-devs/pear-desktop@3ff0a86231fe seed 2 settled, targets ['src/plugins/album-actions/templates/undislike-button.tsx', 'src/plugins/downloader/main/index.ts', 'src/plugins/equalizer/index.ts']
+2026-11-18 14:16:06,472 INFO campaign_run run de3310f75f5a: 0 candidate(s) in 432s; confirming
+2026-11-18 14:16:06,473 INFO campaign_run run de3310f75f5a finished: ok, 0 confirmed of 0 candidate(s), 432s

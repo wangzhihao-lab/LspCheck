@@ -1,0 +1,538 @@
+{
+ "oracle": "r2_handles",
+ "server": "gopls",
+ "version": "v0.23.0",
+ "project": "spf13/cobra@adbc8813901b",
+ "language": "go",
+ "seed": 1,
+ "targets": [
+  {
+   "path": "args_test.go",
+   "positions": [
+    [
+     94,
+     45
+    ],
+    [
+     98,
+     53
+    ],
+    [
+     135,
+     1
+    ],
+    [
+     187,
+     61
+    ],
+    [
+     252,
+     5
+    ],
+    [
+     326,
+     29
+    ],
+    [
+     517,
+     25
+    ],
+    [
+     569,
+     28
+    ]
+   ],
+   "ends": [
+    [
+     94,
+     47
+    ],
+    [
+     98,
+     54
+    ],
+    [
+     135,
+     2
+    ],
+    [
+     187,
+     63
+    ],
+    [
+     252,
+     7
+    ],
+    [
+     326,
+     30
+    ],
+    [
+     517,
+     27
+    ],
+    [
+     569,
+     30
+    ]
+   ],
+   "names": [
+    "got",
+    "T",
+    "c",
+    "true",
+    "err",
+    "t",
+    "fail",
+    "Use"
+   ]
+  },
+  {
+   "path": "flag_groups.go",
+   "positions": [
+    [
+     37,
+     93
+    ],
+    [
+     85,
+     14
+    ],
+    [
+     92,
+     3
+    ],
+    [
+     98,
+     24
+    ],
+    [
+     110,
+     23
+    ],
+    [
+     125,
+     33
+    ],
+    [
+     232,
+     40
+    ],
+    [
+     236,
+     41
+    ]
+   ],
+   "ends": [
+    [
+     37,
+     94
+    ],
+    [
+     85,
+     17
+    ],
+    [
+     92,
+     6
+    ],
+    [
+     98,
+     37
+    ],
+    [
+     110,
+     25
+    ],
+    [
+     125,
+     36
+    ],
+    [
+     232,
+     43
+    ],
+    [
+     236,
+     44
+    ]
+   ],
+   "names": [
+    "v",
+    "Flags",
+    "flags",
+    "validateRequiredFlagGroups",
+    "flag",
+    "group",
+    "string",
+    "pflag"
+   ]
+  }
+ ],
+ "max_cases": 12,
+ "timing": "settled",
+ "result": {
+  "oracle": "r2_handles",
+  "run_id": "r2_handles-gopls-083457",
+  "cases": 12,
+  "invalid_cases": 0,
+  "sessions": 1,
+  "unsettled": 0,
+  "compared": {
+   "codeActionResolve": 4
+  },
+  "unstable": {},
+  "seconds": 78.802,
+  "notes": [
+   "handle kinds: {'codeAction': True, 'completion': False, 'delta': False}",
+   "allowed codeActionResolve no edit: 9"
+  ],
+  "candidates": [
+   {
+    "oracle": "r2_handles",
+    "server": "gopls-v0.23.0",
+    "project": "spf13/cobra@adbc8813901b",
+    "key": {
+     "method": "codeActionResolve",
+     "path": "args_test.go",
+     "line": 569,
+     "character": 28,
+     "extra": "pos:569:28|top2|Split elements into separate lines|refactor.rewrite.splitLines|0"
+    },
+    "expected": [
+     [
+      "args_test.go",
+      571,
+      27,
+      571,
+      27,
+      "\n\t\t"
+     ],
+     [
+      "args_test.go",
+      571,
+      44,
+      571,
+      46,
+      ",\n\t\t"
+     ],
+     [
+      "args_test.go",
+      571,
+      55,
+      571,
+      57,
+      ",\n\t\t"
+     ],
+     [
+      "args_test.go",
+      571,
+      70,
+      571,
+      70,
+      ",\n\t"
+     ]
+    ],
+    "actual": [
+     [
+      "args_test.go",
+      569,
+      21,
+      569,
+      21,
+      "\n\t\t"
+     ],
+     [
+      "args_test.go",
+      569,
+      32,
+      569,
+      34,
+      ",\n\t\t"
+     ],
+     [
+      "args_test.go",
+      569,
+      43,
+      569,
+      45,
+      ",\n\t\t"
+     ],
+     [
+      "args_test.go",
+      569,
+      58,
+      569,
+      58,
+      ",\n\t"
+     ]
+    ],
+    "ops": [
+     {
+      "kind": "open",
+      "path": "args_test.go"
+     },
+     {
+      "kind": "change",
+      "path": "args_test.go",
+      "start": [
+       0,
+       0
+      ],
+      "end": [
+       0,
+       0
+      ],
+      "text": "\n\n"
+     }
+    ],
+    "detail": "{\"case\": {\"extra\": \"pos\", \"path\": \"args_test.go\", \"shift\": {\"col\": 0, \"line\": 0, \"text\": \"\\n\\n\", \"variant\": \"top\"}, \"sub\": \"codeAction\", \"where\": [569, 28, 569, 28]}, \"note\": \"\", \"shape\": \"codeActionResolve:changed\"}",
+    "reproduced": "0/0",
+    "reduced_ops": [],
+    "signature": "gopls|r2_handles|codeActionResolve:changed",
+    "run_id": "r2_handles-gopls-083457"
+   }
+  ]
+ },
+ "replays": [
+  {
+   "signature": "gopls|r2_handles|codeActionResolve:changed",
+   "key": {
+    "method": "codeActionResolve",
+    "path": "args_test.go",
+    "line": 569,
+    "character": 28,
+    "extra": "pos:569:28|top2|Split elements into separate lines|refactor.rewrite.splitLines|0"
+   },
+   "outcomes": [
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 11.499,
+     "observed_shape": "codeActionResolve:changed",
+     "observed_actual": [
+      [
+       "args_test.go",
+       569,
+       21,
+       569,
+       21,
+       "\n\t\t"
+      ],
+      [
+       "args_test.go",
+       569,
+       32,
+       569,
+       34,
+       ",\n\t\t"
+      ],
+      [
+       "args_test.go",
+       569,
+       43,
+       569,
+       45,
+       ",\n\t\t"
+      ],
+      [
+       "args_test.go",
+       569,
+       58,
+       569,
+       58,
+       ",\n\t"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "args_test.go",
+       571,
+       27,
+       571,
+       27,
+       "\n\t\t"
+      ],
+      [
+       "args_test.go",
+       571,
+       44,
+       571,
+       46,
+       ",\n\t\t"
+      ],
+      [
+       "args_test.go",
+       571,
+       55,
+       571,
+       57,
+       ",\n\t\t"
+      ],
+      [
+       "args_test.go",
+       571,
+       70,
+       571,
+       70,
+       ",\n\t"
+      ]
+     ]
+    },
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 11.855,
+     "observed_shape": "codeActionResolve:changed",
+     "observed_actual": [
+      [
+       "args_test.go",
+       569,
+       21,
+       569,
+       21,
+       "\n\t\t"
+      ],
+      [
+       "args_test.go",
+       569,
+       32,
+       569,
+       34,
+       ",\n\t\t"
+      ],
+      [
+       "args_test.go",
+       569,
+       43,
+       569,
+       45,
+       ",\n\t\t"
+      ],
+      [
+       "args_test.go",
+       569,
+       58,
+       569,
+       58,
+       ",\n\t"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "args_test.go",
+       571,
+       27,
+       571,
+       27,
+       "\n\t\t"
+      ],
+      [
+       "args_test.go",
+       571,
+       44,
+       571,
+       46,
+       ",\n\t\t"
+      ],
+      [
+       "args_test.go",
+       571,
+       55,
+       571,
+       57,
+       ",\n\t\t"
+      ],
+      [
+       "args_test.go",
+       571,
+       70,
+       571,
+       70,
+       ",\n\t"
+      ]
+     ]
+    },
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 11.583,
+     "observed_shape": "codeActionResolve:changed",
+     "observed_actual": [
+      [
+       "args_test.go",
+       569,
+       21,
+       569,
+       21,
+       "\n\t\t"
+      ],
+      [
+       "args_test.go",
+       569,
+       32,
+       569,
+       34,
+       ",\n\t\t"
+      ],
+      [
+       "args_test.go",
+       569,
+       43,
+       569,
+       45,
+       ",\n\t\t"
+      ],
+      [
+       "args_test.go",
+       569,
+       58,
+       569,
+       58,
+       ",\n\t"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "args_test.go",
+       571,
+       27,
+       571,
+       27,
+       "\n\t\t"
+      ],
+      [
+       "args_test.go",
+       571,
+       44,
+       571,
+       46,
+       ",\n\t\t"
+      ],
+      [
+       "args_test.go",
+       571,
+       55,
+       571,
+       57,
+       ",\n\t\t"
+      ],
+      [
+       "args_test.go",
+       571,
+       70,
+       571,
+       70,
+       ",\n\t"
+      ]
+     ]
+    }
+   ],
+   "reproduced": "3/3"
+  }
+ ],
+ "total_seconds": 113.7
+}

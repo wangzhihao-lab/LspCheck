@@ -1,0 +1,3 @@
+2026-09-25 11:58:48,140 INFO campaign_run run 02232de3a3fa: r1_history on gopls v0.4.3, gopls-38424 seed 3 settled, targets ['main2.go']
+2026-09-25 12:06:57,000 INFO campaign_run run 02232de3a3fa: 6 candidate(s) in 489s; confirming
+2026-09-25 12:06:57,002 INFO campaign_run run 02232de3a3fa finished: ok, 0 confirmed of 6 candidate(s), 489s

@@ -1,0 +1,3 @@
+2026-11-18 12:41:33,005 INFO campaign_run run ae114c93cc63: r3_routes on ts7 7.0.2, solidjs/solid@4b62bc29e04b seed 2 settled, targets ['examples/rendering/shared/src/router.tsx', 'packages/signals/tests/latest-plain-write-purity.test.ts', 'packages/web/test/server/server-functions-decoder-rejection-ownership.spec.tsx']
+2026-11-18 12:45:54,889 INFO campaign_run run ae114c93cc63: 10 candidate(s) in 262s; confirming
+2026-11-18 12:45:54,891 INFO campaign_run run ae114c93cc63 finished: ok, 0 confirmed of 10 candidate(s), 262s

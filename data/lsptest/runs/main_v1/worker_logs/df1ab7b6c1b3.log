@@ -1,0 +1,3 @@
+2026-09-23 19:29:33,554 INFO campaign_run run df1ab7b6c1b3: r2_handles on pyright 1.1.414, browser-use/browser-use@d8110c5ff87c seed 1 settled, targets ['browser_use/llm/openrouter/chat.py', 'examples/getting_started/01_basic_search.py', 'tests/ci/models/model_test_helper.py']
+2026-09-23 19:30:48,147 INFO campaign_run run df1ab7b6c1b3: 0 candidate(s) in 75s; confirming
+2026-09-23 19:30:48,149 INFO campaign_run run df1ab7b6c1b3 finished: ok, 0 confirmed of 0 candidate(s), 75s

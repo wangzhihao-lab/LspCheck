@@ -1,0 +1,389 @@
+{
+ "format": 1,
+ "campaign": "bench_v1",
+ "vid": "030a118004d8-v01",
+ "run_id": "030a118004d8",
+ "oracle": "r3_routes",
+ "server": {
+  "kind": "gopls",
+  "version": "v0.19.0"
+ },
+ "project": {
+  "name": "gopls-73564",
+  "source": "dir",
+  "ref": "data/lsp_bench/cases/gopls-73564/project",
+  "commit": "",
+  "language": "go"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 180.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "main.go",
+    "positions": [
+     [
+      7,
+      9
+     ],
+     [
+      8,
+      4
+     ],
+     [
+      14,
+      3
+     ],
+     [
+      19,
+      18
+     ],
+     [
+      19,
+      28
+     ],
+     [
+      23,
+      19
+     ],
+     [
+      24,
+      8
+     ],
+     [
+      32,
+      22
+     ],
+     [
+      37,
+      4
+     ],
+     [
+      38,
+      13
+     ],
+     [
+      38,
+      22
+     ],
+     [
+      40,
+      5
+     ],
+     [
+      40,
+      10
+     ],
+     [
+      40,
+      26
+     ],
+     [
+      41,
+      6
+     ],
+     [
+      49,
+      12
+     ],
+     [
+      49,
+      27
+     ],
+     [
+      50,
+      9
+     ],
+     [
+      50,
+      61
+     ],
+     [
+      50,
+      74
+     ]
+    ],
+    "ends": [
+     [
+      7,
+      14
+     ],
+     [
+      8,
+      8
+     ],
+     [
+      14,
+      5
+     ],
+     [
+      19,
+      22
+     ],
+     [
+      19,
+      31
+     ],
+     [
+      23,
+      24
+     ],
+     [
+      24,
+      9
+     ],
+     [
+      32,
+      25
+     ],
+     [
+      37,
+      7
+     ],
+     [
+      38,
+      18
+     ],
+     [
+      38,
+      24
+     ],
+     [
+      40,
+      6
+     ],
+     [
+      40,
+      13
+     ],
+     [
+      40,
+      29
+     ],
+     [
+      41,
+      7
+     ],
+     [
+      49,
+      13
+     ],
+     [
+      49,
+      29
+     ],
+     [
+      50,
+      12
+     ],
+     [
+      50,
+      62
+     ],
+     [
+      50,
+      75
+     ]
+    ],
+    "names": [
+     "FruitInfo",
+     "GetName",
+     "Name",
+     "GetName",
+     "string",
+     "GetWeight",
+     "f",
+     "Weight",
+     "fruits",
+     "FruitInfo",
+     "bool",
+     "_",
+     "fruit",
+     "fruits",
+     "cb",
+     "f",
+     "bool",
+     "Printf",
+     "f",
+     "f"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "highlightVsReferences",
+  "path": "main.go",
+  "line": 50,
+  "character": 61,
+  "extra": ""
+ },
+ "ops": [],
+ "case": {
+  "path": "main.go",
+  "pos": [
+   50,
+   61
+  ],
+  "sub": "c"
+ },
+ "shape": "highlightVsReferences:extra",
+ "signature": "gopls|r3_routes|highlightVsReferences:extra",
+ "expected": [
+  [
+   49,
+   12,
+   49,
+   13
+  ],
+  [
+   50,
+   61,
+   50,
+   62
+  ],
+  [
+   50,
+   74,
+   50,
+   75
+  ],
+  [
+   52,
+   9,
+   52,
+   10
+  ]
+ ],
+ "actual": [
+  [
+   49,
+   12,
+   49,
+   13
+  ],
+  [
+   50,
+   37,
+   50,
+   39
+  ],
+  [
+   50,
+   61,
+   50,
+   62
+  ],
+  [
+   50,
+   61,
+   50,
+   72
+  ],
+  [
+   50,
+   74,
+   50,
+   75
+  ],
+  [
+   52,
+   9,
+   52,
+   10
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "4 references; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 18s",
+ "violation": {
+  "oracle": "r3_routes",
+  "server": "gopls-v0.19.0",
+  "project": "gopls-73564",
+  "key": {
+   "method": "highlightVsReferences",
+   "path": "main.go",
+   "line": 50,
+   "character": 61,
+   "extra": ""
+  },
+  "expected": [
+   [
+    49,
+    12,
+    49,
+    13
+   ],
+   [
+    50,
+    61,
+    50,
+    62
+   ],
+   [
+    50,
+    74,
+    50,
+    75
+   ],
+   [
+    52,
+    9,
+    52,
+    10
+   ]
+  ],
+  "actual": [
+   [
+    49,
+    12,
+    49,
+    13
+   ],
+   [
+    50,
+    37,
+    50,
+    39
+   ],
+   [
+    50,
+    61,
+    50,
+    62
+   ],
+   [
+    50,
+    61,
+    50,
+    72
+   ],
+   [
+    50,
+    74,
+    50,
+    75
+   ],
+   [
+    52,
+    9,
+    52,
+    10
+   ]
+  ],
+  "ops": [],
+  "detail": "{\"case\": {\"path\": \"main.go\", \"pos\": [50, 61], \"sub\": \"c\"}, \"note\": \"4 references; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 18s\", \"shape\": \"highlightVsReferences:extra\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "gopls|r3_routes|highlightVsReferences:extra",
+  "run_id": "030a118004d8"
+ },
+ "replay_logs": [
+  "logs/gopls-v0.19.0-030a118004d8-r3-replay-baseline-20260924-202626-dc74cc.jsonl.gz",
+  "logs/gopls-v0.19.0-030a118004d8-r3-replay-control-20260924-202629-0569a9.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

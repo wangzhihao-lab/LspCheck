@@ -1,0 +1,12 @@
+2026-11-18 00:42:32,242 INFO campaign_run run 7f3fa823fc51: r3_routes on rust-analyzer 2026-09-21, googleworkspace/cli@a3768d0e82ad seed 1 settled, targets ['crates/google-workspace-cli/src/auth.rs', 'crates/google-workspace-cli/src/helpers/events/mod.rs', 'crates/google-workspace-cli/src/schema.rs']
+2026-11-18 00:46:09,778 INFO campaign_run run 7f3fa823fc51: 3 candidate(s) in 218s; confirming
+2026-11-18 00:47:16,188 INFO flake replay 1/3 of rust-analyzer|r3_routes|semanticTokensRange:changed: settled=True control_stable=True reproduced=True (66.4s)
+2026-11-18 00:48:32,388 INFO flake replay 2/3 of rust-analyzer|r3_routes|semanticTokensRange:changed: settled=True control_stable=True reproduced=True (76.2s)
+2026-11-18 00:49:43,055 INFO flake replay 3/3 of rust-analyzer|r3_routes|semanticTokensRange:changed: settled=True control_stable=True reproduced=True (70.7s)
+2026-11-18 00:50:54,101 INFO flake replay 1/3 of rust-analyzer|r3_routes|definitionConsistency:changed: settled=True control_stable=True reproduced=True (71.0s)
+2026-11-18 00:52:02,011 INFO flake replay 2/3 of rust-analyzer|r3_routes|definitionConsistency:changed: settled=True control_stable=True reproduced=True (67.9s)
+2026-11-18 00:53:03,430 INFO flake replay 3/3 of rust-analyzer|r3_routes|definitionConsistency:changed: settled=True control_stable=True reproduced=True (61.4s)
+2026-11-18 00:54:44,913 INFO flake replay 1/3 of rust-analyzer|r3_routes|diagnostics:missing:inactive_code: settled=True control_stable=True reproduced=True (101.5s)
+2026-11-18 00:56:21,109 INFO flake replay 2/3 of rust-analyzer|r3_routes|diagnostics:missing:inactive_code: settled=True control_stable=True reproduced=True (96.2s)
+2026-11-18 00:58:32,246 INFO flake replay 3/3 of rust-analyzer|r3_routes|diagnostics:missing:inactive_code: settled=True control_stable=True reproduced=True (131.1s)
+2026-11-18 00:58:32,369 INFO campaign_run run 7f3fa823fc51 finished: ok, 3 confirmed of 3 candidate(s), 960s

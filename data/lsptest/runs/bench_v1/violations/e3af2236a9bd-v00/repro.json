@@ -1,0 +1,701 @@
+{
+ "format": 1,
+ "campaign": "bench_v1",
+ "vid": "e3af2236a9bd-v00",
+ "run_id": "e3af2236a9bd",
+ "oracle": "r1_history",
+ "server": {
+  "kind": "rust-analyzer",
+  "version": "2025-10-27"
+ },
+ "project": {
+  "name": "rust-analyzer-20588",
+  "source": "dir",
+  "ref": "data/lsp_bench/cases/rust-analyzer-20588/project",
+  "commit": "",
+  "language": "rust"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "race0",
+  "settle_timeout_s": 240.0,
+  "request_timeout_s": 60.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "src/lib.rs",
+    "positions": [
+     [
+      0,
+      10
+     ],
+     [
+      0,
+      18
+     ],
+     [
+      4,
+      3
+     ],
+     [
+      4,
+      11
+     ],
+     [
+      5,
+      4
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      11
+     ],
+     [
+      0,
+      20
+     ],
+     [
+      4,
+      4
+     ],
+     [
+      4,
+      13
+     ],
+     [
+      5,
+      5
+     ]
+    ],
+    "names": [
+     "f",
+     "i32",
+     "g",
+     "i32",
+     "f"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "diagnostics",
+  "path": "src/lib.rs",
+  "line": -1,
+  "character": -1,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "src/lib.rs"
+  },
+  {
+   "kind": "fs_rename",
+   "path": "src/lib.rs",
+   "new_path": "src/lib_rt.rs"
+  },
+  {
+   "kind": "fs_rename",
+   "path": "src/lib_rt.rs",
+   "new_path": "src/lib.rs"
+  },
+  {
+   "kind": "change",
+   "path": "src/lib.rs",
+   "start": [
+    0,
+    16
+   ],
+   "end": [
+    0,
+    22
+   ]
+  },
+  {
+   "kind": "close",
+   "path": "src/lib.rs"
+  },
+  {
+   "kind": "open",
+   "path": "src/lib.rs"
+  },
+  {
+   "kind": "change",
+   "path": "src/lib.rs",
+   "start": [
+    4,
+    10
+   ],
+   "end": [
+    4,
+    13
+   ],
+   "text": "zz"
+  },
+  {
+   "kind": "change",
+   "path": "src/lib.rs",
+   "start": [
+    4,
+    10
+   ],
+   "end": [
+    4,
+    12
+   ],
+   "text": "i32"
+  },
+  {
+   "kind": "request",
+   "path": "src/lib.rs",
+   "start": [
+    0,
+    10
+   ],
+   "text": "definition"
+  },
+  {
+   "kind": "request",
+   "path": "src/lib.rs",
+   "start": [
+    4,
+    11
+   ],
+   "text": "definition"
+  },
+  {
+   "kind": "request",
+   "path": "src/lib.rs",
+   "start": [
+    4,
+    3
+   ],
+   "text": "hover"
+  },
+  {
+   "kind": "request",
+   "path": "src/lib.rs",
+   "start": [
+    4,
+    4
+   ],
+   "text": "documentHighlight"
+  },
+  {
+   "kind": "request",
+   "path": "src/lib.rs",
+   "start": [
+    5,
+    4
+   ],
+   "text": "hover"
+  },
+  {
+   "kind": "request",
+   "path": "src/lib.rs",
+   "start": [
+    0,
+    18
+   ],
+   "text": "signatureHelp"
+  },
+  {
+   "kind": "request",
+   "path": "src/lib.rs",
+   "start": [
+    4,
+    13
+   ],
+   "text": "documentHighlight"
+  },
+  {
+   "kind": "change",
+   "path": "src/lib.rs",
+   "start": [
+    4,
+    0
+   ],
+   "end": [
+    5,
+    0
+   ]
+  },
+  {
+   "kind": "save",
+   "path": "src/lib.rs"
+  },
+  {
+   "kind": "change",
+   "path": "src/lib.rs",
+   "start": [
+    4,
+    0
+   ],
+   "end": [
+    4,
+    0
+   ],
+   "text": "fn g() "
+  },
+  {
+   "kind": "change",
+   "path": "src/lib.rs",
+   "start": [
+    4,
+    7
+   ],
+   "end": [
+    4,
+    7
+   ],
+   "text": "-> i32 {\n"
+  },
+  {
+   "kind": "save",
+   "path": "src/lib.rs"
+  },
+  {
+   "kind": "set_config",
+   "settings": {
+    "rust-analyzer": {
+     "procMacro": {
+      "enable": false
+     }
+    }
+   }
+  },
+  {
+   "kind": "set_config",
+   "settings": {
+    "rust-analyzer": {
+     "procMacro": {
+      "enable": true
+     }
+    }
+   }
+  },
+  {
+   "kind": "change",
+   "path": "src/lib.rs",
+   "start": [
+    0,
+    10
+   ],
+   "end": [
+    0,
+    11
+   ],
+   "text": "zz"
+  },
+  {
+   "kind": "change",
+   "path": "src/lib.rs",
+   "start": [
+    0,
+    10
+   ],
+   "end": [
+    0,
+    12
+   ],
+   "text": "f"
+  },
+  {
+   "kind": "set_config",
+   "settings": {
+    "rust-analyzer": {
+     "cargo": {
+      "buildScripts": {
+       "enable": false
+      }
+     }
+    }
+   }
+  },
+  {
+   "kind": "change",
+   "path": "src/lib.rs",
+   "start": [
+    6,
+    0
+   ],
+   "end": [
+    6,
+    1
+   ]
+  },
+  {
+   "kind": "close",
+   "path": "src/lib.rs"
+  },
+  {
+   "kind": "open",
+   "path": "src/lib.rs"
+  },
+  {
+   "kind": "set_config",
+   "settings": {
+    "rust-analyzer": {
+     "cargo": {
+      "buildScripts": {
+       "enable": true
+      }
+     }
+    }
+   }
+  },
+  {
+   "kind": "fs_rename",
+   "path": "src/lib.rs",
+   "new_path": "src/lib_rt.rs"
+  },
+  {
+   "kind": "fs_rename",
+   "path": "src/lib_rt.rs",
+   "new_path": "src/lib.rs"
+  }
+ ],
+ "case": {
+  "chain_step": 8,
+  "families": [
+   "H5",
+   "H3",
+   "H8",
+   "H2",
+   "H4",
+   "H1",
+   "H7",
+   "H5"
+  ],
+  "family": "H5",
+  "history_index": 7,
+  "history_seed": 1010,
+  "mode": "chain",
+  "note": "rename src/lib.rs -> src/lib_rt.rs -> back",
+  "seed": 1,
+  "timing": "race0"
+ },
+ "shape": "diagnostics:extra:E0133",
+ "signature": "rust-analyzer|r1_history|diagnostics:extra:E0133",
+ "expected": [],
+ "actual": [
+  [
+   5,
+   4,
+   5,
+   7,
+   1,
+   "E0133",
+   "rust-analyzer",
+   "call to unsafe function is unsafe and requires an unsafe function or block"
+  ]
+ ],
+ "reproduced": "0/3",
+ "note": "H5: rename src/lib.rs -> src/lib_rt.rs -> back; flake 0/3 [r1:SCr r2:SCr r3:SCr] in 41s",
+ "violation": {
+  "oracle": "r1_history",
+  "server": "rust-analyzer-2025-10-27",
+  "project": "rust-analyzer-20588",
+  "key": {
+   "method": "diagnostics",
+   "path": "src/lib.rs",
+   "line": -1,
+   "character": -1,
+   "extra": ""
+  },
+  "expected": [],
+  "actual": [
+   [
+    5,
+    4,
+    5,
+    7,
+    1,
+    "E0133",
+    "rust-analyzer",
+    "call to unsafe function is unsafe and requires an unsafe function or block"
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "src/lib.rs"
+   },
+   {
+    "kind": "fs_rename",
+    "path": "src/lib.rs",
+    "new_path": "src/lib_rt.rs"
+   },
+   {
+    "kind": "fs_rename",
+    "path": "src/lib_rt.rs",
+    "new_path": "src/lib.rs"
+   },
+   {
+    "kind": "change",
+    "path": "src/lib.rs",
+    "start": [
+     0,
+     16
+    ],
+    "end": [
+     0,
+     22
+    ]
+   },
+   {
+    "kind": "close",
+    "path": "src/lib.rs"
+   },
+   {
+    "kind": "open",
+    "path": "src/lib.rs"
+   },
+   {
+    "kind": "change",
+    "path": "src/lib.rs",
+    "start": [
+     4,
+     10
+    ],
+    "end": [
+     4,
+     13
+    ],
+    "text": "zz"
+   },
+   {
+    "kind": "change",
+    "path": "src/lib.rs",
+    "start": [
+     4,
+     10
+    ],
+    "end": [
+     4,
+     12
+    ],
+    "text": "i32"
+   },
+   {
+    "kind": "request",
+    "path": "src/lib.rs",
+    "start": [
+     0,
+     10
+    ],
+    "text": "definition"
+   },
+   {
+    "kind": "request",
+    "path": "src/lib.rs",
+    "start": [
+     4,
+     11
+    ],
+    "text": "definition"
+   },
+   {
+    "kind": "request",
+    "path": "src/lib.rs",
+    "start": [
+     4,
+     3
+    ],
+    "text": "hover"
+   },
+   {
+    "kind": "request",
+    "path": "src/lib.rs",
+    "start": [
+     4,
+     4
+    ],
+    "text": "documentHighlight"
+   },
+   {
+    "kind": "request",
+    "path": "src/lib.rs",
+    "start": [
+     5,
+     4
+    ],
+    "text": "hover"
+   },
+   {
+    "kind": "request",
+    "path": "src/lib.rs",
+    "start": [
+     0,
+     18
+    ],
+    "text": "signatureHelp"
+   },
+   {
+    "kind": "request",
+    "path": "src/lib.rs",
+    "start": [
+     4,
+     13
+    ],
+    "text": "documentHighlight"
+   },
+   {
+    "kind": "change",
+    "path": "src/lib.rs",
+    "start": [
+     4,
+     0
+    ],
+    "end": [
+     5,
+     0
+    ]
+   },
+   {
+    "kind": "save",
+    "path": "src/lib.rs"
+   },
+   {
+    "kind": "change",
+    "path": "src/lib.rs",
+    "start": [
+     4,
+     0
+    ],
+    "end": [
+     4,
+     0
+    ],
+    "text": "fn g() "
+   },
+   {
+    "kind": "change",
+    "path": "src/lib.rs",
+    "start": [
+     4,
+     7
+    ],
+    "end": [
+     4,
+     7
+    ],
+    "text": "-> i32 {\n"
+   },
+   {
+    "kind": "save",
+    "path": "src/lib.rs"
+   },
+   {
+    "kind": "set_config",
+    "settings": {
+     "rust-analyzer": {
+      "procMacro": {
+       "enable": false
+      }
+     }
+    }
+   },
+   {
+    "kind": "set_config",
+    "settings": {
+     "rust-analyzer": {
+      "procMacro": {
+       "enable": true
+      }
+     }
+    }
+   },
+   {
+    "kind": "change",
+    "path": "src/lib.rs",
+    "start": [
+     0,
+     10
+    ],
+    "end": [
+     0,
+     11
+    ],
+    "text": "zz"
+   },
+   {
+    "kind": "change",
+    "path": "src/lib.rs",
+    "start": [
+     0,
+     10
+    ],
+    "end": [
+     0,
+     12
+    ],
+    "text": "f"
+   },
+   {
+    "kind": "set_config",
+    "settings": {
+     "rust-analyzer": {
+      "cargo": {
+       "buildScripts": {
+        "enable": false
+       }
+      }
+     }
+    }
+   },
+   {
+    "kind": "change",
+    "path": "src/lib.rs",
+    "start": [
+     6,
+     0
+    ],
+    "end": [
+     6,
+     1
+    ]
+   },
+   {
+    "kind": "close",
+    "path": "src/lib.rs"
+   },
+   {
+    "kind": "open",
+    "path": "src/lib.rs"
+   },
+   {
+    "kind": "set_config",
+    "settings": {
+     "rust-analyzer": {
+      "cargo": {
+       "buildScripts": {
+        "enable": true
+       }
+      }
+     }
+    }
+   },
+   {
+    "kind": "fs_rename",
+    "path": "src/lib.rs",
+    "new_path": "src/lib_rt.rs"
+   },
+   {
+    "kind": "fs_rename",
+    "path": "src/lib_rt.rs",
+    "new_path": "src/lib.rs"
+   }
+  ],
+  "detail": "{\"case\": {\"chain_step\": 8, \"families\": [\"H5\", \"H3\", \"H8\", \"H2\", \"H4\", \"H1\", \"H7\", \"H5\"], \"family\": \"H5\", \"history_index\": 7, \"history_seed\": 1010, \"mode\": \"chain\", \"note\": \"rename src/lib.rs -> src/lib_rt.rs -> back\", \"seed\": 1, \"timing\": \"race0\"}, \"note\": \"H5: rename src/lib.rs -> src/lib_rt.rs -> back; flake 0/3 [r1:SCr r2:SCr r3:SCr] in 41s\", \"shape\": \"diagnostics:extra:E0133\"}",
+  "reproduced": "0/3",
+  "reduced_ops": [],
+  "signature": "rust-analyzer|r1_history|diagnostics:extra:E0133",
+  "run_id": "e3af2236a9bd"
+ },
+ "replay_logs": [],
+ "project_files": {},
+ "incomplete": false
+}

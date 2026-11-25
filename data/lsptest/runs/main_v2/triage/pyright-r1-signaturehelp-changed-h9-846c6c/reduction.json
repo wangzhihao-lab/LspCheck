@@ -1,0 +1,67 @@
+{
+ "vid": "ed216fc8dca5-v00",
+ "ops_before": 17,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 11,
+ "cache_hits": 0,
+ "reduce_seconds": 197.446,
+ "budget_exhausted": false,
+ "probe_log": [
+  [
+   11,
+   false
+  ],
+  [
+   8,
+   true
+  ],
+  [
+   7,
+   true
+  ],
+  [
+   6,
+   false
+  ],
+  [
+   6,
+   true
+  ],
+  [
+   5,
+   true
+  ],
+  [
+   4,
+   false
+  ],
+  [
+   4,
+   true
+  ],
+  [
+   2,
+   false
+  ],
+  [
+   1,
+   false
+  ],
+  [
+   1,
+   true
+  ]
+ ],
+ "logs": [
+  "pyright-1.1.414-tr846c6c-replay-baseline-20261118-231152-a7f871.jsonl.gz",
+  "pyright-1.1.414-tr846c6c-replay-control-20261118-231152-45b174.jsonl.gz",
+  "pyright-1.1.414-tr846c6c-replay-history-20261118-231156-f52173.jsonl.gz"
+ ],
+ "observed": {
+  "expected": "(im: Unknown, new_shape: Unknown = (640, 640), color: Unknown = (114, 114, 114), auto: bool = True, scaleFill: bool = False, scaleup: bool = True, stride: int = 32) -> tuple[Unknown, tuple[float | Unknown, float | Unknown] | tuple[Unknown, Unknown], tuple[Any | float | Unknown, Any | float | Unknown]]",
+  "actual": "(im: Unknown, new_shape: Unknown = (640, 640), color: Unknown = (114, 114, 114), auto: bool = True, scaleFill: bool = False, scaleup: bool = True, stride: int = 32) -> Unknown"
+ },
+ "ops_after": 1,
+ "total_seconds": 283.4
+}

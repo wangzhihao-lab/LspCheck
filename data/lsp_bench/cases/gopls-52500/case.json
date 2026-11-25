@@ -1,0 +1,108 @@
+{
+ "schema": 1,
+ "id": "gopls-52500",
+ "meta": {
+  "server": "gopls",
+  "kind": "gopls",
+  "number": 52500,
+  "url": "https://github.com/golang/go/issues/52500",
+  "title": "x/tools/gopls: incorrect metadata invalidation when changing package name",
+  "oracle_class": "R1",
+  "subtype": "edit-undo",
+  "fix_ref": "golang/tools@556c550a3816 (internal/lsp/cache: invalidate packages that have added files; CL 401795, 'Fixes golang/go#52500')",
+  "fix_shas": [
+   "556c550a381650eb5b7b2ca5126b4bed281d47f9"
+  ],
+  "pre_version": "v0.8.3",
+  "post_version": "v0.8.4",
+  "pre_build": "v0.8.3",
+  "post_build": "v0.8.4",
+  "build_notes": "go install golang.org/x/tools/gopls@<version> with the local Go (go1.27.1), which builds both; the server runs the local go command. v0.8.3 was tagged 2022-04-07, the fix merged 2022-05-02, v0.8.4 was tagged 2022-05-13.",
+  "candidate_rank": 31,
+  "effort_minutes": 10,
+  "notes": "When a file's package name changed, gopls invalidated only the packages previously containing the file, not the package it moved into; after x_test -> x -> x_test the file was left in no package. The fix invalidates every known package of the directory for new files and package-name changes."
+ },
+ "language": "go",
+ "settings": {},
+ "settings_note": "The issue names no settings.",
+ "session": {
+  "settle_timeout_s": 180
+ },
+ "files": [
+  {
+   "path": "go.mod",
+   "provenance": "scaffold",
+   "source": "",
+   "note": "the go.mod of the fix's regression test TestChangeTestVariant_Issue52500 (the issue describes the steps but gives no code)"
+  },
+  {
+   "path": "main_test.go",
+   "provenance": "scaffold",
+   "source": "",
+   "note": "the file main_test.go of the fix's regression test TestChangeTestVariant_Issue52500: an x_test package (main_test) whose second file uses a declaration of the toggled file"
+  },
+  {
+   "path": "other_test.go",
+   "provenance": "scaffold",
+   "source": "",
+   "note": "the file other_test.go of the fix's regression test TestChangeTestVariant_Issue52500: the file whose package clause is toggled"
+  }
+ ],
+ "repro": {
+  "attempt": 1,
+  "timing": "settled",
+  "steps": "The issue's steps: move a file from package x_test to package x, wait, then move it back to package x_test; reported: the file is then contained in no package. Here: open other_test.go, change its package clause from main_test to main (line 0, characters 8-17), let the server settle, change it back to main_test. Probe: the diagnostics of other_test.go and definition on Server in 'func (Server) Foo()' (line 4, character 6) are compared with a fresh session on the same (restored) text and a fresh control.",
+  "ops": [
+   {
+    "kind": "open",
+    "path": "other_test.go"
+   },
+   {
+    "kind": "change",
+    "path": "other_test.go",
+    "start": [
+     0,
+     8
+    ],
+    "end": [
+     0,
+     17
+    ],
+    "text": "main"
+   },
+   {
+    "kind": "change",
+    "path": "other_test.go",
+    "start": [
+     0,
+     8
+    ],
+    "end": [
+     0,
+     12
+    ],
+    "text": "main_test"
+   }
+  ],
+  "probe": {
+   "type": "differs_from_fresh",
+   "params": {
+    "queries": [
+     {
+      "method": "diagnostics",
+      "path": "other_test.go"
+     },
+     {
+      "method": "definition",
+      "path": "other_test.go",
+      "position": [
+       4,
+       6
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "attempts": []
+}

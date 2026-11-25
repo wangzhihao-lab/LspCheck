@@ -1,0 +1,95 @@
+{
+ "schema": 1,
+ "id": "rust-analyzer-14841",
+ "meta": {
+  "server": "rust-analyzer",
+  "kind": "rust-analyzer",
+  "number": 14841,
+  "url": "https://github.com/rust-lang/rust-analyzer/issues/14841",
+  "title": "Eager macro breaks token mapping for arguments after a macro",
+  "oracle_class": "R3",
+  "subtype": "def-consistency",
+  "fix_ref": "the eager-macro series merged 2023-07-30..08-01 (rust-lang/rust-analyzer#15356, #15361, #15366, #15367; their merge commits are listed; commit subjects include 'Fix bad unwrap in eager_macro_recur', 'Expand eager macros to delimited comma separated expression list', 'Strip unused token ids from eager macro input token maps', 'Don't bail eager expansion when inner macros fail to resolve'), after which the maintainer closed the issue on 2023-08-01 ('This should be fixed for good now'). The candidate's #14998 (Lazy eager macros, 2023-06-09) did not fix it (attempt 1).",
+  "fix_shas": [
+   "2266ecf9dda51f242dd1738354dc9d2c65f2a125",
+   "7736b656e2aaa32be5096389969908e7ec301435",
+   "8202b5aaa7739eb9aa7a0c6a375857c971357748",
+   "151c750dac8d2a03a4a1f9c20d2fc29ad2042f02"
+  ],
+  "pre_version": "2023-06-12",
+  "post_version": "2023-08-07",
+  "pre_build": "2023-06-12",
+  "post_build": "2023-08-07",
+  "build_notes": "GitHub release assets rust-analyzer-aarch64-apple-darwin.gz of the weekly tags 2023-06-12 and 2023-08-07; git tag --contains puts the last merge of the eager-macro series (151c750dac, #15367) first in 2023-08-07, and the series starts after the 2023-07-24 release (the 2023-07-31 release holds only part of it). The pre build is 2023-06-12 rather than 2023-07-24 because the builds of 2023-07-17 and 2023-07-24 never finish indexing core of the local std (stuck at 'Indexing 1/5 (core)' for 240 s in smoke runs; the 2023-06 builds and 2023-08-07 index it in seconds), so 2023-06-12, which contains the earlier attempt #14998 and shows the bug (attempt 1), is the latest usable build before the series. The sysroot is the local rustup toolchain (rustc 1.98.1): format! and vec! come from its std/alloc sources, which a 2023 build parses.",
+  "effort_minutes": 25,
+  "notes": "format! is expanded through the eager built-in format_args!; token mapping for the arguments of an eager macro broke after a nested macro call (vec![...]), so definition on the second a did not reach the local. Attempt 1 used the candidate's fix #14998 (June 2023), which did not fix it; the maintainer closed the issue after the eager-macro series of 2023-07-30..08-01."
+ },
+ "language": "rust",
+ "settings": {},
+ "settings_note": "The issue names no settings; the session keeps checkOnSave off (native analysis only).",
+ "session": {
+  "settle_timeout_s": 240,
+  "request_timeout_s": 60,
+  "pull_diagnostics": false
+ },
+ "files": [
+  {
+   "path": "src/main.rs",
+   "provenance": "issue-adapted",
+   "source": "issue body, code block",
+   "note": "the two statements verbatim inside an added fn main"
+  },
+  {
+   "path": "Cargo.toml",
+   "provenance": "scaffold",
+   "source": "",
+   "note": "a binary crate around the snippet (package name, version, edition 2021)"
+  }
+ ],
+ "repro": {
+  "attempt": 2,
+  "timing": "settled",
+  "steps": "Open src/main.rs. Go to definition on the first a in the format! arguments (line 2, character 24) and on the second a (line 2, character 39), after vec![2, 3]. Reported: the first goes to 'let a = 2', the second into the vec! internals. Probe: both definitions of the same local must be equal.",
+  "ops": [
+   {
+    "kind": "open",
+    "path": "src/main.rs"
+   }
+  ],
+  "probe": {
+   "type": "two_routes_differ",
+   "params": {
+    "relation": "equal",
+    "a": {
+     "method": "definition",
+     "path": "src/main.rs",
+     "position": [
+      2,
+      24
+     ]
+    },
+    "b": {
+     "method": "definition",
+     "path": "src/main.rs",
+     "position": [
+      2,
+      39
+     ]
+    }
+   }
+  }
+ },
+ "attempts": [
+  {
+   "attempt": 1,
+   "timing": "settled",
+   "probe": "two_routes_differ",
+   "summary": "Candidate window 2023-06-05 -> 2023-06-12 (#14998, 'Lazy eager macros', merged 2023-06-09): still-present-post. On both builds definition on the first a answered 'let a' (1:8-1:9) and on the second a (after vec![2, 3]) answered nothing (3/3 each; the reporter saw a jump into the vec! internals, with the std of rustc 1.98 the mapping yields no target). #14998 did not settle the issue: it stayed open until 2023-08-01, when the maintainer closed it after the eager-macro series #15356, #15361, #15366, #15367 (2023-07-30..08-01) with 'This should be fixed for good now'. The release window recomputed from that series is 2023-07-24 -> 2023-08-07 (pre-check 2).",
+   "verdict": "still-present-post (post build predates the real fix)",
+   "builds": {
+    "pre": "2023-06-05",
+    "post": "2023-06-12"
+   }
+  }
+ ]
+}

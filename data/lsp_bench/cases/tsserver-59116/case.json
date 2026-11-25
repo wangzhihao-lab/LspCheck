@@ -1,0 +1,76 @@
+{
+ "schema": 1,
+ "id": "tsserver-59116",
+ "meta": {
+  "server": "tsserver",
+  "kind": "tsserver",
+  "number": 59116,
+  "url": "https://github.com/microsoft/TypeScript/issues/59116",
+  "title": "Codefix add missing function declaration inserts function in wrong file",
+  "oracle_class": "R4",
+  "subtype": "quickfix",
+  "fix_ref": "microsoft/TypeScript#59213 (fix(59116): Codefix add missing function declaration inserts function in wrong file), 7319968e90, 2024-07-25; git tag --contains: first in v5.6-rc / v5.6.2",
+  "fix_shas": [
+   "7319968e90600102892a79142fb804bcbe384160"
+  ],
+  "pre_version": "5.5.4",
+  "post_version": "5.6.2",
+  "pre_build": "5.5.4+tsls4.3.3",
+  "post_build": "5.6.2+tsls4.3.3",
+  "wrapper": "typescript-language-server@4.3.3",
+  "build_notes": "npm typescript@5.5.4 (2024-07-22) and typescript@5.6.2 (2024-09-09), both behind typescript-language-server@4.3.3 (the latest wrapper release before 5.6.2), started with the pinned tsserver.js; the reported TypeScript version is checked on every session.",
+  "candidate_rank": 15,
+  "effort_minutes": 6,
+  "notes": "The maintainer's trace shows the pre-fix edit targets the file being edited (index.ts/main.ts) at a position computed in lib.ts, possibly beyond the end of main.ts."
+ },
+ "language": "typescript",
+ "settings": {},
+ "settings_note": "The issue names no settings; no tsconfig.json, so tsserver uses an inferred project for the open file and its import.",
+ "session": {
+  "settle_timeout_s": 120
+ },
+ "files": [
+  {
+   "path": "main.ts",
+   "provenance": "issue",
+   "source": "issue body, first code block ('main.ts:')",
+   "note": ""
+  },
+  {
+   "path": "lib.ts",
+   "provenance": "issue",
+   "source": "issue body, second code block ('lib.ts:')",
+   "note": ""
+  }
+ ],
+ "repro": {
+  "attempt": 1,
+  "timing": "settled",
+  "steps": "Open main.ts: 'X.foobar()' is reported (TS2339, foobar does not exist on typeof X). Apply the quick fix \"Add missing function declaration 'foobar'\". Reported: the function is inserted into main.ts (the wrong file) instead of into namespace X in lib.ts, so the error stays. Probe: after the fix, a fresh session on the edited files must neither report the targeted TS2339 nor a new error.",
+  "ops": [
+   {
+    "kind": "open",
+    "path": "main.ts"
+   }
+  ],
+  "probe": {
+   "type": "edit_leaves_diagnostic",
+   "params": {
+    "edit": {
+     "via": "code_action",
+     "path": "main.ts",
+     "diagnostic": {
+      "code": "2339"
+     },
+     "kind": "quickfix",
+     "title_re": "(?i)add missing function declaration",
+     "missing": "invalid"
+    },
+    "target": {
+     "code": "2339"
+    }
+   }
+  }
+ },
+ "attempts": []
+}

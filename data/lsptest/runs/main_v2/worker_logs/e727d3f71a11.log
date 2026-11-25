@@ -1,0 +1,3 @@
+2026-11-18 19:09:20,108 INFO campaign_run run e727d3f71a11: r3_routes on rust-analyzer 2026-09-21, casey/just@6119e6aff518 seed 2 settled, targets ['src/item.rs', 'src/reference.rs', 'tests/mapped_dependencies.rs']
+2026-11-18 19:12:53,767 INFO campaign_run run e727d3f71a11: 18 candidate(s) in 214s; confirming
+2026-11-18 19:12:53,770 INFO campaign_run run e727d3f71a11 finished: ok, 0 confirmed of 18 candidate(s), 214s

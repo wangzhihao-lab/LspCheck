@@ -1,0 +1,6 @@
+2026-11-18 12:45:56,926 INFO campaign_run run d2aec7890861: r4_edits on ts7 7.0.2, solidjs/solid@4b62bc29e04b seed 2 settled, targets ['examples/rendering/shared/src/router.tsx', 'packages/signals/tests/latest-plain-write-purity.test.ts', 'packages/web/test/server/server-functions-decoder-rejection-ownership.spec.tsx']
+2026-11-18 12:49:35,231 INFO campaign_run run d2aec7890861: 2 candidate(s) in 219s; confirming
+2026-11-18 12:52:09,021 INFO flake replay 1/3 of ts7|r4_edits|diagnostics:extra:2558,2604: settled=True control_stable=True reproduced=True (153.8s)
+2026-11-18 12:55:14,882 INFO flake replay 2/3 of ts7|r4_edits|diagnostics:extra:2558,2604: settled=True control_stable=True reproduced=True (185.9s)
+2026-11-18 12:57:25,338 INFO flake replay 3/3 of ts7|r4_edits|diagnostics:extra:2558,2604: settled=True control_stable=True reproduced=True (130.4s)
+2026-11-18 12:57:25,350 INFO campaign_run run d2aec7890861 finished: ok, 1 confirmed of 2 candidate(s), 689s

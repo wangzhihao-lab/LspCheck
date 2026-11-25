@@ -1,0 +1,448 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "96937ad5a242-v00",
+ "run_id": "96937ad5a242",
+ "oracle": "r3_routes",
+ "server": {
+  "kind": "ts6",
+  "version": "6.0.3"
+ },
+ "project": {
+  "name": "reduxjs/redux@fb3bad6804d6",
+  "source": "corpus",
+  "ref": "temp/corpus/reduxjs__redux@fb3bad6804d6",
+  "commit": "fb3bad6804d651b8ae0e909f32765beb989ba6f8",
+  "language": "typescript"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "examples/counter-ts/src/reportWebVitals.ts",
+    "positions": [
+     [
+      0,
+      27
+     ],
+     [
+      2,
+      30
+     ],
+     [
+      3,
+      11
+     ],
+     [
+      3,
+      48
+     ],
+     [
+      4,
+      44
+     ],
+     [
+      4,
+      60
+     ],
+     [
+      4,
+      68
+     ],
+     [
+      6,
+      18
+     ],
+     [
+      7,
+      9
+     ],
+     [
+      8,
+      9
+     ],
+     [
+      9,
+      9
+     ],
+     [
+      9,
+      19
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      29
+     ],
+     [
+      2,
+      36
+     ],
+     [
+      3,
+      17
+     ],
+     [
+      3,
+      52
+     ],
+     [
+      4,
+      47
+     ],
+     [
+      4,
+      63
+     ],
+     [
+      4,
+      72
+     ],
+     [
+      6,
+      24
+     ],
+     [
+      7,
+      12
+     ],
+     [
+      8,
+      12
+     ],
+     [
+      9,
+      13
+     ],
+     [
+      9,
+      25
+     ]
+    ],
+    "names": [
+     "from",
+     "onPerfEntry",
+     "onPerfEntry",
+     "Function",
+     "getFID",
+     "getLCP",
+     "getTTFB",
+     "onPerfEntry",
+     "getFCP",
+     "getLCP",
+     "getTTFB",
+     "onPerfEntry"
+    ]
+   },
+   {
+    "path": "scripts/clean.mts",
+    "positions": [
+     [
+      0,
+      12
+     ],
+     [
+      0,
+      20
+     ],
+     [
+      2,
+      13
+     ],
+     [
+      2,
+      17
+     ],
+     [
+      3,
+      5
+     ],
+     [
+      3,
+      11
+     ],
+     [
+      4,
+      8
+     ],
+     [
+      5,
+      6
+     ],
+     [
+      6,
+      9
+     ],
+     [
+      7,
+      9
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      15
+     ],
+     [
+      0,
+      22
+     ],
+     [
+      2,
+      15
+     ],
+     [
+      2,
+      18
+     ],
+     [
+      3,
+      8
+     ],
+     [
+      3,
+      13
+     ],
+     [
+      4,
+      13
+     ],
+     [
+      5,
+      9
+     ],
+     [
+      6,
+      14
+     ],
+     [
+      7,
+      14
+     ]
+    ],
+    "names": [
+     "rmSync",
+     "from",
+     "path",
+     "of",
+     "rmSync",
+     "path",
+     "recursive",
+     "force",
+     "maxRetries",
+     "retryDelay"
+    ]
+   },
+   {
+    "path": "test/helpers/middleware.ts",
+    "positions": [
+     [
+      0,
+      9
+     ],
+     [
+      0,
+      18
+     ],
+     [
+      0,
+      39
+     ],
+     [
+      2,
+      25
+     ],
+     [
+      3,
+      3
+     ],
+     [
+      3,
+      38
+     ],
+     [
+      3,
+      62
+     ],
+     [
+      5,
+      19
+     ],
+     [
+      8,
+      38
+     ],
+     [
+      8,
+      46
+     ],
+     [
+      8,
+      66
+     ],
+     [
+      8,
+      72
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      11
+     ],
+     [
+      0,
+      22
+     ],
+     [
+      0,
+      41
+     ],
+     [
+      2,
+      30
+     ],
+     [
+      3,
+      4
+     ],
+     [
+      3,
+      42
+     ],
+     [
+      3,
+      63
+     ],
+     [
+      5,
+      23
+     ],
+     [
+      8,
+      41
+     ],
+     [
+      8,
+      50
+     ],
+     [
+      8,
+      68
+     ],
+     [
+      8,
+      75
+     ]
+    ],
+    "names": [
+     "type",
+     "Dispatch",
+     "from",
+     "Middleware",
+     "R",
+     "getState",
+     "R",
+     "getState",
+     "action",
+     "dispatch",
+     "next",
+     "action"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "definitionConsistency",
+  "path": "test/helpers/middleware.ts",
+  "line": 8,
+  "character": 56,
+  "extra": "from:test/helpers/middleware.ts:5:19"
+ },
+ "ops": [],
+ "case": {
+  "loc": [
+   "test/helpers/middleware.ts",
+   8,
+   52,
+   8,
+   60
+  ],
+  "sub": "d",
+  "target": [
+   "test/helpers/middleware.ts",
+   5,
+   19
+  ]
+ },
+ "shape": "definitionConsistency:changed",
+ "signature": "ts6|r3_routes|definitionConsistency:changed",
+ "expected": [
+  [
+   "src/types/middleware.ts",
+   4,
+   2,
+   4,
+   10
+  ]
+ ],
+ "actual": [
+  [
+   "test/helpers/middleware.ts",
+   5,
+   15,
+   5,
+   23
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "flake 3/3 [r1:SCR r2:SCR r3:SCR] in 71s",
+ "violation": {
+  "oracle": "r3_routes",
+  "server": "ts6-6.0.3",
+  "project": "reduxjs/redux@fb3bad6804d6",
+  "key": {
+   "method": "definitionConsistency",
+   "path": "test/helpers/middleware.ts",
+   "line": 8,
+   "character": 56,
+   "extra": "from:test/helpers/middleware.ts:5:19"
+  },
+  "expected": [
+   [
+    "src/types/middleware.ts",
+    4,
+    2,
+    4,
+    10
+   ]
+  ],
+  "actual": [
+   [
+    "test/helpers/middleware.ts",
+    5,
+    15,
+    5,
+    23
+   ]
+  ],
+  "ops": [],
+  "detail": "{\"case\": {\"loc\": [\"test/helpers/middleware.ts\", 8, 52, 8, 60], \"sub\": \"d\", \"target\": [\"test/helpers/middleware.ts\", 5, 19]}, \"note\": \"flake 3/3 [r1:SCR r2:SCR r3:SCR] in 71s\", \"shape\": \"definitionConsistency:changed\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "ts6|r3_routes|definitionConsistency:changed",
+  "run_id": "96937ad5a242"
+ },
+ "replay_logs": [
+  "logs/ts6-6.0.3-96937ad5a242-r3-replay-baseline-20260923-161908-6ad744.jsonl.gz",
+  "logs/ts6-6.0.3-96937ad5a242-r3-replay-control-20260923-161921-a96a3c.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

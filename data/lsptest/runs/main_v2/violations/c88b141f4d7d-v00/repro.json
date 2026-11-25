@@ -1,0 +1,655 @@
+{
+ "format": 1,
+ "campaign": "main_v2",
+ "vid": "c88b141f4d7d-v00",
+ "run_id": "c88b141f4d7d",
+ "oracle": "r1_history",
+ "server": {
+  "kind": "ts6",
+  "version": "6.0.3"
+ },
+ "project": {
+  "name": "solidjs/solid@4b62bc29e04b",
+  "source": "corpus",
+  "ref": "temp/corpus/solidjs__solid@4b62bc29e04b",
+  "commit": "4b62bc29e04bfd29573a20ff3d47ae56a8a80ccb",
+  "language": "typescript"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "race200",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "examples/rendering/shared/src/components/Reveal.tsx",
+    "positions": [
+     [
+      47,
+      28
+     ],
+     [
+      59,
+      15
+     ],
+     [
+      69,
+      15
+     ],
+     [
+      73,
+      17
+     ],
+     [
+      79,
+      11
+     ],
+     [
+      84,
+      47
+     ],
+     [
+      86,
+      44
+     ],
+     [
+      94,
+      81
+     ],
+     [
+      109,
+      21
+     ],
+     [
+      109,
+      56
+     ],
+     [
+      113,
+      25
+     ],
+     [
+      128,
+      20
+     ]
+    ],
+    "ends": [
+     [
+      47,
+      31
+     ],
+     [
+      59,
+      18
+     ],
+     [
+      69,
+      18
+     ],
+     [
+      73,
+      21
+     ],
+     [
+      79,
+      14
+     ],
+     [
+      84,
+      54
+     ],
+     [
+      86,
+      45
+     ],
+     [
+      94,
+      83
+     ],
+     [
+      109,
+      23
+     ],
+     [
+      109,
+      58
+     ],
+     [
+      113,
+      28
+     ],
+     [
+      128,
+      25
+     ]
+    ],
+    "names": [
+     "legend",
+     "input",
+     "input",
+     "checked",
+     "label",
+     "currentTarget",
+     "em",
+     "code",
+     "the",
+     "card",
+     "title",
+     "RevealPage"
+    ]
+   },
+   {
+    "path": "packages/web/test/hydration/spread-innerhtml.spec.tsx",
+    "positions": [
+     [
+      5,
+      37
+     ],
+     [
+      6,
+      12
+     ],
+     [
+      11,
+      34
+     ],
+     [
+      14,
+      4
+     ],
+     [
+      16,
+      6
+     ],
+     [
+      23,
+      18
+     ],
+     [
+      28,
+      9
+     ],
+     [
+      38,
+      20
+     ],
+     [
+      42,
+      58
+     ],
+     [
+      43,
+      45
+     ],
+     [
+      55,
+      7
+     ],
+     [
+      56,
+      40
+     ]
+    ],
+    "ends": [
+     [
+      5,
+      40
+     ],
+     [
+      6,
+      16
+     ],
+     [
+      11,
+      37
+     ],
+     [
+      14,
+      8
+     ],
+     [
+      16,
+      10
+     ],
+     [
+      23,
+      23
+     ],
+     [
+      28,
+      13
+     ],
+     [
+      38,
+      21
+     ],
+     [
+      42,
+      61
+     ],
+     [
+      43,
+      48
+     ],
+     [
+      55,
+      10
+     ],
+     [
+      56,
+      42
+     ]
+    ],
+    "names": [
+     "flush",
+     "hydrate",
+     "events",
+     "describe",
+     "document",
+     "innerHTML",
+     "dispose",
+     "v",
+     "count",
+     "style",
+     "expect",
+     "toBe"
+    ]
+   },
+   {
+    "path": "packages/web/test/latest-shadow-owned-write-issue-3378.spec.tsx",
+    "positions": [
+     [
+      12,
+      23
+     ],
+     [
+      12,
+      30
+     ],
+     [
+      13,
+      12
+     ],
+     [
+      18,
+      52
+     ],
+     [
+      23,
+      18
+     ],
+     [
+      44,
+      10
+     ],
+     [
+      48,
+      4
+     ],
+     [
+      49,
+      18
+     ],
+     [
+      53,
+      9
+     ],
+     [
+      54,
+      12
+     ],
+     [
+      61,
+      10
+     ],
+     [
+      66,
+      28
+     ]
+    ],
+    "ends": [
+     [
+      12,
+      26
+     ],
+     [
+      12,
+      32
+     ],
+     [
+      13,
+      15
+     ],
+     [
+      18,
+      53
+     ],
+     [
+      23,
+      19
+     ],
+     [
+      44,
+      12
+     ],
+     [
+      48,
+      7
+     ],
+     [
+      49,
+      24
+     ],
+     [
+      53,
+      11
+     ],
+     [
+      54,
+      14
+     ],
+     [
+      61,
+      14
+     ],
+     [
+      66,
+      30
+     ]
+    ],
+    "names": [
+     "expect",
+     "test",
+     "action",
+     "r",
+     "i",
+     "div",
+     "flush",
+     "textContent",
+     "run",
+     "gate",
+     "resolve",
+     "toBe"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "codeAction",
+  "path": "examples/rendering/shared/src/components/Reveal.tsx",
+  "line": 12,
+  "character": 4,
+  "extra": "diag:17:14"
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "examples/rendering/shared/src/components/Reveal.tsx",
+   "delay_ms": 200
+  },
+  {
+   "kind": "open",
+   "path": "packages/web/test/hydration/spread-innerhtml.spec.tsx",
+   "delay_ms": 200
+  },
+  {
+   "kind": "open",
+   "path": "packages/web/test/latest-shadow-owned-write-issue-3378.spec.tsx",
+   "delay_ms": 200
+  },
+  {
+   "kind": "change",
+   "path": "packages/web/test/latest-shadow-owned-write-issue-3378.spec.tsx",
+   "start": [
+    16,
+    19
+   ],
+   "end": [
+    16,
+    19
+   ],
+   "text": "\n",
+   "delay_ms": 200
+  },
+  {
+   "kind": "change",
+   "path": "packages/web/test/latest-shadow-owned-write-issue-3378.spec.tsx",
+   "start": [
+    16,
+    19
+   ],
+   "end": [
+    17,
+    0
+   ],
+   "delay_ms": 200
+  },
+  {
+   "kind": "request",
+   "path": "examples/rendering/shared/src/components/Reveal.tsx",
+   "start": [
+    47,
+    31
+   ],
+   "text": "signatureHelp",
+   "delay_ms": 200
+  },
+  {
+   "kind": "request",
+   "path": "examples/rendering/shared/src/components/Reveal.tsx",
+   "start": [
+    84,
+    54
+   ],
+   "text": "typeDefinition",
+   "delay_ms": 200
+  },
+  {
+   "kind": "request",
+   "path": "packages/web/test/hydration/spread-innerhtml.spec.tsx",
+   "start": [
+    28,
+    13
+   ],
+   "text": "typeDefinition",
+   "delay_ms": 200
+  },
+  {
+   "kind": "request",
+   "path": "packages/web/test/hydration/spread-innerhtml.spec.tsx",
+   "start": [
+    14,
+    4
+   ],
+   "text": "signatureHelp",
+   "delay_ms": 200
+  },
+  {
+   "kind": "request",
+   "path": "packages/web/test/hydration/spread-innerhtml.spec.tsx",
+   "start": [
+    43,
+    90
+   ],
+   "text": "completion",
+   "delay_ms": 200
+  }
+ ],
+ "case": {
+  "chain_step": 0,
+  "families": [],
+  "family": "H8",
+  "history_index": 11,
+  "history_seed": 1012,
+  "mode": "fresh",
+  "note": "after packages/web/test/latest-shadow-owned-write-issue-3378.spec.tsx: insert '\\n' on line 16 and its inverse, 5 requests in a shuffled order: signatureHelp@examples/rendering/shared/src/components/Reveal.tsx:47:31, typeDefinition@examples/rendering/shared/src/components/Reveal.tsx:84:54, typeDefinition@packages/web/test/hydration/spread-innerhtml.spec.tsx:28:13, signatureHelp@packages/web/test/hydration/spread-innerhtml.spec.tsx:14:4, completion@packages/web/test/hydration/spread-innerhtml.spec.tsx:43:90",
+  "seed": 1,
+  "timing": "race200"
+ },
+ "shape": "codeAction:key-lost",
+ "signature": "ts6|r1_history|codeAction:key-lost",
+ "expected": [
+  [
+   "Extract to constant in enclosing scope",
+   "refactor.extract.constant"
+  ],
+  [
+   "Extract to function in module scope",
+   "refactor.extract.function"
+  ],
+  [
+   "Extract to inner function in function 'AsyncCard'",
+   "refactor.extract.function"
+  ],
+  [
+   "Move to a new file",
+   "refactor.move.newFile"
+  ]
+ ],
+ "actual": [
+  "missing-key"
+ ],
+ "reproduced": "3/3",
+ "note": "H8: after packages/web/test/latest-shadow-owned-write-issue-3378.spec.tsx: insert '\\n' on line 16 and its inverse, 5 requests in a shuffled order: signatureHelp@examples/rendering/shared/src/components/Re; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 212s",
+ "violation": {
+  "oracle": "r1_history",
+  "server": "ts6-6.0.3",
+  "project": "solidjs/solid@4b62bc29e04b",
+  "key": {
+   "method": "codeAction",
+   "path": "examples/rendering/shared/src/components/Reveal.tsx",
+   "line": 12,
+   "character": 4,
+   "extra": "diag:17:14"
+  },
+  "expected": [
+   [
+    "Extract to constant in enclosing scope",
+    "refactor.extract.constant"
+   ],
+   [
+    "Extract to function in module scope",
+    "refactor.extract.function"
+   ],
+   [
+    "Extract to inner function in function 'AsyncCard'",
+    "refactor.extract.function"
+   ],
+   [
+    "Move to a new file",
+    "refactor.move.newFile"
+   ]
+  ],
+  "actual": [
+   "missing-key"
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "examples/rendering/shared/src/components/Reveal.tsx",
+    "delay_ms": 200
+   },
+   {
+    "kind": "open",
+    "path": "packages/web/test/hydration/spread-innerhtml.spec.tsx",
+    "delay_ms": 200
+   },
+   {
+    "kind": "open",
+    "path": "packages/web/test/latest-shadow-owned-write-issue-3378.spec.tsx",
+    "delay_ms": 200
+   },
+   {
+    "kind": "change",
+    "path": "packages/web/test/latest-shadow-owned-write-issue-3378.spec.tsx",
+    "start": [
+     16,
+     19
+    ],
+    "end": [
+     16,
+     19
+    ],
+    "text": "\n",
+    "delay_ms": 200
+   },
+   {
+    "kind": "change",
+    "path": "packages/web/test/latest-shadow-owned-write-issue-3378.spec.tsx",
+    "start": [
+     16,
+     19
+    ],
+    "end": [
+     17,
+     0
+    ],
+    "delay_ms": 200
+   },
+   {
+    "kind": "request",
+    "path": "examples/rendering/shared/src/components/Reveal.tsx",
+    "start": [
+     47,
+     31
+    ],
+    "text": "signatureHelp",
+    "delay_ms": 200
+   },
+   {
+    "kind": "request",
+    "path": "examples/rendering/shared/src/components/Reveal.tsx",
+    "start": [
+     84,
+     54
+    ],
+    "text": "typeDefinition",
+    "delay_ms": 200
+   },
+   {
+    "kind": "request",
+    "path": "packages/web/test/hydration/spread-innerhtml.spec.tsx",
+    "start": [
+     28,
+     13
+    ],
+    "text": "typeDefinition",
+    "delay_ms": 200
+   },
+   {
+    "kind": "request",
+    "path": "packages/web/test/hydration/spread-innerhtml.spec.tsx",
+    "start": [
+     14,
+     4
+    ],
+    "text": "signatureHelp",
+    "delay_ms": 200
+   },
+   {
+    "kind": "request",
+    "path": "packages/web/test/hydration/spread-innerhtml.spec.tsx",
+    "start": [
+     43,
+     90
+    ],
+    "text": "completion",
+    "delay_ms": 200
+   }
+  ],
+  "detail": "{\"case\": {\"chain_step\": 0, \"families\": [], \"family\": \"H8\", \"history_index\": 11, \"history_seed\": 1012, \"mode\": \"fresh\", \"note\": \"after packages/web/test/latest-shadow-owned-write-issue-3378.spec.tsx: insert '\\\\n' on line 16 and its inverse, 5 requests in a shuffled order: signatureHelp@examples/rendering/shared/src/components/Reveal.tsx:47:31, typeDefinition@examples/rendering/shared/src/components/Reveal.tsx:84:54, typeDefinition@packages/web/test/hydration/spread-innerhtml.spec.tsx:28:13, signatureHelp@packages/web/test/hydration/spread-innerhtml.spec.tsx:14:4, completion@packages/web/test/hydration/spread-innerhtml.spec.tsx:43:90\", \"seed\": 1, \"timing\": \"race200\"}, \"note\": \"H8: after packages/web/test/latest-shadow-owned-write-issue-3378.spec.tsx: insert '\\\\n' on line 16 and its inverse, 5 requests in a shuffled order: signatureHelp@examples/rendering/shared/src/components/Re; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 212s\", \"shape\": \"codeAction:key-lost\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "ts6|r1_history|codeAction:key-lost",
+  "run_id": "c88b141f4d7d"
+ },
+ "replay_logs": [
+  "logs/ts6-6.0.3-c88b141f4d7d-replay-baseline-20261118-095107-a77b41.jsonl.gz",
+  "logs/ts6-6.0.3-c88b141f4d7d-replay-control-20261118-095107-550769.jsonl.gz",
+  "logs/ts6-6.0.3-c88b141f4d7d-replay-history-20261118-095143-a9be31.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

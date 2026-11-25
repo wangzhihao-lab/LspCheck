@@ -1,0 +1,552 @@
+{
+ "format": 1,
+ "campaign": "bench_v1",
+ "vid": "d2171b616603-v01",
+ "run_id": "d2171b616603",
+ "oracle": "r5_transforms",
+ "server": {
+  "kind": "gopls",
+  "version": "v0.7.0"
+ },
+ "project": {
+  "name": "gopls-46667",
+  "source": "dir",
+  "ref": "data/lsp_bench/cases/gopls-46667/project",
+  "commit": "",
+  "language": "go"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 180.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 6,
+  "targets": [
+   {
+    "path": "a/a.go",
+    "positions": [
+     [
+      0,
+      8
+     ],
+     [
+      4,
+      6
+     ],
+     [
+      4,
+      10
+     ],
+     [
+      4,
+      12
+     ],
+     [
+      5,
+      6
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      9
+     ],
+     [
+      4,
+      7
+     ],
+     [
+      4,
+      11
+     ],
+     [
+      4,
+      13
+     ],
+     [
+      5,
+      7
+     ]
+    ],
+    "names": [
+     "a",
+     "A",
+     "b",
+     "A",
+     "B"
+    ]
+   },
+   {
+    "path": "b/b.go",
+    "positions": [
+     [
+      0,
+      8
+     ],
+     [
+      4,
+      6
+     ],
+     [
+      5,
+      6
+     ],
+     [
+      5,
+      10
+     ],
+     [
+      5,
+      12
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      9
+     ],
+     [
+      4,
+      7
+     ],
+     [
+      5,
+      7
+     ],
+     [
+      5,
+      11
+     ],
+     [
+      5,
+      13
+     ]
+    ],
+    "names": [
+     "b",
+     "A",
+     "B",
+     "a",
+     "B"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "semanticTokens",
+  "path": "a/a.go",
+  "line": -1,
+  "character": -1,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "a/a.go"
+  },
+  {
+   "kind": "change",
+   "path": "a/a.go",
+   "start": [
+    5,
+    11
+   ],
+   "end": [
+    6,
+    0
+   ]
+  }
+ ],
+ "case": {
+  "mapped_key": [
+   "semanticTokens",
+   "a/a.go",
+   -1,
+   -1,
+   ""
+  ],
+  "transform": {
+   "back": {
+    "col": 0,
+    "eof": [],
+    "line": -1,
+    "n": 0,
+    "path": "a/a.go",
+    "w": 0
+   },
+   "edits": [
+    [
+     5,
+     11,
+     6,
+     0,
+     ""
+    ]
+   ],
+   "kind": "T5",
+   "path": "a/a.go",
+   "shift": {
+    "col": 0,
+    "eof": [
+     6,
+     0,
+     5,
+     11
+    ],
+    "line": -1,
+    "n": 0,
+    "path": "a/a.go",
+    "w": 0
+   }
+  }
+ },
+ "shape": "semanticTokens:missing",
+ "signature": "gopls|r5_transforms|semanticTokens:missing",
+ "expected": [
+  [
+   0,
+   0,
+   7,
+   "keyword",
+   ""
+  ],
+  [
+   0,
+   8,
+   1,
+   "namespace",
+   ""
+  ],
+  [
+   2,
+   0,
+   6,
+   "keyword",
+   ""
+  ],
+  [
+   2,
+   17,
+   1,
+   "namespace",
+   ""
+  ],
+  [
+   4,
+   0,
+   5,
+   "keyword",
+   ""
+  ],
+  [
+   4,
+   10,
+   1,
+   "namespace",
+   ""
+  ],
+  [
+   4,
+   12,
+   1,
+   "variable",
+   "definition"
+  ],
+  [
+   4,
+   6,
+   1,
+   "variable",
+   "definition,readonly"
+  ],
+  [
+   5,
+   0,
+   5,
+   "keyword",
+   ""
+  ],
+  [
+   5,
+   10,
+   1,
+   "number",
+   ""
+  ],
+  [
+   5,
+   6,
+   1,
+   "variable",
+   "definition,readonly"
+  ]
+ ],
+ "actual": [
+  [
+   0,
+   0,
+   7,
+   "keyword",
+   ""
+  ],
+  [
+   0,
+   8,
+   1,
+   "namespace",
+   ""
+  ],
+  [
+   2,
+   0,
+   6,
+   "keyword",
+   ""
+  ],
+  [
+   2,
+   17,
+   1,
+   "namespace",
+   ""
+  ],
+  [
+   4,
+   0,
+   5,
+   "keyword",
+   ""
+  ],
+  [
+   4,
+   10,
+   1,
+   "namespace",
+   ""
+  ],
+  [
+   4,
+   12,
+   1,
+   "variable",
+   "definition"
+  ],
+  [
+   4,
+   6,
+   1,
+   "variable",
+   "definition,readonly"
+  ],
+  [
+   5,
+   0,
+   5,
+   "keyword",
+   ""
+  ],
+  [
+   5,
+   6,
+   1,
+   "variable",
+   "definition,readonly"
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "T5 a/a.go: 1 edit(s), first [5, 11, 6, 0]; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 94s",
+ "violation": {
+  "oracle": "r5_transforms",
+  "server": "gopls-v0.7.0",
+  "project": "gopls-46667",
+  "key": {
+   "method": "semanticTokens",
+   "path": "a/a.go",
+   "line": -1,
+   "character": -1,
+   "extra": ""
+  },
+  "expected": [
+   [
+    0,
+    0,
+    7,
+    "keyword",
+    ""
+   ],
+   [
+    0,
+    8,
+    1,
+    "namespace",
+    ""
+   ],
+   [
+    2,
+    0,
+    6,
+    "keyword",
+    ""
+   ],
+   [
+    2,
+    17,
+    1,
+    "namespace",
+    ""
+   ],
+   [
+    4,
+    0,
+    5,
+    "keyword",
+    ""
+   ],
+   [
+    4,
+    10,
+    1,
+    "namespace",
+    ""
+   ],
+   [
+    4,
+    12,
+    1,
+    "variable",
+    "definition"
+   ],
+   [
+    4,
+    6,
+    1,
+    "variable",
+    "definition,readonly"
+   ],
+   [
+    5,
+    0,
+    5,
+    "keyword",
+    ""
+   ],
+   [
+    5,
+    10,
+    1,
+    "number",
+    ""
+   ],
+   [
+    5,
+    6,
+    1,
+    "variable",
+    "definition,readonly"
+   ]
+  ],
+  "actual": [
+   [
+    0,
+    0,
+    7,
+    "keyword",
+    ""
+   ],
+   [
+    0,
+    8,
+    1,
+    "namespace",
+    ""
+   ],
+   [
+    2,
+    0,
+    6,
+    "keyword",
+    ""
+   ],
+   [
+    2,
+    17,
+    1,
+    "namespace",
+    ""
+   ],
+   [
+    4,
+    0,
+    5,
+    "keyword",
+    ""
+   ],
+   [
+    4,
+    10,
+    1,
+    "namespace",
+    ""
+   ],
+   [
+    4,
+    12,
+    1,
+    "variable",
+    "definition"
+   ],
+   [
+    4,
+    6,
+    1,
+    "variable",
+    "definition,readonly"
+   ],
+   [
+    5,
+    0,
+    5,
+    "keyword",
+    ""
+   ],
+   [
+    5,
+    6,
+    1,
+    "variable",
+    "definition,readonly"
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "a/a.go"
+   },
+   {
+    "kind": "change",
+    "path": "a/a.go",
+    "start": [
+     5,
+     11
+    ],
+    "end": [
+     6,
+     0
+    ]
+   }
+  ],
+  "detail": "{\"case\": {\"mapped_key\": [\"semanticTokens\", \"a/a.go\", -1, -1, \"\"], \"transform\": {\"back\": {\"col\": 0, \"eof\": [], \"line\": -1, \"n\": 0, \"path\": \"a/a.go\", \"w\": 0}, \"edits\": [[5, 11, 6, 0, \"\"]], \"kind\": \"T5\", \"path\": \"a/a.go\", \"shift\": {\"col\": 0, \"eof\": [6, 0, 5, 11], \"line\": -1, \"n\": 0, \"path\": \"a/a.go\", \"w\": 0}}}, \"note\": \"T5 a/a.go: 1 edit(s), first [5, 11, 6, 0]; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 94s\", \"shape\": \"semanticTokens:missing\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "gopls|r5_transforms|semanticTokens:missing",
+  "run_id": "d2171b616603"
+ },
+ "replay_logs": [
+  "logs/gopls-v0.7.0-d2171b616603-r5-replay-baseline-20260924-174153-1b8773.jsonl.gz",
+  "logs/gopls-v0.7.0-d2171b616603-r5-replay-case-20260924-174213-8a826f.jsonl.gz",
+  "logs/gopls-v0.7.0-d2171b616603-r5-replay-control-20260924-174203-837ee0.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

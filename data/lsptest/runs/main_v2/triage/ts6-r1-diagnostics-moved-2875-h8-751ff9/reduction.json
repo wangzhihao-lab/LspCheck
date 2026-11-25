@@ -1,0 +1,201 @@
+{
+ "vid": "170b9b1e53a4-v01",
+ "ops_before": 10,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 19,
+ "cache_hits": 8,
+ "reduce_seconds": 171.204,
+ "budget_exhausted": false,
+ "probe_log": [
+  [
+   6,
+   false
+  ],
+  [
+   7,
+   true
+  ],
+  [
+   5,
+   false
+  ],
+  [
+   5,
+   false
+  ],
+  [
+   4,
+   false
+  ],
+  [
+   4,
+   false
+  ],
+  [
+   4,
+   false
+  ],
+  [
+   4,
+   false
+  ],
+  [
+   6,
+   true
+  ],
+  [
+   5,
+   true
+  ],
+  [
+   4,
+   true
+  ],
+  [
+   3,
+   false
+  ],
+  [
+   3,
+   true
+  ],
+  [
+   1,
+   false
+  ],
+  [
+   2,
+   false
+  ],
+  [
+   1,
+   false
+  ],
+  [
+   1,
+   false
+  ],
+  [
+   2,
+   false
+  ],
+  [
+   2,
+   false
+  ]
+ ],
+ "logs": [
+  "ts6-6.0.3-tr751ff9-replay-baseline-20261118-232822-260925.jsonl.gz",
+  "ts6-6.0.3-tr751ff9-replay-control-20261118-232822-a52ece.jsonl.gz",
+  "ts6-6.0.3-tr751ff9-replay-history-20261118-232833-b27a47.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [
+   [
+    5,
+    65,
+    5,
+    75,
+    1,
+    "2307",
+    "typescript",
+    "Cannot find module 'solid-js' or its corresponding type declarations."
+   ],
+   [
+    6,
+    24,
+    6,
+    38,
+    1,
+    "2307",
+    "typescript",
+    "Cannot find module '@solidjs/web' or its corresponding type declarations."
+   ],
+   [
+    43,
+    13,
+    43,
+    87,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    43,
+    13,
+    43,
+    93,
+    1,
+    "2875",
+    "typescript",
+    "This JSX tag requires the module path '@solidjs/web/jsx-runtime' to exist, but none could be found. Make sure you have types for the appropriate package installed."
+   ],
+   [
+    43,
+    87,
+    43,
+    93,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ]
+  ],
+  "actual": [
+   [
+    5,
+    65,
+    5,
+    75,
+    1,
+    "2307",
+    "typescript",
+    "Cannot find module 'solid-js' or its corresponding type declarations."
+   ],
+   [
+    6,
+    24,
+    6,
+    38,
+    1,
+    "2307",
+    "typescript",
+    "Cannot find module '@solidjs/web' or its corresponding type declarations."
+   ],
+   [
+    43,
+    13,
+    43,
+    87,
+    1,
+    "2875",
+    "typescript",
+    "This JSX tag requires the module path '@solidjs/web/jsx-runtime' to exist, but none could be found. Make sure you have types for the appropriate package installed."
+   ],
+   [
+    43,
+    13,
+    43,
+    87,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    43,
+    87,
+    43,
+    93,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ]
+  ]
+ },
+ "ops_after": 3,
+ "total_seconds": 256.8
+}

@@ -1,0 +1,64 @@
+{
+ "schema": 1,
+ "id": "tsserver-32068",
+ "meta": {
+  "server": "tsserver",
+  "kind": "tsserver",
+  "number": 32068,
+  "url": "https://github.com/microsoft/TypeScript/issues/32068",
+  "title": "Formatting needs to leave space between consecutive less-than tokens <",
+  "oracle_class": "R4",
+  "subtype": "format",
+  "fix_ref": "microsoft/TypeScript#32088 (Merge pull request #32088 from orta/fix-32068), a50a5d309c, 2019-06-26; git tag --contains: first in v3.6-beta / v3.6.2",
+  "fix_shas": [
+   "a50a5d309cc623780691dc926afd17b8a01f2e2e"
+  ],
+  "pre_version": "3.5.3",
+  "post_version": "3.6.2",
+  "pre_build": "3.5.3+tsls0.4.0",
+  "post_build": "3.6.2+tsls0.4.0",
+  "wrapper": "typescript-language-server@0.4.0",
+  "build_notes": "npm typescript@3.5.3 (2019-07-08) and typescript@3.6.2 (2019-08-28), both behind typescript-language-server@0.4.0 (the latest wrapper release before 3.6.2), started with the pinned tsserver.js; the reported TypeScript version is checked on every session. Wrapper 0.4.0 is installed with the dependencies of its release date (install_builds.wrapper_before). The wrapper logs no TypeScript version; the build check verifies that its tsserver child runs the pinned tsserver.js.",
+  "candidate_rank": 108,
+  "effort_minutes": 7,
+  "notes": "'<number>foo <<number>bar' still parses (a shift followed by a comparison), so the damage shows as new type errors ('number' only refers to a type), hence edit_leaves_diagnostic with that message as the target; foo and bar are undeclared in the issue's snippet, which gives the same errors before and after."
+ },
+ "language": "typescript",
+ "settings": {},
+ "settings_note": "The issue names no settings; FormattingOptions are the probe defaults (4 spaces); no tsconfig.json.",
+ "session": {
+  "settle_timeout_s": 120
+ },
+ "files": [
+  {
+   "path": "index.ts",
+   "provenance": "issue",
+   "source": "issue body, first typescript code block",
+   "note": "the file name is not given in the issue"
+  }
+ ],
+ "repro": {
+  "attempt": 1,
+  "timing": "settled",
+  "steps": "Open index.ts and format the document (Alt+Shift+F). Reported: 'if (<number>foo < <number>bar)' becomes 'if (<number>foo <<number>bar)', which no longer compiles (a second format gives '<< number > bar'). Probe: after the whole-document format, a fresh session on the edited file must not report an error the case session did not report before; the target is the resulting \"'number' only refers to a type\" error.",
+  "ops": [
+   {
+    "kind": "open",
+    "path": "index.ts"
+   }
+  ],
+  "probe": {
+   "type": "edit_leaves_diagnostic",
+   "params": {
+    "edit": {
+     "via": "format",
+     "path": "index.ts"
+    },
+    "target": {
+     "message_re": "only refers to a type"
+    }
+   }
+  }
+ },
+ "attempts": []
+}

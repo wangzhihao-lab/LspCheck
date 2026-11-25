@@ -1,0 +1,3 @@
+2026-09-23 19:05:15,077 INFO campaign_run run 384aaa5deace: r3_routes on ts7 7.0.2, chenglou/pretext@2e5e2bdaee39 seed 1 settled, targets ['scripts/wrapping-transport.ts', 'src/line-break.ts', 'src/line-text.ts']
+2026-09-23 19:07:50,757 INFO campaign_run run 384aaa5deace: 12 candidate(s) in 156s; confirming
+2026-09-23 19:07:50,761 INFO campaign_run run 384aaa5deace finished: ok, 0 confirmed of 12 candidate(s), 156s

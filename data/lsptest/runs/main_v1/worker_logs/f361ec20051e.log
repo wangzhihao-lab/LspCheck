@@ -1,0 +1,9 @@
+2026-09-24 07:07:34,974 INFO campaign_run run f361ec20051e: r1_history on ts6 6.0.3, ChatGPTNextWeb/NextChat@defdcdb55d85 seed 1 settled, targets ['app/api/stability.ts', 'app/client/platforms/glm.ts', 'app/locales/index.ts']
+2026-09-24 07:21:36,342 INFO campaign_run run f361ec20051e: 12 candidate(s) in 841s; confirming
+2026-09-24 07:23:39,725 INFO flake replay 1/3 of ts6|r1_history|hover:text: settled=True control_stable=True reproduced=True (123.4s)
+2026-09-24 07:25:55,885 INFO flake replay 2/3 of ts6|r1_history|hover:text: settled=True control_stable=True reproduced=True (136.2s)
+2026-09-24 07:28:06,992 INFO flake replay 3/3 of ts6|r1_history|hover:text: settled=True control_stable=True reproduced=True (131.1s)
+2026-09-24 07:30:31,707 INFO flake replay 1/3 of ts6|r1_history|inlayHint:changed: settled=True control_stable=True reproduced=True (144.7s)
+2026-09-24 07:33:01,464 INFO flake replay 2/3 of ts6|r1_history|inlayHint:changed: settled=True control_stable=True reproduced=True (149.8s)
+2026-09-24 07:36:01,298 INFO flake replay 3/3 of ts6|r1_history|inlayHint:changed: settled=True control_stable=True reproduced=True (179.8s)
+2026-09-24 07:36:02,534 INFO campaign_run run f361ec20051e finished: ok, 2 confirmed of 12 candidate(s), 1708s

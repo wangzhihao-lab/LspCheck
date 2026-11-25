@@ -1,0 +1,9 @@
+{
+ "queries": [
+  "completionInsert unexpected repo:golang/go is:issue label:gopls",
+  "completionInsert \"wrong edit\" repo:golang/go is:issue label:gopls"
+ ],
+ "matches": [],
+ "notes": [],
+ "authenticated": true
+}

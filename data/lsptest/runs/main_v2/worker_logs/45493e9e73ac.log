@@ -1,0 +1,6 @@
+2026-11-18 08:25:01,181 INFO campaign_run run 45493e9e73ac: r3_routes on ts7 7.0.2, DayuanJiang/next-ai-draw-io@58b73ef761d8 seed 1 settled, targets ['app/api/validate-diagram/route.ts', 'lib/server-model-config.ts', 'lib/types/model-config.ts']
+2026-11-18 08:29:10,469 INFO campaign_run run 45493e9e73ac: 4 candidate(s) in 249s; confirming
+2026-11-18 08:30:32,350 INFO flake replay 1/3 of ts7|r3_routes|definitionConsistency:changed: settled=True control_stable=True reproduced=True (81.9s)
+2026-11-18 08:32:08,504 INFO flake replay 2/3 of ts7|r3_routes|definitionConsistency:changed: settled=True control_stable=True reproduced=True (96.2s)
+2026-11-18 08:33:52,549 INFO flake replay 3/3 of ts7|r3_routes|definitionConsistency:changed: settled=True control_stable=True reproduced=True (104.0s)
+2026-11-18 08:33:52,564 INFO campaign_run run 45493e9e73ac finished: ok, 1 confirmed of 4 candidate(s), 531s

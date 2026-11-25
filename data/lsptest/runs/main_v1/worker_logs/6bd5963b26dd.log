@@ -1,0 +1,3 @@
+2026-09-24 12:55:44,275 INFO campaign_run run 6bd5963b26dd: r1_history on ts7 7.0.2, vercel/hyper@30ec0a2a91de seed 3 settled, targets ['lib/components/style-sheet.tsx', 'lib/components/tab.tsx', 'test/index.ts']
+2026-09-24 13:07:58,339 INFO campaign_run run 6bd5963b26dd: 0 candidate(s) in 734s; confirming
+2026-09-24 13:07:58,340 INFO campaign_run run 6bd5963b26dd finished: ok, 0 confirmed of 0 candidate(s), 734s

@@ -1,0 +1,96 @@
+{
+ "queries": [
+  "\"go to definition\" in:title repo:typescript-language-server/typescript-language-server is:issue",
+  "definition wrong repo:typescript-language-server/typescript-language-server is:issue",
+  "definition \"go to definition\" repo:typescript-language-server/typescript-language-server is:issue",
+  "definition inconsistent repo:typescript-language-server/typescript-language-server is:issue",
+  "\"go to definition\" in:title repo:microsoft/TypeScript is:issue",
+  "definition wrong repo:microsoft/TypeScript is:issue",
+  "definition \"go to definition\" repo:microsoft/TypeScript is:issue",
+  "definition inconsistent repo:microsoft/TypeScript is:issue"
+ ],
+ "matches": [
+  {
+   "repo": "typescript-language-server/typescript-language-server",
+   "number": 795,
+   "title": "Go to definition is not working on neovim",
+   "url": "https://github.com/typescript-language-server/typescript-language-server/issues/795",
+   "state": "closed",
+   "created": "2023-11-12",
+   "comments": 2,
+   "query": "\"go to definition\" in:title repo:typescript-language-server/typescript-language-server is:issue"
+  },
+  {
+   "repo": "typescript-language-server/typescript-language-server",
+   "number": 507,
+   "title": "Possibility of including Go to Source Definition?",
+   "url": "https://github.com/typescript-language-server/typescript-language-server/issues/507",
+   "state": "closed",
+   "created": "2022-07-03",
+   "comments": 4,
+   "query": "\"go to definition\" in:title repo:typescript-language-server/typescript-language-server is:issue"
+  },
+  {
+   "repo": "typescript-language-server/typescript-language-server",
+   "number": 431,
+   "title": "Go to definition function broken in monorepo project",
+   "url": "https://github.com/typescript-language-server/typescript-language-server/issues/431",
+   "state": "closed",
+   "created": "2022-04-10",
+   "comments": 4,
+   "query": "\"go to definition\" in:title repo:typescript-language-server/typescript-language-server is:issue"
+  },
+  {
+   "repo": "typescript-language-server/typescript-language-server",
+   "number": 216,
+   "title": "Multiple and wrong definition",
+   "url": "https://github.com/typescript-language-server/typescript-language-server/issues/216",
+   "state": "closed",
+   "created": "2021-06-03",
+   "comments": 38,
+   "query": "definition wrong repo:typescript-language-server/typescript-language-server is:issue"
+  },
+  {
+   "repo": "typescript-language-server/typescript-language-server",
+   "number": 917,
+   "title": "Shows incorrect type completion item between VSCode and Neovim",
+   "url": "https://github.com/typescript-language-server/typescript-language-server/issues/917",
+   "state": "closed",
+   "created": "2024-09-27",
+   "comments": 9,
+   "query": "definition wrong repo:typescript-language-server/typescript-language-server is:issue"
+  },
+  {
+   "repo": "typescript-language-server/typescript-language-server",
+   "number": 841,
+   "title": "Invalid completions",
+   "url": "https://github.com/typescript-language-server/typescript-language-server/issues/841",
+   "state": "closed",
+   "created": "2024-01-02",
+   "comments": 10,
+   "query": "definition wrong repo:typescript-language-server/typescript-language-server is:issue"
+  },
+  {
+   "repo": "typescript-language-server/typescript-language-server",
+   "number": 632,
+   "title": "Wrong or confusing Semantic Token Types reported",
+   "url": "https://github.com/typescript-language-server/typescript-language-server/issues/632",
+   "state": "closed",
+   "created": "2022-11-23",
+   "comments": 1,
+   "query": "definition wrong repo:typescript-language-server/typescript-language-server is:issue"
+  },
+  {
+   "repo": "typescript-language-server/typescript-language-server",
+   "number": 495,
+   "title": "Wrong tsconfig.json being used in monorepo",
+   "url": "https://github.com/typescript-language-server/typescript-language-server/issues/495",
+   "state": "closed",
+   "created": "2022-06-16",
+   "comments": 4,
+   "query": "definition wrong repo:typescript-language-server/typescript-language-server is:issue"
+  }
+ ],
+ "notes": [],
+ "authenticated": true
+}

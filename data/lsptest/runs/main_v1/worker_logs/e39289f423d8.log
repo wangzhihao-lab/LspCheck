@@ -1,0 +1,3 @@
+2026-09-23 22:48:54,036 INFO campaign_run run e39289f423d8: r4_edits on gopls v0.23.0, XTLS/Xray-core@d562d8947d31 seed 2 settled, targets ['common/protocol/account.go', 'main/commands/all/api/source_ip_block.go', 'transport/pipe/impl.go']
+2026-09-23 22:49:43,708 INFO campaign_run run e39289f423d8: 0 candidate(s) in 50s; confirming
+2026-09-23 22:49:43,710 INFO campaign_run run e39289f423d8 finished: ok, 0 confirmed of 0 candidate(s), 50s

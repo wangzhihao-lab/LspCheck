@@ -1,0 +1,44 @@
+{
+ "vid": "177d4d657921-v01",
+ "ops_before": 0,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 0,
+ "cache_hits": 0,
+ "reduce_seconds": 0.0,
+ "budget_exhausted": false,
+ "probe_log": [],
+ "logs": [
+  "pyright-1.1.414-tr81a7e5-r3-replay-baseline-20261118-232156-49fd3e.jsonl.gz",
+  "pyright-1.1.414-tr81a7e5-r3-replay-control-20261118-232159-778bfd.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [
+   [
+    "app/agent/mcp.py",
+    29,
+    4,
+    29,
+    19
+   ],
+   [
+    "app/agent/mcp.py",
+    56,
+    17,
+    56,
+    32
+   ]
+  ],
+  "actual": [
+   [
+    "app/agent/mcp.py",
+    29,
+    4,
+    29,
+    19
+   ]
+  ]
+ },
+ "ops_after": 0,
+ "total_seconds": 24.5
+}

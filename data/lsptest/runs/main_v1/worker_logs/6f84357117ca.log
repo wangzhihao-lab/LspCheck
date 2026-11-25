@@ -1,0 +1,3 @@
+2026-09-24 12:19:44,011 INFO campaign_run run 6f84357117ca: r1_history on ts6 6.0.3, pmndrs/zustand@b57db4f86ef1 seed 3 settled, targets ['src/react/shallow.ts', 'tests/devtools.test.tsx', 'tests/types.test.tsx']
+2026-09-24 12:27:12,051 INFO campaign_run run 6f84357117ca: 0 candidate(s) in 448s; confirming
+2026-09-24 12:27:12,051 INFO campaign_run run 6f84357117ca finished: ok, 0 confirmed of 0 candidate(s), 448s

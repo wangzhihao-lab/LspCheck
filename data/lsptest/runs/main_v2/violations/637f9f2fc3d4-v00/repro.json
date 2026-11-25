@@ -1,0 +1,507 @@
+{
+ "format": 1,
+ "campaign": "main_v2",
+ "vid": "637f9f2fc3d4-v00",
+ "run_id": "637f9f2fc3d4",
+ "oracle": "r2_handles",
+ "server": {
+  "kind": "gopls",
+  "version": "v0.23.0"
+ },
+ "project": {
+  "name": "abiosoft/colima@bba803d3d6fa",
+  "source": "corpus",
+  "ref": "temp/corpus/abiosoft__colima@bba803d3d6fa",
+  "commit": "bba803d3d6fa9372a60f747e5dad4c8e80db7cde",
+  "language": "go"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "core/core.go",
+    "positions": [
+     [
+      23,
+      74
+     ],
+     [
+      30,
+      14
+     ],
+     [
+      30,
+      19
+     ],
+     [
+      45,
+      15
+     ],
+     [
+      49,
+      18
+     ],
+     [
+      51,
+      8
+     ],
+     [
+      53,
+      23
+     ],
+     [
+      54,
+      56
+     ],
+     [
+      63,
+      5
+     ],
+     [
+      68,
+      10
+     ],
+     [
+      72,
+      48
+     ],
+     [
+      74,
+      16
+     ]
+    ],
+    "ends": [
+     [
+      23,
+      76
+     ],
+     [
+      30,
+      17
+     ],
+     [
+      30,
+      21
+     ],
+     [
+      45,
+      25
+     ],
+     [
+      49,
+      21
+     ],
+     [
+      51,
+      11
+     ],
+     [
+      53,
+      25
+     ],
+     [
+      54,
+      58
+     ],
+     [
+      63,
+      8
+     ],
+     [
+      68,
+      12
+     ],
+     [
+      72,
+      53
+     ],
+     [
+      74,
+      19
+     ]
+    ],
+    "names": [
+     "Arch",
+     "guest",
+     "Run",
+     "LimaVersionSupported",
+     "Buffer",
+     "Stdout",
+     "err",
+     "err",
+     "values",
+     "nil",
+     "TrimPrefix",
+     "Errorf"
+    ]
+   },
+   {
+    "path": "environment/vm/lima/limautil/image_test.go",
+    "positions": [
+     [
+      4,
+      26
+     ],
+     [
+      4,
+      31
+     ],
+     [
+      8,
+      12
+     ],
+     [
+      9,
+      12
+     ],
+     [
+      10,
+      12
+     ],
+     [
+      15,
+      13
+     ],
+     [
+      21,
+      4
+     ],
+     [
+      23,
+      5
+     ],
+     [
+      27,
+      13
+     ],
+     [
+      29,
+      5
+     ],
+     [
+      38,
+      5
+     ],
+     [
+      40,
+      24
+     ]
+    ],
+    "ends": [
+     [
+      4,
+      30
+     ],
+     [
+      4,
+      32
+     ],
+     [
+      8,
+      15
+     ],
+     [
+      9,
+      15
+     ],
+     [
+      10,
+      15
+     ],
+     [
+      15,
+      16
+     ],
+     [
+      21,
+      6
+     ],
+     [
+      23,
+      7
+     ],
+     [
+      27,
+      16
+     ],
+     [
+      29,
+      7
+     ],
+     [
+      38,
+      6
+     ],
+     [
+      40,
+      25
+     ]
+    ],
+    "names": [
+     "testing",
+     "T",
+     "string",
+     "string",
+     "string",
+     "ghURL",
+     "url",
+     "want",
+     "ghURL",
+     "want",
+     "_",
+     "tt"
+    ]
+   },
+   {
+    "path": "util/downloader/download.go",
+    "positions": [
+     [
+      48,
+      24
+     ],
+     [
+      49,
+      17
+     ],
+     [
+      75,
+      42
+     ],
+     [
+      94,
+      15
+     ],
+     [
+      104,
+      34
+     ],
+     [
+      112,
+      27
+     ],
+     [
+      113,
+      14
+     ],
+     [
+      121,
+      27
+     ],
+     [
+      147,
+      28
+     ],
+     [
+      152,
+      6
+     ],
+     [
+      152,
+      13
+     ],
+     [
+      153,
+      34
+     ]
+    ],
+    "ends": [
+     [
+      48,
+      33
+     ],
+     [
+      49,
+      18
+     ],
+     [
+      75,
+      43
+     ],
+     [
+      94,
+      17
+     ],
+     [
+      104,
+      37
+     ],
+     [
+      112,
+      34
+     ],
+     [
+      113,
+      21
+     ],
+     [
+      121,
+      31
+     ],
+     [
+      147,
+      30
+     ],
+     [
+      152,
+      7
+     ],
+     [
+      152,
+      18
+     ],
+     [
+      153,
+      36
+     ]
+    ],
+    "names": [
+     "ValidateDownloader",
+     "d",
+     "ID",
+     "err",
+     "string",
+     "resumeInfoPath",
+     "CacheFilename",
+     "cacheDir",
+     "etag",
+     "d",
+     "downloader",
+     "url"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "codeActionResolve",
+  "path": "util/downloader/download.go",
+  "line": 121,
+  "character": 27,
+  "extra": "pos:121:27|top1|Inline variable \"cacheDir\"|refactor.inline.variable|0"
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "util/downloader/download.go"
+  },
+  {
+   "kind": "change",
+   "path": "util/downloader/download.go",
+   "start": [
+    0,
+    0
+   ],
+   "end": [
+    0,
+    0
+   ],
+   "text": "\n"
+  }
+ ],
+ "case": {
+  "extra": "pos",
+  "path": "util/downloader/download.go",
+  "shift": {
+   "col": 0,
+   "line": 0,
+   "text": "\n",
+   "variant": "top"
+  },
+  "sub": "codeAction",
+  "where": [
+   121,
+   27,
+   121,
+   27
+  ]
+ },
+ "shape": "codeActionResolve:changed",
+ "signature": "gopls|r2_handles|codeActionResolve:changed",
+ "expected": [
+  [
+   "util/downloader/download.go",
+   122,
+   23,
+   122,
+   31,
+   "filepath.Dir(cacheDownloadingFilename)"
+  ]
+ ],
+ "actual": [
+  [
+   "util/downloader/download.go",
+   121,
+   26,
+   121,
+   50,
+   "d.cacheDownloadingFileName(r.URL)"
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "flake 3/3 [r1:SCR r2:SCR r3:SCR] in 28s",
+ "violation": {
+  "oracle": "r2_handles",
+  "server": "gopls-v0.23.0",
+  "project": "abiosoft/colima@bba803d3d6fa",
+  "key": {
+   "method": "codeActionResolve",
+   "path": "util/downloader/download.go",
+   "line": 121,
+   "character": 27,
+   "extra": "pos:121:27|top1|Inline variable \"cacheDir\"|refactor.inline.variable|0"
+  },
+  "expected": [
+   [
+    "util/downloader/download.go",
+    122,
+    23,
+    122,
+    31,
+    "filepath.Dir(cacheDownloadingFilename)"
+   ]
+  ],
+  "actual": [
+   [
+    "util/downloader/download.go",
+    121,
+    26,
+    121,
+    50,
+    "d.cacheDownloadingFileName(r.URL)"
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "util/downloader/download.go"
+   },
+   {
+    "kind": "change",
+    "path": "util/downloader/download.go",
+    "start": [
+     0,
+     0
+    ],
+    "end": [
+     0,
+     0
+    ],
+    "text": "\n"
+   }
+  ],
+  "detail": "{\"case\": {\"extra\": \"pos\", \"path\": \"util/downloader/download.go\", \"shift\": {\"col\": 0, \"line\": 0, \"text\": \"\\n\", \"variant\": \"top\"}, \"sub\": \"codeAction\", \"where\": [121, 27, 121, 27]}, \"note\": \"flake 3/3 [r1:SCR r2:SCR r3:SCR] in 28s\", \"shape\": \"codeActionResolve:changed\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "gopls|r2_handles|codeActionResolve:changed",
+  "run_id": "637f9f2fc3d4"
+ },
+ "replay_logs": [
+  "logs/gopls-v0.23.0-637f9f2fc3d4-r2-replay-20261118-102836-6fbda8.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

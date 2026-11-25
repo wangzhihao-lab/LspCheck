@@ -1,0 +1,6 @@
+2026-09-24 12:25:34,633 INFO campaign_run run 8c629b528584: r1_history on gopls v0.23.0, spf13/cobra@adbc8813901b seed 3 settled, targets ['bash_completionsV2_test.go', 'flag_groups_test.go', 'powershell_completions_test.go']
+2026-09-24 12:32:41,779 INFO campaign_run run 8c629b528584: 11 candidate(s) in 427s; confirming
+2026-09-24 12:33:37,773 INFO flake replay 1/3 of gopls|r1_history|completion:changed: settled=True control_stable=True reproduced=False (56.0s)
+2026-09-24 12:34:36,075 INFO flake replay 2/3 of gopls|r1_history|completion:changed: settled=True control_stable=True reproduced=False (58.3s)
+2026-09-24 12:35:34,955 INFO flake replay 3/3 of gopls|r1_history|completion:changed: settled=True control_stable=True reproduced=True (58.9s)
+2026-09-24 12:35:34,959 INFO campaign_run run 8c629b528584 finished: ok, 0 confirmed of 11 candidate(s), 600s

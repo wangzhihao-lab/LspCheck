@@ -1,0 +1,3 @@
+2026-11-18 16:08:04,033 INFO campaign_run run caef2b17d33b: r3_routes on ts7 7.0.2, Gitlawb/openclaude@5cd11336caea seed 2 settled, targets ['src/context/repoMap/repoMap.test.ts', 'src/utils/envFile.ts', 'src/utils/model/modelOptions.ts']
+2026-11-18 16:11:55,508 INFO campaign_run run caef2b17d33b: 4 candidate(s) in 232s; confirming
+2026-11-18 16:11:55,509 INFO campaign_run run caef2b17d33b finished: ok, 0 confirmed of 4 candidate(s), 232s

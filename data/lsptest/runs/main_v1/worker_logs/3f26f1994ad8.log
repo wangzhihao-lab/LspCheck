@@ -1,0 +1,6 @@
+2026-09-24 04:29:08,917 INFO campaign_run run 3f26f1994ad8: r1_history on ts6 6.0.3, upstash/context7@6477e43e31d2 seed 1 settled, targets ['packages/cli/src/__tests__/command-auth-wiring.test.ts', 'packages/sdk/src/client.ts', 'packages/sdk/src/commands/command.ts']
+2026-09-24 04:42:44,705 INFO campaign_run run 3f26f1994ad8: 3 candidate(s) in 816s; confirming
+2026-09-24 04:44:06,776 INFO flake replay 1/3 of ts6|r1_history|hover:text: settled=True control_stable=True reproduced=True (82.1s)
+2026-09-24 04:46:24,281 INFO flake replay 2/3 of ts6|r1_history|hover:text: settled=True control_stable=True reproduced=True (137.5s)
+2026-09-24 04:47:41,931 INFO flake replay 3/3 of ts6|r1_history|hover:text: settled=True control_stable=True reproduced=True (77.6s)
+2026-09-24 04:47:42,251 INFO campaign_run run 3f26f1994ad8 finished: ok, 1 confirmed of 3 candidate(s), 1113s

@@ -1,0 +1,141 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "27d79bab3edd-v00",
+ "run_id": "27d79bab3edd",
+ "oracle": "r3_routes",
+ "server": {
+  "kind": "rust-analyzer",
+  "version": "2026-09-21"
+ },
+ "project": {
+  "name": "rust-lang/rustlings@a650509c789d",
+  "source": "corpus",
+  "ref": "temp/corpus/rust-lang__rustlings@a650509c789d",
+  "commit": "a650509c789da1656f813392b16aa1fa043b7f3e",
+  "language": "rust"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "src/cargo_toml.rs",
+    "positions": [],
+    "ends": [],
+    "names": []
+   },
+   {
+    "path": "src/exercise.rs",
+    "positions": [
+     [
+      243,
+      17
+     ]
+    ],
+    "ends": [],
+    "names": [
+     ""
+    ]
+   },
+   {
+    "path": "src/watch/state.rs",
+    "positions": [],
+    "ends": [],
+    "names": []
+   }
+  ]
+ },
+ "key": {
+  "method": "definitionConsistency",
+  "path": "src/exercise.rs",
+  "line": 243,
+  "character": 17,
+  "extra": "from:src/exercise.rs:121:41"
+ },
+ "ops": [],
+ "case": {
+  "loc": [
+   "src/exercise.rs",
+   243,
+   7,
+   243,
+   27
+  ],
+  "sub": "d",
+  "target": [
+   "src/exercise.rs",
+   121,
+   41
+  ]
+ },
+ "shape": "definitionConsistency:changed",
+ "signature": "rust-analyzer|r3_routes|definitionConsistency:changed",
+ "expected": [
+  [
+   "src/exercise.rs",
+   103,
+   7,
+   103,
+   27
+  ]
+ ],
+ "actual": [
+  [
+   "src/exercise.rs",
+   243,
+   7,
+   243,
+   27
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "flake 3/3 [r1:SCR r2:SCR r3:SCR] in 118s",
+ "violation": {
+  "oracle": "r3_routes",
+  "server": "rust-analyzer-2026-09-21",
+  "project": "rust-lang/rustlings@a650509c789d",
+  "key": {
+   "method": "definitionConsistency",
+   "path": "src/exercise.rs",
+   "line": 243,
+   "character": 17,
+   "extra": "from:src/exercise.rs:121:41"
+  },
+  "expected": [
+   [
+    "src/exercise.rs",
+    103,
+    7,
+    103,
+    27
+   ]
+  ],
+  "actual": [
+   [
+    "src/exercise.rs",
+    243,
+    7,
+    243,
+    27
+   ]
+  ],
+  "ops": [],
+  "detail": "{\"case\": {\"loc\": [\"src/exercise.rs\", 243, 7, 243, 27], \"sub\": \"d\", \"target\": [\"src/exercise.rs\", 121, 41]}, \"note\": \"flake 3/3 [r1:SCR r2:SCR r3:SCR] in 118s\", \"shape\": \"definitionConsistency:changed\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "rust-analyzer|r3_routes|definitionConsistency:changed",
+  "run_id": "27d79bab3edd"
+ },
+ "replay_logs": [
+  "logs/rust-analyzer-2026-09-21-tr2c6179-r3-replay-baseline-20260925-163249-5a8dfd.jsonl.gz",
+  "logs/rust-analyzer-2026-09-21-tr2c6179-r3-replay-control-20260925-163306-f83a9f.jsonl.gz"
+ ],
+ "project_files": {},
+ "group": "rust-analyzer-r3-definitionconsistency-changed-d-2c6179",
+ "reduced": true
+}

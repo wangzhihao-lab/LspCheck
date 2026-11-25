@@ -1,0 +1,3 @@
+2026-09-25 14:02:50,334 INFO campaign_run run c04e1665b834: r4_edits on gopls v0.6.6, gopls-38732 seed 2 settled, targets ['bar.go', 'foo.go']
+2026-09-25 14:03:07,559 INFO campaign_run run c04e1665b834: 0 candidate(s) in 17s; confirming
+2026-09-25 14:03:07,559 INFO campaign_run run c04e1665b834 finished: ok, 0 confirmed of 0 candidate(s), 17s

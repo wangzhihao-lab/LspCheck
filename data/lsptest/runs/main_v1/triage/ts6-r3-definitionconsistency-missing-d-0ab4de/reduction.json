@@ -1,0 +1,44 @@
+{
+ "vid": "4ef417928764-v00",
+ "ops_before": 0,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 0,
+ "cache_hits": 0,
+ "reduce_seconds": 0.0,
+ "budget_exhausted": false,
+ "probe_log": [],
+ "logs": [
+  "ts6-6.0.3-tr0ab4de-r3-replay-baseline-20260925-185430-84b6fa.jsonl.gz",
+  "ts6-6.0.3-tr0ab4de-r3-replay-control-20260925-185436-ffdcd5.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [
+   [
+    "src/core/global-config.ts",
+    87,
+    2,
+    87,
+    5
+   ],
+   [
+    "test/commands/store-git.test.ts",
+    48,
+    6,
+    48,
+    9
+   ]
+  ],
+  "actual": [
+   [
+    "src/core/global-config.ts",
+    87,
+    2,
+    87,
+    5
+   ]
+  ]
+ },
+ "ops_after": 0,
+ "total_seconds": 56.7
+}

@@ -1,0 +1,74 @@
+{
+ "schema": 1,
+ "id": "pyright-9681",
+ "meta": {
+  "server": "pyright",
+  "kind": "pyright",
+  "number": 9681,
+  "url": "https://github.com/microsoft/pyright/issues/9681",
+  "title": "Multiline literal types in CRLF ending files are not normalized to LF",
+  "oracle_class": "R5",
+  "subtype": "crlf",
+  "fix_ref": "none (maintainer: 'This is included in pyright 1.1.392')",
+  "fix_shas": [
+   "d0210f6083ce7ee0984aaee363bc7e565720e731"
+  ],
+  "pre_version": "1.1.391",
+  "post_version": "1.1.392",
+  "pre_build": "1.1.391",
+  "post_build": "1.1.392",
+  "build_notes": "npm pyright@1.1.391 (2024-12-18) and pyright@1.1.392 (2025-01-15); release window from the maintainer's comment.",
+  "candidate_rank": 66,
+  "effort_minutes": 5,
+  "notes": "R5 (LF to CRLF is semantics-preserving: the runtime reads 'a\\nb' either way, as the issue and the maintainer confirm)."
+ },
+ "language": "python",
+ "settings": {},
+ "settings_note": "The issue names no settings (command line and Pylance defaults); the session defaults (basic type checking) apply; reportAssignmentType is on in basic mode.",
+ "session": {
+  "settle_timeout_s": 120
+ },
+ "files": [
+  {
+   "path": "main.py",
+   "provenance": "issue",
+   "source": "issue body, python code block",
+   "note": "stored with LF line endings; the probe makes the CRLF copy"
+  }
+ ],
+ "repro": {
+  "attempt": 1,
+  "timing": "settled",
+  "steps": "The same file once with LF and once with CRLF line endings, each opened in a fresh session. Reported: with CRLF, pyright reports that Literal['a\\r\\nb'] is not assignable to the declared Literal['a\\nb'] (reportAssignmentType); with LF there is no error, and the line ending should not matter. Probe (R5): the diagnostics and the hover on a of the CRLF copy must equal those of the LF original.",
+  "ops": [
+   {
+    "kind": "open",
+    "path": "main.py"
+   }
+  ],
+  "probe": {
+   "type": "transform_differs",
+   "params": {
+    "transform": {
+     "kind": "crlf",
+     "path": "main.py"
+    },
+    "queries": [
+     {
+      "method": "diagnostics",
+      "path": "main.py"
+     },
+     {
+      "method": "hover",
+      "path": "main.py",
+      "position": [
+       2,
+       0
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "attempts": []
+}

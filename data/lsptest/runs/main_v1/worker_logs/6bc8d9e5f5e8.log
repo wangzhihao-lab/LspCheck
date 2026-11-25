@@ -1,0 +1,3 @@
+2026-09-24 10:08:20,954 INFO campaign_run run 6bc8d9e5f5e8: r1_history on ts7 7.0.2, Fission-AI/OpenSpec@f179ed4e4056 seed 2 settled, targets ['src/core/schemas/index.ts', 'src/utils/requirement-diff.ts', 'test/core/misplaced-delta-files.test.ts']
+2026-09-24 10:14:11,343 INFO campaign_run run 6bc8d9e5f5e8: 0 candidate(s) in 350s; confirming
+2026-09-24 10:14:11,343 INFO campaign_run run 6bc8d9e5f5e8 finished: ok, 0 confirmed of 0 candidate(s), 350s

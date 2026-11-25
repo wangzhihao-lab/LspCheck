@@ -1,0 +1,3 @@
+2026-09-24 20:13:22,284 INFO campaign_run run b740f4f67a31: r4_edits on gopls v0.4.4, gopls-38424 seed 1 settled, targets ['main2.go']
+2026-09-24 20:13:32,562 INFO campaign_run run b740f4f67a31: 0 candidate(s) in 10s; confirming
+2026-09-24 20:13:32,563 INFO campaign_run run b740f4f67a31 finished: ok, 0 confirmed of 0 candidate(s), 10s

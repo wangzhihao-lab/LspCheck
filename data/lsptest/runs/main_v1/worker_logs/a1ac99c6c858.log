@@ -1,0 +1,3 @@
+2026-09-23 16:46:47,087 INFO campaign_run run a1ac99c6c858: r2_handles on rust-analyzer 2026-09-21, alacritty/alacritty@d692748d3f61 seed 1 settled, targets ['alacritty/src/config/monitor.rs', 'alacritty_terminal/src/term/mod.rs', 'alacritty_terminal/src/tty/unix.rs']
+2026-09-23 16:51:01,692 INFO campaign_run run a1ac99c6c858: 0 candidate(s) in 255s; confirming
+2026-09-23 16:51:01,693 INFO campaign_run run a1ac99c6c858 finished: ok, 0 confirmed of 0 candidate(s), 255s

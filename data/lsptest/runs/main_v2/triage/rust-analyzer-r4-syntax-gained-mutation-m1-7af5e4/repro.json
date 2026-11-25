@@ -1,0 +1,238 @@
+{
+ "format": 1,
+ "campaign": "main_v2",
+ "vid": "ebf6989f5480-v01",
+ "run_id": "ebf6989f5480",
+ "oracle": "r4_edits",
+ "server": {
+  "kind": "rust-analyzer",
+  "version": "2026-09-21"
+ },
+ "project": {
+  "name": "googleworkspace/cli@a3768d0e82ad",
+  "source": "corpus",
+  "ref": "temp/corpus/googleworkspace__cli@a3768d0e82ad",
+  "commit": "a3768d0e82ad83cca2da97724e46bea4ff0e6dbd",
+  "language": "rust"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "crates/google-workspace-cli/src/helpers/chat.rs",
+    "positions": [
+     [
+      183,
+      8
+     ]
+    ],
+    "ends": [],
+    "names": [
+     ""
+    ]
+   },
+   {
+    "path": "crates/google-workspace-cli/src/helpers/events/mod.rs",
+    "positions": [],
+    "ends": [],
+    "names": []
+   },
+   {
+    "path": "crates/google-workspace-cli/src/main.rs",
+    "positions": [],
+    "ends": [],
+    "names": []
+   }
+  ]
+ },
+ "key": {
+  "method": "syntax",
+  "path": "crates/google-workspace-cli/src/helpers/chat.rs",
+  "line": 183,
+  "character": 8,
+  "extra": "M1:quickfix-syntax:Add .to_owned() here"
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "crates/google-workspace-cli/src/helpers/chat.rs"
+  },
+  {
+   "kind": "change",
+   "path": "crates/google-workspace-cli/src/helpers/chat.rs",
+   "start": [
+    18,
+    16
+   ],
+   "end": [
+    18,
+    28
+   ]
+  },
+  {
+   "kind": "change",
+   "path": "crates/google-workspace-cli/src/helpers/chat.rs",
+   "start": [
+    183,
+    13
+   ],
+   "end": [
+    183,
+    13
+   ],
+   "text": ".to_owned()"
+  }
+ ],
+ "case": {
+  "action_kind": "quickfix",
+  "check": "syntax",
+  "diag": {
+   "code": "E0308",
+   "message": "expected String, found str",
+   "range": {
+    "end": {
+     "character": 13,
+     "line": 183
+    },
+    "start": {
+     "character": 8,
+     "line": 183
+    }
+   },
+   "severity": 1
+  },
+  "fix_introduced_errors": [
+   {
+    "code": "E0063",
+    "message": "missing structure fields:\n- space\n",
+    "path": "crates/google-workspace-cli/src/helpers/chat.rs",
+    "range": {
+     "end": {
+      "character": 17,
+      "line": 182
+     },
+     "start": {
+      "character": 7,
+      "line": 182
+     }
+    },
+    "severity": 1
+   }
+  ],
+  "fix_ops": [
+   {
+    "end": [
+     183,
+     13
+    ],
+    "kind": "change",
+    "path": "crates/google-workspace-cli/src/helpers/chat.rs",
+    "start": [
+     183,
+     13
+    ],
+    "text": ".to_owned()"
+   }
+  ],
+  "kind": "mutation",
+  "mutation": {
+   "end": [
+    18,
+    28
+   ],
+   "id": "M1",
+   "offsets": [
+    689,
+    701
+   ],
+   "sha": "3803138caa120b91",
+   "start": [
+    18,
+    16
+   ],
+   "text": "",
+   "what": "remove 'ArgMatches' from an import"
+  },
+  "n_fix_ops": 1,
+  "new_errors": [
+   "184:14: expected one of `,`, `:`, or `}`, found `.`"
+  ],
+  "path": "crates/google-workspace-cli/src/helpers/chat.rs",
+  "syntax_path": "crates/google-workspace-cli/src/helpers/chat.rs",
+  "title": "Add .to_owned() here",
+  "via": "edit"
+ },
+ "shape": "syntax:gained",
+ "signature": "rust-analyzer|r4_edits|syntax:gained",
+ "expected": [],
+ "actual": [
+  "expected one of `,`, `:`, or `}`, found `.`"
+ ],
+ "reproduced": "3/3",
+ "note": "quick fix 'Add .to_owned() here' for E0308 leaves parse errors ['184:14: expected one of `,`, `:`, or `}`, found `.`'] in crates/google-workspace-cli/src/helpers/chat.rs (seeded by M1: remove 'ArgMatches' from an import; errors before the mutation 0, after the fix 1); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 235s",
+ "violation": {
+  "oracle": "r4_edits",
+  "server": "rust-analyzer-2026-09-21",
+  "project": "googleworkspace/cli@a3768d0e82ad",
+  "key": {
+   "method": "syntax",
+   "path": "crates/google-workspace-cli/src/helpers/chat.rs",
+   "line": 183,
+   "character": 8,
+   "extra": "M1:quickfix-syntax:Add .to_owned() here"
+  },
+  "expected": [],
+  "actual": [
+   "expected one of `,`, `:`, or `}`, found `.`"
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "crates/google-workspace-cli/src/helpers/chat.rs"
+   },
+   {
+    "kind": "change",
+    "path": "crates/google-workspace-cli/src/helpers/chat.rs",
+    "start": [
+     18,
+     16
+    ],
+    "end": [
+     18,
+     28
+    ]
+   },
+   {
+    "kind": "change",
+    "path": "crates/google-workspace-cli/src/helpers/chat.rs",
+    "start": [
+     183,
+     13
+    ],
+    "end": [
+     183,
+     13
+    ],
+    "text": ".to_owned()"
+   }
+  ],
+  "detail": "{\"case\": {\"action_kind\": \"quickfix\", \"check\": \"syntax\", \"diag\": {\"code\": \"E0308\", \"message\": \"expected String, found str\", \"range\": {\"end\": {\"character\": 13, \"line\": 183}, \"start\": {\"character\": 8, \"line\": 183}}, \"severity\": 1}, \"fix_introduced_errors\": [{\"code\": \"E0063\", \"message\": \"missing structure fields:\\n- space\\n\", \"path\": \"crates/google-workspace-cli/src/helpers/chat.rs\", \"range\": {\"end\": {\"character\": 17, \"line\": 182}, \"start\": {\"character\": 7, \"line\": 182}}, \"severity\": 1}], \"fix_ops\": [{\"end\": [183, 13], \"kind\": \"change\", \"path\": \"crates/google-workspace-cli/src/helpers/chat.rs\", \"start\": [183, 13], \"text\": \".to_owned()\"}], \"kind\": \"mutation\", \"mutation\": {\"end\": [18, 28], \"id\": \"M1\", \"offsets\": [689, 701], \"sha\": \"3803138caa120b91\", \"start\": [18, 16], \"text\": \"\", \"what\": \"remove 'ArgMatches' from an import\"}, \"n_fix_ops\": 1, \"new_errors\": [\"184:14: expected one of `,`, `:`, or `}`, found `.`\"], \"path\": \"crates/google-workspace-cli/src/helpers/chat.rs\", \"syntax_path\": \"crates/google-workspace-cli/src/helpers/chat.rs\", \"title\": \"Add .to_owned() here\", \"via\": \"edit\"}, \"note\": \"quick fix 'Add .to_owned() here' for E0308 leaves parse errors ['184:14: expected one of `,`, `:`, or `}`, found `.`'] in crates/google-workspace-cli/src/helpers/chat.rs (seeded by M1: remove 'ArgMatches' from an import; errors before the mutation 0, after the fix 1); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 235s\", \"shape\": \"syntax:gained\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "rust-analyzer|r4_edits|syntax:gained",
+  "run_id": "ebf6989f5480"
+ },
+ "replay_logs": [
+  "logs/rust-analyzer-2026-09-21-tr7af5e4-r4-replay-baseline-20261119-010242-80d464.jsonl.gz",
+  "logs/rust-analyzer-2026-09-21-tr7af5e4-r4-replay-case-20261119-010159-0a2bc8.jsonl.gz",
+  "logs/rust-analyzer-2026-09-21-tr7af5e4-r4-replay-control-20261119-010309-e006ed.jsonl.gz"
+ ],
+ "project_files": {},
+ "group": "rust-analyzer-r4-syntax-gained-mutation-m1-7af5e4",
+ "reduced": true
+}

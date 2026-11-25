@@ -1,0 +1,3 @@
+2026-09-24 10:22:04,888 INFO campaign_run run 937ab177203f: r1_history on rust-analyzer 2026-09-21, FuelLabs/fuels-rs@d9a250a51818 seed 2 settled, targets ['packages/fuels-macros/tests/ui/derive/tokenizable/only_one_variant_element_supported.rs', 'packages/fuels-programs/src/contract/regular.rs', 'scripts/change-log/src/adapters/octocrab.rs']
+2026-09-24 10:31:08,413 INFO campaign_run run 937ab177203f: 0 candidate(s) in 544s; confirming
+2026-09-24 10:31:08,414 INFO campaign_run run 937ab177203f finished: ok, 0 confirmed of 0 candidate(s), 544s

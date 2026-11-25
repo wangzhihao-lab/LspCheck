@@ -1,0 +1,496 @@
+{
+ "format": 1,
+ "campaign": "bench_v1",
+ "vid": "e176faaf98b4-v08",
+ "run_id": "e176faaf98b4",
+ "oracle": "r1_history",
+ "server": {
+  "kind": "rust-analyzer",
+  "version": "2025-08-25"
+ },
+ "project": {
+  "name": "rust-analyzer-17525",
+  "source": "dir",
+  "ref": "data/lsp_bench/cases/rust-analyzer-17525/project",
+  "commit": "",
+  "language": "rust"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 240.0,
+  "request_timeout_s": 60.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "src/lib.rs",
+    "positions": [
+     [
+      0,
+      9
+     ],
+     [
+      0,
+      13
+     ],
+     [
+      0,
+      16
+     ],
+     [
+      1,
+      9
+     ],
+     [
+      2,
+      6
+     ],
+     [
+      2,
+      12
+     ],
+     [
+      5,
+      5
+     ],
+     [
+      5,
+      11
+     ],
+     [
+      5,
+      16
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      12
+     ],
+     [
+      0,
+      14
+     ],
+     [
+      0,
+      17
+     ],
+     [
+      1,
+      12
+     ],
+     [
+      2,
+      9
+     ],
+     [
+      2,
+      14
+     ],
+     [
+      5,
+      8
+     ],
+     [
+      5,
+      14
+     ],
+     [
+      5,
+      18
+     ]
+    ],
+    "names": [
+     "Outer",
+     "T",
+     "T",
+     "Inner",
+     "field",
+     "u32",
+     "stuff",
+     "Outer",
+     "Inn"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "semanticTokens",
+  "path": "src/lib.rs",
+  "line": -1,
+  "character": -1,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "src/lib.rs"
+  },
+  {
+   "kind": "fs_rename",
+   "path": "src/lib.rs",
+   "new_path": "src/lib_rt.rs"
+  },
+  {
+   "kind": "fs_rename",
+   "path": "src/lib_rt.rs",
+   "new_path": "src/lib.rs"
+  }
+ ],
+ "case": {
+  "chain_step": 1,
+  "families": [
+   "H5"
+  ],
+  "family": "H5",
+  "history_index": 0,
+  "history_seed": 2002,
+  "mode": "chain",
+  "note": "rename src/lib.rs -> src/lib_rt.rs -> back",
+  "seed": 2,
+  "timing": "settled"
+ },
+ "shape": "semanticTokens:changed",
+ "signature": "rust-analyzer|r1_history|semanticTokens:changed",
+ "expected": [
+  [
+   0,
+   0,
+   6,
+   "keyword",
+   ""
+  ],
+  [
+   0,
+   7,
+   5,
+   "struct",
+   "declaration"
+  ],
+  [
+   0,
+   13,
+   1,
+   "typeParameter",
+   "declaration"
+  ],
+  [
+   0,
+   16,
+   1,
+   "typeParameter",
+   ""
+  ],
+  [
+   1,
+   0,
+   6,
+   "keyword",
+   ""
+  ],
+  [
+   1,
+   7,
+   5,
+   "struct",
+   "declaration"
+  ],
+  [
+   2,
+   4,
+   5,
+   "property",
+   "declaration"
+  ],
+  [
+   2,
+   11,
+   3,
+   "builtinType",
+   ""
+  ],
+  [
+   5,
+   0,
+   2,
+   "keyword",
+   ""
+  ],
+  [
+   5,
+   3,
+   5,
+   "function",
+   "declaration"
+  ],
+  [
+   5,
+   9,
+   5,
+   "struct",
+   ""
+  ],
+  [
+   5,
+   15,
+   3,
+   "parameter",
+   "declaration"
+  ]
+ ],
+ "actual": [
+  [
+   0,
+   0,
+   6,
+   "keyword",
+   ""
+  ],
+  [
+   0,
+   7,
+   5,
+   "struct",
+   "declaration"
+  ],
+  [
+   0,
+   13,
+   1,
+   "typeParameter",
+   "declaration"
+  ],
+  [
+   1,
+   0,
+   6,
+   "keyword",
+   ""
+  ],
+  [
+   1,
+   7,
+   5,
+   "struct",
+   "declaration"
+  ],
+  [
+   2,
+   4,
+   5,
+   "property",
+   "declaration"
+  ],
+  [
+   5,
+   0,
+   2,
+   "keyword",
+   ""
+  ],
+  [
+   5,
+   3,
+   5,
+   "function",
+   "declaration"
+  ],
+  [
+   5,
+   15,
+   3,
+   "variable",
+   "declaration"
+  ]
+ ],
+ "reproduced": "2/3",
+ "note": "H5: rename src/lib.rs -> src/lib_rt.rs -> back; flake 2/3 [r1:SCr r2:SCR r3:SCR] in 98s",
+ "violation": {
+  "oracle": "r1_history",
+  "server": "rust-analyzer-2025-08-25",
+  "project": "rust-analyzer-17525",
+  "key": {
+   "method": "semanticTokens",
+   "path": "src/lib.rs",
+   "line": -1,
+   "character": -1,
+   "extra": ""
+  },
+  "expected": [
+   [
+    0,
+    0,
+    6,
+    "keyword",
+    ""
+   ],
+   [
+    0,
+    7,
+    5,
+    "struct",
+    "declaration"
+   ],
+   [
+    0,
+    13,
+    1,
+    "typeParameter",
+    "declaration"
+   ],
+   [
+    0,
+    16,
+    1,
+    "typeParameter",
+    ""
+   ],
+   [
+    1,
+    0,
+    6,
+    "keyword",
+    ""
+   ],
+   [
+    1,
+    7,
+    5,
+    "struct",
+    "declaration"
+   ],
+   [
+    2,
+    4,
+    5,
+    "property",
+    "declaration"
+   ],
+   [
+    2,
+    11,
+    3,
+    "builtinType",
+    ""
+   ],
+   [
+    5,
+    0,
+    2,
+    "keyword",
+    ""
+   ],
+   [
+    5,
+    3,
+    5,
+    "function",
+    "declaration"
+   ],
+   [
+    5,
+    9,
+    5,
+    "struct",
+    ""
+   ],
+   [
+    5,
+    15,
+    3,
+    "parameter",
+    "declaration"
+   ]
+  ],
+  "actual": [
+   [
+    0,
+    0,
+    6,
+    "keyword",
+    ""
+   ],
+   [
+    0,
+    7,
+    5,
+    "struct",
+    "declaration"
+   ],
+   [
+    0,
+    13,
+    1,
+    "typeParameter",
+    "declaration"
+   ],
+   [
+    1,
+    0,
+    6,
+    "keyword",
+    ""
+   ],
+   [
+    1,
+    7,
+    5,
+    "struct",
+    "declaration"
+   ],
+   [
+    2,
+    4,
+    5,
+    "property",
+    "declaration"
+   ],
+   [
+    5,
+    0,
+    2,
+    "keyword",
+    ""
+   ],
+   [
+    5,
+    3,
+    5,
+    "function",
+    "declaration"
+   ],
+   [
+    5,
+    15,
+    3,
+    "variable",
+    "declaration"
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "src/lib.rs"
+   },
+   {
+    "kind": "fs_rename",
+    "path": "src/lib.rs",
+    "new_path": "src/lib_rt.rs"
+   },
+   {
+    "kind": "fs_rename",
+    "path": "src/lib_rt.rs",
+    "new_path": "src/lib.rs"
+   }
+  ],
+  "detail": "{\"case\": {\"chain_step\": 1, \"families\": [\"H5\"], \"family\": \"H5\", \"history_index\": 0, \"history_seed\": 2002, \"mode\": \"chain\", \"note\": \"rename src/lib.rs -> src/lib_rt.rs -> back\", \"seed\": 2, \"timing\": \"settled\"}, \"note\": \"H5: rename src/lib.rs -> src/lib_rt.rs -> back; flake 2/3 [r1:SCr r2:SCR r3:SCR] in 98s\", \"shape\": \"semanticTokens:changed\"}",
+  "reproduced": "2/3",
+  "reduced_ops": [],
+  "signature": "rust-analyzer|r1_history|semanticTokens:changed",
+  "run_id": "e176faaf98b4"
+ },
+ "replay_logs": [],
+ "project_files": {},
+ "incomplete": false
+}

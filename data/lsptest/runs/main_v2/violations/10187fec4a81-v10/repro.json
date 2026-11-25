@@ -1,0 +1,3783 @@
+{
+ "format": 1,
+ "campaign": "main_v2",
+ "vid": "10187fec4a81-v10",
+ "run_id": "10187fec4a81",
+ "oracle": "r1_history",
+ "server": {
+  "kind": "rust-analyzer",
+  "version": "2026-09-21"
+ },
+ "project": {
+  "name": "tokio-rs/tokio@3930bd182cb1",
+  "source": "corpus",
+  "ref": "temp/corpus/tokio-rs__tokio@3930bd182cb1",
+  "commit": "3930bd182cb18b534a34af86874a427da4a03c45",
+  "language": "rust"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "examples/echo-tcp.rs",
+    "positions": [
+     [
+      21,
+      16
+     ],
+     [
+      24,
+      12
+     ],
+     [
+      24,
+      21
+     ],
+     [
+      27,
+      18
+     ],
+     [
+      29,
+      12
+     ],
+     [
+      29,
+      22
+     ],
+     [
+      33,
+      11
+     ],
+     [
+      33,
+      22
+     ],
+     [
+      60,
+      27
+     ],
+     [
+      60,
+      39
+     ],
+     [
+      64,
+      25
+     ],
+     [
+      76,
+      21
+     ]
+    ],
+    "ends": [
+     [
+      21,
+      24
+     ],
+     [
+      24,
+      14
+     ],
+     [
+      24,
+      27
+     ],
+     [
+      27,
+      21
+     ],
+     [
+      29,
+      18
+     ],
+     [
+      29,
+      24
+     ],
+     [
+      33,
+      13
+     ],
+     [
+      33,
+      25
+     ],
+     [
+      60,
+      29
+     ],
+     [
+      60,
+      45
+     ],
+     [
+      64,
+      28
+     ],
+     [
+      76,
+      23
+     ]
+    ],
+    "names": [
+     "rust_2018_idioms",
+     "net",
+     "TcpListener",
+     "Error",
+     "DEFAULT_ADDR",
+     "str",
+     "main",
+     "Result",
+     "vec",
+     "BUFFER_SIZE",
+     "socket",
+     "Err"
+    ]
+   },
+   {
+    "path": "tokio/src/net/tcp/split.rs",
+    "positions": [
+     [
+      15,
+      5
+     ],
+     [
+      17,
+      5
+     ],
+     [
+      17,
+      19
+     ],
+     [
+      47,
+      5
+     ],
+     [
+      137,
+      17
+     ],
+     [
+      267,
+      32
+     ],
+     [
+      334,
+      26
+     ],
+     [
+      354,
+      73
+     ],
+     [
+      354,
+      79
+     ],
+     [
+      374,
+      11
+     ],
+     [
+      393,
+      46
+     ],
+     [
+      403,
+      16
+     ]
+    ],
+    "ends": [
+     [
+      15,
+      7
+     ],
+     [
+      17,
+      7
+     ],
+     [
+      17,
+      23
+     ],
+     [
+      47,
+      8
+     ],
+     [
+      137,
+      19
+     ],
+     [
+      267,
+      33
+     ],
+     [
+      334,
+      28
+     ],
+     [
+      354,
+      76
+     ],
+     [
+      354,
+      82
+     ],
+     [
+      374,
+      13
+     ],
+     [
+      393,
+      48
+     ],
+     [
+      403,
+      19
+     ]
+    ],
+    "names": [
+     "std",
+     "std",
+     "Context",
+     "derive",
+     "buf",
+     "io",
+     "buf",
+     "Result",
+     "usize",
+     "Poll",
+     "bufs",
+     "Ready"
+    ]
+   },
+   {
+    "path": "tokio/tests/signal_realtime.rs",
+    "positions": [
+     [
+      0,
+      5
+     ],
+     [
+      1,
+      10
+     ],
+     [
+      5,
+      7
+     ],
+     [
+      6,
+      15
+     ],
+     [
+      9,
+      6
+     ],
+     [
+      10,
+      16
+     ],
+     [
+      14,
+      29
+     ],
+     [
+      23,
+      17
+     ],
+     [
+      25,
+      39
+     ],
+     [
+      29,
+      22
+     ],
+     [
+      73,
+      10
+     ],
+     [
+      90,
+      7
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      7
+     ],
+     [
+      1,
+      14
+     ],
+     [
+      5,
+      11
+     ],
+     [
+      6,
+      18
+     ],
+     [
+      9,
+      8
+     ],
+     [
+      10,
+      19
+     ],
+     [
+      14,
+      32
+     ],
+     [
+      23,
+      20
+     ],
+     [
+      25,
+      43
+     ],
+     [
+      29,
+      24
+     ],
+     [
+      73,
+      12
+     ],
+     [
+      90,
+      12
+     ]
+    ],
+    "names": [
+     "warn",
+     "feature",
+     "support",
+     "signal",
+     "libc",
+     "signal",
+     "signal",
+     "signum",
+     "from_raw",
+     "sig",
+     "none",
+     "sigrt_max"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "references",
+  "path": "examples/echo-tcp.rs",
+  "line": 24,
+  "character": 12,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "examples/echo-tcp.rs"
+  },
+  {
+   "kind": "open",
+   "path": "tokio/src/net/tcp/split.rs"
+  },
+  {
+   "kind": "open",
+   "path": "tokio/tests/signal_realtime.rs"
+  },
+  {
+   "kind": "fs_write",
+   "path": "tokio/src/runtime/metrics/io.rs",
+   "text": "#![cfg_attr(not(feature = \"net\"), allow(dead_code))]\n\nuse crate::util::metric_atomics::MetricAtomicU64;\nuse std::sync::atomic::Ordering::Relaxed;\n\n#[derive(Default)]\npub(crate) struct IoDriverMetrics {\n    pub(super) fd_registered_count: MetricAtomicU64,\n    pub(super) fd_deregistered_count: MetricAtomicU64,\n    pub(super) ready_count: MetricAtomicU64,\nx}\n\nimpl IoDriverMetrics {\n    pub(crate) fn incr_fd_count(&self) {\n        self.fd_registered_count.add(1, Relaxed);\n    }\n\n    pub(crate) fn dec_fd_count(&self) {\n        self.fd_deregistered_count.add(1, Relaxed);\n    }\n\n    pub(crate) fn incr_ready_count_by(&self, amt: u64) {\n        self.ready_count.add(amt, Relaxed);\n    }\n}\n"
+  },
+  {
+   "kind": "fs_write",
+   "path": "tokio/src/runtime/metrics/io.rs",
+   "text": "#![cfg_attr(not(feature = \"net\"), allow(dead_code))]\n\nuse crate::util::metric_atomics::MetricAtomicU64;\nuse std::sync::atomic::Ordering::Relaxed;\n\n#[derive(Default)]\npub(crate) struct IoDriverMetrics {\n    pub(super) fd_registered_count: MetricAtomicU64,\n    pub(super) fd_deregistered_count: MetricAtomicU64,\n    pub(super) ready_count: MetricAtomicU64,\n}\n\nimpl IoDriverMetrics {\n    pub(crate) fn incr_fd_count(&self) {\n        self.fd_registered_count.add(1, Relaxed);\n    }\n\n    pub(crate) fn dec_fd_count(&self) {\n        self.fd_deregistered_count.add(1, Relaxed);\n    }\n\n    pub(crate) fn incr_ready_count_by(&self, amt: u64) {\n        self.ready_count.add(amt, Relaxed);\n    }\n}\n"
+  },
+  {
+   "kind": "fs_rename",
+   "path": "examples/echo-tcp.rs",
+   "new_path": "examples/echo-tcp_rt.rs"
+  },
+  {
+   "kind": "fs_rename",
+   "path": "examples/echo-tcp_rt.rs",
+   "new_path": "examples/echo-tcp.rs"
+  },
+  {
+   "kind": "close",
+   "path": "tokio/src/net/tcp/split.rs"
+  },
+  {
+   "kind": "open",
+   "path": "tokio/src/net/tcp/split.rs"
+  },
+  {
+   "kind": "fs_rename",
+   "path": "tokio/tests/signal_realtime.rs",
+   "new_path": "tokio/tests/signal_realtime_rt.rs"
+  },
+  {
+   "kind": "change",
+   "path": "examples/echo-tcp.rs",
+   "start": [
+    33,
+    19
+   ],
+   "end": [
+    33,
+    25
+   ],
+   "text": "zz"
+  },
+  {
+   "kind": "save",
+   "path": "examples/echo-tcp.rs"
+  },
+  {
+   "kind": "change",
+   "path": "examples/echo-tcp.rs",
+   "start": [
+    33,
+    19
+   ],
+   "end": [
+    33,
+    21
+   ],
+   "text": "Result"
+  },
+  {
+   "kind": "save",
+   "path": "examples/echo-tcp.rs"
+  },
+  {
+   "kind": "change",
+   "path": "tokio/src/net/tcp/split.rs",
+   "start": [
+    165,
+    0
+   ],
+   "end": [
+    166,
+    0
+   ]
+  },
+  {
+   "kind": "change",
+   "path": "tokio/src/net/tcp/split.rs",
+   "start": [
+    165,
+    0
+   ],
+   "end": [
+    165,
+    0
+   ],
+   "text": "    "
+  },
+  {
+   "kind": "change",
+   "path": "tokio/src/net/tcp/split.rs",
+   "start": [
+    165,
+    4
+   ],
+   "end": [
+    165,
+    4
+   ],
+   "text": "    self.0.read"
+  },
+  {
+   "kind": "change",
+   "path": "tokio/src/net/tcp/split.rs",
+   "start": [
+    165,
+    19
+   ],
+   "end": [
+    165,
+    19
+   ],
+   "text": "y(interest)"
+  },
+  {
+   "kind": "change",
+   "path": "tokio/src/net/tcp/split.rs",
+   "start": [
+    165,
+    30
+   ],
+   "end": [
+    165,
+    30
+   ],
+   "text": ".await\n"
+  },
+  {
+   "kind": "fs_rename",
+   "path": "tokio/tests/signal_realtime_rt.rs",
+   "new_path": "tokio/tests/signal_realtime.rs"
+  },
+  {
+   "kind": "change",
+   "path": "tokio/tests/signal_realtime.rs",
+   "start": [
+    61,
+    0
+   ],
+   "end": [
+    62,
+    0
+   ]
+  },
+  {
+   "kind": "change",
+   "path": "tokio/tests/signal_realtime.rs",
+   "start": [
+    61,
+    0
+   ],
+   "end": [
+    61,
+    0
+   ],
+   "text": "        match done.get(&signum) {\n"
+  },
+  {
+   "kind": "request",
+   "path": "examples/echo-tcp.rs",
+   "start": [
+    71,
+    59
+   ],
+   "text": "completion"
+  },
+  {
+   "kind": "request",
+   "path": "tokio/src/net/tcp/split.rs",
+   "start": [
+    393,
+    46
+   ],
+   "text": "completion"
+  },
+  {
+   "kind": "request",
+   "path": "tokio/tests/signal_realtime.rs",
+   "start": [
+    73,
+    10
+   ],
+   "text": "documentHighlight"
+  },
+  {
+   "kind": "request",
+   "path": "examples/echo-tcp.rs",
+   "start": [
+    64,
+    25
+   ],
+   "text": "documentHighlight"
+  },
+  {
+   "kind": "request",
+   "path": "tokio/src/net/tcp/split.rs",
+   "start": [
+    181,
+    37
+   ],
+   "text": "hover"
+  },
+  {
+   "kind": "request",
+   "path": "examples/echo-tcp.rs",
+   "start": [
+    39,
+    16
+   ],
+   "text": "references"
+  },
+  {
+   "kind": "request",
+   "path": "tokio/tests/signal_realtime.rs",
+   "start": [
+    41,
+    20
+   ],
+   "text": "hover"
+  },
+  {
+   "kind": "request",
+   "path": "examples/echo-tcp.rs",
+   "start": [
+    72,
+    80
+   ],
+   "text": "definition"
+  },
+  {
+   "kind": "change",
+   "path": "tokio/src/net/tcp/split.rs",
+   "start": [
+    402,
+    2
+   ],
+   "end": [
+    402,
+    2
+   ],
+   "text": "x"
+  },
+  {
+   "kind": "change",
+   "path": "tokio/tests/signal_realtime.rs",
+   "start": [
+    5,
+    0
+   ],
+   "end": [
+    6,
+    0
+   ]
+  },
+  {
+   "kind": "change",
+   "path": "examples/echo-tcp.rs",
+   "start": [
+    55,
+    0
+   ],
+   "end": [
+    55,
+    10
+   ]
+  },
+  {
+   "kind": "close",
+   "path": "examples/echo-tcp.rs"
+  },
+  {
+   "kind": "open",
+   "path": "examples/echo-tcp.rs"
+  },
+  {
+   "kind": "change",
+   "path": "tokio/tests/signal_realtime.rs",
+   "start": [
+    5,
+    0
+   ],
+   "end": [
+    5,
+    0
+   ],
+   "text": "mod "
+  },
+  {
+   "kind": "change",
+   "path": "tokio/tests/signal_realtime.rs",
+   "start": [
+    5,
+    4
+   ],
+   "end": [
+    5,
+    4
+   ],
+   "text": "s"
+  },
+  {
+   "kind": "change",
+   "path": "tokio/tests/signal_realtime.rs",
+   "start": [
+    5,
+    5
+   ],
+   "end": [
+    5,
+    5
+   ],
+   "text": "uppo"
+  },
+  {
+   "kind": "change",
+   "path": "tokio/tests/signal_realtime.rs",
+   "start": [
+    5,
+    9
+   ],
+   "end": [
+    5,
+    9
+   ],
+   "text": "rt {\n"
+  },
+  {
+   "kind": "change",
+   "path": "tokio/src/net/tcp/split.rs",
+   "start": [
+    402,
+    2
+   ],
+   "end": [
+    402,
+    3
+   ]
+  },
+  {
+   "kind": "request",
+   "path": "examples/echo-tcp.rs",
+   "start": [
+    60,
+    29
+   ],
+   "text": "typeDefinition"
+  },
+  {
+   "kind": "request",
+   "path": "tokio/src/net/tcp/split.rs",
+   "start": [
+    391,
+    23
+   ],
+   "text": "typeDefinition"
+  },
+  {
+   "kind": "request",
+   "path": "tokio/src/net/tcp/split.rs",
+   "start": [
+    316,
+    21
+   ],
+   "text": "definition"
+  },
+  {
+   "kind": "set_config",
+   "settings": {
+    "rust-analyzer": {
+     "cargo": {
+      "buildScripts": {
+       "enable": false
+      }
+     }
+    }
+   }
+  },
+  {
+   "kind": "set_config",
+   "settings": {
+    "rust-analyzer": {
+     "cargo": {
+      "buildScripts": {
+       "enable": true
+      }
+     }
+    }
+   }
+  },
+  {
+   "kind": "change",
+   "path": "tokio/src/net/tcp/split.rs",
+   "start": [
+    11,
+    0
+   ],
+   "end": [
+    12,
+    0
+   ]
+  },
+  {
+   "kind": "change",
+   "path": "tokio/src/net/tcp/split.rs",
+   "start": [
+    11,
+    0
+   ],
+   "end": [
+    11,
+    0
+   ],
+   "text": "use cr"
+  },
+  {
+   "kind": "change",
+   "path": "tokio/src/net/tcp/split.rs",
+   "start": [
+    11,
+    6
+   ],
+   "end": [
+    11,
+    6
+   ],
+   "text": "at"
+  },
+  {
+   "kind": "change",
+   "path": "tokio/src/net/tcp/split.rs",
+   "start": [
+    11,
+    8
+   ],
+   "end": [
+    11,
+    8
+   ],
+   "text": "e::net::"
+  },
+  {
+   "kind": "change",
+   "path": "tokio/src/net/tcp/split.rs",
+   "start": [
+    11,
+    16
+   ],
+   "end": [
+    11,
+    16
+   ],
+   "text": "TcpStream;\n"
+  },
+  {
+   "kind": "change",
+   "path": "tokio/src/net/tcp/split.rs",
+   "start": [
+    287,
+    29
+   ],
+   "end": [
+    287,
+    29
+   ],
+   "text": "("
+  },
+  {
+   "kind": "save",
+   "path": "tokio/src/net/tcp/split.rs"
+  },
+  {
+   "kind": "change",
+   "path": "tokio/src/net/tcp/split.rs",
+   "start": [
+    287,
+    29
+   ],
+   "end": [
+    287,
+    30
+   ]
+  },
+  {
+   "kind": "save",
+   "path": "tokio/src/net/tcp/split.rs"
+  },
+  {
+   "kind": "fs_write",
+   "path": "examples/Cargo.toml",
+   "text": "[package]\nname = \"examples\"\nversion = \"0.0.0\"\npublish = false\nedition = \"2021\"\nlicense = \"MIT\"\n\n# If you copy one of the examples into a new project, you should be using\n# [dependencies] instead, and delete the **path**.\n[dev-dependencies]\ntokio = { version = \"1.0.0\", path = \"../tokio\", features = [\"full\", \"tracing\"] }\ntokio-util = { version = \"0.7.0\", path = \"../tokio-util\", features = [\"full\"] }\ntokio-stream = { version = \"0.1\", path = \"../tokio-stream\" }\n\ntracing = \"0.1\"\ntracing-subscriber = { version = \"0.3.1\", default-features = false, features = [\"fmt\", \"ansi\", \"env-filter\", \"tracing-log\"] }\nbytes = \"1.0.0\"\nfutures = { version = \"0.3.0\", features = [\"thread-pool\"]}\nhttp = \"1\"\nserde = \"1.0\"\nserde_derive = \"1.0\"\nserde_json = \"1.0\"\nhttparse = \"1.0\"\nhttpdate = \"1.0\"\nonce_cell = \"1.5.2\"\n\n[target.'cfg(target_os = \"linux\")'.dev-dependencies]\nlibc = \"0.2\"\n\n[target.'cfg(all(tokio_unstable, target_os = \"linux\"))'.dev-dependencies]\ntokio = { version = \"1.0.0\", path = \"../tokio\", features = [\"full\", \"tracing\", \"taskdump\"] }\n\n[target.'cfg(windows)'.dev-dependencies.windows-sys]\nversion = \"0.61\"\n\n[[example]]\nname = \"chat\"\npath = \"chat.rs\"\n\n[[example]]\nname = \"connect-tcp\"\npath = \"connect-tcp.rs\"\n\n[[example]]\nname = \"connect-udp\"\npath = \"connect-udp.rs\"\n\n[[example]]\nname = \"echo-tcp\"\npath = \"echo-tcp.rs\"\n\n[[example]]\nname = \"graceful-shutdown\"\npath = \"graceful-shutdown.rs\"\n\n[[example]]\nname = \"echo-udp\"\npath = \"echo-udp.rs\"\n\n[[example]]\nname = \"hello_world\"\npath = \"hello_world.rs\"\n\n[[example]]\nname = \"print_each_packet\"\npath = \"print_each_packet.rs\"\n\n[[example]]\nname = \"proxy\"\npath = \"proxy.rs\"\n\n[[example]]\nname = \"tinydb\"\npath = \"tinydb.rs\"\n\n[[example]]\nname = \"udp-client\"\npath = \"udp-client.rs\"\n\n[[example]]\nname = \"udp-codec\"\npath = \"udp-codec.rs\"\n\n[[example]]\nname = \"tinyhttp\"\npath = \"tinyhttp.rs\"\n\n[[example]]\nname = \"custom-executor\"\npath = \"custom-executor.rs\"\n\n[[example]]\nname = \"custom-executor-tokio-context\"\npath = \"custom-executor-tokio-context.rs\"\n\n[[example]]\nname = \"named-pipe\"\npath = \"named-pipe.rs\"\n\n[[example]]\nname = \"named-pipe-ready\"\npath = \"named-pipe-ready.rs\"\n\n[[example]]\nname = \"named-pipe-multi-client\"\npath = \"named-pipe-multi-client.rs\"\n\n[[example]]\nname = \"dump\"\npath = \"dump.rs\"\n\n[[example]]\nname = \"prewarm-fd-table\"\npath = \"prewarm-fd-table.rs\"\n\n[lints]\n"
+  },
+  {
+   "kind": "fs_write",
+   "path": "examples/Cargo.toml",
+   "text": "[package]\nname = \"examples\"\nversion = \"0.0.0\"\npublish = false\nedition = \"2021\"\nlicense = \"MIT\"\n\n# If you copy one of the examples into a new project, you should be using\n# [dependencies] instead, and delete the **path**.\n[dev-dependencies]\ntokio = { version = \"1.0.0\", path = \"../tokio\", features = [\"full\", \"tracing\"] }\ntokio-util = { version = \"0.7.0\", path = \"../tokio-util\", features = [\"full\"] }\ntokio-stream = { version = \"0.1\", path = \"../tokio-stream\" }\n\ntracing = \"0.1\"\ntracing-subscriber = { version = \"0.3.1\", default-features = false, features = [\"fmt\", \"ansi\", \"env-filter\", \"tracing-log\"] }\nbytes = \"1.0.0\"\nfutures = { version = \"0.3.0\", features = [\"thread-pool\"]}\nhttp = \"1\"\nserde = \"1.0\"\nserde_derive = \"1.0\"\nserde_json = \"1.0\"\nhttparse = \"1.0\"\nhttpdate = \"1.0\"\nonce_cell = \"1.5.2\"\n\n[target.'cfg(target_os = \"linux\")'.dev-dependencies]\nlibc = \"0.2\"\n\n[target.'cfg(all(tokio_unstable, target_os = \"linux\"))'.dev-dependencies]\ntokio = { version = \"1.0.0\", path = \"../tokio\", features = [\"full\", \"tracing\", \"taskdump\"] }\n\n[target.'cfg(windows)'.dev-dependencies.windows-sys]\nversion = \"0.61\"\n\n[[example]]\nname = \"chat\"\npath = \"chat.rs\"\n\n[[example]]\nname = \"connect-tcp\"\npath = \"connect-tcp.rs\"\n\n[[example]]\nname = \"connect-udp\"\npath = \"connect-udp.rs\"\n\n[[example]]\nname = \"echo-tcp\"\npath = \"echo-tcp.rs\"\n\n[[example]]\nname = \"graceful-shutdown\"\npath = \"graceful-shutdown.rs\"\n\n[[example]]\nname = \"echo-udp\"\npath = \"echo-udp.rs\"\n\n[[example]]\nname = \"hello_world\"\npath = \"hello_world.rs\"\n\n[[example]]\nname = \"print_each_packet\"\npath = \"print_each_packet.rs\"\n\n[[example]]\nname = \"proxy\"\npath = \"proxy.rs\"\n\n[[example]]\nname = \"tinydb\"\npath = \"tinydb.rs\"\n\n[[example]]\nname = \"udp-client\"\npath = \"udp-client.rs\"\n\n[[example]]\nname = \"udp-codec\"\npath = \"udp-codec.rs\"\n\n[[example]]\nname = \"tinyhttp\"\npath = \"tinyhttp.rs\"\n\n[[example]]\nname = \"custom-executor\"\npath = \"custom-executor.rs\"\n\n[[example]]\nname = \"custom-executor-tokio-context\"\npath = \"custom-executor-tokio-context.rs\"\n\n[[example]]\nname = \"named-pipe\"\npath = \"named-pipe.rs\"\n\n[[example]]\nname = \"named-pipe-ready\"\npath = \"named-pipe-ready.rs\"\n\n[[example]]\nname = \"named-pipe-multi-client\"\npath = \"named-pipe-multi-client.rs\"\n\n[[example]]\nname = \"dump\"\npath = \"dump.rs\"\n\n[[example]]\nname = \"prewarm-fd-table\"\npath = \"prewarm-fd-table.rs\"\n\n[lints]\nworkspace = true\n"
+  },
+  {
+   "kind": "fs_rename",
+   "path": "examples/echo-tcp.rs",
+   "new_path": "examples/echo-tcp_rt.rs"
+  },
+  {
+   "kind": "fs_rename",
+   "path": "examples/echo-tcp_rt.rs",
+   "new_path": "examples/echo-tcp.rs"
+  }
+ ],
+ "case": {
+  "chain_step": 11,
+  "families": [
+   "H6",
+   "H5",
+   "H3",
+   "H9",
+   "H8",
+   "H7",
+   "H4",
+   "H2",
+   "H1",
+   "H6",
+   "H5"
+  ],
+  "family": "H5",
+  "history_index": 10,
+  "history_seed": 2011,
+  "mode": "chain",
+  "note": "rename examples/echo-tcp.rs -> examples/echo-tcp_rt.rs -> back",
+  "seed": 2,
+  "timing": "settled"
+ },
+ "shape": "references:lost",
+ "signature": "rust-analyzer|r1_history|references:lost",
+ "expected": [
+  [
+   "benches/net_accept.rs",
+   27,
+   11,
+   27,
+   14
+  ],
+  [
+   "examples/chat.rs",
+   28,
+   11,
+   28,
+   14
+  ],
+  [
+   "examples/connect-tcp.rs",
+   18,
+   11,
+   18,
+   14
+  ],
+  [
+   "examples/connect-udp.rs",
+   18,
+   11,
+   18,
+   14
+  ],
+  [
+   "examples/custom-executor-tokio-context.rs",
+   5,
+   11,
+   5,
+   14
+  ],
+  [
+   "examples/custom-executor.rs",
+   6,
+   11,
+   6,
+   14
+  ],
+  [
+   "examples/echo-tcp.rs",
+   24,
+   11,
+   24,
+   14
+  ],
+  [
+   "examples/echo-udp.rs",
+   39,
+   11,
+   39,
+   14
+  ],
+  [
+   "examples/graceful-shutdown.rs",
+   25,
+   11,
+   25,
+   14
+  ],
+  [
+   "examples/hello_world.rs",
+   14,
+   11,
+   14,
+   14
+  ],
+  [
+   "examples/named-pipe-multi-client.rs",
+   6,
+   15,
+   6,
+   18
+  ],
+  [
+   "examples/named-pipe-ready.rs",
+   5,
+   15,
+   5,
+   18
+  ],
+  [
+   "examples/named-pipe.rs",
+   6,
+   15,
+   6,
+   18
+  ],
+  [
+   "examples/print_each_packet.rs",
+   56,
+   11,
+   56,
+   14
+  ],
+  [
+   "examples/proxy.rs",
+   25,
+   11,
+   25,
+   14
+  ],
+  [
+   "examples/tinydb.rs",
+   43,
+   11,
+   43,
+   14
+  ],
+  [
+   "examples/tinyhttp.rs",
+   21,
+   11,
+   21,
+   14
+  ],
+  [
+   "examples/udp-client.rs",
+   34,
+   11,
+   34,
+   14
+  ],
+  [
+   "examples/udp-codec.rs",
+   10,
+   11,
+   10,
+   14
+  ],
+  [
+   "stress-test/examples/simple_echo_tcp.rs",
+   5,
+   4,
+   5,
+   7
+  ],
+  [
+   "tests-integration/src/bin/test-mem.rs",
+   10,
+   30,
+   10,
+   33
+  ],
+  [
+   "tokio-util/src/net/mod.rs",
+   35,
+   25,
+   35,
+   28
+  ],
+  [
+   "tokio-util/src/net/mod.rs",
+   36,
+   21,
+   36,
+   24
+  ],
+  [
+   "tokio-util/src/net/unix/mod.rs",
+   6,
+   25,
+   6,
+   28
+  ],
+  [
+   "tokio-util/src/net/unix/mod.rs",
+   7,
+   21,
+   7,
+   24
+  ],
+  [
+   "tokio-util/src/net/unix/mod.rs",
+   8,
+   23,
+   8,
+   26
+  ],
+  [
+   "tokio-util/src/udp/frame.rs",
+   3,
+   25,
+   3,
+   28
+  ],
+  [
+   "tokio-util/tests/udp.rs",
+   5,
+   11,
+   5,
+   14
+  ],
+  [
+   "tokio/src/lib.rs",
+   559,
+   8,
+   559,
+   11
+  ],
+  [
+   "tokio/src/net/lookup_host.rs",
+   1,
+   15,
+   1,
+   18
+  ],
+  [
+   "tokio/src/net/tcp/listener.rs",
+   1,
+   11,
+   1,
+   14
+  ],
+  [
+   "tokio/src/net/tcp/listener.rs",
+   5,
+   15,
+   5,
+   18
+  ],
+  [
+   "tokio/src/net/tcp/socket.rs",
+   0,
+   11,
+   0,
+   14
+  ],
+  [
+   "tokio/src/net/tcp/split.rs",
+   11,
+   11,
+   11,
+   14
+  ],
+  [
+   "tokio/src/net/tcp/split_owned.rs",
+   11,
+   11,
+   11,
+   14
+  ],
+  [
+   "tokio/src/net/tcp/stream.rs",
+   5,
+   15,
+   5,
+   18
+  ],
+  [
+   "tokio/src/net/tcp/stream.rs",
+   10,
+   11,
+   10,
+   14
+  ],
+  [
+   "tokio/src/net/tcp/stream.rs",
+   11,
+   11,
+   11,
+   14
+  ],
+  [
+   "tokio/src/net/udp.rs",
+   1,
+   11,
+   1,
+   14
+  ],
+  [
+   "tokio/src/net/unix/datagram/socket.rs",
+   1,
+   11,
+   1,
+   14
+  ],
+  [
+   "tokio/src/net/unix/listener.rs",
+   1,
+   11,
+   1,
+   14
+  ],
+  [
+   "tokio/src/net/unix/socket.rs",
+   5,
+   11,
+   5,
+   14
+  ],
+  [
+   "tokio/src/net/unix/split.rs",
+   11,
+   11,
+   11,
+   14
+  ],
+  [
+   "tokio/src/net/unix/split.rs",
+   13,
+   11,
+   13,
+   14
+  ],
+  [
+   "tokio/src/net/unix/split_owned.rs",
+   11,
+   11,
+   11,
+   14
+  ],
+  [
+   "tokio/src/net/unix/split_owned.rs",
+   13,
+   11,
+   13,
+   14
+  ],
+  [
+   "tokio/src/net/unix/stream.rs",
+   1,
+   11,
+   1,
+   14
+  ],
+  [
+   "tokio/src/net/unix/stream.rs",
+   2,
+   11,
+   2,
+   14
+  ],
+  [
+   "tokio/src/net/unix/stream.rs",
+   3,
+   11,
+   3,
+   14
+  ],
+  [
+   "tokio/src/net/unix/stream.rs",
+   4,
+   11,
+   4,
+   14
+  ],
+  [
+   "tokio/src/net/unix/ucred.rs",
+   0,
+   11,
+   0,
+   14
+  ],
+  [
+   "tokio/src/net/unix/ucred.rs",
+   90,
+   15,
+   90,
+   18
+  ],
+  [
+   "tokio/src/net/unix/ucred.rs",
+   148,
+   15,
+   148,
+   18
+  ],
+  [
+   "tokio/src/net/unix/ucred.rs",
+   190,
+   15,
+   190,
+   18
+  ],
+  [
+   "tokio/src/net/unix/ucred.rs",
+   221,
+   15,
+   221,
+   18
+  ],
+  [
+   "tokio/src/net/unix/ucred.rs",
+   295,
+   15,
+   295,
+   18
+  ],
+  [
+   "tokio/src/net/unix/ucred.rs",
+   342,
+   15,
+   342,
+   18
+  ],
+  [
+   "tokio/src/net/unix/ucred.rs",
+   375,
+   15,
+   375,
+   18
+  ],
+  [
+   "tokio/src/net/unix/ucred.rs",
+   409,
+   15,
+   409,
+   18
+  ],
+  [
+   "tokio/src/net/unix/ucred.rs",
+   423,
+   15,
+   423,
+   18
+  ],
+  [
+   "tokio/tests/async_send_sync.rs",
+   10,
+   11,
+   10,
+   14
+  ],
+  [
+   "tokio/tests/async_send_sync.rs",
+   205,
+   25,
+   205,
+   28
+  ],
+  [
+   "tokio/tests/async_send_sync.rs",
+   206,
+   28,
+   206,
+   31
+  ],
+  [
+   "tokio/tests/async_send_sync.rs",
+   207,
+   28,
+   207,
+   31
+  ],
+  [
+   "tokio/tests/async_send_sync.rs",
+   210,
+   21,
+   210,
+   24
+  ],
+  [
+   "tokio/tests/async_send_sync.rs",
+   211,
+   21,
+   211,
+   24
+  ],
+  [
+   "tokio/tests/async_send_sync.rs",
+   212,
+   21,
+   212,
+   24
+  ],
+  [
+   "tokio/tests/async_send_sync.rs",
+   213,
+   21,
+   213,
+   24
+  ],
+  [
+   "tokio/tests/async_send_sync.rs",
+   214,
+   21,
+   214,
+   24
+  ],
+  [
+   "tokio/tests/async_send_sync.rs",
+   215,
+   21,
+   215,
+   24
+  ],
+  [
+   "tokio/tests/async_send_sync.rs",
+   216,
+   21,
+   216,
+   24
+  ],
+  [
+   "tokio/tests/async_send_sync.rs",
+   217,
+   24,
+   217,
+   27
+  ],
+  [
+   "tokio/tests/async_send_sync.rs",
+   218,
+   24,
+   218,
+   27
+  ],
+  [
+   "tokio/tests/async_send_sync.rs",
+   219,
+   24,
+   219,
+   27
+  ],
+  [
+   "tokio/tests/async_send_sync.rs",
+   220,
+   24,
+   220,
+   27
+  ],
+  [
+   "tokio/tests/async_send_sync.rs",
+   221,
+   24,
+   221,
+   27
+  ],
+  [
+   "tokio/tests/async_send_sync.rs",
+   227,
+   29,
+   227,
+   32
+  ],
+  [
+   "tokio/tests/async_send_sync.rs",
+   228,
+   32,
+   228,
+   35
+  ],
+  [
+   "tokio/tests/async_send_sync.rs",
+   229,
+   32,
+   229,
+   35
+  ],
+  [
+   "tokio/tests/async_send_sync.rs",
+   230,
+   32,
+   230,
+   35
+  ],
+  [
+   "tokio/tests/async_send_sync.rs",
+   231,
+   32,
+   231,
+   35
+  ],
+  [
+   "tokio/tests/async_send_sync.rs",
+   232,
+   32,
+   232,
+   35
+  ],
+  [
+   "tokio/tests/async_send_sync.rs",
+   233,
+   32,
+   233,
+   35
+  ],
+  [
+   "tokio/tests/async_send_sync.rs",
+   234,
+   32,
+   234,
+   35
+  ],
+  [
+   "tokio/tests/async_send_sync.rs",
+   235,
+   32,
+   235,
+   35
+  ],
+  [
+   "tokio/tests/async_send_sync.rs",
+   236,
+   32,
+   236,
+   35
+  ],
+  [
+   "tokio/tests/async_send_sync.rs",
+   237,
+   32,
+   237,
+   35
+  ],
+  [
+   "tokio/tests/async_send_sync.rs",
+   240,
+   24,
+   240,
+   27
+  ],
+  [
+   "tokio/tests/async_send_sync.rs",
+   241,
+   24,
+   241,
+   27
+  ],
+  [
+   "tokio/tests/async_send_sync.rs",
+   246,
+   15,
+   246,
+   18
+  ],
+  [
+   "tokio/tests/async_send_sync.rs",
+   274,
+   15,
+   274,
+   18
+  ],
+  [
+   "tokio/tests/async_send_sync.rs",
+   287,
+   15,
+   287,
+   18
+  ],
+  [
+   "tokio/tests/buffered.rs",
+   3,
+   11,
+   3,
+   14
+  ],
+  [
+   "tokio/tests/coop_budget.rs",
+   5,
+   11,
+   5,
+   14
+  ],
+  [
+   "tokio/tests/io_copy_bidirectional.rs",
+   8,
+   11,
+   8,
+   14
+  ],
+  [
+   "tokio/tests/io_copy_bidirectional.rs",
+   12,
+   26,
+   12,
+   29
+  ],
+  [
+   "tokio/tests/io_driver.rs",
+   4,
+   11,
+   4,
+   14
+  ],
+  [
+   "tokio/tests/io_driver.rs",
+   100,
+   23,
+   100,
+   26
+  ],
+  [
+   "tokio/tests/io_driver_drop.rs",
+   3,
+   11,
+   3,
+   14
+  ],
+  [
+   "tokio/tests/net_bind_resource.rs",
+   10,
+   11,
+   10,
+   14
+  ],
+  [
+   "tokio/tests/net_lookup_host.rs",
+   9,
+   11,
+   9,
+   14
+  ],
+  [
+   "tokio/tests/net_lookup_host.rs",
+   19,
+   28,
+   19,
+   31
+  ],
+  [
+   "tokio/tests/net_lookup_host.rs",
+   27,
+   28,
+   27,
+   31
+  ],
+  [
+   "tokio/tests/net_lookup_host.rs",
+   40,
+   20,
+   40,
+   23
+  ],
+  [
+   "tokio/tests/net_named_pipe.rs",
+   6,
+   11,
+   6,
+   14
+  ],
+  [
+   "tokio/tests/net_panic.rs",
+   5,
+   11,
+   5,
+   14
+  ],
+  [
+   "tokio/tests/net_panic.rs",
+   17,
+   15,
+   17,
+   18
+  ],
+  [
+   "tokio/tests/net_panic.rs",
+   78,
+   15,
+   78,
+   18
+  ],
+  [
+   "tokio/tests/net_panic.rs",
+   100,
+   15,
+   100,
+   18
+  ],
+  [
+   "tokio/tests/net_panic.rs",
+   123,
+   15,
+   123,
+   18
+  ],
+  [
+   "tokio/tests/net_panic.rs",
+   148,
+   15,
+   148,
+   18
+  ],
+  [
+   "tokio/tests/net_panic.rs",
+   174,
+   15,
+   174,
+   18
+  ],
+  [
+   "tokio/tests/net_quickack.rs",
+   13,
+   11,
+   13,
+   14
+  ],
+  [
+   "tokio/tests/net_quickack.rs",
+   14,
+   11,
+   14,
+   14
+  ],
+  [
+   "tokio/tests/net_unix_pipe.rs",
+   4,
+   11,
+   4,
+   14
+  ],
+  [
+   "tokio/tests/no_rt.rs",
+   2,
+   11,
+   2,
+   14
+  ],
+  [
+   "tokio/tests/no_rt.rs",
+   43,
+   19,
+   43,
+   22
+  ],
+  [
+   "tokio/tests/rt_busy_tick.rs",
+   5,
+   11,
+   5,
+   14
+  ],
+  [
+   "tokio/tests/rt_common.rs",
+   67,
+   15,
+   67,
+   18
+  ],
+  [
+   "tokio/tests/rt_common.rs",
+   1002,
+   19,
+   1002,
+   22
+  ],
+  [
+   "tokio/tests/rt_handle_block_on.rs",
+   7,
+   12,
+   7,
+   15
+  ],
+  [
+   "tokio/tests/rt_handle_block_on.rs",
+   242,
+   22,
+   242,
+   25
+  ],
+  [
+   "tokio/tests/rt_handle_block_on.rs",
+   254,
+   22,
+   254,
+   25
+  ],
+  [
+   "tokio/tests/rt_handle_block_on.rs",
+   265,
+   26,
+   265,
+   29
+  ],
+  [
+   "tokio/tests/rt_handle_block_on.rs",
+   281,
+   22,
+   281,
+   25
+  ],
+  [
+   "tokio/tests/rt_handle_block_on.rs",
+   294,
+   22,
+   294,
+   25
+  ],
+  [
+   "tokio/tests/rt_handle_block_on.rs",
+   306,
+   26,
+   306,
+   29
+  ],
+  [
+   "tokio/tests/rt_handle_block_on.rs",
+   327,
+   18,
+   327,
+   21
+  ],
+  [
+   "tokio/tests/rt_handle_block_on.rs",
+   342,
+   23,
+   342,
+   26
+  ],
+  [
+   "tokio/tests/rt_handle_block_on.rs",
+   362,
+   23,
+   362,
+   26
+  ],
+  [
+   "tokio/tests/rt_handle_block_on.rs",
+   426,
+   23,
+   426,
+   26
+  ],
+  [
+   "tokio/tests/rt_shutdown_err.rs",
+   6,
+   11,
+   6,
+   14
+  ],
+  [
+   "tokio/tests/rt_threaded.rs",
+   4,
+   11,
+   4,
+   14
+  ],
+  [
+   "tokio/tests/rt_unstable_eager_driver_handoff.rs",
+   86,
+   15,
+   86,
+   18
+  ],
+  [
+   "tokio/tests/rt_unstable_metrics.rs",
+   778,
+   24,
+   778,
+   27
+  ],
+  [
+   "tokio/tests/rt_unstable_metrics.rs",
+   796,
+   24,
+   796,
+   27
+  ],
+  [
+   "tokio/tests/tcp_accept.rs",
+   10,
+   11,
+   10,
+   14
+  ],
+  [
+   "tokio/tests/tcp_accept_ready.rs",
+   13,
+   11,
+   13,
+   14
+  ],
+  [
+   "tokio/tests/tcp_accept_ready.rs",
+   153,
+   26,
+   153,
+   29
+  ],
+  [
+   "tokio/tests/tcp_connect.rs",
+   10,
+   11,
+   10,
+   14
+  ],
+  [
+   "tokio/tests/tcp_echo.rs",
+   11,
+   11,
+   11,
+   14
+  ],
+  [
+   "tokio/tests/tcp_into_split.rs",
+   8,
+   11,
+   8,
+   14
+  ],
+  [
+   "tokio/tests/tcp_into_std.rs",
+   13,
+   11,
+   13,
+   14
+  ],
+  [
+   "tokio/tests/tcp_into_std.rs",
+   14,
+   11,
+   14,
+   14
+  ],
+  [
+   "tokio/tests/tcp_peek.rs",
+   4,
+   11,
+   4,
+   14
+  ],
+  [
+   "tokio/tests/tcp_shutdown.rs",
+   4,
+   11,
+   4,
+   14
+  ],
+  [
+   "tokio/tests/tcp_socket.rs",
+   11,
+   11,
+   11,
+   14
+  ],
+  [
+   "tokio/tests/tcp_split.rs",
+   8,
+   11,
+   8,
+   14
+  ],
+  [
+   "tokio/tests/tcp_stream.rs",
+   11,
+   11,
+   11,
+   14
+  ],
+  [
+   "tokio/tests/udp.rs",
+   16,
+   25,
+   16,
+   28
+  ],
+  [
+   "tokio/tests/uds_cred.rs",
+   4,
+   11,
+   4,
+   14
+  ],
+  [
+   "tokio/tests/uds_datagram.rs",
+   5,
+   11,
+   5,
+   14
+  ],
+  [
+   "tokio/tests/uds_socket.rs",
+   8,
+   4,
+   8,
+   7
+  ],
+  [
+   "tokio/tests/uds_split.rs",
+   6,
+   11,
+   6,
+   14
+  ],
+  [
+   "tokio/tests/uds_stream.rs",
+   14,
+   11,
+   14,
+   14
+  ],
+  [
+   "tokio/tests/unwindsafe.rs",
+   21,
+   28,
+   21,
+   31
+  ],
+  [
+   "tokio/tests/unwindsafe.rs",
+   22,
+   28,
+   22,
+   31
+  ],
+  [
+   "tokio/tests/unwindsafe.rs",
+   23,
+   28,
+   23,
+   31
+  ],
+  [
+   "tokio/tests/unwindsafe.rs",
+   24,
+   28,
+   24,
+   31
+  ],
+  [
+   "tokio/tests/unwindsafe.rs",
+   30,
+   28,
+   30,
+   31
+  ],
+  [
+   "tokio/tests/unwindsafe.rs",
+   31,
+   28,
+   31,
+   31
+  ],
+  [
+   "tokio/tests/unwindsafe.rs",
+   32,
+   28,
+   32,
+   31
+  ],
+  [
+   "tokio/tests/unwindsafe.rs",
+   38,
+   15,
+   38,
+   18
+  ],
+  [
+   "tokio/tests/unwindsafe.rs",
+   39,
+   15,
+   39,
+   18
+  ]
+ ],
+ "actual": [],
+ "reproduced": "0/3",
+ "note": "H5: rename examples/echo-tcp.rs -> examples/echo-tcp_rt.rs -> back; flake 0/3 [r1:scr+retry r2:scr+retry r3:scr+retry] in 0s",
+ "violation": {
+  "oracle": "r1_history",
+  "server": "rust-analyzer-2026-09-21",
+  "project": "tokio-rs/tokio@3930bd182cb1",
+  "key": {
+   "method": "references",
+   "path": "examples/echo-tcp.rs",
+   "line": 24,
+   "character": 12,
+   "extra": ""
+  },
+  "expected": [
+   [
+    "benches/net_accept.rs",
+    27,
+    11,
+    27,
+    14
+   ],
+   [
+    "examples/chat.rs",
+    28,
+    11,
+    28,
+    14
+   ],
+   [
+    "examples/connect-tcp.rs",
+    18,
+    11,
+    18,
+    14
+   ],
+   [
+    "examples/connect-udp.rs",
+    18,
+    11,
+    18,
+    14
+   ],
+   [
+    "examples/custom-executor-tokio-context.rs",
+    5,
+    11,
+    5,
+    14
+   ],
+   [
+    "examples/custom-executor.rs",
+    6,
+    11,
+    6,
+    14
+   ],
+   [
+    "examples/echo-tcp.rs",
+    24,
+    11,
+    24,
+    14
+   ],
+   [
+    "examples/echo-udp.rs",
+    39,
+    11,
+    39,
+    14
+   ],
+   [
+    "examples/graceful-shutdown.rs",
+    25,
+    11,
+    25,
+    14
+   ],
+   [
+    "examples/hello_world.rs",
+    14,
+    11,
+    14,
+    14
+   ],
+   [
+    "examples/named-pipe-multi-client.rs",
+    6,
+    15,
+    6,
+    18
+   ],
+   [
+    "examples/named-pipe-ready.rs",
+    5,
+    15,
+    5,
+    18
+   ],
+   [
+    "examples/named-pipe.rs",
+    6,
+    15,
+    6,
+    18
+   ],
+   [
+    "examples/print_each_packet.rs",
+    56,
+    11,
+    56,
+    14
+   ],
+   [
+    "examples/proxy.rs",
+    25,
+    11,
+    25,
+    14
+   ],
+   [
+    "examples/tinydb.rs",
+    43,
+    11,
+    43,
+    14
+   ],
+   [
+    "examples/tinyhttp.rs",
+    21,
+    11,
+    21,
+    14
+   ],
+   [
+    "examples/udp-client.rs",
+    34,
+    11,
+    34,
+    14
+   ],
+   [
+    "examples/udp-codec.rs",
+    10,
+    11,
+    10,
+    14
+   ],
+   [
+    "stress-test/examples/simple_echo_tcp.rs",
+    5,
+    4,
+    5,
+    7
+   ],
+   [
+    "tests-integration/src/bin/test-mem.rs",
+    10,
+    30,
+    10,
+    33
+   ],
+   [
+    "tokio-util/src/net/mod.rs",
+    35,
+    25,
+    35,
+    28
+   ],
+   [
+    "tokio-util/src/net/mod.rs",
+    36,
+    21,
+    36,
+    24
+   ],
+   [
+    "tokio-util/src/net/unix/mod.rs",
+    6,
+    25,
+    6,
+    28
+   ],
+   [
+    "tokio-util/src/net/unix/mod.rs",
+    7,
+    21,
+    7,
+    24
+   ],
+   [
+    "tokio-util/src/net/unix/mod.rs",
+    8,
+    23,
+    8,
+    26
+   ],
+   [
+    "tokio-util/src/udp/frame.rs",
+    3,
+    25,
+    3,
+    28
+   ],
+   [
+    "tokio-util/tests/udp.rs",
+    5,
+    11,
+    5,
+    14
+   ],
+   [
+    "tokio/src/lib.rs",
+    559,
+    8,
+    559,
+    11
+   ],
+   [
+    "tokio/src/net/lookup_host.rs",
+    1,
+    15,
+    1,
+    18
+   ],
+   [
+    "tokio/src/net/tcp/listener.rs",
+    1,
+    11,
+    1,
+    14
+   ],
+   [
+    "tokio/src/net/tcp/listener.rs",
+    5,
+    15,
+    5,
+    18
+   ],
+   [
+    "tokio/src/net/tcp/socket.rs",
+    0,
+    11,
+    0,
+    14
+   ],
+   [
+    "tokio/src/net/tcp/split.rs",
+    11,
+    11,
+    11,
+    14
+   ],
+   [
+    "tokio/src/net/tcp/split_owned.rs",
+    11,
+    11,
+    11,
+    14
+   ],
+   [
+    "tokio/src/net/tcp/stream.rs",
+    5,
+    15,
+    5,
+    18
+   ],
+   [
+    "tokio/src/net/tcp/stream.rs",
+    10,
+    11,
+    10,
+    14
+   ],
+   [
+    "tokio/src/net/tcp/stream.rs",
+    11,
+    11,
+    11,
+    14
+   ],
+   [
+    "tokio/src/net/udp.rs",
+    1,
+    11,
+    1,
+    14
+   ],
+   [
+    "tokio/src/net/unix/datagram/socket.rs",
+    1,
+    11,
+    1,
+    14
+   ],
+   [
+    "tokio/src/net/unix/listener.rs",
+    1,
+    11,
+    1,
+    14
+   ],
+   [
+    "tokio/src/net/unix/socket.rs",
+    5,
+    11,
+    5,
+    14
+   ],
+   [
+    "tokio/src/net/unix/split.rs",
+    11,
+    11,
+    11,
+    14
+   ],
+   [
+    "tokio/src/net/unix/split.rs",
+    13,
+    11,
+    13,
+    14
+   ],
+   [
+    "tokio/src/net/unix/split_owned.rs",
+    11,
+    11,
+    11,
+    14
+   ],
+   [
+    "tokio/src/net/unix/split_owned.rs",
+    13,
+    11,
+    13,
+    14
+   ],
+   [
+    "tokio/src/net/unix/stream.rs",
+    1,
+    11,
+    1,
+    14
+   ],
+   [
+    "tokio/src/net/unix/stream.rs",
+    2,
+    11,
+    2,
+    14
+   ],
+   [
+    "tokio/src/net/unix/stream.rs",
+    3,
+    11,
+    3,
+    14
+   ],
+   [
+    "tokio/src/net/unix/stream.rs",
+    4,
+    11,
+    4,
+    14
+   ],
+   [
+    "tokio/src/net/unix/ucred.rs",
+    0,
+    11,
+    0,
+    14
+   ],
+   [
+    "tokio/src/net/unix/ucred.rs",
+    90,
+    15,
+    90,
+    18
+   ],
+   [
+    "tokio/src/net/unix/ucred.rs",
+    148,
+    15,
+    148,
+    18
+   ],
+   [
+    "tokio/src/net/unix/ucred.rs",
+    190,
+    15,
+    190,
+    18
+   ],
+   [
+    "tokio/src/net/unix/ucred.rs",
+    221,
+    15,
+    221,
+    18
+   ],
+   [
+    "tokio/src/net/unix/ucred.rs",
+    295,
+    15,
+    295,
+    18
+   ],
+   [
+    "tokio/src/net/unix/ucred.rs",
+    342,
+    15,
+    342,
+    18
+   ],
+   [
+    "tokio/src/net/unix/ucred.rs",
+    375,
+    15,
+    375,
+    18
+   ],
+   [
+    "tokio/src/net/unix/ucred.rs",
+    409,
+    15,
+    409,
+    18
+   ],
+   [
+    "tokio/src/net/unix/ucred.rs",
+    423,
+    15,
+    423,
+    18
+   ],
+   [
+    "tokio/tests/async_send_sync.rs",
+    10,
+    11,
+    10,
+    14
+   ],
+   [
+    "tokio/tests/async_send_sync.rs",
+    205,
+    25,
+    205,
+    28
+   ],
+   [
+    "tokio/tests/async_send_sync.rs",
+    206,
+    28,
+    206,
+    31
+   ],
+   [
+    "tokio/tests/async_send_sync.rs",
+    207,
+    28,
+    207,
+    31
+   ],
+   [
+    "tokio/tests/async_send_sync.rs",
+    210,
+    21,
+    210,
+    24
+   ],
+   [
+    "tokio/tests/async_send_sync.rs",
+    211,
+    21,
+    211,
+    24
+   ],
+   [
+    "tokio/tests/async_send_sync.rs",
+    212,
+    21,
+    212,
+    24
+   ],
+   [
+    "tokio/tests/async_send_sync.rs",
+    213,
+    21,
+    213,
+    24
+   ],
+   [
+    "tokio/tests/async_send_sync.rs",
+    214,
+    21,
+    214,
+    24
+   ],
+   [
+    "tokio/tests/async_send_sync.rs",
+    215,
+    21,
+    215,
+    24
+   ],
+   [
+    "tokio/tests/async_send_sync.rs",
+    216,
+    21,
+    216,
+    24
+   ],
+   [
+    "tokio/tests/async_send_sync.rs",
+    217,
+    24,
+    217,
+    27
+   ],
+   [
+    "tokio/tests/async_send_sync.rs",
+    218,
+    24,
+    218,
+    27
+   ],
+   [
+    "tokio/tests/async_send_sync.rs",
+    219,
+    24,
+    219,
+    27
+   ],
+   [
+    "tokio/tests/async_send_sync.rs",
+    220,
+    24,
+    220,
+    27
+   ],
+   [
+    "tokio/tests/async_send_sync.rs",
+    221,
+    24,
+    221,
+    27
+   ],
+   [
+    "tokio/tests/async_send_sync.rs",
+    227,
+    29,
+    227,
+    32
+   ],
+   [
+    "tokio/tests/async_send_sync.rs",
+    228,
+    32,
+    228,
+    35
+   ],
+   [
+    "tokio/tests/async_send_sync.rs",
+    229,
+    32,
+    229,
+    35
+   ],
+   [
+    "tokio/tests/async_send_sync.rs",
+    230,
+    32,
+    230,
+    35
+   ],
+   [
+    "tokio/tests/async_send_sync.rs",
+    231,
+    32,
+    231,
+    35
+   ],
+   [
+    "tokio/tests/async_send_sync.rs",
+    232,
+    32,
+    232,
+    35
+   ],
+   [
+    "tokio/tests/async_send_sync.rs",
+    233,
+    32,
+    233,
+    35
+   ],
+   [
+    "tokio/tests/async_send_sync.rs",
+    234,
+    32,
+    234,
+    35
+   ],
+   [
+    "tokio/tests/async_send_sync.rs",
+    235,
+    32,
+    235,
+    35
+   ],
+   [
+    "tokio/tests/async_send_sync.rs",
+    236,
+    32,
+    236,
+    35
+   ],
+   [
+    "tokio/tests/async_send_sync.rs",
+    237,
+    32,
+    237,
+    35
+   ],
+   [
+    "tokio/tests/async_send_sync.rs",
+    240,
+    24,
+    240,
+    27
+   ],
+   [
+    "tokio/tests/async_send_sync.rs",
+    241,
+    24,
+    241,
+    27
+   ],
+   [
+    "tokio/tests/async_send_sync.rs",
+    246,
+    15,
+    246,
+    18
+   ],
+   [
+    "tokio/tests/async_send_sync.rs",
+    274,
+    15,
+    274,
+    18
+   ],
+   [
+    "tokio/tests/async_send_sync.rs",
+    287,
+    15,
+    287,
+    18
+   ],
+   [
+    "tokio/tests/buffered.rs",
+    3,
+    11,
+    3,
+    14
+   ],
+   [
+    "tokio/tests/coop_budget.rs",
+    5,
+    11,
+    5,
+    14
+   ],
+   [
+    "tokio/tests/io_copy_bidirectional.rs",
+    8,
+    11,
+    8,
+    14
+   ],
+   [
+    "tokio/tests/io_copy_bidirectional.rs",
+    12,
+    26,
+    12,
+    29
+   ],
+   [
+    "tokio/tests/io_driver.rs",
+    4,
+    11,
+    4,
+    14
+   ],
+   [
+    "tokio/tests/io_driver.rs",
+    100,
+    23,
+    100,
+    26
+   ],
+   [
+    "tokio/tests/io_driver_drop.rs",
+    3,
+    11,
+    3,
+    14
+   ],
+   [
+    "tokio/tests/net_bind_resource.rs",
+    10,
+    11,
+    10,
+    14
+   ],
+   [
+    "tokio/tests/net_lookup_host.rs",
+    9,
+    11,
+    9,
+    14
+   ],
+   [
+    "tokio/tests/net_lookup_host.rs",
+    19,
+    28,
+    19,
+    31
+   ],
+   [
+    "tokio/tests/net_lookup_host.rs",
+    27,
+    28,
+    27,
+    31
+   ],
+   [
+    "tokio/tests/net_lookup_host.rs",
+    40,
+    20,
+    40,
+    23
+   ],
+   [
+    "tokio/tests/net_named_pipe.rs",
+    6,
+    11,
+    6,
+    14
+   ],
+   [
+    "tokio/tests/net_panic.rs",
+    5,
+    11,
+    5,
+    14
+   ],
+   [
+    "tokio/tests/net_panic.rs",
+    17,
+    15,
+    17,
+    18
+   ],
+   [
+    "tokio/tests/net_panic.rs",
+    78,
+    15,
+    78,
+    18
+   ],
+   [
+    "tokio/tests/net_panic.rs",
+    100,
+    15,
+    100,
+    18
+   ],
+   [
+    "tokio/tests/net_panic.rs",
+    123,
+    15,
+    123,
+    18
+   ],
+   [
+    "tokio/tests/net_panic.rs",
+    148,
+    15,
+    148,
+    18
+   ],
+   [
+    "tokio/tests/net_panic.rs",
+    174,
+    15,
+    174,
+    18
+   ],
+   [
+    "tokio/tests/net_quickack.rs",
+    13,
+    11,
+    13,
+    14
+   ],
+   [
+    "tokio/tests/net_quickack.rs",
+    14,
+    11,
+    14,
+    14
+   ],
+   [
+    "tokio/tests/net_unix_pipe.rs",
+    4,
+    11,
+    4,
+    14
+   ],
+   [
+    "tokio/tests/no_rt.rs",
+    2,
+    11,
+    2,
+    14
+   ],
+   [
+    "tokio/tests/no_rt.rs",
+    43,
+    19,
+    43,
+    22
+   ],
+   [
+    "tokio/tests/rt_busy_tick.rs",
+    5,
+    11,
+    5,
+    14
+   ],
+   [
+    "tokio/tests/rt_common.rs",
+    67,
+    15,
+    67,
+    18
+   ],
+   [
+    "tokio/tests/rt_common.rs",
+    1002,
+    19,
+    1002,
+    22
+   ],
+   [
+    "tokio/tests/rt_handle_block_on.rs",
+    7,
+    12,
+    7,
+    15
+   ],
+   [
+    "tokio/tests/rt_handle_block_on.rs",
+    242,
+    22,
+    242,
+    25
+   ],
+   [
+    "tokio/tests/rt_handle_block_on.rs",
+    254,
+    22,
+    254,
+    25
+   ],
+   [
+    "tokio/tests/rt_handle_block_on.rs",
+    265,
+    26,
+    265,
+    29
+   ],
+   [
+    "tokio/tests/rt_handle_block_on.rs",
+    281,
+    22,
+    281,
+    25
+   ],
+   [
+    "tokio/tests/rt_handle_block_on.rs",
+    294,
+    22,
+    294,
+    25
+   ],
+   [
+    "tokio/tests/rt_handle_block_on.rs",
+    306,
+    26,
+    306,
+    29
+   ],
+   [
+    "tokio/tests/rt_handle_block_on.rs",
+    327,
+    18,
+    327,
+    21
+   ],
+   [
+    "tokio/tests/rt_handle_block_on.rs",
+    342,
+    23,
+    342,
+    26
+   ],
+   [
+    "tokio/tests/rt_handle_block_on.rs",
+    362,
+    23,
+    362,
+    26
+   ],
+   [
+    "tokio/tests/rt_handle_block_on.rs",
+    426,
+    23,
+    426,
+    26
+   ],
+   [
+    "tokio/tests/rt_shutdown_err.rs",
+    6,
+    11,
+    6,
+    14
+   ],
+   [
+    "tokio/tests/rt_threaded.rs",
+    4,
+    11,
+    4,
+    14
+   ],
+   [
+    "tokio/tests/rt_unstable_eager_driver_handoff.rs",
+    86,
+    15,
+    86,
+    18
+   ],
+   [
+    "tokio/tests/rt_unstable_metrics.rs",
+    778,
+    24,
+    778,
+    27
+   ],
+   [
+    "tokio/tests/rt_unstable_metrics.rs",
+    796,
+    24,
+    796,
+    27
+   ],
+   [
+    "tokio/tests/tcp_accept.rs",
+    10,
+    11,
+    10,
+    14
+   ],
+   [
+    "tokio/tests/tcp_accept_ready.rs",
+    13,
+    11,
+    13,
+    14
+   ],
+   [
+    "tokio/tests/tcp_accept_ready.rs",
+    153,
+    26,
+    153,
+    29
+   ],
+   [
+    "tokio/tests/tcp_connect.rs",
+    10,
+    11,
+    10,
+    14
+   ],
+   [
+    "tokio/tests/tcp_echo.rs",
+    11,
+    11,
+    11,
+    14
+   ],
+   [
+    "tokio/tests/tcp_into_split.rs",
+    8,
+    11,
+    8,
+    14
+   ],
+   [
+    "tokio/tests/tcp_into_std.rs",
+    13,
+    11,
+    13,
+    14
+   ],
+   [
+    "tokio/tests/tcp_into_std.rs",
+    14,
+    11,
+    14,
+    14
+   ],
+   [
+    "tokio/tests/tcp_peek.rs",
+    4,
+    11,
+    4,
+    14
+   ],
+   [
+    "tokio/tests/tcp_shutdown.rs",
+    4,
+    11,
+    4,
+    14
+   ],
+   [
+    "tokio/tests/tcp_socket.rs",
+    11,
+    11,
+    11,
+    14
+   ],
+   [
+    "tokio/tests/tcp_split.rs",
+    8,
+    11,
+    8,
+    14
+   ],
+   [
+    "tokio/tests/tcp_stream.rs",
+    11,
+    11,
+    11,
+    14
+   ],
+   [
+    "tokio/tests/udp.rs",
+    16,
+    25,
+    16,
+    28
+   ],
+   [
+    "tokio/tests/uds_cred.rs",
+    4,
+    11,
+    4,
+    14
+   ],
+   [
+    "tokio/tests/uds_datagram.rs",
+    5,
+    11,
+    5,
+    14
+   ],
+   [
+    "tokio/tests/uds_socket.rs",
+    8,
+    4,
+    8,
+    7
+   ],
+   [
+    "tokio/tests/uds_split.rs",
+    6,
+    11,
+    6,
+    14
+   ],
+   [
+    "tokio/tests/uds_stream.rs",
+    14,
+    11,
+    14,
+    14
+   ],
+   [
+    "tokio/tests/unwindsafe.rs",
+    21,
+    28,
+    21,
+    31
+   ],
+   [
+    "tokio/tests/unwindsafe.rs",
+    22,
+    28,
+    22,
+    31
+   ],
+   [
+    "tokio/tests/unwindsafe.rs",
+    23,
+    28,
+    23,
+    31
+   ],
+   [
+    "tokio/tests/unwindsafe.rs",
+    24,
+    28,
+    24,
+    31
+   ],
+   [
+    "tokio/tests/unwindsafe.rs",
+    30,
+    28,
+    30,
+    31
+   ],
+   [
+    "tokio/tests/unwindsafe.rs",
+    31,
+    28,
+    31,
+    31
+   ],
+   [
+    "tokio/tests/unwindsafe.rs",
+    32,
+    28,
+    32,
+    31
+   ],
+   [
+    "tokio/tests/unwindsafe.rs",
+    38,
+    15,
+    38,
+    18
+   ],
+   [
+    "tokio/tests/unwindsafe.rs",
+    39,
+    15,
+    39,
+    18
+   ]
+  ],
+  "actual": [],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "examples/echo-tcp.rs"
+   },
+   {
+    "kind": "open",
+    "path": "tokio/src/net/tcp/split.rs"
+   },
+   {
+    "kind": "open",
+    "path": "tokio/tests/signal_realtime.rs"
+   },
+   {
+    "kind": "fs_write",
+    "path": "tokio/src/runtime/metrics/io.rs",
+    "text": "#![cfg_attr(not(feature = \"net\"), allow(dead_code))]\n\nuse crate::util::metric_atomics::MetricAtomicU64;\nuse std::sync::atomic::Ordering::Relaxed;\n\n#[derive(Default)]\npub(crate) struct IoDriverMetrics {\n    pub(super) fd_registered_count: MetricAtomicU64,\n    pub(super) fd_deregistered_count: MetricAtomicU64,\n    pub(super) ready_count: MetricAtomicU64,\nx}\n\nimpl IoDriverMetrics {\n    pub(crate) fn incr_fd_count(&self) {\n        self.fd_registered_count.add(1, Relaxed);\n    }\n\n    pub(crate) fn dec_fd_count(&self) {\n        self.fd_deregistered_count.add(1, Relaxed);\n    }\n\n    pub(crate) fn incr_ready_count_by(&self, amt: u64) {\n        self.ready_count.add(amt, Relaxed);\n    }\n}\n"
+   },
+   {
+    "kind": "fs_write",
+    "path": "tokio/src/runtime/metrics/io.rs",
+    "text": "#![cfg_attr(not(feature = \"net\"), allow(dead_code))]\n\nuse crate::util::metric_atomics::MetricAtomicU64;\nuse std::sync::atomic::Ordering::Relaxed;\n\n#[derive(Default)]\npub(crate) struct IoDriverMetrics {\n    pub(super) fd_registered_count: MetricAtomicU64,\n    pub(super) fd_deregistered_count: MetricAtomicU64,\n    pub(super) ready_count: MetricAtomicU64,\n}\n\nimpl IoDriverMetrics {\n    pub(crate) fn incr_fd_count(&self) {\n        self.fd_registered_count.add(1, Relaxed);\n    }\n\n    pub(crate) fn dec_fd_count(&self) {\n        self.fd_deregistered_count.add(1, Relaxed);\n    }\n\n    pub(crate) fn incr_ready_count_by(&self, amt: u64) {\n        self.ready_count.add(amt, Relaxed);\n    }\n}\n"
+   },
+   {
+    "kind": "fs_rename",
+    "path": "examples/echo-tcp.rs",
+    "new_path": "examples/echo-tcp_rt.rs"
+   },
+   {
+    "kind": "fs_rename",
+    "path": "examples/echo-tcp_rt.rs",
+    "new_path": "examples/echo-tcp.rs"
+   },
+   {
+    "kind": "close",
+    "path": "tokio/src/net/tcp/split.rs"
+   },
+   {
+    "kind": "open",
+    "path": "tokio/src/net/tcp/split.rs"
+   },
+   {
+    "kind": "fs_rename",
+    "path": "tokio/tests/signal_realtime.rs",
+    "new_path": "tokio/tests/signal_realtime_rt.rs"
+   },
+   {
+    "kind": "change",
+    "path": "examples/echo-tcp.rs",
+    "start": [
+     33,
+     19
+    ],
+    "end": [
+     33,
+     25
+    ],
+    "text": "zz"
+   },
+   {
+    "kind": "save",
+    "path": "examples/echo-tcp.rs"
+   },
+   {
+    "kind": "change",
+    "path": "examples/echo-tcp.rs",
+    "start": [
+     33,
+     19
+    ],
+    "end": [
+     33,
+     21
+    ],
+    "text": "Result"
+   },
+   {
+    "kind": "save",
+    "path": "examples/echo-tcp.rs"
+   },
+   {
+    "kind": "change",
+    "path": "tokio/src/net/tcp/split.rs",
+    "start": [
+     165,
+     0
+    ],
+    "end": [
+     166,
+     0
+    ]
+   },
+   {
+    "kind": "change",
+    "path": "tokio/src/net/tcp/split.rs",
+    "start": [
+     165,
+     0
+    ],
+    "end": [
+     165,
+     0
+    ],
+    "text": "    "
+   },
+   {
+    "kind": "change",
+    "path": "tokio/src/net/tcp/split.rs",
+    "start": [
+     165,
+     4
+    ],
+    "end": [
+     165,
+     4
+    ],
+    "text": "    self.0.read"
+   },
+   {
+    "kind": "change",
+    "path": "tokio/src/net/tcp/split.rs",
+    "start": [
+     165,
+     19
+    ],
+    "end": [
+     165,
+     19
+    ],
+    "text": "y(interest)"
+   },
+   {
+    "kind": "change",
+    "path": "tokio/src/net/tcp/split.rs",
+    "start": [
+     165,
+     30
+    ],
+    "end": [
+     165,
+     30
+    ],
+    "text": ".await\n"
+   },
+   {
+    "kind": "fs_rename",
+    "path": "tokio/tests/signal_realtime_rt.rs",
+    "new_path": "tokio/tests/signal_realtime.rs"
+   },
+   {
+    "kind": "change",
+    "path": "tokio/tests/signal_realtime.rs",
+    "start": [
+     61,
+     0
+    ],
+    "end": [
+     62,
+     0
+    ]
+   },
+   {
+    "kind": "change",
+    "path": "tokio/tests/signal_realtime.rs",
+    "start": [
+     61,
+     0
+    ],
+    "end": [
+     61,
+     0
+    ],
+    "text": "        match done.get(&signum) {\n"
+   },
+   {
+    "kind": "request",
+    "path": "examples/echo-tcp.rs",
+    "start": [
+     71,
+     59
+    ],
+    "text": "completion"
+   },
+   {
+    "kind": "request",
+    "path": "tokio/src/net/tcp/split.rs",
+    "start": [
+     393,
+     46
+    ],
+    "text": "completion"
+   },
+   {
+    "kind": "request",
+    "path": "tokio/tests/signal_realtime.rs",
+    "start": [
+     73,
+     10
+    ],
+    "text": "documentHighlight"
+   },
+   {
+    "kind": "request",
+    "path": "examples/echo-tcp.rs",
+    "start": [
+     64,
+     25
+    ],
+    "text": "documentHighlight"
+   },
+   {
+    "kind": "request",
+    "path": "tokio/src/net/tcp/split.rs",
+    "start": [
+     181,
+     37
+    ],
+    "text": "hover"
+   },
+   {
+    "kind": "request",
+    "path": "examples/echo-tcp.rs",
+    "start": [
+     39,
+     16
+    ],
+    "text": "references"
+   },
+   {
+    "kind": "request",
+    "path": "tokio/tests/signal_realtime.rs",
+    "start": [
+     41,
+     20
+    ],
+    "text": "hover"
+   },
+   {
+    "kind": "request",
+    "path": "examples/echo-tcp.rs",
+    "start": [
+     72,
+     80
+    ],
+    "text": "definition"
+   },
+   {
+    "kind": "change",
+    "path": "tokio/src/net/tcp/split.rs",
+    "start": [
+     402,
+     2
+    ],
+    "end": [
+     402,
+     2
+    ],
+    "text": "x"
+   },
+   {
+    "kind": "change",
+    "path": "tokio/tests/signal_realtime.rs",
+    "start": [
+     5,
+     0
+    ],
+    "end": [
+     6,
+     0
+    ]
+   },
+   {
+    "kind": "change",
+    "path": "examples/echo-tcp.rs",
+    "start": [
+     55,
+     0
+    ],
+    "end": [
+     55,
+     10
+    ]
+   },
+   {
+    "kind": "close",
+    "path": "examples/echo-tcp.rs"
+   },
+   {
+    "kind": "open",
+    "path": "examples/echo-tcp.rs"
+   },
+   {
+    "kind": "change",
+    "path": "tokio/tests/signal_realtime.rs",
+    "start": [
+     5,
+     0
+    ],
+    "end": [
+     5,
+     0
+    ],
+    "text": "mod "
+   },
+   {
+    "kind": "change",
+    "path": "tokio/tests/signal_realtime.rs",
+    "start": [
+     5,
+     4
+    ],
+    "end": [
+     5,
+     4
+    ],
+    "text": "s"
+   },
+   {
+    "kind": "change",
+    "path": "tokio/tests/signal_realtime.rs",
+    "start": [
+     5,
+     5
+    ],
+    "end": [
+     5,
+     5
+    ],
+    "text": "uppo"
+   },
+   {
+    "kind": "change",
+    "path": "tokio/tests/signal_realtime.rs",
+    "start": [
+     5,
+     9
+    ],
+    "end": [
+     5,
+     9
+    ],
+    "text": "rt {\n"
+   },
+   {
+    "kind": "change",
+    "path": "tokio/src/net/tcp/split.rs",
+    "start": [
+     402,
+     2
+    ],
+    "end": [
+     402,
+     3
+    ]
+   },
+   {
+    "kind": "request",
+    "path": "examples/echo-tcp.rs",
+    "start": [
+     60,
+     29
+    ],
+    "text": "typeDefinition"
+   },
+   {
+    "kind": "request",
+    "path": "tokio/src/net/tcp/split.rs",
+    "start": [
+     391,
+     23
+    ],
+    "text": "typeDefinition"
+   },
+   {
+    "kind": "request",
+    "path": "tokio/src/net/tcp/split.rs",
+    "start": [
+     316,
+     21
+    ],
+    "text": "definition"
+   },
+   {
+    "kind": "set_config",
+    "settings": {
+     "rust-analyzer": {
+      "cargo": {
+       "buildScripts": {
+        "enable": false
+       }
+      }
+     }
+    }
+   },
+   {
+    "kind": "set_config",
+    "settings": {
+     "rust-analyzer": {
+      "cargo": {
+       "buildScripts": {
+        "enable": true
+       }
+      }
+     }
+    }
+   },
+   {
+    "kind": "change",
+    "path": "tokio/src/net/tcp/split.rs",
+    "start": [
+     11,
+     0
+    ],
+    "end": [
+     12,
+     0
+    ]
+   },
+   {
+    "kind": "change",
+    "path": "tokio/src/net/tcp/split.rs",
+    "start": [
+     11,
+     0
+    ],
+    "end": [
+     11,
+     0
+    ],
+    "text": "use cr"
+   },
+   {
+    "kind": "change",
+    "path": "tokio/src/net/tcp/split.rs",
+    "start": [
+     11,
+     6
+    ],
+    "end": [
+     11,
+     6
+    ],
+    "text": "at"
+   },
+   {
+    "kind": "change",
+    "path": "tokio/src/net/tcp/split.rs",
+    "start": [
+     11,
+     8
+    ],
+    "end": [
+     11,
+     8
+    ],
+    "text": "e::net::"
+   },
+   {
+    "kind": "change",
+    "path": "tokio/src/net/tcp/split.rs",
+    "start": [
+     11,
+     16
+    ],
+    "end": [
+     11,
+     16
+    ],
+    "text": "TcpStream;\n"
+   },
+   {
+    "kind": "change",
+    "path": "tokio/src/net/tcp/split.rs",
+    "start": [
+     287,
+     29
+    ],
+    "end": [
+     287,
+     29
+    ],
+    "text": "("
+   },
+   {
+    "kind": "save",
+    "path": "tokio/src/net/tcp/split.rs"
+   },
+   {
+    "kind": "change",
+    "path": "tokio/src/net/tcp/split.rs",
+    "start": [
+     287,
+     29
+    ],
+    "end": [
+     287,
+     30
+    ]
+   },
+   {
+    "kind": "save",
+    "path": "tokio/src/net/tcp/split.rs"
+   },
+   {
+    "kind": "fs_write",
+    "path": "examples/Cargo.toml",
+    "text": "[package]\nname = \"examples\"\nversion = \"0.0.0\"\npublish = false\nedition = \"2021\"\nlicense = \"MIT\"\n\n# If you copy one of the examples into a new project, you should be using\n# [dependencies] instead, and delete the **path**.\n[dev-dependencies]\ntokio = { version = \"1.0.0\", path = \"../tokio\", features = [\"full\", \"tracing\"] }\ntokio-util = { version = \"0.7.0\", path = \"../tokio-util\", features = [\"full\"] }\ntokio-stream = { version = \"0.1\", path = \"../tokio-stream\" }\n\ntracing = \"0.1\"\ntracing-subscriber = { version = \"0.3.1\", default-features = false, features = [\"fmt\", \"ansi\", \"env-filter\", \"tracing-log\"] }\nbytes = \"1.0.0\"\nfutures = { version = \"0.3.0\", features = [\"thread-pool\"]}\nhttp = \"1\"\nserde = \"1.0\"\nserde_derive = \"1.0\"\nserde_json = \"1.0\"\nhttparse = \"1.0\"\nhttpdate = \"1.0\"\nonce_cell = \"1.5.2\"\n\n[target.'cfg(target_os = \"linux\")'.dev-dependencies]\nlibc = \"0.2\"\n\n[target.'cfg(all(tokio_unstable, target_os = \"linux\"))'.dev-dependencies]\ntokio = { version = \"1.0.0\", path = \"../tokio\", features = [\"full\", \"tracing\", \"taskdump\"] }\n\n[target.'cfg(windows)'.dev-dependencies.windows-sys]\nversion = \"0.61\"\n\n[[example]]\nname = \"chat\"\npath = \"chat.rs\"\n\n[[example]]\nname = \"connect-tcp\"\npath = \"connect-tcp.rs\"\n\n[[example]]\nname = \"connect-udp\"\npath = \"connect-udp.rs\"\n\n[[example]]\nname = \"echo-tcp\"\npath = \"echo-tcp.rs\"\n\n[[example]]\nname = \"graceful-shutdown\"\npath = \"graceful-shutdown.rs\"\n\n[[example]]\nname = \"echo-udp\"\npath = \"echo-udp.rs\"\n\n[[example]]\nname = \"hello_world\"\npath = \"hello_world.rs\"\n\n[[example]]\nname = \"print_each_packet\"\npath = \"print_each_packet.rs\"\n\n[[example]]\nname = \"proxy\"\npath = \"proxy.rs\"\n\n[[example]]\nname = \"tinydb\"\npath = \"tinydb.rs\"\n\n[[example]]\nname = \"udp-client\"\npath = \"udp-client.rs\"\n\n[[example]]\nname = \"udp-codec\"\npath = \"udp-codec.rs\"\n\n[[example]]\nname = \"tinyhttp\"\npath = \"tinyhttp.rs\"\n\n[[example]]\nname = \"custom-executor\"\npath = \"custom-executor.rs\"\n\n[[example]]\nname = \"custom-executor-tokio-context\"\npath = \"custom-executor-tokio-context.rs\"\n\n[[example]]\nname = \"named-pipe\"\npath = \"named-pipe.rs\"\n\n[[example]]\nname = \"named-pipe-ready\"\npath = \"named-pipe-ready.rs\"\n\n[[example]]\nname = \"named-pipe-multi-client\"\npath = \"named-pipe-multi-client.rs\"\n\n[[example]]\nname = \"dump\"\npath = \"dump.rs\"\n\n[[example]]\nname = \"prewarm-fd-table\"\npath = \"prewarm-fd-table.rs\"\n\n[lints]\n"
+   },
+   {
+    "kind": "fs_write",
+    "path": "examples/Cargo.toml",
+    "text": "[package]\nname = \"examples\"\nversion = \"0.0.0\"\npublish = false\nedition = \"2021\"\nlicense = \"MIT\"\n\n# If you copy one of the examples into a new project, you should be using\n# [dependencies] instead, and delete the **path**.\n[dev-dependencies]\ntokio = { version = \"1.0.0\", path = \"../tokio\", features = [\"full\", \"tracing\"] }\ntokio-util = { version = \"0.7.0\", path = \"../tokio-util\", features = [\"full\"] }\ntokio-stream = { version = \"0.1\", path = \"../tokio-stream\" }\n\ntracing = \"0.1\"\ntracing-subscriber = { version = \"0.3.1\", default-features = false, features = [\"fmt\", \"ansi\", \"env-filter\", \"tracing-log\"] }\nbytes = \"1.0.0\"\nfutures = { version = \"0.3.0\", features = [\"thread-pool\"]}\nhttp = \"1\"\nserde = \"1.0\"\nserde_derive = \"1.0\"\nserde_json = \"1.0\"\nhttparse = \"1.0\"\nhttpdate = \"1.0\"\nonce_cell = \"1.5.2\"\n\n[target.'cfg(target_os = \"linux\")'.dev-dependencies]\nlibc = \"0.2\"\n\n[target.'cfg(all(tokio_unstable, target_os = \"linux\"))'.dev-dependencies]\ntokio = { version = \"1.0.0\", path = \"../tokio\", features = [\"full\", \"tracing\", \"taskdump\"] }\n\n[target.'cfg(windows)'.dev-dependencies.windows-sys]\nversion = \"0.61\"\n\n[[example]]\nname = \"chat\"\npath = \"chat.rs\"\n\n[[example]]\nname = \"connect-tcp\"\npath = \"connect-tcp.rs\"\n\n[[example]]\nname = \"connect-udp\"\npath = \"connect-udp.rs\"\n\n[[example]]\nname = \"echo-tcp\"\npath = \"echo-tcp.rs\"\n\n[[example]]\nname = \"graceful-shutdown\"\npath = \"graceful-shutdown.rs\"\n\n[[example]]\nname = \"echo-udp\"\npath = \"echo-udp.rs\"\n\n[[example]]\nname = \"hello_world\"\npath = \"hello_world.rs\"\n\n[[example]]\nname = \"print_each_packet\"\npath = \"print_each_packet.rs\"\n\n[[example]]\nname = \"proxy\"\npath = \"proxy.rs\"\n\n[[example]]\nname = \"tinydb\"\npath = \"tinydb.rs\"\n\n[[example]]\nname = \"udp-client\"\npath = \"udp-client.rs\"\n\n[[example]]\nname = \"udp-codec\"\npath = \"udp-codec.rs\"\n\n[[example]]\nname = \"tinyhttp\"\npath = \"tinyhttp.rs\"\n\n[[example]]\nname = \"custom-executor\"\npath = \"custom-executor.rs\"\n\n[[example]]\nname = \"custom-executor-tokio-context\"\npath = \"custom-executor-tokio-context.rs\"\n\n[[example]]\nname = \"named-pipe\"\npath = \"named-pipe.rs\"\n\n[[example]]\nname = \"named-pipe-ready\"\npath = \"named-pipe-ready.rs\"\n\n[[example]]\nname = \"named-pipe-multi-client\"\npath = \"named-pipe-multi-client.rs\"\n\n[[example]]\nname = \"dump\"\npath = \"dump.rs\"\n\n[[example]]\nname = \"prewarm-fd-table\"\npath = \"prewarm-fd-table.rs\"\n\n[lints]\nworkspace = true\n"
+   },
+   {
+    "kind": "fs_rename",
+    "path": "examples/echo-tcp.rs",
+    "new_path": "examples/echo-tcp_rt.rs"
+   },
+   {
+    "kind": "fs_rename",
+    "path": "examples/echo-tcp_rt.rs",
+    "new_path": "examples/echo-tcp.rs"
+   }
+  ],
+  "detail": "{\"case\": {\"chain_step\": 11, \"families\": [\"H6\", \"H5\", \"H3\", \"H9\", \"H8\", \"H7\", \"H4\", \"H2\", \"H1\", \"H6\", \"H5\"], \"family\": \"H5\", \"history_index\": 10, \"history_seed\": 2011, \"mode\": \"chain\", \"note\": \"rename examples/echo-tcp.rs -> examples/echo-tcp_rt.rs -> back\", \"seed\": 2, \"timing\": \"settled\"}, \"note\": \"H5: rename examples/echo-tcp.rs -> examples/echo-tcp_rt.rs -> back; flake 0/3 [r1:scr+retry r2:scr+retry r3:scr+retry] in 0s\", \"shape\": \"references:lost\"}",
+  "reproduced": "0/3",
+  "reduced_ops": [],
+  "signature": "rust-analyzer|r1_history|references:lost",
+  "run_id": "10187fec4a81"
+ },
+ "replay_logs": [],
+ "project_files": {},
+ "incomplete": true
+}

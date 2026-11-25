@@ -1,0 +1,3 @@
+2026-11-18 05:13:16,192 INFO campaign_run run b86ad4e52dc0: r0_crash on gopls v0.23.0, beego/beego@939cfde380bb seed 1 settled, targets ['server/web/filter/opentracing/filter.go', 'server/web/template_test.go', 'task/governor_command_test.go']
+2026-11-18 05:13:25,823 INFO campaign_run run b86ad4e52dc0: 0 candidate(s) in 10s; confirming
+2026-11-18 05:13:25,824 INFO campaign_run run b86ad4e52dc0 finished: ok, 0 confirmed of 0 candidate(s), 10s

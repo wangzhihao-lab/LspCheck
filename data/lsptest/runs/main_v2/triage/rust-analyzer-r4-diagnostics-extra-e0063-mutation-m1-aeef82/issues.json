@@ -1,0 +1,90 @@
+{
+ "queries": [
+  "diagnostics extra repo:rust-lang/rust-analyzer is:issue",
+  "diagnostics \"wrong edit\" repo:rust-lang/rust-analyzer is:issue"
+ ],
+ "matches": [
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 23193,
+   "title": "FP `expected &&&u32, found &&&&&&&&&&&&&&&&&&&&&&&&&i32`",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/23193",
+   "state": "open",
+   "created": "2026-08-19",
+   "comments": 5,
+   "query": "diagnostics extra repo:rust-lang/rust-analyzer is:issue"
+  },
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 13317,
+   "title": "Runnables: Extra Args sets Args instead of Extra Args",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/13317",
+   "state": "open",
+   "created": "2022-09-30",
+   "comments": 0,
+   "query": "diagnostics extra repo:rust-lang/rust-analyzer is:issue"
+  },
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 19491,
+   "title": "Too many arguments generates two diagnostics",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/19491",
+   "state": "open",
+   "created": "2025-04-01",
+   "comments": 13,
+   "query": "diagnostics extra repo:rust-lang/rust-analyzer is:issue"
+  },
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 22828,
+   "title": "panic: `can't project out of`",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/22828",
+   "state": "open",
+   "created": "2026-07-16",
+   "comments": 6,
+   "query": "diagnostics extra repo:rust-lang/rust-analyzer is:issue"
+  },
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 21662,
+   "title": "Documentation hint discrepency between autocomplete and inner function",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/21662",
+   "state": "open",
+   "created": "2026-02-17",
+   "comments": 2,
+   "query": "diagnostics extra repo:rust-lang/rust-analyzer is:issue"
+  },
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 23199,
+   "title": "Wrong range when request at edited std",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/23199",
+   "state": "open",
+   "created": "2026-08-20",
+   "comments": 7,
+   "query": "diagnostics \"wrong edit\" repo:rust-lang/rust-analyzer is:issue"
+  },
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 17289,
+   "title": "Invalid offset -32603 when editing an empty .rs file",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/17289",
+   "state": "open",
+   "created": "2024-05-24",
+   "comments": 68,
+   "query": "diagnostics \"wrong edit\" repo:rust-lang/rust-analyzer is:issue"
+  },
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 15873,
+   "title": "stack overflow in `ra_ap_hir_ty::mir::borrowck::ever_initialized_map::dfs` on the `idna` crate",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/15873",
+   "state": "closed",
+   "created": "2023-11-11",
+   "comments": 5,
+   "query": "diagnostics \"wrong edit\" repo:rust-lang/rust-analyzer is:issue"
+  }
+ ],
+ "notes": [],
+ "authenticated": true
+}

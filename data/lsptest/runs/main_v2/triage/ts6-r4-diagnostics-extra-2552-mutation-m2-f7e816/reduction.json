@@ -1,0 +1,42 @@
+{
+ "vid": "3db536a7b58d-v00",
+ "ops_before": 3,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 2,
+ "cache_hits": 0,
+ "reduce_seconds": 13.964,
+ "budget_exhausted": false,
+ "probe_log": [
+  [
+   2,
+   false
+  ],
+  [
+   2,
+   false
+  ]
+ ],
+ "logs": [
+  "ts6-6.0.3-trf7e816-r4-replay-baseline-20261119-031759-137dea.jsonl.gz",
+  "ts6-6.0.3-trf7e816-r4-replay-case-20261119-031733-ea76a3.jsonl.gz",
+  "ts6-6.0.3-trf7e816-r4-replay-control-20261119-031822-9068dd.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [],
+  "actual": [
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2552",
+    "typescript",
+    "Cannot find name 'lie'. Did you mean 'line'?"
+   ]
+  ]
+ },
+ "ops_after": 3,
+ "total_seconds": 281.9
+}

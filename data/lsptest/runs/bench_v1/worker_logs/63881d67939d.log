@@ -1,0 +1,15 @@
+2026-09-24 20:06:49,576 INFO campaign_run run 63881d67939d: r5_transforms on gopls v0.4.3, gopls-38424 seed 1 settled, targets ['main2.go']
+2026-09-24 20:08:02,311 INFO campaign_run run 63881d67939d: 4 candidate(s) in 73s; confirming
+2026-09-24 20:08:33,467 INFO flake replay 1/3 of gopls|r5_transforms|codeAction:gained: settled=True control_stable=True reproduced=True (31.2s)
+2026-09-24 20:09:04,464 INFO flake replay 2/3 of gopls|r5_transforms|codeAction:gained: settled=True control_stable=True reproduced=True (31.0s)
+2026-09-24 20:09:35,388 INFO flake replay 3/3 of gopls|r5_transforms|codeAction:gained: settled=True control_stable=True reproduced=True (30.9s)
+2026-09-24 20:10:06,108 INFO flake replay 1/3 of gopls|r5_transforms|definition:changed: settled=True control_stable=True reproduced=True (30.7s)
+2026-09-24 20:10:36,841 INFO flake replay 2/3 of gopls|r5_transforms|definition:changed: settled=True control_stable=True reproduced=True (30.7s)
+2026-09-24 20:11:07,802 INFO flake replay 3/3 of gopls|r5_transforms|definition:changed: settled=True control_stable=True reproduced=True (31.0s)
+2026-09-24 20:11:38,482 INFO flake replay 1/3 of gopls|r5_transforms|documentHighlight:changed: settled=True control_stable=True reproduced=True (30.7s)
+2026-09-24 20:12:09,236 INFO flake replay 2/3 of gopls|r5_transforms|documentHighlight:changed: settled=True control_stable=True reproduced=True (30.8s)
+2026-09-24 20:12:39,954 INFO flake replay 3/3 of gopls|r5_transforms|documentHighlight:changed: settled=True control_stable=True reproduced=True (30.7s)
+2026-09-24 20:13:10,746 INFO flake replay 1/3 of gopls|r5_transforms|hover:range: settled=True control_stable=True reproduced=True (30.8s)
+2026-09-24 20:13:41,459 INFO flake replay 2/3 of gopls|r5_transforms|hover:range: settled=True control_stable=True reproduced=True (30.7s)
+2026-09-24 20:14:12,182 INFO flake replay 3/3 of gopls|r5_transforms|hover:range: settled=True control_stable=True reproduced=True (30.7s)
+2026-09-24 20:14:12,188 INFO campaign_run run 63881d67939d finished: ok, 4 confirmed of 4 candidate(s), 443s

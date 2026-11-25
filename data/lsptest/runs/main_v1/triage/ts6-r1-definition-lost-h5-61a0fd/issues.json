@@ -1,0 +1,96 @@
+{
+ "queries": [
+  "\"rename file\" in:title repo:typescript-language-server/typescript-language-server is:issue",
+  "definition missing repo:typescript-language-server/typescript-language-server is:issue",
+  "definition \"rename file\" repo:typescript-language-server/typescript-language-server is:issue",
+  "definition stale repo:typescript-language-server/typescript-language-server is:issue",
+  "\"rename file\" in:title repo:microsoft/TypeScript is:issue",
+  "definition missing repo:microsoft/TypeScript is:issue",
+  "definition \"rename file\" repo:microsoft/TypeScript is:issue",
+  "definition stale repo:microsoft/TypeScript is:issue"
+ ],
+ "matches": [
+  {
+   "repo": "typescript-language-server/typescript-language-server",
+   "number": 878,
+   "title": "Support renaming files when renaming default exports",
+   "url": "https://github.com/typescript-language-server/typescript-language-server/issues/878",
+   "state": "open",
+   "created": "2024-02-27",
+   "comments": 1,
+   "query": "\"rename file\" in:title repo:typescript-language-server/typescript-language-server is:issue"
+  },
+  {
+   "repo": "typescript-language-server/typescript-language-server",
+   "number": 744,
+   "title": "EPERM: operation not permitted Cannot Move/Rename Files & Directories when Language Server is Running. ",
+   "url": "https://github.com/typescript-language-server/typescript-language-server/issues/744",
+   "state": "closed",
+   "created": "2023-07-31",
+   "comments": 1,
+   "query": "\"rename file\" in:title repo:typescript-language-server/typescript-language-server is:issue"
+  },
+  {
+   "repo": "typescript-language-server/typescript-language-server",
+   "number": 665,
+   "title": "Preview rename file",
+   "url": "https://github.com/typescript-language-server/typescript-language-server/issues/665",
+   "state": "closed",
+   "created": "2023-01-16",
+   "comments": 1,
+   "query": "\"rename file\" in:title repo:typescript-language-server/typescript-language-server is:issue"
+  },
+  {
+   "repo": "typescript-language-server/typescript-language-server",
+   "number": 430,
+   "title": "Rename also trigger on files in node_modules",
+   "url": "https://github.com/typescript-language-server/typescript-language-server/issues/430",
+   "state": "closed",
+   "created": "2022-04-07",
+   "comments": 0,
+   "query": "\"rename file\" in:title repo:typescript-language-server/typescript-language-server is:issue"
+  },
+  {
+   "repo": "typescript-language-server/typescript-language-server",
+   "number": 60,
+   "title": "Error: No Project. When starting LS from a bundled electron Theia application",
+   "url": "https://github.com/typescript-language-server/typescript-language-server/issues/60",
+   "state": "closed",
+   "created": "2018-09-02",
+   "comments": 9,
+   "query": "definition missing repo:typescript-language-server/typescript-language-server is:issue"
+  },
+  {
+   "repo": "typescript-language-server/typescript-language-server",
+   "number": 679,
+   "title": "Inconsistent completion suggestions on JSX attributes",
+   "url": "https://github.com/typescript-language-server/typescript-language-server/issues/679",
+   "state": "closed",
+   "created": "2023-02-07",
+   "comments": 22,
+   "query": "definition missing repo:typescript-language-server/typescript-language-server is:issue"
+  },
+  {
+   "repo": "typescript-language-server/typescript-language-server",
+   "number": 277,
+   "title": "Using typescript plugins through neovim-lsp",
+   "url": "https://github.com/typescript-language-server/typescript-language-server/issues/277",
+   "state": "closed",
+   "created": "2021-10-31",
+   "comments": 10,
+   "query": "definition missing repo:typescript-language-server/typescript-language-server is:issue"
+  },
+  {
+   "repo": "typescript-language-server/typescript-language-server",
+   "number": 264,
+   "title": "Inlay Hints return empty result",
+   "url": "https://github.com/typescript-language-server/typescript-language-server/issues/264",
+   "state": "closed",
+   "created": "2021-10-06",
+   "comments": 4,
+   "query": "definition missing repo:typescript-language-server/typescript-language-server is:issue"
+  }
+ ],
+ "notes": [],
+ "authenticated": true
+}

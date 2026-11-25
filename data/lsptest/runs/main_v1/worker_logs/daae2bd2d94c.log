@@ -1,0 +1,6 @@
+2026-09-24 00:30:28,468 INFO campaign_run run daae2bd2d94c: r4_edits on gopls v0.23.0, router-for-me/CLIProxyAPI@673131f57484 seed 2 settled, targets ['internal/api/handlers/management/quota.go', 'internal/runtime/executor/helps/claude_device_profile.go', 'sdk/cliproxy/auth/home_concurrency.go']
+2026-09-24 00:31:51,286 INFO campaign_run run daae2bd2d94c: 1 candidate(s) in 83s; confirming
+2026-09-24 00:32:21,453 INFO flake replay 1/3 of gopls|r4_edits|diagnostics:extra:UntypedNilUse: settled=True control_stable=True reproduced=True (30.2s)
+2026-09-24 00:32:51,943 INFO flake replay 2/3 of gopls|r4_edits|diagnostics:extra:UntypedNilUse: settled=True control_stable=True reproduced=True (30.5s)
+2026-09-24 00:33:29,025 INFO flake replay 3/3 of gopls|r4_edits|diagnostics:extra:UntypedNilUse: settled=True control_stable=True reproduced=True (37.1s)
+2026-09-24 00:33:29,040 INFO campaign_run run daae2bd2d94c finished: ok, 1 confirmed of 1 candidate(s), 181s

@@ -1,0 +1,42 @@
+{
+ "vid": "d76274109238-v01",
+ "ops_before": 3,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 2,
+ "cache_hits": 0,
+ "reduce_seconds": 10.67,
+ "budget_exhausted": false,
+ "probe_log": [
+  [
+   2,
+   false
+  ],
+  [
+   2,
+   false
+  ]
+ ],
+ "logs": [
+  "ts6-6.0.3-tr1879f3-r4-replay-baseline-20261119-025805-61a616.jsonl.gz",
+  "ts6-6.0.3-tr1879f3-r4-replay-case-20261119-025744-279b97.jsonl.gz",
+  "ts6-6.0.3-tr1879f3-r4-replay-control-20261119-025823-abbcd2.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [],
+  "actual": [
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2322",
+    "typescript",
+    "Type 'undefined' is not assignable to type 'Record<string, any>'."
+   ]
+  ]
+ },
+ "ops_after": 3,
+ "total_seconds": 218.9
+}

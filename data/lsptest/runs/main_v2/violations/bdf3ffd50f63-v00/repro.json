@@ -1,0 +1,635 @@
+{
+ "format": 1,
+ "campaign": "main_v2",
+ "vid": "bdf3ffd50f63-v00",
+ "run_id": "bdf3ffd50f63",
+ "oracle": "r1_history",
+ "server": {
+  "kind": "gopls",
+  "version": "v0.23.0"
+ },
+ "project": {
+  "name": "labstack/echo@3d084be90224",
+  "source": "corpus",
+  "ref": "temp/corpus/labstack__echo@3d084be90224",
+  "commit": "3d084be9022432c5a5257924c7d74bfc3444b456",
+  "language": "go"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "race0",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "echo_test.go",
+    "positions": [
+     [
+      519,
+      13
+     ],
+     [
+      519,
+      44
+     ],
+     [
+      625,
+      17
+     ],
+     [
+      683,
+      40
+     ],
+     [
+      794,
+      10
+     ],
+     [
+      1059,
+      20
+     ],
+     [
+      1088,
+      4
+     ],
+     [
+      1388,
+      23
+     ],
+     [
+      1549,
+      10
+     ],
+     [
+      1680,
+      53
+     ],
+     [
+      1723,
+      14
+     ],
+     [
+      1779,
+      15
+     ]
+    ],
+    "ends": [
+     [
+      519,
+      14
+     ],
+     [
+      519,
+      47
+     ],
+     [
+      625,
+      22
+     ],
+     [
+      683,
+      41
+     ],
+     [
+      794,
+      12
+     ],
+     [
+      1059,
+      24
+     ],
+     [
+      1088,
+      6
+     ],
+     [
+      1388,
+      25
+     ],
+     [
+      1549,
+      12
+     ],
+     [
+      1680,
+      55
+     ],
+     [
+      1723,
+      19
+     ],
+     [
+      1779,
+      16
+     ]
+    ],
+    "names": [
+     "tc",
+     "whenFS",
+     "givenPath",
+     "T",
+     "GET",
+     "Context",
+     "name",
+     "http",
+     "nil",
+     "nil",
+     "NewRouter",
+     "w"
+    ]
+   },
+   {
+    "path": "echotest/reader_test.go",
+    "positions": [
+     [
+      12,
+      12
+     ],
+     [
+      12,
+      32
+     ],
+     [
+      13,
+      13
+     ],
+     [
+      14,
+      10
+     ],
+     [
+      14,
+      21
+     ],
+     [
+      17,
+      20
+     ],
+     [
+      18,
+      3
+     ],
+     [
+      18,
+      19
+     ],
+     [
+      18,
+      51
+     ],
+     [
+      19,
+      4
+     ],
+     [
+      19,
+      10
+     ],
+     [
+      19,
+      31
+     ]
+    ],
+    "ends": [
+     [
+      12,
+      20
+     ],
+     [
+      12,
+      33
+     ],
+     [
+      13,
+      18
+     ],
+     [
+      14,
+      13
+     ],
+     [
+      14,
+      23
+     ],
+     [
+      17,
+      35
+     ],
+     [
+      18,
+      5
+     ],
+     [
+      18,
+      20
+     ],
+     [
+      18,
+      58
+     ],
+     [
+      19,
+      7
+     ],
+     [
+      19,
+      13
+     ],
+     [
+      19,
+      39
+     ]
+    ],
+    "names": [
+     "TestLoadBytesOK",
+     "T",
+     "LoadBytes",
+     "Equal",
+     "byte",
+     "TestLoadBytesOK_TrimNewlineEnd",
+     "data",
+     "t",
+     "TrimNewlineEnd",
+     "assert",
+     "Equal",
+     "testJSONContent"
+    ]
+   },
+   {
+    "path": "middleware/rate_limiter_test.go",
+    "positions": [
+     [
+      69,
+      12
+     ],
+     [
+      74,
+      97
+     ],
+     [
+      208,
+      6
+     ],
+     [
+      264,
+      12
+     ],
+     [
+      267,
+      4
+     ],
+     [
+      288,
+      24
+     ],
+     [
+      416,
+      21
+     ],
+     [
+      439,
+      27
+     ],
+     [
+      463,
+      5
+     ],
+     [
+      464,
+      8
+     ],
+     [
+      541,
+      7
+     ],
+     [
+      557,
+      23
+     ]
+    ],
+    "ends": [
+     [
+      69,
+      23
+     ],
+     [
+      74,
+      100
+     ],
+     [
+      208,
+      7
+     ],
+     [
+      264,
+      14
+     ],
+     [
+      267,
+      8
+     ],
+     [
+      288,
+      26
+     ],
+     [
+      416,
+      23
+     ],
+     [
+      439,
+      29
+     ],
+     [
+      463,
+      6
+     ],
+     [
+      464,
+      9
+     ],
+     [
+      541,
+      11
+     ],
+     [
+      557,
+      33
+     ]
+    ],
+    "names": [
+     "RateLimiterWithConfig",
+     "Burst",
+     "_",
+     "New",
+     "handler",
+     "nil",
+     "int",
+     "time",
+     "i",
+     "i",
+     "Parallel",
+     "requestsPerGoroutine"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "completion",
+  "path": "echo_test.go",
+  "line": 1549,
+  "character": 12,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "echo_test.go"
+  },
+  {
+   "kind": "open",
+   "path": "echotest/reader_test.go"
+  },
+  {
+   "kind": "open",
+   "path": "middleware/rate_limiter_test.go"
+  },
+  {
+   "kind": "change",
+   "path": "middleware/rate_limiter_test.go",
+   "start": [
+    244,
+    24
+   ],
+   "end": [
+    244,
+    31
+   ],
+   "text": "zz"
+  },
+  {
+   "kind": "change",
+   "path": "middleware/rate_limiter_test.go",
+   "start": [
+    244,
+    24
+   ],
+   "end": [
+    244,
+    26
+   ],
+   "text": "Context"
+  },
+  {
+   "kind": "request",
+   "path": "middleware/rate_limiter_test.go",
+   "start": [
+    69,
+    12
+   ],
+   "text": "definition"
+  },
+  {
+   "kind": "request",
+   "path": "echotest/reader_test.go",
+   "start": [
+    19,
+    10
+   ],
+   "text": "references"
+  },
+  {
+   "kind": "request",
+   "path": "echo_test.go",
+   "start": [
+    683,
+    41
+   ],
+   "text": "documentHighlight"
+  },
+  {
+   "kind": "request",
+   "path": "middleware/rate_limiter_test.go",
+   "start": [
+    573,
+    4
+   ],
+   "text": "hover"
+  },
+  {
+   "kind": "request",
+   "path": "echotest/reader_test.go",
+   "start": [
+    12,
+    12
+   ],
+   "text": "definition"
+  }
+ ],
+ "case": {
+  "chain_step": 0,
+  "families": [],
+  "family": "H8",
+  "history_index": 2,
+  "history_seed": 1003,
+  "mode": "fresh",
+  "note": "after middleware/rate_limiter_test.go: replace 'Context' by 'zz' on line 244 and its inverse, 5 requests in a shuffled order: definition@middleware/rate_limiter_test.go:69:12, references@echotest/reader_test.go:19:10, documentHighlight@echo_test.go:683:41, hover@middleware/rate_limiter_test.go:573:4, definition@echotest/reader_test.go:12:12",
+  "seed": 1,
+  "timing": "race0"
+ },
+ "shape": "completion:changed",
+ "signature": "gopls|r1_history|completion:changed",
+ "expected": [
+  "&runtime.PanicNilError{}",
+  "New().AcquireContext().File",
+  "New().AcquireContext().FileFS",
+  "New().AcquireContext().Inline",
+  "TestBindUnmarshalParamAnonymousFieldPtrNil",
+  "TestRouterFindNotPanicOrLoopsWhenContextSetParamValuesIsCalledWithLessValuesThanEchoMaxParam",
+  "TestRouterPanicWhenParamNoRootOnlyChildsFailsFind",
+  "net.InvalidAddrError()",
+  "nil"
+ ],
+ "actual": [
+  "&runtime.PanicNilError{}",
+  "TestBindUnmarshalParamAnonymousFieldPtrNil",
+  "TestRouterFindNotPanicOrLoopsWhenContextSetParamValuesIsCalledWithLessValuesThanEchoMaxParam",
+  "TestRouterPanicWhenParamNoRootOnlyChildsFailsFind",
+  "net.IPv4allrouter.UnmarshalText",
+  "net.IPv4allsys.UnmarshalText",
+  "net.IPv4bcast.UnmarshalText",
+  "net.InvalidAddrError()",
+  "nil"
+ ],
+ "reproduced": "0/3",
+ "note": "H8: after middleware/rate_limiter_test.go: replace 'Context' by 'zz' on line 244 and its inverse, 5 requests in a shuffled order: definition@middleware/rate_limiter_test.go:69:12, references@echotest/read; flake 0/3 [r1:SCr r2:SCr r3:SCr] in 51s",
+ "violation": {
+  "oracle": "r1_history",
+  "server": "gopls-v0.23.0",
+  "project": "labstack/echo@3d084be90224",
+  "key": {
+   "method": "completion",
+   "path": "echo_test.go",
+   "line": 1549,
+   "character": 12,
+   "extra": ""
+  },
+  "expected": [
+   "&runtime.PanicNilError{}",
+   "New().AcquireContext().File",
+   "New().AcquireContext().FileFS",
+   "New().AcquireContext().Inline",
+   "TestBindUnmarshalParamAnonymousFieldPtrNil",
+   "TestRouterFindNotPanicOrLoopsWhenContextSetParamValuesIsCalledWithLessValuesThanEchoMaxParam",
+   "TestRouterPanicWhenParamNoRootOnlyChildsFailsFind",
+   "net.InvalidAddrError()",
+   "nil"
+  ],
+  "actual": [
+   "&runtime.PanicNilError{}",
+   "TestBindUnmarshalParamAnonymousFieldPtrNil",
+   "TestRouterFindNotPanicOrLoopsWhenContextSetParamValuesIsCalledWithLessValuesThanEchoMaxParam",
+   "TestRouterPanicWhenParamNoRootOnlyChildsFailsFind",
+   "net.IPv4allrouter.UnmarshalText",
+   "net.IPv4allsys.UnmarshalText",
+   "net.IPv4bcast.UnmarshalText",
+   "net.InvalidAddrError()",
+   "nil"
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "echo_test.go"
+   },
+   {
+    "kind": "open",
+    "path": "echotest/reader_test.go"
+   },
+   {
+    "kind": "open",
+    "path": "middleware/rate_limiter_test.go"
+   },
+   {
+    "kind": "change",
+    "path": "middleware/rate_limiter_test.go",
+    "start": [
+     244,
+     24
+    ],
+    "end": [
+     244,
+     31
+    ],
+    "text": "zz"
+   },
+   {
+    "kind": "change",
+    "path": "middleware/rate_limiter_test.go",
+    "start": [
+     244,
+     24
+    ],
+    "end": [
+     244,
+     26
+    ],
+    "text": "Context"
+   },
+   {
+    "kind": "request",
+    "path": "middleware/rate_limiter_test.go",
+    "start": [
+     69,
+     12
+    ],
+    "text": "definition"
+   },
+   {
+    "kind": "request",
+    "path": "echotest/reader_test.go",
+    "start": [
+     19,
+     10
+    ],
+    "text": "references"
+   },
+   {
+    "kind": "request",
+    "path": "echo_test.go",
+    "start": [
+     683,
+     41
+    ],
+    "text": "documentHighlight"
+   },
+   {
+    "kind": "request",
+    "path": "middleware/rate_limiter_test.go",
+    "start": [
+     573,
+     4
+    ],
+    "text": "hover"
+   },
+   {
+    "kind": "request",
+    "path": "echotest/reader_test.go",
+    "start": [
+     12,
+     12
+    ],
+    "text": "definition"
+   }
+  ],
+  "detail": "{\"case\": {\"chain_step\": 0, \"families\": [], \"family\": \"H8\", \"history_index\": 2, \"history_seed\": 1003, \"mode\": \"fresh\", \"note\": \"after middleware/rate_limiter_test.go: replace 'Context' by 'zz' on line 244 and its inverse, 5 requests in a shuffled order: definition@middleware/rate_limiter_test.go:69:12, references@echotest/reader_test.go:19:10, documentHighlight@echo_test.go:683:41, hover@middleware/rate_limiter_test.go:573:4, definition@echotest/reader_test.go:12:12\", \"seed\": 1, \"timing\": \"race0\"}, \"note\": \"H8: after middleware/rate_limiter_test.go: replace 'Context' by 'zz' on line 244 and its inverse, 5 requests in a shuffled order: definition@middleware/rate_limiter_test.go:69:12, references@echotest/read; flake 0/3 [r1:SCr r2:SCr r3:SCr] in 51s\", \"shape\": \"completion:changed\"}",
+  "reproduced": "0/3",
+  "reduced_ops": [],
+  "signature": "gopls|r1_history|completion:changed",
+  "run_id": "bdf3ffd50f63"
+ },
+ "replay_logs": [],
+ "project_files": {},
+ "incomplete": false
+}

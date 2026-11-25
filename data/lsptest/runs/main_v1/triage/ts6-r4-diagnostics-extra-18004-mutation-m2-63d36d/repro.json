@@ -1,0 +1,236 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "f32275e691ea-v01",
+ "run_id": "f32275e691ea",
+ "oracle": "r4_edits",
+ "server": {
+  "kind": "ts6",
+  "version": "6.0.3"
+ },
+ "project": {
+  "name": "ChromeDevTools/chrome-devtools-mcp@2250cdcde4aa",
+  "source": "corpus",
+  "ref": "temp/corpus/ChromeDevTools__chrome-devtools-mcp@2250cdcde4aa",
+  "commit": "2250cdcde4aad79d54101c80346df4190e0c2da7",
+  "language": "typescript"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "scripts/eval_scenarios/network_test.ts",
+    "positions": [
+     [
+      23,
+      10
+     ]
+    ],
+    "ends": [],
+    "names": [
+     ""
+    ]
+   },
+   {
+    "path": "tests/e2e/telemetry.test.ts",
+    "positions": [],
+    "ends": [],
+    "names": []
+   },
+   {
+    "path": "tests/trace-processing/ChunkedTraceParser.test.ts",
+    "positions": [],
+    "ends": [],
+    "names": []
+   }
+  ]
+ },
+ "key": {
+  "method": "diagnostics",
+  "path": "scripts/eval_scenarios/network_test.ts",
+  "line": 23,
+  "character": 10,
+  "extra": "M2:quickfix-errors:Remove unused declaration for: 'pageId'"
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "scripts/eval_scenarios/network_test.ts"
+  },
+  {
+   "kind": "change",
+   "path": "scripts/eval_scenarios/network_test.ts",
+   "start": [
+    27,
+    33
+   ],
+   "end": [
+    27,
+    39
+   ],
+   "text": "pageeId"
+  },
+  {
+   "kind": "change",
+   "path": "scripts/eval_scenarios/network_test.ts",
+   "start": [
+    23,
+    4
+   ],
+   "end": [
+    24,
+    4
+   ]
+  }
+ ],
+ "case": {
+  "action_kind": "quickfix",
+  "base_errors": 0,
+  "check": "errors",
+  "diag": {
+   "code": 6133,
+   "message": "'pageId' is declared but its value is never read.",
+   "range": {
+    "end": {
+     "character": 16,
+     "line": 23
+    },
+    "start": {
+     "character": 10,
+     "line": 23
+    }
+   },
+   "severity": 4
+  },
+  "fix_introduced_errors": [],
+  "fix_ops": [
+   {
+    "end": [
+     24,
+     4
+    ],
+    "kind": "change",
+    "path": "scripts/eval_scenarios/network_test.ts",
+    "start": [
+     23,
+     4
+    ]
+   }
+  ],
+  "kind": "mutation",
+  "mutation": {
+   "end": [
+    27,
+    39
+   ],
+   "id": "M2",
+   "offsets": [
+    739,
+    745
+   ],
+   "sha": "ce2f264131f2a261",
+   "start": [
+    27,
+    33
+   ],
+   "text": "pageeId",
+   "what": "misspell 'pageId' as 'pageeId' (duplicate a middle character)"
+  },
+  "n_fix_ops": 1,
+  "path": "scripts/eval_scenarios/network_test.ts",
+  "post_errors": 1,
+  "title": "Remove unused declaration for: 'pageId'",
+  "via": "edit"
+ },
+ "shape": "diagnostics:extra:18004",
+ "signature": "ts6|r4_edits|diagnostics:extra:18004",
+ "expected": [],
+ "actual": [
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "18004",
+   "typescript",
+   "No value exists in scope for the shorthand property 'pageeId'. Either declare one or provide an initializer."
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "quick fix \"Remove unused declaration for: 'pageId'\" for 6133 at scripts/eval_scenarios/network_test.ts:24:11 raises the error count in the edited files from 0 to 1 (seeded by M2: misspell 'pageId' as 'pageeId' (duplicate a middle character); errors before the mutation 0, after the fix 1); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 368s",
+ "violation": {
+  "oracle": "r4_edits",
+  "server": "ts6-6.0.3",
+  "project": "ChromeDevTools/chrome-devtools-mcp@2250cdcde4aa",
+  "key": {
+   "method": "diagnostics",
+   "path": "scripts/eval_scenarios/network_test.ts",
+   "line": 23,
+   "character": 10,
+   "extra": "M2:quickfix-errors:Remove unused declaration for: 'pageId'"
+  },
+  "expected": [],
+  "actual": [
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "18004",
+    "typescript",
+    "No value exists in scope for the shorthand property 'pageeId'. Either declare one or provide an initializer."
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "scripts/eval_scenarios/network_test.ts"
+   },
+   {
+    "kind": "change",
+    "path": "scripts/eval_scenarios/network_test.ts",
+    "start": [
+     27,
+     33
+    ],
+    "end": [
+     27,
+     39
+    ],
+    "text": "pageeId"
+   },
+   {
+    "kind": "change",
+    "path": "scripts/eval_scenarios/network_test.ts",
+    "start": [
+     23,
+     4
+    ],
+    "end": [
+     24,
+     4
+    ]
+   }
+  ],
+  "detail": "{\"case\": {\"action_kind\": \"quickfix\", \"base_errors\": 0, \"check\": \"errors\", \"diag\": {\"code\": 6133, \"message\": \"'pageId' is declared but its value is never read.\", \"range\": {\"end\": {\"character\": 16, \"line\": 23}, \"start\": {\"character\": 10, \"line\": 23}}, \"severity\": 4}, \"fix_introduced_errors\": [], \"fix_ops\": [{\"end\": [24, 4], \"kind\": \"change\", \"path\": \"scripts/eval_scenarios/network_test.ts\", \"start\": [23, 4]}], \"kind\": \"mutation\", \"mutation\": {\"end\": [27, 39], \"id\": \"M2\", \"offsets\": [739, 745], \"sha\": \"ce2f264131f2a261\", \"start\": [27, 33], \"text\": \"pageeId\", \"what\": \"misspell 'pageId' as 'pageeId' (duplicate a middle character)\"}, \"n_fix_ops\": 1, \"path\": \"scripts/eval_scenarios/network_test.ts\", \"post_errors\": 1, \"title\": \"Remove unused declaration for: 'pageId'\", \"via\": \"edit\"}, \"note\": \"quick fix \\\"Remove unused declaration for: 'pageId'\\\" for 6133 at scripts/eval_scenarios/network_test.ts:24:11 raises the error count in the edited files from 0 to 1 (seeded by M2: misspell 'pageId' as 'pageeId' (duplicate a middle character); errors before the mutation 0, after the fix 1); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 368s\", \"shape\": \"diagnostics:extra:18004\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "ts6|r4_edits|diagnostics:extra:18004",
+  "run_id": "f32275e691ea"
+ },
+ "replay_logs": [
+  "logs/ts6-6.0.3-tr63d36d-r4-replay-baseline-20260925-185826-1da13b.jsonl.gz",
+  "logs/ts6-6.0.3-tr63d36d-r4-replay-case-20260925-185809-41c680.jsonl.gz",
+  "logs/ts6-6.0.3-tr63d36d-r4-replay-control-20260925-185841-1f163b.jsonl.gz"
+ ],
+ "project_files": {},
+ "group": "ts6-r4-diagnostics-extra-18004-mutation-m2-63d36d",
+ "reduced": true
+}

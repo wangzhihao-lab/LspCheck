@@ -1,0 +1,3 @@
+2026-09-25 05:26:15,257 INFO campaign_run run 0bf6aa7d0eac: r4_edits on tsserver 5.5.2+tsls4.3.3, tsserver-57497 seed 2 settled, targets ['index.ts']
+2026-09-25 05:26:46,416 INFO campaign_run run 0bf6aa7d0eac: 0 candidate(s) in 31s; confirming
+2026-09-25 05:26:46,417 INFO campaign_run run 0bf6aa7d0eac finished: ok, 0 confirmed of 0 candidate(s), 31s

@@ -1,0 +1,3 @@
+2026-09-23 16:51:07,292 INFO campaign_run run 757a67b23420: r0_crash on ts6 6.0.3, Fission-AI/OpenSpec@f179ed4e4056 seed 1 settled, targets ['src/core/shared/skill-generation.ts', 'src/telemetry/index.ts', 'test/commands/store-git.test.ts']
+2026-09-23 16:51:31,486 INFO campaign_run run 757a67b23420: 0 candidate(s) in 24s; confirming
+2026-09-23 16:51:31,487 INFO campaign_run run 757a67b23420 finished: ok, 0 confirmed of 0 candidate(s), 24s

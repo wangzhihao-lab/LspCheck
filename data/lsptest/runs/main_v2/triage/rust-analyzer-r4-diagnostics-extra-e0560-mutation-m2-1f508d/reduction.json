@@ -1,0 +1,42 @@
+{
+ "vid": "0082cb0ebd81-v01",
+ "ops_before": 3,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 2,
+ "cache_hits": 0,
+ "reduce_seconds": 119.018,
+ "budget_exhausted": false,
+ "probe_log": [
+  [
+   2,
+   false
+  ],
+  [
+   2,
+   false
+  ]
+ ],
+ "logs": [
+  "rust-analyzer-2026-09-21-tr1f508d-r4-replay-baseline-20261119-002721-05d1ea.jsonl.gz",
+  "rust-analyzer-2026-09-21-tr1f508d-r4-replay-case-20261119-002525-0f5e00.jsonl.gz",
+  "rust-analyzer-2026-09-21-tr1f508d-r4-replay-control-20261119-002902-5a0608.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [],
+  "actual": [
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "E0560",
+    "rust-analyzer",
+    "no such field"
+   ]
+  ]
+ },
+ "ops_after": 3,
+ "total_seconds": 1498.0
+}

@@ -1,0 +1,591 @@
+{
+ "format": 1,
+ "campaign": "bench_v1",
+ "vid": "2f47e1684987-v01",
+ "run_id": "2f47e1684987",
+ "oracle": "r1_history",
+ "server": {
+  "kind": "jdtls",
+  "version": "1.36.0"
+ },
+ "project": {
+  "name": "jdtls-3155",
+  "source": "dir",
+  "ref": "data/lsp_bench/cases/jdtls-3155/project",
+  "commit": "",
+  "language": "java"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 600.0,
+  "request_timeout_s": 60.0,
+  "extra_settings": {
+   "java": {
+    "autobuild": {
+     "enabled": false
+    }
+   }
+  },
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "src/main/java/java/Foo.java",
+    "positions": [
+     [
+      0,
+      10
+     ],
+     [
+      2,
+      8
+     ],
+     [
+      2,
+      14
+     ],
+     [
+      2,
+      21
+     ],
+     [
+      2,
+      28
+     ],
+     [
+      2,
+      37
+     ],
+     [
+      7,
+      14
+     ],
+     [
+      9,
+      22
+     ],
+     [
+      9,
+      28
+     ],
+     [
+      9,
+      36
+     ],
+     [
+      10,
+      5
+     ],
+     [
+      10,
+      10
+     ],
+     [
+      10,
+      15
+     ],
+     [
+      10,
+      25
+     ],
+     [
+      10,
+      37
+     ],
+     [
+      10,
+      65
+     ],
+     [
+      13,
+      20
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      12
+     ],
+     [
+      2,
+      10
+     ],
+     [
+      2,
+      17
+     ],
+     [
+      2,
+      25
+     ],
+     [
+      2,
+      31
+     ],
+     [
+      2,
+      43
+     ],
+     [
+      7,
+      16
+     ],
+     [
+      9,
+      24
+     ],
+     [
+      9,
+      31
+     ],
+     [
+      9,
+      38
+     ],
+     [
+      10,
+      8
+     ],
+     [
+      10,
+      12
+     ],
+     [
+      10,
+      18
+     ],
+     [
+      10,
+      31
+     ],
+     [
+      10,
+      42
+     ],
+     [
+      10,
+      67
+     ],
+     [
+      13,
+      27
+     ]
+    ],
+    "names": [
+     "java",
+     "org",
+     "apache",
+     "commons",
+     "lang3",
+     "StringUtils",
+     "Foo",
+     "main",
+     "String",
+     "args",
+     "System",
+     "out",
+     "print",
+     "StringUtils",
+     "capitalize",
+     "Foo",
+     "linkedFromFoo2"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "codeAction",
+  "path": "src/main/java/java/Foo.java",
+  "line": 2,
+  "character": 8,
+  "extra": "pos"
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "src/main/java/java/Foo.java"
+  },
+  {
+   "kind": "fs_rename",
+   "path": "src/main/java/java/Foo.java",
+   "new_path": "src/main/java/java/Foo_rt.java"
+  },
+  {
+   "kind": "fs_rename",
+   "path": "src/main/java/java/Foo_rt.java",
+   "new_path": "src/main/java/java/Foo.java"
+  },
+  {
+   "kind": "change",
+   "path": "src/main/java/java/Foo.java",
+   "start": [
+    2,
+    32
+   ],
+   "end": [
+    2,
+    44
+   ]
+  },
+  {
+   "kind": "close",
+   "path": "src/main/java/java/Foo.java"
+  },
+  {
+   "kind": "open",
+   "path": "src/main/java/java/Foo.java"
+  },
+  {
+   "kind": "change",
+   "path": "src/main/java/java/Foo.java",
+   "start": [
+    9,
+    25
+   ],
+   "end": [
+    9,
+    31
+   ],
+   "text": "zz"
+  },
+  {
+   "kind": "change",
+   "path": "src/main/java/java/Foo.java",
+   "start": [
+    9,
+    25
+   ],
+   "end": [
+    9,
+    27
+   ],
+   "text": "String"
+  },
+  {
+   "kind": "request",
+   "path": "src/main/java/java/Foo.java",
+   "start": [
+    10,
+    67
+   ],
+   "text": "signatureHelp"
+  },
+  {
+   "kind": "request",
+   "path": "src/main/java/java/Foo.java",
+   "start": [
+    10,
+    42
+   ],
+   "text": "references"
+  },
+  {
+   "kind": "request",
+   "path": "src/main/java/java/Foo.java",
+   "start": [
+    2,
+    21
+   ],
+   "text": "references"
+  },
+  {
+   "kind": "fs_write",
+   "path": "pom.xml",
+   "text": "<project xmlns=\"http://maven.apache.org/POM/4.0.0\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n\txsi:schemaLocation=\"http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd\">\n\t<modelVersion>4.0.0</modelVersion>\n\t<groupId>foo.bar</groupId>\n\t<artifactId>salut</artifactId>\n\t<version>0.0.1-SNAPSHOT</version>\n\t<version>0.0.1-SNAPSHOT</version>\n\t<build>\n\t\t<plugins>\n\t\t\t<plugin>\n\t\t\t\t<artifactId>maven-compiler-plugin</artifactId>\n\t\t\t\t<version>3.5.1</version>\n\t\t\t\t<configuration>\n\t\t\t\t\t<source>1.7</source>\n\t\t\t\t\t<target>1.7</target>\n\t\t\t\t</configuration>\n\t\t\t</plugin>\n\t\t</plugins>\n\t</build>\n\t<dependencies>\n\t\t<dependency>\n\t\t\t<groupId>org.apache.commons</groupId>\n\t\t\t<artifactId>commons-lang3</artifactId>\n\t\t\t<version>3.5</version>\n\t\t</dependency>\n\t</dependencies>\n</project>\n"
+  },
+  {
+   "kind": "change",
+   "path": "src/main/java/java/Foo.java",
+   "start": [
+    13,
+    8
+   ],
+   "end": [
+    13,
+    15
+   ]
+  },
+  {
+   "kind": "save",
+   "path": "src/main/java/java/Foo.java"
+  },
+  {
+   "kind": "change",
+   "path": "src/main/java/java/Foo.java",
+   "start": [
+    13,
+    8
+   ],
+   "end": [
+    13,
+    8
+   ],
+   "text": "void li"
+  },
+  {
+   "kind": "save",
+   "path": "src/main/java/java/Foo.java"
+  },
+  {
+   "kind": "fs_write",
+   "path": "pom.xml",
+   "text": "<project xmlns=\"http://maven.apache.org/POM/4.0.0\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n\txsi:schemaLocation=\"http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd\">\n\t<modelVersion>4.0.0</modelVersion>\n\t<groupId>foo.bar</groupId>\n\t<artifactId>salut</artifactId>\n\t<version>0.0.1-SNAPSHOT</version>\n\t<build>\n\t\t<plugins>\n\t\t\t<plugin>\n\t\t\t\t<artifactId>maven-compiler-plugin</artifactId>\n\t\t\t\t<version>3.5.1</version>\n\t\t\t\t<configuration>\n\t\t\t\t\t<source>1.7</source>\n\t\t\t\t\t<target>1.7</target>\n\t\t\t\t</configuration>\n\t\t\t</plugin>\n\t\t</plugins>\n\t</build>\n\t<dependencies>\n\t\t<dependency>\n\t\t\t<groupId>org.apache.commons</groupId>\n\t\t\t<artifactId>commons-lang3</artifactId>\n\t\t\t<version>3.5</version>\n\t\t</dependency>\n\t</dependencies>\n</project>\n"
+  }
+ ],
+ "case": {
+  "chain_step": 4,
+  "families": [
+   "H5",
+   "H3",
+   "H8",
+   "H9"
+  ],
+  "family": "H9",
+  "history_index": 3,
+  "history_seed": 1004,
+  "mode": "chain",
+  "note": "window: pom.xml: line 5 duplicated; inside: src/main/java/java/Foo.java: delete 'void li' on line 13, then its inverse; then W reverted",
+  "seed": 1,
+  "timing": "settled"
+ },
+ "shape": "codeAction:extra",
+ "signature": "jdtls|r1_history|codeAction:extra",
+ "expected": [
+  [
+   "Change modifiers to final where possible",
+   "source.generate.finalModifiers"
+  ],
+  [
+   "Generate toString()",
+   "source.generate.toString"
+  ],
+  [
+   "Organize imports",
+   "quickassist"
+  ],
+  [
+   "Organize imports",
+   "source.organizeImports"
+  ]
+ ],
+ "actual": [
+  [
+   "Change modifiers to final where possible",
+   "source.generate.finalModifiers"
+  ],
+  [
+   "Generate toString()",
+   "source.generate.toString"
+  ],
+  [
+   "Organize imports",
+   "quickassist"
+  ],
+  [
+   "Organize imports",
+   "source.organizeImports"
+  ],
+  [
+   "Remove unused import",
+   "quickfix"
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "H9: window: pom.xml: line 5 duplicated; inside: src/main/java/java/Foo.java: delete 'void li' on line 13, then its inverse; then W reverted; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 500s",
+ "violation": {
+  "oracle": "r1_history",
+  "server": "jdtls-1.36.0",
+  "project": "jdtls-3155",
+  "key": {
+   "method": "codeAction",
+   "path": "src/main/java/java/Foo.java",
+   "line": 2,
+   "character": 8,
+   "extra": "pos"
+  },
+  "expected": [
+   [
+    "Change modifiers to final where possible",
+    "source.generate.finalModifiers"
+   ],
+   [
+    "Generate toString()",
+    "source.generate.toString"
+   ],
+   [
+    "Organize imports",
+    "quickassist"
+   ],
+   [
+    "Organize imports",
+    "source.organizeImports"
+   ]
+  ],
+  "actual": [
+   [
+    "Change modifiers to final where possible",
+    "source.generate.finalModifiers"
+   ],
+   [
+    "Generate toString()",
+    "source.generate.toString"
+   ],
+   [
+    "Organize imports",
+    "quickassist"
+   ],
+   [
+    "Organize imports",
+    "source.organizeImports"
+   ],
+   [
+    "Remove unused import",
+    "quickfix"
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "src/main/java/java/Foo.java"
+   },
+   {
+    "kind": "fs_rename",
+    "path": "src/main/java/java/Foo.java",
+    "new_path": "src/main/java/java/Foo_rt.java"
+   },
+   {
+    "kind": "fs_rename",
+    "path": "src/main/java/java/Foo_rt.java",
+    "new_path": "src/main/java/java/Foo.java"
+   },
+   {
+    "kind": "change",
+    "path": "src/main/java/java/Foo.java",
+    "start": [
+     2,
+     32
+    ],
+    "end": [
+     2,
+     44
+    ]
+   },
+   {
+    "kind": "close",
+    "path": "src/main/java/java/Foo.java"
+   },
+   {
+    "kind": "open",
+    "path": "src/main/java/java/Foo.java"
+   },
+   {
+    "kind": "change",
+    "path": "src/main/java/java/Foo.java",
+    "start": [
+     9,
+     25
+    ],
+    "end": [
+     9,
+     31
+    ],
+    "text": "zz"
+   },
+   {
+    "kind": "change",
+    "path": "src/main/java/java/Foo.java",
+    "start": [
+     9,
+     25
+    ],
+    "end": [
+     9,
+     27
+    ],
+    "text": "String"
+   },
+   {
+    "kind": "request",
+    "path": "src/main/java/java/Foo.java",
+    "start": [
+     10,
+     67
+    ],
+    "text": "signatureHelp"
+   },
+   {
+    "kind": "request",
+    "path": "src/main/java/java/Foo.java",
+    "start": [
+     10,
+     42
+    ],
+    "text": "references"
+   },
+   {
+    "kind": "request",
+    "path": "src/main/java/java/Foo.java",
+    "start": [
+     2,
+     21
+    ],
+    "text": "references"
+   },
+   {
+    "kind": "fs_write",
+    "path": "pom.xml",
+    "text": "<project xmlns=\"http://maven.apache.org/POM/4.0.0\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n\txsi:schemaLocation=\"http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd\">\n\t<modelVersion>4.0.0</modelVersion>\n\t<groupId>foo.bar</groupId>\n\t<artifactId>salut</artifactId>\n\t<version>0.0.1-SNAPSHOT</version>\n\t<version>0.0.1-SNAPSHOT</version>\n\t<build>\n\t\t<plugins>\n\t\t\t<plugin>\n\t\t\t\t<artifactId>maven-compiler-plugin</artifactId>\n\t\t\t\t<version>3.5.1</version>\n\t\t\t\t<configuration>\n\t\t\t\t\t<source>1.7</source>\n\t\t\t\t\t<target>1.7</target>\n\t\t\t\t</configuration>\n\t\t\t</plugin>\n\t\t</plugins>\n\t</build>\n\t<dependencies>\n\t\t<dependency>\n\t\t\t<groupId>org.apache.commons</groupId>\n\t\t\t<artifactId>commons-lang3</artifactId>\n\t\t\t<version>3.5</version>\n\t\t</dependency>\n\t</dependencies>\n</project>\n"
+   },
+   {
+    "kind": "change",
+    "path": "src/main/java/java/Foo.java",
+    "start": [
+     13,
+     8
+    ],
+    "end": [
+     13,
+     15
+    ]
+   },
+   {
+    "kind": "save",
+    "path": "src/main/java/java/Foo.java"
+   },
+   {
+    "kind": "change",
+    "path": "src/main/java/java/Foo.java",
+    "start": [
+     13,
+     8
+    ],
+    "end": [
+     13,
+     8
+    ],
+    "text": "void li"
+   },
+   {
+    "kind": "save",
+    "path": "src/main/java/java/Foo.java"
+   },
+   {
+    "kind": "fs_write",
+    "path": "pom.xml",
+    "text": "<project xmlns=\"http://maven.apache.org/POM/4.0.0\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n\txsi:schemaLocation=\"http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd\">\n\t<modelVersion>4.0.0</modelVersion>\n\t<groupId>foo.bar</groupId>\n\t<artifactId>salut</artifactId>\n\t<version>0.0.1-SNAPSHOT</version>\n\t<build>\n\t\t<plugins>\n\t\t\t<plugin>\n\t\t\t\t<artifactId>maven-compiler-plugin</artifactId>\n\t\t\t\t<version>3.5.1</version>\n\t\t\t\t<configuration>\n\t\t\t\t\t<source>1.7</source>\n\t\t\t\t\t<target>1.7</target>\n\t\t\t\t</configuration>\n\t\t\t</plugin>\n\t\t</plugins>\n\t</build>\n\t<dependencies>\n\t\t<dependency>\n\t\t\t<groupId>org.apache.commons</groupId>\n\t\t\t<artifactId>commons-lang3</artifactId>\n\t\t\t<version>3.5</version>\n\t\t</dependency>\n\t</dependencies>\n</project>\n"
+   }
+  ],
+  "detail": "{\"case\": {\"chain_step\": 4, \"families\": [\"H5\", \"H3\", \"H8\", \"H9\"], \"family\": \"H9\", \"history_index\": 3, \"history_seed\": 1004, \"mode\": \"chain\", \"note\": \"window: pom.xml: line 5 duplicated; inside: src/main/java/java/Foo.java: delete 'void li' on line 13, then its inverse; then W reverted\", \"seed\": 1, \"timing\": \"settled\"}, \"note\": \"H9: window: pom.xml: line 5 duplicated; inside: src/main/java/java/Foo.java: delete 'void li' on line 13, then its inverse; then W reverted; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 500s\", \"shape\": \"codeAction:extra\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "jdtls|r1_history|codeAction:extra",
+  "run_id": "2f47e1684987"
+ },
+ "replay_logs": [
+  "logs/jdtls-1.36.0-2f47e1684987-replay-baseline-20260924-143251-4481a7.jsonl.gz",
+  "logs/jdtls-1.36.0-2f47e1684987-replay-control-20260924-143251-58e3ca.jsonl.gz",
+  "logs/jdtls-1.36.0-2f47e1684987-replay-history-20260924-143338-162873.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

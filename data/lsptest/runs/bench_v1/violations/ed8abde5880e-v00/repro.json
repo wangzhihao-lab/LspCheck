@@ -1,0 +1,342 @@
+{
+ "format": 1,
+ "campaign": "bench_v1",
+ "vid": "ed8abde5880e-v00",
+ "run_id": "ed8abde5880e",
+ "oracle": "r1_history",
+ "server": {
+  "kind": "gopls",
+  "version": "v0.18.1"
+ },
+ "project": {
+  "name": "gopls-73661",
+  "source": "dir",
+  "ref": "data/lsp_bench/cases/gopls-73661/project",
+  "commit": "",
+  "language": "go"
+ },
+ "context": {
+  "seed": 3,
+  "timing": "settled",
+  "settle_timeout_s": 180.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "main.go",
+    "positions": [
+     [
+      0,
+      10
+     ],
+     [
+      4,
+      6
+     ],
+     [
+      4,
+      14
+     ],
+     [
+      5,
+      6
+     ],
+     [
+      5,
+      14
+     ],
+     [
+      7,
+      4
+     ],
+     [
+      7,
+      7
+     ],
+     [
+      7,
+      13
+     ],
+     [
+      9,
+      7
+     ],
+     [
+      10,
+      5
+     ],
+     [
+      10,
+      8
+     ],
+     [
+      10,
+      16
+     ],
+     [
+      10,
+      25
+     ],
+     [
+      10,
+      32
+     ],
+     [
+      12,
+      2
+     ],
+     [
+      12,
+      8
+     ],
+     [
+      12,
+      13
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      12
+     ],
+     [
+      4,
+      8
+     ],
+     [
+      4,
+      17
+     ],
+     [
+      5,
+      8
+     ],
+     [
+      5,
+      17
+     ],
+     [
+      7,
+      5
+     ],
+     [
+      7,
+      9
+     ],
+     [
+      7,
+      15
+     ],
+     [
+      9,
+      9
+     ],
+     [
+      10,
+      6
+     ],
+     [
+      10,
+      10
+     ],
+     [
+      10,
+      19
+     ],
+     [
+      10,
+      28
+     ],
+     [
+      10,
+      33
+     ],
+     [
+      12,
+      4
+     ],
+     [
+      12,
+      12
+     ],
+     [
+      12,
+      14
+     ]
+    ],
+    "names": [
+     "main",
+     "ssa",
+     "string",
+     "ssb",
+     "string",
+     "a",
+     "ssa",
+     "ssa",
+     "main",
+     "b",
+     "ssb",
+     "append",
+     "string",
+     "a",
+     "fmt",
+     "Println",
+     "b"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "completion",
+  "path": "main.go",
+  "line": 4,
+  "character": 17,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "main.go"
+  },
+  {
+   "kind": "fs_write",
+   "path": "go.mod",
+   "text": "module example.com/main\nmodule example.com/main\n\ngo 1.24\n"
+  },
+  {
+   "kind": "change",
+   "path": "main.go",
+   "start": [
+    5,
+    16
+   ],
+   "end": [
+    5,
+    17
+   ]
+  },
+  {
+   "kind": "save",
+   "path": "main.go"
+  },
+  {
+   "kind": "change",
+   "path": "main.go",
+   "start": [
+    5,
+    16
+   ],
+   "end": [
+    5,
+    16
+   ],
+   "text": "g"
+  },
+  {
+   "kind": "save",
+   "path": "main.go"
+  },
+  {
+   "kind": "fs_write",
+   "path": "go.mod",
+   "text": "module example.com/main\n\ngo 1.24\n"
+  }
+ ],
+ "case": {
+  "chain_step": 0,
+  "families": [],
+  "family": "H9",
+  "history_index": 9,
+  "history_seed": 3010,
+  "mode": "fresh",
+  "note": "window: go.mod: line 0 duplicated; inside: main.go: delete 'g' on line 5, then its inverse; then W reverted",
+  "seed": 3,
+  "timing": "settled"
+ },
+ "shape": "completion:lost",
+ "signature": "gopls|r1_history|completion:lost",
+ "expected": [
+  "fmt.GoStringer",
+  "fmt.Stringer",
+  "string"
+ ],
+ "actual": [],
+ "reproduced": "2/3",
+ "note": "H9: window: go.mod: line 0 duplicated; inside: main.go: delete 'g' on line 5, then its inverse; then W reverted; flake 2/3 [r1:SCR r2:SCR r3:Scr] in 228s",
+ "violation": {
+  "oracle": "r1_history",
+  "server": "gopls-v0.18.1",
+  "project": "gopls-73661",
+  "key": {
+   "method": "completion",
+   "path": "main.go",
+   "line": 4,
+   "character": 17,
+   "extra": ""
+  },
+  "expected": [
+   "fmt.GoStringer",
+   "fmt.Stringer",
+   "string"
+  ],
+  "actual": [],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "main.go"
+   },
+   {
+    "kind": "fs_write",
+    "path": "go.mod",
+    "text": "module example.com/main\nmodule example.com/main\n\ngo 1.24\n"
+   },
+   {
+    "kind": "change",
+    "path": "main.go",
+    "start": [
+     5,
+     16
+    ],
+    "end": [
+     5,
+     17
+    ]
+   },
+   {
+    "kind": "save",
+    "path": "main.go"
+   },
+   {
+    "kind": "change",
+    "path": "main.go",
+    "start": [
+     5,
+     16
+    ],
+    "end": [
+     5,
+     16
+    ],
+    "text": "g"
+   },
+   {
+    "kind": "save",
+    "path": "main.go"
+   },
+   {
+    "kind": "fs_write",
+    "path": "go.mod",
+    "text": "module example.com/main\n\ngo 1.24\n"
+   }
+  ],
+  "detail": "{\"case\": {\"chain_step\": 0, \"families\": [], \"family\": \"H9\", \"history_index\": 9, \"history_seed\": 3010, \"mode\": \"fresh\", \"note\": \"window: go.mod: line 0 duplicated; inside: main.go: delete 'g' on line 5, then its inverse; then W reverted\", \"seed\": 3, \"timing\": \"settled\"}, \"note\": \"H9: window: go.mod: line 0 duplicated; inside: main.go: delete 'g' on line 5, then its inverse; then W reverted; flake 2/3 [r1:SCR r2:SCR r3:Scr] in 228s\", \"shape\": \"completion:lost\"}",
+  "reproduced": "2/3",
+  "reduced_ops": [],
+  "signature": "gopls|r1_history|completion:lost",
+  "run_id": "ed8abde5880e"
+ },
+ "replay_logs": [],
+ "project_files": {},
+ "incomplete": false
+}

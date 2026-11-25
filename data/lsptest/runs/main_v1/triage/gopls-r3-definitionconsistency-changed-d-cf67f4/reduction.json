@@ -1,0 +1,37 @@
+{
+ "vid": "5915462982a7-v00",
+ "ops_before": 0,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 0,
+ "cache_hits": 0,
+ "reduce_seconds": 0.0,
+ "budget_exhausted": false,
+ "probe_log": [],
+ "logs": [
+  "gopls-v0.23.0-trcf67f4-r3-replay-baseline-20260925-155527-0429e4.jsonl.gz",
+  "gopls-v0.23.0-trcf67f4-r3-replay-control-20260925-155535-4e75ed.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [
+   [
+    "binding/toml_test.go",
+    4,
+    8,
+    4,
+    15
+   ]
+  ],
+  "actual": [
+   [
+    "binding/binding_test.go",
+    4,
+    8,
+    4,
+    15
+   ]
+  ]
+ },
+ "ops_after": 0,
+ "total_seconds": 63.4
+}

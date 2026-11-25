@@ -1,0 +1,279 @@
+{
+ "format": 1,
+ "campaign": "main_v2",
+ "vid": "95c1b8d86026-v00",
+ "run_id": "95c1b8d86026",
+ "oracle": "r1_history",
+ "server": {
+  "kind": "pyright",
+  "version": "1.1.414"
+ },
+ "project": {
+  "name": "soimort/you-get@049548f3f3f3",
+  "source": "corpus",
+  "ref": "temp/corpus/soimort__you-get@049548f3f3f3",
+  "commit": "049548f3f3f35e67ba8d3181c71fdc71d11cf260",
+  "language": "python"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "src/you_get/extractors/ifeng.py",
+    "positions": [
+     [
+      11,
+      28
+     ]
+    ],
+    "ends": [],
+    "names": [
+     ""
+    ]
+   },
+   {
+    "path": "src/you_get/extractors/pixnet.py",
+    "positions": [],
+    "ends": [],
+    "names": []
+   },
+   {
+    "path": "src/you_get/extractors/suntv.py",
+    "positions": [],
+    "ends": [],
+    "names": []
+   }
+  ]
+ },
+ "key": {
+  "method": "hover",
+  "path": "src/you_get/extractors/ifeng.py",
+  "line": 11,
+  "character": 28,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "src/you_get/extractors/pixnet.py"
+  },
+  {
+   "kind": "open",
+   "path": "src/you_get/extractors/suntv.py"
+  },
+  {
+   "kind": "change",
+   "path": "src/you_get/extractors/suntv.py",
+   "start": [
+    29,
+    0
+   ],
+   "end": [
+    29,
+    0
+   ],
+   "text": "        size = 0\n"
+  },
+  {
+   "kind": "request",
+   "path": "src/you_get/extractors/pixnet.py",
+   "start": [
+    49,
+    65
+   ],
+   "text": "completion"
+  }
+ ],
+ "case": {
+  "chain_step": 0,
+  "families": [],
+  "family": "H8",
+  "history_index": 4,
+  "history_seed": 2005,
+  "mode": "fresh",
+  "note": "after src/you_get/extractors/suntv.py: delete lines 29..29 and its inverse, 8 requests in a shuffled order: completion@src/you_get/extractors/ifeng.py:30:10, completion@src/you_get/extractors/pixnet.py:49:65, documentHighlight@src/you_get/extractors/suntv.py:30:39, documentHighlight@src/you_get/extractors/ifeng.py:33:48, hover@src/you_get/extractors/pixnet.py:53:31, ...",
+  "seed": 2,
+  "timing": "settled"
+ },
+ "shape": "hover:text",
+ "signature": "pyright|r1_history|hover:text",
+ "expected": [
+  "(parameter) title: Unknown | None",
+  [
+   11,
+   26,
+   11,
+   31
+  ]
+ ],
+ "actual": [
+  "(parameter) title: str | Any | None",
+  [
+   11,
+   26,
+   11,
+   31
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "H8: after src/you_get/extractors/suntv.py: delete lines 29..29 and its inverse, 8 requests in a shuffled order: completion@src/you_get/extractors/ifeng.py:30:10, completion@src/you_get/extractors/pixnet.p; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 63s",
+ "violation": {
+  "oracle": "r1_history",
+  "server": "pyright-1.1.414",
+  "project": "soimort/you-get@049548f3f3f3",
+  "key": {
+   "method": "hover",
+   "path": "src/you_get/extractors/ifeng.py",
+   "line": 11,
+   "character": 28,
+   "extra": ""
+  },
+  "expected": [
+   "(parameter) title: Unknown | None",
+   [
+    11,
+    26,
+    11,
+    31
+   ]
+  ],
+  "actual": [
+   "(parameter) title: str | Any | None",
+   [
+    11,
+    26,
+    11,
+    31
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "src/you_get/extractors/ifeng.py"
+   },
+   {
+    "kind": "open",
+    "path": "src/you_get/extractors/pixnet.py"
+   },
+   {
+    "kind": "open",
+    "path": "src/you_get/extractors/suntv.py"
+   },
+   {
+    "kind": "change",
+    "path": "src/you_get/extractors/suntv.py",
+    "start": [
+     29,
+     0
+    ],
+    "end": [
+     30,
+     0
+    ]
+   },
+   {
+    "kind": "change",
+    "path": "src/you_get/extractors/suntv.py",
+    "start": [
+     29,
+     0
+    ],
+    "end": [
+     29,
+     0
+    ],
+    "text": "        size = 0\n"
+   },
+   {
+    "kind": "request",
+    "path": "src/you_get/extractors/ifeng.py",
+    "start": [
+     30,
+     10
+    ],
+    "text": "completion"
+   },
+   {
+    "kind": "request",
+    "path": "src/you_get/extractors/pixnet.py",
+    "start": [
+     49,
+     65
+    ],
+    "text": "completion"
+   },
+   {
+    "kind": "request",
+    "path": "src/you_get/extractors/suntv.py",
+    "start": [
+     30,
+     39
+    ],
+    "text": "documentHighlight"
+   },
+   {
+    "kind": "request",
+    "path": "src/you_get/extractors/ifeng.py",
+    "start": [
+     33,
+     48
+    ],
+    "text": "documentHighlight"
+   },
+   {
+    "kind": "request",
+    "path": "src/you_get/extractors/pixnet.py",
+    "start": [
+     53,
+     31
+    ],
+    "text": "hover"
+   },
+   {
+    "kind": "request",
+    "path": "src/you_get/extractors/ifeng.py",
+    "start": [
+     4,
+     10
+    ],
+    "text": "references"
+   },
+   {
+    "kind": "request",
+    "path": "src/you_get/extractors/suntv.py",
+    "start": [
+     15,
+     30
+    ],
+    "text": "hover"
+   },
+   {
+    "kind": "request",
+    "path": "src/you_get/extractors/ifeng.py",
+    "start": [
+     6,
+     63
+    ],
+    "text": "definition"
+   }
+  ],
+  "detail": "{\"case\": {\"chain_step\": 0, \"families\": [], \"family\": \"H8\", \"history_index\": 4, \"history_seed\": 2005, \"mode\": \"fresh\", \"note\": \"after src/you_get/extractors/suntv.py: delete lines 29..29 and its inverse, 8 requests in a shuffled order: completion@src/you_get/extractors/ifeng.py:30:10, completion@src/you_get/extractors/pixnet.py:49:65, documentHighlight@src/you_get/extractors/suntv.py:30:39, documentHighlight@src/you_get/extractors/ifeng.py:33:48, hover@src/you_get/extractors/pixnet.py:53:31, ...\", \"seed\": 2, \"timing\": \"settled\"}, \"note\": \"H8: after src/you_get/extractors/suntv.py: delete lines 29..29 and its inverse, 8 requests in a shuffled order: completion@src/you_get/extractors/ifeng.py:30:10, completion@src/you_get/extractors/pixnet.p; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 63s\", \"shape\": \"hover:text\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "pyright|r1_history|hover:text",
+  "run_id": "95c1b8d86026"
+ },
+ "replay_logs": [
+  "logs/pyright-1.1.414-tr2a8227-replay-baseline-20261118-225526-8d5405.jsonl.gz",
+  "logs/pyright-1.1.414-tr2a8227-replay-control-20261118-225526-3c0270.jsonl.gz",
+  "logs/pyright-1.1.414-tr2a8227-replay-history-20261118-225529-5f4d21.jsonl.gz"
+ ],
+ "project_files": {},
+ "group": "pyright-r1-hover-text-h8-2a8227",
+ "reduced": true
+}

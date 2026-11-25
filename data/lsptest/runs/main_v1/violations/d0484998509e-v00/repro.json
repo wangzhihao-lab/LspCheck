@@ -1,0 +1,571 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "d0484998509e-v00",
+ "run_id": "d0484998509e",
+ "oracle": "r2_handles",
+ "server": {
+  "kind": "gopls",
+  "version": "v0.23.0"
+ },
+ "project": {
+  "name": "charmbracelet/bubbletea@657aaae216e3",
+  "source": "corpus",
+  "ref": "temp/corpus/charmbracelet__bubbletea@657aaae216e3",
+  "commit": "657aaae216e3f87df09b60959a9fe5de7b2ca419",
+  "language": "go"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "examples/list-default/main.go",
+    "positions": [
+     [
+      19,
+      44
+     ],
+     [
+      29,
+      10
+     ],
+     [
+      33,
+      10
+     ],
+     [
+      40,
+      6
+     ],
+     [
+      48,
+      8
+     ],
+     [
+      52,
+      14
+     ],
+     [
+      59,
+      9
+     ],
+     [
+      68,
+      31
+     ],
+     [
+      79,
+      10
+     ],
+     [
+      81,
+      15
+     ],
+     [
+      84,
+      3
+     ],
+     [
+      85,
+      7
+     ]
+    ],
+    "ends": [
+     [
+      19,
+      45
+     ],
+     [
+      29,
+      13
+     ],
+     [
+      33,
+      11
+     ],
+     [
+      40,
+      8
+     ],
+     [
+      48,
+      9
+     ],
+     [
+      52,
+      16
+     ],
+     [
+      59,
+      12
+     ],
+     [
+      68,
+      33
+     ],
+     [
+      79,
+      13
+     ],
+     [
+      81,
+      20
+     ],
+     [
+      84,
+      5
+     ],
+     [
+      85,
+      9
+     ]
+    ],
+    "names": [
+     "i",
+     "model",
+     "m",
+     "cmd",
+     "v",
+     "list",
+     "title",
+     "desc",
+     "Title",
+     "NewProgram",
+     "fmt",
+     "Exit"
+    ]
+   },
+   {
+    "path": "examples/list-fancy/main.go",
+    "positions": [
+     [
+      36,
+      6
+     ],
+     [
+      36,
+      16
+     ],
+     [
+      40,
+      6
+     ],
+     [
+      47,
+      25
+     ],
+     [
+      54,
+      23
+     ],
+     [
+      84,
+      11
+     ],
+     [
+      94,
+      3
+     ],
+     [
+      105,
+      23
+     ],
+     [
+      143,
+      32
+     ],
+     [
+      180,
+      1
+     ],
+     [
+      188,
+      32
+     ],
+     [
+      199,
+      18
+     ]
+    ],
+    "ends": [
+     [
+      36,
+      12
+     ],
+     [
+      36,
+      19
+     ],
+     [
+      40,
+      7
+     ],
+     [
+      47,
+      29
+     ],
+     [
+      54,
+      28
+     ],
+     [
+      84,
+      14
+     ],
+     [
+      94,
+      5
+     ],
+     [
+      105,
+      24
+     ],
+     [
+      143,
+      34
+     ],
+     [
+      180,
+      2
+     ],
+     [
+      188,
+      36
+     ],
+     [
+      199,
+      22
+     ]
+    ],
+    "names": [
+     "description",
+     "string",
+     "i",
+     "Binding",
+     "NewBinding",
+     "height",
+     "tea",
+     "m",
+     "list",
+     "m",
+     "numItems",
+     "Binding"
+    ]
+   },
+   {
+    "path": "examples/splash/main.go",
+    "positions": [
+     [
+      28,
+      12
+     ],
+     [
+      51,
+      9
+     ],
+     [
+      56,
+      28
+     ],
+     [
+      70,
+      62
+     ],
+     [
+      73,
+      5
+     ],
+     [
+      75,
+      15
+     ],
+     [
+      87,
+      69
+     ],
+     [
+      94,
+      5
+     ],
+     [
+      130,
+      23
+     ],
+     [
+      152,
+      10
+     ],
+     [
+      153,
+      2
+     ],
+     [
+      171,
+      10
+     ]
+    ],
+    "ends": [
+     [
+      28,
+      15
+     ],
+     [
+      51,
+      10
+     ],
+     [
+      56,
+      30
+     ],
+     [
+      70,
+      65
+     ],
+     [
+      73,
+      9
+     ],
+     [
+      75,
+      19
+     ],
+     [
+      87,
+      70
+     ],
+     [
+      94,
+      8
+     ],
+     [
+      130,
+      25
+     ],
+     [
+      152,
+      11
+     ],
+     [
+      153,
+      3
+     ],
+     [
+      171,
+      12
+     ]
+    ],
+    "names": [
+     "Color",
+     "m",
+     "View",
+     "Second",
+     "cosAngle",
+     "float64",
+     "m",
+     "style",
+     "idx",
+     "b2",
+     "r2",
+     "rate"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "codeActionResolve",
+  "path": "examples/list-default/main.go",
+  "line": 68,
+  "character": 31,
+  "extra": "pos:68:31|top2|Split elements into separate lines|refactor.rewrite.splitLines|0"
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "examples/list-default/main.go"
+  },
+  {
+   "kind": "change",
+   "path": "examples/list-default/main.go",
+   "start": [
+    0,
+    0
+   ],
+   "end": [
+    0,
+    0
+   ],
+   "text": "\n\n"
+  }
+ ],
+ "case": {
+  "extra": "pos",
+  "path": "examples/list-default/main.go",
+  "shift": {
+   "col": 0,
+   "line": 0,
+   "text": "\n\n",
+   "variant": "top"
+  },
+  "sub": "codeAction",
+  "where": [
+   68,
+   31,
+   68,
+   31
+  ]
+ },
+ "shape": "codeActionResolve:changed",
+ "signature": "gopls|r2_handles|codeActionResolve:changed",
+ "expected": [
+  [
+   "examples/list-default/main.go",
+   70,
+   27,
+   70,
+   29,
+   ",\n\t\t\t"
+  ],
+  [
+   "examples/list-default/main.go",
+   70,
+   7,
+   70,
+   7,
+   "\n\t\t\t"
+  ],
+  [
+   "examples/list-default/main.go",
+   70,
+   74,
+   70,
+   74,
+   ",\n\t\t"
+  ]
+ ],
+ "actual": [
+  [
+   "examples/list-default/main.go",
+   68,
+   23,
+   68,
+   25,
+   ",\n\t\t\t"
+  ],
+  [
+   "examples/list-default/main.go",
+   68,
+   56,
+   68,
+   56,
+   ",\n\t\t"
+  ],
+  [
+   "examples/list-default/main.go",
+   68,
+   7,
+   68,
+   7,
+   "\n\t\t\t"
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "flake 3/3 [r1:SCR r2:SCR r3:SCR] in 30s",
+ "violation": {
+  "oracle": "r2_handles",
+  "server": "gopls-v0.23.0",
+  "project": "charmbracelet/bubbletea@657aaae216e3",
+  "key": {
+   "method": "codeActionResolve",
+   "path": "examples/list-default/main.go",
+   "line": 68,
+   "character": 31,
+   "extra": "pos:68:31|top2|Split elements into separate lines|refactor.rewrite.splitLines|0"
+  },
+  "expected": [
+   [
+    "examples/list-default/main.go",
+    70,
+    27,
+    70,
+    29,
+    ",\n\t\t\t"
+   ],
+   [
+    "examples/list-default/main.go",
+    70,
+    7,
+    70,
+    7,
+    "\n\t\t\t"
+   ],
+   [
+    "examples/list-default/main.go",
+    70,
+    74,
+    70,
+    74,
+    ",\n\t\t"
+   ]
+  ],
+  "actual": [
+   [
+    "examples/list-default/main.go",
+    68,
+    23,
+    68,
+    25,
+    ",\n\t\t\t"
+   ],
+   [
+    "examples/list-default/main.go",
+    68,
+    56,
+    68,
+    56,
+    ",\n\t\t"
+   ],
+   [
+    "examples/list-default/main.go",
+    68,
+    7,
+    68,
+    7,
+    "\n\t\t\t"
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "examples/list-default/main.go"
+   },
+   {
+    "kind": "change",
+    "path": "examples/list-default/main.go",
+    "start": [
+     0,
+     0
+    ],
+    "end": [
+     0,
+     0
+    ],
+    "text": "\n\n"
+   }
+  ],
+  "detail": "{\"case\": {\"extra\": \"pos\", \"path\": \"examples/list-default/main.go\", \"shift\": {\"col\": 0, \"line\": 0, \"text\": \"\\n\\n\", \"variant\": \"top\"}, \"sub\": \"codeAction\", \"where\": [68, 31, 68, 31]}, \"note\": \"flake 3/3 [r1:SCR r2:SCR r3:SCR] in 30s\", \"shape\": \"codeActionResolve:changed\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "gopls|r2_handles|codeActionResolve:changed",
+  "run_id": "d0484998509e"
+ },
+ "replay_logs": [
+  "logs/gopls-v0.23.0-d0484998509e-r2-replay-20260923-225757-7f58e2.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

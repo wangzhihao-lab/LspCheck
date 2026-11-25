@@ -1,0 +1,76 @@
+{
+ "vid": "2628b01ed446-v00",
+ "ops_before": 2,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 0,
+ "cache_hits": 0,
+ "reduce_seconds": 0.0,
+ "budget_exhausted": false,
+ "probe_log": [],
+ "logs": [
+  "gopls-v0.23.0-tr6dfb45-r5-replay-baseline-20261119-001513-df6887.jsonl.gz",
+  "gopls-v0.23.0-tr6dfb45-r5-replay-case-20261119-001523-7fdcee.jsonl.gz",
+  "gopls-v0.23.0-tr6dfb45-r5-replay-control-20261119-001518-1e68bd.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [
+   [
+    "Add test for FilterChain",
+    "source.addTest"
+   ],
+   [
+    "Browse arm64 assembly for FilterChain",
+    "source.assembly"
+   ],
+   [
+    "Browse documentation for package opentracing",
+    "source.doc"
+   ],
+   [
+    "Browse gopls feature documentation",
+    "gopls.doc.features"
+   ],
+   [
+    "Show compiler optimization details for \"opentracing\"",
+    "source.toggleCompilerOptDetails"
+   ],
+   [
+    "Split package \"opentracing\"",
+    "source.splitPackage"
+   ]
+  ],
+  "actual": [
+   [
+    "Add test for FilterChain",
+    "source.addTest"
+   ],
+   [
+    "Browse arm64 assembly for FilterChain",
+    "source.assembly"
+   ],
+   [
+    "Browse documentation for package opentracing",
+    "source.doc"
+   ],
+   [
+    "Browse gopls feature documentation",
+    "gopls.doc.features"
+   ],
+   [
+    "Organize Imports",
+    "source.organizeImports"
+   ],
+   [
+    "Show compiler optimization details for \"opentracing\"",
+    "source.toggleCompilerOptDetails"
+   ],
+   [
+    "Split package \"opentracing\"",
+    "source.splitPackage"
+   ]
+  ]
+ },
+ "ops_after": 2,
+ "total_seconds": 74.4
+}

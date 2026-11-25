@@ -1,0 +1,9 @@
+2026-09-24 21:15:47,937 INFO campaign_run run 444aea8af71c: r2_handles on rust-analyzer 2022-07-18, rust-analyzer-11897 seed 1 settled, targets ['src/main.rs']
+2026-09-24 21:17:00,200 INFO campaign_run run 444aea8af71c: 3 candidate(s) in 72s; confirming
+2026-09-24 21:17:19,191 INFO flake replay 1/3 of rust-analyzer|r2_handles|completionResolve:changed: settled=True control_stable=True reproduced=True (19.0s)
+2026-09-24 21:17:39,450 INFO flake replay 2/3 of rust-analyzer|r2_handles|completionResolve:changed: settled=True control_stable=True reproduced=True (20.3s)
+2026-09-24 21:17:59,127 INFO flake replay 3/3 of rust-analyzer|r2_handles|completionResolve:changed: settled=True control_stable=True reproduced=True (19.7s)
+2026-09-24 21:18:32,881 INFO flake replay 1/3 of rust-analyzer|r2_handles|codeActionResolve:changed: settled=True control_stable=True reproduced=True (33.8s)
+2026-09-24 21:19:06,689 INFO flake replay 2/3 of rust-analyzer|r2_handles|codeActionResolve:changed: settled=True control_stable=True reproduced=True (33.8s)
+2026-09-24 21:19:39,564 INFO flake replay 3/3 of rust-analyzer|r2_handles|codeActionResolve:changed: settled=True control_stable=True reproduced=True (32.9s)
+2026-09-24 21:19:39,582 INFO campaign_run run 444aea8af71c finished: ok, 2 confirmed of 3 candidate(s), 232s

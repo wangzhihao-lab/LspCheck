@@ -1,0 +1,3 @@
+2026-11-18 06:53:09,672 INFO campaign_run run 2b60cb79e2f3: r2_handles on ts6 6.0.3, hexojs/hexo@751e856691bf seed 1 settled, targets ['lib/extend/helper.ts', 'lib/plugins/generator/page.ts', 'test/scripts/theme_processors/source.ts']
+2026-11-18 06:55:30,725 INFO campaign_run run 2b60cb79e2f3: 0 candidate(s) in 141s; confirming
+2026-11-18 06:55:30,726 INFO campaign_run run 2b60cb79e2f3 finished: ok, 0 confirmed of 0 candidate(s), 141s

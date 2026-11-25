@@ -1,0 +1,441 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "8898bb23ac4e-v00",
+ "run_id": "8898bb23ac4e",
+ "oracle": "r3_routes",
+ "server": {
+  "kind": "ts7",
+  "version": "7.0.2"
+ },
+ "project": {
+  "name": "ChromeDevTools/chrome-devtools-mcp@2250cdcde4aa",
+  "source": "corpus",
+  "ref": "temp/corpus/ChromeDevTools__chrome-devtools-mcp@2250cdcde4aa",
+  "commit": "2250cdcde4aad79d54101c80346df4190e0c2da7",
+  "language": "typescript"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "scripts/eval_result.ts",
+    "positions": [
+     [
+      20,
+      50
+     ],
+     [
+      26,
+      3
+     ],
+     [
+      54,
+      30
+     ],
+     [
+      71,
+      9
+     ],
+     [
+      72,
+      6
+     ],
+     [
+      75,
+      24
+     ],
+     [
+      90,
+      11
+     ],
+     [
+      91,
+      17
+     ],
+     [
+      91,
+      21
+     ],
+     [
+      93,
+      73
+     ],
+     [
+      111,
+      45
+     ],
+     [
+      126,
+      7
+     ]
+    ],
+    "ends": [
+     [
+      20,
+      55
+     ],
+     [
+      26,
+      5
+     ],
+     [
+      54,
+      37
+     ],
+     [
+      71,
+      16
+     ],
+     [
+      72,
+      8
+     ],
+     [
+      75,
+      27
+     ],
+     [
+      90,
+      14
+     ],
+     [
+      91,
+      19
+     ],
+     [
+      91,
+      23
+     ],
+     [
+      93,
+      78
+     ],
+     [
+      111,
+      50
+     ],
+     [
+      126,
+      12
+     ]
+    ],
+    "names": [
+     "serverArgs",
+     "get",
+     "nextCallIndex",
+     "assertNextCall",
+     "name",
+     "calls",
+     "assert",
+     "args",
+     "key",
+     "stringify",
+     "substring",
+     "serverArgs"
+    ]
+   },
+   {
+    "path": "scripts/profile/source_map_server.ts",
+    "positions": [
+     [
+      9,
+      14
+     ],
+     [
+      22,
+      42
+     ],
+     [
+      47,
+      10
+     ],
+     [
+      48,
+      6
+     ],
+     [
+      112,
+      39
+     ],
+     [
+      113,
+      28
+     ],
+     [
+      119,
+      10
+     ],
+     [
+      119,
+      16
+     ],
+     [
+      123,
+      58
+     ],
+     [
+      131,
+      12
+     ],
+     [
+      158,
+      21
+     ],
+     [
+      161,
+      16
+     ]
+    ],
+    "ends": [
+     [
+      9,
+      18
+     ],
+     [
+      22,
+      45
+     ],
+     [
+      47,
+      13
+     ],
+     [
+      48,
+      8
+     ],
+     [
+      112,
+      43
+     ],
+     [
+      113,
+      30
+     ],
+     [
+      119,
+      14
+     ],
+     [
+      119,
+      18
+     ],
+     [
+      123,
+      60
+     ],
+     [
+      131,
+      15
+     ],
+     [
+      158,
+      24
+     ],
+     [
+      161,
+      19
+     ]
+    ],
+    "names": [
+     "Promise",
+     "index",
+     "index",
+     "join",
+     "request",
+     "URL",
+     "response",
+     "end",
+     "exec",
+     "index",
+     "server",
+     "Error"
+    ]
+   },
+   {
+    "path": "tests/shutdown.test.ts",
+    "positions": [
+     [
+      43,
+      16
+     ],
+     [
+      69,
+      42
+     ],
+     [
+      69,
+      46
+     ],
+     [
+      69,
+      55
+     ],
+     [
+      79,
+      58
+     ],
+     [
+      83,
+      23
+     ],
+     [
+      116,
+      21
+     ],
+     [
+      120,
+      6
+     ],
+     [
+      135,
+      45
+     ],
+     [
+      138,
+      5
+     ],
+     [
+      138,
+      11
+     ],
+     [
+      177,
+      37
+     ]
+    ],
+    "ends": [
+     [
+      43,
+      17
+     ],
+     [
+      69,
+      44
+     ],
+     [
+      69,
+      48
+     ],
+     [
+      69,
+      58
+     ],
+     [
+      79,
+      60
+     ],
+     [
+      83,
+      27
+     ],
+     [
+      116,
+      24
+     ],
+     [
+      120,
+      9
+     ],
+     [
+      135,
+      49
+     ],
+     [
+      138,
+      8
+     ],
+     [
+      138,
+      14
+     ],
+     [
+      177,
+      42
+     ]
+    ],
+    "names": [
+     "on",
+     "Date",
+     "now",
+     "start",
+     "msg",
+     "toString",
+     "timer",
+     "child",
+     "version",
+     "notify",
+     "child",
+     "elapsedMs"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "highlightVsReferences",
+  "path": "scripts/eval_result.ts",
+  "line": 26,
+  "character": 3,
+  "extra": ""
+ },
+ "ops": [],
+ "case": {
+  "path": "scripts/eval_result.ts",
+  "pos": [
+   26,
+   3
+  ],
+  "sub": "c"
+ },
+ "shape": "highlightVsReferences:gained",
+ "signature": "ts7|r3_routes|highlightVsReferences:gained",
+ "expected": [],
+ "actual": [
+  [
+   26,
+   2,
+   26,
+   5
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "33 references; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 121s",
+ "violation": {
+  "oracle": "r3_routes",
+  "server": "ts7-7.0.2",
+  "project": "ChromeDevTools/chrome-devtools-mcp@2250cdcde4aa",
+  "key": {
+   "method": "highlightVsReferences",
+   "path": "scripts/eval_result.ts",
+   "line": 26,
+   "character": 3,
+   "extra": ""
+  },
+  "expected": [],
+  "actual": [
+   [
+    26,
+    2,
+    26,
+    5
+   ]
+  ],
+  "ops": [],
+  "detail": "{\"case\": {\"path\": \"scripts/eval_result.ts\", \"pos\": [26, 3], \"sub\": \"c\"}, \"note\": \"33 references; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 121s\", \"shape\": \"highlightVsReferences:gained\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "ts7|r3_routes|highlightVsReferences:gained",
+  "run_id": "8898bb23ac4e"
+ },
+ "replay_logs": [
+  "logs/ts7-7.0.2-8898bb23ac4e-r3-replay-baseline-20260923-230513-1f0dbb.jsonl.gz",
+  "logs/ts7-7.0.2-8898bb23ac4e-r3-replay-control-20260923-230533-c3c091.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

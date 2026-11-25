@@ -1,0 +1,3 @@
+2026-11-18 19:37:19,827 INFO campaign_run run d6e27f54fb49: r6_crossimpl on ts7 7.0.2, mifi/lossless-cut@85cb95f6aeae seed 2 settled, targets ['src/main/progress.test.ts', 'src/renderer/src/TopMenu.tsx', 'src/renderer/src/hooks/useUserSettings.ts']
+2026-11-18 19:38:53,249 INFO campaign_run run d6e27f54fb49: 20 candidate(s) in 93s; confirming
+2026-11-18 19:38:53,255 INFO campaign_run run d6e27f54fb49 finished: ok, 0 confirmed of 20 candidate(s), 94s

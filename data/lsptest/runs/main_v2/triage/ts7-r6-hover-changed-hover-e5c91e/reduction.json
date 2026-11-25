@@ -1,0 +1,23 @@
+{
+ "vid": "89ebeb799563-v02",
+ "ops_before": 0,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 0,
+ "cache_hits": 0,
+ "reduce_seconds": 0.0,
+ "budget_exhausted": false,
+ "probe_log": [],
+ "logs": [
+  "ts6-6.0.3-tre5c91e-ref-r6-replay-ref-baseline-20261118-223331-ddd6ba.jsonl.gz",
+  "ts6-6.0.3-tre5c91e-ref-r6-replay-ref-control-20261118-223344-3f1d04.jsonl.gz",
+  "ts7-7.0.2-tre5c91e-r6-replay-test-baseline-20261118-223308-c9af78.jsonl.gz",
+  "ts7-7.0.2-tre5c91e-r6-replay-test-control-20261118-223321-07ee57.jsonl.gz"
+ ],
+ "observed": {
+  "expected": "(alias) describe<object>(name: string | Function, fn?: SuiteFactory<object> | undefined, options?: number): SuiteCollector<object> (+1 overload)",
+  "actual": "(alias) const describe: <object>(name: string | Function, fn?: SuiteFactory<object> | undefined, options?: number) => SuiteCollector<object>"
+ },
+ "ops_after": 0,
+ "total_seconds": 164.0
+}

@@ -1,0 +1,893 @@
+{
+ "label": "lifecycle",
+ "as_of": "2026-09-28",
+ "planned": "2026-11-20T23:18:57",
+ "rule": {
+  "gopls": "the first release (vX.Y.0) of every minor line v0.16 ... v0.23 (the campaign's v0.23.0), plus the newest",
+  "rust-analyzer": "the first weekly release (tag YYYY-MM-DD) of each quarter 2024-Q4 ... 2026-Q3, plus the campaign's 2026-09-21 and the newest",
+  "ts6": "the last patch of each TypeScript minor 5.5, 5.6, 5.7, 5.8, 5.9 and 6.0, each with the typescript-language-server release newest at that TypeScript release's publication time (npm `time`), plus the campaign pair 6.0.3+tsls6.0.0 and the newest pair",
+  "pyright": "the first stable release (npm `time`) of each quarter 2024-Q4 ... 2026-Q3, plus the campaign's 1.1.414 and the newest (as the rust-analyzer rule: both lines release about weekly); installed as the benchmark installs pyright (npm pyright@<v>, scripts/lsptest/bench/install_builds.py)"
+ },
+ "common": [
+  "releases published up to 2026-09-28; 3 replays per group and build; verdicts of version_sweep.verdict",
+  "ts6 line through the frozen sweep's kind tsserver (pinned wrapper started with the pinned tsserver.js, no ts6 session settings), as older-2025 and ts_isolation.py; the campaign pair in that kind controls for the kind",
+  "gopls builds are compiled and run with the local Go (go1.27.1, the toolchain of the campaign's v0.23.0 build); a release the local Go cannot compile is compiled and run with go1.24.4 (install_builds --go); where the install directory already holds an era-Go benchmark build, the local-Go build goes to gopls-<v>+<go>/",
+  "a gopls group is replayed on a build only if the build's Go meets every go directive of the group's project (go.mod/go.work), since the harness runs gopls with GOTOOLCHAIN=local; other pairs are listed under skip",
+  "a build that cannot be installed, or fails the launch check (smoke_servers.smoke: initialize, diagnostics and hover on a one-file project), after two attempts is recorded as unavailable",
+  "the C2 group (timing race) runs alone; otherwise at most 3 jobs at once (gopls, rust-analyzer, ts6+ts7)"
+ ],
+ "sources": [
+  "https://registry.npmjs.org/<package> (time)",
+  "https://proxy.golang.org/golang.org/x/tools/gopls/@v/list and @v/<version>.info",
+  "https://api.github.com/repos/rust-lang/rust-analyzer/releases (tag_name, published_at, asset rust-analyzer-aarch64-apple-darwin.gz)"
+ ],
+ "groups": [
+  {
+   "cause": "C31",
+   "line": "ts6",
+   "gid": "ts6-r1-inlayhint-changed-h9-b9d052"
+  },
+  {
+   "cause": "C13",
+   "line": "gopls",
+   "gid": "gopls-r1-codeaction-key-lost-h7-547744"
+  },
+  {
+   "cause": "C14",
+   "line": "gopls",
+   "gid": "gopls-r1-completion-lost-h7-1a1169"
+  },
+  {
+   "cause": "C15",
+   "line": "gopls",
+   "gid": "gopls-r4-diagnostics-extra-unusedimport-mutation-m3-aefa9e"
+  },
+  {
+   "cause": "C16",
+   "line": "gopls",
+   "gid": "gopls-r5-foldingrange-changed-t4-b07c86"
+  },
+  {
+   "cause": "C17",
+   "line": "pyright",
+   "gid": "pyright-r0-references-result-error-32603-fresh-pair-2718c4"
+  },
+  {
+   "cause": "C18",
+   "line": "pyright",
+   "gid": "pyright-r1-hover-text-h2-fb2ed0"
+  },
+  {
+   "cause": "C19",
+   "line": "pyright",
+   "gid": "pyright-r1-hover-text-h5-f24c4e"
+  },
+  {
+   "cause": "C20",
+   "line": "pyright",
+   "gid": "pyright-r1-references-extra-h9-37c1a2"
+  },
+  {
+   "cause": "C21",
+   "line": "pyright",
+   "gid": "pyright-r1-signaturehelp-changed-h9-846c6c"
+  },
+  {
+   "cause": "C22",
+   "line": "pyright",
+   "gid": "pyright-r4-completioninsert-gained-completion-79a584"
+  },
+  {
+   "cause": "C28",
+   "line": "rust-analyzer",
+   "gid": "rust-analyzer-r4-completioninsert-gained-completion-e99b79"
+  },
+  {
+   "cause": "C29",
+   "line": "rust-analyzer",
+   "gid": "rust-analyzer-r4-diagnostics-extra-e0063-mutation-m1-aeef82"
+  },
+  {
+   "cause": "C30",
+   "line": "ts6",
+   "gid": "ts6-r1-codeaction-extra-h5-f48d27"
+  },
+  {
+   "cause": "C32",
+   "line": "ts6",
+   "gid": "ts6-r4-diagnostics-changed-1064-2322-quickfix-d597f5"
+  },
+  {
+   "cause": "C33",
+   "line": "ts6",
+   "gid": "ts6-r4-diagnostics-changed-mutation-m1-34f06f"
+  },
+  {
+   "cause": "C34",
+   "line": "ts6",
+   "gid": "ts6-r4-diagnostics-extra-17002-2552-mutation-m1-727795"
+  },
+  {
+   "cause": "C35",
+   "line": "ts6",
+   "gid": "ts6-r4-diagnostics-extra-2448-7022-mutation-m1-e5d199"
+  }
+ ],
+ "builds": [
+  {
+   "line": "gopls",
+   "kind": "gopls",
+   "version": "v0.16.0",
+   "release": "v0.16.0",
+   "tag": "g0160",
+   "released": "2024-06-20",
+   "roles": [
+    "first of v0.16"
+   ],
+   "status": "ok",
+   "detail": "existing era-Go build; the local Go cannot compile the release: go install golang.org/x/tools/gopls@v0.16.0 exited 1: # golang.org/x/tools/internal/tokeninternal | temp/lsp_servers/gopath/pkg/mod/golang.org/x/tools@v0.22.1-0.20240620150659-cb3016b76f3e/internal/tokeninternal/tokeninternal.go:64:9: inval",
+   "attempts": 1,
+   "launch": {
+    "init_s": 0.2,
+    "ok": true,
+    "diagnostics": [
+     "cannot use \"oops\" (untyped string constant) as int value in variable d"
+    ]
+   },
+   "built_with": "go1.24.4",
+   "go": "go1.24.4",
+   "skip": {
+    "gopls-r4-diagnostics-extra-unusedimport-mutation-m3-aefa9e": "the project needs go 1.25.0; the build runs go1.24.4 with GOTOOLCHAIN=local",
+    "gopls-r5-foldingrange-changed-t4-b07c86": "the project needs go 1.26.3; the build runs go1.24.4 with GOTOOLCHAIN=local"
+   }
+  },
+  {
+   "line": "gopls",
+   "kind": "gopls",
+   "version": "v0.17.0",
+   "release": "v0.17.0",
+   "tag": "g0170",
+   "released": "2024-12-11",
+   "roles": [
+    "first of v0.17"
+   ],
+   "status": "ok",
+   "detail": "existing era-Go build; the local Go cannot compile the release: go install golang.org/x/tools/gopls@v0.17.0 exited 1: # golang.org/x/tools/internal/tokeninternal | temp/lsp_servers/gopath/pkg/mod/golang.org/x/tools@v0.27.1-0.20241211153006-a83c4ee29a47/internal/tokeninternal/tokeninternal.go:33:9: inval",
+   "attempts": 1,
+   "launch": {
+    "init_s": 0.3,
+    "ok": true,
+    "diagnostics": [
+     "cannot use \"oops\" (untyped string constant) as int value in variable d"
+    ]
+   },
+   "built_with": "go1.24.4",
+   "go": "go1.24.4",
+   "skip": {
+    "gopls-r4-diagnostics-extra-unusedimport-mutation-m3-aefa9e": "the project needs go 1.25.0; the build runs go1.24.4 with GOTOOLCHAIN=local",
+    "gopls-r5-foldingrange-changed-t4-b07c86": "the project needs go 1.26.3; the build runs go1.24.4 with GOTOOLCHAIN=local"
+   }
+  },
+  {
+   "line": "gopls",
+   "kind": "gopls",
+   "version": "v0.18.0",
+   "release": "v0.18.0",
+   "tag": "g0180",
+   "released": "2025-02-20",
+   "roles": [
+    "first of v0.18"
+   ],
+   "status": "ok",
+   "detail": "existing era-Go build; the local Go cannot compile the release: go install golang.org/x/tools/gopls@v0.18.0 exited 1: # golang.org/x/tools/internal/tokeninternal | temp/lsp_servers/gopath/pkg/mod/golang.org/x/tools@v0.30.1-0.20250220174815-31e3bb2b8fd1/internal/tokeninternal/tokeninternal.go:33:9: inval",
+   "attempts": 1,
+   "launch": {
+    "init_s": 0.3,
+    "ok": true,
+    "diagnostics": [
+     "cannot use \"oops\" (untyped string constant) as int value in variable d"
+    ]
+   },
+   "built_with": "go1.24.4",
+   "go": "go1.24.4",
+   "skip": {
+    "gopls-r4-diagnostics-extra-unusedimport-mutation-m3-aefa9e": "the project needs go 1.25.0; the build runs go1.24.4 with GOTOOLCHAIN=local",
+    "gopls-r5-foldingrange-changed-t4-b07c86": "the project needs go 1.26.3; the build runs go1.24.4 with GOTOOLCHAIN=local"
+   }
+  },
+  {
+   "line": "gopls",
+   "kind": "gopls",
+   "version": "v0.19.0+go1.27.1",
+   "release": "v0.19.0",
+   "tag": "g0190",
+   "released": "2025-06-10",
+   "roles": [
+    "first of v0.19"
+   ],
+   "status": "ok",
+   "detail": "local-Go build (beside the benchmark's era-Go build)",
+   "attempts": 1,
+   "launch": {
+    "init_s": 0.3,
+    "ok": true,
+    "diagnostics": [
+     "cannot use \"oops\" (untyped string constant) as int value in variable d"
+    ]
+   },
+   "built_with": "go1.27.1",
+   "go": "go1.27.1",
+   "skip": {}
+  },
+  {
+   "line": "gopls",
+   "kind": "gopls",
+   "version": "v0.20.0",
+   "release": "v0.20.0",
+   "tag": "g0200",
+   "released": "2025-07-28",
+   "roles": [
+    "first of v0.20"
+   ],
+   "status": "ok",
+   "detail": "existing local-Go build",
+   "attempts": 1,
+   "launch": {
+    "init_s": 0.1,
+    "ok": true,
+    "diagnostics": [
+     "cannot use \"oops\" (untyped string constant) as int value in variable d"
+    ]
+   },
+   "built_with": "go1.27.1",
+   "go": "go1.27.1",
+   "skip": {}
+  },
+  {
+   "line": "gopls",
+   "kind": "gopls",
+   "version": "v0.21.0",
+   "release": "v0.21.0",
+   "tag": "g0210",
+   "released": "2025-12-05",
+   "roles": [
+    "first of v0.21"
+   ],
+   "status": "ok",
+   "detail": "existing local-Go build",
+   "attempts": 1,
+   "launch": {
+    "init_s": 0.3,
+    "ok": true,
+    "diagnostics": [
+     "cannot use \"oops\" (untyped string constant) as int value in variable d"
+    ]
+   },
+   "built_with": "go1.27.1",
+   "go": "go1.27.1",
+   "skip": {}
+  },
+  {
+   "line": "gopls",
+   "kind": "gopls",
+   "version": "v0.22.0",
+   "release": "v0.22.0",
+   "tag": "g0220",
+   "released": "2026-05-15",
+   "roles": [
+    "first of v0.22"
+   ],
+   "status": "ok",
+   "detail": "existing local-Go build",
+   "attempts": 1,
+   "launch": {
+    "init_s": 0.3,
+    "ok": true,
+    "diagnostics": [
+     "cannot use \"oops\" (untyped string constant) as int value in variable d"
+    ]
+   },
+   "built_with": "go1.27.1",
+   "go": "go1.27.1",
+   "skip": {}
+  },
+  {
+   "line": "gopls",
+   "kind": "gopls",
+   "version": "v0.23.0",
+   "release": "v0.23.0",
+   "tag": "g0230",
+   "released": "2026-07-07",
+   "roles": [
+    "first of v0.23",
+    "newest",
+    "campaign"
+   ],
+   "status": "ok",
+   "detail": "existing local-Go build",
+   "attempts": 1,
+   "launch": {
+    "init_s": 0.1,
+    "ok": true,
+    "diagnostics": [
+     "cannot use \"oops\" (untyped string constant) as int value in variable d"
+    ]
+   },
+   "built_with": "go1.27.1",
+   "go": "go1.27.1",
+   "skip": {}
+  },
+  {
+   "line": "rust-analyzer",
+   "kind": "rust-analyzer",
+   "version": "2024-10-07",
+   "release": "2024-10-07",
+   "tag": "r241007",
+   "released": "2024-10-07",
+   "roles": [
+    "first of 2024-Q4"
+   ],
+   "status": "ok",
+   "detail": "release asset; rust-analyzer 0.3.2137-standalone (2b750da1a 2024-10-06)",
+   "attempts": 1,
+   "launch": {
+    "init_s": 0.0,
+    "ok": true,
+    "diagnostics": [
+     "expected 2 arguments, found 1"
+    ]
+   }
+  },
+  {
+   "line": "rust-analyzer",
+   "kind": "rust-analyzer",
+   "version": "2025-01-06",
+   "release": "2025-01-06",
+   "tag": "r250106",
+   "released": "2025-01-06",
+   "roles": [
+    "first of 2025-Q1"
+   ],
+   "status": "ok",
+   "detail": "release asset; rust-analyzer 0.3.2249-standalone (bfb81275fb 2025-01-06)",
+   "attempts": 1,
+   "launch": {
+    "init_s": 0.0,
+    "ok": true,
+    "diagnostics": [
+     "expected 2 arguments, found 1"
+    ]
+   }
+  },
+  {
+   "line": "rust-analyzer",
+   "kind": "rust-analyzer",
+   "version": "2025-04-07",
+   "release": "2025-04-07",
+   "tag": "r250407",
+   "released": "2025-04-07",
+   "roles": [
+    "first of 2025-Q2"
+   ],
+   "status": "ok",
+   "detail": "release asset; rust-analyzer 0.3.2370-standalone (588948f267 2025-04-06)",
+   "attempts": 1,
+   "launch": {
+    "init_s": 0.0,
+    "ok": true,
+    "diagnostics": [
+     "expected 2 arguments, found 1"
+    ]
+   }
+  },
+  {
+   "line": "rust-analyzer",
+   "kind": "rust-analyzer",
+   "version": "2025-07-07",
+   "release": "2025-07-07",
+   "tag": "r250707",
+   "released": "2025-07-07",
+   "roles": [
+    "first of 2025-Q3"
+   ],
+   "status": "unavailable",
+   "reason": "RuntimeError: launch check failed (no diagnostics or hover on the smoke project): \" \"--lockfile-path\" \"<tmp>/smoke-rust-analyzer-7dhmsej0/target/rust-analyzer/metadata/workspace/Cargo.lock\" \"-Zunstable-options\"`: `cargo metadata` exited with an error: error: unexpected argument '--lockfile-path' found",
+   "attempts": 2
+  },
+  {
+   "line": "rust-analyzer",
+   "kind": "rust-analyzer",
+   "version": "2025-10-27",
+   "release": "2025-10-27",
+   "tag": "r251027",
+   "released": "2025-10-27",
+   "roles": [
+    "first of 2025-Q4"
+   ],
+   "status": "ok",
+   "detail": "release asset; rust-analyzer 0.3.2658-standalone (049767e6fa 2025-10-26)",
+   "attempts": 1,
+   "launch": {
+    "init_s": 0.0,
+    "ok": true,
+    "diagnostics": [
+     "expected 2 arguments, found 1"
+    ]
+   }
+  },
+  {
+   "line": "rust-analyzer",
+   "kind": "rust-analyzer",
+   "version": "2026-01-05",
+   "release": "2026-01-05",
+   "tag": "r260105",
+   "released": "2026-01-05",
+   "roles": [
+    "first of 2026-Q1"
+   ],
+   "status": "ok",
+   "detail": "release asset; rust-analyzer 0.3.2743-standalone (6a1246b69c 2026-01-04)",
+   "attempts": 1,
+   "launch": {
+    "init_s": 0.0,
+    "ok": true,
+    "diagnostics": [
+     "expected 2 arguments, found 1"
+    ]
+   }
+  },
+  {
+   "line": "rust-analyzer",
+   "kind": "rust-analyzer",
+   "version": "2026-04-06",
+   "release": "2026-04-06",
+   "tag": "r260406",
+   "released": "2026-04-06",
+   "roles": [
+    "first of 2026-Q2"
+   ],
+   "status": "ok",
+   "detail": "release asset; rust-analyzer 0.3.2854-standalone (38fb8f92ac 2026-04-05)",
+   "attempts": 1,
+   "launch": {
+    "init_s": 0.0,
+    "ok": true,
+    "diagnostics": [
+     "expected 2 arguments, found 1"
+    ]
+   }
+  },
+  {
+   "line": "rust-analyzer",
+   "kind": "rust-analyzer",
+   "version": "2026-07-06",
+   "release": "2026-07-06",
+   "tag": "r260706",
+   "released": "2026-07-06",
+   "roles": [
+    "first of 2026-Q3"
+   ],
+   "status": "ok",
+   "detail": "release asset; rust-analyzer 0.3.2963-standalone (7ae18ed96a 2026-07-05)",
+   "attempts": 1,
+   "launch": {
+    "init_s": 0.0,
+    "ok": true,
+    "diagnostics": [
+     "expected 2 arguments, found 1"
+    ]
+   }
+  },
+  {
+   "line": "rust-analyzer",
+   "kind": "rust-analyzer",
+   "version": "2026-09-21",
+   "release": "2026-09-21",
+   "tag": "r260921",
+   "released": "2026-09-21",
+   "roles": [
+    "campaign"
+   ],
+   "status": "ok",
+   "detail": "release asset; rust-analyzer 0.3.3057-standalone (aaddfb73fd 2026-09-20)",
+   "attempts": 1,
+   "launch": {
+    "init_s": 0.0,
+    "ok": true,
+    "diagnostics": [
+     "expected 2 arguments, found 1"
+    ]
+   }
+  },
+  {
+   "line": "rust-analyzer",
+   "kind": "rust-analyzer",
+   "version": "2026-09-28",
+   "release": "2026-09-28",
+   "tag": "r260928",
+   "released": "2026-09-28",
+   "roles": [
+    "newest"
+   ],
+   "status": "ok",
+   "detail": "release asset; rust-analyzer 0.3.3065-standalone (03fcb77246 2026-09-27)",
+   "attempts": 1,
+   "launch": {
+    "init_s": 0.0,
+    "ok": true,
+    "diagnostics": [
+     "expected 2 arguments, found 1"
+    ]
+   }
+  },
+  {
+   "line": "ts6",
+   "kind": "tsserver",
+   "version": "5.5.4+tsls4.3.3",
+   "release": "5.5.4+tsls4.3.3",
+   "tag": "t554w433",
+   "released": "2024-07-22",
+   "roles": [
+    "last patch of 5.5"
+   ],
+   "status": "ok",
+   "wrapper_released": "2024-02-09",
+   "detail": "npm typescript@5.5.4 typescript-language-server@4.3.3",
+   "attempts": 1,
+   "launch": {
+    "init_s": 0.0,
+    "ok": true,
+    "diagnostics": [
+     "Type 'string' is not assignable to type 'number'."
+    ]
+   }
+  },
+  {
+   "line": "ts6",
+   "kind": "tsserver",
+   "version": "5.6.3+tsls4.3.3",
+   "release": "5.6.3+tsls4.3.3",
+   "tag": "t563w433",
+   "released": "2024-10-08",
+   "roles": [
+    "last patch of 5.6"
+   ],
+   "status": "ok",
+   "wrapper_released": "2024-02-09",
+   "detail": "npm typescript@5.6.3 typescript-language-server@4.3.3",
+   "attempts": 1,
+   "launch": {
+    "init_s": 0.0,
+    "ok": true,
+    "diagnostics": [
+     "Type 'string' is not assignable to type 'number'."
+    ]
+   }
+  },
+  {
+   "line": "ts6",
+   "kind": "tsserver",
+   "version": "5.7.3+tsls4.3.3",
+   "release": "5.7.3+tsls4.3.3",
+   "tag": "t573w433",
+   "released": "2025-01-08",
+   "roles": [
+    "last patch of 5.7"
+   ],
+   "status": "ok",
+   "wrapper_released": "2024-02-09",
+   "detail": "npm typescript@5.7.3 typescript-language-server@4.3.3",
+   "attempts": 1,
+   "launch": {
+    "init_s": 0.0,
+    "ok": true,
+    "diagnostics": [
+     "Type 'string' is not assignable to type 'number'."
+    ]
+   }
+  },
+  {
+   "line": "ts6",
+   "kind": "tsserver",
+   "version": "5.8.3+tsls4.3.4",
+   "release": "5.8.3+tsls4.3.4",
+   "tag": "t583w434",
+   "released": "2025-04-05",
+   "roles": [
+    "last patch of 5.8"
+   ],
+   "status": "ok",
+   "wrapper_released": "2025-02-26",
+   "detail": "npm typescript@5.8.3 typescript-language-server@4.3.4",
+   "attempts": 1,
+   "launch": {
+    "init_s": 0.0,
+    "ok": true,
+    "diagnostics": [
+     "Type 'string' is not assignable to type 'number'."
+    ]
+   }
+  },
+  {
+   "line": "ts6",
+   "kind": "tsserver",
+   "version": "5.9.3+tsls5.0.0",
+   "release": "5.9.3+tsls5.0.0",
+   "tag": "t593w500",
+   "released": "2025-09-30",
+   "roles": [
+    "last patch of 5.9"
+   ],
+   "status": "ok",
+   "wrapper_released": "2025-09-15",
+   "detail": "npm typescript@5.9.3 typescript-language-server@5.0.0",
+   "attempts": 1,
+   "launch": {
+    "init_s": 0.0,
+    "ok": true,
+    "diagnostics": [
+     "Type 'string' is not assignable to type 'number'."
+    ]
+   }
+  },
+  {
+   "line": "ts6",
+   "kind": "tsserver",
+   "version": "6.0.3+tsls5.1.3",
+   "release": "6.0.3+tsls5.1.3",
+   "tag": "t603w513",
+   "released": "2026-04-16",
+   "roles": [
+    "last patch of 6.0"
+   ],
+   "status": "ok",
+   "wrapper_released": "2025-11-19",
+   "detail": "npm typescript@6.0.3 typescript-language-server@5.1.3",
+   "attempts": 1,
+   "launch": {
+    "init_s": 0.0,
+    "ok": true,
+    "diagnostics": [
+     "Type 'string' is not assignable to type 'number'."
+    ]
+   }
+  },
+  {
+   "line": "ts6",
+   "kind": "tsserver",
+   "version": "6.0.3+tsls6.0.0",
+   "release": "6.0.3+tsls6.0.0",
+   "tag": "t603w600",
+   "released": "2026-04-16",
+   "roles": [
+    "campaign"
+   ],
+   "status": "ok",
+   "wrapper_released": "2026-08-20",
+   "detail": "npm typescript@6.0.3 typescript-language-server@6.0.0",
+   "attempts": 1,
+   "launch": {
+    "init_s": 0.0,
+    "ok": true,
+    "diagnostics": [
+     "Type 'string' is not assignable to type 'number'."
+    ]
+   }
+  },
+  {
+   "line": "ts6",
+   "kind": "tsserver",
+   "version": "6.0.3+tsls6.0.1",
+   "release": "6.0.3+tsls6.0.1",
+   "tag": "t603w601",
+   "released": "2026-04-16",
+   "roles": [
+    "newest"
+   ],
+   "status": "ok",
+   "wrapper_released": "2026-09-24",
+   "detail": "npm typescript@6.0.3 typescript-language-server@6.0.1",
+   "attempts": 1,
+   "launch": {
+    "init_s": 0.0,
+    "ok": true,
+    "diagnostics": [
+     "Type 'string' is not assignable to type 'number'."
+    ]
+   }
+  },
+  {
+   "line": "pyright",
+   "kind": "pyright",
+   "version": "1.1.383",
+   "release": "1.1.383",
+   "tag": "p11383",
+   "released": "2024-10-01",
+   "roles": [
+    "first of 2024-Q4"
+   ],
+   "status": "ok",
+   "detail": "npm pyright@1.1.383",
+   "attempts": 1,
+   "launch": {
+    "init_s": 0.1,
+    "ok": true,
+    "diagnostics": [
+     "Type \"Literal['oops']\" is not assignable to declared type \"int\"\n  \"Lit"
+    ]
+   }
+  },
+  {
+   "line": "pyright",
+   "kind": "pyright",
+   "version": "1.1.392",
+   "release": "1.1.392",
+   "tag": "p11392",
+   "released": "2025-01-15",
+   "roles": [
+    "first of 2025-Q1"
+   ],
+   "status": "ok",
+   "detail": "npm pyright@1.1.392",
+   "attempts": 1,
+   "launch": {
+    "init_s": 0.1,
+    "ok": true,
+    "diagnostics": [
+     "Type \"Literal['oops']\" is not assignable to declared type \"int\"\n  \"Lit"
+    ]
+   }
+  },
+  {
+   "line": "pyright",
+   "kind": "pyright",
+   "version": "1.1.399",
+   "release": "1.1.399",
+   "tag": "p11399",
+   "released": "2025-04-09",
+   "roles": [
+    "first of 2025-Q2"
+   ],
+   "status": "ok",
+   "detail": "npm pyright@1.1.399",
+   "attempts": 1,
+   "launch": {
+    "init_s": 0.1,
+    "ok": true,
+    "diagnostics": [
+     "Type \"Literal['oops']\" is not assignable to declared type \"int\"\n  \"Lit"
+    ]
+   }
+  },
+  {
+   "line": "pyright",
+   "kind": "pyright",
+   "version": "1.1.403",
+   "release": "1.1.403",
+   "tag": "p11403",
+   "released": "2025-07-08",
+   "roles": [
+    "first of 2025-Q3"
+   ],
+   "status": "ok",
+   "detail": "npm pyright@1.1.403",
+   "attempts": 1,
+   "launch": {
+    "init_s": 0.1,
+    "ok": true,
+    "diagnostics": [
+     "Type \"Literal['oops']\" is not assignable to declared type \"int\"\n  \"Lit"
+    ]
+   }
+  },
+  {
+   "line": "pyright",
+   "kind": "pyright",
+   "version": "1.1.406",
+   "release": "1.1.406",
+   "tag": "p11406",
+   "released": "2025-10-01",
+   "roles": [
+    "first of 2025-Q4"
+   ],
+   "status": "ok",
+   "detail": "npm pyright@1.1.406",
+   "attempts": 1,
+   "launch": {
+    "init_s": 0.1,
+    "ok": true,
+    "diagnostics": [
+     "Type \"Literal['oops']\" is not assignable to declared type \"int\"\n  \"Lit"
+    ]
+   }
+  },
+  {
+   "line": "pyright",
+   "kind": "pyright",
+   "version": "1.1.408",
+   "release": "1.1.408",
+   "tag": "p11408",
+   "released": "2026-01-08",
+   "roles": [
+    "first of 2026-Q1"
+   ],
+   "status": "ok",
+   "detail": "npm pyright@1.1.408",
+   "attempts": 1,
+   "launch": {
+    "init_s": 0.1,
+    "ok": true,
+    "diagnostics": [
+     "Type \"Literal['oops']\" is not assignable to declared type \"int\"\n  \"Lit"
+    ]
+   }
+  },
+  {
+   "line": "pyright",
+   "kind": "pyright",
+   "version": "1.1.409",
+   "release": "1.1.409",
+   "tag": "p11409",
+   "released": "2026-04-16",
+   "roles": [
+    "first of 2026-Q2"
+   ],
+   "status": "ok",
+   "detail": "npm pyright@1.1.409",
+   "attempts": 1,
+   "launch": {
+    "init_s": 0.1,
+    "ok": true,
+    "diagnostics": [
+     "Type \"Literal['oops']\" is not assignable to declared type \"int\"\n  \"Lit"
+    ]
+   }
+  },
+  {
+   "line": "pyright",
+   "kind": "pyright",
+   "version": "1.1.412",
+   "release": "1.1.412",
+   "tag": "p11412",
+   "released": "2026-08-12",
+   "roles": [
+    "first of 2026-Q3"
+   ],
+   "status": "ok",
+   "detail": "npm pyright@1.1.412",
+   "attempts": 1,
+   "launch": {
+    "init_s": 0.1,
+    "ok": true,
+    "diagnostics": [
+     "Type \"Literal['oops']\" is not assignable to declared type \"int\"\n  \"Lit"
+    ]
+   }
+  },
+  {
+   "line": "pyright",
+   "kind": "pyright",
+   "version": "1.1.414",
+   "release": "1.1.414",
+   "tag": "p11414",
+   "released": "2026-09-09",
+   "roles": [
+    "campaign",
+    "newest"
+   ],
+   "status": "ok",
+   "detail": "npm pyright@1.1.414",
+   "attempts": 1,
+   "launch": {
+    "init_s": 0.1,
+    "ok": true,
+    "diagnostics": [
+     "Type \"Literal['oops']\" is not assignable to declared type \"int\"\n  \"Lit"
+    ]
+   }
+  }
+ ],
+ "campaign": "main_v2",
+ "representatives": "one representative group per cause: for C1-C11 the group chosen for the first sweep (REPS); for any later cause the cause's first group in row order of the root-cause table of the first campaign that lists the cause (main_v1 before main_v2); a campaign's lifecycle plan holds the causes whose representative comes from that campaign",
+ "installed": "2026-11-20T23:26:23"
+}

@@ -1,0 +1,276 @@
+{
+ "format": 1,
+ "campaign": "bench_v1",
+ "vid": "39d6bf97eab7-v07",
+ "run_id": "39d6bf97eab7",
+ "oracle": "r1_history",
+ "server": {
+  "kind": "tsserver",
+  "version": "5.5.4+tsls4.3.3"
+ },
+ "project": {
+  "name": "tsserver-59116",
+  "source": "dir",
+  "ref": "data/lsp_bench/cases/tsserver-59116/project",
+  "commit": "",
+  "language": "typescript"
+ },
+ "context": {
+  "seed": 3,
+  "timing": "settled",
+  "settle_timeout_s": 120.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "lib.ts",
+    "positions": [
+     [
+      0,
+      17
+     ],
+     [
+      1,
+      22
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      18
+     ],
+     [
+      1,
+      24
+     ]
+    ],
+    "names": [
+     "X",
+     "test"
+    ]
+   },
+   {
+    "path": "main.ts",
+    "positions": [
+     [
+      0,
+      9
+     ],
+     [
+      0,
+      15
+     ],
+     [
+      10,
+      0
+     ],
+     [
+      10,
+      5
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      10
+     ],
+     [
+      0,
+      17
+     ],
+     [
+      10,
+      1
+     ],
+     [
+      10,
+      8
+     ]
+    ],
+    "names": [
+     "X",
+     "from",
+     "X",
+     "foobar"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "semanticTokens",
+  "path": "main.ts",
+  "line": -1,
+  "character": -1,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "lib.ts"
+  },
+  {
+   "kind": "open",
+   "path": "main.ts"
+  },
+  {
+   "kind": "request",
+   "path": "main.ts",
+   "start": [
+    0,
+    17
+   ],
+   "text": "documentHighlight"
+  },
+  {
+   "kind": "request",
+   "path": "lib.ts",
+   "start": [
+    0,
+    17
+   ],
+   "text": "signatureHelp"
+  },
+  {
+   "kind": "fs_rename",
+   "path": "lib.ts",
+   "new_path": "lib_rt.ts"
+  },
+  {
+   "kind": "close",
+   "path": "main.ts"
+  },
+  {
+   "kind": "open",
+   "path": "main.ts"
+  },
+  {
+   "kind": "fs_rename",
+   "path": "lib_rt.ts",
+   "new_path": "lib.ts"
+  },
+  {
+   "kind": "request",
+   "path": "lib.ts",
+   "start": [
+    1,
+    22
+   ],
+   "text": "documentHighlight"
+  }
+ ],
+ "case": {
+  "chain_step": 0,
+  "families": [],
+  "family": "H7",
+  "history_index": 10,
+  "history_seed": 3014,
+  "mode": "fresh",
+  "note": "nest 2>0>1: H5 rename lib.ts -> lib_rt.ts -> back | H3 main.ts: close, reopen | H8 3 requests in a shuffled order: documentHighlight@main.ts:0:17, signatureHelp@lib.ts:0:17, documentHighlight@lib.ts:1:22",
+  "seed": 3,
+  "timing": "settled"
+ },
+ "shape": "semanticTokens:lost",
+ "signature": "tsserver|r1_history|semanticTokens:lost",
+ "expected": [
+  [
+   10,
+   0,
+   1,
+   "namespace",
+   ""
+  ]
+ ],
+ "actual": [],
+ "reproduced": "3/3",
+ "note": "H7: nest 2>0>1: H5 rename lib.ts -> lib_rt.ts -> back | H3 main.ts: close, reopen | H8 3 requests in a shuffled order: documentHighlight@main.ts:0:17, signatureHelp@lib.ts:0:17, documentHighlight@lib.ts:1; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 69s",
+ "violation": {
+  "oracle": "r1_history",
+  "server": "tsserver-5.5.4+tsls4.3.3",
+  "project": "tsserver-59116",
+  "key": {
+   "method": "semanticTokens",
+   "path": "main.ts",
+   "line": -1,
+   "character": -1,
+   "extra": ""
+  },
+  "expected": [
+   [
+    10,
+    0,
+    1,
+    "namespace",
+    ""
+   ]
+  ],
+  "actual": [],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "lib.ts"
+   },
+   {
+    "kind": "open",
+    "path": "main.ts"
+   },
+   {
+    "kind": "request",
+    "path": "main.ts",
+    "start": [
+     0,
+     17
+    ],
+    "text": "documentHighlight"
+   },
+   {
+    "kind": "request",
+    "path": "lib.ts",
+    "start": [
+     0,
+     17
+    ],
+    "text": "signatureHelp"
+   },
+   {
+    "kind": "fs_rename",
+    "path": "lib.ts",
+    "new_path": "lib_rt.ts"
+   },
+   {
+    "kind": "close",
+    "path": "main.ts"
+   },
+   {
+    "kind": "open",
+    "path": "main.ts"
+   },
+   {
+    "kind": "fs_rename",
+    "path": "lib_rt.ts",
+    "new_path": "lib.ts"
+   },
+   {
+    "kind": "request",
+    "path": "lib.ts",
+    "start": [
+     1,
+     22
+    ],
+    "text": "documentHighlight"
+   }
+  ],
+  "detail": "{\"case\": {\"chain_step\": 0, \"families\": [], \"family\": \"H7\", \"history_index\": 10, \"history_seed\": 3014, \"mode\": \"fresh\", \"note\": \"nest 2>0>1: H5 rename lib.ts -> lib_rt.ts -> back | H3 main.ts: close, reopen | H8 3 requests in a shuffled order: documentHighlight@main.ts:0:17, signatureHelp@lib.ts:0:17, documentHighlight@lib.ts:1:22\", \"seed\": 3, \"timing\": \"settled\"}, \"note\": \"H7: nest 2>0>1: H5 rename lib.ts -> lib_rt.ts -> back | H3 main.ts: close, reopen | H8 3 requests in a shuffled order: documentHighlight@main.ts:0:17, signatureHelp@lib.ts:0:17, documentHighlight@lib.ts:1; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 69s\", \"shape\": \"semanticTokens:lost\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "tsserver|r1_history|semanticTokens:lost",
+  "run_id": "39d6bf97eab7"
+ },
+ "replay_logs": [
+  "logs/tsserver-5.5.4+tsls4.3.3-39d6bf97eab7-replay-baseline-20260925-134340-deb6fa.jsonl.gz",
+  "logs/tsserver-5.5.4+tsls4.3.3-39d6bf97eab7-replay-control-20260925-134340-a551c0.jsonl.gz",
+  "logs/tsserver-5.5.4+tsls4.3.3-39d6bf97eab7-replay-history-20260925-134342-c0f02d.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

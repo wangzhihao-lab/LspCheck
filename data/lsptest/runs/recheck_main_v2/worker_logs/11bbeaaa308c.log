@@ -1,0 +1,9 @@
+2026-11-19 04:03:49,723 INFO campaign_run run 11bbeaaa308c: r5_transforms on gopls v0.23.0, docker/compose@c6dffb26bdfd seed 1 settled, targets ['internal/tracing/mux.go', 'pkg/compose/model.go', 'pkg/watch/temp.go']
+2026-11-19 04:04:54,257 INFO campaign_run run 11bbeaaa308c: 2 candidate(s) in 65s; confirming
+2026-11-19 04:05:09,857 INFO flake replay 1/3 of gopls|r5_transforms|foldingRange:changed: settled=True control_stable=True reproduced=True (15.6s)
+2026-11-19 04:05:25,939 INFO flake replay 2/3 of gopls|r5_transforms|foldingRange:changed: settled=True control_stable=True reproduced=True (16.1s)
+2026-11-19 04:05:43,025 INFO flake replay 3/3 of gopls|r5_transforms|foldingRange:changed: settled=True control_stable=True reproduced=True (17.1s)
+2026-11-19 04:05:58,850 INFO flake replay 1/3 of gopls|r5_transforms|semanticTokens:changed: settled=True control_stable=True reproduced=True (15.8s)
+2026-11-19 04:06:16,042 INFO flake replay 2/3 of gopls|r5_transforms|semanticTokens:changed: settled=True control_stable=True reproduced=True (17.2s)
+2026-11-19 04:06:31,676 INFO flake replay 3/3 of gopls|r5_transforms|semanticTokens:changed: settled=True control_stable=True reproduced=True (15.6s)
+2026-11-19 04:06:31,696 INFO campaign_run run 11bbeaaa308c finished: ok, 2 confirmed of 2 candidate(s), 162s

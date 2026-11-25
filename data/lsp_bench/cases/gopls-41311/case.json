@@ -1,0 +1,86 @@
+{
+ "schema": 1,
+ "id": "gopls-41311",
+ "meta": {
+  "server": "gopls",
+  "kind": "gopls",
+  "number": 41311,
+  "url": "https://github.com/golang/go/issues/41311",
+  "title": "x/tools/gopls: didChangeConfiguration ignores the new configuration",
+  "oracle_class": "R1",
+  "subtype": "config",
+  "fix_ref": "golang/tools@97363e29fc9b (internal/lsp: handle staticcheck in didChangeConfiguration; CL 254038, 'Fixes golang/go#41311'), cherry-picked to gopls-release-branch.0.5 as 796b347e00 (CL 254427)",
+  "fix_shas": [
+   "97363e29fc9b716e0d1e7c28a1098c5db06248f6",
+   "796b347e00a4001fe37a11fe69033802fd4fce3b"
+  ],
+  "pre_version": "v0.4.4",
+  "post_version": "v0.5.0",
+  "pre_build": "v0.4.4",
+  "post_build": "v0.5.0",
+  "build_notes": "Both built with the local Go (go1.27.1) through a wrapper module (their go.mod replaces x/tools); the server runs the local go command. The reporter used v0.5.0-pre1; the fix merged 2020-09-13 and was cherry-picked to the 0.5 release branch; v0.4.4 was tagged 2020-07-29, v0.5.0 2020-09-14.",
+  "candidate_rank": 55,
+  "effort_minutes": 12,
+  "notes": "The staticcheck analyzers were added to the options only when the view was created; enabling staticcheck later through workspace/didChangeConfiguration (and the configuration the server then fetches) changed the flag but not the analyzer set, so no staticcheck diagnostics appeared. The reporter's own client additionally did not answer workspace/configuration (a client bug found in the thread); the maintainer confirmed the gopls bug with VS Code, which answers it, as this harness does."
+ },
+ "language": "go",
+ "settings": {},
+ "settings_note": "The session starts with the defaults (staticcheck off); the ops turn staticcheck on with workspace/didChangeConfiguration, and the fresh sessions start with the settings the ops leave behind (staticcheck on).",
+ "session": {
+  "settle_timeout_s": 180
+ },
+ "files": [
+  {
+   "path": "go.mod",
+   "provenance": "scaffold",
+   "source": "",
+   "note": "the go.mod of the fix's regression test TestChangeConfiguration (gopls/internal/regtest/configuration_test.go at 97363e29); the issue gives no code"
+  },
+  {
+   "path": "a/a.go",
+   "provenance": "scaffold",
+   "source": "",
+   "note": "the file a/a.go of the fix's regression test TestChangeConfiguration: a doc comment that a staticcheck (stylecheck) analyzer reports at line 2 once staticcheck is enabled"
+  }
+ ],
+ "repro": {
+  "attempt": 1,
+  "timing": "settled",
+  "steps": "Open a/a.go (no diagnostics with the default settings). Enable staticcheck through workspace/didChangeConfiguration (settings gopls.staticcheck = true; the server then fetches the configuration). Reported: the new configuration is ignored and no staticcheck diagnostics appear. Probe: the diagnostics of a/a.go are compared with a fresh session started with staticcheck enabled, and a fresh control. (The set_config op names a/a.go only because case_format.py requires an existing path for every op; the notification is workspace-wide.)",
+  "ops": [
+   {
+    "kind": "open",
+    "path": "a/a.go"
+   },
+   {
+    "kind": "set_config",
+    "settings": {
+     "gopls": {
+      "staticcheck": true
+     }
+    },
+    "path": "a/a.go"
+   }
+  ],
+  "probe": {
+   "type": "differs_from_fresh",
+   "params": {
+    "queries": [
+     {
+      "method": "diagnostics",
+      "path": "a/a.go"
+     }
+    ]
+   }
+  }
+ },
+ "attempts": [
+  {
+   "attempt": 1,
+   "timing": "settled",
+   "probe": "differs_from_fresh",
+   "summary": "Run 2026-09-23T09:17 (this case revision): not-reproduced-pre, but for a toolchain reason, not because the bug is absent: every session on both builds answered no diagnostics for a/a.go, including the fresh sessions that start with staticcheck enabled. The session logs show why: gopls v0.4.4/v0.5.0 built and run with go1.27 report 'analyses failed: analysis atomicalign for package mod.com/a panicked: runtime error: invalid memory address or nil pointer dereference', so no analysis diagnostics (vet or staticcheck) are produced at all. The era Go (1.14/1.15) has no darwin/arm64 release, and rebuilding v0.4.4 with go1.16 would change the build shared with gopls-38424. Pre-check 4 (the era toolchain runs here and the build works with it) fails for analysis-based bugs of gopls v0.4-v0.5; no second attempt.",
+   "verdict": "not-reproduced-pre (analyses panic under go1.27; pre-check 4)"
+  }
+ ]
+}

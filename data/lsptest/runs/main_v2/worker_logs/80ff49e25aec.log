@@ -1,0 +1,3 @@
+2026-11-18 05:13:26,205 INFO campaign_run run 80ff49e25aec: r1_history on pyright 1.1.414, soimort/you-get@049548f3f3f3 seed 1 settled, targets ['src/you_get/extractors/icourses.py', 'src/you_get/extractors/lrts.py', 'src/you_get/extractors/qie_video.py']
+2026-11-18 05:19:11,443 INFO campaign_run run 80ff49e25aec: 0 candidate(s) in 345s; confirming
+2026-11-18 05:19:11,444 INFO campaign_run run 80ff49e25aec finished: ok, 0 confirmed of 0 candidate(s), 345s

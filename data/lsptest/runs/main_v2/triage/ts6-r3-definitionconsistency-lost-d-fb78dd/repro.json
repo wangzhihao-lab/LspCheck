@@ -1,0 +1,125 @@
+{
+ "format": 1,
+ "campaign": "main_v2",
+ "vid": "14b6c42ad69a-v00",
+ "run_id": "14b6c42ad69a",
+ "oracle": "r3_routes",
+ "server": {
+  "kind": "ts6",
+  "version": "6.0.3"
+ },
+ "project": {
+  "name": "DayuanJiang/next-ai-draw-io@58b73ef761d8",
+  "source": "corpus",
+  "ref": "temp/corpus/DayuanJiang__next-ai-draw-io@58b73ef761d8",
+  "commit": "58b73ef761d8a5e5b2afa2c360428d3dea996312",
+  "language": "typescript"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "components/code-block.tsx",
+    "positions": [],
+    "ends": [],
+    "names": []
+   },
+   {
+    "path": "components/ui/command.tsx",
+    "positions": [
+     [
+      168,
+      7
+     ]
+    ],
+    "ends": [],
+    "names": [
+     ""
+    ]
+   },
+   {
+    "path": "packages/mcp-server/src/pages.ts",
+    "positions": [],
+    "ends": [],
+    "names": []
+   }
+  ]
+ },
+ "key": {
+  "method": "definitionConsistency",
+  "path": "components/ui/command.tsx",
+  "line": 168,
+  "character": 7,
+  "extra": "from:components/ui/command.tsx:177:12"
+ },
+ "ops": [],
+ "case": {
+  "loc": [
+   "components/ui/command.tsx",
+   168,
+   5,
+   168,
+   10
+  ],
+  "sub": "d",
+  "target": [
+   "components/ui/command.tsx",
+   177,
+   12
+  ]
+ },
+ "shape": "definitionConsistency:lost",
+ "signature": "ts6|r3_routes|definitionConsistency:lost",
+ "expected": [
+  [
+   "components/ui/command.tsx",
+   168,
+   5,
+   168,
+   10
+  ]
+ ],
+ "actual": [],
+ "reproduced": "3/3",
+ "note": "flake 3/3 [r1:SCR r2:SCR r3:SCR] in 132s",
+ "violation": {
+  "oracle": "r3_routes",
+  "server": "ts6-6.0.3",
+  "project": "DayuanJiang/next-ai-draw-io@58b73ef761d8",
+  "key": {
+   "method": "definitionConsistency",
+   "path": "components/ui/command.tsx",
+   "line": 168,
+   "character": 7,
+   "extra": "from:components/ui/command.tsx:177:12"
+  },
+  "expected": [
+   [
+    "components/ui/command.tsx",
+    168,
+    5,
+    168,
+    10
+   ]
+  ],
+  "actual": [],
+  "ops": [],
+  "detail": "{\"case\": {\"loc\": [\"components/ui/command.tsx\", 168, 5, 168, 10], \"sub\": \"d\", \"target\": [\"components/ui/command.tsx\", 177, 12]}, \"note\": \"flake 3/3 [r1:SCR r2:SCR r3:SCR] in 132s\", \"shape\": \"definitionConsistency:lost\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "ts6|r3_routes|definitionConsistency:lost",
+  "run_id": "14b6c42ad69a"
+ },
+ "replay_logs": [
+  "logs/ts6-6.0.3-trfb78dd-r3-replay-baseline-20261119-022930-cf4e2b.jsonl.gz",
+  "logs/ts6-6.0.3-trfb78dd-r3-replay-control-20261119-022945-49a311.jsonl.gz"
+ ],
+ "project_files": {},
+ "group": "ts6-r3-definitionconsistency-lost-d-fb78dd",
+ "reduced": true
+}

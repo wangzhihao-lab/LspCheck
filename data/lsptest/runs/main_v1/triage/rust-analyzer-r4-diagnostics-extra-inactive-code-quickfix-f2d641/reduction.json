@@ -1,0 +1,74 @@
+{
+ "vid": "11b3a40bbec3-v00",
+ "ops_before": 0,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 0,
+ "cache_hits": 0,
+ "reduce_seconds": 0.0,
+ "budget_exhausted": false,
+ "probe_log": [],
+ "logs": [
+  "rust-analyzer-2026-09-21-trf2d641-r4-replay-baseline-20260925-173221-f87c96.jsonl.gz",
+  "rust-analyzer-2026-09-21-trf2d641-r4-replay-case-20260925-173112-eece56.jsonl.gz",
+  "rust-analyzer-2026-09-21-trf2d641-r4-replay-control-20260925-173319-e2273e.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [
+   [
+    33,
+    2,
+    36,
+    3,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives: target_os = \"linux\" is disabled"
+   ],
+   [
+    41,
+    2,
+    44,
+    3,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives: target_os = \"macos\" is enabled"
+   ]
+  ],
+  "actual": [
+   [
+    33,
+    2,
+    36,
+    3,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives: target_os = \"linux\" is disabled"
+   ],
+   [
+    41,
+    2,
+    44,
+    3,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives: target_os = \"macos\" is enabled"
+   ],
+   [
+    54,
+    1,
+    73,
+    2,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives: target_os = \"linux\" is disabled"
+   ]
+  ]
+ },
+ "ops_after": 0,
+ "total_seconds": 736.9
+}

@@ -1,0 +1,60 @@
+{
+ "vid": "33f1bc8d2cec-v02",
+ "ops_before": 0,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 0,
+ "cache_hits": 0,
+ "reduce_seconds": 0.0,
+ "budget_exhausted": false,
+ "probe_log": [],
+ "logs": [
+  "ts6-6.0.3-trd8e982-ref-r6-replay-ref-baseline-20260925-164129-bd2590.jsonl.gz",
+  "ts6-6.0.3-trd8e982-ref-r6-replay-ref-control-20260925-164147-ba92fa.jsonl.gz",
+  "ts7-7.0.2-trd8e982-r6-replay-test-baseline-20260925-164047-a4e829.jsonl.gz",
+  "ts7-7.0.2-trd8e982-r6-replay-test-control-20260925-164111-5932b7.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [
+   [
+    "node_modules/.pnpm/@types+react-dom@19.2.3_@types+react@19.2.17/node_modules/@types/react-dom/index.d.ts",
+    8,
+    15,
+    8,
+    22
+   ],
+   [
+    "node_modules/.pnpm/@types+react@19.2.17/node_modules/@types/react/index.d.ts",
+    69,
+    18,
+    69,
+    23
+   ]
+  ],
+  "actual": [
+   [
+    "node_modules/.pnpm/@types+react-dom@19.2.3_@types+react@19.2.17/node_modules/@types/react-dom/index.d.ts",
+    8,
+    15,
+    8,
+    22
+   ],
+   [
+    "node_modules/.pnpm/@types+react@19.2.17/node_modules/@types/react/index.d.ts",
+    69,
+    18,
+    69,
+    23
+   ],
+   [
+    "node_modules/@types/react-dom/index.d.ts",
+    8,
+    15,
+    8,
+    22
+   ]
+  ]
+ },
+ "ops_after": 0,
+ "total_seconds": 300.8
+}

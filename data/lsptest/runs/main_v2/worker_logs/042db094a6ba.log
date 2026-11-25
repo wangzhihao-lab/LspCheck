@@ -1,0 +1,3 @@
+2026-11-18 00:58:32,735 INFO campaign_run run 042db094a6ba: r1_history on pyright 1.1.414, scrapy/scrapy@91d87364637c seed 1 settled, targets ['tests/AsyncCrawlerProcess/asyncio_custom_loop_custom_settings_different.py', 'tests/AsyncCrawlerProcess/default_name_resolver.py', 'tests/utils/decorators.py']
+2026-11-18 01:04:44,232 INFO campaign_run run 042db094a6ba: 0 candidate(s) in 372s; confirming
+2026-11-18 01:04:44,233 INFO campaign_run run 042db094a6ba finished: ok, 0 confirmed of 0 candidate(s), 372s

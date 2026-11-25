@@ -1,0 +1,152 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "3ed0e189007e-v08",
+ "run_id": "3ed0e189007e",
+ "oracle": "r1_history",
+ "server": {
+  "kind": "ts6",
+  "version": "6.0.3"
+ },
+ "project": {
+  "name": "pmndrs/zustand@b57db4f86ef1",
+  "source": "corpus",
+  "ref": "temp/corpus/pmndrs__zustand@b57db4f86ef1",
+  "commit": "b57db4f86ef179285da216eeb291266da82c361c",
+  "language": "typescript"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "race0",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "src/react.ts",
+    "positions": [],
+    "ends": [],
+    "names": []
+   },
+   {
+    "path": "src/vanilla/shallow.ts",
+    "positions": [],
+    "ends": [],
+    "names": []
+   },
+   {
+    "path": "tests/persistSync.test.tsx",
+    "positions": [
+     [
+      467,
+      20
+     ]
+    ],
+    "ends": [],
+    "names": [
+     ""
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "signatureHelp",
+  "path": "tests/persistSync.test.tsx",
+  "line": 467,
+  "character": 20,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "src/react.ts"
+  },
+  {
+   "kind": "open",
+   "path": "src/vanilla/shallow.ts"
+  },
+  {
+   "kind": "open",
+   "path": "tests/persistSync.test.tsx"
+  },
+  {
+   "kind": "fs_rename",
+   "path": "src/react.ts",
+   "new_path": "src/react_rt.ts"
+  },
+  {
+   "kind": "fs_rename",
+   "path": "src/react_rt.ts",
+   "new_path": "src/react.ts"
+  }
+ ],
+ "case": {
+  "chain_step": 0,
+  "families": [],
+  "family": "H5",
+  "history_index": 0,
+  "history_seed": 1001,
+  "mode": "fresh",
+  "note": "rename src/react.ts -> src/react_rt.ts -> back",
+  "seed": 1,
+  "timing": "race0"
+ },
+ "shape": "signatureHelp:changed",
+ "signature": "ts6|r1_history|signatureHelp:changed",
+ "expected": "fromEntries(entries: Iterable<readonly [PropertyKey, number]>): { [k: string]: number; }",
+ "actual": "fromEntries(entries: Iterable<readonly [PropertyKey, unknown]>): { [k: string]: unknown; }",
+ "reproduced": "3/3",
+ "note": "H5: rename src/react.ts -> src/react_rt.ts -> back; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 138s",
+ "violation": {
+  "oracle": "r1_history",
+  "server": "ts6-6.0.3",
+  "project": "pmndrs/zustand@b57db4f86ef1",
+  "key": {
+   "method": "signatureHelp",
+   "path": "tests/persistSync.test.tsx",
+   "line": 467,
+   "character": 20,
+   "extra": ""
+  },
+  "expected": "fromEntries(entries: Iterable<readonly [PropertyKey, number]>): { [k: string]: number; }",
+  "actual": "fromEntries(entries: Iterable<readonly [PropertyKey, unknown]>): { [k: string]: unknown; }",
+  "ops": [
+   {
+    "kind": "open",
+    "path": "src/react.ts"
+   },
+   {
+    "kind": "open",
+    "path": "src/vanilla/shallow.ts"
+   },
+   {
+    "kind": "open",
+    "path": "tests/persistSync.test.tsx"
+   },
+   {
+    "kind": "fs_rename",
+    "path": "src/react.ts",
+    "new_path": "src/react_rt.ts"
+   },
+   {
+    "kind": "fs_rename",
+    "path": "src/react_rt.ts",
+    "new_path": "src/react.ts"
+   }
+  ],
+  "detail": "{\"case\": {\"chain_step\": 0, \"families\": [], \"family\": \"H5\", \"history_index\": 0, \"history_seed\": 1001, \"mode\": \"fresh\", \"note\": \"rename src/react.ts -> src/react_rt.ts -> back\", \"seed\": 1, \"timing\": \"race0\"}, \"note\": \"H5: rename src/react.ts -> src/react_rt.ts -> back; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 138s\", \"shape\": \"signatureHelp:changed\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "ts6|r1_history|signatureHelp:changed",
+  "run_id": "3ed0e189007e"
+ },
+ "replay_logs": [
+  "logs/ts6-6.0.3-trdb5a5e-replay-baseline-20260925-180826-b4e470.jsonl.gz",
+  "logs/ts6-6.0.3-trdb5a5e-replay-control-20260925-180826-c6912e.jsonl.gz",
+  "logs/ts6-6.0.3-trdb5a5e-replay-history-20260925-180832-b721ec.jsonl.gz"
+ ],
+ "project_files": {},
+ "group": "ts6-r1-signaturehelp-changed-h5-db5a5e",
+ "reduced": true
+}

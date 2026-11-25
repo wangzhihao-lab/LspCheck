@@ -1,0 +1,40 @@
+{
+ "std_pre_exec": {
+  "file": "~/.rustup/toolchains/stable-aarch64-apple-darwin/lib/rustlib/src/rust/library/std/src/os/unix/process.rs",
+  "decls": [
+   "110: unsafe fn pre_exec<F>(&mut self, f: F) -> &mut process::Command",
+   "239: unsafe fn pre_exec<F>(&mut self, f: F) -> &mut process::Command"
+  ]
+ },
+ "libc_setsid": {
+  "locked_version": "0.2.176",
+  "file": "~/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/libc-0.2.176/src/unix/mod.rs",
+  "decl": "1079: pub fn setsid() -> pid_t;",
+  "enclosing_block": "733: extern \"C\" {"
+ },
+ "alacritty_lines_248_251": [
+  "    unsafe {",
+  "        builder.pre_exec(move || {",
+  "            // Create a new process group.",
+  "            let err = libc::setsid();"
+ ],
+ "tokio_macros_test": {
+  "locked_version": "2.6.1",
+  "file": "~/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-macros-2.6.1/src/lib.rs",
+  "test_decl": [
+   "569: #[proc_macro_attribute] / pub fn test(args: TokenStream, item: TokenStream) -> TokenStream {"
+  ]
+ },
+ "auth_lines_540_542_564": [
+  "    #[tokio::test]",
+  "    #[serial_test::serial]",
+  "    async fn test_load_credentials_adc_env_var_authorized_user() {",
+  "        match res.unwrap() {"
+ ],
+ "ra_modifier_docs": [
+  "// |macro| Emitted for function-like macros. |",
+  "// |unresolvedReference| Emitted for unresolved references, names that rust-analyzer can't find the definition of.|",
+  "// |macro|  Emitted for tokens inside macro call.|",
+  "// |unsafe| Emitted for unsafe operations, like unsafe function calls, as well as the `unsafe` token.|"
+ ]
+}

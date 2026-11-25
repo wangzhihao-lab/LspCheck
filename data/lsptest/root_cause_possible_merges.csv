@@ -1,0 +1,5 @@
+causes,reason
+C18 C21,"pyright infers a different type for a value after other files were opened, edited or requested; one inference cache could explain both"
+C33 C34 C35,"TypeScript 6 spelling fixes that propose an unrelated name in scope (eval, the variable being declared); one candidate filter could explain all three"
+C27 C28,"rust-analyzer completions that insert text duplicating what already follows the cursor (!( of a macro call, an attribute's argument list)"
+C1 C31,TypeScript 6 answers that change after a file is renamed and restored; C31 differs from C1 by reproducing with the willRenameFiles edits applied and not on the year-old release

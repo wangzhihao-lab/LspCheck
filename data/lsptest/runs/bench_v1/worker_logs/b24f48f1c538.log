@@ -1,0 +1,12 @@
+2026-09-24 20:10:16,430 INFO campaign_run run b24f48f1c538: r5_transforms on rust-analyzer 2025-05-05, rust-analyzer-19694 seed 1 settled, targets ['src/main.rs']
+2026-09-24 20:11:05,257 INFO campaign_run run b24f48f1c538: 4 candidate(s) in 49s; confirming
+2026-09-24 20:11:22,555 INFO flake replay 1/3 of rust-analyzer|r5_transforms|codeAction:key-lost: settled=True control_stable=True reproduced=True (17.3s)
+2026-09-24 20:11:39,436 INFO flake replay 2/3 of rust-analyzer|r5_transforms|codeAction:key-lost: settled=True control_stable=True reproduced=True (16.9s)
+2026-09-24 20:11:56,016 INFO flake replay 3/3 of rust-analyzer|r5_transforms|codeAction:key-lost: settled=True control_stable=True reproduced=True (16.6s)
+2026-09-24 20:12:12,695 INFO flake replay 1/3 of rust-analyzer|r5_transforms|diagnostics:moved:E0268,syntax-error: settled=True control_stable=True reproduced=True (16.7s)
+2026-09-24 20:12:29,288 INFO flake replay 2/3 of rust-analyzer|r5_transforms|diagnostics:moved:E0268,syntax-error: settled=True control_stable=True reproduced=True (16.6s)
+2026-09-24 20:12:46,022 INFO flake replay 3/3 of rust-analyzer|r5_transforms|diagnostics:moved:E0268,syntax-error: settled=True control_stable=True reproduced=True (16.7s)
+2026-09-24 20:13:02,663 INFO flake replay 1/3 of rust-analyzer|r5_transforms|semanticTokens:changed: settled=True control_stable=True reproduced=True (16.6s)
+2026-09-24 20:13:19,596 INFO flake replay 2/3 of rust-analyzer|r5_transforms|semanticTokens:changed: settled=True control_stable=True reproduced=True (16.9s)
+2026-09-24 20:13:36,394 INFO flake replay 3/3 of rust-analyzer|r5_transforms|semanticTokens:changed: settled=True control_stable=True reproduced=True (16.8s)
+2026-09-24 20:13:36,407 INFO campaign_run run b24f48f1c538 finished: ok, 3 confirmed of 4 candidate(s), 200s

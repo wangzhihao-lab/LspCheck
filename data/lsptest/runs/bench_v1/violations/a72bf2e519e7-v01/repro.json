@@ -1,0 +1,469 @@
+{
+ "format": 1,
+ "campaign": "bench_v1",
+ "vid": "a72bf2e519e7-v01",
+ "run_id": "a72bf2e519e7",
+ "oracle": "r1_history",
+ "server": {
+  "kind": "pyright",
+  "version": "1.1.374"
+ },
+ "project": {
+  "name": "pyright-8133",
+  "source": "dir",
+  "ref": "data/lsp_bench/cases/pyright-8133/project",
+  "commit": "",
+  "language": "python"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 120.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "main.py",
+    "positions": [
+     [
+      0,
+      9
+     ],
+     [
+      1,
+      3
+     ],
+     [
+      1,
+      10
+     ],
+     [
+      2,
+      7
+     ],
+     [
+      3,
+      4
+     ],
+     [
+      3,
+      9
+     ],
+     [
+      3,
+      16
+     ],
+     [
+      3,
+      22
+     ],
+     [
+      3,
+      29
+     ],
+     [
+      3,
+      45
+     ],
+     [
+      3,
+      53
+     ],
+     [
+      3,
+      62
+     ],
+     [
+      3,
+      73
+     ],
+     [
+      3,
+      82
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      12
+     ],
+     [
+      1,
+      6
+     ],
+     [
+      1,
+      13
+     ],
+     [
+      2,
+      9
+     ],
+     [
+      3,
+      5
+     ],
+     [
+      3,
+      11
+     ],
+     [
+      3,
+      19
+     ],
+     [
+      3,
+      25
+     ],
+     [
+      3,
+      33
+     ],
+     [
+      3,
+      50
+     ],
+     [
+      3,
+      56
+     ],
+     [
+      3,
+      67
+     ],
+     [
+      3,
+      79
+     ],
+     [
+      3,
+      84
+     ]
+    ],
+    "names": [
+     "attrs",
+     "attrs",
+     "define",
+     "Foo",
+     "a",
+     "bool",
+     "attrs",
+     "field",
+     "default",
+     "validator",
+     "attrs",
+     "validators",
+     "instance_of",
+     "bool"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "definition",
+  "path": "main.py",
+  "line": 1,
+  "character": 10,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "main.py"
+  },
+  {
+   "kind": "change",
+   "path": "main.py",
+   "start": [
+    0,
+    7
+   ],
+   "end": [
+    0,
+    12
+   ],
+   "text": "attrs_x"
+  },
+  {
+   "kind": "change",
+   "path": "main.py",
+   "start": [
+    0,
+    7
+   ],
+   "end": [
+    0,
+    14
+   ],
+   "text": "attrs"
+  },
+  {
+   "kind": "request",
+   "path": "main.py",
+   "start": [
+    3,
+    79
+   ],
+   "text": "hover"
+  },
+  {
+   "kind": "request",
+   "path": "main.py",
+   "start": [
+    3,
+    56
+   ],
+   "text": "references"
+  },
+  {
+   "kind": "request",
+   "path": "main.py",
+   "start": [
+    3,
+    29
+   ],
+   "text": "completion"
+  },
+  {
+   "kind": "request",
+   "path": "main.py",
+   "start": [
+    3,
+    9
+   ],
+   "text": "typeDefinition"
+  },
+  {
+   "kind": "request",
+   "path": "main.py",
+   "start": [
+    1,
+    3
+   ],
+   "text": "signatureHelp"
+  },
+  {
+   "kind": "request",
+   "path": "main.py",
+   "start": [
+    3,
+    73
+   ],
+   "text": "definition"
+  },
+  {
+   "kind": "request",
+   "path": "main.py",
+   "start": [
+    2,
+    7
+   ],
+   "text": "definition"
+  },
+  {
+   "kind": "request",
+   "path": "main.py",
+   "start": [
+    1,
+    10
+   ],
+   "text": "documentHighlight"
+  },
+  {
+   "kind": "request",
+   "path": "main.py",
+   "start": [
+    3,
+    19
+   ],
+   "text": "hover"
+  }
+ ],
+ "case": {
+  "chain_step": 0,
+  "families": [],
+  "family": "H8",
+  "history_index": 2,
+  "history_seed": 2005,
+  "mode": "fresh",
+  "note": "after main.py: replace 'attrs' by 'attrs_x' on line 0 and its inverse, 9 requests in a shuffled order: hover@main.py:3:79, references@main.py:3:56, completion@main.py:3:29, typeDefinition@main.py:3:9, signatureHelp@main.py:1:3, ...",
+  "seed": 2,
+  "timing": "settled"
+ },
+ "shape": "definition:lost",
+ "signature": "pyright|r1_history|definition:lost",
+ "expected": [
+  [
+   "~/Library/Python/3.14/lib/python/site-packages/attrs/__init__.pyi",
+   158,
+   4,
+   158,
+   10
+  ],
+  [
+   "~/Library/Python/3.14/lib/python/site-packages/attrs/__init__.pyi",
+   184,
+   4,
+   184,
+   10
+  ]
+ ],
+ "actual": [],
+ "reproduced": "3/3",
+ "note": "H8: after main.py: replace 'attrs' by 'attrs_x' on line 0 and its inverse, 9 requests in a shuffled order: hover@main.py:3:79, references@main.py:3:56, completion@main.py:3:29, typeDefinition@main.py:3:9,; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 49s",
+ "violation": {
+  "oracle": "r1_history",
+  "server": "pyright-1.1.374",
+  "project": "pyright-8133",
+  "key": {
+   "method": "definition",
+   "path": "main.py",
+   "line": 1,
+   "character": 10,
+   "extra": ""
+  },
+  "expected": [
+   [
+    "~/Library/Python/3.14/lib/python/site-packages/attrs/__init__.pyi",
+    158,
+    4,
+    158,
+    10
+   ],
+   [
+    "~/Library/Python/3.14/lib/python/site-packages/attrs/__init__.pyi",
+    184,
+    4,
+    184,
+    10
+   ]
+  ],
+  "actual": [],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "main.py"
+   },
+   {
+    "kind": "change",
+    "path": "main.py",
+    "start": [
+     0,
+     7
+    ],
+    "end": [
+     0,
+     12
+    ],
+    "text": "attrs_x"
+   },
+   {
+    "kind": "change",
+    "path": "main.py",
+    "start": [
+     0,
+     7
+    ],
+    "end": [
+     0,
+     14
+    ],
+    "text": "attrs"
+   },
+   {
+    "kind": "request",
+    "path": "main.py",
+    "start": [
+     3,
+     79
+    ],
+    "text": "hover"
+   },
+   {
+    "kind": "request",
+    "path": "main.py",
+    "start": [
+     3,
+     56
+    ],
+    "text": "references"
+   },
+   {
+    "kind": "request",
+    "path": "main.py",
+    "start": [
+     3,
+     29
+    ],
+    "text": "completion"
+   },
+   {
+    "kind": "request",
+    "path": "main.py",
+    "start": [
+     3,
+     9
+    ],
+    "text": "typeDefinition"
+   },
+   {
+    "kind": "request",
+    "path": "main.py",
+    "start": [
+     1,
+     3
+    ],
+    "text": "signatureHelp"
+   },
+   {
+    "kind": "request",
+    "path": "main.py",
+    "start": [
+     3,
+     73
+    ],
+    "text": "definition"
+   },
+   {
+    "kind": "request",
+    "path": "main.py",
+    "start": [
+     2,
+     7
+    ],
+    "text": "definition"
+   },
+   {
+    "kind": "request",
+    "path": "main.py",
+    "start": [
+     1,
+     10
+    ],
+    "text": "documentHighlight"
+   },
+   {
+    "kind": "request",
+    "path": "main.py",
+    "start": [
+     3,
+     19
+    ],
+    "text": "hover"
+   }
+  ],
+  "detail": "{\"case\": {\"chain_step\": 0, \"families\": [], \"family\": \"H8\", \"history_index\": 2, \"history_seed\": 2005, \"mode\": \"fresh\", \"note\": \"after main.py: replace 'attrs' by 'attrs_x' on line 0 and its inverse, 9 requests in a shuffled order: hover@main.py:3:79, references@main.py:3:56, completion@main.py:3:29, typeDefinition@main.py:3:9, signatureHelp@main.py:1:3, ...\", \"seed\": 2, \"timing\": \"settled\"}, \"note\": \"H8: after main.py: replace 'attrs' by 'attrs_x' on line 0 and its inverse, 9 requests in a shuffled order: hover@main.py:3:79, references@main.py:3:56, completion@main.py:3:29, typeDefinition@main.py:3:9,; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 49s\", \"shape\": \"definition:lost\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "pyright|r1_history|definition:lost",
+  "run_id": "a72bf2e519e7"
+ },
+ "replay_logs": [
+  "logs/pyright-1.1.374-a72bf2e519e7-replay-baseline-20260925-033249-2441d1.jsonl.gz",
+  "logs/pyright-1.1.374-a72bf2e519e7-replay-control-20260925-033249-d83ae3.jsonl.gz",
+  "logs/pyright-1.1.374-a72bf2e519e7-replay-history-20260925-033253-39823b.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

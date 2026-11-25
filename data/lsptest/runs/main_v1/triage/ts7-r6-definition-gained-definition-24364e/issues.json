@@ -1,0 +1,90 @@
+{
+ "queries": [
+  "definition unexpected repo:microsoft/typescript-go is:issue",
+  "definition \"TypeScript 6\" repo:microsoft/typescript-go is:issue"
+ ],
+ "matches": [
+  {
+   "repo": "microsoft/typescript-go",
+   "number": 2964,
+   "title": "[ServerErrors][JavaScript] linux-x64-7.0.0-dev.20260303.1 vs ",
+   "url": "https://github.com/microsoft/typescript-go/issues/2964",
+   "state": "closed",
+   "created": "2026-03-03",
+   "comments": 11,
+   "query": "definition unexpected repo:microsoft/typescript-go is:issue"
+  },
+  {
+   "repo": "microsoft/typescript-go",
+   "number": 2780,
+   "title": "High memory consumption in a large pnpm monorepo",
+   "url": "https://github.com/microsoft/typescript-go/issues/2780",
+   "state": "closed",
+   "created": "2026-02-13",
+   "comments": 52,
+   "query": "definition unexpected repo:microsoft/typescript-go is:issue"
+  },
+  {
+   "repo": "microsoft/typescript-go",
+   "number": 4380,
+   "title": "[ServerErrors][TypeScript] main vs ",
+   "url": "https://github.com/microsoft/typescript-go/issues/4380",
+   "state": "closed",
+   "created": "2026-06-19",
+   "comments": 7,
+   "query": "definition unexpected repo:microsoft/typescript-go is:issue"
+  },
+  {
+   "repo": "microsoft/typescript-go",
+   "number": 2988,
+   "title": "[ServerErrors][TypeScript] main vs ",
+   "url": "https://github.com/microsoft/typescript-go/issues/2988",
+   "state": "closed",
+   "created": "2026-03-05",
+   "comments": 82,
+   "query": "definition unexpected repo:microsoft/typescript-go is:issue"
+  },
+  {
+   "repo": "microsoft/typescript-go",
+   "number": 4863,
+   "title": "TS7 fails to emit types for `@type`-annotated functions when they reference externally-defined symbols",
+   "url": "https://github.com/microsoft/typescript-go/issues/4863",
+   "state": "closed",
+   "created": "2026-08-10",
+   "comments": 0,
+   "query": "definition \"TypeScript 6\" repo:microsoft/typescript-go is:issue"
+  },
+  {
+   "repo": "microsoft/typescript-go",
+   "number": 4740,
+   "title": "Divergence from tsc: assignment accepted by 5.9/6.0 is rejected by `tsgo` (recursive DeepPartial + contravariant `this` + UnionToIntersection cycle, reduced from chart.js)",
+   "url": "https://github.com/microsoft/typescript-go/issues/4740",
+   "state": "closed",
+   "created": "2026-07-25",
+   "comments": 2,
+   "query": "definition \"TypeScript 6\" repo:microsoft/typescript-go is:issue"
+  },
+  {
+   "repo": "microsoft/typescript-go",
+   "number": 4388,
+   "title": "Parameters not automatically filled for JSdoc comments",
+   "url": "https://github.com/microsoft/typescript-go/issues/4388",
+   "state": "closed",
+   "created": "2026-06-22",
+   "comments": 9,
+   "query": "definition \"TypeScript 6\" repo:microsoft/typescript-go is:issue"
+  },
+  {
+   "repo": "microsoft/typescript-go",
+   "number": 4437,
+   "title": "`checkJs` seems to default to true erroneously",
+   "url": "https://github.com/microsoft/typescript-go/issues/4437",
+   "state": "closed",
+   "created": "2026-06-24",
+   "comments": 6,
+   "query": "definition \"TypeScript 6\" repo:microsoft/typescript-go is:issue"
+  }
+ ],
+ "notes": [],
+ "authenticated": true
+}

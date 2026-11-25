@@ -1,0 +1,505 @@
+{
+ "format": 1,
+ "campaign": "main_v2",
+ "vid": "06365021d85d-v00",
+ "run_id": "06365021d85d",
+ "oracle": "r2_handles",
+ "server": {
+  "kind": "rust-analyzer",
+  "version": "2026-09-21"
+ },
+ "project": {
+  "name": "googleworkspace/cli@a3768d0e82ad",
+  "source": "corpus",
+  "ref": "temp/corpus/googleworkspace__cli@a3768d0e82ad",
+  "commit": "a3768d0e82ad83cca2da97724e46bea4ff0e6dbd",
+  "language": "rust"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "crates/google-workspace-cli/src/auth.rs",
+    "positions": [
+     [
+      71,
+      68
+     ],
+     [
+      223,
+      27
+     ],
+     [
+      355,
+      44
+     ],
+     [
+      406,
+      57
+     ],
+     [
+      525,
+      29
+     ],
+     [
+      553,
+      27
+     ],
+     [
+      563,
+      15
+     ],
+     [
+      715,
+      82
+     ],
+     [
+      807,
+      39
+     ],
+     [
+      864,
+      41
+     ],
+     [
+      956,
+      29
+     ],
+     [
+      966,
+      52
+     ]
+    ],
+    "ends": [
+     [
+      71,
+      71
+     ],
+     [
+      223,
+      35
+     ],
+     [
+      355,
+      56
+     ],
+     [
+      406,
+      61
+     ],
+     [
+      525,
+      40
+     ],
+     [
+      553,
+      30
+     ],
+     [
+      563,
+      17
+     ],
+     [
+      715,
+      84
+     ],
+     [
+      807,
+      44
+     ],
+     [
+      864,
+      44
+     ],
+     [
+      956,
+      51
+     ],
+     [
+      966,
+      54
+     ]
+    ],
+    "names": [
+     "status",
+     "credential_store",
+     "load_encrypted_from_path",
+     "adc_path",
+     "load_credentials_inner",
+     "to_str",
+     "res",
+     "file",
+     "encrypted",
+     "unwrap",
+     "test_get_quota_project_priority_adc_fallback",
+     "tmp"
+    ]
+   },
+   {
+    "path": "crates/google-workspace-cli/src/helpers/events/mod.rs",
+    "positions": [
+     [
+      32,
+      28
+     ],
+     [
+      55,
+      10
+     ],
+     [
+      109,
+      27
+     ],
+     [
+      120,
+      27
+     ],
+     [
+      140,
+      27
+     ],
+     [
+      151,
+      26
+     ],
+     [
+      174,
+      9
+     ],
+     [
+      180,
+      34
+     ],
+     [
+      184,
+      44
+     ],
+     [
+      184,
+      58
+     ],
+     [
+      198,
+      8
+     ],
+     [
+      200,
+      15
+     ]
+    ],
+    "ends": [
+     [
+      32,
+      39
+     ],
+     [
+      55,
+      12
+     ],
+     [
+      109,
+      29
+     ],
+     [
+      120,
+      29
+     ],
+     [
+      140,
+      29
+     ],
+     [
+      151,
+      28
+     ],
+     [
+      174,
+      11
+     ],
+     [
+      180,
+      36
+     ],
+     [
+      184,
+      48
+     ],
+     [
+      184,
+      67
+     ],
+     [
+      198,
+      10
+     ],
+     [
+      200,
+      18
+     ]
+    ],
+    "names": [
+     "WORKSPACE_EVENTS_SCOPE",
+     "_doc",
+     "help",
+     "long",
+     "long",
+     "new",
+     "doc",
+     "doc",
+     "matches",
+     "subcommand_matches",
+     "test",
+     "helper"
+    ]
+   },
+   {
+    "path": "crates/google-workspace-cli/src/schema.rs",
+    "positions": [
+     [
+      51,
+      23
+     ],
+     [
+      60,
+      15
+     ],
+     [
+      107,
+      21
+     ],
+     [
+      177,
+      43
+     ],
+     [
+      197,
+      29
+     ],
+     [
+      204,
+      8
+     ],
+     [
+      243,
+      43
+     ],
+     [
+      284,
+      18
+     ],
+     [
+      288,
+      43
+     ],
+     [
+      289,
+      47
+     ],
+     [
+      331,
+      22
+     ],
+     [
+      432,
+      28
+     ]
+    ],
+    "ends": [
+     [
+      51,
+      26
+     ],
+     [
+      60,
+      19
+     ],
+     [
+      107,
+      26
+     ],
+     [
+      177,
+      47
+     ],
+     [
+      197,
+      32
+     ],
+     [
+      204,
+      9
+     ],
+     [
+      243,
+      45
+     ],
+     [
+      284,
+      20
+     ],
+     [
+      288,
+      45
+     ],
+     [
+      289,
+      50
+     ],
+     [
+      331,
+      24
+     ],
+     [
+      432,
+      33
+     ]
+    ],
+    "names": [
+     "schema",
+     "println",
+     "RestMethod",
+     "resp_ref",
+     "param",
+     "p",
+     "desc",
+     "map",
+     "doc",
+     "clone",
+     "Some",
+     "to_string"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "completionResolve",
+  "path": "crates/google-workspace-cli/src/auth.rs",
+  "line": 406,
+  "character": 61,
+  "extra": "end|top2|None|20|null|7fffffe7|0"
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "crates/google-workspace-cli/src/auth.rs"
+  },
+  {
+   "kind": "change",
+   "path": "crates/google-workspace-cli/src/auth.rs",
+   "start": [
+    0,
+    0
+   ],
+   "end": [
+    0,
+    0
+   ],
+   "text": "\n\n"
+  }
+ ],
+ "case": {
+  "extra": "end",
+  "path": "crates/google-workspace-cli/src/auth.rs",
+  "shift": {
+   "col": 0,
+   "line": 0,
+   "text": "\n\n",
+   "variant": "top"
+  },
+  "sub": "completion",
+  "where": [
+   406,
+   61
+  ]
+ },
+ "shape": "completionResolve:changed",
+ "signature": "rust-analyzer|r2_handles|completionResolve:changed",
+ "expected": [
+  [
+   "textEdit",
+   408,
+   53,
+   408,
+   61,
+   "None$0"
+  ]
+ ],
+ "actual": [
+  [
+   "textEdit",
+   407,
+   0,
+   406,
+   61,
+   "None$0"
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "flake 3/3 [r1:SCR r2:SCR r3:SCR] in 146s",
+ "violation": {
+  "oracle": "r2_handles",
+  "server": "rust-analyzer-2026-09-21",
+  "project": "googleworkspace/cli@a3768d0e82ad",
+  "key": {
+   "method": "completionResolve",
+   "path": "crates/google-workspace-cli/src/auth.rs",
+   "line": 406,
+   "character": 61,
+   "extra": "end|top2|None|20|null|7fffffe7|0"
+  },
+  "expected": [
+   [
+    "textEdit",
+    408,
+    53,
+    408,
+    61,
+    "None$0"
+   ]
+  ],
+  "actual": [
+   [
+    "textEdit",
+    407,
+    0,
+    406,
+    61,
+    "None$0"
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "crates/google-workspace-cli/src/auth.rs"
+   },
+   {
+    "kind": "change",
+    "path": "crates/google-workspace-cli/src/auth.rs",
+    "start": [
+     0,
+     0
+    ],
+    "end": [
+     0,
+     0
+    ],
+    "text": "\n\n"
+   }
+  ],
+  "detail": "{\"case\": {\"extra\": \"end\", \"path\": \"crates/google-workspace-cli/src/auth.rs\", \"shift\": {\"col\": 0, \"line\": 0, \"text\": \"\\n\\n\", \"variant\": \"top\"}, \"sub\": \"completion\", \"where\": [406, 61]}, \"note\": \"flake 3/3 [r1:SCR r2:SCR r3:SCR] in 146s\", \"shape\": \"completionResolve:changed\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "rust-analyzer|r2_handles|completionResolve:changed",
+  "run_id": "06365021d85d"
+ },
+ "replay_logs": [
+  "logs/rust-analyzer-2026-09-21-06365021d85d-r2-replay-20261118-004311-199e43.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

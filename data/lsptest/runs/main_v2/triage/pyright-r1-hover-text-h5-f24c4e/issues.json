@@ -1,0 +1,92 @@
+{
+ "queries": [
+  "\"rename file\" in:title repo:microsoft/pyright is:issue",
+  "hover wrong repo:microsoft/pyright is:issue",
+  "hover \"rename file\" repo:microsoft/pyright is:issue",
+  "hover stale repo:microsoft/pyright is:issue"
+ ],
+ "matches": [
+  {
+   "repo": "microsoft/pyright",
+   "number": 375,
+   "title": "rename symbol only seems to apply to open files",
+   "url": "https://github.com/microsoft/pyright/issues/375",
+   "state": "closed",
+   "created": "2019-11-28",
+   "comments": 7,
+   "query": "\"rename file\" in:title repo:microsoft/pyright is:issue"
+  },
+  {
+   "repo": "microsoft/pyright",
+   "number": 11317,
+   "title": "LSP: Slow semantic completion for built in types",
+   "url": "https://github.com/microsoft/pyright/issues/11317",
+   "state": "closed",
+   "created": "2026-03-06",
+   "comments": 2,
+   "query": "hover wrong repo:microsoft/pyright is:issue"
+  },
+  {
+   "repo": "microsoft/pyright",
+   "number": 10534,
+   "title": "How do I wrap functions in a class with a __call__ method while preserving both types and docstrings?",
+   "url": "https://github.com/microsoft/pyright/issues/10534",
+   "state": "closed",
+   "created": "2025-06-03",
+   "comments": 3,
+   "query": "hover wrong repo:microsoft/pyright is:issue"
+  },
+  {
+   "repo": "microsoft/pyright",
+   "number": 1118,
+   "title": "reportUnusedVariable ignore pattern",
+   "url": "https://github.com/microsoft/pyright/issues/1118",
+   "state": "closed",
+   "created": "2020-10-23",
+   "comments": 116,
+   "query": "hover wrong repo:microsoft/pyright is:issue"
+  },
+  {
+   "repo": "microsoft/pyright",
+   "number": 10229,
+   "title": "Variance check is inconsistent",
+   "url": "https://github.com/microsoft/pyright/issues/10229",
+   "state": "closed",
+   "created": "2025-03-31",
+   "comments": 3,
+   "query": "hover wrong repo:microsoft/pyright is:issue"
+  },
+  {
+   "repo": "microsoft/pyright",
+   "number": 9605,
+   "title": "2 different overloads are incorrectly considered equivalent",
+   "url": "https://github.com/microsoft/pyright/issues/9605",
+   "state": "closed",
+   "created": "2024-12-19",
+   "comments": 5,
+   "query": "hover wrong repo:microsoft/pyright is:issue"
+  },
+  {
+   "repo": "microsoft/pyright",
+   "number": 4513,
+   "title": "Type of \"xstate\" could not be determined because it refers to itself",
+   "url": "https://github.com/microsoft/pyright/issues/4513",
+   "state": "closed",
+   "created": "2023-01-23",
+   "comments": 11,
+   "query": "hover \"rename file\" repo:microsoft/pyright is:issue"
+  },
+  {
+   "repo": "microsoft/pyright",
+   "number": 588,
+   "title": "separate X.pyi file does not get imported besides X.py",
+   "url": "https://github.com/microsoft/pyright/issues/588",
+   "state": "closed",
+   "created": "2020-03-26",
+   "comments": 6,
+   "query": "hover \"rename file\" repo:microsoft/pyright is:issue"
+  }
+ ],
+ "notes": [],
+ "authenticated": true
+}

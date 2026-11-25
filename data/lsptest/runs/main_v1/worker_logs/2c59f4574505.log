@@ -1,0 +1,6 @@
+2026-09-24 00:23:37,096 INFO campaign_run run 2c59f4574505: r3_routes on rust-analyzer 2026-09-21, alacritty/alacritty@d692748d3f61 seed 2 settled, targets ['alacritty/src/cli.rs', 'alacritty/src/display/window.rs', 'alacritty/src/macos/proc.rs']
+2026-09-24 00:37:21,097 INFO campaign_run run 2c59f4574505: 3 candidate(s) in 824s; confirming
+2026-09-24 00:48:18,750 INFO flake replay 1/3 of rust-analyzer|r3_routes|diagnostics:missing:inactive_code: settled=True control_stable=True reproduced=True (176.0s)
+2026-09-24 00:51:21,095 INFO flake replay 2/3 of rust-analyzer|r3_routes|diagnostics:missing:inactive_code: settled=True control_stable=True reproduced=True (182.3s)
+2026-09-24 00:54:37,069 INFO flake replay 3/3 of rust-analyzer|r3_routes|diagnostics:missing:inactive_code: settled=True control_stable=True reproduced=True (196.0s)
+2026-09-24 00:54:37,129 INFO campaign_run run 2c59f4574505 finished: ok, 1 confirmed of 3 candidate(s), 1860s

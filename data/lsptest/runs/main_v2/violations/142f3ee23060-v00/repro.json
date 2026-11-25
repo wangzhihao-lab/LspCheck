@@ -1,0 +1,467 @@
+{
+ "format": 1,
+ "campaign": "main_v2",
+ "vid": "142f3ee23060-v00",
+ "run_id": "142f3ee23060",
+ "oracle": "r3_routes",
+ "server": {
+  "kind": "rust-analyzer",
+  "version": "2026-09-21"
+ },
+ "project": {
+  "name": "cloudflare/pingora@4487f7b2ab50",
+  "source": "corpus",
+  "ref": "temp/corpus/cloudflare__pingora@4487f7b2ab50",
+  "commit": "4487f7b2ab50f159e4a2cf4f6a6b813f61bb6e19",
+  "language": "rust"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "pingora-core/src/connectors/l4.rs",
+    "positions": [
+     [
+      26,
+      10
+     ],
+     [
+      30,
+      15
+     ],
+     [
+      37,
+      16
+     ],
+     [
+      72,
+      47
+     ],
+     [
+      196,
+      55
+     ],
+     [
+      260,
+      19
+     ],
+     [
+      293,
+      7
+     ],
+     [
+      380,
+      24
+     ],
+     [
+      479,
+      54
+     ],
+     [
+      498,
+      33
+     ],
+     [
+      607,
+      69
+     ],
+     [
+      697,
+      17
+     ]
+    ],
+    "ends": [
+     [
+      26,
+      17
+     ],
+     [
+      30,
+      17
+     ],
+     [
+      37,
+      20
+     ],
+     [
+      72,
+      50
+     ],
+     [
+      196,
+      59
+     ],
+     [
+      260,
+      21
+     ],
+     [
+      293,
+      11
+     ],
+     [
+      380,
+      36
+     ],
+     [
+      479,
+      56
+     ],
+     [
+      498,
+      35
+     ],
+     [
+      607,
+      72
+     ],
+     [
+      697,
+      21
+     ]
+    ],
+    "names": [
+     "pingora_error",
+     "unix",
+     "connect",
+     "Option",
+     "timeout",
+     "Some",
+     "bind_to",
+     "test_conn_error_refused",
+     "Some",
+     "into",
+     "unwrap",
+     "Default"
+    ]
+   },
+   {
+    "path": "pingora-core/src/protocols/tls/boringssl_openssl/mod.rs",
+    "positions": [
+     [
+      16,
+      7
+     ],
+     [
+      18,
+      9
+     ],
+     [
+      19,
+      12
+     ],
+     [
+      21,
+      3
+     ],
+     [
+      22,
+      26
+     ],
+     [
+      24,
+      15
+     ],
+     [
+      24,
+      22
+     ],
+     [
+      24,
+      29
+     ],
+     [
+      24,
+      35
+     ],
+     [
+      25,
+      11
+     ],
+     [
+      27,
+      12
+     ],
+     [
+      27,
+      21
+     ]
+    ],
+    "ends": [
+     [
+      16,
+      10
+     ],
+     [
+      18,
+      13
+     ],
+     [
+      19,
+      21
+     ],
+     [
+      21,
+      5
+     ],
+     [
+      22,
+      30
+     ],
+     [
+      24,
+      17
+     ],
+     [
+      24,
+      25
+     ],
+     [
+      24,
+      31
+     ],
+     [
+      24,
+      37
+     ],
+     [
+      25,
+      14
+     ],
+     [
+      27,
+      15
+     ],
+     [
+      27,
+      24
+     ]
+    ],
+    "names": [
+     "stream",
+     "feature",
+     "pingora_boringssl",
+     "cfg",
+     "ssl_lib",
+     "ssl",
+     "SslRef",
+     "x509",
+     "X509",
+     "stream",
+     "TlsRef",
+     "SslRef"
+    ]
+   },
+   {
+    "path": "pingora-proxy/examples/connection_filter.rs",
+    "positions": [
+     [
+      14,
+      9
+     ],
+     [
+      15,
+      13
+     ],
+     [
+      17,
+      10
+     ],
+     [
+      23,
+      5
+     ],
+     [
+      23,
+      16
+     ],
+     [
+      37,
+      26
+     ],
+     [
+      40,
+      23
+     ],
+     [
+      51,
+      19
+     ],
+     [
+      51,
+      76
+     ],
+     [
+      70,
+      16
+     ],
+     [
+      90,
+      6
+     ],
+     [
+      91,
+      6
+     ]
+    ],
+    "ends": [
+     [
+      14,
+      15
+     ],
+     [
+      15,
+      16
+     ],
+     [
+      17,
+      16
+     ],
+     [
+      23,
+      7
+     ],
+     [
+      23,
+      18
+     ],
+     [
+      37,
+      28
+     ],
+     [
+      40,
+      27
+     ],
+     [
+      51,
+      26
+     ],
+     [
+      51,
+      78
+     ],
+     [
+      70,
+      20
+     ],
+     [
+      90,
+      8
+     ],
+     [
+      91,
+      8
+     ]
+    ],
+    "names": [
+     "async_trait",
+     "Parser",
+     "pingora_core",
+     "std",
+     "Arc",
+     "CTX",
+     "HttpPeer",
+     "should_accept",
+     "bool",
+     "my_proxy",
+     "info",
+     "info"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "highlightVsReferences",
+  "path": "pingora-proxy/examples/connection_filter.rs",
+  "line": 15,
+  "character": 13,
+  "extra": ""
+ },
+ "ops": [],
+ "case": {
+  "path": "pingora-proxy/examples/connection_filter.rs",
+  "pos": [
+   15,
+   13
+  ],
+  "sub": "c"
+ },
+ "shape": "highlightVsReferences:extra",
+ "signature": "rust-analyzer|r3_routes|highlightVsReferences:extra",
+ "expected": [
+  [
+   15,
+   10,
+   15,
+   16
+  ]
+ ],
+ "actual": [
+  [
+   15,
+   10,
+   15,
+   16
+  ],
+  [
+   66,
+   19,
+   66,
+   24
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "8 references; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 1021s",
+ "violation": {
+  "oracle": "r3_routes",
+  "server": "rust-analyzer-2026-09-21",
+  "project": "cloudflare/pingora@4487f7b2ab50",
+  "key": {
+   "method": "highlightVsReferences",
+   "path": "pingora-proxy/examples/connection_filter.rs",
+   "line": 15,
+   "character": 13,
+   "extra": ""
+  },
+  "expected": [
+   [
+    15,
+    10,
+    15,
+    16
+   ]
+  ],
+  "actual": [
+   [
+    15,
+    10,
+    15,
+    16
+   ],
+   [
+    66,
+    19,
+    66,
+    24
+   ]
+  ],
+  "ops": [],
+  "detail": "{\"case\": {\"path\": \"pingora-proxy/examples/connection_filter.rs\", \"pos\": [15, 13], \"sub\": \"c\"}, \"note\": \"8 references; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 1021s\", \"shape\": \"highlightVsReferences:extra\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "rust-analyzer|r3_routes|highlightVsReferences:extra",
+  "run_id": "142f3ee23060"
+ },
+ "replay_logs": [
+  "logs/rust-analyzer-2026-09-21-142f3ee23060-r3-replay-baseline-20261118-121738-495a31.jsonl.gz",
+  "logs/rust-analyzer-2026-09-21-142f3ee23060-r3-replay-control-20261118-122041-4fb2de.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

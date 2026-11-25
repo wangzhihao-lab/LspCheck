@@ -1,0 +1,473 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "210902bea61f-v09",
+ "run_id": "210902bea61f",
+ "oracle": "r1_history",
+ "server": {
+  "kind": "ts6",
+  "version": "6.0.3"
+ },
+ "project": {
+  "name": "pmndrs/zustand@b57db4f86ef1",
+  "source": "corpus",
+  "ref": "temp/corpus/pmndrs__zustand@b57db4f86ef1",
+  "commit": "b57db4f86ef179285da216eeb291266da82c361c",
+  "language": "typescript"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "src/react.ts",
+    "positions": [
+     [
+      0,
+      9
+     ],
+     [
+      1,
+      14
+     ],
+     [
+      5,
+      8
+     ],
+     [
+      7,
+      13
+     ],
+     [
+      22,
+      6
+     ],
+     [
+      25,
+      38
+     ],
+     [
+      29,
+      32
+     ],
+     [
+      31,
+      32
+     ],
+     [
+      32,
+      15
+     ],
+     [
+      40,
+      37
+     ],
+     [
+      49,
+      37
+     ],
+     [
+      52,
+      28
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      12
+     ],
+     [
+      1,
+      20
+     ],
+     [
+      5,
+      14
+     ],
+     [
+      7,
+      24
+     ],
+     [
+      22,
+      10
+     ],
+     [
+      25,
+      43
+     ],
+     [
+      29,
+      42
+     ],
+     [
+      31,
+      36
+     ],
+     [
+      32,
+      21
+     ],
+     [
+      40,
+      38
+     ],
+     [
+      49,
+      38
+     ],
+     [
+      52,
+      34
+     ]
+    ],
+    "names": [
+     "React",
+     "createStore",
+     "StateCreator",
+     "StoreMutatorIdentifier",
+     "selector",
+     "StateSlice",
+     "useSyncExternalStore",
+     "selector",
+     "useCallback",
+     "S",
+     "T",
+     "createState"
+    ]
+   },
+   {
+    "path": "src/vanilla/shallow.ts",
+    "positions": [
+     [
+      12,
+      15
+     ],
+     [
+      15,
+      42
+     ],
+     [
+      16,
+      53
+     ],
+     [
+      17,
+      27
+     ],
+     [
+      21,
+      11
+     ],
+     [
+      33,
+      38
+     ],
+     [
+      34,
+      23
+     ],
+     [
+      38,
+      34
+     ],
+     [
+      44,
+      35
+     ],
+     [
+      47,
+      46
+     ],
+     [
+      70,
+      24
+     ],
+     [
+      71,
+      39
+     ]
+    ],
+    "ends": [
+     [
+      12,
+      19
+     ],
+     [
+      15,
+      45
+     ],
+     [
+      16,
+      55
+     ],
+     [
+      17,
+      29
+     ],
+     [
+      21,
+      13
+     ],
+     [
+      33,
+      42
+     ],
+     [
+      34,
+      26
+     ],
+     [
+      38,
+      37
+     ],
+     [
+      44,
+      37
+     ],
+     [
+      47,
+      47
+     ],
+     [
+      70,
+      27
+     ],
+     [
+      71,
+      42
+     ]
+    ],
+    "names": [
+     "entries",
+     "valueA",
+     "Map",
+     "size",
+     "mapB",
+     "iterator",
+     "valueB",
+     "nextB",
+     "done",
+     "T",
+     "Object",
+     "valueB"
+    ]
+   },
+   {
+    "path": "tests/persistSync.test.tsx",
+    "positions": [
+     [
+      14,
+      37
+     ],
+     [
+      16,
+      6
+     ],
+     [
+      136,
+      15
+     ],
+     [
+      274,
+      9
+     ],
+     [
+      291,
+      41
+     ],
+     [
+      311,
+      25
+     ],
+     [
+      467,
+      20
+     ],
+     [
+      565,
+      64
+     ],
+     [
+      683,
+      24
+     ],
+     [
+      717,
+      16
+     ],
+     [
+      732,
+      22
+     ],
+     [
+      742,
+      30
+     ]
+    ],
+    "ends": [
+     [
+      14,
+      41
+     ],
+     [
+      16,
+      9
+     ],
+     [
+      136,
+      20
+     ],
+     [
+      274,
+      13
+     ],
+     [
+      291,
+      48
+     ],
+     [
+      311,
+      28
+     ],
+     [
+      467,
+      24
+     ],
+     [
+      565,
+      73
+     ],
+     [
+      683,
+      26
+     ],
+     [
+      717,
+      21
+     ],
+     [
+      732,
+      33
+     ],
+     [
+      742,
+      32
+     ]
+    ],
+    "names": [
+     "newState",
+     "state",
+     "setItemSpy",
+     "setItem",
+     "toBeCalledWith",
+     "count",
+     "entries",
+     "onFinishHydration",
+     "map",
+     "setItemSpy",
+     "onRehydrateStorageSpy2",
+     "name"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "signatureHelp",
+  "path": "tests/persistSync.test.tsx",
+  "line": 467,
+  "character": 20,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "src/react.ts"
+  },
+  {
+   "kind": "open",
+   "path": "src/vanilla/shallow.ts"
+  },
+  {
+   "kind": "open",
+   "path": "tests/persistSync.test.tsx"
+  },
+  {
+   "kind": "fs_rename",
+   "path": "src/react.ts",
+   "new_path": "src/react_rt.ts"
+  },
+  {
+   "kind": "fs_rename",
+   "path": "src/react_rt.ts",
+   "new_path": "src/react.ts"
+  }
+ ],
+ "case": {
+  "chain_step": 0,
+  "families": [],
+  "family": "H5",
+  "history_index": 0,
+  "history_seed": 1001,
+  "mode": "fresh",
+  "note": "rename src/react.ts -> src/react_rt.ts -> back",
+  "seed": 1,
+  "timing": "settled"
+ },
+ "shape": "signatureHelp:changed",
+ "signature": "ts6|r1_history|signatureHelp:changed",
+ "expected": "fromEntries(entries: Iterable<readonly [PropertyKey, number]>): { [k: string]: number; }",
+ "actual": "fromEntries(entries: Iterable<readonly [PropertyKey, unknown]>): { [k: string]: unknown; }",
+ "reproduced": "2/3",
+ "note": "H5: rename src/react.ts -> src/react_rt.ts -> back; flake 2/3 [r1:SCr r2:SCR r3:SCR] in 249s",
+ "violation": {
+  "oracle": "r1_history",
+  "server": "ts6-6.0.3",
+  "project": "pmndrs/zustand@b57db4f86ef1",
+  "key": {
+   "method": "signatureHelp",
+   "path": "tests/persistSync.test.tsx",
+   "line": 467,
+   "character": 20,
+   "extra": ""
+  },
+  "expected": "fromEntries(entries: Iterable<readonly [PropertyKey, number]>): { [k: string]: number; }",
+  "actual": "fromEntries(entries: Iterable<readonly [PropertyKey, unknown]>): { [k: string]: unknown; }",
+  "ops": [
+   {
+    "kind": "open",
+    "path": "src/react.ts"
+   },
+   {
+    "kind": "open",
+    "path": "src/vanilla/shallow.ts"
+   },
+   {
+    "kind": "open",
+    "path": "tests/persistSync.test.tsx"
+   },
+   {
+    "kind": "fs_rename",
+    "path": "src/react.ts",
+    "new_path": "src/react_rt.ts"
+   },
+   {
+    "kind": "fs_rename",
+    "path": "src/react_rt.ts",
+    "new_path": "src/react.ts"
+   }
+  ],
+  "detail": "{\"case\": {\"chain_step\": 0, \"families\": [], \"family\": \"H5\", \"history_index\": 0, \"history_seed\": 1001, \"mode\": \"fresh\", \"note\": \"rename src/react.ts -> src/react_rt.ts -> back\", \"seed\": 1, \"timing\": \"settled\"}, \"note\": \"H5: rename src/react.ts -> src/react_rt.ts -> back; flake 2/3 [r1:SCr r2:SCR r3:SCR] in 249s\", \"shape\": \"signatureHelp:changed\"}",
+  "reproduced": "2/3",
+  "reduced_ops": [],
+  "signature": "ts6|r1_history|signatureHelp:changed",
+  "run_id": "210902bea61f"
+ },
+ "replay_logs": [],
+ "project_files": {},
+ "incomplete": false
+}

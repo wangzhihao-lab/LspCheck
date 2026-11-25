@@ -1,0 +1,2209 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "e449caeb1662-v00",
+ "run_id": "e449caeb1662",
+ "oracle": "r5_transforms",
+ "server": {
+  "kind": "pyright",
+  "version": "1.1.414"
+ },
+ "project": {
+  "name": "Graphify-Labs/graphify@a5957aa6ef51",
+  "source": "corpus",
+  "ref": "temp/corpus/Graphify-Labs__graphify@a5957aa6ef51",
+  "commit": "a5957aa6ef51c9be8d054de9783d25046c187f3f",
+  "language": "python"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 6,
+  "targets": [
+   {
+    "path": "tests/test_hypergraph.py",
+    "positions": [
+     [
+      135,
+      22
+     ],
+     [
+      196,
+      24
+     ],
+     [
+      208,
+      9
+     ],
+     [
+      209,
+      13
+     ],
+     [
+      209,
+      56
+     ],
+     [
+      215,
+      5
+     ],
+     [
+      220,
+      21
+     ],
+     [
+      238,
+      4
+     ],
+     [
+      257,
+      27
+     ],
+     [
+      294,
+      5
+     ],
+     [
+      298,
+      37
+     ],
+     [
+      354,
+      25
+     ]
+    ],
+    "ends": [
+     [
+      135,
+      23
+     ],
+     [
+      196,
+      26
+     ],
+     [
+      208,
+      15
+     ],
+     [
+      209,
+      17
+     ],
+     [
+      209,
+      59
+     ],
+     [
+      215,
+      6
+     ],
+     [
+      220,
+      23
+     ],
+     [
+      238,
+      5
+     ],
+     [
+      257,
+      51
+     ],
+     [
+      294,
+      7
+     ],
+     [
+      298,
+      39
+     ],
+     [
+      354,
+      47
+     ]
+    ],
+    "names": [
+     "G",
+     "Path",
+     "communities",
+     "tempfile",
+     "delete",
+     "G2",
+     "get",
+     "G",
+     "test_report_skips_hyperedges_section_when_empty",
+     "hes",
+     "hid",
+     "test_build_warns_once_per_aliased_hyperedge"
+    ]
+   },
+   {
+    "path": "tests/test_merge_chunks_validation.py",
+    "positions": [
+     [
+      13,
+      7
+     ],
+     [
+      13,
+      18
+     ],
+     [
+      19,
+      27
+     ],
+     [
+      47,
+      85
+     ],
+     [
+      60,
+      14
+     ],
+     [
+      62,
+      58
+     ],
+     [
+      62,
+      79
+     ],
+     [
+      65,
+      14
+     ],
+     [
+      70,
+      5
+     ],
+     [
+      114,
+      14
+     ],
+     [
+      115,
+      20
+     ],
+     [
+      116,
+      20
+     ]
+    ],
+    "ends": [
+     [
+      13,
+      10
+     ],
+     [
+      13,
+      20
+     ],
+     [
+      19,
+      31
+     ],
+     [
+      47,
+      87
+     ],
+     [
+      60,
+      18
+     ],
+     [
+      62,
+      60
+     ],
+     [
+      62,
+      81
+     ],
+     [
+      65,
+      17
+     ],
+     [
+      70,
+      7
+     ],
+     [
+      114,
+      18
+     ],
+     [
+      115,
+      26
+     ],
+     [
+      116,
+      23
+     ]
+    ],
+    "names": [
+     "_write",
+     "obj",
+     "mainmod",
+     "out",
+     "tmp_path",
+     "str",
+     "str",
+     "merged",
+     "out",
+     "tmp_path",
+     "monkeypatch",
+     "loads"
+    ]
+   },
+   {
+    "path": "worked/example/raw/api.py",
+    "positions": [
+     [
+      16,
+      31
+     ],
+     [
+      19,
+      21
+     ],
+     [
+      21,
+      28
+     ],
+     [
+      22,
+      21
+     ],
+     [
+      34,
+      30
+     ],
+     [
+      36,
+      7
+     ],
+     [
+      42,
+      9
+     ],
+     [
+      47,
+      20
+     ],
+     [
+      56,
+      20
+     ],
+     [
+      61,
+      38
+     ],
+     [
+      61,
+      43
+     ],
+     [
+      75,
+      26
+     ]
+    ],
+    "ends": [
+     [
+      16,
+      35
+     ],
+     [
+      19,
+      23
+     ],
+     [
+      21,
+      29
+     ],
+     [
+      22,
+      24
+     ],
+     [
+      34,
+      32
+     ],
+     [
+      36,
+      11
+     ],
+     [
+      42,
+      15
+     ],
+     [
+      47,
+      23
+     ],
+     [
+      56,
+      22
+     ],
+     [
+      61,
+      40
+     ],
+     [
+      61,
+      46
+     ],
+     [
+      75,
+      28
+     ]
+    ],
+    "names": [
+     "results",
+     "len",
+     "r",
+     "failed",
+     "str",
+     "deleted",
+     "handle_list",
+     "query",
+     "set",
+     "list",
+     "terms",
+     "str"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "references",
+  "path": "worked/example/raw/api.py",
+  "line": 21,
+  "character": 28,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "worked/example/raw/api.py"
+  },
+  {
+   "kind": "change",
+   "path": "worked/example/raw/api.py",
+   "start": [
+    10,
+    39
+   ],
+   "end": [
+    10,
+    39
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "worked/example/raw/api.py",
+   "start": [
+    14,
+    7
+   ],
+   "end": [
+    14,
+    7
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "worked/example/raw/api.py",
+   "start": [
+    15,
+    32
+   ],
+   "end": [
+    15,
+    32
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "worked/example/raw/api.py",
+   "start": [
+    16,
+    47
+   ],
+   "end": [
+    16,
+    47
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "worked/example/raw/api.py",
+   "start": [
+    17,
+    48
+   ],
+   "end": [
+    17,
+    48
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "worked/example/raw/api.py",
+   "start": [
+    18,
+    12
+   ],
+   "end": [
+    18,
+    12
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "worked/example/raw/api.py",
+   "start": [
+    19,
+    35
+   ],
+   "end": [
+    19,
+    35
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "worked/example/raw/api.py",
+   "start": [
+    20,
+    30
+   ],
+   "end": [
+    20,
+    30
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "worked/example/raw/api.py",
+   "start": [
+    21,
+    44
+   ],
+   "end": [
+    21,
+    44
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "worked/example/raw/api.py",
+   "start": [
+    22,
+    25
+   ],
+   "end": [
+    22,
+    25
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "worked/example/raw/api.py",
+   "start": [
+    23,
+    5
+   ],
+   "end": [
+    23,
+    5
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "worked/example/raw/api.py",
+   "start": [
+    26,
+    39
+   ],
+   "end": [
+    26,
+    39
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "worked/example/raw/api.py",
+   "start": [
+    27,
+    47
+   ],
+   "end": [
+    27,
+    47
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "worked/example/raw/api.py",
+   "start": [
+    28,
+    8
+   ],
+   "end": [
+    28,
+    8
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "worked/example/raw/api.py",
+   "start": [
+    29,
+    37
+   ],
+   "end": [
+    29,
+    37
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "worked/example/raw/api.py",
+   "start": [
+    30,
+    20
+   ],
+   "end": [
+    30,
+    20
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "worked/example/raw/api.py",
+   "start": [
+    31,
+    57
+   ],
+   "end": [
+    31,
+    57
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "worked/example/raw/api.py",
+   "start": [
+    34,
+    42
+   ],
+   "end": [
+    34,
+    42
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "worked/example/raw/api.py",
+   "start": [
+    35,
+    34
+   ],
+   "end": [
+    35,
+    34
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "worked/example/raw/api.py",
+   "start": [
+    36,
+    38
+   ],
+   "end": [
+    36,
+    38
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "worked/example/raw/api.py",
+   "start": [
+    37,
+    15
+   ],
+   "end": [
+    37,
+    15
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "worked/example/raw/api.py",
+   "start": [
+    38,
+    37
+   ],
+   "end": [
+    38,
+    37
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "worked/example/raw/api.py",
+   "start": [
+    39,
+    53
+   ],
+   "end": [
+    39,
+    53
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "worked/example/raw/api.py",
+   "start": [
+    42,
+    26
+   ],
+   "end": [
+    42,
+    26
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "worked/example/raw/api.py",
+   "start": [
+    43,
+    43
+   ],
+   "end": [
+    43,
+    43
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "worked/example/raw/api.py",
+   "start": [
+    44,
+    38
+   ],
+   "end": [
+    44,
+    38
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "worked/example/raw/api.py",
+   "start": [
+    47,
+    38
+   ],
+   "end": [
+    47,
+    38
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "worked/example/raw/api.py",
+   "start": [
+    51,
+    7
+   ],
+   "end": [
+    51,
+    7
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "worked/example/raw/api.py",
+   "start": [
+    52,
+    38
+   ],
+   "end": [
+    52,
+    38
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "worked/example/raw/api.py",
+   "start": [
+    53,
+    24
+   ],
+   "end": [
+    53,
+    24
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "worked/example/raw/api.py",
+   "start": [
+    54,
+    16
+   ],
+   "end": [
+    54,
+    16
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "worked/example/raw/api.py",
+   "start": [
+    55,
+    42
+   ],
+   "end": [
+    55,
+    42
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "worked/example/raw/api.py",
+   "start": [
+    56,
+    49
+   ],
+   "end": [
+    56,
+    49
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "worked/example/raw/api.py",
+   "start": [
+    57,
+    28
+   ],
+   "end": [
+    57,
+    28
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "worked/example/raw/api.py",
+   "start": [
+    58,
+    28
+   ],
+   "end": [
+    58,
+    28
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "worked/example/raw/api.py",
+   "start": [
+    59,
+    32
+   ],
+   "end": [
+    59,
+    32
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "worked/example/raw/api.py",
+   "start": [
+    60,
+    48
+   ],
+   "end": [
+    60,
+    48
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "worked/example/raw/api.py",
+   "start": [
+    61,
+    59
+   ],
+   "end": [
+    61,
+    59
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "worked/example/raw/api.py",
+   "start": [
+    62,
+    14
+   ],
+   "end": [
+    62,
+    14
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "worked/example/raw/api.py",
+   "start": [
+    63,
+    47
+   ],
+   "end": [
+    63,
+    47
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "worked/example/raw/api.py",
+   "start": [
+    66,
+    42
+   ],
+   "end": [
+    66,
+    42
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "worked/example/raw/api.py",
+   "start": [
+    67,
+    63
+   ],
+   "end": [
+    67,
+    63
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "worked/example/raw/api.py",
+   "start": [
+    68,
+    8
+   ],
+   "end": [
+    68,
+    8
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "worked/example/raw/api.py",
+   "start": [
+    69,
+    36
+   ],
+   "end": [
+    69,
+    36
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "worked/example/raw/api.py",
+   "start": [
+    70,
+    20
+   ],
+   "end": [
+    70,
+    20
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "worked/example/raw/api.py",
+   "start": [
+    71,
+    57
+   ],
+   "end": [
+    71,
+    57
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "worked/example/raw/api.py",
+   "start": [
+    72,
+    8
+   ],
+   "end": [
+    72,
+    8
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "worked/example/raw/api.py",
+   "start": [
+    73,
+    42
+   ],
+   "end": [
+    73,
+    42
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "worked/example/raw/api.py",
+   "start": [
+    74,
+    32
+   ],
+   "end": [
+    74,
+    32
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "worked/example/raw/api.py",
+   "start": [
+    75,
+    32
+   ],
+   "end": [
+    75,
+    32
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "worked/example/raw/api.py",
+   "start": [
+    76,
+    45
+   ],
+   "end": [
+    76,
+    45
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "worked/example/raw/api.py",
+   "start": [
+    77,
+    36
+   ],
+   "end": [
+    77,
+    36
+   ],
+   "text": " "
+  }
+ ],
+ "case": {
+  "mapped_key": [
+   "references",
+   "worked/example/raw/api.py",
+   21,
+   28,
+   ""
+  ],
+  "transform": {
+   "back": {
+    "col": 0,
+    "eof": [],
+    "line": -1,
+    "n": 0,
+    "path": "worked/example/raw/api.py",
+    "w": 0
+   },
+   "edits": [
+    [
+     10,
+     39,
+     10,
+     39,
+     " "
+    ],
+    [
+     14,
+     7,
+     14,
+     7,
+     " "
+    ],
+    [
+     15,
+     32,
+     15,
+     32,
+     " "
+    ],
+    [
+     16,
+     47,
+     16,
+     47,
+     " "
+    ],
+    [
+     17,
+     48,
+     17,
+     48,
+     " "
+    ],
+    [
+     18,
+     12,
+     18,
+     12,
+     " "
+    ],
+    [
+     19,
+     35,
+     19,
+     35,
+     " "
+    ],
+    [
+     20,
+     30,
+     20,
+     30,
+     " "
+    ],
+    [
+     21,
+     44,
+     21,
+     44,
+     " "
+    ],
+    [
+     22,
+     25,
+     22,
+     25,
+     " "
+    ],
+    [
+     23,
+     5,
+     23,
+     5,
+     " "
+    ],
+    [
+     26,
+     39,
+     26,
+     39,
+     " "
+    ],
+    [
+     27,
+     47,
+     27,
+     47,
+     " "
+    ],
+    [
+     28,
+     8,
+     28,
+     8,
+     " "
+    ],
+    [
+     29,
+     37,
+     29,
+     37,
+     " "
+    ],
+    [
+     30,
+     20,
+     30,
+     20,
+     " "
+    ],
+    [
+     31,
+     57,
+     31,
+     57,
+     " "
+    ],
+    [
+     34,
+     42,
+     34,
+     42,
+     " "
+    ],
+    [
+     35,
+     34,
+     35,
+     34,
+     " "
+    ],
+    [
+     36,
+     38,
+     36,
+     38,
+     " "
+    ],
+    [
+     37,
+     15,
+     37,
+     15,
+     " "
+    ],
+    [
+     38,
+     37,
+     38,
+     37,
+     " "
+    ],
+    [
+     39,
+     53,
+     39,
+     53,
+     " "
+    ],
+    [
+     42,
+     26,
+     42,
+     26,
+     " "
+    ],
+    [
+     43,
+     43,
+     43,
+     43,
+     " "
+    ],
+    [
+     44,
+     38,
+     44,
+     38,
+     " "
+    ],
+    [
+     47,
+     38,
+     47,
+     38,
+     " "
+    ],
+    [
+     51,
+     7,
+     51,
+     7,
+     " "
+    ],
+    [
+     52,
+     38,
+     52,
+     38,
+     " "
+    ],
+    [
+     53,
+     24,
+     53,
+     24,
+     " "
+    ],
+    [
+     54,
+     16,
+     54,
+     16,
+     " "
+    ],
+    [
+     55,
+     42,
+     55,
+     42,
+     " "
+    ],
+    [
+     56,
+     49,
+     56,
+     49,
+     " "
+    ],
+    [
+     57,
+     28,
+     57,
+     28,
+     " "
+    ],
+    [
+     58,
+     28,
+     58,
+     28,
+     " "
+    ],
+    [
+     59,
+     32,
+     59,
+     32,
+     " "
+    ],
+    [
+     60,
+     48,
+     60,
+     48,
+     " "
+    ],
+    [
+     61,
+     59,
+     61,
+     59,
+     " "
+    ],
+    [
+     62,
+     14,
+     62,
+     14,
+     " "
+    ],
+    [
+     63,
+     47,
+     63,
+     47,
+     " "
+    ],
+    [
+     66,
+     42,
+     66,
+     42,
+     " "
+    ],
+    [
+     67,
+     63,
+     67,
+     63,
+     " "
+    ],
+    [
+     68,
+     8,
+     68,
+     8,
+     " "
+    ],
+    [
+     69,
+     36,
+     69,
+     36,
+     " "
+    ],
+    [
+     70,
+     20,
+     70,
+     20,
+     " "
+    ],
+    [
+     71,
+     57,
+     71,
+     57,
+     " "
+    ],
+    [
+     72,
+     8,
+     72,
+     8,
+     " "
+    ],
+    [
+     73,
+     42,
+     73,
+     42,
+     " "
+    ],
+    [
+     74,
+     32,
+     74,
+     32,
+     " "
+    ],
+    [
+     75,
+     32,
+     75,
+     32,
+     " "
+    ],
+    [
+     76,
+     45,
+     76,
+     45,
+     " "
+    ],
+    [
+     77,
+     36,
+     77,
+     36,
+     " "
+    ]
+   ],
+   "kind": "T3",
+   "path": "worked/example/raw/api.py",
+   "shift": {
+    "col": 0,
+    "eof": [],
+    "line": -1,
+    "n": 0,
+    "path": "worked/example/raw/api.py",
+    "w": 0
+   }
+  }
+ },
+ "shape": "references:result->error:timeout",
+ "signature": "pyright|r5_transforms|references:result->error:timeout",
+ "expected": [
+  [
+   "worked/example/raw/api.py",
+   21,
+   16,
+   21,
+   17
+  ],
+  [
+   "worked/example/raw/api.py",
+   21,
+   28,
+   21,
+   29
+  ]
+ ],
+ "actual": [
+  "error",
+  "timeout"
+ ],
+ "reproduced": "0/3",
+ "note": "T3 worked/example/raw/api.py: 52 edit(s), first [10, 39, 10, 39]; flake 0/3 [r1:Scr r2:Scr r3:SCr] in 340s",
+ "violation": {
+  "oracle": "r5_transforms",
+  "server": "pyright-1.1.414",
+  "project": "Graphify-Labs/graphify@a5957aa6ef51",
+  "key": {
+   "method": "references",
+   "path": "worked/example/raw/api.py",
+   "line": 21,
+   "character": 28,
+   "extra": ""
+  },
+  "expected": [
+   [
+    "worked/example/raw/api.py",
+    21,
+    16,
+    21,
+    17
+   ],
+   [
+    "worked/example/raw/api.py",
+    21,
+    28,
+    21,
+    29
+   ]
+  ],
+  "actual": [
+   "error",
+   "timeout"
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "worked/example/raw/api.py"
+   },
+   {
+    "kind": "change",
+    "path": "worked/example/raw/api.py",
+    "start": [
+     10,
+     39
+    ],
+    "end": [
+     10,
+     39
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "worked/example/raw/api.py",
+    "start": [
+     14,
+     7
+    ],
+    "end": [
+     14,
+     7
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "worked/example/raw/api.py",
+    "start": [
+     15,
+     32
+    ],
+    "end": [
+     15,
+     32
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "worked/example/raw/api.py",
+    "start": [
+     16,
+     47
+    ],
+    "end": [
+     16,
+     47
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "worked/example/raw/api.py",
+    "start": [
+     17,
+     48
+    ],
+    "end": [
+     17,
+     48
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "worked/example/raw/api.py",
+    "start": [
+     18,
+     12
+    ],
+    "end": [
+     18,
+     12
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "worked/example/raw/api.py",
+    "start": [
+     19,
+     35
+    ],
+    "end": [
+     19,
+     35
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "worked/example/raw/api.py",
+    "start": [
+     20,
+     30
+    ],
+    "end": [
+     20,
+     30
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "worked/example/raw/api.py",
+    "start": [
+     21,
+     44
+    ],
+    "end": [
+     21,
+     44
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "worked/example/raw/api.py",
+    "start": [
+     22,
+     25
+    ],
+    "end": [
+     22,
+     25
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "worked/example/raw/api.py",
+    "start": [
+     23,
+     5
+    ],
+    "end": [
+     23,
+     5
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "worked/example/raw/api.py",
+    "start": [
+     26,
+     39
+    ],
+    "end": [
+     26,
+     39
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "worked/example/raw/api.py",
+    "start": [
+     27,
+     47
+    ],
+    "end": [
+     27,
+     47
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "worked/example/raw/api.py",
+    "start": [
+     28,
+     8
+    ],
+    "end": [
+     28,
+     8
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "worked/example/raw/api.py",
+    "start": [
+     29,
+     37
+    ],
+    "end": [
+     29,
+     37
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "worked/example/raw/api.py",
+    "start": [
+     30,
+     20
+    ],
+    "end": [
+     30,
+     20
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "worked/example/raw/api.py",
+    "start": [
+     31,
+     57
+    ],
+    "end": [
+     31,
+     57
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "worked/example/raw/api.py",
+    "start": [
+     34,
+     42
+    ],
+    "end": [
+     34,
+     42
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "worked/example/raw/api.py",
+    "start": [
+     35,
+     34
+    ],
+    "end": [
+     35,
+     34
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "worked/example/raw/api.py",
+    "start": [
+     36,
+     38
+    ],
+    "end": [
+     36,
+     38
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "worked/example/raw/api.py",
+    "start": [
+     37,
+     15
+    ],
+    "end": [
+     37,
+     15
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "worked/example/raw/api.py",
+    "start": [
+     38,
+     37
+    ],
+    "end": [
+     38,
+     37
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "worked/example/raw/api.py",
+    "start": [
+     39,
+     53
+    ],
+    "end": [
+     39,
+     53
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "worked/example/raw/api.py",
+    "start": [
+     42,
+     26
+    ],
+    "end": [
+     42,
+     26
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "worked/example/raw/api.py",
+    "start": [
+     43,
+     43
+    ],
+    "end": [
+     43,
+     43
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "worked/example/raw/api.py",
+    "start": [
+     44,
+     38
+    ],
+    "end": [
+     44,
+     38
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "worked/example/raw/api.py",
+    "start": [
+     47,
+     38
+    ],
+    "end": [
+     47,
+     38
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "worked/example/raw/api.py",
+    "start": [
+     51,
+     7
+    ],
+    "end": [
+     51,
+     7
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "worked/example/raw/api.py",
+    "start": [
+     52,
+     38
+    ],
+    "end": [
+     52,
+     38
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "worked/example/raw/api.py",
+    "start": [
+     53,
+     24
+    ],
+    "end": [
+     53,
+     24
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "worked/example/raw/api.py",
+    "start": [
+     54,
+     16
+    ],
+    "end": [
+     54,
+     16
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "worked/example/raw/api.py",
+    "start": [
+     55,
+     42
+    ],
+    "end": [
+     55,
+     42
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "worked/example/raw/api.py",
+    "start": [
+     56,
+     49
+    ],
+    "end": [
+     56,
+     49
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "worked/example/raw/api.py",
+    "start": [
+     57,
+     28
+    ],
+    "end": [
+     57,
+     28
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "worked/example/raw/api.py",
+    "start": [
+     58,
+     28
+    ],
+    "end": [
+     58,
+     28
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "worked/example/raw/api.py",
+    "start": [
+     59,
+     32
+    ],
+    "end": [
+     59,
+     32
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "worked/example/raw/api.py",
+    "start": [
+     60,
+     48
+    ],
+    "end": [
+     60,
+     48
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "worked/example/raw/api.py",
+    "start": [
+     61,
+     59
+    ],
+    "end": [
+     61,
+     59
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "worked/example/raw/api.py",
+    "start": [
+     62,
+     14
+    ],
+    "end": [
+     62,
+     14
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "worked/example/raw/api.py",
+    "start": [
+     63,
+     47
+    ],
+    "end": [
+     63,
+     47
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "worked/example/raw/api.py",
+    "start": [
+     66,
+     42
+    ],
+    "end": [
+     66,
+     42
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "worked/example/raw/api.py",
+    "start": [
+     67,
+     63
+    ],
+    "end": [
+     67,
+     63
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "worked/example/raw/api.py",
+    "start": [
+     68,
+     8
+    ],
+    "end": [
+     68,
+     8
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "worked/example/raw/api.py",
+    "start": [
+     69,
+     36
+    ],
+    "end": [
+     69,
+     36
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "worked/example/raw/api.py",
+    "start": [
+     70,
+     20
+    ],
+    "end": [
+     70,
+     20
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "worked/example/raw/api.py",
+    "start": [
+     71,
+     57
+    ],
+    "end": [
+     71,
+     57
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "worked/example/raw/api.py",
+    "start": [
+     72,
+     8
+    ],
+    "end": [
+     72,
+     8
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "worked/example/raw/api.py",
+    "start": [
+     73,
+     42
+    ],
+    "end": [
+     73,
+     42
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "worked/example/raw/api.py",
+    "start": [
+     74,
+     32
+    ],
+    "end": [
+     74,
+     32
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "worked/example/raw/api.py",
+    "start": [
+     75,
+     32
+    ],
+    "end": [
+     75,
+     32
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "worked/example/raw/api.py",
+    "start": [
+     76,
+     45
+    ],
+    "end": [
+     76,
+     45
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "worked/example/raw/api.py",
+    "start": [
+     77,
+     36
+    ],
+    "end": [
+     77,
+     36
+    ],
+    "text": " "
+   }
+  ],
+  "detail": "{\"case\": {\"mapped_key\": [\"references\", \"worked/example/raw/api.py\", 21, 28, \"\"], \"transform\": {\"back\": {\"col\": 0, \"eof\": [], \"line\": -1, \"n\": 0, \"path\": \"worked/example/raw/api.py\", \"w\": 0}, \"edits\": [[10, 39, 10, 39, \" \"], [14, 7, 14, 7, \" \"], [15, 32, 15, 32, \" \"], [16, 47, 16, 47, \" \"], [17, 48, 17, 48, \" \"], [18, 12, 18, 12, \" \"], [19, 35, 19, 35, \" \"], [20, 30, 20, 30, \" \"], [21, 44, 21, 44, \" \"], [22, 25, 22, 25, \" \"], [23, 5, 23, 5, \" \"], [26, 39, 26, 39, \" \"], [27, 47, 27, 47, \" \"], [28, 8, 28, 8, \" \"], [29, 37, 29, 37, \" \"], [30, 20, 30, 20, \" \"], [31, 57, 31, 57, \" \"], [34, 42, 34, 42, \" \"], [35, 34, 35, 34, \" \"], [36, 38, 36, 38, \" \"], [37, 15, 37, 15, \" \"], [38, 37, 38, 37, \" \"], [39, 53, 39, 53, \" \"], [42, 26, 42, 26, \" \"], [43, 43, 43, 43, \" \"], [44, 38, 44, 38, \" \"], [47, 38, 47, 38, \" \"], [51, 7, 51, 7, \" \"], [52, 38, 52, 38, \" \"], [53, 24, 53, 24, \" \"], [54, 16, 54, 16, \" \"], [55, 42, 55, 42, \" \"], [56, 49, 56, 49, \" \"], [57, 28, 57, 28, \" \"], [58, 28, 58, 28, \" \"], [59, 32, 59, 32, \" \"], [60, 48, 60, 48, \" \"], [61, 59, 61, 59, \" \"], [62, 14, 62, 14, \" \"], [63, 47, 63, 47, \" \"], [66, 42, 66, 42, \" \"], [67, 63, 67, 63, \" \"], [68, 8, 68, 8, \" \"], [69, 36, 69, 36, \" \"], [70, 20, 70, 20, \" \"], [71, 57, 71, 57, \" \"], [72, 8, 72, 8, \" \"], [73, 42, 73, 42, \" \"], [74, 32, 74, 32, \" \"], [75, 32, 75, 32, \" \"], [76, 45, 76, 45, \" \"], [77, 36, 77, 36, \" \"]], \"kind\": \"T3\", \"path\": \"worked/example/raw/api.py\", \"shift\": {\"col\": 0, \"eof\": [], \"line\": -1, \"n\": 0, \"path\": \"worked/example/raw/api.py\", \"w\": 0}}}, \"note\": \"T3 worked/example/raw/api.py: 52 edit(s), first [10, 39, 10, 39]; flake 0/3 [r1:Scr r2:Scr r3:SCr] in 340s\", \"shape\": \"references:result->error:timeout\"}",
+  "reproduced": "0/3",
+  "reduced_ops": [],
+  "signature": "pyright|r5_transforms|references:result->error:timeout",
+  "run_id": "e449caeb1662"
+ },
+ "replay_logs": [],
+ "project_files": {},
+ "incomplete": false
+}

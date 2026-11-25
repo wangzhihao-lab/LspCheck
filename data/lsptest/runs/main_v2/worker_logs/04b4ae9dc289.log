@@ -1,0 +1,3 @@
+2026-11-18 05:52:46,859 INFO campaign_run run 04b4ae9dc289: r1_history on ts6 6.0.3, date-fns/date-fns@f34149bb1ba1 seed 1 settled, targets ['pkgs/core/src/fp/differenceInCalendarQuartersWithOptions/index.ts', 'pkgs/core/src/fp/isSameWeek/index.ts', 'pkgs/core/src/fp/lastDayOfMonth/index.ts']
+2026-11-18 06:03:29,624 INFO campaign_run run 04b4ae9dc289: 0 candidate(s) in 643s; confirming
+2026-11-18 06:03:29,625 INFO campaign_run run 04b4ae9dc289 finished: ok, 0 confirmed of 0 candidate(s), 643s

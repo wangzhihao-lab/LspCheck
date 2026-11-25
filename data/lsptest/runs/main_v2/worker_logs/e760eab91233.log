@@ -1,0 +1,12 @@
+2026-11-18 14:31:44,126 INFO campaign_run run e760eab91233: r1_history on ts6 6.0.3, Gitlawb/openclaude@5cd11336caea seed 2 settled, targets ['src/context/repoMap/repoMap.test.ts', 'src/utils/envFile.ts', 'src/utils/model/modelOptions.ts']
+2026-11-18 14:44:40,319 INFO campaign_run run e760eab91233: 6 candidate(s) in 776s; confirming
+2026-11-18 14:46:58,907 INFO flake replay 1/3 of ts6|r1_history|documentHighlight:missing: settled=True control_stable=True reproduced=True (138.6s)
+2026-11-18 14:49:20,233 INFO flake replay 2/3 of ts6|r1_history|documentHighlight:missing: settled=True control_stable=True reproduced=True (141.3s)
+2026-11-18 14:51:54,207 INFO flake replay 3/3 of ts6|r1_history|documentHighlight:missing: settled=True control_stable=True reproduced=True (154.0s)
+2026-11-18 14:54:32,756 INFO flake replay 1/3 of ts6|r1_history|inlayHint:changed: settled=True control_stable=True reproduced=True (158.5s)
+2026-11-18 14:57:20,383 INFO flake replay 2/3 of ts6|r1_history|inlayHint:changed: settled=True control_stable=True reproduced=True (167.6s)
+2026-11-18 15:00:05,098 INFO flake replay 3/3 of ts6|r1_history|inlayHint:changed: settled=True control_stable=True reproduced=True (164.7s)
+2026-11-18 15:02:44,714 INFO flake replay 1/3 of ts6|r1_history|semanticTokens:missing: settled=True control_stable=True reproduced=False (159.6s)
+2026-11-18 15:05:34,038 INFO flake replay 2/3 of ts6|r1_history|semanticTokens:missing: settled=True control_stable=True reproduced=True (169.3s)
+2026-11-18 15:08:34,795 INFO flake replay 3/3 of ts6|r1_history|semanticTokens:missing: settled=True control_stable=True reproduced=True (180.7s)
+2026-11-18 15:08:35,968 INFO campaign_run run e760eab91233 finished: ok, 2 confirmed of 6 candidate(s), 2212s

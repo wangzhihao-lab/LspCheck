@@ -1,0 +1,4 @@
+$ scripts/lsptest/version_sweep.py main_v1 --label iso-ts6.0.3-tsls6.0.0 --map ts6=tsserver:6.0.3+tsls6.0.0 --only ts6-r1-semantictokens-changed-h5-591c42 --replays 3
+2026-09-27 05:44:19,887 INFO version_sweep group ts6-r1-semantictokens-changed-h5-591c42 (r1_history): ts6 6.0.3 -> tsserver 6.0.3+tsls6.0.0
+$ scripts/paper/evidence/ts_isolation.py job --tag ctl --gid ts6-r1-semantictokens-changed-h5-591c42 --replays 3
+ts6-r1-semantictokens-changed-h5-591c42: flaky (2/3, 109.8s) 

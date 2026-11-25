@@ -1,0 +1,3 @@
+2026-09-24 00:45:21,438 INFO campaign_run run e9df7a7b8188: r3_routes on ts6 6.0.3, ChatGPTNextWeb/NextChat@defdcdb55d85 seed 2 settled, targets ['app/command.ts', 'app/components/mask.tsx', 'app/utils/store.ts']
+2026-09-24 00:50:47,360 INFO campaign_run run e9df7a7b8188: 23 candidate(s) in 326s; confirming
+2026-09-24 00:50:47,364 INFO campaign_run run e9df7a7b8188 finished: ok, 0 confirmed of 23 candidate(s), 326s

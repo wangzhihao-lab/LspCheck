@@ -1,0 +1,581 @@
+{
+ "format": 1,
+ "campaign": "main_v2",
+ "vid": "31cdc65c834b-v00",
+ "run_id": "31cdc65c834b",
+ "oracle": "r4_edits",
+ "server": {
+  "kind": "gopls",
+  "version": "v0.23.0"
+ },
+ "project": {
+  "name": "evanw/esbuild@f6058f8364fe",
+  "source": "corpus",
+  "ref": "temp/corpus/evanw__esbuild@f6058f8364fe",
+  "commit": "f6058f8364fe7ab91ca57a83e02577ed74c9cae4",
+  "language": "go"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "internal/css_parser/css_decls_transform.go",
+    "positions": [
+     [
+      59,
+      35
+     ],
+     [
+      97,
+      8
+     ],
+     [
+      137,
+      40
+     ],
+     [
+      175,
+      19
+     ],
+     [
+      218,
+      35
+     ],
+     [
+      235,
+      16
+     ],
+     [
+      260,
+      18
+     ],
+     [
+      277,
+      21
+     ],
+     [
+      277,
+      38
+     ],
+     [
+      281,
+      9
+     ],
+     [
+      282,
+      10
+     ],
+     [
+      338,
+      7
+     ]
+    ],
+    "ends": [
+     [
+      59,
+      37
+     ],
+     [
+      97,
+      10
+     ],
+     [
+      137,
+      42
+     ],
+     [
+      175,
+      21
+     ],
+     [
+      218,
+      38
+     ],
+     [
+      235,
+      18
+     ],
+     [
+      260,
+      22
+     ],
+     [
+      277,
+      36
+     ],
+     [
+      277,
+      39
+     ],
+     [
+      281,
+      12
+     ],
+     [
+      282,
+      13
+     ],
+     [
+      338,
+      9
+     ]
+    ],
+    "names": [
+     "args",
+     "args",
+     "args",
+     "args",
+     "IsZero",
+     "Text",
+     "Children",
+     "turnPercentIntoNumberIfShorter",
+     "sy",
+     "token",
+     "token",
+     "args"
+    ]
+   },
+   {
+    "path": "internal/js_parser/json_parser.go",
+    "positions": [
+     [
+      27,
+      24
+     ],
+     [
+      49,
+      33
+     ],
+     [
+      61,
+      18
+     ],
+     [
+      65,
+      27
+     ],
+     [
+      106,
+      6
+     ],
+     [
+      149,
+      60
+     ],
+     [
+      188,
+      66
+     ],
+     [
+      188,
+      85
+     ],
+     [
+      194,
+      12
+     ],
+     [
+      212,
+      10
+     ],
+     [
+      217,
+      26
+     ],
+     [
+      223,
+      27
+     ]
+    ],
+    "ends": [
+     [
+      27,
+      28
+     ],
+     [
+      49,
+      35
+     ],
+     [
+      61,
+      21
+     ],
+     [
+      65,
+      29
+     ],
+     [
+      106,
+      7
+     ],
+     [
+      149,
+      61
+     ],
+     [
+      188,
+      72
+     ],
+     [
+      188,
+      88
+     ],
+     [
+      194,
+      13
+     ],
+     [
+      212,
+      11
+     ],
+     [
+      217,
+      29
+     ],
+     [
+      223,
+      30
+     ]
+    ],
+    "names": [
+     "tracker",
+     "Data",
+     "TMinus",
+     "loc",
+     "p",
+     "p",
+     "JSONOptions",
+     "js_ast",
+     "r",
+     "p",
+     "js_ast",
+     "Items"
+    ]
+   },
+   {
+    "path": "internal/logger/logger.go",
+    "positions": [
+     [
+      124,
+      20
+     ],
+     [
+      318,
+      3
+     ],
+     [
+      776,
+      33
+     ],
+     [
+      986,
+      9
+     ],
+     [
+      1106,
+      8
+     ],
+     [
+      1157,
+      67
+     ],
+     [
+      1251,
+      5
+     ],
+     [
+      1372,
+      49
+     ],
+     [
+      1408,
+      39
+     ],
+     [
+      1470,
+      5
+     ],
+     [
+      1534,
+      18
+     ],
+     [
+      1604,
+      22
+     ]
+    ],
+    "ends": [
+     [
+      124,
+      35
+     ],
+     [
+      318,
+      4
+     ],
+     [
+      776,
+      39
+     ],
+     [
+      986,
+      12
+     ],
+     [
+      1106,
+      11
+     ],
+     [
+      1157,
+      69
+     ],
+     [
+      1251,
+      9
+     ],
+     [
+      1372,
+      50
+     ],
+     [
+      1408,
+      43
+     ],
+     [
+      1470,
+      9
+     ],
+     [
+      1534,
+      21
+     ],
+     [
+      1604,
+      23
+     ]
+    ],
+    "names": [
+     "isProbablyWindowsCommandPrompt",
+     "sb",
+     "LevelWarning",
+     "Bytes",
+     "colors",
+     "Log",
+     "contents",
+     "r",
+     "MsgKind",
+     "outerLoc",
+     "int32",
+     "i"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "diagnostics",
+  "path": "internal/css_parser/css_decls_transform.go",
+  "line": 260,
+  "character": 25,
+  "extra": "M2:quickfix-errors:Create variable arggs"
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "internal/css_parser/css_decls_transform.go"
+  },
+  {
+   "kind": "change",
+   "path": "internal/css_parser/css_decls_transform.go",
+   "start": [
+    260,
+    25
+   ],
+   "end": [
+    260,
+    29
+   ],
+   "text": "arggs"
+  },
+  {
+   "kind": "change",
+   "path": "internal/css_parser/css_decls_transform.go",
+   "start": [
+    260,
+    7
+   ],
+   "end": [
+    260,
+    7
+   ],
+   "text": "arggs := 0\n\t\t\t\t\t\t\t"
+  }
+ ],
+ "case": {
+  "action_kind": "quickfix",
+  "base_errors": 0,
+  "check": "errors",
+  "diag": {
+   "code": "UndeclaredName",
+   "message": "undefined: arggs",
+   "range": {
+    "end": {
+     "character": 30,
+     "line": 260
+    },
+    "start": {
+     "character": 25,
+     "line": 260
+    }
+   },
+   "severity": 1
+  },
+  "fix_introduced_errors": [
+   {
+    "code": "NonSliceableOperand",
+    "message": "cannot slice arggs (variable of type int)",
+    "path": "internal/css_parser/css_decls_transform.go",
+    "range": {
+     "end": {
+      "character": 30,
+      "line": 261
+     },
+     "start": {
+      "character": 25,
+      "line": 261
+     }
+    },
+    "severity": 1
+   }
+  ],
+  "fix_ops": [
+   {
+    "end": [
+     260,
+     7
+    ],
+    "kind": "change",
+    "path": "internal/css_parser/css_decls_transform.go",
+    "start": [
+     260,
+     7
+    ],
+    "text": "arggs := 0\n\t\t\t\t\t\t\t"
+   }
+  ],
+  "kind": "mutation",
+  "mutation": {
+   "end": [
+    260,
+    29
+   ],
+   "id": "M2",
+   "offsets": [
+    9034,
+    9038
+   ],
+   "sha": "d8f7a6c4626704ca",
+   "start": [
+    260,
+    25
+   ],
+   "text": "arggs",
+   "what": "misspell 'args' as 'arggs' (duplicate a middle character)"
+  },
+  "n_fix_ops": 1,
+  "path": "internal/css_parser/css_decls_transform.go",
+  "post_errors": 1,
+  "title": "Create variable arggs",
+  "via": "resolve"
+ },
+ "shape": "diagnostics:extra:NonSliceableOperand",
+ "signature": "gopls|r4_edits|diagnostics:extra:NonSliceableOperand",
+ "expected": [],
+ "actual": [
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "NonSliceableOperand",
+   "compiler",
+   "cannot slice arggs (variable of type int)"
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "quick fix 'Create variable arggs' for UndeclaredName at internal/css_parser/css_decls_transform.go:261:26 raises the error count in the edited files from 0 to 1 (seeded by M2: misspell 'args' as 'arggs' (duplicate a middle character); errors before the mutation 0, after the fix 1); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 49s",
+ "violation": {
+  "oracle": "r4_edits",
+  "server": "gopls-v0.23.0",
+  "project": "evanw/esbuild@f6058f8364fe",
+  "key": {
+   "method": "diagnostics",
+   "path": "internal/css_parser/css_decls_transform.go",
+   "line": 260,
+   "character": 25,
+   "extra": "M2:quickfix-errors:Create variable arggs"
+  },
+  "expected": [],
+  "actual": [
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "NonSliceableOperand",
+    "compiler",
+    "cannot slice arggs (variable of type int)"
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "internal/css_parser/css_decls_transform.go"
+   },
+   {
+    "kind": "change",
+    "path": "internal/css_parser/css_decls_transform.go",
+    "start": [
+     260,
+     25
+    ],
+    "end": [
+     260,
+     29
+    ],
+    "text": "arggs"
+   },
+   {
+    "kind": "change",
+    "path": "internal/css_parser/css_decls_transform.go",
+    "start": [
+     260,
+     7
+    ],
+    "end": [
+     260,
+     7
+    ],
+    "text": "arggs := 0\n\t\t\t\t\t\t\t"
+   }
+  ],
+  "detail": "{\"case\": {\"action_kind\": \"quickfix\", \"base_errors\": 0, \"check\": \"errors\", \"diag\": {\"code\": \"UndeclaredName\", \"message\": \"undefined: arggs\", \"range\": {\"end\": {\"character\": 30, \"line\": 260}, \"start\": {\"character\": 25, \"line\": 260}}, \"severity\": 1}, \"fix_introduced_errors\": [{\"code\": \"NonSliceableOperand\", \"message\": \"cannot slice arggs (variable of type int)\", \"path\": \"internal/css_parser/css_decls_transform.go\", \"range\": {\"end\": {\"character\": 30, \"line\": 261}, \"start\": {\"character\": 25, \"line\": 261}}, \"severity\": 1}], \"fix_ops\": [{\"end\": [260, 7], \"kind\": \"change\", \"path\": \"internal/css_parser/css_decls_transform.go\", \"start\": [260, 7], \"text\": \"arggs := 0\\n\\t\\t\\t\\t\\t\\t\\t\"}], \"kind\": \"mutation\", \"mutation\": {\"end\": [260, 29], \"id\": \"M2\", \"offsets\": [9034, 9038], \"sha\": \"d8f7a6c4626704ca\", \"start\": [260, 25], \"text\": \"arggs\", \"what\": \"misspell 'args' as 'arggs' (duplicate a middle character)\"}, \"n_fix_ops\": 1, \"path\": \"internal/css_parser/css_decls_transform.go\", \"post_errors\": 1, \"title\": \"Create variable arggs\", \"via\": \"resolve\"}, \"note\": \"quick fix 'Create variable arggs' for UndeclaredName at internal/css_parser/css_decls_transform.go:261:26 raises the error count in the edited files from 0 to 1 (seeded by M2: misspell 'args' as 'arggs' (duplicate a middle character); errors before the mutation 0, after the fix 1); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 49s\", \"shape\": \"diagnostics:extra:NonSliceableOperand\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "gopls|r4_edits|diagnostics:extra:NonSliceableOperand",
+  "run_id": "31cdc65c834b"
+ },
+ "replay_logs": [
+  "logs/gopls-v0.23.0-31cdc65c834b-r4-replay-baseline-20261118-194900-2cd1ee.jsonl.gz",
+  "logs/gopls-v0.23.0-31cdc65c834b-r4-replay-case-20261118-194850-90dbb6.jsonl.gz",
+  "logs/gopls-v0.23.0-31cdc65c834b-r4-replay-control-20261118-194904-3200f2.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

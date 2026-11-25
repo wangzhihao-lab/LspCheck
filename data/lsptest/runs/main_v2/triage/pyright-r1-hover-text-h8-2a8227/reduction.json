@@ -1,0 +1,139 @@
+{
+ "vid": "95c1b8d86026-v00",
+ "ops_before": 13,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 25,
+ "cache_hits": 15,
+ "reduce_seconds": 257.814,
+ "budget_exhausted": false,
+ "probe_log": [
+  [
+   8,
+   true
+  ],
+  [
+   5,
+   false
+  ],
+  [
+   6,
+   false
+  ],
+  [
+   4,
+   false
+  ],
+  [
+   4,
+   false
+  ],
+  [
+   4,
+   false
+  ],
+  [
+   5,
+   false
+  ],
+  [
+   7,
+   false
+  ],
+  [
+   7,
+   false
+  ],
+  [
+   7,
+   true
+  ],
+  [
+   6,
+   false
+  ],
+  [
+   6,
+   false
+  ],
+  [
+   4,
+   false
+  ],
+  [
+   4,
+   false
+  ],
+  [
+   6,
+   false
+  ],
+  [
+   6,
+   true
+  ],
+  [
+   5,
+   true
+  ],
+  [
+   4,
+   true
+  ],
+  [
+   3,
+   false
+  ],
+  [
+   2,
+   false
+  ],
+  [
+   1,
+   false
+  ],
+  [
+   1,
+   false
+  ],
+  [
+   1,
+   false
+  ],
+  [
+   3,
+   false
+  ],
+  [
+   3,
+   false
+  ]
+ ],
+ "logs": [
+  "pyright-1.1.414-tr2a8227-replay-baseline-20261118-225526-8d5405.jsonl.gz",
+  "pyright-1.1.414-tr2a8227-replay-control-20261118-225526-3c0270.jsonl.gz",
+  "pyright-1.1.414-tr2a8227-replay-history-20261118-225529-5f4d21.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [
+   "(parameter) title: Unknown | None",
+   [
+    11,
+    26,
+    11,
+    31
+   ]
+  ],
+  "actual": [
+   "(parameter) title: str | Any | None",
+   [
+    11,
+    26,
+    11,
+    31
+   ]
+  ]
+ },
+ "ops_after": 4,
+ "total_seconds": 322.1
+}

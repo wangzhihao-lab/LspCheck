@@ -1,0 +1,275 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "2c59f4574505-v00",
+ "run_id": "2c59f4574505",
+ "oracle": "r3_routes",
+ "server": {
+  "kind": "rust-analyzer",
+  "version": "2026-09-21"
+ },
+ "project": {
+  "name": "alacritty/alacritty@d692748d3f61",
+  "source": "corpus",
+  "ref": "temp/corpus/alacritty__alacritty@d692748d3f61",
+  "commit": "d692748d3f61253ebe9f5094320120d22f6a046f",
+  "language": "rust"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "alacritty/src/cli.rs",
+    "positions": [],
+    "ends": [],
+    "names": []
+   },
+   {
+    "path": "alacritty/src/display/window.rs",
+    "positions": [],
+    "ends": [],
+    "names": []
+   },
+   {
+    "path": "alacritty/src/macos/proc.rs",
+    "positions": [],
+    "ends": [],
+    "names": []
+   }
+  ]
+ },
+ "key": {
+  "method": "diagnostics",
+  "path": "alacritty/src/cli.rs",
+  "line": -1,
+  "character": -1,
+  "extra": "route:push"
+ },
+ "ops": [],
+ "case": {
+  "path": "alacritty/src/cli.rs",
+  "sub": "a",
+  "want_pull": false
+ },
+ "shape": "diagnostics:missing:inactive_code",
+ "signature": "rust-analyzer|r3_routes|diagnostics:missing:inactive_code",
+ "expected": [
+  [
+   35,
+   4,
+   39,
+   36,
+   4,
+   "inactive_code",
+   "rust-analyzer",
+   "code is inactive due to #[cfg] directives: target_os = \"macos\" is enabled"
+  ],
+  [
+   41,
+   4,
+   44,
+   36,
+   4,
+   "inactive_code",
+   "rust-analyzer",
+   "code is inactive due to #[cfg] directives: windows is disabled"
+  ],
+  [
+   202,
+   12,
+   203,
+   30,
+   4,
+   "inactive_code",
+   "rust-analyzer",
+   "code is inactive due to #[cfg] directives: target_os = \"windows\" is disabled"
+  ],
+  [
+   307,
+   4,
+   310,
+   40,
+   4,
+   "inactive_code",
+   "rust-analyzer",
+   "code is inactive due to #[cfg] directives: target_os = \"macos\" is enabled"
+  ],
+  [
+   430,
+   4,
+   431,
+   22,
+   4,
+   "inactive_code",
+   "rust-analyzer",
+   "code is inactive due to #[cfg] directives: target_os = \"linux\" is disabled"
+  ],
+  [
+   432,
+   4,
+   433,
+   22,
+   4,
+   "inactive_code",
+   "rust-analyzer",
+   "code is inactive due to #[cfg] directives: target_os = \"linux\" is disabled"
+  ],
+  [
+   435,
+   4,
+   436,
+   29,
+   4,
+   "inactive_code",
+   "rust-analyzer",
+   "code is inactive due to #[cfg] directives: target_os = \"linux\" is disabled"
+  ],
+  [
+   437,
+   4,
+   438,
+   29,
+   4,
+   "inactive_code",
+   "rust-analyzer",
+   "code is inactive due to #[cfg] directives: target_os = \"linux\" is disabled"
+  ],
+  [
+   536,
+   4,
+   565,
+   5,
+   4,
+   "inactive_code",
+   "rust-analyzer",
+   "code is inactive due to #[cfg] directives: target_os = \"linux\" is disabled"
+  ]
+ ],
+ "actual": [],
+ "reproduced": "3/3",
+ "note": "pull vs push; flake 3/3 [r1:SCR+retry r2:SCR r3:SCR] in 1036s",
+ "violation": {
+  "oracle": "r3_routes",
+  "server": "rust-analyzer-2026-09-21",
+  "project": "alacritty/alacritty@d692748d3f61",
+  "key": {
+   "method": "diagnostics",
+   "path": "alacritty/src/cli.rs",
+   "line": -1,
+   "character": -1,
+   "extra": "route:push"
+  },
+  "expected": [
+   [
+    35,
+    4,
+    39,
+    36,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives: target_os = \"macos\" is enabled"
+   ],
+   [
+    41,
+    4,
+    44,
+    36,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives: windows is disabled"
+   ],
+   [
+    202,
+    12,
+    203,
+    30,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives: target_os = \"windows\" is disabled"
+   ],
+   [
+    307,
+    4,
+    310,
+    40,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives: target_os = \"macos\" is enabled"
+   ],
+   [
+    430,
+    4,
+    431,
+    22,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives: target_os = \"linux\" is disabled"
+   ],
+   [
+    432,
+    4,
+    433,
+    22,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives: target_os = \"linux\" is disabled"
+   ],
+   [
+    435,
+    4,
+    436,
+    29,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives: target_os = \"linux\" is disabled"
+   ],
+   [
+    437,
+    4,
+    438,
+    29,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives: target_os = \"linux\" is disabled"
+   ],
+   [
+    536,
+    4,
+    565,
+    5,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives: target_os = \"linux\" is disabled"
+   ]
+  ],
+  "actual": [],
+  "ops": [],
+  "detail": "{\"case\": {\"path\": \"alacritty/src/cli.rs\", \"sub\": \"a\", \"want_pull\": false}, \"note\": \"pull vs push; flake 3/3 [r1:SCR+retry r2:SCR r3:SCR] in 1036s\", \"shape\": \"diagnostics:missing:inactive_code\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "rust-analyzer|r3_routes|diagnostics:missing:inactive_code",
+  "run_id": "2c59f4574505"
+ },
+ "replay_logs": [
+  "logs/rust-analyzer-2026-09-21-tr0b07f0-r3-replay-baseline-20260925-170810-165ef4.jsonl.gz",
+  "logs/rust-analyzer-2026-09-21-tr0b07f0-r3-replay-control-20260925-170831-ed9939.jsonl.gz",
+  "logs/rust-analyzer-2026-09-21-tr0b07f0-r3-replay-route-20260925-170849-3d7c9b.jsonl.gz"
+ ],
+ "project_files": {},
+ "group": "rust-analyzer-r3-diagnostics-missing-inactive-code-a-0b07f0",
+ "reduced": true
+}

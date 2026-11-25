@@ -1,0 +1,3 @@
+2026-09-24 06:12:15,752 INFO campaign_run run 334e0262489b: r1_history on rust-analyzer 2026-09-21, AlexsJones/llmfit@2ffe4fd899a6 seed 1 settled, targets ['llmfit-core/src/analysis.rs', 'llmfit-tui/src/filter_config.rs', 'llmfit-tui/src/serve_api.rs']
+2026-09-24 06:31:25,203 INFO campaign_run run 334e0262489b: 0 candidate(s) in 1150s; confirming
+2026-09-24 06:31:25,205 INFO campaign_run run 334e0262489b finished: ok, 0 confirmed of 0 candidate(s), 1150s

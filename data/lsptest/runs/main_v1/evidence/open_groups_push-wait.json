@@ -1,0 +1,152 @@
+{
+ "campaign": "main_v1",
+ "subcommand": "push-wait",
+ "written": "2026-11-20 05:57",
+ "rows": [
+  {
+   "gid": "rust-analyzer-r3-diagnostics-extra-non-snake-case-a-52ba0b",
+   "error": "",
+   "server": {
+    "kind": "rust-analyzer",
+    "version": "2026-09-21"
+   },
+   "project": {
+    "name": "BurntSushi/ripgrep@3fce3b5bb023",
+    "source": "corpus",
+    "ref": "temp/corpus/BurntSushi__ripgrep@3fce3b5bb023",
+    "commit": "3fce3b5bb0236da2df6d99672afb8a719642eca7",
+    "language": "rust"
+   },
+   "path": "crates/searcher/examples/search-stdin.rs",
+   "wait_s": 180.0,
+   "push_settled": true,
+   "push_pull_mode": false,
+   "push_assumed": [],
+   "push_timeline": [
+    {
+     "after_snapshot_s": 0.0,
+     "publish_index": 412,
+     "version": 1,
+     "n": 0,
+     "codes": {}
+    }
+   ],
+   "pull_settled": true,
+   "pull_mode": true,
+   "pull_error": null,
+   "pull_n": 0,
+   "pull_codes": {},
+   "seconds": 196.3
+  },
+  {
+   "gid": "rust-analyzer-r3-diagnostics-extra-unlinked-file-a-751ce1",
+   "error": "",
+   "server": {
+    "kind": "rust-analyzer",
+    "version": "2026-09-21"
+   },
+   "project": {
+    "name": "BurntSushi/ripgrep@3fce3b5bb023",
+    "source": "corpus",
+    "ref": "temp/corpus/BurntSushi__ripgrep@3fce3b5bb023",
+    "commit": "3fce3b5bb0236da2df6d99672afb8a719642eca7",
+    "language": "rust"
+   },
+   "path": "crates/ignore/src/types.rs",
+   "wait_s": 180.0,
+   "push_settled": true,
+   "push_pull_mode": false,
+   "push_assumed": [],
+   "push_timeline": [
+    {
+     "after_snapshot_s": 0.0,
+     "publish_index": 131,
+     "version": 1,
+     "n": 0,
+     "codes": {}
+    }
+   ],
+   "pull_settled": true,
+   "pull_mode": true,
+   "pull_error": null,
+   "pull_n": 0,
+   "pull_codes": {},
+   "seconds": 195.6
+  },
+  {
+   "gid": "rust-analyzer-r3-diagnostics-missing-e0004-inactive-code-a-731c4f",
+   "error": "",
+   "server": {
+    "kind": "rust-analyzer",
+    "version": "2026-09-21"
+   },
+   "project": {
+    "name": "dani-garcia/vaultwarden@cc67d644f626",
+    "source": "corpus",
+    "ref": "temp/corpus/dani-garcia__vaultwarden@cc67d644f626",
+    "commit": "cc67d644f62605cb46f4d16c4a2eed1a861cc8bb",
+    "language": "rust"
+   },
+   "path": "src/db/models/attachment.rs",
+   "wait_s": 180.0,
+   "push_settled": true,
+   "push_pull_mode": false,
+   "push_assumed": [],
+   "push_timeline": [
+    {
+     "after_snapshot_s": 0.0,
+     "publish_index": 4123,
+     "version": 1,
+     "n": 0,
+     "codes": {}
+    }
+   ],
+   "pull_settled": true,
+   "pull_mode": true,
+   "pull_error": null,
+   "pull_n": 4,
+   "pull_codes": {
+    "E0004/rust-analyzer": 1,
+    "inactive_code/rust-analyzer": 3
+   },
+   "seconds": 237.3
+  },
+  {
+   "gid": "rust-analyzer-r3-diagnostics-missing-inactive-code-a-0b07f0",
+   "error": "",
+   "server": {
+    "kind": "rust-analyzer",
+    "version": "2026-09-21"
+   },
+   "project": {
+    "name": "alacritty/alacritty@d692748d3f61",
+    "source": "corpus",
+    "ref": "temp/corpus/alacritty__alacritty@d692748d3f61",
+    "commit": "d692748d3f61253ebe9f5094320120d22f6a046f",
+    "language": "rust"
+   },
+   "path": "alacritty/src/cli.rs",
+   "wait_s": 180.0,
+   "push_settled": true,
+   "push_pull_mode": false,
+   "push_assumed": [],
+   "push_timeline": [
+    {
+     "after_snapshot_s": 0.0,
+     "publish_index": 1058,
+     "version": 1,
+     "n": 0,
+     "codes": {}
+    }
+   ],
+   "pull_settled": true,
+   "pull_mode": true,
+   "pull_error": null,
+   "pull_n": 9,
+   "pull_codes": {
+    "inactive_code/rust-analyzer": 9
+   },
+   "seconds": 203.4
+  }
+ ]
+}

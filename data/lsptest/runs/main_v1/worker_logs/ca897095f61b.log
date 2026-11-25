@@ -1,0 +1,3 @@
+2026-09-24 12:01:48,257 INFO campaign_run run ca897095f61b: r1_history on ts7 7.0.2, Fission-AI/OpenSpec@f179ed4e4056 seed 3 settled, targets ['src/commands/workflow/index.ts', 'test/commands/workset.test.ts', 'test/core/migration.test.ts']
+2026-09-24 12:08:44,129 INFO campaign_run run ca897095f61b: 0 candidate(s) in 416s; confirming
+2026-09-24 12:08:44,130 INFO campaign_run run ca897095f61b finished: ok, 0 confirmed of 0 candidate(s), 416s

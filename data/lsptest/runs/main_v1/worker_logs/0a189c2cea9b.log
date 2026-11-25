@@ -1,0 +1,3 @@
+2026-09-24 04:09:54,770 INFO campaign_run run 0a189c2cea9b: r0_crash on rust-analyzer 2026-09-21, rtk-ai/rtk@b748a5f75563 seed 1 settled, targets ['src/cmds/js/next_cmd.rs', 'src/cmds/system/env_cmd.rs', 'src/parser/types.rs']
+2026-09-24 04:11:51,623 INFO campaign_run run 0a189c2cea9b: 0 candidate(s) in 117s; confirming
+2026-09-24 04:11:51,624 INFO campaign_run run 0a189c2cea9b finished: ok, 0 confirmed of 0 candidate(s), 117s

@@ -1,0 +1,300 @@
+{
+ "format": 1,
+ "campaign": "bench_v1",
+ "vid": "48aa946c5f1b-v01",
+ "run_id": "48aa946c5f1b",
+ "oracle": "r4_edits",
+ "server": {
+  "kind": "tsserver",
+  "version": "4.3.5+tsls0.7.1"
+ },
+ "project": {
+  "name": "tsserver-44123",
+  "source": "dir",
+  "ref": "data/lsp_bench/cases/tsserver-44123/project",
+  "commit": "",
+  "language": "typescript"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 120.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "index.ts",
+    "positions": [
+     [
+      0,
+      22
+     ],
+     [
+      0,
+      36
+     ],
+     [
+      0,
+      48
+     ],
+     [
+      1,
+      16
+     ],
+     [
+      1,
+      26
+     ],
+     [
+      1,
+      43
+     ],
+     [
+      2,
+      23
+     ],
+     [
+      2,
+      28
+     ],
+     [
+      3,
+      24
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      28
+     ],
+     [
+      0,
+      43
+     ],
+     [
+      0,
+      52
+     ],
+     [
+      1,
+      23
+     ],
+     [
+      1,
+      28
+     ],
+     [
+      1,
+      47
+     ],
+     [
+      2,
+      24
+     ],
+     [
+      2,
+      32
+     ],
+     [
+      3,
+      30
+     ]
+    ],
+    "names": [
+     "uppercaseAll",
+     "stringsPromise",
+     "Promise",
+     "stringsPromise",
+     "then",
+     "strings",
+     "of",
+     "strings",
+     "toUpperCase"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "diagnostics",
+  "path": "index.ts",
+  "line": 0,
+  "character": 29,
+  "extra": "M2:quickfix-errors:Remove unused declaration for: 'stringsPromise'"
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "index.ts"
+  },
+  {
+   "kind": "change",
+   "path": "index.ts",
+   "start": [
+    1,
+    9
+   ],
+   "end": [
+    1,
+    23
+   ],
+   "text": "stringsPPromise"
+  },
+  {
+   "kind": "change",
+   "path": "index.ts",
+   "start": [
+    0,
+    29
+   ],
+   "end": [
+    0,
+    62
+   ]
+  }
+ ],
+ "case": {
+  "action_kind": "quickfix",
+  "base_errors": 0,
+  "check": "errors",
+  "diag": {
+   "code": 6133,
+   "message": "'stringsPromise' is declared but its value is never read.",
+   "range": {
+    "end": {
+     "character": 43,
+     "line": 0
+    },
+    "start": {
+     "character": 29,
+     "line": 0
+    }
+   },
+   "severity": 4
+  },
+  "fix_introduced_errors": [],
+  "fix_ops": [
+   {
+    "end": [
+     0,
+     62
+    ],
+    "kind": "change",
+    "path": "index.ts",
+    "start": [
+     0,
+     29
+    ]
+   }
+  ],
+  "kind": "mutation",
+  "mutation": {
+   "end": [
+    1,
+    23
+   ],
+   "id": "M2",
+   "offsets": [
+    75,
+    89
+   ],
+   "sha": "354f5bc1eb95d52d",
+   "start": [
+    1,
+    9
+   ],
+   "text": "stringsPPromise",
+   "what": "misspell 'stringsPromise' as 'stringsPPromise' (duplicate a middle character)"
+  },
+  "n_fix_ops": 1,
+  "path": "index.ts",
+  "post_errors": 1,
+  "title": "Remove unused declaration for: 'stringsPromise'",
+  "via": "command"
+ },
+ "shape": "diagnostics:extra:2304",
+ "signature": "tsserver|r4_edits|diagnostics:extra:2304",
+ "expected": [],
+ "actual": [
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "2304",
+   "typescript",
+   "Cannot find name 'stringsPPromise'."
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "quick fix \"Remove unused declaration for: 'stringsPromise'\" for 6133 at index.ts:1:30 raises the error count in the edited files from 0 to 1 (seeded by M2: misspell 'stringsPromise' as 'stringsPPromise' (duplicate a middle character); errors before the mutation 0, after the fix 1); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 45s",
+ "violation": {
+  "oracle": "r4_edits",
+  "server": "tsserver-4.3.5+tsls0.7.1",
+  "project": "tsserver-44123",
+  "key": {
+   "method": "diagnostics",
+   "path": "index.ts",
+   "line": 0,
+   "character": 29,
+   "extra": "M2:quickfix-errors:Remove unused declaration for: 'stringsPromise'"
+  },
+  "expected": [],
+  "actual": [
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2304",
+    "typescript",
+    "Cannot find name 'stringsPPromise'."
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "index.ts"
+   },
+   {
+    "kind": "change",
+    "path": "index.ts",
+    "start": [
+     1,
+     9
+    ],
+    "end": [
+     1,
+     23
+    ],
+    "text": "stringsPPromise"
+   },
+   {
+    "kind": "change",
+    "path": "index.ts",
+    "start": [
+     0,
+     29
+    ],
+    "end": [
+     0,
+     62
+    ]
+   }
+  ],
+  "detail": "{\"case\": {\"action_kind\": \"quickfix\", \"base_errors\": 0, \"check\": \"errors\", \"diag\": {\"code\": 6133, \"message\": \"'stringsPromise' is declared but its value is never read.\", \"range\": {\"end\": {\"character\": 43, \"line\": 0}, \"start\": {\"character\": 29, \"line\": 0}}, \"severity\": 4}, \"fix_introduced_errors\": [], \"fix_ops\": [{\"end\": [0, 62], \"kind\": \"change\", \"path\": \"index.ts\", \"start\": [0, 29]}], \"kind\": \"mutation\", \"mutation\": {\"end\": [1, 23], \"id\": \"M2\", \"offsets\": [75, 89], \"sha\": \"354f5bc1eb95d52d\", \"start\": [1, 9], \"text\": \"stringsPPromise\", \"what\": \"misspell 'stringsPromise' as 'stringsPPromise' (duplicate a middle character)\"}, \"n_fix_ops\": 1, \"path\": \"index.ts\", \"post_errors\": 1, \"title\": \"Remove unused declaration for: 'stringsPromise'\", \"via\": \"command\"}, \"note\": \"quick fix \\\"Remove unused declaration for: 'stringsPromise'\\\" for 6133 at index.ts:1:30 raises the error count in the edited files from 0 to 1 (seeded by M2: misspell 'stringsPromise' as 'stringsPPromise' (duplicate a middle character); errors before the mutation 0, after the fix 1); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 45s\", \"shape\": \"diagnostics:extra:2304\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "tsserver|r4_edits|diagnostics:extra:2304",
+  "run_id": "48aa946c5f1b"
+ },
+ "replay_logs": [
+  "logs/tsserver-4.3.5+tsls0.7.1-48aa946c5f1b-r4-replay-baseline-20260924-212524-e05f92.jsonl.gz",
+  "logs/tsserver-4.3.5+tsls0.7.1-48aa946c5f1b-r4-replay-case-20260924-212517-3fd18b.jsonl.gz",
+  "logs/tsserver-4.3.5+tsls0.7.1-48aa946c5f1b-r4-replay-control-20260924-212528-8961d4.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

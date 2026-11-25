@@ -1,0 +1,72 @@
+{
+ "schema": 1,
+ "id": "rust-analyzer-16556",
+ "meta": {
+  "server": "rust-analyzer",
+  "kind": "rust-analyzer",
+  "number": 16556,
+  "url": "https://github.com/rust-lang/rust-analyzer/issues/16556",
+  "title": "`remove-unnecessary-else` bad suggestions and false positives on thread_local macro",
+  "oracle_class": "R4",
+  "subtype": "quickfix",
+  "fix_ref": "rust-lang/rust-analyzer#16590 (fix: Fix false positives for \"unnecessary else\" diagnostic)",
+  "fix_shas": [
+   "e6b96dba5614150b3b73a79db34a9f70c3729265"
+  ],
+  "pre_version": "2024-02-19",
+  "post_version": "2024-02-26",
+  "pre_build": "2024-02-19",
+  "post_build": "2024-02-26",
+  "build_notes": "GitHub release assets rust-analyzer-aarch64-apple-darwin.gz of the weekly tags 2024-02-19 and 2024-02-26; git tag --contains puts the fix first in 2024-02-26. The sysroot is the local rustup toolchain (rustc 1.98.1).",
+  "effort_minutes": 6,
+  "notes": "The new remove-unnecessary-else diagnostic fired when the then-branch diverges (return) even if the if is an expression whose value is used (a let initializer with else-if); its fix then splits the let's if-else chain into a statement and a second if, which does not parse. The fix restricts the diagnostic to if statements. The thread_local! false positive of the same issue needs the reporter's projects (no minimal reproduction) and is not part of the case."
+ },
+ "language": "rust",
+ "settings": {},
+ "settings_note": "The issue names no settings; the session keeps checkOnSave off (native analysis only).",
+ "session": {
+  "settle_timeout_s": 240,
+  "request_timeout_s": 60,
+  "pull_diagnostics": false
+ },
+ "files": [
+  {
+   "path": "src/main.rs",
+   "provenance": "issue",
+   "source": "issue body, first code block ('Bad suggestions: Given this code')",
+   "note": ""
+  },
+  {
+   "path": "Cargo.toml",
+   "provenance": "scaffold",
+   "source": "",
+   "note": "a binary crate around the snippet (package name, version, edition 2021)"
+  }
+ ],
+ "repro": {
+  "attempt": 1,
+  "timing": "settled",
+  "steps": "Open src/main.rs. The diagnostic remove-unnecessary-else (weak warning) is reported on the else of 'let query = if files.is_empty() { return; } else if ...'. Apply its fix 'Remove unnecessary else block'. Reported: the let initializer is cut after the first if ('let query = if files.is_empty() { return; }' followed by a separate 'if files.len() == 1 {...}'), which doesn't compile. Probe: the edited text must have no parse error that the original did not have; no fix offered means absent (the fix stops reporting the diagnostic here).",
+  "ops": [
+   {
+    "kind": "open",
+    "path": "src/main.rs"
+   }
+  ],
+  "probe": {
+   "type": "edit_breaks_syntax",
+   "params": {
+    "edit": {
+     "via": "code_action",
+     "path": "src/main.rs",
+     "diagnostic": {
+      "code": "remove-unnecessary-else"
+     },
+     "title_re": "(?i)remove unnecessary else",
+     "missing": "absent"
+    }
+   }
+  }
+ },
+ "attempts": []
+}

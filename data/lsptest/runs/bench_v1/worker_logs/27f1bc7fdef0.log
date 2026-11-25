@@ -1,0 +1,3 @@
+2026-09-24 20:06:24,477 INFO campaign_run run 27f1bc7fdef0: r3_routes on tsserver 4.9.5+tsls3.3.0, tsserver-52274 seed 1 settled, targets ['index.ts']
+2026-09-24 20:06:32,557 INFO campaign_run run 27f1bc7fdef0: 0 candidate(s) in 8s; confirming
+2026-09-24 20:06:32,557 INFO campaign_run run 27f1bc7fdef0 finished: ok, 0 confirmed of 0 candidate(s), 8s

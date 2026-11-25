@@ -1,0 +1,501 @@
+{
+ "format": 1,
+ "campaign": "main_v2",
+ "vid": "a182be2619cd-v00",
+ "run_id": "a182be2619cd",
+ "oracle": "r1_history",
+ "server": {
+  "kind": "gopls",
+  "version": "v0.23.0"
+ },
+ "project": {
+  "name": "iawia002/lux@dd00f6d258d8",
+  "source": "corpus",
+  "ref": "temp/corpus/iawia002__lux@dd00f6d258d8",
+  "commit": "dd00f6d258d80b6684a0b9402d7124e5c18ef42f",
+  "language": "go"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "extractors/geekbang/geekbang_test.go",
+    "positions": [
+     [
+      0,
+      12
+     ],
+     [
+      11,
+      10
+     ],
+     [
+      12,
+      14
+     ],
+     [
+      16,
+      5
+     ],
+     [
+      17,
+      5
+     ],
+     [
+      24,
+      2
+     ],
+     [
+      24,
+      5
+     ],
+     [
+      24,
+      28
+     ],
+     [
+      24,
+      33
+     ],
+     [
+      27,
+      5
+     ],
+     [
+      27,
+      22
+     ],
+     [
+      27,
+      28
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      16
+     ],
+     [
+      11,
+      13
+     ],
+     [
+      12,
+      16
+     ],
+     [
+      16,
+      7
+     ],
+     [
+      17,
+      7
+     ],
+     [
+      24,
+      3
+     ],
+     [
+      24,
+      7
+     ],
+     [
+      24,
+      32
+     ],
+     [
+      24,
+      34
+     ],
+     [
+      27,
+      7
+     ],
+     [
+      27,
+      24
+     ],
+     [
+      27,
+      30
+     ]
+    ],
+    "names": [
+     "geekbang",
+     "string",
+     "Args",
+     "args",
+     "URL",
+     "t",
+     "Run",
+     "testing",
+     "T",
+     "test",
+     "args",
+     "data"
+    ]
+   },
+   {
+    "path": "extractors/streamtape/streamtape_test.go",
+    "positions": [
+     [
+      0,
+      13
+     ],
+     [
+      9,
+      12
+     ],
+     [
+      11,
+      4
+     ],
+     [
+      22,
+      9
+     ],
+     [
+      22,
+      22
+     ],
+     [
+      23,
+      33
+     ],
+     [
+      24,
+      17
+     ],
+     [
+      24,
+      35
+     ],
+     [
+      24,
+      57
+     ],
+     [
+      26,
+      5
+     ],
+     [
+      26,
+      14
+     ],
+     [
+      26,
+      18
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      18
+     ],
+     [
+      9,
+      19
+     ],
+     [
+      11,
+      6
+     ],
+     [
+      22,
+      10
+     ],
+     [
+      22,
+      25
+     ],
+     [
+      23,
+      34
+     ],
+     [
+      24,
+      19
+     ],
+     [
+      24,
+      37
+     ],
+     [
+      24,
+      61
+     ],
+     [
+      26,
+      7
+     ],
+     [
+      26,
+      15
+     ],
+     [
+      26,
+      19
+     ]
+    ],
+    "names": [
+     "streamtape",
+     "TestStreamtape",
+     "name",
+     "tt",
+     "tests",
+     "T",
+     "New",
+     "args",
+     "Options",
+     "test",
+     "t",
+     "tt"
+    ]
+   },
+   {
+    "path": "extractors/yinyuetai/yinyuetai.go",
+    "positions": [
+     [
+      42,
+      5
+     ],
+     [
+      42,
+      12
+     ],
+     [
+      49,
+      40
+     ],
+     [
+      51,
+      25
+     ],
+     [
+      56,
+      17
+     ],
+     [
+      59,
+      6
+     ],
+     [
+      60,
+      10
+     ],
+     [
+      60,
+      33
+     ],
+     [
+      66,
+      73
+     ],
+     [
+      75,
+      28
+     ],
+     [
+      77,
+      6
+     ],
+     [
+      83,
+      5
+     ]
+    ],
+    "ends": [
+     [
+      42,
+      7
+     ],
+     [
+      42,
+      14
+     ],
+     [
+      49,
+      42
+     ],
+     [
+      51,
+      30
+     ],
+     [
+      56,
+      20
+     ],
+     [
+      59,
+      8
+     ],
+     [
+      60,
+      12
+     ],
+     [
+      60,
+      37
+     ],
+     [
+      66,
+      80
+     ],
+     [
+      75,
+      30
+     ],
+     [
+      77,
+      10
+     ],
+     [
+      83,
+      8
+     ]
+    ],
+    "names": [
+     "vid",
+     "nil",
+     "nil",
+     "WithStack",
+     "errors",
+     "data",
+     "nil",
+     "Message",
+     "CoreVideoInfo",
+     "Part",
+     "Quality",
+     "Title"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "completion",
+  "path": "extractors/geekbang/geekbang_test.go",
+  "line": 11,
+  "character": 13,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "extractors/geekbang/geekbang_test.go"
+  },
+  {
+   "kind": "open",
+   "path": "extractors/streamtape/streamtape_test.go"
+  },
+  {
+   "kind": "open",
+   "path": "extractors/yinyuetai/yinyuetai.go"
+  },
+  {
+   "kind": "fs_write",
+   "path": "go.mod",
+   "text": "module github.com/iawia002/lux\n\ngo 1.24\n\nrequire (\n\tgithub.com/EDDYCJY/fake-useragent v0.2.0\n\tgithub.com/MercuryEngineering/CookieMonster v0.0.0-20180304172713-1584578b3403\n\tgithub.com/PuerkitoBio/goquery v1.10.3\n\tgithub.com/buger/jsonparser v1.1.1\n\tgithub.com/cheggaaa/pb/v3 v3.1.7\n\tgithub.com/dop251/goja v0.0.0-20250624190929-4d26883d182a\n\tgithub.com/fatih/color v1.18.0\n\tgithub.com/gocolly/colly/v2 v2.2.0\n\tgithub.com/itchyny/gojq v0.12.17\n\tgithub.com/json-iterator/go v1.1.12\n\tgithub.com/kkdai/youtube/v2 v2.10.5\n\tgithub.com/kr/pretty v0.3.1\n\tgithub.com/pkg/errors v0.9.1\n\tgithub.com/robertkrimen/otto v0.5.1\n\tgithub.com/urfave/cli/v2 v2.27.7\n)\n\nrequire (\n\tgithub.com/VividCortex/ewma v1.2.0 // indirect\n\tgithub.com/andybalholm/cascadia v1.3.3 // indirect\n\tgithub.com/antchfx/htmlquery v1.3.4 // indirect\n\tgithub.com/antchfx/xmlquery v1.4.4 // indirect\n\tgithub.com/antchfx/xpath v1.3.4 // indirect\n\tgithub.com/bitly/go-simplejson v0.5.1 // indirect\n\tgithub.com/bits-and-blooms/bitset v1.22.0 // indirect\n\tgithub.com/cpuguy83/go-md2man/v2 v2.0.7 // indirect\n\tgithub.com/dlclark/regexp2 v1.11.5 // indirect\n\tgithub.com/go-sourcemap/sourcemap v2.1.4+incompatible // indirect\n\tgithub.com/gobwas/glob v0.2.3 // indirect\n\tgithub.com/golang/groupcache v0.0.0-20241129210726-2c02b8208cf8 // indirect\n\tgithub.com/golang/protobuf v1.5.4 // indirect\n\tgithub.com/google/pprof v0.0.0-20250629210550-e611ec304b22 // indirect\n\tgithub.com/itchyny/timefmt-go v0.1.6 // indirect\n\tgithub.com/kennygrant/sanitize v1.2.4 // indirect\n\tgithub.com/kr/text v0.2.0 // indirect\n\tgithub.com/mattn/go-colorable v0.1.14 // indirect\n\tgithub.com/mattn/go-isatty v0.0.20 // indirect\n\tgithub.com/mattn/go-runewidth v0.0.16 // indirect\n\tgithub.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd // indirect\n\tgithub.com/modern-go/reflect2 v1.0.2 // indirect\n\tgithub.com/nlnwa/whatwg-url v0.6.2 // indirect\n\tgithub.com/rivo/uniseg v0.4.7 // indirect\n\tgithub.com/rogpeppe/go-internal v1.14.1 // indirect\n\tgithub.com/russross/blackfriday/v2 v2.1.0 // indirect\n\tgithub.com/saintfish/chardet v0.0.0-20230101081208-5e3ef4b5456d // indirect\n\tgithub.com/temoto/robotstxt v1.1.2 // indirect\n\tgithub.com/xrash/smetrics v0.0.0-20240521201337-686a1a2994c1 // indirect\n\tgolang.org/x/net v0.41.0 // indirect\n\tgolang.org/x/sys v0.33.0 // indirect\n\tgolang.org/x/text v0.26.0 // indirect\n\tgoogle.golang.org/appengine v1.6.8 // indirect\n\tgoogle.golang.org/protobuf v1.36.6 // indirect\n\tgopkg.in/sourcemap.v1 v1.0.5 // indirect\n"
+  },
+  {
+   "kind": "fs_rename",
+   "path": "extractors/geekbang/geekbang_test.go",
+   "new_path": "extractors/geekbang/geekbang_test_rt.go"
+  },
+  {
+   "kind": "fs_rename",
+   "path": "extractors/geekbang/geekbang_test_rt.go",
+   "new_path": "extractors/geekbang/geekbang_test.go"
+  },
+  {
+   "kind": "fs_write",
+   "path": "go.mod",
+   "text": "module github.com/iawia002/lux\n\ngo 1.24\n\nrequire (\n\tgithub.com/EDDYCJY/fake-useragent v0.2.0\n\tgithub.com/MercuryEngineering/CookieMonster v0.0.0-20180304172713-1584578b3403\n\tgithub.com/PuerkitoBio/goquery v1.10.3\n\tgithub.com/buger/jsonparser v1.1.1\n\tgithub.com/cheggaaa/pb/v3 v3.1.7\n\tgithub.com/dop251/goja v0.0.0-20250624190929-4d26883d182a\n\tgithub.com/fatih/color v1.18.0\n\tgithub.com/gocolly/colly/v2 v2.2.0\n\tgithub.com/itchyny/gojq v0.12.17\n\tgithub.com/json-iterator/go v1.1.12\n\tgithub.com/kkdai/youtube/v2 v2.10.5\n\tgithub.com/kr/pretty v0.3.1\n\tgithub.com/pkg/errors v0.9.1\n\tgithub.com/robertkrimen/otto v0.5.1\n\tgithub.com/urfave/cli/v2 v2.27.7\n)\n\nrequire (\n\tgithub.com/VividCortex/ewma v1.2.0 // indirect\n\tgithub.com/andybalholm/cascadia v1.3.3 // indirect\n\tgithub.com/antchfx/htmlquery v1.3.4 // indirect\n\tgithub.com/antchfx/xmlquery v1.4.4 // indirect\n\tgithub.com/antchfx/xpath v1.3.4 // indirect\n\tgithub.com/bitly/go-simplejson v0.5.1 // indirect\n\tgithub.com/bits-and-blooms/bitset v1.22.0 // indirect\n\tgithub.com/cpuguy83/go-md2man/v2 v2.0.7 // indirect\n\tgithub.com/dlclark/regexp2 v1.11.5 // indirect\n\tgithub.com/go-sourcemap/sourcemap v2.1.4+incompatible // indirect\n\tgithub.com/gobwas/glob v0.2.3 // indirect\n\tgithub.com/golang/groupcache v0.0.0-20241129210726-2c02b8208cf8 // indirect\n\tgithub.com/golang/protobuf v1.5.4 // indirect\n\tgithub.com/google/pprof v0.0.0-20250629210550-e611ec304b22 // indirect\n\tgithub.com/itchyny/timefmt-go v0.1.6 // indirect\n\tgithub.com/kennygrant/sanitize v1.2.4 // indirect\n\tgithub.com/kr/text v0.2.0 // indirect\n\tgithub.com/mattn/go-colorable v0.1.14 // indirect\n\tgithub.com/mattn/go-isatty v0.0.20 // indirect\n\tgithub.com/mattn/go-runewidth v0.0.16 // indirect\n\tgithub.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd // indirect\n\tgithub.com/modern-go/reflect2 v1.0.2 // indirect\n\tgithub.com/nlnwa/whatwg-url v0.6.2 // indirect\n\tgithub.com/rivo/uniseg v0.4.7 // indirect\n\tgithub.com/rogpeppe/go-internal v1.14.1 // indirect\n\tgithub.com/russross/blackfriday/v2 v2.1.0 // indirect\n\tgithub.com/saintfish/chardet v0.0.0-20230101081208-5e3ef4b5456d // indirect\n\tgithub.com/temoto/robotstxt v1.1.2 // indirect\n\tgithub.com/xrash/smetrics v0.0.0-20240521201337-686a1a2994c1 // indirect\n\tgolang.org/x/net v0.41.0 // indirect\n\tgolang.org/x/sys v0.33.0 // indirect\n\tgolang.org/x/text v0.26.0 // indirect\n\tgoogle.golang.org/appengine v1.6.8 // indirect\n\tgoogle.golang.org/protobuf v1.36.6 // indirect\n\tgopkg.in/sourcemap.v1 v1.0.5 // indirect\n)\n"
+  }
+ ],
+ "case": {
+  "chain_step": 0,
+  "families": [],
+  "family": "H7",
+  "history_index": 8,
+  "history_seed": 1009,
+  "mode": "fresh",
+  "note": "nest 0>1: H6 config round trip on go.mod: line 58 deleted | H5 rename extractors/geekbang/geekbang_test.go -> extractors/geekbang/geekbang_test_rt.go -> back",
+  "seed": 1,
+  "timing": "settled"
+ },
+ "shape": "completion:lost",
+ "signature": "gopls|r1_history|completion:lost",
+ "expected": [
+  "string"
+ ],
+ "actual": [],
+ "reproduced": "3/3",
+ "note": "H7: nest 0>1: H6 config round trip on go.mod: line 58 deleted | H5 rename extractors/geekbang/geekbang_test.go -> extractors/geekbang/geekbang_test_rt.go -> back; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 1929s",
+ "violation": {
+  "oracle": "r1_history",
+  "server": "gopls-v0.23.0",
+  "project": "iawia002/lux@dd00f6d258d8",
+  "key": {
+   "method": "completion",
+   "path": "extractors/geekbang/geekbang_test.go",
+   "line": 11,
+   "character": 13,
+   "extra": ""
+  },
+  "expected": [
+   "string"
+  ],
+  "actual": [],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "extractors/geekbang/geekbang_test.go"
+   },
+   {
+    "kind": "open",
+    "path": "extractors/streamtape/streamtape_test.go"
+   },
+   {
+    "kind": "open",
+    "path": "extractors/yinyuetai/yinyuetai.go"
+   },
+   {
+    "kind": "fs_write",
+    "path": "go.mod",
+    "text": "module github.com/iawia002/lux\n\ngo 1.24\n\nrequire (\n\tgithub.com/EDDYCJY/fake-useragent v0.2.0\n\tgithub.com/MercuryEngineering/CookieMonster v0.0.0-20180304172713-1584578b3403\n\tgithub.com/PuerkitoBio/goquery v1.10.3\n\tgithub.com/buger/jsonparser v1.1.1\n\tgithub.com/cheggaaa/pb/v3 v3.1.7\n\tgithub.com/dop251/goja v0.0.0-20250624190929-4d26883d182a\n\tgithub.com/fatih/color v1.18.0\n\tgithub.com/gocolly/colly/v2 v2.2.0\n\tgithub.com/itchyny/gojq v0.12.17\n\tgithub.com/json-iterator/go v1.1.12\n\tgithub.com/kkdai/youtube/v2 v2.10.5\n\tgithub.com/kr/pretty v0.3.1\n\tgithub.com/pkg/errors v0.9.1\n\tgithub.com/robertkrimen/otto v0.5.1\n\tgithub.com/urfave/cli/v2 v2.27.7\n)\n\nrequire (\n\tgithub.com/VividCortex/ewma v1.2.0 // indirect\n\tgithub.com/andybalholm/cascadia v1.3.3 // indirect\n\tgithub.com/antchfx/htmlquery v1.3.4 // indirect\n\tgithub.com/antchfx/xmlquery v1.4.4 // indirect\n\tgithub.com/antchfx/xpath v1.3.4 // indirect\n\tgithub.com/bitly/go-simplejson v0.5.1 // indirect\n\tgithub.com/bits-and-blooms/bitset v1.22.0 // indirect\n\tgithub.com/cpuguy83/go-md2man/v2 v2.0.7 // indirect\n\tgithub.com/dlclark/regexp2 v1.11.5 // indirect\n\tgithub.com/go-sourcemap/sourcemap v2.1.4+incompatible // indirect\n\tgithub.com/gobwas/glob v0.2.3 // indirect\n\tgithub.com/golang/groupcache v0.0.0-20241129210726-2c02b8208cf8 // indirect\n\tgithub.com/golang/protobuf v1.5.4 // indirect\n\tgithub.com/google/pprof v0.0.0-20250629210550-e611ec304b22 // indirect\n\tgithub.com/itchyny/timefmt-go v0.1.6 // indirect\n\tgithub.com/kennygrant/sanitize v1.2.4 // indirect\n\tgithub.com/kr/text v0.2.0 // indirect\n\tgithub.com/mattn/go-colorable v0.1.14 // indirect\n\tgithub.com/mattn/go-isatty v0.0.20 // indirect\n\tgithub.com/mattn/go-runewidth v0.0.16 // indirect\n\tgithub.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd // indirect\n\tgithub.com/modern-go/reflect2 v1.0.2 // indirect\n\tgithub.com/nlnwa/whatwg-url v0.6.2 // indirect\n\tgithub.com/rivo/uniseg v0.4.7 // indirect\n\tgithub.com/rogpeppe/go-internal v1.14.1 // indirect\n\tgithub.com/russross/blackfriday/v2 v2.1.0 // indirect\n\tgithub.com/saintfish/chardet v0.0.0-20230101081208-5e3ef4b5456d // indirect\n\tgithub.com/temoto/robotstxt v1.1.2 // indirect\n\tgithub.com/xrash/smetrics v0.0.0-20240521201337-686a1a2994c1 // indirect\n\tgolang.org/x/net v0.41.0 // indirect\n\tgolang.org/x/sys v0.33.0 // indirect\n\tgolang.org/x/text v0.26.0 // indirect\n\tgoogle.golang.org/appengine v1.6.8 // indirect\n\tgoogle.golang.org/protobuf v1.36.6 // indirect\n\tgopkg.in/sourcemap.v1 v1.0.5 // indirect\n"
+   },
+   {
+    "kind": "fs_rename",
+    "path": "extractors/geekbang/geekbang_test.go",
+    "new_path": "extractors/geekbang/geekbang_test_rt.go"
+   },
+   {
+    "kind": "fs_rename",
+    "path": "extractors/geekbang/geekbang_test_rt.go",
+    "new_path": "extractors/geekbang/geekbang_test.go"
+   },
+   {
+    "kind": "fs_write",
+    "path": "go.mod",
+    "text": "module github.com/iawia002/lux\n\ngo 1.24\n\nrequire (\n\tgithub.com/EDDYCJY/fake-useragent v0.2.0\n\tgithub.com/MercuryEngineering/CookieMonster v0.0.0-20180304172713-1584578b3403\n\tgithub.com/PuerkitoBio/goquery v1.10.3\n\tgithub.com/buger/jsonparser v1.1.1\n\tgithub.com/cheggaaa/pb/v3 v3.1.7\n\tgithub.com/dop251/goja v0.0.0-20250624190929-4d26883d182a\n\tgithub.com/fatih/color v1.18.0\n\tgithub.com/gocolly/colly/v2 v2.2.0\n\tgithub.com/itchyny/gojq v0.12.17\n\tgithub.com/json-iterator/go v1.1.12\n\tgithub.com/kkdai/youtube/v2 v2.10.5\n\tgithub.com/kr/pretty v0.3.1\n\tgithub.com/pkg/errors v0.9.1\n\tgithub.com/robertkrimen/otto v0.5.1\n\tgithub.com/urfave/cli/v2 v2.27.7\n)\n\nrequire (\n\tgithub.com/VividCortex/ewma v1.2.0 // indirect\n\tgithub.com/andybalholm/cascadia v1.3.3 // indirect\n\tgithub.com/antchfx/htmlquery v1.3.4 // indirect\n\tgithub.com/antchfx/xmlquery v1.4.4 // indirect\n\tgithub.com/antchfx/xpath v1.3.4 // indirect\n\tgithub.com/bitly/go-simplejson v0.5.1 // indirect\n\tgithub.com/bits-and-blooms/bitset v1.22.0 // indirect\n\tgithub.com/cpuguy83/go-md2man/v2 v2.0.7 // indirect\n\tgithub.com/dlclark/regexp2 v1.11.5 // indirect\n\tgithub.com/go-sourcemap/sourcemap v2.1.4+incompatible // indirect\n\tgithub.com/gobwas/glob v0.2.3 // indirect\n\tgithub.com/golang/groupcache v0.0.0-20241129210726-2c02b8208cf8 // indirect\n\tgithub.com/golang/protobuf v1.5.4 // indirect\n\tgithub.com/google/pprof v0.0.0-20250629210550-e611ec304b22 // indirect\n\tgithub.com/itchyny/timefmt-go v0.1.6 // indirect\n\tgithub.com/kennygrant/sanitize v1.2.4 // indirect\n\tgithub.com/kr/text v0.2.0 // indirect\n\tgithub.com/mattn/go-colorable v0.1.14 // indirect\n\tgithub.com/mattn/go-isatty v0.0.20 // indirect\n\tgithub.com/mattn/go-runewidth v0.0.16 // indirect\n\tgithub.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd // indirect\n\tgithub.com/modern-go/reflect2 v1.0.2 // indirect\n\tgithub.com/nlnwa/whatwg-url v0.6.2 // indirect\n\tgithub.com/rivo/uniseg v0.4.7 // indirect\n\tgithub.com/rogpeppe/go-internal v1.14.1 // indirect\n\tgithub.com/russross/blackfriday/v2 v2.1.0 // indirect\n\tgithub.com/saintfish/chardet v0.0.0-20230101081208-5e3ef4b5456d // indirect\n\tgithub.com/temoto/robotstxt v1.1.2 // indirect\n\tgithub.com/xrash/smetrics v0.0.0-20240521201337-686a1a2994c1 // indirect\n\tgolang.org/x/net v0.41.0 // indirect\n\tgolang.org/x/sys v0.33.0 // indirect\n\tgolang.org/x/text v0.26.0 // indirect\n\tgoogle.golang.org/appengine v1.6.8 // indirect\n\tgoogle.golang.org/protobuf v1.36.6 // indirect\n\tgopkg.in/sourcemap.v1 v1.0.5 // indirect\n)\n"
+   }
+  ],
+  "detail": "{\"case\": {\"chain_step\": 0, \"families\": [], \"family\": \"H7\", \"history_index\": 8, \"history_seed\": 1009, \"mode\": \"fresh\", \"note\": \"nest 0>1: H6 config round trip on go.mod: line 58 deleted | H5 rename extractors/geekbang/geekbang_test.go -> extractors/geekbang/geekbang_test_rt.go -> back\", \"seed\": 1, \"timing\": \"settled\"}, \"note\": \"H7: nest 0>1: H6 config round trip on go.mod: line 58 deleted | H5 rename extractors/geekbang/geekbang_test.go -> extractors/geekbang/geekbang_test_rt.go -> back; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 1929s\", \"shape\": \"completion:lost\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "gopls|r1_history|completion:lost",
+  "run_id": "a182be2619cd"
+ },
+ "replay_logs": [
+  "logs/gopls-v0.23.0-a182be2619cd-replay-baseline-20261118-034150-8b076e.jsonl.gz",
+  "logs/gopls-v0.23.0-a182be2619cd-replay-control-20261118-034150-c12526.jsonl.gz",
+  "logs/gopls-v0.23.0-a182be2619cd-replay-history-20261118-034159-e0c037.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

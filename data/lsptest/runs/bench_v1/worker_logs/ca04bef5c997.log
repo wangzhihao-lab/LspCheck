@@ -1,0 +1,3 @@
+2026-09-25 12:49:52,990 INFO campaign_run run ca04bef5c997: r0_crash on rust-analyzer 2025-12-15, rust-analyzer-20987 seed 2 settled, targets ['src/main.rs']
+2026-09-25 12:50:01,142 INFO campaign_run run ca04bef5c997: 0 candidate(s) in 8s; confirming
+2026-09-25 12:50:01,143 INFO campaign_run run ca04bef5c997 finished: ok, 0 confirmed of 0 candidate(s), 8s

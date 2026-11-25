@@ -1,0 +1,203 @@
+{
+ "format": 1,
+ "campaign": "bench_v1",
+ "vid": "cac7d53cef0a-v00",
+ "run_id": "cac7d53cef0a",
+ "oracle": "r0_crash",
+ "server": {
+  "kind": "rust-analyzer",
+  "version": "2025-12-15"
+ },
+ "project": {
+  "name": "rust-analyzer-21204",
+  "source": "dir",
+  "ref": "data/lsp_bench/cases/rust-analyzer-21204/project",
+  "commit": "",
+  "language": "rust"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 240.0,
+  "request_timeout_s": 60.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "src/foo.rs",
+    "positions": [
+     [
+      0,
+      10
+     ],
+     [
+      1,
+      7
+     ],
+     [
+      2,
+      9
+     ],
+     [
+      2,
+      14
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      12
+     ],
+     [
+      1,
+      11
+     ],
+     [
+      2,
+      11
+     ],
+     [
+      2,
+      16
+     ]
+    ],
+    "names": [
+     "Foo",
+     "Variant",
+     "bar",
+     "i32"
+    ]
+   },
+   {
+    "path": "src/main.rs",
+    "positions": [
+     [
+      0,
+      5
+     ],
+     [
+      2,
+      5
+     ],
+     [
+      3,
+      5
+     ],
+     [
+      3,
+      10
+     ],
+     [
+      3,
+      17
+     ],
+     [
+      3,
+      25
+     ],
+     [
+      3,
+      33
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      7
+     ],
+     [
+      2,
+      7
+     ],
+     [
+      3,
+      7
+     ],
+     [
+      3,
+      12
+     ],
+     [
+      3,
+      21
+     ],
+     [
+      3,
+      27
+     ],
+     [
+      3,
+      35
+     ]
+    ],
+    "names": [
+     "foo",
+     "main",
+     "foo",
+     "Foo",
+     "Variant",
+     "bar",
+     "baz"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "references",
+  "path": "src/foo.rs",
+  "line": 2,
+  "character": 14,
+  "extra": ""
+ },
+ "ops": [],
+ "case": {
+  "codes": [
+   "timeout",
+   "timeout"
+  ],
+  "mode": "fresh-pair",
+  "phase": [
+   "done",
+   "done"
+  ],
+  "seed": 1
+ },
+ "shape": "references:result->error:timeout",
+ "signature": "rust-analyzer|r0_crash|references:result->error:timeout",
+ "expected": "an answer that is not a server error, a crash or a timeout",
+ "actual": [
+  "error",
+  "timeout"
+ ],
+ "reproduced": "3/3",
+ "note": "references answered ['error', 'timeout'] in the fresh baseline and ['error', 'timeout'] in the fresh control; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 298s",
+ "violation": {
+  "oracle": "r0_crash",
+  "server": "rust-analyzer-2025-12-15",
+  "project": "rust-analyzer-21204",
+  "key": {
+   "method": "references",
+   "path": "src/foo.rs",
+   "line": 2,
+   "character": 14,
+   "extra": ""
+  },
+  "expected": "an answer that is not a server error, a crash or a timeout",
+  "actual": [
+   "error",
+   "timeout"
+  ],
+  "ops": [],
+  "detail": "{\"case\": {\"codes\": [\"timeout\", \"timeout\"], \"mode\": \"fresh-pair\", \"phase\": [\"done\", \"done\"], \"seed\": 1}, \"note\": \"references answered ['error', 'timeout'] in the fresh baseline and ['error', 'timeout'] in the fresh control; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 298s\", \"shape\": \"references:result->error:timeout\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "rust-analyzer|r0_crash|references:result->error:timeout",
+  "run_id": "cac7d53cef0a"
+ },
+ "replay_logs": [
+  "logs/rust-analyzer-2025-12-15-cac7d53cef0a-r0-replay-baseline-20260924-205639-9ac15f.jsonl.gz",
+  "logs/rust-analyzer-2025-12-15-cac7d53cef0a-r0-replay-control-20260924-205639-1db5dc.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

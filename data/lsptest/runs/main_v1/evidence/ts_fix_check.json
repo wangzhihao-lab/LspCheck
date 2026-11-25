@@ -1,0 +1,35 @@
+{
+ "group": "ts6-r4-diagnostics-extra-2322-mutation-m3-1879f3",
+ "project": "pmndrs/zustand@b57db4f86ef1",
+ "path": "src/middleware/devtools.ts",
+ "fix_title": "Add missing properties",
+ "states": {
+  "base": {
+   "exit": 0,
+   "errors_in_file": [],
+   "codes": []
+  },
+  "mutated": {
+   "exit": 2,
+   "errors_in_file": [
+    "src/middleware/devtools.ts(148,9): error TS2741: Property 'stores' is missing in type '{ connection: ConnectResponse; }' but required in type 'ConnectionInformation'."
+   ],
+   "codes": [
+    "2741"
+   ]
+  },
+  "fixed": {
+   "exit": 2,
+   "errors_in_file": [
+    "src/middleware/devtools.ts(150,5): error TS2322: Type 'undefined' is not assignable to type 'Record<string, StoreInformation>'."
+   ],
+   "codes": [
+    "2322"
+   ]
+  }
+ },
+ "codes_added_by_fix": [
+  "2322"
+ ],
+ "tsc": "Version 6.0.3"
+}

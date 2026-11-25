@@ -1,0 +1,8 @@
+2026-11-17 21:40:12,737 INFO release_sweep 3 job(s) for rust-analyzer
+2026-11-17 21:40:12,737 INFO release_sweep newest-2026-11-18: rust-analyzer-r2-completionresolve-changed-completion-3170a1 on rust-analyzer 2026-11-16
+2026-11-17 21:42:16,210 INFO release_sweep   -> reproduced (3/3, 124s) 
+2026-11-17 21:42:16,210 INFO release_sweep newest-2026-11-18: rust-analyzer-r3-definitionconsistency-extra-d-4cbc9e on rust-analyzer 2026-11-16
+2026-11-17 21:48:11,155 INFO release_sweep   -> reproduced (3/3, 355s) 
+2026-11-17 21:48:11,155 INFO release_sweep newest-2026-11-18: rust-analyzer-r3-definitionconsistency-missing-d-586fd8 on rust-analyzer 2026-11-16
+2026-11-17 21:53:12,715 INFO release_sweep   -> reproduced (3/3, 302s) 
+2026-11-17 21:53:12,715 INFO release_sweep all jobs of rust-analyzer done

@@ -1,0 +1,555 @@
+{
+ "format": 1,
+ "campaign": "main_v2",
+ "vid": "51566a7040cd-v00",
+ "run_id": "51566a7040cd",
+ "oracle": "r2_handles",
+ "server": {
+  "kind": "gopls",
+  "version": "v0.23.0"
+ },
+ "project": {
+  "name": "docker/compose@c6dffb26bdfd",
+  "source": "corpus",
+  "ref": "temp/corpus/docker__compose@c6dffb26bdfd",
+  "commit": "c6dffb26bdfd94efb1f4e1c743f1241a150d120a",
+  "language": "go"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "internal/tracing/mux.go",
+    "positions": [
+     [
+      30,
+      26
+     ],
+     [
+      30,
+      48
+     ],
+     [
+      37,
+      12
+     ],
+     [
+      37,
+      26
+     ],
+     [
+      38,
+      6
+     ],
+     [
+      39,
+      48
+     ],
+     [
+      40,
+      12
+     ],
+     [
+      42,
+      6
+     ],
+     [
+      47,
+      17
+     ],
+     [
+      47,
+      22
+     ],
+     [
+      58,
+      6
+     ],
+     [
+      59,
+      38
+     ]
+    ],
+    "ends": [
+     [
+      30,
+      32
+     ],
+     [
+      30,
+      52
+     ],
+     [
+      37,
+      16
+     ],
+     [
+      37,
+      27
+     ],
+     [
+      38,
+      7
+     ],
+     [
+      39,
+      50
+     ],
+     [
+      40,
+      14
+     ],
+     [
+      42,
+      9
+     ],
+     [
+      47,
+      19
+     ],
+     [
+      47,
+      24
+     ],
+     [
+      58,
+      7
+     ],
+     [
+      59,
+      40
+     ]
+    ],
+    "names": [
+     "ExportSpans",
+     "Context",
+     "exporter",
+     "m",
+     "Go",
+     "err",
+     "Lock",
+     "errMu",
+     "Join",
+     "errs",
+     "Go",
+     "err"
+    ]
+   },
+   {
+    "path": "pkg/compose/model.go",
+    "positions": [
+     [
+      39,
+      62
+     ],
+     [
+      51,
+      34
+     ],
+     [
+      92,
+      14
+     ],
+     [
+      92,
+      21
+     ],
+     [
+      99,
+      48
+     ],
+     [
+      124,
+      5
+     ],
+     [
+      178,
+      43
+     ],
+     [
+      188,
+      4
+     ],
+     [
+      212,
+      2
+     ],
+     [
+      219,
+      15
+     ],
+     [
+      222,
+      46
+     ],
+     [
+      243,
+      4
+     ]
+    ],
+    "ends": [
+     [
+      39,
+      66
+     ],
+     [
+      51,
+      36
+     ],
+     [
+      92,
+      18
+     ],
+     [
+      92,
+      23
+     ],
+     [
+      99,
+      50
+     ],
+     [
+      124,
+      7
+     ],
+     [
+      178,
+      45
+     ],
+     [
+      188,
+      7
+     ],
+     [
+      212,
+      4
+     ],
+     [
+      219,
+      19
+     ],
+     [
+      222,
+      53
+     ],
+     [
+      243,
+      8
+     ]
+    ],
+    "names": [
+     "project",
+     "ctx",
+     "cleanup",
+     "err",
+     "Cmd",
+     "err",
+     "args",
+     "events",
+     "err",
+     "project",
+     "ModelVariable",
+     "Created"
+    ]
+   },
+   {
+    "path": "pkg/watch/temp.go",
+    "positions": [
+     [
+      35,
+      4
+     ],
+     [
+      35,
+      31
+     ],
+     [
+      37,
+      10
+     ],
+     [
+      41,
+      12
+     ],
+     [
+      49,
+      42
+     ],
+     [
+      54,
+      43
+     ],
+     [
+      58,
+      21
+     ],
+     [
+      59,
+      28
+     ],
+     [
+      63,
+      23
+     ],
+     [
+      71,
+      12
+     ],
+     [
+      74,
+      23
+     ],
+     [
+      78,
+      24
+     ]
+    ],
+    "ends": [
+     [
+      35,
+      7
+     ],
+     [
+      35,
+      33
+     ],
+     [
+      37,
+      12
+     ],
+     [
+      41,
+      14
+     ],
+     [
+      49,
+      46
+     ],
+     [
+      54,
+      46
+     ],
+     [
+      58,
+      24
+     ],
+     [
+      59,
+      30
+     ],
+     [
+      63,
+      25
+     ],
+     [
+      71,
+      14
+     ],
+     [
+      74,
+      25
+     ],
+     [
+      78,
+      26
+     ]
+    ],
+    "names": [
+     "tmpDir",
+     "root",
+     "nil",
+     "nil",
+     "TempDir",
+     "prefix",
+     "NewDir",
+     "dir",
+     "nil",
+     "err",
+     "nil",
+     "dir"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "codeActionResolve",
+  "path": "pkg/watch/temp.go",
+  "line": 35,
+  "character": 31,
+  "extra": "pos:35:31|top1|Split arguments into separate lines|refactor.rewrite.splitLines|0"
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "pkg/watch/temp.go"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/watch/temp.go",
+   "start": [
+    0,
+    0
+   ],
+   "end": [
+    0,
+    0
+   ],
+   "text": "\n"
+  }
+ ],
+ "case": {
+  "extra": "pos",
+  "path": "pkg/watch/temp.go",
+  "shift": {
+   "col": 0,
+   "line": 0,
+   "text": "\n",
+   "variant": "top"
+  },
+  "sub": "codeAction",
+  "where": [
+   35,
+   31,
+   35,
+   31
+  ]
+ },
+ "shape": "codeActionResolve:changed",
+ "signature": "gopls|r2_handles|codeActionResolve:changed",
+ "expected": [
+  [
+   "pkg/watch/temp.go",
+   36,
+   29,
+   36,
+   29,
+   "\n\t\t"
+  ],
+  [
+   "pkg/watch/temp.go",
+   36,
+   33,
+   36,
+   35,
+   ",\n\t\t"
+  ],
+  [
+   "pkg/watch/temp.go",
+   36,
+   41,
+   36,
+   41,
+   ",\n\t"
+  ]
+ ],
+ "actual": [
+  [
+   "pkg/watch/temp.go",
+   35,
+   18,
+   35,
+   18,
+   "\n\t"
+  ],
+  [
+   "pkg/watch/temp.go",
+   35,
+   37,
+   35,
+   37,
+   ",\n"
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "flake 3/3 [r1:SCR r2:SCR r3:SCR] in 34s",
+ "violation": {
+  "oracle": "r2_handles",
+  "server": "gopls-v0.23.0",
+  "project": "docker/compose@c6dffb26bdfd",
+  "key": {
+   "method": "codeActionResolve",
+   "path": "pkg/watch/temp.go",
+   "line": 35,
+   "character": 31,
+   "extra": "pos:35:31|top1|Split arguments into separate lines|refactor.rewrite.splitLines|0"
+  },
+  "expected": [
+   [
+    "pkg/watch/temp.go",
+    36,
+    29,
+    36,
+    29,
+    "\n\t\t"
+   ],
+   [
+    "pkg/watch/temp.go",
+    36,
+    33,
+    36,
+    35,
+    ",\n\t\t"
+   ],
+   [
+    "pkg/watch/temp.go",
+    36,
+    41,
+    36,
+    41,
+    ",\n\t"
+   ]
+  ],
+  "actual": [
+   [
+    "pkg/watch/temp.go",
+    35,
+    18,
+    35,
+    18,
+    "\n\t"
+   ],
+   [
+    "pkg/watch/temp.go",
+    35,
+    37,
+    35,
+    37,
+    ",\n"
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "pkg/watch/temp.go"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/watch/temp.go",
+    "start": [
+     0,
+     0
+    ],
+    "end": [
+     0,
+     0
+    ],
+    "text": "\n"
+   }
+  ],
+  "detail": "{\"case\": {\"extra\": \"pos\", \"path\": \"pkg/watch/temp.go\", \"shift\": {\"col\": 0, \"line\": 0, \"text\": \"\\n\", \"variant\": \"top\"}, \"sub\": \"codeAction\", \"where\": [35, 31, 35, 31]}, \"note\": \"flake 3/3 [r1:SCR r2:SCR r3:SCR] in 34s\", \"shape\": \"codeActionResolve:changed\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "gopls|r2_handles|codeActionResolve:changed",
+  "run_id": "51566a7040cd"
+ },
+ "replay_logs": [
+  "logs/gopls-v0.23.0-51566a7040cd-r2-replay-20261118-101000-9db5f8.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

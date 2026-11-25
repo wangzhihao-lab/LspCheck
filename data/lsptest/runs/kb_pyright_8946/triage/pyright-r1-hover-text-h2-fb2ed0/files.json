@@ -1,0 +1,3 @@
+{
+ "repro.py": "\n\n\n\nif TYPE_CHECKING:\n    import datetime\n\n\n\nfrom typing import Callable\n\n\ndef execute_shell_commands(\n\n    cmd: Callable[[datetime.date], str],\n\n) -> list[tuple[int, datetime.date]]:\n\n\n        return [ret for ret in zip(exit_codes, dates) if ret[0] != 0]\n"
+}

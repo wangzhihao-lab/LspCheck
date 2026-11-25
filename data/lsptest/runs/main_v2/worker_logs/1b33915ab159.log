@@ -1,0 +1,3 @@
+2026-11-18 15:51:28,990 INFO campaign_run run 1b33915ab159: r4_edits on rust-analyzer 2026-09-21, sharkdp/hyperfine@0d6ade930afc seed 2 settled, targets ['src/benchmark/relative_speed.rs', 'src/cli.rs', 'src/main.rs']
+2026-11-18 15:52:40,688 INFO campaign_run run 1b33915ab159: 1 candidate(s) in 72s; confirming
+2026-11-18 15:52:40,689 INFO campaign_run run 1b33915ab159 finished: ok, 0 confirmed of 1 candidate(s), 72s

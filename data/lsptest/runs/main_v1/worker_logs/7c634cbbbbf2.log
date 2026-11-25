@@ -1,0 +1,6 @@
+2026-09-24 09:40:09,952 INFO campaign_run run 7c634cbbbbf2: r1_history on gopls v0.23.0, router-for-me/CLIProxyAPI@673131f57484 seed 1 race200, targets ['internal/pluginhost/management.go', 'internal/signature/kimi_validation_test.go', 'sdk/cliproxy/auth/conductor_oauth_alias_suspension_test.go']
+2026-09-24 09:43:15,034 INFO campaign_run run 7c634cbbbbf2: 8 candidate(s) in 185s; confirming
+2026-09-24 09:43:48,054 INFO flake replay 1/3 of gopls|r1_history|completion:extra: settled=True control_stable=True reproduced=False (33.0s)
+2026-09-24 09:44:20,289 INFO flake replay 2/3 of gopls|r1_history|completion:extra: settled=True control_stable=True reproduced=False (32.2s)
+2026-09-24 09:44:50,490 INFO flake replay 3/3 of gopls|r1_history|completion:extra: settled=True control_stable=True reproduced=True (30.2s)
+2026-09-24 09:44:50,495 INFO campaign_run run 7c634cbbbbf2 finished: ok, 0 confirmed of 8 candidate(s), 281s

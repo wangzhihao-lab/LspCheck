@@ -1,0 +1,112 @@
+{
+ "schema": 1,
+ "id": "jdtls-2111",
+ "meta": {
+  "server": "jdtls",
+  "kind": "jdtls",
+  "number": 2111,
+  "url": "https://github.com/eclipse-jdtls/eclipse.jdt.ls/issues/2111",
+  "title": "Sometimes AST will not be updated after applying and undoing a code action",
+  "oracle_class": "R2",
+  "subtype": "stale-handle",
+  "fix_ref": "9b065088 (Sometimes AST will not be updated after applying and undoing code action, #2139), 2022-06-27; released in v1.13.0",
+  "fix_shas": [
+   "9b065088e1edf117007308e35c2930b1c672a07e"
+  ],
+  "pre_version": "1.12.0",
+  "post_version": "1.13.0",
+  "pre_build": "1.12.0",
+  "post_build": "1.13.0",
+  "build_notes": "Eclipse JDT LS release tarballs 1.12.0 (jdt-language-server-1.12.0-202206011637) and 1.13.0 (-202206301721), unpacked under temp/lsp_servers/ and run on the bundled JDK 17 with a private -data directory per session.",
+  "candidate_rank": null,
+  "effort_minutes": 12,
+  "notes": "Converted from the validated state-bug spike (scripts/lsp_repro/cases/jdtls_2111.py), with the issue's own steps only (apply the setter, undo) and the R2 relation of stale_code_action: a handle minted before the edits may resolve to an error, to no edit, to an outdated-version edit or to the edit of the same action minted afresh; only a different edit is the bug. The fix clears CodeActionHandler.codeActionStore on didChange, so post-fix the stale handle resolves to no edit; pre-fix it resolves from the retained AST. The spike's apply-and-undo variants showed that stale edit to be identical to the fresh one (the undo restores the text), and the reported symptom (only 'Generate Getter' offered after the undo) never reproduced headlessly; the spike's two-line shift variant, which does produce a wrong edit, is not in the issue and is not used. Not in candidates.jsonl (JDT LS was not part of the candidate mining). Result under the R2 relation: pre-fix 1.12.0 resolves the stale setter handle, after the apply and the undo, to an edit at the same position whose text differs from the fresh handle's only in indentation (4 spaces instead of the tabs the fresh resolve and the original mint produce); post-fix 1.13.0 resolves it to no edit. The spike compared only edit ranges, which is why it saw identical edits. The reported symptom itself (only 'Generate Getter' offered after the undo) still does not occur: the fresh code-action list after the undo contains 'Generate Setter for name'. The first run of this case was invalid because the harness did not see JDT LS's dynamically registered resolveProvider (fixed in oracles/r4_session.resolves_actions)."
+ },
+ "language": "java",
+ "settings": {},
+ "settings_note": "The issue names no settings; the session defaults of the jdtls kind apply.",
+ "session": {
+  "settle_timeout_s": 400,
+  "request_timeout_s": 60
+ },
+ "files": [
+  {
+   "path": "src/app/Person.java",
+   "provenance": "issue-adapted",
+   "source": "issue body, step 1 ('Open a Java file, focus on an unused field'); the issue has no code",
+   "note": "a class with an unused private field, as step 1 describes (the spike's file)"
+  },
+  {
+   "path": ".project",
+   "provenance": "scaffold",
+   "source": "",
+   "note": "minimal Eclipse project description with the Java builder and nature (scripts/lsp_repro/javaproj.py), so JDT LS imports a real Java project instead of its invisible-project mode"
+  },
+  {
+   "path": ".classpath",
+   "provenance": "scaffold",
+   "source": "",
+   "note": "src as source folder, the JRE container, bin as output (javaproj.py)"
+  },
+  {
+   "path": ".settings/org.eclipse.jdt.core.prefs",
+   "provenance": "scaffold",
+   "source": "",
+   "note": "compiler compliance 17 (javaproj.py)"
+  }
+ ],
+ "repro": {
+  "attempt": 1,
+  "timing": "settled",
+  "steps": "Open Person.java and put the cursor on the unused field name (step 1). Open the light bulb and choose \"Generate Setter for 'name'\" (step 2: codeAction at the field, codeAction/resolve, and the client applies the resulting edit as a didChange). Undo the change (step 3: the inverse didChange). Select the light bulb again (step 4). Reported: sometimes only 'Generate Getter' is offered after the undo and it does nothing. Probe (R2, stale_code_action): after the undo, resolving the setter action minted in step 2 again must give an error, no edit, an outdated-version edit or the same edit as the setter action minted afresh in step 4.",
+  "ops": [
+   {
+    "kind": "open",
+    "path": "src/app/Person.java"
+   },
+   {
+    "kind": "change",
+    "path": "src/app/Person.java",
+    "start": [
+     4,
+     4
+    ],
+    "end": [
+     4,
+     4
+    ],
+    "text": "public void setName(String name) {\n\t\tthis.name = name;\n\t}\n\t"
+   },
+   {
+    "kind": "change",
+    "path": "src/app/Person.java",
+    "start": [
+     4,
+     4
+    ],
+    "end": [
+     7,
+     1
+    ],
+    "text": ""
+   }
+  ],
+  "probe": {
+   "type": "stale_code_action",
+   "params": {
+    "handle": {
+     "path": "src/app/Person.java",
+     "range": [
+      3,
+      19,
+      3,
+      23
+     ],
+     "title_re": "(?i)generate setter for 'name'"
+    },
+    "mint_after": 1
+   }
+  }
+ },
+ "attempts": []
+}

@@ -1,0 +1,182 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "3ed0e189007e-v04",
+ "run_id": "3ed0e189007e",
+ "oracle": "r1_history",
+ "server": {
+  "kind": "ts6",
+  "version": "6.0.3"
+ },
+ "project": {
+  "name": "pmndrs/zustand@b57db4f86ef1",
+  "source": "corpus",
+  "ref": "temp/corpus/pmndrs__zustand@b57db4f86ef1",
+  "commit": "b57db4f86ef179285da216eeb291266da82c361c",
+  "language": "typescript"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "race0",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "src/react.ts",
+    "positions": [],
+    "ends": [],
+    "names": []
+   },
+   {
+    "path": "src/vanilla/shallow.ts",
+    "positions": [],
+    "ends": [],
+    "names": []
+   },
+   {
+    "path": "tests/persistSync.test.tsx",
+    "positions": [
+     [
+      565,
+      64
+     ]
+    ],
+    "ends": [],
+    "names": [
+     ""
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "documentHighlight",
+  "path": "tests/persistSync.test.tsx",
+  "line": 565,
+  "character": 64,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "src/react.ts"
+  },
+  {
+   "kind": "open",
+   "path": "src/vanilla/shallow.ts"
+  },
+  {
+   "kind": "open",
+   "path": "tests/persistSync.test.tsx"
+  },
+  {
+   "kind": "fs_rename",
+   "path": "src/react.ts",
+   "new_path": "src/react_rt.ts"
+  },
+  {
+   "kind": "fs_rename",
+   "path": "src/react_rt.ts",
+   "new_path": "src/react.ts"
+  }
+ ],
+ "case": {
+  "chain_step": 0,
+  "families": [],
+  "family": "H5",
+  "history_index": 0,
+  "history_seed": 1001,
+  "mode": "fresh",
+  "note": "rename src/react.ts -> src/react_rt.ts -> back",
+  "seed": 1,
+  "timing": "race0"
+ },
+ "shape": "documentHighlight:lost",
+ "signature": "ts6|r1_history|documentHighlight:lost",
+ "expected": [
+  [
+   565,
+   56,
+   565,
+   73,
+   2
+  ],
+  [
+   568,
+   26,
+   568,
+   43,
+   2
+  ]
+ ],
+ "actual": [],
+ "reproduced": "3/3",
+ "note": "H5: rename src/react.ts -> src/react_rt.ts -> back; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 151s",
+ "violation": {
+  "oracle": "r1_history",
+  "server": "ts6-6.0.3",
+  "project": "pmndrs/zustand@b57db4f86ef1",
+  "key": {
+   "method": "documentHighlight",
+   "path": "tests/persistSync.test.tsx",
+   "line": 565,
+   "character": 64,
+   "extra": ""
+  },
+  "expected": [
+   [
+    565,
+    56,
+    565,
+    73,
+    2
+   ],
+   [
+    568,
+    26,
+    568,
+    43,
+    2
+   ]
+  ],
+  "actual": [],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "src/react.ts"
+   },
+   {
+    "kind": "open",
+    "path": "src/vanilla/shallow.ts"
+   },
+   {
+    "kind": "open",
+    "path": "tests/persistSync.test.tsx"
+   },
+   {
+    "kind": "fs_rename",
+    "path": "src/react.ts",
+    "new_path": "src/react_rt.ts"
+   },
+   {
+    "kind": "fs_rename",
+    "path": "src/react_rt.ts",
+    "new_path": "src/react.ts"
+   }
+  ],
+  "detail": "{\"case\": {\"chain_step\": 0, \"families\": [], \"family\": \"H5\", \"history_index\": 0, \"history_seed\": 1001, \"mode\": \"fresh\", \"note\": \"rename src/react.ts -> src/react_rt.ts -> back\", \"seed\": 1, \"timing\": \"race0\"}, \"note\": \"H5: rename src/react.ts -> src/react_rt.ts -> back; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 151s\", \"shape\": \"documentHighlight:lost\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "ts6|r1_history|documentHighlight:lost",
+  "run_id": "3ed0e189007e"
+ },
+ "replay_logs": [
+  "logs/ts6-6.0.3-tr9b4675-replay-baseline-20260925-165437-34faf4.jsonl.gz",
+  "logs/ts6-6.0.3-tr9b4675-replay-control-20260925-165437-6e6807.jsonl.gz",
+  "logs/ts6-6.0.3-tr9b4675-replay-history-20260925-165501-39a881.jsonl.gz"
+ ],
+ "project_files": {},
+ "group": "ts6-r1-documenthighlight-lost-h5-9b4675",
+ "reduced": true
+}

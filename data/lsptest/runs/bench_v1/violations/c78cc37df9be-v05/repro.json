@@ -1,0 +1,353 @@
+{
+ "format": 1,
+ "campaign": "bench_v1",
+ "vid": "c78cc37df9be-v05",
+ "run_id": "c78cc37df9be",
+ "oracle": "r1_history",
+ "server": {
+  "kind": "gopls",
+  "version": "v0.4.1"
+ },
+ "project": {
+  "name": "gopls-36824",
+  "source": "dir",
+  "ref": "data/lsp_bench/cases/gopls-36824/project",
+  "commit": "",
+  "language": "go"
+ },
+ "context": {
+  "seed": 3,
+  "timing": "settled",
+  "settle_timeout_s": 180.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "x.go",
+    "positions": [
+     [
+      0,
+      8
+     ],
+     [
+      0,
+      18
+     ],
+     [
+      0,
+      27
+     ],
+     [
+      0,
+      32
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      9
+     ],
+     [
+      0,
+      21
+     ],
+     [
+      0,
+      29
+     ],
+     [
+      0,
+      35
+     ]
+    ],
+    "names": [
+     "x",
+     "hello",
+     "fmt",
+     "Print"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "references",
+  "path": "x.go",
+  "line": 0,
+  "character": 18,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "x.go"
+  },
+  {
+   "kind": "change",
+   "path": "x.go",
+   "start": [
+    0,
+    0
+   ],
+   "end": [
+    1,
+    0
+   ]
+  },
+  {
+   "kind": "request",
+   "path": "x.go",
+   "start": [
+    0,
+    0
+   ],
+   "text": "definition"
+  },
+  {
+   "kind": "request",
+   "path": "x.go",
+   "start": [
+    0,
+    0
+   ],
+   "text": "hover"
+  },
+  {
+   "kind": "request",
+   "path": "x.go",
+   "start": [
+    0,
+    0
+   ],
+   "text": "hover"
+  },
+  {
+   "kind": "request",
+   "path": "x.go",
+   "start": [
+    0,
+    0
+   ],
+   "text": "completion"
+  },
+  {
+   "kind": "request",
+   "path": "x.go",
+   "start": [
+    0,
+    0
+   ],
+   "text": "definition"
+  },
+  {
+   "kind": "fs_write",
+   "path": "go.mod",
+   "text": "\ngo 1.14\n"
+  },
+  {
+   "kind": "fs_write",
+   "path": "go.mod",
+   "text": "module example.com/x\n\ngo 1.14\n"
+  },
+  {
+   "kind": "request",
+   "path": "x.go",
+   "start": [
+    0,
+    0
+   ],
+   "text": "hover"
+  },
+  {
+   "kind": "request",
+   "path": "x.go",
+   "start": [
+    0,
+    0
+   ],
+   "text": "typeDefinition"
+  },
+  {
+   "kind": "change",
+   "path": "x.go",
+   "start": [
+    0,
+    0
+   ],
+   "end": [
+    0,
+    0
+   ],
+   "text": "package x; func hello() { fmt.Print(\"\"); }\n"
+  }
+ ],
+ "case": {
+  "chain_step": 0,
+  "families": [],
+  "family": "H7",
+  "history_index": 4,
+  "history_seed": 3005,
+  "mode": "fresh",
+  "note": "nest 0>2>1: H2 x.go: delete line 0, retype it in 1 chunk(s) | H6 config round trip on go.mod: line 0 deleted | H8 7 requests in a shuffled order: definition@x.go:0:18, hover@x.go:0:8, hover@x.go:0:21, completion@x.go:0:9, definition@x.go:0:29, ...",
+  "seed": 3,
+  "timing": "settled"
+ },
+ "shape": "references:result->error:0",
+ "signature": "gopls|r1_history|references:result->error:0",
+ "expected": [
+  [
+   "x.go",
+   0,
+   16,
+   0,
+   21
+  ]
+ ],
+ "actual": [
+  "error",
+  0
+ ],
+ "reproduced": "3/3",
+ "note": "H7: nest 0>2>1: H2 x.go: delete line 0, retype it in 1 chunk(s) | H6 config round trip on go.mod: line 0 deleted | H8 7 requests in a shuffled order: definition@x.go:0:18, hover@x.go:0:8, hover@x.go:0:21,; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 197s",
+ "violation": {
+  "oracle": "r1_history",
+  "server": "gopls-v0.4.1",
+  "project": "gopls-36824",
+  "key": {
+   "method": "references",
+   "path": "x.go",
+   "line": 0,
+   "character": 18,
+   "extra": ""
+  },
+  "expected": [
+   [
+    "x.go",
+    0,
+    16,
+    0,
+    21
+   ]
+  ],
+  "actual": [
+   "error",
+   0
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "x.go"
+   },
+   {
+    "kind": "change",
+    "path": "x.go",
+    "start": [
+     0,
+     0
+    ],
+    "end": [
+     1,
+     0
+    ]
+   },
+   {
+    "kind": "request",
+    "path": "x.go",
+    "start": [
+     0,
+     0
+    ],
+    "text": "definition"
+   },
+   {
+    "kind": "request",
+    "path": "x.go",
+    "start": [
+     0,
+     0
+    ],
+    "text": "hover"
+   },
+   {
+    "kind": "request",
+    "path": "x.go",
+    "start": [
+     0,
+     0
+    ],
+    "text": "hover"
+   },
+   {
+    "kind": "request",
+    "path": "x.go",
+    "start": [
+     0,
+     0
+    ],
+    "text": "completion"
+   },
+   {
+    "kind": "request",
+    "path": "x.go",
+    "start": [
+     0,
+     0
+    ],
+    "text": "definition"
+   },
+   {
+    "kind": "fs_write",
+    "path": "go.mod",
+    "text": "\ngo 1.14\n"
+   },
+   {
+    "kind": "fs_write",
+    "path": "go.mod",
+    "text": "module example.com/x\n\ngo 1.14\n"
+   },
+   {
+    "kind": "request",
+    "path": "x.go",
+    "start": [
+     0,
+     0
+    ],
+    "text": "hover"
+   },
+   {
+    "kind": "request",
+    "path": "x.go",
+    "start": [
+     0,
+     0
+    ],
+    "text": "typeDefinition"
+   },
+   {
+    "kind": "change",
+    "path": "x.go",
+    "start": [
+     0,
+     0
+    ],
+    "end": [
+     0,
+     0
+    ],
+    "text": "package x; func hello() { fmt.Print(\"\"); }\n"
+   }
+  ],
+  "detail": "{\"case\": {\"chain_step\": 0, \"families\": [], \"family\": \"H7\", \"history_index\": 4, \"history_seed\": 3005, \"mode\": \"fresh\", \"note\": \"nest 0>2>1: H2 x.go: delete line 0, retype it in 1 chunk(s) | H6 config round trip on go.mod: line 0 deleted | H8 7 requests in a shuffled order: definition@x.go:0:18, hover@x.go:0:8, hover@x.go:0:21, completion@x.go:0:9, definition@x.go:0:29, ...\", \"seed\": 3, \"timing\": \"settled\"}, \"note\": \"H7: nest 0>2>1: H2 x.go: delete line 0, retype it in 1 chunk(s) | H6 config round trip on go.mod: line 0 deleted | H8 7 requests in a shuffled order: definition@x.go:0:18, hover@x.go:0:8, hover@x.go:0:21,; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 197s\", \"shape\": \"references:result->error:0\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "gopls|r1_history|references:result->error:0",
+  "run_id": "c78cc37df9be"
+ },
+ "replay_logs": [
+  "logs/gopls-v0.4.1-c78cc37df9be-replay-baseline-20260925-112617-203871.jsonl.gz",
+  "logs/gopls-v0.4.1-c78cc37df9be-replay-control-20260925-112617-345370.jsonl.gz",
+  "logs/gopls-v0.4.1-c78cc37df9be-replay-history-20260925-112620-2eb52f.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

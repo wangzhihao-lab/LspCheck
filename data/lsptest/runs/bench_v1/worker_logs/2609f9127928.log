@@ -1,0 +1,18 @@
+2026-09-25 14:03:08,480 INFO campaign_run run 2609f9127928: r5_transforms on gopls v0.6.6, gopls-38732 seed 2 settled, targets ['bar.go', 'foo.go']
+2026-09-25 14:03:40,290 INFO campaign_run run 2609f9127928: 5 candidate(s) in 32s; confirming
+2026-09-25 14:03:49,602 INFO flake replay 1/3 of gopls|r5_transforms|codeAction:key-lost: settled=True control_stable=True reproduced=True (9.3s)
+2026-09-25 14:03:58,760 INFO flake replay 2/3 of gopls|r5_transforms|codeAction:key-lost: settled=True control_stable=True reproduced=True (9.2s)
+2026-09-25 14:04:07,976 INFO flake replay 3/3 of gopls|r5_transforms|codeAction:key-lost: settled=True control_stable=True reproduced=True (9.2s)
+2026-09-25 14:04:17,040 INFO flake replay 1/3 of gopls|r5_transforms|diagnostics:moved:UndeclaredName: settled=True control_stable=True reproduced=True (9.1s)
+2026-09-25 14:04:26,189 INFO flake replay 2/3 of gopls|r5_transforms|diagnostics:moved:UndeclaredName: settled=True control_stable=True reproduced=True (9.1s)
+2026-09-25 14:04:35,221 INFO flake replay 3/3 of gopls|r5_transforms|diagnostics:moved:UndeclaredName: settled=True control_stable=True reproduced=True (9.0s)
+2026-09-25 14:04:44,401 INFO flake replay 1/3 of gopls|r5_transforms|documentHighlight:changed: settled=True control_stable=True reproduced=True (9.2s)
+2026-09-25 14:04:53,520 INFO flake replay 2/3 of gopls|r5_transforms|documentHighlight:changed: settled=True control_stable=True reproduced=True (9.1s)
+2026-09-25 14:05:02,664 INFO flake replay 3/3 of gopls|r5_transforms|documentHighlight:changed: settled=True control_stable=True reproduced=True (9.1s)
+2026-09-25 14:05:11,871 INFO flake replay 1/3 of gopls|r5_transforms|documentSymbol:changed: settled=True control_stable=True reproduced=True (9.2s)
+2026-09-25 14:05:21,067 INFO flake replay 2/3 of gopls|r5_transforms|documentSymbol:changed: settled=True control_stable=True reproduced=True (9.2s)
+2026-09-25 14:05:30,109 INFO flake replay 3/3 of gopls|r5_transforms|documentSymbol:changed: settled=True control_stable=True reproduced=True (9.0s)
+2026-09-25 14:05:39,192 INFO flake replay 1/3 of gopls|r5_transforms|semanticTokens:missing: settled=True control_stable=True reproduced=True (9.1s)
+2026-09-25 14:05:48,409 INFO flake replay 2/3 of gopls|r5_transforms|semanticTokens:missing: settled=True control_stable=True reproduced=True (9.2s)
+2026-09-25 14:05:57,581 INFO flake replay 3/3 of gopls|r5_transforms|semanticTokens:missing: settled=True control_stable=True reproduced=True (9.2s)
+2026-09-25 14:05:57,593 INFO campaign_run run 2609f9127928 finished: ok, 5 confirmed of 5 candidate(s), 169s

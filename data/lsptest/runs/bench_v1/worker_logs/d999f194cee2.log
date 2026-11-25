@@ -1,0 +1,7 @@
+2026-09-25 06:55:58,545 INFO campaign_run run d999f194cee2: r1_history on jdtls 1.36.0, jdtls-3155 seed 3 settled, targets ['src/main/java/java/Foo.java']
+2026-09-25 07:16:51,859 INFO campaign_run run d999f194cee2: 4 candidate(s) in 1253s; confirming
+2026-09-25 07:23:21,042 INFO flake replay 1/3 of jdtls|r1_history|codeAction:extra: settled=True control_stable=True reproduced=True (389.2s)
+2026-09-25 07:29:57,257 INFO flake replay 2/3 of jdtls|r1_history|codeAction:extra: settled=True control_stable=True reproduced=True (396.2s)
+2026-09-25 07:36:31,167 INFO flake replay 3/3 of jdtls|r1_history|codeAction:extra: settled=True control_stable=True reproduced=True (393.9s)
+2026-09-25 07:43:02,667 INFO flake replay 1/3 of jdtls|r1_history|diagnostics:extra:268435846,570425394: settled=True control_stable=True reproduced=False (391.5s)
+2026-09-25 07:49:42,235 INFO flake replay 2/3 of jdtls|r1_history|diagnostics:extra:268435846,570425394: settled=True control_stable=True reproduced=True (399.6s)

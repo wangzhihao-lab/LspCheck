@@ -1,0 +1,63 @@
+{
+ "vid": "b5ca03424592-v00",
+ "ops_before": 5,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 6,
+ "cache_hits": 0,
+ "reduce_seconds": 281.489,
+ "budget_exhausted": false,
+ "probe_log": [
+  [
+   4,
+   false
+  ],
+  [
+   4,
+   false
+  ],
+  [
+   4,
+   true
+  ],
+  [
+   3,
+   false
+  ],
+  [
+   3,
+   true
+  ],
+  [
+   1,
+   true
+  ]
+ ],
+ "logs": [
+  "ts6-6.0.3-trb3855d-replay-baseline-20261119-000613-75861d.jsonl.gz",
+  "ts6-6.0.3-trb3855d-replay-control-20261119-000613-ed70c3.jsonl.gz",
+  "ts6-6.0.3-trb3855d-replay-history-20261119-000722-1e1896.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [
+   "(property) Array<T>.length: number Gets or sets the length of the array. This is a number one higher than the highest index in the array.",
+   [
+    96,
+    15,
+    96,
+    21
+   ]
+  ],
+  "actual": [
+   "(property) Array<string>.length: number Gets or sets the length of the array. This is a number one higher than the highest index in the array.",
+   [
+    96,
+    15,
+    96,
+    21
+   ]
+  ]
+ },
+ "ops_after": 1,
+ "total_seconds": 568.4
+}

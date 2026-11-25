@@ -1,0 +1,92 @@
+{
+ "queries": [
+  "\"type definition\" missing repo:typescript-language-server/typescript-language-server is:issue",
+  "\"type definition\" stale repo:typescript-language-server/typescript-language-server is:issue",
+  "\"type definition\" missing repo:microsoft/TypeScript is:issue",
+  "\"type definition\" stale repo:microsoft/TypeScript is:issue"
+ ],
+ "matches": [
+  {
+   "repo": "typescript-language-server/typescript-language-server",
+   "number": 277,
+   "title": "Using typescript plugins through neovim-lsp",
+   "url": "https://github.com/typescript-language-server/typescript-language-server/issues/277",
+   "state": "closed",
+   "created": "2021-10-31",
+   "comments": 10,
+   "query": "\"type definition\" missing repo:typescript-language-server/typescript-language-server is:issue"
+  },
+  {
+   "repo": "microsoft/TypeScript",
+   "number": 28308,
+   "title": "AudioWorkletProcessor type definition is missing",
+   "url": "https://github.com/microsoft/TypeScript/issues/28308",
+   "state": "open",
+   "created": "2018-11-02",
+   "comments": 22,
+   "query": "\"type definition\" missing repo:microsoft/TypeScript is:issue"
+  },
+  {
+   "repo": "microsoft/TypeScript",
+   "number": 64118,
+   "title": "dom.generated.d.ts is missing from this repo while still referenced in the docs",
+   "url": "https://github.com/microsoft/TypeScript/issues/64118",
+   "state": "open",
+   "created": "2026-09-01",
+   "comments": 1,
+   "query": "\"type definition\" missing repo:microsoft/TypeScript is:issue"
+  },
+  {
+   "repo": "microsoft/TypeScript",
+   "number": 36220,
+   "title": "Type inference regression due to circular type definition",
+   "url": "https://github.com/microsoft/TypeScript/issues/36220",
+   "state": "open",
+   "created": "2020-01-16",
+   "comments": 0,
+   "query": "\"type definition\" missing repo:microsoft/TypeScript is:issue"
+  },
+  {
+   "repo": "microsoft/TypeScript",
+   "number": 37151,
+   "title": "Declaration emit should not inline type definitions",
+   "url": "https://github.com/microsoft/TypeScript/issues/37151",
+   "state": "open",
+   "created": "2020-03-02",
+   "comments": 21,
+   "query": "\"type definition\" missing repo:microsoft/TypeScript is:issue"
+  },
+  {
+   "repo": "microsoft/TypeScript",
+   "number": 64227,
+   "title": "The `options` arg of `Temporal.ZonedDateTime.prototype.toLocaleString()` currently accepts \"illegal\" option `timeZone`",
+   "url": "https://github.com/microsoft/TypeScript/issues/64227",
+   "state": "open",
+   "created": "2026-09-10",
+   "comments": 1,
+   "query": "\"type definition\" missing repo:microsoft/TypeScript is:issue"
+  },
+  {
+   "repo": "microsoft/TypeScript",
+   "number": 27171,
+   "title": "keyof becoming union of string literal in emitted type definitions",
+   "url": "https://github.com/microsoft/TypeScript/issues/27171",
+   "state": "open",
+   "created": "2018-09-18",
+   "comments": 13,
+   "query": "\"type definition\" stale repo:microsoft/TypeScript is:issue"
+  },
+  {
+   "repo": "microsoft/TypeScript",
+   "number": 56678,
+   "title": "Problems with Node.js `--experimental-detect-module`",
+   "url": "https://github.com/microsoft/TypeScript/issues/56678",
+   "state": "open",
+   "created": "2023-12-05",
+   "comments": 27,
+   "query": "\"type definition\" stale repo:microsoft/TypeScript is:issue"
+  }
+ ],
+ "notes": [],
+ "authenticated": true
+}

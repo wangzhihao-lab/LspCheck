@@ -1,0 +1,67 @@
+[
+  {
+    "server": "pyright",
+    "version": "1.1.414",
+    "init_s": 0.2,
+    "diag_mode": "push",
+    "diagnostics": [
+      "Type \"Literal['oops']\" is not assignable to declared type \"int\"\n  \"Lit"
+    ],
+    "hover": "{\"kind\": \"markdown\", \"value\": \"```python\\n(function) def add(\\n    a: int,\\n    ",
+    "completion_items": 0,
+    "ok": true,
+    "seconds": 1.0
+  },
+  {
+    "server": "ts6",
+    "version": "6.0.3",
+    "init_s": 0.1,
+    "diag_mode": "push",
+    "diagnostics": [
+      "Type 'string' is not assignable to type 'number'."
+    ],
+    "hover": "{\"kind\": \"markdown\", \"value\": \"\\n```typescript\\nfunction add(a: number, b: numbe",
+    "completion_items": 0,
+    "ok": true,
+    "seconds": 1.2
+  },
+  {
+    "server": "ts7",
+    "version": "7.0.2",
+    "init_s": 0.0,
+    "diag_mode": "pull",
+    "diagnostics": [
+      "Type 'string' is not assignable to type 'number'."
+    ],
+    "hover": "{\"kind\": \"markdown\", \"value\": \"```typescript\\nfunction add(a: number, b: number)",
+    "completion_items": 0,
+    "ok": true,
+    "seconds": 2.1
+  },
+  {
+    "server": "rust-analyzer",
+    "version": "2026-09-21",
+    "init_s": 0.0,
+    "diag_mode": "pull",
+    "diagnostics": [
+      "expected 2 arguments, found 1"
+    ],
+    "hover": "{\"kind\": \"markdown\", \"value\": \"\\n```rust\\nsmoke\\n```\\n\\n```rust\\nfn add(a: i32, ",
+    "completion_items": 0,
+    "ok": true,
+    "seconds": 12.9
+  },
+  {
+    "server": "gopls",
+    "version": "v0.23.0",
+    "init_s": 0.2,
+    "diag_mode": "push",
+    "diagnostics": [
+      "cannot use \"oops\" (untyped string constant) as int value in variable d"
+    ],
+    "hover": "{\"kind\": \"markdown\", \"value\": \"```go\\nfunc add(a int, b int) int\\n```\"}",
+    "completion_items": 0,
+    "ok": true,
+    "seconds": 1.9
+  }
+]

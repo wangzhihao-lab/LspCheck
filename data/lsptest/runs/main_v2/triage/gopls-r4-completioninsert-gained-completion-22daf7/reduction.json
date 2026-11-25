@@ -1,0 +1,24 @@
+{
+ "vid": "c60222266301-v00",
+ "ops_before": 0,
+ "narrowed": true,
+ "reduced_confirmed": "2/3",
+ "probes": 0,
+ "cache_hits": 0,
+ "reduce_seconds": 0.0,
+ "budget_exhausted": false,
+ "probe_log": [],
+ "logs": [
+  "gopls-v0.23.0-tr22daf7-r4-replay-case-20261119-000225-d4e28f.jsonl.gz",
+  "gopls-v0.23.0-tr22daf7-r4-replay-control-20261119-000237-54b8d7.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [],
+  "actual": [
+   "missing ',' in parameter list",
+   "missing parameter type"
+  ]
+ },
+ "ops_after": 0,
+ "total_seconds": 98.8
+}

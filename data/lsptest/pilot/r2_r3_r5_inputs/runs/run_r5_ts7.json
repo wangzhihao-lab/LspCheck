@@ -1,0 +1,203 @@
+{
+ "oracle": "r5_transforms",
+ "server": "ts7",
+ "version": "7.0.2",
+ "project": "pmndrs/zustand@b57db4f86ef1",
+ "language": "typescript",
+ "seed": 1,
+ "targets": [
+  {
+   "path": "src/vanilla/shallow.ts",
+   "positions": [
+    [
+     12,
+     15
+    ],
+    [
+     16,
+     53
+    ],
+    [
+     21,
+     11
+    ],
+    [
+     33,
+     38
+    ],
+    [
+     34,
+     23
+    ],
+    [
+     38,
+     34
+    ],
+    [
+     44,
+     35
+    ],
+    [
+     47,
+     46
+    ]
+   ],
+   "ends": [
+    [
+     12,
+     19
+    ],
+    [
+     16,
+     55
+    ],
+    [
+     21,
+     13
+    ],
+    [
+     33,
+     42
+    ],
+    [
+     34,
+     26
+    ],
+    [
+     38,
+     37
+    ],
+    [
+     44,
+     37
+    ],
+    [
+     47,
+     47
+    ]
+   ],
+   "names": [
+    "entries",
+    "Map",
+    "mapB",
+    "iterator",
+    "valueB",
+    "nextB",
+    "done",
+    "T"
+   ]
+  },
+  {
+   "path": "tests/persistSync.test.tsx",
+   "positions": [
+    [
+     14,
+     37
+    ],
+    [
+     16,
+     6
+    ],
+    [
+     274,
+     9
+    ],
+    [
+     291,
+     41
+    ],
+    [
+     311,
+     25
+    ],
+    [
+     565,
+     64
+    ],
+    [
+     683,
+     24
+    ],
+    [
+     717,
+     16
+    ]
+   ],
+   "ends": [
+    [
+     14,
+     41
+    ],
+    [
+     16,
+     9
+    ],
+    [
+     274,
+     13
+    ],
+    [
+     291,
+     48
+    ],
+    [
+     311,
+     28
+    ],
+    [
+     565,
+     73
+    ],
+    [
+     683,
+     26
+    ],
+    [
+     717,
+     21
+    ]
+   ],
+   "names": [
+    "newState",
+    "state",
+    "setItem",
+    "toBeCalledWith",
+    "count",
+    "onFinishHydration",
+    "map",
+    "setItemSpy"
+   ]
+  }
+ ],
+ "max_cases": 6,
+ "timing": "settled",
+ "result": {
+  "oracle": "r5_transforms",
+  "run_id": "r5_transforms-ts7-090456",
+  "cases": 6,
+  "invalid_cases": 0,
+  "sessions": 8,
+  "unsettled": 0,
+  "compared": {
+   "completion": 96,
+   "documentHighlight": 96,
+   "typeDefinition": 96,
+   "signatureHelp": 96,
+   "hover": 96,
+   "references": 96,
+   "codeAction": 156,
+   "definition": 96,
+   "inlayHint": 12,
+   "semanticTokens": 12,
+   "documentSymbol": 12,
+   "foldingRange": 12,
+   "diagnostics": 12
+  },
+  "unstable": {},
+  "seconds": 174.205,
+  "notes": [],
+  "candidates": []
+ },
+ "replays": [],
+ "total_seconds": 174.2
+}

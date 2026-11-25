@@ -1,0 +1,3 @@
+2026-11-18 06:04:48,849 INFO campaign_run run d4fe2bbe4422: r3_routes on ts6 6.0.3, pear-devs/pear-desktop@3ff0a86231fe seed 1 settled, targets ['src/plugins/album-actions/templates/like-button.tsx', 'src/plugins/sponsorblock/index.ts', 'src/plugins/synced-lyrics/renderer/components/SyncedLine.tsx']
+2026-11-18 06:08:08,555 INFO campaign_run run d4fe2bbe4422: 4 candidate(s) in 200s; confirming
+2026-11-18 06:08:08,557 INFO campaign_run run d4fe2bbe4422 finished: ok, 0 confirmed of 4 candidate(s), 200s

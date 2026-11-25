@@ -1,0 +1,260 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "ec5d10b1f270-v00",
+ "run_id": "ec5d10b1f270",
+ "oracle": "r3_routes",
+ "server": {
+  "kind": "rust-analyzer",
+  "version": "2026-09-21"
+ },
+ "project": {
+  "name": "dani-garcia/vaultwarden@cc67d644f626",
+  "source": "corpus",
+  "ref": "temp/corpus/dani-garcia__vaultwarden@cc67d644f626",
+  "commit": "cc67d644f62605cb46f4d16c4a2eed1a861cc8bb",
+  "language": "rust"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "src/api/core/two_factor/duo.rs",
+    "positions": [],
+    "ends": [],
+    "names": []
+   },
+   {
+    "path": "src/db/models/attachment.rs",
+    "positions": [],
+    "ends": [],
+    "names": []
+   },
+   {
+    "path": "src/sso.rs",
+    "positions": [],
+    "ends": [],
+    "names": []
+   }
+  ]
+ },
+ "key": {
+  "method": "definitionConsistency",
+  "path": "src/api/admin.rs",
+  "line": 288,
+  "character": 29,
+  "extra": "from:src/api/core/two_factor/duo.rs:7:12"
+ },
+ "ops": [],
+ "case": {
+  "loc": [
+   "src/api/admin.rs",
+   288,
+   25,
+   288,
+   34
+  ],
+  "sub": "d",
+  "target": [
+   "src/api/core/two_factor/duo.rs",
+   7,
+   12
+  ]
+ },
+ "shape": "definitionConsistency:extra",
+ "signature": "rust-analyzer|r3_routes|definitionConsistency:extra",
+ "expected": [
+  [
+   "src/api/mod.rs",
+   43,
+   9,
+   43,
+   18
+  ]
+ ],
+ "actual": [
+  [
+   "~/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rocket-0.5.1/src/lib.rs",
+   0,
+   0,
+   364,
+   0
+  ],
+  [
+   "~/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rocket-0.5.1/src/route/handler.rs",
+   6,
+   9,
+   6,
+   16
+  ],
+  [
+   "~/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rocket-0.5.1/src/route/handler.rs",
+   187,
+   11,
+   187,
+   15
+  ],
+  [
+   "~/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rocket-0.5.1/src/route/mod.rs",
+   0,
+   0,
+   12,
+   0
+  ],
+  [
+   "~/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rocket-0.5.1/src/sentinel.rs",
+   0,
+   0,
+   487,
+   0
+  ],
+  [
+   "~/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rocket-0.5.1/src/sentinel.rs",
+   394,
+   13,
+   394,
+   20
+  ],
+  [
+   "~/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rocket_codegen-0.5.1/src/lib.rs",
+   281,
+   0,
+   281,
+   5
+  ],
+  [
+   "src/api/admin.rs",
+   287,
+   2,
+   287,
+   20
+  ],
+  [
+   "src/api/admin.rs",
+   288,
+   25,
+   288,
+   34
+  ],
+  [
+   "src/api/mod.rs",
+   43,
+   9,
+   43,
+   18
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "flake 3/3 [r1:SCR r2:SCR r3:SCR] in 485s",
+ "violation": {
+  "oracle": "r3_routes",
+  "server": "rust-analyzer-2026-09-21",
+  "project": "dani-garcia/vaultwarden@cc67d644f626",
+  "key": {
+   "method": "definitionConsistency",
+   "path": "src/api/admin.rs",
+   "line": 288,
+   "character": 29,
+   "extra": "from:src/api/core/two_factor/duo.rs:7:12"
+  },
+  "expected": [
+   [
+    "src/api/mod.rs",
+    43,
+    9,
+    43,
+    18
+   ]
+  ],
+  "actual": [
+   [
+    "~/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rocket-0.5.1/src/lib.rs",
+    0,
+    0,
+    364,
+    0
+   ],
+   [
+    "~/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rocket-0.5.1/src/route/handler.rs",
+    6,
+    9,
+    6,
+    16
+   ],
+   [
+    "~/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rocket-0.5.1/src/route/handler.rs",
+    187,
+    11,
+    187,
+    15
+   ],
+   [
+    "~/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rocket-0.5.1/src/route/mod.rs",
+    0,
+    0,
+    12,
+    0
+   ],
+   [
+    "~/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rocket-0.5.1/src/sentinel.rs",
+    0,
+    0,
+    487,
+    0
+   ],
+   [
+    "~/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rocket-0.5.1/src/sentinel.rs",
+    394,
+    13,
+    394,
+    20
+   ],
+   [
+    "~/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rocket_codegen-0.5.1/src/lib.rs",
+    281,
+    0,
+    281,
+    5
+   ],
+   [
+    "src/api/admin.rs",
+    287,
+    2,
+    287,
+    20
+   ],
+   [
+    "src/api/admin.rs",
+    288,
+    25,
+    288,
+    34
+   ],
+   [
+    "src/api/mod.rs",
+    43,
+    9,
+    43,
+    18
+   ]
+  ],
+  "ops": [],
+  "detail": "{\"case\": {\"loc\": [\"src/api/admin.rs\", 288, 25, 288, 34], \"sub\": \"d\", \"target\": [\"src/api/core/two_factor/duo.rs\", 7, 12]}, \"note\": \"flake 3/3 [r1:SCR r2:SCR r3:SCR] in 485s\", \"shape\": \"definitionConsistency:extra\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "rust-analyzer|r3_routes|definitionConsistency:extra",
+  "run_id": "ec5d10b1f270"
+ },
+ "replay_logs": [
+  "logs/rust-analyzer-2026-09-21-tr4cbc9e-r3-replay-baseline-20260925-163846-a69316.jsonl.gz",
+  "logs/rust-analyzer-2026-09-21-tr4cbc9e-r3-replay-control-20260925-163942-029959.jsonl.gz"
+ ],
+ "project_files": {},
+ "group": "rust-analyzer-r3-definitionconsistency-extra-d-4cbc9e",
+ "reduced": true
+}

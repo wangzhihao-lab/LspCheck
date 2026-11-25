@@ -1,0 +1,46 @@
+{
+ "vid": "15682bd48ce1-v02",
+ "ops_before": 0,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 0,
+ "cache_hits": 0,
+ "reduce_seconds": 0.0,
+ "budget_exhausted": false,
+ "probe_log": [],
+ "logs": [
+  "ts6-6.0.3-tr1c2318-ref-r6-replay-ref-baseline-20260925-163648-8a363d.jsonl.gz",
+  "ts6-6.0.3-tr1c2318-ref-r6-replay-ref-control-20260925-163656-be1ffb.jsonl.gz",
+  "ts7-7.0.2-tr1c2318-r6-replay-test-baseline-20260925-163628-5be6a5.jsonl.gz",
+  "ts7-7.0.2-tr1c2318-r6-replay-test-control-20260925-163637-727b5a.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [
+   [
+    "test/commands/store-git.test.ts",
+    5,
+    12,
+    5,
+    16
+   ]
+  ],
+  "actual": [
+   [
+    "node_modules/.pnpm/@types+node@20.19.43/node_modules/@types/node/path.d.ts",
+    18,
+    14,
+    18,
+    18
+   ],
+   [
+    "node_modules/.pnpm/@types+node@20.19.43/node_modules/@types/node/path.d.ts",
+    185,
+    10,
+    185,
+    14
+   ]
+  ]
+ },
+ "ops_after": 0,
+ "total_seconds": 163.5
+}

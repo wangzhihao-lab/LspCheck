@@ -1,0 +1,6 @@
+2026-09-24 06:56:57,257 INFO campaign_run run a6c722998ffb: r1_history on ts6 6.0.3, chenglou/pretext@2e5e2bdaee39 seed 1 settled, targets ['scripts/wrapping-transport.ts', 'src/line-break.ts', 'src/line-text.ts']
+2026-09-24 07:05:10,355 INFO campaign_run run a6c722998ffb: 2 candidate(s) in 493s; confirming
+2026-09-24 07:06:01,344 INFO flake replay 1/3 of ts6|r1_history|references:missing: settled=True control_stable=True reproduced=True (51.0s)
+2026-09-24 07:06:52,635 INFO flake replay 2/3 of ts6|r1_history|references:missing: settled=True control_stable=True reproduced=False (51.3s)
+2026-09-24 07:07:45,394 INFO flake replay 3/3 of ts6|r1_history|references:missing: settled=True control_stable=True reproduced=True (52.7s)
+2026-09-24 07:07:45,440 INFO campaign_run run a6c722998ffb finished: ok, 0 confirmed of 2 candidate(s), 648s

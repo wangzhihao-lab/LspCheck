@@ -1,0 +1,39 @@
+{
+ "vid": "fd88e2717131-v01",
+ "ops_before": 0,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 0,
+ "cache_hits": 0,
+ "reduce_seconds": 0.0,
+ "budget_exhausted": false,
+ "probe_log": [],
+ "logs": [
+  "ts6-6.0.3-tr1c2318-ref-r6-replay-ref-baseline-20261118-221858-3d8264.jsonl.gz",
+  "ts6-6.0.3-tr1c2318-ref-r6-replay-ref-control-20261118-221904-3b92d8.jsonl.gz",
+  "ts7-7.0.2-tr1c2318-r6-replay-test-baseline-20261118-221847-f23073.jsonl.gz",
+  "ts7-7.0.2-tr1c2318-r6-replay-test-control-20261118-221853-5b662c.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [
+   [
+    "lib/extend/helper.ts",
+    2,
+    12,
+    2,
+    17
+   ]
+  ],
+  "actual": [
+   [
+    "node_modules/hexo-util/dist/index.d.ts",
+    0,
+    0,
+    30,
+    0
+   ]
+  ]
+ },
+ "ops_after": 0,
+ "total_seconds": 107.9
+}

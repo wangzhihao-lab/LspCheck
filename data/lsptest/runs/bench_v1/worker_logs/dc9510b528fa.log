@@ -1,0 +1,3 @@
+2026-09-24 22:35:37,916 INFO campaign_run run dc9510b528fa: r1_history on gopls v0.8.4, gopls-52500 seed 1 race0, targets ['main_test.go', 'other_test.go']
+2026-09-24 22:38:04,081 INFO campaign_run run dc9510b528fa: 0 candidate(s) in 146s; confirming
+2026-09-24 22:38:04,082 INFO campaign_run run dc9510b528fa finished: ok, 0 confirmed of 0 candidate(s), 146s

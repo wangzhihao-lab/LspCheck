@@ -1,0 +1,3 @@
+2026-11-18 11:56:54,657 INFO campaign_run run db86cd659b2a: r1_history on pyright 1.1.414, scrapy/scrapy@91d87364637c seed 2 settled, targets ['scrapy/commands/shell.py', 'scrapy/extensions/throttle.py', 'tests/AsyncCrawlerProcess/asyncio_custom_loop.py']
+2026-11-18 12:08:23,113 INFO campaign_run run db86cd659b2a: 0 candidate(s) in 689s; confirming
+2026-11-18 12:08:23,114 INFO campaign_run run db86cd659b2a finished: ok, 0 confirmed of 0 candidate(s), 689s

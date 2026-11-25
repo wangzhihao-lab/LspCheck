@@ -1,0 +1,399 @@
+{
+ "format": 1,
+ "campaign": "bench_v1",
+ "vid": "910eb8b7f93e-v00",
+ "run_id": "910eb8b7f93e",
+ "oracle": "r3_routes",
+ "server": {
+  "kind": "gopls",
+  "version": "v0.21.0"
+ },
+ "project": {
+  "name": "gopls-74708",
+  "source": "dir",
+  "ref": "data/lsp_bench/cases/gopls-74708/project",
+  "commit": "",
+  "language": "go"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 180.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "b.go",
+    "positions": [
+     [
+      2,
+      10
+     ],
+     [
+      6,
+      5
+     ],
+     [
+      7,
+      5
+     ],
+     [
+      7,
+      10
+     ],
+     [
+      8,
+      1
+     ],
+     [
+      8,
+      4
+     ],
+     [
+      8,
+      7
+     ],
+     [
+      10,
+      4
+     ],
+     [
+      11,
+      2
+     ],
+     [
+      11,
+      5
+     ],
+     [
+      11,
+      9
+     ],
+     [
+      15,
+      8
+     ],
+     [
+      16,
+      2
+     ],
+     [
+      16,
+      6
+     ],
+     [
+      16,
+      13
+     ]
+    ],
+    "ends": [
+     [
+      2,
+      13
+     ],
+     [
+      6,
+      6
+     ],
+     [
+      7,
+      6
+     ],
+     [
+      7,
+      13
+     ],
+     [
+      8,
+      2
+     ],
+     [
+      8,
+      5
+     ],
+     [
+      8,
+      9
+     ],
+     [
+      10,
+      7
+     ],
+     [
+      11,
+      3
+     ],
+     [
+      11,
+      6
+     ],
+     [
+      11,
+      11
+     ],
+     [
+      15,
+      11
+     ],
+     [
+      16,
+      3
+     ],
+     [
+      16,
+      8
+     ],
+     [
+      16,
+      18
+     ]
+    ],
+    "names": [
+     "tools",
+     "_",
+     "s",
+     "Server",
+     "s",
+     "wg",
+     "Add",
+     "print",
+     "s",
+     "wg",
+     "Done",
+     "Server",
+     "wg",
+     "sync",
+     "WaitGroup"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "definitionConsistency",
+  "path": "b.go",
+  "line": 4,
+  "character": 10,
+  "extra": "from:b.go:16:6"
+ },
+ "ops": [],
+ "case": {
+  "loc": [
+   "b.go",
+   4,
+   7,
+   4,
+   13
+  ],
+  "sub": "d",
+  "target": [
+   "b.go",
+   16,
+   6
+  ]
+ },
+ "shape": "definitionConsistency:changed",
+ "signature": "gopls|r3_routes|definitionConsistency:changed",
+ "expected": [
+  [
+   "b.go",
+   4,
+   7,
+   4,
+   13
+  ]
+ ],
+ "actual": [
+  [
+   "/opt/homebrew/Cellar/go/1.27.1/libexec/src/sync/cond.go",
+   4,
+   0,
+   9,
+   1
+  ],
+  [
+   "/opt/homebrew/Cellar/go/1.27.1/libexec/src/sync/map.go",
+   4,
+   0,
+   8,
+   1
+  ],
+  [
+   "/opt/homebrew/Cellar/go/1.27.1/libexec/src/sync/mutex.go",
+   10,
+   0,
+   14,
+   1
+  ],
+  [
+   "/opt/homebrew/Cellar/go/1.27.1/libexec/src/sync/once.go",
+   4,
+   0,
+   8,
+   1
+  ],
+  [
+   "/opt/homebrew/Cellar/go/1.27.1/libexec/src/sync/oncefunc.go",
+   4,
+   0,
+   4,
+   12
+  ],
+  [
+   "/opt/homebrew/Cellar/go/1.27.1/libexec/src/sync/pool.go",
+   4,
+   0,
+   12,
+   1
+  ],
+  [
+   "/opt/homebrew/Cellar/go/1.27.1/libexec/src/sync/poolqueue.go",
+   4,
+   0,
+   9,
+   1
+  ],
+  [
+   "/opt/homebrew/Cellar/go/1.27.1/libexec/src/sync/runtime.go",
+   4,
+   0,
+   6,
+   15
+  ],
+  [
+   "/opt/homebrew/Cellar/go/1.27.1/libexec/src/sync/runtime2.go",
+   6,
+   0,
+   8,
+   15
+  ],
+  [
+   "/opt/homebrew/Cellar/go/1.27.1/libexec/src/sync/rwmutex.go",
+   4,
+   0,
+   10,
+   1
+  ],
+  [
+   "/opt/homebrew/Cellar/go/1.27.1/libexec/src/sync/waitgroup.go",
+   4,
+   0,
+   11,
+   1
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "flake 3/3 [r1:SCR r2:SCR r3:SCR] in 23s",
+ "violation": {
+  "oracle": "r3_routes",
+  "server": "gopls-v0.21.0",
+  "project": "gopls-74708",
+  "key": {
+   "method": "definitionConsistency",
+   "path": "b.go",
+   "line": 4,
+   "character": 10,
+   "extra": "from:b.go:16:6"
+  },
+  "expected": [
+   [
+    "b.go",
+    4,
+    7,
+    4,
+    13
+   ]
+  ],
+  "actual": [
+   [
+    "/opt/homebrew/Cellar/go/1.27.1/libexec/src/sync/cond.go",
+    4,
+    0,
+    9,
+    1
+   ],
+   [
+    "/opt/homebrew/Cellar/go/1.27.1/libexec/src/sync/map.go",
+    4,
+    0,
+    8,
+    1
+   ],
+   [
+    "/opt/homebrew/Cellar/go/1.27.1/libexec/src/sync/mutex.go",
+    10,
+    0,
+    14,
+    1
+   ],
+   [
+    "/opt/homebrew/Cellar/go/1.27.1/libexec/src/sync/once.go",
+    4,
+    0,
+    8,
+    1
+   ],
+   [
+    "/opt/homebrew/Cellar/go/1.27.1/libexec/src/sync/oncefunc.go",
+    4,
+    0,
+    4,
+    12
+   ],
+   [
+    "/opt/homebrew/Cellar/go/1.27.1/libexec/src/sync/pool.go",
+    4,
+    0,
+    12,
+    1
+   ],
+   [
+    "/opt/homebrew/Cellar/go/1.27.1/libexec/src/sync/poolqueue.go",
+    4,
+    0,
+    9,
+    1
+   ],
+   [
+    "/opt/homebrew/Cellar/go/1.27.1/libexec/src/sync/runtime.go",
+    4,
+    0,
+    6,
+    15
+   ],
+   [
+    "/opt/homebrew/Cellar/go/1.27.1/libexec/src/sync/runtime2.go",
+    6,
+    0,
+    8,
+    15
+   ],
+   [
+    "/opt/homebrew/Cellar/go/1.27.1/libexec/src/sync/rwmutex.go",
+    4,
+    0,
+    10,
+    1
+   ],
+   [
+    "/opt/homebrew/Cellar/go/1.27.1/libexec/src/sync/waitgroup.go",
+    4,
+    0,
+    11,
+    1
+   ]
+  ],
+  "ops": [],
+  "detail": "{\"case\": {\"loc\": [\"b.go\", 4, 7, 4, 13], \"sub\": \"d\", \"target\": [\"b.go\", 16, 6]}, \"note\": \"flake 3/3 [r1:SCR r2:SCR r3:SCR] in 23s\", \"shape\": \"definitionConsistency:changed\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "gopls|r3_routes|definitionConsistency:changed",
+  "run_id": "910eb8b7f93e"
+ },
+ "replay_logs": [
+  "logs/gopls-v0.21.0-910eb8b7f93e-r3-replay-baseline-20260924-182936-84740e.jsonl.gz",
+  "logs/gopls-v0.21.0-910eb8b7f93e-r3-replay-control-20260924-182940-564581.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

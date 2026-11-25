@@ -1,0 +1,653 @@
+{
+ "format": 1,
+ "campaign": "main_v2",
+ "vid": "118461be1f56-v00",
+ "run_id": "118461be1f56",
+ "oracle": "r4_edits",
+ "server": {
+  "kind": "gopls",
+  "version": "v0.23.0"
+ },
+ "project": {
+  "name": "docker/compose@c6dffb26bdfd",
+  "source": "corpus",
+  "ref": "temp/corpus/docker__compose@c6dffb26bdfd",
+  "commit": "c6dffb26bdfd94efb1f4e1c743f1241a150d120a",
+  "language": "go"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "internal/tracing/mux.go",
+    "positions": [
+     [
+      30,
+      26
+     ],
+     [
+      30,
+      48
+     ],
+     [
+      37,
+      12
+     ],
+     [
+      37,
+      26
+     ],
+     [
+      38,
+      6
+     ],
+     [
+      39,
+      48
+     ],
+     [
+      40,
+      12
+     ],
+     [
+      42,
+      6
+     ],
+     [
+      47,
+      17
+     ],
+     [
+      47,
+      22
+     ],
+     [
+      58,
+      6
+     ],
+     [
+      59,
+      38
+     ]
+    ],
+    "ends": [
+     [
+      30,
+      32
+     ],
+     [
+      30,
+      52
+     ],
+     [
+      37,
+      16
+     ],
+     [
+      37,
+      27
+     ],
+     [
+      38,
+      7
+     ],
+     [
+      39,
+      50
+     ],
+     [
+      40,
+      14
+     ],
+     [
+      42,
+      9
+     ],
+     [
+      47,
+      19
+     ],
+     [
+      47,
+      24
+     ],
+     [
+      58,
+      7
+     ],
+     [
+      59,
+      40
+     ]
+    ],
+    "names": [
+     "ExportSpans",
+     "Context",
+     "exporter",
+     "m",
+     "Go",
+     "err",
+     "Lock",
+     "errMu",
+     "Join",
+     "errs",
+     "Go",
+     "err"
+    ]
+   },
+   {
+    "path": "pkg/compose/model.go",
+    "positions": [
+     [
+      39,
+      62
+     ],
+     [
+      51,
+      34
+     ],
+     [
+      92,
+      14
+     ],
+     [
+      92,
+      21
+     ],
+     [
+      99,
+      48
+     ],
+     [
+      124,
+      5
+     ],
+     [
+      178,
+      43
+     ],
+     [
+      188,
+      4
+     ],
+     [
+      212,
+      2
+     ],
+     [
+      219,
+      15
+     ],
+     [
+      222,
+      46
+     ],
+     [
+      243,
+      4
+     ]
+    ],
+    "ends": [
+     [
+      39,
+      66
+     ],
+     [
+      51,
+      36
+     ],
+     [
+      92,
+      18
+     ],
+     [
+      92,
+      23
+     ],
+     [
+      99,
+      50
+     ],
+     [
+      124,
+      7
+     ],
+     [
+      178,
+      45
+     ],
+     [
+      188,
+      7
+     ],
+     [
+      212,
+      4
+     ],
+     [
+      219,
+      19
+     ],
+     [
+      222,
+      53
+     ],
+     [
+      243,
+      8
+     ]
+    ],
+    "names": [
+     "project",
+     "ctx",
+     "cleanup",
+     "err",
+     "Cmd",
+     "err",
+     "args",
+     "events",
+     "err",
+     "project",
+     "ModelVariable",
+     "Created"
+    ]
+   },
+   {
+    "path": "pkg/watch/temp.go",
+    "positions": [
+     [
+      35,
+      4
+     ],
+     [
+      35,
+      31
+     ],
+     [
+      37,
+      10
+     ],
+     [
+      41,
+      12
+     ],
+     [
+      49,
+      42
+     ],
+     [
+      54,
+      43
+     ],
+     [
+      58,
+      21
+     ],
+     [
+      59,
+      28
+     ],
+     [
+      63,
+      23
+     ],
+     [
+      71,
+      12
+     ],
+     [
+      74,
+      23
+     ],
+     [
+      78,
+      24
+     ]
+    ],
+    "ends": [
+     [
+      35,
+      7
+     ],
+     [
+      35,
+      33
+     ],
+     [
+      37,
+      12
+     ],
+     [
+      41,
+      14
+     ],
+     [
+      49,
+      46
+     ],
+     [
+      54,
+      46
+     ],
+     [
+      58,
+      24
+     ],
+     [
+      59,
+      30
+     ],
+     [
+      63,
+      25
+     ],
+     [
+      71,
+      14
+     ],
+     [
+      74,
+      25
+     ],
+     [
+      78,
+      26
+     ]
+    ],
+    "names": [
+     "tmpDir",
+     "root",
+     "nil",
+     "nil",
+     "TempDir",
+     "prefix",
+     "NewDir",
+     "dir",
+     "nil",
+     "err",
+     "nil",
+     "dir"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "diagnostics",
+  "path": "internal/tracing/mux.go",
+  "line": 54,
+  "character": 10,
+  "extra": "M2:quickfix-errors:Create function mae"
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "internal/tracing/mux.go"
+  },
+  {
+   "kind": "change",
+   "path": "internal/tracing/mux.go",
+   "start": [
+    54,
+    10
+   ],
+   "end": [
+    54,
+    14
+   ],
+   "text": "mae"
+  },
+  {
+   "kind": "change",
+   "path": "internal/tracing/mux.go",
+   "start": [
+    69,
+    0
+   ],
+   "end": [
+    69,
+    0
+   ],
+   "text": "\nfunc mae(err []error, i1, i2 int) any {\n\tpanic(\"unimplemented\")\n}\n"
+  }
+ ],
+ "case": {
+  "action_kind": "quickfix",
+  "base_errors": 0,
+  "check": "errors",
+  "diag": {
+   "code": "UndeclaredName",
+   "message": "undefined: mae",
+   "range": {
+    "end": {
+     "character": 13,
+     "line": 54
+    },
+    "start": {
+     "character": 10,
+     "line": 54
+    }
+   },
+   "severity": 1
+  },
+  "fix_introduced_errors": [
+   {
+    "code": "NotAnExpr",
+    "message": "[]error (type) is not an expression",
+    "path": "internal/tracing/mux.go",
+    "range": {
+     "end": {
+      "character": 21,
+      "line": 54
+     },
+     "start": {
+      "character": 14,
+      "line": 54
+     }
+    },
+    "severity": 1
+   },
+   {
+    "code": "InvalidAppend",
+    "message": "invalid append: argument must be a slice; have errs (variable of interface type any)",
+    "path": "internal/tracing/mux.go",
+    "range": {
+     "end": {
+      "character": 22,
+      "line": 61
+     },
+     "start": {
+      "character": 18,
+      "line": 61
+     }
+    },
+    "severity": 1
+   },
+   {
+    "code": "IncompatibleAssign",
+    "message": "cannot use errs (variable of interface type any) as []error value in argument to errors.Join: need type assertion",
+    "path": "internal/tracing/mux.go",
+    "range": {
+     "end": {
+      "character": 24,
+      "line": 67
+     },
+     "start": {
+      "character": 20,
+      "line": 67
+     }
+    },
+    "severity": 1
+   }
+  ],
+  "fix_ops": [
+   {
+    "end": [
+     69,
+     0
+    ],
+    "kind": "change",
+    "path": "internal/tracing/mux.go",
+    "start": [
+     69,
+     0
+    ],
+    "text": "\nfunc mae(err []error, i1, i2 int) any {\n\tpanic(\"unimplemented\")\n}\n"
+   }
+  ],
+  "kind": "mutation",
+  "mutation": {
+   "end": [
+    54,
+    14
+   ],
+   "id": "M2",
+   "offsets": [
+    1321,
+    1325
+   ],
+   "sha": "e54f287eec8a4611",
+   "start": [
+    54,
+    10
+   ],
+   "text": "mae",
+   "what": "misspell 'make' as 'mae' (drop a middle character)"
+  },
+  "n_fix_ops": 1,
+  "path": "internal/tracing/mux.go",
+  "post_errors": 3,
+  "title": "Create function mae",
+  "via": "resolve"
+ },
+ "shape": "diagnostics:extra:IncompatibleAssign,InvalidAppend,NotAnExpr",
+ "signature": "gopls|r4_edits|diagnostics:extra:IncompatibleAssign,InvalidAppend,NotAnExpr",
+ "expected": [],
+ "actual": [
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "IncompatibleAssign",
+   "compiler",
+   "cannot use errs (variable of interface type any) as []error value in argument to errors.Join: need type assertion"
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "InvalidAppend",
+   "compiler",
+   "invalid append: argument must be a slice; have errs (variable of interface type any)"
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "NotAnExpr",
+   "compiler",
+   "[]error (type) is not an expression"
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "quick fix 'Create function mae' for UndeclaredName at internal/tracing/mux.go:55:11 raises the error count in the edited files from 0 to 3 (seeded by M2: misspell 'make' as 'mae' (drop a middle character); errors before the mutation 0, after the fix 3); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 59s",
+ "violation": {
+  "oracle": "r4_edits",
+  "server": "gopls-v0.23.0",
+  "project": "docker/compose@c6dffb26bdfd",
+  "key": {
+   "method": "diagnostics",
+   "path": "internal/tracing/mux.go",
+   "line": 54,
+   "character": 10,
+   "extra": "M2:quickfix-errors:Create function mae"
+  },
+  "expected": [],
+  "actual": [
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "IncompatibleAssign",
+    "compiler",
+    "cannot use errs (variable of interface type any) as []error value in argument to errors.Join: need type assertion"
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "InvalidAppend",
+    "compiler",
+    "invalid append: argument must be a slice; have errs (variable of interface type any)"
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "NotAnExpr",
+    "compiler",
+    "[]error (type) is not an expression"
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "internal/tracing/mux.go"
+   },
+   {
+    "kind": "change",
+    "path": "internal/tracing/mux.go",
+    "start": [
+     54,
+     10
+    ],
+    "end": [
+     54,
+     14
+    ],
+    "text": "mae"
+   },
+   {
+    "kind": "change",
+    "path": "internal/tracing/mux.go",
+    "start": [
+     69,
+     0
+    ],
+    "end": [
+     69,
+     0
+    ],
+    "text": "\nfunc mae(err []error, i1, i2 int) any {\n\tpanic(\"unimplemented\")\n}\n"
+   }
+  ],
+  "detail": "{\"case\": {\"action_kind\": \"quickfix\", \"base_errors\": 0, \"check\": \"errors\", \"diag\": {\"code\": \"UndeclaredName\", \"message\": \"undefined: mae\", \"range\": {\"end\": {\"character\": 13, \"line\": 54}, \"start\": {\"character\": 10, \"line\": 54}}, \"severity\": 1}, \"fix_introduced_errors\": [{\"code\": \"NotAnExpr\", \"message\": \"[]error (type) is not an expression\", \"path\": \"internal/tracing/mux.go\", \"range\": {\"end\": {\"character\": 21, \"line\": 54}, \"start\": {\"character\": 14, \"line\": 54}}, \"severity\": 1}, {\"code\": \"InvalidAppend\", \"message\": \"invalid append: argument must be a slice; have errs (variable of interface type any)\", \"path\": \"internal/tracing/mux.go\", \"range\": {\"end\": {\"character\": 22, \"line\": 61}, \"start\": {\"character\": 18, \"line\": 61}}, \"severity\": 1}, {\"code\": \"IncompatibleAssign\", \"message\": \"cannot use errs (variable of interface type any) as []error value in argument to errors.Join: need type assertion\", \"path\": \"internal/tracing/mux.go\", \"range\": {\"end\": {\"character\": 24, \"line\": 67}, \"start\": {\"character\": 20, \"line\": 67}}, \"severity\": 1}], \"fix_ops\": [{\"end\": [69, 0], \"kind\": \"change\", \"path\": \"internal/tracing/mux.go\", \"start\": [69, 0], \"text\": \"\\nfunc mae(err []error, i1, i2 int) any {\\n\\tpanic(\\\"unimplemented\\\")\\n}\\n\"}], \"kind\": \"mutation\", \"mutation\": {\"end\": [54, 14], \"id\": \"M2\", \"offsets\": [1321, 1325], \"sha\": \"e54f287eec8a4611\", \"start\": [54, 10], \"text\": \"mae\", \"what\": \"misspell 'make' as 'mae' (drop a middle character)\"}, \"n_fix_ops\": 1, \"path\": \"internal/tracing/mux.go\", \"post_errors\": 3, \"title\": \"Create function mae\", \"via\": \"resolve\"}, \"note\": \"quick fix 'Create function mae' for UndeclaredName at internal/tracing/mux.go:55:11 raises the error count in the edited files from 0 to 3 (seeded by M2: misspell 'make' as 'mae' (drop a middle character); errors before the mutation 0, after the fix 3); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 59s\", \"shape\": \"diagnostics:extra:IncompatibleAssign,InvalidAppend,NotAnExpr\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "gopls|r4_edits|diagnostics:extra:IncompatibleAssign,InvalidAppend,NotAnExpr",
+  "run_id": "118461be1f56"
+ },
+ "replay_logs": [
+  "logs/gopls-v0.23.0-118461be1f56-r4-replay-baseline-20261118-101414-7f338f.jsonl.gz",
+  "logs/gopls-v0.23.0-118461be1f56-r4-replay-case-20261118-101403-2bb015.jsonl.gz",
+  "logs/gopls-v0.23.0-118461be1f56-r4-replay-control-20261118-101420-819547.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

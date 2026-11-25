@@ -1,0 +1,6 @@
+2026-09-24 20:28:43,428 INFO campaign_run run 52d508079b90: r3_routes on pyright 1.1.364, pyright-7466 seed 1 settled, targets ['main.py']
+2026-09-24 20:28:53,964 INFO campaign_run run 52d508079b90: 2 candidate(s) in 11s; confirming
+2026-09-24 20:29:00,618 INFO flake replay 1/3 of pyright|r3_routes|highlightVsReferences:gained: settled=True control_stable=True reproduced=True (6.7s)
+2026-09-24 20:29:07,352 INFO flake replay 2/3 of pyright|r3_routes|highlightVsReferences:gained: settled=True control_stable=True reproduced=True (6.7s)
+2026-09-24 20:29:14,162 INFO flake replay 3/3 of pyright|r3_routes|highlightVsReferences:gained: settled=True control_stable=True reproduced=True (6.8s)
+2026-09-24 20:29:14,165 INFO campaign_run run 52d508079b90 finished: ok, 1 confirmed of 2 candidate(s), 31s

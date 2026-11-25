@@ -1,0 +1,3 @@
+2026-11-18 20:26:03,335 INFO campaign_run run efafb4dfad4e: r1_history on ts7 7.0.2, mifi/lossless-cut@85cb95f6aeae seed 3 settled, targets ['script/generateDocs.ts', 'src/main/ffmpegUtil.ts', 'src/renderer/src/components/TextInput.tsx']
+2026-11-18 20:34:33,540 INFO campaign_run run efafb4dfad4e: 0 candidate(s) in 510s; confirming
+2026-11-18 20:34:33,541 INFO campaign_run run efafb4dfad4e finished: ok, 0 confirmed of 0 candidate(s), 510s

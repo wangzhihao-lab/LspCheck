@@ -1,0 +1,73 @@
+{
+ "schema": 1,
+ "id": "rust-analyzer-11897",
+ "meta": {
+  "server": "rust-analyzer",
+  "kind": "rust-analyzer",
+  "number": 11897,
+  "url": "https://github.com/rust-lang/rust-analyzer/issues/11897",
+  "title": "Using postfix snippets on expressions containing `'\\\\'` results in it getting unescaped",
+  "oracle_class": "R4",
+  "subtype": "completion",
+  "fix_ref": "rust-lang/rust-analyzer#12646 (fix: escape receiver texts in completion)",
+  "fix_shas": [
+   "f3e9b38e26646a75fdb3c25a2909bce68cde596c"
+  ],
+  "pre_version": "2022-07-18",
+  "post_version": "2022-07-25",
+  "pre_build": "2022-07-18",
+  "post_build": "2022-07-25",
+  "build_notes": "GitHub release assets rust-analyzer-aarch64-apple-darwin.gz of the weekly tags 2022-07-18 and 2022-07-25; git tag --contains puts the fix first in 2022-07-25. The sysroot is the local rustup toolchain (rustc 1.98.1). A 2022 build parses the std sources of rustc 1.98.1 for the sysroot; the case needs only the postfix completion on a char literal.",
+  "effort_minutes": 8,
+  "notes": "Postfix completions put the receiver's text into a snippet without escaping the snippet metacharacters (\\, $, }), so a snippet engine turns the receiver '\\\\' into '\\'. The harness strips snippets with the LSP snippet rules (a backslash escapes $, } and \\), as an editor does."
+ },
+ "language": "rust",
+ "settings": {},
+ "settings_note": "The issue names no settings; the session keeps checkOnSave off (native analysis only).",
+ "session": {
+  "settle_timeout_s": 240,
+  "request_timeout_s": 60,
+  "pull_diagnostics": false
+ },
+ "files": [
+  {
+   "path": "src/main.rs",
+   "provenance": "issue-adapted",
+   "source": "issue body, first code block",
+   "note": "verbatim (two-space indent) with the cursor marker '|' removed"
+  },
+  {
+   "path": "Cargo.toml",
+   "provenance": "scaffold",
+   "source": "",
+   "note": "a binary crate around the snippet (package name, version, edition 2021)"
+  }
+ ],
+ "repro": {
+  "attempt": 1,
+  "timing": "settled",
+  "steps": "Open src/main.rs. Request completion at the end of '\\\\'.ok (line 1, character 17, the issue's cursor '|') and accept the postfix item ok. Reported: Ok('\\'), which is invalid syntax; expected Ok('\\\\'). Probe: the edited text must have no parse error that the original did not have.",
+  "ops": [
+   {
+    "kind": "open",
+    "path": "src/main.rs"
+   }
+  ],
+  "probe": {
+   "type": "edit_breaks_syntax",
+   "params": {
+    "edit": {
+     "via": "completion",
+     "path": "src/main.rs",
+     "position": [
+      1,
+      17
+     ],
+     "label_re": "^ok$",
+     "missing": "invalid"
+    }
+   }
+  }
+ },
+ "attempts": []
+}

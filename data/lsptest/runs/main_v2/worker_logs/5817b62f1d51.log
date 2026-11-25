@@ -1,0 +1,6 @@
+2026-11-18 03:16:57,726 INFO campaign_run run 5817b62f1d51: r1_history on gopls v0.23.0, schollz/croc@5890191be511 seed 1 settled, targets ['src/cli/updatecheck_test.go', 'src/comm/comm.go', 'src/croc/overwrite_test.go']
+2026-11-18 03:24:43,909 INFO campaign_run run 5817b62f1d51: 11 candidate(s) in 466s; confirming
+2026-11-18 03:25:46,721 INFO flake replay 1/3 of gopls|r1_history|completion:extra: settled=True control_stable=True reproduced=True (62.8s)
+2026-11-18 03:26:49,531 INFO flake replay 2/3 of gopls|r1_history|completion:extra: settled=True control_stable=True reproduced=True (62.8s)
+2026-11-18 03:27:51,563 INFO flake replay 3/3 of gopls|r1_history|completion:extra: settled=True control_stable=True reproduced=True (62.0s)
+2026-11-18 03:27:51,757 INFO campaign_run run 5817b62f1d51 finished: ok, 1 confirmed of 11 candidate(s), 654s

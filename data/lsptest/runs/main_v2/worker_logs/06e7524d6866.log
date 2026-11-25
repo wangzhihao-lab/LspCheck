@@ -1,0 +1,3 @@
+2026-11-18 00:39:09,266 INFO campaign_run run 06e7524d6866: r2_handles on pyright 1.1.414, karpathy/nanochat@92d63d4e8bb4 seed 1 settled, targets ['nanochat/common.py', 'scripts/chat_eval.py', 'tests/test_attention_fallback.py']
+2026-11-18 00:40:04,741 INFO campaign_run run 06e7524d6866: 0 candidate(s) in 56s; confirming
+2026-11-18 00:40:04,741 INFO campaign_run run 06e7524d6866 finished: ok, 0 confirmed of 0 candidate(s), 56s

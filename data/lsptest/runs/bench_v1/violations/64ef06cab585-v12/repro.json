@@ -1,0 +1,794 @@
+{
+ "format": 1,
+ "campaign": "bench_v1",
+ "vid": "64ef06cab585-v12",
+ "run_id": "64ef06cab585",
+ "oracle": "r1_history",
+ "server": {
+  "kind": "rust-analyzer",
+  "version": "2026-04-06"
+ },
+ "project": {
+  "name": "rust-analyzer-10618",
+  "source": "dir",
+  "ref": "data/lsp_bench/cases/rust-analyzer-10618/project",
+  "commit": "",
+  "language": "rust"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 240.0,
+  "request_timeout_s": 60.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "src/main.rs",
+    "positions": [
+     [
+      0,
+      5
+     ],
+     [
+      0,
+      10
+     ],
+     [
+      0,
+      14
+     ],
+     [
+      2,
+      10
+     ],
+     [
+      3,
+      6
+     ],
+     [
+      3,
+      14
+     ],
+     [
+      6,
+      7
+     ],
+     [
+      6,
+      13
+     ],
+     [
+      6,
+      18
+     ],
+     [
+      8,
+      5
+     ],
+     [
+      9,
+      10
+     ],
+     [
+      9,
+      17
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      7
+     ],
+     [
+      0,
+      11
+     ],
+     [
+      0,
+      15
+     ],
+     [
+      2,
+      13
+     ],
+     [
+      3,
+      9
+     ],
+     [
+      3,
+      17
+     ],
+     [
+      6,
+      9
+     ],
+     [
+      6,
+      14
+     ],
+     [
+      6,
+      21
+     ],
+     [
+      8,
+      7
+     ],
+     [
+      9,
+      12
+     ],
+     [
+      9,
+      19
+     ]
+    ],
+    "names": [
+     "std",
+     "rc",
+     "Rc",
+     "Struct",
+     "field",
+     "String",
+     "Data",
+     "Rc",
+     "Struct",
+     "main",
+     "data",
+     "Data"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "typeDefinition",
+  "path": "src/main.rs",
+  "line": 3,
+  "character": 6,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "src/main.rs"
+  },
+  {
+   "kind": "fs_rename",
+   "path": "src/main.rs",
+   "new_path": "src/main_rt.rs"
+  },
+  {
+   "kind": "fs_rename",
+   "path": "src/main_rt.rs",
+   "new_path": "src/main.rs"
+  },
+  {
+   "kind": "change",
+   "path": "src/main.rs",
+   "start": [
+    0,
+    5
+   ],
+   "end": [
+    0,
+    15
+   ]
+  },
+  {
+   "kind": "close",
+   "path": "src/main.rs"
+  },
+  {
+   "kind": "open",
+   "path": "src/main.rs"
+  },
+  {
+   "kind": "change",
+   "path": "src/main.rs",
+   "start": [
+    6,
+    12
+   ],
+   "end": [
+    6,
+    14
+   ],
+   "text": "zz"
+  },
+  {
+   "kind": "change",
+   "path": "src/main.rs",
+   "start": [
+    6,
+    12
+   ],
+   "end": [
+    6,
+    14
+   ],
+   "text": "Rc"
+  },
+  {
+   "kind": "request",
+   "path": "src/main.rs",
+   "start": [
+    0,
+    15
+   ],
+   "text": "definition"
+  },
+  {
+   "kind": "request",
+   "path": "src/main.rs",
+   "start": [
+    9,
+    19
+   ],
+   "text": "definition"
+  },
+  {
+   "kind": "request",
+   "path": "src/main.rs",
+   "start": [
+    0,
+    5
+   ],
+   "text": "typeDefinition"
+  },
+  {
+   "kind": "request",
+   "path": "src/main.rs",
+   "start": [
+    2,
+    10
+   ],
+   "text": "definition"
+  },
+  {
+   "kind": "fs_write",
+   "path": "Cargo.toml",
+   "text": "[package]\nname = \"issue10618\"\nname = \"issue10618\"\nversion = \"0.1.0\"\nedition = \"2021\"\n"
+  },
+  {
+   "kind": "change",
+   "path": "src/main.rs",
+   "start": [
+    8,
+    4
+   ],
+   "end": [
+    8,
+    6
+   ]
+  },
+  {
+   "kind": "save",
+   "path": "src/main.rs"
+  },
+  {
+   "kind": "change",
+   "path": "src/main.rs",
+   "start": [
+    8,
+    4
+   ],
+   "end": [
+    8,
+    4
+   ],
+   "text": "ai"
+  },
+  {
+   "kind": "save",
+   "path": "src/main.rs"
+  },
+  {
+   "kind": "fs_write",
+   "path": "Cargo.toml",
+   "text": "[package]\nname = \"issue10618\"\nversion = \"0.1.0\"\nedition = \"2021\"\n"
+  },
+  {
+   "kind": "fs_write",
+   "path": "Cargo.toml",
+   "text": "[package]\nname = \"issue10618\"\nversion = \"0.1.0\"\nedition = \"2021\"\nedition = \"2021\"\n"
+  },
+  {
+   "kind": "fs_write",
+   "path": "Cargo.toml",
+   "text": "[package]\nname = \"issue10618\"\nversion = \"0.1.0\"\nedition = \"2021\"\n"
+  },
+  {
+   "kind": "change",
+   "path": "src/main.rs",
+   "start": [
+    6,
+    0
+   ],
+   "end": [
+    7,
+    0
+   ]
+  },
+  {
+   "kind": "save",
+   "path": "src/main.rs"
+  },
+  {
+   "kind": "change",
+   "path": "src/main.rs",
+   "start": [
+    6,
+    0
+   ],
+   "end": [
+    6,
+    0
+   ],
+   "text": "type Data = Rc"
+  },
+  {
+   "kind": "change",
+   "path": "src/main.rs",
+   "start": [
+    6,
+    14
+   ],
+   "end": [
+    6,
+    14
+   ],
+   "text": "<Struct>;\n"
+  },
+  {
+   "kind": "save",
+   "path": "src/main.rs"
+  },
+  {
+   "kind": "set_config",
+   "settings": {
+    "rust-analyzer": {
+     "procMacro": {
+      "enable": false
+     }
+    }
+   }
+  },
+  {
+   "kind": "set_config",
+   "settings": {
+    "rust-analyzer": {
+     "procMacro": {
+      "enable": true
+     }
+    }
+   }
+  },
+  {
+   "kind": "change",
+   "path": "src/main.rs",
+   "start": [
+    0,
+    4
+   ],
+   "end": [
+    0,
+    7
+   ],
+   "text": "zz"
+  },
+  {
+   "kind": "change",
+   "path": "src/main.rs",
+   "start": [
+    0,
+    4
+   ],
+   "end": [
+    0,
+    6
+   ],
+   "text": "std"
+  },
+  {
+   "kind": "fs_write",
+   "path": "Cargo.toml",
+   "text": "[package]\nname = \"issue10618\"\nedition = \"2021\"\n"
+  },
+  {
+   "kind": "change",
+   "path": "src/main.rs",
+   "start": [
+    4,
+    0
+   ],
+   "end": [
+    5,
+    0
+   ]
+  },
+  {
+   "kind": "change",
+   "path": "src/main.rs",
+   "start": [
+    4,
+    0
+   ],
+   "end": [
+    4,
+    0
+   ],
+   "text": "}\n"
+  },
+  {
+   "kind": "fs_write",
+   "path": "Cargo.toml",
+   "text": "[package]\nname = \"issue10618\"\nversion = \"0.1.0\"\nedition = \"2021\"\n"
+  },
+  {
+   "kind": "fs_rename",
+   "path": "src/main.rs",
+   "new_path": "src/main_rt.rs"
+  },
+  {
+   "kind": "fs_rename",
+   "path": "src/main_rt.rs",
+   "new_path": "src/main.rs"
+  }
+ ],
+ "case": {
+  "chain_step": 10,
+  "families": [
+   "H5",
+   "H3",
+   "H8",
+   "H9",
+   "H6",
+   "H2",
+   "H4",
+   "H1",
+   "H7",
+   "H5"
+  ],
+  "family": "H5",
+  "history_index": 9,
+  "history_seed": 1010,
+  "mode": "chain",
+  "note": "rename src/main.rs -> src/main_rt.rs -> back",
+  "seed": 1,
+  "timing": "settled"
+ },
+ "shape": "typeDefinition:lost",
+ "signature": "rust-analyzer|r1_history|typeDefinition:lost",
+ "expected": [
+  [
+   "~/.rustup/toolchains/stable-aarch64-apple-darwin/lib/rustlib/src/rust/library/alloc/src/string.rs",
+   352,
+   11,
+   352,
+   17
+  ]
+ ],
+ "actual": [],
+ "reproduced": "0/3",
+ "note": "H5: rename src/main.rs -> src/main_rt.rs -> back; flake 0/3 [r1:scr+retry r2:scr+retry r3:scr+retry] in 0s",
+ "violation": {
+  "oracle": "r1_history",
+  "server": "rust-analyzer-2026-04-06",
+  "project": "rust-analyzer-10618",
+  "key": {
+   "method": "typeDefinition",
+   "path": "src/main.rs",
+   "line": 3,
+   "character": 6,
+   "extra": ""
+  },
+  "expected": [
+   [
+    "~/.rustup/toolchains/stable-aarch64-apple-darwin/lib/rustlib/src/rust/library/alloc/src/string.rs",
+    352,
+    11,
+    352,
+    17
+   ]
+  ],
+  "actual": [],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "src/main.rs"
+   },
+   {
+    "kind": "fs_rename",
+    "path": "src/main.rs",
+    "new_path": "src/main_rt.rs"
+   },
+   {
+    "kind": "fs_rename",
+    "path": "src/main_rt.rs",
+    "new_path": "src/main.rs"
+   },
+   {
+    "kind": "change",
+    "path": "src/main.rs",
+    "start": [
+     0,
+     5
+    ],
+    "end": [
+     0,
+     15
+    ]
+   },
+   {
+    "kind": "close",
+    "path": "src/main.rs"
+   },
+   {
+    "kind": "open",
+    "path": "src/main.rs"
+   },
+   {
+    "kind": "change",
+    "path": "src/main.rs",
+    "start": [
+     6,
+     12
+    ],
+    "end": [
+     6,
+     14
+    ],
+    "text": "zz"
+   },
+   {
+    "kind": "change",
+    "path": "src/main.rs",
+    "start": [
+     6,
+     12
+    ],
+    "end": [
+     6,
+     14
+    ],
+    "text": "Rc"
+   },
+   {
+    "kind": "request",
+    "path": "src/main.rs",
+    "start": [
+     0,
+     15
+    ],
+    "text": "definition"
+   },
+   {
+    "kind": "request",
+    "path": "src/main.rs",
+    "start": [
+     9,
+     19
+    ],
+    "text": "definition"
+   },
+   {
+    "kind": "request",
+    "path": "src/main.rs",
+    "start": [
+     0,
+     5
+    ],
+    "text": "typeDefinition"
+   },
+   {
+    "kind": "request",
+    "path": "src/main.rs",
+    "start": [
+     2,
+     10
+    ],
+    "text": "definition"
+   },
+   {
+    "kind": "fs_write",
+    "path": "Cargo.toml",
+    "text": "[package]\nname = \"issue10618\"\nname = \"issue10618\"\nversion = \"0.1.0\"\nedition = \"2021\"\n"
+   },
+   {
+    "kind": "change",
+    "path": "src/main.rs",
+    "start": [
+     8,
+     4
+    ],
+    "end": [
+     8,
+     6
+    ]
+   },
+   {
+    "kind": "save",
+    "path": "src/main.rs"
+   },
+   {
+    "kind": "change",
+    "path": "src/main.rs",
+    "start": [
+     8,
+     4
+    ],
+    "end": [
+     8,
+     4
+    ],
+    "text": "ai"
+   },
+   {
+    "kind": "save",
+    "path": "src/main.rs"
+   },
+   {
+    "kind": "fs_write",
+    "path": "Cargo.toml",
+    "text": "[package]\nname = \"issue10618\"\nversion = \"0.1.0\"\nedition = \"2021\"\n"
+   },
+   {
+    "kind": "fs_write",
+    "path": "Cargo.toml",
+    "text": "[package]\nname = \"issue10618\"\nversion = \"0.1.0\"\nedition = \"2021\"\nedition = \"2021\"\n"
+   },
+   {
+    "kind": "fs_write",
+    "path": "Cargo.toml",
+    "text": "[package]\nname = \"issue10618\"\nversion = \"0.1.0\"\nedition = \"2021\"\n"
+   },
+   {
+    "kind": "change",
+    "path": "src/main.rs",
+    "start": [
+     6,
+     0
+    ],
+    "end": [
+     7,
+     0
+    ]
+   },
+   {
+    "kind": "save",
+    "path": "src/main.rs"
+   },
+   {
+    "kind": "change",
+    "path": "src/main.rs",
+    "start": [
+     6,
+     0
+    ],
+    "end": [
+     6,
+     0
+    ],
+    "text": "type Data = Rc"
+   },
+   {
+    "kind": "change",
+    "path": "src/main.rs",
+    "start": [
+     6,
+     14
+    ],
+    "end": [
+     6,
+     14
+    ],
+    "text": "<Struct>;\n"
+   },
+   {
+    "kind": "save",
+    "path": "src/main.rs"
+   },
+   {
+    "kind": "set_config",
+    "settings": {
+     "rust-analyzer": {
+      "procMacro": {
+       "enable": false
+      }
+     }
+    }
+   },
+   {
+    "kind": "set_config",
+    "settings": {
+     "rust-analyzer": {
+      "procMacro": {
+       "enable": true
+      }
+     }
+    }
+   },
+   {
+    "kind": "change",
+    "path": "src/main.rs",
+    "start": [
+     0,
+     4
+    ],
+    "end": [
+     0,
+     7
+    ],
+    "text": "zz"
+   },
+   {
+    "kind": "change",
+    "path": "src/main.rs",
+    "start": [
+     0,
+     4
+    ],
+    "end": [
+     0,
+     6
+    ],
+    "text": "std"
+   },
+   {
+    "kind": "fs_write",
+    "path": "Cargo.toml",
+    "text": "[package]\nname = \"issue10618\"\nedition = \"2021\"\n"
+   },
+   {
+    "kind": "change",
+    "path": "src/main.rs",
+    "start": [
+     4,
+     0
+    ],
+    "end": [
+     5,
+     0
+    ]
+   },
+   {
+    "kind": "change",
+    "path": "src/main.rs",
+    "start": [
+     4,
+     0
+    ],
+    "end": [
+     4,
+     0
+    ],
+    "text": "}\n"
+   },
+   {
+    "kind": "fs_write",
+    "path": "Cargo.toml",
+    "text": "[package]\nname = \"issue10618\"\nversion = \"0.1.0\"\nedition = \"2021\"\n"
+   },
+   {
+    "kind": "fs_rename",
+    "path": "src/main.rs",
+    "new_path": "src/main_rt.rs"
+   },
+   {
+    "kind": "fs_rename",
+    "path": "src/main_rt.rs",
+    "new_path": "src/main.rs"
+   }
+  ],
+  "detail": "{\"case\": {\"chain_step\": 10, \"families\": [\"H5\", \"H3\", \"H8\", \"H9\", \"H6\", \"H2\", \"H4\", \"H1\", \"H7\", \"H5\"], \"family\": \"H5\", \"history_index\": 9, \"history_seed\": 1010, \"mode\": \"chain\", \"note\": \"rename src/main.rs -> src/main_rt.rs -> back\", \"seed\": 1, \"timing\": \"settled\"}, \"note\": \"H5: rename src/main.rs -> src/main_rt.rs -> back; flake 0/3 [r1:scr+retry r2:scr+retry r3:scr+retry] in 0s\", \"shape\": \"typeDefinition:lost\"}",
+  "reproduced": "0/3",
+  "reduced_ops": [],
+  "signature": "rust-analyzer|r1_history|typeDefinition:lost",
+  "run_id": "64ef06cab585"
+ },
+ "replay_logs": [],
+ "project_files": {},
+ "incomplete": true
+}

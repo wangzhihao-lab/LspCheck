@@ -1,0 +1,12 @@
+{
+  "id": "kb_pyright_8946",
+  "description": "Known-bug mini campaign for triage: r1_history on the pre-fix pyright 1.1.380, project built from the historical files of microsoft/pyright#8946 only (as validate_known_bugs.py builds it), seeds 1 and 2, 16 histories per run.",
+  "corpus": "",
+  "servers": [{"kind": "pyright", "version": "1.1.380"}],
+  "oracles": {"r1_history": {"seeds": {"settled": [1, 2]}, "max_cases": 16}},
+  "case_projects": [{"case": "pyright_8946", "language": "python", "servers": ["pyright"]}],
+  "targets": {"max_files": 3, "max_positions_per_file": 12, "max_file_bytes": 256000},
+  "timeouts": {"settle_s": 300, "request_s": 30, "run_s": 3600},
+  "concurrency": 2,
+  "flake": {"n": 3, "per_signature": 1}
+}

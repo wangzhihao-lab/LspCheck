@@ -1,0 +1,505 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "65c0adcfa45a-v00",
+ "run_id": "65c0adcfa45a",
+ "oracle": "r2_handles",
+ "server": {
+  "kind": "rust-analyzer",
+  "version": "2026-09-21"
+ },
+ "project": {
+  "name": "BurntSushi/ripgrep@3fce3b5bb023",
+  "source": "corpus",
+  "ref": "temp/corpus/BurntSushi__ripgrep@3fce3b5bb023",
+  "commit": "3fce3b5bb0236da2df6d99672afb8a719642eca7",
+  "language": "rust"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "crates/cli/src/escape.rs",
+    "positions": [
+     [
+      66,
+      16
+     ],
+     [
+      66,
+      29
+     ],
+     [
+      76,
+      22
+     ],
+     [
+      80,
+      8
+     ],
+     [
+      90,
+      12
+     ],
+     [
+      97,
+      12
+     ],
+     [
+      103,
+      19
+     ],
+     [
+      115,
+      12
+     ],
+     [
+      121,
+      12
+     ],
+     [
+      122,
+      29
+     ],
+     [
+      134,
+      12
+     ],
+     [
+      135,
+      12
+     ]
+    ],
+    "ends": [
+     [
+      66,
+      17
+     ],
+     [
+      66,
+      31
+     ],
+     [
+      76,
+      25
+     ],
+     [
+      80,
+      10
+     ],
+     [
+      90,
+      17
+     ],
+     [
+      97,
+      17
+     ],
+     [
+      103,
+      20
+     ],
+     [
+      115,
+      17
+     ],
+     [
+      121,
+      17
+     ],
+     [
+      122,
+      32
+     ],
+     [
+      134,
+      17
+     ],
+     [
+      135,
+      17
+     ]
+    ],
+    "names": [
+     "s",
+     "Vec",
+     "string",
+     "test",
+     "assert_eq",
+     "assert_eq",
+     "b",
+     "assert_eq",
+     "assert_eq",
+     "escape",
+     "assert_eq",
+     "assert_eq"
+    ]
+   },
+   {
+    "path": "crates/core/index/disabled.rs",
+    "positions": [
+     [
+      0,
+      32
+     ],
+     [
+      2,
+      16
+     ],
+     [
+      2,
+      22
+     ],
+     [
+      2,
+      50
+     ],
+     [
+      3,
+      14
+     ],
+     [
+      6,
+      16
+     ],
+     [
+      6,
+      21
+     ],
+     [
+      6,
+      60
+     ],
+     [
+      6,
+      68
+     ],
+     [
+      6,
+      74
+     ],
+     [
+      7,
+      7
+     ],
+     [
+      7,
+      14
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      37
+     ],
+     [
+      2,
+      19
+     ],
+     [
+      2,
+      25
+     ],
+     [
+      2,
+      53
+     ],
+     [
+      3,
+      16
+     ],
+     [
+      6,
+      18
+     ],
+     [
+      6,
+      24
+     ],
+     [
+      6,
+      63
+     ],
+     [
+      6,
+      71
+     ],
+     [
+      6,
+      76
+     ],
+     [
+      7,
+      10
+     ],
+     [
+      7,
+      16
+     ]
+    ],
+    "names": [
+     "SearchMode",
+     "write",
+     "_args",
+     "Result",
+     "bail",
+     "read",
+     "_args",
+     "anyhow",
+     "Result",
+     "bool",
+     "anyhow",
+     "bail"
+    ]
+   },
+   {
+    "path": "crates/matcher/tests/util.rs",
+    "positions": [
+     [
+      3,
+      31
+     ],
+     [
+      3,
+      39
+     ],
+     [
+      15,
+      27
+     ],
+     [
+      34,
+      25
+     ],
+     [
+      47,
+      12
+     ],
+     [
+      72,
+      40
+     ],
+     [
+      76,
+      18
+     ],
+     [
+      76,
+      23
+     ],
+     [
+      84,
+      11
+     ],
+     [
+      87,
+      9
+     ],
+     [
+      93,
+      19
+     ],
+     [
+      93,
+      49
+     ]
+    ],
+    "ends": [
+     [
+      3,
+      34
+     ],
+     [
+      3,
+      43
+     ],
+     [
+      15,
+      31
+     ],
+     [
+      34,
+      29
+     ],
+     [
+      47,
+      15
+     ],
+     [
+      72,
+      41
+     ],
+     [
+      76,
+      19
+     ],
+     [
+      76,
+      26
+     ],
+     [
+      84,
+      14
+     ],
+     [
+      87,
+      13
+     ],
+     [
+      93,
+      20
+     ],
+     [
+      93,
+      50
+     ]
+    ],
+    "names": [
+     "Match",
+     "Matcher",
+     "HashMap",
+     "haystack",
+     "Result",
+     "at",
+     "m",
+     "Match",
+     "Clone",
+     "Captures",
+     "i",
+     "e"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "completionResolve",
+  "path": "crates/matcher/tests/util.rs",
+  "line": 47,
+  "character": 15,
+  "extra": "end|above1|Result|22|null|7ffffff6|0"
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "crates/matcher/tests/util.rs"
+  },
+  {
+   "kind": "change",
+   "path": "crates/matcher/tests/util.rs",
+   "start": [
+    47,
+    0
+   ],
+   "end": [
+    47,
+    0
+   ],
+   "text": "\n"
+  }
+ ],
+ "case": {
+  "extra": "end",
+  "path": "crates/matcher/tests/util.rs",
+  "shift": {
+   "col": 0,
+   "line": 47,
+   "text": "\n",
+   "variant": "above"
+  },
+  "sub": "completion",
+  "where": [
+   47,
+   15
+  ]
+ },
+ "shape": "completionResolve:changed",
+ "signature": "rust-analyzer|r2_handles|completionResolve:changed",
+ "expected": [
+  [
+   "textEdit",
+   48,
+   9,
+   48,
+   15,
+   "Result"
+  ]
+ ],
+ "actual": [
+  [
+   "textEdit",
+   48,
+   0,
+   47,
+   15,
+   "Result"
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "flake 3/3 [r1:SCR r2:SCR r3:SCR] in 576s",
+ "violation": {
+  "oracle": "r2_handles",
+  "server": "rust-analyzer-2026-09-21",
+  "project": "BurntSushi/ripgrep@3fce3b5bb023",
+  "key": {
+   "method": "completionResolve",
+   "path": "crates/matcher/tests/util.rs",
+   "line": 47,
+   "character": 15,
+   "extra": "end|above1|Result|22|null|7ffffff6|0"
+  },
+  "expected": [
+   [
+    "textEdit",
+    48,
+    9,
+    48,
+    15,
+    "Result"
+   ]
+  ],
+  "actual": [
+   [
+    "textEdit",
+    48,
+    0,
+    47,
+    15,
+    "Result"
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "crates/matcher/tests/util.rs"
+   },
+   {
+    "kind": "change",
+    "path": "crates/matcher/tests/util.rs",
+    "start": [
+     47,
+     0
+    ],
+    "end": [
+     47,
+     0
+    ],
+    "text": "\n"
+   }
+  ],
+  "detail": "{\"case\": {\"extra\": \"end\", \"path\": \"crates/matcher/tests/util.rs\", \"shift\": {\"col\": 0, \"line\": 47, \"text\": \"\\n\", \"variant\": \"above\"}, \"sub\": \"completion\", \"where\": [47, 15]}, \"note\": \"flake 3/3 [r1:SCR r2:SCR r3:SCR] in 576s\", \"shape\": \"completionResolve:changed\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "rust-analyzer|r2_handles|completionResolve:changed",
+  "run_id": "65c0adcfa45a"
+ },
+ "replay_logs": [
+  "logs/rust-analyzer-2026-09-21-65c0adcfa45a-r2-replay-20260923-193326-fc3c20.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

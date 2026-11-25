@@ -1,0 +1,3 @@
+2026-09-23 15:27:35,666 INFO campaign_run run a48f4b551399: r5_transforms on pyright 1.1.414, Z4nzu/hackingtool@ef5334f8d37e seed 1 settled, targets ['scripts/apply_archive.py', 'src/hackingtool/tools/xss_attack.py', 'tests/test_engagement.py']
+2026-09-23 15:28:35,928 INFO campaign_run run a48f4b551399: 0 candidate(s) in 60s; confirming
+2026-09-23 15:28:35,928 INFO campaign_run run a48f4b551399 finished: ok, 0 confirmed of 0 candidate(s), 60s

@@ -1,0 +1,503 @@
+{
+ "format": 1,
+ "campaign": "main_v2",
+ "vid": "618a15652fdc-v01",
+ "run_id": "618a15652fdc",
+ "oracle": "r3_routes",
+ "server": {
+  "kind": "rust-analyzer",
+  "version": "2026-09-21"
+ },
+ "project": {
+  "name": "yewstack/yew@bfa6c19af971",
+  "source": "corpus",
+  "ref": "temp/corpus/yewstack__yew@bfa6c19af971",
+  "commit": "bfa6c19af971084f9547495388bde9aceeb81aaa",
+  "language": "rust"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "examples/immutable/src/string.rs",
+    "positions": [
+     [
+      1,
+      10
+     ],
+     [
+      13,
+      31
+     ],
+     [
+      31,
+      14
+     ],
+     [
+      31,
+      28
+     ],
+     [
+      35,
+      45
+     ],
+     [
+      45,
+      14
+     ],
+     [
+      45,
+      25
+     ],
+     [
+      47,
+      25
+     ],
+     [
+      48,
+      52
+     ],
+     [
+      50,
+      48
+     ],
+     [
+      54,
+      14
+     ],
+     [
+      57,
+      35
+     ]
+    ],
+    "ends": [
+     [
+      1,
+      16
+     ],
+     [
+      13,
+      33
+     ],
+     [
+      31,
+      16
+     ],
+     [
+      31,
+      30
+     ],
+     [
+      35,
+      47
+     ],
+     [
+      45,
+      16
+     ],
+     [
+      45,
+      27
+     ],
+     [
+      47,
+      28
+     ],
+     [
+      48,
+      58
+     ],
+     [
+      50,
+      51
+     ],
+     [
+      54,
+      15
+     ],
+     [
+      57,
+      37
+     ]
+    ],
+    "names": [
+     "wasm_bindgen",
+     "name",
+     "name",
+     "into",
+     "msg",
+     "link",
+     "link",
+     "Event",
+     "unwrap_throw",
+     "target",
+     "h2",
+     "name"
+    ]
+   },
+   {
+    "path": "examples/simple_ssr/src/bin/simple_ssr_hydrate.rs",
+    "positions": [
+     [
+      2,
+      5
+     ],
+     [
+      3,
+      7
+     ],
+     [
+      5,
+      16
+     ],
+     [
+      6,
+      17
+     ],
+     [
+      7,
+      19
+     ],
+     [
+      8,
+      61
+     ],
+     [
+      9,
+      18
+     ],
+     [
+      9,
+      68
+     ],
+     [
+      10,
+      21
+     ],
+     [
+      11,
+      57
+     ],
+     [
+      13,
+      13
+     ],
+     [
+      13,
+      21
+     ]
+    ],
+    "ends": [
+     [
+      2,
+      7
+     ],
+     [
+      3,
+      9
+     ],
+     [
+      5,
+      21
+     ],
+     [
+      6,
+      22
+     ],
+     [
+      7,
+      25
+     ],
+     [
+      8,
+      63
+     ],
+     [
+      9,
+      24
+     ],
+     [
+      9,
+      71
+     ],
+     [
+      10,
+      30
+     ],
+     [
+      11,
+      59
+     ],
+     [
+      13,
+      17
+     ],
+     [
+      13,
+      23
+     ]
+    ],
+    "names": [
+     "main",
+     "cfg",
+     "fmt_layer",
+     "with_ansi",
+     "without_time",
+     "new",
+     "with_filter",
+     "TRACE",
+     "tracing_subscriber",
+     "init",
+     "Renderer",
+     "App"
+    ]
+   },
+   {
+    "path": "packages/yew-macro/src/derive_props/mod.rs",
+    "positions": [
+     [
+      64,
+      42
+     ],
+     [
+      68,
+      46
+     ],
+     [
+      72,
+      56
+     ],
+     [
+      72,
+      62
+     ],
+     [
+      95,
+      19
+     ],
+     [
+      110,
+      6
+     ],
+     [
+      120,
+      47
+     ],
+     [
+      121,
+      38
+     ],
+     [
+      129,
+      34
+     ],
+     [
+      147,
+      19
+     ],
+     [
+      151,
+      19
+     ],
+     [
+      163,
+      86
+     ]
+    ],
+    "ends": [
+     [
+      64,
+      45
+     ],
+     [
+      68,
+      52
+     ],
+     [
+      72,
+      59
+     ],
+     [
+      72,
+      64
+     ],
+     [
+      95,
+      22
+     ],
+     [
+      110,
+      8
+     ],
+     [
+      120,
+      49
+     ],
+     [
+      121,
+      41
+     ],
+     [
+      129,
+      36
+     ],
+     [
+      147,
+      22
+     ],
+     [
+      151,
+      27
+     ],
+     [
+      163,
+      88
+     ]
+    ],
+    "names": [
+     "value",
+     "GenericParam",
+     "ident",
+     "into",
+     "first",
+     "path",
+     "data",
+     "fields",
+     "sort",
+     "input",
+     "preserved_attrs",
+     "attr"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "highlightVsReferences",
+  "path": "packages/yew-macro/src/derive_props/mod.rs",
+  "line": 151,
+  "character": 19,
+  "extra": ""
+ },
+ "ops": [],
+ "case": {
+  "path": "packages/yew-macro/src/derive_props/mod.rs",
+  "pos": [
+   151,
+   19
+  ],
+  "sub": "c"
+ },
+ "shape": "highlightVsReferences:extra",
+ "signature": "rust-analyzer|r3_routes|highlightVsReferences:extra",
+ "expected": [
+  [
+   139,
+   12,
+   139,
+   27
+  ],
+  [
+   151,
+   12,
+   151,
+   27
+  ]
+ ],
+ "actual": [
+  [
+   29,
+   4,
+   29,
+   19
+  ],
+  [
+   139,
+   12,
+   139,
+   27
+  ],
+  [
+   151,
+   12,
+   151,
+   27
+  ],
+  [
+   176,
+   12,
+   176,
+   27
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "2 references; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 477s",
+ "violation": {
+  "oracle": "r3_routes",
+  "server": "rust-analyzer-2026-09-21",
+  "project": "yewstack/yew@bfa6c19af971",
+  "key": {
+   "method": "highlightVsReferences",
+   "path": "packages/yew-macro/src/derive_props/mod.rs",
+   "line": 151,
+   "character": 19,
+   "extra": ""
+  },
+  "expected": [
+   [
+    139,
+    12,
+    139,
+    27
+   ],
+   [
+    151,
+    12,
+    151,
+    27
+   ]
+  ],
+  "actual": [
+   [
+    29,
+    4,
+    29,
+    19
+   ],
+   [
+    139,
+    12,
+    139,
+    27
+   ],
+   [
+    151,
+    12,
+    151,
+    27
+   ],
+   [
+    176,
+    12,
+    176,
+    27
+   ]
+  ],
+  "ops": [],
+  "detail": "{\"case\": {\"path\": \"packages/yew-macro/src/derive_props/mod.rs\", \"pos\": [151, 19], \"sub\": \"c\"}, \"note\": \"2 references; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 477s\", \"shape\": \"highlightVsReferences:extra\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "rust-analyzer|r3_routes|highlightVsReferences:extra",
+  "run_id": "618a15652fdc"
+ },
+ "replay_logs": [
+  "logs/rust-analyzer-2026-09-21-618a15652fdc-r3-replay-baseline-20261118-093431-0e13f1.jsonl.gz",
+  "logs/rust-analyzer-2026-09-21-618a15652fdc-r3-replay-control-20261118-093546-df8c6c.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

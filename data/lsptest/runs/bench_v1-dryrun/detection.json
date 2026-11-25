@@ -1,0 +1,441 @@
+{
+ "campaign": "bench_v1-dryrun",
+ "cases": [
+  {
+   "builds": {
+    "post": "v0.12.1",
+    "pre": "v0.12.0"
+   },
+   "case": "gopls-60435",
+   "class": "R3",
+   "complete": true,
+   "detected": true,
+   "kind": "gopls",
+   "oracles": {
+    "r0_crash": {
+     "complete": true,
+     "labelled": {
+      "post": [],
+      "pre": []
+     },
+     "post": [],
+     "pre": [],
+     "pre_only": [],
+     "runs": {
+      "post": {
+       "ok": 2
+      },
+      "pre": {
+       "ok": 2
+      }
+     }
+    },
+    "r1_history": {
+     "complete": true,
+     "labelled": {
+      "post": [],
+      "pre": []
+     },
+     "post": [
+      "gopls|r1_history|references:extra"
+     ],
+     "pre": [
+      "gopls|r1_history|references:extra"
+     ],
+     "pre_only": [],
+     "runs": {
+      "post": {
+       "ok": 4
+      },
+      "pre": {
+       "ok": 4
+      }
+     }
+    },
+    "r2_handles": {
+     "complete": true,
+     "labelled": {
+      "post": [],
+      "pre": []
+     },
+     "post": [],
+     "pre": [],
+     "pre_only": [],
+     "runs": {
+      "post": {
+       "ok": 2
+      },
+      "pre": {
+       "ok": 2
+      }
+     }
+    },
+    "r3_routes": {
+     "complete": true,
+     "labelled": {
+      "post": [],
+      "pre": []
+     },
+     "post": [
+      "gopls|r3_routes|definitionConsistency:changed"
+     ],
+     "pre": [
+      "gopls|r3_routes|definitionConsistency:changed",
+      "gopls|r3_routes|highlightVsReferences:extra"
+     ],
+     "pre_only": [
+      "gopls|r3_routes|highlightVsReferences:extra"
+     ],
+     "runs": {
+      "post": {
+       "ok": 2
+      },
+      "pre": {
+       "ok": 2
+      }
+     }
+    },
+    "r4_edits": {
+     "complete": true,
+     "labelled": {
+      "post": [],
+      "pre": []
+     },
+     "post": [],
+     "pre": [],
+     "pre_only": [],
+     "runs": {
+      "post": {
+       "ok": 2
+      },
+      "pre": {
+       "ok": 2
+      }
+     }
+    },
+    "r5_transforms": {
+     "complete": true,
+     "labelled": {
+      "post": [],
+      "pre": []
+     },
+     "post": [],
+     "pre": [],
+     "pre_only": [],
+     "runs": {
+      "post": {
+       "ok": 2
+      },
+      "pre": {
+       "ok": 2
+      }
+     }
+    }
+   },
+   "pre_only": [
+    {
+     "author_match": "",
+     "complete": true,
+     "oracle": "r3_routes",
+     "signature": "gopls|r3_routes|highlightVsReferences:extra",
+     "vids": [
+      "485265fc03e1-v01",
+      "a8920f8f9cc5-v01"
+     ]
+    }
+   ],
+   "probe": "two_routes_differ",
+   "spec_probe": false,
+   "subtype": "highlight-refs",
+   "title": "x/tools/gopls: documentHighlight from subpackage selects usage for parent package",
+   "url": "https://github.com/golang/go/issues/60435"
+  },
+  {
+   "builds": {
+    "post": "2025-12-15",
+    "pre": "2025-12-08"
+   },
+   "case": "rust-analyzer-21173",
+   "class": "R1",
+   "complete": true,
+   "detected": true,
+   "kind": "rust-analyzer",
+   "oracles": {
+    "r0_crash": {
+     "complete": true,
+     "labelled": {
+      "post": [],
+      "pre": []
+     },
+     "post": [],
+     "pre": [
+      "rust-analyzer|r0_crash|codeAction:result->error:-32603",
+      "rust-analyzer|r0_crash|diagnostics:result->error:-32603"
+     ],
+     "pre_only": [
+      "rust-analyzer|r0_crash|codeAction:result->error:-32603",
+      "rust-analyzer|r0_crash|diagnostics:result->error:-32603"
+     ],
+     "runs": {
+      "post": {
+       "ok": 2
+      },
+      "pre": {
+       "ok": 2
+      }
+     }
+    },
+    "r1_history": {
+     "complete": true,
+     "labelled": {
+      "post": [],
+      "pre": []
+     },
+     "post": [],
+     "pre": [],
+     "pre_only": [],
+     "runs": {
+      "post": {
+       "ok": 4
+      },
+      "pre": {
+       "ok": 4
+      }
+     }
+    },
+    "r2_handles": {
+     "complete": true,
+     "labelled": {
+      "post": [],
+      "pre": []
+     },
+     "post": [
+      "rust-analyzer|r2_handles|completionResolve:changed"
+     ],
+     "pre": [
+      "rust-analyzer|r2_handles|completionResolve:changed"
+     ],
+     "pre_only": [],
+     "runs": {
+      "post": {
+       "ok": 2
+      },
+      "pre": {
+       "ok": 2
+      }
+     }
+    },
+    "r3_routes": {
+     "complete": true,
+     "labelled": {
+      "post": [],
+      "pre": []
+     },
+     "post": [
+      "rust-analyzer|r3_routes|definitionConsistency:changed"
+     ],
+     "pre": [
+      "rust-analyzer|r3_routes|definitionConsistency:changed",
+      "rust-analyzer|r3_routes|diagnostics:error:-32603->result"
+     ],
+     "pre_only": [
+      "rust-analyzer|r3_routes|diagnostics:error:-32603->result"
+     ],
+     "runs": {
+      "post": {
+       "ok": 2
+      },
+      "pre": {
+       "ok": 2
+      }
+     }
+    },
+    "r4_edits": {
+     "complete": true,
+     "labelled": {
+      "post": [],
+      "pre": []
+     },
+     "post": [],
+     "pre": [],
+     "pre_only": [],
+     "runs": {
+      "post": {
+       "ok": 2
+      },
+      "pre": {
+       "ok": 2
+      }
+     }
+    },
+    "r5_transforms": {
+     "complete": true,
+     "labelled": {
+      "post": [],
+      "pre": []
+     },
+     "post": [],
+     "pre": [],
+     "pre_only": [],
+     "runs": {
+      "post": {
+       "ok": 2
+      },
+      "pre": {
+       "ok": 2
+      }
+     }
+    }
+   },
+   "pre_only": [
+    {
+     "author_match": "",
+     "complete": true,
+     "oracle": "r0_crash",
+     "signature": "rust-analyzer|r0_crash|codeAction:result->error:-32603",
+     "vids": [
+      "a3d629628564-v00",
+      "c8e7d09749c2-v00"
+     ]
+    },
+    {
+     "author_match": "",
+     "complete": true,
+     "oracle": "r0_crash",
+     "signature": "rust-analyzer|r0_crash|diagnostics:result->error:-32603",
+     "vids": [
+      "a3d629628564-v01",
+      "c8e7d09749c2-v01"
+     ]
+    },
+    {
+     "author_match": "",
+     "complete": true,
+     "oracle": "r3_routes",
+     "signature": "rust-analyzer|r3_routes|diagnostics:error:-32603->result",
+     "vids": [
+      "4cd55b7cf5d1-v00",
+      "6152df9194f1-v01"
+     ]
+    }
+   ],
+   "probe": "error_response",
+   "spec_probe": false,
+   "subtype": "edit-undo",
+   "title": "request handler panicked: cannot find `!BoundConst { var: 0 }`",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/21173"
+  },
+  {
+   "builds": {
+    "post": "4.5.2+tsls0.7.1",
+    "pre": "4.4.4+tsls0.7.1"
+   },
+   "case": "tsserver-46466",
+   "class": "R4",
+   "complete": true,
+   "detected": true,
+   "kind": "tsserver",
+   "oracles": {
+    "r0_crash": {
+     "complete": true,
+     "labelled": {
+      "post": [],
+      "pre": []
+     },
+     "post": [],
+     "pre": [],
+     "pre_only": [],
+     "runs": {
+      "post": {
+       "ok": 2
+      },
+      "pre": {
+       "ok": 2
+      }
+     }
+    },
+    "r1_history": {
+     "complete": true,
+     "labelled": {
+      "post": [],
+      "pre": []
+     },
+     "post": [],
+     "pre": [],
+     "pre_only": [],
+     "runs": {
+      "post": {
+       "ok": 4
+      },
+      "pre": {
+       "ok": 4
+      }
+     }
+    },
+    "r4_edits": {
+     "complete": true,
+     "labelled": {
+      "post": [],
+      "pre": []
+     },
+     "post": [
+      "tsserver|r4_edits|diagnostics:extra:2304",
+      "tsserver|r4_edits|diagnostics:extra:2552"
+     ],
+     "pre": [
+      "tsserver|r4_edits|diagnostics:changed:1005,1109,1308",
+      "tsserver|r4_edits|diagnostics:extra:2304",
+      "tsserver|r4_edits|diagnostics:extra:2552"
+     ],
+     "pre_only": [
+      "tsserver|r4_edits|diagnostics:changed:1005,1109,1308"
+     ],
+     "runs": {
+      "post": {
+       "ok": 2
+      },
+      "pre": {
+       "ok": 2
+      }
+     }
+    }
+   },
+   "pre_only": [
+    {
+     "author_match": "",
+     "complete": true,
+     "oracle": "r4_edits",
+     "signature": "tsserver|r4_edits|diagnostics:changed:1005,1109,1308",
+     "vids": [
+      "4f6e0b0496b7-v00",
+      "6fdfb833326c-v00"
+     ]
+    }
+   ],
+   "probe": "edit_breaks_syntax",
+   "spec_probe": false,
+   "subtype": "quickfix",
+   "title": "QuickFix for 1308 fails if a generid type is present",
+   "url": "https://github.com/microsoft/TypeScript/issues/46466"
+  }
+ ],
+ "generated": "2026-09-23 14:48",
+ "summary": {
+  "generic": {
+   "cases": 3,
+   "complete": 3,
+   "detected": 3,
+   "detected_by_oracle": {
+    "r0_crash": 1,
+    "r3_routes": 2,
+    "r4_edits": 1
+   }
+  },
+  "spec_probe": {
+   "cases": 0,
+   "complete": 0,
+   "detected": 0,
+   "detected_by_oracle": {}
+  }
+ }
+}

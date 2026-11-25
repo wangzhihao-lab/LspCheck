@@ -1,0 +1,92 @@
+{
+ "queries": [
+  "syntax unexpected repo:typescript-language-server/typescript-language-server is:issue",
+  "syntax \"wrong edit\" repo:typescript-language-server/typescript-language-server is:issue",
+  "syntax unexpected repo:microsoft/TypeScript is:issue",
+  "syntax \"wrong edit\" repo:microsoft/TypeScript is:issue"
+ ],
+ "matches": [
+  {
+   "repo": "typescript-language-server/typescript-language-server",
+   "number": 921,
+   "title": "Fails to load with syntax error in Kate on KDE Neon",
+   "url": "https://github.com/typescript-language-server/typescript-language-server/issues/921",
+   "state": "closed",
+   "created": "2024-10-02",
+   "comments": 18,
+   "query": "syntax unexpected repo:typescript-language-server/typescript-language-server is:issue"
+  },
+  {
+   "repo": "typescript-language-server/typescript-language-server",
+   "number": 700,
+   "title": "Dont find syntax error",
+   "url": "https://github.com/typescript-language-server/typescript-language-server/issues/700",
+   "state": "closed",
+   "created": "2023-03-09",
+   "comments": 1,
+   "query": "syntax unexpected repo:typescript-language-server/typescript-language-server is:issue"
+  },
+  {
+   "repo": "typescript-language-server/typescript-language-server",
+   "number": 243,
+   "title": "language server crashes on a syntax error in globby",
+   "url": "https://github.com/typescript-language-server/typescript-language-server/issues/243",
+   "state": "closed",
+   "created": "2021-08-05",
+   "comments": 1,
+   "query": "syntax unexpected repo:typescript-language-server/typescript-language-server is:issue"
+  },
+  {
+   "repo": "microsoft/TypeScript",
+   "number": 48441,
+   "title": "Please add default values to all properties in configuration reference",
+   "url": "https://github.com/microsoft/TypeScript/issues/48441",
+   "state": "open",
+   "created": "2022-03-26",
+   "comments": 2,
+   "query": "syntax unexpected repo:microsoft/TypeScript is:issue"
+  },
+  {
+   "repo": "microsoft/TypeScript",
+   "number": 54602,
+   "title": "Unexpected ASI after `declare` (regression since version 4.4)",
+   "url": "https://github.com/microsoft/TypeScript/issues/54602",
+   "state": "open",
+   "created": "2023-06-10",
+   "comments": 1,
+   "query": "syntax unexpected repo:microsoft/TypeScript is:issue"
+  },
+  {
+   "repo": "microsoft/TypeScript",
+   "number": 61426,
+   "title": "Intellisense: deprioritise native function methods",
+   "url": "https://github.com/microsoft/TypeScript/issues/61426",
+   "state": "open",
+   "created": "2025-03-15",
+   "comments": 2,
+   "query": "syntax unexpected repo:microsoft/TypeScript is:issue"
+  },
+  {
+   "repo": "microsoft/TypeScript",
+   "number": 40317,
+   "title": "Tolerate invalid identifier syntax errors in list parsing",
+   "url": "https://github.com/microsoft/TypeScript/issues/40317",
+   "state": "open",
+   "created": "2020-08-29",
+   "comments": 6,
+   "query": "syntax unexpected repo:microsoft/TypeScript is:issue"
+  },
+  {
+   "repo": "microsoft/TypeScript",
+   "number": 63005,
+   "title": "Crash： when inferring from a tuple with middle rest elements and trailing variadic elements",
+   "url": "https://github.com/microsoft/TypeScript/issues/63005",
+   "state": "open",
+   "created": "2026-01-17",
+   "comments": 1,
+   "query": "syntax unexpected repo:microsoft/TypeScript is:issue"
+  }
+ ],
+ "notes": [],
+ "authenticated": true
+}

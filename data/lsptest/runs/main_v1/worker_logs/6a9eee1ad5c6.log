@@ -1,0 +1,6 @@
+2026-09-23 15:15:29,050 INFO campaign_run run 6a9eee1ad5c6: r3_routes on ts7 7.0.2, react-hook-form/react-hook-form@5fd9ef65290b seed 1 settled, targets ['app/src/main.tsx', 'examples/V7/validationOnFieldBlur.tsx', 'src/logic/skipValidation.ts']
+2026-09-23 15:17:48,874 INFO campaign_run run 6a9eee1ad5c6: 3 candidate(s) in 140s; confirming
+2026-09-23 15:18:25,598 INFO flake replay 1/3 of ts7|r3_routes|highlightVsReferences:gained: settled=True control_stable=True reproduced=True (36.7s)
+2026-09-23 15:18:58,407 INFO flake replay 2/3 of ts7|r3_routes|highlightVsReferences:gained: settled=True control_stable=True reproduced=True (32.8s)
+2026-09-23 15:19:30,590 INFO flake replay 3/3 of ts7|r3_routes|highlightVsReferences:gained: settled=True control_stable=True reproduced=True (32.2s)
+2026-09-23 15:19:30,598 INFO campaign_run run 6a9eee1ad5c6 finished: ok, 1 confirmed of 3 candidate(s), 242s

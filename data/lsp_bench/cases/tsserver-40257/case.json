@@ -1,0 +1,74 @@
+{
+ "schema": 1,
+ "id": "tsserver-40257",
+ "meta": {
+  "server": "tsserver",
+  "kind": "tsserver",
+  "number": 40257,
+  "url": "https://github.com/microsoft/TypeScript/issues/40257",
+  "title": "Remove type parameters quick fix forgets the trailing >",
+  "oracle_class": "R4",
+  "subtype": "quickfix",
+  "fix_ref": "microsoft/TypeScript#40265 (fix(40257): fix type parameters range), 3f92a6498f, 2020-11-02; git tag --contains: first in v4.2-beta / v4.2.2",
+  "fix_shas": [
+   "3f92a6498f4b404f0c4804a0061f1ea60448a563"
+  ],
+  "pre_version": "4.1.6",
+  "post_version": "4.2.2",
+  "pre_build": "4.1.6+tsls0.5.1",
+  "post_build": "4.2.2+tsls0.5.1",
+  "wrapper": "typescript-language-server@0.5.1",
+  "build_notes": "npm typescript@4.1.6 (the last 4.1 release; the fix is not on the 4.1 branch) and typescript@4.2.2 (2021-02-25), both behind typescript-language-server@0.5.1 (the latest wrapper release before 4.2.2), started with the pinned tsserver.js (--tsserver-path); the reported TypeScript version is checked on every session. The wrapper is installed with the npm dependencies of its release date (install_builds.wrapper_before); it logs no TypeScript version, so the build check verifies that the wrapper's tsserver child runs the pinned tsserver.js.",
+  "candidate_rank": 96,
+  "effort_minutes": 10,
+  "notes": "The unused type parameters are reported as a suggestion diagnostic (TS6205 'All type parameters are unused') without any compiler option; the undefined CommandClass/CCResponseRole of the issue's snippet only add unrelated errors. Invalid after two attempts, both case-spec errors that never applied the fix: attempt 1 put the cursor one column past the end of line 1; attempt 2 required the code-action kind 'quickfix', but wrapper 0.5.1 returns quick fixes as bare commands without a kind, so 'Remove type parameters' was offered and filtered out. The log of attempt 2 shows the pre-fix edit deleting line 1 character 31 to line 4 character 0, i.e. the reported '>'-leaving result; not counted."
+ },
+ "language": "typescript",
+ "settings": {},
+ "settings_note": "The issue names no settings; no tsconfig.json, so tsserver uses an inferred project.",
+ "session": {
+  "settle_timeout_s": 120
+ },
+ "files": [
+  {
+   "path": "index.ts",
+   "provenance": "issue",
+   "source": "issue body, Code block",
+   "note": "tab indentation as in the issue"
+  }
+ ],
+ "repro": {
+  "attempt": 2,
+  "timing": "settled",
+  "steps": "Open index.ts. With the cursor after 'CCResponsePredicate<', inside the span of the 'All type parameters are unused' suggestion (TS6205), trigger the quick fix that removes all type parameters. Reported: the result is 'export type CCResponsePredicate> = ...' (the trailing '>' stays); expected: 'export type CCResponsePredicate = ...'. Probe: the fixed text must not have a parse error the original did not have.",
+  "ops": [
+   {
+    "kind": "open",
+    "path": "index.ts"
+   }
+  ],
+  "probe": {
+   "type": "edit_breaks_syntax",
+   "params": {
+    "edit": {
+     "via": "code_action",
+     "path": "index.ts",
+     "diagnostic": {
+      "code": "6205"
+     },
+     "kind": "quickfix",
+     "title_re": "(?i)remove.*type parameters",
+     "missing": "invalid"
+    }
+   }
+  }
+ },
+ "attempts": [
+  {
+   "attempt": 1,
+   "timing": "settled",
+   "summary": "Code actions requested at line 1, character 33, one past the end of 'export type CCResponsePredicate<' (a column error in the case): the server answered with the fixes for TSent only ('Remove unused declaration for TSent', 'Prefix TSent with an underscore'), so the remove-all-type-parameters fix was not offered on either build (invalid). The session reports 'All type parameters are unused' (TS6205) over the whole list.",
+   "verdict": "invalid"
+  }
+ ]
+}

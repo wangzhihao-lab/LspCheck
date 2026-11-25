@@ -1,0 +1,3 @@
+2026-11-18 16:04:37,907 INFO campaign_run run 648cdb8e785f: r2_handles on ts6 6.0.3, Gitlawb/openclaude@5cd11336caea seed 2 settled, targets ['src/context/repoMap/repoMap.test.ts', 'src/utils/envFile.ts', 'src/utils/model/modelOptions.ts']
+2026-11-18 16:06:46,080 INFO campaign_run run 648cdb8e785f: 0 candidate(s) in 128s; confirming
+2026-11-18 16:06:46,080 INFO campaign_run run 648cdb8e785f finished: ok, 0 confirmed of 0 candidate(s), 128s

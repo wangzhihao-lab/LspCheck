@@ -1,0 +1,683 @@
+{
+ "format": 1,
+ "campaign": "main_v2",
+ "vid": "95c1b8d86026-v00",
+ "run_id": "95c1b8d86026",
+ "oracle": "r1_history",
+ "server": {
+  "kind": "pyright",
+  "version": "1.1.414"
+ },
+ "project": {
+  "name": "soimort/you-get@049548f3f3f3",
+  "source": "corpus",
+  "ref": "temp/corpus/soimort__you-get@049548f3f3f3",
+  "commit": "049548f3f3f35e67ba8d3181c71fdc71d11cf260",
+  "language": "python"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "src/you_get/extractors/ifeng.py",
+    "positions": [
+     [
+      7,
+      82
+     ],
+     [
+      8,
+      86
+     ],
+     [
+      10,
+      35
+     ],
+     [
+      11,
+      28
+     ],
+     [
+      18,
+      19
+     ],
+     [
+      20,
+      14
+     ],
+     [
+      22,
+      11
+     ],
+     [
+      22,
+      44
+     ],
+     [
+      29,
+      24
+     ],
+     [
+      31,
+      5
+     ],
+     [
+      33,
+      48
+     ],
+     [
+      36,
+      47
+     ]
+    ],
+    "ends": [
+     [
+      7,
+      83
+     ],
+     [
+      8,
+      87
+     ],
+     [
+      10,
+      37
+     ],
+     [
+      11,
+      31
+     ],
+     [
+      18,
+      24
+     ],
+     [
+      20,
+      21
+     ],
+     [
+      22,
+      18
+     ],
+     [
+      22,
+      47
+     ],
+     [
+      29,
+      26
+     ],
+     [
+      31,
+      6
+     ],
+     [
+      33,
+      54
+     ],
+     [
+      36,
+      52
+     ]
+    ],
+    "names": [
+     "id",
+     "id",
+     "xml",
+     "title",
+     "site_info",
+     "download_urls",
+     "ifeng_download",
+     "merge",
+     "url",
+     "id",
+     "uuid_pattern",
+     "output_dir"
+    ]
+   },
+   {
+    "path": "src/you_get/extractors/pixnet.py",
+    "positions": [
+     [
+      9,
+      21
+     ],
+     [
+      19,
+      12
+     ],
+     [
+      25,
+      25
+     ],
+     [
+      26,
+      10
+     ],
+     [
+      32,
+      35
+     ],
+     [
+      33,
+      29
+     ],
+     [
+      35,
+      13
+     ],
+     [
+      44,
+      23
+     ],
+     [
+      46,
+      30
+     ],
+     [
+      47,
+      13
+     ],
+     [
+      49,
+      65
+     ],
+     [
+      52,
+      18
+     ]
+    ],
+    "ends": [
+     [
+      9,
+      23
+     ],
+     [
+      19,
+      16
+     ],
+     [
+      25,
+      28
+     ],
+     [
+      26,
+      12
+     ],
+     [
+      32,
+      37
+     ],
+     [
+      33,
+      34
+     ],
+     [
+      35,
+      18
+     ],
+     [
+      44,
+      28
+     ],
+     [
+      46,
+      34
+     ],
+     [
+      47,
+      18
+     ],
+     [
+      49,
+      68
+     ],
+     [
+      52,
+      26
+     ]
+    ],
+    "names": [
+     "url",
+     "username",
+     "quote",
+     "url2",
+     "url2",
+     "video_json",
+     "url_backup",
+     "url_backup",
+     "url_info",
+     "print_info",
+     "merge",
+     "pixnet_download"
+    ]
+   },
+   {
+    "path": "src/you_get/extractors/suntv.py",
+    "positions": [
+     [
+      8,
+      20
+     ],
+     [
+      8,
+      44
+     ],
+     [
+      8,
+      80
+     ],
+     [
+      9,
+      8
+     ],
+     [
+      16,
+      17
+     ],
+     [
+      16,
+      23
+     ],
+     [
+      21,
+      23
+     ],
+     [
+      23,
+      47
+     ],
+     [
+      25,
+      28
+     ],
+     [
+      30,
+      15
+     ],
+     [
+      30,
+      39
+     ],
+     [
+      32,
+      32
+     ]
+    ],
+    "ends": [
+     [
+      8,
+      22
+     ],
+     [
+      8,
+      47
+     ],
+     [
+      8,
+      83
+     ],
+     [
+      9,
+      9
+     ],
+     [
+      16,
+      19
+     ],
+     [
+      16,
+      26
+     ],
+     [
+      21,
+      27
+     ],
+     [
+      23,
+      49
+     ],
+     [
+      25,
+      30
+     ],
+     [
+      30,
+      17
+     ],
+     [
+      30,
+      44
+     ],
+     [
+      32,
+      35
+     ]
+    ],
+    "names": [
+     "url",
+     "merge",
+     "kwargs",
+     "re",
+     "data",
+     "encode",
+     "respData",
+     "str",
+     "url",
+     "ext",
+     "video_url",
+     "title"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "hover",
+  "path": "src/you_get/extractors/ifeng.py",
+  "line": 11,
+  "character": 28,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "src/you_get/extractors/ifeng.py"
+  },
+  {
+   "kind": "open",
+   "path": "src/you_get/extractors/pixnet.py"
+  },
+  {
+   "kind": "open",
+   "path": "src/you_get/extractors/suntv.py"
+  },
+  {
+   "kind": "change",
+   "path": "src/you_get/extractors/suntv.py",
+   "start": [
+    29,
+    0
+   ],
+   "end": [
+    30,
+    0
+   ]
+  },
+  {
+   "kind": "change",
+   "path": "src/you_get/extractors/suntv.py",
+   "start": [
+    29,
+    0
+   ],
+   "end": [
+    29,
+    0
+   ],
+   "text": "        size = 0\n"
+  },
+  {
+   "kind": "request",
+   "path": "src/you_get/extractors/ifeng.py",
+   "start": [
+    30,
+    10
+   ],
+   "text": "completion"
+  },
+  {
+   "kind": "request",
+   "path": "src/you_get/extractors/pixnet.py",
+   "start": [
+    49,
+    65
+   ],
+   "text": "completion"
+  },
+  {
+   "kind": "request",
+   "path": "src/you_get/extractors/suntv.py",
+   "start": [
+    30,
+    39
+   ],
+   "text": "documentHighlight"
+  },
+  {
+   "kind": "request",
+   "path": "src/you_get/extractors/ifeng.py",
+   "start": [
+    33,
+    48
+   ],
+   "text": "documentHighlight"
+  },
+  {
+   "kind": "request",
+   "path": "src/you_get/extractors/pixnet.py",
+   "start": [
+    53,
+    31
+   ],
+   "text": "hover"
+  },
+  {
+   "kind": "request",
+   "path": "src/you_get/extractors/ifeng.py",
+   "start": [
+    4,
+    10
+   ],
+   "text": "references"
+  },
+  {
+   "kind": "request",
+   "path": "src/you_get/extractors/suntv.py",
+   "start": [
+    15,
+    30
+   ],
+   "text": "hover"
+  },
+  {
+   "kind": "request",
+   "path": "src/you_get/extractors/ifeng.py",
+   "start": [
+    6,
+    63
+   ],
+   "text": "definition"
+  }
+ ],
+ "case": {
+  "chain_step": 0,
+  "families": [],
+  "family": "H8",
+  "history_index": 4,
+  "history_seed": 2005,
+  "mode": "fresh",
+  "note": "after src/you_get/extractors/suntv.py: delete lines 29..29 and its inverse, 8 requests in a shuffled order: completion@src/you_get/extractors/ifeng.py:30:10, completion@src/you_get/extractors/pixnet.py:49:65, documentHighlight@src/you_get/extractors/suntv.py:30:39, documentHighlight@src/you_get/extractors/ifeng.py:33:48, hover@src/you_get/extractors/pixnet.py:53:31, ...",
+  "seed": 2,
+  "timing": "settled"
+ },
+ "shape": "hover:text",
+ "signature": "pyright|r1_history|hover:text",
+ "expected": [
+  "(parameter) title: Unknown | None",
+  [
+   11,
+   26,
+   11,
+   31
+  ]
+ ],
+ "actual": [
+  "(parameter) title: str | Any | None",
+  [
+   11,
+   26,
+   11,
+   31
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "H8: after src/you_get/extractors/suntv.py: delete lines 29..29 and its inverse, 8 requests in a shuffled order: completion@src/you_get/extractors/ifeng.py:30:10, completion@src/you_get/extractors/pixnet.p; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 63s",
+ "violation": {
+  "oracle": "r1_history",
+  "server": "pyright-1.1.414",
+  "project": "soimort/you-get@049548f3f3f3",
+  "key": {
+   "method": "hover",
+   "path": "src/you_get/extractors/ifeng.py",
+   "line": 11,
+   "character": 28,
+   "extra": ""
+  },
+  "expected": [
+   "(parameter) title: Unknown | None",
+   [
+    11,
+    26,
+    11,
+    31
+   ]
+  ],
+  "actual": [
+   "(parameter) title: str | Any | None",
+   [
+    11,
+    26,
+    11,
+    31
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "src/you_get/extractors/ifeng.py"
+   },
+   {
+    "kind": "open",
+    "path": "src/you_get/extractors/pixnet.py"
+   },
+   {
+    "kind": "open",
+    "path": "src/you_get/extractors/suntv.py"
+   },
+   {
+    "kind": "change",
+    "path": "src/you_get/extractors/suntv.py",
+    "start": [
+     29,
+     0
+    ],
+    "end": [
+     30,
+     0
+    ]
+   },
+   {
+    "kind": "change",
+    "path": "src/you_get/extractors/suntv.py",
+    "start": [
+     29,
+     0
+    ],
+    "end": [
+     29,
+     0
+    ],
+    "text": "        size = 0\n"
+   },
+   {
+    "kind": "request",
+    "path": "src/you_get/extractors/ifeng.py",
+    "start": [
+     30,
+     10
+    ],
+    "text": "completion"
+   },
+   {
+    "kind": "request",
+    "path": "src/you_get/extractors/pixnet.py",
+    "start": [
+     49,
+     65
+    ],
+    "text": "completion"
+   },
+   {
+    "kind": "request",
+    "path": "src/you_get/extractors/suntv.py",
+    "start": [
+     30,
+     39
+    ],
+    "text": "documentHighlight"
+   },
+   {
+    "kind": "request",
+    "path": "src/you_get/extractors/ifeng.py",
+    "start": [
+     33,
+     48
+    ],
+    "text": "documentHighlight"
+   },
+   {
+    "kind": "request",
+    "path": "src/you_get/extractors/pixnet.py",
+    "start": [
+     53,
+     31
+    ],
+    "text": "hover"
+   },
+   {
+    "kind": "request",
+    "path": "src/you_get/extractors/ifeng.py",
+    "start": [
+     4,
+     10
+    ],
+    "text": "references"
+   },
+   {
+    "kind": "request",
+    "path": "src/you_get/extractors/suntv.py",
+    "start": [
+     15,
+     30
+    ],
+    "text": "hover"
+   },
+   {
+    "kind": "request",
+    "path": "src/you_get/extractors/ifeng.py",
+    "start": [
+     6,
+     63
+    ],
+    "text": "definition"
+   }
+  ],
+  "detail": "{\"case\": {\"chain_step\": 0, \"families\": [], \"family\": \"H8\", \"history_index\": 4, \"history_seed\": 2005, \"mode\": \"fresh\", \"note\": \"after src/you_get/extractors/suntv.py: delete lines 29..29 and its inverse, 8 requests in a shuffled order: completion@src/you_get/extractors/ifeng.py:30:10, completion@src/you_get/extractors/pixnet.py:49:65, documentHighlight@src/you_get/extractors/suntv.py:30:39, documentHighlight@src/you_get/extractors/ifeng.py:33:48, hover@src/you_get/extractors/pixnet.py:53:31, ...\", \"seed\": 2, \"timing\": \"settled\"}, \"note\": \"H8: after src/you_get/extractors/suntv.py: delete lines 29..29 and its inverse, 8 requests in a shuffled order: completion@src/you_get/extractors/ifeng.py:30:10, completion@src/you_get/extractors/pixnet.p; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 63s\", \"shape\": \"hover:text\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "pyright|r1_history|hover:text",
+  "run_id": "95c1b8d86026"
+ },
+ "replay_logs": [
+  "logs/pyright-1.1.414-95c1b8d86026-replay-baseline-20261118-152628-4b48b9.jsonl.gz",
+  "logs/pyright-1.1.414-95c1b8d86026-replay-control-20261118-152628-0aa564.jsonl.gz",
+  "logs/pyright-1.1.414-95c1b8d86026-replay-history-20261118-152632-22e749.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

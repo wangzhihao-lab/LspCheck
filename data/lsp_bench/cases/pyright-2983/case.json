@@ -1,0 +1,98 @@
+{
+ "schema": 1,
+ "id": "pyright-2983",
+ "meta": {
+  "server": "pyright",
+  "kind": "pyright",
+  "number": 2983,
+  "url": "https://github.com/microsoft/pyright/issues/2983",
+  "title": "Evaluated type of expression varies based on evaluation order",
+  "oracle_class": "R1",
+  "subtype": "query-order",
+  "fix_ref": "none (maintainer: 'This is included in pyright 1.1.233')",
+  "fix_shas": [],
+  "pre_version": "1.1.232",
+  "post_version": "1.1.233",
+  "pre_build": "1.1.232",
+  "post_build": "1.1.233",
+  "build_notes": "npm pyright@1.1.232 (2022-03-23) and pyright@1.1.233 (2022-03-27); release window from the maintainer's comment. A first fix shipped in 1.1.228 and the issue was reopened because hovering only the last e still showed the wrong type (linked Pylance issue microsoft/pylance-release#2324).",
+  "candidate_rank": 69,
+  "effort_minutes": 7,
+  "notes": "Tracking bug of microsoft/pylance-release#2324 ('Type incorrectly inferred as Literal'): the inferred return type of f is (x) -> Literal[0] instead of (x) -> (Unknown | Literal[0]) when the returned e is evaluated before the loop body."
+ },
+ "language": "python",
+ "settings": {},
+ "settings_note": "The issue names no settings; the session defaults (basic type checking, open files only) apply.",
+ "session": {
+  "settle_timeout_s": 120
+ },
+ "files": [
+  {
+   "path": "main.py",
+   "provenance": "issue",
+   "source": "issue body (code block)",
+   "note": ""
+  }
+ ],
+ "repro": {
+  "attempt": 1,
+  "timing": "race",
+  "steps": "Open main.py and let the server analyze it. Modify the file (press Enter at the end of the file) and hover the e in the return statement right away, before the server re-analyzes the file (the issue: 'hover over the e in the return statement while modifying the file'). After the server settles, hover f (its inferred return type) and the returned e, and compare with a fresh session opened on the same final text.",
+  "ops": [
+   {
+    "kind": "open",
+    "path": "main.py"
+   },
+   {
+    "kind": "wait",
+    "text": "settle"
+   },
+   {
+    "kind": "change",
+    "path": "main.py",
+    "start": [
+     5,
+     0
+    ],
+    "end": [
+     5,
+     0
+    ],
+    "text": "\n"
+   },
+   {
+    "kind": "request",
+    "path": "main.py",
+    "start": [
+     4,
+     11
+    ],
+    "text": "hover"
+   }
+  ],
+  "probe": {
+   "type": "differs_from_fresh",
+   "params": {
+    "queries": [
+     {
+      "method": "hover",
+      "path": "main.py",
+      "position": [
+       0,
+       4
+      ]
+     },
+     {
+      "method": "hover",
+      "path": "main.py",
+      "position": [
+       4,
+       11
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "attempts": []
+}

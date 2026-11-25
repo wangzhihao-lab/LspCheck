@@ -1,0 +1,90 @@
+{
+ "vid": "c00149bc8140-v00",
+ "ops_before": 5,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 11,
+ "cache_hits": 2,
+ "reduce_seconds": 139.601,
+ "budget_exhausted": false,
+ "probe_log": [
+  [
+   4,
+   false
+  ],
+  [
+   4,
+   false
+  ],
+  [
+   4,
+   false
+  ],
+  [
+   4,
+   true
+  ],
+  [
+   3,
+   true
+  ],
+  [
+   1,
+   false
+  ],
+  [
+   2,
+   false
+  ],
+  [
+   1,
+   false
+  ],
+  [
+   1,
+   false
+  ],
+  [
+   2,
+   false
+  ],
+  [
+   2,
+   false
+  ]
+ ],
+ "logs": [
+  "pyright-1.1.414-tr2e7477-replay-baseline-20261118-224006-2a738e.jsonl.gz",
+  "pyright-1.1.414-tr2e7477-replay-control-20261118-224006-c21ccd.jsonl.gz",
+  "pyright-1.1.414-tr2e7477-replay-history-20261118-224010-376c5a.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [
+   [
+    "temp/lsp_servers/pyright-1.1.414/node_modules/pyright/dist/typeshed-fallback/stdlib/sys/__init__.pyi",
+    0,
+    0,
+    0,
+    0
+   ]
+  ],
+  "actual": [
+   [
+    "temp/lsp_servers/pyright-1.1.414/node_modules/pyright/dist/typeshed-fallback/stdlib/sys/__init__.pyi",
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    "~/Library/Python/3.14/lib/python/site-packages/typing_extensions.py",
+    0,
+    0,
+    0,
+    0
+   ]
+  ]
+ },
+ "ops_after": 3,
+ "total_seconds": 228.9
+}

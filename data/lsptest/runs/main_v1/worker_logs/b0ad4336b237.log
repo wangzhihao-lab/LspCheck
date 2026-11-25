@@ -1,0 +1,3 @@
+2026-09-24 04:57:16,772 INFO campaign_run run b0ad4336b237: r1_history on ts7 7.0.2, Fission-AI/OpenSpec@f179ed4e4056 seed 1 settled, targets ['src/core/shared/skill-generation.ts', 'src/telemetry/index.ts', 'test/commands/store-git.test.ts']
+2026-09-24 05:04:14,058 INFO campaign_run run b0ad4336b237: 0 candidate(s) in 417s; confirming
+2026-09-24 05:04:14,060 INFO campaign_run run b0ad4336b237 finished: ok, 0 confirmed of 0 candidate(s), 417s

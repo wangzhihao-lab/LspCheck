@@ -1,0 +1,602 @@
+{
+ "waits_s": [
+  0,
+  5,
+  30,
+  60
+ ],
+ "rows": [
+  {
+   "gid": "ts6-r1-codeaction-key-lost-h5-4f92e2",
+   "by_wait": {
+    "0": {
+     "verdict": "reproduced",
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 25.7,
+     "error": ""
+    },
+    "5": {
+     "verdict": "reproduced",
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 30.6,
+     "error": ""
+    },
+    "30": {
+     "verdict": "reproduced",
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 55.6,
+     "error": ""
+    },
+    "60": {
+     "verdict": "reproduced",
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 85.9,
+     "error": ""
+    }
+   }
+  },
+  {
+   "gid": "ts6-r1-completion-lost-h5-fa501c",
+   "by_wait": {
+    "0": {
+     "verdict": "reproduced",
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 25.8,
+     "error": ""
+    },
+    "5": {
+     "verdict": "reproduced",
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 30.5,
+     "error": ""
+    },
+    "30": {
+     "verdict": "reproduced",
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 55.5,
+     "error": ""
+    },
+    "60": {
+     "verdict": "reproduced",
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 85.5,
+     "error": ""
+    }
+   }
+  },
+  {
+   "gid": "ts6-r1-definition-lost-h5-61a0fd",
+   "by_wait": {
+    "0": {
+     "verdict": "not-reproduced",
+     "reproduced": 0,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 16.2,
+     "error": ""
+    },
+    "5": {
+     "verdict": "not-reproduced",
+     "reproduced": 0,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 24.7,
+     "error": ""
+    },
+    "30": {
+     "verdict": "reproduced",
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 51.9,
+     "error": ""
+    },
+    "60": {
+     "verdict": "reproduced",
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 76.8,
+     "error": ""
+    }
+   }
+  },
+  {
+   "gid": "ts6-r1-definition-lost-h9-898f29",
+   "by_wait": {
+    "0": {
+     "verdict": "reproduced",
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 115.7,
+     "error": ""
+    },
+    "5": {
+     "verdict": "reproduced",
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 120.0,
+     "error": ""
+    },
+    "30": {
+     "verdict": "reproduced",
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 145.0,
+     "error": ""
+    },
+    "60": {
+     "verdict": "reproduced",
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 174.8,
+     "error": ""
+    }
+   }
+  },
+  {
+   "gid": "ts6-r1-diagnostics-extra-2305-2339-7006-h5-d5a250",
+   "by_wait": {
+    "0": {
+     "verdict": "reproduced",
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 17.8,
+     "error": ""
+    },
+    "5": {
+     "verdict": "not-reproduced",
+     "reproduced": 0,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 22.3,
+     "error": ""
+    },
+    "30": {
+     "verdict": "not-reproduced",
+     "reproduced": 0,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 47.3,
+     "error": ""
+    },
+    "60": {
+     "verdict": "not-reproduced",
+     "reproduced": 0,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 77.3,
+     "error": ""
+    }
+   }
+  },
+  {
+   "gid": "ts6-r1-documenthighlight-lost-h5-9b4675",
+   "by_wait": {
+    "0": {
+     "verdict": "reproduced",
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 16.3,
+     "error": ""
+    },
+    "5": {
+     "verdict": "not-reproduced",
+     "reproduced": 0,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 21.3,
+     "error": ""
+    },
+    "30": {
+     "verdict": "reproduced",
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 46.3,
+     "error": ""
+    },
+    "60": {
+     "verdict": "reproduced",
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 76.1,
+     "error": ""
+    }
+   }
+  },
+  {
+   "gid": "ts6-r1-references-lost-h5-d24ca6",
+   "by_wait": {
+    "0": {
+     "verdict": "reproduced",
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 25.7,
+     "error": ""
+    },
+    "5": {
+     "verdict": "reproduced",
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 30.6,
+     "error": ""
+    },
+    "30": {
+     "verdict": "reproduced",
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 55.4,
+     "error": ""
+    },
+    "60": {
+     "verdict": "reproduced",
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 85.7,
+     "error": ""
+    }
+   }
+  },
+  {
+   "gid": "ts6-r1-references-missing-h5-cc8950",
+   "by_wait": {
+    "0": {
+     "verdict": "reproduced",
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 16.7,
+     "error": ""
+    },
+    "5": {
+     "verdict": "reproduced",
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 21.6,
+     "error": ""
+    },
+    "30": {
+     "verdict": "reproduced",
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 46.5,
+     "error": ""
+    },
+    "60": {
+     "verdict": "reproduced",
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 76.3,
+     "error": ""
+    }
+   }
+  },
+  {
+   "gid": "ts6-r1-semantictokens-changed-h5-591c42",
+   "by_wait": {
+    "0": {
+     "verdict": "reproduced",
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 25.4,
+     "error": ""
+    },
+    "5": {
+     "verdict": "reproduced",
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 30.7,
+     "error": ""
+    },
+    "30": {
+     "verdict": "reproduced",
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 55.4,
+     "error": ""
+    },
+    "60": {
+     "verdict": "reproduced",
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 85.3,
+     "error": ""
+    }
+   }
+  },
+  {
+   "gid": "ts6-r1-semantictokens-missing-h9-d686b3",
+   "by_wait": {
+    "0": {
+     "verdict": "reproduced",
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 22.5,
+     "error": ""
+    },
+    "5": {
+     "verdict": "reproduced",
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 27.3,
+     "error": ""
+    },
+    "30": {
+     "verdict": "reproduced",
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 52.5,
+     "error": ""
+    },
+    "60": {
+     "verdict": "reproduced",
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 82.2,
+     "error": ""
+    }
+   }
+  },
+  {
+   "gid": "ts6-r1-signaturehelp-changed-h5-db5a5e",
+   "by_wait": {
+    "0": {
+     "verdict": "reproduced",
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 15.9,
+     "error": ""
+    },
+    "5": {
+     "verdict": "reproduced",
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 21.1,
+     "error": ""
+    },
+    "30": {
+     "verdict": "not-reproduced",
+     "reproduced": 0,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 45.9,
+     "error": ""
+    },
+    "60": {
+     "verdict": "reproduced",
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 76.0,
+     "error": ""
+    }
+   }
+  },
+  {
+   "gid": "ts6-r1-signaturehelp-lost-h9-7bd793",
+   "by_wait": {
+    "0": {
+     "verdict": "reproduced",
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 61.2,
+     "error": ""
+    },
+    "5": {
+     "verdict": "reproduced",
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 66.3,
+     "error": ""
+    },
+    "30": {
+     "verdict": "not-reproduced",
+     "reproduced": 0,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 86.8,
+     "error": ""
+    },
+    "60": {
+     "verdict": "reproduced",
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 117.0,
+     "error": ""
+    }
+   }
+  },
+  {
+   "gid": "ts6-r1-typedefinition-lost-h5-712a35",
+   "by_wait": {
+    "0": {
+     "verdict": "reproduced",
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 18.9,
+     "error": ""
+    },
+    "5": {
+     "verdict": "reproduced",
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 23.3,
+     "error": ""
+    },
+    "30": {
+     "verdict": "reproduced",
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 48.3,
+     "error": ""
+    },
+    "60": {
+     "verdict": "not-reproduced",
+     "reproduced": 0,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 78.5,
+     "error": ""
+    }
+   }
+  },
+  {
+   "gid": "ts6-r1-diagnostics-extra-2304-h7-8ca52f",
+   "by_wait": {
+    "0": {
+     "verdict": "reproduced",
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 15.3,
+     "error": ""
+    },
+    "5": {
+     "verdict": "reproduced",
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 19.5,
+     "error": ""
+    },
+    "30": {
+     "verdict": "reproduced",
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 44.2,
+     "error": ""
+    },
+    "60": {
+     "verdict": "not-reproduced",
+     "reproduced": 0,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 74.3,
+     "error": ""
+    }
+   }
+  },
+  {
+   "gid": "gopls-r1-references-extra-h9-0290a7",
+   "by_wait": {
+    "0": {
+     "verdict": "reproduced",
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 10.3,
+     "error": ""
+    },
+    "5": {
+     "verdict": "reproduced",
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 14.7,
+     "error": ""
+    },
+    "30": {
+     "verdict": "reproduced",
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 39.7,
+     "error": ""
+    },
+    "60": {
+     "verdict": "reproduced",
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 69.7,
+     "error": ""
+    }
+   }
+  },
+  {
+   "gid": "ts7-r1-references-missing-h9-2dd24a",
+   "by_wait": {
+    "0": {
+     "verdict": "reproduced",
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 34.7,
+     "error": ""
+    },
+    "5": {
+     "verdict": "reproduced",
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 38.6,
+     "error": ""
+    },
+    "30": {
+     "verdict": "reproduced",
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 63.6,
+     "error": ""
+    },
+    "60": {
+     "verdict": "reproduced",
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 93.8,
+     "error": ""
+    }
+   }
+  }
+ ]
+}

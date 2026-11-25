@@ -1,0 +1,3 @@
+2026-11-18 10:33:12,720 INFO campaign_run run 25a1443301ed: r5_transforms on pyright 1.1.414, karpathy/nanochat@92d63d4e8bb4 seed 2 settled, targets ['nanochat/gpt.py', 'scripts/tok_train.py', 'tasks/arc.py']
+2026-11-18 10:33:52,971 INFO campaign_run run 25a1443301ed: 0 candidate(s) in 40s; confirming
+2026-11-18 10:33:52,972 INFO campaign_run run 25a1443301ed finished: ok, 0 confirmed of 0 candidate(s), 40s

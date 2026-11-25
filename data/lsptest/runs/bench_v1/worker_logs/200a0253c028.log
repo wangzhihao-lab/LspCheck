@@ -1,0 +1,3 @@
+2026-09-25 02:44:44,209 INFO campaign_run run 200a0253c028: r1_history on rust-analyzer 2026-05-11, rust-analyzer-22281 seed 2 settled, targets ['src/main.rs']
+2026-09-25 02:48:46,380 INFO campaign_run run 200a0253c028: 0 candidate(s) in 242s; confirming
+2026-09-25 02:48:46,381 INFO campaign_run run 200a0253c028 finished: ok, 0 confirmed of 0 candidate(s), 242s

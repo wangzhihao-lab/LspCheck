@@ -1,0 +1,189 @@
+{
+ "schema": 1,
+ "id": "tsserver-46564",
+ "meta": {
+  "server": "tsserver",
+  "kind": "tsserver",
+  "number": 46564,
+  "url": "https://github.com/microsoft/TypeScript/issues/46564",
+  "title": "Auto import from vscode suggestions fail if existing import path doesn't match TypeScript's preference.",
+  "oracle_class": "R1",
+  "subtype": "edit-undo",
+  "fix_ref": "microsoft/TypeScript#46569 (Set hasAddedOrRemovedSymlinks when discovering an existing file by its realpath), 7742cf2180, 2021-10-29; git tag --contains: first in v4.5-rc / v4.5.2",
+  "fix_shas": [
+   "7742cf2180e2545edf92fe2df44fb703ae8f5dd4"
+  ],
+  "pre_version": "4.4.4",
+  "post_version": "4.5.2",
+  "pre_build": "4.4.4+tsls0.7.1",
+  "post_build": "4.5.2+tsls0.7.1",
+  "wrapper": "typescript-language-server@0.7.1",
+  "build_notes": "npm typescript@4.4.4 (2021-10-12) and typescript@4.5.2 (2021-11-17), both behind typescript-language-server@0.7.1 (the latest wrapper release before 4.5.2), started with the pinned tsserver.js; the reported TypeScript version is checked on every session.",
+  "candidate_rank": 180,
+  "effort_minutes": 32,
+  "notes": "The reporter's repository pinned at its last commit of the report day; node_modules/mylib is the symlink 'npm install' creates for the file: dependency (a directory symlink to ../packages/mylib, created in project/ as scaffolding; node_modules/typescript of the repository's devDependencies is not needed because the pinned tsserver is used). The accepted completions of steps 6 and 9 are applied as the edits they make (the import insertion and the added specifier), after the completion requests themselves. Attempt 2 only corrects the target diagnostic (TS2552 'Cannot find name MyClass2. Did you mean MyClass?', matched by message)."
+ },
+ "language": "typescript",
+ "settings": {},
+ "settings_note": "The repository's tsconfig.json is used; the auto-import completion preferences are on in the tsserver kind (servers_bench.TSSERVER_PREFERENCES). node_modules/mylib is a relative directory symlink inside project/, not a listed file.",
+ "session": {
+  "settle_timeout_s": 120
+ },
+ "files": [
+  {
+   "path": "package.json",
+   "provenance": "repo",
+   "source": "TheWyo/vscode-typescript-import-issue@83a7036b07ea4f2456a7744529036eb7396d0d34:package.json",
+   "note": ""
+  },
+  {
+   "path": "packages/mylib/index.ts",
+   "provenance": "repo",
+   "source": "TheWyo/vscode-typescript-import-issue@83a7036b07ea4f2456a7744529036eb7396d0d34:packages/mylib/index.ts",
+   "note": ""
+  },
+  {
+   "path": "packages/mylib/package.json",
+   "provenance": "repo",
+   "source": "TheWyo/vscode-typescript-import-issue@83a7036b07ea4f2456a7744529036eb7396d0d34:packages/mylib/package.json",
+   "note": ""
+  },
+  {
+   "path": "packages/mylib/mySubDir/index.ts",
+   "provenance": "repo",
+   "source": "TheWyo/vscode-typescript-import-issue@83a7036b07ea4f2456a7744529036eb7396d0d34:packages/mylib/mySubDir/index.ts",
+   "note": ""
+  },
+  {
+   "path": "packages/mylib/mySubDir/myClass.ts",
+   "provenance": "repo",
+   "source": "TheWyo/vscode-typescript-import-issue@83a7036b07ea4f2456a7744529036eb7396d0d34:packages/mylib/mySubDir/myClass.ts",
+   "note": ""
+  },
+  {
+   "path": "packages/mylib/mySubDir/myClass2.ts",
+   "provenance": "repo",
+   "source": "TheWyo/vscode-typescript-import-issue@83a7036b07ea4f2456a7744529036eb7396d0d34:packages/mylib/mySubDir/myClass2.ts",
+   "note": ""
+  },
+  {
+   "path": "src/index.ts",
+   "provenance": "repo",
+   "source": "TheWyo/vscode-typescript-import-issue@83a7036b07ea4f2456a7744529036eb7396d0d34:src/index.ts",
+   "note": ""
+  },
+  {
+   "path": "tsconfig.json",
+   "provenance": "repo",
+   "source": "TheWyo/vscode-typescript-import-issue@83a7036b07ea4f2456a7744529036eb7396d0d34:tsconfig.json",
+   "note": ""
+  }
+ ],
+ "repro": {
+  "attempt": 2,
+  "timing": "settled",
+  "steps": "Steps 4-14 of the issue in one session: open src/index.ts; complete MyClass at 'new MyClass|()' and accept (the import from \"../packages/mylib\" is added); complete MyClass2 and accept (MyClass2 is added to that import); undo that change; change the import path to \"mylib\" (the npm dependency, a symlink to packages/mylib); complete MyClass2 again and accept. Reported: no import is added, and tsserver logs 'Debug Failure. False expression' in getCompletionEntryCodeActionsAndSourceDisplay (the completion details request fails); a fresh server adds the import. Probe: accept the offered MyClass2 item (with its resolved additional edits); a fresh session on the edited file must not report the targeted 'Cannot find name MyClass2' or a new error.",
+  "ops": [
+   {
+    "kind": "open",
+    "path": "src/index.ts"
+   },
+   {
+    "kind": "request",
+    "path": "src/index.ts",
+    "start": [
+     1,
+     21
+    ],
+    "text": "completion"
+   },
+   {
+    "kind": "change",
+    "path": "src/index.ts",
+    "start": [
+     0,
+     0
+    ],
+    "end": [
+     0,
+     0
+    ],
+    "text": "import { MyClass } from \"../packages/mylib\";\n"
+   },
+   {
+    "kind": "request",
+    "path": "src/index.ts",
+    "start": [
+     3,
+     22
+    ],
+    "text": "completion"
+   },
+   {
+    "kind": "change",
+    "path": "src/index.ts",
+    "start": [
+     0,
+     16
+    ],
+    "end": [
+     0,
+     16
+    ],
+    "text": ", MyClass2"
+   },
+   {
+    "kind": "change",
+    "path": "src/index.ts",
+    "start": [
+     0,
+     16
+    ],
+    "end": [
+     0,
+     26
+    ],
+    "text": ""
+   },
+   {
+    "kind": "change",
+    "path": "src/index.ts",
+    "start": [
+     0,
+     25
+    ],
+    "end": [
+     0,
+     42
+    ],
+    "text": "mylib"
+   }
+  ],
+  "probe": {
+   "type": "edit_leaves_diagnostic",
+   "params": {
+    "edit": {
+     "via": "completion",
+     "path": "src/index.ts",
+     "position": [
+      3,
+      22
+     ],
+     "label_re": "^MyClass2$",
+     "missing": "invalid"
+    },
+    "target": {
+     "message_re": "Cannot find name 'MyClass2'"
+    }
+   }
+  }
+ },
+ "attempts": [
+  {
+   "attempt": 1,
+   "timing": "settled",
+   "summary": "The issue's steps with the target spec {code 2304, message 'MyClass2'}: pre-fix 4.4.4 answered completionItem/resolve for MyClass2 with -32603 'Debug Failure. False expression. at getCompletionEntryCodeActionsAndSourceDisplay' (the reported failure) and the accepted item added no import, but the missing name is reported as TS2552 ('Cannot find name MyClass2. Did you mean MyClass?') since MyClass is imported, so the target did not match and the probe answered absent on both builds. Target spec error; the reproduction itself worked.",
+   "verdict": "not-reproduced-pre"
+  }
+ ]
+}

@@ -1,0 +1,90 @@
+{
+ "queries": [
+  "diagnostics wrong repo:microsoft/typescript-go is:issue",
+  "diagnostics \"TypeScript 6\" repo:microsoft/typescript-go is:issue"
+ ],
+ "matches": [
+  {
+   "repo": "microsoft/typescript-go",
+   "number": 4827,
+   "title": "Generic type argument inferred from the wrong inference slot (cyclic union-of-intersections); larger programs show scheduling-dependent diagnostics",
+   "url": "https://github.com/microsoft/typescript-go/issues/4827",
+   "state": "closed",
+   "created": "2026-08-04",
+   "comments": 1,
+   "query": "diagnostics wrong repo:microsoft/typescript-go is:issue"
+  },
+  {
+   "repo": "microsoft/typescript-go",
+   "number": 4262,
+   "title": "Non-deterministic `TS2305 \"has no exported member\"` errors across project references with `--emitDeclarationOnly`",
+   "url": "https://github.com/microsoft/typescript-go/issues/4262",
+   "state": "closed",
+   "created": "2026-06-10",
+   "comments": 8,
+   "query": "diagnostics wrong repo:microsoft/typescript-go is:issue"
+  },
+  {
+   "repo": "microsoft/typescript-go",
+   "number": 4314,
+   "title": "Behavior difference: tsgo misses TS2345 when a namespace translator union is called with a template-literal key union",
+   "url": "https://github.com/microsoft/typescript-go/issues/4314",
+   "state": "closed",
+   "created": "2026-06-15",
+   "comments": 2,
+   "query": "diagnostics wrong repo:microsoft/typescript-go is:issue"
+  },
+  {
+   "repo": "microsoft/typescript-go",
+   "number": 3576,
+   "title": "[Proposal] strictArrayVariance: opt-in invariance for mutable Array<T> element type (post-7.0 discussion)",
+   "url": "https://github.com/microsoft/typescript-go/issues/3576",
+   "state": "closed",
+   "created": "2026-04-24",
+   "comments": 5,
+   "query": "diagnostics wrong repo:microsoft/typescript-go is:issue"
+  },
+  {
+   "repo": "microsoft/typescript-go",
+   "number": 2511,
+   "title": "Stale diagnostics on file reload",
+   "url": "https://github.com/microsoft/typescript-go/issues/2511",
+   "state": "closed",
+   "created": "2026-01-14",
+   "comments": 5,
+   "query": "diagnostics wrong repo:microsoft/typescript-go is:issue"
+  },
+  {
+   "repo": "microsoft/typescript-go",
+   "number": 4745,
+   "title": "Native API syntactic diagnostics omit start and length",
+   "url": "https://github.com/microsoft/typescript-go/issues/4745",
+   "state": "closed",
+   "created": "2026-07-26",
+   "comments": 2,
+   "query": "diagnostics \"TypeScript 6\" repo:microsoft/typescript-go is:issue"
+  },
+  {
+   "repo": "microsoft/typescript-go",
+   "number": 4719,
+   "title": "tsgo reports type errors in external-library (node_modules) source files that tsc suppresses",
+   "url": "https://github.com/microsoft/typescript-go/issues/4719",
+   "state": "closed",
+   "created": "2026-07-23",
+   "comments": 2,
+   "query": "diagnostics \"TypeScript 6\" repo:microsoft/typescript-go is:issue"
+  },
+  {
+   "repo": "microsoft/typescript-go",
+   "number": 4129,
+   "title": "tsgo reports compiler-option diagnostics even when syntactic errors exist",
+   "url": "https://github.com/microsoft/typescript-go/issues/4129",
+   "state": "closed",
+   "created": "2026-05-31",
+   "comments": 0,
+   "query": "diagnostics \"TypeScript 6\" repo:microsoft/typescript-go is:issue"
+  }
+ ],
+ "notes": [],
+ "authenticated": true
+}

@@ -1,0 +1,6 @@
+2026-09-24 12:51:16,457 INFO campaign_run run 22384d1bbde9: r1_history on gopls v0.23.0, charmbracelet/bubbletea@657aaae216e3 seed 3 settled, targets ['examples/list-default/main.go', 'examples/print-key/main.go', 'examples/vanish/main.go']
+2026-09-24 12:58:56,747 INFO campaign_run run 22384d1bbde9: 2 candidate(s) in 460s; confirming
+2026-09-24 12:59:43,354 INFO flake replay 1/3 of gopls|r1_history|completion:changed: settled=True control_stable=True reproduced=False (46.6s)
+2026-09-24 13:00:32,953 INFO flake replay 2/3 of gopls|r1_history|completion:changed: settled=True control_stable=True reproduced=False (49.6s)
+2026-09-24 13:01:21,368 INFO flake replay 3/3 of gopls|r1_history|completion:changed: settled=True control_stable=False reproduced=False (48.4s)
+2026-09-24 13:01:21,371 INFO campaign_run run 22384d1bbde9 finished: ok, 0 confirmed of 2 candidate(s), 605s

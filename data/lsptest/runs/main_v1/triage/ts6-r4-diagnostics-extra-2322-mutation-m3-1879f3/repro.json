@@ -1,0 +1,254 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "d63f2fe7f749-v00",
+ "run_id": "d63f2fe7f749",
+ "oracle": "r4_edits",
+ "server": {
+  "kind": "ts6",
+  "version": "6.0.3"
+ },
+ "project": {
+  "name": "pmndrs/zustand@b57db4f86ef1",
+  "source": "corpus",
+  "ref": "temp/corpus/pmndrs__zustand@b57db4f86ef1",
+  "commit": "b57db4f86ef179285da216eeb291266da82c361c",
+  "language": "typescript"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "src/middleware/devtools.ts",
+    "positions": [
+     [
+      147,
+      8
+     ]
+    ],
+    "ends": [],
+    "names": [
+     ""
+    ]
+   },
+   {
+    "path": "src/traditional.ts",
+    "positions": [],
+    "ends": [],
+    "names": []
+   },
+   {
+    "path": "tests/immer.test.tsx",
+    "positions": [],
+    "ends": [],
+    "names": []
+   }
+  ]
+ },
+ "key": {
+  "method": "diagnostics",
+  "path": "src/middleware/devtools.ts",
+  "line": 147,
+  "character": 8,
+  "extra": "M3:quickfix-errors:Add missing properties"
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "src/middleware/devtools.ts"
+  },
+  {
+   "kind": "change",
+   "path": "src/middleware/devtools.ts",
+   "start": [
+    148,
+    51
+   ],
+   "end": [
+    149,
+    14
+   ]
+  },
+  {
+   "kind": "change",
+   "path": "src/middleware/devtools.ts",
+   "start": [
+    149,
+    2
+   ],
+   "end": [
+    149,
+    2
+   ],
+   "text": "  stores: undefined\n  "
+  }
+ ],
+ "case": {
+  "action_kind": "quickfix",
+  "base_errors": 0,
+  "check": "errors",
+  "diag": {
+   "code": 2741,
+   "message": "Property 'stores' is missing in type '{ connection: ConnectResponse; }' but required in type 'ConnectionInformation'.",
+   "range": {
+    "end": {
+     "character": 21,
+     "line": 147
+    },
+    "start": {
+     "character": 8,
+     "line": 147
+    }
+   },
+   "severity": 1
+  },
+  "fix_introduced_errors": [
+   {
+    "code": 2322,
+    "message": "Type 'undefined' is not assignable to type 'Record<string, StoreInformation>'.",
+    "path": "src/middleware/devtools.ts",
+    "range": {
+     "end": {
+      "character": 10,
+      "line": 149
+     },
+     "start": {
+      "character": 4,
+      "line": 149
+     }
+    },
+    "severity": 1
+   }
+  ],
+  "fix_ops": [
+   {
+    "end": [
+     149,
+     2
+    ],
+    "kind": "change",
+    "path": "src/middleware/devtools.ts",
+    "start": [
+     149,
+     2
+    ],
+    "text": "  stores: undefined\n  "
+   }
+  ],
+  "kind": "mutation",
+  "mutation": {
+   "end": [
+    149,
+    14
+   ],
+   "id": "M3",
+   "offsets": [
+    4182,
+    4198
+   ],
+   "sha": "91bfaa1487cfa5a0",
+   "start": [
+    148,
+    51
+   ],
+   "text": "",
+   "what": "drop member stores of a literal"
+  },
+  "n_fix_ops": 1,
+  "path": "src/middleware/devtools.ts",
+  "post_errors": 1,
+  "title": "Add missing properties",
+  "via": "edit"
+ },
+ "shape": "diagnostics:extra:2322",
+ "signature": "ts6|r4_edits|diagnostics:extra:2322",
+ "expected": [],
+ "actual": [
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "2322",
+   "typescript",
+   "Type 'undefined' is not assignable to type 'Record<string, StoreInformation>'."
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "quick fix 'Add missing properties' for 2741 at src/middleware/devtools.ts:148:9 raises the error count in the edited files from 0 to 1 (seeded by M3: drop member stores of a literal; errors before the mutation 0, after the fix 1); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 359s",
+ "violation": {
+  "oracle": "r4_edits",
+  "server": "ts6-6.0.3",
+  "project": "pmndrs/zustand@b57db4f86ef1",
+  "key": {
+   "method": "diagnostics",
+   "path": "src/middleware/devtools.ts",
+   "line": 147,
+   "character": 8,
+   "extra": "M3:quickfix-errors:Add missing properties"
+  },
+  "expected": [],
+  "actual": [
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2322",
+    "typescript",
+    "Type 'undefined' is not assignable to type 'Record<string, StoreInformation>'."
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "src/middleware/devtools.ts"
+   },
+   {
+    "kind": "change",
+    "path": "src/middleware/devtools.ts",
+    "start": [
+     148,
+     51
+    ],
+    "end": [
+     149,
+     14
+    ]
+   },
+   {
+    "kind": "change",
+    "path": "src/middleware/devtools.ts",
+    "start": [
+     149,
+     2
+    ],
+    "end": [
+     149,
+     2
+    ],
+    "text": "  stores: undefined\n  "
+   }
+  ],
+  "detail": "{\"case\": {\"action_kind\": \"quickfix\", \"base_errors\": 0, \"check\": \"errors\", \"diag\": {\"code\": 2741, \"message\": \"Property 'stores' is missing in type '{ connection: ConnectResponse; }' but required in type 'ConnectionInformation'.\", \"range\": {\"end\": {\"character\": 21, \"line\": 147}, \"start\": {\"character\": 8, \"line\": 147}}, \"severity\": 1}, \"fix_introduced_errors\": [{\"code\": 2322, \"message\": \"Type 'undefined' is not assignable to type 'Record<string, StoreInformation>'.\", \"path\": \"src/middleware/devtools.ts\", \"range\": {\"end\": {\"character\": 10, \"line\": 149}, \"start\": {\"character\": 4, \"line\": 149}}, \"severity\": 1}], \"fix_ops\": [{\"end\": [149, 2], \"kind\": \"change\", \"path\": \"src/middleware/devtools.ts\", \"start\": [149, 2], \"text\": \"  stores: undefined\\n  \"}], \"kind\": \"mutation\", \"mutation\": {\"end\": [149, 14], \"id\": \"M3\", \"offsets\": [4182, 4198], \"sha\": \"91bfaa1487cfa5a0\", \"start\": [148, 51], \"text\": \"\", \"what\": \"drop member stores of a literal\"}, \"n_fix_ops\": 1, \"path\": \"src/middleware/devtools.ts\", \"post_errors\": 1, \"title\": \"Add missing properties\", \"via\": \"edit\"}, \"note\": \"quick fix 'Add missing properties' for 2741 at src/middleware/devtools.ts:148:9 raises the error count in the edited files from 0 to 1 (seeded by M3: drop member stores of a literal; errors before the mutation 0, after the fix 1); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 359s\", \"shape\": \"diagnostics:extra:2322\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "ts6|r4_edits|diagnostics:extra:2322",
+  "run_id": "d63f2fe7f749"
+ },
+ "replay_logs": [
+  "logs/ts6-6.0.3-tr1879f3-r4-replay-baseline-20260925-190248-1cc904.jsonl.gz",
+  "logs/ts6-6.0.3-tr1879f3-r4-replay-case-20260925-190236-a3d88b.jsonl.gz",
+  "logs/ts6-6.0.3-tr1879f3-r4-replay-control-20260925-190256-be16a9.jsonl.gz"
+ ],
+ "project_files": {},
+ "group": "ts6-r4-diagnostics-extra-2322-mutation-m3-1879f3",
+ "reduced": true
+}

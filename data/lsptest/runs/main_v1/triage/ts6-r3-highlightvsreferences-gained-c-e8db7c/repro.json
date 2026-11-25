@@ -1,0 +1,116 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "7587da4972f6-v00",
+ "run_id": "7587da4972f6",
+ "oracle": "r3_routes",
+ "server": {
+  "kind": "ts6",
+  "version": "6.0.3"
+ },
+ "project": {
+  "name": "ChromeDevTools/chrome-devtools-mcp@2250cdcde4aa",
+  "source": "corpus",
+  "ref": "temp/corpus/ChromeDevTools__chrome-devtools-mcp@2250cdcde4aa",
+  "commit": "2250cdcde4aad79d54101c80346df4190e0c2da7",
+  "language": "typescript"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "scripts/eval_result.ts",
+    "positions": [
+     [
+      26,
+      3
+     ]
+    ],
+    "ends": [],
+    "names": [
+     ""
+    ]
+   },
+   {
+    "path": "scripts/profile/source_map_server.ts",
+    "positions": [],
+    "ends": [],
+    "names": []
+   },
+   {
+    "path": "tests/shutdown.test.ts",
+    "positions": [],
+    "ends": [],
+    "names": []
+   }
+  ]
+ },
+ "key": {
+  "method": "highlightVsReferences",
+  "path": "scripts/eval_result.ts",
+  "line": 26,
+  "character": 3,
+  "extra": ""
+ },
+ "ops": [],
+ "case": {
+  "path": "scripts/eval_result.ts",
+  "pos": [
+   26,
+   3
+  ],
+  "sub": "c"
+ },
+ "shape": "highlightVsReferences:gained",
+ "signature": "ts6|r3_routes|highlightVsReferences:gained",
+ "expected": [],
+ "actual": [
+  [
+   26,
+   2,
+   26,
+   5
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "33 references; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 145s",
+ "violation": {
+  "oracle": "r3_routes",
+  "server": "ts6-6.0.3",
+  "project": "ChromeDevTools/chrome-devtools-mcp@2250cdcde4aa",
+  "key": {
+   "method": "highlightVsReferences",
+   "path": "scripts/eval_result.ts",
+   "line": 26,
+   "character": 3,
+   "extra": ""
+  },
+  "expected": [],
+  "actual": [
+   [
+    26,
+    2,
+    26,
+    5
+   ]
+  ],
+  "ops": [],
+  "detail": "{\"case\": {\"path\": \"scripts/eval_result.ts\", \"pos\": [26, 3], \"sub\": \"c\"}, \"note\": \"33 references; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 145s\", \"shape\": \"highlightVsReferences:gained\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "ts6|r3_routes|highlightVsReferences:gained",
+  "run_id": "7587da4972f6"
+ },
+ "replay_logs": [
+  "logs/ts6-6.0.3-tre8db7c-r3-replay-baseline-20260925-185540-1139ff.jsonl.gz",
+  "logs/ts6-6.0.3-tre8db7c-r3-replay-control-20260925-185550-e9fb3e.jsonl.gz"
+ ],
+ "project_files": {},
+ "group": "ts6-r3-highlightvsreferences-gained-c-e8db7c",
+ "reduced": true
+}

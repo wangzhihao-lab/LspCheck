@@ -1,0 +1,504 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "c9e0c1f8efbe-v00",
+ "run_id": "c9e0c1f8efbe",
+ "oracle": "r5_transforms",
+ "server": {
+  "kind": "gopls",
+  "version": "v0.23.0"
+ },
+ "project": {
+  "name": "XTLS/Xray-core@d562d8947d31",
+  "source": "corpus",
+  "ref": "temp/corpus/XTLS__Xray-core@d562d8947d31",
+  "commit": "d562d8947d3175db86b4fa849742433a9876cb63",
+  "language": "go"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 6,
+  "targets": [
+   {
+    "path": "common/protocol/account.go",
+    "positions": [
+     [
+      0,
+      12
+     ],
+     [
+      5,
+      8
+     ],
+     [
+      6,
+      4
+     ],
+     [
+      6,
+      11
+     ],
+     [
+      6,
+      19
+     ],
+     [
+      7,
+      4
+     ],
+     [
+      7,
+      13
+     ],
+     [
+      7,
+      20
+     ],
+     [
+      11,
+      9
+     ],
+     [
+      12,
+      5
+     ],
+     [
+      12,
+      17
+     ],
+     [
+      12,
+      25
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      16
+     ],
+     [
+      5,
+      12
+     ],
+     [
+      6,
+      7
+     ],
+     [
+      6,
+      15
+     ],
+     [
+      6,
+      21
+     ],
+     [
+      7,
+      8
+     ],
+     [
+      7,
+      16
+     ],
+     [
+      7,
+      24
+     ],
+     [
+      11,
+      14
+     ],
+     [
+      12,
+      10
+     ],
+     [
+      12,
+      21
+     ],
+     [
+      12,
+      28
+     ]
+    ],
+    "names": [
+     "protocol",
+     "Account",
+     "Equals",
+     "Account",
+     "bool",
+     "ToProto",
+     "proto",
+     "Message",
+     "AsAccount",
+     "AsAccount",
+     "Account",
+     "error"
+    ]
+   },
+   {
+    "path": "main/commands/all/api/source_ip_block.go",
+    "positions": [
+     [
+      61,
+      7
+     ],
+     [
+      79,
+      15
+     ],
+     [
+      83,
+      5
+     ],
+     [
+      101,
+      38
+     ],
+     [
+      113,
+      24
+     ],
+     [
+      114,
+      6
+     ],
+     [
+      119,
+      15
+     ],
+     [
+      122,
+      4
+     ],
+     [
+      124,
+      11
+     ],
+     [
+      129,
+      29
+     ],
+     [
+      133,
+      35
+     ],
+     [
+      134,
+      12
+     ]
+    ],
+    "ends": [
+     [
+      61,
+      9
+     ],
+     [
+      79,
+      17
+     ],
+     [
+      83,
+      7
+     ],
+     [
+      101,
+      42
+     ],
+     [
+      113,
+      31
+     ],
+     [
+      114,
+      8
+     ],
+     [
+      119,
+      22
+     ],
+     [
+      122,
+      6
+     ],
+     [
+      124,
+      14
+     ],
+     [
+      129,
+      36
+     ],
+     [
+      133,
+      36
+     ],
+     [
+      134,
+      14
+     ]
+    ],
+    "names": [
+     "Flag",
+     "err",
+     "err",
+     "outbound",
+     "ToTypedMessage",
+     "tmsg",
+     "routerService",
+     "resp",
+     "Fatalf",
+     "AddRuleRequest",
+     "ra",
+     "nil"
+    ]
+   },
+   {
+    "path": "transport/pipe/impl.go",
+    "positions": [
+     [
+      17,
+      3
+     ],
+     [
+      22,
+      10
+     ],
+     [
+      49,
+      6
+     ],
+     [
+      64,
+      11
+     ],
+     [
+      71,
+      18
+     ],
+     [
+      100,
+      9
+     ],
+     [
+      100,
+      18
+     ],
+     [
+      102,
+      16
+     ],
+     [
+      140,
+      9
+     ],
+     [
+      179,
+      29
+     ],
+     [
+      179,
+      39
+     ],
+     [
+      201,
+      4
+     ]
+    ],
+    "ends": [
+     [
+      17,
+      5
+     ],
+     [
+      22,
+      15
+     ],
+     [
+      49,
+      8
+     ],
+     [
+      64,
+      12
+     ],
+     [
+      71,
+      25
+     ],
+     [
+      100,
+      10
+     ],
+     [
+      100,
+      20
+     ],
+     [
+      102,
+      18
+     ],
+     [
+      140,
+      11
+     ],
+     [
+      179,
+      32
+     ],
+     [
+      179,
+      42
+     ],
+     [
+      201,
+      5
+     ]
+    ],
+    "names": [
+     "open",
+     "pipeOption",
+     "data",
+     "io",
+     "ErrClosedPipe",
+     "p",
+     "Wait",
+     "err",
+     "nil",
+     "state",
+     "errord",
+     "p"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "completion",
+  "path": "main/commands/all/api/source_ip_block.go",
+  "line": 113,
+  "character": 31,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "transport/pipe/impl.go"
+  },
+  {
+   "kind": "change",
+   "path": "transport/pipe/impl.go",
+   "start": [
+    71,
+    12
+   ],
+   "end": [
+    71,
+    12
+   ],
+   "text": "/* 注释🙂 */ "
+  }
+ ],
+ "case": {
+  "mapped_key": [
+   "completion",
+   "main/commands/all/api/source_ip_block.go",
+   113,
+   31,
+   ""
+  ],
+  "transform": {
+   "back": {
+    "col": 0,
+    "eof": [],
+    "line": -1,
+    "n": 0,
+    "path": "transport/pipe/impl.go",
+    "w": 0
+   },
+   "edits": [
+    [
+     71,
+     12,
+     71,
+     12,
+     "/* 注释🙂 */ "
+    ]
+   ],
+   "kind": "T6",
+   "path": "transport/pipe/impl.go",
+   "shift": {
+    "col": 12,
+    "eof": [],
+    "line": 71,
+    "n": 0,
+    "path": "transport/pipe/impl.go",
+    "w": 11
+   }
+  }
+ },
+ "shape": "completion:missing",
+ "signature": "gopls|r5_transforms|completion:missing",
+ "expected": [
+  "File_common_serial_typed_message_proto.Options().ProtoReflect().New().Type().Descriptor().Messages",
+  "File_common_serial_typed_message_proto.Options().ProtoReflect().Type().Descriptor().Messages",
+  "File_common_serial_typed_message_proto.Options().ProtoReflect().Type().Descriptor().ParentFile().Messages",
+  "ToTypedMessage"
+ ],
+ "actual": [
+  "ToTypedMessage"
+ ],
+ "reproduced": "0/3",
+ "note": "T6 transport/pipe/impl.go: 1 edit(s), first [71, 12, 71, 12]; flake 0/3 [r1:SCr r2:SCr r3:SCr] in 69s",
+ "violation": {
+  "oracle": "r5_transforms",
+  "server": "gopls-v0.23.0",
+  "project": "XTLS/Xray-core@d562d8947d31",
+  "key": {
+   "method": "completion",
+   "path": "main/commands/all/api/source_ip_block.go",
+   "line": 113,
+   "character": 31,
+   "extra": ""
+  },
+  "expected": [
+   "File_common_serial_typed_message_proto.Options().ProtoReflect().New().Type().Descriptor().Messages",
+   "File_common_serial_typed_message_proto.Options().ProtoReflect().Type().Descriptor().Messages",
+   "File_common_serial_typed_message_proto.Options().ProtoReflect().Type().Descriptor().ParentFile().Messages",
+   "ToTypedMessage"
+  ],
+  "actual": [
+   "ToTypedMessage"
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "transport/pipe/impl.go"
+   },
+   {
+    "kind": "change",
+    "path": "transport/pipe/impl.go",
+    "start": [
+     71,
+     12
+    ],
+    "end": [
+     71,
+     12
+    ],
+    "text": "/* 注释🙂 */ "
+   }
+  ],
+  "detail": "{\"case\": {\"mapped_key\": [\"completion\", \"main/commands/all/api/source_ip_block.go\", 113, 31, \"\"], \"transform\": {\"back\": {\"col\": 0, \"eof\": [], \"line\": -1, \"n\": 0, \"path\": \"transport/pipe/impl.go\", \"w\": 0}, \"edits\": [[71, 12, 71, 12, \"/* \\u6ce8\\u91ca\\ud83d\\ude42 */ \"]], \"kind\": \"T6\", \"path\": \"transport/pipe/impl.go\", \"shift\": {\"col\": 12, \"eof\": [], \"line\": 71, \"n\": 0, \"path\": \"transport/pipe/impl.go\", \"w\": 11}}}, \"note\": \"T6 transport/pipe/impl.go: 1 edit(s), first [71, 12, 71, 12]; flake 0/3 [r1:SCr r2:SCr r3:SCr] in 69s\", \"shape\": \"completion:missing\"}",
+  "reproduced": "0/3",
+  "reduced_ops": [],
+  "signature": "gopls|r5_transforms|completion:missing",
+  "run_id": "c9e0c1f8efbe"
+ },
+ "replay_logs": [],
+ "project_files": {},
+ "incomplete": false
+}

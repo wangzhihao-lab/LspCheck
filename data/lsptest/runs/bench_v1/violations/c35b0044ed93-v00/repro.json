@@ -1,0 +1,322 @@
+{
+ "format": 1,
+ "campaign": "bench_v1",
+ "vid": "c35b0044ed93-v00",
+ "run_id": "c35b0044ed93",
+ "oracle": "r2_handles",
+ "server": {
+  "kind": "jdtls",
+  "version": "1.36.0"
+ },
+ "project": {
+  "name": "jdtls-3155",
+  "source": "dir",
+  "ref": "data/lsp_bench/cases/jdtls-3155/project",
+  "commit": "",
+  "language": "java"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 600.0,
+  "request_timeout_s": 60.0,
+  "extra_settings": {
+   "java": {
+    "autobuild": {
+     "enabled": false
+    }
+   }
+  },
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "src/main/java/java/Foo.java",
+    "positions": [
+     [
+      0,
+      10
+     ],
+     [
+      2,
+      8
+     ],
+     [
+      2,
+      14
+     ],
+     [
+      2,
+      21
+     ],
+     [
+      2,
+      28
+     ],
+     [
+      2,
+      37
+     ],
+     [
+      7,
+      14
+     ],
+     [
+      9,
+      22
+     ],
+     [
+      9,
+      28
+     ],
+     [
+      9,
+      36
+     ],
+     [
+      10,
+      5
+     ],
+     [
+      10,
+      10
+     ],
+     [
+      10,
+      15
+     ],
+     [
+      10,
+      25
+     ],
+     [
+      10,
+      37
+     ],
+     [
+      10,
+      65
+     ],
+     [
+      13,
+      20
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      12
+     ],
+     [
+      2,
+      10
+     ],
+     [
+      2,
+      17
+     ],
+     [
+      2,
+      25
+     ],
+     [
+      2,
+      31
+     ],
+     [
+      2,
+      43
+     ],
+     [
+      7,
+      16
+     ],
+     [
+      9,
+      24
+     ],
+     [
+      9,
+      31
+     ],
+     [
+      9,
+      38
+     ],
+     [
+      10,
+      8
+     ],
+     [
+      10,
+      12
+     ],
+     [
+      10,
+      18
+     ],
+     [
+      10,
+      31
+     ],
+     [
+      10,
+      42
+     ],
+     [
+      10,
+      67
+     ],
+     [
+      13,
+      27
+     ]
+    ],
+    "names": [
+     "java",
+     "org",
+     "apache",
+     "commons",
+     "lang3",
+     "StringUtils",
+     "Foo",
+     "main",
+     "String",
+     "args",
+     "System",
+     "out",
+     "print",
+     "StringUtils",
+     "capitalize",
+     "Foo",
+     "linkedFromFoo2"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "completionResolve",
+  "path": "src/main/java/java/Foo.java",
+  "line": 9,
+  "character": 38,
+  "extra": "end|above1|argsStrings : String[]|6|null|999999225|0"
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "src/main/java/java/Foo.java"
+  },
+  {
+   "kind": "change",
+   "path": "src/main/java/java/Foo.java",
+   "start": [
+    9,
+    0
+   ],
+   "end": [
+    9,
+    0
+   ],
+   "text": "\n"
+  }
+ ],
+ "case": {
+  "extra": "end",
+  "path": "src/main/java/java/Foo.java",
+  "shift": {
+   "col": 0,
+   "line": 9,
+   "text": "\n",
+   "variant": "above"
+  },
+  "sub": "completion",
+  "where": [
+   9,
+   38
+  ]
+ },
+ "shape": "completionResolve:changed",
+ "signature": "jdtls|r2_handles|completionResolve:changed",
+ "expected": [
+  [
+   "textEdit",
+   10,
+   34,
+   10,
+   38,
+   "argsStrings"
+  ]
+ ],
+ "actual": [
+  [
+   "textEdit",
+   10,
+   33,
+   10,
+   37,
+   "argsStrings"
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "flake 3/3 [r1:SCR r2:SCR r3:SCR] in 50s",
+ "violation": {
+  "oracle": "r2_handles",
+  "server": "jdtls-1.36.0",
+  "project": "jdtls-3155",
+  "key": {
+   "method": "completionResolve",
+   "path": "src/main/java/java/Foo.java",
+   "line": 9,
+   "character": 38,
+   "extra": "end|above1|argsStrings : String[]|6|null|999999225|0"
+  },
+  "expected": [
+   [
+    "textEdit",
+    10,
+    34,
+    10,
+    38,
+    "argsStrings"
+   ]
+  ],
+  "actual": [
+   [
+    "textEdit",
+    10,
+    33,
+    10,
+    37,
+    "argsStrings"
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "src/main/java/java/Foo.java"
+   },
+   {
+    "kind": "change",
+    "path": "src/main/java/java/Foo.java",
+    "start": [
+     9,
+     0
+    ],
+    "end": [
+     9,
+     0
+    ],
+    "text": "\n"
+   }
+  ],
+  "detail": "{\"case\": {\"extra\": \"end\", \"path\": \"src/main/java/java/Foo.java\", \"shift\": {\"col\": 0, \"line\": 9, \"text\": \"\\n\", \"variant\": \"above\"}, \"sub\": \"completion\", \"where\": [9, 38]}, \"note\": \"flake 3/3 [r1:SCR r2:SCR r3:SCR] in 50s\", \"shape\": \"completionResolve:changed\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "jdtls|r2_handles|completionResolve:changed",
+  "run_id": "c35b0044ed93"
+ },
+ "replay_logs": [
+  "logs/jdtls-1.36.0-c35b0044ed93-r2-replay-20260924-150824-27e963.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

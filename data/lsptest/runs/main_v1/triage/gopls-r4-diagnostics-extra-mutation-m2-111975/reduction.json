@@ -1,0 +1,42 @@
+{
+ "vid": "9bb8ccd49c7b-v01",
+ "ops_before": 3,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 2,
+ "cache_hits": 0,
+ "reduce_seconds": 4.436,
+ "budget_exhausted": false,
+ "probe_log": [
+  [
+   2,
+   false
+  ],
+  [
+   2,
+   false
+  ]
+ ],
+ "logs": [
+  "gopls-v0.23.0-tr111975-r4-replay-baseline-20260925-155725-137c7e.jsonl.gz",
+  "gopls-v0.23.0-tr111975-r4-replay-case-20260925-155716-63b0a2.jsonl.gz",
+  "gopls-v0.23.0-tr111975-r4-replay-control-20260925-155728-0b8682.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [],
+  "actual": [
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "",
+    "syntax",
+    "missing parameter name"
+   ]
+  ]
+ },
+ "ops_after": 3,
+ "total_seconds": 68.1
+}

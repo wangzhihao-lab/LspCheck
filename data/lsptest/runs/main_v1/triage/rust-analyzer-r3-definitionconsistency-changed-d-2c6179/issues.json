@@ -1,0 +1,92 @@
+{
+ "queries": [
+  "\"go to definition\" in:title repo:rust-lang/rust-analyzer is:issue",
+  "definition wrong repo:rust-lang/rust-analyzer is:issue",
+  "definition \"go to definition\" repo:rust-lang/rust-analyzer is:issue",
+  "definition inconsistent repo:rust-lang/rust-analyzer is:issue"
+ ],
+ "matches": [
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 8373,
+   "title": "Monomorphised go to definition",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/8373",
+   "state": "open",
+   "created": "2021-04-06",
+   "comments": 1,
+   "query": "\"go to definition\" in:title repo:rust-lang/rust-analyzer is:issue"
+  },
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 17122,
+   "title": "Go to Definition on Private Symbols",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/17122",
+   "state": "open",
+   "created": "2024-04-22",
+   "comments": 2,
+   "query": "\"go to definition\" in:title repo:rust-lang/rust-analyzer is:issue"
+  },
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 22482,
+   "title": "Panics with \"invalid offset\" errors ( code: -32603) on \"Go to definition\" calls",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/22482",
+   "state": "open",
+   "created": "2026-05-28",
+   "comments": 4,
+   "query": "\"go to definition\" in:title repo:rust-lang/rust-analyzer is:issue"
+  },
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 14428,
+   "title": "Go to definition on std types locks rustc",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/14428",
+   "state": "open",
+   "created": "2023-03-28",
+   "comments": 2,
+   "query": "\"go to definition\" in:title repo:rust-lang/rust-analyzer is:issue"
+  },
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 10700,
+   "title": "[Feature Request] Go to Definition from the comments",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/10700",
+   "state": "open",
+   "created": "2021-11-05",
+   "comments": 1,
+   "query": "\"go to definition\" in:title repo:rust-lang/rust-analyzer is:issue"
+  },
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 15757,
+   "title": "rust-analyzer finds wrong macro definition",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/15757",
+   "state": "open",
+   "created": "2023-10-14",
+   "comments": 1,
+   "query": "definition wrong repo:rust-lang/rust-analyzer is:issue"
+  },
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 18248,
+   "title": "no definition found for method, but definition location can be identified when params is wrong",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/18248",
+   "state": "open",
+   "created": "2024-10-06",
+   "comments": 6,
+   "query": "definition wrong repo:rust-lang/rust-analyzer is:issue"
+  },
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 11834,
+   "title": "Failed to \"Run Test\": run Cargo from wrong folder",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/11834",
+   "state": "open",
+   "created": "2022-03-28",
+   "comments": 0,
+   "query": "definition wrong repo:rust-lang/rust-analyzer is:issue"
+  }
+ ],
+ "notes": [],
+ "authenticated": true
+}

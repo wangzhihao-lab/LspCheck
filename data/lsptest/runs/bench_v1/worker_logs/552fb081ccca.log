@@ -1,0 +1,3 @@
+2026-09-25 14:22:56,152 INFO campaign_run run 552fb081ccca: r3_routes on gopls v0.6.7, gopls-38732 seed 2 settled, targets ['bar.go', 'foo.go']
+2026-09-25 14:23:06,395 INFO campaign_run run 552fb081ccca: 0 candidate(s) in 10s; confirming
+2026-09-25 14:23:06,396 INFO campaign_run run 552fb081ccca finished: ok, 0 confirmed of 0 candidate(s), 10s

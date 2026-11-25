@@ -1,0 +1,6 @@
+2026-11-18 11:08:22,384 INFO campaign_run run b6a3bd30c8df: r4_edits on gopls v0.23.0, beego/beego@939cfde380bb seed 2 settled, targets ['client/cache/bloom_filter_cache.go', 'client/orm/ddl.go', 'core/validation/validators.go']
+2026-11-18 11:09:32,494 INFO campaign_run run b6a3bd30c8df: 1 candidate(s) in 70s; confirming
+2026-11-18 11:09:47,265 INFO flake replay 1/3 of gopls|r4_edits|diagnostics:extra:IncompatibleAssign: settled=True control_stable=True reproduced=True (14.8s)
+2026-11-18 11:10:02,650 INFO flake replay 2/3 of gopls|r4_edits|diagnostics:extra:IncompatibleAssign: settled=True control_stable=True reproduced=True (15.4s)
+2026-11-18 11:10:17,673 INFO flake replay 3/3 of gopls|r4_edits|diagnostics:extra:IncompatibleAssign: settled=True control_stable=True reproduced=True (15.0s)
+2026-11-18 11:10:17,676 INFO campaign_run run b6a3bd30c8df finished: ok, 1 confirmed of 1 candidate(s), 115s

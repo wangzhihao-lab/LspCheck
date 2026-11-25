@@ -1,0 +1,793 @@
+{
+ "format": 1,
+ "campaign": "bench_v1",
+ "vid": "20c3b44ee382-v00",
+ "run_id": "20c3b44ee382",
+ "oracle": "r1_history",
+ "server": {
+  "kind": "rust-analyzer",
+  "version": "2025-10-27"
+ },
+ "project": {
+  "name": "rust-analyzer-17525",
+  "source": "dir",
+  "ref": "data/lsp_bench/cases/rust-analyzer-17525/project",
+  "commit": "",
+  "language": "rust"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "race0",
+  "settle_timeout_s": 240.0,
+  "request_timeout_s": 60.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "src/lib.rs",
+    "positions": [
+     [
+      0,
+      9
+     ],
+     [
+      0,
+      13
+     ],
+     [
+      0,
+      16
+     ],
+     [
+      1,
+      9
+     ],
+     [
+      2,
+      6
+     ],
+     [
+      2,
+      12
+     ],
+     [
+      5,
+      5
+     ],
+     [
+      5,
+      11
+     ],
+     [
+      5,
+      16
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      12
+     ],
+     [
+      0,
+      14
+     ],
+     [
+      0,
+      17
+     ],
+     [
+      1,
+      12
+     ],
+     [
+      2,
+      9
+     ],
+     [
+      2,
+      14
+     ],
+     [
+      5,
+      8
+     ],
+     [
+      5,
+      14
+     ],
+     [
+      5,
+      18
+     ]
+    ],
+    "names": [
+     "Outer",
+     "T",
+     "T",
+     "Inner",
+     "field",
+     "u32",
+     "stuff",
+     "Outer",
+     "Inn"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "diagnostics",
+  "path": "src/lib.rs",
+  "line": -1,
+  "character": -1,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "src/lib.rs"
+  },
+  {
+   "kind": "fs_rename",
+   "path": "src/lib.rs",
+   "new_path": "src/lib_rt.rs"
+  },
+  {
+   "kind": "fs_rename",
+   "path": "src/lib_rt.rs",
+   "new_path": "src/lib.rs"
+  },
+  {
+   "kind": "change",
+   "path": "src/lib.rs",
+   "start": [
+    0,
+    16
+   ],
+   "end": [
+    0,
+    19
+   ]
+  },
+  {
+   "kind": "close",
+   "path": "src/lib.rs"
+  },
+  {
+   "kind": "open",
+   "path": "src/lib.rs"
+  },
+  {
+   "kind": "change",
+   "path": "src/lib.rs",
+   "start": [
+    5,
+    9
+   ],
+   "end": [
+    5,
+    14
+   ],
+   "text": "zz"
+  },
+  {
+   "kind": "change",
+   "path": "src/lib.rs",
+   "start": [
+    5,
+    9
+   ],
+   "end": [
+    5,
+    11
+   ],
+   "text": "Outer"
+  },
+  {
+   "kind": "request",
+   "path": "src/lib.rs",
+   "start": [
+    0,
+    9
+   ],
+   "text": "typeDefinition"
+  },
+  {
+   "kind": "request",
+   "path": "src/lib.rs",
+   "start": [
+    5,
+    5
+   ],
+   "text": "references"
+  },
+  {
+   "kind": "request",
+   "path": "src/lib.rs",
+   "start": [
+    2,
+    14
+   ],
+   "text": "definition"
+  },
+  {
+   "kind": "request",
+   "path": "src/lib.rs",
+   "start": [
+    2,
+    12
+   ],
+   "text": "signatureHelp"
+  },
+  {
+   "kind": "request",
+   "path": "src/lib.rs",
+   "start": [
+    5,
+    18
+   ],
+   "text": "references"
+  },
+  {
+   "kind": "request",
+   "path": "src/lib.rs",
+   "start": [
+    5,
+    8
+   ],
+   "text": "signatureHelp"
+  },
+  {
+   "kind": "request",
+   "path": "src/lib.rs",
+   "start": [
+    0,
+    13
+   ],
+   "text": "hover"
+  },
+  {
+   "kind": "request",
+   "path": "src/lib.rs",
+   "start": [
+    1,
+    9
+   ],
+   "text": "typeDefinition"
+  },
+  {
+   "kind": "request",
+   "path": "src/lib.rs",
+   "start": [
+    5,
+    14
+   ],
+   "text": "definition"
+  },
+  {
+   "kind": "change",
+   "path": "src/lib.rs",
+   "start": [
+    5,
+    0
+   ],
+   "end": [
+    6,
+    0
+   ]
+  },
+  {
+   "kind": "save",
+   "path": "src/lib.rs"
+  },
+  {
+   "kind": "change",
+   "path": "src/lib.rs",
+   "start": [
+    5,
+    0
+   ],
+   "end": [
+    5,
+    0
+   ],
+   "text": "fn stuff(Outer"
+  },
+  {
+   "kind": "change",
+   "path": "src/lib.rs",
+   "start": [
+    5,
+    14
+   ],
+   "end": [
+    5,
+    14
+   ],
+   "text": "(Inn)) {\n"
+  },
+  {
+   "kind": "save",
+   "path": "src/lib.rs"
+  },
+  {
+   "kind": "set_config",
+   "settings": {
+    "rust-analyzer": {
+     "procMacro": {
+      "enable": false
+     }
+    }
+   }
+  },
+  {
+   "kind": "set_config",
+   "settings": {
+    "rust-analyzer": {
+     "procMacro": {
+      "enable": true
+     }
+    }
+   }
+  },
+  {
+   "kind": "change",
+   "path": "src/lib.rs",
+   "start": [
+    0,
+    7
+   ],
+   "end": [
+    0,
+    12
+   ],
+   "text": "zz"
+  },
+  {
+   "kind": "change",
+   "path": "src/lib.rs",
+   "start": [
+    0,
+    7
+   ],
+   "end": [
+    0,
+    9
+   ],
+   "text": "Outer"
+  },
+  {
+   "kind": "set_config",
+   "settings": {
+    "rust-analyzer": {
+     "cargo": {
+      "buildScripts": {
+       "enable": false
+      }
+     }
+    }
+   }
+  },
+  {
+   "kind": "change",
+   "path": "src/lib.rs",
+   "start": [
+    5,
+    16
+   ],
+   "end": [
+    5,
+    20
+   ]
+  },
+  {
+   "kind": "close",
+   "path": "src/lib.rs"
+  },
+  {
+   "kind": "open",
+   "path": "src/lib.rs"
+  },
+  {
+   "kind": "set_config",
+   "settings": {
+    "rust-analyzer": {
+     "cargo": {
+      "buildScripts": {
+       "enable": true
+      }
+     }
+    }
+   }
+  },
+  {
+   "kind": "fs_rename",
+   "path": "src/lib.rs",
+   "new_path": "src/lib_rt.rs"
+  },
+  {
+   "kind": "fs_rename",
+   "path": "src/lib_rt.rs",
+   "new_path": "src/lib.rs"
+  }
+ ],
+ "case": {
+  "chain_step": 8,
+  "families": [
+   "H5",
+   "H3",
+   "H8",
+   "H2",
+   "H4",
+   "H1",
+   "H7",
+   "H5"
+  ],
+  "family": "H5",
+  "history_index": 7,
+  "history_seed": 1010,
+  "mode": "chain",
+  "note": "rename src/lib.rs -> src/lib_rt.rs -> back",
+  "seed": 1,
+  "timing": "race0"
+ },
+ "shape": "diagnostics:extra:non_snake_case,syntax-error",
+ "signature": "rust-analyzer|r1_history|diagnostics:extra:non_snake_case,syntax-error",
+ "expected": [],
+ "actual": [
+  [
+   5,
+   15,
+   5,
+   18,
+   2,
+   "non_snake_case",
+   "rust-analyzer",
+   "Variable `Inn` should have snake_case name, e.g. `inn`"
+  ],
+  [
+   5,
+   19,
+   5,
+   19,
+   1,
+   "syntax-error",
+   "rust-analyzer",
+   "Syntax Error: missing type for function parameter"
+  ]
+ ],
+ "reproduced": "0/3",
+ "note": "H5: rename src/lib.rs -> src/lib_rt.rs -> back; flake 0/3 [r1:SCr r2:SCr r3:SCr] in 42s",
+ "violation": {
+  "oracle": "r1_history",
+  "server": "rust-analyzer-2025-10-27",
+  "project": "rust-analyzer-17525",
+  "key": {
+   "method": "diagnostics",
+   "path": "src/lib.rs",
+   "line": -1,
+   "character": -1,
+   "extra": ""
+  },
+  "expected": [],
+  "actual": [
+   [
+    5,
+    15,
+    5,
+    18,
+    2,
+    "non_snake_case",
+    "rust-analyzer",
+    "Variable `Inn` should have snake_case name, e.g. `inn`"
+   ],
+   [
+    5,
+    19,
+    5,
+    19,
+    1,
+    "syntax-error",
+    "rust-analyzer",
+    "Syntax Error: missing type for function parameter"
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "src/lib.rs"
+   },
+   {
+    "kind": "fs_rename",
+    "path": "src/lib.rs",
+    "new_path": "src/lib_rt.rs"
+   },
+   {
+    "kind": "fs_rename",
+    "path": "src/lib_rt.rs",
+    "new_path": "src/lib.rs"
+   },
+   {
+    "kind": "change",
+    "path": "src/lib.rs",
+    "start": [
+     0,
+     16
+    ],
+    "end": [
+     0,
+     19
+    ]
+   },
+   {
+    "kind": "close",
+    "path": "src/lib.rs"
+   },
+   {
+    "kind": "open",
+    "path": "src/lib.rs"
+   },
+   {
+    "kind": "change",
+    "path": "src/lib.rs",
+    "start": [
+     5,
+     9
+    ],
+    "end": [
+     5,
+     14
+    ],
+    "text": "zz"
+   },
+   {
+    "kind": "change",
+    "path": "src/lib.rs",
+    "start": [
+     5,
+     9
+    ],
+    "end": [
+     5,
+     11
+    ],
+    "text": "Outer"
+   },
+   {
+    "kind": "request",
+    "path": "src/lib.rs",
+    "start": [
+     0,
+     9
+    ],
+    "text": "typeDefinition"
+   },
+   {
+    "kind": "request",
+    "path": "src/lib.rs",
+    "start": [
+     5,
+     5
+    ],
+    "text": "references"
+   },
+   {
+    "kind": "request",
+    "path": "src/lib.rs",
+    "start": [
+     2,
+     14
+    ],
+    "text": "definition"
+   },
+   {
+    "kind": "request",
+    "path": "src/lib.rs",
+    "start": [
+     2,
+     12
+    ],
+    "text": "signatureHelp"
+   },
+   {
+    "kind": "request",
+    "path": "src/lib.rs",
+    "start": [
+     5,
+     18
+    ],
+    "text": "references"
+   },
+   {
+    "kind": "request",
+    "path": "src/lib.rs",
+    "start": [
+     5,
+     8
+    ],
+    "text": "signatureHelp"
+   },
+   {
+    "kind": "request",
+    "path": "src/lib.rs",
+    "start": [
+     0,
+     13
+    ],
+    "text": "hover"
+   },
+   {
+    "kind": "request",
+    "path": "src/lib.rs",
+    "start": [
+     1,
+     9
+    ],
+    "text": "typeDefinition"
+   },
+   {
+    "kind": "request",
+    "path": "src/lib.rs",
+    "start": [
+     5,
+     14
+    ],
+    "text": "definition"
+   },
+   {
+    "kind": "change",
+    "path": "src/lib.rs",
+    "start": [
+     5,
+     0
+    ],
+    "end": [
+     6,
+     0
+    ]
+   },
+   {
+    "kind": "save",
+    "path": "src/lib.rs"
+   },
+   {
+    "kind": "change",
+    "path": "src/lib.rs",
+    "start": [
+     5,
+     0
+    ],
+    "end": [
+     5,
+     0
+    ],
+    "text": "fn stuff(Outer"
+   },
+   {
+    "kind": "change",
+    "path": "src/lib.rs",
+    "start": [
+     5,
+     14
+    ],
+    "end": [
+     5,
+     14
+    ],
+    "text": "(Inn)) {\n"
+   },
+   {
+    "kind": "save",
+    "path": "src/lib.rs"
+   },
+   {
+    "kind": "set_config",
+    "settings": {
+     "rust-analyzer": {
+      "procMacro": {
+       "enable": false
+      }
+     }
+    }
+   },
+   {
+    "kind": "set_config",
+    "settings": {
+     "rust-analyzer": {
+      "procMacro": {
+       "enable": true
+      }
+     }
+    }
+   },
+   {
+    "kind": "change",
+    "path": "src/lib.rs",
+    "start": [
+     0,
+     7
+    ],
+    "end": [
+     0,
+     12
+    ],
+    "text": "zz"
+   },
+   {
+    "kind": "change",
+    "path": "src/lib.rs",
+    "start": [
+     0,
+     7
+    ],
+    "end": [
+     0,
+     9
+    ],
+    "text": "Outer"
+   },
+   {
+    "kind": "set_config",
+    "settings": {
+     "rust-analyzer": {
+      "cargo": {
+       "buildScripts": {
+        "enable": false
+       }
+      }
+     }
+    }
+   },
+   {
+    "kind": "change",
+    "path": "src/lib.rs",
+    "start": [
+     5,
+     16
+    ],
+    "end": [
+     5,
+     20
+    ]
+   },
+   {
+    "kind": "close",
+    "path": "src/lib.rs"
+   },
+   {
+    "kind": "open",
+    "path": "src/lib.rs"
+   },
+   {
+    "kind": "set_config",
+    "settings": {
+     "rust-analyzer": {
+      "cargo": {
+       "buildScripts": {
+        "enable": true
+       }
+      }
+     }
+    }
+   },
+   {
+    "kind": "fs_rename",
+    "path": "src/lib.rs",
+    "new_path": "src/lib_rt.rs"
+   },
+   {
+    "kind": "fs_rename",
+    "path": "src/lib_rt.rs",
+    "new_path": "src/lib.rs"
+   }
+  ],
+  "detail": "{\"case\": {\"chain_step\": 8, \"families\": [\"H5\", \"H3\", \"H8\", \"H2\", \"H4\", \"H1\", \"H7\", \"H5\"], \"family\": \"H5\", \"history_index\": 7, \"history_seed\": 1010, \"mode\": \"chain\", \"note\": \"rename src/lib.rs -> src/lib_rt.rs -> back\", \"seed\": 1, \"timing\": \"race0\"}, \"note\": \"H5: rename src/lib.rs -> src/lib_rt.rs -> back; flake 0/3 [r1:SCr r2:SCr r3:SCr] in 42s\", \"shape\": \"diagnostics:extra:non_snake_case,syntax-error\"}",
+  "reproduced": "0/3",
+  "reduced_ops": [],
+  "signature": "rust-analyzer|r1_history|diagnostics:extra:non_snake_case,syntax-error",
+  "run_id": "20c3b44ee382"
+ },
+ "replay_logs": [],
+ "project_files": {},
+ "incomplete": false
+}

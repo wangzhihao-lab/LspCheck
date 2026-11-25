@@ -1,0 +1,52 @@
+{
+ "vid": "295e3654bbae-v00",
+ "ops_before": 3,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 2,
+ "cache_hits": 0,
+ "reduce_seconds": 4.12,
+ "budget_exhausted": false,
+ "probe_log": [
+  [
+   2,
+   false
+  ],
+  [
+   2,
+   false
+  ]
+ ],
+ "logs": [
+  "ts6-6.0.3-trda2133-r4-replay-baseline-20260925-191514-8b6115.jsonl.gz",
+  "ts6-6.0.3-trda2133-r4-replay-case-20260925-191504-3605f3.jsonl.gz",
+  "ts6-6.0.3-trda2133-r4-replay-control-20260925-191519-30b8b7.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [],
+  "actual": [
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2552",
+    "typescript",
+    "Cannot find name 'normalizeRequirementName'. Did you mean 'foldRequirementName'?"
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2552",
+    "typescript",
+    "Cannot find name 'normalizeRequirementName'. Did you mean 'foldRequirementName'?"
+   ]
+  ]
+ },
+ "ops_after": 3,
+ "total_seconds": 86.0
+}

@@ -1,0 +1,651 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "9f1de78ccead-v00",
+ "run_id": "9f1de78ccead",
+ "oracle": "r4_edits",
+ "server": {
+  "kind": "ts6",
+  "version": "6.0.3"
+ },
+ "project": {
+  "name": "ChatGPTNextWeb/NextChat@defdcdb55d85",
+  "source": "corpus",
+  "ref": "temp/corpus/ChatGPTNextWeb__NextChat@defdcdb55d85",
+  "commit": "defdcdb55d850cd12c4c657eb83729fd66e215c0",
+  "language": "typescript"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "app/command.ts",
+    "positions": [
+     [
+      2,
+      10
+     ],
+     [
+      5,
+      14
+     ],
+     [
+      9,
+      12
+     ],
+     [
+      20,
+      31
+     ],
+     [
+      36,
+      4
+     ],
+     [
+      37,
+      4
+     ],
+     [
+      37,
+      12
+     ],
+     [
+      51,
+      17
+     ],
+     [
+      56,
+      14
+     ],
+     [
+      57,
+      30
+     ],
+     [
+      69,
+      39
+     ],
+     [
+      73,
+      9
+     ]
+    ],
+    "ends": [
+     [
+      2,
+      13
+     ],
+     [
+      5,
+      18
+     ],
+     [
+      9,
+      16
+     ],
+     [
+      20,
+      37
+     ],
+     [
+      36,
+      6
+     ],
+     [
+      37,
+      6
+     ],
+     [
+      37,
+      16
+     ],
+     [
+      51,
+      22
+     ],
+     [
+      56,
+      17
+     ],
+     [
+      57,
+      35
+     ],
+     [
+      69,
+      43
+     ],
+     [
+      73,
+      12
+     ]
+    ],
+    "names": [
+     "Locale",
+     "Commands",
+     "Command",
+     "commandName",
+     "newm",
+     "next",
+     "Command",
+     "userInput",
+     "search",
+     "userInput",
+     "command",
+     "invoke"
+    ]
+   },
+   {
+    "path": "app/components/mask.tsx",
+    "positions": [
+     [
+      106,
+      11
+     ],
+     [
+      193,
+      16
+     ],
+     [
+      221,
+      50
+     ],
+     [
+      307,
+      21
+     ],
+     [
+      343,
+      67
+     ],
+     [
+      383,
+      44
+     ],
+     [
+      410,
+      31
+     ],
+     [
+      482,
+      35
+     ],
+     [
+      541,
+      15
+     ],
+     [
+      607,
+      24
+     ],
+     [
+      661,
+      19
+     ],
+     [
+      662,
+      29
+     ]
+    ],
+    "ends": [
+     [
+      106,
+      15
+     ],
+     [
+      193,
+      18
+     ],
+     [
+      221,
+      54
+     ],
+     [
+      307,
+      22
+     ],
+     [
+      343,
+      69
+     ],
+     [
+      383,
+      52
+     ],
+     [
+      410,
+      37
+     ],
+     [
+      482,
+      38
+     ],
+     [
+      541,
+      18
+     ],
+     [
+      607,
+      28
+     ],
+     [
+      661,
+      23
+     ],
+     [
+      662,
+      31
+     ]
+    ],
+    "names": [
+     "context",
+     "type",
+     "SubTitle",
+     "e",
+     "text",
+     "dragHandleProps",
+     "placeholder",
+     "parse",
+     "input",
+     "builtin",
+     "onClick",
+     "Path"
+    ]
+   },
+   {
+    "path": "app/utils/store.ts",
+    "positions": [
+     [
+      4,
+      30
+     ],
+     [
+      8,
+      3
+     ],
+     [
+      9,
+      18
+     ],
+     [
+      24,
+      18
+     ],
+     [
+      33,
+      7
+     ],
+     [
+      36,
+      35
+     ],
+     [
+      38,
+      9
+     ],
+     [
+      40,
+      19
+     ],
+     [
+      55,
+      17
+     ],
+     [
+      56,
+      27
+     ],
+     [
+      65,
+      34
+     ],
+     [
+      68,
+      19
+     ]
+    ],
+    "ends": [
+     [
+      4,
+      32
+     ],
+     [
+      8,
+      4
+     ],
+     [
+      9,
+      19
+     ],
+     [
+      24,
+      22
+     ],
+     [
+      33,
+      8
+     ],
+     [
+      36,
+      44
+     ],
+     [
+      38,
+      16
+     ],
+     [
+      40,
+      22
+     ],
+     [
+      55,
+      22
+     ],
+     [
+      56,
+      34
+     ],
+     [
+      65,
+      36
+     ],
+     [
+      68,
+      26
+     ]
+    ],
+    "names": [
+     "from",
+     "_s",
+     "_U",
+     "Partial",
+     "M",
+     "createJSONStorage",
+     "persistOptions",
+     "state",
+     "markUpdate",
+     "lastUpdateTime",
+     "Date",
+     "setHasHydrated"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "diagnostics",
+  "path": "app/command.ts",
+  "line": 13,
+  "character": 42,
+  "extra": "M1:quickfix-errors:Add import from \"next/navigation\""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "app/command.ts"
+  },
+  {
+   "kind": "change",
+   "path": "app/command.ts",
+   "start": [
+    1,
+    0
+   ],
+   "end": [
+    2,
+    0
+   ]
+  },
+  {
+   "kind": "change",
+   "path": "app/command.ts",
+   "start": [
+    2,
+    0
+   ],
+   "end": [
+    2,
+    0
+   ],
+   "text": "import { useSearchParams } from \"next/navigation\";\n"
+  }
+ ],
+ "case": {
+  "action_kind": "quickfix",
+  "base_errors": 0,
+  "check": "errors",
+  "diag": {
+   "code": 2552,
+   "message": "Cannot find name 'useSearchParams'. Did you mean 'setSearchParams'?",
+   "range": {
+    "end": {
+     "character": 57,
+     "line": 13
+    },
+    "start": {
+     "character": 42,
+     "line": 13
+    }
+   },
+   "severity": 1
+  },
+  "fix_introduced_errors": [
+   {
+    "code": 2352,
+    "message": "Conversion of type 'number' to type 'keyof Commands' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.",
+    "path": "app/command.ts",
+    "range": {
+     "end": {
+      "character": 48,
+      "line": 19
+     },
+     "start": {
+      "character": 26,
+      "line": 19
+     }
+    },
+    "severity": 1
+   },
+   {
+    "code": 2339,
+    "message": "Property 'delete' does not exist on type '[string, string]'.",
+    "path": "app/command.ts",
+    "range": {
+     "end": {
+      "character": 27,
+      "line": 22
+     },
+     "start": {
+      "character": 21,
+      "line": 22
+     }
+    },
+    "severity": 1
+   },
+   {
+    "code": 2349,
+    "message": "This expression is not callable.\n  Type '[string, string]' has no call signatures.",
+    "path": "app/command.ts",
+    "range": {
+     "end": {
+      "character": 21,
+      "line": 28
+     },
+     "start": {
+      "character": 6,
+      "line": 28
+     }
+    },
+    "severity": 1
+   }
+  ],
+  "fix_ops": [
+   {
+    "end": [
+     2,
+     0
+    ],
+    "kind": "change",
+    "path": "app/command.ts",
+    "start": [
+     2,
+     0
+    ],
+    "text": "import { useSearchParams } from \"next/navigation\";\n"
+   }
+  ],
+  "kind": "mutation",
+  "mutation": {
+   "end": [
+    2,
+    0
+   ],
+   "id": "M1",
+   "offsets": [
+    35,
+    87
+   ],
+   "sha": "fa4c9afecf6b98f8",
+   "start": [
+    1,
+    0
+   ],
+   "text": "",
+   "what": "remove the import of 'useSearchParams'"
+  },
+  "n_fix_ops": 1,
+  "path": "app/command.ts",
+  "post_errors": 3,
+  "title": "Add import from \"next/navigation\"",
+  "via": "edit"
+ },
+ "shape": "diagnostics:extra:2339,2349,2352",
+ "signature": "ts6|r4_edits|diagnostics:extra:2339,2349,2352",
+ "expected": [],
+ "actual": [
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "2339",
+   "typescript",
+   "Property 'delete' does not exist on type '[string, string]'."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "2349",
+   "typescript",
+   "This expression is not callable. Type '[string, string]' has no call signatures."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "2352",
+   "typescript",
+   "Conversion of type 'number' to type 'keyof Commands' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first."
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "quick fix 'Add import from \"next/navigation\"' for 2552 at app/command.ts:14:43 raises the error count in the edited files from 0 to 3 (seeded by M1: remove the import of 'useSearchParams'; errors before the mutation 0, after the fix 3); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 501s",
+ "violation": {
+  "oracle": "r4_edits",
+  "server": "ts6-6.0.3",
+  "project": "ChatGPTNextWeb/NextChat@defdcdb55d85",
+  "key": {
+   "method": "diagnostics",
+   "path": "app/command.ts",
+   "line": 13,
+   "character": 42,
+   "extra": "M1:quickfix-errors:Add import from \"next/navigation\""
+  },
+  "expected": [],
+  "actual": [
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2339",
+    "typescript",
+    "Property 'delete' does not exist on type '[string, string]'."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2349",
+    "typescript",
+    "This expression is not callable. Type '[string, string]' has no call signatures."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2352",
+    "typescript",
+    "Conversion of type 'number' to type 'keyof Commands' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first."
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "app/command.ts"
+   },
+   {
+    "kind": "change",
+    "path": "app/command.ts",
+    "start": [
+     1,
+     0
+    ],
+    "end": [
+     2,
+     0
+    ]
+   },
+   {
+    "kind": "change",
+    "path": "app/command.ts",
+    "start": [
+     2,
+     0
+    ],
+    "end": [
+     2,
+     0
+    ],
+    "text": "import { useSearchParams } from \"next/navigation\";\n"
+   }
+  ],
+  "detail": "{\"case\": {\"action_kind\": \"quickfix\", \"base_errors\": 0, \"check\": \"errors\", \"diag\": {\"code\": 2552, \"message\": \"Cannot find name 'useSearchParams'. Did you mean 'setSearchParams'?\", \"range\": {\"end\": {\"character\": 57, \"line\": 13}, \"start\": {\"character\": 42, \"line\": 13}}, \"severity\": 1}, \"fix_introduced_errors\": [{\"code\": 2352, \"message\": \"Conversion of type 'number' to type 'keyof Commands' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.\", \"path\": \"app/command.ts\", \"range\": {\"end\": {\"character\": 48, \"line\": 19}, \"start\": {\"character\": 26, \"line\": 19}}, \"severity\": 1}, {\"code\": 2339, \"message\": \"Property 'delete' does not exist on type '[string, string]'.\", \"path\": \"app/command.ts\", \"range\": {\"end\": {\"character\": 27, \"line\": 22}, \"start\": {\"character\": 21, \"line\": 22}}, \"severity\": 1}, {\"code\": 2349, \"message\": \"This expression is not callable.\\n  Type '[string, string]' has no call signatures.\", \"path\": \"app/command.ts\", \"range\": {\"end\": {\"character\": 21, \"line\": 28}, \"start\": {\"character\": 6, \"line\": 28}}, \"severity\": 1}], \"fix_ops\": [{\"end\": [2, 0], \"kind\": \"change\", \"path\": \"app/command.ts\", \"start\": [2, 0], \"text\": \"import { useSearchParams } from \\\"next/navigation\\\";\\n\"}], \"kind\": \"mutation\", \"mutation\": {\"end\": [2, 0], \"id\": \"M1\", \"offsets\": [35, 87], \"sha\": \"fa4c9afecf6b98f8\", \"start\": [1, 0], \"text\": \"\", \"what\": \"remove the import of 'useSearchParams'\"}, \"n_fix_ops\": 1, \"path\": \"app/command.ts\", \"post_errors\": 3, \"title\": \"Add import from \\\"next/navigation\\\"\", \"via\": \"edit\"}, \"note\": \"quick fix 'Add import from \\\"next/navigation\\\"' for 2552 at app/command.ts:14:43 raises the error count in the edited files from 0 to 3 (seeded by M1: remove the import of 'useSearchParams'; errors before the mutation 0, after the fix 3); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 501s\", \"shape\": \"diagnostics:extra:2339,2349,2352\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "ts6|r4_edits|diagnostics:extra:2339,2349,2352",
+  "run_id": "9f1de78ccead"
+ },
+ "replay_logs": [
+  "logs/ts6-6.0.3-9f1de78ccead-r4-replay-baseline-20260924-011030-e28ece.jsonl.gz",
+  "logs/ts6-6.0.3-9f1de78ccead-r4-replay-case-20260924-010935-61949f.jsonl.gz",
+  "logs/ts6-6.0.3-9f1de78ccead-r4-replay-control-20260924-011129-5dabba.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

@@ -1,0 +1,579 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "f32275e691ea-v00",
+ "run_id": "f32275e691ea",
+ "oracle": "r4_edits",
+ "server": {
+  "kind": "ts6",
+  "version": "6.0.3"
+ },
+ "project": {
+  "name": "ChromeDevTools/chrome-devtools-mcp@2250cdcde4aa",
+  "source": "corpus",
+  "ref": "temp/corpus/ChromeDevTools__chrome-devtools-mcp@2250cdcde4aa",
+  "commit": "2250cdcde4aad79d54101c80346df4190e0c2da7",
+  "language": "typescript"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "scripts/eval_scenarios/network_test.ts",
+    "positions": [
+     [
+      8,
+      9
+     ],
+     [
+      8,
+      19
+     ],
+     [
+      8,
+      29
+     ],
+     [
+      10,
+      17
+     ],
+     [
+      10,
+      29
+     ],
+     [
+      11,
+      5
+     ],
+     [
+      22,
+      19
+     ],
+     [
+      23,
+      22
+     ],
+     [
+      23,
+      36
+     ],
+     [
+      24,
+      12
+     ],
+     [
+      24,
+      17
+     ],
+     [
+      25,
+      18
+     ]
+    ],
+    "ends": [
+     [
+      8,
+      11
+     ],
+     [
+      8,
+      25
+     ],
+     [
+      8,
+      31
+     ],
+     [
+      10,
+      21
+     ],
+     [
+      10,
+      35
+     ],
+     [
+      11,
+      8
+     ],
+     [
+      22,
+      22
+     ],
+     [
+      23,
+      25
+     ],
+     [
+      23,
+      47
+     ],
+     [
+      24,
+      13
+     ],
+     [
+      24,
+      20
+     ],
+     [
+      25,
+      25
+     ]
+    ],
+    "names": [
+     "type",
+     "TestScenario",
+     "from",
+     "scenario",
+     "TestScenario",
+     "prompt",
+     "result",
+     "result",
+     "consumePageNavigation",
+     "ok",
+     "result",
+     "assertNextCall"
+    ]
+   },
+   {
+    "path": "tests/e2e/telemetry.test.ts",
+    "positions": [
+     [
+      7,
+      45
+     ],
+     [
+      20,
+      5
+     ],
+     [
+      24,
+      10
+     ],
+     [
+      30,
+      18
+     ],
+     [
+      37,
+      31
+     ],
+     [
+      71,
+      18
+     ],
+     [
+      127,
+      15
+     ],
+     [
+      131,
+      17
+     ],
+     [
+      161,
+      7
+     ],
+     [
+      183,
+      18
+     ],
+     [
+      193,
+      15
+     ],
+     [
+      237,
+      7
+     ]
+    ],
+    "ends": [
+     [
+      7,
+      51
+     ],
+     [
+      20,
+      8
+     ],
+     [
+      24,
+      14
+     ],
+     [
+      30,
+      21
+     ],
+     [
+      37,
+      35
+     ],
+     [
+      71,
+      20
+     ],
+     [
+      127,
+      17
+     ],
+     [
+      131,
+      21
+     ],
+     [
+      161,
+      10
+     ],
+     [
+      183,
+      22
+     ],
+     [
+      193,
+      19
+     ],
+     [
+      237,
+      9
+     ]
+    ],
+    "names": [
+     "SpawnOptions",
+     "events",
+     "Promise",
+     "event",
+     "headers",
+     "err",
+     "now",
+     "Promise",
+     "killFn",
+     "process",
+     "Promise",
+     "ctx"
+    ]
+   },
+   {
+    "path": "tests/trace-processing/ChunkedTraceParser.test.ts",
+    "positions": [
+     [
+      71,
+      43
+     ],
+     [
+      156,
+      26
+     ],
+     [
+      158,
+      16
+     ],
+     [
+      173,
+      15
+     ],
+     [
+      175,
+      16
+     ],
+     [
+      177,
+      42
+     ],
+     [
+      187,
+      49
+     ],
+     [
+      193,
+      13
+     ],
+     [
+      220,
+      37
+     ],
+     [
+      312,
+      11
+     ],
+     [
+      313,
+      8
+     ],
+     [
+      377,
+      7
+     ]
+    ],
+    "ends": [
+     [
+      71,
+      45
+     ],
+     [
+      156,
+      29
+     ],
+     [
+      158,
+      22
+     ],
+     [
+      173,
+      22
+     ],
+     [
+      175,
+      22
+     ],
+     [
+      177,
+      43
+     ],
+     [
+      187,
+      53
+     ],
+     [
+      193,
+      16
+     ],
+     [
+      220,
+      50
+     ],
+     [
+      312,
+      12
+     ],
+     [
+      313,
+      10
+     ],
+     [
+      377,
+      10
+     ]
+    ],
+    "names": [
+     "name",
+     "result",
+     "strictEqual",
+     "standardParsed",
+     "strictEqual",
+     "ts",
+     "rawData",
+     "parse",
+     "parseTraceEventsFromBuffer",
+     "e2",
+     "name",
+     "assert"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "diagnostics",
+  "path": "scripts/eval_scenarios/network_test.ts",
+  "line": 23,
+  "character": 4,
+  "extra": "M1:quickfix-errors:Add import from \"console\""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "scripts/eval_scenarios/network_test.ts"
+  },
+  {
+   "kind": "change",
+   "path": "scripts/eval_scenarios/network_test.ts",
+   "start": [
+    6,
+    0
+   ],
+   "end": [
+    7,
+    0
+   ]
+  },
+  {
+   "kind": "change",
+   "path": "scripts/eval_scenarios/network_test.ts",
+   "start": [
+    7,
+    7
+   ],
+   "end": [
+    7,
+    7
+   ],
+   "text": "{ assert } from 'console';\nimport "
+  }
+ ],
+ "case": {
+  "action_kind": "quickfix",
+  "base_errors": 0,
+  "check": "errors",
+  "diag": {
+   "code": 2304,
+   "message": "Cannot find name 'assert'.",
+   "range": {
+    "end": {
+     "character": 10,
+     "line": 23
+    },
+    "start": {
+     "character": 4,
+     "line": 23
+    }
+   },
+   "severity": 1
+  },
+  "fix_introduced_errors": [
+   {
+    "code": 2339,
+    "message": "Property 'ok' does not exist on type '(condition?: unknown, ...data: any[]) => void'.",
+    "path": "scripts/eval_scenarios/network_test.ts",
+    "range": {
+     "end": {
+      "character": 13,
+      "line": 24
+     },
+     "start": {
+      "character": 11,
+      "line": 24
+     }
+    },
+    "severity": 1
+   }
+  ],
+  "fix_ops": [
+   {
+    "end": [
+     7,
+     7
+    ],
+    "kind": "change",
+    "path": "scripts/eval_scenarios/network_test.ts",
+    "start": [
+     7,
+     7
+    ],
+    "text": "{ assert } from 'console';\nimport "
+   }
+  ],
+  "kind": "mutation",
+  "mutation": {
+   "end": [
+    7,
+    0
+   ],
+   "id": "M1",
+   "offsets": [
+    89,
+    123
+   ],
+   "sha": "ce2f264131f2a261",
+   "start": [
+    6,
+    0
+   ],
+   "text": "",
+   "what": "remove the import of 'assert'"
+  },
+  "n_fix_ops": 1,
+  "path": "scripts/eval_scenarios/network_test.ts",
+  "post_errors": 1,
+  "title": "Add import from \"console\"",
+  "via": "edit"
+ },
+ "shape": "diagnostics:extra:2339",
+ "signature": "ts6|r4_edits|diagnostics:extra:2339",
+ "expected": [],
+ "actual": [
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "2339",
+   "typescript",
+   "Property 'ok' does not exist on type '(condition?: unknown, ...data: any[]) => void'."
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "quick fix 'Add import from \"console\"' for 2304 at scripts/eval_scenarios/network_test.ts:24:5 raises the error count in the edited files from 0 to 1 (seeded by M1: remove the import of 'assert'; errors before the mutation 0, after the fix 1); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 362s",
+ "violation": {
+  "oracle": "r4_edits",
+  "server": "ts6-6.0.3",
+  "project": "ChromeDevTools/chrome-devtools-mcp@2250cdcde4aa",
+  "key": {
+   "method": "diagnostics",
+   "path": "scripts/eval_scenarios/network_test.ts",
+   "line": 23,
+   "character": 4,
+   "extra": "M1:quickfix-errors:Add import from \"console\""
+  },
+  "expected": [],
+  "actual": [
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2339",
+    "typescript",
+    "Property 'ok' does not exist on type '(condition?: unknown, ...data: any[]) => void'."
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "scripts/eval_scenarios/network_test.ts"
+   },
+   {
+    "kind": "change",
+    "path": "scripts/eval_scenarios/network_test.ts",
+    "start": [
+     6,
+     0
+    ],
+    "end": [
+     7,
+     0
+    ]
+   },
+   {
+    "kind": "change",
+    "path": "scripts/eval_scenarios/network_test.ts",
+    "start": [
+     7,
+     7
+    ],
+    "end": [
+     7,
+     7
+    ],
+    "text": "{ assert } from 'console';\nimport "
+   }
+  ],
+  "detail": "{\"case\": {\"action_kind\": \"quickfix\", \"base_errors\": 0, \"check\": \"errors\", \"diag\": {\"code\": 2304, \"message\": \"Cannot find name 'assert'.\", \"range\": {\"end\": {\"character\": 10, \"line\": 23}, \"start\": {\"character\": 4, \"line\": 23}}, \"severity\": 1}, \"fix_introduced_errors\": [{\"code\": 2339, \"message\": \"Property 'ok' does not exist on type '(condition?: unknown, ...data: any[]) => void'.\", \"path\": \"scripts/eval_scenarios/network_test.ts\", \"range\": {\"end\": {\"character\": 13, \"line\": 24}, \"start\": {\"character\": 11, \"line\": 24}}, \"severity\": 1}], \"fix_ops\": [{\"end\": [7, 7], \"kind\": \"change\", \"path\": \"scripts/eval_scenarios/network_test.ts\", \"start\": [7, 7], \"text\": \"{ assert } from 'console';\\nimport \"}], \"kind\": \"mutation\", \"mutation\": {\"end\": [7, 0], \"id\": \"M1\", \"offsets\": [89, 123], \"sha\": \"ce2f264131f2a261\", \"start\": [6, 0], \"text\": \"\", \"what\": \"remove the import of 'assert'\"}, \"n_fix_ops\": 1, \"path\": \"scripts/eval_scenarios/network_test.ts\", \"post_errors\": 1, \"title\": \"Add import from \\\"console\\\"\", \"via\": \"edit\"}, \"note\": \"quick fix 'Add import from \\\"console\\\"' for 2304 at scripts/eval_scenarios/network_test.ts:24:5 raises the error count in the edited files from 0 to 1 (seeded by M1: remove the import of 'assert'; errors before the mutation 0, after the fix 1); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 362s\", \"shape\": \"diagnostics:extra:2339\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "ts6|r4_edits|diagnostics:extra:2339",
+  "run_id": "f32275e691ea"
+ },
+ "replay_logs": [
+  "logs/ts6-6.0.3-f32275e691ea-r4-replay-baseline-20260923-173219-3aef6d.jsonl.gz",
+  "logs/ts6-6.0.3-f32275e691ea-r4-replay-case-20260923-173127-f4417a.jsonl.gz",
+  "logs/ts6-6.0.3-f32275e691ea-r4-replay-control-20260923-173302-4d32dc.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

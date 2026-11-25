@@ -1,0 +1,758 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "efde29841645-v01",
+ "run_id": "efde29841645",
+ "oracle": "r4_edits",
+ "server": {
+  "kind": "rust-analyzer",
+  "version": "2026-09-21"
+ },
+ "project": {
+  "name": "alacritty/alacritty@d692748d3f61",
+  "source": "corpus",
+  "ref": "temp/corpus/alacritty__alacritty@d692748d3f61",
+  "commit": "d692748d3f61253ebe9f5094320120d22f6a046f",
+  "language": "rust"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "alacritty/src/cli.rs",
+    "positions": [
+     [
+      38,
+      8
+     ],
+     [
+      43,
+      8
+     ],
+     [
+      180,
+      23
+     ],
+     [
+      188,
+      33
+     ],
+     [
+      216,
+      13
+     ],
+     [
+      220,
+      12
+     ],
+     [
+      255,
+      37
+     ],
+     [
+      351,
+      12
+     ],
+     [
+      367,
+      17
+     ],
+     [
+      383,
+      20
+     ],
+     [
+      415,
+      9
+     ],
+     [
+      477,
+      10
+     ]
+    ],
+    "ends": [
+     [
+      38,
+      10
+     ],
+     [
+      43,
+      10
+     ],
+     [
+      180,
+      32
+     ],
+     [
+      188,
+      35
+     ],
+     [
+      216,
+      15
+     ],
+     [
+      220,
+      19
+     ],
+     [
+      255,
+      43
+     ],
+     [
+      351,
+      17
+     ],
+     [
+      367,
+      18
+     ],
+     [
+      383,
+      23
+     ],
+     [
+      415,
+      12
+     ],
+     [
+      477,
+      13
+     ]
+    ],
+    "names": [
+     "clap",
+     "clap",
+     "working_directory",
+     "Some",
+     "long",
+     "WindowIdentity",
+     "Deserialize",
+     "window_id",
+     "Ok",
+     "option",
+     "deref",
+     "table"
+    ]
+   },
+   {
+    "path": "alacritty/src/display/window.rs",
+    "positions": [
+     [
+      7,
+      3
+     ],
+     [
+      72,
+      14
+     ],
+     [
+      188,
+      49
+     ],
+     [
+      193,
+      47
+     ],
+     [
+      201,
+      18
+     ],
+     [
+      229,
+      9
+     ],
+     [
+      278,
+      33
+     ],
+     [
+      297,
+      60
+     ],
+     [
+      383,
+      38
+     ],
+     [
+      435,
+      50
+     ],
+     [
+      473,
+      48
+     ],
+     [
+      475,
+      19
+     ]
+    ],
+    "ends": [
+     [
+      7,
+      5
+     ],
+     [
+      72,
+      17
+     ],
+     [
+      188,
+      51
+     ],
+     [
+      193,
+      51
+     ],
+     [
+      201,
+      24
+     ],
+     [
+      229,
+      12
+     ],
+     [
+      278,
+      42
+     ],
+     [
+      297,
+      66
+     ],
+     [
+      383,
+      43
+     ],
+     [
+      435,
+      59
+     ],
+     [
+      473,
+      50
+     ],
+     [
+      475,
+      27
+     ]
+    ],
+    "names": [
+     "cfg",
+     "Error",
+     "Text",
+     "Terminal",
+     "scale_factor",
+     "inline",
+     "set_cursor_visible",
+     "WINDOW_ICON",
+     "minimized",
+     "simple_fullscreen",
+     "bool",
+     "RawWindowHandle"
+    ]
+   },
+   {
+    "path": "alacritty/src/macos/proc.rs",
+    "positions": [
+     [
+      0,
+      17
+     ],
+     [
+      24,
+      31
+     ],
+     [
+      30,
+      30
+     ],
+     [
+      48,
+      9
+     ],
+     [
+      54,
+      34
+     ],
+     [
+      55,
+      29
+     ],
+     [
+      56,
+      10
+     ],
+     [
+      59,
+      28
+     ],
+     [
+      73,
+      43
+     ],
+     [
+      88,
+      11
+     ],
+     [
+      94,
+      22
+     ],
+     [
+      115,
+      28
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      19
+     ],
+     [
+      24,
+      33
+     ],
+     [
+      30,
+      35
+     ],
+     [
+      48,
+      11
+     ],
+     [
+      54,
+      36
+     ],
+     [
+      55,
+      34
+     ],
+     [
+      56,
+      12
+     ],
+     [
+      59,
+      30
+     ],
+     [
+      73,
+      48
+     ],
+     [
+      88,
+      12
+     ],
+     [
+      94,
+      24
+     ],
+     [
+      115,
+      31
+     ]
+    ],
+    "names": [
+     "CStr",
+     "err",
+     "Formatter",
+     "from",
+     "sys",
+     "as_mut_ptr",
+     "size",
+     "sys",
+     "c_longlong",
+     "C",
+     "u64",
+     "Clone"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "diagnostics",
+  "path": "alacritty/src/cli.rs",
+  "line": 430,
+  "character": 4,
+  "extra": "quickfix:Remove all unused imports"
+ },
+ "ops": [],
+ "case": {
+  "action_kind": "quickfix",
+  "check": "persist",
+  "diag": {
+   "code": "inactive_code",
+   "message": "code is inactive due to #[cfg] directives: target_os = \"linux\" is disabled",
+   "range": {
+    "end": {
+     "character": 22,
+     "line": 431
+    },
+    "start": {
+     "character": 4,
+     "line": 430
+    }
+   },
+   "severity": 4
+  },
+  "kind": "quickfix",
+  "mapped": [
+   [
+    433,
+    4
+   ],
+   [
+    434,
+    29
+   ],
+   true
+  ],
+  "path": "alacritty/src/cli.rs",
+  "title": "Remove all unused imports",
+  "via": "resolve"
+ },
+ "shape": "diagnostics:extra:inactive_code",
+ "signature": "rust-analyzer|r4_edits|diagnostics:extra:inactive_code",
+ "expected": [
+  [
+   35,
+   4,
+   39,
+   36,
+   4,
+   "inactive_code",
+   "rust-analyzer",
+   "code is inactive due to #[cfg] directives: target_os = \"macos\" is enabled"
+  ],
+  [
+   41,
+   4,
+   44,
+   36,
+   4,
+   "inactive_code",
+   "rust-analyzer",
+   "code is inactive due to #[cfg] directives: windows is disabled"
+  ],
+  [
+   202,
+   12,
+   203,
+   30,
+   4,
+   "inactive_code",
+   "rust-analyzer",
+   "code is inactive due to #[cfg] directives: target_os = \"windows\" is disabled"
+  ],
+  [
+   307,
+   4,
+   310,
+   40,
+   4,
+   "inactive_code",
+   "rust-analyzer",
+   "code is inactive due to #[cfg] directives: target_os = \"macos\" is enabled"
+  ],
+  [
+   430,
+   4,
+   431,
+   22,
+   4,
+   "inactive_code",
+   "rust-analyzer",
+   "code is inactive due to #[cfg] directives: target_os = \"linux\" is disabled"
+  ],
+  [
+   435,
+   4,
+   436,
+   29,
+   4,
+   "inactive_code",
+   "rust-analyzer",
+   "code is inactive due to #[cfg] directives: target_os = \"linux\" is disabled"
+  ],
+  [
+   534,
+   4,
+   563,
+   5,
+   4,
+   "inactive_code",
+   "rust-analyzer",
+   "code is inactive due to #[cfg] directives: target_os = \"linux\" is disabled"
+  ]
+ ],
+ "actual": [
+  [
+   35,
+   4,
+   39,
+   36,
+   4,
+   "inactive_code",
+   "rust-analyzer",
+   "code is inactive due to #[cfg] directives: target_os = \"macos\" is enabled"
+  ],
+  [
+   41,
+   4,
+   44,
+   36,
+   4,
+   "inactive_code",
+   "rust-analyzer",
+   "code is inactive due to #[cfg] directives: windows is disabled"
+  ],
+  [
+   202,
+   12,
+   203,
+   30,
+   4,
+   "inactive_code",
+   "rust-analyzer",
+   "code is inactive due to #[cfg] directives: target_os = \"windows\" is disabled"
+  ],
+  [
+   307,
+   4,
+   310,
+   40,
+   4,
+   "inactive_code",
+   "rust-analyzer",
+   "code is inactive due to #[cfg] directives: target_os = \"macos\" is enabled"
+  ],
+  [
+   430,
+   4,
+   431,
+   22,
+   4,
+   "inactive_code",
+   "rust-analyzer",
+   "code is inactive due to #[cfg] directives: target_os = \"linux\" is disabled"
+  ],
+  [
+   433,
+   4,
+   434,
+   29,
+   4,
+   "inactive_code",
+   "rust-analyzer",
+   "code is inactive due to #[cfg] directives: target_os = \"linux\" is disabled"
+  ],
+  [
+   435,
+   4,
+   436,
+   29,
+   4,
+   "inactive_code",
+   "rust-analyzer",
+   "code is inactive due to #[cfg] directives: target_os = \"linux\" is disabled"
+  ],
+  [
+   534,
+   4,
+   563,
+   5,
+   4,
+   "inactive_code",
+   "rust-analyzer",
+   "code is inactive due to #[cfg] directives: target_os = \"linux\" is disabled"
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "quick fix 'Remove all unused imports' for inactive_code at alacritty/src/cli.rs:431:5 leaves the diagnostic at the mapped range [[433, 4], [434, 29], True]; confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 2068s",
+ "violation": {
+  "oracle": "r4_edits",
+  "server": "rust-analyzer-2026-09-21",
+  "project": "alacritty/alacritty@d692748d3f61",
+  "key": {
+   "method": "diagnostics",
+   "path": "alacritty/src/cli.rs",
+   "line": 430,
+   "character": 4,
+   "extra": "quickfix:Remove all unused imports"
+  },
+  "expected": [
+   [
+    35,
+    4,
+    39,
+    36,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives: target_os = \"macos\" is enabled"
+   ],
+   [
+    41,
+    4,
+    44,
+    36,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives: windows is disabled"
+   ],
+   [
+    202,
+    12,
+    203,
+    30,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives: target_os = \"windows\" is disabled"
+   ],
+   [
+    307,
+    4,
+    310,
+    40,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives: target_os = \"macos\" is enabled"
+   ],
+   [
+    430,
+    4,
+    431,
+    22,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives: target_os = \"linux\" is disabled"
+   ],
+   [
+    435,
+    4,
+    436,
+    29,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives: target_os = \"linux\" is disabled"
+   ],
+   [
+    534,
+    4,
+    563,
+    5,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives: target_os = \"linux\" is disabled"
+   ]
+  ],
+  "actual": [
+   [
+    35,
+    4,
+    39,
+    36,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives: target_os = \"macos\" is enabled"
+   ],
+   [
+    41,
+    4,
+    44,
+    36,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives: windows is disabled"
+   ],
+   [
+    202,
+    12,
+    203,
+    30,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives: target_os = \"windows\" is disabled"
+   ],
+   [
+    307,
+    4,
+    310,
+    40,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives: target_os = \"macos\" is enabled"
+   ],
+   [
+    430,
+    4,
+    431,
+    22,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives: target_os = \"linux\" is disabled"
+   ],
+   [
+    433,
+    4,
+    434,
+    29,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives: target_os = \"linux\" is disabled"
+   ],
+   [
+    435,
+    4,
+    436,
+    29,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives: target_os = \"linux\" is disabled"
+   ],
+   [
+    534,
+    4,
+    563,
+    5,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives: target_os = \"linux\" is disabled"
+   ]
+  ],
+  "ops": [],
+  "detail": "{\"case\": {\"action_kind\": \"quickfix\", \"check\": \"persist\", \"diag\": {\"code\": \"inactive_code\", \"message\": \"code is inactive due to #[cfg] directives: target_os = \\\"linux\\\" is disabled\", \"range\": {\"end\": {\"character\": 22, \"line\": 431}, \"start\": {\"character\": 4, \"line\": 430}}, \"severity\": 4}, \"kind\": \"quickfix\", \"mapped\": [[433, 4], [434, 29], true], \"path\": \"alacritty/src/cli.rs\", \"title\": \"Remove all unused imports\", \"via\": \"resolve\"}, \"note\": \"quick fix 'Remove all unused imports' for inactive_code at alacritty/src/cli.rs:431:5 leaves the diagnostic at the mapped range [[433, 4], [434, 29], True]; confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 2068s\", \"shape\": \"diagnostics:extra:inactive_code\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "rust-analyzer|r4_edits|diagnostics:extra:inactive_code",
+  "run_id": "efde29841645"
+ },
+ "replay_logs": [
+  "logs/rust-analyzer-2026-09-21-efde29841645-r4-replay-baseline-20260924-011735-289e7c.jsonl.gz",
+  "logs/rust-analyzer-2026-09-21-efde29841645-r4-replay-case-20260924-011154-775359.jsonl.gz",
+  "logs/rust-analyzer-2026-09-21-efde29841645-r4-replay-control-20260924-012551-e10c54.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

@@ -1,0 +1,3 @@
+2026-11-18 05:26:49,796 INFO campaign_run run a83d7837aa16: r0_crash on ts6 6.0.3, umami-software/umami@12ad773d621f seed 1 settled, targets ['src/app/(main)/boards/[boardId]/BoardViewPage.tsx', 'src/app/(main)/websites/[websiteId]/(reports)/journeys/page.tsx', 'src/app/api/websites/[websiteId]/replays/saved/contract.generated.ts']
+2026-11-18 05:29:16,418 INFO campaign_run run a83d7837aa16: 0 candidate(s) in 147s; confirming
+2026-11-18 05:29:16,419 INFO campaign_run run a83d7837aa16 finished: ok, 0 confirmed of 0 candidate(s), 147s

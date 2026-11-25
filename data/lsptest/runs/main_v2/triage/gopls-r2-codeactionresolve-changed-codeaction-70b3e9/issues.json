@@ -1,0 +1,20 @@
+{
+ "queries": [
+  "\"code action resolve\" wrong repo:golang/go is:issue label:gopls",
+  "\"code action resolve\" stale repo:golang/go is:issue label:gopls"
+ ],
+ "matches": [
+  {
+   "repo": "golang/go",
+   "number": 71314,
+   "title": "x/tools/gopls: gopls Extracts declarations to new file when a liveshare guest puts a cursor on a function name",
+   "url": "https://github.com/golang/go/issues/71314",
+   "state": "closed",
+   "created": "2025-01-17",
+   "comments": 4,
+   "query": "\"code action resolve\" wrong repo:golang/go is:issue label:gopls"
+  }
+ ],
+ "notes": [],
+ "authenticated": true
+}

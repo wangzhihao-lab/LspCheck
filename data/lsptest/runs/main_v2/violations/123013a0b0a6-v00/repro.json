@@ -1,0 +1,447 @@
+{
+ "format": 1,
+ "campaign": "main_v2",
+ "vid": "123013a0b0a6-v00",
+ "run_id": "123013a0b0a6",
+ "oracle": "r3_routes",
+ "server": {
+  "kind": "rust-analyzer",
+  "version": "2026-09-21"
+ },
+ "project": {
+  "name": "yewstack/yew@bfa6c19af971",
+  "source": "corpus",
+  "ref": "temp/corpus/yewstack__yew@bfa6c19af971",
+  "commit": "bfa6c19af971084f9547495388bde9aceeb81aaa",
+  "language": "rust"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "examples/password_strength/src/text_input.rs",
+    "positions": [
+     [
+      1,
+      44
+     ],
+     [
+      4,
+      5
+     ],
+     [
+      6,
+      18
+     ],
+     [
+      7,
+      12
+     ],
+     [
+      10,
+      30
+     ],
+     [
+      14,
+      7
+     ],
+     [
+      14,
+      24
+     ],
+     [
+      15,
+      7
+     ],
+     [
+      21,
+      27
+     ],
+     [
+      23,
+      11
+     ],
+     [
+      24,
+      36
+     ],
+     [
+      28,
+      39
+     ]
+    ],
+    "ends": [
+     [
+      1,
+      49
+     ],
+     [
+      4,
+      8
+     ],
+     [
+      6,
+      21
+     ],
+     [
+      7,
+      17
+     ],
+     [
+      10,
+      31
+     ],
+     [
+      14,
+      11
+     ],
+     [
+      14,
+      27
+     ],
+     [
+      15,
+      10
+     ],
+     [
+      21,
+      32
+     ],
+     [
+      23,
+      15
+     ],
+     [
+      24,
+      49
+     ],
+     [
+      28,
+      43
+     ]
+    ],
+    "names": [
+     "InputEvent",
+     "derive",
+     "String",
+     "on_change",
+     "e",
+     "web_sys",
+     "log_1",
+     "target",
+     "on_change",
+     "oninput",
+     "get_value_from_input_event",
+     "oninput"
+    ]
+   },
+   {
+    "path": "packages/yew-macro/tests/classes_macro/classes-fail.rs",
+    "positions": [
+     [
+      0,
+      5
+     ],
+     [
+      2,
+      9
+     ],
+     [
+      3,
+      7
+     ],
+     [
+      8,
+      7
+     ],
+     [
+      8,
+      14
+     ],
+     [
+      10,
+      17
+     ],
+     [
+      11,
+      17
+     ],
+     [
+      11,
+      30
+     ],
+     [
+      12,
+      7
+     ],
+     [
+      12,
+      15
+     ],
+     [
+      13,
+      7
+     ],
+     [
+      20,
+      5
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      7
+     ],
+     [
+      2,
+      15
+     ],
+     [
+      3,
+      11
+     ],
+     [
+      8,
+      11
+     ],
+     [
+      8,
+      16
+     ],
+     [
+      10,
+      19
+     ],
+     [
+      11,
+      20
+     ],
+     [
+      11,
+      32
+     ],
+     [
+      12,
+      11
+     ],
+     [
+      12,
+      17
+     ],
+     [
+      13,
+      11
+     ],
+     [
+      20,
+      7
+     ]
+    ],
+    "names": [
+     "yew",
+     "compile_pass",
+     "classes",
+     "classes",
+     "vec",
+     "Some",
+     "Option",
+     "None",
+     "classes",
+     "some",
+     "classes",
+     "main"
+    ]
+   },
+   {
+    "path": "packages/yew/src/functional/hooks/use_prepared_state/feat_hydration.rs",
+    "positions": [
+     [
+      2,
+      12
+     ],
+     [
+      5,
+      6
+     ],
+     [
+      14,
+      3
+     ],
+     [
+      20,
+      24
+     ],
+     [
+      37,
+      5
+     ],
+     [
+      64,
+      40
+     ],
+     [
+      69,
+      30
+     ],
+     [
+      73,
+      21
+     ],
+     [
+      73,
+      27
+     ],
+     [
+      92,
+      43
+     ],
+     [
+      107,
+      33
+     ],
+     [
+      119,
+      23
+     ]
+    ],
+    "ends": [
+     [
+      2,
+      15
+     ],
+     [
+      5,
+      9
+     ],
+     [
+      14,
+      5
+     ],
+     [
+      20,
+      27
+     ],
+     [
+      37,
+      6
+     ],
+     [
+      64,
+      41
+     ],
+     [
+      69,
+      38
+     ],
+     [
+      73,
+      22
+     ],
+     [
+      73,
+      30
+     ],
+     [
+      92,
+      45
+     ],
+     [
+      107,
+      37
+     ],
+     [
+      119,
+      25
+     ]
+    ],
+    "names": [
+     "marker",
+     "serde",
+     "cfg",
+     "window",
+     "Ok",
+     "D",
+     "SuspensionResult",
+     "s",
+     "handle",
+     "deps",
+     "feature",
+     "data"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "diagnostics",
+  "path": "packages/yew-macro/tests/classes_macro/classes-fail.rs",
+  "line": -1,
+  "character": -1,
+  "extra": "route:push"
+ },
+ "ops": [],
+ "case": {
+  "path": "packages/yew-macro/tests/classes_macro/classes-fail.rs",
+  "sub": "a",
+  "want_pull": false
+ },
+ "shape": "diagnostics:missing:unlinked-file",
+ "signature": "rust-analyzer|r3_routes|diagnostics:missing:unlinked-file",
+ "expected": [
+  [
+   0,
+   0,
+   0,
+   2,
+   4,
+   "unlinked-file",
+   "rust-analyzer",
+   "This file is not included in any crates, so rust-analyzer can't offer IDE services. If you're intentionally working on unowned files, you can silence this warning by adding \"unlinked-file\" to rust-analyzer.diagnostics.disabled in your settings."
+  ]
+ ],
+ "actual": [],
+ "reproduced": "3/3",
+ "note": "pull vs push; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 594s",
+ "violation": {
+  "oracle": "r3_routes",
+  "server": "rust-analyzer-2026-09-21",
+  "project": "yewstack/yew@bfa6c19af971",
+  "key": {
+   "method": "diagnostics",
+   "path": "packages/yew-macro/tests/classes_macro/classes-fail.rs",
+   "line": -1,
+   "character": -1,
+   "extra": "route:push"
+  },
+  "expected": [
+   [
+    0,
+    0,
+    0,
+    2,
+    4,
+    "unlinked-file",
+    "rust-analyzer",
+    "This file is not included in any crates, so rust-analyzer can't offer IDE services. If you're intentionally working on unowned files, you can silence this warning by adding \"unlinked-file\" to rust-analyzer.diagnostics.disabled in your settings."
+   ]
+  ],
+  "actual": [],
+  "ops": [],
+  "detail": "{\"case\": {\"path\": \"packages/yew-macro/tests/classes_macro/classes-fail.rs\", \"sub\": \"a\", \"want_pull\": false}, \"note\": \"pull vs push; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 594s\", \"shape\": \"diagnostics:missing:unlinked-file\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "rust-analyzer|r3_routes|diagnostics:missing:unlinked-file",
+  "run_id": "123013a0b0a6"
+ },
+ "replay_logs": [
+  "logs/rust-analyzer-2026-09-21-123013a0b0a6-r3-replay-baseline-20261118-195516-77f7ed.jsonl.gz",
+  "logs/rust-analyzer-2026-09-21-123013a0b0a6-r3-replay-control-20261118-195619-2c640d.jsonl.gz",
+  "logs/rust-analyzer-2026-09-21-123013a0b0a6-r3-replay-route-20261118-195727-16c9dc.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

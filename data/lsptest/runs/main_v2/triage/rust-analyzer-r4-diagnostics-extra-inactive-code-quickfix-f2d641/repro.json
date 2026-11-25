@@ -1,0 +1,473 @@
+{
+ "format": 1,
+ "campaign": "main_v2",
+ "vid": "0082cb0ebd81-v00",
+ "run_id": "0082cb0ebd81",
+ "oracle": "r4_edits",
+ "server": {
+  "kind": "rust-analyzer",
+  "version": "2026-09-21"
+ },
+ "project": {
+  "name": "cloudflare/pingora@4487f7b2ab50",
+  "source": "corpus",
+  "ref": "temp/corpus/cloudflare__pingora@4487f7b2ab50",
+  "commit": "4487f7b2ab50f159e4a2cf4f6a6b813f61bb6e19",
+  "language": "rust"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "pingora-cache/src/eviction/async_lru.rs",
+    "positions": [],
+    "ends": [],
+    "names": []
+   },
+   {
+    "path": "pingora-core/src/protocols/digest.rs",
+    "positions": [
+     [
+      257,
+      0
+     ]
+    ],
+    "ends": [],
+    "names": [
+     ""
+    ]
+   },
+   {
+    "path": "pingora-http/src/lib.rs",
+    "positions": [],
+    "ends": [],
+    "names": []
+   }
+  ]
+ },
+ "key": {
+  "method": "diagnostics",
+  "path": "pingora-core/src/protocols/digest.rs",
+  "line": 257,
+  "character": 0,
+  "extra": "quickfix:Remove all unused imports"
+ },
+ "ops": [],
+ "case": {
+  "action_kind": "quickfix",
+  "check": "persist",
+  "diag": {
+   "code": "inactive_code",
+   "message": "code is inactive due to #[cfg] directives: target_os = \"linux\" is disabled",
+   "range": {
+    "end": {
+     "character": 1,
+     "line": 285
+    },
+    "start": {
+     "character": 0,
+     "line": 257
+    }
+   },
+   "severity": 4
+  },
+  "kind": "quickfix",
+  "mapped": [
+   [
+    257,
+    0
+   ],
+   [
+    284,
+    1
+   ],
+   true
+  ],
+  "path": "pingora-core/src/protocols/digest.rs",
+  "title": "Remove all unused imports",
+  "via": "resolve"
+ },
+ "shape": "diagnostics:extra:inactive_code",
+ "signature": "rust-analyzer|r4_edits|diagnostics:extra:inactive_code",
+ "expected": [
+  [
+   82,
+   4,
+   83,
+   45,
+   4,
+   "inactive_code",
+   "rust-analyzer",
+   "code is inactive due to #[cfg] directives: windows is disabled"
+  ],
+  [
+   103,
+   4,
+   111,
+   5,
+   4,
+   "inactive_code",
+   "rust-analyzer",
+   "code is inactive due to #[cfg] directives: windows is disabled"
+  ],
+  [
+   129,
+   4,
+   134,
+   5,
+   4,
+   "inactive_code",
+   "rust-analyzer",
+   "code is inactive due to #[cfg] directives: windows is disabled"
+  ],
+  [
+   143,
+   4,
+   148,
+   5,
+   4,
+   "inactive_code",
+   "rust-analyzer",
+   "code is inactive due to #[cfg] directives: windows is disabled"
+  ],
+  [
+   163,
+   4,
+   170,
+   5,
+   4,
+   "inactive_code",
+   "rust-analyzer",
+   "code is inactive due to #[cfg] directives: windows is disabled"
+  ],
+  [
+   181,
+   4,
+   188,
+   5,
+   4,
+   "inactive_code",
+   "rust-analyzer",
+   "code is inactive due to #[cfg] directives: windows is disabled"
+  ],
+  [
+   199,
+   4,
+   206,
+   5,
+   4,
+   "inactive_code",
+   "rust-analyzer",
+   "code is inactive due to #[cfg] directives: windows is disabled"
+  ],
+  [
+   220,
+   4,
+   230,
+   5,
+   4,
+   "inactive_code",
+   "rust-analyzer",
+   "code is inactive due to #[cfg] directives: windows is disabled"
+  ]
+ ],
+ "actual": [
+  [
+   82,
+   4,
+   83,
+   45,
+   4,
+   "inactive_code",
+   "rust-analyzer",
+   "code is inactive due to #[cfg] directives: windows is disabled"
+  ],
+  [
+   103,
+   4,
+   111,
+   5,
+   4,
+   "inactive_code",
+   "rust-analyzer",
+   "code is inactive due to #[cfg] directives: windows is disabled"
+  ],
+  [
+   129,
+   4,
+   134,
+   5,
+   4,
+   "inactive_code",
+   "rust-analyzer",
+   "code is inactive due to #[cfg] directives: windows is disabled"
+  ],
+  [
+   143,
+   4,
+   148,
+   5,
+   4,
+   "inactive_code",
+   "rust-analyzer",
+   "code is inactive due to #[cfg] directives: windows is disabled"
+  ],
+  [
+   163,
+   4,
+   170,
+   5,
+   4,
+   "inactive_code",
+   "rust-analyzer",
+   "code is inactive due to #[cfg] directives: windows is disabled"
+  ],
+  [
+   181,
+   4,
+   188,
+   5,
+   4,
+   "inactive_code",
+   "rust-analyzer",
+   "code is inactive due to #[cfg] directives: windows is disabled"
+  ],
+  [
+   199,
+   4,
+   206,
+   5,
+   4,
+   "inactive_code",
+   "rust-analyzer",
+   "code is inactive due to #[cfg] directives: windows is disabled"
+  ],
+  [
+   220,
+   4,
+   230,
+   5,
+   4,
+   "inactive_code",
+   "rust-analyzer",
+   "code is inactive due to #[cfg] directives: windows is disabled"
+  ],
+  [
+   257,
+   0,
+   284,
+   1,
+   4,
+   "inactive_code",
+   "rust-analyzer",
+   "code is inactive due to #[cfg] directives: target_os = \"linux\" is disabled"
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "quick fix 'Remove all unused imports' for inactive_code at pingora-core/src/protocols/digest.rs:258:1 leaves the diagnostic at the mapped range [[257, 0], [284, 1], True]; confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 1722s",
+ "violation": {
+  "oracle": "r4_edits",
+  "server": "rust-analyzer-2026-09-21",
+  "project": "cloudflare/pingora@4487f7b2ab50",
+  "key": {
+   "method": "diagnostics",
+   "path": "pingora-core/src/protocols/digest.rs",
+   "line": 257,
+   "character": 0,
+   "extra": "quickfix:Remove all unused imports"
+  },
+  "expected": [
+   [
+    82,
+    4,
+    83,
+    45,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives: windows is disabled"
+   ],
+   [
+    103,
+    4,
+    111,
+    5,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives: windows is disabled"
+   ],
+   [
+    129,
+    4,
+    134,
+    5,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives: windows is disabled"
+   ],
+   [
+    143,
+    4,
+    148,
+    5,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives: windows is disabled"
+   ],
+   [
+    163,
+    4,
+    170,
+    5,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives: windows is disabled"
+   ],
+   [
+    181,
+    4,
+    188,
+    5,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives: windows is disabled"
+   ],
+   [
+    199,
+    4,
+    206,
+    5,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives: windows is disabled"
+   ],
+   [
+    220,
+    4,
+    230,
+    5,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives: windows is disabled"
+   ]
+  ],
+  "actual": [
+   [
+    82,
+    4,
+    83,
+    45,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives: windows is disabled"
+   ],
+   [
+    103,
+    4,
+    111,
+    5,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives: windows is disabled"
+   ],
+   [
+    129,
+    4,
+    134,
+    5,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives: windows is disabled"
+   ],
+   [
+    143,
+    4,
+    148,
+    5,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives: windows is disabled"
+   ],
+   [
+    163,
+    4,
+    170,
+    5,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives: windows is disabled"
+   ],
+   [
+    181,
+    4,
+    188,
+    5,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives: windows is disabled"
+   ],
+   [
+    199,
+    4,
+    206,
+    5,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives: windows is disabled"
+   ],
+   [
+    220,
+    4,
+    230,
+    5,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives: windows is disabled"
+   ],
+   [
+    257,
+    0,
+    284,
+    1,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives: target_os = \"linux\" is disabled"
+   ]
+  ],
+  "ops": [],
+  "detail": "{\"case\": {\"action_kind\": \"quickfix\", \"check\": \"persist\", \"diag\": {\"code\": \"inactive_code\", \"message\": \"code is inactive due to #[cfg] directives: target_os = \\\"linux\\\" is disabled\", \"range\": {\"end\": {\"character\": 1, \"line\": 285}, \"start\": {\"character\": 0, \"line\": 257}}, \"severity\": 4}, \"kind\": \"quickfix\", \"mapped\": [[257, 0], [284, 1], true], \"path\": \"pingora-core/src/protocols/digest.rs\", \"title\": \"Remove all unused imports\", \"via\": \"resolve\"}, \"note\": \"quick fix 'Remove all unused imports' for inactive_code at pingora-core/src/protocols/digest.rs:258:1 leaves the diagnostic at the mapped range [[257, 0], [284, 1], True]; confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 1722s\", \"shape\": \"diagnostics:extra:inactive_code\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "rust-analyzer|r4_edits|diagnostics:extra:inactive_code",
+  "run_id": "0082cb0ebd81"
+ },
+ "replay_logs": [
+  "logs/rust-analyzer-2026-09-21-trf2d641-r4-replay-baseline-20261119-005202-bfa773.jsonl.gz",
+  "logs/rust-analyzer-2026-09-21-trf2d641-r4-replay-case-20261119-004946-17cdb9.jsonl.gz",
+  "logs/rust-analyzer-2026-09-21-trf2d641-r4-replay-control-20261119-005413-bf466c.jsonl.gz"
+ ],
+ "project_files": {},
+ "group": "rust-analyzer-r4-diagnostics-extra-inactive-code-quickfix-f2d641",
+ "reduced": true
+}

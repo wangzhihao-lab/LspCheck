@@ -1,0 +1,171 @@
+{
+ "format": 1,
+ "campaign": "bench_v1",
+ "vid": "950e6a5c9edb-v00",
+ "run_id": "950e6a5c9edb",
+ "oracle": "r5_transforms",
+ "server": {
+  "kind": "gopls",
+  "version": "v0.4.3"
+ },
+ "project": {
+  "name": "gopls-38424",
+  "source": "dir",
+  "ref": "data/lsp_bench/cases/gopls-38424/project",
+  "commit": "",
+  "language": "go"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 180.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 6,
+  "targets": [
+   {
+    "path": "main2.go",
+    "positions": [
+     [
+      0,
+      10
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      12
+     ]
+    ],
+    "names": [
+     "main"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "codeAction",
+  "path": "main2.go",
+  "line": 0,
+  "character": 10,
+  "extra": "pos"
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "main2.go"
+  },
+  {
+   "kind": "change",
+   "path": "main2.go",
+   "start": [
+    0,
+    12
+   ],
+   "end": [
+    0,
+    12
+   ],
+   "text": "\r"
+  }
+ ],
+ "case": {
+  "mapped_key": [
+   "codeAction",
+   "main2.go",
+   0,
+   10,
+   "pos"
+  ],
+  "transform": {
+   "back": {
+    "col": 0,
+    "eof": [],
+    "line": -1,
+    "n": 0,
+    "path": "main2.go",
+    "w": 0
+   },
+   "edits": [
+    [
+     0,
+     12,
+     0,
+     12,
+     "\r"
+    ]
+   ],
+   "kind": "T4",
+   "path": "main2.go",
+   "shift": {
+    "col": 0,
+    "eof": [],
+    "line": -1,
+    "n": 0,
+    "path": "main2.go",
+    "w": 0
+   }
+  }
+ },
+ "shape": "codeAction:gained",
+ "signature": "gopls|r5_transforms|codeAction:gained",
+ "expected": [],
+ "actual": [
+  [
+   "Organize Imports",
+   "source.organizeImports"
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "T4 main2.go: 1 edit(s), first [0, 12, 0, 12]; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 95s",
+ "violation": {
+  "oracle": "r5_transforms",
+  "server": "gopls-v0.4.3",
+  "project": "gopls-38424",
+  "key": {
+   "method": "codeAction",
+   "path": "main2.go",
+   "line": 0,
+   "character": 10,
+   "extra": "pos"
+  },
+  "expected": [],
+  "actual": [
+   [
+    "Organize Imports",
+    "source.organizeImports"
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "main2.go"
+   },
+   {
+    "kind": "change",
+    "path": "main2.go",
+    "start": [
+     0,
+     12
+    ],
+    "end": [
+     0,
+     12
+    ],
+    "text": "\r"
+   }
+  ],
+  "detail": "{\"case\": {\"mapped_key\": [\"codeAction\", \"main2.go\", 0, 10, \"pos\"], \"transform\": {\"back\": {\"col\": 0, \"eof\": [], \"line\": -1, \"n\": 0, \"path\": \"main2.go\", \"w\": 0}, \"edits\": [[0, 12, 0, 12, \"\\r\"]], \"kind\": \"T4\", \"path\": \"main2.go\", \"shift\": {\"col\": 0, \"eof\": [], \"line\": -1, \"n\": 0, \"path\": \"main2.go\", \"w\": 0}}}, \"note\": \"T4 main2.go: 1 edit(s), first [0, 12, 0, 12]; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 95s\", \"shape\": \"codeAction:gained\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "gopls|r5_transforms|codeAction:gained",
+  "run_id": "950e6a5c9edb"
+ },
+ "replay_logs": [
+  "logs/gopls-v0.4.3-950e6a5c9edb-r5-replay-baseline-20260925-073546-c0d14e.jsonl.gz",
+  "logs/gopls-v0.4.3-950e6a5c9edb-r5-replay-case-20260925-073607-15eff6.jsonl.gz",
+  "logs/gopls-v0.4.3-950e6a5c9edb-r5-replay-control-20260925-073556-a682d8.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

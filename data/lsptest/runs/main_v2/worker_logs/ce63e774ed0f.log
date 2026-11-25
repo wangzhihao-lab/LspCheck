@@ -1,0 +1,3 @@
+2026-11-18 13:41:39,901 INFO campaign_run run ce63e774ed0f: r4_edits on pyright 1.1.414, NanmiCoder/MediaCrawler@380b426000aa seed 2 settled, targets ['test/test_expiring_local_cache.py', 'tests/test_kuaishou_unavailable_video.py', 'tests/test_kuaishou_url_parse.py']
+2026-11-18 13:42:21,840 INFO campaign_run run ce63e774ed0f: 0 candidate(s) in 42s; confirming
+2026-11-18 13:42:21,840 INFO campaign_run run ce63e774ed0f finished: ok, 0 confirmed of 0 candidate(s), 42s

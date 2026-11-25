@@ -1,0 +1,561 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "b980fe123efb-v00",
+ "run_id": "b980fe123efb",
+ "oracle": "r4_edits",
+ "server": {
+  "kind": "ts6",
+  "version": "6.0.3"
+ },
+ "project": {
+  "name": "ChatGPTNextWeb/NextChat@defdcdb55d85",
+  "source": "corpus",
+  "ref": "temp/corpus/ChatGPTNextWeb__NextChat@defdcdb55d85",
+  "commit": "defdcdb55d850cd12c4c657eb83729fd66e215c0",
+  "language": "typescript"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "app/api/stability.ts",
+    "positions": [
+     [
+      26,
+      17
+     ],
+     [
+      44,
+      34
+     ],
+     [
+      49,
+      27
+     ],
+     [
+      50,
+      28
+     ],
+     [
+      50,
+      61
+     ],
+     [
+      52,
+      50
+     ],
+     [
+      70,
+      29
+     ],
+     [
+      74,
+      13
+     ],
+     [
+      77,
+      8
+     ],
+     [
+      84,
+      11
+     ],
+     [
+      90,
+      19
+     ],
+     [
+      91,
+      21
+     ]
+    ],
+    "ends": [
+     [
+      26,
+      21
+     ],
+     [
+      44,
+      39
+     ],
+     [
+      49,
+      31
+     ],
+     [
+      50,
+      30
+     ],
+     [
+      50,
+      63
+     ],
+     [
+      52,
+      58
+     ],
+     [
+      70,
+      33
+     ],
+     [
+      74,
+      15
+     ],
+     [
+      77,
+      12
+     ],
+     [
+      84,
+      13
+     ],
+     [
+      90,
+      23
+     ],
+     [
+      91,
+      24
+     ]
+    ],
+    "names": [
+     "baseUrl",
+     "authResult",
+     "headers",
+     "trim",
+     "trim",
+     "stabilityApiKey",
+     "headers",
+     "req",
+     "redirect",
+     "res",
+     "Response",
+     "status"
+    ]
+   },
+   {
+    "path": "app/client/platforms/glm.ts",
+    "positions": [
+     [
+      1,
+      48
+     ],
+     [
+      20,
+      8
+     ],
+     [
+      60,
+      10
+     ],
+     [
+      67,
+      18
+     ],
+     [
+      81,
+      15
+     ],
+     [
+      107,
+      39
+     ],
+     [
+      127,
+      33
+     ],
+     [
+      147,
+      9
+     ],
+     [
+      156,
+      41
+     ],
+     [
+      177,
+      7
+     ],
+     [
+      259,
+      43
+     ],
+     [
+      272,
+      17
+     ]
+    ],
+    "ends": [
+     [
+      1,
+      50
+     ],
+     [
+      20,
+      15
+     ],
+     [
+      60,
+      13
+     ],
+     [
+      67,
+      22
+     ],
+     [
+      81,
+      21
+     ],
+     [
+      107,
+      44
+     ],
+     [
+      127,
+      38
+     ],
+     [
+      147,
+      16
+     ],
+     [
+      156,
+      45
+     ],
+     [
+      177,
+      11
+     ],
+     [
+      259,
+      46
+     ],
+     [
+      272,
+      21
+     ]
+    ],
+    "names": [
+     "from",
+     "isVisionModel",
+     "model",
+     "ChatGLM",
+     "lastMessage",
+     "ModelType",
+     "chatglmUrl",
+     "extractMessage",
+     "options",
+     "console",
+     "length",
+     "message"
+    ]
+   },
+   {
+    "path": "app/locales/index.ts",
+    "positions": [
+     [
+      14,
+      12
+     ],
+     [
+      30,
+      3
+     ],
+     [
+      55,
+      40
+     ],
+     [
+      79,
+      12
+     ],
+     [
+      93,
+      12
+     ],
+     [
+      93,
+      32
+     ],
+     [
+      100,
+      13
+     ],
+     [
+      130,
+      21
+     ],
+     [
+      132,
+      5
+     ],
+     [
+      153,
+      3
+     ],
+     [
+      160,
+      3
+     ],
+     [
+      168,
+      19
+     ]
+    ],
+    "ends": [
+     [
+      14,
+      14
+     ],
+     [
+      30,
+      4
+     ],
+     [
+      55,
+      42
+     ],
+     [
+      79,
+      18
+     ],
+     [
+      93,
+      16
+     ],
+     [
+      93,
+      35
+     ],
+     [
+      100,
+      16
+     ],
+     [
+      130,
+      26
+     ],
+     [
+      132,
+      6
+     ],
+     [
+      153,
+      4
+     ],
+     [
+      160,
+      4
+     ],
+     [
+      168,
+      27
+     ]
+    ],
+    "names": [
+     "from",
+     "en",
+     "Lang",
+     "DEFAULT_LANG",
+     "setItem",
+     "value",
+     "region",
+     "getISOLang",
+     "cn",
+     "tr",
+     "bn",
+     "DEFAULT_STT_LANG"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "diagnostics",
+  "path": "app/api/stability.ts",
+  "line": 2,
+  "character": 9,
+  "extra": "M2:quickfix-errors:Remove unused declaration for: 'ModelProvider'"
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "app/api/stability.ts"
+  },
+  {
+   "kind": "change",
+   "path": "app/api/stability.ts",
+   "start": [
+    41,
+    31
+   ],
+   "end": [
+    41,
+    44
+   ],
+   "text": "ModelPrrovider"
+  },
+  {
+   "kind": "change",
+   "path": "app/api/stability.ts",
+   "start": [
+    2,
+    9
+   ],
+   "end": [
+    2,
+    24
+   ]
+  }
+ ],
+ "case": {
+  "action_kind": "quickfix",
+  "base_errors": 0,
+  "check": "errors",
+  "diag": {
+   "code": 6133,
+   "message": "'ModelProvider' is declared but its value is never read.",
+   "range": {
+    "end": {
+     "character": 22,
+     "line": 2
+    },
+    "start": {
+     "character": 9,
+     "line": 2
+    }
+   },
+   "severity": 4
+  },
+  "fix_introduced_errors": [],
+  "fix_ops": [
+   {
+    "end": [
+     2,
+     24
+    ],
+    "kind": "change",
+    "path": "app/api/stability.ts",
+    "start": [
+     2,
+     9
+    ]
+   }
+  ],
+  "kind": "mutation",
+  "mutation": {
+   "end": [
+    41,
+    44
+   ],
+   "id": "M2",
+   "offsets": [
+    1082,
+    1095
+   ],
+   "sha": "0e51b35e3b8c2faa",
+   "start": [
+    41,
+    31
+   ],
+   "text": "ModelPrrovider",
+   "what": "misspell 'ModelProvider' as 'ModelPrrovider' (duplicate a middle character)"
+  },
+  "n_fix_ops": 1,
+  "path": "app/api/stability.ts",
+  "post_errors": 1,
+  "title": "Remove unused declaration for: 'ModelProvider'",
+  "via": "edit"
+ },
+ "shape": "diagnostics:extra:2304",
+ "signature": "ts6|r4_edits|diagnostics:extra:2304",
+ "expected": [],
+ "actual": [
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "2304",
+   "typescript",
+   "Cannot find name 'ModelPrrovider'."
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "quick fix \"Remove unused declaration for: 'ModelProvider'\" for 6133 at app/api/stability.ts:3:10 raises the error count in the edited files from 0 to 1 (seeded by M2: misspell 'ModelProvider' as 'ModelPrrovider' (duplicate a middle character); errors before the mutation 0, after the fix 1); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 589s",
+ "violation": {
+  "oracle": "r4_edits",
+  "server": "ts6-6.0.3",
+  "project": "ChatGPTNextWeb/NextChat@defdcdb55d85",
+  "key": {
+   "method": "diagnostics",
+   "path": "app/api/stability.ts",
+   "line": 2,
+   "character": 9,
+   "extra": "M2:quickfix-errors:Remove unused declaration for: 'ModelProvider'"
+  },
+  "expected": [],
+  "actual": [
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2304",
+    "typescript",
+    "Cannot find name 'ModelPrrovider'."
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "app/api/stability.ts"
+   },
+   {
+    "kind": "change",
+    "path": "app/api/stability.ts",
+    "start": [
+     41,
+     31
+    ],
+    "end": [
+     41,
+     44
+    ],
+    "text": "ModelPrrovider"
+   },
+   {
+    "kind": "change",
+    "path": "app/api/stability.ts",
+    "start": [
+     2,
+     9
+    ],
+    "end": [
+     2,
+     24
+    ]
+   }
+  ],
+  "detail": "{\"case\": {\"action_kind\": \"quickfix\", \"base_errors\": 0, \"check\": \"errors\", \"diag\": {\"code\": 6133, \"message\": \"'ModelProvider' is declared but its value is never read.\", \"range\": {\"end\": {\"character\": 22, \"line\": 2}, \"start\": {\"character\": 9, \"line\": 2}}, \"severity\": 4}, \"fix_introduced_errors\": [], \"fix_ops\": [{\"end\": [2, 24], \"kind\": \"change\", \"path\": \"app/api/stability.ts\", \"start\": [2, 9]}], \"kind\": \"mutation\", \"mutation\": {\"end\": [41, 44], \"id\": \"M2\", \"offsets\": [1082, 1095], \"sha\": \"0e51b35e3b8c2faa\", \"start\": [41, 31], \"text\": \"ModelPrrovider\", \"what\": \"misspell 'ModelProvider' as 'ModelPrrovider' (duplicate a middle character)\"}, \"n_fix_ops\": 1, \"path\": \"app/api/stability.ts\", \"post_errors\": 1, \"title\": \"Remove unused declaration for: 'ModelProvider'\", \"via\": \"edit\"}, \"note\": \"quick fix \\\"Remove unused declaration for: 'ModelProvider'\\\" for 6133 at app/api/stability.ts:3:10 raises the error count in the edited files from 0 to 1 (seeded by M2: misspell 'ModelProvider' as 'ModelPrrovider' (duplicate a middle character); errors before the mutation 0, after the fix 1); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 589s\", \"shape\": \"diagnostics:extra:2304\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "ts6|r4_edits|diagnostics:extra:2304",
+  "run_id": "b980fe123efb"
+ },
+ "replay_logs": [
+  "logs/ts6-6.0.3-b980fe123efb-r4-replay-baseline-20260923-195905-2ef4f3.jsonl.gz",
+  "logs/ts6-6.0.3-b980fe123efb-r4-replay-case-20260923-195754-361cb7.jsonl.gz",
+  "logs/ts6-6.0.3-b980fe123efb-r4-replay-control-20260923-200017-8167b4.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

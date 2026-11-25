@@ -1,0 +1,278 @@
+{
+ "format": 1,
+ "campaign": "main_v2",
+ "vid": "119ebfb649be-v00",
+ "run_id": "119ebfb649be",
+ "oracle": "r1_history",
+ "server": {
+  "kind": "ts7",
+  "version": "7.0.2"
+ },
+ "project": {
+  "name": "DayuanJiang/next-ai-draw-io@58b73ef761d8",
+  "source": "corpus",
+  "ref": "temp/corpus/DayuanJiang__next-ai-draw-io@58b73ef761d8",
+  "commit": "58b73ef761d8a5e5b2afa2c360428d3dea996312",
+  "language": "typescript"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "race200",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "app/api/validate-diagram/route.ts",
+    "positions": [],
+    "ends": [],
+    "names": []
+   },
+   {
+    "path": "lib/server-model-config.ts",
+    "positions": [
+     [
+      96,
+      18
+     ]
+    ],
+    "ends": [],
+    "names": [
+     ""
+    ]
+   },
+   {
+    "path": "lib/types/model-config.ts",
+    "positions": [],
+    "ends": [],
+    "names": []
+   }
+  ]
+ },
+ "key": {
+  "method": "hover",
+  "path": "lib/server-model-config.ts",
+  "line": 96,
+  "character": 18,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "lib/types/model-config.ts",
+   "delay_ms": 200
+  },
+  {
+   "kind": "request",
+   "path": "lib/types/model-config.ts",
+   "start": [
+    30,
+    6
+   ],
+   "text": "references",
+   "delay_ms": 200
+  }
+ ],
+ "case": {
+  "chain_step": 0,
+  "families": [],
+  "family": "H8",
+  "history_index": 2,
+  "history_seed": 1003,
+  "mode": "fresh",
+  "note": "after lib/types/model-config.ts: replace 'ProviderName' by 'zz' on line 217 and its inverse, 8 requests in a shuffled order: hover@lib/types/model-config.ts:484:9, references@lib/types/model-config.ts:30:6, hover@lib/server-model-config.ts:113:14, typeDefinition@lib/server-model-config.ts:159:17, documentHighlight@lib/types/model-config.ts:401:7, ...",
+  "seed": 1,
+  "timing": "race200"
+ },
+ "shape": "hover:text",
+ "signature": "ts7|r1_history|hover:text",
+ "expected": [
+  "(property) Array<T>.length: number Gets or sets the length of the array. This is a number one higher than the highest index in the array.",
+  [
+   96,
+   15,
+   96,
+   21
+  ]
+ ],
+ "actual": [
+  "(property) Array<string>.length: number Gets or sets the length of the array. This is a number one higher than the highest index in the array.",
+  [
+   96,
+   15,
+   96,
+   21
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "H8: after lib/types/model-config.ts: replace 'ProviderName' by 'zz' on line 217 and its inverse, 8 requests in a shuffled order: hover@lib/types/model-config.ts:484:9, references@lib/types/model-config.ts; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 347s",
+ "violation": {
+  "oracle": "r1_history",
+  "server": "ts7-7.0.2",
+  "project": "DayuanJiang/next-ai-draw-io@58b73ef761d8",
+  "key": {
+   "method": "hover",
+   "path": "lib/server-model-config.ts",
+   "line": 96,
+   "character": 18,
+   "extra": ""
+  },
+  "expected": [
+   "(property) Array<T>.length: number Gets or sets the length of the array. This is a number one higher than the highest index in the array.",
+   [
+    96,
+    15,
+    96,
+    21
+   ]
+  ],
+  "actual": [
+   "(property) Array<string>.length: number Gets or sets the length of the array. This is a number one higher than the highest index in the array.",
+   [
+    96,
+    15,
+    96,
+    21
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "app/api/validate-diagram/route.ts",
+    "delay_ms": 200
+   },
+   {
+    "kind": "open",
+    "path": "lib/server-model-config.ts",
+    "delay_ms": 200
+   },
+   {
+    "kind": "open",
+    "path": "lib/types/model-config.ts",
+    "delay_ms": 200
+   },
+   {
+    "kind": "change",
+    "path": "lib/types/model-config.ts",
+    "start": [
+     217,
+     46
+    ],
+    "end": [
+     217,
+     58
+    ],
+    "text": "zz",
+    "delay_ms": 200
+   },
+   {
+    "kind": "change",
+    "path": "lib/types/model-config.ts",
+    "start": [
+     217,
+     46
+    ],
+    "end": [
+     217,
+     48
+    ],
+    "text": "ProviderName",
+    "delay_ms": 200
+   },
+   {
+    "kind": "request",
+    "path": "lib/types/model-config.ts",
+    "start": [
+     484,
+     9
+    ],
+    "text": "hover",
+    "delay_ms": 200
+   },
+   {
+    "kind": "request",
+    "path": "lib/types/model-config.ts",
+    "start": [
+     30,
+     6
+    ],
+    "text": "references",
+    "delay_ms": 200
+   },
+   {
+    "kind": "request",
+    "path": "lib/server-model-config.ts",
+    "start": [
+     113,
+     14
+    ],
+    "text": "hover",
+    "delay_ms": 200
+   },
+   {
+    "kind": "request",
+    "path": "lib/server-model-config.ts",
+    "start": [
+     159,
+     17
+    ],
+    "text": "typeDefinition",
+    "delay_ms": 200
+   },
+   {
+    "kind": "request",
+    "path": "lib/types/model-config.ts",
+    "start": [
+     401,
+     7
+    ],
+    "text": "documentHighlight",
+    "delay_ms": 200
+   },
+   {
+    "kind": "request",
+    "path": "app/api/validate-diagram/route.ts",
+    "start": [
+     41,
+     11
+    ],
+    "text": "references",
+    "delay_ms": 200
+   },
+   {
+    "kind": "request",
+    "path": "app/api/validate-diagram/route.ts",
+    "start": [
+     24,
+     9
+    ],
+    "text": "completion",
+    "delay_ms": 200
+   },
+   {
+    "kind": "request",
+    "path": "app/api/validate-diagram/route.ts",
+    "start": [
+     133,
+     26
+    ],
+    "text": "references",
+    "delay_ms": 200
+   }
+  ],
+  "detail": "{\"case\": {\"chain_step\": 0, \"families\": [], \"family\": \"H8\", \"history_index\": 2, \"history_seed\": 1003, \"mode\": \"fresh\", \"note\": \"after lib/types/model-config.ts: replace 'ProviderName' by 'zz' on line 217 and its inverse, 8 requests in a shuffled order: hover@lib/types/model-config.ts:484:9, references@lib/types/model-config.ts:30:6, hover@lib/server-model-config.ts:113:14, typeDefinition@lib/server-model-config.ts:159:17, documentHighlight@lib/types/model-config.ts:401:7, ...\", \"seed\": 1, \"timing\": \"race200\"}, \"note\": \"H8: after lib/types/model-config.ts: replace 'ProviderName' by 'zz' on line 217 and its inverse, 8 requests in a shuffled order: hover@lib/types/model-config.ts:484:9, references@lib/types/model-config.ts; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 347s\", \"shape\": \"hover:text\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "ts7|r1_history|hover:text",
+  "run_id": "119ebfb649be"
+ },
+ "replay_logs": [
+  "logs/ts7-7.0.2-tr500422-replay-baseline-20261118-214419-a77479.jsonl.gz",
+  "logs/ts7-7.0.2-tr500422-replay-control-20261118-214419-6e5c85.jsonl.gz",
+  "logs/ts7-7.0.2-tr500422-replay-history-20261118-214444-a13f83.jsonl.gz"
+ ],
+ "project_files": {},
+ "group": "ts7-r1-hover-text-h8-500422",
+ "reduced": true
+}

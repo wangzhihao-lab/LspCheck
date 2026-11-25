@@ -1,0 +1,42 @@
+{
+  "id": "dryrun",
+  "description": "Dry run of main_v1: one run per (oracle, server) on the smallest eligible project (corpus size_kb) with max_cases=2, to prove the whole path and measure seconds per run before the long campaign.",
+  "corpus": "data/lsptest/corpus_prepared.json",
+  "servers": [
+    {"kind": "pyright", "version": "1.1.414"},
+    {"kind": "ts6", "version": "6.0.3"},
+    {"kind": "ts7", "version": "7.0.2"},
+    {"kind": "rust-analyzer", "version": "2026-09-21"},
+    {"kind": "gopls", "version": "v0.23.0"}
+  ],
+  "oracles": {
+    "r0_crash": {"seeds": {"settled": [1]}},
+    "r1_history": {"seeds": {"settled": [1, 2, 3], "race0": [1], "race200": [1]}, "max_cases": 12},
+    "r2_handles": {"seeds": {"settled": [1, 2]}, "max_cases": 12},
+    "r3_routes": {"seeds": {"settled": [1, 2]}},
+    "r4_edits": {"seeds": {"settled": [1, 2]}, "max_cases": 12},
+    "r5_transforms": {"seeds": {"settled": [1, 2]}, "max_cases": 6},
+    "r6_crossimpl": {"seeds": {"settled": [1, 2]}, "servers": ["ts7"]}
+  },
+  "targets": {"max_files": 3, "max_positions_per_file": 12, "max_file_bytes": 256000},
+  "timeouts": {"settle_s": 300, "request_s": 30, "run_s": 3600},
+  "concurrency": 2,
+  "server_limits": {"rust-analyzer": 1},
+  "wall_clock_budget_h": 0,
+  "flake": {"n": 3, "per_signature": 1},
+  "signature_cap": {"runs": 3, "scope": "campaign"},
+  "dry_run": {"max_cases": 2, "only": true},
+  "eligibility": {
+    "force": [
+      {"server": "ts6", "repo": "ChatGPTNextWeb/NextChat",
+       "reason": "the corpus probe did not settle because of a URI-encoding bug in the probe; the engine settles this pair in 5 s"}
+    ],
+    "exclude": []
+  },
+  "project_overrides": {
+    "rust-lang/rustlings": {
+      "exclude_dirs": ["exercises", "solutions", "dev", "tests"],
+      "reason": "exercise and solution files belong to no crate (rust-analyzer offers no IDE services there); as in the R2/R3/R5 pilot"
+    }
+  }
+}

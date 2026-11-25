@@ -1,0 +1,3 @@
+2026-11-18 16:31:56,132 INFO campaign_run run 80b47cac5088: r4_edits on rust-analyzer 2026-09-21, niri-wm/niri@5f4469b6a992 seed 2 settled, targets ['niri-config/src/misc.rs', 'src/handlers/compositor.rs', 'src/ipc/client.rs']
+2026-11-18 16:33:16,881 INFO campaign_run run 80b47cac5088: 0 candidate(s) in 81s; confirming
+2026-11-18 16:33:16,881 INFO campaign_run run 80b47cac5088 finished: ok, 0 confirmed of 0 candidate(s), 81s

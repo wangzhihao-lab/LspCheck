@@ -1,0 +1,3 @@
+2026-11-18 02:27:22,786 INFO campaign_run run 0cea66542092: r4_edits on gopls v0.23.0, beego/beego@939cfde380bb seed 1 settled, targets ['server/web/filter/opentracing/filter.go', 'server/web/template_test.go', 'task/governor_command_test.go']
+2026-11-18 02:28:02,218 INFO campaign_run run 0cea66542092: 0 candidate(s) in 39s; confirming
+2026-11-18 02:28:02,219 INFO campaign_run run 0cea66542092 finished: ok, 0 confirmed of 0 candidate(s), 40s

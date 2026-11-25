@@ -1,0 +1,3 @@
+2026-11-18 01:27:03,599 INFO campaign_run run 41d150d0bc00: r0_crash on ts7 7.0.2, vadimdemedes/ink@02ae1e59e7c2 seed 1 settled, targets ['src/components/FocusContext.ts', 'src/dom.ts', 'test/colon-colors.tsx']
+2026-11-18 01:27:18,475 INFO campaign_run run 41d150d0bc00: 0 candidate(s) in 15s; confirming
+2026-11-18 01:27:18,478 INFO campaign_run run 41d150d0bc00 finished: ok, 0 confirmed of 0 candidate(s), 15s

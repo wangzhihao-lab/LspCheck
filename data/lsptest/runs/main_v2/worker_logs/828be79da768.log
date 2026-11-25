@@ -1,0 +1,3 @@
+2026-11-18 02:21:08,477 INFO campaign_run run 828be79da768: r2_handles on gopls v0.23.0, beego/beego@939cfde380bb seed 1 settled, targets ['server/web/filter/opentracing/filter.go', 'server/web/template_test.go', 'task/governor_command_test.go']
+2026-11-18 02:22:09,593 INFO campaign_run run 828be79da768: 0 candidate(s) in 61s; confirming
+2026-11-18 02:22:09,593 INFO campaign_run run 828be79da768 finished: ok, 0 confirmed of 0 candidate(s), 61s

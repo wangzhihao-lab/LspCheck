@@ -1,0 +1,25 @@
+<scheduler message>
+2026-11-17 21:41:38,119 ERROR head_check head build unavailable: InstallError: go install golang.org/x/tools/gopls@v0.0.0-20261118023053-8967817d2000 exited 1: 	The go.mod file for the module providing named packages contains one or | 	more replace directives. It must not contain directives that would cause | 	it to be interpreted differently than if it were the main module.
+<scheduler message>
+<scheduler message>
+<scheduler message>
+2026-11-17 21:43:11,126 INFO head_check head-2026-11-18: gopls-r2-codeactionresolve-changed-codeaction-70b3e9 on gopls v0.0.0-20261118023053-8967817d2000
+2026-11-17 21:43:55,572 INFO head_check   -> reproduced (3/3, 44s) 
+2026-11-17 21:43:55,572 INFO head_check head-2026-11-18: gopls-r4-diagnostics-extra-notatype-mutation-m2-477181 on gopls v0.0.0-20261118023053-8967817d2000
+2026-11-17 21:44:14,029 INFO head_check   -> unsettled (0/3, 18s) 
+2026-11-17 21:44:14,029 INFO head_check head-2026-11-18: gopls-r4-diagnostics-extra-untypedniluse-mutation-m2-354f70 on gopls v0.0.0-20261118023053-8967817d2000
+2026-11-17 21:44:47,824 INFO head_check   -> unsettled (0/3, 34s) 
+2026-11-17 21:44:47,824 INFO head_check head-2026-11-18: gopls-r4-diagnostics-extra-invalidifaceassign-mutation-m2-416e90 on gopls v0.0.0-20261118023053-8967817d2000
+2026-11-17 21:45:17,834 INFO head_check   -> unsettled (0/3, 30s) 
+2026-11-17 21:45:17,834 INFO head_check head-2026-11-18: gopls-r4-diagnostics-extra-nonindexableoperand-mutation-m2-ba152b on gopls v0.0.0-20261118023053-8967817d2000
+2026-11-17 21:46:19,720 INFO head_check   -> reproduced (3/3, 62s) 
+2026-11-17 21:46:19,720 INFO head_check head-2026-11-18: gopls-r4-diagnostics-extra-nonsliceableoperand-mutation-m2-d80a9a on gopls v0.0.0-20261118023053-8967817d2000
+2026-11-17 21:47:24,511 INFO head_check   -> reproduced (3/3, 65s) 
+2026-11-17 21:47:24,511 INFO head_check head-2026-11-18: gopls-r4-diagnostics-extra-mutation-m2-111975 on gopls v0.0.0-20261118023053-8967817d2000
+2026-11-17 21:47:53,624 INFO head_check   -> unsettled (0/3, 29s) 
+2026-11-17 21:47:53,624 INFO head_check head-2026-11-18: gopls-r4-syntax-gained-mutation-m2-86fde3 on gopls v0.0.0-20261118023053-8967817d2000
+2026-11-17 21:48:22,134 INFO head_check   -> unsettled (0/3, 28s) 
+2026-11-17 21:48:22,134 INFO head_check head-2026-11-18: gopls-r4-diagnostics-extra-undeclaredname-wrongar-mutation-m3-946c39 on gopls v0.0.0-20261118023053-8967817d2000
+2026-11-17 21:48:55,053 INFO head_check   -> unsettled (0/3, 33s) 
+2026-11-17 21:48:55,053 INFO head_check head-2026-11-18: gopls-r1-references-extra-h9-0290a7 on gopls v0.0.0-20261118023053-8967817d2000
+2026-11-17 21:49:26,948 INFO head_check   -> reproduced (3/3, 32s) 

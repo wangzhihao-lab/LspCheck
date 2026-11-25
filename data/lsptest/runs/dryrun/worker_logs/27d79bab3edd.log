@@ -1,0 +1,9 @@
+2026-09-23 11:13:17,691 INFO campaign_run run 27d79bab3edd: r3_routes on rust-analyzer 2026-09-21, rust-lang/rustlings@a650509c789d seed 1 settled, targets ['src/cargo_toml.rs', 'src/exercise.rs', 'src/watch/state.rs']
+2026-09-23 11:16:26,767 INFO campaign_run run 27d79bab3edd: 6 candidate(s) in 189s; confirming
+2026-09-23 11:16:59,729 INFO flake replay 1/3 of rust-analyzer|r3_routes|definitionConsistency.shorthand:extra: settled=True control_stable=True reproduced=True (33.0s)
+2026-09-23 11:17:38,471 INFO flake replay 2/3 of rust-analyzer|r3_routes|definitionConsistency.shorthand:extra: settled=True control_stable=True reproduced=True (38.7s)
+2026-09-23 11:18:13,888 INFO flake replay 3/3 of rust-analyzer|r3_routes|definitionConsistency.shorthand:extra: settled=True control_stable=True reproduced=True (35.4s)
+2026-09-23 11:18:54,921 INFO flake replay 1/3 of rust-analyzer|r3_routes|definitionConsistency:changed: settled=True control_stable=True reproduced=True (41.0s)
+2026-09-23 11:19:28,993 INFO flake replay 2/3 of rust-analyzer|r3_routes|definitionConsistency:changed: settled=True control_stable=True reproduced=True (34.1s)
+2026-09-23 11:20:08,631 INFO flake replay 3/3 of rust-analyzer|r3_routes|definitionConsistency:changed: settled=True control_stable=True reproduced=True (39.6s)
+2026-09-23 11:20:08,666 INFO campaign_run run 27d79bab3edd finished: ok, 2 confirmed of 6 candidate(s), 411s

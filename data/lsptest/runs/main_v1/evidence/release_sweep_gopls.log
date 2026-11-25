@@ -1,0 +1,76 @@
+2026-09-28 06:06:48,654 INFO release_sweep 38 job(s) for gopls
+2026-09-28 06:06:48,654 INFO release_sweep newest-2026-09-28: gopls-r4-diagnostics-extra-notatype-mutation-m2-477181 on gopls v0.23.0
+2026-09-28 06:07:35,210 INFO release_sweep   -> reproduced (3/3, 47s) 
+2026-09-28 06:07:35,210 INFO release_sweep newest-2026-09-28: gopls-r4-diagnostics-extra-untypedniluse-mutation-m2-354f70 on gopls v0.23.0
+2026-09-28 06:08:31,050 INFO release_sweep   -> reproduced (3/3, 56s) 
+2026-09-28 06:08:31,050 INFO release_sweep newest-2026-09-28: gopls-r4-diagnostics-extra-invalidifaceassign-mutation-m2-416e90 on gopls v0.23.0
+2026-09-28 06:09:25,111 INFO release_sweep   -> reproduced (3/3, 54s) 
+2026-09-28 06:09:25,111 INFO release_sweep newest-2026-09-28: gopls-r4-diagnostics-extra-nonindexableoperand-mutation-m2-ba152b on gopls v0.23.0
+2026-09-28 06:10:23,997 INFO release_sweep   -> reproduced (3/3, 59s) 
+2026-09-28 06:10:23,997 INFO release_sweep newest-2026-09-28: gopls-r4-diagnostics-extra-nonsliceableoperand-mutation-m2-d80a9a on gopls v0.23.0
+2026-09-28 06:11:32,373 INFO release_sweep   -> reproduced (3/3, 68s) 
+2026-09-28 06:11:32,374 INFO release_sweep newest-2026-09-28: gopls-r4-diagnostics-extra-mutation-m2-111975 on gopls v0.23.0
+2026-09-28 06:12:23,101 INFO release_sweep   -> reproduced (3/3, 51s) 
+2026-09-28 06:12:23,101 INFO release_sweep newest-2026-09-28: gopls-r4-syntax-gained-mutation-m2-86fde3 on gopls v0.23.0
+2026-09-28 06:13:11,945 INFO release_sweep   -> reproduced (3/3, 49s) 
+2026-09-28 06:13:11,945 INFO release_sweep newest-2026-09-28: gopls-r4-diagnostics-extra-undeclaredname-wrongar-mutation-m3-946c39 on gopls v0.23.0
+2026-09-28 06:14:16,489 INFO release_sweep   -> reproduced (3/3, 64s) 
+2026-09-28 06:14:16,489 INFO release_sweep newest-2026-09-28: gopls-r1-references-extra-h9-0290a7 on gopls v0.23.0
+2026-09-28 06:14:50,813 INFO release_sweep   -> reproduced (3/3, 34s) 
+2026-09-28 06:14:50,813 INFO release_sweep lifecycle: gopls-r4-diagnostics-extra-mutation-m2-111975 on gopls v0.16.0
+2026-09-28 06:15:09,676 INFO release_sweep   -> unsettled (0/3, 19s) 
+2026-09-28 06:15:09,676 INFO release_sweep lifecycle: gopls-r4-diagnostics-extra-mutation-m2-111975 on gopls v0.17.0
+2026-09-28 06:15:56,818 INFO release_sweep   -> reproduced (3/3, 47s) 
+2026-09-28 06:15:56,818 INFO release_sweep lifecycle: gopls-r4-diagnostics-extra-mutation-m2-111975 on gopls v0.18.0
+2026-09-28 06:16:44,405 INFO release_sweep   -> reproduced (3/3, 48s) 
+2026-09-28 06:16:44,405 INFO release_sweep lifecycle: gopls-r2-codeactionresolve-changed-codeaction-70b3e9 on gopls v0.19.0+go1.27.1
+2026-09-28 06:17:25,102 INFO release_sweep   -> reproduced (3/3, 41s) 
+2026-09-28 06:17:25,102 INFO release_sweep lifecycle: gopls-r4-diagnostics-extra-notatype-mutation-m2-477181 on gopls v0.19.0+go1.27.1
+2026-09-28 06:18:13,547 INFO release_sweep   -> reproduced (3/3, 48s) 
+2026-09-28 06:18:13,547 INFO release_sweep lifecycle: gopls-r4-diagnostics-extra-mutation-m2-111975 on gopls v0.19.0+go1.27.1
+2026-09-28 06:19:01,759 INFO release_sweep   -> reproduced (3/3, 48s) 
+2026-09-28 06:19:01,759 INFO release_sweep lifecycle: gopls-r4-diagnostics-extra-undeclaredname-wrongar-mutation-m3-946c39 on gopls v0.19.0+go1.27.1
+2026-09-28 06:20:08,414 INFO release_sweep   -> reproduced (3/3, 67s) 
+2026-09-28 06:20:08,414 INFO release_sweep lifecycle: gopls-r1-references-extra-h9-0290a7 on gopls v0.19.0+go1.27.1
+2026-09-28 06:20:43,130 INFO release_sweep   -> reproduced (3/3, 35s) 
+2026-09-28 06:20:43,130 INFO release_sweep lifecycle: gopls-r2-codeactionresolve-changed-codeaction-70b3e9 on gopls v0.20.0
+2026-09-28 06:21:18,916 INFO release_sweep   -> reproduced (3/3, 36s) 
+2026-09-28 06:21:18,917 INFO release_sweep lifecycle: gopls-r4-diagnostics-extra-notatype-mutation-m2-477181 on gopls v0.20.0
+2026-09-28 06:22:11,432 INFO release_sweep   -> reproduced (3/3, 52s) 
+2026-09-28 06:22:11,433 INFO release_sweep lifecycle: gopls-r4-diagnostics-extra-mutation-m2-111975 on gopls v0.20.0
+2026-09-28 06:22:59,404 INFO release_sweep   -> reproduced (3/3, 48s) 
+2026-09-28 06:22:59,404 INFO release_sweep lifecycle: gopls-r4-diagnostics-extra-undeclaredname-wrongar-mutation-m3-946c39 on gopls v0.20.0
+2026-09-28 06:24:09,340 INFO release_sweep   -> reproduced (3/3, 70s) 
+2026-09-28 06:24:09,340 INFO release_sweep lifecycle: gopls-r1-references-extra-h9-0290a7 on gopls v0.20.0
+2026-09-28 06:24:46,468 INFO release_sweep   -> reproduced (3/3, 37s) 
+2026-09-28 06:24:46,469 INFO release_sweep lifecycle: gopls-r2-codeactionresolve-changed-codeaction-70b3e9 on gopls v0.21.0
+2026-09-28 06:25:30,407 INFO release_sweep   -> reproduced (3/3, 44s) 
+2026-09-28 06:25:30,407 INFO release_sweep lifecycle: gopls-r4-diagnostics-extra-notatype-mutation-m2-477181 on gopls v0.21.0
+2026-09-28 06:26:23,776 INFO release_sweep   -> reproduced (3/3, 53s) 
+2026-09-28 06:26:23,777 INFO release_sweep lifecycle: gopls-r4-diagnostics-extra-mutation-m2-111975 on gopls v0.21.0
+2026-09-28 06:27:15,397 INFO release_sweep   -> reproduced (3/3, 52s) 
+2026-09-28 06:27:15,397 INFO release_sweep lifecycle: gopls-r4-diagnostics-extra-undeclaredname-wrongar-mutation-m3-946c39 on gopls v0.21.0
+2026-09-28 06:28:27,219 INFO release_sweep   -> reproduced (3/3, 72s) 
+2026-09-28 06:28:27,219 INFO release_sweep lifecycle: gopls-r1-references-extra-h9-0290a7 on gopls v0.21.0
+2026-09-28 06:29:03,079 INFO release_sweep   -> reproduced (3/3, 36s) 
+2026-09-28 06:29:03,080 INFO release_sweep lifecycle: gopls-r2-codeactionresolve-changed-codeaction-70b3e9 on gopls v0.22.0
+2026-09-28 06:29:42,756 INFO release_sweep   -> reproduced (3/3, 40s) 
+2026-09-28 06:29:42,757 INFO release_sweep lifecycle: gopls-r4-diagnostics-extra-notatype-mutation-m2-477181 on gopls v0.22.0
+2026-09-28 06:30:32,245 INFO release_sweep   -> reproduced (3/3, 50s) 
+2026-09-28 06:30:32,245 INFO release_sweep lifecycle: gopls-r4-diagnostics-extra-mutation-m2-111975 on gopls v0.22.0
+2026-09-28 06:31:20,717 INFO release_sweep   -> reproduced (3/3, 48s) 
+2026-09-28 06:31:20,718 INFO release_sweep lifecycle: gopls-r4-diagnostics-extra-undeclaredname-wrongar-mutation-m3-946c39 on gopls v0.22.0
+2026-09-28 06:32:25,828 INFO release_sweep   -> reproduced (3/3, 65s) 
+2026-09-28 06:32:25,828 INFO release_sweep lifecycle: gopls-r1-references-extra-h9-0290a7 on gopls v0.22.0
+2026-09-28 06:32:59,068 INFO release_sweep   -> reproduced (3/3, 33s) 
+2026-09-28 06:32:59,068 INFO release_sweep lifecycle: gopls-r2-codeactionresolve-changed-codeaction-70b3e9 on gopls v0.23.0
+2026-09-28 06:33:39,989 INFO release_sweep   -> reproduced (3/3, 41s) 
+2026-09-28 06:33:39,989 INFO release_sweep lifecycle: gopls-r4-diagnostics-extra-notatype-mutation-m2-477181 on gopls v0.23.0
+2026-09-28 06:34:35,022 INFO release_sweep   -> reproduced (3/3, 55s) 
+2026-09-28 06:34:35,023 INFO release_sweep lifecycle: gopls-r4-diagnostics-extra-mutation-m2-111975 on gopls v0.23.0
+2026-09-28 06:35:24,078 INFO release_sweep   -> reproduced (3/3, 49s) 
+2026-09-28 06:35:24,078 INFO release_sweep lifecycle: gopls-r4-diagnostics-extra-undeclaredname-wrongar-mutation-m3-946c39 on gopls v0.23.0
+2026-09-28 06:36:23,745 INFO release_sweep   -> reproduced (3/3, 60s) 
+2026-09-28 06:36:23,745 INFO release_sweep lifecycle: gopls-r1-references-extra-h9-0290a7 on gopls v0.23.0
+2026-09-28 06:36:57,220 INFO release_sweep   -> reproduced (3/3, 34s) 
+2026-09-28 06:36:57,220 INFO release_sweep all jobs of gopls done

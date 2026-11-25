@@ -1,0 +1,3 @@
+2026-11-18 20:16:44,752 INFO campaign_run run 2c1df87734d1: r0_crash on gopls v0.23.0, docker/compose@c6dffb26bdfd seed 1 settled, targets ['internal/tracing/mux.go', 'pkg/compose/model.go', 'pkg/watch/temp.go']
+2026-11-18 20:16:52,311 INFO campaign_run run 2c1df87734d1: 0 candidate(s) in 8s; confirming
+2026-11-18 20:16:52,312 INFO campaign_run run 2c1df87734d1 finished: ok, 0 confirmed of 0 candidate(s), 8s

@@ -1,0 +1,9 @@
+2026-09-23 15:17:50,696 INFO campaign_run run f7419a4c0e89: r3_routes on gopls v0.23.0, caddyserver/caddy@c18099a0af5e seed 1 settled, targets ['caddyconfig/httploader.go', 'logging_test.go', 'modules/caddyhttp/reverseproxy/selectionpolicies_test.go']
+2026-09-23 15:19:43,497 INFO campaign_run run f7419a4c0e89: 14 candidate(s) in 113s; confirming
+2026-09-23 15:20:00,151 INFO flake replay 1/3 of gopls|r3_routes|definitionConsistency:changed: settled=True control_stable=True reproduced=True (16.7s)
+2026-09-23 15:20:16,829 INFO flake replay 2/3 of gopls|r3_routes|definitionConsistency:changed: settled=True control_stable=True reproduced=True (16.7s)
+2026-09-23 15:20:34,158 INFO flake replay 3/3 of gopls|r3_routes|definitionConsistency:changed: settled=True control_stable=True reproduced=True (17.3s)
+2026-09-23 15:20:46,260 INFO flake replay 1/3 of gopls|r3_routes|highlightVsReferences:extra: settled=True control_stable=True reproduced=True (12.1s)
+2026-09-23 15:20:57,940 INFO flake replay 2/3 of gopls|r3_routes|highlightVsReferences:extra: settled=True control_stable=True reproduced=True (11.7s)
+2026-09-23 15:21:10,332 INFO flake replay 3/3 of gopls|r3_routes|highlightVsReferences:extra: settled=True control_stable=True reproduced=True (12.4s)
+2026-09-23 15:21:10,362 INFO campaign_run run f7419a4c0e89 finished: ok, 2 confirmed of 14 candidate(s), 200s

@@ -1,0 +1,450 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "e152a3b155ff-v00",
+ "run_id": "e152a3b155ff",
+ "oracle": "r3_routes",
+ "server": {
+  "kind": "pyright",
+  "version": "1.1.414"
+ },
+ "project": {
+  "name": "hiyouga/LlamaFactory@97b32d3133b5",
+  "source": "corpus",
+  "ref": "temp/corpus/hiyouga__LlamaFactory@97b32d3133b5",
+  "commit": "97b32d3133b501432141a82949d5c7bc4d94f23a",
+  "language": "python"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "scripts/bench_qwen.py",
+    "positions": [
+     [
+      31,
+      22
+     ],
+     [
+      42,
+      67
+     ],
+     [
+      57,
+      79
+     ],
+     [
+      59,
+      29
+     ],
+     [
+      86,
+      40
+     ],
+     [
+      98,
+      34
+     ],
+     [
+      98,
+      63
+     ],
+     [
+      128,
+      39
+     ],
+     [
+      147,
+      14
+     ],
+     [
+      148,
+      10
+     ],
+     [
+      150,
+      62
+     ],
+     [
+      163,
+      14
+     ]
+    ],
+    "ends": [
+     [
+      31,
+      26
+     ],
+     [
+      42,
+      71
+     ],
+     [
+      57,
+      84
+     ],
+     [
+      59,
+      35
+     ],
+     [
+      86,
+      43
+     ],
+     [
+      98,
+      37
+     ],
+     [
+      98,
+      65
+     ],
+     [
+      128,
+      48
+     ],
+     [
+      147,
+      22
+     ],
+     [
+      148,
+      12
+     ],
+     [
+      150,
+      69
+     ],
+     [
+      163,
+      21
+     ]
+    ],
+    "names": [
+     "Dataset",
+     "image_t",
+     "seq_length",
+     "image_seqlen",
+     "model",
+     "torch",
+     "dim",
+     "model_name_or_path",
+     "deepspeed_stage",
+     "args",
+     "get_train_args",
+     "data_collator"
+    ]
+   },
+   {
+    "path": "src/llamafactory/hparams/training_args.py",
+    "positions": [
+     [
+      18,
+      11
+     ],
+     [
+      31,
+      71
+     ],
+     [
+      38,
+      5
+     ],
+     [
+      63,
+      43
+     ],
+     [
+      80,
+      12
+     ],
+     [
+      82,
+      14
+     ],
+     [
+      100,
+      12
+     ],
+     [
+      102,
+      27
+     ],
+     [
+      106,
+      25
+     ],
+     [
+      108,
+      12
+     ],
+     [
+      129,
+      9
+     ],
+     [
+      152,
+      18
+     ]
+    ],
+    "ends": [
+     [
+      18,
+      17
+     ],
+     [
+      31,
+      85
+     ],
+     [
+      38,
+      10
+     ],
+     [
+      63,
+      52
+     ],
+     [
+      80,
+      16
+     ],
+     [
+      82,
+      25
+     ],
+     [
+      100,
+      16
+     ],
+     [
+      102,
+      29
+     ],
+     [
+      106,
+      29
+     ],
+     [
+      108,
+      16
+     ],
+     [
+      129,
+      15
+     ],
+     [
+      152,
+      29
+     ]
+    ],
+    "names": [
+     "transformers",
+     "McaSeq2SeqTrainingArguments",
+     "dataclass",
+     "_convert_str_dict",
+     "metadata",
+     "profiler_warmup_steps",
+     "metadata",
+     "bool",
+     "Optional",
+     "metadata",
+     "fp8_backend",
+     "BaseTrainingArguments"
+    ]
+   },
+   {
+    "path": "src/llamafactory/v1/plugins/model_plugins/kernels/ops/mlp/cuda_fused_moe.py",
+    "positions": [
+     [
+      67,
+      14
+     ],
+     [
+      87,
+      74
+     ],
+     [
+      120,
+      25
+     ],
+     [
+      163,
+      26
+     ],
+     [
+      197,
+      17
+     ],
+     [
+      198,
+      54
+     ],
+     [
+      229,
+      21
+     ],
+     [
+      256,
+      6
+     ],
+     [
+      310,
+      62
+     ],
+     [
+      318,
+      39
+     ],
+     [
+      372,
+      11
+     ],
+     [
+      412,
+      54
+     ]
+    ],
+    "ends": [
+     [
+      67,
+      20
+     ],
+     [
+      87,
+      81
+     ],
+     [
+      120,
+      29
+     ],
+     [
+      163,
+      32
+     ],
+     [
+      197,
+      27
+     ],
+     [
+      198,
+      61
+     ],
+     [
+      229,
+      30
+     ],
+     [
+      256,
+      8
+     ],
+     [
+      310,
+      65
+     ],
+     [
+      318,
+      40
+     ],
+     [
+      372,
+      15
+     ],
+     [
+      412,
+      55
+     ]
+    ],
+    "names": [
+     "expert_index",
+     "hidden_states",
+     "cumsum_t",
+     "grad_output",
+     "grad_fc1_activation",
+     "fc1_activation",
+     "group_gemm_same_mn",
+     "self",
+     "shape",
+     "to",
+     "current",
+     "nn"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "definitionConsistency",
+  "path": "src/llamafactory/hparams/__init__.py",
+  "line": 36,
+  "character": 12,
+  "extra": "from:scripts/bench_qwen.py:150:62"
+ },
+ "ops": [],
+ "case": {
+  "loc": [
+   "src/llamafactory/hparams/__init__.py",
+   36,
+   5,
+   36,
+   19
+  ],
+  "sub": "d",
+  "target": [
+   "scripts/bench_qwen.py",
+   150,
+   62
+  ]
+ },
+ "shape": "definitionConsistency:lost",
+ "signature": "pyright|r3_routes|definitionConsistency:lost",
+ "expected": [
+  [
+   "src/llamafactory/hparams/parser.py",
+   394,
+   4,
+   394,
+   18
+  ]
+ ],
+ "actual": [],
+ "reproduced": "3/3",
+ "note": "flake 3/3 [r1:SCR r2:SCR r3:SCR] in 49s",
+ "violation": {
+  "oracle": "r3_routes",
+  "server": "pyright-1.1.414",
+  "project": "hiyouga/LlamaFactory@97b32d3133b5",
+  "key": {
+   "method": "definitionConsistency",
+   "path": "src/llamafactory/hparams/__init__.py",
+   "line": 36,
+   "character": 12,
+   "extra": "from:scripts/bench_qwen.py:150:62"
+  },
+  "expected": [
+   [
+    "src/llamafactory/hparams/parser.py",
+    394,
+    4,
+    394,
+    18
+   ]
+  ],
+  "actual": [],
+  "ops": [],
+  "detail": "{\"case\": {\"loc\": [\"src/llamafactory/hparams/__init__.py\", 36, 5, 36, 19], \"sub\": \"d\", \"target\": [\"scripts/bench_qwen.py\", 150, 62]}, \"note\": \"flake 3/3 [r1:SCR r2:SCR r3:SCR] in 49s\", \"shape\": \"definitionConsistency:lost\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "pyright|r3_routes|definitionConsistency:lost",
+  "run_id": "e152a3b155ff"
+ },
+ "replay_logs": [
+  "logs/pyright-1.1.414-e152a3b155ff-r3-replay-baseline-20260923-201657-b20791.jsonl.gz",
+  "logs/pyright-1.1.414-e152a3b155ff-r3-replay-control-20260923-201706-c5290c.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

@@ -1,0 +1,3 @@
+2026-09-25 14:05:57,715 INFO campaign_run run c03292ff5291: r1_history on gopls v0.12.0, gopls-57480 seed 3 settled, targets ['p_test.go']
+2026-09-25 14:22:33,663 INFO campaign_run run c03292ff5291: 0 candidate(s) in 996s; confirming
+2026-09-25 14:22:33,665 INFO campaign_run run c03292ff5291 finished: ok, 0 confirmed of 0 candidate(s), 996s

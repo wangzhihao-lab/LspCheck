@@ -1,0 +1,9 @@
+2026-09-24 21:34:55,259 INFO campaign_run run db6b5b95e3e6: r2_handles on rust-analyzer 2022-07-25, rust-analyzer-11897 seed 1 settled, targets ['src/main.rs']
+2026-09-24 21:36:11,024 INFO campaign_run run db6b5b95e3e6: 3 candidate(s) in 76s; confirming
+2026-09-24 21:36:31,370 INFO flake replay 1/3 of rust-analyzer|r2_handles|completionResolve:changed: settled=True control_stable=True reproduced=True (20.3s)
+2026-09-24 21:36:53,740 INFO flake replay 2/3 of rust-analyzer|r2_handles|completionResolve:changed: settled=True control_stable=True reproduced=True (22.4s)
+2026-09-24 21:37:17,171 INFO flake replay 3/3 of rust-analyzer|r2_handles|completionResolve:changed: settled=True control_stable=True reproduced=True (23.4s)
+2026-09-24 21:37:51,150 INFO flake replay 1/3 of rust-analyzer|r2_handles|codeActionResolve:changed: settled=True control_stable=True reproduced=True (34.0s)
+2026-09-24 21:38:27,373 INFO flake replay 2/3 of rust-analyzer|r2_handles|codeActionResolve:changed: settled=True control_stable=True reproduced=True (36.2s)
+2026-09-24 21:39:00,614 INFO flake replay 3/3 of rust-analyzer|r2_handles|codeActionResolve:changed: settled=True control_stable=True reproduced=True (33.2s)
+2026-09-24 21:39:00,633 INFO campaign_run run db6b5b95e3e6 finished: ok, 2 confirmed of 3 candidate(s), 245s

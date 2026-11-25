@@ -1,0 +1,757 @@
+{
+ "campaign": "recheck_main_v2",
+ "config_file": "data/lsptest/campaigns/recheck_main_v2.json",
+ "dry_run": false,
+ "config": {
+  "id": "recheck_main_v2",
+  "description": "Recomputation of a sample of main_v2 runs chosen before the results were read (plan/main_v2_recheck_sample.md); configuration identical to main_v2 apart from id and description.",
+  "corpus": "data/lsptest/corpus_v2_prepared.json",
+  "servers": [
+   {
+    "kind": "pyright",
+    "version": "1.1.414"
+   },
+   {
+    "kind": "ts6",
+    "version": "6.0.3"
+   },
+   {
+    "kind": "ts7",
+    "version": "7.0.2"
+   },
+   {
+    "kind": "rust-analyzer",
+    "version": "2026-09-21"
+   },
+   {
+    "kind": "gopls",
+    "version": "v0.23.0"
+   }
+  ],
+  "oracles": {
+   "r0_crash": {
+    "seeds": {
+     "settled": [
+      1
+     ]
+    }
+   },
+   "r1_history": {
+    "seeds": {
+     "settled": [
+      1,
+      2,
+      3
+     ],
+     "race0": [
+      1
+     ],
+     "race200": [
+      1
+     ]
+    },
+    "max_cases": 12
+   },
+   "r2_handles": {
+    "seeds": {
+     "settled": [
+      1,
+      2
+     ]
+    },
+    "max_cases": 12
+   },
+   "r3_routes": {
+    "seeds": {
+     "settled": [
+      1,
+      2
+     ]
+    }
+   },
+   "r4_edits": {
+    "seeds": {
+     "settled": [
+      1,
+      2
+     ]
+    },
+    "max_cases": 12
+   },
+   "r5_transforms": {
+    "seeds": {
+     "settled": [
+      1,
+      2
+     ]
+    },
+    "max_cases": 6
+   },
+   "r6_crossimpl": {
+    "seeds": {
+     "settled": [
+      1,
+      2
+     ]
+    },
+    "servers": [
+     "ts7"
+    ]
+   }
+  },
+  "targets": {
+   "max_files": 3,
+   "max_positions_per_file": 12,
+   "max_file_bytes": 256000
+  },
+  "timeouts": {
+   "settle_s": 300,
+   "request_s": 30,
+   "run_s": 7200
+  },
+  "concurrency": 4,
+  "server_limits": {
+   "rust-analyzer": 2
+  },
+  "wall_clock_budget_h": 0,
+  "flake": {
+   "n": 3,
+   "per_signature": 1
+  },
+  "signature_cap": {
+   "runs": 3,
+   "scope": "campaign"
+  },
+  "eligibility": {
+   "force": [
+    {
+     "server": "ts6",
+     "repo": "umami-software/umami",
+     "reason": "the frozen preparation ran pnpm 10 (lockfile fallback) and failed on the project's engines field (pnpm 12.3.4); dependencies installed by hand with pnpm 12.3.4, --ignore-scripts --frozen-lockfile (data/lsptest/corpus_v2_deps_manual.md); re-probe settles with 0 errors"
+    },
+    {
+     "server": "ts7",
+     "repo": "umami-software/umami",
+     "reason": "the frozen preparation ran pnpm 10 (lockfile fallback) and failed on the project's engines field (pnpm 12.3.4); dependencies installed by hand with pnpm 12.3.4, --ignore-scripts --frozen-lockfile (data/lsptest/corpus_v2_deps_manual.md); re-probe settles with 0 errors"
+    },
+    {
+     "server": "ts6",
+     "repo": "pear-devs/pear-desktop",
+     "reason": "the frozen preparation ran pnpm 10 and failed on the project's engines field (pnpm >=11); dependencies installed by hand with pnpm 11.27.1 (the latest 11.x on 2026-09-23), --ignore-scripts --frozen-lockfile, Node engine check off for the build tool node-gyp (data/lsptest/corpus_v2_deps_manual.md); re-probe settles with 0 errors"
+    },
+    {
+     "server": "ts7",
+     "repo": "pear-devs/pear-desktop",
+     "reason": "the frozen preparation ran pnpm 10 and failed on the project's engines field (pnpm >=11); dependencies installed by hand with pnpm 11.27.1 (the latest 11.x on 2026-09-23), --ignore-scripts --frozen-lockfile, Node engine check off for the build tool node-gyp (data/lsptest/corpus_v2_deps_manual.md); re-probe settles with 0 errors"
+    },
+    {
+     "server": "ts6",
+     "repo": "vadimdemedes/ink",
+     "reason": "no lockfile in the repository, so the frozen preparation installed nothing; dependencies installed by hand with npm --ignore-scripts and only versions published by 2026-09-23 (npm --before; data/lsptest/corpus_v2_deps_manual.md); re-probe settles with 0 errors"
+    },
+    {
+     "server": "ts7",
+     "repo": "vadimdemedes/ink",
+     "reason": "no lockfile in the repository, so the frozen preparation installed nothing; dependencies installed by hand with npm --ignore-scripts and only versions published by 2026-09-23 (npm --before; data/lsptest/corpus_v2_deps_manual.md); re-probe settles with 0 errors"
+    }
+   ],
+   "exclude": []
+  },
+  "project_overrides": {},
+  "notes": [
+   "Identical to data/lsptest/campaigns/main_v1.json except id, description, corpus, eligibility, project overrides and these notes, so that the two corpora are two runs of one campaign design.",
+   "The signature cap is per campaign: signatures confirmed in main_v1 are not capped here; groups that repeat a main_v1 bug are matched to its cause when the groups are judged.",
+   "Eligibility and project overrides are decided from the corpus probe (data/lsptest/corpus_v2_prepared.md) before the run, and recorded here.",
+   "main_v1's notes on seeds, oracle options and cost controls apply unchanged: race0 and race200 use seed 1, the seed of the first settled run: same targets and histories, different timing, so that timing-only violations can be told apart. | r3_routes, r6_crossimpl and r0_crash do not use max_cases (they check every target). | server_limits: at most 2 rust-analyzer runs at a time (a session takes up to 3.5 GB; R1 runs two side by side). | Cost controls (campaign_costs.py): candidates with a registered legitimate-difference label (r3_routes definitionConsistency.signature / .shorthand) are recorded as labelled-legitimate without replay; a signature confirmed in 3 runs is capped (later candidates recorded as capped, not replayed).",
+   "Eligibility (2026-11-18, from data/lsptest/corpus_v2_prepared.md): all 50 probes settled. Dependencies failed in the frozen preparation for four TypeScript projects; three were installed by hand under the frozen pipeline's own rule (the project's package manager, no install scripts) and are forced above. colinhacks/zod stays out by the eligibility rule (deps failed): its package.json pins the package manager nub@0.8.3, which is not on the npm registry, and its lockfile is rejected by pnpm 10 (no entry for the workspace package) and by npm (workspace: protocol). So 48 of the 50 pairs run."
+  ]
+ },
+ "server_builds": [
+  {
+   "kind": "gopls",
+   "version": "v0.23.0",
+   "label": "gopls-v0.23.0",
+   "cmd": [
+    "temp/lsp_servers/gopls-v0.23.0/gopls",
+    "serve"
+   ],
+   "entry": "temp/lsp_servers/gopls-v0.23.0/gopls",
+   "sha256": "a8b4a156c328a03f",
+   "package_version": ""
+  }
+ ],
+ "machine": {
+  "platform": "macOS-27.0-arm64-arm-64bit-Mach-O",
+  "mac_ver": "27.0",
+  "machine": "arm64",
+  "python": "3.14.7",
+  "cpus": 10
+ },
+ "projects": {
+  "Alishahryar1/free-claude-code@1f8b1fd7d054": {
+   "repo": "Alishahryar1/free-claude-code",
+   "commit": "1f8b1fd7d05473652416376cb7acbb8dbf466ea9",
+   "dir": "temp/corpus/Alishahryar1__free-claude-code@1f8b1fd7d054",
+   "language": "python",
+   "size_kb": 14035
+  },
+  "DayuanJiang/next-ai-draw-io@58b73ef761d8": {
+   "repo": "DayuanJiang/next-ai-draw-io",
+   "commit": "58b73ef761d8a5e5b2afa2c360428d3dea996312",
+   "dir": "temp/corpus/DayuanJiang__next-ai-draw-io@58b73ef761d8",
+   "language": "typescript",
+   "size_kb": 6302
+  },
+  "FoundationAgents/OpenManus@3309bf4e416f": {
+   "repo": "FoundationAgents/OpenManus",
+   "commit": "3309bf4e416fb1c74b008f3e86494439a31bad53",
+   "dir": "temp/corpus/FoundationAgents__OpenManus@3309bf4e416f",
+   "language": "python",
+   "size_kb": 4572
+  },
+  "Gitlawb/openclaude@5cd11336caea": {
+   "repo": "Gitlawb/openclaude",
+   "commit": "5cd11336caeaf2023ca1e02e5975c761cfc585fe",
+   "dir": "temp/corpus/Gitlawb__openclaude@5cd11336caea",
+   "language": "typescript",
+   "size_kb": 36158
+  },
+  "MemPalace/mempalace@c4d3711ee247": {
+   "repo": "MemPalace/mempalace",
+   "commit": "c4d3711ee2478bb4062085fa075597af897d3a6d",
+   "dir": "temp/corpus/MemPalace__mempalace@c4d3711ee247",
+   "language": "python",
+   "size_kb": 28590
+  },
+  "NanmiCoder/MediaCrawler@380b426000aa": {
+   "repo": "NanmiCoder/MediaCrawler",
+   "commit": "380b426000aac3d612837ed72c99808347dc94c9",
+   "dir": "temp/corpus/NanmiCoder__MediaCrawler@380b426000aa",
+   "language": "python",
+   "size_kb": 30222
+  },
+  "SagerNet/sing-box@0d91c4547921": {
+   "repo": "SagerNet/sing-box",
+   "commit": "0d91c4547921a7b72e9c9913e2bc6f3a556801e2",
+   "dir": "temp/corpus/SagerNet__sing-box@0d91c4547921",
+   "language": "go",
+   "size_kb": 28290
+  },
+  "abiosoft/colima@bba803d3d6fa": {
+   "repo": "abiosoft/colima",
+   "commit": "bba803d3d6fa9372a60f747e5dad4c8e80db7cde",
+   "dir": "temp/corpus/abiosoft__colima@bba803d3d6fa",
+   "language": "go",
+   "size_kb": 3288
+  },
+  "beego/beego@939cfde380bb": {
+   "repo": "beego/beego",
+   "commit": "939cfde380bb9f15844ad633b84f037f7da21584",
+   "dir": "temp/corpus/beego__beego@939cfde380bb",
+   "language": "go",
+   "size_kb": 12067
+  },
+  "casey/just@6119e6aff518": {
+   "repo": "casey/just",
+   "commit": "6119e6aff518b6550d9030955f905b01051b5772",
+   "dir": "temp/corpus/casey__just@6119e6aff518",
+   "language": "rust",
+   "size_kb": 17891
+  },
+  "cloudflare/pingora@4487f7b2ab50": {
+   "repo": "cloudflare/pingora",
+   "commit": "4487f7b2ab50f159e4a2cf4f6a6b813f61bb6e19",
+   "dir": "temp/corpus/cloudflare__pingora@4487f7b2ab50",
+   "language": "rust",
+   "size_kb": 5747
+  },
+  "dandavison/delta@5ddd7fa66ee9": {
+   "repo": "dandavison/delta",
+   "commit": "5ddd7fa66ee900b6783e80089174d2170e46f06f",
+   "dir": "temp/corpus/dandavison__delta@5ddd7fa66ee9",
+   "language": "rust",
+   "size_kb": 11413
+  },
+  "date-fns/date-fns@f34149bb1ba1": {
+   "repo": "date-fns/date-fns",
+   "commit": "f34149bb1ba10046453e688207507e0d2c727e00",
+   "dir": "temp/corpus/date-fns__date-fns@f34149bb1ba1",
+   "language": "typescript",
+   "size_kb": 25504
+  },
+  "docker/compose@c6dffb26bdfd": {
+   "repo": "docker/compose",
+   "commit": "c6dffb26bdfd94efb1f4e1c743f1241a150d120a",
+   "dir": "temp/corpus/docker__compose@c6dffb26bdfd",
+   "language": "go",
+   "size_kb": 29127
+  },
+  "evanw/esbuild@f6058f8364fe": {
+   "repo": "evanw/esbuild",
+   "commit": "f6058f8364fe7ab91ca57a83e02577ed74c9cae4",
+   "dir": "temp/corpus/evanw__esbuild@f6058f8364fe",
+   "language": "go",
+   "size_kb": 20899
+  },
+  "go-gorm/gorm@b3d3bf219f02": {
+   "repo": "go-gorm/gorm",
+   "commit": "b3d3bf219f0283f8e2e985bac509cb643170f729",
+   "dir": "temp/corpus/go-gorm__gorm@b3d3bf219f02",
+   "language": "go",
+   "size_kb": 4826
+  },
+  "googleworkspace/cli@a3768d0e82ad": {
+   "repo": "googleworkspace/cli",
+   "commit": "a3768d0e82ad83cca2da97724e46bea4ff0e6dbd",
+   "dir": "temp/corpus/googleworkspace__cli@a3768d0e82ad",
+   "language": "rust",
+   "size_kb": 10778
+  },
+  "h4ckf0r0day/obscura@0e17221dbb55": {
+   "repo": "h4ckf0r0day/obscura",
+   "commit": "0e17221dbb557dad6a4ba88c358d9d6da978ccfe",
+   "dir": "temp/corpus/h4ckf0r0day__obscura@0e17221dbb55",
+   "language": "rust",
+   "size_kb": 21797
+  },
+  "hexojs/hexo@751e856691bf": {
+   "repo": "hexojs/hexo",
+   "commit": "751e856691bfe24182cf8763feb29db0422dcfee",
+   "dir": "temp/corpus/hexojs__hexo@751e856691bf",
+   "language": "typescript",
+   "size_kb": 7302
+  },
+  "iawia002/lux@dd00f6d258d8": {
+   "repo": "iawia002/lux",
+   "commit": "dd00f6d258d80b6684a0b9402d7124e5c18ef42f",
+   "dir": "temp/corpus/iawia002__lux@dd00f6d258d8",
+   "language": "go",
+   "size_kb": 2566
+  },
+  "iced-rs/iced@0ef42477fb6f": {
+   "repo": "iced-rs/iced",
+   "commit": "0ef42477fb6fe3e7384baf9e324d9f188bd3a240",
+   "dir": "temp/corpus/iced-rs__iced@0ef42477fb6f",
+   "language": "rust",
+   "size_kb": 23376
+  },
+  "karpathy/nanochat@92d63d4e8bb4": {
+   "repo": "karpathy/nanochat",
+   "commit": "92d63d4e8bb4df75c3b71618f31ddde2378b2bcd",
+   "dir": "temp/corpus/karpathy__nanochat@92d63d4e8bb4",
+   "language": "python",
+   "size_kb": 2520
+  },
+  "labstack/echo@3d084be90224": {
+   "repo": "labstack/echo",
+   "commit": "3d084be9022432c5a5257924c7d74bfc3444b456",
+   "dir": "temp/corpus/labstack__echo@3d084be90224",
+   "language": "go",
+   "size_kb": 6705
+  },
+  "mifi/lossless-cut@85cb95f6aeae": {
+   "repo": "mifi/lossless-cut",
+   "commit": "85cb95f6aeaed9c26dfe64fd5ac6c6ac7760c55f",
+   "dir": "temp/corpus/mifi__lossless-cut@85cb95f6aeae",
+   "language": "typescript",
+   "size_kb": 30460
+  },
+  "niri-wm/niri@5f4469b6a992": {
+   "repo": "niri-wm/niri",
+   "commit": "5f4469b6a992492cf7221b269e9379f42e737649",
+   "dir": "temp/corpus/niri-wm__niri@5f4469b6a992",
+   "language": "rust",
+   "size_kb": 12279
+  },
+  "pear-devs/pear-desktop@3ff0a86231fe": {
+   "repo": "pear-devs/pear-desktop",
+   "commit": "3ff0a86231fed97b1a4365de0521fc96794c3f67",
+   "dir": "temp/corpus/pear-devs__pear-desktop@3ff0a86231fe",
+   "language": "typescript",
+   "size_kb": 22911
+  },
+  "schollz/croc@5890191be511": {
+   "repo": "schollz/croc",
+   "commit": "5890191be511f9d0e44fc2ccb83c9458ffb86208",
+   "dir": "temp/corpus/schollz__croc@5890191be511",
+   "language": "go",
+   "size_kb": 12284
+  },
+  "scrapy/scrapy@91d87364637c": {
+   "repo": "scrapy/scrapy",
+   "commit": "91d87364637c1b18fd5bb21d1ed3bb356cf9b6fc",
+   "dir": "temp/corpus/scrapy__scrapy@91d87364637c",
+   "language": "python",
+   "size_kb": 32253
+  },
+  "sharkdp/hyperfine@0d6ade930afc": {
+   "repo": "sharkdp/hyperfine",
+   "commit": "0d6ade930afc46fccb75f904d8b5e7b1a3dbbeda",
+   "dir": "temp/corpus/sharkdp__hyperfine@0d6ade930afc",
+   "language": "rust",
+   "size_kb": 1997
+  },
+  "soimort/you-get@049548f3f3f3": {
+   "repo": "soimort/you-get",
+   "commit": "049548f3f3f35e67ba8d3181c71fdc71d11cf260",
+   "dir": "temp/corpus/soimort__you-get@049548f3f3f3",
+   "language": "python",
+   "size_kb": 3566
+  },
+  "solidjs/solid@4b62bc29e04b": {
+   "repo": "solidjs/solid",
+   "commit": "4b62bc29e04bfd29573a20ff3d47ae56a8a80ccb",
+   "dir": "temp/corpus/solidjs__solid@4b62bc29e04b",
+   "language": "typescript",
+   "size_kb": 27855
+  },
+  "tokio-rs/tokio@3930bd182cb1": {
+   "repo": "tokio-rs/tokio",
+   "commit": "3930bd182cb18b534a34af86874a427da4a03c45",
+   "dir": "temp/corpus/tokio-rs__tokio@3930bd182cb1",
+   "language": "rust",
+   "size_kb": 17528
+  },
+  "ultralytics/yolov5@402e17ddf820": {
+   "repo": "ultralytics/yolov5",
+   "commit": "402e17ddf820996f51a191cbb798376e1144f069",
+   "dir": "temp/corpus/ultralytics__yolov5@402e17ddf820",
+   "language": "python",
+   "size_kb": 18127
+  },
+  "umami-software/umami@12ad773d621f": {
+   "repo": "umami-software/umami",
+   "commit": "12ad773d621f51da6e81e9031b458efe56be3e8e",
+   "dir": "temp/corpus/umami-software__umami@12ad773d621f",
+   "language": "typescript",
+   "size_kb": 29706
+  },
+  "usestrix/strix@56f7d45388e6": {
+   "repo": "usestrix/strix",
+   "commit": "56f7d45388e6b0abe3f5dcfd09e8dba35c727b24",
+   "dir": "temp/corpus/usestrix__strix@56f7d45388e6",
+   "language": "python",
+   "size_kb": 14844
+  },
+  "vadimdemedes/ink@02ae1e59e7c2": {
+   "repo": "vadimdemedes/ink",
+   "commit": "02ae1e59e7c288e971616100c4c11bcca6b5761b",
+   "dir": "temp/corpus/vadimdemedes__ink@02ae1e59e7c2",
+   "language": "typescript",
+   "size_kb": 2417
+  },
+  "virattt/ai-hedge-fund@7d897a002c26": {
+   "repo": "virattt/ai-hedge-fund",
+   "commit": "7d897a002c263f106201154d877a4bcf74efae03",
+   "dir": "temp/corpus/virattt__ai-hedge-fund@7d897a002c26",
+   "language": "python",
+   "size_kb": 3946
+  },
+  "yewstack/yew@bfa6c19af971": {
+   "repo": "yewstack/yew",
+   "commit": "bfa6c19af971084f9547495388bde9aceeb81aaa",
+   "dir": "temp/corpus/yewstack__yew@bfa6c19af971",
+   "language": "rust",
+   "size_kb": 21578
+  },
+  "zeromicro/go-zero@5b1b5bdc3adc": {
+   "repo": "zeromicro/go-zero",
+   "commit": "5b1b5bdc3adcc189b3bd8b77f2cc8a363ec3374c",
+   "dir": "temp/corpus/zeromicro__go-zero@5b1b5bdc3adc",
+   "language": "go",
+   "size_kb": 33274
+  }
+ },
+ "eligible_pairs": [
+  {
+   "server": "gopls",
+   "project": "labstack/echo@3d084be90224",
+   "forced": ""
+  },
+  {
+   "server": "ts6",
+   "project": "mifi/lossless-cut@85cb95f6aeae",
+   "forced": ""
+  },
+  {
+   "server": "ts7",
+   "project": "mifi/lossless-cut@85cb95f6aeae",
+   "forced": ""
+  },
+  {
+   "server": "ts6",
+   "project": "hexojs/hexo@751e856691bf",
+   "forced": ""
+  },
+  {
+   "server": "ts7",
+   "project": "hexojs/hexo@751e856691bf",
+   "forced": ""
+  },
+  {
+   "server": "ts6",
+   "project": "vadimdemedes/ink@02ae1e59e7c2",
+   "forced": "no lockfile in the repository, so the frozen preparation installed nothing; dependencies installed by hand with npm --ignore-scripts and only versions published by 2026-09-23 (npm --before; data/lsptest/corpus_v2_deps_manual.md); re-probe settles with 0 errors"
+  },
+  {
+   "server": "ts7",
+   "project": "vadimdemedes/ink@02ae1e59e7c2",
+   "forced": "no lockfile in the repository, so the frozen preparation installed nothing; dependencies installed by hand with npm --ignore-scripts and only versions published by 2026-09-23 (npm --before; data/lsptest/corpus_v2_deps_manual.md); re-probe settles with 0 errors"
+  },
+  {
+   "server": "ts6",
+   "project": "umami-software/umami@12ad773d621f",
+   "forced": "the frozen preparation ran pnpm 10 (lockfile fallback) and failed on the project's engines field (pnpm 12.3.4); dependencies installed by hand with pnpm 12.3.4, --ignore-scripts --frozen-lockfile (data/lsptest/corpus_v2_deps_manual.md); re-probe settles with 0 errors"
+  },
+  {
+   "server": "ts7",
+   "project": "umami-software/umami@12ad773d621f",
+   "forced": "the frozen preparation ran pnpm 10 (lockfile fallback) and failed on the project's engines field (pnpm 12.3.4); dependencies installed by hand with pnpm 12.3.4, --ignore-scripts --frozen-lockfile (data/lsptest/corpus_v2_deps_manual.md); re-probe settles with 0 errors"
+  },
+  {
+   "server": "ts6",
+   "project": "date-fns/date-fns@f34149bb1ba1",
+   "forced": ""
+  },
+  {
+   "server": "ts7",
+   "project": "date-fns/date-fns@f34149bb1ba1",
+   "forced": ""
+  },
+  {
+   "server": "ts6",
+   "project": "solidjs/solid@4b62bc29e04b",
+   "forced": ""
+  },
+  {
+   "server": "ts7",
+   "project": "solidjs/solid@4b62bc29e04b",
+   "forced": ""
+  },
+  {
+   "server": "ts6",
+   "project": "DayuanJiang/next-ai-draw-io@58b73ef761d8",
+   "forced": ""
+  },
+  {
+   "server": "ts7",
+   "project": "DayuanJiang/next-ai-draw-io@58b73ef761d8",
+   "forced": ""
+  },
+  {
+   "server": "ts6",
+   "project": "pear-devs/pear-desktop@3ff0a86231fe",
+   "forced": "the frozen preparation ran pnpm 10 and failed on the project's engines field (pnpm >=11); dependencies installed by hand with pnpm 11.27.1 (the latest 11.x on 2026-09-23), --ignore-scripts --frozen-lockfile, Node engine check off for the build tool node-gyp (data/lsptest/corpus_v2_deps_manual.md); re-probe settles with 0 errors"
+  },
+  {
+   "server": "ts7",
+   "project": "pear-devs/pear-desktop@3ff0a86231fe",
+   "forced": "the frozen preparation ran pnpm 10 and failed on the project's engines field (pnpm >=11); dependencies installed by hand with pnpm 11.27.1 (the latest 11.x on 2026-09-23), --ignore-scripts --frozen-lockfile, Node engine check off for the build tool node-gyp (data/lsptest/corpus_v2_deps_manual.md); re-probe settles with 0 errors"
+  },
+  {
+   "server": "ts6",
+   "project": "Gitlawb/openclaude@5cd11336caea",
+   "forced": ""
+  },
+  {
+   "server": "ts7",
+   "project": "Gitlawb/openclaude@5cd11336caea",
+   "forced": ""
+  },
+  {
+   "server": "pyright",
+   "project": "NanmiCoder/MediaCrawler@380b426000aa",
+   "forced": ""
+  },
+  {
+   "server": "pyright",
+   "project": "scrapy/scrapy@91d87364637c",
+   "forced": ""
+  },
+  {
+   "server": "pyright",
+   "project": "usestrix/strix@56f7d45388e6",
+   "forced": ""
+  },
+  {
+   "server": "pyright",
+   "project": "virattt/ai-hedge-fund@7d897a002c26",
+   "forced": ""
+  },
+  {
+   "server": "pyright",
+   "project": "MemPalace/mempalace@c4d3711ee247",
+   "forced": ""
+  },
+  {
+   "server": "pyright",
+   "project": "FoundationAgents/OpenManus@3309bf4e416f",
+   "forced": ""
+  },
+  {
+   "server": "pyright",
+   "project": "karpathy/nanochat@92d63d4e8bb4",
+   "forced": ""
+  },
+  {
+   "server": "pyright",
+   "project": "ultralytics/yolov5@402e17ddf820",
+   "forced": ""
+  },
+  {
+   "server": "pyright",
+   "project": "soimort/you-get@049548f3f3f3",
+   "forced": ""
+  },
+  {
+   "server": "pyright",
+   "project": "Alishahryar1/free-claude-code@1f8b1fd7d054",
+   "forced": ""
+  },
+  {
+   "server": "rust-analyzer",
+   "project": "casey/just@6119e6aff518",
+   "forced": ""
+  },
+  {
+   "server": "rust-analyzer",
+   "project": "tokio-rs/tokio@3930bd182cb1",
+   "forced": ""
+  },
+  {
+   "server": "rust-analyzer",
+   "project": "yewstack/yew@bfa6c19af971",
+   "forced": ""
+  },
+  {
+   "server": "rust-analyzer",
+   "project": "dandavison/delta@5ddd7fa66ee9",
+   "forced": ""
+  },
+  {
+   "server": "rust-analyzer",
+   "project": "iced-rs/iced@0ef42477fb6f",
+   "forced": ""
+  },
+  {
+   "server": "rust-analyzer",
+   "project": "googleworkspace/cli@a3768d0e82ad",
+   "forced": ""
+  },
+  {
+   "server": "rust-analyzer",
+   "project": "sharkdp/hyperfine@0d6ade930afc",
+   "forced": ""
+  },
+  {
+   "server": "rust-analyzer",
+   "project": "niri-wm/niri@5f4469b6a992",
+   "forced": ""
+  },
+  {
+   "server": "rust-analyzer",
+   "project": "h4ckf0r0day/obscura@0e17221dbb55",
+   "forced": ""
+  },
+  {
+   "server": "rust-analyzer",
+   "project": "cloudflare/pingora@4487f7b2ab50",
+   "forced": ""
+  },
+  {
+   "server": "gopls",
+   "project": "schollz/croc@5890191be511",
+   "forced": ""
+  },
+  {
+   "server": "gopls",
+   "project": "evanw/esbuild@f6058f8364fe",
+   "forced": ""
+  },
+  {
+   "server": "gopls",
+   "project": "go-gorm/gorm@b3d3bf219f02",
+   "forced": ""
+  },
+  {
+   "server": "gopls",
+   "project": "SagerNet/sing-box@0d91c4547921",
+   "forced": ""
+  },
+  {
+   "server": "gopls",
+   "project": "docker/compose@c6dffb26bdfd",
+   "forced": ""
+  },
+  {
+   "server": "gopls",
+   "project": "zeromicro/go-zero@5b1b5bdc3adc",
+   "forced": ""
+  },
+  {
+   "server": "gopls",
+   "project": "beego/beego@939cfde380bb",
+   "forced": ""
+  },
+  {
+   "server": "gopls",
+   "project": "iawia002/lux@dd00f6d258d8",
+   "forced": ""
+  },
+  {
+   "server": "gopls",
+   "project": "abiosoft/colima@bba803d3d6fa",
+   "forced": ""
+  }
+ ],
+ "excluded_pairs": [
+  {
+   "server": "ts6",
+   "repo": "colinhacks/zod",
+   "reason": "project not prepared (clone ok, deps failed)"
+  },
+  {
+   "server": "ts7",
+   "repo": "colinhacks/zod",
+   "reason": "project not prepared (clone ok, deps failed)"
+  }
+ ],
+ "plan": {
+  "runs": 2,
+  "per_oracle_server": {
+   "r5_transforms gopls": 2
+  }
+ },
+ "invocations": [
+  {
+   "started": "2026-11-19 03:44:11",
+   "finished": "2026-11-19 03:45:12",
+   "elapsed_s": 61.3,
+   "runs": 2
+  },
+  {
+   "started": "2026-11-19 03:45:13",
+   "finished": "2026-11-19 03:47:28",
+   "elapsed_s": 135.5,
+   "runs": 2
+  },
+  {
+   "started": "2026-11-19 03:47:28",
+   "finished": "2026-11-19 03:51:15",
+   "elapsed_s": 226.7,
+   "runs": 2
+  },
+  {
+   "started": "2026-11-19 03:51:15",
+   "finished": "2026-11-19 04:03:49",
+   "elapsed_s": 753.8,
+   "runs": 5
+  },
+  {
+   "started": "2026-11-19 04:03:49",
+   "finished": "2026-11-19 04:06:41",
+   "elapsed_s": 171.6,
+   "runs": 2
+  }
+ ]
+}

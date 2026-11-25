@@ -1,0 +1,3 @@
+2026-11-18 06:18:33,714 INFO campaign_run run 1e4f2eecb93d: r3_routes on pyright 1.1.414, usestrix/strix@56f7d45388e6 seed 1 settled, targets ['strix/interface/tui/history.py', 'strix/skills/__init__.py', 'tests/test_pricing.py']
+2026-11-18 06:22:11,059 INFO campaign_run run 1e4f2eecb93d: 3 candidate(s) in 217s; confirming
+2026-11-18 06:22:11,060 INFO campaign_run run 1e4f2eecb93d finished: ok, 0 confirmed of 3 candidate(s), 217s

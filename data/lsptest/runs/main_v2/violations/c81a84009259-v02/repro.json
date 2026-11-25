@@ -1,0 +1,432 @@
+{
+ "format": 1,
+ "campaign": "main_v2",
+ "vid": "c81a84009259-v02",
+ "run_id": "c81a84009259",
+ "oracle": "r6_crossimpl",
+ "server": {
+  "kind": "ts7",
+  "version": "7.0.2"
+ },
+ "project": {
+  "name": "umami-software/umami@12ad773d621f",
+  "source": "corpus",
+  "ref": "temp/corpus/umami-software__umami@12ad773d621f",
+  "commit": "12ad773d621f51da6e81e9031b458efe56be3e8e",
+  "language": "typescript"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "src/app/(main)/boards/[boardId]/BoardViewPage.tsx",
+    "positions": [
+     [
+      1,
+      12
+     ],
+     [
+      3,
+      22
+     ],
+     [
+      4,
+      15
+     ],
+     [
+      15,
+      7
+     ],
+     [
+      20,
+      31
+     ],
+     [
+      23,
+      32
+     ],
+     [
+      23,
+      78
+     ],
+     [
+      24,
+      17
+     ],
+     [
+      24,
+      34
+     ],
+     [
+      25,
+      33
+     ],
+     [
+      25,
+      51
+     ],
+     [
+      27,
+      12
+     ]
+    ],
+    "ends": [
+     [
+      1,
+      15
+     ],
+     [
+      3,
+      24
+     ],
+     [
+      4,
+      22
+     ],
+     [
+      15,
+      13
+     ],
+     [
+      20,
+      35
+     ],
+     [
+      23,
+      38
+     ],
+     [
+      23,
+      86
+     ],
+     [
+      24,
+      23
+     ],
+     [
+      24,
+      41
+     ],
+     [
+      25,
+      41
+     ],
+     [
+      25,
+      59
+     ],
+     [
+      27,
+      16
+     ]
+    ],
+    "names": [
+     "Column",
+     "from",
+     "BoardControls",
+     "showActions",
+     "boardId",
+     "showActions",
+     "showEntityBadges",
+     "showControls",
+     "BoardControls",
+     "showEntityBadges",
+     "showEntityBadges",
+     "PageBody"
+    ]
+   },
+   {
+    "path": "src/app/(main)/websites/[websiteId]/(reports)/journeys/page.tsx",
+    "positions": [
+     [
+      0,
+      27
+     ],
+     [
+      1,
+      15
+     ],
+     [
+      1,
+      26
+     ],
+     [
+      3,
+      48
+     ],
+     [
+      3,
+      56
+     ],
+     [
+      3,
+      67
+     ],
+     [
+      4,
+      14
+     ],
+     [
+      4,
+      33
+     ],
+     [
+      6,
+      16
+     ],
+     [
+      6,
+      38
+     ],
+     [
+      9,
+      27
+     ],
+     [
+      10,
+      4
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      29
+     ],
+     [
+      1,
+      21
+     ],
+     [
+      1,
+      28
+     ],
+     [
+      3,
+      51
+     ],
+     [
+      3,
+      60
+     ],
+     [
+      3,
+      72
+     ],
+     [
+      4,
+      19
+     ],
+     [
+      4,
+      36
+     ],
+     [
+      6,
+      22
+     ],
+     [
+      6,
+      43
+     ],
+     [
+      9,
+      31
+     ],
+     [
+      10,
+      7
+     ]
+    ],
+    "names": [
+     "from",
+     "JourneysPage",
+     "from",
+     "params",
+     "Promise",
+     "websiteId",
+     "websiteId",
+     "params",
+     "JourneysPage",
+     "websiteId",
+     "Metadata",
+     "title"
+    ]
+   },
+   {
+    "path": "src/app/api/websites/[websiteId]/replays/saved/contract.generated.ts",
+    "positions": [
+     [
+      9,
+      4
+     ],
+     [
+      13,
+      6
+     ],
+     [
+      33,
+      10
+     ],
+     [
+      71,
+      25
+     ],
+     [
+      77,
+      27
+     ],
+     [
+      86,
+      26
+     ],
+     [
+      112,
+      20
+     ],
+     [
+      124,
+      13
+     ],
+     [
+      125,
+      11
+     ],
+     [
+      131,
+      19
+     ],
+     [
+      148,
+      19
+     ],
+     [
+      161,
+      32
+     ]
+    ],
+    "ends": [
+     [
+      9,
+      6
+     ],
+     [
+      13,
+      8
+     ],
+     [
+      33,
+      12
+     ],
+     [
+      71,
+      30
+     ],
+     [
+      77,
+      30
+     ],
+     [
+      86,
+      31
+     ],
+     [
+      112,
+      22
+     ],
+     [
+      124,
+      19
+     ],
+     [
+      125,
+      15
+     ],
+     [
+      131,
+      22
+     ],
+     [
+      148,
+      22
+     ],
+     [
+      161,
+      37
+     ]
+    ],
+    "names": [
+     "auth",
+     "tags",
+     "name",
+     "properties",
+     "format",
+     "websiteId",
+     "type",
+     "description",
+     "content",
+     "status",
+     "status",
+     "operation1"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "hover",
+  "path": "src/app/api/websites/[websiteId]/replays/saved/contract.generated.ts",
+  "line": 112,
+  "character": 20,
+  "extra": ""
+ },
+ "ops": [],
+ "case": {
+  "intended": [],
+  "intended_source": "4519ec0a93607319a96f4feb967aa06a251ccc816544e2fed5c985c1d45dc11a",
+  "method": "hover",
+  "only_reference": null,
+  "only_test": null,
+  "reference": {
+   "kind": "ts6",
+   "version": "6.0.3"
+  }
+ },
+ "shape": "hover:changed",
+ "signature": "ts7|r6_crossimpl|hover:changed",
+ "expected": "(property) SchemaObjectValue.type?: SchemaObjectType | SchemaObjectType[]",
+ "actual": "(property) SchemaObjectValue.type?: SchemaObjectType[] | SchemaObjectType",
+ "reproduced": "3/3",
+ "note": "ts7-7.0.2 and ts6-6.0.3 differ on hover at src/app/api/websites/[websiteId]/replays/saved/contract.generated.ts:113:21; no documented intended difference matches; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 311s",
+ "violation": {
+  "oracle": "r6_crossimpl",
+  "server": "ts7-7.0.2",
+  "project": "umami-software/umami@12ad773d621f",
+  "key": {
+   "method": "hover",
+   "path": "src/app/api/websites/[websiteId]/replays/saved/contract.generated.ts",
+   "line": 112,
+   "character": 20,
+   "extra": ""
+  },
+  "expected": "(property) SchemaObjectValue.type?: SchemaObjectType | SchemaObjectType[]",
+  "actual": "(property) SchemaObjectValue.type?: SchemaObjectType[] | SchemaObjectType",
+  "ops": [],
+  "detail": "{\"case\": {\"intended\": [], \"intended_source\": \"4519ec0a93607319a96f4feb967aa06a251ccc816544e2fed5c985c1d45dc11a\", \"method\": \"hover\", \"only_reference\": null, \"only_test\": null, \"reference\": {\"kind\": \"ts6\", \"version\": \"6.0.3\"}}, \"note\": \"ts7-7.0.2 and ts6-6.0.3 differ on hover at src/app/api/websites/[websiteId]/replays/saved/contract.generated.ts:113:21; no documented intended difference matches; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 311s\", \"shape\": \"hover:changed\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "ts7|r6_crossimpl|hover:changed",
+  "run_id": "c81a84009259"
+ },
+ "replay_logs": [
+  "logs/ts6-6.0.3-c81a84009259-ref-r6-replay-ref-baseline-20261118-031521-e62d74.jsonl.gz",
+  "logs/ts6-6.0.3-c81a84009259-ref-r6-replay-ref-control-20261118-031600-0a90dc.jsonl.gz",
+  "logs/ts7-7.0.2-c81a84009259-r6-replay-test-baseline-20261118-031434-dd55fc.jsonl.gz",
+  "logs/ts7-7.0.2-c81a84009259-r6-replay-test-control-20261118-031457-bd3515.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

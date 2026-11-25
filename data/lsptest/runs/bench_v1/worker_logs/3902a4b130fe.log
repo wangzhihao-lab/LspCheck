@@ -1,0 +1,6 @@
+2026-09-24 21:34:40,157 INFO campaign_run run 3902a4b130fe: r1_history on tsserver 5.1.3+tsls3.3.2, tsserver-51667 seed 1 race0, targets ['index.tsx']
+2026-09-24 21:35:50,066 INFO campaign_run run 3902a4b130fe: 1 candidate(s) in 70s; confirming
+2026-09-24 21:35:58,398 INFO flake replay 1/3 of tsserver|r1_history|diagnostics:extra:2304: settled=True control_stable=True reproduced=True (8.3s)
+2026-09-24 21:36:06,196 INFO flake replay 2/3 of tsserver|r1_history|diagnostics:extra:2304: settled=True control_stable=True reproduced=True (7.8s)
+2026-09-24 21:36:13,938 INFO flake replay 3/3 of tsserver|r1_history|diagnostics:extra:2304: settled=True control_stable=True reproduced=True (7.7s)
+2026-09-24 21:36:13,983 INFO campaign_run run 3902a4b130fe finished: ok, 1 confirmed of 1 candidate(s), 94s

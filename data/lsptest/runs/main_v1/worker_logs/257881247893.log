@@ -1,0 +1,9 @@
+2026-09-24 10:15:45,051 INFO campaign_run run 257881247893: r1_history on ts6 6.0.3, reduxjs/redux@fb3bad6804d6 seed 2 settled, targets ['test/helpers/reducers.ts', 'test/typescript/enhancers.test-d.ts', 'website/plugins/remark-typescript-tools/transpileCodeblocks/plugin.ts']
+2026-09-24 10:21:58,388 INFO campaign_run run 257881247893: 7 candidate(s) in 373s; confirming
+2026-09-24 10:23:20,388 INFO flake replay 1/3 of ts6|r1_history|diagnostics:extra:2339,2345,7006: settled=True control_stable=True reproduced=True (82.0s)
+2026-09-24 10:24:59,128 INFO flake replay 2/3 of ts6|r1_history|diagnostics:extra:2339,2345,7006: settled=True control_stable=True reproduced=False (98.7s)
+2026-09-24 10:26:32,089 INFO flake replay 3/3 of ts6|r1_history|diagnostics:extra:2339,2345,7006: settled=True control_stable=True reproduced=True (93.0s)
+2026-09-24 10:27:44,753 INFO flake replay 1/3 of ts6|r1_history|semanticTokens:missing: settled=True control_stable=True reproduced=True (72.7s)
+2026-09-24 10:28:57,920 INFO flake replay 2/3 of ts6|r1_history|semanticTokens:missing: settled=True control_stable=True reproduced=True (73.2s)
+2026-09-24 10:30:07,772 INFO flake replay 3/3 of ts6|r1_history|semanticTokens:missing: settled=True control_stable=True reproduced=True (69.8s)
+2026-09-24 10:30:07,954 INFO campaign_run run 257881247893 finished: ok, 1 confirmed of 7 candidate(s), 863s

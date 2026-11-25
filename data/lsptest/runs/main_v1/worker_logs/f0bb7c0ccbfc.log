@@ -1,0 +1,3 @@
+2026-09-23 15:03:52,110 INFO campaign_run run f0bb7c0ccbfc: r5_transforms on ts7 7.0.2, upstash/context7@6477e43e31d2 seed 1 settled, targets ['packages/cli/src/__tests__/command-auth-wiring.test.ts', 'packages/sdk/src/client.ts', 'packages/sdk/src/commands/command.ts']
+2026-09-23 15:09:56,767 INFO campaign_run run f0bb7c0ccbfc: 0 candidate(s) in 365s; confirming
+2026-09-23 15:09:56,768 INFO campaign_run run f0bb7c0ccbfc finished: ok, 0 confirmed of 0 candidate(s), 365s

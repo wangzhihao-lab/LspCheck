@@ -1,0 +1,324 @@
+{
+ "format": 1,
+ "campaign": "bench_v1-dryrun",
+ "vid": "439cb6711cee-v00",
+ "run_id": "439cb6711cee",
+ "oracle": "r4_edits",
+ "server": {
+  "kind": "tsserver",
+  "version": "4.5.2+tsls0.7.1"
+ },
+ "project": {
+  "name": "tsserver-46466",
+  "source": "dir",
+  "ref": "data/lsp_bench/cases/tsserver-46466/project",
+  "commit": "",
+  "language": "typescript"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 120.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "index.ts",
+    "positions": [
+     [
+      0,
+      8
+     ],
+     [
+      0,
+      14
+     ],
+     [
+      0,
+      17
+     ],
+     [
+      0,
+      20
+     ],
+     [
+      1,
+      17
+     ],
+     [
+      1,
+      26
+     ],
+     [
+      1,
+      38
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      10
+     ],
+     [
+      0,
+      15
+     ],
+     [
+      0,
+      18
+     ],
+     [
+      0,
+      21
+     ],
+     [
+      1,
+      21
+     ],
+     [
+      1,
+      30
+     ],
+     [
+      1,
+      42
+     ]
+    ],
+    "names": [
+     "test",
+     "T",
+     "x",
+     "T",
+     "Promise",
+     "resolve",
+     "resolve"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "diagnostics",
+  "path": "index.ts",
+  "line": 1,
+  "character": 23,
+  "extra": "M2:quickfix-errors:Remove unused declaration for: 'resolve'"
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "index.ts"
+  },
+  {
+   "kind": "change",
+   "path": "index.ts",
+   "start": [
+    1,
+    35
+   ],
+   "end": [
+    1,
+    42
+   ],
+   "text": "resoolve"
+  },
+  {
+   "kind": "change",
+   "path": "index.ts",
+   "start": [
+    1,
+    23
+   ],
+   "end": [
+    1,
+    30
+   ]
+  }
+ ],
+ "case": {
+  "action_kind": "quickfix",
+  "base_errors": 1,
+  "check": "errors",
+  "diag": {
+   "code": 6133,
+   "message": "'resolve' is declared but its value is never read.",
+   "range": {
+    "end": {
+     "character": 30,
+     "line": 1
+    },
+    "start": {
+     "character": 23,
+     "line": 1
+    }
+   },
+   "severity": 4
+  },
+  "fix_introduced_errors": [],
+  "fix_ops": [
+   {
+    "end": [
+     1,
+     30
+    ],
+    "kind": "change",
+    "path": "index.ts",
+    "start": [
+     1,
+     23
+    ]
+   }
+  ],
+  "kind": "mutation",
+  "mutation": {
+   "end": [
+    1,
+    42
+   ],
+   "id": "M2",
+   "offsets": [
+    71,
+    78
+   ],
+   "sha": "ab22a280579200cd",
+   "start": [
+    1,
+    35
+   ],
+   "text": "resoolve",
+   "what": "misspell 'resolve' as 'resoolve' (duplicate a middle character)"
+  },
+  "n_fix_ops": 1,
+  "path": "index.ts",
+  "post_errors": 2,
+  "title": "Remove unused declaration for: 'resolve'",
+  "via": "command"
+ },
+ "shape": "diagnostics:extra:2304",
+ "signature": "tsserver|r4_edits|diagnostics:extra:2304",
+ "expected": [
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "1308",
+   "typescript",
+   "'await' expressions are only allowed within async functions and at the top levels of modules."
+  ]
+ ],
+ "actual": [
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "1308",
+   "typescript",
+   "'await' expressions are only allowed within async functions and at the top levels of modules."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "2304",
+   "typescript",
+   "Cannot find name 'resoolve'."
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "quick fix \"Remove unused declaration for: 'resolve'\" for 6133 at index.ts:2:24 raises the error count in the edited files from 1 to 2 (seeded by M2: misspell 'resolve' as 'resoolve' (duplicate a middle character); errors before the mutation 1, after the fix 2); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 37s",
+ "violation": {
+  "oracle": "r4_edits",
+  "server": "tsserver-4.5.2+tsls0.7.1",
+  "project": "tsserver-46466",
+  "key": {
+   "method": "diagnostics",
+   "path": "index.ts",
+   "line": 1,
+   "character": 23,
+   "extra": "M2:quickfix-errors:Remove unused declaration for: 'resolve'"
+  },
+  "expected": [
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "1308",
+    "typescript",
+    "'await' expressions are only allowed within async functions and at the top levels of modules."
+   ]
+  ],
+  "actual": [
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "1308",
+    "typescript",
+    "'await' expressions are only allowed within async functions and at the top levels of modules."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2304",
+    "typescript",
+    "Cannot find name 'resoolve'."
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "index.ts"
+   },
+   {
+    "kind": "change",
+    "path": "index.ts",
+    "start": [
+     1,
+     35
+    ],
+    "end": [
+     1,
+     42
+    ],
+    "text": "resoolve"
+   },
+   {
+    "kind": "change",
+    "path": "index.ts",
+    "start": [
+     1,
+     23
+    ],
+    "end": [
+     1,
+     30
+    ]
+   }
+  ],
+  "detail": "{\"case\": {\"action_kind\": \"quickfix\", \"base_errors\": 1, \"check\": \"errors\", \"diag\": {\"code\": 6133, \"message\": \"'resolve' is declared but its value is never read.\", \"range\": {\"end\": {\"character\": 30, \"line\": 1}, \"start\": {\"character\": 23, \"line\": 1}}, \"severity\": 4}, \"fix_introduced_errors\": [], \"fix_ops\": [{\"end\": [1, 30], \"kind\": \"change\", \"path\": \"index.ts\", \"start\": [1, 23]}], \"kind\": \"mutation\", \"mutation\": {\"end\": [1, 42], \"id\": \"M2\", \"offsets\": [71, 78], \"sha\": \"ab22a280579200cd\", \"start\": [1, 35], \"text\": \"resoolve\", \"what\": \"misspell 'resolve' as 'resoolve' (duplicate a middle character)\"}, \"n_fix_ops\": 1, \"path\": \"index.ts\", \"post_errors\": 2, \"title\": \"Remove unused declaration for: 'resolve'\", \"via\": \"command\"}, \"note\": \"quick fix \\\"Remove unused declaration for: 'resolve'\\\" for 6133 at index.ts:2:24 raises the error count in the edited files from 1 to 2 (seeded by M2: misspell 'resolve' as 'resoolve' (duplicate a middle character); errors before the mutation 1, after the fix 2); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 37s\", \"shape\": \"diagnostics:extra:2304\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "tsserver|r4_edits|diagnostics:extra:2304",
+  "run_id": "439cb6711cee"
+ },
+ "replay_logs": [
+  "logs/tsserver-4.5.2+tsls0.7.1-439cb6711cee-r4-replay-baseline-20260923-144511-974fdb.jsonl.gz",
+  "logs/tsserver-4.5.2+tsls0.7.1-439cb6711cee-r4-replay-case-20260923-144504-7ef51b.jsonl.gz",
+  "logs/tsserver-4.5.2+tsls0.7.1-439cb6711cee-r4-replay-control-20260923-144514-9b5705.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

@@ -1,0 +1,96 @@
+{
+ "queries": [
+  "\"after edit\" in:title repo:typescript-language-server/typescript-language-server is:issue",
+  "diagnostics extra repo:typescript-language-server/typescript-language-server is:issue",
+  "diagnostics \"after edit\" repo:typescript-language-server/typescript-language-server is:issue",
+  "diagnostics stale repo:typescript-language-server/typescript-language-server is:issue",
+  "\"after edit\" in:title repo:microsoft/TypeScript is:issue",
+  "diagnostics extra repo:microsoft/TypeScript is:issue",
+  "diagnostics \"after edit\" repo:microsoft/TypeScript is:issue",
+  "diagnostics stale repo:microsoft/TypeScript is:issue"
+ ],
+ "matches": [
+  {
+   "repo": "typescript-language-server/typescript-language-server",
+   "number": 1014,
+   "title": "TypeScript Language Server Hangs on Completion Resolution On Enter Key Pressed",
+   "url": "https://github.com/typescript-language-server/typescript-language-server/issues/1014",
+   "state": "closed",
+   "created": "2025-09-24",
+   "comments": 21,
+   "query": "diagnostics extra repo:typescript-language-server/typescript-language-server is:issue"
+  },
+  {
+   "repo": "typescript-language-server/typescript-language-server",
+   "number": 917,
+   "title": "Shows incorrect type completion item between VSCode and Neovim",
+   "url": "https://github.com/typescript-language-server/typescript-language-server/issues/917",
+   "state": "closed",
+   "created": "2024-09-27",
+   "comments": 9,
+   "query": "diagnostics extra repo:typescript-language-server/typescript-language-server is:issue"
+  },
+  {
+   "repo": "typescript-language-server/typescript-language-server",
+   "number": 815,
+   "title": "TSServer >=4.1.0 never publishes textDocument/publishDiagnostics event (NeoVim)",
+   "url": "https://github.com/typescript-language-server/typescript-language-server/issues/815",
+   "state": "closed",
+   "created": "2023-11-16",
+   "comments": 1,
+   "query": "diagnostics extra repo:typescript-language-server/typescript-language-server is:issue"
+  },
+  {
+   "repo": "typescript-language-server/typescript-language-server",
+   "number": 841,
+   "title": "Invalid completions",
+   "url": "https://github.com/typescript-language-server/typescript-language-server/issues/841",
+   "state": "closed",
+   "created": "2024-01-02",
+   "comments": 10,
+   "query": "diagnostics extra repo:typescript-language-server/typescript-language-server is:issue"
+  },
+  {
+   "repo": "typescript-language-server/typescript-language-server",
+   "number": 724,
+   "title": "\"typescript.inlayHints.includeInlayParameterNameHints\": \"all\" breaks inference with dangling commas",
+   "url": "https://github.com/typescript-language-server/typescript-language-server/issues/724",
+   "state": "closed",
+   "created": "2023-05-15",
+   "comments": 7,
+   "query": "diagnostics extra repo:typescript-language-server/typescript-language-server is:issue"
+  },
+  {
+   "repo": "typescript-language-server/typescript-language-server",
+   "number": 327,
+   "title": "configurable debouncing delays",
+   "url": "https://github.com/typescript-language-server/typescript-language-server/issues/327",
+   "state": "open",
+   "created": "2021-12-08",
+   "comments": 5,
+   "query": "diagnostics \"after edit\" repo:typescript-language-server/typescript-language-server is:issue"
+  },
+  {
+   "repo": "typescript-language-server/typescript-language-server",
+   "number": 35,
+   "title": "Clear diagnostics when closing file",
+   "url": "https://github.com/typescript-language-server/typescript-language-server/issues/35",
+   "state": "closed",
+   "created": "2018-04-18",
+   "comments": 0,
+   "query": "diagnostics stale repo:typescript-language-server/typescript-language-server is:issue"
+  },
+  {
+   "repo": "microsoft/TypeScript",
+   "number": 64405,
+   "title": "Incremental check emits locationless TS2589 after a comment-only edit in TypeScript 7",
+   "url": "https://github.com/microsoft/TypeScript/issues/64405",
+   "state": "closed",
+   "created": "2026-09-23",
+   "comments": 6,
+   "query": "\"after edit\" in:title repo:microsoft/TypeScript is:issue"
+  }
+ ],
+ "notes": [],
+ "authenticated": true
+}

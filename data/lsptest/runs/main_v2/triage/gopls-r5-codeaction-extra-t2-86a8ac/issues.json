@@ -1,0 +1,92 @@
+{
+ "queries": [
+  "comment in:title repo:golang/go is:issue label:gopls",
+  "\"code action\" extra repo:golang/go is:issue label:gopls",
+  "\"code action\" comment repo:golang/go is:issue label:gopls",
+  "\"code action\" whitespace repo:golang/go is:issue label:gopls"
+ ],
+ "matches": [
+  {
+   "repo": "golang/go",
+   "number": 64936,
+   "title": "x/tools/gopls: support for comment rendering",
+   "url": "https://github.com/golang/go/issues/64936",
+   "state": "open",
+   "created": "2024-01-02",
+   "comments": 9,
+   "query": "comment in:title repo:golang/go is:issue label:gopls"
+  },
+  {
+   "repo": "golang/go",
+   "number": 43735,
+   "title": "x/tools/gopls: rearranging struct fields deletes comments",
+   "url": "https://github.com/golang/go/issues/43735",
+   "state": "open",
+   "created": "2021-01-15",
+   "comments": 7,
+   "query": "comment in:title repo:golang/go is:issue label:gopls"
+  },
+  {
+   "repo": "golang/go",
+   "number": 48200,
+   "title": "x/tools/gopls: show full comments for constant or variable declaration",
+   "url": "https://github.com/golang/go/issues/48200",
+   "state": "open",
+   "created": "2021-09-05",
+   "comments": 3,
+   "query": "comment in:title repo:golang/go is:issue label:gopls"
+  },
+  {
+   "repo": "golang/go",
+   "number": 44684,
+   "title": "x/tools/gopls: add an option to keep original line breaks in documentation comments",
+   "url": "https://github.com/golang/go/issues/44684",
+   "state": "open",
+   "created": "2021-02-28",
+   "comments": 5,
+   "query": "comment in:title repo:golang/go is:issue label:gopls"
+  },
+  {
+   "repo": "golang/go",
+   "number": 74607,
+   "title": "x/tools/gopls: Semantic tokens not generated for local unexported symbols referenced in comment links",
+   "url": "https://github.com/golang/go/issues/74607",
+   "state": "open",
+   "created": "2025-07-14",
+   "comments": 2,
+   "query": "comment in:title repo:golang/go is:issue label:gopls"
+  },
+  {
+   "repo": "golang/go",
+   "number": 70085,
+   "title": "x/tools/gopls: add refactor.inline.variable-all code action",
+   "url": "https://github.com/golang/go/issues/70085",
+   "state": "open",
+   "created": "2024-10-29",
+   "comments": 11,
+   "query": "\"code action\" extra repo:golang/go is:issue label:gopls"
+  },
+  {
+   "repo": "golang/go",
+   "number": 39805,
+   "title": "x/tools/gopls: convert 'gofumpt' from formatter to code action provider",
+   "url": "https://github.com/golang/go/issues/39805",
+   "state": "open",
+   "created": "2020-06-24",
+   "comments": 5,
+   "query": "\"code action\" extra repo:golang/go is:issue label:gopls"
+  },
+  {
+   "repo": "golang/go",
+   "number": 56403,
+   "title": "x/tools/gopls: allow enabling gofumpt extra rules",
+   "url": "https://github.com/golang/go/issues/56403",
+   "state": "open",
+   "created": "2022-10-24",
+   "comments": 5,
+   "query": "\"code action\" extra repo:golang/go is:issue label:gopls"
+  }
+ ],
+ "notes": [],
+ "authenticated": true
+}

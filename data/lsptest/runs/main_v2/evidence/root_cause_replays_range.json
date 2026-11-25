@@ -1,0 +1,610 @@
+{
+ "campaign": "main_v2",
+ "subcommand": "range",
+ "written": "2026-11-20 19:05",
+ "rows": [
+  {
+   "cause": "C29",
+   "campaign": "main_v2",
+   "gid": "rust-analyzer-r3-semantictokensrange-changed-b-b6e28b",
+   "variant": "orig",
+   "path": "crates/google-workspace-cli/src/auth.rs",
+   "range": [
+    563,
+    15,
+    567,
+    13
+   ],
+   "original_range": [
+    563,
+    15,
+    567,
+    13
+   ],
+   "replays": 3,
+   "settled": 3,
+   "differs": 3,
+   "differs_on_original_span": 3,
+   "runs": [
+    {
+     "settled": true,
+     "whole_range": {
+      "equal": false,
+      "n_full": 19,
+      "n_range": 19,
+      "only_full": [
+       [
+        563,
+        17,
+        1,
+        "operator",
+        "macro,procMacro"
+       ],
+       [
+        563,
+        18,
+        6,
+        "method",
+        "consuming,defaultLibrary,library,macro,procMacro"
+       ],
+       [
+        564,
+        12,
+        10,
+        "enum",
+        "macro,procMacro"
+       ],
+       [
+        564,
+        22,
+        2,
+        "operator",
+        "macro,procMacro"
+       ],
+       [
+        564,
+        24,
+        14,
+        "enumMember",
+        "macro,procMacro"
+       ],
+       [
+        564,
+        39,
+        6,
+        "variable",
+        "declaration,macro,procMacro"
+       ],
+       [
+        564,
+        47,
+        2,
+        "operator",
+        "macro,procMacro"
+       ],
+       [
+        565,
+        16,
+        9,
+        "macro",
+        "defaultLibrary,library,macro,procMacro"
+       ],
+       [
+        565,
+        25,
+        1,
+        "macro",
+        "macro,procMacro"
+       ],
+       [
+        566,
+        16,
+        9,
+        "macro",
+        "defaultLibrary,library,macro,procMacro"
+       ],
+       [
+        566,
+        25,
+        1,
+        "macro",
+        "macro,procMacro"
+       ]
+      ],
+      "only_range": [
+       [
+        563,
+        17,
+        1,
+        "operator",
+        ""
+       ],
+       [
+        563,
+        18,
+        6,
+        "unresolvedReference",
+        ""
+       ],
+       [
+        564,
+        12,
+        10,
+        "enum",
+        ""
+       ],
+       [
+        564,
+        22,
+        2,
+        "operator",
+        ""
+       ],
+       [
+        564,
+        24,
+        14,
+        "enumMember",
+        ""
+       ],
+       [
+        564,
+        39,
+        6,
+        "variable",
+        "declaration"
+       ],
+       [
+        564,
+        47,
+        2,
+        "operator",
+        ""
+       ],
+       [
+        565,
+        16,
+        9,
+        "macro",
+        "defaultLibrary,library"
+       ],
+       [
+        565,
+        25,
+        1,
+        "macro",
+        ""
+       ],
+       [
+        566,
+        16,
+        9,
+        "macro",
+        "defaultLibrary,library"
+       ],
+       [
+        566,
+        25,
+        1,
+        "macro",
+        ""
+       ]
+      ]
+     }
+    },
+    {
+     "settled": true,
+     "whole_range": {
+      "equal": false,
+      "n_full": 19,
+      "n_range": 19,
+      "only_full": [
+       [
+        563,
+        17,
+        1,
+        "operator",
+        "macro,procMacro"
+       ],
+       [
+        563,
+        18,
+        6,
+        "method",
+        "consuming,defaultLibrary,library,macro,procMacro"
+       ],
+       [
+        564,
+        12,
+        10,
+        "enum",
+        "macro,procMacro"
+       ],
+       [
+        564,
+        22,
+        2,
+        "operator",
+        "macro,procMacro"
+       ],
+       [
+        564,
+        24,
+        14,
+        "enumMember",
+        "macro,procMacro"
+       ],
+       [
+        564,
+        39,
+        6,
+        "variable",
+        "declaration,macro,procMacro"
+       ],
+       [
+        564,
+        47,
+        2,
+        "operator",
+        "macro,procMacro"
+       ],
+       [
+        565,
+        16,
+        9,
+        "macro",
+        "defaultLibrary,library,macro,procMacro"
+       ],
+       [
+        565,
+        25,
+        1,
+        "macro",
+        "macro,procMacro"
+       ],
+       [
+        566,
+        16,
+        9,
+        "macro",
+        "defaultLibrary,library,macro,procMacro"
+       ],
+       [
+        566,
+        25,
+        1,
+        "macro",
+        "macro,procMacro"
+       ]
+      ],
+      "only_range": [
+       [
+        563,
+        17,
+        1,
+        "operator",
+        ""
+       ],
+       [
+        563,
+        18,
+        6,
+        "unresolvedReference",
+        ""
+       ],
+       [
+        564,
+        12,
+        10,
+        "enum",
+        ""
+       ],
+       [
+        564,
+        22,
+        2,
+        "operator",
+        ""
+       ],
+       [
+        564,
+        24,
+        14,
+        "enumMember",
+        ""
+       ],
+       [
+        564,
+        39,
+        6,
+        "variable",
+        "declaration"
+       ],
+       [
+        564,
+        47,
+        2,
+        "operator",
+        ""
+       ],
+       [
+        565,
+        16,
+        9,
+        "macro",
+        "defaultLibrary,library"
+       ],
+       [
+        565,
+        25,
+        1,
+        "macro",
+        ""
+       ],
+       [
+        566,
+        16,
+        9,
+        "macro",
+        "defaultLibrary,library"
+       ],
+       [
+        566,
+        25,
+        1,
+        "macro",
+        ""
+       ]
+      ]
+     }
+    },
+    {
+     "settled": true,
+     "whole_range": {
+      "equal": false,
+      "n_full": 19,
+      "n_range": 19,
+      "only_full": [
+       [
+        563,
+        17,
+        1,
+        "operator",
+        "macro,procMacro"
+       ],
+       [
+        563,
+        18,
+        6,
+        "method",
+        "consuming,defaultLibrary,library,macro,procMacro"
+       ],
+       [
+        564,
+        12,
+        10,
+        "enum",
+        "macro,procMacro"
+       ],
+       [
+        564,
+        22,
+        2,
+        "operator",
+        "macro,procMacro"
+       ],
+       [
+        564,
+        24,
+        14,
+        "enumMember",
+        "macro,procMacro"
+       ],
+       [
+        564,
+        39,
+        6,
+        "variable",
+        "declaration,macro,procMacro"
+       ],
+       [
+        564,
+        47,
+        2,
+        "operator",
+        "macro,procMacro"
+       ],
+       [
+        565,
+        16,
+        9,
+        "macro",
+        "defaultLibrary,library,macro,procMacro"
+       ],
+       [
+        565,
+        25,
+        1,
+        "macro",
+        "macro,procMacro"
+       ],
+       [
+        566,
+        16,
+        9,
+        "macro",
+        "defaultLibrary,library,macro,procMacro"
+       ],
+       [
+        566,
+        25,
+        1,
+        "macro",
+        "macro,procMacro"
+       ]
+      ],
+      "only_range": [
+       [
+        563,
+        17,
+        1,
+        "operator",
+        ""
+       ],
+       [
+        563,
+        18,
+        6,
+        "unresolvedReference",
+        ""
+       ],
+       [
+        564,
+        12,
+        10,
+        "enum",
+        ""
+       ],
+       [
+        564,
+        22,
+        2,
+        "operator",
+        ""
+       ],
+       [
+        564,
+        24,
+        14,
+        "enumMember",
+        ""
+       ],
+       [
+        564,
+        39,
+        6,
+        "variable",
+        "declaration"
+       ],
+       [
+        564,
+        47,
+        2,
+        "operator",
+        ""
+       ],
+       [
+        565,
+        16,
+        9,
+        "macro",
+        "defaultLibrary,library"
+       ],
+       [
+        565,
+        25,
+        1,
+        "macro",
+        ""
+       ],
+       [
+        566,
+        16,
+        9,
+        "macro",
+        "defaultLibrary,library"
+       ],
+       [
+        566,
+        25,
+        1,
+        "macro",
+        ""
+       ]
+      ]
+     }
+    }
+   ],
+   "error": "",
+   "seconds": 52.4
+  },
+  {
+   "cause": "C29",
+   "campaign": "main_v2",
+   "gid": "rust-analyzer-r3-semantictokensrange-changed-b-b6e28b",
+   "variant": "moved",
+   "path": "crates/google-workspace-cli/src/auth.rs",
+   "range": [
+    539,
+    0,
+    567,
+    13
+   ],
+   "original_range": [
+    563,
+    15,
+    567,
+    13
+   ],
+   "replays": 3,
+   "settled": 3,
+   "differs": 0,
+   "differs_on_original_span": 0,
+   "runs": [
+    {
+     "settled": true,
+     "whole_range": {
+      "equal": true,
+      "n_full": 93,
+      "n_range": 93,
+      "only_full": [],
+      "only_range": []
+     },
+     "original_span": {
+      "equal": true,
+      "n_full": 19,
+      "n_range": 19,
+      "only_full": [],
+      "only_range": []
+     }
+    },
+    {
+     "settled": true,
+     "whole_range": {
+      "equal": true,
+      "n_full": 93,
+      "n_range": 93,
+      "only_full": [],
+      "only_range": []
+     },
+     "original_span": {
+      "equal": true,
+      "n_full": 19,
+      "n_range": 19,
+      "only_full": [],
+      "only_range": []
+     }
+    },
+    {
+     "settled": true,
+     "whole_range": {
+      "equal": true,
+      "n_full": 93,
+      "n_range": 93,
+      "only_full": [],
+      "only_range": []
+     },
+     "original_span": {
+      "equal": true,
+      "n_full": 19,
+      "n_range": 19,
+      "only_full": [],
+      "only_range": []
+     }
+    }
+   ],
+   "error": "",
+   "seconds": 52.8
+  }
+ ]
+}

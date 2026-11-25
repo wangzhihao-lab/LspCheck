@@ -1,0 +1,206 @@
+{
+ "format": 1,
+ "campaign": "bench_v1-dryrun",
+ "vid": "b7614b352b68-v00",
+ "run_id": "b7614b352b68",
+ "oracle": "r3_routes",
+ "server": {
+  "kind": "gopls",
+  "version": "v0.12.1"
+ },
+ "project": {
+  "name": "gopls-60435",
+  "source": "dir",
+  "ref": "data/lsp_bench/cases/gopls-60435/project",
+  "commit": "",
+  "language": "go"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 180.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "main.go",
+    "positions": [
+     [
+      0,
+      10
+     ],
+     [
+      7,
+      7
+     ],
+     [
+      8,
+      3
+     ],
+     [
+      8,
+      15
+     ],
+     [
+      9,
+      5
+     ],
+     [
+      9,
+      15
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      12
+     ],
+     [
+      7,
+      9
+     ],
+     [
+      8,
+      5
+     ],
+     [
+      8,
+      24
+     ],
+     [
+      9,
+      9
+     ],
+     [
+      9,
+      21
+     ]
+    ],
+    "names": [
+     "main",
+     "main",
+     "http",
+     "CanonicalHeaderKey",
+     "httptest",
+     "NewRecorder"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "definitionConsistency",
+  "path": "main.go",
+  "line": 4,
+  "character": 10,
+  "extra": "from:main.go:9:5"
+ },
+ "ops": [],
+ "case": {
+  "loc": [
+   "main.go",
+   4,
+   1,
+   4,
+   20
+  ],
+  "sub": "d",
+  "target": [
+   "main.go",
+   9,
+   5
+  ]
+ },
+ "shape": "definitionConsistency:changed",
+ "signature": "gopls|r3_routes|definitionConsistency:changed",
+ "expected": [
+  [
+   "main.go",
+   4,
+   1,
+   4,
+   20
+  ]
+ ],
+ "actual": [
+  [
+   "temp/lsp_servers/go-sdks/sdk/go1.20.4/src/net/http/httptest/httptest.go",
+   5,
+   0,
+   14,
+   1
+  ],
+  [
+   "temp/lsp_servers/go-sdks/sdk/go1.20.4/src/net/http/httptest/recorder.go",
+   4,
+   0,
+   16,
+   1
+  ],
+  [
+   "temp/lsp_servers/go-sdks/sdk/go1.20.4/src/net/http/httptest/server.go",
+   6,
+   0,
+   21,
+   1
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "flake 3/3 [r1:SCR r2:SCR r3:SCR] in 17s",
+ "violation": {
+  "oracle": "r3_routes",
+  "server": "gopls-v0.12.1",
+  "project": "gopls-60435",
+  "key": {
+   "method": "definitionConsistency",
+   "path": "main.go",
+   "line": 4,
+   "character": 10,
+   "extra": "from:main.go:9:5"
+  },
+  "expected": [
+   [
+    "main.go",
+    4,
+    1,
+    4,
+    20
+   ]
+  ],
+  "actual": [
+   [
+    "temp/lsp_servers/go-sdks/sdk/go1.20.4/src/net/http/httptest/httptest.go",
+    5,
+    0,
+    14,
+    1
+   ],
+   [
+    "temp/lsp_servers/go-sdks/sdk/go1.20.4/src/net/http/httptest/recorder.go",
+    4,
+    0,
+    16,
+    1
+   ],
+   [
+    "temp/lsp_servers/go-sdks/sdk/go1.20.4/src/net/http/httptest/server.go",
+    6,
+    0,
+    21,
+    1
+   ]
+  ],
+  "ops": [],
+  "detail": "{\"case\": {\"loc\": [\"main.go\", 4, 1, 4, 20], \"sub\": \"d\", \"target\": [\"main.go\", 9, 5]}, \"note\": \"flake 3/3 [r1:SCR r2:SCR r3:SCR] in 17s\", \"shape\": \"definitionConsistency:changed\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "gopls|r3_routes|definitionConsistency:changed",
+  "run_id": "b7614b352b68"
+ },
+ "replay_logs": [
+  "logs/gopls-v0.12.1-b7614b352b68-r3-replay-baseline-20260923-123636-1feeb6.jsonl.gz",
+  "logs/gopls-v0.12.1-b7614b352b68-r3-replay-control-20260923-123639-cdd804.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

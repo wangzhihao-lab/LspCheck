@@ -1,0 +1,3 @@
+2026-09-23 11:19:18,308 INFO campaign_run run 98d8f16ea553: r5_transforms on ts7 7.0.2, pmndrs/zustand@b57db4f86ef1 seed 1 settled, targets ['src/react.ts', 'src/vanilla/shallow.ts', 'tests/persistSync.test.tsx']
+2026-09-23 11:20:20,108 INFO campaign_run run 98d8f16ea553: 0 candidate(s) in 62s; confirming
+2026-09-23 11:20:20,108 INFO campaign_run run 98d8f16ea553 finished: ok, 0 confirmed of 0 candidate(s), 62s

@@ -1,0 +1,6 @@
+2026-09-23 22:41:08,829 INFO campaign_run run cb2b084be72f: r3_routes on ts7 7.0.2, modelcontextprotocol/servers@f46d9578190b seed 2 settled, targets ['src/memory/__tests__/search-nodes-schema.test.ts', 'src/memory/__tests__/server-version.test.ts', 'src/sequentialthinking/__tests__/input-schema.test.ts']
+2026-09-23 22:43:32,699 INFO campaign_run run cb2b084be72f: 14 candidate(s) in 144s; confirming
+2026-09-23 22:43:52,386 INFO flake replay 1/3 of ts7|r3_routes|definitionConsistency:missing: settled=True control_stable=True reproduced=True (19.7s)
+2026-09-23 22:44:19,764 INFO flake replay 2/3 of ts7|r3_routes|definitionConsistency:missing: settled=True control_stable=True reproduced=True (27.4s)
+2026-09-23 22:44:39,669 INFO flake replay 3/3 of ts7|r3_routes|definitionConsistency:missing: settled=True control_stable=True reproduced=True (19.9s)
+2026-09-23 22:44:39,681 INFO campaign_run run cb2b084be72f finished: ok, 1 confirmed of 14 candidate(s), 211s

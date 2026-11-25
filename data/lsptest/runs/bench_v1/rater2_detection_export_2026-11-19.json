@@ -1,0 +1,625 @@
+{
+ "page": "detection-rater2",
+ "campaign": "bench_v1",
+ "order_seed": 20261118,
+ "exported_at": "",
+ "reconstructed_from": "rater2_detection_paste_2026-11-19.txt (the pasted items; the page header and the per-item judged_at were not in the paste)",
+ "items": [
+  {
+   "n": 1,
+   "id": "tsserver-37830|r3_routes|tsserver|r3_routes|definitionConsistency:changed",
+   "case": "tsserver-37830",
+   "signature": "tsserver|r3_routes|definitionConsistency:changed",
+   "verdict": "yes",
+   "note": "对 static foo 找引用时混进了基类 Y 的实例成员 foo（从这处引用跳定义回到它自己），正是 issue 的错误。"
+  },
+  {
+   "n": 2,
+   "id": "gopls-74708|r4_edits|gopls|r4_edits|diagnostics:extra:?",
+   "case": "gopls-74708",
+   "signature": "gopls|r4_edits|diagnostics:extra:?",
+   "verdict": "yes",
+   "note": "应用 WaitGroup.Go 修复后出现语法错误 expected operand, found '{'，即 issue 报的 '&{s wg}.Go(...)' 无法解析。"
+  },
+  {
+   "n": 3,
+   "id": "rust-analyzer-18130|r4_edits|rust-analyzer|r4_edits|completionInsert:gained",
+   "case": "rust-analyzer-18130",
+   "signature": "rust-analyzer|r4_edits|completionInsert:gained",
+   "verdict": "yes",
+   "note": "闭包体内补全 foo() 时追加了分号，产生 issue 报的语法错误。"
+  },
+  {
+   "n": 4,
+   "id": "rust-analyzer-18572|r1_history|rust-analyzer|r1_history|codeAction:missing",
+   "case": "rust-analyzer-18572",
+   "signature": "rust-analyzer|r1_history|codeAction:missing",
+   "verdict": "no",
+   "note": "文件改名再改回等一串操作后 codeAction 少了 Convert to guarded return，与关键字前缀的引用补全无关。"
+  },
+  {
+   "n": 5,
+   "id": "rust-analyzer-18572|r1_history|rust-analyzer|r1_history|codeAction:lost",
+   "case": "rust-analyzer-18572",
+   "signature": "rust-analyzer|r1_history|codeAction:lost",
+   "verdict": "no",
+   "note": "同第 4 条：codeAction 丢失，与 issue 的补全问题无关。"
+  },
+  {
+   "n": 6,
+   "id": "pyright-8946|r1_history|pyright|r1_history|typeDefinition:changed",
+   "case": "pyright-8946",
+   "signature": "pyright|r1_history|typeDefinition:changed",
+   "verdict": "yes",
+   "note": "删掉并重打 from multiprocessing import Pool 后，由 Pool 推出的 exit_codes 类型不对（typeDefinition 不再指向 list），即 Pool 未被识别。"
+  },
+  {
+   "n": 7,
+   "id": "pyright-8946|r1_history|pyright|r1_history|definition:lost",
+   "case": "pyright-8946",
+   "signature": "pyright|r1_history|definition:lost",
+   "verdict": "yes",
+   "note": "删掉并重打 import datetime 后 datetime.date 解析不到；与 1.1.381 修复的“编辑改变导入后导入不再解析”是同一 bug，只是换了一条导入。"
+  },
+  {
+   "n": 8,
+   "id": "pyright-8946|r1_history|pyright|r1_history|typeDefinition:lost",
+   "case": "pyright-8946",
+   "signature": "pyright|r1_history|typeDefinition:lost",
+   "verdict": "yes",
+   "note": "同第 7 条：重打导入后 typeDefinition 为空。"
+  },
+  {
+   "n": 9,
+   "id": "pyright-8946|r1_history|pyright|r1_history|references:lost",
+   "case": "pyright-8946",
+   "signature": "pyright|r1_history|references:lost",
+   "verdict": "yes",
+   "note": "同第 7 条：重打导入后 references 为空。"
+  },
+  {
+   "n": 10,
+   "id": "pyright-8946|r1_history|pyright|r1_history|hover:text",
+   "case": "pyright-8946",
+   "signature": "pyright|r1_history|hover:text",
+   "verdict": "yes",
+   "note": "重打导入后 hover 显示 Pool: Unknown，正是 issue 的症状。"
+  },
+  {
+   "n": 11,
+   "id": "pyright-8946|r1_history|pyright|r1_history|signatureHelp:lost",
+   "case": "pyright-8946",
+   "signature": "pyright|r1_history|signatureHelp:lost",
+   "verdict": "yes",
+   "note": "重打导入后 po.map 的 signatureHelp 为空，原因是 Pool 未被识别。"
+  },
+  {
+   "n": 12,
+   "id": "pyright-8946|r1_history|pyright|r1_history|typeDefinition:result->error:-32603",
+   "case": "pyright-8946",
+   "signature": "pyright|r1_history|typeDefinition:result->error:-32603",
+   "verdict": "partial",
+   "note": "导入的模块名改成 datetime_x 再改回后，对模块名做 typeDefinition 返回内部错误；触发条件同类（编辑改变导入），但表现是内部错误而不是类型无法识别。"
+  },
+  {
+   "n": 13,
+   "id": "rust-analyzer-19694|r3_routes|rust-analyzer|r3_routes|diagnostics:missing:E0268",
+   "case": "rust-analyzer-19694",
+   "signature": "rust-analyzer|r3_routes|diagnostics:missing:E0268",
+   "verdict": "no",
+   "note": "拉取式与推送式诊断不一致（缺 E0268），与原始标识符标签补全无关。"
+  },
+  {
+   "n": 14,
+   "id": "tsserver-51920|r4_edits|tsserver|r4_edits|diagnostics:changed:2741,8010",
+   "case": "tsserver-51920",
+   "signature": "tsserver|r4_edits|diagnostics:changed:2741,8010",
+   "verdict": "yes",
+   "note": "Add missing properties 在 JS 文件里生成 TS 类型注解，出现 8010 错误。"
+  },
+  {
+   "n": 15,
+   "id": "gopls-73576|r2_handles|gopls|r2_handles|codeActionResolve:changed",
+   "case": "gopls-73576",
+   "signature": "gopls|r2_handles|codeActionResolve:changed",
+   "verdict": "no",
+   "note": "Inline call to SetFocus 的过期句柄解析出的编辑位置不对，与 minmax 修复无关。"
+  },
+  {
+   "n": 16,
+   "id": "gopls-73576|r4_edits|gopls|r4_edits|diagnostics:extra:?",
+   "case": "gopls-73576",
+   "signature": "gopls|r4_edits|diagnostics:extra:?",
+   "verdict": "yes",
+   "note": "minmax 修复后出现 expected if statement or block 语法错误，即 else 后直接接语句。"
+  },
+  {
+   "n": 17,
+   "id": "tsserver-46466|r4_edits|tsserver|r4_edits|diagnostics:changed:1005,1109,1308",
+   "case": "tsserver-46466",
+   "signature": "tsserver|r4_edits|diagnostics:changed:1005,1109,1308",
+   "verdict": "yes",
+   "note": "加 async 的修复后出现一串解析错误，对应 '<T>async (x: T)' 无法解析。"
+  },
+  {
+   "n": 18,
+   "id": "tsserver-32068|r4_edits|tsserver|r4_edits|formatting:gained",
+   "case": "tsserver-32068",
+   "signature": "tsserver|r4_edits|formatting:gained",
+   "verdict": "yes",
+   "note": "第二次格式化把 '<<number>' 改成 '<< number >'，正是 issue 描述的两次格式化结果。"
+  },
+  {
+   "n": 19,
+   "id": "gopls-42254|r3_routes|gopls|r3_routes|definitionConsistency:changed",
+   "case": "gopls-42254",
+   "signature": "gopls|r3_routes|definitionConsistency:changed",
+   "verdict": "yes",
+   "note": "在 S 中内嵌的 T 上跳定义回到它自己，而不是别名声明。"
+  },
+  {
+   "n": 20,
+   "id": "pyright-3482|r1_history|pyright|r1_history|diagnostics:extra:reportGeneralTypeIssues",
+   "case": "pyright-3482",
+   "signature": "pyright|r1_history|diagnostics:extra:reportGeneralTypeIssues",
+   "verdict": "yes",
+   "note": "编辑后出现 Arguments for ParamSpec ... are missing，新会话没有，正是 issue。"
+  },
+  {
+   "n": 21,
+   "id": "pyright-3482|r1_history|pyright|r1_history|hover:text",
+   "case": "pyright-3482",
+   "signature": "pyright|r1_history|hover:text",
+   "verdict": "yes",
+   "note": "同一历史下循环里 fn(*args, **kw) 的 args 被求成 Unknown | _P.args，这正是那条误报的来由（求值顺序问题）。"
+  },
+  {
+   "n": 22,
+   "id": "gopls-73564|r4_edits|gopls|r4_edits|diagnostics:extra:CannotInferTypeArgs",
+   "case": "gopls-73564",
+   "signature": "gopls|r4_edits|diagnostics:extra:CannotInferTypeArgs",
+   "verdict": "yes",
+   "note": "slicescontains 修复后出现 S (type []Fruit) does not satisfy ~[]E，与 issue 一致。"
+  },
+  {
+   "n": 23,
+   "id": "rust-analyzer-21173|r3_routes|rust-analyzer|r3_routes|diagnostics:error:-32603->result",
+   "case": "rust-analyzer-21173",
+   "signature": "rust-analyzer|r3_routes|diagnostics:error:-32603->result",
+   "verdict": "yes",
+   "note": "拉取式诊断 textDocument/diagnostic 返回 -32603，即 issue 的 panic；推送式为空只是对照。"
+  },
+  {
+   "n": 24,
+   "id": "rust-analyzer-21173|r0_crash|rust-analyzer|r0_crash|diagnostics:result->error:-32603",
+   "case": "rust-analyzer-21173",
+   "signature": "rust-analyzer|r0_crash|diagnostics:result->error:-32603",
+   "verdict": "yes",
+   "note": "未改动的项目上 diagnostics 在两个新会话里都返回 -32603，即该 panic。"
+  },
+  {
+   "n": 25,
+   "id": "rust-analyzer-21173|r1_history|rust-analyzer|r1_history|completion:lost",
+   "case": "rust-analyzer-21173",
+   "signature": "rust-analyzer|r1_history|completion:lost",
+   "verdict": "no",
+   "note": "一串改名、改 Cargo.toml 后补全丢了 Assoc(as Tr)，返回的是空列表而不是 panic，与 issue 无关。"
+  },
+  {
+   "n": 26,
+   "id": "rust-analyzer-21173|r0_crash|rust-analyzer|r0_crash|codeAction:result->error:-32603",
+   "case": "rust-analyzer-21173",
+   "signature": "rust-analyzer|r0_crash|codeAction:result->error:-32603",
+   "verdict": "yes",
+   "note": "不确定：codeAction 在新会话里返回 -32603；页面上没有错误消息，但 codeAction 会计算同一文件的诊断，推断是同一个 panic。"
+  },
+  {
+   "n": 27,
+   "id": "rust-analyzer-21173|r1_history|rust-analyzer|r1_history|codeAction:error:-32603->result",
+   "case": "rust-analyzer-21173",
+   "signature": "rust-analyzer|r1_history|codeAction:error:-32603->result",
+   "verdict": "partial",
+   "note": "不确定：新会话一侧的 codeAction -32603 应是同一个 panic，但这条报的是“操作后不再报错”的历史差异，只间接表现。"
+  },
+  {
+   "n": 28,
+   "id": "rust-analyzer-20987|r4_edits|rust-analyzer|r4_edits|completionInsert:gained",
+   "case": "rust-analyzer-20987",
+   "signature": "rust-analyzer|r4_edits|completionInsert:gained",
+   "verdict": "yes",
+   "note": "在函数实参位置补全时追加了分号，正是 issue。"
+  },
+  {
+   "n": 29,
+   "id": "pyright-9681|r5_transforms|pyright|r5_transforms|diagnostics:extra:reportAssignmentType",
+   "case": "pyright-9681",
+   "signature": "pyright|r5_transforms|diagnostics:extra:reportAssignmentType",
+   "verdict": "yes",
+   "note": "CRLF 下 Literal['a\\r\\nb'] 与声明的 Literal['a\\nb'] 不兼容的误报，与 issue 一致。"
+  },
+  {
+   "n": 30,
+   "id": "gopls-73269|r4_edits|gopls|r4_edits|diagnostics:extra:CannotInferTypeArgs",
+   "case": "gopls-73269",
+   "signature": "gopls|r4_edits|diagnostics:extra:CannotInferTypeArgs",
+   "verdict": "yes",
+   "note": "可变参数函数改成 slices.ContainsFunc 后的类型错误，与 issue 一致。"
+  },
+  {
+   "n": 31,
+   "id": "rust-analyzer-17728|r4_edits|rust-analyzer|r4_edits|diagnostics:changed:E0308,syntax-error",
+   "case": "rust-analyzer-17728",
+   "signature": "rust-analyzer|r4_edits|diagnostics:changed:E0308,syntax-error",
+   "verdict": "yes",
+   "note": "Wrap in Ok 修复后出现语法错误，对应把 Ok({}) 放到了函数体外。"
+  },
+  {
+   "n": 32,
+   "id": "rust-analyzer-16858|r4_edits|rust-analyzer|r4_edits|completionInsert:gained",
+   "case": "rust-analyzer-16858",
+   "signature": "rust-analyzer|r4_edits|completionInsert:gained",
+   "verdict": "yes",
+   "note": "自动导入（补全附带的 use）写出 use priv::S 而不是 r#priv；issue 报的就是自动导入，这里经由补全触发。"
+  },
+  {
+   "n": 33,
+   "id": "gopls-73661|r4_edits|gopls|r4_edits|diagnostics:extra:IncompatibleAssign",
+   "case": "gopls-73661",
+   "signature": "gopls|r4_edits|diagnostics:extra:IncompatibleAssign",
+   "verdict": "yes",
+   "note": "slices.Clone 修复后 ssa 与 ssb 类型不兼容，与 issue 一致。"
+  },
+  {
+   "n": 34,
+   "id": "tsserver-44123|r4_edits|tsserver|r4_edits|diagnostics:extra:1163",
+   "case": "tsserver-44123",
+   "signature": "tsserver|r4_edits|diagnostics:extra:1163",
+   "verdict": "yes",
+   "note": "对生成器回调做 Convert to async function 后出现 yield 错误。"
+  },
+  {
+   "n": 35,
+   "id": "pyright-4844|r1_history|pyright|r1_history|codeAction:key-lost",
+   "case": "pyright-4844",
+   "signature": "pyright|r1_history|codeAction:key-lost",
+   "verdict": "partial",
+   "note": "codeAction 的 key-lost 只是因为第一个 f(0) 的误报在操作后消失（见第 36 条），间接表现。"
+  },
+  {
+   "n": 36,
+   "id": "pyright-4844|r1_history|pyright|r1_history|diagnostics:missing:reportGeneralTypeIssues",
+   "case": "pyright-4844",
+   "signature": "pyright|r1_history|diagnostics:missing:reportGeneralTypeIssues",
+   "verdict": "yes",
+   "note": "新会话里第一个 f(0) 被误报，关闭重开后不报，正是结果随求值顺序变化的 bug。"
+  },
+  {
+   "n": 37,
+   "id": "pyright-4844|r1_history|pyright|r1_history|diagnostics:extra:reportGeneralTypeIssues",
+   "case": "pyright-4844",
+   "signature": "pyright|r1_history|diagnostics:extra:reportGeneralTypeIssues",
+   "verdict": "yes",
+   "note": "编辑后第三个 f(0) 也被误报，同一 bug。"
+  },
+  {
+   "n": 38,
+   "id": "gopls-62141|r4_edits|gopls|r4_edits|completionInsert:gained",
+   "case": "gopls-62141",
+   "signature": "gopls|r4_edits|completionInsert:gained",
+   "verdict": "yes",
+   "note": "补全写出 untyped float(abcdef)，正是 issue。"
+  },
+  {
+   "n": 39,
+   "id": "gopls-36824|r1_history|gopls|r1_history|definition:result->error:0",
+   "case": "gopls-36824",
+   "signature": "gopls|r1_history|definition:result->error:0",
+   "verdict": "no",
+   "note": "临时删掉 go.mod 的 module 行再恢复后 x.go 的查询失败，与单行文件整理导入时删掉函数无关。"
+  },
+  {
+   "n": 40,
+   "id": "gopls-36824|r1_history|gopls|r1_history|hover:lost",
+   "case": "gopls-36824",
+   "signature": "gopls|r1_history|hover:lost",
+   "verdict": "no",
+   "note": "同第 39 条。"
+  },
+  {
+   "n": 41,
+   "id": "gopls-36824|r1_history|gopls|r1_history|documentSymbol:lost",
+   "case": "gopls-36824",
+   "signature": "gopls|r1_history|documentSymbol:lost",
+   "verdict": "no",
+   "note": "同第 39 条。"
+  },
+  {
+   "n": 42,
+   "id": "gopls-36824|r1_history|gopls|r1_history|hover:changed",
+   "case": "gopls-36824",
+   "signature": "gopls|r1_history|hover:changed",
+   "verdict": "no",
+   "note": "同第 39 条。"
+  },
+  {
+   "n": 43,
+   "id": "gopls-36824|r1_history|gopls|r1_history|documentHighlight:lost",
+   "case": "gopls-36824",
+   "signature": "gopls|r1_history|documentHighlight:lost",
+   "verdict": "no",
+   "note": "同第 39 条。"
+  },
+  {
+   "n": 44,
+   "id": "gopls-36824|r4_edits|gopls|r4_edits|organizeImports:gained",
+   "case": "gopls-36824",
+   "signature": "gopls|r4_edits|organizeImports:gained",
+   "verdict": "yes",
+   "note": "第二次整理导入删掉了整个 import 块，说明第一次已把函数删掉、只留下未用的 fmt，正是 issue。"
+  },
+  {
+   "n": 45,
+   "id": "gopls-36824|r1_history|gopls|r1_history|references:result->error:0",
+   "case": "gopls-36824",
+   "signature": "gopls|r1_history|references:result->error:0",
+   "verdict": "no",
+   "note": "同第 39 条。"
+  },
+  {
+   "n": 46,
+   "id": "tsserver-52274|r4_edits|tsserver|r4_edits|diagnostics:extra:8024",
+   "case": "tsserver-52274",
+   "signature": "tsserver|r4_edits|diagnostics:extra:8024",
+   "verdict": "yes",
+   "note": "删除无用 @param 的修复之后 8024 仍在，即标签没被删掉。"
+  },
+  {
+   "n": 47,
+   "id": "gopls-60435|r3_routes|gopls|r3_routes|highlightVsReferences:extra",
+   "case": "gopls-60435",
+   "signature": "gopls|r3_routes|highlightVsReferences:extra",
+   "verdict": "partial",
+   "note": "方向相反：从 http 的使用处高亮，选中了 httptest 的导入路径；很可能是同一个按包名子串匹配的缺陷，但不是 issue 报的那个方向。"
+  },
+  {
+   "n": 48,
+   "id": "gopls-52500|r1_history|gopls|r1_history|semanticTokens:result->error:0",
+   "case": "gopls-52500",
+   "signature": "gopls|r1_history|semanticTokens:result->error:0",
+   "verdict": "yes",
+   "note": "包名改动后再改回（main_test→main_tes→main_test），other_test.go 不属于任何包，semanticTokens 报错。"
+  },
+  {
+   "n": 49,
+   "id": "gopls-52500|r1_history|gopls|r1_history|definition:result->error:0",
+   "case": "gopls-52500",
+   "signature": "gopls|r1_history|definition:result->error:0",
+   "verdict": "yes",
+   "note": "同一状态：main_test.go 里 otherConst 跳定义失败。"
+  },
+  {
+   "n": 50,
+   "id": "gopls-52500|r1_history|gopls|r1_history|semanticTokens:changed",
+   "case": "gopls-52500",
+   "signature": "gopls|r1_history|semanticTokens:changed",
+   "verdict": "yes",
+   "note": "同一状态：otherConst 未定义，语义高亮的修饰符随之变化。"
+  },
+  {
+   "n": 51,
+   "id": "gopls-52500|r1_history|gopls|r1_history|references:missing",
+   "case": "gopls-52500",
+   "signature": "gopls|r1_history|references:missing",
+   "verdict": "yes",
+   "note": "同一状态：Server 的引用缺了 other_test.go 里的那一处。"
+  },
+  {
+   "n": 52,
+   "id": "gopls-52500|r1_history|gopls|r1_history|documentHighlight:lost",
+   "case": "gopls-52500",
+   "signature": "gopls|r1_history|documentHighlight:lost",
+   "verdict": "yes",
+   "note": "同一状态：other_test.go 包名处的高亮为空。"
+  },
+  {
+   "n": 53,
+   "id": "gopls-52500|r1_history|gopls|r1_history|hover:changed",
+   "case": "gopls-52500",
+   "signature": "gopls|r1_history|hover:changed",
+   "verdict": "yes",
+   "note": "同一状态：other_test.go 包名处的 hover 为空。"
+  },
+  {
+   "n": 54,
+   "id": "gopls-52500|r1_history|gopls|r1_history|hover:text",
+   "case": "gopls-52500",
+   "signature": "gopls|r1_history|hover:text",
+   "verdict": "yes",
+   "note": "同一状态：mainConst 依赖 otherConst，类型变成 invalid。"
+  },
+  {
+   "n": 55,
+   "id": "gopls-52500|r1_history|gopls|r1_history|documentSymbol:lost",
+   "case": "gopls-52500",
+   "signature": "gopls|r1_history|documentSymbol:lost",
+   "verdict": "yes",
+   "note": "同一状态：other_test.go 的文档符号为空。"
+  },
+  {
+   "n": 56,
+   "id": "gopls-52500|r1_history|gopls|r1_history|diagnostics:extra:UndeclaredName",
+   "case": "gopls-52500",
+   "signature": "gopls|r1_history|diagnostics:extra:UndeclaredName",
+   "verdict": "yes",
+   "note": "同一状态：main_test.go 报 undefined: otherConst。"
+  },
+  {
+   "n": 57,
+   "id": "gopls-52500|r1_history|gopls|r1_history|hover:lost",
+   "case": "gopls-52500",
+   "signature": "gopls|r1_history|hover:lost",
+   "verdict": "yes",
+   "note": "同一状态：otherConst 的 hover 为空。"
+  },
+  {
+   "n": 58,
+   "id": "gopls-52500|r1_history|gopls|r1_history|typeDefinition:result->error:0",
+   "case": "gopls-52500",
+   "signature": "gopls|r1_history|typeDefinition:result->error:0",
+   "verdict": "yes",
+   "note": "同一状态：other_test.go 中 Server 的 typeDefinition 报错。"
+  },
+  {
+   "n": 59,
+   "id": "rust-analyzer-20588|r1_history|rust-analyzer|r1_history|documentHighlight:lost",
+   "case": "rust-analyzer-20588",
+   "signature": "rust-analyzer|r1_history|documentHighlight:lost",
+   "verdict": "no",
+   "note": "把 lib.rs 改名再改回等操作后高亮丢失，与 Add unsafe block 生成错误语法无关。"
+  },
+  {
+   "n": 60,
+   "id": "rust-analyzer-20588|r1_history|rust-analyzer|r1_history|codeAction:lost",
+   "case": "rust-analyzer-20588",
+   "signature": "rust-analyzer|r1_history|codeAction:lost",
+   "verdict": "no",
+   "note": "同第 59 条：codeAction 全部丢失（包括 Add unsafe block），不是 issue 说的错误语法。"
+  },
+  {
+   "n": 61,
+   "id": "tsserver-59116|r4_edits|tsserver|r4_edits|diagnostics:extra:2339",
+   "case": "tsserver-59116",
+   "signature": "tsserver|r4_edits|diagnostics:extra:2339",
+   "verdict": "yes",
+   "note": "Add missing function declaration 之后 2339 仍在（函数插进了错误的文件）。"
+  },
+  {
+   "n": 62,
+   "id": "rust-analyzer-16556|r4_edits|rust-analyzer|r4_edits|diagnostics:extra:syntax-error",
+   "case": "rust-analyzer-16556",
+   "signature": "rust-analyzer|r4_edits|diagnostics:extra:syntax-error",
+   "verdict": "yes",
+   "note": "Remove unnecessary else block 之后出现语法错误，对应 let 的初始化被截断。"
+  },
+  {
+   "n": 63,
+   "id": "jdtls-3155|r1_history|jdtls|r1_history|codeAction:extra",
+   "case": "jdtls-3155",
+   "signature": "jdtls|r1_history|codeAction:extra",
+   "verdict": "partial",
+   "note": "多出的 Remove unused import 只是因为陈旧的导入错误还在（见第 64 条），间接表现。"
+  },
+  {
+   "n": 64,
+   "id": "jdtls-3155|r1_history|jdtls|r1_history|diagnostics:extra:268435846,570425394",
+   "case": "jdtls-3155",
+   "signature": "jdtls|r1_history|diagnostics:extra:268435846,570425394",
+   "verdict": "yes",
+   "note": "pom.xml 改坏再恢复后 Foo.java 没被重新校验，残留找不到依赖的错误；方向与 issue 相反，同为类路径变化后不重新校验。"
+  },
+  {
+   "n": 65,
+   "id": "jdtls-3155|r0_crash|jdtls|r0_crash|references:result->error:timeout",
+   "case": "jdtls-3155",
+   "signature": "jdtls|r0_crash|references:result->error:timeout",
+   "verdict": "no",
+   "note": "在 String 上找引用超时，与类路径变化后不重新校验无关。"
+  },
+  {
+   "n": 66,
+   "id": "rust-analyzer-10618|r4_edits|rust-analyzer|r4_edits|diagnostics:changed:E0063,E0451",
+   "case": "rust-analyzer-10618",
+   "signature": "rust-analyzer|r4_edits|diagnostics:changed:E0063,E0451",
+   "verdict": "yes",
+   "note": "Fill struct fields 填出了私有字段，报 E0451。"
+  },
+  {
+   "n": 67,
+   "id": "rust-analyzer-17525|r1_history|rust-analyzer|r1_history|diagnostics:extra:syntax-error",
+   "case": "rust-analyzer-17525",
+   "signature": "rust-analyzer|r1_history|diagnostics:extra:syntax-error",
+   "verdict": "no",
+   "note": "改名再改回后多报了一条原文就有的语法错误，与解构补全无关。"
+  },
+  {
+   "n": 68,
+   "id": "rust-analyzer-17525|r1_history|rust-analyzer|r1_history|semanticTokens:changed",
+   "case": "rust-analyzer-17525",
+   "signature": "rust-analyzer|r1_history|semanticTokens:changed",
+   "verdict": "no",
+   "note": "同第 67 条：语义高亮的差别与 issue 无关。"
+  },
+  {
+   "n": 69,
+   "id": "jdtls-2111|r2_handles|jdtls|r2_handles|codeActionResolve:changed",
+   "case": "jdtls-2111",
+   "signature": "jdtls|r2_handles|codeActionResolve:changed",
+   "verdict": "partial",
+   "note": "不确定：过期的 Generate Getter and Setter 句柄在编辑后解析出缩进不同的编辑；与 issue 同属编辑后代码操作状态陈旧，但表现不是 issue 说的选项缺失或无效。"
+  },
+  {
+   "n": 70,
+   "id": "gopls-38424|r1_history|gopls|r1_history|codeAction:result->error:0",
+   "case": "gopls-38424",
+   "signature": "gopls|r1_history|codeAction:result->error:0",
+   "verdict": "yes",
+   "note": "与第 71 条同一会话，服务器里的缓冲区内容已经错了，codeAction 因此报错。"
+  },
+  {
+   "n": 71,
+   "id": "gopls-38424|r1_history|gopls|r1_history|diagnostics:extra:?",
+   "case": "gopls-38424",
+   "signature": "gopls|r1_history|diagnostics:extra:?",
+   "verdict": "yes",
+   "note": "删掉并重打 package 行后报 expected declaration, found 'package'，与 issue 的错误一致。"
+  },
+  {
+   "n": 72,
+   "id": "gopls-38732|r1_history|gopls|r1_history|diagnostics:missing:?",
+   "case": "gopls-38732",
+   "signature": "gopls|r1_history|diagnostics:missing:?",
+   "verdict": "yes",
+   "note": "去掉再加回 build tag 后 foo.go 的诊断没有更新（缺 No packages found），即 build tag 变化后诊断不更新；方向与 issue 相反。"
+  },
+  {
+   "n": 73,
+   "id": "gopls-38732|r1_history|gopls|r1_history|codeAction:error:0->result",
+   "case": "gopls-38732",
+   "signature": "gopls|r1_history|codeAction:error:0->result",
+   "verdict": "yes",
+   "note": "同一陈旧状态：foo.go 仍被当作包内文件，codeAction 不再报错。"
+  },
+  {
+   "n": 74,
+   "id": "gopls-38732|r1_history|gopls|r1_history|codeAction:key-lost",
+   "case": "gopls-38732",
+   "signature": "gopls|r1_history|codeAction:key-lost",
+   "verdict": "partial",
+   "note": "key-lost 只是因为 foo.go 的那条诊断不见了（见第 72 条），间接表现。"
+  },
+  {
+   "n": 75,
+   "id": "gopls-43144|r5_transforms|gopls|r5_transforms|documentSymbol:changed",
+   "case": "gopls-43144",
+   "signature": "gopls|r5_transforms|documentSymbol:changed",
+   "verdict": "no",
+   "note": "删掉文件末尾换行后文档符号的范围变化，与测试变体里的引用无关。"
+  },
+  {
+   "n": 76,
+   "id": "rust-analyzer-14841|r5_transforms|rust-analyzer|r5_transforms|codeAction:extra",
+   "case": "rust-analyzer-14841",
+   "signature": "rust-analyzer|r5_transforms|codeAction:extra",
+   "verdict": "partial",
+   "note": "不确定：文件顶部插入注释行后 let a 处多出 Inline variable；这种随位置变化的差别很可能来自同一个宏内 token 映射偏移错误，但表现不是 issue 的跳定义。"
+  },
+  {
+   "n": 77,
+   "id": "gopls-74709|r4_edits|gopls|r4_edits|diagnostics:extra:?",
+   "case": "gopls-74709",
+   "signature": "gopls|r4_edits|diagnostics:extra:?",
+   "verdict": "yes",
+   "note": "fmtappendf 修复后出现 expected operand, found ','，即逗号单独留在一行。"
+  }
+ ]
+}

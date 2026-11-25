@@ -1,0 +1,535 @@
+{
+ "format": 1,
+ "campaign": "main_v2",
+ "vid": "90cc8e18ab7d-v00",
+ "run_id": "90cc8e18ab7d",
+ "oracle": "r1_history",
+ "server": {
+  "kind": "gopls",
+  "version": "v0.23.0"
+ },
+ "project": {
+  "name": "docker/compose@c6dffb26bdfd",
+  "source": "corpus",
+  "ref": "temp/corpus/docker__compose@c6dffb26bdfd",
+  "commit": "c6dffb26bdfd94efb1f4e1c743f1241a150d120a",
+  "language": "go"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "internal/tracing/mux.go",
+    "positions": [
+     [
+      30,
+      26
+     ],
+     [
+      30,
+      48
+     ],
+     [
+      37,
+      12
+     ],
+     [
+      37,
+      26
+     ],
+     [
+      38,
+      6
+     ],
+     [
+      39,
+      48
+     ],
+     [
+      40,
+      12
+     ],
+     [
+      42,
+      6
+     ],
+     [
+      47,
+      17
+     ],
+     [
+      47,
+      22
+     ],
+     [
+      58,
+      6
+     ],
+     [
+      59,
+      38
+     ]
+    ],
+    "ends": [
+     [
+      30,
+      32
+     ],
+     [
+      30,
+      52
+     ],
+     [
+      37,
+      16
+     ],
+     [
+      37,
+      27
+     ],
+     [
+      38,
+      7
+     ],
+     [
+      39,
+      50
+     ],
+     [
+      40,
+      14
+     ],
+     [
+      42,
+      9
+     ],
+     [
+      47,
+      19
+     ],
+     [
+      47,
+      24
+     ],
+     [
+      58,
+      7
+     ],
+     [
+      59,
+      40
+     ]
+    ],
+    "names": [
+     "ExportSpans",
+     "Context",
+     "exporter",
+     "m",
+     "Go",
+     "err",
+     "Lock",
+     "errMu",
+     "Join",
+     "errs",
+     "Go",
+     "err"
+    ]
+   },
+   {
+    "path": "pkg/compose/model.go",
+    "positions": [
+     [
+      39,
+      62
+     ],
+     [
+      51,
+      34
+     ],
+     [
+      92,
+      14
+     ],
+     [
+      92,
+      21
+     ],
+     [
+      99,
+      48
+     ],
+     [
+      124,
+      5
+     ],
+     [
+      178,
+      43
+     ],
+     [
+      188,
+      4
+     ],
+     [
+      212,
+      2
+     ],
+     [
+      219,
+      15
+     ],
+     [
+      222,
+      46
+     ],
+     [
+      243,
+      4
+     ]
+    ],
+    "ends": [
+     [
+      39,
+      66
+     ],
+     [
+      51,
+      36
+     ],
+     [
+      92,
+      18
+     ],
+     [
+      92,
+      23
+     ],
+     [
+      99,
+      50
+     ],
+     [
+      124,
+      7
+     ],
+     [
+      178,
+      45
+     ],
+     [
+      188,
+      7
+     ],
+     [
+      212,
+      4
+     ],
+     [
+      219,
+      19
+     ],
+     [
+      222,
+      53
+     ],
+     [
+      243,
+      8
+     ]
+    ],
+    "names": [
+     "project",
+     "ctx",
+     "cleanup",
+     "err",
+     "Cmd",
+     "err",
+     "args",
+     "events",
+     "err",
+     "project",
+     "ModelVariable",
+     "Created"
+    ]
+   },
+   {
+    "path": "pkg/watch/temp.go",
+    "positions": [
+     [
+      35,
+      4
+     ],
+     [
+      35,
+      31
+     ],
+     [
+      37,
+      10
+     ],
+     [
+      41,
+      12
+     ],
+     [
+      49,
+      42
+     ],
+     [
+      54,
+      43
+     ],
+     [
+      58,
+      21
+     ],
+     [
+      59,
+      28
+     ],
+     [
+      63,
+      23
+     ],
+     [
+      71,
+      12
+     ],
+     [
+      74,
+      23
+     ],
+     [
+      78,
+      24
+     ]
+    ],
+    "ends": [
+     [
+      35,
+      7
+     ],
+     [
+      35,
+      33
+     ],
+     [
+      37,
+      12
+     ],
+     [
+      41,
+      14
+     ],
+     [
+      49,
+      46
+     ],
+     [
+      54,
+      46
+     ],
+     [
+      58,
+      24
+     ],
+     [
+      59,
+      30
+     ],
+     [
+      63,
+      25
+     ],
+     [
+      71,
+      14
+     ],
+     [
+      74,
+      25
+     ],
+     [
+      78,
+      26
+     ]
+    ],
+    "names": [
+     "tmpDir",
+     "root",
+     "nil",
+     "nil",
+     "TempDir",
+     "prefix",
+     "NewDir",
+     "dir",
+     "nil",
+     "err",
+     "nil",
+     "dir"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "completion",
+  "path": "internal/tracing/mux.go",
+  "line": 37,
+  "character": 27,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "internal/tracing/mux.go"
+  },
+  {
+   "kind": "open",
+   "path": "pkg/compose/model.go"
+  },
+  {
+   "kind": "open",
+   "path": "pkg/watch/temp.go"
+  },
+  {
+   "kind": "fs_rename",
+   "path": "internal/tracing/mux.go",
+   "new_path": "internal/tracing/mux_rt.go"
+  },
+  {
+   "kind": "fs_rename",
+   "path": "internal/tracing/mux_rt.go",
+   "new_path": "internal/tracing/mux.go"
+  }
+ ],
+ "case": {
+  "chain_step": 0,
+  "families": [],
+  "family": "H5",
+  "history_index": 0,
+  "history_seed": 1001,
+  "mode": "fresh",
+  "note": "rename internal/tracing/mux.go -> internal/tracing/mux_rt.go -> back",
+  "seed": 1,
+  "timing": "settled"
+ },
+ "shape": "completion:extra",
+ "signature": "gopls|r1_history|completion:extra",
+ "expected": [
+  "KeyboardMetrics",
+  "Metrics",
+  "MetricsKey",
+  "MuxExporter",
+  "envMap",
+  "envMap{}",
+  "errMu",
+  "m",
+  "make",
+  "make(SpanOptions, 0)",
+  "make(envMap)",
+  "max",
+  "min"
+ ],
+ "actual": [
+  "KeyboardMetrics",
+  "Metrics",
+  "MetricsKey",
+  "MuxExporter",
+  "envMap",
+  "envMap{}",
+  "errMu",
+  "m",
+  "m.exporters",
+  "make",
+  "make(SpanOptions, 0)",
+  "make(envMap)",
+  "max",
+  "min",
+  "sync.Map",
+  "sync.Mutex"
+ ],
+ "reproduced": "2/3",
+ "note": "H5: rename internal/tracing/mux.go -> internal/tracing/mux_rt.go -> back; flake 2/3 [r1:Scr r2:SCR r3:SCR] in 191s",
+ "violation": {
+  "oracle": "r1_history",
+  "server": "gopls-v0.23.0",
+  "project": "docker/compose@c6dffb26bdfd",
+  "key": {
+   "method": "completion",
+   "path": "internal/tracing/mux.go",
+   "line": 37,
+   "character": 27,
+   "extra": ""
+  },
+  "expected": [
+   "KeyboardMetrics",
+   "Metrics",
+   "MetricsKey",
+   "MuxExporter",
+   "envMap",
+   "envMap{}",
+   "errMu",
+   "m",
+   "make",
+   "make(SpanOptions, 0)",
+   "make(envMap)",
+   "max",
+   "min"
+  ],
+  "actual": [
+   "KeyboardMetrics",
+   "Metrics",
+   "MetricsKey",
+   "MuxExporter",
+   "envMap",
+   "envMap{}",
+   "errMu",
+   "m",
+   "m.exporters",
+   "make",
+   "make(SpanOptions, 0)",
+   "make(envMap)",
+   "max",
+   "min",
+   "sync.Map",
+   "sync.Mutex"
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "internal/tracing/mux.go"
+   },
+   {
+    "kind": "open",
+    "path": "pkg/compose/model.go"
+   },
+   {
+    "kind": "open",
+    "path": "pkg/watch/temp.go"
+   },
+   {
+    "kind": "fs_rename",
+    "path": "internal/tracing/mux.go",
+    "new_path": "internal/tracing/mux_rt.go"
+   },
+   {
+    "kind": "fs_rename",
+    "path": "internal/tracing/mux_rt.go",
+    "new_path": "internal/tracing/mux.go"
+   }
+  ],
+  "detail": "{\"case\": {\"chain_step\": 0, \"families\": [], \"family\": \"H5\", \"history_index\": 0, \"history_seed\": 1001, \"mode\": \"fresh\", \"note\": \"rename internal/tracing/mux.go -> internal/tracing/mux_rt.go -> back\", \"seed\": 1, \"timing\": \"settled\"}, \"note\": \"H5: rename internal/tracing/mux.go -> internal/tracing/mux_rt.go -> back; flake 2/3 [r1:Scr r2:SCR r3:SCR] in 191s\", \"shape\": \"completion:extra\"}",
+  "reproduced": "2/3",
+  "reduced_ops": [],
+  "signature": "gopls|r1_history|completion:extra",
+  "run_id": "90cc8e18ab7d"
+ },
+ "replay_logs": [],
+ "project_files": {},
+ "incomplete": false
+}

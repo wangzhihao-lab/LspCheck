@@ -1,0 +1,163 @@
+{
+ "vid": "09497d6d86a9-v01",
+ "ops_before": 3,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 2,
+ "cache_hits": 0,
+ "reduce_seconds": 6.713,
+ "budget_exhausted": false,
+ "probe_log": [
+  [
+   2,
+   false
+  ],
+  [
+   2,
+   false
+  ]
+ ],
+ "logs": [
+  "ts6-6.0.3-tr0e3b68-r4-replay-baseline-20261119-033252-9a0447.jsonl.gz",
+  "ts6-6.0.3-tr0e3b68-r4-replay-case-20261119-033238-98e835.jsonl.gz",
+  "ts6-6.0.3-tr0e3b68-r4-replay-control-20261119-033304-20e41f.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2307",
+    "typescript",
+    "Cannot find module '@solidjs/web' or its corresponding type declarations."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2307",
+    "typescript",
+    "Cannot find module 'solid-js' or its corresponding type declarations."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2339",
+    "typescript",
+    "Property 'url' does not exist on type '{}'."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2875",
+    "typescript",
+    "This JSX tag requires the module path '@solidjs/web/jsx-runtime' to exist, but none could be found. Make sure you have types for the appropriate package installed."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ]
+  ],
+  "actual": [
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2307",
+    "typescript",
+    "Cannot find module '@solidjs/web' or its corresponding type declarations."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2307",
+    "typescript",
+    "Cannot find module 'solid-js' or its corresponding type declarations."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2339",
+    "typescript",
+    "Property 'url' does not exist on type '{}'."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2604",
+    "typescript",
+    "JSX element type 'RouterContext' does not have any construct or call signatures."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2875",
+    "typescript",
+    "This JSX tag requires the module path '@solidjs/web/jsx-runtime' to exist, but none could be found. Make sure you have types for the appropriate package installed."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ]
+  ]
+ },
+ "ops_after": 3,
+ "total_seconds": 142.9
+}

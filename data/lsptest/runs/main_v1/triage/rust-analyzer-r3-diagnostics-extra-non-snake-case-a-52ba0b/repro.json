@@ -1,0 +1,444 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "29d2893b9177-v01",
+ "run_id": "29d2893b9177",
+ "oracle": "r3_routes",
+ "server": {
+  "kind": "rust-analyzer",
+  "version": "2026-09-21"
+ },
+ "project": {
+  "name": "BurntSushi/ripgrep@3fce3b5bb023",
+  "source": "corpus",
+  "ref": "temp/corpus/BurntSushi__ripgrep@3fce3b5bb023",
+  "commit": "3fce3b5bb0236da2df6d99672afb8a719642eca7",
+  "language": "rust"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "crates/ignore/src/types.rs",
+    "positions": [
+     [
+      133,
+      21
+     ],
+     [
+      199,
+      16
+     ],
+     [
+      233,
+      27
+     ],
+     [
+      307,
+      32
+     ],
+     [
+      331,
+      40
+     ],
+     [
+      350,
+      25
+     ],
+     [
+      420,
+      46
+     ],
+     [
+      459,
+      28
+     ],
+     [
+      463,
+      33
+     ],
+     [
+      498,
+      3
+     ],
+     [
+      517,
+      30
+     ],
+     [
+      561,
+      39
+     ]
+    ],
+    "ends": [
+     [
+      133,
+      26
+     ],
+     [
+      199,
+      21
+     ],
+     [
+      233,
+      29
+     ],
+     [
+      307,
+      38
+     ],
+     [
+      331,
+      42
+     ],
+     [
+      350,
+      27
+     ],
+     [
+      420,
+      48
+     ],
+     [
+      459,
+      32
+     ],
+     [
+      463,
+      36
+     ],
+     [
+      498,
+      5
+     ],
+     [
+      517,
+      34
+     ],
+     [
+      561,
+      41
+     ]
+    ],
+    "names": [
+     "GlobInner",
+     "Selection",
+     "new",
+     "FileTypeDef",
+     "get",
+     "push",
+     "str",
+     "is_empty",
+     "Error",
+     "cfg",
+     "add_def",
+     "vec"
+    ]
+   },
+   {
+    "path": "crates/searcher/examples/search-stdin.rs",
+    "positions": [
+     [
+      0,
+      5
+     ],
+     [
+      6,
+      10
+     ],
+     [
+      7,
+      28
+     ],
+     [
+      11,
+      25
+     ],
+     [
+      16,
+      37
+     ],
+     [
+      18,
+      16
+     ],
+     [
+      20,
+      31
+     ],
+     [
+      23,
+      11
+     ],
+     [
+      23,
+      40
+     ],
+     [
+      24,
+      15
+     ],
+     [
+      25,
+      12
+     ],
+     [
+      29,
+      13
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      7
+     ],
+     [
+      6,
+      17
+     ],
+     [
+      7,
+      30
+     ],
+     [
+      11,
+      27
+     ],
+     [
+      16,
+      40
+     ],
+     [
+      18,
+      20
+     ],
+     [
+      20,
+      33
+     ],
+     [
+      23,
+      15
+     ],
+     [
+      23,
+      44
+     ],
+     [
+      24,
+      17
+     ],
+     [
+      25,
+      16
+     ],
+     [
+      29,
+      14
+     ]
+    ],
+    "names": [
+     "std",
+     "grep_searcher",
+     "UTF8",
+     "err",
+     "Error",
+     "pattern",
+     "from",
+     "matcher",
+     "pattern",
+     "new",
+     "matcher",
+     "Ok"
+    ]
+   },
+   {
+    "path": "tests/misc.rs",
+    "positions": [
+     [
+      31,
+      5
+     ],
+     [
+      269,
+      31
+     ],
+     [
+      321,
+      21
+     ],
+     [
+      401,
+      11
+     ],
+     [
+      447,
+      25
+     ],
+     [
+      543,
+      39
+     ],
+     [
+      647,
+      11
+     ],
+     [
+      764,
+      13
+     ],
+     [
+      780,
+      58
+     ],
+     [
+      916,
+      12
+     ],
+     [
+      1073,
+      5
+     ],
+     [
+      1175,
+      27
+     ]
+    ],
+    "ends": [
+     [
+      31,
+      7
+     ],
+     [
+      269,
+      35
+     ],
+     [
+      321,
+      23
+     ],
+     [
+      401,
+      14
+     ],
+     [
+      447,
+      27
+     ],
+     [
+      543,
+      41
+     ],
+     [
+      647,
+      14
+     ],
+     [
+      764,
+      15
+     ],
+     [
+      780,
+      60
+     ],
+     [
+      916,
+      16
+     ],
+     [
+      1073,
+      7
+     ],
+     [
+      1175,
+      29
+     ]
+    ],
+    "names": [
+     "dir",
+     "SHERLOCK",
+     "Dir",
+     "create",
+     "dir",
+     "dir",
+     "create",
+     "got",
+     "cmd",
+     "expected",
+     "dir",
+     "Dir"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "diagnostics",
+  "path": "crates/searcher/examples/search-stdin.rs",
+  "line": -1,
+  "character": -1,
+  "extra": "route:push"
+ },
+ "ops": [],
+ "case": {
+  "path": "crates/searcher/examples/search-stdin.rs",
+  "sub": "a",
+  "want_pull": false
+ },
+ "shape": "diagnostics:extra:non_snake_case",
+ "signature": "rust-analyzer|r3_routes|diagnostics:extra:non_snake_case",
+ "expected": [],
+ "actual": [
+  [
+   19,
+   8,
+   19,
+   12,
+   2,
+   "non_snake_case",
+   "rust-analyzer",
+   "Variable `None` should have snake_case name, e.g. `none`"
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "pull vs push; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 596s",
+ "violation": {
+  "oracle": "r3_routes",
+  "server": "rust-analyzer-2026-09-21",
+  "project": "BurntSushi/ripgrep@3fce3b5bb023",
+  "key": {
+   "method": "diagnostics",
+   "path": "crates/searcher/examples/search-stdin.rs",
+   "line": -1,
+   "character": -1,
+   "extra": "route:push"
+  },
+  "expected": [],
+  "actual": [
+   [
+    19,
+    8,
+    19,
+    12,
+    2,
+    "non_snake_case",
+    "rust-analyzer",
+    "Variable `None` should have snake_case name, e.g. `none`"
+   ]
+  ],
+  "ops": [],
+  "detail": "{\"case\": {\"path\": \"crates/searcher/examples/search-stdin.rs\", \"sub\": \"a\", \"want_pull\": false}, \"note\": \"pull vs push; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 596s\", \"shape\": \"diagnostics:extra:non_snake_case\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "rust-analyzer|r3_routes|diagnostics:extra:non_snake_case",
+  "run_id": "29d2893b9177"
+ },
+ "replay_logs": [],
+ "project_files": {},
+ "group": "rust-analyzer-r3-diagnostics-extra-non-snake-case-a-52ba0b",
+ "reduced": true
+}

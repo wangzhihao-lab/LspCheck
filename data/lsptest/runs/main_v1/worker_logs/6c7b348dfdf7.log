@@ -1,0 +1,3 @@
+2026-09-23 17:46:45,263 INFO campaign_run run 6c7b348dfdf7: r0_crash on gopls v0.23.0, fatedier/frp@d20a23299600 seed 1 settled, targets ['pkg/config/legacy/value.go', 'pkg/config/load_test.go', 'pkg/transport/tls.go']
+2026-09-23 17:46:56,895 INFO campaign_run run 6c7b348dfdf7: 0 candidate(s) in 12s; confirming
+2026-09-23 17:46:56,896 INFO campaign_run run 6c7b348dfdf7 finished: ok, 0 confirmed of 0 candidate(s), 12s

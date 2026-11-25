@@ -1,0 +1,64 @@
+{
+ "schema": 1,
+ "id": "pyright-3504",
+ "meta": {
+  "server": "pyright",
+  "kind": "pyright",
+  "number": 3504,
+  "url": "https://github.com/microsoft/pyright/issues/3504",
+  "title": "Method overload picks first available when calling forward declared function",
+  "oracle_class": "R1",
+  "subtype": "query-order",
+  "fix_ref": "none named (maintainer: 'This is included in pyright 1.1.251')",
+  "fix_shas": [],
+  "pre_version": "1.1.250",
+  "post_version": "1.1.251",
+  "pre_build": "1.1.250",
+  "post_build": "1.1.251",
+  "build_notes": "npm pyright@1.1.250 (2022-05-28) and pyright@1.1.251 (2022-06-01); the reporter pinned the regression to 1.1.243; release window from the maintainer's comment.",
+  "candidate_rank": 332,
+  "effort_minutes": 6,
+  "notes": "Mechanism differs from the screening class (R1 query-order): the order dependence is within one analysis (the lambda's call to the forward-declared second_func is evaluated before second_func's declaration); the false positive appears on a fresh open, as on the reporter's command line. The maintainer could reproduce it only with Python 3.10 defaults (a Python 3.11 beta changed forward-declaration behaviour), hence pythonVersion 3.10."
+ },
+ "language": "python",
+ "settings": {},
+ "settings_note": "The reporter used the default configuration; pyrightconfig.json only pins pythonVersion 3.10 (see the file note).",
+ "session": {
+  "settle_timeout_s": 120
+ },
+ "files": [
+  {
+   "path": "main.py",
+   "provenance": "issue",
+   "source": "issue body, python code block",
+   "note": ""
+  },
+  {
+   "path": "pyrightconfig.json",
+   "provenance": "scaffold",
+   "source": "",
+   "note": "pythonVersion 3.10: the maintainer reproduced the bug only with Python 3.10 defaults (the session interpreter is newer)"
+  }
+ ],
+ "repro": {
+  "attempt": 1,
+  "timing": "settled",
+  "steps": "Open main.py. Reported: 'Could not bind method \"method2\" because \"Gen[int]\" is not assignable to parameter \"self\"': the overloaded method call picks the first overload because the lambda calls second_func, which is declared later in the file, although reveal_type of the same call shows Gen[list[C]]; declaring second_func first makes the error go away. Probe: no 'Could not bind method' diagnostic may be reported for main.py.",
+  "ops": [
+   {
+    "kind": "open",
+    "path": "main.py"
+   }
+  ],
+  "probe": {
+   "type": "diagnostic_present",
+   "params": {
+    "path": "main.py",
+    "match": {
+     "message_re": "Could not bind method"
+    }
+   }
+  }
+ },
+ "attempts": []
+}

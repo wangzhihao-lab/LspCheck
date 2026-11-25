@@ -1,0 +1,72 @@
+{
+ "schema": 1,
+ "id": "rust-analyzer-17728",
+ "meta": {
+  "server": "rust-analyzer",
+  "kind": "rust-analyzer",
+  "number": 17728,
+  "url": "https://github.com/rust-lang/rust-analyzer/issues/17728",
+  "title": "Quick fix for function no return value, `Ok()` out of function body",
+  "oracle_class": "R4",
+  "subtype": "quickfix",
+  "fix_ref": "rust-lang/rust-analyzer#17763 (fix: Insert a tail `Ok(())` for expr block instead of wrapping with `Ok`)",
+  "fix_shas": [
+   "f149dc5029d8406fae8b2c541603bcac06e30deb"
+  ],
+  "pre_version": "2024-07-29",
+  "post_version": "2024-08-05",
+  "pre_build": "2024-07-29",
+  "post_build": "2024-08-05",
+  "build_notes": "GitHub release assets rust-analyzer-aarch64-apple-darwin.gz of the weekly tags 2024-07-29 and 2024-08-05; git tag --contains puts the fix first in 2024-08-05. The sysroot is the local rustup toolchain (rustc 1.98.1).",
+  "effort_minutes": 5,
+  "notes": "The type-mismatch fix for a unit body in a function returning Result wrapped the whole body expression in Ok(...), including the braces of the function body, producing 'fn foo() -> Result<()> Ok({})'."
+ },
+ "language": "rust",
+ "settings": {},
+ "settings_note": "The issue names no settings; the session keeps checkOnSave off (native analysis only).",
+ "session": {
+  "settle_timeout_s": 240,
+  "request_timeout_s": 60,
+  "pull_diagnostics": false
+ },
+ "files": [
+  {
+   "path": "src/main.rs",
+   "provenance": "issue",
+   "source": "issue body, 'code snippet to reproduce' block",
+   "note": ""
+  },
+  {
+   "path": "Cargo.toml",
+   "provenance": "scaffold",
+   "source": "",
+   "note": "a binary crate around the snippet (package name, version, edition 2021)"
+  }
+ ],
+ "repro": {
+  "attempt": 1,
+  "timing": "settled",
+  "steps": "Open src/main.rs. The empty body of 'fn foo() -> Result<()> {}' (line 2, character 23) is reported (type mismatch, expected Result<()>, found ()). Apply its quick fix (wrap in Ok / insert Ok(())). Reported: 'fn foo() -> Result<()> Ok({})', which does not parse; expected '{ Ok(()) }'. Probe: the edited text must have no parse error that the original did not have.",
+  "ops": [
+   {
+    "kind": "open",
+    "path": "src/main.rs"
+   }
+  ],
+  "probe": {
+   "type": "edit_breaks_syntax",
+   "params": {
+    "edit": {
+     "via": "code_action",
+     "path": "src/main.rs",
+     "diagnostic": {
+      "code": "E0308"
+     },
+     "title_re": "Ok",
+     "missing": "invalid"
+    }
+   }
+  }
+ },
+ "attempts": []
+}

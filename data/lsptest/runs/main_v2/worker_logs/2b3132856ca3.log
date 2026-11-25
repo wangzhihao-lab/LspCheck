@@ -1,0 +1,3 @@
+2026-11-18 01:30:14,680 INFO campaign_run run 2b3132856ca3: r1_history on ts7 7.0.2, solidjs/solid@4b62bc29e04b seed 1 settled, targets ['examples/rendering/shared/src/components/Reveal.tsx', 'packages/web/test/hydration/spread-innerhtml.spec.tsx', 'packages/web/test/latest-shadow-owned-write-issue-3378.spec.tsx']
+2026-11-18 02:19:56,307 INFO campaign_run run 2b3132856ca3: 0 candidate(s) in 379s; confirming
+2026-11-18 02:19:56,308 INFO campaign_run run 2b3132856ca3 finished: ok, 0 confirmed of 0 candidate(s), 379s

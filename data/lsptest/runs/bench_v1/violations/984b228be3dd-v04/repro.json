@@ -1,0 +1,341 @@
+{
+ "format": 1,
+ "campaign": "bench_v1",
+ "vid": "984b228be3dd-v04",
+ "run_id": "984b228be3dd",
+ "oracle": "r1_history",
+ "server": {
+  "kind": "tsserver",
+  "version": "5.0.4+tsls3.3.2"
+ },
+ "project": {
+  "name": "tsserver-52792",
+  "source": "dir",
+  "ref": "data/lsp_bench/cases/tsserver-52792/project",
+  "commit": "",
+  "language": "typescript"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 120.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "classes.ts",
+    "positions": [
+     [
+      0,
+      13
+     ],
+     [
+      0,
+      23
+     ],
+     [
+      2,
+      18
+     ],
+     [
+      2,
+      37
+     ],
+     [
+      3,
+      7
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      18
+     ],
+     [
+      0,
+      25
+     ],
+     [
+      2,
+      24
+     ],
+     [
+      2,
+      42
+     ],
+     [
+      3,
+      10
+     ]
+    ],
+    "names": [
+     "Component",
+     "from",
+     "MyComponent",
+     "Component",
+     "render"
+    ]
+   },
+   {
+    "path": "utils.ts",
+    "positions": [
+     [
+      0,
+      16
+     ],
+     [
+      4,
+      26
+     ],
+     [
+      5,
+      16
+     ],
+     [
+      5,
+      26
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      20
+     ],
+     [
+      4,
+      31
+     ],
+     [
+      5,
+      19
+     ],
+     [
+      5,
+      30
+     ]
+    ],
+    "names": [
+     "Element",
+     "Component",
+     "render",
+     "Element"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "references",
+  "path": "classes.ts",
+  "line": 0,
+  "character": 13,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "classes.ts"
+  },
+  {
+   "kind": "open",
+   "path": "utils.ts"
+  },
+  {
+   "kind": "fs_rename",
+   "path": "utils.ts",
+   "new_path": "utils_rt.ts"
+  },
+  {
+   "kind": "change",
+   "path": "classes.ts",
+   "start": [
+    0,
+    0
+   ],
+   "end": [
+    1,
+    0
+   ]
+  },
+  {
+   "kind": "change",
+   "path": "classes.ts",
+   "start": [
+    0,
+    0
+   ],
+   "end": [
+    0,
+    0
+   ],
+   "text": "import { Component } from \"./utils.js\";\n"
+  },
+  {
+   "kind": "fs_rename",
+   "path": "utils_rt.ts",
+   "new_path": "utils.ts"
+  }
+ ],
+ "case": {
+  "chain_step": 0,
+  "families": [],
+  "family": "H9",
+  "history_index": 11,
+  "history_seed": 1013,
+  "mode": "fresh",
+  "note": "window: rename utils.ts -> utils_rt.ts; inside: classes.ts: line 0 deleted and retyped in 1 chunk(s); then W reverted",
+  "seed": 1,
+  "timing": "settled"
+ },
+ "shape": "references:missing",
+ "signature": "tsserver|r1_history|references:missing",
+ "expected": [
+  [
+   "classes.ts",
+   0,
+   9,
+   0,
+   18
+  ],
+  [
+   "classes.ts",
+   2,
+   33,
+   2,
+   42
+  ],
+  [
+   "utils.ts",
+   4,
+   22,
+   4,
+   31
+  ]
+ ],
+ "actual": [
+  [
+   "classes.ts",
+   0,
+   9,
+   0,
+   18
+  ],
+  [
+   "classes.ts",
+   2,
+   33,
+   2,
+   42
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "H9: window: rename utils.ts -> utils_rt.ts; inside: classes.ts: line 0 deleted and retyped in 1 chunk(s); then W reverted; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 73s",
+ "violation": {
+  "oracle": "r1_history",
+  "server": "tsserver-5.0.4+tsls3.3.2",
+  "project": "tsserver-52792",
+  "key": {
+   "method": "references",
+   "path": "classes.ts",
+   "line": 0,
+   "character": 13,
+   "extra": ""
+  },
+  "expected": [
+   [
+    "classes.ts",
+    0,
+    9,
+    0,
+    18
+   ],
+   [
+    "classes.ts",
+    2,
+    33,
+    2,
+    42
+   ],
+   [
+    "utils.ts",
+    4,
+    22,
+    4,
+    31
+   ]
+  ],
+  "actual": [
+   [
+    "classes.ts",
+    0,
+    9,
+    0,
+    18
+   ],
+   [
+    "classes.ts",
+    2,
+    33,
+    2,
+    42
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "classes.ts"
+   },
+   {
+    "kind": "open",
+    "path": "utils.ts"
+   },
+   {
+    "kind": "fs_rename",
+    "path": "utils.ts",
+    "new_path": "utils_rt.ts"
+   },
+   {
+    "kind": "change",
+    "path": "classes.ts",
+    "start": [
+     0,
+     0
+    ],
+    "end": [
+     1,
+     0
+    ]
+   },
+   {
+    "kind": "change",
+    "path": "classes.ts",
+    "start": [
+     0,
+     0
+    ],
+    "end": [
+     0,
+     0
+    ],
+    "text": "import { Component } from \"./utils.js\";\n"
+   },
+   {
+    "kind": "fs_rename",
+    "path": "utils_rt.ts",
+    "new_path": "utils.ts"
+   }
+  ],
+  "detail": "{\"case\": {\"chain_step\": 0, \"families\": [], \"family\": \"H9\", \"history_index\": 11, \"history_seed\": 1013, \"mode\": \"fresh\", \"note\": \"window: rename utils.ts -> utils_rt.ts; inside: classes.ts: line 0 deleted and retyped in 1 chunk(s); then W reverted\", \"seed\": 1, \"timing\": \"settled\"}, \"note\": \"H9: window: rename utils.ts -> utils_rt.ts; inside: classes.ts: line 0 deleted and retyped in 1 chunk(s); then W reverted; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 73s\", \"shape\": \"references:missing\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "tsserver|r1_history|references:missing",
+  "run_id": "984b228be3dd"
+ },
+ "replay_logs": [
+  "logs/tsserver-5.0.4+tsls3.3.2-984b228be3dd-replay-baseline-20260924-175251-835958.jsonl.gz",
+  "logs/tsserver-5.0.4+tsls3.3.2-984b228be3dd-replay-control-20260924-175251-3eeb97.jsonl.gz",
+  "logs/tsserver-5.0.4+tsls3.3.2-984b228be3dd-replay-history-20260924-175254-24db77.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

@@ -1,0 +1,73 @@
+{
+ "schema": 1,
+ "id": "rust-analyzer-18130",
+ "meta": {
+  "server": "rust-analyzer",
+  "kind": "rust-analyzer",
+  "number": 18130,
+  "url": "https://github.com/rust-lang/rust-analyzer/issues/18130",
+  "title": "The new complete semicolon feature fails with closures",
+  "oracle_class": "R4",
+  "subtype": "completion",
+  "fix_ref": "rust-lang/rust-analyzer#18132 (fix: Don't complete `;` when in closure return expression)",
+  "fix_shas": [
+   "00037c18ed8b57eac49b38495689d8a6b7f53ca3"
+  ],
+  "pre_version": "2024-09-16",
+  "post_version": "2024-09-30",
+  "pre_build": "2024-09-16",
+  "post_build": "2024-09-30",
+  "build_notes": "GitHub release assets rust-analyzer-aarch64-apple-darwin.gz of the weekly tags 2024-09-16 and 2024-09-30; git tag --contains puts the fix first in 2024-09-23, whose release lacks the macOS arm64 asset, so the next release is the post build. The sysroot is the local rustup toolchain (rustc 1.98.1).",
+  "effort_minutes": 6,
+  "notes": "The then-new completion of ';' after unit-returning functions also fired for the expression body of a closure, which is commonly not a block; 'baz(|| foo(););' does not parse. The window is widened to 2024-09-30 because git tag --contains puts the fix first in 2024-09-23, whose release lacks the macOS arm64 asset (candidate mapping)."
+ },
+ "language": "rust",
+ "settings": {},
+ "settings_note": "The issue names no settings; the session keeps checkOnSave off (native analysis only).",
+ "session": {
+  "settle_timeout_s": 240,
+  "request_timeout_s": 60,
+  "pull_diagnostics": false
+ },
+ "files": [
+  {
+   "path": "src/lib.rs",
+   "provenance": "scaffold",
+   "source": "",
+   "note": "the fix's regression test no_semicolon_in_closure_ret (crates/ide-completion/src/render/function.rs at 00037c18), cursor marker $0 removed; the issue (filed by the fix's author as a note to self) describes the case in words only"
+  },
+  {
+   "path": "Cargo.toml",
+   "provenance": "scaffold",
+   "source": "",
+   "note": "a library crate around the snippet (package name, version, edition 2021)"
+  }
+ ],
+ "repro": {
+  "attempt": 1,
+  "timing": "settled",
+  "steps": "Open src/lib.rs. Request completion after 'fo' in 'baz(|| fo);' (line 3, character 13) and accept foo. Reported (issue text): completing a unit-returning function as the expression body of a closure appends ';', which breaks the code. Probe: the edited text must have no parse error that the original did not have.",
+  "ops": [
+   {
+    "kind": "open",
+    "path": "src/lib.rs"
+   }
+  ],
+  "probe": {
+   "type": "edit_breaks_syntax",
+   "params": {
+    "edit": {
+     "via": "completion",
+     "path": "src/lib.rs",
+     "position": [
+      3,
+      13
+     ],
+     "label_re": "^foo",
+     "missing": "invalid"
+    }
+   }
+  }
+ },
+ "attempts": []
+}

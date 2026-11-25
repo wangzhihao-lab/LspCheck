@@ -1,0 +1,169 @@
+{
+ "format": 1,
+ "campaign": "bench_v1",
+ "vid": "51bb349451a5-v00",
+ "run_id": "51bb349451a5",
+ "oracle": "r3_routes",
+ "server": {
+  "kind": "tsserver",
+  "version": "4.3.5+tsls0.7.1"
+ },
+ "project": {
+  "name": "tsserver-45270",
+  "source": "dir",
+  "ref": "data/lsp_bench/cases/tsserver-45270/project",
+  "commit": "",
+  "language": "typescript"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 120.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "index.ts",
+    "positions": [
+     [
+      0,
+      9
+     ],
+     [
+      1,
+      3
+     ],
+     [
+      4,
+      17
+     ],
+     [
+      4,
+      32
+     ],
+     [
+      5,
+      12
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      12
+     ],
+     [
+      1,
+      5
+     ],
+     [
+      4,
+      20
+     ],
+     [
+      4,
+      35
+     ],
+     [
+      5,
+      14
+     ]
+    ],
+    "names": [
+     "Parent",
+     "foo",
+     "Child",
+     "Parent",
+     "foo"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "definitionConsistency",
+  "path": "index.ts",
+  "line": 5,
+  "character": 12,
+  "extra": "from:index.ts:1:3"
+ },
+ "ops": [],
+ "case": {
+  "loc": [
+   "index.ts",
+   5,
+   11,
+   5,
+   14
+  ],
+  "sub": "d",
+  "target": [
+   "index.ts",
+   1,
+   3
+  ]
+ },
+ "shape": "definitionConsistency:changed",
+ "signature": "tsserver|r3_routes|definitionConsistency:changed",
+ "expected": [
+  [
+   "index.ts",
+   1,
+   2,
+   1,
+   5
+  ]
+ ],
+ "actual": [
+  [
+   "index.ts",
+   5,
+   11,
+   5,
+   14
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "flake 3/3 [r1:SCR r2:SCR r3:SCR] in 17s",
+ "violation": {
+  "oracle": "r3_routes",
+  "server": "tsserver-4.3.5+tsls0.7.1",
+  "project": "tsserver-45270",
+  "key": {
+   "method": "definitionConsistency",
+   "path": "index.ts",
+   "line": 5,
+   "character": 12,
+   "extra": "from:index.ts:1:3"
+  },
+  "expected": [
+   [
+    "index.ts",
+    1,
+    2,
+    1,
+    5
+   ]
+  ],
+  "actual": [
+   [
+    "index.ts",
+    5,
+    11,
+    5,
+    14
+   ]
+  ],
+  "ops": [],
+  "detail": "{\"case\": {\"loc\": [\"index.ts\", 5, 11, 5, 14], \"sub\": \"d\", \"target\": [\"index.ts\", 1, 3]}, \"note\": \"flake 3/3 [r1:SCR r2:SCR r3:SCR] in 17s\", \"shape\": \"definitionConsistency:changed\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "tsserver|r3_routes|definitionConsistency:changed",
+  "run_id": "51bb349451a5"
+ },
+ "replay_logs": [
+  "logs/tsserver-4.3.5+tsls0.7.1-51bb349451a5-r3-replay-baseline-20260925-120645-33fd2e.jsonl.gz",
+  "logs/tsserver-4.3.5+tsls0.7.1-51bb349451a5-r3-replay-control-20260925-120648-9cf055.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

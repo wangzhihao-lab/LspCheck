@@ -1,0 +1,18 @@
+2026-11-18 06:58:56,281 INFO campaign_run run fd88e2717131: r6_crossimpl on ts7 7.0.2, hexojs/hexo@751e856691bf seed 1 settled, targets ['lib/extend/helper.ts', 'lib/plugins/generator/page.ts', 'test/scripts/theme_processors/source.ts']
+2026-11-18 07:00:05,905 INFO campaign_run run fd88e2717131: 31 candidate(s) in 70s; confirming
+2026-11-18 07:00:58,682 INFO flake replay 1/3 of ts7|r6_crossimpl|completion:changed: settled=True control_stable=True reproduced=True (52.8s)
+2026-11-18 07:01:50,173 INFO flake replay 2/3 of ts7|r6_crossimpl|completion:changed: settled=True control_stable=True reproduced=True (51.5s)
+2026-11-18 07:02:54,683 INFO flake replay 3/3 of ts7|r6_crossimpl|completion:changed: settled=True control_stable=True reproduced=True (64.5s)
+2026-11-18 07:03:47,763 INFO flake replay 1/3 of ts7|r6_crossimpl|definition:changed: settled=True control_stable=True reproduced=True (53.1s)
+2026-11-18 07:04:42,091 INFO flake replay 2/3 of ts7|r6_crossimpl|definition:changed: settled=True control_stable=True reproduced=True (54.3s)
+2026-11-18 07:05:33,586 INFO flake replay 3/3 of ts7|r6_crossimpl|definition:changed: settled=True control_stable=True reproduced=True (51.5s)
+2026-11-18 07:06:25,068 INFO flake replay 1/3 of ts7|r6_crossimpl|definition:gained: settled=True control_stable=True reproduced=True (51.5s)
+2026-11-18 07:07:12,023 INFO flake replay 2/3 of ts7|r6_crossimpl|definition:gained: settled=True control_stable=True reproduced=True (47.0s)
+2026-11-18 07:08:03,923 INFO flake replay 3/3 of ts7|r6_crossimpl|definition:gained: settled=True control_stable=True reproduced=True (51.9s)
+2026-11-18 07:09:14,108 INFO flake replay 1/3 of ts7|r6_crossimpl|definition:extra: settled=True control_stable=True reproduced=True (70.2s)
+2026-11-18 07:10:24,115 INFO flake replay 2/3 of ts7|r6_crossimpl|definition:extra: settled=True control_stable=True reproduced=True (70.0s)
+2026-11-18 07:11:30,689 INFO flake replay 3/3 of ts7|r6_crossimpl|definition:extra: settled=True control_stable=True reproduced=True (66.6s)
+2026-11-18 07:12:28,443 INFO flake replay 1/3 of ts7|r6_crossimpl|diagnostics:missing:2304,2593: settled=True control_stable=True reproduced=True (57.8s)
+2026-11-18 07:13:21,952 INFO flake replay 2/3 of ts7|r6_crossimpl|diagnostics:missing:2304,2593: settled=True control_stable=True reproduced=True (53.5s)
+2026-11-18 07:14:12,394 INFO flake replay 3/3 of ts7|r6_crossimpl|diagnostics:missing:2304,2593: settled=True control_stable=True reproduced=True (50.4s)
+2026-11-18 07:14:12,454 INFO campaign_run run fd88e2717131 finished: ok, 5 confirmed of 31 candidate(s), 916s

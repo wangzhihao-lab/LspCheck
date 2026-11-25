@@ -1,0 +1,6 @@
+2026-09-24 08:43:02,574 INFO campaign_run run b603a3394379: r1_history on ts7 7.0.2, react-hook-form/react-hook-form@5fd9ef65290b seed 1 race200, targets ['app/src/main.tsx', 'examples/V7/validationOnFieldBlur.tsx', 'src/logic/skipValidation.ts']
+2026-09-24 08:48:44,699 INFO campaign_run run b603a3394379: 1 candidate(s) in 342s; confirming
+2026-09-24 08:49:34,059 INFO flake replay 1/3 of ts7|r1_history|references:extra: settled=True control_stable=True reproduced=True (49.4s)
+2026-09-24 08:50:29,985 INFO flake replay 2/3 of ts7|r1_history|references:extra: settled=True control_stable=True reproduced=True (55.9s)
+2026-09-24 08:51:23,564 INFO flake replay 3/3 of ts7|r1_history|references:extra: settled=True control_stable=True reproduced=True (53.6s)
+2026-09-24 08:51:24,213 INFO campaign_run run b603a3394379 finished: ok, 1 confirmed of 1 candidate(s), 502s

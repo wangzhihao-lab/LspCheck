@@ -1,0 +1,86 @@
+{
+ "vid": "4cb90eb12df9-v00",
+ "ops_before": 2,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 0,
+ "cache_hits": 0,
+ "reduce_seconds": 0.0,
+ "budget_exhausted": false,
+ "probe_log": [],
+ "logs": [
+  "gopls-v0.23.0-tr70b3e9-r2-replay-20261118-235808-6e88a5.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [
+   [
+    "group_method_handling_test.go",
+    83,
+    14,
+    83,
+    14,
+    "\n\t\t"
+   ],
+   [
+    "group_method_handling_test.go",
+    83,
+    15,
+    83,
+    17,
+    ",\n\t\t"
+   ],
+   [
+    "group_method_handling_test.go",
+    83,
+    23,
+    83,
+    25,
+    ",\n\t\t"
+   ],
+   [
+    "group_method_handling_test.go",
+    83,
+    29,
+    83,
+    29,
+    ",\n\t"
+   ]
+  ],
+  "actual": [
+   [
+    "group_method_handling_test.go",
+    82,
+    14,
+    82,
+    14,
+    "\n\t\t"
+   ],
+   [
+    "group_method_handling_test.go",
+    82,
+    15,
+    82,
+    17,
+    ",\n\t\t"
+   ],
+   [
+    "group_method_handling_test.go",
+    82,
+    30,
+    82,
+    32,
+    ",\n\t\t"
+   ],
+   [
+    "group_method_handling_test.go",
+    82,
+    38,
+    82,
+    38,
+    ",\n\t"
+   ]
+  ]
+ },
+ "ops_after": 2,
+ "total_seconds": 46.6
+}

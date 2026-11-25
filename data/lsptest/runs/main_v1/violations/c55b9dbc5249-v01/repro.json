@@ -1,0 +1,648 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "c55b9dbc5249-v01",
+ "run_id": "c55b9dbc5249",
+ "oracle": "r3_routes",
+ "server": {
+  "kind": "gopls",
+  "version": "v0.23.0"
+ },
+ "project": {
+  "name": "jesseduffield/lazydocker@7e7aadc2071d",
+  "source": "corpus",
+  "ref": "temp/corpus/jesseduffield__lazydocker@7e7aadc2071d",
+  "commit": "7e7aadc2071d58031bf2daafca1fbd4093efc23f",
+  "language": "go"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "pkg/gui/focus.go",
+    "positions": [
+     [
+      7,
+      12
+     ],
+     [
+      7,
+      31
+     ],
+     [
+      31,
+      45
+     ],
+     [
+      42,
+      8
+     ],
+     [
+      65,
+      9
+     ],
+     [
+      70,
+      8
+     ],
+     [
+      72,
+      5
+     ],
+     [
+      72,
+      14
+     ],
+     [
+      99,
+      40
+     ],
+     [
+      110,
+      29
+     ],
+     [
+      114,
+      36
+     ],
+     [
+      120,
+      26
+     ]
+    ],
+    "ends": [
+     [
+      7,
+      14
+     ],
+     [
+      7,
+      32
+     ],
+     [
+      31,
+      47
+     ],
+     [
+      42,
+      10
+     ],
+     [
+      65,
+      11
+     ],
+     [
+      70,
+      10
+     ],
+     [
+      72,
+      7
+     ],
+     [
+      72,
+      17
+     ],
+     [
+      99,
+      43
+     ],
+     [
+      110,
+      32
+     ],
+     [
+      114,
+      39
+     ],
+     [
+      120,
+      33
+     ]
+    ],
+    "names": [
+     "Gui",
+     "v",
+     "View",
+     "err",
+     "gui",
+     "gui",
+     "len",
+     "State",
+     "State",
+     "Filter",
+     "State",
+     "ViewStackMutex"
+    ]
+   },
+   {
+    "path": "pkg/gui/menu_panel.go",
+    "positions": [
+     [
+      10,
+      15
+     ],
+     [
+      38,
+      42
+     ],
+     [
+      61,
+      9
+     ],
+     [
+      83,
+      10
+     ],
+     [
+      87,
+      79
+     ],
+     [
+      91,
+      33
+     ],
+     [
+      94,
+      12
+     ],
+     [
+      95,
+      10
+     ],
+     [
+      107,
+      6
+     ],
+     [
+      109,
+      16
+     ],
+     [
+      120,
+      31
+     ],
+     [
+      131,
+      17
+     ]
+    ],
+    "ends": [
+     [
+      10,
+      18
+     ],
+     [
+      38,
+      44
+     ],
+     [
+      61,
+      12
+     ],
+     [
+      83,
+      12
+     ],
+     [
+      87,
+      81
+     ],
+     [
+      91,
+      36
+     ],
+     [
+      94,
+      14
+     ],
+     [
+      95,
+      12
+     ],
+     [
+      107,
+      11
+     ],
+     [
+      109,
+      17
+     ],
+     [
+      120,
+      33
+     ],
+     [
+      131,
+      23
+     ]
+    ],
+    "names": [
+     "string",
+     "nil",
+     "Items",
+     "item",
+     "len",
+     "Items",
+     "gui",
+     "err",
+     "optionsMap",
+     "Tr",
+     "gui",
+     "returnFocus"
+    ]
+   },
+   {
+    "path": "pkg/log/log.go",
+    "positions": [
+     [
+      0,
+      9
+     ],
+     [
+      13,
+      18
+     ],
+     [
+      14,
+      20
+     ],
+     [
+      23,
+      21
+     ],
+     [
+      23,
+      31
+     ],
+     [
+      35,
+      3
+     ],
+     [
+      35,
+      9
+     ],
+     [
+      35,
+      18
+     ],
+     [
+      36,
+      12
+     ],
+     [
+      45,
+      30
+     ],
+     [
+      45,
+      91
+     ],
+     [
+      57,
+      17
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      11
+     ],
+     [
+      13,
+      21
+     ],
+     [
+      14,
+      23
+     ],
+     [
+      23,
+      24
+     ],
+     [
+      23,
+      38
+     ],
+     [
+      35,
+      6
+     ],
+     [
+      35,
+      11
+     ],
+     [
+      35,
+      21
+     ],
+     [
+      36,
+      14
+     ],
+     [
+      45,
+      34
+     ],
+     [
+      45,
+      92
+     ],
+     [
+      57,
+      20
+     ]
+    ],
+    "names": [
+     "log",
+     "config",
+     "Logger",
+     "logrus",
+     "JSONFormatter",
+     "level",
+     "err",
+     "logrus",
+     "nil",
+     "filepath",
+     "os",
+     "logrus"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "definitionConsistency",
+  "path": "pkg/log/log.go",
+  "line": 9,
+  "character": 15,
+  "extra": "from:pkg/log/log.go:23:21"
+ },
+ "ops": [],
+ "case": {
+  "loc": [
+   "pkg/log/log.go",
+   9,
+   1,
+   9,
+   29
+  ],
+  "sub": "d",
+  "target": [
+   "pkg/log/log.go",
+   23,
+   21
+  ]
+ },
+ "shape": "definitionConsistency:changed",
+ "signature": "gopls|r3_routes|definitionConsistency:changed",
+ "expected": [
+  [
+   "pkg/log/log.go",
+   9,
+   1,
+   9,
+   29
+  ]
+ ],
+ "actual": [
+  [
+   "vendor/github.com/sirupsen/logrus/alt_exit.go",
+   0,
+   0,
+   27,
+   1
+  ],
+  [
+   "vendor/github.com/sirupsen/logrus/buffer_pool.go",
+   0,
+   0,
+   5,
+   1
+  ],
+  [
+   "vendor/github.com/sirupsen/logrus/doc.go",
+   25,
+   0,
+   25,
+   14
+  ],
+  [
+   "vendor/github.com/sirupsen/logrus/entry.go",
+   0,
+   0,
+   12,
+   1
+  ],
+  [
+   "vendor/github.com/sirupsen/logrus/exported.go",
+   0,
+   0,
+   6,
+   1
+  ],
+  [
+   "vendor/github.com/sirupsen/logrus/formatter.go",
+   0,
+   0,
+   2,
+   13
+  ],
+  [
+   "vendor/github.com/sirupsen/logrus/hooks.go",
+   0,
+   0,
+   0,
+   14
+  ],
+  [
+   "vendor/github.com/sirupsen/logrus/json_formatter.go",
+   0,
+   0,
+   7,
+   1
+  ],
+  [
+   "vendor/github.com/sirupsen/logrus/logger.go",
+   0,
+   0,
+   9,
+   1
+  ],
+  [
+   "vendor/github.com/sirupsen/logrus/logrus.go",
+   0,
+   0,
+   6,
+   1
+  ],
+  [
+   "vendor/github.com/sirupsen/logrus/terminal_check_bsd.go",
+   3,
+   0,
+   5,
+   30
+  ],
+  [
+   "vendor/github.com/sirupsen/logrus/terminal_check_notappengine.go",
+   2,
+   0,
+   7,
+   1
+  ],
+  [
+   "vendor/github.com/sirupsen/logrus/text_formatter.go",
+   0,
+   0,
+   13,
+   1
+  ],
+  [
+   "vendor/github.com/sirupsen/logrus/writer.go",
+   0,
+   0,
+   7,
+   1
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "flake 3/3 [r1:SCR r2:SCR r3:SCR] in 37s",
+ "violation": {
+  "oracle": "r3_routes",
+  "server": "gopls-v0.23.0",
+  "project": "jesseduffield/lazydocker@7e7aadc2071d",
+  "key": {
+   "method": "definitionConsistency",
+   "path": "pkg/log/log.go",
+   "line": 9,
+   "character": 15,
+   "extra": "from:pkg/log/log.go:23:21"
+  },
+  "expected": [
+   [
+    "pkg/log/log.go",
+    9,
+    1,
+    9,
+    29
+   ]
+  ],
+  "actual": [
+   [
+    "vendor/github.com/sirupsen/logrus/alt_exit.go",
+    0,
+    0,
+    27,
+    1
+   ],
+   [
+    "vendor/github.com/sirupsen/logrus/buffer_pool.go",
+    0,
+    0,
+    5,
+    1
+   ],
+   [
+    "vendor/github.com/sirupsen/logrus/doc.go",
+    25,
+    0,
+    25,
+    14
+   ],
+   [
+    "vendor/github.com/sirupsen/logrus/entry.go",
+    0,
+    0,
+    12,
+    1
+   ],
+   [
+    "vendor/github.com/sirupsen/logrus/exported.go",
+    0,
+    0,
+    6,
+    1
+   ],
+   [
+    "vendor/github.com/sirupsen/logrus/formatter.go",
+    0,
+    0,
+    2,
+    13
+   ],
+   [
+    "vendor/github.com/sirupsen/logrus/hooks.go",
+    0,
+    0,
+    0,
+    14
+   ],
+   [
+    "vendor/github.com/sirupsen/logrus/json_formatter.go",
+    0,
+    0,
+    7,
+    1
+   ],
+   [
+    "vendor/github.com/sirupsen/logrus/logger.go",
+    0,
+    0,
+    9,
+    1
+   ],
+   [
+    "vendor/github.com/sirupsen/logrus/logrus.go",
+    0,
+    0,
+    6,
+    1
+   ],
+   [
+    "vendor/github.com/sirupsen/logrus/terminal_check_bsd.go",
+    3,
+    0,
+    5,
+    30
+   ],
+   [
+    "vendor/github.com/sirupsen/logrus/terminal_check_notappengine.go",
+    2,
+    0,
+    7,
+    1
+   ],
+   [
+    "vendor/github.com/sirupsen/logrus/text_formatter.go",
+    0,
+    0,
+    13,
+    1
+   ],
+   [
+    "vendor/github.com/sirupsen/logrus/writer.go",
+    0,
+    0,
+    7,
+    1
+   ]
+  ],
+  "ops": [],
+  "detail": "{\"case\": {\"loc\": [\"pkg/log/log.go\", 9, 1, 9, 29], \"sub\": \"d\", \"target\": [\"pkg/log/log.go\", 23, 21]}, \"note\": \"flake 3/3 [r1:SCR r2:SCR r3:SCR] in 37s\", \"shape\": \"definitionConsistency:changed\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "gopls|r3_routes|definitionConsistency:changed",
+  "run_id": "c55b9dbc5249"
+ },
+ "replay_logs": [
+  "logs/gopls-v0.23.0-c55b9dbc5249-r3-replay-baseline-20260923-150138-ff4431.jsonl.gz",
+  "logs/gopls-v0.23.0-c55b9dbc5249-r3-replay-control-20260923-150144-13c416.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

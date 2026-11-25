@@ -1,0 +1,521 @@
+{
+ "format": 1,
+ "campaign": "bench_v1",
+ "vid": "d43486dbc01e-v00",
+ "run_id": "d43486dbc01e",
+ "oracle": "r2_handles",
+ "server": {
+  "kind": "gopls",
+  "version": "v0.18.1"
+ },
+ "project": {
+  "name": "gopls-73576",
+  "source": "dir",
+  "ref": "data/lsp_bench/cases/gopls-73576/project",
+  "commit": "",
+  "language": "go"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 180.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "main.go",
+    "positions": [
+     [
+      5,
+      19
+     ],
+     [
+      5,
+      26
+     ],
+     [
+      6,
+      6
+     ],
+     [
+      8,
+      24
+     ],
+     [
+      8,
+      28
+     ],
+     [
+      8,
+      34
+     ],
+     [
+      9,
+      11
+     ],
+     [
+      9,
+      29
+     ],
+     [
+      13,
+      4
+     ],
+     [
+      13,
+      9
+     ],
+     [
+      14,
+      2
+     ],
+     [
+      14,
+      12
+     ],
+     [
+      14,
+      21
+     ],
+     [
+      20,
+      3
+     ],
+     [
+      21,
+      4
+     ],
+     [
+      23,
+      28
+     ],
+     [
+      29,
+      16
+     ],
+     [
+      38,
+      3
+     ],
+     [
+      40,
+      3
+     ],
+     [
+      40,
+      10
+     ]
+    ],
+    "ends": [
+     [
+      5,
+      23
+     ],
+     [
+      5,
+      29
+     ],
+     [
+      6,
+      9
+     ],
+     [
+      8,
+      25
+     ],
+     [
+      8,
+      31
+     ],
+     [
+      8,
+      36
+     ],
+     [
+      9,
+      18
+     ],
+     [
+      9,
+      32
+     ],
+     [
+      13,
+      5
+     ],
+     [
+      13,
+      13
+     ],
+     [
+      14,
+      3
+     ],
+     [
+      14,
+      13
+     ],
+     [
+      14,
+      28
+     ],
+     [
+      20,
+      6
+     ],
+     [
+      21,
+      8
+     ],
+     [
+      23,
+      30
+     ],
+     [
+      29,
+      19
+     ],
+     [
+      38,
+      5
+     ],
+     [
+      40,
+      5
+     ],
+     [
+      40,
+      14
+     ]
+    ],
+    "names": [
+     "SetFocus",
+     "index",
+     "index",
+     "f",
+     "items",
+     "len",
+     "focusedElement",
+     "items",
+     "f",
+     "changed",
+     "f",
+     "f",
+     "focusedElement",
+     "items",
+     "buttons",
+     "int",
+     "string",
+     "form",
+     "form",
+     "SetFocus"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "codeActionResolve",
+  "path": "main.go",
+  "line": 38,
+  "character": 3,
+  "extra": "pos:38:3|top1|Inline call to SetFocus|refactor.inline.call|0"
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "main.go"
+  },
+  {
+   "kind": "change",
+   "path": "main.go",
+   "start": [
+    0,
+    0
+   ],
+   "end": [
+    0,
+    0
+   ],
+   "text": "\n"
+  }
+ ],
+ "case": {
+  "extra": "pos",
+  "path": "main.go",
+  "shift": {
+   "col": 0,
+   "line": 0,
+   "text": "\n",
+   "variant": "top"
+  },
+  "sub": "codeAction",
+  "where": [
+   38,
+   3,
+   38,
+   3
+  ]
+ },
+ "shape": "codeActionResolve:changed",
+ "signature": "gopls|r2_handles|codeActionResolve:changed",
+ "expected": [
+  [
+   "main.go",
+   0,
+   0,
+   1,
+   0,
+   ""
+  ],
+  [
+   "main.go",
+   38,
+   18,
+   38,
+   19,
+   ""
+  ],
+  [
+   "main.go",
+   39,
+   16,
+   39,
+   17,
+   ""
+  ],
+  [
+   "main.go",
+   39,
+   18,
+   39,
+   18,
+   "< 0 {\n\t\t\tform.focusedElement = 0\n\t\t} else if 3 >= len(form.items)+len(form.buttons) {\n\t\t\tform.focusedElement = len(form.items) + len(form.buttons)\n\t\t} else {\n\t\t\tform.focusedElement = 3\n\t\t}\n\t\tif form.changed != nil {\n\t\t\tform.changed(form.focusedElement)\n\t\t}\n\t\treturn form\n\t}()"
+  ],
+  [
+   "main.go",
+   39,
+   2,
+   39,
+   2,
+   "unc() *F"
+  ],
+  [
+   "main.go",
+   39,
+   5,
+   39,
+   15,
+   " {\n\t\tif "
+  ],
+  [
+   "main.go",
+   5,
+   0,
+   6,
+   0,
+   ""
+  ]
+ ],
+ "actual": [
+  [
+   "main.go",
+   0,
+   0,
+   1,
+   0,
+   ""
+  ],
+  [
+   "main.go",
+   38,
+   15,
+   38,
+   16,
+   ""
+  ],
+  [
+   "main.go",
+   38,
+   17,
+   38,
+   18,
+   ""
+  ],
+  [
+   "main.go",
+   38,
+   2,
+   38,
+   2,
+   "unc() *Form {\n\t\tif 0 < 0 {\n\t\t\tform.focusedElement = 0\n\t\t} else if 0 >= len(form.items)+len(form.buttons) {\n\t\t\tform.focusedElement = len(form.items) + len(form.buttons)\n\t\t} else {\n\t\t\tform.focusedElement = 0\n\t\t}\n\t\tif form.changed != nil {\n\t\t\tform.changed(form.focusedElement)\n\t\t}\n\t\treturn f"
+  ],
+  [
+   "main.go",
+   38,
+   5,
+   38,
+   14,
+   "\n\t}"
+  ],
+  [
+   "main.go",
+   5,
+   0,
+   6,
+   0,
+   ""
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "flake 3/3 [r1:SCR r2:SCR r3:SCR] in 34s",
+ "violation": {
+  "oracle": "r2_handles",
+  "server": "gopls-v0.18.1",
+  "project": "gopls-73576",
+  "key": {
+   "method": "codeActionResolve",
+   "path": "main.go",
+   "line": 38,
+   "character": 3,
+   "extra": "pos:38:3|top1|Inline call to SetFocus|refactor.inline.call|0"
+  },
+  "expected": [
+   [
+    "main.go",
+    0,
+    0,
+    1,
+    0,
+    ""
+   ],
+   [
+    "main.go",
+    38,
+    18,
+    38,
+    19,
+    ""
+   ],
+   [
+    "main.go",
+    39,
+    16,
+    39,
+    17,
+    ""
+   ],
+   [
+    "main.go",
+    39,
+    18,
+    39,
+    18,
+    "< 0 {\n\t\t\tform.focusedElement = 0\n\t\t} else if 3 >= len(form.items)+len(form.buttons) {\n\t\t\tform.focusedElement = len(form.items) + len(form.buttons)\n\t\t} else {\n\t\t\tform.focusedElement = 3\n\t\t}\n\t\tif form.changed != nil {\n\t\t\tform.changed(form.focusedElement)\n\t\t}\n\t\treturn form\n\t}()"
+   ],
+   [
+    "main.go",
+    39,
+    2,
+    39,
+    2,
+    "unc() *F"
+   ],
+   [
+    "main.go",
+    39,
+    5,
+    39,
+    15,
+    " {\n\t\tif "
+   ],
+   [
+    "main.go",
+    5,
+    0,
+    6,
+    0,
+    ""
+   ]
+  ],
+  "actual": [
+   [
+    "main.go",
+    0,
+    0,
+    1,
+    0,
+    ""
+   ],
+   [
+    "main.go",
+    38,
+    15,
+    38,
+    16,
+    ""
+   ],
+   [
+    "main.go",
+    38,
+    17,
+    38,
+    18,
+    ""
+   ],
+   [
+    "main.go",
+    38,
+    2,
+    38,
+    2,
+    "unc() *Form {\n\t\tif 0 < 0 {\n\t\t\tform.focusedElement = 0\n\t\t} else if 0 >= len(form.items)+len(form.buttons) {\n\t\t\tform.focusedElement = len(form.items) + len(form.buttons)\n\t\t} else {\n\t\t\tform.focusedElement = 0\n\t\t}\n\t\tif form.changed != nil {\n\t\t\tform.changed(form.focusedElement)\n\t\t}\n\t\treturn f"
+   ],
+   [
+    "main.go",
+    38,
+    5,
+    38,
+    14,
+    "\n\t}"
+   ],
+   [
+    "main.go",
+    5,
+    0,
+    6,
+    0,
+    ""
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "main.go"
+   },
+   {
+    "kind": "change",
+    "path": "main.go",
+    "start": [
+     0,
+     0
+    ],
+    "end": [
+     0,
+     0
+    ],
+    "text": "\n"
+   }
+  ],
+  "detail": "{\"case\": {\"extra\": \"pos\", \"path\": \"main.go\", \"shift\": {\"col\": 0, \"line\": 0, \"text\": \"\\n\", \"variant\": \"top\"}, \"sub\": \"codeAction\", \"where\": [38, 3, 38, 3]}, \"note\": \"flake 3/3 [r1:SCR r2:SCR r3:SCR] in 34s\", \"shape\": \"codeActionResolve:changed\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "gopls|r2_handles|codeActionResolve:changed",
+  "run_id": "d43486dbc01e"
+ },
+ "replay_logs": [
+  "logs/gopls-v0.18.1-d43486dbc01e-r2-replay-20260924-224053-b94420.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

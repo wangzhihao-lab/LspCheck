@@ -1,0 +1,275 @@
+{
+ "format": 1,
+ "campaign": "bench_v1",
+ "vid": "c8e7d09749c2-v01",
+ "run_id": "c8e7d09749c2",
+ "oracle": "r0_crash",
+ "server": {
+  "kind": "rust-analyzer",
+  "version": "2025-12-08"
+ },
+ "project": {
+  "name": "rust-analyzer-21173",
+  "source": "dir",
+  "ref": "data/lsp_bench/cases/rust-analyzer-21173/project",
+  "commit": "",
+  "language": "rust"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 240.0,
+  "request_timeout_s": 60.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "src/lib.rs",
+    "positions": [
+     [
+      0,
+      11
+     ],
+     [
+      1,
+      11
+     ],
+     [
+      3,
+      7
+     ],
+     [
+      3,
+      19
+     ],
+     [
+      3,
+      32
+     ],
+     [
+      6,
+      17
+     ],
+     [
+      6,
+      30
+     ],
+     [
+      6,
+      35
+     ],
+     [
+      8,
+      11
+     ],
+     [
+      8,
+      16
+     ],
+     [
+      8,
+      22
+     ],
+     [
+      8,
+      35
+     ],
+     [
+      9,
+      11
+     ],
+     [
+      9,
+      20
+     ],
+     [
+      11,
+      7
+     ],
+     [
+      11,
+      16
+     ],
+     [
+      11,
+      27
+     ],
+     [
+      12,
+      8
+     ],
+     [
+      17,
+      14
+     ],
+     [
+      18,
+      4
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      12
+     ],
+     [
+      1,
+      14
+     ],
+     [
+      3,
+      8
+     ],
+     [
+      3,
+      22
+     ],
+     [
+      3,
+      35
+     ],
+     [
+      6,
+      23
+     ],
+     [
+      6,
+      31
+     ],
+     [
+      6,
+      38
+     ],
+     [
+      8,
+      12
+     ],
+     [
+      8,
+      19
+     ],
+     [
+      8,
+      23
+     ],
+     [
+      8,
+      41
+     ],
+     [
+      9,
+      14
+     ],
+     [
+      9,
+      24
+     ],
+     [
+      11,
+      8
+     ],
+     [
+      11,
+      17
+     ],
+     [
+      11,
+      30
+     ],
+     [
+      12,
+      9
+     ],
+     [
+      17,
+      18
+     ],
+     [
+      18,
+      5
+     ]
+    ],
+    "names": [
+     "Tr",
+     "Assoc",
+     "f",
+     "handle",
+     "Assoc",
+     "ConstGeneric",
+     "N",
+     "usize",
+     "N",
+     "usize",
+     "Tr",
+     "ConstGeneric",
+     "Assoc",
+     "AssocTy",
+     "f",
+     "a",
+     "Assoc",
+     "a",
+     "AssocTy",
+     "x"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "diagnostics",
+  "path": "src/lib.rs",
+  "line": -1,
+  "character": -1,
+  "extra": ""
+ },
+ "ops": [],
+ "case": {
+  "codes": [
+   "-32603",
+   "-32603"
+  ],
+  "mode": "fresh-pair",
+  "phase": [
+   "done",
+   "done"
+  ],
+  "seed": 1
+ },
+ "shape": "diagnostics:result->error:-32603",
+ "signature": "rust-analyzer|r0_crash|diagnostics:result->error:-32603",
+ "expected": "an answer that is not a server error, a crash or a timeout",
+ "actual": [
+  "error",
+  -32603
+ ],
+ "reproduced": "3/3",
+ "note": "diagnostics answered ['error', -32603] in the fresh baseline and ['error', -32603] in the fresh control; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 60s",
+ "violation": {
+  "oracle": "r0_crash",
+  "server": "rust-analyzer-2025-12-08",
+  "project": "rust-analyzer-21173",
+  "key": {
+   "method": "diagnostics",
+   "path": "src/lib.rs",
+   "line": -1,
+   "character": -1,
+   "extra": ""
+  },
+  "expected": "an answer that is not a server error, a crash or a timeout",
+  "actual": [
+   "error",
+   -32603
+  ],
+  "ops": [],
+  "detail": "{\"case\": {\"codes\": [\"-32603\", \"-32603\"], \"mode\": \"fresh-pair\", \"phase\": [\"done\", \"done\"], \"seed\": 1}, \"note\": \"diagnostics answered ['error', -32603] in the fresh baseline and ['error', -32603] in the fresh control; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 60s\", \"shape\": \"diagnostics:result->error:-32603\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "rust-analyzer|r0_crash|diagnostics:result->error:-32603",
+  "run_id": "c8e7d09749c2"
+ },
+ "replay_logs": [
+  "logs/rust-analyzer-2025-12-08-c8e7d09749c2-r0-replay-baseline-20260924-170415-538e5f.jsonl.gz",
+  "logs/rust-analyzer-2025-12-08-c8e7d09749c2-r0-replay-control-20260924-170415-a1e804.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

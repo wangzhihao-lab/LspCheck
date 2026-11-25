@@ -1,0 +1,3 @@
+2026-09-24 01:51:11,534 INFO campaign_run run ca0e6ff80024: r5_transforms on rust-analyzer 2026-09-21, lapce/lapce@b604d57de4a8 seed 2 settled, targets ['lapce-app/src/proxy/remote.rs', 'lapce-core/src/lib.rs', 'lapce-proxy/src/plugin/dap.rs']
+2026-09-24 02:06:24,924 INFO campaign_run run ca0e6ff80024: 0 candidate(s) in 913s; confirming
+2026-09-24 02:06:24,925 INFO campaign_run run ca0e6ff80024 finished: ok, 0 confirmed of 0 candidate(s), 914s

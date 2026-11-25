@@ -1,0 +1,155 @@
+{
+ "format": 1,
+ "campaign": "main_v2",
+ "vid": "53dd5e55330e-v00",
+ "run_id": "53dd5e55330e",
+ "oracle": "r3_routes",
+ "server": {
+  "kind": "rust-analyzer",
+  "version": "2026-09-21"
+ },
+ "project": {
+  "name": "casey/just@6119e6aff518",
+  "source": "corpus",
+  "ref": "temp/corpus/casey__just@6119e6aff518",
+  "commit": "6119e6aff518b6550d9030955f905b01051b5772",
+  "language": "rust"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "src/cache_lock.rs",
+    "positions": [
+     [
+      10,
+      22
+     ]
+    ],
+    "ends": [],
+    "names": [
+     ""
+    ]
+   },
+   {
+    "path": "src/path_error.rs",
+    "positions": [],
+    "ends": [],
+    "names": []
+   },
+   {
+    "path": "tests/datetime.rs",
+    "positions": [],
+    "ends": [],
+    "names": []
+   }
+  ]
+ },
+ "key": {
+  "method": "definitionConsistency",
+  "path": "src/cache_lock.rs",
+  "line": 10,
+  "character": 22,
+  "extra": "from:src/cache_lock.rs:11:9"
+ },
+ "ops": [],
+ "case": {
+  "loc": [
+   "src/cache_lock.rs",
+   10,
+   19,
+   10,
+   25
+  ],
+  "sub": "d",
+  "target": [
+   "src/cache_lock.rs",
+   11,
+   9
+  ]
+ },
+ "shape": "definitionConsistency:missing",
+ "signature": "rust-analyzer|r3_routes|definitionConsistency:missing",
+ "expected": [
+  [
+   "src/cache_lock.rs",
+   10,
+   19,
+   10,
+   25
+  ],
+  [
+   "src/error.rs",
+   163,
+   4,
+   163,
+   10
+  ]
+ ],
+ "actual": [
+  [
+   "src/cache_lock.rs",
+   10,
+   19,
+   10,
+   25
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "flake 3/3 [r1:SCR r2:SCR r3:SCR] in 133s",
+ "violation": {
+  "oracle": "r3_routes",
+  "server": "rust-analyzer-2026-09-21",
+  "project": "casey/just@6119e6aff518",
+  "key": {
+   "method": "definitionConsistency",
+   "path": "src/cache_lock.rs",
+   "line": 10,
+   "character": 22,
+   "extra": "from:src/cache_lock.rs:11:9"
+  },
+  "expected": [
+   [
+    "src/cache_lock.rs",
+    10,
+    19,
+    10,
+    25
+   ],
+   [
+    "src/error.rs",
+    163,
+    4,
+    163,
+    10
+   ]
+  ],
+  "actual": [
+   [
+    "src/cache_lock.rs",
+    10,
+    19,
+    10,
+    25
+   ]
+  ],
+  "ops": [],
+  "detail": "{\"case\": {\"loc\": [\"src/cache_lock.rs\", 10, 19, 10, 25], \"sub\": \"d\", \"target\": [\"src/cache_lock.rs\", 11, 9]}, \"note\": \"flake 3/3 [r1:SCR r2:SCR r3:SCR] in 133s\", \"shape\": \"definitionConsistency:missing\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "rust-analyzer|r3_routes|definitionConsistency:missing",
+  "run_id": "53dd5e55330e"
+ },
+ "replay_logs": [
+  "logs/rust-analyzer-2026-09-21-tr586fd8-r3-replay-baseline-20261119-004729-c41b43.jsonl.gz",
+  "logs/rust-analyzer-2026-09-21-tr586fd8-r3-replay-control-20261119-004741-42a22a.jsonl.gz"
+ ],
+ "project_files": {},
+ "group": "rust-analyzer-r3-definitionconsistency-missing-d-586fd8",
+ "reduced": true
+}

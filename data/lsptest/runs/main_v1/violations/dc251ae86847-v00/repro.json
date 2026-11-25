@@ -1,0 +1,651 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "dc251ae86847-v00",
+ "run_id": "dc251ae86847",
+ "oracle": "r4_edits",
+ "server": {
+  "kind": "ts6",
+  "version": "6.0.3"
+ },
+ "project": {
+  "name": "chenglou/pretext@2e5e2bdaee39",
+  "source": "corpus",
+  "ref": "temp/corpus/chenglou__pretext@2e5e2bdaee39",
+  "commit": "2e5e2bdaee398784b9cf27b24ca96df2e85396b8",
+  "language": "typescript"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "pages/justification-check.ts",
+    "positions": [
+     [
+      10,
+      28
+     ],
+     [
+      18,
+      19
+     ],
+     [
+      19,
+      63
+     ],
+     [
+      25,
+      18
+     ],
+     [
+      28,
+      36
+     ],
+     [
+      29,
+      45
+     ],
+     [
+      30,
+      12
+     ],
+     [
+      36,
+      62
+     ],
+     [
+      43,
+      37
+     ],
+     [
+      50,
+      34
+     ],
+     [
+      51,
+      8
+     ],
+     [
+      57,
+      44
+     ]
+    ],
+    "ends": [
+     [
+      10,
+      30
+     ],
+     [
+      18,
+      20
+     ],
+     [
+      19,
+      68
+     ],
+     [
+      25,
+      24
+     ],
+     [
+      28,
+      38
+     ],
+     [
+      29,
+      48
+     ],
+     [
+      30,
+      14
+     ],
+     [
+      36,
+      65
+     ],
+     [
+      43,
+      40
+     ],
+     [
+      50,
+      39
+     ],
+     [
+      51,
+      14
+     ],
+     [
+      57,
+      46
+     ]
+    ],
+    "names": [
+     "FONT",
+     "of",
+     "paragraphs",
+     "paintedWidth",
+     "kind",
+     "width",
+     "text",
+     "length",
+     "length",
+     "userAgent",
+     "testedWidths",
+     "body"
+    ]
+   },
+   {
+    "path": "src/generated/line-break-data.ts",
+    "positions": [
+     [
+      6,
+      20
+     ],
+     [
+      7,
+      3
+     ],
+     [
+      8,
+      3
+     ],
+     [
+      9,
+      3
+     ],
+     [
+      16,
+      3
+     ],
+     [
+      23,
+      3
+     ],
+     [
+      34,
+      3
+     ],
+     [
+      37,
+      3
+     ],
+     [
+      49,
+      8
+     ],
+     [
+      51,
+      12
+     ],
+     [
+      59,
+      62
+     ],
+     [
+      60,
+      29
+     ]
+    ],
+    "ends": [
+     [
+      6,
+      27
+     ],
+     [
+      7,
+      4
+     ],
+     [
+      8,
+      4
+     ],
+     [
+      9,
+      4
+     ],
+     [
+      16,
+      4
+     ],
+     [
+      23,
+      4
+     ],
+     [
+      34,
+      4
+     ],
+     [
+      37,
+      4
+     ],
+     [
+      49,
+      11
+     ],
+     [
+      51,
+      15
+     ],
+     [
+      59,
+      64
+     ],
+     [
+      60,
+      34
+     ]
+    ],
+    "names": [
+     "LineBreakClass",
+     "AL",
+     "AK",
+     "B2",
+     "CP",
+     "HY",
+     "SA",
+     "WJ",
+     "index",
+     "block",
+     "ids",
+     "codePoint"
+    ]
+   },
+   {
+    "path": "tests/wrapping/fixtures/corpora.ts",
+    "positions": [
+     [
+      1,
+      12
+     ],
+     [
+      2,
+      97
+     ],
+     [
+      3,
+      14
+     ],
+     [
+      12,
+      14
+     ],
+     [
+      12,
+      80
+     ],
+     [
+      16,
+      18
+     ],
+     [
+      18,
+      10
+     ],
+     [
+      18,
+      61
+     ],
+     [
+      28,
+      25
+     ],
+     [
+      30,
+      79
+     ],
+     [
+      36,
+      38
+     ],
+     [
+      40,
+      17
+     ]
+    ],
+    "ends": [
+     [
+      1,
+      18
+     ],
+     [
+      2,
+      99
+     ],
+     [
+      3,
+      22
+     ],
+     [
+      12,
+      22
+     ],
+     [
+      12,
+      82
+     ],
+     [
+      16,
+      20
+     ],
+     [
+      18,
+      14
+     ],
+     [
+      18,
+      63
+     ],
+     [
+      28,
+      31
+     ],
+     [
+      30,
+      101
+     ],
+     [
+      36,
+      48
+     ],
+     [
+      40,
+      21
+     ]
+    ],
+    "names": [
+     "arAlBukhala",
+     "type",
+     "enGatsbyOpening",
+     "koUnsuJohEunNal",
+     "type",
+     "from",
+     "zhZhufu",
+     "type",
+     "jaKumoNoIto",
+     "kmPrachumReuangPrengKhmerVolume7Stories1To10",
+     "thNithanVetalStory1",
+     "zhZhufu"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "diagnostics",
+  "path": "pages/justification-check.ts",
+  "line": 20,
+  "character": 21,
+  "extra": "M1:quickfix-errors:Change spelling to 'paragraph'"
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "pages/justification-check.ts"
+  },
+  {
+   "kind": "change",
+   "path": "pages/justification-check.ts",
+   "start": [
+    1,
+    13
+   ],
+   "end": [
+    1,
+    25
+   ]
+  },
+  {
+   "kind": "change",
+   "path": "pages/justification-check.ts",
+   "start": [
+    20,
+    21
+   ],
+   "end": [
+    20,
+    31
+   ],
+   "text": "paragraph"
+  }
+ ],
+ "case": {
+  "action_kind": "quickfix",
+  "base_errors": 0,
+  "check": "errors",
+  "diag": {
+   "code": 2552,
+   "message": "Cannot find name 'PARAGRAPHS'. Did you mean 'paragraph'?",
+   "range": {
+    "end": {
+     "character": 31,
+     "line": 20
+    },
+    "start": {
+     "character": 21,
+     "line": 20
+    }
+   },
+   "severity": 1
+  },
+  "fix_introduced_errors": [
+   {
+    "code": 2339,
+    "message": "Property 'slice' does not exist on type 'PositionedLine'.",
+    "path": "pages/justification-check.ts",
+    "range": {
+     "end": {
+      "character": 24,
+      "line": 36
+     },
+     "start": {
+      "character": 19,
+      "line": 36
+     }
+    },
+    "severity": 1
+   },
+   {
+    "code": 7053,
+    "message": "Element implicitly has an 'any' type because expression of type 'number' can't be used to index type 'PositionedLine'.\n  No index signature with a parameter of type 'number' was found on type 'PositionedLine'.",
+    "path": "pages/justification-check.ts",
+    "range": {
+     "end": {
+      "character": 35,
+      "line": 41
+     },
+     "start": {
+      "character": 15,
+      "line": 41
+     }
+    },
+    "severity": 1
+   },
+   {
+    "code": 2339,
+    "message": "Property 'length' does not exist on type 'PositionedLine'.",
+    "path": "pages/justification-check.ts",
+    "range": {
+     "end": {
+      "character": 40,
+      "line": 43
+     },
+     "start": {
+      "character": 34,
+      "line": 43
+     }
+    },
+    "severity": 1
+   }
+  ],
+  "fix_ops": [
+   {
+    "end": [
+     20,
+     31
+    ],
+    "kind": "change",
+    "path": "pages/justification-check.ts",
+    "start": [
+     20,
+     21
+    ],
+    "text": "paragraph"
+   }
+  ],
+  "kind": "mutation",
+  "mutation": {
+   "end": [
+    1,
+    25
+   ],
+   "id": "M1",
+   "offsets": [
+    109,
+    121
+   ],
+   "sha": "5a99198577693e4c",
+   "start": [
+    1,
+    13
+   ],
+   "text": "",
+   "what": "remove 'PARAGRAPHS' from an import"
+  },
+  "n_fix_ops": 1,
+  "path": "pages/justification-check.ts",
+  "post_errors": 3,
+  "title": "Change spelling to 'paragraph'",
+  "via": "edit"
+ },
+ "shape": "diagnostics:extra:2339,7053",
+ "signature": "ts6|r4_edits|diagnostics:extra:2339,7053",
+ "expected": [],
+ "actual": [
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "2339",
+   "typescript",
+   "Property 'length' does not exist on type 'PositionedLine'."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "2339",
+   "typescript",
+   "Property 'slice' does not exist on type 'PositionedLine'."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7053",
+   "typescript",
+   "Element implicitly has an 'any' type because expression of type 'number' can't be used to index type 'PositionedLine'. No index signature with a parameter of type 'number' was found on type 'PositionedLine'."
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "quick fix \"Change spelling to 'paragraph'\" for 2552 at pages/justification-check.ts:21:22 raises the error count in the edited files from 0 to 3 (seeded by M1: remove 'PARAGRAPHS' from an import; errors before the mutation 0, after the fix 3); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 101s",
+ "violation": {
+  "oracle": "r4_edits",
+  "server": "ts6-6.0.3",
+  "project": "chenglou/pretext@2e5e2bdaee39",
+  "key": {
+   "method": "diagnostics",
+   "path": "pages/justification-check.ts",
+   "line": 20,
+   "character": 21,
+   "extra": "M1:quickfix-errors:Change spelling to 'paragraph'"
+  },
+  "expected": [],
+  "actual": [
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2339",
+    "typescript",
+    "Property 'length' does not exist on type 'PositionedLine'."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2339",
+    "typescript",
+    "Property 'slice' does not exist on type 'PositionedLine'."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7053",
+    "typescript",
+    "Element implicitly has an 'any' type because expression of type 'number' can't be used to index type 'PositionedLine'. No index signature with a parameter of type 'number' was found on type 'PositionedLine'."
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "pages/justification-check.ts"
+   },
+   {
+    "kind": "change",
+    "path": "pages/justification-check.ts",
+    "start": [
+     1,
+     13
+    ],
+    "end": [
+     1,
+     25
+    ]
+   },
+   {
+    "kind": "change",
+    "path": "pages/justification-check.ts",
+    "start": [
+     20,
+     21
+    ],
+    "end": [
+     20,
+     31
+    ],
+    "text": "paragraph"
+   }
+  ],
+  "detail": "{\"case\": {\"action_kind\": \"quickfix\", \"base_errors\": 0, \"check\": \"errors\", \"diag\": {\"code\": 2552, \"message\": \"Cannot find name 'PARAGRAPHS'. Did you mean 'paragraph'?\", \"range\": {\"end\": {\"character\": 31, \"line\": 20}, \"start\": {\"character\": 21, \"line\": 20}}, \"severity\": 1}, \"fix_introduced_errors\": [{\"code\": 2339, \"message\": \"Property 'slice' does not exist on type 'PositionedLine'.\", \"path\": \"pages/justification-check.ts\", \"range\": {\"end\": {\"character\": 24, \"line\": 36}, \"start\": {\"character\": 19, \"line\": 36}}, \"severity\": 1}, {\"code\": 7053, \"message\": \"Element implicitly has an 'any' type because expression of type 'number' can't be used to index type 'PositionedLine'.\\n  No index signature with a parameter of type 'number' was found on type 'PositionedLine'.\", \"path\": \"pages/justification-check.ts\", \"range\": {\"end\": {\"character\": 35, \"line\": 41}, \"start\": {\"character\": 15, \"line\": 41}}, \"severity\": 1}, {\"code\": 2339, \"message\": \"Property 'length' does not exist on type 'PositionedLine'.\", \"path\": \"pages/justification-check.ts\", \"range\": {\"end\": {\"character\": 40, \"line\": 43}, \"start\": {\"character\": 34, \"line\": 43}}, \"severity\": 1}], \"fix_ops\": [{\"end\": [20, 31], \"kind\": \"change\", \"path\": \"pages/justification-check.ts\", \"start\": [20, 21], \"text\": \"paragraph\"}], \"kind\": \"mutation\", \"mutation\": {\"end\": [1, 25], \"id\": \"M1\", \"offsets\": [109, 121], \"sha\": \"5a99198577693e4c\", \"start\": [1, 13], \"text\": \"\", \"what\": \"remove 'PARAGRAPHS' from an import\"}, \"n_fix_ops\": 1, \"path\": \"pages/justification-check.ts\", \"post_errors\": 3, \"title\": \"Change spelling to 'paragraph'\", \"via\": \"edit\"}, \"note\": \"quick fix \\\"Change spelling to 'paragraph'\\\" for 2552 at pages/justification-check.ts:21:22 raises the error count in the edited files from 0 to 3 (seeded by M1: remove 'PARAGRAPHS' from an import; errors before the mutation 0, after the fix 3); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 101s\", \"shape\": \"diagnostics:extra:2339,7053\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "ts6|r4_edits|diagnostics:extra:2339,7053",
+  "run_id": "dc251ae86847"
+ },
+ "replay_logs": [
+  "logs/ts6-6.0.3-dc251ae86847-r4-replay-baseline-20260924-003337-798062.jsonl.gz",
+  "logs/ts6-6.0.3-dc251ae86847-r4-replay-case-20260924-003322-6a5829.jsonl.gz",
+  "logs/ts6-6.0.3-dc251ae86847-r4-replay-control-20260924-003345-e37f04.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

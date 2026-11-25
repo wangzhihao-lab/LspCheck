@@ -1,0 +1,3 @@
+2026-09-23 21:25:37,654 INFO campaign_run run aa8dae0da762: r4_edits on rust-analyzer 2026-09-21, rtk-ai/rtk@b748a5f75563 seed 1 settled, targets ['src/cmds/js/next_cmd.rs', 'src/cmds/system/env_cmd.rs', 'src/parser/types.rs']
+2026-09-23 21:27:59,631 INFO campaign_run run aa8dae0da762: 0 candidate(s) in 142s; confirming
+2026-09-23 21:27:59,634 INFO campaign_run run aa8dae0da762 finished: ok, 0 confirmed of 0 candidate(s), 142s

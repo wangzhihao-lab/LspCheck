@@ -1,0 +1,3 @@
+2026-09-24 13:06:26,505 INFO campaign_run run 4019118886d8: r1_history on ts6 6.0.3, chenglou/pretext@2e5e2bdaee39 seed 3 settled, targets ['pages/benchmark-shapes.ts', 'scripts/arabic-joining-probe.ts', 'tests/wrapping/fixtures/retained.ts']
+2026-09-24 13:13:55,609 INFO campaign_run run 4019118886d8: 7 candidate(s) in 449s; confirming
+2026-09-24 13:13:55,611 INFO campaign_run run 4019118886d8 finished: ok, 0 confirmed of 7 candidate(s), 449s

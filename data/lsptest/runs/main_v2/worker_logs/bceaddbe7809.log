@@ -1,0 +1,3 @@
+2026-11-18 20:48:00,610 INFO campaign_run run bceaddbe7809: r5_transforms on rust-analyzer 2026-09-21, dandavison/delta@5ddd7fa66ee9 seed 2 settled, targets ['src/features/diff_so_fancy.rs', 'src/subcommands/show_colors.rs', 'src/tests/test_example_diffs.rs']
+2026-11-18 20:51:04,392 INFO campaign_run run bceaddbe7809: 0 candidate(s) in 184s; confirming
+2026-11-18 20:51:04,393 INFO campaign_run run bceaddbe7809 finished: ok, 0 confirmed of 0 candidate(s), 184s

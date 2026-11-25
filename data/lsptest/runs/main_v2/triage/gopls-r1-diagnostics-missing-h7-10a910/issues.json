@@ -1,0 +1,92 @@
+{
+ "queries": [
+  "\"after edit\" in:title repo:golang/go is:issue label:gopls",
+  "diagnostics missing repo:golang/go is:issue label:gopls",
+  "diagnostics \"after edit\" repo:golang/go is:issue label:gopls",
+  "diagnostics stale repo:golang/go is:issue label:gopls"
+ ],
+ "matches": [
+  {
+   "repo": "golang/go",
+   "number": 81812,
+   "title": "x/tools/gopls: codeAction/resolve after a document change computes the edit at the old position",
+   "url": "https://github.com/golang/go/issues/81812",
+   "state": "open",
+   "created": "2026-09-28",
+   "comments": 4,
+   "query": "\"after edit\" in:title repo:golang/go is:issue label:gopls"
+  },
+  {
+   "repo": "golang/go",
+   "number": 70604,
+   "title": "x/tools/gopls: marker test should ensure type checked file remain type checked after code edits",
+   "url": "https://github.com/golang/go/issues/70604",
+   "state": "closed",
+   "created": "2024-11-27",
+   "comments": 1,
+   "query": "\"after edit\" in:title repo:golang/go is:issue label:gopls"
+  },
+  {
+   "repo": "golang/go",
+   "number": 59587,
+   "title": "x/tools/gopls: diagnostics only clear after diagnosticsDelay for edited files",
+   "url": "https://github.com/golang/go/issues/59587",
+   "state": "closed",
+   "created": "2023-04-12",
+   "comments": 1,
+   "query": "\"after edit\" in:title repo:golang/go is:issue label:gopls"
+  },
+  {
+   "repo": "golang/go",
+   "number": 51325,
+   "title": "x/tools/gopls: push diagnostics after `go mod edit -go=1.18`",
+   "url": "https://github.com/golang/go/issues/51325",
+   "state": "closed",
+   "created": "2022-02-22",
+   "comments": 1,
+   "query": "\"after edit\" in:title repo:golang/go is:issue label:gopls"
+  },
+  {
+   "repo": "golang/go",
+   "number": 33989,
+   "title": "x/tools/gopls: Context cancelled errors after some editing",
+   "url": "https://github.com/golang/go/issues/33989",
+   "state": "closed",
+   "created": "2019-08-30",
+   "comments": 4,
+   "query": "\"after edit\" in:title repo:golang/go is:issue label:gopls"
+  },
+  {
+   "repo": "golang/go",
+   "number": 57856,
+   "title": "x/tools/gopls: `infertypeargs` diagnostic is missing `code`/`codeDescription` fields",
+   "url": "https://github.com/golang/go/issues/57856",
+   "state": "open",
+   "created": "2023-01-17",
+   "comments": 0,
+   "query": "diagnostics missing repo:golang/go is:issue label:gopls"
+  },
+  {
+   "repo": "golang/go",
+   "number": 50320,
+   "title": "x/tools/gopls: consider merging \"missing go.sum entries\" errors with the same root cause",
+   "url": "https://github.com/golang/go/issues/50320",
+   "state": "open",
+   "created": "2021-12-22",
+   "comments": 1,
+   "query": "diagnostics missing repo:golang/go is:issue label:gopls"
+  },
+  {
+   "repo": "golang/go",
+   "number": 50764,
+   "title": "x/tools/gopls: provide a way to suppress analysis diagnostics for certain files",
+   "url": "https://github.com/golang/go/issues/50764",
+   "state": "open",
+   "created": "2022-01-23",
+   "comments": 57,
+   "query": "diagnostics missing repo:golang/go is:issue label:gopls"
+  }
+ ],
+ "notes": [],
+ "authenticated": true
+}

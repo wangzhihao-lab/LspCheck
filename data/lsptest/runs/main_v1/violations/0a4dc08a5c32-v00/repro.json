@@ -1,0 +1,725 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "0a4dc08a5c32-v00",
+ "run_id": "0a4dc08a5c32",
+ "oracle": "r1_history",
+ "server": {
+  "kind": "gopls",
+  "version": "v0.23.0"
+ },
+ "project": {
+  "name": "caddyserver/caddy@c18099a0af5e",
+  "source": "corpus",
+  "ref": "temp/corpus/caddyserver__caddy@c18099a0af5e",
+  "commit": "c18099a0af5e88c8d9da0b9d797f6f2c62d60a23",
+  "language": "go"
+ },
+ "context": {
+  "seed": 3,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "admin.go",
+    "positions": [
+     [
+      346,
+      19
+     ],
+     [
+      553,
+      72
+     ],
+     [
+      623,
+      95
+     ],
+     [
+      666,
+      21
+     ],
+     [
+      796,
+      36
+     ],
+     [
+      831,
+      24
+     ],
+     [
+      851,
+      9
+     ],
+     [
+      1080,
+      57
+     ],
+     [
+      1264,
+      28
+     ],
+     [
+      1341,
+      8
+     ],
+     [
+      1380,
+      5
+     ],
+     [
+      1420,
+      34
+     ]
+    ],
+    "ends": [
+     [
+      346,
+      21
+     ],
+     [
+      553,
+      77
+     ],
+     [
+      623,
+      98
+     ],
+     [
+      666,
+      24
+     ],
+     [
+      796,
+      38
+     ],
+     [
+      831,
+      26
+     ],
+     [
+      851,
+      15
+     ],
+     [
+      1080,
+      59
+     ],
+     [
+      1264,
+      30
+     ],
+     [
+      1341,
+      12
+     ],
+     [
+      1380,
+      10
+     ],
+     [
+      1420,
+      37
+     ]
+    ],
+    "names": [
+     "URL",
+     "PublicKey",
+     "Config",
+     "Errorf",
+     "http",
+     "err",
+     "handleError",
+     "err",
+     "idx",
+     "strings",
+     "ServeHTTP",
+     "Errorf"
+    ]
+   },
+   {
+    "path": "modules/caddyhttp/caddyauth/caddyfile.go",
+    "positions": [
+     [
+      36,
+      12
+     ],
+     [
+      40,
+      4
+     ],
+     [
+      55,
+      15
+     ],
+     [
+      67,
+      3
+     ],
+     [
+      72,
+      34
+     ],
+     [
+      74,
+      5
+     ],
+     [
+      78,
+      2
+     ],
+     [
+      80,
+      20
+     ],
+     [
+      83,
+      26
+     ],
+     [
+      84,
+      11
+     ],
+     [
+      84,
+      15
+     ],
+     [
+      94,
+      8
+     ]
+    ],
+    "ends": [
+     [
+      36,
+      19
+     ],
+     [
+      40,
+      5
+     ],
+     [
+      55,
+      17
+     ],
+     [
+      67,
+      5
+     ],
+     [
+      72,
+      42
+     ],
+     [
+      74,
+      6
+     ],
+     [
+      78,
+      3
+     ],
+     [
+      80,
+      23
+     ],
+     [
+      83,
+      29
+     ],
+     [
+      84,
+      13
+     ],
+     [
+      84,
+      16
+     ],
+     [
+      94,
+      14
+     ]
+    ],
+    "names": [
+     "parseCaddyfile",
+     "h",
+     "args",
+     "cmp",
+     "JSONModuleObject",
+     "h",
+     "h",
+     "ArgErr",
+     "b64Pwd",
+     "nil",
+     "h",
+     "ProvidersRaw"
+    ]
+   },
+   {
+    "path": "modules/caddyhttp/reverseproxy/addresses_test.go",
+    "positions": [
+     [
+      26,
+      5
+     ],
+     [
+      72,
+      5
+     ],
+     [
+      98,
+      10
+     ],
+     [
+      108,
+      10
+     ],
+     [
+      133,
+      10
+     ],
+     [
+      198,
+      7
+     ],
+     [
+      225,
+      5
+     ],
+     [
+      246,
+      16
+     ],
+     [
+      271,
+      13
+     ],
+     [
+      272,
+      8
+     ],
+     [
+      272,
+      57
+     ],
+     [
+      278,
+      8
+     ]
+    ],
+    "ends": [
+     [
+      26,
+      8
+     ],
+     [
+      72,
+      8
+     ],
+     [
+      98,
+      17
+     ],
+     [
+      108,
+      17
+     ],
+     [
+      133,
+      17
+     ],
+     [
+      198,
+      12
+     ],
+     [
+      225,
+      8
+     ],
+     [
+      246,
+      18
+     ],
+     [
+      271,
+      18
+     ],
+     [
+      272,
+      11
+     ],
+     [
+      272,
+      59
+     ],
+     [
+      278,
+      11
+     ]
+    ],
+    "names": [
+     "input",
+     "input",
+     "expectHostPort",
+     "expectHostPort",
+     "expectHostPort",
+     "expectErr",
+     "input",
+     "true",
+     "expectErr",
+     "Errorf",
+     "err",
+     "Errorf"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "completion",
+  "path": "admin.go",
+  "line": 796,
+  "character": 38,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "admin.go"
+  },
+  {
+   "kind": "open",
+   "path": "modules/caddyhttp/caddyauth/caddyfile.go"
+  },
+  {
+   "kind": "open",
+   "path": "modules/caddyhttp/reverseproxy/addresses_test.go"
+  },
+  {
+   "kind": "open",
+   "path": "modules/caddypki/crypto.go"
+  },
+  {
+   "kind": "change",
+   "path": "modules/caddypki/crypto.go",
+   "start": [
+    28,
+    28
+   ],
+   "end": [
+    28,
+    34
+   ]
+  },
+  {
+   "kind": "change",
+   "path": "modules/caddyhttp/caddyauth/caddyfile.go",
+   "start": [
+    66,
+    1
+   ],
+   "end": [
+    66,
+    1
+   ],
+   "text": "\t"
+  },
+  {
+   "kind": "change",
+   "path": "modules/caddyhttp/caddyauth/caddyfile.go",
+   "start": [
+    66,
+    1
+   ],
+   "end": [
+    66,
+    2
+   ]
+  },
+  {
+   "kind": "change",
+   "path": "modules/caddyhttp/reverseproxy/addresses_test.go",
+   "start": [
+    34,
+    0
+   ],
+   "end": [
+    35,
+    0
+   ]
+  },
+  {
+   "kind": "change",
+   "path": "modules/caddyhttp/reverseproxy/addresses_test.go",
+   "start": [
+    34,
+    0
+   ],
+   "end": [
+    34,
+    0
+   ],
+   "text": "\t\t\tinput:          \"127.0.0.1\""
+  },
+  {
+   "kind": "change",
+   "path": "modules/caddyhttp/reverseproxy/addresses_test.go",
+   "start": [
+    34,
+    30
+   ],
+   "end": [
+    34,
+    30
+   ],
+   "text": ",\n"
+  },
+  {
+   "kind": "change",
+   "path": "admin.go",
+   "start": [
+    24,
+    1
+   ],
+   "end": [
+    24,
+    1
+   ],
+   "text": "."
+  },
+  {
+   "kind": "save",
+   "path": "admin.go"
+  },
+  {
+   "kind": "change",
+   "path": "admin.go",
+   "start": [
+    24,
+    1
+   ],
+   "end": [
+    24,
+    2
+   ]
+  },
+  {
+   "kind": "save",
+   "path": "admin.go"
+  },
+  {
+   "kind": "change",
+   "path": "modules/caddypki/crypto.go",
+   "start": [
+    28,
+    28
+   ],
+   "end": [
+    28,
+    28
+   ],
+   "text": "tmagic"
+  },
+  {
+   "kind": "close",
+   "path": "modules/caddypki/crypto.go"
+  }
+ ],
+ "case": {
+  "chain_step": 0,
+  "families": [],
+  "family": "H9",
+  "history_index": 0,
+  "history_seed": 3001,
+  "mode": "fresh",
+  "note": "window: modules/caddypki/crypto.go in the editor: delete 'tmagic' on line 28; inside: modules/caddyhttp/caddyauth/caddyfile.go: insert '\\t' on line 66, then its inverse; modules/caddyhttp/reverseproxy/addresses_test.go: line 34 deleted and retyped in 2 chunk(s); admin.go: insert '.' on line 24, then its inverse; then W reverted",
+  "seed": 3,
+  "timing": "settled"
+ },
+ "shape": "completion:extra",
+ "signature": "gopls|r1_history|completion:extra",
+ "expected": [
+  "http"
+ ],
+ "actual": [
+  "http",
+  "http.HTTP2Config",
+  "http.ProtocolError",
+  "http.Protocols"
+ ],
+ "reproduced": "0/3",
+ "note": "H9: window: modules/caddypki/crypto.go in the editor: delete 'tmagic' on line 28; inside: modules/caddyhttp/caddyauth/caddyfile.go: insert '\\t' on line 66, then its inverse; modules/caddyhttp/reverseproxy; flake 0/3 [r1:SCr r2:SCr r3:SCr] in 181s",
+ "violation": {
+  "oracle": "r1_history",
+  "server": "gopls-v0.23.0",
+  "project": "caddyserver/caddy@c18099a0af5e",
+  "key": {
+   "method": "completion",
+   "path": "admin.go",
+   "line": 796,
+   "character": 38,
+   "extra": ""
+  },
+  "expected": [
+   "http"
+  ],
+  "actual": [
+   "http",
+   "http.HTTP2Config",
+   "http.ProtocolError",
+   "http.Protocols"
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "admin.go"
+   },
+   {
+    "kind": "open",
+    "path": "modules/caddyhttp/caddyauth/caddyfile.go"
+   },
+   {
+    "kind": "open",
+    "path": "modules/caddyhttp/reverseproxy/addresses_test.go"
+   },
+   {
+    "kind": "open",
+    "path": "modules/caddypki/crypto.go"
+   },
+   {
+    "kind": "change",
+    "path": "modules/caddypki/crypto.go",
+    "start": [
+     28,
+     28
+    ],
+    "end": [
+     28,
+     34
+    ]
+   },
+   {
+    "kind": "change",
+    "path": "modules/caddyhttp/caddyauth/caddyfile.go",
+    "start": [
+     66,
+     1
+    ],
+    "end": [
+     66,
+     1
+    ],
+    "text": "\t"
+   },
+   {
+    "kind": "change",
+    "path": "modules/caddyhttp/caddyauth/caddyfile.go",
+    "start": [
+     66,
+     1
+    ],
+    "end": [
+     66,
+     2
+    ]
+   },
+   {
+    "kind": "change",
+    "path": "modules/caddyhttp/reverseproxy/addresses_test.go",
+    "start": [
+     34,
+     0
+    ],
+    "end": [
+     35,
+     0
+    ]
+   },
+   {
+    "kind": "change",
+    "path": "modules/caddyhttp/reverseproxy/addresses_test.go",
+    "start": [
+     34,
+     0
+    ],
+    "end": [
+     34,
+     0
+    ],
+    "text": "\t\t\tinput:          \"127.0.0.1\""
+   },
+   {
+    "kind": "change",
+    "path": "modules/caddyhttp/reverseproxy/addresses_test.go",
+    "start": [
+     34,
+     30
+    ],
+    "end": [
+     34,
+     30
+    ],
+    "text": ",\n"
+   },
+   {
+    "kind": "change",
+    "path": "admin.go",
+    "start": [
+     24,
+     1
+    ],
+    "end": [
+     24,
+     1
+    ],
+    "text": "."
+   },
+   {
+    "kind": "save",
+    "path": "admin.go"
+   },
+   {
+    "kind": "change",
+    "path": "admin.go",
+    "start": [
+     24,
+     1
+    ],
+    "end": [
+     24,
+     2
+    ]
+   },
+   {
+    "kind": "save",
+    "path": "admin.go"
+   },
+   {
+    "kind": "change",
+    "path": "modules/caddypki/crypto.go",
+    "start": [
+     28,
+     28
+    ],
+    "end": [
+     28,
+     28
+    ],
+    "text": "tmagic"
+   },
+   {
+    "kind": "close",
+    "path": "modules/caddypki/crypto.go"
+   }
+  ],
+  "detail": "{\"case\": {\"chain_step\": 0, \"families\": [], \"family\": \"H9\", \"history_index\": 0, \"history_seed\": 3001, \"mode\": \"fresh\", \"note\": \"window: modules/caddypki/crypto.go in the editor: delete 'tmagic' on line 28; inside: modules/caddyhttp/caddyauth/caddyfile.go: insert '\\\\t' on line 66, then its inverse; modules/caddyhttp/reverseproxy/addresses_test.go: line 34 deleted and retyped in 2 chunk(s); admin.go: insert '.' on line 24, then its inverse; then W reverted\", \"seed\": 3, \"timing\": \"settled\"}, \"note\": \"H9: window: modules/caddypki/crypto.go in the editor: delete 'tmagic' on line 28; inside: modules/caddyhttp/caddyauth/caddyfile.go: insert '\\\\t' on line 66, then its inverse; modules/caddyhttp/reverseproxy; flake 0/3 [r1:SCr r2:SCr r3:SCr] in 181s\", \"shape\": \"completion:extra\"}",
+  "reproduced": "0/3",
+  "reduced_ops": [],
+  "signature": "gopls|r1_history|completion:extra",
+  "run_id": "0a4dc08a5c32"
+ },
+ "replay_logs": [],
+ "project_files": {},
+ "incomplete": false
+}

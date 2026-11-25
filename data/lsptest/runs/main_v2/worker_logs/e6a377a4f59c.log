@@ -1,0 +1,6 @@
+2026-11-18 10:28:46,137 INFO campaign_run run e6a377a4f59c: r3_routes on rust-analyzer 2026-09-21, googleworkspace/cli@a3768d0e82ad seed 2 settled, targets ['crates/google-workspace-cli/src/helpers/chat.rs', 'crates/google-workspace-cli/src/helpers/events/mod.rs', 'crates/google-workspace-cli/src/main.rs']
+2026-11-18 10:32:08,261 INFO campaign_run run e6a377a4f59c: 9 candidate(s) in 202s; confirming
+2026-11-18 10:33:22,151 INFO flake replay 1/3 of rust-analyzer|r3_routes|diagnostics:missing:inactive_code: settled=True control_stable=True reproduced=True (73.9s)
+2026-11-18 10:34:41,476 INFO flake replay 2/3 of rust-analyzer|r3_routes|diagnostics:missing:inactive_code: settled=True control_stable=True reproduced=True (79.3s)
+2026-11-18 10:35:57,679 INFO flake replay 3/3 of rust-analyzer|r3_routes|diagnostics:missing:inactive_code: settled=True control_stable=True reproduced=True (76.2s)
+2026-11-18 10:35:57,696 INFO campaign_run run e6a377a4f59c finished: ok, 1 confirmed of 9 candidate(s), 432s

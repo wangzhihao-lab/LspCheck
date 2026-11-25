@@ -1,0 +1,92 @@
+{
+ "queries": [
+  "\"while typing\" in:title repo:microsoft/pyright is:issue",
+  "\"type definition\" extra repo:microsoft/pyright is:issue",
+  "\"type definition\" \"while typing\" repo:microsoft/pyright is:issue",
+  "\"type definition\" stale repo:microsoft/pyright is:issue"
+ ],
+ "matches": [
+  {
+   "repo": "microsoft/pyright",
+   "number": 3860,
+   "title": "Errors while using Protocol classes from `typing_extensions`",
+   "url": "https://github.com/microsoft/pyright/issues/3860",
+   "state": "closed",
+   "created": "2022-08-23",
+   "comments": 6,
+   "query": "\"while typing\" in:title repo:microsoft/pyright is:issue"
+  },
+  {
+   "repo": "microsoft/pyright",
+   "number": 10755,
+   "title": "PEP-728 arguments rejected from `typing_extensions.TypedDict`",
+   "url": "https://github.com/microsoft/pyright/issues/10755",
+   "state": "closed",
+   "created": "2025-07-29",
+   "comments": 2,
+   "query": "\"type definition\" extra repo:microsoft/pyright is:issue"
+  },
+  {
+   "repo": "microsoft/pyright",
+   "number": 10493,
+   "title": "Follow-up on #10482, backwards incomaptible change to type narrowing with TypedDict",
+   "url": "https://github.com/microsoft/pyright/issues/10493",
+   "state": "closed",
+   "created": "2025-05-22",
+   "comments": 2,
+   "query": "\"type definition\" extra repo:microsoft/pyright is:issue"
+  },
+  {
+   "repo": "microsoft/pyright",
+   "number": 10832,
+   "title": "1.1.404 performance regression with scipy-stubs",
+   "url": "https://github.com/microsoft/pyright/issues/10832",
+   "state": "closed",
+   "created": "2025-08-20",
+   "comments": 37,
+   "query": "\"type definition\" extra repo:microsoft/pyright is:issue"
+  },
+  {
+   "repo": "microsoft/pyright",
+   "number": 8646,
+   "title": "Converting `TypedDict` to another `TypedDict`, Pyright doesn't handle it correctly.",
+   "url": "https://github.com/microsoft/pyright/issues/8646",
+   "state": "closed",
+   "created": "2024-08-03",
+   "comments": 3,
+   "query": "\"type definition\" extra repo:microsoft/pyright is:issue"
+  },
+  {
+   "repo": "microsoft/pyright",
+   "number": 8848,
+   "title": "overriding metaclass doesn't work",
+   "url": "https://github.com/microsoft/pyright/issues/8848",
+   "state": "closed",
+   "created": "2024-08-28",
+   "comments": 1,
+   "query": "\"type definition\" extra repo:microsoft/pyright is:issue"
+  },
+  {
+   "repo": "microsoft/pyright",
+   "number": 1047,
+   "title": "dataclasses.replace does not type correctly",
+   "url": "https://github.com/microsoft/pyright/issues/1047",
+   "state": "closed",
+   "created": "2020-09-20",
+   "comments": 9,
+   "query": "\"type definition\" \"while typing\" repo:microsoft/pyright is:issue"
+  },
+  {
+   "repo": "microsoft/pyright",
+   "number": 9878,
+   "title": "Adding __slots__ to a function-like Protocol breaks support for function assigment to the Protocol",
+   "url": "https://github.com/microsoft/pyright/issues/9878",
+   "state": "closed",
+   "created": "2025-02-11",
+   "comments": 3,
+   "query": "\"type definition\" \"while typing\" repo:microsoft/pyright is:issue"
+  }
+ ],
+ "notes": [],
+ "authenticated": true
+}

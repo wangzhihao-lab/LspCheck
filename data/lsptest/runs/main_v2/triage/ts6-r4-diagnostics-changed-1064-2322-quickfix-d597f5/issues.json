@@ -1,0 +1,96 @@
+{
+ "queries": [
+  "\"quick fix\" in:title repo:typescript-language-server/typescript-language-server is:issue",
+  "diagnostics wrong repo:typescript-language-server/typescript-language-server is:issue",
+  "diagnostics \"quick fix\" repo:typescript-language-server/typescript-language-server is:issue",
+  "diagnostics \"wrong edit\" repo:typescript-language-server/typescript-language-server is:issue",
+  "\"quick fix\" in:title repo:microsoft/TypeScript is:issue",
+  "diagnostics wrong repo:microsoft/TypeScript is:issue",
+  "diagnostics \"quick fix\" repo:microsoft/TypeScript is:issue",
+  "diagnostics \"wrong edit\" repo:microsoft/TypeScript is:issue"
+ ],
+ "matches": [
+  {
+   "repo": "typescript-language-server/typescript-language-server",
+   "number": 1136,
+   "title": "Spurious \"Cannot find name 'div'\" (TS2304) when hover is requested right after didOpen",
+   "url": "https://github.com/typescript-language-server/typescript-language-server/issues/1136",
+   "state": "closed",
+   "created": "2026-09-28",
+   "comments": 4,
+   "query": "diagnostics wrong repo:typescript-language-server/typescript-language-server is:issue"
+  },
+  {
+   "repo": "typescript-language-server/typescript-language-server",
+   "number": 1093,
+   "title": "Wrong Autocomplete",
+   "url": "https://github.com/typescript-language-server/typescript-language-server/issues/1093",
+   "state": "closed",
+   "created": "2026-05-20",
+   "comments": 2,
+   "query": "diagnostics wrong repo:typescript-language-server/typescript-language-server is:issue"
+  },
+  {
+   "repo": "typescript-language-server/typescript-language-server",
+   "number": 1014,
+   "title": "TypeScript Language Server Hangs on Completion Resolution On Enter Key Pressed",
+   "url": "https://github.com/typescript-language-server/typescript-language-server/issues/1014",
+   "state": "closed",
+   "created": "2025-09-24",
+   "comments": 21,
+   "query": "diagnostics wrong repo:typescript-language-server/typescript-language-server is:issue"
+  },
+  {
+   "repo": "typescript-language-server/typescript-language-server",
+   "number": 917,
+   "title": "Shows incorrect type completion item between VSCode and Neovim",
+   "url": "https://github.com/typescript-language-server/typescript-language-server/issues/917",
+   "state": "closed",
+   "created": "2024-09-27",
+   "comments": 9,
+   "query": "diagnostics wrong repo:typescript-language-server/typescript-language-server is:issue"
+  },
+  {
+   "repo": "typescript-language-server/typescript-language-server",
+   "number": 844,
+   "title": "Server crashed when asking for textDocument/codeAction",
+   "url": "https://github.com/typescript-language-server/typescript-language-server/issues/844",
+   "state": "closed",
+   "created": "2024-01-06",
+   "comments": 11,
+   "query": "diagnostics wrong repo:typescript-language-server/typescript-language-server is:issue"
+  },
+  {
+   "repo": "microsoft/TypeScript",
+   "number": 50641,
+   "title": "Suggestion isn't included in quick fixes ",
+   "url": "https://github.com/microsoft/TypeScript/issues/50641",
+   "state": "open",
+   "created": "2022-09-05",
+   "comments": 1,
+   "query": "\"quick fix\" in:title repo:microsoft/TypeScript is:issue"
+  },
+  {
+   "repo": "microsoft/TypeScript",
+   "number": 64689,
+   "title": "TS 7 language server: \"Add missing properties\" quick fix not offered",
+   "url": "https://github.com/microsoft/TypeScript/issues/64689",
+   "state": "open",
+   "created": "2026-10-08",
+   "comments": 0,
+   "query": "\"quick fix\" in:title repo:microsoft/TypeScript is:issue"
+  },
+  {
+   "repo": "microsoft/TypeScript",
+   "number": 37782,
+   "title": "'declare method' quick fix for adding a private method",
+   "url": "https://github.com/microsoft/TypeScript/issues/37782",
+   "state": "open",
+   "created": "2020-04-03",
+   "comments": 20,
+   "query": "\"quick fix\" in:title repo:microsoft/TypeScript is:issue"
+  }
+ ],
+ "notes": [],
+ "authenticated": true
+}

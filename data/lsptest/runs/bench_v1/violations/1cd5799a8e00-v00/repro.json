@@ -1,0 +1,197 @@
+{
+ "format": 1,
+ "campaign": "bench_v1",
+ "vid": "1cd5799a8e00-v00",
+ "run_id": "1cd5799a8e00",
+ "oracle": "r4_edits",
+ "server": {
+  "kind": "tsserver",
+  "version": "5.5.4+tsls4.3.3"
+ },
+ "project": {
+  "name": "tsserver-59116",
+  "source": "dir",
+  "ref": "data/lsp_bench/cases/tsserver-59116/project",
+  "commit": "",
+  "language": "typescript"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 120.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "lib.ts",
+    "positions": [
+     [
+      0,
+      17
+     ],
+     [
+      1,
+      22
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      18
+     ],
+     [
+      1,
+      24
+     ]
+    ],
+    "names": [
+     "X",
+     "test"
+    ]
+   },
+   {
+    "path": "main.ts",
+    "positions": [
+     [
+      0,
+      9
+     ],
+     [
+      0,
+      15
+     ],
+     [
+      10,
+      0
+     ],
+     [
+      10,
+      5
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      10
+     ],
+     [
+      0,
+      17
+     ],
+     [
+      10,
+      1
+     ],
+     [
+      10,
+      8
+     ]
+    ],
+    "names": [
+     "X",
+     "from",
+     "X",
+     "foobar"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "diagnostics",
+  "path": "main.ts",
+  "line": 10,
+  "character": 2,
+  "extra": "quickfix:Add missing function declaration 'foobar'"
+ },
+ "ops": [],
+ "case": {
+  "action_kind": "quickfix",
+  "check": "persist",
+  "diag": {
+   "code": 2339,
+   "message": "Property 'foobar' does not exist on type 'typeof X'.",
+   "range": {
+    "end": {
+     "character": 8,
+     "line": 10
+    },
+    "start": {
+     "character": 2,
+     "line": 10
+    }
+   },
+   "severity": 1
+  },
+  "kind": "quickfix",
+  "mapped": [
+   [
+    10,
+    2
+   ],
+   [
+    10,
+    8
+   ],
+   false
+  ],
+  "path": "main.ts",
+  "title": "Add missing function declaration 'foobar'",
+  "via": "command"
+ },
+ "shape": "diagnostics:extra:2339",
+ "signature": "tsserver|r4_edits|diagnostics:extra:2339",
+ "expected": [],
+ "actual": [
+  [
+   10,
+   2,
+   10,
+   8,
+   1,
+   "2339",
+   "typescript",
+   "Property 'foobar' does not exist on type 'typeof X'."
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "quick fix \"Add missing function declaration 'foobar'\" for 2339 at main.ts:11:3 leaves the diagnostic at the mapped range [[10, 2], [10, 8], False]; confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 65s",
+ "violation": {
+  "oracle": "r4_edits",
+  "server": "tsserver-5.5.4+tsls4.3.3",
+  "project": "tsserver-59116",
+  "key": {
+   "method": "diagnostics",
+   "path": "main.ts",
+   "line": 10,
+   "character": 2,
+   "extra": "quickfix:Add missing function declaration 'foobar'"
+  },
+  "expected": [],
+  "actual": [
+   [
+    10,
+    2,
+    10,
+    8,
+    1,
+    "2339",
+    "typescript",
+    "Property 'foobar' does not exist on type 'typeof X'."
+   ]
+  ],
+  "ops": [],
+  "detail": "{\"case\": {\"action_kind\": \"quickfix\", \"check\": \"persist\", \"diag\": {\"code\": 2339, \"message\": \"Property 'foobar' does not exist on type 'typeof X'.\", \"range\": {\"end\": {\"character\": 8, \"line\": 10}, \"start\": {\"character\": 2, \"line\": 10}}, \"severity\": 1}, \"kind\": \"quickfix\", \"mapped\": [[10, 2], [10, 8], false], \"path\": \"main.ts\", \"title\": \"Add missing function declaration 'foobar'\", \"via\": \"command\"}, \"note\": \"quick fix \\\"Add missing function declaration 'foobar'\\\" for 2339 at main.ts:11:3 leaves the diagnostic at the mapped range [[10, 2], [10, 8], False]; confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 65s\", \"shape\": \"diagnostics:extra:2339\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "tsserver|r4_edits|diagnostics:extra:2339",
+  "run_id": "1cd5799a8e00"
+ },
+ "replay_logs": [
+  "logs/tsserver-5.5.4+tsls4.3.3-1cd5799a8e00-r4-replay-baseline-20260924-211006-bb38c3.jsonl.gz",
+  "logs/tsserver-5.5.4+tsls4.3.3-1cd5799a8e00-r4-replay-case-20260924-210956-4957c2.jsonl.gz",
+  "logs/tsserver-5.5.4+tsls4.3.3-1cd5799a8e00-r4-replay-control-20260924-211012-e55c3f.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

@@ -1,0 +1,9 @@
+2026-11-18 12:45:53,205 INFO campaign_run run 09497d6d86a9: r4_edits on ts6 6.0.3, solidjs/solid@4b62bc29e04b seed 2 settled, targets ['examples/rendering/shared/src/router.tsx', 'packages/signals/tests/latest-plain-write-purity.test.ts', 'packages/web/test/server/server-functions-decoder-rejection-ownership.spec.tsx']
+2026-11-18 12:55:07,364 INFO campaign_run run 09497d6d86a9: 3 candidate(s) in 554s; confirming
+2026-11-18 12:57:14,886 INFO flake replay 1/3 of ts6|r4_edits|diagnostics:extra:2558,2604: settled=True control_stable=True reproduced=True (127.5s)
+2026-11-18 13:00:27,478 INFO flake replay 2/3 of ts6|r4_edits|diagnostics:extra:2558,2604: settled=True control_stable=True reproduced=True (192.6s)
+2026-11-18 13:03:42,505 INFO flake replay 3/3 of ts6|r4_edits|diagnostics:extra:2558,2604: settled=True control_stable=True reproduced=True (195.0s)
+2026-11-18 13:05:50,728 INFO flake replay 1/3 of ts6|r4_edits|diagnostics:extra:2604: settled=True control_stable=True reproduced=True (128.2s)
+2026-11-18 13:09:03,562 INFO flake replay 2/3 of ts6|r4_edits|diagnostics:extra:2604: settled=True control_stable=True reproduced=True (192.8s)
+2026-11-18 13:11:44,466 INFO flake replay 3/3 of ts6|r4_edits|diagnostics:extra:2604: settled=True control_stable=True reproduced=True (160.9s)
+2026-11-18 13:11:44,479 INFO campaign_run run 09497d6d86a9 finished: ok, 2 confirmed of 3 candidate(s), 1551s

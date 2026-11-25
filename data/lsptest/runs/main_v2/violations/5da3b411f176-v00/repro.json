@@ -1,0 +1,697 @@
+{
+ "format": 1,
+ "campaign": "main_v2",
+ "vid": "5da3b411f176-v00",
+ "run_id": "5da3b411f176",
+ "oracle": "r4_edits",
+ "server": {
+  "kind": "ts6",
+  "version": "6.0.3"
+ },
+ "project": {
+  "name": "Gitlawb/openclaude@5cd11336caea",
+  "source": "corpus",
+  "ref": "temp/corpus/Gitlawb__openclaude@5cd11336caea",
+  "commit": "5cd11336caeaf2023ca1e02e5975c761cfc585fe",
+  "language": "typescript"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "src/context/repoMap/repoMap.test.ts",
+    "positions": [
+     [
+      27,
+      22
+     ],
+     [
+      57,
+      20
+     ],
+     [
+      199,
+      4
+     ],
+     [
+      260,
+      14
+     ],
+     [
+      273,
+      7
+     ],
+     [
+      382,
+      4
+     ],
+     [
+      409,
+      34
+     ],
+     [
+      495,
+      45
+     ],
+     [
+      725,
+      42
+     ],
+     [
+      741,
+      11
+     ],
+     [
+      808,
+      12
+     ],
+     [
+      809,
+      10
+     ]
+    ],
+    "ends": [
+     [
+      27,
+      35
+     ],
+     [
+      57,
+      36
+     ],
+     [
+      199,
+      6
+     ],
+     [
+      260,
+      16
+     ],
+     [
+      273,
+      10
+     ],
+     [
+      382,
+      8
+     ],
+     [
+      409,
+      35
+     ],
+     [
+      495,
+      47
+     ],
+     [
+      725,
+      44
+     ],
+     [
+      741,
+      13
+     ],
+     [
+      808,
+      19
+     ],
+     [
+      809,
+      12
+     ]
+    ],
+    "names": [
+     "clearSymbolExtractorCaches",
+     "setClaudeConfigHomeDirForTesting",
+     "test",
+     "tags",
+     "expect",
+     "describe",
+     "l",
+     "map",
+     "cwd",
+     "env",
+     "writeFileSync",
+     "join"
+    ]
+   },
+   {
+    "path": "src/utils/envFile.ts",
+    "positions": [
+     [
+      189,
+      30
+     ],
+     [
+      193,
+      29
+     ],
+     [
+      214,
+      15
+     ],
+     [
+      252,
+      35
+     ],
+     [
+      260,
+      21
+     ],
+     [
+      291,
+      14
+     ],
+     [
+      293,
+      12
+     ],
+     [
+      307,
+      21
+     ],
+     [
+      318,
+      5
+     ],
+     [
+      319,
+      6
+     ],
+     [
+      341,
+      25
+     ],
+     [
+      359,
+      21
+     ]
+    ],
+    "ends": [
+     [
+      189,
+      32
+     ],
+     [
+      193,
+      31
+     ],
+     [
+      214,
+      23
+     ],
+     [
+      252,
+      38
+     ],
+     [
+      260,
+      26
+     ],
+     [
+      291,
+      18
+     ],
+     [
+      293,
+      15
+     ],
+     [
+      307,
+      25
+     ],
+     [
+      318,
+      8
+     ],
+     [
+      319,
+      11
+     ],
+     [
+      341,
+      30
+     ],
+     [
+      359,
+      27
+     ]
+    ],
+    "names": [
+     "raw",
+     "raw",
+     "closingQuoteIdx",
+     "length",
+     "expression",
+     "nextArg",
+     "paths",
+     "filePath",
+     "values",
+     "targetEnv",
+     "ProcessEnv",
+     "loadEnvFile"
+    ]
+   },
+   {
+    "path": "src/utils/model/modelOptions.ts",
+    "positions": [
+     [
+      7,
+      4
+     ],
+     [
+      18,
+      19
+     ],
+     [
+      102,
+      13
+     ],
+     [
+      254,
+      39
+     ],
+     [
+      276,
+      71
+     ],
+     [
+      369,
+      6
+     ],
+     [
+      450,
+      8
+     ],
+     [
+      826,
+      13
+     ],
+     [
+      948,
+      20
+     ],
+     [
+      953,
+      21
+     ],
+     [
+      984,
+      28
+     ],
+     [
+      1031,
+      8
+     ]
+    ],
+    "ends": [
+     [
+      7,
+      6
+     ],
+     [
+      18,
+      30
+     ],
+     [
+      102,
+      15
+     ],
+     [
+      254,
+      42
+     ],
+     [
+      276,
+      82
+     ],
+     [
+      369,
+      9
+     ],
+     [
+      450,
+      11
+     ],
+     [
+      826,
+      19
+     ],
+     [
+      948,
+      21
+     ],
+     [
+      953,
+      24
+     ],
+     [
+      984,
+      32
+     ],
+     [
+      1031,
+      11
+     ]
+    ],
+    "names": [
+     "from",
+     "getModelPricingString",
+     "tail",
+     "opus48",
+     "getOpus46PricingSuffix",
+     "value",
+     "value",
+     "currentName",
+     "of",
+     "count",
+     "apiName",
+     "alias"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "diagnostics",
+  "path": "src/context/repoMap/repoMap.test.ts",
+  "line": 47,
+  "character": 37,
+  "extra": "M1:quickfix-errors:Change spelling to 'setClaudeConfigHomeDirForTesting'"
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "src/context/repoMap/repoMap.test.ts"
+  },
+  {
+   "kind": "change",
+   "path": "src/context/repoMap/repoMap.test.ts",
+   "start": [
+    8,
+    2
+   ],
+   "end": [
+    9,
+    2
+   ]
+  },
+  {
+   "kind": "change",
+   "path": "src/context/repoMap/repoMap.test.ts",
+   "start": [
+    47,
+    37
+   ],
+   "end": [
+    47,
+    67
+   ],
+   "text": "setClaudeConfigHomeDir"
+  }
+ ],
+ "case": {
+  "action_kind": "quickfix",
+  "base_errors": 2,
+  "check": "errors",
+  "diag": {
+   "code": 2552,
+   "message": "Cannot find name 'getClaudeConfigHomeDirOverrideForTesting'. Did you mean 'setClaudeConfigHomeDirForTesting'?",
+   "range": {
+    "end": {
+     "character": 77,
+     "line": 47
+    },
+    "start": {
+     "character": 37,
+     "line": 47
+    }
+   },
+   "severity": 1
+  },
+  "fix_introduced_errors": [
+   {
+    "code": 2554,
+    "message": "Expected 1 arguments, but got 0.",
+    "path": "src/context/repoMap/repoMap.test.ts",
+    "range": {
+     "end": {
+      "character": 69,
+      "line": 47
+     },
+     "start": {
+      "character": 37,
+      "line": 47
+     }
+    },
+    "severity": 1
+   },
+   {
+    "code": 2345,
+    "message": "Argument of type 'void' is not assignable to parameter of type 'string | undefined'.",
+    "path": "src/context/repoMap/repoMap.test.ts",
+    "range": {
+     "end": {
+      "character": 63,
+      "line": 56
+     },
+     "start": {
+      "character": 37,
+      "line": 56
+     }
+    },
+    "severity": 1
+   }
+  ],
+  "fix_ops": [
+   {
+    "end": [
+     47,
+     67
+    ],
+    "kind": "change",
+    "path": "src/context/repoMap/repoMap.test.ts",
+    "start": [
+     47,
+     37
+    ],
+    "text": "setClaudeConfigHomeDir"
+   }
+  ],
+  "kind": "mutation",
+  "mutation": {
+   "end": [
+    9,
+    2
+   ],
+   "id": "M1",
+   "offsets": [
+    340,
+    384
+   ],
+   "sha": "c56369aa99477b3f",
+   "start": [
+    8,
+    2
+   ],
+   "text": "",
+   "what": "remove 'getClaudeConfigHomeDirOverrideForTesting' from an import"
+  },
+  "n_fix_ops": 1,
+  "path": "src/context/repoMap/repoMap.test.ts",
+  "post_errors": 4,
+  "title": "Change spelling to 'setClaudeConfigHomeDirForTesting'",
+  "via": "edit"
+ },
+ "shape": "diagnostics:extra:2345,2554",
+ "signature": "ts6|r4_edits|diagnostics:extra:2345,2554",
+ "expected": [
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "2307",
+   "typescript",
+   "Cannot find module 'bun:test' or its corresponding type declarations."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "2339",
+   "typescript",
+   "Property 'dir' does not exist on type 'ImportMeta'."
+  ]
+ ],
+ "actual": [
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "2307",
+   "typescript",
+   "Cannot find module 'bun:test' or its corresponding type declarations."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "2339",
+   "typescript",
+   "Property 'dir' does not exist on type 'ImportMeta'."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "2345",
+   "typescript",
+   "Argument of type 'void' is not assignable to parameter of type 'string | undefined'."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "2554",
+   "typescript",
+   "Expected 1 arguments, but got 0."
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "quick fix \"Change spelling to 'setClaudeConfigHomeDirForTesting'\" for 2552 at src/context/repoMap/repoMap.test.ts:48:38 raises the error count in the edited files from 2 to 4 (seeded by M1: remove 'getClaudeConfigHomeDirOverrideForTesting' from an import; errors before the mutation 2, after the fix 4); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 421s",
+ "violation": {
+  "oracle": "r4_edits",
+  "server": "ts6-6.0.3",
+  "project": "Gitlawb/openclaude@5cd11336caea",
+  "key": {
+   "method": "diagnostics",
+   "path": "src/context/repoMap/repoMap.test.ts",
+   "line": 47,
+   "character": 37,
+   "extra": "M1:quickfix-errors:Change spelling to 'setClaudeConfigHomeDirForTesting'"
+  },
+  "expected": [
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2307",
+    "typescript",
+    "Cannot find module 'bun:test' or its corresponding type declarations."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2339",
+    "typescript",
+    "Property 'dir' does not exist on type 'ImportMeta'."
+   ]
+  ],
+  "actual": [
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2307",
+    "typescript",
+    "Cannot find module 'bun:test' or its corresponding type declarations."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2339",
+    "typescript",
+    "Property 'dir' does not exist on type 'ImportMeta'."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2345",
+    "typescript",
+    "Argument of type 'void' is not assignable to parameter of type 'string | undefined'."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2554",
+    "typescript",
+    "Expected 1 arguments, but got 0."
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "src/context/repoMap/repoMap.test.ts"
+   },
+   {
+    "kind": "change",
+    "path": "src/context/repoMap/repoMap.test.ts",
+    "start": [
+     8,
+     2
+    ],
+    "end": [
+     9,
+     2
+    ]
+   },
+   {
+    "kind": "change",
+    "path": "src/context/repoMap/repoMap.test.ts",
+    "start": [
+     47,
+     37
+    ],
+    "end": [
+     47,
+     67
+    ],
+    "text": "setClaudeConfigHomeDir"
+   }
+  ],
+  "detail": "{\"case\": {\"action_kind\": \"quickfix\", \"base_errors\": 2, \"check\": \"errors\", \"diag\": {\"code\": 2552, \"message\": \"Cannot find name 'getClaudeConfigHomeDirOverrideForTesting'. Did you mean 'setClaudeConfigHomeDirForTesting'?\", \"range\": {\"end\": {\"character\": 77, \"line\": 47}, \"start\": {\"character\": 37, \"line\": 47}}, \"severity\": 1}, \"fix_introduced_errors\": [{\"code\": 2554, \"message\": \"Expected 1 arguments, but got 0.\", \"path\": \"src/context/repoMap/repoMap.test.ts\", \"range\": {\"end\": {\"character\": 69, \"line\": 47}, \"start\": {\"character\": 37, \"line\": 47}}, \"severity\": 1}, {\"code\": 2345, \"message\": \"Argument of type 'void' is not assignable to parameter of type 'string | undefined'.\", \"path\": \"src/context/repoMap/repoMap.test.ts\", \"range\": {\"end\": {\"character\": 63, \"line\": 56}, \"start\": {\"character\": 37, \"line\": 56}}, \"severity\": 1}], \"fix_ops\": [{\"end\": [47, 67], \"kind\": \"change\", \"path\": \"src/context/repoMap/repoMap.test.ts\", \"start\": [47, 37], \"text\": \"setClaudeConfigHomeDir\"}], \"kind\": \"mutation\", \"mutation\": {\"end\": [9, 2], \"id\": \"M1\", \"offsets\": [340, 384], \"sha\": \"c56369aa99477b3f\", \"start\": [8, 2], \"text\": \"\", \"what\": \"remove 'getClaudeConfigHomeDirOverrideForTesting' from an import\"}, \"n_fix_ops\": 1, \"path\": \"src/context/repoMap/repoMap.test.ts\", \"post_errors\": 4, \"title\": \"Change spelling to 'setClaudeConfigHomeDirForTesting'\", \"via\": \"edit\"}, \"note\": \"quick fix \\\"Change spelling to 'setClaudeConfigHomeDirForTesting'\\\" for 2552 at src/context/repoMap/repoMap.test.ts:48:38 raises the error count in the edited files from 2 to 4 (seeded by M1: remove 'getClaudeConfigHomeDirOverrideForTesting' from an import; errors before the mutation 2, after the fix 4); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 421s\", \"shape\": \"diagnostics:extra:2345,2554\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "ts6|r4_edits|diagnostics:extra:2345,2554",
+  "run_id": "5da3b411f176"
+ },
+ "replay_logs": [
+  "logs/ts6-6.0.3-5da3b411f176-r4-replay-baseline-20261118-161748-224f19.jsonl.gz",
+  "logs/ts6-6.0.3-5da3b411f176-r4-replay-case-20261118-161659-a492aa.jsonl.gz",
+  "logs/ts6-6.0.3-5da3b411f176-r4-replay-control-20261118-161833-9c3978.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

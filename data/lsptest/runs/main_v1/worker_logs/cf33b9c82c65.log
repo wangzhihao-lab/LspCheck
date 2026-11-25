@@ -1,0 +1,3 @@
+2026-09-23 18:23:03,757 INFO campaign_run run cf33b9c82c65: r5_transforms on ts6 6.0.3, vercel/hyper@30ec0a2a91de seed 1 settled, targets ['app/utils/renderer-utils.ts', 'lib/index.tsx', 'lib/reducers/index.ts']
+2026-09-23 18:42:47,014 INFO campaign_run run cf33b9c82c65: 0 candidate(s) in 1184s; confirming
+2026-09-23 18:42:47,015 INFO campaign_run run cf33b9c82c65 finished: ok, 0 confirmed of 0 candidate(s), 1184s

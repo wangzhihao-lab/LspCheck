@@ -1,0 +1,70 @@
+{
+ "schema": 1,
+ "id": "tsserver-51920",
+ "meta": {
+  "server": "tsserver",
+  "kind": "tsserver",
+  "number": 51920,
+  "url": "https://github.com/microsoft/TypeScript/issues/51920",
+  "title": "\"Add missing members\" quick fixes incorrectly add TypeScript types in JavaScript files",
+  "oracle_class": "R4",
+  "subtype": "quickfix",
+  "fix_ref": "microsoft/TypeScript#51922 (fix(51920): skip TypeScript types in js files), 645b3ddb06, 2022-12-16; git tag --contains: first in v5.0-beta / v5.0.2",
+  "fix_shas": [
+   "645b3ddb068a5da66f8bcd4a907c192dc5b28391"
+  ],
+  "pre_version": "4.9.5",
+  "post_version": "5.0.2",
+  "pre_build": "4.9.5+tsls3.3.0",
+  "post_build": "5.0.2+tsls3.3.0",
+  "wrapper": "typescript-language-server@3.3.0",
+  "build_notes": "npm typescript@4.9.5 (2023-01-30) and typescript@5.0.2 (2023-03-16), both behind typescript-language-server@3.3.0 (the latest wrapper release before 5.0.2), started with the pinned tsserver.js; the reported TypeScript version is checked on every session. 4.9.5 is on the 4.9 branch and does not contain the fix.",
+  "candidate_rank": 33,
+  "effort_minutes": 5,
+  "notes": "The first example of the issue (add missing properties on a JSDoc-typed object); the decorator example is not used. Type annotations in a .js file are reported by tsserver as errors (TS8010), not as parse errors of the syntax classifier, hence edit_leaves_diagnostic."
+ },
+ "language": "javascript",
+ "settings": {},
+ "settings_note": "The issue names no settings; the file has // @ts-check; no jsconfig.json, so tsserver uses an inferred project.",
+ "session": {
+  "settle_timeout_s": 120
+ },
+ "files": [
+  {
+   "path": "index.js",
+   "provenance": "issue",
+   "source": "issue body, first js code block ('In a JavaScript file')",
+   "note": "the file name is not given in the issue"
+  }
+ ],
+ "repro": {
+  "attempt": 1,
+  "timing": "settled",
+  "steps": "Open index.js: 'export const obj = {}' is reported (TS2741, property f missing for the @type of obj). Trigger the quick fix 'Add missing properties' on obj. Reported: the generated function uses TypeScript type annotations ('function (x: string): number'), which are errors in a JavaScript file. Probe: after the fix, a fresh session on the edited file must neither report the targeted TS2741 nor a new error.",
+  "ops": [
+   {
+    "kind": "open",
+    "path": "index.js"
+   }
+  ],
+  "probe": {
+   "type": "edit_leaves_diagnostic",
+   "params": {
+    "edit": {
+     "via": "code_action",
+     "path": "index.js",
+     "diagnostic": {
+      "code": "2741"
+     },
+     "kind": "quickfix",
+     "title_re": "(?i)add missing properties",
+     "missing": "invalid"
+    },
+    "target": {
+     "code": "2741"
+    }
+   }
+  }
+ },
+ "attempts": []
+}

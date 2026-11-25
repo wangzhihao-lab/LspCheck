@@ -1,0 +1,3 @@
+2026-09-24 22:28:36,518 INFO campaign_run run 7d04a9722992: r1_history on gopls v0.12.0, gopls-57480 seed 1 race0, targets ['p_test.go']
+2026-09-24 22:29:48,859 INFO campaign_run run 7d04a9722992: 0 candidate(s) in 72s; confirming
+2026-09-24 22:29:48,860 INFO campaign_run run 7d04a9722992 finished: ok, 0 confirmed of 0 candidate(s), 72s

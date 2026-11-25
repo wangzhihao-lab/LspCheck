@@ -1,0 +1,3 @@
+2026-11-18 06:00:35,297 INFO campaign_run run 3bf483649e41: r1_history on rust-analyzer 2026-09-21, dandavison/delta@5ddd7fa66ee9 seed 1 settled, targets ['src/delta.rs', 'src/edits.rs', 'src/utils/regex_replacement.rs']
+2026-11-18 06:05:52,289 INFO campaign_run run 3bf483649e41: 0 candidate(s) in 317s; confirming
+2026-11-18 06:05:52,289 INFO campaign_run run 3bf483649e41 finished: ok, 0 confirmed of 0 candidate(s), 317s

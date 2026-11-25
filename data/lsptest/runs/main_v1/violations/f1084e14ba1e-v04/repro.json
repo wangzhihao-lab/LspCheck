@@ -1,0 +1,540 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "f1084e14ba1e-v04",
+ "run_id": "f1084e14ba1e",
+ "oracle": "r6_crossimpl",
+ "server": {
+  "kind": "ts7",
+  "version": "7.0.2"
+ },
+ "project": {
+  "name": "react-hook-form/react-hook-form@5fd9ef65290b",
+  "source": "corpus",
+  "ref": "temp/corpus/react-hook-form__react-hook-form@5fd9ef65290b",
+  "commit": "5fd9ef65290bef2ccaa7ac96dc8d5d55478b5410",
+  "language": "typescript"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "app/src/formState.tsx",
+    "positions": [
+     [
+      1,
+      12
+     ],
+     [
+      6,
+      10
+     ],
+     [
+      13,
+      11
+     ],
+     [
+      23,
+      8
+     ],
+     [
+      33,
+      10
+     ],
+     [
+      44,
+      7
+     ],
+     [
+      66,
+      26
+     ],
+     [
+      70,
+      28
+     ],
+     [
+      70,
+      36
+     ],
+     [
+      76,
+      34
+     ],
+     [
+      79,
+      15
+     ],
+     [
+      81,
+      53
+     ]
+    ],
+    "ends": [
+     [
+      1,
+      16
+     ],
+     [
+      6,
+      15
+     ],
+     [
+      13,
+      17
+     ],
+     [
+      23,
+      13
+     ],
+     [
+      33,
+      14
+     ],
+     [
+      44,
+      9
+     ],
+     [
+      66,
+      28
+     ],
+     [
+      70,
+      31
+     ],
+     [
+      70,
+      39
+     ],
+     [
+      76,
+      38
+     ],
+     [
+      79,
+      17
+     ],
+     [
+      81,
+      54
+     ]
+    ],
+    "names": [
+     "useForm",
+     "FormState",
+     "isSubmitted",
+     "firstName",
+     "lastName",
+     "form",
+     "keys",
+     "Select",
+     "option",
+     "register",
+     "type",
+     "id"
+    ]
+   },
+   {
+    "path": "src/__tests__/utils/objectHasFunction.test.ts",
+    "positions": [
+     [
+      0,
+      9
+     ],
+     [
+      0,
+      14
+     ],
+     [
+      1,
+      15
+     ],
+     [
+      3,
+      4
+     ],
+     [
+      4,
+      3
+     ],
+     [
+      5,
+      7
+     ],
+     [
+      5,
+      19
+     ],
+     [
+      5,
+      38
+     ],
+     [
+      10,
+      10
+     ],
+     [
+      12,
+      7
+     ],
+     [
+      14,
+      16
+     ],
+     [
+      16,
+      11
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      11
+     ],
+     [
+      0,
+      16
+     ],
+     [
+      1,
+      24
+     ],
+     [
+      3,
+      8
+     ],
+     [
+      4,
+      4
+     ],
+     [
+      5,
+      10
+     ],
+     [
+      5,
+      28
+     ],
+     [
+      5,
+      43
+     ],
+     [
+      10,
+      15
+     ],
+     [
+      12,
+      10
+     ],
+     [
+      14,
+      18
+     ],
+     [
+      16,
+      16
+     ]
+    ],
+    "names": [
+     "noop",
+     "from",
+     "objectHasFunction",
+     "describe",
+     "it",
+     "expect",
+     "objectHasFunction",
+     "toBeFalsy",
+     "toBeFalsy",
+     "expect",
+     "noop",
+     "toBeTruthy"
+    ]
+   },
+   {
+    "path": "src/types/fields.ts",
+    "positions": [
+     [
+      1,
+      21
+     ],
+     [
+      3,
+      20
+     ],
+     [
+      5,
+      28
+     ],
+     [
+      7,
+      26
+     ],
+     [
+      12,
+      14
+     ],
+     [
+      17,
+      7
+     ],
+     [
+      39,
+      10
+     ],
+     [
+      44,
+      3
+     ],
+     [
+      45,
+      5
+     ],
+     [
+      48,
+      6
+     ],
+     [
+      50,
+      13
+     ],
+     [
+      54,
+      4
+     ]
+    ],
+    "ends": [
+     [
+      1,
+      29
+     ],
+     [
+      3,
+      29
+     ],
+     [
+      5,
+      34
+     ],
+     [
+      7,
+      32
+     ],
+     [
+      12,
+      19
+     ],
+     [
+      17,
+      11
+     ],
+     [
+      39,
+      17
+     ],
+     [
+      44,
+      4
+     ],
+     [
+      45,
+      7
+     ],
+     [
+      48,
+      9
+     ],
+     [
+      50,
+      21
+     ],
+     [
+      54,
+      6
+     ]
+    ],
+    "names": [
+     "RegisterOptions",
+     "InternalFieldName",
+     "TFieldValues",
+     "TFieldValues",
+     "FieldName",
+     "options",
+     "CustomElement",
+     "_f",
+     "ref",
+     "mount",
+     "RegisterOptions",
+     "key"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "diagnostics",
+  "path": "src/__tests__/utils/objectHasFunction.test.ts",
+  "line": -1,
+  "character": -1,
+  "extra": ""
+ },
+ "ops": [],
+ "case": {
+  "intended": [],
+  "intended_source": "4519ec0a93607319a96f4feb967aa06a251ccc816544e2fed5c985c1d45dc11a",
+  "method": "diagnostics",
+  "only_reference": [
+   "[12, 4, 12, 10, 0, \"2304\", \"\", \"\"]",
+   "[3, 0, 3, 8, 0, \"2593\", \"\", \"\"]",
+   "[4, 2, 4, 4, 0, \"2593\", \"\", \"\"]",
+   "[5, 4, 5, 10, 0, \"2304\", \"\", \"\"]",
+   "[6, 4, 6, 10, 0, \"2304\", \"\", \"\"]"
+  ],
+  "only_test": [],
+  "reference": {
+   "kind": "ts6",
+   "version": "6.0.3"
+  }
+ },
+ "shape": "diagnostics:missing:2304,2593",
+ "signature": "ts7|r6_crossimpl|diagnostics:missing:2304,2593",
+ "expected": [
+  [
+   12,
+   4,
+   12,
+   10,
+   0,
+   "2304",
+   "",
+   ""
+  ],
+  [
+   3,
+   0,
+   3,
+   8,
+   0,
+   "2593",
+   "",
+   ""
+  ],
+  [
+   4,
+   2,
+   4,
+   4,
+   0,
+   "2593",
+   "",
+   ""
+  ],
+  [
+   5,
+   4,
+   5,
+   10,
+   0,
+   "2304",
+   "",
+   ""
+  ],
+  [
+   6,
+   4,
+   6,
+   10,
+   0,
+   "2304",
+   "",
+   ""
+  ]
+ ],
+ "actual": [],
+ "reproduced": "3/3",
+ "note": "ts7-7.0.2 and ts6-6.0.3 differ on diagnostics at src/__tests__/utils/objectHasFunction.test.ts:0:0; no documented intended difference matches; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 267s",
+ "violation": {
+  "oracle": "r6_crossimpl",
+  "server": "ts7-7.0.2",
+  "project": "react-hook-form/react-hook-form@5fd9ef65290b",
+  "key": {
+   "method": "diagnostics",
+   "path": "src/__tests__/utils/objectHasFunction.test.ts",
+   "line": -1,
+   "character": -1,
+   "extra": ""
+  },
+  "expected": [
+   [
+    12,
+    4,
+    12,
+    10,
+    0,
+    "2304",
+    "",
+    ""
+   ],
+   [
+    3,
+    0,
+    3,
+    8,
+    0,
+    "2593",
+    "",
+    ""
+   ],
+   [
+    4,
+    2,
+    4,
+    4,
+    0,
+    "2593",
+    "",
+    ""
+   ],
+   [
+    5,
+    4,
+    5,
+    10,
+    0,
+    "2304",
+    "",
+    ""
+   ],
+   [
+    6,
+    4,
+    6,
+    10,
+    0,
+    "2304",
+    "",
+    ""
+   ]
+  ],
+  "actual": [],
+  "ops": [],
+  "detail": "{\"case\": {\"intended\": [], \"intended_source\": \"4519ec0a93607319a96f4feb967aa06a251ccc816544e2fed5c985c1d45dc11a\", \"method\": \"diagnostics\", \"only_reference\": [\"[12, 4, 12, 10, 0, \\\"2304\\\", \\\"\\\", \\\"\\\"]\", \"[3, 0, 3, 8, 0, \\\"2593\\\", \\\"\\\", \\\"\\\"]\", \"[4, 2, 4, 4, 0, \\\"2593\\\", \\\"\\\", \\\"\\\"]\", \"[5, 4, 5, 10, 0, \\\"2304\\\", \\\"\\\", \\\"\\\"]\", \"[6, 4, 6, 10, 0, \\\"2304\\\", \\\"\\\", \\\"\\\"]\"], \"only_test\": [], \"reference\": {\"kind\": \"ts6\", \"version\": \"6.0.3\"}}, \"note\": \"ts7-7.0.2 and ts6-6.0.3 differ on diagnostics at src/__tests__/utils/objectHasFunction.test.ts:0:0; no documented intended difference matches; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 267s\", \"shape\": \"diagnostics:missing:2304,2593\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "ts7|r6_crossimpl|diagnostics:missing:2304,2593",
+  "run_id": "f1084e14ba1e"
+ },
+ "replay_logs": [
+  "logs/ts6-6.0.3-f1084e14ba1e-ref-r6-replay-ref-baseline-20260923-212133-3fcd99.jsonl.gz",
+  "logs/ts6-6.0.3-f1084e14ba1e-ref-r6-replay-ref-control-20260923-212149-43fef5.jsonl.gz",
+  "logs/ts7-7.0.2-f1084e14ba1e-r6-replay-test-baseline-20260923-212047-f16496.jsonl.gz",
+  "logs/ts7-7.0.2-f1084e14ba1e-r6-replay-test-control-20260923-212115-1fdd0d.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

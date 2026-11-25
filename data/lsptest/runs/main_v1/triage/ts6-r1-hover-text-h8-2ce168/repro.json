@@ -1,0 +1,263 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "3f26f1994ad8-v00",
+ "run_id": "3f26f1994ad8",
+ "oracle": "r1_history",
+ "server": {
+  "kind": "ts6",
+  "version": "6.0.3"
+ },
+ "project": {
+  "name": "upstash/context7@6477e43e31d2",
+  "source": "corpus",
+  "ref": "temp/corpus/upstash__context7@6477e43e31d2",
+  "commit": "6477e43e31d27a5c1bc044506e1c14de15f8a110",
+  "language": "typescript"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "packages/cli/src/__tests__/command-auth-wiring.test.ts",
+    "positions": [],
+    "ends": [],
+    "names": []
+   },
+   {
+    "path": "packages/sdk/src/client.ts",
+    "positions": [],
+    "ends": [],
+    "names": []
+   },
+   {
+    "path": "packages/sdk/src/commands/command.ts",
+    "positions": [
+     [
+      13,
+      30
+     ]
+    ],
+    "ends": [],
+    "names": [
+     ""
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "hover",
+  "path": "packages/sdk/src/commands/command.ts",
+  "line": 13,
+  "character": 30,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "packages/sdk/src/commands/command.ts"
+  }
+ ],
+ "case": {
+  "chain_step": 0,
+  "families": [],
+  "family": "H8",
+  "history_index": 2,
+  "history_seed": 1003,
+  "mode": "fresh",
+  "note": "after packages/sdk/src/commands/command.ts: replace 'Context7Request' by 'zz' on line 7 and its inverse, 9 requests in a shuffled order: definition@packages/cli/src/__tests__/command-auth-wiring.test.ts:38:4, signatureHelp@packages/cli/src/__tests__/command-auth-wiring.test.ts:18:66, definition@packages/sdk/src/client.ts:188:74, references@packages/sdk/src/client.ts:12:19, definition@packages/sdk/src/client.ts:83:8, ...",
+  "seed": 1,
+  "timing": "settled"
+ },
+ "shape": "hover:text",
+ "signature": "ts6|r1_history|hover:text",
+ "expected": [
+  "type CommandRequest = { cache?: CacheSetting | undefined; body?: unknown; method?: \"GET\" | \"POST\" | undefined; query?: Record<string, string | number | boolean | readonly (string | number | boolean)[] | undefined> | undefined; signal?: AbortSignal | undefined; timeout?: number | false | undefined; }",
+  [
+   13,
+   23,
+   13,
+   37
+  ]
+ ],
+ "actual": [
+  "type CommandRequest = { body?: unknown; method?: \"GET\" | \"POST\" | undefined; query?: Record<string, string | number | boolean | readonly (string | number | boolean)[] | undefined> | undefined; signal?: AbortSignal | undefined; timeout?: number | false | undefined; cache?: CacheSetting | undefined; }",
+  [
+   13,
+   23,
+   13,
+   37
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "H8: after packages/sdk/src/commands/command.ts: replace 'Context7Request' by 'zz' on line 7 and its inverse, 9 requests in a shuffled order: definition@packages/cli/src/__tests__/command-auth-wiring.test.; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 297s",
+ "violation": {
+  "oracle": "r1_history",
+  "server": "ts6-6.0.3",
+  "project": "upstash/context7@6477e43e31d2",
+  "key": {
+   "method": "hover",
+   "path": "packages/sdk/src/commands/command.ts",
+   "line": 13,
+   "character": 30,
+   "extra": ""
+  },
+  "expected": [
+   "type CommandRequest = { cache?: CacheSetting | undefined; body?: unknown; method?: \"GET\" | \"POST\" | undefined; query?: Record<string, string | number | boolean | readonly (string | number | boolean)[] | undefined> | undefined; signal?: AbortSignal | undefined; timeout?: number | false | undefined; }",
+   [
+    13,
+    23,
+    13,
+    37
+   ]
+  ],
+  "actual": [
+   "type CommandRequest = { body?: unknown; method?: \"GET\" | \"POST\" | undefined; query?: Record<string, string | number | boolean | readonly (string | number | boolean)[] | undefined> | undefined; signal?: AbortSignal | undefined; timeout?: number | false | undefined; cache?: CacheSetting | undefined; }",
+   [
+    13,
+    23,
+    13,
+    37
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "packages/cli/src/__tests__/command-auth-wiring.test.ts"
+   },
+   {
+    "kind": "open",
+    "path": "packages/sdk/src/client.ts"
+   },
+   {
+    "kind": "open",
+    "path": "packages/sdk/src/commands/command.ts"
+   },
+   {
+    "kind": "change",
+    "path": "packages/sdk/src/commands/command.ts",
+    "start": [
+     7,
+     34
+    ],
+    "end": [
+     7,
+     49
+    ],
+    "text": "zz"
+   },
+   {
+    "kind": "change",
+    "path": "packages/sdk/src/commands/command.ts",
+    "start": [
+     7,
+     34
+    ],
+    "end": [
+     7,
+     36
+    ],
+    "text": "Context7Request"
+   },
+   {
+    "kind": "request",
+    "path": "packages/cli/src/__tests__/command-auth-wiring.test.ts",
+    "start": [
+     38,
+     4
+    ],
+    "text": "definition"
+   },
+   {
+    "kind": "request",
+    "path": "packages/cli/src/__tests__/command-auth-wiring.test.ts",
+    "start": [
+     18,
+     66
+    ],
+    "text": "signatureHelp"
+   },
+   {
+    "kind": "request",
+    "path": "packages/sdk/src/client.ts",
+    "start": [
+     188,
+     74
+    ],
+    "text": "definition"
+   },
+   {
+    "kind": "request",
+    "path": "packages/sdk/src/client.ts",
+    "start": [
+     12,
+     19
+    ],
+    "text": "references"
+   },
+   {
+    "kind": "request",
+    "path": "packages/sdk/src/client.ts",
+    "start": [
+     83,
+     8
+    ],
+    "text": "definition"
+   },
+   {
+    "kind": "request",
+    "path": "packages/sdk/src/client.ts",
+    "start": [
+     179,
+     18
+    ],
+    "text": "references"
+   },
+   {
+    "kind": "request",
+    "path": "packages/cli/src/__tests__/command-auth-wiring.test.ts",
+    "start": [
+     49,
+     10
+    ],
+    "text": "references"
+   },
+   {
+    "kind": "request",
+    "path": "packages/cli/src/__tests__/command-auth-wiring.test.ts",
+    "start": [
+     19,
+     7
+    ],
+    "text": "definition"
+   },
+   {
+    "kind": "request",
+    "path": "packages/sdk/src/commands/command.ts",
+    "start": [
+     22,
+     42
+    ],
+    "text": "documentHighlight"
+   }
+  ],
+  "detail": "{\"case\": {\"chain_step\": 0, \"families\": [], \"family\": \"H8\", \"history_index\": 2, \"history_seed\": 1003, \"mode\": \"fresh\", \"note\": \"after packages/sdk/src/commands/command.ts: replace 'Context7Request' by 'zz' on line 7 and its inverse, 9 requests in a shuffled order: definition@packages/cli/src/__tests__/command-auth-wiring.test.ts:38:4, signatureHelp@packages/cli/src/__tests__/command-auth-wiring.test.ts:18:66, definition@packages/sdk/src/client.ts:188:74, references@packages/sdk/src/client.ts:12:19, definition@packages/sdk/src/client.ts:83:8, ...\", \"seed\": 1, \"timing\": \"settled\"}, \"note\": \"H8: after packages/sdk/src/commands/command.ts: replace 'Context7Request' by 'zz' on line 7 and its inverse, 9 requests in a shuffled order: definition@packages/cli/src/__tests__/command-auth-wiring.test.; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 297s\", \"shape\": \"hover:text\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "ts6|r1_history|hover:text",
+  "run_id": "3f26f1994ad8"
+ },
+ "replay_logs": [
+  "logs/ts6-6.0.3-tr2ce168-replay-baseline-20260925-172520-c9c733.jsonl.gz",
+  "logs/ts6-6.0.3-tr2ce168-replay-control-20260925-172520-48254e.jsonl.gz",
+  "logs/ts6-6.0.3-tr2ce168-replay-history-20260925-172552-9bd9dd.jsonl.gz"
+ ],
+ "project_files": {},
+ "group": "ts6-r1-hover-text-h8-2ce168",
+ "reduced": true
+}

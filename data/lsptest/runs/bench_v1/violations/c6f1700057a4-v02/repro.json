@@ -1,0 +1,297 @@
+{
+ "format": 1,
+ "campaign": "bench_v1",
+ "vid": "c6f1700057a4-v02",
+ "run_id": "c6f1700057a4",
+ "oracle": "r1_history",
+ "server": {
+  "kind": "pyright",
+  "version": "1.1.374"
+ },
+ "project": {
+  "name": "pyright-8133",
+  "source": "dir",
+  "ref": "data/lsp_bench/cases/pyright-8133/project",
+  "commit": "",
+  "language": "python"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 120.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "main.py",
+    "positions": [
+     [
+      0,
+      9
+     ],
+     [
+      1,
+      3
+     ],
+     [
+      1,
+      10
+     ],
+     [
+      2,
+      7
+     ],
+     [
+      3,
+      4
+     ],
+     [
+      3,
+      9
+     ],
+     [
+      3,
+      16
+     ],
+     [
+      3,
+      22
+     ],
+     [
+      3,
+      29
+     ],
+     [
+      3,
+      45
+     ],
+     [
+      3,
+      53
+     ],
+     [
+      3,
+      62
+     ],
+     [
+      3,
+      73
+     ],
+     [
+      3,
+      82
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      12
+     ],
+     [
+      1,
+      6
+     ],
+     [
+      1,
+      13
+     ],
+     [
+      2,
+      9
+     ],
+     [
+      3,
+      5
+     ],
+     [
+      3,
+      11
+     ],
+     [
+      3,
+      19
+     ],
+     [
+      3,
+      25
+     ],
+     [
+      3,
+      33
+     ],
+     [
+      3,
+      50
+     ],
+     [
+      3,
+      56
+     ],
+     [
+      3,
+      67
+     ],
+     [
+      3,
+      79
+     ],
+     [
+      3,
+      84
+     ]
+    ],
+    "names": [
+     "attrs",
+     "attrs",
+     "define",
+     "Foo",
+     "a",
+     "bool",
+     "attrs",
+     "field",
+     "default",
+     "validator",
+     "attrs",
+     "validators",
+     "instance_of",
+     "bool"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "hover",
+  "path": "main.py",
+  "line": 1,
+  "character": 10,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "main.py"
+  },
+  {
+   "kind": "change",
+   "path": "main.py",
+   "start": [
+    0,
+    8
+   ],
+   "end": [
+    0,
+    10
+   ]
+  },
+  {
+   "kind": "close",
+   "path": "main.py"
+  },
+  {
+   "kind": "open",
+   "path": "main.py"
+  }
+ ],
+ "case": {
+  "chain_step": 0,
+  "families": [],
+  "family": "H3",
+  "history_index": 1,
+  "history_seed": 1002,
+  "mode": "fresh",
+  "note": "main.py: unsaved edit (delete 'tt' on line 0), close, reopen",
+  "seed": 1,
+  "timing": "settled"
+ },
+ "shape": "hover:text",
+ "signature": "pyright|r1_history|hover:text",
+ "expected": [
+  "(function) def define( maybe_cls: _C@define, *, these: dict[str, Any] | None = ..., repr: bool = ..., unsafe_hash: bool | None = ..., hash: bool | None = ..., init: bool = ..., slots: bool = ..., frozen: bool = ..., weakref_slot: bool = ..., str: bool = ..., auto_attribs: bool = ..., kw_only: bool = ..., cache_hash: bool = ..., auto_exc: bool = ..., eq: bool | None = ..., order: bool | None = ..., auto_detect: bool = ..., getstate_setstate: bool | None = ..., on_setattr: _OnSetAttrArgType | None = ..., field_transformer: _FieldTransformer | None = ..., match_args: bool = ... ) -> _C@define: ... def define( maybe_cls: None = ..., *, these: dict[str, Any] | None = ..., repr: bool = ..., unsafe_hash: bool | None = ..., hash: bool | None = ..., init: bool = ..., slots: bool = ..., frozen: bool = ..., weakref_slot: bool = ..., str: bool = ..., auto_attribs: bool = ..., kw_only: bool = ..., cache_hash: bool = ..., auto_exc: bool = ..., eq: bool | None = ..., order: bool | None = ..., auto_detect: bool = ..., getstate_setstate: bool | None = ..., on_setattr: _OnSetAttrArgType | None = ..., field_transformer: _FieldTransformer | None = ..., match_args: bool = ... ) -> ((_C@define) -> _C@define): ...",
+  [
+   1,
+   7,
+   1,
+   13
+  ]
+ ],
+ "actual": [
+  "(function) define: Unknown",
+  [
+   1,
+   7,
+   1,
+   13
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "H3: main.py: unsaved edit (delete 'tt' on line 0), close, reopen; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 42s",
+ "violation": {
+  "oracle": "r1_history",
+  "server": "pyright-1.1.374",
+  "project": "pyright-8133",
+  "key": {
+   "method": "hover",
+   "path": "main.py",
+   "line": 1,
+   "character": 10,
+   "extra": ""
+  },
+  "expected": [
+   "(function) def define( maybe_cls: _C@define, *, these: dict[str, Any] | None = ..., repr: bool = ..., unsafe_hash: bool | None = ..., hash: bool | None = ..., init: bool = ..., slots: bool = ..., frozen: bool = ..., weakref_slot: bool = ..., str: bool = ..., auto_attribs: bool = ..., kw_only: bool = ..., cache_hash: bool = ..., auto_exc: bool = ..., eq: bool | None = ..., order: bool | None = ..., auto_detect: bool = ..., getstate_setstate: bool | None = ..., on_setattr: _OnSetAttrArgType | None = ..., field_transformer: _FieldTransformer | None = ..., match_args: bool = ... ) -> _C@define: ... def define( maybe_cls: None = ..., *, these: dict[str, Any] | None = ..., repr: bool = ..., unsafe_hash: bool | None = ..., hash: bool | None = ..., init: bool = ..., slots: bool = ..., frozen: bool = ..., weakref_slot: bool = ..., str: bool = ..., auto_attribs: bool = ..., kw_only: bool = ..., cache_hash: bool = ..., auto_exc: bool = ..., eq: bool | None = ..., order: bool | None = ..., auto_detect: bool = ..., getstate_setstate: bool | None = ..., on_setattr: _OnSetAttrArgType | None = ..., field_transformer: _FieldTransformer | None = ..., match_args: bool = ... ) -> ((_C@define) -> _C@define): ...",
+   [
+    1,
+    7,
+    1,
+    13
+   ]
+  ],
+  "actual": [
+   "(function) define: Unknown",
+   [
+    1,
+    7,
+    1,
+    13
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "main.py"
+   },
+   {
+    "kind": "change",
+    "path": "main.py",
+    "start": [
+     0,
+     8
+    ],
+    "end": [
+     0,
+     10
+    ]
+   },
+   {
+    "kind": "close",
+    "path": "main.py"
+   },
+   {
+    "kind": "open",
+    "path": "main.py"
+   }
+  ],
+  "detail": "{\"case\": {\"chain_step\": 0, \"families\": [], \"family\": \"H3\", \"history_index\": 1, \"history_seed\": 1002, \"mode\": \"fresh\", \"note\": \"main.py: unsaved edit (delete 'tt' on line 0), close, reopen\", \"seed\": 1, \"timing\": \"settled\"}, \"note\": \"H3: main.py: unsaved edit (delete 'tt' on line 0), close, reopen; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 42s\", \"shape\": \"hover:text\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "pyright|r1_history|hover:text",
+  "run_id": "c6f1700057a4"
+ },
+ "replay_logs": [
+  "logs/pyright-1.1.374-c6f1700057a4-replay-baseline-20260924-171958-ed370f.jsonl.gz",
+  "logs/pyright-1.1.374-c6f1700057a4-replay-control-20260924-171958-5a32d1.jsonl.gz",
+  "logs/pyright-1.1.374-c6f1700057a4-replay-history-20260924-172001-1346cc.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

@@ -1,0 +1,641 @@
+{
+ "format": 1,
+ "campaign": "main_v2",
+ "vid": "cfc4a4dd285e-v01",
+ "run_id": "cfc4a4dd285e",
+ "oracle": "r1_history",
+ "server": {
+  "kind": "gopls",
+  "version": "v0.23.0"
+ },
+ "project": {
+  "name": "go-gorm/gorm@b3d3bf219f02",
+  "source": "corpus",
+  "ref": "temp/corpus/go-gorm__gorm@b3d3bf219f02",
+  "commit": "b3d3bf219f0283f8e2e985bac509cb643170f729",
+  "language": "go"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "clause/joins.go",
+    "positions": [
+     [
+      9,
+      5
+     ],
+     [
+      15,
+      16
+     ],
+     [
+      28,
+      37
+     ],
+     [
+      28,
+      74
+     ],
+     [
+      29,
+      44
+     ],
+     [
+      38,
+      7
+     ],
+     [
+      39,
+      3
+     ],
+     [
+      47,
+      10
+     ],
+     [
+      48,
+      25
+     ],
+     [
+      56,
+      7
+     ],
+     [
+      68,
+      6
+     ],
+     [
+      69,
+      8
+     ]
+    ],
+    "ends": [
+     [
+      9,
+      9
+     ],
+     [
+      15,
+      19
+     ],
+     [
+      28,
+      39
+     ],
+     [
+      28,
+      79
+     ],
+     [
+      29,
+      46
+     ],
+     [
+      38,
+      9
+     ],
+     [
+      39,
+      5
+     ],
+     [
+      47,
+      13
+     ],
+     [
+      48,
+      37
+     ],
+     [
+      56,
+      9
+     ],
+     [
+      68,
+      10
+     ],
+     [
+      69,
+      10
+     ]
+    ],
+    "names": [
+     "LeftJoin",
+     "string",
+     "name",
+     "JoinTarget",
+     "name",
+     "Join",
+     "Type",
+     "Table",
+     "JoinNestedRelationNames",
+     "join",
+     "builder",
+     "idx"
+    ]
+   },
+   {
+    "path": "migrator/column_type.go",
+    "positions": [
+     [
+      19,
+      21
+     ],
+     [
+      27,
+      5
+     ],
+     [
+      47,
+      18
+     ],
+     [
+      53,
+      7
+     ],
+     [
+      59,
+      9
+     ],
+     [
+      73,
+      18
+     ],
+     [
+      80,
+      5
+     ],
+     [
+      80,
+      26
+     ],
+     [
+      90,
+      25
+     ],
+     [
+      92,
+      18
+     ],
+     [
+      117,
+      41
+     ],
+     [
+      118,
+      9
+     ]
+    ],
+    "ends": [
+     [
+      19,
+      23
+     ],
+     [
+      27,
+      6
+     ],
+     [
+      47,
+      25
+     ],
+     [
+      53,
+      8
+     ],
+     [
+      59,
+      10
+     ],
+     [
+      73,
+      25
+     ],
+     [
+      80,
+      6
+     ],
+     [
+      80,
+      29
+     ],
+     [
+      90,
+      29
+     ],
+     [
+      92,
+      25
+     ],
+     [
+      117,
+      44
+     ],
+     [
+      118,
+      10
+     ]
+    ],
+    "names": [
+     "sql",
+     "ct",
+     "SQLColumnType",
+     "ct",
+     "ct",
+     "SQLColumnType",
+     "ct",
+     "Valid",
+     "Nullable",
+     "NullableValue",
+     "string",
+     "ct"
+    ]
+   },
+   {
+    "path": "tests/hooks_test.go",
+    "positions": [
+     [
+      46,
+      35
+     ],
+     [
+      96,
+      13
+     ],
+     [
+      158,
+      7
+     ],
+     [
+      161,
+      23
+     ],
+     [
+      208,
+      7
+     ],
+     [
+      264,
+      68
+     ],
+     [
+      274,
+      6
+     ],
+     [
+      294,
+      7
+     ],
+     [
+      344,
+      7
+     ],
+     [
+      488,
+      44
+     ],
+     [
+      491,
+      4
+     ],
+     [
+      510,
+      109
+     ]
+    ],
+    "ends": [
+     [
+      46,
+      37
+     ],
+     [
+      96,
+      21
+     ],
+     [
+      158,
+      10
+     ],
+     [
+      161,
+      25
+     ],
+     [
+      208,
+      10
+     ],
+     [
+      264,
+      70
+     ],
+     [
+      274,
+      9
+     ],
+     [
+      294,
+      11
+     ],
+     [
+      344,
+      11
+     ],
+     [
+      488,
+      50
+     ],
+     [
+      491,
+      8
+     ],
+     [
+      510,
+      113
+     ]
+    ],
+    "names": [
+     "gorm",
+     "TestRunCallbacks",
+     "Fatalf",
+     "Code",
+     "Delete",
+     "err",
+     "First",
+     "result4",
+     "product",
+     "ProductItem",
+     "product",
+     "product"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "diagnostics",
+  "path": "tests/hooks_test.go",
+  "line": -1,
+  "character": -1,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "clause/joins.go"
+  },
+  {
+   "kind": "open",
+   "path": "migrator/column_type.go"
+  },
+  {
+   "kind": "open",
+   "path": "tests/hooks_test.go"
+  },
+  {
+   "kind": "fs_rename",
+   "path": "clause/joins.go",
+   "new_path": "clause/joins_rt.go"
+  },
+  {
+   "kind": "fs_rename",
+   "path": "clause/joins_rt.go",
+   "new_path": "clause/joins.go"
+  }
+ ],
+ "case": {
+  "chain_step": 0,
+  "families": [],
+  "family": "H5",
+  "history_index": 0,
+  "history_seed": 1001,
+  "mode": "fresh",
+  "note": "rename clause/joins.go -> clause/joins_rt.go -> back",
+  "seed": 1,
+  "timing": "settled"
+ },
+ "shape": "diagnostics:message:?",
+ "signature": "gopls|r1_history|diagnostics:message:?",
+ "expected": [
+  [
+   10,
+   1,
+   10,
+   15,
+   1,
+   "",
+   "compiler",
+   "error while importing gorm.io/gorm: missing go.sum entry for module providing package github.com/jinzhu/inflection (imported by gorm.io/gorm/schema); to add: go get gorm.io/gorm/schema@v1.31.0"
+  ],
+  [
+   10,
+   1,
+   10,
+   15,
+   1,
+   "",
+   "compiler",
+   "error while importing gorm.io/gorm: missing go.sum entry for module providing package github.com/jinzhu/now (imported by gorm.io/gorm/tests); to add: go get -t gorm.io/gorm/tests"
+  ],
+  [
+   10,
+   1,
+   10,
+   15,
+   1,
+   "",
+   "compiler",
+   "error while importing gorm.io/gorm: missing go.sum entry for module providing package golang.org/x/text/cases (imported by gorm.io/gorm/schema); to add: go get gorm.io/gorm/schema@v1.31.0"
+  ],
+  [
+   10,
+   1,
+   10,
+   15,
+   1,
+   "",
+   "compiler",
+   "error while importing gorm.io/gorm: missing go.sum entry for module providing package golang.org/x/text/language (imported by gorm.io/gorm/schema); to add: go get gorm.io/gorm/schema@v1.31.0"
+  ]
+ ],
+ "actual": [
+  [
+   10,
+   1,
+   10,
+   15,
+   1,
+   "",
+   "compiler",
+   "error while importing gorm.io/gorm: missing go.sum entry for module providing package github.com/jinzhu/inflection (imported by gorm.io/gorm/schema); to add: go get gorm.io/gorm/schema@v1.31.0"
+  ],
+  [
+   10,
+   1,
+   10,
+   15,
+   1,
+   "",
+   "compiler",
+   "error while importing gorm.io/gorm: missing go.sum entry for module providing package github.com/jinzhu/now (imported by gorm.io/gorm); to add: go get gorm.io/gorm@v1.31.0"
+  ],
+  [
+   10,
+   1,
+   10,
+   15,
+   1,
+   "",
+   "compiler",
+   "error while importing gorm.io/gorm: missing go.sum entry for module providing package golang.org/x/text/cases (imported by gorm.io/gorm/schema); to add: go get gorm.io/gorm/schema@v1.31.0"
+  ],
+  [
+   10,
+   1,
+   10,
+   15,
+   1,
+   "",
+   "compiler",
+   "error while importing gorm.io/gorm: missing go.sum entry for module providing package golang.org/x/text/language (imported by gorm.io/gorm/schema); to add: go get gorm.io/gorm/schema@v1.31.0"
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "H5: rename clause/joins.go -> clause/joins_rt.go -> back; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 192s",
+ "violation": {
+  "oracle": "r1_history",
+  "server": "gopls-v0.23.0",
+  "project": "go-gorm/gorm@b3d3bf219f02",
+  "key": {
+   "method": "diagnostics",
+   "path": "tests/hooks_test.go",
+   "line": -1,
+   "character": -1,
+   "extra": ""
+  },
+  "expected": [
+   [
+    10,
+    1,
+    10,
+    15,
+    1,
+    "",
+    "compiler",
+    "error while importing gorm.io/gorm: missing go.sum entry for module providing package github.com/jinzhu/inflection (imported by gorm.io/gorm/schema); to add: go get gorm.io/gorm/schema@v1.31.0"
+   ],
+   [
+    10,
+    1,
+    10,
+    15,
+    1,
+    "",
+    "compiler",
+    "error while importing gorm.io/gorm: missing go.sum entry for module providing package github.com/jinzhu/now (imported by gorm.io/gorm/tests); to add: go get -t gorm.io/gorm/tests"
+   ],
+   [
+    10,
+    1,
+    10,
+    15,
+    1,
+    "",
+    "compiler",
+    "error while importing gorm.io/gorm: missing go.sum entry for module providing package golang.org/x/text/cases (imported by gorm.io/gorm/schema); to add: go get gorm.io/gorm/schema@v1.31.0"
+   ],
+   [
+    10,
+    1,
+    10,
+    15,
+    1,
+    "",
+    "compiler",
+    "error while importing gorm.io/gorm: missing go.sum entry for module providing package golang.org/x/text/language (imported by gorm.io/gorm/schema); to add: go get gorm.io/gorm/schema@v1.31.0"
+   ]
+  ],
+  "actual": [
+   [
+    10,
+    1,
+    10,
+    15,
+    1,
+    "",
+    "compiler",
+    "error while importing gorm.io/gorm: missing go.sum entry for module providing package github.com/jinzhu/inflection (imported by gorm.io/gorm/schema); to add: go get gorm.io/gorm/schema@v1.31.0"
+   ],
+   [
+    10,
+    1,
+    10,
+    15,
+    1,
+    "",
+    "compiler",
+    "error while importing gorm.io/gorm: missing go.sum entry for module providing package github.com/jinzhu/now (imported by gorm.io/gorm); to add: go get gorm.io/gorm@v1.31.0"
+   ],
+   [
+    10,
+    1,
+    10,
+    15,
+    1,
+    "",
+    "compiler",
+    "error while importing gorm.io/gorm: missing go.sum entry for module providing package golang.org/x/text/cases (imported by gorm.io/gorm/schema); to add: go get gorm.io/gorm/schema@v1.31.0"
+   ],
+   [
+    10,
+    1,
+    10,
+    15,
+    1,
+    "",
+    "compiler",
+    "error while importing gorm.io/gorm: missing go.sum entry for module providing package golang.org/x/text/language (imported by gorm.io/gorm/schema); to add: go get gorm.io/gorm/schema@v1.31.0"
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "clause/joins.go"
+   },
+   {
+    "kind": "open",
+    "path": "migrator/column_type.go"
+   },
+   {
+    "kind": "open",
+    "path": "tests/hooks_test.go"
+   },
+   {
+    "kind": "fs_rename",
+    "path": "clause/joins.go",
+    "new_path": "clause/joins_rt.go"
+   },
+   {
+    "kind": "fs_rename",
+    "path": "clause/joins_rt.go",
+    "new_path": "clause/joins.go"
+   }
+  ],
+  "detail": "{\"case\": {\"chain_step\": 0, \"families\": [], \"family\": \"H5\", \"history_index\": 0, \"history_seed\": 1001, \"mode\": \"fresh\", \"note\": \"rename clause/joins.go -> clause/joins_rt.go -> back\", \"seed\": 1, \"timing\": \"settled\"}, \"note\": \"H5: rename clause/joins.go -> clause/joins_rt.go -> back; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 192s\", \"shape\": \"diagnostics:message:?\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "gopls|r1_history|diagnostics:message:?",
+  "run_id": "cfc4a4dd285e"
+ },
+ "replay_logs": [
+  "logs/gopls-v0.23.0-cfc4a4dd285e-replay-baseline-20261118-013150-e8fbce.jsonl.gz",
+  "logs/gopls-v0.23.0-cfc4a4dd285e-replay-control-20261118-013150-a02902.jsonl.gz",
+  "logs/gopls-v0.23.0-cfc4a4dd285e-replay-history-20261118-013158-7cb001.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

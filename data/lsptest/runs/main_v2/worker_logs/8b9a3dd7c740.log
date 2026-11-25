@@ -1,0 +1,3 @@
+2026-11-18 18:28:39,135 INFO campaign_run run 8b9a3dd7c740: r0_crash on gopls v0.23.0, evanw/esbuild@f6058f8364fe seed 1 settled, targets ['internal/compat/js_table.go', 'internal/fs/fs_real.go', 'internal/js_ast/js_ast_helpers.go']
+2026-11-18 18:28:49,372 INFO campaign_run run 8b9a3dd7c740: 0 candidate(s) in 10s; confirming
+2026-11-18 18:28:49,373 INFO campaign_run run 8b9a3dd7c740 finished: ok, 0 confirmed of 0 candidate(s), 10s

@@ -1,0 +1,451 @@
+{
+ "format": 1,
+ "campaign": "main_v2",
+ "vid": "f373be50b7d7-v00",
+ "run_id": "f373be50b7d7",
+ "oracle": "r4_edits",
+ "server": {
+  "kind": "gopls",
+  "version": "v0.23.0"
+ },
+ "project": {
+  "name": "abiosoft/colima@bba803d3d6fa",
+  "source": "corpus",
+  "ref": "temp/corpus/abiosoft__colima@bba803d3d6fa",
+  "commit": "bba803d3d6fa9372a60f747e5dad4c8e80db7cde",
+  "language": "go"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "core/core.go",
+    "positions": [
+     [
+      23,
+      74
+     ],
+     [
+      30,
+      14
+     ],
+     [
+      30,
+      19
+     ],
+     [
+      45,
+      15
+     ],
+     [
+      49,
+      18
+     ],
+     [
+      51,
+      8
+     ],
+     [
+      53,
+      23
+     ],
+     [
+      54,
+      56
+     ],
+     [
+      63,
+      5
+     ],
+     [
+      68,
+      10
+     ],
+     [
+      72,
+      48
+     ],
+     [
+      74,
+      16
+     ]
+    ],
+    "ends": [
+     [
+      23,
+      76
+     ],
+     [
+      30,
+      17
+     ],
+     [
+      30,
+      21
+     ],
+     [
+      45,
+      25
+     ],
+     [
+      49,
+      21
+     ],
+     [
+      51,
+      11
+     ],
+     [
+      53,
+      25
+     ],
+     [
+      54,
+      58
+     ],
+     [
+      63,
+      8
+     ],
+     [
+      68,
+      12
+     ],
+     [
+      72,
+      53
+     ],
+     [
+      74,
+      19
+     ]
+    ],
+    "names": [
+     "Arch",
+     "guest",
+     "Run",
+     "LimaVersionSupported",
+     "Buffer",
+     "Stdout",
+     "err",
+     "err",
+     "values",
+     "nil",
+     "TrimPrefix",
+     "Errorf"
+    ]
+   },
+   {
+    "path": "environment/vm/lima/limautil/image_test.go",
+    "positions": [
+     [
+      4,
+      26
+     ],
+     [
+      4,
+      31
+     ],
+     [
+      8,
+      12
+     ],
+     [
+      9,
+      12
+     ],
+     [
+      10,
+      12
+     ],
+     [
+      15,
+      13
+     ],
+     [
+      21,
+      4
+     ],
+     [
+      23,
+      5
+     ],
+     [
+      27,
+      13
+     ],
+     [
+      29,
+      5
+     ],
+     [
+      38,
+      5
+     ],
+     [
+      40,
+      24
+     ]
+    ],
+    "ends": [
+     [
+      4,
+      30
+     ],
+     [
+      4,
+      32
+     ],
+     [
+      8,
+      15
+     ],
+     [
+      9,
+      15
+     ],
+     [
+      10,
+      15
+     ],
+     [
+      15,
+      16
+     ],
+     [
+      21,
+      6
+     ],
+     [
+      23,
+      7
+     ],
+     [
+      27,
+      16
+     ],
+     [
+      29,
+      7
+     ],
+     [
+      38,
+      6
+     ],
+     [
+      40,
+      25
+     ]
+    ],
+    "names": [
+     "testing",
+     "T",
+     "string",
+     "string",
+     "string",
+     "ghURL",
+     "url",
+     "want",
+     "ghURL",
+     "want",
+     "_",
+     "tt"
+    ]
+   },
+   {
+    "path": "util/downloader/download.go",
+    "positions": [
+     [
+      48,
+      24
+     ],
+     [
+      49,
+      17
+     ],
+     [
+      75,
+      42
+     ],
+     [
+      94,
+      15
+     ],
+     [
+      104,
+      34
+     ],
+     [
+      112,
+      27
+     ],
+     [
+      113,
+      14
+     ],
+     [
+      121,
+      27
+     ],
+     [
+      147,
+      28
+     ],
+     [
+      152,
+      6
+     ],
+     [
+      152,
+      13
+     ],
+     [
+      153,
+      34
+     ]
+    ],
+    "ends": [
+     [
+      48,
+      33
+     ],
+     [
+      49,
+      18
+     ],
+     [
+      75,
+      43
+     ],
+     [
+      94,
+      17
+     ],
+     [
+      104,
+      37
+     ],
+     [
+      112,
+      34
+     ],
+     [
+      113,
+      21
+     ],
+     [
+      121,
+      31
+     ],
+     [
+      147,
+      30
+     ],
+     [
+      152,
+      7
+     ],
+     [
+      152,
+      18
+     ],
+     [
+      153,
+      36
+     ]
+    ],
+    "names": [
+     "ValidateDownloader",
+     "d",
+     "ID",
+     "err",
+     "string",
+     "resumeInfoPath",
+     "CacheFilename",
+     "cacheDir",
+     "etag",
+     "d",
+     "downloader",
+     "url"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "completionInsert",
+  "path": "environment/vm/lima/limautil/image_test.go",
+  "line": 4,
+  "character": 30,
+  "extra": "testing.BenchmarkResult"
+ },
+ "ops": [],
+ "case": {
+  "character": 30,
+  "edits": [
+   {
+    "newText": "testing.BenchmarkResult",
+    "range": {
+     "end": {
+      "character": 30,
+      "line": 4
+     },
+     "start": {
+      "character": 23,
+      "line": 4
+     }
+    }
+   }
+  ],
+  "excerpt": "func Test_mirrorURL(t *testing.BenchmarkResult.T) {",
+  "item_kind": 22,
+  "kind": "completion",
+  "label": "testing.BenchmarkResult",
+  "line": 4,
+  "name": "testing",
+  "new_errors": [
+   "5:47: missing ',' in parameter list",
+   "5:49: missing parameter type"
+  ],
+  "path": "environment/vm/lima/limautil/image_test.go"
+ },
+ "shape": "completionInsert:gained",
+ "signature": "gopls|r4_edits|completionInsert:gained",
+ "expected": [],
+ "actual": [
+  "missing ',' in parameter list",
+  "missing parameter type"
+ ],
+ "reproduced": "0/3",
+ "note": "accepting completion item 'testing.BenchmarkResult' (kind 22) after 'testing' at environment/vm/lima/limautil/image_test.go:5:31 introduces [\"5:47: missing ',' in parameter list\", '5:49: missing parameter type']; confirmed in a fresh session on the original content; flake 0/3 [r1:Scr r2:SCr r3:Scr] in 52s",
+ "violation": {
+  "oracle": "r4_edits",
+  "server": "gopls-v0.23.0",
+  "project": "abiosoft/colima@bba803d3d6fa",
+  "key": {
+   "method": "completionInsert",
+   "path": "environment/vm/lima/limautil/image_test.go",
+   "line": 4,
+   "character": 30,
+   "extra": "testing.BenchmarkResult"
+  },
+  "expected": [],
+  "actual": [
+   "missing ',' in parameter list",
+   "missing parameter type"
+  ],
+  "ops": [],
+  "detail": "{\"case\": {\"character\": 30, \"edits\": [{\"newText\": \"testing.BenchmarkResult\", \"range\": {\"end\": {\"character\": 30, \"line\": 4}, \"start\": {\"character\": 23, \"line\": 4}}}], \"excerpt\": \"func Test_mirrorURL(t *testing.BenchmarkResult.T) {\", \"item_kind\": 22, \"kind\": \"completion\", \"label\": \"testing.BenchmarkResult\", \"line\": 4, \"name\": \"testing\", \"new_errors\": [\"5:47: missing ',' in parameter list\", \"5:49: missing parameter type\"], \"path\": \"environment/vm/lima/limautil/image_test.go\"}, \"note\": \"accepting completion item 'testing.BenchmarkResult' (kind 22) after 'testing' at environment/vm/lima/limautil/image_test.go:5:31 introduces [\\\"5:47: missing ',' in parameter list\\\", '5:49: missing parameter type']; confirmed in a fresh session on the original content; flake 0/3 [r1:Scr r2:SCr r3:Scr] in 52s\", \"shape\": \"completionInsert:gained\"}",
+  "reproduced": "0/3",
+  "reduced_ops": [],
+  "signature": "gopls|r4_edits|completionInsert:gained",
+  "run_id": "f373be50b7d7"
+ },
+ "replay_logs": [],
+ "project_files": {},
+ "incomplete": false
+}

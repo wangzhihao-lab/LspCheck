@@ -1,0 +1,4966 @@
+{
+ "campaign": "main_v2",
+ "groups": [
+  {
+   "gid": "gopls-r1-codeaction-changed-h4-c5344e",
+   "signature": "gopls|r1_history|codeAction:changed",
+   "method": "codeAction",
+   "family": "H4",
+   "members": 2,
+   "summary": {
+    "members": 2,
+    "runs": [
+     "43cf47dfbeec",
+     "5839938760f5"
+    ],
+    "projects": [
+     "go-gorm/gorm@b3d3bf219f02",
+     "zeromicro/go-zero@5b1b5bdc3adc"
+    ],
+    "servers": [
+     "gopls-v0.23.0"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "2"
+    ],
+    "vids": [
+     "43cf47dfbeec-v03",
+     "5839938760f5-v01"
+    ]
+   },
+   "representative": "43cf47dfbeec-v03",
+   "ops_before": 5,
+   "ops_after": 2,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/golang/go/issues/56158",
+   "seconds": {
+    "reduction": 225.4,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v2/triage/gopls-r1-codeaction-changed-h4-c5344e/report.md"
+  },
+  {
+   "gid": "gopls-r1-codeaction-changed-h7-383b05",
+   "signature": "gopls|r1_history|codeAction:changed",
+   "method": "codeAction",
+   "family": "H7",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "ddfee926b769"
+    ],
+    "projects": [
+     "go-gorm/gorm@b3d3bf219f02"
+    ],
+    "servers": [
+     "gopls-v0.23.0"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "3"
+    ],
+    "vids": [
+     "ddfee926b769-v00"
+    ]
+   },
+   "representative": "ddfee926b769-v00",
+   "ops_before": 13,
+   "ops_after": 2,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/golang/go/issues/81812",
+   "seconds": {
+    "reduction": 588.4,
+    "issues": 3.4
+   },
+   "report": "data/lsptest/runs/main_v2/triage/gopls-r1-codeaction-changed-h7-383b05/report.md"
+  },
+  {
+   "gid": "gopls-r1-codeaction-key-lost-h7-547744",
+   "signature": "gopls|r1_history|codeAction:key-lost",
+   "method": "codeAction",
+   "family": "H7",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "43cf47dfbeec"
+    ],
+    "projects": [
+     "go-gorm/gorm@b3d3bf219f02"
+    ],
+    "servers": [
+     "gopls-v0.23.0"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "2"
+    ],
+    "vids": [
+     "43cf47dfbeec-v01"
+    ]
+   },
+   "representative": "43cf47dfbeec-v01",
+   "ops_before": 15,
+   "ops_after": 6,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/golang/go/issues/81812",
+   "seconds": {
+    "reduction": 383.2,
+    "issues": 2.0
+   },
+   "report": "data/lsptest/runs/main_v2/triage/gopls-r1-codeaction-key-lost-h7-547744/report.md"
+  },
+  {
+   "gid": "gopls-r1-completion-extra-h5-2dfa5a",
+   "signature": "gopls|r1_history|completion:extra",
+   "method": "completion",
+   "family": "H5",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "5817b62f1d51"
+    ],
+    "projects": [
+     "schollz/croc@5890191be511"
+    ],
+    "servers": [
+     "gopls-v0.23.0"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "5817b62f1d51-v00"
+    ]
+   },
+   "representative": "5817b62f1d51-v00",
+   "ops_before": 5,
+   "ops_after": 5,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/golang/go/issues/51037",
+   "seconds": {
+    "reduction": 459.1,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v2/triage/gopls-r1-completion-extra-h5-2dfa5a/report.md"
+  },
+  {
+   "gid": "gopls-r1-completion-extra-h6-410566",
+   "signature": "gopls|r1_history|completion:extra",
+   "method": "completion",
+   "family": "H6",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "5839938760f5"
+    ],
+    "projects": [
+     "zeromicro/go-zero@5b1b5bdc3adc"
+    ],
+    "servers": [
+     "gopls-v0.23.0"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "2"
+    ],
+    "vids": [
+     "5839938760f5-v00"
+    ]
+   },
+   "representative": "5839938760f5-v00",
+   "ops_before": 5,
+   "ops_after": 5,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/golang/go/issues/50748",
+   "seconds": {
+    "reduction": 325.4,
+    "issues": 4.4
+   },
+   "report": "data/lsptest/runs/main_v2/triage/gopls-r1-completion-extra-h6-410566/report.md"
+  },
+  {
+   "gid": "gopls-r1-completion-extra-h8-02679b",
+   "signature": "gopls|r1_history|completion:extra",
+   "method": "completion",
+   "family": "H8",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "fb8107233528"
+    ],
+    "projects": [
+     "schollz/croc@5890191be511"
+    ],
+    "servers": [
+     "gopls-v0.23.0"
+    ],
+    "timings": [
+     "race0"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "fb8107233528-v00"
+    ]
+   },
+   "representative": "fb8107233528-v00",
+   "ops_before": 13,
+   "ops_after": 13,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/golang/go/issues/82624",
+   "seconds": {
+    "reduction": 311.2,
+    "issues": 4.4
+   },
+   "report": "data/lsptest/runs/main_v2/triage/gopls-r1-completion-extra-h8-02679b/report.md"
+  },
+  {
+   "gid": "gopls-r1-completion-lost-h7-1a1169",
+   "signature": "gopls|r1_history|completion:lost",
+   "method": "completion",
+   "family": "H7",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "a182be2619cd"
+    ],
+    "projects": [
+     "iawia002/lux@dd00f6d258d8"
+    ],
+    "servers": [
+     "gopls-v0.23.0"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "a182be2619cd-v00"
+    ]
+   },
+   "representative": "a182be2619cd-v00",
+   "ops_before": 7,
+   "ops_after": 6,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/golang/go/issues/81812",
+   "seconds": {
+    "reduction": 4984.6,
+    "issues": 4.6
+   },
+   "report": "data/lsptest/runs/main_v2/triage/gopls-r1-completion-lost-h7-1a1169/report.md"
+  },
+  {
+   "gid": "gopls-r1-diagnostics-message-h5-e59f2c",
+   "signature": "gopls|r1_history|diagnostics:message:?",
+   "method": "diagnostics",
+   "family": "H5",
+   "members": 3,
+   "summary": {
+    "members": 3,
+    "runs": [
+     "56aea42fc074",
+     "cfc4a4dd285e",
+     "cfdd0d9cf728"
+    ],
+    "projects": [
+     "go-gorm/gorm@b3d3bf219f02"
+    ],
+    "servers": [
+     "gopls-v0.23.0"
+    ],
+    "timings": [
+     "race0",
+     "race200",
+     "settled"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "56aea42fc074-v00",
+     "cfc4a4dd285e-v01",
+     "cfdd0d9cf728-v00"
+    ]
+   },
+   "representative": "56aea42fc074-v00",
+   "ops_before": 5,
+   "ops_after": 4,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/golang/go/issues/51037",
+   "seconds": {
+    "reduction": 177.9,
+    "issues": 6.4
+   },
+   "report": "data/lsptest/runs/main_v2/triage/gopls-r1-diagnostics-message-h5-e59f2c/report.md"
+  },
+  {
+   "gid": "gopls-r1-diagnostics-missing-h7-10a910",
+   "signature": "gopls|r1_history|diagnostics:missing:?",
+   "method": "diagnostics",
+   "family": "H7",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "43cf47dfbeec"
+    ],
+    "projects": [
+     "go-gorm/gorm@b3d3bf219f02"
+    ],
+    "servers": [
+     "gopls-v0.23.0"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "2"
+    ],
+    "vids": [
+     "43cf47dfbeec-v02"
+    ]
+   },
+   "representative": "43cf47dfbeec-v02",
+   "ops_before": 15,
+   "ops_after": 6,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/golang/go/issues/81812",
+   "seconds": {
+    "reduction": 396.1,
+    "issues": 4.7
+   },
+   "report": "data/lsptest/runs/main_v2/triage/gopls-r1-diagnostics-missing-h7-10a910/report.md"
+  },
+  {
+   "gid": "gopls-r1-references-extra-h5-e2e003",
+   "signature": "gopls|r1_history|references:extra",
+   "method": "references",
+   "family": "H5",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "ddfee926b769"
+    ],
+    "projects": [
+     "go-gorm/gorm@b3d3bf219f02"
+    ],
+    "servers": [
+     "gopls-v0.23.0"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "3"
+    ],
+    "vids": [
+     "ddfee926b769-v01"
+    ]
+   },
+   "representative": "ddfee926b769-v01",
+   "ops_before": 5,
+   "ops_after": 3,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/golang/go/issues/51037",
+   "seconds": {
+    "reduction": 441.8,
+    "issues": 2.1
+   },
+   "report": "data/lsptest/runs/main_v2/triage/gopls-r1-references-extra-h5-e2e003/report.md"
+  },
+  {
+   "gid": "gopls-r2-codeactionresolve-changed-codeaction-70b3e9",
+   "signature": "gopls|r2_handles|codeActionResolve:changed",
+   "method": "codeActionResolve",
+   "family": "codeAction",
+   "members": 3,
+   "summary": {
+    "members": 3,
+    "runs": [
+     "4cb90eb12df9",
+     "51566a7040cd",
+     "637f9f2fc3d4"
+    ],
+    "projects": [
+     "abiosoft/colima@bba803d3d6fa",
+     "docker/compose@c6dffb26bdfd",
+     "labstack/echo@3d084be90224"
+    ],
+    "servers": [
+     "gopls-v0.23.0"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1",
+     "2"
+    ],
+    "vids": [
+     "4cb90eb12df9-v00",
+     "51566a7040cd-v00",
+     "637f9f2fc3d4-v00"
+    ]
+   },
+   "representative": "4cb90eb12df9-v00",
+   "ops_before": 2,
+   "ops_after": 2,
+   "lines": "",
+   "matches": 1,
+   "top_match": "https://github.com/golang/go/issues/71314",
+   "seconds": {
+    "reduction": 46.6,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v2/triage/gopls-r2-codeactionresolve-changed-codeaction-70b3e9/report.md"
+  },
+  {
+   "gid": "gopls-r3-definitionconsistency-changed-d-cf67f4",
+   "signature": "gopls|r3_routes|definitionConsistency:changed",
+   "method": "definitionConsistency",
+   "family": "d",
+   "members": 3,
+   "summary": {
+    "members": 3,
+    "runs": [
+     "41cf2f692422",
+     "660200eada5b",
+     "e171810fcf9b"
+    ],
+    "projects": [
+     "abiosoft/colima@bba803d3d6fa",
+     "beego/beego@939cfde380bb",
+     "go-gorm/gorm@b3d3bf219f02"
+    ],
+    "servers": [
+     "gopls-v0.23.0"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "41cf2f692422-v00",
+     "660200eada5b-v01",
+     "e171810fcf9b-v01"
+    ]
+   },
+   "representative": "41cf2f692422-v00",
+   "ops_before": 0,
+   "ops_after": 0,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/golang/go/issues/66827",
+   "seconds": {
+    "reduction": 42.3,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v2/triage/gopls-r3-definitionconsistency-changed-d-cf67f4/report.md"
+  },
+  {
+   "gid": "gopls-r3-definitionconsistency-result-error-0-d-f91fb9",
+   "signature": "gopls|r3_routes|definitionConsistency:result->error:0",
+   "method": "definitionConsistency",
+   "family": "d",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "74c1574f1393"
+    ],
+    "projects": [
+     "SagerNet/sing-box@0d91c4547921"
+    ],
+    "servers": [
+     "gopls-v0.23.0"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "74c1574f1393-v01"
+    ]
+   },
+   "representative": "74c1574f1393-v01",
+   "ops_before": 0,
+   "ops_after": 0,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/golang/go/issues/66827",
+   "seconds": {
+    "reduction": 90.5,
+    "issues": 2.5
+   },
+   "report": "data/lsptest/runs/main_v2/triage/gopls-r3-definitionconsistency-result-error-0-d-f91fb9/report.md"
+  },
+  {
+   "gid": "gopls-r3-highlightvsreferences-extra-c-84be95",
+   "signature": "gopls|r3_routes|highlightVsReferences:extra",
+   "method": "highlightVsReferences",
+   "family": "c",
+   "members": 3,
+   "summary": {
+    "members": 3,
+    "runs": [
+     "660200eada5b",
+     "74c1574f1393",
+     "e171810fcf9b"
+    ],
+    "projects": [
+     "SagerNet/sing-box@0d91c4547921",
+     "abiosoft/colima@bba803d3d6fa",
+     "go-gorm/gorm@b3d3bf219f02"
+    ],
+    "servers": [
+     "gopls-v0.23.0"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "660200eada5b-v00",
+     "74c1574f1393-v00",
+     "e171810fcf9b-v00"
+    ]
+   },
+   "representative": "660200eada5b-v00",
+   "ops_before": 0,
+   "ops_after": 0,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/golang/go/issues/81462",
+   "seconds": {
+    "reduction": 38.1,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v2/triage/gopls-r3-highlightvsreferences-extra-c-84be95/report.md"
+  },
+  {
+   "gid": "gopls-r4-completioninsert-gained-completion-22daf7",
+   "signature": "gopls|r4_edits|completionInsert:gained",
+   "method": "completionInsert",
+   "family": "completion",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "c60222266301"
+    ],
+    "projects": [
+     "docker/compose@c6dffb26bdfd"
+    ],
+    "servers": [
+     "gopls-v0.23.0"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "2"
+    ],
+    "vids": [
+     "c60222266301-v00"
+    ]
+   },
+   "representative": "c60222266301-v00",
+   "ops_before": 0,
+   "ops_after": 0,
+   "lines": "",
+   "matches": 0,
+   "top_match": "",
+   "seconds": {
+    "reduction": 98.8,
+    "issues": 3.7
+   },
+   "report": "data/lsptest/runs/main_v2/triage/gopls-r4-completioninsert-gained-completion-22daf7/report.md"
+  },
+  {
+   "gid": "gopls-r4-diagnostics-extra-incompatibleassign-inv-mutation-m2-3cfa07",
+   "signature": "gopls|r4_edits|diagnostics:extra:IncompatibleAssign,InvalidAppend,NotAnExpr",
+   "method": "diagnostics",
+   "family": "mutation:M2",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "118461be1f56"
+    ],
+    "projects": [
+     "docker/compose@c6dffb26bdfd"
+    ],
+    "servers": [
+     "gopls-v0.23.0"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "118461be1f56-v00"
+    ]
+   },
+   "representative": "118461be1f56-v00",
+   "ops_before": 3,
+   "ops_after": 3,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/golang/go/issues/68075",
+   "seconds": {
+    "reduction": 75.5,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v2/triage/gopls-r4-diagnostics-extra-incompatibleassign-inv-mutation-m2-3cfa07/report.md"
+  },
+  {
+   "gid": "gopls-r4-diagnostics-extra-incompatibleassign-mutation-m2-ade1f0",
+   "signature": "gopls|r4_edits|diagnostics:extra:IncompatibleAssign",
+   "method": "diagnostics",
+   "family": "mutation:M2",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "b6a3bd30c8df"
+    ],
+    "projects": [
+     "beego/beego@939cfde380bb"
+    ],
+    "servers": [
+     "gopls-v0.23.0"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "2"
+    ],
+    "vids": [
+     "b6a3bd30c8df-v00"
+    ]
+   },
+   "representative": "b6a3bd30c8df-v00",
+   "ops_before": 3,
+   "ops_after": 3,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/golang/go/issues/68075",
+   "seconds": {
+    "reduction": 67.8,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v2/triage/gopls-r4-diagnostics-extra-incompatibleassign-mutation-m2-ade1f0/report.md"
+  },
+  {
+   "gid": "gopls-r4-diagnostics-extra-mismatchedtypes-mutation-m2-dc6e94",
+   "signature": "gopls|r4_edits|diagnostics:extra:MismatchedTypes",
+   "method": "diagnostics",
+   "family": "mutation:M2",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "c213415bb354"
+    ],
+    "projects": [
+     "go-gorm/gorm@b3d3bf219f02"
+    ],
+    "servers": [
+     "gopls-v0.23.0"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "2"
+    ],
+    "vids": [
+     "c213415bb354-v00"
+    ]
+   },
+   "representative": "c213415bb354-v00",
+   "ops_before": 3,
+   "ops_after": 3,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/golang/go/issues/68075",
+   "seconds": {
+    "reduction": 81.2,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v2/triage/gopls-r4-diagnostics-extra-mismatchedtypes-mutation-m2-dc6e94/report.md"
+  },
+  {
+   "gid": "gopls-r4-diagnostics-extra-nonsliceableoperand-mutation-m2-d80a9a",
+   "signature": "gopls|r4_edits|diagnostics:extra:NonSliceableOperand",
+   "method": "diagnostics",
+   "family": "mutation:M2",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "31cdc65c834b"
+    ],
+    "projects": [
+     "evanw/esbuild@f6058f8364fe"
+    ],
+    "servers": [
+     "gopls-v0.23.0"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "2"
+    ],
+    "vids": [
+     "31cdc65c834b-v00"
+    ]
+   },
+   "representative": "31cdc65c834b-v00",
+   "ops_before": 3,
+   "ops_after": 3,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/golang/go/issues/68075",
+   "seconds": {
+    "reduction": 77.0,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v2/triage/gopls-r4-diagnostics-extra-nonsliceableoperand-mutation-m2-d80a9a/report.md"
+  },
+  {
+   "gid": "gopls-r4-diagnostics-extra-notatype-mutation-m2-477181",
+   "signature": "gopls|r4_edits|diagnostics:extra:NotAType",
+   "method": "diagnostics",
+   "family": "mutation:M2",
+   "members": 3,
+   "summary": {
+    "members": 3,
+    "runs": [
+     "508981c8d2e2",
+     "612e72c9f59f",
+     "e646cc2b6d9c"
+    ],
+    "projects": [
+     "labstack/echo@3d084be90224",
+     "schollz/croc@5890191be511"
+    ],
+    "servers": [
+     "gopls-v0.23.0"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1",
+     "2"
+    ],
+    "vids": [
+     "508981c8d2e2-v00",
+     "612e72c9f59f-v00",
+     "e646cc2b6d9c-v01"
+    ]
+   },
+   "representative": "508981c8d2e2-v00",
+   "ops_before": 3,
+   "ops_after": 3,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/golang/go/issues/68075",
+   "seconds": {
+    "reduction": 79.5,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v2/triage/gopls-r4-diagnostics-extra-notatype-mutation-m2-477181/report.md"
+  },
+  {
+   "gid": "gopls-r4-diagnostics-extra-undeclaredname-mutation-m2-12380c",
+   "signature": "gopls|r4_edits|diagnostics:extra:UndeclaredName",
+   "method": "diagnostics",
+   "family": "mutation:M2",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "f373be50b7d7"
+    ],
+    "projects": [
+     "abiosoft/colima@bba803d3d6fa"
+    ],
+    "servers": [
+     "gopls-v0.23.0"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "2"
+    ],
+    "vids": [
+     "f373be50b7d7-v01"
+    ]
+   },
+   "representative": "f373be50b7d7-v01",
+   "ops_before": 3,
+   "ops_after": 3,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/golang/go/issues/68075",
+   "seconds": {
+    "reduction": 65.8,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v2/triage/gopls-r4-diagnostics-extra-undeclaredname-mutation-m2-12380c/report.md"
+  },
+  {
+   "gid": "gopls-r4-diagnostics-extra-untypedniluse-mutation-m2-354f70",
+   "signature": "gopls|r4_edits|diagnostics:extra:UntypedNilUse",
+   "method": "diagnostics",
+   "family": "mutation:M2",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "bf89675973e9"
+    ],
+    "projects": [
+     "abiosoft/colima@bba803d3d6fa"
+    ],
+    "servers": [
+     "gopls-v0.23.0"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "bf89675973e9-v01"
+    ]
+   },
+   "representative": "bf89675973e9-v01",
+   "ops_before": 3,
+   "ops_after": 3,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/golang/go/issues/68075",
+   "seconds": {
+    "reduction": 70.3,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v2/triage/gopls-r4-diagnostics-extra-untypedniluse-mutation-m2-354f70/report.md"
+  },
+  {
+   "gid": "gopls-r4-diagnostics-extra-unusedimport-mutation-m3-aefa9e",
+   "signature": "gopls|r4_edits|diagnostics:extra:UnusedImport",
+   "method": "diagnostics",
+   "family": "mutation:M3",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "bf89675973e9"
+    ],
+    "projects": [
+     "abiosoft/colima@bba803d3d6fa"
+    ],
+    "servers": [
+     "gopls-v0.23.0"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "bf89675973e9-v02"
+    ]
+   },
+   "representative": "bf89675973e9-v02",
+   "ops_before": 3,
+   "ops_after": 3,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/golang/go/issues/68075",
+   "seconds": {
+    "reduction": 76.5,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v2/triage/gopls-r4-diagnostics-extra-unusedimport-mutation-m3-aefa9e/report.md"
+  },
+  {
+   "gid": "gopls-r4-diagnostics-extra-wrongargcount-mutation-m3-ac10cc",
+   "signature": "gopls|r4_edits|diagnostics:extra:WrongArgCount",
+   "method": "diagnostics",
+   "family": "mutation:M3",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "fb67fdd2dc04"
+    ],
+    "projects": [
+     "schollz/croc@5890191be511"
+    ],
+    "servers": [
+     "gopls-v0.23.0"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "fb67fdd2dc04-v00"
+    ]
+   },
+   "representative": "fb67fdd2dc04-v00",
+   "ops_before": 3,
+   "ops_after": 3,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/golang/go/issues/68075",
+   "seconds": {
+    "reduction": 90.9,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v2/triage/gopls-r4-diagnostics-extra-wrongargcount-mutation-m3-ac10cc/report.md"
+  },
+  {
+   "gid": "gopls-r5-codeaction-extra-t1-6dfb45",
+   "signature": "gopls|r5_transforms|codeAction:extra",
+   "method": "codeAction",
+   "family": "T1",
+   "members": 2,
+   "summary": {
+    "members": 2,
+    "runs": [
+     "2628b01ed446",
+     "9a36d7461bcd"
+    ],
+    "projects": [
+     "abiosoft/colima@bba803d3d6fa",
+     "beego/beego@939cfde380bb"
+    ],
+    "servers": [
+     "gopls-v0.23.0"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "2628b01ed446-v00",
+     "9a36d7461bcd-v00"
+    ]
+   },
+   "representative": "2628b01ed446-v00",
+   "ops_before": 2,
+   "ops_after": 2,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/golang/go/issues/70085",
+   "seconds": {
+    "reduction": 74.4,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v2/triage/gopls-r5-codeaction-extra-t1-6dfb45/report.md"
+  },
+  {
+   "gid": "gopls-r5-codeaction-extra-t2-86a8ac",
+   "signature": "gopls|r5_transforms|codeAction:extra",
+   "method": "codeAction",
+   "family": "T2",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "9b3bd893b17f"
+    ],
+    "projects": [
+     "go-gorm/gorm@b3d3bf219f02"
+    ],
+    "servers": [
+     "gopls-v0.23.0"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "9b3bd893b17f-v00"
+    ]
+   },
+   "representative": "9b3bd893b17f-v00",
+   "ops_before": 2,
+   "ops_after": 2,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/golang/go/issues/64936",
+   "seconds": {
+    "reduction": 62.5,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v2/triage/gopls-r5-codeaction-extra-t2-86a8ac/report.md"
+  },
+  {
+   "gid": "gopls-r5-foldingrange-changed-t4-b07c86",
+   "signature": "gopls|r5_transforms|foldingRange:changed",
+   "method": "foldingRange",
+   "family": "T4",
+   "members": 2,
+   "summary": {
+    "members": 2,
+    "runs": [
+     "11bbeaaa308c",
+     "355575949131"
+    ],
+    "projects": [
+     "docker/compose@c6dffb26bdfd"
+    ],
+    "servers": [
+     "gopls-v0.23.0"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1",
+     "2"
+    ],
+    "vids": [
+     "11bbeaaa308c-v00",
+     "355575949131-v00"
+    ]
+   },
+   "representative": "11bbeaaa308c-v00",
+   "ops_before": 70,
+   "ops_after": 2,
+   "lines": "",
+   "matches": 7,
+   "top_match": "https://github.com/golang/go/issues/80666",
+   "seconds": {
+    "reduction": 216.4,
+    "issues": 4.3
+   },
+   "report": "data/lsptest/runs/main_v2/triage/gopls-r5-foldingrange-changed-t4-b07c86/report.md"
+  },
+  {
+   "gid": "gopls-r5-foldingrange-changed-t6-ecacad",
+   "signature": "gopls|r5_transforms|foldingRange:changed",
+   "method": "foldingRange",
+   "family": "T6",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "2628b01ed446"
+    ],
+    "projects": [
+     "beego/beego@939cfde380bb"
+    ],
+    "servers": [
+     "gopls-v0.23.0"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "2628b01ed446-v01"
+    ]
+   },
+   "representative": "2628b01ed446-v01",
+   "ops_before": 2,
+   "ops_after": 2,
+   "lines": "",
+   "matches": 3,
+   "top_match": "https://github.com/golang/go/issues/29149",
+   "seconds": {
+    "reduction": 76.3,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v2/triage/gopls-r5-foldingrange-changed-t6-ecacad/report.md"
+  },
+  {
+   "gid": "gopls-r5-semantictokens-changed-t4-b423af",
+   "signature": "gopls|r5_transforms|semanticTokens:changed",
+   "method": "semanticTokens",
+   "family": "T4",
+   "members": 2,
+   "summary": {
+    "members": 2,
+    "runs": [
+     "11bbeaaa308c",
+     "355575949131"
+    ],
+    "projects": [
+     "docker/compose@c6dffb26bdfd"
+    ],
+    "servers": [
+     "gopls-v0.23.0"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1",
+     "2"
+    ],
+    "vids": [
+     "11bbeaaa308c-v01",
+     "355575949131-v01"
+    ]
+   },
+   "representative": "11bbeaaa308c-v01",
+   "ops_before": 70,
+   "ops_after": 4,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/golang/go/issues/80666",
+   "seconds": {
+    "reduction": 343.2,
+    "issues": 7.1
+   },
+   "report": "data/lsptest/runs/main_v2/triage/gopls-r5-semantictokens-changed-t4-b423af/report.md"
+  },
+  {
+   "gid": "gopls-r5-semantictokens-extra-t4-867006",
+   "signature": "gopls|r5_transforms|semanticTokens:extra",
+   "method": "semanticTokens",
+   "family": "T4",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "9a36d7461bcd"
+    ],
+    "projects": [
+     "abiosoft/colima@bba803d3d6fa"
+    ],
+    "servers": [
+     "gopls-v0.23.0"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "9a36d7461bcd-v01"
+    ]
+   },
+   "representative": "9a36d7461bcd-v01",
+   "ops_before": 27,
+   "ops_after": 2,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/golang/go/issues/80666",
+   "seconds": {
+    "reduction": 126.8,
+    "issues": 1.9
+   },
+   "report": "data/lsptest/runs/main_v2/triage/gopls-r5-semantictokens-extra-t4-867006/report.md"
+  },
+  {
+   "gid": "pyright-r0-references-result-error-32603-fresh-pair-2718c4",
+   "signature": "pyright|r0_crash|references:result->error:-32603",
+   "method": "references",
+   "family": "fresh-pair",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "0cc564977c8a"
+    ],
+    "projects": [
+     "virattt/ai-hedge-fund@7d897a002c26"
+    ],
+    "servers": [
+     "pyright-1.1.414"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "0cc564977c8a-v00"
+    ]
+   },
+   "representative": "0cc564977c8a-v00",
+   "ops_before": 0,
+   "ops_after": 0,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/microsoft/pyright/issues/11041",
+   "seconds": {
+    "reduction": 12.5,
+    "issues": 8.8
+   },
+   "report": "data/lsptest/runs/main_v2/triage/pyright-r0-references-result-error-32603-fresh-pair-2718c4/report.md"
+  },
+  {
+   "gid": "pyright-r1-definition-extra-h5-2e7477",
+   "signature": "pyright|r1_history|definition:extra",
+   "method": "definition",
+   "family": "H5",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "c00149bc8140"
+    ],
+    "projects": [
+     "virattt/ai-hedge-fund@7d897a002c26"
+    ],
+    "servers": [
+     "pyright-1.1.414"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "2"
+    ],
+    "vids": [
+     "c00149bc8140-v00"
+    ]
+   },
+   "representative": "c00149bc8140-v00",
+   "ops_before": 5,
+   "ops_after": 3,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/microsoft/pyright/issues/375",
+   "seconds": {
+    "reduction": 228.9,
+    "issues": 4.2
+   },
+   "report": "data/lsptest/runs/main_v2/triage/pyright-r1-definition-extra-h5-2e7477/report.md"
+  },
+  {
+   "gid": "pyright-r1-definition-missing-h5-964341",
+   "signature": "pyright|r1_history|definition:missing",
+   "method": "definition",
+   "family": "H5",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "08417dd958ba"
+    ],
+    "projects": [
+     "scrapy/scrapy@91d87364637c"
+    ],
+    "servers": [
+     "pyright-1.1.414"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "3"
+    ],
+    "vids": [
+     "08417dd958ba-v01"
+    ]
+   },
+   "representative": "08417dd958ba-v01",
+   "ops_before": 5,
+   "ops_after": 2,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/microsoft/pyright/issues/375",
+   "seconds": {
+    "reduction": 207.4,
+    "issues": 0.1
+   },
+   "report": "data/lsptest/runs/main_v2/triage/pyright-r1-definition-missing-h5-964341/report.md"
+  },
+  {
+   "gid": "pyright-r1-hover-text-h2-fb2ed0",
+   "signature": "pyright|r1_history|hover:text",
+   "method": "hover",
+   "family": "H2",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "de1a4347e97f"
+    ],
+    "projects": [
+     "soimort/you-get@049548f3f3f3"
+    ],
+    "servers": [
+     "pyright-1.1.414"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "3"
+    ],
+    "vids": [
+     "de1a4347e97f-v00"
+    ]
+   },
+   "representative": "de1a4347e97f-v00",
+   "ops_before": 7,
+   "ops_after": 4,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/microsoft/pyright/issues/3860",
+   "seconds": {
+    "reduction": 177.6,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v2/triage/pyright-r1-hover-text-h2-fb2ed0/report.md"
+  },
+  {
+   "gid": "pyright-r1-hover-text-h5-f24c4e",
+   "signature": "pyright|r1_history|hover:text",
+   "method": "hover",
+   "family": "H5",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "08417dd958ba"
+    ],
+    "projects": [
+     "scrapy/scrapy@91d87364637c"
+    ],
+    "servers": [
+     "pyright-1.1.414"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "3"
+    ],
+    "vids": [
+     "08417dd958ba-v02"
+    ]
+   },
+   "representative": "08417dd958ba-v02",
+   "ops_before": 5,
+   "ops_after": 2,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/microsoft/pyright/issues/375",
+   "seconds": {
+    "reduction": 205.2,
+    "issues": 2.4
+   },
+   "report": "data/lsptest/runs/main_v2/triage/pyright-r1-hover-text-h5-f24c4e/report.md"
+  },
+  {
+   "gid": "pyright-r1-hover-text-h8-2a8227",
+   "signature": "pyright|r1_history|hover:text",
+   "method": "hover",
+   "family": "H8",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "95c1b8d86026"
+    ],
+    "projects": [
+     "soimort/you-get@049548f3f3f3"
+    ],
+    "servers": [
+     "pyright-1.1.414"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "2"
+    ],
+    "vids": [
+     "95c1b8d86026-v00"
+    ]
+   },
+   "representative": "95c1b8d86026-v00",
+   "ops_before": 13,
+   "ops_after": 4,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/microsoft/pyright/issues/11581",
+   "seconds": {
+    "reduction": 322.1,
+    "issues": 2.2
+   },
+   "report": "data/lsptest/runs/main_v2/triage/pyright-r1-hover-text-h8-2a8227/report.md"
+  },
+  {
+   "gid": "pyright-r1-references-extra-h4-a63d47",
+   "signature": "pyright|r1_history|references:extra",
+   "method": "references",
+   "family": "H4",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "754b6ab9087f"
+    ],
+    "projects": [
+     "usestrix/strix@56f7d45388e6"
+    ],
+    "servers": [
+     "pyright-1.1.414"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "2"
+    ],
+    "vids": [
+     "754b6ab9087f-v00"
+    ]
+   },
+   "representative": "754b6ab9087f-v00",
+   "ops_before": 5,
+   "ops_after": 2,
+   "lines": "",
+   "matches": 6,
+   "top_match": "https://github.com/microsoft/pyright/issues/10279",
+   "seconds": {
+    "reduction": 236.7,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v2/triage/pyright-r1-references-extra-h4-a63d47/report.md"
+  },
+  {
+   "gid": "pyright-r1-references-extra-h9-37c1a2",
+   "signature": "pyright|r1_history|references:extra",
+   "method": "references",
+   "family": "H9",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "08417dd958ba"
+    ],
+    "projects": [
+     "scrapy/scrapy@91d87364637c"
+    ],
+    "servers": [
+     "pyright-1.1.414"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "3"
+    ],
+    "vids": [
+     "08417dd958ba-v00"
+    ]
+   },
+   "representative": "08417dd958ba-v00",
+   "ops_before": 14,
+   "ops_after": 1,
+   "lines": "",
+   "matches": 5,
+   "top_match": "https://github.com/microsoft/pyright/issues/10279",
+   "seconds": {
+    "reduction": 253.4,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v2/triage/pyright-r1-references-extra-h9-37c1a2/report.md"
+  },
+  {
+   "gid": "pyright-r1-references-missing-h5-64453c",
+   "signature": "pyright|r1_history|references:missing",
+   "method": "references",
+   "family": "H5",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "08417dd958ba"
+    ],
+    "projects": [
+     "scrapy/scrapy@91d87364637c"
+    ],
+    "servers": [
+     "pyright-1.1.414"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "3"
+    ],
+    "vids": [
+     "08417dd958ba-v03"
+    ]
+   },
+   "representative": "08417dd958ba-v03",
+   "ops_before": 5,
+   "ops_after": 2,
+   "lines": "",
+   "matches": 7,
+   "top_match": "https://github.com/microsoft/pyright/issues/375",
+   "seconds": {
+    "reduction": 208.3,
+    "issues": 0.1
+   },
+   "report": "data/lsptest/runs/main_v2/triage/pyright-r1-references-missing-h5-64453c/report.md"
+  },
+  {
+   "gid": "pyright-r1-signaturehelp-changed-h9-846c6c",
+   "signature": "pyright|r1_history|signatureHelp:changed",
+   "method": "signatureHelp",
+   "family": "H9",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "ed216fc8dca5"
+    ],
+    "projects": [
+     "ultralytics/yolov5@402e17ddf820"
+    ],
+    "servers": [
+     "pyright-1.1.414"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "3"
+    ],
+    "vids": [
+     "ed216fc8dca5-v00"
+    ]
+   },
+   "representative": "ed216fc8dca5-v00",
+   "ops_before": 17,
+   "ops_after": 1,
+   "lines": "",
+   "matches": 2,
+   "top_match": "https://github.com/microsoft/pyright/issues/4813",
+   "seconds": {
+    "reduction": 283.4,
+    "issues": 1.7
+   },
+   "report": "data/lsptest/runs/main_v2/triage/pyright-r1-signaturehelp-changed-h9-846c6c/report.md"
+  },
+  {
+   "gid": "pyright-r1-typedefinition-extra-h2-764582",
+   "signature": "pyright|r1_history|typeDefinition:extra",
+   "method": "typeDefinition",
+   "family": "H2",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "de1a4347e97f"
+    ],
+    "projects": [
+     "soimort/you-get@049548f3f3f3"
+    ],
+    "servers": [
+     "pyright-1.1.414"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "3"
+    ],
+    "vids": [
+     "de1a4347e97f-v01"
+    ]
+   },
+   "representative": "de1a4347e97f-v01",
+   "ops_before": 7,
+   "ops_after": 4,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/microsoft/pyright/issues/3860",
+   "seconds": {
+    "reduction": 179.3,
+    "issues": 4.8
+   },
+   "report": "data/lsptest/runs/main_v2/triage/pyright-r1-typedefinition-extra-h2-764582/report.md"
+  },
+  {
+   "gid": "pyright-r1-typedefinition-extra-h8-9c51fd",
+   "signature": "pyright|r1_history|typeDefinition:extra",
+   "method": "typeDefinition",
+   "family": "H8",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "95c1b8d86026"
+    ],
+    "projects": [
+     "soimort/you-get@049548f3f3f3"
+    ],
+    "servers": [
+     "pyright-1.1.414"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "2"
+    ],
+    "vids": [
+     "95c1b8d86026-v01"
+    ]
+   },
+   "representative": "95c1b8d86026-v01",
+   "ops_before": 13,
+   "ops_after": 4,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/microsoft/pyright/issues/11581",
+   "seconds": {
+    "reduction": 322.0,
+    "issues": 2.1
+   },
+   "report": "data/lsptest/runs/main_v2/triage/pyright-r1-typedefinition-extra-h8-9c51fd/report.md"
+  },
+  {
+   "gid": "pyright-r3-definitionconsistency-extra-d-3d112f",
+   "signature": "pyright|r3_routes|definitionConsistency:extra",
+   "method": "definitionConsistency",
+   "family": "d",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "177d4d657921"
+    ],
+    "projects": [
+     "FoundationAgents/OpenManus@3309bf4e416f"
+    ],
+    "servers": [
+     "pyright-1.1.414"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "177d4d657921-v00"
+    ]
+   },
+   "representative": "177d4d657921-v00",
+   "ops_before": 0,
+   "ops_after": 0,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/microsoft/pyright/issues/795",
+   "seconds": {
+    "reduction": 24.4,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v2/triage/pyright-r3-definitionconsistency-extra-d-3d112f/report.md"
+  },
+  {
+   "gid": "pyright-r3-definitionconsistency-lost-d-a4eaed",
+   "signature": "pyright|r3_routes|definitionConsistency:lost",
+   "method": "definitionConsistency",
+   "family": "d",
+   "members": 3,
+   "summary": {
+    "members": 3,
+    "runs": [
+     "0af68d3ab9f4",
+     "0bf7a1920787",
+     "2d8bb2d806d3"
+    ],
+    "projects": [
+     "Alishahryar1/free-claude-code@1f8b1fd7d054",
+     "scrapy/scrapy@91d87364637c",
+     "virattt/ai-hedge-fund@7d897a002c26"
+    ],
+    "servers": [
+     "pyright-1.1.414"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "0af68d3ab9f4-v00",
+     "0bf7a1920787-v00",
+     "2d8bb2d806d3-v01"
+    ]
+   },
+   "representative": "0af68d3ab9f4-v00",
+   "ops_before": 0,
+   "ops_after": 0,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/microsoft/pyright/issues/795",
+   "seconds": {
+    "reduction": 49.2,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v2/triage/pyright-r3-definitionconsistency-lost-d-a4eaed/report.md"
+  },
+  {
+   "gid": "pyright-r3-definitionconsistency-missing-d-81a7e5",
+   "signature": "pyright|r3_routes|definitionConsistency:missing",
+   "method": "definitionConsistency",
+   "family": "d",
+   "members": 3,
+   "summary": {
+    "members": 3,
+    "runs": [
+     "177d4d657921",
+     "60a8740b7da9",
+     "d3ee1c1f093d"
+    ],
+    "projects": [
+     "FoundationAgents/OpenManus@3309bf4e416f",
+     "soimort/you-get@049548f3f3f3",
+     "ultralytics/yolov5@402e17ddf820"
+    ],
+    "servers": [
+     "pyright-1.1.414"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1",
+     "2"
+    ],
+    "vids": [
+     "177d4d657921-v01",
+     "60a8740b7da9-v00",
+     "d3ee1c1f093d-v00"
+    ]
+   },
+   "representative": "177d4d657921-v01",
+   "ops_before": 0,
+   "ops_after": 0,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/microsoft/pyright/issues/795",
+   "seconds": {
+    "reduction": 24.5,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v2/triage/pyright-r3-definitionconsistency-missing-d-81a7e5/report.md"
+  },
+  {
+   "gid": "pyright-r3-highlightvsreferences-gained-c-3118cc",
+   "signature": "pyright|r3_routes|highlightVsReferences:gained",
+   "method": "highlightVsReferences",
+   "family": "c",
+   "members": 3,
+   "summary": {
+    "members": 3,
+    "runs": [
+     "2d8bb2d806d3",
+     "a6ea07767325",
+     "ea51aff58585"
+    ],
+    "projects": [
+     "karpathy/nanochat@92d63d4e8bb4",
+     "scrapy/scrapy@91d87364637c",
+     "ultralytics/yolov5@402e17ddf820"
+    ],
+    "servers": [
+     "pyright-1.1.414"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "2d8bb2d806d3-v00",
+     "a6ea07767325-v00",
+     "ea51aff58585-v00"
+    ]
+   },
+   "representative": "2d8bb2d806d3-v00",
+   "ops_before": 0,
+   "ops_after": 0,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/microsoft/pyright/issues/10818",
+   "seconds": {
+    "reduction": 25.4,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v2/triage/pyright-r3-highlightvsreferences-gained-c-3118cc/report.md"
+  },
+  {
+   "gid": "pyright-r4-completioninsert-gained-completion-79a584",
+   "signature": "pyright|r4_edits|completionInsert:gained",
+   "method": "completionInsert",
+   "family": "completion",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "41dcb7100681"
+    ],
+    "projects": [
+     "virattt/ai-hedge-fund@7d897a002c26"
+    ],
+    "servers": [
+     "pyright-1.1.414"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "2"
+    ],
+    "vids": [
+     "41dcb7100681-v00"
+    ]
+   },
+   "representative": "41dcb7100681-v00",
+   "ops_before": 0,
+   "ops_after": 0,
+   "lines": "",
+   "matches": 0,
+   "top_match": "",
+   "seconds": {
+    "reduction": 65.4,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v2/triage/pyright-r4-completioninsert-gained-completion-79a584/report.md"
+  },
+  {
+   "gid": "rust-analyzer-r2-completionresolve-changed-completion-3170a1",
+   "signature": "rust-analyzer|r2_handles|completionResolve:changed",
+   "method": "completionResolve",
+   "family": "completion",
+   "members": 3,
+   "summary": {
+    "members": 3,
+    "runs": [
+     "06365021d85d",
+     "5658db67a725",
+     "f10c9681a7d8"
+    ],
+    "projects": [
+     "casey/just@6119e6aff518",
+     "googleworkspace/cli@a3768d0e82ad",
+     "iced-rs/iced@0ef42477fb6f"
+    ],
+    "servers": [
+     "rust-analyzer-2026-09-21"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "06365021d85d-v00",
+     "5658db67a725-v00",
+     "f10c9681a7d8-v00"
+    ]
+   },
+   "representative": "06365021d85d-v00",
+   "ops_before": 2,
+   "ops_after": 2,
+   "lines": "",
+   "matches": 6,
+   "top_match": "https://github.com/rust-lang/rust-analyzer/issues/16240",
+   "seconds": {
+    "reduction": 315.3,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v2/triage/rust-analyzer-r2-completionresolve-changed-completion-3170a1/report.md"
+  },
+  {
+   "gid": "rust-analyzer-r3-definitionconsistency-changed-d-2c6179",
+   "signature": "rust-analyzer|r3_routes|definitionConsistency:changed",
+   "method": "definitionConsistency",
+   "family": "d",
+   "members": 3,
+   "summary": {
+    "members": 3,
+    "runs": [
+     "596487af6dac",
+     "618a15652fdc",
+     "7f3fa823fc51"
+    ],
+    "projects": [
+     "googleworkspace/cli@a3768d0e82ad",
+     "niri-wm/niri@5f4469b6a992",
+     "yewstack/yew@bfa6c19af971"
+    ],
+    "servers": [
+     "rust-analyzer-2026-09-21"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "596487af6dac-v00",
+     "618a15652fdc-v00",
+     "7f3fa823fc51-v01"
+    ]
+   },
+   "representative": "596487af6dac-v00",
+   "ops_before": 0,
+   "ops_after": 0,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/rust-lang/rust-analyzer/issues/8373",
+   "seconds": {
+    "reduction": 574.6,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v2/triage/rust-analyzer-r3-definitionconsistency-changed-d-2c6179/report.md"
+  },
+  {
+   "gid": "rust-analyzer-r3-definitionconsistency-missing-d-586fd8",
+   "signature": "rust-analyzer|r3_routes|definitionConsistency:missing",
+   "method": "definitionConsistency",
+   "family": "d",
+   "members": 3,
+   "summary": {
+    "members": 3,
+    "runs": [
+     "53dd5e55330e",
+     "618a15652fdc",
+     "e88352c9a5ba"
+    ],
+    "projects": [
+     "casey/just@6119e6aff518",
+     "niri-wm/niri@5f4469b6a992",
+     "yewstack/yew@bfa6c19af971"
+    ],
+    "servers": [
+     "rust-analyzer-2026-09-21"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1",
+     "2"
+    ],
+    "vids": [
+     "53dd5e55330e-v00",
+     "618a15652fdc-v02",
+     "e88352c9a5ba-v00"
+    ]
+   },
+   "representative": "53dd5e55330e-v00",
+   "ops_before": 0,
+   "ops_after": 0,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/rust-lang/rust-analyzer/issues/8373",
+   "seconds": {
+    "reduction": 236.3,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v2/triage/rust-analyzer-r3-definitionconsistency-missing-d-586fd8/report.md"
+  },
+  {
+   "gid": "rust-analyzer-r3-diagnostics-missing-inactive-code-a-0b07f0",
+   "signature": "rust-analyzer|r3_routes|diagnostics:missing:inactive_code",
+   "method": "diagnostics",
+   "family": "a",
+   "members": 3,
+   "summary": {
+    "members": 3,
+    "runs": [
+     "7f3fa823fc51",
+     "d3208cd48930",
+     "e6a377a4f59c"
+    ],
+    "projects": [
+     "googleworkspace/cli@a3768d0e82ad",
+     "sharkdp/hyperfine@0d6ade930afc"
+    ],
+    "servers": [
+     "rust-analyzer-2026-09-21"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1",
+     "2"
+    ],
+    "vids": [
+     "7f3fa823fc51-v02",
+     "d3208cd48930-v00",
+     "e6a377a4f59c-v00"
+    ]
+   },
+   "representative": "7f3fa823fc51-v02",
+   "ops_before": 0,
+   "ops_after": 0,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/rust-lang/rust-analyzer/issues/18375",
+   "seconds": {
+    "reduction": 557.6,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v2/triage/rust-analyzer-r3-diagnostics-missing-inactive-code-a-0b07f0/report.md"
+  },
+  {
+   "gid": "rust-analyzer-r3-diagnostics-missing-unlinked-file-a-efb484",
+   "signature": "rust-analyzer|r3_routes|diagnostics:missing:unlinked-file",
+   "method": "diagnostics",
+   "family": "a",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "123013a0b0a6"
+    ],
+    "projects": [
+     "yewstack/yew@bfa6c19af971"
+    ],
+    "servers": [
+     "rust-analyzer-2026-09-21"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "2"
+    ],
+    "vids": [
+     "123013a0b0a6-v00"
+    ]
+   },
+   "representative": "123013a0b0a6-v00",
+   "ops_before": 0,
+   "ops_after": 0,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/rust-lang/rust-analyzer/issues/18375",
+   "seconds": {
+    "reduction": 780.3,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v2/triage/rust-analyzer-r3-diagnostics-missing-unlinked-file-a-efb484/report.md"
+  },
+  {
+   "gid": "rust-analyzer-r3-highlightvsreferences-extra-c-c2bfed",
+   "signature": "rust-analyzer|r3_routes|highlightVsReferences:extra",
+   "method": "highlightVsReferences",
+   "family": "c",
+   "members": 3,
+   "summary": {
+    "members": 3,
+    "runs": [
+     "142f3ee23060",
+     "618a15652fdc",
+     "bf86f7169552"
+    ],
+    "projects": [
+     "cloudflare/pingora@4487f7b2ab50",
+     "iced-rs/iced@0ef42477fb6f",
+     "yewstack/yew@bfa6c19af971"
+    ],
+    "servers": [
+     "rust-analyzer-2026-09-21"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1",
+     "2"
+    ],
+    "vids": [
+     "142f3ee23060-v00",
+     "618a15652fdc-v01",
+     "bf86f7169552-v00"
+    ]
+   },
+   "representative": "142f3ee23060-v00",
+   "ops_before": 0,
+   "ops_after": 0,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/rust-lang/rust-analyzer/issues/18703",
+   "seconds": {
+    "reduction": 915.3,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v2/triage/rust-analyzer-r3-highlightvsreferences-extra-c-c2bfed/report.md"
+  },
+  {
+   "gid": "rust-analyzer-r3-semantictokensrange-changed-b-b6e28b",
+   "signature": "rust-analyzer|r3_routes|semanticTokensRange:changed",
+   "method": "semanticTokensRange",
+   "family": "b",
+   "members": 3,
+   "summary": {
+    "members": 3,
+    "runs": [
+     "7f3fa823fc51",
+     "8461dcc24804",
+     "b3b15cccff7d"
+    ],
+    "projects": [
+     "googleworkspace/cli@a3768d0e82ad",
+     "h4ckf0r0day/obscura@0e17221dbb55",
+     "tokio-rs/tokio@3930bd182cb1"
+    ],
+    "servers": [
+     "rust-analyzer-2026-09-21"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1",
+     "2"
+    ],
+    "vids": [
+     "7f3fa823fc51-v00",
+     "8461dcc24804-v00",
+     "b3b15cccff7d-v00"
+    ]
+   },
+   "representative": "7f3fa823fc51-v00",
+   "ops_before": 0,
+   "ops_after": 0,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/rust-lang/rust-analyzer/issues/23199",
+   "seconds": {
+    "reduction": 166.3,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v2/triage/rust-analyzer-r3-semantictokensrange-changed-b-b6e28b/report.md"
+  },
+  {
+   "gid": "rust-analyzer-r4-completioninsert-gained-completion-e99b79",
+   "signature": "rust-analyzer|r4_edits|completionInsert:gained",
+   "method": "completionInsert",
+   "family": "completion",
+   "members": 3,
+   "summary": {
+    "members": 3,
+    "runs": [
+     "29862883b83e",
+     "3e6cc718fd8c",
+     "d74f4de59050"
+    ],
+    "projects": [
+     "casey/just@6119e6aff518",
+     "iced-rs/iced@0ef42477fb6f",
+     "tokio-rs/tokio@3930bd182cb1"
+    ],
+    "servers": [
+     "rust-analyzer-2026-09-21"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1",
+     "2"
+    ],
+    "vids": [
+     "29862883b83e-v00",
+     "3e6cc718fd8c-v00",
+     "d74f4de59050-v00"
+    ]
+   },
+   "representative": "29862883b83e-v00",
+   "ops_before": 0,
+   "ops_after": 0,
+   "lines": "",
+   "matches": 0,
+   "top_match": "",
+   "seconds": {
+    "reduction": 326.4,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v2/triage/rust-analyzer-r4-completioninsert-gained-completion-e99b79/report.md"
+  },
+  {
+   "gid": "rust-analyzer-r4-diagnostics-extra-e0063-mutation-m1-aeef82",
+   "signature": "rust-analyzer|r4_edits|diagnostics:extra:E0063",
+   "method": "diagnostics",
+   "family": "mutation:M1",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "ebf6989f5480"
+    ],
+    "projects": [
+     "googleworkspace/cli@a3768d0e82ad"
+    ],
+    "servers": [
+     "rust-analyzer-2026-09-21"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "2"
+    ],
+    "vids": [
+     "ebf6989f5480-v00"
+    ]
+   },
+   "representative": "ebf6989f5480-v00",
+   "ops_before": 3,
+   "ops_after": 3,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/rust-lang/rust-analyzer/issues/23193",
+   "seconds": {
+    "reduction": 351.7,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v2/triage/rust-analyzer-r4-diagnostics-extra-e0063-mutation-m1-aeef82/report.md"
+  },
+  {
+   "gid": "rust-analyzer-r4-diagnostics-extra-e0560-mutation-m2-1f508d",
+   "signature": "rust-analyzer|r4_edits|diagnostics:extra:E0560",
+   "method": "diagnostics",
+   "family": "mutation:M2",
+   "members": 2,
+   "summary": {
+    "members": 2,
+    "runs": [
+     "0082cb0ebd81",
+     "0e0a9320235f"
+    ],
+    "projects": [
+     "cloudflare/pingora@4487f7b2ab50",
+     "yewstack/yew@bfa6c19af971"
+    ],
+    "servers": [
+     "rust-analyzer-2026-09-21"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1",
+     "2"
+    ],
+    "vids": [
+     "0082cb0ebd81-v01",
+     "0e0a9320235f-v00"
+    ]
+   },
+   "representative": "0082cb0ebd81-v01",
+   "ops_before": 3,
+   "ops_after": 3,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/rust-lang/rust-analyzer/issues/23193",
+   "seconds": {
+    "reduction": 1498.0,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v2/triage/rust-analyzer-r4-diagnostics-extra-e0560-mutation-m2-1f508d/report.md"
+  },
+  {
+   "gid": "rust-analyzer-r4-diagnostics-extra-inactive-code-quickfix-f2d641",
+   "signature": "rust-analyzer|r4_edits|diagnostics:extra:inactive_code",
+   "method": "diagnostics",
+   "family": "quickfix",
+   "members": 3,
+   "summary": {
+    "members": 3,
+    "runs": [
+     "0082cb0ebd81",
+     "2bb24129ce4f",
+     "54bb2780afdc"
+    ],
+    "projects": [
+     "cloudflare/pingora@4487f7b2ab50",
+     "h4ckf0r0day/obscura@0e17221dbb55",
+     "tokio-rs/tokio@3930bd182cb1"
+    ],
+    "servers": [
+     "rust-analyzer-2026-09-21"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1",
+     "2"
+    ],
+    "vids": [
+     "0082cb0ebd81-v00",
+     "2bb24129ce4f-v00",
+     "54bb2780afdc-v00"
+    ]
+   },
+   "representative": "0082cb0ebd81-v00",
+   "ops_before": 0,
+   "ops_after": 0,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/rust-lang/rust-analyzer/issues/16642",
+   "seconds": {
+    "reduction": 1531.1,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v2/triage/rust-analyzer-r4-diagnostics-extra-inactive-code-quickfix-f2d641/report.md"
+  },
+  {
+   "gid": "rust-analyzer-r4-syntax-gained-mutation-m1-7af5e4",
+   "signature": "rust-analyzer|r4_edits|syntax:gained",
+   "method": "syntax",
+   "family": "mutation:M1",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "ebf6989f5480"
+    ],
+    "projects": [
+     "googleworkspace/cli@a3768d0e82ad"
+    ],
+    "servers": [
+     "rust-analyzer-2026-09-21"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "2"
+    ],
+    "vids": [
+     "ebf6989f5480-v01"
+    ]
+   },
+   "representative": "ebf6989f5480-v01",
+   "ops_before": 3,
+   "ops_after": 3,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/rust-lang/rust-analyzer/issues/18673",
+   "seconds": {
+    "reduction": 457.7,
+    "issues": 4.2
+   },
+   "report": "data/lsptest/runs/main_v2/triage/rust-analyzer-r4-syntax-gained-mutation-m1-7af5e4/report.md"
+  },
+  {
+   "gid": "rust-analyzer-r5-codeaction-changed-t6-4ee734",
+   "signature": "rust-analyzer|r5_transforms|codeAction:changed",
+   "method": "codeAction",
+   "family": "T6",
+   "members": 2,
+   "summary": {
+    "members": 2,
+    "runs": [
+     "0c1168881081",
+     "1d6da0dee94a"
+    ],
+    "projects": [
+     "casey/just@6119e6aff518",
+     "niri-wm/niri@5f4469b6a992"
+    ],
+    "servers": [
+     "rust-analyzer-2026-09-21"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1",
+     "2"
+    ],
+    "vids": [
+     "0c1168881081-v00",
+     "1d6da0dee94a-v00"
+    ]
+   },
+   "representative": "0c1168881081-v00",
+   "ops_before": 2,
+   "ops_after": 2,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/rust-lang/rust-analyzer/issues/23301",
+   "seconds": {
+    "reduction": 402.2,
+    "issues": 8.8
+   },
+   "report": "data/lsptest/runs/main_v2/triage/rust-analyzer-r5-codeaction-changed-t6-4ee734/report.md"
+  },
+  {
+   "gid": "rust-analyzer-r5-documentsymbol-changed-t6-a3a950",
+   "signature": "rust-analyzer|r5_transforms|documentSymbol:changed",
+   "method": "documentSymbol",
+   "family": "T6",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "42f7b233f3d9"
+    ],
+    "projects": [
+     "yewstack/yew@bfa6c19af971"
+    ],
+    "servers": [
+     "rust-analyzer-2026-09-21"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "2"
+    ],
+    "vids": [
+     "42f7b233f3d9-v00"
+    ]
+   },
+   "representative": "42f7b233f3d9-v00",
+   "ops_before": 2,
+   "ops_after": 2,
+   "lines": "",
+   "matches": 7,
+   "top_match": "https://github.com/rust-lang/rust-analyzer/issues/23301",
+   "seconds": {
+    "reduction": 679.2,
+    "issues": 6.8
+   },
+   "report": "data/lsptest/runs/main_v2/triage/rust-analyzer-r5-documentsymbol-changed-t6-a3a950/report.md"
+  },
+  {
+   "gid": "ts6-r1-codeaction-extra-h5-f48d27",
+   "signature": "ts6|r1_history|codeAction:extra",
+   "method": "codeAction",
+   "family": "H5",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "a1d24603cbb6"
+    ],
+    "projects": [
+     "hexojs/hexo@751e856691bf"
+    ],
+    "servers": [
+     "ts6-6.0.3"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "2"
+    ],
+    "vids": [
+     "a1d24603cbb6-v00"
+    ]
+   },
+   "representative": "a1d24603cbb6-v00",
+   "ops_before": 5,
+   "ops_after": 1,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/typescript-language-server/typescript-language-server/issues/878",
+   "seconds": {
+    "reduction": 291.1,
+    "issues": 4.3
+   },
+   "report": "data/lsptest/runs/main_v2/triage/ts6-r1-codeaction-extra-h5-f48d27/report.md"
+  },
+  {
+   "gid": "ts6-r1-codeaction-key-lost-h8-3e0e0f",
+   "signature": "ts6|r1_history|codeAction:key-lost",
+   "method": "codeAction",
+   "family": "H8",
+   "members": 2,
+   "summary": {
+    "members": 2,
+    "runs": [
+     "170b9b1e53a4",
+     "c88b141f4d7d"
+    ],
+    "projects": [
+     "solidjs/solid@4b62bc29e04b"
+    ],
+    "servers": [
+     "ts6-6.0.3"
+    ],
+    "timings": [
+     "race0",
+     "race200"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "170b9b1e53a4-v00",
+     "c88b141f4d7d-v00"
+    ]
+   },
+   "representative": "170b9b1e53a4-v00",
+   "ops_before": 10,
+   "ops_after": 3,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/typescript-language-server/typescript-language-server/issues/1052",
+   "seconds": {
+    "reduction": 309.0,
+    "issues": 4.4
+   },
+   "report": "data/lsptest/runs/main_v2/triage/ts6-r1-codeaction-key-lost-h8-3e0e0f/report.md"
+  },
+  {
+   "gid": "ts6-r1-completion-lost-h9-ce1ffc",
+   "signature": "ts6|r1_history|completion:lost",
+   "method": "completion",
+   "family": "H9",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "d943bb79c7d7"
+    ],
+    "projects": [
+     "mifi/lossless-cut@85cb95f6aeae"
+    ],
+    "servers": [
+     "ts6-6.0.3"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "2"
+    ],
+    "vids": [
+     "d943bb79c7d7-v00"
+    ]
+   },
+   "representative": "d943bb79c7d7-v00",
+   "ops_before": 12,
+   "ops_after": 8,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/typescript-language-server/typescript-language-server/issues/962",
+   "seconds": {
+    "reduction": 2275.0,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v2/triage/ts6-r1-completion-lost-h9-ce1ffc/report.md"
+  },
+  {
+   "gid": "ts6-r1-definition-lost-h9-898f29",
+   "signature": "ts6|r1_history|definition:lost",
+   "method": "definition",
+   "family": "H9",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "d943bb79c7d7"
+    ],
+    "projects": [
+     "mifi/lossless-cut@85cb95f6aeae"
+    ],
+    "servers": [
+     "ts6-6.0.3"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "2"
+    ],
+    "vids": [
+     "d943bb79c7d7-v01"
+    ]
+   },
+   "representative": "d943bb79c7d7-v01",
+   "ops_before": 12,
+   "ops_after": 7,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/typescript-language-server/typescript-language-server/issues/60",
+   "seconds": {
+    "reduction": 2053.9,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v2/triage/ts6-r1-definition-lost-h9-898f29/report.md"
+  },
+  {
+   "gid": "ts6-r1-diagnostics-extra-2307-7006-h9-8325a2",
+   "signature": "ts6|r1_history|diagnostics:extra:2307,7006",
+   "method": "diagnostics",
+   "family": "H9",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "d943bb79c7d7"
+    ],
+    "projects": [
+     "mifi/lossless-cut@85cb95f6aeae"
+    ],
+    "servers": [
+     "ts6-6.0.3"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "2"
+    ],
+    "vids": [
+     "d943bb79c7d7-v02"
+    ]
+   },
+   "representative": "d943bb79c7d7-v02",
+   "ops_before": 12,
+   "ops_after": 3,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/typescript-language-server/typescript-language-server/issues/1014",
+   "seconds": {
+    "reduction": 1377.2,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v2/triage/ts6-r1-diagnostics-extra-2307-7006-h9-8325a2/report.md"
+  },
+  {
+   "gid": "ts6-r1-diagnostics-moved-2875-h8-751ff9",
+   "signature": "ts6|r1_history|diagnostics:moved:2875",
+   "method": "diagnostics",
+   "family": "H8",
+   "members": 2,
+   "summary": {
+    "members": 2,
+    "runs": [
+     "170b9b1e53a4",
+     "c88b141f4d7d"
+    ],
+    "projects": [
+     "solidjs/solid@4b62bc29e04b"
+    ],
+    "servers": [
+     "ts6-6.0.3"
+    ],
+    "timings": [
+     "race0",
+     "race200"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "170b9b1e53a4-v01",
+     "c88b141f4d7d-v01"
+    ]
+   },
+   "representative": "170b9b1e53a4-v01",
+   "ops_before": 10,
+   "ops_after": 3,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/typescript-language-server/typescript-language-server/issues/803",
+   "seconds": {
+    "reduction": 256.8,
+    "issues": 8.8
+   },
+   "report": "data/lsptest/runs/main_v2/triage/ts6-r1-diagnostics-moved-2875-h8-751ff9/report.md"
+  },
+  {
+   "gid": "ts6-r1-documenthighlight-missing-h9-2e657a",
+   "signature": "ts6|r1_history|documentHighlight:missing",
+   "method": "documentHighlight",
+   "family": "H9",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "e760eab91233"
+    ],
+    "projects": [
+     "Gitlawb/openclaude@5cd11336caea"
+    ],
+    "servers": [
+     "ts6-6.0.3"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "2"
+    ],
+    "vids": [
+     "e760eab91233-v00"
+    ]
+   },
+   "representative": "e760eab91233-v00",
+   "ops_before": 11,
+   "ops_after": 3,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/microsoft/TypeScript/issues/44099",
+   "seconds": {
+    "reduction": 1769.1,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v2/triage/ts6-r1-documenthighlight-missing-h9-2e657a/report.md"
+  },
+  {
+   "gid": "ts6-r1-hover-text-h5-b3855d",
+   "signature": "ts6|r1_history|hover:text",
+   "method": "hover",
+   "family": "H5",
+   "members": 2,
+   "summary": {
+    "members": 2,
+    "runs": [
+     "b5ca03424592",
+     "fd39a2ed7ead"
+    ],
+    "projects": [
+     "DayuanJiang/next-ai-draw-io@58b73ef761d8"
+    ],
+    "servers": [
+     "ts6-6.0.3"
+    ],
+    "timings": [
+     "race0",
+     "settled"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "b5ca03424592-v00",
+     "fd39a2ed7ead-v00"
+    ]
+   },
+   "representative": "b5ca03424592-v00",
+   "ops_before": 5,
+   "ops_after": 1,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/typescript-language-server/typescript-language-server/issues/878",
+   "seconds": {
+    "reduction": 568.4,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v2/triage/ts6-r1-hover-text-h5-b3855d/report.md"
+  },
+  {
+   "gid": "ts6-r1-hover-text-h8-2ce168",
+   "signature": "ts6|r1_history|hover:text",
+   "method": "hover",
+   "family": "H8",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "df02b705037e"
+    ],
+    "projects": [
+     "vadimdemedes/ink@02ae1e59e7c2"
+    ],
+    "servers": [
+     "ts6-6.0.3"
+    ],
+    "timings": [
+     "race0"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "df02b705037e-v00"
+    ]
+   },
+   "representative": "df02b705037e-v00",
+   "ops_before": 10,
+   "ops_after": 2,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/typescript-language-server/typescript-language-server/issues/1014",
+   "seconds": {
+    "reduction": 338.4,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v2/triage/ts6-r1-hover-text-h8-2ce168/report.md"
+  },
+  {
+   "gid": "ts6-r1-inlayhint-changed-h8-8f6569",
+   "signature": "ts6|r1_history|inlayHint:changed",
+   "method": "inlayHint",
+   "family": "H8",
+   "members": 2,
+   "summary": {
+    "members": 2,
+    "runs": [
+     "b6a8f0579f23",
+     "df02b705037e"
+    ],
+    "projects": [
+     "vadimdemedes/ink@02ae1e59e7c2"
+    ],
+    "servers": [
+     "ts6-6.0.3"
+    ],
+    "timings": [
+     "race0",
+     "race200"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "b6a8f0579f23-v00",
+     "df02b705037e-v01"
+    ]
+   },
+   "representative": "b6a8f0579f23-v00",
+   "ops_before": 10,
+   "ops_after": 2,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/typescript-language-server/typescript-language-server/issues/738",
+   "seconds": {
+    "reduction": 376.8,
+    "issues": 4.4
+   },
+   "report": "data/lsptest/runs/main_v2/triage/ts6-r1-inlayhint-changed-h8-8f6569/report.md"
+  },
+  {
+   "gid": "ts6-r1-inlayhint-changed-h9-b9d052",
+   "signature": "ts6|r1_history|inlayHint:changed",
+   "method": "inlayHint",
+   "family": "H9",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "e760eab91233"
+    ],
+    "projects": [
+     "Gitlawb/openclaude@5cd11336caea"
+    ],
+    "servers": [
+     "ts6-6.0.3"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "2"
+    ],
+    "vids": [
+     "e760eab91233-v01"
+    ]
+   },
+   "representative": "e760eab91233-v01",
+   "ops_before": 11,
+   "ops_after": 11,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/typescript-language-server/typescript-language-server/issues/738",
+   "seconds": {
+    "reduction": 2597.8,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v2/triage/ts6-r1-inlayhint-changed-h9-b9d052/report.md"
+  },
+  {
+   "gid": "ts6-r1-references-missing-h5-cc8950",
+   "signature": "ts6|r1_history|references:missing",
+   "method": "references",
+   "family": "H5",
+   "members": 3,
+   "summary": {
+    "members": 3,
+    "runs": [
+     "0d6f841395f8",
+     "1befede8f195",
+     "31aa7fe616c9"
+    ],
+    "projects": [
+     "Gitlawb/openclaude@5cd11336caea",
+     "mifi/lossless-cut@85cb95f6aeae",
+     "umami-software/umami@12ad773d621f"
+    ],
+    "servers": [
+     "ts6-6.0.3"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "0d6f841395f8-v00",
+     "1befede8f195-v00",
+     "31aa7fe616c9-v00"
+    ]
+   },
+   "representative": "0d6f841395f8-v00",
+   "ops_before": 5,
+   "ops_after": 5,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/typescript-language-server/typescript-language-server/issues/878",
+   "seconds": {
+    "reduction": 1212.8,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v2/triage/ts6-r1-references-missing-h5-cc8950/report.md"
+  },
+  {
+   "gid": "ts6-r1-semantictokens-changed-h9-c4368c",
+   "signature": "ts6|r1_history|semanticTokens:changed",
+   "method": "semanticTokens",
+   "family": "H9",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "d943bb79c7d7"
+    ],
+    "projects": [
+     "mifi/lossless-cut@85cb95f6aeae"
+    ],
+    "servers": [
+     "ts6-6.0.3"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "2"
+    ],
+    "vids": [
+     "d943bb79c7d7-v03"
+    ]
+   },
+   "representative": "d943bb79c7d7-v03",
+   "ops_before": 12,
+   "ops_after": 3,
+   "lines": "",
+   "matches": 3,
+   "top_match": "https://github.com/typescript-language-server/typescript-language-server/issues/753",
+   "seconds": {
+    "reduction": 1472.5,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v2/triage/ts6-r1-semantictokens-changed-h9-c4368c/report.md"
+  },
+  {
+   "gid": "ts6-r1-signaturehelp-changed-h5-db5a5e",
+   "signature": "ts6|r1_history|signatureHelp:changed",
+   "method": "signatureHelp",
+   "family": "H5",
+   "members": 3,
+   "summary": {
+    "members": 3,
+    "runs": [
+     "83d8f26e74ae",
+     "b5ca03424592",
+     "fd39a2ed7ead"
+    ],
+    "projects": [
+     "DayuanJiang/next-ai-draw-io@58b73ef761d8"
+    ],
+    "servers": [
+     "ts6-6.0.3"
+    ],
+    "timings": [
+     "race0",
+     "race200",
+     "settled"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "83d8f26e74ae-v00",
+     "b5ca03424592-v01",
+     "fd39a2ed7ead-v01"
+    ]
+   },
+   "representative": "83d8f26e74ae-v00",
+   "ops_before": 5,
+   "ops_after": 1,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/typescript-language-server/typescript-language-server/issues/878",
+   "seconds": {
+    "reduction": 314.5,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v2/triage/ts6-r1-signaturehelp-changed-h5-db5a5e/report.md"
+  },
+  {
+   "gid": "ts6-r1-typedefinition-lost-h9-b52749",
+   "signature": "ts6|r1_history|typeDefinition:lost",
+   "method": "typeDefinition",
+   "family": "H9",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "d943bb79c7d7"
+    ],
+    "projects": [
+     "mifi/lossless-cut@85cb95f6aeae"
+    ],
+    "servers": [
+     "ts6-6.0.3"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "2"
+    ],
+    "vids": [
+     "d943bb79c7d7-v04"
+    ]
+   },
+   "representative": "d943bb79c7d7-v04",
+   "ops_before": 12,
+   "ops_after": 7,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/typescript-language-server/typescript-language-server/issues/277",
+   "seconds": {
+    "reduction": 1926.2,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v2/triage/ts6-r1-typedefinition-lost-h9-b52749/report.md"
+  },
+  {
+   "gid": "ts6-r3-definitionconsistency-changed-d-bf619d",
+   "signature": "ts6|r3_routes|definitionConsistency:changed",
+   "method": "definitionConsistency",
+   "family": "d",
+   "members": 3,
+   "summary": {
+    "members": 3,
+    "runs": [
+     "02943665191c",
+     "1bf1561663cf",
+     "b7141042f9c0"
+    ],
+    "projects": [
+     "solidjs/solid@4b62bc29e04b",
+     "umami-software/umami@12ad773d621f",
+     "vadimdemedes/ink@02ae1e59e7c2"
+    ],
+    "servers": [
+     "ts6-6.0.3"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "02943665191c-v01",
+     "1bf1561663cf-v00",
+     "b7141042f9c0-v00"
+    ]
+   },
+   "representative": "02943665191c-v01",
+   "ops_before": 0,
+   "ops_after": 0,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/typescript-language-server/typescript-language-server/issues/795",
+   "seconds": {
+    "reduction": 91.6,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v2/triage/ts6-r3-definitionconsistency-changed-d-bf619d/report.md"
+  },
+  {
+   "gid": "ts6-r3-definitionconsistency-extra-d-1fb668",
+   "signature": "ts6|r3_routes|definitionConsistency:extra",
+   "method": "definitionConsistency",
+   "family": "d",
+   "members": 3,
+   "summary": {
+    "members": 3,
+    "runs": [
+     "08c8c634e424",
+     "3ef21bac3843",
+     "c9b971c0e64a"
+    ],
+    "projects": [
+     "hexojs/hexo@751e856691bf",
+     "solidjs/solid@4b62bc29e04b",
+     "vadimdemedes/ink@02ae1e59e7c2"
+    ],
+    "servers": [
+     "ts6-6.0.3"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1",
+     "2"
+    ],
+    "vids": [
+     "08c8c634e424-v00",
+     "3ef21bac3843-v00",
+     "c9b971c0e64a-v00"
+    ]
+   },
+   "representative": "08c8c634e424-v00",
+   "ops_before": 0,
+   "ops_after": 0,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/typescript-language-server/typescript-language-server/issues/795",
+   "seconds": {
+    "reduction": 94.4,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v2/triage/ts6-r3-definitionconsistency-extra-d-1fb668/report.md"
+  },
+  {
+   "gid": "ts6-r3-definitionconsistency-lost-d-fb78dd",
+   "signature": "ts6|r3_routes|definitionConsistency:lost",
+   "method": "definitionConsistency",
+   "family": "d",
+   "members": 2,
+   "summary": {
+    "members": 2,
+    "runs": [
+     "14b6c42ad69a",
+     "3ef21bac3843"
+    ],
+    "projects": [
+     "DayuanJiang/next-ai-draw-io@58b73ef761d8",
+     "vadimdemedes/ink@02ae1e59e7c2"
+    ],
+    "servers": [
+     "ts6-6.0.3"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "2"
+    ],
+    "vids": [
+     "14b6c42ad69a-v00",
+     "3ef21bac3843-v01"
+    ]
+   },
+   "representative": "14b6c42ad69a-v00",
+   "ops_before": 0,
+   "ops_after": 0,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/typescript-language-server/typescript-language-server/issues/795",
+   "seconds": {
+    "reduction": 113.2,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v2/triage/ts6-r3-definitionconsistency-lost-d-fb78dd/report.md"
+  },
+  {
+   "gid": "ts6-r3-definitionconsistency-missing-d-0ab4de",
+   "signature": "ts6|r3_routes|definitionConsistency:missing",
+   "method": "definitionConsistency",
+   "family": "d",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "d6ece30a31a2"
+    ],
+    "projects": [
+     "umami-software/umami@12ad773d621f"
+    ],
+    "servers": [
+     "ts6-6.0.3"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "2"
+    ],
+    "vids": [
+     "d6ece30a31a2-v00"
+    ]
+   },
+   "representative": "d6ece30a31a2-v00",
+   "ops_before": 0,
+   "ops_after": 0,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/typescript-language-server/typescript-language-server/issues/795",
+   "seconds": {
+    "reduction": 143.3,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v2/triage/ts6-r3-definitionconsistency-missing-d-0ab4de/report.md"
+  },
+  {
+   "gid": "ts6-r3-highlightvsreferences-gained-c-e8db7c",
+   "signature": "ts6|r3_routes|highlightVsReferences:gained",
+   "method": "highlightVsReferences",
+   "family": "c",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "02943665191c"
+    ],
+    "projects": [
+     "solidjs/solid@4b62bc29e04b"
+    ],
+    "servers": [
+     "ts6-6.0.3"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "02943665191c-v00"
+    ]
+   },
+   "representative": "02943665191c-v00",
+   "ops_before": 0,
+   "ops_after": 0,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/typescript-language-server/typescript-language-server/issues/961",
+   "seconds": {
+    "reduction": 71.9,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v2/triage/ts6-r3-highlightvsreferences-gained-c-e8db7c/report.md"
+  },
+  {
+   "gid": "ts6-r4-diagnostics-changed-1064-2322-quickfix-d597f5",
+   "signature": "ts6|r4_edits|diagnostics:changed:1064,2322",
+   "method": "diagnostics",
+   "family": "quickfix",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "76cde4f3a703"
+    ],
+    "projects": [
+     "hexojs/hexo@751e856691bf"
+    ],
+    "servers": [
+     "ts6-6.0.3"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "2"
+    ],
+    "vids": [
+     "76cde4f3a703-v00"
+    ]
+   },
+   "representative": "76cde4f3a703-v00",
+   "ops_before": 0,
+   "ops_after": 0,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/typescript-language-server/typescript-language-server/issues/1136",
+   "seconds": {
+    "reduction": 157.0,
+    "issues": 9.7
+   },
+   "report": "data/lsptest/runs/main_v2/triage/ts6-r4-diagnostics-changed-1064-2322-quickfix-d597f5/report.md"
+  },
+  {
+   "gid": "ts6-r4-diagnostics-changed-mutation-m1-34f06f",
+   "signature": "ts6|r4_edits|diagnostics:changed:",
+   "method": "diagnostics",
+   "family": "mutation:M1",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "fa21096f3d2f"
+    ],
+    "projects": [
+     "solidjs/solid@4b62bc29e04b"
+    ],
+    "servers": [
+     "ts6-6.0.3"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "fa21096f3d2f-v02"
+    ]
+   },
+   "representative": "fa21096f3d2f-v02",
+   "ops_before": 3,
+   "ops_after": 3,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/typescript-language-server/typescript-language-server/issues/1136",
+   "seconds": {
+    "reduction": 145.2,
+    "issues": 4.4
+   },
+   "report": "data/lsptest/runs/main_v2/triage/ts6-r4-diagnostics-changed-mutation-m1-34f06f/report.md"
+  },
+  {
+   "gid": "ts6-r4-diagnostics-extra-17000-mutation-m3-07673d",
+   "signature": "ts6|r4_edits|diagnostics:extra:17000",
+   "method": "diagnostics",
+   "family": "mutation:M3",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "3a289ddada81"
+    ],
+    "projects": [
+     "umami-software/umami@12ad773d621f"
+    ],
+    "servers": [
+     "ts6-6.0.3"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "3a289ddada81-v01"
+    ]
+   },
+   "representative": "3a289ddada81-v01",
+   "ops_before": 3,
+   "ops_after": 3,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/typescript-language-server/typescript-language-server/issues/1014",
+   "seconds": {
+    "reduction": 298.9,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v2/triage/ts6-r4-diagnostics-extra-17000-mutation-m3-07673d/report.md"
+  },
+  {
+   "gid": "ts6-r4-diagnostics-extra-17002-2552-mutation-m1-727795",
+   "signature": "ts6|r4_edits|diagnostics:extra:17002,2552",
+   "method": "diagnostics",
+   "family": "mutation:M1",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "fa21096f3d2f"
+    ],
+    "projects": [
+     "solidjs/solid@4b62bc29e04b"
+    ],
+    "servers": [
+     "ts6-6.0.3"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "fa21096f3d2f-v00"
+    ]
+   },
+   "representative": "fa21096f3d2f-v00",
+   "ops_before": 3,
+   "ops_after": 3,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/typescript-language-server/typescript-language-server/issues/1014",
+   "seconds": {
+    "reduction": 143.2,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v2/triage/ts6-r4-diagnostics-extra-17002-2552-mutation-m1-727795/report.md"
+  },
+  {
+   "gid": "ts6-r4-diagnostics-extra-2304-mutation-m2-1554be",
+   "signature": "ts6|r4_edits|diagnostics:extra:2304",
+   "method": "diagnostics",
+   "family": "mutation:M2",
+   "members": 3,
+   "summary": {
+    "members": 3,
+    "runs": [
+     "3a289ddada81",
+     "3f88d8735aba",
+     "81b728f0bb1d"
+    ],
+    "projects": [
+     "Gitlawb/openclaude@5cd11336caea",
+     "date-fns/date-fns@f34149bb1ba1",
+     "umami-software/umami@12ad773d621f"
+    ],
+    "servers": [
+     "ts6-6.0.3"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "3a289ddada81-v00",
+     "3f88d8735aba-v00",
+     "81b728f0bb1d-v02"
+    ]
+   },
+   "representative": "3a289ddada81-v00",
+   "ops_before": 3,
+   "ops_after": 3,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/typescript-language-server/typescript-language-server/issues/1014",
+   "seconds": {
+    "reduction": 300.5,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v2/triage/ts6-r4-diagnostics-extra-2304-mutation-m2-1554be/report.md"
+  },
+  {
+   "gid": "ts6-r4-diagnostics-extra-2322-2345-mutation-m1-2566f2",
+   "signature": "ts6|r4_edits|diagnostics:extra:2322,2345",
+   "method": "diagnostics",
+   "family": "mutation:M1",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "76cde4f3a703"
+    ],
+    "projects": [
+     "hexojs/hexo@751e856691bf"
+    ],
+    "servers": [
+     "ts6-6.0.3"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "2"
+    ],
+    "vids": [
+     "76cde4f3a703-v01"
+    ]
+   },
+   "representative": "76cde4f3a703-v01",
+   "ops_before": 3,
+   "ops_after": 3,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/typescript-language-server/typescript-language-server/issues/1014",
+   "seconds": {
+    "reduction": 102.8,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v2/triage/ts6-r4-diagnostics-extra-2322-2345-mutation-m1-2566f2/report.md"
+  },
+  {
+   "gid": "ts6-r4-diagnostics-extra-2322-mutation-m1-dc576a",
+   "signature": "ts6|r4_edits|diagnostics:extra:2322",
+   "method": "diagnostics",
+   "family": "mutation:M1",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "81b728f0bb1d"
+    ],
+    "projects": [
+     "Gitlawb/openclaude@5cd11336caea"
+    ],
+    "servers": [
+     "ts6-6.0.3"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "81b728f0bb1d-v01"
+    ]
+   },
+   "representative": "81b728f0bb1d-v01",
+   "ops_before": 3,
+   "ops_after": 3,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/typescript-language-server/typescript-language-server/issues/1014",
+   "seconds": {
+    "reduction": 238.6,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v2/triage/ts6-r4-diagnostics-extra-2322-mutation-m1-dc576a/report.md"
+  },
+  {
+   "gid": "ts6-r4-diagnostics-extra-2322-mutation-m3-1879f3",
+   "signature": "ts6|r4_edits|diagnostics:extra:2322",
+   "method": "diagnostics",
+   "family": "mutation:M3",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "d76274109238"
+    ],
+    "projects": [
+     "pear-devs/pear-desktop@3ff0a86231fe"
+    ],
+    "servers": [
+     "ts6-6.0.3"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "2"
+    ],
+    "vids": [
+     "d76274109238-v01"
+    ]
+   },
+   "representative": "d76274109238-v01",
+   "ops_before": 3,
+   "ops_after": 3,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/typescript-language-server/typescript-language-server/issues/1014",
+   "seconds": {
+    "reduction": 218.9,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v2/triage/ts6-r4-diagnostics-extra-2322-mutation-m3-1879f3/report.md"
+  },
+  {
+   "gid": "ts6-r4-diagnostics-extra-2339-6133-mutation-m1-4cd363",
+   "signature": "ts6|r4_edits|diagnostics:extra:2339,6133",
+   "method": "diagnostics",
+   "family": "mutation:M1",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "634d2a95e4c7"
+    ],
+    "projects": [
+     "vadimdemedes/ink@02ae1e59e7c2"
+    ],
+    "servers": [
+     "ts6-6.0.3"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "634d2a95e4c7-v00"
+    ]
+   },
+   "representative": "634d2a95e4c7-v00",
+   "ops_before": 3,
+   "ops_after": 3,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/typescript-language-server/typescript-language-server/issues/1014",
+   "seconds": {
+    "reduction": 122.8,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v2/triage/ts6-r4-diagnostics-extra-2339-6133-mutation-m1-4cd363/report.md"
+  },
+  {
+   "gid": "ts6-r4-diagnostics-extra-2345-2554-mutation-m1-d523d0",
+   "signature": "ts6|r4_edits|diagnostics:extra:2345,2554",
+   "method": "diagnostics",
+   "family": "mutation:M1",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "5da3b411f176"
+    ],
+    "projects": [
+     "Gitlawb/openclaude@5cd11336caea"
+    ],
+    "servers": [
+     "ts6-6.0.3"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "2"
+    ],
+    "vids": [
+     "5da3b411f176-v00"
+    ]
+   },
+   "representative": "5da3b411f176-v00",
+   "ops_before": 3,
+   "ops_after": 3,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/typescript-language-server/typescript-language-server/issues/1014",
+   "seconds": {
+    "reduction": 248.2,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v2/triage/ts6-r4-diagnostics-extra-2345-2554-mutation-m1-d523d0/report.md"
+  },
+  {
+   "gid": "ts6-r4-diagnostics-extra-2353-mutation-m1-2b6bdb",
+   "signature": "ts6|r4_edits|diagnostics:extra:2353",
+   "method": "diagnostics",
+   "family": "mutation:M1",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "81b728f0bb1d"
+    ],
+    "projects": [
+     "Gitlawb/openclaude@5cd11336caea"
+    ],
+    "servers": [
+     "ts6-6.0.3"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "81b728f0bb1d-v00"
+    ]
+   },
+   "representative": "81b728f0bb1d-v00",
+   "ops_before": 3,
+   "ops_after": 3,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/typescript-language-server/typescript-language-server/issues/1014",
+   "seconds": {
+    "reduction": 239.5,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v2/triage/ts6-r4-diagnostics-extra-2353-mutation-m1-2b6bdb/report.md"
+  },
+  {
+   "gid": "ts6-r4-diagnostics-extra-2448-7022-mutation-m1-e5d199",
+   "signature": "ts6|r4_edits|diagnostics:extra:2448,7022",
+   "method": "diagnostics",
+   "family": "mutation:M1",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "d76274109238"
+    ],
+    "projects": [
+     "pear-devs/pear-desktop@3ff0a86231fe"
+    ],
+    "servers": [
+     "ts6-6.0.3"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "2"
+    ],
+    "vids": [
+     "d76274109238-v00"
+    ]
+   },
+   "representative": "d76274109238-v00",
+   "ops_before": 3,
+   "ops_after": 3,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/typescript-language-server/typescript-language-server/issues/1014",
+   "seconds": {
+    "reduction": 207.8,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v2/triage/ts6-r4-diagnostics-extra-2448-7022-mutation-m1-e5d199/report.md"
+  },
+  {
+   "gid": "ts6-r4-diagnostics-extra-2552-mutation-m2-f7e816",
+   "signature": "ts6|r4_edits|diagnostics:extra:2552",
+   "method": "diagnostics",
+   "family": "mutation:M2",
+   "members": 3,
+   "summary": {
+    "members": 3,
+    "runs": [
+     "3db536a7b58d",
+     "5da3b411f176",
+     "76cde4f3a703"
+    ],
+    "projects": [
+     "DayuanJiang/next-ai-draw-io@58b73ef761d8",
+     "Gitlawb/openclaude@5cd11336caea",
+     "hexojs/hexo@751e856691bf"
+    ],
+    "servers": [
+     "ts6-6.0.3"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "2"
+    ],
+    "vids": [
+     "3db536a7b58d-v00",
+     "5da3b411f176-v01",
+     "76cde4f3a703-v02"
+    ]
+   },
+   "representative": "3db536a7b58d-v00",
+   "ops_before": 3,
+   "ops_after": 3,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/typescript-language-server/typescript-language-server/issues/1014",
+   "seconds": {
+    "reduction": 281.9,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v2/triage/ts6-r4-diagnostics-extra-2552-mutation-m2-f7e816/report.md"
+  },
+  {
+   "gid": "ts6-r4-diagnostics-extra-2554-mutation-m3-d2ab31",
+   "signature": "ts6|r4_edits|diagnostics:extra:2554",
+   "method": "diagnostics",
+   "family": "mutation:M3",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "3db536a7b58d"
+    ],
+    "projects": [
+     "DayuanJiang/next-ai-draw-io@58b73ef761d8"
+    ],
+    "servers": [
+     "ts6-6.0.3"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "2"
+    ],
+    "vids": [
+     "3db536a7b58d-v01"
+    ]
+   },
+   "representative": "3db536a7b58d-v01",
+   "ops_before": 3,
+   "ops_after": 3,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/typescript-language-server/typescript-language-server/issues/1014",
+   "seconds": {
+    "reduction": 278.5,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v2/triage/ts6-r4-diagnostics-extra-2554-mutation-m3-d2ab31/report.md"
+  },
+  {
+   "gid": "ts6-r4-diagnostics-extra-2555-mutation-m3-8de4a9",
+   "signature": "ts6|r4_edits|diagnostics:extra:2555",
+   "method": "diagnostics",
+   "family": "mutation:M3",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "8d087bf282e1"
+    ],
+    "projects": [
+     "umami-software/umami@12ad773d621f"
+    ],
+    "servers": [
+     "ts6-6.0.3"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "2"
+    ],
+    "vids": [
+     "8d087bf282e1-v00"
+    ]
+   },
+   "representative": "8d087bf282e1-v00",
+   "ops_before": 3,
+   "ops_after": 3,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/typescript-language-server/typescript-language-server/issues/1014",
+   "seconds": {
+    "reduction": 307.1,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v2/triage/ts6-r4-diagnostics-extra-2555-mutation-m3-8de4a9/report.md"
+  },
+  {
+   "gid": "ts6-r4-diagnostics-extra-2558-2604-mutation-m1-e220b8",
+   "signature": "ts6|r4_edits|diagnostics:extra:2558,2604",
+   "method": "diagnostics",
+   "family": "mutation:M1",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "09497d6d86a9"
+    ],
+    "projects": [
+     "solidjs/solid@4b62bc29e04b"
+    ],
+    "servers": [
+     "ts6-6.0.3"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "2"
+    ],
+    "vids": [
+     "09497d6d86a9-v00"
+    ]
+   },
+   "representative": "09497d6d86a9-v00",
+   "ops_before": 3,
+   "ops_after": 3,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/typescript-language-server/typescript-language-server/issues/1014",
+   "seconds": {
+    "reduction": 144.2,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v2/triage/ts6-r4-diagnostics-extra-2558-2604-mutation-m1-e220b8/report.md"
+  },
+  {
+   "gid": "ts6-r4-diagnostics-extra-2604-mutation-m1-0e3b68",
+   "signature": "ts6|r4_edits|diagnostics:extra:2604",
+   "method": "diagnostics",
+   "family": "mutation:M1",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "09497d6d86a9"
+    ],
+    "projects": [
+     "solidjs/solid@4b62bc29e04b"
+    ],
+    "servers": [
+     "ts6-6.0.3"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "2"
+    ],
+    "vids": [
+     "09497d6d86a9-v01"
+    ]
+   },
+   "representative": "09497d6d86a9-v01",
+   "ops_before": 3,
+   "ops_after": 3,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/typescript-language-server/typescript-language-server/issues/1014",
+   "seconds": {
+    "reduction": 142.9,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v2/triage/ts6-r4-diagnostics-extra-2604-mutation-m1-0e3b68/report.md"
+  },
+  {
+   "gid": "ts6-r4-syntax-gained-mutation-m1-7e3417",
+   "signature": "ts6|r4_edits|syntax:gained",
+   "method": "syntax",
+   "family": "mutation:M1",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "fa21096f3d2f"
+    ],
+    "projects": [
+     "solidjs/solid@4b62bc29e04b"
+    ],
+    "servers": [
+     "ts6-6.0.3"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "fa21096f3d2f-v01"
+    ]
+   },
+   "representative": "fa21096f3d2f-v01",
+   "ops_before": 3,
+   "ops_after": 3,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/typescript-language-server/typescript-language-server/issues/921",
+   "seconds": {
+    "reduction": 142.7,
+    "issues": 7.7
+   },
+   "report": "data/lsptest/runs/main_v2/triage/ts6-r4-syntax-gained-mutation-m1-7e3417/report.md"
+  },
+  {
+   "gid": "ts6-r5-foldingrange-extra-t2-625065",
+   "signature": "ts6|r5_transforms|foldingRange:extra",
+   "method": "foldingRange",
+   "family": "T2",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "df77a21aa659"
+    ],
+    "projects": [
+     "vadimdemedes/ink@02ae1e59e7c2"
+    ],
+    "servers": [
+     "ts6-6.0.3"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "2"
+    ],
+    "vids": [
+     "df77a21aa659-v00"
+    ]
+   },
+   "representative": "df77a21aa659-v00",
+   "ops_before": 2,
+   "ops_after": 2,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/typescript-language-server/typescript-language-server/issues/180",
+   "seconds": {
+    "reduction": 100.5,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v2/triage/ts6-r5-foldingrange-extra-t2-625065/report.md"
+  },
+  {
+   "gid": "ts7-r1-hover-text-h8-500422",
+   "signature": "ts7|r1_history|hover:text",
+   "method": "hover",
+   "family": "H8",
+   "members": 3,
+   "summary": {
+    "members": 3,
+    "runs": [
+     "119ebfb649be",
+     "2248adcc7913",
+     "e989abd232c3"
+    ],
+    "projects": [
+     "DayuanJiang/next-ai-draw-io@58b73ef761d8"
+    ],
+    "servers": [
+     "ts7-7.0.2"
+    ],
+    "timings": [
+     "race0",
+     "race200",
+     "settled"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "119ebfb649be-v00",
+     "2248adcc7913-v00",
+     "e989abd232c3-v00"
+    ]
+   },
+   "representative": "119ebfb649be-v00",
+   "ops_before": 13,
+   "ops_after": 2,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/microsoft/typescript-go/issues/3748",
+   "seconds": {
+    "reduction": 343.9,
+    "issues": 7.0
+   },
+   "report": "data/lsptest/runs/main_v2/triage/ts7-r1-hover-text-h8-500422/report.md"
+  },
+  {
+   "gid": "ts7-r3-definitionconsistency-changed-d-a42b32",
+   "signature": "ts7|r3_routes|definitionConsistency:changed",
+   "method": "definitionConsistency",
+   "family": "d",
+   "members": 3,
+   "summary": {
+    "members": 3,
+    "runs": [
+     "2743534ec8dd",
+     "33d31b2de5ef",
+     "45493e9e73ac"
+    ],
+    "projects": [
+     "DayuanJiang/next-ai-draw-io@58b73ef761d8",
+     "solidjs/solid@4b62bc29e04b",
+     "umami-software/umami@12ad773d621f"
+    ],
+    "servers": [
+     "ts7-7.0.2"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "2743534ec8dd-v01",
+     "33d31b2de5ef-v00",
+     "45493e9e73ac-v00"
+    ]
+   },
+   "representative": "2743534ec8dd-v01",
+   "ops_before": 0,
+   "ops_after": 0,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/microsoft/typescript-go/issues/4908",
+   "seconds": {
+    "reduction": 88.0,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v2/triage/ts7-r3-definitionconsistency-changed-d-a42b32/report.md"
+  },
+  {
+   "gid": "ts7-r3-definitionconsistency-extra-d-fb74d3",
+   "signature": "ts7|r3_routes|definitionConsistency:extra",
+   "method": "definitionConsistency",
+   "family": "d",
+   "members": 3,
+   "summary": {
+    "members": 3,
+    "runs": [
+     "605e065dec15",
+     "b5bcb0e49763",
+     "ed1cade302b4"
+    ],
+    "projects": [
+     "date-fns/date-fns@f34149bb1ba1",
+     "hexojs/hexo@751e856691bf",
+     "vadimdemedes/ink@02ae1e59e7c2"
+    ],
+    "servers": [
+     "ts7-7.0.2"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1",
+     "2"
+    ],
+    "vids": [
+     "605e065dec15-v00",
+     "b5bcb0e49763-v00",
+     "ed1cade302b4-v00"
+    ]
+   },
+   "representative": "605e065dec15-v00",
+   "ops_before": 0,
+   "ops_after": 0,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/microsoft/typescript-go/issues/4908",
+   "seconds": {
+    "reduction": 97.2,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v2/triage/ts7-r3-definitionconsistency-extra-d-fb74d3/report.md"
+  },
+  {
+   "gid": "ts7-r3-definitionconsistency-lost-d-0129b3",
+   "signature": "ts7|r3_routes|definitionConsistency:lost",
+   "method": "definitionConsistency",
+   "family": "d",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "b5bcb0e49763"
+    ],
+    "projects": [
+     "vadimdemedes/ink@02ae1e59e7c2"
+    ],
+    "servers": [
+     "ts7-7.0.2"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "2"
+    ],
+    "vids": [
+     "b5bcb0e49763-v01"
+    ]
+   },
+   "representative": "b5bcb0e49763-v01",
+   "ops_before": 0,
+   "ops_after": 0,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/microsoft/typescript-go/issues/4908",
+   "seconds": {
+    "reduction": 83.1,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v2/triage/ts7-r3-definitionconsistency-lost-d-0129b3/report.md"
+  },
+  {
+   "gid": "ts7-r3-definitionconsistency-missing-d-560852",
+   "signature": "ts7|r3_routes|definitionConsistency:missing",
+   "method": "definitionConsistency",
+   "family": "d",
+   "members": 2,
+   "summary": {
+    "members": 2,
+    "runs": [
+     "3e554bc8dfb0",
+     "dc453b34dc54"
+    ],
+    "projects": [
+     "pear-devs/pear-desktop@3ff0a86231fe",
+     "umami-software/umami@12ad773d621f"
+    ],
+    "servers": [
+     "ts7-7.0.2"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "2"
+    ],
+    "vids": [
+     "3e554bc8dfb0-v00",
+     "dc453b34dc54-v00"
+    ]
+   },
+   "representative": "3e554bc8dfb0-v00",
+   "ops_before": 0,
+   "ops_after": 0,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/microsoft/typescript-go/issues/4908",
+   "seconds": {
+    "reduction": 118.3,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v2/triage/ts7-r3-definitionconsistency-missing-d-560852/report.md"
+  },
+  {
+   "gid": "ts7-r3-highlightvsreferences-gained-c-9f16d3",
+   "signature": "ts7|r3_routes|highlightVsReferences:gained",
+   "method": "highlightVsReferences",
+   "family": "c",
+   "members": 3,
+   "summary": {
+    "members": 3,
+    "runs": [
+     "2743534ec8dd",
+     "33d31b2de5ef",
+     "8828e3037561"
+    ],
+    "projects": [
+     "solidjs/solid@4b62bc29e04b",
+     "umami-software/umami@12ad773d621f",
+     "vadimdemedes/ink@02ae1e59e7c2"
+    ],
+    "servers": [
+     "ts7-7.0.2"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "2743534ec8dd-v00",
+     "33d31b2de5ef-v01",
+     "8828e3037561-v00"
+    ]
+   },
+   "representative": "2743534ec8dd-v00",
+   "ops_before": 0,
+   "ops_after": 0,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/microsoft/typescript-go/issues/4262",
+   "seconds": {
+    "reduction": 74.1,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v2/triage/ts7-r3-highlightvsreferences-gained-c-9f16d3/report.md"
+  },
+  {
+   "gid": "ts7-r4-diagnostics-extra-2322-2345-mutation-m1-5efcb9",
+   "signature": "ts7|r4_edits|diagnostics:extra:2322,2345",
+   "method": "diagnostics",
+   "family": "mutation:M1",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "1ebb81637940"
+    ],
+    "projects": [
+     "hexojs/hexo@751e856691bf"
+    ],
+    "servers": [
+     "ts7-7.0.2"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "2"
+    ],
+    "vids": [
+     "1ebb81637940-v00"
+    ]
+   },
+   "representative": "1ebb81637940-v00",
+   "ops_before": 3,
+   "ops_after": 3,
+   "lines": "",
+   "matches": 6,
+   "top_match": "https://github.com/microsoft/typescript-go/issues/4587",
+   "seconds": {
+    "reduction": 122.4,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v2/triage/ts7-r4-diagnostics-extra-2322-2345-mutation-m1-5efcb9/report.md"
+  },
+  {
+   "gid": "ts7-r4-diagnostics-extra-2322-mutation-m1-e5a893",
+   "signature": "ts7|r4_edits|diagnostics:extra:2322",
+   "method": "diagnostics",
+   "family": "mutation:M1",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "727adbc07eab"
+    ],
+    "projects": [
+     "Gitlawb/openclaude@5cd11336caea"
+    ],
+    "servers": [
+     "ts7-7.0.2"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "727adbc07eab-v01"
+    ]
+   },
+   "representative": "727adbc07eab-v01",
+   "ops_before": 3,
+   "ops_after": 3,
+   "lines": "",
+   "matches": 6,
+   "top_match": "https://github.com/microsoft/typescript-go/issues/4587",
+   "seconds": {
+    "reduction": 280.2,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v2/triage/ts7-r4-diagnostics-extra-2322-mutation-m1-e5a893/report.md"
+  },
+  {
+   "gid": "ts7-r4-diagnostics-extra-2353-mutation-m1-cf35f5",
+   "signature": "ts7|r4_edits|diagnostics:extra:2353",
+   "method": "diagnostics",
+   "family": "mutation:M1",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "727adbc07eab"
+    ],
+    "projects": [
+     "Gitlawb/openclaude@5cd11336caea"
+    ],
+    "servers": [
+     "ts7-7.0.2"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "727adbc07eab-v00"
+    ]
+   },
+   "representative": "727adbc07eab-v00",
+   "ops_before": 3,
+   "ops_after": 3,
+   "lines": "",
+   "matches": 6,
+   "top_match": "https://github.com/microsoft/typescript-go/issues/4587",
+   "seconds": {
+    "reduction": 265.2,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v2/triage/ts7-r4-diagnostics-extra-2353-mutation-m1-cf35f5/report.md"
+  },
+  {
+   "gid": "ts7-r4-diagnostics-extra-2558-2604-mutation-m1-ead3ee",
+   "signature": "ts7|r4_edits|diagnostics:extra:2558,2604",
+   "method": "diagnostics",
+   "family": "mutation:M1",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "d2aec7890861"
+    ],
+    "projects": [
+     "solidjs/solid@4b62bc29e04b"
+    ],
+    "servers": [
+     "ts7-7.0.2"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "2"
+    ],
+    "vids": [
+     "d2aec7890861-v00"
+    ]
+   },
+   "representative": "d2aec7890861-v00",
+   "ops_before": 3,
+   "ops_after": 3,
+   "lines": "",
+   "matches": 6,
+   "top_match": "https://github.com/microsoft/typescript-go/issues/4587",
+   "seconds": {
+    "reduction": 209.0,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v2/triage/ts7-r4-diagnostics-extra-2558-2604-mutation-m1-ead3ee/report.md"
+  },
+  {
+   "gid": "ts7-r5-foldingrange-extra-t2-5dd83a",
+   "signature": "ts7|r5_transforms|foldingRange:extra",
+   "method": "foldingRange",
+   "family": "T2",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "9932809db252"
+    ],
+    "projects": [
+     "vadimdemedes/ink@02ae1e59e7c2"
+    ],
+    "servers": [
+     "ts7-7.0.2"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "2"
+    ],
+    "vids": [
+     "9932809db252-v00"
+    ]
+   },
+   "representative": "9932809db252-v00",
+   "ops_before": 2,
+   "ops_after": 2,
+   "lines": "",
+   "matches": 5,
+   "top_match": "https://github.com/microsoft/typescript-go/issues/4722",
+   "seconds": {
+    "reduction": 127.9,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v2/triage/ts7-r5-foldingrange-extra-t2-5dd83a/report.md"
+  },
+  {
+   "gid": "ts7-r6-completion-changed-completion-997cb3",
+   "signature": "ts7|r6_crossimpl|completion:changed",
+   "method": "completion",
+   "family": "completion",
+   "members": 3,
+   "summary": {
+    "members": 3,
+    "runs": [
+     "8bf86710b7ff",
+     "c81a84009259",
+     "fd88e2717131"
+    ],
+    "projects": [
+     "Gitlawb/openclaude@5cd11336caea",
+     "hexojs/hexo@751e856691bf",
+     "umami-software/umami@12ad773d621f"
+    ],
+    "servers": [
+     "ts7-7.0.2"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "8bf86710b7ff-v00",
+     "c81a84009259-v01",
+     "fd88e2717131-v00"
+    ]
+   },
+   "representative": "8bf86710b7ff-v00",
+   "ops_before": 0,
+   "ops_after": 0,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/microsoft/typescript-go/issues/2598",
+   "seconds": {
+    "reduction": 282.2,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v2/triage/ts7-r6-completion-changed-completion-997cb3/report.md"
+  },
+  {
+   "gid": "ts7-r6-completion-missing-completion-60ede6",
+   "signature": "ts7|r6_crossimpl|completion:missing",
+   "method": "completion",
+   "family": "completion",
+   "members": 3,
+   "summary": {
+    "members": 3,
+    "runs": [
+     "89ebeb799563",
+     "c81a84009259",
+     "d6f47688c5a7"
+    ],
+    "projects": [
+     "solidjs/solid@4b62bc29e04b",
+     "umami-software/umami@12ad773d621f",
+     "vadimdemedes/ink@02ae1e59e7c2"
+    ],
+    "servers": [
+     "ts7-7.0.2"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "89ebeb799563-v00",
+     "c81a84009259-v00",
+     "d6f47688c5a7-v00"
+    ]
+   },
+   "representative": "89ebeb799563-v00",
+   "ops_before": 0,
+   "ops_after": 0,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/microsoft/typescript-go/issues/4587",
+   "seconds": {
+    "reduction": 189.5,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v2/triage/ts7-r6-completion-missing-completion-60ede6/report.md"
+  },
+  {
+   "gid": "ts7-r6-definition-changed-definition-1c2318",
+   "signature": "ts7|r6_crossimpl|definition:changed",
+   "method": "definition",
+   "family": "definition",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "fd88e2717131"
+    ],
+    "projects": [
+     "hexojs/hexo@751e856691bf"
+    ],
+    "servers": [
+     "ts7-7.0.2"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "fd88e2717131-v01"
+    ]
+   },
+   "representative": "fd88e2717131-v01",
+   "ops_before": 0,
+   "ops_after": 0,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/microsoft/typescript-go/issues/1673",
+   "seconds": {
+    "reduction": 107.9,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v2/triage/ts7-r6-definition-changed-definition-1c2318/report.md"
+  },
+  {
+   "gid": "ts7-r6-definition-extra-definition-d8e982",
+   "signature": "ts7|r6_crossimpl|definition:extra",
+   "method": "definition",
+   "family": "definition",
+   "members": 3,
+   "summary": {
+    "members": 3,
+    "runs": [
+     "4224a39ee10c",
+     "4df673c4a3f5",
+     "fd88e2717131"
+    ],
+    "projects": [
+     "hexojs/hexo@751e856691bf",
+     "pear-devs/pear-desktop@3ff0a86231fe",
+     "solidjs/solid@4b62bc29e04b"
+    ],
+    "servers": [
+     "ts7-7.0.2"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1",
+     "2"
+    ],
+    "vids": [
+     "4224a39ee10c-v00",
+     "4df673c4a3f5-v00",
+     "fd88e2717131-v03"
+    ]
+   },
+   "representative": "4224a39ee10c-v00",
+   "ops_before": 0,
+   "ops_after": 0,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/microsoft/typescript-go/issues/4587",
+   "seconds": {
+    "reduction": 135.5,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v2/triage/ts7-r6-definition-extra-definition-d8e982/report.md"
+  },
+  {
+   "gid": "ts7-r6-definition-gained-definition-24364e",
+   "signature": "ts7|r6_crossimpl|definition:gained",
+   "method": "definition",
+   "family": "definition",
+   "members": 3,
+   "summary": {
+    "members": 3,
+    "runs": [
+     "8bf86710b7ff",
+     "b8e257331a67",
+     "fd88e2717131"
+    ],
+    "projects": [
+     "Gitlawb/openclaude@5cd11336caea",
+     "hexojs/hexo@751e856691bf",
+     "vadimdemedes/ink@02ae1e59e7c2"
+    ],
+    "servers": [
+     "ts7-7.0.2"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1",
+     "2"
+    ],
+    "vids": [
+     "8bf86710b7ff-v01",
+     "b8e257331a67-v00",
+     "fd88e2717131-v02"
+    ]
+   },
+   "representative": "8bf86710b7ff-v01",
+   "ops_before": 0,
+   "ops_after": 0,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/microsoft/typescript-go/issues/2964",
+   "seconds": {
+    "reduction": 221.2,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v2/triage/ts7-r6-definition-gained-definition-24364e/report.md"
+  },
+  {
+   "gid": "ts7-r6-diagnostics-missing-2304-2339-2593-diagnostics-31eb88",
+   "signature": "ts7|r6_crossimpl|diagnostics:missing:2304,2339,2593",
+   "method": "diagnostics",
+   "family": "diagnostics",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "8f90deb06cba"
+    ],
+    "projects": [
+     "hexojs/hexo@751e856691bf"
+    ],
+    "servers": [
+     "ts7-7.0.2"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "2"
+    ],
+    "vids": [
+     "8f90deb06cba-v01"
+    ]
+   },
+   "representative": "8f90deb06cba-v01",
+   "ops_before": 0,
+   "ops_after": 0,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/microsoft/typescript-go/issues/4745",
+   "seconds": {
+    "reduction": 135.4,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v2/triage/ts7-r6-diagnostics-missing-2304-2339-2593-diagnostics-31eb88/report.md"
+  },
+  {
+   "gid": "ts7-r6-diagnostics-missing-2304-2593-diagnostics-58256c",
+   "signature": "ts7|r6_crossimpl|diagnostics:missing:2304,2593",
+   "method": "diagnostics",
+   "family": "diagnostics",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "fd88e2717131"
+    ],
+    "projects": [
+     "hexojs/hexo@751e856691bf"
+    ],
+    "servers": [
+     "ts7-7.0.2"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "fd88e2717131-v04"
+    ]
+   },
+   "representative": "fd88e2717131-v04",
+   "ops_before": 0,
+   "ops_after": 0,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/microsoft/typescript-go/issues/4745",
+   "seconds": {
+    "reduction": 132.8,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v2/triage/ts7-r6-diagnostics-missing-2304-2593-diagnostics-58256c/report.md"
+  },
+  {
+   "gid": "ts7-r6-diagnostics-missing-80006-diagnostics-da3300",
+   "signature": "ts7|r6_crossimpl|diagnostics:missing:80006",
+   "method": "diagnostics",
+   "family": "diagnostics",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "8f90deb06cba"
+    ],
+    "projects": [
+     "hexojs/hexo@751e856691bf"
+    ],
+    "servers": [
+     "ts7-7.0.2"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "2"
+    ],
+    "vids": [
+     "8f90deb06cba-v00"
+    ]
+   },
+   "representative": "8f90deb06cba-v00",
+   "ops_before": 0,
+   "ops_after": 0,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/microsoft/typescript-go/issues/4745",
+   "seconds": {
+    "reduction": 96.9,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v2/triage/ts7-r6-diagnostics-missing-80006-diagnostics-da3300/report.md"
+  },
+  {
+   "gid": "ts7-r6-hover-changed-hover-e5c91e",
+   "signature": "ts7|r6_crossimpl|hover:changed",
+   "method": "hover",
+   "family": "hover",
+   "members": 3,
+   "summary": {
+    "members": 3,
+    "runs": [
+     "89ebeb799563",
+     "c81a84009259",
+     "d6f47688c5a7"
+    ],
+    "projects": [
+     "solidjs/solid@4b62bc29e04b",
+     "umami-software/umami@12ad773d621f",
+     "vadimdemedes/ink@02ae1e59e7c2"
+    ],
+    "servers": [
+     "ts7-7.0.2"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "89ebeb799563-v02",
+     "c81a84009259-v02",
+     "d6f47688c5a7-v01"
+    ]
+   },
+   "representative": "89ebeb799563-v02",
+   "ops_before": 0,
+   "ops_after": 0,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/microsoft/typescript-go/issues/4758",
+   "seconds": {
+    "reduction": 164.0,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v2/triage/ts7-r6-hover-changed-hover-e5c91e/report.md"
+  },
+  {
+   "gid": "ts7-r6-hover-lost-hover-feed64",
+   "signature": "ts7|r6_crossimpl|hover:lost",
+   "method": "hover",
+   "family": "hover",
+   "members": 3,
+   "summary": {
+    "members": 3,
+    "runs": [
+     "4224a39ee10c",
+     "89ebeb799563",
+     "8bf86710b7ff"
+    ],
+    "projects": [
+     "Gitlawb/openclaude@5cd11336caea",
+     "solidjs/solid@4b62bc29e04b"
+    ],
+    "servers": [
+     "ts7-7.0.2"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1",
+     "2"
+    ],
+    "vids": [
+     "4224a39ee10c-v01",
+     "89ebeb799563-v01",
+     "8bf86710b7ff-v02"
+    ]
+   },
+   "representative": "4224a39ee10c-v01",
+   "ops_before": 0,
+   "ops_after": 0,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/microsoft/typescript-go/issues/3605",
+   "seconds": {
+    "reduction": 151.8,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v2/triage/ts7-r6-hover-lost-hover-feed64/report.md"
+  }
+ ],
+ "date": "2026-11-19 03:39"
+}

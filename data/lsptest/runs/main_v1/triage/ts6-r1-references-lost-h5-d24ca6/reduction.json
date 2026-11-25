@@ -1,0 +1,110 @@
+{
+ "vid": "210902bea61f-v07",
+ "ops_before": 5,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 11,
+ "cache_hits": 2,
+ "reduce_seconds": 242.092,
+ "budget_exhausted": false,
+ "probe_log": [
+  [
+   4,
+   false
+  ],
+  [
+   4,
+   false
+  ],
+  [
+   4,
+   false
+  ],
+  [
+   4,
+   true
+  ],
+  [
+   3,
+   true
+  ],
+  [
+   1,
+   false
+  ],
+  [
+   2,
+   false
+  ],
+  [
+   1,
+   false
+  ],
+  [
+   1,
+   false
+  ],
+  [
+   2,
+   false
+  ],
+  [
+   2,
+   false
+  ]
+ ],
+ "logs": [
+  "ts6-6.0.3-trd24ca6-replay-baseline-20260925-174314-cfae82.jsonl.gz",
+  "ts6-6.0.3-trd24ca6-replay-control-20260925-174314-412b90.jsonl.gz",
+  "ts6-6.0.3-trd24ca6-replay-history-20260925-174322-285022.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [
+   [
+    "src/middleware/persist.ts",
+    141,
+    8,
+    141,
+    25
+   ],
+   [
+    "src/middleware/persist.ts",
+    361,
+    4,
+    361,
+    21
+   ],
+   [
+    "tests/persistAsync.test.tsx",
+    958,
+    26,
+    958,
+    43
+   ],
+   [
+    "tests/persistAsync.test.tsx",
+    1219,
+    18,
+    1219,
+    35
+   ],
+   [
+    "tests/persistSync.test.tsx",
+    565,
+    56,
+    565,
+    73
+   ],
+   [
+    "tests/persistSync.test.tsx",
+    568,
+    26,
+    568,
+    43
+   ]
+  ],
+  "actual": []
+ },
+ "ops_after": 3,
+ "total_seconds": 379.1
+}

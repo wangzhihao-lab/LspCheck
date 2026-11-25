@@ -1,0 +1,3 @@
+2026-09-24 18:37:33,119 INFO campaign_run run f74ac86f3c00: r3_routes on rust-analyzer 2024-05-27, rust-analyzer-17139 seed 1 settled, targets ['src/lib.rs']
+2026-09-24 18:37:49,787 INFO campaign_run run f74ac86f3c00: 0 candidate(s) in 17s; confirming
+2026-09-24 18:37:49,788 INFO campaign_run run f74ac86f3c00 finished: ok, 0 confirmed of 0 candidate(s), 17s

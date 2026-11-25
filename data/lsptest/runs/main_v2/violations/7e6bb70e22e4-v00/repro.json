@@ -1,0 +1,11280 @@
+{
+ "format": 1,
+ "campaign": "main_v2",
+ "vid": "7e6bb70e22e4-v00",
+ "run_id": "7e6bb70e22e4",
+ "oracle": "r5_transforms",
+ "server": {
+  "kind": "rust-analyzer",
+  "version": "2026-09-21"
+ },
+ "project": {
+  "name": "iced-rs/iced@0ef42477fb6f",
+  "source": "corpus",
+  "ref": "temp/corpus/iced-rs__iced@0ef42477fb6f",
+  "commit": "0ef42477fb6fe3e7384baf9e324d9f188bd3a240",
+  "language": "rust"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 6,
+  "targets": [
+   {
+    "path": "core/src/widget/id.rs",
+    "positions": [
+     [
+      3,
+      21
+     ],
+     [
+      7,
+      18
+     ],
+     [
+      25,
+      29
+     ],
+     [
+      26,
+      9
+     ],
+     [
+      33,
+      45
+     ],
+     [
+      37,
+      11
+     ],
+     [
+      37,
+      27
+     ],
+     [
+      40,
+      20
+     ],
+     [
+      40,
+      33
+     ],
+     [
+      43,
+      3
+     ],
+     [
+      44,
+      6
+     ],
+     [
+      49,
+      23
+     ]
+    ],
+    "ends": [
+     [
+      3,
+      27
+     ],
+     [
+      7,
+      22
+     ],
+     [
+      25,
+      30
+     ],
+     [
+      26,
+      11
+     ],
+     [
+      33,
+      48
+     ],
+     [
+      37,
+      14
+     ],
+     [
+      37,
+      32
+     ],
+     [
+      40,
+      22
+     ],
+     [
+      40,
+      35
+     ],
+     [
+      43,
+      5
+     ],
+     [
+      44,
+      9
+     ],
+     [
+      49,
+      26
+     ]
+    ],
+    "names": [
+     "AtomicUsize",
+     "Internal",
+     "Id",
+     "from",
+     "Owned",
+     "Debug",
+     "PartialEq",
+     "Cow",
+     "str",
+     "cfg",
+     "tests",
+     "unique"
+    ]
+   },
+   {
+    "path": "examples/the_matrix/src/main.rs",
+    "positions": [
+     [
+      1,
+      29
+     ],
+     [
+      26,
+      37
+     ],
+     [
+      35,
+      48
+     ],
+     [
+      43,
+      25
+     ],
+     [
+      55,
+      39
+     ],
+     [
+      68,
+      54
+     ],
+     [
+      69,
+      54
+     ],
+     [
+      72,
+      22
+     ],
+     [
+      73,
+      33
+     ],
+     [
+      73,
+      70
+     ],
+     [
+      76,
+      27
+     ],
+     [
+      78,
+      59
+     ]
+    ],
+    "ends": [
+     [
+      1,
+      35
+     ],
+     [
+      26,
+      41
+     ],
+     [
+      35,
+      50
+     ],
+     [
+      43,
+      29
+     ],
+     [
+      55,
+      45
+     ],
+     [
+      68,
+      58
+     ],
+     [
+      69,
+      57
+     ],
+     [
+      72,
+      24
+     ],
+     [
+      73,
+      36
+     ],
+     [
+      73,
+      73
+     ],
+     [
+      76,
+      30
+     ],
+     [
+      78,
+      64
+     ]
+    ],
+    "names": [
+     "milliseconds",
+     "Message",
+     "into",
+     "Program",
+     "Distribution",
+     "renderer",
+     "frame",
+     "rows",
+     "frame",
+     "usize",
+     "column",
+     "CELL_SIZE"
+    ]
+   },
+   {
+    "path": "runtime/tests/user_interface.rs",
+    "positions": [
+     [
+      22,
+      39
+     ],
+     [
+      40,
+      30
+     ],
+     [
+      53,
+      10
+     ],
+     [
+      57,
+      24
+     ],
+     [
+      108,
+      20
+     ],
+     [
+      118,
+      28
+     ],
+     [
+      213,
+      32
+     ],
+     [
+      251,
+      24
+     ],
+     [
+      255,
+      22
+     ],
+     [
+      294,
+      18
+     ],
+     [
+      350,
+      36
+     ],
+     [
+      367,
+      17
+     ]
+    ],
+    "ends": [
+     [
+      22,
+      42
+     ],
+     [
+      40,
+      32
+     ],
+     [
+      53,
+      14
+     ],
+     [
+      57,
+      28
+     ],
+     [
+      108,
+      24
+     ],
+     [
+      118,
+      31
+     ],
+     [
+      213,
+      35
+     ],
+     [
+      251,
+      27
+     ],
+     [
+      255,
+      25
+     ],
+     [
+      294,
+      21
+     ],
+     [
+      350,
+      43
+     ],
+     [
+      367,
+      21
+     ]
+    ],
+    "names": [
+     "widget",
+     "Tree",
+     "overlay",
+     "Renderer",
+     "Settings",
+     "Button",
+     "Cursor",
+     "mouse",
+     "event",
+     "Event",
+     "user_interface",
+     "renderer"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "codeAction",
+  "path": "core/src/widget/id.rs",
+  "line": 26,
+  "character": 9,
+  "extra": "pos"
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "runtime/tests/user_interface.rs"
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    11,
+    19
+   ],
+   "end": [
+    11,
+    19
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    13,
+    13
+   ],
+   "end": [
+    13,
+    13
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    14,
+    26
+   ],
+   "end": [
+    14,
+    26
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    15,
+    1
+   ],
+   "end": [
+    15,
+    1
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    17,
+    57
+   ],
+   "end": [
+    17,
+    57
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    18,
+    36
+   ],
+   "end": [
+    18,
+    36
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    19,
+    49
+   ],
+   "end": [
+    19,
+    49
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    20,
+    5
+   ],
+   "end": [
+    20,
+    5
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    22,
+    99
+   ],
+   "end": [
+    22,
+    99
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    23,
+    31
+   ],
+   "end": [
+    23,
+    31
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    24,
+    5
+   ],
+   "end": [
+    24,
+    5
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    26,
+    12
+   ],
+   "end": [
+    26,
+    12
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    27,
+    14
+   ],
+   "end": [
+    27,
+    14
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    28,
+    29
+   ],
+   "end": [
+    28,
+    29
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    29,
+    33
+   ],
+   "end": [
+    29,
+    33
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    30,
+    29
+   ],
+   "end": [
+    30,
+    29
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    31,
+    33
+   ],
+   "end": [
+    31,
+    33
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    32,
+    32
+   ],
+   "end": [
+    32,
+    32
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    33,
+    37
+   ],
+   "end": [
+    33,
+    37
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    34,
+    30
+   ],
+   "end": [
+    34,
+    30
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    35,
+    7
+   ],
+   "end": [
+    35,
+    7
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    36,
+    5
+   ],
+   "end": [
+    36,
+    5
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    38,
+    14
+   ],
+   "end": [
+    38,
+    14
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    39,
+    18
+   ],
+   "end": [
+    39,
+    18
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    40,
+    33
+   ],
+   "end": [
+    40,
+    33
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    41,
+    22
+   ],
+   "end": [
+    41,
+    22
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    42,
+    32
+   ],
+   "end": [
+    42,
+    32
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    43,
+    37
+   ],
+   "end": [
+    43,
+    37
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    44,
+    29
+   ],
+   "end": [
+    44,
+    29
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    45,
+    34
+   ],
+   "end": [
+    45,
+    34
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    46,
+    30
+   ],
+   "end": [
+    46,
+    30
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    47,
+    7
+   ],
+   "end": [
+    47,
+    7
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    48,
+    81
+   ],
+   "end": [
+    48,
+    81
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    49,
+    30
+   ],
+   "end": [
+    49,
+    30
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    50,
+    9
+   ],
+   "end": [
+    50,
+    9
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    51,
+    5
+   ],
+   "end": [
+    51,
+    5
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    53,
+    19
+   ],
+   "end": [
+    53,
+    19
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    54,
+    21
+   ],
+   "end": [
+    54,
+    21
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    55,
+    36
+   ],
+   "end": [
+    55,
+    36
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    56,
+    32
+   ],
+   "end": [
+    56,
+    32
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    57,
+    29
+   ],
+   "end": [
+    57,
+    29
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    58,
+    30
+   ],
+   "end": [
+    58,
+    30
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    59,
+    35
+   ],
+   "end": [
+    59,
+    35
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    60,
+    28
+   ],
+   "end": [
+    60,
+    28
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    61,
+    63
+   ],
+   "end": [
+    61,
+    63
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    62,
+    33
+   ],
+   "end": [
+    62,
+    33
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    63,
+    63
+   ],
+   "end": [
+    63,
+    63
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    64,
+    59
+   ],
+   "end": [
+    64,
+    59
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    65,
+    16
+   ],
+   "end": [
+    65,
+    16
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    66,
+    16
+   ],
+   "end": [
+    66,
+    16
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    67,
+    22
+   ],
+   "end": [
+    67,
+    22
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    68,
+    9
+   ],
+   "end": [
+    68,
+    9
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    69,
+    5
+   ],
+   "end": [
+    69,
+    5
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    70,
+    1
+   ],
+   "end": [
+    70,
+    1
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    72,
+    26
+   ],
+   "end": [
+    72,
+    26
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    73,
+    34
+   ],
+   "end": [
+    73,
+    34
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    74,
+    1
+   ],
+   "end": [
+    74,
+    1
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    76,
+    76
+   ],
+   "end": [
+    76,
+    76
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    77,
+    12
+   ],
+   "end": [
+    77,
+    12
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    78,
+    14
+   ],
+   "end": [
+    78,
+    14
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    79,
+    33
+   ],
+   "end": [
+    79,
+    33
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    80,
+    29
+   ],
+   "end": [
+    80,
+    29
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    81,
+    33
+   ],
+   "end": [
+    81,
+    33
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    82,
+    37
+   ],
+   "end": [
+    82,
+    37
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    83,
+    7
+   ],
+   "end": [
+    83,
+    7
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    84,
+    5
+   ],
+   "end": [
+    84,
+    5
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    86,
+    14
+   ],
+   "end": [
+    86,
+    14
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    87,
+    18
+   ],
+   "end": [
+    87,
+    18
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    88,
+    22
+   ],
+   "end": [
+    88,
+    22
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    89,
+    37
+   ],
+   "end": [
+    89,
+    37
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    90,
+    29
+   ],
+   "end": [
+    90,
+    29
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    91,
+    34
+   ],
+   "end": [
+    91,
+    34
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    92,
+    7
+   ],
+   "end": [
+    92,
+    7
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    93,
+    80
+   ],
+   "end": [
+    93,
+    80
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    94,
+    42
+   ],
+   "end": [
+    94,
+    42
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    95,
+    38
+   ],
+   "end": [
+    95,
+    38
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    96,
+    9
+   ],
+   "end": [
+    96,
+    9
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    97,
+    5
+   ],
+   "end": [
+    97,
+    5
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    98,
+    1
+   ],
+   "end": [
+    98,
+    1
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    100,
+    7
+   ],
+   "end": [
+    100,
+    7
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    101,
+    63
+   ],
+   "end": [
+    101,
+    63
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    102,
+    26
+   ],
+   "end": [
+    102,
+    26
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    104,
+    50
+   ],
+   "end": [
+    104,
+    50
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    105,
+    27
+   ],
+   "end": [
+    105,
+    27
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    106,
+    34
+   ],
+   "end": [
+    106,
+    34
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    107,
+    11
+   ],
+   "end": [
+    107,
+    11
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    108,
+    41
+   ],
+   "end": [
+    108,
+    41
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    109,
+    25
+   ],
+   "end": [
+    109,
+    25
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    110,
+    22
+   ],
+   "end": [
+    110,
+    22
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    111,
+    6
+   ],
+   "end": [
+    111,
+    6
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    113,
+    41
+   ],
+   "end": [
+    113,
+    41
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    115,
+    18
+   ],
+   "end": [
+    115,
+    18
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    116,
+    83
+   ],
+   "end": [
+    116,
+    83
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    117,
+    56
+   ],
+   "end": [
+    117,
+    56
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    118,
+    38
+   ],
+   "end": [
+    118,
+    38
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    119,
+    11
+   ],
+   "end": [
+    119,
+    11
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    120,
+    6
+   ],
+   "end": [
+    120,
+    6
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    122,
+    51
+   ],
+   "end": [
+    122,
+    51
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    123,
+    26
+   ],
+   "end": [
+    123,
+    26
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    124,
+    30
+   ],
+   "end": [
+    124,
+    30
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    125,
+    16
+   ],
+   "end": [
+    125,
+    16
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    126,
+    41
+   ],
+   "end": [
+    126,
+    41
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    127,
+    22
+   ],
+   "end": [
+    127,
+    22
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    128,
+    22
+   ],
+   "end": [
+    128,
+    22
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    129,
+    6
+   ],
+   "end": [
+    129,
+    6
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    131,
+    34
+   ],
+   "end": [
+    131,
+    34
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    132,
+    34
+   ],
+   "end": [
+    132,
+    34
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    133,
+    1
+   ],
+   "end": [
+    133,
+    1
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    135,
+    44
+   ],
+   "end": [
+    135,
+    44
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    136,
+    21
+   ],
+   "end": [
+    136,
+    21
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    137,
+    8
+   ],
+   "end": [
+    137,
+    8
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    138,
+    11
+   ],
+   "end": [
+    138,
+    11
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    139,
+    11
+   ],
+   "end": [
+    139,
+    11
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    140,
+    1
+   ],
+   "end": [
+    140,
+    1
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    142,
+    24
+   ],
+   "end": [
+    142,
+    24
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    144,
+    81
+   ],
+   "end": [
+    144,
+    81
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    145,
+    36
+   ],
+   "end": [
+    145,
+    36
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    146,
+    45
+   ],
+   "end": [
+    146,
+    45
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    147,
+    5
+   ],
+   "end": [
+    147,
+    5
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    149,
+    99
+   ],
+   "end": [
+    149,
+    99
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    150,
+    44
+   ],
+   "end": [
+    150,
+    44
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    151,
+    5
+   ],
+   "end": [
+    151,
+    5
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    153,
+    12
+   ],
+   "end": [
+    153,
+    12
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    154,
+    14
+   ],
+   "end": [
+    154,
+    14
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    155,
+    29
+   ],
+   "end": [
+    155,
+    29
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    156,
+    33
+   ],
+   "end": [
+    156,
+    33
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    157,
+    29
+   ],
+   "end": [
+    157,
+    29
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    158,
+    33
+   ],
+   "end": [
+    158,
+    33
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    159,
+    32
+   ],
+   "end": [
+    159,
+    32
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    160,
+    37
+   ],
+   "end": [
+    160,
+    37
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    161,
+    30
+   ],
+   "end": [
+    161,
+    30
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    162,
+    7
+   ],
+   "end": [
+    162,
+    7
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    163,
+    5
+   ],
+   "end": [
+    163,
+    5
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    165,
+    14
+   ],
+   "end": [
+    165,
+    14
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    166,
+    18
+   ],
+   "end": [
+    166,
+    18
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    167,
+    33
+   ],
+   "end": [
+    167,
+    33
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    168,
+    23
+   ],
+   "end": [
+    168,
+    23
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    169,
+    32
+   ],
+   "end": [
+    169,
+    32
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    170,
+    37
+   ],
+   "end": [
+    170,
+    37
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    171,
+    29
+   ],
+   "end": [
+    171,
+    29
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    172,
+    47
+   ],
+   "end": [
+    172,
+    47
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    173,
+    30
+   ],
+   "end": [
+    173,
+    30
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    174,
+    7
+   ],
+   "end": [
+    174,
+    7
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    175,
+    5
+   ],
+   "end": [
+    175,
+    5
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    177,
+    19
+   ],
+   "end": [
+    177,
+    19
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    178,
+    21
+   ],
+   "end": [
+    178,
+    21
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    179,
+    36
+   ],
+   "end": [
+    179,
+    36
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    180,
+    32
+   ],
+   "end": [
+    180,
+    32
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    181,
+    29
+   ],
+   "end": [
+    181,
+    29
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    182,
+    30
+   ],
+   "end": [
+    182,
+    30
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    183,
+    35
+   ],
+   "end": [
+    183,
+    35
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    184,
+    28
+   ],
+   "end": [
+    184,
+    28
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    185,
+    75
+   ],
+   "end": [
+    185,
+    75
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    186,
+    13
+   ],
+   "end": [
+    186,
+    13
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    187,
+    56
+   ],
+   "end": [
+    187,
+    56
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    188,
+    59
+   ],
+   "end": [
+    188,
+    59
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    189,
+    9
+   ],
+   "end": [
+    189,
+    9
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    190,
+    5
+   ],
+   "end": [
+    190,
+    5
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    191,
+    1
+   ],
+   "end": [
+    191,
+    1
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    194,
+    18
+   ],
+   "end": [
+    194,
+    18
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    196,
+    17
+   ],
+   "end": [
+    196,
+    17
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    197,
+    97
+   ],
+   "end": [
+    197,
+    97
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    198,
+    1
+   ],
+   "end": [
+    198,
+    1
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    200,
+    77
+   ],
+   "end": [
+    200,
+    77
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    201,
+    12
+   ],
+   "end": [
+    201,
+    12
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    202,
+    14
+   ],
+   "end": [
+    202,
+    14
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    203,
+    33
+   ],
+   "end": [
+    203,
+    33
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    204,
+    29
+   ],
+   "end": [
+    204,
+    29
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    205,
+    33
+   ],
+   "end": [
+    205,
+    33
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    206,
+    37
+   ],
+   "end": [
+    206,
+    37
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    207,
+    7
+   ],
+   "end": [
+    207,
+    7
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    208,
+    5
+   ],
+   "end": [
+    208,
+    5
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    210,
+    14
+   ],
+   "end": [
+    210,
+    14
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    211,
+    18
+   ],
+   "end": [
+    211,
+    18
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    212,
+    22
+   ],
+   "end": [
+    212,
+    22
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    213,
+    36
+   ],
+   "end": [
+    213,
+    36
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    214,
+    29
+   ],
+   "end": [
+    214,
+    29
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    215,
+    46
+   ],
+   "end": [
+    215,
+    46
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    216,
+    7
+   ],
+   "end": [
+    216,
+    7
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    217,
+    78
+   ],
+   "end": [
+    217,
+    78
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    218,
+    59
+   ],
+   "end": [
+    218,
+    59
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    219,
+    9
+   ],
+   "end": [
+    219,
+    9
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    220,
+    47
+   ],
+   "end": [
+    220,
+    47
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    221,
+    34
+   ],
+   "end": [
+    221,
+    34
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    222,
+    9
+   ],
+   "end": [
+    222,
+    9
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    223,
+    5
+   ],
+   "end": [
+    223,
+    5
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    225,
+    28
+   ],
+   "end": [
+    225,
+    28
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    226,
+    11
+   ],
+   "end": [
+    226,
+    11
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    227,
+    5
+   ],
+   "end": [
+    227,
+    5
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    228,
+    1
+   ],
+   "end": [
+    228,
+    1
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    232,
+    21
+   ],
+   "end": [
+    232,
+    21
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    234,
+    20
+   ],
+   "end": [
+    234,
+    20
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    235,
+    89
+   ],
+   "end": [
+    235,
+    89
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    236,
+    1
+   ],
+   "end": [
+    236,
+    1
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    238,
+    80
+   ],
+   "end": [
+    238,
+    80
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    239,
+    12
+   ],
+   "end": [
+    239,
+    12
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    240,
+    14
+   ],
+   "end": [
+    240,
+    14
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    241,
+    33
+   ],
+   "end": [
+    241,
+    33
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    242,
+    29
+   ],
+   "end": [
+    242,
+    29
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    243,
+    33
+   ],
+   "end": [
+    243,
+    33
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    244,
+    37
+   ],
+   "end": [
+    244,
+    37
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    245,
+    7
+   ],
+   "end": [
+    245,
+    7
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    246,
+    5
+   ],
+   "end": [
+    246,
+    5
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    248,
+    14
+   ],
+   "end": [
+    248,
+    14
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    249,
+    18
+   ],
+   "end": [
+    249,
+    18
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    250,
+    22
+   ],
+   "end": [
+    250,
+    22
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    251,
+    36
+   ],
+   "end": [
+    251,
+    36
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    252,
+    29
+   ],
+   "end": [
+    252,
+    29
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    253,
+    46
+   ],
+   "end": [
+    253,
+    46
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    254,
+    7
+   ],
+   "end": [
+    254,
+    7
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    255,
+    78
+   ],
+   "end": [
+    255,
+    78
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    256,
+    59
+   ],
+   "end": [
+    256,
+    59
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    257,
+    9
+   ],
+   "end": [
+    257,
+    9
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    258,
+    50
+   ],
+   "end": [
+    258,
+    50
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    259,
+    34
+   ],
+   "end": [
+    259,
+    34
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    260,
+    9
+   ],
+   "end": [
+    260,
+    9
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    261,
+    5
+   ],
+   "end": [
+    261,
+    5
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    263,
+    28
+   ],
+   "end": [
+    263,
+    28
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    264,
+    11
+   ],
+   "end": [
+    264,
+    11
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    265,
+    5
+   ],
+   "end": [
+    265,
+    5
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    267,
+    19
+   ],
+   "end": [
+    267,
+    19
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    268,
+    21
+   ],
+   "end": [
+    268,
+    21
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    269,
+    29
+   ],
+   "end": [
+    269,
+    29
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    270,
+    75
+   ],
+   "end": [
+    270,
+    75
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    271,
+    60
+   ],
+   "end": [
+    271,
+    60
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    272,
+    5
+   ],
+   "end": [
+    272,
+    5
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    273,
+    1
+   ],
+   "end": [
+    273,
+    1
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    276,
+    21
+   ],
+   "end": [
+    276,
+    21
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    278,
+    20
+   ],
+   "end": [
+    278,
+    20
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    279,
+    89
+   ],
+   "end": [
+    279,
+    89
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    280,
+    1
+   ],
+   "end": [
+    280,
+    1
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    282,
+    80
+   ],
+   "end": [
+    282,
+    80
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    283,
+    12
+   ],
+   "end": [
+    283,
+    12
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    284,
+    14
+   ],
+   "end": [
+    284,
+    14
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    285,
+    33
+   ],
+   "end": [
+    285,
+    33
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    286,
+    29
+   ],
+   "end": [
+    286,
+    29
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    287,
+    33
+   ],
+   "end": [
+    287,
+    33
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    288,
+    37
+   ],
+   "end": [
+    288,
+    37
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    289,
+    7
+   ],
+   "end": [
+    289,
+    7
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    290,
+    5
+   ],
+   "end": [
+    290,
+    5
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    292,
+    14
+   ],
+   "end": [
+    292,
+    14
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    293,
+    18
+   ],
+   "end": [
+    293,
+    18
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    294,
+    22
+   ],
+   "end": [
+    294,
+    22
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    295,
+    36
+   ],
+   "end": [
+    295,
+    36
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    296,
+    29
+   ],
+   "end": [
+    296,
+    29
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    297,
+    46
+   ],
+   "end": [
+    297,
+    46
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    298,
+    7
+   ],
+   "end": [
+    298,
+    7
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    299,
+    78
+   ],
+   "end": [
+    299,
+    78
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    300,
+    59
+   ],
+   "end": [
+    300,
+    59
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    301,
+    9
+   ],
+   "end": [
+    301,
+    9
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    302,
+    50
+   ],
+   "end": [
+    302,
+    50
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    303,
+    34
+   ],
+   "end": [
+    303,
+    34
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    304,
+    9
+   ],
+   "end": [
+    304,
+    9
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    305,
+    5
+   ],
+   "end": [
+    305,
+    5
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    306,
+    1
+   ],
+   "end": [
+    306,
+    1
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    308,
+    7
+   ],
+   "end": [
+    308,
+    7
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    309,
+    86
+   ],
+   "end": [
+    309,
+    86
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    310,
+    26
+   ],
+   "end": [
+    310,
+    26
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    312,
+    50
+   ],
+   "end": [
+    312,
+    50
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    313,
+    39
+   ],
+   "end": [
+    313,
+    39
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    314,
+    32
+   ],
+   "end": [
+    314,
+    32
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    315,
+    25
+   ],
+   "end": [
+    315,
+    25
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    316,
+    22
+   ],
+   "end": [
+    316,
+    22
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    317,
+    6
+   ],
+   "end": [
+    317,
+    6
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    319,
+    41
+   ],
+   "end": [
+    319,
+    41
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    320,
+    65
+   ],
+   "end": [
+    320,
+    65
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    321,
+    34
+   ],
+   "end": [
+    321,
+    34
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    322,
+    8
+   ],
+   "end": [
+    322,
+    8
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    325,
+    51
+   ],
+   "end": [
+    325,
+    51
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    326,
+    26
+   ],
+   "end": [
+    326,
+    26
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    327,
+    30
+   ],
+   "end": [
+    327,
+    30
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    328,
+    16
+   ],
+   "end": [
+    328,
+    16
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    329,
+    69
+   ],
+   "end": [
+    329,
+    69
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    330,
+    22
+   ],
+   "end": [
+    330,
+    22
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    331,
+    22
+   ],
+   "end": [
+    331,
+    22
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    332,
+    6
+   ],
+   "end": [
+    332,
+    6
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    333,
+    58
+   ],
+   "end": [
+    333,
+    58
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    334,
+    34
+   ],
+   "end": [
+    334,
+    34
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    337,
+    51
+   ],
+   "end": [
+    337,
+    51
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    338,
+    26
+   ],
+   "end": [
+    338,
+    26
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    339,
+    30
+   ],
+   "end": [
+    339,
+    30
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    340,
+    16
+   ],
+   "end": [
+    340,
+    16
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    341,
+    69
+   ],
+   "end": [
+    341,
+    69
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    342,
+    22
+   ],
+   "end": [
+    342,
+    22
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    343,
+    22
+   ],
+   "end": [
+    343,
+    22
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    344,
+    6
+   ],
+   "end": [
+    344,
+    6
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    345,
+    58
+   ],
+   "end": [
+    345,
+    58
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    346,
+    34
+   ],
+   "end": [
+    346,
+    34
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    350,
+    51
+   ],
+   "end": [
+    350,
+    51
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    351,
+    26
+   ],
+   "end": [
+    351,
+    26
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    352,
+    30
+   ],
+   "end": [
+    352,
+    30
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    353,
+    16
+   ],
+   "end": [
+    353,
+    16
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    354,
+    69
+   ],
+   "end": [
+    354,
+    69
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    355,
+    22
+   ],
+   "end": [
+    355,
+    22
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    356,
+    22
+   ],
+   "end": [
+    356,
+    22
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    357,
+    6
+   ],
+   "end": [
+    357,
+    6
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    358,
+    58
+   ],
+   "end": [
+    358,
+    58
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    359,
+    34
+   ],
+   "end": [
+    359,
+    34
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    362,
+    51
+   ],
+   "end": [
+    362,
+    51
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    363,
+    26
+   ],
+   "end": [
+    363,
+    26
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    364,
+    30
+   ],
+   "end": [
+    364,
+    30
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    365,
+    16
+   ],
+   "end": [
+    365,
+    16
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    366,
+    69
+   ],
+   "end": [
+    366,
+    69
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    367,
+    22
+   ],
+   "end": [
+    367,
+    22
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    368,
+    22
+   ],
+   "end": [
+    368,
+    22
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    369,
+    6
+   ],
+   "end": [
+    369,
+    6
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    370,
+    57
+   ],
+   "end": [
+    370,
+    57
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    371,
+    34
+   ],
+   "end": [
+    371,
+    34
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    374,
+    24
+   ],
+   "end": [
+    374,
+    24
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    375,
+    22
+   ],
+   "end": [
+    375,
+    22
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    376,
+    28
+   ],
+   "end": [
+    376,
+    28
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    377,
+    36
+   ],
+   "end": [
+    377,
+    36
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    378,
+    69
+   ],
+   "end": [
+    378,
+    69
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    379,
+    6
+   ],
+   "end": [
+    379,
+    6
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    381,
+    28
+   ],
+   "end": [
+    381,
+    28
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    382,
+    16
+   ],
+   "end": [
+    382,
+    16
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    383,
+    36
+   ],
+   "end": [
+    383,
+    36
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    384,
+    29
+   ],
+   "end": [
+    384,
+    29
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    386,
+    15
+   ],
+   "end": [
+    386,
+    15
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    387,
+    18
+   ],
+   "end": [
+    387,
+    18
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    388,
+    9
+   ],
+   "end": [
+    388,
+    9
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    389,
+    35
+   ],
+   "end": [
+    389,
+    35
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    390,
+    35
+   ],
+   "end": [
+    390,
+    35
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    391,
+    32
+   ],
+   "end": [
+    391,
+    32
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    392,
+    9
+   ],
+   "end": [
+    392,
+    9
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    393,
+    6
+   ],
+   "end": [
+    393,
+    6
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "runtime/tests/user_interface.rs",
+   "start": [
+    394,
+    1
+   ],
+   "end": [
+    394,
+    1
+   ],
+   "text": " "
+  }
+ ],
+ "case": {
+  "mapped_key": [
+   "codeAction",
+   "core/src/widget/id.rs",
+   26,
+   9,
+   "pos"
+  ],
+  "transform": {
+   "back": {
+    "col": 0,
+    "eof": [],
+    "line": -1,
+    "n": 0,
+    "path": "runtime/tests/user_interface.rs",
+    "w": 0
+   },
+   "edits": [
+    [
+     11,
+     19,
+     11,
+     19,
+     " "
+    ],
+    [
+     13,
+     13,
+     13,
+     13,
+     " "
+    ],
+    [
+     14,
+     26,
+     14,
+     26,
+     " "
+    ],
+    [
+     15,
+     1,
+     15,
+     1,
+     " "
+    ],
+    [
+     17,
+     57,
+     17,
+     57,
+     " "
+    ],
+    [
+     18,
+     36,
+     18,
+     36,
+     " "
+    ],
+    [
+     19,
+     49,
+     19,
+     49,
+     " "
+    ],
+    [
+     20,
+     5,
+     20,
+     5,
+     " "
+    ],
+    [
+     22,
+     99,
+     22,
+     99,
+     " "
+    ],
+    [
+     23,
+     31,
+     23,
+     31,
+     " "
+    ],
+    [
+     24,
+     5,
+     24,
+     5,
+     " "
+    ],
+    [
+     26,
+     12,
+     26,
+     12,
+     " "
+    ],
+    [
+     27,
+     14,
+     27,
+     14,
+     " "
+    ],
+    [
+     28,
+     29,
+     28,
+     29,
+     " "
+    ],
+    [
+     29,
+     33,
+     29,
+     33,
+     " "
+    ],
+    [
+     30,
+     29,
+     30,
+     29,
+     " "
+    ],
+    [
+     31,
+     33,
+     31,
+     33,
+     " "
+    ],
+    [
+     32,
+     32,
+     32,
+     32,
+     " "
+    ],
+    [
+     33,
+     37,
+     33,
+     37,
+     " "
+    ],
+    [
+     34,
+     30,
+     34,
+     30,
+     " "
+    ],
+    [
+     35,
+     7,
+     35,
+     7,
+     " "
+    ],
+    [
+     36,
+     5,
+     36,
+     5,
+     " "
+    ],
+    [
+     38,
+     14,
+     38,
+     14,
+     " "
+    ],
+    [
+     39,
+     18,
+     39,
+     18,
+     " "
+    ],
+    [
+     40,
+     33,
+     40,
+     33,
+     " "
+    ],
+    [
+     41,
+     22,
+     41,
+     22,
+     " "
+    ],
+    [
+     42,
+     32,
+     42,
+     32,
+     " "
+    ],
+    [
+     43,
+     37,
+     43,
+     37,
+     " "
+    ],
+    [
+     44,
+     29,
+     44,
+     29,
+     " "
+    ],
+    [
+     45,
+     34,
+     45,
+     34,
+     " "
+    ],
+    [
+     46,
+     30,
+     46,
+     30,
+     " "
+    ],
+    [
+     47,
+     7,
+     47,
+     7,
+     " "
+    ],
+    [
+     48,
+     81,
+     48,
+     81,
+     " "
+    ],
+    [
+     49,
+     30,
+     49,
+     30,
+     " "
+    ],
+    [
+     50,
+     9,
+     50,
+     9,
+     " "
+    ],
+    [
+     51,
+     5,
+     51,
+     5,
+     " "
+    ],
+    [
+     53,
+     19,
+     53,
+     19,
+     " "
+    ],
+    [
+     54,
+     21,
+     54,
+     21,
+     " "
+    ],
+    [
+     55,
+     36,
+     55,
+     36,
+     " "
+    ],
+    [
+     56,
+     32,
+     56,
+     32,
+     " "
+    ],
+    [
+     57,
+     29,
+     57,
+     29,
+     " "
+    ],
+    [
+     58,
+     30,
+     58,
+     30,
+     " "
+    ],
+    [
+     59,
+     35,
+     59,
+     35,
+     " "
+    ],
+    [
+     60,
+     28,
+     60,
+     28,
+     " "
+    ],
+    [
+     61,
+     63,
+     61,
+     63,
+     " "
+    ],
+    [
+     62,
+     33,
+     62,
+     33,
+     " "
+    ],
+    [
+     63,
+     63,
+     63,
+     63,
+     " "
+    ],
+    [
+     64,
+     59,
+     64,
+     59,
+     " "
+    ],
+    [
+     65,
+     16,
+     65,
+     16,
+     " "
+    ],
+    [
+     66,
+     16,
+     66,
+     16,
+     " "
+    ],
+    [
+     67,
+     22,
+     67,
+     22,
+     " "
+    ],
+    [
+     68,
+     9,
+     68,
+     9,
+     " "
+    ],
+    [
+     69,
+     5,
+     69,
+     5,
+     " "
+    ],
+    [
+     70,
+     1,
+     70,
+     1,
+     " "
+    ],
+    [
+     72,
+     26,
+     72,
+     26,
+     " "
+    ],
+    [
+     73,
+     34,
+     73,
+     34,
+     " "
+    ],
+    [
+     74,
+     1,
+     74,
+     1,
+     " "
+    ],
+    [
+     76,
+     76,
+     76,
+     76,
+     " "
+    ],
+    [
+     77,
+     12,
+     77,
+     12,
+     " "
+    ],
+    [
+     78,
+     14,
+     78,
+     14,
+     " "
+    ],
+    [
+     79,
+     33,
+     79,
+     33,
+     " "
+    ],
+    [
+     80,
+     29,
+     80,
+     29,
+     " "
+    ],
+    [
+     81,
+     33,
+     81,
+     33,
+     " "
+    ],
+    [
+     82,
+     37,
+     82,
+     37,
+     " "
+    ],
+    [
+     83,
+     7,
+     83,
+     7,
+     " "
+    ],
+    [
+     84,
+     5,
+     84,
+     5,
+     " "
+    ],
+    [
+     86,
+     14,
+     86,
+     14,
+     " "
+    ],
+    [
+     87,
+     18,
+     87,
+     18,
+     " "
+    ],
+    [
+     88,
+     22,
+     88,
+     22,
+     " "
+    ],
+    [
+     89,
+     37,
+     89,
+     37,
+     " "
+    ],
+    [
+     90,
+     29,
+     90,
+     29,
+     " "
+    ],
+    [
+     91,
+     34,
+     91,
+     34,
+     " "
+    ],
+    [
+     92,
+     7,
+     92,
+     7,
+     " "
+    ],
+    [
+     93,
+     80,
+     93,
+     80,
+     " "
+    ],
+    [
+     94,
+     42,
+     94,
+     42,
+     " "
+    ],
+    [
+     95,
+     38,
+     95,
+     38,
+     " "
+    ],
+    [
+     96,
+     9,
+     96,
+     9,
+     " "
+    ],
+    [
+     97,
+     5,
+     97,
+     5,
+     " "
+    ],
+    [
+     98,
+     1,
+     98,
+     1,
+     " "
+    ],
+    [
+     100,
+     7,
+     100,
+     7,
+     " "
+    ],
+    [
+     101,
+     63,
+     101,
+     63,
+     " "
+    ],
+    [
+     102,
+     26,
+     102,
+     26,
+     " "
+    ],
+    [
+     104,
+     50,
+     104,
+     50,
+     " "
+    ],
+    [
+     105,
+     27,
+     105,
+     27,
+     " "
+    ],
+    [
+     106,
+     34,
+     106,
+     34,
+     " "
+    ],
+    [
+     107,
+     11,
+     107,
+     11,
+     " "
+    ],
+    [
+     108,
+     41,
+     108,
+     41,
+     " "
+    ],
+    [
+     109,
+     25,
+     109,
+     25,
+     " "
+    ],
+    [
+     110,
+     22,
+     110,
+     22,
+     " "
+    ],
+    [
+     111,
+     6,
+     111,
+     6,
+     " "
+    ],
+    [
+     113,
+     41,
+     113,
+     41,
+     " "
+    ],
+    [
+     115,
+     18,
+     115,
+     18,
+     " "
+    ],
+    [
+     116,
+     83,
+     116,
+     83,
+     " "
+    ],
+    [
+     117,
+     56,
+     117,
+     56,
+     " "
+    ],
+    [
+     118,
+     38,
+     118,
+     38,
+     " "
+    ],
+    [
+     119,
+     11,
+     119,
+     11,
+     " "
+    ],
+    [
+     120,
+     6,
+     120,
+     6,
+     " "
+    ],
+    [
+     122,
+     51,
+     122,
+     51,
+     " "
+    ],
+    [
+     123,
+     26,
+     123,
+     26,
+     " "
+    ],
+    [
+     124,
+     30,
+     124,
+     30,
+     " "
+    ],
+    [
+     125,
+     16,
+     125,
+     16,
+     " "
+    ],
+    [
+     126,
+     41,
+     126,
+     41,
+     " "
+    ],
+    [
+     127,
+     22,
+     127,
+     22,
+     " "
+    ],
+    [
+     128,
+     22,
+     128,
+     22,
+     " "
+    ],
+    [
+     129,
+     6,
+     129,
+     6,
+     " "
+    ],
+    [
+     131,
+     34,
+     131,
+     34,
+     " "
+    ],
+    [
+     132,
+     34,
+     132,
+     34,
+     " "
+    ],
+    [
+     133,
+     1,
+     133,
+     1,
+     " "
+    ],
+    [
+     135,
+     44,
+     135,
+     44,
+     " "
+    ],
+    [
+     136,
+     21,
+     136,
+     21,
+     " "
+    ],
+    [
+     137,
+     8,
+     137,
+     8,
+     " "
+    ],
+    [
+     138,
+     11,
+     138,
+     11,
+     " "
+    ],
+    [
+     139,
+     11,
+     139,
+     11,
+     " "
+    ],
+    [
+     140,
+     1,
+     140,
+     1,
+     " "
+    ],
+    [
+     142,
+     24,
+     142,
+     24,
+     " "
+    ],
+    [
+     144,
+     81,
+     144,
+     81,
+     " "
+    ],
+    [
+     145,
+     36,
+     145,
+     36,
+     " "
+    ],
+    [
+     146,
+     45,
+     146,
+     45,
+     " "
+    ],
+    [
+     147,
+     5,
+     147,
+     5,
+     " "
+    ],
+    [
+     149,
+     99,
+     149,
+     99,
+     " "
+    ],
+    [
+     150,
+     44,
+     150,
+     44,
+     " "
+    ],
+    [
+     151,
+     5,
+     151,
+     5,
+     " "
+    ],
+    [
+     153,
+     12,
+     153,
+     12,
+     " "
+    ],
+    [
+     154,
+     14,
+     154,
+     14,
+     " "
+    ],
+    [
+     155,
+     29,
+     155,
+     29,
+     " "
+    ],
+    [
+     156,
+     33,
+     156,
+     33,
+     " "
+    ],
+    [
+     157,
+     29,
+     157,
+     29,
+     " "
+    ],
+    [
+     158,
+     33,
+     158,
+     33,
+     " "
+    ],
+    [
+     159,
+     32,
+     159,
+     32,
+     " "
+    ],
+    [
+     160,
+     37,
+     160,
+     37,
+     " "
+    ],
+    [
+     161,
+     30,
+     161,
+     30,
+     " "
+    ],
+    [
+     162,
+     7,
+     162,
+     7,
+     " "
+    ],
+    [
+     163,
+     5,
+     163,
+     5,
+     " "
+    ],
+    [
+     165,
+     14,
+     165,
+     14,
+     " "
+    ],
+    [
+     166,
+     18,
+     166,
+     18,
+     " "
+    ],
+    [
+     167,
+     33,
+     167,
+     33,
+     " "
+    ],
+    [
+     168,
+     23,
+     168,
+     23,
+     " "
+    ],
+    [
+     169,
+     32,
+     169,
+     32,
+     " "
+    ],
+    [
+     170,
+     37,
+     170,
+     37,
+     " "
+    ],
+    [
+     171,
+     29,
+     171,
+     29,
+     " "
+    ],
+    [
+     172,
+     47,
+     172,
+     47,
+     " "
+    ],
+    [
+     173,
+     30,
+     173,
+     30,
+     " "
+    ],
+    [
+     174,
+     7,
+     174,
+     7,
+     " "
+    ],
+    [
+     175,
+     5,
+     175,
+     5,
+     " "
+    ],
+    [
+     177,
+     19,
+     177,
+     19,
+     " "
+    ],
+    [
+     178,
+     21,
+     178,
+     21,
+     " "
+    ],
+    [
+     179,
+     36,
+     179,
+     36,
+     " "
+    ],
+    [
+     180,
+     32,
+     180,
+     32,
+     " "
+    ],
+    [
+     181,
+     29,
+     181,
+     29,
+     " "
+    ],
+    [
+     182,
+     30,
+     182,
+     30,
+     " "
+    ],
+    [
+     183,
+     35,
+     183,
+     35,
+     " "
+    ],
+    [
+     184,
+     28,
+     184,
+     28,
+     " "
+    ],
+    [
+     185,
+     75,
+     185,
+     75,
+     " "
+    ],
+    [
+     186,
+     13,
+     186,
+     13,
+     " "
+    ],
+    [
+     187,
+     56,
+     187,
+     56,
+     " "
+    ],
+    [
+     188,
+     59,
+     188,
+     59,
+     " "
+    ],
+    [
+     189,
+     9,
+     189,
+     9,
+     " "
+    ],
+    [
+     190,
+     5,
+     190,
+     5,
+     " "
+    ],
+    [
+     191,
+     1,
+     191,
+     1,
+     " "
+    ],
+    [
+     194,
+     18,
+     194,
+     18,
+     " "
+    ],
+    [
+     196,
+     17,
+     196,
+     17,
+     " "
+    ],
+    [
+     197,
+     97,
+     197,
+     97,
+     " "
+    ],
+    [
+     198,
+     1,
+     198,
+     1,
+     " "
+    ],
+    [
+     200,
+     77,
+     200,
+     77,
+     " "
+    ],
+    [
+     201,
+     12,
+     201,
+     12,
+     " "
+    ],
+    [
+     202,
+     14,
+     202,
+     14,
+     " "
+    ],
+    [
+     203,
+     33,
+     203,
+     33,
+     " "
+    ],
+    [
+     204,
+     29,
+     204,
+     29,
+     " "
+    ],
+    [
+     205,
+     33,
+     205,
+     33,
+     " "
+    ],
+    [
+     206,
+     37,
+     206,
+     37,
+     " "
+    ],
+    [
+     207,
+     7,
+     207,
+     7,
+     " "
+    ],
+    [
+     208,
+     5,
+     208,
+     5,
+     " "
+    ],
+    [
+     210,
+     14,
+     210,
+     14,
+     " "
+    ],
+    [
+     211,
+     18,
+     211,
+     18,
+     " "
+    ],
+    [
+     212,
+     22,
+     212,
+     22,
+     " "
+    ],
+    [
+     213,
+     36,
+     213,
+     36,
+     " "
+    ],
+    [
+     214,
+     29,
+     214,
+     29,
+     " "
+    ],
+    [
+     215,
+     46,
+     215,
+     46,
+     " "
+    ],
+    [
+     216,
+     7,
+     216,
+     7,
+     " "
+    ],
+    [
+     217,
+     78,
+     217,
+     78,
+     " "
+    ],
+    [
+     218,
+     59,
+     218,
+     59,
+     " "
+    ],
+    [
+     219,
+     9,
+     219,
+     9,
+     " "
+    ],
+    [
+     220,
+     47,
+     220,
+     47,
+     " "
+    ],
+    [
+     221,
+     34,
+     221,
+     34,
+     " "
+    ],
+    [
+     222,
+     9,
+     222,
+     9,
+     " "
+    ],
+    [
+     223,
+     5,
+     223,
+     5,
+     " "
+    ],
+    [
+     225,
+     28,
+     225,
+     28,
+     " "
+    ],
+    [
+     226,
+     11,
+     226,
+     11,
+     " "
+    ],
+    [
+     227,
+     5,
+     227,
+     5,
+     " "
+    ],
+    [
+     228,
+     1,
+     228,
+     1,
+     " "
+    ],
+    [
+     232,
+     21,
+     232,
+     21,
+     " "
+    ],
+    [
+     234,
+     20,
+     234,
+     20,
+     " "
+    ],
+    [
+     235,
+     89,
+     235,
+     89,
+     " "
+    ],
+    [
+     236,
+     1,
+     236,
+     1,
+     " "
+    ],
+    [
+     238,
+     80,
+     238,
+     80,
+     " "
+    ],
+    [
+     239,
+     12,
+     239,
+     12,
+     " "
+    ],
+    [
+     240,
+     14,
+     240,
+     14,
+     " "
+    ],
+    [
+     241,
+     33,
+     241,
+     33,
+     " "
+    ],
+    [
+     242,
+     29,
+     242,
+     29,
+     " "
+    ],
+    [
+     243,
+     33,
+     243,
+     33,
+     " "
+    ],
+    [
+     244,
+     37,
+     244,
+     37,
+     " "
+    ],
+    [
+     245,
+     7,
+     245,
+     7,
+     " "
+    ],
+    [
+     246,
+     5,
+     246,
+     5,
+     " "
+    ],
+    [
+     248,
+     14,
+     248,
+     14,
+     " "
+    ],
+    [
+     249,
+     18,
+     249,
+     18,
+     " "
+    ],
+    [
+     250,
+     22,
+     250,
+     22,
+     " "
+    ],
+    [
+     251,
+     36,
+     251,
+     36,
+     " "
+    ],
+    [
+     252,
+     29,
+     252,
+     29,
+     " "
+    ],
+    [
+     253,
+     46,
+     253,
+     46,
+     " "
+    ],
+    [
+     254,
+     7,
+     254,
+     7,
+     " "
+    ],
+    [
+     255,
+     78,
+     255,
+     78,
+     " "
+    ],
+    [
+     256,
+     59,
+     256,
+     59,
+     " "
+    ],
+    [
+     257,
+     9,
+     257,
+     9,
+     " "
+    ],
+    [
+     258,
+     50,
+     258,
+     50,
+     " "
+    ],
+    [
+     259,
+     34,
+     259,
+     34,
+     " "
+    ],
+    [
+     260,
+     9,
+     260,
+     9,
+     " "
+    ],
+    [
+     261,
+     5,
+     261,
+     5,
+     " "
+    ],
+    [
+     263,
+     28,
+     263,
+     28,
+     " "
+    ],
+    [
+     264,
+     11,
+     264,
+     11,
+     " "
+    ],
+    [
+     265,
+     5,
+     265,
+     5,
+     " "
+    ],
+    [
+     267,
+     19,
+     267,
+     19,
+     " "
+    ],
+    [
+     268,
+     21,
+     268,
+     21,
+     " "
+    ],
+    [
+     269,
+     29,
+     269,
+     29,
+     " "
+    ],
+    [
+     270,
+     75,
+     270,
+     75,
+     " "
+    ],
+    [
+     271,
+     60,
+     271,
+     60,
+     " "
+    ],
+    [
+     272,
+     5,
+     272,
+     5,
+     " "
+    ],
+    [
+     273,
+     1,
+     273,
+     1,
+     " "
+    ],
+    [
+     276,
+     21,
+     276,
+     21,
+     " "
+    ],
+    [
+     278,
+     20,
+     278,
+     20,
+     " "
+    ],
+    [
+     279,
+     89,
+     279,
+     89,
+     " "
+    ],
+    [
+     280,
+     1,
+     280,
+     1,
+     " "
+    ],
+    [
+     282,
+     80,
+     282,
+     80,
+     " "
+    ],
+    [
+     283,
+     12,
+     283,
+     12,
+     " "
+    ],
+    [
+     284,
+     14,
+     284,
+     14,
+     " "
+    ],
+    [
+     285,
+     33,
+     285,
+     33,
+     " "
+    ],
+    [
+     286,
+     29,
+     286,
+     29,
+     " "
+    ],
+    [
+     287,
+     33,
+     287,
+     33,
+     " "
+    ],
+    [
+     288,
+     37,
+     288,
+     37,
+     " "
+    ],
+    [
+     289,
+     7,
+     289,
+     7,
+     " "
+    ],
+    [
+     290,
+     5,
+     290,
+     5,
+     " "
+    ],
+    [
+     292,
+     14,
+     292,
+     14,
+     " "
+    ],
+    [
+     293,
+     18,
+     293,
+     18,
+     " "
+    ],
+    [
+     294,
+     22,
+     294,
+     22,
+     " "
+    ],
+    [
+     295,
+     36,
+     295,
+     36,
+     " "
+    ],
+    [
+     296,
+     29,
+     296,
+     29,
+     " "
+    ],
+    [
+     297,
+     46,
+     297,
+     46,
+     " "
+    ],
+    [
+     298,
+     7,
+     298,
+     7,
+     " "
+    ],
+    [
+     299,
+     78,
+     299,
+     78,
+     " "
+    ],
+    [
+     300,
+     59,
+     300,
+     59,
+     " "
+    ],
+    [
+     301,
+     9,
+     301,
+     9,
+     " "
+    ],
+    [
+     302,
+     50,
+     302,
+     50,
+     " "
+    ],
+    [
+     303,
+     34,
+     303,
+     34,
+     " "
+    ],
+    [
+     304,
+     9,
+     304,
+     9,
+     " "
+    ],
+    [
+     305,
+     5,
+     305,
+     5,
+     " "
+    ],
+    [
+     306,
+     1,
+     306,
+     1,
+     " "
+    ],
+    [
+     308,
+     7,
+     308,
+     7,
+     " "
+    ],
+    [
+     309,
+     86,
+     309,
+     86,
+     " "
+    ],
+    [
+     310,
+     26,
+     310,
+     26,
+     " "
+    ],
+    [
+     312,
+     50,
+     312,
+     50,
+     " "
+    ],
+    [
+     313,
+     39,
+     313,
+     39,
+     " "
+    ],
+    [
+     314,
+     32,
+     314,
+     32,
+     " "
+    ],
+    [
+     315,
+     25,
+     315,
+     25,
+     " "
+    ],
+    [
+     316,
+     22,
+     316,
+     22,
+     " "
+    ],
+    [
+     317,
+     6,
+     317,
+     6,
+     " "
+    ],
+    [
+     319,
+     41,
+     319,
+     41,
+     " "
+    ],
+    [
+     320,
+     65,
+     320,
+     65,
+     " "
+    ],
+    [
+     321,
+     34,
+     321,
+     34,
+     " "
+    ],
+    [
+     322,
+     8,
+     322,
+     8,
+     " "
+    ],
+    [
+     325,
+     51,
+     325,
+     51,
+     " "
+    ],
+    [
+     326,
+     26,
+     326,
+     26,
+     " "
+    ],
+    [
+     327,
+     30,
+     327,
+     30,
+     " "
+    ],
+    [
+     328,
+     16,
+     328,
+     16,
+     " "
+    ],
+    [
+     329,
+     69,
+     329,
+     69,
+     " "
+    ],
+    [
+     330,
+     22,
+     330,
+     22,
+     " "
+    ],
+    [
+     331,
+     22,
+     331,
+     22,
+     " "
+    ],
+    [
+     332,
+     6,
+     332,
+     6,
+     " "
+    ],
+    [
+     333,
+     58,
+     333,
+     58,
+     " "
+    ],
+    [
+     334,
+     34,
+     334,
+     34,
+     " "
+    ],
+    [
+     337,
+     51,
+     337,
+     51,
+     " "
+    ],
+    [
+     338,
+     26,
+     338,
+     26,
+     " "
+    ],
+    [
+     339,
+     30,
+     339,
+     30,
+     " "
+    ],
+    [
+     340,
+     16,
+     340,
+     16,
+     " "
+    ],
+    [
+     341,
+     69,
+     341,
+     69,
+     " "
+    ],
+    [
+     342,
+     22,
+     342,
+     22,
+     " "
+    ],
+    [
+     343,
+     22,
+     343,
+     22,
+     " "
+    ],
+    [
+     344,
+     6,
+     344,
+     6,
+     " "
+    ],
+    [
+     345,
+     58,
+     345,
+     58,
+     " "
+    ],
+    [
+     346,
+     34,
+     346,
+     34,
+     " "
+    ],
+    [
+     350,
+     51,
+     350,
+     51,
+     " "
+    ],
+    [
+     351,
+     26,
+     351,
+     26,
+     " "
+    ],
+    [
+     352,
+     30,
+     352,
+     30,
+     " "
+    ],
+    [
+     353,
+     16,
+     353,
+     16,
+     " "
+    ],
+    [
+     354,
+     69,
+     354,
+     69,
+     " "
+    ],
+    [
+     355,
+     22,
+     355,
+     22,
+     " "
+    ],
+    [
+     356,
+     22,
+     356,
+     22,
+     " "
+    ],
+    [
+     357,
+     6,
+     357,
+     6,
+     " "
+    ],
+    [
+     358,
+     58,
+     358,
+     58,
+     " "
+    ],
+    [
+     359,
+     34,
+     359,
+     34,
+     " "
+    ],
+    [
+     362,
+     51,
+     362,
+     51,
+     " "
+    ],
+    [
+     363,
+     26,
+     363,
+     26,
+     " "
+    ],
+    [
+     364,
+     30,
+     364,
+     30,
+     " "
+    ],
+    [
+     365,
+     16,
+     365,
+     16,
+     " "
+    ],
+    [
+     366,
+     69,
+     366,
+     69,
+     " "
+    ],
+    [
+     367,
+     22,
+     367,
+     22,
+     " "
+    ],
+    [
+     368,
+     22,
+     368,
+     22,
+     " "
+    ],
+    [
+     369,
+     6,
+     369,
+     6,
+     " "
+    ],
+    [
+     370,
+     57,
+     370,
+     57,
+     " "
+    ],
+    [
+     371,
+     34,
+     371,
+     34,
+     " "
+    ],
+    [
+     374,
+     24,
+     374,
+     24,
+     " "
+    ],
+    [
+     375,
+     22,
+     375,
+     22,
+     " "
+    ],
+    [
+     376,
+     28,
+     376,
+     28,
+     " "
+    ],
+    [
+     377,
+     36,
+     377,
+     36,
+     " "
+    ],
+    [
+     378,
+     69,
+     378,
+     69,
+     " "
+    ],
+    [
+     379,
+     6,
+     379,
+     6,
+     " "
+    ],
+    [
+     381,
+     28,
+     381,
+     28,
+     " "
+    ],
+    [
+     382,
+     16,
+     382,
+     16,
+     " "
+    ],
+    [
+     383,
+     36,
+     383,
+     36,
+     " "
+    ],
+    [
+     384,
+     29,
+     384,
+     29,
+     " "
+    ],
+    [
+     386,
+     15,
+     386,
+     15,
+     " "
+    ],
+    [
+     387,
+     18,
+     387,
+     18,
+     " "
+    ],
+    [
+     388,
+     9,
+     388,
+     9,
+     " "
+    ],
+    [
+     389,
+     35,
+     389,
+     35,
+     " "
+    ],
+    [
+     390,
+     35,
+     390,
+     35,
+     " "
+    ],
+    [
+     391,
+     32,
+     391,
+     32,
+     " "
+    ],
+    [
+     392,
+     9,
+     392,
+     9,
+     " "
+    ],
+    [
+     393,
+     6,
+     393,
+     6,
+     " "
+    ],
+    [
+     394,
+     1,
+     394,
+     1,
+     " "
+    ]
+   ],
+   "kind": "T3",
+   "path": "runtime/tests/user_interface.rs",
+   "shift": {
+    "col": 0,
+    "eof": [],
+    "line": -1,
+    "n": 0,
+    "path": "runtime/tests/user_interface.rs",
+    "w": 0
+   }
+  }
+ },
+ "shape": "codeAction:result->error:timeout",
+ "signature": "rust-analyzer|r5_transforms|codeAction:result->error:timeout",
+ "expected": [
+  [
+   "Convert From to TryFrom",
+   "refactor.rewrite"
+  ],
+  [
+   "Generate a type alias for function with named params",
+   ""
+  ],
+  [
+   "Generate a type alias for function with unnamed params",
+   ""
+  ]
+ ],
+ "actual": [
+  "error",
+  "timeout"
+ ],
+ "reproduced": "0/3",
+ "note": "T3 runtime/tests/user_interface.rs: 327 edit(s), first [11, 19, 11, 19]; flake 0/3 [r1:SCr r2:Scr r3:SCr] in 551s",
+ "violation": {
+  "oracle": "r5_transforms",
+  "server": "rust-analyzer-2026-09-21",
+  "project": "iced-rs/iced@0ef42477fb6f",
+  "key": {
+   "method": "codeAction",
+   "path": "core/src/widget/id.rs",
+   "line": 26,
+   "character": 9,
+   "extra": "pos"
+  },
+  "expected": [
+   [
+    "Convert From to TryFrom",
+    "refactor.rewrite"
+   ],
+   [
+    "Generate a type alias for function with named params",
+    ""
+   ],
+   [
+    "Generate a type alias for function with unnamed params",
+    ""
+   ]
+  ],
+  "actual": [
+   "error",
+   "timeout"
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "runtime/tests/user_interface.rs"
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     11,
+     19
+    ],
+    "end": [
+     11,
+     19
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     13,
+     13
+    ],
+    "end": [
+     13,
+     13
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     14,
+     26
+    ],
+    "end": [
+     14,
+     26
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     15,
+     1
+    ],
+    "end": [
+     15,
+     1
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     17,
+     57
+    ],
+    "end": [
+     17,
+     57
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     18,
+     36
+    ],
+    "end": [
+     18,
+     36
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     19,
+     49
+    ],
+    "end": [
+     19,
+     49
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     20,
+     5
+    ],
+    "end": [
+     20,
+     5
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     22,
+     99
+    ],
+    "end": [
+     22,
+     99
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     23,
+     31
+    ],
+    "end": [
+     23,
+     31
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     24,
+     5
+    ],
+    "end": [
+     24,
+     5
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     26,
+     12
+    ],
+    "end": [
+     26,
+     12
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     27,
+     14
+    ],
+    "end": [
+     27,
+     14
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     28,
+     29
+    ],
+    "end": [
+     28,
+     29
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     29,
+     33
+    ],
+    "end": [
+     29,
+     33
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     30,
+     29
+    ],
+    "end": [
+     30,
+     29
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     31,
+     33
+    ],
+    "end": [
+     31,
+     33
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     32,
+     32
+    ],
+    "end": [
+     32,
+     32
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     33,
+     37
+    ],
+    "end": [
+     33,
+     37
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     34,
+     30
+    ],
+    "end": [
+     34,
+     30
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     35,
+     7
+    ],
+    "end": [
+     35,
+     7
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     36,
+     5
+    ],
+    "end": [
+     36,
+     5
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     38,
+     14
+    ],
+    "end": [
+     38,
+     14
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     39,
+     18
+    ],
+    "end": [
+     39,
+     18
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     40,
+     33
+    ],
+    "end": [
+     40,
+     33
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     41,
+     22
+    ],
+    "end": [
+     41,
+     22
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     42,
+     32
+    ],
+    "end": [
+     42,
+     32
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     43,
+     37
+    ],
+    "end": [
+     43,
+     37
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     44,
+     29
+    ],
+    "end": [
+     44,
+     29
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     45,
+     34
+    ],
+    "end": [
+     45,
+     34
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     46,
+     30
+    ],
+    "end": [
+     46,
+     30
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     47,
+     7
+    ],
+    "end": [
+     47,
+     7
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     48,
+     81
+    ],
+    "end": [
+     48,
+     81
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     49,
+     30
+    ],
+    "end": [
+     49,
+     30
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     50,
+     9
+    ],
+    "end": [
+     50,
+     9
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     51,
+     5
+    ],
+    "end": [
+     51,
+     5
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     53,
+     19
+    ],
+    "end": [
+     53,
+     19
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     54,
+     21
+    ],
+    "end": [
+     54,
+     21
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     55,
+     36
+    ],
+    "end": [
+     55,
+     36
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     56,
+     32
+    ],
+    "end": [
+     56,
+     32
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     57,
+     29
+    ],
+    "end": [
+     57,
+     29
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     58,
+     30
+    ],
+    "end": [
+     58,
+     30
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     59,
+     35
+    ],
+    "end": [
+     59,
+     35
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     60,
+     28
+    ],
+    "end": [
+     60,
+     28
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     61,
+     63
+    ],
+    "end": [
+     61,
+     63
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     62,
+     33
+    ],
+    "end": [
+     62,
+     33
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     63,
+     63
+    ],
+    "end": [
+     63,
+     63
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     64,
+     59
+    ],
+    "end": [
+     64,
+     59
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     65,
+     16
+    ],
+    "end": [
+     65,
+     16
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     66,
+     16
+    ],
+    "end": [
+     66,
+     16
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     67,
+     22
+    ],
+    "end": [
+     67,
+     22
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     68,
+     9
+    ],
+    "end": [
+     68,
+     9
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     69,
+     5
+    ],
+    "end": [
+     69,
+     5
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     70,
+     1
+    ],
+    "end": [
+     70,
+     1
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     72,
+     26
+    ],
+    "end": [
+     72,
+     26
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     73,
+     34
+    ],
+    "end": [
+     73,
+     34
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     74,
+     1
+    ],
+    "end": [
+     74,
+     1
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     76,
+     76
+    ],
+    "end": [
+     76,
+     76
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     77,
+     12
+    ],
+    "end": [
+     77,
+     12
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     78,
+     14
+    ],
+    "end": [
+     78,
+     14
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     79,
+     33
+    ],
+    "end": [
+     79,
+     33
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     80,
+     29
+    ],
+    "end": [
+     80,
+     29
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     81,
+     33
+    ],
+    "end": [
+     81,
+     33
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     82,
+     37
+    ],
+    "end": [
+     82,
+     37
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     83,
+     7
+    ],
+    "end": [
+     83,
+     7
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     84,
+     5
+    ],
+    "end": [
+     84,
+     5
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     86,
+     14
+    ],
+    "end": [
+     86,
+     14
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     87,
+     18
+    ],
+    "end": [
+     87,
+     18
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     88,
+     22
+    ],
+    "end": [
+     88,
+     22
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     89,
+     37
+    ],
+    "end": [
+     89,
+     37
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     90,
+     29
+    ],
+    "end": [
+     90,
+     29
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     91,
+     34
+    ],
+    "end": [
+     91,
+     34
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     92,
+     7
+    ],
+    "end": [
+     92,
+     7
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     93,
+     80
+    ],
+    "end": [
+     93,
+     80
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     94,
+     42
+    ],
+    "end": [
+     94,
+     42
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     95,
+     38
+    ],
+    "end": [
+     95,
+     38
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     96,
+     9
+    ],
+    "end": [
+     96,
+     9
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     97,
+     5
+    ],
+    "end": [
+     97,
+     5
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     98,
+     1
+    ],
+    "end": [
+     98,
+     1
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     100,
+     7
+    ],
+    "end": [
+     100,
+     7
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     101,
+     63
+    ],
+    "end": [
+     101,
+     63
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     102,
+     26
+    ],
+    "end": [
+     102,
+     26
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     104,
+     50
+    ],
+    "end": [
+     104,
+     50
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     105,
+     27
+    ],
+    "end": [
+     105,
+     27
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     106,
+     34
+    ],
+    "end": [
+     106,
+     34
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     107,
+     11
+    ],
+    "end": [
+     107,
+     11
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     108,
+     41
+    ],
+    "end": [
+     108,
+     41
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     109,
+     25
+    ],
+    "end": [
+     109,
+     25
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     110,
+     22
+    ],
+    "end": [
+     110,
+     22
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     111,
+     6
+    ],
+    "end": [
+     111,
+     6
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     113,
+     41
+    ],
+    "end": [
+     113,
+     41
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     115,
+     18
+    ],
+    "end": [
+     115,
+     18
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     116,
+     83
+    ],
+    "end": [
+     116,
+     83
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     117,
+     56
+    ],
+    "end": [
+     117,
+     56
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     118,
+     38
+    ],
+    "end": [
+     118,
+     38
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     119,
+     11
+    ],
+    "end": [
+     119,
+     11
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     120,
+     6
+    ],
+    "end": [
+     120,
+     6
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     122,
+     51
+    ],
+    "end": [
+     122,
+     51
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     123,
+     26
+    ],
+    "end": [
+     123,
+     26
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     124,
+     30
+    ],
+    "end": [
+     124,
+     30
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     125,
+     16
+    ],
+    "end": [
+     125,
+     16
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     126,
+     41
+    ],
+    "end": [
+     126,
+     41
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     127,
+     22
+    ],
+    "end": [
+     127,
+     22
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     128,
+     22
+    ],
+    "end": [
+     128,
+     22
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     129,
+     6
+    ],
+    "end": [
+     129,
+     6
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     131,
+     34
+    ],
+    "end": [
+     131,
+     34
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     132,
+     34
+    ],
+    "end": [
+     132,
+     34
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     133,
+     1
+    ],
+    "end": [
+     133,
+     1
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     135,
+     44
+    ],
+    "end": [
+     135,
+     44
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     136,
+     21
+    ],
+    "end": [
+     136,
+     21
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     137,
+     8
+    ],
+    "end": [
+     137,
+     8
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     138,
+     11
+    ],
+    "end": [
+     138,
+     11
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     139,
+     11
+    ],
+    "end": [
+     139,
+     11
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     140,
+     1
+    ],
+    "end": [
+     140,
+     1
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     142,
+     24
+    ],
+    "end": [
+     142,
+     24
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     144,
+     81
+    ],
+    "end": [
+     144,
+     81
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     145,
+     36
+    ],
+    "end": [
+     145,
+     36
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     146,
+     45
+    ],
+    "end": [
+     146,
+     45
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     147,
+     5
+    ],
+    "end": [
+     147,
+     5
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     149,
+     99
+    ],
+    "end": [
+     149,
+     99
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     150,
+     44
+    ],
+    "end": [
+     150,
+     44
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     151,
+     5
+    ],
+    "end": [
+     151,
+     5
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     153,
+     12
+    ],
+    "end": [
+     153,
+     12
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     154,
+     14
+    ],
+    "end": [
+     154,
+     14
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     155,
+     29
+    ],
+    "end": [
+     155,
+     29
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     156,
+     33
+    ],
+    "end": [
+     156,
+     33
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     157,
+     29
+    ],
+    "end": [
+     157,
+     29
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     158,
+     33
+    ],
+    "end": [
+     158,
+     33
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     159,
+     32
+    ],
+    "end": [
+     159,
+     32
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     160,
+     37
+    ],
+    "end": [
+     160,
+     37
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     161,
+     30
+    ],
+    "end": [
+     161,
+     30
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     162,
+     7
+    ],
+    "end": [
+     162,
+     7
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     163,
+     5
+    ],
+    "end": [
+     163,
+     5
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     165,
+     14
+    ],
+    "end": [
+     165,
+     14
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     166,
+     18
+    ],
+    "end": [
+     166,
+     18
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     167,
+     33
+    ],
+    "end": [
+     167,
+     33
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     168,
+     23
+    ],
+    "end": [
+     168,
+     23
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     169,
+     32
+    ],
+    "end": [
+     169,
+     32
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     170,
+     37
+    ],
+    "end": [
+     170,
+     37
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     171,
+     29
+    ],
+    "end": [
+     171,
+     29
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     172,
+     47
+    ],
+    "end": [
+     172,
+     47
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     173,
+     30
+    ],
+    "end": [
+     173,
+     30
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     174,
+     7
+    ],
+    "end": [
+     174,
+     7
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     175,
+     5
+    ],
+    "end": [
+     175,
+     5
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     177,
+     19
+    ],
+    "end": [
+     177,
+     19
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     178,
+     21
+    ],
+    "end": [
+     178,
+     21
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     179,
+     36
+    ],
+    "end": [
+     179,
+     36
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     180,
+     32
+    ],
+    "end": [
+     180,
+     32
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     181,
+     29
+    ],
+    "end": [
+     181,
+     29
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     182,
+     30
+    ],
+    "end": [
+     182,
+     30
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     183,
+     35
+    ],
+    "end": [
+     183,
+     35
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     184,
+     28
+    ],
+    "end": [
+     184,
+     28
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     185,
+     75
+    ],
+    "end": [
+     185,
+     75
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     186,
+     13
+    ],
+    "end": [
+     186,
+     13
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     187,
+     56
+    ],
+    "end": [
+     187,
+     56
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     188,
+     59
+    ],
+    "end": [
+     188,
+     59
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     189,
+     9
+    ],
+    "end": [
+     189,
+     9
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     190,
+     5
+    ],
+    "end": [
+     190,
+     5
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     191,
+     1
+    ],
+    "end": [
+     191,
+     1
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     194,
+     18
+    ],
+    "end": [
+     194,
+     18
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     196,
+     17
+    ],
+    "end": [
+     196,
+     17
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     197,
+     97
+    ],
+    "end": [
+     197,
+     97
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     198,
+     1
+    ],
+    "end": [
+     198,
+     1
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     200,
+     77
+    ],
+    "end": [
+     200,
+     77
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     201,
+     12
+    ],
+    "end": [
+     201,
+     12
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     202,
+     14
+    ],
+    "end": [
+     202,
+     14
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     203,
+     33
+    ],
+    "end": [
+     203,
+     33
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     204,
+     29
+    ],
+    "end": [
+     204,
+     29
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     205,
+     33
+    ],
+    "end": [
+     205,
+     33
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     206,
+     37
+    ],
+    "end": [
+     206,
+     37
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     207,
+     7
+    ],
+    "end": [
+     207,
+     7
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     208,
+     5
+    ],
+    "end": [
+     208,
+     5
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     210,
+     14
+    ],
+    "end": [
+     210,
+     14
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     211,
+     18
+    ],
+    "end": [
+     211,
+     18
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     212,
+     22
+    ],
+    "end": [
+     212,
+     22
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     213,
+     36
+    ],
+    "end": [
+     213,
+     36
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     214,
+     29
+    ],
+    "end": [
+     214,
+     29
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     215,
+     46
+    ],
+    "end": [
+     215,
+     46
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     216,
+     7
+    ],
+    "end": [
+     216,
+     7
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     217,
+     78
+    ],
+    "end": [
+     217,
+     78
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     218,
+     59
+    ],
+    "end": [
+     218,
+     59
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     219,
+     9
+    ],
+    "end": [
+     219,
+     9
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     220,
+     47
+    ],
+    "end": [
+     220,
+     47
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     221,
+     34
+    ],
+    "end": [
+     221,
+     34
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     222,
+     9
+    ],
+    "end": [
+     222,
+     9
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     223,
+     5
+    ],
+    "end": [
+     223,
+     5
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     225,
+     28
+    ],
+    "end": [
+     225,
+     28
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     226,
+     11
+    ],
+    "end": [
+     226,
+     11
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     227,
+     5
+    ],
+    "end": [
+     227,
+     5
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     228,
+     1
+    ],
+    "end": [
+     228,
+     1
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     232,
+     21
+    ],
+    "end": [
+     232,
+     21
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     234,
+     20
+    ],
+    "end": [
+     234,
+     20
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     235,
+     89
+    ],
+    "end": [
+     235,
+     89
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     236,
+     1
+    ],
+    "end": [
+     236,
+     1
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     238,
+     80
+    ],
+    "end": [
+     238,
+     80
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     239,
+     12
+    ],
+    "end": [
+     239,
+     12
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     240,
+     14
+    ],
+    "end": [
+     240,
+     14
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     241,
+     33
+    ],
+    "end": [
+     241,
+     33
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     242,
+     29
+    ],
+    "end": [
+     242,
+     29
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     243,
+     33
+    ],
+    "end": [
+     243,
+     33
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     244,
+     37
+    ],
+    "end": [
+     244,
+     37
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     245,
+     7
+    ],
+    "end": [
+     245,
+     7
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     246,
+     5
+    ],
+    "end": [
+     246,
+     5
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     248,
+     14
+    ],
+    "end": [
+     248,
+     14
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     249,
+     18
+    ],
+    "end": [
+     249,
+     18
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     250,
+     22
+    ],
+    "end": [
+     250,
+     22
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     251,
+     36
+    ],
+    "end": [
+     251,
+     36
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     252,
+     29
+    ],
+    "end": [
+     252,
+     29
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     253,
+     46
+    ],
+    "end": [
+     253,
+     46
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     254,
+     7
+    ],
+    "end": [
+     254,
+     7
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     255,
+     78
+    ],
+    "end": [
+     255,
+     78
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     256,
+     59
+    ],
+    "end": [
+     256,
+     59
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     257,
+     9
+    ],
+    "end": [
+     257,
+     9
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     258,
+     50
+    ],
+    "end": [
+     258,
+     50
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     259,
+     34
+    ],
+    "end": [
+     259,
+     34
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     260,
+     9
+    ],
+    "end": [
+     260,
+     9
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     261,
+     5
+    ],
+    "end": [
+     261,
+     5
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     263,
+     28
+    ],
+    "end": [
+     263,
+     28
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     264,
+     11
+    ],
+    "end": [
+     264,
+     11
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     265,
+     5
+    ],
+    "end": [
+     265,
+     5
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     267,
+     19
+    ],
+    "end": [
+     267,
+     19
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     268,
+     21
+    ],
+    "end": [
+     268,
+     21
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     269,
+     29
+    ],
+    "end": [
+     269,
+     29
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     270,
+     75
+    ],
+    "end": [
+     270,
+     75
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     271,
+     60
+    ],
+    "end": [
+     271,
+     60
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     272,
+     5
+    ],
+    "end": [
+     272,
+     5
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     273,
+     1
+    ],
+    "end": [
+     273,
+     1
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     276,
+     21
+    ],
+    "end": [
+     276,
+     21
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     278,
+     20
+    ],
+    "end": [
+     278,
+     20
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     279,
+     89
+    ],
+    "end": [
+     279,
+     89
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     280,
+     1
+    ],
+    "end": [
+     280,
+     1
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     282,
+     80
+    ],
+    "end": [
+     282,
+     80
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     283,
+     12
+    ],
+    "end": [
+     283,
+     12
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     284,
+     14
+    ],
+    "end": [
+     284,
+     14
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     285,
+     33
+    ],
+    "end": [
+     285,
+     33
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     286,
+     29
+    ],
+    "end": [
+     286,
+     29
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     287,
+     33
+    ],
+    "end": [
+     287,
+     33
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     288,
+     37
+    ],
+    "end": [
+     288,
+     37
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     289,
+     7
+    ],
+    "end": [
+     289,
+     7
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     290,
+     5
+    ],
+    "end": [
+     290,
+     5
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     292,
+     14
+    ],
+    "end": [
+     292,
+     14
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     293,
+     18
+    ],
+    "end": [
+     293,
+     18
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     294,
+     22
+    ],
+    "end": [
+     294,
+     22
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     295,
+     36
+    ],
+    "end": [
+     295,
+     36
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     296,
+     29
+    ],
+    "end": [
+     296,
+     29
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     297,
+     46
+    ],
+    "end": [
+     297,
+     46
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     298,
+     7
+    ],
+    "end": [
+     298,
+     7
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     299,
+     78
+    ],
+    "end": [
+     299,
+     78
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     300,
+     59
+    ],
+    "end": [
+     300,
+     59
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     301,
+     9
+    ],
+    "end": [
+     301,
+     9
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     302,
+     50
+    ],
+    "end": [
+     302,
+     50
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     303,
+     34
+    ],
+    "end": [
+     303,
+     34
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     304,
+     9
+    ],
+    "end": [
+     304,
+     9
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     305,
+     5
+    ],
+    "end": [
+     305,
+     5
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     306,
+     1
+    ],
+    "end": [
+     306,
+     1
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     308,
+     7
+    ],
+    "end": [
+     308,
+     7
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     309,
+     86
+    ],
+    "end": [
+     309,
+     86
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     310,
+     26
+    ],
+    "end": [
+     310,
+     26
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     312,
+     50
+    ],
+    "end": [
+     312,
+     50
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     313,
+     39
+    ],
+    "end": [
+     313,
+     39
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     314,
+     32
+    ],
+    "end": [
+     314,
+     32
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     315,
+     25
+    ],
+    "end": [
+     315,
+     25
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     316,
+     22
+    ],
+    "end": [
+     316,
+     22
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     317,
+     6
+    ],
+    "end": [
+     317,
+     6
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     319,
+     41
+    ],
+    "end": [
+     319,
+     41
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     320,
+     65
+    ],
+    "end": [
+     320,
+     65
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     321,
+     34
+    ],
+    "end": [
+     321,
+     34
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     322,
+     8
+    ],
+    "end": [
+     322,
+     8
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     325,
+     51
+    ],
+    "end": [
+     325,
+     51
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     326,
+     26
+    ],
+    "end": [
+     326,
+     26
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     327,
+     30
+    ],
+    "end": [
+     327,
+     30
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     328,
+     16
+    ],
+    "end": [
+     328,
+     16
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     329,
+     69
+    ],
+    "end": [
+     329,
+     69
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     330,
+     22
+    ],
+    "end": [
+     330,
+     22
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     331,
+     22
+    ],
+    "end": [
+     331,
+     22
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     332,
+     6
+    ],
+    "end": [
+     332,
+     6
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     333,
+     58
+    ],
+    "end": [
+     333,
+     58
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     334,
+     34
+    ],
+    "end": [
+     334,
+     34
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     337,
+     51
+    ],
+    "end": [
+     337,
+     51
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     338,
+     26
+    ],
+    "end": [
+     338,
+     26
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     339,
+     30
+    ],
+    "end": [
+     339,
+     30
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     340,
+     16
+    ],
+    "end": [
+     340,
+     16
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     341,
+     69
+    ],
+    "end": [
+     341,
+     69
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     342,
+     22
+    ],
+    "end": [
+     342,
+     22
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     343,
+     22
+    ],
+    "end": [
+     343,
+     22
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     344,
+     6
+    ],
+    "end": [
+     344,
+     6
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     345,
+     58
+    ],
+    "end": [
+     345,
+     58
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     346,
+     34
+    ],
+    "end": [
+     346,
+     34
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     350,
+     51
+    ],
+    "end": [
+     350,
+     51
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     351,
+     26
+    ],
+    "end": [
+     351,
+     26
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     352,
+     30
+    ],
+    "end": [
+     352,
+     30
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     353,
+     16
+    ],
+    "end": [
+     353,
+     16
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     354,
+     69
+    ],
+    "end": [
+     354,
+     69
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     355,
+     22
+    ],
+    "end": [
+     355,
+     22
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     356,
+     22
+    ],
+    "end": [
+     356,
+     22
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     357,
+     6
+    ],
+    "end": [
+     357,
+     6
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     358,
+     58
+    ],
+    "end": [
+     358,
+     58
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     359,
+     34
+    ],
+    "end": [
+     359,
+     34
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     362,
+     51
+    ],
+    "end": [
+     362,
+     51
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     363,
+     26
+    ],
+    "end": [
+     363,
+     26
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     364,
+     30
+    ],
+    "end": [
+     364,
+     30
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     365,
+     16
+    ],
+    "end": [
+     365,
+     16
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     366,
+     69
+    ],
+    "end": [
+     366,
+     69
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     367,
+     22
+    ],
+    "end": [
+     367,
+     22
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     368,
+     22
+    ],
+    "end": [
+     368,
+     22
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     369,
+     6
+    ],
+    "end": [
+     369,
+     6
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     370,
+     57
+    ],
+    "end": [
+     370,
+     57
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     371,
+     34
+    ],
+    "end": [
+     371,
+     34
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     374,
+     24
+    ],
+    "end": [
+     374,
+     24
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     375,
+     22
+    ],
+    "end": [
+     375,
+     22
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     376,
+     28
+    ],
+    "end": [
+     376,
+     28
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     377,
+     36
+    ],
+    "end": [
+     377,
+     36
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     378,
+     69
+    ],
+    "end": [
+     378,
+     69
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     379,
+     6
+    ],
+    "end": [
+     379,
+     6
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     381,
+     28
+    ],
+    "end": [
+     381,
+     28
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     382,
+     16
+    ],
+    "end": [
+     382,
+     16
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     383,
+     36
+    ],
+    "end": [
+     383,
+     36
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     384,
+     29
+    ],
+    "end": [
+     384,
+     29
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     386,
+     15
+    ],
+    "end": [
+     386,
+     15
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     387,
+     18
+    ],
+    "end": [
+     387,
+     18
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     388,
+     9
+    ],
+    "end": [
+     388,
+     9
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     389,
+     35
+    ],
+    "end": [
+     389,
+     35
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     390,
+     35
+    ],
+    "end": [
+     390,
+     35
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     391,
+     32
+    ],
+    "end": [
+     391,
+     32
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     392,
+     9
+    ],
+    "end": [
+     392,
+     9
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     393,
+     6
+    ],
+    "end": [
+     393,
+     6
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "runtime/tests/user_interface.rs",
+    "start": [
+     394,
+     1
+    ],
+    "end": [
+     394,
+     1
+    ],
+    "text": " "
+   }
+  ],
+  "detail": "{\"case\": {\"mapped_key\": [\"codeAction\", \"core/src/widget/id.rs\", 26, 9, \"pos\"], \"transform\": {\"back\": {\"col\": 0, \"eof\": [], \"line\": -1, \"n\": 0, \"path\": \"runtime/tests/user_interface.rs\", \"w\": 0}, \"edits\": [[11, 19, 11, 19, \" \"], [13, 13, 13, 13, \" \"], [14, 26, 14, 26, \" \"], [15, 1, 15, 1, \" \"], [17, 57, 17, 57, \" \"], [18, 36, 18, 36, \" \"], [19, 49, 19, 49, \" \"], [20, 5, 20, 5, \" \"], [22, 99, 22, 99, \" \"], [23, 31, 23, 31, \" \"], [24, 5, 24, 5, \" \"], [26, 12, 26, 12, \" \"], [27, 14, 27, 14, \" \"], [28, 29, 28, 29, \" \"], [29, 33, 29, 33, \" \"], [30, 29, 30, 29, \" \"], [31, 33, 31, 33, \" \"], [32, 32, 32, 32, \" \"], [33, 37, 33, 37, \" \"], [34, 30, 34, 30, \" \"], [35, 7, 35, 7, \" \"], [36, 5, 36, 5, \" \"], [38, 14, 38, 14, \" \"], [39, 18, 39, 18, \" \"], [40, 33, 40, 33, \" \"], [41, 22, 41, 22, \" \"], [42, 32, 42, 32, \" \"], [43, 37, 43, 37, \" \"], [44, 29, 44, 29, \" \"], [45, 34, 45, 34, \" \"], [46, 30, 46, 30, \" \"], [47, 7, 47, 7, \" \"], [48, 81, 48, 81, \" \"], [49, 30, 49, 30, \" \"], [50, 9, 50, 9, \" \"], [51, 5, 51, 5, \" \"], [53, 19, 53, 19, \" \"], [54, 21, 54, 21, \" \"], [55, 36, 55, 36, \" \"], [56, 32, 56, 32, \" \"], [57, 29, 57, 29, \" \"], [58, 30, 58, 30, \" \"], [59, 35, 59, 35, \" \"], [60, 28, 60, 28, \" \"], [61, 63, 61, 63, \" \"], [62, 33, 62, 33, \" \"], [63, 63, 63, 63, \" \"], [64, 59, 64, 59, \" \"], [65, 16, 65, 16, \" \"], [66, 16, 66, 16, \" \"], [67, 22, 67, 22, \" \"], [68, 9, 68, 9, \" \"], [69, 5, 69, 5, \" \"], [70, 1, 70, 1, \" \"], [72, 26, 72, 26, \" \"], [73, 34, 73, 34, \" \"], [74, 1, 74, 1, \" \"], [76, 76, 76, 76, \" \"], [77, 12, 77, 12, \" \"], [78, 14, 78, 14, \" \"], [79, 33, 79, 33, \" \"], [80, 29, 80, 29, \" \"], [81, 33, 81, 33, \" \"], [82, 37, 82, 37, \" \"], [83, 7, 83, 7, \" \"], [84, 5, 84, 5, \" \"], [86, 14, 86, 14, \" \"], [87, 18, 87, 18, \" \"], [88, 22, 88, 22, \" \"], [89, 37, 89, 37, \" \"], [90, 29, 90, 29, \" \"], [91, 34, 91, 34, \" \"], [92, 7, 92, 7, \" \"], [93, 80, 93, 80, \" \"], [94, 42, 94, 42, \" \"], [95, 38, 95, 38, \" \"], [96, 9, 96, 9, \" \"], [97, 5, 97, 5, \" \"], [98, 1, 98, 1, \" \"], [100, 7, 100, 7, \" \"], [101, 63, 101, 63, \" \"], [102, 26, 102, 26, \" \"], [104, 50, 104, 50, \" \"], [105, 27, 105, 27, \" \"], [106, 34, 106, 34, \" \"], [107, 11, 107, 11, \" \"], [108, 41, 108, 41, \" \"], [109, 25, 109, 25, \" \"], [110, 22, 110, 22, \" \"], [111, 6, 111, 6, \" \"], [113, 41, 113, 41, \" \"], [115, 18, 115, 18, \" \"], [116, 83, 116, 83, \" \"], [117, 56, 117, 56, \" \"], [118, 38, 118, 38, \" \"], [119, 11, 119, 11, \" \"], [120, 6, 120, 6, \" \"], [122, 51, 122, 51, \" \"], [123, 26, 123, 26, \" \"], [124, 30, 124, 30, \" \"], [125, 16, 125, 16, \" \"], [126, 41, 126, 41, \" \"], [127, 22, 127, 22, \" \"], [128, 22, 128, 22, \" \"], [129, 6, 129, 6, \" \"], [131, 34, 131, 34, \" \"], [132, 34, 132, 34, \" \"], [133, 1, 133, 1, \" \"], [135, 44, 135, 44, \" \"], [136, 21, 136, 21, \" \"], [137, 8, 137, 8, \" \"], [138, 11, 138, 11, \" \"], [139, 11, 139, 11, \" \"], [140, 1, 140, 1, \" \"], [142, 24, 142, 24, \" \"], [144, 81, 144, 81, \" \"], [145, 36, 145, 36, \" \"], [146, 45, 146, 45, \" \"], [147, 5, 147, 5, \" \"], [149, 99, 149, 99, \" \"], [150, 44, 150, 44, \" \"], [151, 5, 151, 5, \" \"], [153, 12, 153, 12, \" \"], [154, 14, 154, 14, \" \"], [155, 29, 155, 29, \" \"], [156, 33, 156, 33, \" \"], [157, 29, 157, 29, \" \"], [158, 33, 158, 33, \" \"], [159, 32, 159, 32, \" \"], [160, 37, 160, 37, \" \"], [161, 30, 161, 30, \" \"], [162, 7, 162, 7, \" \"], [163, 5, 163, 5, \" \"], [165, 14, 165, 14, \" \"], [166, 18, 166, 18, \" \"], [167, 33, 167, 33, \" \"], [168, 23, 168, 23, \" \"], [169, 32, 169, 32, \" \"], [170, 37, 170, 37, \" \"], [171, 29, 171, 29, \" \"], [172, 47, 172, 47, \" \"], [173, 30, 173, 30, \" \"], [174, 7, 174, 7, \" \"], [175, 5, 175, 5, \" \"], [177, 19, 177, 19, \" \"], [178, 21, 178, 21, \" \"], [179, 36, 179, 36, \" \"], [180, 32, 180, 32, \" \"], [181, 29, 181, 29, \" \"], [182, 30, 182, 30, \" \"], [183, 35, 183, 35, \" \"], [184, 28, 184, 28, \" \"], [185, 75, 185, 75, \" \"], [186, 13, 186, 13, \" \"], [187, 56, 187, 56, \" \"], [188, 59, 188, 59, \" \"], [189, 9, 189, 9, \" \"], [190, 5, 190, 5, \" \"], [191, 1, 191, 1, \" \"], [194, 18, 194, 18, \" \"], [196, 17, 196, 17, \" \"], [197, 97, 197, 97, \" \"], [198, 1, 198, 1, \" \"], [200, 77, 200, 77, \" \"], [201, 12, 201, 12, \" \"], [202, 14, 202, 14, \" \"], [203, 33, 203, 33, \" \"], [204, 29, 204, 29, \" \"], [205, 33, 205, 33, \" \"], [206, 37, 206, 37, \" \"], [207, 7, 207, 7, \" \"], [208, 5, 208, 5, \" \"], [210, 14, 210, 14, \" \"], [211, 18, 211, 18, \" \"], [212, 22, 212, 22, \" \"], [213, 36, 213, 36, \" \"], [214, 29, 214, 29, \" \"], [215, 46, 215, 46, \" \"], [216, 7, 216, 7, \" \"], [217, 78, 217, 78, \" \"], [218, 59, 218, 59, \" \"], [219, 9, 219, 9, \" \"], [220, 47, 220, 47, \" \"], [221, 34, 221, 34, \" \"], [222, 9, 222, 9, \" \"], [223, 5, 223, 5, \" \"], [225, 28, 225, 28, \" \"], [226, 11, 226, 11, \" \"], [227, 5, 227, 5, \" \"], [228, 1, 228, 1, \" \"], [232, 21, 232, 21, \" \"], [234, 20, 234, 20, \" \"], [235, 89, 235, 89, \" \"], [236, 1, 236, 1, \" \"], [238, 80, 238, 80, \" \"], [239, 12, 239, 12, \" \"], [240, 14, 240, 14, \" \"], [241, 33, 241, 33, \" \"], [242, 29, 242, 29, \" \"], [243, 33, 243, 33, \" \"], [244, 37, 244, 37, \" \"], [245, 7, 245, 7, \" \"], [246, 5, 246, 5, \" \"], [248, 14, 248, 14, \" \"], [249, 18, 249, 18, \" \"], [250, 22, 250, 22, \" \"], [251, 36, 251, 36, \" \"], [252, 29, 252, 29, \" \"], [253, 46, 253, 46, \" \"], [254, 7, 254, 7, \" \"], [255, 78, 255, 78, \" \"], [256, 59, 256, 59, \" \"], [257, 9, 257, 9, \" \"], [258, 50, 258, 50, \" \"], [259, 34, 259, 34, \" \"], [260, 9, 260, 9, \" \"], [261, 5, 261, 5, \" \"], [263, 28, 263, 28, \" \"], [264, 11, 264, 11, \" \"], [265, 5, 265, 5, \" \"], [267, 19, 267, 19, \" \"], [268, 21, 268, 21, \" \"], [269, 29, 269, 29, \" \"], [270, 75, 270, 75, \" \"], [271, 60, 271, 60, \" \"], [272, 5, 272, 5, \" \"], [273, 1, 273, 1, \" \"], [276, 21, 276, 21, \" \"], [278, 20, 278, 20, \" \"], [279, 89, 279, 89, \" \"], [280, 1, 280, 1, \" \"], [282, 80, 282, 80, \" \"], [283, 12, 283, 12, \" \"], [284, 14, 284, 14, \" \"], [285, 33, 285, 33, \" \"], [286, 29, 286, 29, \" \"], [287, 33, 287, 33, \" \"], [288, 37, 288, 37, \" \"], [289, 7, 289, 7, \" \"], [290, 5, 290, 5, \" \"], [292, 14, 292, 14, \" \"], [293, 18, 293, 18, \" \"], [294, 22, 294, 22, \" \"], [295, 36, 295, 36, \" \"], [296, 29, 296, 29, \" \"], [297, 46, 297, 46, \" \"], [298, 7, 298, 7, \" \"], [299, 78, 299, 78, \" \"], [300, 59, 300, 59, \" \"], [301, 9, 301, 9, \" \"], [302, 50, 302, 50, \" \"], [303, 34, 303, 34, \" \"], [304, 9, 304, 9, \" \"], [305, 5, 305, 5, \" \"], [306, 1, 306, 1, \" \"], [308, 7, 308, 7, \" \"], [309, 86, 309, 86, \" \"], [310, 26, 310, 26, \" \"], [312, 50, 312, 50, \" \"], [313, 39, 313, 39, \" \"], [314, 32, 314, 32, \" \"], [315, 25, 315, 25, \" \"], [316, 22, 316, 22, \" \"], [317, 6, 317, 6, \" \"], [319, 41, 319, 41, \" \"], [320, 65, 320, 65, \" \"], [321, 34, 321, 34, \" \"], [322, 8, 322, 8, \" \"], [325, 51, 325, 51, \" \"], [326, 26, 326, 26, \" \"], [327, 30, 327, 30, \" \"], [328, 16, 328, 16, \" \"], [329, 69, 329, 69, \" \"], [330, 22, 330, 22, \" \"], [331, 22, 331, 22, \" \"], [332, 6, 332, 6, \" \"], [333, 58, 333, 58, \" \"], [334, 34, 334, 34, \" \"], [337, 51, 337, 51, \" \"], [338, 26, 338, 26, \" \"], [339, 30, 339, 30, \" \"], [340, 16, 340, 16, \" \"], [341, 69, 341, 69, \" \"], [342, 22, 342, 22, \" \"], [343, 22, 343, 22, \" \"], [344, 6, 344, 6, \" \"], [345, 58, 345, 58, \" \"], [346, 34, 346, 34, \" \"], [350, 51, 350, 51, \" \"], [351, 26, 351, 26, \" \"], [352, 30, 352, 30, \" \"], [353, 16, 353, 16, \" \"], [354, 69, 354, 69, \" \"], [355, 22, 355, 22, \" \"], [356, 22, 356, 22, \" \"], [357, 6, 357, 6, \" \"], [358, 58, 358, 58, \" \"], [359, 34, 359, 34, \" \"], [362, 51, 362, 51, \" \"], [363, 26, 363, 26, \" \"], [364, 30, 364, 30, \" \"], [365, 16, 365, 16, \" \"], [366, 69, 366, 69, \" \"], [367, 22, 367, 22, \" \"], [368, 22, 368, 22, \" \"], [369, 6, 369, 6, \" \"], [370, 57, 370, 57, \" \"], [371, 34, 371, 34, \" \"], [374, 24, 374, 24, \" \"], [375, 22, 375, 22, \" \"], [376, 28, 376, 28, \" \"], [377, 36, 377, 36, \" \"], [378, 69, 378, 69, \" \"], [379, 6, 379, 6, \" \"], [381, 28, 381, 28, \" \"], [382, 16, 382, 16, \" \"], [383, 36, 383, 36, \" \"], [384, 29, 384, 29, \" \"], [386, 15, 386, 15, \" \"], [387, 18, 387, 18, \" \"], [388, 9, 388, 9, \" \"], [389, 35, 389, 35, \" \"], [390, 35, 390, 35, \" \"], [391, 32, 391, 32, \" \"], [392, 9, 392, 9, \" \"], [393, 6, 393, 6, \" \"], [394, 1, 394, 1, \" \"]], \"kind\": \"T3\", \"path\": \"runtime/tests/user_interface.rs\", \"shift\": {\"col\": 0, \"eof\": [], \"line\": -1, \"n\": 0, \"path\": \"runtime/tests/user_interface.rs\", \"w\": 0}}}, \"note\": \"T3 runtime/tests/user_interface.rs: 327 edit(s), first [11, 19, 11, 19]; flake 0/3 [r1:SCr r2:Scr r3:SCr] in 551s\", \"shape\": \"codeAction:result->error:timeout\"}",
+  "reproduced": "0/3",
+  "reduced_ops": [],
+  "signature": "rust-analyzer|r5_transforms|codeAction:result->error:timeout",
+  "run_id": "7e6bb70e22e4"
+ },
+ "replay_logs": [],
+ "project_files": {},
+ "incomplete": false
+}

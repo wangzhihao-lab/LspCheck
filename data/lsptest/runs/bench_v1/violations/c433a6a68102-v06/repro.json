@@ -1,0 +1,264 @@
+{
+ "format": 1,
+ "campaign": "bench_v1",
+ "vid": "c433a6a68102-v06",
+ "run_id": "c433a6a68102",
+ "oracle": "r1_history",
+ "server": {
+  "kind": "tsserver",
+  "version": "5.6.2+tsls4.3.3"
+ },
+ "project": {
+  "name": "tsserver-59116",
+  "source": "dir",
+  "ref": "data/lsp_bench/cases/tsserver-59116/project",
+  "commit": "",
+  "language": "typescript"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 120.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "lib.ts",
+    "positions": [
+     [
+      0,
+      17
+     ],
+     [
+      1,
+      22
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      18
+     ],
+     [
+      1,
+      24
+     ]
+    ],
+    "names": [
+     "X",
+     "test"
+    ]
+   },
+   {
+    "path": "main.ts",
+    "positions": [
+     [
+      0,
+      9
+     ],
+     [
+      0,
+      15
+     ],
+     [
+      10,
+      0
+     ],
+     [
+      10,
+      5
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      10
+     ],
+     [
+      0,
+      17
+     ],
+     [
+      10,
+      1
+     ],
+     [
+      10,
+      8
+     ]
+    ],
+    "names": [
+     "X",
+     "from",
+     "X",
+     "foobar"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "hover",
+  "path": "main.ts",
+  "line": 0,
+  "character": 9,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "lib.ts"
+  },
+  {
+   "kind": "open",
+   "path": "main.ts"
+  },
+  {
+   "kind": "fs_rename",
+   "path": "lib.ts",
+   "new_path": "lib_rt.ts"
+  },
+  {
+   "kind": "change",
+   "path": "main.ts",
+   "start": [
+    0,
+    20
+   ],
+   "end": [
+    0,
+    20
+   ],
+   "text": "]"
+  },
+  {
+   "kind": "close",
+   "path": "main.ts"
+  },
+  {
+   "kind": "open",
+   "path": "main.ts"
+  },
+  {
+   "kind": "fs_rename",
+   "path": "lib_rt.ts",
+   "new_path": "lib.ts"
+  }
+ ],
+ "case": {
+  "chain_step": 0,
+  "families": [],
+  "family": "H9",
+  "history_index": 9,
+  "history_seed": 2013,
+  "mode": "fresh",
+  "note": "window: rename lib.ts -> lib_rt.ts; inside: main.ts: unsaved edit (insert ']' on line 0), close, reopen; then W reverted",
+  "seed": 2,
+  "timing": "settled"
+ },
+ "shape": "hover:text",
+ "signature": "tsserver|r1_history|hover:text",
+ "expected": [
+  "(alias) namespace X import X",
+  [
+   0,
+   9,
+   0,
+   10
+  ]
+ ],
+ "actual": [
+  "import X",
+  [
+   0,
+   9,
+   0,
+   10
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "H9: window: rename lib.ts -> lib_rt.ts; inside: main.ts: unsaved edit (insert ']' on line 0), close, reopen; then W reverted; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 77s",
+ "violation": {
+  "oracle": "r1_history",
+  "server": "tsserver-5.6.2+tsls4.3.3",
+  "project": "tsserver-59116",
+  "key": {
+   "method": "hover",
+   "path": "main.ts",
+   "line": 0,
+   "character": 9,
+   "extra": ""
+  },
+  "expected": [
+   "(alias) namespace X import X",
+   [
+    0,
+    9,
+    0,
+    10
+   ]
+  ],
+  "actual": [
+   "import X",
+   [
+    0,
+    9,
+    0,
+    10
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "lib.ts"
+   },
+   {
+    "kind": "open",
+    "path": "main.ts"
+   },
+   {
+    "kind": "fs_rename",
+    "path": "lib.ts",
+    "new_path": "lib_rt.ts"
+   },
+   {
+    "kind": "change",
+    "path": "main.ts",
+    "start": [
+     0,
+     20
+    ],
+    "end": [
+     0,
+     20
+    ],
+    "text": "]"
+   },
+   {
+    "kind": "close",
+    "path": "main.ts"
+   },
+   {
+    "kind": "open",
+    "path": "main.ts"
+   },
+   {
+    "kind": "fs_rename",
+    "path": "lib_rt.ts",
+    "new_path": "lib.ts"
+   }
+  ],
+  "detail": "{\"case\": {\"chain_step\": 0, \"families\": [], \"family\": \"H9\", \"history_index\": 9, \"history_seed\": 2013, \"mode\": \"fresh\", \"note\": \"window: rename lib.ts -> lib_rt.ts; inside: main.ts: unsaved edit (insert ']' on line 0), close, reopen; then W reverted\", \"seed\": 2, \"timing\": \"settled\"}, \"note\": \"H9: window: rename lib.ts -> lib_rt.ts; inside: main.ts: unsaved edit (insert ']' on line 0), close, reopen; then W reverted; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 77s\", \"shape\": \"hover:text\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "tsserver|r1_history|hover:text",
+  "run_id": "c433a6a68102"
+ },
+ "replay_logs": [
+  "logs/tsserver-5.6.2+tsls4.3.3-c433a6a68102-replay-baseline-20260925-045439-6836c5.jsonl.gz",
+  "logs/tsserver-5.6.2+tsls4.3.3-c433a6a68102-replay-control-20260925-045439-295f81.jsonl.gz",
+  "logs/tsserver-5.6.2+tsls4.3.3-c433a6a68102-replay-history-20260925-045441-27fbc7.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

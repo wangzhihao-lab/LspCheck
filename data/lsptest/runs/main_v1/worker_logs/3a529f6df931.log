@@ -1,0 +1,3 @@
+2026-09-24 09:37:47,091 INFO campaign_run run 3a529f6df931: r1_history on ts6 6.0.3, chenglou/pretext@2e5e2bdaee39 seed 1 race200, targets ['scripts/wrapping-transport.ts', 'src/line-break.ts', 'src/line-text.ts']
+2026-09-24 09:40:09,380 INFO campaign_run run 3a529f6df931: 2 candidate(s) in 142s; confirming
+2026-09-24 09:40:09,408 INFO campaign_run run 3a529f6df931 finished: ok, 0 confirmed of 2 candidate(s), 142s

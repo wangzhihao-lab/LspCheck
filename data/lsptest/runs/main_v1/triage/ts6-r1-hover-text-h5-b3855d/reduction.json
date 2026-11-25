@@ -1,0 +1,63 @@
+{
+ "vid": "f361ec20051e-v00",
+ "ops_before": 5,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 6,
+ "cache_hits": 0,
+ "reduce_seconds": 358.639,
+ "budget_exhausted": false,
+ "probe_log": [
+  [
+   4,
+   false
+  ],
+  [
+   4,
+   false
+  ],
+  [
+   4,
+   true
+  ],
+  [
+   3,
+   true
+  ],
+  [
+   2,
+   false
+  ],
+  [
+   1,
+   true
+  ]
+ ],
+ "logs": [
+  "ts6-6.0.3-trb3855d-replay-baseline-20260925-171551-8ee052.jsonl.gz",
+  "ts6-6.0.3-trb3855d-replay-control-20260925-171551-42cbe9.jsonl.gz",
+  "ts6-6.0.3-trb3855d-replay-history-20260925-171635-b1d519.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [
+   "type Lang = \"no\" | \"cn\" | \"en\" | \"tw\" | \"pt\" | \"da\" | \"jp\" | \"ko\" | \"id\" | \"fr\" | \"es\" | \"it\" | \"tr\" | \"de\" | \"vi\" | \"ru\" | \"cs\" | \"ar\" | \"bn\" | \"sk\"",
+   [
+    55,
+    38,
+    55,
+    42
+   ]
+  ],
+  "actual": [
+   "type Lang = \"cn\" | \"en\" | \"tw\" | \"pt\" | \"da\" | \"jp\" | \"ko\" | \"id\" | \"fr\" | \"es\" | \"it\" | \"tr\" | \"de\" | \"vi\" | \"ru\" | \"cs\" | \"no\" | \"ar\" | \"bn\" | \"sk\"",
+   [
+    55,
+    38,
+    55,
+    42
+   ]
+  ]
+ },
+ "ops_after": 1,
+ "total_seconds": 686.0
+}

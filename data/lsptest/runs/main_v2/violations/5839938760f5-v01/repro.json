@@ -1,0 +1,685 @@
+{
+ "format": 1,
+ "campaign": "main_v2",
+ "vid": "5839938760f5-v01",
+ "run_id": "5839938760f5",
+ "oracle": "r1_history",
+ "server": {
+  "kind": "gopls",
+  "version": "v0.23.0"
+ },
+ "project": {
+  "name": "zeromicro/go-zero@5b1b5bdc3adc",
+  "source": "corpus",
+  "ref": "temp/corpus/zeromicro__go-zero@5b1b5bdc3adc",
+  "commit": "5b1b5bdc3adcc189b3bd8b77f2cc8a363ec3374c",
+  "language": "go"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "core/logx/syslog_test.go",
+    "positions": [
+     [
+      19,
+      15
+     ],
+     [
+      21,
+      19
+     ],
+     [
+      26,
+      4
+     ],
+     [
+      26,
+      17
+     ],
+     [
+      27,
+      6
+     ],
+     [
+      33,
+      7
+     ],
+     [
+      45,
+      10
+     ],
+     [
+      46,
+      18
+     ],
+     [
+      47,
+      20
+     ],
+     [
+      49,
+      2
+     ],
+     [
+      49,
+      7
+     ],
+     [
+      50,
+      6
+     ]
+    ],
+    "ends": [
+     [
+      19,
+      19
+     ],
+     [
+      21,
+      23
+     ],
+     [
+      26,
+      8
+     ],
+     [
+      26,
+      22
+     ],
+     [
+      27,
+      9
+     ],
+     [
+      33,
+      9
+     ],
+     [
+      45,
+      15
+     ],
+     [
+      46,
+      21
+     ],
+     [
+      47,
+      22
+     ],
+     [
+      49,
+      4
+     ],
+     [
+      49,
+      8
+     ],
+     [
+      50,
+      7
+     ]
+    ],
+    "names": [
+     "testlog",
+     "strings",
+     "content",
+     "getContent",
+     "Write",
+     "new",
+     "getContent",
+     "string",
+     "byte",
+     "val",
+     "ok",
+     "ok"
+    ]
+   },
+   {
+    "path": "tools/goctl/internal/cobrax/cobrax.go",
+    "positions": [
+     [
+      10,
+      8
+     ],
+     [
+      48,
+      63
+     ],
+     [
+      68,
+      46
+     ],
+     [
+      80,
+      51
+     ],
+     [
+      81,
+      6
+     ],
+     [
+      120,
+      6
+     ],
+     [
+      135,
+      77
+     ],
+     [
+      137,
+      7
+     ],
+     [
+      147,
+      5
+     ],
+     [
+      148,
+      66
+     ],
+     [
+      151,
+      18
+     ],
+     [
+      166,
+      31
+     ]
+    ],
+    "ends": [
+     [
+      10,
+      11
+     ],
+     [
+      48,
+      66
+     ],
+     [
+      68,
+      51
+     ],
+     [
+      80,
+      53
+     ],
+     [
+      81,
+      10
+     ],
+     [
+      120,
+      7
+     ],
+     [
+      135,
+      81
+     ],
+     [
+      137,
+      12
+     ],
+     [
+      147,
+      9
+     ],
+     [
+      148,
+      68
+     ],
+     [
+      151,
+      21
+     ],
+     [
+      166,
+      33
+     ]
+    ],
+    "names": [
+     "Option",
+     "string",
+     "shorthand",
+     "name",
+     "FlagSet",
+     "c",
+     "Command",
+     "commandKey",
+     "command",
+     "Name",
+     "flags",
+     "cmd"
+    ]
+   },
+   {
+    "path": "zrpc/server_test.go",
+    "positions": [
+     [
+      35,
+      8
+     ],
+     [
+      49,
+      25
+     ],
+     [
+      63,
+      6
+     ],
+     [
+      86,
+      14
+     ],
+     [
+      94,
+      4
+     ],
+     [
+      95,
+      5
+     ],
+     [
+      117,
+      2
+     ],
+     [
+      157,
+      15
+     ],
+     [
+      193,
+      10
+     ],
+     [
+      268,
+      25
+     ],
+     [
+      273,
+      32
+     ],
+     [
+      278,
+      5
+     ]
+    ],
+    "ends": [
+     [
+      35,
+      14
+     ],
+     [
+      49,
+      28
+     ],
+     [
+      63,
+      8
+     ],
+     [
+      86,
+      21
+     ],
+     [
+      94,
+      6
+     ],
+     [
+      95,
+      8
+     ],
+     [
+      117,
+      4
+     ],
+     [
+      157,
+      21
+     ],
+     [
+      193,
+      15
+     ],
+     [
+      268,
+      27
+     ],
+     [
+      273,
+      33
+     ],
+     [
+      278,
+      8
+     ]
+    ],
+    "names": [
+     "CpuThreshold",
+     "Server",
+     "Mode",
+     "MustNewServer",
+     "Etcd",
+     "Hosts",
+     "svr",
+     "mockedServer",
+     "Prometheus",
+     "len",
+     "t",
+     "Redis"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "codeAction",
+  "path": "zrpc/server_test.go",
+  "line": 177,
+  "character": 35,
+  "extra": "diag:177:46"
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "core/logx/syslog_test.go"
+  },
+  {
+   "kind": "open",
+   "path": "tools/goctl/internal/cobrax/cobrax.go"
+  },
+  {
+   "kind": "open",
+   "path": "zrpc/server_test.go"
+  },
+  {
+   "kind": "set_config",
+   "settings": {
+    "gopls": {
+     "staticcheck": true
+    }
+   }
+  },
+  {
+   "kind": "set_config",
+   "settings": {
+    "gopls": {
+     "staticcheck": false
+    }
+   }
+  }
+ ],
+ "case": {
+  "chain_step": 0,
+  "families": [],
+  "family": "H4",
+  "history_index": 6,
+  "history_seed": 2007,
+  "mode": "fresh",
+  "note": "toggle gopls.staticcheck: False -> True -> back",
+  "seed": 2,
+  "timing": "settled"
+ },
+ "shape": "codeAction:changed",
+ "signature": "gopls|r1_history|codeAction:changed",
+ "expected": [
+  [
+   "Browse arm64 assembly for Test_setupUnaryInterceptors",
+   "source.assembly"
+  ],
+  [
+   "Browse documentation for func Test_setupUnaryInterceptors",
+   "source.doc"
+  ],
+  [
+   "Browse free symbols",
+   "source.freesymbols"
+  ],
+  [
+   "Browse gopls feature documentation",
+   "gopls.doc.features"
+  ],
+  [
+   "Fill anonymous struct{ name: string; r: *github.com/zeromicro/go-zero/zrpc.mockedServer; ... }",
+   "refactor.rewrite.fillStruct"
+  ],
+  [
+   "Fill mockedServer",
+   "refactor.rewrite.fillStruct"
+  ],
+  [
+   "Join parameters into one line",
+   "refactor.rewrite.joinLines"
+  ],
+  [
+   "Replace interface{} by any",
+   "quickfix"
+  ],
+  [
+   "Show compiler optimization details for \"zrpc\"",
+   "source.toggleCompilerOptDetails"
+  ],
+  [
+   "Split package \"zrpc\"",
+   "source.splitPackage"
+  ],
+  [
+   "Split parameters into separate lines",
+   "refactor.rewrite.splitLines"
+  ]
+ ],
+ "actual": [
+  [
+   "Browse arm64 assembly for Test_setupUnaryInterceptors",
+   "source.assembly"
+  ],
+  [
+   "Browse documentation for func Test_setupUnaryInterceptors",
+   "source.doc"
+  ],
+  [
+   "Browse free symbols",
+   "source.freesymbols"
+  ],
+  [
+   "Browse gopls feature documentation",
+   "gopls.doc.features"
+  ],
+  [
+   "Fill anonymous struct{ name: string; r: *github.com/zeromicro/go-zero/zrpc.mockedServer; ... }",
+   "refactor.rewrite.fillStruct"
+  ],
+  [
+   "Fill mockedServer",
+   "refactor.rewrite.fillStruct"
+  ],
+  [
+   "Join parameters into one line",
+   "refactor.rewrite.joinLines"
+  ],
+  [
+   "Replace interface{} by any",
+   "quickfix"
+  ],
+  [
+   "Replace interface{} by any",
+   "quickfix"
+  ],
+  [
+   "Replace interface{} by any",
+   "quickfix"
+  ],
+  [
+   "Show compiler optimization details for \"zrpc\"",
+   "source.toggleCompilerOptDetails"
+  ],
+  [
+   "Split package \"zrpc\"",
+   "source.splitPackage"
+  ],
+  [
+   "Split parameters into separate lines",
+   "refactor.rewrite.splitLines"
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "H4: toggle gopls.staticcheck: False -> True -> back; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 202s",
+ "violation": {
+  "oracle": "r1_history",
+  "server": "gopls-v0.23.0",
+  "project": "zeromicro/go-zero@5b1b5bdc3adc",
+  "key": {
+   "method": "codeAction",
+   "path": "zrpc/server_test.go",
+   "line": 177,
+   "character": 35,
+   "extra": "diag:177:46"
+  },
+  "expected": [
+   [
+    "Browse arm64 assembly for Test_setupUnaryInterceptors",
+    "source.assembly"
+   ],
+   [
+    "Browse documentation for func Test_setupUnaryInterceptors",
+    "source.doc"
+   ],
+   [
+    "Browse free symbols",
+    "source.freesymbols"
+   ],
+   [
+    "Browse gopls feature documentation",
+    "gopls.doc.features"
+   ],
+   [
+    "Fill anonymous struct{ name: string; r: *github.com/zeromicro/go-zero/zrpc.mockedServer; ... }",
+    "refactor.rewrite.fillStruct"
+   ],
+   [
+    "Fill mockedServer",
+    "refactor.rewrite.fillStruct"
+   ],
+   [
+    "Join parameters into one line",
+    "refactor.rewrite.joinLines"
+   ],
+   [
+    "Replace interface{} by any",
+    "quickfix"
+   ],
+   [
+    "Show compiler optimization details for \"zrpc\"",
+    "source.toggleCompilerOptDetails"
+   ],
+   [
+    "Split package \"zrpc\"",
+    "source.splitPackage"
+   ],
+   [
+    "Split parameters into separate lines",
+    "refactor.rewrite.splitLines"
+   ]
+  ],
+  "actual": [
+   [
+    "Browse arm64 assembly for Test_setupUnaryInterceptors",
+    "source.assembly"
+   ],
+   [
+    "Browse documentation for func Test_setupUnaryInterceptors",
+    "source.doc"
+   ],
+   [
+    "Browse free symbols",
+    "source.freesymbols"
+   ],
+   [
+    "Browse gopls feature documentation",
+    "gopls.doc.features"
+   ],
+   [
+    "Fill anonymous struct{ name: string; r: *github.com/zeromicro/go-zero/zrpc.mockedServer; ... }",
+    "refactor.rewrite.fillStruct"
+   ],
+   [
+    "Fill mockedServer",
+    "refactor.rewrite.fillStruct"
+   ],
+   [
+    "Join parameters into one line",
+    "refactor.rewrite.joinLines"
+   ],
+   [
+    "Replace interface{} by any",
+    "quickfix"
+   ],
+   [
+    "Replace interface{} by any",
+    "quickfix"
+   ],
+   [
+    "Replace interface{} by any",
+    "quickfix"
+   ],
+   [
+    "Show compiler optimization details for \"zrpc\"",
+    "source.toggleCompilerOptDetails"
+   ],
+   [
+    "Split package \"zrpc\"",
+    "source.splitPackage"
+   ],
+   [
+    "Split parameters into separate lines",
+    "refactor.rewrite.splitLines"
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "core/logx/syslog_test.go"
+   },
+   {
+    "kind": "open",
+    "path": "tools/goctl/internal/cobrax/cobrax.go"
+   },
+   {
+    "kind": "open",
+    "path": "zrpc/server_test.go"
+   },
+   {
+    "kind": "set_config",
+    "settings": {
+     "gopls": {
+      "staticcheck": true
+     }
+    }
+   },
+   {
+    "kind": "set_config",
+    "settings": {
+     "gopls": {
+      "staticcheck": false
+     }
+    }
+   }
+  ],
+  "detail": "{\"case\": {\"chain_step\": 0, \"families\": [], \"family\": \"H4\", \"history_index\": 6, \"history_seed\": 2007, \"mode\": \"fresh\", \"note\": \"toggle gopls.staticcheck: False -> True -> back\", \"seed\": 2, \"timing\": \"settled\"}, \"note\": \"H4: toggle gopls.staticcheck: False -> True -> back; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 202s\", \"shape\": \"codeAction:changed\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "gopls|r1_history|codeAction:changed",
+  "run_id": "5839938760f5"
+ },
+ "replay_logs": [
+  "logs/gopls-v0.23.0-5839938760f5-replay-baseline-20261118-151136-7211e6.jsonl.gz",
+  "logs/gopls-v0.23.0-5839938760f5-replay-control-20261118-151136-0a8356.jsonl.gz",
+  "logs/gopls-v0.23.0-5839938760f5-replay-history-20261118-151149-85d4fa.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

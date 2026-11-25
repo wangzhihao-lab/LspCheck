@@ -1,0 +1,3 @@
+2026-09-23 21:40:31,031 INFO campaign_run run 3e924da1432b: r0_crash on gopls v0.23.0, charmbracelet/bubbletea@657aaae216e3 seed 1 settled, targets ['examples/http/main.go', 'examples/set-window-title/main.go', 'mouse.go']
+2026-09-23 21:40:40,092 INFO campaign_run run 3e924da1432b: 0 candidate(s) in 9s; confirming
+2026-09-23 21:40:40,093 INFO campaign_run run 3e924da1432b finished: ok, 0 confirmed of 0 candidate(s), 9s

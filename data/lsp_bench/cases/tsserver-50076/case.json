@@ -1,0 +1,80 @@
+{
+ "schema": 1,
+ "id": "tsserver-50076",
+ "meta": {
+  "server": "tsserver",
+  "kind": "tsserver",
+  "number": 50076,
+  "url": "https://github.com/microsoft/TypeScript/issues/50076",
+  "title": "Format selection (and thus format-on-paste) causes destructive edits",
+  "oracle_class": "R4",
+  "subtype": "format",
+  "fix_ref": "microsoft/TypeScript#50082 (Fix trailing formatting edit when range ends mid-token), b7355e30af, 2022-07-28; git tag --contains: first in v4.8-rc / v4.8.2",
+  "fix_shas": [
+   "b7355e30afe6440487dfb4e19c6cbd0758f71846"
+  ],
+  "pre_version": "4.7.4",
+  "post_version": "4.8.2",
+  "pre_build": "4.7.4+tsls1.1.2",
+  "post_build": "4.8.2+tsls1.1.2",
+  "wrapper": "typescript-language-server@1.1.2",
+  "build_notes": "npm typescript@4.7.4 (2022-06-17) and typescript@4.8.2 (2022-08-25), both behind typescript-language-server@1.1.2 (the latest wrapper release before 4.8.2), started with the pinned tsserver.js; the reported TypeScript version is checked on every session. A maintainer bisected the regression to 4.6.0-dev.20211130, so 4.7.4 has it.",
+  "candidate_rank": 39,
+  "effort_minutes": 7,
+  "notes": "Format on paste is a range format of the pasted text (the maintainer's trace: updateOpen with the paste, then format over the pasted range). The destructive pre-fix edit deletes from the '}' of the substitution to the end of the line, which leaves an unterminated template literal."
+ },
+ "language": "javascript",
+ "settings": {},
+ "settings_note": "editor.formatOnPaste is the client's behaviour (a range format of the pasted text), expressed here as the probe's range_format; FormattingOptions are the probe defaults (4 spaces).",
+ "session": {
+  "settle_timeout_s": 120
+ },
+ "files": [
+  {
+   "path": "index.js",
+   "provenance": "issue",
+   "source": "issue body, first javascript code block",
+   "note": "the file name follows the maintainer's trace (index.js); the trailing space of the line is kept"
+  }
+ ],
+ "repro": {
+  "attempt": 1,
+  "timing": "settled",
+  "steps": "Open index.js. Paste the word TEST_STRING just before the closing backtick of the template string (line 1, character 53), with format on paste enabled, i.e. a range format of the pasted text. Reported: all text from the closing '}' of the substitution on is deleted ('const TEST_STRING = `${TEST_VAR_1; '); expected: the pasted text stays and nothing is deleted. Probe: the range-format edit applied to the text must not add a parse error.",
+  "ops": [
+   {
+    "kind": "open",
+    "path": "index.js"
+   },
+   {
+    "kind": "change",
+    "path": "index.js",
+    "start": [
+     0,
+     53
+    ],
+    "end": [
+     0,
+     53
+    ],
+    "text": "TEST_STRING"
+   }
+  ],
+  "probe": {
+   "type": "edit_breaks_syntax",
+   "params": {
+    "edit": {
+     "via": "range_format",
+     "path": "index.js",
+     "range": [
+      0,
+      53,
+      0,
+      64
+     ]
+    }
+   }
+  }
+ },
+ "attempts": []
+}

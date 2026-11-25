@@ -1,0 +1,650 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "bfc37ab71ee7-v00",
+ "run_id": "bfc37ab71ee7",
+ "oracle": "r5_transforms",
+ "server": {
+  "kind": "gopls",
+  "version": "v0.23.0"
+ },
+ "project": {
+  "name": "junegunn/fzf@b1be3a8be1b8",
+  "source": "corpus",
+  "ref": "temp/corpus/junegunn__fzf@b1be3a8be1b8",
+  "commit": "b1be3a8be1b833ce5b92fbbac11637643d60a046",
+  "language": "go"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 6,
+  "targets": [
+   {
+    "path": "src/pattern_test.go",
+    "positions": [
+     [
+      25,
+      37
+     ],
+     [
+      28,
+      49
+     ],
+     [
+      36,
+      27
+     ],
+     [
+      51,
+      72
+     ],
+     [
+      54,
+      56
+     ],
+     [
+      77,
+      12
+     ],
+     [
+      81,
+      57
+     ],
+     [
+      114,
+      30
+     ],
+     [
+      140,
+      38
+     ],
+     [
+      184,
+      86
+     ],
+     [
+      263,
+      66
+     ],
+     [
+      280,
+      38
+     ]
+    ],
+    "ends": [
+     [
+      25,
+      40
+     ],
+     [
+      28,
+      51
+     ],
+     [
+      36,
+      30
+     ],
+     [
+      51,
+      74
+     ],
+     [
+      54,
+      58
+     ],
+     [
+      77,
+      14
+     ],
+     [
+      81,
+      59
+     ],
+     [
+      114,
+      32
+     ],
+     [
+      140,
+      41
+     ],
+     [
+      184,
+      88
+     ],
+     [
+      263,
+      70
+     ],
+     [
+      280,
+      41
+     ]
+    ],
+    "names": [
+     "terms",
+     "inv",
+     "terms",
+     "text",
+     "len",
+     "util",
+     "res",
+     "algo",
+     "chunk",
+     "true",
+     "cacheMem",
+     "chunk"
+    ]
+   },
+   {
+    "path": "src/reader.go",
+    "positions": [
+     [
+      35,
+      78
+     ],
+     [
+      83,
+      9
+     ],
+     [
+      107,
+      25
+     ],
+     [
+      110,
+      22
+     ],
+     [
+      116,
+      10
+     ],
+     [
+      135,
+      18
+     ],
+     [
+      137,
+      23
+     ],
+     [
+      182,
+      13
+     ],
+     [
+      262,
+      10
+     ],
+     [
+      310,
+      41
+     ],
+     [
+      358,
+      35
+     ],
+     [
+      395,
+      5
+     ]
+    ],
+    "ends": [
+     [
+      35,
+      80
+     ],
+     [
+      83,
+      11
+     ],
+     [
+      107,
+      30
+     ],
+     [
+      110,
+      28
+     ],
+     [
+      116,
+      13
+     ],
+     [
+      135,
+      22
+     ],
+     [
+      137,
+      24
+     ],
+     [
+      182,
+      15
+     ],
+     [
+      262,
+      13
+     ],
+     [
+      310,
+      44
+     ],
+     [
+      358,
+      38
+     ],
+     [
+      395,
+      7
+     ]
+    ],
+    "names": [
+     "util",
+     "nil",
+     "tempFiles",
+     "readChannel",
+     "pusher",
+     "initCmd",
+     "os",
+     "src",
+     "bytes",
+     "ignore",
+     "ignore",
+     "err"
+    ]
+   },
+   {
+    "path": "src/util/concurrent_set.go",
+    "positions": [
+     [
+      6,
+      9
+     ],
+     [
+      7,
+      11
+     ],
+     [
+      11,
+      45
+     ],
+     [
+      12,
+      23
+     ],
+     [
+      13,
+      4
+     ],
+     [
+      18,
+      15
+     ],
+     [
+      19,
+      5
+     ],
+     [
+      20,
+      11
+     ],
+     [
+      21,
+      11
+     ],
+     [
+      32,
+      23
+     ],
+     [
+      32,
+      36
+     ],
+     [
+      35,
+      19
+     ]
+    ],
+    "ends": [
+     [
+      6,
+      11
+     ],
+     [
+      7,
+      12
+     ],
+     [
+      11,
+      52
+     ],
+     [
+      12,
+      24
+     ],
+     [
+      13,
+      7
+     ],
+     [
+      18,
+      22
+     ],
+     [
+      19,
+      7
+     ],
+     [
+      20,
+      13
+     ],
+     [
+      21,
+      13
+     ],
+     [
+      32,
+      24
+     ],
+     [
+      32,
+      37
+     ],
+     [
+      35,
+      20
+     ]
+    ],
+    "names": [
+     "sync",
+     "T",
+     "ConcurrentSet",
+     "T",
+     "items",
+     "ConcurrentSet",
+     "lock",
+     "lock",
+     "item",
+     "T",
+     "fn",
+     "s"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "codeAction",
+  "path": "src/reader.go",
+  "line": 35,
+  "character": 78,
+  "extra": "pos"
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "src/reader.go"
+  },
+  {
+   "kind": "change",
+   "path": "src/reader.go",
+   "start": [
+    18,
+    0
+   ],
+   "end": [
+    18,
+    0
+   ],
+   "text": "\n// inserted comment line\n\n"
+  }
+ ],
+ "case": {
+  "mapped_key": [
+   "codeAction",
+   "src/reader.go",
+   38,
+   78,
+   "pos"
+  ],
+  "transform": {
+   "back": {
+    "col": 0,
+    "eof": [],
+    "line": -1,
+    "n": 0,
+    "path": "src/reader.go",
+    "w": 0
+   },
+   "edits": [
+    [
+     18,
+     0,
+     18,
+     0,
+     "\n// inserted comment line\n\n"
+    ]
+   ],
+   "kind": "T2",
+   "path": "src/reader.go",
+   "shift": {
+    "col": 0,
+    "eof": [],
+    "line": 18,
+    "n": 3,
+    "path": "src/reader.go",
+    "w": 0
+   }
+  }
+ },
+ "shape": "codeAction:extra",
+ "signature": "gopls|r5_transforms|codeAction:extra",
+ "expected": [
+  [
+   "Add test for NewReader",
+   "source.addTest"
+  ],
+  [
+   "Browse arm64 assembly for NewReader",
+   "source.assembly"
+  ],
+  [
+   "Browse documentation for package util",
+   "source.doc"
+  ],
+  [
+   "Browse gopls feature documentation",
+   "gopls.doc.features"
+  ],
+  [
+   "Move parameter left",
+   "refactor.rewrite.moveParamLeft"
+  ],
+  [
+   "Move parameter right",
+   "refactor.rewrite.moveParamRight"
+  ],
+  [
+   "Show compiler optimization details for \"src\"",
+   "source.toggleCompilerOptDetails"
+  ],
+  [
+   "Split package \"fzf\"",
+   "source.splitPackage"
+  ],
+  [
+   "Split parameters into separate lines",
+   "refactor.rewrite.splitLines"
+  ]
+ ],
+ "actual": [
+  [
+   "Add test for NewReader",
+   "source.addTest"
+  ],
+  [
+   "Browse arm64 assembly for NewReader",
+   "source.assembly"
+  ],
+  [
+   "Browse documentation for package util",
+   "source.doc"
+  ],
+  [
+   "Browse gopls feature documentation",
+   "gopls.doc.features"
+  ],
+  [
+   "Move parameter left",
+   "refactor.rewrite.moveParamLeft"
+  ],
+  [
+   "Move parameter right",
+   "refactor.rewrite.moveParamRight"
+  ],
+  [
+   "Organize Imports",
+   "source.organizeImports"
+  ],
+  [
+   "Show compiler optimization details for \"src\"",
+   "source.toggleCompilerOptDetails"
+  ],
+  [
+   "Split package \"fzf\"",
+   "source.splitPackage"
+  ],
+  [
+   "Split parameters into separate lines",
+   "refactor.rewrite.splitLines"
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "T2 src/reader.go: 1 edit(s), first [18, 0, 18, 0]; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 42s",
+ "violation": {
+  "oracle": "r5_transforms",
+  "server": "gopls-v0.23.0",
+  "project": "junegunn/fzf@b1be3a8be1b8",
+  "key": {
+   "method": "codeAction",
+   "path": "src/reader.go",
+   "line": 35,
+   "character": 78,
+   "extra": "pos"
+  },
+  "expected": [
+   [
+    "Add test for NewReader",
+    "source.addTest"
+   ],
+   [
+    "Browse arm64 assembly for NewReader",
+    "source.assembly"
+   ],
+   [
+    "Browse documentation for package util",
+    "source.doc"
+   ],
+   [
+    "Browse gopls feature documentation",
+    "gopls.doc.features"
+   ],
+   [
+    "Move parameter left",
+    "refactor.rewrite.moveParamLeft"
+   ],
+   [
+    "Move parameter right",
+    "refactor.rewrite.moveParamRight"
+   ],
+   [
+    "Show compiler optimization details for \"src\"",
+    "source.toggleCompilerOptDetails"
+   ],
+   [
+    "Split package \"fzf\"",
+    "source.splitPackage"
+   ],
+   [
+    "Split parameters into separate lines",
+    "refactor.rewrite.splitLines"
+   ]
+  ],
+  "actual": [
+   [
+    "Add test for NewReader",
+    "source.addTest"
+   ],
+   [
+    "Browse arm64 assembly for NewReader",
+    "source.assembly"
+   ],
+   [
+    "Browse documentation for package util",
+    "source.doc"
+   ],
+   [
+    "Browse gopls feature documentation",
+    "gopls.doc.features"
+   ],
+   [
+    "Move parameter left",
+    "refactor.rewrite.moveParamLeft"
+   ],
+   [
+    "Move parameter right",
+    "refactor.rewrite.moveParamRight"
+   ],
+   [
+    "Organize Imports",
+    "source.organizeImports"
+   ],
+   [
+    "Show compiler optimization details for \"src\"",
+    "source.toggleCompilerOptDetails"
+   ],
+   [
+    "Split package \"fzf\"",
+    "source.splitPackage"
+   ],
+   [
+    "Split parameters into separate lines",
+    "refactor.rewrite.splitLines"
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "src/reader.go"
+   },
+   {
+    "kind": "change",
+    "path": "src/reader.go",
+    "start": [
+     18,
+     0
+    ],
+    "end": [
+     18,
+     0
+    ],
+    "text": "\n// inserted comment line\n\n"
+   }
+  ],
+  "detail": "{\"case\": {\"mapped_key\": [\"codeAction\", \"src/reader.go\", 38, 78, \"pos\"], \"transform\": {\"back\": {\"col\": 0, \"eof\": [], \"line\": -1, \"n\": 0, \"path\": \"src/reader.go\", \"w\": 0}, \"edits\": [[18, 0, 18, 0, \"\\n// inserted comment line\\n\\n\"]], \"kind\": \"T2\", \"path\": \"src/reader.go\", \"shift\": {\"col\": 0, \"eof\": [], \"line\": 18, \"n\": 3, \"path\": \"src/reader.go\", \"w\": 0}}}, \"note\": \"T2 src/reader.go: 1 edit(s), first [18, 0, 18, 0]; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 42s\", \"shape\": \"codeAction:extra\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "gopls|r5_transforms|codeAction:extra",
+  "run_id": "bfc37ab71ee7"
+ },
+ "replay_logs": [
+  "logs/gopls-v0.23.0-bfc37ab71ee7-r5-replay-baseline-20260923-201112-26f99f.jsonl.gz",
+  "logs/gopls-v0.23.0-bfc37ab71ee7-r5-replay-case-20260923-201121-5f0438.jsonl.gz",
+  "logs/gopls-v0.23.0-bfc37ab71ee7-r5-replay-control-20260923-201116-cdea1e.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

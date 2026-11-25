@@ -1,0 +1,96 @@
+{
+ "queries": [
+  "\"while typing\" in:title repo:typescript-language-server/typescript-language-server is:issue",
+  "hover wrong repo:typescript-language-server/typescript-language-server is:issue",
+  "hover \"while typing\" repo:typescript-language-server/typescript-language-server is:issue",
+  "hover stale repo:typescript-language-server/typescript-language-server is:issue",
+  "\"while typing\" in:title repo:microsoft/TypeScript is:issue",
+  "hover wrong repo:microsoft/TypeScript is:issue",
+  "hover \"while typing\" repo:microsoft/TypeScript is:issue",
+  "hover stale repo:microsoft/TypeScript is:issue"
+ ],
+ "matches": [
+  {
+   "repo": "typescript-language-server/typescript-language-server",
+   "number": 1014,
+   "title": "TypeScript Language Server Hangs on Completion Resolution On Enter Key Pressed",
+   "url": "https://github.com/typescript-language-server/typescript-language-server/issues/1014",
+   "state": "closed",
+   "created": "2025-09-24",
+   "comments": 21,
+   "query": "hover wrong repo:typescript-language-server/typescript-language-server is:issue"
+  },
+  {
+   "repo": "typescript-language-server/typescript-language-server",
+   "number": 917,
+   "title": "Shows incorrect type completion item between VSCode and Neovim",
+   "url": "https://github.com/typescript-language-server/typescript-language-server/issues/917",
+   "state": "closed",
+   "created": "2024-09-27",
+   "comments": 9,
+   "query": "hover wrong repo:typescript-language-server/typescript-language-server is:issue"
+  },
+  {
+   "repo": "typescript-language-server/typescript-language-server",
+   "number": 865,
+   "title": "Fully resolve type aliases ",
+   "url": "https://github.com/typescript-language-server/typescript-language-server/issues/865",
+   "state": "closed",
+   "created": "2024-02-02",
+   "comments": 1,
+   "query": "hover wrong repo:typescript-language-server/typescript-language-server is:issue"
+  },
+  {
+   "repo": "typescript-language-server/typescript-language-server",
+   "number": 841,
+   "title": "Invalid completions",
+   "url": "https://github.com/typescript-language-server/typescript-language-server/issues/841",
+   "state": "closed",
+   "created": "2024-01-02",
+   "comments": 10,
+   "query": "hover wrong repo:typescript-language-server/typescript-language-server is:issue"
+  },
+  {
+   "repo": "typescript-language-server/typescript-language-server",
+   "number": 445,
+   "title": "Issue with tsconfig and first file opened",
+   "url": "https://github.com/typescript-language-server/typescript-language-server/issues/445",
+   "state": "closed",
+   "created": "2022-05-03",
+   "comments": 4,
+   "query": "hover wrong repo:typescript-language-server/typescript-language-server is:issue"
+  },
+  {
+   "repo": "microsoft/TypeScript",
+   "number": 21580,
+   "title": "While typing an object literal key, the incomplete key is returned as a suggestion",
+   "url": "https://github.com/microsoft/TypeScript/issues/21580",
+   "state": "closed",
+   "created": "2018-02-02",
+   "comments": 1,
+   "query": "\"while typing\" in:title repo:microsoft/TypeScript is:issue"
+  },
+  {
+   "repo": "microsoft/TypeScript",
+   "number": 16784,
+   "title": "Do not return global completions while typing getter identifier",
+   "url": "https://github.com/microsoft/TypeScript/issues/16784",
+   "state": "closed",
+   "created": "2017-06-28",
+   "comments": 1,
+   "query": "\"while typing\" in:title repo:microsoft/TypeScript is:issue"
+  },
+  {
+   "repo": "microsoft/TypeScript",
+   "number": 5917,
+   "title": "Trouble typing object whose values are of a particular type while maintaining the names of its keys",
+   "url": "https://github.com/microsoft/TypeScript/issues/5917",
+   "state": "closed",
+   "created": "2015-12-03",
+   "comments": 10,
+   "query": "\"while typing\" in:title repo:microsoft/TypeScript is:issue"
+  }
+ ],
+ "notes": [],
+ "authenticated": true
+}

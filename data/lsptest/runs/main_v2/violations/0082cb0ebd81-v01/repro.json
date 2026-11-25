@@ -1,0 +1,564 @@
+{
+ "format": 1,
+ "campaign": "main_v2",
+ "vid": "0082cb0ebd81-v01",
+ "run_id": "0082cb0ebd81",
+ "oracle": "r4_edits",
+ "server": {
+  "kind": "rust-analyzer",
+  "version": "2026-09-21"
+ },
+ "project": {
+  "name": "cloudflare/pingora@4487f7b2ab50",
+  "source": "corpus",
+  "ref": "temp/corpus/cloudflare__pingora@4487f7b2ab50",
+  "commit": "4487f7b2ab50f159e4a2cf4f6a6b813f61bb6e19",
+  "language": "rust"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "pingora-cache/src/eviction/async_lru.rs",
+    "positions": [
+     [
+      27,
+      9
+     ],
+     [
+      78,
+      16
+     ],
+     [
+      166,
+      32
+     ],
+     [
+      198,
+      65
+     ],
+     [
+      228,
+      27
+     ],
+     [
+      259,
+      11
+     ],
+     [
+      327,
+      32
+     ],
+     [
+      370,
+      32
+     ],
+     [
+      371,
+      12
+     ],
+     [
+      378,
+      24
+     ],
+     [
+      401,
+      32
+     ],
+     [
+      421,
+      15
+     ]
+    ],
+    "ends": [
+     [
+      27,
+      15
+     ],
+     [
+      78,
+      19
+     ],
+     [
+      166,
+      35
+     ],
+     [
+      198,
+      67
+     ],
+     [
+      228,
+      30
+     ],
+     [
+      259,
+      12
+     ],
+     [
+      327,
+      39
+     ],
+     [
+      370,
+      36
+     ],
+     [
+      371,
+      16
+     ],
+     [
+      378,
+      28
+     ],
+     [
+      401,
+      38
+     ],
+     [
+      421,
+      23
+     ]
+    ],
+    "names": [
+     "async_trait",
+     "usize",
+     "shard",
+     "Vec",
+     "items",
+     "N",
+     "CacheEntryKey",
+     "into_key",
+     "collect",
+     "CacheKey",
+     "shutdown_rx",
+     "EvictionManager"
+    ]
+   },
+   {
+    "path": "pingora-core/src/protocols/digest.rs",
+    "positions": [
+     [
+      27,
+      18
+     ],
+     [
+      67,
+      8
+     ],
+     [
+      69,
+      14
+     ],
+     [
+      97,
+      16
+     ],
+     [
+      118,
+      17
+     ],
+     [
+      123,
+      15
+     ],
+     [
+      151,
+      55
+     ],
+     [
+      202,
+      40
+     ],
+     [
+      265,
+      35
+     ],
+     [
+      265,
+      85
+     ],
+     [
+      282,
+      25
+     ],
+     [
+      282,
+      52
+     ]
+    ],
+    "ends": [
+     [
+      27,
+      21
+     ],
+     [
+      67,
+      12
+     ],
+     [
+      69,
+      20
+     ],
+     [
+      97,
+      21
+     ],
+     [
+      118,
+      24
+     ],
+     [
+      123,
+      20
+     ],
+     [
+      151,
+      59
+     ],
+     [
+      202,
+      41
+     ],
+     [
+      265,
+      40
+     ],
+     [
+      265,
+      88
+     ],
+     [
+      282,
+      32
+     ],
+     [
+      282,
+      55
+     ]
+    ],
+    "names": [
+     "Debug",
+     "Default",
+     "TimingDigest",
+     "peer_addr",
+     "socket_cookie",
+     "peer_addr",
+     "is_some",
+     "ok",
+     "TcpStream",
+     "unwrap",
+     "client_digest",
+     "unwrap"
+    ]
+   },
+   {
+    "path": "pingora-http/src/lib.rs",
+    "positions": [
+     [
+      26,
+      6
+     ],
+     [
+      117,
+      21
+     ],
+     [
+      206,
+      24
+     ],
+     [
+      238,
+      79
+     ],
+     [
+      539,
+      39
+     ],
+     [
+      678,
+      31
+     ],
+     [
+      821,
+      6
+     ],
+     [
+      933,
+      67
+     ],
+     [
+      1058,
+      18
+     ],
+     [
+      1060,
+      36
+     ],
+     [
+      1106,
+      43
+     ],
+     [
+      1468,
+      16
+     ]
+    ],
+    "ends": [
+     [
+      26,
+      8
+     ],
+     [
+      117,
+      25
+     ],
+     [
+      206,
+      32
+     ],
+     [
+      238,
+      81
+     ],
+     [
+      539,
+      43
+     ],
+     [
+      678,
+      33
+     ],
+     [
+      821,
+      9
+     ],
+     [
+      933,
+      73
+     ],
+     [
+      1058,
+      29
+     ],
+     [
+      1060,
+      50
+     ],
+     [
+      1106,
+      46
+     ],
+     [
+      1468,
+      21
+     ]
+    ],
+    "names": [
+     "http",
+     "FromUri",
+     "header_name_map",
+     "name",
+     "TryInto",
+     "base",
+     "parts",
+     "HeaderValue",
+     "header_map_upper_bound",
+     "http_header_map_upper_bound",
+     "unwrap",
+     "assert_eq"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "diagnostics",
+  "path": "pingora-cache/src/eviction/async_lru.rs",
+  "line": 147,
+  "character": 8,
+  "extra": "M2:quickfix-errors:Fill struct fields"
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "pingora-cache/src/eviction/async_lru.rs"
+  },
+  {
+   "kind": "change",
+   "path": "pingora-cache/src/eviction/async_lru.rs",
+   "start": [
+    148,
+    12
+   ],
+   "end": [
+    148,
+    24
+   ],
+   "text": "weightlimit"
+  },
+  {
+   "kind": "change",
+   "path": "pingora-cache/src/eviction/async_lru.rs",
+   "start": [
+    155,
+    8
+   ],
+   "end": [
+    155,
+    8
+   ],
+   "text": "    weight_limit,\n        "
+  }
+ ],
+ "case": {
+  "action_kind": "quickfix",
+  "base_errors": 0,
+  "check": "errors",
+  "diag": {
+   "code": "E0063",
+   "message": "missing structure fields:\n- weight_limit\n",
+   "range": {
+    "end": {
+     "character": 22,
+     "line": 147
+    },
+    "start": {
+     "character": 8,
+     "line": 147
+    }
+   },
+   "severity": 1
+  },
+  "fix_introduced_errors": [],
+  "fix_ops": [
+   {
+    "end": [
+     155,
+     8
+    ],
+    "kind": "change",
+    "path": "pingora-cache/src/eviction/async_lru.rs",
+    "start": [
+     155,
+     8
+    ],
+    "text": "    weight_limit,\n        "
+   }
+  ],
+  "kind": "mutation",
+  "mutation": {
+   "end": [
+    148,
+    24
+   ],
+   "id": "M2",
+   "offsets": [
+    5003,
+    5015
+   ],
+   "sha": "62f1fe771e23cd7f",
+   "start": [
+    148,
+    12
+   ],
+   "text": "weightlimit",
+   "what": "misspell 'weight_limit' as 'weightlimit' (drop a middle character)"
+  },
+  "n_fix_ops": 1,
+  "path": "pingora-cache/src/eviction/async_lru.rs",
+  "post_errors": 1,
+  "title": "Fill struct fields",
+  "via": "edit"
+ },
+ "shape": "diagnostics:extra:E0560",
+ "signature": "rust-analyzer|r4_edits|diagnostics:extra:E0560",
+ "expected": [],
+ "actual": [
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "E0560",
+   "rust-analyzer",
+   "no such field"
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "quick fix 'Fill struct fields' for E0063 at pingora-cache/src/eviction/async_lru.rs:148:9 raises the error count in the edited files from 0 to 1 (seeded by M2: misspell 'weight_limit' as 'weightlimit' (drop a middle character); errors before the mutation 0, after the fix 1); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR+retry] in 2985s",
+ "violation": {
+  "oracle": "r4_edits",
+  "server": "rust-analyzer-2026-09-21",
+  "project": "cloudflare/pingora@4487f7b2ab50",
+  "key": {
+   "method": "diagnostics",
+   "path": "pingora-cache/src/eviction/async_lru.rs",
+   "line": 147,
+   "character": 8,
+   "extra": "M2:quickfix-errors:Fill struct fields"
+  },
+  "expected": [],
+  "actual": [
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "E0560",
+    "rust-analyzer",
+    "no such field"
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "pingora-cache/src/eviction/async_lru.rs"
+   },
+   {
+    "kind": "change",
+    "path": "pingora-cache/src/eviction/async_lru.rs",
+    "start": [
+     148,
+     12
+    ],
+    "end": [
+     148,
+     24
+    ],
+    "text": "weightlimit"
+   },
+   {
+    "kind": "change",
+    "path": "pingora-cache/src/eviction/async_lru.rs",
+    "start": [
+     155,
+     8
+    ],
+    "end": [
+     155,
+     8
+    ],
+    "text": "    weight_limit,\n        "
+   }
+  ],
+  "detail": "{\"case\": {\"action_kind\": \"quickfix\", \"base_errors\": 0, \"check\": \"errors\", \"diag\": {\"code\": \"E0063\", \"message\": \"missing structure fields:\\n- weight_limit\\n\", \"range\": {\"end\": {\"character\": 22, \"line\": 147}, \"start\": {\"character\": 8, \"line\": 147}}, \"severity\": 1}, \"fix_introduced_errors\": [], \"fix_ops\": [{\"end\": [155, 8], \"kind\": \"change\", \"path\": \"pingora-cache/src/eviction/async_lru.rs\", \"start\": [155, 8], \"text\": \"    weight_limit,\\n        \"}], \"kind\": \"mutation\", \"mutation\": {\"end\": [148, 24], \"id\": \"M2\", \"offsets\": [5003, 5015], \"sha\": \"62f1fe771e23cd7f\", \"start\": [148, 12], \"text\": \"weightlimit\", \"what\": \"misspell 'weight_limit' as 'weightlimit' (drop a middle character)\"}, \"n_fix_ops\": 1, \"path\": \"pingora-cache/src/eviction/async_lru.rs\", \"post_errors\": 1, \"title\": \"Fill struct fields\", \"via\": \"edit\"}, \"note\": \"quick fix 'Fill struct fields' for E0063 at pingora-cache/src/eviction/async_lru.rs:148:9 raises the error count in the edited files from 0 to 1 (seeded by M2: misspell 'weight_limit' as 'weightlimit' (drop a middle character); errors before the mutation 0, after the fix 1); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR+retry] in 2985s\", \"shape\": \"diagnostics:extra:E0560\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "rust-analyzer|r4_edits|diagnostics:extra:E0560",
+  "run_id": "0082cb0ebd81"
+ },
+ "replay_logs": [
+  "logs/rust-analyzer-2026-09-21-0082cb0ebd81-r4-replay-baseline-20261118-050512-56ccf8.jsonl.gz",
+  "logs/rust-analyzer-2026-09-21-0082cb0ebd81-r4-replay-case-20261118-050105-1a8c81.jsonl.gz",
+  "logs/rust-analyzer-2026-09-21-0082cb0ebd81-r4-replay-control-20261118-050758-b8343e.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

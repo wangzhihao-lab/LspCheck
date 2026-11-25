@@ -1,0 +1,141 @@
+{
+ "format": 1,
+ "campaign": "main_v2",
+ "vid": "596487af6dac-v00",
+ "run_id": "596487af6dac",
+ "oracle": "r3_routes",
+ "server": {
+  "kind": "rust-analyzer",
+  "version": "2026-09-21"
+ },
+ "project": {
+  "name": "niri-wm/niri@5f4469b6a992",
+  "source": "corpus",
+  "ref": "temp/corpus/niri-wm__niri@5f4469b6a992",
+  "commit": "5f4469b6a992492cf7221b269e9379f42e737649",
+  "language": "rust"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "niri-visual-tests/src/cases/gradient_oklch_alpha.rs",
+    "positions": [],
+    "ends": [],
+    "names": []
+   },
+   {
+    "path": "niri-visual-tests/src/cases/layout.rs",
+    "positions": [
+     [
+      78,
+      10
+     ]
+    ],
+    "ends": [],
+    "names": [
+     ""
+    ]
+   },
+   {
+    "path": "src/layer/mod.rs",
+    "positions": [],
+    "ends": [],
+    "names": []
+   }
+  ]
+ },
+ "key": {
+  "method": "definitionConsistency",
+  "path": "niri-visual-tests/src/cases/layout.rs",
+  "line": 78,
+  "character": 10,
+  "extra": "from:niri-visual-tests/src/cases/layout.rs:27:8"
+ },
+ "ops": [],
+ "case": {
+  "loc": [
+   "niri-visual-tests/src/cases/layout.rs",
+   78,
+   8,
+   78,
+   12
+  ],
+  "sub": "d",
+  "target": [
+   "niri-visual-tests/src/cases/layout.rs",
+   27,
+   8
+  ]
+ },
+ "shape": "definitionConsistency:changed",
+ "signature": "rust-analyzer|r3_routes|definitionConsistency:changed",
+ "expected": [
+  [
+   "niri-visual-tests/src/cases/layout.rs",
+   18,
+   11,
+   18,
+   17
+  ]
+ ],
+ "actual": [
+  [
+   "niri-visual-tests/src/cases/layout.rs",
+   27,
+   5,
+   27,
+   11
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "flake 3/3 [r1:SCR r2:SCR r3:SCR] in 417s",
+ "violation": {
+  "oracle": "r3_routes",
+  "server": "rust-analyzer-2026-09-21",
+  "project": "niri-wm/niri@5f4469b6a992",
+  "key": {
+   "method": "definitionConsistency",
+   "path": "niri-visual-tests/src/cases/layout.rs",
+   "line": 78,
+   "character": 10,
+   "extra": "from:niri-visual-tests/src/cases/layout.rs:27:8"
+  },
+  "expected": [
+   [
+    "niri-visual-tests/src/cases/layout.rs",
+    18,
+    11,
+    18,
+    17
+   ]
+  ],
+  "actual": [
+   [
+    "niri-visual-tests/src/cases/layout.rs",
+    27,
+    5,
+    27,
+    11
+   ]
+  ],
+  "ops": [],
+  "detail": "{\"case\": {\"loc\": [\"niri-visual-tests/src/cases/layout.rs\", 78, 8, 78, 12], \"sub\": \"d\", \"target\": [\"niri-visual-tests/src/cases/layout.rs\", 27, 8]}, \"note\": \"flake 3/3 [r1:SCR r2:SCR r3:SCR] in 417s\", \"shape\": \"definitionConsistency:changed\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "rust-analyzer|r3_routes|definitionConsistency:changed",
+  "run_id": "596487af6dac"
+ },
+ "replay_logs": [
+  "logs/rust-analyzer-2026-09-21-tr2c6179-r3-replay-baseline-20261119-004144-afda36.jsonl.gz",
+  "logs/rust-analyzer-2026-09-21-tr2c6179-r3-replay-control-20261119-004317-097b7c.jsonl.gz"
+ ],
+ "project_files": {},
+ "group": "rust-analyzer-r3-definitionconsistency-changed-d-2c6179",
+ "reduced": true
+}

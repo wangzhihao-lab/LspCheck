@@ -1,0 +1,453 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "7cc3e14ef5e8-v00",
+ "run_id": "7cc3e14ef5e8",
+ "oracle": "r3_routes",
+ "server": {
+  "kind": "pyright",
+  "version": "1.1.414"
+ },
+ "project": {
+  "name": "hiyouga/LlamaFactory@97b32d3133b5",
+  "source": "corpus",
+  "ref": "temp/corpus/hiyouga__LlamaFactory@97b32d3133b5",
+  "commit": "97b32d3133b501432141a82949d5c7bc4d94f23a",
+  "language": "python"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "scripts/qwen_omni_merge.py",
+    "positions": [
+     [
+      30,
+      7
+     ],
+     [
+      35,
+      9
+     ],
+     [
+      79,
+      6
+     ],
+     [
+      86,
+      10
+     ],
+     [
+      90,
+      9
+     ],
+     [
+      107,
+      10
+     ],
+     [
+      110,
+      44
+     ],
+     [
+      111,
+      12
+     ],
+     [
+      118,
+      7
+     ],
+     [
+      121,
+      8
+     ],
+     [
+      135,
+      10
+     ],
+     [
+      138,
+      7
+     ]
+    ],
+    "ends": [
+     [
+      30,
+      9
+     ],
+     [
+      35,
+      14
+     ],
+     [
+      79,
+      9
+     ],
+     [
+      86,
+      13
+     ],
+     [
+      90,
+      14
+     ],
+     [
+      107,
+      14
+     ],
+     [
+      110,
+      65
+     ],
+     [
+      111,
+      16
+     ],
+     [
+      118,
+      11
+     ],
+     [
+      121,
+      13
+     ],
+     [
+      135,
+      13
+     ],
+     [
+      138,
+      11
+     ]
+    ],
+    "names": [
+     "peft",
+     "merge_lora",
+     "print",
+     "print",
+     "model_path",
+     "getattr",
+     "Qwen2_5OmniThinkerForConditionalGeneration",
+     "getattr",
+     "thinker",
+     "processor",
+     "print",
+     "__name__"
+    ]
+   },
+   {
+    "path": "src/llamafactory/data/formatter.py",
+    "positions": [
+     [
+      73,
+      14
+     ],
+     [
+      74,
+      20
+     ],
+     [
+      107,
+      103
+     ],
+     [
+      111,
+      15
+     ],
+     [
+      114,
+      95
+     ],
+     [
+      125,
+      31
+     ],
+     [
+      127,
+      31
+     ],
+     [
+      130,
+      52
+     ],
+     [
+      135,
+      48
+     ],
+     [
+      136,
+      37
+     ],
+     [
+      137,
+      18
+     ],
+     [
+      139,
+      17
+     ]
+    ],
+    "ends": [
+     [
+      73,
+      16
+     ],
+     [
+      74,
+      25
+     ],
+     [
+      107,
+      104
+     ],
+     [
+      111,
+      23
+     ],
+     [
+      114,
+      98
+     ],
+     [
+      125,
+      35
+     ],
+     [
+      127,
+      35
+     ],
+     [
+      130,
+      61
+     ],
+     [
+      135,
+      56
+     ],
+     [
+      136,
+      42
+     ],
+     [
+      137,
+      24
+     ],
+     [
+      139,
+      20
+     ]
+    ],
+    "names": [
+     "slot",
+     "isinstance",
+     "tc",
+     "tool_call_match",
+     "DOTALL",
+     "content",
+     "content",
+     "function_formatter",
+     "tool_call_match",
+     "tool_utils",
+     "function_str",
+     "super"
+    ]
+   },
+   {
+    "path": "src/llamafactory/hparams/training_args.py",
+    "positions": [
+     [
+      42,
+      22
+     ],
+     [
+      43,
+      11
+     ],
+     [
+      48,
+      12
+     ],
+     [
+      62,
+      79
+     ],
+     [
+      67,
+      14
+     ],
+     [
+      78,
+      26
+     ],
+     [
+      91,
+      11
+     ],
+     [
+      94,
+      30
+     ],
+     [
+      98,
+      15
+     ],
+     [
+      98,
+      38
+     ],
+     [
+      118,
+      5
+     ],
+     [
+      122,
+      18
+     ]
+    ],
+    "ends": [
+     [
+      42,
+      24
+     ],
+     [
+      43,
+      15
+     ],
+     [
+      48,
+      16
+     ],
+     [
+      62,
+      84
+     ],
+     [
+      67,
+      23
+     ],
+     [
+      78,
+      28
+     ],
+     [
+      91,
+      15
+     ],
+     [
+      94,
+      32
+     ],
+     [
+      98,
+      27
+     ],
+     [
+      98,
+      41
+     ],
+     [
+      118,
+      10
+     ],
+     [
+      122,
+      21
+     ]
+    ],
+    "names": [
+     "int",
+     "default",
+     "metadata",
+     "startswith",
+     "ProfilerArguments",
+     "int",
+     "default",
+     "bool",
+     "profiler_profile_memory",
+     "field",
+     "dataclass",
+     "field"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "highlightVsReferences",
+  "path": "scripts/qwen_omni_merge.py",
+  "line": 110,
+  "character": 44,
+  "extra": ""
+ },
+ "ops": [],
+ "case": {
+  "path": "scripts/qwen_omni_merge.py",
+  "pos": [
+   110,
+   44
+  ],
+  "sub": "c"
+ },
+ "shape": "highlightVsReferences:gained",
+ "signature": "pyright|r3_routes|highlightVsReferences:gained",
+ "expected": [],
+ "actual": [
+  [
+   108,
+   53,
+   108,
+   95
+  ],
+  [
+   110,
+   23,
+   110,
+   65
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "0 references; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 23s",
+ "violation": {
+  "oracle": "r3_routes",
+  "server": "pyright-1.1.414",
+  "project": "hiyouga/LlamaFactory@97b32d3133b5",
+  "key": {
+   "method": "highlightVsReferences",
+   "path": "scripts/qwen_omni_merge.py",
+   "line": 110,
+   "character": 44,
+   "extra": ""
+  },
+  "expected": [],
+  "actual": [
+   [
+    108,
+    53,
+    108,
+    95
+   ],
+   [
+    110,
+    23,
+    110,
+    65
+   ]
+  ],
+  "ops": [],
+  "detail": "{\"case\": {\"path\": \"scripts/qwen_omni_merge.py\", \"pos\": [110, 44], \"sub\": \"c\"}, \"note\": \"0 references; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 23s\", \"shape\": \"highlightVsReferences:gained\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "pyright|r3_routes|highlightVsReferences:gained",
+  "run_id": "7cc3e14ef5e8"
+ },
+ "replay_logs": [
+  "logs/pyright-1.1.414-7cc3e14ef5e8-r3-replay-baseline-20260923-145830-31181d.jsonl.gz",
+  "logs/pyright-1.1.414-7cc3e14ef5e8-r3-replay-control-20260923-145834-f8c7e2.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

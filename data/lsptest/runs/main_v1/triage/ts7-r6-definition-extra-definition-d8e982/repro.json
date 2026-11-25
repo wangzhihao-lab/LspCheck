@@ -1,0 +1,183 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "33f1bc8d2cec-v02",
+ "run_id": "33f1bc8d2cec",
+ "oracle": "r6_crossimpl",
+ "server": {
+  "kind": "ts7",
+  "version": "7.0.2"
+ },
+ "project": {
+  "name": "react-hook-form/react-hook-form@5fd9ef65290b",
+  "source": "corpus",
+  "ref": "temp/corpus/react-hook-form__react-hook-form@5fd9ef65290b",
+  "commit": "5fd9ef65290bef2ccaa7ac96dc8d5d55478b5410",
+  "language": "typescript"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "app/src/main.tsx",
+    "positions": [],
+    "ends": [],
+    "names": []
+   },
+   {
+    "path": "examples/V7/validationOnFieldBlur.tsx",
+    "positions": [
+     [
+      0,
+      9
+     ]
+    ],
+    "ends": [],
+    "names": [
+     ""
+    ]
+   },
+   {
+    "path": "src/logic/skipValidation.ts",
+    "positions": [],
+    "ends": [],
+    "names": []
+   }
+  ]
+ },
+ "key": {
+  "method": "definition",
+  "path": "examples/V7/validationOnFieldBlur.tsx",
+  "line": 0,
+  "character": 9,
+  "extra": ""
+ },
+ "ops": [],
+ "case": {
+  "intended": [],
+  "intended_source": "4519ec0a93607319a96f4feb967aa06a251ccc816544e2fed5c985c1d45dc11a",
+  "method": "definition",
+  "only_reference": [],
+  "only_test": [
+   "[\"node_modules/@types/react-dom/index.d.ts\", 8, 15, 8, 22]"
+  ],
+  "reference": {
+   "kind": "ts6",
+   "version": "6.0.3"
+  }
+ },
+ "shape": "definition:extra",
+ "signature": "ts7|r6_crossimpl|definition:extra",
+ "expected": [
+  [
+   "node_modules/.pnpm/@types+react-dom@19.2.3_@types+react@19.2.17/node_modules/@types/react-dom/index.d.ts",
+   8,
+   15,
+   8,
+   22
+  ],
+  [
+   "node_modules/.pnpm/@types+react@19.2.17/node_modules/@types/react/index.d.ts",
+   69,
+   18,
+   69,
+   23
+  ]
+ ],
+ "actual": [
+  [
+   "node_modules/.pnpm/@types+react-dom@19.2.3_@types+react@19.2.17/node_modules/@types/react-dom/index.d.ts",
+   8,
+   15,
+   8,
+   22
+  ],
+  [
+   "node_modules/.pnpm/@types+react@19.2.17/node_modules/@types/react/index.d.ts",
+   69,
+   18,
+   69,
+   23
+  ],
+  [
+   "node_modules/@types/react-dom/index.d.ts",
+   8,
+   15,
+   8,
+   22
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "ts7-7.0.2 and ts6-6.0.3 differ on definition at examples/V7/validationOnFieldBlur.tsx:1:10; no documented intended difference matches; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 317s",
+ "violation": {
+  "oracle": "r6_crossimpl",
+  "server": "ts7-7.0.2",
+  "project": "react-hook-form/react-hook-form@5fd9ef65290b",
+  "key": {
+   "method": "definition",
+   "path": "examples/V7/validationOnFieldBlur.tsx",
+   "line": 0,
+   "character": 9,
+   "extra": ""
+  },
+  "expected": [
+   [
+    "node_modules/.pnpm/@types+react-dom@19.2.3_@types+react@19.2.17/node_modules/@types/react-dom/index.d.ts",
+    8,
+    15,
+    8,
+    22
+   ],
+   [
+    "node_modules/.pnpm/@types+react@19.2.17/node_modules/@types/react/index.d.ts",
+    69,
+    18,
+    69,
+    23
+   ]
+  ],
+  "actual": [
+   [
+    "node_modules/.pnpm/@types+react-dom@19.2.3_@types+react@19.2.17/node_modules/@types/react-dom/index.d.ts",
+    8,
+    15,
+    8,
+    22
+   ],
+   [
+    "node_modules/.pnpm/@types+react@19.2.17/node_modules/@types/react/index.d.ts",
+    69,
+    18,
+    69,
+    23
+   ],
+   [
+    "node_modules/@types/react-dom/index.d.ts",
+    8,
+    15,
+    8,
+    22
+   ]
+  ],
+  "ops": [],
+  "detail": "{\"case\": {\"intended\": [], \"intended_source\": \"4519ec0a93607319a96f4feb967aa06a251ccc816544e2fed5c985c1d45dc11a\", \"method\": \"definition\", \"only_reference\": [], \"only_test\": [\"[\\\"node_modules/@types/react-dom/index.d.ts\\\", 8, 15, 8, 22]\"], \"reference\": {\"kind\": \"ts6\", \"version\": \"6.0.3\"}}, \"note\": \"ts7-7.0.2 and ts6-6.0.3 differ on definition at examples/V7/validationOnFieldBlur.tsx:1:10; no documented intended difference matches; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 317s\", \"shape\": \"definition:extra\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "ts7|r6_crossimpl|definition:extra",
+  "run_id": "33f1bc8d2cec"
+ },
+ "replay_logs": [
+  "logs/ts6-6.0.3-trd8e982-ref-r6-replay-ref-baseline-20260925-164129-bd2590.jsonl.gz",
+  "logs/ts6-6.0.3-trd8e982-ref-r6-replay-ref-control-20260925-164147-ba92fa.jsonl.gz",
+  "logs/ts7-7.0.2-trd8e982-r6-replay-test-baseline-20260925-164047-a4e829.jsonl.gz",
+  "logs/ts7-7.0.2-trd8e982-r6-replay-test-control-20260925-164111-5932b7.jsonl.gz"
+ ],
+ "project_files": {},
+ "group": "ts7-r6-definition-extra-definition-d8e982",
+ "reduced": true
+}

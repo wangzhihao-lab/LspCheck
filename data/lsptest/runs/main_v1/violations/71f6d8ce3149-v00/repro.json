@@ -1,0 +1,450 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "71f6d8ce3149-v00",
+ "run_id": "71f6d8ce3149",
+ "oracle": "r3_routes",
+ "server": {
+  "kind": "ts6",
+  "version": "6.0.3"
+ },
+ "project": {
+  "name": "pmndrs/zustand@b57db4f86ef1",
+  "source": "corpus",
+  "ref": "temp/corpus/pmndrs__zustand@b57db4f86ef1",
+  "commit": "b57db4f86ef179285da216eeb291266da82c361c",
+  "language": "typescript"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "src/middleware/devtools.ts",
+    "positions": [
+     [
+      8,
+      2
+     ],
+     [
+      34,
+      18
+     ],
+     [
+      38,
+      2
+     ],
+     [
+      90,
+      2
+     ],
+     [
+      93,
+      26
+     ],
+     [
+      208,
+      22
+     ],
+     [
+      212,
+      37
+     ],
+     [
+      253,
+      45
+     ],
+     [
+      324,
+      48
+     ],
+     [
+      366,
+      30
+     ],
+     [
+      398,
+      53
+     ],
+     [
+      415,
+      27
+     ]
+    ],
+    "ends": [
+     [
+      8,
+      4
+     ],
+     [
+      34,
+      24
+     ],
+     [
+      38,
+      4
+     ],
+     [
+      90,
+      4
+     ],
+     [
+      93,
+      37
+     ],
+     [
+      208,
+      24
+     ],
+     [
+      212,
+      40
+     ],
+     [
+      253,
+      49
+     ],
+     [
+      324,
+      49
+     ],
+     [
+      366,
+      32
+     ],
+     [
+      398,
+      57
+     ],
+     [
+      415,
+      33
+     ]
+    ],
+    "names": [
+     "type",
+     "WithDispatch",
+     "type",
+     "type",
+     "StoreMutatorIdentifier",
+     "get",
+     "store",
+     "options",
+     "S",
+     "init",
+     "payload",
+     "isRecording"
+    ]
+   },
+   {
+    "path": "src/traditional.ts",
+    "positions": [
+     [
+      1,
+      20
+     ],
+     [
+      2,
+      14
+     ],
+     [
+      21,
+      3
+     ],
+     [
+      27,
+      16
+     ],
+     [
+      32,
+      23
+     ],
+     [
+      36,
+      5
+     ],
+     [
+      40,
+      9
+     ],
+     [
+      57,
+      28
+     ],
+     [
+      61,
+      37
+     ],
+     [
+      62,
+      56
+     ],
+     [
+      73,
+      25
+     ],
+     [
+      83,
+      23
+     ]
+    ],
+    "ends": [
+     [
+      1,
+      34
+     ],
+     [
+      2,
+      20
+     ],
+     [
+      21,
+      5
+     ],
+     [
+      27,
+      17
+     ],
+     [
+      32,
+      26
+     ],
+     [
+      36,
+      7
+     ],
+     [
+      40,
+      14
+     ],
+     [
+      57,
+      29
+     ],
+     [
+      61,
+      38
+     ],
+     [
+      62,
+      58
+     ],
+     [
+      73,
+      34
+     ],
+     [
+      83,
+      24
+     ]
+    ],
+    "names": [
+     "useSyncExternalStoreExports",
+     "createStore",
+     "api",
+     "a",
+     "TState",
+     "api",
+     "equalityFn",
+     "a",
+     "U",
+     "Mos",
+     "defaultEqualityFn",
+     "U"
+    ]
+   },
+   {
+    "path": "tests/immer.test.tsx",
+    "positions": [
+     [
+      0,
+      13
+     ],
+     [
+      2,
+      19
+     ],
+     [
+      10,
+      10
+     ],
+     [
+      24,
+      35
+     ],
+     [
+      29,
+      59
+     ],
+     [
+      41,
+      6
+     ],
+     [
+      42,
+      30
+     ],
+     [
+      48,
+      11
+     ],
+     [
+      48,
+      18
+     ],
+     [
+      58,
+      17
+     ],
+     [
+      64,
+      6
+     ],
+     [
+      71,
+      30
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      17
+     ],
+     [
+      2,
+      21
+     ],
+     [
+      10,
+      13
+     ],
+     [
+      24,
+      38
+     ],
+     [
+      29,
+      61
+     ],
+     [
+      41,
+      8
+     ],
+     [
+      42,
+      32
+     ],
+     [
+      48,
+      14
+     ],
+     [
+      48,
+      20
+     ],
+     [
+      58,
+      24
+     ],
+     [
+      64,
+      8
+     ],
+     [
+      71,
+      33
+     ]
+    ],
+    "names": [
+     "describe",
+     "from",
+     "count",
+     "State",
+     "name",
+     "type",
+     "tags",
+     "addTag",
+     "tag",
+     "useBoundStore",
+     "type",
+     "count"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "definitionConsistency",
+  "path": "src/middleware/devtools.ts",
+  "line": 190,
+  "character": 55,
+  "extra": "from:src/middleware/devtools.ts:253:45"
+ },
+ "ops": [],
+ "case": {
+  "loc": [
+   "src/middleware/devtools.ts",
+   190,
+   52,
+   190,
+   59
+  ],
+  "sub": "d",
+  "target": [
+   "src/middleware/devtools.ts",
+   253,
+   45
+  ]
+ },
+ "shape": "definitionConsistency:lost",
+ "signature": "ts6|r3_routes|definitionConsistency:lost",
+ "expected": [
+  [
+   "src/middleware/devtools.ts",
+   190,
+   52,
+   190,
+   59
+  ]
+ ],
+ "actual": [],
+ "reproduced": "3/3",
+ "note": "flake 3/3 [r1:SCR r2:SCR r3:SCR] in 90s",
+ "violation": {
+  "oracle": "r3_routes",
+  "server": "ts6-6.0.3",
+  "project": "pmndrs/zustand@b57db4f86ef1",
+  "key": {
+   "method": "definitionConsistency",
+   "path": "src/middleware/devtools.ts",
+   "line": 190,
+   "character": 55,
+   "extra": "from:src/middleware/devtools.ts:253:45"
+  },
+  "expected": [
+   [
+    "src/middleware/devtools.ts",
+    190,
+    52,
+    190,
+    59
+   ]
+  ],
+  "actual": [],
+  "ops": [],
+  "detail": "{\"case\": {\"loc\": [\"src/middleware/devtools.ts\", 190, 52, 190, 59], \"sub\": \"d\", \"target\": [\"src/middleware/devtools.ts\", 253, 45]}, \"note\": \"flake 3/3 [r1:SCR r2:SCR r3:SCR] in 90s\", \"shape\": \"definitionConsistency:lost\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "ts6|r3_routes|definitionConsistency:lost",
+  "run_id": "71f6d8ce3149"
+ },
+ "replay_logs": [
+  "logs/ts6-6.0.3-71f6d8ce3149-r3-replay-baseline-20260923-220516-ae02b6.jsonl.gz",
+  "logs/ts6-6.0.3-71f6d8ce3149-r3-replay-control-20260923-220533-3e88a6.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

@@ -1,0 +1,32 @@
+{
+ "queries": [
+  "\"semantic tokens\" missing repo:typescript-language-server/typescript-language-server is:issue",
+  "\"semantic tokens\" stale repo:typescript-language-server/typescript-language-server is:issue",
+  "\"semantic tokens\" missing repo:microsoft/TypeScript is:issue",
+  "\"semantic tokens\" stale repo:microsoft/TypeScript is:issue"
+ ],
+ "matches": [
+  {
+   "repo": "microsoft/TypeScript",
+   "number": 44099,
+   "title": "Function identifiers no longer receive semantic highlighting tokens",
+   "url": "https://github.com/microsoft/TypeScript/issues/44099",
+   "state": "open",
+   "created": "2021-05-14",
+   "comments": 2,
+   "query": "\"semantic tokens\" missing repo:microsoft/TypeScript is:issue"
+  },
+  {
+   "repo": "microsoft/TypeScript",
+   "number": 57585,
+   "title": "TypeScript Language Server False Positive Error Reporting",
+   "url": "https://github.com/microsoft/TypeScript/issues/57585",
+   "state": "closed",
+   "created": "2024-02-28",
+   "comments": 25,
+   "query": "\"semantic tokens\" missing repo:microsoft/TypeScript is:issue"
+  }
+ ],
+ "notes": [],
+ "authenticated": true
+}

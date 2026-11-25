@@ -1,0 +1,453 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "6a9eee1ad5c6-v00",
+ "run_id": "6a9eee1ad5c6",
+ "oracle": "r3_routes",
+ "server": {
+  "kind": "ts7",
+  "version": "7.0.2"
+ },
+ "project": {
+  "name": "react-hook-form/react-hook-form@5fd9ef65290b",
+  "source": "corpus",
+  "ref": "temp/corpus/react-hook-form__react-hook-form@5fd9ef65290b",
+  "commit": "5fd9ef65290bef2ccaa7ac96dc8d5d55478b5410",
+  "language": "typescript"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "app/src/main.tsx",
+    "positions": [
+     [
+      0,
+      9
+     ],
+     [
+      0,
+      15
+     ],
+     [
+      1,
+      11
+     ],
+     [
+      2,
+      13
+     ],
+     [
+      4,
+      11
+     ],
+     [
+      4,
+      36
+     ],
+     [
+      5,
+      8
+     ],
+     [
+      5,
+      17
+     ],
+     [
+      5,
+      27
+     ],
+     [
+      5,
+      38
+     ],
+     [
+      6,
+      2
+     ],
+     [
+      6,
+      8
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      12
+     ],
+     [
+      0,
+      17
+     ],
+     [
+      1,
+      15
+     ],
+     [
+      2,
+      15
+     ],
+     [
+      4,
+      17
+     ],
+     [
+      4,
+      43
+     ],
+     [
+      5,
+      10
+     ],
+     [
+      5,
+      21
+     ],
+     [
+      5,
+      32
+     ],
+     [
+      5,
+      44
+     ],
+     [
+      6,
+      4
+     ],
+     [
+      6,
+      11
+     ]
+    ],
+    "names": [
+     "React",
+     "from",
+     "ReactDOM",
+     "from",
+     "rootElement",
+     "getElementById",
+     "root",
+     "ReactDOM",
+     "createRoot",
+     "rootElement",
+     "root",
+     "render"
+    ]
+   },
+   {
+    "path": "examples/V7/validationOnFieldBlur.tsx",
+    "positions": [
+     [
+      0,
+      9
+     ],
+     [
+      7,
+      8
+     ],
+     [
+      8,
+      10
+     ],
+     [
+      17,
+      6
+     ],
+     [
+      18,
+      16
+     ],
+     [
+      20,
+      45
+     ],
+     [
+      22,
+      17
+     ],
+     [
+      23,
+      20
+     ],
+     [
+      30,
+      13
+     ],
+     [
+      32,
+      20
+     ],
+     [
+      37,
+      10
+     ],
+     [
+      41,
+      13
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      12
+     ],
+     [
+      7,
+      13
+     ],
+     [
+      8,
+      16
+     ],
+     [
+      17,
+      8
+     ],
+     [
+      18,
+      20
+     ],
+     [
+      20,
+      47
+     ],
+     [
+      22,
+      23
+     ],
+     [
+      23,
+      24
+     ],
+     [
+      30,
+      16
+     ],
+     [
+      32,
+      24
+     ],
+     [
+      37,
+      12
+     ],
+     [
+      41,
+      16
+     ]
+    ],
+    "names": [
+     "React",
+     "formState",
+     "handleSubmit",
+     "div",
+     "onSubmit",
+     "Name",
+     "placeholder",
+     "register",
+     "input",
+     "register",
+     "div",
+     "input"
+    ]
+   },
+   {
+    "path": "src/logic/skipValidation.ts",
+    "positions": [
+     [
+      0,
+      9
+     ],
+     [
+      0,
+      23
+     ],
+     [
+      3,
+      7
+     ],
+     [
+      6,
+      9
+     ],
+     [
+      6,
+      20
+     ],
+     [
+      7,
+      4
+     ],
+     [
+      7,
+      25
+     ],
+     [
+      9,
+      8
+     ],
+     [
+      11,
+      19
+     ],
+     [
+      11,
+      38
+     ],
+     [
+      13,
+      55
+     ],
+     [
+      13,
+      62
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      11
+     ],
+     [
+      0,
+      33
+     ],
+     [
+      3,
+      13
+     ],
+     [
+      6,
+      16
+     ],
+     [
+      6,
+      22
+     ],
+     [
+      7,
+      6
+     ],
+     [
+      7,
+      35
+     ],
+     [
+      9,
+      10
+     ],
+     [
+      11,
+      25
+     ],
+     [
+      11,
+      43
+     ],
+     [
+      13,
+      57
+     ],
+     [
+      13,
+      66
+     ]
+    ],
+    "names": [
+     "type",
+     "ValidationModeFlags",
+     "isBlurEvent",
+     "reValidateMode",
+     "Pick",
+     "mode",
+     "ValidationModeFlags",
+     "mode",
+     "isSubmitted",
+     "isOnTouch",
+     "mode",
+     "isOnBlur"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "highlightVsReferences",
+  "path": "examples/V7/validationOnFieldBlur.tsx",
+  "line": 37,
+  "character": 10,
+  "extra": ""
+ },
+ "ops": [],
+ "case": {
+  "path": "examples/V7/validationOnFieldBlur.tsx",
+  "pos": [
+   37,
+   10
+  ],
+  "sub": "c"
+ },
+ "shape": "highlightVsReferences:gained",
+ "signature": "ts7|r3_routes|highlightVsReferences:gained",
+ "expected": [],
+ "actual": [
+  [
+   37,
+   8,
+   37,
+   13
+  ],
+  [
+   43,
+   8,
+   43,
+   14
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "9 references; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 102s",
+ "violation": {
+  "oracle": "r3_routes",
+  "server": "ts7-7.0.2",
+  "project": "react-hook-form/react-hook-form@5fd9ef65290b",
+  "key": {
+   "method": "highlightVsReferences",
+   "path": "examples/V7/validationOnFieldBlur.tsx",
+   "line": 37,
+   "character": 10,
+   "extra": ""
+  },
+  "expected": [],
+  "actual": [
+   [
+    37,
+    8,
+    37,
+    13
+   ],
+   [
+    43,
+    8,
+    43,
+    14
+   ]
+  ],
+  "ops": [],
+  "detail": "{\"case\": {\"path\": \"examples/V7/validationOnFieldBlur.tsx\", \"pos\": [37, 10], \"sub\": \"c\"}, \"note\": \"9 references; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 102s\", \"shape\": \"highlightVsReferences:gained\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "ts7|r3_routes|highlightVsReferences:gained",
+  "run_id": "6a9eee1ad5c6"
+ },
+ "replay_logs": [
+  "logs/ts7-7.0.2-6a9eee1ad5c6-r3-replay-baseline-20260923-151858-7b91da.jsonl.gz",
+  "logs/ts7-7.0.2-6a9eee1ad5c6-r3-replay-control-20260923-151914-bde082.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

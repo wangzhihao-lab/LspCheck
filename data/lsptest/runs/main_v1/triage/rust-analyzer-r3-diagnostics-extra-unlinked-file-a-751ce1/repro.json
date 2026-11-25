@@ -1,0 +1,448 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "29d2893b9177-v00",
+ "run_id": "29d2893b9177",
+ "oracle": "r3_routes",
+ "server": {
+  "kind": "rust-analyzer",
+  "version": "2026-09-21"
+ },
+ "project": {
+  "name": "BurntSushi/ripgrep@3fce3b5bb023",
+  "source": "corpus",
+  "ref": "temp/corpus/BurntSushi__ripgrep@3fce3b5bb023",
+  "commit": "3fce3b5bb0236da2df6d99672afb8a719642eca7",
+  "language": "rust"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "crates/ignore/src/types.rs",
+    "positions": [
+     [
+      133,
+      21
+     ],
+     [
+      199,
+      16
+     ],
+     [
+      233,
+      27
+     ],
+     [
+      307,
+      32
+     ],
+     [
+      331,
+      40
+     ],
+     [
+      350,
+      25
+     ],
+     [
+      420,
+      46
+     ],
+     [
+      459,
+      28
+     ],
+     [
+      463,
+      33
+     ],
+     [
+      498,
+      3
+     ],
+     [
+      517,
+      30
+     ],
+     [
+      561,
+      39
+     ]
+    ],
+    "ends": [
+     [
+      133,
+      26
+     ],
+     [
+      199,
+      21
+     ],
+     [
+      233,
+      29
+     ],
+     [
+      307,
+      38
+     ],
+     [
+      331,
+      42
+     ],
+     [
+      350,
+      27
+     ],
+     [
+      420,
+      48
+     ],
+     [
+      459,
+      32
+     ],
+     [
+      463,
+      36
+     ],
+     [
+      498,
+      5
+     ],
+     [
+      517,
+      34
+     ],
+     [
+      561,
+      41
+     ]
+    ],
+    "names": [
+     "GlobInner",
+     "Selection",
+     "new",
+     "FileTypeDef",
+     "get",
+     "push",
+     "str",
+     "is_empty",
+     "Error",
+     "cfg",
+     "add_def",
+     "vec"
+    ]
+   },
+   {
+    "path": "crates/searcher/examples/search-stdin.rs",
+    "positions": [
+     [
+      0,
+      5
+     ],
+     [
+      6,
+      10
+     ],
+     [
+      7,
+      28
+     ],
+     [
+      11,
+      25
+     ],
+     [
+      16,
+      37
+     ],
+     [
+      18,
+      16
+     ],
+     [
+      20,
+      31
+     ],
+     [
+      23,
+      11
+     ],
+     [
+      23,
+      40
+     ],
+     [
+      24,
+      15
+     ],
+     [
+      25,
+      12
+     ],
+     [
+      29,
+      13
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      7
+     ],
+     [
+      6,
+      17
+     ],
+     [
+      7,
+      30
+     ],
+     [
+      11,
+      27
+     ],
+     [
+      16,
+      40
+     ],
+     [
+      18,
+      20
+     ],
+     [
+      20,
+      33
+     ],
+     [
+      23,
+      15
+     ],
+     [
+      23,
+      44
+     ],
+     [
+      24,
+      17
+     ],
+     [
+      25,
+      16
+     ],
+     [
+      29,
+      14
+     ]
+    ],
+    "names": [
+     "std",
+     "grep_searcher",
+     "UTF8",
+     "err",
+     "Error",
+     "pattern",
+     "from",
+     "matcher",
+     "pattern",
+     "new",
+     "matcher",
+     "Ok"
+    ]
+   },
+   {
+    "path": "tests/misc.rs",
+    "positions": [
+     [
+      31,
+      5
+     ],
+     [
+      269,
+      31
+     ],
+     [
+      321,
+      21
+     ],
+     [
+      401,
+      11
+     ],
+     [
+      447,
+      25
+     ],
+     [
+      543,
+      39
+     ],
+     [
+      647,
+      11
+     ],
+     [
+      764,
+      13
+     ],
+     [
+      780,
+      58
+     ],
+     [
+      916,
+      12
+     ],
+     [
+      1073,
+      5
+     ],
+     [
+      1175,
+      27
+     ]
+    ],
+    "ends": [
+     [
+      31,
+      7
+     ],
+     [
+      269,
+      35
+     ],
+     [
+      321,
+      23
+     ],
+     [
+      401,
+      14
+     ],
+     [
+      447,
+      27
+     ],
+     [
+      543,
+      41
+     ],
+     [
+      647,
+      14
+     ],
+     [
+      764,
+      15
+     ],
+     [
+      780,
+      60
+     ],
+     [
+      916,
+      16
+     ],
+     [
+      1073,
+      7
+     ],
+     [
+      1175,
+      29
+     ]
+    ],
+    "names": [
+     "dir",
+     "SHERLOCK",
+     "Dir",
+     "create",
+     "dir",
+     "dir",
+     "create",
+     "got",
+     "cmd",
+     "expected",
+     "dir",
+     "Dir"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "diagnostics",
+  "path": "crates/ignore/src/types.rs",
+  "line": -1,
+  "character": -1,
+  "extra": "route:push"
+ },
+ "ops": [],
+ "case": {
+  "path": "crates/ignore/src/types.rs",
+  "sub": "a",
+  "want_pull": false
+ },
+ "shape": "diagnostics:extra:unlinked-file",
+ "signature": "rust-analyzer|r3_routes|diagnostics:extra:unlinked-file",
+ "expected": [],
+ "actual": [
+  [
+   0,
+   0,
+   0,
+   2,
+   4,
+   "unlinked-file",
+   "rust-analyzer",
+   "This file is not included in any crates, so rust-analyzer can't offer IDE services. If you're intentionally working on unowned files, you can silence this warning by adding \"unlinked-file\" to rust-analyzer.diagnostics.disabled in your settings."
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "pull vs push; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 769s",
+ "violation": {
+  "oracle": "r3_routes",
+  "server": "rust-analyzer-2026-09-21",
+  "project": "BurntSushi/ripgrep@3fce3b5bb023",
+  "key": {
+   "method": "diagnostics",
+   "path": "crates/ignore/src/types.rs",
+   "line": -1,
+   "character": -1,
+   "extra": "route:push"
+  },
+  "expected": [],
+  "actual": [
+   [
+    0,
+    0,
+    0,
+    2,
+    4,
+    "unlinked-file",
+    "rust-analyzer",
+    "This file is not included in any crates, so rust-analyzer can't offer IDE services. If you're intentionally working on unowned files, you can silence this warning by adding \"unlinked-file\" to rust-analyzer.diagnostics.disabled in your settings."
+   ]
+  ],
+  "ops": [],
+  "detail": "{\"case\": {\"path\": \"crates/ignore/src/types.rs\", \"sub\": \"a\", \"want_pull\": false}, \"note\": \"pull vs push; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 769s\", \"shape\": \"diagnostics:extra:unlinked-file\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "rust-analyzer|r3_routes|diagnostics:extra:unlinked-file",
+  "run_id": "29d2893b9177"
+ },
+ "replay_logs": [
+  "logs/rust-analyzer-2026-09-21-tr751ce1-r3-replay-baseline-20260925-165215-efa775.jsonl.gz",
+  "logs/rust-analyzer-2026-09-21-tr751ce1-r3-replay-control-20260925-165231-a69c5f.jsonl.gz",
+  "logs/rust-analyzer-2026-09-21-tr751ce1-r3-replay-route-20260925-165246-6087d4.jsonl.gz"
+ ],
+ "project_files": {},
+ "group": "rust-analyzer-r3-diagnostics-extra-unlinked-file-a-751ce1",
+ "reduced": true
+}

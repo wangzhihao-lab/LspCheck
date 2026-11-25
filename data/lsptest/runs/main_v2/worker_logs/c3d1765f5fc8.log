@@ -1,0 +1,3 @@
+2026-11-18 19:20:42,869 INFO campaign_run run c3d1765f5fc8: r1_history on ts6 6.0.3, hexojs/hexo@751e856691bf seed 3 settled, targets ['lib/models/page.ts', 'lib/plugins/filter/before_post_render/index.ts', 'lib/plugins/processor/source_id_index.ts']
+2026-11-18 19:28:35,169 INFO campaign_run run c3d1765f5fc8: 0 candidate(s) in 472s; confirming
+2026-11-18 19:28:35,170 INFO campaign_run run c3d1765f5fc8 finished: ok, 0 confirmed of 0 candidate(s), 472s

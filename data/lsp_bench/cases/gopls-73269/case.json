@@ -1,0 +1,74 @@
+{
+ "schema": 1,
+ "id": "gopls-73269",
+ "meta": {
+  "server": "gopls",
+  "kind": "gopls",
+  "number": 73269,
+  "url": "https://github.com/golang/go/issues/73269",
+  "title": "x/tools/gopls/internal/analysis/modernize: the conversion of variadic functions to `slices.ContainsFunc` causes type errors",
+  "oracle_class": "R4",
+  "subtype": "quickfix",
+  "fix_ref": "golang/tools@a99a1c3c8372 (gopls/internal/analysis/modernize: prevent conversion of variadic functions to slices.ContainsFunc; CL 663436)",
+  "fix_shas": [
+   "a99a1c3c8372669f03041068a494dc8386afcd2c"
+  ],
+  "pre_version": "v0.18.1",
+  "post_version": "v0.19.0",
+  "pre_build": "v0.18.1",
+  "post_build": "v0.19.0",
+  "toolchain": "go1.24.4",
+  "build_notes": "Both built and run with go1.24.4 (golang.org/dl, under temp/lsp_servers/go-sdks; toolchain.json), as for the other v0.18.1/v0.19.0 cases. The reporter ran the modernize command of gopls v0.18.1; the fix merged 2025-04, v0.19.0 was tagged 2025-06-10.",
+  "effort_minutes": 6,
+  "notes": "The slicescontains pass accepted a predicate call isEven(num) whose callee is variadic (func(int, ...any) bool) and passed it to slices.ContainsFunc, which needs func(E) bool. The fix skips variadic callees, so the post-fix build reports no diagnostic for this loop."
+ },
+ "language": "go",
+ "settings": {},
+ "settings_note": "The modernize analyzer is on by default in both builds; the reporter ran the modernize command, which runs the same analyzer.",
+ "session": {
+  "settle_timeout_s": 180
+ },
+ "files": [
+  {
+   "path": "main.go",
+   "provenance": "issue-adapted",
+   "source": "issue body, 'What did you see happen?' diff (the removed '-' lines and the unchanged lines)",
+   "note": "the code before the fix, reassembled from the diff (the '-' lines and the context lines, diff markers removed), with a package clause 'package main' added"
+  },
+  {
+   "path": "go.mod",
+   "provenance": "scaffold",
+   "source": "",
+   "note": "a module around the file; go 1.24 (the slices modernizers need go1.21)"
+  }
+ ],
+ "repro": {
+  "attempt": 1,
+  "timing": "settled",
+  "steps": "Open main.go. The slicescontains pass reports the loop in check ('Loop can be simplified using slices.ContainsFunc'). Apply its fix. Reported: 'return slices.ContainsFunc(nums, isEven)' fails with 'in call to slices.ContainsFunc, type func(num int, opt ...any) bool of isEven does not match func(E) bool'. Probe: a fresh session on the edited text must report no error the original did not have; no fix offered means absent.",
+  "ops": [
+   {
+    "kind": "open",
+    "path": "main.go"
+   }
+  ],
+  "probe": {
+   "type": "edit_leaves_diagnostic",
+   "params": {
+    "edit": {
+     "via": "code_action",
+     "path": "main.go",
+     "diagnostic": {
+      "message_re": "slices\\.ContainsFunc"
+     },
+     "title_re": "slices\\.ContainsFunc",
+     "missing": "absent"
+    },
+    "target": {
+     "message_re": "Loop can be simplified using slices\\.ContainsFunc"
+    }
+   }
+  }
+ },
+ "attempts": []
+}

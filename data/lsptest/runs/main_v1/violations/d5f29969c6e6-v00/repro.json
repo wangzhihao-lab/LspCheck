@@ -1,0 +1,451 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "d5f29969c6e6-v00",
+ "run_id": "d5f29969c6e6",
+ "oracle": "r4_edits",
+ "server": {
+  "kind": "pyright",
+  "version": "1.1.414"
+ },
+ "project": {
+  "name": "Graphify-Labs/graphify@a5957aa6ef51",
+  "source": "corpus",
+  "ref": "temp/corpus/Graphify-Labs__graphify@a5957aa6ef51",
+  "commit": "a5957aa6ef51c9be8d054de9783d25046c187f3f",
+  "language": "python"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "tests/test_hypergraph.py",
+    "positions": [
+     [
+      135,
+      22
+     ],
+     [
+      196,
+      24
+     ],
+     [
+      208,
+      9
+     ],
+     [
+      209,
+      13
+     ],
+     [
+      209,
+      56
+     ],
+     [
+      215,
+      5
+     ],
+     [
+      220,
+      21
+     ],
+     [
+      238,
+      4
+     ],
+     [
+      257,
+      27
+     ],
+     [
+      294,
+      5
+     ],
+     [
+      298,
+      37
+     ],
+     [
+      354,
+      25
+     ]
+    ],
+    "ends": [
+     [
+      135,
+      23
+     ],
+     [
+      196,
+      26
+     ],
+     [
+      208,
+      15
+     ],
+     [
+      209,
+      17
+     ],
+     [
+      209,
+      59
+     ],
+     [
+      215,
+      6
+     ],
+     [
+      220,
+      23
+     ],
+     [
+      238,
+      5
+     ],
+     [
+      257,
+      51
+     ],
+     [
+      294,
+      7
+     ],
+     [
+      298,
+      39
+     ],
+     [
+      354,
+      47
+     ]
+    ],
+    "names": [
+     "G",
+     "Path",
+     "communities",
+     "tempfile",
+     "delete",
+     "G2",
+     "get",
+     "G",
+     "test_report_skips_hyperedges_section_when_empty",
+     "hes",
+     "hid",
+     "test_build_warns_once_per_aliased_hyperedge"
+    ]
+   },
+   {
+    "path": "tests/test_merge_chunks_validation.py",
+    "positions": [
+     [
+      13,
+      7
+     ],
+     [
+      13,
+      18
+     ],
+     [
+      19,
+      27
+     ],
+     [
+      47,
+      85
+     ],
+     [
+      60,
+      14
+     ],
+     [
+      62,
+      58
+     ],
+     [
+      62,
+      79
+     ],
+     [
+      65,
+      14
+     ],
+     [
+      70,
+      5
+     ],
+     [
+      114,
+      14
+     ],
+     [
+      115,
+      20
+     ],
+     [
+      116,
+      20
+     ]
+    ],
+    "ends": [
+     [
+      13,
+      10
+     ],
+     [
+      13,
+      20
+     ],
+     [
+      19,
+      31
+     ],
+     [
+      47,
+      87
+     ],
+     [
+      60,
+      18
+     ],
+     [
+      62,
+      60
+     ],
+     [
+      62,
+      81
+     ],
+     [
+      65,
+      17
+     ],
+     [
+      70,
+      7
+     ],
+     [
+      114,
+      18
+     ],
+     [
+      115,
+      26
+     ],
+     [
+      116,
+      23
+     ]
+    ],
+    "names": [
+     "_write",
+     "obj",
+     "mainmod",
+     "out",
+     "tmp_path",
+     "str",
+     "str",
+     "merged",
+     "out",
+     "tmp_path",
+     "monkeypatch",
+     "loads"
+    ]
+   },
+   {
+    "path": "worked/example/raw/api.py",
+    "positions": [
+     [
+      16,
+      31
+     ],
+     [
+      19,
+      21
+     ],
+     [
+      21,
+      28
+     ],
+     [
+      22,
+      21
+     ],
+     [
+      34,
+      30
+     ],
+     [
+      36,
+      7
+     ],
+     [
+      42,
+      9
+     ],
+     [
+      47,
+      20
+     ],
+     [
+      56,
+      20
+     ],
+     [
+      61,
+      38
+     ],
+     [
+      61,
+      43
+     ],
+     [
+      75,
+      26
+     ]
+    ],
+    "ends": [
+     [
+      16,
+      35
+     ],
+     [
+      19,
+      23
+     ],
+     [
+      21,
+      29
+     ],
+     [
+      22,
+      24
+     ],
+     [
+      34,
+      32
+     ],
+     [
+      36,
+      11
+     ],
+     [
+      42,
+      15
+     ],
+     [
+      47,
+      23
+     ],
+     [
+      56,
+      22
+     ],
+     [
+      61,
+      40
+     ],
+     [
+      61,
+      46
+     ],
+     [
+      75,
+      28
+     ]
+    ],
+    "names": [
+     "results",
+     "len",
+     "r",
+     "failed",
+     "str",
+     "deleted",
+     "handle_list",
+     "query",
+     "set",
+     "list",
+     "terms",
+     "str"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "completionInsert",
+  "path": "tests/test_hypergraph.py",
+  "line": 135,
+  "character": 23,
+  "extra": "G="
+ },
+ "ops": [],
+ "case": {
+  "character": 23,
+  "edits": [
+   {
+    "newText": "G=",
+    "range": {
+     "end": {
+      "character": 23,
+      "line": 135
+     },
+     "start": {
+      "character": 22,
+      "line": 135
+     }
+    }
+   }
+  ],
+  "excerpt": "    attach_hyperedges(G=, [{\"label\": \"No ID\", \"nodes\": [\"A\", \"B\", \"C\"]}])",
+  "item_kind": 6,
+  "kind": "completion",
+  "label": "G=",
+  "line": 135,
+  "name": "G",
+  "new_errors": [
+   "136:23: expected argument value expression"
+  ],
+  "path": "tests/test_hypergraph.py"
+ },
+ "shape": "completionInsert:gained",
+ "signature": "pyright|r4_edits|completionInsert:gained",
+ "expected": [],
+ "actual": [
+  "expected argument value expression"
+ ],
+ "reproduced": "3/3",
+ "note": "accepting completion item 'G=' (kind 6) after 'G' at tests/test_hypergraph.py:136:24 introduces ['136:23: expected argument value expression']; confirmed in a fresh session on the original content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 99s",
+ "violation": {
+  "oracle": "r4_edits",
+  "server": "pyright-1.1.414",
+  "project": "Graphify-Labs/graphify@a5957aa6ef51",
+  "key": {
+   "method": "completionInsert",
+   "path": "tests/test_hypergraph.py",
+   "line": 135,
+   "character": 23,
+   "extra": "G="
+  },
+  "expected": [],
+  "actual": [
+   "expected argument value expression"
+  ],
+  "ops": [],
+  "detail": "{\"case\": {\"character\": 23, \"edits\": [{\"newText\": \"G=\", \"range\": {\"end\": {\"character\": 23, \"line\": 135}, \"start\": {\"character\": 22, \"line\": 135}}}], \"excerpt\": \"    attach_hyperedges(G=, [{\\\"label\\\": \\\"No ID\\\", \\\"nodes\\\": [\\\"A\\\", \\\"B\\\", \\\"C\\\"]}])\", \"item_kind\": 6, \"kind\": \"completion\", \"label\": \"G=\", \"line\": 135, \"name\": \"G\", \"new_errors\": [\"136:23: expected argument value expression\"], \"path\": \"tests/test_hypergraph.py\"}, \"note\": \"accepting completion item 'G=' (kind 6) after 'G' at tests/test_hypergraph.py:136:24 introduces ['136:23: expected argument value expression']; confirmed in a fresh session on the original content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 99s\", \"shape\": \"completionInsert:gained\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "pyright|r4_edits|completionInsert:gained",
+  "run_id": "d5f29969c6e6"
+ },
+ "replay_logs": [
+  "logs/pyright-1.1.414-d5f29969c6e6-r4-replay-case-20260923-220911-512e4b.jsonl.gz",
+  "logs/pyright-1.1.414-d5f29969c6e6-r4-replay-control-20260923-220930-57f7d6.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

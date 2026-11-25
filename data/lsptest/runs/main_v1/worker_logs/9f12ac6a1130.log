@@ -1,0 +1,3 @@
+2026-09-24 12:59:58,043 INFO campaign_run run 9f12ac6a1130: r1_history on rust-analyzer 2026-09-21, BurntSushi/ripgrep@3fce3b5bb023 seed 3 settled, targets ['crates/ignore/src/overrides.rs', 'crates/matcher/src/interpolate.rs', 'tests/json.rs']
+2026-09-24 13:05:58,515 INFO campaign_run run 9f12ac6a1130: 0 candidate(s) in 361s; confirming
+2026-09-24 13:05:58,515 INFO campaign_run run 9f12ac6a1130 finished: ok, 0 confirmed of 0 candidate(s), 360s

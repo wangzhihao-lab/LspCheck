@@ -1,0 +1,67 @@
+{
+ "vid": "08417dd958ba-v02",
+ "ops_before": 5,
+ "narrowed": false,
+ "reduced_confirmed": "3/3",
+ "probes": 7,
+ "cache_hits": 0,
+ "reduce_seconds": 107.32,
+ "budget_exhausted": false,
+ "probe_log": [
+  [
+   4,
+   false
+  ],
+  [
+   4,
+   false
+  ],
+  [
+   4,
+   true
+  ],
+  [
+   3,
+   true
+  ],
+  [
+   2,
+   true
+  ],
+  [
+   1,
+   false
+  ],
+  [
+   1,
+   false
+  ]
+ ],
+ "logs": [
+  "pyright-1.1.414-trf24c4e-replay-baseline-20261118-224954-e10de2.jsonl.gz",
+  "pyright-1.1.414-trf24c4e-replay-control-20261118-224954-d146d7.jsonl.gz",
+  "pyright-1.1.414-trf24c4e-replay-history-20261118-225000-57041c.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [
+   "(function) def warn( message: str, category: type[Warning] | None = None, stacklevel: int = 1, source: Any | None = None, *, skip_file_prefixes: tuple[str, ...] = () ) -> None --- Issue a warning, or maybe ignore it or raise an exception.",
+   [
+    6,
+    9,
+    6,
+    13
+   ]
+  ],
+  "actual": [
+   "(function) def warn( message: str, category: type[Warning] | None = None, stacklevel: int = 1, source: Any | None = None, *, skip_file_prefixes: tuple[str, ...] = () ) -> None",
+   [
+    6,
+    9,
+    6,
+    13
+   ]
+  ]
+ },
+ "ops_after": 2,
+ "total_seconds": 205.2
+}

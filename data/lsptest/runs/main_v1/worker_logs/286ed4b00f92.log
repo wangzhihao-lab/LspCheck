@@ -1,0 +1,3 @@
+2026-09-24 00:33:30,102 INFO campaign_run run 286ed4b00f92: r5_transforms on pyright 1.1.414, github/spec-kit@67ab049e8d43 seed 2 settled, targets ['src/specify_cli/artifacts/command_lookup.py', 'tests/specify_cli/presets/test_command_add.py', 'tests/specify_cli/presets/test_command_enable.py']
+2026-09-24 00:36:17,072 INFO campaign_run run 286ed4b00f92: 0 candidate(s) in 167s; confirming
+2026-09-24 00:36:17,073 INFO campaign_run run 286ed4b00f92 finished: ok, 0 confirmed of 0 candidate(s), 167s

@@ -1,0 +1,593 @@
+{
+ "format": 1,
+ "campaign": "main_v2",
+ "vid": "0d6f841395f8-v00",
+ "run_id": "0d6f841395f8",
+ "oracle": "r1_history",
+ "server": {
+  "kind": "ts6",
+  "version": "6.0.3"
+ },
+ "project": {
+  "name": "mifi/lossless-cut@85cb95f6aeae",
+  "source": "corpus",
+  "ref": "temp/corpus/mifi__lossless-cut@85cb95f6aeae",
+  "commit": "85cb95f6aeaed9c26dfe64fd5ac6c6ac7760c55f",
+  "language": "typescript"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "src/common/util.ts",
+    "positions": [
+     [
+      2,
+      23
+     ],
+     [
+      2,
+      42
+     ],
+     [
+      6,
+      34
+     ],
+     [
+      6,
+      46
+     ],
+     [
+      6,
+      62
+     ],
+     [
+      12,
+      21
+     ],
+     [
+      12,
+      42
+     ],
+     [
+      13,
+      22
+     ],
+     [
+      15,
+      18
+     ],
+     [
+      43,
+      48
+     ],
+     [
+      44,
+      30
+     ],
+     [
+      45,
+      71
+     ]
+    ],
+    "ends": [
+     [
+      2,
+      33
+     ],
+     [
+      2,
+      48
+     ],
+     [
+      6,
+      38
+     ],
+     [
+      6,
+      53
+     ],
+     [
+      6,
+      66
+     ],
+     [
+      12,
+      26
+     ],
+     [
+      12,
+      44
+     ],
+     [
+      13,
+      25
+     ],
+     [
+      15,
+      22
+     ],
+     [
+      43,
+      52
+     ],
+     [
+      44,
+      34
+     ],
+     [
+      45,
+      73
+     ]
+    ],
+    "names": [
+     "parseFfprobeDuration",
+     "durationStr",
+     "hwaccel",
+     "FfmpegHwAccel",
+     "hwaccel",
+     "parseRatio",
+     "char",
+     "split",
+     "parseInt",
+     "channels",
+     "channels",
+     "join"
+    ]
+   },
+   {
+    "path": "src/renderer/src/edlFormats.test.ts",
+    "positions": [
+     [
+      3,
+      18
+     ],
+     [
+      14,
+      27
+     ],
+     [
+      24,
+      4
+     ],
+     [
+      83,
+      8
+     ],
+     [
+      84,
+      21
+     ],
+     [
+      186,
+      1
+     ],
+     [
+      197,
+      32
+     ],
+     [
+      215,
+      7
+     ],
+     [
+      223,
+      76
+     ],
+     [
+      251,
+      5
+     ],
+     [
+      279,
+      8
+     ],
+     [
+      287,
+      26
+     ]
+    ],
+    "ends": [
+     [
+      3,
+      27
+     ],
+     [
+      14,
+      29
+     ],
+     [
+      24,
+      8
+     ],
+     [
+      83,
+      11
+     ],
+     [
+      84,
+      25
+     ],
+     [
+      186,
+      2
+     ],
+     [
+      197,
+      38
+     ],
+     [
+      215,
+      9
+     ],
+     [
+      223,
+      82
+     ],
+     [
+      251,
+      8
+     ],
+     [
+      279,
+      11
+     ],
+     [
+      287,
+      28
+     ]
+    ],
+    "names": [
+     "parseSrtToSegments",
+     "name",
+     "describe",
+     "start",
+     "toEqual",
+     "it",
+     "readFixture",
+     "end",
+     "csvFramesStr",
+     "expect",
+     "start",
+     "name"
+    ]
+   },
+   {
+    "path": "src/renderer/src/worker/eval.ts",
+    "positions": [
+     [
+      7,
+      26
+     ],
+     [
+      28,
+      44
+     ],
+     [
+      30,
+      10
+     ],
+     [
+      31,
+      21
+     ],
+     [
+      35,
+      16
+     ],
+     [
+      44,
+      17
+     ],
+     [
+      44,
+      27
+     ],
+     [
+      50,
+      13
+     ],
+     [
+      53,
+      34
+     ],
+     [
+      65,
+      19
+     ],
+     [
+      69,
+      19
+     ],
+     [
+      70,
+      40
+     ]
+    ],
+    "ends": [
+     [
+      7,
+      35
+     ],
+     [
+      28,
+      46
+     ],
+     [
+      30,
+      17
+     ],
+     [
+      31,
+      28
+     ],
+     [
+      35,
+      20
+     ],
+     [
+      44,
+      22
+     ],
+     [
+      44,
+      31
+     ],
+     [
+      50,
+      16
+     ],
+     [
+      53,
+      36
+     ],
+     [
+      65,
+      22
+     ],
+     [
+      69,
+      27
+     ],
+     [
+      70,
+      44
+     ]
+    ],
+    "names": [
+     "RequestMessageData",
+     "code",
+     "lastRequestId",
+     "lastRequestId",
+     "cleanup",
+     "onMessage",
+     "response",
+     "reject",
+     "data",
+     "Error",
+     "addEventListener",
+     "onError"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "references",
+  "path": "src/common/util.ts",
+  "line": 2,
+  "character": 23,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "src/common/util.ts"
+  },
+  {
+   "kind": "open",
+   "path": "src/renderer/src/edlFormats.test.ts"
+  },
+  {
+   "kind": "open",
+   "path": "src/renderer/src/worker/eval.ts"
+  },
+  {
+   "kind": "fs_rename",
+   "path": "src/common/util.ts",
+   "new_path": "src/common/util_rt.ts"
+  },
+  {
+   "kind": "fs_rename",
+   "path": "src/common/util_rt.ts",
+   "new_path": "src/common/util.ts"
+  }
+ ],
+ "case": {
+  "chain_step": 0,
+  "families": [],
+  "family": "H5",
+  "history_index": 0,
+  "history_seed": 1001,
+  "mode": "fresh",
+  "note": "rename src/common/util.ts -> src/common/util_rt.ts -> back",
+  "seed": 1,
+  "timing": "settled"
+ },
+ "shape": "references:missing",
+ "signature": "ts6|r1_history|references:missing",
+ "expected": [
+  [
+   "src/common/util.ts",
+   2,
+   13,
+   2,
+   33
+  ],
+  [
+   "src/main/ffmpeg.ts",
+   17,
+   72,
+   17,
+   92
+  ],
+  [
+   "src/main/ffmpeg.ts",
+   587,
+   9,
+   587,
+   29
+  ],
+  [
+   "src/renderer/src/App.tsx",
+   103,
+   9,
+   103,
+   29
+  ],
+  [
+   "src/renderer/src/App.tsx",
+   2299,
+   31,
+   2299,
+   51
+  ],
+  [
+   "src/renderer/src/ffmpeg.ts",
+   16,
+   9,
+   16,
+   29
+  ],
+  [
+   "src/renderer/src/ffmpeg.ts",
+   581,
+   23,
+   581,
+   43
+  ]
+ ],
+ "actual": [
+  [
+   "src/common/util.ts",
+   2,
+   13,
+   2,
+   33
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "H5: rename src/common/util.ts -> src/common/util_rt.ts -> back; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 275s",
+ "violation": {
+  "oracle": "r1_history",
+  "server": "ts6-6.0.3",
+  "project": "mifi/lossless-cut@85cb95f6aeae",
+  "key": {
+   "method": "references",
+   "path": "src/common/util.ts",
+   "line": 2,
+   "character": 23,
+   "extra": ""
+  },
+  "expected": [
+   [
+    "src/common/util.ts",
+    2,
+    13,
+    2,
+    33
+   ],
+   [
+    "src/main/ffmpeg.ts",
+    17,
+    72,
+    17,
+    92
+   ],
+   [
+    "src/main/ffmpeg.ts",
+    587,
+    9,
+    587,
+    29
+   ],
+   [
+    "src/renderer/src/App.tsx",
+    103,
+    9,
+    103,
+    29
+   ],
+   [
+    "src/renderer/src/App.tsx",
+    2299,
+    31,
+    2299,
+    51
+   ],
+   [
+    "src/renderer/src/ffmpeg.ts",
+    16,
+    9,
+    16,
+    29
+   ],
+   [
+    "src/renderer/src/ffmpeg.ts",
+    581,
+    23,
+    581,
+    43
+   ]
+  ],
+  "actual": [
+   [
+    "src/common/util.ts",
+    2,
+    13,
+    2,
+    33
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "src/common/util.ts"
+   },
+   {
+    "kind": "open",
+    "path": "src/renderer/src/edlFormats.test.ts"
+   },
+   {
+    "kind": "open",
+    "path": "src/renderer/src/worker/eval.ts"
+   },
+   {
+    "kind": "fs_rename",
+    "path": "src/common/util.ts",
+    "new_path": "src/common/util_rt.ts"
+   },
+   {
+    "kind": "fs_rename",
+    "path": "src/common/util_rt.ts",
+    "new_path": "src/common/util.ts"
+   }
+  ],
+  "detail": "{\"case\": {\"chain_step\": 0, \"families\": [], \"family\": \"H5\", \"history_index\": 0, \"history_seed\": 1001, \"mode\": \"fresh\", \"note\": \"rename src/common/util.ts -> src/common/util_rt.ts -> back\", \"seed\": 1, \"timing\": \"settled\"}, \"note\": \"H5: rename src/common/util.ts -> src/common/util_rt.ts -> back; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 275s\", \"shape\": \"references:missing\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "ts6|r1_history|references:missing",
+  "run_id": "0d6f841395f8"
+ },
+ "replay_logs": [
+  "logs/ts6-6.0.3-0d6f841395f8-replay-baseline-20261118-054554-d9eed2.jsonl.gz",
+  "logs/ts6-6.0.3-0d6f841395f8-replay-control-20261118-054554-99e509.jsonl.gz",
+  "logs/ts6-6.0.3-0d6f841395f8-replay-history-20261118-054627-6c238a.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

@@ -1,0 +1,581 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "1049da1e7f48-v00",
+ "run_id": "1049da1e7f48",
+ "oracle": "r4_edits",
+ "server": {
+  "kind": "gopls",
+  "version": "v0.23.0"
+ },
+ "project": {
+  "name": "caddyserver/caddy@c18099a0af5e",
+  "source": "corpus",
+  "ref": "temp/corpus/caddyserver__caddy@c18099a0af5e",
+  "commit": "c18099a0af5e88c8d9da0b9d797f6f2c62d60a23",
+  "language": "go"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "modules/caddyhttp/reverseproxy/selectionpolicies_test.go",
+    "positions": [
+     [
+      85,
+      11
+     ],
+     [
+      120,
+      34
+     ],
+     [
+      207,
+      6
+     ],
+     [
+      447,
+      21
+     ],
+     [
+      449,
+      6
+     ],
+     [
+      476,
+      14
+     ],
+     [
+      509,
+      5
+     ],
+     [
+      571,
+      22
+     ],
+     [
+      597,
+      20
+     ],
+     [
+      706,
+      3
+     ],
+     [
+      738,
+      3
+     ],
+     [
+      946,
+      50
+     ]
+    ],
+    "ends": [
+     [
+      85,
+      13
+     ],
+     [
+      120,
+      36
+     ],
+     [
+      207,
+      9
+     ],
+     [
+      447,
+      23
+     ],
+     [
+      449,
+      9
+     ],
+     [
+      476,
+      17
+     ],
+     [
+      509,
+      7
+     ],
+     [
+      571,
+      25
+     ],
+     [
+      597,
+      23
+     ],
+     [
+      706,
+      5
+     ],
+     [
+      738,
+      5
+     ],
+     [
+      946,
+      51
+     ]
+    ],
+    "names": [
+     "pool",
+     "nil",
+     "Error",
+     "pool",
+     "Error",
+     "SetVar",
+     "Host",
+     "false",
+     "Select",
+     "pool",
+     "pool",
+     "w"
+    ]
+   },
+   {
+    "path": "modules/caddyhttp/rewrite/caddyfile.go",
+    "positions": [
+     [
+      63,
+      10
+     ],
+     [
+      68,
+      38
+     ],
+     [
+      79,
+      9
+     ],
+     [
+      109,
+      15
+     ],
+     [
+      117,
+      27
+     ],
+     [
+      120,
+      22
+     ],
+     [
+      136,
+      7
+     ],
+     [
+      148,
+      6
+     ],
+     [
+      167,
+      12
+     ],
+     [
+      171,
+      6
+     ],
+     [
+      211,
+      40
+     ],
+     [
+      280,
+      3
+     ]
+    ],
+    "ends": [
+     [
+      63,
+      12
+     ],
+     [
+      68,
+      42
+     ],
+     [
+      79,
+      13
+     ],
+     [
+      109,
+      16
+     ],
+     [
+      117,
+      29
+     ],
+     [
+      120,
+      24
+     ],
+     [
+      136,
+      9
+     ],
+     [
+      148,
+      8
+     ],
+     [
+      167,
+      14
+     ],
+     [
+      171,
+      7
+     ],
+     [
+      211,
+      49
+     ],
+     [
+      280,
+      6
+     ]
+    ],
+    "names": [
+     "nil",
+     "Rewrite",
+     "NextArg",
+     "h",
+     "args",
+     "lim",
+     "err",
+     "len",
+     "nil",
+     "h",
+     "queryOpsArguments",
+     "route"
+    ]
+   },
+   {
+    "path": "modules/caddypki/acmeserver/policy_test.go",
+    "positions": [
+     [
+      0,
+      13
+     ],
+     [
+      10,
+      41
+     ],
+     [
+      19,
+      24
+     ],
+     [
+      23,
+      14
+     ],
+     [
+      73,
+      41
+     ],
+     [
+      91,
+      14
+     ],
+     [
+      102,
+      8
+     ],
+     [
+      116,
+      24
+     ],
+     [
+      122,
+      5
+     ],
+     [
+      123,
+      9
+     ],
+     [
+      123,
+      33
+     ],
+     [
+      151,
+      25
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      18
+     ],
+     [
+      10,
+      45
+     ],
+     [
+      19,
+      32
+     ],
+     [
+      23,
+      17
+     ],
+     [
+      73,
+      45
+     ],
+     [
+      91,
+      17
+     ],
+     [
+      102,
+      12
+     ],
+     [
+      116,
+      32
+     ],
+     [
+      122,
+      6
+     ],
+     [
+      123,
+      10
+     ],
+     [
+      123,
+      34
+     ],
+     [
+      151,
+      27
+     ]
+    ],
+    "names": [
+     "acmeserver",
+     "testing",
+     "X509NameOptions",
+     "fields",
+     "testing",
+     "fields",
+     "Domains",
+     "X509NameOptions",
+     "_",
+     "tt",
+     "T",
+     "nil"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "diagnostics",
+  "path": "modules/caddyhttp/reverseproxy/selectionpolicies_test.go",
+  "line": 125,
+  "character": 1,
+  "extra": "M2:quickfix-errors:Create variable poool"
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "modules/caddyhttp/reverseproxy/selectionpolicies_test.go"
+  },
+  {
+   "kind": "change",
+   "path": "modules/caddyhttp/reverseproxy/selectionpolicies_test.go",
+   "start": [
+    125,
+    1
+   ],
+   "end": [
+    125,
+    5
+   ],
+   "text": "poool"
+  },
+  {
+   "kind": "change",
+   "path": "modules/caddyhttp/reverseproxy/selectionpolicies_test.go",
+   "start": [
+    125,
+    6
+   ],
+   "end": [
+    125,
+    6
+   ],
+   "text": " := 0\n\tpoool"
+  }
+ ],
+ "case": {
+  "action_kind": "quickfix",
+  "base_errors": 0,
+  "check": "errors",
+  "diag": {
+   "code": "UndeclaredName",
+   "message": "undefined: poool",
+   "range": {
+    "end": {
+     "character": 6,
+     "line": 125
+    },
+    "start": {
+     "character": 1,
+     "line": 125
+    }
+   },
+   "severity": 1
+  },
+  "fix_introduced_errors": [
+   {
+    "code": "NonIndexableOperand",
+    "message": "cannot index poool (variable of type int)",
+    "path": "modules/caddyhttp/reverseproxy/selectionpolicies_test.go",
+    "range": {
+     "end": {
+      "character": 6,
+      "line": 126
+     },
+     "start": {
+      "character": 1,
+      "line": 126
+     }
+    },
+    "severity": 1
+   }
+  ],
+  "fix_ops": [
+   {
+    "end": [
+     125,
+     6
+    ],
+    "kind": "change",
+    "path": "modules/caddyhttp/reverseproxy/selectionpolicies_test.go",
+    "start": [
+     125,
+     6
+    ],
+    "text": " := 0\n\tpoool"
+   }
+  ],
+  "kind": "mutation",
+  "mutation": {
+   "end": [
+    125,
+    5
+   ],
+   "id": "M2",
+   "offsets": [
+    3669,
+    3673
+   ],
+   "sha": "fe48a8afcad62b36",
+   "start": [
+    125,
+    1
+   ],
+   "text": "poool",
+   "what": "misspell 'pool' as 'poool' (duplicate a middle character)"
+  },
+  "n_fix_ops": 1,
+  "path": "modules/caddyhttp/reverseproxy/selectionpolicies_test.go",
+  "post_errors": 1,
+  "title": "Create variable poool",
+  "via": "resolve"
+ },
+ "shape": "diagnostics:extra:NonIndexableOperand",
+ "signature": "gopls|r4_edits|diagnostics:extra:NonIndexableOperand",
+ "expected": [],
+ "actual": [
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "NonIndexableOperand",
+   "compiler",
+   "cannot index poool (variable of type int)"
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "quick fix 'Create variable poool' for UndeclaredName at modules/caddyhttp/reverseproxy/selectionpolicies_test.go:126:2 raises the error count in the edited files from 0 to 1 (seeded by M2: misspell 'pool' as 'poool' (duplicate a middle character); errors before the mutation 0, after the fix 1); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 69s",
+ "violation": {
+  "oracle": "r4_edits",
+  "server": "gopls-v0.23.0",
+  "project": "caddyserver/caddy@c18099a0af5e",
+  "key": {
+   "method": "diagnostics",
+   "path": "modules/caddyhttp/reverseproxy/selectionpolicies_test.go",
+   "line": 125,
+   "character": 1,
+   "extra": "M2:quickfix-errors:Create variable poool"
+  },
+  "expected": [],
+  "actual": [
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "NonIndexableOperand",
+    "compiler",
+    "cannot index poool (variable of type int)"
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "modules/caddyhttp/reverseproxy/selectionpolicies_test.go"
+   },
+   {
+    "kind": "change",
+    "path": "modules/caddyhttp/reverseproxy/selectionpolicies_test.go",
+    "start": [
+     125,
+     1
+    ],
+    "end": [
+     125,
+     5
+    ],
+    "text": "poool"
+   },
+   {
+    "kind": "change",
+    "path": "modules/caddyhttp/reverseproxy/selectionpolicies_test.go",
+    "start": [
+     125,
+     6
+    ],
+    "end": [
+     125,
+     6
+    ],
+    "text": " := 0\n\tpoool"
+   }
+  ],
+  "detail": "{\"case\": {\"action_kind\": \"quickfix\", \"base_errors\": 0, \"check\": \"errors\", \"diag\": {\"code\": \"UndeclaredName\", \"message\": \"undefined: poool\", \"range\": {\"end\": {\"character\": 6, \"line\": 125}, \"start\": {\"character\": 1, \"line\": 125}}, \"severity\": 1}, \"fix_introduced_errors\": [{\"code\": \"NonIndexableOperand\", \"message\": \"cannot index poool (variable of type int)\", \"path\": \"modules/caddyhttp/reverseproxy/selectionpolicies_test.go\", \"range\": {\"end\": {\"character\": 6, \"line\": 126}, \"start\": {\"character\": 1, \"line\": 126}}, \"severity\": 1}], \"fix_ops\": [{\"end\": [125, 6], \"kind\": \"change\", \"path\": \"modules/caddyhttp/reverseproxy/selectionpolicies_test.go\", \"start\": [125, 6], \"text\": \" := 0\\n\\tpoool\"}], \"kind\": \"mutation\", \"mutation\": {\"end\": [125, 5], \"id\": \"M2\", \"offsets\": [3669, 3673], \"sha\": \"fe48a8afcad62b36\", \"start\": [125, 1], \"text\": \"poool\", \"what\": \"misspell 'pool' as 'poool' (duplicate a middle character)\"}, \"n_fix_ops\": 1, \"path\": \"modules/caddyhttp/reverseproxy/selectionpolicies_test.go\", \"post_errors\": 1, \"title\": \"Create variable poool\", \"via\": \"resolve\"}, \"note\": \"quick fix 'Create variable poool' for UndeclaredName at modules/caddyhttp/reverseproxy/selectionpolicies_test.go:126:2 raises the error count in the edited files from 0 to 1 (seeded by M2: misspell 'pool' as 'poool' (duplicate a middle character); errors before the mutation 0, after the fix 1); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 69s\", \"shape\": \"diagnostics:extra:NonIndexableOperand\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "gopls|r4_edits|diagnostics:extra:NonIndexableOperand",
+  "run_id": "1049da1e7f48"
+ },
+ "replay_logs": [
+  "logs/gopls-v0.23.0-1049da1e7f48-r4-replay-baseline-20260923-205204-b22a88.jsonl.gz",
+  "logs/gopls-v0.23.0-1049da1e7f48-r4-replay-case-20260923-205152-6ee6b9.jsonl.gz",
+  "logs/gopls-v0.23.0-1049da1e7f48-r4-replay-control-20260923-205209-f43996.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

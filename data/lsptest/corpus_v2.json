@@ -1,0 +1,779 @@
+{
+ "rule": "Rule per language: GitHub repositories with stars >= 1000, pushed after the cutoff, size between 200 KB and 40 MB, not archived, not a fork, whose root contains the language's project file (tsconfig.json / pyproject.toml or setup.py / Cargo.toml / go.mod), whose name or description is not a list, tutorial or template, where the language is at least 60% of the code bytes and the tree holds at least 30 source files of that language. Take the first 10 by stars and pin the default-branch HEAD commit. ",
+ "cutoff": "2026-03-23",
+ "selected_on": "2026-09-23",
+ "built_on": "2026-11-17",
+ "ranks": "11-20",
+ "pinned_until": "2026-09-23T23:59:59Z",
+ "note": "Second batch. Same rule and same selection code as the first batch (scripts/lsptest/select_corpus.py, imported unchanged), applied to the same GitHub search (the cached result pages of the 2026-09-23 selection run): per language the repositories ranked 11-20 among those that pass the rule; ranks 1-10 were checked to equal data/lsptest/corpus.json. Each project is pinned to the last default-branch commit at or before 2026-09-23T23:59:59Z (commits API `until`), the first batch's selection day; `source_files` is counted at that commit and `pin_check` repeats the project-file and source-file checks there. Two filter inputs could only be read as of the build day (2026-11-17), because GitHub serves only current values: the language shares (languages API) and the default-branch tree; the project-file and source-file checks were repeated at the pinned commits (pin_check), and the repositories that failed the project-file check between ranks 10 and 20 fail it at their 2026-09-23 commits too. The activity rule is the first batch's (pushed_at of the cached search, any branch), so a project whose default branch last changed before the cutoff can qualify (soimort/you-get, iawia002/lux, beego/beego).",
+ "corpus": {
+  "typescript": [
+   {
+    "language": "typescript",
+    "repo": "colinhacks/zod",
+    "stars": 43997,
+    "size_kb": 27226,
+    "lang_share": 0.89,
+    "source_files": 511,
+    "default_branch": "main",
+    "commit": "34a626f307871ecbb0123947559328dc52ed5e3e",
+    "pushed_at": "2026-09-22T06:13:17Z",
+    "rank": 11,
+    "commit_date": "2026-09-23T23:30:12Z",
+    "pin_check": {
+     "project_file": true,
+     "source_files": 511,
+     "tree_truncated": false,
+     "passes": true
+    }
+   },
+   {
+    "language": "typescript",
+    "repo": "mifi/lossless-cut",
+    "stars": 43979,
+    "size_kb": 30460,
+    "lang_share": 0.97,
+    "source_files": 174,
+    "default_branch": "master",
+    "commit": "85cb95f6aeaed9c26dfe64fd5ac6c6ac7760c55f",
+    "pushed_at": "2026-09-14T09:55:23Z",
+    "rank": 12,
+    "commit_date": "2026-09-23T14:29:52Z",
+    "pin_check": {
+     "project_file": true,
+     "source_files": 174,
+     "tree_truncated": false,
+     "passes": true
+    }
+   },
+   {
+    "language": "typescript",
+    "repo": "hexojs/hexo",
+    "stars": 41773,
+    "size_kb": 7302,
+    "lang_share": 0.99,
+    "source_files": 272,
+    "default_branch": "master",
+    "commit": "751e856691bfe24182cf8763feb29db0422dcfee",
+    "pushed_at": "2026-08-29T09:36:32Z",
+    "rank": 13,
+    "commit_date": "2026-08-29T09:36:29Z",
+    "pin_check": {
+     "project_file": true,
+     "source_files": 272,
+     "tree_truncated": false,
+     "passes": true
+    }
+   },
+   {
+    "language": "typescript",
+    "repo": "vadimdemedes/ink",
+    "stars": 39930,
+    "size_kb": 2417,
+    "lang_share": 1.0,
+    "source_files": 288,
+    "default_branch": "master",
+    "commit": "02ae1e59e7c288e971616100c4c11bcca6b5761b",
+    "pushed_at": "2026-09-21T05:22:19Z",
+    "rank": 14,
+    "commit_date": "2026-09-21T05:22:19Z",
+    "pin_check": {
+     "project_file": true,
+     "source_files": 288,
+     "tree_truncated": false,
+     "passes": true
+    }
+   },
+   {
+    "language": "typescript",
+    "repo": "umami-software/umami",
+    "stars": 38960,
+    "size_kb": 29706,
+    "lang_share": 0.99,
+    "source_files": 1384,
+    "default_branch": "master",
+    "commit": "12ad773d621f51da6e81e9031b458efe56be3e8e",
+    "pushed_at": "2026-09-22T23:36:26Z",
+    "rank": 15,
+    "commit_date": "2026-09-23T17:03:23Z",
+    "pin_check": {
+     "project_file": true,
+     "source_files": 1384,
+     "tree_truncated": false,
+     "passes": true
+    }
+   },
+   {
+    "language": "typescript",
+    "repo": "date-fns/date-fns",
+    "stars": 36645,
+    "size_kb": 25504,
+    "lang_share": 0.97,
+    "source_files": 1755,
+    "default_branch": "main",
+    "commit": "f34149bb1ba10046453e688207507e0d2c727e00",
+    "pushed_at": "2026-09-22T06:59:17Z",
+    "rank": 16,
+    "commit_date": "2026-09-22T07:42:26Z",
+    "pin_check": {
+     "project_file": true,
+     "source_files": 1755,
+     "tree_truncated": false,
+     "passes": true
+    }
+   },
+   {
+    "language": "typescript",
+    "repo": "solidjs/solid",
+    "stars": 36068,
+    "size_kb": 27855,
+    "lang_share": 0.76,
+    "source_files": 812,
+    "default_branch": "main",
+    "commit": "4b62bc29e04bfd29573a20ff3d47ae56a8a80ccb",
+    "pushed_at": "2026-09-23T07:23:12Z",
+    "rank": 17,
+    "commit_date": "2026-09-23T21:56:27Z",
+    "pin_check": {
+     "project_file": true,
+     "source_files": 812,
+     "tree_truncated": false,
+     "passes": true
+    }
+   },
+   {
+    "language": "typescript",
+    "repo": "DayuanJiang/next-ai-draw-io",
+    "stars": 36014,
+    "size_kb": 6302,
+    "lang_share": 0.96,
+    "source_files": 173,
+    "default_branch": "main",
+    "commit": "58b73ef761d8a5e5b2afa2c360428d3dea996312",
+    "pushed_at": "2026-09-23T03:36:39Z",
+    "rank": 18,
+    "commit_date": "2026-09-04T09:07:05Z",
+    "pin_check": {
+     "project_file": true,
+     "source_files": 173,
+     "tree_truncated": false,
+     "passes": true
+    }
+   },
+   {
+    "language": "typescript",
+    "repo": "pear-devs/pear-desktop",
+    "stars": 33563,
+    "size_kb": 22911,
+    "lang_share": 0.9,
+    "source_files": 250,
+    "default_branch": "master",
+    "commit": "3ff0a86231fed97b1a4365de0521fc96794c3f67",
+    "pushed_at": "2026-09-22T18:51:47Z",
+    "rank": 19,
+    "commit_date": "2026-09-22T18:51:40Z",
+    "pin_check": {
+     "project_file": true,
+     "source_files": 250,
+     "tree_truncated": false,
+     "passes": true
+    }
+   },
+   {
+    "language": "typescript",
+    "repo": "Gitlawb/openclaude",
+    "stars": 33494,
+    "size_kb": 36158,
+    "lang_share": 0.99,
+    "source_files": 3300,
+    "default_branch": "main",
+    "commit": "5cd11336caeaf2023ca1e02e5975c761cfc585fe",
+    "pushed_at": "2026-09-22T03:54:15Z",
+    "rank": 20,
+    "commit_date": "2026-09-22T03:53:57Z",
+    "pin_check": {
+     "project_file": true,
+     "source_files": 3300,
+     "tree_truncated": false,
+     "passes": true
+    }
+   }
+  ],
+  "python": [
+   {
+    "language": "python",
+    "repo": "NanmiCoder/MediaCrawler",
+    "stars": 65582,
+    "size_kb": 30222,
+    "lang_share": 0.96,
+    "source_files": 186,
+    "default_branch": "main",
+    "commit": "380b426000aac3d612837ed72c99808347dc94c9",
+    "pushed_at": "2026-09-19T05:26:11Z",
+    "rank": 11,
+    "commit_date": "2026-09-19T05:25:59Z",
+    "pin_check": {
+     "project_file": true,
+     "source_files": 186,
+     "tree_truncated": false,
+     "passes": true
+    }
+   },
+   {
+    "language": "python",
+    "repo": "scrapy/scrapy",
+    "stars": 64449,
+    "size_kb": 32253,
+    "lang_share": 0.98,
+    "source_files": 507,
+    "default_branch": "master",
+    "commit": "91d87364637c1b18fd5bb21d1ed3bb356cf9b6fc",
+    "pushed_at": "2026-09-22T10:33:25Z",
+    "rank": 12,
+    "commit_date": "2026-09-23T10:46:14Z",
+    "pin_check": {
+     "project_file": true,
+     "source_files": 507,
+     "tree_truncated": false,
+     "passes": true
+    }
+   },
+   {
+    "language": "python",
+    "repo": "usestrix/strix",
+    "stars": 64257,
+    "size_kb": 14844,
+    "lang_share": 0.78,
+    "source_files": 229,
+    "default_branch": "main",
+    "commit": "56f7d45388e6b0abe3f5dcfd09e8dba35c727b24",
+    "pushed_at": "2026-09-23T05:09:24Z",
+    "rank": 13,
+    "commit_date": "2026-09-23T03:49:41Z",
+    "pin_check": {
+     "project_file": true,
+     "source_files": 229,
+     "tree_truncated": false,
+     "passes": true
+    }
+   },
+   {
+    "language": "python",
+    "repo": "virattt/ai-hedge-fund",
+    "stars": 63671,
+    "size_kb": 3946,
+    "lang_share": 1.0,
+    "source_files": 78,
+    "default_branch": "main",
+    "commit": "7d897a002c263f106201154d877a4bcf74efae03",
+    "pushed_at": "2026-09-22T19:16:09Z",
+    "rank": 14,
+    "commit_date": "2026-09-22T19:13:30Z",
+    "pin_check": {
+     "project_file": true,
+     "source_files": 78,
+     "tree_truncated": false,
+     "passes": true
+    }
+   },
+   {
+    "language": "python",
+    "repo": "MemPalace/mempalace",
+    "stars": 59238,
+    "size_kb": 28590,
+    "lang_share": 0.94,
+    "source_files": 370,
+    "default_branch": "develop",
+    "commit": "c4d3711ee2478bb4062085fa075597af897d3a6d",
+    "pushed_at": "2026-09-23T06:48:41Z",
+    "rank": 15,
+    "commit_date": "2026-09-22T08:03:07Z",
+    "pin_check": {
+     "project_file": true,
+     "source_files": 370,
+     "tree_truncated": false,
+     "passes": true
+    }
+   },
+   {
+    "language": "python",
+    "repo": "FoundationAgents/OpenManus",
+    "stars": 58384,
+    "size_kb": 4572,
+    "lang_share": 0.98,
+    "source_files": 90,
+    "default_branch": "main",
+    "commit": "3309bf4e416fb1c74b008f3e86494439a31bad53",
+    "pushed_at": "2026-08-22T07:53:07Z",
+    "rank": 16,
+    "commit_date": "2026-08-16T10:29:11Z",
+    "pin_check": {
+     "project_file": true,
+     "source_files": 90,
+     "tree_truncated": false,
+     "passes": true
+    }
+   },
+   {
+    "language": "python",
+    "repo": "karpathy/nanochat",
+    "stars": 58226,
+    "size_kb": 2520,
+    "lang_share": 0.77,
+    "source_files": 36,
+    "default_branch": "master",
+    "commit": "92d63d4e8bb4df75c3b71618f31ddde2378b2bcd",
+    "pushed_at": "2026-09-07T20:06:43Z",
+    "rank": 17,
+    "commit_date": "2026-07-03T22:54:57Z",
+    "pin_check": {
+     "project_file": true,
+     "source_files": 36,
+     "tree_truncated": false,
+     "passes": true
+    }
+   },
+   {
+    "language": "python",
+    "repo": "ultralytics/yolov5",
+    "stars": 58067,
+    "size_kb": 18127,
+    "lang_share": 0.99,
+    "source_files": 52,
+    "default_branch": "master",
+    "commit": "402e17ddf820996f51a191cbb798376e1144f069",
+    "pushed_at": "2026-09-16T10:18:54Z",
+    "rank": 18,
+    "commit_date": "2026-09-16T10:18:51Z",
+    "pin_check": {
+     "project_file": true,
+     "source_files": 52,
+     "tree_truncated": false,
+     "passes": true
+    }
+   },
+   {
+    "language": "python",
+    "repo": "soimort/you-get",
+    "stars": 56875,
+    "size_kb": 3566,
+    "lang_share": 0.99,
+    "source_files": 137,
+    "default_branch": "develop",
+    "commit": "049548f3f3f35e67ba8d3181c71fdc71d11cf260",
+    "pushed_at": "2026-08-24T07:23:27Z",
+    "rank": 19,
+    "commit_date": "2025-04-27T15:32:00Z",
+    "pin_check": {
+     "project_file": true,
+     "source_files": 137,
+     "tree_truncated": false,
+     "passes": true
+    }
+   },
+   {
+    "language": "python",
+    "repo": "Alishahryar1/free-claude-code",
+    "stars": 55722,
+    "size_kb": 14035,
+    "lang_share": 0.95,
+    "source_files": 736,
+    "default_branch": "main",
+    "commit": "1f8b1fd7d05473652416376cb7acbb8dbf466ea9",
+    "pushed_at": "2026-09-22T05:44:11Z",
+    "rank": 20,
+    "commit_date": "2026-09-22T05:44:09Z",
+    "pin_check": {
+     "project_file": true,
+     "source_files": 736,
+     "tree_truncated": false,
+     "passes": true
+    }
+   }
+  ],
+  "rust": [
+   {
+    "language": "rust",
+    "repo": "casey/just",
+    "stars": 35963,
+    "size_kb": 17891,
+    "lang_share": 0.98,
+    "source_files": 268,
+    "default_branch": "master",
+    "commit": "6119e6aff518b6550d9030955f905b01051b5772",
+    "pushed_at": "2026-09-22T00:10:34Z",
+    "rank": 11,
+    "commit_date": "2026-09-22T00:10:33Z",
+    "pin_check": {
+     "project_file": true,
+     "source_files": 268,
+     "tree_truncated": false,
+     "passes": true
+    }
+   },
+   {
+    "language": "rust",
+    "repo": "tokio-rs/tokio",
+    "stars": 33211,
+    "size_kb": 17528,
+    "lang_share": 1.0,
+    "source_files": 802,
+    "default_branch": "master",
+    "commit": "3930bd182cb18b534a34af86874a427da4a03c45",
+    "pushed_at": "2026-09-23T05:52:49Z",
+    "rank": 12,
+    "commit_date": "2026-09-23T14:12:30Z",
+    "pin_check": {
+     "project_file": true,
+     "source_files": 802,
+     "tree_truncated": false,
+     "passes": true
+    }
+   },
+   {
+    "language": "rust",
+    "repo": "yewstack/yew",
+    "stars": 32817,
+    "size_kb": 21578,
+    "lang_share": 0.97,
+    "source_files": 453,
+    "default_branch": "master",
+    "commit": "bfa6c19af971084f9547495388bde9aceeb81aaa",
+    "pushed_at": "2026-09-18T03:19:36Z",
+    "rank": 13,
+    "commit_date": "2026-08-26T11:20:38Z",
+    "pin_check": {
+     "project_file": true,
+     "source_files": 453,
+     "tree_truncated": false,
+     "passes": true
+    }
+   },
+   {
+    "language": "rust",
+    "repo": "dandavison/delta",
+    "stars": 32306,
+    "size_kb": 11413,
+    "lang_share": 0.94,
+    "source_files": 82,
+    "default_branch": "main",
+    "commit": "5ddd7fa66ee900b6783e80089174d2170e46f06f",
+    "pushed_at": "2026-09-19T22:05:38Z",
+    "rank": 14,
+    "commit_date": "2026-09-19T14:00:26Z",
+    "pin_check": {
+     "project_file": true,
+     "source_files": 82,
+     "tree_truncated": false,
+     "passes": true
+    }
+   },
+   {
+    "language": "rust",
+    "repo": "iced-rs/iced",
+    "stars": 31547,
+    "size_kb": 23376,
+    "lang_share": 0.99,
+    "source_files": 372,
+    "default_branch": "master",
+    "commit": "0ef42477fb6fe3e7384baf9e324d9f188bd3a240",
+    "pushed_at": "2026-09-22T23:43:13Z",
+    "rank": 15,
+    "commit_date": "2026-09-23T16:31:49Z",
+    "pin_check": {
+     "project_file": true,
+     "source_files": 372,
+     "tree_truncated": false,
+     "passes": true
+    }
+   },
+   {
+    "language": "rust",
+    "repo": "googleworkspace/cli",
+    "stars": 31112,
+    "size_kb": 10778,
+    "lang_share": 0.99,
+    "source_files": 48,
+    "default_branch": "main",
+    "commit": "a3768d0e82ad83cca2da97724e46bea4ff0e6dbd",
+    "pushed_at": "2026-09-17T21:08:32Z",
+    "rank": 16,
+    "commit_date": "2026-03-31T18:51:15Z",
+    "pin_check": {
+     "project_file": true,
+     "source_files": 48,
+     "tree_truncated": false,
+     "passes": true
+    }
+   },
+   {
+    "language": "rust",
+    "repo": "sharkdp/hyperfine",
+    "stars": 28893,
+    "size_kb": 1997,
+    "lang_share": 0.93,
+    "source_files": 41,
+    "default_branch": "master",
+    "commit": "0d6ade930afc46fccb75f904d8b5e7b1a3dbbeda",
+    "pushed_at": "2026-04-30T08:23:25Z",
+    "rank": 17,
+    "commit_date": "2026-06-01T15:25:13Z",
+    "pin_check": {
+     "project_file": true,
+     "source_files": 41,
+     "tree_truncated": false,
+     "passes": true
+    }
+   },
+   {
+    "language": "rust",
+    "repo": "niri-wm/niri",
+    "stars": 27915,
+    "size_kb": 12279,
+    "lang_share": 0.99,
+    "source_files": 178,
+    "default_branch": "main",
+    "commit": "5f4469b6a992492cf7221b269e9379f42e737649",
+    "pushed_at": "2026-09-22T15:15:23Z",
+    "rank": 18,
+    "commit_date": "2026-09-22T15:04:41Z",
+    "pin_check": {
+     "project_file": true,
+     "source_files": 178,
+     "tree_truncated": false,
+     "passes": true
+    }
+   },
+   {
+    "language": "rust",
+    "repo": "h4ckf0r0day/obscura",
+    "stars": 27756,
+    "size_kb": 21797,
+    "lang_share": 0.95,
+    "source_files": 205,
+    "default_branch": "main",
+    "commit": "0e17221dbb557dad6a4ba88c358d9d6da978ccfe",
+    "pushed_at": "2026-09-20T23:45:55Z",
+    "rank": 19,
+    "commit_date": "2026-09-21T17:39:13Z",
+    "pin_check": {
+     "project_file": true,
+     "source_files": 205,
+     "tree_truncated": false,
+     "passes": true
+    }
+   },
+   {
+    "language": "rust",
+    "repo": "cloudflare/pingora",
+    "stars": 27515,
+    "size_kb": 5747,
+    "lang_share": 1.0,
+    "source_files": 234,
+    "default_branch": "main",
+    "commit": "4487f7b2ab50f159e4a2cf4f6a6b813f61bb6e19",
+    "pushed_at": "2026-09-11T22:39:10Z",
+    "rank": 20,
+    "commit_date": "2026-09-11T22:39:09Z",
+    "pin_check": {
+     "project_file": true,
+     "source_files": 234,
+     "tree_truncated": false,
+     "passes": true
+    }
+   }
+  ],
+  "go": [
+   {
+    "language": "go",
+    "repo": "schollz/croc",
+    "stars": 40421,
+    "size_kb": 12284,
+    "lang_share": 0.63,
+    "source_files": 189,
+    "default_branch": "main",
+    "commit": "5890191be511f9d0e44fc2ccb83c9458ffb86208",
+    "pushed_at": "2026-09-22T16:12:43Z",
+    "rank": 11,
+    "commit_date": "2026-09-22T16:12:42Z",
+    "pin_check": {
+     "project_file": true,
+     "source_files": 189,
+     "tree_truncated": false,
+     "passes": true
+    }
+   },
+   {
+    "language": "go",
+    "repo": "evanw/esbuild",
+    "stars": 40067,
+    "size_kb": 20899,
+    "lang_share": 0.76,
+    "source_files": 157,
+    "default_branch": "main",
+    "commit": "f6058f8364fe7ab91ca57a83e02577ed74c9cae4",
+    "pushed_at": "2026-08-09T17:20:12Z",
+    "rank": 12,
+    "commit_date": "2026-08-09T17:17:12Z",
+    "pin_check": {
+     "project_file": true,
+     "source_files": 157,
+     "tree_truncated": false,
+     "passes": true
+    }
+   },
+   {
+    "language": "go",
+    "repo": "go-gorm/gorm",
+    "stars": 39964,
+    "size_kb": 4826,
+    "lang_share": 1.0,
+    "source_files": 162,
+    "default_branch": "master",
+    "commit": "b3d3bf219f0283f8e2e985bac509cb643170f729",
+    "pushed_at": "2026-09-14T16:21:15Z",
+    "rank": 13,
+    "commit_date": "2026-09-14T16:21:15Z",
+    "pin_check": {
+     "project_file": true,
+     "source_files": 162,
+     "tree_truncated": false,
+     "passes": true
+    }
+   },
+   {
+    "language": "go",
+    "repo": "SagerNet/sing-box",
+    "stars": 38226,
+    "size_kb": 28290,
+    "lang_share": 0.98,
+    "source_files": 1154,
+    "default_branch": "testing",
+    "commit": "0d91c4547921a7b72e9c9913e2bc6f3a556801e2",
+    "pushed_at": "2026-09-23T06:01:17Z",
+    "rank": 14,
+    "commit_date": "2026-09-22T01:51:17Z",
+    "pin_check": {
+     "project_file": true,
+     "source_files": 1154,
+     "tree_truncated": false,
+     "passes": true
+    }
+   },
+   {
+    "language": "go",
+    "repo": "docker/compose",
+    "stars": 38209,
+    "size_kb": 29127,
+    "lang_share": 0.99,
+    "source_files": 355,
+    "default_branch": "main",
+    "commit": "c6dffb26bdfd94efb1f4e1c743f1241a150d120a",
+    "pushed_at": "2026-09-22T12:45:24Z",
+    "rank": 15,
+    "commit_date": "2026-09-23T14:12:52Z",
+    "pin_check": {
+     "project_file": true,
+     "source_files": 355,
+     "tree_truncated": false,
+     "passes": true
+    }
+   },
+   {
+    "language": "go",
+    "repo": "zeromicro/go-zero",
+    "stars": 33346,
+    "size_kb": 33274,
+    "lang_share": 0.97,
+    "source_files": 1021,
+    "default_branch": "master",
+    "commit": "5b1b5bdc3adcc189b3bd8b77f2cc8a363ec3374c",
+    "pushed_at": "2026-09-22T01:31:38Z",
+    "rank": 16,
+    "commit_date": "2026-09-22T01:28:37Z",
+    "pin_check": {
+     "project_file": true,
+     "source_files": 1021,
+     "tree_truncated": false,
+     "passes": true
+    }
+   },
+   {
+    "language": "go",
+    "repo": "labstack/echo",
+    "stars": 32726,
+    "size_kb": 6705,
+    "lang_share": 1.0,
+    "source_files": 104,
+    "default_branch": "master",
+    "commit": "3d084be9022432c5a5257924c7d74bfc3444b456",
+    "pushed_at": "2026-09-21T04:33:17Z",
+    "rank": 17,
+    "commit_date": "2026-09-21T04:33:17Z",
+    "pin_check": {
+     "project_file": true,
+     "source_files": 104,
+     "tree_truncated": false,
+     "passes": true
+    }
+   },
+   {
+    "language": "go",
+    "repo": "beego/beego",
+    "stars": 32425,
+    "size_kb": 12067,
+    "lang_share": 1.0,
+    "source_files": 363,
+    "default_branch": "master",
+    "commit": "939cfde380bb9f15844ad633b84f037f7da21584",
+    "pushed_at": "2026-09-23T01:42:16Z",
+    "rank": 18,
+    "commit_date": "2026-03-09T09:07:18Z",
+    "pin_check": {
+     "project_file": true,
+     "source_files": 363,
+     "tree_truncated": false,
+     "passes": true
+    }
+   },
+   {
+    "language": "go",
+    "repo": "iawia002/lux",
+    "stars": 31693,
+    "size_kb": 2566,
+    "lang_share": 0.86,
+    "source_files": 122,
+    "default_branch": "master",
+    "commit": "dd00f6d258d80b6684a0b9402d7124e5c18ef42f",
+    "pushed_at": "2026-03-29T18:18:56Z",
+    "rank": 19,
+    "commit_date": "2025-12-29T05:52:01Z",
+    "pin_check": {
+     "project_file": true,
+     "source_files": 122,
+     "tree_truncated": false,
+     "passes": true
+    }
+   },
+   {
+    "language": "go",
+    "repo": "abiosoft/colima",
+    "stars": 30948,
+    "size_kb": 3288,
+    "lang_share": 0.98,
+    "source_files": 113,
+    "default_branch": "main",
+    "commit": "bba803d3d6fa9372a60f747e5dad4c8e80db7cde",
+    "pushed_at": "2026-09-23T03:49:48Z",
+    "rank": 20,
+    "commit_date": "2026-09-23T03:49:48Z",
+    "pin_check": {
+     "project_file": true,
+     "source_files": 113,
+     "tree_truncated": false,
+     "passes": true
+    }
+   }
+  ]
+ }
+}

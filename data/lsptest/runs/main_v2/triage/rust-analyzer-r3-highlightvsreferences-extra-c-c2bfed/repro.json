@@ -1,0 +1,142 @@
+{
+ "format": 1,
+ "campaign": "main_v2",
+ "vid": "142f3ee23060-v00",
+ "run_id": "142f3ee23060",
+ "oracle": "r3_routes",
+ "server": {
+  "kind": "rust-analyzer",
+  "version": "2026-09-21"
+ },
+ "project": {
+  "name": "cloudflare/pingora@4487f7b2ab50",
+  "source": "corpus",
+  "ref": "temp/corpus/cloudflare__pingora@4487f7b2ab50",
+  "commit": "4487f7b2ab50f159e4a2cf4f6a6b813f61bb6e19",
+  "language": "rust"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "pingora-core/src/connectors/l4.rs",
+    "positions": [],
+    "ends": [],
+    "names": []
+   },
+   {
+    "path": "pingora-core/src/protocols/tls/boringssl_openssl/mod.rs",
+    "positions": [],
+    "ends": [],
+    "names": []
+   },
+   {
+    "path": "pingora-proxy/examples/connection_filter.rs",
+    "positions": [
+     [
+      15,
+      13
+     ]
+    ],
+    "ends": [],
+    "names": [
+     ""
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "highlightVsReferences",
+  "path": "pingora-proxy/examples/connection_filter.rs",
+  "line": 15,
+  "character": 13,
+  "extra": ""
+ },
+ "ops": [],
+ "case": {
+  "path": "pingora-proxy/examples/connection_filter.rs",
+  "pos": [
+   15,
+   13
+  ],
+  "sub": "c"
+ },
+ "shape": "highlightVsReferences:extra",
+ "signature": "rust-analyzer|r3_routes|highlightVsReferences:extra",
+ "expected": [
+  [
+   15,
+   10,
+   15,
+   16
+  ]
+ ],
+ "actual": [
+  [
+   15,
+   10,
+   15,
+   16
+  ],
+  [
+   66,
+   19,
+   66,
+   24
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "8 references; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 1021s",
+ "violation": {
+  "oracle": "r3_routes",
+  "server": "rust-analyzer-2026-09-21",
+  "project": "cloudflare/pingora@4487f7b2ab50",
+  "key": {
+   "method": "highlightVsReferences",
+   "path": "pingora-proxy/examples/connection_filter.rs",
+   "line": 15,
+   "character": 13,
+   "extra": ""
+  },
+  "expected": [
+   [
+    15,
+    10,
+    15,
+    16
+   ]
+  ],
+  "actual": [
+   [
+    15,
+    10,
+    15,
+    16
+   ],
+   [
+    66,
+    19,
+    66,
+    24
+   ]
+  ],
+  "ops": [],
+  "detail": "{\"case\": {\"path\": \"pingora-proxy/examples/connection_filter.rs\", \"pos\": [15, 13], \"sub\": \"c\"}, \"note\": \"8 references; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 1021s\", \"shape\": \"highlightVsReferences:extra\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "rust-analyzer|r3_routes|highlightVsReferences:extra",
+  "run_id": "142f3ee23060"
+ },
+ "replay_logs": [
+  "logs/rust-analyzer-2026-09-21-trc2bfed-r3-replay-baseline-20261119-012145-e715f6.jsonl.gz",
+  "logs/rust-analyzer-2026-09-21-trc2bfed-r3-replay-control-20261119-012344-7dc935.jsonl.gz"
+ ],
+ "project_files": {},
+ "group": "rust-analyzer-r3-highlightvsreferences-extra-c-c2bfed",
+ "reduced": true
+}

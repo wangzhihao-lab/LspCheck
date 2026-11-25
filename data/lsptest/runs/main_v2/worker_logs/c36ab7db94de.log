@@ -1,0 +1,6 @@
+2026-11-18 03:40:26,821 INFO campaign_run run c36ab7db94de: r5_transforms on rust-analyzer 2026-09-21, cloudflare/pingora@4487f7b2ab50 seed 1 settled, targets ['pingora-cache/src/eviction/async_lru.rs', 'pingora-core/src/protocols/digest.rs', 'pingora-http/src/lib.rs']
+2026-11-18 04:13:18,586 INFO campaign_run run c36ab7db94de: 7 candidate(s) in 1972s; confirming
+2026-11-18 04:20:44,126 INFO flake replay 1/3 of rust-analyzer|r5_transforms|references:result->error:timeout: settled=True control_stable=True reproduced=False (445.5s)
+2026-11-18 04:39:36,900 INFO flake replay 2/3 of rust-analyzer|r5_transforms|references:result->error:timeout: settled=True control_stable=True reproduced=False (745.0s)
+2026-11-18 05:04:09,696 INFO flake replay 3/3 of rust-analyzer|r5_transforms|references:result->error:timeout: settled=False control_stable=False reproduced=False (576.0s)
+2026-11-18 05:04:09,773 INFO campaign_run run c36ab7db94de finished: ok, 0 confirmed of 7 candidate(s), 5023s

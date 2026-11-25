@@ -1,0 +1,75 @@
+{
+ "schema": 1,
+ "id": "rust-analyzer-16858",
+ "meta": {
+  "server": "rust-analyzer",
+  "kind": "rust-analyzer",
+  "number": 16858,
+  "url": "https://github.com/rust-lang/rust-analyzer/issues/16858",
+  "title": "Reserved words in paths are not prepended with 'r#'",
+  "oracle_class": "R4",
+  "subtype": "quickfix",
+  "fix_ref": "rust-lang/rust-analyzer#17037 (internal: improve `TokenSet` implementation and add reserved keywords)",
+  "fix_shas": [
+   "e64610dbbe4183d1e1d25db62e6aed461226f1cd"
+  ],
+  "pre_version": "2024-04-15",
+  "post_version": "2024-04-22",
+  "pre_build": "2024-04-15",
+  "post_build": "2024-04-22",
+  "build_notes": "GitHub release assets rust-analyzer-aarch64-apple-darwin.gz of the weekly tags 2024-04-15 and 2024-04-22; git tag --contains puts the fix first in 2024-04-22. The sysroot is the local rustup toolchain (rustc 1.98.1).",
+  "effort_minutes": 6,
+  "notes": "Paths built by auto-import printed module names that are reserved keywords (priv, a keyword reserved for future use) without the r# prefix; the fix adds the reserved keywords to the keyword set used when printing names."
+ },
+ "language": "rust",
+ "settings": {},
+ "settings_note": "The issue names no settings; the session keeps checkOnSave off (native analysis only).",
+ "session": {
+  "settle_timeout_s": 240,
+  "request_timeout_s": 60,
+  "pull_diagnostics": false
+ },
+ "files": [
+  {
+   "path": "src/main.rs",
+   "provenance": "scaffold",
+   "source": "",
+   "note": "the issue describes the setup in words only (modules named with reserved words such as priv, used through r#priv, auto-imported); a module r#priv with a struct S used unqualified in main"
+  },
+  {
+   "path": "Cargo.toml",
+   "provenance": "scaffold",
+   "source": "",
+   "note": "a binary crate around the snippet (package name, version, edition 2021)"
+  }
+ ],
+ "repro": {
+  "attempt": 1,
+  "timing": "settled",
+  "steps": "Open src/main.rs. S is used unqualified in main (line 5, character 12); apply the auto-import assist (Import ...). Reported: the imported path names the module 'priv' instead of 'r#priv'. Probe: the edited text must have no parse error that the original did not have.",
+  "ops": [
+   {
+    "kind": "open",
+    "path": "src/main.rs"
+   }
+  ],
+  "probe": {
+   "type": "edit_breaks_syntax",
+   "params": {
+    "edit": {
+     "via": "code_action",
+     "path": "src/main.rs",
+     "range": [
+      5,
+      12,
+      5,
+      12
+     ],
+     "title_re": "^Import",
+     "missing": "invalid"
+    }
+   }
+  }
+ },
+ "attempts": []
+}

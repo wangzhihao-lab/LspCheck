@@ -1,0 +1,3 @@
+2026-11-18 00:54:23,417 INFO campaign_run run 919444063cdd: r4_edits on ts7 7.0.2, vadimdemedes/ink@02ae1e59e7c2 seed 1 settled, targets ['src/components/FocusContext.ts', 'src/dom.ts', 'test/colon-colors.tsx']
+2026-11-18 00:55:33,726 INFO campaign_run run 919444063cdd: 0 candidate(s) in 70s; confirming
+2026-11-18 00:55:33,729 INFO campaign_run run 919444063cdd finished: ok, 0 confirmed of 0 candidate(s), 70s

@@ -1,0 +1,6 @@
+2026-09-24 06:45:06,195 INFO campaign_run run b1a9a41b1d9f: r1_history on gopls v0.23.0, nektos/act@4f411281417e seed 1 settled, targets ['pkg/container/docker_auth.go', 'pkg/container/docker_network.go', 'pkg/runner/step_action_remote.go']
+2026-09-24 06:53:38,464 INFO campaign_run run b1a9a41b1d9f: 7 candidate(s) in 512s; confirming
+2026-09-24 06:54:43,213 INFO flake replay 1/3 of gopls|r1_history|completion:extra: settled=True control_stable=True reproduced=False (64.7s)
+2026-09-24 06:55:46,608 INFO flake replay 2/3 of gopls|r1_history|completion:extra: settled=True control_stable=True reproduced=False (63.4s)
+2026-09-24 06:56:56,065 INFO flake replay 3/3 of gopls|r1_history|completion:extra: settled=True control_stable=True reproduced=True (69.5s)
+2026-09-24 06:56:56,069 INFO campaign_run run b1a9a41b1d9f finished: ok, 0 confirmed of 7 candidate(s), 710s

@@ -1,0 +1,42 @@
+{
+ "vid": "96275a6b746e-v00",
+ "ops_before": 3,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 2,
+ "cache_hits": 0,
+ "reduce_seconds": 3.95,
+ "budget_exhausted": false,
+ "probe_log": [
+  [
+   2,
+   false
+  ],
+  [
+   2,
+   false
+  ]
+ ],
+ "logs": [
+  "ts6-6.0.3-tr7b3f3b-r4-replay-baseline-20260925-191917-66cdfb.jsonl.gz",
+  "ts6-6.0.3-tr7b3f3b-r4-replay-case-20260925-191907-47a093.jsonl.gz",
+  "ts6-6.0.3-tr7b3f3b-r4-replay-control-20260925-191922-9c3b85.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [],
+  "actual": [
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2678",
+    "typescript",
+    "Type '\"SUBSCRIBE_IN_MIDDLE\"' is not comparable to type '\"UNSUBSCRIBE_IN_MIDDLE\"'."
+   ]
+  ]
+ },
+ "ops_after": 3,
+ "total_seconds": 80.7
+}

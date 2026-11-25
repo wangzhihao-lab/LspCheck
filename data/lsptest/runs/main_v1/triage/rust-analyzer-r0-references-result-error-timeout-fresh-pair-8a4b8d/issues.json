@@ -1,0 +1,91 @@
+{
+ "queries": [
+  "exception in:title repo:rust-lang/rust-analyzer is:issue",
+  "references hang repo:rust-lang/rust-analyzer is:issue",
+  "references exception repo:rust-lang/rust-analyzer is:issue"
+ ],
+ "matches": [
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 18428,
+   "title": "codeAction/resolve throws an exception for a code action without `data`",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/18428",
+   "state": "open",
+   "created": "2024-10-28",
+   "comments": 0,
+   "query": "exception in:title repo:rust-lang/rust-analyzer is:issue"
+  },
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 9154,
+   "title": "How to stop reporting `missing-unsafe` errors in embedded exceptions",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/9154",
+   "state": "closed",
+   "created": "2021-06-06",
+   "comments": 2,
+   "query": "exception in:title repo:rust-lang/rust-analyzer is:issue"
+  },
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 8057,
+   "title": "Exception when loading the VSCode plugin",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/8057",
+   "state": "closed",
+   "created": "2021-03-16",
+   "comments": 25,
+   "query": "exception in:title repo:rust-lang/rust-analyzer is:issue"
+  },
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 20443,
+   "title": "New trait solver migration issues",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/20443",
+   "state": "closed",
+   "created": "2025-08-13",
+   "comments": 43,
+   "query": "references hang repo:rust-lang/rust-analyzer is:issue"
+  },
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 10910,
+   "title": "Stuck at 'rust_analyzer: -32801: waiting for cargo metadata or cargo check'",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/10910",
+   "state": "closed",
+   "created": "2021-12-03",
+   "comments": 44,
+   "query": "references hang repo:rust-lang/rust-analyzer is:issue"
+  },
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 11933,
+   "title": "rust-analyzer in VS Code will stick in the save action for a long time",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/11933",
+   "state": "closed",
+   "created": "2022-04-08",
+   "comments": 17,
+   "query": "references hang repo:rust-lang/rust-analyzer is:issue"
+  },
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 6568,
+   "title": "'Find all references' hangs forever",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/6568",
+   "state": "closed",
+   "created": "2020-11-17",
+   "comments": 5,
+   "query": "references hang repo:rust-lang/rust-analyzer is:issue"
+  },
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 12552,
+   "title": "Opening VSCode with RA in a Rust mono repo causes entire system to hang for multiple minutes",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/12552",
+   "state": "closed",
+   "created": "2022-06-16",
+   "comments": 3,
+   "query": "references hang repo:rust-lang/rust-analyzer is:issue"
+  }
+ ],
+ "notes": [],
+ "authenticated": true
+}

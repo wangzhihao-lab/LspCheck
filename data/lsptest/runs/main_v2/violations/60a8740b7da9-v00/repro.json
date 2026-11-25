@@ -1,0 +1,494 @@
+{
+ "format": 1,
+ "campaign": "main_v2",
+ "vid": "60a8740b7da9-v00",
+ "run_id": "60a8740b7da9",
+ "oracle": "r3_routes",
+ "server": {
+  "kind": "pyright",
+  "version": "1.1.414"
+ },
+ "project": {
+  "name": "ultralytics/yolov5@402e17ddf820",
+  "source": "corpus",
+  "ref": "temp/corpus/ultralytics__yolov5@402e17ddf820",
+  "commit": "402e17ddf820996f51a191cbb798376e1144f069",
+  "language": "python"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "segment/val.py",
+    "positions": [
+     [
+      42,
+      14
+     ],
+     [
+      43,
+      14
+     ],
+     [
+      63,
+      32
+     ],
+     [
+      84,
+      62
+     ],
+     [
+      156,
+      54
+     ],
+     [
+      192,
+      46
+     ],
+     [
+      206,
+      22
+     ],
+     [
+      250,
+      14
+     ],
+     [
+      286,
+      71
+     ],
+     [
+      316,
+      49
+     ],
+     [
+      330,
+      26
+     ],
+     [
+      397,
+      17
+     ]
+    ],
+    "ends": [
+     [
+      42,
+      16
+     ],
+     [
+      43,
+      18
+     ],
+     [
+      63,
+      40
+     ],
+     [
+      84,
+      64
+     ],
+     [
+      156,
+      57
+     ],
+     [
+      192,
+      51
+     ],
+     [
+      206,
+      33
+     ],
+     [
+      250,
+      16
+     ],
+     [
+      286,
+      72
+     ],
+     [
+      316,
+      52
+     ],
+     [
+      330,
+      30
+     ],
+     [
+      397,
+      23
+     ]
+    ],
+    "names": [
+     "yolo",
+     "general",
+     "output_to_target",
+     "path",
+     "device",
+     "batch_size",
+     "mask_downsample_ratio",
+     "loss",
+     "si",
+     "masks",
+     "results",
+     "add_argument"
+    ]
+   },
+   {
+    "path": "utils/__init__.py",
+    "positions": [
+     [
+      5,
+      19
+     ],
+     [
+      5,
+      61
+     ],
+     [
+      10,
+      7
+     ],
+     [
+      24,
+      38
+     ],
+     [
+      33,
+      9
+     ],
+     [
+      33,
+      17
+     ],
+     [
+      33,
+      28
+     ],
+     [
+      33,
+      40
+     ],
+     [
+      34,
+      17
+     ],
+     [
+      35,
+      28
+     ],
+     [
+      44,
+      13
+     ],
+     [
+      45,
+      14
+     ]
+    ],
+    "ends": [
+     [
+      5,
+      22
+     ],
+     [
+      5,
+      65
+     ],
+     [
+      10,
+      10
+     ],
+     [
+      24,
+      42
+     ],
+     [
+      33,
+      11
+     ],
+     [
+      33,
+      20
+     ],
+     [
+      33,
+      35
+     ],
+     [
+      33,
+      43
+     ],
+     [
+      34,
+      20
+     ],
+     [
+      35,
+      32
+     ],
+     [
+      44,
+      15
+     ],
+     [
+      45,
+      18
+     ]
+    ],
+    "names": [
+     "utils",
+     "threaded",
+     "LOGGER",
+     "install",
+     "ram",
+     "psutil",
+     "virtual_memory",
+     "total",
+     "_used",
+     "suppress",
+     "info",
+     "display"
+    ]
+   },
+   {
+    "path": "utils/loggers/clearml/hpo.py",
+    "positions": [
+     [
+      6,
+      18
+     ],
+     [
+      19,
+      10
+     ],
+     [
+      38,
+      18
+     ],
+     [
+      43,
+      59
+     ],
+     [
+      45,
+      61
+     ],
+     [
+      46,
+      63
+     ],
+     [
+      48,
+      74
+     ],
+     [
+      50,
+      60
+     ],
+     [
+      51,
+      60
+     ],
+     [
+      52,
+      75
+     ],
+     [
+      54,
+      64
+     ],
+     [
+      58,
+      15
+     ]
+    ],
+    "ends": [
+     [
+      6,
+      23
+     ],
+     [
+      19,
+      16
+     ],
+     [
+      38,
+      29
+     ],
+     [
+      43,
+      64
+     ],
+     [
+      45,
+      66
+     ],
+     [
+      46,
+      68
+     ],
+     [
+      48,
+      79
+     ],
+     [
+      50,
+      65
+     ],
+     [
+      51,
+      65
+     ],
+     [
+      52,
+      80
+     ],
+     [
+      54,
+      69
+     ],
+     [
+      58,
+      27
+     ]
+    ],
+    "names": [
+     "automation",
+     "base_task_id",
+     "UniformParameterRange",
+     "min_value",
+     "min_value",
+     "min_value",
+     "max_value",
+     "min_value",
+     "min_value",
+     "max_value",
+     "min_value",
+     "objective_metric_series"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "definitionConsistency",
+  "path": "segment/train.py",
+  "line": 430,
+  "character": 25,
+  "extra": "from:segment/val.py:192:46"
+ },
+ "ops": [],
+ "case": {
+  "loc": [
+   "segment/train.py",
+   430,
+   20,
+   430,
+   30
+  ],
+  "sub": "d",
+  "target": [
+   "segment/val.py",
+   192,
+   46
+  ]
+ },
+ "shape": "definitionConsistency:missing",
+ "signature": "pyright|r3_routes|definitionConsistency:missing",
+ "expected": [
+  [
+   "segment/val.py",
+   106,
+   4,
+   106,
+   17
+  ],
+  [
+   "segment/val.py",
+   166,
+   12,
+   166,
+   22
+  ],
+  [
+   "segment/val.py",
+   170,
+   16,
+   170,
+   26
+  ]
+ ],
+ "actual": [
+  [
+   "segment/val.py",
+   106,
+   4,
+   106,
+   17
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "flake 3/3 [r1:SCR r2:SCR r3:SCR] in 41s",
+ "violation": {
+  "oracle": "r3_routes",
+  "server": "pyright-1.1.414",
+  "project": "ultralytics/yolov5@402e17ddf820",
+  "key": {
+   "method": "definitionConsistency",
+   "path": "segment/train.py",
+   "line": 430,
+   "character": 25,
+   "extra": "from:segment/val.py:192:46"
+  },
+  "expected": [
+   [
+    "segment/val.py",
+    106,
+    4,
+    106,
+    17
+   ],
+   [
+    "segment/val.py",
+    166,
+    12,
+    166,
+    22
+   ],
+   [
+    "segment/val.py",
+    170,
+    16,
+    170,
+    26
+   ]
+  ],
+  "actual": [
+   [
+    "segment/val.py",
+    106,
+    4,
+    106,
+    17
+   ]
+  ],
+  "ops": [],
+  "detail": "{\"case\": {\"loc\": [\"segment/train.py\", 430, 20, 430, 30], \"sub\": \"d\", \"target\": [\"segment/val.py\", 192, 46]}, \"note\": \"flake 3/3 [r1:SCR r2:SCR r3:SCR] in 41s\", \"shape\": \"definitionConsistency:missing\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "pyright|r3_routes|definitionConsistency:missing",
+  "run_id": "60a8740b7da9"
+ },
+ "replay_logs": [
+  "logs/pyright-1.1.414-60a8740b7da9-r3-replay-baseline-20261118-115359-acfd38.jsonl.gz",
+  "logs/pyright-1.1.414-60a8740b7da9-r3-replay-control-20261118-115406-d494b2.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

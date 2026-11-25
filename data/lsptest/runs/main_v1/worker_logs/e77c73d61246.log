@@ -1,0 +1,3 @@
+2026-09-23 20:36:49,166 INFO campaign_run run e77c73d61246: r0_crash on pyright 1.1.414, TheAlgorithms/Python@60cea20f8537 seed 1 settled, targets ['boolean_algebra/multiplexer.py', 'maths/special_numbers/armstrong_numbers.py', 'strings/palindrome.py']
+2026-09-23 20:37:12,620 INFO campaign_run run e77c73d61246: 0 candidate(s) in 24s; confirming
+2026-09-23 20:37:12,621 INFO campaign_run run e77c73d61246 finished: ok, 0 confirmed of 0 candidate(s), 24s

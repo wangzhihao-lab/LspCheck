@@ -1,0 +1,9 @@
+2026-09-23 12:18:49,464 INFO campaign_run run c8e7d09749c2: r0_crash on rust-analyzer 2025-12-08, rust-analyzer-21173 seed 1 settled, targets ['src/lib.rs']
+2026-09-23 12:19:22,839 INFO campaign_run run c8e7d09749c2: 21 candidate(s) in 33s; confirming
+2026-09-23 12:19:49,264 INFO flake replay 1/3 of rust-analyzer|r0_crash|codeAction:result->error:-32603: settled=True control_stable=True reproduced=True (26.4s)
+2026-09-23 12:20:15,687 INFO flake replay 2/3 of rust-analyzer|r0_crash|codeAction:result->error:-32603: settled=True control_stable=True reproduced=True (26.4s)
+2026-09-23 12:20:42,585 INFO flake replay 3/3 of rust-analyzer|r0_crash|codeAction:result->error:-32603: settled=True control_stable=True reproduced=True (26.9s)
+2026-09-23 12:21:20,033 INFO flake replay 1/3 of rust-analyzer|r0_crash|diagnostics:result->error:-32603: settled=True control_stable=True reproduced=True (37.4s)
+2026-09-23 12:22:29,897 INFO flake replay 2/3 of rust-analyzer|r0_crash|diagnostics:result->error:-32603: settled=True control_stable=True reproduced=True (69.9s)
+2026-09-23 12:23:10,755 INFO flake replay 3/3 of rust-analyzer|r0_crash|diagnostics:result->error:-32603: settled=True control_stable=True reproduced=True (40.9s)
+2026-09-23 12:23:10,981 INFO campaign_run run c8e7d09749c2 finished: ok, 2 confirmed of 21 candidate(s), 262s

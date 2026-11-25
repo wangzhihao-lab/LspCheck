@@ -1,0 +1,6 @@
+2026-11-18 06:55:31,624 INFO campaign_run run ed1cade302b4: r3_routes on ts7 7.0.2, hexojs/hexo@751e856691bf seed 1 settled, targets ['lib/extend/helper.ts', 'lib/plugins/generator/page.ts', 'test/scripts/theme_processors/source.ts']
+2026-11-18 06:57:20,693 INFO campaign_run run ed1cade302b4: 3 candidate(s) in 109s; confirming
+2026-11-18 06:57:42,195 INFO flake replay 1/3 of ts7|r3_routes|definitionConsistency:extra: settled=True control_stable=True reproduced=True (21.5s)
+2026-11-18 06:58:07,691 INFO flake replay 2/3 of ts7|r3_routes|definitionConsistency:extra: settled=True control_stable=True reproduced=True (25.5s)
+2026-11-18 06:58:32,489 INFO flake replay 3/3 of ts7|r3_routes|definitionConsistency:extra: settled=True control_stable=True reproduced=True (24.8s)
+2026-11-18 06:58:32,498 INFO campaign_run run ed1cade302b4 finished: ok, 1 confirmed of 3 candidate(s), 181s

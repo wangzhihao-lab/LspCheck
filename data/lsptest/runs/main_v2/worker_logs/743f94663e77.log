@@ -1,0 +1,3 @@
+2026-11-18 20:29:09,504 INFO campaign_run run 743f94663e77: r1_history on rust-analyzer 2026-09-21, yewstack/yew@bfa6c19af971 seed 3 settled, targets ['packages/yew-macro/tests/function_component_attr/mut-ref-props-param-fail.rs', 'packages/yew-macro/tests/hook_attr/hook-const-generic-pass.rs', 'tools/collect-release-info/src/main.rs']
+2026-11-18 20:37:33,728 INFO campaign_run run 743f94663e77: 0 candidate(s) in 504s; confirming
+2026-11-18 20:37:33,728 INFO campaign_run run 743f94663e77 finished: ok, 0 confirmed of 0 candidate(s), 504s

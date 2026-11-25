@@ -1,0 +1,6 @@
+2026-09-24 01:12:10,838 INFO campaign_run run 775a755c313e: r5_transforms on ts6 6.0.3, ChatGPTNextWeb/NextChat@defdcdb55d85 seed 2 settled, targets ['app/command.ts', 'app/components/mask.tsx', 'app/utils/store.ts']
+2026-09-24 01:20:36,149 INFO campaign_run run 775a755c313e: 1 candidate(s) in 505s; confirming
+2026-09-24 01:22:52,487 INFO flake replay 1/3 of ts6|r5_transforms|foldingRange:extra: settled=True control_stable=True reproduced=True (136.3s)
+2026-09-24 01:25:10,517 INFO flake replay 2/3 of ts6|r5_transforms|foldingRange:extra: settled=True control_stable=True reproduced=True (138.0s)
+2026-09-24 01:27:34,256 INFO flake replay 3/3 of ts6|r5_transforms|foldingRange:extra: settled=True control_stable=True reproduced=True (143.7s)
+2026-09-24 01:27:34,286 INFO campaign_run run 775a755c313e finished: ok, 1 confirmed of 1 candidate(s), 924s

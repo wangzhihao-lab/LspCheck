@@ -1,0 +1,3 @@
+{
+ "src/logic/skipValidation.ts": "import type { ValidationModeFlags } from '../types';\n\nexport default (\n  isBlurEvent: boolean,\n  isTouched: boolean,\n  isSubmitted: boolean,\n  reValidateMode: Pick<ValidationModeFlags, 'isOnBlur' | 'isOnChange'>,\n  mode: Partial<ValidationModeFlags>,\n) => {\n  if (mode.isOnAll) {\n    return false;\n  } else if (!isSubmitted && mode.isOnTouch) {\n    return !(isTouched || isBlurEvent);\n  } else if (isSubmitted ? reValidateMode.isOnBlur : mode.isOnBlur) {\n    return !isBlurEvent;\n  } else if (isSubmitted ? reValidateMode.isOnChange : mode.isOnChange) {\n    return isBlurEvent;\n  }\n  return true;\n};\n"
+}

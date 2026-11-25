@@ -1,0 +1,813 @@
+{
+ "format": 1,
+ "campaign": "bench_v1",
+ "vid": "cbb8721f8967-v06",
+ "run_id": "cbb8721f8967",
+ "oracle": "r1_history",
+ "server": {
+  "kind": "rust-analyzer",
+  "version": "2026-07-06"
+ },
+ "project": {
+  "name": "rust-analyzer-10326",
+  "source": "dir",
+  "ref": "data/lsp_bench/cases/rust-analyzer-10326/project",
+  "commit": "",
+  "language": "rust"
+ },
+ "context": {
+  "seed": 3,
+  "timing": "settled",
+  "settle_timeout_s": 240.0,
+  "request_timeout_s": 60.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "src/lib.rs",
+    "positions": [
+     [
+      0,
+      6
+     ],
+     [
+      0,
+      8
+     ],
+     [
+      0,
+      14
+     ],
+     [
+      1,
+      7
+     ],
+     [
+      1,
+      20
+     ],
+     [
+      3,
+      6
+     ],
+     [
+      5,
+      9
+     ],
+     [
+      5,
+      12
+     ],
+     [
+      5,
+      15
+     ],
+     [
+      5,
+      26
+     ],
+     [
+      5,
+      33
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      7
+     ],
+     [
+      0,
+      9
+     ],
+     [
+      0,
+      17
+     ],
+     [
+      1,
+      8
+     ],
+     [
+      1,
+      21
+     ],
+     [
+      3,
+      7
+     ],
+     [
+      5,
+      10
+     ],
+     [
+      5,
+      13
+     ],
+     [
+      5,
+      16
+     ],
+     [
+      5,
+      27
+     ],
+     [
+      5,
+      34
+     ]
+    ],
+    "names": [
+     "A",
+     "T",
+     "Sized",
+     "a",
+     "T",
+     "B",
+     "T",
+     "B",
+     "A",
+     "B",
+     "T"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "diagnostics",
+  "path": "src/lib.rs",
+  "line": -1,
+  "character": -1,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "src/lib.rs"
+  },
+  {
+   "kind": "fs_write",
+   "path": "Cargo.toml",
+   "text": "[package]\nname = \"issue10326\"\nversion = \"0.1.0\"\n"
+  },
+  {
+   "kind": "change",
+   "path": "src/lib.rs",
+   "start": [
+    5,
+    9
+   ],
+   "end": [
+    5,
+    10
+   ],
+   "text": "T_x"
+  },
+  {
+   "kind": "change",
+   "path": "src/lib.rs",
+   "start": [
+    5,
+    9
+   ],
+   "end": [
+    5,
+    12
+   ],
+   "text": "T"
+  },
+  {
+   "kind": "fs_write",
+   "path": "Cargo.toml",
+   "text": "[package]\nname = \"issue10326\"\nversion = \"0.1.0\"\nedition = \"2021\"\n"
+  },
+  {
+   "kind": "fs_write",
+   "path": "Cargo.toml",
+   "text": "[package]\nname = \"issue10326\"\nversion = \"0.1.0\"\n"
+  },
+  {
+   "kind": "fs_write",
+   "path": "Cargo.toml",
+   "text": "[package]\nname = \"issue10326\"\nversion = \"0.1.0\"\nedition = \"2021\"\n"
+  },
+  {
+   "kind": "change",
+   "path": "src/lib.rs",
+   "start": [
+    3,
+    0
+   ],
+   "end": [
+    4,
+    0
+   ]
+  },
+  {
+   "kind": "save",
+   "path": "src/lib.rs"
+  },
+  {
+   "kind": "change",
+   "path": "src/lib.rs",
+   "start": [
+    3,
+    0
+   ],
+   "end": [
+    3,
+    0
+   ],
+   "text": "trait B {}\n"
+  },
+  {
+   "kind": "save",
+   "path": "src/lib.rs"
+  },
+  {
+   "kind": "request",
+   "path": "src/lib.rs",
+   "start": [
+    5,
+    34
+   ],
+   "text": "documentHighlight"
+  },
+  {
+   "kind": "request",
+   "path": "src/lib.rs",
+   "start": [
+    1,
+    20
+   ],
+   "text": "completion"
+  },
+  {
+   "kind": "request",
+   "path": "src/lib.rs",
+   "start": [
+    5,
+    10
+   ],
+   "text": "typeDefinition"
+  },
+  {
+   "kind": "request",
+   "path": "src/lib.rs",
+   "start": [
+    0,
+    8
+   ],
+   "text": "definition"
+  },
+  {
+   "kind": "request",
+   "path": "src/lib.rs",
+   "start": [
+    5,
+    16
+   ],
+   "text": "signatureHelp"
+  },
+  {
+   "kind": "request",
+   "path": "src/lib.rs",
+   "start": [
+    0,
+    9
+   ],
+   "text": "completion"
+  },
+  {
+   "kind": "request",
+   "path": "src/lib.rs",
+   "start": [
+    1,
+    8
+   ],
+   "text": "definition"
+  },
+  {
+   "kind": "request",
+   "path": "src/lib.rs",
+   "start": [
+    0,
+    6
+   ],
+   "text": "typeDefinition"
+  },
+  {
+   "kind": "request",
+   "path": "src/lib.rs",
+   "start": [
+    1,
+    21
+   ],
+   "text": "completion"
+  },
+  {
+   "kind": "request",
+   "path": "src/lib.rs",
+   "start": [
+    0,
+    8
+   ],
+   "text": "typeDefinition"
+  },
+  {
+   "kind": "request",
+   "path": "src/lib.rs",
+   "start": [
+    0,
+    7
+   ],
+   "text": "completion"
+  },
+  {
+   "kind": "request",
+   "path": "src/lib.rs",
+   "start": [
+    3,
+    6
+   ],
+   "text": "typeDefinition"
+  },
+  {
+   "kind": "request",
+   "path": "src/lib.rs",
+   "start": [
+    5,
+    33
+   ],
+   "text": "completion"
+  },
+  {
+   "kind": "request",
+   "path": "src/lib.rs",
+   "start": [
+    1,
+    20
+   ],
+   "text": "typeDefinition"
+  },
+  {
+   "kind": "fs_write",
+   "path": "Cargo.toml",
+   "text": "[package]\nversion = \"0.1.0\"\nedition = \"2021\"\n"
+  },
+  {
+   "kind": "request",
+   "path": "src/lib.rs",
+   "start": [
+    5,
+    15
+   ],
+   "text": "completion"
+  },
+  {
+   "kind": "request",
+   "path": "src/lib.rs",
+   "start": [
+    5,
+    10
+   ],
+   "text": "signatureHelp"
+  },
+  {
+   "kind": "request",
+   "path": "src/lib.rs",
+   "start": [
+    1,
+    7
+   ],
+   "text": "definition"
+  },
+  {
+   "kind": "change",
+   "path": "src/lib.rs",
+   "start": [
+    1,
+    0
+   ],
+   "end": [
+    2,
+    0
+   ]
+  },
+  {
+   "kind": "request",
+   "path": "src/lib.rs",
+   "start": [
+    0,
+    17
+   ],
+   "text": "completion"
+  },
+  {
+   "kind": "fs_write",
+   "path": "Cargo.toml",
+   "text": "[package]\nname = \"issue10326\"\nversion = \"0.1.0\"\nedition = \"2021\"\n"
+  },
+  {
+   "kind": "request",
+   "path": "src/lib.rs",
+   "start": [
+    4,
+    13
+   ],
+   "text": "typeDefinition"
+  },
+  {
+   "kind": "change",
+   "path": "src/lib.rs",
+   "start": [
+    1,
+    0
+   ],
+   "end": [
+    1,
+    0
+   ],
+   "text": "    fn a(&self) -> &T;\n"
+  },
+  {
+   "kind": "fs_rename",
+   "path": "src/lib.rs",
+   "new_path": "src/lib_rt.rs"
+  },
+  {
+   "kind": "fs_rename",
+   "path": "src/lib_rt.rs",
+   "new_path": "src/lib.rs"
+  }
+ ],
+ "case": {
+  "chain_step": 6,
+  "families": [
+   "H9",
+   "H6",
+   "H2",
+   "H8",
+   "H7",
+   "H5"
+  ],
+  "family": "H5",
+  "history_index": 5,
+  "history_seed": 3006,
+  "mode": "chain",
+  "note": "rename src/lib.rs -> src/lib_rt.rs -> back",
+  "seed": 3,
+  "timing": "settled"
+ },
+ "shape": "diagnostics:missing:E0046",
+ "signature": "rust-analyzer|r1_history|diagnostics:missing:E0046",
+ "expected": [
+  [
+   5,
+   15,
+   5,
+   28,
+   1,
+   "E0046",
+   "rust-analyzer",
+   "not all trait items implemented, missing: `fn a`"
+  ]
+ ],
+ "actual": [],
+ "reproduced": "0/3",
+ "note": "H5: rename src/lib.rs -> src/lib_rt.rs -> back; flake 0/3 [r1:SCr r2:SCr r3:SCr] in 275s",
+ "violation": {
+  "oracle": "r1_history",
+  "server": "rust-analyzer-2026-07-06",
+  "project": "rust-analyzer-10326",
+  "key": {
+   "method": "diagnostics",
+   "path": "src/lib.rs",
+   "line": -1,
+   "character": -1,
+   "extra": ""
+  },
+  "expected": [
+   [
+    5,
+    15,
+    5,
+    28,
+    1,
+    "E0046",
+    "rust-analyzer",
+    "not all trait items implemented, missing: `fn a`"
+   ]
+  ],
+  "actual": [],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "src/lib.rs"
+   },
+   {
+    "kind": "fs_write",
+    "path": "Cargo.toml",
+    "text": "[package]\nname = \"issue10326\"\nversion = \"0.1.0\"\n"
+   },
+   {
+    "kind": "change",
+    "path": "src/lib.rs",
+    "start": [
+     5,
+     9
+    ],
+    "end": [
+     5,
+     10
+    ],
+    "text": "T_x"
+   },
+   {
+    "kind": "change",
+    "path": "src/lib.rs",
+    "start": [
+     5,
+     9
+    ],
+    "end": [
+     5,
+     12
+    ],
+    "text": "T"
+   },
+   {
+    "kind": "fs_write",
+    "path": "Cargo.toml",
+    "text": "[package]\nname = \"issue10326\"\nversion = \"0.1.0\"\nedition = \"2021\"\n"
+   },
+   {
+    "kind": "fs_write",
+    "path": "Cargo.toml",
+    "text": "[package]\nname = \"issue10326\"\nversion = \"0.1.0\"\n"
+   },
+   {
+    "kind": "fs_write",
+    "path": "Cargo.toml",
+    "text": "[package]\nname = \"issue10326\"\nversion = \"0.1.0\"\nedition = \"2021\"\n"
+   },
+   {
+    "kind": "change",
+    "path": "src/lib.rs",
+    "start": [
+     3,
+     0
+    ],
+    "end": [
+     4,
+     0
+    ]
+   },
+   {
+    "kind": "save",
+    "path": "src/lib.rs"
+   },
+   {
+    "kind": "change",
+    "path": "src/lib.rs",
+    "start": [
+     3,
+     0
+    ],
+    "end": [
+     3,
+     0
+    ],
+    "text": "trait B {}\n"
+   },
+   {
+    "kind": "save",
+    "path": "src/lib.rs"
+   },
+   {
+    "kind": "request",
+    "path": "src/lib.rs",
+    "start": [
+     5,
+     34
+    ],
+    "text": "documentHighlight"
+   },
+   {
+    "kind": "request",
+    "path": "src/lib.rs",
+    "start": [
+     1,
+     20
+    ],
+    "text": "completion"
+   },
+   {
+    "kind": "request",
+    "path": "src/lib.rs",
+    "start": [
+     5,
+     10
+    ],
+    "text": "typeDefinition"
+   },
+   {
+    "kind": "request",
+    "path": "src/lib.rs",
+    "start": [
+     0,
+     8
+    ],
+    "text": "definition"
+   },
+   {
+    "kind": "request",
+    "path": "src/lib.rs",
+    "start": [
+     5,
+     16
+    ],
+    "text": "signatureHelp"
+   },
+   {
+    "kind": "request",
+    "path": "src/lib.rs",
+    "start": [
+     0,
+     9
+    ],
+    "text": "completion"
+   },
+   {
+    "kind": "request",
+    "path": "src/lib.rs",
+    "start": [
+     1,
+     8
+    ],
+    "text": "definition"
+   },
+   {
+    "kind": "request",
+    "path": "src/lib.rs",
+    "start": [
+     0,
+     6
+    ],
+    "text": "typeDefinition"
+   },
+   {
+    "kind": "request",
+    "path": "src/lib.rs",
+    "start": [
+     1,
+     21
+    ],
+    "text": "completion"
+   },
+   {
+    "kind": "request",
+    "path": "src/lib.rs",
+    "start": [
+     0,
+     8
+    ],
+    "text": "typeDefinition"
+   },
+   {
+    "kind": "request",
+    "path": "src/lib.rs",
+    "start": [
+     0,
+     7
+    ],
+    "text": "completion"
+   },
+   {
+    "kind": "request",
+    "path": "src/lib.rs",
+    "start": [
+     3,
+     6
+    ],
+    "text": "typeDefinition"
+   },
+   {
+    "kind": "request",
+    "path": "src/lib.rs",
+    "start": [
+     5,
+     33
+    ],
+    "text": "completion"
+   },
+   {
+    "kind": "request",
+    "path": "src/lib.rs",
+    "start": [
+     1,
+     20
+    ],
+    "text": "typeDefinition"
+   },
+   {
+    "kind": "fs_write",
+    "path": "Cargo.toml",
+    "text": "[package]\nversion = \"0.1.0\"\nedition = \"2021\"\n"
+   },
+   {
+    "kind": "request",
+    "path": "src/lib.rs",
+    "start": [
+     5,
+     15
+    ],
+    "text": "completion"
+   },
+   {
+    "kind": "request",
+    "path": "src/lib.rs",
+    "start": [
+     5,
+     10
+    ],
+    "text": "signatureHelp"
+   },
+   {
+    "kind": "request",
+    "path": "src/lib.rs",
+    "start": [
+     1,
+     7
+    ],
+    "text": "definition"
+   },
+   {
+    "kind": "change",
+    "path": "src/lib.rs",
+    "start": [
+     1,
+     0
+    ],
+    "end": [
+     2,
+     0
+    ]
+   },
+   {
+    "kind": "request",
+    "path": "src/lib.rs",
+    "start": [
+     0,
+     17
+    ],
+    "text": "completion"
+   },
+   {
+    "kind": "fs_write",
+    "path": "Cargo.toml",
+    "text": "[package]\nname = \"issue10326\"\nversion = \"0.1.0\"\nedition = \"2021\"\n"
+   },
+   {
+    "kind": "request",
+    "path": "src/lib.rs",
+    "start": [
+     4,
+     13
+    ],
+    "text": "typeDefinition"
+   },
+   {
+    "kind": "change",
+    "path": "src/lib.rs",
+    "start": [
+     1,
+     0
+    ],
+    "end": [
+     1,
+     0
+    ],
+    "text": "    fn a(&self) -> &T;\n"
+   },
+   {
+    "kind": "fs_rename",
+    "path": "src/lib.rs",
+    "new_path": "src/lib_rt.rs"
+   },
+   {
+    "kind": "fs_rename",
+    "path": "src/lib_rt.rs",
+    "new_path": "src/lib.rs"
+   }
+  ],
+  "detail": "{\"case\": {\"chain_step\": 6, \"families\": [\"H9\", \"H6\", \"H2\", \"H8\", \"H7\", \"H5\"], \"family\": \"H5\", \"history_index\": 5, \"history_seed\": 3006, \"mode\": \"chain\", \"note\": \"rename src/lib.rs -> src/lib_rt.rs -> back\", \"seed\": 3, \"timing\": \"settled\"}, \"note\": \"H5: rename src/lib.rs -> src/lib_rt.rs -> back; flake 0/3 [r1:SCr r2:SCr r3:SCr] in 275s\", \"shape\": \"diagnostics:missing:E0046\"}",
+  "reproduced": "0/3",
+  "reduced_ops": [],
+  "signature": "rust-analyzer|r1_history|diagnostics:missing:E0046",
+  "run_id": "cbb8721f8967"
+ },
+ "replay_logs": [],
+ "project_files": {},
+ "incomplete": false
+}

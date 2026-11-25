@@ -1,0 +1,44 @@
+{
+ "vid": "0599b23297c7-v00",
+ "ops_before": 0,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 0,
+ "cache_hits": 0,
+ "reduce_seconds": 0.0,
+ "budget_exhausted": false,
+ "probe_log": [],
+ "logs": [
+  "ts7-7.0.2-trfb74d3-r3-replay-baseline-20260925-154918-a80af9.jsonl.gz",
+  "ts7-7.0.2-trfb74d3-r3-replay-control-20260925-154937-466850.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [
+   [
+    "app/store/mask.ts",
+    18,
+    2,
+    18,
+    9
+   ]
+  ],
+  "actual": [
+   [
+    "app/masks/typing.ts",
+    4,
+    2,
+    4,
+    9
+   ],
+   [
+    "app/store/mask.ts",
+    18,
+    2,
+    18,
+    9
+   ]
+  ]
+ },
+ "ops_after": 0,
+ "total_seconds": 153.3
+}

@@ -1,0 +1,3 @@
+2026-11-18 07:43:25,658 INFO campaign_run run f50d95dbf198: r1_history on pyright 1.1.414, FoundationAgents/OpenManus@3309bf4e416f seed 1 race0, targets ['app/agent/mcp.py', 'app/exceptions.py', 'app/tool/crawl4ai.py']
+2026-11-18 07:45:11,889 INFO campaign_run run f50d95dbf198: 0 candidate(s) in 106s; confirming
+2026-11-18 07:45:11,890 INFO campaign_run run f50d95dbf198 finished: ok, 0 confirmed of 0 candidate(s), 106s

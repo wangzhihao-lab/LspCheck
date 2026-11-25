@@ -1,0 +1,92 @@
+{
+ "schema": 1,
+ "id": "rust-analyzer-19758",
+ "meta": {
+  "server": "rust-analyzer",
+  "kind": "rust-analyzer",
+  "number": 19758,
+  "url": "https://github.com/rust-lang/rust-analyzer/issues/19758",
+  "title": "`dbg!` postfix snippet duplicates dereference",
+  "oracle_class": "R4",
+  "subtype": "completion",
+  "fix_ref": "rust-lang/rust-analyzer#19764 (fix: Fix postfix snippets duplicating derefs)",
+  "fix_shas": [
+   "46a31febda49c97c72099d1ee272071994b9715f"
+  ],
+  "pre_version": "2025-05-05",
+  "post_version": "2025-05-12",
+  "pre_build": "2025-05-05",
+  "post_build": "2025-05-12",
+  "build_notes": "GitHub release assets rust-analyzer-aarch64-apple-darwin.gz of the weekly tags 2025-05-05 and 2025-05-12; git tag --contains puts the fix first in 2025-05-12. The sysroot is the local rustup toolchain (rustc 1.98.1).",
+  "effort_minutes": 6,
+  "notes": "Postfix completion on a receiver that starts with a dereference ('*x') replaced only the part after the '*', so the '*' stayed in front of the inserted macro call: '*dbg!(*x)' dereferences twice (a type error that the native diagnostics do not report: i32 cannot be dereferenced). The case uses the specification probe edit_text_differs with the result the issue implies (the receiver replaced by dbg!(*x)).",
+  "candidate_rank": 56
+ },
+ "language": "rust",
+ "settings": {},
+ "settings_note": "The issue names no settings; the session keeps checkOnSave off (native analysis only).",
+ "session": {
+  "settle_timeout_s": 240,
+  "request_timeout_s": 60,
+  "pull_diagnostics": false
+ },
+ "files": [
+  {
+   "path": "src/main.rs",
+   "provenance": "issue",
+   "source": "issue body, 'code snippet to reproduce' block",
+   "note": ""
+  },
+  {
+   "path": "Cargo.toml",
+   "provenance": "scaffold",
+   "source": "",
+   "note": "a binary crate around the snippet (package name, version, edition 2021)"
+  }
+ ],
+ "repro": {
+  "attempt": 1,
+  "timing": "settled",
+  "steps": "Open src/main.rs. Type '.dbg' after '*x' in 'let y = *x;' (line 2, character 14), request completion at the end of '.dbg' and accept the dbg postfix item. Reported: 'let y = *dbg!(*x);'. Probe (specification): the edited src/main.rs must equal the original with 'let y = dbg!(*x);' (the postfix item wraps the whole receiver *x).",
+  "ops": [
+   {
+    "kind": "open",
+    "path": "src/main.rs"
+   },
+   {
+    "kind": "change",
+    "path": "src/main.rs",
+    "start": [
+     2,
+     14
+    ],
+    "end": [
+     2,
+     14
+    ],
+    "text": ".dbg"
+   }
+  ],
+  "probe": {
+   "type": "edit_text_differs",
+   "params": {
+    "edit": {
+     "via": "completion",
+     "path": "src/main.rs",
+     "position": [
+      2,
+      18
+     ],
+     "label_re": "^dbg$",
+     "missing": "invalid"
+    },
+    "expected": {
+     "path": "src/main.rs",
+     "text": "fn main() {\n    let x = &42;\n    let y = dbg!(*x);\n}\n",
+     "source": "issue body (the result without the duplicated dereference: the receiver *x wrapped by dbg!)"
+    }
+   }
+  }
+ },
+ "attempts": []
+}

@@ -1,0 +1,6 @@
+2026-09-23 15:45:53,373 INFO campaign_run run 4ef417928764: r3_routes on ts6 6.0.3, Fission-AI/OpenSpec@f179ed4e4056 seed 1 settled, targets ['src/core/shared/skill-generation.ts', 'src/telemetry/index.ts', 'test/commands/store-git.test.ts']
+2026-09-23 15:49:11,055 INFO campaign_run run 4ef417928764: 13 candidate(s) in 198s; confirming
+2026-09-23 15:49:40,390 INFO flake replay 1/3 of ts6|r3_routes|definitionConsistency:missing: settled=True control_stable=True reproduced=True (29.3s)
+2026-09-23 15:50:18,633 INFO flake replay 2/3 of ts6|r3_routes|definitionConsistency:missing: settled=True control_stable=True reproduced=True (38.2s)
+2026-09-23 15:50:44,958 INFO flake replay 3/3 of ts6|r3_routes|definitionConsistency:missing: settled=True control_stable=True reproduced=True (26.3s)
+2026-09-23 15:50:44,989 INFO campaign_run run 4ef417928764 finished: ok, 1 confirmed of 13 candidate(s), 292s

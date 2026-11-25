@@ -1,0 +1,3 @@
+2026-11-18 20:43:27,795 INFO campaign_run run 9032801e7a9f: r2_handles on pyright 1.1.414, MemPalace/mempalace@c4d3711ee247 seed 2 settled, targets ['benchmarks/test_ollama_ornith_routine.py', 'mempalace/backends/sqlite_exact.py', 'tests/mcp/test_write_tools.py']
+2026-11-18 20:44:23,872 INFO campaign_run run 9032801e7a9f: 0 candidate(s) in 56s; confirming
+2026-11-18 20:44:23,873 INFO campaign_run run 9032801e7a9f finished: ok, 0 confirmed of 0 candidate(s), 56s

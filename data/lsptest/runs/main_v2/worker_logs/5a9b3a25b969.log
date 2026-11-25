@@ -1,0 +1,3 @@
+2026-11-18 15:30:46,908 INFO campaign_run run 5a9b3a25b969: r5_transforms on ts7 7.0.2, hexojs/hexo@751e856691bf seed 2 settled, targets ['lib/hexo/scaffold.ts', 'test/fixtures/post_render.ts', 'test/scripts/tags/blockquote.ts']
+2026-11-18 15:32:43,579 INFO campaign_run run 5a9b3a25b969: 0 candidate(s) in 117s; confirming
+2026-11-18 15:32:43,579 INFO campaign_run run 5a9b3a25b969 finished: ok, 0 confirmed of 0 candidate(s), 117s

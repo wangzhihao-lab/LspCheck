@@ -1,0 +1,76 @@
+{
+ "schema": 1,
+ "id": "tsserver-57497",
+ "meta": {
+  "server": "tsserver",
+  "kind": "tsserver",
+  "number": 57497,
+  "url": "https://github.com/microsoft/TypeScript/issues/57497",
+  "title": "\"Remove unused declaration\" does not work on overloaded function declarations",
+  "oracle_class": "R4",
+  "subtype": "quickfix",
+  "fix_ref": "microsoft/TypeScript#57517 (fix(57497): \"Remove unused declaration\" does not work on overloaded function declarations), 93451e8dd9, 2024-04-19; git tag --contains: first in v5.5-beta / v5.5.2",
+  "fix_shas": [
+   "93451e8dd98c705f1ef9bcb7b2ae606e18badfb1"
+  ],
+  "pre_version": "5.4.5",
+  "post_version": "5.5.2",
+  "pre_build": "5.4.5+tsls4.3.3",
+  "post_build": "5.5.2+tsls4.3.3",
+  "wrapper": "typescript-language-server@4.3.3",
+  "build_notes": "npm typescript@5.4.5 (2024-04-10) and typescript@5.5.2 (2024-06-20), both behind typescript-language-server@4.3.3 (the latest wrapper release before 5.5.2), started with the pinned tsserver.js; the reported TypeScript version is checked on every session.",
+  "candidate_rank": 18,
+  "effort_minutes": 6,
+  "notes": "Only the single quick fix is probed (the fix-all 'Delete all unused declarations' of the same report is not exposed as a per-fix action by the wrapper)."
+ },
+ "language": "typescript",
+ "settings": {},
+ "settings_note": "tsconfig.json is scaffolding for the issue's playground link: noUnusedLocals=true (named in the link and the text) and moduleDetection force (the playground treats every file as a module; in a script file a top-level function is a global and is never reported as unused).",
+ "session": {
+  "settle_timeout_s": 120
+ },
+ "files": [
+  {
+   "path": "index.ts",
+   "provenance": "issue",
+   "source": "issue body, Code block",
+   "note": ""
+  },
+  {
+   "path": "tsconfig.json",
+   "provenance": "scaffold",
+   "source": "",
+   "note": "noUnusedLocals from the issue's playground link; moduleDetection force as in the playground, so the function is a module-local declaration"
+  }
+ ],
+ "repro": {
+  "attempt": 1,
+  "timing": "settled",
+  "steps": "Open index.ts with noUnusedLocals on: foo is reported as declared but never read (TS6133). Apply the quick fix 'Remove unused declaration for: foo'. Reported: only one of the overloads is removed, so the unused diagnostic stays; expected: the whole overloaded declaration is removed. Probe: after the fix, a fresh session on the edited file must neither report the targeted TS6133 nor a new error.",
+  "ops": [
+   {
+    "kind": "open",
+    "path": "index.ts"
+   }
+  ],
+  "probe": {
+   "type": "edit_leaves_diagnostic",
+   "params": {
+    "edit": {
+     "via": "code_action",
+     "path": "index.ts",
+     "diagnostic": {
+      "code": "6133"
+     },
+     "kind": "quickfix",
+     "title_re": "(?i)remove unused declaration",
+     "missing": "invalid"
+    },
+    "target": {
+     "code": "6133"
+    }
+   }
+  }
+ },
+ "attempts": []
+}

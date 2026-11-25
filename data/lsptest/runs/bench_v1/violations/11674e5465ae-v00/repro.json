@@ -1,0 +1,270 @@
+{
+ "format": 1,
+ "campaign": "bench_v1",
+ "vid": "11674e5465ae-v00",
+ "run_id": "11674e5465ae",
+ "oracle": "r1_history",
+ "server": {
+  "kind": "tsserver",
+  "version": "4.7.4+tsls1.1.2"
+ },
+ "project": {
+  "name": "tsserver-49001",
+  "source": "dir",
+  "ref": "data/lsp_bench/cases/tsserver-49001/project",
+  "commit": "",
+  "language": "typescript"
+ },
+ "context": {
+  "seed": 3,
+  "timing": "settled",
+  "settle_timeout_s": 120.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "bar.ts",
+    "positions": [
+     [
+      0,
+      9
+     ],
+     [
+      0,
+      16
+     ],
+     [
+      0,
+      25
+     ],
+     [
+      2,
+      18
+     ],
+     [
+      3,
+      3
+     ],
+     [
+      3,
+      13
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      11
+     ],
+     [
+      0,
+      20
+     ],
+     [
+      0,
+      26
+     ],
+     [
+      2,
+      20
+     ],
+     [
+      3,
+      5
+     ],
+     [
+      3,
+      17
+     ]
+    ],
+    "names": [
+     "type",
+     "SomeType",
+     "x",
+     "Bar",
+     "bar",
+     "SomeType"
+    ]
+   },
+   {
+    "path": "foo.ts",
+    "positions": [
+     [
+      0,
+      10
+     ],
+     [
+      0,
+      17
+     ],
+     [
+      2,
+      7
+     ],
+     [
+      2,
+      12
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      12
+     ],
+     [
+      0,
+      19
+     ],
+     [
+      2,
+      9
+     ],
+     [
+      2,
+      14
+     ]
+    ],
+    "names": [
+     "Bar",
+     "from",
+     "bar",
+     "Bar"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "codeAction",
+  "path": "foo.ts",
+  "line": 2,
+  "character": 6,
+  "extra": "diag:2:9"
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "bar.ts"
+  },
+  {
+   "kind": "open",
+   "path": "foo.ts"
+  },
+  {
+   "kind": "fs_rename",
+   "path": "bar.ts",
+   "new_path": "bar_rt.ts"
+  },
+  {
+   "kind": "close",
+   "path": "foo.ts"
+  },
+  {
+   "kind": "open",
+   "path": "foo.ts"
+  },
+  {
+   "kind": "fs_rename",
+   "path": "bar_rt.ts",
+   "new_path": "bar.ts"
+  }
+ ],
+ "case": {
+  "chain_step": 0,
+  "families": [],
+  "family": "H7",
+  "history_index": 10,
+  "history_seed": 3014,
+  "mode": "fresh",
+  "note": "nest 0>1>2: H5 rename bar.ts -> bar_rt.ts -> back | H3 foo.ts: close, reopen | H8 3 requests in a shuffled order: references@bar.ts:0:20, hover@bar.ts:3:5, definition@bar.ts:0:16",
+  "seed": 3,
+  "timing": "settled"
+ },
+ "shape": "codeAction:missing",
+ "signature": "tsserver|r1_history|codeAction:missing",
+ "expected": [
+  [
+   "Add missing properties",
+   "quickfix"
+  ],
+  [
+   "Remove unused declaration for: 'bar'",
+   "quickfix"
+  ]
+ ],
+ "actual": [
+  [
+   "Remove unused declaration for: 'bar'",
+   "quickfix"
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "H7: nest 0>1>2: H5 rename bar.ts -> bar_rt.ts -> back | H3 foo.ts: close, reopen | H8 3 requests in a shuffled order: references@bar.ts:0:20, hover@bar.ts:3:5, definition@bar.ts:0:16; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 75s",
+ "violation": {
+  "oracle": "r1_history",
+  "server": "tsserver-4.7.4+tsls1.1.2",
+  "project": "tsserver-49001",
+  "key": {
+   "method": "codeAction",
+   "path": "foo.ts",
+   "line": 2,
+   "character": 6,
+   "extra": "diag:2:9"
+  },
+  "expected": [
+   [
+    "Add missing properties",
+    "quickfix"
+   ],
+   [
+    "Remove unused declaration for: 'bar'",
+    "quickfix"
+   ]
+  ],
+  "actual": [
+   [
+    "Remove unused declaration for: 'bar'",
+    "quickfix"
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "bar.ts"
+   },
+   {
+    "kind": "open",
+    "path": "foo.ts"
+   },
+   {
+    "kind": "fs_rename",
+    "path": "bar.ts",
+    "new_path": "bar_rt.ts"
+   },
+   {
+    "kind": "close",
+    "path": "foo.ts"
+   },
+   {
+    "kind": "open",
+    "path": "foo.ts"
+   },
+   {
+    "kind": "fs_rename",
+    "path": "bar_rt.ts",
+    "new_path": "bar.ts"
+   }
+  ],
+  "detail": "{\"case\": {\"chain_step\": 0, \"families\": [], \"family\": \"H7\", \"history_index\": 10, \"history_seed\": 3014, \"mode\": \"fresh\", \"note\": \"nest 0>1>2: H5 rename bar.ts -> bar_rt.ts -> back | H3 foo.ts: close, reopen | H8 3 requests in a shuffled order: references@bar.ts:0:20, hover@bar.ts:3:5, definition@bar.ts:0:16\", \"seed\": 3, \"timing\": \"settled\"}, \"note\": \"H7: nest 0>1>2: H5 rename bar.ts -> bar_rt.ts -> back | H3 foo.ts: close, reopen | H8 3 requests in a shuffled order: references@bar.ts:0:20, hover@bar.ts:3:5, definition@bar.ts:0:16; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 75s\", \"shape\": \"codeAction:missing\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "tsserver|r1_history|codeAction:missing",
+  "run_id": "11674e5465ae"
+ },
+ "replay_logs": [
+  "logs/tsserver-4.7.4+tsls1.1.2-11674e5465ae-replay-baseline-20260925-095905-cc0802.jsonl.gz",
+  "logs/tsserver-4.7.4+tsls1.1.2-11674e5465ae-replay-control-20260925-095905-c4bfe8.jsonl.gz",
+  "logs/tsserver-4.7.4+tsls1.1.2-11674e5465ae-replay-history-20260925-095910-1e889b.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

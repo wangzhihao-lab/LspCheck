@@ -1,0 +1,717 @@
+{
+ "oracle": "r3_routes",
+ "server": "gopls",
+ "version": "v0.23.0",
+ "project": "spf13/cobra@adbc8813901b",
+ "language": "go",
+ "seed": 1,
+ "targets": [
+  {
+   "path": "args_test.go",
+   "positions": [
+    [
+     94,
+     45
+    ],
+    [
+     98,
+     53
+    ],
+    [
+     135,
+     1
+    ],
+    [
+     187,
+     61
+    ],
+    [
+     252,
+     5
+    ],
+    [
+     326,
+     29
+    ],
+    [
+     517,
+     25
+    ],
+    [
+     569,
+     28
+    ]
+   ],
+   "ends": [
+    [
+     94,
+     47
+    ],
+    [
+     98,
+     54
+    ],
+    [
+     135,
+     2
+    ],
+    [
+     187,
+     63
+    ],
+    [
+     252,
+     7
+    ],
+    [
+     326,
+     30
+    ],
+    [
+     517,
+     27
+    ],
+    [
+     569,
+     30
+    ]
+   ],
+   "names": [
+    "got",
+    "T",
+    "c",
+    "true",
+    "err",
+    "t",
+    "fail",
+    "Use"
+   ]
+  },
+  {
+   "path": "flag_groups.go",
+   "positions": [
+    [
+     37,
+     93
+    ],
+    [
+     85,
+     14
+    ],
+    [
+     92,
+     3
+    ],
+    [
+     98,
+     24
+    ],
+    [
+     110,
+     23
+    ],
+    [
+     125,
+     33
+    ],
+    [
+     232,
+     40
+    ],
+    [
+     236,
+     41
+    ]
+   ],
+   "ends": [
+    [
+     37,
+     94
+    ],
+    [
+     85,
+     17
+    ],
+    [
+     92,
+     6
+    ],
+    [
+     98,
+     37
+    ],
+    [
+     110,
+     25
+    ],
+    [
+     125,
+     36
+    ],
+    [
+     232,
+     43
+    ],
+    [
+     236,
+     44
+    ]
+   ],
+   "names": [
+    "v",
+    "Flags",
+    "flags",
+    "validateRequiredFlagGroups",
+    "flag",
+    "group",
+    "string",
+    "pflag"
+   ]
+  }
+ ],
+ "max_cases": 12,
+ "timing": "settled",
+ "result": {
+  "oracle": "r3_routes",
+  "run_id": "r3_routes-gopls-083651",
+  "cases": 78,
+  "invalid_cases": 0,
+  "sessions": 3,
+  "unsettled": 0,
+  "compared": {
+   "semanticTokensRange": 6,
+   "highlightVsReferences": 14,
+   "definitionConsistency": 58
+  },
+  "unstable": {},
+  "seconds": 28.221,
+  "notes": [
+   "(a) not applicable: asked for pull, the server stayed in push"
+  ],
+  "candidates": [
+   {
+    "oracle": "r3_routes",
+    "server": "gopls-v0.23.0",
+    "project": "spf13/cobra@adbc8813901b",
+    "key": {
+     "method": "highlightVsReferences",
+     "path": "args_test.go",
+     "line": 94,
+     "character": 45,
+     "extra": ""
+    },
+    "expected": [
+     [
+      91,
+      1,
+      91,
+      4
+     ],
+     [
+      93,
+      4,
+      93,
+      7
+     ],
+     [
+      94,
+      44,
+      94,
+      47
+     ]
+    ],
+    "actual": [
+     [
+      91,
+      1,
+      91,
+      4
+     ],
+     [
+      93,
+      4,
+      93,
+      7
+     ],
+     [
+      94,
+      29,
+      94,
+      31
+     ],
+     [
+      94,
+      44,
+      94,
+      47
+     ]
+    ],
+    "ops": [],
+    "detail": "{\"case\": {\"path\": \"args_test.go\", \"pos\": [94, 45], \"sub\": \"c\"}, \"note\": \"3 references\", \"shape\": \"highlightVsReferences:extra\"}",
+    "reproduced": "0/0",
+    "reduced_ops": [],
+    "signature": "gopls|r3_routes|highlightVsReferences:extra",
+    "run_id": "r3_routes-gopls-083651"
+   },
+   {
+    "oracle": "r3_routes",
+    "server": "gopls-v0.23.0",
+    "project": "spf13/cobra@adbc8813901b",
+    "key": {
+     "method": "highlightVsReferences",
+     "path": "flag_groups.go",
+     "line": 37,
+     "character": 93,
+     "extra": ""
+    },
+    "expected": [
+     [
+      34,
+      8,
+      34,
+      9
+     ],
+     [
+      35,
+      24,
+      35,
+      25
+     ],
+     [
+      37,
+      93,
+      37,
+      94
+     ],
+     [
+      39,
+      36,
+      39,
+      37
+     ]
+    ],
+    "actual": [
+     [
+      34,
+      8,
+      34,
+      9
+     ],
+     [
+      35,
+      24,
+      35,
+      25
+     ],
+     [
+      37,
+      42,
+      37,
+      44
+     ],
+     [
+      37,
+      93,
+      37,
+      94
+     ],
+     [
+      39,
+      36,
+      39,
+      37
+     ]
+    ],
+    "ops": [],
+    "detail": "{\"case\": {\"path\": \"flag_groups.go\", \"pos\": [37, 93], \"sub\": \"c\"}, \"note\": \"4 references\", \"shape\": \"highlightVsReferences:extra\"}",
+    "reproduced": "0/0",
+    "reduced_ops": [],
+    "signature": "gopls|r3_routes|highlightVsReferences:extra",
+    "run_id": "r3_routes-gopls-083651"
+   }
+  ]
+ },
+ "replays": [
+  {
+   "signature": "gopls|r3_routes|highlightVsReferences:extra",
+   "key": {
+    "method": "highlightVsReferences",
+    "path": "args_test.go",
+    "line": 94,
+    "character": 45,
+    "extra": ""
+   },
+   "outcomes": [
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 8.976,
+     "observed_shape": "highlightVsReferences:extra",
+     "observed_actual": [
+      [
+       91,
+       1,
+       91,
+       4
+      ],
+      [
+       93,
+       4,
+       93,
+       7
+      ],
+      [
+       94,
+       29,
+       94,
+       31
+      ],
+      [
+       94,
+       44,
+       94,
+       47
+      ]
+     ],
+     "observed_expected": [
+      [
+       91,
+       1,
+       91,
+       4
+      ],
+      [
+       93,
+       4,
+       93,
+       7
+      ],
+      [
+       94,
+       44,
+       94,
+       47
+      ]
+     ]
+    },
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 9.018,
+     "observed_shape": "highlightVsReferences:extra",
+     "observed_actual": [
+      [
+       91,
+       1,
+       91,
+       4
+      ],
+      [
+       93,
+       4,
+       93,
+       7
+      ],
+      [
+       94,
+       29,
+       94,
+       31
+      ],
+      [
+       94,
+       44,
+       94,
+       47
+      ]
+     ],
+     "observed_expected": [
+      [
+       91,
+       1,
+       91,
+       4
+      ],
+      [
+       93,
+       4,
+       93,
+       7
+      ],
+      [
+       94,
+       44,
+       94,
+       47
+      ]
+     ]
+    },
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 8.966,
+     "observed_shape": "highlightVsReferences:extra",
+     "observed_actual": [
+      [
+       91,
+       1,
+       91,
+       4
+      ],
+      [
+       93,
+       4,
+       93,
+       7
+      ],
+      [
+       94,
+       29,
+       94,
+       31
+      ],
+      [
+       94,
+       44,
+       94,
+       47
+      ]
+     ],
+     "observed_expected": [
+      [
+       91,
+       1,
+       91,
+       4
+      ],
+      [
+       93,
+       4,
+       93,
+       7
+      ],
+      [
+       94,
+       44,
+       94,
+       47
+      ]
+     ]
+    }
+   ],
+   "reproduced": "3/3"
+  },
+  {
+   "signature": "gopls|r3_routes|highlightVsReferences:extra",
+   "key": {
+    "method": "highlightVsReferences",
+    "path": "flag_groups.go",
+    "line": 37,
+    "character": 93,
+    "extra": ""
+   },
+   "outcomes": [
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 8.785,
+     "observed_shape": "highlightVsReferences:extra",
+     "observed_actual": [
+      [
+       34,
+       8,
+       34,
+       9
+      ],
+      [
+       35,
+       24,
+       35,
+       25
+      ],
+      [
+       37,
+       42,
+       37,
+       44
+      ],
+      [
+       37,
+       93,
+       37,
+       94
+      ],
+      [
+       39,
+       36,
+       39,
+       37
+      ]
+     ],
+     "observed_expected": [
+      [
+       34,
+       8,
+       34,
+       9
+      ],
+      [
+       35,
+       24,
+       35,
+       25
+      ],
+      [
+       37,
+       93,
+       37,
+       94
+      ],
+      [
+       39,
+       36,
+       39,
+       37
+      ]
+     ]
+    },
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 8.618,
+     "observed_shape": "highlightVsReferences:extra",
+     "observed_actual": [
+      [
+       34,
+       8,
+       34,
+       9
+      ],
+      [
+       35,
+       24,
+       35,
+       25
+      ],
+      [
+       37,
+       42,
+       37,
+       44
+      ],
+      [
+       37,
+       93,
+       37,
+       94
+      ],
+      [
+       39,
+       36,
+       39,
+       37
+      ]
+     ],
+     "observed_expected": [
+      [
+       34,
+       8,
+       34,
+       9
+      ],
+      [
+       35,
+       24,
+       35,
+       25
+      ],
+      [
+       37,
+       93,
+       37,
+       94
+      ],
+      [
+       39,
+       36,
+       39,
+       37
+      ]
+     ]
+    },
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 8.823,
+     "observed_shape": "highlightVsReferences:extra",
+     "observed_actual": [
+      [
+       34,
+       8,
+       34,
+       9
+      ],
+      [
+       35,
+       24,
+       35,
+       25
+      ],
+      [
+       37,
+       42,
+       37,
+       44
+      ],
+      [
+       37,
+       93,
+       37,
+       94
+      ],
+      [
+       39,
+       36,
+       39,
+       37
+      ]
+     ],
+     "observed_expected": [
+      [
+       34,
+       8,
+       34,
+       9
+      ],
+      [
+       35,
+       24,
+       35,
+       25
+      ],
+      [
+       37,
+       93,
+       37,
+       94
+      ],
+      [
+       39,
+       36,
+       39,
+       37
+      ]
+     ]
+    }
+   ],
+   "reproduced": "3/3"
+  }
+ ],
+ "total_seconds": 81.4
+}

@@ -1,0 +1,132 @@
+{
+ "schema": 1,
+ "id": "rust-analyzer-21173",
+ "meta": {
+  "server": "rust-analyzer",
+  "kind": "rust-analyzer",
+  "number": 21173,
+  "url": "https://github.com/rust-lang/rust-analyzer/issues/21173",
+  "title": "request handler panicked: cannot find `!BoundConst { var: 0 }`",
+  "oracle_class": "R1",
+  "subtype": "edit-undo",
+  "fix_ref": "rust-lang/rust-analyzer#21235 (fix: resolve const generic param-env panic in type projection)",
+  "fix_shas": [
+   "7d052bdfe02f6c774815acc3576f098749ae976a"
+  ],
+  "pre_version": "2025-12-08",
+  "post_version": "2025-12-15",
+  "pre_build": "2025-12-08",
+  "post_build": "2025-12-15",
+  "build_notes": "GitHub release asset rust-analyzer-aarch64-apple-darwin.gz of the weekly tags 2025-12-08 (0.3.2711, 5e3e9c4e61) and 2025-12-15 (0.3.2719, 87cf6631c6); the fix merged 2025-12-09. The fix passes the real ParamEnv to projected_ty in borrowck (mutability_of_locals, moved_out_of_ref, partially_moved), which the diagnostics use.",
+  "candidate_rank": 2,
+  "effort_minutes": 18,
+  "notes": "Bisected by the reporter to #20974. The panic surfaces as the error response -32603 'request handler panicked' to the request that computes the diagnostics of the file. Headless evidence (attempt 1): the panic is not history-dependent; a fresh session's first diagnostics request already panics, so the case is an error-response bug on a valid program rather than an R1 history bug (the reporter's editor presumably made its first diagnostics request before the crate had loaded)."
+ },
+ "language": "rust",
+ "settings": {},
+ "settings_note": "The reporter's settings (checkOnSave with clippy) are not needed: the panic is in the native diagnostics; the session keeps checkOnSave off.",
+ "session": {
+  "settle_timeout_s": 240,
+  "request_timeout_s": 60,
+  "pull_diagnostics": false
+ },
+ "files": [
+  {
+   "path": "src/lib.rs",
+   "provenance": "issue",
+   "source": "issue body, code snippet to reproduce",
+   "note": ""
+  },
+  {
+   "path": "Cargo.toml",
+   "provenance": "scaffold",
+   "source": "",
+   "note": "a library crate around the snippet (package name, version, edition 2021)"
+  }
+ ],
+ "repro": {
+  "attempt": 2,
+  "timing": "settled",
+  "steps": "The issue's literal steps and symptom: open src/lib.rs, let the server load the crate, make an edit (a whitespace change: insert a space on the blank line of f), then request the file's diagnostics (textDocument/diagnostic, the request the editor makes after an edit). Reported: the error -32603 'request handler panicked: cannot find !BoundConst { var: 0 } in param-env'. The session withholds the pull-diagnostics capability, so settling does not depend on the request under test.",
+  "ops": [
+   {
+    "kind": "open",
+    "path": "src/lib.rs"
+   },
+   {
+    "kind": "change",
+    "path": "src/lib.rs",
+    "start": [
+     13,
+     8
+    ],
+    "end": [
+     13,
+     8
+    ],
+    "text": " "
+   }
+  ],
+  "probe": {
+   "type": "error_response",
+   "params": {
+    "query": {
+     "method": "pull_diagnostics",
+     "path": "src/lib.rs"
+    },
+    "codes": [
+     -32603
+    ]
+   }
+  }
+ },
+ "attempts": [
+  {
+   "attempt": 1,
+   "timing": "settled",
+   "probe": "differs_from_fresh",
+   "summary": "As screened (R1 edit-undo): insert and delete a space, then textDocument/diagnostic compared with fresh sessions on the same text. On 2025-12-08 the case session, the fresh session and the control session all answered -32603 'request handler panicked: cannot find !BoundConst { var: 0 } in param-env' (3/3 runs), so the answers were equal and the probe said absent; on 2025-12-15 all three answered a normal empty report. The panic does not depend on the edit history: in a headless client the first diagnostics request of a fresh session already panics.",
+   "verdict": "not-reproduced-pre",
+   "ops": [
+    {
+     "kind": "open",
+     "path": "src/lib.rs"
+    },
+    {
+     "kind": "change",
+     "path": "src/lib.rs",
+     "start": [
+      13,
+      8
+     ],
+     "end": [
+      13,
+      8
+     ],
+     "text": " "
+    },
+    {
+     "kind": "change",
+     "path": "src/lib.rs",
+     "start": [
+      13,
+      8
+     ],
+     "end": [
+      13,
+      9
+     ],
+     "text": ""
+    }
+   ],
+   "params": {
+    "queries": [
+     {
+      "method": "pull_diagnostics",
+      "path": "src/lib.rs"
+     }
+    ]
+   }
+  }
+ ]
+}

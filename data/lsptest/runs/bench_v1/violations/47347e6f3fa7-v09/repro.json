@@ -1,0 +1,214 @@
+{
+ "format": 1,
+ "campaign": "bench_v1",
+ "vid": "47347e6f3fa7-v09",
+ "run_id": "47347e6f3fa7",
+ "oracle": "r1_history",
+ "server": {
+  "kind": "rust-analyzer",
+  "version": "2025-10-27"
+ },
+ "project": {
+  "name": "rust-analyzer-17525",
+  "source": "dir",
+  "ref": "data/lsp_bench/cases/rust-analyzer-17525/project",
+  "commit": "",
+  "language": "rust"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 240.0,
+  "request_timeout_s": 60.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "src/lib.rs",
+    "positions": [
+     [
+      0,
+      9
+     ],
+     [
+      0,
+      13
+     ],
+     [
+      0,
+      16
+     ],
+     [
+      1,
+      9
+     ],
+     [
+      2,
+      6
+     ],
+     [
+      2,
+      12
+     ],
+     [
+      5,
+      5
+     ],
+     [
+      5,
+      11
+     ],
+     [
+      5,
+      16
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      12
+     ],
+     [
+      0,
+      14
+     ],
+     [
+      0,
+      17
+     ],
+     [
+      1,
+      12
+     ],
+     [
+      2,
+      9
+     ],
+     [
+      2,
+      14
+     ],
+     [
+      5,
+      8
+     ],
+     [
+      5,
+      14
+     ],
+     [
+      5,
+      18
+     ]
+    ],
+    "names": [
+     "Outer",
+     "T",
+     "T",
+     "Inner",
+     "field",
+     "u32",
+     "stuff",
+     "Outer",
+     "Inn"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "typeDefinition",
+  "path": "src/lib.rs",
+  "line": 5,
+  "character": 11,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "src/lib.rs"
+  },
+  {
+   "kind": "fs_rename",
+   "path": "src/lib.rs",
+   "new_path": "src/lib_rt.rs"
+  },
+  {
+   "kind": "fs_rename",
+   "path": "src/lib_rt.rs",
+   "new_path": "src/lib.rs"
+  }
+ ],
+ "case": {
+  "chain_step": 1,
+  "families": [
+   "H5"
+  ],
+  "family": "H5",
+  "history_index": 0,
+  "history_seed": 2002,
+  "mode": "chain",
+  "note": "rename src/lib.rs -> src/lib_rt.rs -> back",
+  "seed": 2,
+  "timing": "settled"
+ },
+ "shape": "typeDefinition:lost",
+ "signature": "rust-analyzer|r1_history|typeDefinition:lost",
+ "expected": [
+  [
+   "src/lib.rs",
+   0,
+   7,
+   0,
+   12
+  ]
+ ],
+ "actual": [],
+ "reproduced": "2/3",
+ "note": "H5: rename src/lib.rs -> src/lib_rt.rs -> back; flake 2/3 [r1:SCR r2:SCR r3:SCr] in 96s",
+ "violation": {
+  "oracle": "r1_history",
+  "server": "rust-analyzer-2025-10-27",
+  "project": "rust-analyzer-17525",
+  "key": {
+   "method": "typeDefinition",
+   "path": "src/lib.rs",
+   "line": 5,
+   "character": 11,
+   "extra": ""
+  },
+  "expected": [
+   [
+    "src/lib.rs",
+    0,
+    7,
+    0,
+    12
+   ]
+  ],
+  "actual": [],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "src/lib.rs"
+   },
+   {
+    "kind": "fs_rename",
+    "path": "src/lib.rs",
+    "new_path": "src/lib_rt.rs"
+   },
+   {
+    "kind": "fs_rename",
+    "path": "src/lib_rt.rs",
+    "new_path": "src/lib.rs"
+   }
+  ],
+  "detail": "{\"case\": {\"chain_step\": 1, \"families\": [\"H5\"], \"family\": \"H5\", \"history_index\": 0, \"history_seed\": 2002, \"mode\": \"chain\", \"note\": \"rename src/lib.rs -> src/lib_rt.rs -> back\", \"seed\": 2, \"timing\": \"settled\"}, \"note\": \"H5: rename src/lib.rs -> src/lib_rt.rs -> back; flake 2/3 [r1:SCR r2:SCR r3:SCr] in 96s\", \"shape\": \"typeDefinition:lost\"}",
+  "reproduced": "2/3",
+  "reduced_ops": [],
+  "signature": "rust-analyzer|r1_history|typeDefinition:lost",
+  "run_id": "47347e6f3fa7"
+ },
+ "replay_logs": [],
+ "project_files": {},
+ "incomplete": false
+}

@@ -1,0 +1,3 @@
+{
+ "app/src/main.tsx": "import React from 'react';\nimport ReactDOM from 'react-dom/client';\nimport App from './app';\n\nconst rootElement = document.getElementById('root')!;\nconst root = ReactDOM.createRoot(rootElement);\nroot.render(<App />);\n"
+}

@@ -1,0 +1,12 @@
+2026-09-25 05:41:37,394 INFO campaign_run run 7fc6a0126bac: r1_history on gopls v0.6.6, gopls-38732 seed 2 settled, targets ['bar.go', 'foo.go']
+2026-09-25 05:48:46,188 INFO campaign_run run 7fc6a0126bac: 4 candidate(s) in 429s; confirming
+2026-09-25 05:49:40,492 INFO flake replay 1/3 of gopls|r1_history|codeAction:key-lost: settled=True control_stable=True reproduced=True (54.3s)
+2026-09-25 05:50:33,698 INFO flake replay 2/3 of gopls|r1_history|codeAction:key-lost: settled=True control_stable=True reproduced=True (53.2s)
+2026-09-25 05:51:27,149 INFO flake replay 3/3 of gopls|r1_history|codeAction:key-lost: settled=True control_stable=True reproduced=True (53.5s)
+2026-09-25 05:52:20,316 INFO flake replay 1/3 of gopls|r1_history|codeAction:error:0->result: settled=True control_stable=True reproduced=True (53.2s)
+2026-09-25 05:53:13,491 INFO flake replay 2/3 of gopls|r1_history|codeAction:error:0->result: settled=True control_stable=True reproduced=True (53.2s)
+2026-09-25 05:54:06,898 INFO flake replay 3/3 of gopls|r1_history|codeAction:error:0->result: settled=True control_stable=True reproduced=True (53.4s)
+2026-09-25 05:55:00,251 INFO flake replay 1/3 of gopls|r1_history|diagnostics:missing:?: settled=True control_stable=True reproduced=True (53.4s)
+2026-09-25 05:55:53,864 INFO flake replay 2/3 of gopls|r1_history|diagnostics:missing:?: settled=True control_stable=True reproduced=True (53.6s)
+2026-09-25 05:56:47,394 INFO flake replay 3/3 of gopls|r1_history|diagnostics:missing:?: settled=True control_stable=True reproduced=True (53.5s)
+2026-09-25 05:56:47,408 INFO campaign_run run 7fc6a0126bac finished: ok, 3 confirmed of 4 candidate(s), 910s

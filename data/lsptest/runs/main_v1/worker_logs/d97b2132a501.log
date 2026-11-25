@@ -1,0 +1,3 @@
+2026-09-24 00:24:37,464 INFO campaign_run run d97b2132a501: r3_routes on ts7 7.0.2, chenglou/pretext@2e5e2bdaee39 seed 2 settled, targets ['pages/justification-check.ts', 'src/generated/line-break-data.ts', 'tests/wrapping/fixtures/corpora.ts']
+2026-09-24 00:26:13,465 INFO campaign_run run d97b2132a501: 15 candidate(s) in 96s; confirming
+2026-09-24 00:26:13,469 INFO campaign_run run d97b2132a501 finished: ok, 0 confirmed of 15 candidate(s), 96s

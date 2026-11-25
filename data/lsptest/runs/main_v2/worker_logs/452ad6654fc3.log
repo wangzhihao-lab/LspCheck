@@ -1,0 +1,3 @@
+2026-11-18 15:22:19,593 INFO campaign_run run 452ad6654fc3: r1_history on rust-analyzer 2026-09-21, casey/just@6119e6aff518 seed 2 settled, targets ['src/item.rs', 'src/reference.rs', 'tests/mapped_dependencies.rs']
+2026-11-18 15:27:17,854 INFO campaign_run run 452ad6654fc3: 0 candidate(s) in 298s; confirming
+2026-11-18 15:27:17,854 INFO campaign_run run 452ad6654fc3 finished: ok, 0 confirmed of 0 candidate(s), 298s

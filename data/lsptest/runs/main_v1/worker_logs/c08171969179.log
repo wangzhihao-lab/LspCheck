@@ -1,0 +1,3 @@
+2026-09-23 20:51:30,690 INFO campaign_run run c08171969179: r0_crash on rust-analyzer 2026-09-21, alacritty/alacritty@d692748d3f61 seed 1 settled, targets ['alacritty/src/config/monitor.rs', 'alacritty_terminal/src/term/mod.rs', 'alacritty_terminal/src/tty/unix.rs']
+2026-09-23 20:58:35,165 INFO campaign_run run c08171969179: 0 candidate(s) in 425s; confirming
+2026-09-23 20:58:35,167 INFO campaign_run run c08171969179 finished: ok, 0 confirmed of 0 candidate(s), 425s

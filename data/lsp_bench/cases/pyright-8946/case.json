@@ -1,0 +1,102 @@
+{
+ "schema": 1,
+ "id": "pyright-8946",
+ "meta": {
+  "server": "pyright",
+  "kind": "pyright",
+  "number": 8946,
+  "url": "https://github.com/microsoft/pyright/issues/8946",
+  "title": "Type error after undo",
+  "oracle_class": "R1",
+  "subtype": "edit-undo",
+  "fix_ref": "edaeab2bc (Mutate sourceFile imports list whenever it changes, #8986), 2024-09-13; git tag --contains: first in 1.1.381",
+  "fix_shas": [],
+  "pre_version": "1.1.380",
+  "post_version": "1.1.381",
+  "pre_build": "1.1.380",
+  "post_build": "1.1.381",
+  "build_notes": "npm pyright@1.1.380 (2024-09-10) and pyright@1.1.381 (2024-09-17). The reporter's last comment says 1.1.380 fixed his case (that was the related #8919); the fix of this mechanism (edaeab2bc) is first in 1.1.381, and the spike reproduced the bug on 1.1.380 and not on 1.1.381.",
+  "candidate_rank": 70,
+  "effort_minutes": 10,
+  "notes": "Converted from the validated state-bug spike (scripts/lsp_repro/cases/pyright_8946.py, 'plain' variant: the verbatim code only; the spike's sentinel line is not part of the issue and is not used). Mechanism from the fix commit: when the new import list is a subset of the old one the sourceFile's import list is not mutated, so restoring the import does not re-register the file in the stub's importedBy list and the stub is collected as unneeded; its symbols stop resolving. Headlessly the restored Pool resolves to Unknown (fewer errors rather than more, the opposite sign of the issue's wording); settling between the delete and the undo is what lets the collection run."
+ },
+ "language": "python",
+ "settings": {},
+ "settings_note": "The issue names no settings (a stand-alone file); the session defaults (basic type checking, open files only) apply.",
+ "session": {
+  "settle_timeout_s": 120
+ },
+ "files": [
+  {
+   "path": "main.py",
+   "provenance": "issue",
+   "source": "issue body, code block ('Save the code below in a file...')",
+   "note": "the file name is not given in the issue; the trailing blank lines of the block are kept"
+  }
+ ],
+ "repro": {
+  "attempt": 1,
+  "timing": "settled",
+  "steps": "Open main.py and let the server analyze it. Remove the line 'from multiprocessing import Pool' (errors appear), then undo the delete, as an editor does, by re-inserting the same line; the server settles after each step. Reported: after the undo, errors stay and Pool is not a recognized type. Probe (R1): hover and definition at the restored Pool use in 'with Pool(workers)' and the diagnostics of main.py must equal those of a fresh session on the same (original) text.",
+  "ops": [
+   {
+    "kind": "open",
+    "path": "main.py"
+   },
+   {
+    "kind": "change",
+    "path": "main.py",
+    "start": [
+     8,
+     0
+    ],
+    "end": [
+     9,
+     0
+    ],
+    "text": ""
+   },
+   {
+    "kind": "change",
+    "path": "main.py",
+    "start": [
+     8,
+     0
+    ],
+    "end": [
+     8,
+     0
+    ],
+    "text": "from multiprocessing import Pool\n"
+   }
+  ],
+  "probe": {
+   "type": "differs_from_fresh",
+   "params": {
+    "queries": [
+     {
+      "method": "hover",
+      "path": "main.py",
+      "position": [
+       17,
+       9
+      ]
+     },
+     {
+      "method": "definition",
+      "path": "main.py",
+      "position": [
+       17,
+       9
+      ]
+     },
+     {
+      "method": "diagnostics",
+      "path": "main.py"
+     }
+    ]
+   }
+  }
+ },
+ "attempts": []
+}

@@ -1,0 +1,491 @@
+{
+ "format": 1,
+ "campaign": "main_v2",
+ "vid": "cfff9199eb49-v00",
+ "run_id": "cfff9199eb49",
+ "oracle": "r1_history",
+ "server": {
+  "kind": "gopls",
+  "version": "v0.23.0"
+ },
+ "project": {
+  "name": "beego/beego@939cfde380bb",
+  "source": "corpus",
+  "ref": "temp/corpus/beego__beego@939cfde380bb",
+  "commit": "939cfde380bb9f15844ad633b84f037f7da21584",
+  "language": "go"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "race0",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "server/web/filter/opentracing/filter.go",
+    "positions": [
+     [
+      33,
+      49
+     ],
+     [
+      41,
+      51
+     ],
+     [
+      46,
+      24
+     ],
+     [
+      51,
+      33
+     ],
+     [
+      60,
+      4
+     ],
+     [
+      63,
+      36
+     ],
+     [
+      66,
+      10
+     ],
+     [
+      67,
+      4
+     ],
+     [
+      67,
+      29
+     ],
+     [
+      69,
+      30
+     ],
+     [
+      69,
+      42
+     ],
+     [
+      77,
+      41
+     ]
+    ],
+    "ends": [
+     [
+      33,
+      51
+     ],
+     [
+      41,
+      55
+     ],
+     [
+      46,
+      30
+     ],
+     [
+      51,
+      37
+     ],
+     [
+      60,
+      6
+     ],
+     [
+      63,
+      38
+     ],
+     [
+      66,
+      13
+     ],
+     [
+      67,
+      6
+     ],
+     [
+      67,
+      31
+     ],
+     [
+      69,
+      32
+     ],
+     [
+      69,
+      46
+     ],
+     [
+      77,
+      48
+     ]
+    ],
+    "names": [
+     "next",
+     "Request",
+     "opentracing",
+     "spanCtx",
+     "span",
+     "ctx",
+     "SetTag",
+     "span",
+     "ctx",
+     "ctx",
+     "GetData",
+     "operationName"
+    ]
+   },
+   {
+    "path": "server/web/template_test.go",
+    "positions": [
+     [
+      33,
+      6
+     ],
+     [
+      63,
+      13
+     ],
+     [
+      64,
+      29
+     ],
+     [
+      85,
+      78
+     ],
+     [
+      146,
+      27
+     ],
+     [
+      226,
+      14
+     ],
+     [
+      242,
+      5
+     ],
+     [
+      249,
+      11
+     ],
+     [
+      266,
+      2
+     ],
+     [
+      273,
+      36
+     ],
+     [
+      282,
+      40
+     ],
+     [
+      329,
+      6
+     ]
+    ],
+    "ends": [
+     [
+      33,
+      9
+     ],
+     [
+      63,
+      14
+     ],
+     [
+      64,
+      33
+     ],
+     [
+      85,
+      80
+     ],
+     [
+      146,
+      37
+     ],
+     [
+      226,
+      23
+     ],
+     [
+      242,
+      6
+     ],
+     [
+      249,
+      15
+     ],
+     [
+      266,
+      3
+     ],
+     [
+      273,
+      38
+     ],
+     [
+      282,
+      43
+     ],
+     [
+      329,
+      9
+     ]
+    ],
+    "names": [
+     "index",
+     "t",
+     "filepath",
+     "nil",
+     "beeViewPathTemplates",
+     "TestTemplateLayout",
+     "f",
+     "writeErr",
+     "t",
+     "name",
+     "string",
+     "Fatal"
+    ]
+   },
+   {
+    "path": "task/governor_command_test.go",
+    "positions": [
+     [
+      43,
+      6
+     ],
+     [
+      46,
+      6
+     ],
+     [
+      57,
+      13
+     ],
+     [
+      57,
+      46
+     ],
+     [
+      68,
+      15
+     ],
+     [
+      69,
+      15
+     ],
+     [
+      73,
+      11
+     ],
+     [
+      74,
+      4
+     ],
+     [
+      75,
+      14
+     ],
+     [
+      86,
+      3
+     ],
+     [
+      107,
+      8
+     ],
+     [
+      109,
+      4
+     ]
+    ],
+    "ends": [
+     [
+      43,
+      7
+     ],
+     [
+      46,
+      7
+     ],
+     [
+      57,
+      18
+     ],
+     [
+      57,
+      50
+     ],
+     [
+      68,
+      16
+     ],
+     [
+      69,
+      16
+     ],
+     [
+      73,
+      14
+     ],
+     [
+      74,
+      7
+     ],
+     [
+      75,
+      15
+     ],
+     [
+      86,
+      5
+     ],
+     [
+      107,
+      10
+     ],
+     [
+      109,
+      7
+     ]
+    ],
+    "names": [
+     "c",
+     "c",
+     "countTask",
+     "Context",
+     "t",
+     "t",
+     "NotNil",
+     "assert",
+     "t",
+     "task",
+     "cmd",
+     "assert"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "completion",
+  "path": "server/web/filter/opentracing/filter.go",
+  "line": 46,
+  "character": 30,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "server/web/filter/opentracing/filter.go"
+  },
+  {
+   "kind": "open",
+   "path": "server/web/template_test.go"
+  },
+  {
+   "kind": "open",
+   "path": "task/governor_command_test.go"
+  },
+  {
+   "kind": "fs_rename",
+   "path": "server/web/filter/opentracing/filter.go",
+   "new_path": "server/web/filter/opentracing/filter_rt.go"
+  },
+  {
+   "kind": "fs_rename",
+   "path": "server/web/filter/opentracing/filter_rt.go",
+   "new_path": "server/web/filter/opentracing/filter.go"
+  }
+ ],
+ "case": {
+  "chain_step": 0,
+  "families": [],
+  "family": "H5",
+  "history_index": 0,
+  "history_seed": 1001,
+  "mode": "fresh",
+  "note": "rename server/web/filter/opentracing/filter.go -> server/web/filter/opentracing/filter_rt.go -> back",
+  "seed": 1,
+  "timing": "race0"
+ },
+ "shape": "completion:missing",
+ "signature": "gopls|r1_history|completion:missing",
+ "expected": [
+  "opentracing",
+  "opentracing.SpanFromContext",
+  "opentracing.StartSpan",
+  "opentracing.StartSpanFromContext",
+  "opentracingKit"
+ ],
+ "actual": [
+  "opentracing",
+  "opentracingKit"
+ ],
+ "reproduced": "0/3",
+ "note": "H5: rename server/web/filter/opentracing/filter.go -> server/web/filter/opentracing/filter_rt.go -> back; flake 0/3 [r1:SCr r2:SCr r3:SCr] in 64s",
+ "violation": {
+  "oracle": "r1_history",
+  "server": "gopls-v0.23.0",
+  "project": "beego/beego@939cfde380bb",
+  "key": {
+   "method": "completion",
+   "path": "server/web/filter/opentracing/filter.go",
+   "line": 46,
+   "character": 30,
+   "extra": ""
+  },
+  "expected": [
+   "opentracing",
+   "opentracing.SpanFromContext",
+   "opentracing.StartSpan",
+   "opentracing.StartSpanFromContext",
+   "opentracingKit"
+  ],
+  "actual": [
+   "opentracing",
+   "opentracingKit"
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "server/web/filter/opentracing/filter.go"
+   },
+   {
+    "kind": "open",
+    "path": "server/web/template_test.go"
+   },
+   {
+    "kind": "open",
+    "path": "task/governor_command_test.go"
+   },
+   {
+    "kind": "fs_rename",
+    "path": "server/web/filter/opentracing/filter.go",
+    "new_path": "server/web/filter/opentracing/filter_rt.go"
+   },
+   {
+    "kind": "fs_rename",
+    "path": "server/web/filter/opentracing/filter_rt.go",
+    "new_path": "server/web/filter/opentracing/filter.go"
+   }
+  ],
+  "detail": "{\"case\": {\"chain_step\": 0, \"families\": [], \"family\": \"H5\", \"history_index\": 0, \"history_seed\": 1001, \"mode\": \"fresh\", \"note\": \"rename server/web/filter/opentracing/filter.go -> server/web/filter/opentracing/filter_rt.go -> back\", \"seed\": 1, \"timing\": \"race0\"}, \"note\": \"H5: rename server/web/filter/opentracing/filter.go -> server/web/filter/opentracing/filter_rt.go -> back; flake 0/3 [r1:SCr r2:SCr r3:SCr] in 64s\", \"shape\": \"completion:missing\"}",
+  "reproduced": "0/3",
+  "reduced_ops": [],
+  "signature": "gopls|r1_history|completion:missing",
+  "run_id": "cfff9199eb49"
+ },
+ "replay_logs": [],
+ "project_files": {},
+ "incomplete": false
+}

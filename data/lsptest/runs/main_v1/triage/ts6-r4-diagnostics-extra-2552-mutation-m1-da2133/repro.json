@@ -1,0 +1,257 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "295e3654bbae-v00",
+ "run_id": "295e3654bbae",
+ "oracle": "r4_edits",
+ "server": {
+  "kind": "ts6",
+  "version": "6.0.3"
+ },
+ "project": {
+  "name": "Fission-AI/OpenSpec@f179ed4e4056",
+  "source": "corpus",
+  "ref": "temp/corpus/Fission-AI__OpenSpec@f179ed4e4056",
+  "commit": "f179ed4e40567cdb56501ee3f4d09efbcb1557b8",
+  "language": "typescript"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "src/core/schemas/index.ts",
+    "positions": [],
+    "ends": [],
+    "names": []
+   },
+   {
+    "path": "src/utils/requirement-diff.ts",
+    "positions": [
+     [
+      34,
+      21
+     ]
+    ],
+    "ends": [],
+    "names": [
+     ""
+    ]
+   },
+   {
+    "path": "test/core/misplaced-delta-files.test.ts",
+    "positions": [],
+    "ends": [],
+    "names": []
+   }
+  ]
+ },
+ "key": {
+  "method": "diagnostics",
+  "path": "src/utils/requirement-diff.ts",
+  "line": 34,
+  "character": 21,
+  "extra": "M1:quickfix-errors:Change spelling to 'foldRequirementName'"
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "src/utils/requirement-diff.ts"
+  },
+  {
+   "kind": "change",
+   "path": "src/utils/requirement-diff.ts",
+   "start": [
+    3,
+    21
+   ],
+   "end": [
+    4,
+    26
+   ]
+  },
+  {
+   "kind": "change",
+   "path": "src/utils/requirement-diff.ts",
+   "start": [
+    34,
+    21
+   ],
+   "end": [
+    34,
+    30
+   ],
+   "text": "fold"
+  }
+ ],
+ "case": {
+  "action_kind": "quickfix",
+  "base_errors": 0,
+  "check": "errors",
+  "diag": {
+   "code": 2552,
+   "message": "Cannot find name 'normalizeRequirementName'. Did you mean 'foldRequirementName'?",
+   "range": {
+    "end": {
+     "character": 45,
+     "line": 34
+    },
+    "start": {
+     "character": 21,
+     "line": 34
+    }
+   },
+   "severity": 1
+  },
+  "fix_introduced_errors": [],
+  "fix_ops": [
+   {
+    "end": [
+     34,
+     30
+    ],
+    "kind": "change",
+    "path": "src/utils/requirement-diff.ts",
+    "start": [
+     34,
+     21
+    ],
+    "text": "fold"
+   }
+  ],
+  "kind": "mutation",
+  "mutation": {
+   "end": [
+    4,
+    26
+   ],
+   "id": "M1",
+   "offsets": [
+    127,
+    155
+   ],
+   "sha": "7b6caa38bd653d99",
+   "start": [
+    3,
+    21
+   ],
+   "text": "",
+   "what": "remove 'normalizeRequirementName' from an import"
+  },
+  "n_fix_ops": 1,
+  "path": "src/utils/requirement-diff.ts",
+  "post_errors": 2,
+  "title": "Change spelling to 'foldRequirementName'",
+  "via": "edit"
+ },
+ "shape": "diagnostics:extra:2552",
+ "signature": "ts6|r4_edits|diagnostics:extra:2552",
+ "expected": [],
+ "actual": [
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "2552",
+   "typescript",
+   "Cannot find name 'normalizeRequirementName'. Did you mean 'foldRequirementName'?"
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "2552",
+   "typescript",
+   "Cannot find name 'normalizeRequirementName'. Did you mean 'foldRequirementName'?"
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "quick fix \"Change spelling to 'foldRequirementName'\" for 2552 at src/utils/requirement-diff.ts:35:22 raises the error count in the edited files from 0 to 2 (seeded by M1: remove 'normalizeRequirementName' from an import; errors before the mutation 0, after the fix 2); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 137s",
+ "violation": {
+  "oracle": "r4_edits",
+  "server": "ts6-6.0.3",
+  "project": "Fission-AI/OpenSpec@f179ed4e4056",
+  "key": {
+   "method": "diagnostics",
+   "path": "src/utils/requirement-diff.ts",
+   "line": 34,
+   "character": 21,
+   "extra": "M1:quickfix-errors:Change spelling to 'foldRequirementName'"
+  },
+  "expected": [],
+  "actual": [
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2552",
+    "typescript",
+    "Cannot find name 'normalizeRequirementName'. Did you mean 'foldRequirementName'?"
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2552",
+    "typescript",
+    "Cannot find name 'normalizeRequirementName'. Did you mean 'foldRequirementName'?"
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "src/utils/requirement-diff.ts"
+   },
+   {
+    "kind": "change",
+    "path": "src/utils/requirement-diff.ts",
+    "start": [
+     3,
+     21
+    ],
+    "end": [
+     4,
+     26
+    ]
+   },
+   {
+    "kind": "change",
+    "path": "src/utils/requirement-diff.ts",
+    "start": [
+     34,
+     21
+    ],
+    "end": [
+     34,
+     30
+    ],
+    "text": "fold"
+   }
+  ],
+  "detail": "{\"case\": {\"action_kind\": \"quickfix\", \"base_errors\": 0, \"check\": \"errors\", \"diag\": {\"code\": 2552, \"message\": \"Cannot find name 'normalizeRequirementName'. Did you mean 'foldRequirementName'?\", \"range\": {\"end\": {\"character\": 45, \"line\": 34}, \"start\": {\"character\": 21, \"line\": 34}}, \"severity\": 1}, \"fix_introduced_errors\": [], \"fix_ops\": [{\"end\": [34, 30], \"kind\": \"change\", \"path\": \"src/utils/requirement-diff.ts\", \"start\": [34, 21], \"text\": \"fold\"}], \"kind\": \"mutation\", \"mutation\": {\"end\": [4, 26], \"id\": \"M1\", \"offsets\": [127, 155], \"sha\": \"7b6caa38bd653d99\", \"start\": [3, 21], \"text\": \"\", \"what\": \"remove 'normalizeRequirementName' from an import\"}, \"n_fix_ops\": 1, \"path\": \"src/utils/requirement-diff.ts\", \"post_errors\": 2, \"title\": \"Change spelling to 'foldRequirementName'\", \"via\": \"edit\"}, \"note\": \"quick fix \\\"Change spelling to 'foldRequirementName'\\\" for 2552 at src/utils/requirement-diff.ts:35:22 raises the error count in the edited files from 0 to 2 (seeded by M1: remove 'normalizeRequirementName' from an import; errors before the mutation 0, after the fix 2); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 137s\", \"shape\": \"diagnostics:extra:2552\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "ts6|r4_edits|diagnostics:extra:2552",
+  "run_id": "295e3654bbae"
+ },
+ "replay_logs": [
+  "logs/ts6-6.0.3-trda2133-r4-replay-baseline-20260925-191514-8b6115.jsonl.gz",
+  "logs/ts6-6.0.3-trda2133-r4-replay-case-20260925-191504-3605f3.jsonl.gz",
+  "logs/ts6-6.0.3-trda2133-r4-replay-control-20260925-191519-30b8b7.jsonl.gz"
+ ],
+ "project_files": {},
+ "group": "ts6-r4-diagnostics-extra-2552-mutation-m1-da2133",
+ "reduced": true
+}

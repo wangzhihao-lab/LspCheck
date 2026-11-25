@@ -1,0 +1,3 @@
+2026-09-23 16:51:02,107 INFO campaign_run run a532c3ddfb9a: r4_edits on rust-analyzer 2026-09-21, alacritty/alacritty@d692748d3f61 seed 1 settled, targets ['alacritty/src/config/monitor.rs', 'alacritty_terminal/src/term/mod.rs', 'alacritty_terminal/src/tty/unix.rs']
+2026-09-23 16:52:24,851 INFO campaign_run run a532c3ddfb9a: 0 candidate(s) in 83s; confirming
+2026-09-23 16:52:24,852 INFO campaign_run run a532c3ddfb9a finished: ok, 0 confirmed of 0 candidate(s), 83s

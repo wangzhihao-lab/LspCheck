@@ -1,0 +1,106 @@
+{
+ "schema": 1,
+ "id": "rust-analyzer-10618",
+ "meta": {
+  "server": "rust-analyzer",
+  "kind": "rust-analyzer",
+  "number": 10618,
+  "url": "https://github.com/rust-lang/rust-analyzer/issues/10618",
+  "title": "\"Fill struct fields\" assist shouldn't be applicable if the struct has inaccesible fields",
+  "oracle_class": "R4",
+  "subtype": "quickfix",
+  "fix_ref": "rust-lang/rust-analyzer#21977 (fix: Disable the fix for missing-fields when the fields are private)",
+  "fix_shas": [
+   "7d23c32b630f007bb5caade646f2b72f89b90e70"
+  ],
+  "pre_version": "2026-04-06",
+  "post_version": "2026-04-13",
+  "pre_build": "2026-04-06",
+  "post_build": "2026-04-13",
+  "build_notes": "GitHub release assets rust-analyzer-aarch64-apple-darwin.gz of the weekly tags 2026-04-06 and 2026-04-13; git tag --contains puts the fix first in 2026-04-13. The sysroot is the local rustup toolchain (rustc 1.98.1).",
+  "effort_minutes": 12,
+  "notes": "The missing-fields fix filled every field of the aliased struct Rc<Struct>, including its private fields ptr and phantom (alloc's fields at the time of the report; the local std names them the same or similarly); the fix no longer offers it when a field is not visible. Attempt 1 (diagnostics after the edit) could not see it: rust-analyzer does not diagnose private fields in struct literals. Attempt 2 uses the specification probe with the expectation of the issue and the fix's regression test (no fix).",
+  "candidate_rank": 35
+ },
+ "language": "rust",
+ "settings": {},
+ "settings_note": "The issue names no settings; the session keeps checkOnSave off (native analysis only).",
+ "session": {
+  "settle_timeout_s": 240,
+  "request_timeout_s": 60,
+  "pull_diagnostics": false
+ },
+ "files": [
+  {
+   "path": "src/main.rs",
+   "provenance": "issue",
+   "source": "issue body, first code block",
+   "note": ""
+  },
+  {
+   "path": "Cargo.toml",
+   "provenance": "scaffold",
+   "source": "",
+   "note": "a binary crate around the snippet (package name, version, edition 2021)"
+  }
+ ],
+ "repro": {
+  "attempt": 2,
+  "timing": "settled",
+  "steps": "Open src/main.rs. 'let data = Data {};' (Data = Rc<Struct>) is reported for missing fields. Apply the fix 'Fill struct fields'. Reported: 'Data { ptr: todo!(), phantom: todo!() }', whose fields are private (E0451); expected: no such fix. Probe (specification, attempt 2): the fix must not be offered (the fix's regression test is check_no_fix), i.e. the text must stay unchanged: an offered fix that changes the text is present, no fix offered is absent.",
+  "ops": [
+   {
+    "kind": "open",
+    "path": "src/main.rs"
+   }
+  ],
+  "probe": {
+   "type": "edit_text_differs",
+   "params": {
+    "edit": {
+     "via": "code_action",
+     "path": "src/main.rs",
+     "range": [
+      9,
+      20,
+      9,
+      20
+     ],
+     "title_re": "(?i)fill struct fields",
+     "missing": "absent"
+    },
+    "expected": {
+     "path": "src/main.rs",
+     "text": "use std::rc::Rc;\n\nstruct Struct {\n    field: String\n}\n\ntype Data = Rc<Struct>;\n\nfn main() {\n    let data = Data {};\n}\n",
+     "source": "issue title ('Fill struct fields' assist shouldn't be applicable if the struct has inaccessible fields) and the fix's regression test inaccessible_fields (crates/ide-diagnostics/src/handlers/missing_fields.rs@7d23c32b, check_no_fix): no fix, so the text stays unchanged"
+    }
+   }
+  }
+ },
+ "attempts": [
+  {
+   "attempt": 1,
+   "timing": "settled",
+   "probe": "edit_leaves_diagnostic",
+   "summary": "Fill struct fields checked with a fresh session on the edited text: not-reproduced-pre. The pre build 2026-04-06 offered the fix and filled the private fields of the local std's Rc ('Data { ptr: todo!(), phantom: std::marker::PhantomData, alloc: std::alloc::Global }'), the reported behavior, but rust-analyzer reports no error for private fields in a struct literal (rustc: E0451), so the diagnostic probe saw nothing new; the post build 2026-04-13 offered no fix (0/3 each).",
+   "verdict": "not-reproduced-pre (wrong edit, no diagnostic)",
+   "params": {
+    "edit": {
+     "via": "code_action",
+     "path": "src/main.rs",
+     "range": [
+      9,
+      20,
+      9,
+      20
+     ],
+     "title_re": "(?i)fill struct fields",
+     "missing": "absent"
+    },
+    "target": {
+     "message_re": "(?i)missing (structure )?fields"
+    }
+   }
+  }
+ ]
+}

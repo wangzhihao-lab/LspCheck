@@ -1,0 +1,3 @@
+2026-09-24 22:32:48,601 INFO campaign_run run 1b1d90123092: r2_handles on tsserver 4.7.2+tsls0.10.1, tsserver-48006 seed 1 settled, targets ['index.ts']
+2026-09-24 22:32:56,641 INFO campaign_run run 1b1d90123092: 0 candidate(s) in 8s; confirming
+2026-09-24 22:32:56,642 INFO campaign_run run 1b1d90123092 finished: ok, 0 confirmed of 0 candidate(s), 8s

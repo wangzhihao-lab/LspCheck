@@ -1,0 +1,180 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "308d26953c2a-v00",
+ "run_id": "308d26953c2a",
+ "oracle": "r2_handles",
+ "server": {
+  "kind": "rust-analyzer",
+  "version": "2026-09-21"
+ },
+ "project": {
+  "name": "sxyazi/yazi@0ea4c5d9ef75",
+  "source": "corpus",
+  "ref": "temp/corpus/sxyazi__yazi@0ea4c5d9ef75",
+  "commit": "0ea4c5d9ef75d7165c2e3b4eb8d713fc11f26c96",
+  "language": "rust"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "yazi-fs/src/mounts/partition.rs",
+    "positions": [],
+    "ends": [],
+    "names": []
+   },
+   {
+    "path": "yazi-parser/src/tasks/spawn.rs",
+    "positions": [
+     [
+      5,
+      8
+     ]
+    ],
+    "ends": [],
+    "names": [
+     ""
+    ]
+   },
+   {
+    "path": "yazi-vfs/src/entries.rs",
+    "positions": [],
+    "ends": [],
+    "names": []
+   }
+  ]
+ },
+ "key": {
+  "method": "completionResolve",
+  "path": "yazi-parser/src/tasks/spawn.rs",
+  "line": 5,
+  "character": 8,
+  "extra": "end|above2|anyhow::|9|null|7ffffff6|0"
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "yazi-parser/src/tasks/spawn.rs"
+  },
+  {
+   "kind": "change",
+   "path": "yazi-parser/src/tasks/spawn.rs",
+   "start": [
+    5,
+    0
+   ],
+   "end": [
+    5,
+    0
+   ],
+   "text": "\n\n"
+  }
+ ],
+ "case": {
+  "extra": "end",
+  "path": "yazi-parser/src/tasks/spawn.rs",
+  "shift": {
+   "col": 0,
+   "line": 5,
+   "text": "\n\n",
+   "variant": "above"
+  },
+  "sub": "completion",
+  "where": [
+   5,
+   8
+  ]
+ },
+ "shape": "completionResolve:changed",
+ "signature": "rust-analyzer|r2_handles|completionResolve:changed",
+ "expected": [
+  [
+   "textEdit",
+   7,
+   2,
+   7,
+   8,
+   "anyhow::"
+  ]
+ ],
+ "actual": [
+  [
+   "textEdit",
+   6,
+   0,
+   5,
+   8,
+   "anyhow::"
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "flake 3/3 [r1:SCR r2:SCR r3:SCR] in 226s",
+ "violation": {
+  "oracle": "r2_handles",
+  "server": "rust-analyzer-2026-09-21",
+  "project": "sxyazi/yazi@0ea4c5d9ef75",
+  "key": {
+   "method": "completionResolve",
+   "path": "yazi-parser/src/tasks/spawn.rs",
+   "line": 5,
+   "character": 8,
+   "extra": "end|above2|anyhow::|9|null|7ffffff6|0"
+  },
+  "expected": [
+   [
+    "textEdit",
+    7,
+    2,
+    7,
+    8,
+    "anyhow::"
+   ]
+  ],
+  "actual": [
+   [
+    "textEdit",
+    6,
+    0,
+    5,
+    8,
+    "anyhow::"
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "yazi-parser/src/tasks/spawn.rs"
+   },
+   {
+    "kind": "change",
+    "path": "yazi-parser/src/tasks/spawn.rs",
+    "start": [
+     5,
+     0
+    ],
+    "end": [
+     5,
+     0
+    ],
+    "text": "\n\n"
+   }
+  ],
+  "detail": "{\"case\": {\"extra\": \"end\", \"path\": \"yazi-parser/src/tasks/spawn.rs\", \"shift\": {\"col\": 0, \"line\": 5, \"text\": \"\\n\\n\", \"variant\": \"above\"}, \"sub\": \"completion\", \"where\": [5, 8]}, \"note\": \"flake 3/3 [r1:SCR r2:SCR r3:SCR] in 226s\", \"shape\": \"completionResolve:changed\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "rust-analyzer|r2_handles|completionResolve:changed",
+  "run_id": "308d26953c2a"
+ },
+ "replay_logs": [
+  "logs/rust-analyzer-2026-09-21-tr3170a1-r2-replay-20260925-163022-1001ed.jsonl.gz"
+ ],
+ "project_files": {},
+ "group": "rust-analyzer-r2-completionresolve-changed-completion-3170a1",
+ "reduced": true
+}

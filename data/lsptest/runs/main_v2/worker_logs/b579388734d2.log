@@ -1,0 +1,3 @@
+2026-11-18 16:11:56,382 INFO campaign_run run b579388734d2: r6_crossimpl on ts7 7.0.2, Gitlawb/openclaude@5cd11336caea seed 2 settled, targets ['src/context/repoMap/repoMap.test.ts', 'src/utils/envFile.ts', 'src/utils/model/modelOptions.ts']
+2026-11-18 16:14:15,418 INFO campaign_run run b579388734d2: 24 candidate(s) in 139s; confirming
+2026-11-18 16:14:15,436 INFO campaign_run run b579388734d2 finished: ok, 0 confirmed of 24 candidate(s), 139s

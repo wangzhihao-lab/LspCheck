@@ -1,0 +1,3 @@
+2026-11-18 07:28:52,157 INFO campaign_run run 246093da5220: r3_routes on ts7 7.0.2, Gitlawb/openclaude@5cd11336caea seed 1 settled, targets ['src/commands/privacy-settings/index.ts', 'src/components/PromptInput/Notifications.tsx', 'src/utils/log.test.ts']
+2026-11-18 07:33:51,528 INFO campaign_run run 246093da5220: 7 candidate(s) in 299s; confirming
+2026-11-18 07:33:51,530 INFO campaign_run run 246093da5220 finished: ok, 0 confirmed of 7 candidate(s), 300s

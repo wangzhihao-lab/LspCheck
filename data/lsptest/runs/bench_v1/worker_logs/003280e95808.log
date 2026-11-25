@@ -1,0 +1,6 @@
+2026-09-24 22:29:30,835 INFO campaign_run run 003280e95808: r0_crash on rust-analyzer 2024-02-19, rust-analyzer-16556 seed 1 settled, targets ['src/main.rs']
+2026-09-24 22:31:22,782 INFO campaign_run run 003280e95808: 1 candidate(s) in 112s; confirming
+2026-09-24 22:34:18,000 INFO flake replay 1/3 of rust-analyzer|r0_crash|references:result->error:timeout: settled=True control_stable=True reproduced=True (175.2s)
+2026-09-24 22:35:50,360 INFO flake replay 2/3 of rust-analyzer|r0_crash|references:result->error:timeout: settled=True control_stable=True reproduced=True (92.4s)
+2026-09-24 22:37:42,896 INFO flake replay 3/3 of rust-analyzer|r0_crash|references:result->error:timeout: settled=True control_stable=True reproduced=False (112.5s)
+2026-09-24 22:37:42,903 INFO campaign_run run 003280e95808 finished: ok, 0 confirmed of 1 candidate(s), 492s

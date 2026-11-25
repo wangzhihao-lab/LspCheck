@@ -1,0 +1,3 @@
+2026-11-18 13:23:32,904 INFO campaign_run run d0615a6cfc11: r1_history on ts6 6.0.3, solidjs/solid@4b62bc29e04b seed 2 settled, targets ['examples/rendering/shared/src/router.tsx', 'packages/signals/tests/latest-plain-write-purity.test.ts', 'packages/web/test/server/server-functions-decoder-rejection-ownership.spec.tsx']
+2026-11-18 13:33:16,417 INFO campaign_run run d0615a6cfc11: 2 candidate(s) in 584s; confirming
+2026-11-18 13:33:16,417 INFO campaign_run run d0615a6cfc11 finished: ok, 0 confirmed of 2 candidate(s), 584s

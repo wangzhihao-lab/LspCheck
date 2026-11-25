@@ -1,0 +1,3 @@
+2026-09-24 05:40:20,204 INFO campaign_run run 518ce29448c8: r1_history on ts6 6.0.3, modelcontextprotocol/servers@f46d9578190b seed 1 settled, targets ['src/everything/prompts/resource.ts', 'src/everything/prompts/simple.ts', 'src/sequentialthinking/__tests__/input-schema.test.ts']
+2026-09-24 05:49:31,723 INFO campaign_run run 518ce29448c8: 0 candidate(s) in 552s; confirming
+2026-09-24 05:49:31,725 INFO campaign_run run 518ce29448c8 finished: ok, 0 confirmed of 0 candidate(s), 552s

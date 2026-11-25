@@ -1,0 +1,786 @@
+{
+ "format": 1,
+ "campaign": "main_v2",
+ "vid": "42f7b233f3d9-v00",
+ "run_id": "42f7b233f3d9",
+ "oracle": "r5_transforms",
+ "server": {
+  "kind": "rust-analyzer",
+  "version": "2026-09-21"
+ },
+ "project": {
+  "name": "yewstack/yew@bfa6c19af971",
+  "source": "corpus",
+  "ref": "temp/corpus/yewstack__yew@bfa6c19af971",
+  "commit": "bfa6c19af971084f9547495388bde9aceeb81aaa",
+  "language": "rust"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 6,
+  "targets": [
+   {
+    "path": "examples/password_strength/src/text_input.rs",
+    "positions": [
+     [
+      1,
+      44
+     ],
+     [
+      4,
+      5
+     ],
+     [
+      6,
+      18
+     ],
+     [
+      7,
+      12
+     ],
+     [
+      10,
+      30
+     ],
+     [
+      14,
+      7
+     ],
+     [
+      14,
+      24
+     ],
+     [
+      15,
+      7
+     ],
+     [
+      21,
+      27
+     ],
+     [
+      23,
+      11
+     ],
+     [
+      24,
+      36
+     ],
+     [
+      28,
+      39
+     ]
+    ],
+    "ends": [
+     [
+      1,
+      49
+     ],
+     [
+      4,
+      8
+     ],
+     [
+      6,
+      21
+     ],
+     [
+      7,
+      17
+     ],
+     [
+      10,
+      31
+     ],
+     [
+      14,
+      11
+     ],
+     [
+      14,
+      27
+     ],
+     [
+      15,
+      10
+     ],
+     [
+      21,
+      32
+     ],
+     [
+      23,
+      15
+     ],
+     [
+      24,
+      49
+     ],
+     [
+      28,
+      43
+     ]
+    ],
+    "names": [
+     "InputEvent",
+     "derive",
+     "String",
+     "on_change",
+     "e",
+     "web_sys",
+     "log_1",
+     "target",
+     "on_change",
+     "oninput",
+     "get_value_from_input_event",
+     "oninput"
+    ]
+   },
+   {
+    "path": "packages/yew-macro/tests/classes_macro/classes-fail.rs",
+    "positions": [
+     [
+      0,
+      5
+     ],
+     [
+      2,
+      9
+     ],
+     [
+      3,
+      7
+     ],
+     [
+      8,
+      7
+     ],
+     [
+      8,
+      14
+     ],
+     [
+      10,
+      17
+     ],
+     [
+      11,
+      17
+     ],
+     [
+      11,
+      30
+     ],
+     [
+      12,
+      7
+     ],
+     [
+      12,
+      15
+     ],
+     [
+      13,
+      7
+     ],
+     [
+      20,
+      5
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      7
+     ],
+     [
+      2,
+      15
+     ],
+     [
+      3,
+      11
+     ],
+     [
+      8,
+      11
+     ],
+     [
+      8,
+      16
+     ],
+     [
+      10,
+      19
+     ],
+     [
+      11,
+      20
+     ],
+     [
+      11,
+      32
+     ],
+     [
+      12,
+      11
+     ],
+     [
+      12,
+      17
+     ],
+     [
+      13,
+      11
+     ],
+     [
+      20,
+      7
+     ]
+    ],
+    "names": [
+     "yew",
+     "compile_pass",
+     "classes",
+     "classes",
+     "vec",
+     "Some",
+     "Option",
+     "None",
+     "classes",
+     "some",
+     "classes",
+     "main"
+    ]
+   },
+   {
+    "path": "packages/yew/src/functional/hooks/use_prepared_state/feat_hydration.rs",
+    "positions": [
+     [
+      2,
+      12
+     ],
+     [
+      5,
+      6
+     ],
+     [
+      14,
+      3
+     ],
+     [
+      20,
+      24
+     ],
+     [
+      37,
+      5
+     ],
+     [
+      64,
+      40
+     ],
+     [
+      69,
+      30
+     ],
+     [
+      73,
+      21
+     ],
+     [
+      73,
+      27
+     ],
+     [
+      92,
+      43
+     ],
+     [
+      107,
+      33
+     ],
+     [
+      119,
+      23
+     ]
+    ],
+    "ends": [
+     [
+      2,
+      15
+     ],
+     [
+      5,
+      9
+     ],
+     [
+      14,
+      5
+     ],
+     [
+      20,
+      27
+     ],
+     [
+      37,
+      6
+     ],
+     [
+      64,
+      41
+     ],
+     [
+      69,
+      38
+     ],
+     [
+      73,
+      22
+     ],
+     [
+      73,
+      30
+     ],
+     [
+      92,
+      45
+     ],
+     [
+      107,
+      37
+     ],
+     [
+      119,
+      25
+     ]
+    ],
+    "names": [
+     "marker",
+     "serde",
+     "cfg",
+     "window",
+     "Ok",
+     "D",
+     "SuspensionResult",
+     "s",
+     "handle",
+     "deps",
+     "feature",
+     "data"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "documentSymbol",
+  "path": "packages/yew/src/functional/hooks/use_prepared_state/feat_hydration.rs",
+  "line": -1,
+  "character": -1,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "packages/yew/src/functional/hooks/use_prepared_state/feat_hydration.rs"
+  },
+  {
+   "kind": "change",
+   "path": "packages/yew/src/functional/hooks/use_prepared_state/feat_hydration.rs",
+   "start": [
+    64,
+    40
+   ],
+   "end": [
+    64,
+    40
+   ],
+   "text": "/* 注释🙂 */ "
+  }
+ ],
+ "case": {
+  "mapped_key": [
+   "documentSymbol",
+   "packages/yew/src/functional/hooks/use_prepared_state/feat_hydration.rs",
+   -1,
+   -1,
+   ""
+  ],
+  "transform": {
+   "back": {
+    "col": 0,
+    "eof": [],
+    "line": -1,
+    "n": 0,
+    "path": "packages/yew/src/functional/hooks/use_prepared_state/feat_hydration.rs",
+    "w": 0
+   },
+   "edits": [
+    [
+     64,
+     40,
+     64,
+     40,
+     "/* 注释🙂 */ "
+    ]
+   ],
+   "kind": "T6",
+   "path": "packages/yew/src/functional/hooks/use_prepared_state/feat_hydration.rs",
+   "shift": {
+    "col": 40,
+    "eof": [],
+    "line": 64,
+    "n": 0,
+    "path": "packages/yew/src/functional/hooks/use_prepared_state/feat_hydration.rs",
+    "w": 11
+   }
+  }
+ },
+ "shape": "documentSymbol:changed",
+ "signature": "rust-analyzer|r5_transforms|documentSymbol:changed",
+ "expected": [
+  [
+   "HookProvider",
+   23,
+   55,
+   4,
+   62,
+   5
+  ],
+  [
+   "Output",
+   26,
+   69,
+   8,
+   69,
+   54
+  ],
+  [
+   "_marker",
+   8,
+   60,
+   8,
+   60,
+   31
+  ],
+  [
+   "decode_base64",
+   12,
+   14,
+   0,
+   38,
+   1
+  ],
+  [
+   "decode_base64",
+   12,
+   40,
+   0,
+   47,
+   1
+  ],
+  [
+   "deps",
+   8,
+   61,
+   8,
+   61,
+   15
+  ],
+  [
+   "impl Hook for HookProvider<T, D>",
+   19,
+   64,
+   4,
+   128,
+   5
+  ],
+  [
+   "run",
+   6,
+   71,
+   8,
+   127,
+   9
+  ],
+  [
+   "use_prepared_state",
+   12,
+   49,
+   0,
+   134,
+   1
+  ]
+ ],
+ "actual": [
+  [
+   "HookProvider",
+   23,
+   55,
+   4,
+   62,
+   5
+  ],
+  [
+   "Output",
+   26,
+   69,
+   8,
+   69,
+   54
+  ],
+  [
+   "_marker",
+   8,
+   60,
+   8,
+   60,
+   31
+  ],
+  [
+   "decode_base64",
+   12,
+   14,
+   0,
+   38,
+   1
+  ],
+  [
+   "decode_base64",
+   12,
+   40,
+   0,
+   47,
+   1
+  ],
+  [
+   "deps",
+   8,
+   61,
+   8,
+   61,
+   15
+  ],
+  [
+   "impl Hook for HookProvider<T, /* 注释🙂 */ D>",
+   19,
+   64,
+   4,
+   128,
+   5
+  ],
+  [
+   "run",
+   6,
+   71,
+   8,
+   127,
+   9
+  ],
+  [
+   "use_prepared_state",
+   12,
+   49,
+   0,
+   134,
+   1
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "T6 packages/yew/src/functional/hooks/use_prepared_state/feat_hydration.rs: 1 edit(s), first [64, 40, 64, 40]; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 517s",
+ "violation": {
+  "oracle": "r5_transforms",
+  "server": "rust-analyzer-2026-09-21",
+  "project": "yewstack/yew@bfa6c19af971",
+  "key": {
+   "method": "documentSymbol",
+   "path": "packages/yew/src/functional/hooks/use_prepared_state/feat_hydration.rs",
+   "line": -1,
+   "character": -1,
+   "extra": ""
+  },
+  "expected": [
+   [
+    "HookProvider",
+    23,
+    55,
+    4,
+    62,
+    5
+   ],
+   [
+    "Output",
+    26,
+    69,
+    8,
+    69,
+    54
+   ],
+   [
+    "_marker",
+    8,
+    60,
+    8,
+    60,
+    31
+   ],
+   [
+    "decode_base64",
+    12,
+    14,
+    0,
+    38,
+    1
+   ],
+   [
+    "decode_base64",
+    12,
+    40,
+    0,
+    47,
+    1
+   ],
+   [
+    "deps",
+    8,
+    61,
+    8,
+    61,
+    15
+   ],
+   [
+    "impl Hook for HookProvider<T, D>",
+    19,
+    64,
+    4,
+    128,
+    5
+   ],
+   [
+    "run",
+    6,
+    71,
+    8,
+    127,
+    9
+   ],
+   [
+    "use_prepared_state",
+    12,
+    49,
+    0,
+    134,
+    1
+   ]
+  ],
+  "actual": [
+   [
+    "HookProvider",
+    23,
+    55,
+    4,
+    62,
+    5
+   ],
+   [
+    "Output",
+    26,
+    69,
+    8,
+    69,
+    54
+   ],
+   [
+    "_marker",
+    8,
+    60,
+    8,
+    60,
+    31
+   ],
+   [
+    "decode_base64",
+    12,
+    14,
+    0,
+    38,
+    1
+   ],
+   [
+    "decode_base64",
+    12,
+    40,
+    0,
+    47,
+    1
+   ],
+   [
+    "deps",
+    8,
+    61,
+    8,
+    61,
+    15
+   ],
+   [
+    "impl Hook for HookProvider<T, /* 注释🙂 */ D>",
+    19,
+    64,
+    4,
+    128,
+    5
+   ],
+   [
+    "run",
+    6,
+    71,
+    8,
+    127,
+    9
+   ],
+   [
+    "use_prepared_state",
+    12,
+    49,
+    0,
+    134,
+    1
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "packages/yew/src/functional/hooks/use_prepared_state/feat_hydration.rs"
+   },
+   {
+    "kind": "change",
+    "path": "packages/yew/src/functional/hooks/use_prepared_state/feat_hydration.rs",
+    "start": [
+     64,
+     40
+    ],
+    "end": [
+     64,
+     40
+    ],
+    "text": "/* 注释🙂 */ "
+   }
+  ],
+  "detail": "{\"case\": {\"mapped_key\": [\"documentSymbol\", \"packages/yew/src/functional/hooks/use_prepared_state/feat_hydration.rs\", -1, -1, \"\"], \"transform\": {\"back\": {\"col\": 0, \"eof\": [], \"line\": -1, \"n\": 0, \"path\": \"packages/yew/src/functional/hooks/use_prepared_state/feat_hydration.rs\", \"w\": 0}, \"edits\": [[64, 40, 64, 40, \"/* \\u6ce8\\u91ca\\ud83d\\ude42 */ \"]], \"kind\": \"T6\", \"path\": \"packages/yew/src/functional/hooks/use_prepared_state/feat_hydration.rs\", \"shift\": {\"col\": 40, \"eof\": [], \"line\": 64, \"n\": 0, \"path\": \"packages/yew/src/functional/hooks/use_prepared_state/feat_hydration.rs\", \"w\": 11}}}, \"note\": \"T6 packages/yew/src/functional/hooks/use_prepared_state/feat_hydration.rs: 1 edit(s), first [64, 40, 64, 40]; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 517s\", \"shape\": \"documentSymbol:changed\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "rust-analyzer|r5_transforms|documentSymbol:changed",
+  "run_id": "42f7b233f3d9"
+ },
+ "replay_logs": [
+  "logs/rust-analyzer-2026-09-21-42f7b233f3d9-r5-replay-baseline-20261118-201704-5f46c5.jsonl.gz",
+  "logs/rust-analyzer-2026-09-21-42f7b233f3d9-r5-replay-case-20261118-201852-9f4f80.jsonl.gz",
+  "logs/rust-analyzer-2026-09-21-42f7b233f3d9-r5-replay-control-20261118-201757-86c7f3.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

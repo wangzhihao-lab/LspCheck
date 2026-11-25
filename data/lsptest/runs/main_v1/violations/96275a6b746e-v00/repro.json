@@ -1,0 +1,576 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "96275a6b746e-v00",
+ "run_id": "96275a6b746e",
+ "oracle": "r4_edits",
+ "server": {
+  "kind": "ts6",
+  "version": "6.0.3"
+ },
+ "project": {
+  "name": "reduxjs/redux@fb3bad6804d6",
+  "source": "corpus",
+  "ref": "temp/corpus/reduxjs__redux@fb3bad6804d6",
+  "commit": "fb3bad6804d651b8ae0e909f32765beb989ba6f8",
+  "language": "typescript"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "test/helpers/reducers.ts",
+    "positions": [
+     [
+      5,
+      12
+     ],
+     [
+      15,
+      19
+     ],
+     [
+      16,
+      3
+     ],
+     [
+      19,
+      9
+     ],
+     [
+      19,
+      29
+     ],
+     [
+      22,
+      13
+     ],
+     [
+      36,
+      38
+     ],
+     [
+      52,
+      4
+     ],
+     [
+      53,
+      47
+     ],
+     [
+      71,
+      15
+     ],
+     [
+      91,
+      4
+     ],
+     [
+      92,
+      5
+     ]
+    ],
+    "ends": [
+     [
+      5,
+      23
+     ],
+     [
+      15,
+      21
+     ],
+     [
+      16,
+      4
+     ],
+     [
+      19,
+      11
+     ],
+     [
+      19,
+      31
+     ],
+     [
+      22,
+      16
+     ],
+     [
+      36,
+      40
+     ],
+     [
+      52,
+      7
+     ],
+     [
+      53,
+      55
+     ],
+     [
+      71,
+      18
+     ],
+     [
+      91,
+      7
+     ],
+     [
+      92,
+      8
+     ]
+    ],
+    "names": [
+     "UNSUBSCRIBE_IN_MIDDLE",
+     "Todo",
+     "id",
+     "type",
+     "type",
+     "action",
+     "Todo",
+     "state",
+     "boundDispatchFn",
+     "state",
+     "state",
+     "action"
+    ]
+   },
+   {
+    "path": "test/typescript/enhancers.test-d.ts",
+    "positions": [
+     [
+      19,
+      15
+     ],
+     [
+      21,
+      50
+     ],
+     [
+      36,
+      12
+     ],
+     [
+      54,
+      26
+     ],
+     [
+      85,
+      25
+     ],
+     [
+      127,
+      10
+     ],
+     [
+      240,
+      19
+     ],
+     [
+      267,
+      49
+     ],
+     [
+      325,
+      37
+     ],
+     [
+      363,
+      50
+     ],
+     [
+      366,
+      10
+     ],
+     [
+      408,
+      34
+     ]
+    ],
+    "ends": [
+     [
+      19,
+      22
+     ],
+     [
+      21,
+      57
+     ],
+     [
+      36,
+      15
+     ],
+     [
+      54,
+      33
+     ],
+     [
+      85,
+      32
+     ],
+     [
+      127,
+      11
+     ],
+     [
+      240,
+      26
+     ],
+     [
+      267,
+      52
+     ],
+     [
+      325,
+      44
+     ],
+     [
+      363,
+      52
+     ],
+     [
+      366,
+      16
+     ],
+     [
+      408,
+      41
+     ]
+    ],
+    "names": [
+     "preloadedState",
+     "preloadedState",
+     "store",
+     "StoreEnhancer",
+     "replaceReducer",
+     "A",
+     "replaceReducer",
+     "Action",
+     "PreloadedState",
+     "test",
+     "expectTypeOf",
+     "StoreEnhancer"
+    ]
+   },
+   {
+    "path": "website/plugins/remark-typescript-tools/transpileCodeblocks/plugin.ts",
+    "positions": [
+     [
+      58,
+      25
+     ],
+     [
+      63,
+      19
+     ],
+     [
+      65,
+      15
+     ],
+     [
+      72,
+      12
+     ],
+     [
+      130,
+      25
+     ],
+     [
+      196,
+      46
+     ],
+     [
+      217,
+      8
+     ],
+     [
+      290,
+      34
+     ],
+     [
+      356,
+      28
+     ],
+     [
+      385,
+      12
+     ],
+     [
+      393,
+      27
+     ],
+     [
+      395,
+      12
+     ]
+    ],
+    "ends": [
+     [
+      58,
+      31
+     ],
+     [
+      63,
+      27
+     ],
+     [
+      65,
+      17
+     ],
+     [
+      72,
+      14
+     ],
+     [
+      130,
+      30
+     ],
+     [
+      196,
+      48
+     ],
+     [
+      217,
+      15
+     ],
+     [
+      290,
+      36
+     ],
+     [
+      356,
+      35
+     ],
+     [
+      385,
+      14
+     ],
+     [
+      393,
+      30
+     ],
+     [
+      395,
+      19
+     ]
+    ],
+    "names": [
+     "transformer",
+     "virtualFilepath",
+     "path",
+     "node",
+     "specifiers",
+     "node",
+     "virtualFolder",
+     "type",
+     "rearrangeFiles",
+     "code",
+     "Object",
+     "filteredFiles"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "diagnostics",
+  "path": "test/helpers/reducers.ts",
+  "line": 94,
+  "character": 9,
+  "extra": "M1:quickfix-errors:Change spelling to 'SUBSCRIBE_IN_MIDDLE'"
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "test/helpers/reducers.ts"
+  },
+  {
+   "kind": "change",
+   "path": "test/helpers/reducers.ts",
+   "start": [
+    5,
+    2
+   ],
+   "end": [
+    6,
+    2
+   ]
+  },
+  {
+   "kind": "change",
+   "path": "test/helpers/reducers.ts",
+   "start": [
+    94,
+    9
+   ],
+   "end": [
+    94,
+    11
+   ]
+  }
+ ],
+ "case": {
+  "action_kind": "quickfix",
+  "base_errors": 0,
+  "check": "errors",
+  "diag": {
+   "code": 2552,
+   "message": "Cannot find name 'UNSUBSCRIBE_IN_MIDDLE'. Did you mean 'SUBSCRIBE_IN_MIDDLE'?",
+   "range": {
+    "end": {
+     "character": 30,
+     "line": 94
+    },
+    "start": {
+     "character": 9,
+     "line": 94
+    }
+   },
+   "severity": 1
+  },
+  "fix_introduced_errors": [
+   {
+    "code": 2678,
+    "message": "Type '\"SUBSCRIBE_IN_MIDDLE\"' is not comparable to type '\"UNSUBSCRIBE_IN_MIDDLE\"'.",
+    "path": "test/helpers/reducers.ts",
+    "range": {
+     "end": {
+      "character": 28,
+      "line": 94
+     },
+     "start": {
+      "character": 9,
+      "line": 94
+     }
+    },
+    "severity": 1
+   }
+  ],
+  "fix_ops": [
+   {
+    "end": [
+     94,
+     11
+    ],
+    "kind": "change",
+    "path": "test/helpers/reducers.ts",
+    "start": [
+     94,
+     9
+    ]
+   }
+  ],
+  "kind": "mutation",
+  "mutation": {
+   "end": [
+    6,
+    2
+   ],
+   "id": "M1",
+   "offsets": [
+    91,
+    116
+   ],
+   "sha": "dc469aa1c368ee69",
+   "start": [
+    5,
+    2
+   ],
+   "text": "",
+   "what": "remove 'UNSUBSCRIBE_IN_MIDDLE' from an import"
+  },
+  "n_fix_ops": 1,
+  "path": "test/helpers/reducers.ts",
+  "post_errors": 1,
+  "title": "Change spelling to 'SUBSCRIBE_IN_MIDDLE'",
+  "via": "edit"
+ },
+ "shape": "diagnostics:extra:2678",
+ "signature": "ts6|r4_edits|diagnostics:extra:2678",
+ "expected": [],
+ "actual": [
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "2678",
+   "typescript",
+   "Type '\"SUBSCRIBE_IN_MIDDLE\"' is not comparable to type '\"UNSUBSCRIBE_IN_MIDDLE\"'."
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "quick fix \"Change spelling to 'SUBSCRIBE_IN_MIDDLE'\" for 2552 at test/helpers/reducers.ts:95:10 raises the error count in the edited files from 0 to 1 (seeded by M1: remove 'UNSUBSCRIBE_IN_MIDDLE' from an import; errors before the mutation 0, after the fix 1); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 151s",
+ "violation": {
+  "oracle": "r4_edits",
+  "server": "ts6-6.0.3",
+  "project": "reduxjs/redux@fb3bad6804d6",
+  "key": {
+   "method": "diagnostics",
+   "path": "test/helpers/reducers.ts",
+   "line": 94,
+   "character": 9,
+   "extra": "M1:quickfix-errors:Change spelling to 'SUBSCRIBE_IN_MIDDLE'"
+  },
+  "expected": [],
+  "actual": [
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2678",
+    "typescript",
+    "Type '\"SUBSCRIBE_IN_MIDDLE\"' is not comparable to type '\"UNSUBSCRIBE_IN_MIDDLE\"'."
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "test/helpers/reducers.ts"
+   },
+   {
+    "kind": "change",
+    "path": "test/helpers/reducers.ts",
+    "start": [
+     5,
+     2
+    ],
+    "end": [
+     6,
+     2
+    ]
+   },
+   {
+    "kind": "change",
+    "path": "test/helpers/reducers.ts",
+    "start": [
+     94,
+     9
+    ],
+    "end": [
+     94,
+     11
+    ]
+   }
+  ],
+  "detail": "{\"case\": {\"action_kind\": \"quickfix\", \"base_errors\": 0, \"check\": \"errors\", \"diag\": {\"code\": 2552, \"message\": \"Cannot find name 'UNSUBSCRIBE_IN_MIDDLE'. Did you mean 'SUBSCRIBE_IN_MIDDLE'?\", \"range\": {\"end\": {\"character\": 30, \"line\": 94}, \"start\": {\"character\": 9, \"line\": 94}}, \"severity\": 1}, \"fix_introduced_errors\": [{\"code\": 2678, \"message\": \"Type '\\\"SUBSCRIBE_IN_MIDDLE\\\"' is not comparable to type '\\\"UNSUBSCRIBE_IN_MIDDLE\\\"'.\", \"path\": \"test/helpers/reducers.ts\", \"range\": {\"end\": {\"character\": 28, \"line\": 94}, \"start\": {\"character\": 9, \"line\": 94}}, \"severity\": 1}], \"fix_ops\": [{\"end\": [94, 11], \"kind\": \"change\", \"path\": \"test/helpers/reducers.ts\", \"start\": [94, 9]}], \"kind\": \"mutation\", \"mutation\": {\"end\": [6, 2], \"id\": \"M1\", \"offsets\": [91, 116], \"sha\": \"dc469aa1c368ee69\", \"start\": [5, 2], \"text\": \"\", \"what\": \"remove 'UNSUBSCRIBE_IN_MIDDLE' from an import\"}, \"n_fix_ops\": 1, \"path\": \"test/helpers/reducers.ts\", \"post_errors\": 1, \"title\": \"Change spelling to 'SUBSCRIBE_IN_MIDDLE'\", \"via\": \"edit\"}, \"note\": \"quick fix \\\"Change spelling to 'SUBSCRIBE_IN_MIDDLE'\\\" for 2552 at test/helpers/reducers.ts:95:10 raises the error count in the edited files from 0 to 1 (seeded by M1: remove 'UNSUBSCRIBE_IN_MIDDLE' from an import; errors before the mutation 0, after the fix 1); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 151s\", \"shape\": \"diagnostics:extra:2678\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "ts6|r4_edits|diagnostics:extra:2678",
+  "run_id": "96275a6b746e"
+ },
+ "replay_logs": [
+  "logs/ts6-6.0.3-96275a6b746e-r4-replay-baseline-20260923-215320-d26da8.jsonl.gz",
+  "logs/ts6-6.0.3-96275a6b746e-r4-replay-case-20260923-215302-e65695.jsonl.gz",
+  "logs/ts6-6.0.3-96275a6b746e-r4-replay-control-20260923-215335-53e8d8.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

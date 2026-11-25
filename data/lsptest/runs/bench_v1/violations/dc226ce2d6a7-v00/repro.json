@@ -1,0 +1,313 @@
+{
+ "format": 1,
+ "campaign": "bench_v1",
+ "vid": "dc226ce2d6a7-v00",
+ "run_id": "dc226ce2d6a7",
+ "oracle": "r1_history",
+ "server": {
+  "kind": "gopls",
+  "version": "v0.20.0"
+ },
+ "project": {
+  "name": "gopls-74938",
+  "source": "dir",
+  "ref": "data/lsp_bench/cases/gopls-74938/project",
+  "commit": "",
+  "language": "go"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 180.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "slicescontains.go",
+    "positions": [
+     [
+      6,
+      33
+     ],
+     [
+      8,
+      7
+     ],
+     [
+      43,
+      5
+     ],
+     [
+      60,
+      3
+     ],
+     [
+      60,
+      9
+     ],
+     [
+      63,
+      20
+     ],
+     [
+      80,
+      17
+     ],
+     [
+      81,
+      6
+     ],
+     [
+      85,
+      4
+     ],
+     [
+      118,
+      9
+     ],
+     [
+      128,
+      13
+     ],
+     [
+      128,
+      28
+     ],
+     [
+      151,
+      5
+     ],
+     [
+      152,
+      12
+     ],
+     [
+      169,
+      45
+     ],
+     [
+      170,
+      26
+     ],
+     [
+      171,
+      11
+     ],
+     [
+      175,
+      12
+     ],
+     [
+      187,
+      22
+     ],
+     [
+      187,
+      51
+     ]
+    ],
+    "ends": [
+     [
+      6,
+      36
+     ],
+     [
+      8,
+      10
+     ],
+     [
+      43,
+      6
+     ],
+     [
+      60,
+      6
+     ],
+     [
+      60,
+      12
+     ],
+     [
+      63,
+      35
+     ],
+     [
+      80,
+      20
+     ],
+     [
+      81,
+      9
+     ],
+     [
+      85,
+      7
+     ],
+     [
+      118,
+      14
+     ],
+     [
+      128,
+      14
+     ],
+     [
+      128,
+      29
+     ],
+     [
+      151,
+      6
+     ],
+     [
+      152,
+      13
+     ],
+     [
+      169,
+      47
+     ],
+     [
+      170,
+      28
+     ],
+     [
+      171,
+      13
+     ],
+     [
+      175,
+      14
+     ],
+     [
+      187,
+      39
+     ],
+     [
+      187,
+      52
+     ]
+    ],
+    "names": [
+     "needle",
+     "slice",
+     "_",
+     "print",
+     "found",
+     "assignFalseBreakInSelectSwitch",
+     "needle",
+     "found",
+     "print",
+     "predicate",
+     "T",
+     "T",
+     "_",
+     "x",
+     "bool",
+     "bool",
+     "true",
+     "true",
+     "nopeImplicitConversionContainsFunc",
+     "f"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "completion",
+  "path": "slicescontains.go",
+  "line": 8,
+  "character": 10,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "slicescontains.go"
+  },
+  {
+   "kind": "fs_write",
+   "path": "go.mod",
+   "text": "module example.com/slicescontains\nmodule example.com/slicescontains\n\ngo 1.24\n"
+  },
+  {
+   "kind": "fs_write",
+   "path": "go.mod",
+   "text": "module example.com/slicescontains\n\ngo 1.24\n"
+  }
+ ],
+ "case": {
+  "chain_step": 0,
+  "families": [],
+  "family": "H6",
+  "history_index": 0,
+  "history_seed": 2001,
+  "mode": "fresh",
+  "note": "config round trip on go.mod: line 0 duplicated",
+  "seed": 2,
+  "timing": "settled"
+ },
+ "shape": "completion:extra",
+ "signature": "gopls|r1_history|completion:extra",
+ "expected": [
+  "slice",
+  "slices"
+ ],
+ "actual": [
+  "slice",
+  "slices",
+  "slices.All",
+  "slices.Equal",
+  "slices.EqualFunc"
+ ],
+ "reproduced": "0/3",
+ "note": "H6: config round trip on go.mod: line 0 duplicated; flake 0/3 [r1:SCr r2:SCr r3:SCr] in 101s",
+ "violation": {
+  "oracle": "r1_history",
+  "server": "gopls-v0.20.0",
+  "project": "gopls-74938",
+  "key": {
+   "method": "completion",
+   "path": "slicescontains.go",
+   "line": 8,
+   "character": 10,
+   "extra": ""
+  },
+  "expected": [
+   "slice",
+   "slices"
+  ],
+  "actual": [
+   "slice",
+   "slices",
+   "slices.All",
+   "slices.Equal",
+   "slices.EqualFunc"
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "slicescontains.go"
+   },
+   {
+    "kind": "fs_write",
+    "path": "go.mod",
+    "text": "module example.com/slicescontains\nmodule example.com/slicescontains\n\ngo 1.24\n"
+   },
+   {
+    "kind": "fs_write",
+    "path": "go.mod",
+    "text": "module example.com/slicescontains\n\ngo 1.24\n"
+   }
+  ],
+  "detail": "{\"case\": {\"chain_step\": 0, \"families\": [], \"family\": \"H6\", \"history_index\": 0, \"history_seed\": 2001, \"mode\": \"fresh\", \"note\": \"config round trip on go.mod: line 0 duplicated\", \"seed\": 2, \"timing\": \"settled\"}, \"note\": \"H6: config round trip on go.mod: line 0 duplicated; flake 0/3 [r1:SCr r2:SCr r3:SCr] in 101s\", \"shape\": \"completion:extra\"}",
+  "reproduced": "0/3",
+  "reduced_ops": [],
+  "signature": "gopls|r1_history|completion:extra",
+  "run_id": "dc226ce2d6a7"
+ },
+ "replay_logs": [],
+ "project_files": {},
+ "incomplete": false
+}

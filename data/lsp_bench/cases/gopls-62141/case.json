@@ -1,0 +1,80 @@
+{
+ "schema": 1,
+ "id": "gopls-62141",
+ "meta": {
+  "server": "gopls",
+  "kind": "gopls",
+  "number": 62141,
+  "url": "https://github.com/golang/go/issues/62141",
+  "title": "x/tools/gopls: completion to invalid untyped conversion",
+  "oracle_class": "R4",
+  "subtype": "completion",
+  "fix_ref": "golang/tools@ff7f2b9c4a76 (gopls/internal/lsp/source completion: don't suggest untyped conversions; CL 520876)",
+  "fix_shas": [
+   "ff7f2b9c4a76157aac48a61ae2943caa78a8c972"
+  ],
+  "pre_version": "v0.13.2",
+  "post_version": "v0.14.0",
+  "pre_build": "v0.13.2",
+  "post_build": "v0.14.0",
+  "toolchain": "go1.20.4",
+  "build_notes": "Both built and run with go1.20.4 (golang.org/dl, under temp/lsp_servers/go-sdks; toolchain.json). The local go1.27 cannot build them (internal/tokeninternal array-length check); go1.21.0 (current when v0.13.2 was tagged, 2023-08-10) and go1.21.3 build them, but the resulting gopls binaries carry an invalid ad-hoc code signature on this machine (codesign --verify: 'invalid signature'; the kernel kills them, exit -9), while small go1.21 programs run; go1.20.4 (a supported release at the time, also used for v0.12.x) builds runnable binaries. The fix merged 2023-08-21, v0.14.0 was tagged 2023-10-24.",
+  "effort_minutes": 15,
+  "notes": "Completion offered a conversion of the candidate to the expected type, and for an untyped constant context the expected type is 'untyped float', which it printed into the code. The fix does not suggest conversions to untyped types."
+ },
+ "language": "go",
+ "settings": {},
+ "settings_note": "The issue names no settings.",
+ "session": {
+  "settle_timeout_s": 180
+ },
+ "files": [
+  {
+   "path": "p.go",
+   "provenance": "issue-adapted",
+   "source": "issue body, first code block (with '<>' marking the cursor) and the closing brace of the second code block",
+   "note": "the issue's function with the cursor marker '<>' removed, the closing brace that the result snippet shows added, and a package clause added"
+  },
+  {
+   "path": "go.mod",
+   "provenance": "scaffold",
+   "source": "",
+   "note": "a module around the file (the issue gives none); go 1.21, the Go of the era"
+  }
+ ],
+ "repro": {
+  "attempt": 1,
+  "timing": "settled",
+  "steps": "Open p.go. Request completion at the end of 'abcd' in 'x := 1.0 / abcd' (line 4, character 16, the issue's '<>') and accept the abcdef item. Reported: 'x := 1.0 / untyped float(abcdef)', which does not parse. Probe: the edited text must have no parse error that the original did not have.",
+  "ops": [
+   {
+    "kind": "open",
+    "path": "p.go"
+   }
+  ],
+  "probe": {
+   "type": "edit_breaks_syntax",
+   "params": {
+    "edit": {
+     "via": "completion",
+     "path": "p.go",
+     "position": [
+      4,
+      16
+     ],
+     "label_re": "abcdef",
+     "missing": "invalid"
+    }
+   }
+  }
+ },
+ "attempts": [
+  {
+   "attempt": 1,
+   "timing": "settled",
+   "probe": "edit_breaks_syntax",
+   "summary": "First run of this attempt (2026-09-23T09:27): invalid, pre run 1 'no completion matching the spec was offered (offered: [])', a harness artifact: gopls v0.13.2 answered exactly the reported item (label 'abcdef', filterText 'untyped float(abcdef)', textEdit newText 'untyped float(abcdef)' over 4:12-4:16), but the harness's editor-style filter (oracles/r4_textedits.word_starts) did not treat '(' as a word separator, so fuzzy_match('abcd', 'untyped float(abcdef)') hid the item, which VS Code shows. The separator set was widened in the engine; the same case revision was rerun unchanged.",
+   "verdict": "invalid (harness artifact: completion filter narrower than the editor's)"
+  }
+ ]
+}

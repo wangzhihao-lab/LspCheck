@@ -1,0 +1,213 @@
+{
+ "format": 1,
+ "campaign": "bench_v1",
+ "vid": "3038b9cbcb3e-v00",
+ "run_id": "3038b9cbcb3e",
+ "oracle": "r3_routes",
+ "server": {
+  "kind": "rust-analyzer",
+  "version": "2026-04-06"
+ },
+ "project": {
+  "name": "rust-analyzer-10618",
+  "source": "dir",
+  "ref": "data/lsp_bench/cases/rust-analyzer-10618/project",
+  "commit": "",
+  "language": "rust"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 240.0,
+  "request_timeout_s": 60.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "src/main.rs",
+    "positions": [
+     [
+      0,
+      5
+     ],
+     [
+      0,
+      10
+     ],
+     [
+      0,
+      14
+     ],
+     [
+      2,
+      10
+     ],
+     [
+      3,
+      6
+     ],
+     [
+      3,
+      14
+     ],
+     [
+      6,
+      7
+     ],
+     [
+      6,
+      13
+     ],
+     [
+      6,
+      18
+     ],
+     [
+      8,
+      5
+     ],
+     [
+      9,
+      10
+     ],
+     [
+      9,
+      17
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      7
+     ],
+     [
+      0,
+      11
+     ],
+     [
+      0,
+      15
+     ],
+     [
+      2,
+      13
+     ],
+     [
+      3,
+      9
+     ],
+     [
+      3,
+      17
+     ],
+     [
+      6,
+      9
+     ],
+     [
+      6,
+      14
+     ],
+     [
+      6,
+      21
+     ],
+     [
+      8,
+      7
+     ],
+     [
+      9,
+      12
+     ],
+     [
+      9,
+      19
+     ]
+    ],
+    "names": [
+     "std",
+     "rc",
+     "Rc",
+     "Struct",
+     "field",
+     "String",
+     "Data",
+     "Rc",
+     "Struct",
+     "main",
+     "data",
+     "Data"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "diagnostics",
+  "path": "src/main.rs",
+  "line": -1,
+  "character": -1,
+  "extra": "route:push"
+ },
+ "ops": [],
+ "case": {
+  "path": "src/main.rs",
+  "sub": "a",
+  "want_pull": false
+ },
+ "shape": "diagnostics:missing:E0063",
+ "signature": "rust-analyzer|r3_routes|diagnostics:missing:E0063",
+ "expected": [
+  [
+   9,
+   15,
+   9,
+   19,
+   1,
+   "E0063",
+   "rust-analyzer",
+   "missing structure fields: - ptr - phantom - alloc"
+  ]
+ ],
+ "actual": [],
+ "reproduced": "3/3",
+ "note": "pull vs push; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 64s",
+ "violation": {
+  "oracle": "r3_routes",
+  "server": "rust-analyzer-2026-04-06",
+  "project": "rust-analyzer-10618",
+  "key": {
+   "method": "diagnostics",
+   "path": "src/main.rs",
+   "line": -1,
+   "character": -1,
+   "extra": "route:push"
+  },
+  "expected": [
+   [
+    9,
+    15,
+    9,
+    19,
+    1,
+    "E0063",
+    "rust-analyzer",
+    "missing structure fields: - ptr - phantom - alloc"
+   ]
+  ],
+  "actual": [],
+  "ops": [],
+  "detail": "{\"case\": {\"path\": \"src/main.rs\", \"sub\": \"a\", \"want_pull\": false}, \"note\": \"pull vs push; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 64s\", \"shape\": \"diagnostics:missing:E0063\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "rust-analyzer|r3_routes|diagnostics:missing:E0063",
+  "run_id": "3038b9cbcb3e"
+ },
+ "replay_logs": [
+  "logs/rust-analyzer-2026-04-06-3038b9cbcb3e-r3-replay-baseline-20260925-051451-a8a96f.jsonl.gz",
+  "logs/rust-analyzer-2026-04-06-3038b9cbcb3e-r3-replay-control-20260925-051458-926f27.jsonl.gz",
+  "logs/rust-analyzer-2026-04-06-3038b9cbcb3e-r3-replay-route-20260925-051507-d7e249.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

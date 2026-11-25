@@ -1,0 +1,92 @@
+{
+ "schema": 1,
+ "id": "gopls-57480",
+ "meta": {
+  "server": "gopls",
+  "kind": "gopls",
+  "number": 57480,
+  "url": "https://github.com/golang/go/issues/57480",
+  "title": "x/tools/gopls: incorrect edit when completing test function name",
+  "oracle_class": "R4",
+  "subtype": "completion",
+  "fix_ref": "golang/tools@107f43f6698a (gopls/completion: avoid duplicating text in test func completions; CL 459559)",
+  "fix_shas": [
+   "107f43f6698a7e0880a5bbffdab2ff65eb0d9434"
+  ],
+  "pre_version": "v0.11.0",
+  "post_version": "v0.12.0",
+  "pre_build": "v0.11.0",
+  "post_build": "v0.12.0",
+  "toolchain": "go1.20.4",
+  "build_notes": "Both built and run with go1.20.4 (golang.org/dl, under temp/lsp_servers/go-sdks; toolchain.json): the local go1.27 cannot build v0.12.0 (internal/tokeninternal array-length check), v0.12.0 is installed with go1.20.4 for the pilot case gopls-60435 (the Go current when it was tagged), and go1.20.4 also builds v0.11.0. v0.11.0 was tagged 2022-12-13, the fix merged 2023-01-06, v0.12.0 was tagged 2023-05.",
+  "effort_minutes": 10,
+  "notes": "Definition completion for test functions (completion/definition.go) always appended the signature '(t *testing.T) {...}', even when the parameter list and body already followed the identifier, so completing the name of an existing test function duplicated them. The fix checks whether the parentheses and braces already exist."
+ },
+ "language": "go",
+ "settings": {},
+ "settings_note": "The issue names no settings.",
+ "session": {
+  "settle_timeout_s": 180
+ },
+ "files": [
+  {
+   "path": "p_test.go",
+   "provenance": "issue-adapted",
+   "source": "issue body, 'func Te_(t *testing.T) {}' with '_' marking the cursor",
+   "note": "the issue's line with the cursor marker '_' removed, in a test file with a package clause and the testing import added"
+  },
+  {
+   "path": "go.mod",
+   "provenance": "scaffold",
+   "source": "",
+   "note": "a module around the test file (the issue gives none); go 1.18, the go directive of the era"
+  }
+ ],
+ "repro": {
+  "attempt": 2,
+  "timing": "settled",
+  "steps": "Open p_test.go with 'func Te(t *testing.T) {}'. Request completion right after 'Te' (line 4, character 7, the issue's '_') and accept the test-function-name item (label 'TestXxx(t *testing.T)' in v0.11.0, 'Test' in v0.12.0). Reported: 'func TestXxx(t *testing.T) {' + body + '}(t *testing.T) {' + ... : the signature and body are duplicated. Probe: the edited text must have no parse error that the original did not have.",
+  "ops": [
+   {
+    "kind": "open",
+    "path": "p_test.go"
+   }
+  ],
+  "probe": {
+   "type": "edit_breaks_syntax",
+   "params": {
+    "edit": {
+     "via": "completion",
+     "path": "p_test.go",
+     "position": [
+      4,
+      7
+     ],
+     "label_re": "^Test(Xxx|$)",
+     "missing": "invalid"
+    }
+   }
+  }
+ },
+ "attempts": [
+  {
+   "attempt": 1,
+   "timing": "settled",
+   "probe": "edit_breaks_syntax",
+   "summary": "Completion item selected by label_re '^TestXxx'. v0.11.0 offered 'TestXxx(t *testing.T)' and accepting it duplicated the signature and body ('func TestXxx(t *testing.T) {' ... '}Te(t *testing.T) {}', parse error '7:2: expected ';', found Te', 3/3). v0.12.0 offers the same test-function-name completion under the label 'Test' (with the fix it no longer carries the signature when the parameter list exists; offered: 'TestMain', 'Test'), so the regex matched nothing and every post run was invalid. The selection regex was too narrow (it named the pre-fix label); attempt 2 selects the test-name item in both builds with '^Test(Xxx|$)'.",
+   "verdict": "invalid (post: label regex matched only the pre-fix label)",
+   "params": {
+    "edit": {
+     "via": "completion",
+     "path": "p_test.go",
+     "position": [
+      4,
+      7
+     ],
+     "label_re": "^TestXxx",
+     "missing": "invalid"
+    }
+   }
+  }
+ ]
+}

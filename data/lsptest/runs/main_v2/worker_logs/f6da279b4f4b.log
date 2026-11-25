@@ -1,0 +1,3 @@
+2026-11-18 12:34:33,420 INFO campaign_run run f6da279b4f4b: r2_handles on ts7 7.0.2, solidjs/solid@4b62bc29e04b seed 2 settled, targets ['examples/rendering/shared/src/router.tsx', 'packages/signals/tests/latest-plain-write-purity.test.ts', 'packages/web/test/server/server-functions-decoder-rejection-ownership.spec.tsx']
+2026-11-18 12:35:57,756 INFO campaign_run run f6da279b4f4b: 0 candidate(s) in 85s; confirming
+2026-11-18 12:35:57,757 INFO campaign_run run f6da279b4f4b finished: ok, 0 confirmed of 0 candidate(s), 84s

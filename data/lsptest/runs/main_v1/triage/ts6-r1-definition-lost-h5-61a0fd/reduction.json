@@ -1,0 +1,51 @@
+{
+ "vid": "3ed0e189007e-v02",
+ "ops_before": 5,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 5,
+ "cache_hits": 0,
+ "reduce_seconds": 93.699,
+ "budget_exhausted": false,
+ "probe_log": [
+  [
+   4,
+   false
+  ],
+  [
+   4,
+   false
+  ],
+  [
+   4,
+   false
+  ],
+  [
+   4,
+   false
+  ],
+  [
+   4,
+   false
+  ]
+ ],
+ "logs": [
+  "ts6-6.0.3-tr61a0fd-replay-baseline-20260925-155301-020259.jsonl.gz",
+  "ts6-6.0.3-tr61a0fd-replay-control-20260925-155301-b1bb79.jsonl.gz",
+  "ts6-6.0.3-tr61a0fd-replay-history-20260925-155312-4420ce.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [
+   [
+    "src/middleware/persist.ts",
+    141,
+    8,
+    141,
+    25
+   ]
+  ],
+  "actual": []
+ },
+ "ops_after": 5,
+ "total_seconds": 189.3
+}

@@ -1,0 +1,24 @@
+group,verdict,class,followed,unresolved,reason,date
+gopls-r1-codeaction-changed-h4-c5344e,bug,,rater2,no,历史会话比新会话多一条重复的 quickfix，是答案内容不同，不只是顺序或打印；unusedparams 配置与这条 WriteString 的 quickfix 无关，参照会话的配置解释不了差别；与第二批同组两人都判 bug 一致。,2026-11-20
+gopls-r4-diagnostics-extra-invalidifaceassign-mutation-m2-416e90,bug,,author,no,创建变量给 io.Reader 字段生成 reaer := 0，新增类型错误；按上下文本可推断出 io.Reader，推断失败就落到 int 的回退没有文档（C5），问题出在修复本身而非拼写错误；R4 比的是变异前的错误数（0），不是修复前的。,2026-11-20
+gopls-r4-diagnostics-extra-nonindexableoperand-mutation-m2-ba152b,bug,,author,no,创建变量给随后被下标使用的 poool 生成 poool := 0，新增 cannot index；新错误来自 gopls 推断失败就落到 int 的回退（C5），不是拼写错误本身，修复后错误数高于变异前；与同根因各组一致。,2026-11-21
+gopls-r4-diagnostics-extra-nonsliceableoperand-mutation-m2-d80a9a,bug,,author,no,创建变量给被切片使用的 imge 生成 imge := 0，新增 cannot slice；新错误来自推断失败就落到 int 的回退（C5），不是拼写错误本身；与第二批同组两人都判 bug 一致。,2026-11-21
+gopls-r4-diagnostics-extra-notatype-mutation-m2-477181,bug,,author,no,名字在复合字面量的类型位置，建变量永远修不好，gopls 仍只给 moddel := 0 并引入 NotAType，属于 C5 的回退缺陷而不是埋错的副作用；与第二批同组两人都判 bug 一致。,2026-11-21
+rust-analyzer-r0-references-result-error-timeout-fresh-pair-8a4b8d,bug,,rater2,no,服务器空闲后对单个符号的 references 在两个新会话里都 30 秒不回答（3/3），同一工具、同一上限下一年前版本 0/3，原因在服务器版本而不在工具的输入或规则；R0 本就把超时算作违规。,2026-11-20
+rust-analyzer-r0-semantictokens-result-error-timeout-fresh-pair-62256f,bug,,rater2,no,服务器空闲后对单个文件的 semanticTokens/full 在两个新会话里都 30 秒不回答（3/3），同一工具、同一上限下一年前版本 0/3，原因在服务器版本而不在工具的输入或规则；R0 本就把超时算作违规。,2026-11-20
+rust-analyzer-r3-diagnostics-extra-non-snake-case-a-52ba0b,legitimate,L4,author,no,补充重放里不声明拉取能力的推送会话稳定后该文件是 0 条、与拉取一致，把 None 当变量的那条警告只来自加载完成前的那一次推送；客户端声明拉取时 rust-analyzer 按设计只维护拉取路线，协议不要求同时维护推送（L4）。,2026-11-20
+rust-analyzer-r3-diagnostics-extra-unlinked-file-a-751ce1,legitimate,L4,author,no,同第 6 条：补充重放里纯推送会话稳定后 types.rs 是 0 条、与拉取一致，unlinked-file 只来自 crate 图加载前的那一次推送；声明拉取时只维护拉取路线是看得见的设计（L4）。,2026-11-20
+rust-analyzer-r3-diagnostics-missing-e0004-inactive-code-a-731c4f,bug,,rater2,no,补充重放用不声明拉取能力的推送会话、稳定后再等 180 秒，推送仍是 0 条而拉取给出 E0004 和 3 条 inactive_code，作者说的只维护拉取路线解释不了；两条路线对同一文件不一致，没有文档说明，一年前版本不出现。,2026-11-20
+rust-analyzer-r3-diagnostics-missing-inactive-code-a-0b07f0,bug,,rater2,no,同第 8 条：纯推送会话稳定后再等 180 秒仍是 0 条，拉取给出 9 条 inactive_code，差别不靠声明了拉取来解释；与第二批同组两人都判 bug 一致。,2026-11-20
+rust-analyzer-r3-semantictokensrange-changed-b-b6e28b,bug,,rater2,no,range 答案在 unsafe 块里漏掉 pre_exec、libc::setsid 的 unsafe 修饰符和 3 个 unsafe 标点记号，pre_exec 确是 unsafe 方法，range 答错且与 full 在同一范围不一致，没有文档允许 range 更粗；一年前版本不出现，与第二批同组判 bug 一致。,2026-11-20
+rust-analyzer-r4-completioninsert-gained-completion-e99b79,bug,,rater2,no,光标在 err 与已有的 !( 之间，插入 Err(…) 得到 Err(())!(…) 的语法错误，是补全编辑没顾及光标后已有的文本，而在已有标识符末尾请求补全是正常输入；一年前版本不出现、三个项目都有，与第二批同组两人都判 bug 一致。,2026-11-21
+rust-analyzer-r4-diagnostics-extra-inactive-code-quickfix-f2d641,tool-artifact,A2,author,no,删除所有未使用的导入不针对任何诊断，工具把它当成 inactive_code 的修复，目标诊断还在是意料之中；它删掉 cfg(linux) 块里的导入值得另查，但不是这条违规测到的内容；与第二批同组两人都判 A2 一致。,2026-11-21
+ts6-r1-references-extra-h6-6e0a73,tool-artifact,A2,author,no,缩减后的历史只多打开了新会话从不打开的 type.ts，多出的 4 处引用都在 node_modules/.pnpm 的 zod 声明里；差别来自两边打开的文件不同（工具的输入），虽然也只在项目外（L2 同样成立），按工具造成归 A2。,2026-11-20
+ts6-r3-definitionconsistency-lost-d-fb78dd,legitimate,L4,author,no,TS 在对象解构的绑定名上跳定义，按设计跳到源类型里的同名属性，剩余元素 ...options 没有对应属性所以为空，在声明处跳定义该返回什么协议不管；一年前版本同样，与第二批同组两人都判 L4 一致。,2026-11-20
+ts6-r5-foldingrange-changed-t2-ec7247,tool-artifact,A2,rater2,no,T2 在文件开头插入的注释并入原有的开头注释块，comment 折叠区起点移到插入行、终点不变，变的正是工具插入的那一行；注释折叠本来就随注释变，这个比较不成立（A2）。,2026-11-21
+ts6-r5-foldingrange-extra-t2-625065,tool-artifact,A2,rater2,no,多出的 comment 折叠区由工具插入的注释和下面原有的单行注释合成，没有插入的注释就不存在，这个比较不成立（A2）；与第二批同组（第 27 条）一致。,2026-11-21
+ts7-r1-references-extra-h6-574e94,tool-artifact,A2,author,no,同第 4 条（TS7 版）：缩减后的历史只多打开了新会话从不打开的 type.ts，多出的引用都在项目外的 zod 声明里，差别来自两边打开的文件不同，归 A2。,2026-11-20
+ts7-r5-foldingrange-changed-t2-5985a9,tool-artifact,A2,rater2,no,同第 18 条（TS7 版）：插入的注释并入开头注释块，折叠起点移到插入行，变的正是工具插入的内容，这个比较不成立（A2）。,2026-11-21
+ts7-r5-foldingrange-extra-t2-5dd83a,tool-artifact,A2,rater2,no,同第 19 条（TS7 版）：多出的 comment 折叠区由插入的注释与原有单行注释合成，这个比较不成立（A2）；与第二批同组（第 28 条）一致。,2026-11-21
+ts7-r6-definition-extra-definition-d8e982,legitimate,L6,author,no,TS7 多给的 node_modules/@types/react-dom 路径与 .pnpm 真实路径指向同一处真实声明，没有指错位置，是两个实现在路径规范化与项目合并上的差别（L6）；与第二批同组两人都判 L6 一致。,2026-11-21
+ts7-r6-definition-gained-definition-24364e,legitimate,L6,author,no,TS7 给出的 7 处都是 process 的真实声明（类型缓存一份，项目里的 @types/node 经符号链接和真实路径各一份），TS6 为空是推断项目没有 node 类型，属于两个实现在类型获取与项目构成上的差别（L6）；与第二批同组两人都判 L6 一致。,2026-11-21

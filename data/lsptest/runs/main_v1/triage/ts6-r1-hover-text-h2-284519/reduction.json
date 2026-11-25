@@ -1,0 +1,71 @@
+{
+ "vid": "51d286bdf504-v00",
+ "ops_before": 8,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 8,
+ "cache_hits": 0,
+ "reduce_seconds": 344.161,
+ "budget_exhausted": false,
+ "probe_log": [
+  [
+   5,
+   true
+  ],
+  [
+   4,
+   false
+  ],
+  [
+   4,
+   false
+  ],
+  [
+   4,
+   true
+  ],
+  [
+   3,
+   false
+  ],
+  [
+   2,
+   false
+  ],
+  [
+   1,
+   false
+  ],
+  [
+   1,
+   true
+  ]
+ ],
+ "logs": [
+  "ts6-6.0.3-tr284519-replay-baseline-20260925-170440-2099bf.jsonl.gz",
+  "ts6-6.0.3-tr284519-replay-control-20260925-170440-61908e.jsonl.gz",
+  "ts6-6.0.3-tr284519-replay-history-20260925-170514-32dca4.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [
+   "type CommandRequest = { cache?: CacheSetting | undefined; body?: unknown; method?: \"GET\" | \"POST\" | undefined; query?: Record<string, string | number | boolean | readonly (string | number | boolean)[] | undefined> | undefined; signal?: AbortSignal | undefined; timeout?: number | false | undefined; }",
+   [
+    13,
+    23,
+    13,
+    37
+   ]
+  ],
+  "actual": [
+   "type CommandRequest = { body?: unknown; method?: \"GET\" | \"POST\" | undefined; query?: Record<string, string | number | boolean | readonly (string | number | boolean)[] | undefined> | undefined; signal?: AbortSignal | undefined; timeout?: number | false | undefined; cache?: CacheSetting | undefined; }",
+   [
+    13,
+    23,
+    13,
+    37
+   ]
+  ]
+ },
+ "ops_after": 1,
+ "total_seconds": 614.1
+}

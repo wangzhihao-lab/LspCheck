@@ -1,0 +1,38 @@
+{
+ "vid": "06365021d85d-v00",
+ "ops_before": 2,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 0,
+ "cache_hits": 0,
+ "reduce_seconds": 0.0,
+ "budget_exhausted": false,
+ "probe_log": [],
+ "logs": [
+  "rust-analyzer-2026-09-21-tr3170a1-r2-replay-20261119-003252-d3f24f.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [
+   [
+    "textEdit",
+    408,
+    53,
+    408,
+    61,
+    "None$0"
+   ]
+  ],
+  "actual": [
+   [
+    "textEdit",
+    407,
+    0,
+    406,
+    61,
+    "None$0"
+   ]
+  ]
+ },
+ "ops_after": 2,
+ "total_seconds": 315.3
+}

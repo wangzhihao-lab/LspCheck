@@ -1,0 +1,3 @@
+2026-09-24 09:54:27,118 INFO campaign_run run 4d777f770f6f: r1_history on gopls v0.23.0, jesseduffield/lazydocker@7e7aadc2071d seed 2 settled, targets ['pkg/gui/gocui.go', 'pkg/gui/theme.go', 'pkg/i18n/english.go']
+2026-09-24 10:02:56,330 INFO campaign_run run 4d777f770f6f: 0 candidate(s) in 509s; confirming
+2026-09-24 10:02:56,331 INFO campaign_run run 4d777f770f6f finished: ok, 0 confirmed of 0 candidate(s), 509s

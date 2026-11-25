@@ -1,0 +1,205 @@
+{
+ "oracle": "r5_transforms",
+ "server": "gopls",
+ "version": "v0.23.0",
+ "project": "spf13/cobra@adbc8813901b",
+ "language": "go",
+ "seed": 1,
+ "targets": [
+  {
+   "path": "args_test.go",
+   "positions": [
+    [
+     94,
+     45
+    ],
+    [
+     98,
+     53
+    ],
+    [
+     135,
+     1
+    ],
+    [
+     187,
+     61
+    ],
+    [
+     252,
+     5
+    ],
+    [
+     326,
+     29
+    ],
+    [
+     517,
+     25
+    ],
+    [
+     569,
+     28
+    ]
+   ],
+   "ends": [
+    [
+     94,
+     47
+    ],
+    [
+     98,
+     54
+    ],
+    [
+     135,
+     2
+    ],
+    [
+     187,
+     63
+    ],
+    [
+     252,
+     7
+    ],
+    [
+     326,
+     30
+    ],
+    [
+     517,
+     27
+    ],
+    [
+     569,
+     30
+    ]
+   ],
+   "names": [
+    "got",
+    "T",
+    "c",
+    "true",
+    "err",
+    "t",
+    "fail",
+    "Use"
+   ]
+  },
+  {
+   "path": "flag_groups.go",
+   "positions": [
+    [
+     37,
+     93
+    ],
+    [
+     85,
+     14
+    ],
+    [
+     92,
+     3
+    ],
+    [
+     98,
+     24
+    ],
+    [
+     110,
+     23
+    ],
+    [
+     125,
+     33
+    ],
+    [
+     232,
+     40
+    ],
+    [
+     236,
+     41
+    ]
+   ],
+   "ends": [
+    [
+     37,
+     94
+    ],
+    [
+     85,
+     17
+    ],
+    [
+     92,
+     6
+    ],
+    [
+     98,
+     37
+    ],
+    [
+     110,
+     25
+    ],
+    [
+     125,
+     36
+    ],
+    [
+     232,
+     43
+    ],
+    [
+     236,
+     44
+    ]
+   ],
+   "names": [
+    "v",
+    "Flags",
+    "flags",
+    "validateRequiredFlagGroups",
+    "flag",
+    "group",
+    "string",
+    "pflag"
+   ]
+  }
+ ],
+ "max_cases": 6,
+ "timing": "settled",
+ "result": {
+  "oracle": "r5_transforms",
+  "run_id": "r5_transforms-gopls-090406",
+  "cases": 6,
+  "invalid_cases": 0,
+  "sessions": 8,
+  "unsettled": 0,
+  "compared": {
+   "codeAction": 96,
+   "typeDefinition": 96,
+   "signatureHelp": 96,
+   "references": 96,
+   "completion": 90,
+   "documentHighlight": 96,
+   "hover": 96,
+   "definition": 96,
+   "foldingRange": 12,
+   "inlayHint": 12,
+   "semanticTokens": 12,
+   "diagnostics": 12,
+   "documentSymbol": 12
+  },
+  "unstable": {
+   "completion": 1
+  },
+  "seconds": 50.123,
+  "notes": [],
+  "candidates": []
+ },
+ "replays": [],
+ "total_seconds": 50.1
+}

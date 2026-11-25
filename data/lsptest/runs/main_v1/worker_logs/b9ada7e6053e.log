@@ -1,0 +1,3 @@
+2026-09-24 10:14:12,428 INFO campaign_run run b9ada7e6053e: r1_history on pyright 1.1.414, TauricResearch/TradingAgents@2d17df8da153 seed 2 settled, targets ['tests/test_checkpoint_resume.py', 'tests/test_portfolio_context.py', 'tradingagents/dataflows/alpha_vantage_indicator.py']
+2026-09-24 10:19:25,921 INFO campaign_run run b9ada7e6053e: 0 candidate(s) in 314s; confirming
+2026-09-24 10:19:25,922 INFO campaign_run run b9ada7e6053e finished: ok, 0 confirmed of 0 candidate(s), 314s

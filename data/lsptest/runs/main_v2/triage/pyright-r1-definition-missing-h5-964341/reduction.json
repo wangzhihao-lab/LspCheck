@@ -1,0 +1,88 @@
+{
+ "vid": "08417dd958ba-v01",
+ "ops_before": 5,
+ "narrowed": false,
+ "reduced_confirmed": "3/3",
+ "probes": 7,
+ "cache_hits": 0,
+ "reduce_seconds": 108.438,
+ "budget_exhausted": false,
+ "probe_log": [
+  [
+   4,
+   false
+  ],
+  [
+   4,
+   false
+  ],
+  [
+   4,
+   true
+  ],
+  [
+   3,
+   true
+  ],
+  [
+   2,
+   true
+  ],
+  [
+   1,
+   false
+  ],
+  [
+   1,
+   false
+  ]
+ ],
+ "logs": [
+  "pyright-1.1.414-tr964341-replay-baseline-20261118-224331-60d601.jsonl.gz",
+  "pyright-1.1.414-tr964341-replay-control-20261118-224331-af5d70.jsonl.gz",
+  "pyright-1.1.414-tr964341-replay-history-20261118-224337-f79dea.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [
+   [
+    "temp/lsp_servers/pyright-1.1.414/node_modules/pyright/dist/typeshed-fallback/stdlib/_warnings.pyi",
+    9,
+    8,
+    9,
+    12
+   ],
+   [
+    "temp/lsp_servers/pyright-1.1.414/node_modules/pyright/dist/typeshed-fallback/stdlib/_warnings.pyi",
+    18,
+    8,
+    18,
+    12
+   ],
+   [
+    "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/_py_warnings.py",
+    442,
+    4,
+    442,
+    8
+   ]
+  ],
+  "actual": [
+   [
+    "temp/lsp_servers/pyright-1.1.414/node_modules/pyright/dist/typeshed-fallback/stdlib/_warnings.pyi",
+    9,
+    8,
+    9,
+    12
+   ],
+   [
+    "temp/lsp_servers/pyright-1.1.414/node_modules/pyright/dist/typeshed-fallback/stdlib/_warnings.pyi",
+    18,
+    8,
+    18,
+    12
+   ]
+  ]
+ },
+ "ops_after": 2,
+ "total_seconds": 207.4
+}

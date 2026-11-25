@@ -1,0 +1,92 @@
+{
+ "queries": [
+  "\"rename file\" in:title repo:microsoft/pyright is:issue",
+  "definition missing repo:microsoft/pyright is:issue",
+  "definition \"rename file\" repo:microsoft/pyright is:issue",
+  "definition stale repo:microsoft/pyright is:issue"
+ ],
+ "matches": [
+  {
+   "repo": "microsoft/pyright",
+   "number": 375,
+   "title": "rename symbol only seems to apply to open files",
+   "url": "https://github.com/microsoft/pyright/issues/375",
+   "state": "closed",
+   "created": "2019-11-28",
+   "comments": 7,
+   "query": "\"rename file\" in:title repo:microsoft/pyright is:issue"
+  },
+  {
+   "repo": "microsoft/pyright",
+   "number": 11470,
+   "title": "Pyright is incorrectly handling overload functions",
+   "url": "https://github.com/microsoft/pyright/issues/11470",
+   "state": "closed",
+   "created": "2026-05-28",
+   "comments": 3,
+   "query": "definition missing repo:microsoft/pyright is:issue"
+  },
+  {
+   "repo": "microsoft/pyright",
+   "number": 10845,
+   "title": "Methods of a variadic generic class become uncallable when specified with TypeVarTuple and a suffix",
+   "url": "https://github.com/microsoft/pyright/issues/10845",
+   "state": "closed",
+   "created": "2025-08-25",
+   "comments": 1,
+   "query": "definition missing repo:microsoft/pyright is:issue"
+  },
+  {
+   "repo": "microsoft/pyright",
+   "number": 3968,
+   "title": "Pyright reports reportMissingSuperCall in a class that is not a subclass",
+   "url": "https://github.com/microsoft/pyright/issues/3968",
+   "state": "closed",
+   "created": "2022-09-20",
+   "comments": 8,
+   "query": "definition missing repo:microsoft/pyright is:issue"
+  },
+  {
+   "repo": "microsoft/pyright",
+   "number": 3013,
+   "title": "Strict Setting for Return Types",
+   "url": "https://github.com/microsoft/pyright/issues/3013",
+   "state": "closed",
+   "created": "2022-02-09",
+   "comments": 22,
+   "query": "definition missing repo:microsoft/pyright is:issue"
+  },
+  {
+   "repo": "microsoft/pyright",
+   "number": 6237,
+   "title": "reportUnsupportedDunderAll does not consider submodule names in __all__",
+   "url": "https://github.com/microsoft/pyright/issues/6237",
+   "state": "closed",
+   "created": "2023-10-26",
+   "comments": 6,
+   "query": "definition missing repo:microsoft/pyright is:issue"
+  },
+  {
+   "repo": "microsoft/pyright",
+   "number": 4513,
+   "title": "Type of \"xstate\" could not be determined because it refers to itself",
+   "url": "https://github.com/microsoft/pyright/issues/4513",
+   "state": "closed",
+   "created": "2023-01-23",
+   "comments": 11,
+   "query": "definition \"rename file\" repo:microsoft/pyright is:issue"
+  },
+  {
+   "repo": "microsoft/pyright",
+   "number": 395,
+   "title": " 1.1.8 not work when using multi-root workspace",
+   "url": "https://github.com/microsoft/pyright/issues/395",
+   "state": "closed",
+   "created": "2019-12-06",
+   "comments": 21,
+   "query": "definition \"rename file\" repo:microsoft/pyright is:issue"
+  }
+ ],
+ "notes": [],
+ "authenticated": true
+}

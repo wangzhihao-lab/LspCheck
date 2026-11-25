@@ -1,0 +1,48 @@
+{
+ "vid": "d76274109238-v00",
+ "ops_before": 3,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 1,
+ "cache_hits": 0,
+ "reduce_seconds": 0.003,
+ "budget_exhausted": false,
+ "probe_log": [
+  [
+   2,
+   false
+  ]
+ ],
+ "logs": [
+  "ts6-6.0.3-tre5d199-r4-replay-baseline-20261119-031326-0018d7.jsonl.gz",
+  "ts6-6.0.3-tre5d199-r4-replay-case-20261119-031305-8ced8f.jsonl.gz",
+  "ts6-6.0.3-tre5d199-r4-replay-control-20261119-031344-70ea24.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [],
+  "actual": [
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2448",
+    "typescript",
+    "Block-scoped variable 'folder' used before its declaration."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7022",
+    "typescript",
+    "'folder' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer."
+   ]
+  ]
+ },
+ "ops_after": 3,
+ "total_seconds": 207.8
+}

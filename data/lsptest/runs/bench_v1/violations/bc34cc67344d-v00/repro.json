@@ -1,0 +1,245 @@
+{
+ "format": 1,
+ "campaign": "bench_v1",
+ "vid": "bc34cc67344d-v00",
+ "run_id": "bc34cc67344d",
+ "oracle": "r1_history",
+ "server": {
+  "kind": "tsserver",
+  "version": "5.7.2+tsls4.3.3"
+ },
+ "project": {
+  "name": "tsserver-60186",
+  "source": "dir",
+  "ref": "data/lsp_bench/cases/tsserver-60186/project",
+  "commit": "",
+  "language": "typescript"
+ },
+ "context": {
+  "seed": 3,
+  "timing": "settled",
+  "settle_timeout_s": 120.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "E.ts",
+    "positions": [
+     [
+      0,
+      12
+     ],
+     [
+      1,
+      4
+     ],
+     [
+      2,
+      4
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      13
+     ],
+     [
+      1,
+      5
+     ],
+     [
+      2,
+      5
+     ]
+    ],
+    "names": [
+     "E",
+     "A",
+     "B"
+    ]
+   },
+   {
+    "path": "index.ts",
+    "positions": [
+     [
+      0,
+      9
+     ],
+     [
+      0,
+      15
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      1,
+      5
+     ],
+     [
+      2,
+      4
+     ],
+     [
+      2,
+      7
+     ],
+     [
+      5,
+      6
+     ],
+     [
+      5,
+      8
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      10
+     ],
+     [
+      0,
+      17
+     ],
+     [
+      1,
+      4
+     ],
+     [
+      1,
+      6
+     ],
+     [
+      2,
+      5
+     ],
+     [
+      2,
+      8
+     ],
+     [
+      5,
+      7
+     ],
+     [
+      5,
+      9
+     ]
+    ],
+    "names": [
+     "E",
+     "from",
+     "type",
+     "T",
+     "e",
+     "E",
+     "t",
+     "T"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "completion",
+  "path": "index.ts",
+  "line": 0,
+  "character": 10,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "E.ts"
+  },
+  {
+   "kind": "open",
+   "path": "index.ts"
+  },
+  {
+   "kind": "fs_rename",
+   "path": "E.ts",
+   "new_path": "E_rt.ts"
+  },
+  {
+   "kind": "fs_rename",
+   "path": "E_rt.ts",
+   "new_path": "E.ts"
+  }
+ ],
+ "case": {
+  "chain_step": 0,
+  "families": [],
+  "family": "H5",
+  "history_index": 11,
+  "history_seed": 3015,
+  "mode": "fresh",
+  "note": "rename E.ts -> E_rt.ts -> back",
+  "seed": 3,
+  "timing": "settled"
+ },
+ "shape": "completion:missing",
+ "signature": "tsserver|r1_history|completion:missing",
+ "expected": [
+  "E",
+  "type"
+ ],
+ "actual": [
+  "type"
+ ],
+ "reproduced": "3/3",
+ "note": "H5: rename E.ts -> E_rt.ts -> back; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 63s",
+ "violation": {
+  "oracle": "r1_history",
+  "server": "tsserver-5.7.2+tsls4.3.3",
+  "project": "tsserver-60186",
+  "key": {
+   "method": "completion",
+   "path": "index.ts",
+   "line": 0,
+   "character": 10,
+   "extra": ""
+  },
+  "expected": [
+   "E",
+   "type"
+  ],
+  "actual": [
+   "type"
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "E.ts"
+   },
+   {
+    "kind": "open",
+    "path": "index.ts"
+   },
+   {
+    "kind": "fs_rename",
+    "path": "E.ts",
+    "new_path": "E_rt.ts"
+   },
+   {
+    "kind": "fs_rename",
+    "path": "E_rt.ts",
+    "new_path": "E.ts"
+   }
+  ],
+  "detail": "{\"case\": {\"chain_step\": 0, \"families\": [], \"family\": \"H5\", \"history_index\": 11, \"history_seed\": 3015, \"mode\": \"fresh\", \"note\": \"rename E.ts -> E_rt.ts -> back\", \"seed\": 3, \"timing\": \"settled\"}, \"note\": \"H5: rename E.ts -> E_rt.ts -> back; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 63s\", \"shape\": \"completion:missing\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "tsserver|r1_history|completion:missing",
+  "run_id": "bc34cc67344d"
+ },
+ "replay_logs": [
+  "logs/tsserver-5.7.2+tsls4.3.3-bc34cc67344d-replay-baseline-20260925-113421-9376ca.jsonl.gz",
+  "logs/tsserver-5.7.2+tsls4.3.3-bc34cc67344d-replay-control-20260925-113421-d91240.jsonl.gz",
+  "logs/tsserver-5.7.2+tsls4.3.3-bc34cc67344d-replay-history-20260925-113425-0b4e2b.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

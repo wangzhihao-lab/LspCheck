@@ -1,0 +1,3 @@
+2026-09-25 10:35:44,217 INFO campaign_run run 880bb28c5cd3: r2_handles on tsserver 5.5.4+tsls4.3.3, tsserver-59116 seed 2 settled, targets ['lib.ts', 'main.ts']
+2026-09-25 10:37:16,723 INFO campaign_run run 880bb28c5cd3: 0 candidate(s) in 93s; confirming
+2026-09-25 10:37:16,725 INFO campaign_run run 880bb28c5cd3 finished: ok, 0 confirmed of 0 candidate(s), 93s

@@ -1,0 +1,3 @@
+2026-11-18 16:14:16,058 INFO campaign_run run e6c4aad6b978: r1_history on pyright 1.1.414, karpathy/nanochat@92d63d4e8bb4 seed 3 settled, targets ['nanochat/checkpoint_manager.py', 'nanochat/dataloader.py', 'nanochat/optim.py']
+2026-11-18 16:20:17,677 INFO campaign_run run e6c4aad6b978: 0 candidate(s) in 362s; confirming
+2026-11-18 16:20:17,678 INFO campaign_run run e6c4aad6b978 finished: ok, 0 confirmed of 0 candidate(s), 362s

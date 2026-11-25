@@ -1,0 +1,9 @@
+2026-11-18 20:16:52,778 INFO campaign_run run de1a4347e97f: r1_history on pyright 1.1.414, soimort/you-get@049548f3f3f3 seed 3 settled, targets ['setup.py', 'src/you_get/extractors/bilibili.py', 'src/you_get/extractors/iqiyi.py']
+2026-11-18 20:25:42,956 INFO campaign_run run de1a4347e97f: 4 candidate(s) in 530s; confirming
+2026-11-18 20:26:16,386 INFO flake replay 1/3 of pyright|r1_history|hover:text: settled=True control_stable=True reproduced=True (33.4s)
+2026-11-18 20:26:50,402 INFO flake replay 2/3 of pyright|r1_history|hover:text: settled=True control_stable=True reproduced=True (34.0s)
+2026-11-18 20:27:23,505 INFO flake replay 3/3 of pyright|r1_history|hover:text: settled=True control_stable=True reproduced=True (33.1s)
+2026-11-18 20:27:57,360 INFO flake replay 1/3 of pyright|r1_history|typeDefinition:extra: settled=True control_stable=True reproduced=True (33.9s)
+2026-11-18 20:28:35,383 INFO flake replay 2/3 of pyright|r1_history|typeDefinition:extra: settled=True control_stable=True reproduced=True (38.0s)
+2026-11-18 20:29:08,766 INFO flake replay 3/3 of pyright|r1_history|typeDefinition:extra: settled=True control_stable=True reproduced=True (33.4s)
+2026-11-18 20:29:08,850 INFO campaign_run run de1a4347e97f finished: ok, 2 confirmed of 4 candidate(s), 736s

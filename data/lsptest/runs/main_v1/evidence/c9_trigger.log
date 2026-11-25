@@ -1,0 +1,6 @@
+all seven operations: reproduced (3/3) 
+without the edit of termios_unix.go: not-reproduced (0/3) 
+open, edit and close termios_unix.go only: reproduced (3/3) 
+open and close termios_unix.go only: not-reproduced (0/3) 
+without termios_unix.go: not-reproduced (0/3) 
+open examples/http/main.go only: not-reproduced (0/3) 

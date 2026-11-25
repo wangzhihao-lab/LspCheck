@@ -1,0 +1,98 @@
+{
+ "schema": 1,
+ "id": "rust-analyzer-18144",
+ "meta": {
+  "server": "rust-analyzer",
+  "kind": "rust-analyzer",
+  "number": 18144,
+  "url": "https://github.com/rust-lang/rust-analyzer/issues/18144",
+  "title": "RA warns allowed lints that have comments",
+  "oracle_class": "R5",
+  "subtype": "comment",
+  "fix_ref": "rust-lang/rust-analyzer#18146 (fix: Remove check that text of `parse_expr_from_str()` matches the produced parsed tree)",
+  "fix_shas": [
+   "6dad8c5528976a831ec421c91d878884ce01ca6f"
+  ],
+  "pre_version": "2024-09-16",
+  "post_version": "2024-09-30",
+  "pre_build": "2024-09-16",
+  "post_build": "2024-09-30",
+  "build_notes": "GitHub release assets rust-analyzer-aarch64-apple-darwin.gz of the weekly tags 2024-09-16 and 2024-09-30; git tag --contains puts the fix first in 2024-09-23, whose release lacks the macOS arm64 asset, so the next release is the post build. The sysroot is the local rustup toolchain (rustc 1.98.1).",
+  "effort_minutes": 15,
+  "notes": "Lint attributes were read by re-parsing the attribute's token text as an expression and rejecting the result when its text differed from the input; a comment inside allow(...) made the texts differ, so the allow was ignored. The window is widened to 2024-09-30 because the 2024-09-23 release lacks the macOS arm64 asset (candidate mapping).",
+  "candidate_rank": 20
+ },
+ "language": "rust",
+ "settings": {},
+ "settings_note": "The issue names no settings; the session keeps checkOnSave off (native analysis only).",
+ "session": {
+  "settle_timeout_s": 240,
+  "request_timeout_s": 60,
+  "pull_diagnostics": false
+ },
+ "files": [
+  {
+   "path": "src/lib.rs",
+   "provenance": "scaffold",
+   "source": "",
+   "note": "the fix's regression test allow_with_comment (crates/ide-diagnostics/src/handlers/incorrect_case.rs at 6dad8c55) without its comment line '// Yo, sup', which the transformation inserts; the issue shows the code only in screenshots"
+  },
+  {
+   "path": "Cargo.toml",
+   "provenance": "scaffold",
+   "source": "",
+   "note": "a library crate around the snippet (package name, version, edition 2021)"
+  }
+ ],
+ "repro": {
+  "attempt": 2,
+  "timing": "settled",
+  "steps": "The issue's report: a comment placed above the lint name inside #[allow(...)] makes the allow a no-op, so the suppressed warning reappears. Transformation: insert the comment line '    // Yo, sup' inside the allow list (at line 1) of src/lib.rs, which allows non_snake_case for fn foo(_HelloWorld: ()). Probe: the file's pushed diagnostics (textDocument/publishDiagnostics; the pre build does not implement textDocument/diagnostic) of the transformed copy, mapped back to the original lines, must equal those of the original (fresh session and fresh control); the pre-fix build reports the incorrect-case warning on _HelloWorld only in the commented copy.",
+  "ops": [
+   {
+    "kind": "open",
+    "path": "src/lib.rs"
+   }
+  ],
+  "probe": {
+   "type": "transform_differs",
+   "params": {
+    "transform": {
+     "kind": "insert_lines",
+     "path": "src/lib.rs",
+     "line": 1,
+     "text": "    // Yo, sup\n"
+    },
+    "queries": [
+     {
+      "method": "diagnostics",
+      "path": "src/lib.rs"
+     }
+    ]
+   }
+  }
+ },
+ "attempts": [
+  {
+   "attempt": 1,
+   "timing": "settled",
+   "probe": "transform_differs",
+   "summary": "Query textDocument/diagnostic (pull): not-reproduced-pre, because the pre build 2024-09-16 answers every pull request with -32601 'unknown request' (pull diagnostics arrived in rust-analyzer between 2024-09-16 and 2024-09-30), so fresh, control and transformed sessions all gave the same error. The pushed diagnostics of the same sessions show the bug: the transformed copy (comment inside allow) received the warning 'Parameter `_HelloWorld` should have snake_case name' (non_snake_case, 4:7-4:18) and the original none. A probe-route error of the case, not a negative result; attempt 2 queries the pushed diagnostics.",
+   "verdict": "not-reproduced-pre (pull diagnostics unsupported by the pre build)",
+   "params": {
+    "transform": {
+     "kind": "insert_lines",
+     "path": "src/lib.rs",
+     "line": 1,
+     "text": "    // Yo, sup\n"
+    },
+    "queries": [
+     {
+      "method": "diagnostics",
+      "path": "src/lib.rs"
+     }
+    ]
+   }
+  }
+ ]
+}

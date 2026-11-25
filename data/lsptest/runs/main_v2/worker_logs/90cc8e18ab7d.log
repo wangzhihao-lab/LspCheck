@@ -1,0 +1,6 @@
+2026-11-18 06:02:25,965 INFO campaign_run run 90cc8e18ab7d: r1_history on gopls v0.23.0, docker/compose@c6dffb26bdfd seed 1 settled, targets ['internal/tracing/mux.go', 'pkg/compose/model.go', 'pkg/watch/temp.go']
+2026-11-18 06:10:20,219 INFO campaign_run run 90cc8e18ab7d: 11 candidate(s) in 474s; confirming
+2026-11-18 06:11:24,380 INFO flake replay 1/3 of gopls|r1_history|completion:extra: settled=True control_stable=False reproduced=False (64.2s)
+2026-11-18 06:12:27,424 INFO flake replay 2/3 of gopls|r1_history|completion:extra: settled=True control_stable=True reproduced=True (63.0s)
+2026-11-18 06:13:31,280 INFO flake replay 3/3 of gopls|r1_history|completion:extra: settled=True control_stable=True reproduced=True (63.9s)
+2026-11-18 06:13:31,286 INFO campaign_run run 90cc8e18ab7d finished: ok, 0 confirmed of 11 candidate(s), 665s

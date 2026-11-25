@@ -1,0 +1,558 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "11b3a40bbec3-v00",
+ "run_id": "11b3a40bbec3",
+ "oracle": "r4_edits",
+ "server": {
+  "kind": "rust-analyzer",
+  "version": "2026-09-21"
+ },
+ "project": {
+  "name": "sxyazi/yazi@0ea4c5d9ef75",
+  "source": "corpus",
+  "ref": "temp/corpus/sxyazi__yazi@0ea4c5d9ef75",
+  "commit": "0ea4c5d9ef75d7165c2e3b4eb8d713fc11f26c96",
+  "language": "rust"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "yazi-fs/src/mounts/partition.rs",
+    "positions": [
+     [
+      3,
+      15
+     ],
+     [
+      8,
+      21
+     ],
+     [
+      10,
+      19
+     ],
+     [
+      12,
+      9
+     ],
+     [
+      26,
+      41
+     ],
+     [
+      26,
+      64
+     ],
+     [
+      27,
+      11
+     ],
+     [
+      32,
+      7
+     ],
+     [
+      32,
+      42
+     ],
+     [
+      58,
+      6
+     ],
+     [
+      63,
+      10
+     ],
+     [
+      67,
+      9
+     ]
+    ],
+    "ends": [
+     [
+      3,
+      20
+     ],
+     [
+      8,
+      24
+     ],
+     [
+      10,
+      21
+     ],
+     [
+      12,
+      14
+     ],
+     [
+      26,
+      44
+     ],
+     [
+      26,
+      72
+     ],
+     [
+      27,
+      12
+     ],
+     [
+      32,
+      8
+     ],
+     [
+      32,
+      45
+     ],
+     [
+      58,
+      7
+     ],
+     [
+      63,
+      11
+     ],
+     [
+      67,
+      11
+     ]
+    ],
+    "names": [
+     "Partition",
+     "Option",
+     "u64",
+     "removable",
+     "map_or",
+     "as_encoded_bytes",
+     "b",
+     "_b",
+     "map_or",
+     "s",
+     "s",
+     "std"
+    ]
+   },
+   {
+    "path": "yazi-parser/src/tasks/spawn.rs",
+    "positions": [
+     [
+      1,
+      6
+     ],
+     [
+      1,
+      45
+     ],
+     [
+      2,
+      25
+     ],
+     [
+      3,
+      9
+     ],
+     [
+      5,
+      5
+     ],
+     [
+      10,
+      8
+     ],
+     [
+      10,
+      17
+     ],
+     [
+      11,
+      24
+     ],
+     [
+      13,
+      55
+     ],
+     [
+      14,
+      23
+     ],
+     [
+      23,
+      19
+     ],
+     [
+      23,
+      77
+     ]
+    ],
+    "ends": [
+     [
+      1,
+      8
+     ],
+     [
+      1,
+      47
+     ],
+     [
+      2,
+      29
+     ],
+     [
+      3,
+      15
+     ],
+     [
+      5,
+      8
+     ],
+     [
+      10,
+      12
+     ],
+     [
+      10,
+      22
+     ],
+     [
+      11,
+      27
+     ],
+     [
+      13,
+      58
+     ],
+     [
+      14,
+      27
+     ],
+     [
+      23,
+      20
+     ],
+     [
+      23,
+      83
+     ]
+    ],
+    "names": [
+     "mlua",
+     "Lua",
+     "TaskOpt",
+     "yazi_shared",
+     "derive",
+     "TryFrom",
+     "ActionCow",
+     "Error",
+     "Error",
+     "take_any",
+     "_",
+     "into_lua_err"
+    ]
+   },
+   {
+    "path": "yazi-vfs/src/entries.rs",
+    "positions": [
+     [
+      9,
+      70
+     ],
+     [
+      11,
+      10
+     ],
+     [
+      11,
+      57
+     ],
+     [
+      13,
+      17
+     ],
+     [
+      24,
+      33
+     ],
+     [
+      45,
+      16
+     ],
+     [
+      46,
+      33
+     ],
+     [
+      49,
+      18
+     ],
+     [
+      54,
+      40
+     ],
+     [
+      57,
+      28
+     ],
+     [
+      69,
+      56
+     ],
+     [
+      76,
+      16
+     ]
+    ],
+    "ends": [
+     [
+      9,
+      79
+     ],
+     [
+      11,
+      17
+     ],
+     [
+      11,
+      58
+     ],
+     [
+      13,
+      19
+     ],
+     [
+      24,
+      34
+     ],
+     [
+      45,
+      23
+     ],
+     [
+      46,
+      35
+     ],
+     [
+      49,
+      20
+     ],
+     [
+      54,
+      42
+     ],
+     [
+      57,
+      30
+     ],
+     [
+      69,
+      58
+     ],
+     [
+      76,
+      21
+     ]
+    ],
+    "names": [
+     "UnboundedReceiver",
+     "from_dir_bulk",
+     "io",
+     "file",
+     "ok",
+     "from_dir_bulk",
+     "dir",
+     "dent",
+     "Vec",
+     "file",
+     "File",
+     "PARTITIONS"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "diagnostics",
+  "path": "yazi-fs/src/mounts/partition.rs",
+  "line": 54,
+  "character": 1,
+  "extra": "quickfix:Remove all unused imports"
+ },
+ "ops": [],
+ "case": {
+  "action_kind": "quickfix",
+  "check": "persist",
+  "diag": {
+   "code": "inactive_code",
+   "message": "code is inactive due to #[cfg] directives: target_os = \"linux\" is disabled",
+   "range": {
+    "end": {
+     "character": 2,
+     "line": 74
+    },
+    "start": {
+     "character": 1,
+     "line": 54
+    }
+   },
+   "severity": 4
+  },
+  "kind": "quickfix",
+  "mapped": [
+   [
+    54,
+    1
+   ],
+   [
+    73,
+    2
+   ],
+   true
+  ],
+  "path": "yazi-fs/src/mounts/partition.rs",
+  "title": "Remove all unused imports",
+  "via": "resolve"
+ },
+ "shape": "diagnostics:extra:inactive_code",
+ "signature": "rust-analyzer|r4_edits|diagnostics:extra:inactive_code",
+ "expected": [
+  [
+   33,
+   2,
+   36,
+   3,
+   4,
+   "inactive_code",
+   "rust-analyzer",
+   "code is inactive due to #[cfg] directives: target_os = \"linux\" is disabled"
+  ],
+  [
+   41,
+   2,
+   44,
+   3,
+   4,
+   "inactive_code",
+   "rust-analyzer",
+   "code is inactive due to #[cfg] directives: target_os = \"macos\" is enabled"
+  ]
+ ],
+ "actual": [
+  [
+   33,
+   2,
+   36,
+   3,
+   4,
+   "inactive_code",
+   "rust-analyzer",
+   "code is inactive due to #[cfg] directives: target_os = \"linux\" is disabled"
+  ],
+  [
+   41,
+   2,
+   44,
+   3,
+   4,
+   "inactive_code",
+   "rust-analyzer",
+   "code is inactive due to #[cfg] directives: target_os = \"macos\" is enabled"
+  ],
+  [
+   54,
+   1,
+   73,
+   2,
+   4,
+   "inactive_code",
+   "rust-analyzer",
+   "code is inactive due to #[cfg] directives: target_os = \"linux\" is disabled"
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "quick fix 'Remove all unused imports' for inactive_code at yazi-fs/src/mounts/partition.rs:55:2 leaves the diagnostic at the mapped range [[54, 1], [73, 2], True]; confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 706s",
+ "violation": {
+  "oracle": "r4_edits",
+  "server": "rust-analyzer-2026-09-21",
+  "project": "sxyazi/yazi@0ea4c5d9ef75",
+  "key": {
+   "method": "diagnostics",
+   "path": "yazi-fs/src/mounts/partition.rs",
+   "line": 54,
+   "character": 1,
+   "extra": "quickfix:Remove all unused imports"
+  },
+  "expected": [
+   [
+    33,
+    2,
+    36,
+    3,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives: target_os = \"linux\" is disabled"
+   ],
+   [
+    41,
+    2,
+    44,
+    3,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives: target_os = \"macos\" is enabled"
+   ]
+  ],
+  "actual": [
+   [
+    33,
+    2,
+    36,
+    3,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives: target_os = \"linux\" is disabled"
+   ],
+   [
+    41,
+    2,
+    44,
+    3,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives: target_os = \"macos\" is enabled"
+   ],
+   [
+    54,
+    1,
+    73,
+    2,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives: target_os = \"linux\" is disabled"
+   ]
+  ],
+  "ops": [],
+  "detail": "{\"case\": {\"action_kind\": \"quickfix\", \"check\": \"persist\", \"diag\": {\"code\": \"inactive_code\", \"message\": \"code is inactive due to #[cfg] directives: target_os = \\\"linux\\\" is disabled\", \"range\": {\"end\": {\"character\": 2, \"line\": 74}, \"start\": {\"character\": 1, \"line\": 54}}, \"severity\": 4}, \"kind\": \"quickfix\", \"mapped\": [[54, 1], [73, 2], true], \"path\": \"yazi-fs/src/mounts/partition.rs\", \"title\": \"Remove all unused imports\", \"via\": \"resolve\"}, \"note\": \"quick fix 'Remove all unused imports' for inactive_code at yazi-fs/src/mounts/partition.rs:55:2 leaves the diagnostic at the mapped range [[54, 1], [73, 2], True]; confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 706s\", \"shape\": \"diagnostics:extra:inactive_code\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "rust-analyzer|r4_edits|diagnostics:extra:inactive_code",
+  "run_id": "11b3a40bbec3"
+ },
+ "replay_logs": [
+  "logs/rust-analyzer-2026-09-21-11b3a40bbec3-r4-replay-baseline-20260923-153343-9749b3.jsonl.gz",
+  "logs/rust-analyzer-2026-09-21-11b3a40bbec3-r4-replay-case-20260923-153227-e7a05c.jsonl.gz",
+  "logs/rust-analyzer-2026-09-21-11b3a40bbec3-r4-replay-control-20260923-153529-60b347.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

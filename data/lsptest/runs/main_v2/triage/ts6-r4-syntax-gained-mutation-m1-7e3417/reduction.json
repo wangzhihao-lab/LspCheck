@@ -1,0 +1,33 @@
+{
+ "vid": "fa21096f3d2f-v01",
+ "ops_before": 3,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 2,
+ "cache_hits": 0,
+ "reduce_seconds": 6.757,
+ "budget_exhausted": false,
+ "probe_log": [
+  [
+   2,
+   false
+  ],
+  [
+   2,
+   false
+  ]
+ ],
+ "logs": [
+  "ts6-6.0.3-tr7e3417-r4-replay-baseline-20261119-033515-8db6aa.jsonl.gz",
+  "ts6-6.0.3-tr7e3417-r4-replay-case-20261119-033500-f8e6bd.jsonl.gz",
+  "ts6-6.0.3-tr7e3417-r4-replay-control-20261119-033526-32c2e6.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [],
+  "actual": [
+   "TS17002 Expected corresponding JSX closing tag for 'eval'."
+  ]
+ },
+ "ops_after": 3,
+ "total_seconds": 142.7
+}

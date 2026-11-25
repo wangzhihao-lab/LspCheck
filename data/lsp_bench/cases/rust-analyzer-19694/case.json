@@ -1,0 +1,74 @@
+{
+ "schema": 1,
+ "id": "rust-analyzer-19694",
+ "meta": {
+  "server": "rust-analyzer",
+  "kind": "rust-analyzer",
+  "number": 19694,
+  "url": "https://github.com/rust-lang/rust-analyzer/issues/19694",
+  "title": "Completion raw_ident label fail",
+  "oracle_class": "R4",
+  "subtype": "completion",
+  "fix_ref": "rust-lang/rust-analyzer#19699 (fix: Escape raw names in labels properly)",
+  "fix_shas": [
+   "fe7b4f2ad96f7c13cc571f45edc2c578b35dddb4"
+  ],
+  "pre_version": "2025-04-28",
+  "post_version": "2025-05-05",
+  "pre_build": "2025-04-28",
+  "post_build": "2025-05-05",
+  "build_notes": "GitHub release assets rust-analyzer-aarch64-apple-darwin.gz of the weekly tags 2025-04-28 and 2025-05-05; git tag --contains puts the fix first in 2025-05-05. The sysroot is the local rustup toolchain (rustc 1.98.1).",
+  "effort_minutes": 5,
+  "notes": "Label completion printed the raw label name without its r# prefix, inserting 'break instead of 'r#break, and a keyword is not a valid label name.",
+  "candidate_rank": 59
+ },
+ "language": "rust",
+ "settings": {},
+ "settings_note": "The issue names no settings; the session keeps checkOnSave off (native analysis only).",
+ "session": {
+  "settle_timeout_s": 240,
+  "request_timeout_s": 60,
+  "pull_diagnostics": false
+ },
+ "files": [
+  {
+   "path": "src/main.rs",
+   "provenance": "issue",
+   "source": "issue body, first code block",
+   "note": ""
+  },
+  {
+   "path": "Cargo.toml",
+   "provenance": "scaffold",
+   "source": "",
+   "note": "a binary crate around the snippet (package name, version, edition 2021)"
+  }
+ ],
+ "repro": {
+  "attempt": 1,
+  "timing": "settled",
+  "steps": "Open src/main.rs. Request completion after the quote in \"break ';\" (line 2, character 15, before the semicolon) and accept the label item. Reported: \"break 'break;\" (labels cannot use keyword names); expected \"break 'r#break;\". Probe: the edited text must have no parse error that the original did not have.",
+  "ops": [
+   {
+    "kind": "open",
+    "path": "src/main.rs"
+   }
+  ],
+  "probe": {
+   "type": "edit_breaks_syntax",
+   "params": {
+    "edit": {
+     "via": "completion",
+     "path": "src/main.rs",
+     "position": [
+      2,
+      15
+     ],
+     "label_re": "break",
+     "missing": "invalid"
+    }
+   }
+  }
+ },
+ "attempts": []
+}

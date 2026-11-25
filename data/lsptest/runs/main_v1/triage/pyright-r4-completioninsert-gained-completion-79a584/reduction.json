@@ -1,0 +1,23 @@
+{
+ "vid": "d5f29969c6e6-v00",
+ "ops_before": 0,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 0,
+ "cache_hits": 0,
+ "reduce_seconds": 0.0,
+ "budget_exhausted": false,
+ "probe_log": [],
+ "logs": [
+  "pyright-1.1.414-tr79a584-r4-replay-case-20260925-174544-dad8ef.jsonl.gz",
+  "pyright-1.1.414-tr79a584-r4-replay-control-20260925-174553-e3a41e.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [],
+  "actual": [
+   "expected argument value expression"
+  ]
+ },
+ "ops_after": 0,
+ "total_seconds": 67.3
+}

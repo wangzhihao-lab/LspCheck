@@ -1,0 +1,733 @@
+{
+ "format": 1,
+ "campaign": "main_v2",
+ "vid": "76cde4f3a703-v01",
+ "run_id": "76cde4f3a703",
+ "oracle": "r4_edits",
+ "server": {
+  "kind": "ts6",
+  "version": "6.0.3"
+ },
+ "project": {
+  "name": "hexojs/hexo@751e856691bf",
+  "source": "corpus",
+  "ref": "temp/corpus/hexojs__hexo@751e856691bf",
+  "commit": "751e856691bfe24182cf8763feb29db0422dcfee",
+  "language": "typescript"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "lib/hexo/scaffold.ts",
+    "positions": [
+     [
+      0,
+      12
+     ],
+     [
+      6,
+      10
+     ],
+     [
+      24,
+      10
+     ],
+     [
+      34,
+      23
+     ],
+     [
+      46,
+      8
+     ],
+     [
+      50,
+      29
+     ],
+     [
+      50,
+      60
+     ],
+     [
+      53,
+      8
+     ],
+     [
+      56,
+      19
+     ],
+     [
+      60,
+      22
+     ],
+     [
+      68,
+      14
+     ],
+     [
+      75,
+      22
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      16
+     ],
+     [
+      6,
+      14
+     ],
+     [
+      24,
+      12
+     ],
+     [
+      34,
+      29
+     ],
+     [
+      46,
+      14
+     ],
+     [
+      50,
+      31
+     ],
+     [
+      50,
+      62
+     ],
+     [
+      53,
+      10
+     ],
+     [
+      56,
+      23
+     ],
+     [
+      60,
+      26
+     ],
+     [
+      68,
+      18
+     ],
+     [
+      75,
+      28
+     ]
+    ],
+    "names": [
+     "extname",
+     "Scaffold",
+     "join",
+     "scaffoldDir",
+     "_getScaffold",
+     "then",
+     "item",
+     "name",
+     "readFile",
+     "callback",
+     "extname",
+     "_getScaffold"
+    ]
+   },
+   {
+    "path": "test/fixtures/post_render.ts",
+    "positions": [
+     [
+      2,
+      8
+     ],
+     [
+      7,
+      16
+     ],
+     [
+      22,
+      4
+     ],
+     [
+      24,
+      17
+     ],
+     [
+      26,
+      14
+     ],
+     [
+      34,
+      4
+     ],
+     [
+      38,
+      6
+     ],
+     [
+      38,
+      14
+     ],
+     [
+      61,
+      4
+     ],
+     [
+      65,
+      43
+     ],
+     [
+      65,
+      67
+     ],
+     [
+      79,
+      4
+     ]
+    ],
+    "ends": [
+     [
+      2,
+      10
+     ],
+     [
+      7,
+      20
+     ],
+     [
+      22,
+      6
+     ],
+     [
+      24,
+      21
+     ],
+     [
+      26,
+      16
+     ],
+     [
+      34,
+      6
+     ],
+     [
+      38,
+      11
+     ],
+     [
+      38,
+      16
+     ],
+     [
+      61,
+      6
+     ],
+     [
+      65,
+      47
+     ],
+     [
+      65,
+      71
+     ],
+     [
+      79,
+      6
+     ]
+    ],
+    "names": [
+     "code",
+     "content",
+     "join",
+     "expected",
+     "code",
+     "join",
+     "highlight",
+     "code",
+     "join",
+     "replace",
+     "replace",
+     "join"
+    ]
+   },
+   {
+    "path": "test/scripts/tags/blockquote.ts",
+    "positions": [
+     [
+      0,
+      14
+     ],
+     [
+      5,
+      27
+     ],
+     [
+      5,
+      37
+     ],
+     [
+      7,
+      17
+     ],
+     [
+      16,
+      3
+     ],
+     [
+      22,
+      20
+     ],
+     [
+      31,
+      3
+     ],
+     [
+      32,
+      20
+     ],
+     [
+      37,
+      20
+     ],
+     [
+      39,
+      20
+     ],
+     [
+      40,
+      14
+     ],
+     [
+      42,
+      12
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      16
+     ],
+     [
+      5,
+      34
+     ],
+     [
+      5,
+      39
+     ],
+     [
+      7,
+      19
+     ],
+     [
+      16,
+      4
+     ],
+     [
+      22,
+      21
+     ],
+     [
+      31,
+      4
+     ],
+     [
+      32,
+      21
+     ],
+     [
+      37,
+      25
+     ],
+     [
+      39,
+      21
+     ],
+     [
+      40,
+      17
+     ],
+     [
+      42,
+      15
+     ]
+    ],
+    "names": [
+     "from",
+     "tagBlockquote",
+     "hexo",
+     "hexo",
+     "it",
+     "bq",
+     "it",
+     "bq",
+     "titlecase",
+     "bq",
+     "should",
+     "config"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "diagnostics",
+  "path": "lib/hexo/scaffold.ts",
+  "line": 42,
+  "character": 12,
+  "extra": "M1:quickfix-errors:Add import from \"bluebird\""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "lib/hexo/scaffold.ts"
+  },
+  {
+   "kind": "change",
+   "path": "lib/hexo/scaffold.ts",
+   "start": [
+    0,
+    16
+   ],
+   "end": [
+    0,
+    22
+   ]
+  },
+  {
+   "kind": "change",
+   "path": "lib/hexo/scaffold.ts",
+   "start": [
+    5,
+    0
+   ],
+   "end": [
+    5,
+    0
+   ],
+   "text": "import { join } from 'bluebird';\n"
+  }
+ ],
+ "case": {
+  "action_kind": "quickfix",
+  "base_errors": 2,
+  "check": "errors",
+  "diag": {
+   "code": 2304,
+   "message": "Cannot find name 'join'.",
+   "range": {
+    "end": {
+     "character": 16,
+     "line": 42
+    },
+    "start": {
+     "character": 12,
+     "line": 42
+    }
+   },
+   "severity": 1
+  },
+  "fix_introduced_errors": [
+   {
+    "code": 2322,
+    "message": "Type 'Bluebird<{ name: string; path: Bluebird<string[]>; }[]>' is not assignable to type 'Bluebird<{ name: string; path: string; }[]>'.\n  Type '{ name: string; path: Bluebird<string[]>; }[]' is not assignable to type '{ name: string; path: string; }[]'.\n    Type '{ name: string; path: Promise<string[]>; }' is not assignable to type '{ name: string; path: string; }'.\n      Types of property 'path' are incompatible.\n        Type 'Bluebird<string[]>' is not assignable to type 'string'.",
+    "path": "lib/hexo/scaffold.ts",
+    "range": {
+     "end": {
+      "character": 10,
+      "line": 35
+     },
+     "start": {
+      "character": 4,
+      "line": 35
+     }
+    },
+    "severity": 1
+   },
+   {
+    "code": 2345,
+    "message": "Argument of type 'string | Bluebird<string[]>' is not assignable to parameter of type 'string'.\n  Type 'Bluebird<string[]>' is not assignable to type 'string'.",
+    "path": "lib/hexo/scaffold.ts",
+    "range": {
+     "end": {
+      "character": 23,
+      "line": 69
+     },
+     "start": {
+      "character": 19,
+      "line": 69
+     }
+    },
+    "severity": 1
+   },
+   {
+    "code": 2345,
+    "message": "Argument of type 'string | Bluebird<string[]>' is not assignable to parameter of type 'string'.\n  Type 'Bluebird<string[]>' is not assignable to type 'string'.",
+    "path": "lib/hexo/scaffold.ts",
+    "range": {
+     "end": {
+      "character": 27,
+      "line": 71
+     },
+     "start": {
+      "character": 23,
+      "line": 71
+     }
+    },
+    "severity": 1
+   }
+  ],
+  "fix_ops": [
+   {
+    "end": [
+     5,
+     0
+    ],
+    "kind": "change",
+    "path": "lib/hexo/scaffold.ts",
+    "start": [
+     5,
+     0
+    ],
+    "text": "import { join } from 'bluebird';\n"
+   }
+  ],
+  "kind": "mutation",
+  "mutation": {
+   "end": [
+    0,
+    22
+   ],
+   "id": "M1",
+   "offsets": [
+    16,
+    22
+   ],
+   "sha": "7fd88a425ae7cf07",
+   "start": [
+    0,
+    16
+   ],
+   "text": "",
+   "what": "remove 'join' from an import"
+  },
+  "n_fix_ops": 1,
+  "path": "lib/hexo/scaffold.ts",
+  "post_errors": 5,
+  "title": "Add import from \"bluebird\"",
+  "via": "edit"
+ },
+ "shape": "diagnostics:extra:2322,2345",
+ "signature": "ts6|r4_edits|diagnostics:extra:2322,2345",
+ "expected": [
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "2322",
+   "typescript",
+   "Type 'Bluebird<{ name: string; path: string; } | undefined>' is not assignable to type 'Bluebird<{ name: string; path: string; }>'. Type '{ name: string; path: string; } | undefined' is not assignable to type '{ name: string; path: string; }'. Type 'undefined' is not assignable to type '{ name: string; path: string; }'."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7053",
+   "typescript",
+   "Element implicitly has an 'any' type because expression of type 'string' can't be used to index type '{ normal: string; }'. No index signature with a parameter of type 'string' was found on type '{ normal: string; }'."
+  ]
+ ],
+ "actual": [
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "2322",
+   "typescript",
+   "Type 'Bluebird<{ name: string; path: Bluebird<string[]>; }[]>' is not assignable to type 'Bluebird<{ name: string; path: string; }[]>'. Type '{ name: string; path: Bluebird<string[]>; }[]' is not assignable to type '{ name: string; path: string; }[]'. Type '{ name: string; path: Promise<string[]>; }' is not assignable to type '{ name: string; path: string; }'. Types of property 'path' are incompatible. Type 'Bluebird<string[]>' is not assignable to type 'string'."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "2322",
+   "typescript",
+   "Type 'Bluebird<{ name: string; path: string; } | undefined>' is not assignable to type 'Bluebird<{ name: string; path: string; }>'. Type '{ name: string; path: string; } | undefined' is not assignable to type '{ name: string; path: string; }'. Type 'undefined' is not assignable to type '{ name: string; path: string; }'."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "2345",
+   "typescript",
+   "Argument of type 'string | Bluebird<string[]>' is not assignable to parameter of type 'string'. Type 'Bluebird<string[]>' is not assignable to type 'string'."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "2345",
+   "typescript",
+   "Argument of type 'string | Bluebird<string[]>' is not assignable to parameter of type 'string'. Type 'Bluebird<string[]>' is not assignable to type 'string'."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7053",
+   "typescript",
+   "Element implicitly has an 'any' type because expression of type 'string' can't be used to index type '{ normal: string; }'. No index signature with a parameter of type 'string' was found on type '{ normal: string; }'."
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "quick fix 'Add import from \"bluebird\"' for 2304 at lib/hexo/scaffold.ts:43:13 raises the error count in the edited files from 2 to 5 (seeded by M1: remove 'join' from an import; errors before the mutation 2, after the fix 5); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 114s",
+ "violation": {
+  "oracle": "r4_edits",
+  "server": "ts6-6.0.3",
+  "project": "hexojs/hexo@751e856691bf",
+  "key": {
+   "method": "diagnostics",
+   "path": "lib/hexo/scaffold.ts",
+   "line": 42,
+   "character": 12,
+   "extra": "M1:quickfix-errors:Add import from \"bluebird\""
+  },
+  "expected": [
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2322",
+    "typescript",
+    "Type 'Bluebird<{ name: string; path: string; } | undefined>' is not assignable to type 'Bluebird<{ name: string; path: string; }>'. Type '{ name: string; path: string; } | undefined' is not assignable to type '{ name: string; path: string; }'. Type 'undefined' is not assignable to type '{ name: string; path: string; }'."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7053",
+    "typescript",
+    "Element implicitly has an 'any' type because expression of type 'string' can't be used to index type '{ normal: string; }'. No index signature with a parameter of type 'string' was found on type '{ normal: string; }'."
+   ]
+  ],
+  "actual": [
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2322",
+    "typescript",
+    "Type 'Bluebird<{ name: string; path: Bluebird<string[]>; }[]>' is not assignable to type 'Bluebird<{ name: string; path: string; }[]>'. Type '{ name: string; path: Bluebird<string[]>; }[]' is not assignable to type '{ name: string; path: string; }[]'. Type '{ name: string; path: Promise<string[]>; }' is not assignable to type '{ name: string; path: string; }'. Types of property 'path' are incompatible. Type 'Bluebird<string[]>' is not assignable to type 'string'."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2322",
+    "typescript",
+    "Type 'Bluebird<{ name: string; path: string; } | undefined>' is not assignable to type 'Bluebird<{ name: string; path: string; }>'. Type '{ name: string; path: string; } | undefined' is not assignable to type '{ name: string; path: string; }'. Type 'undefined' is not assignable to type '{ name: string; path: string; }'."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2345",
+    "typescript",
+    "Argument of type 'string | Bluebird<string[]>' is not assignable to parameter of type 'string'. Type 'Bluebird<string[]>' is not assignable to type 'string'."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2345",
+    "typescript",
+    "Argument of type 'string | Bluebird<string[]>' is not assignable to parameter of type 'string'. Type 'Bluebird<string[]>' is not assignable to type 'string'."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7053",
+    "typescript",
+    "Element implicitly has an 'any' type because expression of type 'string' can't be used to index type '{ normal: string; }'. No index signature with a parameter of type 'string' was found on type '{ normal: string; }'."
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "lib/hexo/scaffold.ts"
+   },
+   {
+    "kind": "change",
+    "path": "lib/hexo/scaffold.ts",
+    "start": [
+     0,
+     16
+    ],
+    "end": [
+     0,
+     22
+    ]
+   },
+   {
+    "kind": "change",
+    "path": "lib/hexo/scaffold.ts",
+    "start": [
+     5,
+     0
+    ],
+    "end": [
+     5,
+     0
+    ],
+    "text": "import { join } from 'bluebird';\n"
+   }
+  ],
+  "detail": "{\"case\": {\"action_kind\": \"quickfix\", \"base_errors\": 2, \"check\": \"errors\", \"diag\": {\"code\": 2304, \"message\": \"Cannot find name 'join'.\", \"range\": {\"end\": {\"character\": 16, \"line\": 42}, \"start\": {\"character\": 12, \"line\": 42}}, \"severity\": 1}, \"fix_introduced_errors\": [{\"code\": 2322, \"message\": \"Type 'Bluebird<{ name: string; path: Bluebird<string[]>; }[]>' is not assignable to type 'Bluebird<{ name: string; path: string; }[]>'.\\n  Type '{ name: string; path: Bluebird<string[]>; }[]' is not assignable to type '{ name: string; path: string; }[]'.\\n    Type '{ name: string; path: Promise<string[]>; }' is not assignable to type '{ name: string; path: string; }'.\\n      Types of property 'path' are incompatible.\\n        Type 'Bluebird<string[]>' is not assignable to type 'string'.\", \"path\": \"lib/hexo/scaffold.ts\", \"range\": {\"end\": {\"character\": 10, \"line\": 35}, \"start\": {\"character\": 4, \"line\": 35}}, \"severity\": 1}, {\"code\": 2345, \"message\": \"Argument of type 'string | Bluebird<string[]>' is not assignable to parameter of type 'string'.\\n  Type 'Bluebird<string[]>' is not assignable to type 'string'.\", \"path\": \"lib/hexo/scaffold.ts\", \"range\": {\"end\": {\"character\": 23, \"line\": 69}, \"start\": {\"character\": 19, \"line\": 69}}, \"severity\": 1}, {\"code\": 2345, \"message\": \"Argument of type 'string | Bluebird<string[]>' is not assignable to parameter of type 'string'.\\n  Type 'Bluebird<string[]>' is not assignable to type 'string'.\", \"path\": \"lib/hexo/scaffold.ts\", \"range\": {\"end\": {\"character\": 27, \"line\": 71}, \"start\": {\"character\": 23, \"line\": 71}}, \"severity\": 1}], \"fix_ops\": [{\"end\": [5, 0], \"kind\": \"change\", \"path\": \"lib/hexo/scaffold.ts\", \"start\": [5, 0], \"text\": \"import { join } from 'bluebird';\\n\"}], \"kind\": \"mutation\", \"mutation\": {\"end\": [0, 22], \"id\": \"M1\", \"offsets\": [16, 22], \"sha\": \"7fd88a425ae7cf07\", \"start\": [0, 16], \"text\": \"\", \"what\": \"remove 'join' from an import\"}, \"n_fix_ops\": 1, \"path\": \"lib/hexo/scaffold.ts\", \"post_errors\": 5, \"title\": \"Add import from \\\"bluebird\\\"\", \"via\": \"edit\"}, \"note\": \"quick fix 'Add import from \\\"bluebird\\\"' for 2304 at lib/hexo/scaffold.ts:43:13 raises the error count in the edited files from 2 to 5 (seeded by M1: remove 'join' from an import; errors before the mutation 2, after the fix 5); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 114s\", \"shape\": \"diagnostics:extra:2322,2345\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "ts6|r4_edits|diagnostics:extra:2322,2345",
+  "run_id": "76cde4f3a703"
+ },
+ "replay_logs": [
+  "logs/ts6-6.0.3-76cde4f3a703-r4-replay-baseline-20261118-153902-0042e9.jsonl.gz",
+  "logs/ts6-6.0.3-76cde4f3a703-r4-replay-case-20261118-153849-286985.jsonl.gz",
+  "logs/ts6-6.0.3-76cde4f3a703-r4-replay-control-20261118-153919-20491b.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

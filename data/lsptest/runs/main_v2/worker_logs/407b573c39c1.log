@@ -1,0 +1,3 @@
+2026-11-18 08:50:30,909 INFO campaign_run run 407b573c39c1: r1_history on ts7 7.0.2, date-fns/date-fns@f34149bb1ba1 seed 1 race0, targets ['pkgs/core/src/fp/differenceInCalendarQuartersWithOptions/index.ts', 'pkgs/core/src/fp/isSameWeek/index.ts', 'pkgs/core/src/fp/lastDayOfMonth/index.ts']
+2026-11-18 08:55:12,271 INFO campaign_run run 407b573c39c1: 0 candidate(s) in 282s; confirming
+2026-11-18 08:55:12,272 INFO campaign_run run 407b573c39c1 finished: ok, 0 confirmed of 0 candidate(s), 282s

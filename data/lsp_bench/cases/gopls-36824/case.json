@@ -1,0 +1,77 @@
+{
+ "schema": 1,
+ "id": "gopls-36824",
+ "meta": {
+  "server": "gopls",
+  "kind": "gopls",
+  "number": 36824,
+  "url": "https://github.com/golang/go/issues/36824",
+  "title": "x/tools/gopls: import organization fails on a single-line file",
+  "oracle_class": "R4",
+  "subtype": "organize",
+  "fix_ref": "golang/tools@253fce384c97 (internal/lsp: fix formatting edge cases (36824); CL 234900, 'Fixes golang/go#36824')",
+  "fix_shas": [
+   "253fce384c97181fd4207b7214f9aaa3aa44ec9b"
+  ],
+  "pre_version": "v0.4.1",
+  "post_version": "v0.4.2",
+  "pre_build": "v0.4.1",
+  "post_build": "v0.4.2",
+  "build_notes": "Both built with the local Go (go1.27.1) through a wrapper module (their go.mod replaces x/tools); the server runs the local go command. v0.4.1 was tagged 2020-05-13, the fix merged 2020-05-26, v0.4.2 was tagged 2020-07-01. A maintainer noted in April 2020 that the issue's second example had been fixed already; the first example is the one used here.",
+  "effort_minutes": 10,
+  "notes": "Import organization computed its edit from an imports-only parse of the file; on a one-line file the declarations after the package clause are on the same line, so the edit replaced the whole line by the organized import block and dropped the function. The fix parses the whole file when the import prefix has no newline."
+ },
+ "language": "go",
+ "settings": {},
+ "settings_note": "The issue names no settings; organize imports is the source.organizeImports code action.",
+ "session": {
+  "settle_timeout_s": 180
+ },
+ "files": [
+  {
+   "path": "x.go",
+   "provenance": "issue",
+   "source": "issue body, first code block (the first example)",
+   "note": ""
+  },
+  {
+   "path": "go.mod",
+   "provenance": "scaffold",
+   "source": "",
+   "note": "a module around the file (the issue gives none); go 1.14, the Go of the era"
+  }
+ ],
+ "repro": {
+  "attempt": 1,
+  "timing": "settled",
+  "steps": "Open x.go, the one-line file 'package x; func hello() { fmt.Print(\"\"); }' (fmt is not imported). Run organize imports (the source.organizeImports code action at 0:0). Reported: the result is 'package x' plus 'import \"fmt\"': the function is deleted. Probe: after the edit, a fresh session must report neither the undefined-fmt error the edit should clear nor any error the original did not have (here: fmt imported and not used).",
+  "ops": [
+   {
+    "kind": "open",
+    "path": "x.go"
+   }
+  ],
+  "probe": {
+   "type": "edit_leaves_diagnostic",
+   "params": {
+    "edit": {
+     "via": "code_action",
+     "path": "x.go",
+     "range": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "kind": "source.organizeImports",
+     "title_re": "(?i)organi[sz]e imports",
+     "missing": "invalid"
+    },
+    "target": {
+     "message_re": "(undeclared name|undefined): fmt"
+    }
+   }
+  }
+ },
+ "attempts": []
+}

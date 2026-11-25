@@ -1,0 +1,203 @@
+{
+ "oracle": "r5_transforms",
+ "server": "rust-analyzer",
+ "version": "2026-09-21",
+ "project": "rust-lang/rustlings@a650509c789d",
+ "language": "rust",
+ "seed": 1,
+ "targets": [
+  {
+   "path": "src/cargo_toml.rs",
+   "positions": [
+    [
+     1,
+     5
+    ],
+    [
+     29,
+     5
+    ],
+    [
+     55,
+     20
+    ],
+    [
+     71,
+     14
+    ],
+    [
+     92,
+     18
+    ],
+    [
+     94,
+     45
+    ],
+    [
+     122,
+     31
+    ],
+    [
+     129,
+     12
+    ]
+   ],
+   "ends": [
+    [
+     1,
+     7
+    ],
+    [
+     29,
+     7
+    ],
+    [
+     55,
+     29
+    ],
+    [
+     71,
+     24
+    ],
+    [
+     92,
+     30
+    ],
+    [
+     94,
+     46
+    ],
+    [
+     122,
+     33
+    ],
+    [
+     129,
+     17
+    ]
+   ],
+   "names": [
+    "std",
+    "buf",
+    "extend_from_slice",
+    "exercise_path_prefix",
+    "test_bins_start_end_ind",
+    "ok",
+    "new",
+    "assert_eq"
+   ]
+  },
+  {
+   "path": "src/watch/state.rs",
+   "positions": [
+    [
+     17,
+     22
+    ],
+    [
+     48,
+     17
+    ],
+    [
+     66,
+     46
+    ],
+    [
+     165,
+     13
+    ],
+    [
+     183,
+     31
+    ],
+    [
+     208,
+     12
+    ],
+    [
+     276,
+     15
+    ],
+    [
+     279,
+     27
+    ]
+   ],
+   "ends": [
+    [
+     17,
+     30
+    ],
+    [
+     48,
+     22
+    ],
+    [
+     66,
+     54
+    ],
+    [
+     165,
+     15
+    ],
+    [
+     183,
+     37
+    ],
+    [
+     208,
+     16
+    ],
+    [
+     276,
+     20
+    ],
+    [
+     279,
+     30
+    ]
+   ],
+   "names": [
+    "OUTPUT_CAPACITY",
+    "term_width",
+    "OUTPUT_CAPACITY",
+    "done",
+    "SetAttribute",
+    "show_key",
+    "show_hint",
+    "stdout"
+   ]
+  }
+ ],
+ "max_cases": 6,
+ "timing": "settled",
+ "result": {
+  "oracle": "r5_transforms",
+  "run_id": "r5_transforms-rust-analyzer-091048",
+  "cases": 6,
+  "invalid_cases": 0,
+  "sessions": 8,
+  "unsettled": 0,
+  "compared": {
+   "signatureHelp": 96,
+   "references": 96,
+   "completion": 96,
+   "hover": 96,
+   "definition": 96,
+   "documentHighlight": 96,
+   "typeDefinition": 96,
+   "inlayHint": 12,
+   "codeAction": 96,
+   "documentSymbol": 12,
+   "foldingRange": 12,
+   "diagnostics": 12,
+   "semanticTokens": 12
+  },
+  "unstable": {},
+  "seconds": 184.524,
+  "notes": [],
+  "candidates": []
+ },
+ "replays": [],
+ "total_seconds": 184.5
+}

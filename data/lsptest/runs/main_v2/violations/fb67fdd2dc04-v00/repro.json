@@ -1,0 +1,562 @@
+{
+ "format": 1,
+ "campaign": "main_v2",
+ "vid": "fb67fdd2dc04-v00",
+ "run_id": "fb67fdd2dc04",
+ "oracle": "r4_edits",
+ "server": {
+  "kind": "gopls",
+  "version": "v0.23.0"
+ },
+ "project": {
+  "name": "schollz/croc@5890191be511",
+  "source": "corpus",
+  "ref": "temp/corpus/schollz__croc@5890191be511",
+  "commit": "5890191be511f9d0e44fc2ccb83c9458ffb86208",
+  "language": "go"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "src/cli/updatecheck_test.go",
+    "positions": [
+     [
+      51,
+      4
+     ],
+     [
+      54,
+      12
+     ],
+     [
+      114,
+      15
+     ],
+     [
+      184,
+      98
+     ],
+     [
+      196,
+      17
+     ],
+     [
+      238,
+      15
+     ],
+     [
+      253,
+      6
+     ],
+     [
+      348,
+      8
+     ],
+     [
+      367,
+      6
+     ],
+     [
+      421,
+      46
+     ],
+     [
+      474,
+      4
+     ],
+     [
+      487,
+      14
+     ]
+    ],
+    "ends": [
+     [
+      51,
+      6
+     ],
+     [
+      54,
+      14
+     ],
+     [
+      114,
+      17
+     ],
+     [
+      184,
+      100
+     ],
+     [
+      196,
+      23
+     ],
+     [
+      238,
+      21
+     ],
+     [
+      253,
+      8
+     ],
+     [
+      348,
+      11
+     ],
+     [
+      367,
+      9
+     ],
+     [
+      421,
+      54
+     ],
+     [
+      474,
+      5
+     ],
+     [
+      487,
+      17
+     ]
+    ],
+    "names": [
+     "name",
+     "bool",
+     "test",
+     "Hour",
+     "closeServer",
+     "closeServer",
+     "err",
+     "Setenv",
+     "finish",
+     "ContinueOnError",
+     "t",
+     "atomic"
+    ]
+   },
+   {
+    "path": "src/comm/comm.go",
+    "positions": [
+     [
+      52,
+      5
+     ],
+     [
+      61,
+      7
+     ],
+     [
+      133,
+      35
+     ],
+     [
+      170,
+      62
+     ],
+     [
+      177,
+      9
+     ],
+     [
+      186,
+      15
+     ],
+     [
+      219,
+      7
+     ],
+     [
+      219,
+      28
+     ],
+     [
+      243,
+      29
+     ],
+     [
+      300,
+      11
+     ],
+     [
+      313,
+      40
+     ],
+     [
+      314,
+      40
+     ]
+    ],
+    "ends": [
+     [
+      52,
+      7
+     ],
+     [
+      61,
+      10
+     ],
+     [
+      133,
+      38
+     ],
+     [
+      170,
+      64
+     ],
+     [
+      177,
+      12
+     ],
+     [
+      186,
+      20
+     ],
+     [
+      219,
+      11
+     ],
+     [
+      219,
+      31
+     ],
+     [
+      243,
+      32
+     ],
+     [
+      300,
+      13
+     ],
+     [
+      313,
+      41
+     ],
+     [
+      314,
+      42
+     ]
+    ],
+    "names": [
+     "ctx",
+     "tlimit",
+     "proxy",
+     "err",
+     "Errorf",
+     "connection",
+     "written",
+     "header",
+     "Errorf",
+     "Comm",
+     "b",
+     "dst"
+    ]
+   },
+   {
+    "path": "src/croc/overwrite_test.go",
+    "positions": [
+     [
+      30,
+      49
+     ],
+     [
+      35,
+      6
+     ],
+     [
+      75,
+      5
+     ],
+     [
+      87,
+      12
+     ],
+     [
+      101,
+      4
+     ],
+     [
+      102,
+      32
+     ],
+     [
+      111,
+      49
+     ],
+     [
+      157,
+      38
+     ],
+     [
+      191,
+      9
+     ],
+     [
+      192,
+      65
+     ],
+     [
+      220,
+      6
+     ],
+     [
+      257,
+      22
+     ]
+    ],
+    "ends": [
+     [
+      30,
+      52
+     ],
+     [
+      35,
+      10
+     ],
+     [
+      75,
+      8
+     ],
+     [
+      87,
+      14
+     ],
+     [
+      101,
+      7
+     ],
+     [
+      102,
+      46
+     ],
+     [
+      111,
+      50
+     ],
+     [
+      157,
+      44
+     ],
+     [
+      191,
+      11
+     ],
+     [
+      192,
+      67
+     ],
+     [
+      220,
+      7
+     ],
+     [
+      257,
+      32
+     ]
+    ],
+    "names": [
+     "local",
+     "Cleanup",
+     "Chdir",
+     "nil",
+     "client",
+     "updateIfRecipientHasFileInfo",
+     "T",
+     "wantReceive",
+     "err",
+     "info",
+     "t",
+     "overwriteTestClient"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "diagnostics",
+  "path": "src/cli/updatecheck_test.go",
+  "line": 226,
+  "character": 1,
+  "extra": "M3:quickfix-errors:Remove variable checker"
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "src/cli/updatecheck_test.go"
+  },
+  {
+   "kind": "change",
+   "path": "src/cli/updatecheck_test.go",
+   "start": [
+    228,
+    30
+   ],
+   "end": [
+    228,
+    73
+   ]
+  },
+  {
+   "kind": "change",
+   "path": "src/cli/updatecheck_test.go",
+   "start": [
+    226,
+    1
+   ],
+   "end": [
+    226,
+    8
+   ],
+   "text": "_"
+  }
+ ],
+ "case": {
+  "action_kind": "quickfix",
+  "base_errors": 0,
+  "check": "errors",
+  "diag": {
+   "code": "UnusedVar",
+   "message": "declared and not used: checker",
+   "range": {
+    "end": {
+     "character": 8,
+     "line": 226
+    },
+    "start": {
+     "character": 1,
+     "line": 226
+    }
+   },
+   "severity": 1
+  },
+  "fix_introduced_errors": [],
+  "fix_ops": [
+   {
+    "end": [
+     226,
+     8
+    ],
+    "kind": "change",
+    "path": "src/cli/updatecheck_test.go",
+    "start": [
+     226,
+     1
+    ],
+    "text": "_"
+   }
+  ],
+  "kind": "mutation",
+  "mutation": {
+   "end": [
+    228,
+    73
+   ],
+   "id": "M3",
+   "offsets": [
+    7186,
+    7229
+   ],
+   "sha": "b4ede265576b8a73",
+   "start": [
+    228,
+    30
+   ],
+   "text": "",
+   "what": "drop the last argument of 'awaitVersionCheck(...)'"
+  },
+  "n_fix_ops": 1,
+  "path": "src/cli/updatecheck_test.go",
+  "post_errors": 1,
+  "title": "Remove variable checker",
+  "via": "edit"
+ },
+ "shape": "diagnostics:extra:WrongArgCount",
+ "signature": "gopls|r4_edits|diagnostics:extra:WrongArgCount",
+ "expected": [],
+ "actual": [
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "WrongArgCount",
+   "compiler",
+   "not enough arguments in call to awaitVersionCheck have (*testing.T) want (*testing.T, versionCheckHandle)"
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "quick fix 'Remove variable checker' for UnusedVar at src/cli/updatecheck_test.go:227:2 raises the error count in the edited files from 0 to 1 (seeded by M3: drop the last argument of 'awaitVersionCheck(...)'; errors before the mutation 0, after the fix 1); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 61s",
+ "violation": {
+  "oracle": "r4_edits",
+  "server": "gopls-v0.23.0",
+  "project": "schollz/croc@5890191be511",
+  "key": {
+   "method": "diagnostics",
+   "path": "src/cli/updatecheck_test.go",
+   "line": 226,
+   "character": 1,
+   "extra": "M3:quickfix-errors:Remove variable checker"
+  },
+  "expected": [],
+  "actual": [
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "WrongArgCount",
+    "compiler",
+    "not enough arguments in call to awaitVersionCheck have (*testing.T) want (*testing.T, versionCheckHandle)"
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "src/cli/updatecheck_test.go"
+   },
+   {
+    "kind": "change",
+    "path": "src/cli/updatecheck_test.go",
+    "start": [
+     228,
+     30
+    ],
+    "end": [
+     228,
+     73
+    ]
+   },
+   {
+    "kind": "change",
+    "path": "src/cli/updatecheck_test.go",
+    "start": [
+     226,
+     1
+    ],
+    "end": [
+     226,
+     8
+    ],
+    "text": "_"
+   }
+  ],
+  "detail": "{\"case\": {\"action_kind\": \"quickfix\", \"base_errors\": 0, \"check\": \"errors\", \"diag\": {\"code\": \"UnusedVar\", \"message\": \"declared and not used: checker\", \"range\": {\"end\": {\"character\": 8, \"line\": 226}, \"start\": {\"character\": 1, \"line\": 226}}, \"severity\": 1}, \"fix_introduced_errors\": [], \"fix_ops\": [{\"end\": [226, 8], \"kind\": \"change\", \"path\": \"src/cli/updatecheck_test.go\", \"start\": [226, 1], \"text\": \"_\"}], \"kind\": \"mutation\", \"mutation\": {\"end\": [228, 73], \"id\": \"M3\", \"offsets\": [7186, 7229], \"sha\": \"b4ede265576b8a73\", \"start\": [228, 30], \"text\": \"\", \"what\": \"drop the last argument of 'awaitVersionCheck(...)'\"}, \"n_fix_ops\": 1, \"path\": \"src/cli/updatecheck_test.go\", \"post_errors\": 1, \"title\": \"Remove variable checker\", \"via\": \"edit\"}, \"note\": \"quick fix 'Remove variable checker' for UnusedVar at src/cli/updatecheck_test.go:227:2 raises the error count in the edited files from 0 to 1 (seeded by M3: drop the last argument of 'awaitVersionCheck(...)'; errors before the mutation 0, after the fix 1); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 61s\", \"shape\": \"diagnostics:extra:WrongArgCount\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "gopls|r4_edits|diagnostics:extra:WrongArgCount",
+  "run_id": "fb67fdd2dc04"
+ },
+ "replay_logs": [
+  "logs/gopls-v0.23.0-fb67fdd2dc04-r4-replay-baseline-20261118-071834-e00d6b.jsonl.gz",
+  "logs/gopls-v0.23.0-fb67fdd2dc04-r4-replay-case-20261118-071822-f8ff36.jsonl.gz",
+  "logs/gopls-v0.23.0-fb67fdd2dc04-r4-replay-control-20261118-071838-1f6984.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

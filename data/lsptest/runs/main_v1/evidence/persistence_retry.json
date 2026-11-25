@@ -1,0 +1,50 @@
+{
+ "waits_s": [
+  60
+ ],
+ "replays": 2,
+ "rows": [
+  {
+   "gid": "ts6-r1-diagnostics-extra-2305-2339-7006-h5-d5a250",
+   "by_wait": {
+    "60": {
+     "verdict": "flaky",
+     "replays": 2,
+     "reproduced": 1,
+     "settled": 2,
+     "control_stable": 2,
+     "seconds": 154.5,
+     "error": ""
+    }
+   }
+  },
+  {
+   "gid": "ts6-r1-typedefinition-lost-h5-712a35",
+   "by_wait": {
+    "60": {
+     "verdict": "flaky",
+     "replays": 2,
+     "reproduced": 1,
+     "settled": 2,
+     "control_stable": 2,
+     "seconds": 157.0,
+     "error": ""
+    }
+   }
+  },
+  {
+   "gid": "ts6-r1-diagnostics-extra-2304-h7-8ca52f",
+   "by_wait": {
+    "60": {
+     "verdict": "not-reproduced",
+     "replays": 2,
+     "reproduced": 0,
+     "settled": 2,
+     "control_stable": 2,
+     "seconds": 148.6,
+     "error": ""
+    }
+   }
+  }
+ ]
+}

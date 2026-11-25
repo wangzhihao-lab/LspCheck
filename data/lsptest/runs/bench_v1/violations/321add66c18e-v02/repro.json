@@ -1,0 +1,341 @@
+{
+ "format": 1,
+ "campaign": "bench_v1",
+ "vid": "321add66c18e-v02",
+ "run_id": "321add66c18e",
+ "oracle": "r5_transforms",
+ "server": {
+  "kind": "gopls",
+  "version": "v0.5.3"
+ },
+ "project": {
+  "name": "gopls-42254",
+  "source": "dir",
+  "ref": "data/lsp_bench/cases/gopls-42254/project",
+  "commit": "",
+  "language": "go"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 180.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 6,
+  "targets": [
+   {
+    "path": "main.go",
+    "positions": [
+     [
+      0,
+      8
+     ],
+     [
+      2,
+      5
+     ],
+     [
+      4,
+      5
+     ],
+     [
+      5,
+      2
+     ],
+     [
+      8,
+      4
+     ],
+     [
+      8,
+      6
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      9
+     ],
+     [
+      2,
+      6
+     ],
+     [
+      4,
+      6
+     ],
+     [
+      5,
+      3
+     ],
+     [
+      8,
+      5
+     ],
+     [
+      8,
+      7
+     ]
+    ],
+    "names": [
+     "p",
+     "T",
+     "S",
+     "T",
+     "x",
+     "T"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "documentSymbol",
+  "path": "main.go",
+  "line": -1,
+  "character": -1,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "main.go"
+  },
+  {
+   "kind": "change",
+   "path": "main.go",
+   "start": [
+    8,
+    7
+   ],
+   "end": [
+    9,
+    0
+   ]
+  }
+ ],
+ "case": {
+  "mapped_key": [
+   "documentSymbol",
+   "main.go",
+   -1,
+   -1,
+   ""
+  ],
+  "transform": {
+   "back": {
+    "col": 0,
+    "eof": [],
+    "line": -1,
+    "n": 0,
+    "path": "main.go",
+    "w": 0
+   },
+   "edits": [
+    [
+     8,
+     7,
+     9,
+     0,
+     ""
+    ]
+   ],
+   "kind": "T5",
+   "path": "main.go",
+   "shift": {
+    "col": 0,
+    "eof": [
+     9,
+     0,
+     8,
+     7
+    ],
+    "line": -1,
+    "n": 0,
+    "path": "main.go",
+    "w": 0
+   }
+  }
+ },
+ "shape": "documentSymbol:changed",
+ "signature": "gopls|r5_transforms|documentSymbol:changed",
+ "expected": [
+  [
+   "S",
+   23,
+   4,
+   5,
+   6,
+   1
+  ],
+  [
+   "T",
+   23,
+   2,
+   5,
+   2,
+   17
+  ],
+  [
+   "T",
+   8,
+   5,
+   2,
+   5,
+   3
+  ],
+  [
+   "x",
+   13,
+   8,
+   0,
+   8,
+   7
+  ]
+ ],
+ "actual": [
+  [
+   "S",
+   23,
+   4,
+   5,
+   6,
+   1
+  ],
+  [
+   "T",
+   23,
+   2,
+   5,
+   2,
+   17
+  ],
+  [
+   "T",
+   8,
+   5,
+   2,
+   5,
+   3
+  ],
+  [
+   "x",
+   13,
+   8,
+   0,
+   9,
+   0
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "T5 main.go: 1 edit(s), first [8, 7, 9, 0]; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 93s",
+ "violation": {
+  "oracle": "r5_transforms",
+  "server": "gopls-v0.5.3",
+  "project": "gopls-42254",
+  "key": {
+   "method": "documentSymbol",
+   "path": "main.go",
+   "line": -1,
+   "character": -1,
+   "extra": ""
+  },
+  "expected": [
+   [
+    "S",
+    23,
+    4,
+    5,
+    6,
+    1
+   ],
+   [
+    "T",
+    23,
+    2,
+    5,
+    2,
+    17
+   ],
+   [
+    "T",
+    8,
+    5,
+    2,
+    5,
+    3
+   ],
+   [
+    "x",
+    13,
+    8,
+    0,
+    8,
+    7
+   ]
+  ],
+  "actual": [
+   [
+    "S",
+    23,
+    4,
+    5,
+    6,
+    1
+   ],
+   [
+    "T",
+    23,
+    2,
+    5,
+    2,
+    17
+   ],
+   [
+    "T",
+    8,
+    5,
+    2,
+    5,
+    3
+   ],
+   [
+    "x",
+    13,
+    8,
+    0,
+    9,
+    0
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "main.go"
+   },
+   {
+    "kind": "change",
+    "path": "main.go",
+    "start": [
+     8,
+     7
+    ],
+    "end": [
+     9,
+     0
+    ]
+   }
+  ],
+  "detail": "{\"case\": {\"mapped_key\": [\"documentSymbol\", \"main.go\", -1, -1, \"\"], \"transform\": {\"back\": {\"col\": 0, \"eof\": [], \"line\": -1, \"n\": 0, \"path\": \"main.go\", \"w\": 0}, \"edits\": [[8, 7, 9, 0, \"\"]], \"kind\": \"T5\", \"path\": \"main.go\", \"shift\": {\"col\": 0, \"eof\": [9, 0, 8, 7], \"line\": -1, \"n\": 0, \"path\": \"main.go\", \"w\": 0}}}, \"note\": \"T5 main.go: 1 edit(s), first [8, 7, 9, 0]; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 93s\", \"shape\": \"documentSymbol:changed\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "gopls|r5_transforms|documentSymbol:changed",
+  "run_id": "321add66c18e"
+ },
+ "replay_logs": [
+  "logs/gopls-v0.5.3-321add66c18e-r5-replay-baseline-20260924-235210-c749de.jsonl.gz",
+  "logs/gopls-v0.5.3-321add66c18e-r5-replay-case-20260924-235231-039b7a.jsonl.gz",
+  "logs/gopls-v0.5.3-321add66c18e-r5-replay-control-20260924-235221-99b385.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

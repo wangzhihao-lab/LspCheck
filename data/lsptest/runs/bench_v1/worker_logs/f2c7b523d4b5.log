@@ -1,0 +1,6 @@
+2026-09-25 00:16:24,589 INFO campaign_run run f2c7b523d4b5: r4_edits on rust-analyzer 2024-08-05, rust-analyzer-17728 seed 2 settled, targets ['src/main.rs']
+2026-09-25 00:18:31,814 INFO campaign_run run f2c7b523d4b5: 1 candidate(s) in 127s; confirming
+2026-09-25 00:19:55,479 INFO flake replay 1/3 of rust-analyzer|r4_edits|completionInsert:gained: settled=True control_stable=True reproduced=True (83.7s)
+2026-09-25 00:21:42,186 INFO flake replay 2/3 of rust-analyzer|r4_edits|completionInsert:gained: settled=True control_stable=True reproduced=True (106.7s)
+2026-09-25 00:23:15,053 INFO flake replay 3/3 of rust-analyzer|r4_edits|completionInsert:gained: settled=True control_stable=True reproduced=True (92.9s)
+2026-09-25 00:23:15,084 INFO campaign_run run f2c7b523d4b5 finished: ok, 1 confirmed of 1 candidate(s), 411s

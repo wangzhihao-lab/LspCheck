@@ -1,0 +1,14 @@
+{
+ "page": "triage",
+ "campaign": "main_v1",
+ "exported_at": "2026-09-27T23:18:40.000Z",
+ "items": [
+  {
+   "n": 1,
+   "id": "ts7-r1-references-missing-h9-2dd24a",
+   "choice": "legitimate",
+   "note": "作者 2026-09-27 看过独立检查后同意改判：查询位置在 import 语句的关键字 from 上；TS7 新会话返回 noop 的 6 处（模块路径、src/form.tsx 里的导入和 3 处使用、noop.ts 里的声明），编辑过 app/src/form.tsx 的会话只返回模块路径 1 处；TS6 的新会话和历史会话都只返回模块路径，与 TS7 历史会话一致。协议没有规定关键字处该返回哪些引用，两个答案都说得通，按准则判 legitimate。",
+   "minutes": 0
+  }
+ ]
+}

@@ -1,0 +1,3 @@
+2026-09-24 22:25:50,223 INFO campaign_run run c1206bffdc66: r3_routes on gopls v0.6.6, gopls-38732 seed 1 settled, targets ['bar.go', 'foo.go']
+2026-09-24 22:26:01,492 INFO campaign_run run c1206bffdc66: 0 candidate(s) in 11s; confirming
+2026-09-24 22:26:01,493 INFO campaign_run run c1206bffdc66 finished: ok, 0 confirmed of 0 candidate(s), 11s

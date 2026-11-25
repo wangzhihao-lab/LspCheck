@@ -1,0 +1,92 @@
+{
+ "queries": [
+  "highlight missing repo:typescript-language-server/typescript-language-server is:issue",
+  "highlight stale repo:typescript-language-server/typescript-language-server is:issue",
+  "highlight missing repo:microsoft/TypeScript is:issue",
+  "highlight stale repo:microsoft/TypeScript is:issue"
+ ],
+ "matches": [
+  {
+   "repo": "microsoft/TypeScript",
+   "number": 44099,
+   "title": "Function identifiers no longer receive semantic highlighting tokens",
+   "url": "https://github.com/microsoft/TypeScript/issues/44099",
+   "state": "open",
+   "created": "2021-05-14",
+   "comments": 2,
+   "query": "highlight missing repo:microsoft/TypeScript is:issue"
+  },
+  {
+   "repo": "microsoft/TypeScript",
+   "number": 58062,
+   "title": "Shorten error spans for missing key errors reported on object literals",
+   "url": "https://github.com/microsoft/TypeScript/issues/58062",
+   "state": "open",
+   "created": "2024-04-03",
+   "comments": 3,
+   "query": "highlight missing repo:microsoft/TypeScript is:issue"
+  },
+  {
+   "repo": "microsoft/TypeScript",
+   "number": 63456,
+   "title": "String.split() method's separator argument should allow undefined",
+   "url": "https://github.com/microsoft/TypeScript/issues/63456",
+   "state": "open",
+   "created": "2026-05-01",
+   "comments": 5,
+   "query": "highlight missing repo:microsoft/TypeScript is:issue"
+  },
+  {
+   "repo": "microsoft/TypeScript",
+   "number": 29578,
+   "title": "unclear how to make function argument check produce the same errors as variable assignment",
+   "url": "https://github.com/microsoft/TypeScript/issues/29578",
+   "state": "open",
+   "created": "2019-01-25",
+   "comments": 0,
+   "query": "highlight missing repo:microsoft/TypeScript is:issue"
+  },
+  {
+   "repo": "microsoft/TypeScript",
+   "number": 50469,
+   "title": "\"function\" semantic token applied instead of \"decorator\", thus cannot configure correct syntax highlighting",
+   "url": "https://github.com/microsoft/TypeScript/issues/50469",
+   "state": "open",
+   "created": "2022-08-15",
+   "comments": 4,
+   "query": "highlight missing repo:microsoft/TypeScript is:issue"
+  },
+  {
+   "repo": "microsoft/TypeScript",
+   "number": 29526,
+   "title": "Easier destructuring with type annotations on binding patterns",
+   "url": "https://github.com/microsoft/TypeScript/issues/29526",
+   "state": "open",
+   "created": "2019-01-22",
+   "comments": 156,
+   "query": "highlight stale repo:microsoft/TypeScript is:issue"
+  },
+  {
+   "repo": "microsoft/TypeScript",
+   "number": 25600,
+   "title": "tsc --build / Project References Feedback & Discussion",
+   "url": "https://github.com/microsoft/TypeScript/issues/25600",
+   "state": "open",
+   "created": "2018-07-12",
+   "comments": 141,
+   "query": "highlight stale repo:microsoft/TypeScript is:issue"
+  },
+  {
+   "repo": "microsoft/TypeScript",
+   "number": 62867,
+   "title": "Add basic types <Byte> and <Integer>",
+   "url": "https://github.com/microsoft/TypeScript/issues/62867",
+   "state": "closed",
+   "created": "2025-12-09",
+   "comments": 13,
+   "query": "highlight stale repo:microsoft/TypeScript is:issue"
+  }
+ ],
+ "notes": [],
+ "authenticated": true
+}

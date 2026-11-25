@@ -1,0 +1,94 @@
+corpus,replay,group,cause,build,reproduced,verdict,result
+first,newest release,ts6-r1-codeaction-key-lost-h5-4f92e2,C1,tsserver 6.0.3+tsls6.1.0,3/3,reproduced,reproduces
+first,newest release,ts6-r1-completion-lost-h5-fa501c,C1,tsserver 6.0.3+tsls6.1.0,3/3,reproduced,reproduces
+first,newest release,ts6-r1-definition-lost-h5-61a0fd,C1,tsserver 6.0.3+tsls6.1.0,1/3,flaky,partly
+first,newest release,ts6-r1-definition-lost-h9-898f29,C1,tsserver 6.0.3+tsls6.1.0,3/3,reproduced,reproduces
+first,newest release,ts6-r1-diagnostics-extra-2305-2339-7006-h5-d5a250,C1,tsserver 6.0.3+tsls6.1.0,2/3,flaky,partly
+first,newest release,ts6-r1-documenthighlight-lost-h5-9b4675,C1,tsserver 6.0.3+tsls6.1.0,1/3,flaky,partly
+first,newest release,ts6-r1-references-lost-h5-d24ca6,C1,tsserver 6.0.3+tsls6.1.0,2/3,flaky,partly
+first,newest release,ts6-r1-references-missing-h5-cc8950,C1,tsserver 6.0.3+tsls6.1.0,2/3,flaky,partly
+first,newest release,ts6-r1-semantictokens-changed-h5-591c42,C1,tsserver 6.0.3+tsls6.1.0,3/3,reproduced,reproduces
+first,newest release,ts6-r1-semantictokens-missing-h9-d686b3,C1,tsserver 6.0.3+tsls6.1.0,3/3,reproduced,reproduces
+first,newest release,ts6-r1-signaturehelp-changed-h5-db5a5e,C1,tsserver 6.0.3+tsls6.1.0,2/3,flaky,partly
+first,newest release,ts6-r1-signaturehelp-lost-h9-7bd793,C1,tsserver 6.0.3+tsls6.1.0,3/3,reproduced,reproduces
+first,newest release,ts6-r1-typedefinition-lost-h5-712a35,C1,tsserver 6.0.3+tsls6.1.0,3/3,reproduced,reproduces
+first,newest release,ts6-r1-diagnostics-extra-2304-h7-8ca52f,C2,tsserver 6.0.3+tsls6.1.0,3/3,reproduced,reproduces
+first,newest release,gopls-r2-codeactionresolve-changed-codeaction-70b3e9,C3,gopls v0.24.0,3/3,reproduced,reproduces
+first,newest release,rust-analyzer-r2-completionresolve-changed-completion-3170a1,C4,rust-analyzer 2026-11-16,3/3,reproduced,reproduces
+first,newest release,gopls-r4-diagnostics-extra-invalidifaceassign-mutation-m2-416e90,C5,gopls v0.24.0,0/3,unsettled,does not reproduce
+first,newest release,gopls-r4-diagnostics-extra-nonindexableoperand-mutation-m2-ba152b,C5,gopls v0.24.0,3/3,reproduced,reproduces
+first,newest release,gopls-r4-diagnostics-extra-nonsliceableoperand-mutation-m2-d80a9a,C5,gopls v0.24.0,3/3,reproduced,reproduces
+first,newest release,gopls-r4-diagnostics-extra-notatype-mutation-m2-477181,C5,gopls v0.24.0,0/3,unsettled,does not reproduce
+first,newest release,gopls-r4-diagnostics-extra-untypedniluse-mutation-m2-354f70,C5,gopls v0.24.0,0/3,unsettled,does not reproduce
+first,newest release,gopls-r4-diagnostics-extra-mutation-m2-111975,C6,gopls v0.24.0,3/3,reproduced,reproduces
+first,newest release,gopls-r4-syntax-gained-mutation-m2-86fde3,C6,gopls v0.24.0,3/3,reproduced,reproduces
+first,newest release,gopls-r4-diagnostics-extra-undeclaredname-wrongar-mutation-m3-946c39,C7,gopls v0.24.0,3/3,reproduced,reproduces
+first,newest release,rust-analyzer-r3-definitionconsistency-extra-d-4cbc9e,C8,rust-analyzer 2026-11-16,3/3,reproduced,reproduces
+first,newest release,rust-analyzer-r3-definitionconsistency-missing-d-586fd8,C8,rust-analyzer 2026-11-16,3/3,reproduced,reproduces
+first,newest release,gopls-r1-references-extra-h9-0290a7,C9,gopls v0.24.0,3/3,reproduced,reproduces
+first,newest release,ts7-r1-references-missing-h9-2dd24a,C10,ts7 7.0.2,3/3,reproduced,reproduces
+first,newest release,ts6-r4-diagnostics-extra-2322-mutation-m3-1879f3,C11,tsserver 6.0.3+tsls6.1.0,3/3,reproduced,reproduces
+first,newest release,gopls-r1-codeaction-changed-h4-c5344e,C12,gopls v0.24.0,3/3,reproduced,reproduces
+first,newest release,rust-analyzer-r3-diagnostics-missing-e0004-inactive-code-a-731c4f,C25,rust-analyzer 2026-11-16,3/3,reproduced,reproduces
+first,newest release,rust-analyzer-r3-diagnostics-missing-inactive-code-a-0b07f0,C25,rust-analyzer 2026-11-16,3/3,reproduced,reproduces
+first,newest release,rust-analyzer-r3-semantictokensrange-changed-b-b6e28b,C26,rust-analyzer 2026-11-16,3/3,reproduced,reproduces
+first,newest release,rust-analyzer-r4-completioninsert-gained-completion-e99b79,C27,rust-analyzer 2026-11-16,3/3,reproduced,reproduces
+second,newest release,ts6-r1-completion-lost-h9-ce1ffc,C1,tsserver 6.0.3+tsls6.1.0,3/3,reproduced,reproduces
+second,newest release,ts6-r1-definition-lost-h9-898f29,C1,tsserver 6.0.3+tsls6.1.0,3/3,reproduced,reproduces
+second,newest release,ts6-r1-diagnostics-extra-2307-7006-h9-8325a2,C1,tsserver 6.0.3+tsls6.1.0,3/3,reproduced,reproduces
+second,newest release,ts6-r1-documenthighlight-missing-h9-2e657a,C1,tsserver 6.0.3+tsls6.1.0,2/3,flaky,partly
+second,newest release,ts6-r1-references-missing-h5-cc8950,C1,tsserver 6.0.3+tsls6.1.0,3/3,reproduced,reproduces
+second,newest release,ts6-r1-semantictokens-changed-h9-c4368c,C1,tsserver 6.0.3+tsls6.1.0,2/3,flaky,partly
+second,newest release,ts6-r1-typedefinition-lost-h9-b52749,C1,tsserver 6.0.3+tsls6.1.0,3/3,reproduced,reproduces
+second,newest release,ts6-r1-codeaction-key-lost-h8-3e0e0f,C2,tsserver 6.0.3+tsls6.1.0,3/3,reproduced,reproduces
+second,newest release,ts6-r1-diagnostics-moved-2875-h8-751ff9,C2,tsserver 6.0.3+tsls6.1.0,3/3,reproduced,reproduces
+second,newest release,gopls-r2-codeactionresolve-changed-codeaction-70b3e9,C3,gopls v0.24.0,3/3,reproduced,reproduces
+second,newest release,rust-analyzer-r2-completionresolve-changed-completion-3170a1,C4,rust-analyzer 2026-11-16,3/3,reproduced,reproduces
+second,newest release,gopls-r4-diagnostics-extra-incompatibleassign-mutation-m2-ade1f0,C5,gopls v0.24.0,0/3,unsettled,does not reproduce
+second,newest release,gopls-r4-diagnostics-extra-mismatchedtypes-mutation-m2-dc6e94,C5,gopls v0.24.0,0/3,unsettled,does not reproduce
+second,newest release,gopls-r4-diagnostics-extra-nonsliceableoperand-mutation-m2-d80a9a,C5,gopls v0.24.0,3/3,reproduced,reproduces
+second,newest release,gopls-r4-diagnostics-extra-notatype-mutation-m2-477181,C5,gopls v0.24.0,3/3,reproduced,reproduces
+second,newest release,gopls-r4-diagnostics-extra-untypedniluse-mutation-m2-354f70,C5,gopls v0.24.0,0/3,unsettled,does not reproduce
+second,newest release,gopls-r4-diagnostics-extra-undeclaredname-mutation-m2-12380c,C7,gopls v0.24.0,3/3,reproduced,reproduces
+second,newest release,gopls-r1-references-extra-h5-e2e003,C9,gopls v0.24.0,3/3,reproduced,reproduces
+second,newest release,ts6-r4-diagnostics-extra-2322-mutation-m3-1879f3,C11,tsserver 6.0.3+tsls6.1.0,3/3,reproduced,reproduces
+second,newest release,gopls-r1-codeaction-changed-h4-c5344e,C12,gopls v0.24.0,3/3,reproduced,reproduces
+second,newest release,gopls-r1-codeaction-changed-h7-383b05,C12,gopls v0.24.0,3/3,reproduced,reproduces
+second,newest release,gopls-r1-codeaction-key-lost-h7-547744,C13,gopls v0.24.0,3/3,reproduced,reproduces
+second,newest release,gopls-r1-diagnostics-message-h5-e59f2c,C13,gopls v0.24.0,3/3,reproduced,reproduces
+second,newest release,gopls-r1-diagnostics-missing-h7-10a910,C13,gopls v0.24.0,3/3,reproduced,reproduces
+second,newest release,gopls-r1-completion-lost-h7-1a1169,C14,gopls v0.24.0,3/3,reproduced,reproduces
+second,newest release,gopls-r4-diagnostics-extra-unusedimport-mutation-m3-aefa9e,C15,gopls v0.24.0,3/3,reproduced,reproduces
+second,newest release,gopls-r5-foldingrange-changed-t4-b07c86,C16,gopls v0.24.0,3/3,reproduced,reproduces
+second,newest release,gopls-r5-semantictokens-changed-t4-b423af,C16,gopls v0.24.0,3/3,reproduced,reproduces
+second,newest release,gopls-r5-semantictokens-extra-t4-867006,C16,gopls v0.24.0,3/3,reproduced,reproduces
+second,newest release,pyright-r0-references-result-error-32603-fresh-pair-2718c4,C17,pyright 1.1.414,3/3,reproduced,reproduces
+second,newest release,pyright-r1-hover-text-h2-fb2ed0,C18,pyright 1.1.414,3/3,reproduced,reproduces
+second,newest release,pyright-r1-hover-text-h8-2a8227,C18,pyright 1.1.414,3/3,reproduced,reproduces
+second,newest release,pyright-r1-hover-text-h5-f24c4e,C19,pyright 1.1.414,3/3,reproduced,reproduces
+second,newest release,pyright-r1-references-extra-h9-37c1a2,C20,pyright 1.1.414,3/3,reproduced,reproduces
+second,newest release,pyright-r1-signaturehelp-changed-h9-846c6c,C21,pyright 1.1.414,3/3,reproduced,reproduces
+second,newest release,pyright-r4-completioninsert-gained-completion-79a584,C22,pyright 1.1.414,3/3,reproduced,reproduces
+second,newest release,rust-analyzer-r3-diagnostics-missing-inactive-code-a-0b07f0,C25,rust-analyzer 2026-11-16,0/3,not-reproduced,does not reproduce
+second,newest release,rust-analyzer-r3-diagnostics-missing-unlinked-file-a-efb484,C25,rust-analyzer 2026-11-16,0/3,not-reproduced,does not reproduce
+second,newest release,rust-analyzer-r3-semantictokensrange-changed-b-b6e28b,C26,rust-analyzer 2026-11-16,3/3,reproduced,reproduces
+second,newest release,rust-analyzer-r4-completioninsert-gained-completion-e99b79,C28,rust-analyzer 2026-11-16,0/3,not-reproduced,does not reproduce
+second,newest release,rust-analyzer-r4-diagnostics-extra-e0063-mutation-m1-aeef82,C29,rust-analyzer 2026-11-16,3/3,reproduced,reproduces
+second,newest release,rust-analyzer-r4-syntax-gained-mutation-m1-7af5e4,C29,rust-analyzer 2026-11-16,3/3,reproduced,reproduces
+second,newest release,ts6-r1-codeaction-extra-h5-f48d27,C30,tsserver 6.0.3+tsls6.1.0,3/3,reproduced,reproduces
+second,newest release,ts6-r1-inlayhint-changed-h9-b9d052,C31,tsserver 6.0.3+tsls6.1.0,0/3,not-reproduced,does not reproduce
+second,newest release,ts6-r4-diagnostics-changed-1064-2322-quickfix-d597f5,C32,tsserver 6.0.3+tsls6.1.0,3/3,reproduced,reproduces
+second,newest release,ts6-r4-diagnostics-changed-mutation-m1-34f06f,C33,tsserver 6.0.3+tsls6.1.0,3/3,reproduced,reproduces
+second,newest release,ts6-r4-diagnostics-extra-17002-2552-mutation-m1-727795,C34,tsserver 6.0.3+tsls6.1.0,3/3,reproduced,reproduces
+second,newest release,ts6-r4-syntax-gained-mutation-m1-7e3417,C34,tsserver 6.0.3+tsls6.1.0,3/3,reproduced,reproduces
+second,newest release,ts6-r4-diagnostics-extra-2448-7022-mutation-m1-e5d199,C35,tsserver 6.0.3+tsls6.1.0,3/3,reproduced,reproduces
+first,gopls development head,gopls-r2-codeactionresolve-changed-codeaction-70b3e9,C3,gopls v0.0.0-20261118023053-8967817d2000,3/3,reproduced,reproduces
+first,gopls development head,gopls-r4-diagnostics-extra-invalidifaceassign-mutation-m2-416e90,C5,gopls v0.0.0-20261118023053-8967817d2000,0/3,unsettled,does not reproduce
+first,gopls development head,gopls-r4-diagnostics-extra-nonindexableoperand-mutation-m2-ba152b,C5,gopls v0.0.0-20261118023053-8967817d2000,3/3,reproduced,reproduces
+first,gopls development head,gopls-r4-diagnostics-extra-nonsliceableoperand-mutation-m2-d80a9a,C5,gopls v0.0.0-20261118023053-8967817d2000,3/3,reproduced,reproduces
+first,gopls development head,gopls-r4-diagnostics-extra-notatype-mutation-m2-477181,C5,gopls v0.0.0-20261118023053-8967817d2000,0/3,unsettled,does not reproduce
+first,gopls development head,gopls-r4-diagnostics-extra-untypedniluse-mutation-m2-354f70,C5,gopls v0.0.0-20261118023053-8967817d2000,0/3,unsettled,does not reproduce
+first,gopls development head,gopls-r4-diagnostics-extra-mutation-m2-111975,C6,gopls v0.0.0-20261118023053-8967817d2000,0/3,unsettled,does not reproduce
+first,gopls development head,gopls-r4-syntax-gained-mutation-m2-86fde3,C6,gopls v0.0.0-20261118023053-8967817d2000,0/3,unsettled,does not reproduce
+first,gopls development head,gopls-r4-diagnostics-extra-undeclaredname-wrongar-mutation-m3-946c39,C7,gopls v0.0.0-20261118023053-8967817d2000,0/3,unsettled,does not reproduce
+first,gopls development head,gopls-r1-references-extra-h9-0290a7,C9,gopls v0.0.0-20261118023053-8967817d2000,3/3,reproduced,reproduces

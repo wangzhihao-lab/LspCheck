@@ -1,0 +1,6 @@
+2026-11-18 06:16:43,140 INFO campaign_run run f10c9681a7d8: r2_handles on rust-analyzer 2026-09-21, iced-rs/iced@0ef42477fb6f seed 1 settled, targets ['examples/custom_shader/src/scene/pipeline/vertex.rs', 'examples/svg/src/main.rs', 'wgpu/src/quad/solid.rs']
+2026-11-18 06:18:44,677 INFO campaign_run run f10c9681a7d8: 3 candidate(s) in 122s; confirming
+2026-11-18 06:19:41,023 INFO flake replay 1/3 of rust-analyzer|r2_handles|completionResolve:changed: settled=True control_stable=True reproduced=True (56.3s)
+2026-11-18 06:20:27,105 INFO flake replay 2/3 of rust-analyzer|r2_handles|completionResolve:changed: settled=True control_stable=True reproduced=True (46.1s)
+2026-11-18 06:21:11,345 INFO flake replay 3/3 of rust-analyzer|r2_handles|completionResolve:changed: settled=True control_stable=True reproduced=True (44.2s)
+2026-11-18 06:21:11,356 INFO campaign_run run f10c9681a7d8 finished: ok, 1 confirmed of 3 candidate(s), 268s

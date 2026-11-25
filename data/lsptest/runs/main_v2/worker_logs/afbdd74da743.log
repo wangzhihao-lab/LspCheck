@@ -1,0 +1,3 @@
+2026-11-18 19:26:49,245 INFO campaign_run run afbdd74da743: r1_history on pyright 1.1.414, FoundationAgents/OpenManus@3309bf4e416f seed 3 settled, targets ['app/tool/bash.py', 'app/tool/chart_visualization/python_execute.py', 'app/tool/python_execute.py']
+2026-11-18 19:34:04,231 INFO campaign_run run afbdd74da743: 0 candidate(s) in 435s; confirming
+2026-11-18 19:34:04,231 INFO campaign_run run afbdd74da743 finished: ok, 0 confirmed of 0 candidate(s), 435s

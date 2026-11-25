@@ -1,0 +1,6 @@
+2026-09-23 16:31:36,232 INFO campaign_run run 49271a678e03: r6_crossimpl on ts7 7.0.2, reduxjs/redux@fb3bad6804d6 seed 1 settled, targets ['examples/counter-ts/src/reportWebVitals.ts', 'scripts/clean.mts', 'test/helpers/middleware.ts']
+2026-09-23 16:32:11,753 INFO campaign_run run 49271a678e03: 16 candidate(s) in 35s; confirming
+2026-09-23 16:32:44,893 INFO flake replay 1/3 of ts7|r6_crossimpl|completion:missing: settled=True control_stable=True reproduced=True (33.1s)
+2026-09-23 16:33:22,438 INFO flake replay 2/3 of ts7|r6_crossimpl|completion:missing: settled=True control_stable=True reproduced=True (37.5s)
+2026-09-23 16:33:59,521 INFO flake replay 3/3 of ts7|r6_crossimpl|completion:missing: settled=True control_stable=True reproduced=True (37.1s)
+2026-09-23 16:33:59,812 INFO campaign_run run 49271a678e03 finished: ok, 1 confirmed of 16 candidate(s), 144s

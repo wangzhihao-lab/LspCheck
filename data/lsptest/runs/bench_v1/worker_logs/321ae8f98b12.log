@@ -1,0 +1,3 @@
+2026-09-24 20:13:37,382 INFO campaign_run run 321ae8f98b12: r5_transforms on tsserver 5.0.2+tsls3.3.0, tsserver-52274 seed 1 settled, targets ['index.ts']
+2026-09-24 20:13:57,148 INFO campaign_run run 321ae8f98b12: 0 candidate(s) in 20s; confirming
+2026-09-24 20:13:57,148 INFO campaign_run run 321ae8f98b12 finished: ok, 0 confirmed of 0 candidate(s), 20s

@@ -1,0 +1,71 @@
+{
+ "schema": 1,
+ "id": "gopls-74709",
+ "meta": {
+  "server": "gopls",
+  "kind": "gopls",
+  "number": 74709,
+  "url": "https://github.com/golang/go/issues/74709",
+  "title": "x/tools/gopls/internal/analysis/modernize: fmtappendf suggests invalid fix",
+  "oracle_class": "R4",
+  "subtype": "quickfix",
+  "fix_ref": "golang/tools@e48606bae176 (gopls/internal/analysis/modernize: invalid code produced by fmtappendf modernizer; CL 697342)",
+  "fix_shas": [
+   "e48606bae176531de3fd673e74c5c09614af9a0b"
+  ],
+  "pre_version": "v0.20.0",
+  "post_version": "v0.21.0",
+  "pre_build": "v0.20.0",
+  "post_build": "v0.21.0",
+  "build_notes": "go install golang.org/x/tools/gopls@<version> with the local Go (go1.27.1), which builds both; the server runs the local go command. Reported 2025-07-22 against the analyzer at x/tools master; v0.20.0 was tagged 2025-07-28 with the fmtappendf pass (modernize.go calls fmtappendf(pass)); the fix merged 2025-08-20, v0.21.0 was tagged 2025-12-05.",
+  "candidate_rank": 40,
+  "effort_minutes": 5,
+  "notes": "The fix deletes \"[]byte(\" and \")\" around the fmt.Sprintf call; a conversion may carry a trailing comma inside its parentheses (T(x,)), which the pre-fix edit left behind on its own line. The fixed analyzer also deletes the text between the argument and the right parenthesis."
+ },
+ "language": "go",
+ "settings": {},
+ "settings_note": "The modernize analyzer is on by default in both builds.",
+ "session": {
+  "settle_timeout_s": 180
+ },
+ "files": [
+  {
+   "path": "b.go",
+   "provenance": "issue",
+   "source": "issue body, first code block (output of 'cat b.go', the shell prompt line omitted)",
+   "note": ""
+  },
+  {
+   "path": "go.mod",
+   "provenance": "scaffold",
+   "source": "",
+   "note": "a module around the file (the reporter ran in the x/tools module); go 1.24 (fmtappendf needs go1.19)"
+  }
+ ],
+ "repro": {
+  "attempt": 1,
+  "timing": "settled",
+  "steps": "Open b.go. The fmtappendf pass reports the multi-line conversion []byte(\\n fmt.Sprintf(\"%d\", 0),\\n) ('Replace []byte(fmt.Sprintf...) with fmt.Appendf'). Apply its fix. Reported (with the modernize command): the conversion's trailing comma is left on its own line ('Bytes:' / 'fmt.Appendf(nil, \"%d\", 0),' / ','), which does not parse. Probe: the edited text must have no parse error that the original did not have.",
+  "ops": [
+   {
+    "kind": "open",
+    "path": "b.go"
+   }
+  ],
+  "probe": {
+   "type": "edit_breaks_syntax",
+   "params": {
+    "edit": {
+     "via": "code_action",
+     "path": "b.go",
+     "diagnostic": {
+      "message_re": "fmt\\.Appendf"
+     },
+     "title_re": "fmt\\.Appendf",
+     "missing": "invalid"
+    }
+   }
+  }
+ },
+ "attempts": []
+}

@@ -1,0 +1,3 @@
+2026-09-24 23:25:50,258 INFO campaign_run run ecc32e2e150d: r3_routes on tsserver 4.8.2+tsls1.1.2, tsserver-50188 seed 2 settled, targets ['index.ts']
+2026-09-24 23:25:59,794 INFO campaign_run run ecc32e2e150d: 0 candidate(s) in 10s; confirming
+2026-09-24 23:25:59,794 INFO campaign_run run ecc32e2e150d finished: ok, 0 confirmed of 0 candidate(s), 10s

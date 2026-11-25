@@ -1,0 +1,74 @@
+{
+ "vid": "f1084e14ba1e-v04",
+ "ops_before": 0,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 0,
+ "cache_hits": 0,
+ "reduce_seconds": 0.0,
+ "budget_exhausted": false,
+ "probe_log": [],
+ "logs": [
+  "ts6-6.0.3-tr58256c-ref-r6-replay-ref-baseline-20260925-165118-5addfa.jsonl.gz",
+  "ts6-6.0.3-tr58256c-ref-r6-replay-ref-control-20260925-165129-083445.jsonl.gz",
+  "ts7-7.0.2-tr58256c-r6-replay-test-baseline-20260925-165051-4b3e3e.jsonl.gz",
+  "ts7-7.0.2-tr58256c-r6-replay-test-control-20260925-165106-22b0ef.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [
+   [
+    12,
+    4,
+    12,
+    10,
+    0,
+    "2304",
+    "",
+    ""
+   ],
+   [
+    3,
+    0,
+    3,
+    8,
+    0,
+    "2593",
+    "",
+    ""
+   ],
+   [
+    4,
+    2,
+    4,
+    4,
+    0,
+    "2593",
+    "",
+    ""
+   ],
+   [
+    5,
+    4,
+    5,
+    10,
+    0,
+    "2304",
+    "",
+    ""
+   ],
+   [
+    6,
+    4,
+    6,
+    10,
+    0,
+    "2304",
+    "",
+    ""
+   ]
+  ],
+  "actual": []
+ },
+ "ops_after": 0,
+ "total_seconds": 232.1
+}

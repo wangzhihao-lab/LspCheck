@@ -1,0 +1,515 @@
+{
+ "format": 1,
+ "campaign": "main_v2",
+ "vid": "660200eada5b-v00",
+ "run_id": "660200eada5b",
+ "oracle": "r3_routes",
+ "server": {
+  "kind": "gopls",
+  "version": "v0.23.0"
+ },
+ "project": {
+  "name": "go-gorm/gorm@b3d3bf219f02",
+  "source": "corpus",
+  "ref": "temp/corpus/go-gorm__gorm@b3d3bf219f02",
+  "commit": "b3d3bf219f0283f8e2e985bac509cb643170f729",
+  "language": "go"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "clause/joins.go",
+    "positions": [
+     [
+      9,
+      5
+     ],
+     [
+      15,
+      16
+     ],
+     [
+      28,
+      37
+     ],
+     [
+      28,
+      74
+     ],
+     [
+      29,
+      44
+     ],
+     [
+      38,
+      7
+     ],
+     [
+      39,
+      3
+     ],
+     [
+      47,
+      10
+     ],
+     [
+      48,
+      25
+     ],
+     [
+      56,
+      7
+     ],
+     [
+      68,
+      6
+     ],
+     [
+      69,
+      8
+     ]
+    ],
+    "ends": [
+     [
+      9,
+      9
+     ],
+     [
+      15,
+      19
+     ],
+     [
+      28,
+      39
+     ],
+     [
+      28,
+      79
+     ],
+     [
+      29,
+      46
+     ],
+     [
+      38,
+      9
+     ],
+     [
+      39,
+      5
+     ],
+     [
+      47,
+      13
+     ],
+     [
+      48,
+      37
+     ],
+     [
+      56,
+      9
+     ],
+     [
+      68,
+      10
+     ],
+     [
+      69,
+      10
+     ]
+    ],
+    "names": [
+     "LeftJoin",
+     "string",
+     "name",
+     "JoinTarget",
+     "name",
+     "Join",
+     "Type",
+     "Table",
+     "JoinNestedRelationNames",
+     "join",
+     "builder",
+     "idx"
+    ]
+   },
+   {
+    "path": "migrator/column_type.go",
+    "positions": [
+     [
+      19,
+      21
+     ],
+     [
+      27,
+      5
+     ],
+     [
+      47,
+      18
+     ],
+     [
+      53,
+      7
+     ],
+     [
+      59,
+      9
+     ],
+     [
+      73,
+      18
+     ],
+     [
+      80,
+      5
+     ],
+     [
+      80,
+      26
+     ],
+     [
+      90,
+      25
+     ],
+     [
+      92,
+      18
+     ],
+     [
+      117,
+      41
+     ],
+     [
+      118,
+      9
+     ]
+    ],
+    "ends": [
+     [
+      19,
+      23
+     ],
+     [
+      27,
+      6
+     ],
+     [
+      47,
+      25
+     ],
+     [
+      53,
+      8
+     ],
+     [
+      59,
+      10
+     ],
+     [
+      73,
+      25
+     ],
+     [
+      80,
+      6
+     ],
+     [
+      80,
+      29
+     ],
+     [
+      90,
+      29
+     ],
+     [
+      92,
+      25
+     ],
+     [
+      117,
+      44
+     ],
+     [
+      118,
+      10
+     ]
+    ],
+    "names": [
+     "sql",
+     "ct",
+     "SQLColumnType",
+     "ct",
+     "ct",
+     "SQLColumnType",
+     "ct",
+     "Valid",
+     "Nullable",
+     "NullableValue",
+     "string",
+     "ct"
+    ]
+   },
+   {
+    "path": "tests/hooks_test.go",
+    "positions": [
+     [
+      46,
+      35
+     ],
+     [
+      96,
+      13
+     ],
+     [
+      158,
+      7
+     ],
+     [
+      161,
+      23
+     ],
+     [
+      208,
+      7
+     ],
+     [
+      264,
+      68
+     ],
+     [
+      274,
+      6
+     ],
+     [
+      294,
+      7
+     ],
+     [
+      344,
+      7
+     ],
+     [
+      488,
+      44
+     ],
+     [
+      491,
+      4
+     ],
+     [
+      510,
+      109
+     ]
+    ],
+    "ends": [
+     [
+      46,
+      37
+     ],
+     [
+      96,
+      21
+     ],
+     [
+      158,
+      10
+     ],
+     [
+      161,
+      25
+     ],
+     [
+      208,
+      10
+     ],
+     [
+      264,
+      70
+     ],
+     [
+      274,
+      9
+     ],
+     [
+      294,
+      11
+     ],
+     [
+      344,
+      11
+     ],
+     [
+      488,
+      50
+     ],
+     [
+      491,
+      8
+     ],
+     [
+      510,
+      113
+     ]
+    ],
+    "names": [
+     "gorm",
+     "TestRunCallbacks",
+     "Fatalf",
+     "Code",
+     "Delete",
+     "err",
+     "First",
+     "result4",
+     "product",
+     "ProductItem",
+     "product",
+     "product"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "highlightVsReferences",
+  "path": "clause/joins.go",
+  "line": 47,
+  "character": 10,
+  "extra": ""
+ },
+ "ops": [],
+ "case": {
+  "path": "clause/joins.go",
+  "pos": [
+   47,
+   10
+  ],
+  "sub": "c"
+ },
+ "shape": "highlightVsReferences:extra",
+ "signature": "gopls|r3_routes|highlightVsReferences:extra",
+ "expected": [
+  [
+   40,
+   12,
+   40,
+   17
+  ],
+  [
+   46,
+   32,
+   46,
+   37
+  ],
+  [
+   47,
+   8,
+   47,
+   13
+  ]
+ ],
+ "actual": [
+  [
+   40,
+   12,
+   40,
+   17
+  ],
+  [
+   46,
+   32,
+   46,
+   37
+  ],
+  [
+   47,
+   8,
+   47,
+   13
+  ],
+  [
+   47,
+   8,
+   49,
+   2
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "50 references; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 29s",
+ "violation": {
+  "oracle": "r3_routes",
+  "server": "gopls-v0.23.0",
+  "project": "go-gorm/gorm@b3d3bf219f02",
+  "key": {
+   "method": "highlightVsReferences",
+   "path": "clause/joins.go",
+   "line": 47,
+   "character": 10,
+   "extra": ""
+  },
+  "expected": [
+   [
+    40,
+    12,
+    40,
+    17
+   ],
+   [
+    46,
+    32,
+    46,
+    37
+   ],
+   [
+    47,
+    8,
+    47,
+    13
+   ]
+  ],
+  "actual": [
+   [
+    40,
+    12,
+    40,
+    17
+   ],
+   [
+    46,
+    32,
+    46,
+    37
+   ],
+   [
+    47,
+    8,
+    47,
+    13
+   ],
+   [
+    47,
+    8,
+    49,
+    2
+   ]
+  ],
+  "ops": [],
+  "detail": "{\"case\": {\"path\": \"clause/joins.go\", \"pos\": [47, 10], \"sub\": \"c\"}, \"note\": \"50 references; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 29s\", \"shape\": \"highlightVsReferences:extra\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "gopls|r3_routes|highlightVsReferences:extra",
+  "run_id": "660200eada5b"
+ },
+ "replay_logs": [
+  "logs/gopls-v0.23.0-660200eada5b-r3-replay-baseline-20261118-033425-5e6073.jsonl.gz",
+  "logs/gopls-v0.23.0-660200eada5b-r3-replay-control-20261118-033430-76616c.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

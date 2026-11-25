@@ -1,0 +1,3 @@
+2026-09-25 10:52:46,099 INFO campaign_run run d23b22770fcc: r4_edits on tsserver 5.6.2+tsls4.3.3, tsserver-59116 seed 2 settled, targets ['lib.ts', 'main.ts']
+2026-09-25 10:54:56,900 INFO campaign_run run d23b22770fcc: 0 candidate(s) in 131s; confirming
+2026-09-25 10:54:56,901 INFO campaign_run run d23b22770fcc finished: ok, 0 confirmed of 0 candidate(s), 131s

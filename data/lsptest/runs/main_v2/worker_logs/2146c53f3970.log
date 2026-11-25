@@ -1,0 +1,3 @@
+2026-11-18 18:43:21,177 INFO campaign_run run 2146c53f3970: r1_history on ts7 7.0.2, solidjs/solid@4b62bc29e04b seed 3 settled, targets ['packages/babel-plugin/src/tsrx/desugar.ts', 'packages/signals/tests/body-end-supersession-visibility.test.ts', 'packages/web/test/server/frame-ssr-seam.spec.tsx']
+2026-11-18 18:50:45,203 INFO campaign_run run 2146c53f3970: 0 candidate(s) in 444s; confirming
+2026-11-18 18:50:45,203 INFO campaign_run run 2146c53f3970 finished: ok, 0 confirmed of 0 candidate(s), 444s

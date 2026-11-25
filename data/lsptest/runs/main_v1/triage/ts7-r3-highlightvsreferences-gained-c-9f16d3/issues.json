@@ -1,0 +1,92 @@
+{
+ "queries": [
+  "references in:title repo:microsoft/typescript-go is:issue",
+  "highlight unexpected repo:microsoft/typescript-go is:issue",
+  "highlight references repo:microsoft/typescript-go is:issue",
+  "highlight inconsistent repo:microsoft/typescript-go is:issue"
+ ],
+ "matches": [
+  {
+   "repo": "microsoft/typescript-go",
+   "number": 4262,
+   "title": "Non-deterministic `TS2305 \"has no exported member\"` errors across project references with `--emitDeclarationOnly`",
+   "url": "https://github.com/microsoft/typescript-go/issues/4262",
+   "state": "closed",
+   "created": "2026-06-10",
+   "comments": 8,
+   "query": "references in:title repo:microsoft/typescript-go is:issue"
+  },
+  {
+   "repo": "microsoft/typescript-go",
+   "number": 4614,
+   "title": "`tsc -b --watch` takes tens of seconds to start watching on a large project-references solution (`computeDesiredWatches` is O(files × dirs))",
+   "url": "https://github.com/microsoft/typescript-go/issues/4614",
+   "state": "closed",
+   "created": "2026-07-13",
+   "comments": 2,
+   "query": "references in:title repo:microsoft/typescript-go is:issue"
+  },
+  {
+   "repo": "microsoft/typescript-go",
+   "number": 4334,
+   "title": "No \"Find file references\" upon clicking on typescript file",
+   "url": "https://github.com/microsoft/typescript-go/issues/4334",
+   "state": "closed",
+   "created": "2026-06-16",
+   "comments": 1,
+   "query": "references in:title repo:microsoft/typescript-go is:issue"
+  },
+  {
+   "repo": "microsoft/typescript-go",
+   "number": 4425,
+   "title": "Panic (nil deref) in checker.GetBaseTypes for plain type references (e.g. `string[]`) via the API",
+   "url": "https://github.com/microsoft/typescript-go/issues/4425",
+   "state": "closed",
+   "created": "2026-06-24",
+   "comments": 2,
+   "query": "references in:title repo:microsoft/typescript-go is:issue"
+  },
+  {
+   "repo": "microsoft/typescript-go",
+   "number": 3596,
+   "title": "TS2883 regression in --build with project references on inferred export from referenced package",
+   "url": "https://github.com/microsoft/typescript-go/issues/3596",
+   "state": "closed",
+   "created": "2026-04-24",
+   "comments": 2,
+   "query": "references in:title repo:microsoft/typescript-go is:issue"
+  },
+  {
+   "repo": "microsoft/typescript-go",
+   "number": 2473,
+   "title": "Autocompletion panics",
+   "url": "https://github.com/microsoft/typescript-go/issues/2473",
+   "state": "closed",
+   "created": "2026-01-12",
+   "comments": 9,
+   "query": "highlight unexpected repo:microsoft/typescript-go is:issue"
+  },
+  {
+   "repo": "microsoft/typescript-go",
+   "number": 3508,
+   "title": "Corsa no longer emits the TS-1 internal diagnostic about pre-emit/post-emit diagnostic count mismatches",
+   "url": "https://github.com/microsoft/typescript-go/issues/3508",
+   "state": "closed",
+   "created": "2026-04-22",
+   "comments": 2,
+   "query": "highlight references repo:microsoft/typescript-go is:issue"
+  },
+  {
+   "repo": "microsoft/typescript-go",
+   "number": 1328,
+   "title": "Declaration emit missing `declare const` for symbols imported from a `#subpath_import`",
+   "url": "https://github.com/microsoft/typescript-go/issues/1328",
+   "state": "closed",
+   "created": "2025-07-01",
+   "comments": 7,
+   "query": "highlight references repo:microsoft/typescript-go is:issue"
+  }
+ ],
+ "notes": [],
+ "authenticated": true
+}

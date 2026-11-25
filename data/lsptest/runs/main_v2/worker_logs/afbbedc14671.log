@@ -1,0 +1,3 @@
+2026-11-18 07:07:50,224 INFO campaign_run run afbbedc14671: r1_history on rust-analyzer 2026-09-21, tokio-rs/tokio@3930bd182cb1 seed 1 race0, targets ['tokio/src/runtime/time/wheel/mod.rs', 'tokio/src/runtime/time_alt/wheel/level.rs', 'tokio/tests/uds_split.rs']
+2026-11-18 07:14:56,568 INFO campaign_run run afbbedc14671: 0 candidate(s) in 426s; confirming
+2026-11-18 07:14:56,569 INFO campaign_run run afbbedc14671 finished: ok, 0 confirmed of 0 candidate(s), 426s

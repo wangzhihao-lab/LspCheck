@@ -1,0 +1,92 @@
+{
+ "queries": [
+  "reopen in:title repo:microsoft/pyright is:issue",
+  "references missing repo:microsoft/pyright is:issue",
+  "references reopen repo:microsoft/pyright is:issue",
+  "references stale repo:microsoft/pyright is:issue"
+ ],
+ "matches": [
+  {
+   "repo": "microsoft/pyright",
+   "number": 3075,
+   "title": "Lazy analysis for LSP",
+   "url": "https://github.com/microsoft/pyright/issues/3075",
+   "state": "closed",
+   "created": "2022-02-18",
+   "comments": 6,
+   "query": "references missing repo:microsoft/pyright is:issue"
+  },
+  {
+   "repo": "microsoft/pyright",
+   "number": 10086,
+   "title": "Pyright LSP Returns Incomplete References Without Explicit didOpen for All Files",
+   "url": "https://github.com/microsoft/pyright/issues/10086",
+   "state": "closed",
+   "created": "2025-03-14",
+   "comments": 5,
+   "query": "references missing repo:microsoft/pyright is:issue"
+  },
+  {
+   "repo": "microsoft/pyright",
+   "number": 10715,
+   "title": "@overload function gives incorrect revealed type for Pylance but not for pyright/mypy",
+   "url": "https://github.com/microsoft/pyright/issues/10715",
+   "state": "closed",
+   "created": "2025-07-16",
+   "comments": 38,
+   "query": "references missing repo:microsoft/pyright is:issue"
+  },
+  {
+   "repo": "microsoft/pyright",
+   "number": 10053,
+   "title": "Django BooleanField default value error",
+   "url": "https://github.com/microsoft/pyright/issues/10053",
+   "state": "closed",
+   "created": "2025-03-10",
+   "comments": 5,
+   "query": "references missing repo:microsoft/pyright is:issue"
+  },
+  {
+   "repo": "microsoft/pyright",
+   "number": 8693,
+   "title": "Provide diagnostics for missing brackets.",
+   "url": "https://github.com/microsoft/pyright/issues/8693",
+   "state": "closed",
+   "created": "2024-08-08",
+   "comments": 2,
+   "query": "references missing repo:microsoft/pyright is:issue"
+  },
+  {
+   "repo": "microsoft/pyright",
+   "number": 10279,
+   "title": "Unknown Send type in generator with yield from",
+   "url": "https://github.com/microsoft/pyright/issues/10279",
+   "state": "closed",
+   "created": "2025-04-08",
+   "comments": 4,
+   "query": "references reopen repo:microsoft/pyright is:issue"
+  },
+  {
+   "repo": "microsoft/pyright",
+   "number": 8649,
+   "title": "String literal reported as \"is not defined\" generating `reportUndefinedVariable`",
+   "url": "https://github.com/microsoft/pyright/issues/8649",
+   "state": "closed",
+   "created": "2024-08-04",
+   "comments": 8,
+   "query": "references reopen repo:microsoft/pyright is:issue"
+  },
+  {
+   "repo": "microsoft/pyright",
+   "number": 6423,
+   "title": "Pylance does not honor union return type for __new__",
+   "url": "https://github.com/microsoft/pyright/issues/6423",
+   "state": "closed",
+   "created": "2023-11-11",
+   "comments": 5,
+   "query": "references reopen repo:microsoft/pyright is:issue"
+  }
+ ],
+ "notes": [],
+ "authenticated": true
+}

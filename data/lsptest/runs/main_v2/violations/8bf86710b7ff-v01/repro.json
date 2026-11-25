@@ -1,0 +1,450 @@
+{
+ "format": 1,
+ "campaign": "main_v2",
+ "vid": "8bf86710b7ff-v01",
+ "run_id": "8bf86710b7ff",
+ "oracle": "r6_crossimpl",
+ "server": {
+  "kind": "ts7",
+  "version": "7.0.2"
+ },
+ "project": {
+  "name": "Gitlawb/openclaude@5cd11336caea",
+  "source": "corpus",
+  "ref": "temp/corpus/Gitlawb__openclaude@5cd11336caea",
+  "commit": "5cd11336caeaf2023ca1e02e5975c761cfc585fe",
+  "language": "typescript"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "src/commands/privacy-settings/index.ts",
+    "positions": [
+     [
+      0,
+      9
+     ],
+     [
+      0,
+      17
+     ],
+     [
+      0,
+      26
+     ],
+     [
+      1,
+      34
+     ],
+     [
+      3,
+      13
+     ],
+     [
+      5,
+      4
+     ],
+     [
+      6,
+      7
+     ],
+     [
+      7,
+      6
+     ],
+     [
+      8,
+      21
+     ],
+     [
+      10,
+      4
+     ],
+     [
+      11,
+      15
+     ],
+     [
+      13,
+      22
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      11
+     ],
+     [
+      0,
+      21
+     ],
+     [
+      0,
+      28
+     ],
+     [
+      1,
+      36
+     ],
+     [
+      3,
+      21
+     ],
+     [
+      5,
+      6
+     ],
+     [
+      6,
+      13
+     ],
+     [
+      7,
+      11
+     ],
+     [
+      8,
+      31
+     ],
+     [
+      10,
+      6
+     ],
+     [
+      11,
+      19
+     ],
+     [
+      13,
+      30
+     ]
+    ],
+    "names": [
+     "type",
+     "Command",
+     "from",
+     "from",
+     "privacySettings",
+     "name",
+     "description",
+     "isEnabled",
+     "isConsumerSubscriber",
+     "load",
+     "Command",
+     "privacySettings"
+    ]
+   },
+   {
+    "path": "src/components/PromptInput/Notifications.tsx",
+    "positions": [
+     [
+      16,
+      9
+     ],
+     [
+      24,
+      17
+     ],
+     [
+      41,
+      2
+     ],
+     [
+      77,
+      15
+     ],
+     [
+      101,
+      14
+     ],
+     [
+      179,
+      410
+     ],
+     [
+      207,
+      5
+     ],
+     [
+      238,
+      8
+     ],
+     [
+      265,
+      20
+     ],
+     [
+      317,
+      51
+     ],
+     [
+      324,
+      35
+     ],
+     [
+      330,
+      71
+     ]
+    ],
+    "ends": [
+     [
+      16,
+      11
+     ],
+     [
+      24,
+      25
+     ],
+     [
+      41,
+      4
+     ],
+     [
+      77,
+      19
+     ],
+     [
+      101,
+      22
+     ],
+     [
+      179,
+      419
+     ],
+     [
+      207,
+      7
+     ],
+     [
+      238,
+      15
+     ],
+     [
+      265,
+      21
+     ],
+     [
+      317,
+      53
+     ],
+     [
+      324,
+      36
+     ],
+     [
+      330,
+      73
+     ]
+    ],
+    "names": [
+     "type",
+     "toIDEDisplayName",
+     "type",
+     "messages",
+     "useNotifications",
+     "autoUpdaterResult",
+     "t14",
+     "notifications",
+     "ms",
+     "Box",
+     "a",
+     "Box"
+    ]
+   },
+   {
+    "path": "src/utils/log.test.ts",
+    "positions": [
+     [
+      28,
+      7
+     ],
+     [
+      31,
+      7
+     ],
+     [
+      39,
+      41
+     ],
+     [
+      40,
+      7
+     ],
+     [
+      52,
+      7
+     ],
+     [
+      52,
+      31
+     ],
+     [
+      57,
+      37
+     ],
+     [
+      69,
+      7
+     ],
+     [
+      74,
+      7
+     ],
+     [
+      91,
+      12
+     ],
+     [
+      103,
+      20
+     ],
+     [
+      105,
+      30
+     ]
+    ],
+    "ends": [
+     [
+      28,
+      9
+     ],
+     [
+      31,
+      9
+     ],
+     [
+      39,
+      45
+     ],
+     [
+      40,
+      10
+     ],
+     [
+      52,
+      10
+     ],
+     [
+      52,
+      35
+     ],
+     [
+      57,
+      39
+     ],
+     [
+      69,
+      10
+     ],
+     [
+      74,
+      10
+     ],
+     [
+      91,
+      14
+     ],
+     [
+      103,
+      25
+     ],
+     [
+      105,
+      32
+     ]
+    ],
+    "names": [
+     "err",
+     "url",
+     "toMatch",
+     "expect",
+     "expect",
+     "toMatch",
+     "err",
+     "Object",
+     "expect",
+     "obj",
+     "sanitized",
+     "toBe"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "definition",
+  "path": "src/components/PromptInput/Notifications.tsx",
+  "line": 41,
+  "character": 2,
+  "extra": ""
+ },
+ "ops": [],
+ "case": {
+  "intended": [],
+  "intended_source": "4519ec0a93607319a96f4feb967aa06a251ccc816544e2fed5c985c1d45dc11a",
+  "method": "definition",
+  "only_reference": [],
+  "only_test": [
+   "[\"src/components/PromptInput/Notifications.tsx\", 41, 5, 41, 10]"
+  ],
+  "reference": {
+   "kind": "ts6",
+   "version": "6.0.3"
+  }
+ },
+ "shape": "definition:gained",
+ "signature": "ts7|r6_crossimpl|definition:gained",
+ "expected": [],
+ "actual": [
+  [
+   "src/components/PromptInput/Notifications.tsx",
+   41,
+   5,
+   41,
+   10
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "ts7-7.0.2 and ts6-6.0.3 differ on definition at src/components/PromptInput/Notifications.tsx:42:3; no documented intended difference matches; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 398s",
+ "violation": {
+  "oracle": "r6_crossimpl",
+  "server": "ts7-7.0.2",
+  "project": "Gitlawb/openclaude@5cd11336caea",
+  "key": {
+   "method": "definition",
+   "path": "src/components/PromptInput/Notifications.tsx",
+   "line": 41,
+   "character": 2,
+   "extra": ""
+  },
+  "expected": [],
+  "actual": [
+   [
+    "src/components/PromptInput/Notifications.tsx",
+    41,
+    5,
+    41,
+    10
+   ]
+  ],
+  "ops": [],
+  "detail": "{\"case\": {\"intended\": [], \"intended_source\": \"4519ec0a93607319a96f4feb967aa06a251ccc816544e2fed5c985c1d45dc11a\", \"method\": \"definition\", \"only_reference\": [], \"only_test\": [\"[\\\"src/components/PromptInput/Notifications.tsx\\\", 41, 5, 41, 10]\"], \"reference\": {\"kind\": \"ts6\", \"version\": \"6.0.3\"}}, \"note\": \"ts7-7.0.2 and ts6-6.0.3 differ on definition at src/components/PromptInput/Notifications.tsx:42:3; no documented intended difference matches; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 398s\", \"shape\": \"definition:gained\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "ts7|r6_crossimpl|definition:gained",
+  "run_id": "8bf86710b7ff"
+ },
+ "replay_logs": [
+  "logs/ts6-6.0.3-8bf86710b7ff-ref-r6-replay-ref-baseline-20261118-075604-1ada5b.jsonl.gz",
+  "logs/ts6-6.0.3-8bf86710b7ff-ref-r6-replay-ref-control-20261118-075644-ee422c.jsonl.gz",
+  "logs/ts7-7.0.2-8bf86710b7ff-r6-replay-test-baseline-20261118-075509-66f161.jsonl.gz",
+  "logs/ts7-7.0.2-8bf86710b7ff-r6-replay-test-control-20261118-075536-52dff1.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

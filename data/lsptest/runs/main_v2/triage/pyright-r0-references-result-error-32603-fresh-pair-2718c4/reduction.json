@@ -1,0 +1,24 @@
+{
+ "vid": "0cc564977c8a-v00",
+ "ops_before": 0,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 0,
+ "cache_hits": 0,
+ "reduce_seconds": 0.0,
+ "budget_exhausted": false,
+ "probe_log": [],
+ "logs": [
+  "pyright-1.1.414-tr2718c4-r0-replay-baseline-20261118-223636-31cdfb.jsonl.gz",
+  "pyright-1.1.414-tr2718c4-r0-replay-control-20261118-223636-8590fd.jsonl.gz"
+ ],
+ "observed": {
+  "expected": "an answer that is not a server error, a crash or a timeout",
+  "actual": [
+   "error",
+   -32603
+  ]
+ },
+ "ops_after": 0,
+ "total_seconds": 12.5
+}

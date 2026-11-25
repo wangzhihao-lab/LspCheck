@@ -1,0 +1,3 @@
+2026-09-27 06:02:26,932 INFO version_sweep group rust-analyzer-r2-completionresolve-changed-completion-3170a1 (r2_handles): rust-analyzer 2026-09-21 -> rust-analyzer 2026-07-13
+rust-analyzer-r2-completionresolve-changed-completion-3170a1: reproduced (3/3, 228.3s)
+sweep c4-ra-2026-07-13: 1 group(s); reproduced 1; see data/lsptest/runs/main_v1/sweep/c4-ra-2026-07-13/summary.md

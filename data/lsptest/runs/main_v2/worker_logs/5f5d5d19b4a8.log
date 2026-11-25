@@ -1,0 +1,3 @@
+2026-11-18 00:43:58,620 INFO campaign_run run 5f5d5d19b4a8: r4_edits on pyright 1.1.414, karpathy/nanochat@92d63d4e8bb4 seed 1 settled, targets ['nanochat/common.py', 'scripts/chat_eval.py', 'tests/test_attention_fallback.py']
+2026-11-18 00:44:49,177 INFO campaign_run run 5f5d5d19b4a8: 0 candidate(s) in 51s; confirming
+2026-11-18 00:44:49,177 INFO campaign_run run 5f5d5d19b4a8 finished: ok, 0 confirmed of 0 candidate(s), 51s

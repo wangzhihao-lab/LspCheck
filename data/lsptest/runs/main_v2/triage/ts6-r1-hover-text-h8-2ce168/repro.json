@@ -1,0 +1,235 @@
+{
+ "format": 1,
+ "campaign": "main_v2",
+ "vid": "df02b705037e-v00",
+ "run_id": "df02b705037e",
+ "oracle": "r1_history",
+ "server": {
+  "kind": "ts6",
+  "version": "6.0.3"
+ },
+ "project": {
+  "name": "vadimdemedes/ink@02ae1e59e7c2",
+  "source": "corpus",
+  "ref": "temp/corpus/vadimdemedes__ink@02ae1e59e7c2",
+  "commit": "02ae1e59e7c288e971616100c4c11bcca6b5761b",
+  "language": "typescript"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "race0",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "src/components/FocusContext.ts",
+    "positions": [],
+    "ends": [],
+    "names": []
+   },
+   {
+    "path": "src/dom.ts",
+    "positions": [
+     [
+      149,
+      36
+     ]
+    ],
+    "ends": [],
+    "names": [
+     ""
+    ]
+   },
+   {
+    "path": "test/colon-colors.tsx",
+    "positions": [],
+    "ends": [],
+    "names": []
+   }
+  ]
+ },
+ "key": {
+  "method": "hover",
+  "path": "src/dom.ts",
+  "line": 149,
+  "character": 36,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "src/dom.ts"
+  },
+  {
+   "kind": "request",
+   "path": "src/dom.ts",
+   "start": [
+    163,
+    9
+   ],
+   "text": "typeDefinition"
+  }
+ ],
+ "case": {
+  "chain_step": 0,
+  "families": [],
+  "family": "H8",
+  "history_index": 11,
+  "history_seed": 1012,
+  "mode": "fresh",
+  "note": "after test/colon-colors.tsx: insert '// ' on line 32 and its inverse, 5 requests in a shuffled order: definition@src/dom.ts:140:9, hover@src/components/FocusContext.ts:8:15, typeDefinition@src/dom.ts:163:9, documentHighlight@src/dom.ts:177:38, references@src/components/FocusContext.ts:24:5",
+  "seed": 1,
+  "timing": "race0"
+ },
+ "shape": "hover:text",
+ "signature": "ts6|r1_history|hover:text",
+ "expected": [
+  "(parameter) newChildNode: DOMElement | TextNode",
+  [
+   149,
+   30,
+   149,
+   42
+  ]
+ ],
+ "actual": [
+  "(parameter) newChildNode: TextNode | DOMElement",
+  [
+   149,
+   30,
+   149,
+   42
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "H8: after test/colon-colors.tsx: insert '// ' on line 32 and its inverse, 5 requests in a shuffled order: definition@src/dom.ts:140:9, hover@src/components/FocusContext.ts:8:15, typeDefinition@src/dom.ts:; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 101s",
+ "violation": {
+  "oracle": "r1_history",
+  "server": "ts6-6.0.3",
+  "project": "vadimdemedes/ink@02ae1e59e7c2",
+  "key": {
+   "method": "hover",
+   "path": "src/dom.ts",
+   "line": 149,
+   "character": 36,
+   "extra": ""
+  },
+  "expected": [
+   "(parameter) newChildNode: DOMElement | TextNode",
+   [
+    149,
+    30,
+    149,
+    42
+   ]
+  ],
+  "actual": [
+   "(parameter) newChildNode: TextNode | DOMElement",
+   [
+    149,
+    30,
+    149,
+    42
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "src/components/FocusContext.ts"
+   },
+   {
+    "kind": "open",
+    "path": "src/dom.ts"
+   },
+   {
+    "kind": "open",
+    "path": "test/colon-colors.tsx"
+   },
+   {
+    "kind": "change",
+    "path": "test/colon-colors.tsx",
+    "start": [
+     32,
+     12
+    ],
+    "end": [
+     32,
+     12
+    ],
+    "text": "// "
+   },
+   {
+    "kind": "change",
+    "path": "test/colon-colors.tsx",
+    "start": [
+     32,
+     12
+    ],
+    "end": [
+     32,
+     15
+    ]
+   },
+   {
+    "kind": "request",
+    "path": "src/dom.ts",
+    "start": [
+     140,
+     9
+    ],
+    "text": "definition"
+   },
+   {
+    "kind": "request",
+    "path": "src/components/FocusContext.ts",
+    "start": [
+     8,
+     15
+    ],
+    "text": "hover"
+   },
+   {
+    "kind": "request",
+    "path": "src/dom.ts",
+    "start": [
+     163,
+     9
+    ],
+    "text": "typeDefinition"
+   },
+   {
+    "kind": "request",
+    "path": "src/dom.ts",
+    "start": [
+     177,
+     38
+    ],
+    "text": "documentHighlight"
+   },
+   {
+    "kind": "request",
+    "path": "src/components/FocusContext.ts",
+    "start": [
+     24,
+     5
+    ],
+    "text": "references"
+   }
+  ],
+  "detail": "{\"case\": {\"chain_step\": 0, \"families\": [], \"family\": \"H8\", \"history_index\": 11, \"history_seed\": 1012, \"mode\": \"fresh\", \"note\": \"after test/colon-colors.tsx: insert '// ' on line 32 and its inverse, 5 requests in a shuffled order: definition@src/dom.ts:140:9, hover@src/components/FocusContext.ts:8:15, typeDefinition@src/dom.ts:163:9, documentHighlight@src/dom.ts:177:38, references@src/components/FocusContext.ts:24:5\", \"seed\": 1, \"timing\": \"race0\"}, \"note\": \"H8: after test/colon-colors.tsx: insert '// ' on line 32 and its inverse, 5 requests in a shuffled order: definition@src/dom.ts:140:9, hover@src/components/FocusContext.ts:8:15, typeDefinition@src/dom.ts:; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 101s\", \"shape\": \"hover:text\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "ts6|r1_history|hover:text",
+  "run_id": "df02b705037e"
+ },
+ "replay_logs": [
+  "logs/ts6-6.0.3-tr2ce168-replay-baseline-20261119-001253-7cb99a.jsonl.gz",
+  "logs/ts6-6.0.3-tr2ce168-replay-control-20261119-001253-f1dd5b.jsonl.gz",
+  "logs/ts6-6.0.3-tr2ce168-replay-history-20261119-001309-022367.jsonl.gz"
+ ],
+ "project_files": {},
+ "group": "ts6-r1-hover-text-h8-2ce168",
+ "reduced": true
+}

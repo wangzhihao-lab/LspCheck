@@ -1,0 +1,148 @@
+{
+ "schema": 1,
+ "id": "gopls-74938",
+ "meta": {
+  "server": "gopls",
+  "kind": "gopls",
+  "number": 74938,
+  "url": "https://github.com/golang/go/issues/74938",
+  "title": "x/tools/gopls/internal/analysis/modernize: slicescontains analyzer suggests invalid refactoring when function parameter type doesn't match slice element type",
+  "oracle_class": "R4",
+  "subtype": "quickfix",
+  "fix_ref": "golang/tools@ef565f56dbd2 (gopls/internal/analysis/modernize: slicescontains: improve widening check; CL 705175, 'Fixes golang/go#74938')",
+  "fix_shas": [
+   "ef565f56dbd203c71349cc46c11fcded860a3a0a"
+  ],
+  "pre_version": "v0.20.0",
+  "post_version": "v0.21.0",
+  "pre_build": "v0.20.0",
+  "post_build": "v0.21.0",
+  "build_notes": "go install golang.org/x/tools/gopls@<version> with the local Go (go1.27.1), which builds both; the server runs the local go command. v0.20.0 was tagged 2025-07-28 (the reporter used the modernize command of that time), the fix merged 2025-09-19, v0.21.0 was tagged 2025-12-05. The slicescontains pass of the modernize analyzer (on by default) exists at v0.20.0.",
+  "candidate_rank": 16,
+  "effort_minutes": 30,
+  "notes": "Attempt 1 (the issue's own code) did not reproduce on v0.20.0: the analyzer already rejected a concrete element passed to an interface parameter (check added for golang/go#73564 in v0.19.0), so the reporter's binary was older than the pre build. The bug fixed by ef565f56 (checking only 'interface parameter with non-interface argument' instead of type identity) remains for interface or type-parameter elements; attempt 2 uses the fix's regression test (nopeTypeParamWidening). gopls offers the analyzer's suggested fix as a code action on its diagnostic."
+ },
+ "language": "go",
+ "settings": {},
+ "settings_note": "The modernize analyzer is on by default in both builds; no settings are named in the issue.",
+ "session": {
+  "settle_timeout_s": 180
+ },
+ "files": [
+  {
+   "path": "slicescontains.go",
+   "provenance": "repo",
+   "source": "golang/tools@ef565f56dbd203c71349cc46c11fcded860a3a0a:gopls/internal/analysis/modernize/testdata/src/slicescontains/slicescontains.go",
+   "note": "the analyzer's test file at the fix commit, whose new function nopeTypeParamWidening is the fix's regression test for this issue (an element of type parameter T passed to f(any)); mvdan's report in the thread (an interface element passed to a different interface parameter, in cue-lang/cue) needs the whole cue module"
+  },
+  {
+   "path": "go.mod",
+   "provenance": "scaffold",
+   "source": "",
+   "note": "a module around the analyzer's test package (analysistest runs it in GOPATH mode); go 1.24 enables the slices modernizers"
+  }
+ ],
+ "repro": {
+  "attempt": 2,
+  "timing": "settled",
+  "steps": "Open slicescontains.go. On v0.20.0 the slicescontains pass reports the loop in nopeTypeParamWidening (lines 197-201: for _, elem := range slice { if f(elem) { return true } } with f func(any) bool and elem of type parameter T). Apply its fix ('Replace loop by call to slices.ContainsFunc'): the result 'return slices.ContainsFunc(slice, f)' does not type-check (f has type func(any) bool, not func(T) bool). The fix's regression test expects no diagnostic and no fix for this loop. Probe: after the fix a fresh session must report no error that the original did not have; the targeted diagnostic is the one at the loop's range; no fix offered means absent.",
+  "ops": [
+   {
+    "kind": "open",
+    "path": "slicescontains.go"
+   }
+  ],
+  "probe": {
+   "type": "edit_leaves_diagnostic",
+   "params": {
+    "edit": {
+     "via": "code_action",
+     "path": "slicescontains.go",
+     "diagnostic": {
+      "message_re": "Loop can be simplified using slices\\.ContainsFunc",
+      "range": [
+       197,
+       1,
+       201,
+       2
+      ]
+     },
+     "title_re": "slices\\.ContainsFunc",
+     "missing": "absent"
+    },
+    "target": {
+     "message_re": "Loop can be simplified using slices\\.ContainsFunc",
+     "range": [
+      197,
+      1,
+      201,
+      2
+     ]
+    }
+   }
+  }
+ },
+ "attempts": [
+  {
+   "attempt": 1,
+   "timing": "settled",
+   "probe": "edit_leaves_diagnostic",
+   "summary": "The issue's own main.go (InColumnArray: *Column elements passed to EqualColumn(expr Expression)) with a go 1.24 module: open main.go and apply the slicescontains fix. Neither build reported the loop (v0.20.0 reported only an efaceany hint for 'interface{}'), so no fix was offered on either build (3/3 runs each). The pre-fix check at v0.20.0 already rejects an interface parameter with a concrete (non-interface) element type, which is exactly the issue's code (added for golang/go#73564 in v0.19.0); the reporter's binary was older. The bug fixed by ef565f56 is the remaining case: an interface or type-parameter element passed to an interface parameter of a different type (mvdan's cue report in the thread, and the fix's regression test).",
+   "verdict": "not-reproduced-pre",
+   "files": [
+    "main.go (issue)",
+    "go.mod (scaffold)"
+   ],
+   "ops": [
+    {
+     "kind": "open",
+     "path": "main.go"
+    }
+   ],
+   "params": {
+    "edit": {
+     "via": "code_action",
+     "path": "main.go",
+     "diagnostic": {
+      "message_re": "slices\\.ContainsFunc"
+     },
+     "title_re": "slices\\.ContainsFunc",
+     "missing": "absent"
+    },
+    "target": {
+     "message_re": "Loop can be simplified using slices\\.ContainsFunc"
+    }
+   }
+  },
+  {
+   "attempt": 2,
+   "timing": "settled",
+   "probe": "edit_leaves_diagnostic",
+   "summary": "First run of attempt 2, voided by a probe-spec error (not a test of the bug): the edit was selected by the range 197:1-197:4 with every diagnostic of the file as the code-action context, and gopls answered with the fixes of all modernize diagnostics; the first matching title was the fix for the loop in containsFunc (line 108), so both builds applied that correct fix (changed line 'return slices.ContainsFunc(slice, predicate)') and the loop under test was never touched (not-reproduced-pre, 0/3 and 0/3). The session log of v0.20.0 shows the targeted diagnostic 'Loop can be simplified using slices.ContainsFunc' at 197:1-201:2. The rerun selects the edit by that diagnostic (message and range), with the same project and target.",
+   "verdict": "void (probe targeted another loop)",
+   "params": {
+    "edit": {
+     "via": "code_action",
+     "path": "slicescontains.go",
+     "range": [
+      197,
+      1,
+      197,
+      4
+     ],
+     "title_re": "slices\\.ContainsFunc",
+     "missing": "absent"
+    },
+    "target": {
+     "message_re": "Loop can be simplified using slices\\.ContainsFunc",
+     "range": [
+      197,
+      1,
+      201,
+      2
+     ]
+    }
+   }
+  }
+ ]
+}

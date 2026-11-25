@@ -1,0 +1,92 @@
+{
+ "queries": [
+  "\"go to definition\" in:title repo:golang/go is:issue label:gopls",
+  "definition wrong repo:golang/go is:issue label:gopls",
+  "definition \"go to definition\" repo:golang/go is:issue label:gopls",
+  "definition inconsistent repo:golang/go is:issue label:gopls"
+ ],
+ "matches": [
+  {
+   "repo": "golang/go",
+   "number": 66827,
+   "title": "x/tools/gopls: go to definition within imported modules",
+   "url": "https://github.com/golang/go/issues/66827",
+   "state": "open",
+   "created": "2024-04-14",
+   "comments": 7,
+   "query": "\"go to definition\" in:title repo:golang/go is:issue label:gopls"
+  },
+  {
+   "repo": "golang/go",
+   "number": 40584,
+   "title": "x/tools/gopls: go to the definition of the only non-test interface implementation",
+   "url": "https://github.com/golang/go/issues/40584",
+   "state": "open",
+   "created": "2020-08-05",
+   "comments": 2,
+   "query": "\"go to definition\" in:title repo:golang/go is:issue label:gopls"
+  },
+  {
+   "repo": "golang/go",
+   "number": 73545,
+   "title": "x/tools/gopls: go to definition should go to replaced version of module",
+   "url": "https://github.com/golang/go/issues/73545",
+   "state": "closed",
+   "created": "2025-04-30",
+   "comments": 9,
+   "query": "\"go to definition\" in:title repo:golang/go is:issue label:gopls"
+  },
+  {
+   "repo": "golang/go",
+   "number": 70462,
+   "title": "x/tools/gopls: jump to definition on 'return' should go to the result parameter list",
+   "url": "https://github.com/golang/go/issues/70462",
+   "state": "closed",
+   "created": "2024-11-20",
+   "comments": 10,
+   "query": "\"go to definition\" in:title repo:golang/go is:issue label:gopls"
+  },
+  {
+   "repo": "golang/go",
+   "number": 77131,
+   "title": "x/tools/gopls: Definition: go:embed directive does not resolve to file location on Windows",
+   "url": "https://github.com/golang/go/issues/77131",
+   "state": "closed",
+   "created": "2026-01-08",
+   "comments": 12,
+   "query": "\"go to definition\" in:title repo:golang/go is:issue label:gopls"
+  },
+  {
+   "repo": "golang/go",
+   "number": 35520,
+   "title": "x/tools/gopls: improve error message when using wrong go command with Go source distribution",
+   "url": "https://github.com/golang/go/issues/35520",
+   "state": "open",
+   "created": "2019-11-12",
+   "comments": 16,
+   "query": "definition wrong repo:golang/go is:issue label:gopls"
+  },
+  {
+   "repo": "golang/go",
+   "number": 50991,
+   "title": "x/tools/gopls: -remote=auto doesn't use different addresses for different Go versions",
+   "url": "https://github.com/golang/go/issues/50991",
+   "state": "open",
+   "created": "2022-02-03",
+   "comments": 7,
+   "query": "definition wrong repo:golang/go is:issue label:gopls"
+  },
+  {
+   "repo": "golang/go",
+   "number": 75271,
+   "title": "x/tools/gopls: InlayHint(constantValues): don't exclude booleans",
+   "url": "https://github.com/golang/go/issues/75271",
+   "state": "open",
+   "created": "2025-09-04",
+   "comments": 2,
+   "query": "definition wrong repo:golang/go is:issue label:gopls"
+  }
+ ],
+ "notes": [],
+ "authenticated": true
+}

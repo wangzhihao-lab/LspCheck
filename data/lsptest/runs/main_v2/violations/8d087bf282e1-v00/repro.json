@@ -1,0 +1,559 @@
+{
+ "format": 1,
+ "campaign": "main_v2",
+ "vid": "8d087bf282e1-v00",
+ "run_id": "8d087bf282e1",
+ "oracle": "r4_edits",
+ "server": {
+  "kind": "ts6",
+  "version": "6.0.3"
+ },
+ "project": {
+  "name": "umami-software/umami@12ad773d621f",
+  "source": "corpus",
+  "ref": "temp/corpus/umami-software__umami@12ad773d621f",
+  "commit": "12ad773d621f51da6e81e9031b458efe56be3e8e",
+  "language": "typescript"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "src/app/(main)/settings/websites/WebsitesSettingsPage.tsx",
+    "positions": [
+     [
+      1,
+      20
+     ],
+     [
+      2,
+      31
+     ],
+     [
+      3,
+      15
+     ],
+     [
+      3,
+      27
+     ],
+     [
+      4,
+      14
+     ],
+     [
+      10,
+      13
+     ],
+     [
+      11,
+      13
+     ],
+     [
+      11,
+      23
+     ],
+     [
+      11,
+      33
+     ],
+     [
+      12,
+      15
+     ],
+     [
+      12,
+      28
+     ],
+     [
+      12,
+      36
+     ]
+    ],
+    "ends": [
+     [
+      1,
+      22
+     ],
+     [
+      2,
+      33
+     ],
+     [
+      3,
+      22
+     ],
+     [
+      3,
+      29
+     ],
+     [
+      4,
+      20
+     ],
+     [
+      10,
+      15
+     ],
+     [
+      11,
+      20
+     ],
+     [
+      11,
+      26
+     ],
+     [
+      11,
+      36
+     ],
+     [
+      12,
+      24
+     ],
+     [
+      12,
+      31
+     ],
+     [
+      12,
+      39
+     ]
+    ],
+    "names": [
+     "from",
+     "from",
+     "SectionHeader",
+     "from",
+     "useMessages",
+     "gap",
+     "SectionHeader",
+     "title",
+     "labels",
+     "WebsitesDataTable",
+     "teamId",
+     "teamId"
+    ]
+   },
+   {
+    "path": "src/app/(main)/websites/[websiteId]/(reports)/funnels/page.tsx",
+    "positions": [
+     [
+      0,
+      9
+     ],
+     [
+      0,
+      27
+     ],
+     [
+      1,
+      14
+     ],
+     [
+      1,
+      25
+     ],
+     [
+      3,
+      36
+     ],
+     [
+      3,
+      48
+     ],
+     [
+      3,
+      56
+     ],
+     [
+      4,
+      33
+     ],
+     [
+      6,
+      26
+     ],
+     [
+      6,
+      37
+     ],
+     [
+      9,
+      27
+     ],
+     [
+      10,
+      4
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      11
+     ],
+     [
+      0,
+      29
+     ],
+     [
+      1,
+      20
+     ],
+     [
+      1,
+      27
+     ],
+     [
+      3,
+      39
+     ],
+     [
+      3,
+      51
+     ],
+     [
+      3,
+      60
+     ],
+     [
+      4,
+      36
+     ],
+     [
+      6,
+      31
+     ],
+     [
+      6,
+      42
+     ],
+     [
+      9,
+      31
+     ],
+     [
+      10,
+      7
+     ]
+    ],
+    "names": [
+     "type",
+     "from",
+     "FunnelsPage",
+     "from",
+     "params",
+     "params",
+     "Promise",
+     "params",
+     "websiteId",
+     "websiteId",
+     "Metadata",
+     "title"
+    ]
+   },
+   {
+    "path": "tests/api/helpers/constants.ts",
+    "positions": [
+     [
+      10,
+      6
+     ],
+     [
+      11,
+      4
+     ],
+     [
+      14,
+      15
+     ],
+     [
+      15,
+      4
+     ],
+     [
+      16,
+      4
+     ],
+     [
+      17,
+      6
+     ],
+     [
+      18,
+      6
+     ],
+     [
+      24,
+      18
+     ],
+     [
+      32,
+      18
+     ],
+     [
+      33,
+      5
+     ],
+     [
+      35,
+      4
+     ],
+     [
+      39,
+      22
+     ]
+    ],
+    "ends": [
+     [
+      10,
+      10
+     ],
+     [
+      11,
+      6
+     ],
+     [
+      14,
+      18
+     ],
+     [
+      15,
+      7
+     ],
+     [
+      16,
+      6
+     ],
+     [
+      17,
+      10
+     ],
+     [
+      18,
+      11
+     ],
+     [
+      24,
+      23
+     ],
+     [
+      32,
+      24
+     ],
+     [
+      33,
+      9
+     ],
+     [
+      35,
+      7
+     ],
+     [
+      39,
+      31
+     ]
+    ],
+    "names": [
+     "password",
+     "role",
+     "ROLES",
+     "admin",
+     "user",
+     "viewOnly",
+     "teamOwner",
+     "EVENT_TYPE",
+     "ENTITY_TYPE",
+     "website",
+     "pixel",
+     "SHARE_TOKEN_HEADER"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "diagnostics",
+  "path": "src/app/(main)/settings/websites/WebsitesSettingsPage.tsx",
+  "line": 7,
+  "character": 13,
+  "extra": "M3:quickfix-errors:Remove unused declaration for: 'labels'"
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "src/app/(main)/settings/websites/WebsitesSettingsPage.tsx"
+  },
+  {
+   "kind": "change",
+   "path": "src/app/(main)/settings/websites/WebsitesSettingsPage.tsx",
+   "start": [
+    11,
+    30
+   ],
+   "end": [
+    11,
+    45
+   ]
+  },
+  {
+   "kind": "change",
+   "path": "src/app/(main)/settings/websites/WebsitesSettingsPage.tsx",
+   "start": [
+    7,
+    11
+   ],
+   "end": [
+    7,
+    19
+   ]
+  }
+ ],
+ "case": {
+  "action_kind": "quickfix",
+  "base_errors": 0,
+  "check": "errors",
+  "diag": {
+   "code": 6133,
+   "message": "'labels' is declared but its value is never read.",
+   "range": {
+    "end": {
+     "character": 19,
+     "line": 7
+    },
+    "start": {
+     "character": 13,
+     "line": 7
+    }
+   },
+   "severity": 4
+  },
+  "fix_introduced_errors": [],
+  "fix_ops": [
+   {
+    "end": [
+     7,
+     19
+    ],
+    "kind": "change",
+    "path": "src/app/(main)/settings/websites/WebsitesSettingsPage.tsx",
+    "start": [
+     7,
+     11
+    ]
+   }
+  ],
+  "kind": "mutation",
+  "mutation": {
+   "end": [
+    11,
+    45
+   ],
+   "id": "M3",
+   "offsets": [
+    421,
+    436
+   ],
+   "sha": "8603ff6ce90ea18b",
+   "start": [
+    11,
+    30
+   ],
+   "text": "",
+   "what": "drop the last argument of 't(...)'"
+  },
+  "n_fix_ops": 1,
+  "path": "src/app/(main)/settings/websites/WebsitesSettingsPage.tsx",
+  "post_errors": 1,
+  "title": "Remove unused declaration for: 'labels'",
+  "via": "edit"
+ },
+ "shape": "diagnostics:extra:2555",
+ "signature": "ts6|r4_edits|diagnostics:extra:2555",
+ "expected": [],
+ "actual": [
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "2555",
+   "typescript",
+   "Expected at least 1 arguments, but got 0."
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "quick fix \"Remove unused declaration for: 'labels'\" for 6133 at src/app/(main)/settings/websites/WebsitesSettingsPage.tsx:8:14 raises the error count in the edited files from 0 to 1 (seeded by M3: drop the last argument of 't(...)'; errors before the mutation 0, after the fix 1); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 700s",
+ "violation": {
+  "oracle": "r4_edits",
+  "server": "ts6-6.0.3",
+  "project": "umami-software/umami@12ad773d621f",
+  "key": {
+   "method": "diagnostics",
+   "path": "src/app/(main)/settings/websites/WebsitesSettingsPage.tsx",
+   "line": 7,
+   "character": 13,
+   "extra": "M3:quickfix-errors:Remove unused declaration for: 'labels'"
+  },
+  "expected": [],
+  "actual": [
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2555",
+    "typescript",
+    "Expected at least 1 arguments, but got 0."
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "src/app/(main)/settings/websites/WebsitesSettingsPage.tsx"
+   },
+   {
+    "kind": "change",
+    "path": "src/app/(main)/settings/websites/WebsitesSettingsPage.tsx",
+    "start": [
+     11,
+     30
+    ],
+    "end": [
+     11,
+     45
+    ]
+   },
+   {
+    "kind": "change",
+    "path": "src/app/(main)/settings/websites/WebsitesSettingsPage.tsx",
+    "start": [
+     7,
+     11
+    ],
+    "end": [
+     7,
+     19
+    ]
+   }
+  ],
+  "detail": "{\"case\": {\"action_kind\": \"quickfix\", \"base_errors\": 0, \"check\": \"errors\", \"diag\": {\"code\": 6133, \"message\": \"'labels' is declared but its value is never read.\", \"range\": {\"end\": {\"character\": 19, \"line\": 7}, \"start\": {\"character\": 13, \"line\": 7}}, \"severity\": 4}, \"fix_introduced_errors\": [], \"fix_ops\": [{\"end\": [7, 19], \"kind\": \"change\", \"path\": \"src/app/(main)/settings/websites/WebsitesSettingsPage.tsx\", \"start\": [7, 11]}], \"kind\": \"mutation\", \"mutation\": {\"end\": [11, 45], \"id\": \"M3\", \"offsets\": [421, 436], \"sha\": \"8603ff6ce90ea18b\", \"start\": [11, 30], \"text\": \"\", \"what\": \"drop the last argument of 't(...)'\"}, \"n_fix_ops\": 1, \"path\": \"src/app/(main)/settings/websites/WebsitesSettingsPage.tsx\", \"post_errors\": 1, \"title\": \"Remove unused declaration for: 'labels'\", \"via\": \"edit\"}, \"note\": \"quick fix \\\"Remove unused declaration for: 'labels'\\\" for 6133 at src/app/(main)/settings/websites/WebsitesSettingsPage.tsx:8:14 raises the error count in the edited files from 0 to 1 (seeded by M3: drop the last argument of 't(...)'; errors before the mutation 0, after the fix 1); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 700s\", \"shape\": \"diagnostics:extra:2555\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "ts6|r4_edits|diagnostics:extra:2555",
+  "run_id": "8d087bf282e1"
+ },
+ "replay_logs": [
+  "logs/ts6-6.0.3-8d087bf282e1-r4-replay-baseline-20261118-113815-0c3b1f.jsonl.gz",
+  "logs/ts6-6.0.3-8d087bf282e1-r4-replay-case-20261118-113705-236993.jsonl.gz",
+  "logs/ts6-6.0.3-8d087bf282e1-r4-replay-control-20261118-113945-6a84fe.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

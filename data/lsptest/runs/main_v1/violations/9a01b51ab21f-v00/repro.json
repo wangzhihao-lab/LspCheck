@@ -1,0 +1,561 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "9a01b51ab21f-v00",
+ "run_id": "9a01b51ab21f",
+ "oracle": "r4_edits",
+ "server": {
+  "kind": "ts6",
+  "version": "6.0.3"
+ },
+ "project": {
+  "name": "vercel/hyper@30ec0a2a91de",
+  "source": "corpus",
+  "ref": "temp/corpus/vercel__hyper@30ec0a2a91de",
+  "commit": "30ec0a2a91de17eeb32dd71998fe8a8ec59f98eb",
+  "language": "typescript"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "app/utils/renderer-utils.ts",
+    "positions": [
+     [
+      0,
+      12
+     ],
+     [
+      0,
+      24
+     ],
+     [
+      2,
+      17
+     ],
+     [
+      3,
+      15
+     ],
+     [
+      6,
+      26
+     ],
+     [
+      6,
+      40
+     ],
+     [
+      7,
+      8
+     ],
+     [
+      7,
+      17
+     ],
+     [
+      7,
+      25
+     ],
+     [
+      10,
+      17
+     ],
+     [
+      11,
+      24
+     ],
+     [
+      14,
+      33
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      19
+     ],
+     [
+      0,
+      27
+     ],
+     [
+      2,
+      25
+     ],
+     [
+      3,
+      22
+     ],
+     [
+      6,
+      28
+     ],
+     [
+      6,
+      42
+     ],
+     [
+      7,
+      15
+     ],
+     [
+      7,
+      19
+     ],
+     [
+      7,
+      27
+     ],
+     [
+      10,
+      26
+     ],
+     [
+      11,
+      26
+     ],
+     [
+      14,
+      41
+     ]
+    ],
+    "names": [
+     "rendererTypes",
+     "Record",
+     "getRendererTypes",
+     "rendererTypes",
+     "uid",
+     "type",
+     "rendererTypes",
+     "uid",
+     "type",
+     "unsetRendererType",
+     "uid",
+     "setRendererType"
+    ]
+   },
+   {
+    "path": "lib/index.tsx",
+    "positions": [
+     [
+      34,
+      25
+     ],
+     [
+      45,
+      14
+     ],
+     [
+      72,
+      20
+     ],
+     [
+      99,
+      1
+     ],
+     [
+      100,
+      25
+     ],
+     [
+      131,
+      1
+     ],
+     [
+      148,
+      13
+     ],
+     [
+      168,
+      70
+     ],
+     [
+      191,
+      5
+     ],
+     [
+      191,
+      27
+     ],
+     [
+      204,
+      13
+     ],
+     [
+      243,
+      5
+     ]
+    ],
+    "ends": [
+     [
+      34,
+      28
+     ],
+     [
+      45,
+      19
+     ],
+     [
+      72,
+      22
+     ],
+     [
+      99,
+      3
+     ],
+     [
+      100,
+      32
+     ],
+     [
+      131,
+      3
+     ],
+     [
+      148,
+      17
+     ],
+     [
+      168,
+      74
+     ],
+     [
+      191,
+      6
+     ],
+     [
+      191,
+      30
+     ],
+     [
+      204,
+      17
+     ],
+     [
+      243,
+      6
+     ]
+    ],
+    "names": [
+     "window",
+     "bellSound",
+     "init",
+     "rpc",
+     "sessionActions",
+     "rpc",
+     "dispatch",
+     "profile",
+     "on",
+     "index",
+     "dispatch",
+     "on"
+    ]
+   },
+   {
+    "path": "lib/reducers/index.ts",
+    "positions": [
+     [
+      0,
+      15
+     ],
+     [
+      1,
+      9
+     ],
+     [
+      3,
+      9
+     ],
+     [
+      3,
+      32
+     ],
+     [
+      3,
+      41
+     ],
+     [
+      5,
+      18
+     ],
+     [
+      6,
+      20
+     ],
+     [
+      7,
+      12
+     ],
+     [
+      9,
+      22
+     ],
+     [
+      10,
+      3
+     ],
+     [
+      11,
+      6
+     ],
+     [
+      13,
+      9
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      23
+     ],
+     [
+      1,
+      11
+     ],
+     [
+      3,
+      11
+     ],
+     [
+      3,
+      37
+     ],
+     [
+      3,
+      43
+     ],
+     [
+      5,
+      20
+     ],
+     [
+      6,
+      22
+     ],
+     [
+      7,
+      14
+     ],
+     [
+      9,
+      30
+     ],
+     [
+      10,
+      4
+     ],
+     [
+      11,
+      10
+     ],
+     [
+      13,
+      13
+     ]
+    ],
+    "names": [
+     "combineReducers",
+     "type",
+     "type",
+     "HyperState",
+     "from",
+     "from",
+     "from",
+     "from",
+     "combineReducers",
+     "ui",
+     "sessions",
+     "Reducer"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "diagnostics",
+  "path": "app/utils/renderer-utils.ts",
+  "line": 10,
+  "character": 9,
+  "extra": "M2:quickfix-errors:Remove unused declaration for: 'unsetRendererType'"
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "app/utils/renderer-utils.ts"
+  },
+  {
+   "kind": "change",
+   "path": "app/utils/renderer-utils.ts",
+   "start": [
+    14,
+    43
+   ],
+   "end": [
+    14,
+    60
+   ],
+   "text": "unsetRenererType"
+  },
+  {
+   "kind": "change",
+   "path": "app/utils/renderer-utils.ts",
+   "start": [
+    10,
+    0
+   ],
+   "end": [
+    13,
+    0
+   ]
+  }
+ ],
+ "case": {
+  "action_kind": "quickfix",
+  "base_errors": 0,
+  "check": "errors",
+  "diag": {
+   "code": 6133,
+   "message": "'unsetRendererType' is declared but its value is never read.",
+   "range": {
+    "end": {
+     "character": 26,
+     "line": 10
+    },
+    "start": {
+     "character": 9,
+     "line": 10
+    }
+   },
+   "severity": 4
+  },
+  "fix_introduced_errors": [],
+  "fix_ops": [
+   {
+    "end": [
+     13,
+     0
+    ],
+    "kind": "change",
+    "path": "app/utils/renderer-utils.ts",
+    "start": [
+     10,
+     0
+    ]
+   }
+  ],
+  "kind": "mutation",
+  "mutation": {
+   "end": [
+    14,
+    60
+   ],
+   "id": "M2",
+   "offsets": [
+    311,
+    328
+   ],
+   "sha": "5af83dcfefd20732",
+   "start": [
+    14,
+    43
+   ],
+   "text": "unsetRenererType",
+   "what": "misspell 'unsetRendererType' as 'unsetRenererType' (drop a middle character)"
+  },
+  "n_fix_ops": 1,
+  "path": "app/utils/renderer-utils.ts",
+  "post_errors": 1,
+  "title": "Remove unused declaration for: 'unsetRendererType'",
+  "via": "edit"
+ },
+ "shape": "diagnostics:extra:2552",
+ "signature": "ts6|r4_edits|diagnostics:extra:2552",
+ "expected": [],
+ "actual": [
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "2552",
+   "typescript",
+   "Cannot find name 'unsetRenererType'. Did you mean 'setRendererType'?"
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "quick fix \"Remove unused declaration for: 'unsetRendererType'\" for 6133 at app/utils/renderer-utils.ts:11:10 raises the error count in the edited files from 0 to 1 (seeded by M2: misspell 'unsetRendererType' as 'unsetRenererType' (drop a middle character); errors before the mutation 0, after the fix 1); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 1348s",
+ "violation": {
+  "oracle": "r4_edits",
+  "server": "ts6-6.0.3",
+  "project": "vercel/hyper@30ec0a2a91de",
+  "key": {
+   "method": "diagnostics",
+   "path": "app/utils/renderer-utils.ts",
+   "line": 10,
+   "character": 9,
+   "extra": "M2:quickfix-errors:Remove unused declaration for: 'unsetRendererType'"
+  },
+  "expected": [],
+  "actual": [
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2552",
+    "typescript",
+    "Cannot find name 'unsetRenererType'. Did you mean 'setRendererType'?"
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "app/utils/renderer-utils.ts"
+   },
+   {
+    "kind": "change",
+    "path": "app/utils/renderer-utils.ts",
+    "start": [
+     14,
+     43
+    ],
+    "end": [
+     14,
+     60
+    ],
+    "text": "unsetRenererType"
+   },
+   {
+    "kind": "change",
+    "path": "app/utils/renderer-utils.ts",
+    "start": [
+     10,
+     0
+    ],
+    "end": [
+     13,
+     0
+    ]
+   }
+  ],
+  "detail": "{\"case\": {\"action_kind\": \"quickfix\", \"base_errors\": 0, \"check\": \"errors\", \"diag\": {\"code\": 6133, \"message\": \"'unsetRendererType' is declared but its value is never read.\", \"range\": {\"end\": {\"character\": 26, \"line\": 10}, \"start\": {\"character\": 9, \"line\": 10}}, \"severity\": 4}, \"fix_introduced_errors\": [], \"fix_ops\": [{\"end\": [13, 0], \"kind\": \"change\", \"path\": \"app/utils/renderer-utils.ts\", \"start\": [10, 0]}], \"kind\": \"mutation\", \"mutation\": {\"end\": [14, 60], \"id\": \"M2\", \"offsets\": [311, 328], \"sha\": \"5af83dcfefd20732\", \"start\": [14, 43], \"text\": \"unsetRenererType\", \"what\": \"misspell 'unsetRendererType' as 'unsetRenererType' (drop a middle character)\"}, \"n_fix_ops\": 1, \"path\": \"app/utils/renderer-utils.ts\", \"post_errors\": 1, \"title\": \"Remove unused declaration for: 'unsetRendererType'\", \"via\": \"edit\"}, \"note\": \"quick fix \\\"Remove unused declaration for: 'unsetRendererType'\\\" for 6133 at app/utils/renderer-utils.ts:11:10 raises the error count in the edited files from 0 to 1 (seeded by M2: misspell 'unsetRendererType' as 'unsetRenererType' (drop a middle character); errors before the mutation 0, after the fix 1); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 1348s\", \"shape\": \"diagnostics:extra:2552\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "ts6|r4_edits|diagnostics:extra:2552",
+  "run_id": "9a01b51ab21f"
+ },
+ "replay_logs": [
+  "logs/ts6-6.0.3-9a01b51ab21f-r4-replay-baseline-20260923-182933-f6f7af.jsonl.gz",
+  "logs/ts6-6.0.3-9a01b51ab21f-r4-replay-case-20260923-182713-db1f0e.jsonl.gz",
+  "logs/ts6-6.0.3-9a01b51ab21f-r4-replay-control-20260923-183214-2bc9ab.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

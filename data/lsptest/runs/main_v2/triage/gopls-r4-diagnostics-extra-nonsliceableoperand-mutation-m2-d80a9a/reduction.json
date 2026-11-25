@@ -1,0 +1,42 @@
+{
+ "vid": "31cdc65c834b-v00",
+ "ops_before": 3,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 2,
+ "cache_hits": 0,
+ "reduce_seconds": 5.691,
+ "budget_exhausted": false,
+ "probe_log": [
+  [
+   2,
+   false
+  ],
+  [
+   2,
+   false
+  ]
+ ],
+ "logs": [
+  "gopls-v0.23.0-trd80a9a-r4-replay-baseline-20261119-000744-efff33.jsonl.gz",
+  "gopls-v0.23.0-trd80a9a-r4-replay-case-20261119-000734-a2d991.jsonl.gz",
+  "gopls-v0.23.0-trd80a9a-r4-replay-control-20261119-000747-c9aefa.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [],
+  "actual": [
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "NonSliceableOperand",
+    "compiler",
+    "cannot slice arggs (variable of type int)"
+   ]
+  ]
+ },
+ "ops_after": 3,
+ "total_seconds": 77.0
+}

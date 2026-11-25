@@ -1,0 +1,3 @@
+2026-09-24 10:58:31,087 INFO campaign_run run 7e098f350292: r1_history on ts6 6.0.3, vercel/hyper@30ec0a2a91de seed 2 settled, targets ['app/menus/menus/window.ts', 'cli/index.ts', 'lib/utils/term-groups.ts']
+2026-09-24 11:12:12,682 INFO campaign_run run 7e098f350292: 3 candidate(s) in 822s; confirming
+2026-09-24 11:12:12,687 INFO campaign_run run 7e098f350292 finished: ok, 0 confirmed of 3 candidate(s), 822s

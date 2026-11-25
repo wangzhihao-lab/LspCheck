@@ -1,0 +1,462 @@
+go version: go version go1.27.1 darwin/arm64
+environment: GOPATH=<repo>/temp/lsp_servers/gopath, GOMODCACHE=<repo>/temp/lsp_servers/gopath/pkg/mod, GOPROXY=off, GOFLAGS=-modcacherw -mod=readonly, GOTOOLCHAIN=local
+
+== C5 gopls-r4-diagnostics-extra-notatype-mutation-m2-477181
+project charmbracelet/bubbletea@657aaae216e3, file examples/list-default/main.go
+mutation: misspell 'model' as 'moddel' (duplicate a middle character); fix: Create variable moddel
+fix edit: [{"kind": "change", "path": "examples/list-default/main.go", "start": [78, 2], "end": [78, 2], "text": "oddel := 0\n\tm"}]
+module <scratch>/examples; package check: go build -o /dev/null ./list-default
+-- mutated (before the fix):
+   76 | 		item{title: "Terrycloth", desc: "In other words, towel fabric"},
+   77 | 	}
+   78 | 
+   79 | 	m := moddel{list: list.New(items, list.NewDefaultDelegate(), 0, 0)}
+   80 | 	m.list.Title = "My Fave Things"
+   81 | 
+   82 | 	p := tea.NewProgram(m)
+-- fixed (after the fix):
+   76 | 		item{title: "Terrycloth", desc: "In other words, towel fabric"},
+   77 | 	}
+   78 | 
+   79 | 	moddel := 0
+   80 | 	m := moddel{list: list.New(items, list.NewDefaultDelegate(), 0, 0)}
+   81 | 	m.list.Title = "My Fave Things"
+   82 | 
+   83 | 	p := tea.NewProgram(m)
+-- [base] $ go build -o /dev/null ./list-default  (in <scratch>/examples) -> exit 0
+   (no output)
+-- [base] $ gofmt -e <scratch>/examples/list-default/main.go  (in <scratch>/examples) -> exit 0
+   (no output)
+-- [mutated] $ go build -o /dev/null ./list-default  (in <scratch>/examples) -> exit 1
+   # examples/list-default
+   list-default/main.go:79:7: undefined: moddel
+-- [mutated] $ gofmt -e <scratch>/examples/list-default/main.go  (in <scratch>/examples) -> exit 0
+   (no output)
+-- [fixed] $ go build -o /dev/null ./list-default  (in <scratch>/examples) -> exit 1
+   # examples/list-default
+   list-default/main.go:80:7: moddel (local variable) is not a type
+-- [fixed] $ gofmt -e <scratch>/examples/list-default/main.go  (in <scratch>/examples) -> exit 0
+   (no output)
+
+== C5 gopls-r4-diagnostics-extra-untypedniluse-mutation-m2-354f70
+project spf13/cobra@adbc8813901b, file command_win.go
+mutation: misspell 'MousetrapHelpText' as 'MousetrappHelpText' (duplicate a middle character); fix: Create variable MousetrappHelpText
+fix edit: [{"kind": "change", "path": "command_win.go", "start": [31, 2], "end": [31, 2], "text": "MousetrappHelpText := nil\n\t\t"}]
+module <scratch>; package check: go build -o /dev/null .
+-- mutated (before the fix):
+   29 | 
+   30 | func preExecHook(c *Command) {
+   31 | 	if MousetrapHelpText != "" && mousetrap.StartedByExplorer() {
+   32 | 		c.Print(MousetrappHelpText)
+   33 | 		if MousetrapDisplayDuration > 0 {
+   34 | 			time.Sleep(MousetrapDisplayDuration)
+   35 | 		} else {
+-- fixed (after the fix):
+   29 | 
+   30 | func preExecHook(c *Command) {
+   31 | 	if MousetrapHelpText != "" && mousetrap.StartedByExplorer() {
+   32 | 		MousetrappHelpText := nil
+   33 | 		c.Print(MousetrappHelpText)
+   34 | 		if MousetrapDisplayDuration > 0 {
+   35 | 			time.Sleep(MousetrapDisplayDuration)
+   36 | 		} else {
+-- [base] $ GOARCH=amd64 GOOS=windows go build -o /dev/null .  (in <scratch>) -> exit 0
+   (no output)
+-- [base] $ gofmt -e <scratch>/command_win.go  (in <scratch>) -> exit 0
+   (no output)
+-- [mutated] $ GOARCH=amd64 GOOS=windows go build -o /dev/null .  (in <scratch>) -> exit 1
+   # github.com/spf13/cobra
+   ./command_win.go:32:11: undefined: MousetrappHelpText
+-- [mutated] $ gofmt -e <scratch>/command_win.go  (in <scratch>) -> exit 0
+   (no output)
+-- [fixed] $ GOARCH=amd64 GOOS=windows go build -o /dev/null .  (in <scratch>) -> exit 1
+   # github.com/spf13/cobra
+   ./command_win.go:32:25: use of untyped nil in assignment
+-- [fixed] $ gofmt -e <scratch>/command_win.go  (in <scratch>) -> exit 0
+   (no output)
+
+== C5 gopls-r4-diagnostics-extra-invalidifaceassign-mutation-m2-416e90
+project XTLS/Xray-core@d562d8947d31, file common/crypto/io.go
+mutation: misspell 'reader' as 'reaer' (drop a middle character); fix: Create variable reaer
+fix edit: [{"kind": "change", "path": "common/crypto/io.go", "start": [15, 3], "end": [15, 3], "text": "aer := 0\n\tre"}]
+module <scratch>; package check: go build -o /dev/null ./common/crypto
+-- mutated (before the fix):
+   13 | }
+   14 | 
+   15 | func NewCryptionReader(stream cipher.Stream, reader io.Reader) *CryptionReader {
+   16 | 	return &CryptionReader{
+   17 | 		stream: stream,
+   18 | 		reader: reaer,
+   19 | 	}
+   20 | }
+   21 | 
+-- fixed (after the fix):
+   13 | }
+   14 | 
+   15 | func NewCryptionReader(stream cipher.Stream, reader io.Reader) *CryptionReader {
+   16 | 	reaer := 0
+   17 | 	return &CryptionReader{
+   18 | 		stream: stream,
+   19 | 		reader: reaer,
+   20 | 	}
+   21 | }
+   22 | 
+-- [base] $ go build -o /dev/null ./common/crypto  (in <scratch>) -> exit 0
+   (no output)
+-- [base] $ gofmt -e <scratch>/common/crypto/io.go  (in <scratch>) -> exit 0
+   (no output)
+-- [mutated] $ go build -o /dev/null ./common/crypto  (in <scratch>) -> exit 1
+   # github.com/xtls/xray-core/common/crypto
+   common/crypto/io.go:18:11: undefined: reaer
+-- [mutated] $ gofmt -e <scratch>/common/crypto/io.go  (in <scratch>) -> exit 0
+   (no output)
+-- [fixed] $ go build -o /dev/null ./common/crypto  (in <scratch>) -> exit 1
+   # github.com/xtls/xray-core/common/crypto
+   common/crypto/io.go:19:11: cannot use reaer (variable of type int) as io.Reader value in struct literal: int does not implement io.Reader (missing method Read)
+-- [fixed] $ gofmt -e <scratch>/common/crypto/io.go  (in <scratch>) -> exit 0
+   (no output)
+
+== C5 gopls-r4-diagnostics-extra-nonindexableoperand-mutation-m2-ba152b
+project caddyserver/caddy@c18099a0af5e, file modules/caddyhttp/reverseproxy/selectionpolicies_test.go
+mutation: misspell 'pool' as 'poool' (duplicate a middle character); fix: Create variable poool
+fix edit: [{"kind": "change", "path": "modules/caddyhttp/reverseproxy/selectionpolicies_test.go", "start": [125, 6], "end": [125, 6], "text": " := 0\n\tpoool"}]
+module <scratch>; package check: go vet ./modules/caddyhttp/reverseproxy
+-- mutated (before the fix):
+  123 | 		t.Error("Expected to select first host on availability.")
+  124 | 	}
+  125 | 	// mark host as full
+  126 | 	poool[1].countRequest(1)
+  127 | 	pool[1].MaxRequests = 1
+  128 | 	h = wrrPolicy.Select(pool, req, nil)
+  129 | 	if h != pool[2] {
+-- fixed (after the fix):
+  123 | 		t.Error("Expected to select first host on availability.")
+  124 | 	}
+  125 | 	// mark host as full
+  126 | 	poool := 0
+  127 | 	poool[1].countRequest(1)
+  128 | 	pool[1].MaxRequests = 1
+  129 | 	h = wrrPolicy.Select(pool, req, nil)
+  130 | 	if h != pool[2] {
+-- [base] $ go vet ./modules/caddyhttp/reverseproxy  (in <scratch>) -> exit 0
+   (no output)
+-- [base] $ gofmt -e <scratch>/modules/caddyhttp/reverseproxy/selectionpolicies_test.go  (in <scratch>) -> exit 0
+   (no output)
+-- [mutated] $ go vet ./modules/caddyhttp/reverseproxy  (in <scratch>) -> exit 1
+   # github.com/caddyserver/caddy/v2/modules/caddyhttp/reverseproxy
+   # [github.com/caddyserver/caddy/v2/modules/caddyhttp/reverseproxy]
+   vet: modules/caddyhttp/reverseproxy/selectionpolicies_test.go:126:2: undefined: poool
+-- [mutated] $ gofmt -e <scratch>/modules/caddyhttp/reverseproxy/selectionpolicies_test.go  (in <scratch>) -> exit 0
+   (no output)
+-- [fixed] $ go vet ./modules/caddyhttp/reverseproxy  (in <scratch>) -> exit 1
+   # github.com/caddyserver/caddy/v2/modules/caddyhttp/reverseproxy
+   # [github.com/caddyserver/caddy/v2/modules/caddyhttp/reverseproxy]
+   vet: modules/caddyhttp/reverseproxy/selectionpolicies_test.go:127:2: cannot index poool (variable of type int)
+-- [fixed] $ gofmt -e <scratch>/modules/caddyhttp/reverseproxy/selectionpolicies_test.go  (in <scratch>) -> exit 0
+   (no output)
+
+== C5 gopls-r4-diagnostics-extra-nonsliceableoperand-mutation-m2-d80a9a
+project nektos/act@4f411281417e, file pkg/container/docker_auth.go
+mutation: misspell 'image' as 'imge' (drop a middle character); fix: Create variable imge
+fix edit: [{"kind": "change", "path": "pkg/container/docker_auth.go", "start": [28, 2], "end": [28, 2], "text": "mge := 0\n\ti"}]
+module <scratch>; package check: go build -o /dev/null ./pkg/container
+-- mutated (before the fix):
+   26 | 
+   27 | 	hostName := "index.docker.io"
+   28 | 	index := strings.IndexRune(image, '/')
+   29 | 	if index > -1 && (strings.ContainsAny(imge[:index], ".:") || image[:index] == "localhost") {
+   30 | 		hostName = image[:index]
+   31 | 	}
+   32 | 
+-- fixed (after the fix):
+   26 | 
+   27 | 	hostName := "index.docker.io"
+   28 | 	index := strings.IndexRune(image, '/')
+   29 | 	imge := 0
+   30 | 	if index > -1 && (strings.ContainsAny(imge[:index], ".:") || image[:index] == "localhost") {
+   31 | 		hostName = image[:index]
+   32 | 	}
+   33 | 
+-- [base] $ go build -o /dev/null ./pkg/container  (in <scratch>) -> exit 0
+   (no output)
+-- [base] $ gofmt -e <scratch>/pkg/container/docker_auth.go  (in <scratch>) -> exit 0
+   (no output)
+-- [mutated] $ go build -o /dev/null ./pkg/container  (in <scratch>) -> exit 1
+   # github.com/nektos/act/pkg/container
+   pkg/container/docker_auth.go:29:40: undefined: imge
+-- [mutated] $ gofmt -e <scratch>/pkg/container/docker_auth.go  (in <scratch>) -> exit 0
+   (no output)
+-- [fixed] $ go build -o /dev/null ./pkg/container  (in <scratch>) -> exit 1
+   # github.com/nektos/act/pkg/container
+   pkg/container/docker_auth.go:30:40: cannot slice imge (variable of type int)
+-- [fixed] $ gofmt -e <scratch>/pkg/container/docker_auth.go  (in <scratch>) -> exit 0
+   (no output)
+
+== C6 gopls-r4-diagnostics-extra-mutation-m2-111975
+project junegunn/fzf@b1be3a8be1b8, file src/pattern_test.go
+mutation: misspell 'buildPattern' as 'buildPttern' (drop a middle character); fix: Create function buildPttern
+fix edit: [{"kind": "change", "path": "src/pattern_test.go", "start": [182, 5], "end": [182, 5], "text": "buildPttern(true1 bool, result, *[]int func(caseSensitive bool, normalize bool, forward bool, input *util.Chars, pattern []rune, withPos bool, slab *util.Slab) (algo.Result, *[]int), extended bool, CaseSmart Case, false1, true2, false2, true3 bool, range []Range, delimiter Delimiter, r []rune) any {\n\tpanic(\"unimplemented\")\n}\n\nfunc "}]
+module <scratch>; package check: go vet ./src
+-- mutated (before the fix):
+  160 | 
+  161 | func TestCacheKey(t *testing.T) {
+  162 | 	test := func(extended bool, patStr string, expected string, cacheable bool) {
+  163 | 		pat := buildPttern(true, algo.FuzzyMatchV2, extended, CaseSmart, false, true, false, true, []Range{}, Delimiter{}, []rune(patStr))
+  164 | 		if pat.CacheKey() != expected {
+  165 | 			t.Errorf("Expected: %s, actual: %s", expected, pat.CacheKey())
+  166 | 		}
+  167 | 		if pat.cacheable != cacheable {
+  168 | 			t.Errorf("Expected: %t, actual: %t (%s)", cacheable, pat.cacheable, patStr)
+  169 | 		}
+  170 | 	}
+  171 | 	test(false, "foo !bar", "foo !bar", true)
+  172 | 	test(false, "foo | bar !baz", "foo | bar !baz", true)
+  173 | 	test(true, "foo  bar  baz", "foo\tbar\tbaz", true)
+  174 | 	test(true, "foo !bar", "foo", false)
+  175 | 	test(true, "foo !bar   baz", "foo\tbaz", false)
+  176 | 	test(true, "foo | bar baz", "baz", false)
+  177 | 	test(true, "foo | bar | baz", "", false)
+  178 | 	test(true, "foo | bar !baz", "", false)
+  179 | 	test(true, "| | foo", "", false)
+  180 | 	test(true, "| | | foo", "foo", false)
+  181 | }
+  182 | 
+  183 | func TestCacheable(t *testing.T) {
+  184 | 	test := func(fuzzy bool, str string, expected string, cacheable bool) {
+  185 | 		pat := buildPattern(fuzzy, algo.FuzzyMatchV2, true, CaseSmart, true, true, false, true, []Range{}, Delimiter{}, []rune(str))
+  186 | 		if pat.CacheKey() != expected {
+-- fixed (after the fix):
+  160 | 
+  161 | func TestCacheKey(t *testing.T) {
+  162 | 	test := func(extended bool, patStr string, expected string, cacheable bool) {
+  163 | 		pat := buildPttern(true, algo.FuzzyMatchV2, extended, CaseSmart, false, true, false, true, []Range{}, Delimiter{}, []rune(patStr))
+  164 | 		if pat.CacheKey() != expected {
+  165 | 			t.Errorf("Expected: %s, actual: %s", expected, pat.CacheKey())
+  166 | 		}
+  167 | 		if pat.cacheable != cacheable {
+  168 | 			t.Errorf("Expected: %t, actual: %t (%s)", cacheable, pat.cacheable, patStr)
+  169 | 		}
+  170 | 	}
+  171 | 	test(false, "foo !bar", "foo !bar", true)
+  172 | 	test(false, "foo | bar !baz", "foo | bar !baz", true)
+  173 | 	test(true, "foo  bar  baz", "foo\tbar\tbaz", true)
+  174 | 	test(true, "foo !bar", "foo", false)
+  175 | 	test(true, "foo !bar   baz", "foo\tbaz", false)
+  176 | 	test(true, "foo | bar baz", "baz", false)
+  177 | 	test(true, "foo | bar | baz", "", false)
+  178 | 	test(true, "foo | bar !baz", "", false)
+  179 | 	test(true, "| | foo", "", false)
+  180 | 	test(true, "| | | foo", "foo", false)
+  181 | }
+  182 | 
+  183 | func buildPttern(true1 bool, result, *[]int func(caseSensitive bool, normalize bool, forward bool, input *util.Chars, pattern []rune, withPos bool, slab *util.Slab) (algo.Result, *[]int), extended bool, CaseSmart Case, false1, true2, false2, true3 bool, range []Range, delimiter Delimiter, r []rune) any {
+  184 | 	panic("unimplemented")
+  185 | }
+  186 | 
+  187 | func TestCacheable(t *testing.T) {
+  188 | 	test := func(fuzzy bool, str string, expected string, cacheable bool) {
+  189 | 		pat := buildPattern(fuzzy, algo.FuzzyMatchV2, true, CaseSmart, true, true, false, true, []Range{}, Delimiter{}, []rune(str))
+  190 | 		if pat.CacheKey() != expected {
+-- [base] $ go vet ./src  (in <scratch>) -> exit 0
+   (no output)
+-- [base] $ gofmt -e <scratch>/src/pattern_test.go  (in <scratch>) -> exit 0
+   (no output)
+-- [mutated] $ go vet ./src  (in <scratch>) -> exit 1
+   # github.com/junegunn/fzf/src
+   # [github.com/junegunn/fzf/src]
+   vet: src/pattern_test.go:163:10: undefined: buildPttern
+-- [mutated] $ gofmt -e <scratch>/src/pattern_test.go  (in <scratch>) -> exit 0
+   (no output)
+-- [fixed] $ go vet ./src  (in <scratch>) -> exit 1
+   src/pattern_test.go:183:45: missing ',' in parameter list
+-- [fixed] $ gofmt -e <scratch>/src/pattern_test.go  (in <scratch>) -> exit 2
+   <scratch>/src/pattern_test.go:183:38: missing parameter name
+   <scratch>/src/pattern_test.go:183:45: missing ',' in parameter list
+   <scratch>/src/pattern_test.go:183:64: expected ')', found bool
+   <scratch>/src/pattern_test.go:183:187: expected ';', found ','
+   <scratch>/src/pattern_test.go:183:189: expected declaration, found extended
+   <scratch>/src/pattern_test.go:257:2: expected declaration, found runtime
+   <scratch>/src/pattern_test.go:264:2: expected declaration, found runtime
+   <scratch>/src/pattern_test.go:283:3: expected declaration, found 'for'
+
+== C6 gopls-r4-syntax-gained-mutation-m2-86fde3
+project junegunn/fzf@b1be3a8be1b8, file src/pattern_test.go
+mutation: misspell 'buildPattern' as 'buildPttern' (drop a middle character); fix: Create function buildPttern
+fix edit: [{"kind": "change", "path": "src/pattern_test.go", "start": [182, 5], "end": [182, 5], "text": "buildPttern(true1 bool, result, *[]int func(caseSensitive bool, normalize bool, forward bool, input *util.Chars, pattern []rune, withPos bool, slab *util.Slab) (algo.Result, *[]int), extended bool, CaseSmart Case, false1, true2, false2, true3 bool, range []Range, delimiter Delimiter, r []rune) any {\n\tpanic(\"unimplemented\")\n}\n\nfunc "}]
+module <scratch>; package check: go vet ./src
+-- mutated (before the fix):
+  160 | 
+  161 | func TestCacheKey(t *testing.T) {
+  162 | 	test := func(extended bool, patStr string, expected string, cacheable bool) {
+  163 | 		pat := buildPttern(true, algo.FuzzyMatchV2, extended, CaseSmart, false, true, false, true, []Range{}, Delimiter{}, []rune(patStr))
+  164 | 		if pat.CacheKey() != expected {
+  165 | 			t.Errorf("Expected: %s, actual: %s", expected, pat.CacheKey())
+  166 | 		}
+  167 | 		if pat.cacheable != cacheable {
+  168 | 			t.Errorf("Expected: %t, actual: %t (%s)", cacheable, pat.cacheable, patStr)
+  169 | 		}
+  170 | 	}
+  171 | 	test(false, "foo !bar", "foo !bar", true)
+  172 | 	test(false, "foo | bar !baz", "foo | bar !baz", true)
+  173 | 	test(true, "foo  bar  baz", "foo\tbar\tbaz", true)
+  174 | 	test(true, "foo !bar", "foo", false)
+  175 | 	test(true, "foo !bar   baz", "foo\tbaz", false)
+  176 | 	test(true, "foo | bar baz", "baz", false)
+  177 | 	test(true, "foo | bar | baz", "", false)
+  178 | 	test(true, "foo | bar !baz", "", false)
+  179 | 	test(true, "| | foo", "", false)
+  180 | 	test(true, "| | | foo", "foo", false)
+  181 | }
+  182 | 
+  183 | func TestCacheable(t *testing.T) {
+  184 | 	test := func(fuzzy bool, str string, expected string, cacheable bool) {
+  185 | 		pat := buildPattern(fuzzy, algo.FuzzyMatchV2, true, CaseSmart, true, true, false, true, []Range{}, Delimiter{}, []rune(str))
+  186 | 		if pat.CacheKey() != expected {
+-- fixed (after the fix):
+  160 | 
+  161 | func TestCacheKey(t *testing.T) {
+  162 | 	test := func(extended bool, patStr string, expected string, cacheable bool) {
+  163 | 		pat := buildPttern(true, algo.FuzzyMatchV2, extended, CaseSmart, false, true, false, true, []Range{}, Delimiter{}, []rune(patStr))
+  164 | 		if pat.CacheKey() != expected {
+  165 | 			t.Errorf("Expected: %s, actual: %s", expected, pat.CacheKey())
+  166 | 		}
+  167 | 		if pat.cacheable != cacheable {
+  168 | 			t.Errorf("Expected: %t, actual: %t (%s)", cacheable, pat.cacheable, patStr)
+  169 | 		}
+  170 | 	}
+  171 | 	test(false, "foo !bar", "foo !bar", true)
+  172 | 	test(false, "foo | bar !baz", "foo | bar !baz", true)
+  173 | 	test(true, "foo  bar  baz", "foo\tbar\tbaz", true)
+  174 | 	test(true, "foo !bar", "foo", false)
+  175 | 	test(true, "foo !bar   baz", "foo\tbaz", false)
+  176 | 	test(true, "foo | bar baz", "baz", false)
+  177 | 	test(true, "foo | bar | baz", "", false)
+  178 | 	test(true, "foo | bar !baz", "", false)
+  179 | 	test(true, "| | foo", "", false)
+  180 | 	test(true, "| | | foo", "foo", false)
+  181 | }
+  182 | 
+  183 | func buildPttern(true1 bool, result, *[]int func(caseSensitive bool, normalize bool, forward bool, input *util.Chars, pattern []rune, withPos bool, slab *util.Slab) (algo.Result, *[]int), extended bool, CaseSmart Case, false1, true2, false2, true3 bool, range []Range, delimiter Delimiter, r []rune) any {
+  184 | 	panic("unimplemented")
+  185 | }
+  186 | 
+  187 | func TestCacheable(t *testing.T) {
+  188 | 	test := func(fuzzy bool, str string, expected string, cacheable bool) {
+  189 | 		pat := buildPattern(fuzzy, algo.FuzzyMatchV2, true, CaseSmart, true, true, false, true, []Range{}, Delimiter{}, []rune(str))
+  190 | 		if pat.CacheKey() != expected {
+-- [base] $ go vet ./src  (in <scratch>) -> exit 0
+   (no output)
+-- [base] $ gofmt -e <scratch>/src/pattern_test.go  (in <scratch>) -> exit 0
+   (no output)
+-- [mutated] $ go vet ./src  (in <scratch>) -> exit 1
+   # github.com/junegunn/fzf/src
+   # [github.com/junegunn/fzf/src]
+   vet: src/pattern_test.go:163:10: undefined: buildPttern
+-- [mutated] $ gofmt -e <scratch>/src/pattern_test.go  (in <scratch>) -> exit 0
+   (no output)
+-- [fixed] $ go vet ./src  (in <scratch>) -> exit 1
+   src/pattern_test.go:183:45: missing ',' in parameter list
+-- [fixed] $ gofmt -e <scratch>/src/pattern_test.go  (in <scratch>) -> exit 2
+   <scratch>/src/pattern_test.go:183:38: missing parameter name
+   <scratch>/src/pattern_test.go:183:45: missing ',' in parameter list
+   <scratch>/src/pattern_test.go:183:64: expected ')', found bool
+   <scratch>/src/pattern_test.go:183:187: expected ';', found ','
+   <scratch>/src/pattern_test.go:183:189: expected declaration, found extended
+   <scratch>/src/pattern_test.go:257:2: expected declaration, found runtime
+   <scratch>/src/pattern_test.go:264:2: expected declaration, found runtime
+   <scratch>/src/pattern_test.go:283:3: expected declaration, found 'for'
+
+== C7 gopls-r4-diagnostics-extra-undeclaredname-wrongar-mutation-m3-946c39
+project fatedier/frp@d20a23299600, file pkg/config/legacy/value.go
+mutation: drop the last argument of 'RenderContent(...)'; fix: Remove variable b
+fix edit: [{"kind": "change", "path": "pkg/config/legacy/value.go", "start": [65, 1], "end": [66, 1]}]
+module <scratch>; package check: go build -o /dev/null ./pkg/config/legacy
+-- mutated (before the fix):
+   63 | }
+   64 | 
+   65 | func GetRenderedConfFromFile(path string) (out []byte, err error) {
+   66 | 	var b []byte
+   67 | 	b, err = os.ReadFile(path)
+   68 | 	if err != nil {
+   69 | 		return
+   70 | 	}
+   71 | 
+   72 | 	out, err = RenderContent()
+   73 | 	return
+   74 | }
+   75 | 
+-- fixed (after the fix):
+   63 | }
+   64 | 
+   65 | func GetRenderedConfFromFile(path string) (out []byte, err error) {
+   66 | 	b, err = os.ReadFile(path)
+   67 | 	if err != nil {
+   68 | 		return
+   69 | 	}
+   70 | 
+   71 | 	out, err = RenderContent()
+   72 | 	return
+   73 | }
+   74 | 
+-- [base] $ go build -o /dev/null ./pkg/config/legacy  (in <scratch>) -> exit 0
+   (no output)
+-- [base] $ gofmt -e <scratch>/pkg/config/legacy/value.go  (in <scratch>) -> exit 0
+   (no output)
+-- [mutated] $ go build -o /dev/null ./pkg/config/legacy  (in <scratch>) -> exit 1
+   # github.com/fatedier/frp/pkg/config/legacy
+   pkg/config/legacy/value.go:66:6: declared and not used: b
+   pkg/config/legacy/value.go:72:13: not enough arguments in call to RenderContent
+   	have ()
+   	want ([]byte)
+-- [mutated] $ gofmt -e <scratch>/pkg/config/legacy/value.go  (in <scratch>) -> exit 0
+   (no output)
+-- [fixed] $ go build -o /dev/null ./pkg/config/legacy  (in <scratch>) -> exit 1
+   # github.com/fatedier/frp/pkg/config/legacy
+   pkg/config/legacy/value.go:66:2: undefined: b
+   pkg/config/legacy/value.go:71:13: not enough arguments in call to RenderContent
+   	have ()
+   	want ([]byte)
+-- [fixed] $ gofmt -e <scratch>/pkg/config/legacy/value.go  (in <scratch>) -> exit 0
+   (no output)
+
+== C3 gopls-r2-codeactionresolve-changed-codeaction-70b3e9
+project nektos/act@4f411281417e, file pkg/container/linux_container_environment_extensions_test.go
+key {"method": "codeActionResolve", "path": "pkg/container/linux_container_environment_extensions_test.go", "line": 34, "character": 38, "extra": "pos:34:38|top1|Split arguments into separate lines|refactor.rewrite.splitLines|0"}
+ops [{"kind": "open", "path": "pkg/container/linux_container_environment_extensions_test.go"}, {"kind": "change", "path": "pkg/container/linux_container_environment_extensions_test.go", "start": [0, 0], "end": [0, 0], "text": "\n"}]
+old line 35 (1-based): 			{fmt.Sprintf("/mnt/%v/act", rootDriveLetter), "act", fmt.Sprintf("%s\\", rootDrive)},
+current line 35 (1-based): 			{"/mnt/c/windows/to/unix", "windows\\to\\unix", fmt.Sprintf("%s\\", rootDrive)},
+current line 36 (1-based): 			{fmt.Sprintf("/mnt/%v/act", rootDriveLetter), "act", fmt.Sprintf("%s\\", rootDrive)},
+-- current text:
+   33 | 			{"/mnt/c/Users/act/go/src/github.com/nektos/act", "C:\\Users\\act\\go\\src\\github.com\\nektos\\act\\", ""},
+   34 | 			{"/mnt/f/work/dir", `F:\work\dir`, ""},
+   35 | 			{"/mnt/c/windows/to/unix", "windows\\to\\unix", fmt.Sprintf("%s\\", rootDrive)},
+   36 | 			{fmt.Sprintf("/mnt/%v/act", rootDriveLetter), "act", fmt.Sprintf("%s\\", rootDrive)},
+   37 | 		} {
+   38 | 			if v.workDir != "" {
+-- stale edit (recorded actual) applied:
+   33 | 			{"/mnt/c/Users/act/go/src/github.com/nektos/act", "C:\\Users\\act\\go\\src\\github.com\\nektos\\act\\", ""},
+   34 | 			{"/mnt/f/work/dir", `F:\work\dir`, ""},
+   35 | 			{
+   36 | 				"/mnt/c/windows/to/unix",
+   37 | 				"windows\\to\\unix",
+   38 | 				fmt.Sprintf("%s\\", rootDrive),
+   39 | 			},
+   40 | 			{fmt.Sprintf("/mnt/%v/act", rootDriveLetter), "act", fmt.Sprintf("%s\\", rootDrive)},
+   41 | 		} {
+   42 | 			if v.workDir != "" {
+-- fresh edit (recorded expected) applied:
+   33 | 			{"/mnt/c/Users/act/go/src/github.com/nektos/act", "C:\\Users\\act\\go\\src\\github.com\\nektos\\act\\", ""},
+   34 | 			{"/mnt/f/work/dir", `F:\work\dir`, ""},
+   35 | 			{"/mnt/c/windows/to/unix", "windows\\to\\unix", fmt.Sprintf("%s\\", rootDrive)},
+   36 | 			{fmt.Sprintf(
+   37 | 				"/mnt/%v/act",
+   38 | 				rootDriveLetter,
+   39 | 			), "act", fmt.Sprintf("%s\\", rootDrive)},
+   40 | 		} {
+   41 | 			if v.workDir != "" {
+-- gofmt_current: $ gofmt -e <scratch>/current.go -> exit 0
+   (no output)
+-- gofmt_stale: $ gofmt -e <scratch>/stale_applied.go -> exit 0
+   (no output)
+-- gofmt_fresh: $ gofmt -e <scratch>/fresh_applied.go -> exit 0
+   (no output)

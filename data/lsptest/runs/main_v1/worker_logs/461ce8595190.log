@@ -1,0 +1,6 @@
+2026-09-23 15:33:21,947 INFO campaign_run run 461ce8595190: r5_transforms on gopls v0.23.0, caddyserver/caddy@c18099a0af5e seed 1 settled, targets ['caddyconfig/httploader.go', 'logging_test.go', 'modules/caddyhttp/reverseproxy/selectionpolicies_test.go']
+2026-09-23 15:34:45,138 INFO campaign_run run 461ce8595190: 1 candidate(s) in 83s; confirming
+2026-09-23 15:35:07,033 INFO flake replay 1/3 of gopls|r5_transforms|completion:missing: settled=True control_stable=True reproduced=False (21.9s)
+2026-09-23 15:35:26,965 INFO flake replay 2/3 of gopls|r5_transforms|completion:missing: settled=True control_stable=True reproduced=False (19.9s)
+2026-09-23 15:35:55,180 INFO flake replay 3/3 of gopls|r5_transforms|completion:missing: settled=True control_stable=True reproduced=False (28.2s)
+2026-09-23 15:35:55,183 INFO campaign_run run 461ce8595190 finished: ok, 0 confirmed of 1 candidate(s), 153s

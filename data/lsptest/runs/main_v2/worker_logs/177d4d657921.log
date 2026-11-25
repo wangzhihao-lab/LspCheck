@@ -1,0 +1,9 @@
+2026-11-18 07:14:23,515 INFO campaign_run run 177d4d657921: r3_routes on pyright 1.1.414, FoundationAgents/OpenManus@3309bf4e416f seed 1 settled, targets ['app/agent/mcp.py', 'app/exceptions.py', 'app/tool/crawl4ai.py']
+2026-11-18 07:15:57,937 INFO campaign_run run 177d4d657921: 9 candidate(s) in 94s; confirming
+2026-11-18 07:16:04,250 INFO flake replay 1/3 of pyright|r3_routes|definitionConsistency:extra: settled=True control_stable=True reproduced=True (6.3s)
+2026-11-18 07:16:10,549 INFO flake replay 2/3 of pyright|r3_routes|definitionConsistency:extra: settled=True control_stable=True reproduced=True (6.3s)
+2026-11-18 07:16:18,500 INFO flake replay 3/3 of pyright|r3_routes|definitionConsistency:extra: settled=True control_stable=True reproduced=True (8.0s)
+2026-11-18 07:16:26,050 INFO flake replay 1/3 of pyright|r3_routes|definitionConsistency:missing: settled=True control_stable=True reproduced=True (7.5s)
+2026-11-18 07:16:32,579 INFO flake replay 2/3 of pyright|r3_routes|definitionConsistency:missing: settled=True control_stable=True reproduced=True (6.5s)
+2026-11-18 07:16:39,023 INFO flake replay 3/3 of pyright|r3_routes|definitionConsistency:missing: settled=True control_stable=True reproduced=True (6.4s)
+2026-11-18 07:16:39,030 INFO campaign_run run 177d4d657921 finished: ok, 2 confirmed of 9 candidate(s), 136s

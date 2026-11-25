@@ -1,0 +1,561 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "f32275e691ea-v01",
+ "run_id": "f32275e691ea",
+ "oracle": "r4_edits",
+ "server": {
+  "kind": "ts6",
+  "version": "6.0.3"
+ },
+ "project": {
+  "name": "ChromeDevTools/chrome-devtools-mcp@2250cdcde4aa",
+  "source": "corpus",
+  "ref": "temp/corpus/ChromeDevTools__chrome-devtools-mcp@2250cdcde4aa",
+  "commit": "2250cdcde4aad79d54101c80346df4190e0c2da7",
+  "language": "typescript"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "scripts/eval_scenarios/network_test.ts",
+    "positions": [
+     [
+      8,
+      9
+     ],
+     [
+      8,
+      19
+     ],
+     [
+      8,
+      29
+     ],
+     [
+      10,
+      17
+     ],
+     [
+      10,
+      29
+     ],
+     [
+      11,
+      5
+     ],
+     [
+      22,
+      19
+     ],
+     [
+      23,
+      22
+     ],
+     [
+      23,
+      36
+     ],
+     [
+      24,
+      12
+     ],
+     [
+      24,
+      17
+     ],
+     [
+      25,
+      18
+     ]
+    ],
+    "ends": [
+     [
+      8,
+      11
+     ],
+     [
+      8,
+      25
+     ],
+     [
+      8,
+      31
+     ],
+     [
+      10,
+      21
+     ],
+     [
+      10,
+      35
+     ],
+     [
+      11,
+      8
+     ],
+     [
+      22,
+      22
+     ],
+     [
+      23,
+      25
+     ],
+     [
+      23,
+      47
+     ],
+     [
+      24,
+      13
+     ],
+     [
+      24,
+      20
+     ],
+     [
+      25,
+      25
+     ]
+    ],
+    "names": [
+     "type",
+     "TestScenario",
+     "from",
+     "scenario",
+     "TestScenario",
+     "prompt",
+     "result",
+     "result",
+     "consumePageNavigation",
+     "ok",
+     "result",
+     "assertNextCall"
+    ]
+   },
+   {
+    "path": "tests/e2e/telemetry.test.ts",
+    "positions": [
+     [
+      7,
+      45
+     ],
+     [
+      20,
+      5
+     ],
+     [
+      24,
+      10
+     ],
+     [
+      30,
+      18
+     ],
+     [
+      37,
+      31
+     ],
+     [
+      71,
+      18
+     ],
+     [
+      127,
+      15
+     ],
+     [
+      131,
+      17
+     ],
+     [
+      161,
+      7
+     ],
+     [
+      183,
+      18
+     ],
+     [
+      193,
+      15
+     ],
+     [
+      237,
+      7
+     ]
+    ],
+    "ends": [
+     [
+      7,
+      51
+     ],
+     [
+      20,
+      8
+     ],
+     [
+      24,
+      14
+     ],
+     [
+      30,
+      21
+     ],
+     [
+      37,
+      35
+     ],
+     [
+      71,
+      20
+     ],
+     [
+      127,
+      17
+     ],
+     [
+      131,
+      21
+     ],
+     [
+      161,
+      10
+     ],
+     [
+      183,
+      22
+     ],
+     [
+      193,
+      19
+     ],
+     [
+      237,
+      9
+     ]
+    ],
+    "names": [
+     "SpawnOptions",
+     "events",
+     "Promise",
+     "event",
+     "headers",
+     "err",
+     "now",
+     "Promise",
+     "killFn",
+     "process",
+     "Promise",
+     "ctx"
+    ]
+   },
+   {
+    "path": "tests/trace-processing/ChunkedTraceParser.test.ts",
+    "positions": [
+     [
+      71,
+      43
+     ],
+     [
+      156,
+      26
+     ],
+     [
+      158,
+      16
+     ],
+     [
+      173,
+      15
+     ],
+     [
+      175,
+      16
+     ],
+     [
+      177,
+      42
+     ],
+     [
+      187,
+      49
+     ],
+     [
+      193,
+      13
+     ],
+     [
+      220,
+      37
+     ],
+     [
+      312,
+      11
+     ],
+     [
+      313,
+      8
+     ],
+     [
+      377,
+      7
+     ]
+    ],
+    "ends": [
+     [
+      71,
+      45
+     ],
+     [
+      156,
+      29
+     ],
+     [
+      158,
+      22
+     ],
+     [
+      173,
+      22
+     ],
+     [
+      175,
+      22
+     ],
+     [
+      177,
+      43
+     ],
+     [
+      187,
+      53
+     ],
+     [
+      193,
+      16
+     ],
+     [
+      220,
+      50
+     ],
+     [
+      312,
+      12
+     ],
+     [
+      313,
+      10
+     ],
+     [
+      377,
+      10
+     ]
+    ],
+    "names": [
+     "name",
+     "result",
+     "strictEqual",
+     "standardParsed",
+     "strictEqual",
+     "ts",
+     "rawData",
+     "parse",
+     "parseTraceEventsFromBuffer",
+     "e2",
+     "name",
+     "assert"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "diagnostics",
+  "path": "scripts/eval_scenarios/network_test.ts",
+  "line": 23,
+  "character": 10,
+  "extra": "M2:quickfix-errors:Remove unused declaration for: 'pageId'"
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "scripts/eval_scenarios/network_test.ts"
+  },
+  {
+   "kind": "change",
+   "path": "scripts/eval_scenarios/network_test.ts",
+   "start": [
+    27,
+    33
+   ],
+   "end": [
+    27,
+    39
+   ],
+   "text": "pageeId"
+  },
+  {
+   "kind": "change",
+   "path": "scripts/eval_scenarios/network_test.ts",
+   "start": [
+    23,
+    4
+   ],
+   "end": [
+    24,
+    4
+   ]
+  }
+ ],
+ "case": {
+  "action_kind": "quickfix",
+  "base_errors": 0,
+  "check": "errors",
+  "diag": {
+   "code": 6133,
+   "message": "'pageId' is declared but its value is never read.",
+   "range": {
+    "end": {
+     "character": 16,
+     "line": 23
+    },
+    "start": {
+     "character": 10,
+     "line": 23
+    }
+   },
+   "severity": 4
+  },
+  "fix_introduced_errors": [],
+  "fix_ops": [
+   {
+    "end": [
+     24,
+     4
+    ],
+    "kind": "change",
+    "path": "scripts/eval_scenarios/network_test.ts",
+    "start": [
+     23,
+     4
+    ]
+   }
+  ],
+  "kind": "mutation",
+  "mutation": {
+   "end": [
+    27,
+    39
+   ],
+   "id": "M2",
+   "offsets": [
+    739,
+    745
+   ],
+   "sha": "ce2f264131f2a261",
+   "start": [
+    27,
+    33
+   ],
+   "text": "pageeId",
+   "what": "misspell 'pageId' as 'pageeId' (duplicate a middle character)"
+  },
+  "n_fix_ops": 1,
+  "path": "scripts/eval_scenarios/network_test.ts",
+  "post_errors": 1,
+  "title": "Remove unused declaration for: 'pageId'",
+  "via": "edit"
+ },
+ "shape": "diagnostics:extra:18004",
+ "signature": "ts6|r4_edits|diagnostics:extra:18004",
+ "expected": [],
+ "actual": [
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "18004",
+   "typescript",
+   "No value exists in scope for the shorthand property 'pageeId'. Either declare one or provide an initializer."
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "quick fix \"Remove unused declaration for: 'pageId'\" for 6133 at scripts/eval_scenarios/network_test.ts:24:11 raises the error count in the edited files from 0 to 1 (seeded by M2: misspell 'pageId' as 'pageeId' (duplicate a middle character); errors before the mutation 0, after the fix 1); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 368s",
+ "violation": {
+  "oracle": "r4_edits",
+  "server": "ts6-6.0.3",
+  "project": "ChromeDevTools/chrome-devtools-mcp@2250cdcde4aa",
+  "key": {
+   "method": "diagnostics",
+   "path": "scripts/eval_scenarios/network_test.ts",
+   "line": 23,
+   "character": 10,
+   "extra": "M2:quickfix-errors:Remove unused declaration for: 'pageId'"
+  },
+  "expected": [],
+  "actual": [
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "18004",
+    "typescript",
+    "No value exists in scope for the shorthand property 'pageeId'. Either declare one or provide an initializer."
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "scripts/eval_scenarios/network_test.ts"
+   },
+   {
+    "kind": "change",
+    "path": "scripts/eval_scenarios/network_test.ts",
+    "start": [
+     27,
+     33
+    ],
+    "end": [
+     27,
+     39
+    ],
+    "text": "pageeId"
+   },
+   {
+    "kind": "change",
+    "path": "scripts/eval_scenarios/network_test.ts",
+    "start": [
+     23,
+     4
+    ],
+    "end": [
+     24,
+     4
+    ]
+   }
+  ],
+  "detail": "{\"case\": {\"action_kind\": \"quickfix\", \"base_errors\": 0, \"check\": \"errors\", \"diag\": {\"code\": 6133, \"message\": \"'pageId' is declared but its value is never read.\", \"range\": {\"end\": {\"character\": 16, \"line\": 23}, \"start\": {\"character\": 10, \"line\": 23}}, \"severity\": 4}, \"fix_introduced_errors\": [], \"fix_ops\": [{\"end\": [24, 4], \"kind\": \"change\", \"path\": \"scripts/eval_scenarios/network_test.ts\", \"start\": [23, 4]}], \"kind\": \"mutation\", \"mutation\": {\"end\": [27, 39], \"id\": \"M2\", \"offsets\": [739, 745], \"sha\": \"ce2f264131f2a261\", \"start\": [27, 33], \"text\": \"pageeId\", \"what\": \"misspell 'pageId' as 'pageeId' (duplicate a middle character)\"}, \"n_fix_ops\": 1, \"path\": \"scripts/eval_scenarios/network_test.ts\", \"post_errors\": 1, \"title\": \"Remove unused declaration for: 'pageId'\", \"via\": \"edit\"}, \"note\": \"quick fix \\\"Remove unused declaration for: 'pageId'\\\" for 6133 at scripts/eval_scenarios/network_test.ts:24:11 raises the error count in the edited files from 0 to 1 (seeded by M2: misspell 'pageId' as 'pageeId' (duplicate a middle character); errors before the mutation 0, after the fix 1); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 368s\", \"shape\": \"diagnostics:extra:18004\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "ts6|r4_edits|diagnostics:extra:18004",
+  "run_id": "f32275e691ea"
+ },
+ "replay_logs": [
+  "logs/ts6-6.0.3-f32275e691ea-r4-replay-baseline-20260923-173831-fbb3c7.jsonl.gz",
+  "logs/ts6-6.0.3-f32275e691ea-r4-replay-case-20260923-173722-53952c.jsonl.gz",
+  "logs/ts6-6.0.3-f32275e691ea-r4-replay-control-20260923-173915-8b3db7.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

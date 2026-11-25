@@ -1,0 +1,6 @@
+2026-09-23 20:42:52,736 INFO campaign_run run a5d4350194cc: r3_routes on ts7 7.0.2, react-hook-form/react-hook-form@5fd9ef65290b seed 2 settled, targets ['app/src/formState.tsx', 'src/__tests__/utils/objectHasFunction.test.ts', 'src/types/fields.ts']
+2026-09-23 20:46:18,735 INFO campaign_run run a5d4350194cc: 8 candidate(s) in 206s; confirming
+2026-09-23 20:47:09,765 INFO flake replay 1/3 of ts7|r3_routes|highlightVsReferences:gained: settled=True control_stable=True reproduced=True (51.0s)
+2026-09-23 20:48:17,551 INFO flake replay 2/3 of ts7|r3_routes|highlightVsReferences:gained: settled=True control_stable=True reproduced=True (67.8s)
+2026-09-23 20:49:04,126 INFO flake replay 3/3 of ts7|r3_routes|highlightVsReferences:gained: settled=True control_stable=True reproduced=True (46.6s)
+2026-09-23 20:49:04,154 INFO campaign_run run a5d4350194cc finished: ok, 1 confirmed of 8 candidate(s), 372s

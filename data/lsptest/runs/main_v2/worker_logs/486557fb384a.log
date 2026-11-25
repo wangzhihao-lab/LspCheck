@@ -1,0 +1,3 @@
+2026-11-18 11:00:37,570 INFO campaign_run run 486557fb384a: r1_history on rust-analyzer 2026-09-21, yewstack/yew@bfa6c19af971 seed 1 race200, targets ['examples/immutable/src/string.rs', 'examples/simple_ssr/src/bin/simple_ssr_hydrate.rs', 'packages/yew-macro/src/derive_props/mod.rs']
+2026-11-18 11:05:42,944 INFO campaign_run run 486557fb384a: 0 candidate(s) in 305s; confirming
+2026-11-18 11:05:42,945 INFO campaign_run run 486557fb384a finished: ok, 0 confirmed of 0 candidate(s), 305s

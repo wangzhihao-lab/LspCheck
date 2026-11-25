@@ -1,0 +1,26 @@
+{
+ "page": "triage",
+ "campaign": "main_v2",
+ "exported_at": "",
+ "reconstructed_from": "the first author's decisions on the three groups left open (chat 2026-11-20: '其他按你的建议把'), after the replays in open_groups_v2.py",
+ "items": [
+  {
+   "n": 51,
+   "id": "rust-analyzer-r3-diagnostics-missing-inactive-code-a-0b07f0",
+   "choice": "bug",
+   "note": "R3：重放（open_groups_v2.py push-wait，11-20）：推送会话没有声明拉取能力，稳定后再开 180 秒，rust-analyzer 没有再推送，文件上一直是加载完成前的那次空发布；拉取会话同一文件给出 15 条 inactive_code。按作者事先写的规则（声明了拉取 → A2；稍后才推 → A3；始终不推 → bug）判 bug；一年前版本基本不复现，疑似回归。"
+  },
+  {
+   "n": 52,
+   "id": "rust-analyzer-r3-diagnostics-missing-unlinked-file-a-efb484",
+   "choice": "bug",
+   "note": "R3：重放（open_groups_v2.py push-wait，11-20）：推送会话没有声明拉取能力，稳定后再开 180 秒，rust-analyzer 没有再推送，文件上一直是那次空发布；拉取会话同一文件给出 1 条 unlinked-file。按作者事先写的规则判 bug；旧版本 1/3 复现。"
+  },
+  {
+   "n": 62,
+   "id": "ts7-r3-definitionconsistency-lost-d-0129b3",
+   "choice": "legitimate",
+   "note": "L7：重放（open_groups_v2.py ts-definition，11-20）：src/ink.tsx 所在的程序没有 node 类型，NodeJS 本来就解析不到：TS7 7.0.2 和 TS6 6.0.3 都在第 147 行报 2503 Cannot find namespace 'NodeJS'，在这里跳定义都为空；测试文件那处能跳到 @types/node 的 9 处声明。按作者事先写的规则判 legitimate。"
+  }
+ ]
+}

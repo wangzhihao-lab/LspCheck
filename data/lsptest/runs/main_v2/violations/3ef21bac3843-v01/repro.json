@@ -1,0 +1,562 @@
+{
+ "format": 1,
+ "campaign": "main_v2",
+ "vid": "3ef21bac3843-v01",
+ "run_id": "3ef21bac3843",
+ "oracle": "r3_routes",
+ "server": {
+  "kind": "ts6",
+  "version": "6.0.3"
+ },
+ "project": {
+  "name": "vadimdemedes/ink@02ae1e59e7c2",
+  "source": "corpus",
+  "ref": "temp/corpus/vadimdemedes__ink@02ae1e59e7c2",
+  "commit": "02ae1e59e7c288e971616100c4c11bcca6b5761b",
+  "language": "typescript"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "src/dom.ts",
+    "positions": [
+     [
+      0,
+      16
+     ],
+     [
+      20,
+      9
+     ],
+     [
+      29,
+      12
+     ],
+     [
+      76,
+      5
+     ],
+     [
+      90,
+      9
+     ],
+     [
+      182,
+      7
+     ],
+     [
+      191,
+      17
+     ],
+     [
+      229,
+      19
+     ],
+     [
+      282,
+      12
+     ],
+     [
+      283,
+      32
+     ],
+     [
+      304,
+      15
+     ],
+     [
+      350,
+      22
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      18
+     ],
+     [
+      20,
+      11
+     ],
+     [
+      29,
+      23
+     ],
+     [
+      76,
+      9
+     ],
+     [
+      90,
+      11
+     ],
+     [
+      182,
+      9
+     ],
+     [
+      191,
+      22
+     ],
+     [
+      229,
+      25
+     ],
+     [
+      282,
+      18
+     ],
+     [
+      283,
+      38
+     ],
+     [
+      304,
+      20
+     ],
+     [
+      350,
+      23
+     ]
+    ],
+    "names": [
+     "type",
+     "type",
+     "internal_accessibility",
+     "nodeName",
+     "type",
+     "node",
+     "childNode",
+     "setTransform",
+     "wrappedText",
+     "measureText",
+     "markDirty",
+     "of"
+    ]
+   },
+   {
+    "path": "test/fixtures/issue-935-overflow-rerender.tsx",
+    "positions": [
+     [
+      0,
+      17
+     ],
+     [
+      1,
+      21
+     ],
+     [
+      1,
+      38
+     ],
+     [
+      4,
+      16
+     ],
+     [
+      4,
+      23
+     ],
+     [
+      4,
+      30
+     ],
+     [
+      5,
+      30
+     ],
+     [
+      6,
+      4
+     ],
+     [
+      9,
+      13
+     ],
+     [
+      16,
+      7
+     ],
+     [
+      17,
+      7
+     ],
+     [
+      17,
+      57
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      19
+     ],
+     [
+      1,
+      34
+     ],
+     [
+      1,
+      40
+     ],
+     [
+      4,
+      19
+     ],
+     [
+      4,
+      27
+     ],
+     [
+      4,
+      32
+     ],
+     [
+      5,
+      32
+     ],
+     [
+      6,
+      8
+     ],
+     [
+      9,
+      26
+     ],
+     [
+      16,
+      14
+     ],
+     [
+      17,
+      12
+     ],
+     [
+      17,
+      62
+     ]
+    ],
+    "names": [
+     "from",
+     "runIssue450RerenderFixture",
+     "from",
+     "Number",
+     "process",
+     "argv",
+     "rows",
+     "process",
+     "runIssue450RerenderFixture",
+     "labelForFrame",
+     "frameCount",
+     "frameCount"
+    ]
+   },
+   {
+    "path": "test/helpers/create-stdout.ts",
+    "positions": [
+     [
+      0,
+      22
+     ],
+     [
+      4,
+      17
+     ],
+     [
+      5,
+      2
+     ],
+     [
+      7,
+      7
+     ],
+     [
+      7,
+      16
+     ],
+     [
+      9,
+      25
+     ],
+     [
+      9,
+      63
+     ],
+     [
+      12,
+      10
+     ],
+     [
+      25,
+      11
+     ],
+     [
+      25,
+      33
+     ],
+     [
+      27,
+      4
+     ],
+     [
+      27,
+      12
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      24
+     ],
+     [
+      4,
+      22
+     ],
+     [
+      5,
+      4
+     ],
+     [
+      7,
+      10
+     ],
+     [
+      7,
+      22
+     ],
+     [
+      9,
+      29
+     ],
+     [
+      9,
+      68
+     ],
+     [
+      12,
+      13
+     ],
+     [
+      25,
+      13
+     ],
+     [
+      25,
+      37
+     ],
+     [
+      27,
+      7
+     ],
+     [
+      27,
+      17
+     ]
+    ],
+    "names": [
+     "from",
+     "FakeStdout",
+     "get",
+     "NodeJS",
+     "WriteStream",
+     "columns",
+     "FakeStdout",
+     "isTTY",
+     "args",
+     "findLast",
+     "stdout",
+     "getWrites"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "definitionConsistency",
+  "path": "src/ink.tsx",
+  "line": 146,
+  "character": 11,
+  "extra": "from:test/helpers/create-stdout.ts:7:7"
+ },
+ "ops": [],
+ "case": {
+  "loc": [
+   "src/ink.tsx",
+   146,
+   8,
+   146,
+   14
+  ],
+  "sub": "d",
+  "target": [
+   "test/helpers/create-stdout.ts",
+   7,
+   7
+  ]
+ },
+ "shape": "definitionConsistency:lost",
+ "signature": "ts6|r3_routes|definitionConsistency:lost",
+ "expected": [
+  [
+   "node_modules/@types/node/buffer.d.ts",
+   87,
+   18,
+   87,
+   24
+  ],
+  [
+   "node_modules/@types/node/compatibility/iterators.d.ts",
+   11,
+   18,
+   11,
+   24
+  ],
+  [
+   "node_modules/@types/node/events.d.ts",
+   57,
+   18,
+   57,
+   24
+  ],
+  [
+   "node_modules/@types/node/globals.d.ts",
+   74,
+   18,
+   74,
+   24
+  ],
+  [
+   "node_modules/@types/node/globals.typedarray.d.ts",
+   3,
+   14,
+   3,
+   20
+  ],
+  [
+   "node_modules/@types/node/module.d.ts",
+   574,
+   18,
+   574,
+   24
+  ],
+  [
+   "node_modules/@types/node/process.d.ts",
+   142,
+   18,
+   142,
+   24
+  ],
+  [
+   "node_modules/@types/node/stream.d.ts",
+   1737,
+   18,
+   1737,
+   24
+  ],
+  [
+   "node_modules/@types/node/timers.d.ts",
+   12,
+   18,
+   12,
+   24
+  ]
+ ],
+ "actual": [],
+ "reproduced": "3/3",
+ "note": "flake 3/3 [r1:SCR r2:SCR r3:SCR] in 84s",
+ "violation": {
+  "oracle": "r3_routes",
+  "server": "ts6-6.0.3",
+  "project": "vadimdemedes/ink@02ae1e59e7c2",
+  "key": {
+   "method": "definitionConsistency",
+   "path": "src/ink.tsx",
+   "line": 146,
+   "character": 11,
+   "extra": "from:test/helpers/create-stdout.ts:7:7"
+  },
+  "expected": [
+   [
+    "node_modules/@types/node/buffer.d.ts",
+    87,
+    18,
+    87,
+    24
+   ],
+   [
+    "node_modules/@types/node/compatibility/iterators.d.ts",
+    11,
+    18,
+    11,
+    24
+   ],
+   [
+    "node_modules/@types/node/events.d.ts",
+    57,
+    18,
+    57,
+    24
+   ],
+   [
+    "node_modules/@types/node/globals.d.ts",
+    74,
+    18,
+    74,
+    24
+   ],
+   [
+    "node_modules/@types/node/globals.typedarray.d.ts",
+    3,
+    14,
+    3,
+    20
+   ],
+   [
+    "node_modules/@types/node/module.d.ts",
+    574,
+    18,
+    574,
+    24
+   ],
+   [
+    "node_modules/@types/node/process.d.ts",
+    142,
+    18,
+    142,
+    24
+   ],
+   [
+    "node_modules/@types/node/stream.d.ts",
+    1737,
+    18,
+    1737,
+    24
+   ],
+   [
+    "node_modules/@types/node/timers.d.ts",
+    12,
+    18,
+    12,
+    24
+   ]
+  ],
+  "actual": [],
+  "ops": [],
+  "detail": "{\"case\": {\"loc\": [\"src/ink.tsx\", 146, 8, 146, 14], \"sub\": \"d\", \"target\": [\"test/helpers/create-stdout.ts\", 7, 7]}, \"note\": \"flake 3/3 [r1:SCR r2:SCR r3:SCR] in 84s\", \"shape\": \"definitionConsistency:lost\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "ts6|r3_routes|definitionConsistency:lost",
+  "run_id": "3ef21bac3843"
+ },
+ "replay_logs": [
+  "logs/ts6-6.0.3-3ef21bac3843-r3-replay-baseline-20261118-104150-2ae496.jsonl.gz",
+  "logs/ts6-6.0.3-3ef21bac3843-r3-replay-control-20261118-104203-4ecdbb.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

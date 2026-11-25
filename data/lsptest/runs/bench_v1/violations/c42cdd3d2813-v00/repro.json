@@ -1,0 +1,207 @@
+{
+ "format": 1,
+ "campaign": "bench_v1",
+ "vid": "c42cdd3d2813-v00",
+ "run_id": "c42cdd3d2813",
+ "oracle": "r3_routes",
+ "server": {
+  "kind": "pyright",
+  "version": "1.1.200"
+ },
+ "project": {
+  "name": "pyright-2759",
+  "source": "dir",
+  "ref": "data/lsp_bench/cases/pyright-2759/project",
+  "commit": "",
+  "language": "python"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 120.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "main.py",
+    "positions": [
+     [
+      1,
+      9
+     ],
+     [
+      1,
+      27
+     ],
+     [
+      3,
+      4
+     ],
+     [
+      4,
+      1
+     ],
+     [
+      4,
+      8
+     ],
+     [
+      4,
+      16
+     ],
+     [
+      4,
+      26
+     ],
+     [
+      4,
+      41
+     ],
+     [
+      4,
+      46
+     ],
+     [
+      4,
+      51
+     ],
+     [
+      4,
+      61
+     ],
+     [
+      4,
+      68
+     ]
+    ],
+    "ends": [
+     [
+      1,
+      14
+     ],
+     [
+      1,
+      32
+     ],
+     [
+      3,
+      9
+     ],
+     [
+      4,
+      3
+     ],
+     [
+      4,
+      10
+     ],
+     [
+      4,
+      21
+     ],
+     [
+      4,
+      31
+     ],
+     [
+      4,
+      43
+     ],
+     [
+      4,
+      48
+     ],
+     [
+      4,
+      53
+     ],
+     [
+      4,
+      63
+     ],
+     [
+      4,
+      72
+     ]
+    ],
+    "names": [
+     "itertools",
+     "accumulate",
+     "cashflows",
+     "lst",
+     "list",
+     "accumulate",
+     "cashflows",
+     "bal",
+     "pmt",
+     "bal",
+     "pmt",
+     "initial"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "highlightVsReferences",
+  "path": "main.py",
+  "line": 4,
+  "character": 68,
+  "extra": ""
+ },
+ "ops": [],
+ "case": {
+  "path": "main.py",
+  "pos": [
+   4,
+   68
+  ],
+  "sub": "c"
+ },
+ "shape": "highlightVsReferences:gained",
+ "signature": "pyright|r3_routes|highlightVsReferences:gained",
+ "expected": [],
+ "actual": [
+  [
+   4,
+   65,
+   4,
+   72
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "0 references; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 18s",
+ "violation": {
+  "oracle": "r3_routes",
+  "server": "pyright-1.1.200",
+  "project": "pyright-2759",
+  "key": {
+   "method": "highlightVsReferences",
+   "path": "main.py",
+   "line": 4,
+   "character": 68,
+   "extra": ""
+  },
+  "expected": [],
+  "actual": [
+   [
+    4,
+    65,
+    4,
+    72
+   ]
+  ],
+  "ops": [],
+  "detail": "{\"case\": {\"path\": \"main.py\", \"pos\": [4, 68], \"sub\": \"c\"}, \"note\": \"0 references; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 18s\", \"shape\": \"highlightVsReferences:gained\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "pyright|r3_routes|highlightVsReferences:gained",
+  "run_id": "c42cdd3d2813"
+ },
+ "replay_logs": [
+  "logs/pyright-1.1.200-c42cdd3d2813-r3-replay-baseline-20260925-060230-0ff83f.jsonl.gz",
+  "logs/pyright-1.1.200-c42cdd3d2813-r3-replay-control-20260925-060233-bf6854.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

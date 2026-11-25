@@ -1,0 +1,112 @@
+{
+ "schema": 1,
+ "id": "rust-analyzer-19003",
+ "meta": {
+  "server": "rust-analyzer",
+  "kind": "rust-analyzer",
+  "number": 19003,
+  "url": "https://github.com/rust-lang/rust-analyzer/issues/19003",
+  "title": "Code passes initial check, but fails on closure-dyn type check after any operation",
+  "oracle_class": "R1",
+  "subtype": "edit-undo",
+  "fix_ref": "rust-lang/rust-analyzer#19122 (pass struct fields to chalk)",
+  "fix_shas": [
+   "efdfdc448b02e3686fffa0c3707cb0d48d0c294b"
+  ],
+  "pre_version": "2025-02-17",
+  "post_version": "2025-02-24",
+  "pre_build": "2025-02-17",
+  "post_build": "2025-02-24",
+  "build_notes": "GitHub release assets rust-analyzer-aarch64-apple-darwin.gz of the weekly tags 2025-02-17 and 2025-02-24; git tag --contains puts the fix first in 2025-02-24. The sysroot is the local rustup toolchain (rustc 1.98.1).",
+  "effort_minutes": 15,
+  "notes": "Unsizing Arc<Mutex<{closure}>> to Arc<Mutex<dyn FnMut(i32) -> i32>> needs the struct fields to be known to the trait solver (chalk); they were passed lazily, so the coercion succeeded or failed depending on what had been computed before, and a re-check after an edit reported E0308.",
+  "candidate_rank": 14
+ },
+ "language": "rust",
+ "settings": {
+  "rust-analyzer": {
+   "diagnostics": {
+    "experimental": {
+     "enable": true
+    }
+   }
+  }
+ },
+ "settings_note": "The reported E0308 has no quick fix, and rust-analyzer marks a type mismatch without fixes as experimental (type_mismatch.rs: diag.experimental = true when there are no fixes), shown only with rust-analyzer.diagnostics.experimental.enable (default false); the reporter saw it, so it was on in his editor, and the case turns it on for every session. The reporter's rustc_wrapper (sccache) plays no role: checkOnSave stays off, so only the native diagnostics are compared.",
+ "session": {
+  "settle_timeout_s": 240,
+  "request_timeout_s": 60,
+  "pull_diagnostics": false
+ },
+ "files": [
+  {
+   "path": "src/main.rs",
+   "provenance": "issue",
+   "source": "issue body, 'code snippet to reproduce' block",
+   "note": ""
+  },
+  {
+   "path": "Cargo.toml",
+   "provenance": "scaffold",
+   "source": "",
+   "note": "a binary crate around the snippet (package name, version, edition 2021)"
+  }
+ ],
+ "repro": {
+  "attempt": 1,
+  "timing": "settled",
+  "steps": "As screened (R1 edit-undo), following the issue's steps: open src/main.rs (the initial check passes), make a minor change (insert a space at the start of line 5) and undo it (delete the space), then request the file's diagnostics (textDocument/diagnostic). Reported: after any edit the server reports E0308 'expected Arc<Mutex<dyn FnMut(i32) -> i32>>, found Arc<Mutex<{closure}>>', which a restart clears. Probe: the diagnostics after the edits are compared with a fresh session on the same text (a restart) and a fresh control.",
+  "ops": [
+   {
+    "kind": "open",
+    "path": "src/main.rs"
+   },
+   {
+    "kind": "change",
+    "path": "src/main.rs",
+    "start": [
+     5,
+     0
+    ],
+    "end": [
+     5,
+     0
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "src/main.rs",
+    "start": [
+     5,
+     0
+    ],
+    "end": [
+     5,
+     1
+    ],
+    "text": ""
+   }
+  ],
+  "probe": {
+   "type": "differs_from_fresh",
+   "params": {
+    "queries": [
+     {
+      "method": "pull_diagnostics",
+      "path": "src/main.rs"
+     }
+    ]
+   }
+  }
+ },
+ "attempts": [
+  {
+   "attempt": 1,
+   "timing": "settled",
+   "probe": "differs_from_fresh",
+   "summary": "Run 2026-09-23T09:45 (this case revision): not-reproduced-pre. Every session on both builds, the case session after the space edit and undo as well as the fresh and control sessions, reported the E0308 'expected Arc<Mutex<dyn FnMut(i32) -> i32>, Global>, found Arc<Mutex<{closure#1}>, Global>' (3/3 each), so the answers were equal on the pre build and the post build 2025-02-24 (which contains #19122) also reports it. In this harness the error does not depend on the edit history (the first diagnostics of a fresh session already have it, as in rust-analyzer-21173), and #19122 does not remove it with the local std (rustc 1.98.1, seven months newer than the reporter's 1.84); a commenter later wrote that the problem was also fixed in the new trait solver (2025-09). No release pair isolates the reported behavior here; no second attempt.",
+   "verdict": "not-reproduced-pre (E0308 on fresh sessions of both builds)"
+  }
+ ]
+}

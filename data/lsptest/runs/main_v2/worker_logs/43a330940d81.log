@@ -1,0 +1,3 @@
+2026-11-18 14:28:54,088 INFO campaign_run run 43a330940d81: r1_history on gopls v0.23.0, schollz/croc@5890191be511 seed 2 settled, targets ['internal/tailcat/pickregion_js.go', 'src/cli/update.go', 'src/tailcattransport/bundle_supported.go']
+2026-11-18 14:38:04,018 INFO campaign_run run 43a330940d81: 0 candidate(s) in 550s; confirming
+2026-11-18 14:38:04,019 INFO campaign_run run 43a330940d81 finished: ok, 0 confirmed of 0 candidate(s), 550s

@@ -1,0 +1,271 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "ced4ef795b99-v01",
+ "run_id": "ced4ef795b99",
+ "oracle": "r4_edits",
+ "server": {
+  "kind": "gopls",
+  "version": "v0.23.0"
+ },
+ "project": {
+  "name": "fatedier/frp@d20a23299600",
+  "source": "corpus",
+  "ref": "temp/corpus/fatedier__frp@d20a23299600",
+  "commit": "d20a232996007dfe6ab425abc0a39a3ae9a0889b",
+  "language": "go"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "pkg/config/legacy/value.go",
+    "positions": [
+     [
+      65,
+      5
+     ]
+    ],
+    "ends": [],
+    "names": [
+     ""
+    ]
+   },
+   {
+    "path": "pkg/config/load_test.go",
+    "positions": [],
+    "ends": [],
+    "names": []
+   },
+   {
+    "path": "pkg/transport/tls.go",
+    "positions": [],
+    "ends": [],
+    "names": []
+   }
+  ]
+ },
+ "key": {
+  "method": "diagnostics",
+  "path": "pkg/config/legacy/value.go",
+  "line": 65,
+  "character": 5,
+  "extra": "M3:quickfix-errors:Remove variable b"
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "pkg/config/legacy/value.go"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/config/legacy/value.go",
+   "start": [
+    71,
+    26
+   ],
+   "end": [
+    71,
+    27
+   ]
+  },
+  {
+   "kind": "change",
+   "path": "pkg/config/legacy/value.go",
+   "start": [
+    65,
+    1
+   ],
+   "end": [
+    66,
+    1
+   ]
+  }
+ ],
+ "case": {
+  "action_kind": "quickfix",
+  "base_errors": 0,
+  "check": "errors",
+  "diag": {
+   "code": "UnusedVar",
+   "message": "declared and not used: b",
+   "range": {
+    "end": {
+     "character": 6,
+     "line": 65
+    },
+    "start": {
+     "character": 5,
+     "line": 65
+    }
+   },
+   "severity": 1
+  },
+  "fix_introduced_errors": [
+   {
+    "code": "UndeclaredName",
+    "message": "undefined: b",
+    "path": "pkg/config/legacy/value.go",
+    "range": {
+     "end": {
+      "character": 2,
+      "line": 65
+     },
+     "start": {
+      "character": 1,
+      "line": 65
+     }
+    },
+    "severity": 1
+   }
+  ],
+  "fix_ops": [
+   {
+    "end": [
+     66,
+     1
+    ],
+    "kind": "change",
+    "path": "pkg/config/legacy/value.go",
+    "start": [
+     65,
+     1
+    ]
+   }
+  ],
+  "kind": "mutation",
+  "mutation": {
+   "end": [
+    71,
+    27
+   ],
+   "id": "M3",
+   "offsets": [
+    1513,
+    1514
+   ],
+   "sha": "4be532b7694195ea",
+   "start": [
+    71,
+    26
+   ],
+   "text": "",
+   "what": "drop the last argument of 'RenderContent(...)'"
+  },
+  "n_fix_ops": 1,
+  "path": "pkg/config/legacy/value.go",
+  "post_errors": 2,
+  "title": "Remove variable b",
+  "via": "edit"
+ },
+ "shape": "diagnostics:extra:UndeclaredName,WrongArgCount",
+ "signature": "gopls|r4_edits|diagnostics:extra:UndeclaredName,WrongArgCount",
+ "expected": [],
+ "actual": [
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "UndeclaredName",
+   "compiler",
+   "undefined: b"
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "WrongArgCount",
+   "compiler",
+   "not enough arguments in call to RenderContent have () want ([]byte)"
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "quick fix 'Remove variable b' for UnusedVar at pkg/config/legacy/value.go:66:6 raises the error count in the edited files from 0 to 2 (seeded by M3: drop the last argument of 'RenderContent(...)'; errors before the mutation 0, after the fix 2); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 69s",
+ "violation": {
+  "oracle": "r4_edits",
+  "server": "gopls-v0.23.0",
+  "project": "fatedier/frp@d20a23299600",
+  "key": {
+   "method": "diagnostics",
+   "path": "pkg/config/legacy/value.go",
+   "line": 65,
+   "character": 5,
+   "extra": "M3:quickfix-errors:Remove variable b"
+  },
+  "expected": [],
+  "actual": [
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "UndeclaredName",
+    "compiler",
+    "undefined: b"
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "WrongArgCount",
+    "compiler",
+    "not enough arguments in call to RenderContent have () want ([]byte)"
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "pkg/config/legacy/value.go"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/config/legacy/value.go",
+    "start": [
+     71,
+     26
+    ],
+    "end": [
+     71,
+     27
+    ]
+   },
+   {
+    "kind": "change",
+    "path": "pkg/config/legacy/value.go",
+    "start": [
+     65,
+     1
+    ],
+    "end": [
+     66,
+     1
+    ]
+   }
+  ],
+  "detail": "{\"case\": {\"action_kind\": \"quickfix\", \"base_errors\": 0, \"check\": \"errors\", \"diag\": {\"code\": \"UnusedVar\", \"message\": \"declared and not used: b\", \"range\": {\"end\": {\"character\": 6, \"line\": 65}, \"start\": {\"character\": 5, \"line\": 65}}, \"severity\": 1}, \"fix_introduced_errors\": [{\"code\": \"UndeclaredName\", \"message\": \"undefined: b\", \"path\": \"pkg/config/legacy/value.go\", \"range\": {\"end\": {\"character\": 2, \"line\": 65}, \"start\": {\"character\": 1, \"line\": 65}}, \"severity\": 1}], \"fix_ops\": [{\"end\": [66, 1], \"kind\": \"change\", \"path\": \"pkg/config/legacy/value.go\", \"start\": [65, 1]}], \"kind\": \"mutation\", \"mutation\": {\"end\": [71, 27], \"id\": \"M3\", \"offsets\": [1513, 1514], \"sha\": \"4be532b7694195ea\", \"start\": [71, 26], \"text\": \"\", \"what\": \"drop the last argument of 'RenderContent(...)'\"}, \"n_fix_ops\": 1, \"path\": \"pkg/config/legacy/value.go\", \"post_errors\": 2, \"title\": \"Remove variable b\", \"via\": \"edit\"}, \"note\": \"quick fix 'Remove variable b' for UnusedVar at pkg/config/legacy/value.go:66:6 raises the error count in the edited files from 0 to 2 (seeded by M3: drop the last argument of 'RenderContent(...)'; errors before the mutation 0, after the fix 2); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 69s\", \"shape\": \"diagnostics:extra:UndeclaredName,WrongArgCount\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "gopls|r4_edits|diagnostics:extra:UndeclaredName,WrongArgCount",
+  "run_id": "ced4ef795b99"
+ },
+ "replay_logs": [
+  "logs/gopls-v0.23.0-tr946c39-r4-replay-baseline-20260925-160541-cd43f9.jsonl.gz",
+  "logs/gopls-v0.23.0-tr946c39-r4-replay-case-20260925-160530-f99f42.jsonl.gz",
+  "logs/gopls-v0.23.0-tr946c39-r4-replay-control-20260925-160547-4a080d.jsonl.gz"
+ ],
+ "project_files": {},
+ "group": "gopls-r4-diagnostics-extra-undeclaredname-wrongar-mutation-m3-946c39",
+ "reduced": true
+}

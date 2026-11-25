@@ -1,0 +1,107 @@
+{
+ "schema": 1,
+ "id": "pyright-2631",
+ "meta": {
+  "server": "pyright",
+  "kind": "pyright",
+  "number": 2631,
+  "url": "https://github.com/microsoft/pyright/issues/2631",
+  "title": "VS Code (incorrectly) reports errors that CLI pyright does not",
+  "oracle_class": "R1",
+  "subtype": "edit-undo",
+  "fix_ref": "none named (maintainer: 'This is addressed in pyright 1.1.191')",
+  "fix_shas": [],
+  "pre_version": "1.1.190",
+  "post_version": "1.1.191",
+  "pre_build": "1.1.190",
+  "post_build": "1.1.191",
+  "build_notes": "npm pyright@1.1.190 (2021-11-25) and pyright@1.1.191 (2021-11-30); release window from the maintainer's comment.",
+  "candidate_rank": 77,
+  "effort_minutes": 12,
+  "notes": "Not reproduced after two attempts: neither the reporter's edit-and-undo with immediate hovers nor hovers right after the open made pyright 1.1.190 report the editor-only errors; both sessions stay error-free. The report came from Pylance, whose extra requests (for example semantic tokens, which pyright 1.1.190 does not serve) fix a different evaluation order; the order that triggers the fixed bug is not stated in the issue or the maintainer's reply."
+ },
+ "language": "python",
+ "settings": {
+  "python": {
+   "analysis": {
+    "typeCheckingMode": "strict"
+   }
+  }
+ },
+ "settings_note": "Strict type checking: the reporter's hover shows reportUnknownMemberType, a rule that is on only in strict mode; no other settings are named.",
+ "session": {
+  "settle_timeout_s": 120
+ },
+ "files": [
+  {
+   "path": "main.py",
+   "provenance": "issue",
+   "source": "issue body, python code block",
+   "note": ""
+  }
+ ],
+ "repro": {
+  "attempt": 2,
+  "timing": "race",
+  "steps": "Open main.py and, as the editor does while the reporter inspects the reported spot, hover foobar and then baz in '\"baz\" in foobar.baz' right after opening, before the server has analyzed the file. Reported: in the editor (not on the command line) errors are reported there (cannot access member baz for type Foo; type of baz unknown), with apparent non-determinism. After the server settles, the diagnostics of main.py and the hovers on foobar and baz must equal those of a fresh session that opened the same text without the early hovers.",
+  "ops": [
+   {
+    "kind": "open",
+    "path": "main.py"
+   },
+   {
+    "kind": "request",
+    "path": "main.py",
+    "start": [
+     22,
+     46
+    ],
+    "text": "hover"
+   },
+   {
+    "kind": "request",
+    "path": "main.py",
+    "start": [
+     22,
+     53
+    ],
+    "text": "hover"
+   }
+  ],
+  "probe": {
+   "type": "differs_from_fresh",
+   "params": {
+    "queries": [
+     {
+      "method": "diagnostics",
+      "path": "main.py"
+     },
+     {
+      "method": "hover",
+      "path": "main.py",
+      "position": [
+       22,
+       46
+      ]
+     },
+     {
+      "method": "hover",
+      "path": "main.py",
+      "position": [
+       22,
+       53
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "attempts": [
+  {
+   "attempt": 1,
+   "timing": "race",
+   "summary": "The reporter's edit ('bar' -> 'ba') and its undo, each followed at once by a hover (the first hover was mistakenly placed on the blank before foobar, line 23 character 45; the second on baz). No diagnostics in the case or the fresh session on either build (0/3).",
+   "verdict": "not-reproduced-pre"
+  }
+ ]
+}

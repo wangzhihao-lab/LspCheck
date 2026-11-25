@@ -1,0 +1,434 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "b73dc80e330e-v00",
+ "run_id": "b73dc80e330e",
+ "oracle": "r0_crash",
+ "server": {
+  "kind": "rust-analyzer",
+  "version": "2026-09-21"
+ },
+ "project": {
+  "name": "FuelLabs/fuels-rs@d9a250a51818",
+  "source": "corpus",
+  "ref": "temp/corpus/FuelLabs__fuels-rs@d9a250a51818",
+  "commit": "d9a250a51818dda64bfeb5ef7cc19cf27bdcd623",
+  "language": "rust"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "e2e/tests/contracts.rs",
+    "positions": [
+     [
+      323,
+      14
+     ],
+     [
+      709,
+      37
+     ],
+     [
+      743,
+      6
+     ],
+     [
+      773,
+      22
+     ],
+     [
+      1073,
+      15
+     ],
+     [
+      1109,
+      48
+     ],
+     [
+      1179,
+      22
+     ],
+     [
+      1200,
+      34
+     ],
+     [
+      1360,
+      38
+     ],
+     [
+      1626,
+      82
+     ],
+     [
+      2038,
+      55
+     ],
+     [
+      2068,
+      11
+     ]
+    ],
+    "ends": [
+     [
+      323,
+      16
+     ],
+     [
+      709,
+      41
+     ],
+     [
+      743,
+      9
+     ],
+     [
+      773,
+      27
+     ],
+     [
+      1073,
+      22
+     ],
+     [
+      1109,
+      50
+     ],
+     [
+      1179,
+      30
+     ],
+     [
+      1200,
+      39
+     ],
+     [
+      1360,
+      50
+     ],
+     [
+      1626,
+      84
+     ],
+     [
+      2038,
+      58
+     ],
+     [
+      2068,
+      13
+     ]
+    ],
+    "names": [
+     "name",
+     "default",
+     "Result",
+     "addresses",
+     "with_max_size",
+     "get",
+     "balance_asset_1",
+     "load_from",
+     "target_contract_instance",
+     "call",
+     "Result",
+     "test"
+    ]
+   },
+   {
+    "path": "packages/fuels-core/src/types/wrappers/input.rs",
+    "positions": [
+     [
+      2,
+      11
+     ],
+     [
+      5,
+      9
+     ],
+     [
+      5,
+      31
+     ],
+     [
+      17,
+      15
+     ],
+     [
+      30,
+      35
+     ],
+     [
+      33,
+      50
+     ],
+     [
+      36,
+      14
+     ],
+     [
+      37,
+      14
+     ],
+     [
+      50,
+      17
+     ],
+     [
+      52,
+      25
+     ],
+     [
+      57,
+      30
+     ],
+     [
+      59,
+      19
+     ]
+    ],
+    "ends": [
+     [
+      2,
+      13
+     ],
+     [
+      5,
+      14
+     ],
+     [
+      5,
+      36
+     ],
+     [
+      17,
+      17
+     ],
+     [
+      30,
+      39
+     ],
+     [
+      33,
+      54
+     ],
+     [
+      36,
+      16
+     ],
+     [
+      37,
+      16
+     ],
+     [
+      50,
+      24
+     ],
+     [
+      52,
+      32
+     ],
+     [
+      57,
+      34
+     ],
+     [
+      59,
+      21
+     ]
+    ],
+    "names": [
+     "hash",
+     "fuel_types",
+     "ContractId",
+     "Vec",
+     "resource",
+     "CoinType",
+     "code",
+     "data",
+     "contains_data",
+     "ResourceSigned",
+     "CoinType",
+     "msg"
+    ]
+   },
+   {
+    "path": "packages/fuels-macros/src/setup_program_test/parsing/commands.rs",
+    "positions": [
+     [
+      3,
+      8
+     ],
+     [
+      5,
+      20
+     ],
+     [
+      29,
+      20
+     ],
+     [
+      29,
+      31
+     ],
+     [
+      45,
+      25
+     ],
+     [
+      48,
+      40
+     ],
+     [
+      48,
+      57
+     ],
+     [
+      50,
+      42
+     ],
+     [
+      59,
+      32
+     ],
+     [
+      61,
+      20
+     ],
+     [
+      61,
+      38
+     ],
+     [
+      63,
+      47
+     ]
+    ],
+    "ends": [
+     [
+      3,
+      13
+     ],
+     [
+      5,
+      26
+     ],
+     [
+      29,
+      26
+     ],
+     [
+      29,
+      34
+     ],
+     [
+      45,
+      31
+     ],
+     [
+      48,
+      47
+     ],
+     [
+      48,
+      60
+     ],
+     [
+      50,
+      55
+     ],
+     [
+      59,
+      40
+     ],
+     [
+      61,
+      29
+     ],
+     [
+      61,
+      45
+     ],
+     [
+      63,
+      52
+     ]
+    ],
+    "names": [
+     "itertools",
+     "set_options",
+     "set_options",
+     "Option",
+     "ParseStream",
+     "CommandParser",
+     "input",
+     "extract_the_abigen_command",
+     "parsed_commands",
+     "generate_bindings",
+     "abigen_command",
+     "LoadScript"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "diagnostics",
+  "path": "e2e/tests/contracts.rs",
+  "line": -1,
+  "character": -1,
+  "extra": ""
+ },
+ "ops": [],
+ "case": {
+  "codes": [
+   "timeout",
+   "timeout"
+  ],
+  "mode": "fresh-pair",
+  "phase": [
+   "done",
+   "done"
+  ],
+  "seed": 1
+ },
+ "shape": "diagnostics:result->error:timeout",
+ "signature": "rust-analyzer|r0_crash|diagnostics:result->error:timeout",
+ "expected": "an answer that is not a server error, a crash or a timeout",
+ "actual": [
+  "error",
+  "timeout"
+ ],
+ "reproduced": "2/3",
+ "note": "diagnostics answered ['error', 'timeout'] in the fresh baseline and ['error', 'timeout'] in the fresh control; flake 2/3 [r1:SCR r2:Scr r3:SCR] in 1260s",
+ "violation": {
+  "oracle": "r0_crash",
+  "server": "rust-analyzer-2026-09-21",
+  "project": "FuelLabs/fuels-rs@d9a250a51818",
+  "key": {
+   "method": "diagnostics",
+   "path": "e2e/tests/contracts.rs",
+   "line": -1,
+   "character": -1,
+   "extra": ""
+  },
+  "expected": "an answer that is not a server error, a crash or a timeout",
+  "actual": [
+   "error",
+   "timeout"
+  ],
+  "ops": [],
+  "detail": "{\"case\": {\"codes\": [\"timeout\", \"timeout\"], \"mode\": \"fresh-pair\", \"phase\": [\"done\", \"done\"], \"seed\": 1}, \"note\": \"diagnostics answered ['error', 'timeout'] in the fresh baseline and ['error', 'timeout'] in the fresh control; flake 2/3 [r1:SCR r2:Scr r3:SCR] in 1260s\", \"shape\": \"diagnostics:result->error:timeout\"}",
+  "reproduced": "2/3",
+  "reduced_ops": [],
+  "signature": "rust-analyzer|r0_crash|diagnostics:result->error:timeout",
+  "run_id": "b73dc80e330e"
+ },
+ "replay_logs": [],
+ "project_files": {},
+ "incomplete": false
+}

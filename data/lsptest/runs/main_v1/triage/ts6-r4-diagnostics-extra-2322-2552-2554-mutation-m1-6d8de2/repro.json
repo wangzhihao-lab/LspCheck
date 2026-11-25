@@ -1,0 +1,310 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "2fe2fd5714b0-v00",
+ "run_id": "2fe2fd5714b0",
+ "oracle": "r4_edits",
+ "server": {
+  "kind": "ts6",
+  "version": "6.0.3"
+ },
+ "project": {
+  "name": "Fission-AI/OpenSpec@f179ed4e4056",
+  "source": "corpus",
+  "ref": "temp/corpus/Fission-AI__OpenSpec@f179ed4e4056",
+  "commit": "f179ed4e40567cdb56501ee3f4d09efbcb1557b8",
+  "language": "typescript"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "src/core/shared/skill-generation.ts",
+    "positions": [
+     [
+      103,
+      20
+     ]
+    ],
+    "ends": [],
+    "names": [
+     ""
+    ]
+   },
+   {
+    "path": "src/telemetry/index.ts",
+    "positions": [],
+    "ends": [],
+    "names": []
+   },
+   {
+    "path": "test/commands/store-git.test.ts",
+    "positions": [],
+    "ends": [],
+    "names": []
+   }
+  ]
+ },
+ "key": {
+  "method": "diagnostics",
+  "path": "src/core/shared/skill-generation.ts",
+  "line": 103,
+  "character": 20,
+  "extra": "M1:quickfix-errors:Change spelling to 'resolveInstalledWorkflows'"
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "src/core/shared/skill-generation.ts"
+  },
+  {
+   "kind": "change",
+   "path": "src/core/shared/skill-generation.ts",
+   "start": [
+    35,
+    36
+   ],
+   "end": [
+    36,
+    26
+   ]
+  },
+  {
+   "kind": "change",
+   "path": "src/core/shared/skill-generation.ts",
+   "start": [
+    103,
+    27
+   ],
+   "end": [
+    103,
+    35
+   ],
+   "text": "Installed"
+  }
+ ],
+ "case": {
+  "action_kind": "quickfix",
+  "base_errors": 0,
+  "check": "errors",
+  "diag": {
+   "code": 2552,
+   "message": "Cannot find name 'resolveOptionalWorkflows'. Did you mean 'resolveInstalledWorkflows'?",
+   "range": {
+    "end": {
+     "character": 44,
+     "line": 103
+    },
+    "start": {
+     "character": 20,
+     "line": 103
+    }
+   },
+   "severity": 1
+  },
+  "fix_introduced_errors": [
+   {
+    "code": 2322,
+    "message": "Type '{ template: { instructions: ReadonlySet<string>; name: string; description: string; license?: string | undefined; compatibility?: string | undefined; metadata?: Record<string, string> | undefined; }; dirName: string; workflowId: string; }[]' is not assignable to type 'SkillTemplateEntry[]'.\n  Type '{ template: { instructions: ReadonlySet<string>; name: string; description: string; license?: string; compatibility?: string; metadata?: Record<string, string>; }; dirName: string; workflowId: string; }' is not assignable to type 'SkillTemplateEntry'.\n    The types of 'template.instructions' are incompatible between these types.\n      Type 'ReadonlySet<string>' is not assignable to type 'string'.",
+    "path": "src/core/shared/skill-generation.ts",
+    "range": {
+     "end": {
+      "character": 8,
+      "line": 99
+     },
+     "start": {
+      "character": 2,
+      "line": 99
+     }
+    },
+    "severity": 1
+   },
+   {
+    "code": 2554,
+    "message": "Expected 0-1 arguments, but got 2.",
+    "path": "src/core/shared/skill-generation.ts",
+    "range": {
+     "end": {
+      "character": 84,
+      "line": 103
+     },
+     "start": {
+      "character": 75,
+      "line": 103
+     }
+    },
+    "severity": 1
+   }
+  ],
+  "fix_ops": [
+   {
+    "end": [
+     103,
+     35
+    ],
+    "kind": "change",
+    "path": "src/core/shared/skill-generation.ts",
+    "start": [
+     103,
+     27
+    ],
+    "text": "Installed"
+   }
+  ],
+  "kind": "mutation",
+  "mutation": {
+   "end": [
+    36,
+    26
+   ],
+   "id": "M1",
+   "offsets": [
+    1045,
+    1073
+   ],
+   "sha": "90f1bd34876186ea",
+   "start": [
+    35,
+    36
+   ],
+   "text": "",
+   "what": "remove 'resolveOptionalWorkflows' from an import"
+  },
+  "n_fix_ops": 1,
+  "path": "src/core/shared/skill-generation.ts",
+  "post_errors": 3,
+  "title": "Change spelling to 'resolveInstalledWorkflows'",
+  "via": "edit"
+ },
+ "shape": "diagnostics:extra:2322,2552,2554",
+ "signature": "ts6|r4_edits|diagnostics:extra:2322,2552,2554",
+ "expected": [],
+ "actual": [
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "2322",
+   "typescript",
+   "Type '{ template: { instructions: ReadonlySet<string>; name: string; description: string; license?: string | undefined; compatibility?: string | undefined; metadata?: Record<string, string> | undefined; }; dirName: string; workflowId: string; }[]' is not assignable to type 'SkillTemplateEntry[]'. Type '{ template: { instructions: ReadonlySet<string>; name: string; description: string; license?: string; compatibility?: string; metadata?: Record<string, string>; }; dirName: string; workflowId: string; }' is not assignable to type 'SkillTemplateEntry'. The types of 'template.instructions' are incompatible between these types. Type 'ReadonlySet<string>' is not assignable to type 'string'."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "2552",
+   "typescript",
+   "Cannot find name 'resolveOptionalWorkflows'. Did you mean 'resolveInstalledWorkflows'?"
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "2554",
+   "typescript",
+   "Expected 0-1 arguments, but got 2."
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "quick fix \"Change spelling to 'resolveInstalledWorkflows'\" for 2552 at src/core/shared/skill-generation.ts:104:21 raises the error count in the edited files from 0 to 3 (seeded by M1: remove 'resolveOptionalWorkflows' from an import; errors before the mutation 0, after the fix 3); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 136s",
+ "violation": {
+  "oracle": "r4_edits",
+  "server": "ts6-6.0.3",
+  "project": "Fission-AI/OpenSpec@f179ed4e4056",
+  "key": {
+   "method": "diagnostics",
+   "path": "src/core/shared/skill-generation.ts",
+   "line": 103,
+   "character": 20,
+   "extra": "M1:quickfix-errors:Change spelling to 'resolveInstalledWorkflows'"
+  },
+  "expected": [],
+  "actual": [
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2322",
+    "typescript",
+    "Type '{ template: { instructions: ReadonlySet<string>; name: string; description: string; license?: string | undefined; compatibility?: string | undefined; metadata?: Record<string, string> | undefined; }; dirName: string; workflowId: string; }[]' is not assignable to type 'SkillTemplateEntry[]'. Type '{ template: { instructions: ReadonlySet<string>; name: string; description: string; license?: string; compatibility?: string; metadata?: Record<string, string>; }; dirName: string; workflowId: string; }' is not assignable to type 'SkillTemplateEntry'. The types of 'template.instructions' are incompatible between these types. Type 'ReadonlySet<string>' is not assignable to type 'string'."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2552",
+    "typescript",
+    "Cannot find name 'resolveOptionalWorkflows'. Did you mean 'resolveInstalledWorkflows'?"
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2554",
+    "typescript",
+    "Expected 0-1 arguments, but got 2."
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "src/core/shared/skill-generation.ts"
+   },
+   {
+    "kind": "change",
+    "path": "src/core/shared/skill-generation.ts",
+    "start": [
+     35,
+     36
+    ],
+    "end": [
+     36,
+     26
+    ]
+   },
+   {
+    "kind": "change",
+    "path": "src/core/shared/skill-generation.ts",
+    "start": [
+     103,
+     27
+    ],
+    "end": [
+     103,
+     35
+    ],
+    "text": "Installed"
+   }
+  ],
+  "detail": "{\"case\": {\"action_kind\": \"quickfix\", \"base_errors\": 0, \"check\": \"errors\", \"diag\": {\"code\": 2552, \"message\": \"Cannot find name 'resolveOptionalWorkflows'. Did you mean 'resolveInstalledWorkflows'?\", \"range\": {\"end\": {\"character\": 44, \"line\": 103}, \"start\": {\"character\": 20, \"line\": 103}}, \"severity\": 1}, \"fix_introduced_errors\": [{\"code\": 2322, \"message\": \"Type '{ template: { instructions: ReadonlySet<string>; name: string; description: string; license?: string | undefined; compatibility?: string | undefined; metadata?: Record<string, string> | undefined; }; dirName: string; workflowId: string; }[]' is not assignable to type 'SkillTemplateEntry[]'.\\n  Type '{ template: { instructions: ReadonlySet<string>; name: string; description: string; license?: string; compatibility?: string; metadata?: Record<string, string>; }; dirName: string; workflowId: string; }' is not assignable to type 'SkillTemplateEntry'.\\n    The types of 'template.instructions' are incompatible between these types.\\n      Type 'ReadonlySet<string>' is not assignable to type 'string'.\", \"path\": \"src/core/shared/skill-generation.ts\", \"range\": {\"end\": {\"character\": 8, \"line\": 99}, \"start\": {\"character\": 2, \"line\": 99}}, \"severity\": 1}, {\"code\": 2554, \"message\": \"Expected 0-1 arguments, but got 2.\", \"path\": \"src/core/shared/skill-generation.ts\", \"range\": {\"end\": {\"character\": 84, \"line\": 103}, \"start\": {\"character\": 75, \"line\": 103}}, \"severity\": 1}], \"fix_ops\": [{\"end\": [103, 35], \"kind\": \"change\", \"path\": \"src/core/shared/skill-generation.ts\", \"start\": [103, 27], \"text\": \"Installed\"}], \"kind\": \"mutation\", \"mutation\": {\"end\": [36, 26], \"id\": \"M1\", \"offsets\": [1045, 1073], \"sha\": \"90f1bd34876186ea\", \"start\": [35, 36], \"text\": \"\", \"what\": \"remove 'resolveOptionalWorkflows' from an import\"}, \"n_fix_ops\": 1, \"path\": \"src/core/shared/skill-generation.ts\", \"post_errors\": 3, \"title\": \"Change spelling to 'resolveInstalledWorkflows'\", \"via\": \"edit\"}, \"note\": \"quick fix \\\"Change spelling to 'resolveInstalledWorkflows'\\\" for 2552 at src/core/shared/skill-generation.ts:104:21 raises the error count in the edited files from 0 to 3 (seeded by M1: remove 'resolveOptionalWorkflows' from an import; errors before the mutation 0, after the fix 3); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 136s\", \"shape\": \"diagnostics:extra:2322,2552,2554\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "ts6|r4_edits|diagnostics:extra:2322,2552,2554",
+  "run_id": "2fe2fd5714b0"
+ },
+ "replay_logs": [
+  "logs/ts6-6.0.3-tr6d8de2-r4-replay-baseline-20260925-190413-7fcedd.jsonl.gz",
+  "logs/ts6-6.0.3-tr6d8de2-r4-replay-case-20260925-190403-97d225.jsonl.gz",
+  "logs/ts6-6.0.3-tr6d8de2-r4-replay-control-20260925-190419-2d38b7.jsonl.gz"
+ ],
+ "project_files": {},
+ "group": "ts6-r4-diagnostics-extra-2322-2552-2554-mutation-m1-6d8de2",
+ "reduced": true
+}

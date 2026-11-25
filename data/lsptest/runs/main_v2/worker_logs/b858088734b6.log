@@ -1,0 +1,6 @@
+2026-11-18 03:38:16,137 INFO campaign_run run b858088734b6: r5_transforms on pyright 1.1.414, ultralytics/yolov5@402e17ddf820 seed 1 settled, targets ['detect.py', 'utils/segment/dataloaders.py', 'utils/segment/general.py']
+2026-11-18 03:43:00,978 INFO campaign_run run b858088734b6: 2 candidate(s) in 285s; confirming
+2026-11-18 03:44:32,509 INFO flake replay 1/3 of pyright|r5_transforms|signatureHelp:result->error:timeout: settled=True control_stable=False reproduced=False (91.5s)
+2026-11-18 03:45:56,650 INFO flake replay 2/3 of pyright|r5_transforms|signatureHelp:result->error:timeout: settled=True control_stable=True reproduced=True (84.1s)
+2026-11-18 03:48:00,787 INFO flake replay 3/3 of pyright|r5_transforms|signatureHelp:result->error:timeout: settled=True control_stable=False reproduced=False (124.1s)
+2026-11-18 03:48:00,799 INFO campaign_run run b858088734b6 finished: ok, 0 confirmed of 2 candidate(s), 585s

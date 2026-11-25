@@ -1,0 +1,201 @@
+{
+ "campaign": "kb_pyright_8946",
+ "groups": [
+  {
+   "gid": "pyright-r1-hover-text-h1-e40b32",
+   "signature": "pyright|r1_history|hover:text",
+   "method": "hover",
+   "family": "H1",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "7b994d0b8763"
+    ],
+    "projects": [
+     "pyright_8946"
+    ],
+    "servers": [
+     "pyright-1.1.380"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "7b994d0b8763-v01"
+    ]
+   },
+   "representative": "7b994d0b8763-v01",
+   "ops_before": 3,
+   "ops_after": 3,
+   "lines": "repro.py: 6/15 non-blank lines kept",
+   "matches": 8,
+   "top_match": "https://github.com/microsoft/pyright/issues/10103",
+   "seconds": {
+    "reduction": 292.7,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/kb_pyright_8946/triage/pyright-r1-hover-text-h1-e40b32/report.md"
+  },
+  {
+   "gid": "pyright-r1-hover-text-h2-fb2ed0",
+   "signature": "pyright|r1_history|hover:text",
+   "method": "hover",
+   "family": "H2",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "db23e5877dcf"
+    ],
+    "projects": [
+     "pyright_8946"
+    ],
+    "servers": [
+     "pyright-1.1.380"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "2"
+    ],
+    "vids": [
+     "db23e5877dcf-v00"
+    ]
+   },
+   "representative": "db23e5877dcf-v00",
+   "ops_before": 5,
+   "ops_after": 3,
+   "lines": "repro.py: 7/15 non-blank lines kept",
+   "matches": 8,
+   "top_match": "https://github.com/microsoft/pyright/issues/3860",
+   "seconds": {
+    "reduction": 299.9,
+    "issues": 3.3
+   },
+   "report": "data/lsptest/runs/kb_pyright_8946/triage/pyright-r1-hover-text-h2-fb2ed0/report.md"
+  },
+  {
+   "gid": "pyright-r1-signaturehelp-lost-h1-2664b0",
+   "signature": "pyright|r1_history|signatureHelp:lost",
+   "method": "signatureHelp",
+   "family": "H1",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "7b994d0b8763"
+    ],
+    "projects": [
+     "pyright_8946"
+    ],
+    "servers": [
+     "pyright-1.1.380"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "7b994d0b8763-v02"
+    ]
+   },
+   "representative": "7b994d0b8763-v02",
+   "ops_before": 3,
+   "ops_after": 3,
+   "lines": "repro.py: 6/15 non-blank lines kept",
+   "matches": 7,
+   "top_match": "https://github.com/microsoft/pyright/issues/10103",
+   "seconds": {
+    "reduction": 284.0,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/kb_pyright_8946/triage/pyright-r1-signaturehelp-lost-h1-2664b0/report.md"
+  },
+  {
+   "gid": "pyright-r1-typedefinition-changed-h1-c18cce",
+   "signature": "pyright|r1_history|typeDefinition:changed",
+   "method": "typeDefinition",
+   "family": "H1",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "7b994d0b8763"
+    ],
+    "projects": [
+     "pyright_8946"
+    ],
+    "servers": [
+     "pyright-1.1.380"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "7b994d0b8763-v03"
+    ]
+   },
+   "representative": "7b994d0b8763-v03",
+   "ops_before": 3,
+   "ops_after": 3,
+   "lines": "repro.py: 6/15 non-blank lines kept",
+   "matches": 8,
+   "top_match": "https://github.com/microsoft/pyright/issues/10103",
+   "seconds": {
+    "reduction": 284.6,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/kb_pyright_8946/triage/pyright-r1-typedefinition-changed-h1-c18cce/report.md"
+  },
+  {
+   "gid": "pyright-r1-typedefinition-result-error-32603-h3-50731d",
+   "signature": "pyright|r1_history|typeDefinition:result->error:-32603",
+   "method": "typeDefinition",
+   "family": "H3",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "7b994d0b8763"
+    ],
+    "projects": [
+     "pyright_8946"
+    ],
+    "servers": [
+     "pyright-1.1.380"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "7b994d0b8763-v00"
+    ]
+   },
+   "representative": "7b994d0b8763-v00",
+   "ops_before": 4,
+   "ops_after": 3,
+   "lines": "repro.py: 2/15 non-blank lines kept",
+   "matches": 8,
+   "top_match": "https://github.com/microsoft/pyright/issues/6490",
+   "seconds": {
+    "reduction": 191.5,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/kb_pyright_8946/triage/pyright-r1-typedefinition-result-error-32603-h3-50731d/report.md"
+  }
+ ],
+ "date": "2026-09-23 11:50"
+}

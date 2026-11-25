@@ -1,0 +1,98 @@
+{
+ "schema": 1,
+ "id": "rust-analyzer-17525",
+ "meta": {
+  "server": "rust-analyzer",
+  "kind": "rust-analyzer",
+  "number": 17525,
+  "url": "https://github.com/rust-lang/rust-analyzer/issues/17525",
+  "title": "Destructure assist in function arguments doesn't respect nested structures",
+  "oracle_class": "R4",
+  "subtype": "completion",
+  "fix_ref": "rust-lang/rust-analyzer#20679 (Fix complete type in nested pattern)",
+  "fix_shas": [
+   "c1499a2381215d35b0725abb22fea91f996b2d73"
+  ],
+  "pre_version": "2025-08-25",
+  "post_version": "2025-10-27",
+  "pre_build": "2025-08-25",
+  "post_build": "2025-10-27",
+  "build_notes": "GitHub release assets rust-analyzer-aarch64-apple-darwin.gz of the weekly tags 2025-08-25 and 2025-10-27; git tag --contains puts the fix first in 2025-10-27. The sysroot is the local rustup toolchain (rustc 1.98.1). These two builds cannot load a Cargo workspace with the local cargo 1.98 (--lockfile-path; attempt 1), so attempt 2 describes the crate with a rust-project.json (no cargo metadata call, no sysroot).",
+  "effort_minutes": 15,
+  "notes": "In a function parameter pattern the struct-pattern completion also appended ': Type' (the parameter's type ascription), even when the pattern is nested inside another pattern, producing 'Outer(Inner { field }: Inner)'. There is no weekly release tag between 2025-08-25 and 2025-10-27.",
+  "candidate_rank": 53
+ },
+ "language": "rust",
+ "settings": {},
+ "settings_note": "The issue names no settings; the session keeps checkOnSave off (native analysis only).",
+ "session": {
+  "settle_timeout_s": 240,
+  "request_timeout_s": 60,
+  "pull_diagnostics": false
+ },
+ "files": [
+  {
+   "path": "src/lib.rs",
+   "provenance": "issue-adapted",
+   "source": "issue body, first code block",
+   "note": "the two struct declarations verbatim; the issue's placeholders '[...]' (where the user types) and '...' (the body) are replaced by the typed prefix 'Inn' and an empty body"
+  },
+  {
+   "path": "rust-project.json",
+   "provenance": "scaffold",
+   "source": "",
+   "note": "a rust-project.json describing the single library crate (root module src/lib.rs, edition 2021, no dependencies, no sysroot); it replaces the Cargo.toml of attempt 1 because these rust-analyzer builds cannot load a Cargo workspace with the local cargo 1.98 (they pass the unstable --lockfile-path, which cargo 1.98 rejects), and the case needs no std"
+  }
+ ],
+ "repro": {
+  "attempt": 2,
+  "timing": "settled",
+  "steps": "Open src/lib.rs. Request completion after 'Inn' inside 'fn stuff(Outer(Inn))' (line 5, character 18) and accept the destructuring item for Inner (label starting 'Inner {'; the plain type item 'Inner' is not the one the issue accepts). Reported: 'fn stuff(Outer(Inner { field }: Inner))', a type ascription inside a pattern; expected 'Outer(Inner { field })' (with ': Outer<Inner>' at the parameter level). Probe: the edited text must have no parse error that the original did not have.",
+  "ops": [
+   {
+    "kind": "open",
+    "path": "src/lib.rs"
+   }
+  ],
+  "probe": {
+   "type": "edit_breaks_syntax",
+   "params": {
+    "edit": {
+     "via": "completion",
+     "path": "src/lib.rs",
+     "position": [
+      5,
+      18
+     ],
+     "label_re": "^Inner\\s*\\{",
+     "missing": "invalid"
+    }
+   }
+  }
+ },
+ "attempts": [
+  {
+   "attempt": 1,
+   "timing": "settled",
+   "probe": "edit_breaks_syntax",
+   "summary": "Cargo project (Cargo.toml scaffold), label_re '^Inner': not-reproduced-pre, but both 2025-08-25 and 2025-10-27 failed to load the workspace ('cargo metadata ... unexpected argument --lockfile-path' with the local cargo 1.98), so the struct's fields were unknown and only the plain item 'Inner' was offered and chosen ('fn stuff(Outer(Inner))' on both builds); the destructuring item the issue accepts was not offered.",
+   "verdict": "not-reproduced-pre (workspace not loaded)",
+   "files": [
+    "src/lib.rs (issue)",
+    "Cargo.toml (scaffold)"
+   ],
+   "params": {
+    "edit": {
+     "via": "completion",
+     "path": "src/lib.rs",
+     "position": [
+      5,
+      18
+     ],
+     "label_re": "^Inner\\s*\\{",
+     "missing": "invalid"
+    }
+   }
+  }
+ ]
+}

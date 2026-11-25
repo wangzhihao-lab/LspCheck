@@ -1,0 +1,6 @@
+2026-09-24 20:22:17,710 INFO campaign_run run fb8974300c25: r3_routes on jdtls 1.12.0, jdtls-2111 seed 1 settled, targets ['src/app/Person.java']
+2026-09-24 20:22:44,977 INFO campaign_run run fb8974300c25: 4 candidate(s) in 27s; confirming
+2026-09-24 20:23:01,174 INFO flake replay 1/3 of jdtls|r3_routes|highlightVsReferences:gained: settled=True control_stable=True reproduced=True (16.2s)
+2026-09-24 20:23:16,631 INFO flake replay 2/3 of jdtls|r3_routes|highlightVsReferences:gained: settled=True control_stable=True reproduced=True (15.5s)
+2026-09-24 20:23:32,336 INFO flake replay 3/3 of jdtls|r3_routes|highlightVsReferences:gained: settled=True control_stable=True reproduced=True (15.7s)
+2026-09-24 20:23:32,345 INFO campaign_run run fb8974300c25 finished: ok, 1 confirmed of 4 candidate(s), 75s

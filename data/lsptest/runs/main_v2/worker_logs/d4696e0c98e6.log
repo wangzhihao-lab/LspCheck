@@ -1,0 +1,3 @@
+2026-11-18 09:58:15,902 INFO campaign_run run d4696e0c98e6: r3_routes on ts7 7.0.2, date-fns/date-fns@f34149bb1ba1 seed 1 settled, targets ['pkgs/core/src/fp/differenceInCalendarQuartersWithOptions/index.ts', 'pkgs/core/src/fp/isSameWeek/index.ts', 'pkgs/core/src/fp/lastDayOfMonth/index.ts']
+2026-11-18 10:00:23,188 INFO campaign_run run d4696e0c98e6: 0 candidate(s) in 127s; confirming
+2026-11-18 10:00:23,189 INFO campaign_run run d4696e0c98e6 finished: ok, 0 confirmed of 0 candidate(s), 128s

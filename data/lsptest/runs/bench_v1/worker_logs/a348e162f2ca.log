@@ -1,0 +1,6 @@
+2026-09-25 04:15:25,609 INFO campaign_run run a348e162f2ca: r5_transforms on rust-analyzer 2026-04-20, rust-analyzer-18572 seed 2 settled, targets ['src/main.rs']
+2026-09-25 04:16:46,414 INFO campaign_run run a348e162f2ca: 1 candidate(s) in 81s; confirming
+2026-09-25 04:17:12,098 INFO flake replay 1/3 of rust-analyzer|r5_transforms|codeAction:changed: settled=True control_stable=True reproduced=True (25.7s)
+2026-09-25 04:17:40,895 INFO flake replay 2/3 of rust-analyzer|r5_transforms|codeAction:changed: settled=True control_stable=True reproduced=True (28.8s)
+2026-09-25 04:18:11,279 INFO flake replay 3/3 of rust-analyzer|r5_transforms|codeAction:changed: settled=True control_stable=True reproduced=True (30.4s)
+2026-09-25 04:18:11,290 INFO campaign_run run a348e162f2ca finished: ok, 1 confirmed of 1 candidate(s), 166s

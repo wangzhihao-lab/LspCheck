@@ -1,0 +1,33 @@
+{
+ "vid": "29d2893b9177-v00",
+ "ops_before": 0,
+ "narrowed": false,
+ "reduced_confirmed": "1/3",
+ "probes": 0,
+ "cache_hits": 0,
+ "reduce_seconds": 0.0,
+ "budget_exhausted": false,
+ "probe_log": [],
+ "logs": [
+  "rust-analyzer-2026-09-21-tr751ce1-r3-replay-baseline-20260925-165215-efa775.jsonl.gz",
+  "rust-analyzer-2026-09-21-tr751ce1-r3-replay-control-20260925-165231-a69c5f.jsonl.gz",
+  "rust-analyzer-2026-09-21-tr751ce1-r3-replay-route-20260925-165246-6087d4.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [],
+  "actual": [
+   [
+    0,
+    0,
+    0,
+    2,
+    4,
+    "unlinked-file",
+    "rust-analyzer",
+    "This file is not included in any crates, so rust-analyzer can't offer IDE services. If you're intentionally working on unowned files, you can silence this warning by adding \"unlinked-file\" to rust-analyzer.diagnostics.disabled in your settings."
+   ]
+  ]
+ },
+ "ops_after": 0,
+ "total_seconds": 167.4
+}

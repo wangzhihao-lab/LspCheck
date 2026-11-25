@@ -1,0 +1,3 @@
+2026-11-18 18:23:41,974 INFO campaign_run run 2740dfefb39f: r0_crash on ts6 6.0.3, mifi/lossless-cut@85cb95f6aeae seed 1 settled, targets ['src/common/util.ts', 'src/renderer/src/edlFormats.test.ts', 'src/renderer/src/worker/eval.ts']
+2026-11-18 18:24:06,744 INFO campaign_run run 2740dfefb39f: 0 candidate(s) in 25s; confirming
+2026-11-18 18:24:06,745 INFO campaign_run run 2740dfefb39f finished: ok, 0 confirmed of 0 candidate(s), 25s

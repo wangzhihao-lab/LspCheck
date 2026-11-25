@@ -1,0 +1,285 @@
+{
+ "format": 1,
+ "campaign": "bench_v1",
+ "vid": "1e074e71146a-v01",
+ "run_id": "1e074e71146a",
+ "oracle": "r3_routes",
+ "server": {
+  "kind": "rust-analyzer",
+  "version": "2026-04-20"
+ },
+ "project": {
+  "name": "rust-analyzer-18572",
+  "source": "dir",
+  "ref": "data/lsp_bench/cases/rust-analyzer-18572/project",
+  "commit": "",
+  "language": "rust"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 240.0,
+  "request_timeout_s": 60.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "src/main.rs",
+    "positions": [
+     [
+      0,
+      5
+     ],
+     [
+      0,
+      11
+     ],
+     [
+      0,
+      16
+     ],
+     [
+      0,
+      21
+     ],
+     [
+      0,
+      29
+     ],
+     [
+      0,
+      38
+     ],
+     [
+      2,
+      5
+     ],
+     [
+      3,
+      12
+     ],
+     [
+      3,
+      16
+     ],
+     [
+      3,
+      24
+     ],
+     [
+      3,
+      30
+     ],
+     [
+      4,
+      19
+     ],
+     [
+      4,
+      29
+     ],
+     [
+      4,
+      37
+     ],
+     [
+      4,
+      42
+     ],
+     [
+      5,
+      20
+     ],
+     [
+      5,
+      30
+     ],
+     [
+      5,
+      36
+     ],
+     [
+      6,
+      11
+     ],
+     [
+      6,
+      22
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      7
+     ],
+     [
+      0,
+      12
+     ],
+     [
+      0,
+      18
+     ],
+     [
+      0,
+      22
+     ],
+     [
+      0,
+      34
+     ],
+     [
+      0,
+      40
+     ],
+     [
+      2,
+      7
+     ],
+     [
+      3,
+      13
+     ],
+     [
+      3,
+      18
+     ],
+     [
+      3,
+      26
+     ],
+     [
+      3,
+      32
+     ],
+     [
+      4,
+      22
+     ],
+     [
+      4,
+      34
+     ],
+     [
+      4,
+      39
+     ],
+     [
+      4,
+      44
+     ],
+     [
+      5,
+      24
+     ],
+     [
+      5,
+      33
+     ],
+     [
+      5,
+      38
+     ],
+     [
+      6,
+      14
+     ],
+     [
+      6,
+      29
+     ]
+    ],
+    "names": [
+     "std",
+     "fs",
+     "File",
+     "io",
+     "BufReader",
+     "Read",
+     "main",
+     "Ok",
+     "file",
+     "File",
+     "open",
+     "reader",
+     "BufReader",
+     "new",
+     "file",
+     "mod_info",
+     "String",
+     "new",
+     "reader",
+     "read_to_string"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "diagnostics",
+  "path": "src/main.rs",
+  "line": -1,
+  "character": -1,
+  "extra": "route:push"
+ },
+ "ops": [],
+ "case": {
+  "path": "src/main.rs",
+  "sub": "a",
+  "want_pull": false
+ },
+ "shape": "diagnostics:missing:E0107",
+ "signature": "rust-analyzer|r3_routes|diagnostics:missing:E0107",
+ "expected": [
+  [
+   6,
+   29,
+   6,
+   31,
+   1,
+   "E0107",
+   "rust-analyzer",
+   "expected 1 argument, found 0"
+  ]
+ ],
+ "actual": [],
+ "reproduced": "3/3",
+ "note": "pull vs push; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 46s",
+ "violation": {
+  "oracle": "r3_routes",
+  "server": "rust-analyzer-2026-04-20",
+  "project": "rust-analyzer-18572",
+  "key": {
+   "method": "diagnostics",
+   "path": "src/main.rs",
+   "line": -1,
+   "character": -1,
+   "extra": "route:push"
+  },
+  "expected": [
+   [
+    6,
+    29,
+    6,
+    31,
+    1,
+    "E0107",
+    "rust-analyzer",
+    "expected 1 argument, found 0"
+   ]
+  ],
+  "actual": [],
+  "ops": [],
+  "detail": "{\"case\": {\"path\": \"src/main.rs\", \"sub\": \"a\", \"want_pull\": false}, \"note\": \"pull vs push; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 46s\", \"shape\": \"diagnostics:missing:E0107\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "rust-analyzer|r3_routes|diagnostics:missing:E0107",
+  "run_id": "1e074e71146a"
+ },
+ "replay_logs": [
+  "logs/rust-analyzer-2026-04-20-1e074e71146a-r3-replay-baseline-20260924-175237-21fbf6.jsonl.gz",
+  "logs/rust-analyzer-2026-04-20-1e074e71146a-r3-replay-control-20260924-175243-affb14.jsonl.gz",
+  "logs/rust-analyzer-2026-04-20-1e074e71146a-r3-replay-route-20260924-175248-568b81.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

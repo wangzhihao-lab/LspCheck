@@ -1,0 +1,44 @@
+{
+ "vid": "2e5b5cb87f65-v00",
+ "ops_before": 0,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 0,
+ "cache_hits": 0,
+ "reduce_seconds": 0.0,
+ "budget_exhausted": false,
+ "probe_log": [],
+ "logs": [
+  "ts6-6.0.3-tr1fb668-r3-replay-baseline-20260925-185159-b5bced.jsonl.gz",
+  "ts6-6.0.3-tr1fb668-r3-replay-control-20260925-185228-c1d0e0.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [
+   [
+    "node_modules/electron/electron.d.ts",
+    14683,
+    4,
+    14683,
+    9
+   ]
+  ],
+  "actual": [
+   [
+    "node_modules/electron/electron.d.ts",
+    5713,
+    4,
+    5713,
+    9
+   ],
+   [
+    "node_modules/electron/electron.d.ts",
+    14683,
+    4,
+    14683,
+    9
+   ]
+  ]
+ },
+ "ops_after": 0,
+ "total_seconds": 233.9
+}

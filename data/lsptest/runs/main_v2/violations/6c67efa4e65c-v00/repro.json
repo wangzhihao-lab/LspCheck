@@ -1,0 +1,443 @@
+{
+ "format": 1,
+ "campaign": "main_v2",
+ "vid": "6c67efa4e65c-v00",
+ "run_id": "6c67efa4e65c",
+ "oracle": "r3_routes",
+ "server": {
+  "kind": "rust-analyzer",
+  "version": "2026-09-21"
+ },
+ "project": {
+  "name": "h4ckf0r0day/obscura@0e17221dbb55",
+  "source": "corpus",
+  "ref": "temp/corpus/h4ckf0r0day__obscura@0e17221dbb55",
+  "commit": "0e17221dbb557dad6a4ba88c358d9d6da978ccfe",
+  "language": "rust"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "crates/obscura-cdp/tests/treewalker_document_order.rs",
+    "positions": [
+     [
+      7,
+      12
+     ],
+     [
+      10,
+      34
+     ],
+     [
+      10,
+      42
+     ],
+     [
+      11,
+      17
+     ],
+     [
+      16,
+      14
+     ],
+     [
+      26,
+      14
+     ],
+     [
+      33,
+      15
+     ],
+     [
+      62,
+      15
+     ],
+     [
+      78,
+      34
+     ],
+     [
+      101,
+      14
+     ],
+     [
+      124,
+      57
+     ],
+     [
+      150,
+      43
+     ]
+    ],
+    "ends": [
+     [
+      7,
+      16
+     ],
+     [
+      10,
+      38
+     ],
+     [
+      10,
+      45
+     ],
+     [
+      11,
+      19
+     ],
+     [
+      16,
+      16
+     ],
+     [
+      26,
+      16
+     ],
+     [
+      33,
+      18
+     ],
+     [
+      62,
+      20
+     ],
+     [
+      78,
+      37
+     ],
+     [
+      101,
+      16
+     ],
+     [
+      124,
+      60
+     ],
+     [
+      150,
+      46
+     ]
+    ],
+    "names": [
+     "listener",
+     "listener",
+     "accept",
+     "buf",
+     "body",
+     "str",
+     "method",
+     "session_id",
+     "setup",
+     "ctx",
+     "as_str",
+     "as_f64"
+    ]
+   },
+   {
+    "path": "crates/obscura-cli/tests/screenshot_after_eval.rs",
+    "positions": [
+     [
+      39,
+      11
+     ],
+     [
+      39,
+      19
+     ],
+     [
+      64,
+      31
+     ],
+     [
+      80,
+      9
+     ],
+     [
+      108,
+      48
+     ],
+     [
+      117,
+      31
+     ],
+     [
+      122,
+      42
+     ],
+     [
+      129,
+      13
+     ],
+     [
+      129,
+      25
+     ],
+     [
+      160,
+      30
+     ],
+     [
+      184,
+      25
+     ],
+     [
+      220,
+      11
+     ]
+    ],
+    "ends": [
+     [
+      39,
+      15
+     ],
+     [
+      39,
+      22
+     ],
+     [
+      64,
+      33
+     ],
+     [
+      80,
+      11
+     ],
+     [
+      108,
+      51
+     ],
+     [
+      117,
+      34
+     ],
+     [
+      122,
+      45
+     ],
+     [
+      129,
+      18
+     ],
+     [
+      129,
+      30
+     ],
+     [
+      160,
+      33
+     ],
+     [
+      184,
+      30
+     ],
+     [
+      220,
+      14
+     ]
+    ],
+    "names": [
+     "command",
+     "output",
+     "read",
+     "url",
+     "stderr",
+     "expect",
+     "expect",
+     "screenshot",
+     "directory",
+     "Value",
+     "directory",
+     "report"
+    ]
+   },
+   {
+    "path": "crates/obscura-cli/tests/text_whitespace.rs",
+    "positions": [
+     [
+      0,
+      21
+     ],
+     [
+      2,
+      13
+     ],
+     [
+      10,
+      28
+     ],
+     [
+      11,
+      20
+     ],
+     [
+      11,
+      31
+     ],
+     [
+      14,
+      19
+     ],
+     [
+      22,
+      7
+     ],
+     [
+      25,
+      36
+     ],
+     [
+      25,
+      43
+     ],
+     [
+      27,
+      8
+     ],
+     [
+      28,
+      29
+     ],
+     [
+      30,
+      15
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      25
+     ],
+     [
+      2,
+      21
+     ],
+     [
+      10,
+      54
+     ],
+     [
+      11,
+      24
+     ],
+     [
+      11,
+      33
+     ],
+     [
+      14,
+      27
+     ],
+     [
+      22,
+      10
+     ],
+     [
+      25,
+      39
+     ],
+     [
+      25,
+      46
+     ],
+     [
+      27,
+      13
+     ],
+     [
+      28,
+      32
+     ],
+     [
+      30,
+      17
+     ]
+    ],
+    "names": [
+     "Command",
+     "INLINE_TEXT_URL",
+     "dump_text_preserves_whitespace_between_inline_spans",
+     "Command",
+     "env",
+     "INLINE_TEXT_URL",
+     "assert",
+     "output",
+     "stderr",
+     "assert_eq",
+     "output",
+     "trim"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "diagnostics",
+  "path": "crates/obscura-cli/tests/screenshot_after_eval.rs",
+  "line": -1,
+  "character": -1,
+  "extra": "route:push"
+ },
+ "ops": [],
+ "case": {
+  "path": "crates/obscura-cli/tests/screenshot_after_eval.rs",
+  "sub": "a",
+  "want_pull": false
+ },
+ "shape": "diagnostics:missing:inactive_code",
+ "signature": "rust-analyzer|r3_routes|diagnostics:missing:inactive_code",
+ "expected": [
+  [
+   0,
+   0,
+   254,
+   0,
+   4,
+   "inactive_code",
+   "rust-analyzer",
+   "code is inactive due to #[cfg] directives: feature = \"render\" is disabled"
+  ]
+ ],
+ "actual": [],
+ "reproduced": "2/3",
+ "note": "pull vs push; flake 2/3 [r1:SCr r2:SCR r3:SCR] in 527s",
+ "violation": {
+  "oracle": "r3_routes",
+  "server": "rust-analyzer-2026-09-21",
+  "project": "h4ckf0r0day/obscura@0e17221dbb55",
+  "key": {
+   "method": "diagnostics",
+   "path": "crates/obscura-cli/tests/screenshot_after_eval.rs",
+   "line": -1,
+   "character": -1,
+   "extra": "route:push"
+  },
+  "expected": [
+   [
+    0,
+    0,
+    254,
+    0,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives: feature = \"render\" is disabled"
+   ]
+  ],
+  "actual": [],
+  "ops": [],
+  "detail": "{\"case\": {\"path\": \"crates/obscura-cli/tests/screenshot_after_eval.rs\", \"sub\": \"a\", \"want_pull\": false}, \"note\": \"pull vs push; flake 2/3 [r1:SCr r2:SCR r3:SCR] in 527s\", \"shape\": \"diagnostics:missing:inactive_code\"}",
+  "reproduced": "2/3",
+  "reduced_ops": [],
+  "signature": "rust-analyzer|r3_routes|diagnostics:missing:inactive_code",
+  "run_id": "6c67efa4e65c"
+ },
+ "replay_logs": [],
+ "project_files": {},
+ "incomplete": false
+}

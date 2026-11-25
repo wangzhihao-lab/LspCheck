@@ -1,0 +1,3 @@
+2026-09-23 16:51:34,286 INFO campaign_run run 90522a539865: r0_crash on gopls v0.23.0, gin-gonic/gin@3b08cd7235bd seed 1 settled, targets ['binding/json.go', 'binding/toml_test.go', 'mode_test.go']
+2026-09-23 16:51:44,295 INFO campaign_run run 90522a539865: 0 candidate(s) in 10s; confirming
+2026-09-23 16:51:44,296 INFO campaign_run run 90522a539865 finished: ok, 0 confirmed of 0 candidate(s), 10s

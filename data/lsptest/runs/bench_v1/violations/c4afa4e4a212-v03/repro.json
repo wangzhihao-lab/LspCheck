@@ -1,0 +1,349 @@
+{
+ "format": 1,
+ "campaign": "bench_v1",
+ "vid": "c4afa4e4a212-v03",
+ "run_id": "c4afa4e4a212",
+ "oracle": "r1_history",
+ "server": {
+  "kind": "rust-analyzer",
+  "version": "2025-12-15"
+ },
+ "project": {
+  "name": "rust-analyzer-21173",
+  "source": "dir",
+  "ref": "data/lsp_bench/cases/rust-analyzer-21173/project",
+  "commit": "",
+  "language": "rust"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 240.0,
+  "request_timeout_s": 60.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "src/lib.rs",
+    "positions": [
+     [
+      0,
+      11
+     ],
+     [
+      1,
+      11
+     ],
+     [
+      3,
+      7
+     ],
+     [
+      3,
+      19
+     ],
+     [
+      3,
+      32
+     ],
+     [
+      6,
+      17
+     ],
+     [
+      6,
+      30
+     ],
+     [
+      6,
+      35
+     ],
+     [
+      8,
+      11
+     ],
+     [
+      8,
+      16
+     ],
+     [
+      8,
+      22
+     ],
+     [
+      8,
+      35
+     ],
+     [
+      9,
+      11
+     ],
+     [
+      9,
+      20
+     ],
+     [
+      11,
+      7
+     ],
+     [
+      11,
+      16
+     ],
+     [
+      11,
+      27
+     ],
+     [
+      12,
+      8
+     ],
+     [
+      17,
+      14
+     ],
+     [
+      18,
+      4
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      12
+     ],
+     [
+      1,
+      14
+     ],
+     [
+      3,
+      8
+     ],
+     [
+      3,
+      22
+     ],
+     [
+      3,
+      35
+     ],
+     [
+      6,
+      23
+     ],
+     [
+      6,
+      31
+     ],
+     [
+      6,
+      38
+     ],
+     [
+      8,
+      12
+     ],
+     [
+      8,
+      19
+     ],
+     [
+      8,
+      23
+     ],
+     [
+      8,
+      41
+     ],
+     [
+      9,
+      14
+     ],
+     [
+      9,
+      24
+     ],
+     [
+      11,
+      8
+     ],
+     [
+      11,
+      17
+     ],
+     [
+      11,
+      30
+     ],
+     [
+      12,
+      9
+     ],
+     [
+      17,
+      18
+     ],
+     [
+      18,
+      5
+     ]
+    ],
+    "names": [
+     "Tr",
+     "Assoc",
+     "f",
+     "handle",
+     "Assoc",
+     "ConstGeneric",
+     "N",
+     "usize",
+     "N",
+     "usize",
+     "Tr",
+     "ConstGeneric",
+     "Assoc",
+     "AssocTy",
+     "f",
+     "a",
+     "Assoc",
+     "a",
+     "AssocTy",
+     "x"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "codeAction",
+  "path": "src/lib.rs",
+  "line": 17,
+  "character": 14,
+  "extra": "pos"
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "src/lib.rs"
+  },
+  {
+   "kind": "fs_rename",
+   "path": "src/lib.rs",
+   "new_path": "src/lib_rt.rs"
+  },
+  {
+   "kind": "fs_rename",
+   "path": "src/lib_rt.rs",
+   "new_path": "src/lib.rs"
+  }
+ ],
+ "case": {
+  "chain_step": 1,
+  "families": [
+   "H5"
+  ],
+  "family": "H5",
+  "history_index": 0,
+  "history_seed": 1001,
+  "mode": "chain",
+  "note": "rename src/lib.rs -> src/lib_rt.rs -> back",
+  "seed": 1,
+  "timing": "settled"
+ },
+ "shape": "codeAction:missing",
+ "signature": "rust-analyzer|r1_history|codeAction:missing",
+ "expected": [
+  [
+   "Convert to tuple struct",
+   "refactor.rewrite"
+  ],
+  [
+   "Generate `new`",
+   ""
+  ],
+  [
+   "Generate impl for `AssocTy`",
+   ""
+  ],
+  [
+   "Generate trait impl for `AssocTy`",
+   ""
+  ]
+ ],
+ "actual": [
+  [
+   "Generate impl for `AssocTy`",
+   ""
+  ],
+  [
+   "Generate trait impl for `AssocTy`",
+   ""
+  ]
+ ],
+ "reproduced": "1/3",
+ "note": "H5: rename src/lib.rs -> src/lib_rt.rs -> back; flake 1/3 [r1:SCr r2:SCR r3:SCr] in 151s",
+ "violation": {
+  "oracle": "r1_history",
+  "server": "rust-analyzer-2025-12-15",
+  "project": "rust-analyzer-21173",
+  "key": {
+   "method": "codeAction",
+   "path": "src/lib.rs",
+   "line": 17,
+   "character": 14,
+   "extra": "pos"
+  },
+  "expected": [
+   [
+    "Convert to tuple struct",
+    "refactor.rewrite"
+   ],
+   [
+    "Generate `new`",
+    ""
+   ],
+   [
+    "Generate impl for `AssocTy`",
+    ""
+   ],
+   [
+    "Generate trait impl for `AssocTy`",
+    ""
+   ]
+  ],
+  "actual": [
+   [
+    "Generate impl for `AssocTy`",
+    ""
+   ],
+   [
+    "Generate trait impl for `AssocTy`",
+    ""
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "src/lib.rs"
+   },
+   {
+    "kind": "fs_rename",
+    "path": "src/lib.rs",
+    "new_path": "src/lib_rt.rs"
+   },
+   {
+    "kind": "fs_rename",
+    "path": "src/lib_rt.rs",
+    "new_path": "src/lib.rs"
+   }
+  ],
+  "detail": "{\"case\": {\"chain_step\": 1, \"families\": [\"H5\"], \"family\": \"H5\", \"history_index\": 0, \"history_seed\": 1001, \"mode\": \"chain\", \"note\": \"rename src/lib.rs -> src/lib_rt.rs -> back\", \"seed\": 1, \"timing\": \"settled\"}, \"note\": \"H5: rename src/lib.rs -> src/lib_rt.rs -> back; flake 1/3 [r1:SCr r2:SCR r3:SCr] in 151s\", \"shape\": \"codeAction:missing\"}",
+  "reproduced": "1/3",
+  "reduced_ops": [],
+  "signature": "rust-analyzer|r1_history|codeAction:missing",
+  "run_id": "c4afa4e4a212"
+ },
+ "replay_logs": [],
+ "project_files": {},
+ "incomplete": false
+}

@@ -1,0 +1,92 @@
+{
+ "queries": [
+  "order in:title repo:microsoft/pyright is:issue",
+  "hover wrong repo:microsoft/pyright is:issue",
+  "hover order repo:microsoft/pyright is:issue",
+  "hover stale repo:microsoft/pyright is:issue"
+ ],
+ "matches": [
+  {
+   "repo": "microsoft/pyright",
+   "number": 11581,
+   "title": "Helping hand from order of messages: causes and consequences",
+   "url": "https://github.com/microsoft/pyright/issues/11581",
+   "state": "open",
+   "created": "2026-08-02",
+   "comments": 0,
+   "query": "order in:title repo:microsoft/pyright is:issue"
+  },
+  {
+   "repo": "microsoft/pyright",
+   "number": 11644,
+   "title": "Order-dependent overload resolution failure due to memorised Protocol conformance check on generic class",
+   "url": "https://github.com/microsoft/pyright/issues/11644",
+   "state": "open",
+   "created": "2026-08-15",
+   "comments": 4,
+   "query": "order in:title repo:microsoft/pyright is:issue"
+  },
+  {
+   "repo": "microsoft/pyright",
+   "number": 11549,
+   "title": "Order of additional overloads matters in subclass where it shouldnt [reportIncompatibleMethodOverride]",
+   "url": "https://github.com/microsoft/pyright/issues/11549",
+   "state": "open",
+   "created": "2026-07-17",
+   "comments": 0,
+   "query": "order in:title repo:microsoft/pyright is:issue"
+  },
+  {
+   "repo": "microsoft/pyright",
+   "number": 11303,
+   "title": "Type inference fails for application of higher-order generic function",
+   "url": "https://github.com/microsoft/pyright/issues/11303",
+   "state": "open",
+   "created": "2026-03-02",
+   "comments": 0,
+   "query": "order in:title repo:microsoft/pyright is:issue"
+  },
+  {
+   "repo": "microsoft/pyright",
+   "number": 10607,
+   "title": "Order dependent inference results with some protocols against numpy",
+   "url": "https://github.com/microsoft/pyright/issues/10607",
+   "state": "open",
+   "created": "2025-06-14",
+   "comments": 0,
+   "query": "order in:title repo:microsoft/pyright is:issue"
+  },
+  {
+   "repo": "microsoft/pyright",
+   "number": 11317,
+   "title": "LSP: Slow semantic completion for built in types",
+   "url": "https://github.com/microsoft/pyright/issues/11317",
+   "state": "closed",
+   "created": "2026-03-06",
+   "comments": 2,
+   "query": "hover wrong repo:microsoft/pyright is:issue"
+  },
+  {
+   "repo": "microsoft/pyright",
+   "number": 10534,
+   "title": "How do I wrap functions in a class with a __call__ method while preserving both types and docstrings?",
+   "url": "https://github.com/microsoft/pyright/issues/10534",
+   "state": "closed",
+   "created": "2025-06-03",
+   "comments": 3,
+   "query": "hover wrong repo:microsoft/pyright is:issue"
+  },
+  {
+   "repo": "microsoft/pyright",
+   "number": 1118,
+   "title": "reportUnusedVariable ignore pattern",
+   "url": "https://github.com/microsoft/pyright/issues/1118",
+   "state": "closed",
+   "created": "2020-10-23",
+   "comments": 116,
+   "query": "hover wrong repo:microsoft/pyright is:issue"
+  }
+ ],
+ "notes": [],
+ "authenticated": true
+}

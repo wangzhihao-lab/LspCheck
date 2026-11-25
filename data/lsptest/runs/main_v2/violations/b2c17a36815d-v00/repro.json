@@ -1,0 +1,539 @@
+{
+ "format": 1,
+ "campaign": "main_v2",
+ "vid": "b2c17a36815d-v00",
+ "run_id": "b2c17a36815d",
+ "oracle": "r1_history",
+ "server": {
+  "kind": "gopls",
+  "version": "v0.23.0"
+ },
+ "project": {
+  "name": "zeromicro/go-zero@5b1b5bdc3adc",
+  "source": "corpus",
+  "ref": "temp/corpus/zeromicro__go-zero@5b1b5bdc3adc",
+  "commit": "5b1b5bdc3adcc189b3bd8b77f2cc8a363ec3374c",
+  "language": "go"
+ },
+ "context": {
+  "seed": 3,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "core/proc/env.go",
+    "positions": [
+     [
+      14,
+      6
+     ],
+     [
+      23,
+      8
+     ],
+     [
+      23,
+      13
+     ],
+     [
+      24,
+      11
+     ],
+     [
+      25,
+      8
+     ],
+     [
+      26,
+      4
+     ],
+     [
+      32,
+      8
+     ],
+     [
+      32,
+      14
+     ],
+     [
+      32,
+      27
+     ],
+     [
+      34,
+      9
+     ],
+     [
+      35,
+      14
+     ],
+     [
+      38,
+      1
+     ]
+    ],
+    "ends": [
+     [
+      14,
+      8
+     ],
+     [
+      23,
+      9
+     ],
+     [
+      23,
+      16
+     ],
+     [
+      24,
+      13
+     ],
+     [
+      25,
+      10
+     ],
+     [
+      26,
+      8
+     ],
+     [
+      32,
+      11
+     ],
+     [
+      32,
+      16
+     ],
+     [
+      32,
+      29
+     ],
+     [
+      34,
+      11
+     ],
+     [
+      35,
+      17
+     ],
+     [
+      38,
+      2
+     ]
+    ],
+    "names": [
+     "Env",
+     "os",
+     "Getenv",
+     "Lock",
+     "name",
+     "envLock",
+     "EnvInt",
+     "name",
+     "int",
+     "val",
+     "false",
+     "n"
+    ]
+   },
+   {
+    "path": "core/stores/sqlx/mysql.go",
+    "positions": [
+     [
+      16,
+      50
+     ],
+     [
+      19,
+      12
+     ],
+     [
+      19,
+      22
+     ],
+     [
+      19,
+      27
+     ],
+     [
+      20,
+      5
+     ],
+     [
+      24,
+      14
+     ],
+     [
+      24,
+      23
+     ],
+     [
+      25,
+      2
+     ],
+     [
+      25,
+      10
+     ],
+     [
+      27,
+      11
+     ],
+     [
+      30,
+      10
+     ],
+     [
+      38,
+      14
+     ]
+    ],
+    "ends": [
+     [
+      16,
+      52
+     ],
+     [
+      19,
+      20
+     ],
+     [
+      19,
+      24
+     ],
+     [
+      19,
+      30
+     ],
+     [
+      20,
+      7
+     ],
+     [
+      24,
+      17
+     ],
+     [
+      24,
+      28
+     ],
+     [
+      25,
+      3
+     ],
+     [
+      25,
+      13
+     ],
+     [
+      27,
+      14
+     ],
+     [
+      30,
+      13
+     ],
+     [
+      38,
+      24
+     ]
+    ],
+    "names": [
+     "opts",
+     "mysqlAcceptable",
+     "err",
+     "error",
+     "err",
+     "mysql",
+     "MySQLError",
+     "ok",
+     "errors",
+     "false",
+     "myerr",
+     "withMysqlAcceptable"
+    ]
+   },
+   {
+    "path": "zrpc/resolver/internal/resolver_test.go",
+    "positions": [
+     [
+      10,
+      12
+     ],
+     [
+      10,
+      21
+     ],
+     [
+      10,
+      32
+     ],
+     [
+      14,
+      6
+     ],
+     [
+      14,
+      13
+     ],
+     [
+      21,
+      18
+     ],
+     [
+      30,
+      6
+     ],
+     [
+      30,
+      43
+     ],
+     [
+      33,
+      6
+     ],
+     [
+      36,
+      17
+     ],
+     [
+      36,
+      35
+     ],
+     [
+      39,
+      36
+     ]
+    ],
+    "ends": [
+     [
+      10,
+      20
+     ],
+     [
+      10,
+      22
+     ],
+     [
+      10,
+      33
+     ],
+     [
+      14,
+      7
+     ],
+     [
+      14,
+      19
+     ],
+     [
+      21,
+      21
+     ],
+     [
+      30,
+      7
+     ],
+     [
+      30,
+      46
+     ],
+     [
+      33,
+      7
+     ],
+     [
+      36,
+      25
+     ],
+     [
+      36,
+      43
+     ],
+     [
+      39,
+      45
+     ]
+    ],
+    "names": [
+     "TestNopResolver",
+     "t",
+     "T",
+     "r",
+     "nopResolver",
+     "State",
+     "m",
+     "error",
+     "m",
+     "mockedClientConn",
+     "NewServiceConfig",
+     "ParseServiceConfig"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "completion",
+  "path": "core/proc/env.go",
+  "line": 23,
+  "character": 9,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "core/proc/env.go"
+  },
+  {
+   "kind": "open",
+   "path": "core/stores/sqlx/mysql.go"
+  },
+  {
+   "kind": "open",
+   "path": "zrpc/resolver/internal/resolver_test.go"
+  },
+  {
+   "kind": "open",
+   "path": "tools/goctl/rpc/parser/import.go"
+  },
+  {
+   "kind": "change",
+   "path": "tools/goctl/rpc/parser/import.go",
+   "start": [
+    59,
+    16
+   ],
+   "end": [
+    59,
+    19
+   ],
+   "text": "nil_x"
+  },
+  {
+   "kind": "change",
+   "path": "tools/goctl/rpc/parser/import.go",
+   "start": [
+    59,
+    16
+   ],
+   "end": [
+    59,
+    21
+   ],
+   "text": "nil"
+  },
+  {
+   "kind": "close",
+   "path": "tools/goctl/rpc/parser/import.go"
+  }
+ ],
+ "case": {
+  "chain_step": 0,
+  "families": [],
+  "family": "H6",
+  "history_index": 1,
+  "history_seed": 3002,
+  "mode": "fresh",
+  "note": "dep-editor round trip on tools/goctl/rpc/parser/import.go: replace 'nil' by 'nil_x' on line 59",
+  "seed": 3,
+  "timing": "settled"
+ },
+ "shape": "completion:missing",
+ "signature": "gopls|r1_history|completion:missing",
+ "expected": [
+  "os",
+  "os.Expand",
+  "os.ExpandEnv",
+  "os.Getenv",
+  "stopOnSignal"
+ ],
+ "actual": [
+  "os",
+  "stopOnSignal"
+ ],
+ "reproduced": "0/3",
+ "note": "H6: dep-editor round trip on tools/goctl/rpc/parser/import.go: replace 'nil' by 'nil_x' on line 59; flake 0/3 [r1:SCr r2:Scr r3:Scr] in 130s",
+ "violation": {
+  "oracle": "r1_history",
+  "server": "gopls-v0.23.0",
+  "project": "zeromicro/go-zero@5b1b5bdc3adc",
+  "key": {
+   "method": "completion",
+   "path": "core/proc/env.go",
+   "line": 23,
+   "character": 9,
+   "extra": ""
+  },
+  "expected": [
+   "os",
+   "os.Expand",
+   "os.ExpandEnv",
+   "os.Getenv",
+   "stopOnSignal"
+  ],
+  "actual": [
+   "os",
+   "stopOnSignal"
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "core/proc/env.go"
+   },
+   {
+    "kind": "open",
+    "path": "core/stores/sqlx/mysql.go"
+   },
+   {
+    "kind": "open",
+    "path": "zrpc/resolver/internal/resolver_test.go"
+   },
+   {
+    "kind": "open",
+    "path": "tools/goctl/rpc/parser/import.go"
+   },
+   {
+    "kind": "change",
+    "path": "tools/goctl/rpc/parser/import.go",
+    "start": [
+     59,
+     16
+    ],
+    "end": [
+     59,
+     19
+    ],
+    "text": "nil_x"
+   },
+   {
+    "kind": "change",
+    "path": "tools/goctl/rpc/parser/import.go",
+    "start": [
+     59,
+     16
+    ],
+    "end": [
+     59,
+     21
+    ],
+    "text": "nil"
+   },
+   {
+    "kind": "close",
+    "path": "tools/goctl/rpc/parser/import.go"
+   }
+  ],
+  "detail": "{\"case\": {\"chain_step\": 0, \"families\": [], \"family\": \"H6\", \"history_index\": 1, \"history_seed\": 3002, \"mode\": \"fresh\", \"note\": \"dep-editor round trip on tools/goctl/rpc/parser/import.go: replace 'nil' by 'nil_x' on line 59\", \"seed\": 3, \"timing\": \"settled\"}, \"note\": \"H6: dep-editor round trip on tools/goctl/rpc/parser/import.go: replace 'nil' by 'nil_x' on line 59; flake 0/3 [r1:SCr r2:Scr r3:Scr] in 130s\", \"shape\": \"completion:missing\"}",
+  "reproduced": "0/3",
+  "reduced_ops": [],
+  "signature": "gopls|r1_history|completion:missing",
+  "run_id": "b2c17a36815d"
+ },
+ "replay_logs": [],
+ "project_files": {},
+ "incomplete": false
+}

@@ -1,0 +1,3 @@
+2026-09-24 13:20:21,518 INFO campaign_run run 4c4feb70175c: r1_history on rust-analyzer 2026-09-21, rtk-ai/rtk@b748a5f75563 seed 3 settled, targets ['src/cmds/rust/runner.rs', 'src/cmds/system/ctest_cmd.rs', 'src/hooks/mod.rs']
+2026-09-24 13:27:52,717 INFO campaign_run run 4c4feb70175c: 0 candidate(s) in 451s; confirming
+2026-09-24 13:27:52,717 INFO campaign_run run 4c4feb70175c finished: ok, 0 confirmed of 0 candidate(s), 451s

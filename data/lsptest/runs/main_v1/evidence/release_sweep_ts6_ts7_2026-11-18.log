@@ -1,0 +1,34 @@
+2026-11-17 21:40:12,737 INFO release_sweep 16 job(s) for ts6,ts7
+2026-11-17 21:40:12,737 INFO release_sweep newest-2026-11-18: ts6-r1-codeaction-key-lost-h5-4f92e2 on tsserver 6.0.3+tsls6.1.0
+2026-11-17 21:41:43,419 INFO release_sweep   -> reproduced (3/3, 91s) 
+2026-11-17 21:41:43,419 INFO release_sweep newest-2026-11-18: ts6-r1-completion-lost-h5-fa501c on tsserver 6.0.3+tsls6.1.0
+2026-11-17 21:43:48,706 INFO release_sweep   -> reproduced (3/3, 125s) 
+2026-11-17 21:43:48,706 INFO release_sweep newest-2026-11-18: ts6-r1-definition-lost-h5-61a0fd on tsserver 6.0.3+tsls6.1.0
+2026-11-17 21:45:25,017 INFO release_sweep   -> flaky (1/3, 96s) 
+2026-11-17 21:45:25,017 INFO release_sweep newest-2026-11-18: ts6-r1-definition-lost-h9-898f29 on tsserver 6.0.3+tsls6.1.0
+2026-11-17 21:52:58,766 INFO release_sweep   -> reproduced (3/3, 454s) 
+2026-11-17 21:52:58,766 INFO release_sweep newest-2026-11-18: ts6-r1-diagnostics-extra-2305-2339-7006-h5-d5a250 on tsserver 6.0.3+tsls6.1.0
+2026-11-17 21:54:14,349 INFO release_sweep   -> flaky (2/3, 76s) 
+2026-11-17 21:54:14,350 INFO release_sweep newest-2026-11-18: ts6-r1-documenthighlight-lost-h5-9b4675 on tsserver 6.0.3+tsls6.1.0
+2026-11-17 21:55:21,832 INFO release_sweep   -> flaky (1/3, 68s) 
+2026-11-17 21:55:21,832 INFO release_sweep newest-2026-11-18: ts6-r1-references-lost-h5-d24ca6 on tsserver 6.0.3+tsls6.1.0
+2026-11-17 21:56:58,137 INFO release_sweep   -> flaky (2/3, 96s) 
+2026-11-17 21:56:58,137 INFO release_sweep newest-2026-11-18: ts6-r1-references-missing-h5-cc8950 on tsserver 6.0.3+tsls6.1.0
+2026-11-17 21:58:04,349 INFO release_sweep   -> flaky (2/3, 66s) 
+2026-11-17 21:58:04,349 INFO release_sweep newest-2026-11-18: ts6-r1-semantictokens-changed-h5-591c42 on tsserver 6.0.3+tsls6.1.0
+2026-11-17 21:59:36,532 INFO release_sweep   -> reproduced (3/3, 92s) 
+2026-11-17 21:59:36,532 INFO release_sweep newest-2026-11-18: ts6-r1-semantictokens-missing-h9-d686b3 on tsserver 6.0.3+tsls6.1.0
+2026-11-17 22:00:52,485 INFO release_sweep   -> reproduced (3/3, 76s) 
+2026-11-17 22:00:52,486 INFO release_sweep newest-2026-11-18: ts6-r1-signaturehelp-changed-h5-db5a5e on tsserver 6.0.3+tsls6.1.0
+2026-11-17 22:01:55,348 INFO release_sweep   -> flaky (2/3, 63s) 
+2026-11-17 22:01:55,348 INFO release_sweep newest-2026-11-18: ts6-r1-signaturehelp-lost-h9-7bd793 on tsserver 6.0.3+tsls6.1.0
+2026-11-17 22:05:56,432 INFO release_sweep   -> reproduced (3/3, 241s) 
+2026-11-17 22:05:56,433 INFO release_sweep newest-2026-11-18: ts6-r1-typedefinition-lost-h5-712a35 on tsserver 6.0.3+tsls6.1.0
+2026-11-17 22:07:08,606 INFO release_sweep   -> reproduced (3/3, 72s) 
+2026-11-17 22:07:08,606 INFO release_sweep newest-2026-11-18: ts6-r4-diagnostics-extra-2322-mutation-m3-1879f3 on tsserver 6.0.3+tsls6.1.0
+2026-11-17 22:08:50,493 INFO release_sweep   -> reproduced (3/3, 102s) 
+2026-11-17 22:08:50,493 INFO release_sweep newest-2026-11-18: ts7-r1-references-missing-h9-2dd24a on ts7 7.0.2
+2026-11-17 22:11:00,632 INFO release_sweep   -> reproduced (3/3, 130s) 
+2026-11-17 22:11:00,632 INFO release_sweep newest-2026-11-18: ts6-r1-diagnostics-extra-2304-h7-8ca52f on tsserver 6.0.3+tsls6.1.0
+2026-11-17 22:11:56,090 INFO release_sweep   -> reproduced (3/3, 56s) 
+2026-11-17 22:11:56,090 INFO release_sweep all jobs of ts6,ts7 done

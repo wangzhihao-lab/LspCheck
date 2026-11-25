@@ -1,0 +1,4401 @@
+{
+ "campaign": "main_v1",
+ "groups": [
+  {
+   "gid": "gopls-r1-codeaction-changed-h4-c5344e",
+   "signature": "gopls|r1_history|codeAction:changed",
+   "method": "codeAction",
+   "family": "H4",
+   "members": 2,
+   "summary": {
+    "members": 2,
+    "runs": [
+     "72feff27b572",
+     "89083389db97"
+    ],
+    "projects": [
+     "junegunn/fzf@b1be3a8be1b8",
+     "spf13/cobra@adbc8813901b"
+    ],
+    "servers": [
+     "gopls-v0.23.0"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "2",
+     "3"
+    ],
+    "vids": [
+     "72feff27b572-v01",
+     "89083389db97-v00"
+    ]
+   },
+   "representative": "72feff27b572-v01",
+   "ops_before": 5,
+   "ops_after": 2,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/golang/go/issues/56158",
+   "seconds": {
+    "reduction": 326.8,
+    "issues": 7.5
+   },
+   "report": "data/lsptest/runs/main_v1/triage/gopls-r1-codeaction-changed-h4-c5344e/report.md"
+  },
+  {
+   "gid": "gopls-r1-completion-extra-h5-2dfa5a",
+   "signature": "gopls|r1_history|completion:extra",
+   "method": "completion",
+   "family": "H5",
+   "members": 2,
+   "summary": {
+    "members": 2,
+    "runs": [
+     "dc8ae22ce155",
+     "e5bb95690de6"
+    ],
+    "projects": [
+     "caddyserver/caddy@c18099a0af5e",
+     "charmbracelet/bubbletea@657aaae216e3"
+    ],
+    "servers": [
+     "gopls-v0.23.0"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "dc8ae22ce155-v00",
+     "e5bb95690de6-v00"
+    ]
+   },
+   "representative": "dc8ae22ce155-v00",
+   "ops_before": 5,
+   "ops_after": 5,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/golang/go/issues/51037",
+   "seconds": {
+    "reduction": 469.3,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v1/triage/gopls-r1-completion-extra-h5-2dfa5a/report.md"
+  },
+  {
+   "gid": "gopls-r1-references-extra-h9-0290a7",
+   "signature": "gopls|r1_history|references:extra",
+   "method": "references",
+   "family": "H9",
+   "members": 3,
+   "summary": {
+    "members": 3,
+    "runs": [
+     "12cd746378bc",
+     "e5bb95690de6",
+     "f748dc5eaea6"
+    ],
+    "projects": [
+     "charmbracelet/bubbletea@657aaae216e3"
+    ],
+    "servers": [
+     "gopls-v0.23.0"
+    ],
+    "timings": [
+     "race0",
+     "race200",
+     "settled"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "12cd746378bc-v01",
+     "e5bb95690de6-v02",
+     "f748dc5eaea6-v01"
+    ]
+   },
+   "representative": "12cd746378bc-v01",
+   "ops_before": 18,
+   "ops_after": 7,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/golang/go/issues/81408",
+   "seconds": {
+    "reduction": 186.0,
+    "issues": 4.4
+   },
+   "report": "data/lsptest/runs/main_v1/triage/gopls-r1-references-extra-h9-0290a7/report.md"
+  },
+  {
+   "gid": "gopls-r2-codeactionresolve-changed-codeaction-70b3e9",
+   "signature": "gopls|r2_handles|codeActionResolve:changed",
+   "method": "codeActionResolve",
+   "family": "codeAction",
+   "members": 3,
+   "summary": {
+    "members": 3,
+    "runs": [
+     "8253217867f9",
+     "d0484998509e",
+     "e179b16e89d8"
+    ],
+    "projects": [
+     "caddyserver/caddy@c18099a0af5e",
+     "charmbracelet/bubbletea@657aaae216e3",
+     "nektos/act@4f411281417e"
+    ],
+    "servers": [
+     "gopls-v0.23.0"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "2"
+    ],
+    "vids": [
+     "8253217867f9-v00",
+     "d0484998509e-v00",
+     "e179b16e89d8-v00"
+    ]
+   },
+   "representative": "8253217867f9-v00",
+   "ops_before": 2,
+   "ops_after": 2,
+   "lines": "",
+   "matches": 1,
+   "top_match": "https://github.com/golang/go/issues/71314",
+   "seconds": {
+    "reduction": 48.9,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v1/triage/gopls-r2-codeactionresolve-changed-codeaction-70b3e9/report.md"
+  },
+  {
+   "gid": "gopls-r3-definitionconsistency-changed-d-cf67f4",
+   "signature": "gopls|r3_routes|definitionConsistency:changed",
+   "method": "definitionConsistency",
+   "family": "d",
+   "members": 3,
+   "summary": {
+    "members": 3,
+    "runs": [
+     "5915462982a7",
+     "c55b9dbc5249",
+     "f7419a4c0e89"
+    ],
+    "projects": [
+     "caddyserver/caddy@c18099a0af5e",
+     "gin-gonic/gin@3b08cd7235bd",
+     "jesseduffield/lazydocker@7e7aadc2071d"
+    ],
+    "servers": [
+     "gopls-v0.23.0"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "5915462982a7-v00",
+     "c55b9dbc5249-v01",
+     "f7419a4c0e89-v00"
+    ]
+   },
+   "representative": "5915462982a7-v00",
+   "ops_before": 0,
+   "ops_after": 0,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/golang/go/issues/66827",
+   "seconds": {
+    "reduction": 63.4,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v1/triage/gopls-r3-definitionconsistency-changed-d-cf67f4/report.md"
+  },
+  {
+   "gid": "gopls-r3-highlightvsreferences-extra-c-84be95",
+   "signature": "gopls|r3_routes|highlightVsReferences:extra",
+   "method": "highlightVsReferences",
+   "family": "c",
+   "members": 3,
+   "summary": {
+    "members": 3,
+    "runs": [
+     "5f7120bd44c4",
+     "c55b9dbc5249",
+     "f7419a4c0e89"
+    ],
+    "projects": [
+     "caddyserver/caddy@c18099a0af5e",
+     "fatedier/frp@d20a23299600",
+     "jesseduffield/lazydocker@7e7aadc2071d"
+    ],
+    "servers": [
+     "gopls-v0.23.0"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "5f7120bd44c4-v00",
+     "c55b9dbc5249-v00",
+     "f7419a4c0e89-v01"
+    ]
+   },
+   "representative": "5f7120bd44c4-v00",
+   "ops_before": 0,
+   "ops_after": 0,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/golang/go/issues/81462",
+   "seconds": {
+    "reduction": 39.9,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v1/triage/gopls-r3-highlightvsreferences-extra-c-84be95/report.md"
+  },
+  {
+   "gid": "gopls-r4-diagnostics-extra-invalidifaceassign-mutation-m2-416e90",
+   "signature": "gopls|r4_edits|diagnostics:extra:InvalidIfaceAssign",
+   "method": "diagnostics",
+   "family": "mutation:M2",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "07c55fb203fd"
+    ],
+    "projects": [
+     "XTLS/Xray-core@d562d8947d31"
+    ],
+    "servers": [
+     "gopls-v0.23.0"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "07c55fb203fd-v00"
+    ]
+   },
+   "representative": "07c55fb203fd-v00",
+   "ops_before": 3,
+   "ops_after": 3,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/golang/go/issues/68075",
+   "seconds": {
+    "reduction": 86.1,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v1/triage/gopls-r4-diagnostics-extra-invalidifaceassign-mutation-m2-416e90/report.md"
+  },
+  {
+   "gid": "gopls-r4-diagnostics-extra-mutation-m2-111975",
+   "signature": "gopls|r4_edits|diagnostics:extra:?",
+   "method": "diagnostics",
+   "family": "mutation:M2",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "9bb8ccd49c7b"
+    ],
+    "projects": [
+     "junegunn/fzf@b1be3a8be1b8"
+    ],
+    "servers": [
+     "gopls-v0.23.0"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "9bb8ccd49c7b-v01"
+    ]
+   },
+   "representative": "9bb8ccd49c7b-v01",
+   "ops_before": 3,
+   "ops_after": 3,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/golang/go/issues/68075",
+   "seconds": {
+    "reduction": 68.1,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v1/triage/gopls-r4-diagnostics-extra-mutation-m2-111975/report.md"
+  },
+  {
+   "gid": "gopls-r4-diagnostics-extra-nonindexableoperand-mutation-m2-ba152b",
+   "signature": "gopls|r4_edits|diagnostics:extra:NonIndexableOperand",
+   "method": "diagnostics",
+   "family": "mutation:M2",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "1049da1e7f48"
+    ],
+    "projects": [
+     "caddyserver/caddy@c18099a0af5e"
+    ],
+    "servers": [
+     "gopls-v0.23.0"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "2"
+    ],
+    "vids": [
+     "1049da1e7f48-v00"
+    ]
+   },
+   "representative": "1049da1e7f48-v00",
+   "ops_before": 3,
+   "ops_after": 3,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/golang/go/issues/68075",
+   "seconds": {
+    "reduction": 85.6,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v1/triage/gopls-r4-diagnostics-extra-nonindexableoperand-mutation-m2-ba152b/report.md"
+  },
+  {
+   "gid": "gopls-r4-diagnostics-extra-nonsliceableoperand-mutation-m2-d80a9a",
+   "signature": "gopls|r4_edits|diagnostics:extra:NonSliceableOperand",
+   "method": "diagnostics",
+   "family": "mutation:M2",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "7fd3492bb479"
+    ],
+    "projects": [
+     "nektos/act@4f411281417e"
+    ],
+    "servers": [
+     "gopls-v0.23.0"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "7fd3492bb479-v00"
+    ]
+   },
+   "representative": "7fd3492bb479-v00",
+   "ops_before": 3,
+   "ops_after": 3,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/golang/go/issues/68075",
+   "seconds": {
+    "reduction": 100.9,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v1/triage/gopls-r4-diagnostics-extra-nonsliceableoperand-mutation-m2-d80a9a/report.md"
+  },
+  {
+   "gid": "gopls-r4-diagnostics-extra-notatype-mutation-m2-477181",
+   "signature": "gopls|r4_edits|diagnostics:extra:NotAType",
+   "method": "diagnostics",
+   "family": "mutation:M2",
+   "members": 2,
+   "summary": {
+    "members": 2,
+    "runs": [
+     "73fef80b14e5",
+     "ced4ef795b99"
+    ],
+    "projects": [
+     "charmbracelet/bubbletea@657aaae216e3",
+     "fatedier/frp@d20a23299600"
+    ],
+    "servers": [
+     "gopls-v0.23.0"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1",
+     "2"
+    ],
+    "vids": [
+     "73fef80b14e5-v00",
+     "ced4ef795b99-v00"
+    ]
+   },
+   "representative": "73fef80b14e5-v00",
+   "ops_before": 3,
+   "ops_after": 3,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/golang/go/issues/68075",
+   "seconds": {
+    "reduction": 70.9,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v1/triage/gopls-r4-diagnostics-extra-notatype-mutation-m2-477181/report.md"
+  },
+  {
+   "gid": "gopls-r4-diagnostics-extra-undeclaredname-mutation-m2-12380c",
+   "signature": "gopls|r4_edits|diagnostics:extra:UndeclaredName",
+   "method": "diagnostics",
+   "family": "mutation:M2",
+   "members": 2,
+   "summary": {
+    "members": 2,
+    "runs": [
+     "4e55ff9e6249",
+     "5668b20b0d8b"
+    ],
+    "projects": [
+     "charmbracelet/bubbletea@657aaae216e3",
+     "jesseduffield/lazydocker@7e7aadc2071d"
+    ],
+    "servers": [
+     "gopls-v0.23.0"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "4e55ff9e6249-v00",
+     "5668b20b0d8b-v00"
+    ]
+   },
+   "representative": "4e55ff9e6249-v00",
+   "ops_before": 3,
+   "ops_after": 3,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/golang/go/issues/68075",
+   "seconds": {
+    "reduction": 69.8,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v1/triage/gopls-r4-diagnostics-extra-undeclaredname-mutation-m2-12380c/report.md"
+  },
+  {
+   "gid": "gopls-r4-diagnostics-extra-undeclaredname-wrongar-mutation-m3-946c39",
+   "signature": "gopls|r4_edits|diagnostics:extra:UndeclaredName,WrongArgCount",
+   "method": "diagnostics",
+   "family": "mutation:M3",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "ced4ef795b99"
+    ],
+    "projects": [
+     "fatedier/frp@d20a23299600"
+    ],
+    "servers": [
+     "gopls-v0.23.0"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "ced4ef795b99-v01"
+    ]
+   },
+   "representative": "ced4ef795b99-v01",
+   "ops_before": 3,
+   "ops_after": 3,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/golang/go/issues/68075",
+   "seconds": {
+    "reduction": 87.7,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v1/triage/gopls-r4-diagnostics-extra-undeclaredname-wrongar-mutation-m3-946c39/report.md"
+  },
+  {
+   "gid": "gopls-r4-diagnostics-extra-untypedniluse-mutation-m2-354f70",
+   "signature": "gopls|r4_edits|diagnostics:extra:UntypedNilUse",
+   "method": "diagnostics",
+   "family": "mutation:M2",
+   "members": 2,
+   "summary": {
+    "members": 2,
+    "runs": [
+     "9be4e39bca38",
+     "daae2bd2d94c"
+    ],
+    "projects": [
+     "router-for-me/CLIProxyAPI@673131f57484",
+     "spf13/cobra@adbc8813901b"
+    ],
+    "servers": [
+     "gopls-v0.23.0"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "2"
+    ],
+    "vids": [
+     "9be4e39bca38-v00",
+     "daae2bd2d94c-v00"
+    ]
+   },
+   "representative": "9be4e39bca38-v00",
+   "ops_before": 3,
+   "ops_after": 3,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/golang/go/issues/68075",
+   "seconds": {
+    "reduction": 77.2,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v1/triage/gopls-r4-diagnostics-extra-untypedniluse-mutation-m2-354f70/report.md"
+  },
+  {
+   "gid": "gopls-r4-diagnostics-extra-wrongargcount-mutation-m3-ac10cc",
+   "signature": "gopls|r4_edits|diagnostics:extra:WrongArgCount",
+   "method": "diagnostics",
+   "family": "mutation:M3",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "5668b20b0d8b"
+    ],
+    "projects": [
+     "jesseduffield/lazydocker@7e7aadc2071d"
+    ],
+    "servers": [
+     "gopls-v0.23.0"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "5668b20b0d8b-v01"
+    ]
+   },
+   "representative": "5668b20b0d8b-v01",
+   "ops_before": 3,
+   "ops_after": 3,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/golang/go/issues/68075",
+   "seconds": {
+    "reduction": 85.7,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v1/triage/gopls-r4-diagnostics-extra-wrongargcount-mutation-m3-ac10cc/report.md"
+  },
+  {
+   "gid": "gopls-r4-syntax-gained-mutation-m2-86fde3",
+   "signature": "gopls|r4_edits|syntax:gained",
+   "method": "syntax",
+   "family": "mutation:M2",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "9bb8ccd49c7b"
+    ],
+    "projects": [
+     "junegunn/fzf@b1be3a8be1b8"
+    ],
+    "servers": [
+     "gopls-v0.23.0"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "9bb8ccd49c7b-v02"
+    ]
+   },
+   "representative": "9bb8ccd49c7b-v02",
+   "ops_before": 3,
+   "ops_after": 3,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/golang/go/issues/79772",
+   "seconds": {
+    "reduction": 67.5,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v1/triage/gopls-r4-syntax-gained-mutation-m2-86fde3/report.md"
+  },
+  {
+   "gid": "gopls-r5-codeaction-extra-t1-6dfb45",
+   "signature": "gopls|r5_transforms|codeAction:extra",
+   "method": "codeAction",
+   "family": "T1",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "0c88a9c856de"
+    ],
+    "projects": [
+     "gin-gonic/gin@3b08cd7235bd"
+    ],
+    "servers": [
+     "gopls-v0.23.0"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "0c88a9c856de-v00"
+    ]
+   },
+   "representative": "0c88a9c856de-v00",
+   "ops_before": 2,
+   "ops_after": 2,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/golang/go/issues/70085",
+   "seconds": {
+    "reduction": 55.5,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v1/triage/gopls-r5-codeaction-extra-t1-6dfb45/report.md"
+  },
+  {
+   "gid": "gopls-r5-codeaction-extra-t2-86a8ac",
+   "signature": "gopls|r5_transforms|codeAction:extra",
+   "method": "codeAction",
+   "family": "T2",
+   "members": 2,
+   "summary": {
+    "members": 2,
+    "runs": [
+     "4b8ebf18dab2",
+     "bfc37ab71ee7"
+    ],
+    "projects": [
+     "junegunn/fzf@b1be3a8be1b8",
+     "router-for-me/CLIProxyAPI@673131f57484"
+    ],
+    "servers": [
+     "gopls-v0.23.0"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "4b8ebf18dab2-v00",
+     "bfc37ab71ee7-v00"
+    ]
+   },
+   "representative": "4b8ebf18dab2-v00",
+   "ops_before": 2,
+   "ops_after": 2,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/golang/go/issues/64936",
+   "seconds": {
+    "reduction": 107.2,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v1/triage/gopls-r5-codeaction-extra-t2-86a8ac/report.md"
+  },
+  {
+   "gid": "gopls-r5-foldingrange-changed-t6-ecacad",
+   "signature": "gopls|r5_transforms|foldingRange:changed",
+   "method": "foldingRange",
+   "family": "T6",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "4b8ebf18dab2"
+    ],
+    "projects": [
+     "router-for-me/CLIProxyAPI@673131f57484"
+    ],
+    "servers": [
+     "gopls-v0.23.0"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "4b8ebf18dab2-v01"
+    ]
+   },
+   "representative": "4b8ebf18dab2-v01",
+   "ops_before": 2,
+   "ops_after": 2,
+   "lines": "",
+   "matches": 3,
+   "top_match": "https://github.com/golang/go/issues/29149",
+   "seconds": {
+    "reduction": 119.8,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v1/triage/gopls-r5-foldingrange-changed-t6-ecacad/report.md"
+  },
+  {
+   "gid": "pyright-r1-references-extra-h4-a63d47",
+   "signature": "pyright|r1_history|references:extra",
+   "method": "references",
+   "family": "H4",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "535608cb8838"
+    ],
+    "projects": [
+     "Graphify-Labs/graphify@a5957aa6ef51"
+    ],
+    "servers": [
+     "pyright-1.1.414"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "2"
+    ],
+    "vids": [
+     "535608cb8838-v00"
+    ]
+   },
+   "representative": "535608cb8838-v00",
+   "ops_before": 5,
+   "ops_after": 3,
+   "lines": "",
+   "matches": 6,
+   "top_match": "https://github.com/microsoft/pyright/issues/10279",
+   "seconds": {
+    "reduction": 1123.3,
+    "issues": 8.9
+   },
+   "report": "data/lsptest/runs/main_v1/triage/pyright-r1-references-extra-h4-a63d47/report.md"
+  },
+  {
+   "gid": "pyright-r1-references-extra-h5-181832",
+   "signature": "pyright|r1_history|references:extra",
+   "method": "references",
+   "family": "H5",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "6e959c949c25"
+    ],
+    "projects": [
+     "D4Vinci/Scrapling@08f107b1240f"
+    ],
+    "servers": [
+     "pyright-1.1.414"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "6e959c949c25-v00"
+    ]
+   },
+   "representative": "6e959c949c25-v00",
+   "ops_before": 5,
+   "ops_after": 1,
+   "lines": "",
+   "matches": 7,
+   "top_match": "https://github.com/microsoft/pyright/issues/375",
+   "seconds": {
+    "reduction": 152.0,
+    "issues": 4.1
+   },
+   "report": "data/lsptest/runs/main_v1/triage/pyright-r1-references-extra-h5-181832/report.md"
+  },
+  {
+   "gid": "pyright-r1-references-extra-h8-98dfb1",
+   "signature": "pyright|r1_history|references:extra",
+   "method": "references",
+   "family": "H8",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "8e422004b584"
+    ],
+    "projects": [
+     "D4Vinci/Scrapling@08f107b1240f"
+    ],
+    "servers": [
+     "pyright-1.1.414"
+    ],
+    "timings": [
+     "race0"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "8e422004b584-v00"
+    ]
+   },
+   "representative": "8e422004b584-v00",
+   "ops_before": 10,
+   "ops_after": 1,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/microsoft/pyright/issues/11581",
+   "seconds": {
+    "reduction": 64.0,
+    "issues": 4.5
+   },
+   "report": "data/lsptest/runs/main_v1/triage/pyright-r1-references-extra-h8-98dfb1/report.md"
+  },
+  {
+   "gid": "pyright-r1-references-missing-h3-876306",
+   "signature": "pyright|r1_history|references:missing",
+   "method": "references",
+   "family": "H3",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "2a4ca3065f52"
+    ],
+    "projects": [
+     "pallets/flask@d73fa1cdcbd8"
+    ],
+    "servers": [
+     "pyright-1.1.414"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "2a4ca3065f52-v00"
+    ]
+   },
+   "representative": "2a4ca3065f52-v00",
+   "ops_before": 5,
+   "ops_after": 1,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/microsoft/pyright/issues/3075",
+   "seconds": {
+    "reduction": 172.5,
+    "issues": 4.6
+   },
+   "report": "data/lsptest/runs/main_v1/triage/pyright-r1-references-missing-h3-876306/report.md"
+  },
+  {
+   "gid": "pyright-r1-references-missing-h5-64453c",
+   "signature": "pyright|r1_history|references:missing",
+   "method": "references",
+   "family": "H5",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "ec02b35ad43d"
+    ],
+    "projects": [
+     "pallets/flask@d73fa1cdcbd8"
+    ],
+    "servers": [
+     "pyright-1.1.414"
+    ],
+    "timings": [
+     "race0"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "ec02b35ad43d-v00"
+    ]
+   },
+   "representative": "ec02b35ad43d-v00",
+   "ops_before": 5,
+   "ops_after": 1,
+   "lines": "",
+   "matches": 7,
+   "top_match": "https://github.com/microsoft/pyright/issues/375",
+   "seconds": {
+    "reduction": 77.9,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v1/triage/pyright-r1-references-missing-h5-64453c/report.md"
+  },
+  {
+   "gid": "pyright-r3-definitionconsistency-extra-d-3d112f",
+   "signature": "pyright|r3_routes|definitionConsistency:extra",
+   "method": "definitionConsistency",
+   "family": "d",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "96ea95edb4ad"
+    ],
+    "projects": [
+     "browser-use/browser-use@d8110c5ff87c"
+    ],
+    "servers": [
+     "pyright-1.1.414"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "2"
+    ],
+    "vids": [
+     "96ea95edb4ad-v00"
+    ]
+   },
+   "representative": "96ea95edb4ad-v00",
+   "ops_before": 0,
+   "ops_after": 0,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/microsoft/pyright/issues/795",
+   "seconds": {
+    "reduction": 26.7,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v1/triage/pyright-r3-definitionconsistency-extra-d-3d112f/report.md"
+  },
+  {
+   "gid": "pyright-r3-definitionconsistency-lost-d-a4eaed",
+   "signature": "pyright|r3_routes|definitionConsistency:lost",
+   "method": "definitionConsistency",
+   "family": "d",
+   "members": 3,
+   "summary": {
+    "members": 3,
+    "runs": [
+     "0f7d1b71b1a8",
+     "abd6fbb4978e",
+     "e152a3b155ff"
+    ],
+    "projects": [
+     "D4Vinci/Scrapling@08f107b1240f",
+     "browser-use/browser-use@d8110c5ff87c",
+     "hiyouga/LlamaFactory@97b32d3133b5"
+    ],
+    "servers": [
+     "pyright-1.1.414"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1",
+     "2"
+    ],
+    "vids": [
+     "0f7d1b71b1a8-v00",
+     "abd6fbb4978e-v01",
+     "e152a3b155ff-v00"
+    ]
+   },
+   "representative": "0f7d1b71b1a8-v00",
+   "ops_before": 0,
+   "ops_after": 0,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/microsoft/pyright/issues/795",
+   "seconds": {
+    "reduction": 47.4,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v1/triage/pyright-r3-definitionconsistency-lost-d-a4eaed/report.md"
+  },
+  {
+   "gid": "pyright-r3-definitionconsistency-missing-d-81a7e5",
+   "signature": "pyright|r3_routes|definitionConsistency:missing",
+   "method": "definitionConsistency",
+   "family": "d",
+   "members": 2,
+   "summary": {
+    "members": 2,
+    "runs": [
+     "a884f55f15a4",
+     "abd6fbb4978e"
+    ],
+    "projects": [
+     "browser-use/browser-use@d8110c5ff87c",
+     "pallets/flask@d73fa1cdcbd8"
+    ],
+    "servers": [
+     "pyright-1.1.414"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1",
+     "2"
+    ],
+    "vids": [
+     "a884f55f15a4-v00",
+     "abd6fbb4978e-v00"
+    ]
+   },
+   "representative": "a884f55f15a4-v00",
+   "ops_before": 0,
+   "ops_after": 0,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/microsoft/pyright/issues/795",
+   "seconds": {
+    "reduction": 25.8,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v1/triage/pyright-r3-definitionconsistency-missing-d-81a7e5/report.md"
+  },
+  {
+   "gid": "pyright-r3-highlightvsreferences-gained-c-3118cc",
+   "signature": "pyright|r3_routes|highlightVsReferences:gained",
+   "method": "highlightVsReferences",
+   "family": "c",
+   "members": 3,
+   "summary": {
+    "members": 3,
+    "runs": [
+     "0112eaa84042",
+     "47aa0dcc1d51",
+     "7cc3e14ef5e8"
+    ],
+    "projects": [
+     "Panniantong/Agent-Reach@a19a171fa980",
+     "TauricResearch/TradingAgents@2d17df8da153",
+     "hiyouga/LlamaFactory@97b32d3133b5"
+    ],
+    "servers": [
+     "pyright-1.1.414"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "0112eaa84042-v00",
+     "47aa0dcc1d51-v00",
+     "7cc3e14ef5e8-v00"
+    ]
+   },
+   "representative": "0112eaa84042-v00",
+   "ops_before": 0,
+   "ops_after": 0,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/microsoft/pyright/issues/10818",
+   "seconds": {
+    "reduction": 24.7,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v1/triage/pyright-r3-highlightvsreferences-gained-c-3118cc/report.md"
+  },
+  {
+   "gid": "pyright-r4-completioninsert-gained-completion-79a584",
+   "signature": "pyright|r4_edits|completionInsert:gained",
+   "method": "completionInsert",
+   "family": "completion",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "d5f29969c6e6"
+    ],
+    "projects": [
+     "Graphify-Labs/graphify@a5957aa6ef51"
+    ],
+    "servers": [
+     "pyright-1.1.414"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "2"
+    ],
+    "vids": [
+     "d5f29969c6e6-v00"
+    ]
+   },
+   "representative": "d5f29969c6e6-v00",
+   "ops_before": 0,
+   "ops_after": 0,
+   "lines": "",
+   "matches": 0,
+   "top_match": "",
+   "seconds": {
+    "reduction": 67.3,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v1/triage/pyright-r4-completioninsert-gained-completion-79a584/report.md"
+  },
+  {
+   "gid": "pyright-r5-definition-lost-t1-ae8275",
+   "signature": "pyright|r5_transforms|definition:lost",
+   "method": "definition",
+   "family": "T1",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "1862963f2542"
+    ],
+    "projects": [
+     "TheAlgorithms/Python@60cea20f8537"
+    ],
+    "servers": [
+     "pyright-1.1.414"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "1862963f2542-v00"
+    ]
+   },
+   "representative": "1862963f2542-v00",
+   "ops_before": 2,
+   "ops_after": 2,
+   "lines": "",
+   "matches": 7,
+   "top_match": "https://github.com/microsoft/pyright/issues/11470",
+   "seconds": {
+    "reduction": 41.8,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v1/triage/pyright-r5-definition-lost-t1-ae8275/report.md"
+  },
+  {
+   "gid": "rust-analyzer-r0-references-result-error-timeout-fresh-pair-8a4b8d",
+   "signature": "rust-analyzer|r0_crash|references:result->error:timeout",
+   "method": "references",
+   "family": "fresh-pair",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "41afcf8c4817"
+    ],
+    "projects": [
+     "dani-garcia/vaultwarden@cc67d644f626"
+    ],
+    "servers": [
+     "rust-analyzer-2026-09-21"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "41afcf8c4817-v00"
+    ]
+   },
+   "representative": "41afcf8c4817-v00",
+   "ops_before": 0,
+   "ops_after": 0,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/rust-lang/rust-analyzer/issues/18428",
+   "seconds": {
+    "reduction": 415.6,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v1/triage/rust-analyzer-r0-references-result-error-timeout-fresh-pair-8a4b8d/report.md"
+  },
+  {
+   "gid": "rust-analyzer-r0-semantictokens-result-error-timeout-fresh-pair-62256f",
+   "signature": "rust-analyzer|r0_crash|semanticTokens:result->error:timeout",
+   "method": "semanticTokens",
+   "family": "fresh-pair",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "4f319fe5eb21"
+    ],
+    "projects": [
+     "AlexsJones/llmfit@2ffe4fd899a6"
+    ],
+    "servers": [
+     "rust-analyzer-2026-09-21"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "4f319fe5eb21-v02"
+    ]
+   },
+   "representative": "4f319fe5eb21-v02",
+   "ops_before": 0,
+   "ops_after": 0,
+   "lines": "",
+   "matches": 6,
+   "top_match": "https://github.com/rust-lang/rust-analyzer/issues/18428",
+   "seconds": {
+    "reduction": 365.0,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v1/triage/rust-analyzer-r0-semantictokens-result-error-timeout-fresh-pair-62256f/report.md"
+  },
+  {
+   "gid": "rust-analyzer-r2-completionresolve-changed-completion-3170a1",
+   "signature": "rust-analyzer|r2_handles|completionResolve:changed",
+   "method": "completionResolve",
+   "family": "completion",
+   "members": 3,
+   "summary": {
+    "members": 3,
+    "runs": [
+     "308d26953c2a",
+     "65c0adcfa45a",
+     "e57813ebb5fa"
+    ],
+    "projects": [
+     "BurntSushi/ripgrep@3fce3b5bb023",
+     "rtk-ai/rtk@b748a5f75563",
+     "sxyazi/yazi@0ea4c5d9ef75"
+    ],
+    "servers": [
+     "rust-analyzer-2026-09-21"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "308d26953c2a-v00",
+     "65c0adcfa45a-v00",
+     "e57813ebb5fa-v00"
+    ]
+   },
+   "representative": "308d26953c2a-v00",
+   "ops_before": 2,
+   "ops_after": 2,
+   "lines": "",
+   "matches": 6,
+   "top_match": "https://github.com/rust-lang/rust-analyzer/issues/16240",
+   "seconds": {
+    "reduction": 235.0,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v1/triage/rust-analyzer-r2-completionresolve-changed-completion-3170a1/report.md"
+  },
+  {
+   "gid": "rust-analyzer-r3-definitionconsistency-changed-d-2c6179",
+   "signature": "rust-analyzer|r3_routes|definitionConsistency:changed",
+   "method": "definitionConsistency",
+   "family": "d",
+   "members": 3,
+   "summary": {
+    "members": 3,
+    "runs": [
+     "27d79bab3edd",
+     "ec5d10b1f270",
+     "ec82a6cbf3e9"
+    ],
+    "projects": [
+     "dani-garcia/vaultwarden@cc67d644f626",
+     "rust-lang/rustlings@a650509c789d",
+     "sxyazi/yazi@0ea4c5d9ef75"
+    ],
+    "servers": [
+     "rust-analyzer-2026-09-21"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "27d79bab3edd-v00",
+     "ec5d10b1f270-v02",
+     "ec82a6cbf3e9-v00"
+    ]
+   },
+   "representative": "27d79bab3edd-v00",
+   "ops_before": 0,
+   "ops_after": 0,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/rust-lang/rust-analyzer/issues/8373",
+   "seconds": {
+    "reduction": 120.2,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v1/triage/rust-analyzer-r3-definitionconsistency-changed-d-2c6179/report.md"
+  },
+  {
+   "gid": "rust-analyzer-r3-definitionconsistency-extra-d-4cbc9e",
+   "signature": "rust-analyzer|r3_routes|definitionConsistency:extra",
+   "method": "definitionConsistency",
+   "family": "d",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "ec5d10b1f270"
+    ],
+    "projects": [
+     "dani-garcia/vaultwarden@cc67d644f626"
+    ],
+    "servers": [
+     "rust-analyzer-2026-09-21"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "ec5d10b1f270-v00"
+    ]
+   },
+   "representative": "ec5d10b1f270-v00",
+   "ops_before": 0,
+   "ops_after": 0,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/rust-lang/rust-analyzer/issues/8373",
+   "seconds": {
+    "reduction": 438.2,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v1/triage/rust-analyzer-r3-definitionconsistency-extra-d-4cbc9e/report.md"
+  },
+  {
+   "gid": "rust-analyzer-r3-definitionconsistency-missing-d-586fd8",
+   "signature": "rust-analyzer|r3_routes|definitionConsistency:missing",
+   "method": "definitionConsistency",
+   "family": "d",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "ec5d10b1f270"
+    ],
+    "projects": [
+     "dani-garcia/vaultwarden@cc67d644f626"
+    ],
+    "servers": [
+     "rust-analyzer-2026-09-21"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "ec5d10b1f270-v01"
+    ]
+   },
+   "representative": "ec5d10b1f270-v01",
+   "ops_before": 0,
+   "ops_after": 0,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/rust-lang/rust-analyzer/issues/8373",
+   "seconds": {
+    "reduction": 453.4,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v1/triage/rust-analyzer-r3-definitionconsistency-missing-d-586fd8/report.md"
+  },
+  {
+   "gid": "rust-analyzer-r3-diagnostics-extra-non-snake-case-a-52ba0b",
+   "signature": "rust-analyzer|r3_routes|diagnostics:extra:non_snake_case",
+   "method": "diagnostics",
+   "family": "a",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "29d2893b9177"
+    ],
+    "projects": [
+     "BurntSushi/ripgrep@3fce3b5bb023"
+    ],
+    "servers": [
+     "rust-analyzer-2026-09-21"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "2"
+    ],
+    "vids": [
+     "29d2893b9177-v01"
+    ]
+   },
+   "representative": "29d2893b9177-v01",
+   "ops_before": 0,
+   "ops_after": 0,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/rust-lang/rust-analyzer/issues/18375",
+   "seconds": {
+    "reduction": 164.2,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v1/triage/rust-analyzer-r3-diagnostics-extra-non-snake-case-a-52ba0b/report.md"
+  },
+  {
+   "gid": "rust-analyzer-r3-diagnostics-extra-unlinked-file-a-751ce1",
+   "signature": "rust-analyzer|r3_routes|diagnostics:extra:unlinked-file",
+   "method": "diagnostics",
+   "family": "a",
+   "members": 2,
+   "summary": {
+    "members": 2,
+    "runs": [
+     "29d2893b9177",
+     "5c52751fb09b"
+    ],
+    "projects": [
+     "BurntSushi/ripgrep@3fce3b5bb023",
+     "lapce/lapce@b604d57de4a8"
+    ],
+    "servers": [
+     "rust-analyzer-2026-09-21"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "2"
+    ],
+    "vids": [
+     "29d2893b9177-v00",
+     "5c52751fb09b-v00"
+    ]
+   },
+   "representative": "29d2893b9177-v00",
+   "ops_before": 0,
+   "ops_after": 0,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/rust-lang/rust-analyzer/issues/18375",
+   "seconds": {
+    "reduction": 167.4,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v1/triage/rust-analyzer-r3-diagnostics-extra-unlinked-file-a-751ce1/report.md"
+  },
+  {
+   "gid": "rust-analyzer-r3-diagnostics-missing-e0004-inactive-code-a-731c4f",
+   "signature": "rust-analyzer|r3_routes|diagnostics:missing:E0004,inactive_code",
+   "method": "diagnostics",
+   "family": "a",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "ec5d10b1f270"
+    ],
+    "projects": [
+     "dani-garcia/vaultwarden@cc67d644f626"
+    ],
+    "servers": [
+     "rust-analyzer-2026-09-21"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "ec5d10b1f270-v03"
+    ]
+   },
+   "representative": "ec5d10b1f270-v03",
+   "ops_before": 0,
+   "ops_after": 0,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/rust-lang/rust-analyzer/issues/18375",
+   "seconds": {
+    "reduction": 672.1,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v1/triage/rust-analyzer-r3-diagnostics-missing-e0004-inactive-code-a-731c4f/report.md"
+  },
+  {
+   "gid": "rust-analyzer-r3-diagnostics-missing-inactive-code-a-0b07f0",
+   "signature": "rust-analyzer|r3_routes|diagnostics:missing:inactive_code",
+   "method": "diagnostics",
+   "family": "a",
+   "members": 3,
+   "summary": {
+    "members": 3,
+    "runs": [
+     "2c59f4574505",
+     "c6d3284a6341",
+     "ec82a6cbf3e9"
+    ],
+    "projects": [
+     "alacritty/alacritty@d692748d3f61",
+     "sxyazi/yazi@0ea4c5d9ef75"
+    ],
+    "servers": [
+     "rust-analyzer-2026-09-21"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1",
+     "2"
+    ],
+    "vids": [
+     "2c59f4574505-v00",
+     "c6d3284a6341-v01",
+     "ec82a6cbf3e9-v01"
+    ]
+   },
+   "representative": "2c59f4574505-v00",
+   "ops_before": 0,
+   "ops_after": 0,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/rust-lang/rust-analyzer/issues/18375",
+   "seconds": {
+    "reduction": 253.3,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v1/triage/rust-analyzer-r3-diagnostics-missing-inactive-code-a-0b07f0/report.md"
+  },
+  {
+   "gid": "rust-analyzer-r3-highlightvsreferences-extra-c-c2bfed",
+   "signature": "rust-analyzer|r3_routes|highlightVsReferences:extra",
+   "method": "highlightVsReferences",
+   "family": "c",
+   "members": 3,
+   "summary": {
+    "members": 3,
+    "runs": [
+     "227b8c64b999",
+     "37a10e30c94c",
+     "426173961f12"
+    ],
+    "projects": [
+     "BurntSushi/ripgrep@3fce3b5bb023",
+     "rust-lang/rustlings@a650509c789d",
+     "sharkdp/bat@4987f76709aa"
+    ],
+    "servers": [
+     "rust-analyzer-2026-09-21"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1",
+     "2"
+    ],
+    "vids": [
+     "227b8c64b999-v00",
+     "37a10e30c94c-v00",
+     "426173961f12-v00"
+    ]
+   },
+   "representative": "227b8c64b999-v00",
+   "ops_before": 0,
+   "ops_after": 0,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/rust-lang/rust-analyzer/issues/18703",
+   "seconds": {
+    "reduction": 101.6,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v1/triage/rust-analyzer-r3-highlightvsreferences-extra-c-c2bfed/report.md"
+  },
+  {
+   "gid": "rust-analyzer-r3-semantictokensrange-changed-b-b6e28b",
+   "signature": "rust-analyzer|r3_routes|semanticTokensRange:changed",
+   "method": "semanticTokensRange",
+   "family": "b",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "c6d3284a6341"
+    ],
+    "projects": [
+     "alacritty/alacritty@d692748d3f61"
+    ],
+    "servers": [
+     "rust-analyzer-2026-09-21"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "c6d3284a6341-v00"
+    ]
+   },
+   "representative": "c6d3284a6341-v00",
+   "ops_before": 0,
+   "ops_after": 0,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/rust-lang/rust-analyzer/issues/23199",
+   "seconds": {
+    "reduction": 149.0,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v1/triage/rust-analyzer-r3-semantictokensrange-changed-b-b6e28b/report.md"
+  },
+  {
+   "gid": "rust-analyzer-r4-completioninsert-gained-completion-e99b79",
+   "signature": "rust-analyzer|r4_edits|completionInsert:gained",
+   "method": "completionInsert",
+   "family": "completion",
+   "members": 3,
+   "summary": {
+    "members": 3,
+    "runs": [
+     "1d56fa44ae9e",
+     "723ffafaec5f",
+     "efde29841645"
+    ],
+    "projects": [
+     "BurntSushi/ripgrep@3fce3b5bb023",
+     "alacritty/alacritty@d692748d3f61",
+     "dani-garcia/vaultwarden@cc67d644f626"
+    ],
+    "servers": [
+     "rust-analyzer-2026-09-21"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1",
+     "2"
+    ],
+    "vids": [
+     "1d56fa44ae9e-v00",
+     "723ffafaec5f-v00",
+     "efde29841645-v00"
+    ]
+   },
+   "representative": "1d56fa44ae9e-v00",
+   "ops_before": 0,
+   "ops_after": 0,
+   "lines": "",
+   "matches": 0,
+   "top_match": "",
+   "seconds": {
+    "reduction": 525.8,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v1/triage/rust-analyzer-r4-completioninsert-gained-completion-e99b79/report.md"
+  },
+  {
+   "gid": "rust-analyzer-r4-diagnostics-extra-inactive-code-quickfix-f2d641",
+   "signature": "rust-analyzer|r4_edits|diagnostics:extra:inactive_code",
+   "method": "diagnostics",
+   "family": "quickfix",
+   "members": 2,
+   "summary": {
+    "members": 2,
+    "runs": [
+     "11b3a40bbec3",
+     "efde29841645"
+    ],
+    "projects": [
+     "alacritty/alacritty@d692748d3f61",
+     "sxyazi/yazi@0ea4c5d9ef75"
+    ],
+    "servers": [
+     "rust-analyzer-2026-09-21"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1",
+     "2"
+    ],
+    "vids": [
+     "11b3a40bbec3-v00",
+     "efde29841645-v01"
+    ]
+   },
+   "representative": "11b3a40bbec3-v00",
+   "ops_before": 0,
+   "ops_after": 0,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/rust-lang/rust-analyzer/issues/16642",
+   "seconds": {
+    "reduction": 736.9,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v1/triage/rust-analyzer-r4-diagnostics-extra-inactive-code-quickfix-f2d641/report.md"
+  },
+  {
+   "gid": "ts6-r1-codeaction-key-lost-h5-4f92e2",
+   "signature": "ts6|r1_history|codeAction:key-lost",
+   "method": "codeAction",
+   "family": "H5",
+   "members": 2,
+   "summary": {
+    "members": 2,
+    "runs": [
+     "210902bea61f",
+     "9defd9c201d7"
+    ],
+    "projects": [
+     "pmndrs/zustand@b57db4f86ef1"
+    ],
+    "servers": [
+     "ts6-6.0.3"
+    ],
+    "timings": [
+     "race200",
+     "settled"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "210902bea61f-v00",
+     "9defd9c201d7-v00"
+    ]
+   },
+   "representative": "210902bea61f-v00",
+   "ops_before": 5,
+   "ops_after": 3,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/typescript-language-server/typescript-language-server/issues/878",
+   "seconds": {
+    "reduction": 363.8,
+    "issues": 13.0
+   },
+   "report": "data/lsptest/runs/main_v1/triage/ts6-r1-codeaction-key-lost-h5-4f92e2/report.md"
+  },
+  {
+   "gid": "ts6-r1-completion-lost-h5-fa501c",
+   "signature": "ts6|r1_history|completion:lost",
+   "method": "completion",
+   "family": "H5",
+   "members": 3,
+   "summary": {
+    "members": 3,
+    "runs": [
+     "210902bea61f",
+     "3ed0e189007e",
+     "9defd9c201d7"
+    ],
+    "projects": [
+     "pmndrs/zustand@b57db4f86ef1"
+    ],
+    "servers": [
+     "ts6-6.0.3"
+    ],
+    "timings": [
+     "race0",
+     "race200",
+     "settled"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "210902bea61f-v01",
+     "3ed0e189007e-v01",
+     "9defd9c201d7-v01"
+    ]
+   },
+   "representative": "210902bea61f-v01",
+   "ops_before": 5,
+   "ops_after": 3,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/typescript-language-server/typescript-language-server/issues/878",
+   "seconds": {
+    "reduction": 402.9,
+    "issues": 13.1
+   },
+   "report": "data/lsptest/runs/main_v1/triage/ts6-r1-completion-lost-h5-fa501c/report.md"
+  },
+  {
+   "gid": "ts6-r1-definition-lost-h5-61a0fd",
+   "signature": "ts6|r1_history|definition:lost",
+   "method": "definition",
+   "family": "H5",
+   "members": 2,
+   "summary": {
+    "members": 2,
+    "runs": [
+     "3ed0e189007e",
+     "9defd9c201d7"
+    ],
+    "projects": [
+     "pmndrs/zustand@b57db4f86ef1"
+    ],
+    "servers": [
+     "ts6-6.0.3"
+    ],
+    "timings": [
+     "race0",
+     "race200"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "3ed0e189007e-v02",
+     "9defd9c201d7-v02"
+    ]
+   },
+   "representative": "3ed0e189007e-v02",
+   "ops_before": 5,
+   "ops_after": 5,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/typescript-language-server/typescript-language-server/issues/878",
+   "seconds": {
+    "reduction": 189.3,
+    "issues": 9.0
+   },
+   "report": "data/lsptest/runs/main_v1/triage/ts6-r1-definition-lost-h5-61a0fd/report.md"
+  },
+  {
+   "gid": "ts6-r1-definition-lost-h9-898f29",
+   "signature": "ts6|r1_history|definition:lost",
+   "method": "definition",
+   "family": "H9",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "5ae299935d29"
+    ],
+    "projects": [
+     "ChatGPTNextWeb/NextChat@defdcdb55d85"
+    ],
+    "servers": [
+     "ts6-6.0.3"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "2"
+    ],
+    "vids": [
+     "5ae299935d29-v00"
+    ]
+   },
+   "representative": "5ae299935d29-v00",
+   "ops_before": 14,
+   "ops_after": 10,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/typescript-language-server/typescript-language-server/issues/60",
+   "seconds": {
+    "reduction": 2490.9,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v1/triage/ts6-r1-definition-lost-h9-898f29/report.md"
+  },
+  {
+   "gid": "ts6-r1-diagnostics-extra-2304-h7-8ca52f",
+   "signature": "ts6|r1_history|diagnostics:extra:2304",
+   "method": "diagnostics",
+   "family": "H7",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "43c648d37a2b"
+    ],
+    "projects": [
+     "react-hook-form/react-hook-form@5fd9ef65290b"
+    ],
+    "servers": [
+     "ts6-6.0.3"
+    ],
+    "timings": [
+     "race0"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "43c648d37a2b-v01"
+    ]
+   },
+   "representative": "43c648d37a2b-v01",
+   "ops_before": 11,
+   "ops_after": 3,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/typescript-language-server/typescript-language-server/issues/1014",
+   "seconds": {
+    "reduction": 406.5,
+    "issues": 13.1
+   },
+   "report": "data/lsptest/runs/main_v1/triage/ts6-r1-diagnostics-extra-2304-h7-8ca52f/report.md"
+  },
+  {
+   "gid": "ts6-r1-diagnostics-extra-2305-2339-7006-h5-d5a250",
+   "signature": "ts6|r1_history|diagnostics:extra:2305,2339,7006",
+   "method": "diagnostics",
+   "family": "H5",
+   "members": 2,
+   "summary": {
+    "members": 2,
+    "runs": [
+     "3ed0e189007e",
+     "9defd9c201d7"
+    ],
+    "projects": [
+     "pmndrs/zustand@b57db4f86ef1"
+    ],
+    "servers": [
+     "ts6-6.0.3"
+    ],
+    "timings": [
+     "race0",
+     "race200"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "3ed0e189007e-v03",
+     "9defd9c201d7-v03"
+    ]
+   },
+   "representative": "3ed0e189007e-v03",
+   "ops_before": 5,
+   "ops_after": 5,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/typescript-language-server/typescript-language-server/issues/878",
+   "seconds": {
+    "reduction": 427.1,
+    "issues": 4.5
+   },
+   "report": "data/lsptest/runs/main_v1/triage/ts6-r1-diagnostics-extra-2305-2339-7006-h5-d5a250/report.md"
+  },
+  {
+   "gid": "ts6-r1-documenthighlight-lost-h5-9b4675",
+   "signature": "ts6|r1_history|documentHighlight:lost",
+   "method": "documentHighlight",
+   "family": "H5",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "3ed0e189007e"
+    ],
+    "projects": [
+     "pmndrs/zustand@b57db4f86ef1"
+    ],
+    "servers": [
+     "ts6-6.0.3"
+    ],
+    "timings": [
+     "race0"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "3ed0e189007e-v04"
+    ]
+   },
+   "representative": "3ed0e189007e-v04",
+   "ops_before": 5,
+   "ops_after": 5,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/typescript-language-server/typescript-language-server/issues/878",
+   "seconds": {
+    "reduction": 394.8,
+    "issues": 13.0
+   },
+   "report": "data/lsptest/runs/main_v1/triage/ts6-r1-documenthighlight-lost-h5-9b4675/report.md"
+  },
+  {
+   "gid": "ts6-r1-hover-text-h2-284519",
+   "signature": "ts6|r1_history|hover:text",
+   "method": "hover",
+   "family": "H2",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "51d286bdf504"
+    ],
+    "projects": [
+     "upstash/context7@6477e43e31d2"
+    ],
+    "servers": [
+     "ts6-6.0.3"
+    ],
+    "timings": [
+     "race0"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "51d286bdf504-v00"
+    ]
+   },
+   "representative": "51d286bdf504-v00",
+   "ops_before": 8,
+   "ops_after": 1,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/typescript-language-server/typescript-language-server/issues/1014",
+   "seconds": {
+    "reduction": 614.1,
+    "issues": 8.9
+   },
+   "report": "data/lsptest/runs/main_v1/triage/ts6-r1-hover-text-h2-284519/report.md"
+  },
+  {
+   "gid": "ts6-r1-hover-text-h5-b3855d",
+   "signature": "ts6|r1_history|hover:text",
+   "method": "hover",
+   "family": "H5",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "f361ec20051e"
+    ],
+    "projects": [
+     "ChatGPTNextWeb/NextChat@defdcdb55d85"
+    ],
+    "servers": [
+     "ts6-6.0.3"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "f361ec20051e-v00"
+    ]
+   },
+   "representative": "f361ec20051e-v00",
+   "ops_before": 5,
+   "ops_after": 1,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/typescript-language-server/typescript-language-server/issues/878",
+   "seconds": {
+    "reduction": 686.0,
+    "issues": 4.4
+   },
+   "report": "data/lsptest/runs/main_v1/triage/ts6-r1-hover-text-h5-b3855d/report.md"
+  },
+  {
+   "gid": "ts6-r1-hover-text-h8-2ce168",
+   "signature": "ts6|r1_history|hover:text",
+   "method": "hover",
+   "family": "H8",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "3f26f1994ad8"
+    ],
+    "projects": [
+     "upstash/context7@6477e43e31d2"
+    ],
+    "servers": [
+     "ts6-6.0.3"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "3f26f1994ad8-v00"
+    ]
+   },
+   "representative": "3f26f1994ad8-v00",
+   "ops_before": 14,
+   "ops_after": 1,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/typescript-language-server/typescript-language-server/issues/1014",
+   "seconds": {
+    "reduction": 539.9,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v1/triage/ts6-r1-hover-text-h8-2ce168/report.md"
+  },
+  {
+   "gid": "ts6-r1-inlayhint-changed-h5-0c1aa5",
+   "signature": "ts6|r1_history|inlayHint:changed",
+   "method": "inlayHint",
+   "family": "H5",
+   "members": 3,
+   "summary": {
+    "members": 3,
+    "runs": [
+     "2b2943df5bac",
+     "3ed0e189007e",
+     "f361ec20051e"
+    ],
+    "projects": [
+     "ChatGPTNextWeb/NextChat@defdcdb55d85",
+     "pmndrs/zustand@b57db4f86ef1"
+    ],
+    "servers": [
+     "ts6-6.0.3"
+    ],
+    "timings": [
+     "race0",
+     "settled"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "2b2943df5bac-v00",
+     "3ed0e189007e-v05",
+     "f361ec20051e-v01"
+    ]
+   },
+   "representative": "2b2943df5bac-v00",
+   "ops_before": 5,
+   "ops_after": 1,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/typescript-language-server/typescript-language-server/issues/878",
+   "seconds": {
+    "reduction": 532.3,
+    "issues": 13.1
+   },
+   "report": "data/lsptest/runs/main_v1/triage/ts6-r1-inlayhint-changed-h5-0c1aa5/report.md"
+  },
+  {
+   "gid": "ts6-r1-references-extra-h6-6e0a73",
+   "signature": "ts6|r1_history|references:extra",
+   "method": "references",
+   "family": "H6",
+   "members": 3,
+   "summary": {
+    "members": 3,
+    "runs": [
+     "05d21764e97c",
+     "43c648d37a2b",
+     "d9789eb1a3e4"
+    ],
+    "projects": [
+     "react-hook-form/react-hook-form@5fd9ef65290b"
+    ],
+    "servers": [
+     "ts6-6.0.3"
+    ],
+    "timings": [
+     "race0",
+     "race200",
+     "settled"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "05d21764e97c-v00",
+     "43c648d37a2b-v00",
+     "d9789eb1a3e4-v00"
+    ]
+   },
+   "representative": "05d21764e97c-v00",
+   "ops_before": 7,
+   "ops_after": 1,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/typescript-language-server/typescript-language-server/issues/926",
+   "seconds": {
+    "reduction": 145.1,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v1/triage/ts6-r1-references-extra-h6-6e0a73/report.md"
+  },
+  {
+   "gid": "ts6-r1-references-lost-h5-d24ca6",
+   "signature": "ts6|r1_history|references:lost",
+   "method": "references",
+   "family": "H5",
+   "members": 3,
+   "summary": {
+    "members": 3,
+    "runs": [
+     "210902bea61f",
+     "3ed0e189007e",
+     "9defd9c201d7"
+    ],
+    "projects": [
+     "pmndrs/zustand@b57db4f86ef1"
+    ],
+    "servers": [
+     "ts6-6.0.3"
+    ],
+    "timings": [
+     "race0",
+     "race200",
+     "settled"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "210902bea61f-v07",
+     "3ed0e189007e-v06",
+     "9defd9c201d7-v05"
+    ]
+   },
+   "representative": "210902bea61f-v07",
+   "ops_before": 5,
+   "ops_after": 3,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/typescript-language-server/typescript-language-server/issues/878",
+   "seconds": {
+    "reduction": 379.1,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v1/triage/ts6-r1-references-lost-h5-d24ca6/report.md"
+  },
+  {
+   "gid": "ts6-r1-references-missing-h5-cc8950",
+   "signature": "ts6|r1_history|references:missing",
+   "method": "references",
+   "family": "H5",
+   "members": 3,
+   "summary": {
+    "members": 3,
+    "runs": [
+     "9fc84ad1ca04",
+     "a83844f386d8",
+     "e625a4033971"
+    ],
+    "projects": [
+     "Fission-AI/OpenSpec@f179ed4e4056",
+     "vercel/hyper@30ec0a2a91de"
+    ],
+    "servers": [
+     "ts6-6.0.3"
+    ],
+    "timings": [
+     "race200",
+     "settled"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "9fc84ad1ca04-v00",
+     "a83844f386d8-v00",
+     "e625a4033971-v00"
+    ]
+   },
+   "representative": "9fc84ad1ca04-v00",
+   "ops_before": 5,
+   "ops_after": 3,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/typescript-language-server/typescript-language-server/issues/878",
+   "seconds": {
+    "reduction": 186.5,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v1/triage/ts6-r1-references-missing-h5-cc8950/report.md"
+  },
+  {
+   "gid": "ts6-r1-semantictokens-changed-h5-591c42",
+   "signature": "ts6|r1_history|semanticTokens:changed",
+   "method": "semanticTokens",
+   "family": "H5",
+   "members": 2,
+   "summary": {
+    "members": 2,
+    "runs": [
+     "210902bea61f",
+     "9defd9c201d7"
+    ],
+    "projects": [
+     "pmndrs/zustand@b57db4f86ef1"
+    ],
+    "servers": [
+     "ts6-6.0.3"
+    ],
+    "timings": [
+     "race200",
+     "settled"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "210902bea61f-v08",
+     "9defd9c201d7-v06"
+    ]
+   },
+   "representative": "210902bea61f-v08",
+   "ops_before": 5,
+   "ops_after": 3,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/typescript-language-server/typescript-language-server/issues/878",
+   "seconds": {
+    "reduction": 345.2,
+    "issues": 13.2
+   },
+   "report": "data/lsptest/runs/main_v1/triage/ts6-r1-semantictokens-changed-h5-591c42/report.md"
+  },
+  {
+   "gid": "ts6-r1-semantictokens-missing-h9-d686b3",
+   "signature": "ts6|r1_history|semanticTokens:missing",
+   "method": "semanticTokens",
+   "family": "H9",
+   "members": 2,
+   "summary": {
+    "members": 2,
+    "runs": [
+     "257881247893",
+     "5ae299935d29"
+    ],
+    "projects": [
+     "ChatGPTNextWeb/NextChat@defdcdb55d85",
+     "reduxjs/redux@fb3bad6804d6"
+    ],
+    "servers": [
+     "ts6-6.0.3"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "2"
+    ],
+    "vids": [
+     "257881247893-v01",
+     "5ae299935d29-v03"
+    ]
+   },
+   "representative": "257881247893-v01",
+   "ops_before": 14,
+   "ops_after": 3,
+   "lines": "",
+   "matches": 2,
+   "top_match": "https://github.com/microsoft/TypeScript/issues/44099",
+   "seconds": {
+    "reduction": 777.8,
+    "issues": 4.5
+   },
+   "report": "data/lsptest/runs/main_v1/triage/ts6-r1-semantictokens-missing-h9-d686b3/report.md"
+  },
+  {
+   "gid": "ts6-r1-signaturehelp-changed-h5-db5a5e",
+   "signature": "ts6|r1_history|signatureHelp:changed",
+   "method": "signatureHelp",
+   "family": "H5",
+   "members": 2,
+   "summary": {
+    "members": 2,
+    "runs": [
+     "3ed0e189007e",
+     "9defd9c201d7"
+    ],
+    "projects": [
+     "pmndrs/zustand@b57db4f86ef1"
+    ],
+    "servers": [
+     "ts6-6.0.3"
+    ],
+    "timings": [
+     "race0",
+     "race200"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "3ed0e189007e-v08",
+     "9defd9c201d7-v07"
+    ]
+   },
+   "representative": "3ed0e189007e-v08",
+   "ops_before": 5,
+   "ops_after": 5,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/typescript-language-server/typescript-language-server/issues/878",
+   "seconds": {
+    "reduction": 193.7,
+    "issues": 13.2
+   },
+   "report": "data/lsptest/runs/main_v1/triage/ts6-r1-signaturehelp-changed-h5-db5a5e/report.md"
+  },
+  {
+   "gid": "ts6-r1-signaturehelp-lost-h9-7bd793",
+   "signature": "ts6|r1_history|signatureHelp:lost",
+   "method": "signatureHelp",
+   "family": "H9",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "5ae299935d29"
+    ],
+    "projects": [
+     "ChatGPTNextWeb/NextChat@defdcdb55d85"
+    ],
+    "servers": [
+     "ts6-6.0.3"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "2"
+    ],
+    "vids": [
+     "5ae299935d29-v04"
+    ]
+   },
+   "representative": "5ae299935d29-v04",
+   "ops_before": 14,
+   "ops_after": 8,
+   "lines": "",
+   "matches": 7,
+   "top_match": "https://github.com/typescript-language-server/typescript-language-server/issues/948",
+   "seconds": {
+    "reduction": 2067.3,
+    "issues": 4.5
+   },
+   "report": "data/lsptest/runs/main_v1/triage/ts6-r1-signaturehelp-lost-h9-7bd793/report.md"
+  },
+  {
+   "gid": "ts6-r1-typedefinition-lost-h5-712a35",
+   "signature": "ts6|r1_history|typeDefinition:lost",
+   "method": "typeDefinition",
+   "family": "H5",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "9defd9c201d7"
+    ],
+    "projects": [
+     "pmndrs/zustand@b57db4f86ef1"
+    ],
+    "servers": [
+     "ts6-6.0.3"
+    ],
+    "timings": [
+     "race200"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "9defd9c201d7-v08"
+    ]
+   },
+   "representative": "9defd9c201d7-v08",
+   "ops_before": 5,
+   "ops_after": 3,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/typescript-language-server/typescript-language-server/issues/878",
+   "seconds": {
+    "reduction": 266.9,
+    "issues": 13.3
+   },
+   "report": "data/lsptest/runs/main_v1/triage/ts6-r1-typedefinition-lost-h5-712a35/report.md"
+  },
+  {
+   "gid": "ts6-r3-definitionconsistency-changed-d-bf619d",
+   "signature": "ts6|r3_routes|definitionConsistency:changed",
+   "method": "definitionConsistency",
+   "family": "d",
+   "members": 3,
+   "summary": {
+    "members": 3,
+    "runs": [
+     "05138076f1e7",
+     "96937ad5a242",
+     "97e5b1307d07"
+    ],
+    "projects": [
+     "pmndrs/zustand@b57db4f86ef1",
+     "reduxjs/redux@fb3bad6804d6",
+     "upstash/context7@6477e43e31d2"
+    ],
+    "servers": [
+     "ts6-6.0.3"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "05138076f1e7-v00",
+     "96937ad5a242-v00",
+     "97e5b1307d07-v00"
+    ]
+   },
+   "representative": "05138076f1e7-v00",
+   "ops_before": 0,
+   "ops_after": 0,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/typescript-language-server/typescript-language-server/issues/795",
+   "seconds": {
+    "reduction": 86.6,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v1/triage/ts6-r3-definitionconsistency-changed-d-bf619d/report.md"
+  },
+  {
+   "gid": "ts6-r3-definitionconsistency-extra-d-1fb668",
+   "signature": "ts6|r3_routes|definitionConsistency:extra",
+   "method": "definitionConsistency",
+   "family": "d",
+   "members": 3,
+   "summary": {
+    "members": 3,
+    "runs": [
+     "2e5b5cb87f65",
+     "742b4e42bea7",
+     "b9a4e767437d"
+    ],
+    "projects": [
+     "ChatGPTNextWeb/NextChat@defdcdb55d85",
+     "vercel/hyper@30ec0a2a91de"
+    ],
+    "servers": [
+     "ts6-6.0.3"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1",
+     "2"
+    ],
+    "vids": [
+     "2e5b5cb87f65-v00",
+     "742b4e42bea7-v00",
+     "b9a4e767437d-v00"
+    ]
+   },
+   "representative": "2e5b5cb87f65-v00",
+   "ops_before": 0,
+   "ops_after": 0,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/typescript-language-server/typescript-language-server/issues/795",
+   "seconds": {
+    "reduction": 233.9,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v1/triage/ts6-r3-definitionconsistency-extra-d-1fb668/report.md"
+  },
+  {
+   "gid": "ts6-r3-definitionconsistency-lost-d-fb78dd",
+   "signature": "ts6|r3_routes|definitionConsistency:lost",
+   "method": "definitionConsistency",
+   "family": "d",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "71f6d8ce3149"
+    ],
+    "projects": [
+     "pmndrs/zustand@b57db4f86ef1"
+    ],
+    "servers": [
+     "ts6-6.0.3"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "2"
+    ],
+    "vids": [
+     "71f6d8ce3149-v00"
+    ]
+   },
+   "representative": "71f6d8ce3149-v00",
+   "ops_before": 0,
+   "ops_after": 0,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/typescript-language-server/typescript-language-server/issues/795",
+   "seconds": {
+    "reduction": 47.6,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v1/triage/ts6-r3-definitionconsistency-lost-d-fb78dd/report.md"
+  },
+  {
+   "gid": "ts6-r3-definitionconsistency-missing-d-0ab4de",
+   "signature": "ts6|r3_routes|definitionConsistency:missing",
+   "method": "definitionConsistency",
+   "family": "d",
+   "members": 3,
+   "summary": {
+    "members": 3,
+    "runs": [
+     "4ef417928764",
+     "b9a4e767437d",
+     "c40190814e71"
+    ],
+    "projects": [
+     "Fission-AI/OpenSpec@f179ed4e4056",
+     "upstash/context7@6477e43e31d2",
+     "vercel/hyper@30ec0a2a91de"
+    ],
+    "servers": [
+     "ts6-6.0.3"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1",
+     "2"
+    ],
+    "vids": [
+     "4ef417928764-v00",
+     "b9a4e767437d-v01",
+     "c40190814e71-v00"
+    ]
+   },
+   "representative": "4ef417928764-v00",
+   "ops_before": 0,
+   "ops_after": 0,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/typescript-language-server/typescript-language-server/issues/795",
+   "seconds": {
+    "reduction": 56.7,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v1/triage/ts6-r3-definitionconsistency-missing-d-0ab4de/report.md"
+  },
+  {
+   "gid": "ts6-r3-highlightvsreferences-gained-c-e8db7c",
+   "signature": "ts6|r3_routes|highlightVsReferences:gained",
+   "method": "highlightVsReferences",
+   "family": "c",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "7587da4972f6"
+    ],
+    "projects": [
+     "ChromeDevTools/chrome-devtools-mcp@2250cdcde4aa"
+    ],
+    "servers": [
+     "ts6-6.0.3"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "2"
+    ],
+    "vids": [
+     "7587da4972f6-v00"
+    ]
+   },
+   "representative": "7587da4972f6-v00",
+   "ops_before": 0,
+   "ops_after": 0,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/typescript-language-server/typescript-language-server/issues/961",
+   "seconds": {
+    "reduction": 75.6,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v1/triage/ts6-r3-highlightvsreferences-gained-c-e8db7c/report.md"
+  },
+  {
+   "gid": "ts6-r4-diagnostics-extra-18004-mutation-m2-63d36d",
+   "signature": "ts6|r4_edits|diagnostics:extra:18004",
+   "method": "diagnostics",
+   "family": "mutation:M2",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "f32275e691ea"
+    ],
+    "projects": [
+     "ChromeDevTools/chrome-devtools-mcp@2250cdcde4aa"
+    ],
+    "servers": [
+     "ts6-6.0.3"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "f32275e691ea-v01"
+    ]
+   },
+   "representative": "f32275e691ea-v01",
+   "ops_before": 3,
+   "ops_after": 3,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/typescript-language-server/typescript-language-server/issues/1014",
+   "seconds": {
+    "reduction": 171.8,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v1/triage/ts6-r4-diagnostics-extra-18004-mutation-m2-63d36d/report.md"
+  },
+  {
+   "gid": "ts6-r4-diagnostics-extra-2304-mutation-m2-1554be",
+   "signature": "ts6|r4_edits|diagnostics:extra:2304",
+   "method": "diagnostics",
+   "family": "mutation:M2",
+   "members": 2,
+   "summary": {
+    "members": 2,
+    "runs": [
+     "0081742f7574",
+     "b980fe123efb"
+    ],
+    "projects": [
+     "ChatGPTNextWeb/NextChat@defdcdb55d85",
+     "react-hook-form/react-hook-form@5fd9ef65290b"
+    ],
+    "servers": [
+     "ts6-6.0.3"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "0081742f7574-v00",
+     "b980fe123efb-v00"
+    ]
+   },
+   "representative": "0081742f7574-v00",
+   "ops_before": 3,
+   "ops_after": 3,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/typescript-language-server/typescript-language-server/issues/1014",
+   "seconds": {
+    "reduction": 136.6,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v1/triage/ts6-r4-diagnostics-extra-2304-mutation-m2-1554be/report.md"
+  },
+  {
+   "gid": "ts6-r4-diagnostics-extra-2322-2552-2554-mutation-m1-6d8de2",
+   "signature": "ts6|r4_edits|diagnostics:extra:2322,2552,2554",
+   "method": "diagnostics",
+   "family": "mutation:M1",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "2fe2fd5714b0"
+    ],
+    "projects": [
+     "Fission-AI/OpenSpec@f179ed4e4056"
+    ],
+    "servers": [
+     "ts6-6.0.3"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "2fe2fd5714b0-v00"
+    ]
+   },
+   "representative": "2fe2fd5714b0-v00",
+   "ops_before": 3,
+   "ops_after": 3,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/typescript-language-server/typescript-language-server/issues/1014",
+   "seconds": {
+    "reduction": 81.2,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v1/triage/ts6-r4-diagnostics-extra-2322-2552-2554-mutation-m1-6d8de2/report.md"
+  },
+  {
+   "gid": "ts6-r4-diagnostics-extra-2322-mutation-m3-1879f3",
+   "signature": "ts6|r4_edits|diagnostics:extra:2322",
+   "method": "diagnostics",
+   "family": "mutation:M3",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "d63f2fe7f749"
+    ],
+    "projects": [
+     "pmndrs/zustand@b57db4f86ef1"
+    ],
+    "servers": [
+     "ts6-6.0.3"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "2"
+    ],
+    "vids": [
+     "d63f2fe7f749-v00"
+    ]
+   },
+   "representative": "d63f2fe7f749-v00",
+   "ops_before": 3,
+   "ops_after": 3,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/typescript-language-server/typescript-language-server/issues/1014",
+   "seconds": {
+    "reduction": 115.2,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v1/triage/ts6-r4-diagnostics-extra-2322-mutation-m3-1879f3/report.md"
+  },
+  {
+   "gid": "ts6-r4-diagnostics-extra-2339-2349-2352-mutation-m1-66b5a5",
+   "signature": "ts6|r4_edits|diagnostics:extra:2339,2349,2352",
+   "method": "diagnostics",
+   "family": "mutation:M1",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "9f1de78ccead"
+    ],
+    "projects": [
+     "ChatGPTNextWeb/NextChat@defdcdb55d85"
+    ],
+    "servers": [
+     "ts6-6.0.3"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "2"
+    ],
+    "vids": [
+     "9f1de78ccead-v00"
+    ]
+   },
+   "representative": "9f1de78ccead-v00",
+   "ops_before": 3,
+   "ops_after": 3,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/typescript-language-server/typescript-language-server/issues/1014",
+   "seconds": {
+    "reduction": 261.0,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v1/triage/ts6-r4-diagnostics-extra-2339-2349-2352-mutation-m1-66b5a5/report.md"
+  },
+  {
+   "gid": "ts6-r4-diagnostics-extra-2339-7053-mutation-m1-2aad71",
+   "signature": "ts6|r4_edits|diagnostics:extra:2339,7053",
+   "method": "diagnostics",
+   "family": "mutation:M1",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "dc251ae86847"
+    ],
+    "projects": [
+     "chenglou/pretext@2e5e2bdaee39"
+    ],
+    "servers": [
+     "ts6-6.0.3"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "2"
+    ],
+    "vids": [
+     "dc251ae86847-v00"
+    ]
+   },
+   "representative": "dc251ae86847-v00",
+   "ops_before": 3,
+   "ops_after": 3,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/typescript-language-server/typescript-language-server/issues/1014",
+   "seconds": {
+    "reduction": 68.1,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v1/triage/ts6-r4-diagnostics-extra-2339-7053-mutation-m1-2aad71/report.md"
+  },
+  {
+   "gid": "ts6-r4-diagnostics-extra-2339-mutation-m1-a8c765",
+   "signature": "ts6|r4_edits|diagnostics:extra:2339",
+   "method": "diagnostics",
+   "family": "mutation:M1",
+   "members": 2,
+   "summary": {
+    "members": 2,
+    "runs": [
+     "044b664b39ee",
+     "f32275e691ea"
+    ],
+    "projects": [
+     "ChromeDevTools/chrome-devtools-mcp@2250cdcde4aa"
+    ],
+    "servers": [
+     "ts6-6.0.3"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1",
+     "2"
+    ],
+    "vids": [
+     "044b664b39ee-v00",
+     "f32275e691ea-v00"
+    ]
+   },
+   "representative": "044b664b39ee-v00",
+   "ops_before": 3,
+   "ops_after": 3,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/typescript-language-server/typescript-language-server/issues/1014",
+   "seconds": {
+    "reduction": 165.0,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v1/triage/ts6-r4-diagnostics-extra-2339-mutation-m1-a8c765/report.md"
+  },
+  {
+   "gid": "ts6-r4-diagnostics-extra-2448-7022-mutation-m1-e5d199",
+   "signature": "ts6|r4_edits|diagnostics:extra:2448,7022",
+   "method": "diagnostics",
+   "family": "mutation:M1",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "3ee57b1ff483"
+    ],
+    "projects": [
+     "modelcontextprotocol/servers@f46d9578190b"
+    ],
+    "servers": [
+     "ts6-6.0.3"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "3ee57b1ff483-v00"
+    ]
+   },
+   "representative": "3ee57b1ff483-v00",
+   "ops_before": 3,
+   "ops_after": 3,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/typescript-language-server/typescript-language-server/issues/1014",
+   "seconds": {
+    "reduction": 80.1,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v1/triage/ts6-r4-diagnostics-extra-2448-7022-mutation-m1-e5d199/report.md"
+  },
+  {
+   "gid": "ts6-r4-diagnostics-extra-2552-mutation-m1-da2133",
+   "signature": "ts6|r4_edits|diagnostics:extra:2552",
+   "method": "diagnostics",
+   "family": "mutation:M1",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "295e3654bbae"
+    ],
+    "projects": [
+     "Fission-AI/OpenSpec@f179ed4e4056"
+    ],
+    "servers": [
+     "ts6-6.0.3"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "2"
+    ],
+    "vids": [
+     "295e3654bbae-v00"
+    ]
+   },
+   "representative": "295e3654bbae-v00",
+   "ops_before": 3,
+   "ops_after": 3,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/typescript-language-server/typescript-language-server/issues/1014",
+   "seconds": {
+    "reduction": 86.0,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v1/triage/ts6-r4-diagnostics-extra-2552-mutation-m1-da2133/report.md"
+  },
+  {
+   "gid": "ts6-r4-diagnostics-extra-2552-mutation-m2-f7e816",
+   "signature": "ts6|r4_edits|diagnostics:extra:2552",
+   "method": "diagnostics",
+   "family": "mutation:M2",
+   "members": 2,
+   "summary": {
+    "members": 2,
+    "runs": [
+     "84e8a4a832bf",
+     "9a01b51ab21f"
+    ],
+    "projects": [
+     "reduxjs/redux@fb3bad6804d6",
+     "vercel/hyper@30ec0a2a91de"
+    ],
+    "servers": [
+     "ts6-6.0.3"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "84e8a4a832bf-v00",
+     "9a01b51ab21f-v00"
+    ]
+   },
+   "representative": "84e8a4a832bf-v00",
+   "ops_before": 3,
+   "ops_after": 3,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/typescript-language-server/typescript-language-server/issues/1014",
+   "seconds": {
+    "reduction": 76.4,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v1/triage/ts6-r4-diagnostics-extra-2552-mutation-m2-f7e816/report.md"
+  },
+  {
+   "gid": "ts6-r4-diagnostics-extra-2554-mutation-m3-d2ab31",
+   "signature": "ts6|r4_edits|diagnostics:extra:2554",
+   "method": "diagnostics",
+   "family": "mutation:M3",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "295e3654bbae"
+    ],
+    "projects": [
+     "Fission-AI/OpenSpec@f179ed4e4056"
+    ],
+    "servers": [
+     "ts6-6.0.3"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "2"
+    ],
+    "vids": [
+     "295e3654bbae-v01"
+    ]
+   },
+   "representative": "295e3654bbae-v01",
+   "ops_before": 3,
+   "ops_after": 3,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/typescript-language-server/typescript-language-server/issues/1014",
+   "seconds": {
+    "reduction": 85.4,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v1/triage/ts6-r4-diagnostics-extra-2554-mutation-m3-d2ab31/report.md"
+  },
+  {
+   "gid": "ts6-r4-diagnostics-extra-2678-mutation-m1-7b3f3b",
+   "signature": "ts6|r4_edits|diagnostics:extra:2678",
+   "method": "diagnostics",
+   "family": "mutation:M1",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "96275a6b746e"
+    ],
+    "projects": [
+     "reduxjs/redux@fb3bad6804d6"
+    ],
+    "servers": [
+     "ts6-6.0.3"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "2"
+    ],
+    "vids": [
+     "96275a6b746e-v00"
+    ]
+   },
+   "representative": "96275a6b746e-v00",
+   "ops_before": 3,
+   "ops_after": 3,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/typescript-language-server/typescript-language-server/issues/1014",
+   "seconds": {
+    "reduction": 80.7,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v1/triage/ts6-r4-diagnostics-extra-2678-mutation-m1-7b3f3b/report.md"
+  },
+  {
+   "gid": "ts6-r5-foldingrange-changed-t2-ec7247",
+   "signature": "ts6|r5_transforms|foldingRange:changed",
+   "method": "foldingRange",
+   "family": "T2",
+   "members": 2,
+   "summary": {
+    "members": 2,
+    "runs": [
+     "33692fdfd349",
+     "921d2ab3f0a6"
+    ],
+    "projects": [
+     "Fission-AI/OpenSpec@f179ed4e4056",
+     "chenglou/pretext@2e5e2bdaee39"
+    ],
+    "servers": [
+     "ts6-6.0.3"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1",
+     "2"
+    ],
+    "vids": [
+     "33692fdfd349-v00",
+     "921d2ab3f0a6-v00"
+    ]
+   },
+   "representative": "33692fdfd349-v00",
+   "ops_before": 2,
+   "ops_after": 2,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/typescript-language-server/typescript-language-server/issues/180",
+   "seconds": {
+    "reduction": 42.6,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v1/triage/ts6-r5-foldingrange-changed-t2-ec7247/report.md"
+  },
+  {
+   "gid": "ts6-r5-foldingrange-extra-t2-625065",
+   "signature": "ts6|r5_transforms|foldingRange:extra",
+   "method": "foldingRange",
+   "family": "T2",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "775a755c313e"
+    ],
+    "projects": [
+     "ChatGPTNextWeb/NextChat@defdcdb55d85"
+    ],
+    "servers": [
+     "ts6-6.0.3"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "2"
+    ],
+    "vids": [
+     "775a755c313e-v00"
+    ]
+   },
+   "representative": "775a755c313e-v00",
+   "ops_before": 2,
+   "ops_after": 2,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/typescript-language-server/typescript-language-server/issues/180",
+   "seconds": {
+    "reduction": 195.1,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v1/triage/ts6-r5-foldingrange-extra-t2-625065/report.md"
+  },
+  {
+   "gid": "ts7-r1-references-extra-h6-574e94",
+   "signature": "ts7|r1_history|references:extra",
+   "method": "references",
+   "family": "H6",
+   "members": 3,
+   "summary": {
+    "members": 3,
+    "runs": [
+     "2ee9fa2c90a7",
+     "b603a3394379",
+     "e12c73f6482e"
+    ],
+    "projects": [
+     "react-hook-form/react-hook-form@5fd9ef65290b"
+    ],
+    "servers": [
+     "ts7-7.0.2"
+    ],
+    "timings": [
+     "race0",
+     "race200",
+     "settled"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "2ee9fa2c90a7-v00",
+     "b603a3394379-v00",
+     "e12c73f6482e-v00"
+    ]
+   },
+   "representative": "2ee9fa2c90a7-v00",
+   "ops_before": 7,
+   "ops_after": 1,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/microsoft/typescript-go/issues/3551",
+   "seconds": {
+    "reduction": 161.6,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v1/triage/ts7-r1-references-extra-h6-574e94/report.md"
+  },
+  {
+   "gid": "ts7-r1-references-missing-h9-2dd24a",
+   "signature": "ts7|r1_history|references:missing",
+   "method": "references",
+   "family": "H9",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "d682da8dbdea"
+    ],
+    "projects": [
+     "react-hook-form/react-hook-form@5fd9ef65290b"
+    ],
+    "servers": [
+     "ts7-7.0.2"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "3"
+    ],
+    "vids": [
+     "d682da8dbdea-v00"
+    ]
+   },
+   "representative": "d682da8dbdea-v00",
+   "ops_before": 14,
+   "ops_after": 5,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/microsoft/typescript-go/issues/4262",
+   "seconds": {
+    "reduction": 359.4,
+    "issues": 2.3
+   },
+   "report": "data/lsptest/runs/main_v1/triage/ts7-r1-references-missing-h9-2dd24a/report.md"
+  },
+  {
+   "gid": "ts7-r3-definitionconsistency-changed-d-a42b32",
+   "signature": "ts7|r3_routes|definitionConsistency:changed",
+   "method": "definitionConsistency",
+   "family": "d",
+   "members": 3,
+   "summary": {
+    "members": 3,
+    "runs": [
+     "08daa748dcca",
+     "e1267d649270",
+     "ec3c69108c7c"
+    ],
+    "projects": [
+     "Fission-AI/OpenSpec@f179ed4e4056",
+     "reduxjs/redux@fb3bad6804d6",
+     "upstash/context7@6477e43e31d2"
+    ],
+    "servers": [
+     "ts7-7.0.2"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "08daa748dcca-v00",
+     "e1267d649270-v00",
+     "ec3c69108c7c-v01"
+    ]
+   },
+   "representative": "08daa748dcca-v00",
+   "ops_before": 0,
+   "ops_after": 0,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/microsoft/typescript-go/issues/4908",
+   "seconds": {
+    "reduction": 77.8,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v1/triage/ts7-r3-definitionconsistency-changed-d-a42b32/report.md"
+  },
+  {
+   "gid": "ts7-r3-definitionconsistency-extra-d-fb74d3",
+   "signature": "ts7|r3_routes|definitionConsistency:extra",
+   "method": "definitionConsistency",
+   "family": "d",
+   "members": 3,
+   "summary": {
+    "members": 3,
+    "runs": [
+     "0599b23297c7",
+     "72403b3b5bd2",
+     "9714b300c761"
+    ],
+    "projects": [
+     "ChatGPTNextWeb/NextChat@defdcdb55d85",
+     "vercel/hyper@30ec0a2a91de"
+    ],
+    "servers": [
+     "ts7-7.0.2"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1",
+     "2"
+    ],
+    "vids": [
+     "0599b23297c7-v00",
+     "72403b3b5bd2-v00",
+     "9714b300c761-v00"
+    ]
+   },
+   "representative": "0599b23297c7-v00",
+   "ops_before": 0,
+   "ops_after": 0,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/microsoft/typescript-go/issues/4908",
+   "seconds": {
+    "reduction": 153.3,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v1/triage/ts7-r3-definitionconsistency-extra-d-fb74d3/report.md"
+  },
+  {
+   "gid": "ts7-r3-definitionconsistency-missing-d-560852",
+   "signature": "ts7|r3_routes|definitionConsistency:missing",
+   "method": "definitionConsistency",
+   "family": "d",
+   "members": 3,
+   "summary": {
+    "members": 3,
+    "runs": [
+     "0b8a8909a573",
+     "cb2b084be72f",
+     "ec3c69108c7c"
+    ],
+    "projects": [
+     "Fission-AI/OpenSpec@f179ed4e4056",
+     "modelcontextprotocol/servers@f46d9578190b",
+     "upstash/context7@6477e43e31d2"
+    ],
+    "servers": [
+     "ts7-7.0.2"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1",
+     "2"
+    ],
+    "vids": [
+     "0b8a8909a573-v00",
+     "cb2b084be72f-v00",
+     "ec3c69108c7c-v00"
+    ]
+   },
+   "representative": "0b8a8909a573-v00",
+   "ops_before": 0,
+   "ops_after": 0,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/microsoft/typescript-go/issues/4908",
+   "seconds": {
+    "reduction": 116.1,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v1/triage/ts7-r3-definitionconsistency-missing-d-560852/report.md"
+  },
+  {
+   "gid": "ts7-r3-highlightvsreferences-gained-c-9f16d3",
+   "signature": "ts7|r3_routes|highlightVsReferences:gained",
+   "method": "highlightVsReferences",
+   "family": "c",
+   "members": 3,
+   "summary": {
+    "members": 3,
+    "runs": [
+     "6a9eee1ad5c6",
+     "8898bb23ac4e",
+     "a5d4350194cc"
+    ],
+    "projects": [
+     "ChromeDevTools/chrome-devtools-mcp@2250cdcde4aa",
+     "react-hook-form/react-hook-form@5fd9ef65290b"
+    ],
+    "servers": [
+     "ts7-7.0.2"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1",
+     "2"
+    ],
+    "vids": [
+     "6a9eee1ad5c6-v00",
+     "8898bb23ac4e-v00",
+     "a5d4350194cc-v00"
+    ]
+   },
+   "representative": "6a9eee1ad5c6-v00",
+   "ops_before": 0,
+   "ops_after": 0,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/microsoft/typescript-go/issues/4262",
+   "seconds": {
+    "reduction": 114.9,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v1/triage/ts7-r3-highlightvsreferences-gained-c-9f16d3/report.md"
+  },
+  {
+   "gid": "ts7-r4-diagnostics-extra-2339-2349-2352-mutation-m1-47c762",
+   "signature": "ts7|r4_edits|diagnostics:extra:2339,2349,2352",
+   "method": "diagnostics",
+   "family": "mutation:M1",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "5b02f641ff24"
+    ],
+    "projects": [
+     "ChatGPTNextWeb/NextChat@defdcdb55d85"
+    ],
+    "servers": [
+     "ts7-7.0.2"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "2"
+    ],
+    "vids": [
+     "5b02f641ff24-v00"
+    ]
+   },
+   "representative": "5b02f641ff24-v00",
+   "ops_before": 3,
+   "ops_after": 3,
+   "lines": "",
+   "matches": 6,
+   "top_match": "https://github.com/microsoft/typescript-go/issues/4587",
+   "seconds": {
+    "reduction": 470.0,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v1/triage/ts7-r4-diagnostics-extra-2339-2349-2352-mutation-m1-47c762/report.md"
+  },
+  {
+   "gid": "ts7-r4-diagnostics-extra-2339-mutation-m1-12bd0a",
+   "signature": "ts7|r4_edits|diagnostics:extra:2339",
+   "method": "diagnostics",
+   "family": "mutation:M1",
+   "members": 2,
+   "summary": {
+    "members": 2,
+    "runs": [
+     "085638e189e1",
+     "8ad982ae3f65"
+    ],
+    "projects": [
+     "ChromeDevTools/chrome-devtools-mcp@2250cdcde4aa"
+    ],
+    "servers": [
+     "ts7-7.0.2"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1",
+     "2"
+    ],
+    "vids": [
+     "085638e189e1-v00",
+     "8ad982ae3f65-v00"
+    ]
+   },
+   "representative": "085638e189e1-v00",
+   "ops_before": 3,
+   "ops_after": 3,
+   "lines": "",
+   "matches": 6,
+   "top_match": "https://github.com/microsoft/typescript-go/issues/4587",
+   "seconds": {
+    "reduction": 193.6,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v1/triage/ts7-r4-diagnostics-extra-2339-mutation-m1-12bd0a/report.md"
+  },
+  {
+   "gid": "ts7-r5-documentsymbol-changed-t3-8eae6d",
+   "signature": "ts7|r5_transforms|documentSymbol:changed",
+   "method": "documentSymbol",
+   "family": "T3",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "89cafd55dfec"
+    ],
+    "projects": [
+     "reduxjs/redux@fb3bad6804d6"
+    ],
+    "servers": [
+     "ts7-7.0.2"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "2"
+    ],
+    "vids": [
+     "89cafd55dfec-v00"
+    ]
+   },
+   "representative": "89cafd55dfec-v00",
+   "ops_before": 358,
+   "ops_after": 2,
+   "lines": "",
+   "matches": 1,
+   "top_match": "https://github.com/microsoft/typescript-go/issues/1439",
+   "seconds": {
+    "reduction": 309.3,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v1/triage/ts7-r5-documentsymbol-changed-t3-8eae6d/report.md"
+  },
+  {
+   "gid": "ts7-r5-foldingrange-changed-t2-5985a9",
+   "signature": "ts7|r5_transforms|foldingRange:changed",
+   "method": "foldingRange",
+   "family": "T2",
+   "members": 2,
+   "summary": {
+    "members": 2,
+    "runs": [
+     "49806e977a87",
+     "4d91da4e757c"
+    ],
+    "projects": [
+     "Fission-AI/OpenSpec@f179ed4e4056",
+     "chenglou/pretext@2e5e2bdaee39"
+    ],
+    "servers": [
+     "ts7-7.0.2"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1",
+     "2"
+    ],
+    "vids": [
+     "49806e977a87-v00",
+     "4d91da4e757c-v00"
+    ]
+   },
+   "representative": "49806e977a87-v00",
+   "ops_before": 2,
+   "ops_after": 2,
+   "lines": "",
+   "matches": 6,
+   "top_match": "https://github.com/microsoft/typescript-go/issues/4722",
+   "seconds": {
+    "reduction": 53.1,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v1/triage/ts7-r5-foldingrange-changed-t2-5985a9/report.md"
+  },
+  {
+   "gid": "ts7-r5-foldingrange-extra-t2-5dd83a",
+   "signature": "ts7|r5_transforms|foldingRange:extra",
+   "method": "foldingRange",
+   "family": "T2",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "ba0ac55b3486"
+    ],
+    "projects": [
+     "ChatGPTNextWeb/NextChat@defdcdb55d85"
+    ],
+    "servers": [
+     "ts7-7.0.2"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "2"
+    ],
+    "vids": [
+     "ba0ac55b3486-v00"
+    ]
+   },
+   "representative": "ba0ac55b3486-v00",
+   "ops_before": 2,
+   "ops_after": 2,
+   "lines": "",
+   "matches": 5,
+   "top_match": "https://github.com/microsoft/typescript-go/issues/4722",
+   "seconds": {
+    "reduction": 498.4,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v1/triage/ts7-r5-foldingrange-extra-t2-5dd83a/report.md"
+  },
+  {
+   "gid": "ts7-r6-completion-changed-completion-997cb3",
+   "signature": "ts7|r6_crossimpl|completion:changed",
+   "method": "completion",
+   "family": "completion",
+   "members": 3,
+   "summary": {
+    "members": 3,
+    "runs": [
+     "15682bd48ce1",
+     "16efc9f9a21f",
+     "51c467cdc512"
+    ],
+    "projects": [
+     "Fission-AI/OpenSpec@f179ed4e4056",
+     "chenglou/pretext@2e5e2bdaee39",
+     "upstash/context7@6477e43e31d2"
+    ],
+    "servers": [
+     "ts7-7.0.2"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "15682bd48ce1-v01",
+     "16efc9f9a21f-v00",
+     "51c467cdc512-v01"
+    ]
+   },
+   "representative": "15682bd48ce1-v01",
+   "ops_before": 0,
+   "ops_after": 0,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/microsoft/typescript-go/issues/2598",
+   "seconds": {
+    "reduction": 197.0,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v1/triage/ts7-r6-completion-changed-completion-997cb3/report.md"
+  },
+  {
+   "gid": "ts7-r6-completion-extra-completion-afe533",
+   "signature": "ts7|r6_crossimpl|completion:extra",
+   "method": "completion",
+   "family": "completion",
+   "members": 3,
+   "summary": {
+    "members": 3,
+    "runs": [
+     "15682bd48ce1",
+     "31a4dfcaf73f",
+     "f1084e14ba1e"
+    ],
+    "projects": [
+     "Fission-AI/OpenSpec@f179ed4e4056",
+     "react-hook-form/react-hook-form@5fd9ef65290b"
+    ],
+    "servers": [
+     "ts7-7.0.2"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1",
+     "2"
+    ],
+    "vids": [
+     "15682bd48ce1-v00",
+     "31a4dfcaf73f-v00",
+     "f1084e14ba1e-v00"
+    ]
+   },
+   "representative": "15682bd48ce1-v00",
+   "ops_before": 0,
+   "ops_after": 0,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/microsoft/typescript-go/issues/4587",
+   "seconds": {
+    "reduction": 215.7,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v1/triage/ts7-r6-completion-extra-completion-afe533/report.md"
+  },
+  {
+   "gid": "ts7-r6-completion-gained-completion-4b6660",
+   "signature": "ts7|r6_crossimpl|completion:gained",
+   "method": "completion",
+   "family": "completion",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "f1084e14ba1e"
+    ],
+    "projects": [
+     "react-hook-form/react-hook-form@5fd9ef65290b"
+    ],
+    "servers": [
+     "ts7-7.0.2"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "2"
+    ],
+    "vids": [
+     "f1084e14ba1e-v01"
+    ]
+   },
+   "representative": "f1084e14ba1e-v01",
+   "ops_before": 0,
+   "ops_after": 0,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/microsoft/typescript-go/issues/2669",
+   "seconds": {
+    "reduction": 308.6,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v1/triage/ts7-r6-completion-gained-completion-4b6660/report.md"
+  },
+  {
+   "gid": "ts7-r6-completion-missing-completion-60ede6",
+   "signature": "ts7|r6_crossimpl|completion:missing",
+   "method": "completion",
+   "family": "completion",
+   "members": 3,
+   "summary": {
+    "members": 3,
+    "runs": [
+     "33f1bc8d2cec",
+     "49271a678e03",
+     "51c467cdc512"
+    ],
+    "projects": [
+     "react-hook-form/react-hook-form@5fd9ef65290b",
+     "reduxjs/redux@fb3bad6804d6",
+     "upstash/context7@6477e43e31d2"
+    ],
+    "servers": [
+     "ts7-7.0.2"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "33f1bc8d2cec-v01",
+     "49271a678e03-v00",
+     "51c467cdc512-v00"
+    ]
+   },
+   "representative": "33f1bc8d2cec-v01",
+   "ops_before": 0,
+   "ops_after": 0,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/microsoft/typescript-go/issues/4587",
+   "seconds": {
+    "reduction": 188.2,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v1/triage/ts7-r6-completion-missing-completion-60ede6/report.md"
+  },
+  {
+   "gid": "ts7-r6-definition-changed-definition-1c2318",
+   "signature": "ts7|r6_crossimpl|definition:changed",
+   "method": "definition",
+   "family": "definition",
+   "members": 3,
+   "summary": {
+    "members": 3,
+    "runs": [
+     "15682bd48ce1",
+     "31a4dfcaf73f",
+     "70cf125dedf2"
+    ],
+    "projects": [
+     "Fission-AI/OpenSpec@f179ed4e4056",
+     "vercel/hyper@30ec0a2a91de"
+    ],
+    "servers": [
+     "ts7-7.0.2"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1",
+     "2"
+    ],
+    "vids": [
+     "15682bd48ce1-v02",
+     "31a4dfcaf73f-v01",
+     "70cf125dedf2-v00"
+    ]
+   },
+   "representative": "15682bd48ce1-v02",
+   "ops_before": 0,
+   "ops_after": 0,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/microsoft/typescript-go/issues/1673",
+   "seconds": {
+    "reduction": 163.5,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v1/triage/ts7-r6-definition-changed-definition-1c2318/report.md"
+  },
+  {
+   "gid": "ts7-r6-definition-extra-definition-d8e982",
+   "signature": "ts7|r6_crossimpl|definition:extra",
+   "method": "definition",
+   "family": "definition",
+   "members": 3,
+   "summary": {
+    "members": 3,
+    "runs": [
+     "33f1bc8d2cec",
+     "70cf125dedf2",
+     "f1084e14ba1e"
+    ],
+    "projects": [
+     "react-hook-form/react-hook-form@5fd9ef65290b",
+     "vercel/hyper@30ec0a2a91de"
+    ],
+    "servers": [
+     "ts7-7.0.2"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1",
+     "2"
+    ],
+    "vids": [
+     "33f1bc8d2cec-v02",
+     "70cf125dedf2-v01",
+     "f1084e14ba1e-v03"
+    ]
+   },
+   "representative": "33f1bc8d2cec-v02",
+   "ops_before": 0,
+   "ops_after": 0,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/microsoft/typescript-go/issues/4587",
+   "seconds": {
+    "reduction": 300.8,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v1/triage/ts7-r6-definition-extra-definition-d8e982/report.md"
+  },
+  {
+   "gid": "ts7-r6-definition-gained-definition-24364e",
+   "signature": "ts7|r6_crossimpl|definition:gained",
+   "method": "definition",
+   "family": "definition",
+   "members": 3,
+   "summary": {
+    "members": 3,
+    "runs": [
+     "15682bd48ce1",
+     "51c467cdc512",
+     "f1084e14ba1e"
+    ],
+    "projects": [
+     "Fission-AI/OpenSpec@f179ed4e4056",
+     "react-hook-form/react-hook-form@5fd9ef65290b",
+     "upstash/context7@6477e43e31d2"
+    ],
+    "servers": [
+     "ts7-7.0.2"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1",
+     "2"
+    ],
+    "vids": [
+     "15682bd48ce1-v03",
+     "51c467cdc512-v02",
+     "f1084e14ba1e-v02"
+    ]
+   },
+   "representative": "15682bd48ce1-v03",
+   "ops_before": 0,
+   "ops_after": 0,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/microsoft/typescript-go/issues/2964",
+   "seconds": {
+    "reduction": 162.2,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v1/triage/ts7-r6-definition-gained-definition-24364e/report.md"
+  },
+  {
+   "gid": "ts7-r6-diagnostics-changed-2322-2503-2591-diagnostics-dee939",
+   "signature": "ts7|r6_crossimpl|diagnostics:changed:2322,2503,2591",
+   "method": "diagnostics",
+   "family": "diagnostics",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "15682bd48ce1"
+    ],
+    "projects": [
+     "Fission-AI/OpenSpec@f179ed4e4056"
+    ],
+    "servers": [
+     "ts7-7.0.2"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "15682bd48ce1-v04"
+    ]
+   },
+   "representative": "15682bd48ce1-v04",
+   "ops_before": 0,
+   "ops_after": 0,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/microsoft/typescript-go/issues/4827",
+   "seconds": {
+    "reduction": 175.5,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v1/triage/ts7-r6-diagnostics-changed-2322-2503-2591-diagnostics-dee939/report.md"
+  },
+  {
+   "gid": "ts7-r6-diagnostics-missing-2304-2593-diagnostics-58256c",
+   "signature": "ts7|r6_crossimpl|diagnostics:missing:2304,2593",
+   "method": "diagnostics",
+   "family": "diagnostics",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "f1084e14ba1e"
+    ],
+    "projects": [
+     "react-hook-form/react-hook-form@5fd9ef65290b"
+    ],
+    "servers": [
+     "ts7-7.0.2"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "2"
+    ],
+    "vids": [
+     "f1084e14ba1e-v04"
+    ]
+   },
+   "representative": "f1084e14ba1e-v04",
+   "ops_before": 0,
+   "ops_after": 0,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/microsoft/typescript-go/issues/4745",
+   "seconds": {
+    "reduction": 232.1,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v1/triage/ts7-r6-diagnostics-missing-2304-2593-diagnostics-58256c/report.md"
+  },
+  {
+   "gid": "ts7-r6-diagnostics-missing-80006-diagnostics-da3300",
+   "signature": "ts7|r6_crossimpl|diagnostics:missing:80006",
+   "method": "diagnostics",
+   "family": "diagnostics",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "8d2a914da68a"
+    ],
+    "projects": [
+     "vercel/hyper@30ec0a2a91de"
+    ],
+    "servers": [
+     "ts7-7.0.2"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "2"
+    ],
+    "vids": [
+     "8d2a914da68a-v00"
+    ]
+   },
+   "representative": "8d2a914da68a-v00",
+   "ops_before": 0,
+   "ops_after": 0,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/microsoft/typescript-go/issues/4745",
+   "seconds": {
+    "reduction": 830.5,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v1/triage/ts7-r6-diagnostics-missing-80006-diagnostics-da3300/report.md"
+  },
+  {
+   "gid": "ts7-r6-diagnostics-moved-6133-diagnostics-5e7a2f",
+   "signature": "ts7|r6_crossimpl|diagnostics:moved:6133",
+   "method": "diagnostics",
+   "family": "diagnostics",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "33f1bc8d2cec"
+    ],
+    "projects": [
+     "react-hook-form/react-hook-form@5fd9ef65290b"
+    ],
+    "servers": [
+     "ts7-7.0.2"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "33f1bc8d2cec-v03"
+    ]
+   },
+   "representative": "33f1bc8d2cec-v03",
+   "ops_before": 0,
+   "ops_after": 0,
+   "lines": "",
+   "matches": 5,
+   "top_match": "https://github.com/microsoft/typescript-go/issues/4745",
+   "seconds": {
+    "reduction": 255.5,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v1/triage/ts7-r6-diagnostics-moved-6133-diagnostics-5e7a2f/report.md"
+  },
+  {
+   "gid": "ts7-r6-hover-changed-hover-e5c91e",
+   "signature": "ts7|r6_crossimpl|hover:changed",
+   "method": "hover",
+   "family": "hover",
+   "members": 3,
+   "summary": {
+    "members": 3,
+    "runs": [
+     "15682bd48ce1",
+     "33f1bc8d2cec",
+     "51c467cdc512"
+    ],
+    "projects": [
+     "Fission-AI/OpenSpec@f179ed4e4056",
+     "react-hook-form/react-hook-form@5fd9ef65290b",
+     "upstash/context7@6477e43e31d2"
+    ],
+    "servers": [
+     "ts7-7.0.2"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "vids": [
+     "15682bd48ce1-v05",
+     "33f1bc8d2cec-v04",
+     "51c467cdc512-v03"
+    ]
+   },
+   "representative": "15682bd48ce1-v05",
+   "ops_before": 0,
+   "ops_after": 0,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/microsoft/typescript-go/issues/4758",
+   "seconds": {
+    "reduction": 126.7,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v1/triage/ts7-r6-hover-changed-hover-e5c91e/report.md"
+  },
+  {
+   "gid": "ts7-r6-hover-lost-hover-feed64",
+   "signature": "ts7|r6_crossimpl|hover:lost",
+   "method": "hover",
+   "family": "hover",
+   "members": 1,
+   "summary": {
+    "members": 1,
+    "runs": [
+     "f1084e14ba1e"
+    ],
+    "projects": [
+     "react-hook-form/react-hook-form@5fd9ef65290b"
+    ],
+    "servers": [
+     "ts7-7.0.2"
+    ],
+    "timings": [
+     "settled"
+    ],
+    "seeds": [
+     "2"
+    ],
+    "vids": [
+     "f1084e14ba1e-v05"
+    ]
+   },
+   "representative": "f1084e14ba1e-v05",
+   "ops_before": 0,
+   "ops_after": 0,
+   "lines": "",
+   "matches": 8,
+   "top_match": "https://github.com/microsoft/typescript-go/issues/3605",
+   "seconds": {
+    "reduction": 265.3,
+    "issues": 0.0
+   },
+   "report": "data/lsptest/runs/main_v1/triage/ts7-r6-hover-lost-hover-feed64/report.md"
+  }
+ ],
+ "date": "2026-09-25 19:26"
+}

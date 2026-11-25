@@ -1,0 +1,256 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "7fd3492bb479-v00",
+ "run_id": "7fd3492bb479",
+ "oracle": "r4_edits",
+ "server": {
+  "kind": "gopls",
+  "version": "v0.23.0"
+ },
+ "project": {
+  "name": "nektos/act@4f411281417e",
+  "source": "corpus",
+  "ref": "temp/corpus/nektos__act@4f411281417e",
+  "commit": "4f411281417e88660bea1c1a1749aa71ae0bd60f",
+  "language": "go"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "pkg/container/docker_auth.go",
+    "positions": [
+     [
+      28,
+      39
+     ]
+    ],
+    "ends": [],
+    "names": [
+     ""
+    ]
+   },
+   {
+    "path": "pkg/container/docker_network.go",
+    "positions": [],
+    "ends": [],
+    "names": []
+   },
+   {
+    "path": "pkg/runner/step_action_remote.go",
+    "positions": [],
+    "ends": [],
+    "names": []
+   }
+  ]
+ },
+ "key": {
+  "method": "diagnostics",
+  "path": "pkg/container/docker_auth.go",
+  "line": 28,
+  "character": 39,
+  "extra": "M2:quickfix-errors:Create variable imge"
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "pkg/container/docker_auth.go"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/container/docker_auth.go",
+   "start": [
+    28,
+    39
+   ],
+   "end": [
+    28,
+    44
+   ],
+   "text": "imge"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/container/docker_auth.go",
+   "start": [
+    28,
+    2
+   ],
+   "end": [
+    28,
+    2
+   ],
+   "text": "mge := 0\n\ti"
+  }
+ ],
+ "case": {
+  "action_kind": "quickfix",
+  "base_errors": 0,
+  "check": "errors",
+  "diag": {
+   "code": "UndeclaredName",
+   "message": "undefined: imge",
+   "range": {
+    "end": {
+     "character": 43,
+     "line": 28
+    },
+    "start": {
+     "character": 39,
+     "line": 28
+    }
+   },
+   "severity": 1
+  },
+  "fix_introduced_errors": [
+   {
+    "code": "NonSliceableOperand",
+    "message": "cannot slice imge (variable of type int)",
+    "path": "pkg/container/docker_auth.go",
+    "range": {
+     "end": {
+      "character": 43,
+      "line": 29
+     },
+     "start": {
+      "character": 39,
+      "line": 29
+     }
+    },
+    "severity": 1
+   }
+  ],
+  "fix_ops": [
+   {
+    "end": [
+     28,
+     2
+    ],
+    "kind": "change",
+    "path": "pkg/container/docker_auth.go",
+    "start": [
+     28,
+     2
+    ],
+    "text": "mge := 0\n\ti"
+   }
+  ],
+  "kind": "mutation",
+  "mutation": {
+   "end": [
+    28,
+    44
+   ],
+   "id": "M2",
+   "offsets": [
+    794,
+    799
+   ],
+   "sha": "3cc5d78579a5bae5",
+   "start": [
+    28,
+    39
+   ],
+   "text": "imge",
+   "what": "misspell 'image' as 'imge' (drop a middle character)"
+  },
+  "n_fix_ops": 1,
+  "path": "pkg/container/docker_auth.go",
+  "post_errors": 1,
+  "title": "Create variable imge",
+  "via": "resolve"
+ },
+ "shape": "diagnostics:extra:NonSliceableOperand",
+ "signature": "gopls|r4_edits|diagnostics:extra:NonSliceableOperand",
+ "expected": [],
+ "actual": [
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "NonSliceableOperand",
+   "compiler",
+   "cannot slice imge (variable of type int)"
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "quick fix 'Create variable imge' for UndeclaredName at pkg/container/docker_auth.go:29:40 raises the error count in the edited files from 0 to 1 (seeded by M2: misspell 'image' as 'imge' (drop a middle character); errors before the mutation 0, after the fix 1); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 135s",
+ "violation": {
+  "oracle": "r4_edits",
+  "server": "gopls-v0.23.0",
+  "project": "nektos/act@4f411281417e",
+  "key": {
+   "method": "diagnostics",
+   "path": "pkg/container/docker_auth.go",
+   "line": 28,
+   "character": 39,
+   "extra": "M2:quickfix-errors:Create variable imge"
+  },
+  "expected": [],
+  "actual": [
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "NonSliceableOperand",
+    "compiler",
+    "cannot slice imge (variable of type int)"
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "pkg/container/docker_auth.go"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/container/docker_auth.go",
+    "start": [
+     28,
+     39
+    ],
+    "end": [
+     28,
+     44
+    ],
+    "text": "imge"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/container/docker_auth.go",
+    "start": [
+     28,
+     2
+    ],
+    "end": [
+     28,
+     2
+    ],
+    "text": "mge := 0\n\ti"
+   }
+  ],
+  "detail": "{\"case\": {\"action_kind\": \"quickfix\", \"base_errors\": 0, \"check\": \"errors\", \"diag\": {\"code\": \"UndeclaredName\", \"message\": \"undefined: imge\", \"range\": {\"end\": {\"character\": 43, \"line\": 28}, \"start\": {\"character\": 39, \"line\": 28}}, \"severity\": 1}, \"fix_introduced_errors\": [{\"code\": \"NonSliceableOperand\", \"message\": \"cannot slice imge (variable of type int)\", \"path\": \"pkg/container/docker_auth.go\", \"range\": {\"end\": {\"character\": 43, \"line\": 29}, \"start\": {\"character\": 39, \"line\": 29}}, \"severity\": 1}], \"fix_ops\": [{\"end\": [28, 2], \"kind\": \"change\", \"path\": \"pkg/container/docker_auth.go\", \"start\": [28, 2], \"text\": \"mge := 0\\n\\ti\"}], \"kind\": \"mutation\", \"mutation\": {\"end\": [28, 44], \"id\": \"M2\", \"offsets\": [794, 799], \"sha\": \"3cc5d78579a5bae5\", \"start\": [28, 39], \"text\": \"imge\", \"what\": \"misspell 'image' as 'imge' (drop a middle character)\"}, \"n_fix_ops\": 1, \"path\": \"pkg/container/docker_auth.go\", \"post_errors\": 1, \"title\": \"Create variable imge\", \"via\": \"resolve\"}, \"note\": \"quick fix 'Create variable imge' for UndeclaredName at pkg/container/docker_auth.go:29:40 raises the error count in the edited files from 0 to 1 (seeded by M2: misspell 'image' as 'imge' (drop a middle character); errors before the mutation 0, after the fix 1); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 135s\", \"shape\": \"diagnostics:extra:NonSliceableOperand\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "gopls|r4_edits|diagnostics:extra:NonSliceableOperand",
+  "run_id": "7fd3492bb479"
+ },
+ "replay_logs": [
+  "logs/gopls-v0.23.0-trd80a9a-r4-replay-baseline-20260925-160153-280233.jsonl.gz",
+  "logs/gopls-v0.23.0-trd80a9a-r4-replay-case-20260925-160140-9a3986.jsonl.gz",
+  "logs/gopls-v0.23.0-trd80a9a-r4-replay-control-20260925-160159-c519f0.jsonl.gz"
+ ],
+ "project_files": {},
+ "group": "gopls-r4-diagnostics-extra-nonsliceableoperand-mutation-m2-d80a9a",
+ "reduced": true
+}

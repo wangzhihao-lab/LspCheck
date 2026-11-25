@@ -1,0 +1,86 @@
+{
+ "group": "gopls-r1-references-extra-h9-0290a7",
+ "queried": "tea.Model",
+ "declarations": [
+  "tea.go:53"
+ ],
+ "fresh_n": 80,
+ "history_n": 87,
+ "extra": [
+  {
+   "location": "cursed_renderer_test.go:20:43",
+   "token": "Model",
+   "qualified": false,
+   "package": "tea",
+   "in_test_files": true,
+   "shadowing": [],
+   "line": "func (m *mouseRaceModel) Update(msg Msg) (Model, Cmd) {"
+  },
+  {
+   "location": "exec_test.go:32:42",
+   "token": "Model",
+   "qualified": false,
+   "package": "tea",
+   "in_test_files": true,
+   "shadowing": [],
+   "line": "func (m *testExecModel) Update(msg Msg) (Model, Cmd) {"
+  },
+  {
+   "location": "options_test.go:39:42",
+   "token": "Model",
+   "qualified": false,
+   "package": "tea",
+   "in_test_files": true,
+   "shadowing": [],
+   "line": "p := NewProgram(nil, WithFilter(func(_ Model, msg Msg) Msg { return msg }))"
+  },
+  {
+   "location": "screen_test.go:37:42",
+   "token": "Model",
+   "qualified": false,
+   "package": "tea",
+   "in_test_files": true,
+   "shadowing": [],
+   "line": "func (m *testViewModel) Update(msg Msg) (Model, Cmd) {"
+  },
+  {
+   "location": "tea_test.go:37:38",
+   "token": "Model",
+   "qualified": false,
+   "package": "tea",
+   "in_test_files": true,
+   "shadowing": [],
+   "line": "func (m *testModel) Update(msg Msg) (Model, Cmd) {"
+  },
+  {
+   "location": "tea_test.go:244:20",
+   "token": "Model",
+   "qualified": false,
+   "package": "tea",
+   "in_test_files": true,
+   "shadowing": [],
+   "line": "p.filter = func(_ Model, msg Msg) Msg {"
+  },
+  {
+   "location": "tea_test.go:623:38",
+   "token": "Model",
+   "qualified": false,
+   "package": "tea",
+   "in_test_files": true,
+   "shadowing": [],
+   "line": "func (m benchModel) Update(msg Msg) (Model, Cmd) {"
+  }
+ ],
+ "go_list": {
+  "cmd": "go list -test -f {{.ImportPath}} {{.TestGoFiles}} .",
+  "exit": 0,
+  "output": "charm.land/bubbletea/v2 [commands_test.go cursed_renderer_test.go exec_test.go logging_test.go options_test.go screen_test.go tea_test.go]\ncharm.land/bubbletea/v2.test []\ncharm.land/bubbletea/v2 [charm.land/bubbletea/v2.test] [commands_test.go cursed_renderer_test.go exec_test.go logging_test.go options_test.go screen_test.go tea_test.go]"
+ },
+ "go_vet": {
+  "cmd": "go vet .",
+  "exit": 0,
+  "output": ""
+ },
+ "go_version": "go version go1.27.1 darwin/arm64",
+ "all_extra_are_references": true
+}

@@ -1,0 +1,70 @@
+{
+ "schema": 1,
+ "id": "tsserver-52274",
+ "meta": {
+  "server": "tsserver",
+  "kind": "tsserver",
+  "number": 52274,
+  "url": "https://github.com/microsoft/TypeScript/issues/52274",
+  "title": "Suggestion code action adds another JSDoc",
+  "oracle_class": "R4",
+  "subtype": "quickfix",
+  "fix_ref": "microsoft/TypeScript#52276 (fix(52274): Suggestion code action adds another JSDoc), 6f338b9936, 2023-01-20; git tag --contains: first in v5.0-beta / v5.0.2",
+  "fix_shas": [
+   "6f338b9936566786cc192e80754a72467f6d53f6"
+  ],
+  "pre_version": "4.9.5",
+  "post_version": "5.0.2",
+  "pre_build": "4.9.5+tsls3.3.0",
+  "post_build": "5.0.2+tsls3.3.0",
+  "wrapper": "typescript-language-server@3.3.0",
+  "build_notes": "npm typescript@4.9.5 (2023-01-30) and typescript@5.0.2 (2023-03-16), both behind typescript-language-server@3.3.0 (the latest wrapper release before 5.0.2), started with the pinned tsserver.js; the reported TypeScript version is checked on every session. The report was made with 4.9.4; 4.9.5 is the last 4.9 release and does not contain the fix.",
+  "candidate_rank": 30,
+  "effort_minutes": 6,
+  "notes": "TS8024 is a suggestion diagnostic in .ts files (published by the wrapper with severity 4). The buggy fix inserts an empty '/** */' after 'export' and leaves the mismatched @param tag in place."
+ },
+ "language": "typescript",
+ "settings": {},
+ "settings_note": "The issue names no settings; no tsconfig.json, so tsserver uses an inferred project.",
+ "session": {
+  "settle_timeout_s": 120
+ },
+ "files": [
+  {
+   "path": "index.ts",
+   "provenance": "issue",
+   "source": "issue body, first code block (step 2: 'type the following code')",
+   "note": "the file name is not given in the issue (the maintainer's trace uses x.ts)"
+  }
+ ],
+ "repro": {
+  "attempt": 1,
+  "timing": "settled",
+  "steps": "Open index.ts: the suggestion diagnostic TS8024 appears under n ('JSDoc @param tag has name n, but there is no parameter with that name'). Request code actions there and select \"Delete unused '@param' tag 'n'\". Reported: the code becomes 'export /** */ const zero ...' with the wrong @param tag still in place; expected: the tag is deleted. Probe: after the fix, a fresh session on the edited file must neither report the targeted TS8024 nor a new error.",
+  "ops": [
+   {
+    "kind": "open",
+    "path": "index.ts"
+   }
+  ],
+  "probe": {
+   "type": "edit_leaves_diagnostic",
+   "params": {
+    "edit": {
+     "via": "code_action",
+     "path": "index.ts",
+     "diagnostic": {
+      "code": "8024"
+     },
+     "kind": "quickfix",
+     "title_re": "(?i)delete unused '@param' tag",
+     "missing": "invalid"
+    },
+    "target": {
+     "code": "8024"
+    }
+   }
+  }
+ },
+ "attempts": []
+}

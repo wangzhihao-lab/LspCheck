@@ -1,0 +1,60 @@
+{
+ "queries": [
+  "references extra repo:microsoft/pyright is:issue",
+  "references stale repo:microsoft/pyright is:issue"
+ ],
+ "matches": [
+  {
+   "repo": "microsoft/pyright",
+   "number": 10279,
+   "title": "Unknown Send type in generator with yield from",
+   "url": "https://github.com/microsoft/pyright/issues/10279",
+   "state": "closed",
+   "created": "2025-04-08",
+   "comments": 4,
+   "query": "references extra repo:microsoft/pyright is:issue"
+  },
+  {
+   "repo": "microsoft/pyright",
+   "number": 10414,
+   "title": "\"Type is partially unknown\" on typed functions when using `--verifytypes`, even with `--ignoreexternal`",
+   "url": "https://github.com/microsoft/pyright/issues/10414",
+   "state": "closed",
+   "created": "2025-05-05",
+   "comments": 5,
+   "query": "references extra repo:microsoft/pyright is:issue"
+  },
+  {
+   "repo": "microsoft/pyright",
+   "number": 10715,
+   "title": "@overload function gives incorrect revealed type for Pylance but not for pyright/mypy",
+   "url": "https://github.com/microsoft/pyright/issues/10715",
+   "state": "closed",
+   "created": "2025-07-16",
+   "comments": 38,
+   "query": "references extra repo:microsoft/pyright is:issue"
+  },
+  {
+   "repo": "microsoft/pyright",
+   "number": 10053,
+   "title": "Django BooleanField default value error",
+   "url": "https://github.com/microsoft/pyright/issues/10053",
+   "state": "closed",
+   "created": "2025-03-10",
+   "comments": 5,
+   "query": "references extra repo:microsoft/pyright is:issue"
+  },
+  {
+   "repo": "microsoft/pyright",
+   "number": 9304,
+   "title": "Ignores configuation",
+   "url": "https://github.com/microsoft/pyright/issues/9304",
+   "state": "closed",
+   "created": "2024-10-24",
+   "comments": 1,
+   "query": "references extra repo:microsoft/pyright is:issue"
+  }
+ ],
+ "notes": [],
+ "authenticated": true
+}

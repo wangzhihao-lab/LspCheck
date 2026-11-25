@@ -1,0 +1,3 @@
+{
+ "repro.py": "from __future__ import annotations\n\n\n\n\n\n\n\nfrom multiprocessing import Pool\n\n\n\ndef execute_shell_commands(\n\n\n\n) -> list[tuple[int, datetime.date]]:\n    with Pool(workers) as po:\n        exit_codes = po.map(os.system, [cmd(d) for d in dates])\n\n"
+}

@@ -1,0 +1,551 @@
+{
+ "format": 1,
+ "campaign": "main_v2",
+ "vid": "1da2e474f9f5-v00",
+ "run_id": "1da2e474f9f5",
+ "oracle": "r1_history",
+ "server": {
+  "kind": "pyright",
+  "version": "1.1.414"
+ },
+ "project": {
+  "name": "ultralytics/yolov5@402e17ddf820",
+  "source": "corpus",
+  "ref": "temp/corpus/ultralytics__yolov5@402e17ddf820",
+  "commit": "402e17ddf820996f51a191cbb798376e1144f069",
+  "language": "python"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "race0",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "detect.py",
+    "positions": [
+     [
+      82,
+      8
+     ],
+     [
+      171,
+      71
+     ],
+     [
+      192,
+      61
+     ],
+     [
+      255,
+      29
+     ],
+     [
+      267,
+      58
+     ],
+     [
+      270,
+      71
+     ],
+     [
+      308,
+      41
+     ],
+     [
+      371,
+      17
+     ],
+     [
+      372,
+      7
+     ],
+     [
+      389,
+      17
+     ],
+     [
+      393,
+      17
+     ],
+     [
+      438,
+      10
+     ]
+    ],
+    "ends": [
+     [
+      82,
+      12
+     ],
+     [
+      171,
+      73
+     ],
+     [
+      192,
+      66
+     ],
+     [
+      255,
+      31
+     ],
+     [
+      267,
+      60
+     ],
+     [
+      270,
+      72
+     ],
+     [
+      308,
+      43
+     ],
+     [
+      371,
+      23
+     ],
+     [
+      372,
+      10
+     ],
+     [
+      389,
+      23
+     ],
+     [
+      393,
+      23
+     ],
+     [
+      438,
+      12
+     ]
+    ],
+    "names": [
+     "save_csv",
+     "data",
+     "prediction",
+     "conf",
+     "xyxy",
+     "gn",
+     "cv2",
+     "add_argument",
+     "parser",
+     "add_argument",
+     "add_argument",
+     "opt"
+    ]
+   },
+   {
+    "path": "utils/segment/dataloaders.py",
+    "positions": [
+     [
+      55,
+      20
+     ],
+     [
+      69,
+      8
+     ],
+     [
+      116,
+      18
+     ],
+     [
+      117,
+      18
+     ],
+     [
+      225,
+      12
+     ],
+     [
+      248,
+      32
+     ],
+     [
+      252,
+      66
+     ],
+     [
+      253,
+      76
+     ],
+     [
+      261,
+      51
+     ],
+     [
+      288,
+      26
+     ],
+     [
+      296,
+      49
+     ],
+     [
+      300,
+      43
+     ]
+    ],
+    "ends": [
+     [
+      55,
+      22
+     ],
+     [
+      69,
+      13
+     ],
+     [
+      116,
+      25
+     ],
+     [
+      117,
+      24
+     ],
+     [
+      225,
+      13
+     ],
+     [
+      248,
+      33
+     ],
+     [
+      252,
+      67
+     ],
+     [
+      253,
+      77
+     ],
+     [
+      261,
+      53
+     ],
+     [
+      288,
+      28
+     ],
+     [
+      296,
+      52
+     ],
+     [
+      300,
+      45
+     ]
+    ],
+    "names": [
+     "int",
+     "generator",
+     "image_weights",
+     "cache_images",
+     "nl",
+     "s",
+     "w",
+     "h",
+     "x1b",
+     "self",
+     "batch",
+     "cat"
+    ]
+   },
+   {
+    "path": "utils/segment/general.py",
+    "positions": [
+     [
+      16,
+      17
+     ],
+     [
+      17,
+      35
+     ],
+     [
+      24,
+      10
+     ],
+     [
+      39,
+      6
+     ],
+     [
+      42,
+      13
+     ],
+     [
+      44,
+      33
+     ],
+     [
+      68,
+      40
+     ],
+     [
+      69,
+      34
+     ],
+     [
+      71,
+      35
+     ],
+     [
+      93,
+      9
+     ],
+     [
+      104,
+      13
+     ],
+     [
+      111,
+      10
+     ]
+    ],
+    "ends": [
+     [
+      16,
+      20
+     ],
+     [
+      17,
+      38
+     ],
+     [
+      24,
+      16
+     ],
+     [
+      39,
+      9
+     ],
+     [
+      42,
+      22
+     ],
+     [
+      44,
+      34
+     ],
+     [
+      68,
+      41
+     ],
+     [
+      69,
+      36
+     ],
+     [
+      71,
+      37
+     ],
+     [
+      93,
+      11
+     ],
+     [
+      104,
+      15
+     ],
+     [
+      111,
+      13
+     ]
+    ],
+    "names": [
+     "masks",
+     "boxes",
+     "process_mask",
+     "masks",
+     "downsampled_bboxes",
+     "mh",
+     "mh",
+     "pad",
+     "left",
+     "pad",
+     "cv2",
+     "masks"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "codeAction",
+  "path": "utils/segment/dataloaders.py",
+  "line": 252,
+  "character": 66,
+  "extra": "pos"
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "detect.py"
+  },
+  {
+   "kind": "open",
+   "path": "utils/segment/dataloaders.py"
+  },
+  {
+   "kind": "open",
+   "path": "utils/segment/general.py"
+  },
+  {
+   "kind": "change",
+   "path": "utils/segment/dataloaders.py",
+   "start": [
+    181,
+    0
+   ],
+   "end": [
+    182,
+    0
+   ]
+  },
+  {
+   "kind": "save",
+   "path": "utils/segment/dataloaders.py"
+  },
+  {
+   "kind": "change",
+   "path": "utils/segment/dataloaders.py",
+   "start": [
+    181,
+    0
+   ],
+   "end": [
+    181,
+    0
+   ],
+   "text": "       "
+  },
+  {
+   "kind": "change",
+   "path": "utils/segment/dataloaders.py",
+   "start": [
+    181,
+    7
+   ],
+   "end": [
+    181,
+    7
+   ],
+   "text": " if nl:\n"
+  },
+  {
+   "kind": "save",
+   "path": "utils/segment/dataloaders.py"
+  }
+ ],
+ "case": {
+  "chain_step": 0,
+  "families": [],
+  "family": "H2",
+  "history_index": 5,
+  "history_seed": 1006,
+  "mode": "fresh",
+  "note": "utils/segment/dataloaders.py: delete line 181, retype it in 2 chunk(s)",
+  "seed": 1,
+  "timing": "race0"
+ },
+ "shape": "codeAction:result->error:timeout",
+ "signature": "pyright|r1_history|codeAction:result->error:timeout",
+ "expected": [],
+ "actual": [
+  "error",
+  "timeout"
+ ],
+ "reproduced": "0/3",
+ "note": "H2: utils/segment/dataloaders.py: delete line 181, retype it in 2 chunk(s); flake 0/3 [r1:SCr r2:SCr r3:SCr] in 138s",
+ "violation": {
+  "oracle": "r1_history",
+  "server": "pyright-1.1.414",
+  "project": "ultralytics/yolov5@402e17ddf820",
+  "key": {
+   "method": "codeAction",
+   "path": "utils/segment/dataloaders.py",
+   "line": 252,
+   "character": 66,
+   "extra": "pos"
+  },
+  "expected": [],
+  "actual": [
+   "error",
+   "timeout"
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "detect.py"
+   },
+   {
+    "kind": "open",
+    "path": "utils/segment/dataloaders.py"
+   },
+   {
+    "kind": "open",
+    "path": "utils/segment/general.py"
+   },
+   {
+    "kind": "change",
+    "path": "utils/segment/dataloaders.py",
+    "start": [
+     181,
+     0
+    ],
+    "end": [
+     182,
+     0
+    ]
+   },
+   {
+    "kind": "save",
+    "path": "utils/segment/dataloaders.py"
+   },
+   {
+    "kind": "change",
+    "path": "utils/segment/dataloaders.py",
+    "start": [
+     181,
+     0
+    ],
+    "end": [
+     181,
+     0
+    ],
+    "text": "       "
+   },
+   {
+    "kind": "change",
+    "path": "utils/segment/dataloaders.py",
+    "start": [
+     181,
+     7
+    ],
+    "end": [
+     181,
+     7
+    ],
+    "text": " if nl:\n"
+   },
+   {
+    "kind": "save",
+    "path": "utils/segment/dataloaders.py"
+   }
+  ],
+  "detail": "{\"case\": {\"chain_step\": 0, \"families\": [], \"family\": \"H2\", \"history_index\": 5, \"history_seed\": 1006, \"mode\": \"fresh\", \"note\": \"utils/segment/dataloaders.py: delete line 181, retype it in 2 chunk(s)\", \"seed\": 1, \"timing\": \"race0\"}, \"note\": \"H2: utils/segment/dataloaders.py: delete line 181, retype it in 2 chunk(s); flake 0/3 [r1:SCr r2:SCr r3:SCr] in 138s\", \"shape\": \"codeAction:result->error:timeout\"}",
+  "reproduced": "0/3",
+  "reduced_ops": [],
+  "signature": "pyright|r1_history|codeAction:result->error:timeout",
+  "run_id": "1da2e474f9f5"
+ },
+ "replay_logs": [],
+ "project_files": {},
+ "incomplete": false
+}

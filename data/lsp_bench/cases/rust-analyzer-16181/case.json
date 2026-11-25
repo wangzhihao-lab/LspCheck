@@ -1,0 +1,83 @@
+{
+ "schema": 1,
+ "id": "rust-analyzer-16181",
+ "meta": {
+  "server": "rust-analyzer",
+  "kind": "rust-analyzer",
+  "number": 16181,
+  "url": "https://github.com/rust-lang/rust-analyzer/issues/16181",
+  "title": "Invalid code generated when using \"Remove all the unused imports\"",
+  "oracle_class": "R4",
+  "subtype": "quickfix",
+  "fix_ref": "rust-lang/rust-analyzer#16185 (fix: remove wrong comma after remove unnecessary braces)",
+  "fix_shas": [
+   "a24ede2066778f66b5b5e5aa7aa57a6d1be2063a"
+  ],
+  "pre_version": "2023-12-18",
+  "post_version": "2023-12-25",
+  "pre_build": "2023-12-18",
+  "post_build": "2023-12-25",
+  "build_notes": "GitHub release assets rust-analyzer-aarch64-apple-darwin.gz of the weekly tags 2023-12-18 and 2023-12-25; git tag --contains puts the fix first in 2023-12-25. The sysroot is the local rustup toolchain (rustc 1.98.1).",
+  "effort_minutes": 8,
+  "notes": "After removing the unused A and C, the braces around the remaining single tree were removed without its trailing comma (introduced by #16066), producing 'use m::\\n    x::B,\\n;'."
+ },
+ "language": "rust",
+ "settings": {},
+ "settings_note": "The issue names no settings; the session keeps checkOnSave off (native analysis only).",
+ "session": {
+  "settle_timeout_s": 240,
+  "request_timeout_s": 60,
+  "pull_diagnostics": false
+ },
+ "files": [
+  {
+   "path": "src/main.rs",
+   "provenance": "issue",
+   "source": "issue body, first code block",
+   "note": ""
+  },
+  {
+   "path": "Cargo.toml",
+   "provenance": "scaffold",
+   "source": "",
+   "note": "a binary crate around the snippet (package name, version, edition 2021)"
+  }
+ ],
+ "repro": {
+  "attempt": 1,
+  "timing": "settled",
+  "steps": "Open src/main.rs. On the use item 'use m::{ x::{A, B}, y::C, };' (cursor on the path, line 10, character 4) apply 'Remove all the unused imports'. Reported: 'use m::' / 'x::B,' / ';', which is invalid. Probe: the edited text must have no parse error that the original did not have.",
+  "ops": [
+   {
+    "kind": "open",
+    "path": "src/main.rs"
+   }
+  ],
+  "probe": {
+   "type": "edit_breaks_syntax",
+   "params": {
+    "edit": {
+     "via": "code_action",
+     "path": "src/main.rs",
+     "range": [
+      10,
+      4,
+      10,
+      4
+     ],
+     "title_re": "(?i)remove (all )?(the )?unused imports",
+     "missing": "invalid"
+    }
+   }
+  }
+ },
+ "attempts": [
+  {
+   "attempt": 1,
+   "timing": "settled",
+   "probe": "edit_breaks_syntax",
+   "summary": "Run 2026-09-23T09:38 (this case revision): not-reproduced-pre. The pre build 2023-12-18 removed the unused imports without the brace removal ('x::{B},' stays inside 'use m::{ ... };', valid), the post build 2023-12-25 removed the braces correctly ('use m::' / 'x::B' / ';'). The automatic brace removal that caused the bug came with #16066 (merged 2023-12-20, first in 2023-12-25), the fix #16185 merged 2023-12-23 (also first in 2023-12-25): the bug existed only in nightly builds between the two (the reporter used 0.4.1778 and wrote 'it isn't broken on the stable release'). No weekly release has the bug (pre-check 1); no second attempt.",
+   "verdict": "not-reproduced-pre (no released build with the bug)"
+  }
+ ]
+}

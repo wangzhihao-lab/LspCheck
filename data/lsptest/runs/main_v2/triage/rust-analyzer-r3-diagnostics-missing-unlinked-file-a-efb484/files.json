@@ -1,0 +1,3 @@
+{
+ "packages/yew-macro/tests/classes_macro/classes-fail.rs": "use yew::prelude::*;\n\nfn compile_pass() {\n    classes!(42);\n    classes!(42.0);\n\n    classes!(\"one\" \"two\");\n\n    classes!(vec![42]);\n\n    let some = Some(42);\n    let none: Option<u32> = None;\n    classes!(some);\n    classes!(none);\n\n    classes!(\"one\", 42);\n\n    classes!(\"one\", \"two three\", \"four\");\n}\n\nfn main() {}\n"
+}

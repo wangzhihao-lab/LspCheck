@@ -1,0 +1,6 @@
+2026-09-23 20:09:42,431 INFO campaign_run run bfc37ab71ee7: r5_transforms on gopls v0.23.0, junegunn/fzf@b1be3a8be1b8 seed 1 settled, targets ['src/pattern_test.go', 'src/reader.go', 'src/util/concurrent_set.go']
+2026-09-23 20:10:43,957 INFO campaign_run run bfc37ab71ee7: 12 candidate(s) in 62s; confirming
+2026-09-23 20:10:57,976 INFO flake replay 1/3 of gopls|r5_transforms|codeAction:extra: settled=True control_stable=True reproduced=True (14.0s)
+2026-09-23 20:11:12,048 INFO flake replay 2/3 of gopls|r5_transforms|codeAction:extra: settled=True control_stable=True reproduced=True (14.1s)
+2026-09-23 20:11:26,251 INFO flake replay 3/3 of gopls|r5_transforms|codeAction:extra: settled=True control_stable=True reproduced=True (14.2s)
+2026-09-23 20:11:26,266 INFO campaign_run run bfc37ab71ee7 finished: ok, 1 confirmed of 12 candidate(s), 104s

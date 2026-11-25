@@ -1,0 +1,99 @@
+<scheduler message>
+2026-11-20 23:46:24,875 INFO release_sweep 49 job(s) for gopls,rust-analyzer,ts6,ts7,pyright
+2026-11-20 23:46:24,875 INFO release_sweep newest-2026-11-18: gopls-r2-codeactionresolve-changed-codeaction-70b3e9 on gopls v0.24.0
+2026-11-20 23:46:59,539 INFO release_sweep   -> reproduced (3/3, 35s) 
+2026-11-20 23:46:59,539 INFO release_sweep newest-2026-11-18: gopls-r4-diagnostics-extra-incompatibleassign-mutation-m2-ade1f0 on gopls v0.24.0
+2026-11-20 23:47:32,854 INFO release_sweep   -> unsettled (0/3, 33s) 
+2026-11-20 23:47:32,854 INFO release_sweep newest-2026-11-18: gopls-r4-diagnostics-extra-mismatchedtypes-mutation-m2-dc6e94 on gopls v0.24.0
+2026-11-20 23:48:11,530 INFO release_sweep   -> unsettled (0/3, 39s) 
+2026-11-20 23:48:11,530 INFO release_sweep newest-2026-11-18: gopls-r4-diagnostics-extra-nonsliceableoperand-mutation-m2-d80a9a on gopls v0.24.0
+2026-11-20 23:48:57,698 INFO release_sweep   -> reproduced (3/3, 46s) 
+2026-11-20 23:48:57,699 INFO release_sweep newest-2026-11-18: gopls-r4-diagnostics-extra-notatype-mutation-m2-477181 on gopls v0.24.0
+2026-11-20 23:49:43,154 INFO release_sweep   -> reproduced (3/3, 46s) 
+2026-11-20 23:49:43,154 INFO release_sweep newest-2026-11-18: gopls-r4-diagnostics-extra-untypedniluse-mutation-m2-354f70 on gopls v0.24.0
+2026-11-20 23:50:10,360 INFO release_sweep   -> unsettled (0/3, 27s) 
+2026-11-20 23:50:10,360 INFO release_sweep newest-2026-11-18: gopls-r4-diagnostics-extra-undeclaredname-mutation-m2-12380c on gopls v0.24.0
+2026-11-20 23:50:52,322 INFO release_sweep   -> reproduced (3/3, 42s) 
+2026-11-20 23:50:52,322 INFO release_sweep newest-2026-11-18: gopls-r1-references-extra-h5-e2e003 on gopls v0.24.0
+2026-11-20 23:53:21,991 INFO release_sweep   -> reproduced (3/3, 150s) 
+2026-11-20 23:53:21,991 INFO release_sweep newest-2026-11-18: gopls-r1-codeaction-changed-h4-c5344e on gopls v0.24.0
+2026-11-20 23:54:48,577 INFO release_sweep   -> reproduced (3/3, 87s) 
+2026-11-20 23:54:48,577 INFO release_sweep newest-2026-11-18: gopls-r1-codeaction-changed-h7-383b05 on gopls v0.24.0
+2026-11-20 23:56:43,631 INFO release_sweep   -> reproduced (3/3, 115s) 
+2026-11-20 23:56:43,631 INFO release_sweep newest-2026-11-18: gopls-r1-codeaction-key-lost-h7-547744 on gopls v0.24.0
+2026-11-20 23:58:03,590 INFO release_sweep   -> reproduced (3/3, 80s) 
+2026-11-20 23:58:03,590 INFO release_sweep newest-2026-11-18: gopls-r1-diagnostics-missing-h7-10a910 on gopls v0.24.0
+2026-11-20 23:59:23,068 INFO release_sweep   -> reproduced (3/3, 80s) 
+2026-11-20 23:59:23,068 INFO release_sweep newest-2026-11-18: gopls-r1-completion-lost-h7-1a1169 on gopls v0.24.0
+2026-11-21 00:31:15,889 INFO release_sweep   -> reproduced (3/3, 1913s) 
+2026-11-21 00:31:15,890 INFO release_sweep newest-2026-11-18: gopls-r1-diagnostics-message-h5-e59f2c on gopls v0.24.0
+2026-11-21 00:32:24,847 INFO release_sweep   -> reproduced (3/3, 69s) 
+2026-11-21 00:32:24,847 INFO release_sweep newest-2026-11-18: gopls-r4-diagnostics-extra-unusedimport-mutation-m3-aefa9e on gopls v0.24.0
+2026-11-21 00:33:09,946 INFO release_sweep   -> reproduced (3/3, 45s) 
+2026-11-21 00:33:09,947 INFO release_sweep newest-2026-11-18: gopls-r5-foldingrange-changed-t4-b07c86 on gopls v0.24.0
+2026-11-21 00:33:56,677 INFO release_sweep   -> reproduced (3/3, 47s) 
+2026-11-21 00:33:56,678 INFO release_sweep newest-2026-11-18: gopls-r5-semantictokens-changed-t4-b423af on gopls v0.24.0
+2026-11-21 00:34:42,374 INFO release_sweep   -> reproduced (3/3, 46s) 
+2026-11-21 00:34:42,374 INFO release_sweep newest-2026-11-18: gopls-r5-semantictokens-extra-t4-867006 on gopls v0.24.0
+2026-11-21 00:35:18,846 INFO release_sweep   -> reproduced (3/3, 36s) 
+2026-11-21 00:35:18,846 INFO release_sweep newest-2026-11-18: rust-analyzer-r2-completionresolve-changed-completion-3170a1 on rust-analyzer 2026-11-16
+2026-11-21 00:36:45,340 INFO release_sweep   -> reproduced (3/3, 86s) 
+2026-11-21 00:36:45,340 INFO release_sweep newest-2026-11-18: rust-analyzer-r3-diagnostics-missing-inactive-code-a-0b07f0 on rust-analyzer 2026-11-16
+2026-11-21 00:40:12,344 INFO release_sweep   -> not-reproduced (0/3, 207s) 
+2026-11-21 00:40:12,345 INFO release_sweep newest-2026-11-18: rust-analyzer-r3-diagnostics-missing-unlinked-file-a-efb484 on rust-analyzer 2026-11-16
+2026-11-21 00:49:37,580 INFO release_sweep   -> not-reproduced (0/3, 565s) 
+2026-11-21 00:49:37,580 INFO release_sweep newest-2026-11-18: rust-analyzer-r3-semantictokensrange-changed-b-b6e28b on rust-analyzer 2026-11-16
+2026-11-21 00:51:56,566 INFO release_sweep   -> reproduced (3/3, 139s) 
+2026-11-21 00:51:56,566 INFO release_sweep newest-2026-11-18: rust-analyzer-r4-completioninsert-gained-completion-e99b79 on rust-analyzer 2026-11-16
+2026-11-21 00:55:18,577 INFO release_sweep   -> not-reproduced (0/3, 202s) 
+2026-11-21 00:55:18,577 INFO release_sweep newest-2026-11-18: rust-analyzer-r4-diagnostics-extra-e0063-mutation-m1-aeef82 on rust-analyzer 2026-11-16
+2026-11-21 00:59:12,955 INFO release_sweep   -> reproduced (3/3, 234s) 
+2026-11-21 00:59:12,956 INFO release_sweep newest-2026-11-18: rust-analyzer-r4-syntax-gained-mutation-m1-7af5e4 on rust-analyzer 2026-11-16
+2026-11-21 01:03:10,327 INFO release_sweep   -> reproduced (3/3, 237s) 
+2026-11-21 01:03:10,327 INFO release_sweep newest-2026-11-18: ts6-r1-completion-lost-h9-ce1ffc on tsserver 6.0.3+tsls6.1.0
+2026-11-21 01:09:09,098 INFO release_sweep   -> reproduced (3/3, 359s) 
+2026-11-21 01:09:09,099 INFO release_sweep newest-2026-11-18: ts6-r1-definition-lost-h9-898f29 on tsserver 6.0.3+tsls6.1.0
+2026-11-21 01:12:21,571 INFO release_sweep   -> reproduced (3/3, 192s) 
+2026-11-21 01:12:21,571 INFO release_sweep newest-2026-11-18: ts6-r1-diagnostics-extra-2307-7006-h9-8325a2 on tsserver 6.0.3+tsls6.1.0
+2026-11-21 01:14:28,762 INFO release_sweep   -> reproduced (3/3, 127s) 
+2026-11-21 01:14:28,762 INFO release_sweep newest-2026-11-18: ts6-r1-documenthighlight-missing-h9-2e657a on tsserver 6.0.3+tsls6.1.0
+2026-11-21 01:17:20,113 INFO release_sweep   -> flaky (2/3, 171s) 
+2026-11-21 01:17:20,113 INFO release_sweep newest-2026-11-18: ts6-r1-inlayhint-changed-h9-b9d052 on tsserver 6.0.3+tsls6.1.0
+2026-11-21 01:24:02,537 INFO release_sweep   -> not-reproduced (0/3, 402s) 
+2026-11-21 01:24:02,538 INFO release_sweep newest-2026-11-18: ts6-r1-references-missing-h5-cc8950 on tsserver 6.0.3+tsls6.1.0
+2026-11-21 01:27:02,070 INFO release_sweep   -> reproduced (3/3, 180s) 
+2026-11-21 01:27:02,070 INFO release_sweep newest-2026-11-18: ts6-r1-semantictokens-changed-h9-c4368c on tsserver 6.0.3+tsls6.1.0
+2026-11-21 01:29:07,503 INFO release_sweep   -> flaky (2/3, 125s) 
+2026-11-21 01:29:07,504 INFO release_sweep newest-2026-11-18: ts6-r1-typedefinition-lost-h9-b52749 on tsserver 6.0.3+tsls6.1.0
+2026-11-21 01:32:07,974 INFO release_sweep   -> reproduced (3/3, 180s) 
+2026-11-21 01:32:07,974 INFO release_sweep newest-2026-11-18: ts6-r4-diagnostics-extra-2322-mutation-m3-1879f3 on tsserver 6.0.3+tsls6.1.0
+2026-11-21 01:35:44,446 INFO release_sweep   -> reproduced (3/3, 216s) 
+2026-11-21 01:35:44,446 INFO release_sweep newest-2026-11-18: ts6-r1-codeaction-extra-h5-f48d27 on tsserver 6.0.3+tsls6.1.0
+2026-11-21 01:36:38,562 INFO release_sweep   -> reproduced (3/3, 54s) 
+2026-11-21 01:36:38,562 INFO release_sweep newest-2026-11-18: ts6-r4-diagnostics-changed-1064-2322-quickfix-d597f5 on tsserver 6.0.3+tsls6.1.0
+2026-11-21 01:38:41,141 INFO release_sweep   -> reproduced (3/3, 123s) 
+2026-11-21 01:38:41,141 INFO release_sweep newest-2026-11-18: ts6-r4-diagnostics-changed-mutation-m1-34f06f on tsserver 6.0.3+tsls6.1.0
+2026-11-21 01:40:44,498 INFO release_sweep   -> reproduced (3/3, 123s) 
+2026-11-21 01:40:44,498 INFO release_sweep newest-2026-11-18: ts6-r4-diagnostics-extra-17002-2552-mutation-m1-727795 on tsserver 6.0.3+tsls6.1.0
+2026-11-21 01:42:36,447 INFO release_sweep   -> reproduced (3/3, 112s) 
+2026-11-21 01:42:36,448 INFO release_sweep newest-2026-11-18: ts6-r4-syntax-gained-mutation-m1-7e3417 on tsserver 6.0.3+tsls6.1.0
+2026-11-21 01:44:28,521 INFO release_sweep   -> reproduced (3/3, 112s) 
+2026-11-21 01:44:28,522 INFO release_sweep newest-2026-11-18: ts6-r4-diagnostics-extra-2448-7022-mutation-m1-e5d199 on tsserver 6.0.3+tsls6.1.0
+2026-11-21 01:47:23,662 INFO release_sweep   -> reproduced (3/3, 175s) 
+2026-11-21 01:47:23,662 INFO release_sweep newest-2026-11-18: pyright-r0-references-result-error-32603-fresh-pair-2718c4 on pyright 1.1.414
+2026-11-21 01:47:32,984 INFO release_sweep   -> reproduced (3/3, 9s) 
+2026-11-21 01:47:32,985 INFO release_sweep newest-2026-11-18: pyright-r1-hover-text-h8-2a8227 on pyright 1.1.414
+2026-11-21 01:48:16,924 INFO release_sweep   -> reproduced (3/3, 44s) 
+2026-11-21 01:48:16,924 INFO release_sweep newest-2026-11-18: pyright-r1-hover-text-h5-f24c4e on pyright 1.1.414
+2026-11-21 01:49:28,736 INFO release_sweep   -> reproduced (3/3, 72s) 
+2026-11-21 01:49:28,736 INFO release_sweep newest-2026-11-18: pyright-r1-references-extra-h9-37c1a2 on pyright 1.1.414
+2026-11-21 01:49:58,573 INFO release_sweep   -> reproduced (3/3, 30s) 
+2026-11-21 01:49:58,573 INFO release_sweep newest-2026-11-18: pyright-r1-signaturehelp-changed-h9-846c6c on pyright 1.1.414
+2026-11-21 01:50:30,209 INFO release_sweep   -> reproduced (3/3, 32s) 
+2026-11-21 01:50:30,209 INFO release_sweep newest-2026-11-18: pyright-r4-completioninsert-gained-completion-79a584 on pyright 1.1.414
+2026-11-21 01:51:19,372 INFO release_sweep   -> reproduced (3/3, 49s) 
+2026-11-21 01:51:19,372 INFO release_sweep newest-2026-11-18: ts6-r1-codeaction-key-lost-h8-3e0e0f on tsserver 6.0.3+tsls6.1.0
+2026-11-21 01:52:22,134 INFO release_sweep   -> reproduced (3/3, 63s) 
+2026-11-21 01:52:22,134 INFO release_sweep newest-2026-11-18: ts6-r1-diagnostics-moved-2875-h8-751ff9 on tsserver 6.0.3+tsls6.1.0
+2026-11-21 01:53:25,915 INFO release_sweep   -> reproduced (3/3, 64s) 
+2026-11-21 01:53:25,915 INFO release_sweep all jobs of gopls,rust-analyzer,ts6,ts7,pyright done

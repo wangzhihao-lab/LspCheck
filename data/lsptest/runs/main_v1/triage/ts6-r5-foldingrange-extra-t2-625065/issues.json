@@ -1,0 +1,96 @@
+{
+ "queries": [
+  "comment in:title repo:typescript-language-server/typescript-language-server is:issue",
+  "\"folding range\" extra repo:typescript-language-server/typescript-language-server is:issue",
+  "\"folding range\" comment repo:typescript-language-server/typescript-language-server is:issue",
+  "\"folding range\" whitespace repo:typescript-language-server/typescript-language-server is:issue",
+  "comment in:title repo:microsoft/TypeScript is:issue",
+  "\"folding range\" extra repo:microsoft/TypeScript is:issue",
+  "\"folding range\" comment repo:microsoft/TypeScript is:issue",
+  "\"folding range\" whitespace repo:microsoft/TypeScript is:issue"
+ ],
+ "matches": [
+  {
+   "repo": "typescript-language-server/typescript-language-server",
+   "number": 180,
+   "title": "Support onTypeFormatting to format comment blocks",
+   "url": "https://github.com/typescript-language-server/typescript-language-server/issues/180",
+   "state": "open",
+   "created": "2021-01-17",
+   "comments": 13,
+   "query": "comment in:title repo:typescript-language-server/typescript-language-server is:issue"
+  },
+  {
+   "repo": "microsoft/TypeScript",
+   "number": 64405,
+   "title": "Incremental check emits locationless TS2589 after a comment-only edit in TypeScript 7",
+   "url": "https://github.com/microsoft/TypeScript/issues/64405",
+   "state": "open",
+   "created": "2026-09-23",
+   "comments": 5,
+   "query": "comment in:title repo:microsoft/TypeScript is:issue"
+  },
+  {
+   "repo": "microsoft/TypeScript",
+   "number": 54338,
+   "title": "Comment referencing an undefined `ClassDecoratorFunction` type",
+   "url": "https://github.com/microsoft/TypeScript/issues/54338",
+   "state": "open",
+   "created": "2023-05-21",
+   "comments": 1,
+   "query": "comment in:title repo:microsoft/TypeScript is:issue"
+  },
+  {
+   "repo": "microsoft/TypeScript",
+   "number": 63841,
+   "title": "Behavior difference: Comment above `@typedef` does not become comment for the corresponding emitted type in tsgo",
+   "url": "https://github.com/microsoft/TypeScript/issues/63841",
+   "state": "open",
+   "created": "2026-06-18",
+   "comments": 0,
+   "query": "comment in:title repo:microsoft/TypeScript is:issue"
+  },
+  {
+   "repo": "microsoft/TypeScript",
+   "number": 63789,
+   "title": "Inherited methods not merging JSDoc comments",
+   "url": "https://github.com/microsoft/TypeScript/issues/63789",
+   "state": "open",
+   "created": "2025-12-06",
+   "comments": 6,
+   "query": "comment in:title repo:microsoft/TypeScript is:issue"
+  },
+  {
+   "repo": "microsoft/TypeScript",
+   "number": 63358,
+   "title": "TSX error location error with location and JSX comment",
+   "url": "https://github.com/microsoft/TypeScript/issues/63358",
+   "state": "open",
+   "created": "2026-04-06",
+   "comments": 5,
+   "query": "comment in:title repo:microsoft/TypeScript is:issue"
+  },
+  {
+   "repo": "microsoft/TypeScript",
+   "number": 49219,
+   "title": "Allow overriding folding ranges",
+   "url": "https://github.com/microsoft/TypeScript/issues/49219",
+   "state": "closed",
+   "created": "2022-05-23",
+   "comments": 4,
+   "query": "\"folding range\" extra repo:microsoft/TypeScript is:issue"
+  },
+  {
+   "repo": "microsoft/TypeScript",
+   "number": 23380,
+   "title": "getOutliningSpans - Return spans for case bodies",
+   "url": "https://github.com/microsoft/TypeScript/issues/23380",
+   "state": "closed",
+   "created": "2018-04-12",
+   "comments": 3,
+   "query": "\"folding range\" extra repo:microsoft/TypeScript is:issue"
+  }
+ ],
+ "notes": [],
+ "authenticated": true
+}

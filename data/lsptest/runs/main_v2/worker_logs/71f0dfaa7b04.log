@@ -1,0 +1,3 @@
+2026-11-18 09:14:21,320 INFO campaign_run run 71f0dfaa7b04: r5_transforms on rust-analyzer 2026-09-21, yewstack/yew@bfa6c19af971 seed 1 settled, targets ['examples/immutable/src/string.rs', 'examples/simple_ssr/src/bin/simple_ssr_hydrate.rs', 'packages/yew-macro/src/derive_props/mod.rs']
+2026-11-18 09:28:26,585 INFO campaign_run run 71f0dfaa7b04: 0 candidate(s) in 845s; confirming
+2026-11-18 09:28:26,586 INFO campaign_run run 71f0dfaa7b04 finished: ok, 0 confirmed of 0 candidate(s), 845s

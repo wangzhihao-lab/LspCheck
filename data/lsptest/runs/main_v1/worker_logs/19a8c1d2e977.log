@@ -1,0 +1,3 @@
+2026-09-24 08:03:23,109 INFO campaign_run run 19a8c1d2e977: r1_history on rust-analyzer 2026-09-21, lapce/lapce@b604d57de4a8 seed 1 race0, targets ['lapce-app/src/command.rs', 'lapce-app/src/db.rs', 'lapce-app/src/keypress/loader.rs']
+2026-09-24 08:11:50,507 INFO campaign_run run 19a8c1d2e977: 0 candidate(s) in 507s; confirming
+2026-09-24 08:11:50,508 INFO campaign_run run 19a8c1d2e977 finished: ok, 0 confirmed of 0 candidate(s), 508s

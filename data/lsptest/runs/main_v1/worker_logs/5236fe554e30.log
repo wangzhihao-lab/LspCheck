@@ -1,0 +1,3 @@
+2026-09-24 12:04:25,641 INFO campaign_run run 5236fe554e30: r1_history on gopls v0.23.0, gin-gonic/gin@3b08cd7235bd seed 3 settled, targets ['auth.go', 'binding/yaml_test.go', 'internal/bytesconv/bytesconv.go']
+2026-09-24 12:13:21,515 INFO campaign_run run 5236fe554e30: 0 candidate(s) in 536s; confirming
+2026-09-24 12:13:21,515 INFO campaign_run run 5236fe554e30 finished: ok, 0 confirmed of 0 candidate(s), 536s

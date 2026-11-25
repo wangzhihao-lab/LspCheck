@@ -1,0 +1,3 @@
+2026-11-18 07:01:34,755 INFO campaign_run run 4f01645f694e: r1_history on ts7 7.0.2, solidjs/solid@4b62bc29e04b seed 1 race0, targets ['examples/rendering/shared/src/components/Reveal.tsx', 'packages/web/test/hydration/spread-innerhtml.spec.tsx', 'packages/web/test/latest-shadow-owned-write-issue-3378.spec.tsx']
+2026-11-18 07:07:49,381 INFO campaign_run run 4f01645f694e: 0 candidate(s) in 375s; confirming
+2026-11-18 07:07:49,382 INFO campaign_run run 4f01645f694e finished: ok, 0 confirmed of 0 candidate(s), 375s

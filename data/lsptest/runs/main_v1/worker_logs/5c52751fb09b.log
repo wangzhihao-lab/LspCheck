@@ -1,0 +1,9 @@
+2026-09-24 01:34:38,900 INFO campaign_run run 5c52751fb09b: r3_routes on rust-analyzer 2026-09-21, lapce/lapce@b604d57de4a8 seed 2 settled, targets ['lapce-app/src/proxy/remote.rs', 'lapce-core/src/lib.rs', 'lapce-proxy/src/plugin/dap.rs']
+2026-09-24 01:55:38,040 INFO campaign_run run 5c52751fb09b: 3 candidate(s) in 1259s; confirming
+2026-09-24 02:07:33,817 INFO flake replay 1/3 of rust-analyzer|r3_routes|diagnostics:extra:unlinked-file: settled=True control_stable=True reproduced=True (715.8s)
+2026-09-24 02:15:59,210 INFO flake replay 2/3 of rust-analyzer|r3_routes|diagnostics:extra:unlinked-file: settled=True control_stable=True reproduced=True (505.4s)
+2026-09-24 02:36:48,685 INFO flake replay 3/3 of rust-analyzer|r3_routes|diagnostics:extra:unlinked-file: settled=True control_stable=True reproduced=True (561.3s)
+2026-09-24 03:06:05,236 INFO flake replay 1/3 of rust-analyzer|r3_routes|diagnostics:changed:inactive_code,unlinked-file: settled=False control_stable=False reproduced=False (939.2s)
+2026-09-24 03:23:21,882 INFO flake replay 2/3 of rust-analyzer|r3_routes|diagnostics:changed:inactive_code,unlinked-file: settled=False control_stable=False reproduced=False (0.0s)
+2026-09-24 03:23:21,885 INFO flake replay 3/3 of rust-analyzer|r3_routes|diagnostics:changed:inactive_code,unlinked-file: settled=False control_stable=False reproduced=False (0.0s)
+2026-09-24 03:23:22,034 INFO campaign_run run 5c52751fb09b finished: incomplete, 1 confirmed of 3 candidate(s), 6523s

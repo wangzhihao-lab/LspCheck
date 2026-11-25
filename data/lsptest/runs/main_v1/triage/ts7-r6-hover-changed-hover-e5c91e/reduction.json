@@ -1,0 +1,23 @@
+{
+ "vid": "15682bd48ce1-v05",
+ "ops_before": 0,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 0,
+ "cache_hits": 0,
+ "reduce_seconds": 0.0,
+ "budget_exhausted": false,
+ "probe_log": [],
+ "logs": [
+  "ts6-6.0.3-tre5c91e-ref-r6-replay-ref-baseline-20260925-171140-168848.jsonl.gz",
+  "ts6-6.0.3-tre5c91e-ref-r6-replay-ref-control-20260925-171145-4394c5.jsonl.gz",
+  "ts7-7.0.2-tre5c91e-r6-replay-test-baseline-20260925-171122-20c5a5.jsonl.gz",
+  "ts7-7.0.2-tre5c91e-r6-replay-test-control-20260925-171131-6d7902.jsonl.gz"
+ ],
+ "observed": {
+  "expected": "(property) GlobalDataDirOptions.env?: any",
+  "actual": "(property) GlobalDataDirOptions.env?: NodeJS.ProcessEnv | undefined"
+ },
+ "ops_after": 0,
+ "total_seconds": 126.7
+}

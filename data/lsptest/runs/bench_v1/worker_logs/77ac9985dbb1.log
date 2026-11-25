@@ -1,0 +1,3 @@
+2026-09-24 17:49:03,539 INFO campaign_run run 77ac9985dbb1: r5_transforms on tsserver 4.8.2+tsls1.1.2, tsserver-50076 seed 1 settled, targets ['index.js']
+2026-09-24 17:49:24,964 INFO campaign_run run 77ac9985dbb1: 0 candidate(s) in 21s; confirming
+2026-09-24 17:49:24,964 INFO campaign_run run 77ac9985dbb1 finished: ok, 0 confirmed of 0 candidate(s), 21s

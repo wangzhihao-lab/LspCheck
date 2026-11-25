@@ -1,0 +1,178 @@
+{
+ "format": 1,
+ "campaign": "bench_v1",
+ "vid": "9c10b49442d4-v05",
+ "run_id": "9c10b49442d4",
+ "oracle": "r1_history",
+ "server": {
+  "kind": "tsserver",
+  "version": "4.3.2+tsls0.5.1"
+ },
+ "project": {
+  "name": "tsserver-43278",
+  "source": "dir",
+  "ref": "data/lsp_bench/cases/tsserver-43278/project",
+  "commit": "",
+  "language": "javascript"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 120.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "index.js",
+    "positions": [
+     [
+      0,
+      6
+     ],
+     [
+      0,
+      15
+     ],
+     [
+      2,
+      2
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      9
+     ],
+     [
+      0,
+      19
+     ],
+     [
+      2,
+      5
+     ]
+    ],
+    "names": [
+     "fetch",
+     "require",
+     "fetch"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "typeDefinition",
+  "path": "index.js",
+  "line": 0,
+  "character": 6,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "index.js"
+  },
+  {
+   "kind": "change",
+   "path": "index.js",
+   "start": [
+    0,
+    32
+   ],
+   "end": [
+    0,
+    33
+   ]
+  },
+  {
+   "kind": "close",
+   "path": "index.js"
+  },
+  {
+   "kind": "open",
+   "path": "index.js"
+  }
+ ],
+ "case": {
+  "chain_step": 0,
+  "families": [],
+  "family": "H3",
+  "history_index": 1,
+  "history_seed": 1002,
+  "mode": "fresh",
+  "note": "index.js: unsaved edit (delete ')' on line 0), close, reopen",
+  "seed": 1,
+  "timing": "settled"
+ },
+ "shape": "typeDefinition:gained",
+ "signature": "tsserver|r1_history|typeDefinition:gained",
+ "expected": [],
+ "actual": [
+  [
+   "~/Library/Caches/typescript/4.3/node_modules/@types/node-fetch/index.d.ts",
+   18,
+   0,
+   224,
+   0
+  ]
+ ],
+ "reproduced": "0/3",
+ "note": "H3: index.js: unsaved edit (delete ')' on line 0), close, reopen; flake 0/3 [r1:SCr r2:SCr r3:SCr] in 36s",
+ "violation": {
+  "oracle": "r1_history",
+  "server": "tsserver-4.3.2+tsls0.5.1",
+  "project": "tsserver-43278",
+  "key": {
+   "method": "typeDefinition",
+   "path": "index.js",
+   "line": 0,
+   "character": 6,
+   "extra": ""
+  },
+  "expected": [],
+  "actual": [
+   [
+    "~/Library/Caches/typescript/4.3/node_modules/@types/node-fetch/index.d.ts",
+    18,
+    0,
+    224,
+    0
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "index.js"
+   },
+   {
+    "kind": "change",
+    "path": "index.js",
+    "start": [
+     0,
+     32
+    ],
+    "end": [
+     0,
+     33
+    ]
+   },
+   {
+    "kind": "close",
+    "path": "index.js"
+   },
+   {
+    "kind": "open",
+    "path": "index.js"
+   }
+  ],
+  "detail": "{\"case\": {\"chain_step\": 0, \"families\": [], \"family\": \"H3\", \"history_index\": 1, \"history_seed\": 1002, \"mode\": \"fresh\", \"note\": \"index.js: unsaved edit (delete ')' on line 0), close, reopen\", \"seed\": 1, \"timing\": \"settled\"}, \"note\": \"H3: index.js: unsaved edit (delete ')' on line 0), close, reopen; flake 0/3 [r1:SCr r2:SCr r3:SCr] in 36s\", \"shape\": \"typeDefinition:gained\"}",
+  "reproduced": "0/3",
+  "reduced_ops": [],
+  "signature": "tsserver|r1_history|typeDefinition:gained",
+  "run_id": "9c10b49442d4"
+ },
+ "replay_logs": [],
+ "project_files": {},
+ "incomplete": false
+}

@@ -1,0 +1,92 @@
+{
+ "queries": [
+  "references in:title repo:rust-lang/rust-analyzer is:issue",
+  "highlight extra repo:rust-lang/rust-analyzer is:issue",
+  "highlight references repo:rust-lang/rust-analyzer is:issue",
+  "highlight inconsistent repo:rust-lang/rust-analyzer is:issue"
+ ],
+ "matches": [
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 18703,
+   "title": "Rename should affect references in doc comments",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/18703",
+   "state": "open",
+   "created": "2024-12-16",
+   "comments": 4,
+   "query": "references in:title repo:rust-lang/rust-analyzer is:issue"
+  },
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 13755,
+   "title": "references displayed inline can be confusing wrt compiler errors due to missing references",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/13755",
+   "state": "open",
+   "created": "2022-12-10",
+   "comments": 1,
+   "query": "references in:title repo:rust-lang/rust-analyzer is:issue"
+  },
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 17887,
+   "title": "\"Rename\" for references in HRTB",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/17887",
+   "state": "open",
+   "created": "2024-08-14",
+   "comments": 3,
+   "query": "references in:title repo:rust-lang/rust-analyzer is:issue"
+  },
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 15243,
+   "title": "fails to resolve nested `prelude::*` references",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/15243",
+   "state": "open",
+   "created": "2023-07-09",
+   "comments": 0,
+   "query": "references in:title repo:rust-lang/rust-analyzer is:issue"
+  },
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 12182,
+   "title": "\"overflow depth reached\" on find all references.",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/12182",
+   "state": "open",
+   "created": "2022-05-06",
+   "comments": 2,
+   "query": "references in:title repo:rust-lang/rust-analyzer is:issue"
+  },
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 7379,
+   "title": "Lint option: Highlighting copies",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/7379",
+   "state": "open",
+   "created": "2021-01-21",
+   "comments": 3,
+   "query": "highlight extra repo:rust-lang/rust-analyzer is:issue"
+  },
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 10500,
+   "title": "Add infrastructure to narrow down diagnostic ranges ",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/10500",
+   "state": "open",
+   "created": "2021-10-09",
+   "comments": 0,
+   "query": "highlight extra repo:rust-lang/rust-analyzer is:issue"
+  },
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 4170,
+   "title": "Treat doctests as rust code",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/4170",
+   "state": "open",
+   "created": "2020-04-27",
+   "comments": 25,
+   "query": "highlight extra repo:rust-lang/rust-analyzer is:issue"
+  }
+ ],
+ "notes": [],
+ "authenticated": true
+}

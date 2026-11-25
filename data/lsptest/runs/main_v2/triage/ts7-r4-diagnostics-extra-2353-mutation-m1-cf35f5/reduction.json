@@ -1,0 +1,42 @@
+{
+ "vid": "727adbc07eab-v00",
+ "ops_before": 3,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 2,
+ "cache_hits": 0,
+ "reduce_seconds": 15.904,
+ "budget_exhausted": false,
+ "probe_log": [
+  [
+   2,
+   false
+  ],
+  [
+   2,
+   false
+  ]
+ ],
+ "logs": [
+  "ts7-7.0.2-trcf35f5-r4-replay-baseline-20261118-220307-35c4c3.jsonl.gz",
+  "ts7-7.0.2-trcf35f5-r4-replay-case-20261118-220246-f051ef.jsonl.gz",
+  "ts7-7.0.2-trcf35f5-r4-replay-control-20261118-220335-3ffe4a.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [],
+  "actual": [
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2353",
+    "ts",
+    "Object literal may only specify known properties, and 'type' does not exist in type 'Command'."
+   ]
+  ]
+ },
+ "ops_after": 3,
+ "total_seconds": 265.2
+}

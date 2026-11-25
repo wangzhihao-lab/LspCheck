@@ -1,0 +1,257 @@
+{
+ "format": 1,
+ "campaign": "bench_v1",
+ "vid": "6361e4207d2c-v00",
+ "run_id": "6361e4207d2c",
+ "oracle": "r5_transforms",
+ "server": {
+  "kind": "gopls",
+  "version": "v0.11.0"
+ },
+ "project": {
+  "name": "gopls-57480",
+  "source": "dir",
+  "ref": "data/lsp_bench/cases/gopls-57480/project",
+  "commit": "",
+  "language": "go"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 180.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 6,
+  "targets": [
+   {
+    "path": "p_test.go",
+    "positions": [
+     [
+      0,
+      8
+     ],
+     [
+      4,
+      6
+     ],
+     [
+      4,
+      8
+     ],
+     [
+      4,
+      14
+     ],
+     [
+      4,
+      19
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      9
+     ],
+     [
+      4,
+      7
+     ],
+     [
+      4,
+      9
+     ],
+     [
+      4,
+      18
+     ],
+     [
+      4,
+      20
+     ]
+    ],
+    "names": [
+     "p",
+     "Te",
+     "t",
+     "testing",
+     "T"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "foldingRange",
+  "path": "p_test.go",
+  "line": -1,
+  "character": -1,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "p_test.go"
+  },
+  {
+   "kind": "change",
+   "path": "p_test.go",
+   "start": [
+    4,
+    8
+   ],
+   "end": [
+    4,
+    8
+   ],
+   "text": "/* 注释🙂 */ "
+  }
+ ],
+ "case": {
+  "mapped_key": [
+   "foldingRange",
+   "p_test.go",
+   -1,
+   -1,
+   ""
+  ],
+  "transform": {
+   "back": {
+    "col": 0,
+    "eof": [],
+    "line": -1,
+    "n": 0,
+    "path": "p_test.go",
+    "w": 0
+   },
+   "edits": [
+    [
+     4,
+     8,
+     4,
+     8,
+     "/* 注释🙂 */ "
+    ]
+   ],
+   "kind": "T6",
+   "path": "p_test.go",
+   "shift": {
+    "col": 8,
+    "eof": [],
+    "line": 4,
+    "n": 0,
+    "path": "p_test.go",
+    "w": 11
+   }
+  }
+ },
+ "shape": "foldingRange:changed",
+ "signature": "gopls|r5_transforms|foldingRange:changed",
+ "expected": [
+  [
+   4,
+   19,
+   4,
+   31,
+   ""
+  ],
+  [
+   4,
+   34,
+   4,
+   34,
+   ""
+  ]
+ ],
+ "actual": [
+  [
+   4,
+   34,
+   4,
+   34,
+   ""
+  ],
+  [
+   4,
+   8,
+   4,
+   31,
+   ""
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "T6 p_test.go: 1 edit(s), first [4, 8, 4, 8]; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 28s",
+ "violation": {
+  "oracle": "r5_transforms",
+  "server": "gopls-v0.11.0",
+  "project": "gopls-57480",
+  "key": {
+   "method": "foldingRange",
+   "path": "p_test.go",
+   "line": -1,
+   "character": -1,
+   "extra": ""
+  },
+  "expected": [
+   [
+    4,
+    19,
+    4,
+    31,
+    ""
+   ],
+   [
+    4,
+    34,
+    4,
+    34,
+    ""
+   ]
+  ],
+  "actual": [
+   [
+    4,
+    34,
+    4,
+    34,
+    ""
+   ],
+   [
+    4,
+    8,
+    4,
+    31,
+    ""
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "p_test.go"
+   },
+   {
+    "kind": "change",
+    "path": "p_test.go",
+    "start": [
+     4,
+     8
+    ],
+    "end": [
+     4,
+     8
+    ],
+    "text": "/* 注释🙂 */ "
+   }
+  ],
+  "detail": "{\"case\": {\"mapped_key\": [\"foldingRange\", \"p_test.go\", -1, -1, \"\"], \"transform\": {\"back\": {\"col\": 0, \"eof\": [], \"line\": -1, \"n\": 0, \"path\": \"p_test.go\", \"w\": 0}, \"edits\": [[4, 8, 4, 8, \"/* \\u6ce8\\u91ca\\ud83d\\ude42 */ \"]], \"kind\": \"T6\", \"path\": \"p_test.go\", \"shift\": {\"col\": 8, \"eof\": [], \"line\": 4, \"n\": 0, \"path\": \"p_test.go\", \"w\": 11}}}, \"note\": \"T6 p_test.go: 1 edit(s), first [4, 8, 4, 8]; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 28s\", \"shape\": \"foldingRange:changed\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "gopls|r5_transforms|foldingRange:changed",
+  "run_id": "6361e4207d2c"
+ },
+ "replay_logs": [
+  "logs/gopls-v0.11.0-6361e4207d2c-r5-replay-baseline-20260924-212541-f7ef22.jsonl.gz",
+  "logs/gopls-v0.11.0-6361e4207d2c-r5-replay-case-20260924-212547-7b79c7.jsonl.gz",
+  "logs/gopls-v0.11.0-6361e4207d2c-r5-replay-control-20260924-212544-afd3ff.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

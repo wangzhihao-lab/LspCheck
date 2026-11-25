@@ -1,0 +1,44 @@
+{
+ "vid": "a884f55f15a4-v00",
+ "ops_before": 0,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 0,
+ "cache_hits": 0,
+ "reduce_seconds": 0.0,
+ "budget_exhausted": false,
+ "probe_log": [],
+ "logs": [
+  "pyright-1.1.414-tr81a7e5-r3-replay-baseline-20260925-174423-657e04.jsonl.gz",
+  "pyright-1.1.414-tr81a7e5-r3-replay-control-20260925-174426-7a516d.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [
+   [
+    "src/flask/wrappers.py",
+    54,
+    4,
+    54,
+    23
+   ],
+   [
+    "src/flask/wrappers.py",
+    89,
+    13,
+    89,
+    32
+   ]
+  ],
+  "actual": [
+   [
+    "src/flask/wrappers.py",
+    54,
+    4,
+    54,
+    23
+   ]
+  ]
+ },
+ "ops_after": 0,
+ "total_seconds": 25.8
+}

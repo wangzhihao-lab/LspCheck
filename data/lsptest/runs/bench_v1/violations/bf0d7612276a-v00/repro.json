@@ -1,0 +1,145 @@
+{
+ "format": 1,
+ "campaign": "bench_v1",
+ "vid": "bf0d7612276a-v00",
+ "run_id": "bf0d7612276a",
+ "oracle": "r4_edits",
+ "server": {
+  "kind": "rust-analyzer",
+  "version": "2024-09-16"
+ },
+ "project": {
+  "name": "rust-analyzer-18144",
+  "source": "dir",
+  "ref": "data/lsp_bench/cases/rust-analyzer-18144/project",
+  "commit": "",
+  "language": "rust"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 240.0,
+  "request_timeout_s": 60.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "src/lib.rs",
+    "positions": [
+     [
+      0,
+      4
+     ],
+     [
+      1,
+      11
+     ],
+     [
+      3,
+      4
+     ],
+     [
+      3,
+      12
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      7
+     ],
+     [
+      1,
+      18
+     ],
+     [
+      3,
+      6
+     ],
+     [
+      3,
+      18
+     ]
+    ],
+    "names": [
+     "allow",
+     "non_snake_case",
+     "foo",
+     "_HelloWorld"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "completionInsert",
+  "path": "src/lib.rs",
+  "line": 0,
+  "character": 7,
+  "extra": "allow(…)"
+ },
+ "ops": [],
+ "case": {
+  "character": 7,
+  "edits": [
+   {
+    "newText": "allow(lint)",
+    "range": {
+     "end": {
+      "character": 7,
+      "line": 0
+     },
+     "start": {
+      "character": 2,
+      "line": 0
+     }
+    }
+   }
+  ],
+  "excerpt": "#[allow(lint)(",
+  "item_kind": 3,
+  "kind": "completion",
+  "label": "allow(…)",
+  "line": 0,
+  "name": "allow",
+  "new_errors": [
+   "1:14: expected `]`, found `(`"
+  ],
+  "path": "src/lib.rs"
+ },
+ "shape": "completionInsert:gained",
+ "signature": "rust-analyzer|r4_edits|completionInsert:gained",
+ "expected": [],
+ "actual": [
+  "expected `]`, found `(`"
+ ],
+ "reproduced": "3/3",
+ "note": "accepting completion item 'allow(…)' (kind 3) after 'allow' at src/lib.rs:1:8 introduces ['1:14: expected `]`, found `(`']; confirmed in a fresh session on the original content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 76s",
+ "violation": {
+  "oracle": "r4_edits",
+  "server": "rust-analyzer-2024-09-16",
+  "project": "rust-analyzer-18144",
+  "key": {
+   "method": "completionInsert",
+   "path": "src/lib.rs",
+   "line": 0,
+   "character": 7,
+   "extra": "allow(…)"
+  },
+  "expected": [],
+  "actual": [
+   "expected `]`, found `(`"
+  ],
+  "ops": [],
+  "detail": "{\"case\": {\"character\": 7, \"edits\": [{\"newText\": \"allow(lint)\", \"range\": {\"end\": {\"character\": 7, \"line\": 0}, \"start\": {\"character\": 2, \"line\": 0}}}], \"excerpt\": \"#[allow(lint)(\", \"item_kind\": 3, \"kind\": \"completion\", \"label\": \"allow(\\u2026)\", \"line\": 0, \"name\": \"allow\", \"new_errors\": [\"1:14: expected `]`, found `(`\"], \"path\": \"src/lib.rs\"}, \"note\": \"accepting completion item 'allow(\\u2026)' (kind 3) after 'allow' at src/lib.rs:1:8 introduces ['1:14: expected `]`, found `(`']; confirmed in a fresh session on the original content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 76s\", \"shape\": \"completionInsert:gained\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "rust-analyzer|r4_edits|completionInsert:gained",
+  "run_id": "bf0d7612276a"
+ },
+ "replay_logs": [
+  "logs/rust-analyzer-2024-09-16-bf0d7612276a-r4-replay-case-20260925-062725-f2dea3.jsonl.gz",
+  "logs/rust-analyzer-2024-09-16-bf0d7612276a-r4-replay-control-20260925-062737-beb621.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

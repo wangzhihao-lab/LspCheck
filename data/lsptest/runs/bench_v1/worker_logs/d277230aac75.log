@@ -1,0 +1,3 @@
+2026-09-24 16:03:04,752 INFO campaign_run run d277230aac75: r1_history on jdtls 1.37.0, jdtls-3155 seed 1 settled, targets ['src/main/java/java/Foo.java']
+2026-09-24 16:12:46,907 INFO campaign_run run d277230aac75: 0 candidate(s) in 582s; confirming
+2026-09-24 16:12:46,907 INFO campaign_run run d277230aac75 finished: ok, 0 confirmed of 0 candidate(s), 582s

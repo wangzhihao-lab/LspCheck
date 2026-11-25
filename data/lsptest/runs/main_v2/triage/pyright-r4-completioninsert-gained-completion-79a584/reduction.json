@@ -1,0 +1,23 @@
+{
+ "vid": "41dcb7100681-v00",
+ "ops_before": 0,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 0,
+ "cache_hits": 0,
+ "reduce_seconds": 0.0,
+ "budget_exhausted": false,
+ "probe_log": [],
+ "logs": [
+  "pyright-1.1.414-tr79a584-r4-replay-case-20261118-232316-da1e1a.jsonl.gz",
+  "pyright-1.1.414-tr79a584-r4-replay-control-20261118-232324-de8c92.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [],
+  "actual": [
+   "future feature _VersionInfo is not defined"
+  ]
+ },
+ "ops_after": 0,
+ "total_seconds": 65.4
+}

@@ -1,0 +1,3 @@
+2026-11-18 02:36:59,005 INFO campaign_run run 0d5a6db6378d: r2_handles on ts7 7.0.2, umami-software/umami@12ad773d621f seed 1 settled, targets ['src/app/(main)/boards/[boardId]/BoardViewPage.tsx', 'src/app/(main)/websites/[websiteId]/(reports)/journeys/page.tsx', 'src/app/api/websites/[websiteId]/replays/saved/contract.generated.ts']
+2026-11-18 02:38:36,934 INFO campaign_run run 0d5a6db6378d: 0 candidate(s) in 98s; confirming
+2026-11-18 02:38:36,935 INFO campaign_run run 0d5a6db6378d finished: ok, 0 confirmed of 0 candidate(s), 98s

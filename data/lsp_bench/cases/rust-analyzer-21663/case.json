@@ -1,0 +1,119 @@
+{
+ "schema": 1,
+ "id": "rust-analyzer-21663",
+ "meta": {
+  "server": "rust-analyzer",
+  "kind": "rust-analyzer",
+  "number": 21663,
+  "url": "https://github.com/rust-lang/rust-analyzer/issues/21663",
+  "title": "`Implement missing members` code action on `std::alloc::Allocator` gives parameter invalid name",
+  "oracle_class": "R4",
+  "subtype": "quickfix",
+  "fix_ref": "rust-lang/rust-analyzer#21665 (fix: prevent qualifying parameter names in add_missing_impl_members)",
+  "fix_shas": [
+   "52de6fa5e39cb71f9a5da93f5243fc46dd2d5b83"
+  ],
+  "pre_version": "2026-02-16",
+  "post_version": "2026-02-23",
+  "pre_build": "2026-02-16",
+  "post_build": "2026-02-23",
+  "build_notes": "GitHub release assets rust-analyzer-aarch64-apple-darwin.gz of the weekly tags 2026-02-16 and 2026-02-23; git tag --contains puts the fix first in 2026-02-23. The sysroot is the local rustup toolchain (rustc 1.98.1). The generated signatures come from the Allocator trait of the local std (rustc 1.98.1); the reporter used rustc 1.95.0-nightly (2026-01-22). The pre build cannot load a Cargo workspace with the local cargo 1.98 (it passes --lockfile-path; attempt 1), so attempt 2 describes the crate with a rust-project.json.",
+  "effort_minutes": 15,
+  "notes": "The assist transforms the trait's method signatures into the impl's scope with a path transform that also rewrote identifier patterns: the parameter ptr resolves to the module std::ptr, so it was printed qualified ('std::ptr: std::ptr::NonNull<u8>'). A path pattern still parses, so the case uses the specification probe edit_text_differs; the expected text is the issue's generated code with the parameter name as the issue says it should be (ptr).",
+  "candidate_rank": 38
+ },
+ "language": "rust",
+ "settings": {},
+ "settings_note": "The issue names no settings; the session keeps checkOnSave off (native analysis only).",
+ "session": {
+  "settle_timeout_s": 240,
+  "request_timeout_s": 60,
+  "pull_diagnostics": false
+ },
+ "files": [
+  {
+   "path": "src/lib.rs",
+   "provenance": "issue-adapted",
+   "source": "issue body, first code block",
+   "note": "verbatim with the cursor marker $0 removed from the impl body '{$0}'"
+  },
+  {
+   "path": "rust-project.json",
+   "provenance": "scaffold",
+   "source": "",
+   "note": "a rust-project.json describing the single library crate (root module src/lib.rs, edition 2021, no dependencies); rust-analyzer discovers the sysroot itself ('discovering sysroot'); it replaces the Cargo.toml of attempt 1 because the pre build cannot load a Cargo workspace with the local cargo 1.98 (--lockfile-path)"
+  }
+ ],
+ "repro": {
+  "attempt": 2,
+  "timing": "settled",
+  "steps": "Open src/lib.rs. With the cursor in the empty body of 'unsafe impl Allocator for Foo {}' (line 3, character 31, the issue's $0) apply 'Implement missing members'. Reported: deallocate's first parameter is named 'std::ptr'. Probe (specification): the edited src/lib.rs must equal the issue's generated code with that parameter named ptr (snippet placeholders stripped).",
+  "ops": [
+   {
+    "kind": "open",
+    "path": "src/lib.rs"
+   }
+  ],
+  "probe": {
+   "type": "edit_text_differs",
+   "params": {
+    "edit": {
+     "via": "code_action",
+     "path": "src/lib.rs",
+     "range": [
+      3,
+      31,
+      3,
+      31
+     ],
+     "title_re": "^Implement missing members",
+     "missing": "invalid"
+    },
+    "expected": {
+     "path": "src/lib.rs",
+     "text": "#![feature(allocator_api)]\nuse std::alloc::Allocator;\nstruct Foo;\nunsafe impl Allocator for Foo {\n    fn allocate(&self, layout: std::alloc::Layout) -> Result<std::ptr::NonNull<[u8]>, std::alloc::AllocError> {\n        todo!()\n    }\n\n    unsafe fn deallocate(&self, ptr: std::ptr::NonNull<u8>, layout: std::alloc::Layout) {\n        todo!()\n    }\n}\n",
+     "source": "issue body (the generated code shown, with the parameter name std::ptr replaced by ptr as the issue states)"
+    }
+   }
+  }
+ },
+ "attempts": [
+  {
+   "attempt": 1,
+   "timing": "settled",
+   "probe": "edit_text_differs",
+   "summary": "Cargo project (Cargo.toml scaffold): invalid. The pre build 2026-02-16 failed to load the workspace with the local cargo 1.98 ('cargo metadata ... unexpected argument --lockfile-path'), so std was not loaded, the Allocator trait was unresolved and no code action was offered ('offered: []'). The post build 2026-02-23 loaded it and produced exactly the expected text (3/3).",
+   "verdict": "invalid (pre build cannot load the Cargo workspace)",
+   "files": [
+    "src/lib.rs (issue-adapted)",
+    "Cargo.toml (scaffold)"
+   ],
+   "params": {
+    "edit": {
+     "via": "code_action",
+     "path": "src/lib.rs",
+     "range": [
+      3,
+      31,
+      3,
+      31
+     ],
+     "title_re": "^Implement missing members",
+     "missing": "invalid"
+    },
+    "expected": {
+     "path": "src/lib.rs",
+     "text": "#![feature(allocator_api)]\nuse std::alloc::Allocator;\nstruct Foo;\nunsafe impl Allocator for Foo {\n    fn allocate(&self, layout: std::alloc::Layout) -> Result<std::ptr::NonNull<[u8]>, std::alloc::AllocError> {\n        todo!()\n    }\n\n    unsafe fn deallocate(&self, ptr: std::ptr::NonNull<u8>, layout: std::alloc::Layout) {\n        todo!()\n    }\n}\n",
+     "source": "issue body (the generated code shown, with the parameter name std::ptr replaced by ptr as the issue states)"
+    }
+   }
+  },
+  {
+   "attempt": 2,
+   "timing": "settled",
+   "probe": "edit_text_differs",
+   "summary": "Run 2026-09-23T11:3x (this case revision, rust-project.json): invalid on both builds ('offered: []'). The session logs show one indexed crate and no sysroot crates: without an explicit sysroot in rust-project.json these builds load no std, so std::alloc::Allocator is unresolved and 'Implement missing members' is not offered. The case needs std's Allocator; the only remaining setups are a machine-specific absolute sysroot path in rust-project.json or an older cargo toolchain, so the case stays not reproduced here (pre-check 4: the pre build 2026-02-16 does not load a Cargo workspace with cargo 1.98). The post build reproduced the issue's expected text exactly in attempt 1.",
+   "verdict": "invalid (no std without an explicit sysroot)"
+  }
+ ]
+}

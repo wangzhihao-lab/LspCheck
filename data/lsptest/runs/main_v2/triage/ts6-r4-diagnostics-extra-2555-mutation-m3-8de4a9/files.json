@@ -1,0 +1,3 @@
+{
+ "src/app/(main)/settings/websites/WebsitesSettingsPage.tsx": "'use client';\nimport { Column } from '@umami/react-zen';\nimport { WebsitesDataTable } from '@/app/(main)/websites/WebsitesDataTable';\nimport { SectionHeader } from '@/components/common/SectionHeader';\nimport { useMessages } from '@/components/hooks';\n\nexport function WebsitesSettingsPage({ teamId }: { teamId: string }) {\n  const { t, labels } = useMessages();\n\n  return (\n    <Column gap>\n      <SectionHeader title={t(labels.websites)} />\n      <WebsitesDataTable teamId={teamId} />\n    </Column>\n  );\n}\n"
+}

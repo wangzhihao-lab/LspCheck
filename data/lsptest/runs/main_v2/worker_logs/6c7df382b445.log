@@ -1,0 +1,3 @@
+2026-11-18 03:10:21,369 INFO campaign_run run 6c7df382b445: r1_history on ts7 7.0.2, hexojs/hexo@751e856691bf seed 1 settled, targets ['lib/extend/helper.ts', 'lib/plugins/generator/page.ts', 'test/scripts/theme_processors/source.ts']
+2026-11-18 03:16:57,068 INFO campaign_run run 6c7df382b445: 0 candidate(s) in 396s; confirming
+2026-11-18 03:16:57,069 INFO campaign_run run 6c7df382b445 finished: ok, 0 confirmed of 0 candidate(s), 396s

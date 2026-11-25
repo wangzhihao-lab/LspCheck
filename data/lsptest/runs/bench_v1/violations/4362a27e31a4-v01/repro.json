@@ -1,0 +1,344 @@
+{
+ "format": 1,
+ "campaign": "bench_v1",
+ "vid": "4362a27e31a4-v01",
+ "run_id": "4362a27e31a4",
+ "oracle": "r1_history",
+ "server": {
+  "kind": "tsserver",
+  "version": "4.5.2+tsls0.7.1"
+ },
+ "project": {
+  "name": "tsserver-46564",
+  "source": "dir",
+  "ref": "data/lsp_bench/cases/tsserver-46564/project",
+  "commit": "",
+  "language": "typescript"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 120.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "packages/mylib/index.ts",
+    "positions": [
+     [
+      1,
+      11
+     ]
+    ],
+    "ends": [
+     [
+      1,
+      13
+     ]
+    ],
+    "names": [
+     "from"
+    ]
+   },
+   {
+    "path": "packages/mylib/mySubDir/index.ts",
+    "positions": [
+     [
+      1,
+      11
+     ],
+     [
+      2,
+      11
+     ]
+    ],
+    "ends": [
+     [
+      1,
+      13
+     ],
+     [
+      2,
+      13
+     ]
+    ],
+    "names": [
+     "from",
+     "from"
+    ]
+   },
+   {
+    "path": "packages/mylib/mySubDir/myClass.ts",
+    "positions": [
+     [
+      1,
+      16
+     ],
+     [
+      3,
+      12
+     ],
+     [
+      5,
+      5
+     ],
+     [
+      5,
+      11
+     ]
+    ],
+    "ends": [
+     [
+      1,
+      20
+     ],
+     [
+      3,
+      16
+     ],
+     [
+      5,
+      9
+     ],
+     [
+      5,
+      13
+     ]
+    ],
+    "names": [
+     "MyClass",
+     "sayHello",
+     "console",
+     "log"
+    ]
+   },
+   {
+    "path": "packages/mylib/mySubDir/myClass2.ts",
+    "positions": [
+     [
+      2,
+      17
+     ],
+     [
+      4,
+      12
+     ],
+     [
+      6,
+      5
+     ],
+     [
+      6,
+      11
+     ]
+    ],
+    "ends": [
+     [
+      2,
+      21
+     ],
+     [
+      4,
+      16
+     ],
+     [
+      6,
+      9
+     ],
+     [
+      6,
+      13
+     ]
+    ],
+    "names": [
+     "MyClass2",
+     "sayWorld",
+     "console",
+     "log"
+    ]
+   },
+   {
+    "path": "src/index.ts",
+    "positions": [
+     [
+      1,
+      6
+     ],
+     [
+      1,
+      17
+     ],
+     [
+      2,
+      6
+     ],
+     [
+      2,
+      18
+     ]
+    ],
+    "ends": [
+     [
+      1,
+      7
+     ],
+     [
+      1,
+      21
+     ],
+     [
+      2,
+      7
+     ],
+     [
+      2,
+      22
+     ]
+    ],
+    "names": [
+     "a",
+     "MyClass",
+     "b",
+     "MyClass2"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "diagnostics",
+  "path": "packages/mylib/mySubDir/index.ts",
+  "line": -1,
+  "character": -1,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "packages/mylib/index.ts"
+  },
+  {
+   "kind": "open",
+   "path": "packages/mylib/mySubDir/index.ts"
+  },
+  {
+   "kind": "open",
+   "path": "packages/mylib/mySubDir/myClass.ts"
+  },
+  {
+   "kind": "open",
+   "path": "packages/mylib/mySubDir/myClass2.ts"
+  },
+  {
+   "kind": "open",
+   "path": "src/index.ts"
+  },
+  {
+   "kind": "fs_rename",
+   "path": "packages/mylib/mySubDir/myClass.ts",
+   "new_path": "packages/mylib/mySubDir/myClass_rt.ts"
+  },
+  {
+   "kind": "fs_rename",
+   "path": "packages/mylib/mySubDir/myClass_rt.ts",
+   "new_path": "packages/mylib/mySubDir/myClass.ts"
+  }
+ ],
+ "case": {
+  "chain_step": 0,
+  "families": [],
+  "family": "H5",
+  "history_index": 1,
+  "history_seed": 2002,
+  "mode": "fresh",
+  "note": "rename packages/mylib/mySubDir/myClass.ts -> packages/mylib/mySubDir/myClass_rt.ts -> back",
+  "seed": 2,
+  "timing": "settled"
+ },
+ "shape": "diagnostics:extra:2307",
+ "signature": "tsserver|r1_history|diagnostics:extra:2307",
+ "expected": [],
+ "actual": [
+  [
+   1,
+   14,
+   1,
+   25,
+   1,
+   "2307",
+   "typescript",
+   "Cannot find module './myClass' or its corresponding type declarations."
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "H5: rename packages/mylib/mySubDir/myClass.ts -> packages/mylib/mySubDir/myClass_rt.ts -> back; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 81s",
+ "violation": {
+  "oracle": "r1_history",
+  "server": "tsserver-4.5.2+tsls0.7.1",
+  "project": "tsserver-46564",
+  "key": {
+   "method": "diagnostics",
+   "path": "packages/mylib/mySubDir/index.ts",
+   "line": -1,
+   "character": -1,
+   "extra": ""
+  },
+  "expected": [],
+  "actual": [
+   [
+    1,
+    14,
+    1,
+    25,
+    1,
+    "2307",
+    "typescript",
+    "Cannot find module './myClass' or its corresponding type declarations."
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "packages/mylib/index.ts"
+   },
+   {
+    "kind": "open",
+    "path": "packages/mylib/mySubDir/index.ts"
+   },
+   {
+    "kind": "open",
+    "path": "packages/mylib/mySubDir/myClass.ts"
+   },
+   {
+    "kind": "open",
+    "path": "packages/mylib/mySubDir/myClass2.ts"
+   },
+   {
+    "kind": "open",
+    "path": "src/index.ts"
+   },
+   {
+    "kind": "fs_rename",
+    "path": "packages/mylib/mySubDir/myClass.ts",
+    "new_path": "packages/mylib/mySubDir/myClass_rt.ts"
+   },
+   {
+    "kind": "fs_rename",
+    "path": "packages/mylib/mySubDir/myClass_rt.ts",
+    "new_path": "packages/mylib/mySubDir/myClass.ts"
+   }
+  ],
+  "detail": "{\"case\": {\"chain_step\": 0, \"families\": [], \"family\": \"H5\", \"history_index\": 1, \"history_seed\": 2002, \"mode\": \"fresh\", \"note\": \"rename packages/mylib/mySubDir/myClass.ts -> packages/mylib/mySubDir/myClass_rt.ts -> back\", \"seed\": 2, \"timing\": \"settled\"}, \"note\": \"H5: rename packages/mylib/mySubDir/myClass.ts -> packages/mylib/mySubDir/myClass_rt.ts -> back; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 81s\", \"shape\": \"diagnostics:extra:2307\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "tsserver|r1_history|diagnostics:extra:2307",
+  "run_id": "4362a27e31a4"
+ },
+ "replay_logs": [
+  "logs/tsserver-4.5.2+tsls0.7.1-4362a27e31a4-replay-baseline-20260925-053832-52808c.jsonl.gz",
+  "logs/tsserver-4.5.2+tsls0.7.1-4362a27e31a4-replay-control-20260925-053832-1d07e3.jsonl.gz",
+  "logs/tsserver-4.5.2+tsls0.7.1-4362a27e31a4-replay-history-20260925-053836-fe536d.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

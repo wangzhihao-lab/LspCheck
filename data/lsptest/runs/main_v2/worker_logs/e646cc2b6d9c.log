@@ -1,0 +1,9 @@
+2026-11-18 15:51:30,020 INFO campaign_run run e646cc2b6d9c: r4_edits on gopls v0.23.0, schollz/croc@5890191be511 seed 2 settled, targets ['internal/tailcat/pickregion_js.go', 'src/cli/update.go', 'src/tailcattransport/bundle_supported.go']
+2026-11-18 15:52:40,588 INFO campaign_run run e646cc2b6d9c: 4 candidate(s) in 71s; confirming
+2026-11-18 15:53:06,475 INFO flake replay 1/3 of gopls|r4_edits|completionInsert:gained: settled=True control_stable=False reproduced=False (25.9s)
+2026-11-18 15:53:36,257 INFO flake replay 2/3 of gopls|r4_edits|completionInsert:gained: settled=True control_stable=True reproduced=False (29.8s)
+2026-11-18 15:54:06,494 INFO flake replay 3/3 of gopls|r4_edits|completionInsert:gained: settled=True control_stable=True reproduced=False (30.2s)
+2026-11-18 15:54:26,328 INFO flake replay 1/3 of gopls|r4_edits|diagnostics:extra:NotAType: settled=True control_stable=True reproduced=True (19.8s)
+2026-11-18 15:54:45,745 INFO flake replay 2/3 of gopls|r4_edits|diagnostics:extra:NotAType: settled=True control_stable=True reproduced=True (19.4s)
+2026-11-18 15:55:03,709 INFO flake replay 3/3 of gopls|r4_edits|diagnostics:extra:NotAType: settled=True control_stable=True reproduced=True (18.0s)
+2026-11-18 15:55:03,714 INFO campaign_run run e646cc2b6d9c finished: ok, 1 confirmed of 4 candidate(s), 214s

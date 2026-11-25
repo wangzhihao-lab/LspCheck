@@ -1,0 +1,16 @@
+{
+ "groups_checked": 86,
+ "groups_total": 106,
+ "groups": [
+  {
+   "group": "ts6-r3-highlightvsreferences-gained-c-e8db7c",
+   "token": "get",
+   "verdict": "legitimate"
+  },
+  {
+   "group": "ts7-r1-references-missing-h9-2dd24a",
+   "token": "from",
+   "verdict": "bug"
+  }
+ ]
+}

@@ -1,0 +1,27 @@
+2026-09-25 14:02:03,929 INFO campaign_run run 0a83ea5c4b29: r4_edits on jdtls 1.13.0, jdtls-2111 seed 2 settled, targets ['src/app/Person.java']
+2026-09-25 14:02:10,036 WARNING oracles.syntax no syntax classifier for language 'java'; reporting no errors
+Traceback (most recent call last):
+  File "scripts/lsptest/campaign_run.py", line 183, in <module>
+    raise SystemExit(main(sys.argv))
+                     ~~~~^^^^^^^^^^
+  File "scripts/lsptest/campaign_run.py", line 175, in main
+    result = execute(spec, paths, flake_cfg, soft, cap, counts_path)
+  File "scripts/lsptest/campaign_run.py", line 135, in execute
+    res = oracle.run(ctx)
+  File "scripts/lsptest/oracles/r4_edits.py", line 126, in run
+    for case in self._plan(ctx, d, base, log):
+                ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "scripts/lsptest/oracles/r4_edits.py", line 171, in _plan
+    mut += self._mutations(ctx, ft.path, text, log)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "scripts/lsptest/oracles/r4_edits.py", line 190, in _mutations
+    muts = plan_mutations(text, ctx.language, os.path.join(ctx.project_dir, path), ctx.seed, path)
+  File "scripts/lsptest/oracles/r4_mutations.py", line 260, in plan_mutations
+    cands = sorted(GENERATORS[kind](text, language), key=lambda m: (m.priority, rng.random()))
+                   ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "scripts/lsptest/oracles/r4_mutations.py", line 84, in m1_candidates
+    counts = _counts(identifiers(text, language))
+                     ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "scripts/lsptest/targets.py", line 100, in identifiers
+    raise ValueError(f"no tokenizer rules for {language!r}")
+ValueError: no tokenizer rules for 'java'

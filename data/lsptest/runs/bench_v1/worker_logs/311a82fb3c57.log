@@ -1,0 +1,3 @@
+2026-09-24 20:00:59,962 INFO campaign_run run 311a82fb3c57: r0_crash on pyright 1.1.374, pyright-8133 seed 1 settled, targets ['main.py']
+2026-09-24 20:01:03,228 INFO campaign_run run 311a82fb3c57: 0 candidate(s) in 3s; confirming
+2026-09-24 20:01:03,228 INFO campaign_run run 311a82fb3c57 finished: ok, 0 confirmed of 0 candidate(s), 3s

@@ -1,0 +1,96 @@
+{
+ "queries": [
+  "\"file changed\" in:title repo:typescript-language-server/typescript-language-server is:issue",
+  "references extra repo:typescript-language-server/typescript-language-server is:issue",
+  "references \"file changed\" repo:typescript-language-server/typescript-language-server is:issue",
+  "references stale repo:typescript-language-server/typescript-language-server is:issue",
+  "\"file changed\" in:title repo:microsoft/TypeScript is:issue",
+  "references extra repo:microsoft/TypeScript is:issue",
+  "references \"file changed\" repo:microsoft/TypeScript is:issue",
+  "references stale repo:microsoft/TypeScript is:issue"
+ ],
+ "matches": [
+  {
+   "repo": "typescript-language-server/typescript-language-server",
+   "number": 926,
+   "title": "\"Maximum call stack size exceeded\" error with Node v23.0.0 in Neovim",
+   "url": "https://github.com/typescript-language-server/typescript-language-server/issues/926",
+   "state": "closed",
+   "created": "2024-10-19",
+   "comments": 5,
+   "query": "references extra repo:typescript-language-server/typescript-language-server is:issue"
+  },
+  {
+   "repo": "typescript-language-server/typescript-language-server",
+   "number": 917,
+   "title": "Shows incorrect type completion item between VSCode and Neovim",
+   "url": "https://github.com/typescript-language-server/typescript-language-server/issues/917",
+   "state": "closed",
+   "created": "2024-09-27",
+   "comments": 9,
+   "query": "references extra repo:typescript-language-server/typescript-language-server is:issue"
+  },
+  {
+   "repo": "typescript-language-server/typescript-language-server",
+   "number": 841,
+   "title": "Invalid completions",
+   "url": "https://github.com/typescript-language-server/typescript-language-server/issues/841",
+   "state": "closed",
+   "created": "2024-01-02",
+   "comments": 10,
+   "query": "references extra repo:typescript-language-server/typescript-language-server is:issue"
+  },
+  {
+   "repo": "typescript-language-server/typescript-language-server",
+   "number": 724,
+   "title": "\"typescript.inlayHints.includeInlayParameterNameHints\": \"all\" breaks inference with dangling commas",
+   "url": "https://github.com/typescript-language-server/typescript-language-server/issues/724",
+   "state": "closed",
+   "created": "2023-05-15",
+   "comments": 7,
+   "query": "references extra repo:typescript-language-server/typescript-language-server is:issue"
+  },
+  {
+   "repo": "typescript-language-server/typescript-language-server",
+   "number": 679,
+   "title": "Inconsistent completion suggestions on JSX attributes",
+   "url": "https://github.com/typescript-language-server/typescript-language-server/issues/679",
+   "state": "closed",
+   "created": "2023-02-07",
+   "comments": 22,
+   "query": "references extra repo:typescript-language-server/typescript-language-server is:issue"
+  },
+  {
+   "repo": "typescript-language-server/typescript-language-server",
+   "number": 199,
+   "title": "Is applyFileRename operational?",
+   "url": "https://github.com/typescript-language-server/typescript-language-server/issues/199",
+   "state": "closed",
+   "created": "2021-04-03",
+   "comments": 3,
+   "query": "references \"file changed\" repo:typescript-language-server/typescript-language-server is:issue"
+  },
+  {
+   "repo": "microsoft/TypeScript",
+   "number": 63652,
+   "title": "Files changed",
+   "url": "https://github.com/microsoft/TypeScript/issues/63652",
+   "state": "closed",
+   "created": "2026-07-16",
+   "comments": 1,
+   "query": "\"file changed\" in:title repo:microsoft/TypeScript is:issue"
+  },
+  {
+   "repo": "microsoft/TypeScript",
+   "number": 63942,
+   "title": "`tsc -b -w` won't catch error on file changed across project",
+   "url": "https://github.com/microsoft/TypeScript/issues/63942",
+   "state": "closed",
+   "created": "2026-08-21",
+   "comments": 2,
+   "query": "\"file changed\" in:title repo:microsoft/TypeScript is:issue"
+  }
+ ],
+ "notes": [],
+ "authenticated": true
+}

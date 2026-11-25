@@ -1,0 +1,3 @@
+2026-09-24 11:05:19,663 INFO campaign_run run b3d5517834be: r1_history on gopls v0.23.0, nektos/act@4f411281417e seed 2 settled, targets ['pkg/container/docker_volume.go', 'pkg/container/linux_container_environment_extensions_test.go', 'pkg/runner/action.go']
+2026-09-24 11:14:33,008 INFO campaign_run run b3d5517834be: 0 candidate(s) in 553s; confirming
+2026-09-24 11:14:33,008 INFO campaign_run run b3d5517834be finished: ok, 0 confirmed of 0 candidate(s), 553s

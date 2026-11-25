@@ -1,0 +1,6 @@
+2026-11-18 05:28:47,309 INFO campaign_run run 0d6f841395f8: r1_history on ts6 6.0.3, mifi/lossless-cut@85cb95f6aeae seed 1 settled, targets ['src/common/util.ts', 'src/renderer/src/edlFormats.test.ts', 'src/renderer/src/worker/eval.ts']
+2026-11-18 05:42:51,785 INFO campaign_run run 0d6f841395f8: 3 candidate(s) in 845s; confirming
+2026-11-18 05:44:20,254 INFO flake replay 1/3 of ts6|r1_history|references:missing: settled=True control_stable=True reproduced=True (88.5s)
+2026-11-18 05:45:54,002 INFO flake replay 2/3 of ts6|r1_history|references:missing: settled=True control_stable=True reproduced=True (93.7s)
+2026-11-18 05:47:27,153 INFO flake replay 3/3 of ts6|r1_history|references:missing: settled=True control_stable=True reproduced=True (93.1s)
+2026-11-18 05:47:27,459 INFO campaign_run run 0d6f841395f8 finished: ok, 1 confirmed of 3 candidate(s), 1120s

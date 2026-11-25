@@ -1,0 +1,3 @@
+2026-09-23 17:46:51,269 INFO campaign_run run 86581730298c: r2_handles on pyright 1.1.414, D4Vinci/Scrapling@08f107b1240f seed 1 settled, targets ['scrapling/engines/_browsers/_types.py', 'tests/fetchers/async/test_stealth.py', 'tests/parser/test_attributes_handler.py']
+2026-09-23 17:47:45,304 INFO campaign_run run 86581730298c: 0 candidate(s) in 54s; confirming
+2026-09-23 17:47:45,305 INFO campaign_run run 86581730298c finished: ok, 0 confirmed of 0 candidate(s), 54s

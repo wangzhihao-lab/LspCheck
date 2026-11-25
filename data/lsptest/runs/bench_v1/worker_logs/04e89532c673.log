@@ -1,0 +1,12 @@
+2026-09-24 20:19:41,074 INFO campaign_run run 04e89532c673: r4_edits on gopls v0.18.1, gopls-73564 seed 1 settled, targets ['main.go']
+2026-09-24 20:20:50,357 INFO campaign_run run 04e89532c673: 3 candidate(s) in 69s; confirming
+2026-09-24 20:21:06,948 INFO flake replay 1/3 of gopls|r4_edits|diagnostics:extra:CannotInferTypeArgs: settled=True control_stable=True reproduced=True (16.6s)
+2026-09-24 20:21:23,345 INFO flake replay 2/3 of gopls|r4_edits|diagnostics:extra:CannotInferTypeArgs: settled=True control_stable=True reproduced=True (16.4s)
+2026-09-24 20:21:39,686 INFO flake replay 3/3 of gopls|r4_edits|diagnostics:extra:CannotInferTypeArgs: settled=True control_stable=True reproduced=True (16.3s)
+2026-09-24 20:21:54,751 INFO flake replay 1/3 of gopls|r4_edits|diagnostics:extra:UndeclaredName: settled=True control_stable=True reproduced=True (15.1s)
+2026-09-24 20:22:09,635 INFO flake replay 2/3 of gopls|r4_edits|diagnostics:extra:UndeclaredName: settled=True control_stable=True reproduced=True (14.9s)
+2026-09-24 20:22:24,799 INFO flake replay 3/3 of gopls|r4_edits|diagnostics:extra:UndeclaredName: settled=True control_stable=True reproduced=True (15.2s)
+2026-09-24 20:22:40,338 INFO flake replay 1/3 of gopls|r4_edits|diagnostics:extra:UnusedImport,WrongArgCount: settled=True control_stable=True reproduced=True (15.5s)
+2026-09-24 20:22:55,503 INFO flake replay 2/3 of gopls|r4_edits|diagnostics:extra:UnusedImport,WrongArgCount: settled=True control_stable=True reproduced=True (15.2s)
+2026-09-24 20:23:10,972 INFO flake replay 3/3 of gopls|r4_edits|diagnostics:extra:UnusedImport,WrongArgCount: settled=True control_stable=True reproduced=True (15.5s)
+2026-09-24 20:23:10,995 INFO campaign_run run 04e89532c673 finished: ok, 3 confirmed of 3 candidate(s), 210s

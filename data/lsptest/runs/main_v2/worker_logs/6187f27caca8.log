@@ -1,0 +1,6 @@
+2026-11-18 01:00:53,231 INFO campaign_run run 6187f27caca8: r1_history on gopls v0.23.0, beego/beego@939cfde380bb seed 1 settled, targets ['server/web/filter/opentracing/filter.go', 'server/web/template_test.go', 'task/governor_command_test.go']
+2026-11-18 01:13:14,915 INFO campaign_run run 6187f27caca8: 11 candidate(s) in 742s; confirming
+2026-11-18 01:14:16,576 INFO flake replay 1/3 of gopls|r1_history|completion:extra: settled=True control_stable=False reproduced=False (61.7s)
+2026-11-18 01:15:18,622 INFO flake replay 2/3 of gopls|r1_history|completion:extra: settled=True control_stable=False reproduced=False (62.0s)
+2026-11-18 01:16:19,660 INFO flake replay 3/3 of gopls|r1_history|completion:extra: settled=True control_stable=False reproduced=False (61.0s)
+2026-11-18 01:16:19,663 INFO campaign_run run 6187f27caca8 finished: ok, 0 confirmed of 11 candidate(s), 926s

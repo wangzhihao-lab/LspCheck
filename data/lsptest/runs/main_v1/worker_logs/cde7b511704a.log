@@ -1,0 +1,3 @@
+2026-09-24 10:14:09,424 INFO campaign_run run cde7b511704a: r1_history on gopls v0.23.0, gin-gonic/gin@3b08cd7235bd seed 2 settled, targets ['binding/bson.go', 'codec/json/json.go', 'fs_test.go']
+2026-09-24 10:22:48,457 INFO campaign_run run cde7b511704a: 0 candidate(s) in 519s; confirming
+2026-09-24 10:22:48,458 INFO campaign_run run cde7b511704a finished: ok, 0 confirmed of 0 candidate(s), 519s

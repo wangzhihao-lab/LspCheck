@@ -1,0 +1,269 @@
+{
+ "format": 1,
+ "campaign": "bench_v1",
+ "vid": "fc5f62b405d3-v00",
+ "run_id": "fc5f62b405d3",
+ "oracle": "r2_handles",
+ "server": {
+  "kind": "rust-analyzer",
+  "version": "2026-04-13"
+ },
+ "project": {
+  "name": "rust-analyzer-10618",
+  "source": "dir",
+  "ref": "data/lsp_bench/cases/rust-analyzer-10618/project",
+  "commit": "",
+  "language": "rust"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 240.0,
+  "request_timeout_s": 60.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "src/main.rs",
+    "positions": [
+     [
+      0,
+      5
+     ],
+     [
+      0,
+      10
+     ],
+     [
+      0,
+      14
+     ],
+     [
+      2,
+      10
+     ],
+     [
+      3,
+      6
+     ],
+     [
+      3,
+      14
+     ],
+     [
+      6,
+      7
+     ],
+     [
+      6,
+      13
+     ],
+     [
+      6,
+      18
+     ],
+     [
+      8,
+      5
+     ],
+     [
+      9,
+      10
+     ],
+     [
+      9,
+      17
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      7
+     ],
+     [
+      0,
+      11
+     ],
+     [
+      0,
+      15
+     ],
+     [
+      2,
+      13
+     ],
+     [
+      3,
+      9
+     ],
+     [
+      3,
+      17
+     ],
+     [
+      6,
+      9
+     ],
+     [
+      6,
+      14
+     ],
+     [
+      6,
+      21
+     ],
+     [
+      8,
+      7
+     ],
+     [
+      9,
+      12
+     ],
+     [
+      9,
+      19
+     ]
+    ],
+    "names": [
+     "std",
+     "rc",
+     "Rc",
+     "Struct",
+     "field",
+     "String",
+     "Data",
+     "Rc",
+     "Struct",
+     "main",
+     "data",
+     "Data"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "completionResolve",
+  "path": "src/main.rs",
+  "line": 9,
+  "character": 12,
+  "extra": "end|above1|Data|22|null|7fffffff|0"
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "src/main.rs"
+  },
+  {
+   "kind": "change",
+   "path": "src/main.rs",
+   "start": [
+    9,
+    0
+   ],
+   "end": [
+    9,
+    0
+   ],
+   "text": "\n"
+  }
+ ],
+ "case": {
+  "extra": "end",
+  "path": "src/main.rs",
+  "shift": {
+   "col": 0,
+   "line": 9,
+   "text": "\n",
+   "variant": "above"
+  },
+  "sub": "completion",
+  "where": [
+   9,
+   12
+  ]
+ },
+ "shape": "completionResolve:changed",
+ "signature": "rust-analyzer|r2_handles|completionResolve:changed",
+ "expected": [
+  [
+   "textEdit",
+   10,
+   8,
+   10,
+   12,
+   "Data"
+  ]
+ ],
+ "actual": [
+  [
+   "textEdit",
+   10,
+   0,
+   10,
+   0,
+   "Data"
+  ]
+ ],
+ "reproduced": "1/3",
+ "note": "flake 1/3 [r1:Scr r2:SCR r3:Scr] in 47s",
+ "violation": {
+  "oracle": "r2_handles",
+  "server": "rust-analyzer-2026-04-13",
+  "project": "rust-analyzer-10618",
+  "key": {
+   "method": "completionResolve",
+   "path": "src/main.rs",
+   "line": 9,
+   "character": 12,
+   "extra": "end|above1|Data|22|null|7fffffff|0"
+  },
+  "expected": [
+   [
+    "textEdit",
+    10,
+    8,
+    10,
+    12,
+    "Data"
+   ]
+  ],
+  "actual": [
+   [
+    "textEdit",
+    10,
+    0,
+    10,
+    0,
+    "Data"
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "src/main.rs"
+   },
+   {
+    "kind": "change",
+    "path": "src/main.rs",
+    "start": [
+     9,
+     0
+    ],
+    "end": [
+     9,
+     0
+    ],
+    "text": "\n"
+   }
+  ],
+  "detail": "{\"case\": {\"extra\": \"end\", \"path\": \"src/main.rs\", \"shift\": {\"col\": 0, \"line\": 9, \"text\": \"\\n\", \"variant\": \"above\"}, \"sub\": \"completion\", \"where\": [9, 12]}, \"note\": \"flake 1/3 [r1:Scr r2:SCR r3:Scr] in 47s\", \"shape\": \"completionResolve:changed\"}",
+  "reproduced": "1/3",
+  "reduced_ops": [],
+  "signature": "rust-analyzer|r2_handles|completionResolve:changed",
+  "run_id": "fc5f62b405d3"
+ },
+ "replay_logs": [],
+ "project_files": {},
+ "incomplete": false
+}

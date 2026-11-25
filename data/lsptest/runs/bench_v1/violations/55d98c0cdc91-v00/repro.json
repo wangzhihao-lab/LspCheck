@@ -1,0 +1,156 @@
+{
+ "format": 1,
+ "campaign": "bench_v1",
+ "vid": "55d98c0cdc91-v00",
+ "run_id": "55d98c0cdc91",
+ "oracle": "r3_routes",
+ "server": {
+  "kind": "rust-analyzer",
+  "version": "2025-04-28"
+ },
+ "project": {
+  "name": "rust-analyzer-19694",
+  "source": "dir",
+  "ref": "data/lsp_bench/cases/rust-analyzer-19694/project",
+  "commit": "",
+  "language": "rust"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 240.0,
+  "request_timeout_s": 60.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "src/main.rs",
+    "positions": [
+     [
+      0,
+      5
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      7
+     ]
+    ],
+    "names": [
+     "main"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "diagnostics",
+  "path": "src/main.rs",
+  "line": -1,
+  "character": -1,
+  "extra": "route:push"
+ },
+ "ops": [],
+ "case": {
+  "path": "src/main.rs",
+  "sub": "a",
+  "want_pull": false
+ },
+ "shape": "diagnostics:missing:E0268",
+ "signature": "rust-analyzer|r3_routes|diagnostics:missing:E0268",
+ "expected": [
+  [
+   2,
+   8,
+   2,
+   16,
+   1,
+   "E0268",
+   "rust-analyzer",
+   "break outside of loop"
+  ],
+  [
+   2,
+   14,
+   2,
+   16,
+   1,
+   "syntax-error",
+   "rust-analyzer",
+   "Syntax Error: Missing trailing `'` symbol to terminate the character literal"
+  ]
+ ],
+ "actual": [
+  [
+   2,
+   14,
+   2,
+   16,
+   1,
+   "syntax-error",
+   "rust-analyzer",
+   "Syntax Error: Missing trailing `'` symbol to terminate the character literal"
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "pull vs push; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 63s",
+ "violation": {
+  "oracle": "r3_routes",
+  "server": "rust-analyzer-2025-04-28",
+  "project": "rust-analyzer-19694",
+  "key": {
+   "method": "diagnostics",
+   "path": "src/main.rs",
+   "line": -1,
+   "character": -1,
+   "extra": "route:push"
+  },
+  "expected": [
+   [
+    2,
+    8,
+    2,
+    16,
+    1,
+    "E0268",
+    "rust-analyzer",
+    "break outside of loop"
+   ],
+   [
+    2,
+    14,
+    2,
+    16,
+    1,
+    "syntax-error",
+    "rust-analyzer",
+    "Syntax Error: Missing trailing `'` symbol to terminate the character literal"
+   ]
+  ],
+  "actual": [
+   [
+    2,
+    14,
+    2,
+    16,
+    1,
+    "syntax-error",
+    "rust-analyzer",
+    "Syntax Error: Missing trailing `'` symbol to terminate the character literal"
+   ]
+  ],
+  "ops": [],
+  "detail": "{\"case\": {\"path\": \"src/main.rs\", \"sub\": \"a\", \"want_pull\": false}, \"note\": \"pull vs push; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 63s\", \"shape\": \"diagnostics:missing:E0268\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "rust-analyzer|r3_routes|diagnostics:missing:E0268",
+  "run_id": "55d98c0cdc91"
+ },
+ "replay_logs": [
+  "logs/rust-analyzer-2025-04-28-55d98c0cdc91-r3-replay-baseline-20260924-200319-67342e.jsonl.gz",
+  "logs/rust-analyzer-2025-04-28-55d98c0cdc91-r3-replay-control-20260924-200329-a98fbc.jsonl.gz",
+  "logs/rust-analyzer-2025-04-28-55d98c0cdc91-r3-replay-route-20260924-200338-dd920e.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

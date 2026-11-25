@@ -1,0 +1,107 @@
+{
+ "vid": "5ae299935d29-v00",
+ "ops_before": 14,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 19,
+ "cache_hits": 10,
+ "reduce_seconds": 1902.65,
+ "budget_exhausted": true,
+ "probe_log": [
+  [
+   8,
+   false
+  ],
+  [
+   9,
+   false
+  ],
+  [
+   5,
+   false
+  ],
+  [
+   6,
+   false
+  ],
+  [
+   6,
+   false
+  ],
+  [
+   6,
+   false
+  ],
+  [
+   12,
+   false
+  ],
+  [
+   11,
+   true
+  ],
+  [
+   8,
+   false
+  ],
+  [
+   8,
+   false
+  ],
+  [
+   4,
+   false
+  ],
+  [
+   4,
+   false
+  ],
+  [
+   4,
+   false
+  ],
+  [
+   4,
+   false
+  ],
+  [
+   5,
+   false
+  ],
+  [
+   5,
+   false
+  ],
+  [
+   10,
+   false
+  ],
+  [
+   10,
+   true
+  ],
+  [
+   9,
+   false
+  ]
+ ],
+ "logs": [
+  "ts6-6.0.3-tr898f29-replay-baseline-20260925-163230-31c021.jsonl.gz",
+  "ts6-6.0.3-tr898f29-replay-control-20260925-163230-c1590b.jsonl.gz",
+  "ts6-6.0.3-tr898f29-replay-history-20260925-163303-14a170.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [
+   [
+    "app/store/mask.ts",
+    18,
+    2,
+    18,
+    9
+   ]
+  ],
+  "actual": []
+ },
+ "ops_after": 10,
+ "total_seconds": 2490.9
+}

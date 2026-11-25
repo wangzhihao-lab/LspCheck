@@ -1,0 +1,897 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "ce4d360f73dc-v00",
+ "run_id": "ce4d360f73dc",
+ "oracle": "r1_history",
+ "server": {
+  "kind": "ts6",
+  "version": "6.0.3"
+ },
+ "project": {
+  "name": "Fission-AI/OpenSpec@f179ed4e4056",
+  "source": "corpus",
+  "ref": "temp/corpus/Fission-AI__OpenSpec@f179ed4e4056",
+  "commit": "f179ed4e40567cdb56501ee3f4d09efbcb1557b8",
+  "language": "typescript"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "race0",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "src/core/shared/skill-generation.ts",
+    "positions": [
+     [
+      13,
+      14
+     ],
+     [
+      16,
+      16
+     ],
+     [
+      39,
+      40
+     ],
+     [
+      56,
+      49
+     ],
+     [
+      64,
+      5
+     ],
+     [
+      93,
+      46
+     ],
+     [
+      98,
+      26
+     ],
+     [
+      137,
+      50
+     ],
+     [
+      148,
+      16
+     ],
+     [
+      151,
+      6
+     ],
+     [
+      172,
+      43
+     ],
+     [
+      182,
+      29
+     ]
+    ],
+    "ends": [
+     [
+      13,
+      27
+     ],
+     [
+      16,
+      30
+     ],
+     [
+      39,
+      42
+     ],
+     [
+      56,
+      56
+     ],
+     [
+      64,
+      9
+     ],
+     [
+      93,
+      50
+     ],
+     [
+      98,
+      33
+     ],
+     [
+      137,
+      54
+     ],
+     [
+      148,
+      24
+     ],
+     [
+      151,
+      8
+     ],
+     [
+      172,
+      49
+     ],
+     [
+      182,
+      35
+     ]
+    ],
+    "names": [
+     "getSyncSpecsSkillTemplate",
+     "getVerifyChangeSkillTemplate",
+     "from",
+     "ALL_WORKFLOWS",
+     "dirName",
+     "dirName",
+     "workflowFilter",
+     "template",
+     "commandTemplates",
+     "name",
+     "instructions",
+     "description"
+    ]
+   },
+   {
+    "path": "src/telemetry/index.ts",
+    "positions": [
+     [
+      22,
+      16
+     ],
+     [
+      25,
+      21
+     ],
+     [
+      46,
+      14
+     ],
+     [
+      110,
+      11
+     ],
+     [
+      131,
+      41
+     ],
+     [
+      132,
+      10
+     ],
+     [
+      145,
+      27
+     ],
+     [
+      149,
+      17
+     ],
+     [
+      150,
+      7
+     ],
+     [
+      176,
+      36
+     ],
+     [
+      229,
+      37
+     ],
+     [
+      230,
+      12
+     ]
+    ],
+    "ends": [
+     [
+      22,
+      24
+     ],
+     [
+      25,
+      33
+     ],
+     [
+      46,
+      18
+     ],
+     [
+      110,
+      17
+     ],
+     [
+      131,
+      44
+     ],
+     [
+      132,
+      12
+     ],
+     [
+      145,
+      36
+     ],
+     [
+      149,
+      23
+     ],
+     [
+      150,
+      9
+     ],
+     [
+      176,
+      47
+     ],
+     [
+      229,
+      41
+     ],
+     [
+      230,
+      19
+     ]
+    ],
+    "names": [
+     "getGlobalConfig",
+     "isTelemetryOptedOutByEnv",
+     "response",
+     "anonymousId",
+     "event",
+     "body",
+     "safeTelemetryFetch",
+     "AbortSignal",
+     "then",
+     "getOrCreateAnonymousId",
+     "Promise",
+     "pendingEvents"
+    ]
+   },
+   {
+    "path": "test/commands/store-git.test.ts",
+    "positions": [
+     [
+      12,
+      12
+     ],
+     [
+      13,
+      43
+     ],
+     [
+      68,
+      40
+     ],
+     [
+      96,
+      15
+     ],
+     [
+      134,
+      7
+     ],
+     [
+      150,
+      23
+     ],
+     [
+      184,
+      19
+     ],
+     [
+      200,
+      35
+     ],
+     [
+      208,
+      57
+     ],
+     [
+      241,
+      23
+     ],
+     [
+      276,
+      35
+     ],
+     [
+      310,
+      30
+     ]
+    ],
+    "ends": [
+     [
+      12,
+      15
+     ],
+     [
+      13,
+      50
+     ],
+     [
+      68,
+      42
+     ],
+     [
+      96,
+      17
+     ],
+     [
+      134,
+      10
+     ],
+     [
+      150,
+      25
+     ],
+     [
+      184,
+      23
+     ],
+     [
+      200,
+      39
+     ],
+     [
+      208,
+      62
+     ],
+     [
+      241,
+      25
+     ],
+     [
+      276,
+      40
+     ],
+     [
+      310,
+      32
+     ]
+    ],
+    "names": [
+     "runCLI",
+     "isolatedGitEnv",
+     "env",
+     "JSON",
+     "expect",
+     "path",
+     "process",
+     "tempDir",
+     "recursive",
+     "path",
+     "toContain",
+     "toBe"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "references",
+  "path": "src/core/shared/skill-generation.ts",
+  "line": 64,
+  "character": 5,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "src/core/shared/skill-generation.ts"
+  },
+  {
+   "kind": "open",
+   "path": "src/telemetry/index.ts"
+  },
+  {
+   "kind": "open",
+   "path": "test/commands/store-git.test.ts"
+  },
+  {
+   "kind": "fs_rename",
+   "path": "src/core/shared/skill-generation.ts",
+   "new_path": "src/core/shared/skill-generation_rt.ts"
+  },
+  {
+   "kind": "fs_rename",
+   "path": "src/core/shared/skill-generation_rt.ts",
+   "new_path": "src/core/shared/skill-generation.ts"
+  }
+ ],
+ "case": {
+  "chain_step": 0,
+  "families": [],
+  "family": "H5",
+  "history_index": 0,
+  "history_seed": 1001,
+  "mode": "fresh",
+  "note": "rename src/core/shared/skill-generation.ts -> src/core/shared/skill-generation_rt.ts -> back",
+  "seed": 1,
+  "timing": "race0"
+ },
+ "shape": "references:missing",
+ "signature": "ts6|r1_history|references:missing",
+ "expected": [
+  [
+   "src/core/init.ts",
+   966,
+   33,
+   966,
+   40
+  ],
+  [
+   "src/core/shared/skill-generation.ts",
+   64,
+   2,
+   64,
+   9
+  ],
+  [
+   "src/core/shared/skill-generation.ts",
+   83,
+   43,
+   83,
+   50
+  ],
+  [
+   "src/core/shared/skill-generation.ts",
+   84,
+   45,
+   84,
+   52
+  ],
+  [
+   "src/core/shared/skill-generation.ts",
+   85,
+   50,
+   85,
+   57
+  ],
+  [
+   "src/core/shared/skill-generation.ts",
+   86,
+   47,
+   86,
+   54
+  ],
+  [
+   "src/core/shared/skill-generation.ts",
+   87,
+   48,
+   87,
+   55
+  ],
+  [
+   "src/core/shared/skill-generation.ts",
+   88,
+   44,
+   88,
+   51
+  ],
+  [
+   "src/core/shared/skill-generation.ts",
+   89,
+   45,
+   89,
+   52
+  ],
+  [
+   "src/core/shared/skill-generation.ts",
+   90,
+   49,
+   90,
+   56
+  ],
+  [
+   "src/core/shared/skill-generation.ts",
+   91,
+   53,
+   91,
+   60
+  ],
+  [
+   "src/core/shared/skill-generation.ts",
+   92,
+   48,
+   92,
+   55
+  ],
+  [
+   "src/core/shared/skill-generation.ts",
+   93,
+   43,
+   93,
+   50
+  ],
+  [
+   "src/core/shared/skill-generation.ts",
+   94,
+   47,
+   94,
+   54
+  ],
+  [
+   "src/core/update.ts",
+   339,
+   33,
+   339,
+   40
+  ],
+  [
+   "src/core/update.ts",
+   629,
+   75,
+   629,
+   82
+  ],
+  [
+   "src/core/update.ts",
+   1343,
+   33,
+   1343,
+   40
+  ]
+ ],
+ "actual": [
+  [
+   "src/core/shared/skill-generation.ts",
+   64,
+   2,
+   64,
+   9
+  ],
+  [
+   "src/core/shared/skill-generation.ts",
+   83,
+   43,
+   83,
+   50
+  ],
+  [
+   "src/core/shared/skill-generation.ts",
+   84,
+   45,
+   84,
+   52
+  ],
+  [
+   "src/core/shared/skill-generation.ts",
+   85,
+   50,
+   85,
+   57
+  ],
+  [
+   "src/core/shared/skill-generation.ts",
+   86,
+   47,
+   86,
+   54
+  ],
+  [
+   "src/core/shared/skill-generation.ts",
+   87,
+   48,
+   87,
+   55
+  ],
+  [
+   "src/core/shared/skill-generation.ts",
+   88,
+   44,
+   88,
+   51
+  ],
+  [
+   "src/core/shared/skill-generation.ts",
+   89,
+   45,
+   89,
+   52
+  ],
+  [
+   "src/core/shared/skill-generation.ts",
+   90,
+   49,
+   90,
+   56
+  ],
+  [
+   "src/core/shared/skill-generation.ts",
+   91,
+   53,
+   91,
+   60
+  ],
+  [
+   "src/core/shared/skill-generation.ts",
+   92,
+   48,
+   92,
+   55
+  ],
+  [
+   "src/core/shared/skill-generation.ts",
+   93,
+   43,
+   93,
+   50
+  ],
+  [
+   "src/core/shared/skill-generation.ts",
+   94,
+   47,
+   94,
+   54
+  ]
+ ],
+ "reproduced": "0/3",
+ "note": "H5: rename src/core/shared/skill-generation.ts -> src/core/shared/skill-generation_rt.ts -> back; flake 0/3 [r1:SCr r2:SCr r3:SCr] in 102s",
+ "violation": {
+  "oracle": "r1_history",
+  "server": "ts6-6.0.3",
+  "project": "Fission-AI/OpenSpec@f179ed4e4056",
+  "key": {
+   "method": "references",
+   "path": "src/core/shared/skill-generation.ts",
+   "line": 64,
+   "character": 5,
+   "extra": ""
+  },
+  "expected": [
+   [
+    "src/core/init.ts",
+    966,
+    33,
+    966,
+    40
+   ],
+   [
+    "src/core/shared/skill-generation.ts",
+    64,
+    2,
+    64,
+    9
+   ],
+   [
+    "src/core/shared/skill-generation.ts",
+    83,
+    43,
+    83,
+    50
+   ],
+   [
+    "src/core/shared/skill-generation.ts",
+    84,
+    45,
+    84,
+    52
+   ],
+   [
+    "src/core/shared/skill-generation.ts",
+    85,
+    50,
+    85,
+    57
+   ],
+   [
+    "src/core/shared/skill-generation.ts",
+    86,
+    47,
+    86,
+    54
+   ],
+   [
+    "src/core/shared/skill-generation.ts",
+    87,
+    48,
+    87,
+    55
+   ],
+   [
+    "src/core/shared/skill-generation.ts",
+    88,
+    44,
+    88,
+    51
+   ],
+   [
+    "src/core/shared/skill-generation.ts",
+    89,
+    45,
+    89,
+    52
+   ],
+   [
+    "src/core/shared/skill-generation.ts",
+    90,
+    49,
+    90,
+    56
+   ],
+   [
+    "src/core/shared/skill-generation.ts",
+    91,
+    53,
+    91,
+    60
+   ],
+   [
+    "src/core/shared/skill-generation.ts",
+    92,
+    48,
+    92,
+    55
+   ],
+   [
+    "src/core/shared/skill-generation.ts",
+    93,
+    43,
+    93,
+    50
+   ],
+   [
+    "src/core/shared/skill-generation.ts",
+    94,
+    47,
+    94,
+    54
+   ],
+   [
+    "src/core/update.ts",
+    339,
+    33,
+    339,
+    40
+   ],
+   [
+    "src/core/update.ts",
+    629,
+    75,
+    629,
+    82
+   ],
+   [
+    "src/core/update.ts",
+    1343,
+    33,
+    1343,
+    40
+   ]
+  ],
+  "actual": [
+   [
+    "src/core/shared/skill-generation.ts",
+    64,
+    2,
+    64,
+    9
+   ],
+   [
+    "src/core/shared/skill-generation.ts",
+    83,
+    43,
+    83,
+    50
+   ],
+   [
+    "src/core/shared/skill-generation.ts",
+    84,
+    45,
+    84,
+    52
+   ],
+   [
+    "src/core/shared/skill-generation.ts",
+    85,
+    50,
+    85,
+    57
+   ],
+   [
+    "src/core/shared/skill-generation.ts",
+    86,
+    47,
+    86,
+    54
+   ],
+   [
+    "src/core/shared/skill-generation.ts",
+    87,
+    48,
+    87,
+    55
+   ],
+   [
+    "src/core/shared/skill-generation.ts",
+    88,
+    44,
+    88,
+    51
+   ],
+   [
+    "src/core/shared/skill-generation.ts",
+    89,
+    45,
+    89,
+    52
+   ],
+   [
+    "src/core/shared/skill-generation.ts",
+    90,
+    49,
+    90,
+    56
+   ],
+   [
+    "src/core/shared/skill-generation.ts",
+    91,
+    53,
+    91,
+    60
+   ],
+   [
+    "src/core/shared/skill-generation.ts",
+    92,
+    48,
+    92,
+    55
+   ],
+   [
+    "src/core/shared/skill-generation.ts",
+    93,
+    43,
+    93,
+    50
+   ],
+   [
+    "src/core/shared/skill-generation.ts",
+    94,
+    47,
+    94,
+    54
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "src/core/shared/skill-generation.ts"
+   },
+   {
+    "kind": "open",
+    "path": "src/telemetry/index.ts"
+   },
+   {
+    "kind": "open",
+    "path": "test/commands/store-git.test.ts"
+   },
+   {
+    "kind": "fs_rename",
+    "path": "src/core/shared/skill-generation.ts",
+    "new_path": "src/core/shared/skill-generation_rt.ts"
+   },
+   {
+    "kind": "fs_rename",
+    "path": "src/core/shared/skill-generation_rt.ts",
+    "new_path": "src/core/shared/skill-generation.ts"
+   }
+  ],
+  "detail": "{\"case\": {\"chain_step\": 0, \"families\": [], \"family\": \"H5\", \"history_index\": 0, \"history_seed\": 1001, \"mode\": \"fresh\", \"note\": \"rename src/core/shared/skill-generation.ts -> src/core/shared/skill-generation_rt.ts -> back\", \"seed\": 1, \"timing\": \"race0\"}, \"note\": \"H5: rename src/core/shared/skill-generation.ts -> src/core/shared/skill-generation_rt.ts -> back; flake 0/3 [r1:SCr r2:SCr r3:SCr] in 102s\", \"shape\": \"references:missing\"}",
+  "reproduced": "0/3",
+  "reduced_ops": [],
+  "signature": "ts6|r1_history|references:missing",
+  "run_id": "ce4d360f73dc"
+ },
+ "replay_logs": [],
+ "project_files": {},
+ "incomplete": false
+}

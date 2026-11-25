@@ -1,0 +1,168 @@
+{
+ "vid": "42f7b233f3d9-v00",
+ "ops_before": 2,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 0,
+ "cache_hits": 0,
+ "reduce_seconds": 0.0,
+ "budget_exhausted": false,
+ "probe_log": [],
+ "logs": [
+  "rust-analyzer-2026-09-21-tra3a950-r5-replay-baseline-20261118-235130-4ae9f5.jsonl.gz",
+  "rust-analyzer-2026-09-21-tra3a950-r5-replay-case-20261118-235331-f02534.jsonl.gz",
+  "rust-analyzer-2026-09-21-tra3a950-r5-replay-control-20261118-235238-13881a.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [
+   [
+    "HookProvider",
+    23,
+    55,
+    4,
+    62,
+    5
+   ],
+   [
+    "Output",
+    26,
+    69,
+    8,
+    69,
+    54
+   ],
+   [
+    "_marker",
+    8,
+    60,
+    8,
+    60,
+    31
+   ],
+   [
+    "decode_base64",
+    12,
+    14,
+    0,
+    38,
+    1
+   ],
+   [
+    "decode_base64",
+    12,
+    40,
+    0,
+    47,
+    1
+   ],
+   [
+    "deps",
+    8,
+    61,
+    8,
+    61,
+    15
+   ],
+   [
+    "impl Hook for HookProvider<T, D>",
+    19,
+    64,
+    4,
+    128,
+    5
+   ],
+   [
+    "run",
+    6,
+    71,
+    8,
+    127,
+    9
+   ],
+   [
+    "use_prepared_state",
+    12,
+    49,
+    0,
+    134,
+    1
+   ]
+  ],
+  "actual": [
+   [
+    "HookProvider",
+    23,
+    55,
+    4,
+    62,
+    5
+   ],
+   [
+    "Output",
+    26,
+    69,
+    8,
+    69,
+    54
+   ],
+   [
+    "_marker",
+    8,
+    60,
+    8,
+    60,
+    31
+   ],
+   [
+    "decode_base64",
+    12,
+    14,
+    0,
+    38,
+    1
+   ],
+   [
+    "decode_base64",
+    12,
+    40,
+    0,
+    47,
+    1
+   ],
+   [
+    "deps",
+    8,
+    61,
+    8,
+    61,
+    15
+   ],
+   [
+    "impl Hook for HookProvider<T, /* 注释🙂 */ D>",
+    19,
+    64,
+    4,
+    128,
+    5
+   ],
+   [
+    "run",
+    6,
+    71,
+    8,
+    127,
+    9
+   ],
+   [
+    "use_prepared_state",
+    12,
+    49,
+    0,
+    134,
+    1
+   ]
+  ]
+ },
+ "ops_after": 2,
+ "total_seconds": 679.2
+}

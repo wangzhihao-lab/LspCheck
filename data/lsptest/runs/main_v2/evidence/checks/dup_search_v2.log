@@ -1,0 +1,818 @@
+search date 2026-11-20; authenticated True; top 6 per query
+
+== C12
+  query: repo:golang/go label:gopls duplicate code actions is:issue -> total 22
+  query: repo:golang/go label:gopls duplicate quick fix is:issue -> total 27
+  query: repo:golang/go label:gopls code action twice configuration is:issue -> total 9
+  query: repo:golang/go label:gopls didChangeConfiguration duplicate diagnostics is:issue -> total 30
+  query: repo:golang/go label:gopls "Replace interface{} by any" duplicate is:issue -> total 0
+  query: repo:golang/go label:gopls code actions duplicated is:issue -> total 5
+  query: repo:golang/go label:gopls same quick fix offered twice is:issue -> total 1
+  query: repo:golang/go label:gopls staticcheck duplicate fixes is:issue -> total 5
+  - golang/go#61207 [open/reopened] 2023-06-23 closed - (30 comments, hits 2) x/tools/gopls: poor performance with very large packages in import graph
+      <!-- For asking questions, see: - [Stack Overflow](https://stackoverflow.com/questions/tagged/go+visual-studio-code) - [GitHub Discussions (Help)](https://github.com/golang/vscode-go/discussions/categories/help) - [`#vscode` channel in Gophers Slack](https://invite.slack.golangbridge.org/messages/vs
+  - golang/go#55861 [open/None] 2022-09-25 closed - (26 comments, hits 1) x/tools/gopls: support for an IDE documentation viewer
+      I propose adding a documentation request/response to gopls. As a user, I want to easily view documentation for the code I'm working on, and ideally for private modules I am using. As a developer, I am interested in contributing a documentation viewer to the VSCode extension. I've considered a number
+  - golang/go#50764 [open/None] 2022-01-23 closed - (57 comments, hits 1) x/tools/gopls: provide a way to suppress analysis diagnostics for certain files
+      <!-- Please answer these questions before submitting your issue. Thanks! --> ### gopls version ```sh ❯ gopls -v version Build info ---------- golang.org/x/tools/gopls master golang.org/x/tools/gopls@(devel) github.com/BurntSushi/toml@v0.4.1 h1:GaI7EiDXDRfa8VshkTj7Fym7ha+y8/XxIgD2okUIjLw= github.com/
+  - golang/go#80016 [closed/not_planned] 2026-06-10 closed 2026-09-08 (4 comments, hits 1) x/tools/gopls: instead of hard-coded a link to pkgsite, provide link to definition if the symbol is local (defined in the same module)
+      ### What version of Go, VS Code & VS Code Go extension are you using? <details><summary>Version Information</summary><br> * Run `go version` to get version of Go from _the VS Code integrated terminal_. - go version go1.26.3 linux/amd64 * Run `gopls -v version` to get version of Gopls from _the VS Co
+  - golang/go#71405 [closed/completed] 2025-01-16 closed 2025-01-31 (15 comments, hits 2) x/tools/gopls: codeAction/resolve can result in applied edits
+      <!-- For asking questions, see: - [Stack Overflow](https://stackoverflow.com/questions/tagged/go+visual-studio-code) - [GitHub Discussions (Help)](https://github.com/golang/vscode-go/discussions/categories/help) - [`#vscode` channel in Gophers Slack](https://invite.slack.golangbridge.org/messages/vs
+  - golang/go#54115 [closed/completed] 2022-07-28 closed 2024-10-08 (6 comments, hits 1) x/tools/gopls: document code actions that gopls supports
+      From discussion on gophers slack: it would be nice if gopls documented supported code actions, similar to how it documents other parameterized features (such as inlay hints: https://github.com/golang/tools/blob/master/gopls/doc/inlayHints.md). Supported code actions are provided part of the `initial
+  - golang/go#44644 [open/None] 2021-02-26 closed - (0 comments, hits 1) x/tools/gopls: be more strict in matching diagnostics and quick fixes in regression tests
+      Currently, regression tests allow you to match on a single diagnostic in a file without specifying its message. This can lead to us matching the wrong diagnostic or applying the wrong quick fixes. Whenever we wait for diagnostics, we should wait for all of the diagnostics in the file to ensure we're
+  - golang/go#65966 [open/None] 2024-02-27 closed - (1 comments, hits 1) x/tools/gopls: redundant diagnostics due to quick fixes
+      The following code causes three "too many returns" diagnostics in gopls. Notably, the present but empty result list is required, so this is probably a low priority bug. ```go func _() () { return 0 } ``` It looks like somehow the "fillreturns" and "noresultvalues" analyzers are colliding, and causin
+  - golang/go#50320 [open/None] 2021-12-22 closed - (1 comments, hits 1) x/tools/gopls: consider merging "missing go.sum entries" errors with the same root cause
+      ### gopls version ``` % go version -m ~/go/bin/gopls /Users/hakim/go/bin/gopls: go1.17.5 path golang.org/x/tools/gopls mod golang.org/x/tools/gopls v0.7.4 h1:hw8cpqjio1iMwIKbbDkG3MeW4l8R9dY/yqOHqv7HImA= dep github.com/BurntSushi/toml v0.4.1 h1:GaI7EiDXDRfa8VshkTj7Fym7ha+y8/XxIgD2okUIjLw= dep github.
+  - golang/go#50885 [open/reopened] 2022-01-28 closed - (12 comments, hits 1) x/tools/gopls: syntax error in go.mod blocks progress end notification
+      <!-- Please answer these questions before submitting your issue. Thanks! --> ### gopls version <!-- Output of `gopls -v version` on the command line --> ```shell $ gopls -v version Build info ---------- golang.org/x/tools/gopls v0.7.5 golang.org/x/tools/gopls@v0.7.5 h1:8Az52YwcFXTWPvrRomns1C0N+zlgTy
+  - golang/go#64936 [open/None] 2024-01-02 closed - (9 comments, hits 1) x/tools/gopls: support for comment rendering
+      I propose adding a gopls command that uses `doc/comment` to render documentation comments of package-level declarations. The intent is that this command would be used by a development environment to render pkgsite-style documentation for workspace packages. This could serve the following purposes: 1
+  - golang/go#59869 [open/None] 2023-04-27 closed - (28 comments, hits 1) x/tools/gopls: move analyzers to an extensible sidecar
+      We've talked a lot about how users can extend the set of analyzers that gopls runs so it can include org-specific checkers. Historically the challenge was that users would have to re-build gopls with the extended set of analyzers (which is not difficult but is inconvenient), or gopls would have to c
+  - golang/go#75773 [closed/completed] 2025-10-06 closed 2025-11-18 (29 comments, hits 2) x/tools/gopls: `//go:fix inline` is very slow to compute fixes (excessive scans of Info.Uses and re-formatting/parsing of whole file)
+      ### gopls version ``` Build info ---------- golang.org/x/tools/gopls v0.19.1 golang.org/x/tools/gopls@v0.19.1 h1:Yodhp3rnpnag60lVZrYPYbGMxTlTCIAj/B2Rv7AKuhA= github.com/BurntSushi/toml@v1.4.1-0.20240526193622-a339e1f7089c h1:pxW6RcqyfI9/kWtOwnv/G+AzdKuy2ZrqINhenH4HyNs= github.com/fatih/camelcase@v1.
+  - golang/go#59176 [closed/completed] 2023-03-22 closed 2023-05-25 (8 comments, hits 1) x/tools/gopls: degraded behavior on repositories containing multiple modules
+      ### gopls version <details> gopls -v version Build info ---------- golang.org/x/tools/gopls v0.11.0 golang.org/x/tools/gopls@v0.11.0 h1:/nvKHdTtePQmrv9XN3gIUN9MOdUrKzO/dcqgbG6x8EY= github.com/BurntSushi/toml@v1.2.1 h1:9F2/+DoOYIOksmaJFPw1tGFy1eDnIJXg+UHjuD8lTak= github.com/google/go-cmp@v0.5.9 h1:O2
+  - golang/go#54559 [closed/completed] 2022-08-19 closed 2022-12-15 (25 comments, hits 1) x/tools/gopls: do not block on initial `workspace/configuration` request
+      <pre> ~/x/tools/gopls$ go version -m $(which gopls) /usr/local/google/home/bcmills/bin/gopls: devel go1.20-6001c043dc Fri Aug 19 03:32:27 2022 +0000 path golang.org/x/tools/gopls mod golang.org/x/tools/gopls v0.9.4 h1:YhHOxVi++ILnY+QnH9FGtRKZZrunSaR7OW8/dCp7bBk= dep github.com/BurntSushi/toml v1.2.0
+  - golang/go#32394 [closed/completed] 2019-06-02 closed 2022-03-18 (101 comments, hits 2) x/tools/gopls: support multi-module workspaces
+      I'm using go version `go1.12.5 darwin/amd64` and the latest gopls release and the latest go extension in VSCode. So I'm working a a project with a rather weird project structure for a Go project. It's a mono-repo of sorts. Here is the basic structure: ``` <config_files> services/ - go_service1 - go_
+  - golang/go#35388 [closed/completed] 2019-11-06 closed 2019-12-07 (35 comments, hits 2) x/tools/gopls: format on save breaks imports when reordered
+      #### What did you do? In https://github.com/hortbot/hortbot/blob/master/internal/cli/flags/ircflags/ircargs.go, swap around some import lines and save. My Go-related configs: ``` "go.lintOnSave": "workspace", "go.lintTool": "golangci-lint", "go.formatTool": "goimports", "go.useLanguageServer": true,
+  - golang/go#73988 [open/reopened] 2025-06-04 closed - (474 comments, hits 1) x/tools: umbrella for flakes on ppc
+      ``` #!watchflakes default <- builder ~ `ppc` && pkg ~ `golang.org/x/tools` ``` This is an amazingly broad watchflakes pattern, but I think there's something fundamentally broken about our ppc story; I don't think it's just a weak-order data race. As with all flake umbrella issues, if this gets notif
+  - golang/go#64083 [closed/completed] 2023-11-12 closed 2025-11-15 (4 comments, hits 1) x/tools/gopls: incorrectly suggests internal/singleflight completion
+      Reported from @seankhliao in slack: gopls reported `internal/singleflight` (from std) as a completion candidate, while not working in std. Though related to unimported completion of standard library candidates, I think this is distinct from #63767. Specifically, I am suspicious of the 'fast path' un
+  - golang/go#77895 [closed/duplicate] 2026-03-02 closed 2026-07-09 (2 comments, hits 1) x/tools/gopls/internal/test/integration/misc: TestTestImports/default failures
+      ``` #!watchflakes default <- pkg == "golang.org/x/tools/gopls/internal/test/integration/misc" && test == "TestTestImports/default" ``` Issue created automatically to collect these failures. Example ([log](https://ci.chromium.org/b/8688450559794445025)): === RUN TestTestImports/default imports_test.g
+  - golang/go#78481 [closed/duplicate] 2026-03-31 closed 2026-04-07 (2 comments, hits 1) x/tools/gopls/internal/test/integration/misc: TestRenamePackageWithDifferentDirectoryPath/default#01 failures
+      ``` #!watchflakes default <- pkg == "golang.org/x/tools/gopls/internal/test/integration/misc" && test == "TestRenamePackageWithDifferentDirectoryPath/default#01" ``` Issue created automatically to collect these failures. Example ([log](https://ci.chromium.org/b/8685804053955495473)): === RUN TestRen
+  - golang/go#66647 [closed/completed] 2024-03-18 closed 2024-04-15 (61 comments, hits 1) x/tools/gopls: performance regression on monorepos with gopls@v0.15.0+
+      <!-- For asking questions, see: - [Stack Overflow](https://stackoverflow.com/questions/tagged/go+visual-studio-code) - [GitHub Discussions (Help)](https://github.com/golang/vscode-go/discussions/categories/help) - [`#vscode` channel in Gophers Slack](https://invite.slack.golangbridge.org/messages/vs
+  - golang/go#64624 [closed/not_planned] 2023-12-08 closed 2023-12-11 (5 comments, hits 1) x/tools/gopls/internal/test/integration/codelens: TestUpgradeCodelens failures
+      ``` #!watchflakes default <- pkg == "golang.org/x/tools/gopls/internal/test/integration/codelens" && test == "TestUpgradeCodelens" && date < "2023-12-12" ``` Issue created automatically to collect these failures. Example ([log](https://build.golang.org/log/a13929040cfff0f04f1032a72c2325a32ce88ac7)):
+  - golang/go#65167 [closed/completed] 2024-01-19 closed 2024-05-24 (10 comments, hits 2) x/tools/gopls: filter noisy code actions when triggerKind is automatic
+      gopls version: built @ c467be361ab7f9641e4ffefaa23e0eedfb7ea10e ### What did I do? Triggered printf diagnostics and SA1006 diagnostics ``` fmt.Fprintln(os.Stderr, "run uploading\n") ``` Settings: ``` "gopls": { "ui.diagnostic.staticcheck": true, }, "go.languageServerFlags": ["-rpc.trace"] ``` ### Wh
+  - golang/go#61508 [closed/completed] 2023-07-21 closed 2023-07-25 (3 comments, hits 1) x/tools/gopls: duplicated analysis work
+      The following log events were observed in a single run of "gopls check" (with staticcheck and nilness enabled) that was instrumented to report start/end calls to Analyze: ```go t0 := time.Now() log.Println("Analyze start", analyzers, pkgs, t0) defer func() { log.Println("Analyze end", analyzers, pkg
+  - golang/go#60959 [closed/completed] 2023-06-23 closed 2023-07-07 (7 comments, hits 1) x/tools/gopls: Bad behavior after updating gopls, duplicated suggestions and unexpected placeholders.
+      <!-- Please answer these questions before submitting your issue. Thanks! --> ### gopls version <!-- Output of `gopls -v version` on the command line --> ``` golang.org/x/tools/gopls v0.12.3 golang.org/x/tools/gopls@v0.12.3 h1:u0wCI9uvt7mnmri6bFBIaWw1XCN6PN8hKv55Zwd+GbE= ``` ### go env <!-- Output of
+  - golang/go#76310 [closed/completed] 2025-11-15 closed 2026-06-27 (7 comments, hits 1) x/tools/gopls: poor / invalid import suggestions
+      ### gopls version ``` Build info ---------- golang.org/x/tools/gopls v0.0.0-20251114214326-41c94d8a4cc2 golang.org/x/tools/gopls@v0.0.0-20251114214326-41c94d8a4cc2 github.com/BurntSushi/toml@v1.5.0 h1:W5quZX/G/csjUnuI8SUYlsHs9M38FC7znL0lIO+DvMg= github.com/fatih/camelcase@v1.0.0 h1:hxNvNX/xYBp0ovncs
+  - golang/go#40447 [closed/completed] 2020-07-28 closed 2023-07-25 (36 comments, hits 1) x/tools/gopls: highlight deprecated symbols
+      <p>I'm using <code>gopls</code> (see version information below) with Vim (version <code>8.1</code>) and <code>natebosch/vim-lsc</code> (version <code>632d49bf7a</code>).</p> <pre>$ gopls version golang.org/x/tools/gopls master golang.org/x/tools/gopls@v0.0.0-20200727233628-55644ead90ce h1:IYtWwbxt1J
+  - golang/go#35339 [closed/completed] 2019-11-04 closed 2019-12-04 (35 comments, hits 1) x/tools/gopls: nil pointer in analysis
+      Please answer these questions before submitting your issue. Thanks! #### What did you do? I had gopls running #### What did you expect to see? gopls doing stuff #### What did you see instead? gopls doing stuff and restarting stack trace of ``` [Error - 10:36:37.252 AM] Received #2 ToUTF16Column: col
+
+== C13
+  query: repo:golang/go label:gopls "missing go.sum entry" nested module is:issue -> total 2
+  query: repo:golang/go label:gopls "missing go.sum entry" stale is:issue -> total 1
+  query: repo:golang/go label:gopls "error while importing" diagnostic disappears is:issue -> total 0
+  query: repo:golang/go label:gopls nested module replace directive diagnostics stale is:issue -> total 0
+  query: repo:golang/go label:gopls go.sum diagnostic after file rename is:issue -> total 9
+  - golang/go#59458 [closed/completed] 2023-04-05 closed 2023-04-20 (18 comments, hits 1) x/tools/gopls: erroneous "go.sum is out of sync with go.mod" warning for nested module
+      ### gopls version ``` Build info ---------- golang.org/x/tools/gopls v0.11.0 golang.org/x/tools/gopls@v0.11.0 h1:/nvKHdTtePQmrv9XN3gIUN9MOdUrKzO/dcqgbG6x8EY= github.com/BurntSushi/toml@v1.2.1 h1:9F2/+DoOYIOksmaJFPw1tGFy1eDnIJXg+UHjuD8lTak= github.com/google/go-cmp@v0.5.9 h1:O2Tfq5qg4qc4AmwVlvv0oLiVA
+  - golang/go#49105 [closed/completed] 2021-10-15 closed 2021-12-15 (9 comments, hits 2) x/tools/gopls: incorrect error messages for inner module appearing in nested module
+      <!-- For asking questions, see: - [Stack Overflow](https://stackoverflow.com/questions/tagged/go+visual-studio-code) - [GitHub Discussions (Help)](https://github.com/golang/vscode-go/discussions/categories/help) - [`#vscode` channel in Gophers Slack](https://invite.slack.golangbridge.org/messages/vs
+  - golang/go#44439 [open/None] 2021-02-19 closed - (6 comments, hits 1) x/tools/gopls: applied suggested fix in go.mod doesn't remove diagnostic
+      ### What version of Go are you using (`go version`)? <pre> $ go version go version go1.16 linux/amd64 </pre> ### Does this issue reproduce with the latest release? Yes ### What did you do? With the following scenario: ``` $ txtar -x <<EOF -- go.mod -- module x go 1.17 -- main.go -- package main impo
+  - golang/go#47540 [open/None] 2021-08-04 closed - (6 comments, hits 1) x/tools/gopls: gopls doesn't recover easily if initial workspace loading fails
+      <!-- Please answer these questions before submitting your issue. Thanks! For questions please use one of our forums: https://github.com/golang/go/wiki/Questions --> ### What version of Go are you using (`go version`)? <pre> $ go version go1.17rc1 $ golang.org/x/tools/gopls v0.7.1 golang.org/x/tools/
+  - golang/go#68764 [closed/completed] 2024-08-07 closed 2024-08-09 (12 comments, hits 1) x/tools/gopls: v0.16.1 breaking omnifunc completion in neovim
+      ### gopls version ``` Build info ---------- golang.org/x/tools/gopls v0.16.1 golang.org/x/tools/gopls@v0.16.1 h1:1hO/dCeUvjEYx3V0rVvCtOkwnpEpqS29paE+Jw4dcAc= github.com/BurntSushi/toml@v1.2.1 h1:9F2/+DoOYIOksmaJFPw1tGFy1eDnIJXg+UHjuD8lTak= github.com/google/go-cmp@v0.6.0 h1:ofyhxvXcZhMsU5ulbFiLKl/XB
+  - golang/go#61935 [closed/completed] 2023-08-10 closed 2023-08-11 (9 comments, hits 1) x/tools/gopls: unnecessary go.sum entries added after viewing Go files
+      #### What did you do? 1. Open https://github.com/ossf/scorecard directory root in VSCode with the Go extension. 2. View any `.go` file #### What did you expect to see? No changes to my `go.sum` file, as I haven't changed anything and the file was already `go mod tidy`'d #### What did you see instead
+  - golang/go#47538 [closed/completed] 2021-08-04 closed 2022-08-04 (7 comments, hits 1) x/tools/gopls: error loading workspace when go.mod is directly updated to include a new dependency
+      ### What version of Go/Gopls are you using (`go version`)? <pre> $ go version go1.16.6 $ gopls -v version Build info ---------- golang.org/x/tools/gopls v0.7.1 golang.org/x/tools/gopls@v0.7.1 h1:Mh3Z8Xcoq3Zy7ksSlwDV/nzQSbjFf06A+L+F8YHq55U= github.com/BurntSushi/toml@v0.3.1 h1:WXkYYl6Yr3qBf1K79EBnL4m
+  - golang/go#42081 [closed/completed] 2020-10-15 closed 2020-12-16 (15 comments, hits 1) x/tools/gopls: hangs while loading the workspace
+      Issue Type: <b>Bug</b> As soon as I load up my remote workspace, the bottom status bar reports the above message and it does not seem to resolve itself. Not able to use any features like find definition or cmd + click to go to def. Strangely this is happening only in this particular workspace, on al
+
+== C14
+  query: repo:golang/go label:gopls completion empty after go.mod is:issue -> total 38
+  query: repo:golang/go label:gopls go.mod invalid completion broken is:issue -> total 9
+  query: repo:golang/go label:gopls no completions after go.mod fixed is:issue -> total 23
+  query: repo:golang/go label:gopls completion empty test file rename is:issue -> total 39
+  - golang/go#79820 [open/None] 2026-06-04 closed - (4 comments, hits 1) x/tools/gopls: Completion: show documentation for unimported candidates too
+      ### gopls version `golang.org/x/tools/gopls v0.22.0` (built with go1.26.4, darwin/arm64). ### go env go version go1.26.4 darwin/arm64. ### What did you do? In a file that does **not** yet import `os`, type an unimported-package reference and trigger completion: ```go package main func main() { os.Ex
+  - golang/go#47615 [open/None] 2021-08-10 closed - (1 comments, hits 2) x/tools/gopls: unimported completion delay, random results and caches not persisted with remote?
+      <!-- Please answer these questions before submitting your issue. Thanks! --> ### What version of Go are you using (`go version`)? <pre> $ go version go version devel go1.17-b7a85e0003 Fri Jul 30 14:01:30 2021 +0000 linux/amd64 $ go list -m golang.org/x/tools golang.org/x/tools v0.1.5-0.2021070823160
+  - golang/go#75107 [open/None] 2025-08-20 closed - (414 comments, hits 3) x/tools/gopls: umbrella for marker test flakes
+      ``` #!watchflakes default <- pkg == "golang.org/x/tools/gopls/internal/test/marker" && test ~ `^Test/.+txt$` ``` Issue created automatically to collect these failures. Each time this issue gets notified of a new flake, create a specific issue for its underlying cause (e.g. a particular OS/ARCH combo
+  - golang/go#77466 [open/None] 2026-01-31 closed - (6 comments, hits 1) x/tools/gopls: Symbol Index: does not include symbols from non-dependency packages in dependency modules
+      <!-- For asking questions, see: - [Stack Overflow](https://stackoverflow.com/questions/tagged/go+visual-studio-code) - [GitHub Discussions (Help)](https://github.com/golang/vscode-go/discussions/categories/help) - [`#vscode` channel in Gophers Slack](https://invite.slack.golangbridge.org/messages/vs
+  - golang/go#44890 [closed/completed] 2021-03-05 closed 2025-09-15 (11 comments, hits 2) x/tools/gopls: do not suggest names from unimportable internal packages
+      ### Describe the bug __Getting internal packages to show up in autocomplete of absolutely unrelated projects.__ ### Notes There are nested module ( with different import path) in workspace `a uses b`, `b located (temporary) under a`, while in __b__ getting __e__ in autocomplete. __a__ and __b__ not 
+  - golang/go#79524 [closed/completed] 2026-05-19 closed 2026-06-02 (11 comments, hits 1) x/tools/gopls: semantic tokens no longer returned (regression in v0.22.0)
+      ### gopls version gopls v0.22.0. <details> ``` Build info ---------- golang.org/x/tools/gopls v0.22.0 golang.org/x/tools/gopls@(devel) github.com/BurntSushi/toml@v1.6.0 h1:dRaEfpa2VI55EwlIW72hMRHdWouJeRF7TPYhI+AUQjk= github.com/fatih/camelcase@v1.0.0 h1:hxNvNX/xYBp0ovncs8WyWZrOrpBNub/JfaMvbURyft8= g
+  - golang/go#78273 [open/None] 2026-03-21 closed - (4 comments, hits 1) x/tools/gopls: gopls sends verbose error messages via $/progress instead of window/showMessage
+      ### gopls version Build info ---------- golang.org/x/tools/gopls v0.21.1 golang.org/x/tools/gopls@v0.21.1 h1:1/o9z5Brdero4jFm9Jr46Uwj8GU9lQdoSXHMlwRHb/w= github.com/BurntSushi/toml@v1.5.0 h1:W5quZX/G/csjUnuI8SUYlsHs9M38FC7znL0lIO+DvMg= github.com/fatih/camelcase@v1.0.0 h1:hxNvNX/xYBp0ovncs8WyWZrOrpB
+  - golang/go#73988 [open/reopened] 2025-06-04 closed - (474 comments, hits 1) x/tools: umbrella for flakes on ppc
+      ``` #!watchflakes default <- builder ~ `ppc` && pkg ~ `golang.org/x/tools` ``` This is an amazingly broad watchflakes pattern, but I think there's something fundamentally broken about our ppc story; I don't think it's just a weak-order data race. As with all flake umbrella issues, if this gets notif
+  - golang/go#61692 [closed/completed] 2023-08-01 closed 2023-08-01 (7 comments, hits 1) x/tools/gopls: panic due to invalid semver tag (go1.21rc3) with gofumpt enabled
+      gopls version: v0.13.1-pre.1 (go1.21rc3) gopls flags: update flags: proxy extension version: 2023.7.1419 go version: 1.21rc3 environment: Visual Studio Code darwin initialization error: undefined issue timestamp: Tue, 01 Aug 2023 01:55:14 GMT restart history: Tue, 01 Aug 2023 01:51:13 GMT: activatio
+  - golang/go#53933 [closed/completed] 2022-07-08 closed 2022-08-04 (35 comments, hits 1) x/tools/gopls: confusing behavior when using a `go.work` with duplicate module paths
+      <!-- For asking questions, see: - [Stack Overflow](https://stackoverflow.com/questions/tagged/go+visual-studio-code) - [GitHub Discussions (Help)](https://github.com/golang/vscode-go/discussions/categories/help) - [`#vscode` channel in Gophers Slack](https://invite.slack.golangbridge.org/messages/vs
+  - golang/go#42081 [closed/completed] 2020-10-15 closed 2020-12-16 (15 comments, hits 1) x/tools/gopls: hangs while loading the workspace
+      Issue Type: <b>Bug</b> As soon as I load up my remote workspace, the bottom status bar reports the above message and it does not seem to resolve itself. Not able to use any features like find definition or cmd + click to go to def. Strangely this is happening only in this particular workspace, on al
+  - golang/go#38977 [closed/completed] 2020-05-09 closed 2020-06-17 (6 comments, hits 1) x/tools/gopls: moving a file from package A into package B confuses gopls
+      ### What version of Go are you using (`go version`)? <pre> $ go version go version go1.14.1 windows/amd64 </pre> ### Does this issue reproduce with the latest release? Yes, and I am using a recent build of gopls from master. ### What operating system and processor architecture are you using (`go env
+  - golang/go#54362 [closed/not_planned] 2022-08-10 closed 2026-03-26 (17 comments, hits 1) x/tools/gopls: add a setting to control removal of unused imports, and a quickfix
+      We see feedback in survey results that users don't want unused imports to be removed by the `organizeImports` code action. I myself sometimes get annoyed by this behavior: it can be frustrating to manually type out an import path, save, and have the import disappear. Surprisingly, I don't think we h
+  - golang/go#66647 [closed/completed] 2024-03-18 closed 2024-04-15 (61 comments, hits 1) x/tools/gopls: performance regression on monorepos with gopls@v0.15.0+
+      <!-- For asking questions, see: - [Stack Overflow](https://stackoverflow.com/questions/tagged/go+visual-studio-code) - [GitHub Discussions (Help)](https://github.com/golang/vscode-go/discussions/categories/help) - [`#vscode` channel in Gophers Slack](https://invite.slack.golangbridge.org/messages/vs
+  - golang/go#62665 [closed/completed] 2023-09-15 closed 2023-09-27 (19 comments, hits 1) x/tools/gopls: completions taking 20x as long since https://github.com/golang/tools/commit/41e4e5654988
+      <!-- Please answer these questions before submitting your issue. Thanks! --> ### What version of Go are you using (`go version`)? <pre> $ go version go version go1.20.6 linux/arm64 $ go list -m golang.org/x/tools golang.org/x/tools v0.13.1-0.20230915141654-e2393aba883a $ go list -m golang.org/x/tool
+  - golang/go#61969 [closed/completed] 2023-08-11 closed 2023-10-02 (16 comments, hits 1) x/tools/gopls: gopls becomes unresponsive from time to time
+      ### gopls version ``` Build info ---------- golang.org/x/tools/gopls v0.13.1 golang.org/x/tools/gopls@v0.13.1 h1:Q0cfPbEG1WVfgxcRZ9uKTA6/ckIRNXx6Ym7KgT/VFE4= github.com/BurntSushi/toml@v1.2.1 h1:9F2/+DoOYIOksmaJFPw1tGFy1eDnIJXg+UHjuD8lTak= github.com/google/go-cmp@v0.5.9 h1:O2Tfq5qg4qc4AmwVlvv0oLiVA
+  - golang/go#74644 [open/None] 2025-07-16 closed - (5 comments, hits 1) x/tools/gopls: Misguided missing method code action
+      ### gopls version Build info ---------- golang.org/x/tools/gopls v0.19.1 golang.org/x/tools/gopls@v0.19.1 h1:Yodhp3rnpnag60lVZrYPYbGMxTlTCIAj/B2Rv7AKuhA= github.com/BurntSushi/toml@v1.4.1-0.20240526193622-a339e1f7089c h1:pxW6RcqyfI9/kWtOwnv/G+AzdKuy2ZrqINhenH4HyNs= github.com/fatih/camelcase@v1.0.0 
+  - golang/go#50885 [open/reopened] 2022-01-28 closed - (12 comments, hits 1) x/tools/gopls: syntax error in go.mod blocks progress end notification
+      <!-- Please answer these questions before submitting your issue. Thanks! --> ### gopls version <!-- Output of `gopls -v version` on the command line --> ```shell $ gopls -v version Build info ---------- golang.org/x/tools/gopls v0.7.5 golang.org/x/tools/gopls@v0.7.5 h1:8Az52YwcFXTWPvrRomns1C0N+zlgTy
+  - golang/go#68659 [closed/not_planned] 2024-07-30 closed 2026-10-29 (70 comments, hits 1) x/tools/gopls/internal/test/integration/misc: midnight flakes of TestTelemetryPrompt_Response 
+      ``` #!watchflakes default <- pkg == "golang.org/x/tools/gopls/internal/test/integration/misc" && test ~ `TestTelemetryPrompt_Response` ``` Issue created automatically to collect these failures. Example ([log](https://ci.chromium.org/b/8741307618506564305)): === RUN TestTelemetryPrompt_Response/empty
+  - golang/go#76713 [closed/completed] 2025-12-05 closed 2026-07-09 (6 comments, hits 1) x/tools/gopls/internal/test/integration/misc: TestSimultaneousEdits/default failures
+      ``` #!watchflakes default <- pkg == "golang.org/x/tools/gopls/internal/test/integration/misc" && test == "TestSimultaneousEdits/default" ``` Issue created automatically to collect these failures. Example ([log](https://ci.chromium.org/b/8696373979272887425)): === RUN TestSimultaneousEdits/default ru
+
+== C15
+  query: repo:golang/go label:gopls unused variable quick fix unused import is:issue -> total 5
+  query: repo:golang/go label:gopls "imported and not used" after quick fix is:issue -> total 1
+  query: repo:golang/go label:gopls unusedvariable package level var import is:issue -> total 0
+  query: repo:golang/go label:gopls delete unused var leaves import is:issue -> total 0
+  - golang/go#71481 [closed/completed] 2025-01-30 closed 2025-02-04 (4 comments, hits 1) x/tools/gopls: unusedparams analyser reports issues in generated files
+      ### gopls version ```shell Build info ---------- golang.org/x/tools/gopls v0.17.1 golang.org/x/tools/gopls@v0.17.1 h1:Mt/DSfnnSe3dyf6MH/dZZ0iww+viHNhAFc4rEYDiOAw= github.com/BurntSushi/toml@v1.4.1-0.20240526193622-a339e1f7089c h1:pxW6RcqyfI9/kWtOwnv/G+AzdKuy2ZrqINhenH4HyNs= github.com/google/go-cmp@
+  - golang/go#69980 [closed/completed] 2024-10-22 closed 2024-11-27 (10 comments, hits 1) x/tools/gopls: feature: offer quickfix for variable name that is incorrectly initialized
+      ### gopls version Build info ---------- golang.org/x/tools/gopls (devel) golang.org/x/tools/gopls@(devel) github.com/BurntSushi/toml@v1.2.1 h1:9F2/+DoOYIOksmaJFPw1tGFy1eDnIJXg+UHjuD8lTak= github.com/google/go-cmp@v0.6.0 h1:ofyhxvXcZhMsU5ulbFiLKl/XBFqE1GSq7atu8tAmTRI= golang.org/x/exp/typeparams@v0.0
+  - golang/go#34111 [closed/completed] 2019-09-05 closed 2020-03-12 (69 comments, hits 1) x/tools/gopls: add support for multiple concurrent clients
+      As per discussion on Slack with @ianthehat & @myitcv this is a feature request for gopls to support multiple concurrent clients. Vim users often have multiple instances of vim running at the same time, and starting/exiting is a natural part of the workflow. Currently there is a 1 to 1 mapping betwee
+  - golang/go#39560 [closed/completed] 2020-06-12 closed 2020-06-16 (27 comments, hits 1) x/tools/gopls: unable to import packages (GOPATH)
+      #### What did you do? I was working on [this](https://github.com/lolbinarycat/hookshot-oak) program in spacemacs using lsp-mode with gopls #### What did you expect to see? there should be no errors with package imports, as the program compiles and runs #### What did you see instead? 3 package errors
+  - golang/go#33030 [closed/completed] 2019-07-10 closed 2020-07-01 (9 comments, hits 1) x/tools/gopls: releases
+      This issue will include announcements about new tagged versions of `gopls`.
+  - golang/go#38403 [closed/completed] 2020-04-13 closed 2020-11-12 (22 comments, hits 1) x/tools/gopls: add logging to detect instances of "cannot use A (value of type B) as B value"
+      <!-- Please answer these questions before submitting your issue. Thanks! --> ### What version of Go are you using (`go version`)? <pre> $ go version go version devel +801cd7c84d Thu Apr 2 09:00:44 2020 +0000 linux/amd64 $ go list -m golang.org/x/tools golang.org/x/tools v0.0.0-20200408132156-9ee5ef7
+
+== C16
+  query: repo:golang/go label:gopls CRLF semantic tokens is:issue -> total 1
+  query: repo:golang/go label:gopls CRLF folding range is:issue -> total 0
+  query: repo:golang/go label:gopls carriage return comment position is:issue -> total 4
+  query: repo:golang/go label:gopls raw string CRLF is:issue -> total 2
+  query: repo:golang/go label:gopls \r block comment range is:issue -> total 11
+  - golang/go#64884 [closed/completed] 2023-12-28 closed 2023-12-29 (4 comments, hits 1) x/tools/gopls: Enable semanticTokens when running gopls from the CLI
+      ### gopls version v0.11.0 ### go env ```shell GO111MODULE='' GOARCH='arm64' GOBIN='' GOCACHE='/Users/ineilpaul/Library/Caches/go-build' GOENV='/Users/ineilpaul/Library/Application Support/go/env' GOEXE='' GOEXPERIMENT='' GOFLAGS='' GOHOSTARCH='arm64' GOHOSTOS='darwin' GOINSECURE='' GOMODCACHE='/User
+  - golang/go#80666 [closed/completed] 2026-07-31 closed 2026-08-16 (3 comments, hits 1) x/tools/gopls: assembly identifier positions drift in CRLF files
+      ### gopls version gopls master (x/tools@1f62bc851567) ### go env ```shell AR='ar' CC='clang' CGO_CFLAGS='-O2 -g' CGO_CPPFLAGS='' CGO_CXXFLAGS='-O2 -g' CGO_ENABLED='1' CGO_FFLAGS='-O2 -g' CGO_LDFLAGS='-O2 -g' CXX='clang++' GCCGO='gccgo' GO111MODULE='' GOARCH='arm64' GOARM64='v8.0' GOAUTH='netrc' GOBI
+  - golang/go#66787 [open/None] 2024-04-03 closed - (7 comments, hits 1) x/tools/gopls: no completion/suggestion/linting working on large projects
+      ### What version of Go, VS Code & VS Code Go extension are you using? <details><summary>Version Information</summary><br> * Run `go version` to get version of Go from _the VS Code integrated terminal_. `go version go1.22.1 linux/amd64` * Run `gopls -v version` to get version of Gopls from _the VS Co
+  - golang/go#77675 [closed/completed] 2026-02-18 closed 2026-03-09 (16 comments, hits 2) x/tools/gopls: Hover: BasicLit.Value OOB panic in hoverConstantExpr due to \r normalization
+      ### Go version go1.26.0 windows/amd64 ### Output of `go env` in your module/workspace: ```shell set AR=ar set CC=gcc set CGO_CFLAGS=-O2 -g set CGO_CPPFLAGS= set CGO_CXXFLAGS=-O2 -g set CGO_ENABLED=1 set CGO_FFLAGS=-O2 -g set CGO_LDFLAGS=-O2 -g set CXX=g++ set GCCGO=gccgo set GO111MODULE= set GOAMD64
+  - golang/go#75969 [closed/completed] 2025-10-19 closed 2026-01-08 (6 comments, hits 2) x/tools/gopls: incorrect ending position for multiline strings on Windows (\r\n)
+      ### Go version go version go1.25.0 windows/amd64 ### Output of `go env` in your module/workspace: ```shell set AR=ar set CC=gcc set CGO_CFLAGS=-O2 -g set CGO_CPPFLAGS= set CGO_CXXFLAGS=-O2 -g set CGO_ENABLED=0 set CGO_FFLAGS=-O2 -g set CGO_LDFLAGS=-O2 -g set CXX=g++ set GCCGO=gccgo set GO111MODULE= 
+  - golang/go#41281 [open/None] 2020-09-07 closed - (21 comments, hits 1) x/tools/gopls: no folding ranges for invalid code
+      Not sure why this has happened however out of the blue Visual Studio Code is now unfolding all code every time the file is saved. I have tried uninstalling/reinstalling and removing extensions though nothing has worked. All code is unfolded every single time the file is saved and results in a lot of
+  - golang/go#82218 [closed/completed] 2026-10-14 closed 2026-10-16 (3 comments, hits 1) x/tools/gopls: hover displays no tooltip for null character rune literals ('\x00', '\u0000') and null byte escapes in strings ("...\x00...")
+      ### gopls version ```text golang.org/x/tools/gopls v0.23.0 ``` *(Also verified on master)* ### go env ```shell set GO111MODULE= set GOAMD64=v1 set GOARCH=amd64 set GOBIN=C:\Users\user\go\bin set GOCACHE=C:\Users\user\AppData\Local\go-build set GOENV=C:\Users\user\AppData\Roaming\go\env set GOEXE=.ex
+  - golang/go#73988 [open/reopened] 2025-06-04 closed - (474 comments, hits 1) x/tools: umbrella for flakes on ppc
+      ``` #!watchflakes default <- builder ~ `ppc` && pkg ~ `golang.org/x/tools` ``` This is an amazingly broad watchflakes pattern, but I think there's something fundamentally broken about our ppc story; I don't think it's just a weak-order data race. As with all flake umbrella issues, if this gets notif
+  - golang/go#72727 [closed/completed] 2025-03-07 closed 2025-03-14 (4 comments, hits 1) x/tools/gopls/internal/analysis/modernize: minmax removes important comment
+      ### Go version go version go1.24.1 linux/amd64 ### Output of `go env` in your module/workspace: ```shell AR='ar' CC='gcc' CGO_CFLAGS='-O2 -g' CGO_CPPFLAGS='' CGO_CXXFLAGS='-O2 -g' CGO_ENABLED='1' CGO_FFLAGS='-O2 -g' CGO_LDFLAGS='-O2 -g' CXX='g++' GCCGO='gccgo' GO111MODULE='' GOAMD64='v1' GOARCH='amd
+  - golang/go#54559 [closed/completed] 2022-08-19 closed 2022-12-15 (25 comments, hits 1) x/tools/gopls: do not block on initial `workspace/configuration` request
+      <pre> ~/x/tools/gopls$ go version -m $(which gopls) /usr/local/google/home/bcmills/bin/gopls: devel go1.20-6001c043dc Fri Aug 19 03:32:27 2022 +0000 path golang.org/x/tools/gopls mod golang.org/x/tools/gopls v0.9.4 h1:YhHOxVi++ILnY+QnH9FGtRKZZrunSaR7OW8/dCp7bBk= dep github.com/BurntSushi/toml v1.2.0
+  - golang/go#42923 [closed/completed] 2020-12-01 closed 2020-12-04 (8 comments, hits 1) x/tools/gopls: comments duplicated with CRLF files
+      <!-- Please answer these questions before submitting your issue. Thanks! For questions please use one of our forums: https://github.com/golang/go/wiki/Questions --> ### What version of Go are you using (`go version`)? <pre> $ go version go version go1.15.5 windows/amd64 </pre> ### Does this issue re
+
+== C17
+  query: repo:microsoft/pyright "Did not find evaluation scope" is:issue -> total 0
+  query: repo:microsoft/pyright "Debug Failure" references is:issue -> total 0
+  query: repo:microsoft/pyright find all references internal error is:issue -> total 4
+  query: repo:microsoft/pyright "evaluation scope" is:issue -> total 2
+  query: repo:microsoft/pyright "Debug Failure" is:issue -> total 34
+  query: repo:microsoft/pyright references internal error 32603 is:issue -> total 1
+  query: repo:microsoft/pyright "evaluation scope" assert is:issue -> total 0
+  - microsoft/pyright#10715 [closed/not_planned] 2025-07-16 closed 2025-08-13 (38 comments, hits 1) @overload function gives incorrect revealed type for Pylance but not for pyright/mypy
+      ## Environment data - Pylance version: Pylance language server 2025.6.2 (pyright version 1.1.402, commit 9496ae00) - OS and version: PRETTY_NAME="Debian GNU/Linux 12 (bookworm)" NAME="Debian GNU/Linux" VERSION_ID="12" VERSION="12 (bookworm)" VERSION_CODENAME=bookworm ID=debian HOME_URL="https://www.
+  - microsoft/pyright#7433 [closed/not_planned] 2024-03-08 closed 2024-03-09 (2 comments, hits 1) Refining of type parameters in the case of lists
+      I am pushing for Pyright adoption as the main type checker in a large codebase, and the single biggest stumbling block has been Pyright's inability to infer the element type of lists which are built starting from `[]`. This causes it to silently accept type errors that other type checkers catch (e.g
+  - microsoft/pyright#3147 [closed/completed] 2022-03-04 closed 2022-03-05 (20 comments, hits 1) Clarification on "Guidance for Library Authors"
+      I'm working on getting the large library [Dagster](https://github.com/dagster-io/dagster) to fully-typed status. I read the [Typing Guidance for Python Libraries](https://github.com/microsoft/pyright/blob/main/docs/typed-libraries.md) doc in this repo. While this doc makes many recommendations that 
+  - microsoft/pyright#394 [closed/completed] 2019-12-06 closed 2019-12-06 (12 comments, hits 1) circular import though "from x import *" doesn't work
+      for example, f.py ```python from b import * foo: int = 1 print(bar) ``` b.py ```python from f import * bar: int = 1 print(foo) ``` either bar or foo will show error as unknown symbol depends on which file is the starting point of the analysis the reason seems bindModule doesn't handle circular impor
+  - microsoft/pyright#8764 [closed/not_planned] 2024-08-15 closed 2024-08-15 (6 comments, hits 1) Support statically analyzable singletons
+      While I understand that using classes can be a workaround, but it's super verbose. Supporting something like this would be amazing: ```python from types import SimpleNamespace class Table(SimpleNamespace): pass users_table = Table(id=Col('INT'), name=Col('VARCHAR')) posts_table = Table(user_id=Col('
+  - microsoft/pyright#6423 [closed/not_planned] 2023-11-11 closed 2023-11-11 (5 comments, hits 1) Pylance does not honor union return type for __new__
+      ## Environment data - Language Server version: 2023.11.10 - OS and version: Ubuntu 23.04 - Python version: 3.11.4 ## Code Snippet ```python from __future__ import annotations from random import choice from typing import cast class TriangleOrSquare: def __new__(cls, *args, **kwargs) -> Triangle | Squ
+  - microsoft/pyright#10889 [open/None] 2025-09-03 closed - (3 comments, hits 1) Request textDocument/completion failed on custom code
+      **Describe the bug** Hello, I'm trying to create a decorator that will "copy the kwarg types" of a function to another (code below). However, I am facing the following issue: ``` [Error - 9:52:33 PM] Request textDocument/completion failed. Message: Request textDocument/completion failed with message
+  - microsoft/pyright#10686 [open/None] 2025-07-08 closed - (0 comments, hits 1) "setIncompleteSubtype can be called only on a valid incomplete cache entry" crash from Pylance telemetry
+      Pyright crash from Pylance telemetry. It looks like this first appeared in 1.1.402. There have been about 2700 hits across 50 machines. I'm not sure why our dashboard code wasn't able to use the source maps to get function names for the call stack. Filing in case the issue is apparent to you. We'll 
+  - microsoft/pyright#7933 [closed/completed] 2024-05-16 closed 2024-05-22 (1 comments, hits 1) Debug failure for invalid type alias statement 
+      **Describe the bug** It seems like the server is failing to possibly log the syntax error for the following code: ```py type def = 1 ``` Here, `def` is a keyword but is not allowed in that position, only soft keywords are allowed there. **Code or Screenshots** The code is mentioned above. The error 
+  - microsoft/pyright#8235 [closed/completed] 2024-06-26 closed 2024-07-02 (2 comments, hits 1) Error occurred when creating type stub for sqlglot on first try
+      **Describe the bug** Createstub fails with `sqlglot` on the first try. If the command is run a second time, the command will succeed. This is a regression from pyright that happens in `1.1.367`. `1.1.366` works well on first try with the same `sqlglot` version. **Code or Screenshots** ```sh pip inst
+  - microsoft/pyright#8228 [closed/completed] 2024-06-25 closed 2024-07-02 (6 comments, hits 1) Pyright crashes starting from version 1.1.367
+      **Describe the bug** Starting from version 1.1.367, Pyright seems to crash with an inexplicable error and no clear information regarding the cause. I first noticed it in this GitHub Actions workflow [run](https://github.com/uclahs-cds/BL_Python/actions/runs/9669343046/job/26675663422?pr=78), however
+  - microsoft/pyright#8137 [closed/completed] 2024-06-13 closed 2024-06-18 (3 comments, hits 1) TypeEvaluator crashes due to Protocol usage with TypeVar(infer_variance=True)
+      pyright 1.1.367 python 3.11 After upgrade from 1.1.366, pyright crashes with error: ``` An internal error occurred while type checking file "...": Error: Debug Failure. False expression: Expected variance to be inferred ``` Code to reproduce: ```python from typing import Protocol from typing_extensi
+  - microsoft/pyright#5689 [closed/completed] 2023-08-11 closed 2023-08-11 (1 comments, hits 1) pyright shuts down on opening python file - used with eglot and emacs 29.1
+      I am trying to use pyright with eglot and emacs. I have emacs 29.1 and have pyright installed via pip in an anaconda environment called pythonProject. I initially didn't have a pyrightconfig.json file but added one in an attempt to clarify the issue. It made no difference to the error. I also get th
+
+== C18
+  query: repo:microsoft/pyright hover type depends on order is:issue -> total 6
+  query: repo:microsoft/pyright inferred return type different after edit is:issue -> total 5
+  query: repo:microsoft/pyright call-site return type inference inconsistent is:issue -> total 4
+  query: repo:microsoft/pyright Unknown vs inferred type nondeterministic is:issue -> total 0
+  - microsoft/pyright#10661 [open/None] 2025-06-30 closed - (4 comments, hits 1) Instance of "Class definition depends on itself" error is order-dependent
+      **Describe the bug** Repro code https://github.com/vors/pyright_cycle_repro (requires `uv pip install chz`) ``` #> pyright_cycle_repro % pyright a.py b.py 0 errors, 0 warnings, 0 informations #> pyright_cycle_repro % pyright b.py a.py pyright_cycle_repro/b.py pyright_cycle_repro/b.py:15:62 - error: 
+  - microsoft/pyright#9391 [closed/not_planned] 2024-11-05 closed 2024-11-05 (3 comments, hits 1) Class definition for D depends on itself - unable to figure out types
+      Pyright gets "Unknown" for the return-type of f, but Mypy and Pyre get "D.A". ``` from __future__ import annotations from typing import Generic, Type, TypeVar from abc import ABC T = TypeVar("T") class C(Generic[T], ABC): A: Type[T] class D(C["D.A"]): # "class definition for D depends on itself" (py
+  - microsoft/pyright#4518 [closed/completed] 2023-01-24 closed 2023-01-24 (27 comments, hits 1) Class definition for "MyClass" depends on itself
+      Note: if you are reporting a wrong signature of a function or a class in the standard library, then the typeshed tracker is better suited for this report: https://github.com/python/typeshed/issues. **Describe the bug** At seemingly random times I get errors reported for my classes saying "Class defi
+  - microsoft/pyright#8255 [closed/not_planned] 2024-06-28 closed 2024-06-28 (2 comments, hits 1) TypeVar is not subscriptable
+      **Describe the bug** Pyright incorrectly reports `TypeVar "Baz" is not subscriptable` at an annotation like `Baz[T, U]`. Removing the type arguments in another location results in an error `Expected type arguments for generic type alias "Baz"`. The first issue is the message says Baz is a TypeVar th
+  - microsoft/pyright#6764 [closed/completed] 2023-12-17 closed 2023-12-26 (5 comments, hits 1) False positive of "reportUnnecessaryComparison" with condition inside loop
+      **Describe the bug** See sample code below. `f0` and `f1` are basically the same except for the swapped operands around `!=`. `f0` type-checks but `f1` gets reported. Note: Initial value of `a` needs to be `None` to have this issue appear. **Code or Screenshots** ```python def f0(): a = None b = '' 
+  - microsoft/pyright#2983 [closed/completed] 2022-02-04 closed 2022-03-27 (3 comments, hits 1) Evaluated type of expression varies based on evaluation order
+      This is a tracking bug. The original is found here: https://github.com/microsoft/pylance-release/issues/2324. The evaluated type of the return expression depends on the order of evaluation. It should be order invariant. To repro, hover over the `e` in the return statement while modifying the file. T
+  - microsoft/pyright#10910 [open/reopened] 2025-09-09 closed - (9 comments, hits 1) Pyright fails on files that are too large
+      Pyright started failing on our repo a few weeks ago, providing incorrect hints in VS Code, though mypy was successfully passing. We noticed that the issue was triggered when we bumped one of the dependencies, which boils down to one very large (~90k line), autogenerated Python file. I then turned th
+  - microsoft/pyright#9410 [closed/not_planned] 2024-11-07 closed 2024-11-07 (11 comments, hits 1) Invariant `__class__: T` inferred as `Self | T` causing false negatives
+      This example illustrates the issue, and how solving it makes it possible to completely annotate `assert type(x) is int`: ```py from typing import Protocol, override class Just[T](Protocol): # ~T@Just is invariant @property # type: ignore[override] @override def __class__(self, /) -> type[T]: ... # p
+  - microsoft/pyright#2698 [closed/completed] 2021-12-12 closed 2021-12-12 (13 comments, hits 1) Descriptor changing its class return type when object sets something to it
+      Considering this self-contained example: ```python from typing import TypeVar, overload _S = TypeVar("_S", bound="Descriptor") _M = TypeVar("_M", bound="Model") class Descriptor: @overload def __get__(self: _S, obj: None, objtype: type[_M]) -> _S: ... @overload def __get__(self, obj: _M, objtype: ty
+  - microsoft/pyright#3528 [closed/completed] 2022-06-01 closed 2022-06-01 (14 comments, hits 1) --verifytypes does not resolve local directory
+      The context for this bug is in this thread: https://github.com/microsoft/pyright/issues/2320 **Describe the bug** ``` pyright indexapi ``` works fine and analyzes my 29 files: ``` pyright installed: nodeenv==1.6.0,pyright==1.1.251 pyright run-test-pre: PYTHONHASHSEED='3105655527' pyright run-test: c
+  - microsoft/pyright#1846 [closed/completed] 2021-05-09 closed 2021-06-04 (4 comments, hits 1) Type inference of attrs assigned in __init__ in third-party py.typed packages
+      **Is your feature request related to a problem? Please describe.** This issue based on the discussion in the #1832 issue. Instance attributes in many libraries, that I checked, aren't explicitly annotated in class bodies. [Real example in aiohttp](https://github.com/aio-libs/aiohttp/blob/4d584004773
+  - microsoft/pyright#10039 [open/None] 2025-03-06 closed - (4 comments, hits 1) Diagnostic results are inconsistent when using "--threads" option on sympy
+      The "mypy_primer" results for sympy consistent show differences between runs. This is likely due to circular dependencies within the sympy code, but an investigation should verify this hypothesis. If possible, it would be preferable to improve the repeatability even when type checking is parallelize
+  - microsoft/pyright#3013 [closed/completed] 2022-02-09 closed 2025-05-09 (22 comments, hits 1) Strict Setting for Return Types
+      **Is your feature request related to a problem? Please describe.** Can we have a config option for a library to require return type annotations? So that code like, ```python def f(x: int): return x ``` is an error on strict for missing return type. **Describe the solution you'd like** A configuratio
+  - microsoft/pyright#10518 [closed/not_planned] 2025-05-29 closed 2025-05-29 (1 comments, hits 1) Disable call-site return type inference
+      Hello! Thank you all for working on pyright and helping us make our python code more readable and type safe. I've noticed pyright has a feature called "call-site return type inference". Based on this, it is apparently quite expensive: https://github.com/microsoft/pyright/issues/10039#issuecomment-27
+  - microsoft/pyright#9279 [closed/not_planned] 2024-10-21 closed 2024-10-21 (4 comments, hits 1) Incorrect `__aexit__` return-type-based control flow inference
+      **Describe the bug** `__aexit__` with a `bool | None` return type seems to be handled incorrectly compared to `__aexit__` with a `bool` return type, despite being a superset of possible return types (i.e. both are capable of suppressing the exception). **Code or Screenshots** ```python import random
+
+== C19
+  query: repo:microsoft/pyright hover docstring missing after rename is:issue -> total 1
+  query: repo:microsoft/pyright docstring missing hover stdlib is:issue -> total 1
+  query: repo:microsoft/pyright hover documentation lost file rename is:issue -> total 0
+  query: repo:microsoft/pyright rename file docstring is:issue -> total 7
+  - microsoft/pyright#1118 [closed/completed] 2020-10-23 closed 2021-11-25 (116 comments, hits 2) reportUnusedVariable ignore pattern
+      **Is your feature request related to a problem? Please describe.** PyRight at present seems to have no way to fine tune the `reportUnusedVariable` setting to ignore variables matching certain patterns. When implementing a function/method with a third-party-specified interface, it often happens that 
+  - microsoft/pyright#4250 [closed/completed] 2022-11-30 closed 2022-11-30 (1 comments, hits 1) Missing docstring for stdlib functions with C impls
+      **Describe the bug** Functions such as `itertools.combinations` and `itertools.combinations_with_replacement` don't have their docstrings displayed with the signature. **To Reproduce** - Use pyright as the LSP in nvim, vsc, helix, etc. - Hover over `combinations_with_replacement` or add the `(` afte
+  - microsoft/pyright#3147 [closed/completed] 2022-03-04 closed 2022-03-05 (20 comments, hits 1) Clarification on "Guidance for Library Authors"
+      I'm working on getting the large library [Dagster](https://github.com/dagster-io/dagster) to fully-typed status. I read the [Typing Guidance for Python Libraries](https://github.com/microsoft/pyright/blob/main/docs/typed-libraries.md) doc in this repo. While this doc makes many recommendations that 
+  - microsoft/pyright#3528 [closed/completed] 2022-06-01 closed 2022-06-01 (14 comments, hits 1) --verifytypes does not resolve local directory
+      The context for this bug is in this thread: https://github.com/microsoft/pyright/issues/2320 **Describe the bug** ``` pyright indexapi ``` works fine and analyzes my 29 files: ``` pyright installed: nodeenv==1.6.0,pyright==1.1.251 pyright run-test-pre: PYTHONHASHSEED='3105655527' pyright run-test: c
+  - microsoft/pyright#1395 [closed/completed] 2021-01-20 closed 2021-03-27 (3 comments, hits 1) Separating JSON output to break up multiline messages into objects
+      **Is your feature request related to a problem? Please describe.** The JSON output from `--verifytypes` is just a list of messages. A multiline message is one big string, which is hard to analyze. **Describe the solution you'd like** A more object-oriented format. **Additional context** Example. If 
+  - microsoft/pyright#1493 [closed/completed] 2021-02-16 closed 2021-02-16 (3 comments, hits 1) Inference of class variable types with --verifytypes
+      **Describe the bug** pyright isn't inferring types of class variables when doing `verifytypes` **To Reproduce** Create a directory called `callib` with empty `__init__.py` and `py.typed` files. Create `fooclass.py` with the following: ```python from typing import Any, Optional, Callable def make_inv
+  - microsoft/pyright#1424 [closed/completed] 2021-01-26 closed 2021-02-02 (6 comments, hits 1) pyright --verifytypes on pandas dev and numpy devs seems to hang
+      **Describe the bug** Creating a dev environment using pandas master and numpy master and then doing pyright --verifytypes pandas gets no response after at least 30 minutes **To Reproduce** Create a pandas dev environment as described here: https://pandas.pydata.org/docs/development/contributing.html
+
+== C20
+  query: repo:microsoft/pyright references string annotation is:issue -> total 15
+  query: repo:microsoft/pyright find references quoted type annotation is:issue -> total 1
+  query: repo:microsoft/pyright references forward reference string is:issue -> total 12
+  query: repo:microsoft/pyright references cast string type is:issue -> total 3
+  - microsoft/pyright#11956 [open/None] 2026-11-01 closed - (1 comments, hits 2) Support sentinels with dynamic names
+      Python's typing specification for `sentinel` states: ([https://typing.python.org/en/latest/spec/special-types.html](https://typing.python.org/en/latest/spec/special-types.html)) > Sentinel objects may be used in type annotations if they are defined using a simple assignment of the form NAME = sentin
+  - microsoft/pyright#11073 [closed/not_planned] 2025-10-30 closed 2025-10-30 (3 comments, hits 1) Type alias with literal integer parameter incorrectly flagged as "Expected class but received   Literal[N]"
+      ## Environment - **Pyright Version**: 1.1.407 - **Python Version**: 3.13.7 - **Operating System**: Linux 6.16.8-arch3-1 - **Project**: TypeBridge - TypeDB ORM for Python [[Link](https://github.com/ds1sqe/type-bridge)] --- ## Description When using a type alias that takes an integer literal as a type
+  - microsoft/pyright#10541 [closed/completed] 2025-06-04 closed 2025-06-10 (4 comments, hits 1) Support new scoping rules for annotations in Python 3.14
+      Python 3.14 changes the way that annotation expressions are evaluated. It doesn't (exactly) match either the standard behavior or the `from __future__ import annotation` behavior of previous versions. In particular, if an annotation references a symbol in a containing class scope, it uses that class
+  - microsoft/pyright#10715 [closed/not_planned] 2025-07-16 closed 2025-08-13 (38 comments, hits 1) @overload function gives incorrect revealed type for Pylance but not for pyright/mypy
+      ## Environment data - Pylance version: Pylance language server 2025.6.2 (pyright version 1.1.402, commit 9496ae00) - OS and version: PRETTY_NAME="Debian GNU/Linux 12 (bookworm)" NAME="Debian GNU/Linux" VERSION_ID="12" VERSION="12 (bookworm)" VERSION_CODENAME=bookworm ID=debian HOME_URL="https://www.
+  - microsoft/pyright#7678 [closed/completed] 2024-04-12 closed 2024-04-17 (7 comments, hits 2) False positive undefined in function generic bounds
+      **Describe the bug** Function generic bounds with types that are defined later have a false positive undefined error. **Code or Screenshots** ```python def fn[T: Unk]() -> None: ... class Unk: ... ``` Note that both of the following work fine: ``` type _Unk = Unk def fn[T: _Unk]() -> None: ... # or 
+  - microsoft/pyright#6776 [closed/not_planned] 2023-12-18 closed 2023-12-18 (9 comments, hits 4) False negative with `Class1 | Class2` union syntax prior to Python 3.10, when `__future__.annotations` is imported
+      **Describe the bug** When using the Union type syntax for Python 3.10+, e.g. `str | None`, with python version <3.10, pyright incorrectly finds no errors if `__future__.annotations` is imported. **Code or Screenshots** Given the file ```python def fn(input: str | None): pass ``` Pyright correctly fi
+  - microsoft/pyright#8649 [closed/completed] 2024-08-04 closed 2024-08-07 (8 comments, hits 2) String literal reported as "is not defined" generating `reportUndefinedVariable`
+      String literal is reported as undefined variable producing `reportUndefinedVariable` **Code or Screenshots** Minimal example ```python mem = memoryview(b"0123456789").cast("B", (2, 5)) ``` Generated error: ``` $ pyright issue.py /home/user/issue.py /home/user/issue.py:1:39 - error: "B" is not define
+  - microsoft/pyright#6401 [closed/not_planned] 2023-11-09 closed 2023-11-09 (8 comments, hits 1) Errors when returning a class instance from a classmethod in v1.1.335
+      **Describe the bug** Since v1.1.335, we have been getting errors when we try to return an instance of a class, via its own classmethod. This is something we do frequently in our app, when converting an object in our domain model to its equivalent in our API (and vice-versa). The error messages are r
+  - microsoft/pyright#5935 [closed/completed] 2023-09-12 closed 2023-09-13 (2 comments, hits 1) False positive with inline TypedDict and postponed annotations
+      **Describe the bug** When using `from __future__ import annotations` with the experimental inline TypedDict syntax, Pyright gives what I *think* is a false `reportUndefinedVariable` error for non-string forward references. **Code or Screenshots** Code: ```python from __future__ import annotations fr
+  - microsoft/pyright#3628 [closed/completed] 2022-06-28 closed 2022-06-28 (2 comments, hits 1) Support different types for instance vs class variables
+      **Is your feature request related to a problem? Please describe.** Most (?) users of SQLAlchemy's ORM mode (https://docs.sqlalchemy.org/en/14/orm/quickstart.html) seems to have this problem: You have defined an sql table using SQLAlchemy's ORM mode like this: ```python from sqlalchemy import Column,
+
+== C21
+  query: repo:microsoft/pyright signature help return type Unknown is:issue -> total 47
+  query: repo:microsoft/pyright inferred return type Unknown after opening file is:issue -> total 0
+  query: repo:microsoft/pyright return type Unknown circular import is:issue -> total 5
+  query: repo:microsoft/pyright hover return type depends on open files is:issue -> total 0
+  - microsoft/pyright#10039 [open/None] 2025-03-06 closed - (4 comments, hits 1) Diagnostic results are inconsistent when using "--threads" option on sympy
+      The "mypy_primer" results for sympy consistent show differences between runs. This is likely due to circular dependencies within the sympy code, but an investigation should verify this hypothesis. If possible, it would be preferable to improve the repeatability even when type checking is parallelize
+  - microsoft/pyright#3013 [closed/completed] 2022-02-09 closed 2025-05-09 (22 comments, hits 1) Strict Setting for Return Types
+      **Is your feature request related to a problem? Please describe.** Can we have a config option for a library to require return type annotations? So that code like, ```python def f(x: int): return x ``` is an error on strict for missing return type. **Describe the solution you'd like** A configuratio
+  - microsoft/pyright#11305 [closed/not_planned] 2026-03-04 closed 2026-03-04 (3 comments, hits 1) Type Alias Imported From Another File Not Respected
+      <!-- Read the guidelines for filing an issue first. https://github.com/microsoft/pylance-release/blob/main/TROUBLESHOOTING.md#filing-an-issue --> ## Environment data <!-- To find your version, open the VS Code extensions panel, then locate Pylance from the list of installed extensions. The version a
+  - microsoft/pyright#10715 [closed/not_planned] 2025-07-16 closed 2025-08-13 (38 comments, hits 1) @overload function gives incorrect revealed type for Pylance but not for pyright/mypy
+      ## Environment data - Pylance version: Pylance language server 2025.6.2 (pyright version 1.1.402, commit 9496ae00) - OS and version: PRETTY_NAME="Debian GNU/Linux 12 (bookworm)" NAME="Debian GNU/Linux" VERSION_ID="12" VERSION="12 (bookworm)" VERSION_CODENAME=bookworm ID=debian HOME_URL="https://www.
+  - microsoft/pyright#2080 [closed/completed] 2021-07-13 closed 2021-07-17 (4 comments, hits 1) Option to warn or error on unreachable statements/expressions
+      **Is your feature request related to a problem? Please describe.** In relation to #2079, right now the behaviour for Never cases isn't the nicest from an error standpoint, for me it lead to errors about the relevant variable's attributes being "unknown" (since it'd been resolved to Never) and this w
+  - microsoft/pyright#8548 [closed/not_planned] 2024-07-26 closed 2024-07-26 (1 comments, hits 1) Pylance incorrectly flags “actual” function definition in group of overloaded functions as missing types
+      <!-- Read the guidelines for filing an issue first. https://github.com/microsoft/pylance-release/blob/main/TROUBLESHOOTING.md#filing-an-issue --> ## Environment data <!-- To find your version, open the VS Code extensions panel, then locate Pylance from the list of installed extensions. The version a
+  - microsoft/pyright#9547 [closed/not_planned] 2024-12-04 closed 2024-12-04 (2 comments, hits 1) a decorated function calling itself gives inconsistent typing
+      ```python from typing import Callable class Printer[**P]: def print_args(self, *args: P.args, **kwargs: P.kwargs): print(args, kwargs) def make_into_printer[**P](func: Callable[P, None]) -> Printer[P]: return Printer() @make_into_printer def calculate_math(x: int): calculate_math.print_args(3) ``` H
+  - microsoft/pyright#9391 [closed/not_planned] 2024-11-05 closed 2024-11-05 (3 comments, hits 1) Class definition for D depends on itself - unable to figure out types
+      Pyright gets "Unknown" for the return-type of f, but Mypy and Pyre get "D.A". ``` from __future__ import annotations from typing import Generic, Type, TypeVar from abc import ABC T = TypeVar("T") class C(Generic[T], ABC): A: Type[T] class D(C["D.A"]): # "class definition for D depends on itself" (py
+  - microsoft/pyright#9253 [closed/completed] 2024-10-18 closed 2024-10-23 (5 comments, hits 1) Protocol matching sometimes depends on order of protocol class method definitions
+      **Describe the bug** I've got a few classes that are used to define some schemas for serialisation and deserialisation, and have mostly got typing support working, but have come across a curious case where pyright fails to infer a type correctly depending on the order of method definitions in a prot
+  - microsoft/pyright#8176 [closed/not_planned] 2024-06-19 closed 2024-06-19 (2 comments, hits 1) Generic parameter referencing a nested class
+      **Describe the bug** When a type parameter on a generic class forward-references a nested class within the generic class itself, Pyright will emit a "Class definition depends on itself" error and will reveal the bound parameter as "Unknown". For the same test code, `mypy` correctly determines the pa
+  - microsoft/pyright#5086 [closed/completed] 2023-05-10 closed 2023-05-10 (1 comments, hits 1) Using TypeVar, Generic and class methods can lead to Pyright incorrectly think there is a circular dependency 
+      **Describe the bug** I'm trying to add type hinting to a large and old project and I have encountered a situation where Pyright incorrectly reports an error of `Class definition for "Container" depends on itself`. Running the code shows no circular dependencies, as forward references were used. Envi
+
+== C22
+  query: repo:microsoft/pyright auto import __future__ is:issue -> total 8
+  query: repo:microsoft/pyright "from __future__ import" completion is:issue -> total 5
+  query: repo:microsoft/pyright auto import private name typeshed is:issue -> total 5
+  query: repo:microsoft/pyright _VersionInfo is:issue -> total 0
+  - microsoft/pyright#10776 [open/None] 2025-08-08 closed - (2 comments, hits 1) incorrectly `reportUnknownParameterType` with double type alias
+      <!-- Read the guidelines for filing an issue first. https://github.com/microsoft/pylance-release/blob/main/TROUBLESHOOTING.md#filing-an-issue --> ## Environment data <!-- To find your version, open the VS Code extensions panel, then locate Pylance from the list of installed extensions. The version a
+  - microsoft/pyright#11467 [closed/duplicate] 2026-05-26 closed 2026-05-27 (0 comments, hits 1) PEP661 sentinels in instance attributes in strict mode result in unknown types
+      For this snippet ([playground](https://pyright-play.net/?strict=true&enableExperimentalFeatures=true&code=GYJw9gtgBA%2BjwFcAuCQFM5QJYQA5hCSgEMA7UsJYpLMUgZwChHRIoATa4gYwBtj69NPWx4CRTlT4CmLcNCQBPXFlIBzGGgAeSNA1oNR%2BQlADKemqTS8oUAMRRcikFjUALJAC5saiugDa6MZIALJYgqpqIWDsCLxopmCo3GgAuswAggCqACoA8lAAvGYWqt
+  - microsoft/pyright#10424 [closed/not_planned] 2025-05-08 closed 2025-05-08 (2 comments, hits 1) Union of final closed TypedDicts not narrowed with TypeIs or match
+      When working with a union of two final, closed `TypedDict` definitions, I'd expect the `is_unary()` type guard to narrow the `Ast` union down to the `BinaryOp` type, and the `match` statement to be exhaustive: ```python # pyright: strict from __future__ import annotations from enum import StrEnum, a
+  - microsoft/pyright#9185 [closed/not_planned] 2024-10-09 closed 2024-10-09 (2 comments, hits 1) False positive assigning `SomeEnum` to `Literal[<every SomeEnum>]`
+      **Describe the bug** Pyright says a value of type `SomeEnum` (i.e., an element of that enum) cannot be assigned to a variable having type `Literal[<every element of SomeEnum>]`. Breaking up the same assignment by testing for each element in turn works as expected. Ideally, pyright would recognize th
+  - microsoft/pyright#6066 [closed/not_planned] 2023-10-03 closed 2023-10-09 (13 comments, hits 1) Pyright generates bad paths for stubs when `pyrightconfig.json` is in a subdir
+      **Describe the bug** When the `pyrightconfig.json` is not in the root of the source tree, it generates `pyi` files in the wrong location. **Code or Screenshots** Given a directory structure like: ``` . ├── out │ └── path │ └── to │ └── whatever │ └── pyrightconfig.json └── some └── path └── to └── s
+  - microsoft/pyright#4983 [closed/completed] 2023-04-21 closed 2023-04-26 (2 comments, hits 1) Star importing module that imports `__future__.annotations` without defining `__all__` causes TypeAliases used externally to be illegal
+      **Describe the bug** Star importing a module that star imports `__future__.annotations` causes `TypeAlias`es used externally to be illegal **To Reproduce** Consider the following project structure: ``` . ├── README.md ├── foolib │ ├── core │ │ ├── __init__.py │ │ └── impl.py │ └── types.py ├── main.
+  - microsoft/pyright#10708 [closed/completed] 2025-07-14 closed 2025-07-21 (8 comments, hits 1) Error when subscribing a generic `cls` parameter in a classmethod
+      **Describe the bug** I have a classmethod that should return a dynamic subclass with different type parameters. To be correct I would need to subscribe `class Inner(cls[X]): ...`, however this raises an error. It appears that in this context `cls` is partially treated as a `TypeVar` - according to t
+  - microsoft/pyright#4583 [closed/completed] 2023-02-04 closed 2023-02-04 (2 comments, hits 1) Infer `Callable` shape for rhs of `+=` when `__iadd__` accepts a `Callable[]`
+      **Is your feature request related to a problem? Please describe.** I have implemented an event subscription mechanism that can be used like this: ```python object.event += lambda arg_a: arg_a.field object.event.append_listener(lambda arg_a: arg_a.field) ``` However, the type of `arg_a` does not infe
+  - microsoft/pyright#2779 [closed/completed] 2021-12-31 closed 2021-12-31 (12 comments, hits 1) (Unsafe) type cast not taken into account for fields
+      **Describe the bug** ```python class C: def foo(self): self.casted: int = None # type: ignore - self.casted # Operator "-" not supported for type "None" ``` The type cast is not taken into account for the following type-checks. Note that it does not happen if I replace `self.casted` by `casted`, thi
+  - microsoft/pyright#2359 [closed/completed] 2021-10-01 closed 2021-10-01 (3 comments, hits 1) Properties declared as `InitVar` are recognized as valid properties in `dataclass` classes
+      **Describe the bug** Given the following code: ```python from __future__ import annotations from collections.abc import Iterable from dataclasses import InitVar, dataclass, field from typing import Any @dataclass class Container: iterable: InitVar[Iterable[Any]] items: list[Any] = field(init=False) 
+  - microsoft/pyright#2237 [closed/completed] 2021-08-28 closed 2021-08-28 (3 comments, hits 1) Forward reference in generic type argument causes missing members
+      #### Describe the bug I have a forward reference in a generic type argument referring to a class whose base class is the class using the forward reference. This situation causes Pyright to not inherit members when subclassing the class using the forward reference. #### To Reproduce ```python from __
+  - microsoft/pyright#11139 [closed/duplicate] 2025-11-25 closed 2025-11-26 (8 comments, hits 1) Pyright 1.1.407 fails to validate working pydantic dataclasses code in Python 3.14
+      ## Environment data - Pylance version: 2025.10.1 (pyright 1.1.407) - OS and version: MacOS (Darwin), Version 23.6.0, arm64 - Python version (& distribution if applicable, e.g. Anaconda): Homebrew, Python 3.14.0 - Virtual environment (from python -m venv): Relevant package versions shown below ## Cod
+  - microsoft/pyright#3147 [closed/completed] 2022-03-04 closed 2022-03-05 (20 comments, hits 1) Clarification on "Guidance for Library Authors"
+      I'm working on getting the large library [Dagster](https://github.com/dagster-io/dagster) to fully-typed status. I read the [Typing Guidance for Python Libraries](https://github.com/microsoft/pyright/blob/main/docs/typed-libraries.md) doc in this repo. While this doc makes many recommendations that 
+  - microsoft/pyright#9146 [closed/completed] 2024-09-12 closed 2024-10-09 (55 comments, hits 1) File analysis runs indefinitely after upgrading to v2024.9.1
+      ## Environment data - Pylance version: v2024.9.1 - OS and version: MacOS 13.0.1 - Python version (& distribution if applicable, e.g. Anaconda): 3.12.5 ## Repro Steps Upgrade to the specified version and file analysis runs indefinitely. ## Expected behavior Upgrade to the specified version and file a
+  - microsoft/pyright#2799 [closed/completed] 2022-01-04 closed 2022-01-04 (9 comments, hits 1) Unknown type of `requests.Session().headers`
+      **Describe the bug** Pyright complains about type of `requests.Session()` headers attribute: ```console $ pyright t.py No configuration file found. pyproject.toml file found at /private/tmp. Loading pyproject.toml file at /private/tmp/pyproject.toml Assuming Python platform Darwin Auto-excluding **/
+  - microsoft/pyright#800 [closed/completed] 2020-07-07 closed 2020-07-07 (3 comments, hits 1) Enum _generate_next_value_ method raises possible spurious type error
+      **Describe the bug** Enums are allowed to have a special method `_generate_next_value_`, which powers `auto()` and does not take `self` as the first parameter. I don't think pyright is recognizing this, but I might be wrong. **Screenshots or Code** This is an example from the [enum docs](https://doc
+
+== C23
+  query: repo:rust-lang/rust-analyzer find references hang is:issue -> total 9
+  query: repo:rust-lang/rust-analyzer references timeout is:issue -> total 10
+  query: repo:rust-lang/rust-analyzer find all references slow regression is:issue -> total 4
+  query: repo:rust-lang/rust-analyzer references never returns is:issue -> total 9
+  - rust-lang/rust-analyzer#23522 [open/None] 2026-10-17 closed - (30 comments, hits 4) Find All References never returns when the crate contains a specific .md file
+      **rust-analyzer version**: `1.98.0 (88d9e12 2026-08-18)` and `0.3.3081-standalone` **rustc version**: `rustc 1.98.0` **editor or extension**: VSCode, rust-analyzer extension `0.3.3081` (also reproduced with a standalone LSP client) **platform**: Linux x86_64 **relevant settings**: none (defaults) **
+  - rust-lang/rust-analyzer#20443 [closed/completed] 2025-08-13 closed 2026-02-03 (43 comments, hits 1) New trait solver migration issues
+      > [!NOTE] > We have paused our stable releases for now, if you wish to test the new trait solver please grab a nightly release, install a nightly toolchain component on rustup from after today or use the pre-release channel on VSCode. This issue is meant to serve as a general collection of issue rep
+  - rust-lang/rust-analyzer#10910 [closed/completed] 2021-12-03 closed 2023-01-19 (44 comments, hits 2) Stuck at 'rust_analyzer: -32801: waiting for cargo metadata or cargo check'
+      <!-- Troubleshooting guide: https://rust-analyzer.github.io/manual.html#troubleshooting Forum for questions: https://users.rust-lang.org/c/ide/14 Before submitting, please make sure that you're not running into one of these known issues: 1. on-the-fly diagnostics are mostly unimplemented (`cargo che
+  - rust-lang/rust-analyzer#11933 [closed/completed] 2022-04-08 closed 2022-04-09 (17 comments, hits 1) rust-analyzer in VS Code will stick in the save action for a long time
+      ## Brief Description After upgrading to rust-analyzer for VS Code 0.3.1006, I found that `rust-analyzer` **often took a long time to run the pre-save action**. It would take about 7 seconds for a save, and I can neither run my code nor commit to Git at this moment. Therefore, I made a bisection, and
+  - rust-lang/rust-analyzer#6568 [closed/completed] 2020-11-17 closed 2022-05-28 (5 comments, hits 1) 'Find all references' hangs forever
+      It's also possible I just didn't wait long enough - I waited about 2 minutes. Steps to replicate: print Alt+Shift+F12 or Shift+F12 on https://github.com/rust-lang/rust/blob/9b2b02a840f358bcadef5c3ae861d2852da20b3d/src/librustdoc/html/render/mod.rs#L1510.
+  - rust-lang/rust-analyzer#7817 [closed/completed] 2021-03-01 closed 2022-03-30 (15 comments, hits 1) Chalk panics on tonic
+      <!-- Troubleshooting guide: https://rust-analyzer.github.io/manual.html#troubleshooting Forum for questions: https://users.rust-lang.org/c/ide/14 Before submitting, please make sure that you're not running into one of these known issues: 1. on-the-fly diagnostics are mostly unimplemented (`cargo che
+  - rust-lang/rust-analyzer#19406 [open/None] 2025-03-21 closed - (6 comments, hits 1) thread 'LspServer' panicked at crates\base-db\src\lib.rs:133:14:
+      Happened when switching revisions where one of the files I had open no longer exists ``` thread 'LspServer' panicked at crates\base-db\src\lib.rs:133:14: Unable to fetch FileSourceRootInput; this is a bug stack backtrace: 0: std::panicking::begin_panic_handler at /rustc/4eb161250e340c8f48f66e2b929ef
+  - rust-lang/rust-analyzer#21966 [closed/completed] 2026-04-06 closed 2026-04-06 (69 comments, hits 1) From 0.3.2854 strange error "Unfortunately we don't ship binaries for your platform yet"
+      After upgrading to `0.3.2854` I'm getting: ``` Unfortunately we don't ship binaries for your platform yet. You need to manually clone the rust-analyzer repository and run `cargo xtask install --server` to build the language server from sources. If you feel that your platform should be supported, ple
+  - rust-lang/rust-analyzer#11015 [open/None] 2021-12-14 closed - (0 comments, hits 1) Option to disable or at least debounce crate graph loading progress messages
+      I still get lots of progress reports, sometimes dozens in a single millisecond. ``` $ rust-analyzer --version rust-analyzer fc628cfc8 2021-12-12 dev ``` Here is the log with timestamps (look for `$/progress`). The log is the result of opening [kak-lsp](https://github.com/kak-lsp/kak-lsp/)'s `src/mai
+  - rust-lang/rust-analyzer#3715 [closed/completed] 2020-03-25 closed 2020-06-26 (27 comments, hits 1) Better VFS
+      Our VFS has a number of implementation and design problem. Being the core of the system, this is not good :-) The main impl problem is that we hit many bugs in the underlying notify library (so that we try to use client-side watching by default) (and the root cause here is that the OS APIs for file 
+  - rust-lang/rust-analyzer#19402 [closed/completed] 2025-03-20 closed 2025-12-30 (25 comments, hits 1) Memory usage quadrupled after salsa migration
+      **rust-analyzer version**: 2025-03-17 **rustc version**: nightly/2025-01-04 **editor or extension**: Zed **relevant settings**: N/A After we updated to the latest release of RA, we've seen its memory usage more than quadruple when running on our codebase. Before the update, RA was routinely taking b
+  - rust-lang/rust-analyzer#15656 [closed/completed] 2023-09-23 closed 2024-02-16 (58 comments, hits 1) [Since 0.4.1658] Cannot rename a non-local definition.
+      # System Details **rust-analyzer version**: 0.3.1665-standalone (first broken stable version) **rustc version**: rustc 1.72.1 (d5c2e9c34 2023-09-13) ## Details Since `v0.4.1658-standalone` it is not possible to rename any item inside one of my projects. More details in [reproduction](#reproduction) 
+  - rust-lang/rust-analyzer#1927 [closed/completed] 2019-09-27 closed 2019-10-08 (7 comments, hits 1) Chalks hangs and panics
+      I see the following today: ``` 42458ms - diagnostics 59ms - highlight 16ms - main_loop_inner/loop-turn 18ms - highlight 49ms - main_loop_inner/loop-turn 40261ms - diagnostics 218ms - trait_solve_query 39939ms - trait_solve_query 1ms - parse_query (1 calls) 29ms - trait_solve_query (32 calls) 37974ms
+  - rust-lang/rust-analyzer#13446 [open/None] 2022-10-20 closed - (39 comments, hits 1) Deeper rust-analyzer Integration with Non-Cargo Build Systems
+      This issue connects several disparate issues and discussions, such as https://github.com/rust-lang/rust-analyzer/issues/13437, https://github.com/rust-lang/rust-analyzer/pull/13128, https://github.com/rust-lang/rust-analyzer/issues/12105, https://github.com/rust-lang/rust-analyzer/issues/13226, and 
+  - rust-lang/rust-analyzer#1666 [open/None] 2019-08-08 closed - (28 comments, hits 1) Type annotations "look through" typedefs, which can be confusing.
+      blah.rs: ```rust pub struct Foo; ``` lib.rs: ```rust mod blah; type BlahFoo = blah::Foo; pub struct Foo { inner: BlahFoo, } pub fn f(f: Foo) { let _x = f.inner; } ``` Rust-analyzer reports the type of `_x` to be `Foo`, which is quite confusing -- it would be better as `BlahFoo` or even `blah::Foo`
+  - rust-lang/rust-analyzer#4343 [closed/completed] 2020-05-06 closed 2020-05-08 (37 comments, hits 1) Autocomplete Does not work for std on VSCode and Sublime, works on nvim
+      Thank You,contributors of the project! I have been using RA on nvim and it works very well, it is an incredible productivity boost. Problem - Autocomplete **works fine for non std crates** does not work for any std members Environment Details IDE : VSCode Insiders Mac - April 2020 (version 1.45) Rus
+  - rust-lang/rust-analyzer#10084 [closed/completed] 2021-08-30 closed 2023-07-21 (55 comments, hits 1) thread '<unnamed>' panicked at 'index out of bounds: the len is 1 but the index is 1', crates/hir_def/src/nameres/path_resolution.rs:385:33
+      ``` [ERROR project_model::workspace] cyclic deps: rustc_std_workspace_core(CrateId(1187)) -> core(CrateId(188)), alternative path: core(CrateId(188)) -> rand(CrateId(1055)) -> getrandom(CrateId(529)) -> cfg_if(CrateId(147)) -> compiler_builtins(CrateId(181)) -> rustc_std_workspace_core(CrateId(1187)
+  - rust-lang/rust-analyzer#12367 [closed/completed] 2022-05-23 closed 2022-05-24 (3 comments, hits 1) [WSL2 Ubuntu] rust-analyzer vscode extension suddenly fails to start
+      Starting today, rust-analyzer (v0.4.1067) failed to start due to the following error: ``` Unfortunately we don't ship binaries for your platform yet. You need to manually clone the rust-analyzer repository and run `cargo xtask install --server` to build the language server from sources. If you feel 
+
+== C24
+  query: repo:rust-lang/rust-analyzer semantic tokens hang is:issue -> total 2
+  query: repo:rust-lang/rust-analyzer semanticTokens full timeout is:issue -> total 3
+  query: repo:rust-lang/rust-analyzer semantic highlighting slow regression is:issue -> total 2
+  query: repo:rust-lang/rust-analyzer semantic tokens never returns is:issue -> total 3
+  - rust-lang/rust-analyzer#19404 [closed/completed] 2025-03-20 closed 2025-03-29 (28 comments, hits 2) Performance regression after salsa migration
+      <!-- Troubleshooting guide: https://rust-analyzer.github.io/manual.html#troubleshooting Forum for questions: https://users.rust-lang.org/c/ide/14 Before submitting, please make sure that you're not running into one of these known issues: 1. on-the-fly diagnostics are mostly unimplemented (`cargo che
+  - rust-lang/rust-analyzer#6844 [closed/completed] 2020-12-12 closed 2022-04-19 (7 comments, hits 1) high cpu usage on macOS
+      I looked at the `before submitting guide text`, but I can't really tell if this is a known issue or not. There are [related posts about high cpu usage](https://github.com/rust-analyzer/rust-analyzer/issues/1541), but they seems to be resolved. I have experience high cpu usage several times, in diffe
+  - rust-lang/rust-analyzer#11015 [open/None] 2021-12-14 closed - (0 comments, hits 1) Option to disable or at least debounce crate graph loading progress messages
+      I still get lots of progress reports, sometimes dozens in a single millisecond. ``` $ rust-analyzer --version rust-analyzer fc628cfc8 2021-12-12 dev ``` Here is the log with timestamps (look for `$/progress`). The log is the result of opening [kak-lsp](https://github.com/kak-lsp/kak-lsp/)'s `src/mai
+  - rust-lang/rust-analyzer#13369 [closed/completed] 2022-10-08 closed 2024-09-26 (6 comments, hits 1) Support for workspace/inlayHint/refresh to ensure inlay hints are correctly shown in editors
+      Hey there folks, I hope you're all doing well. This issue is related to https://github.com/sublimelsp/LSP-rust-analyzer/issues/80 In editors such as Sublime Text, inlay hints do not show up until an edit is made to a document. As Rafał has mentioned: > Server initially responds with an error to `tex
+  - rust-lang/rust-analyzer#7590 [closed/completed] 2021-02-07 closed 2021-12-12 (6 comments, hits 1) $/progress impacting perf in vim while typing
+      editor: vim plugin: https://github.com/prabirshrestha/vim-lsp rust-analyzer is sending too many `$/progress` notifications. I do prefer the initial notifications when the server is starting. But once it booted and I start typing and vim-lsp sends didChangeNotification or completion notification I ge
+  - rust-lang/rust-analyzer#23217 [open/None] 2026-08-22 closed - (15 comments, hits 1) Slow auto-complete / semantic highlighting with async function and lots of expressions.
+      I've been trying to reproduce and minimize an auto-complete and semantic highlighting slowdown in our closed-source codebase. It's a rather large async method spanning over 500 lines of code. I've figured that the number of expressions (including the 20x tracing::debug!() lines) and it being async m
+  - rust-lang/rust-analyzer#16218 [open/None] 2023-12-31 closed - (7 comments, hits 1) SemanticTokens request returns empty output
+      # Rust-Analyzer Version a28077b2 2023-12-04 # Rustc Version rustc 1.74.0 (79e9716c9 2023-11-13) (Homebrew) # Description I am trying to query semantic tokens for rust source files from the CLI using `rust-analyzer`. I have written the following Python script to initialize the server and then fire JS
+  - rust-lang/rust-analyzer#10084 [closed/completed] 2021-08-30 closed 2023-07-21 (55 comments, hits 1) thread '<unnamed>' panicked at 'index out of bounds: the len is 1 but the index is 1', crates/hir_def/src/nameres/path_resolution.rs:385:33
+      ``` [ERROR project_model::workspace] cyclic deps: rustc_std_workspace_core(CrateId(1187)) -> core(CrateId(188)), alternative path: core(CrateId(188)) -> rand(CrateId(1055)) -> getrandom(CrateId(529)) -> cfg_if(CrateId(147)) -> compiler_builtins(CrateId(181)) -> rustc_std_workspace_core(CrateId(1187)
+  - rust-lang/rust-analyzer#223 [closed/completed] 2018-11-09 closed 2020-07-15 (41 comments, hits 1) Missing validators
+      Literals: - [x] String - [x] Char - [x] Byte - [x] ByteString - [ ] RawString - [ ] RawByteString - [ ] Integers - [ ] Floats Comments: - [ ] /* comments have a closing */ - [ ] Doc comments are attached to nodes
+
+== C25
+  query: repo:rust-lang/rust-analyzer publishDiagnostics not sent is:issue -> total 11
+  query: repo:rust-lang/rust-analyzer push diagnostics missing is:issue -> total 11
+  query: repo:rust-lang/rust-analyzer diagnostics not published until edit is:issue -> total 5
+  query: repo:rust-lang/rust-analyzer inactive code diagnostics not shown is:issue -> total 11
+  query: repo:rust-lang/rust-analyzer native diagnostics not published after load is:issue -> total 0
+  - rust-lang/rust-analyzer#8836 [open/None] 2021-05-14 closed - (1 comments, hits 1) Diagnostics after didChange contain incorrect ranges
+      Hello, This issue might be related to the know issue that on-the-fly diagnostics are mostly unimplemented. If that's the case, I apologize for the noise. I wanted to bring it up anyway. When making changes to a file without saving, the editor will only send `textDocument/didChange` notifications to 
+  - rust-lang/rust-analyzer#19406 [open/None] 2025-03-21 closed - (6 comments, hits 1) thread 'LspServer' panicked at crates\base-db\src\lib.rs:133:14:
+      Happened when switching revisions where one of the files I had open no longer exists ``` thread 'LspServer' panicked at crates\base-db\src\lib.rs:133:14: Unable to fetch FileSourceRootInput; this is a bug stack backtrace: 0: std::panicking::begin_panic_handler at /rustc/4eb161250e340c8f48f66e2b929ef
+  - rust-lang/rust-analyzer#23126 [closed/not_planned] 2026-08-12 closed 2026-08-12 (3 comments, hits 2) publishDiagnostics not sent after didChange that would clear a file's diagnostics
+      ## Summary After `textDocument/didChange` makes a file's diagnostics empty (e.g. fixing a type error), rust-analyzer sends **no** `textDocument/publishDiagnostics` at all — not even an empty one. Diagnostics for the file stay stale (the client keeps showing the old error) and the file is effectively
+  - rust-lang/rust-analyzer#14048 [closed/completed] 2023-01-29 closed 2026-04-14 (5 comments, hits 1) Semantic tokens are empty when requested immediately after textDocument/didOpen
+      When [kak-lsp](https://github.com/kak-lsp/kak-lsp) sends `textDocument/semanticTokens/full` soonish after `textDocument/didOpen`, the semantic tokens response is empty (`[]`). Jan 29 10:39:42.769 DEBG To server: {"jsonrpc":"2.0","method":"textDocument/didOpen","params":{"textDocument":{"languageId":
+  - rust-lang/rust-analyzer#8257 [closed/completed] 2021-03-30 closed 2025-08-20 (13 comments, hits 1) Lints disappear a few seconds after having pressed Ctrl+S
+      Since recently, a weird problem has cropped up: after saving the file with Ctrl+S, rust-analyzer displays lints and errors in the code as usual. But after a few seconds, the displayed errors and lints just disappear entirely. When saving the file again, they reappear, but then disappear again after 
+  - rust-lang/rust-analyzer#14868 [closed/completed] 2023-05-21 closed 2023-07-30 (24 comments, hits 1) Failed to spawn one or more proc-macro servers
+      Failed to spawn one or more proc-macro servers. No intellisense in rust files. **rust-analyzer version**: v0.4.1522 **rustc version**: rustc 1.69.0 (84c898d65 2023-04-16)
+  - rust-lang/rust-analyzer#22140 [open/None] 2026-04-22 closed - (43 comments, hits 1) Address FIXMEs for adding diagnostics
+      We have quite a lot of FIXMEs, mostly in hir-ty, for adding new diagnostics for things (and I'm constantly adding more). The shape of them is like `FIXME: Emit an error ...` (my own FIXMEs usually use these words, others might use similar). Most are pretty easy to do. The steps to resolve one (in in
+  - rust-lang/rust-analyzer#16218 [open/None] 2023-12-31 closed - (7 comments, hits 1) SemanticTokens request returns empty output
+      # Rust-Analyzer Version a28077b2 2023-12-04 # Rustc Version rustc 1.74.0 (79e9716c9 2023-11-13) (Homebrew) # Description I am trying to query semantic tokens for rust source files from the CLI using `rust-analyzer`. I have written the following Python script to initialize the server and then fire JS
+  - rust-lang/rust-analyzer#13446 [open/None] 2022-10-20 closed - (39 comments, hits 1) Deeper rust-analyzer Integration with Non-Cargo Build Systems
+      This issue connects several disparate issues and discussions, such as https://github.com/rust-lang/rust-analyzer/issues/13437, https://github.com/rust-lang/rust-analyzer/pull/13128, https://github.com/rust-lang/rust-analyzer/issues/12105, https://github.com/rust-lang/rust-analyzer/issues/13226, and 
+  - rust-lang/rust-analyzer#17738 [closed/completed] 2024-07-29 closed 2024-07-31 (2 comments, hits 1) Type inference missing with defaultmap 0.6.0
+      <!-- Troubleshooting guide: https://rust-analyzer.github.io/manual.html#troubleshooting Forum for questions: https://users.rust-lang.org/c/ide/14 Before submitting, please make sure that you're not running into one of these known issues: 1. on-the-fly diagnostics are mostly unimplemented (`cargo che
+  - rust-lang/rust-analyzer#16867 [closed/completed] 2024-03-18 closed 2024-03-20 (12 comments, hits 1) extract function broken the codes, add redundant slash
+      <!-- Troubleshooting guide: https://rust-analyzer.github.io/manual.html#troubleshooting Forum for questions: https://users.rust-lang.org/c/ide/14 Before submitting, please make sure that you're not running into one of these known issues: 1. on-the-fly diagnostics are mostly unimplemented (`cargo che
+  - rust-lang/rust-analyzer#4829 [closed/completed] 2020-06-10 closed 2023-08-08 (25 comments, hits 1) Odd rust-analyzer syntax error
+      Right now, rust-analyzer is complaining about the syntax in this function that is totally fine for `cargo check`: ```rust fn visit_statement(&mut self, statement: &Statement<'tcx>, location: Location) { if let StatementKind::Assign(box (into, _)) = &statement.kind { debug!( "visit_statement: stateme
+  - rust-lang/rust-analyzer#15808 [closed/completed] 2023-10-27 closed 2024-07-07 (5 comments, hits 1) Match check usefulness index out of bounds
+      **rust-analyzer version**: rust-analyzer 1 (862a3004e9 2023-09-24) **rustc version**: 1.72.1 (d5c2e9c34 2023-09-13) **relevant settings**: nothing special **editor**: helix 23.05 At the editing encountered panic at hir diagnostic: > thread 'Worker' panicked at 'index out of bounds: the len is 0 but 
+  - rust-lang/rust-analyzer#12882 [closed/completed] 2022-07-26 closed 2024-02-12 (23 comments, hits 1) Support flychecking only the current crate
+      ## The issue with checking all crates Currently when rust-analyzer runs a flycheck it always runs on the entire workspace. In large workspaces (or in my case a large rust-project.json project) running a check build on many crates can significantly increase the time it takes to get results for the cu
+  - rust-lang/rust-analyzer#13355 [closed/completed] 2022-10-06 closed 2022-10-10 (32 comments, hits 1) Code completion not working in #[tokio::main]
+      **rust-analyzer version**: rust-analyzer version: 0.4.1232-standalone (476d04387 2022-10-04) **rustc version**: rustc 1.64.0 (a55dd71d5 2022-09-19) **relevant settings**: <img width="686" alt="Image showing that rust analyzer vs code setting Proc Macro is Enabled" src="https://user-images.githubuser
+  - rust-lang/rust-analyzer#12579 [closed/completed] 2022-06-18 closed 2022-07-29 (22 comments, hits 1) RA should use the toolchain's `proc_macro` instead of copying `library/proc-macro`.
+      <sub>I've brought this up elsewhere in the past, but it should've probably been a GH issue from the start. (I also regret not getting in touch with any RA devs when I heard they were working around the internal APIs of `proc_macro`, instead of *with them* - ideally we would streamline the aspects RA
+  - rust-lang/rust-analyzer#13815 [open/None] 2022-12-21 closed - (1 comments, hits 1) Broken markdown for mixing backticks and tildes in code block
+      <!-- Troubleshooting guide: https://rust-analyzer.github.io/manual.html#troubleshooting Forum for questions: https://users.rust-lang.org/c/ide/14 Before submitting, please make sure that you're not running into one of these known issues: 1. on-the-fly diagnostics are mostly unimplemented (`cargo che
+  - rust-lang/rust-analyzer#16628 [open/None] 2024-02-21 closed - (9 comments, hits 1) Default lints should correspond to rustc
+      # Summary I would expect that `rust-analyzer`, with default settings, would report the same lints (warnings, errors, etc.) as `rustc` # Details Currently this is not the case; for example I also see messages about these: - `inactive-code` — this may have a special purpose in some editors? In Kate it
+  - rust-lang/rust-analyzer#22293 [closed/completed] 2026-05-05 closed 2026-07-27 (4 comments, hits 1) inactive-code not returned for inactive cfg blocks inside function that has been proc_macro_attribute'd
+      **rust-analyzer version**: current master (not version specific) **rustc version**: 1.97.0-nightly **editor or extension**: Zed 1.0.1, VSCode This has been bugging me for a while, it seems like something that might already have an open issue but I couldn't manage to find it. This works: <img width="
+  - rust-lang/rust-analyzer#23068 [closed/completed] 2026-08-06 closed 2026-08-12 (2 comments, hits 1) Panic in workspace `not implemented: Unexpected alia: StaticId("FOO")`
+      <!-- Troubleshooting guide: https://rust-analyzer.github.io/book/troubleshooting.html Forum for questions: https://users.rust-lang.org/c/ide/14 Before submitting, please make sure that you're not running into one of these known issues: 1. on-the-fly diagnostics are mostly unimplemented (`cargo check
+  - rust-lang/rust-analyzer#17397 [closed/completed] 2024-06-12 closed 2024-07-07 (23 comments, hits 1) Unused/inactive highlighting when file is not linked
+      **rust-analyzer version**: 4af21ffb026c7ec3a97a484ca27b36f703eb5fb1 Before an unlinked file (or a `#[cfg(FALSE)]` module) just had a small diagnostic for the first line. Now the whole file gets the visually marked as "unused", which was implemented here: https://github.com/rust-lang/rust-analyzer/pu
+  - rust-lang/rust-analyzer#16620 [closed/completed] 2024-02-20 closed 2024-02-28 (4 comments, hits 1) unexpected synthetic: `SyntheticSyntax`
+      <!-- Troubleshooting guide: https://rust-analyzer.github.io/manual.html#troubleshooting Forum for questions: https://users.rust-lang.org/c/ide/14 Before submitting, please make sure that you're not running into one of these known issues: 1. on-the-fly diagnostics are mostly unimplemented (`cargo che
+
+== C26
+  query: repo:rust-lang/rust-analyzer semantic tokens range unsafe is:issue -> total 12
+  query: repo:rust-lang/rust-analyzer semanticTokens range different from full is:issue -> total 10
+  query: repo:rust-lang/rust-analyzer range highlighting missing modifiers is:issue -> total 1
+  query: repo:rust-lang/rust-analyzer semantic tokens range proc macro attribute is:issue -> total 7
+  query: repo:rust-lang/rust-analyzer unresolvedReference semantic tokens range is:issue -> total 4
+  - rust-lang/rust-analyzer#16218 [open/None] 2023-12-31 closed - (7 comments, hits 2) SemanticTokens request returns empty output
+      # Rust-Analyzer Version a28077b2 2023-12-04 # Rustc Version rustc 1.74.0 (79e9716c9 2023-11-13) (Homebrew) # Description I am trying to query semantic tokens for rust source files from the CLI using `rust-analyzer`. I have written the following Python script to initialize the server and then fire JS
+  - rust-lang/rust-analyzer#22920 [closed/completed] 2026-07-26 closed 2026-07-26 (5 comments, hits 1) "Request textDocument/semanticTokens/full/delta failed" after every keystroke
+      Since today, I am getting the following error after every keystroke in a Rust file, when working in Miri (both in the Miri repo and in Miri files in the main repo): ``` Request textDocument/semanticTokens/full/delta failed. ``` I am also seeing this error many times per second constantly in the RA o
+  - rust-lang/rust-analyzer#14048 [closed/completed] 2023-01-29 closed 2026-04-14 (5 comments, hits 3) Semantic tokens are empty when requested immediately after textDocument/didOpen
+      When [kak-lsp](https://github.com/kak-lsp/kak-lsp) sends `textDocument/semanticTokens/full` soonish after `textDocument/didOpen`, the semantic tokens response is empty (`[]`). Jan 29 10:39:42.769 DEBG To server: {"jsonrpc":"2.0","method":"textDocument/didOpen","params":{"textDocument":{"languageId":
+  - rust-lang/rust-analyzer#23044 [closed/completed] 2026-08-05 closed 2026-08-06 (0 comments, hits 1) `assertion failed: !source_term.clone().has_escaping_bound_vars()`
+      **rust-analyzer version**: 0.3.2989-standalone **rustc version**: rustc 1.99.0-nightly (504869653 2026-08-03) **editor or extension**: VsCodium 0.3.2989 **code snippet to reproduce**: ```rust use std::any::Any; use std::marker::PhantomData; struct ReflectedRef<'a>(PhantomData<&'a ()>); type ReflectF
+  - rust-lang/rust-analyzer#22205 [closed/completed] 2026-04-28 closed 2026-05-03 (4 comments, hits 1) Regression in 0.3.2878 (from 0.3.2870)
+      Getting spammed by extension when open [specific file](https://github.com/shonya3/rusty_vinnie/blob/main/bot/src/ready_handler.rs#L40-L90) If i remove code linked above (L40 - L90. Also included in code snippets below), the extension no longer emits error toasts (Request textDocument/inlayHint faile
+  - rust-lang/rust-analyzer#11015 [open/None] 2021-12-14 closed - (0 comments, hits 3) Option to disable or at least debounce crate graph loading progress messages
+      I still get lots of progress reports, sometimes dozens in a single millisecond. ``` $ rust-analyzer --version rust-analyzer fc628cfc8 2021-12-12 dev ``` Here is the log with timestamps (look for `$/progress`). The log is the result of opening [kak-lsp](https://github.com/kak-lsp/kak-lsp/)'s `src/mai
+  - rust-lang/rust-analyzer#17289 [open/None] 2024-05-24 closed - (68 comments, hits 1) Invalid offset -32603 when editing an empty .rs file
+      <!-- Troubleshooting guide: https://rust-analyzer.github.io/manual.html#troubleshooting Forum for questions: https://users.rust-lang.org/c/ide/14 Before submitting, please make sure that you're not running into one of these known issues: 1. on-the-fly diagnostics are mostly unimplemented (`cargo che
+  - rust-lang/rust-analyzer#18089 [closed/completed] 2024-09-10 closed 2024-09-18 (6 comments, hits 2) Rust analyzer panics when combining the crates "rocket" and "askama"
+      When combining the rocket web server crate with the askama templating engine, Rust Analyzer panics if a `uri!` is pointing to a rocket-route which returns an askama template. In VSCode, this panic happens on every keystroke in `main.rs`. **rust-analyzer version**: 0.3.2104-standalone **rustc version
+  - rust-lang/rust-analyzer#12770 [closed/completed] 2022-07-16 closed 2023-01-19 (21 comments, hits 1) Request textDocument/inlayHint failed.
+      It works well on small projects. But not works on https://github.com/darwinia-network/darwinia-common ``` version: 0.0.0 (5342f47f4 2022-07-09) request: textDocument/semanticTokens/full SemanticTokensParams { work_done_progress_params: WorkDoneProgressParams { work_done_token: None, }, partial_resul
+  - rust-lang/rust-analyzer#16713 [closed/completed] 2024-02-29 closed 2024-02-29 (4 comments, hits 1) Rust-analyzer fails to deserialize InitializeParams expecting i32 on Neovim
+      <!-- Troubleshooting guide: https://rust-analyzer.github.io/manual.html#troubleshooting Forum for questions: https://users.rust-lang.org/c/ide/14 Before submitting, please make sure that you're not running into one of these known issues: 1. on-the-fly diagnostics are mostly unimplemented (`cargo che
+  - rust-lang/rust-analyzer#14868 [closed/completed] 2023-05-21 closed 2023-07-30 (24 comments, hits 1) Failed to spawn one or more proc-macro servers
+      Failed to spawn one or more proc-macro servers. No intellisense in rust files. **rust-analyzer version**: v0.4.1522 **rustc version**: rustc 1.69.0 (84c898d65 2023-04-16)
+  - rust-lang/rust-analyzer#9601 [closed/completed] 2021-07-14 closed 2023-09-16 (16 comments, hits 2) GTK3 on Windows 10: Type hinting but no type checking?
+      - Latest `rust-analyzer`, 0.2.670 - On latest VS Code, 1.58.1 - `rustc` 1.53.0 with `stable-x86_64-pc-windows-msvc` toolchain **Disclaimer:** I _acknowledge_ that I have something of a weird setup. GTK+ development on windows is all kinds of wonky. I finally got gtk-rs compiling on Windows 10 (`gtk 
+  - rust-lang/rust-analyzer#19993 [closed/completed] 2025-06-13 closed 2025-09-14 (21 comments, hits 1) Spurious "expected integer or floating pointer number after `-` (rust-analyzer macro-error)" (with reproduction)
+      <!-- Troubleshooting guide: https://rust-analyzer.github.io/book/troubleshooting.html Forum for questions: https://users.rust-lang.org/c/ide/14 Before submitting, please make sure that you're not running into one of these known issues: 1. on-the-fly diagnostics are mostly unimplemented (`cargo check
+  - rust-lang/rust-analyzer#11260 [closed/completed] 2022-01-11 closed 2023-12-05 (27 comments, hits 1) Support format_args_capture
+      The [format_args_capture](https://rust-lang.github.io/rfcs/2795-format-args-implicit-identifiers.html) feature seems to have been [stabilized](https://github.com/rust-lang/rust/pull/90473) and will be enabled in 1.58.0 which is pretty soon. It would be nice to resolve the captured identifiers.
+  - rust-lang/rust-analyzer#10084 [closed/completed] 2021-08-30 closed 2023-07-21 (55 comments, hits 1) thread '<unnamed>' panicked at 'index out of bounds: the len is 1 but the index is 1', crates/hir_def/src/nameres/path_resolution.rs:385:33
+      ``` [ERROR project_model::workspace] cyclic deps: rustc_std_workspace_core(CrateId(1187)) -> core(CrateId(188)), alternative path: core(CrateId(188)) -> rand(CrateId(1055)) -> getrandom(CrateId(529)) -> cfg_if(CrateId(147)) -> compiler_builtins(CrateId(181)) -> rustc_std_workspace_core(CrateId(1187)
+  - rust-lang/rust-analyzer#7590 [closed/completed] 2021-02-07 closed 2021-12-12 (6 comments, hits 1) $/progress impacting perf in vim while typing
+      editor: vim plugin: https://github.com/prabirshrestha/vim-lsp rust-analyzer is sending too many `$/progress` notifications. I do prefer the initial notifications when the server is starting. But once it booted and I start typing and vim-lsp sends didChangeNotification or completion notification I ge
+
+== C27
+  query: repo:rust-lang/rust-analyzer completion macro call enum variant is:issue -> total 4
+  query: repo:rust-lang/rust-analyzer completion before parenthesis macro is:issue -> total 12
+  query: repo:rust-lang/rust-analyzer completion replaces macro name is:issue -> total 0
+  query: repo:rust-lang/rust-analyzer completion "!(" is:issue -> total 1246
+  - rust-lang/rust-analyzer#13231 [open/None] 2022-09-14 closed - (6 comments, hits 1) Autocomplete of enum variants does not work in `vec![Enum_::|]` context
+      ``` enum En { Foo, Bar, } fn yolo() { // autocomplete works let p = En::Foo; // autocomplete do not works let p = vec![En::|]; } ``` **rust-analyzer version**: latest master 0.0.0 (f64c95600 2022-09-12)
+  - rust-lang/rust-analyzer#11556 [open/None] 2022-02-25 closed - (7 comments, hits 1) `#[rust_analyzer::*]` tool and lint attributes
+      > NOTE: Implementation of some of these has started but we do not make any stability guarantees about these attributes for now, so they may change over time. - https://github.com/rust-lang/rust/issues/66079 This serves as a general bag of ideas around possible future r-a/ide tool attributes (we have
+  - rust-lang/rust-analyzer#19836 [open/None] 2025-05-21 closed - (7 comments, hits 1) Expanded discovery command support for Cargo projects
+      Hello! In Hubris, we currently do rust-analyzer integration with a rather horrible Neovim hack, involving a stack of Lua that does ✨magic✨ and calls out to an `xtask` subcommand, which produces a blob of JSON that we send off to rust-analyzer on init. This is sort of unfortunate; our ability to cond
+  - rust-lang/rust-analyzer#10084 [closed/completed] 2021-08-30 closed 2023-07-21 (55 comments, hits 1) thread '<unnamed>' panicked at 'index out of bounds: the len is 1 but the index is 1', crates/hir_def/src/nameres/path_resolution.rs:385:33
+      ``` [ERROR project_model::workspace] cyclic deps: rustc_std_workspace_core(CrateId(1187)) -> core(CrateId(188)), alternative path: core(CrateId(188)) -> rand(CrateId(1055)) -> getrandom(CrateId(529)) -> cfg_if(CrateId(147)) -> compiler_builtins(CrateId(181)) -> rustc_std_workspace_core(CrateId(1187)
+  - rust-lang/rust-analyzer#14400 [open/None] 2023-03-25 closed - (1 comments, hits 1) rust-analyzer breaks tab completion on VSCode
+      <!-- Troubleshooting guide: https://rust-analyzer.github.io/manual.html#troubleshooting Forum for questions: https://users.rust-lang.org/c/ide/14 Before submitting, please make sure that you're not running into one of these known issues: 1. on-the-fly diagnostics are mostly unimplemented (`cargo che
+  - rust-lang/rust-analyzer#23521 [closed/completed] 2026-10-16 closed 2026-10-18 (0 comments, hits 1) Completions insert `(…)` when client disabled snippet support
+      With `textDocument.completion.completionItem.snippetSupport = false`, completing `#[derive` inserts the literal text `derive(…)` (including the Unicode ellipsis and the parenthesis). The same applies to every entry of the static attribute table: `cfg(…)`, `allow(…)`, `doc = "…"`, `doc(alias = "…")`,
+  - rust-lang/rust-analyzer#18428 [open/None] 2024-10-28 closed - (0 comments, hits 1) codeAction/resolve throws an exception for a code action without `data`
+      <!-- Troubleshooting guide: https://rust-analyzer.github.io/manual.html#troubleshooting Forum for questions: https://users.rust-lang.org/c/ide/14 Before submitting, please make sure that you're not running into one of these known issues: 1. on-the-fly diagnostics are mostly unimplemented (`cargo che
+  - rust-lang/rust-analyzer#11015 [open/None] 2021-12-14 closed - (0 comments, hits 1) Option to disable or at least debounce crate graph loading progress messages
+      I still get lots of progress reports, sometimes dozens in a single millisecond. ``` $ rust-analyzer --version rust-analyzer fc628cfc8 2021-12-12 dev ``` Here is the log with timestamps (look for `$/progress`). The log is the result of opening [kak-lsp](https://github.com/kak-lsp/kak-lsp/)'s `src/mai
+  - rust-lang/rust-analyzer#17027 [closed/completed] 2024-04-08 closed 2024-04-08 (4 comments, hits 1) Type inference for struct fields suddenly stopped working correctly
+      <!-- Troubleshooting guide: https://rust-analyzer.github.io/manual.html#troubleshooting Forum for questions: https://users.rust-lang.org/c/ide/14 Before submitting, please make sure that you're not running into one of these known issues: 1. on-the-fly diagnostics are mostly unimplemented (`cargo che
+  - rust-lang/rust-analyzer#14868 [closed/completed] 2023-05-21 closed 2023-07-30 (24 comments, hits 1) Failed to spawn one or more proc-macro servers
+      Failed to spawn one or more proc-macro servers. No intellisense in rust files. **rust-analyzer version**: v0.4.1522 **rustc version**: rustc 1.69.0 (84c898d65 2023-04-16)
+  - rust-lang/rust-analyzer#23621 [open/None] 2026-11-06 closed - (4 comments, hits 1) Too long constant value show in completions
+      Related #23266 ```rust use smol_str::SmolStr; const S: SmolStr = SmolStr::new_inline("foo"); fn foo() { S$0 } ``` complete `S = SmolStr(Inline { len: _V3, buf: [102, 111, 111, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0`… This looks too long ### Some possible 1. Do not render private fie
+  - rust-lang/rust-analyzer#23687 [open/None] 2026-11-19 closed - (3 comments, hits 1) Method completions are missing for files mounted via include!() in the mod block
+      **rustc version**: `rustc 1.100.0-stable (0ef1bc386 2026-11-09)` **rust-analyzer version**: - `VS Code extension bundled rust-analyzer 0.3.3121` - `rust-analyzer 1.100.0 by rustup stable component` **editor**: `VS Code 1.147.0` When use `include!()` to mount a rust source file in a `mod` block. In t
+  - rust-lang/rust-analyzer#21597 [open/None] 2026-02-07 closed - (1 comments, hits 1) `completion.termSearch` textDocument/completion LSP request handler panic
+      <!-- Troubleshooting guide: https://rust-analyzer.github.io/book/troubleshooting.html Forum for questions: https://users.rust-lang.org/c/ide/14 Before submitting, please make sure that you're not running into one of these known issues: 1. on-the-fly diagnostics are mostly unimplemented (`cargo check
+  - rust-lang/rust-analyzer#17218 [open/None] 2024-05-12 closed - (0 comments, hits 1) GATs in QualifiedPathType completion failed.
+      <!-- Troubleshooting guide: https://rust-analyzer.github.io/manual.html#troubleshooting Forum for questions: https://users.rust-lang.org/c/ide/14 Before submitting, please make sure that you're not running into one of these known issues: 1. on-the-fly diagnostics are mostly unimplemented (`cargo che
+  - rust-lang/rust-analyzer#20458 [open/None] 2025-08-14 closed - (0 comments, hits 1) Assoc type completion suggest same name
+      ```rust trait Foo { type Item; type IntoItem; } impl<T: Foo> Foo for T { type Item = T::Item; type IntoItem = T::$0; } ``` **Current completion list** ``` >>> Item(as Foo) type Item S [LS] IntoItem(as Foo) type IntoItem S [LS] ``` **Expect completion list** ``` Item(as Foo) type Item S [LS] >>> Into
+  - rust-lang/rust-analyzer#19146 [open/None] 2025-02-12 closed - (3 comments, hits 1) Extra brackets intra-doc links in completions
+      ![Image](https://github.com/user-attachments/assets/8bdcf227-af60-4793-bfdb-6209e03f481f) ```rust /// See [`main`] fn main() { main } ```
+
+== C28
+  query: repo:rust-lang/rust-analyzer attribute completion parentheses duplicated is:issue -> total 0
+  query: repo:rust-lang/rust-analyzer derive completion existing arguments is:issue -> total 2
+  query: repo:rust-lang/rust-analyzer attribute completion inserts parentheses is:issue -> total 1
+  query: repo:rust-lang/rust-analyzer completion derive(Debug) twice is:issue -> total 1
+  - rust-lang/rust-analyzer#10084 [closed/completed] 2021-08-30 closed 2023-07-21 (55 comments, hits 1) thread '<unnamed>' panicked at 'index out of bounds: the len is 1 but the index is 1', crates/hir_def/src/nameres/path_resolution.rs:385:33
+      ``` [ERROR project_model::workspace] cyclic deps: rustc_std_workspace_core(CrateId(1187)) -> core(CrateId(188)), alternative path: core(CrateId(188)) -> rand(CrateId(1055)) -> getrandom(CrateId(529)) -> cfg_if(CrateId(147)) -> compiler_builtins(CrateId(181)) -> rustc_std_workspace_core(CrateId(1187)
+  - rust-lang/rust-analyzer#2741 [closed/completed] 2020-01-03 closed 2020-06-09 (13 comments, hits 1) Make rust-analyzer more like intellij
+      ## Introduction In my day job, I spend a lot of time in intellij. Moving to VS Code + RLS was a real shock, I didn't realize just how much I rely on a few intellij features. Moving to rust-analyzer was much better, but the gap still exists. ## The Features ### Type hints Intellij adds type hints to 
+  - rust-lang/rust-analyzer#8522 [closed/completed] 2021-04-14 closed 2021-04-16 (9 comments, hits 1) Null response on signature help after whitespace
+      Given fn test(_a:i8, _b:i8){} fn main() { // This works. test(<CURSOR> } Requesting `textDocument/signatureHelp` works as expected. However, if a user inserts a space and the client then re-requests `textDocument/signatureHelp`, with the new location, the response is null. I.e. fn test(_a:i8, _b:i8)
+  - rust-lang/rust-analyzer#6414 [closed/completed] 2020-10-30 closed 2020-12-29 (22 comments, hits 1) Goto definition - all shown twice
+      Let me say first: I love your rust-analyzer (even though it causes pretty heavy load to my old MBP). I have a question regarding "CMD_CLICK" to a symbol, which is AFAIK "show references". If your plugin is disabled, this is shown while hovering over a symbol... ![image](https://user-images.githubuse
+
+== C29
+  query: repo:rust-lang/rust-analyzer to_owned quick fix shorthand is:issue -> total 0
+  query: repo:rust-lang/rust-analyzer "to_owned" struct field shorthand is:issue -> total 0
+  query: repo:rust-lang/rust-analyzer add reference quick fix shorthand field is:issue -> total 0
+  query: repo:rust-lang/rust-analyzer type mismatch fix struct shorthand is:issue -> total 0
+  query: repo:rust-lang/rust-analyzer to_owned is:issue -> total 35
+  query: repo:rust-lang/rust-analyzer shorthand field quick fix is:issue -> total 0
+  query: repo:rust-lang/rust-analyzer "Add .to_owned()" is:issue -> total 0
+  - rust-lang/rust-analyzer#17627 [open/None] 2024-07-18 closed - (3 comments, hits 1) Opening a standalone .rs file after a .txt file makes rust-analyzer unresponsive.
+      <!-- Troubleshooting guide: https://rust-analyzer.github.io/manual.html#troubleshooting Forum for questions: https://users.rust-lang.org/c/ide/14 Before submitting, please make sure that you're not running into one of these known issues: 1. on-the-fly diagnostics are mostly unimplemented (`cargo che
+  - rust-lang/rust-analyzer#13703 [open/None] 2022-12-02 closed - (2 comments, hits 1) Feature request: Generate type definition from struct or enum literal
+      It would be really nice for quick prototyping if there was an assist that could generate a struct or enum definition given a corresponding literal with an undefined type name at the front. Record struct: ```rust let foo = Foo$0 { field: "hello".to_owned() }; // generate type definition struct Foo { 
+  - rust-lang/rust-analyzer#13394 [open/None] 2022-10-10 closed - (19 comments, hits 1) feature request: List all applicable From/Into impls 
+      A coworker asked this question, and I was little surprised to not have an answer. I'll quote what he said: > ```rust > let b1: Result<Vec<i32>, anyhow::Error> = vec![1, 2].into_iter().map(|i| Ok(i)).collect(); > > let b2: Vec<Box<dyn std::error::Error>> = > vec!["1".to_owned()].into_iter().map(Into:
+  - rust-lang/rust-analyzer#15051 [open/None] 2023-06-14 closed - (0 comments, hits 1) Incorrect Codelens Function Reference Count
+      ## Summary Codelens reference count for a function is incorrect when `#[post("/hello")]` attribute is used. Clicking on the codelens reference count link (opening the expanded view) shows a smaller number of references and yet still incorrect. Removing the `post` attribute shows the correct referenc
+  - rust-lang/rust-analyzer#22152 [closed/completed] 2026-04-23 closed 2026-10-12 (0 comments, hits 1) TypeMismatch quickfix position error
+      <!-- Troubleshooting guide: https://rust-analyzer.github.io/book/troubleshooting.html Forum for questions: https://users.rust-lang.org/c/ide/14 Before submitting, please make sure that you're not running into one of these known issues: 1. on-the-fly diagnostics are mostly unimplemented (`cargo check
+  - rust-lang/rust-analyzer#20024 [open/None] 2025-06-17 closed - (8 comments, hits 1) `Semantics::attach_first_edition` hangs, possibly due to blocked communication with the `proc-macro-server` process
+      The call graph below was taking using the `sample` command and ends with a call to `ra_ap_proc_macro_api::legacy_protocol::json::write_json`. This makes me think the communication with the macro server got stuck somehow. This sort of problem occurs on 5 in 5000 repos in our test suite, so it is not 
+
+== C30
+  query: repo:typescript-language-server/typescript-language-server code actions file open order is:issue -> total 1
+  query: repo:microsoft/TypeScript tsserver code fix depends on open order is:issue -> total 18
+  query: repo:microsoft/TypeScript "node:test" import describe is:issue -> total 3
+  query: repo:microsoft/TypeScript inferred project test file auto import order is:issue -> total 34
+  - typescript-language-server/typescript-language-server#655 [closed/not_planned] 2023-01-05 closed 2023-01-22 (7 comments, hits 1) Code actions not working
+      Hi folks. I've been using this LS for a while now with very good results. The only thing I can't manage to make work is code actions. I opened a [discussion](https://neovim.discourse.group/t/code-actions-not-working-for-typescript-language-server/3525) on the Neovim discourse group and someone sugge
+  - microsoft/TypeScript#21423 [open/None] 2018-01-26 closed - (26 comments, hits 1) Resolving multiple package.json "main" fields
+      **TL;DR:** A new compiler option `mainFields` for selecting multiple fields in `package.json` instead of just `package.json#main`. --- There are lots of related issues to this one (which I link to below), but I want to focus on just this specific proposal. --- Packages often look like this: ```js { 
+  - microsoft/TypeScript#25376 [open/None] 2018-07-02 closed - (59 comments, hits 1) Infer project references from common monorepo patterns / tools
+      Genesis: see section "Repetitive configuration" in https://github.com/Microsoft/TypeScript/issues/3469#issuecomment-400439520 ## Search Terms monorepo infer project references automatically yarn lerna workspace package.json ## Suggestion For common monorepo managers, we should natively understand cr
+  - microsoft/TypeScript#14419 [open/None] 2017-03-02 closed - (130 comments, hits 1) Plugin Support for Custom Transformers
+      Since #13764 has landed, it's easy to write custom transformers. However, if I understand the API correctly, it is needed to duplicate the whole tsc command line just to add a single transformer. This leads to incompatibilities since these, on typescript depending, applications do not support the sa
+  - microsoft/TypeScript#13376 [open/None] 2017-01-10 closed - (101 comments, hits 1) async/await: nowait keyword?
+      I have a large project that has now been migrated over from javascript to typescript and we're very pleased with the results. Bugs have fallen dramatically with the improved compiler support in combination with rigorously written code. Ours is a server-side product that runs under node (ts-node, act
+  - microsoft/TypeScript#63800 [closed/completed] 2026-02-18 closed 2026-10-02 (56 comments, hits 1) API usage patterns for complex editor extensions
+      TypeScript 6.0 and earlier allowed loading third-party plugin code directly into TS Server, exposing language service and project system internals for proxying and patching. This was often used in coordination with editor extensions, sometimes in tandem with an additional custom language server, to 
+  - microsoft/TypeScript#39459 [closed/completed] 2020-07-07 closed 2026-05-23 (64 comments, hits 1) tsserver should implement the Language Server Protocol 
+      ## Search Terms language server protocol ## Suggestion > As the language server protocol ( https://github.com/Microsoft/language-server-protocol ) is getting more and more popularity and clients ( https://github.com/Microsoft/language-server-protocol/wiki/Protocol-Implementations ), it would be very
+  - microsoft/TypeScript#57056 [closed/not_planned] 2024-01-14 closed 2024-01-22 (3 comments, hits 1) Decorators missing import for globalThis properties
+      ### 🔎 Search Terms decorator, libdom, globalThis ### 🕗 Version & Regression Information - This is a crash ### ⏯ Playground Link _No response_ ### 💻 Code ```ts @myDecorator() onConnection(socket: WebSocket, request: Request): Promise<void> { // implementation goes here } ``` ### 🙁 Actual behavior /Us
+  - microsoft/TypeScript#60748 [closed/not_planned] 2024-12-12 closed 2024-12-17 (6 comments, hits 1) In VSCode, monorepo's sub-packages should load `@types/node` which has been installed in their own node_modules
+      ### 🔎 Search Terms vscode monorepo load types ### 🕗 Version & Regression Information - This is the behavior in every version I tried. Let's say I hava a monorepo. There is a unit test file in a sub-package. If this unit test file cannot match any `tsconfig.json` in this monorepo, there will be some 
+  - microsoft/TypeScript#35395 [closed/completed] 2019-11-27 closed 2022-06-17 (61 comments, hits 1) Exclude specific files from auto import suggestions
+      ## Search Terms autoimport, exclude, ignore, isolation, encapsulation ## Suggestion We need a way to exclude files from auto import. Not from the project, only from the auto import suggestions. ## Use Cases My project includes a .d.ts file (generated from the previous version of the project) with le
+  - microsoft/TypeScript#60913 [open/None] 2025-01-05 closed - (14 comments, hits 1) `./*.d.ts` required in `exports` to avoid `Cannot be named without a reference to... not portable...`
+      ### 🔎 Search Terms The inferred type of '...' cannot be named without a reference to... This is likely not portable. A type annotation is necessary. ### 🕗 Version & Regression Information Between 5.3 to 5.7 (latest) ### ⏯ Playground Link _No response_ ### 💻 Code ### TSconfig of importing project ```
+  - microsoft/TypeScript#29526 [open/None] 2019-01-22 closed - (156 comments, hits 1) Easier destructuring with type annotations on binding patterns
+      <!-- 🚨 STOP 🚨 𝗦𝗧𝗢𝗣 🚨 𝑺𝑻𝑶𝑷 🚨 Half of all issues filed here are duplicates, answered in the FAQ, or not appropriate for the bug tracker. Please read the FAQ first, especially the "Common Feature Requests" section. --> ## Search Terms <!-- List of keywords you searched for before creating this issue. W
+  - microsoft/TypeScript#28289 [open/None] 2018-11-01 closed - (44 comments, hits 1) Add new moduleResolution option: `yarn-pnp`
+      ## Search Terms yarn pnp plug'n'play plug ## Suggestion Yarn has released a new feature for using modules without having a `node_modules` directory present: plug'n'play. Some community tooling is available for customizing the TypeScript compilerHost so that it can use plug'n'play modules, but this d
+  - microsoft/TypeScript#1213 [open/None] 2014-11-19 closed - (189 comments, hits 1) Allow classes to be parametric in other parametric classes
+      This is a proposal for allowing generics as type parameters. It's currently possible to write specific examples of monads, but in order to write the interface that all monads satisfy, I propose writing ``` javascript interface Monad<T<~>> { map<A, B>(f: (a: A) => B): T<A> => T<B>; lift<A>(a: A): T<A
+  - microsoft/TypeScript#202 [open/None] 2014-07-22 closed - (499 comments, hits 1) Support some non-structural (nominal) type matching
+      Proposal: support non-structural typing (e.g. new user-defined base-types, or some form of basic nominal typing). This allows programmer to have more refined types supporting frequently used idioms such as: 1) Indexes that come from different tables. Because all indexes are strings (or numbers), it'
+  - microsoft/TypeScript#4881 [open/None] 2015-09-20 closed - (290 comments, hits 1) Request: Class Decorator Mutation
+      If we can get this to type check properly, we would have perfect support for boilerplate-free mixins: ``` typescript declare function Blah<T>(target: T): T & {foo: number} @Blah class Foo { bar() { return this.foo; // Property 'foo' does not exist on type 'Foo' } } new Foo().foo; // Property 'foo' d
+
+== C31
+  query: repo:typescript-language-server/typescript-language-server inlay hint any after rename is:issue -> total 0
+  query: repo:microsoft/TypeScript tsserver inlay hints any after file rename is:issue -> total 1
+  query: repo:microsoft/TypeScript tsserver rename file circular import any is:issue -> total 7
+  query: repo:microsoft/TypeScript type becomes any after renaming file is:issue -> total 34
+  - microsoft/TypeScript#63800 [closed/completed] 2026-02-18 closed 2026-10-02 (56 comments, hits 1) API usage patterns for complex editor extensions
+      TypeScript 6.0 and earlier allowed loading third-party plugin code directly into TS Server, exposing language service and project system internals for proxying and patching. This was often used in coordination with editor extensions, sometimes in tandem with an additional custom language server, to 
+  - microsoft/TypeScript#21423 [open/None] 2018-01-26 closed - (26 comments, hits 1) Resolving multiple package.json "main" fields
+      **TL;DR:** A new compiler option `mainFields` for selecting multiple fields in `package.json` instead of just `package.json#main`. --- There are lots of related issues to this one (which I link to below), but I want to focus on just this specific proposal. --- Packages often look like this: ```js { 
+  - microsoft/TypeScript#25376 [open/None] 2018-07-02 closed - (59 comments, hits 1) Infer project references from common monorepo patterns / tools
+      Genesis: see section "Repetitive configuration" in https://github.com/Microsoft/TypeScript/issues/3469#issuecomment-400439520 ## Search Terms monorepo infer project references automatically yarn lerna workspace package.json ## Suggestion For common monorepo managers, we should natively understand cr
+  - microsoft/TypeScript#14538 [closed/completed] 2017-03-08 closed 2017-05-18 (111 comments, hits 1) Error "Cannot write file ... because it would overwrite input file."
+      **TypeScript Version:** 2.2.1 When using **Visual Studio 2015 Update 3** I am getting hundreds of errors in the error list like: >Cannot write file 'C:/{{my-project}}/node_modules/buffer-shims/index.js' because it would overwrite input file. It looks like this all the time. It doesn't actually preve
+  - microsoft/TypeScript#54653 [closed/not_planned] 2023-06-15 closed 2023-11-09 (4 comments, hits 1) Types resolving to `any` across packages in monorepo using project references
+      # Bug Report <!-- Please fill in each section completely. Thank you! --> ## 🔎 Search Terms <!-- What search terms did you use when trying to find an existing bug report? List them here so people in the future can find this one more easily. --> - TypeScript issue monorepo references - TypeScript issu
+  - microsoft/TypeScript#20282 [closed/completed] 2017-11-27 closed 2018-01-04 (11 comments, hits 1) Auto intellisense for jquery doesn't work in 1.18.1
+      _From @RenRongrong on November 23, 2017 1:27_ - VSCode Version: Code 1.18.1 (929bacba01ef658b873545e26034d1a8067445e9, 2017-11-16T18:32:36.026Z) - OS Version: Windows_NT ia32 6.1.7601 - Extensions: Extension|Author (truncated)|Version ---|---|--- xml|Dot|1.9.2 rest-client|hum|0.16.1 vscode-JS-CSS-HT
+  - microsoft/TypeScript#49332 [closed/completed] 2022-05-31 closed 2022-11-07 (29 comments, hits 1) Module conversion tracking issue / notes
+      I'm using this thread to dump my brain and to note problems as I solve them (or to discuss). Issues of note: - #49037 - #27891 - #46744 (Eli's old notes) - #35210 - #46567 ## 2022-05-31 ### Changes since the previous effort - The "typeformer" (the code that does the transform) now lives at https://g
+  - microsoft/TypeScript#63879 [open/None] 2026-08-10 closed - (6 comments, hits 1) feat(contentmapper): support whole-symbol rename edit projection
+      ## Problem Content Mapper protocol v1 cannot safely rename one semantic symbol when generated and authored spellings differ. A Vue mapper, for example, needs to project this authored listener: ```vue <Child @save-item="handler" /> ``` to a TypeScript reference to the child's `saveItem` declaration. 
+  - microsoft/TypeScript#29526 [open/None] 2019-01-22 closed - (156 comments, hits 1) Easier destructuring with type annotations on binding patterns
+      <!-- 🚨 STOP 🚨 𝗦𝗧𝗢𝗣 🚨 𝑺𝑻𝑶𝑷 🚨 Half of all issues filed here are duplicates, answered in the FAQ, or not appropriate for the bug tracker. Please read the FAQ first, especially the "Common Feature Requests" section. --> ## Search Terms <!-- List of keywords you searched for before creating this issue. W
+  - microsoft/TypeScript#54087 [open/None] 2023-04-28 closed - (58 comments, hits 1) TypeScript file watcher holds onto folders and causes EPERM
+      <!-- ⚠️⚠️ Do Not Delete This! bug_report_template ⚠️⚠️ --> <!-- Please read our Rules of Conduct: https://opensource.microsoft.com/codeofconduct/ --> <!-- 🕮 Read our guide about submitting issues: https://github.com/microsoft/vscode/wiki/Submitting-Bugs-and-Suggestions --> <!-- 🔎 Search existing iss
+  - microsoft/TypeScript#63865 [open/None] 2026-07-26 closed - (4 comments, hits 1) Panic: nil pointer in NodeList.HasTrailingComma during incremental rebuild (build-mode declaration printer) — 7.0.2 and current nightly
+      ## Stack trace Three worker goroutines panic identically per run; first one below (from `typescript@7.1.0-dev.20260726.1`; `typescript@7.0.2` produces the same frames at the same lines): ``` panic: runtime error: invalid memory address or nil pointer dereference [recovered, repanicked] [signal SIGSE
+  - microsoft/TypeScript#42171 [open/None] 2021-01-01 closed - (4 comments, hits 1) VS 2019 can't rename anything exported.
+      # Bug Report <!-- Please fill in each section completely. Thank you! --> ### 🔎 Search Terms InlineRename, can't rename. <!-- What search terms did you use when trying to find an existing bug report? List them here so people in the future can find this one more easily. --> ### 🕗 Version & Regression 
+  - microsoft/TypeScript#20110 [open/None] 2017-11-17 closed - (50 comments, hits 1) Feature request: allow user to merge extended arrays in tsconfig files
+      **Scenario**: As a user, I would like to optionally merge extended arrays in `tsconfig` files. To do so, I would add a nested dot array `["..."]` reminding spread operator to the property I want to merge. Here is an example: <details> <summary><code>tsconfig-base.json</code></summary> <pre> { "exclu
+
+== C32
+  query: repo:microsoft/TypeScript "Convert to async function" Bluebird is:issue -> total 1
+  query: repo:microsoft/TypeScript convert to async function return type Promise is:issue -> total 107
+  query: repo:microsoft/TypeScript convertToAsyncFunction TS1064 is:issue -> total 0
+  query: repo:microsoft/TypeScript convert to async non-global Promise is:issue -> total 3
+  - microsoft/TypeScript#25082 [closed/completed] 2018-06-19 closed 2018-08-22 (6 comments, hits 1) Proposal: Code Fix -- Convert Promise Handlers to Async and Await
+      This proposal allows the Typescript language service to automatically refactor code that uses Promise methods such as `.then()` or `.catch()` to instead use the `async` and `await` keywords. Async/await offers many advantages over promise methods including cleaner syntax, error handling, debugging, 
+  - microsoft/TypeScript#40701 [open/None] 2020-09-22 closed - (4 comments, hits 1) Don't suggest converting custom promise-like returning function to async ones
+      <!-- 🚨 STOP 🚨 𝗦𝗧𝗢𝗣 🚨 𝑺𝑻𝑶𝑷 🚨 Half of all issues filed here are duplicates, answered in the FAQ, or not appropriate for the bug tracker. Please help us by doing the following steps before logging an issue: * Search: https://github.com/Microsoft/TypeScript/search?type=Issues * Read the FAQ, especially 
+  - microsoft/TypeScript#45602 [open/None] 2021-08-27 closed - (10 comments, hits 1) Flag to type `Promise.catch` variables as `unknown`
+      # Suggestion ## ✅ Viability Checklist My suggestion meets these guidelines: * [x] This wouldn't be a breaking change in existing TypeScript/JavaScript code * [x] This wouldn't change the runtime behavior of existing JavaScript code * [x] This could be implemented without emitting different JS based 
+  - microsoft/TypeScript#21699 [open/reopened] 2018-02-06 closed - (123 comments, hits 1) Decouple jsx element type from jsx factory return type and sfc return type
+      We need to look up the type of a jsx expression by actually resolving the jsx factory call, so that we don't create a reference to the global `JSX.Element` type, which can change shape between react versions (as it needs to in the react 16 upgrade). We also need to resolve the sfc return type and cl
+  - microsoft/TypeScript#1213 [open/None] 2014-11-19 closed - (189 comments, hits 1) Allow classes to be parametric in other parametric classes
+      This is a proposal for allowing generics as type parameters. It's currently possible to write specific examples of monads, but in order to write the interface that all monads satisfy, I propose writing ``` javascript interface Monad<T<~>> { map<A, B>(f: (a: A) => B): T<A> => T<B>; lift<A>(a: A): T<A
+  - microsoft/TypeScript#49427 [open/None] 2022-06-07 closed - (6 comments, hits 1) Allow inferring a type alias for derived return types
+      # Suggestion ## 🔍 Search Terms function inferred return type alias ## ✅ Viability Checklist My suggestion meets these guidelines: * [x] This wouldn't be a breaking change in existing TypeScript/JavaScript code * [x] This wouldn't change the runtime behavior of existing JavaScript code * [x] This cou
+  - microsoft/TypeScript#43528 [open/None] 2021-04-05 closed - (7 comments, hits 1) Expect to use @throws in lib/*.d.ts to mark which methods may throw err 
+      # Suggestion <!-- Please fill in each section completely. Thank you! --> Use `@throws` to mark the corresponding error on the method in the .d.ts file in the lib directory ## 🔍 Search Terms `@throws` `jsdoc` `comments` ## ✅ Viability Checklist My suggestion meets these guidelines: * [x] This wouldn'
+  - microsoft/TypeScript#41567 [open/None] 2020-11-17 closed - (26 comments, hits 1) Add compiler option to allow module types to be checked in non module output files
+      **Search Terms:** `import type`, `export {}` ## Suggestion In #41513 and #41562 projects are broken by a design change to always include `export {};` in the JS output if `import` or `import type` is in the TS source, regardless of whether it is in the JS output. This is a breaking change for a lot o
+  - microsoft/TypeScript#8 [closed/not_planned] 2014-07-15 closed 2023-02-14 (193 comments, hits 1) Suggestion: minification
+      TypeScript should support emitting minified JavaScript. There are several different things we could support: 1. Just remove whitespace 2. Minify unobservable identifiers 3. Remove provably dead code 4. Whole-program minification (i.e. closure compiler) 5. (Others?)
+  - microsoft/TypeScript#3364 [closed/completed] 2015-06-03 closed 2016-09-20 (17 comments, hits 1) Allow non-global helper functions
+      Original issue: https://github.com/systemjs/builder/issues/178
+
+== C33
+  query: repo:microsoft/TypeScript spelling suggestion JSX eval is:issue -> total 1
+  query: repo:microsoft/TypeScript "Did you mean 'eval'" JSX is:issue -> total 0
+  query: repo:microsoft/TypeScript fix spelling JSX intrinsic element is:issue -> total 0
+  query: repo:microsoft/TypeScript spelling code fix lowercase JSX tag is:issue -> total 1
+  query: repo:microsoft/TypeScript spelling JSX is:issue -> total 10
+  query: repo:microsoft/TypeScript "Did you mean" JSX component is:issue -> total 24
+  query: repo:microsoft/TypeScript codefix spelling JSX element is:issue -> total 0
+  - microsoft/TypeScript#18442 [closed/completed] 2017-09-13 closed 2021-09-24 (203 comments, hits 2) Support `.mjs` output
+      Experimental support for ES modules just landed in Node 8.5 ([changelog](https://github.com/nodejs/node/blob/master/doc/changelogs/CHANGELOG_V8.md#8.5.0), [PR](https://github.com/nodejs/node/pull/14369)). Since ES modules have some parsing and semantic differences, Node decided to use the `mjs` exte
+  - microsoft/TypeScript#6579 [closed/completed] 2016-01-22 closed 2020-10-19 (149 comments, hits 2) Suggestion: Regex-validated string type
+      There are cases, where a property can not just be any string (or a set of strings), but needs to match a pattern. ``` typescript let fontStyle: 'normal' | 'italic' = 'normal'; // already available in master let fontColor: /^#([0-9a-f]{3}|[0-9a-f]{6})$/i = '#000'; // my suggestion ``` It's common pra
+  - microsoft/TypeScript#63879 [open/None] 2026-08-10 closed - (6 comments, hits 1) feat(contentmapper): support whole-symbol rename edit projection
+      ## Problem Content Mapper protocol v1 cannot safely rename one semantic symbol when generated and authored spellings differ. A Vue mapper, for example, needs to project this authored listener: ```vue <Child @save-item="handler" /> ``` to a TypeScript reference to the child's `saveItem` declaration. 
+  - microsoft/TypeScript#10649 [open/None] 2016-08-31 closed - (15 comments, hits 1) Recursively Resolving Modules
+      <!-- BUGS: Please use this template. --> <!-- QUESTIONS: This is not a general support forum! Ask Qs at http://stackoverflow.com/questions/tagged/typescript --> <!-- SUGGESTIONS: See https://github.com/Microsoft/TypeScript-wiki/blob/master/Writing-Good-Design-Proposals.md --> **TypeScript Version:**
+  - microsoft/TypeScript#1579 [closed/completed] 2014-12-30 closed 2024-01-25 (175 comments, hits 1) Suggestion: Add the nameof compile-time operator to convert property and function names into strings
+      I would like to see the `nameof` operator be considered for Typescript. This feature was just added to C# [description](http://blogs.msdn.com/b/csharpfaq/archive/2014/11/20/new-features-in-c-6.aspx), and it is an elegant solution to a common issue in Javascript. At compile time, `nameof` converts it
+  - microsoft/TypeScript#52168 [closed/completed] 2023-01-09 closed 2023-06-19 (3 comments, hits 1) Improve HTML autocomplete attribute
+      # Suggestion ## 🔍 Search Terms autoComplete html attribute DOM jsx typing completion input password on off precise specific list ## ✅ Viability Checklist My suggestion meets these guidelines: * [x] This wouldn't be a breaking change in existing TypeScript/JavaScript code * [x] This wouldn't change t
+  - microsoft/TypeScript#38511 [open/None] 2020-05-12 closed - (47 comments, hits 1) Type annotation for all exports in the module
+      ## Search Terms Export, typed exports, modules, Next.js, Redwood.js ## Suggestion Allow a new syntax [From issue #420](https://github.com/microsoft/TypeScript/issues/420#issuecomment-52346304) that will allow typing all of exports in a module. ```ts export implements { default: string foo: (bar: boo
+  - microsoft/TypeScript#14520 [open/None] 2017-03-07 closed - (51 comments, hits 1) Enable type parameter lower-bound syntax
+      <!-- BUGS: Please use this template. --> <!-- QUESTIONS: This is not a general support forum! Ask Qs at http://stackoverflow.com/questions/tagged/typescript --> <!-- SUGGESTIONS: See https://github.com/Microsoft/TypeScript-wiki/blob/master/Writing-Good-Design-Proposals.md --> **TypeScript Version:**
+  - microsoft/TypeScript#17574 [open/None] 2017-08-03 closed - (73 comments, hits 1) Generic values
+      TypeScript supports generic type/interface/class declarations. These features serve as an analog of "type constructors" in other type systems: they allow us to declare a type that is parameterized over some number of type arguments. TypeScript also supports generic functions. These serve as limited 
+  - microsoft/TypeScript#43717 [closed/not_planned] 2021-04-17 closed 2024-02-11 (11 comments, hits 1) Slow Performance with Type Inference on JSX Element
+      **Version** TypeScript 4.2.4 TypeScript 4.3.0-dev.20210417 **Expected Behaviour** Any changes made to the `Box` component have fast validation and auto-completion for associated attributes. **Actual Behaviour** TypeScript validation and auto-completion is slow. **Description** I have been investigat
+  - microsoft/TypeScript#29931 [closed/completed] 2019-02-15 closed 2019-02-19 (6 comments, hits 1) Stricter react props checking with discriminated unions
+      Hi. Sorry if it's already solved problem but i can't find it I want if sortable props occurred it orderBy will be required, and it works, but it don't work for opposite case when i don't pass sortable passing orderBy must occur error props not exists but it's not. So is it my issue or react typings 
+  - microsoft/TypeScript#62503 [closed/not_planned] 2025-09-28 closed 2025-09-30 (292 comments, hits 1) [NewErrors] 6.0.0-dev.20250928 vs 5.9.2
+      The following errors were reported by 6.0.0-dev.20250928, but not by 5.9.2 [Pipeline that generated this bug](https://typescript.visualstudio.com/TypeScript/_build?definitionId=48) [Logs for the pipeline run](https://typescript.visualstudio.com/TypeScript/_build/results?buildId=166139) [File that ge
+
+== C34
+  query: repo:microsoft/TypeScript "Change spelling" JSX closing tag is:issue -> total 0
+  query: repo:microsoft/TypeScript spelling fix JSX closing tag not renamed is:issue -> total 1
+  query: repo:microsoft/TypeScript code fix JSX opening tag only is:issue -> total 29
+  query: repo:microsoft/TypeScript fixSpelling JSX closing is:issue -> total 0
+  query: repo:microsoft/TypeScript JSX closing tag code fix is:issue -> total 45
+  query: repo:microsoft/TypeScript rename JSX opening tag only is:issue -> total 20
+  - microsoft/TypeScript#1579 [closed/completed] 2014-12-30 closed 2024-01-25 (175 comments, hits 1) Suggestion: Add the nameof compile-time operator to convert property and function names into strings
+      I would like to see the `nameof` operator be considered for Typescript. This feature was just added to C# [description](http://blogs.msdn.com/b/csharpfaq/archive/2014/11/20/new-features-in-c-6.aspx), and it is an elegant solution to a common issue in Javascript. At compile time, `nameof` converts it
+  - microsoft/TypeScript#44797 [open/None] 2021-06-28 closed - (11 comments, hits 1) No validation in JSX when using template string index signatures
+      [Playground Link](https://www.typescriptlang.org/play?ts=4.4.0-dev.20210628#code/JYWwDg9gTgLgBAKjgQwM5wEoFNkGN4BmUEIcARFDvmQNwCwAUI8AHYxZQF5ZwAKxYdAG9GcMXAIQIALjioYUVgHN6DcXABGyKLJYBXEBo6r1AbQAmyGMn4QwsgAaXrAWgAkQ+YpZKAvg4BdWS9lVV9GRgI9FnxgCBY4AE1kc0sACjABVFlbQQBKOBE1cUoYPSgEgB5zYAA3OAB6AD4wiIYGhrgA
+  - microsoft/TypeScript#63151 [open/None] 2026-02-17 closed - (25 comments, hits 3) Intellisense keeps crashing
+      Type: <b>Bug</b> Basically what happens is that the "Loading intellisense status" spinner spins forever, no matter what I try restarting, including killing the entire remote server, restarting the extension host, reloading the window, restarting TS server. It just stays spinning. While this is happe
+  - microsoft/TypeScript#38830 [open/None] 2020-05-28 closed - (12 comments, hits 1) Incorrect Indenting Behavior in VS
+      ***Ported from https://github.com/dotnet/roslyn/issues/44607 by @DanielRosenwasser*** _This issue has been moved from [a ticket on Developer Community](https://developercommunity.visualstudio.com/content/problem/1050808/wrong-indenting-2.html)._ --- <p>Found this problem was reported before, appears
+  - microsoft/TypeScript#64564 [closed/completed] 2026-10-01 closed 2026-10-02 (0 comments, hits 1) TypeScript 7 VS Code extension: closing JSX tags are not inserted in content-mapped files, although tsc --lsp provides them
+      In a content-mapped file, typing `>` after an opening JSX tag does not insert the closing tag, while the same keystroke in a `.tsx` file does. The language server supports it: `textDocument/_vs_onAutoInsert` for the content-mapped file returns the closing tag. The extension never sends that request 
+  - microsoft/TypeScript#34119 [open/None] 2019-10-13 closed - (51 comments, hits 1) tsc --watch initial build 3x slower than tsc
+      <!-- Please try to reproduce the issue with `typescript@next`. It may have already been fixed. --> **TypeScript Version:** 3.7.0-dev.20191011, 3.6.4, 3.5.2 <!-- Search terms you tried before logging this (so others can find this issue more easily) --> **Search Terms:** DeepReadonly slow watch mode *
+  - microsoft/TypeScript#14419 [open/None] 2017-03-02 closed - (130 comments, hits 1) Plugin Support for Custom Transformers
+      Since #13764 has landed, it's easy to write custom transformers. However, if I understand the API correctly, it is needed to duplicate the whole tsc command line just to add a single transformer. This leads to incompatibilities since these, on typescript depending, applications do not support the sa
+  - microsoft/TypeScript#65316 [open/None] 2026-11-04 closed - (0 comments, hits 1) JSX error reporting is inconsistent
+      ### Acknowledgement - [x] I acknowledge that issues using this template may be closed without further explanation at the maintainer's discretion. ### Comment While implementing the MDX content mapper I paid a lot of attention to how TypeScript reports JSX related errors. I’ll gladly provide more con
+  - microsoft/TypeScript#21124 [open/None] 2018-01-10 closed - (0 comments, hits 1) Formatter: Place JSX closing tag on new line
+      <!-- BUGS: Please use this template. --> <!-- QUESTIONS: This is not a general support forum! Ask Qs at http://stackoverflow.com/questions/tagged/typescript --> <!-- SUGGESTIONS: See https://github.com/Microsoft/TypeScript-wiki/blob/master/Writing-Good-Design-Proposals.md --> <!-- Please try to repr
+  - microsoft/TypeScript#17088 [open/None] 2017-07-11 closed - (15 comments, hits 1) Mixed es5/es2015 code with mixin classes causes runtime errors
+      **TypeScript Version:** 2.4.1 (but likely anything since 2.2) When utilising code targeted at ES5 mixed with code targeted at ES6 causes a [runtime error when using mixin classes](https://jsfiddle.net/kitsonk/pn2f3ad0/). The real world use case was using a library that was targeted at ES5 for distri
+  - microsoft/TypeScript#63450 [open/None] 2026-04-21 closed - (2 comments, hits 1) Rename symbol renamed element declaration in node_modules
+      <!-- ⚠️⚠️ Do Not Delete This! bug_report_template ⚠️⚠️ --> <!-- Please read our Rules of Conduct: https://opensource.microsoft.com/codeofconduct/ --> <!-- 🕮 Read our guide about submitting issues: https://github.com/microsoft/vscode/wiki/Submitting-Bugs-and-Suggestions --> <!-- 🔎 Search existing iss
+  - microsoft/TypeScript#29432 [open/None] 2019-01-15 closed - (22 comments, hits 1) Allow Type Checking to be Extended (into Tagged Templates, for example)
+      ## Search Terms Tagged Templates, template literals, JSX, htm, lit, lit-html, hyperhtml, nanohtml, choo ## Suggestion Many developers are exploring Tagged Templates as an alternative to JSX/TSX, as the result offers some important advantages. In particular, Tagged Templates parse faster than compile
+  - microsoft/TypeScript#5997 [open/None] 2015-12-08 closed - (27 comments, hits 1) Automatically inserting JSX closing element in TypeScript JSX file
+      Currently, when users type non self-closing JSX tag, they will have to type corresponding closing JSX tag. In this situation, our language service can help the users by automatically insert the corresponding JSX tag. The newly inserted tag should respect existing format and If the matching closing t
+  - microsoft/TypeScript#63800 [closed/completed] 2026-02-18 closed 2026-10-02 (56 comments, hits 1) API usage patterns for complex editor extensions
+      TypeScript 6.0 and earlier allowed loading third-party plugin code directly into TS Server, exposing language service and project system internals for proxying and patching. This was often used in coordination with editor extensions, sometimes in tandem with an additional custom language server, to 
+  - microsoft/TypeScript#19573 [open/None] 2017-10-30 closed - (214 comments, hits 1) @ts-ignore for the block scope and imports
+      currently @ts-ignore only mutes the errors from the line immediately below it would be great to have the same for 1. the whole next block 2. also for all imports ### use case: refactoring: commenting out a piece of code to see what would break without it, yet avoiding to deal with the errors in the 
+  - microsoft/TypeScript#8306 [closed/completed] 2016-04-26 closed 2016-05-17 (183 comments, hits 1) Support final classes (non-subclassable)
+      I was thinking it could be useful to have a way to specify that a class should not be subclassed, so that the compiler would warn the user on compilation if it sees another class extending the original one. On Java a class marked with final cannot be extended, so with the same keyword on TypeScript 
+  - microsoft/TypeScript#54276 [closed/not_planned] 2023-05-16 closed 2025-03-11 (84 comments, hits 1) A minimal custom transformer plugin proposal
+      In the TypeScript compiler, we have the concept of a "transformer". A transformer is a function which "transforms" one AST to another. TypeScript ships many such transforms, including all of the various transformation steps needed to downlevel newer syntax to older syntax, to convert from `import`/`
+
+== C35
+  query: repo:microsoft/TypeScript spelling suggestion variable being declared is:issue -> total 10
+  query: repo:microsoft/TypeScript "Did you mean" used before its declaration is:issue -> total 33
+  query: repo:microsoft/TypeScript spelling suggestion block-scoped variable initializer is:issue -> total 0
+  query: repo:microsoft/TypeScript fixSpelling self reference initializer is:issue -> total 0
+  query: repo:microsoft/TypeScript spelling suggestion own declaration is:issue -> total 14
+  query: repo:microsoft/TypeScript "used before its declaration" code fix is:issue -> total 14
+  - microsoft/TypeScript#29759 [open/None] 2019-02-05 closed - (25 comments, hits 2) Error messages should place most relevant information first.
+      Here's an actual example of an error message that can go wrong in our library when mispelling a property when creating an object literal: ``` [ts] Type '{ containers: { nginx: { image: string; memory: number; portMappings: NetworkListener[]; enviroment: number; }; }; }' is not assignable to type 'Fa
+  - microsoft/TypeScript#12936 [open/None] 2016-12-15 closed - (312 comments, hits 2) Exact Types
+      This is a proposal to enable a syntax for exact types. A similar feature can be seen in Flow (https://flowtype.org/docs/objects.html#exact-object-types), but I would like to propose it as a feature used for type literals and not interfaces. The specific syntax I'd propose using is the pipe (which al
+  - microsoft/TypeScript#6579 [closed/completed] 2016-01-22 closed 2020-10-19 (149 comments, hits 2) Suggestion: Regex-validated string type
+      There are cases, where a property can not just be any string (or a set of strings), but needs to match a pattern. ``` typescript let fontStyle: 'normal' | 'italic' = 'normal'; // already available in master let fontColor: /^#([0-9a-f]{3}|[0-9a-f]{6})$/i = '#000'; // my suggestion ``` It's common pra
+  - microsoft/TypeScript#1295 [closed/completed] 2014-11-28 closed 2016-11-02 (76 comments, hits 1) Suggestion: Type Property type
+      ## Motivations A lot of JavaScript library/framework/pattern involve computation based on the property name of an object. For example [Backbone](http://backbonejs.org/) model, functional transformation `pluck`, [ImmutableJS](https://github.com/facebook/immutable-js) are all based on such mechanism. 
+  - microsoft/TypeScript#6 [closed/completed] 2014-07-15 closed 2015-07-01 (50 comments, hits 1) Suggestion: abstract classes
+      Support an `abstract` keyword for classes and their methods Examples: ``` TypeScript abstract class Base { abstract getThing(): string; getOtherThing() { return 'hello'; } } var x = new Base(); // Error, 'Base' is abstract // Error, must either be 'abstract' or implement concrete 'getThing' class De
+  - microsoft/TypeScript#391 [closed/completed] 2014-08-07 closed 2015-07-21 (7 comments, hits 1) Allow stricter structural typing
+      Say I have the following: ``` interface Options { doSomethingSpecial?: boolean } function configure(options: Options) {} configure({}); ``` The preceding (correctly) does not flag any issues. However, say I change the function call to: ``` configure({doSomethingSuper: true}); ``` This also does not 
+  - microsoft/TypeScript#40701 [open/None] 2020-09-22 closed - (4 comments, hits 1) Don't suggest converting custom promise-like returning function to async ones
+      <!-- 🚨 STOP 🚨 𝗦𝗧𝗢𝗣 🚨 𝑺𝑻𝑶𝑷 🚨 Half of all issues filed here are duplicates, answered in the FAQ, or not appropriate for the bug tracker. Please help us by doing the following steps before logging an issue: * Search: https://github.com/Microsoft/TypeScript/search?type=Issues * Read the FAQ, especially 
+  - microsoft/TypeScript#57004 [open/reopened] 2024-01-10 closed - (4 comments, hits 1) Multimatch Overloads and a New User Contract for Overload Declarations.
+      ### 🔍 Search Terms - #14107 - That is labelled as "Needs Proposal". This proposal covers that, and details some of the tradeoffs. - (Thanks to @jcalz for finding that) - #1805 - Marked "Declined", but it is equivalent to 14107. ### ✅ Viability Checklist - [ ] This wouldn't be a breaking change in ex
+  - microsoft/TypeScript#60254 [open/None] 2024-10-17 closed - (7 comments, hits 1) Add a new type of class declaration to support mixins
+      ### 🔍 Search Terms "mixin", "InstanceType", "typeof", "class" ### ✅ Viability Checklist - [x] This wouldn't be a breaking change in existing TypeScript/JavaScript code - [x] This wouldn't change the runtime behavior of existing JavaScript code - [x] This could be implemented without emitting differe
+  - microsoft/TypeScript#18433 [open/None] 2017-09-13 closed - (77 comments, hits 1) Dangerous "name" (and potentially others) global 
+      <!-- BUGS: Please use this template. --> <!-- QUESTIONS: This is not a general support forum! Ask Qs at http://stackoverflow.com/questions/tagged/typescript --> <!-- SUGGESTIONS: See https://github.com/Microsoft/TypeScript-wiki/blob/master/Writing-Good-Design-Proposals.md --> **TypeScript Version:**
+  - microsoft/TypeScript#38511 [open/None] 2020-05-12 closed - (47 comments, hits 1) Type annotation for all exports in the module
+      ## Search Terms Export, typed exports, modules, Next.js, Redwood.js ## Suggestion Allow a new syntax [From issue #420](https://github.com/microsoft/TypeScript/issues/420#issuecomment-52346304) that will allow typing all of exports in a module. ```ts export implements { default: string foo: (bar: boo
+  - microsoft/TypeScript#33892 [open/None] 2019-10-09 closed - (59 comments, hits 1) Allow specifying interface implements clauses for the static side of classes
+      ## Search Terms class static side syntax interface type expression ## Suggestion Currently, you can only specify the static side interface of a class with a declaration. From [the handbook](https://www.typescriptlang.org/docs/handbook/interfaces.html#difference-between-the-static-and-instance-sides-
+  - microsoft/TypeScript#63691 [open/None] 2026-07-29 closed - (0 comments, hits 1) JSDoc tag for getting around "Object literals are open-ended"
+      ### 🔍 Search Terms label:"Domain: JSDoc" open-ended label:"Domain: JSDoc" literal label:checkJs open-ended label:checkJs literal ### ✅ Viability Checklist - [x] This wouldn't be a breaking change in existing TypeScript/JavaScript code - [x] This wouldn't change the runtime behavior of existing JavaS
+  - microsoft/TypeScript#63875 [closed/completed] 2026-08-04 closed 2026-10-09 (16 comments, hits 1) API feature roadmap
+      These are the categories of remaining API features I think we need for 7.1, with a few specific items included below. Costs are very rough estimates and hopefully skew high. This list does not include non-feature work like bug fixes, performance improvements, or docs, which are all important too. ##
+  - microsoft/TypeScript#1579 [closed/completed] 2014-12-30 closed 2024-01-25 (175 comments, hits 1) Suggestion: Add the nameof compile-time operator to convert property and function names into strings
+      I would like to see the `nameof` operator be considered for Typescript. This feature was just added to C# [description](http://blogs.msdn.com/b/csharpfaq/archive/2014/11/20/new-features-in-c-6.aspx), and it is an elegant solution to a common issue in Javascript. At compile time, `nameof` converts it
+  - microsoft/TypeScript#50123 [open/reopened] 2022-08-01 closed - (7 comments, hits 1) Incorrect use-before-declaration error in async IIFE initializer
+      # Bug Report <!-- Please fill in each section completely. Thank you! --> ### 🔎 Search Terms <!-- What search terms did you use when trying to find an existing bug report? List them here so people in the future can find this one more easily. --> - dead zone - await tdz - use before declaration await 
+  - microsoft/TypeScript#19503 [open/None] 2017-10-26 closed - (9 comments, hits 1) Use before declaration errors when using let statements within a switch case 
+      **TypeScript Version:** 2.5.3 **Code** ```ts function test(value) { switch (value) { case 1: let foo = 10; break; case 2: foo = 20; // Runtime ReferenceError: foo is not defined break; default: } } test(2); tsc --target es2015 (or higher) ``` **Expected behavior:** This should probably produce a com
+  - microsoft/TypeScript#63092 [closed/completed] 2026-02-04 closed 2026-08-18 (5 comments, hits 1) Crash: RangeError: Maximum call stack size exceeded in isReachableFlowNodeWorker with complex for loop headers
+      ### 🔎 Search Terms "Maximum call stack size exceeded" "isReachableFlowNodeWorker stack overflow" "Control flow analysis crash" "for loop reachability crash" ### 🕗 Version & Regression Information Crashes in 5.7.3, 5.8.3, 5.9.3, Nightly,TS7. ### ⏯ Playground Link https://www.typescriptlang.org/zh/pla
+  - microsoft/TypeScript#57766 [closed/completed] 2024-03-13 closed 2024-03-15 (20 comments, hits 1) Getting error `Class '*' used before its declaration. ts(2449)`  - for class decorators
+      ### 🔎 Search Terms used before its declaration. ts(2449) Class decorators having issues to contain the class namespace ### 🕗 Version & Regression Information - This is a crash - This changed between versions `5.4.2` (not exists) and `5.5.0-dev.20240312` (exists) ### `5.4.2` ![CleanShot 2024-03-13 at
+  - microsoft/TypeScript#28947 [closed/completed] 2018-12-11 closed 2018-12-17 (6 comments, hits 1) Compilation errors for runtime exceptions caused by circular imports
+      ## Search Terms circular imports circular dependency dependency injection ## Suggestion In a single file, you cannot use a variable before it is declared. ```ts const a = b // Block-scoped variable 'b' used before its declaration. [2448] const b = a ``` However, if these variables are split between 
+  - microsoft/TypeScript#35546 [closed/not_planned] 2019-12-06 closed 2022-06-23 (26 comments, hits 1) T implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer
+      **TypeScript Version:** 3.7.3 **Code** ```ts type Schema = { [key: string]: Number | String | Boolean | (() => Model<any>) } type Model<T extends Schema> = { } function model<T extends Schema>(type: Schema): Model<T> { return undefined as any } const User = model({ id: Number, name: String, photo: (

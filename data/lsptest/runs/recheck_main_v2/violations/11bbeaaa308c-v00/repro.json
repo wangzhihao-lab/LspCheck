@@ -1,0 +1,3554 @@
+{
+ "format": 1,
+ "campaign": "recheck_main_v2",
+ "vid": "11bbeaaa308c-v00",
+ "run_id": "11bbeaaa308c",
+ "oracle": "r5_transforms",
+ "server": {
+  "kind": "gopls",
+  "version": "v0.23.0"
+ },
+ "project": {
+  "name": "docker/compose@c6dffb26bdfd",
+  "source": "corpus",
+  "ref": "temp/corpus/docker__compose@c6dffb26bdfd",
+  "commit": "c6dffb26bdfd94efb1f4e1c743f1241a150d120a",
+  "language": "go"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 6,
+  "targets": [
+   {
+    "path": "internal/tracing/mux.go",
+    "positions": [
+     [
+      30,
+      26
+     ],
+     [
+      30,
+      48
+     ],
+     [
+      37,
+      12
+     ],
+     [
+      37,
+      26
+     ],
+     [
+      38,
+      6
+     ],
+     [
+      39,
+      48
+     ],
+     [
+      40,
+      12
+     ],
+     [
+      42,
+      6
+     ],
+     [
+      47,
+      17
+     ],
+     [
+      47,
+      22
+     ],
+     [
+      58,
+      6
+     ],
+     [
+      59,
+      38
+     ]
+    ],
+    "ends": [
+     [
+      30,
+      32
+     ],
+     [
+      30,
+      52
+     ],
+     [
+      37,
+      16
+     ],
+     [
+      37,
+      27
+     ],
+     [
+      38,
+      7
+     ],
+     [
+      39,
+      50
+     ],
+     [
+      40,
+      14
+     ],
+     [
+      42,
+      9
+     ],
+     [
+      47,
+      19
+     ],
+     [
+      47,
+      24
+     ],
+     [
+      58,
+      7
+     ],
+     [
+      59,
+      40
+     ]
+    ],
+    "names": [
+     "ExportSpans",
+     "Context",
+     "exporter",
+     "m",
+     "Go",
+     "err",
+     "Lock",
+     "errMu",
+     "Join",
+     "errs",
+     "Go",
+     "err"
+    ]
+   },
+   {
+    "path": "pkg/compose/model.go",
+    "positions": [
+     [
+      39,
+      62
+     ],
+     [
+      51,
+      34
+     ],
+     [
+      92,
+      14
+     ],
+     [
+      92,
+      21
+     ],
+     [
+      99,
+      48
+     ],
+     [
+      124,
+      5
+     ],
+     [
+      178,
+      43
+     ],
+     [
+      188,
+      4
+     ],
+     [
+      212,
+      2
+     ],
+     [
+      219,
+      15
+     ],
+     [
+      222,
+      46
+     ],
+     [
+      243,
+      4
+     ]
+    ],
+    "ends": [
+     [
+      39,
+      66
+     ],
+     [
+      51,
+      36
+     ],
+     [
+      92,
+      18
+     ],
+     [
+      92,
+      23
+     ],
+     [
+      99,
+      50
+     ],
+     [
+      124,
+      7
+     ],
+     [
+      178,
+      45
+     ],
+     [
+      188,
+      7
+     ],
+     [
+      212,
+      4
+     ],
+     [
+      219,
+      19
+     ],
+     [
+      222,
+      53
+     ],
+     [
+      243,
+      8
+     ]
+    ],
+    "names": [
+     "project",
+     "ctx",
+     "cleanup",
+     "err",
+     "Cmd",
+     "err",
+     "args",
+     "events",
+     "err",
+     "project",
+     "ModelVariable",
+     "Created"
+    ]
+   },
+   {
+    "path": "pkg/watch/temp.go",
+    "positions": [
+     [
+      35,
+      4
+     ],
+     [
+      35,
+      31
+     ],
+     [
+      37,
+      10
+     ],
+     [
+      41,
+      12
+     ],
+     [
+      49,
+      42
+     ],
+     [
+      54,
+      43
+     ],
+     [
+      58,
+      21
+     ],
+     [
+      59,
+      28
+     ],
+     [
+      63,
+      23
+     ],
+     [
+      71,
+      12
+     ],
+     [
+      74,
+      23
+     ],
+     [
+      78,
+      24
+     ]
+    ],
+    "ends": [
+     [
+      35,
+      7
+     ],
+     [
+      35,
+      33
+     ],
+     [
+      37,
+      12
+     ],
+     [
+      41,
+      14
+     ],
+     [
+      49,
+      46
+     ],
+     [
+      54,
+      46
+     ],
+     [
+      58,
+      24
+     ],
+     [
+      59,
+      30
+     ],
+     [
+      63,
+      25
+     ],
+     [
+      71,
+      14
+     ],
+     [
+      74,
+      25
+     ],
+     [
+      78,
+      26
+     ]
+    ],
+    "names": [
+     "tmpDir",
+     "root",
+     "nil",
+     "nil",
+     "TempDir",
+     "prefix",
+     "NewDir",
+     "dir",
+     "nil",
+     "err",
+     "nil",
+     "dir"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "foldingRange",
+  "path": "internal/tracing/mux.go",
+  "line": -1,
+  "character": -1,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "internal/tracing/mux.go"
+  },
+  {
+   "kind": "change",
+   "path": "internal/tracing/mux.go",
+   "start": [
+    0,
+    2
+   ],
+   "end": [
+    0,
+    2
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "internal/tracing/mux.go",
+   "start": [
+    1,
+    44
+   ],
+   "end": [
+    1,
+    44
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "internal/tracing/mux.go",
+   "start": [
+    2,
+    0
+   ],
+   "end": [
+    2,
+    0
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "internal/tracing/mux.go",
+   "start": [
+    3,
+    66
+   ],
+   "end": [
+    3,
+    66
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "internal/tracing/mux.go",
+   "start": [
+    4,
+    67
+   ],
+   "end": [
+    4,
+    67
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "internal/tracing/mux.go",
+   "start": [
+    5,
+    42
+   ],
+   "end": [
+    5,
+    42
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "internal/tracing/mux.go",
+   "start": [
+    6,
+    0
+   ],
+   "end": [
+    6,
+    0
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "internal/tracing/mux.go",
+   "start": [
+    7,
+    49
+   ],
+   "end": [
+    7,
+    49
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "internal/tracing/mux.go",
+   "start": [
+    8,
+    0
+   ],
+   "end": [
+    8,
+    0
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "internal/tracing/mux.go",
+   "start": [
+    9,
+    70
+   ],
+   "end": [
+    9,
+    70
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "internal/tracing/mux.go",
+   "start": [
+    10,
+    68
+   ],
+   "end": [
+    10,
+    68
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "internal/tracing/mux.go",
+   "start": [
+    11,
+    75
+   ],
+   "end": [
+    11,
+    75
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "internal/tracing/mux.go",
+   "start": [
+    12,
+    70
+   ],
+   "end": [
+    12,
+    70
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "internal/tracing/mux.go",
+   "start": [
+    13,
+    33
+   ],
+   "end": [
+    13,
+    33
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "internal/tracing/mux.go",
+   "start": [
+    14,
+    2
+   ],
+   "end": [
+    14,
+    2
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "internal/tracing/mux.go",
+   "start": [
+    15,
+    0
+   ],
+   "end": [
+    15,
+    0
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "internal/tracing/mux.go",
+   "start": [
+    16,
+    15
+   ],
+   "end": [
+    16,
+    15
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "internal/tracing/mux.go",
+   "start": [
+    17,
+    0
+   ],
+   "end": [
+    17,
+    0
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "internal/tracing/mux.go",
+   "start": [
+    18,
+    8
+   ],
+   "end": [
+    18,
+    8
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "internal/tracing/mux.go",
+   "start": [
+    19,
+    10
+   ],
+   "end": [
+    19,
+    10
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "internal/tracing/mux.go",
+   "start": [
+    20,
+    9
+   ],
+   "end": [
+    20,
+    9
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "internal/tracing/mux.go",
+   "start": [
+    21,
+    7
+   ],
+   "end": [
+    21,
+    7
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "internal/tracing/mux.go",
+   "start": [
+    22,
+    0
+   ],
+   "end": [
+    22,
+    0
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "internal/tracing/mux.go",
+   "start": [
+    23,
+    46
+   ],
+   "end": [
+    23,
+    46
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "internal/tracing/mux.go",
+   "start": [
+    24,
+    1
+   ],
+   "end": [
+    24,
+    1
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "internal/tracing/mux.go",
+   "start": [
+    25,
+    0
+   ],
+   "end": [
+    25,
+    0
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "internal/tracing/mux.go",
+   "start": [
+    26,
+    25
+   ],
+   "end": [
+    26,
+    25
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "internal/tracing/mux.go",
+   "start": [
+    27,
+    34
+   ],
+   "end": [
+    27,
+    34
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "internal/tracing/mux.go",
+   "start": [
+    28,
+    1
+   ],
+   "end": [
+    28,
+    1
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "internal/tracing/mux.go",
+   "start": [
+    29,
+    0
+   ],
+   "end": [
+    29,
+    0
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "internal/tracing/mux.go",
+   "start": [
+    30,
+    92
+   ],
+   "end": [
+    30,
+    92
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "internal/tracing/mux.go",
+   "start": [
+    31,
+    6
+   ],
+   "end": [
+    31,
+    6
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "internal/tracing/mux.go",
+   "start": [
+    32,
+    22
+   ],
+   "end": [
+    32,
+    22
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "internal/tracing/mux.go",
+   "start": [
+    33,
+    18
+   ],
+   "end": [
+    33,
+    18
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "internal/tracing/mux.go",
+   "start": [
+    34,
+    44
+   ],
+   "end": [
+    34,
+    44
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "internal/tracing/mux.go",
+   "start": [
+    35,
+    2
+   ],
+   "end": [
+    35,
+    2
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "internal/tracing/mux.go",
+   "start": [
+    36,
+    0
+   ],
+   "end": [
+    36,
+    0
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "internal/tracing/mux.go",
+   "start": [
+    37,
+    39
+   ],
+   "end": [
+    37,
+    39
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "internal/tracing/mux.go",
+   "start": [
+    38,
+    16
+   ],
+   "end": [
+    38,
+    16
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "internal/tracing/mux.go",
+   "start": [
+    39,
+    59
+   ],
+   "end": [
+    39,
+    59
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "internal/tracing/mux.go",
+   "start": [
+    40,
+    16
+   ],
+   "end": [
+    40,
+    16
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "internal/tracing/mux.go",
+   "start": [
+    41,
+    28
+   ],
+   "end": [
+    41,
+    28
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "internal/tracing/mux.go",
+   "start": [
+    42,
+    18
+   ],
+   "end": [
+    42,
+    18
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "internal/tracing/mux.go",
+   "start": [
+    43,
+    4
+   ],
+   "end": [
+    43,
+    4
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "internal/tracing/mux.go",
+   "start": [
+    44,
+    4
+   ],
+   "end": [
+    44,
+    4
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "internal/tracing/mux.go",
+   "start": [
+    45,
+    2
+   ],
+   "end": [
+    45,
+    2
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "internal/tracing/mux.go",
+   "start": [
+    46,
+    10
+   ],
+   "end": [
+    46,
+    10
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "internal/tracing/mux.go",
+   "start": [
+    47,
+    28
+   ],
+   "end": [
+    47,
+    28
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "internal/tracing/mux.go",
+   "start": [
+    48,
+    1
+   ],
+   "end": [
+    48,
+    1
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "internal/tracing/mux.go",
+   "start": [
+    49,
+    0
+   ],
+   "end": [
+    49,
+    0
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "internal/tracing/mux.go",
+   "start": [
+    50,
+    58
+   ],
+   "end": [
+    50,
+    58
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "internal/tracing/mux.go",
+   "start": [
+    51,
+    6
+   ],
+   "end": [
+    51,
+    6
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "internal/tracing/mux.go",
+   "start": [
+    52,
+    22
+   ],
+   "end": [
+    52,
+    22
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "internal/tracing/mux.go",
+   "start": [
+    53,
+    18
+   ],
+   "end": [
+    53,
+    18
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "internal/tracing/mux.go",
+   "start": [
+    54,
+    44
+   ],
+   "end": [
+    54,
+    44
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "internal/tracing/mux.go",
+   "start": [
+    55,
+    2
+   ],
+   "end": [
+    55,
+    2
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "internal/tracing/mux.go",
+   "start": [
+    56,
+    0
+   ],
+   "end": [
+    56,
+    0
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "internal/tracing/mux.go",
+   "start": [
+    57,
+    39
+   ],
+   "end": [
+    57,
+    39
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "internal/tracing/mux.go",
+   "start": [
+    58,
+    16
+   ],
+   "end": [
+    58,
+    16
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "internal/tracing/mux.go",
+   "start": [
+    59,
+    49
+   ],
+   "end": [
+    59,
+    49
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "internal/tracing/mux.go",
+   "start": [
+    60,
+    16
+   ],
+   "end": [
+    60,
+    16
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "internal/tracing/mux.go",
+   "start": [
+    61,
+    28
+   ],
+   "end": [
+    61,
+    28
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "internal/tracing/mux.go",
+   "start": [
+    62,
+    18
+   ],
+   "end": [
+    62,
+    18
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "internal/tracing/mux.go",
+   "start": [
+    63,
+    4
+   ],
+   "end": [
+    63,
+    4
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "internal/tracing/mux.go",
+   "start": [
+    64,
+    4
+   ],
+   "end": [
+    64,
+    4
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "internal/tracing/mux.go",
+   "start": [
+    65,
+    2
+   ],
+   "end": [
+    65,
+    2
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "internal/tracing/mux.go",
+   "start": [
+    66,
+    10
+   ],
+   "end": [
+    66,
+    10
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "internal/tracing/mux.go",
+   "start": [
+    67,
+    28
+   ],
+   "end": [
+    67,
+    28
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "internal/tracing/mux.go",
+   "start": [
+    68,
+    1
+   ],
+   "end": [
+    68,
+    1
+   ],
+   "text": "\r"
+  }
+ ],
+ "case": {
+  "mapped_key": [
+   "foldingRange",
+   "internal/tracing/mux.go",
+   -1,
+   -1,
+   ""
+  ],
+  "transform": {
+   "back": {
+    "col": 0,
+    "eof": [],
+    "line": -1,
+    "n": 0,
+    "path": "internal/tracing/mux.go",
+    "w": 0
+   },
+   "edits": [
+    [
+     0,
+     2,
+     0,
+     2,
+     "\r"
+    ],
+    [
+     1,
+     44,
+     1,
+     44,
+     "\r"
+    ],
+    [
+     2,
+     0,
+     2,
+     0,
+     "\r"
+    ],
+    [
+     3,
+     66,
+     3,
+     66,
+     "\r"
+    ],
+    [
+     4,
+     67,
+     4,
+     67,
+     "\r"
+    ],
+    [
+     5,
+     42,
+     5,
+     42,
+     "\r"
+    ],
+    [
+     6,
+     0,
+     6,
+     0,
+     "\r"
+    ],
+    [
+     7,
+     49,
+     7,
+     49,
+     "\r"
+    ],
+    [
+     8,
+     0,
+     8,
+     0,
+     "\r"
+    ],
+    [
+     9,
+     70,
+     9,
+     70,
+     "\r"
+    ],
+    [
+     10,
+     68,
+     10,
+     68,
+     "\r"
+    ],
+    [
+     11,
+     75,
+     11,
+     75,
+     "\r"
+    ],
+    [
+     12,
+     70,
+     12,
+     70,
+     "\r"
+    ],
+    [
+     13,
+     33,
+     13,
+     33,
+     "\r"
+    ],
+    [
+     14,
+     2,
+     14,
+     2,
+     "\r"
+    ],
+    [
+     15,
+     0,
+     15,
+     0,
+     "\r"
+    ],
+    [
+     16,
+     15,
+     16,
+     15,
+     "\r"
+    ],
+    [
+     17,
+     0,
+     17,
+     0,
+     "\r"
+    ],
+    [
+     18,
+     8,
+     18,
+     8,
+     "\r"
+    ],
+    [
+     19,
+     10,
+     19,
+     10,
+     "\r"
+    ],
+    [
+     20,
+     9,
+     20,
+     9,
+     "\r"
+    ],
+    [
+     21,
+     7,
+     21,
+     7,
+     "\r"
+    ],
+    [
+     22,
+     0,
+     22,
+     0,
+     "\r"
+    ],
+    [
+     23,
+     46,
+     23,
+     46,
+     "\r"
+    ],
+    [
+     24,
+     1,
+     24,
+     1,
+     "\r"
+    ],
+    [
+     25,
+     0,
+     25,
+     0,
+     "\r"
+    ],
+    [
+     26,
+     25,
+     26,
+     25,
+     "\r"
+    ],
+    [
+     27,
+     34,
+     27,
+     34,
+     "\r"
+    ],
+    [
+     28,
+     1,
+     28,
+     1,
+     "\r"
+    ],
+    [
+     29,
+     0,
+     29,
+     0,
+     "\r"
+    ],
+    [
+     30,
+     92,
+     30,
+     92,
+     "\r"
+    ],
+    [
+     31,
+     6,
+     31,
+     6,
+     "\r"
+    ],
+    [
+     32,
+     22,
+     32,
+     22,
+     "\r"
+    ],
+    [
+     33,
+     18,
+     33,
+     18,
+     "\r"
+    ],
+    [
+     34,
+     44,
+     34,
+     44,
+     "\r"
+    ],
+    [
+     35,
+     2,
+     35,
+     2,
+     "\r"
+    ],
+    [
+     36,
+     0,
+     36,
+     0,
+     "\r"
+    ],
+    [
+     37,
+     39,
+     37,
+     39,
+     "\r"
+    ],
+    [
+     38,
+     16,
+     38,
+     16,
+     "\r"
+    ],
+    [
+     39,
+     59,
+     39,
+     59,
+     "\r"
+    ],
+    [
+     40,
+     16,
+     40,
+     16,
+     "\r"
+    ],
+    [
+     41,
+     28,
+     41,
+     28,
+     "\r"
+    ],
+    [
+     42,
+     18,
+     42,
+     18,
+     "\r"
+    ],
+    [
+     43,
+     4,
+     43,
+     4,
+     "\r"
+    ],
+    [
+     44,
+     4,
+     44,
+     4,
+     "\r"
+    ],
+    [
+     45,
+     2,
+     45,
+     2,
+     "\r"
+    ],
+    [
+     46,
+     10,
+     46,
+     10,
+     "\r"
+    ],
+    [
+     47,
+     28,
+     47,
+     28,
+     "\r"
+    ],
+    [
+     48,
+     1,
+     48,
+     1,
+     "\r"
+    ],
+    [
+     49,
+     0,
+     49,
+     0,
+     "\r"
+    ],
+    [
+     50,
+     58,
+     50,
+     58,
+     "\r"
+    ],
+    [
+     51,
+     6,
+     51,
+     6,
+     "\r"
+    ],
+    [
+     52,
+     22,
+     52,
+     22,
+     "\r"
+    ],
+    [
+     53,
+     18,
+     53,
+     18,
+     "\r"
+    ],
+    [
+     54,
+     44,
+     54,
+     44,
+     "\r"
+    ],
+    [
+     55,
+     2,
+     55,
+     2,
+     "\r"
+    ],
+    [
+     56,
+     0,
+     56,
+     0,
+     "\r"
+    ],
+    [
+     57,
+     39,
+     57,
+     39,
+     "\r"
+    ],
+    [
+     58,
+     16,
+     58,
+     16,
+     "\r"
+    ],
+    [
+     59,
+     49,
+     59,
+     49,
+     "\r"
+    ],
+    [
+     60,
+     16,
+     60,
+     16,
+     "\r"
+    ],
+    [
+     61,
+     28,
+     61,
+     28,
+     "\r"
+    ],
+    [
+     62,
+     18,
+     62,
+     18,
+     "\r"
+    ],
+    [
+     63,
+     4,
+     63,
+     4,
+     "\r"
+    ],
+    [
+     64,
+     4,
+     64,
+     4,
+     "\r"
+    ],
+    [
+     65,
+     2,
+     65,
+     2,
+     "\r"
+    ],
+    [
+     66,
+     10,
+     66,
+     10,
+     "\r"
+    ],
+    [
+     67,
+     28,
+     67,
+     28,
+     "\r"
+    ],
+    [
+     68,
+     1,
+     68,
+     1,
+     "\r"
+    ]
+   ],
+   "kind": "T4",
+   "path": "internal/tracing/mux.go",
+   "shift": {
+    "col": 0,
+    "eof": [],
+    "line": -1,
+    "n": 0,
+    "path": "internal/tracing/mux.go",
+    "w": 0
+   }
+  }
+ },
+ "shape": "foldingRange:changed",
+ "signature": "gopls|r5_transforms|foldingRange:changed",
+ "expected": [
+  [
+   0,
+   2,
+   14,
+   2,
+   "comment"
+  ],
+  [
+   18,
+   8,
+   24,
+   0,
+   "imports"
+  ],
+  [
+   26,
+   25,
+   28,
+   0,
+   ""
+  ],
+  [
+   30,
+   33,
+   30,
+   83,
+   ""
+  ],
+  [
+   30,
+   6,
+   30,
+   19,
+   ""
+  ],
+  [
+   30,
+   92,
+   48,
+   0,
+   ""
+  ],
+  [
+   31,
+   6,
+   35,
+   1,
+   ""
+  ],
+  [
+   34,
+   15,
+   34,
+   43,
+   ""
+  ],
+  [
+   34,
+   31,
+   34,
+   42,
+   ""
+  ],
+  [
+   37,
+   39,
+   45,
+   1,
+   ""
+  ],
+  [
+   38,
+   16,
+   44,
+   2,
+   ""
+  ],
+  [
+   38,
+   8,
+   44,
+   3,
+   ""
+  ],
+  [
+   39,
+   34,
+   39,
+   44,
+   ""
+  ],
+  [
+   39,
+   59,
+   43,
+   3,
+   ""
+  ],
+  [
+   41,
+   18,
+   41,
+   27,
+   ""
+  ],
+  [
+   47,
+   20,
+   47,
+   27,
+   ""
+  ],
+  [
+   50,
+   30,
+   50,
+   49,
+   ""
+  ],
+  [
+   50,
+   58,
+   68,
+   0,
+   ""
+  ],
+  [
+   50,
+   6,
+   50,
+   19,
+   ""
+  ],
+  [
+   51,
+   6,
+   55,
+   1,
+   ""
+  ],
+  [
+   54,
+   15,
+   54,
+   43,
+   ""
+  ],
+  [
+   54,
+   31,
+   54,
+   42,
+   ""
+  ],
+  [
+   57,
+   39,
+   65,
+   1,
+   ""
+  ],
+  [
+   58,
+   16,
+   64,
+   2,
+   ""
+  ],
+  [
+   58,
+   8,
+   64,
+   3,
+   ""
+  ],
+  [
+   59,
+   31,
+   59,
+   34,
+   ""
+  ],
+  [
+   59,
+   49,
+   63,
+   3,
+   ""
+  ],
+  [
+   61,
+   18,
+   61,
+   27,
+   ""
+  ],
+  [
+   67,
+   20,
+   67,
+   27,
+   ""
+  ]
+ ],
+ "actual": [
+  [
+   0,
+   2,
+   13,
+   23,
+   "comment"
+  ],
+  [
+   18,
+   8,
+   24,
+   0,
+   "imports"
+  ],
+  [
+   26,
+   25,
+   28,
+   0,
+   ""
+  ],
+  [
+   30,
+   33,
+   30,
+   83,
+   ""
+  ],
+  [
+   30,
+   6,
+   30,
+   19,
+   ""
+  ],
+  [
+   30,
+   92,
+   48,
+   0,
+   ""
+  ],
+  [
+   31,
+   6,
+   35,
+   1,
+   ""
+  ],
+  [
+   34,
+   15,
+   34,
+   43,
+   ""
+  ],
+  [
+   34,
+   31,
+   34,
+   42,
+   ""
+  ],
+  [
+   37,
+   39,
+   45,
+   1,
+   ""
+  ],
+  [
+   38,
+   16,
+   44,
+   2,
+   ""
+  ],
+  [
+   38,
+   8,
+   44,
+   3,
+   ""
+  ],
+  [
+   39,
+   34,
+   39,
+   44,
+   ""
+  ],
+  [
+   39,
+   59,
+   43,
+   3,
+   ""
+  ],
+  [
+   41,
+   18,
+   41,
+   27,
+   ""
+  ],
+  [
+   47,
+   20,
+   47,
+   27,
+   ""
+  ],
+  [
+   50,
+   30,
+   50,
+   49,
+   ""
+  ],
+  [
+   50,
+   58,
+   68,
+   0,
+   ""
+  ],
+  [
+   50,
+   6,
+   50,
+   19,
+   ""
+  ],
+  [
+   51,
+   6,
+   55,
+   1,
+   ""
+  ],
+  [
+   54,
+   15,
+   54,
+   43,
+   ""
+  ],
+  [
+   54,
+   31,
+   54,
+   42,
+   ""
+  ],
+  [
+   57,
+   39,
+   65,
+   1,
+   ""
+  ],
+  [
+   58,
+   16,
+   64,
+   2,
+   ""
+  ],
+  [
+   58,
+   8,
+   64,
+   3,
+   ""
+  ],
+  [
+   59,
+   31,
+   59,
+   34,
+   ""
+  ],
+  [
+   59,
+   49,
+   63,
+   3,
+   ""
+  ],
+  [
+   61,
+   18,
+   61,
+   27,
+   ""
+  ],
+  [
+   67,
+   20,
+   67,
+   27,
+   ""
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "T4 internal/tracing/mux.go: 69 edit(s), first [0, 2, 0, 2]; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 49s",
+ "violation": {
+  "oracle": "r5_transforms",
+  "server": "gopls-v0.23.0",
+  "project": "docker/compose@c6dffb26bdfd",
+  "key": {
+   "method": "foldingRange",
+   "path": "internal/tracing/mux.go",
+   "line": -1,
+   "character": -1,
+   "extra": ""
+  },
+  "expected": [
+   [
+    0,
+    2,
+    14,
+    2,
+    "comment"
+   ],
+   [
+    18,
+    8,
+    24,
+    0,
+    "imports"
+   ],
+   [
+    26,
+    25,
+    28,
+    0,
+    ""
+   ],
+   [
+    30,
+    33,
+    30,
+    83,
+    ""
+   ],
+   [
+    30,
+    6,
+    30,
+    19,
+    ""
+   ],
+   [
+    30,
+    92,
+    48,
+    0,
+    ""
+   ],
+   [
+    31,
+    6,
+    35,
+    1,
+    ""
+   ],
+   [
+    34,
+    15,
+    34,
+    43,
+    ""
+   ],
+   [
+    34,
+    31,
+    34,
+    42,
+    ""
+   ],
+   [
+    37,
+    39,
+    45,
+    1,
+    ""
+   ],
+   [
+    38,
+    16,
+    44,
+    2,
+    ""
+   ],
+   [
+    38,
+    8,
+    44,
+    3,
+    ""
+   ],
+   [
+    39,
+    34,
+    39,
+    44,
+    ""
+   ],
+   [
+    39,
+    59,
+    43,
+    3,
+    ""
+   ],
+   [
+    41,
+    18,
+    41,
+    27,
+    ""
+   ],
+   [
+    47,
+    20,
+    47,
+    27,
+    ""
+   ],
+   [
+    50,
+    30,
+    50,
+    49,
+    ""
+   ],
+   [
+    50,
+    58,
+    68,
+    0,
+    ""
+   ],
+   [
+    50,
+    6,
+    50,
+    19,
+    ""
+   ],
+   [
+    51,
+    6,
+    55,
+    1,
+    ""
+   ],
+   [
+    54,
+    15,
+    54,
+    43,
+    ""
+   ],
+   [
+    54,
+    31,
+    54,
+    42,
+    ""
+   ],
+   [
+    57,
+    39,
+    65,
+    1,
+    ""
+   ],
+   [
+    58,
+    16,
+    64,
+    2,
+    ""
+   ],
+   [
+    58,
+    8,
+    64,
+    3,
+    ""
+   ],
+   [
+    59,
+    31,
+    59,
+    34,
+    ""
+   ],
+   [
+    59,
+    49,
+    63,
+    3,
+    ""
+   ],
+   [
+    61,
+    18,
+    61,
+    27,
+    ""
+   ],
+   [
+    67,
+    20,
+    67,
+    27,
+    ""
+   ]
+  ],
+  "actual": [
+   [
+    0,
+    2,
+    13,
+    23,
+    "comment"
+   ],
+   [
+    18,
+    8,
+    24,
+    0,
+    "imports"
+   ],
+   [
+    26,
+    25,
+    28,
+    0,
+    ""
+   ],
+   [
+    30,
+    33,
+    30,
+    83,
+    ""
+   ],
+   [
+    30,
+    6,
+    30,
+    19,
+    ""
+   ],
+   [
+    30,
+    92,
+    48,
+    0,
+    ""
+   ],
+   [
+    31,
+    6,
+    35,
+    1,
+    ""
+   ],
+   [
+    34,
+    15,
+    34,
+    43,
+    ""
+   ],
+   [
+    34,
+    31,
+    34,
+    42,
+    ""
+   ],
+   [
+    37,
+    39,
+    45,
+    1,
+    ""
+   ],
+   [
+    38,
+    16,
+    44,
+    2,
+    ""
+   ],
+   [
+    38,
+    8,
+    44,
+    3,
+    ""
+   ],
+   [
+    39,
+    34,
+    39,
+    44,
+    ""
+   ],
+   [
+    39,
+    59,
+    43,
+    3,
+    ""
+   ],
+   [
+    41,
+    18,
+    41,
+    27,
+    ""
+   ],
+   [
+    47,
+    20,
+    47,
+    27,
+    ""
+   ],
+   [
+    50,
+    30,
+    50,
+    49,
+    ""
+   ],
+   [
+    50,
+    58,
+    68,
+    0,
+    ""
+   ],
+   [
+    50,
+    6,
+    50,
+    19,
+    ""
+   ],
+   [
+    51,
+    6,
+    55,
+    1,
+    ""
+   ],
+   [
+    54,
+    15,
+    54,
+    43,
+    ""
+   ],
+   [
+    54,
+    31,
+    54,
+    42,
+    ""
+   ],
+   [
+    57,
+    39,
+    65,
+    1,
+    ""
+   ],
+   [
+    58,
+    16,
+    64,
+    2,
+    ""
+   ],
+   [
+    58,
+    8,
+    64,
+    3,
+    ""
+   ],
+   [
+    59,
+    31,
+    59,
+    34,
+    ""
+   ],
+   [
+    59,
+    49,
+    63,
+    3,
+    ""
+   ],
+   [
+    61,
+    18,
+    61,
+    27,
+    ""
+   ],
+   [
+    67,
+    20,
+    67,
+    27,
+    ""
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "internal/tracing/mux.go"
+   },
+   {
+    "kind": "change",
+    "path": "internal/tracing/mux.go",
+    "start": [
+     0,
+     2
+    ],
+    "end": [
+     0,
+     2
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "internal/tracing/mux.go",
+    "start": [
+     1,
+     44
+    ],
+    "end": [
+     1,
+     44
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "internal/tracing/mux.go",
+    "start": [
+     2,
+     0
+    ],
+    "end": [
+     2,
+     0
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "internal/tracing/mux.go",
+    "start": [
+     3,
+     66
+    ],
+    "end": [
+     3,
+     66
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "internal/tracing/mux.go",
+    "start": [
+     4,
+     67
+    ],
+    "end": [
+     4,
+     67
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "internal/tracing/mux.go",
+    "start": [
+     5,
+     42
+    ],
+    "end": [
+     5,
+     42
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "internal/tracing/mux.go",
+    "start": [
+     6,
+     0
+    ],
+    "end": [
+     6,
+     0
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "internal/tracing/mux.go",
+    "start": [
+     7,
+     49
+    ],
+    "end": [
+     7,
+     49
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "internal/tracing/mux.go",
+    "start": [
+     8,
+     0
+    ],
+    "end": [
+     8,
+     0
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "internal/tracing/mux.go",
+    "start": [
+     9,
+     70
+    ],
+    "end": [
+     9,
+     70
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "internal/tracing/mux.go",
+    "start": [
+     10,
+     68
+    ],
+    "end": [
+     10,
+     68
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "internal/tracing/mux.go",
+    "start": [
+     11,
+     75
+    ],
+    "end": [
+     11,
+     75
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "internal/tracing/mux.go",
+    "start": [
+     12,
+     70
+    ],
+    "end": [
+     12,
+     70
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "internal/tracing/mux.go",
+    "start": [
+     13,
+     33
+    ],
+    "end": [
+     13,
+     33
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "internal/tracing/mux.go",
+    "start": [
+     14,
+     2
+    ],
+    "end": [
+     14,
+     2
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "internal/tracing/mux.go",
+    "start": [
+     15,
+     0
+    ],
+    "end": [
+     15,
+     0
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "internal/tracing/mux.go",
+    "start": [
+     16,
+     15
+    ],
+    "end": [
+     16,
+     15
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "internal/tracing/mux.go",
+    "start": [
+     17,
+     0
+    ],
+    "end": [
+     17,
+     0
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "internal/tracing/mux.go",
+    "start": [
+     18,
+     8
+    ],
+    "end": [
+     18,
+     8
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "internal/tracing/mux.go",
+    "start": [
+     19,
+     10
+    ],
+    "end": [
+     19,
+     10
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "internal/tracing/mux.go",
+    "start": [
+     20,
+     9
+    ],
+    "end": [
+     20,
+     9
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "internal/tracing/mux.go",
+    "start": [
+     21,
+     7
+    ],
+    "end": [
+     21,
+     7
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "internal/tracing/mux.go",
+    "start": [
+     22,
+     0
+    ],
+    "end": [
+     22,
+     0
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "internal/tracing/mux.go",
+    "start": [
+     23,
+     46
+    ],
+    "end": [
+     23,
+     46
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "internal/tracing/mux.go",
+    "start": [
+     24,
+     1
+    ],
+    "end": [
+     24,
+     1
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "internal/tracing/mux.go",
+    "start": [
+     25,
+     0
+    ],
+    "end": [
+     25,
+     0
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "internal/tracing/mux.go",
+    "start": [
+     26,
+     25
+    ],
+    "end": [
+     26,
+     25
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "internal/tracing/mux.go",
+    "start": [
+     27,
+     34
+    ],
+    "end": [
+     27,
+     34
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "internal/tracing/mux.go",
+    "start": [
+     28,
+     1
+    ],
+    "end": [
+     28,
+     1
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "internal/tracing/mux.go",
+    "start": [
+     29,
+     0
+    ],
+    "end": [
+     29,
+     0
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "internal/tracing/mux.go",
+    "start": [
+     30,
+     92
+    ],
+    "end": [
+     30,
+     92
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "internal/tracing/mux.go",
+    "start": [
+     31,
+     6
+    ],
+    "end": [
+     31,
+     6
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "internal/tracing/mux.go",
+    "start": [
+     32,
+     22
+    ],
+    "end": [
+     32,
+     22
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "internal/tracing/mux.go",
+    "start": [
+     33,
+     18
+    ],
+    "end": [
+     33,
+     18
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "internal/tracing/mux.go",
+    "start": [
+     34,
+     44
+    ],
+    "end": [
+     34,
+     44
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "internal/tracing/mux.go",
+    "start": [
+     35,
+     2
+    ],
+    "end": [
+     35,
+     2
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "internal/tracing/mux.go",
+    "start": [
+     36,
+     0
+    ],
+    "end": [
+     36,
+     0
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "internal/tracing/mux.go",
+    "start": [
+     37,
+     39
+    ],
+    "end": [
+     37,
+     39
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "internal/tracing/mux.go",
+    "start": [
+     38,
+     16
+    ],
+    "end": [
+     38,
+     16
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "internal/tracing/mux.go",
+    "start": [
+     39,
+     59
+    ],
+    "end": [
+     39,
+     59
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "internal/tracing/mux.go",
+    "start": [
+     40,
+     16
+    ],
+    "end": [
+     40,
+     16
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "internal/tracing/mux.go",
+    "start": [
+     41,
+     28
+    ],
+    "end": [
+     41,
+     28
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "internal/tracing/mux.go",
+    "start": [
+     42,
+     18
+    ],
+    "end": [
+     42,
+     18
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "internal/tracing/mux.go",
+    "start": [
+     43,
+     4
+    ],
+    "end": [
+     43,
+     4
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "internal/tracing/mux.go",
+    "start": [
+     44,
+     4
+    ],
+    "end": [
+     44,
+     4
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "internal/tracing/mux.go",
+    "start": [
+     45,
+     2
+    ],
+    "end": [
+     45,
+     2
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "internal/tracing/mux.go",
+    "start": [
+     46,
+     10
+    ],
+    "end": [
+     46,
+     10
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "internal/tracing/mux.go",
+    "start": [
+     47,
+     28
+    ],
+    "end": [
+     47,
+     28
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "internal/tracing/mux.go",
+    "start": [
+     48,
+     1
+    ],
+    "end": [
+     48,
+     1
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "internal/tracing/mux.go",
+    "start": [
+     49,
+     0
+    ],
+    "end": [
+     49,
+     0
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "internal/tracing/mux.go",
+    "start": [
+     50,
+     58
+    ],
+    "end": [
+     50,
+     58
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "internal/tracing/mux.go",
+    "start": [
+     51,
+     6
+    ],
+    "end": [
+     51,
+     6
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "internal/tracing/mux.go",
+    "start": [
+     52,
+     22
+    ],
+    "end": [
+     52,
+     22
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "internal/tracing/mux.go",
+    "start": [
+     53,
+     18
+    ],
+    "end": [
+     53,
+     18
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "internal/tracing/mux.go",
+    "start": [
+     54,
+     44
+    ],
+    "end": [
+     54,
+     44
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "internal/tracing/mux.go",
+    "start": [
+     55,
+     2
+    ],
+    "end": [
+     55,
+     2
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "internal/tracing/mux.go",
+    "start": [
+     56,
+     0
+    ],
+    "end": [
+     56,
+     0
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "internal/tracing/mux.go",
+    "start": [
+     57,
+     39
+    ],
+    "end": [
+     57,
+     39
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "internal/tracing/mux.go",
+    "start": [
+     58,
+     16
+    ],
+    "end": [
+     58,
+     16
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "internal/tracing/mux.go",
+    "start": [
+     59,
+     49
+    ],
+    "end": [
+     59,
+     49
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "internal/tracing/mux.go",
+    "start": [
+     60,
+     16
+    ],
+    "end": [
+     60,
+     16
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "internal/tracing/mux.go",
+    "start": [
+     61,
+     28
+    ],
+    "end": [
+     61,
+     28
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "internal/tracing/mux.go",
+    "start": [
+     62,
+     18
+    ],
+    "end": [
+     62,
+     18
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "internal/tracing/mux.go",
+    "start": [
+     63,
+     4
+    ],
+    "end": [
+     63,
+     4
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "internal/tracing/mux.go",
+    "start": [
+     64,
+     4
+    ],
+    "end": [
+     64,
+     4
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "internal/tracing/mux.go",
+    "start": [
+     65,
+     2
+    ],
+    "end": [
+     65,
+     2
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "internal/tracing/mux.go",
+    "start": [
+     66,
+     10
+    ],
+    "end": [
+     66,
+     10
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "internal/tracing/mux.go",
+    "start": [
+     67,
+     28
+    ],
+    "end": [
+     67,
+     28
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "internal/tracing/mux.go",
+    "start": [
+     68,
+     1
+    ],
+    "end": [
+     68,
+     1
+    ],
+    "text": "\r"
+   }
+  ],
+  "detail": "{\"case\": {\"mapped_key\": [\"foldingRange\", \"internal/tracing/mux.go\", -1, -1, \"\"], \"transform\": {\"back\": {\"col\": 0, \"eof\": [], \"line\": -1, \"n\": 0, \"path\": \"internal/tracing/mux.go\", \"w\": 0}, \"edits\": [[0, 2, 0, 2, \"\\r\"], [1, 44, 1, 44, \"\\r\"], [2, 0, 2, 0, \"\\r\"], [3, 66, 3, 66, \"\\r\"], [4, 67, 4, 67, \"\\r\"], [5, 42, 5, 42, \"\\r\"], [6, 0, 6, 0, \"\\r\"], [7, 49, 7, 49, \"\\r\"], [8, 0, 8, 0, \"\\r\"], [9, 70, 9, 70, \"\\r\"], [10, 68, 10, 68, \"\\r\"], [11, 75, 11, 75, \"\\r\"], [12, 70, 12, 70, \"\\r\"], [13, 33, 13, 33, \"\\r\"], [14, 2, 14, 2, \"\\r\"], [15, 0, 15, 0, \"\\r\"], [16, 15, 16, 15, \"\\r\"], [17, 0, 17, 0, \"\\r\"], [18, 8, 18, 8, \"\\r\"], [19, 10, 19, 10, \"\\r\"], [20, 9, 20, 9, \"\\r\"], [21, 7, 21, 7, \"\\r\"], [22, 0, 22, 0, \"\\r\"], [23, 46, 23, 46, \"\\r\"], [24, 1, 24, 1, \"\\r\"], [25, 0, 25, 0, \"\\r\"], [26, 25, 26, 25, \"\\r\"], [27, 34, 27, 34, \"\\r\"], [28, 1, 28, 1, \"\\r\"], [29, 0, 29, 0, \"\\r\"], [30, 92, 30, 92, \"\\r\"], [31, 6, 31, 6, \"\\r\"], [32, 22, 32, 22, \"\\r\"], [33, 18, 33, 18, \"\\r\"], [34, 44, 34, 44, \"\\r\"], [35, 2, 35, 2, \"\\r\"], [36, 0, 36, 0, \"\\r\"], [37, 39, 37, 39, \"\\r\"], [38, 16, 38, 16, \"\\r\"], [39, 59, 39, 59, \"\\r\"], [40, 16, 40, 16, \"\\r\"], [41, 28, 41, 28, \"\\r\"], [42, 18, 42, 18, \"\\r\"], [43, 4, 43, 4, \"\\r\"], [44, 4, 44, 4, \"\\r\"], [45, 2, 45, 2, \"\\r\"], [46, 10, 46, 10, \"\\r\"], [47, 28, 47, 28, \"\\r\"], [48, 1, 48, 1, \"\\r\"], [49, 0, 49, 0, \"\\r\"], [50, 58, 50, 58, \"\\r\"], [51, 6, 51, 6, \"\\r\"], [52, 22, 52, 22, \"\\r\"], [53, 18, 53, 18, \"\\r\"], [54, 44, 54, 44, \"\\r\"], [55, 2, 55, 2, \"\\r\"], [56, 0, 56, 0, \"\\r\"], [57, 39, 57, 39, \"\\r\"], [58, 16, 58, 16, \"\\r\"], [59, 49, 59, 49, \"\\r\"], [60, 16, 60, 16, \"\\r\"], [61, 28, 61, 28, \"\\r\"], [62, 18, 62, 18, \"\\r\"], [63, 4, 63, 4, \"\\r\"], [64, 4, 64, 4, \"\\r\"], [65, 2, 65, 2, \"\\r\"], [66, 10, 66, 10, \"\\r\"], [67, 28, 67, 28, \"\\r\"], [68, 1, 68, 1, \"\\r\"]], \"kind\": \"T4\", \"path\": \"internal/tracing/mux.go\", \"shift\": {\"col\": 0, \"eof\": [], \"line\": -1, \"n\": 0, \"path\": \"internal/tracing/mux.go\", \"w\": 0}}}, \"note\": \"T4 internal/tracing/mux.go: 69 edit(s), first [0, 2, 0, 2]; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 49s\", \"shape\": \"foldingRange:changed\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "gopls|r5_transforms|foldingRange:changed",
+  "run_id": "11bbeaaa308c"
+ },
+ "replay_logs": [
+  "logs/gopls-v0.23.0-11bbeaaa308c-r5-replay-baseline-20261119-040525-3d786e.jsonl.gz",
+  "logs/gopls-v0.23.0-11bbeaaa308c-r5-replay-case-20261119-040537-93c941.jsonl.gz",
+  "logs/gopls-v0.23.0-11bbeaaa308c-r5-replay-control-20261119-040531-ba41dd.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

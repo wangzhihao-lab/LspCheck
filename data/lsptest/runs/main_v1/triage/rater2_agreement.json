@@ -1,0 +1,317 @@
+{
+ "campaign": "main_v1",
+ "generated": "2026-11-18T04:58:56",
+ "inputs": {
+  "author": "data/lsptest/runs/main_v1/triage/decisions.csv",
+  "rater2": "data/lsptest/runs/main_v1/triage/rater2_decisions.csv",
+  "author_sha256": "540ba45913ff45fe351b5e95b6e7003fa4d331dac150c1e6fbe08c529334f451",
+  "rater2_sha256": "f827f7f233364740f850c60763f394be7c61399c1f0055e7ab163066b1d96e22"
+ },
+ "groups": {
+  "universe": 106,
+  "author_judged": 106,
+  "rater2_judged": 106,
+  "both": 106,
+  "missing_from_rater2": [],
+  "missing_from_author": [],
+  "rater2_unknown_groups": [],
+  "rater2_rows_without_verdict": []
+ },
+ "three_class": {
+  "categories": [
+   "bug",
+   "legitimate",
+   "tool-artifact"
+  ],
+  "n": 106,
+  "agree": 83,
+  "percent_agreement": 78.3,
+  "observed_agreement": 0.7830188679245284,
+  "expected_agreement": 0.3559095763616945,
+  "kappa": 0.66312007738013,
+  "se_asymptotic": 0.06052483088930061,
+  "ci95_asymptotic": [
+   0.5444935886667235,
+   0.7817465660935365
+  ],
+  "bootstrap": {
+   "ci95": [
+    0.5387541158699761,
+    0.7789521976339738
+   ],
+   "resamples": 10000,
+   "defined": 10000,
+   "seed": 20261117
+  },
+  "confusion": {
+   "rows": "author",
+   "columns": "rater 2",
+   "matrix": [
+    [
+     25,
+     0,
+     4
+    ],
+    [
+     9,
+     41,
+     4
+    ],
+    [
+     4,
+     2,
+     17
+    ]
+   ]
+  },
+  "marginals": {
+   "author": {
+    "bug": 29,
+    "legitimate": 54,
+    "tool-artifact": 23
+   },
+   "rater2": {
+    "bug": 38,
+    "legitimate": 43,
+    "tool-artifact": 25
+   }
+  }
+ },
+ "bug_or_not": {
+  "categories": [
+   "bug",
+   "not bug"
+  ],
+  "n": 106,
+  "agree": 89,
+  "percent_agreement": 83.96,
+  "observed_agreement": 0.8396226415094339,
+  "expected_agreement": 0.5640797436810252,
+  "kappa": 0.6320947325438954,
+  "se_asymptotic": 0.07957432906540327,
+  "ci95_asymptotic": [
+   0.47613191348176614,
+   0.7880575516060246
+  ],
+  "bootstrap": {
+   "ci95": [
+    0.46680080482897374,
+    0.7776845637583893
+   ],
+   "resamples": 10000,
+   "defined": 10000,
+   "seed": 20261117
+  },
+  "confusion": {
+   "rows": "author",
+   "columns": "rater 2",
+   "matrix": [
+    [
+     25,
+     4
+    ],
+    [
+     13,
+     64
+    ]
+   ]
+  },
+  "marginals": {
+   "author": {
+    "bug": 29,
+    "not bug": 77
+   },
+   "rater2": {
+    "bug": 38,
+    "not bug": 68
+   }
+  }
+ },
+ "by_relation": {
+  "R0": {
+   "n": 2,
+   "agree": 0,
+   "percent_agreement": 0.0,
+   "kappa": 0.0,
+   "kappa_bug": 0.0
+  },
+  "R1": {
+   "n": 29,
+   "agree": 26,
+   "percent_agreement": 89.7,
+   "kappa": 0.8009153318077804,
+   "kappa_bug": 0.929782082324455
+  },
+  "R2": {
+   "n": 2,
+   "agree": 2,
+   "percent_agreement": 100.0,
+   "kappa": null,
+   "kappa_bug": null
+  },
+  "R3": {
+   "n": 24,
+   "agree": 18,
+   "percent_agreement": 75.0,
+   "kappa": 0.30769230769230776,
+   "kappa_bug": 0.30769230769230776
+  },
+  "R4": {
+   "n": 27,
+   "agree": 21,
+   "percent_agreement": 77.8,
+   "kappa": 0.5263157894736842,
+   "kappa_bug": 0.47058823529411753
+  },
+  "R5": {
+   "n": 9,
+   "agree": 5,
+   "percent_agreement": 55.6,
+   "kappa": 0.25000000000000017,
+   "kappa_bug": null
+  },
+  "R6": {
+   "n": 13,
+   "agree": 11,
+   "percent_agreement": 84.6,
+   "kappa": 0.0,
+   "kappa_bug": 0.0
+  }
+ },
+ "class_agreement": {
+  "n": 58,
+  "agree": 49,
+  "note": "groups both raters judged legitimate (or both tool-artifact) and both gave a class",
+  "percent_agreement": 84.5
+ },
+ "rater2_unsure": {
+  "n": 5,
+  "groups": [
+   "gopls-r1-codeaction-changed-h4-c5344e",
+   "pyright-r5-definition-lost-t1-ae8275",
+   "rust-analyzer-r4-diagnostics-extra-inactive-code-quickfix-f2d641",
+   "ts6-r1-codeaction-key-lost-h5-4f92e2",
+   "ts6-r4-diagnostics-extra-2448-7022-mutation-m1-e5d199"
+  ],
+  "agree": 3
+ },
+ "unsure_as_legitimate": {
+  "note": "rater-2 verdicts of the groups the rater's note marks as unsure recoded to legitimate, the default the author's judging page gave for groups that stay unclear",
+  "three_class": {
+   "categories": [
+    "bug",
+    "legitimate",
+    "tool-artifact"
+   ],
+   "n": 106,
+   "agree": 81,
+   "percent_agreement": 76.42,
+   "observed_agreement": 0.7641509433962265,
+   "expected_agreement": 0.36810252758988965,
+   "kappa": 0.6267605633802819,
+   "se_asymptotic": 0.06399019223482087,
+   "ci95_asymptotic": [
+    0.5013420912362383,
+    0.7521790355243254
+   ],
+   "bootstrap": {
+    "ci95": [
+     0.4969721820661697,
+     0.7488151658767773
+    ],
+    "resamples": 10000,
+    "defined": 10000,
+    "seed": 20261117
+   },
+   "confusion": {
+    "rows": "author",
+    "columns": "rater 2",
+    "matrix": [
+     [
+      24,
+      1,
+      4
+     ],
+     [
+      8,
+      42,
+      4
+     ],
+     [
+      3,
+      5,
+      15
+     ]
+    ]
+   },
+   "marginals": {
+    "author": {
+     "bug": 29,
+     "legitimate": 54,
+     "tool-artifact": 23
+    },
+    "rater2": {
+     "bug": 35,
+     "legitimate": 48,
+     "tool-artifact": 23
+    }
+   }
+  },
+  "bug_or_not": {
+   "categories": [
+    "bug",
+    "not bug"
+   ],
+   "n": 106,
+   "agree": 90,
+   "percent_agreement": 84.91,
+   "observed_agreement": 0.8490566037735849,
+   "expected_agreement": 0.5768956924172303,
+   "kappa": 0.643247791333614,
+   "se_asymptotic": 0.08061729869388005,
+   "ci95_asymptotic": [
+    0.4852407893627011,
+    0.8012547933045269
+   ],
+   "bootstrap": {
+    "ci95": [
+     0.47697368421052644,
+     0.7927258506061792
+    ],
+    "resamples": 10000,
+    "defined": 10000,
+    "seed": 20261117
+   },
+   "confusion": {
+    "rows": "author",
+    "columns": "rater 2",
+    "matrix": [
+     [
+      24,
+      5
+     ],
+     [
+      11,
+      66
+     ]
+    ]
+   },
+   "marginals": {
+    "author": {
+     "bug": 29,
+     "not bug": 77
+    },
+    "rater2": {
+     "bug": 35,
+     "not bug": 71
+    }
+   }
+  }
+ },
+ "method": {
+  "kappa": "Cohen's kappa on the groups both raters judged",
+  "ci95_asymptotic": "kappa +- 1.96 SE, SE from the large-sample variance of Fleiss, Cohen and Everitt (1969); clipped to [-1, 1]",
+  "bootstrap": "percentile interval, groups resampled with replacement, 10000 resamples, seed 20261117; resamples with undefined kappa skipped",
+  "by_relation": "relation from triage.json; kappa is null where it is undefined (one category only)"
+ }
+}

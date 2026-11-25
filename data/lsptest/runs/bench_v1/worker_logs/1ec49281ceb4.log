@@ -1,0 +1,6 @@
+2026-09-24 22:40:50,220 INFO campaign_run run 1ec49281ceb4: r4_edits on rust-analyzer 2024-02-19, rust-analyzer-16556 seed 1 settled, targets ['src/main.rs']
+2026-09-24 22:42:13,378 INFO campaign_run run 1ec49281ceb4: 1 candidate(s) in 83s; confirming
+2026-09-24 22:43:06,843 INFO flake replay 1/3 of rust-analyzer|r4_edits|diagnostics:extra:syntax-error: settled=True control_stable=True reproduced=True (53.5s)
+2026-09-24 22:43:56,900 INFO flake replay 2/3 of rust-analyzer|r4_edits|diagnostics:extra:syntax-error: settled=True control_stable=True reproduced=True (50.1s)
+2026-09-24 22:44:44,161 INFO flake replay 3/3 of rust-analyzer|r4_edits|diagnostics:extra:syntax-error: settled=True control_stable=True reproduced=True (47.3s)
+2026-09-24 22:44:44,168 INFO campaign_run run 1ec49281ceb4 finished: ok, 1 confirmed of 1 candidate(s), 234s

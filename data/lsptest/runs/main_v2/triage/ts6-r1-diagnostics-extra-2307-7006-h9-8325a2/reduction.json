@@ -1,0 +1,152 @@
+{
+ "vid": "d943bb79c7d7-v02",
+ "ops_before": 12,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 27,
+ "cache_hits": 19,
+ "reduce_seconds": 1179.393,
+ "budget_exhausted": false,
+ "probe_log": [
+  [
+   7,
+   false
+  ],
+  [
+   8,
+   false
+  ],
+  [
+   5,
+   false
+  ],
+  [
+   5,
+   false
+  ],
+  [
+   5,
+   false
+  ],
+  [
+   6,
+   false
+  ],
+  [
+   10,
+   false
+  ],
+  [
+   10,
+   true
+  ],
+  [
+   8,
+   true
+  ],
+  [
+   4,
+   false
+  ],
+  [
+   4,
+   false
+  ],
+  [
+   4,
+   false
+  ],
+  [
+   5,
+   false
+  ],
+  [
+   7,
+   false
+  ],
+  [
+   7,
+   true
+  ],
+  [
+   6,
+   true
+  ],
+  [
+   4,
+   false
+  ],
+  [
+   4,
+   false
+  ],
+  [
+   5,
+   true
+  ],
+  [
+   4,
+   true
+  ],
+  [
+   3,
+   true
+  ],
+  [
+   2,
+   false
+  ],
+  [
+   1,
+   false
+  ],
+  [
+   1,
+   false
+  ],
+  [
+   1,
+   false
+  ],
+  [
+   2,
+   false
+  ],
+  [
+   2,
+   false
+  ]
+ ],
+ "logs": [
+  "ts6-6.0.3-tr8325a2-replay-baseline-20261118-232347-6ead07.jsonl.gz",
+  "ts6-6.0.3-tr8325a2-replay-control-20261118-232347-113f5c.jsonl.gz",
+  "ts6-6.0.3-tr8325a2-replay-history-20261118-232401-f01434.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [],
+  "actual": [
+   [
+    11,
+    28,
+    11,
+    53,
+    1,
+    "2307",
+    "typescript",
+    "Cannot find module './hooks/useUserSettings' or its corresponding type declarations."
+   ],
+   [
+    59,
+    71,
+    59,
+    72,
+    1,
+    "7006",
+    "typescript",
+    "Parameter 'v' implicitly has an 'any' type."
+   ]
+  ]
+ },
+ "ops_after": 3,
+ "total_seconds": 1377.2
+}

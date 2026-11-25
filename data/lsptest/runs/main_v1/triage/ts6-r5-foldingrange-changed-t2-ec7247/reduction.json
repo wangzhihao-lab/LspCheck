@@ -1,0 +1,108 @@
+{
+ "vid": "33692fdfd349-v00",
+ "ops_before": 2,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 0,
+ "cache_hits": 0,
+ "reduce_seconds": 0.0,
+ "budget_exhausted": false,
+ "probe_log": [],
+ "logs": [
+  "ts6-6.0.3-trec7247-r5-replay-baseline-20260925-191958-76be86.jsonl.gz",
+  "ts6-6.0.3-trec7247-r5-replay-case-20260925-192005-a4d307.jsonl.gz",
+  "ts6-6.0.3-trec7247-r5-replay-control-20260925-192002-99527a.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [
+   [
+    3,
+    -1,
+    7,
+    -1,
+    "comment"
+   ],
+   [
+    44,
+    -1,
+    47,
+    -1,
+    "comment"
+   ],
+   [
+    51,
+    -1,
+    65,
+    -1,
+    ""
+   ],
+   [
+    53,
+    -1,
+    63,
+    -1,
+    ""
+   ],
+   [
+    55,
+    -1,
+    59,
+    -1,
+    ""
+   ],
+   [
+    9,
+    -1,
+    41,
+    -1,
+    ""
+   ]
+  ],
+  "actual": [
+   [
+    1,
+    -1,
+    7,
+    -1,
+    "comment"
+   ],
+   [
+    44,
+    -1,
+    47,
+    -1,
+    "comment"
+   ],
+   [
+    51,
+    -1,
+    65,
+    -1,
+    ""
+   ],
+   [
+    53,
+    -1,
+    63,
+    -1,
+    ""
+   ],
+   [
+    55,
+    -1,
+    59,
+    -1,
+    ""
+   ],
+   [
+    9,
+    -1,
+    41,
+    -1,
+    ""
+   ]
+  ]
+ },
+ "ops_after": 2,
+ "total_seconds": 42.6
+}

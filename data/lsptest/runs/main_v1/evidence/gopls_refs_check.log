@@ -1,0 +1,18 @@
+== C9 gopls-r1-references-extra-h9-0290a7 (charmbracelet/bubbletea@657aaae216e3)
+queried token: tea.Model at examples/http/main.go:38:43
+declarations of type Model in non-test files of package tea: ['tea.go:53']
+fresh session 80 locations, history session 87; extra in history:
+  cursed_renderer_test.go:20:43  token='Model' qualified=False package=tea in go list TestGoFiles=True shadowing=[] | func (m *mouseRaceModel) Update(msg Msg) (Model, Cmd) {
+  exec_test.go:32:42  token='Model' qualified=False package=tea in go list TestGoFiles=True shadowing=[] | func (m *testExecModel) Update(msg Msg) (Model, Cmd) {
+  options_test.go:39:42  token='Model' qualified=False package=tea in go list TestGoFiles=True shadowing=[] | p := NewProgram(nil, WithFilter(func(_ Model, msg Msg) Msg { return msg }))
+  screen_test.go:37:42  token='Model' qualified=False package=tea in go list TestGoFiles=True shadowing=[] | func (m *testViewModel) Update(msg Msg) (Model, Cmd) {
+  tea_test.go:37:38  token='Model' qualified=False package=tea in go list TestGoFiles=True shadowing=[] | func (m *testModel) Update(msg Msg) (Model, Cmd) {
+  tea_test.go:244:20  token='Model' qualified=False package=tea in go list TestGoFiles=True shadowing=[] | p.filter = func(_ Model, msg Msg) Msg {
+  tea_test.go:623:38  token='Model' qualified=False package=tea in go list TestGoFiles=True shadowing=[] | func (m benchModel) Update(msg Msg) (Model, Cmd) {
+$ go list -test -f {{.ImportPath}} {{.TestGoFiles}} . -> exit 0
+   charm.land/bubbletea/v2 [commands_test.go cursed_renderer_test.go exec_test.go logging_test.go options_test.go screen_test.go tea_test.go]
+charm.land/bubbletea/v2.test []
+charm.land/bubbletea/v2 [charm.land/bubbletea/v2.test] [commands_test.go cursed_renderer_test.go exec_test.go logging_test.go options_test.go screen_test.go tea_test.go]
+$ go vet . -> exit 0
+   (no output)
+go version go1.27.1 darwin/arm64; all extra locations are references of tea.Model: True

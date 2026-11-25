@@ -1,0 +1,4 @@
+2026-09-25 12:07:44,558 INFO campaign_run run 8a46e33c2ade: r1_history on gopls v0.4.4, gopls-38424 seed 3 settled, targets ['main2.go']
+2026-09-25 12:14:38,041 WARNING oracles.r1_history session h09-H6 failed: LspError: server stdin closed: [Errno 32] Broken pipe
+2026-09-25 12:15:46,665 INFO campaign_run run 8a46e33c2ade: 0 candidate(s) in 482s; confirming
+2026-09-25 12:15:46,666 INFO campaign_run run 8a46e33c2ade finished: ok, 0 confirmed of 0 candidate(s), 482s

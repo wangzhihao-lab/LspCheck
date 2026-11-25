@@ -1,0 +1,3 @@
+2026-11-18 19:01:30,300 INFO campaign_run run a5971c9ac9e4: r1_history on pyright 1.1.414, NanmiCoder/MediaCrawler@380b426000aa seed 3 settled, targets ['config/db_config.py', 'media_platform/tieba/field.py', 'proxy/providers/kuaidl_proxy.py']
+2026-11-18 19:07:41,632 INFO campaign_run run a5971c9ac9e4: 0 candidate(s) in 371s; confirming
+2026-11-18 19:07:41,633 INFO campaign_run run a5971c9ac9e4 finished: ok, 0 confirmed of 0 candidate(s), 371s

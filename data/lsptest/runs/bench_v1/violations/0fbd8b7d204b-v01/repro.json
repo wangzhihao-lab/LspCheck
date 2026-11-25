@@ -1,0 +1,409 @@
+{
+ "format": 1,
+ "campaign": "bench_v1",
+ "vid": "0fbd8b7d204b-v01",
+ "run_id": "0fbd8b7d204b",
+ "oracle": "r1_history",
+ "server": {
+  "kind": "pyright",
+  "version": "1.1.300"
+ },
+ "project": {
+  "name": "pyright-4844",
+  "source": "dir",
+  "ref": "data/lsp_bench/cases/pyright-4844/project",
+  "commit": "",
+  "language": "python"
+ },
+ "context": {
+  "seed": 3,
+  "timing": "settled",
+  "settle_timeout_s": 120.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": {
+   "python": {
+    "analysis": {
+     "typeCheckingMode": "strict",
+     "diagnosticSeverityOverrides": {
+      "reportAssertAlwaysTrue": "error",
+      "reportConstantRedefinition": "error",
+      "reportDuplicateImport": "warning",
+      "reportFunctionMemberAccess": "error",
+      "reportGeneralTypeIssues": "information",
+      "reportImplicitStringConcatenation": "warning",
+      "reportImportCycles": "none",
+      "reportIncompatibleMethodOverride": "error",
+      "reportIncompatibleVariableOverride": "error",
+      "reportInconsistentConstructor": "warning",
+      "reportInvalidStubStatement": "none",
+      "reportMissingModuleSource": "none",
+      "reportMissingTypeArgument": "none",
+      "reportMissingTypeStubs": "none",
+      "reportOverlappingOverload": "none",
+      "reportPrivateImportUsage": "none",
+      "reportPrivateUsage": "none",
+      "reportPropertyTypeMismatch": "none",
+      "reportUnknownArgumentType": "none",
+      "reportUnknownLambdaType": "none",
+      "reportUnknownMemberType": "none",
+      "reportUnknownParameterType": "none",
+      "reportUnknownVariableType": "none",
+      "reportUnnecessaryCast": "none",
+      "reportUnnecessaryComparison": "none",
+      "reportUnnecessaryIsInstance": "none",
+      "reportUnsupportedDunderAll": "warning",
+      "reportUntypedClassDecorator": "none",
+      "reportUntypedFunctionDecorator": "none",
+      "reportUnusedCallResult": "error",
+      "reportUnusedClass": "error",
+      "reportUnusedFunction": "error",
+      "reportUnusedImport": "warning",
+      "reportUnusedVariable": "error"
+     }
+    }
+   }
+  },
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "main.py",
+    "positions": [
+     [
+      0,
+      10
+     ],
+     [
+      0,
+      28
+     ],
+     [
+      2,
+      8
+     ],
+     [
+      2,
+      23
+     ],
+     [
+      3,
+      13
+     ],
+     [
+      3,
+      32
+     ],
+     [
+      5,
+      10
+     ],
+     [
+      5,
+      20
+     ],
+     [
+      6,
+      11
+     ],
+     [
+      6,
+      18
+     ],
+     [
+      6,
+      27
+     ],
+     [
+      8,
+      4
+     ],
+     [
+      8,
+      6
+     ],
+     [
+      8,
+      13
+     ],
+     [
+      10,
+      0
+     ],
+     [
+      11,
+      0
+     ],
+     [
+      11,
+      3
+     ],
+     [
+      12,
+      0
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      15
+     ],
+     [
+      0,
+      34
+     ],
+     [
+      2,
+      11
+     ],
+     [
+      2,
+      27
+     ],
+     [
+      3,
+      22
+     ],
+     [
+      3,
+      34
+     ],
+     [
+      5,
+      15
+     ],
+     [
+      5,
+      24
+     ],
+     [
+      6,
+      15
+     ],
+     [
+      6,
+      20
+     ],
+     [
+      6,
+      29
+     ],
+     [
+      8,
+      5
+     ],
+     [
+      8,
+      7
+     ],
+     [
+      8,
+      18
+     ],
+     [
+      10,
+      1
+     ],
+     [
+      11,
+      1
+     ],
+     [
+      11,
+      5
+     ],
+     [
+      12,
+      1
+     ]
+    ],
+    "names": [
+     "__future__",
+     "annotations",
+     "typing",
+     "Protocol",
+     "typing_extensions",
+     "Self",
+     "Negatable",
+     "Protocol",
+     "__neg__",
+     "self",
+     "Self",
+     "f",
+     "x",
+     "Negatable",
+     "f",
+     "f",
+     "int",
+     "f"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "diagnostics",
+  "path": "main.py",
+  "line": -1,
+  "character": -1,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "main.py"
+  },
+  {
+   "kind": "change",
+   "path": "main.py",
+   "start": [
+    3,
+    30
+   ],
+   "end": [
+    3,
+    34
+   ],
+   "text": "Self_x"
+  },
+  {
+   "kind": "close",
+   "path": "main.py"
+  },
+  {
+   "kind": "open",
+   "path": "main.py"
+  }
+ ],
+ "case": {
+  "chain_step": 0,
+  "families": [],
+  "family": "H3",
+  "history_index": 6,
+  "history_seed": 3009,
+  "mode": "fresh",
+  "note": "main.py: unsaved edit (replace 'Self' by 'Self_x' on line 3), close, reopen",
+  "seed": 3,
+  "timing": "settled"
+ },
+ "shape": "diagnostics:missing:reportGeneralTypeIssues",
+ "signature": "pyright|r1_history|diagnostics:missing:reportGeneralTypeIssues",
+ "expected": [
+  [
+   8,
+   6,
+   8,
+   7,
+   4,
+   "",
+   "Pyright",
+   "\"x\" is not accessed"
+  ],
+  [
+   10,
+   2,
+   10,
+   3,
+   3,
+   "reportGeneralTypeIssues",
+   "Pyright",
+   "Argument of type \"Literal[0]\" cannot be assigned to parameter \"x\" of type \"Negatable\" in function \"f\" \"Literal[0]\" is incompatible with protocol \"Negatable\" \"__neg__\" is an incompatible type Type \"() -> int\" cannot be assigned to type \"() -> Literal[0]\" Function return type \"int\" is incompatible with type \"Literal[0]\" \"int\" cannot be assigned to type \"Literal[0]\""
+  ]
+ ],
+ "actual": [
+  [
+   8,
+   6,
+   8,
+   7,
+   4,
+   "",
+   "Pyright",
+   "\"x\" is not accessed"
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "H3: main.py: unsaved edit (replace 'Self' by 'Self_x' on line 3), close, reopen; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 42s",
+ "violation": {
+  "oracle": "r1_history",
+  "server": "pyright-1.1.300",
+  "project": "pyright-4844",
+  "key": {
+   "method": "diagnostics",
+   "path": "main.py",
+   "line": -1,
+   "character": -1,
+   "extra": ""
+  },
+  "expected": [
+   [
+    8,
+    6,
+    8,
+    7,
+    4,
+    "",
+    "Pyright",
+    "\"x\" is not accessed"
+   ],
+   [
+    10,
+    2,
+    10,
+    3,
+    3,
+    "reportGeneralTypeIssues",
+    "Pyright",
+    "Argument of type \"Literal[0]\" cannot be assigned to parameter \"x\" of type \"Negatable\" in function \"f\" \"Literal[0]\" is incompatible with protocol \"Negatable\" \"__neg__\" is an incompatible type Type \"() -> int\" cannot be assigned to type \"() -> Literal[0]\" Function return type \"int\" is incompatible with type \"Literal[0]\" \"int\" cannot be assigned to type \"Literal[0]\""
+   ]
+  ],
+  "actual": [
+   [
+    8,
+    6,
+    8,
+    7,
+    4,
+    "",
+    "Pyright",
+    "\"x\" is not accessed"
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "main.py"
+   },
+   {
+    "kind": "change",
+    "path": "main.py",
+    "start": [
+     3,
+     30
+    ],
+    "end": [
+     3,
+     34
+    ],
+    "text": "Self_x"
+   },
+   {
+    "kind": "close",
+    "path": "main.py"
+   },
+   {
+    "kind": "open",
+    "path": "main.py"
+   }
+  ],
+  "detail": "{\"case\": {\"chain_step\": 0, \"families\": [], \"family\": \"H3\", \"history_index\": 6, \"history_seed\": 3009, \"mode\": \"fresh\", \"note\": \"main.py: unsaved edit (replace 'Self' by 'Self_x' on line 3), close, reopen\", \"seed\": 3, \"timing\": \"settled\"}, \"note\": \"H3: main.py: unsaved edit (replace 'Self' by 'Self_x' on line 3), close, reopen; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 42s\", \"shape\": \"diagnostics:missing:reportGeneralTypeIssues\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "pyright|r1_history|diagnostics:missing:reportGeneralTypeIssues",
+  "run_id": "0fbd8b7d204b"
+ },
+ "replay_logs": [
+  "logs/pyright-1.1.300-0fbd8b7d204b-replay-baseline-20260925-140810-bcb9af.jsonl.gz",
+  "logs/pyright-1.1.300-0fbd8b7d204b-replay-control-20260925-140810-b1cc77.jsonl.gz",
+  "logs/pyright-1.1.300-0fbd8b7d204b-replay-history-20260925-140813-a94530.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

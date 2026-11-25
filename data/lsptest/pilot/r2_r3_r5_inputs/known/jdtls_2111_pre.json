@@ -1,0 +1,4073 @@
+{
+ "oracle": "r2_handles",
+ "server": "jdtls",
+ "version": "1.12.0",
+ "project": "case:jdtls_2111",
+ "language": "java",
+ "seed": 1,
+ "targets": [
+  {
+   "path": "src/app/Person.java",
+   "positions": [
+    [
+     0,
+     9
+    ],
+    [
+     2,
+     16
+    ],
+    [
+     3,
+     15
+    ],
+    [
+     3,
+     21
+    ],
+    [
+     4,
+     17
+    ]
+   ],
+   "ends": [
+    [
+     0,
+     11
+    ],
+    [
+     2,
+     19
+    ],
+    [
+     3,
+     18
+    ],
+    [
+     3,
+     23
+    ],
+    [
+     4,
+     19
+    ]
+   ],
+   "names": [
+    "app",
+    "Person",
+    "String",
+    "name",
+    "age"
+   ]
+  }
+ ],
+ "max_cases": 20,
+ "timing": "settled",
+ "result": {
+  "oracle": "r2_handles",
+  "run_id": "r2_handles-jdtls-083746",
+  "cases": 12,
+  "invalid_cases": 0,
+  "sessions": 1,
+  "unsettled": 0,
+  "compared": {
+   "codeActionResolve": 15,
+   "completionResolve": 9
+  },
+  "unstable": {},
+  "seconds": 93.011,
+  "notes": [
+   "handle kinds: {'codeAction': True, 'completion': True, 'delta': False}",
+   "allowed codeActionResolve no edit: 4"
+  ],
+  "candidates": [
+   {
+    "oracle": "r2_handles",
+    "server": "jdtls-1.12.0",
+    "project": "case:jdtls_2111",
+    "key": {
+     "method": "codeActionResolve",
+     "path": "src/app/Person.java",
+     "line": 4,
+     "character": 16,
+     "extra": "diag:4:19|above2|Generate Getter and Setter for 'age'|quickassist|0"
+    },
+    "expected": [
+     [
+      "src/app/Person.java",
+      6,
+      20,
+      6,
+      20,
+      "\n\n\n\tpublic int getAge() {\n\t\treturn age;\n\t}\n\n\n\tpublic void setAge(int age) {\n\t\tthis.age = age;\n\t}"
+     ]
+    ],
+    "actual": [
+     [
+      "src/app/Person.java",
+      6,
+      18,
+      6,
+      18,
+      "\npublic int getAge() {\n    return age;\n}\npublic void setAge(int age) {\n    this.age = age;\n}"
+     ]
+    ],
+    "ops": [
+     {
+      "kind": "open",
+      "path": "src/app/Person.java"
+     },
+     {
+      "kind": "change",
+      "path": "src/app/Person.java",
+      "start": [
+       4,
+       0
+      ],
+      "end": [
+       4,
+       0
+      ],
+      "text": "\n\n"
+     }
+    ],
+    "detail": "{\"case\": {\"extra\": \"diag\", \"path\": \"src/app/Person.java\", \"shift\": {\"col\": 0, \"line\": 4, \"text\": \"\\n\\n\", \"variant\": \"above\"}, \"sub\": \"codeAction\", \"where\": [4, 16, 4, 19]}, \"note\": \"\", \"shape\": \"codeActionResolve:changed\"}",
+    "reproduced": "0/0",
+    "reduced_ops": [],
+    "signature": "jdtls|r2_handles|codeActionResolve:changed",
+    "run_id": "r2_handles-jdtls-083746"
+   },
+   {
+    "oracle": "r2_handles",
+    "server": "jdtls-1.12.0",
+    "project": "case:jdtls_2111",
+    "key": {
+     "method": "codeActionResolve",
+     "path": "src/app/Person.java",
+     "line": 4,
+     "character": 16,
+     "extra": "diag:4:19|above2|Generate Getter for 'age'|quickassist|0"
+    },
+    "expected": [
+     [
+      "src/app/Person.java",
+      6,
+      20,
+      6,
+      20,
+      "\n\n\n\tpublic int getAge() {\n\t\treturn age;\n\t}"
+     ]
+    ],
+    "actual": [
+     [
+      "src/app/Person.java",
+      6,
+      18,
+      6,
+      18,
+      "\npublic int getAge() {\n    return age;\n}"
+     ]
+    ],
+    "ops": [
+     {
+      "kind": "open",
+      "path": "src/app/Person.java"
+     },
+     {
+      "kind": "change",
+      "path": "src/app/Person.java",
+      "start": [
+       4,
+       0
+      ],
+      "end": [
+       4,
+       0
+      ],
+      "text": "\n\n"
+     }
+    ],
+    "detail": "{\"case\": {\"extra\": \"diag\", \"path\": \"src/app/Person.java\", \"shift\": {\"col\": 0, \"line\": 4, \"text\": \"\\n\\n\", \"variant\": \"above\"}, \"sub\": \"codeAction\", \"where\": [4, 16, 4, 19]}, \"note\": \"\", \"shape\": \"codeActionResolve:changed\"}",
+    "reproduced": "0/0",
+    "reduced_ops": [],
+    "signature": "jdtls|r2_handles|codeActionResolve:changed",
+    "run_id": "r2_handles-jdtls-083746"
+   },
+   {
+    "oracle": "r2_handles",
+    "server": "jdtls-1.12.0",
+    "project": "case:jdtls_2111",
+    "key": {
+     "method": "codeActionResolve",
+     "path": "src/app/Person.java",
+     "line": 4,
+     "character": 16,
+     "extra": "diag:4:19|above2|Generate Setter for 'age'|quickassist|0"
+    },
+    "expected": [
+     [
+      "src/app/Person.java",
+      6,
+      20,
+      6,
+      20,
+      "\n\n\n\tpublic void setAge(int age) {\n\t\tthis.age = age;\n\t}"
+     ]
+    ],
+    "actual": [
+     [
+      "src/app/Person.java",
+      6,
+      18,
+      6,
+      18,
+      "\npublic void setAge(int age) {\n    this.age = age;\n}"
+     ]
+    ],
+    "ops": [
+     {
+      "kind": "open",
+      "path": "src/app/Person.java"
+     },
+     {
+      "kind": "change",
+      "path": "src/app/Person.java",
+      "start": [
+       4,
+       0
+      ],
+      "end": [
+       4,
+       0
+      ],
+      "text": "\n\n"
+     }
+    ],
+    "detail": "{\"case\": {\"extra\": \"diag\", \"path\": \"src/app/Person.java\", \"shift\": {\"col\": 0, \"line\": 4, \"text\": \"\\n\\n\", \"variant\": \"above\"}, \"sub\": \"codeAction\", \"where\": [4, 16, 4, 19]}, \"note\": \"\", \"shape\": \"codeActionResolve:changed\"}",
+    "reproduced": "0/0",
+    "reduced_ops": [],
+    "signature": "jdtls|r2_handles|codeActionResolve:changed",
+    "run_id": "r2_handles-jdtls-083746"
+   },
+   {
+    "oracle": "r2_handles",
+    "server": "jdtls-1.12.0",
+    "project": "case:jdtls_2111",
+    "key": {
+     "method": "completionResolve",
+     "path": "src/app/Person.java",
+     "line": 3,
+     "character": 18,
+     "extra": "end|above1|StringBufferInputStream - java.io|7|null|999999212|0"
+    },
+    "expected": [
+     [
+      "additionalTextEdits",
+      0,
+      12,
+      2,
+      0,
+      "\n\nimport java.io.StringBufferInputStream;\n\n"
+     ],
+     [
+      "textEdit",
+      4,
+      12,
+      4,
+      18,
+      "StringBufferInputStream"
+     ]
+    ],
+    "actual": [
+     [
+      "additionalTextEdits",
+      0,
+      12,
+      2,
+      0,
+      "\n\nimport java.io.StringBufferInputStream;\n\n"
+     ],
+     [
+      "textEdit",
+      4,
+      11,
+      4,
+      17,
+      "StringBufferInputStream"
+     ]
+    ],
+    "ops": [
+     {
+      "kind": "open",
+      "path": "src/app/Person.java"
+     },
+     {
+      "kind": "change",
+      "path": "src/app/Person.java",
+      "start": [
+       3,
+       0
+      ],
+      "end": [
+       3,
+       0
+      ],
+      "text": "\n"
+     }
+    ],
+    "detail": "{\"case\": {\"extra\": \"end\", \"path\": \"src/app/Person.java\", \"shift\": {\"col\": 0, \"line\": 3, \"text\": \"\\n\", \"variant\": \"above\"}, \"sub\": \"completion\", \"where\": [3, 18]}, \"note\": \"\", \"shape\": \"completionResolve:changed\"}",
+    "reproduced": "0/0",
+    "reduced_ops": [],
+    "signature": "jdtls|r2_handles|completionResolve:changed",
+    "run_id": "r2_handles-jdtls-083746"
+   },
+   {
+    "oracle": "r2_handles",
+    "server": "jdtls-1.12.0",
+    "project": "case:jdtls_2111",
+    "key": {
+     "method": "completionResolve",
+     "path": "src/app/Person.java",
+     "line": 3,
+     "character": 18,
+     "extra": "end|above1|StringCharacterIterator - java.text|7|null|999999212|0"
+    },
+    "expected": [
+     [
+      "additionalTextEdits",
+      0,
+      12,
+      2,
+      0,
+      "\n\nimport java.text.StringCharacterIterator;\n\n"
+     ],
+     [
+      "textEdit",
+      4,
+      12,
+      4,
+      18,
+      "StringCharacterIterator"
+     ]
+    ],
+    "actual": [
+     [
+      "additionalTextEdits",
+      0,
+      12,
+      2,
+      0,
+      "\n\nimport java.text.StringCharacterIterator;\n\n"
+     ],
+     [
+      "textEdit",
+      4,
+      11,
+      4,
+      17,
+      "StringCharacterIterator"
+     ]
+    ],
+    "ops": [
+     {
+      "kind": "open",
+      "path": "src/app/Person.java"
+     },
+     {
+      "kind": "change",
+      "path": "src/app/Person.java",
+      "start": [
+       3,
+       0
+      ],
+      "end": [
+       3,
+       0
+      ],
+      "text": "\n"
+     }
+    ],
+    "detail": "{\"case\": {\"extra\": \"end\", \"path\": \"src/app/Person.java\", \"shift\": {\"col\": 0, \"line\": 3, \"text\": \"\\n\", \"variant\": \"above\"}, \"sub\": \"completion\", \"where\": [3, 18]}, \"note\": \"\", \"shape\": \"completionResolve:changed\"}",
+    "reproduced": "0/0",
+    "reduced_ops": [],
+    "signature": "jdtls|r2_handles|completionResolve:changed",
+    "run_id": "r2_handles-jdtls-083746"
+   },
+   {
+    "oracle": "r2_handles",
+    "server": "jdtls-1.12.0",
+    "project": "case:jdtls_2111",
+    "key": {
+     "method": "completionResolve",
+     "path": "src/app/Person.java",
+     "line": 3,
+     "character": 18,
+     "extra": "end|above1|StringConcatException - java.lang.invoke|7|null|999999212|0"
+    },
+    "expected": [
+     [
+      "additionalTextEdits",
+      0,
+      12,
+      2,
+      0,
+      "\n\nimport java.lang.invoke.StringConcatException;\n\n"
+     ],
+     [
+      "textEdit",
+      4,
+      12,
+      4,
+      18,
+      "StringConcatException"
+     ]
+    ],
+    "actual": [
+     [
+      "additionalTextEdits",
+      0,
+      12,
+      2,
+      0,
+      "\n\nimport java.lang.invoke.StringConcatException;\n\n"
+     ],
+     [
+      "textEdit",
+      4,
+      11,
+      4,
+      17,
+      "StringConcatException"
+     ]
+    ],
+    "ops": [
+     {
+      "kind": "open",
+      "path": "src/app/Person.java"
+     },
+     {
+      "kind": "change",
+      "path": "src/app/Person.java",
+      "start": [
+       3,
+       0
+      ],
+      "end": [
+       3,
+       0
+      ],
+      "text": "\n"
+     }
+    ],
+    "detail": "{\"case\": {\"extra\": \"end\", \"path\": \"src/app/Person.java\", \"shift\": {\"col\": 0, \"line\": 3, \"text\": \"\\n\", \"variant\": \"above\"}, \"sub\": \"completion\", \"where\": [3, 18]}, \"note\": \"\", \"shape\": \"completionResolve:changed\"}",
+    "reproduced": "0/0",
+    "reduced_ops": [],
+    "signature": "jdtls|r2_handles|completionResolve:changed",
+    "run_id": "r2_handles-jdtls-083746"
+   },
+   {
+    "oracle": "r2_handles",
+    "server": "jdtls-1.12.0",
+    "project": "case:jdtls_2111",
+    "key": {
+     "method": "completionResolve",
+     "path": "src/app/Person.java",
+     "line": 3,
+     "character": 18,
+     "extra": "end|above1|StringConcatFactory - java.lang.invoke|7|null|999999212|0"
+    },
+    "expected": [
+     [
+      "additionalTextEdits",
+      0,
+      12,
+      2,
+      0,
+      "\n\nimport java.lang.invoke.StringConcatFactory;\n\n"
+     ],
+     [
+      "textEdit",
+      4,
+      12,
+      4,
+      18,
+      "StringConcatFactory"
+     ]
+    ],
+    "actual": [
+     [
+      "additionalTextEdits",
+      0,
+      12,
+      2,
+      0,
+      "\n\nimport java.lang.invoke.StringConcatFactory;\n\n"
+     ],
+     [
+      "textEdit",
+      4,
+      11,
+      4,
+      17,
+      "StringConcatFactory"
+     ]
+    ],
+    "ops": [
+     {
+      "kind": "open",
+      "path": "src/app/Person.java"
+     },
+     {
+      "kind": "change",
+      "path": "src/app/Person.java",
+      "start": [
+       3,
+       0
+      ],
+      "end": [
+       3,
+       0
+      ],
+      "text": "\n"
+     }
+    ],
+    "detail": "{\"case\": {\"extra\": \"end\", \"path\": \"src/app/Person.java\", \"shift\": {\"col\": 0, \"line\": 3, \"text\": \"\\n\", \"variant\": \"above\"}, \"sub\": \"completion\", \"where\": [3, 18]}, \"note\": \"\", \"shape\": \"completionResolve:changed\"}",
+    "reproduced": "0/0",
+    "reduced_ops": [],
+    "signature": "jdtls|r2_handles|completionResolve:changed",
+    "run_id": "r2_handles-jdtls-083746"
+   },
+   {
+    "oracle": "r2_handles",
+    "server": "jdtls-1.12.0",
+    "project": "case:jdtls_2111",
+    "key": {
+     "method": "completionResolve",
+     "path": "src/app/Person.java",
+     "line": 3,
+     "character": 18,
+     "extra": "end|above1|StringContent - javax.swing.text|7|null|999999212|0"
+    },
+    "expected": [
+     [
+      "additionalTextEdits",
+      0,
+      12,
+      2,
+      0,
+      "\n\nimport javax.swing.text.StringContent;\n\n"
+     ],
+     [
+      "textEdit",
+      4,
+      12,
+      4,
+      18,
+      "StringContent"
+     ]
+    ],
+    "actual": [
+     [
+      "additionalTextEdits",
+      0,
+      12,
+      2,
+      0,
+      "\n\nimport javax.swing.text.StringContent;\n\n"
+     ],
+     [
+      "textEdit",
+      4,
+      11,
+      4,
+      17,
+      "StringContent"
+     ]
+    ],
+    "ops": [
+     {
+      "kind": "open",
+      "path": "src/app/Person.java"
+     },
+     {
+      "kind": "change",
+      "path": "src/app/Person.java",
+      "start": [
+       3,
+       0
+      ],
+      "end": [
+       3,
+       0
+      ],
+      "text": "\n"
+     }
+    ],
+    "detail": "{\"case\": {\"extra\": \"end\", \"path\": \"src/app/Person.java\", \"shift\": {\"col\": 0, \"line\": 3, \"text\": \"\\n\", \"variant\": \"above\"}, \"sub\": \"completion\", \"where\": [3, 18]}, \"note\": \"\", \"shape\": \"completionResolve:changed\"}",
+    "reproduced": "0/0",
+    "reduced_ops": [],
+    "signature": "jdtls|r2_handles|completionResolve:changed",
+    "run_id": "r2_handles-jdtls-083746"
+   },
+   {
+    "oracle": "r2_handles",
+    "server": "jdtls-1.12.0",
+    "project": "case:jdtls_2111",
+    "key": {
+     "method": "completionResolve",
+     "path": "src/app/Person.java",
+     "line": 3,
+     "character": 18,
+     "extra": "end|above1|StringJoiner - java.util|7|null|999999212|0"
+    },
+    "expected": [
+     [
+      "additionalTextEdits",
+      0,
+      12,
+      2,
+      0,
+      "\n\nimport java.util.StringJoiner;\n\n"
+     ],
+     [
+      "textEdit",
+      4,
+      12,
+      4,
+      18,
+      "StringJoiner"
+     ]
+    ],
+    "actual": [
+     [
+      "additionalTextEdits",
+      0,
+      12,
+      2,
+      0,
+      "\n\nimport java.util.StringJoiner;\n\n"
+     ],
+     [
+      "textEdit",
+      4,
+      11,
+      4,
+      17,
+      "StringJoiner"
+     ]
+    ],
+    "ops": [
+     {
+      "kind": "open",
+      "path": "src/app/Person.java"
+     },
+     {
+      "kind": "change",
+      "path": "src/app/Person.java",
+      "start": [
+       3,
+       0
+      ],
+      "end": [
+       3,
+       0
+      ],
+      "text": "\n"
+     }
+    ],
+    "detail": "{\"case\": {\"extra\": \"end\", \"path\": \"src/app/Person.java\", \"shift\": {\"col\": 0, \"line\": 3, \"text\": \"\\n\", \"variant\": \"above\"}, \"sub\": \"completion\", \"where\": [3, 18]}, \"note\": \"\", \"shape\": \"completionResolve:changed\"}",
+    "reproduced": "0/0",
+    "reduced_ops": [],
+    "signature": "jdtls|r2_handles|completionResolve:changed",
+    "run_id": "r2_handles-jdtls-083746"
+   },
+   {
+    "oracle": "r2_handles",
+    "server": "jdtls-1.12.0",
+    "project": "case:jdtls_2111",
+    "key": {
+     "method": "codeActionResolve",
+     "path": "src/app/Person.java",
+     "line": 3,
+     "character": 19,
+     "extra": "diag:3:23|above1|Generate Getter and Setter for 'name'|quickassist|0"
+    },
+    "expected": [
+     [
+      "src/app/Person.java",
+      5,
+      4,
+      5,
+      4,
+      "public String getName() {\n\t\treturn name;\n\t}\n\tpublic void setName(String name) {\n\t\tthis.name = name;\n\t}\n\t"
+     ]
+    ],
+    "actual": [
+     [
+      "src/app/Person.java",
+      5,
+      19,
+      5,
+      19,
+      "\npublic String getName() {\n    return name;\n}\npublic void setName(String name) {\n    this.name = name;\n}"
+     ]
+    ],
+    "ops": [
+     {
+      "kind": "open",
+      "path": "src/app/Person.java"
+     },
+     {
+      "kind": "change",
+      "path": "src/app/Person.java",
+      "start": [
+       3,
+       0
+      ],
+      "end": [
+       3,
+       0
+      ],
+      "text": "\n"
+     }
+    ],
+    "detail": "{\"case\": {\"extra\": \"diag\", \"path\": \"src/app/Person.java\", \"shift\": {\"col\": 0, \"line\": 3, \"text\": \"\\n\", \"variant\": \"above\"}, \"sub\": \"codeAction\", \"where\": [3, 19, 3, 23]}, \"note\": \"\", \"shape\": \"codeActionResolve:changed\"}",
+    "reproduced": "0/0",
+    "reduced_ops": [],
+    "signature": "jdtls|r2_handles|codeActionResolve:changed",
+    "run_id": "r2_handles-jdtls-083746"
+   },
+   {
+    "oracle": "r2_handles",
+    "server": "jdtls-1.12.0",
+    "project": "case:jdtls_2111",
+    "key": {
+     "method": "codeActionResolve",
+     "path": "src/app/Person.java",
+     "line": 3,
+     "character": 19,
+     "extra": "diag:3:23|above1|Generate Getter for 'name'|quickassist|0"
+    },
+    "expected": [
+     [
+      "src/app/Person.java",
+      5,
+      4,
+      5,
+      4,
+      "public String getName() {\n\t\treturn name;\n\t}\n\t"
+     ]
+    ],
+    "actual": [
+     [
+      "src/app/Person.java",
+      5,
+      19,
+      5,
+      19,
+      "\npublic String getName() {\n    return name;\n}"
+     ]
+    ],
+    "ops": [
+     {
+      "kind": "open",
+      "path": "src/app/Person.java"
+     },
+     {
+      "kind": "change",
+      "path": "src/app/Person.java",
+      "start": [
+       3,
+       0
+      ],
+      "end": [
+       3,
+       0
+      ],
+      "text": "\n"
+     }
+    ],
+    "detail": "{\"case\": {\"extra\": \"diag\", \"path\": \"src/app/Person.java\", \"shift\": {\"col\": 0, \"line\": 3, \"text\": \"\\n\", \"variant\": \"above\"}, \"sub\": \"codeAction\", \"where\": [3, 19, 3, 23]}, \"note\": \"\", \"shape\": \"codeActionResolve:changed\"}",
+    "reproduced": "0/0",
+    "reduced_ops": [],
+    "signature": "jdtls|r2_handles|codeActionResolve:changed",
+    "run_id": "r2_handles-jdtls-083746"
+   },
+   {
+    "oracle": "r2_handles",
+    "server": "jdtls-1.12.0",
+    "project": "case:jdtls_2111",
+    "key": {
+     "method": "codeActionResolve",
+     "path": "src/app/Person.java",
+     "line": 3,
+     "character": 19,
+     "extra": "diag:3:23|above1|Generate Setter for 'name'|quickassist|0"
+    },
+    "expected": [
+     [
+      "src/app/Person.java",
+      5,
+      4,
+      5,
+      4,
+      "public void setName(String name) {\n\t\tthis.name = name;\n\t}\n\t"
+     ]
+    ],
+    "actual": [
+     [
+      "src/app/Person.java",
+      5,
+      19,
+      5,
+      19,
+      "\npublic void setName(String name) {\n    this.name = name;\n}"
+     ]
+    ],
+    "ops": [
+     {
+      "kind": "open",
+      "path": "src/app/Person.java"
+     },
+     {
+      "kind": "change",
+      "path": "src/app/Person.java",
+      "start": [
+       3,
+       0
+      ],
+      "end": [
+       3,
+       0
+      ],
+      "text": "\n"
+     }
+    ],
+    "detail": "{\"case\": {\"extra\": \"diag\", \"path\": \"src/app/Person.java\", \"shift\": {\"col\": 0, \"line\": 3, \"text\": \"\\n\", \"variant\": \"above\"}, \"sub\": \"codeAction\", \"where\": [3, 19, 3, 23]}, \"note\": \"\", \"shape\": \"codeActionResolve:changed\"}",
+    "reproduced": "0/0",
+    "reduced_ops": [],
+    "signature": "jdtls|r2_handles|codeActionResolve:changed",
+    "run_id": "r2_handles-jdtls-083746"
+   },
+   {
+    "oracle": "r2_handles",
+    "server": "jdtls-1.12.0",
+    "project": "case:jdtls_2111",
+    "key": {
+     "method": "codeActionResolve",
+     "path": "src/app/Person.java",
+     "line": 4,
+     "character": 17,
+     "extra": "pos:4:17|above2|Generate Getter and Setter for 'age'|quickassist|0"
+    },
+    "expected": [
+     [
+      "src/app/Person.java",
+      6,
+      20,
+      6,
+      20,
+      "\n\n\n\tpublic int getAge() {\n\t\treturn age;\n\t}\n\n\n\tpublic void setAge(int age) {\n\t\tthis.age = age;\n\t}"
+     ]
+    ],
+    "actual": [
+     [
+      "src/app/Person.java",
+      6,
+      18,
+      6,
+      18,
+      "\npublic int getAge() {\n    return age;\n}\npublic void setAge(int age) {\n    this.age = age;\n}"
+     ]
+    ],
+    "ops": [
+     {
+      "kind": "open",
+      "path": "src/app/Person.java"
+     },
+     {
+      "kind": "change",
+      "path": "src/app/Person.java",
+      "start": [
+       4,
+       0
+      ],
+      "end": [
+       4,
+       0
+      ],
+      "text": "\n\n"
+     }
+    ],
+    "detail": "{\"case\": {\"extra\": \"pos\", \"path\": \"src/app/Person.java\", \"shift\": {\"col\": 0, \"line\": 4, \"text\": \"\\n\\n\", \"variant\": \"above\"}, \"sub\": \"codeAction\", \"where\": [4, 17, 4, 17]}, \"note\": \"\", \"shape\": \"codeActionResolve:changed\"}",
+    "reproduced": "0/0",
+    "reduced_ops": [],
+    "signature": "jdtls|r2_handles|codeActionResolve:changed",
+    "run_id": "r2_handles-jdtls-083746"
+   },
+   {
+    "oracle": "r2_handles",
+    "server": "jdtls-1.12.0",
+    "project": "case:jdtls_2111",
+    "key": {
+     "method": "codeActionResolve",
+     "path": "src/app/Person.java",
+     "line": 4,
+     "character": 17,
+     "extra": "pos:4:17|above2|Generate Getter for 'age'|quickassist|0"
+    },
+    "expected": [
+     [
+      "src/app/Person.java",
+      6,
+      20,
+      6,
+      20,
+      "\n\n\n\tpublic int getAge() {\n\t\treturn age;\n\t}"
+     ]
+    ],
+    "actual": [
+     [
+      "src/app/Person.java",
+      6,
+      18,
+      6,
+      18,
+      "\npublic int getAge() {\n    return age;\n}"
+     ]
+    ],
+    "ops": [
+     {
+      "kind": "open",
+      "path": "src/app/Person.java"
+     },
+     {
+      "kind": "change",
+      "path": "src/app/Person.java",
+      "start": [
+       4,
+       0
+      ],
+      "end": [
+       4,
+       0
+      ],
+      "text": "\n\n"
+     }
+    ],
+    "detail": "{\"case\": {\"extra\": \"pos\", \"path\": \"src/app/Person.java\", \"shift\": {\"col\": 0, \"line\": 4, \"text\": \"\\n\\n\", \"variant\": \"above\"}, \"sub\": \"codeAction\", \"where\": [4, 17, 4, 17]}, \"note\": \"\", \"shape\": \"codeActionResolve:changed\"}",
+    "reproduced": "0/0",
+    "reduced_ops": [],
+    "signature": "jdtls|r2_handles|codeActionResolve:changed",
+    "run_id": "r2_handles-jdtls-083746"
+   },
+   {
+    "oracle": "r2_handles",
+    "server": "jdtls-1.12.0",
+    "project": "case:jdtls_2111",
+    "key": {
+     "method": "codeActionResolve",
+     "path": "src/app/Person.java",
+     "line": 4,
+     "character": 17,
+     "extra": "pos:4:17|above2|Generate Setter for 'age'|quickassist|0"
+    },
+    "expected": [
+     [
+      "src/app/Person.java",
+      6,
+      20,
+      6,
+      20,
+      "\n\n\n\tpublic void setAge(int age) {\n\t\tthis.age = age;\n\t}"
+     ]
+    ],
+    "actual": [
+     [
+      "src/app/Person.java",
+      6,
+      18,
+      6,
+      18,
+      "\npublic void setAge(int age) {\n    this.age = age;\n}"
+     ]
+    ],
+    "ops": [
+     {
+      "kind": "open",
+      "path": "src/app/Person.java"
+     },
+     {
+      "kind": "change",
+      "path": "src/app/Person.java",
+      "start": [
+       4,
+       0
+      ],
+      "end": [
+       4,
+       0
+      ],
+      "text": "\n\n"
+     }
+    ],
+    "detail": "{\"case\": {\"extra\": \"pos\", \"path\": \"src/app/Person.java\", \"shift\": {\"col\": 0, \"line\": 4, \"text\": \"\\n\\n\", \"variant\": \"above\"}, \"sub\": \"codeAction\", \"where\": [4, 17, 4, 17]}, \"note\": \"\", \"shape\": \"codeActionResolve:changed\"}",
+    "reproduced": "0/0",
+    "reduced_ops": [],
+    "signature": "jdtls|r2_handles|codeActionResolve:changed",
+    "run_id": "r2_handles-jdtls-083746"
+   },
+   {
+    "oracle": "r2_handles",
+    "server": "jdtls-1.12.0",
+    "project": "case:jdtls_2111",
+    "key": {
+     "method": "codeActionResolve",
+     "path": "src/app/Person.java",
+     "line": 3,
+     "character": 15,
+     "extra": "pos:3:15|below2|Generate Getter and Setter for 'name'|quickassist|0"
+    },
+    "expected": [
+     [
+      "src/app/Person.java",
+      6,
+      4,
+      6,
+      4,
+      "public String getName() {\n\t\treturn name;\n\t}\n\n\n\tpublic void setName(String name) {\n\t\tthis.name = name;\n\t}\n\n\n\t"
+     ]
+    ],
+    "actual": [
+     [
+      "src/app/Person.java",
+      6,
+      18,
+      6,
+      18,
+      "\npublic String getName() {\n    return name;\n}\npublic void setName(String name) {\n    this.name = name;\n}"
+     ]
+    ],
+    "ops": [
+     {
+      "kind": "open",
+      "path": "src/app/Person.java"
+     },
+     {
+      "kind": "change",
+      "path": "src/app/Person.java",
+      "start": [
+       4,
+       0
+      ],
+      "end": [
+       4,
+       0
+      ],
+      "text": "\n\n"
+     }
+    ],
+    "detail": "{\"case\": {\"extra\": \"pos\", \"path\": \"src/app/Person.java\", \"shift\": {\"col\": 0, \"line\": 4, \"text\": \"\\n\\n\", \"variant\": \"below\"}, \"sub\": \"codeAction\", \"where\": [3, 15, 3, 15]}, \"note\": \"\", \"shape\": \"codeActionResolve:changed\"}",
+    "reproduced": "0/0",
+    "reduced_ops": [],
+    "signature": "jdtls|r2_handles|codeActionResolve:changed",
+    "run_id": "r2_handles-jdtls-083746"
+   },
+   {
+    "oracle": "r2_handles",
+    "server": "jdtls-1.12.0",
+    "project": "case:jdtls_2111",
+    "key": {
+     "method": "codeActionResolve",
+     "path": "src/app/Person.java",
+     "line": 3,
+     "character": 15,
+     "extra": "pos:3:15|below2|Generate Getter for 'name'|quickassist|0"
+    },
+    "expected": [
+     [
+      "src/app/Person.java",
+      6,
+      4,
+      6,
+      4,
+      "public String getName() {\n\t\treturn name;\n\t}\n\n\n\t"
+     ]
+    ],
+    "actual": [
+     [
+      "src/app/Person.java",
+      6,
+      18,
+      6,
+      18,
+      "\npublic String getName() {\n    return name;\n}"
+     ]
+    ],
+    "ops": [
+     {
+      "kind": "open",
+      "path": "src/app/Person.java"
+     },
+     {
+      "kind": "change",
+      "path": "src/app/Person.java",
+      "start": [
+       4,
+       0
+      ],
+      "end": [
+       4,
+       0
+      ],
+      "text": "\n\n"
+     }
+    ],
+    "detail": "{\"case\": {\"extra\": \"pos\", \"path\": \"src/app/Person.java\", \"shift\": {\"col\": 0, \"line\": 4, \"text\": \"\\n\\n\", \"variant\": \"below\"}, \"sub\": \"codeAction\", \"where\": [3, 15, 3, 15]}, \"note\": \"\", \"shape\": \"codeActionResolve:changed\"}",
+    "reproduced": "0/0",
+    "reduced_ops": [],
+    "signature": "jdtls|r2_handles|codeActionResolve:changed",
+    "run_id": "r2_handles-jdtls-083746"
+   },
+   {
+    "oracle": "r2_handles",
+    "server": "jdtls-1.12.0",
+    "project": "case:jdtls_2111",
+    "key": {
+     "method": "codeActionResolve",
+     "path": "src/app/Person.java",
+     "line": 3,
+     "character": 15,
+     "extra": "pos:3:15|below2|Generate Setter for 'name'|quickassist|0"
+    },
+    "expected": [
+     [
+      "src/app/Person.java",
+      6,
+      4,
+      6,
+      4,
+      "public void setName(String name) {\n\t\tthis.name = name;\n\t}\n\n\n\t"
+     ]
+    ],
+    "actual": [
+     [
+      "src/app/Person.java",
+      6,
+      18,
+      6,
+      18,
+      "\npublic void setName(String name) {\n    this.name = name;\n}"
+     ]
+    ],
+    "ops": [
+     {
+      "kind": "open",
+      "path": "src/app/Person.java"
+     },
+     {
+      "kind": "change",
+      "path": "src/app/Person.java",
+      "start": [
+       4,
+       0
+      ],
+      "end": [
+       4,
+       0
+      ],
+      "text": "\n\n"
+     }
+    ],
+    "detail": "{\"case\": {\"extra\": \"pos\", \"path\": \"src/app/Person.java\", \"shift\": {\"col\": 0, \"line\": 4, \"text\": \"\\n\\n\", \"variant\": \"below\"}, \"sub\": \"codeAction\", \"where\": [3, 15, 3, 15]}, \"note\": \"\", \"shape\": \"codeActionResolve:changed\"}",
+    "reproduced": "0/0",
+    "reduced_ops": [],
+    "signature": "jdtls|r2_handles|codeActionResolve:changed",
+    "run_id": "r2_handles-jdtls-083746"
+   },
+   {
+    "oracle": "r2_handles",
+    "server": "jdtls-1.12.0",
+    "project": "case:jdtls_2111",
+    "key": {
+     "method": "completionResolve",
+     "path": "src/app/Person.java",
+     "line": 0,
+     "character": 11,
+     "extra": "end|above2|app|9|null|999999135|0"
+    },
+    "expected": [
+     [
+      "textEdit",
+      2,
+      8,
+      2,
+      11,
+      "app"
+     ]
+    ],
+    "actual": [
+     [
+      "textEdit",
+      2,
+      6,
+      2,
+      9,
+      "app"
+     ]
+    ],
+    "ops": [
+     {
+      "kind": "open",
+      "path": "src/app/Person.java"
+     },
+     {
+      "kind": "change",
+      "path": "src/app/Person.java",
+      "start": [
+       0,
+       0
+      ],
+      "end": [
+       0,
+       0
+      ],
+      "text": "\n\n"
+     }
+    ],
+    "detail": "{\"case\": {\"extra\": \"end\", \"path\": \"src/app/Person.java\", \"shift\": {\"col\": 0, \"line\": 0, \"text\": \"\\n\\n\", \"variant\": \"above\"}, \"sub\": \"completion\", \"where\": [0, 11]}, \"note\": \"\", \"shape\": \"completionResolve:changed\"}",
+    "reproduced": "0/0",
+    "reduced_ops": [],
+    "signature": "jdtls|r2_handles|completionResolve:changed",
+    "run_id": "r2_handles-jdtls-083746"
+   },
+   {
+    "oracle": "r2_handles",
+    "server": "jdtls-1.12.0",
+    "project": "case:jdtls_2111",
+    "key": {
+     "method": "completionResolve",
+     "path": "src/app/Person.java",
+     "line": 0,
+     "character": 11,
+     "extra": "end|above2|apple|9|null|999999215|0"
+    },
+    "expected": [
+     [
+      "textEdit",
+      2,
+      8,
+      2,
+      11,
+      "apple"
+     ]
+    ],
+    "actual": [
+     [
+      "textEdit",
+      2,
+      6,
+      2,
+      9,
+      "apple"
+     ]
+    ],
+    "ops": [
+     {
+      "kind": "open",
+      "path": "src/app/Person.java"
+     },
+     {
+      "kind": "change",
+      "path": "src/app/Person.java",
+      "start": [
+       0,
+       0
+      ],
+      "end": [
+       0,
+       0
+      ],
+      "text": "\n\n"
+     }
+    ],
+    "detail": "{\"case\": {\"extra\": \"end\", \"path\": \"src/app/Person.java\", \"shift\": {\"col\": 0, \"line\": 0, \"text\": \"\\n\\n\", \"variant\": \"above\"}, \"sub\": \"completion\", \"where\": [0, 11]}, \"note\": \"\", \"shape\": \"completionResolve:changed\"}",
+    "reproduced": "0/0",
+    "reduced_ops": [],
+    "signature": "jdtls|r2_handles|completionResolve:changed",
+    "run_id": "r2_handles-jdtls-083746"
+   },
+   {
+    "oracle": "r2_handles",
+    "server": "jdtls-1.12.0",
+    "project": "case:jdtls_2111",
+    "key": {
+     "method": "completionResolve",
+     "path": "src/app/Person.java",
+     "line": 3,
+     "character": 23,
+     "extra": "end|top2|nameString : String|6|null|999999225|0"
+    },
+    "expected": [
+     [
+      "textEdit",
+      5,
+      19,
+      5,
+      23,
+      "nameString"
+     ]
+    ],
+    "actual": [
+     [
+      "textEdit",
+      5,
+      17,
+      5,
+      21,
+      "nameString"
+     ]
+    ],
+    "ops": [
+     {
+      "kind": "open",
+      "path": "src/app/Person.java"
+     },
+     {
+      "kind": "change",
+      "path": "src/app/Person.java",
+      "start": [
+       0,
+       0
+      ],
+      "end": [
+       0,
+       0
+      ],
+      "text": "\n\n"
+     }
+    ],
+    "detail": "{\"case\": {\"extra\": \"end\", \"path\": \"src/app/Person.java\", \"shift\": {\"col\": 0, \"line\": 0, \"text\": \"\\n\\n\", \"variant\": \"top\"}, \"sub\": \"completion\", \"where\": [3, 23]}, \"note\": \"\", \"shape\": \"completionResolve:changed\"}",
+    "reproduced": "0/0",
+    "reduced_ops": [],
+    "signature": "jdtls|r2_handles|completionResolve:changed",
+    "run_id": "r2_handles-jdtls-083746"
+   },
+   {
+    "oracle": "r2_handles",
+    "server": "jdtls-1.12.0",
+    "project": "case:jdtls_2111",
+    "key": {
+     "method": "codeActionResolve",
+     "path": "src/app/Person.java",
+     "line": 3,
+     "character": 21,
+     "extra": "pos:3:21|above2|Generate Getter and Setter for 'name'|quickassist|0"
+    },
+    "expected": [
+     [
+      "src/app/Person.java",
+      6,
+      4,
+      6,
+      4,
+      "public String getName() {\n\t\treturn name;\n\t}\n\tpublic void setName(String name) {\n\t\tthis.name = name;\n\t}\n\t"
+     ]
+    ],
+    "actual": [
+     [
+      "src/app/Person.java",
+      6,
+      18,
+      6,
+      18,
+      "\npublic String getName() {\n    return name;\n}\npublic void setName(String name) {\n    this.name = name;\n}"
+     ]
+    ],
+    "ops": [
+     {
+      "kind": "open",
+      "path": "src/app/Person.java"
+     },
+     {
+      "kind": "change",
+      "path": "src/app/Person.java",
+      "start": [
+       3,
+       0
+      ],
+      "end": [
+       3,
+       0
+      ],
+      "text": "\n\n"
+     }
+    ],
+    "detail": "{\"case\": {\"extra\": \"pos\", \"path\": \"src/app/Person.java\", \"shift\": {\"col\": 0, \"line\": 3, \"text\": \"\\n\\n\", \"variant\": \"above\"}, \"sub\": \"codeAction\", \"where\": [3, 21, 3, 21]}, \"note\": \"\", \"shape\": \"codeActionResolve:changed\"}",
+    "reproduced": "0/0",
+    "reduced_ops": [],
+    "signature": "jdtls|r2_handles|codeActionResolve:changed",
+    "run_id": "r2_handles-jdtls-083746"
+   },
+   {
+    "oracle": "r2_handles",
+    "server": "jdtls-1.12.0",
+    "project": "case:jdtls_2111",
+    "key": {
+     "method": "codeActionResolve",
+     "path": "src/app/Person.java",
+     "line": 3,
+     "character": 21,
+     "extra": "pos:3:21|above2|Generate Getter for 'name'|quickassist|0"
+    },
+    "expected": [
+     [
+      "src/app/Person.java",
+      6,
+      4,
+      6,
+      4,
+      "public String getName() {\n\t\treturn name;\n\t}\n\t"
+     ]
+    ],
+    "actual": [
+     [
+      "src/app/Person.java",
+      6,
+      18,
+      6,
+      18,
+      "\npublic String getName() {\n    return name;\n}"
+     ]
+    ],
+    "ops": [
+     {
+      "kind": "open",
+      "path": "src/app/Person.java"
+     },
+     {
+      "kind": "change",
+      "path": "src/app/Person.java",
+      "start": [
+       3,
+       0
+      ],
+      "end": [
+       3,
+       0
+      ],
+      "text": "\n\n"
+     }
+    ],
+    "detail": "{\"case\": {\"extra\": \"pos\", \"path\": \"src/app/Person.java\", \"shift\": {\"col\": 0, \"line\": 3, \"text\": \"\\n\\n\", \"variant\": \"above\"}, \"sub\": \"codeAction\", \"where\": [3, 21, 3, 21]}, \"note\": \"\", \"shape\": \"codeActionResolve:changed\"}",
+    "reproduced": "0/0",
+    "reduced_ops": [],
+    "signature": "jdtls|r2_handles|codeActionResolve:changed",
+    "run_id": "r2_handles-jdtls-083746"
+   },
+   {
+    "oracle": "r2_handles",
+    "server": "jdtls-1.12.0",
+    "project": "case:jdtls_2111",
+    "key": {
+     "method": "codeActionResolve",
+     "path": "src/app/Person.java",
+     "line": 3,
+     "character": 21,
+     "extra": "pos:3:21|above2|Generate Setter for 'name'|quickassist|0"
+    },
+    "expected": [
+     [
+      "src/app/Person.java",
+      6,
+      4,
+      6,
+      4,
+      "public void setName(String name) {\n\t\tthis.name = name;\n\t}\n\t"
+     ]
+    ],
+    "actual": [
+     [
+      "src/app/Person.java",
+      6,
+      18,
+      6,
+      18,
+      "\npublic void setName(String name) {\n    this.name = name;\n}"
+     ]
+    ],
+    "ops": [
+     {
+      "kind": "open",
+      "path": "src/app/Person.java"
+     },
+     {
+      "kind": "change",
+      "path": "src/app/Person.java",
+      "start": [
+       3,
+       0
+      ],
+      "end": [
+       3,
+       0
+      ],
+      "text": "\n\n"
+     }
+    ],
+    "detail": "{\"case\": {\"extra\": \"pos\", \"path\": \"src/app/Person.java\", \"shift\": {\"col\": 0, \"line\": 3, \"text\": \"\\n\\n\", \"variant\": \"above\"}, \"sub\": \"codeAction\", \"where\": [3, 21, 3, 21]}, \"note\": \"\", \"shape\": \"codeActionResolve:changed\"}",
+    "reproduced": "0/0",
+    "reduced_ops": [],
+    "signature": "jdtls|r2_handles|codeActionResolve:changed",
+    "run_id": "r2_handles-jdtls-083746"
+   }
+  ]
+ },
+ "replays": [
+  {
+   "signature": "jdtls|r2_handles|codeActionResolve:changed",
+   "key": {
+    "method": "codeActionResolve",
+    "path": "src/app/Person.java",
+    "line": 4,
+    "character": 16,
+    "extra": "diag:4:19|above2|Generate Getter and Setter for 'age'|quickassist|0"
+   },
+   "outcomes": [
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 19.012,
+     "observed_shape": "codeActionResolve:changed",
+     "observed_actual": [
+      [
+       "src/app/Person.java",
+       6,
+       18,
+       6,
+       18,
+       "\npublic int getAge() {\n    return age;\n}\npublic void setAge(int age) {\n    this.age = age;\n}"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "src/app/Person.java",
+       6,
+       20,
+       6,
+       20,
+       "\n\n\n\tpublic int getAge() {\n\t\treturn age;\n\t}\n\n\n\tpublic void setAge(int age) {\n\t\tthis.age = age;\n\t}"
+      ]
+     ]
+    },
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 19.411,
+     "observed_shape": "codeActionResolve:changed",
+     "observed_actual": [
+      [
+       "src/app/Person.java",
+       6,
+       18,
+       6,
+       18,
+       "\npublic int getAge() {\n    return age;\n}\npublic void setAge(int age) {\n    this.age = age;\n}"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "src/app/Person.java",
+       6,
+       20,
+       6,
+       20,
+       "\n\n\n\tpublic int getAge() {\n\t\treturn age;\n\t}\n\n\n\tpublic void setAge(int age) {\n\t\tthis.age = age;\n\t}"
+      ]
+     ]
+    },
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 18.523,
+     "observed_shape": "codeActionResolve:changed",
+     "observed_actual": [
+      [
+       "src/app/Person.java",
+       6,
+       18,
+       6,
+       18,
+       "\npublic int getAge() {\n    return age;\n}\npublic void setAge(int age) {\n    this.age = age;\n}"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "src/app/Person.java",
+       6,
+       20,
+       6,
+       20,
+       "\n\n\n\tpublic int getAge() {\n\t\treturn age;\n\t}\n\n\n\tpublic void setAge(int age) {\n\t\tthis.age = age;\n\t}"
+      ]
+     ]
+    }
+   ],
+   "reproduced": "3/3"
+  },
+  {
+   "signature": "jdtls|r2_handles|codeActionResolve:changed",
+   "key": {
+    "method": "codeActionResolve",
+    "path": "src/app/Person.java",
+    "line": 4,
+    "character": 16,
+    "extra": "diag:4:19|above2|Generate Getter for 'age'|quickassist|0"
+   },
+   "outcomes": [
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 18.525,
+     "observed_shape": "codeActionResolve:changed",
+     "observed_actual": [
+      [
+       "src/app/Person.java",
+       6,
+       18,
+       6,
+       18,
+       "\npublic int getAge() {\n    return age;\n}"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "src/app/Person.java",
+       6,
+       20,
+       6,
+       20,
+       "\n\n\n\tpublic int getAge() {\n\t\treturn age;\n\t}"
+      ]
+     ]
+    },
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 19.181,
+     "observed_shape": "codeActionResolve:changed",
+     "observed_actual": [
+      [
+       "src/app/Person.java",
+       6,
+       18,
+       6,
+       18,
+       "\npublic int getAge() {\n    return age;\n}"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "src/app/Person.java",
+       6,
+       20,
+       6,
+       20,
+       "\n\n\n\tpublic int getAge() {\n\t\treturn age;\n\t}"
+      ]
+     ]
+    },
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 18.815,
+     "observed_shape": "codeActionResolve:changed",
+     "observed_actual": [
+      [
+       "src/app/Person.java",
+       6,
+       18,
+       6,
+       18,
+       "\npublic int getAge() {\n    return age;\n}"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "src/app/Person.java",
+       6,
+       20,
+       6,
+       20,
+       "\n\n\n\tpublic int getAge() {\n\t\treturn age;\n\t}"
+      ]
+     ]
+    }
+   ],
+   "reproduced": "3/3"
+  },
+  {
+   "signature": "jdtls|r2_handles|codeActionResolve:changed",
+   "key": {
+    "method": "codeActionResolve",
+    "path": "src/app/Person.java",
+    "line": 4,
+    "character": 16,
+    "extra": "diag:4:19|above2|Generate Setter for 'age'|quickassist|0"
+   },
+   "outcomes": [
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 18.034,
+     "observed_shape": "codeActionResolve:changed",
+     "observed_actual": [
+      [
+       "src/app/Person.java",
+       6,
+       18,
+       6,
+       18,
+       "\npublic void setAge(int age) {\n    this.age = age;\n}"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "src/app/Person.java",
+       6,
+       20,
+       6,
+       20,
+       "\n\n\n\tpublic void setAge(int age) {\n\t\tthis.age = age;\n\t}"
+      ]
+     ]
+    },
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 18.799,
+     "observed_shape": "codeActionResolve:changed",
+     "observed_actual": [
+      [
+       "src/app/Person.java",
+       6,
+       18,
+       6,
+       18,
+       "\npublic void setAge(int age) {\n    this.age = age;\n}"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "src/app/Person.java",
+       6,
+       20,
+       6,
+       20,
+       "\n\n\n\tpublic void setAge(int age) {\n\t\tthis.age = age;\n\t}"
+      ]
+     ]
+    },
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 18.813,
+     "observed_shape": "codeActionResolve:changed",
+     "observed_actual": [
+      [
+       "src/app/Person.java",
+       6,
+       18,
+       6,
+       18,
+       "\npublic void setAge(int age) {\n    this.age = age;\n}"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "src/app/Person.java",
+       6,
+       20,
+       6,
+       20,
+       "\n\n\n\tpublic void setAge(int age) {\n\t\tthis.age = age;\n\t}"
+      ]
+     ]
+    }
+   ],
+   "reproduced": "3/3"
+  },
+  {
+   "signature": "jdtls|r2_handles|completionResolve:changed",
+   "key": {
+    "method": "completionResolve",
+    "path": "src/app/Person.java",
+    "line": 3,
+    "character": 18,
+    "extra": "end|above1|StringBufferInputStream - java.io|7|null|999999212|0"
+   },
+   "outcomes": [
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 20.667,
+     "observed_shape": "completionResolve:changed",
+     "observed_actual": [
+      [
+       "additionalTextEdits",
+       0,
+       12,
+       2,
+       0,
+       "\n\nimport java.io.StringBufferInputStream;\n\n"
+      ],
+      [
+       "textEdit",
+       4,
+       11,
+       4,
+       17,
+       "StringBufferInputStream"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "additionalTextEdits",
+       0,
+       12,
+       2,
+       0,
+       "\n\nimport java.io.StringBufferInputStream;\n\n"
+      ],
+      [
+       "textEdit",
+       4,
+       12,
+       4,
+       18,
+       "StringBufferInputStream"
+      ]
+     ]
+    },
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 19.964,
+     "observed_shape": "completionResolve:changed",
+     "observed_actual": [
+      [
+       "additionalTextEdits",
+       0,
+       12,
+       2,
+       0,
+       "\n\nimport java.io.StringBufferInputStream;\n\n"
+      ],
+      [
+       "textEdit",
+       4,
+       11,
+       4,
+       17,
+       "StringBufferInputStream"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "additionalTextEdits",
+       0,
+       12,
+       2,
+       0,
+       "\n\nimport java.io.StringBufferInputStream;\n\n"
+      ],
+      [
+       "textEdit",
+       4,
+       12,
+       4,
+       18,
+       "StringBufferInputStream"
+      ]
+     ]
+    },
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 20.064,
+     "observed_shape": "completionResolve:changed",
+     "observed_actual": [
+      [
+       "additionalTextEdits",
+       0,
+       12,
+       2,
+       0,
+       "\n\nimport java.io.StringBufferInputStream;\n\n"
+      ],
+      [
+       "textEdit",
+       4,
+       11,
+       4,
+       17,
+       "StringBufferInputStream"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "additionalTextEdits",
+       0,
+       12,
+       2,
+       0,
+       "\n\nimport java.io.StringBufferInputStream;\n\n"
+      ],
+      [
+       "textEdit",
+       4,
+       12,
+       4,
+       18,
+       "StringBufferInputStream"
+      ]
+     ]
+    }
+   ],
+   "reproduced": "3/3"
+  },
+  {
+   "signature": "jdtls|r2_handles|completionResolve:changed",
+   "key": {
+    "method": "completionResolve",
+    "path": "src/app/Person.java",
+    "line": 3,
+    "character": 18,
+    "extra": "end|above1|StringCharacterIterator - java.text|7|null|999999212|0"
+   },
+   "outcomes": [
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 19.742,
+     "observed_shape": "completionResolve:changed",
+     "observed_actual": [
+      [
+       "additionalTextEdits",
+       0,
+       12,
+       2,
+       0,
+       "\n\nimport java.text.StringCharacterIterator;\n\n"
+      ],
+      [
+       "textEdit",
+       4,
+       11,
+       4,
+       17,
+       "StringCharacterIterator"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "additionalTextEdits",
+       0,
+       12,
+       2,
+       0,
+       "\n\nimport java.text.StringCharacterIterator;\n\n"
+      ],
+      [
+       "textEdit",
+       4,
+       12,
+       4,
+       18,
+       "StringCharacterIterator"
+      ]
+     ]
+    },
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 19.895,
+     "observed_shape": "completionResolve:changed",
+     "observed_actual": [
+      [
+       "additionalTextEdits",
+       0,
+       12,
+       2,
+       0,
+       "\n\nimport java.text.StringCharacterIterator;\n\n"
+      ],
+      [
+       "textEdit",
+       4,
+       11,
+       4,
+       17,
+       "StringCharacterIterator"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "additionalTextEdits",
+       0,
+       12,
+       2,
+       0,
+       "\n\nimport java.text.StringCharacterIterator;\n\n"
+      ],
+      [
+       "textEdit",
+       4,
+       12,
+       4,
+       18,
+       "StringCharacterIterator"
+      ]
+     ]
+    },
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 19.955,
+     "observed_shape": "completionResolve:changed",
+     "observed_actual": [
+      [
+       "additionalTextEdits",
+       0,
+       12,
+       2,
+       0,
+       "\n\nimport java.text.StringCharacterIterator;\n\n"
+      ],
+      [
+       "textEdit",
+       4,
+       11,
+       4,
+       17,
+       "StringCharacterIterator"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "additionalTextEdits",
+       0,
+       12,
+       2,
+       0,
+       "\n\nimport java.text.StringCharacterIterator;\n\n"
+      ],
+      [
+       "textEdit",
+       4,
+       12,
+       4,
+       18,
+       "StringCharacterIterator"
+      ]
+     ]
+    }
+   ],
+   "reproduced": "3/3"
+  },
+  {
+   "signature": "jdtls|r2_handles|completionResolve:changed",
+   "key": {
+    "method": "completionResolve",
+    "path": "src/app/Person.java",
+    "line": 3,
+    "character": 18,
+    "extra": "end|above1|StringConcatException - java.lang.invoke|7|null|999999212|0"
+   },
+   "outcomes": [
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 20.128,
+     "observed_shape": "completionResolve:changed",
+     "observed_actual": [
+      [
+       "additionalTextEdits",
+       0,
+       12,
+       2,
+       0,
+       "\n\nimport java.lang.invoke.StringConcatException;\n\n"
+      ],
+      [
+       "textEdit",
+       4,
+       11,
+       4,
+       17,
+       "StringConcatException"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "additionalTextEdits",
+       0,
+       12,
+       2,
+       0,
+       "\n\nimport java.lang.invoke.StringConcatException;\n\n"
+      ],
+      [
+       "textEdit",
+       4,
+       12,
+       4,
+       18,
+       "StringConcatException"
+      ]
+     ]
+    },
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 20.122,
+     "observed_shape": "completionResolve:changed",
+     "observed_actual": [
+      [
+       "additionalTextEdits",
+       0,
+       12,
+       2,
+       0,
+       "\n\nimport java.lang.invoke.StringConcatException;\n\n"
+      ],
+      [
+       "textEdit",
+       4,
+       11,
+       4,
+       17,
+       "StringConcatException"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "additionalTextEdits",
+       0,
+       12,
+       2,
+       0,
+       "\n\nimport java.lang.invoke.StringConcatException;\n\n"
+      ],
+      [
+       "textEdit",
+       4,
+       12,
+       4,
+       18,
+       "StringConcatException"
+      ]
+     ]
+    },
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 20.373,
+     "observed_shape": "completionResolve:changed",
+     "observed_actual": [
+      [
+       "additionalTextEdits",
+       0,
+       12,
+       2,
+       0,
+       "\n\nimport java.lang.invoke.StringConcatException;\n\n"
+      ],
+      [
+       "textEdit",
+       4,
+       11,
+       4,
+       17,
+       "StringConcatException"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "additionalTextEdits",
+       0,
+       12,
+       2,
+       0,
+       "\n\nimport java.lang.invoke.StringConcatException;\n\n"
+      ],
+      [
+       "textEdit",
+       4,
+       12,
+       4,
+       18,
+       "StringConcatException"
+      ]
+     ]
+    }
+   ],
+   "reproduced": "3/3"
+  },
+  {
+   "signature": "jdtls|r2_handles|completionResolve:changed",
+   "key": {
+    "method": "completionResolve",
+    "path": "src/app/Person.java",
+    "line": 3,
+    "character": 18,
+    "extra": "end|above1|StringConcatFactory - java.lang.invoke|7|null|999999212|0"
+   },
+   "outcomes": [
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 19.434,
+     "observed_shape": "completionResolve:changed",
+     "observed_actual": [
+      [
+       "additionalTextEdits",
+       0,
+       12,
+       2,
+       0,
+       "\n\nimport java.lang.invoke.StringConcatFactory;\n\n"
+      ],
+      [
+       "textEdit",
+       4,
+       11,
+       4,
+       17,
+       "StringConcatFactory"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "additionalTextEdits",
+       0,
+       12,
+       2,
+       0,
+       "\n\nimport java.lang.invoke.StringConcatFactory;\n\n"
+      ],
+      [
+       "textEdit",
+       4,
+       12,
+       4,
+       18,
+       "StringConcatFactory"
+      ]
+     ]
+    },
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 20.309,
+     "observed_shape": "completionResolve:changed",
+     "observed_actual": [
+      [
+       "additionalTextEdits",
+       0,
+       12,
+       2,
+       0,
+       "\n\nimport java.lang.invoke.StringConcatFactory;\n\n"
+      ],
+      [
+       "textEdit",
+       4,
+       11,
+       4,
+       17,
+       "StringConcatFactory"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "additionalTextEdits",
+       0,
+       12,
+       2,
+       0,
+       "\n\nimport java.lang.invoke.StringConcatFactory;\n\n"
+      ],
+      [
+       "textEdit",
+       4,
+       12,
+       4,
+       18,
+       "StringConcatFactory"
+      ]
+     ]
+    },
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 20.657,
+     "observed_shape": "completionResolve:changed",
+     "observed_actual": [
+      [
+       "additionalTextEdits",
+       0,
+       12,
+       2,
+       0,
+       "\n\nimport java.lang.invoke.StringConcatFactory;\n\n"
+      ],
+      [
+       "textEdit",
+       4,
+       11,
+       4,
+       17,
+       "StringConcatFactory"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "additionalTextEdits",
+       0,
+       12,
+       2,
+       0,
+       "\n\nimport java.lang.invoke.StringConcatFactory;\n\n"
+      ],
+      [
+       "textEdit",
+       4,
+       12,
+       4,
+       18,
+       "StringConcatFactory"
+      ]
+     ]
+    }
+   ],
+   "reproduced": "3/3"
+  },
+  {
+   "signature": "jdtls|r2_handles|completionResolve:changed",
+   "key": {
+    "method": "completionResolve",
+    "path": "src/app/Person.java",
+    "line": 3,
+    "character": 18,
+    "extra": "end|above1|StringContent - javax.swing.text|7|null|999999212|0"
+   },
+   "outcomes": [
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 20.464,
+     "observed_shape": "completionResolve:changed",
+     "observed_actual": [
+      [
+       "additionalTextEdits",
+       0,
+       12,
+       2,
+       0,
+       "\n\nimport javax.swing.text.StringContent;\n\n"
+      ],
+      [
+       "textEdit",
+       4,
+       11,
+       4,
+       17,
+       "StringContent"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "additionalTextEdits",
+       0,
+       12,
+       2,
+       0,
+       "\n\nimport javax.swing.text.StringContent;\n\n"
+      ],
+      [
+       "textEdit",
+       4,
+       12,
+       4,
+       18,
+       "StringContent"
+      ]
+     ]
+    },
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 20.469,
+     "observed_shape": "completionResolve:changed",
+     "observed_actual": [
+      [
+       "additionalTextEdits",
+       0,
+       12,
+       2,
+       0,
+       "\n\nimport javax.swing.text.StringContent;\n\n"
+      ],
+      [
+       "textEdit",
+       4,
+       11,
+       4,
+       17,
+       "StringContent"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "additionalTextEdits",
+       0,
+       12,
+       2,
+       0,
+       "\n\nimport javax.swing.text.StringContent;\n\n"
+      ],
+      [
+       "textEdit",
+       4,
+       12,
+       4,
+       18,
+       "StringContent"
+      ]
+     ]
+    },
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 19.794,
+     "observed_shape": "completionResolve:changed",
+     "observed_actual": [
+      [
+       "additionalTextEdits",
+       0,
+       12,
+       2,
+       0,
+       "\n\nimport javax.swing.text.StringContent;\n\n"
+      ],
+      [
+       "textEdit",
+       4,
+       11,
+       4,
+       17,
+       "StringContent"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "additionalTextEdits",
+       0,
+       12,
+       2,
+       0,
+       "\n\nimport javax.swing.text.StringContent;\n\n"
+      ],
+      [
+       "textEdit",
+       4,
+       12,
+       4,
+       18,
+       "StringContent"
+      ]
+     ]
+    }
+   ],
+   "reproduced": "3/3"
+  },
+  {
+   "signature": "jdtls|r2_handles|completionResolve:changed",
+   "key": {
+    "method": "completionResolve",
+    "path": "src/app/Person.java",
+    "line": 3,
+    "character": 18,
+    "extra": "end|above1|StringJoiner - java.util|7|null|999999212|0"
+   },
+   "outcomes": [
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 20.395,
+     "observed_shape": "completionResolve:changed",
+     "observed_actual": [
+      [
+       "additionalTextEdits",
+       0,
+       12,
+       2,
+       0,
+       "\n\nimport java.util.StringJoiner;\n\n"
+      ],
+      [
+       "textEdit",
+       4,
+       11,
+       4,
+       17,
+       "StringJoiner"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "additionalTextEdits",
+       0,
+       12,
+       2,
+       0,
+       "\n\nimport java.util.StringJoiner;\n\n"
+      ],
+      [
+       "textEdit",
+       4,
+       12,
+       4,
+       18,
+       "StringJoiner"
+      ]
+     ]
+    },
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 19.901,
+     "observed_shape": "completionResolve:changed",
+     "observed_actual": [
+      [
+       "additionalTextEdits",
+       0,
+       12,
+       2,
+       0,
+       "\n\nimport java.util.StringJoiner;\n\n"
+      ],
+      [
+       "textEdit",
+       4,
+       11,
+       4,
+       17,
+       "StringJoiner"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "additionalTextEdits",
+       0,
+       12,
+       2,
+       0,
+       "\n\nimport java.util.StringJoiner;\n\n"
+      ],
+      [
+       "textEdit",
+       4,
+       12,
+       4,
+       18,
+       "StringJoiner"
+      ]
+     ]
+    },
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 20.163,
+     "observed_shape": "completionResolve:changed",
+     "observed_actual": [
+      [
+       "additionalTextEdits",
+       0,
+       12,
+       2,
+       0,
+       "\n\nimport java.util.StringJoiner;\n\n"
+      ],
+      [
+       "textEdit",
+       4,
+       11,
+       4,
+       17,
+       "StringJoiner"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "additionalTextEdits",
+       0,
+       12,
+       2,
+       0,
+       "\n\nimport java.util.StringJoiner;\n\n"
+      ],
+      [
+       "textEdit",
+       4,
+       12,
+       4,
+       18,
+       "StringJoiner"
+      ]
+     ]
+    }
+   ],
+   "reproduced": "3/3"
+  },
+  {
+   "signature": "jdtls|r2_handles|codeActionResolve:changed",
+   "key": {
+    "method": "codeActionResolve",
+    "path": "src/app/Person.java",
+    "line": 3,
+    "character": 19,
+    "extra": "diag:3:23|above1|Generate Getter and Setter for 'name'|quickassist|0"
+   },
+   "outcomes": [
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 18.365,
+     "observed_shape": "codeActionResolve:changed",
+     "observed_actual": [
+      [
+       "src/app/Person.java",
+       5,
+       19,
+       5,
+       19,
+       "\npublic String getName() {\n    return name;\n}\npublic void setName(String name) {\n    this.name = name;\n}"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "src/app/Person.java",
+       5,
+       4,
+       5,
+       4,
+       "public String getName() {\n\t\treturn name;\n\t}\n\tpublic void setName(String name) {\n\t\tthis.name = name;\n\t}\n\t"
+      ]
+     ]
+    },
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 18.752,
+     "observed_shape": "codeActionResolve:changed",
+     "observed_actual": [
+      [
+       "src/app/Person.java",
+       5,
+       19,
+       5,
+       19,
+       "\npublic String getName() {\n    return name;\n}\npublic void setName(String name) {\n    this.name = name;\n}"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "src/app/Person.java",
+       5,
+       4,
+       5,
+       4,
+       "public String getName() {\n\t\treturn name;\n\t}\n\tpublic void setName(String name) {\n\t\tthis.name = name;\n\t}\n\t"
+      ]
+     ]
+    },
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 18.908,
+     "observed_shape": "codeActionResolve:changed",
+     "observed_actual": [
+      [
+       "src/app/Person.java",
+       5,
+       19,
+       5,
+       19,
+       "\npublic String getName() {\n    return name;\n}\npublic void setName(String name) {\n    this.name = name;\n}"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "src/app/Person.java",
+       5,
+       4,
+       5,
+       4,
+       "public String getName() {\n\t\treturn name;\n\t}\n\tpublic void setName(String name) {\n\t\tthis.name = name;\n\t}\n\t"
+      ]
+     ]
+    }
+   ],
+   "reproduced": "3/3"
+  },
+  {
+   "signature": "jdtls|r2_handles|codeActionResolve:changed",
+   "key": {
+    "method": "codeActionResolve",
+    "path": "src/app/Person.java",
+    "line": 3,
+    "character": 19,
+    "extra": "diag:3:23|above1|Generate Getter for 'name'|quickassist|0"
+   },
+   "outcomes": [
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 18.079,
+     "observed_shape": "codeActionResolve:changed",
+     "observed_actual": [
+      [
+       "src/app/Person.java",
+       5,
+       19,
+       5,
+       19,
+       "\npublic String getName() {\n    return name;\n}"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "src/app/Person.java",
+       5,
+       4,
+       5,
+       4,
+       "public String getName() {\n\t\treturn name;\n\t}\n\t"
+      ]
+     ]
+    },
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 18.295,
+     "observed_shape": "codeActionResolve:changed",
+     "observed_actual": [
+      [
+       "src/app/Person.java",
+       5,
+       19,
+       5,
+       19,
+       "\npublic String getName() {\n    return name;\n}"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "src/app/Person.java",
+       5,
+       4,
+       5,
+       4,
+       "public String getName() {\n\t\treturn name;\n\t}\n\t"
+      ]
+     ]
+    },
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 17.979,
+     "observed_shape": "codeActionResolve:changed",
+     "observed_actual": [
+      [
+       "src/app/Person.java",
+       5,
+       19,
+       5,
+       19,
+       "\npublic String getName() {\n    return name;\n}"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "src/app/Person.java",
+       5,
+       4,
+       5,
+       4,
+       "public String getName() {\n\t\treturn name;\n\t}\n\t"
+      ]
+     ]
+    }
+   ],
+   "reproduced": "3/3"
+  },
+  {
+   "signature": "jdtls|r2_handles|codeActionResolve:changed",
+   "key": {
+    "method": "codeActionResolve",
+    "path": "src/app/Person.java",
+    "line": 3,
+    "character": 19,
+    "extra": "diag:3:23|above1|Generate Setter for 'name'|quickassist|0"
+   },
+   "outcomes": [
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 18.146,
+     "observed_shape": "codeActionResolve:changed",
+     "observed_actual": [
+      [
+       "src/app/Person.java",
+       5,
+       19,
+       5,
+       19,
+       "\npublic void setName(String name) {\n    this.name = name;\n}"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "src/app/Person.java",
+       5,
+       4,
+       5,
+       4,
+       "public void setName(String name) {\n\t\tthis.name = name;\n\t}\n\t"
+      ]
+     ]
+    },
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 17.629,
+     "observed_shape": "codeActionResolve:changed",
+     "observed_actual": [
+      [
+       "src/app/Person.java",
+       5,
+       19,
+       5,
+       19,
+       "\npublic void setName(String name) {\n    this.name = name;\n}"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "src/app/Person.java",
+       5,
+       4,
+       5,
+       4,
+       "public void setName(String name) {\n\t\tthis.name = name;\n\t}\n\t"
+      ]
+     ]
+    },
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 17.813,
+     "observed_shape": "codeActionResolve:changed",
+     "observed_actual": [
+      [
+       "src/app/Person.java",
+       5,
+       19,
+       5,
+       19,
+       "\npublic void setName(String name) {\n    this.name = name;\n}"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "src/app/Person.java",
+       5,
+       4,
+       5,
+       4,
+       "public void setName(String name) {\n\t\tthis.name = name;\n\t}\n\t"
+      ]
+     ]
+    }
+   ],
+   "reproduced": "3/3"
+  },
+  {
+   "signature": "jdtls|r2_handles|codeActionResolve:changed",
+   "key": {
+    "method": "codeActionResolve",
+    "path": "src/app/Person.java",
+    "line": 4,
+    "character": 17,
+    "extra": "pos:4:17|above2|Generate Getter and Setter for 'age'|quickassist|0"
+   },
+   "outcomes": [
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 17.702,
+     "observed_shape": "codeActionResolve:changed",
+     "observed_actual": [
+      [
+       "src/app/Person.java",
+       6,
+       18,
+       6,
+       18,
+       "\npublic int getAge() {\n    return age;\n}\npublic void setAge(int age) {\n    this.age = age;\n}"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "src/app/Person.java",
+       6,
+       20,
+       6,
+       20,
+       "\n\n\n\tpublic int getAge() {\n\t\treturn age;\n\t}\n\n\n\tpublic void setAge(int age) {\n\t\tthis.age = age;\n\t}"
+      ]
+     ]
+    },
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 17.909,
+     "observed_shape": "codeActionResolve:changed",
+     "observed_actual": [
+      [
+       "src/app/Person.java",
+       6,
+       18,
+       6,
+       18,
+       "\npublic int getAge() {\n    return age;\n}\npublic void setAge(int age) {\n    this.age = age;\n}"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "src/app/Person.java",
+       6,
+       20,
+       6,
+       20,
+       "\n\n\n\tpublic int getAge() {\n\t\treturn age;\n\t}\n\n\n\tpublic void setAge(int age) {\n\t\tthis.age = age;\n\t}"
+      ]
+     ]
+    },
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 17.714,
+     "observed_shape": "codeActionResolve:changed",
+     "observed_actual": [
+      [
+       "src/app/Person.java",
+       6,
+       18,
+       6,
+       18,
+       "\npublic int getAge() {\n    return age;\n}\npublic void setAge(int age) {\n    this.age = age;\n}"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "src/app/Person.java",
+       6,
+       20,
+       6,
+       20,
+       "\n\n\n\tpublic int getAge() {\n\t\treturn age;\n\t}\n\n\n\tpublic void setAge(int age) {\n\t\tthis.age = age;\n\t}"
+      ]
+     ]
+    }
+   ],
+   "reproduced": "3/3"
+  },
+  {
+   "signature": "jdtls|r2_handles|codeActionResolve:changed",
+   "key": {
+    "method": "codeActionResolve",
+    "path": "src/app/Person.java",
+    "line": 4,
+    "character": 17,
+    "extra": "pos:4:17|above2|Generate Getter for 'age'|quickassist|0"
+   },
+   "outcomes": [
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 18.016,
+     "observed_shape": "codeActionResolve:changed",
+     "observed_actual": [
+      [
+       "src/app/Person.java",
+       6,
+       18,
+       6,
+       18,
+       "\npublic int getAge() {\n    return age;\n}"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "src/app/Person.java",
+       6,
+       20,
+       6,
+       20,
+       "\n\n\n\tpublic int getAge() {\n\t\treturn age;\n\t}"
+      ]
+     ]
+    },
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 17.924,
+     "observed_shape": "codeActionResolve:changed",
+     "observed_actual": [
+      [
+       "src/app/Person.java",
+       6,
+       18,
+       6,
+       18,
+       "\npublic int getAge() {\n    return age;\n}"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "src/app/Person.java",
+       6,
+       20,
+       6,
+       20,
+       "\n\n\n\tpublic int getAge() {\n\t\treturn age;\n\t}"
+      ]
+     ]
+    },
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 18.169,
+     "observed_shape": "codeActionResolve:changed",
+     "observed_actual": [
+      [
+       "src/app/Person.java",
+       6,
+       18,
+       6,
+       18,
+       "\npublic int getAge() {\n    return age;\n}"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "src/app/Person.java",
+       6,
+       20,
+       6,
+       20,
+       "\n\n\n\tpublic int getAge() {\n\t\treturn age;\n\t}"
+      ]
+     ]
+    }
+   ],
+   "reproduced": "3/3"
+  },
+  {
+   "signature": "jdtls|r2_handles|codeActionResolve:changed",
+   "key": {
+    "method": "codeActionResolve",
+    "path": "src/app/Person.java",
+    "line": 4,
+    "character": 17,
+    "extra": "pos:4:17|above2|Generate Setter for 'age'|quickassist|0"
+   },
+   "outcomes": [
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 17.684,
+     "observed_shape": "codeActionResolve:changed",
+     "observed_actual": [
+      [
+       "src/app/Person.java",
+       6,
+       18,
+       6,
+       18,
+       "\npublic void setAge(int age) {\n    this.age = age;\n}"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "src/app/Person.java",
+       6,
+       20,
+       6,
+       20,
+       "\n\n\n\tpublic void setAge(int age) {\n\t\tthis.age = age;\n\t}"
+      ]
+     ]
+    },
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 18.109,
+     "observed_shape": "codeActionResolve:changed",
+     "observed_actual": [
+      [
+       "src/app/Person.java",
+       6,
+       18,
+       6,
+       18,
+       "\npublic void setAge(int age) {\n    this.age = age;\n}"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "src/app/Person.java",
+       6,
+       20,
+       6,
+       20,
+       "\n\n\n\tpublic void setAge(int age) {\n\t\tthis.age = age;\n\t}"
+      ]
+     ]
+    },
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 19.909,
+     "observed_shape": "codeActionResolve:changed",
+     "observed_actual": [
+      [
+       "src/app/Person.java",
+       6,
+       18,
+       6,
+       18,
+       "\npublic void setAge(int age) {\n    this.age = age;\n}"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "src/app/Person.java",
+       6,
+       20,
+       6,
+       20,
+       "\n\n\n\tpublic void setAge(int age) {\n\t\tthis.age = age;\n\t}"
+      ]
+     ]
+    }
+   ],
+   "reproduced": "3/3"
+  },
+  {
+   "signature": "jdtls|r2_handles|codeActionResolve:changed",
+   "key": {
+    "method": "codeActionResolve",
+    "path": "src/app/Person.java",
+    "line": 3,
+    "character": 15,
+    "extra": "pos:3:15|below2|Generate Getter and Setter for 'name'|quickassist|0"
+   },
+   "outcomes": [
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 18.382,
+     "observed_shape": "codeActionResolve:changed",
+     "observed_actual": [
+      [
+       "src/app/Person.java",
+       6,
+       18,
+       6,
+       18,
+       "\npublic String getName() {\n    return name;\n}\npublic void setName(String name) {\n    this.name = name;\n}"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "src/app/Person.java",
+       6,
+       4,
+       6,
+       4,
+       "public String getName() {\n\t\treturn name;\n\t}\n\n\n\tpublic void setName(String name) {\n\t\tthis.name = name;\n\t}\n\n\n\t"
+      ]
+     ]
+    },
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 18.438,
+     "observed_shape": "codeActionResolve:changed",
+     "observed_actual": [
+      [
+       "src/app/Person.java",
+       6,
+       18,
+       6,
+       18,
+       "\npublic String getName() {\n    return name;\n}\npublic void setName(String name) {\n    this.name = name;\n}"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "src/app/Person.java",
+       6,
+       4,
+       6,
+       4,
+       "public String getName() {\n\t\treturn name;\n\t}\n\n\n\tpublic void setName(String name) {\n\t\tthis.name = name;\n\t}\n\n\n\t"
+      ]
+     ]
+    },
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 19.269,
+     "observed_shape": "codeActionResolve:changed",
+     "observed_actual": [
+      [
+       "src/app/Person.java",
+       6,
+       18,
+       6,
+       18,
+       "\npublic String getName() {\n    return name;\n}\npublic void setName(String name) {\n    this.name = name;\n}"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "src/app/Person.java",
+       6,
+       4,
+       6,
+       4,
+       "public String getName() {\n\t\treturn name;\n\t}\n\n\n\tpublic void setName(String name) {\n\t\tthis.name = name;\n\t}\n\n\n\t"
+      ]
+     ]
+    }
+   ],
+   "reproduced": "3/3"
+  },
+  {
+   "signature": "jdtls|r2_handles|codeActionResolve:changed",
+   "key": {
+    "method": "codeActionResolve",
+    "path": "src/app/Person.java",
+    "line": 3,
+    "character": 15,
+    "extra": "pos:3:15|below2|Generate Getter for 'name'|quickassist|0"
+   },
+   "outcomes": [
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 18.276,
+     "observed_shape": "codeActionResolve:changed",
+     "observed_actual": [
+      [
+       "src/app/Person.java",
+       6,
+       18,
+       6,
+       18,
+       "\npublic String getName() {\n    return name;\n}"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "src/app/Person.java",
+       6,
+       4,
+       6,
+       4,
+       "public String getName() {\n\t\treturn name;\n\t}\n\n\n\t"
+      ]
+     ]
+    },
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 18.443,
+     "observed_shape": "codeActionResolve:changed",
+     "observed_actual": [
+      [
+       "src/app/Person.java",
+       6,
+       18,
+       6,
+       18,
+       "\npublic String getName() {\n    return name;\n}"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "src/app/Person.java",
+       6,
+       4,
+       6,
+       4,
+       "public String getName() {\n\t\treturn name;\n\t}\n\n\n\t"
+      ]
+     ]
+    },
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 19.124,
+     "observed_shape": "codeActionResolve:changed",
+     "observed_actual": [
+      [
+       "src/app/Person.java",
+       6,
+       18,
+       6,
+       18,
+       "\npublic String getName() {\n    return name;\n}"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "src/app/Person.java",
+       6,
+       4,
+       6,
+       4,
+       "public String getName() {\n\t\treturn name;\n\t}\n\n\n\t"
+      ]
+     ]
+    }
+   ],
+   "reproduced": "3/3"
+  },
+  {
+   "signature": "jdtls|r2_handles|codeActionResolve:changed",
+   "key": {
+    "method": "codeActionResolve",
+    "path": "src/app/Person.java",
+    "line": 3,
+    "character": 15,
+    "extra": "pos:3:15|below2|Generate Setter for 'name'|quickassist|0"
+   },
+   "outcomes": [
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 17.704,
+     "observed_shape": "codeActionResolve:changed",
+     "observed_actual": [
+      [
+       "src/app/Person.java",
+       6,
+       18,
+       6,
+       18,
+       "\npublic void setName(String name) {\n    this.name = name;\n}"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "src/app/Person.java",
+       6,
+       4,
+       6,
+       4,
+       "public void setName(String name) {\n\t\tthis.name = name;\n\t}\n\n\n\t"
+      ]
+     ]
+    },
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 18.2,
+     "observed_shape": "codeActionResolve:changed",
+     "observed_actual": [
+      [
+       "src/app/Person.java",
+       6,
+       18,
+       6,
+       18,
+       "\npublic void setName(String name) {\n    this.name = name;\n}"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "src/app/Person.java",
+       6,
+       4,
+       6,
+       4,
+       "public void setName(String name) {\n\t\tthis.name = name;\n\t}\n\n\n\t"
+      ]
+     ]
+    },
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 19.201,
+     "observed_shape": "codeActionResolve:changed",
+     "observed_actual": [
+      [
+       "src/app/Person.java",
+       6,
+       18,
+       6,
+       18,
+       "\npublic void setName(String name) {\n    this.name = name;\n}"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "src/app/Person.java",
+       6,
+       4,
+       6,
+       4,
+       "public void setName(String name) {\n\t\tthis.name = name;\n\t}\n\n\n\t"
+      ]
+     ]
+    }
+   ],
+   "reproduced": "3/3"
+  },
+  {
+   "signature": "jdtls|r2_handles|completionResolve:changed",
+   "key": {
+    "method": "completionResolve",
+    "path": "src/app/Person.java",
+    "line": 0,
+    "character": 11,
+    "extra": "end|above2|app|9|null|999999135|0"
+   },
+   "outcomes": [
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 18.093,
+     "observed_shape": "completionResolve:changed",
+     "observed_actual": [
+      [
+       "textEdit",
+       2,
+       6,
+       2,
+       9,
+       "app"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "textEdit",
+       2,
+       8,
+       2,
+       11,
+       "app"
+      ]
+     ]
+    },
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 18.178,
+     "observed_shape": "completionResolve:changed",
+     "observed_actual": [
+      [
+       "textEdit",
+       2,
+       6,
+       2,
+       9,
+       "app"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "textEdit",
+       2,
+       8,
+       2,
+       11,
+       "app"
+      ]
+     ]
+    },
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 18.548,
+     "observed_shape": "completionResolve:changed",
+     "observed_actual": [
+      [
+       "textEdit",
+       2,
+       6,
+       2,
+       9,
+       "app"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "textEdit",
+       2,
+       8,
+       2,
+       11,
+       "app"
+      ]
+     ]
+    }
+   ],
+   "reproduced": "3/3"
+  },
+  {
+   "signature": "jdtls|r2_handles|completionResolve:changed",
+   "key": {
+    "method": "completionResolve",
+    "path": "src/app/Person.java",
+    "line": 0,
+    "character": 11,
+    "extra": "end|above2|apple|9|null|999999215|0"
+   },
+   "outcomes": [
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 18.284,
+     "observed_shape": "completionResolve:changed",
+     "observed_actual": [
+      [
+       "textEdit",
+       2,
+       6,
+       2,
+       9,
+       "apple"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "textEdit",
+       2,
+       8,
+       2,
+       11,
+       "apple"
+      ]
+     ]
+    },
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 17.903,
+     "observed_shape": "completionResolve:changed",
+     "observed_actual": [
+      [
+       "textEdit",
+       2,
+       6,
+       2,
+       9,
+       "apple"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "textEdit",
+       2,
+       8,
+       2,
+       11,
+       "apple"
+      ]
+     ]
+    },
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 18.163,
+     "observed_shape": "completionResolve:changed",
+     "observed_actual": [
+      [
+       "textEdit",
+       2,
+       6,
+       2,
+       9,
+       "apple"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "textEdit",
+       2,
+       8,
+       2,
+       11,
+       "apple"
+      ]
+     ]
+    }
+   ],
+   "reproduced": "3/3"
+  },
+  {
+   "signature": "jdtls|r2_handles|completionResolve:changed",
+   "key": {
+    "method": "completionResolve",
+    "path": "src/app/Person.java",
+    "line": 3,
+    "character": 23,
+    "extra": "end|top2|nameString : String|6|null|999999225|0"
+   },
+   "outcomes": [
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 18.095,
+     "observed_shape": "completionResolve:changed",
+     "observed_actual": [
+      [
+       "textEdit",
+       5,
+       17,
+       5,
+       21,
+       "nameString"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "textEdit",
+       5,
+       19,
+       5,
+       23,
+       "nameString"
+      ]
+     ]
+    },
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 18.016,
+     "observed_shape": "completionResolve:changed",
+     "observed_actual": [
+      [
+       "textEdit",
+       5,
+       17,
+       5,
+       21,
+       "nameString"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "textEdit",
+       5,
+       19,
+       5,
+       23,
+       "nameString"
+      ]
+     ]
+    },
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 18.216,
+     "observed_shape": "completionResolve:changed",
+     "observed_actual": [
+      [
+       "textEdit",
+       5,
+       17,
+       5,
+       21,
+       "nameString"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "textEdit",
+       5,
+       19,
+       5,
+       23,
+       "nameString"
+      ]
+     ]
+    }
+   ],
+   "reproduced": "3/3"
+  },
+  {
+   "signature": "jdtls|r2_handles|codeActionResolve:changed",
+   "key": {
+    "method": "codeActionResolve",
+    "path": "src/app/Person.java",
+    "line": 3,
+    "character": 21,
+    "extra": "pos:3:21|above2|Generate Getter and Setter for 'name'|quickassist|0"
+   },
+   "outcomes": [
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 18.288,
+     "observed_shape": "codeActionResolve:changed",
+     "observed_actual": [
+      [
+       "src/app/Person.java",
+       6,
+       18,
+       6,
+       18,
+       "\npublic String getName() {\n    return name;\n}\npublic void setName(String name) {\n    this.name = name;\n}"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "src/app/Person.java",
+       6,
+       4,
+       6,
+       4,
+       "public String getName() {\n\t\treturn name;\n\t}\n\tpublic void setName(String name) {\n\t\tthis.name = name;\n\t}\n\t"
+      ]
+     ]
+    },
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 18.622,
+     "observed_shape": "codeActionResolve:changed",
+     "observed_actual": [
+      [
+       "src/app/Person.java",
+       6,
+       18,
+       6,
+       18,
+       "\npublic String getName() {\n    return name;\n}\npublic void setName(String name) {\n    this.name = name;\n}"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "src/app/Person.java",
+       6,
+       4,
+       6,
+       4,
+       "public String getName() {\n\t\treturn name;\n\t}\n\tpublic void setName(String name) {\n\t\tthis.name = name;\n\t}\n\t"
+      ]
+     ]
+    },
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 19.414,
+     "observed_shape": "codeActionResolve:changed",
+     "observed_actual": [
+      [
+       "src/app/Person.java",
+       6,
+       18,
+       6,
+       18,
+       "\npublic String getName() {\n    return name;\n}\npublic void setName(String name) {\n    this.name = name;\n}"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "src/app/Person.java",
+       6,
+       4,
+       6,
+       4,
+       "public String getName() {\n\t\treturn name;\n\t}\n\tpublic void setName(String name) {\n\t\tthis.name = name;\n\t}\n\t"
+      ]
+     ]
+    }
+   ],
+   "reproduced": "3/3"
+  },
+  {
+   "signature": "jdtls|r2_handles|codeActionResolve:changed",
+   "key": {
+    "method": "codeActionResolve",
+    "path": "src/app/Person.java",
+    "line": 3,
+    "character": 21,
+    "extra": "pos:3:21|above2|Generate Getter for 'name'|quickassist|0"
+   },
+   "outcomes": [
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 19.97,
+     "observed_shape": "codeActionResolve:changed",
+     "observed_actual": [
+      [
+       "src/app/Person.java",
+       6,
+       18,
+       6,
+       18,
+       "\npublic String getName() {\n    return name;\n}"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "src/app/Person.java",
+       6,
+       4,
+       6,
+       4,
+       "public String getName() {\n\t\treturn name;\n\t}\n\t"
+      ]
+     ]
+    },
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 19.613,
+     "observed_shape": "codeActionResolve:changed",
+     "observed_actual": [
+      [
+       "src/app/Person.java",
+       6,
+       18,
+       6,
+       18,
+       "\npublic String getName() {\n    return name;\n}"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "src/app/Person.java",
+       6,
+       4,
+       6,
+       4,
+       "public String getName() {\n\t\treturn name;\n\t}\n\t"
+      ]
+     ]
+    },
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 19.789,
+     "observed_shape": "codeActionResolve:changed",
+     "observed_actual": [
+      [
+       "src/app/Person.java",
+       6,
+       18,
+       6,
+       18,
+       "\npublic String getName() {\n    return name;\n}"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "src/app/Person.java",
+       6,
+       4,
+       6,
+       4,
+       "public String getName() {\n\t\treturn name;\n\t}\n\t"
+      ]
+     ]
+    }
+   ],
+   "reproduced": "3/3"
+  },
+  {
+   "signature": "jdtls|r2_handles|codeActionResolve:changed",
+   "key": {
+    "method": "codeActionResolve",
+    "path": "src/app/Person.java",
+    "line": 3,
+    "character": 21,
+    "extra": "pos:3:21|above2|Generate Setter for 'name'|quickassist|0"
+   },
+   "outcomes": [
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 19.347,
+     "observed_shape": "codeActionResolve:changed",
+     "observed_actual": [
+      [
+       "src/app/Person.java",
+       6,
+       18,
+       6,
+       18,
+       "\npublic void setName(String name) {\n    this.name = name;\n}"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "src/app/Person.java",
+       6,
+       4,
+       6,
+       4,
+       "public void setName(String name) {\n\t\tthis.name = name;\n\t}\n\t"
+      ]
+     ]
+    },
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 19.886,
+     "observed_shape": "codeActionResolve:changed",
+     "observed_actual": [
+      [
+       "src/app/Person.java",
+       6,
+       18,
+       6,
+       18,
+       "\npublic void setName(String name) {\n    this.name = name;\n}"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "src/app/Person.java",
+       6,
+       4,
+       6,
+       4,
+       "public void setName(String name) {\n\t\tthis.name = name;\n\t}\n\t"
+      ]
+     ]
+    },
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 20.434,
+     "observed_shape": "codeActionResolve:changed",
+     "observed_actual": [
+      [
+       "src/app/Person.java",
+       6,
+       18,
+       6,
+       18,
+       "\npublic void setName(String name) {\n    this.name = name;\n}"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "src/app/Person.java",
+       6,
+       4,
+       6,
+       4,
+       "public void setName(String name) {\n\t\tthis.name = name;\n\t}\n\t"
+      ]
+     ]
+    }
+   ],
+   "reproduced": "3/3"
+  }
+ ],
+ "total_seconds": 1457.6
+}

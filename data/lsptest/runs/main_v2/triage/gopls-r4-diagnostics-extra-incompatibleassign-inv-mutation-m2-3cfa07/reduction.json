@@ -1,0 +1,62 @@
+{
+ "vid": "118461be1f56-v00",
+ "ops_before": 3,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 2,
+ "cache_hits": 0,
+ "reduce_seconds": 4.182,
+ "budget_exhausted": false,
+ "probe_log": [
+  [
+   2,
+   false
+  ],
+  [
+   2,
+   false
+  ]
+ ],
+ "logs": [
+  "gopls-v0.23.0-tr3cfa07-r4-replay-baseline-20261119-000504-fcb0af.jsonl.gz",
+  "gopls-v0.23.0-tr3cfa07-r4-replay-case-20261119-000454-d7bd12.jsonl.gz",
+  "gopls-v0.23.0-tr3cfa07-r4-replay-control-20261119-000508-2daa7f.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [],
+  "actual": [
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "IncompatibleAssign",
+    "compiler",
+    "cannot use errs (variable of interface type any) as []error value in argument to errors.Join: need type assertion"
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "InvalidAppend",
+    "compiler",
+    "invalid append: argument must be a slice; have errs (variable of interface type any)"
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "NotAnExpr",
+    "compiler",
+    "[]error (type) is not an expression"
+   ]
+  ]
+ },
+ "ops_after": 3,
+ "total_seconds": 75.5
+}

@@ -1,0 +1,488 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "dc8ae22ce155-v00",
+ "run_id": "dc8ae22ce155",
+ "oracle": "r1_history",
+ "server": {
+  "kind": "gopls",
+  "version": "v0.23.0"
+ },
+ "project": {
+  "name": "caddyserver/caddy@c18099a0af5e",
+  "source": "corpus",
+  "ref": "temp/corpus/caddyserver__caddy@c18099a0af5e",
+  "commit": "c18099a0af5e88c8d9da0b9d797f6f2c62d60a23",
+  "language": "go"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "caddyconfig/httploader.go",
+    "positions": [
+     [
+      84,
+      11
+     ],
+     [
+      98,
+      5
+     ],
+     [
+      103,
+      10
+     ],
+     [
+      103,
+      46
+     ],
+     [
+      113,
+      21
+     ],
+     [
+      122,
+      20
+     ],
+     [
+      126,
+      13
+     ],
+     [
+      137,
+      76
+     ],
+     [
+      151,
+      12
+     ],
+     [
+      196,
+      13
+     ],
+     [
+      198,
+      31
+     ],
+     [
+      211,
+      58
+     ]
+    ],
+    "ends": [
+     [
+      84,
+      14
+     ],
+     [
+      98,
+      7
+     ],
+     [
+      103,
+      13
+     ],
+     [
+      103,
+      48
+     ],
+     [
+      113,
+      24
+     ],
+     [
+      122,
+      22
+     ],
+     [
+      126,
+      17
+     ],
+     [
+      137,
+      80
+     ],
+     [
+      151,
+      18
+     ],
+     [
+      196,
+      15
+     ],
+     [
+      198,
+      33
+     ],
+     [
+      211,
+      63
+     ]
+    ],
+    "names": [
+     "caddy",
+     "err",
+     "Header",
+     "repl",
+     "Errorf",
+     "Get",
+     "warnings",
+     "Response",
+     "maxAttempts",
+     "TLS",
+     "TLS",
+     "tlsConfig"
+    ]
+   },
+   {
+    "path": "logging_test.go",
+    "positions": [
+     [
+      14,
+      10
+     ],
+     [
+      29,
+      4
+     ],
+     [
+      31,
+      4
+     ],
+     [
+      40,
+      6
+     ],
+     [
+      48,
+      7
+     ],
+     [
+      58,
+      6
+     ],
+     [
+      59,
+      18
+     ],
+     [
+      64,
+      8
+     ],
+     [
+      71,
+      7
+     ],
+     [
+      71,
+      18
+     ],
+     [
+      100,
+      71
+     ],
+     [
+      100,
+      75
+     ]
+    ],
+    "ends": [
+     [
+      14,
+      13
+     ],
+     [
+      29,
+      6
+     ],
+     [
+      31,
+      6
+     ],
+     [
+      40,
+      8
+     ],
+     [
+      48,
+      11
+     ],
+     [
+      58,
+      9
+     ],
+     [
+      59,
+      21
+     ],
+     [
+      64,
+      12
+     ],
+     [
+      71,
+      11
+     ],
+     [
+      71,
+      21
+     ],
+     [
+      100,
+      72
+     ],
+     [
+      100,
+      77
+     ]
+    ],
+    "names": [
+     "caddy",
+     "name",
+     "args",
+     "name",
+     "Exclude",
+     "fields",
+     "string",
+     "isModule",
+     "Include",
+     "string",
+     "tt",
+     "want"
+    ]
+   },
+   {
+    "path": "modules/caddyhttp/reverseproxy/selectionpolicies_test.go",
+    "positions": [
+     [
+      325,
+      5
+     ],
+     [
+      399,
+      19
+     ],
+     [
+      416,
+      37
+     ],
+     [
+      486,
+      5
+     ],
+     [
+      494,
+      3
+     ],
+     [
+      507,
+      10
+     ],
+     [
+      523,
+      26
+     ],
+     [
+      559,
+      1
+     ],
+     [
+      685,
+      22
+     ],
+     [
+      747,
+      2
+     ],
+     [
+      809,
+      2
+     ],
+     [
+      894,
+      2
+     ]
+    ],
+    "ends": [
+     [
+      325,
+      7
+     ],
+     [
+      399,
+      21
+     ],
+     [
+      416,
+      42
+     ],
+     [
+      486,
+      10
+     ],
+     [
+      494,
+      5
+     ],
+     [
+      507,
+      12
+     ],
+     [
+      523,
+      28
+     ],
+     [
+      559,
+      2
+     ],
+     [
+      685,
+      24
+     ],
+     [
+      747,
+      3
+     ],
+     [
+      809,
+      3
+     ],
+     [
+      894,
+      3
+     ]
+    ],
+    "names": [
+     "Host",
+     "req",
+     "caddyhttp",
+     "caddyhttp",
+     "pool",
+     "new",
+     "req",
+     "h",
+     "true",
+     "h",
+     "t",
+     "t"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "completion",
+  "path": "caddyconfig/httploader.go",
+  "line": 84,
+  "character": 14,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "caddyconfig/httploader.go"
+  },
+  {
+   "kind": "open",
+   "path": "logging_test.go"
+  },
+  {
+   "kind": "open",
+   "path": "modules/caddyhttp/reverseproxy/selectionpolicies_test.go"
+  },
+  {
+   "kind": "fs_rename",
+   "path": "caddyconfig/httploader.go",
+   "new_path": "caddyconfig/httploader_rt.go"
+  },
+  {
+   "kind": "fs_rename",
+   "path": "caddyconfig/httploader_rt.go",
+   "new_path": "caddyconfig/httploader.go"
+  }
+ ],
+ "case": {
+  "chain_step": 0,
+  "families": [],
+  "family": "H5",
+  "history_index": 0,
+  "history_seed": 1001,
+  "mode": "fresh",
+  "note": "rename caddyconfig/httploader.go -> caddyconfig/httploader_rt.go -> back",
+  "seed": 1,
+  "timing": "settled"
+ },
+ "shape": "completion:extra",
+ "signature": "gopls|r1_history|completion:extra",
+ "expected": [
+  "caddy"
+ ],
+ "actual": [
+  "caddy",
+  "caddy.APIError",
+  "ctx.Module().CaddyModule",
+  "hl.CaddyModule"
+ ],
+ "reproduced": "3/3",
+ "note": "H5: rename caddyconfig/httploader.go -> caddyconfig/httploader_rt.go -> back; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 194s",
+ "violation": {
+  "oracle": "r1_history",
+  "server": "gopls-v0.23.0",
+  "project": "caddyserver/caddy@c18099a0af5e",
+  "key": {
+   "method": "completion",
+   "path": "caddyconfig/httploader.go",
+   "line": 84,
+   "character": 14,
+   "extra": ""
+  },
+  "expected": [
+   "caddy"
+  ],
+  "actual": [
+   "caddy",
+   "caddy.APIError",
+   "ctx.Module().CaddyModule",
+   "hl.CaddyModule"
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "caddyconfig/httploader.go"
+   },
+   {
+    "kind": "open",
+    "path": "logging_test.go"
+   },
+   {
+    "kind": "open",
+    "path": "modules/caddyhttp/reverseproxy/selectionpolicies_test.go"
+   },
+   {
+    "kind": "fs_rename",
+    "path": "caddyconfig/httploader.go",
+    "new_path": "caddyconfig/httploader_rt.go"
+   },
+   {
+    "kind": "fs_rename",
+    "path": "caddyconfig/httploader_rt.go",
+    "new_path": "caddyconfig/httploader.go"
+   }
+  ],
+  "detail": "{\"case\": {\"chain_step\": 0, \"families\": [], \"family\": \"H5\", \"history_index\": 0, \"history_seed\": 1001, \"mode\": \"fresh\", \"note\": \"rename caddyconfig/httploader.go -> caddyconfig/httploader_rt.go -> back\", \"seed\": 1, \"timing\": \"settled\"}, \"note\": \"H5: rename caddyconfig/httploader.go -> caddyconfig/httploader_rt.go -> back; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 194s\", \"shape\": \"completion:extra\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "gopls|r1_history|completion:extra",
+  "run_id": "dc8ae22ce155"
+ },
+ "replay_logs": [],
+ "project_files": {},
+ "group": "gopls-r1-completion-extra-h5-2dfa5a",
+ "reduced": true
+}

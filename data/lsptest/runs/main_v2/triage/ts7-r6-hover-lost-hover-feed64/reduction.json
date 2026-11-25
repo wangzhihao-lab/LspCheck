@@ -1,0 +1,23 @@
+{
+ "vid": "4224a39ee10c-v01",
+ "ops_before": 0,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 0,
+ "cache_hits": 0,
+ "reduce_seconds": 0.0,
+ "budget_exhausted": false,
+ "probe_log": [],
+ "logs": [
+  "ts6-6.0.3-trfeed64-ref-r6-replay-ref-baseline-20261118-223611-86f78c.jsonl.gz",
+  "ts6-6.0.3-trfeed64-ref-r6-replay-ref-control-20261118-223619-ab8644.jsonl.gz",
+  "ts7-7.0.2-trfeed64-r6-replay-test-baseline-20261118-223556-cf8668.jsonl.gz",
+  "ts7-7.0.2-trfeed64-r6-replay-test-control-20261118-223604-079129.jsonl.gz"
+ ],
+ "observed": {
+  "expected": "import useContext",
+  "actual": null
+ },
+ "ops_after": 0,
+ "total_seconds": 151.8
+}

@@ -1,0 +1,42 @@
+{
+ "vid": "295e3654bbae-v01",
+ "ops_before": 3,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 2,
+ "cache_hits": 0,
+ "reduce_seconds": 4.226,
+ "budget_exhausted": false,
+ "probe_log": [
+  [
+   2,
+   false
+  ],
+  [
+   2,
+   false
+  ]
+ ],
+ "logs": [
+  "ts6-6.0.3-trd2ab31-r4-replay-baseline-20260925-191755-a079dc.jsonl.gz",
+  "ts6-6.0.3-trd2ab31-r4-replay-case-20260925-191745-4c06b3.jsonl.gz",
+  "ts6-6.0.3-trd2ab31-r4-replay-control-20260925-191801-2b2179.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [],
+  "actual": [
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2554",
+    "typescript",
+    "Expected 1 arguments, but got 0."
+   ]
+  ]
+ },
+ "ops_after": 3,
+ "total_seconds": 85.4
+}

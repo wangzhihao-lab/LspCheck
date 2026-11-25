@@ -1,0 +1,471 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "0b8a8909a573-v00",
+ "run_id": "0b8a8909a573",
+ "oracle": "r3_routes",
+ "server": {
+  "kind": "ts7",
+  "version": "7.0.2"
+ },
+ "project": {
+  "name": "upstash/context7@6477e43e31d2",
+  "source": "corpus",
+  "ref": "temp/corpus/upstash__context7@6477e43e31d2",
+  "commit": "6477e43e31d27a5c1bc044506e1c14de15f8a110",
+  "language": "typescript"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "packages/cli/src/utils/update-check.ts",
+    "positions": [
+     [
+      21,
+      15
+     ],
+     [
+      53,
+      33
+     ],
+     [
+      109,
+      30
+     ],
+     [
+      127,
+      8
+     ],
+     [
+      163,
+      41
+     ],
+     [
+      173,
+      11
+     ],
+     [
+      200,
+      14
+     ],
+     [
+      218,
+      5
+     ],
+     [
+      264,
+      19
+     ],
+     [
+      267,
+      34
+     ],
+     [
+      285,
+      17
+     ],
+     [
+      289,
+      11
+     ]
+    ],
+    "ends": [
+     [
+      21,
+      21
+     ],
+     [
+      53,
+      44
+     ],
+     [
+      109,
+      36
+     ],
+     [
+      127,
+      15
+     ],
+     [
+      163,
+      47
+     ],
+     [
+      173,
+      14
+     ],
+     [
+      200,
+      18
+     ],
+     [
+      218,
+      9
+     ],
+     [
+      264,
+      27
+     ],
+     [
+      267,
+      39
+     ],
+     [
+      285,
+      21
+     ],
+     [
+      289,
+      14
+     ]
+    ],
+    "names": [
+     "UpdateState",
+     "getUpdateStateFilePath",
+     "npm_command",
+     "installMethod",
+     "packageName",
+     "canRun",
+     "response",
+     "options",
+     "updateAvailable",
+     "cooldownMs",
+     "options",
+     "state"
+    ]
+   },
+   {
+    "path": "packages/sdk/src/commands/search-library/types.ts",
+    "positions": [
+     [
+      0,
+      24
+     ],
+     [
+      1,
+      3
+     ],
+     [
+      2,
+      4
+     ],
+     [
+      3,
+      7
+     ],
+     [
+      4,
+      6
+     ],
+     [
+      5,
+      8
+     ],
+     [
+      6,
+      7
+     ],
+     [
+      7,
+      9
+     ],
+     [
+      10,
+      25
+     ],
+     [
+      11,
+      5
+     ],
+     [
+      11,
+      18
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      32
+     ],
+     [
+      1,
+      4
+     ],
+     [
+      2,
+      7
+     ],
+     [
+      3,
+      13
+     ],
+     [
+      4,
+      10
+     ],
+     [
+      5,
+      15
+     ],
+     [
+      6,
+      12
+     ],
+     [
+      7,
+      16
+     ],
+     [
+      10,
+      34
+     ],
+     [
+      11,
+      9
+     ],
+     [
+      11,
+      26
+     ]
+    ],
+    "names": [
+     "ApiSearchResult",
+     "id",
+     "title",
+     "description",
+     "versions",
+     "totalSnippets",
+     "trustScore",
+     "benchmarkScore",
+     "ApiSearchResponse",
+     "results",
+     "ApiSearchResult"
+    ]
+   },
+   {
+    "path": "packages/sdk/src/http/index.ts",
+    "positions": [
+     [
+      6,
+      9
+     ],
+     [
+      15,
+      9
+     ],
+     [
+      44,
+      21
+     ],
+     [
+      61,
+      32
+     ],
+     [
+      66,
+      34
+     ],
+     [
+      73,
+      13
+     ],
+     [
+      82,
+      22
+     ],
+     [
+      84,
+      57
+     ],
+     [
+      137,
+      55
+     ],
+     [
+      151,
+      37
+     ],
+     [
+      163,
+      17
+     ],
+     [
+      185,
+      24
+     ]
+    ],
+    "ends": [
+     [
+      6,
+      17
+     ],
+     [
+      15,
+      17
+     ],
+     [
+      44,
+      24
+     ],
+     [
+      61,
+      37
+     ],
+     [
+      66,
+      39
+     ],
+     [
+      73,
+      20
+     ],
+     [
+      82,
+      29
+     ],
+     [
+      84,
+      59
+     ],
+     [
+      137,
+      60
+     ],
+     [
+      151,
+      41
+     ],
+     [
+      163,
+      25
+     ],
+     [
+      185,
+      27
+     ]
+    ],
+    "names": [
+     "validateTimeout",
+     "Context7Request",
+     "fetch",
+     "authToken",
+     "onResponse",
+     "resolveSignal",
+     "normalizeCache",
+     "JSON",
+     "abortState",
+     "response",
+     "headersForToken",
+     "query"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "definitionConsistency",
+  "path": "packages/sdk/src/http/index.ts",
+  "line": 131,
+  "character": 12,
+  "extra": "from:packages/sdk/src/http/index.ts:151:37"
+ },
+ "ops": [],
+ "case": {
+  "loc": [
+   "packages/sdk/src/http/index.ts",
+   131,
+   8,
+   131,
+   16
+  ],
+  "sub": "d",
+  "target": [
+   "packages/sdk/src/http/index.ts",
+   151,
+   37
+  ]
+ },
+ "shape": "definitionConsistency:missing",
+ "signature": "ts7|r3_routes|definitionConsistency:missing",
+ "expected": [
+  [
+   "packages/sdk/src/http/index.ts",
+   29,
+   2,
+   29,
+   10
+  ],
+  [
+   "packages/sdk/src/http/index.ts",
+   129,
+   10,
+   129,
+   18
+  ]
+ ],
+ "actual": [
+  [
+   "packages/sdk/src/http/index.ts",
+   129,
+   10,
+   129,
+   18
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "flake 3/3 [r1:SCR r2:SCR r3:SCR] in 196s",
+ "violation": {
+  "oracle": "r3_routes",
+  "server": "ts7-7.0.2",
+  "project": "upstash/context7@6477e43e31d2",
+  "key": {
+   "method": "definitionConsistency",
+   "path": "packages/sdk/src/http/index.ts",
+   "line": 131,
+   "character": 12,
+   "extra": "from:packages/sdk/src/http/index.ts:151:37"
+  },
+  "expected": [
+   [
+    "packages/sdk/src/http/index.ts",
+    29,
+    2,
+    29,
+    10
+   ],
+   [
+    "packages/sdk/src/http/index.ts",
+    129,
+    10,
+    129,
+    18
+   ]
+  ],
+  "actual": [
+   [
+    "packages/sdk/src/http/index.ts",
+    129,
+    10,
+    129,
+    18
+   ]
+  ],
+  "ops": [],
+  "detail": "{\"case\": {\"loc\": [\"packages/sdk/src/http/index.ts\", 131, 8, 131, 16], \"sub\": \"d\", \"target\": [\"packages/sdk/src/http/index.ts\", 151, 37]}, \"note\": \"flake 3/3 [r1:SCR r2:SCR r3:SCR] in 196s\", \"shape\": \"definitionConsistency:missing\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "ts7|r3_routes|definitionConsistency:missing",
+  "run_id": "0b8a8909a573"
+ },
+ "replay_logs": [
+  "logs/ts7-7.0.2-0b8a8909a573-r3-replay-baseline-20260923-202226-757755.jsonl.gz",
+  "logs/ts7-7.0.2-0b8a8909a573-r3-replay-control-20260923-202251-f7be39.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

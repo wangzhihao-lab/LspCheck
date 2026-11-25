@@ -1,0 +1,3 @@
+2026-11-18 11:50:10,062 INFO campaign_run run e9e084d1bf4f: r2_handles on gopls v0.23.0, go-gorm/gorm@b3d3bf219f02 seed 2 settled, targets ['schema/relationship.go', 'tests/joins_test.go', 'utils/tests/dummy_dialecter.go']
+2026-11-18 11:51:15,960 INFO campaign_run run e9e084d1bf4f: 0 candidate(s) in 66s; confirming
+2026-11-18 11:51:15,960 INFO campaign_run run e9e084d1bf4f finished: ok, 0 confirmed of 0 candidate(s), 66s

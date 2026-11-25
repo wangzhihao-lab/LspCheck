@@ -1,0 +1,437 @@
+{
+ "format": 1,
+ "campaign": "bench_v1",
+ "vid": "fdcebc372d28-v02",
+ "run_id": "fdcebc372d28",
+ "oracle": "r5_transforms",
+ "server": {
+  "kind": "rust-analyzer",
+  "version": "2025-04-28"
+ },
+ "project": {
+  "name": "rust-analyzer-19694",
+  "source": "dir",
+  "ref": "data/lsp_bench/cases/rust-analyzer-19694/project",
+  "commit": "",
+  "language": "rust"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 240.0,
+  "request_timeout_s": 60.0,
+  "extra_settings": null,
+  "max_cases": 6,
+  "targets": [
+   {
+    "path": "src/main.rs",
+    "positions": [
+     [
+      0,
+      5
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      7
+     ]
+    ],
+    "names": [
+     "main"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "semanticTokens",
+  "path": "src/main.rs",
+  "line": -1,
+  "character": -1,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "src/main.rs"
+  },
+  {
+   "kind": "change",
+   "path": "src/main.rs",
+   "start": [
+    0,
+    11
+   ],
+   "end": [
+    0,
+    11
+   ],
+   "text": "  \t"
+  },
+  {
+   "kind": "change",
+   "path": "src/main.rs",
+   "start": [
+    1,
+    15
+   ],
+   "end": [
+    1,
+    15
+   ],
+   "text": "  \t"
+  },
+  {
+   "kind": "change",
+   "path": "src/main.rs",
+   "start": [
+    2,
+    16
+   ],
+   "end": [
+    2,
+    16
+   ],
+   "text": "  \t"
+  },
+  {
+   "kind": "change",
+   "path": "src/main.rs",
+   "start": [
+    3,
+    5
+   ],
+   "end": [
+    3,
+    5
+   ],
+   "text": "  \t"
+  },
+  {
+   "kind": "change",
+   "path": "src/main.rs",
+   "start": [
+    4,
+    1
+   ],
+   "end": [
+    4,
+    1
+   ],
+   "text": "  \t"
+  }
+ ],
+ "case": {
+  "mapped_key": [
+   "semanticTokens",
+   "src/main.rs",
+   -1,
+   -1,
+   ""
+  ],
+  "transform": {
+   "back": {
+    "col": 0,
+    "eof": [],
+    "line": -1,
+    "n": 0,
+    "path": "src/main.rs",
+    "w": 0
+   },
+   "edits": [
+    [
+     0,
+     11,
+     0,
+     11,
+     "  \t"
+    ],
+    [
+     1,
+     15,
+     1,
+     15,
+     "  \t"
+    ],
+    [
+     2,
+     16,
+     2,
+     16,
+     "  \t"
+    ],
+    [
+     3,
+     5,
+     3,
+     5,
+     "  \t"
+    ],
+    [
+     4,
+     1,
+     4,
+     1,
+     "  \t"
+    ]
+   ],
+   "kind": "T3",
+   "path": "src/main.rs",
+   "shift": {
+    "col": 0,
+    "eof": [],
+    "line": -1,
+    "n": 0,
+    "path": "src/main.rs",
+    "w": 0
+   }
+  }
+ },
+ "shape": "semanticTokens:changed",
+ "signature": "rust-analyzer|r5_transforms|semanticTokens:changed",
+ "expected": [
+  [
+   0,
+   0,
+   2,
+   "keyword",
+   ""
+  ],
+  [
+   0,
+   3,
+   4,
+   "function",
+   "declaration"
+  ],
+  [
+   1,
+   4,
+   8,
+   "label",
+   "declaration"
+  ],
+  [
+   2,
+   14,
+   2,
+   "character",
+   ""
+  ],
+  [
+   2,
+   8,
+   5,
+   "keyword",
+   "controlFlow"
+  ]
+ ],
+ "actual": [
+  [
+   0,
+   0,
+   2,
+   "keyword",
+   ""
+  ],
+  [
+   0,
+   3,
+   4,
+   "function",
+   "declaration"
+  ],
+  [
+   1,
+   4,
+   8,
+   "label",
+   "declaration"
+  ],
+  [
+   2,
+   14,
+   5,
+   "character",
+   ""
+  ],
+  [
+   2,
+   8,
+   5,
+   "keyword",
+   "controlFlow"
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "T3 src/main.rs: 5 edit(s), first [0, 11, 0, 11]; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 507s",
+ "violation": {
+  "oracle": "r5_transforms",
+  "server": "rust-analyzer-2025-04-28",
+  "project": "rust-analyzer-19694",
+  "key": {
+   "method": "semanticTokens",
+   "path": "src/main.rs",
+   "line": -1,
+   "character": -1,
+   "extra": ""
+  },
+  "expected": [
+   [
+    0,
+    0,
+    2,
+    "keyword",
+    ""
+   ],
+   [
+    0,
+    3,
+    4,
+    "function",
+    "declaration"
+   ],
+   [
+    1,
+    4,
+    8,
+    "label",
+    "declaration"
+   ],
+   [
+    2,
+    14,
+    2,
+    "character",
+    ""
+   ],
+   [
+    2,
+    8,
+    5,
+    "keyword",
+    "controlFlow"
+   ]
+  ],
+  "actual": [
+   [
+    0,
+    0,
+    2,
+    "keyword",
+    ""
+   ],
+   [
+    0,
+    3,
+    4,
+    "function",
+    "declaration"
+   ],
+   [
+    1,
+    4,
+    8,
+    "label",
+    "declaration"
+   ],
+   [
+    2,
+    14,
+    5,
+    "character",
+    ""
+   ],
+   [
+    2,
+    8,
+    5,
+    "keyword",
+    "controlFlow"
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "src/main.rs"
+   },
+   {
+    "kind": "change",
+    "path": "src/main.rs",
+    "start": [
+     0,
+     11
+    ],
+    "end": [
+     0,
+     11
+    ],
+    "text": "  \t"
+   },
+   {
+    "kind": "change",
+    "path": "src/main.rs",
+    "start": [
+     1,
+     15
+    ],
+    "end": [
+     1,
+     15
+    ],
+    "text": "  \t"
+   },
+   {
+    "kind": "change",
+    "path": "src/main.rs",
+    "start": [
+     2,
+     16
+    ],
+    "end": [
+     2,
+     16
+    ],
+    "text": "  \t"
+   },
+   {
+    "kind": "change",
+    "path": "src/main.rs",
+    "start": [
+     3,
+     5
+    ],
+    "end": [
+     3,
+     5
+    ],
+    "text": "  \t"
+   },
+   {
+    "kind": "change",
+    "path": "src/main.rs",
+    "start": [
+     4,
+     1
+    ],
+    "end": [
+     4,
+     1
+    ],
+    "text": "  \t"
+   }
+  ],
+  "detail": "{\"case\": {\"mapped_key\": [\"semanticTokens\", \"src/main.rs\", -1, -1, \"\"], \"transform\": {\"back\": {\"col\": 0, \"eof\": [], \"line\": -1, \"n\": 0, \"path\": \"src/main.rs\", \"w\": 0}, \"edits\": [[0, 11, 0, 11, \"  \\t\"], [1, 15, 1, 15, \"  \\t\"], [2, 16, 2, 16, \"  \\t\"], [3, 5, 3, 5, \"  \\t\"], [4, 1, 4, 1, \"  \\t\"]], \"kind\": \"T3\", \"path\": \"src/main.rs\", \"shift\": {\"col\": 0, \"eof\": [], \"line\": -1, \"n\": 0, \"path\": \"src/main.rs\", \"w\": 0}}}, \"note\": \"T3 src/main.rs: 5 edit(s), first [0, 11, 0, 11]; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 507s\", \"shape\": \"semanticTokens:changed\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "rust-analyzer|r5_transforms|semanticTokens:changed",
+  "run_id": "fdcebc372d28"
+ },
+ "replay_logs": [
+  "logs/rust-analyzer-2025-04-28-fdcebc372d28-r5-replay-baseline-20260925-072500-a204a7.jsonl.gz",
+  "logs/rust-analyzer-2025-04-28-fdcebc372d28-r5-replay-case-20260925-072620-1b1ae9.jsonl.gz",
+  "logs/rust-analyzer-2025-04-28-fdcebc372d28-r5-replay-control-20260925-072545-190210.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

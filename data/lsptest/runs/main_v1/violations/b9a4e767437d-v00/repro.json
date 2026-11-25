@@ -1,0 +1,494 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "b9a4e767437d-v00",
+ "run_id": "b9a4e767437d",
+ "oracle": "r3_routes",
+ "server": {
+  "kind": "ts6",
+  "version": "6.0.3"
+ },
+ "project": {
+  "name": "vercel/hyper@30ec0a2a91de",
+  "source": "corpus",
+  "ref": "temp/corpus/vercel__hyper@30ec0a2a91de",
+  "commit": "30ec0a2a91de17eeb32dd71998fe8a8ec59f98eb",
+  "language": "typescript"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "app/utils/renderer-utils.ts",
+    "positions": [
+     [
+      0,
+      12
+     ],
+     [
+      0,
+      24
+     ],
+     [
+      2,
+      17
+     ],
+     [
+      3,
+      15
+     ],
+     [
+      6,
+      26
+     ],
+     [
+      6,
+      40
+     ],
+     [
+      7,
+      8
+     ],
+     [
+      7,
+      17
+     ],
+     [
+      7,
+      25
+     ],
+     [
+      10,
+      17
+     ],
+     [
+      11,
+      24
+     ],
+     [
+      14,
+      33
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      19
+     ],
+     [
+      0,
+      27
+     ],
+     [
+      2,
+      25
+     ],
+     [
+      3,
+      22
+     ],
+     [
+      6,
+      28
+     ],
+     [
+      6,
+      42
+     ],
+     [
+      7,
+      15
+     ],
+     [
+      7,
+      19
+     ],
+     [
+      7,
+      27
+     ],
+     [
+      10,
+      26
+     ],
+     [
+      11,
+      26
+     ],
+     [
+      14,
+      41
+     ]
+    ],
+    "names": [
+     "rendererTypes",
+     "Record",
+     "getRendererTypes",
+     "rendererTypes",
+     "uid",
+     "type",
+     "rendererTypes",
+     "uid",
+     "type",
+     "unsetRendererType",
+     "uid",
+     "setRendererType"
+    ]
+   },
+   {
+    "path": "lib/index.tsx",
+    "positions": [
+     [
+      34,
+      25
+     ],
+     [
+      45,
+      14
+     ],
+     [
+      72,
+      20
+     ],
+     [
+      99,
+      1
+     ],
+     [
+      100,
+      25
+     ],
+     [
+      131,
+      1
+     ],
+     [
+      148,
+      13
+     ],
+     [
+      168,
+      70
+     ],
+     [
+      191,
+      5
+     ],
+     [
+      191,
+      27
+     ],
+     [
+      204,
+      13
+     ],
+     [
+      243,
+      5
+     ]
+    ],
+    "ends": [
+     [
+      34,
+      28
+     ],
+     [
+      45,
+      19
+     ],
+     [
+      72,
+      22
+     ],
+     [
+      99,
+      3
+     ],
+     [
+      100,
+      32
+     ],
+     [
+      131,
+      3
+     ],
+     [
+      148,
+      17
+     ],
+     [
+      168,
+      74
+     ],
+     [
+      191,
+      6
+     ],
+     [
+      191,
+      30
+     ],
+     [
+      204,
+      17
+     ],
+     [
+      243,
+      6
+     ]
+    ],
+    "names": [
+     "window",
+     "bellSound",
+     "init",
+     "rpc",
+     "sessionActions",
+     "rpc",
+     "dispatch",
+     "profile",
+     "on",
+     "index",
+     "dispatch",
+     "on"
+    ]
+   },
+   {
+    "path": "lib/reducers/index.ts",
+    "positions": [
+     [
+      0,
+      15
+     ],
+     [
+      1,
+      9
+     ],
+     [
+      3,
+      9
+     ],
+     [
+      3,
+      32
+     ],
+     [
+      3,
+      41
+     ],
+     [
+      5,
+      18
+     ],
+     [
+      6,
+      20
+     ],
+     [
+      7,
+      12
+     ],
+     [
+      9,
+      22
+     ],
+     [
+      10,
+      3
+     ],
+     [
+      11,
+      6
+     ],
+     [
+      13,
+      9
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      23
+     ],
+     [
+      1,
+      11
+     ],
+     [
+      3,
+      11
+     ],
+     [
+      3,
+      37
+     ],
+     [
+      3,
+      43
+     ],
+     [
+      5,
+      20
+     ],
+     [
+      6,
+      22
+     ],
+     [
+      7,
+      14
+     ],
+     [
+      9,
+      30
+     ],
+     [
+      10,
+      4
+     ],
+     [
+      11,
+      10
+     ],
+     [
+      13,
+      13
+     ]
+    ],
+    "names": [
+     "combineReducers",
+     "type",
+     "type",
+     "HyperState",
+     "from",
+     "from",
+     "from",
+     "from",
+     "combineReducers",
+     "ui",
+     "sessions",
+     "Reducer"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "definitionConsistency",
+  "path": "lib/reducers/index.ts",
+  "line": 0,
+  "character": 15,
+  "extra": "from:lib/reducers/index.ts:9:22"
+ },
+ "ops": [],
+ "case": {
+  "loc": [
+   "lib/reducers/index.ts",
+   0,
+   8,
+   0,
+   23
+  ],
+  "sub": "d",
+  "target": [
+   "lib/reducers/index.ts",
+   9,
+   22
+  ]
+ },
+ "shape": "definitionConsistency:extra",
+ "signature": "ts6|r3_routes|definitionConsistency:extra",
+ "expected": [
+  [
+   "node_modules/redux/index.d.ts",
+   180,
+   16,
+   180,
+   31
+  ]
+ ],
+ "actual": [
+  [
+   "node_modules/redux/index.d.ts",
+   177,
+   16,
+   177,
+   31
+  ],
+  [
+   "node_modules/redux/index.d.ts",
+   180,
+   16,
+   180,
+   31
+  ],
+  [
+   "node_modules/redux/index.d.ts",
+   183,
+   16,
+   183,
+   31
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "flake 3/3 [r1:SCR r2:SCR r3:SCR] in 464s",
+ "violation": {
+  "oracle": "r3_routes",
+  "server": "ts6-6.0.3",
+  "project": "vercel/hyper@30ec0a2a91de",
+  "key": {
+   "method": "definitionConsistency",
+   "path": "lib/reducers/index.ts",
+   "line": 0,
+   "character": 15,
+   "extra": "from:lib/reducers/index.ts:9:22"
+  },
+  "expected": [
+   [
+    "node_modules/redux/index.d.ts",
+    180,
+    16,
+    180,
+    31
+   ]
+  ],
+  "actual": [
+   [
+    "node_modules/redux/index.d.ts",
+    177,
+    16,
+    177,
+    31
+   ],
+   [
+    "node_modules/redux/index.d.ts",
+    180,
+    16,
+    180,
+    31
+   ],
+   [
+    "node_modules/redux/index.d.ts",
+    183,
+    16,
+    183,
+    31
+   ]
+  ],
+  "ops": [],
+  "detail": "{\"case\": {\"loc\": [\"lib/reducers/index.ts\", 0, 8, 0, 23], \"sub\": \"d\", \"target\": [\"lib/reducers/index.ts\", 9, 22]}, \"note\": \"flake 3/3 [r1:SCR r2:SCR r3:SCR] in 464s\", \"shape\": \"definitionConsistency:extra\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "ts6|r3_routes|definitionConsistency:extra",
+  "run_id": "b9a4e767437d"
+ },
+ "replay_logs": [
+  "logs/ts6-6.0.3-b9a4e767437d-r3-replay-baseline-20260923-180115-bef38e.jsonl.gz",
+  "logs/ts6-6.0.3-b9a4e767437d-r3-replay-control-20260923-180227-4f5217.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

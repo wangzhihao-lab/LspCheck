@@ -1,0 +1,42 @@
+{
+ "vid": "0081742f7574-v00",
+ "ops_before": 3,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 2,
+ "cache_hits": 0,
+ "reduce_seconds": 6.611,
+ "budget_exhausted": false,
+ "probe_log": [
+  [
+   2,
+   false
+  ],
+  [
+   2,
+   false
+  ]
+ ],
+ "logs": [
+  "ts6-6.0.3-tr1554be-r4-replay-baseline-20260925-190049-d61fc6.jsonl.gz",
+  "ts6-6.0.3-tr1554be-r4-replay-case-20260925-190035-7ab8d6.jsonl.gz",
+  "ts6-6.0.3-tr1554be-r4-replay-control-20260925-190059-eb90ed.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [],
+  "actual": [
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2304",
+    "typescript",
+    "Cannot find name 'rot'."
+   ]
+  ]
+ },
+ "ops_after": 3,
+ "total_seconds": 136.6
+}

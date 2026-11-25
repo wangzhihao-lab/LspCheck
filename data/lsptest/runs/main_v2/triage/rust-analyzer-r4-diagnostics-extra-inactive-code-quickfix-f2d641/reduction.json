@@ -1,0 +1,194 @@
+{
+ "vid": "0082cb0ebd81-v00",
+ "ops_before": 0,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 0,
+ "cache_hits": 0,
+ "reduce_seconds": 0.0,
+ "budget_exhausted": false,
+ "probe_log": [],
+ "logs": [
+  "rust-analyzer-2026-09-21-trf2d641-r4-replay-baseline-20261119-005202-bfa773.jsonl.gz",
+  "rust-analyzer-2026-09-21-trf2d641-r4-replay-case-20261119-004946-17cdb9.jsonl.gz",
+  "rust-analyzer-2026-09-21-trf2d641-r4-replay-control-20261119-005413-bf466c.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [
+   [
+    82,
+    4,
+    83,
+    45,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives: windows is disabled"
+   ],
+   [
+    103,
+    4,
+    111,
+    5,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives: windows is disabled"
+   ],
+   [
+    129,
+    4,
+    134,
+    5,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives: windows is disabled"
+   ],
+   [
+    143,
+    4,
+    148,
+    5,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives: windows is disabled"
+   ],
+   [
+    163,
+    4,
+    170,
+    5,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives: windows is disabled"
+   ],
+   [
+    181,
+    4,
+    188,
+    5,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives: windows is disabled"
+   ],
+   [
+    199,
+    4,
+    206,
+    5,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives: windows is disabled"
+   ],
+   [
+    220,
+    4,
+    230,
+    5,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives: windows is disabled"
+   ]
+  ],
+  "actual": [
+   [
+    82,
+    4,
+    83,
+    45,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives: windows is disabled"
+   ],
+   [
+    103,
+    4,
+    111,
+    5,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives: windows is disabled"
+   ],
+   [
+    129,
+    4,
+    134,
+    5,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives: windows is disabled"
+   ],
+   [
+    143,
+    4,
+    148,
+    5,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives: windows is disabled"
+   ],
+   [
+    163,
+    4,
+    170,
+    5,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives: windows is disabled"
+   ],
+   [
+    181,
+    4,
+    188,
+    5,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives: windows is disabled"
+   ],
+   [
+    199,
+    4,
+    206,
+    5,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives: windows is disabled"
+   ],
+   [
+    220,
+    4,
+    230,
+    5,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives: windows is disabled"
+   ],
+   [
+    257,
+    0,
+    284,
+    1,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives: target_os = \"linux\" is disabled"
+   ]
+  ]
+ },
+ "ops_after": 0,
+ "total_seconds": 1531.1
+}

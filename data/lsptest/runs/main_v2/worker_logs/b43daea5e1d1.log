@@ -1,0 +1,3 @@
+2026-11-18 10:11:34,937 INFO campaign_run run b43daea5e1d1: r4_edits on pyright 1.1.414, MemPalace/mempalace@c4d3711ee247 seed 1 settled, targets ['benchmarks/locomo_bench.py', 'tests/test_room_detector_local.py', 'tests/test_serve.py']
+2026-11-18 10:12:18,538 INFO campaign_run run b43daea5e1d1: 0 candidate(s) in 44s; confirming
+2026-11-18 10:12:18,539 INFO campaign_run run b43daea5e1d1 finished: ok, 0 confirmed of 0 candidate(s), 44s

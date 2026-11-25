@@ -1,0 +1,3 @@
+2026-11-18 19:10:43,705 INFO campaign_run run 9188d7d3d4da: r4_edits on rust-analyzer 2026-09-21, casey/just@6119e6aff518 seed 2 settled, targets ['src/item.rs', 'src/reference.rs', 'tests/mapped_dependencies.rs']
+2026-11-18 19:11:23,264 INFO campaign_run run 9188d7d3d4da: 0 candidate(s) in 40s; confirming
+2026-11-18 19:11:23,265 INFO campaign_run run 9188d7d3d4da finished: ok, 0 confirmed of 0 candidate(s), 40s

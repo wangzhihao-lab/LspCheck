@@ -1,0 +1,6 @@
+2026-11-18 12:35:59,473 INFO campaign_run run 08c8c634e424: r3_routes on ts6 6.0.3, solidjs/solid@4b62bc29e04b seed 2 settled, targets ['examples/rendering/shared/src/router.tsx', 'packages/signals/tests/latest-plain-write-purity.test.ts', 'packages/web/test/server/server-functions-decoder-rejection-ownership.spec.tsx']
+2026-11-18 12:42:16,035 INFO campaign_run run 08c8c634e424: 17 candidate(s) in 377s; confirming
+2026-11-18 12:43:37,814 INFO flake replay 1/3 of ts6|r3_routes|definitionConsistency:extra: settled=True control_stable=True reproduced=True (81.8s)
+2026-11-18 12:44:47,942 INFO flake replay 2/3 of ts6|r3_routes|definitionConsistency:extra: settled=True control_stable=True reproduced=True (70.1s)
+2026-11-18 12:45:52,479 INFO flake replay 3/3 of ts6|r3_routes|definitionConsistency:extra: settled=True control_stable=True reproduced=True (64.5s)
+2026-11-18 12:45:52,678 INFO campaign_run run 08c8c634e424 finished: ok, 1 confirmed of 17 candidate(s), 594s

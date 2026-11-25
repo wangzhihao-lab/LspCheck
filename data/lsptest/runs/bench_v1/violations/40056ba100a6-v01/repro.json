@@ -1,0 +1,621 @@
+{
+ "format": 1,
+ "campaign": "bench_v1",
+ "vid": "40056ba100a6-v01",
+ "run_id": "40056ba100a6",
+ "oracle": "r5_transforms",
+ "server": {
+  "kind": "gopls",
+  "version": "v0.10.0"
+ },
+ "project": {
+  "name": "gopls-43144",
+  "source": "dir",
+  "ref": "data/lsp_bench/cases/gopls-43144/project",
+  "commit": "",
+  "language": "go"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 180.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 6,
+  "targets": [
+   {
+    "path": "bar/bar.go",
+    "positions": [
+     [
+      0,
+      9
+     ],
+     [
+      2,
+      6
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      11
+     ],
+     [
+      2,
+      8
+     ]
+    ],
+    "names": [
+     "bar",
+     "Blah"
+    ]
+   },
+   {
+    "path": "bar/bar_test.go",
+    "positions": [
+     [
+      0,
+      9
+     ],
+     [
+      2,
+      6
+     ],
+     [
+      3,
+      7
+     ],
+     [
+      3,
+      11
+     ],
+     [
+      5,
+      8
+     ],
+     [
+      6,
+      1
+     ],
+     [
+      6,
+      7
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      11
+     ],
+     [
+      2,
+      8
+     ],
+     [
+      3,
+      9
+     ],
+     [
+      3,
+      12
+     ],
+     [
+      5,
+      12
+     ],
+     [
+      6,
+      2
+     ],
+     [
+      6,
+      9
+     ]
+    ],
+    "names": [
+     "bar",
+     "Mer",
+     "Mer",
+     "M",
+     "TestBar",
+     "_",
+     "Blah"
+    ]
+   },
+   {
+    "path": "bar/bar_x_test.go",
+    "positions": [
+     [
+      0,
+      12
+     ],
+     [
+      7,
+      6
+     ],
+     [
+      8,
+      7
+     ],
+     [
+      8,
+      11
+     ],
+     [
+      10,
+      5
+     ],
+     [
+      11,
+      1
+     ],
+     [
+      11,
+      6
+     ],
+     [
+      11,
+      11
+     ],
+     [
+      12,
+      1
+     ],
+     [
+      12,
+      6
+     ],
+     [
+      12,
+      10
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      16
+     ],
+     [
+      7,
+      8
+     ],
+     [
+      8,
+      9
+     ],
+     [
+      8,
+      12
+     ],
+     [
+      10,
+      6
+     ],
+     [
+      11,
+      2
+     ],
+     [
+      11,
+      8
+     ],
+     [
+      11,
+      13
+     ],
+     [
+      12,
+      2
+     ],
+     [
+      12,
+      8
+     ],
+     [
+      12,
+      12
+     ]
+    ],
+    "names": [
+     "bar_test",
+     "Mer",
+     "Mer",
+     "M",
+     "_",
+     "_",
+     "bar",
+     "Blah",
+     "_",
+     "foo",
+     "Foo"
+    ]
+   },
+   {
+    "path": "foo/foo.go",
+    "positions": [
+     [
+      0,
+      9
+     ],
+     [
+      4,
+      7
+     ],
+     [
+      6,
+      5
+     ],
+     [
+      6,
+      8
+     ],
+     [
+      7,
+      9
+     ],
+     [
+      7,
+      26
+     ],
+     [
+      9,
+      5
+     ],
+     [
+      10,
+      1
+     ],
+     [
+      10,
+      6
+     ],
+     [
+      10,
+      11
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      11
+     ],
+     [
+      4,
+      9
+     ],
+     [
+      6,
+      6
+     ],
+     [
+      6,
+      10
+     ],
+     [
+      7,
+      14
+     ],
+     [
+      7,
+      27
+     ],
+     [
+      9,
+      6
+     ],
+     [
+      10,
+      2
+     ],
+     [
+      10,
+      8
+     ],
+     [
+      10,
+      13
+     ]
+    ],
+    "names": [
+     "foo",
+     "Foo",
+     "T",
+     "int",
+     "Interface",
+     "M",
+     "_",
+     "_",
+     "bar",
+     "Blah"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "foldingRange",
+  "path": "bar/bar_test.go",
+  "line": -1,
+  "character": -1,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "bar/bar_test.go"
+  },
+  {
+   "kind": "change",
+   "path": "bar/bar_test.go",
+   "start": [
+    3,
+    6
+   ],
+   "end": [
+    3,
+    6
+   ],
+   "text": "/* 注释🙂 */ "
+  }
+ ],
+ "case": {
+  "mapped_key": [
+   "foldingRange",
+   "bar/bar_test.go",
+   -1,
+   -1,
+   ""
+  ],
+  "transform": {
+   "back": {
+    "col": 0,
+    "eof": [],
+    "line": -1,
+    "n": 0,
+    "path": "bar/bar_test.go",
+    "w": 0
+   },
+   "edits": [
+    [
+     3,
+     6,
+     3,
+     6,
+     "/* 注释🙂 */ "
+    ]
+   ],
+   "kind": "T6",
+   "path": "bar/bar_test.go",
+   "shift": {
+    "col": 6,
+    "eof": [],
+    "line": 3,
+    "n": 0,
+    "path": "bar/bar_test.go",
+    "w": 11
+   }
+  }
+ },
+ "shape": "foldingRange:changed",
+ "signature": "gopls|r5_transforms|foldingRange:changed",
+ "expected": [
+  [
+   2,
+   16,
+   2,
+   16,
+   ""
+  ],
+  [
+   3,
+   17,
+   3,
+   20,
+   ""
+  ],
+  [
+   3,
+   24,
+   3,
+   24,
+   ""
+  ],
+  [
+   3,
+   27,
+   3,
+   27,
+   ""
+  ],
+  [
+   5,
+   13,
+   5,
+   13,
+   ""
+  ],
+  [
+   5,
+   16,
+   7,
+   -1,
+   ""
+  ]
+ ],
+ "actual": [
+  [
+   2,
+   16,
+   2,
+   16,
+   ""
+  ],
+  [
+   3,
+   24,
+   3,
+   24,
+   ""
+  ],
+  [
+   3,
+   27,
+   3,
+   27,
+   ""
+  ],
+  [
+   3,
+   6,
+   3,
+   20,
+   ""
+  ],
+  [
+   5,
+   13,
+   5,
+   13,
+   ""
+  ],
+  [
+   5,
+   16,
+   7,
+   -1,
+   ""
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "T6 bar/bar_test.go: 1 edit(s), first [3, 6, 3, 6]; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 26s",
+ "violation": {
+  "oracle": "r5_transforms",
+  "server": "gopls-v0.10.0",
+  "project": "gopls-43144",
+  "key": {
+   "method": "foldingRange",
+   "path": "bar/bar_test.go",
+   "line": -1,
+   "character": -1,
+   "extra": ""
+  },
+  "expected": [
+   [
+    2,
+    16,
+    2,
+    16,
+    ""
+   ],
+   [
+    3,
+    17,
+    3,
+    20,
+    ""
+   ],
+   [
+    3,
+    24,
+    3,
+    24,
+    ""
+   ],
+   [
+    3,
+    27,
+    3,
+    27,
+    ""
+   ],
+   [
+    5,
+    13,
+    5,
+    13,
+    ""
+   ],
+   [
+    5,
+    16,
+    7,
+    -1,
+    ""
+   ]
+  ],
+  "actual": [
+   [
+    2,
+    16,
+    2,
+    16,
+    ""
+   ],
+   [
+    3,
+    24,
+    3,
+    24,
+    ""
+   ],
+   [
+    3,
+    27,
+    3,
+    27,
+    ""
+   ],
+   [
+    3,
+    6,
+    3,
+    20,
+    ""
+   ],
+   [
+    5,
+    13,
+    5,
+    13,
+    ""
+   ],
+   [
+    5,
+    16,
+    7,
+    -1,
+    ""
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "bar/bar_test.go"
+   },
+   {
+    "kind": "change",
+    "path": "bar/bar_test.go",
+    "start": [
+     3,
+     6
+    ],
+    "end": [
+     3,
+     6
+    ],
+    "text": "/* 注释🙂 */ "
+   }
+  ],
+  "detail": "{\"case\": {\"mapped_key\": [\"foldingRange\", \"bar/bar_test.go\", -1, -1, \"\"], \"transform\": {\"back\": {\"col\": 0, \"eof\": [], \"line\": -1, \"n\": 0, \"path\": \"bar/bar_test.go\", \"w\": 0}, \"edits\": [[3, 6, 3, 6, \"/* \\u6ce8\\u91ca\\ud83d\\ude42 */ \"]], \"kind\": \"T6\", \"path\": \"bar/bar_test.go\", \"shift\": {\"col\": 6, \"eof\": [], \"line\": 3, \"n\": 0, \"path\": \"bar/bar_test.go\", \"w\": 11}}}, \"note\": \"T6 bar/bar_test.go: 1 edit(s), first [3, 6, 3, 6]; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 26s\", \"shape\": \"foldingRange:changed\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "gopls|r5_transforms|foldingRange:changed",
+  "run_id": "40056ba100a6"
+ },
+ "replay_logs": [
+  "logs/gopls-v0.10.0-40056ba100a6-r5-replay-baseline-20260924-205200-3604ad.jsonl.gz",
+  "logs/gopls-v0.10.0-40056ba100a6-r5-replay-case-20260924-205206-317300.jsonl.gz",
+  "logs/gopls-v0.10.0-40056ba100a6-r5-replay-control-20260924-205203-678768.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

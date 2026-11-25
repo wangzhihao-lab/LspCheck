@@ -1,0 +1,195 @@
+{
+ "vid": "43c648d37a2b-v01",
+ "ops_before": 11,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 15,
+ "cache_hits": 2,
+ "reduce_seconds": 245.715,
+ "budget_exhausted": false,
+ "probe_log": [
+  [
+   7,
+   false
+  ],
+  [
+   7,
+   true
+  ],
+  [
+   5,
+   false
+  ],
+  [
+   5,
+   true
+  ],
+  [
+   4,
+   false
+  ],
+  [
+   4,
+   false
+  ],
+  [
+   4,
+   true
+  ],
+  [
+   3,
+   false
+  ],
+  [
+   3,
+   true
+  ],
+  [
+   1,
+   false
+  ],
+  [
+   2,
+   false
+  ],
+  [
+   1,
+   false
+  ],
+  [
+   1,
+   false
+  ],
+  [
+   2,
+   false
+  ],
+  [
+   2,
+   false
+  ]
+ ],
+ "logs": [
+  "ts6-6.0.3-tr8ca52f-replay-baseline-20260925-164109-649202.jsonl.gz",
+  "ts6-6.0.3-tr8ca52f-replay-control-20260925-164109-3fd769.jsonl.gz",
+  "ts6-6.0.3-tr8ca52f-replay-history-20260925-164127-a11b3f.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [
+   [
+    0,
+    0,
+    0,
+    26,
+    4,
+    "6133",
+    "typescript",
+    "'React' is declared but its value is never read."
+   ],
+   [
+    1,
+    0,
+    1,
+    33,
+    4,
+    "6133",
+    "typescript",
+    "'ReactDOM' is declared but its value is never read."
+   ],
+   [
+    2,
+    24,
+    2,
+    41,
+    1,
+    "2307",
+    "typescript",
+    "Cannot find module 'react-hook-form' or its corresponding type declarations."
+   ],
+   [
+    12,
+    20,
+    12,
+    24,
+    1,
+    "7006",
+    "typescript",
+    "Parameter 'data' implicitly has an 'any' type."
+   ],
+   [
+    38,
+    33,
+    38,
+    44,
+    1,
+    "2322",
+    "typescript",
+    "Type '{ children: string; htmlFor: string; placeholder: string; }' is not assignable to type 'DetailedHTMLProps<LabelHTMLAttributes<HTMLLabelElement>, HTMLLabelElement>'. Property 'placeholder' does not exist on type 'DetailedHTMLProps<LabelHTMLAttributes<HTMLLabelElement>, HTMLLabelElement>'."
+   ]
+  ],
+  "actual": [
+   [
+    0,
+    0,
+    0,
+    26,
+    4,
+    "6133",
+    "typescript",
+    "'React' is declared but its value is never read."
+   ],
+   [
+    1,
+    0,
+    1,
+    33,
+    4,
+    "6133",
+    "typescript",
+    "'ReactDOM' is declared but its value is never read."
+   ],
+   [
+    2,
+    24,
+    2,
+    41,
+    1,
+    "2307",
+    "typescript",
+    "Cannot find module 'react-hook-form' or its corresponding type declarations."
+   ],
+   [
+    12,
+    20,
+    12,
+    24,
+    1,
+    "7006",
+    "typescript",
+    "Parameter 'data' implicitly has an 'any' type."
+   ],
+   [
+    37,
+    9,
+    37,
+    12,
+    1,
+    "2304",
+    "typescript",
+    "Cannot find name 'div'."
+   ],
+   [
+    38,
+    33,
+    38,
+    44,
+    1,
+    "2322",
+    "typescript",
+    "Type '{ children: string; htmlFor: string; placeholder: string; }' is not assignable to type 'DetailedHTMLProps<LabelHTMLAttributes<HTMLLabelElement>, HTMLLabelElement>'. Property 'placeholder' does not exist on type 'DetailedHTMLProps<LabelHTMLAttributes<HTMLLabelElement>, HTMLLabelElement>'."
+   ]
+  ]
+ },
+ "ops_after": 3,
+ "total_seconds": 406.5
+}

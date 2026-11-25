@@ -1,0 +1,3 @@
+2026-11-18 10:10:12,330 INFO campaign_run run 538ba4e6824d: r3_routes on rust-analyzer 2026-09-21, dandavison/delta@5ddd7fa66ee9 seed 1 settled, targets ['src/delta.rs', 'src/edits.rs', 'src/utils/regex_replacement.rs']
+2026-11-18 10:14:00,808 INFO campaign_run run 538ba4e6824d: 2 candidate(s) in 229s; confirming
+2026-11-18 10:14:00,808 INFO campaign_run run 538ba4e6824d finished: ok, 0 confirmed of 2 candidate(s), 228s

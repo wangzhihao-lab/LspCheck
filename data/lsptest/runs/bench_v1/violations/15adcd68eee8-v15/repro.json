@@ -1,0 +1,538 @@
+{
+ "format": 1,
+ "campaign": "bench_v1",
+ "vid": "15adcd68eee8-v15",
+ "run_id": "15adcd68eee8",
+ "oracle": "r1_history",
+ "server": {
+  "kind": "gopls",
+  "version": "v0.7.1"
+ },
+ "project": {
+  "name": "gopls-46667",
+  "source": "dir",
+  "ref": "data/lsp_bench/cases/gopls-46667/project",
+  "commit": "",
+  "language": "go"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "race0",
+  "settle_timeout_s": 180.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "a/a.go",
+    "positions": [
+     [
+      0,
+      8
+     ],
+     [
+      4,
+      6
+     ],
+     [
+      4,
+      10
+     ],
+     [
+      4,
+      12
+     ],
+     [
+      5,
+      6
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      9
+     ],
+     [
+      4,
+      7
+     ],
+     [
+      4,
+      11
+     ],
+     [
+      4,
+      13
+     ],
+     [
+      5,
+      7
+     ]
+    ],
+    "names": [
+     "a",
+     "A",
+     "b",
+     "A",
+     "B"
+    ]
+   },
+   {
+    "path": "b/b.go",
+    "positions": [
+     [
+      0,
+      8
+     ],
+     [
+      4,
+      6
+     ],
+     [
+      5,
+      6
+     ],
+     [
+      5,
+      10
+     ],
+     [
+      5,
+      12
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      9
+     ],
+     [
+      4,
+      7
+     ],
+     [
+      5,
+      7
+     ],
+     [
+      5,
+      11
+     ],
+     [
+      5,
+      13
+     ]
+    ],
+    "names": [
+     "b",
+     "A",
+     "B",
+     "a",
+     "B"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "semanticTokens",
+  "path": "a/a.go",
+  "line": -1,
+  "character": -1,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "a/a.go"
+  },
+  {
+   "kind": "open",
+   "path": "b/b.go"
+  },
+  {
+   "kind": "fs_rename",
+   "path": "a/a.go",
+   "new_path": "a/a_rt.go"
+  },
+  {
+   "kind": "fs_rename",
+   "path": "a/a_rt.go",
+   "new_path": "a/a.go"
+  }
+ ],
+ "case": {
+  "chain_step": 0,
+  "families": [],
+  "family": "H5",
+  "history_index": 0,
+  "history_seed": 1001,
+  "mode": "fresh",
+  "note": "rename a/a.go -> a/a_rt.go -> back",
+  "seed": 1,
+  "timing": "race0"
+ },
+ "shape": "semanticTokens:changed",
+ "signature": "gopls|r1_history|semanticTokens:changed",
+ "expected": [
+  [
+   0,
+   0,
+   7,
+   "keyword",
+   ""
+  ],
+  [
+   0,
+   8,
+   1,
+   "namespace",
+   ""
+  ],
+  [
+   2,
+   0,
+   6,
+   "keyword",
+   ""
+  ],
+  [
+   2,
+   17,
+   1,
+   "namespace",
+   ""
+  ],
+  [
+   4,
+   0,
+   5,
+   "keyword",
+   ""
+  ],
+  [
+   4,
+   6,
+   1,
+   "variable",
+   "definition,readonly"
+  ],
+  [
+   4,
+   10,
+   1,
+   "namespace",
+   ""
+  ],
+  [
+   4,
+   12,
+   1,
+   "variable",
+   ""
+  ],
+  [
+   5,
+   0,
+   5,
+   "keyword",
+   ""
+  ],
+  [
+   5,
+   6,
+   1,
+   "variable",
+   "definition,readonly"
+  ],
+  [
+   5,
+   10,
+   1,
+   "number",
+   ""
+  ]
+ ],
+ "actual": [
+  [
+   0,
+   0,
+   7,
+   "keyword",
+   ""
+  ],
+  [
+   0,
+   8,
+   1,
+   "namespace",
+   ""
+  ],
+  [
+   2,
+   0,
+   6,
+   "keyword",
+   ""
+  ],
+  [
+   2,
+   17,
+   1,
+   "namespace",
+   ""
+  ],
+  [
+   4,
+   0,
+   5,
+   "keyword",
+   ""
+  ],
+  [
+   4,
+   6,
+   1,
+   "variable",
+   "definition,readonly"
+  ],
+  [
+   4,
+   10,
+   1,
+   "namespace",
+   ""
+  ],
+  [
+   4,
+   12,
+   1,
+   "variable",
+   "readonly"
+  ],
+  [
+   5,
+   0,
+   5,
+   "keyword",
+   ""
+  ],
+  [
+   5,
+   6,
+   1,
+   "variable",
+   "definition,readonly"
+  ],
+  [
+   5,
+   10,
+   1,
+   "number",
+   ""
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "H5: rename a/a.go -> a/a_rt.go -> back; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 59s",
+ "violation": {
+  "oracle": "r1_history",
+  "server": "gopls-v0.7.1",
+  "project": "gopls-46667",
+  "key": {
+   "method": "semanticTokens",
+   "path": "a/a.go",
+   "line": -1,
+   "character": -1,
+   "extra": ""
+  },
+  "expected": [
+   [
+    0,
+    0,
+    7,
+    "keyword",
+    ""
+   ],
+   [
+    0,
+    8,
+    1,
+    "namespace",
+    ""
+   ],
+   [
+    2,
+    0,
+    6,
+    "keyword",
+    ""
+   ],
+   [
+    2,
+    17,
+    1,
+    "namespace",
+    ""
+   ],
+   [
+    4,
+    0,
+    5,
+    "keyword",
+    ""
+   ],
+   [
+    4,
+    6,
+    1,
+    "variable",
+    "definition,readonly"
+   ],
+   [
+    4,
+    10,
+    1,
+    "namespace",
+    ""
+   ],
+   [
+    4,
+    12,
+    1,
+    "variable",
+    ""
+   ],
+   [
+    5,
+    0,
+    5,
+    "keyword",
+    ""
+   ],
+   [
+    5,
+    6,
+    1,
+    "variable",
+    "definition,readonly"
+   ],
+   [
+    5,
+    10,
+    1,
+    "number",
+    ""
+   ]
+  ],
+  "actual": [
+   [
+    0,
+    0,
+    7,
+    "keyword",
+    ""
+   ],
+   [
+    0,
+    8,
+    1,
+    "namespace",
+    ""
+   ],
+   [
+    2,
+    0,
+    6,
+    "keyword",
+    ""
+   ],
+   [
+    2,
+    17,
+    1,
+    "namespace",
+    ""
+   ],
+   [
+    4,
+    0,
+    5,
+    "keyword",
+    ""
+   ],
+   [
+    4,
+    6,
+    1,
+    "variable",
+    "definition,readonly"
+   ],
+   [
+    4,
+    10,
+    1,
+    "namespace",
+    ""
+   ],
+   [
+    4,
+    12,
+    1,
+    "variable",
+    "readonly"
+   ],
+   [
+    5,
+    0,
+    5,
+    "keyword",
+    ""
+   ],
+   [
+    5,
+    6,
+    1,
+    "variable",
+    "definition,readonly"
+   ],
+   [
+    5,
+    10,
+    1,
+    "number",
+    ""
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "a/a.go"
+   },
+   {
+    "kind": "open",
+    "path": "b/b.go"
+   },
+   {
+    "kind": "fs_rename",
+    "path": "a/a.go",
+    "new_path": "a/a_rt.go"
+   },
+   {
+    "kind": "fs_rename",
+    "path": "a/a_rt.go",
+    "new_path": "a/a.go"
+   }
+  ],
+  "detail": "{\"case\": {\"chain_step\": 0, \"families\": [], \"family\": \"H5\", \"history_index\": 0, \"history_seed\": 1001, \"mode\": \"fresh\", \"note\": \"rename a/a.go -> a/a_rt.go -> back\", \"seed\": 1, \"timing\": \"race0\"}, \"note\": \"H5: rename a/a.go -> a/a_rt.go -> back; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 59s\", \"shape\": \"semanticTokens:changed\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "gopls|r1_history|semanticTokens:changed",
+  "run_id": "15adcd68eee8"
+ },
+ "replay_logs": [
+  "logs/gopls-v0.7.1-15adcd68eee8-replay-baseline-20260924-205631-b9847c.jsonl.gz",
+  "logs/gopls-v0.7.1-15adcd68eee8-replay-control-20260924-205631-1fb356.jsonl.gz",
+  "logs/gopls-v0.7.1-15adcd68eee8-replay-history-20260924-205642-9b4514.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

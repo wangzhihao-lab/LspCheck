@@ -1,0 +1,3 @@
+2026-11-18 15:42:09,882 INFO campaign_run run 93d7f9501755: r1_history on gopls v0.23.0, evanw/esbuild@f6058f8364fe seed 2 settled, targets ['internal/css_parser/css_decls_transform.go', 'internal/js_parser/json_parser.go', 'internal/logger/logger.go']
+2026-11-18 15:50:46,297 INFO campaign_run run 93d7f9501755: 0 candidate(s) in 517s; confirming
+2026-11-18 15:50:46,297 INFO campaign_run run 93d7f9501755 finished: ok, 0 confirmed of 0 candidate(s), 516s

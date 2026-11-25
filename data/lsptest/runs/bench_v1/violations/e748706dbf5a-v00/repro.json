@@ -1,0 +1,177 @@
+{
+ "format": 1,
+ "campaign": "bench_v1",
+ "vid": "e748706dbf5a-v00",
+ "run_id": "e748706dbf5a",
+ "oracle": "r1_history",
+ "server": {
+  "kind": "gopls",
+  "version": "v0.5.0"
+ },
+ "project": {
+  "name": "gopls-41057",
+  "source": "dir",
+  "ref": "data/lsp_bench/cases/gopls-41057/project",
+  "commit": "",
+  "language": "go"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 180.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "main.go",
+    "positions": [
+     [
+      0,
+      10
+     ],
+     [
+      5,
+      7
+     ],
+     [
+      6,
+      4
+     ],
+     [
+      6,
+      7
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      12
+     ],
+     [
+      5,
+      10
+     ],
+     [
+      6,
+      5
+     ],
+     [
+      6,
+      9
+     ]
+    ],
+    "names": [
+     "main",
+     "Gronk",
+     "d",
+     "New"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "codeAction",
+  "path": "main.go",
+  "line": 6,
+  "character": 4,
+  "extra": "diag:6:9"
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "main.go"
+  },
+  {
+   "kind": "fs_rename",
+   "path": "main.go",
+   "new_path": "main_rt.go"
+  },
+  {
+   "kind": "fs_rename",
+   "path": "main_rt.go",
+   "new_path": "main.go"
+  }
+ ],
+ "case": {
+  "chain_step": 0,
+  "families": [],
+  "family": "H5",
+  "history_index": 1,
+  "history_seed": 2002,
+  "mode": "fresh",
+  "note": "rename main.go -> main_rt.go -> back",
+  "seed": 2,
+  "timing": "settled"
+ },
+ "shape": "codeAction:key-lost",
+ "signature": "gopls|r1_history|codeAction:key-lost",
+ "expected": [
+  [
+   "Extract to variable",
+   "refactor.extract"
+  ],
+  [
+   "Organize Imports",
+   "source.organizeImports"
+  ]
+ ],
+ "actual": [
+  "missing-key"
+ ],
+ "reproduced": "3/3",
+ "note": "H5: rename main.go -> main_rt.go -> back; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 103s",
+ "violation": {
+  "oracle": "r1_history",
+  "server": "gopls-v0.5.0",
+  "project": "gopls-41057",
+  "key": {
+   "method": "codeAction",
+   "path": "main.go",
+   "line": 6,
+   "character": 4,
+   "extra": "diag:6:9"
+  },
+  "expected": [
+   [
+    "Extract to variable",
+    "refactor.extract"
+   ],
+   [
+    "Organize Imports",
+    "source.organizeImports"
+   ]
+  ],
+  "actual": [
+   "missing-key"
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "main.go"
+   },
+   {
+    "kind": "fs_rename",
+    "path": "main.go",
+    "new_path": "main_rt.go"
+   },
+   {
+    "kind": "fs_rename",
+    "path": "main_rt.go",
+    "new_path": "main.go"
+   }
+  ],
+  "detail": "{\"case\": {\"chain_step\": 0, \"families\": [], \"family\": \"H5\", \"history_index\": 1, \"history_seed\": 2002, \"mode\": \"fresh\", \"note\": \"rename main.go -> main_rt.go -> back\", \"seed\": 2, \"timing\": \"settled\"}, \"note\": \"H5: rename main.go -> main_rt.go -> back; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 103s\", \"shape\": \"codeAction:key-lost\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "gopls|r1_history|codeAction:key-lost",
+  "run_id": "e748706dbf5a"
+ },
+ "replay_logs": [
+  "logs/gopls-v0.5.0-e748706dbf5a-replay-baseline-20260925-053454-9e7a99.jsonl.gz",
+  "logs/gopls-v0.5.0-e748706dbf5a-replay-control-20260925-053454-70c62e.jsonl.gz",
+  "logs/gopls-v0.5.0-e748706dbf5a-replay-history-20260925-053502-c7d9b9.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

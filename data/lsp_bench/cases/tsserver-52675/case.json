@@ -1,0 +1,67 @@
+{
+ "schema": 1,
+ "id": "tsserver-52675",
+ "meta": {
+  "server": "tsserver",
+  "kind": "tsserver",
+  "number": 52675,
+  "url": "https://github.com/microsoft/TypeScript/issues/52675",
+  "title": "String literal completions right after quote",
+  "oracle_class": "R4",
+  "subtype": "completion",
+  "fix_ref": "microsoft/TypeScript#52676 (Exclude literal completions after closing quote and JSX attribute location), 0e357f510b, 2023-02-28; git tag --contains: first in v5.1-beta / v5.1.3",
+  "fix_shas": [
+   "0e357f510b09e5dbbe2dccce8033457890386d55"
+  ],
+  "pre_version": "5.0.4",
+  "post_version": "5.1.3",
+  "pre_build": "5.0.4+tsls3.3.2",
+  "post_build": "5.1.3+tsls3.3.2",
+  "wrapper": "typescript-language-server@3.3.2",
+  "build_notes": "npm typescript@5.0.4 (2023-04-07) and typescript@5.1.3 (2023-06-01), both behind typescript-language-server@3.3.2 (the latest wrapper release before 5.1.3), started with the pinned tsserver.js; the reported TypeScript version is checked on every session.",
+  "candidate_rank": 27,
+  "effort_minutes": 4,
+  "notes": "The fix stops offering literal completions right after a closing quote, so a post-fix list without the literal is 'absent' (missing: absent)."
+ },
+ "language": "typescript",
+ "settings": {},
+ "settings_note": "The issue names no settings (playground defaults); no tsconfig.json, so tsserver uses an inferred project.",
+ "session": {
+  "settle_timeout_s": 120
+ },
+ "files": [
+  {
+   "path": "index.ts",
+   "provenance": "issue",
+   "source": "issue body, Code block",
+   "note": "the comment line is part of the issue's code"
+  }
+ ],
+ "repro": {
+  "attempt": 1,
+  "timing": "settled",
+  "steps": "Open index.ts and trigger suggestions right after the last quote of \"const a: 'a' = ''\" (line 2, character 17). Reported: the string literal completion 'a' is offered; expected: no string literal completions there. Accepting it appends a second string literal after the closing quote. Probe: accept the offered literal item; the edited text must not have a parse error the original did not have. No such item offered counts as absent.",
+  "ops": [
+   {
+    "kind": "open",
+    "path": "index.ts"
+   }
+  ],
+  "probe": {
+   "type": "edit_breaks_syntax",
+   "params": {
+    "edit": {
+     "via": "completion",
+     "path": "index.ts",
+     "position": [
+      1,
+      17
+     ],
+     "label_re": "^[\"']a[\"']$",
+     "missing": "absent"
+    }
+   }
+  }
+ },
+ "attempts": []
+}

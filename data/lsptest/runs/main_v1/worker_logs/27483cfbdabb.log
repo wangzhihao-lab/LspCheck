@@ -1,0 +1,3 @@
+2026-09-24 02:06:25,759 INFO campaign_run run 27483cfbdabb: r2_handles on rust-analyzer 2026-09-21, AlexsJones/llmfit@2ffe4fd899a6 seed 2 settled, targets ['llmfit-core/src/claim.rs', 'llmfit-core/src/fit.rs', 'llmfit-tui/src/serve_api.rs']
+2026-09-24 02:14:48,326 INFO campaign_run run 27483cfbdabb: 2 candidate(s) in 503s; confirming
+2026-09-24 02:14:48,330 INFO campaign_run run 27483cfbdabb finished: ok, 0 confirmed of 2 candidate(s), 503s

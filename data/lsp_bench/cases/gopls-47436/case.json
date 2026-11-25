@@ -1,0 +1,132 @@
+{
+ "schema": 1,
+ "id": "gopls-47436",
+ "meta": {
+  "server": "gopls",
+  "kind": "gopls",
+  "number": 47436,
+  "url": "https://github.com/golang/go/issues/47436",
+  "title": "x/tools/gopls: stale embed diagnostics when preceded by const block",
+  "oracle_class": "R1",
+  "subtype": "edit-undo",
+  "fix_ref": "golang/tools@d529aec52f04 (internal/lsp/cache: parse files with ParseFull mode to check if metadata reload is required; CL 339469)",
+  "fix_shas": [
+   "d529aec52f04f4eb53892bd1871e21e457193c95"
+  ],
+  "pre_version": "v0.7.1",
+  "post_version": "v0.7.2",
+  "pre_build": "v0.7.1",
+  "post_build": "v0.7.2",
+  "build_notes": "go install golang.org/x/tools/gopls@<version> with the local Go (go1.27.1), which builds both; the server runs the local go command, whose go list reports the embed pattern error. v0.7.1 was tagged 2021-08-02, the fix merged 2021-08-06, v0.7.2 was tagged 2021-09-08.",
+  "candidate_rank": 37,
+  "effort_minutes": 12,
+  "notes": "gopls decided whether a change needs a metadata reload (go list) from an imports-only parse; a //go:embed directive after other declarations (the const block) was not seen by that parse, so editing the directive did not re-run go list and the go list error 'pattern *.txt: no matching files found' stayed. The fix parses the file fully for that check."
+ },
+ "language": "go",
+ "settings": {},
+ "settings_note": "The issue names no settings (the reporter used govim's defaults).",
+ "session": {
+  "settle_timeout_s": 180
+ },
+ "files": [
+  {
+   "path": "main.go",
+   "provenance": "issue",
+   "source": "issue body, second txtar (the failing one), section '-- main.go --'",
+   "note": ""
+  },
+  {
+   "path": "dir/file.txt",
+   "provenance": "issue",
+   "source": "issue body, second txtar, section '-- dir/file.txt --' (empty)",
+   "note": ""
+  },
+  {
+   "path": "dir/other.go",
+   "provenance": "issue",
+   "source": "issue body, second txtar, section '-- dir/other.go --' (empty)",
+   "note": ""
+  },
+  {
+   "path": "go.mod",
+   "provenance": "scaffold",
+   "source": "",
+   "note": "a module around the txtar (the reporter's log shows the package loaded by go list in a temporary directory); go 1.16, the release that added //go:embed"
+  }
+ ],
+ "repro": {
+  "attempt": 1,
+  "timing": "settled",
+  "steps": "Open main.go: go list reports 'pattern *.txt: no matching files found' on the //go:embed line (line 8). Fix the directive by typing 'dir/' before '*.txt', as in the reporter's log bad_part1.log (four whole-line didChange edits: d, di, dir, dir/). Reported: the diagnostic does not disappear. Probe: the diagnostics of main.go after the edits are compared with a fresh session on the fixed text (the reporter's restart, after which the diagnostic is gone) and a fresh control.",
+  "ops": [
+   {
+    "kind": "open",
+    "path": "main.go"
+   },
+   {
+    "kind": "change",
+    "path": "main.go",
+    "start": [
+     8,
+     0
+    ],
+    "end": [
+     9,
+     0
+    ],
+    "text": "//go:embed main.go d*.txt\n"
+   },
+   {
+    "kind": "change",
+    "path": "main.go",
+    "start": [
+     8,
+     0
+    ],
+    "end": [
+     9,
+     0
+    ],
+    "text": "//go:embed main.go di*.txt\n"
+   },
+   {
+    "kind": "change",
+    "path": "main.go",
+    "start": [
+     8,
+     0
+    ],
+    "end": [
+     9,
+     0
+    ],
+    "text": "//go:embed main.go dir*.txt\n"
+   },
+   {
+    "kind": "change",
+    "path": "main.go",
+    "start": [
+     8,
+     0
+    ],
+    "end": [
+     9,
+     0
+    ],
+    "text": "//go:embed main.go dir/*.txt\n"
+   }
+  ],
+  "probe": {
+   "type": "differs_from_fresh",
+   "params": {
+    "queries": [
+     {
+      "method": "diagnostics",
+      "path": "main.go"
+     }
+    ]
+   }
+  }
+ },
+ "attempts": []
+}

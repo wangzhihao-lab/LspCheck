@@ -1,0 +1,596 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "ced4ef795b99-v01",
+ "run_id": "ced4ef795b99",
+ "oracle": "r4_edits",
+ "server": {
+  "kind": "gopls",
+  "version": "v0.23.0"
+ },
+ "project": {
+  "name": "fatedier/frp@d20a23299600",
+  "source": "corpus",
+  "ref": "temp/corpus/fatedier__frp@d20a23299600",
+  "commit": "d20a232996007dfe6ab425abc0a39a3ae9a0889b",
+  "language": "go"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "pkg/config/legacy/value.go",
+    "positions": [
+     [
+      23,
+      26
+     ],
+     [
+      28,
+      9
+     ],
+     [
+      43,
+      4
+     ],
+     [
+      47,
+      11
+     ],
+     [
+      48,
+      27
+     ],
+     [
+      50,
+      3
+     ],
+     [
+      54,
+      13
+     ],
+     [
+      56,
+      2
+     ],
+     [
+      57,
+      12
+     ],
+     [
+      65,
+      5
+     ],
+     [
+      71,
+      7
+     ],
+     [
+      71,
+      18
+     ]
+    ],
+    "ends": [
+     [
+      23,
+      29
+     ],
+     [
+      28,
+      11
+     ],
+     [
+      43,
+      6
+     ],
+     [
+      47,
+      18
+     ],
+     [
+      48,
+      29
+     ],
+     [
+      50,
+      5
+     ],
+     [
+      54,
+      16
+     ],
+     [
+      56,
+      4
+     ],
+     [
+      57,
+      14
+     ],
+     [
+      65,
+      6
+     ],
+     [
+      71,
+      9
+     ],
+     [
+      71,
+      25
+     ]
+    ],
+    "names": [
+     "string",
+     "env",
+     "Envs",
+     "RenderContent",
+     "New",
+     "err",
+     "bytes",
+     "err",
+     "nil",
+     "b",
+     "err",
+     "RenderContent"
+    ]
+   },
+   {
+    "path": "pkg/config/load_test.go",
+    "positions": [
+     [
+      108,
+      22
+     ],
+     [
+      211,
+      2
+     ],
+     [
+      214,
+      2
+     ],
+     [
+      313,
+      27
+     ],
+     [
+      326,
+      99
+     ],
+     [
+      379,
+      4
+     ],
+     [
+      440,
+      9
+     ],
+     [
+      450,
+      10
+     ],
+     [
+      456,
+      57
+     ],
+     [
+      466,
+      25
+     ],
+     [
+      555,
+      5
+     ],
+     [
+      709,
+      4
+     ]
+    ],
+    "ends": [
+     [
+      108,
+      24
+     ],
+     [
+      211,
+      4
+     ],
+     [
+      214,
+      4
+     ],
+     [
+      313,
+      36
+     ],
+     [
+      326,
+      108
+     ],
+     [
+      379,
+      8
+     ],
+     [
+      440,
+      17
+     ],
+     [
+      450,
+      19
+     ],
+     [
+      456,
+      58
+     ],
+     [
+      466,
+      46
+     ],
+     [
+      555,
+      6
+     ],
+     [
+      709,
+      8
+     ]
+    ],
+    "names": [
+     "err",
+     "err",
+     "err",
+     "XTCPVisitorConfig",
+     "VisitorConfigurer",
+     "require",
+     "proxyDropByStart",
+     "proxyDropByEnabled",
+     "v1",
+     "TestLoadClientConfigResult_DuplicateNames",
+     "_",
+     "require"
+    ]
+   },
+   {
+    "path": "pkg/transport/tls.go",
+    "positions": [
+     [
+      50,
+      19
+     ],
+     [
+      56,
+      18
+     ],
+     [
+      56,
+      38
+     ],
+     [
+      69,
+      12
+     ],
+     [
+      80,
+      36
+     ],
+     [
+      83,
+      3
+     ],
+     [
+      83,
+      30
+     ],
+     [
+      88,
+      31
+     ],
+     [
+      120,
+      21
+     ],
+     [
+      127,
+      65
+     ],
+     [
+      147,
+      4
+     ],
+     [
+      161,
+      37
+     ]
+    ],
+    "ends": [
+     [
+      50,
+      21
+     ],
+     [
+      56,
+      20
+     ],
+     [
+      56,
+      40
+     ],
+     [
+      69,
+      14
+     ],
+     [
+      80,
+      38
+     ],
+     [
+      83,
+      6
+     ],
+     [
+      83,
+      33
+     ],
+     [
+      88,
+      34
+     ],
+     [
+      120,
+      23
+     ],
+     [
+      127,
+      68
+     ],
+     [
+      147,
+      6
+     ],
+     [
+      161,
+      40
+     ]
+    ],
+    "names": [
+     "Sign",
+     "time",
+     "time",
+     "pem",
+     "x509",
+     "caCrt",
+     "caPath",
+     "caCrt",
+     "tls",
+     "string",
+     "base",
+     "Block"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "diagnostics",
+  "path": "pkg/config/legacy/value.go",
+  "line": 65,
+  "character": 5,
+  "extra": "M3:quickfix-errors:Remove variable b"
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "pkg/config/legacy/value.go"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/config/legacy/value.go",
+   "start": [
+    71,
+    26
+   ],
+   "end": [
+    71,
+    27
+   ]
+  },
+  {
+   "kind": "change",
+   "path": "pkg/config/legacy/value.go",
+   "start": [
+    65,
+    1
+   ],
+   "end": [
+    66,
+    1
+   ]
+  }
+ ],
+ "case": {
+  "action_kind": "quickfix",
+  "base_errors": 0,
+  "check": "errors",
+  "diag": {
+   "code": "UnusedVar",
+   "message": "declared and not used: b",
+   "range": {
+    "end": {
+     "character": 6,
+     "line": 65
+    },
+    "start": {
+     "character": 5,
+     "line": 65
+    }
+   },
+   "severity": 1
+  },
+  "fix_introduced_errors": [
+   {
+    "code": "UndeclaredName",
+    "message": "undefined: b",
+    "path": "pkg/config/legacy/value.go",
+    "range": {
+     "end": {
+      "character": 2,
+      "line": 65
+     },
+     "start": {
+      "character": 1,
+      "line": 65
+     }
+    },
+    "severity": 1
+   }
+  ],
+  "fix_ops": [
+   {
+    "end": [
+     66,
+     1
+    ],
+    "kind": "change",
+    "path": "pkg/config/legacy/value.go",
+    "start": [
+     65,
+     1
+    ]
+   }
+  ],
+  "kind": "mutation",
+  "mutation": {
+   "end": [
+    71,
+    27
+   ],
+   "id": "M3",
+   "offsets": [
+    1513,
+    1514
+   ],
+   "sha": "4be532b7694195ea",
+   "start": [
+    71,
+    26
+   ],
+   "text": "",
+   "what": "drop the last argument of 'RenderContent(...)'"
+  },
+  "n_fix_ops": 1,
+  "path": "pkg/config/legacy/value.go",
+  "post_errors": 2,
+  "title": "Remove variable b",
+  "via": "edit"
+ },
+ "shape": "diagnostics:extra:UndeclaredName,WrongArgCount",
+ "signature": "gopls|r4_edits|diagnostics:extra:UndeclaredName,WrongArgCount",
+ "expected": [],
+ "actual": [
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "UndeclaredName",
+   "compiler",
+   "undefined: b"
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "WrongArgCount",
+   "compiler",
+   "not enough arguments in call to RenderContent have () want ([]byte)"
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "quick fix 'Remove variable b' for UnusedVar at pkg/config/legacy/value.go:66:6 raises the error count in the edited files from 0 to 2 (seeded by M3: drop the last argument of 'RenderContent(...)'; errors before the mutation 0, after the fix 2); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 69s",
+ "violation": {
+  "oracle": "r4_edits",
+  "server": "gopls-v0.23.0",
+  "project": "fatedier/frp@d20a23299600",
+  "key": {
+   "method": "diagnostics",
+   "path": "pkg/config/legacy/value.go",
+   "line": 65,
+   "character": 5,
+   "extra": "M3:quickfix-errors:Remove variable b"
+  },
+  "expected": [],
+  "actual": [
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "UndeclaredName",
+    "compiler",
+    "undefined: b"
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "WrongArgCount",
+    "compiler",
+    "not enough arguments in call to RenderContent have () want ([]byte)"
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "pkg/config/legacy/value.go"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/config/legacy/value.go",
+    "start": [
+     71,
+     26
+    ],
+    "end": [
+     71,
+     27
+    ]
+   },
+   {
+    "kind": "change",
+    "path": "pkg/config/legacy/value.go",
+    "start": [
+     65,
+     1
+    ],
+    "end": [
+     66,
+     1
+    ]
+   }
+  ],
+  "detail": "{\"case\": {\"action_kind\": \"quickfix\", \"base_errors\": 0, \"check\": \"errors\", \"diag\": {\"code\": \"UnusedVar\", \"message\": \"declared and not used: b\", \"range\": {\"end\": {\"character\": 6, \"line\": 65}, \"start\": {\"character\": 5, \"line\": 65}}, \"severity\": 1}, \"fix_introduced_errors\": [{\"code\": \"UndeclaredName\", \"message\": \"undefined: b\", \"path\": \"pkg/config/legacy/value.go\", \"range\": {\"end\": {\"character\": 2, \"line\": 65}, \"start\": {\"character\": 1, \"line\": 65}}, \"severity\": 1}], \"fix_ops\": [{\"end\": [66, 1], \"kind\": \"change\", \"path\": \"pkg/config/legacy/value.go\", \"start\": [65, 1]}], \"kind\": \"mutation\", \"mutation\": {\"end\": [71, 27], \"id\": \"M3\", \"offsets\": [1513, 1514], \"sha\": \"4be532b7694195ea\", \"start\": [71, 26], \"text\": \"\", \"what\": \"drop the last argument of 'RenderContent(...)'\"}, \"n_fix_ops\": 1, \"path\": \"pkg/config/legacy/value.go\", \"post_errors\": 2, \"title\": \"Remove variable b\", \"via\": \"edit\"}, \"note\": \"quick fix 'Remove variable b' for UnusedVar at pkg/config/legacy/value.go:66:6 raises the error count in the edited files from 0 to 2 (seeded by M3: drop the last argument of 'RenderContent(...)'; errors before the mutation 0, after the fix 2); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 69s\", \"shape\": \"diagnostics:extra:UndeclaredName,WrongArgCount\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "gopls|r4_edits|diagnostics:extra:UndeclaredName,WrongArgCount",
+  "run_id": "ced4ef795b99"
+ },
+ "replay_logs": [
+  "logs/gopls-v0.23.0-ced4ef795b99-r4-replay-baseline-20260923-162756-2b0af2.jsonl.gz",
+  "logs/gopls-v0.23.0-ced4ef795b99-r4-replay-case-20260923-162744-26b782.jsonl.gz",
+  "logs/gopls-v0.23.0-ced4ef795b99-r4-replay-control-20260923-162802-d1cc2e.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

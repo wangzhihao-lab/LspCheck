@@ -1,0 +1,6 @@
+2026-09-24 17:24:03,727 INFO campaign_run run c4155306b1d2: r5_transforms on tsserver 5.1.3+tsls3.3.2, tsserver-52675 seed 1 settled, targets ['index.ts']
+2026-09-24 17:24:23,496 INFO campaign_run run c4155306b1d2: 1 candidate(s) in 20s; confirming
+2026-09-24 17:24:30,991 INFO flake replay 1/3 of tsserver|r5_transforms|foldingRange:gained: settled=True control_stable=True reproduced=True (7.5s)
+2026-09-24 17:24:38,299 INFO flake replay 2/3 of tsserver|r5_transforms|foldingRange:gained: settled=True control_stable=True reproduced=True (7.3s)
+2026-09-24 17:24:45,673 INFO flake replay 3/3 of tsserver|r5_transforms|foldingRange:gained: settled=True control_stable=True reproduced=True (7.4s)
+2026-09-24 17:24:45,676 INFO campaign_run run c4155306b1d2 finished: ok, 1 confirmed of 1 candidate(s), 42s

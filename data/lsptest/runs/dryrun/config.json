@@ -1,0 +1,799 @@
+{
+ "campaign": "dryrun",
+ "config_file": "data/lsptest/campaigns/dryrun.json",
+ "dry_run": true,
+ "config": {
+  "id": "dryrun",
+  "description": "Dry run of main_v1: one run per (oracle, server) on the smallest eligible project (corpus size_kb) with max_cases=2, to prove the whole path and measure seconds per run before the long campaign.",
+  "corpus": "data/lsptest/corpus_prepared.json",
+  "servers": [
+   {
+    "kind": "pyright",
+    "version": "1.1.414"
+   },
+   {
+    "kind": "ts6",
+    "version": "6.0.3"
+   },
+   {
+    "kind": "ts7",
+    "version": "7.0.2"
+   },
+   {
+    "kind": "rust-analyzer",
+    "version": "2026-09-21"
+   },
+   {
+    "kind": "gopls",
+    "version": "v0.23.0"
+   }
+  ],
+  "oracles": {
+   "r0_crash": {
+    "seeds": {
+     "settled": [
+      1
+     ]
+    }
+   },
+   "r1_history": {
+    "seeds": {
+     "settled": [
+      1,
+      2,
+      3
+     ],
+     "race0": [
+      1
+     ],
+     "race200": [
+      1
+     ]
+    },
+    "max_cases": 12
+   },
+   "r2_handles": {
+    "seeds": {
+     "settled": [
+      1,
+      2
+     ]
+    },
+    "max_cases": 12
+   },
+   "r3_routes": {
+    "seeds": {
+     "settled": [
+      1,
+      2
+     ]
+    }
+   },
+   "r4_edits": {
+    "seeds": {
+     "settled": [
+      1,
+      2
+     ]
+    },
+    "max_cases": 12
+   },
+   "r5_transforms": {
+    "seeds": {
+     "settled": [
+      1,
+      2
+     ]
+    },
+    "max_cases": 6
+   },
+   "r6_crossimpl": {
+    "seeds": {
+     "settled": [
+      1,
+      2
+     ]
+    },
+    "servers": [
+     "ts7"
+    ]
+   }
+  },
+  "targets": {
+   "max_files": 3,
+   "max_positions_per_file": 12,
+   "max_file_bytes": 256000
+  },
+  "timeouts": {
+   "settle_s": 300,
+   "request_s": 30,
+   "run_s": 3600
+  },
+  "concurrency": 2,
+  "server_limits": {
+   "rust-analyzer": 1
+  },
+  "wall_clock_budget_h": 0,
+  "flake": {
+   "n": 3,
+   "per_signature": 1
+  },
+  "dry_run": {
+   "max_cases": 2,
+   "only": true
+  },
+  "eligibility": {
+   "force": [
+    {
+     "server": "ts6",
+     "repo": "ChatGPTNextWeb/NextChat",
+     "reason": "the corpus probe did not settle because of a URI-encoding bug in the probe; the engine settles this pair in 5 s"
+    }
+   ],
+   "exclude": []
+  },
+  "project_overrides": {
+   "rust-lang/rustlings": {
+    "exclude_dirs": [
+     "exercises",
+     "solutions",
+     "dev",
+     "tests"
+    ],
+    "reason": "exercise and solution files belong to no crate (rust-analyzer offers no IDE services there); as in the R2/R3/R5 pilot"
+   }
+  }
+ },
+ "server_builds": [
+  {
+   "kind": "pyright",
+   "version": "1.1.414",
+   "label": "pyright-1.1.414",
+   "cmd": [
+    "~/.local/state/fnm_multishells/22713_1790129010272/bin/node",
+    "temp/lsp_servers/pyright-1.1.414/node_modules/pyright/langserver.index.js",
+    "--stdio"
+   ],
+   "entry": "temp/lsp_servers/pyright-1.1.414/node_modules/pyright/langserver.index.js",
+   "sha256": "f200762078eb9880",
+   "package_version": "1.1.414",
+   "node": "v24.3.0"
+  },
+  {
+   "kind": "ts6",
+   "version": "6.0.3",
+   "label": "ts6-6.0.3",
+   "cmd": [
+    "~/.local/state/fnm_multishells/22713_1790129010272/bin/node",
+    "temp/lsp_servers/ts6-6.0.3/node_modules/typescript-language-server/lib/cli.mjs",
+    "--stdio"
+   ],
+   "entry": "temp/lsp_servers/ts6-6.0.3/node_modules/typescript-language-server/lib/cli.mjs",
+   "sha256": "146b113929fd41f1",
+   "package_version": "6.0.0",
+   "node": "v24.3.0"
+  },
+  {
+   "kind": "ts7",
+   "version": "7.0.2",
+   "label": "ts7-7.0.2",
+   "cmd": [
+    "temp/lsp_servers/ts7-7.0.2/node_modules/@typescript/typescript-darwin-arm64/lib/tsc",
+    "--lsp",
+    "--stdio"
+   ],
+   "entry": "temp/lsp_servers/ts7-7.0.2/node_modules/@typescript/typescript-darwin-arm64/lib/tsc",
+   "sha256": "a82f731365ad69d5",
+   "package_version": "7.0.2"
+  },
+  {
+   "kind": "rust-analyzer",
+   "version": "2026-09-21",
+   "label": "rust-analyzer-2026-09-21",
+   "cmd": [
+    "temp/lsp_servers/rust-analyzer-2026-09-21/rust-analyzer"
+   ],
+   "entry": "temp/lsp_servers/rust-analyzer-2026-09-21/rust-analyzer",
+   "sha256": "c960485d618e126a",
+   "package_version": ""
+  },
+  {
+   "kind": "gopls",
+   "version": "v0.23.0",
+   "label": "gopls-v0.23.0",
+   "cmd": [
+    "temp/lsp_servers/gopls-v0.23.0/gopls",
+    "serve"
+   ],
+   "entry": "temp/lsp_servers/gopls-v0.23.0/gopls",
+   "sha256": "a8b4a156c328a03f",
+   "package_version": ""
+  }
+ ],
+ "machine": {
+  "platform": "macOS-27.0-arm64-arm-64bit-Mach-O",
+  "mac_ver": "27.0",
+  "machine": "arm64",
+  "python": "3.14.7",
+  "cpus": 10
+ },
+ "projects": {
+  "AlexsJones/llmfit@2ffe4fd899a6": {
+   "repo": "AlexsJones/llmfit",
+   "commit": "2ffe4fd899a66852dda82783da7ab8390f084d1c",
+   "dir": "temp/corpus/AlexsJones__llmfit@2ffe4fd899a6",
+   "language": "rust",
+   "size_kb": 29901
+  },
+  "BurntSushi/ripgrep@3fce3b5bb023": {
+   "repo": "BurntSushi/ripgrep",
+   "commit": "3fce3b5bb0236da2df6d99672afb8a719642eca7",
+   "dir": "temp/corpus/BurntSushi__ripgrep@3fce3b5bb023",
+   "language": "rust",
+   "size_kb": 5700
+  },
+  "ChatGPTNextWeb/NextChat@defdcdb55d85": {
+   "repo": "ChatGPTNextWeb/NextChat",
+   "commit": "defdcdb55d850cd12c4c657eb83729fd66e215c0",
+   "dir": "temp/corpus/ChatGPTNextWeb__NextChat@defdcdb55d85",
+   "language": "typescript",
+   "size_kb": 21025
+  },
+  "ChromeDevTools/chrome-devtools-mcp@2250cdcde4aa": {
+   "repo": "ChromeDevTools/chrome-devtools-mcp",
+   "commit": "2250cdcde4aad79d54101c80346df4190e0c2da7",
+   "dir": "temp/corpus/ChromeDevTools__chrome-devtools-mcp@2250cdcde4aa",
+   "language": "typescript",
+   "size_kb": 11224
+  },
+  "D4Vinci/Scrapling@08f107b1240f": {
+   "repo": "D4Vinci/Scrapling",
+   "commit": "08f107b1240fd72847b0f5e10426c7e6cc16e67e",
+   "dir": "temp/corpus/D4Vinci__Scrapling@08f107b1240f",
+   "language": "python",
+   "size_kb": 10509
+  },
+  "Fission-AI/OpenSpec@f179ed4e4056": {
+   "repo": "Fission-AI/OpenSpec",
+   "commit": "f179ed4e40567cdb56501ee3f4d09efbcb1557b8",
+   "dir": "temp/corpus/Fission-AI__OpenSpec@f179ed4e4056",
+   "language": "typescript",
+   "size_kb": 9603
+  },
+  "FuelLabs/fuels-rs@d9a250a51818": {
+   "repo": "FuelLabs/fuels-rs",
+   "commit": "d9a250a51818dda64bfeb5ef7cc19cf27bdcd623",
+   "dir": "temp/corpus/FuelLabs__fuels-rs@d9a250a51818",
+   "language": "rust",
+   "size_kb": 20144
+  },
+  "Graphify-Labs/graphify@a5957aa6ef51": {
+   "repo": "Graphify-Labs/graphify",
+   "commit": "a5957aa6ef51c9be8d054de9783d25046c187f3f",
+   "dir": "temp/corpus/Graphify-Labs__graphify@a5957aa6ef51",
+   "language": "python",
+   "size_kb": 18524
+  },
+  "Panniantong/Agent-Reach@a19a171fa980": {
+   "repo": "Panniantong/Agent-Reach",
+   "commit": "a19a171fa980a0785849596492e0af4db800c82f",
+   "dir": "temp/corpus/Panniantong__Agent-Reach@a19a171fa980",
+   "language": "python",
+   "size_kb": 2024
+  },
+  "TauricResearch/TradingAgents@2d17df8da153": {
+   "repo": "TauricResearch/TradingAgents",
+   "commit": "2d17df8da1536c121e4d7395ac5a5dcec9e96d6f",
+   "dir": "temp/corpus/TauricResearch__TradingAgents@2d17df8da153",
+   "language": "python",
+   "size_kb": 5685
+  },
+  "TheAlgorithms/Python@60cea20f8537": {
+   "repo": "TheAlgorithms/Python",
+   "commit": "60cea20f8537466e90b019f2a8fb2714165d10c5",
+   "dir": "temp/corpus/TheAlgorithms__Python@60cea20f8537",
+   "language": "python",
+   "size_kb": 18225
+  },
+  "XTLS/Xray-core@d562d8947d31": {
+   "repo": "XTLS/Xray-core",
+   "commit": "d562d8947d3175db86b4fa849742433a9876cb63",
+   "dir": "temp/corpus/XTLS__Xray-core@d562d8947d31",
+   "language": "go",
+   "size_kb": 31291
+  },
+  "Z4nzu/hackingtool@ef5334f8d37e": {
+   "repo": "Z4nzu/hackingtool",
+   "commit": "ef5334f8d37e5be2eecbf56e334f5e3f0f6817ec",
+   "dir": "temp/corpus/Z4nzu__hackingtool@ef5334f8d37e",
+   "language": "python",
+   "size_kb": 6457
+  },
+  "alacritty/alacritty@d692748d3f61": {
+   "repo": "alacritty/alacritty",
+   "commit": "d692748d3f61253ebe9f5094320120d22f6a046f",
+   "dir": "temp/corpus/alacritty__alacritty@d692748d3f61",
+   "language": "rust",
+   "size_kb": 14582
+  },
+  "browser-use/browser-use@d8110c5ff87c": {
+   "repo": "browser-use/browser-use",
+   "commit": "d8110c5ff87ccba887aaa726cdb780f2f84bef8d",
+   "dir": "temp/corpus/browser-use__browser-use@d8110c5ff87c",
+   "language": "python",
+   "size_kb": 36756
+  },
+  "caddyserver/caddy@c18099a0af5e": {
+   "repo": "caddyserver/caddy",
+   "commit": "c18099a0af5e88c8d9da0b9d797f6f2c62d60a23",
+   "dir": "temp/corpus/caddyserver__caddy@c18099a0af5e",
+   "language": "go",
+   "size_kb": 21853
+  },
+  "charmbracelet/bubbletea@657aaae216e3": {
+   "repo": "charmbracelet/bubbletea",
+   "commit": "657aaae216e3f87df09b60959a9fe5de7b2ca419",
+   "dir": "temp/corpus/charmbracelet__bubbletea@657aaae216e3",
+   "language": "go",
+   "size_kb": 5914
+  },
+  "chenglou/pretext@2e5e2bdaee39": {
+   "repo": "chenglou/pretext",
+   "commit": "2e5e2bdaee398784b9cf27b24ca96df2e85396b8",
+   "dir": "temp/corpus/chenglou__pretext@2e5e2bdaee39",
+   "language": "typescript",
+   "size_kb": 30160
+  },
+  "dani-garcia/vaultwarden@cc67d644f626": {
+   "repo": "dani-garcia/vaultwarden",
+   "commit": "cc67d644f62605cb46f4d16c4a2eed1a861cc8bb",
+   "dir": "temp/corpus/dani-garcia__vaultwarden@cc67d644f626",
+   "language": "rust",
+   "size_kb": 12626
+  },
+  "fatedier/frp@d20a23299600": {
+   "repo": "fatedier/frp",
+   "commit": "d20a232996007dfe6ab425abc0a39a3ae9a0889b",
+   "dir": "temp/corpus/fatedier__frp@d20a23299600",
+   "language": "go",
+   "size_kb": 32737
+  },
+  "gin-gonic/gin@3b08cd7235bd": {
+   "repo": "gin-gonic/gin",
+   "commit": "3b08cd7235bd5ad2f055aa9e38135f111f6c5926",
+   "dir": "temp/corpus/gin-gonic__gin@3b08cd7235bd",
+   "language": "go",
+   "size_kb": 10691
+  },
+  "github/spec-kit@67ab049e8d43": {
+   "repo": "github/spec-kit",
+   "commit": "67ab049e8d43d59d7092531fd0f1ff56943ad015",
+   "dir": "temp/corpus/github__spec-kit@67ab049e8d43",
+   "language": "python",
+   "size_kb": 18531
+  },
+  "hiyouga/LlamaFactory@97b32d3133b5": {
+   "repo": "hiyouga/LlamaFactory",
+   "commit": "97b32d3133b501432141a82949d5c7bc4d94f23a",
+   "dir": "temp/corpus/hiyouga__LlamaFactory@97b32d3133b5",
+   "language": "python",
+   "size_kb": 14039
+  },
+  "jesseduffield/lazydocker@7e7aadc2071d": {
+   "repo": "jesseduffield/lazydocker",
+   "commit": "7e7aadc2071d58031bf2daafca1fbd4093efc23f",
+   "dir": "temp/corpus/jesseduffield__lazydocker@7e7aadc2071d",
+   "language": "go",
+   "size_kb": 30218
+  },
+  "junegunn/fzf@b1be3a8be1b8": {
+   "repo": "junegunn/fzf",
+   "commit": "b1be3a8be1b833ce5b92fbbac11637643d60a046",
+   "dir": "temp/corpus/junegunn__fzf@b1be3a8be1b8",
+   "language": "go",
+   "size_kb": 8439
+  },
+  "lapce/lapce@b604d57de4a8": {
+   "repo": "lapce/lapce",
+   "commit": "b604d57de4a820006d335a3be0d7583eb8fab558",
+   "dir": "temp/corpus/lapce__lapce@b604d57de4a8",
+   "language": "rust",
+   "size_kb": 28666
+  },
+  "modelcontextprotocol/servers@f46d9578190b": {
+   "repo": "modelcontextprotocol/servers",
+   "commit": "f46d9578190b476b3501923ea8977d899e8db2cb",
+   "dir": "temp/corpus/modelcontextprotocol__servers@f46d9578190b",
+   "language": "typescript",
+   "size_kb": 29607
+  },
+  "nektos/act@4f411281417e": {
+   "repo": "nektos/act",
+   "commit": "4f411281417e88660bea1c1a1749aa71ae0bd60f",
+   "dir": "temp/corpus/nektos__act@4f411281417e",
+   "language": "go",
+   "size_kb": 17748
+  },
+  "pallets/flask@d73fa1cdcbd8": {
+   "repo": "pallets/flask",
+   "commit": "d73fa1cdcbd8b1465c151db8924ba58b1dd14e35",
+   "dir": "temp/corpus/pallets__flask@d73fa1cdcbd8",
+   "language": "python",
+   "size_kb": 12311
+  },
+  "pmndrs/zustand@b57db4f86ef1": {
+   "repo": "pmndrs/zustand",
+   "commit": "b57db4f86ef179285da216eeb291266da82c361c",
+   "dir": "temp/corpus/pmndrs__zustand@b57db4f86ef1",
+   "language": "typescript",
+   "size_kb": 8115
+  },
+  "react-hook-form/react-hook-form@5fd9ef65290b": {
+   "repo": "react-hook-form/react-hook-form",
+   "commit": "5fd9ef65290bef2ccaa7ac96dc8d5d55478b5410",
+   "dir": "temp/corpus/react-hook-form__react-hook-form@5fd9ef65290b",
+   "language": "typescript",
+   "size_kb": 32459
+  },
+  "reduxjs/redux@fb3bad6804d6": {
+   "repo": "reduxjs/redux",
+   "commit": "fb3bad6804d651b8ae0e909f32765beb989ba6f8",
+   "dir": "temp/corpus/reduxjs__redux@fb3bad6804d6",
+   "language": "typescript",
+   "size_kb": 35956
+  },
+  "router-for-me/CLIProxyAPI@673131f57484": {
+   "repo": "router-for-me/CLIProxyAPI",
+   "commit": "673131f57484517c3a1eae7e36c4cfa7b9bb4efc",
+   "dir": "temp/corpus/router-for-me__CLIProxyAPI@673131f57484",
+   "language": "go",
+   "size_kb": 38269
+  },
+  "rtk-ai/rtk@b748a5f75563": {
+   "repo": "rtk-ai/rtk",
+   "commit": "b748a5f75563f410103551689097650be7210d99",
+   "dir": "temp/corpus/rtk-ai__rtk@b748a5f75563",
+   "language": "rust",
+   "size_kb": 9872
+  },
+  "rust-lang/rustlings@a650509c789d": {
+   "repo": "rust-lang/rustlings",
+   "commit": "a650509c789da1656f813392b16aa1fa043b7f3e",
+   "dir": "temp/corpus/rust-lang__rustlings@a650509c789d",
+   "language": "rust",
+   "size_kb": 4464
+  },
+  "sharkdp/bat@4987f76709aa": {
+   "repo": "sharkdp/bat",
+   "commit": "4987f76709aae3a1c4db723c53874c9ddcb0c4fd",
+   "dir": "temp/corpus/sharkdp__bat@4987f76709aa",
+   "language": "rust",
+   "size_kb": 35177
+  },
+  "spf13/cobra@adbc8813901b": {
+   "repo": "spf13/cobra",
+   "commit": "adbc8813901bba65827259daa8e22ff94ec1f30e",
+   "dir": "temp/corpus/spf13__cobra@adbc8813901b",
+   "language": "go",
+   "size_kb": 2107
+  },
+  "sxyazi/yazi@0ea4c5d9ef75": {
+   "repo": "sxyazi/yazi",
+   "commit": "0ea4c5d9ef75d7165c2e3b4eb8d713fc11f26c96",
+   "dir": "temp/corpus/sxyazi__yazi@0ea4c5d9ef75",
+   "language": "rust",
+   "size_kb": 9901
+  },
+  "upstash/context7@6477e43e31d2": {
+   "repo": "upstash/context7",
+   "commit": "6477e43e31d27a5c1bc044506e1c14de15f8a110",
+   "dir": "temp/corpus/upstash__context7@6477e43e31d2",
+   "language": "typescript",
+   "size_kb": 37780
+  },
+  "vercel/hyper@30ec0a2a91de": {
+   "repo": "vercel/hyper",
+   "commit": "30ec0a2a91de17eeb32dd71998fe8a8ec59f98eb",
+   "dir": "temp/corpus/vercel__hyper@30ec0a2a91de",
+   "language": "typescript",
+   "size_kb": 23469
+  }
+ },
+ "eligible_pairs": [
+  {
+   "server": "rust-analyzer",
+   "project": "rust-lang/rustlings@a650509c789d",
+   "forced": ""
+  },
+  {
+   "server": "gopls",
+   "project": "spf13/cobra@adbc8813901b",
+   "forced": ""
+  },
+  {
+   "server": "ts6",
+   "project": "modelcontextprotocol/servers@f46d9578190b",
+   "forced": ""
+  },
+  {
+   "server": "ts7",
+   "project": "modelcontextprotocol/servers@f46d9578190b",
+   "forced": ""
+  },
+  {
+   "server": "ts6",
+   "project": "ChatGPTNextWeb/NextChat@defdcdb55d85",
+   "forced": "the corpus probe did not settle because of a URI-encoding bug in the probe; the engine settles this pair in 5 s"
+  },
+  {
+   "server": "ts7",
+   "project": "ChatGPTNextWeb/NextChat@defdcdb55d85",
+   "forced": ""
+  },
+  {
+   "server": "ts6",
+   "project": "Fission-AI/OpenSpec@f179ed4e4056",
+   "forced": ""
+  },
+  {
+   "server": "ts7",
+   "project": "Fission-AI/OpenSpec@f179ed4e4056",
+   "forced": ""
+  },
+  {
+   "server": "ts6",
+   "project": "upstash/context7@6477e43e31d2",
+   "forced": ""
+  },
+  {
+   "server": "ts7",
+   "project": "upstash/context7@6477e43e31d2",
+   "forced": ""
+  },
+  {
+   "server": "ts6",
+   "project": "reduxjs/redux@fb3bad6804d6",
+   "forced": ""
+  },
+  {
+   "server": "ts7",
+   "project": "reduxjs/redux@fb3bad6804d6",
+   "forced": ""
+  },
+  {
+   "server": "ts6",
+   "project": "pmndrs/zustand@b57db4f86ef1",
+   "forced": ""
+  },
+  {
+   "server": "ts7",
+   "project": "pmndrs/zustand@b57db4f86ef1",
+   "forced": ""
+  },
+  {
+   "server": "ts6",
+   "project": "ChromeDevTools/chrome-devtools-mcp@2250cdcde4aa",
+   "forced": ""
+  },
+  {
+   "server": "ts7",
+   "project": "ChromeDevTools/chrome-devtools-mcp@2250cdcde4aa",
+   "forced": ""
+  },
+  {
+   "server": "ts6",
+   "project": "chenglou/pretext@2e5e2bdaee39",
+   "forced": ""
+  },
+  {
+   "server": "ts7",
+   "project": "chenglou/pretext@2e5e2bdaee39",
+   "forced": ""
+  },
+  {
+   "server": "ts6",
+   "project": "react-hook-form/react-hook-form@5fd9ef65290b",
+   "forced": ""
+  },
+  {
+   "server": "ts7",
+   "project": "react-hook-form/react-hook-form@5fd9ef65290b",
+   "forced": ""
+  },
+  {
+   "server": "ts6",
+   "project": "vercel/hyper@30ec0a2a91de",
+   "forced": ""
+  },
+  {
+   "server": "ts7",
+   "project": "vercel/hyper@30ec0a2a91de",
+   "forced": ""
+  },
+  {
+   "server": "pyright",
+   "project": "TheAlgorithms/Python@60cea20f8537",
+   "forced": ""
+  },
+  {
+   "server": "pyright",
+   "project": "github/spec-kit@67ab049e8d43",
+   "forced": ""
+  },
+  {
+   "server": "pyright",
+   "project": "Graphify-Labs/graphify@a5957aa6ef51",
+   "forced": ""
+  },
+  {
+   "server": "pyright",
+   "project": "browser-use/browser-use@d8110c5ff87c",
+   "forced": ""
+  },
+  {
+   "server": "pyright",
+   "project": "TauricResearch/TradingAgents@2d17df8da153",
+   "forced": ""
+  },
+  {
+   "server": "pyright",
+   "project": "Panniantong/Agent-Reach@a19a171fa980",
+   "forced": ""
+  },
+  {
+   "server": "pyright",
+   "project": "D4Vinci/Scrapling@08f107b1240f",
+   "forced": ""
+  },
+  {
+   "server": "pyright",
+   "project": "Z4nzu/hackingtool@ef5334f8d37e",
+   "forced": ""
+  },
+  {
+   "server": "pyright",
+   "project": "hiyouga/LlamaFactory@97b32d3133b5",
+   "forced": ""
+  },
+  {
+   "server": "pyright",
+   "project": "pallets/flask@d73fa1cdcbd8",
+   "forced": ""
+  },
+  {
+   "server": "rust-analyzer",
+   "project": "rtk-ai/rtk@b748a5f75563",
+   "forced": ""
+  },
+  {
+   "server": "rust-analyzer",
+   "project": "BurntSushi/ripgrep@3fce3b5bb023",
+   "forced": ""
+  },
+  {
+   "server": "rust-analyzer",
+   "project": "dani-garcia/vaultwarden@cc67d644f626",
+   "forced": ""
+  },
+  {
+   "server": "rust-analyzer",
+   "project": "alacritty/alacritty@d692748d3f61",
+   "forced": ""
+  },
+  {
+   "server": "rust-analyzer",
+   "project": "sharkdp/bat@4987f76709aa",
+   "forced": ""
+  },
+  {
+   "server": "rust-analyzer",
+   "project": "FuelLabs/fuels-rs@d9a250a51818",
+   "forced": ""
+  },
+  {
+   "server": "rust-analyzer",
+   "project": "sxyazi/yazi@0ea4c5d9ef75",
+   "forced": ""
+  },
+  {
+   "server": "rust-analyzer",
+   "project": "lapce/lapce@b604d57de4a8",
+   "forced": ""
+  },
+  {
+   "server": "rust-analyzer",
+   "project": "AlexsJones/llmfit@2ffe4fd899a6",
+   "forced": ""
+  },
+  {
+   "server": "gopls",
+   "project": "fatedier/frp@d20a23299600",
+   "forced": ""
+  },
+  {
+   "server": "gopls",
+   "project": "gin-gonic/gin@3b08cd7235bd",
+   "forced": ""
+  },
+  {
+   "server": "gopls",
+   "project": "junegunn/fzf@b1be3a8be1b8",
+   "forced": ""
+  },
+  {
+   "server": "gopls",
+   "project": "caddyserver/caddy@c18099a0af5e",
+   "forced": ""
+  },
+  {
+   "server": "gopls",
+   "project": "nektos/act@4f411281417e",
+   "forced": ""
+  },
+  {
+   "server": "gopls",
+   "project": "router-for-me/CLIProxyAPI@673131f57484",
+   "forced": ""
+  },
+  {
+   "server": "gopls",
+   "project": "jesseduffield/lazydocker@7e7aadc2071d",
+   "forced": ""
+  },
+  {
+   "server": "gopls",
+   "project": "charmbracelet/bubbletea@657aaae216e3",
+   "forced": ""
+  },
+  {
+   "server": "gopls",
+   "project": "XTLS/Xray-core@d562d8947d31",
+   "forced": ""
+  }
+ ],
+ "excluded_pairs": [],
+ "plan": {
+  "runs": 31,
+  "per_oracle_server": {
+   "r0_crash pyright": 1,
+   "r0_crash ts6": 1,
+   "r0_crash ts7": 1,
+   "r0_crash rust-analyzer": 1,
+   "r0_crash gopls": 1,
+   "r1_history pyright": 1,
+   "r1_history ts6": 1,
+   "r1_history ts7": 1,
+   "r1_history rust-analyzer": 1,
+   "r1_history gopls": 1,
+   "r2_handles pyright": 1,
+   "r2_handles ts6": 1,
+   "r2_handles ts7": 1,
+   "r2_handles rust-analyzer": 1,
+   "r2_handles gopls": 1,
+   "r3_routes pyright": 1,
+   "r3_routes ts6": 1,
+   "r3_routes ts7": 1,
+   "r3_routes rust-analyzer": 1,
+   "r3_routes gopls": 1,
+   "r4_edits pyright": 1,
+   "r4_edits ts6": 1,
+   "r4_edits ts7": 1,
+   "r4_edits rust-analyzer": 1,
+   "r4_edits gopls": 1,
+   "r5_transforms pyright": 1,
+   "r5_transforms ts6": 1,
+   "r5_transforms ts7": 1,
+   "r5_transforms rust-analyzer": 1,
+   "r5_transforms gopls": 1,
+   "r6_crossimpl ts7": 1
+  }
+ },
+ "invocations": [
+  {
+   "started": "2026-09-23 11:00:41",
+   "finished": "2026-09-23 11:25:42",
+   "elapsed_s": 1501.8,
+   "runs": 31
+  }
+ ]
+}

@@ -1,0 +1,775 @@
+{
+ "format": 1,
+ "campaign": "main_v2",
+ "vid": "43cf47dfbeec-v02",
+ "run_id": "43cf47dfbeec",
+ "oracle": "r1_history",
+ "server": {
+  "kind": "gopls",
+  "version": "v0.23.0"
+ },
+ "project": {
+  "name": "go-gorm/gorm@b3d3bf219f02",
+  "source": "corpus",
+  "ref": "temp/corpus/go-gorm__gorm@b3d3bf219f02",
+  "commit": "b3d3bf219f0283f8e2e985bac509cb643170f729",
+  "language": "go"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "schema/relationship.go",
+    "positions": [
+     [
+      36,
+      2
+     ],
+     [
+      217,
+      57
+     ],
+     [
+      218,
+      43
+     ],
+     [
+      331,
+      24
+     ],
+     [
+      339,
+      83
+     ],
+     [
+      413,
+      7
+     ],
+     [
+      463,
+      7
+     ],
+     [
+      516,
+      13
+     ],
+     [
+      593,
+      24
+     ],
+     [
+      729,
+      7
+     ],
+     [
+      736,
+      51
+     ],
+     [
+      756,
+      6
+     ]
+    ],
+    "ends": [
+     [
+      36,
+      4
+     ],
+     [
+      217,
+      58
+     ],
+     [
+      218,
+      48
+     ],
+     [
+      331,
+      28
+     ],
+     [
+      339,
+      85
+     ],
+     [
+      413,
+      11
+     ],
+     [
+      463,
+      10
+     ],
+     [
+      516,
+      22
+     ],
+     [
+      593,
+      26
+     ],
+     [
+      729,
+      14
+     ],
+     [
+      736,
+      56
+     ],
+     [
+      756,
+      9
+     ]
+    ],
+    "names": [
+     "Mux",
+     "ok",
+     "TrimSpace",
+     "relation",
+     "idx",
+     "joinRel",
+     "field",
+     "primarySchemaName",
+     "Mux",
+     "foreignFields",
+     "PrimaryKey",
+     "conds"
+    ]
+   },
+   {
+    "path": "tests/joins_test.go",
+    "positions": [
+     [
+      14,
+      85
+     ],
+     [
+      95,
+      2
+     ],
+     [
+      121,
+      12
+     ],
+     [
+      154,
+      34
+     ],
+     [
+      237,
+      99
+     ],
+     [
+      244,
+      13
+     ],
+     [
+      248,
+      60
+     ],
+     [
+      359,
+      17
+     ],
+     [
+      411,
+      8
+     ],
+     [
+      412,
+      5
+     ],
+     [
+      473,
+      21
+     ],
+     [
+      476,
+      23
+     ]
+    ],
+    "ends": [
+     [
+      14,
+      89
+     ],
+     [
+      95,
+      3
+     ],
+     [
+      121,
+      13
+     ],
+     [
+      154,
+      36
+     ],
+     [
+      237,
+      102
+     ],
+     [
+      244,
+      14
+     ],
+     [
+      248,
+      65
+     ],
+     [
+      359,
+      19
+     ],
+     [
+      411,
+      12
+     ],
+     [
+      412,
+      6
+     ],
+     [
+      473,
+      24
+     ],
+     [
+      476,
+      27
+     ]
+    ],
+    "names": [
+     "NamedPet",
+     "DB",
+     "DB",
+     "Pets",
+     "false",
+     "t",
+     "InnerJoins",
+     "uint",
+     "userIDs",
+     "i",
+     "Error",
+     "entries"
+    ]
+   },
+   {
+    "path": "utils/tests/dummy_dialecter.go",
+    "positions": [
+     [
+      19,
+      37
+     ],
+     [
+      30,
+      21
+     ],
+     [
+      33,
+      43
+     ],
+     [
+      38,
+      12
+     ],
+     [
+      45,
+      9
+     ],
+     [
+      63,
+      6
+     ],
+     [
+      63,
+      20
+     ],
+     [
+      68,
+      20
+     ],
+     [
+      83,
+      36
+     ],
+     [
+      86,
+      4
+     ],
+     [
+      89,
+      25
+     ],
+     [
+      89,
+      31
+     ]
+    ],
+    "ends": [
+     [
+      19,
+      38
+     ],
+     [
+      30,
+      23
+     ],
+     [
+      33,
+      45
+     ],
+     [
+      38,
+      17
+     ],
+     [
+      45,
+      16
+     ],
+     [
+      63,
+      9
+     ],
+     [
+      63,
+      21
+     ],
+     [
+      68,
+      22
+     ],
+     [
+      83,
+      41
+     ],
+     [
+      86,
+      7
+     ],
+     [
+      89,
+      29
+     ],
+     [
+      89,
+      33
+     ]
+    ],
+    "names": [
+     "db",
+     "SQL",
+     "gorm",
+     "WriteByte",
+     "shiftDelimiter",
+     "writer",
+     "v",
+     "true",
+     "selfQuoted",
+     "writer",
+     "Explain",
+     "sql"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "diagnostics",
+  "path": "tests/joins_test.go",
+  "line": -1,
+  "character": -1,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "schema/relationship.go"
+  },
+  {
+   "kind": "open",
+   "path": "tests/joins_test.go"
+  },
+  {
+   "kind": "open",
+   "path": "utils/tests/dummy_dialecter.go"
+  },
+  {
+   "kind": "change",
+   "path": "schema/relationship.go",
+   "start": [
+    553,
+    0
+   ],
+   "end": [
+    553,
+    40
+   ]
+  },
+  {
+   "kind": "change",
+   "path": "tests/joins_test.go",
+   "start": [
+    442,
+    11
+   ],
+   "end": [
+    442,
+    11
+   ],
+   "text": "}"
+  },
+  {
+   "kind": "change",
+   "path": "utils/tests/dummy_dialecter.go",
+   "start": [
+    2,
+    0
+   ],
+   "end": [
+    3,
+    0
+   ]
+  },
+  {
+   "kind": "change",
+   "path": "tests/joins_test.go",
+   "start": [
+    442,
+    11
+   ],
+   "end": [
+    442,
+    12
+   ]
+  },
+  {
+   "kind": "change",
+   "path": "utils/tests/dummy_dialecter.go",
+   "start": [
+    2,
+    0
+   ],
+   "end": [
+    2,
+    0
+   ],
+   "text": "im"
+  },
+  {
+   "kind": "request",
+   "path": "schema/relationship.go",
+   "start": [
+    36,
+    2
+   ],
+   "text": "signatureHelp"
+  },
+  {
+   "kind": "close",
+   "path": "schema/relationship.go"
+  },
+  {
+   "kind": "change",
+   "path": "utils/tests/dummy_dialecter.go",
+   "start": [
+    2,
+    2
+   ],
+   "end": [
+    2,
+    2
+   ],
+   "text": "por"
+  },
+  {
+   "kind": "request",
+   "path": "tests/joins_test.go",
+   "start": [
+    348,
+    15
+   ],
+   "text": "documentHighlight"
+  },
+  {
+   "kind": "open",
+   "path": "schema/relationship.go"
+  },
+  {
+   "kind": "change",
+   "path": "utils/tests/dummy_dialecter.go",
+   "start": [
+    2,
+    5
+   ],
+   "end": [
+    2,
+    5
+   ],
+   "text": "t ("
+  },
+  {
+   "kind": "change",
+   "path": "utils/tests/dummy_dialecter.go",
+   "start": [
+    2,
+    8
+   ],
+   "end": [
+    2,
+    8
+   ],
+   "text": "\n"
+  }
+ ],
+ "case": {
+  "chain_step": 0,
+  "families": [],
+  "family": "H7",
+  "history_index": 5,
+  "history_seed": 2006,
+  "mode": "fresh",
+  "note": "shuffle: H2 utils/tests/dummy_dialecter.go: delete line 2, retype it in 4 chunk(s) | H3 schema/relationship.go: unsaved edit (delete '\\t\\t\\t\\t\\tforeignFields = append(foreignField' on line 553), close, reopen | H8 after tests/joins_test.go: insert '}' on line 442 and its inverse, 3 requests in a shuffled order: signatureHelp@schema/relationship.go:36:2, typeDefinition@schema/relationship.go:36:4, documentHighlight@tests/joins_test.go:348:15",
+  "seed": 2,
+  "timing": "settled"
+ },
+ "shape": "diagnostics:missing:?",
+ "signature": "gopls|r1_history|diagnostics:missing:?",
+ "expected": [
+  [
+   8,
+   1,
+   8,
+   37,
+   1,
+   "BrokenImport",
+   "compiler",
+   "could not import github.com/stretchr/testify/assert (no required module provides package \"github.com/stretchr/testify/assert\")"
+  ],
+  [
+   9,
+   1,
+   9,
+   15,
+   1,
+   "",
+   "compiler",
+   "error while importing gorm.io/gorm: missing go.sum entry for module providing package github.com/jinzhu/now (imported by gorm.io/gorm/tests); to add: go get -t gorm.io/gorm/tests"
+  ]
+ ],
+ "actual": [
+  [
+   8,
+   1,
+   8,
+   37,
+   1,
+   "BrokenImport",
+   "compiler",
+   "could not import github.com/stretchr/testify/assert (no required module provides package \"github.com/stretchr/testify/assert\")"
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "H7: shuffle: H2 utils/tests/dummy_dialecter.go: delete line 2, retype it in 4 chunk(s) | H3 schema/relationship.go: unsaved edit (delete '\\t\\t\\t\\t\\tforeignFields = append(foreignField' on line 553), close; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 166s",
+ "violation": {
+  "oracle": "r1_history",
+  "server": "gopls-v0.23.0",
+  "project": "go-gorm/gorm@b3d3bf219f02",
+  "key": {
+   "method": "diagnostics",
+   "path": "tests/joins_test.go",
+   "line": -1,
+   "character": -1,
+   "extra": ""
+  },
+  "expected": [
+   [
+    8,
+    1,
+    8,
+    37,
+    1,
+    "BrokenImport",
+    "compiler",
+    "could not import github.com/stretchr/testify/assert (no required module provides package \"github.com/stretchr/testify/assert\")"
+   ],
+   [
+    9,
+    1,
+    9,
+    15,
+    1,
+    "",
+    "compiler",
+    "error while importing gorm.io/gorm: missing go.sum entry for module providing package github.com/jinzhu/now (imported by gorm.io/gorm/tests); to add: go get -t gorm.io/gorm/tests"
+   ]
+  ],
+  "actual": [
+   [
+    8,
+    1,
+    8,
+    37,
+    1,
+    "BrokenImport",
+    "compiler",
+    "could not import github.com/stretchr/testify/assert (no required module provides package \"github.com/stretchr/testify/assert\")"
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "schema/relationship.go"
+   },
+   {
+    "kind": "open",
+    "path": "tests/joins_test.go"
+   },
+   {
+    "kind": "open",
+    "path": "utils/tests/dummy_dialecter.go"
+   },
+   {
+    "kind": "change",
+    "path": "schema/relationship.go",
+    "start": [
+     553,
+     0
+    ],
+    "end": [
+     553,
+     40
+    ]
+   },
+   {
+    "kind": "change",
+    "path": "tests/joins_test.go",
+    "start": [
+     442,
+     11
+    ],
+    "end": [
+     442,
+     11
+    ],
+    "text": "}"
+   },
+   {
+    "kind": "change",
+    "path": "utils/tests/dummy_dialecter.go",
+    "start": [
+     2,
+     0
+    ],
+    "end": [
+     3,
+     0
+    ]
+   },
+   {
+    "kind": "change",
+    "path": "tests/joins_test.go",
+    "start": [
+     442,
+     11
+    ],
+    "end": [
+     442,
+     12
+    ]
+   },
+   {
+    "kind": "change",
+    "path": "utils/tests/dummy_dialecter.go",
+    "start": [
+     2,
+     0
+    ],
+    "end": [
+     2,
+     0
+    ],
+    "text": "im"
+   },
+   {
+    "kind": "request",
+    "path": "schema/relationship.go",
+    "start": [
+     36,
+     2
+    ],
+    "text": "signatureHelp"
+   },
+   {
+    "kind": "close",
+    "path": "schema/relationship.go"
+   },
+   {
+    "kind": "change",
+    "path": "utils/tests/dummy_dialecter.go",
+    "start": [
+     2,
+     2
+    ],
+    "end": [
+     2,
+     2
+    ],
+    "text": "por"
+   },
+   {
+    "kind": "request",
+    "path": "tests/joins_test.go",
+    "start": [
+     348,
+     15
+    ],
+    "text": "documentHighlight"
+   },
+   {
+    "kind": "open",
+    "path": "schema/relationship.go"
+   },
+   {
+    "kind": "change",
+    "path": "utils/tests/dummy_dialecter.go",
+    "start": [
+     2,
+     5
+    ],
+    "end": [
+     2,
+     5
+    ],
+    "text": "t ("
+   },
+   {
+    "kind": "change",
+    "path": "utils/tests/dummy_dialecter.go",
+    "start": [
+     2,
+     8
+    ],
+    "end": [
+     2,
+     8
+    ],
+    "text": "\n"
+   }
+  ],
+  "detail": "{\"case\": {\"chain_step\": 0, \"families\": [], \"family\": \"H7\", \"history_index\": 5, \"history_seed\": 2006, \"mode\": \"fresh\", \"note\": \"shuffle: H2 utils/tests/dummy_dialecter.go: delete line 2, retype it in 4 chunk(s) | H3 schema/relationship.go: unsaved edit (delete '\\\\t\\\\t\\\\t\\\\t\\\\tforeignFields = append(foreignField' on line 553), close, reopen | H8 after tests/joins_test.go: insert '}' on line 442 and its inverse, 3 requests in a shuffled order: signatureHelp@schema/relationship.go:36:2, typeDefinition@schema/relationship.go:36:4, documentHighlight@tests/joins_test.go:348:15\", \"seed\": 2, \"timing\": \"settled\"}, \"note\": \"H7: shuffle: H2 utils/tests/dummy_dialecter.go: delete line 2, retype it in 4 chunk(s) | H3 schema/relationship.go: unsaved edit (delete '\\\\t\\\\t\\\\t\\\\t\\\\tforeignFields = append(foreignField' on line 553), close; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 166s\", \"shape\": \"diagnostics:missing:?\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "gopls|r1_history|diagnostics:missing:?",
+  "run_id": "43cf47dfbeec"
+ },
+ "replay_logs": [
+  "logs/gopls-v0.23.0-43cf47dfbeec-replay-baseline-20261118-133845-aa661b.jsonl.gz",
+  "logs/gopls-v0.23.0-43cf47dfbeec-replay-control-20261118-133845-f3a4d8.jsonl.gz",
+  "logs/gopls-v0.23.0-43cf47dfbeec-replay-history-20261118-133852-b0cea0.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

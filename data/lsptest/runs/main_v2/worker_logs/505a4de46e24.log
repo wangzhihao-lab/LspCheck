@@ -1,0 +1,3 @@
+2026-11-18 07:33:40,803 INFO campaign_run run 505a4de46e24: r5_transforms on ts6 6.0.3, Gitlawb/openclaude@5cd11336caea seed 1 settled, targets ['src/commands/privacy-settings/index.ts', 'src/components/PromptInput/Notifications.tsx', 'src/utils/log.test.ts']
+2026-11-18 07:43:25,265 INFO campaign_run run 505a4de46e24: 0 candidate(s) in 585s; confirming
+2026-11-18 07:43:25,268 INFO campaign_run run 505a4de46e24 finished: ok, 0 confirmed of 0 candidate(s), 585s

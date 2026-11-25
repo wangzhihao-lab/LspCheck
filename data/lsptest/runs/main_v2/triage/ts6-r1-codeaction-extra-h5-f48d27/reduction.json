@@ -1,0 +1,73 @@
+{
+ "vid": "a1d24603cbb6-v00",
+ "ops_before": 5,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 8,
+ "cache_hits": 0,
+ "reduce_seconds": 185.38,
+ "budget_exhausted": false,
+ "probe_log": [
+  [
+   4,
+   false
+  ],
+  [
+   4,
+   false
+  ],
+  [
+   4,
+   false
+  ],
+  [
+   4,
+   true
+  ],
+  [
+   3,
+   false
+  ],
+  [
+   2,
+   true
+  ],
+  [
+   1,
+   false
+  ],
+  [
+   1,
+   true
+  ]
+ ],
+ "logs": [
+  "ts6-6.0.3-trf48d27-replay-baseline-20261118-214354-b2be1a.jsonl.gz",
+  "ts6-6.0.3-trf48d27-replay-control-20261118-214354-5551a6.jsonl.gz",
+  "ts6-6.0.3-trf48d27-replay-history-20261118-214402-e5d177.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [
+   [
+    "Move to a new file",
+    "refactor.move.newFile"
+   ]
+  ],
+  "actual": [
+   [
+    "Add all missing imports",
+    "quickfix"
+   ],
+   [
+    "Add import from \"node:test\"",
+    "quickfix"
+   ],
+   [
+    "Move to a new file",
+    "refactor.move.newFile"
+   ]
+  ]
+ },
+ "ops_after": 1,
+ "total_seconds": 291.1
+}

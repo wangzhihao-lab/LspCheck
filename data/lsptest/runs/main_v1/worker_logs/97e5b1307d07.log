@@ -1,0 +1,6 @@
+2026-09-23 16:35:51,112 INFO campaign_run run 97e5b1307d07: r3_routes on ts6 6.0.3, pmndrs/zustand@b57db4f86ef1 seed 1 settled, targets ['src/react.ts', 'src/vanilla/shallow.ts', 'tests/persistSync.test.tsx']
+2026-09-23 16:38:21,076 INFO campaign_run run 97e5b1307d07: 16 candidate(s) in 150s; confirming
+2026-09-23 16:39:30,299 INFO flake replay 1/3 of ts6|r3_routes|definitionConsistency:changed: settled=True control_stable=True reproduced=True (69.2s)
+2026-09-23 16:40:05,453 INFO flake replay 2/3 of ts6|r3_routes|definitionConsistency:changed: settled=True control_stable=True reproduced=True (35.2s)
+2026-09-23 16:40:32,087 INFO flake replay 3/3 of ts6|r3_routes|definitionConsistency:changed: settled=True control_stable=True reproduced=True (26.6s)
+2026-09-23 16:40:32,097 INFO campaign_run run 97e5b1307d07 finished: ok, 1 confirmed of 16 candidate(s), 281s

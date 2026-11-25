@@ -1,0 +1,505 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "e57813ebb5fa-v00",
+ "run_id": "e57813ebb5fa",
+ "oracle": "r2_handles",
+ "server": {
+  "kind": "rust-analyzer",
+  "version": "2026-09-21"
+ },
+ "project": {
+  "name": "rtk-ai/rtk@b748a5f75563",
+  "source": "corpus",
+  "ref": "temp/corpus/rtk-ai__rtk@b748a5f75563",
+  "commit": "b748a5f75563f410103551689097650be7210d99",
+  "language": "rust"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "src/cmds/js/next_cmd.rs",
+    "positions": [
+     [
+      73,
+      35
+     ],
+     [
+      80,
+      33
+     ],
+     [
+      92,
+      55
+     ],
+     [
+      110,
+      15
+     ],
+     [
+      123,
+      19
+     ],
+     [
+      126,
+      57
+     ],
+     [
+      126,
+      64
+     ],
+     [
+      128,
+      41
+     ],
+     [
+      134,
+      23
+     ],
+     [
+      137,
+      19
+     ],
+     [
+      163,
+      7
+     ],
+     [
+      163,
+      72
+     ]
+    ],
+    "ends": [
+     [
+      73,
+      42
+     ],
+     [
+      80,
+      35
+     ],
+     [
+      92,
+      57
+     ],
+     [
+      110,
+      18
+     ],
+     [
+      123,
+      23
+     ],
+     [
+      126,
+      62
+     ],
+     [
+      126,
+      66
+     ],
+     [
+      128,
+      47
+     ],
+     [
+      134,
+      26
+     ],
+     [
+      137,
+      22
+     ],
+     [
+      163,
+      10
+     ],
+     [
+      163,
+      76
+     ]
+    ],
+    "names": [
+     "BUNDLE_PATTERN",
+     "size",
+     "line",
+     "result",
+     "push_str",
+     "unwrap_or",
+     "std",
+     "CAP_WARNINGS",
+     "String",
+     "String",
+     "result",
+     "warnings"
+    ]
+   },
+   {
+    "path": "src/cmds/system/env_cmd.rs",
+    "positions": [
+     [
+      11,
+      44
+     ],
+     [
+      17,
+      43
+     ],
+     [
+      17,
+      57
+     ],
+     [
+      64,
+      28
+     ],
+     [
+      64,
+      39
+     ],
+     [
+      71,
+      85
+     ],
+     [
+      81,
+      13
+     ],
+     [
+      101,
+      21
+     ],
+     [
+      107,
+      16
+     ],
+     [
+      118,
+      19
+     ],
+     [
+      122,
+      45
+     ],
+     [
+      125,
+      42
+     ]
+    ],
+    "ends": [
+     [
+      11,
+      47
+     ],
+     [
+      17,
+      45
+     ],
+     [
+      17,
+      61
+     ],
+     [
+      64,
+      30
+     ],
+     [
+      64,
+      40
+     ],
+     [
+      71,
+      93
+     ],
+     [
+      81,
+      14
+     ],
+     [
+      101,
+      28
+     ],
+     [
+      107,
+      17
+     ],
+     [
+      118,
+      23
+     ],
+     [
+      122,
+      46
+     ],
+     [
+      125,
+      44
+     ]
+    ],
+    "names": [
+     "start",
+     "env",
+     "collect",
+     "Vec",
+     "v",
+     "MAX_PATH_ENTRIES",
+     "k",
+     "MAX_OTHER_VARS",
+     "_",
+     "writeln",
+     "v",
+     "body"
+    ]
+   },
+   {
+    "path": "src/parser/types.rs",
+    "positions": [
+     [
+      5,
+      27
+     ],
+     [
+      11,
+      13
+     ],
+     [
+      12,
+      12
+     ],
+     [
+      12,
+      19
+     ],
+     [
+      20,
+      13
+     ],
+     [
+      20,
+      24
+     ],
+     [
+      26,
+      26
+     ],
+     [
+      27,
+      26
+     ],
+     [
+      28,
+      23
+     ],
+     [
+      31,
+      27
+     ],
+     [
+      34,
+      15
+     ],
+     [
+      36,
+      27
+     ]
+    ],
+    "ends": [
+     [
+      5,
+      32
+     ],
+     [
+      11,
+      19
+     ],
+     [
+      12,
+      16
+     ],
+     [
+      12,
+      21
+     ],
+     [
+      20,
+      19
+     ],
+     [
+      20,
+      27
+     ],
+     [
+      26,
+      29
+     ],
+     [
+      27,
+      29
+     ],
+     [
+      28,
+      25
+     ],
+     [
+      31,
+      32
+     ],
+     [
+      34,
+      23
+     ],
+     [
+      36,
+      30
+     ]
+    ],
+    "names": [
+     "Serialize",
+     "duration_ms",
+     "failures",
+     "Vec",
+     "stack_trace",
+     "Option",
+     "usize",
+     "usize",
+     "Vec",
+     "Serialize",
+     "current_version",
+     "Option"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "completionResolve",
+  "path": "src/parser/types.rs",
+  "line": 20,
+  "character": 19,
+  "extra": "end|above1|pub|14|null|7ffffff6|0"
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "src/parser/types.rs"
+  },
+  {
+   "kind": "change",
+   "path": "src/parser/types.rs",
+   "start": [
+    20,
+    0
+   ],
+   "end": [
+    20,
+    0
+   ],
+   "text": "\n"
+  }
+ ],
+ "case": {
+  "extra": "end",
+  "path": "src/parser/types.rs",
+  "shift": {
+   "col": 0,
+   "line": 20,
+   "text": "\n",
+   "variant": "above"
+  },
+  "sub": "completion",
+  "where": [
+   20,
+   19
+  ]
+ },
+ "shape": "completionResolve:changed",
+ "signature": "rust-analyzer|r2_handles|completionResolve:changed",
+ "expected": [
+  [
+   "textEdit",
+   21,
+   8,
+   21,
+   19,
+   "pub $0"
+  ]
+ ],
+ "actual": [
+  [
+   "textEdit",
+   21,
+   0,
+   20,
+   19,
+   "pub $0"
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "flake 3/3 [r1:SCR r2:SCR r3:SCR] in 384s",
+ "violation": {
+  "oracle": "r2_handles",
+  "server": "rust-analyzer-2026-09-21",
+  "project": "rtk-ai/rtk@b748a5f75563",
+  "key": {
+   "method": "completionResolve",
+   "path": "src/parser/types.rs",
+   "line": 20,
+   "character": 19,
+   "extra": "end|above1|pub|14|null|7ffffff6|0"
+  },
+  "expected": [
+   [
+    "textEdit",
+    21,
+    8,
+    21,
+    19,
+    "pub $0"
+   ]
+  ],
+  "actual": [
+   [
+    "textEdit",
+    21,
+    0,
+    20,
+    19,
+    "pub $0"
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "src/parser/types.rs"
+   },
+   {
+    "kind": "change",
+    "path": "src/parser/types.rs",
+    "start": [
+     20,
+     0
+    ],
+    "end": [
+     20,
+     0
+    ],
+    "text": "\n"
+   }
+  ],
+  "detail": "{\"case\": {\"extra\": \"end\", \"path\": \"src/parser/types.rs\", \"shift\": {\"col\": 0, \"line\": 20, \"text\": \"\\n\", \"variant\": \"above\"}, \"sub\": \"completion\", \"where\": [20, 19]}, \"note\": \"flake 3/3 [r1:SCR r2:SCR r3:SCR] in 384s\", \"shape\": \"completionResolve:changed\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "rust-analyzer|r2_handles|completionResolve:changed",
+  "run_id": "e57813ebb5fa"
+ },
+ "replay_logs": [
+  "logs/rust-analyzer-2026-09-21-e57813ebb5fa-r2-replay-20260923-210713-030499.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

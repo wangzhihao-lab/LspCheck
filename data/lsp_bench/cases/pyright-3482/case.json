@@ -1,0 +1,102 @@
+{
+ "schema": 1,
+ "id": "pyright-3482",
+ "meta": {
+  "server": "pyright",
+  "kind": "pyright",
+  "number": 3482,
+  "url": "https://github.com/microsoft/pyright/issues/3482",
+  "title": "Arguments for ParamSpec is missing",
+  "oracle_class": "R1",
+  "subtype": "edit-undo",
+  "fix_ref": "none named (maintainer: 'This is addressed in pyright 1.1.248')",
+  "fix_shas": [],
+  "pre_version": "1.1.247",
+  "post_version": "1.1.248",
+  "pre_build": "1.1.247",
+  "post_build": "1.1.248",
+  "build_notes": "npm pyright@1.1.247 (2022-05-14) and pyright@1.1.248 (2022-05-21); release window from the maintainer's comment.",
+  "candidate_rank": 78,
+  "effort_minutes": 7,
+  "notes": "The maintainer: the error occurs only for a call of a ParamSpec-parameterized generic function inside a loop, and only in certain evaluation orderings. Race pattern as in pyright-2983: an edit, then a hover on that call (fn(*args, **kw) in the while loop) before the server re-analyses."
+ },
+ "language": "python",
+ "settings": {},
+ "settings_note": "The issue names no settings (Pylance defaults); the session defaults (basic type checking) apply.",
+ "session": {
+  "settle_timeout_s": 120
+ },
+ "files": [
+  {
+   "path": "main.py",
+   "provenance": "issue",
+   "source": "issue body, python code block (repro code)",
+   "note": "typing_extensions resolves to the typeshed stub bundled with pyright"
+  }
+ ],
+ "repro": {
+  "attempt": 1,
+  "timing": "race",
+  "steps": "Open main.py and let the server analyze it. Edit the code (press Enter at the end, the reporter: 'If I edit the code then the error will go away and then come back') and hover the call fn(*args, **kw) in the while loop right away, before the server re-analyzes the file. Reported: 'Arguments for ParamSpec is missing' appears in the editor but not on the command line, depending on the evaluation order. After the server settles, the diagnostics of main.py and the hovers on bouncer and fn in the loop must equal those of a fresh session on the same final text.",
+  "ops": [
+   {
+    "kind": "open",
+    "path": "main.py"
+   },
+   {
+    "kind": "wait",
+    "text": "settle"
+   },
+   {
+    "kind": "change",
+    "path": "main.py",
+    "start": [
+     31,
+     0
+    ],
+    "end": [
+     31,
+     0
+    ],
+    "text": "\n"
+   },
+   {
+    "kind": "request",
+    "path": "main.py",
+    "start": [
+     22,
+     22
+    ],
+    "text": "hover"
+   }
+  ],
+  "probe": {
+   "type": "differs_from_fresh",
+   "params": {
+    "queries": [
+     {
+      "method": "diagnostics",
+      "path": "main.py"
+     },
+     {
+      "method": "hover",
+      "path": "main.py",
+      "position": [
+       22,
+       12
+      ]
+     },
+     {
+      "method": "hover",
+      "path": "main.py",
+      "position": [
+       22,
+       22
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "attempts": []
+}

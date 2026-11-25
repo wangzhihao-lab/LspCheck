@@ -1,0 +1,126 @@
+{
+ "format": 1,
+ "campaign": "bench_v1",
+ "vid": "237b49d5bf75-v00",
+ "run_id": "237b49d5bf75",
+ "oracle": "r3_routes",
+ "server": {
+  "kind": "gopls",
+  "version": "v0.7.0"
+ },
+ "project": {
+  "name": "gopls-46436",
+  "source": "dir",
+  "ref": "data/lsp_bench/cases/gopls-46436/project",
+  "commit": "",
+  "language": "go"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 180.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "p.go",
+    "positions": [
+     [
+      0,
+      8
+     ],
+     [
+      2,
+      5
+     ],
+     [
+      3,
+      4
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      9
+     ],
+     [
+      2,
+      6
+     ],
+     [
+      3,
+      6
+     ]
+    ],
+    "names": [
+     "p",
+     "_",
+     "int"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "highlightVsReferences",
+  "path": "p.go",
+  "line": 3,
+  "character": 4,
+  "extra": ""
+ },
+ "ops": [],
+ "case": {
+  "path": "p.go",
+  "pos": [
+   3,
+   4
+  ],
+  "sub": "c"
+ },
+ "shape": "highlightVsReferences:gained",
+ "signature": "gopls|r3_routes|highlightVsReferences:gained",
+ "expected": [],
+ "actual": [
+  [
+   3,
+   3,
+   3,
+   6
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "0 references; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 17s",
+ "violation": {
+  "oracle": "r3_routes",
+  "server": "gopls-v0.7.0",
+  "project": "gopls-46436",
+  "key": {
+   "method": "highlightVsReferences",
+   "path": "p.go",
+   "line": 3,
+   "character": 4,
+   "extra": ""
+  },
+  "expected": [],
+  "actual": [
+   [
+    3,
+    3,
+    3,
+    6
+   ]
+  ],
+  "ops": [],
+  "detail": "{\"case\": {\"path\": \"p.go\", \"pos\": [3, 4], \"sub\": \"c\"}, \"note\": \"0 references; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 17s\", \"shape\": \"highlightVsReferences:gained\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "gopls|r3_routes|highlightVsReferences:gained",
+  "run_id": "237b49d5bf75"
+ },
+ "replay_logs": [
+  "logs/gopls-v0.7.0-237b49d5bf75-r3-replay-baseline-20260925-013155-3431ae.jsonl.gz",
+  "logs/gopls-v0.7.0-237b49d5bf75-r3-replay-control-20260925-013158-f1c1a7.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

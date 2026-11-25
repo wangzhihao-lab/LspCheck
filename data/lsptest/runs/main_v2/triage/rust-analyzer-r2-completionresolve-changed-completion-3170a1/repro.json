@@ -1,0 +1,180 @@
+{
+ "format": 1,
+ "campaign": "main_v2",
+ "vid": "06365021d85d-v00",
+ "run_id": "06365021d85d",
+ "oracle": "r2_handles",
+ "server": {
+  "kind": "rust-analyzer",
+  "version": "2026-09-21"
+ },
+ "project": {
+  "name": "googleworkspace/cli@a3768d0e82ad",
+  "source": "corpus",
+  "ref": "temp/corpus/googleworkspace__cli@a3768d0e82ad",
+  "commit": "a3768d0e82ad83cca2da97724e46bea4ff0e6dbd",
+  "language": "rust"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "crates/google-workspace-cli/src/auth.rs",
+    "positions": [
+     [
+      406,
+      61
+     ]
+    ],
+    "ends": [],
+    "names": [
+     ""
+    ]
+   },
+   {
+    "path": "crates/google-workspace-cli/src/helpers/events/mod.rs",
+    "positions": [],
+    "ends": [],
+    "names": []
+   },
+   {
+    "path": "crates/google-workspace-cli/src/schema.rs",
+    "positions": [],
+    "ends": [],
+    "names": []
+   }
+  ]
+ },
+ "key": {
+  "method": "completionResolve",
+  "path": "crates/google-workspace-cli/src/auth.rs",
+  "line": 406,
+  "character": 61,
+  "extra": "end|top2|None|20|null|7fffffe7|0"
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "crates/google-workspace-cli/src/auth.rs"
+  },
+  {
+   "kind": "change",
+   "path": "crates/google-workspace-cli/src/auth.rs",
+   "start": [
+    0,
+    0
+   ],
+   "end": [
+    0,
+    0
+   ],
+   "text": "\n\n"
+  }
+ ],
+ "case": {
+  "extra": "end",
+  "path": "crates/google-workspace-cli/src/auth.rs",
+  "shift": {
+   "col": 0,
+   "line": 0,
+   "text": "\n\n",
+   "variant": "top"
+  },
+  "sub": "completion",
+  "where": [
+   406,
+   61
+  ]
+ },
+ "shape": "completionResolve:changed",
+ "signature": "rust-analyzer|r2_handles|completionResolve:changed",
+ "expected": [
+  [
+   "textEdit",
+   408,
+   53,
+   408,
+   61,
+   "None$0"
+  ]
+ ],
+ "actual": [
+  [
+   "textEdit",
+   407,
+   0,
+   406,
+   61,
+   "None$0"
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "flake 3/3 [r1:SCR r2:SCR r3:SCR] in 146s",
+ "violation": {
+  "oracle": "r2_handles",
+  "server": "rust-analyzer-2026-09-21",
+  "project": "googleworkspace/cli@a3768d0e82ad",
+  "key": {
+   "method": "completionResolve",
+   "path": "crates/google-workspace-cli/src/auth.rs",
+   "line": 406,
+   "character": 61,
+   "extra": "end|top2|None|20|null|7fffffe7|0"
+  },
+  "expected": [
+   [
+    "textEdit",
+    408,
+    53,
+    408,
+    61,
+    "None$0"
+   ]
+  ],
+  "actual": [
+   [
+    "textEdit",
+    407,
+    0,
+    406,
+    61,
+    "None$0"
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "crates/google-workspace-cli/src/auth.rs"
+   },
+   {
+    "kind": "change",
+    "path": "crates/google-workspace-cli/src/auth.rs",
+    "start": [
+     0,
+     0
+    ],
+    "end": [
+     0,
+     0
+    ],
+    "text": "\n\n"
+   }
+  ],
+  "detail": "{\"case\": {\"extra\": \"end\", \"path\": \"crates/google-workspace-cli/src/auth.rs\", \"shift\": {\"col\": 0, \"line\": 0, \"text\": \"\\n\\n\", \"variant\": \"top\"}, \"sub\": \"completion\", \"where\": [406, 61]}, \"note\": \"flake 3/3 [r1:SCR r2:SCR r3:SCR] in 146s\", \"shape\": \"completionResolve:changed\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "rust-analyzer|r2_handles|completionResolve:changed",
+  "run_id": "06365021d85d"
+ },
+ "replay_logs": [
+  "logs/rust-analyzer-2026-09-21-tr3170a1-r2-replay-20261119-003252-d3f24f.jsonl.gz"
+ ],
+ "project_files": {},
+ "group": "rust-analyzer-r2-completionresolve-changed-completion-3170a1",
+ "reduced": true
+}

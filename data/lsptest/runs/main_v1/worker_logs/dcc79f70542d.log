@@ -1,0 +1,3 @@
+2026-09-23 23:46:03,651 INFO campaign_run run dcc79f70542d: r3_routes on gopls v0.23.0, nektos/act@4f411281417e seed 2 settled, targets ['pkg/container/docker_volume.go', 'pkg/container/linux_container_environment_extensions_test.go', 'pkg/runner/action.go']
+2026-09-23 23:48:22,905 INFO campaign_run run dcc79f70542d: 6 candidate(s) in 139s; confirming
+2026-09-23 23:48:22,908 INFO campaign_run run dcc79f70542d finished: ok, 0 confirmed of 6 candidate(s), 139s

@@ -1,0 +1,87 @@
+{
+ "schema": 1,
+ "id": "tsserver-54818",
+ "meta": {
+  "server": "tsserver",
+  "kind": "tsserver",
+  "number": 54818,
+  "url": "https://github.com/microsoft/TypeScript/issues/54818",
+  "title": "\"from\" keyword displaying incorrect completions",
+  "oracle_class": "R4",
+  "subtype": "completion",
+  "fix_ref": "microsoft/TypeScript#54843 (fix(54818): \"from\" keyword displaying incorrect completions), a437de66b6, 2023-06-30; git tag --contains: first in v5.2-rc / v5.2.2",
+  "fix_shas": [
+   "a437de66b6d6f36f205eafcd21a732a29f905486"
+  ],
+  "pre_version": "5.1.6",
+  "post_version": "5.2.2",
+  "pre_build": "5.1.6+tsls3.3.2",
+  "post_build": "5.2.2+tsls3.3.2",
+  "wrapper": "typescript-language-server@3.3.2",
+  "build_notes": "npm typescript@5.1.6 (2023-06-28) and typescript@5.2.2 (2023-08-24), both behind typescript-language-server@3.3.2 (the latest wrapper release before 5.2.2), started with the pinned tsserver.js; the reported TypeScript version is checked on every session.",
+  "candidate_rank": 21,
+  "effort_minutes": 14,
+  "notes": "Not reproduced after two attempts. Mechanism differs from the screening (wrong completion item offered): at both positions the pre-fix server (5.1.6) answers an EMPTY completion list and the post-fix server offers only the 'from' keyword, so the server-side defect is a missing 'from' keyword completion; the fromBar of the report is most likely the editor's own word-based suggestion shown when the server returns nothing. A missing expected item is not expressible with the edit probes (missing: absent treats 'not offered' as fixed). Attempt 1: the issue's cursor after 'fro'; attempt 2: the regression test's cursor after 'import Foo '."
+ },
+ "language": "javascript",
+ "settings": {},
+ "settings_note": "The issue names no settings; no jsconfig.json, so tsserver uses an inferred project for the JS file.",
+ "session": {
+  "settle_timeout_s": 120
+ },
+ "files": [
+  {
+   "path": "file.js",
+   "provenance": "issue-adapted",
+   "source": "issue body, js code block ('file.js:')",
+   "note": "the cursor marker '|' after 'fro' removed (it is not part of the code); everything else verbatim"
+  }
+ ],
+ "repro": {
+  "attempt": 2,
+  "timing": "settled",
+  "steps": "Typing the import statement of the issue ('import Foo ' then 'fro'): attempt 2 requests completions where the fix's regression test (importStatementCompletions4.ts, marker after 'import Foo ') puts the cursor, i.e. with 'fro' not typed yet: delete 'fro' and complete at line 1, character 11. Reported: identifiers containing 'from' such as fromBar are offered where only the 'from' keyword belongs. Probe: accept the offered fromBar item; the edited text must not have a parse error the original did not have. No such item offered counts as absent.",
+  "ops": [
+   {
+    "kind": "open",
+    "path": "file.js"
+   },
+   {
+    "kind": "change",
+    "path": "file.js",
+    "start": [
+     0,
+     11
+    ],
+    "end": [
+     0,
+     14
+    ],
+    "text": ""
+   }
+  ],
+  "probe": {
+   "type": "edit_breaks_syntax",
+   "params": {
+    "edit": {
+     "via": "completion",
+     "path": "file.js",
+     "position": [
+      0,
+      11
+     ],
+     "label_re": "^fromBar$",
+     "missing": "absent"
+    }
+   }
+  }
+ },
+ "attempts": [
+  {
+   "attempt": 1,
+   "timing": "settled",
+   "summary": "Completion at the issue's cursor, right after 'import Foo fro' (0, 14), accepting fromBar. Pre-fix 5.1.6 answered an empty list (items: [], isIncomplete: false) in 3/3 runs, post-fix 5.2.2 only 'from'. The server never offered fromBar at that position; the fromBar in the report's screenshot plausibly came from the editor's word-based suggestions shown when the server returns nothing.",
+   "verdict": "not-reproduced-pre"
+  }
+ ]
+}

@@ -1,0 +1,3 @@
+2026-11-18 13:31:50,103 INFO campaign_run run f17e67fe502d: r1_history on gopls v0.23.0, SagerNet/sing-box@0d91c4547921 seed 2 settled, targets ['common/tls/reality_server.go', 'dns/transport/fakeip/fakeip.go', 'protocol/block/outbound.go']
+2026-11-18 13:41:00,105 INFO campaign_run run f17e67fe502d: 0 candidate(s) in 550s; confirming
+2026-11-18 13:41:00,105 INFO campaign_run run f17e67fe502d finished: ok, 0 confirmed of 0 candidate(s), 550s

@@ -1,0 +1,3 @@
+2026-09-24 01:10:36,251 INFO campaign_run run 9893c88e3f42: r5_transforms on pyright 1.1.414, browser-use/browser-use@d8110c5ff87c seed 2 settled, targets ['browser_use/browser/_cdp_timeout.py', 'browser_use/browser/watchdogs/aboutblank_watchdog.py', 'tests/ci/test_image_only_dom_representation.py']
+2026-09-24 01:12:29,924 INFO campaign_run run 9893c88e3f42: 0 candidate(s) in 114s; confirming
+2026-09-24 01:12:29,925 INFO campaign_run run 9893c88e3f42 finished: ok, 0 confirmed of 0 candidate(s), 114s

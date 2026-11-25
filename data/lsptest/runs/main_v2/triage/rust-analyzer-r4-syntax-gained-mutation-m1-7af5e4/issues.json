@@ -1,0 +1,90 @@
+{
+ "queries": [
+  "syntax unexpected repo:rust-lang/rust-analyzer is:issue",
+  "syntax \"wrong edit\" repo:rust-lang/rust-analyzer is:issue"
+ ],
+ "matches": [
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 18673,
+   "title": "Unexpected type for `Struct` constructor: `AssocTypeId`",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/18673",
+   "state": "open",
+   "created": "2024-12-12",
+   "comments": 1,
+   "query": "syntax unexpected repo:rust-lang/rust-analyzer is:issue"
+  },
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 18211,
+   "title": "Support macro None groupings",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/18211",
+   "state": "open",
+   "created": "2024-09-30",
+   "comments": 4,
+   "query": "syntax unexpected repo:rust-lang/rust-analyzer is:issue"
+  },
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 19782,
+   "title": "rust-analyzer should not emit macro-errors when macro input contains an unclosed delimiter",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/19782",
+   "state": "open",
+   "created": "2025-05-12",
+   "comments": 1,
+   "query": "syntax unexpected repo:rust-lang/rust-analyzer is:issue"
+  },
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 20024,
+   "title": "`Semantics::attach_first_edition` hangs, possibly due to blocked communication with the `proc-macro-server` process",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/20024",
+   "state": "open",
+   "created": "2025-06-17",
+   "comments": 8,
+   "query": "syntax unexpected repo:rust-lang/rust-analyzer is:issue"
+  },
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 3186,
+   "title": "StructuralSearchReplace: next steps",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/3186",
+   "state": "open",
+   "created": "2020-02-17",
+   "comments": 35,
+   "query": "syntax unexpected repo:rust-lang/rust-analyzer is:issue"
+  },
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 17289,
+   "title": "Invalid offset -32603 when editing an empty .rs file",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/17289",
+   "state": "open",
+   "created": "2024-05-24",
+   "comments": 68,
+   "query": "syntax \"wrong edit\" repo:rust-lang/rust-analyzer is:issue"
+  },
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 15873,
+   "title": "stack overflow in `ra_ap_hir_ty::mir::borrowck::ever_initialized_map::dfs` on the `idna` crate",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/15873",
+   "state": "closed",
+   "created": "2023-11-11",
+   "comments": 5,
+   "query": "syntax \"wrong edit\" repo:rust-lang/rust-analyzer is:issue"
+  },
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 11260,
+   "title": "Support format_args_capture",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/11260",
+   "state": "closed",
+   "created": "2022-01-11",
+   "comments": 27,
+   "query": "syntax \"wrong edit\" repo:rust-lang/rust-analyzer is:issue"
+  }
+ ],
+ "notes": [],
+ "authenticated": true
+}

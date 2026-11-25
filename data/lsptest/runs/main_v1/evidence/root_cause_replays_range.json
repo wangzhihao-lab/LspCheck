@@ -1,0 +1,295 @@
+{
+ "campaign": "main_v1",
+ "subcommand": "range",
+ "written": "2026-11-20 19:03",
+ "rows": [
+  {
+   "cause": "C27",
+   "campaign": "main_v1",
+   "gid": "rust-analyzer-r3-semantictokensrange-changed-b-b6e28b",
+   "variant": "orig",
+   "path": "alacritty_terminal/src/tty/unix.rs",
+   "range": [
+    245,
+    28,
+    253,
+    13
+   ],
+   "original_range": [
+    245,
+    28,
+    253,
+    13
+   ],
+   "replays": 3,
+   "settled": 3,
+   "differs": 3,
+   "differs_on_original_span": 3,
+   "runs": [
+    {
+     "settled": true,
+     "whole_range": {
+      "equal": false,
+      "n_full": 34,
+      "n_range": 31,
+      "only_full": [
+       [
+        248,
+        16,
+        8,
+        "method",
+        "defaultLibrary,library,mutable,reference,trait,unsafe"
+       ],
+       [
+        248,
+        24,
+        1,
+        "punctuation",
+        "unsafe"
+       ],
+       [
+        250,
+        28,
+        6,
+        "function",
+        "library,unsafe"
+       ],
+       [
+        250,
+        34,
+        1,
+        "punctuation",
+        "unsafe"
+       ],
+       [
+        250,
+        35,
+        1,
+        "punctuation",
+        "unsafe"
+       ]
+      ],
+      "only_range": [
+       [
+        248,
+        16,
+        8,
+        "method",
+        "defaultLibrary,library,mutable,reference,trait"
+       ],
+       [
+        250,
+        28,
+        6,
+        "function",
+        "library"
+       ]
+      ]
+     }
+    },
+    {
+     "settled": true,
+     "whole_range": {
+      "equal": false,
+      "n_full": 34,
+      "n_range": 31,
+      "only_full": [
+       [
+        248,
+        16,
+        8,
+        "method",
+        "defaultLibrary,library,mutable,reference,trait,unsafe"
+       ],
+       [
+        248,
+        24,
+        1,
+        "punctuation",
+        "unsafe"
+       ],
+       [
+        250,
+        28,
+        6,
+        "function",
+        "library,unsafe"
+       ],
+       [
+        250,
+        34,
+        1,
+        "punctuation",
+        "unsafe"
+       ],
+       [
+        250,
+        35,
+        1,
+        "punctuation",
+        "unsafe"
+       ]
+      ],
+      "only_range": [
+       [
+        248,
+        16,
+        8,
+        "method",
+        "defaultLibrary,library,mutable,reference,trait"
+       ],
+       [
+        250,
+        28,
+        6,
+        "function",
+        "library"
+       ]
+      ]
+     }
+    },
+    {
+     "settled": true,
+     "whole_range": {
+      "equal": false,
+      "n_full": 34,
+      "n_range": 31,
+      "only_full": [
+       [
+        248,
+        16,
+        8,
+        "method",
+        "defaultLibrary,library,mutable,reference,trait,unsafe"
+       ],
+       [
+        248,
+        24,
+        1,
+        "punctuation",
+        "unsafe"
+       ],
+       [
+        250,
+        28,
+        6,
+        "function",
+        "library,unsafe"
+       ],
+       [
+        250,
+        34,
+        1,
+        "punctuation",
+        "unsafe"
+       ],
+       [
+        250,
+        35,
+        1,
+        "punctuation",
+        "unsafe"
+       ]
+      ],
+      "only_range": [
+       [
+        248,
+        16,
+        8,
+        "method",
+        "defaultLibrary,library,mutable,reference,trait"
+       ],
+       [
+        250,
+        28,
+        6,
+        "function",
+        "library"
+       ]
+      ]
+     }
+    }
+   ],
+   "error": "",
+   "seconds": 35.2
+  },
+  {
+   "cause": "C27",
+   "campaign": "main_v1",
+   "gid": "rust-analyzer-r3-semantictokensrange-changed-b-b6e28b",
+   "variant": "moved",
+   "path": "alacritty_terminal/src/tty/unix.rs",
+   "range": [
+    200,
+    0,
+    253,
+    13
+   ],
+   "original_range": [
+    245,
+    28,
+    253,
+    13
+   ],
+   "replays": 3,
+   "settled": 3,
+   "differs": 0,
+   "differs_on_original_span": 0,
+   "runs": [
+    {
+     "settled": true,
+     "whole_range": {
+      "equal": true,
+      "n_full": 243,
+      "n_range": 243,
+      "only_full": [],
+      "only_range": []
+     },
+     "original_span": {
+      "equal": true,
+      "n_full": 34,
+      "n_range": 34,
+      "only_full": [],
+      "only_range": []
+     }
+    },
+    {
+     "settled": true,
+     "whole_range": {
+      "equal": true,
+      "n_full": 243,
+      "n_range": 243,
+      "only_full": [],
+      "only_range": []
+     },
+     "original_span": {
+      "equal": true,
+      "n_full": 34,
+      "n_range": 34,
+      "only_full": [],
+      "only_range": []
+     }
+    },
+    {
+     "settled": true,
+     "whole_range": {
+      "equal": true,
+      "n_full": 243,
+      "n_range": 243,
+      "only_full": [],
+      "only_range": []
+     },
+     "original_span": {
+      "equal": true,
+      "n_full": 34,
+      "n_range": 34,
+      "only_full": [],
+      "only_range": []
+     }
+    }
+   ],
+   "error": "",
+   "seconds": 34.4
+  }
+ ]
+}

@@ -1,0 +1,53 @@
+{
+ "vid": "4224a39ee10c-v00",
+ "ops_before": 0,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 0,
+ "cache_hits": 0,
+ "reduce_seconds": 0.0,
+ "budget_exhausted": false,
+ "probe_log": [],
+ "logs": [
+  "ts6-6.0.3-trd8e982-ref-r6-replay-ref-baseline-20261118-222108-999fed.jsonl.gz",
+  "ts6-6.0.3-trd8e982-ref-r6-replay-ref-control-20261118-222116-24aa14.jsonl.gz",
+  "ts7-7.0.2-trd8e982-r6-replay-test-baseline-20261118-222054-a90408.jsonl.gz",
+  "ts7-7.0.2-trd8e982-r6-replay-test-control-20261118-222101-5e66ca.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [
+   [
+    "packages/signals/src/core/scheduler.ts",
+    1557,
+    16,
+    1557,
+    21
+   ]
+  ],
+  "actual": [
+   [
+    "packages/signals/src/core/scheduler.ts",
+    1557,
+    16,
+    1557,
+    21
+   ],
+   [
+    "packages/signals/src/core/scheduler.ts",
+    1558,
+    16,
+    1558,
+    21
+   ],
+   [
+    "packages/signals/src/core/scheduler.ts",
+    1559,
+    16,
+    1559,
+    21
+   ]
+  ]
+ },
+ "ops_after": 0,
+ "total_seconds": 135.5
+}

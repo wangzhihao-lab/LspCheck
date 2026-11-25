@@ -1,0 +1,6 @@
+2026-11-18 09:15:11,632 INFO campaign_run run a2daff31d023: r5_transforms on gopls v0.23.0, evanw/esbuild@f6058f8364fe seed 1 settled, targets ['internal/compat/js_table.go', 'internal/fs/fs_real.go', 'internal/js_ast/js_ast_helpers.go']
+2026-11-18 09:16:32,553 INFO campaign_run run a2daff31d023: 1 candidate(s) in 81s; confirming
+2026-11-18 09:16:49,331 INFO flake replay 1/3 of gopls|r5_transforms|completion:changed: settled=True control_stable=False reproduced=False (16.8s)
+2026-11-18 09:17:05,407 INFO flake replay 2/3 of gopls|r5_transforms|completion:changed: settled=True control_stable=False reproduced=False (16.1s)
+2026-11-18 09:17:20,446 INFO flake replay 3/3 of gopls|r5_transforms|completion:changed: settled=True control_stable=False reproduced=False (15.0s)
+2026-11-18 09:17:20,514 INFO campaign_run run a2daff31d023 finished: ok, 0 confirmed of 1 candidate(s), 129s

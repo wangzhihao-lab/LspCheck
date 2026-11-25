@@ -1,0 +1,91 @@
+{
+ "schema": 1,
+ "id": "gopls-77481",
+ "meta": {
+  "server": "gopls",
+  "kind": "gopls",
+  "number": 77481,
+  "url": "https://github.com/golang/go/issues/77481",
+  "title": "x/tools/gopls: accepting autocomplete suggestion within invalid code results in unwanted code deletion",
+  "oracle_class": "R4",
+  "subtype": "completion",
+  "fix_ref": "golang/tools@2d8078dc5c3e (gopls/internal/golang/completion: fix replacement range in invalid code; CL 770861, 'Fixes golang/go#77481')",
+  "fix_shas": [
+   "2d8078dc5c3ef9cd8bc8c5df51f531f714f4a594"
+  ],
+  "pre_version": "v0.21.1",
+  "post_version": "v0.22.0",
+  "pre_build": "v0.21.1",
+  "post_build": "v0.22.0",
+  "build_notes": "go install golang.org/x/tools/gopls@<version> with the local Go (go1.27.1), which builds both; the server runs the local go command. The reporter used v0.21.0 (go1.25.6); v0.21.1 was tagged 2026-02-10, the fix merged 2026-04-28, v0.22.0 was tagged 2026-05-15.",
+  "candidate_rank": 7,
+  "effort_minutes": 18,
+  "notes": "When the identifier at the cursor is not an *ast.Ident (the struct's field initializers are syntax errors, so the parser recovers badly), completion fell back to a zero-length range at the cursor and the client appended the item ('colorecolorex') instead of replacing the prefix. The result still parses (as before, the file has parse errors from the initializers) and gopls suppresses type errors in files with parse errors, so neither the syntax probe nor the diagnostic probe can see it; the case uses the specification probe edit_text_differs. The reporter's candidate was an unimported package colorex from his module cache; a same-package type colorex stands in for it, as in the fix's regression test. The deletion of the following fields that the reporter also saw came with the import edit of that unimported package, which the fix does not address."
+ },
+ "language": "go",
+ "settings": {},
+ "settings_note": "The issue names no settings.",
+ "session": {
+  "settle_timeout_s": 180
+ },
+ "files": [
+  {
+   "path": "editor.go",
+   "provenance": "issue",
+   "source": "issue body, first inline code block ('Here is example of code I edit')",
+   "note": ""
+  },
+  {
+   "path": "colorex.go",
+   "provenance": "scaffold",
+   "source": "",
+   "note": "a type colorex in the same package, the completion candidate (the reporter's candidate was the package colorex of github.com/igadmg/goex; the fix's regression test issue77481.txt also declares the candidate type in the package)"
+  },
+  {
+   "path": "go.mod",
+   "provenance": "scaffold",
+   "source": "",
+   "note": "a module around the package; go 1.25, the reporter's Go"
+  }
+ ],
+ "repro": {
+  "attempt": 1,
+  "timing": "settled",
+  "steps": "Open editor.go. Request completion at the end of 'colore' in the field 'MainTextColor colore' (line 3, character 21) and accept colorex. Reported: the item is appended ('colorecolorex') instead of replacing the typed prefix. Probe (specification): the edited editor.go must equal the text with 'colore' replaced by 'colorex' and nothing else changed, as the fix's regression test (issue77481.txt, @with_init golden) expects.",
+  "ops": [
+   {
+    "kind": "open",
+    "path": "editor.go"
+   }
+  ],
+  "probe": {
+   "type": "edit_text_differs",
+   "params": {
+    "edit": {
+     "via": "completion",
+     "path": "editor.go",
+     "position": [
+      3,
+      21
+     ],
+     "label_re": "^colorex$",
+     "missing": "invalid"
+    },
+    "expected": {
+     "path": "editor.go",
+     "text": "package editor\n\ntype Theme struct {\n\tMainTextColor colorex\n\n\tMenuHeight      float32 = 20\n\tToolbarHeight   float32 = MenuHeight\n\tTabButtonWidth  float32 = 60\n\tTabButtonHeight float32 = 30\n}\n",
+     "source": "gopls/internal/test/marker/testdata/completion/issue77481.txt@2d8078dc5c3e (golden @with_init: only the identifier is replaced)"
+    }
+   }
+  }
+ },
+ "attempts": [
+  {
+   "attempt": 1,
+   "timing": "settled",
+   "probe": "edit_text_differs",
+   "summary": "Run 2026-09-23T11:3x (this case revision): not-reproduced-pre. With the issue's struct and a same-package type colorex as the candidate (as in the fix's regression test), v0.21.1 already replaced 'colore' by 'colorex' and left the rest unchanged (3/3), like v0.22.0: in this file 'colore' parses as an identifier, so the zero-length fallback range is not used. The reporter's candidate was an unimported package (github.com/igadmg/goex/image/colorex, with an import edit), and his result ('colore' kept, 'colorex' on a new line, following fields deleted) comes from that path; reproducing it needs the package in the module cache or workspace and an expected text for the import edit that the issue does not state exactly, so a second attempt would have to fix the expected output after seeing the post-fix build. No second attempt.",
+   "verdict": "not-reproduced-pre (same-package candidate is replaced correctly)"
+  }
+ ]
+}

@@ -1,0 +1,457 @@
+{
+ "format": 1,
+ "campaign": "main_v2",
+ "vid": "e646cc2b6d9c-v00",
+ "run_id": "e646cc2b6d9c",
+ "oracle": "r4_edits",
+ "server": {
+  "kind": "gopls",
+  "version": "v0.23.0"
+ },
+ "project": {
+  "name": "schollz/croc@5890191be511",
+  "source": "corpus",
+  "ref": "temp/corpus/schollz__croc@5890191be511",
+  "commit": "5890191be511f9d0e44fc2ccb83c9458ffb86208",
+  "language": "go"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "internal/tailcat/pickregion_js.go",
+    "positions": [
+     [
+      18,
+      12
+     ],
+     [
+      18,
+      21
+     ],
+     [
+      18,
+      27
+     ],
+     [
+      18,
+      35
+     ],
+     [
+      18,
+      42
+     ],
+     [
+      18,
+      48
+     ],
+     [
+      18,
+      56
+     ],
+     [
+      18,
+      67
+     ],
+     [
+      18,
+      73
+     ],
+     [
+      18,
+      78
+     ],
+     [
+      18,
+      83
+     ],
+     [
+      19,
+      12
+     ]
+    ],
+    "ends": [
+     [
+      18,
+      19
+     ],
+     [
+      18,
+      23
+     ],
+     [
+      18,
+      31
+     ],
+     [
+      18,
+      39
+     ],
+     [
+      18,
+      43
+     ],
+     [
+      18,
+      52
+     ],
+     [
+      18,
+      60
+     ],
+     [
+      18,
+      71
+     ],
+     [
+      18,
+      75
+     ],
+     [
+      18,
+      80
+     ],
+     [
+      18,
+      86
+     ],
+     [
+      19,
+      14
+     ]
+    ],
+    "names": [
+     "PickBestRegion",
+     "ctx",
+     "context",
+     "Context",
+     "dm",
+     "tailcfg",
+     "DERPMap",
+     "regionID",
+     "int",
+     "err",
+     "error",
+     "nil"
+    ]
+   },
+   {
+    "path": "src/cli/update.go",
+    "positions": [
+     [
+      149,
+      33
+     ],
+     [
+      213,
+      7
+     ],
+     [
+      232,
+      25
+     ],
+     [
+      237,
+      3
+     ],
+     [
+      256,
+      51
+     ],
+     [
+      294,
+      88
+     ],
+     [
+      348,
+      42
+     ],
+     [
+      354,
+      63
+     ],
+     [
+      365,
+      35
+     ],
+     [
+      365,
+      57
+     ],
+     [
+      383,
+      47
+     ],
+     [
+      457,
+      13
+     ]
+    ],
+    "ends": [
+     [
+      149,
+      35
+     ],
+     [
+      213,
+      13
+     ],
+     [
+      232,
+      29
+     ],
+     [
+      237,
+      6
+     ],
+     [
+      256,
+      54
+     ],
+     [
+      294,
+      91
+     ],
+     [
+      348,
+      44
+     ],
+     [
+      354,
+      65
+     ],
+     [
+      365,
+      39
+     ],
+     [
+      365,
+      62
+     ],
+     [
+      383,
+      52
+     ],
+     [
+      457,
+      16
+     ]
+    ],
+    "names": [
+     "nil",
+     "manifestPath",
+     "OpenFile",
+     "probe",
+     "target",
+     "client",
+     "err",
+     "url",
+     "StatusOK",
+     "StatusCode",
+     "checksums",
+     "errors"
+    ]
+   },
+   {
+    "path": "src/tailcattransport/bundle_supported.go",
+    "positions": [
+     [
+      24,
+      10
+     ],
+     [
+      30,
+      32
+     ],
+     [
+      56,
+      32
+     ],
+     [
+      68,
+      11
+     ],
+     [
+      70,
+      14
+     ],
+     [
+      122,
+      10
+     ],
+     [
+      129,
+      34
+     ],
+     [
+      142,
+      3
+     ],
+     [
+      143,
+      22
+     ],
+     [
+      183,
+      7
+     ],
+     [
+      183,
+      28
+     ],
+     [
+      213,
+      7
+     ]
+    ],
+    "ends": [
+     [
+      24,
+      12
+     ],
+     [
+      30,
+      35
+     ],
+     [
+      56,
+      35
+     ],
+     [
+      68,
+      17
+     ],
+     [
+      70,
+      17
+     ],
+     [
+      122,
+      12
+     ],
+     [
+      129,
+      36
+     ],
+     [
+      142,
+      5
+     ],
+     [
+      143,
+      24
+     ],
+     [
+      183,
+      13
+     ],
+     [
+      183,
+      34
+     ],
+     [
+      213,
+      9
+     ]
+    ],
+    "names": [
+     "sync",
+     "events",
+     "error",
+     "countingConn",
+     "atomic",
+     "nil",
+     "time",
+     "path",
+     "path",
+     "StreamCount",
+     "connections",
+     "conn"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "completionInsert",
+  "path": "src/tailcattransport/bundle_supported.go",
+  "line": 24,
+  "character": 12,
+  "extra": "sync.Cond"
+ },
+ "ops": [],
+ "case": {
+  "character": 12,
+  "edits": [
+   {
+    "newText": "sync.Cond",
+    "range": {
+     "end": {
+      "character": 12,
+      "line": 24
+     },
+     "start": {
+      "character": 8,
+      "line": 24
+     }
+    }
+   }
+  ],
+  "excerpt": "\tmu     sync.Cond.Mutex",
+  "item_kind": 22,
+  "kind": "completion",
+  "label": "sync.Cond",
+  "line": 24,
+  "name": "sync",
+  "new_errors": [
+   "25:18: expected ';', found '.'",
+   "31:2: expected '}', found 'return'",
+   "31:9: expected ';', found '&'",
+   "35:2: expected declaration, found 'if'"
+  ],
+  "path": "src/tailcattransport/bundle_supported.go"
+ },
+ "shape": "completionInsert:gained",
+ "signature": "gopls|r4_edits|completionInsert:gained",
+ "expected": [],
+ "actual": [
+  "expected ';', found '&'",
+  "expected ';', found '.'",
+  "expected '}', found 'return'",
+  "expected declaration, found 'if'"
+ ],
+ "reproduced": "0/3",
+ "note": "accepting completion item 'sync.Cond' (kind 22) after 'sync' at src/tailcattransport/bundle_supported.go:25:13 introduces [\"25:18: expected ';', found '.'\", \"31:2: expected '}', found 'return'\"]; confirmed in a fresh session on the original content; flake 0/3 [r1:Scr r2:SCr r3:SCr] in 86s",
+ "violation": {
+  "oracle": "r4_edits",
+  "server": "gopls-v0.23.0",
+  "project": "schollz/croc@5890191be511",
+  "key": {
+   "method": "completionInsert",
+   "path": "src/tailcattransport/bundle_supported.go",
+   "line": 24,
+   "character": 12,
+   "extra": "sync.Cond"
+  },
+  "expected": [],
+  "actual": [
+   "expected ';', found '&'",
+   "expected ';', found '.'",
+   "expected '}', found 'return'",
+   "expected declaration, found 'if'"
+  ],
+  "ops": [],
+  "detail": "{\"case\": {\"character\": 12, \"edits\": [{\"newText\": \"sync.Cond\", \"range\": {\"end\": {\"character\": 12, \"line\": 24}, \"start\": {\"character\": 8, \"line\": 24}}}], \"excerpt\": \"\\tmu     sync.Cond.Mutex\", \"item_kind\": 22, \"kind\": \"completion\", \"label\": \"sync.Cond\", \"line\": 24, \"name\": \"sync\", \"new_errors\": [\"25:18: expected ';', found '.'\", \"31:2: expected '}', found 'return'\", \"31:9: expected ';', found '&'\", \"35:2: expected declaration, found 'if'\"], \"path\": \"src/tailcattransport/bundle_supported.go\"}, \"note\": \"accepting completion item 'sync.Cond' (kind 22) after 'sync' at src/tailcattransport/bundle_supported.go:25:13 introduces [\\\"25:18: expected ';', found '.'\\\", \\\"31:2: expected '}', found 'return'\\\"]; confirmed in a fresh session on the original content; flake 0/3 [r1:Scr r2:SCr r3:SCr] in 86s\", \"shape\": \"completionInsert:gained\"}",
+  "reproduced": "0/3",
+  "reduced_ops": [],
+  "signature": "gopls|r4_edits|completionInsert:gained",
+  "run_id": "e646cc2b6d9c"
+ },
+ "replay_logs": [],
+ "project_files": {},
+ "incomplete": false
+}

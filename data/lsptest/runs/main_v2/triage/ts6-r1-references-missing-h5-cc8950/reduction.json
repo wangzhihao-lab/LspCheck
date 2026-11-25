@@ -1,0 +1,137 @@
+{
+ "vid": "0d6f841395f8-v00",
+ "ops_before": 5,
+ "narrowed": true,
+ "reduced_confirmed": "2/3",
+ "probes": 14,
+ "cache_hits": 1,
+ "reduce_seconds": 735.399,
+ "budget_exhausted": false,
+ "probe_log": [
+  [
+   4,
+   false
+  ],
+  [
+   4,
+   false
+  ],
+  [
+   4,
+   false
+  ],
+  [
+   4,
+   true
+  ],
+  [
+   3,
+   false
+  ],
+  [
+   2,
+   false
+  ],
+  [
+   2,
+   false
+  ],
+  [
+   1,
+   false
+  ],
+  [
+   1,
+   false
+  ],
+  [
+   1,
+   false
+  ],
+  [
+   1,
+   false
+  ],
+  [
+   3,
+   false
+  ],
+  [
+   3,
+   false
+  ],
+  [
+   3,
+   false
+  ]
+ ],
+ "logs": [
+  "ts6-6.0.3-trcc8950-replay-baseline-20261119-012046-e74099.jsonl.gz",
+  "ts6-6.0.3-trcc8950-replay-control-20261119-012046-f0d390.jsonl.gz",
+  "ts6-6.0.3-trcc8950-replay-history-20261119-012134-c48ae3.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [
+   [
+    "src/common/util.ts",
+    2,
+    13,
+    2,
+    33
+   ],
+   [
+    "src/main/ffmpeg.ts",
+    17,
+    72,
+    17,
+    92
+   ],
+   [
+    "src/main/ffmpeg.ts",
+    587,
+    9,
+    587,
+    29
+   ],
+   [
+    "src/renderer/src/App.tsx",
+    103,
+    9,
+    103,
+    29
+   ],
+   [
+    "src/renderer/src/App.tsx",
+    2299,
+    31,
+    2299,
+    51
+   ],
+   [
+    "src/renderer/src/ffmpeg.ts",
+    16,
+    9,
+    16,
+    29
+   ],
+   [
+    "src/renderer/src/ffmpeg.ts",
+    581,
+    23,
+    581,
+    43
+   ]
+  ],
+  "actual": [
+   [
+    "src/common/util.ts",
+    2,
+    13,
+    2,
+    33
+   ]
+  ]
+ },
+ "ops_after": 5,
+ "total_seconds": 1212.8
+}

@@ -1,0 +1,19 @@
+batch,oracle,items,same verdict,agreement %,kappa (three verdicts),kappa (bug or not)
+first corpus,r0_crash,2,0,0.0,0.00,0.00
+first corpus,r1_history,29,26,89.7,0.80,0.93
+first corpus,r2_handles,2,2,100.0,,
+first corpus,r3_routes,24,18,75.0,0.31,0.31
+first corpus,r4_edits,27,21,77.8,0.53,0.47
+first corpus,r5_transforms,9,5,55.6,0.25,
+first corpus,r6_crossimpl,13,11,84.6,0.00,0.00
+first corpus,all,106,83,78.3,0.66,0.63
+second corpus,r0_crash,1,1,100.0,,
+second corpus,r1_history,37,37,100.0,1.00,1.00
+second corpus,r2_handles,2,2,100.0,,
+second corpus,r3_routes,23,21,91.3,0.70,0.70
+second corpus,r4_edits,38,38,100.0,1.00,1.00
+second corpus,r5_transforms,10,7,70.0,0.52,0.78
+second corpus,r6_crossimpl,10,10,100.0,,
+second corpus,all,121,116,95.9,0.93,0.95
+benchmark signatures,all,77,70,90.9,0.79,0.78
+benchmark signatures,without practice cases,62,56,90.3,0.75,0.74

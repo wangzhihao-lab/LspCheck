@@ -1,0 +1,6 @@
+2026-09-24 05:16:48,203 INFO campaign_run run daf9853a6ca8: r1_history on gopls v0.23.0, fatedier/frp@d20a23299600 seed 1 settled, targets ['pkg/config/legacy/value.go', 'pkg/config/load_test.go', 'pkg/transport/tls.go']
+2026-09-24 05:29:19,224 INFO campaign_run run daf9853a6ca8: 7 candidate(s) in 751s; confirming
+2026-09-24 05:30:22,294 INFO flake replay 1/3 of gopls|r1_history|completion:extra: settled=True control_stable=True reproduced=True (63.1s)
+2026-09-24 05:31:24,899 INFO flake replay 2/3 of gopls|r1_history|completion:extra: settled=True control_stable=True reproduced=True (62.6s)
+2026-09-24 05:32:27,359 INFO flake replay 3/3 of gopls|r1_history|completion:extra: settled=True control_stable=True reproduced=False (62.5s)
+2026-09-24 05:32:27,364 INFO campaign_run run daf9853a6ca8 finished: ok, 0 confirmed of 7 candidate(s), 939s

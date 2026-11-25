@@ -1,0 +1,236 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "0081742f7574-v00",
+ "run_id": "0081742f7574",
+ "oracle": "r4_edits",
+ "server": {
+  "kind": "ts6",
+  "version": "6.0.3"
+ },
+ "project": {
+  "name": "react-hook-form/react-hook-form@5fd9ef65290b",
+  "source": "corpus",
+  "ref": "temp/corpus/react-hook-form__react-hook-form@5fd9ef65290b",
+  "commit": "5fd9ef65290bef2ccaa7ac96dc8d5d55478b5410",
+  "language": "typescript"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "app/src/main.tsx",
+    "positions": [
+     [
+      5,
+      6
+     ]
+    ],
+    "ends": [],
+    "names": [
+     ""
+    ]
+   },
+   {
+    "path": "examples/V7/validationOnFieldBlur.tsx",
+    "positions": [],
+    "ends": [],
+    "names": []
+   },
+   {
+    "path": "src/logic/skipValidation.ts",
+    "positions": [],
+    "ends": [],
+    "names": []
+   }
+  ]
+ },
+ "key": {
+  "method": "diagnostics",
+  "path": "app/src/main.tsx",
+  "line": 5,
+  "character": 6,
+  "extra": "M2:quickfix-errors:Remove unused declaration for: 'root'"
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "app/src/main.tsx"
+  },
+  {
+   "kind": "change",
+   "path": "app/src/main.tsx",
+   "start": [
+    6,
+    0
+   ],
+   "end": [
+    6,
+    4
+   ],
+   "text": "rot"
+  },
+  {
+   "kind": "change",
+   "path": "app/src/main.tsx",
+   "start": [
+    5,
+    0
+   ],
+   "end": [
+    6,
+    0
+   ]
+  }
+ ],
+ "case": {
+  "action_kind": "quickfix",
+  "base_errors": 0,
+  "check": "errors",
+  "diag": {
+   "code": 6133,
+   "message": "'root' is declared but its value is never read.",
+   "range": {
+    "end": {
+     "character": 10,
+     "line": 5
+    },
+    "start": {
+     "character": 6,
+     "line": 5
+    }
+   },
+   "severity": 4
+  },
+  "fix_introduced_errors": [],
+  "fix_ops": [
+   {
+    "end": [
+     6,
+     0
+    ],
+    "kind": "change",
+    "path": "app/src/main.tsx",
+    "start": [
+     5,
+     0
+    ]
+   }
+  ],
+  "kind": "mutation",
+  "mutation": {
+   "end": [
+    6,
+    4
+   ],
+   "id": "M2",
+   "offsets": [
+    195,
+    199
+   ],
+   "sha": "8fe88fa09cbc282f",
+   "start": [
+    6,
+    0
+   ],
+   "text": "rot",
+   "what": "misspell 'root' as 'rot' (drop a middle character)"
+  },
+  "n_fix_ops": 1,
+  "path": "app/src/main.tsx",
+  "post_errors": 1,
+  "title": "Remove unused declaration for: 'root'",
+  "via": "edit"
+ },
+ "shape": "diagnostics:extra:2304",
+ "signature": "ts6|r4_edits|diagnostics:extra:2304",
+ "expected": [],
+ "actual": [
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "2304",
+   "typescript",
+   "Cannot find name 'rot'."
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "quick fix \"Remove unused declaration for: 'root'\" for 6133 at app/src/main.tsx:6:7 raises the error count in the edited files from 0 to 1 (seeded by M2: misspell 'root' as 'rot' (drop a middle character); errors before the mutation 0, after the fix 1); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 303s",
+ "violation": {
+  "oracle": "r4_edits",
+  "server": "ts6-6.0.3",
+  "project": "react-hook-form/react-hook-form@5fd9ef65290b",
+  "key": {
+   "method": "diagnostics",
+   "path": "app/src/main.tsx",
+   "line": 5,
+   "character": 6,
+   "extra": "M2:quickfix-errors:Remove unused declaration for: 'root'"
+  },
+  "expected": [],
+  "actual": [
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2304",
+    "typescript",
+    "Cannot find name 'rot'."
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "app/src/main.tsx"
+   },
+   {
+    "kind": "change",
+    "path": "app/src/main.tsx",
+    "start": [
+     6,
+     0
+    ],
+    "end": [
+     6,
+     4
+    ],
+    "text": "rot"
+   },
+   {
+    "kind": "change",
+    "path": "app/src/main.tsx",
+    "start": [
+     5,
+     0
+    ],
+    "end": [
+     6,
+     0
+    ]
+   }
+  ],
+  "detail": "{\"case\": {\"action_kind\": \"quickfix\", \"base_errors\": 0, \"check\": \"errors\", \"diag\": {\"code\": 6133, \"message\": \"'root' is declared but its value is never read.\", \"range\": {\"end\": {\"character\": 10, \"line\": 5}, \"start\": {\"character\": 6, \"line\": 5}}, \"severity\": 4}, \"fix_introduced_errors\": [], \"fix_ops\": [{\"end\": [6, 0], \"kind\": \"change\", \"path\": \"app/src/main.tsx\", \"start\": [5, 0]}], \"kind\": \"mutation\", \"mutation\": {\"end\": [6, 4], \"id\": \"M2\", \"offsets\": [195, 199], \"sha\": \"8fe88fa09cbc282f\", \"start\": [6, 0], \"text\": \"rot\", \"what\": \"misspell 'root' as 'rot' (drop a middle character)\"}, \"n_fix_ops\": 1, \"path\": \"app/src/main.tsx\", \"post_errors\": 1, \"title\": \"Remove unused declaration for: 'root'\", \"via\": \"edit\"}, \"note\": \"quick fix \\\"Remove unused declaration for: 'root'\\\" for 6133 at app/src/main.tsx:6:7 raises the error count in the edited files from 0 to 1 (seeded by M2: misspell 'root' as 'rot' (drop a middle character); errors before the mutation 0, after the fix 1); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 303s\", \"shape\": \"diagnostics:extra:2304\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "ts6|r4_edits|diagnostics:extra:2304",
+  "run_id": "0081742f7574"
+ },
+ "replay_logs": [
+  "logs/ts6-6.0.3-tr1554be-r4-replay-baseline-20260925-190049-d61fc6.jsonl.gz",
+  "logs/ts6-6.0.3-tr1554be-r4-replay-case-20260925-190035-7ab8d6.jsonl.gz",
+  "logs/ts6-6.0.3-tr1554be-r4-replay-control-20260925-190059-eb90ed.jsonl.gz"
+ ],
+ "project_files": {},
+ "group": "ts6-r4-diagnostics-extra-2304-mutation-m2-1554be",
+ "reduced": true
+}

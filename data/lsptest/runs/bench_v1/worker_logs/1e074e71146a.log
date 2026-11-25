@@ -1,0 +1,9 @@
+2026-09-24 17:51:20,577 INFO campaign_run run 1e074e71146a: r3_routes on rust-analyzer 2026-04-20, rust-analyzer-18572 seed 1 settled, targets ['src/main.rs']
+2026-09-24 17:51:35,990 INFO campaign_run run 1e074e71146a: 2 candidate(s) in 15s; confirming
+2026-09-24 17:51:46,513 INFO flake replay 1/3 of rust-analyzer|r3_routes|highlightVsReferences:extra: settled=True control_stable=True reproduced=True (10.5s)
+2026-09-24 17:51:56,904 INFO flake replay 2/3 of rust-analyzer|r3_routes|highlightVsReferences:extra: settled=True control_stable=True reproduced=True (10.4s)
+2026-09-24 17:52:07,286 INFO flake replay 3/3 of rust-analyzer|r3_routes|highlightVsReferences:extra: settled=True control_stable=True reproduced=True (10.4s)
+2026-09-24 17:52:22,320 INFO flake replay 1/3 of rust-analyzer|r3_routes|diagnostics:missing:E0107: settled=True control_stable=True reproduced=True (15.0s)
+2026-09-24 17:52:37,987 INFO flake replay 2/3 of rust-analyzer|r3_routes|diagnostics:missing:E0107: settled=True control_stable=True reproduced=True (15.7s)
+2026-09-24 17:52:53,007 INFO flake replay 3/3 of rust-analyzer|r3_routes|diagnostics:missing:E0107: settled=True control_stable=True reproduced=True (15.0s)
+2026-09-24 17:52:53,014 INFO campaign_run run 1e074e71146a finished: ok, 2 confirmed of 2 candidate(s), 92s

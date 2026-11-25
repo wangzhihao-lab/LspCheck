@@ -1,0 +1,254 @@
+{
+ "format": 1,
+ "campaign": "main_v2",
+ "vid": "d76274109238-v01",
+ "run_id": "d76274109238",
+ "oracle": "r4_edits",
+ "server": {
+  "kind": "ts6",
+  "version": "6.0.3"
+ },
+ "project": {
+  "name": "pear-devs/pear-desktop@3ff0a86231fe",
+  "source": "corpus",
+  "ref": "temp/corpus/pear-devs__pear-desktop@3ff0a86231fe",
+  "commit": "3ff0a86231fed97b1a4365de0521fc96794c3f67",
+  "language": "typescript"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "src/plugins/album-actions/templates/undislike-button.tsx",
+    "positions": [],
+    "ends": [],
+    "names": []
+   },
+   {
+    "path": "src/plugins/downloader/main/index.ts",
+    "positions": [
+     [
+      180,
+      12
+     ]
+    ],
+    "ends": [],
+    "names": [
+     ""
+    ]
+   },
+   {
+    "path": "src/plugins/equalizer/index.ts",
+    "positions": [],
+    "ends": [],
+    "names": []
+   }
+  ]
+ },
+ "key": {
+  "method": "diagnostics",
+  "path": "src/plugins/downloader/main/index.ts",
+  "line": 180,
+  "character": 12,
+  "extra": "M3:quickfix-errors:Add missing properties"
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "src/plugins/downloader/main/index.ts"
+  },
+  {
+   "kind": "change",
+   "path": "src/plugins/downloader/main/index.ts",
+   "start": [
+    182,
+    8
+   ],
+   "end": [
+    183,
+    8
+   ]
+  },
+  {
+   "kind": "change",
+   "path": "src/plugins/downloader/main/index.ts",
+   "start": [
+    184,
+    6
+   ],
+   "end": [
+    184,
+    6
+   ],
+   "text": "  globalObj: undefined\n      "
+  }
+ ],
+ "case": {
+  "action_kind": "quickfix",
+  "base_errors": 0,
+  "check": "errors",
+  "diag": {
+   "code": 2741,
+   "message": "Property 'globalObj' is missing in type '{ fetch: { (input: RequestInfo | URL, init?: RequestInit): Promise<Response>; (input: string | URL | Request, init?: RequestInit): Promise<Response>; (input: string | URL | Request, init?: RequestInit): Promise<Response>; }; identifier: string; requestKey: string; }' but required in type 'BgConfig'.",
+   "range": {
+    "end": {
+     "character": 20,
+     "line": 180
+    },
+    "start": {
+     "character": 12,
+     "line": 180
+    }
+   },
+   "severity": 1
+  },
+  "fix_introduced_errors": [
+   {
+    "code": 2322,
+    "message": "Type 'undefined' is not assignable to type 'Record<string, any>'.",
+    "path": "src/plugins/downloader/main/index.ts",
+    "range": {
+     "end": {
+      "character": 17,
+      "line": 184
+     },
+     "start": {
+      "character": 8,
+      "line": 184
+     }
+    },
+    "severity": 1
+   }
+  ],
+  "fix_ops": [
+   {
+    "end": [
+     184,
+     6
+    ],
+    "kind": "change",
+    "path": "src/plugins/downloader/main/index.ts",
+    "start": [
+     184,
+     6
+    ],
+    "text": "  globalObj: undefined\n      "
+   }
+  ],
+  "kind": "mutation",
+  "mutation": {
+   "end": [
+    183,
+    8
+   ],
+   "id": "M3",
+   "offsets": [
+    5180,
+    5211
+   ],
+   "sha": "04e681ab8ec14da7",
+   "start": [
+    182,
+    8
+   ],
+   "text": "",
+   "what": "drop member globalObj of a literal"
+  },
+  "n_fix_ops": 1,
+  "path": "src/plugins/downloader/main/index.ts",
+  "post_errors": 1,
+  "title": "Add missing properties",
+  "via": "edit"
+ },
+ "shape": "diagnostics:extra:2322",
+ "signature": "ts6|r4_edits|diagnostics:extra:2322",
+ "expected": [],
+ "actual": [
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "2322",
+   "typescript",
+   "Type 'undefined' is not assignable to type 'Record<string, any>'."
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "quick fix 'Add missing properties' for 2741 at src/plugins/downloader/main/index.ts:181:13 raises the error count in the edited files from 0 to 1 (seeded by M3: drop member globalObj of a literal; errors before the mutation 0, after the fix 1); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 345s",
+ "violation": {
+  "oracle": "r4_edits",
+  "server": "ts6-6.0.3",
+  "project": "pear-devs/pear-desktop@3ff0a86231fe",
+  "key": {
+   "method": "diagnostics",
+   "path": "src/plugins/downloader/main/index.ts",
+   "line": 180,
+   "character": 12,
+   "extra": "M3:quickfix-errors:Add missing properties"
+  },
+  "expected": [],
+  "actual": [
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2322",
+    "typescript",
+    "Type 'undefined' is not assignable to type 'Record<string, any>'."
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "src/plugins/downloader/main/index.ts"
+   },
+   {
+    "kind": "change",
+    "path": "src/plugins/downloader/main/index.ts",
+    "start": [
+     182,
+     8
+    ],
+    "end": [
+     183,
+     8
+    ]
+   },
+   {
+    "kind": "change",
+    "path": "src/plugins/downloader/main/index.ts",
+    "start": [
+     184,
+     6
+    ],
+    "end": [
+     184,
+     6
+    ],
+    "text": "  globalObj: undefined\n      "
+   }
+  ],
+  "detail": "{\"case\": {\"action_kind\": \"quickfix\", \"base_errors\": 0, \"check\": \"errors\", \"diag\": {\"code\": 2741, \"message\": \"Property 'globalObj' is missing in type '{ fetch: { (input: RequestInfo | URL, init?: RequestInit): Promise<Response>; (input: string | URL | Request, init?: RequestInit): Promise<Response>; (input: string | URL | Request, init?: RequestInit): Promise<Response>; }; identifier: string; requestKey: string; }' but required in type 'BgConfig'.\", \"range\": {\"end\": {\"character\": 20, \"line\": 180}, \"start\": {\"character\": 12, \"line\": 180}}, \"severity\": 1}, \"fix_introduced_errors\": [{\"code\": 2322, \"message\": \"Type 'undefined' is not assignable to type 'Record<string, any>'.\", \"path\": \"src/plugins/downloader/main/index.ts\", \"range\": {\"end\": {\"character\": 17, \"line\": 184}, \"start\": {\"character\": 8, \"line\": 184}}, \"severity\": 1}], \"fix_ops\": [{\"end\": [184, 6], \"kind\": \"change\", \"path\": \"src/plugins/downloader/main/index.ts\", \"start\": [184, 6], \"text\": \"  globalObj: undefined\\n      \"}], \"kind\": \"mutation\", \"mutation\": {\"end\": [183, 8], \"id\": \"M3\", \"offsets\": [5180, 5211], \"sha\": \"04e681ab8ec14da7\", \"start\": [182, 8], \"text\": \"\", \"what\": \"drop member globalObj of a literal\"}, \"n_fix_ops\": 1, \"path\": \"src/plugins/downloader/main/index.ts\", \"post_errors\": 1, \"title\": \"Add missing properties\", \"via\": \"edit\"}, \"note\": \"quick fix 'Add missing properties' for 2741 at src/plugins/downloader/main/index.ts:181:13 raises the error count in the edited files from 0 to 1 (seeded by M3: drop member globalObj of a literal; errors before the mutation 0, after the fix 1); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 345s\", \"shape\": \"diagnostics:extra:2322\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "ts6|r4_edits|diagnostics:extra:2322",
+  "run_id": "d76274109238"
+ },
+ "replay_logs": [
+  "logs/ts6-6.0.3-tr1879f3-r4-replay-baseline-20261119-025805-61a616.jsonl.gz",
+  "logs/ts6-6.0.3-tr1879f3-r4-replay-case-20261119-025744-279b97.jsonl.gz",
+  "logs/ts6-6.0.3-tr1879f3-r4-replay-control-20261119-025823-abbcd2.jsonl.gz"
+ ],
+ "project_files": {},
+ "group": "ts6-r4-diagnostics-extra-2322-mutation-m3-1879f3",
+ "reduced": true
+}

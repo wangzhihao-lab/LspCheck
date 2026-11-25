@@ -1,0 +1,858 @@
+{
+ "env": {
+  "go_version": "go version go1.27.1 darwin/arm64",
+  "go_env": "GOPATH=<repo>/temp/lsp_servers/gopath, GOMODCACHE=<repo>/temp/lsp_servers/gopath/pkg/mod, GOPROXY=off, GOFLAGS=-modcacherw -mod=readonly, GOTOOLCHAIN=local"
+ },
+ "fixes": [
+  {
+   "cause": "C5",
+   "gid": "gopls-r4-diagnostics-extra-notatype-mutation-m2-477181",
+   "project": "charmbracelet/bubbletea@657aaae216e3",
+   "path": "examples/list-default/main.go",
+   "fix_title": "Create variable moddel",
+   "mutation": "misspell 'model' as 'moddel' (duplicate a middle character)",
+   "fix_ops_json": "[{\"kind\": \"change\", \"path\": \"examples/list-default/main.go\", \"start\": [78, 2], \"end\": [78, 2], \"text\": \"oddel := 0\\n\\tm\"}]",
+   "module": "<scratch>/examples",
+   "tool": "go build -o /dev/null ./list-default",
+   "mutated_snippet": [
+    "   76 | \t\titem{title: \"Terrycloth\", desc: \"In other words, towel fabric\"},",
+    "   77 | \t}",
+    "   78 | ",
+    "   79 | \tm := moddel{list: list.New(items, list.NewDefaultDelegate(), 0, 0)}",
+    "   80 | \tm.list.Title = \"My Fave Things\"",
+    "   81 | ",
+    "   82 | \tp := tea.NewProgram(m)"
+   ],
+   "fixed_snippet": [
+    "   76 | \t\titem{title: \"Terrycloth\", desc: \"In other words, towel fabric\"},",
+    "   77 | \t}",
+    "   78 | ",
+    "   79 | \tmoddel := 0",
+    "   80 | \tm := moddel{list: list.New(items, list.NewDefaultDelegate(), 0, 0)}",
+    "   81 | \tm.list.Title = \"My Fave Things\"",
+    "   82 | ",
+    "   83 | \tp := tea.NewProgram(m)"
+   ],
+   "states": {
+    "base": {
+     "go": {
+      "cmd": "go build -o /dev/null ./list-default",
+      "cwd": "<scratch>/examples",
+      "exit": 0,
+      "output": []
+     },
+     "gofmt": {
+      "cmd": "gofmt -e <scratch>/examples/list-default/main.go",
+      "cwd": "<scratch>/examples",
+      "exit": 0,
+      "output": []
+     }
+    },
+    "mutated": {
+     "go": {
+      "cmd": "go build -o /dev/null ./list-default",
+      "cwd": "<scratch>/examples",
+      "exit": 1,
+      "output": [
+       "# examples/list-default",
+       "list-default/main.go:79:7: undefined: moddel"
+      ]
+     },
+     "gofmt": {
+      "cmd": "gofmt -e <scratch>/examples/list-default/main.go",
+      "cwd": "<scratch>/examples",
+      "exit": 0,
+      "output": []
+     }
+    },
+    "fixed": {
+     "go": {
+      "cmd": "go build -o /dev/null ./list-default",
+      "cwd": "<scratch>/examples",
+      "exit": 1,
+      "output": [
+       "# examples/list-default",
+       "list-default/main.go:80:7: moddel (local variable) is not a type"
+      ]
+     },
+     "gofmt": {
+      "cmd": "gofmt -e <scratch>/examples/list-default/main.go",
+      "cwd": "<scratch>/examples",
+      "exit": 0,
+      "output": []
+     }
+    }
+   }
+  },
+  {
+   "cause": "C5",
+   "gid": "gopls-r4-diagnostics-extra-untypedniluse-mutation-m2-354f70",
+   "project": "spf13/cobra@adbc8813901b",
+   "path": "command_win.go",
+   "fix_title": "Create variable MousetrappHelpText",
+   "mutation": "misspell 'MousetrapHelpText' as 'MousetrappHelpText' (duplicate a middle character)",
+   "fix_ops_json": "[{\"kind\": \"change\", \"path\": \"command_win.go\", \"start\": [31, 2], \"end\": [31, 2], \"text\": \"MousetrappHelpText := nil\\n\\t\\t\"}]",
+   "module": "<scratch>",
+   "tool": "go build -o /dev/null .",
+   "mutated_snippet": [
+    "   29 | ",
+    "   30 | func preExecHook(c *Command) {",
+    "   31 | \tif MousetrapHelpText != \"\" && mousetrap.StartedByExplorer() {",
+    "   32 | \t\tc.Print(MousetrappHelpText)",
+    "   33 | \t\tif MousetrapDisplayDuration > 0 {",
+    "   34 | \t\t\ttime.Sleep(MousetrapDisplayDuration)",
+    "   35 | \t\t} else {"
+   ],
+   "fixed_snippet": [
+    "   29 | ",
+    "   30 | func preExecHook(c *Command) {",
+    "   31 | \tif MousetrapHelpText != \"\" && mousetrap.StartedByExplorer() {",
+    "   32 | \t\tMousetrappHelpText := nil",
+    "   33 | \t\tc.Print(MousetrappHelpText)",
+    "   34 | \t\tif MousetrapDisplayDuration > 0 {",
+    "   35 | \t\t\ttime.Sleep(MousetrapDisplayDuration)",
+    "   36 | \t\t} else {"
+   ],
+   "states": {
+    "base": {
+     "go": {
+      "cmd": "GOARCH=amd64 GOOS=windows go build -o /dev/null .",
+      "cwd": "<scratch>",
+      "exit": 0,
+      "output": []
+     },
+     "gofmt": {
+      "cmd": "gofmt -e <scratch>/command_win.go",
+      "cwd": "<scratch>",
+      "exit": 0,
+      "output": []
+     }
+    },
+    "mutated": {
+     "go": {
+      "cmd": "GOARCH=amd64 GOOS=windows go build -o /dev/null .",
+      "cwd": "<scratch>",
+      "exit": 1,
+      "output": [
+       "# github.com/spf13/cobra",
+       "./command_win.go:32:11: undefined: MousetrappHelpText"
+      ]
+     },
+     "gofmt": {
+      "cmd": "gofmt -e <scratch>/command_win.go",
+      "cwd": "<scratch>",
+      "exit": 0,
+      "output": []
+     }
+    },
+    "fixed": {
+     "go": {
+      "cmd": "GOARCH=amd64 GOOS=windows go build -o /dev/null .",
+      "cwd": "<scratch>",
+      "exit": 1,
+      "output": [
+       "# github.com/spf13/cobra",
+       "./command_win.go:32:25: use of untyped nil in assignment"
+      ]
+     },
+     "gofmt": {
+      "cmd": "gofmt -e <scratch>/command_win.go",
+      "cwd": "<scratch>",
+      "exit": 0,
+      "output": []
+     }
+    }
+   }
+  },
+  {
+   "cause": "C5",
+   "gid": "gopls-r4-diagnostics-extra-invalidifaceassign-mutation-m2-416e90",
+   "project": "XTLS/Xray-core@d562d8947d31",
+   "path": "common/crypto/io.go",
+   "fix_title": "Create variable reaer",
+   "mutation": "misspell 'reader' as 'reaer' (drop a middle character)",
+   "fix_ops_json": "[{\"kind\": \"change\", \"path\": \"common/crypto/io.go\", \"start\": [15, 3], \"end\": [15, 3], \"text\": \"aer := 0\\n\\tre\"}]",
+   "module": "<scratch>",
+   "tool": "go build -o /dev/null ./common/crypto",
+   "mutated_snippet": [
+    "   13 | }",
+    "   14 | ",
+    "   15 | func NewCryptionReader(stream cipher.Stream, reader io.Reader) *CryptionReader {",
+    "   16 | \treturn &CryptionReader{",
+    "   17 | \t\tstream: stream,",
+    "   18 | \t\treader: reaer,",
+    "   19 | \t}",
+    "   20 | }",
+    "   21 | "
+   ],
+   "fixed_snippet": [
+    "   13 | }",
+    "   14 | ",
+    "   15 | func NewCryptionReader(stream cipher.Stream, reader io.Reader) *CryptionReader {",
+    "   16 | \treaer := 0",
+    "   17 | \treturn &CryptionReader{",
+    "   18 | \t\tstream: stream,",
+    "   19 | \t\treader: reaer,",
+    "   20 | \t}",
+    "   21 | }",
+    "   22 | "
+   ],
+   "states": {
+    "base": {
+     "go": {
+      "cmd": "go build -o /dev/null ./common/crypto",
+      "cwd": "<scratch>",
+      "exit": 0,
+      "output": []
+     },
+     "gofmt": {
+      "cmd": "gofmt -e <scratch>/common/crypto/io.go",
+      "cwd": "<scratch>",
+      "exit": 0,
+      "output": []
+     }
+    },
+    "mutated": {
+     "go": {
+      "cmd": "go build -o /dev/null ./common/crypto",
+      "cwd": "<scratch>",
+      "exit": 1,
+      "output": [
+       "# github.com/xtls/xray-core/common/crypto",
+       "common/crypto/io.go:18:11: undefined: reaer"
+      ]
+     },
+     "gofmt": {
+      "cmd": "gofmt -e <scratch>/common/crypto/io.go",
+      "cwd": "<scratch>",
+      "exit": 0,
+      "output": []
+     }
+    },
+    "fixed": {
+     "go": {
+      "cmd": "go build -o /dev/null ./common/crypto",
+      "cwd": "<scratch>",
+      "exit": 1,
+      "output": [
+       "# github.com/xtls/xray-core/common/crypto",
+       "common/crypto/io.go:19:11: cannot use reaer (variable of type int) as io.Reader value in struct literal: int does not implement io.Reader (missing method Read)"
+      ]
+     },
+     "gofmt": {
+      "cmd": "gofmt -e <scratch>/common/crypto/io.go",
+      "cwd": "<scratch>",
+      "exit": 0,
+      "output": []
+     }
+    }
+   }
+  },
+  {
+   "cause": "C5",
+   "gid": "gopls-r4-diagnostics-extra-nonindexableoperand-mutation-m2-ba152b",
+   "project": "caddyserver/caddy@c18099a0af5e",
+   "path": "modules/caddyhttp/reverseproxy/selectionpolicies_test.go",
+   "fix_title": "Create variable poool",
+   "mutation": "misspell 'pool' as 'poool' (duplicate a middle character)",
+   "fix_ops_json": "[{\"kind\": \"change\", \"path\": \"modules/caddyhttp/reverseproxy/selectionpolicies_test.go\", \"start\": [125, 6], \"end\": [125, 6], \"text\": \" := 0\\n\\tpoool\"}]",
+   "module": "<scratch>",
+   "tool": "go vet ./modules/caddyhttp/reverseproxy",
+   "mutated_snippet": [
+    "  123 | \t\tt.Error(\"Expected to select first host on availability.\")",
+    "  124 | \t}",
+    "  125 | \t// mark host as full",
+    "  126 | \tpoool[1].countRequest(1)",
+    "  127 | \tpool[1].MaxRequests = 1",
+    "  128 | \th = wrrPolicy.Select(pool, req, nil)",
+    "  129 | \tif h != pool[2] {"
+   ],
+   "fixed_snippet": [
+    "  123 | \t\tt.Error(\"Expected to select first host on availability.\")",
+    "  124 | \t}",
+    "  125 | \t// mark host as full",
+    "  126 | \tpoool := 0",
+    "  127 | \tpoool[1].countRequest(1)",
+    "  128 | \tpool[1].MaxRequests = 1",
+    "  129 | \th = wrrPolicy.Select(pool, req, nil)",
+    "  130 | \tif h != pool[2] {"
+   ],
+   "states": {
+    "base": {
+     "go": {
+      "cmd": "go vet ./modules/caddyhttp/reverseproxy",
+      "cwd": "<scratch>",
+      "exit": 0,
+      "output": []
+     },
+     "gofmt": {
+      "cmd": "gofmt -e <scratch>/modules/caddyhttp/reverseproxy/selectionpolicies_test.go",
+      "cwd": "<scratch>",
+      "exit": 0,
+      "output": []
+     }
+    },
+    "mutated": {
+     "go": {
+      "cmd": "go vet ./modules/caddyhttp/reverseproxy",
+      "cwd": "<scratch>",
+      "exit": 1,
+      "output": [
+       "# github.com/caddyserver/caddy/v2/modules/caddyhttp/reverseproxy",
+       "# [github.com/caddyserver/caddy/v2/modules/caddyhttp/reverseproxy]",
+       "vet: modules/caddyhttp/reverseproxy/selectionpolicies_test.go:126:2: undefined: poool"
+      ]
+     },
+     "gofmt": {
+      "cmd": "gofmt -e <scratch>/modules/caddyhttp/reverseproxy/selectionpolicies_test.go",
+      "cwd": "<scratch>",
+      "exit": 0,
+      "output": []
+     }
+    },
+    "fixed": {
+     "go": {
+      "cmd": "go vet ./modules/caddyhttp/reverseproxy",
+      "cwd": "<scratch>",
+      "exit": 1,
+      "output": [
+       "# github.com/caddyserver/caddy/v2/modules/caddyhttp/reverseproxy",
+       "# [github.com/caddyserver/caddy/v2/modules/caddyhttp/reverseproxy]",
+       "vet: modules/caddyhttp/reverseproxy/selectionpolicies_test.go:127:2: cannot index poool (variable of type int)"
+      ]
+     },
+     "gofmt": {
+      "cmd": "gofmt -e <scratch>/modules/caddyhttp/reverseproxy/selectionpolicies_test.go",
+      "cwd": "<scratch>",
+      "exit": 0,
+      "output": []
+     }
+    }
+   }
+  },
+  {
+   "cause": "C5",
+   "gid": "gopls-r4-diagnostics-extra-nonsliceableoperand-mutation-m2-d80a9a",
+   "project": "nektos/act@4f411281417e",
+   "path": "pkg/container/docker_auth.go",
+   "fix_title": "Create variable imge",
+   "mutation": "misspell 'image' as 'imge' (drop a middle character)",
+   "fix_ops_json": "[{\"kind\": \"change\", \"path\": \"pkg/container/docker_auth.go\", \"start\": [28, 2], \"end\": [28, 2], \"text\": \"mge := 0\\n\\ti\"}]",
+   "module": "<scratch>",
+   "tool": "go build -o /dev/null ./pkg/container",
+   "mutated_snippet": [
+    "   26 | ",
+    "   27 | \thostName := \"index.docker.io\"",
+    "   28 | \tindex := strings.IndexRune(image, '/')",
+    "   29 | \tif index > -1 && (strings.ContainsAny(imge[:index], \".:\") || image[:index] == \"localhost\") {",
+    "   30 | \t\thostName = image[:index]",
+    "   31 | \t}",
+    "   32 | "
+   ],
+   "fixed_snippet": [
+    "   26 | ",
+    "   27 | \thostName := \"index.docker.io\"",
+    "   28 | \tindex := strings.IndexRune(image, '/')",
+    "   29 | \timge := 0",
+    "   30 | \tif index > -1 && (strings.ContainsAny(imge[:index], \".:\") || image[:index] == \"localhost\") {",
+    "   31 | \t\thostName = image[:index]",
+    "   32 | \t}",
+    "   33 | "
+   ],
+   "states": {
+    "base": {
+     "go": {
+      "cmd": "go build -o /dev/null ./pkg/container",
+      "cwd": "<scratch>",
+      "exit": 0,
+      "output": []
+     },
+     "gofmt": {
+      "cmd": "gofmt -e <scratch>/pkg/container/docker_auth.go",
+      "cwd": "<scratch>",
+      "exit": 0,
+      "output": []
+     }
+    },
+    "mutated": {
+     "go": {
+      "cmd": "go build -o /dev/null ./pkg/container",
+      "cwd": "<scratch>",
+      "exit": 1,
+      "output": [
+       "# github.com/nektos/act/pkg/container",
+       "pkg/container/docker_auth.go:29:40: undefined: imge"
+      ]
+     },
+     "gofmt": {
+      "cmd": "gofmt -e <scratch>/pkg/container/docker_auth.go",
+      "cwd": "<scratch>",
+      "exit": 0,
+      "output": []
+     }
+    },
+    "fixed": {
+     "go": {
+      "cmd": "go build -o /dev/null ./pkg/container",
+      "cwd": "<scratch>",
+      "exit": 1,
+      "output": [
+       "# github.com/nektos/act/pkg/container",
+       "pkg/container/docker_auth.go:30:40: cannot slice imge (variable of type int)"
+      ]
+     },
+     "gofmt": {
+      "cmd": "gofmt -e <scratch>/pkg/container/docker_auth.go",
+      "cwd": "<scratch>",
+      "exit": 0,
+      "output": []
+     }
+    }
+   }
+  },
+  {
+   "cause": "C6",
+   "gid": "gopls-r4-diagnostics-extra-mutation-m2-111975",
+   "project": "junegunn/fzf@b1be3a8be1b8",
+   "path": "src/pattern_test.go",
+   "fix_title": "Create function buildPttern",
+   "mutation": "misspell 'buildPattern' as 'buildPttern' (drop a middle character)",
+   "fix_ops_json": "[{\"kind\": \"change\", \"path\": \"src/pattern_test.go\", \"start\": [182, 5], \"end\": [182, 5], \"text\": \"buildPttern(true1 bool, result, *[]int func(caseSensitive bool, normalize bool, forward bool, input *util.Chars, pattern []rune, withPos bool, slab *util.Slab) (algo.Result, *[]int), extended bool, CaseSmart Case, false1, true2, false2, true3 bool, range []Range, delimiter Delimiter, r []rune) any {\\n\\tpanic(\\\"unimplemented\\\")\\n}\\n\\nfunc \"}]",
+   "module": "<scratch>",
+   "tool": "go vet ./src",
+   "mutated_snippet": [
+    "  160 | ",
+    "  161 | func TestCacheKey(t *testing.T) {",
+    "  162 | \ttest := func(extended bool, patStr string, expected string, cacheable bool) {",
+    "  163 | \t\tpat := buildPttern(true, algo.FuzzyMatchV2, extended, CaseSmart, false, true, false, true, []Range{}, Delimiter{}, []rune(patStr))",
+    "  164 | \t\tif pat.CacheKey() != expected {",
+    "  165 | \t\t\tt.Errorf(\"Expected: %s, actual: %s\", expected, pat.CacheKey())",
+    "  166 | \t\t}",
+    "  167 | \t\tif pat.cacheable != cacheable {",
+    "  168 | \t\t\tt.Errorf(\"Expected: %t, actual: %t (%s)\", cacheable, pat.cacheable, patStr)",
+    "  169 | \t\t}",
+    "  170 | \t}",
+    "  171 | \ttest(false, \"foo !bar\", \"foo !bar\", true)",
+    "  172 | \ttest(false, \"foo | bar !baz\", \"foo | bar !baz\", true)",
+    "  173 | \ttest(true, \"foo  bar  baz\", \"foo\\tbar\\tbaz\", true)",
+    "  174 | \ttest(true, \"foo !bar\", \"foo\", false)",
+    "  175 | \ttest(true, \"foo !bar   baz\", \"foo\\tbaz\", false)",
+    "  176 | \ttest(true, \"foo | bar baz\", \"baz\", false)",
+    "  177 | \ttest(true, \"foo | bar | baz\", \"\", false)",
+    "  178 | \ttest(true, \"foo | bar !baz\", \"\", false)",
+    "  179 | \ttest(true, \"| | foo\", \"\", false)",
+    "  180 | \ttest(true, \"| | | foo\", \"foo\", false)",
+    "  181 | }",
+    "  182 | ",
+    "  183 | func TestCacheable(t *testing.T) {",
+    "  184 | \ttest := func(fuzzy bool, str string, expected string, cacheable bool) {",
+    "  185 | \t\tpat := buildPattern(fuzzy, algo.FuzzyMatchV2, true, CaseSmart, true, true, false, true, []Range{}, Delimiter{}, []rune(str))",
+    "  186 | \t\tif pat.CacheKey() != expected {"
+   ],
+   "fixed_snippet": [
+    "  160 | ",
+    "  161 | func TestCacheKey(t *testing.T) {",
+    "  162 | \ttest := func(extended bool, patStr string, expected string, cacheable bool) {",
+    "  163 | \t\tpat := buildPttern(true, algo.FuzzyMatchV2, extended, CaseSmart, false, true, false, true, []Range{}, Delimiter{}, []rune(patStr))",
+    "  164 | \t\tif pat.CacheKey() != expected {",
+    "  165 | \t\t\tt.Errorf(\"Expected: %s, actual: %s\", expected, pat.CacheKey())",
+    "  166 | \t\t}",
+    "  167 | \t\tif pat.cacheable != cacheable {",
+    "  168 | \t\t\tt.Errorf(\"Expected: %t, actual: %t (%s)\", cacheable, pat.cacheable, patStr)",
+    "  169 | \t\t}",
+    "  170 | \t}",
+    "  171 | \ttest(false, \"foo !bar\", \"foo !bar\", true)",
+    "  172 | \ttest(false, \"foo | bar !baz\", \"foo | bar !baz\", true)",
+    "  173 | \ttest(true, \"foo  bar  baz\", \"foo\\tbar\\tbaz\", true)",
+    "  174 | \ttest(true, \"foo !bar\", \"foo\", false)",
+    "  175 | \ttest(true, \"foo !bar   baz\", \"foo\\tbaz\", false)",
+    "  176 | \ttest(true, \"foo | bar baz\", \"baz\", false)",
+    "  177 | \ttest(true, \"foo | bar | baz\", \"\", false)",
+    "  178 | \ttest(true, \"foo | bar !baz\", \"\", false)",
+    "  179 | \ttest(true, \"| | foo\", \"\", false)",
+    "  180 | \ttest(true, \"| | | foo\", \"foo\", false)",
+    "  181 | }",
+    "  182 | ",
+    "  183 | func buildPttern(true1 bool, result, *[]int func(caseSensitive bool, normalize bool, forward bool, input *util.Chars, pattern []rune, withPos bool, slab *util.Slab) (algo.Result, *[]int), extended bool, CaseSmart Case, false1, true2, false2, true3 bool, range []Range, delimiter Delimiter, r []rune) any {",
+    "  184 | \tpanic(\"unimplemented\")",
+    "  185 | }",
+    "  186 | ",
+    "  187 | func TestCacheable(t *testing.T) {",
+    "  188 | \ttest := func(fuzzy bool, str string, expected string, cacheable bool) {",
+    "  189 | \t\tpat := buildPattern(fuzzy, algo.FuzzyMatchV2, true, CaseSmart, true, true, false, true, []Range{}, Delimiter{}, []rune(str))",
+    "  190 | \t\tif pat.CacheKey() != expected {"
+   ],
+   "states": {
+    "base": {
+     "go": {
+      "cmd": "go vet ./src",
+      "cwd": "<scratch>",
+      "exit": 0,
+      "output": []
+     },
+     "gofmt": {
+      "cmd": "gofmt -e <scratch>/src/pattern_test.go",
+      "cwd": "<scratch>",
+      "exit": 0,
+      "output": []
+     }
+    },
+    "mutated": {
+     "go": {
+      "cmd": "go vet ./src",
+      "cwd": "<scratch>",
+      "exit": 1,
+      "output": [
+       "# github.com/junegunn/fzf/src",
+       "# [github.com/junegunn/fzf/src]",
+       "vet: src/pattern_test.go:163:10: undefined: buildPttern"
+      ]
+     },
+     "gofmt": {
+      "cmd": "gofmt -e <scratch>/src/pattern_test.go",
+      "cwd": "<scratch>",
+      "exit": 0,
+      "output": []
+     }
+    },
+    "fixed": {
+     "go": {
+      "cmd": "go vet ./src",
+      "cwd": "<scratch>",
+      "exit": 1,
+      "output": [
+       "src/pattern_test.go:183:45: missing ',' in parameter list"
+      ]
+     },
+     "gofmt": {
+      "cmd": "gofmt -e <scratch>/src/pattern_test.go",
+      "cwd": "<scratch>",
+      "exit": 2,
+      "output": [
+       "<scratch>/src/pattern_test.go:183:38: missing parameter name",
+       "<scratch>/src/pattern_test.go:183:45: missing ',' in parameter list",
+       "<scratch>/src/pattern_test.go:183:64: expected ')', found bool",
+       "<scratch>/src/pattern_test.go:183:187: expected ';', found ','",
+       "<scratch>/src/pattern_test.go:183:189: expected declaration, found extended",
+       "<scratch>/src/pattern_test.go:257:2: expected declaration, found runtime",
+       "<scratch>/src/pattern_test.go:264:2: expected declaration, found runtime",
+       "<scratch>/src/pattern_test.go:283:3: expected declaration, found 'for'"
+      ]
+     }
+    }
+   }
+  },
+  {
+   "cause": "C6",
+   "gid": "gopls-r4-syntax-gained-mutation-m2-86fde3",
+   "project": "junegunn/fzf@b1be3a8be1b8",
+   "path": "src/pattern_test.go",
+   "fix_title": "Create function buildPttern",
+   "mutation": "misspell 'buildPattern' as 'buildPttern' (drop a middle character)",
+   "fix_ops_json": "[{\"kind\": \"change\", \"path\": \"src/pattern_test.go\", \"start\": [182, 5], \"end\": [182, 5], \"text\": \"buildPttern(true1 bool, result, *[]int func(caseSensitive bool, normalize bool, forward bool, input *util.Chars, pattern []rune, withPos bool, slab *util.Slab) (algo.Result, *[]int), extended bool, CaseSmart Case, false1, true2, false2, true3 bool, range []Range, delimiter Delimiter, r []rune) any {\\n\\tpanic(\\\"unimplemented\\\")\\n}\\n\\nfunc \"}]",
+   "module": "<scratch>",
+   "tool": "go vet ./src",
+   "mutated_snippet": [
+    "  160 | ",
+    "  161 | func TestCacheKey(t *testing.T) {",
+    "  162 | \ttest := func(extended bool, patStr string, expected string, cacheable bool) {",
+    "  163 | \t\tpat := buildPttern(true, algo.FuzzyMatchV2, extended, CaseSmart, false, true, false, true, []Range{}, Delimiter{}, []rune(patStr))",
+    "  164 | \t\tif pat.CacheKey() != expected {",
+    "  165 | \t\t\tt.Errorf(\"Expected: %s, actual: %s\", expected, pat.CacheKey())",
+    "  166 | \t\t}",
+    "  167 | \t\tif pat.cacheable != cacheable {",
+    "  168 | \t\t\tt.Errorf(\"Expected: %t, actual: %t (%s)\", cacheable, pat.cacheable, patStr)",
+    "  169 | \t\t}",
+    "  170 | \t}",
+    "  171 | \ttest(false, \"foo !bar\", \"foo !bar\", true)",
+    "  172 | \ttest(false, \"foo | bar !baz\", \"foo | bar !baz\", true)",
+    "  173 | \ttest(true, \"foo  bar  baz\", \"foo\\tbar\\tbaz\", true)",
+    "  174 | \ttest(true, \"foo !bar\", \"foo\", false)",
+    "  175 | \ttest(true, \"foo !bar   baz\", \"foo\\tbaz\", false)",
+    "  176 | \ttest(true, \"foo | bar baz\", \"baz\", false)",
+    "  177 | \ttest(true, \"foo | bar | baz\", \"\", false)",
+    "  178 | \ttest(true, \"foo | bar !baz\", \"\", false)",
+    "  179 | \ttest(true, \"| | foo\", \"\", false)",
+    "  180 | \ttest(true, \"| | | foo\", \"foo\", false)",
+    "  181 | }",
+    "  182 | ",
+    "  183 | func TestCacheable(t *testing.T) {",
+    "  184 | \ttest := func(fuzzy bool, str string, expected string, cacheable bool) {",
+    "  185 | \t\tpat := buildPattern(fuzzy, algo.FuzzyMatchV2, true, CaseSmart, true, true, false, true, []Range{}, Delimiter{}, []rune(str))",
+    "  186 | \t\tif pat.CacheKey() != expected {"
+   ],
+   "fixed_snippet": [
+    "  160 | ",
+    "  161 | func TestCacheKey(t *testing.T) {",
+    "  162 | \ttest := func(extended bool, patStr string, expected string, cacheable bool) {",
+    "  163 | \t\tpat := buildPttern(true, algo.FuzzyMatchV2, extended, CaseSmart, false, true, false, true, []Range{}, Delimiter{}, []rune(patStr))",
+    "  164 | \t\tif pat.CacheKey() != expected {",
+    "  165 | \t\t\tt.Errorf(\"Expected: %s, actual: %s\", expected, pat.CacheKey())",
+    "  166 | \t\t}",
+    "  167 | \t\tif pat.cacheable != cacheable {",
+    "  168 | \t\t\tt.Errorf(\"Expected: %t, actual: %t (%s)\", cacheable, pat.cacheable, patStr)",
+    "  169 | \t\t}",
+    "  170 | \t}",
+    "  171 | \ttest(false, \"foo !bar\", \"foo !bar\", true)",
+    "  172 | \ttest(false, \"foo | bar !baz\", \"foo | bar !baz\", true)",
+    "  173 | \ttest(true, \"foo  bar  baz\", \"foo\\tbar\\tbaz\", true)",
+    "  174 | \ttest(true, \"foo !bar\", \"foo\", false)",
+    "  175 | \ttest(true, \"foo !bar   baz\", \"foo\\tbaz\", false)",
+    "  176 | \ttest(true, \"foo | bar baz\", \"baz\", false)",
+    "  177 | \ttest(true, \"foo | bar | baz\", \"\", false)",
+    "  178 | \ttest(true, \"foo | bar !baz\", \"\", false)",
+    "  179 | \ttest(true, \"| | foo\", \"\", false)",
+    "  180 | \ttest(true, \"| | | foo\", \"foo\", false)",
+    "  181 | }",
+    "  182 | ",
+    "  183 | func buildPttern(true1 bool, result, *[]int func(caseSensitive bool, normalize bool, forward bool, input *util.Chars, pattern []rune, withPos bool, slab *util.Slab) (algo.Result, *[]int), extended bool, CaseSmart Case, false1, true2, false2, true3 bool, range []Range, delimiter Delimiter, r []rune) any {",
+    "  184 | \tpanic(\"unimplemented\")",
+    "  185 | }",
+    "  186 | ",
+    "  187 | func TestCacheable(t *testing.T) {",
+    "  188 | \ttest := func(fuzzy bool, str string, expected string, cacheable bool) {",
+    "  189 | \t\tpat := buildPattern(fuzzy, algo.FuzzyMatchV2, true, CaseSmart, true, true, false, true, []Range{}, Delimiter{}, []rune(str))",
+    "  190 | \t\tif pat.CacheKey() != expected {"
+   ],
+   "states": {
+    "base": {
+     "go": {
+      "cmd": "go vet ./src",
+      "cwd": "<scratch>",
+      "exit": 0,
+      "output": []
+     },
+     "gofmt": {
+      "cmd": "gofmt -e <scratch>/src/pattern_test.go",
+      "cwd": "<scratch>",
+      "exit": 0,
+      "output": []
+     }
+    },
+    "mutated": {
+     "go": {
+      "cmd": "go vet ./src",
+      "cwd": "<scratch>",
+      "exit": 1,
+      "output": [
+       "# github.com/junegunn/fzf/src",
+       "# [github.com/junegunn/fzf/src]",
+       "vet: src/pattern_test.go:163:10: undefined: buildPttern"
+      ]
+     },
+     "gofmt": {
+      "cmd": "gofmt -e <scratch>/src/pattern_test.go",
+      "cwd": "<scratch>",
+      "exit": 0,
+      "output": []
+     }
+    },
+    "fixed": {
+     "go": {
+      "cmd": "go vet ./src",
+      "cwd": "<scratch>",
+      "exit": 1,
+      "output": [
+       "src/pattern_test.go:183:45: missing ',' in parameter list"
+      ]
+     },
+     "gofmt": {
+      "cmd": "gofmt -e <scratch>/src/pattern_test.go",
+      "cwd": "<scratch>",
+      "exit": 2,
+      "output": [
+       "<scratch>/src/pattern_test.go:183:38: missing parameter name",
+       "<scratch>/src/pattern_test.go:183:45: missing ',' in parameter list",
+       "<scratch>/src/pattern_test.go:183:64: expected ')', found bool",
+       "<scratch>/src/pattern_test.go:183:187: expected ';', found ','",
+       "<scratch>/src/pattern_test.go:183:189: expected declaration, found extended",
+       "<scratch>/src/pattern_test.go:257:2: expected declaration, found runtime",
+       "<scratch>/src/pattern_test.go:264:2: expected declaration, found runtime",
+       "<scratch>/src/pattern_test.go:283:3: expected declaration, found 'for'"
+      ]
+     }
+    }
+   }
+  },
+  {
+   "cause": "C7",
+   "gid": "gopls-r4-diagnostics-extra-undeclaredname-wrongar-mutation-m3-946c39",
+   "project": "fatedier/frp@d20a23299600",
+   "path": "pkg/config/legacy/value.go",
+   "fix_title": "Remove variable b",
+   "mutation": "drop the last argument of 'RenderContent(...)'",
+   "fix_ops_json": "[{\"kind\": \"change\", \"path\": \"pkg/config/legacy/value.go\", \"start\": [65, 1], \"end\": [66, 1]}]",
+   "module": "<scratch>",
+   "tool": "go build -o /dev/null ./pkg/config/legacy",
+   "mutated_snippet": [
+    "   63 | }",
+    "   64 | ",
+    "   65 | func GetRenderedConfFromFile(path string) (out []byte, err error) {",
+    "   66 | \tvar b []byte",
+    "   67 | \tb, err = os.ReadFile(path)",
+    "   68 | \tif err != nil {",
+    "   69 | \t\treturn",
+    "   70 | \t}",
+    "   71 | ",
+    "   72 | \tout, err = RenderContent()",
+    "   73 | \treturn",
+    "   74 | }",
+    "   75 | "
+   ],
+   "fixed_snippet": [
+    "   63 | }",
+    "   64 | ",
+    "   65 | func GetRenderedConfFromFile(path string) (out []byte, err error) {",
+    "   66 | \tb, err = os.ReadFile(path)",
+    "   67 | \tif err != nil {",
+    "   68 | \t\treturn",
+    "   69 | \t}",
+    "   70 | ",
+    "   71 | \tout, err = RenderContent()",
+    "   72 | \treturn",
+    "   73 | }",
+    "   74 | "
+   ],
+   "states": {
+    "base": {
+     "go": {
+      "cmd": "go build -o /dev/null ./pkg/config/legacy",
+      "cwd": "<scratch>",
+      "exit": 0,
+      "output": []
+     },
+     "gofmt": {
+      "cmd": "gofmt -e <scratch>/pkg/config/legacy/value.go",
+      "cwd": "<scratch>",
+      "exit": 0,
+      "output": []
+     }
+    },
+    "mutated": {
+     "go": {
+      "cmd": "go build -o /dev/null ./pkg/config/legacy",
+      "cwd": "<scratch>",
+      "exit": 1,
+      "output": [
+       "# github.com/fatedier/frp/pkg/config/legacy",
+       "pkg/config/legacy/value.go:66:6: declared and not used: b",
+       "pkg/config/legacy/value.go:72:13: not enough arguments in call to RenderContent",
+       "\thave ()",
+       "\twant ([]byte)"
+      ]
+     },
+     "gofmt": {
+      "cmd": "gofmt -e <scratch>/pkg/config/legacy/value.go",
+      "cwd": "<scratch>",
+      "exit": 0,
+      "output": []
+     }
+    },
+    "fixed": {
+     "go": {
+      "cmd": "go build -o /dev/null ./pkg/config/legacy",
+      "cwd": "<scratch>",
+      "exit": 1,
+      "output": [
+       "# github.com/fatedier/frp/pkg/config/legacy",
+       "pkg/config/legacy/value.go:66:2: undefined: b",
+       "pkg/config/legacy/value.go:71:13: not enough arguments in call to RenderContent",
+       "\thave ()",
+       "\twant ([]byte)"
+      ]
+     },
+     "gofmt": {
+      "cmd": "gofmt -e <scratch>/pkg/config/legacy/value.go",
+      "cwd": "<scratch>",
+      "exit": 0,
+      "output": []
+     }
+    }
+   }
+  }
+ ],
+ "stale": {
+  "cause": "C3",
+  "gid": "gopls-r2-codeactionresolve-changed-codeaction-70b3e9",
+  "project": "nektos/act@4f411281417e",
+  "path": "pkg/container/linux_container_environment_extensions_test.go",
+  "key": {
+   "method": "codeActionResolve",
+   "path": "pkg/container/linux_container_environment_extensions_test.go",
+   "line": 34,
+   "character": 38,
+   "extra": "pos:34:38|top1|Split arguments into separate lines|refactor.rewrite.splitLines|0"
+  },
+  "ops": [
+   {
+    "kind": "open",
+    "path": "pkg/container/linux_container_environment_extensions_test.go"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/container/linux_container_environment_extensions_test.go",
+    "start": [
+     0,
+     0
+    ],
+    "end": [
+     0,
+     0
+    ],
+    "text": "\n"
+   }
+  ],
+  "old_line_34": "\t\t\t{fmt.Sprintf(\"/mnt/%v/act\", rootDriveLetter), \"act\", fmt.Sprintf(\"%s\\\\\", rootDrive)},",
+  "current_line_34": "\t\t\t{\"/mnt/c/windows/to/unix\", \"windows\\\\to\\\\unix\", fmt.Sprintf(\"%s\\\\\", rootDrive)},",
+  "current_line_35": "\t\t\t{fmt.Sprintf(\"/mnt/%v/act\", rootDriveLetter), \"act\", fmt.Sprintf(\"%s\\\\\", rootDrive)},",
+  "current_snippet": [
+   "   33 | \t\t\t{\"/mnt/c/Users/act/go/src/github.com/nektos/act\", \"C:\\\\Users\\\\act\\\\go\\\\src\\\\github.com\\\\nektos\\\\act\\\\\", \"\"},",
+   "   34 | \t\t\t{\"/mnt/f/work/dir\", `F:\\work\\dir`, \"\"},",
+   "   35 | \t\t\t{\"/mnt/c/windows/to/unix\", \"windows\\\\to\\\\unix\", fmt.Sprintf(\"%s\\\\\", rootDrive)},",
+   "   36 | \t\t\t{fmt.Sprintf(\"/mnt/%v/act\", rootDriveLetter), \"act\", fmt.Sprintf(\"%s\\\\\", rootDrive)},",
+   "   37 | \t\t} {",
+   "   38 | \t\t\tif v.workDir != \"\" {"
+  ],
+  "stale_applied_snippet": [
+   "   33 | \t\t\t{\"/mnt/c/Users/act/go/src/github.com/nektos/act\", \"C:\\\\Users\\\\act\\\\go\\\\src\\\\github.com\\\\nektos\\\\act\\\\\", \"\"},",
+   "   34 | \t\t\t{\"/mnt/f/work/dir\", `F:\\work\\dir`, \"\"},",
+   "   35 | \t\t\t{",
+   "   36 | \t\t\t\t\"/mnt/c/windows/to/unix\",",
+   "   37 | \t\t\t\t\"windows\\\\to\\\\unix\",",
+   "   38 | \t\t\t\tfmt.Sprintf(\"%s\\\\\", rootDrive),",
+   "   39 | \t\t\t},",
+   "   40 | \t\t\t{fmt.Sprintf(\"/mnt/%v/act\", rootDriveLetter), \"act\", fmt.Sprintf(\"%s\\\\\", rootDrive)},",
+   "   41 | \t\t} {",
+   "   42 | \t\t\tif v.workDir != \"\" {"
+  ],
+  "fresh_applied_snippet": [
+   "   33 | \t\t\t{\"/mnt/c/Users/act/go/src/github.com/nektos/act\", \"C:\\\\Users\\\\act\\\\go\\\\src\\\\github.com\\\\nektos\\\\act\\\\\", \"\"},",
+   "   34 | \t\t\t{\"/mnt/f/work/dir\", `F:\\work\\dir`, \"\"},",
+   "   35 | \t\t\t{\"/mnt/c/windows/to/unix\", \"windows\\\\to\\\\unix\", fmt.Sprintf(\"%s\\\\\", rootDrive)},",
+   "   36 | \t\t\t{fmt.Sprintf(",
+   "   37 | \t\t\t\t\"/mnt/%v/act\",",
+   "   38 | \t\t\t\trootDriveLetter,",
+   "   39 | \t\t\t), \"act\", fmt.Sprintf(\"%s\\\\\", rootDrive)},",
+   "   40 | \t\t} {",
+   "   41 | \t\t\tif v.workDir != \"\" {"
+  ],
+  "gofmt_current": {
+   "cmd": "gofmt -e <scratch>/current.go",
+   "cwd": "<scratch>",
+   "exit": 0,
+   "output": []
+  },
+  "gofmt_stale": {
+   "cmd": "gofmt -e <scratch>/stale_applied.go",
+   "cwd": "<scratch>",
+   "exit": 0,
+   "output": []
+  },
+  "gofmt_fresh": {
+   "cmd": "gofmt -e <scratch>/fresh_applied.go",
+   "cwd": "<scratch>",
+   "exit": 0,
+   "output": []
+  }
+ }
+}

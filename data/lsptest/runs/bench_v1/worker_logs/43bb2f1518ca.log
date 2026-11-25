@@ -1,0 +1,3 @@
+2026-09-24 20:20:47,396 INFO campaign_run run 43bb2f1518ca: r0_crash on jdtls 1.12.0, jdtls-2111 seed 1 settled, targets ['src/app/Person.java']
+2026-09-24 20:21:00,560 INFO campaign_run run 43bb2f1518ca: 0 candidate(s) in 13s; confirming
+2026-09-24 20:21:00,561 INFO campaign_run run 43bb2f1518ca finished: ok, 0 confirmed of 0 candidate(s), 13s

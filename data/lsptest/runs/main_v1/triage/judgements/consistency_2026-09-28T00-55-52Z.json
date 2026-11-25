@@ -1,0 +1,63 @@
+{
+ "page": "triage",
+ "campaign": "main_v1",
+ "exported_at": "2026-09-28T00:55:52.000Z",
+ "items": [
+  {
+   "n": 1,
+   "id": "gopls-r5-foldingrange-changed-t6-ecacad",
+   "choice": "tool-artifact",
+   "note": "一致性校正：服务器的折叠起点仍在 { 之后，是工具把预期起点按插入的注释移到了第 46 列，差异来自工具的位置映射规则（A2）。",
+   "minutes": 0
+  },
+  {
+   "n": 2,
+   "id": "pyright-r5-definition-lost-t1-ae8275",
+   "choice": "tool-artifact",
+   "note": "一致性校正：两个会话对 __name__ 都返回 multiplexer.py 0:0，是工具把预期位置移到 3:0 并把实际答案当作落在插入行里而丢弃，差异来自工具规则（A2）。",
+   "minutes": 0
+  },
+  {
+   "n": 3,
+   "id": "rust-analyzer-r4-completioninsert-gained-completion-e99b79",
+   "choice": "tool-artifact",
+   "note": "一致性校正：补全项 Err(…) 替换了已有 err!(…) 调用里的 err，得到 Err(())!(…)；错误来自工具在已有的 !( 之前请求补全，属于工具输入（A2）。",
+   "minutes": 0
+  },
+  {
+   "n": 4,
+   "id": "pyright-r1-references-extra-h5-181832",
+   "choice": "legitimate",
+   "note": "一致性校正：两个会话在同样内容上打开同样的文件，多出的 79 处都在 site-packages 的 typing_extensions.py，只差项目外的位置（L2），与其他 pyright 库文件组一致。",
+   "minutes": 0
+  },
+  {
+   "n": 5,
+   "id": "pyright-r1-references-extra-h8-98dfb1",
+   "choice": "legitimate",
+   "note": "一致性校正：与 h5 那组化简到同一情形，多出的位置都在 site-packages 的 typing_extensions.py，只差项目外的位置（L2）。",
+   "minutes": 0
+  },
+  {
+   "n": 6,
+   "id": "rust-analyzer-r3-diagnostics-extra-non-snake-case-a-52ba0b",
+   "choice": "legitimate",
+   "note": "一致性校正：客户端声明支持拉取诊断时，rust-analyzer 只维护拉取路线并用 refresh 通知客户端重拉，推送路线只在加载早期发过一次、之后不更新；协议不要求此时维护推送（L4），与另外两组推送/拉取差异同一机制、同一判断。",
+   "minutes": 0
+  },
+  {
+   "n": 7,
+   "id": "rust-analyzer-r3-diagnostics-extra-unlinked-file-a-751ce1",
+   "choice": "legitimate",
+   "note": "一致性校正：同上，推送路线只有加载前的一次发布（当时 crate 图未加载，把 types.rs 报为未链接），之后只发 refresh；协议不要求维护推送（L4）。",
+   "minutes": 0
+  },
+  {
+   "n": 8,
+   "id": "ts6-r4-diagnostics-extra-2322-mutation-m3-1879f3",
+   "choice": "bug",
+   "note": "一致性校正：'Add missing properties' 给 Record<string, StoreInformation> 类型的属性填入 stores: undefined，修复后多出 2322 类型错误；这种占位没有文档说明，与 gopls“创建变量”填 := 0 的 C5 同一规则，判 bug。",
+   "minutes": 0
+  }
+ ]
+}

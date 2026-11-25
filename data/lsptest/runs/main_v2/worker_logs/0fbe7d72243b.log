@@ -1,0 +1,3 @@
+2026-11-18 07:04:32,629 INFO campaign_run run 0fbe7d72243b: r1_history on pyright 1.1.414, NanmiCoder/MediaCrawler@380b426000aa seed 1 race0, targets ['media_platform/tieba/core.py', 'tools/async_file_writer.py', 'tools/httpx_util.py']
+2026-11-18 07:08:06,770 INFO campaign_run run 0fbe7d72243b: 0 candidate(s) in 214s; confirming
+2026-11-18 07:08:06,772 INFO campaign_run run 0fbe7d72243b finished: ok, 0 confirmed of 0 candidate(s), 214s

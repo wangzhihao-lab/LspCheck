@@ -1,0 +1,78 @@
+{
+ "vid": "8253217867f9-v00",
+ "ops_before": 2,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 0,
+ "cache_hits": 0,
+ "reduce_seconds": 0.0,
+ "budget_exhausted": false,
+ "probe_log": [],
+ "logs": [
+  "gopls-v0.23.0-tr70b3e9-r2-replay-20260925-155428-425389.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [
+   [
+    "pkg/container/linux_container_environment_extensions_test.go",
+    35,
+    16,
+    35,
+    16,
+    "\n\t\t\t\t"
+   ],
+   [
+    "pkg/container/linux_container_environment_extensions_test.go",
+    35,
+    29,
+    35,
+    31,
+    ",\n\t\t\t\t"
+   ],
+   [
+    "pkg/container/linux_container_environment_extensions_test.go",
+    35,
+    46,
+    35,
+    46,
+    ",\n\t\t\t"
+   ]
+  ],
+  "actual": [
+   [
+    "pkg/container/linux_container_environment_extensions_test.go",
+    34,
+    28,
+    34,
+    30,
+    ",\n\t\t\t\t"
+   ],
+   [
+    "pkg/container/linux_container_environment_extensions_test.go",
+    34,
+    4,
+    34,
+    4,
+    "\n\t\t\t\t"
+   ],
+   [
+    "pkg/container/linux_container_environment_extensions_test.go",
+    34,
+    49,
+    34,
+    51,
+    ",\n\t\t\t\t"
+   ],
+   [
+    "pkg/container/linux_container_environment_extensions_test.go",
+    34,
+    81,
+    34,
+    81,
+    ",\n\t\t\t"
+   ]
+  ]
+ },
+ "ops_after": 2,
+ "total_seconds": 48.9
+}

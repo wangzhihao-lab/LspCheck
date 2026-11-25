@@ -1,0 +1,3 @@
+2026-09-24 12:53:43,431 INFO campaign_run run e658dcd1b1df: r1_history on pyright 1.1.414, D4Vinci/Scrapling@08f107b1240f seed 3 settled, targets ['scrapling/core/utils/_utils.py', 'scrapling/engines/_browsers/_types.py', 'scrapling/spiders/templates/sitemap.py']
+2026-09-24 12:59:57,479 INFO campaign_run run e658dcd1b1df: 0 candidate(s) in 374s; confirming
+2026-09-24 12:59:57,481 INFO campaign_run run e658dcd1b1df finished: ok, 0 confirmed of 0 candidate(s), 374s

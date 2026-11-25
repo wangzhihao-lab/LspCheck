@@ -1,0 +1,6 @@
+2026-09-23 16:05:55,431 INFO campaign_run run 0c88a9c856de: r5_transforms on gopls v0.23.0, gin-gonic/gin@3b08cd7235bd seed 1 settled, targets ['binding/json.go', 'binding/toml_test.go', 'mode_test.go']
+2026-09-23 16:07:01,133 INFO campaign_run run 0c88a9c856de: 12 candidate(s) in 66s; confirming
+2026-09-23 16:07:15,112 INFO flake replay 1/3 of gopls|r5_transforms|codeAction:extra: settled=True control_stable=True reproduced=True (14.0s)
+2026-09-23 16:07:30,527 INFO flake replay 2/3 of gopls|r5_transforms|codeAction:extra: settled=True control_stable=True reproduced=True (15.4s)
+2026-09-23 16:07:45,930 INFO flake replay 3/3 of gopls|r5_transforms|codeAction:extra: settled=True control_stable=True reproduced=True (15.4s)
+2026-09-23 16:07:45,939 INFO campaign_run run 0c88a9c856de finished: ok, 1 confirmed of 12 candidate(s), 111s

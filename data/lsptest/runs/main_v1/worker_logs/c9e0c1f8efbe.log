@@ -1,0 +1,6 @@
+2026-09-23 22:52:23,618 INFO campaign_run run c9e0c1f8efbe: r5_transforms on gopls v0.23.0, XTLS/Xray-core@d562d8947d31 seed 2 settled, targets ['common/protocol/account.go', 'main/commands/all/api/source_ip_block.go', 'transport/pipe/impl.go']
+2026-09-23 22:53:50,931 INFO campaign_run run c9e0c1f8efbe: 13 candidate(s) in 87s; confirming
+2026-09-23 22:54:14,572 INFO flake replay 1/3 of gopls|r5_transforms|completion:missing: settled=True control_stable=True reproduced=False (23.6s)
+2026-09-23 22:54:37,498 INFO flake replay 2/3 of gopls|r5_transforms|completion:missing: settled=True control_stable=True reproduced=False (22.9s)
+2026-09-23 22:54:59,459 INFO flake replay 3/3 of gopls|r5_transforms|completion:missing: settled=True control_stable=True reproduced=False (22.0s)
+2026-09-23 22:54:59,464 INFO campaign_run run c9e0c1f8efbe finished: ok, 0 confirmed of 13 candidate(s), 156s

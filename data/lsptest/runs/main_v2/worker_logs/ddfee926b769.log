@@ -1,0 +1,9 @@
+2026-11-18 18:40:55,498 INFO campaign_run run ddfee926b769: r1_history on gopls v0.23.0, go-gorm/gorm@b3d3bf219f02 seed 3 settled, targets ['chainable_api.go', 'tests/count_test.go', 'tests/non_std_test.go']
+2026-11-18 18:49:56,107 INFO campaign_run run ddfee926b769: 22 candidate(s) in 541s; confirming
+2026-11-18 18:51:50,700 INFO flake replay 1/3 of gopls|r1_history|codeAction:changed: settled=True control_stable=True reproduced=True (114.6s)
+2026-11-18 18:53:46,870 INFO flake replay 2/3 of gopls|r1_history|codeAction:changed: settled=True control_stable=True reproduced=True (116.2s)
+2026-11-18 18:55:43,778 INFO flake replay 3/3 of gopls|r1_history|codeAction:changed: settled=True control_stable=True reproduced=True (116.9s)
+2026-11-18 18:56:49,002 INFO flake replay 1/3 of gopls|r1_history|references:extra: settled=True control_stable=True reproduced=True (65.2s)
+2026-11-18 18:57:53,553 INFO flake replay 2/3 of gopls|r1_history|references:extra: settled=True control_stable=True reproduced=True (64.5s)
+2026-11-18 18:58:58,316 INFO flake replay 3/3 of gopls|r1_history|references:extra: settled=True control_stable=True reproduced=True (64.7s)
+2026-11-18 18:58:58,757 INFO campaign_run run ddfee926b769 finished: ok, 2 confirmed of 22 candidate(s), 1083s

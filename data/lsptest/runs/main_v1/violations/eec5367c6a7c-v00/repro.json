@@ -1,0 +1,1939 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "eec5367c6a7c-v00",
+ "run_id": "eec5367c6a7c",
+ "oracle": "r1_history",
+ "server": {
+  "kind": "rust-analyzer",
+  "version": "2026-09-21"
+ },
+ "project": {
+  "name": "dani-garcia/vaultwarden@cc67d644f626",
+  "source": "corpus",
+  "ref": "temp/corpus/dani-garcia__vaultwarden@cc67d644f626",
+  "commit": "cc67d644f62605cb46f4d16c4a2eed1a861cc8bb",
+  "language": "rust"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "race200",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "src/api/core/two_factor/duo.rs",
+    "positions": [
+     [
+      7,
+      12
+     ],
+     [
+      20,
+      10
+     ],
+     [
+      179,
+      37
+     ],
+     [
+      184,
+      49
+     ],
+     [
+      196,
+      73
+     ],
+     [
+      196,
+      80
+     ],
+     [
+      201,
+      21
+     ],
+     [
+      207,
+      12
+     ],
+     [
+      216,
+      31
+     ],
+     [
+      256,
+      27
+     ],
+     [
+      315,
+      57
+     ],
+     [
+      325,
+      41
+     ]
+    ],
+    "ends": [
+     [
+      7,
+      17
+     ],
+     [
+      20,
+      13
+     ],
+     [
+      179,
+      39
+     ],
+     [
+      184,
+      51
+     ],
+     [
+      196,
+      75
+     ],
+     [
+      196,
+      83
+     ],
+     [
+      201,
+      24
+     ],
+     [
+      207,
+      16
+     ],
+     [
+      216,
+      32
+     ],
+     [
+      256,
+      36
+     ],
+     [
+      315,
+      60
+     ],
+     [
+      325,
+      44
+     ]
+    ],
+    "names": [
+     "ApiResult",
+     "routes",
+     "user",
+     "i32",
+     "conn",
+     "DbConn",
+     "Method",
+     "username",
+     "dt",
+     "get_user_duo_data",
+     "prefix",
+     "format"
+    ]
+   },
+   {
+    "path": "src/db/models/attachment.rs",
+    "positions": [
+     [
+      3,
+      20
+     ],
+     [
+      22,
+      5
+     ],
+     [
+      31,
+      10
+     ],
+     [
+      63,
+      92
+     ],
+     [
+      85,
+      19
+     ],
+     [
+      138,
+      115
+     ],
+     [
+      157,
+      20
+     ],
+     [
+      176,
+      25
+     ],
+     [
+      203,
+      48
+     ],
+     [
+      217,
+      31
+     ],
+     [
+      224,
+      21
+     ],
+     [
+      224,
+      57
+     ]
+    ],
+    "ends": [
+     [
+      3,
+      23
+     ],
+     [
+      22,
+      8
+     ],
+     [
+      31,
+      12
+     ],
+     [
+      63,
+      94
+     ],
+     [
+      85,
+      22
+     ],
+     [
+      138,
+      116
+     ],
+     [
+      157,
+      23
+     ],
+     [
+      176,
+      27
+     ],
+     [
+      203,
+      52
+     ],
+     [
+      217,
+      38
+     ],
+     [
+      224,
+      26
+     ],
+     [
+      224,
+      60
+     ]
+    ],
+    "names": [
+     "AsRef",
+     "derive",
+     "akey",
+     "uri",
+     "diesel",
+     "ok",
+     "select",
+     "conn",
+     "ciphers",
+     "OrganizationId",
+     "or_filter",
+     "eq_any"
+    ]
+   },
+   {
+    "path": "src/sso.rs",
+    "positions": [
+     [
+      74,
+      5
+     ],
+     [
+      123,
+      9
+     ],
+     [
+      144,
+      13
+     ],
+     [
+      157,
+      31
+     ],
+     [
+      160,
+      35
+     ],
+     [
+      188,
+      15
+     ],
+     [
+      211,
+      55
+     ],
+     [
+      232,
+      4
+     ],
+     [
+      279,
+      61
+     ],
+     [
+      306,
+      31
+     ],
+     [
+      445,
+      21
+     ],
+     [
+      458,
+      55
+     ]
+    ],
+    "ends": [
+     [
+      74,
+      6
+     ],
+     [
+      123,
+      11
+     ],
+     [
+      144,
+      21
+     ],
+     [
+      157,
+      33
+     ],
+     [
+      160,
+      36
+     ],
+     [
+      188,
+      20
+     ],
+     [
+      211,
+      58
+     ],
+     [
+      232,
+      7
+     ],
+     [
+      279,
+      63
+     ],
+     [
+      306,
+      34
+     ],
+     [
+      445,
+      26
+     ],
+     [
+      458,
+      57
+     ]
+    ],
+    "names": [
+     "Eq",
+     "exp",
+     "BasicTokenClaims",
+     "exp",
+     "ne",
+     "OIDCState",
+     "state",
+     "deref",
+     "code",
+     "clone",
+     "expires_in",
+     "new"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "references",
+  "path": "src/api/core/two_factor/duo.rs",
+  "line": 7,
+  "character": 12,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "src/api/core/two_factor/duo.rs",
+   "delay_ms": 200
+  },
+  {
+   "kind": "open",
+   "path": "src/db/models/attachment.rs",
+   "delay_ms": 200
+  },
+  {
+   "kind": "open",
+   "path": "src/sso.rs",
+   "delay_ms": 200
+  },
+  {
+   "kind": "fs_rename",
+   "path": "src/api/core/two_factor/duo.rs",
+   "new_path": "src/api/core/two_factor/duo_rt.rs",
+   "delay_ms": 200
+  },
+  {
+   "kind": "fs_rename",
+   "path": "src/api/core/two_factor/duo_rt.rs",
+   "new_path": "src/api/core/two_factor/duo.rs",
+   "delay_ms": 200
+  },
+  {
+   "kind": "change",
+   "path": "src/api/core/two_factor/duo.rs",
+   "start": [
+    68,
+    8
+   ],
+   "end": [
+    68,
+    9
+   ],
+   "delay_ms": 200
+  },
+  {
+   "kind": "close",
+   "path": "src/api/core/two_factor/duo.rs",
+   "delay_ms": 200
+  },
+  {
+   "kind": "open",
+   "path": "src/api/core/two_factor/duo.rs",
+   "delay_ms": 200
+  },
+  {
+   "kind": "change",
+   "path": "src/sso.rs",
+   "start": [
+    145,
+    21
+   ],
+   "end": [
+    145,
+    24
+   ],
+   "text": "zz",
+   "delay_ms": 200
+  },
+  {
+   "kind": "change",
+   "path": "src/sso.rs",
+   "start": [
+    145,
+    21
+   ],
+   "end": [
+    145,
+    23
+   ],
+   "text": "i64",
+   "delay_ms": 200
+  },
+  {
+   "kind": "request",
+   "path": "src/sso.rs",
+   "start": [
+    445,
+    26
+   ],
+   "text": "definition",
+   "delay_ms": 200
+  },
+  {
+   "kind": "request",
+   "path": "src/db/models/attachment.rs",
+   "start": [
+    224,
+    21
+   ],
+   "text": "references",
+   "delay_ms": 200
+  },
+  {
+   "kind": "request",
+   "path": "src/api/core/two_factor/duo.rs",
+   "start": [
+    184,
+    51
+   ],
+   "text": "documentHighlight",
+   "delay_ms": 200
+  },
+  {
+   "kind": "request",
+   "path": "src/sso.rs",
+   "start": [
+    279,
+    63
+   ],
+   "text": "hover",
+   "delay_ms": 200
+  },
+  {
+   "kind": "request",
+   "path": "src/db/models/attachment.rs",
+   "start": [
+    3,
+    20
+   ],
+   "text": "definition",
+   "delay_ms": 200
+  },
+  {
+   "kind": "open",
+   "path": "src/storage.rs",
+   "delay_ms": 200
+  },
+  {
+   "kind": "change",
+   "path": "src/storage.rs",
+   "start": [
+    193,
+    61
+   ],
+   "end": [
+    193,
+    61
+   ],
+   "text": "(",
+   "delay_ms": 200
+  },
+  {
+   "kind": "change",
+   "path": "src/api/core/two_factor/duo.rs",
+   "start": [
+    25,
+    12
+   ],
+   "end": [
+    25,
+    12
+   ],
+   "text": "[",
+   "delay_ms": 200
+  },
+  {
+   "kind": "close",
+   "path": "src/api/core/two_factor/duo.rs",
+   "delay_ms": 200
+  },
+  {
+   "kind": "open",
+   "path": "src/api/core/two_factor/duo.rs",
+   "delay_ms": 200
+  },
+  {
+   "kind": "change",
+   "path": "src/sso.rs",
+   "start": [
+    426,
+    0
+   ],
+   "end": [
+    427,
+    0
+   ],
+   "delay_ms": 200
+  },
+  {
+   "kind": "save",
+   "path": "src/sso.rs",
+   "delay_ms": 200
+  },
+  {
+   "kind": "change",
+   "path": "src/sso.rs",
+   "start": [
+    426,
+    0
+   ],
+   "end": [
+    426,
+    0
+   ],
+   "text": "pub async fn exchange_refresh_token(\n",
+   "delay_ms": 200
+  },
+  {
+   "kind": "save",
+   "path": "src/sso.rs",
+   "delay_ms": 200
+  },
+  {
+   "kind": "change",
+   "path": "src/db/models/attachment.rs",
+   "start": [
+    173,
+    0
+   ],
+   "end": [
+    174,
+    0
+   ],
+   "delay_ms": 200
+  },
+  {
+   "kind": "change",
+   "path": "src/db/models/attachment.rs",
+   "start": [
+    173,
+    0
+   ],
+   "end": [
+    173,
+    0
+   ],
+   "text": "                .left_join(ciphers::table.on(c",
+   "delay_ms": 200
+  },
+  {
+   "kind": "change",
+   "path": "src/db/models/attachment.rs",
+   "start": [
+    173,
+    46
+   ],
+   "end": [
+    173,
+    46
+   ],
+   "text": "iphers::uuid.eq(attachments::cipher_uuid)))\n",
+   "delay_ms": 200
+  },
+  {
+   "kind": "change",
+   "path": "src/storage.rs",
+   "start": [
+    193,
+    61
+   ],
+   "end": [
+    193,
+    62
+   ],
+   "delay_ms": 200
+  },
+  {
+   "kind": "close",
+   "path": "src/storage.rs",
+   "delay_ms": 200
+  },
+  {
+   "kind": "open",
+   "path": "src/db/models/org_policy.rs",
+   "delay_ms": 200
+  },
+  {
+   "kind": "change",
+   "path": "src/db/models/org_policy.rs",
+   "start": [
+    5,
+    8
+   ],
+   "end": [
+    5,
+    8
+   ],
+   "text": "\t",
+   "delay_ms": 200
+  },
+  {
+   "kind": "save",
+   "path": "src/db/models/org_policy.rs",
+   "delay_ms": 200
+  },
+  {
+   "kind": "change",
+   "path": "src/db/models/org_policy.rs",
+   "start": [
+    5,
+    8
+   ],
+   "end": [
+    5,
+    9
+   ],
+   "delay_ms": 200
+  },
+  {
+   "kind": "save",
+   "path": "src/db/models/org_policy.rs",
+   "delay_ms": 200
+  },
+  {
+   "kind": "close",
+   "path": "src/db/models/org_policy.rs",
+   "delay_ms": 200
+  }
+ ],
+ "case": {
+  "chain_step": 5,
+  "families": [
+   "H5",
+   "H3",
+   "H8",
+   "H9",
+   "H6"
+  ],
+  "family": "H6",
+  "history_index": 4,
+  "history_seed": 1005,
+  "mode": "chain",
+  "note": "dep-editor round trip on src/db/models/org_policy.rs: insert '\\t' on line 5",
+  "seed": 1,
+  "timing": "race200"
+ },
+ "shape": "references:result->error:timeout",
+ "signature": "rust-analyzer|r1_history|references:result->error:timeout",
+ "expected": [
+  [
+   "src/api/admin.rs",
+   17,
+   8,
+   17,
+   17
+  ],
+  [
+   "src/api/admin.rs",
+   146,
+   7,
+   146,
+   16
+  ],
+  [
+   "src/api/admin.rs",
+   148,
+   17,
+   148,
+   26
+  ],
+  [
+   "src/api/admin.rs",
+   150,
+   20,
+   150,
+   29
+  ],
+  [
+   "src/api/admin.rs",
+   154,
+   41,
+   154,
+   50
+  ],
+  [
+   "src/api/admin.rs",
+   162,
+   68,
+   162,
+   77
+  ],
+  [
+   "src/api/admin.rs",
+   273,
+   26,
+   273,
+   35
+  ],
+  [
+   "src/api/admin.rs",
+   283,
+   37,
+   283,
+   46
+  ],
+  [
+   "src/api/admin.rs",
+   288,
+   25,
+   288,
+   34
+  ],
+  [
+   "src/api/admin.rs",
+   298,
+   61,
+   298,
+   70
+  ],
+  [
+   "src/api/admin.rs",
+   372,
+   61,
+   372,
+   70
+  ],
+  [
+   "src/api/admin.rs",
+   592,
+   69,
+   592,
+   78
+  ],
+  [
+   "src/api/admin.rs",
+   749,
+   79,
+   749,
+   88
+  ],
+  [
+   "src/api/admin.rs",
+   845,
+   36,
+   845,
+   45
+  ],
+  [
+   "src/api/core/accounts.rs",
+   13,
+   25,
+   13,
+   34
+  ],
+  [
+   "src/api/core/accounts.rs",
+   1398,
+   76,
+   1398,
+   85
+  ],
+  [
+   "src/api/core/sends.rs",
+   13,
+   10,
+   13,
+   19
+  ],
+  [
+   "src/api/core/sends.rs",
+   131,
+   51,
+   131,
+   60
+  ],
+  [
+   "src/api/core/two_factor/duo.rs",
+   7,
+   8,
+   7,
+   17
+  ],
+  [
+   "src/api/core/two_factor/duo.rs",
+   254,
+   70,
+   254,
+   79
+  ],
+  [
+   "src/api/core/two_factor/duo.rs",
+   264,
+   67,
+   264,
+   76
+  ],
+  [
+   "src/api/core/two_factor/duo.rs",
+   315,
+   82,
+   315,
+   91
+  ],
+  [
+   "src/api/identity.rs",
+   14,
+   8,
+   14,
+   17
+  ],
+  [
+   "src/api/identity.rs",
+   782,
+   71,
+   782,
+   80
+  ],
+  [
+   "src/api/identity.rs",
+   807,
+   5,
+   807,
+   14
+  ],
+  [
+   "src/api/identity.rs",
+   940,
+   43,
+   940,
+   52
+  ],
+  [
+   "src/api/identity.rs",
+   950,
+   5,
+   950,
+   14
+  ],
+  [
+   "src/api/identity.rs",
+   1099,
+   5,
+   1099,
+   14
+  ],
+  [
+   "src/api/identity.rs",
+   1233,
+   97,
+   1233,
+   106
+  ],
+  [
+   "src/api/identity.rs",
+   1247,
+   5,
+   1247,
+   14
+  ],
+  [
+   "src/api/identity.rs",
+   1270,
+   5,
+   1270,
+   14
+  ],
+  [
+   "src/api/identity.rs",
+   1335,
+   98,
+   1335,
+   107
+  ],
+  [
+   "src/api/mod.rs",
+   43,
+   9,
+   43,
+   18
+  ],
+  [
+   "src/api/mod.rs",
+   44,
+   22,
+   44,
+   31
+  ],
+  [
+   "src/api/mod.rs",
+   45,
+   23,
+   45,
+   32
+  ],
+  [
+   "src/api/push.rs",
+   14,
+   10,
+   14,
+   19
+  ],
+  [
+   "src/api/push.rs",
+   35,
+   33,
+   35,
+   42
+  ],
+  [
+   "src/api/web.rs",
+   16,
+   10,
+   16,
+   19
+  ],
+  [
+   "src/api/web.rs",
+   60,
+   18,
+   60,
+   27
+  ],
+  [
+   "src/auth.rs",
+   25,
+   10,
+   25,
+   19
+  ],
+  [
+   "src/auth.rs",
+   1223,
+   57,
+   1223,
+   66
+  ],
+  [
+   "src/auth.rs",
+   1311,
+   5,
+   1311,
+   14
+  ],
+  [
+   "src/auth/send.rs",
+   5,
+   9,
+   5,
+   18
+  ],
+  [
+   "src/auth/send.rs",
+   47,
+   54,
+   47,
+   63
+  ],
+  [
+   "src/auth/send.rs",
+   57,
+   67,
+   57,
+   76
+  ],
+  [
+   "src/auth/send.rs",
+   72,
+   9,
+   72,
+   18
+  ],
+  [
+   "src/sso.rs",
+   9,
+   9,
+   9,
+   18
+  ],
+  [
+   "src/sso.rs",
+   150,
+   57,
+   150,
+   66
+  ],
+  [
+   "src/sso.rs",
+   172,
+   43,
+   172,
+   52
+  ],
+  [
+   "src/sso.rs",
+   194,
+   5,
+   194,
+   14
+  ],
+  [
+   "src/sso.rs",
+   250,
+   5,
+   250,
+   14
+  ],
+  [
+   "src/sso.rs",
+   326,
+   5,
+   326,
+   14
+  ],
+  [
+   "src/sso.rs",
+   365,
+   5,
+   365,
+   14
+  ],
+  [
+   "src/sso.rs",
+   389,
+   5,
+   389,
+   14
+  ],
+  [
+   "src/sso.rs",
+   431,
+   5,
+   431,
+   14
+  ],
+  [
+   "src/sso_client.rs",
+   21,
+   10,
+   21,
+   19
+  ],
+  [
+   "src/sso_client.rs",
+   107,
+   29,
+   107,
+   38
+  ],
+  [
+   "src/sso_client.rs",
+   163,
+   29,
+   163,
+   38
+  ],
+  [
+   "src/sso_client.rs",
+   189,
+   9,
+   189,
+   18
+  ],
+  [
+   "src/sso_client.rs",
+   219,
+   9,
+   219,
+   18
+  ],
+  [
+   "src/sso_client.rs",
+   276,
+   64,
+   276,
+   73
+  ],
+  [
+   "src/sso_client.rs",
+   308,
+   66,
+   308,
+   75
+  ]
+ ],
+ "actual": [
+  "error",
+  "timeout"
+ ],
+ "reproduced": "1/3",
+ "note": "H6: dep-editor round trip on src/db/models/org_policy.rs: insert '\\t' on line 5; flake 1/3 [r1:SCr+retry r2:SCR r3:SCr] in 1050s",
+ "violation": {
+  "oracle": "r1_history",
+  "server": "rust-analyzer-2026-09-21",
+  "project": "dani-garcia/vaultwarden@cc67d644f626",
+  "key": {
+   "method": "references",
+   "path": "src/api/core/two_factor/duo.rs",
+   "line": 7,
+   "character": 12,
+   "extra": ""
+  },
+  "expected": [
+   [
+    "src/api/admin.rs",
+    17,
+    8,
+    17,
+    17
+   ],
+   [
+    "src/api/admin.rs",
+    146,
+    7,
+    146,
+    16
+   ],
+   [
+    "src/api/admin.rs",
+    148,
+    17,
+    148,
+    26
+   ],
+   [
+    "src/api/admin.rs",
+    150,
+    20,
+    150,
+    29
+   ],
+   [
+    "src/api/admin.rs",
+    154,
+    41,
+    154,
+    50
+   ],
+   [
+    "src/api/admin.rs",
+    162,
+    68,
+    162,
+    77
+   ],
+   [
+    "src/api/admin.rs",
+    273,
+    26,
+    273,
+    35
+   ],
+   [
+    "src/api/admin.rs",
+    283,
+    37,
+    283,
+    46
+   ],
+   [
+    "src/api/admin.rs",
+    288,
+    25,
+    288,
+    34
+   ],
+   [
+    "src/api/admin.rs",
+    298,
+    61,
+    298,
+    70
+   ],
+   [
+    "src/api/admin.rs",
+    372,
+    61,
+    372,
+    70
+   ],
+   [
+    "src/api/admin.rs",
+    592,
+    69,
+    592,
+    78
+   ],
+   [
+    "src/api/admin.rs",
+    749,
+    79,
+    749,
+    88
+   ],
+   [
+    "src/api/admin.rs",
+    845,
+    36,
+    845,
+    45
+   ],
+   [
+    "src/api/core/accounts.rs",
+    13,
+    25,
+    13,
+    34
+   ],
+   [
+    "src/api/core/accounts.rs",
+    1398,
+    76,
+    1398,
+    85
+   ],
+   [
+    "src/api/core/sends.rs",
+    13,
+    10,
+    13,
+    19
+   ],
+   [
+    "src/api/core/sends.rs",
+    131,
+    51,
+    131,
+    60
+   ],
+   [
+    "src/api/core/two_factor/duo.rs",
+    7,
+    8,
+    7,
+    17
+   ],
+   [
+    "src/api/core/two_factor/duo.rs",
+    254,
+    70,
+    254,
+    79
+   ],
+   [
+    "src/api/core/two_factor/duo.rs",
+    264,
+    67,
+    264,
+    76
+   ],
+   [
+    "src/api/core/two_factor/duo.rs",
+    315,
+    82,
+    315,
+    91
+   ],
+   [
+    "src/api/identity.rs",
+    14,
+    8,
+    14,
+    17
+   ],
+   [
+    "src/api/identity.rs",
+    782,
+    71,
+    782,
+    80
+   ],
+   [
+    "src/api/identity.rs",
+    807,
+    5,
+    807,
+    14
+   ],
+   [
+    "src/api/identity.rs",
+    940,
+    43,
+    940,
+    52
+   ],
+   [
+    "src/api/identity.rs",
+    950,
+    5,
+    950,
+    14
+   ],
+   [
+    "src/api/identity.rs",
+    1099,
+    5,
+    1099,
+    14
+   ],
+   [
+    "src/api/identity.rs",
+    1233,
+    97,
+    1233,
+    106
+   ],
+   [
+    "src/api/identity.rs",
+    1247,
+    5,
+    1247,
+    14
+   ],
+   [
+    "src/api/identity.rs",
+    1270,
+    5,
+    1270,
+    14
+   ],
+   [
+    "src/api/identity.rs",
+    1335,
+    98,
+    1335,
+    107
+   ],
+   [
+    "src/api/mod.rs",
+    43,
+    9,
+    43,
+    18
+   ],
+   [
+    "src/api/mod.rs",
+    44,
+    22,
+    44,
+    31
+   ],
+   [
+    "src/api/mod.rs",
+    45,
+    23,
+    45,
+    32
+   ],
+   [
+    "src/api/push.rs",
+    14,
+    10,
+    14,
+    19
+   ],
+   [
+    "src/api/push.rs",
+    35,
+    33,
+    35,
+    42
+   ],
+   [
+    "src/api/web.rs",
+    16,
+    10,
+    16,
+    19
+   ],
+   [
+    "src/api/web.rs",
+    60,
+    18,
+    60,
+    27
+   ],
+   [
+    "src/auth.rs",
+    25,
+    10,
+    25,
+    19
+   ],
+   [
+    "src/auth.rs",
+    1223,
+    57,
+    1223,
+    66
+   ],
+   [
+    "src/auth.rs",
+    1311,
+    5,
+    1311,
+    14
+   ],
+   [
+    "src/auth/send.rs",
+    5,
+    9,
+    5,
+    18
+   ],
+   [
+    "src/auth/send.rs",
+    47,
+    54,
+    47,
+    63
+   ],
+   [
+    "src/auth/send.rs",
+    57,
+    67,
+    57,
+    76
+   ],
+   [
+    "src/auth/send.rs",
+    72,
+    9,
+    72,
+    18
+   ],
+   [
+    "src/sso.rs",
+    9,
+    9,
+    9,
+    18
+   ],
+   [
+    "src/sso.rs",
+    150,
+    57,
+    150,
+    66
+   ],
+   [
+    "src/sso.rs",
+    172,
+    43,
+    172,
+    52
+   ],
+   [
+    "src/sso.rs",
+    194,
+    5,
+    194,
+    14
+   ],
+   [
+    "src/sso.rs",
+    250,
+    5,
+    250,
+    14
+   ],
+   [
+    "src/sso.rs",
+    326,
+    5,
+    326,
+    14
+   ],
+   [
+    "src/sso.rs",
+    365,
+    5,
+    365,
+    14
+   ],
+   [
+    "src/sso.rs",
+    389,
+    5,
+    389,
+    14
+   ],
+   [
+    "src/sso.rs",
+    431,
+    5,
+    431,
+    14
+   ],
+   [
+    "src/sso_client.rs",
+    21,
+    10,
+    21,
+    19
+   ],
+   [
+    "src/sso_client.rs",
+    107,
+    29,
+    107,
+    38
+   ],
+   [
+    "src/sso_client.rs",
+    163,
+    29,
+    163,
+    38
+   ],
+   [
+    "src/sso_client.rs",
+    189,
+    9,
+    189,
+    18
+   ],
+   [
+    "src/sso_client.rs",
+    219,
+    9,
+    219,
+    18
+   ],
+   [
+    "src/sso_client.rs",
+    276,
+    64,
+    276,
+    73
+   ],
+   [
+    "src/sso_client.rs",
+    308,
+    66,
+    308,
+    75
+   ]
+  ],
+  "actual": [
+   "error",
+   "timeout"
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "src/api/core/two_factor/duo.rs",
+    "delay_ms": 200
+   },
+   {
+    "kind": "open",
+    "path": "src/db/models/attachment.rs",
+    "delay_ms": 200
+   },
+   {
+    "kind": "open",
+    "path": "src/sso.rs",
+    "delay_ms": 200
+   },
+   {
+    "kind": "fs_rename",
+    "path": "src/api/core/two_factor/duo.rs",
+    "new_path": "src/api/core/two_factor/duo_rt.rs",
+    "delay_ms": 200
+   },
+   {
+    "kind": "fs_rename",
+    "path": "src/api/core/two_factor/duo_rt.rs",
+    "new_path": "src/api/core/two_factor/duo.rs",
+    "delay_ms": 200
+   },
+   {
+    "kind": "change",
+    "path": "src/api/core/two_factor/duo.rs",
+    "start": [
+     68,
+     8
+    ],
+    "end": [
+     68,
+     9
+    ],
+    "delay_ms": 200
+   },
+   {
+    "kind": "close",
+    "path": "src/api/core/two_factor/duo.rs",
+    "delay_ms": 200
+   },
+   {
+    "kind": "open",
+    "path": "src/api/core/two_factor/duo.rs",
+    "delay_ms": 200
+   },
+   {
+    "kind": "change",
+    "path": "src/sso.rs",
+    "start": [
+     145,
+     21
+    ],
+    "end": [
+     145,
+     24
+    ],
+    "text": "zz",
+    "delay_ms": 200
+   },
+   {
+    "kind": "change",
+    "path": "src/sso.rs",
+    "start": [
+     145,
+     21
+    ],
+    "end": [
+     145,
+     23
+    ],
+    "text": "i64",
+    "delay_ms": 200
+   },
+   {
+    "kind": "request",
+    "path": "src/sso.rs",
+    "start": [
+     445,
+     26
+    ],
+    "text": "definition",
+    "delay_ms": 200
+   },
+   {
+    "kind": "request",
+    "path": "src/db/models/attachment.rs",
+    "start": [
+     224,
+     21
+    ],
+    "text": "references",
+    "delay_ms": 200
+   },
+   {
+    "kind": "request",
+    "path": "src/api/core/two_factor/duo.rs",
+    "start": [
+     184,
+     51
+    ],
+    "text": "documentHighlight",
+    "delay_ms": 200
+   },
+   {
+    "kind": "request",
+    "path": "src/sso.rs",
+    "start": [
+     279,
+     63
+    ],
+    "text": "hover",
+    "delay_ms": 200
+   },
+   {
+    "kind": "request",
+    "path": "src/db/models/attachment.rs",
+    "start": [
+     3,
+     20
+    ],
+    "text": "definition",
+    "delay_ms": 200
+   },
+   {
+    "kind": "open",
+    "path": "src/storage.rs",
+    "delay_ms": 200
+   },
+   {
+    "kind": "change",
+    "path": "src/storage.rs",
+    "start": [
+     193,
+     61
+    ],
+    "end": [
+     193,
+     61
+    ],
+    "text": "(",
+    "delay_ms": 200
+   },
+   {
+    "kind": "change",
+    "path": "src/api/core/two_factor/duo.rs",
+    "start": [
+     25,
+     12
+    ],
+    "end": [
+     25,
+     12
+    ],
+    "text": "[",
+    "delay_ms": 200
+   },
+   {
+    "kind": "close",
+    "path": "src/api/core/two_factor/duo.rs",
+    "delay_ms": 200
+   },
+   {
+    "kind": "open",
+    "path": "src/api/core/two_factor/duo.rs",
+    "delay_ms": 200
+   },
+   {
+    "kind": "change",
+    "path": "src/sso.rs",
+    "start": [
+     426,
+     0
+    ],
+    "end": [
+     427,
+     0
+    ],
+    "delay_ms": 200
+   },
+   {
+    "kind": "save",
+    "path": "src/sso.rs",
+    "delay_ms": 200
+   },
+   {
+    "kind": "change",
+    "path": "src/sso.rs",
+    "start": [
+     426,
+     0
+    ],
+    "end": [
+     426,
+     0
+    ],
+    "text": "pub async fn exchange_refresh_token(\n",
+    "delay_ms": 200
+   },
+   {
+    "kind": "save",
+    "path": "src/sso.rs",
+    "delay_ms": 200
+   },
+   {
+    "kind": "change",
+    "path": "src/db/models/attachment.rs",
+    "start": [
+     173,
+     0
+    ],
+    "end": [
+     174,
+     0
+    ],
+    "delay_ms": 200
+   },
+   {
+    "kind": "change",
+    "path": "src/db/models/attachment.rs",
+    "start": [
+     173,
+     0
+    ],
+    "end": [
+     173,
+     0
+    ],
+    "text": "                .left_join(ciphers::table.on(c",
+    "delay_ms": 200
+   },
+   {
+    "kind": "change",
+    "path": "src/db/models/attachment.rs",
+    "start": [
+     173,
+     46
+    ],
+    "end": [
+     173,
+     46
+    ],
+    "text": "iphers::uuid.eq(attachments::cipher_uuid)))\n",
+    "delay_ms": 200
+   },
+   {
+    "kind": "change",
+    "path": "src/storage.rs",
+    "start": [
+     193,
+     61
+    ],
+    "end": [
+     193,
+     62
+    ],
+    "delay_ms": 200
+   },
+   {
+    "kind": "close",
+    "path": "src/storage.rs",
+    "delay_ms": 200
+   },
+   {
+    "kind": "open",
+    "path": "src/db/models/org_policy.rs",
+    "delay_ms": 200
+   },
+   {
+    "kind": "change",
+    "path": "src/db/models/org_policy.rs",
+    "start": [
+     5,
+     8
+    ],
+    "end": [
+     5,
+     8
+    ],
+    "text": "\t",
+    "delay_ms": 200
+   },
+   {
+    "kind": "save",
+    "path": "src/db/models/org_policy.rs",
+    "delay_ms": 200
+   },
+   {
+    "kind": "change",
+    "path": "src/db/models/org_policy.rs",
+    "start": [
+     5,
+     8
+    ],
+    "end": [
+     5,
+     9
+    ],
+    "delay_ms": 200
+   },
+   {
+    "kind": "save",
+    "path": "src/db/models/org_policy.rs",
+    "delay_ms": 200
+   },
+   {
+    "kind": "close",
+    "path": "src/db/models/org_policy.rs",
+    "delay_ms": 200
+   }
+  ],
+  "detail": "{\"case\": {\"chain_step\": 5, \"families\": [\"H5\", \"H3\", \"H8\", \"H9\", \"H6\"], \"family\": \"H6\", \"history_index\": 4, \"history_seed\": 1005, \"mode\": \"chain\", \"note\": \"dep-editor round trip on src/db/models/org_policy.rs: insert '\\\\t' on line 5\", \"seed\": 1, \"timing\": \"race200\"}, \"note\": \"H6: dep-editor round trip on src/db/models/org_policy.rs: insert '\\\\t' on line 5; flake 1/3 [r1:SCr+retry r2:SCR r3:SCr] in 1050s\", \"shape\": \"references:result->error:timeout\"}",
+  "reproduced": "1/3",
+  "reduced_ops": [],
+  "signature": "rust-analyzer|r1_history|references:result->error:timeout",
+  "run_id": "eec5367c6a7c"
+ },
+ "replay_logs": [],
+ "project_files": {},
+ "incomplete": false
+}

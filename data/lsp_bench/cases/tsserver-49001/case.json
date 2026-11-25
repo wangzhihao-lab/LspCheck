@@ -1,0 +1,76 @@
+{
+ "schema": 1,
+ "id": "tsserver-49001",
+ "meta": {
+  "server": "tsserver",
+  "kind": "tsserver",
+  "number": 49001,
+  "url": "https://github.com/microsoft/TypeScript/issues/49001",
+  "title": "Missing properties quickfix does not add missing imports",
+  "oracle_class": "R4",
+  "subtype": "quickfix",
+  "fix_ref": "microsoft/TypeScript#49009 (fix(49001): handle missing imports in addMissingMember QF), 69214c0e56, 2022-05-09; git tag --contains: first in v4.8-beta / v4.8.2",
+  "fix_shas": [
+   "69214c0e56f36d05d64808ab7acb41f7b65cd802"
+  ],
+  "pre_version": "4.7.4",
+  "post_version": "4.8.2",
+  "pre_build": "4.7.4+tsls1.1.2",
+  "post_build": "4.8.2+tsls1.1.2",
+  "wrapper": "typescript-language-server@1.1.2",
+  "build_notes": "npm typescript@4.7.4 (2022-06-17) and typescript@4.8.2 (2022-08-25), both behind typescript-language-server@1.1.2 (the latest wrapper release before 4.8.2), started with the pinned tsserver.js; the reported TypeScript version is checked on every session. The add-missing-properties fix exists since 4.4 (PR #44576, named in the issue), so 4.7.4 offers it.",
+  "candidate_rank": 48,
+  "effort_minutes": 8,
+  "notes": "Two files from one code block of the issue. The fix for TS2741 on 'const bar: Bar = {}' generates 'bar: function (): SomeType' without importing SomeType from ./bar."
+ },
+ "language": "typescript",
+ "settings": {},
+ "settings_note": "The issue names no compiler options or settings; no tsconfig.json, so tsserver uses an inferred project for the open file and its import.",
+ "session": {
+  "settle_timeout_s": 120
+ },
+ "files": [
+  {
+   "path": "foo.ts",
+   "provenance": "issue",
+   "source": "issue body, Code block (the part after the '// foo.ts' marker)",
+   "note": "split at the '// foo.ts' / '// bar.ts' marker comments; the marker lines are not part of the files"
+  },
+  {
+   "path": "bar.ts",
+   "provenance": "issue",
+   "source": "issue body, Code block (the part after the '// bar.ts' marker)",
+   "note": "split at the marker comments"
+  }
+ ],
+ "repro": {
+  "attempt": 1,
+  "timing": "settled",
+  "steps": "Open foo.ts: 'const bar: Bar = {}' is reported (TS2741, property 'bar' is missing). Apply the quick fix 'Add missing properties'. Reported: the generated method 'bar: function (): SomeType' leaves SomeType unimported ('Cannot find name SomeType'); expected: SomeType is added to the import from ./bar. Probe: a fresh session on the edited files must neither report the targeted TS2741 nor any new error.",
+  "ops": [
+   {
+    "kind": "open",
+    "path": "foo.ts"
+   }
+  ],
+  "probe": {
+   "type": "edit_leaves_diagnostic",
+   "params": {
+    "edit": {
+     "via": "code_action",
+     "path": "foo.ts",
+     "diagnostic": {
+      "code": "2741"
+     },
+     "kind": "quickfix",
+     "title_re": "(?i)add missing properties",
+     "missing": "invalid"
+    },
+    "target": {
+     "code": "2741"
+    }
+   }
+  }
+ },
+ "attempts": []
+}

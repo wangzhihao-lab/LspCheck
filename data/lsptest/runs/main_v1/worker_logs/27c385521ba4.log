@@ -1,0 +1,3 @@
+2026-09-24 08:57:35,836 INFO campaign_run run 27c385521ba4: r1_history on pyright 1.1.414, Graphify-Labs/graphify@a5957aa6ef51 seed 1 race200, targets ['graphify/affected.py', 'graphify/diagnostics.py', 'tests/test_file_node_id_spec.py']
+2026-09-24 09:02:19,803 INFO campaign_run run 27c385521ba4: 0 candidate(s) in 284s; confirming
+2026-09-24 09:02:19,804 INFO campaign_run run 27c385521ba4 finished: ok, 0 confirmed of 0 candidate(s), 284s

@@ -1,0 +1,3 @@
+2026-11-18 13:53:49,538 INFO campaign_run run 7d49d1785c2f: r5_transforms on rust-analyzer 2026-09-21, tokio-rs/tokio@3930bd182cb1 seed 2 settled, targets ['examples/echo-tcp.rs', 'tokio/src/net/tcp/split.rs', 'tokio/tests/signal_realtime.rs']
+2026-11-18 13:56:37,957 INFO campaign_run run 7d49d1785c2f: 0 candidate(s) in 168s; confirming
+2026-11-18 13:56:37,957 INFO campaign_run run 7d49d1785c2f finished: ok, 0 confirmed of 0 candidate(s), 168s

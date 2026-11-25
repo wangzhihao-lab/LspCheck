@@ -1,0 +1,447 @@
+{
+ "format": 1,
+ "campaign": "main_v2",
+ "vid": "e6a377a4f59c-v00",
+ "run_id": "e6a377a4f59c",
+ "oracle": "r3_routes",
+ "server": {
+  "kind": "rust-analyzer",
+  "version": "2026-09-21"
+ },
+ "project": {
+  "name": "googleworkspace/cli@a3768d0e82ad",
+  "source": "corpus",
+  "ref": "temp/corpus/googleworkspace__cli@a3768d0e82ad",
+  "commit": "a3768d0e82ad83cca2da97724e46bea4ff0e6dbd",
+  "language": "rust"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "crates/google-workspace-cli/src/helpers/chat.rs",
+    "positions": [
+     [
+      21,
+      5
+     ],
+     [
+      30,
+      12
+     ],
+     [
+      66,
+      54
+     ],
+     [
+      79,
+      38
+     ],
+     [
+      112,
+      23
+     ],
+     [
+      140,
+      64
+     ],
+     [
+      198,
+      17
+     ],
+     [
+      200,
+      30
+     ],
+     [
+      224,
+      36
+     ],
+     [
+      272,
+      17
+     ],
+     [
+      278,
+      29
+     ],
+     [
+      278,
+      35
+     ]
+    ],
+    "ends": [
+     [
+      21,
+      7
+     ],
+     [
+      30,
+      16
+     ],
+     [
+      66,
+      58
+     ],
+     [
+      79,
+      40
+     ],
+     [
+      112,
+      27
+     ],
+     [
+      140,
+      69
+     ],
+     [
+      198,
+      22
+     ],
+     [
+      200,
+      34
+     ],
+     [
+      224,
+      38
+     ],
+     [
+      272,
+      27
+     ],
+     [
+      278,
+      30
+     ],
+     [
+      278,
+      37
+     ]
+    ],
+    "names": [
+     "std",
+     "Command",
+     "GwsError",
+     "str",
+     "matches",
+     "ok_or_else",
+     "RestMethod",
+     "default",
+     "long",
+     "test_inject_commands",
+     "_",
+     "cmd"
+    ]
+   },
+   {
+    "path": "crates/google-workspace-cli/src/helpers/events/mod.rs",
+    "positions": [
+     [
+      25,
+      22
+     ],
+     [
+      28,
+      21
+     ],
+     [
+      57,
+      15
+     ],
+     [
+      75,
+      26
+     ],
+     [
+      91,
+      31
+     ],
+     [
+      93,
+      18
+     ],
+     [
+      114,
+      27
+     ],
+     [
+      135,
+      15
+     ],
+     [
+      137,
+      19
+     ],
+     [
+      146,
+      27
+     ],
+     [
+      202,
+      43
+     ],
+     [
+      205,
+      26
+     ]
+    ],
+    "ends": [
+     [
+      25,
+      29
+     ],
+     [
+      28,
+      23
+     ],
+     [
+      57,
+      17
+     ],
+     [
+      75,
+      28
+     ],
+     [
+      91,
+      38
+     ],
+     [
+      93,
+      20
+     ],
+     [
+      114,
+      29
+     ],
+     [
+      135,
+      17
+     ],
+     [
+      137,
+      22
+     ],
+     [
+      146,
+      29
+     ],
+     [
+      202,
+      51
+     ],
+     [
+      205,
+      28
+     ]
+    ],
+    "names": [
+     "derive_builder",
+     "pin",
+     "cmd",
+     "new",
+     "default_value",
+     "arg",
+     "long",
+     "cmd",
+     "about",
+     "long",
+     "RestDescription",
+     "Vec"
+    ]
+   },
+   {
+    "path": "crates/google-workspace-cli/src/main.rs",
+    "positions": [
+     [
+      136,
+      30
+     ],
+     [
+      152,
+      59
+     ],
+     [
+      197,
+      44
+     ],
+     [
+      247,
+      21
+     ],
+     [
+      439,
+      8
+     ],
+     [
+      452,
+      7
+     ],
+     [
+      453,
+      7
+     ],
+     [
+      476,
+      7
+     ],
+     [
+      601,
+      12
+     ],
+     [
+      618,
+      23
+     ],
+     [
+      653,
+      49
+     ],
+     [
+      668,
+      13
+     ]
+    ],
+    "ends": [
+     [
+      136,
+      33
+     ],
+     [
+      152,
+      63
+     ],
+     [
+      197,
+      50
+     ],
+     [
+      247,
+      23
+     ],
+     [
+      439,
+      14
+     ],
+     [
+      452,
+      11
+     ],
+     [
+      453,
+      11
+     ],
+     [
+      476,
+      11
+     ],
+     [
+      601,
+      17
+     ],
+     [
+      618,
+      29
+     ],
+     [
+      653,
+      53
+     ],
+     [
+      668,
+      15
+     ]
+    ],
+    "names": [
+     "String",
+     "version",
+     "SanitizeMode",
+     "map",
+     "print_usage",
+     "println",
+     "println",
+     "println",
+     "assert_eq",
+     "is_help_flag",
+     "HashMap",
+     "doc"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "diagnostics",
+  "path": "crates/google-workspace-cli/src/main.rs",
+  "line": -1,
+  "character": -1,
+  "extra": "route:push"
+ },
+ "ops": [],
+ "case": {
+  "path": "crates/google-workspace-cli/src/main.rs",
+  "sub": "a",
+  "want_pull": false
+ },
+ "shape": "diagnostics:missing:inactive_code",
+ "signature": "rust-analyzer|r3_routes|diagnostics:missing:inactive_code",
+ "expected": [
+  [
+   55,
+   34,
+   58,
+   5,
+   4,
+   "inactive_code",
+   "rust-analyzer",
+   "code is inactive due to #[cfg] directives"
+  ]
+ ],
+ "actual": [],
+ "reproduced": "3/3",
+ "note": "pull vs push; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 229s",
+ "violation": {
+  "oracle": "r3_routes",
+  "server": "rust-analyzer-2026-09-21",
+  "project": "googleworkspace/cli@a3768d0e82ad",
+  "key": {
+   "method": "diagnostics",
+   "path": "crates/google-workspace-cli/src/main.rs",
+   "line": -1,
+   "character": -1,
+   "extra": "route:push"
+  },
+  "expected": [
+   [
+    55,
+    34,
+    58,
+    5,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives"
+   ]
+  ],
+  "actual": [],
+  "ops": [],
+  "detail": "{\"case\": {\"path\": \"crates/google-workspace-cli/src/main.rs\", \"sub\": \"a\", \"want_pull\": false}, \"note\": \"pull vs push; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 229s\", \"shape\": \"diagnostics:missing:inactive_code\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "rust-analyzer|r3_routes|diagnostics:missing:inactive_code",
+  "run_id": "e6a377a4f59c"
+ },
+ "replay_logs": [
+  "logs/rust-analyzer-2026-09-21-e6a377a4f59c-r3-replay-baseline-20261118-103441-d9c054.jsonl.gz",
+  "logs/rust-analyzer-2026-09-21-e6a377a4f59c-r3-replay-control-20261118-103513-b343e1.jsonl.gz",
+  "logs/rust-analyzer-2026-09-21-e6a377a4f59c-r3-replay-route-20261118-103536-5968f7.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

@@ -1,0 +1,107 @@
+{
+ "format": 1,
+ "campaign": "main_v2",
+ "vid": "89ebeb799563-v02",
+ "run_id": "89ebeb799563",
+ "oracle": "r6_crossimpl",
+ "server": {
+  "kind": "ts7",
+  "version": "7.0.2"
+ },
+ "project": {
+  "name": "solidjs/solid@4b62bc29e04b",
+  "source": "corpus",
+  "ref": "temp/corpus/solidjs__solid@4b62bc29e04b",
+  "commit": "4b62bc29e04bfd29573a20ff3d47ae56a8a80ccb",
+  "language": "typescript"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "examples/rendering/shared/src/components/Reveal.tsx",
+    "positions": [],
+    "ends": [],
+    "names": []
+   },
+   {
+    "path": "packages/web/test/hydration/spread-innerhtml.spec.tsx",
+    "positions": [
+     [
+      14,
+      4
+     ]
+    ],
+    "ends": [],
+    "names": [
+     ""
+    ]
+   },
+   {
+    "path": "packages/web/test/latest-shadow-owned-write-issue-3378.spec.tsx",
+    "positions": [],
+    "ends": [],
+    "names": []
+   }
+  ]
+ },
+ "key": {
+  "method": "hover",
+  "path": "packages/web/test/hydration/spread-innerhtml.spec.tsx",
+  "line": 14,
+  "character": 4,
+  "extra": ""
+ },
+ "ops": [],
+ "case": {
+  "intended": [],
+  "intended_source": "4519ec0a93607319a96f4feb967aa06a251ccc816544e2fed5c985c1d45dc11a",
+  "method": "hover",
+  "only_reference": null,
+  "only_test": null,
+  "reference": {
+   "kind": "ts6",
+   "version": "6.0.3"
+  }
+ },
+ "shape": "hover:changed",
+ "signature": "ts7|r6_crossimpl|hover:changed",
+ "expected": "(alias) describe<object>(name: string | Function, fn?: SuiteFactory<object> | undefined, options?: number): SuiteCollector<object> (+1 overload)",
+ "actual": "(alias) const describe: <object>(name: string | Function, fn?: SuiteFactory<object> | undefined, options?: number) => SuiteCollector<object>",
+ "reproduced": "3/3",
+ "note": "ts7-7.0.2 and ts6-6.0.3 differ on hover at packages/web/test/hydration/spread-innerhtml.spec.tsx:15:5; no documented intended difference matches; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 602s",
+ "violation": {
+  "oracle": "r6_crossimpl",
+  "server": "ts7-7.0.2",
+  "project": "solidjs/solid@4b62bc29e04b",
+  "key": {
+   "method": "hover",
+   "path": "packages/web/test/hydration/spread-innerhtml.spec.tsx",
+   "line": 14,
+   "character": 4,
+   "extra": ""
+  },
+  "expected": "(alias) describe<object>(name: string | Function, fn?: SuiteFactory<object> | undefined, options?: number): SuiteCollector<object> (+1 overload)",
+  "actual": "(alias) const describe: <object>(name: string | Function, fn?: SuiteFactory<object> | undefined, options?: number) => SuiteCollector<object>",
+  "ops": [],
+  "detail": "{\"case\": {\"intended\": [], \"intended_source\": \"4519ec0a93607319a96f4feb967aa06a251ccc816544e2fed5c985c1d45dc11a\", \"method\": \"hover\", \"only_reference\": null, \"only_test\": null, \"reference\": {\"kind\": \"ts6\", \"version\": \"6.0.3\"}}, \"note\": \"ts7-7.0.2 and ts6-6.0.3 differ on hover at packages/web/test/hydration/spread-innerhtml.spec.tsx:15:5; no documented intended difference matches; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 602s\", \"shape\": \"hover:changed\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "ts7|r6_crossimpl|hover:changed",
+  "run_id": "89ebeb799563"
+ },
+ "replay_logs": [
+  "logs/ts6-6.0.3-tre5c91e-ref-r6-replay-ref-baseline-20261118-223331-ddd6ba.jsonl.gz",
+  "logs/ts6-6.0.3-tre5c91e-ref-r6-replay-ref-control-20261118-223344-3f1d04.jsonl.gz",
+  "logs/ts7-7.0.2-tre5c91e-r6-replay-test-baseline-20261118-223308-c9af78.jsonl.gz",
+  "logs/ts7-7.0.2-tre5c91e-r6-replay-test-control-20261118-223321-07ee57.jsonl.gz"
+ ],
+ "project_files": {},
+ "group": "ts7-r6-hover-changed-hover-e5c91e",
+ "reduced": true
+}

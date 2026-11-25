@@ -1,0 +1,3 @@
+2026-09-23 20:51:11,400 INFO campaign_run run 916573e4b5cb: r5_transforms on pyright 1.1.414, Z4nzu/hackingtool@ef5334f8d37e seed 2 settled, targets ['src/hackingtool/constants.py', 'src/hackingtool/registry.py', 'src/hackingtool/tools/other_tools.py']
+2026-09-23 20:52:31,987 INFO campaign_run run 916573e4b5cb: 0 candidate(s) in 81s; confirming
+2026-09-23 20:52:31,988 INFO campaign_run run 916573e4b5cb finished: ok, 0 confirmed of 0 candidate(s), 81s

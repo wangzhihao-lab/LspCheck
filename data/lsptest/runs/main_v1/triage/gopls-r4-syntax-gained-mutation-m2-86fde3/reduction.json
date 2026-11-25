@@ -1,0 +1,40 @@
+{
+ "vid": "9bb8ccd49c7b-v02",
+ "ops_before": 3,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 2,
+ "cache_hits": 0,
+ "reduce_seconds": 4.49,
+ "budget_exhausted": false,
+ "probe_log": [
+  [
+   2,
+   false
+  ],
+  [
+   2,
+   false
+  ]
+ ],
+ "logs": [
+  "gopls-v0.23.0-tr86fde3-r4-replay-baseline-20260925-160937-0ab224.jsonl.gz",
+  "gopls-v0.23.0-tr86fde3-r4-replay-case-20260925-160928-781806.jsonl.gz",
+  "gopls-v0.23.0-tr86fde3-r4-replay-control-20260925-160940-6a1b01.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [],
+  "actual": [
+   "expected ')', found bool",
+   "expected ';', found ','",
+   "expected declaration, found 'for'",
+   "expected declaration, found extended",
+   "expected declaration, found runtime",
+   "expected declaration, found runtime",
+   "missing ',' in parameter list",
+   "missing parameter name"
+  ]
+ },
+ "ops_after": 3,
+ "total_seconds": 67.5
+}

@@ -1,0 +1,3 @@
+2026-11-18 09:00:41,480 INFO campaign_run run f6f266e8b7be: r2_handles on ts6 6.0.3, mifi/lossless-cut@85cb95f6aeae seed 1 settled, targets ['src/common/util.ts', 'src/renderer/src/edlFormats.test.ts', 'src/renderer/src/worker/eval.ts']
+2026-11-18 09:02:28,499 INFO campaign_run run f6f266e8b7be: 0 candidate(s) in 107s; confirming
+2026-11-18 09:02:28,502 INFO campaign_run run f6f266e8b7be finished: ok, 0 confirmed of 0 candidate(s), 107s

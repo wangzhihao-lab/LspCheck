@@ -1,0 +1,3 @@
+2026-11-18 07:48:38,394 INFO campaign_run run 36a726c9fca3: r1_history on ts6 6.0.3, Gitlawb/openclaude@5cd11336caea seed 1 race0, targets ['src/commands/privacy-settings/index.ts', 'src/components/PromptInput/Notifications.tsx', 'src/utils/log.test.ts']
+2026-11-18 08:00:30,123 INFO campaign_run run 36a726c9fca3: 0 candidate(s) in 712s; confirming
+2026-11-18 08:00:30,124 INFO campaign_run run 36a726c9fca3 finished: ok, 0 confirmed of 0 candidate(s), 712s

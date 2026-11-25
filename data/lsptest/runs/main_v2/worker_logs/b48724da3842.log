@@ -1,0 +1,3 @@
+2026-11-18 01:04:52,504 INFO campaign_run run b48724da3842: r1_history on ts7 7.0.2, umami-software/umami@12ad773d621f seed 1 settled, targets ['src/app/(main)/boards/[boardId]/BoardViewPage.tsx', 'src/app/(main)/websites/[websiteId]/(reports)/journeys/page.tsx', 'src/app/api/websites/[websiteId]/replays/saved/contract.generated.ts']
+2026-11-18 01:18:45,920 INFO campaign_run run b48724da3842: 0 candidate(s) in 833s; confirming
+2026-11-18 01:18:45,921 INFO campaign_run run b48724da3842 finished: ok, 0 confirmed of 0 candidate(s), 834s

@@ -1,0 +1,95 @@
+{
+ "vid": "43cf47dfbeec-v02",
+ "ops_before": 15,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 10,
+ "cache_hits": 9,
+ "reduce_seconds": 254.905,
+ "budget_exhausted": false,
+ "probe_log": [
+  [
+   10,
+   true
+  ],
+  [
+   7,
+   false
+  ],
+  [
+   5,
+   false
+  ],
+  [
+   9,
+   true
+  ],
+  [
+   7,
+   true
+  ],
+  [
+   6,
+   false
+  ],
+  [
+   6,
+   true
+  ],
+  [
+   5,
+   false
+  ],
+  [
+   5,
+   false
+  ],
+  [
+   5,
+   false
+  ]
+ ],
+ "logs": [
+  "gopls-v0.23.0-tr10a910-replay-baseline-20261118-234942-c76c6f.jsonl.gz",
+  "gopls-v0.23.0-tr10a910-replay-control-20261118-234942-5ca441.jsonl.gz",
+  "gopls-v0.23.0-tr10a910-replay-history-20261118-234948-c7aa39.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [
+   [
+    8,
+    1,
+    8,
+    37,
+    1,
+    "BrokenImport",
+    "compiler",
+    "could not import github.com/stretchr/testify/assert (no required module provides package \"github.com/stretchr/testify/assert\")"
+   ],
+   [
+    9,
+    1,
+    9,
+    15,
+    1,
+    "",
+    "compiler",
+    "error while importing gorm.io/gorm: missing go.sum entry for module providing package github.com/jinzhu/now (imported by gorm.io/gorm/tests); to add: go get -t gorm.io/gorm/tests"
+   ]
+  ],
+  "actual": [
+   [
+    8,
+    1,
+    8,
+    37,
+    1,
+    "BrokenImport",
+    "compiler",
+    "could not import github.com/stretchr/testify/assert (no required module provides package \"github.com/stretchr/testify/assert\")"
+   ]
+  ]
+ },
+ "ops_after": 6,
+ "total_seconds": 396.1
+}

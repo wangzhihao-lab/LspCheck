@@ -1,0 +1,182 @@
+{
+ "vid": "d943bb79c7d7-v00",
+ "ops_before": 12,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 27,
+ "cache_hits": 20,
+ "reduce_seconds": 1843.001,
+ "budget_exhausted": true,
+ "probe_log": [
+  [
+   7,
+   false
+  ],
+  [
+   8,
+   false
+  ],
+  [
+   5,
+   false
+  ],
+  [
+   5,
+   false
+  ],
+  [
+   5,
+   false
+  ],
+  [
+   6,
+   false
+  ],
+  [
+   10,
+   false
+  ],
+  [
+   10,
+   false
+  ],
+  [
+   10,
+   true
+  ],
+  [
+   8,
+   false
+  ],
+  [
+   8,
+   false
+  ],
+  [
+   4,
+   false
+  ],
+  [
+   4,
+   false
+  ],
+  [
+   4,
+   false
+  ],
+  [
+   4,
+   false
+  ],
+  [
+   4,
+   false
+  ],
+  [
+   5,
+   false
+  ],
+  [
+   9,
+   false
+  ],
+  [
+   9,
+   true
+  ],
+  [
+   8,
+   true
+  ],
+  [
+   7,
+   false
+  ],
+  [
+   7,
+   false
+  ],
+  [
+   6,
+   false
+  ],
+  [
+   4,
+   false
+  ],
+  [
+   4,
+   false
+  ],
+  [
+   7,
+   false
+  ],
+  [
+   7,
+   false
+  ]
+ ],
+ "logs": [
+  "ts6-6.0.3-trce1ffc-replay-baseline-20261118-222526-bd22b8.jsonl.gz",
+  "ts6-6.0.3-trce1ffc-replay-control-20261118-222526-967e5b.jsonl.gz",
+  "ts6-6.0.3-trce1ffc-replay-history-20261118-222550-660f14.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [
+   "allowMultipleInstances",
+   "askBeforeClose",
+   "autoDeleteMergedSegments",
+   "autoExportExtraStreams",
+   "autoLoadTimecode",
+   "autoMerge",
+   "autoSaveProjectFile",
+   "avoidNegativeTs",
+   "captureFormat",
+   "captureFrameFileNameFormat",
+   "captureFrameMethod",
+   "captureFrameQuality",
+   "changeOutDir",
+   "cleanupChoices",
+   "customFfPath",
+   "cutFileTemplate",
+   "cutFromAdjustmentFrames",
+   "cutMergedFileTemplate",
+   "cutToAdjustmentFrames",
+   "effectiveExportMode",
+   "enableAskForFileOpenAction",
+   "enableAutoHtml5ify",
+   "enableCustomOutDir",
+   "enableImportChapters",
+   "enableNativeHevc",
+   "enableOverwriteOutput",
+   "enableSmartCut",
+   "enableUpdateCheck",
+   "ensureWritableOutDirWithFilePath",
+   "exportConfirmEnabled",
+   "ffmpegExperimental",
+   "ffmpegHwaccel",
+   "hideNotifications",
+   "hideOsNotifications",
+   "invertCutSegments",
+   "invertTimelineScroll",
+   "keyBindings",
+   "keyboardNormalSeekSpeed",
+   "keyboardSeekAccFactor",
+   "keyboardSeekSpeed2",
+   "keyboardSeekSpeed3",
+   "keyframeCut",
+   "keyframesEnabled",
+   "language",
+   "lastAppVersion",
+   "mergedFileTemplate",
+   "mouseWheelFrameSeekModifierKey",
+   "mouseWheelKeyframeSeekModifierKey",
+   "mouseWheelZoomModifierKey",
+   "movFastStart"
+  ],
+  "actual": []
+ },
+ "ops_after": 8,
+ "total_seconds": 2275.0
+}

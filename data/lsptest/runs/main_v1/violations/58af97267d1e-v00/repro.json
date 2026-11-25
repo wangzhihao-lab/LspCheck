@@ -1,0 +1,5323 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "58af97267d1e-v00",
+ "run_id": "58af97267d1e",
+ "oracle": "r5_transforms",
+ "server": {
+  "kind": "gopls",
+  "version": "v0.23.0"
+ },
+ "project": {
+  "name": "jesseduffield/lazydocker@7e7aadc2071d",
+  "source": "corpus",
+  "ref": "temp/corpus/jesseduffield__lazydocker@7e7aadc2071d",
+  "commit": "7e7aadc2071d58031bf2daafca1fbd4093efc23f",
+  "language": "go"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 6,
+  "targets": [
+   {
+    "path": "pkg/gui/focus.go",
+    "positions": [
+     [
+      7,
+      12
+     ],
+     [
+      7,
+      31
+     ],
+     [
+      31,
+      45
+     ],
+     [
+      42,
+      8
+     ],
+     [
+      65,
+      9
+     ],
+     [
+      70,
+      8
+     ],
+     [
+      72,
+      5
+     ],
+     [
+      72,
+      14
+     ],
+     [
+      99,
+      40
+     ],
+     [
+      110,
+      29
+     ],
+     [
+      114,
+      36
+     ],
+     [
+      120,
+      26
+     ]
+    ],
+    "ends": [
+     [
+      7,
+      14
+     ],
+     [
+      7,
+      32
+     ],
+     [
+      31,
+      47
+     ],
+     [
+      42,
+      10
+     ],
+     [
+      65,
+      11
+     ],
+     [
+      70,
+      10
+     ],
+     [
+      72,
+      7
+     ],
+     [
+      72,
+      17
+     ],
+     [
+      99,
+      43
+     ],
+     [
+      110,
+      32
+     ],
+     [
+      114,
+      39
+     ],
+     [
+      120,
+      33
+     ]
+    ],
+    "names": [
+     "Gui",
+     "v",
+     "View",
+     "err",
+     "gui",
+     "gui",
+     "len",
+     "State",
+     "State",
+     "Filter",
+     "State",
+     "ViewStackMutex"
+    ]
+   },
+   {
+    "path": "pkg/gui/menu_panel.go",
+    "positions": [
+     [
+      10,
+      15
+     ],
+     [
+      38,
+      42
+     ],
+     [
+      61,
+      9
+     ],
+     [
+      83,
+      10
+     ],
+     [
+      87,
+      79
+     ],
+     [
+      91,
+      33
+     ],
+     [
+      94,
+      12
+     ],
+     [
+      95,
+      10
+     ],
+     [
+      107,
+      6
+     ],
+     [
+      109,
+      16
+     ],
+     [
+      120,
+      31
+     ],
+     [
+      131,
+      17
+     ]
+    ],
+    "ends": [
+     [
+      10,
+      18
+     ],
+     [
+      38,
+      44
+     ],
+     [
+      61,
+      12
+     ],
+     [
+      83,
+      12
+     ],
+     [
+      87,
+      81
+     ],
+     [
+      91,
+      36
+     ],
+     [
+      94,
+      14
+     ],
+     [
+      95,
+      12
+     ],
+     [
+      107,
+      11
+     ],
+     [
+      109,
+      17
+     ],
+     [
+      120,
+      33
+     ],
+     [
+      131,
+      23
+     ]
+    ],
+    "names": [
+     "string",
+     "nil",
+     "Items",
+     "item",
+     "len",
+     "Items",
+     "gui",
+     "err",
+     "optionsMap",
+     "Tr",
+     "gui",
+     "returnFocus"
+    ]
+   },
+   {
+    "path": "pkg/log/log.go",
+    "positions": [
+     [
+      0,
+      9
+     ],
+     [
+      13,
+      18
+     ],
+     [
+      14,
+      20
+     ],
+     [
+      23,
+      21
+     ],
+     [
+      23,
+      31
+     ],
+     [
+      35,
+      3
+     ],
+     [
+      35,
+      9
+     ],
+     [
+      35,
+      18
+     ],
+     [
+      36,
+      12
+     ],
+     [
+      45,
+      30
+     ],
+     [
+      45,
+      91
+     ],
+     [
+      57,
+      17
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      11
+     ],
+     [
+      13,
+      21
+     ],
+     [
+      14,
+      23
+     ],
+     [
+      23,
+      24
+     ],
+     [
+      23,
+      38
+     ],
+     [
+      35,
+      6
+     ],
+     [
+      35,
+      11
+     ],
+     [
+      35,
+      21
+     ],
+     [
+      36,
+      14
+     ],
+     [
+      45,
+      34
+     ],
+     [
+      45,
+      92
+     ],
+     [
+      57,
+      20
+     ]
+    ],
+    "names": [
+     "log",
+     "config",
+     "Logger",
+     "logrus",
+     "JSONFormatter",
+     "level",
+     "err",
+     "logrus",
+     "nil",
+     "filepath",
+     "os",
+     "logrus"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "completion",
+  "path": "pkg/gui/focus.go",
+  "line": 99,
+  "character": 43,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "pkg/gui/focus.go"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    0,
+    11
+   ],
+   "end": [
+    0,
+    11
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    1,
+    0
+   ],
+   "end": [
+    1,
+    0
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    2,
+    8
+   ],
+   "end": [
+    2,
+    8
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    3,
+    33
+   ],
+   "end": [
+    3,
+    33
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    4,
+    23
+   ],
+   "end": [
+    4,
+    23
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    5,
+    1
+   ],
+   "end": [
+    5,
+    1
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    6,
+    0
+   ],
+   "end": [
+    6,
+    0
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    7,
+    53
+   ],
+   "end": [
+    7,
+    53
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    8,
+    14
+   ],
+   "end": [
+    8,
+    14
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    9,
+    12
+   ],
+   "end": [
+    9,
+    12
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    10,
+    2
+   ],
+   "end": [
+    10,
+    2
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    11,
+    0
+   ],
+   "end": [
+    11,
+    0
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    12,
+    47
+   ],
+   "end": [
+    12,
+    47
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    13,
+    8
+   ],
+   "end": [
+    13,
+    8
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    14,
+    40
+   ],
+   "end": [
+    14,
+    40
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    15,
+    2
+   ],
+   "end": [
+    15,
+    2
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    16,
+    0
+   ],
+   "end": [
+    16,
+    0
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    17,
+    18
+   ],
+   "end": [
+    17,
+    18
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    18,
+    21
+   ],
+   "end": [
+    18,
+    21
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    19,
+    12
+   ],
+   "end": [
+    19,
+    12
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    20,
+    13
+   ],
+   "end": [
+    20,
+    13
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    21,
+    21
+   ],
+   "end": [
+    21,
+    21
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    22,
+    12
+   ],
+   "end": [
+    22,
+    12
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    23,
+    15
+   ],
+   "end": [
+    23,
+    15
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    24,
+    12
+   ],
+   "end": [
+    24,
+    12
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    25,
+    9
+   ],
+   "end": [
+    25,
+    9
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    26,
+    58
+   ],
+   "end": [
+    26,
+    58
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    27,
+    2
+   ],
+   "end": [
+    27,
+    2
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    28,
+    1
+   ],
+   "end": [
+    28,
+    1
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    29,
+    0
+   ],
+   "end": [
+    29,
+    0
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    30,
+    71
+   ],
+   "end": [
+    30,
+    71
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    31,
+    56
+   ],
+   "end": [
+    31,
+    56
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    32,
+    34
+   ],
+   "end": [
+    32,
+    34
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    33,
+    42
+   ],
+   "end": [
+    33,
+    42
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    34,
+    0
+   ],
+   "end": [
+    34,
+    0
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    35,
+    35
+   ],
+   "end": [
+    35,
+    35
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    36,
+    1
+   ],
+   "end": [
+    36,
+    1
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    37,
+    0
+   ],
+   "end": [
+    37,
+    0
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    38,
+    59
+   ],
+   "end": [
+    38,
+    59
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    39,
+    29
+   ],
+   "end": [
+    39,
+    29
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    40,
+    69
+   ],
+   "end": [
+    40,
+    69
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    41,
+    54
+   ],
+   "end": [
+    41,
+    54
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    42,
+    64
+   ],
+   "end": [
+    42,
+    64
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    43,
+    12
+   ],
+   "end": [
+    43,
+    12
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    44,
+    2
+   ],
+   "end": [
+    44,
+    2
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    45,
+    0
+   ],
+   "end": [
+    45,
+    0
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    46,
+    32
+   ],
+   "end": [
+    46,
+    32
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    47,
+    0
+   ],
+   "end": [
+    47,
+    0
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    48,
+    49
+   ],
+   "end": [
+    48,
+    49
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    49,
+    12
+   ],
+   "end": [
+    49,
+    12
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    50,
+    2
+   ],
+   "end": [
+    50,
+    2
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    51,
+    0
+   ],
+   "end": [
+    51,
+    0
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    52,
+    36
+   ],
+   "end": [
+    52,
+    36
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    53,
+    0
+   ],
+   "end": [
+    53,
+    0
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    54,
+    106
+   ],
+   "end": [
+    54,
+    106
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    55,
+    43
+   ],
+   "end": [
+    55,
+    43
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    56,
+    13
+   ],
+   "end": [
+    56,
+    13
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    57,
+    3
+   ],
+   "end": [
+    57,
+    3
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    58,
+    2
+   ],
+   "end": [
+    58,
+    2
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    59,
+    0
+   ],
+   "end": [
+    59,
+    0
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    60,
+    32
+   ],
+   "end": [
+    60,
+    32
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    61,
+    40
+   ],
+   "end": [
+    61,
+    40
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    62,
+    32
+   ],
+   "end": [
+    62,
+    32
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    63,
+    2
+   ],
+   "end": [
+    63,
+    2
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    64,
+    0
+   ],
+   "end": [
+    64,
+    0
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    65,
+    35
+   ],
+   "end": [
+    65,
+    35
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    66,
+    1
+   ],
+   "end": [
+    66,
+    1
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    67,
+    0
+   ],
+   "end": [
+    67,
+    0
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    68,
+    37
+   ],
+   "end": [
+    68,
+    37
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    69,
+    34
+   ],
+   "end": [
+    69,
+    34
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    70,
+    42
+   ],
+   "end": [
+    70,
+    42
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    71,
+    0
+   ],
+   "end": [
+    71,
+    0
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    72,
+    35
+   ],
+   "end": [
+    72,
+    35
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    73,
+    12
+   ],
+   "end": [
+    73,
+    12
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    74,
+    2
+   ],
+   "end": [
+    74,
+    2
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    75,
+    0
+   ],
+   "end": [
+    75,
+    0
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    76,
+    68
+   ],
+   "end": [
+    76,
+    68
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    77,
+    50
+   ],
+   "end": [
+    77,
+    50
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    78,
+    16
+   ],
+   "end": [
+    78,
+    16
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    79,
+    12
+   ],
+   "end": [
+    79,
+    12
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    80,
+    2
+   ],
+   "end": [
+    80,
+    2
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    81,
+    0
+   ],
+   "end": [
+    81,
+    0
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    82,
+    40
+   ],
+   "end": [
+    82,
+    40
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    83,
+    1
+   ],
+   "end": [
+    83,
+    1
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    84,
+    0
+   ],
+   "end": [
+    84,
+    0
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    85,
+    55
+   ],
+   "end": [
+    85,
+    55
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    86,
+    34
+   ],
+   "end": [
+    86,
+    34
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    87,
+    42
+   ],
+   "end": [
+    87,
+    42
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    88,
+    0
+   ],
+   "end": [
+    88,
+    0
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    89,
+    89
+   ],
+   "end": [
+    89,
+    89
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    90,
+    32
+   ],
+   "end": [
+    90,
+    32
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    91,
+    3
+   ],
+   "end": [
+    91,
+    3
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    92,
+    1
+   ],
+   "end": [
+    92,
+    1
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    93,
+    0
+   ],
+   "end": [
+    93,
+    0
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    94,
+    55
+   ],
+   "end": [
+    94,
+    55
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    95,
+    39
+   ],
+   "end": [
+    95,
+    39
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    96,
+    86
+   ],
+   "end": [
+    96,
+    86
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    97,
+    76
+   ],
+   "end": [
+    97,
+    76
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    98,
+    22
+   ],
+   "end": [
+    98,
+    22
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    99,
+    90
+   ],
+   "end": [
+    99,
+    90
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    100,
+    37
+   ],
+   "end": [
+    100,
+    37
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    101,
+    4
+   ],
+   "end": [
+    101,
+    4
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    102,
+    2
+   ],
+   "end": [
+    102,
+    2
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    103,
+    0
+   ],
+   "end": [
+    103,
+    0
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    104,
+    61
+   ],
+   "end": [
+    104,
+    61
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    105,
+    44
+   ],
+   "end": [
+    105,
+    44
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    106,
+    34
+   ],
+   "end": [
+    106,
+    34
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    107,
+    2
+   ],
+   "end": [
+    107,
+    2
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    108,
+    0
+   ],
+   "end": [
+    108,
+    0
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    109,
+    70
+   ],
+   "end": [
+    109,
+    70
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    110,
+    89
+   ],
+   "end": [
+    110,
+    89
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    111,
+    25
+   ],
+   "end": [
+    111,
+    25
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    112,
+    3
+   ],
+   "end": [
+    112,
+    3
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    113,
+    0
+   ],
+   "end": [
+    113,
+    0
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    114,
+    56
+   ],
+   "end": [
+    114,
+    56
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    115,
+    1
+   ],
+   "end": [
+    115,
+    1
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    116,
+    0
+   ],
+   "end": [
+    116,
+    0
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    117,
+    18
+   ],
+   "end": [
+    117,
+    18
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    118,
+    48
+   ],
+   "end": [
+    118,
+    48
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    119,
+    34
+   ],
+   "end": [
+    119,
+    34
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    120,
+    42
+   ],
+   "end": [
+    120,
+    42
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    121,
+    0
+   ],
+   "end": [
+    121,
+    0
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    122,
+    53
+   ],
+   "end": [
+    122,
+    53
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    123,
+    65
+   ],
+   "end": [
+    123,
+    65
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    124,
+    32
+   ],
+   "end": [
+    124,
+    32
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    125,
+    3
+   ],
+   "end": [
+    125,
+    3
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    126,
+    2
+   ],
+   "end": [
+    126,
+    2
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    127,
+    0
+   ],
+   "end": [
+    127,
+    0
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    128,
+    38
+   ],
+   "end": [
+    128,
+    38
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    129,
+    1
+   ],
+   "end": [
+    129,
+    1
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    130,
+    0
+   ],
+   "end": [
+    130,
+    0
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    131,
+    46
+   ],
+   "end": [
+    131,
+    46
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    132,
+    34
+   ],
+   "end": [
+    132,
+    34
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    133,
+    42
+   ],
+   "end": [
+    133,
+    42
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    134,
+    0
+   ],
+   "end": [
+    134,
+    0
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    135,
+    107
+   ],
+   "end": [
+    135,
+    107
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    136,
+    39
+   ],
+   "end": [
+    136,
+    39
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    137,
+    51
+   ],
+   "end": [
+    137,
+    51
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    138,
+    46
+   ],
+   "end": [
+    138,
+    46
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    139,
+    49
+   ],
+   "end": [
+    139,
+    49
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    140,
+    18
+   ],
+   "end": [
+    140,
+    18
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    141,
+    3
+   ],
+   "end": [
+    141,
+    3
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    142,
+    2
+   ],
+   "end": [
+    142,
+    2
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    143,
+    0
+   ],
+   "end": [
+    143,
+    0
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    144,
+    38
+   ],
+   "end": [
+    144,
+    38
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    145,
+    1
+   ],
+   "end": [
+    145,
+    1
+   ],
+   "text": "\r"
+  }
+ ],
+ "case": {
+  "mapped_key": [
+   "completion",
+   "pkg/gui/focus.go",
+   99,
+   43,
+   ""
+  ],
+  "transform": {
+   "back": {
+    "col": 0,
+    "eof": [],
+    "line": -1,
+    "n": 0,
+    "path": "pkg/gui/focus.go",
+    "w": 0
+   },
+   "edits": [
+    [
+     0,
+     11,
+     0,
+     11,
+     "\r"
+    ],
+    [
+     1,
+     0,
+     1,
+     0,
+     "\r"
+    ],
+    [
+     2,
+     8,
+     2,
+     8,
+     "\r"
+    ],
+    [
+     3,
+     33,
+     3,
+     33,
+     "\r"
+    ],
+    [
+     4,
+     23,
+     4,
+     23,
+     "\r"
+    ],
+    [
+     5,
+     1,
+     5,
+     1,
+     "\r"
+    ],
+    [
+     6,
+     0,
+     6,
+     0,
+     "\r"
+    ],
+    [
+     7,
+     53,
+     7,
+     53,
+     "\r"
+    ],
+    [
+     8,
+     14,
+     8,
+     14,
+     "\r"
+    ],
+    [
+     9,
+     12,
+     9,
+     12,
+     "\r"
+    ],
+    [
+     10,
+     2,
+     10,
+     2,
+     "\r"
+    ],
+    [
+     11,
+     0,
+     11,
+     0,
+     "\r"
+    ],
+    [
+     12,
+     47,
+     12,
+     47,
+     "\r"
+    ],
+    [
+     13,
+     8,
+     13,
+     8,
+     "\r"
+    ],
+    [
+     14,
+     40,
+     14,
+     40,
+     "\r"
+    ],
+    [
+     15,
+     2,
+     15,
+     2,
+     "\r"
+    ],
+    [
+     16,
+     0,
+     16,
+     0,
+     "\r"
+    ],
+    [
+     17,
+     18,
+     17,
+     18,
+     "\r"
+    ],
+    [
+     18,
+     21,
+     18,
+     21,
+     "\r"
+    ],
+    [
+     19,
+     12,
+     19,
+     12,
+     "\r"
+    ],
+    [
+     20,
+     13,
+     20,
+     13,
+     "\r"
+    ],
+    [
+     21,
+     21,
+     21,
+     21,
+     "\r"
+    ],
+    [
+     22,
+     12,
+     22,
+     12,
+     "\r"
+    ],
+    [
+     23,
+     15,
+     23,
+     15,
+     "\r"
+    ],
+    [
+     24,
+     12,
+     24,
+     12,
+     "\r"
+    ],
+    [
+     25,
+     9,
+     25,
+     9,
+     "\r"
+    ],
+    [
+     26,
+     58,
+     26,
+     58,
+     "\r"
+    ],
+    [
+     27,
+     2,
+     27,
+     2,
+     "\r"
+    ],
+    [
+     28,
+     1,
+     28,
+     1,
+     "\r"
+    ],
+    [
+     29,
+     0,
+     29,
+     0,
+     "\r"
+    ],
+    [
+     30,
+     71,
+     30,
+     71,
+     "\r"
+    ],
+    [
+     31,
+     56,
+     31,
+     56,
+     "\r"
+    ],
+    [
+     32,
+     34,
+     32,
+     34,
+     "\r"
+    ],
+    [
+     33,
+     42,
+     33,
+     42,
+     "\r"
+    ],
+    [
+     34,
+     0,
+     34,
+     0,
+     "\r"
+    ],
+    [
+     35,
+     35,
+     35,
+     35,
+     "\r"
+    ],
+    [
+     36,
+     1,
+     36,
+     1,
+     "\r"
+    ],
+    [
+     37,
+     0,
+     37,
+     0,
+     "\r"
+    ],
+    [
+     38,
+     59,
+     38,
+     59,
+     "\r"
+    ],
+    [
+     39,
+     29,
+     39,
+     29,
+     "\r"
+    ],
+    [
+     40,
+     69,
+     40,
+     69,
+     "\r"
+    ],
+    [
+     41,
+     54,
+     41,
+     54,
+     "\r"
+    ],
+    [
+     42,
+     64,
+     42,
+     64,
+     "\r"
+    ],
+    [
+     43,
+     12,
+     43,
+     12,
+     "\r"
+    ],
+    [
+     44,
+     2,
+     44,
+     2,
+     "\r"
+    ],
+    [
+     45,
+     0,
+     45,
+     0,
+     "\r"
+    ],
+    [
+     46,
+     32,
+     46,
+     32,
+     "\r"
+    ],
+    [
+     47,
+     0,
+     47,
+     0,
+     "\r"
+    ],
+    [
+     48,
+     49,
+     48,
+     49,
+     "\r"
+    ],
+    [
+     49,
+     12,
+     49,
+     12,
+     "\r"
+    ],
+    [
+     50,
+     2,
+     50,
+     2,
+     "\r"
+    ],
+    [
+     51,
+     0,
+     51,
+     0,
+     "\r"
+    ],
+    [
+     52,
+     36,
+     52,
+     36,
+     "\r"
+    ],
+    [
+     53,
+     0,
+     53,
+     0,
+     "\r"
+    ],
+    [
+     54,
+     106,
+     54,
+     106,
+     "\r"
+    ],
+    [
+     55,
+     43,
+     55,
+     43,
+     "\r"
+    ],
+    [
+     56,
+     13,
+     56,
+     13,
+     "\r"
+    ],
+    [
+     57,
+     3,
+     57,
+     3,
+     "\r"
+    ],
+    [
+     58,
+     2,
+     58,
+     2,
+     "\r"
+    ],
+    [
+     59,
+     0,
+     59,
+     0,
+     "\r"
+    ],
+    [
+     60,
+     32,
+     60,
+     32,
+     "\r"
+    ],
+    [
+     61,
+     40,
+     61,
+     40,
+     "\r"
+    ],
+    [
+     62,
+     32,
+     62,
+     32,
+     "\r"
+    ],
+    [
+     63,
+     2,
+     63,
+     2,
+     "\r"
+    ],
+    [
+     64,
+     0,
+     64,
+     0,
+     "\r"
+    ],
+    [
+     65,
+     35,
+     65,
+     35,
+     "\r"
+    ],
+    [
+     66,
+     1,
+     66,
+     1,
+     "\r"
+    ],
+    [
+     67,
+     0,
+     67,
+     0,
+     "\r"
+    ],
+    [
+     68,
+     37,
+     68,
+     37,
+     "\r"
+    ],
+    [
+     69,
+     34,
+     69,
+     34,
+     "\r"
+    ],
+    [
+     70,
+     42,
+     70,
+     42,
+     "\r"
+    ],
+    [
+     71,
+     0,
+     71,
+     0,
+     "\r"
+    ],
+    [
+     72,
+     35,
+     72,
+     35,
+     "\r"
+    ],
+    [
+     73,
+     12,
+     73,
+     12,
+     "\r"
+    ],
+    [
+     74,
+     2,
+     74,
+     2,
+     "\r"
+    ],
+    [
+     75,
+     0,
+     75,
+     0,
+     "\r"
+    ],
+    [
+     76,
+     68,
+     76,
+     68,
+     "\r"
+    ],
+    [
+     77,
+     50,
+     77,
+     50,
+     "\r"
+    ],
+    [
+     78,
+     16,
+     78,
+     16,
+     "\r"
+    ],
+    [
+     79,
+     12,
+     79,
+     12,
+     "\r"
+    ],
+    [
+     80,
+     2,
+     80,
+     2,
+     "\r"
+    ],
+    [
+     81,
+     0,
+     81,
+     0,
+     "\r"
+    ],
+    [
+     82,
+     40,
+     82,
+     40,
+     "\r"
+    ],
+    [
+     83,
+     1,
+     83,
+     1,
+     "\r"
+    ],
+    [
+     84,
+     0,
+     84,
+     0,
+     "\r"
+    ],
+    [
+     85,
+     55,
+     85,
+     55,
+     "\r"
+    ],
+    [
+     86,
+     34,
+     86,
+     34,
+     "\r"
+    ],
+    [
+     87,
+     42,
+     87,
+     42,
+     "\r"
+    ],
+    [
+     88,
+     0,
+     88,
+     0,
+     "\r"
+    ],
+    [
+     89,
+     89,
+     89,
+     89,
+     "\r"
+    ],
+    [
+     90,
+     32,
+     90,
+     32,
+     "\r"
+    ],
+    [
+     91,
+     3,
+     91,
+     3,
+     "\r"
+    ],
+    [
+     92,
+     1,
+     92,
+     1,
+     "\r"
+    ],
+    [
+     93,
+     0,
+     93,
+     0,
+     "\r"
+    ],
+    [
+     94,
+     55,
+     94,
+     55,
+     "\r"
+    ],
+    [
+     95,
+     39,
+     95,
+     39,
+     "\r"
+    ],
+    [
+     96,
+     86,
+     96,
+     86,
+     "\r"
+    ],
+    [
+     97,
+     76,
+     97,
+     76,
+     "\r"
+    ],
+    [
+     98,
+     22,
+     98,
+     22,
+     "\r"
+    ],
+    [
+     99,
+     90,
+     99,
+     90,
+     "\r"
+    ],
+    [
+     100,
+     37,
+     100,
+     37,
+     "\r"
+    ],
+    [
+     101,
+     4,
+     101,
+     4,
+     "\r"
+    ],
+    [
+     102,
+     2,
+     102,
+     2,
+     "\r"
+    ],
+    [
+     103,
+     0,
+     103,
+     0,
+     "\r"
+    ],
+    [
+     104,
+     61,
+     104,
+     61,
+     "\r"
+    ],
+    [
+     105,
+     44,
+     105,
+     44,
+     "\r"
+    ],
+    [
+     106,
+     34,
+     106,
+     34,
+     "\r"
+    ],
+    [
+     107,
+     2,
+     107,
+     2,
+     "\r"
+    ],
+    [
+     108,
+     0,
+     108,
+     0,
+     "\r"
+    ],
+    [
+     109,
+     70,
+     109,
+     70,
+     "\r"
+    ],
+    [
+     110,
+     89,
+     110,
+     89,
+     "\r"
+    ],
+    [
+     111,
+     25,
+     111,
+     25,
+     "\r"
+    ],
+    [
+     112,
+     3,
+     112,
+     3,
+     "\r"
+    ],
+    [
+     113,
+     0,
+     113,
+     0,
+     "\r"
+    ],
+    [
+     114,
+     56,
+     114,
+     56,
+     "\r"
+    ],
+    [
+     115,
+     1,
+     115,
+     1,
+     "\r"
+    ],
+    [
+     116,
+     0,
+     116,
+     0,
+     "\r"
+    ],
+    [
+     117,
+     18,
+     117,
+     18,
+     "\r"
+    ],
+    [
+     118,
+     48,
+     118,
+     48,
+     "\r"
+    ],
+    [
+     119,
+     34,
+     119,
+     34,
+     "\r"
+    ],
+    [
+     120,
+     42,
+     120,
+     42,
+     "\r"
+    ],
+    [
+     121,
+     0,
+     121,
+     0,
+     "\r"
+    ],
+    [
+     122,
+     53,
+     122,
+     53,
+     "\r"
+    ],
+    [
+     123,
+     65,
+     123,
+     65,
+     "\r"
+    ],
+    [
+     124,
+     32,
+     124,
+     32,
+     "\r"
+    ],
+    [
+     125,
+     3,
+     125,
+     3,
+     "\r"
+    ],
+    [
+     126,
+     2,
+     126,
+     2,
+     "\r"
+    ],
+    [
+     127,
+     0,
+     127,
+     0,
+     "\r"
+    ],
+    [
+     128,
+     38,
+     128,
+     38,
+     "\r"
+    ],
+    [
+     129,
+     1,
+     129,
+     1,
+     "\r"
+    ],
+    [
+     130,
+     0,
+     130,
+     0,
+     "\r"
+    ],
+    [
+     131,
+     46,
+     131,
+     46,
+     "\r"
+    ],
+    [
+     132,
+     34,
+     132,
+     34,
+     "\r"
+    ],
+    [
+     133,
+     42,
+     133,
+     42,
+     "\r"
+    ],
+    [
+     134,
+     0,
+     134,
+     0,
+     "\r"
+    ],
+    [
+     135,
+     107,
+     135,
+     107,
+     "\r"
+    ],
+    [
+     136,
+     39,
+     136,
+     39,
+     "\r"
+    ],
+    [
+     137,
+     51,
+     137,
+     51,
+     "\r"
+    ],
+    [
+     138,
+     46,
+     138,
+     46,
+     "\r"
+    ],
+    [
+     139,
+     49,
+     139,
+     49,
+     "\r"
+    ],
+    [
+     140,
+     18,
+     140,
+     18,
+     "\r"
+    ],
+    [
+     141,
+     3,
+     141,
+     3,
+     "\r"
+    ],
+    [
+     142,
+     2,
+     142,
+     2,
+     "\r"
+    ],
+    [
+     143,
+     0,
+     143,
+     0,
+     "\r"
+    ],
+    [
+     144,
+     38,
+     144,
+     38,
+     "\r"
+    ],
+    [
+     145,
+     1,
+     145,
+     1,
+     "\r"
+    ]
+   ],
+   "kind": "T4",
+   "path": "pkg/gui/focus.go",
+   "shift": {
+    "col": 0,
+    "eof": [],
+    "line": -1,
+    "n": 0,
+    "path": "pkg/gui/focus.go",
+    "w": 0
+   }
+  }
+ },
+ "shape": "completion:changed",
+ "signature": "gopls|r5_transforms|completion:changed",
+ "expected": [
+  "State",
+  "State.Filter.panel.GetView().Tabs",
+  "State.ViewStack",
+  "ViewStackMutex",
+  "currentStaticViewName",
+  "currentStaticWindowName",
+  "getContainersPanel().ContextState.GetMainTabTitles",
+  "refreshStateImages",
+  "refreshStateNetworks",
+  "refreshStateVolumes",
+  "statusManager"
+ ],
+ "actual": [
+  "State",
+  "State.ViewStack",
+  "ViewStackMutex",
+  "currentStaticViewName",
+  "currentStaticWindowName",
+  "getContainersPanel().ContextState.GetMainTabTitles",
+  "getImagesPanel().ContextState.GetMainTabTitles",
+  "refreshStateImages",
+  "refreshStateNetworks",
+  "refreshStateVolumes",
+  "statusManager"
+ ],
+ "reproduced": "0/3",
+ "note": "T4 pkg/gui/focus.go: 146 edit(s), first [0, 11, 0, 11]; flake 0/3 [r1:SCr r2:SCr r3:SCr] in 64s",
+ "violation": {
+  "oracle": "r5_transforms",
+  "server": "gopls-v0.23.0",
+  "project": "jesseduffield/lazydocker@7e7aadc2071d",
+  "key": {
+   "method": "completion",
+   "path": "pkg/gui/focus.go",
+   "line": 99,
+   "character": 43,
+   "extra": ""
+  },
+  "expected": [
+   "State",
+   "State.Filter.panel.GetView().Tabs",
+   "State.ViewStack",
+   "ViewStackMutex",
+   "currentStaticViewName",
+   "currentStaticWindowName",
+   "getContainersPanel().ContextState.GetMainTabTitles",
+   "refreshStateImages",
+   "refreshStateNetworks",
+   "refreshStateVolumes",
+   "statusManager"
+  ],
+  "actual": [
+   "State",
+   "State.ViewStack",
+   "ViewStackMutex",
+   "currentStaticViewName",
+   "currentStaticWindowName",
+   "getContainersPanel().ContextState.GetMainTabTitles",
+   "getImagesPanel().ContextState.GetMainTabTitles",
+   "refreshStateImages",
+   "refreshStateNetworks",
+   "refreshStateVolumes",
+   "statusManager"
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "pkg/gui/focus.go"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     0,
+     11
+    ],
+    "end": [
+     0,
+     11
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     1,
+     0
+    ],
+    "end": [
+     1,
+     0
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     2,
+     8
+    ],
+    "end": [
+     2,
+     8
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     3,
+     33
+    ],
+    "end": [
+     3,
+     33
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     4,
+     23
+    ],
+    "end": [
+     4,
+     23
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     5,
+     1
+    ],
+    "end": [
+     5,
+     1
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     6,
+     0
+    ],
+    "end": [
+     6,
+     0
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     7,
+     53
+    ],
+    "end": [
+     7,
+     53
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     8,
+     14
+    ],
+    "end": [
+     8,
+     14
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     9,
+     12
+    ],
+    "end": [
+     9,
+     12
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     10,
+     2
+    ],
+    "end": [
+     10,
+     2
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     11,
+     0
+    ],
+    "end": [
+     11,
+     0
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     12,
+     47
+    ],
+    "end": [
+     12,
+     47
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     13,
+     8
+    ],
+    "end": [
+     13,
+     8
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     14,
+     40
+    ],
+    "end": [
+     14,
+     40
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     15,
+     2
+    ],
+    "end": [
+     15,
+     2
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     16,
+     0
+    ],
+    "end": [
+     16,
+     0
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     17,
+     18
+    ],
+    "end": [
+     17,
+     18
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     18,
+     21
+    ],
+    "end": [
+     18,
+     21
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     19,
+     12
+    ],
+    "end": [
+     19,
+     12
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     20,
+     13
+    ],
+    "end": [
+     20,
+     13
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     21,
+     21
+    ],
+    "end": [
+     21,
+     21
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     22,
+     12
+    ],
+    "end": [
+     22,
+     12
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     23,
+     15
+    ],
+    "end": [
+     23,
+     15
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     24,
+     12
+    ],
+    "end": [
+     24,
+     12
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     25,
+     9
+    ],
+    "end": [
+     25,
+     9
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     26,
+     58
+    ],
+    "end": [
+     26,
+     58
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     27,
+     2
+    ],
+    "end": [
+     27,
+     2
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     28,
+     1
+    ],
+    "end": [
+     28,
+     1
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     29,
+     0
+    ],
+    "end": [
+     29,
+     0
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     30,
+     71
+    ],
+    "end": [
+     30,
+     71
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     31,
+     56
+    ],
+    "end": [
+     31,
+     56
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     32,
+     34
+    ],
+    "end": [
+     32,
+     34
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     33,
+     42
+    ],
+    "end": [
+     33,
+     42
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     34,
+     0
+    ],
+    "end": [
+     34,
+     0
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     35,
+     35
+    ],
+    "end": [
+     35,
+     35
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     36,
+     1
+    ],
+    "end": [
+     36,
+     1
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     37,
+     0
+    ],
+    "end": [
+     37,
+     0
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     38,
+     59
+    ],
+    "end": [
+     38,
+     59
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     39,
+     29
+    ],
+    "end": [
+     39,
+     29
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     40,
+     69
+    ],
+    "end": [
+     40,
+     69
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     41,
+     54
+    ],
+    "end": [
+     41,
+     54
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     42,
+     64
+    ],
+    "end": [
+     42,
+     64
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     43,
+     12
+    ],
+    "end": [
+     43,
+     12
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     44,
+     2
+    ],
+    "end": [
+     44,
+     2
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     45,
+     0
+    ],
+    "end": [
+     45,
+     0
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     46,
+     32
+    ],
+    "end": [
+     46,
+     32
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     47,
+     0
+    ],
+    "end": [
+     47,
+     0
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     48,
+     49
+    ],
+    "end": [
+     48,
+     49
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     49,
+     12
+    ],
+    "end": [
+     49,
+     12
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     50,
+     2
+    ],
+    "end": [
+     50,
+     2
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     51,
+     0
+    ],
+    "end": [
+     51,
+     0
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     52,
+     36
+    ],
+    "end": [
+     52,
+     36
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     53,
+     0
+    ],
+    "end": [
+     53,
+     0
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     54,
+     106
+    ],
+    "end": [
+     54,
+     106
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     55,
+     43
+    ],
+    "end": [
+     55,
+     43
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     56,
+     13
+    ],
+    "end": [
+     56,
+     13
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     57,
+     3
+    ],
+    "end": [
+     57,
+     3
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     58,
+     2
+    ],
+    "end": [
+     58,
+     2
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     59,
+     0
+    ],
+    "end": [
+     59,
+     0
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     60,
+     32
+    ],
+    "end": [
+     60,
+     32
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     61,
+     40
+    ],
+    "end": [
+     61,
+     40
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     62,
+     32
+    ],
+    "end": [
+     62,
+     32
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     63,
+     2
+    ],
+    "end": [
+     63,
+     2
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     64,
+     0
+    ],
+    "end": [
+     64,
+     0
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     65,
+     35
+    ],
+    "end": [
+     65,
+     35
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     66,
+     1
+    ],
+    "end": [
+     66,
+     1
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     67,
+     0
+    ],
+    "end": [
+     67,
+     0
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     68,
+     37
+    ],
+    "end": [
+     68,
+     37
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     69,
+     34
+    ],
+    "end": [
+     69,
+     34
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     70,
+     42
+    ],
+    "end": [
+     70,
+     42
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     71,
+     0
+    ],
+    "end": [
+     71,
+     0
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     72,
+     35
+    ],
+    "end": [
+     72,
+     35
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     73,
+     12
+    ],
+    "end": [
+     73,
+     12
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     74,
+     2
+    ],
+    "end": [
+     74,
+     2
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     75,
+     0
+    ],
+    "end": [
+     75,
+     0
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     76,
+     68
+    ],
+    "end": [
+     76,
+     68
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     77,
+     50
+    ],
+    "end": [
+     77,
+     50
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     78,
+     16
+    ],
+    "end": [
+     78,
+     16
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     79,
+     12
+    ],
+    "end": [
+     79,
+     12
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     80,
+     2
+    ],
+    "end": [
+     80,
+     2
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     81,
+     0
+    ],
+    "end": [
+     81,
+     0
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     82,
+     40
+    ],
+    "end": [
+     82,
+     40
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     83,
+     1
+    ],
+    "end": [
+     83,
+     1
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     84,
+     0
+    ],
+    "end": [
+     84,
+     0
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     85,
+     55
+    ],
+    "end": [
+     85,
+     55
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     86,
+     34
+    ],
+    "end": [
+     86,
+     34
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     87,
+     42
+    ],
+    "end": [
+     87,
+     42
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     88,
+     0
+    ],
+    "end": [
+     88,
+     0
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     89,
+     89
+    ],
+    "end": [
+     89,
+     89
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     90,
+     32
+    ],
+    "end": [
+     90,
+     32
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     91,
+     3
+    ],
+    "end": [
+     91,
+     3
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     92,
+     1
+    ],
+    "end": [
+     92,
+     1
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     93,
+     0
+    ],
+    "end": [
+     93,
+     0
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     94,
+     55
+    ],
+    "end": [
+     94,
+     55
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     95,
+     39
+    ],
+    "end": [
+     95,
+     39
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     96,
+     86
+    ],
+    "end": [
+     96,
+     86
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     97,
+     76
+    ],
+    "end": [
+     97,
+     76
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     98,
+     22
+    ],
+    "end": [
+     98,
+     22
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     99,
+     90
+    ],
+    "end": [
+     99,
+     90
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     100,
+     37
+    ],
+    "end": [
+     100,
+     37
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     101,
+     4
+    ],
+    "end": [
+     101,
+     4
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     102,
+     2
+    ],
+    "end": [
+     102,
+     2
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     103,
+     0
+    ],
+    "end": [
+     103,
+     0
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     104,
+     61
+    ],
+    "end": [
+     104,
+     61
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     105,
+     44
+    ],
+    "end": [
+     105,
+     44
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     106,
+     34
+    ],
+    "end": [
+     106,
+     34
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     107,
+     2
+    ],
+    "end": [
+     107,
+     2
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     108,
+     0
+    ],
+    "end": [
+     108,
+     0
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     109,
+     70
+    ],
+    "end": [
+     109,
+     70
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     110,
+     89
+    ],
+    "end": [
+     110,
+     89
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     111,
+     25
+    ],
+    "end": [
+     111,
+     25
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     112,
+     3
+    ],
+    "end": [
+     112,
+     3
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     113,
+     0
+    ],
+    "end": [
+     113,
+     0
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     114,
+     56
+    ],
+    "end": [
+     114,
+     56
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     115,
+     1
+    ],
+    "end": [
+     115,
+     1
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     116,
+     0
+    ],
+    "end": [
+     116,
+     0
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     117,
+     18
+    ],
+    "end": [
+     117,
+     18
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     118,
+     48
+    ],
+    "end": [
+     118,
+     48
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     119,
+     34
+    ],
+    "end": [
+     119,
+     34
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     120,
+     42
+    ],
+    "end": [
+     120,
+     42
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     121,
+     0
+    ],
+    "end": [
+     121,
+     0
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     122,
+     53
+    ],
+    "end": [
+     122,
+     53
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     123,
+     65
+    ],
+    "end": [
+     123,
+     65
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     124,
+     32
+    ],
+    "end": [
+     124,
+     32
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     125,
+     3
+    ],
+    "end": [
+     125,
+     3
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     126,
+     2
+    ],
+    "end": [
+     126,
+     2
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     127,
+     0
+    ],
+    "end": [
+     127,
+     0
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     128,
+     38
+    ],
+    "end": [
+     128,
+     38
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     129,
+     1
+    ],
+    "end": [
+     129,
+     1
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     130,
+     0
+    ],
+    "end": [
+     130,
+     0
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     131,
+     46
+    ],
+    "end": [
+     131,
+     46
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     132,
+     34
+    ],
+    "end": [
+     132,
+     34
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     133,
+     42
+    ],
+    "end": [
+     133,
+     42
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     134,
+     0
+    ],
+    "end": [
+     134,
+     0
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     135,
+     107
+    ],
+    "end": [
+     135,
+     107
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     136,
+     39
+    ],
+    "end": [
+     136,
+     39
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     137,
+     51
+    ],
+    "end": [
+     137,
+     51
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     138,
+     46
+    ],
+    "end": [
+     138,
+     46
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     139,
+     49
+    ],
+    "end": [
+     139,
+     49
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     140,
+     18
+    ],
+    "end": [
+     140,
+     18
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     141,
+     3
+    ],
+    "end": [
+     141,
+     3
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     142,
+     2
+    ],
+    "end": [
+     142,
+     2
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     143,
+     0
+    ],
+    "end": [
+     143,
+     0
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     144,
+     38
+    ],
+    "end": [
+     144,
+     38
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     145,
+     1
+    ],
+    "end": [
+     145,
+     1
+    ],
+    "text": "\r"
+   }
+  ],
+  "detail": "{\"case\": {\"mapped_key\": [\"completion\", \"pkg/gui/focus.go\", 99, 43, \"\"], \"transform\": {\"back\": {\"col\": 0, \"eof\": [], \"line\": -1, \"n\": 0, \"path\": \"pkg/gui/focus.go\", \"w\": 0}, \"edits\": [[0, 11, 0, 11, \"\\r\"], [1, 0, 1, 0, \"\\r\"], [2, 8, 2, 8, \"\\r\"], [3, 33, 3, 33, \"\\r\"], [4, 23, 4, 23, \"\\r\"], [5, 1, 5, 1, \"\\r\"], [6, 0, 6, 0, \"\\r\"], [7, 53, 7, 53, \"\\r\"], [8, 14, 8, 14, \"\\r\"], [9, 12, 9, 12, \"\\r\"], [10, 2, 10, 2, \"\\r\"], [11, 0, 11, 0, \"\\r\"], [12, 47, 12, 47, \"\\r\"], [13, 8, 13, 8, \"\\r\"], [14, 40, 14, 40, \"\\r\"], [15, 2, 15, 2, \"\\r\"], [16, 0, 16, 0, \"\\r\"], [17, 18, 17, 18, \"\\r\"], [18, 21, 18, 21, \"\\r\"], [19, 12, 19, 12, \"\\r\"], [20, 13, 20, 13, \"\\r\"], [21, 21, 21, 21, \"\\r\"], [22, 12, 22, 12, \"\\r\"], [23, 15, 23, 15, \"\\r\"], [24, 12, 24, 12, \"\\r\"], [25, 9, 25, 9, \"\\r\"], [26, 58, 26, 58, \"\\r\"], [27, 2, 27, 2, \"\\r\"], [28, 1, 28, 1, \"\\r\"], [29, 0, 29, 0, \"\\r\"], [30, 71, 30, 71, \"\\r\"], [31, 56, 31, 56, \"\\r\"], [32, 34, 32, 34, \"\\r\"], [33, 42, 33, 42, \"\\r\"], [34, 0, 34, 0, \"\\r\"], [35, 35, 35, 35, \"\\r\"], [36, 1, 36, 1, \"\\r\"], [37, 0, 37, 0, \"\\r\"], [38, 59, 38, 59, \"\\r\"], [39, 29, 39, 29, \"\\r\"], [40, 69, 40, 69, \"\\r\"], [41, 54, 41, 54, \"\\r\"], [42, 64, 42, 64, \"\\r\"], [43, 12, 43, 12, \"\\r\"], [44, 2, 44, 2, \"\\r\"], [45, 0, 45, 0, \"\\r\"], [46, 32, 46, 32, \"\\r\"], [47, 0, 47, 0, \"\\r\"], [48, 49, 48, 49, \"\\r\"], [49, 12, 49, 12, \"\\r\"], [50, 2, 50, 2, \"\\r\"], [51, 0, 51, 0, \"\\r\"], [52, 36, 52, 36, \"\\r\"], [53, 0, 53, 0, \"\\r\"], [54, 106, 54, 106, \"\\r\"], [55, 43, 55, 43, \"\\r\"], [56, 13, 56, 13, \"\\r\"], [57, 3, 57, 3, \"\\r\"], [58, 2, 58, 2, \"\\r\"], [59, 0, 59, 0, \"\\r\"], [60, 32, 60, 32, \"\\r\"], [61, 40, 61, 40, \"\\r\"], [62, 32, 62, 32, \"\\r\"], [63, 2, 63, 2, \"\\r\"], [64, 0, 64, 0, \"\\r\"], [65, 35, 65, 35, \"\\r\"], [66, 1, 66, 1, \"\\r\"], [67, 0, 67, 0, \"\\r\"], [68, 37, 68, 37, \"\\r\"], [69, 34, 69, 34, \"\\r\"], [70, 42, 70, 42, \"\\r\"], [71, 0, 71, 0, \"\\r\"], [72, 35, 72, 35, \"\\r\"], [73, 12, 73, 12, \"\\r\"], [74, 2, 74, 2, \"\\r\"], [75, 0, 75, 0, \"\\r\"], [76, 68, 76, 68, \"\\r\"], [77, 50, 77, 50, \"\\r\"], [78, 16, 78, 16, \"\\r\"], [79, 12, 79, 12, \"\\r\"], [80, 2, 80, 2, \"\\r\"], [81, 0, 81, 0, \"\\r\"], [82, 40, 82, 40, \"\\r\"], [83, 1, 83, 1, \"\\r\"], [84, 0, 84, 0, \"\\r\"], [85, 55, 85, 55, \"\\r\"], [86, 34, 86, 34, \"\\r\"], [87, 42, 87, 42, \"\\r\"], [88, 0, 88, 0, \"\\r\"], [89, 89, 89, 89, \"\\r\"], [90, 32, 90, 32, \"\\r\"], [91, 3, 91, 3, \"\\r\"], [92, 1, 92, 1, \"\\r\"], [93, 0, 93, 0, \"\\r\"], [94, 55, 94, 55, \"\\r\"], [95, 39, 95, 39, \"\\r\"], [96, 86, 96, 86, \"\\r\"], [97, 76, 97, 76, \"\\r\"], [98, 22, 98, 22, \"\\r\"], [99, 90, 99, 90, \"\\r\"], [100, 37, 100, 37, \"\\r\"], [101, 4, 101, 4, \"\\r\"], [102, 2, 102, 2, \"\\r\"], [103, 0, 103, 0, \"\\r\"], [104, 61, 104, 61, \"\\r\"], [105, 44, 105, 44, \"\\r\"], [106, 34, 106, 34, \"\\r\"], [107, 2, 107, 2, \"\\r\"], [108, 0, 108, 0, \"\\r\"], [109, 70, 109, 70, \"\\r\"], [110, 89, 110, 89, \"\\r\"], [111, 25, 111, 25, \"\\r\"], [112, 3, 112, 3, \"\\r\"], [113, 0, 113, 0, \"\\r\"], [114, 56, 114, 56, \"\\r\"], [115, 1, 115, 1, \"\\r\"], [116, 0, 116, 0, \"\\r\"], [117, 18, 117, 18, \"\\r\"], [118, 48, 118, 48, \"\\r\"], [119, 34, 119, 34, \"\\r\"], [120, 42, 120, 42, \"\\r\"], [121, 0, 121, 0, \"\\r\"], [122, 53, 122, 53, \"\\r\"], [123, 65, 123, 65, \"\\r\"], [124, 32, 124, 32, \"\\r\"], [125, 3, 125, 3, \"\\r\"], [126, 2, 126, 2, \"\\r\"], [127, 0, 127, 0, \"\\r\"], [128, 38, 128, 38, \"\\r\"], [129, 1, 129, 1, \"\\r\"], [130, 0, 130, 0, \"\\r\"], [131, 46, 131, 46, \"\\r\"], [132, 34, 132, 34, \"\\r\"], [133, 42, 133, 42, \"\\r\"], [134, 0, 134, 0, \"\\r\"], [135, 107, 135, 107, \"\\r\"], [136, 39, 136, 39, \"\\r\"], [137, 51, 137, 51, \"\\r\"], [138, 46, 138, 46, \"\\r\"], [139, 49, 139, 49, \"\\r\"], [140, 18, 140, 18, \"\\r\"], [141, 3, 141, 3, \"\\r\"], [142, 2, 142, 2, \"\\r\"], [143, 0, 143, 0, \"\\r\"], [144, 38, 144, 38, \"\\r\"], [145, 1, 145, 1, \"\\r\"]], \"kind\": \"T4\", \"path\": \"pkg/gui/focus.go\", \"shift\": {\"col\": 0, \"eof\": [], \"line\": -1, \"n\": 0, \"path\": \"pkg/gui/focus.go\", \"w\": 0}}}, \"note\": \"T4 pkg/gui/focus.go: 146 edit(s), first [0, 11, 0, 11]; flake 0/3 [r1:SCr r2:SCr r3:SCr] in 64s\", \"shape\": \"completion:changed\"}",
+  "reproduced": "0/3",
+  "reduced_ops": [],
+  "signature": "gopls|r5_transforms|completion:changed",
+  "run_id": "58af97267d1e"
+ },
+ "replay_logs": [],
+ "project_files": {},
+ "incomplete": false
+}

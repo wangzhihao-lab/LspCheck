@@ -1,0 +1,161 @@
+{
+ "rustc": [
+  "rustc 1.98.1 (48a229cea 2026-09-01)"
+ ],
+ "C27": [
+  {
+   "campaign": "main_v1",
+   "gid": "rust-analyzer-r4-completioninsert-gained-completion-e99b79",
+   "path": "src/api/core/organizations.rs",
+   "edition": "2024",
+   "post_line": "        Err(())!(\"Organization not found\", \"Organization id's do not match\");",
+   "base": {
+    "cmd": "~/.rustup/toolchains/1.98.1-aarch64-apple-darwin/bin/rustc -Zparse-crate-root-only --edition 2024 <scratch>/rs/C27_base.rs",
+    "cwd": "<scratch>/rs",
+    "exit": 0,
+    "output": []
+   },
+   "pre": {
+    "cmd": "~/.rustup/toolchains/1.98.1-aarch64-apple-darwin/bin/rustc -Zparse-crate-root-only --edition 2024 <scratch>/rs/C27_pre.rs",
+    "cwd": "<scratch>/rs",
+    "exit": 0,
+    "output": []
+   },
+   "post": {
+    "cmd": "~/.rustup/toolchains/1.98.1-aarch64-apple-darwin/bin/rustc -Zparse-crate-root-only --edition 2024 <scratch>/rs/C27_post.rs",
+    "cwd": "<scratch>/rs",
+    "exit": 1,
+    "output": [
+     "error: expected one of `.`, `;`, `?`, `}`, or an operator, found `!`",
+     "   --> <scratch>/rs/C27_post.rs:315:16",
+     "    |",
+     "315 |         Err(())!(\"Organization not found\", \"Organization id's do not match\");",
+     "    |                ^ expected one of `.`, `;`, `?`, `}`, or an operator",
+     "",
+     "error: aborting due to 1 previous error"
+    ]
+   }
+  }
+ ],
+ "C28": [
+  {
+   "campaign": "main_v2",
+   "gid": "rust-analyzer-r4-completioninsert-gained-completion-e99b79",
+   "path": "wgpu/src/quad/solid.rs",
+   "edition": "2024",
+   "post_line": "#[derive(Debug)(Clone, Copy, Debug, Pod, Zeroable)]",
+   "base": {
+    "cmd": "~/.rustup/toolchains/1.98.1-aarch64-apple-darwin/bin/rustc -Zparse-crate-root-only --edition 2024 <scratch>/rs/C28_base.rs",
+    "cwd": "<scratch>/rs",
+    "exit": 0,
+    "output": []
+   },
+   "pre": {
+    "cmd": "~/.rustup/toolchains/1.98.1-aarch64-apple-darwin/bin/rustc -Zparse-crate-root-only --edition 2024 <scratch>/rs/C28_pre.rs",
+    "cwd": "<scratch>/rs",
+    "exit": 0,
+    "output": []
+   },
+   "post": {
+    "cmd": "~/.rustup/toolchains/1.98.1-aarch64-apple-darwin/bin/rustc -Zparse-crate-root-only --edition 2024 <scratch>/rs/C28_post.rs",
+    "cwd": "<scratch>/rs",
+    "exit": 1,
+    "output": [
+     "error: expected `]`, found `(`",
+     " --> <scratch>/rs/C28_post.rs:9:16",
+     "  |",
+     "9 | #[derive(Debug)(Clone, Copy, Debug, Pod, Zeroable)]",
+     "  |                ^ expected `]`",
+     "",
+     "error: aborting due to 1 previous error"
+    ]
+   }
+  }
+ ],
+ "C29": [
+  {
+   "campaign": "main_v2",
+   "gid": "rust-analyzer-r4-diagnostics-extra-e0063-mutation-m1-aeef82",
+   "path": "crates/google-workspace-cli/src/helpers/chat.rs",
+   "edition": "2021",
+   "post_line": "        space.to_owned(),",
+   "base": {
+    "cmd": "~/.rustup/toolchains/1.98.1-aarch64-apple-darwin/bin/rustc -Zparse-crate-root-only --edition 2021 <scratch>/rs/C29_base.rs",
+    "cwd": "<scratch>/rs",
+    "exit": 0,
+    "output": []
+   },
+   "pre": {
+    "cmd": "~/.rustup/toolchains/1.98.1-aarch64-apple-darwin/bin/rustc -Zparse-crate-root-only --edition 2021 <scratch>/rs/C29_pre.rs",
+    "cwd": "<scratch>/rs",
+    "exit": 0,
+    "output": []
+   },
+   "post": {
+    "cmd": "~/.rustup/toolchains/1.98.1-aarch64-apple-darwin/bin/rustc -Zparse-crate-root-only --edition 2021 <scratch>/rs/C29_post.rs",
+    "cwd": "<scratch>/rs",
+    "exit": 1,
+    "output": [
+     "error: expected one of `,`, `:`, or `}`, found `.`",
+     "   --> <scratch>/rs/C29_post.rs:184:14",
+     "    |",
+     "183 |     Ok(SendConfig {",
+     "    |        ---------- while parsing this struct",
+     "184 |         space.to_owned(),",
+     "    |         -----^ expected one of `,`, `:`, or `}`",
+     "    |         |",
+     "    |         while parsing this struct field",
+     "    |",
+     "help: try naming a field",
+     "    |",
+     "184 |         space: space.to_owned(),",
+     "    |         ++++++",
+     "",
+     "error: aborting due to 1 previous error"
+    ]
+   }
+  },
+  {
+   "campaign": "main_v2",
+   "gid": "rust-analyzer-r4-syntax-gained-mutation-m1-7af5e4",
+   "path": "crates/google-workspace-cli/src/helpers/chat.rs",
+   "edition": "2021",
+   "post_line": "        space.to_owned(),",
+   "base": {
+    "cmd": "~/.rustup/toolchains/1.98.1-aarch64-apple-darwin/bin/rustc -Zparse-crate-root-only --edition 2021 <scratch>/rs/C29_base.rs",
+    "cwd": "<scratch>/rs",
+    "exit": 0,
+    "output": []
+   },
+   "pre": {
+    "cmd": "~/.rustup/toolchains/1.98.1-aarch64-apple-darwin/bin/rustc -Zparse-crate-root-only --edition 2021 <scratch>/rs/C29_pre.rs",
+    "cwd": "<scratch>/rs",
+    "exit": 0,
+    "output": []
+   },
+   "post": {
+    "cmd": "~/.rustup/toolchains/1.98.1-aarch64-apple-darwin/bin/rustc -Zparse-crate-root-only --edition 2021 <scratch>/rs/C29_post.rs",
+    "cwd": "<scratch>/rs",
+    "exit": 1,
+    "output": [
+     "error: expected one of `,`, `:`, or `}`, found `.`",
+     "   --> <scratch>/rs/C29_post.rs:184:14",
+     "    |",
+     "183 |     Ok(SendConfig {",
+     "    |        ---------- while parsing this struct",
+     "184 |         space.to_owned(),",
+     "    |         -----^ expected one of `,`, `:`, or `}`",
+     "    |         |",
+     "    |         while parsing this struct field",
+     "    |",
+     "help: try naming a field",
+     "    |",
+     "184 |         space: space.to_owned(),",
+     "    |         ++++++",
+     "",
+     "error: aborting due to 1 previous error"
+    ]
+   }
+  }
+ ]
+}

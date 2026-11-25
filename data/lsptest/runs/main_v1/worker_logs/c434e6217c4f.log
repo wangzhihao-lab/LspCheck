@@ -1,0 +1,3 @@
+2026-09-24 10:43:39,042 INFO campaign_run run c434e6217c4f: r1_history on rust-analyzer 2026-09-21, lapce/lapce@b604d57de4a8 seed 2 settled, targets ['lapce-app/src/proxy/remote.rs', 'lapce-core/src/lib.rs', 'lapce-proxy/src/plugin/dap.rs']
+2026-09-24 10:52:57,611 INFO campaign_run run c434e6217c4f: 0 candidate(s) in 559s; confirming
+2026-09-24 10:52:57,611 INFO campaign_run run c434e6217c4f finished: ok, 0 confirmed of 0 candidate(s), 559s

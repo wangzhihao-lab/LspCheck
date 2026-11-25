@@ -1,0 +1,3 @@
+2026-11-18 10:28:34,311 INFO campaign_run run 0e525078d29f: r3_routes on pyright 1.1.414, karpathy/nanochat@92d63d4e8bb4 seed 2 settled, targets ['nanochat/gpt.py', 'scripts/tok_train.py', 'tasks/arc.py']
+2026-11-18 10:29:51,330 INFO campaign_run run 0e525078d29f: 4 candidate(s) in 77s; confirming
+2026-11-18 10:29:51,331 INFO campaign_run run 0e525078d29f finished: ok, 0 confirmed of 4 candidate(s), 77s

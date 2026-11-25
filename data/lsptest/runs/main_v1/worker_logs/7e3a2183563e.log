@@ -1,0 +1,3 @@
+2026-09-24 13:05:59,295 INFO campaign_run run 7e3a2183563e: r1_history on pyright 1.1.414, github/spec-kit@67ab049e8d43 seed 3 settled, targets ['src/specify_cli/bundles/packager.py', 'src/specify_cli/presets/command_update.py', 'tests/specify_cli/workflows/test_command_run.py']
+2026-09-24 13:12:51,218 INFO campaign_run run 7e3a2183563e: 0 candidate(s) in 412s; confirming
+2026-09-24 13:12:51,218 INFO campaign_run run 7e3a2183563e finished: ok, 0 confirmed of 0 candidate(s), 412s

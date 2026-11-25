@@ -1,0 +1,239 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "4e55ff9e6249-v00",
+ "run_id": "4e55ff9e6249",
+ "oracle": "r4_edits",
+ "server": {
+  "kind": "gopls",
+  "version": "v0.23.0"
+ },
+ "project": {
+  "name": "charmbracelet/bubbletea@657aaae216e3",
+  "source": "corpus",
+  "ref": "temp/corpus/charmbracelet__bubbletea@657aaae216e3",
+  "commit": "657aaae216e3f87df09b60959a9fe5de7b2ca419",
+  "language": "go"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "examples/http/main.go",
+    "positions": [
+     [
+      27,
+      21
+     ]
+    ],
+    "ends": [],
+    "names": [
+     ""
+    ]
+   },
+   {
+    "path": "examples/set-window-title/main.go",
+    "positions": [],
+    "ends": [],
+    "names": []
+   },
+   {
+    "path": "mouse.go",
+    "positions": [],
+    "ends": [],
+    "names": []
+   }
+  ]
+ },
+ "key": {
+  "method": "diagnostics",
+  "path": "examples/http/main.go",
+  "line": 27,
+  "character": 21,
+  "extra": "M2:quickfix-errors:Declare missing methods of tea.Model"
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "examples/http/main.go"
+  },
+  {
+   "kind": "change",
+   "path": "examples/http/main.go",
+   "start": [
+    33,
+    8
+   ],
+   "end": [
+    33,
+    13
+   ],
+   "text": "moddel"
+  },
+  {
+   "kind": "change",
+   "path": "examples/http/main.go",
+   "start": [
+    20,
+    0
+   ],
+   "end": [
+    20,
+    0
+   ],
+   "text": "// Init implements [tea.Model].\nfunc (m model) Init() tea.Cmd {\n\tpanic(\"unimplemented\")\n}\n\n"
+  }
+ ],
+ "case": {
+  "action_kind": "quickfix",
+  "base_errors": 0,
+  "check": "errors",
+  "diag": {
+   "code": "InvalidIfaceAssign",
+   "message": "cannot use model{} (value of struct type model) as tea.Model value in argument to tea.NewProgram: model does not implement tea.Model (missing method Init)",
+   "range": {
+    "end": {
+     "character": 28,
+     "line": 27
+    },
+    "start": {
+     "character": 21,
+     "line": 27
+    }
+   },
+   "severity": 1
+  },
+  "fix_introduced_errors": [],
+  "fix_ops": [
+   {
+    "end": [
+     20,
+     0
+    ],
+    "kind": "change",
+    "path": "examples/http/main.go",
+    "start": [
+     20,
+     0
+    ],
+    "text": "// Init implements [tea.Model].\nfunc (m model) Init() tea.Cmd {\n\tpanic(\"unimplemented\")\n}\n\n"
+   }
+  ],
+  "kind": "mutation",
+  "mutation": {
+   "end": [
+    33,
+    13
+   ],
+   "id": "M2",
+   "offsets": [
+    471,
+    476
+   ],
+   "sha": "8ac6a33e84a56924",
+   "start": [
+    33,
+    8
+   ],
+   "text": "moddel",
+   "what": "misspell 'model' as 'moddel' (duplicate a middle character)"
+  },
+  "n_fix_ops": 1,
+  "path": "examples/http/main.go",
+  "post_errors": 1,
+  "title": "Declare missing methods of tea.Model",
+  "via": "resolve"
+ },
+ "shape": "diagnostics:extra:UndeclaredName",
+ "signature": "gopls|r4_edits|diagnostics:extra:UndeclaredName",
+ "expected": [],
+ "actual": [
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "UndeclaredName",
+   "compiler",
+   "undefined: moddel"
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "quick fix 'Declare missing methods of tea.Model' for InvalidIfaceAssign at examples/http/main.go:28:22 raises the error count in the edited files from 0 to 1 (seeded by M2: misspell 'model' as 'moddel' (duplicate a middle character); errors before the mutation 0, after the fix 1); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 52s",
+ "violation": {
+  "oracle": "r4_edits",
+  "server": "gopls-v0.23.0",
+  "project": "charmbracelet/bubbletea@657aaae216e3",
+  "key": {
+   "method": "diagnostics",
+   "path": "examples/http/main.go",
+   "line": 27,
+   "character": 21,
+   "extra": "M2:quickfix-errors:Declare missing methods of tea.Model"
+  },
+  "expected": [],
+  "actual": [
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "UndeclaredName",
+    "compiler",
+    "undefined: moddel"
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "examples/http/main.go"
+   },
+   {
+    "kind": "change",
+    "path": "examples/http/main.go",
+    "start": [
+     33,
+     8
+    ],
+    "end": [
+     33,
+     13
+    ],
+    "text": "moddel"
+   },
+   {
+    "kind": "change",
+    "path": "examples/http/main.go",
+    "start": [
+     20,
+     0
+    ],
+    "end": [
+     20,
+     0
+    ],
+    "text": "// Init implements [tea.Model].\nfunc (m model) Init() tea.Cmd {\n\tpanic(\"unimplemented\")\n}\n\n"
+   }
+  ],
+  "detail": "{\"case\": {\"action_kind\": \"quickfix\", \"base_errors\": 0, \"check\": \"errors\", \"diag\": {\"code\": \"InvalidIfaceAssign\", \"message\": \"cannot use model{} (value of struct type model) as tea.Model value in argument to tea.NewProgram: model does not implement tea.Model (missing method Init)\", \"range\": {\"end\": {\"character\": 28, \"line\": 27}, \"start\": {\"character\": 21, \"line\": 27}}, \"severity\": 1}, \"fix_introduced_errors\": [], \"fix_ops\": [{\"end\": [20, 0], \"kind\": \"change\", \"path\": \"examples/http/main.go\", \"start\": [20, 0], \"text\": \"// Init implements [tea.Model].\\nfunc (m model) Init() tea.Cmd {\\n\\tpanic(\\\"unimplemented\\\")\\n}\\n\\n\"}], \"kind\": \"mutation\", \"mutation\": {\"end\": [33, 13], \"id\": \"M2\", \"offsets\": [471, 476], \"sha\": \"8ac6a33e84a56924\", \"start\": [33, 8], \"text\": \"moddel\", \"what\": \"misspell 'model' as 'moddel' (duplicate a middle character)\"}, \"n_fix_ops\": 1, \"path\": \"examples/http/main.go\", \"post_errors\": 1, \"title\": \"Declare missing methods of tea.Model\", \"via\": \"resolve\"}, \"note\": \"quick fix 'Declare missing methods of tea.Model' for InvalidIfaceAssign at examples/http/main.go:28:22 raises the error count in the edited files from 0 to 1 (seeded by M2: misspell 'model' as 'moddel' (duplicate a middle character); errors before the mutation 0, after the fix 1); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 52s\", \"shape\": \"diagnostics:extra:UndeclaredName\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "gopls|r4_edits|diagnostics:extra:UndeclaredName",
+  "run_id": "4e55ff9e6249"
+ },
+ "replay_logs": [
+  "logs/gopls-v0.23.0-tr12380c-r4-replay-baseline-20260925-160417-cb05fa.jsonl.gz",
+  "logs/gopls-v0.23.0-tr12380c-r4-replay-case-20260925-160408-12b58d.jsonl.gz",
+  "logs/gopls-v0.23.0-tr12380c-r4-replay-control-20260925-160421-7d498b.jsonl.gz"
+ ],
+ "project_files": {},
+ "group": "gopls-r4-diagnostics-extra-undeclaredname-mutation-m2-12380c",
+ "reduced": true
+}

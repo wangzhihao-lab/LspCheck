@@ -1,0 +1,92 @@
+{
+ "queries": [
+  "\"pull diagnostics\" in:title repo:rust-lang/rust-analyzer is:issue",
+  "diagnostics missing repo:rust-lang/rust-analyzer is:issue",
+  "diagnostics \"pull diagnostics\" repo:rust-lang/rust-analyzer is:issue",
+  "diagnostics inconsistent repo:rust-lang/rust-analyzer is:issue"
+ ],
+ "matches": [
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 18375,
+   "title": "Implement the LSP diagnostics pull model",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/18375",
+   "state": "closed",
+   "created": "2024-10-23",
+   "comments": 0,
+   "query": "\"pull diagnostics\" in:title repo:rust-lang/rust-analyzer is:issue"
+  },
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 23383,
+   "title": "False negative: missing match arm when constant in trait",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/23383",
+   "state": "open",
+   "created": "2026-09-17",
+   "comments": 0,
+   "query": "diagnostics missing repo:rust-lang/rust-analyzer is:issue"
+  },
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 23326,
+   "title": "Missing \"Run Doctest\" CodeLens for trait method doctests",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/23326",
+   "state": "open",
+   "created": "2026-09-09",
+   "comments": 0,
+   "query": "diagnostics missing repo:rust-lang/rust-analyzer is:issue"
+  },
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 22140,
+   "title": "Address FIXMEs for adding diagnostics",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/22140",
+   "state": "open",
+   "created": "2026-04-22",
+   "comments": 38,
+   "query": "diagnostics missing repo:rust-lang/rust-analyzer is:issue"
+  },
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 23193,
+   "title": "FP `expected &&&u32, found &&&&&&&&&&&&&&&&&&&&&&&&&i32`",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/23193",
+   "state": "open",
+   "created": "2026-08-19",
+   "comments": 5,
+   "query": "diagnostics missing repo:rust-lang/rust-analyzer is:issue"
+  },
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 22402,
+   "title": "Missing type inference with diesel",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/22402",
+   "state": "open",
+   "created": "2026-05-18",
+   "comments": 9,
+   "query": "diagnostics missing repo:rust-lang/rust-analyzer is:issue"
+  },
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 18709,
+   "title": "rust-analyzer didn't return warning/hint diagnostics on `textDocument/diagnostic`",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/18709",
+   "state": "open",
+   "created": "2024-12-18",
+   "comments": 11,
+   "query": "diagnostics \"pull diagnostics\" repo:rust-lang/rust-analyzer is:issue"
+  },
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 18732,
+   "title": "stale diagnostic after panic",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/18732",
+   "state": "open",
+   "created": "2024-12-21",
+   "comments": 6,
+   "query": "diagnostics \"pull diagnostics\" repo:rust-lang/rust-analyzer is:issue"
+  }
+ ],
+ "notes": [],
+ "authenticated": true
+}

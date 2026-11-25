@@ -1,0 +1,18 @@
+2026-11-18 15:31:39,212 INFO campaign_run run d943bb79c7d7: r1_history on ts6 6.0.3, mifi/lossless-cut@85cb95f6aeae seed 2 settled, targets ['src/main/progress.test.ts', 'src/renderer/src/TopMenu.tsx', 'src/renderer/src/hooks/useUserSettings.ts']
+2026-11-18 15:44:06,789 INFO campaign_run run d943bb79c7d7: 8 candidate(s) in 748s; confirming
+2026-11-18 15:45:39,828 INFO flake replay 1/3 of ts6|r1_history|completion:lost: settled=True control_stable=True reproduced=True (93.0s)
+2026-11-18 15:47:07,671 INFO flake replay 2/3 of ts6|r1_history|completion:lost: settled=True control_stable=True reproduced=True (87.8s)
+2026-11-18 15:48:34,119 INFO flake replay 3/3 of ts6|r1_history|completion:lost: settled=True control_stable=True reproduced=True (86.4s)
+2026-11-18 15:50:02,024 INFO flake replay 1/3 of ts6|r1_history|definition:lost: settled=True control_stable=True reproduced=True (87.9s)
+2026-11-18 15:51:32,215 INFO flake replay 2/3 of ts6|r1_history|definition:lost: settled=True control_stable=True reproduced=True (90.2s)
+2026-11-18 15:53:15,614 INFO flake replay 3/3 of ts6|r1_history|definition:lost: settled=True control_stable=True reproduced=True (103.4s)
+2026-11-18 15:55:32,550 INFO flake replay 1/3 of ts6|r1_history|diagnostics:extra:2307,7006: settled=True control_stable=True reproduced=True (136.9s)
+2026-11-18 15:57:11,991 INFO flake replay 2/3 of ts6|r1_history|diagnostics:extra:2307,7006: settled=True control_stable=True reproduced=True (99.4s)
+2026-11-18 15:58:54,142 INFO flake replay 3/3 of ts6|r1_history|diagnostics:extra:2307,7006: settled=True control_stable=True reproduced=True (102.2s)
+2026-11-18 16:00:40,572 INFO flake replay 1/3 of ts6|r1_history|semanticTokens:changed: settled=True control_stable=True reproduced=True (106.4s)
+2026-11-18 16:02:49,017 INFO flake replay 2/3 of ts6|r1_history|semanticTokens:changed: settled=True control_stable=True reproduced=True (128.4s)
+2026-11-18 16:04:22,890 INFO flake replay 3/3 of ts6|r1_history|semanticTokens:changed: settled=True control_stable=True reproduced=True (93.9s)
+2026-11-18 16:06:00,290 INFO flake replay 1/3 of ts6|r1_history|typeDefinition:lost: settled=True control_stable=True reproduced=True (97.4s)
+2026-11-18 16:07:27,016 INFO flake replay 2/3 of ts6|r1_history|typeDefinition:lost: settled=True control_stable=True reproduced=True (86.7s)
+2026-11-18 16:08:55,560 INFO flake replay 3/3 of ts6|r1_history|typeDefinition:lost: settled=True control_stable=True reproduced=True (88.5s)
+2026-11-18 16:08:58,077 INFO campaign_run run d943bb79c7d7 finished: ok, 5 confirmed of 8 candidate(s), 2239s

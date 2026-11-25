@@ -1,0 +1,15 @@
+2026-09-25 00:43:44,728 INFO campaign_run run 3e4577624555: r1_history on pyright 1.1.380, pyright-8946 seed 2 settled, targets ['main.py']
+2026-09-25 00:47:22,059 INFO campaign_run run 3e4577624555: 16 candidate(s) in 217s; confirming
+2026-09-25 00:47:41,648 INFO flake replay 1/3 of pyright|r1_history|typeDefinition:result->error:-32603: settled=True control_stable=True reproduced=True (19.6s)
+2026-09-25 00:48:01,463 INFO flake replay 2/3 of pyright|r1_history|typeDefinition:result->error:-32603: settled=True control_stable=True reproduced=True (19.8s)
+2026-09-25 00:48:21,304 INFO flake replay 3/3 of pyright|r1_history|typeDefinition:result->error:-32603: settled=True control_stable=True reproduced=True (19.8s)
+2026-09-25 00:48:59,488 INFO flake replay 1/3 of pyright|r1_history|hover:text: settled=True control_stable=True reproduced=True (38.2s)
+2026-09-25 00:49:37,683 INFO flake replay 2/3 of pyright|r1_history|hover:text: settled=True control_stable=True reproduced=True (38.2s)
+2026-09-25 00:50:16,045 INFO flake replay 3/3 of pyright|r1_history|hover:text: settled=True control_stable=True reproduced=True (38.4s)
+2026-09-25 00:50:54,333 INFO flake replay 1/3 of pyright|r1_history|signatureHelp:lost: settled=True control_stable=True reproduced=True (38.3s)
+2026-09-25 00:51:32,493 INFO flake replay 2/3 of pyright|r1_history|signatureHelp:lost: settled=True control_stable=True reproduced=True (38.2s)
+2026-09-25 00:52:11,254 INFO flake replay 3/3 of pyright|r1_history|signatureHelp:lost: settled=True control_stable=True reproduced=True (38.8s)
+2026-09-25 00:52:49,893 INFO flake replay 1/3 of pyright|r1_history|typeDefinition:changed: settled=True control_stable=True reproduced=True (38.6s)
+2026-09-25 00:53:28,400 INFO flake replay 2/3 of pyright|r1_history|typeDefinition:changed: settled=True control_stable=True reproduced=True (38.5s)
+2026-09-25 00:54:06,657 INFO flake replay 3/3 of pyright|r1_history|typeDefinition:changed: settled=True control_stable=True reproduced=True (38.3s)
+2026-09-25 00:54:06,803 INFO campaign_run run 3e4577624555 finished: ok, 4 confirmed of 16 candidate(s), 622s

@@ -1,0 +1,3 @@
+{
+ "cmd/ssh.go": "package cmd\n\nimport (\n\t\"github.com/abiosoft/colima/cmd/root\"\n\t\"github.com/spf13/cobra\"\n)\n\n// sshCmd represents the ssh command\nvar sshCmd = &cobra.Command{\n\tUse:     \"ssh\",\n\tAliases: []string{\"exec\", \"x\"},\n\tShort:   \"SSH into the VM\",\n\tLong: `SSH into the VM.\n\nAppending additional command runs the command instead.\ne.g. 'colima ssh -- htop' will run htop.\n\nIt is recommended to specify '--' to differentiate from colima flags.`,\n\tRunE: func(cmd *cobra.Command, args []string) error {\n\t\treturn newApp().SSH(args...)\n\t},\n}\n\nfunc init() {\n\troot.Cmd().AddCommand(sshCmd)\n}\n"
+}

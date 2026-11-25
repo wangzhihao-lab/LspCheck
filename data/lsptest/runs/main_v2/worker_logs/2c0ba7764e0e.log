@@ -1,0 +1,6 @@
+2026-11-18 16:35:03,258 INFO campaign_run run 2c0ba7764e0e: r1_history on gopls v0.23.0, beego/beego@939cfde380bb seed 3 settled, targets ['client/orm/internal/models/models_utils_test.go', 'server/web/context/param/methodparams.go', 'server/web/mock/session.go']
+2026-11-18 18:21:49,197 INFO campaign_run run 2c0ba7764e0e: 4 candidate(s) in 568s; confirming
+2026-11-18 18:22:25,872 INFO flake replay 1/3 of gopls|r1_history|completion:missing: settled=True control_stable=True reproduced=False (36.7s)
+2026-11-18 18:23:02,576 INFO flake replay 2/3 of gopls|r1_history|completion:missing: settled=True control_stable=True reproduced=True (36.7s)
+2026-11-18 18:23:40,693 INFO flake replay 3/3 of gopls|r1_history|completion:missing: settled=True control_stable=True reproduced=True (38.1s)
+2026-11-18 18:23:40,696 INFO campaign_run run 2c0ba7764e0e finished: ok, 0 confirmed of 4 candidate(s), 679s

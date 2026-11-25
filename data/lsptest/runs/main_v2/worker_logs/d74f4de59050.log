@@ -1,0 +1,6 @@
+2026-11-18 13:49:28,948 INFO campaign_run run d74f4de59050: r4_edits on rust-analyzer 2026-09-21, tokio-rs/tokio@3930bd182cb1 seed 2 settled, targets ['examples/echo-tcp.rs', 'tokio/src/net/tcp/split.rs', 'tokio/tests/signal_realtime.rs']
+2026-11-18 13:51:07,220 INFO campaign_run run d74f4de59050: 2 candidate(s) in 98s; confirming
+2026-11-18 13:51:54,365 INFO flake replay 1/3 of rust-analyzer|r4_edits|completionInsert:gained: settled=True control_stable=True reproduced=True (47.1s)
+2026-11-18 13:52:50,820 INFO flake replay 2/3 of rust-analyzer|r4_edits|completionInsert:gained: settled=True control_stable=True reproduced=True (56.5s)
+2026-11-18 13:53:49,152 INFO flake replay 3/3 of rust-analyzer|r4_edits|completionInsert:gained: settled=True control_stable=True reproduced=True (58.3s)
+2026-11-18 13:53:49,159 INFO campaign_run run d74f4de59050 finished: ok, 1 confirmed of 2 candidate(s), 260s

@@ -1,0 +1,3 @@
+2026-09-24 13:12:52,227 INFO campaign_run run 82b0bf746e0f: r1_history on gopls v0.23.0, router-for-me/CLIProxyAPI@673131f57484 seed 3 settled, targets ['internal/access/reconcile.go', 'internal/runtime/executor/antigravity_executor_credits.go', 'sdk/api/handlers/gemini/interactions_handlers.go']
+2026-09-24 13:21:40,241 INFO campaign_run run 82b0bf746e0f: 0 candidate(s) in 528s; confirming
+2026-09-24 13:21:40,242 INFO campaign_run run 82b0bf746e0f finished: ok, 0 confirmed of 0 candidate(s), 528s

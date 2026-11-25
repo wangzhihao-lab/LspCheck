@@ -1,0 +1,3 @@
+2026-11-18 14:47:50,094 INFO campaign_run run 700cb1984d1e: r5_transforms on pyright 1.1.414, usestrix/strix@56f7d45388e6 seed 2 settled, targets ['strix/interface/tui/backend/live_view.py', 'strix/report/state.py', 'tests/test_finish_coverage_gate.py']
+2026-11-18 14:48:41,603 INFO campaign_run run 700cb1984d1e: 0 candidate(s) in 52s; confirming
+2026-11-18 14:48:41,603 INFO campaign_run run 700cb1984d1e finished: ok, 0 confirmed of 0 candidate(s), 52s

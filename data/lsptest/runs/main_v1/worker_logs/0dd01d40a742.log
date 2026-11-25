@@ -1,0 +1,6 @@
+2026-09-24 09:06:06,839 INFO campaign_run run 0dd01d40a742: r1_history on gopls v0.23.0, spf13/cobra@adbc8813901b seed 1 race200, targets ['args_test.go', 'doc/yaml_docs.go', 'flag_groups.go']
+2026-09-24 09:08:31,097 INFO campaign_run run 0dd01d40a742: 1 candidate(s) in 144s; confirming
+2026-09-24 09:08:50,388 INFO flake replay 1/3 of gopls|r1_history|completion:missing: settled=True control_stable=True reproduced=False (19.3s)
+2026-09-24 09:09:08,947 INFO flake replay 2/3 of gopls|r1_history|completion:missing: settled=True control_stable=True reproduced=False (18.6s)
+2026-09-24 09:09:26,159 INFO flake replay 3/3 of gopls|r1_history|completion:missing: settled=True control_stable=True reproduced=False (17.2s)
+2026-09-24 09:09:26,163 INFO campaign_run run 0dd01d40a742 finished: ok, 0 confirmed of 1 candidate(s), 199s

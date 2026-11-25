@@ -1,0 +1,24 @@
+{
+ "runs": 3,
+ "scope": "build",
+ "capped": [],
+ "counts": {
+  "gopls|r1_history|references:extra@gopls-60435@v0.12.0": 1,
+  "gopls|r1_history|references:extra@gopls-60435@v0.12.1": 1,
+  "gopls|r3_routes|definitionConsistency:changed@gopls-60435@v0.12.0": 2,
+  "gopls|r3_routes|definitionConsistency:changed@gopls-60435@v0.12.1": 2,
+  "gopls|r3_routes|highlightVsReferences:extra@gopls-60435@v0.12.0": 2,
+  "rust-analyzer|r0_crash|codeAction:result->error:-32603@rust-analyzer-21173@2025-12-08": 2,
+  "rust-analyzer|r0_crash|diagnostics:result->error:-32603@rust-analyzer-21173@2025-12-08": 2,
+  "rust-analyzer|r2_handles|completionResolve:changed@rust-analyzer-21173@2025-12-08": 1,
+  "rust-analyzer|r2_handles|completionResolve:changed@rust-analyzer-21173@2025-12-15": 1,
+  "rust-analyzer|r3_routes|definitionConsistency:changed@rust-analyzer-21173@2025-12-08": 1,
+  "rust-analyzer|r3_routes|definitionConsistency:changed@rust-analyzer-21173@2025-12-15": 1,
+  "rust-analyzer|r3_routes|diagnostics:error:-32603->result@rust-analyzer-21173@2025-12-08": 2,
+  "tsserver|r4_edits|diagnostics:changed:1005,1109,1308@tsserver-46466@4.4.4+tsls0.7.1": 2,
+  "tsserver|r4_edits|diagnostics:extra:2304@tsserver-46466@4.4.4+tsls0.7.1": 2,
+  "tsserver|r4_edits|diagnostics:extra:2304@tsserver-46466@4.5.2+tsls0.7.1": 2,
+  "tsserver|r4_edits|diagnostics:extra:2552@tsserver-46466@4.4.4+tsls0.7.1": 2,
+  "tsserver|r4_edits|diagnostics:extra:2552@tsserver-46466@4.5.2+tsls0.7.1": 2
+ }
+}

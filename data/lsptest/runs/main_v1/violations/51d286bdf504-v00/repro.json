@@ -1,0 +1,581 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "51d286bdf504-v00",
+ "run_id": "51d286bdf504",
+ "oracle": "r1_history",
+ "server": {
+  "kind": "ts6",
+  "version": "6.0.3"
+ },
+ "project": {
+  "name": "upstash/context7@6477e43e31d2",
+  "source": "corpus",
+  "ref": "temp/corpus/upstash__context7@6477e43e31d2",
+  "commit": "6477e43e31d27a5c1bc044506e1c14de15f8a110",
+  "language": "typescript"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "race0",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "packages/cli/src/__tests__/command-auth-wiring.test.ts",
+    "positions": [
+     [
+      1,
+      21
+     ],
+     [
+      17,
+      72
+     ],
+     [
+      18,
+      23
+     ],
+     [
+      18,
+      64
+     ],
+     [
+      19,
+      7
+     ],
+     [
+      30,
+      5
+     ],
+     [
+      38,
+      12
+     ],
+     [
+      39,
+      15
+     ],
+     [
+      51,
+      5
+     ],
+     [
+      64,
+      16
+     ],
+     [
+      67,
+      14
+     ],
+     [
+      101,
+      40
+     ]
+    ],
+    "ends": [
+     [
+      1,
+      23
+     ],
+     [
+      17,
+      74
+     ],
+     [
+      18,
+      25
+     ],
+     [
+      18,
+      66
+     ],
+     [
+      19,
+      12
+     ],
+     [
+      30,
+      7
+     ],
+     [
+      38,
+      13
+     ],
+     [
+      39,
+      16
+     ],
+     [
+      51,
+      10
+     ],
+     [
+      64,
+      18
+     ],
+     [
+      67,
+      18
+     ],
+     [
+      101,
+      50
+     ]
+    ],
+    "names": [
+     "from",
+     "args",
+     "args",
+     "args",
+     "getBaseUrl",
+     "mock",
+     "fn",
+     "fn",
+     "beforeEach",
+     "run",
+     "program",
+     "toHaveBeenCalledWith"
+    ]
+   },
+   {
+    "path": "packages/sdk/src/client.ts",
+    "positions": [
+     [
+      17,
+      2
+     ],
+     [
+      30,
+      11
+     ],
+     [
+      36,
+      44
+     ],
+     [
+      38,
+      46
+     ],
+     [
+      42,
+      14
+     ],
+     [
+      81,
+      9
+     ],
+     [
+      97,
+      34
+     ],
+     [
+      98,
+      14
+     ],
+     [
+      147,
+      79
+     ],
+     [
+      179,
+      18
+     ],
+     [
+      188,
+      74
+     ],
+     [
+      190,
+      37
+     ]
+    ],
+    "ends": [
+     [
+      17,
+      4
+     ],
+     [
+      30,
+      13
+     ],
+     [
+      36,
+      47
+     ],
+     [
+      38,
+      51
+     ],
+     [
+      42,
+      19
+     ],
+     [
+      81,
+      15
+     ],
+     [
+      97,
+      44
+     ],
+     [
+      98,
+      18
+     ],
+     [
+      147,
+      83
+     ],
+     [
+      179,
+      25
+     ],
+     [
+      188,
+      77
+     ],
+     [
+      190,
+      40
+     ]
+    ],
+    "names": [
+     "type",
+     "from",
+     "config",
+     "credential",
+     "httpClient",
+     "libraryName",
+     "SearchLibraryCommand",
+     "command",
+     "Promise",
+     "Context7Error",
+     "Record",
+     "filter"
+    ]
+   },
+   {
+    "path": "packages/sdk/src/commands/command.ts",
+    "positions": [
+     [
+      0,
+      15
+     ],
+     [
+      1,
+      35
+     ],
+     [
+      5,
+      20
+     ],
+     [
+      10,
+      21
+     ],
+     [
+      13,
+      7
+     ],
+     [
+      13,
+      30
+     ],
+     [
+      14,
+      22
+     ],
+     [
+      15,
+      13
+     ],
+     [
+      25,
+      38
+     ],
+     [
+      25,
+      47
+     ],
+     [
+      26,
+      15
+     ],
+     [
+      26,
+      32
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      22
+     ],
+     [
+      1,
+      40
+     ],
+     [
+      5,
+      28
+     ],
+     [
+      10,
+      25
+     ],
+     [
+      13,
+      13
+     ],
+     [
+      13,
+      37
+     ],
+     [
+      14,
+      26
+     ],
+     [
+      15,
+      17
+     ],
+     [
+      25,
+      41
+     ],
+     [
+      25,
+      52
+     ],
+     [
+      26,
+      18
+     ],
+     [
+      26,
+      35
+     ]
+    ],
+    "names": [
+     "Context7Error",
+     "Requester",
+     "EndpointVariants",
+     "request",
+     "constructor",
+     "CommandRequest",
+     "request",
+     "endpoint",
+     "client",
+     "Requester",
+     "result",
+     "client"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "hover",
+  "path": "packages/sdk/src/commands/command.ts",
+  "line": 13,
+  "character": 30,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "packages/cli/src/__tests__/command-auth-wiring.test.ts"
+  },
+  {
+   "kind": "open",
+   "path": "packages/sdk/src/client.ts"
+  },
+  {
+   "kind": "open",
+   "path": "packages/sdk/src/commands/command.ts"
+  },
+  {
+   "kind": "change",
+   "path": "packages/sdk/src/client.ts",
+   "start": [
+    116,
+    0
+   ],
+   "end": [
+    117,
+    0
+   ]
+  },
+  {
+   "kind": "save",
+   "path": "packages/sdk/src/client.ts"
+  },
+  {
+   "kind": "change",
+   "path": "packages/sdk/src/client.ts",
+   "start": [
+    116,
+    0
+   ],
+   "end": [
+    116,
+    0
+   ],
+   "text": "    options: GetContextOpti"
+  },
+  {
+   "kind": "change",
+   "path": "packages/sdk/src/client.ts",
+   "start": [
+    116,
+    27
+   ],
+   "end": [
+    116,
+    27
+   ],
+   "text": "ons & { type: \"txt\" }\n"
+  },
+  {
+   "kind": "save",
+   "path": "packages/sdk/src/client.ts"
+  }
+ ],
+ "case": {
+  "chain_step": 0,
+  "families": [],
+  "family": "H2",
+  "history_index": 5,
+  "history_seed": 1006,
+  "mode": "fresh",
+  "note": "packages/sdk/src/client.ts: delete line 116, retype it in 2 chunk(s)",
+  "seed": 1,
+  "timing": "race0"
+ },
+ "shape": "hover:text",
+ "signature": "ts6|r1_history|hover:text",
+ "expected": [
+  "type CommandRequest = { cache?: CacheSetting | undefined; body?: unknown; method?: \"GET\" | \"POST\" | undefined; query?: Record<string, string | number | boolean | readonly (string | number | boolean)[] | undefined> | undefined; signal?: AbortSignal | undefined; timeout?: number | false | undefined; }",
+  [
+   13,
+   23,
+   13,
+   37
+  ]
+ ],
+ "actual": [
+  "type CommandRequest = { body?: unknown; method?: \"GET\" | \"POST\" | undefined; query?: Record<string, string | number | boolean | readonly (string | number | boolean)[] | undefined> | undefined; signal?: AbortSignal | undefined; timeout?: number | false | undefined; cache?: CacheSetting | undefined; }",
+  [
+   13,
+   23,
+   13,
+   37
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "H2: packages/sdk/src/client.ts: delete line 116, retype it in 2 chunk(s); flake 3/3 [r1:SCR r2:SCR r3:SCR] in 259s",
+ "violation": {
+  "oracle": "r1_history",
+  "server": "ts6-6.0.3",
+  "project": "upstash/context7@6477e43e31d2",
+  "key": {
+   "method": "hover",
+   "path": "packages/sdk/src/commands/command.ts",
+   "line": 13,
+   "character": 30,
+   "extra": ""
+  },
+  "expected": [
+   "type CommandRequest = { cache?: CacheSetting | undefined; body?: unknown; method?: \"GET\" | \"POST\" | undefined; query?: Record<string, string | number | boolean | readonly (string | number | boolean)[] | undefined> | undefined; signal?: AbortSignal | undefined; timeout?: number | false | undefined; }",
+   [
+    13,
+    23,
+    13,
+    37
+   ]
+  ],
+  "actual": [
+   "type CommandRequest = { body?: unknown; method?: \"GET\" | \"POST\" | undefined; query?: Record<string, string | number | boolean | readonly (string | number | boolean)[] | undefined> | undefined; signal?: AbortSignal | undefined; timeout?: number | false | undefined; cache?: CacheSetting | undefined; }",
+   [
+    13,
+    23,
+    13,
+    37
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "packages/cli/src/__tests__/command-auth-wiring.test.ts"
+   },
+   {
+    "kind": "open",
+    "path": "packages/sdk/src/client.ts"
+   },
+   {
+    "kind": "open",
+    "path": "packages/sdk/src/commands/command.ts"
+   },
+   {
+    "kind": "change",
+    "path": "packages/sdk/src/client.ts",
+    "start": [
+     116,
+     0
+    ],
+    "end": [
+     117,
+     0
+    ]
+   },
+   {
+    "kind": "save",
+    "path": "packages/sdk/src/client.ts"
+   },
+   {
+    "kind": "change",
+    "path": "packages/sdk/src/client.ts",
+    "start": [
+     116,
+     0
+    ],
+    "end": [
+     116,
+     0
+    ],
+    "text": "    options: GetContextOpti"
+   },
+   {
+    "kind": "change",
+    "path": "packages/sdk/src/client.ts",
+    "start": [
+     116,
+     27
+    ],
+    "end": [
+     116,
+     27
+    ],
+    "text": "ons & { type: \"txt\" }\n"
+   },
+   {
+    "kind": "save",
+    "path": "packages/sdk/src/client.ts"
+   }
+  ],
+  "detail": "{\"case\": {\"chain_step\": 0, \"families\": [], \"family\": \"H2\", \"history_index\": 5, \"history_seed\": 1006, \"mode\": \"fresh\", \"note\": \"packages/sdk/src/client.ts: delete line 116, retype it in 2 chunk(s)\", \"seed\": 1, \"timing\": \"race0\"}, \"note\": \"H2: packages/sdk/src/client.ts: delete line 116, retype it in 2 chunk(s); flake 3/3 [r1:SCR r2:SCR r3:SCR] in 259s\", \"shape\": \"hover:text\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "ts6|r1_history|hover:text",
+  "run_id": "51d286bdf504"
+ },
+ "replay_logs": [
+  "logs/ts6-6.0.3-51d286bdf504-replay-baseline-20260924-073211-b216f4.jsonl.gz",
+  "logs/ts6-6.0.3-51d286bdf504-replay-control-20260924-073211-38d357.jsonl.gz",
+  "logs/ts6-6.0.3-51d286bdf504-replay-history-20260924-073255-b543bf.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

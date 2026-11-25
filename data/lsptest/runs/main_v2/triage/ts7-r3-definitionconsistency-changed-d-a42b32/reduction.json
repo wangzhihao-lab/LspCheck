@@ -1,0 +1,51 @@
+{
+ "vid": "2743534ec8dd-v01",
+ "ops_before": 0,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 0,
+ "cache_hits": 0,
+ "reduce_seconds": 0.0,
+ "budget_exhausted": false,
+ "probe_log": [],
+ "logs": [
+  "ts7-7.0.2-tra42b32-r3-replay-baseline-20261118-214609-29a754.jsonl.gz",
+  "ts7-7.0.2-tra42b32-r3-replay-control-20261118-214620-c52ca8.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [
+   [
+    "temp/lsp_servers/ts7-7.0.2/node_modules/@typescript/typescript-darwin-arm64/lib/lib.dom.d.ts",
+    13912,
+    8,
+    13912,
+    19
+   ],
+   [
+    "temp/lsp_servers/ts7-7.0.2/node_modules/@typescript/typescript-darwin-arm64/lib/lib.dom.d.ts",
+    13913,
+    8,
+    13913,
+    19
+   ]
+  ],
+  "actual": [
+   [
+    "temp/lsp_servers/ts7-7.0.2/node_modules/@typescript/typescript-darwin-arm64/lib/lib.dom.d.ts",
+    13225,
+    8,
+    13225,
+    19
+   ],
+   [
+    "temp/lsp_servers/ts7-7.0.2/node_modules/@typescript/typescript-darwin-arm64/lib/lib.dom.d.ts",
+    13226,
+    8,
+    13226,
+    19
+   ]
+  ]
+ },
+ "ops_after": 0,
+ "total_seconds": 88.0
+}

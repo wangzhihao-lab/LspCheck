@@ -1,0 +1,3 @@
+2026-09-24 00:11:49,673 INFO campaign_run run 83e1b1ccd921: r5_transforms on gopls v0.23.0, nektos/act@4f411281417e seed 2 settled, targets ['pkg/container/docker_volume.go', 'pkg/container/linux_container_environment_extensions_test.go', 'pkg/runner/action.go']
+2026-09-24 00:13:21,481 INFO campaign_run run 83e1b1ccd921: 0 candidate(s) in 92s; confirming
+2026-09-24 00:13:21,484 INFO campaign_run run 83e1b1ccd921 finished: ok, 0 confirmed of 0 candidate(s), 92s

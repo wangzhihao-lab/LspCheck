@@ -1,0 +1,13 @@
+{
+ "ws": "<path of a copy of the project without target/ and .git/>",
+ "refFile": "src/api/core/two_factor/duo.rs",
+ "refLine": 7,
+ "refChar": 12,
+ "file": "src/api/admin.rs",
+ "line": 288,
+ "char": 29,
+ "maxSeconds": 1200,
+ "pollMs": 5000,
+ "stablePolls": 12,
+ "out": "<output path>"
+}

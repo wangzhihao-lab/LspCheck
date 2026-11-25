@@ -1,0 +1,3 @@
+2026-09-24 07:27:41,239 INFO campaign_run run c18afd647fcb: r1_history on gopls v0.23.0, jesseduffield/lazydocker@7e7aadc2071d seed 1 race0, targets ['pkg/gui/focus.go', 'pkg/gui/menu_panel.go', 'pkg/log/log.go']
+2026-09-24 07:29:46,826 INFO campaign_run run c18afd647fcb: 0 candidate(s) in 126s; confirming
+2026-09-24 07:29:46,827 INFO campaign_run run c18afd647fcb finished: ok, 0 confirmed of 0 candidate(s), 126s

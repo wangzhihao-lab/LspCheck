@@ -1,0 +1,6 @@
+2026-11-18 14:18:34,436 INFO campaign_run run a1d24603cbb6: r1_history on ts6 6.0.3, hexojs/hexo@751e856691bf seed 2 settled, targets ['lib/hexo/scaffold.ts', 'test/fixtures/post_render.ts', 'test/scripts/tags/blockquote.ts']
+2026-11-18 14:28:11,964 INFO campaign_run run a1d24603cbb6: 48 candidate(s) in 578s; confirming
+2026-11-18 14:29:03,720 INFO flake replay 1/3 of ts6|r1_history|codeAction:extra: settled=True control_stable=True reproduced=True (51.8s)
+2026-11-18 14:29:54,770 INFO flake replay 2/3 of ts6|r1_history|codeAction:extra: settled=True control_stable=True reproduced=True (51.0s)
+2026-11-18 14:30:45,730 INFO flake replay 3/3 of ts6|r1_history|codeAction:extra: settled=True control_stable=True reproduced=True (51.0s)
+2026-11-18 14:30:45,849 INFO campaign_run run a1d24603cbb6 finished: ok, 1 confirmed of 48 candidate(s), 732s

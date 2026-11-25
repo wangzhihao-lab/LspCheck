@@ -1,0 +1,3 @@
+2026-09-24 12:13:34,572 INFO campaign_run run f935a23551cb: r1_history on rust-analyzer 2026-09-21, FuelLabs/fuels-rs@d9a250a51818 seed 3 settled, targets ['e2e/tests/configurables.rs', 'packages/fuels-core/src/types/checksum_address.rs', 'packages/fuels-macros/src/setup_program_test/parsing/validations.rs']
+2026-09-24 12:25:34,455 INFO campaign_run run f935a23551cb: 0 candidate(s) in 720s; confirming
+2026-09-24 12:25:34,457 INFO campaign_run run f935a23551cb finished: ok, 0 confirmed of 0 candidate(s), 720s

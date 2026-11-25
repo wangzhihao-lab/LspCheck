@@ -1,0 +1,42 @@
+{
+ "vid": "81b728f0bb1d-v00",
+ "ops_before": 3,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 2,
+ "cache_hits": 0,
+ "reduce_seconds": 12.675,
+ "budget_exhausted": false,
+ "probe_log": [
+  [
+   2,
+   false
+  ],
+  [
+   2,
+   false
+  ]
+ ],
+ "logs": [
+  "ts6-6.0.3-tr2b6bdb-r4-replay-baseline-20261119-030956-7306b0.jsonl.gz",
+  "ts6-6.0.3-tr2b6bdb-r4-replay-case-20261119-030934-a3e79b.jsonl.gz",
+  "ts6-6.0.3-tr2b6bdb-r4-replay-control-20261119-031015-43ccfb.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [],
+  "actual": [
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2353",
+    "typescript",
+    "Object literal may only specify known properties, and 'type' does not exist in type 'Command'."
+   ]
+  ]
+ },
+ "ops_after": 3,
+ "total_seconds": 239.5
+}

@@ -1,0 +1,120 @@
+{
+ "format": 1,
+ "campaign": "bench_v1",
+ "vid": "acfab65143bf-v00",
+ "run_id": "acfab65143bf",
+ "oracle": "r4_edits",
+ "server": {
+  "kind": "tsserver",
+  "version": "3.5.3+tsls0.4.0"
+ },
+ "project": {
+  "name": "tsserver-32068",
+  "source": "dir",
+  "ref": "data/lsp_bench/cases/tsserver-32068/project",
+  "commit": "",
+  "language": "typescript"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 120.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "index.ts",
+    "positions": [
+     [
+      0,
+      13
+     ],
+     [
+      0,
+      27
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      15
+     ],
+     [
+      0,
+      29
+     ]
+    ],
+    "names": [
+     "foo",
+     "bar"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "formatting",
+  "path": "index.ts",
+  "line": -1,
+  "character": -1,
+  "extra": ""
+ },
+ "ops": [],
+ "case": {
+  "kind": "format",
+  "options": {
+   "insertSpaces": true,
+   "tabSize": 4
+  },
+  "path": "index.ts"
+ },
+ "shape": "formatting:gained",
+ "signature": "tsserver|r4_edits|formatting:gained",
+ "expected": [],
+ "actual": [
+  "index.ts",
+  0,
+  18,
+  0,
+  25,
+  " number > ",
+  10
+ ],
+ "reproduced": "3/3",
+ "note": "formatting index.ts twice: the second formatting still edits ['index.ts', 0, 18, 0, 25]; confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 38s",
+ "violation": {
+  "oracle": "r4_edits",
+  "server": "tsserver-3.5.3+tsls0.4.0",
+  "project": "tsserver-32068",
+  "key": {
+   "method": "formatting",
+   "path": "index.ts",
+   "line": -1,
+   "character": -1,
+   "extra": ""
+  },
+  "expected": [],
+  "actual": [
+   "index.ts",
+   0,
+   18,
+   0,
+   25,
+   " number > ",
+   10
+  ],
+  "ops": [],
+  "detail": "{\"case\": {\"kind\": \"format\", \"options\": {\"insertSpaces\": true, \"tabSize\": 4}, \"path\": \"index.ts\"}, \"note\": \"formatting index.ts twice: the second formatting still edits ['index.ts', 0, 18, 0, 25]; confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 38s\", \"shape\": \"formatting:gained\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "tsserver|r4_edits|formatting:gained",
+  "run_id": "acfab65143bf"
+ },
+ "replay_logs": [
+  "logs/tsserver-3.5.3+tsls0.4.0-acfab65143bf-r4-replay-baseline-20260924-234630-9b019e.jsonl.gz",
+  "logs/tsserver-3.5.3+tsls0.4.0-acfab65143bf-r4-replay-case-20260924-234623-f918fc.jsonl.gz",
+  "logs/tsserver-3.5.3+tsls0.4.0-acfab65143bf-r4-replay-control-20260924-234633-d62404.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

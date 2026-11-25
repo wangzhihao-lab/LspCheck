@@ -1,0 +1,96 @@
+{
+ "queries": [
+  "references in:title repo:typescript-language-server/typescript-language-server is:issue",
+  "highlight unexpected repo:typescript-language-server/typescript-language-server is:issue",
+  "highlight references repo:typescript-language-server/typescript-language-server is:issue",
+  "highlight inconsistent repo:typescript-language-server/typescript-language-server is:issue",
+  "references in:title repo:microsoft/TypeScript is:issue",
+  "highlight unexpected repo:microsoft/TypeScript is:issue",
+  "highlight references repo:microsoft/TypeScript is:issue",
+  "highlight inconsistent repo:microsoft/TypeScript is:issue"
+ ],
+ "matches": [
+  {
+   "repo": "typescript-language-server/typescript-language-server",
+   "number": 961,
+   "title": "Find all references does not find import(fileName) of the given file",
+   "url": "https://github.com/typescript-language-server/typescript-language-server/issues/961",
+   "state": "closed",
+   "created": "2025-07-16",
+   "comments": 2,
+   "query": "references in:title repo:typescript-language-server/typescript-language-server is:issue"
+  },
+  {
+   "repo": "typescript-language-server/typescript-language-server",
+   "number": 754,
+   "title": "Not able to find references to certain consts",
+   "url": "https://github.com/typescript-language-server/typescript-language-server/issues/754",
+   "state": "closed",
+   "created": "2023-09-05",
+   "comments": 2,
+   "query": "references in:title repo:typescript-language-server/typescript-language-server is:issue"
+  },
+  {
+   "repo": "typescript-language-server/typescript-language-server",
+   "number": 438,
+   "title": "By default, ignores some undefined references like: onsole.lg()",
+   "url": "https://github.com/typescript-language-server/typescript-language-server/issues/438",
+   "state": "closed",
+   "created": "2022-04-20",
+   "comments": 2,
+   "query": "references in:title repo:typescript-language-server/typescript-language-server is:issue"
+  },
+  {
+   "repo": "typescript-language-server/typescript-language-server",
+   "number": 206,
+   "title": "Method ‘textDocument/references’ does not respect includeDeclarations option",
+   "url": "https://github.com/typescript-language-server/typescript-language-server/issues/206",
+   "state": "closed",
+   "created": "2021-04-28",
+   "comments": 9,
+   "query": "references in:title repo:typescript-language-server/typescript-language-server is:issue"
+  },
+  {
+   "repo": "typescript-language-server/typescript-language-server",
+   "number": 54,
+   "title": "project references support",
+   "url": "https://github.com/typescript-language-server/typescript-language-server/issues/54",
+   "state": "closed",
+   "created": "2018-08-15",
+   "comments": 2,
+   "query": "references in:title repo:typescript-language-server/typescript-language-server is:issue"
+  },
+  {
+   "repo": "typescript-language-server/typescript-language-server",
+   "number": 700,
+   "title": "Dont find syntax error",
+   "url": "https://github.com/typescript-language-server/typescript-language-server/issues/700",
+   "state": "closed",
+   "created": "2023-03-09",
+   "comments": 1,
+   "query": "highlight unexpected repo:typescript-language-server/typescript-language-server is:issue"
+  },
+  {
+   "repo": "typescript-language-server/typescript-language-server",
+   "number": 724,
+   "title": "\"typescript.inlayHints.includeInlayParameterNameHints\": \"all\" breaks inference with dangling commas",
+   "url": "https://github.com/typescript-language-server/typescript-language-server/issues/724",
+   "state": "closed",
+   "created": "2023-05-15",
+   "comments": 7,
+   "query": "highlight references repo:typescript-language-server/typescript-language-server is:issue"
+  },
+  {
+   "repo": "typescript-language-server/typescript-language-server",
+   "number": 225,
+   "title": "Rename command doesn't work on TS LS ",
+   "url": "https://github.com/typescript-language-server/typescript-language-server/issues/225",
+   "state": "closed",
+   "created": "2021-06-25",
+   "comments": 10,
+   "query": "highlight references repo:typescript-language-server/typescript-language-server is:issue"
+  }
+ ],
+ "notes": [],
+ "authenticated": true
+}

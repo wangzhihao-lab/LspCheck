@@ -1,0 +1,3 @@
+2026-09-24 09:46:37,137 INFO campaign_run run 0131fec5c0b4: r1_history on gopls v0.23.0, junegunn/fzf@b1be3a8be1b8 seed 1 race200, targets ['src/pattern_test.go', 'src/reader.go', 'src/util/concurrent_set.go']
+2026-09-24 09:48:46,811 INFO campaign_run run 0131fec5c0b4: 0 candidate(s) in 130s; confirming
+2026-09-24 09:48:46,812 INFO campaign_run run 0131fec5c0b4 finished: ok, 0 confirmed of 0 candidate(s), 130s

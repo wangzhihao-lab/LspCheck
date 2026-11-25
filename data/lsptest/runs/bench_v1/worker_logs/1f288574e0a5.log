@@ -1,0 +1,3 @@
+2026-09-24 20:48:54,054 INFO campaign_run run 1f288574e0a5: r2_handles on tsserver 5.1.3+tsls3.3.2, tsserver-52792 seed 1 settled, targets ['classes.ts', 'utils.ts']
+2026-09-24 20:49:25,307 INFO campaign_run run 1f288574e0a5: 0 candidate(s) in 31s; confirming
+2026-09-24 20:49:25,308 INFO campaign_run run 1f288574e0a5 finished: ok, 0 confirmed of 0 candidate(s), 31s

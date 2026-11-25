@@ -1,0 +1,166 @@
+{
+ "format": 1,
+ "campaign": "kb_pyright_8946",
+ "vid": "7b994d0b8763-v00",
+ "run_id": "7b994d0b8763",
+ "oracle": "r1_history",
+ "server": {
+  "kind": "pyright",
+  "version": "1.1.380"
+ },
+ "project": {
+  "name": "pyright_8946",
+  "source": "case",
+  "ref": "pyright_8946",
+  "commit": "",
+  "language": "python"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 16,
+  "targets": [
+   {
+    "path": "repro.py",
+    "positions": [
+     [
+      5,
+      15
+     ]
+    ],
+    "ends": [],
+    "names": [
+     ""
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "typeDefinition",
+  "path": "repro.py",
+  "line": 5,
+  "character": 15,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "repro.py"
+  },
+  {
+   "kind": "change",
+   "path": "repro.py",
+   "start": [
+    5,
+    11
+   ],
+   "end": [
+    5,
+    19
+   ],
+   "text": "datetim"
+  },
+  {
+   "kind": "close",
+   "path": "repro.py"
+  }
+ ],
+ "case": {
+  "chain_step": 0,
+  "families": [],
+  "family": "H3",
+  "history_index": 7,
+  "history_seed": 1009,
+  "mode": "fresh",
+  "note": "repro.py: unsaved edit (replace 'datetime' by 'datetim' on line 5), close, reopen",
+  "seed": 1,
+  "timing": "settled"
+ },
+ "shape": "typeDefinition:result->error:-32603",
+ "signature": "pyright|r1_history|typeDefinition:result->error:-32603",
+ "expected": [
+  [
+   "temp/lsp_servers/pyright-1.1.380/node_modules/pyright/dist/typeshed-fallback/stdlib/datetime.pyi",
+   0,
+   0,
+   0,
+   0
+  ]
+ ],
+ "actual": [
+  "error",
+  -32603
+ ],
+ "reproduced": "3/3",
+ "note": "H3: repro.py: unsaved edit (replace 'datetime' by 'datetim' on line 5), close, reopen; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 46s",
+ "violation": {
+  "oracle": "r1_history",
+  "server": "pyright-1.1.380",
+  "project": "pyright_8946",
+  "key": {
+   "method": "typeDefinition",
+   "path": "repro.py",
+   "line": 5,
+   "character": 15,
+   "extra": ""
+  },
+  "expected": [
+   [
+    "temp/lsp_servers/pyright-1.1.380/node_modules/pyright/dist/typeshed-fallback/stdlib/datetime.pyi",
+    0,
+    0,
+    0,
+    0
+   ]
+  ],
+  "actual": [
+   "error",
+   -32603
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "repro.py"
+   },
+   {
+    "kind": "change",
+    "path": "repro.py",
+    "start": [
+     5,
+     11
+    ],
+    "end": [
+     5,
+     19
+    ],
+    "text": "datetim"
+   },
+   {
+    "kind": "close",
+    "path": "repro.py"
+   },
+   {
+    "kind": "open",
+    "path": "repro.py"
+   }
+  ],
+  "detail": "{\"case\": {\"chain_step\": 0, \"families\": [], \"family\": \"H3\", \"history_index\": 7, \"history_seed\": 1009, \"mode\": \"fresh\", \"note\": \"repro.py: unsaved edit (replace 'datetime' by 'datetim' on line 5), close, reopen\", \"seed\": 1, \"timing\": \"settled\"}, \"note\": \"H3: repro.py: unsaved edit (replace 'datetime' by 'datetim' on line 5), close, reopen; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 46s\", \"shape\": \"typeDefinition:result->error:-32603\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "pyright|r1_history|typeDefinition:result->error:-32603",
+  "run_id": "7b994d0b8763"
+ },
+ "replay_logs": [
+  "logs/pyright-1.1.380-tr50731d-replay-baseline-20260923-114839-b72909.jsonl.gz",
+  "logs/pyright-1.1.380-tr50731d-replay-control-20260923-114839-d939c3.jsonl.gz",
+  "logs/pyright-1.1.380-tr50731d-replay-history-20260923-114843-bab976.jsonl.gz"
+ ],
+ "project_files": {
+  "repro.py": "\n\n\n\nif TYPE_CHECKING:\n    import datetime\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+ },
+ "group": "pyright-r1-typedefinition-result-error-32603-h3-50731d",
+ "reduced": true
+}

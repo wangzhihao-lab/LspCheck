@@ -1,0 +1,313 @@
+{
+ "campaign": "main_v2",
+ "generated": "2026-11-20T05:42:22",
+ "inputs": {
+  "author": "data/lsptest/runs/main_v2/triage/decisions.csv",
+  "rater2": "data/lsptest/runs/main_v2/triage/rater2_decisions.csv",
+  "author_sha256": "cf9792a1b344d9834b4b6a2e12ce442033e161eb179ca11c70bceed4b04d8816",
+  "rater2_sha256": "b4194cfb1ab133f3563d3fda5b23c65b91f4486cf6a995ececa4e9ac21f3df40"
+ },
+ "groups": {
+  "universe": 121,
+  "author_judged": 121,
+  "rater2_judged": 121,
+  "both": 121,
+  "missing_from_rater2": [],
+  "missing_from_author": [],
+  "rater2_unknown_groups": [],
+  "rater2_rows_without_verdict": []
+ },
+ "three_class": {
+  "categories": [
+   "bug",
+   "legitimate",
+   "tool-artifact"
+  ],
+  "n": 121,
+  "agree": 116,
+  "percent_agreement": 95.87,
+  "observed_agreement": 0.9586776859504132,
+  "expected_agreement": 0.36568540400245886,
+  "kappa": 0.9348551738989986,
+  "se_asymptotic": 0.028426827867849624,
+  "ci95_asymptotic": [
+   0.8791396150832939,
+   0.9905707327147034
+  ],
+  "bootstrap": {
+   "ci95": [
+    0.8730852064523622,
+    0.9867091388400704
+   ],
+   "resamples": 10000,
+   "defined": 10000,
+   "seed": 20261117
+  },
+  "confusion": {
+   "rows": "author",
+   "columns": "rater 2",
+   "matrix": [
+    [
+     49,
+     0,
+     0
+    ],
+    [
+     2,
+     46,
+     2
+    ],
+    [
+     1,
+     0,
+     21
+    ]
+   ]
+  },
+  "marginals": {
+   "author": {
+    "bug": 49,
+    "legitimate": 50,
+    "tool-artifact": 22
+   },
+   "rater2": {
+    "bug": 52,
+    "legitimate": 46,
+    "tool-artifact": 23
+   }
+  }
+ },
+ "bug_or_not": {
+  "categories": [
+   "bug",
+   "not bug"
+  ],
+  "n": 121,
+  "agree": 118,
+  "percent_agreement": 97.52,
+  "observed_agreement": 0.9752066115702479,
+  "expected_agreement": 0.5133529130523872,
+  "kappa": 0.9490526315789473,
+  "se_asymptotic": 0.029009823058483437,
+  "ci95_asymptotic": [
+   0.8921944231864402,
+   1.0
+  ],
+  "bootstrap": {
+   "ci95": [
+    0.8835418671799807,
+    1.0
+   ],
+   "resamples": 10000,
+   "defined": 10000,
+   "seed": 20261117
+  },
+  "confusion": {
+   "rows": "author",
+   "columns": "rater 2",
+   "matrix": [
+    [
+     49,
+     0
+    ],
+    [
+     3,
+     69
+    ]
+   ]
+  },
+  "marginals": {
+   "author": {
+    "bug": 49,
+    "not bug": 72
+   },
+   "rater2": {
+    "bug": 52,
+    "not bug": 69
+   }
+  }
+ },
+ "by_relation": {
+  "R0": {
+   "n": 1,
+   "agree": 1,
+   "percent_agreement": 100.0,
+   "kappa": null,
+   "kappa_bug": null
+  },
+  "R1": {
+   "n": 37,
+   "agree": 37,
+   "percent_agreement": 100.0,
+   "kappa": 1.0,
+   "kappa_bug": 1.0
+  },
+  "R2": {
+   "n": 2,
+   "agree": 2,
+   "percent_agreement": 100.0,
+   "kappa": null,
+   "kappa_bug": null
+  },
+  "R3": {
+   "n": 23,
+   "agree": 21,
+   "percent_agreement": 91.3,
+   "kappa": 0.7012987012987014,
+   "kappa_bug": 0.7012987012987014
+  },
+  "R4": {
+   "n": 38,
+   "agree": 38,
+   "percent_agreement": 100.0,
+   "kappa": 1.0,
+   "kappa_bug": 1.0
+  },
+  "R5": {
+   "n": 10,
+   "agree": 7,
+   "percent_agreement": 70.0,
+   "kappa": 0.5161290322580644,
+   "kappa_bug": 0.7826086956521737
+  },
+  "R6": {
+   "n": 10,
+   "agree": 10,
+   "percent_agreement": 100.0,
+   "kappa": null,
+   "kappa_bug": null
+  }
+ },
+ "class_agreement": {},
+ "rater2_unsure": {
+  "n": 6,
+  "groups": [
+   "gopls-r3-definitionconsistency-result-error-0-d-f91fb9",
+   "gopls-r4-completioninsert-gained-completion-22daf7",
+   "gopls-r5-foldingrange-changed-t6-ecacad",
+   "pyright-r3-highlightvsreferences-gained-c-3118cc",
+   "ts7-r6-diagnostics-missing-2304-2339-2593-diagnostics-31eb88",
+   "ts7-r6-diagnostics-missing-2304-2593-diagnostics-58256c"
+  ],
+  "agree": 4
+ },
+ "unsure_as_legitimate": {
+  "note": "rater-2 verdicts of the groups the rater's note marks as unsure recoded to legitimate, the default the author's judging page gave for groups that stay unclear",
+  "three_class": {
+   "categories": [
+    "bug",
+    "legitimate",
+    "tool-artifact"
+   ],
+   "n": 121,
+   "agree": 116,
+   "percent_agreement": 95.87,
+   "observed_agreement": 0.9586776859504131,
+   "expected_agreement": 0.367734444368554,
+   "kappa": 0.9346440531489683,
+   "se_asymptotic": 0.02846560115824986,
+   "ci95_asymptotic": [
+    0.8788525000805169,
+    0.9904356062174197
+   ],
+   "bootstrap": {
+    "ci95": [
+     0.8720368859613782,
+     0.9866872775325499
+    ],
+    "resamples": 10000,
+    "defined": 10000,
+    "seed": 20261117
+   },
+   "confusion": {
+    "rows": "author",
+    "columns": "rater 2",
+    "matrix": [
+     [
+      49,
+      0,
+      0
+     ],
+     [
+      1,
+      47,
+      2
+     ],
+     [
+      0,
+      2,
+      20
+     ]
+    ]
+   },
+   "marginals": {
+    "author": {
+     "bug": 49,
+     "legitimate": 50,
+     "tool-artifact": 22
+    },
+    "rater2": {
+     "bug": 50,
+     "legitimate": 49,
+     "tool-artifact": 22
+    }
+   }
+  },
+  "bug_or_not": {
+   "categories": [
+    "bug",
+    "not bug"
+   ],
+   "n": 121,
+   "agree": 120,
+   "percent_agreement": 99.17,
+   "observed_agreement": 0.9917355371900827,
+   "expected_agreement": 0.5164947749470664,
+   "kappa": 0.9829071902811132,
+   "se_asymptotic": 0.017019544939551375,
+   "ci95_asymptotic": [
+    0.9495494951663316,
+    1.0
+   ],
+   "bootstrap": {
+    "ci95": [
+     0.9461983103601602,
+     1.0
+    ],
+    "resamples": 10000,
+    "defined": 10000,
+    "seed": 20261117
+   },
+   "confusion": {
+    "rows": "author",
+    "columns": "rater 2",
+    "matrix": [
+     [
+      49,
+      0
+     ],
+     [
+      1,
+      71
+     ]
+    ]
+   },
+   "marginals": {
+    "author": {
+     "bug": 49,
+     "not bug": 72
+    },
+    "rater2": {
+     "bug": 50,
+     "not bug": 71
+    }
+   }
+  }
+ },
+ "method": {
+  "kappa": "Cohen's kappa on the groups both raters judged",
+  "ci95_asymptotic": "kappa +- 1.96 SE, SE from the large-sample variance of Fleiss, Cohen and Everitt (1969); clipped to [-1, 1]",
+  "bootstrap": "percentile interval, groups resampled with replacement, 10000 resamples, seed 20261117; resamples with undefined kappa skipped",
+  "by_relation": "relation from triage.json; kappa is null where it is undefined (one category only)"
+ }
+}

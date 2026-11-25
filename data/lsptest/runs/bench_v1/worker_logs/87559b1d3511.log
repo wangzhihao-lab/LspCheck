@@ -1,0 +1,3 @@
+2026-09-25 02:43:10,523 INFO campaign_run run 87559b1d3511: r5_transforms on gopls v0.20.0, gopls-74709 seed 2 settled, targets ['b.go']
+2026-09-25 02:43:47,386 INFO campaign_run run 87559b1d3511: 0 candidate(s) in 37s; confirming
+2026-09-25 02:43:47,387 INFO campaign_run run 87559b1d3511 finished: ok, 0 confirmed of 0 candidate(s), 37s

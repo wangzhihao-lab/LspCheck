@@ -1,0 +1,3 @@
+2026-09-23 21:43:49,804 INFO campaign_run run 6d465d61014e: r3_routes on pyright 1.1.414, TauricResearch/TradingAgents@2d17df8da153 seed 2 settled, targets ['tests/test_checkpoint_resume.py', 'tests/test_portfolio_context.py', 'tradingagents/dataflows/alpha_vantage_indicator.py']
+2026-09-23 21:46:26,824 INFO campaign_run run 6d465d61014e: 3 candidate(s) in 157s; confirming
+2026-09-23 21:46:26,826 INFO campaign_run run 6d465d61014e finished: ok, 0 confirmed of 3 candidate(s), 157s

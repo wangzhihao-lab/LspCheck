@@ -1,0 +1,9 @@
+2026-09-24 12:35:36,108 INFO campaign_run run dfcadc42bbe3: r1_history on gopls v0.23.0, XTLS/Xray-core@d562d8947d31 seed 3 settled, targets ['core/config.go', 'transport/internet/config.pb.go', 'transport/internet/tcp/sockopt_darwin.go']
+2026-09-24 12:44:09,685 INFO campaign_run run dfcadc42bbe3: 11 candidate(s) in 514s; confirming
+2026-09-24 12:45:15,133 INFO flake replay 1/3 of gopls|r1_history|completion:extra: settled=True control_stable=True reproduced=False (65.4s)
+2026-09-24 12:46:21,958 INFO flake replay 2/3 of gopls|r1_history|completion:extra: settled=True control_stable=True reproduced=False (66.8s)
+2026-09-24 12:47:33,684 INFO flake replay 3/3 of gopls|r1_history|completion:extra: settled=True control_stable=True reproduced=False (71.7s)
+2026-09-24 12:48:47,379 INFO flake replay 1/3 of gopls|r1_history|completion:missing: settled=True control_stable=False reproduced=False (73.7s)
+2026-09-24 12:50:03,478 INFO flake replay 2/3 of gopls|r1_history|completion:missing: settled=True control_stable=False reproduced=False (76.1s)
+2026-09-24 12:51:15,750 INFO flake replay 3/3 of gopls|r1_history|completion:missing: settled=True control_stable=False reproduced=False (72.3s)
+2026-09-24 12:51:15,753 INFO campaign_run run dfcadc42bbe3 finished: ok, 0 confirmed of 11 candidate(s), 940s

@@ -1,0 +1,148 @@
+{
+ "format": 1,
+ "campaign": "main_v2",
+ "vid": "605e065dec15-v00",
+ "run_id": "605e065dec15",
+ "oracle": "r3_routes",
+ "server": {
+  "kind": "ts7",
+  "version": "7.0.2"
+ },
+ "project": {
+  "name": "date-fns/date-fns@f34149bb1ba1",
+  "source": "corpus",
+  "ref": "temp/corpus/date-fns__date-fns@f34149bb1ba1",
+  "commit": "f34149bb1ba10046453e688207507e0d2c727e00",
+  "language": "typescript"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "pkgs/core/src/fp/lastDayOfWeekWithOptions/index.ts",
+    "positions": [],
+    "ends": [],
+    "names": []
+   },
+   {
+    "path": "pkgs/core/src/locale/nn/_lib/localize/index.ts",
+    "positions": [],
+    "ends": [],
+    "names": []
+   },
+   {
+    "path": "pkgs/core/src/subYears/index.ts",
+    "positions": [],
+    "ends": [],
+    "names": []
+   }
+  ]
+ },
+ "key": {
+  "method": "definitionConsistency",
+  "path": "pkgs/core/src/locale/_lib/buildLocalizeFn/index.ts",
+  "line": 128,
+  "character": 19,
+  "extra": "from:pkgs/core/src/locale/nn/_lib/localize/index.ts:111:12"
+ },
+ "ops": [],
+ "case": {
+  "loc": [
+   "pkgs/core/src/locale/_lib/buildLocalizeFn/index.ts",
+   128,
+   11,
+   128,
+   27
+  ],
+  "sub": "d",
+  "target": [
+   "pkgs/core/src/locale/nn/_lib/localize/index.ts",
+   111,
+   12
+  ]
+ },
+ "shape": "definitionConsistency:extra",
+ "signature": "ts7|r3_routes|definitionConsistency:extra",
+ "expected": [
+  [
+   "pkgs/core/src/locale/_lib/buildLocalizeFn/index.ts",
+   18,
+   6,
+   18,
+   22
+  ]
+ ],
+ "actual": [
+  [
+   "pkgs/core/src/locale/_lib/buildLocalizeFn/index.ts",
+   17,
+   6,
+   17,
+   22
+  ],
+  [
+   "pkgs/core/src/locale/_lib/buildLocalizeFn/index.ts",
+   18,
+   6,
+   18,
+   22
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "flake 3/3 [r1:SCR r2:SCR r3:SCR] in 64s",
+ "violation": {
+  "oracle": "r3_routes",
+  "server": "ts7-7.0.2",
+  "project": "date-fns/date-fns@f34149bb1ba1",
+  "key": {
+   "method": "definitionConsistency",
+   "path": "pkgs/core/src/locale/_lib/buildLocalizeFn/index.ts",
+   "line": 128,
+   "character": 19,
+   "extra": "from:pkgs/core/src/locale/nn/_lib/localize/index.ts:111:12"
+  },
+  "expected": [
+   [
+    "pkgs/core/src/locale/_lib/buildLocalizeFn/index.ts",
+    18,
+    6,
+    18,
+    22
+   ]
+  ],
+  "actual": [
+   [
+    "pkgs/core/src/locale/_lib/buildLocalizeFn/index.ts",
+    17,
+    6,
+    17,
+    22
+   ],
+   [
+    "pkgs/core/src/locale/_lib/buildLocalizeFn/index.ts",
+    18,
+    6,
+    18,
+    22
+   ]
+  ],
+  "ops": [],
+  "detail": "{\"case\": {\"loc\": [\"pkgs/core/src/locale/_lib/buildLocalizeFn/index.ts\", 128, 11, 128, 27], \"sub\": \"d\", \"target\": [\"pkgs/core/src/locale/nn/_lib/localize/index.ts\", 111, 12]}, \"note\": \"flake 3/3 [r1:SCR r2:SCR r3:SCR] in 64s\", \"shape\": \"definitionConsistency:extra\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "ts7|r3_routes|definitionConsistency:extra",
+  "run_id": "605e065dec15"
+ },
+ "replay_logs": [
+  "logs/ts7-7.0.2-trfb74d3-r3-replay-baseline-20261118-214745-1f1d5d.jsonl.gz",
+  "logs/ts7-7.0.2-trfb74d3-r3-replay-control-20261118-214757-e0cd73.jsonl.gz"
+ ],
+ "project_files": {},
+ "group": "ts7-r3-definitionconsistency-extra-d-fb74d3",
+ "reduced": true
+}

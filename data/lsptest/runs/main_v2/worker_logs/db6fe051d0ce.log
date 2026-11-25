@@ -1,0 +1,3 @@
+2026-11-18 03:29:08,246 INFO campaign_run run db6fe051d0ce: r2_handles on rust-analyzer 2026-09-21, cloudflare/pingora@4487f7b2ab50 seed 1 settled, targets ['pingora-cache/src/eviction/async_lru.rs', 'pingora-core/src/protocols/digest.rs', 'pingora-http/src/lib.rs']
+2026-11-18 03:29:08,587 INFO campaign_run run db6fe051d0ce: 0 candidate(s) in 0s; confirming
+2026-11-18 03:29:08,588 INFO campaign_run run db6fe051d0ce finished: ok, 0 confirmed of 0 candidate(s), 0s

@@ -1,0 +1,466 @@
+{
+ "format": 1,
+ "campaign": "dryrun",
+ "vid": "97e5b1307d07-v03",
+ "run_id": "97e5b1307d07",
+ "oracle": "r3_routes",
+ "server": {
+  "kind": "ts6",
+  "version": "6.0.3"
+ },
+ "project": {
+  "name": "pmndrs/zustand@b57db4f86ef1",
+  "source": "corpus",
+  "ref": "temp/corpus/pmndrs__zustand@b57db4f86ef1",
+  "commit": "b57db4f86ef179285da216eeb291266da82c361c",
+  "language": "typescript"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 2,
+  "targets": [
+   {
+    "path": "src/react.ts",
+    "positions": [
+     [
+      0,
+      9
+     ],
+     [
+      1,
+      14
+     ],
+     [
+      5,
+      8
+     ],
+     [
+      7,
+      13
+     ],
+     [
+      22,
+      6
+     ],
+     [
+      25,
+      38
+     ],
+     [
+      29,
+      32
+     ],
+     [
+      31,
+      32
+     ],
+     [
+      32,
+      15
+     ],
+     [
+      40,
+      37
+     ],
+     [
+      49,
+      37
+     ],
+     [
+      52,
+      28
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      12
+     ],
+     [
+      1,
+      20
+     ],
+     [
+      5,
+      14
+     ],
+     [
+      7,
+      24
+     ],
+     [
+      22,
+      10
+     ],
+     [
+      25,
+      43
+     ],
+     [
+      29,
+      42
+     ],
+     [
+      31,
+      36
+     ],
+     [
+      32,
+      21
+     ],
+     [
+      40,
+      38
+     ],
+     [
+      49,
+      38
+     ],
+     [
+      52,
+      34
+     ]
+    ],
+    "names": [
+     "React",
+     "createStore",
+     "StateCreator",
+     "StoreMutatorIdentifier",
+     "selector",
+     "StateSlice",
+     "useSyncExternalStore",
+     "selector",
+     "useCallback",
+     "S",
+     "T",
+     "createState"
+    ]
+   },
+   {
+    "path": "src/vanilla/shallow.ts",
+    "positions": [
+     [
+      12,
+      15
+     ],
+     [
+      15,
+      42
+     ],
+     [
+      16,
+      53
+     ],
+     [
+      17,
+      27
+     ],
+     [
+      21,
+      11
+     ],
+     [
+      33,
+      38
+     ],
+     [
+      34,
+      23
+     ],
+     [
+      38,
+      34
+     ],
+     [
+      44,
+      35
+     ],
+     [
+      47,
+      46
+     ],
+     [
+      70,
+      24
+     ],
+     [
+      71,
+      39
+     ]
+    ],
+    "ends": [
+     [
+      12,
+      19
+     ],
+     [
+      15,
+      45
+     ],
+     [
+      16,
+      55
+     ],
+     [
+      17,
+      29
+     ],
+     [
+      21,
+      13
+     ],
+     [
+      33,
+      42
+     ],
+     [
+      34,
+      26
+     ],
+     [
+      38,
+      37
+     ],
+     [
+      44,
+      37
+     ],
+     [
+      47,
+      47
+     ],
+     [
+      70,
+      27
+     ],
+     [
+      71,
+      42
+     ]
+    ],
+    "names": [
+     "entries",
+     "valueA",
+     "Map",
+     "size",
+     "mapB",
+     "iterator",
+     "valueB",
+     "nextB",
+     "done",
+     "T",
+     "Object",
+     "valueB"
+    ]
+   },
+   {
+    "path": "tests/persistSync.test.tsx",
+    "positions": [
+     [
+      14,
+      37
+     ],
+     [
+      16,
+      6
+     ],
+     [
+      136,
+      15
+     ],
+     [
+      274,
+      9
+     ],
+     [
+      291,
+      41
+     ],
+     [
+      311,
+      25
+     ],
+     [
+      467,
+      20
+     ],
+     [
+      565,
+      64
+     ],
+     [
+      683,
+      24
+     ],
+     [
+      717,
+      16
+     ],
+     [
+      732,
+      22
+     ],
+     [
+      742,
+      30
+     ]
+    ],
+    "ends": [
+     [
+      14,
+      41
+     ],
+     [
+      16,
+      9
+     ],
+     [
+      136,
+      20
+     ],
+     [
+      274,
+      13
+     ],
+     [
+      291,
+      48
+     ],
+     [
+      311,
+      28
+     ],
+     [
+      467,
+      24
+     ],
+     [
+      565,
+      73
+     ],
+     [
+      683,
+      26
+     ],
+     [
+      717,
+      21
+     ],
+     [
+      732,
+      33
+     ],
+     [
+      742,
+      32
+     ]
+    ],
+    "names": [
+     "newState",
+     "state",
+     "setItemSpy",
+     "setItem",
+     "toBeCalledWith",
+     "count",
+     "entries",
+     "onFinishHydration",
+     "map",
+     "setItemSpy",
+     "onRehydrateStorageSpy2",
+     "name"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "definitionConsistency.shorthand",
+  "path": "tests/persistSync.test.tsx",
+  "line": 691,
+  "character": 26,
+  "extra": "from:tests/persistSync.test.tsx:717:16"
+ },
+ "ops": [],
+ "case": {
+  "loc": [
+   "tests/persistSync.test.tsx",
+   691,
+   21,
+   691,
+   31
+  ],
+  "sub": "d",
+  "target": [
+   "tests/persistSync.test.tsx",
+   717,
+   16
+  ]
+ },
+ "shape": "definitionConsistency.shorthand:changed",
+ "signature": "ts6|r3_routes|definitionConsistency.shorthand:changed",
+ "expected": [
+  [
+   "tests/persistSync.test.tsx",
+   691,
+   21,
+   691,
+   31
+  ]
+ ],
+ "actual": [
+  [
+   "tests/persistSync.test.tsx",
+   30,
+   4,
+   30,
+   14
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "shorthand; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 71s",
+ "violation": {
+  "oracle": "r3_routes",
+  "server": "ts6-6.0.3",
+  "project": "pmndrs/zustand@b57db4f86ef1",
+  "key": {
+   "method": "definitionConsistency.shorthand",
+   "path": "tests/persistSync.test.tsx",
+   "line": 691,
+   "character": 26,
+   "extra": "from:tests/persistSync.test.tsx:717:16"
+  },
+  "expected": [
+   [
+    "tests/persistSync.test.tsx",
+    691,
+    21,
+    691,
+    31
+   ]
+  ],
+  "actual": [
+   [
+    "tests/persistSync.test.tsx",
+    30,
+    4,
+    30,
+    14
+   ]
+  ],
+  "ops": [],
+  "detail": "{\"case\": {\"loc\": [\"tests/persistSync.test.tsx\", 691, 21, 691, 31], \"sub\": \"d\", \"target\": [\"tests/persistSync.test.tsx\", 717, 16]}, \"note\": \"shorthand; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 71s\", \"shape\": \"definitionConsistency.shorthand:changed\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "ts6|r3_routes|definitionConsistency.shorthand:changed",
+  "run_id": "97e5b1307d07"
+ },
+ "replay_logs": [
+  "logs/ts6-6.0.3-97e5b1307d07-r3-replay-baseline-20260923-111138-3d351e.jsonl.gz",
+  "logs/ts6-6.0.3-97e5b1307d07-r3-replay-control-20260923-111149-7706ab.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

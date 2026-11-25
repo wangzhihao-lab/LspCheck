@@ -1,0 +1,3 @@
+2026-09-24 09:43:04,913 INFO campaign_run run e3144bbea601: r1_history on ts6 6.0.3, ChatGPTNextWeb/NextChat@defdcdb55d85 seed 1 race200, targets ['app/api/stability.ts', 'app/client/platforms/glm.ts', 'app/locales/index.ts']
+2026-09-24 09:50:47,568 INFO campaign_run run e3144bbea601: 8 candidate(s) in 463s; confirming
+2026-09-24 09:50:47,571 INFO campaign_run run e3144bbea601 finished: ok, 0 confirmed of 8 candidate(s), 463s

@@ -1,0 +1,3 @@
+2026-09-24 08:07:35,574 INFO campaign_run run 27380534c57e: r1_history on ts6 6.0.3, ChromeDevTools/chrome-devtools-mcp@2250cdcde4aa seed 1 race0, targets ['scripts/eval_scenarios/network_test.ts', 'tests/e2e/telemetry.test.ts', 'tests/trace-processing/ChunkedTraceParser.test.ts']
+2026-09-24 08:14:11,658 INFO campaign_run run 27380534c57e: 0 candidate(s) in 396s; confirming
+2026-09-24 08:14:11,659 INFO campaign_run run 27380534c57e finished: ok, 0 confirmed of 0 candidate(s), 396s

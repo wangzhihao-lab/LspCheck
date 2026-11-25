@@ -1,0 +1,6 @@
+2026-09-24 23:07:46,770 INFO campaign_run run a9d7986f7000: r5_transforms on rust-analyzer 2023-06-12, rust-analyzer-14841 seed 1 settled, targets ['src/main.rs']
+2026-09-24 23:10:23,622 INFO campaign_run run a9d7986f7000: 1 candidate(s) in 157s; confirming
+2026-09-24 23:11:04,045 INFO flake replay 1/3 of rust-analyzer|r5_transforms|codeAction:extra: settled=True control_stable=True reproduced=True (40.4s)
+2026-09-24 23:11:49,608 INFO flake replay 2/3 of rust-analyzer|r5_transforms|codeAction:extra: settled=True control_stable=True reproduced=True (45.6s)
+2026-09-24 23:12:30,664 INFO flake replay 3/3 of rust-analyzer|r5_transforms|codeAction:extra: settled=True control_stable=True reproduced=True (41.1s)
+2026-09-24 23:12:30,672 INFO campaign_run run a9d7986f7000 finished: ok, 1 confirmed of 1 candidate(s), 284s

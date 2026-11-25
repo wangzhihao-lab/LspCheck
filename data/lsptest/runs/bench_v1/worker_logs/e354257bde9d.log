@@ -1,0 +1,3 @@
+2026-09-25 11:43:45,754 INFO campaign_run run e354257bde9d: r4_edits on rust-analyzer 2025-12-15, rust-analyzer-21204 seed 2 settled, targets ['src/foo.rs', 'src/main.rs']
+2026-09-25 11:44:35,052 INFO campaign_run run e354257bde9d: 0 candidate(s) in 49s; confirming
+2026-09-25 11:44:35,053 INFO campaign_run run e354257bde9d finished: ok, 0 confirmed of 0 candidate(s), 49s

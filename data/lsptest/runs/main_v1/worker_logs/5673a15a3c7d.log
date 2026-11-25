@@ -1,0 +1,6 @@
+2026-09-24 09:19:22,695 INFO campaign_run run 5673a15a3c7d: r1_history on pyright 1.1.414, pallets/flask@d73fa1cdcbd8 seed 1 race200, targets ['examples/celery/src/task_app/tasks.py', 'examples/javascript/js_example/views.py', 'examples/javascript/tests/test_js_example.py']
+2026-09-24 09:25:25,561 INFO campaign_run run 5673a15a3c7d: 1 candidate(s) in 363s; confirming
+2026-09-24 09:26:28,793 INFO flake replay 1/3 of pyright|r1_history|references:missing: settled=True control_stable=True reproduced=False (63.2s)
+2026-09-24 09:27:28,726 INFO flake replay 2/3 of pyright|r1_history|references:missing: settled=True control_stable=True reproduced=False (59.9s)
+2026-09-24 09:29:14,066 INFO flake replay 3/3 of pyright|r1_history|references:missing: settled=True control_stable=True reproduced=True (105.2s)
+2026-09-24 09:29:14,526 INFO campaign_run run 5673a15a3c7d finished: ok, 0 confirmed of 1 candidate(s), 592s

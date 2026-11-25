@@ -1,0 +1,1711 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>复看</title><style>
+body{font-family:-apple-system,"PingFang SC",sans-serif;max-width:1100px;margin:0 auto;padding:0 16px 48px;line-height:1.55;color:#222;background:#fff}
+h1{font-size:1.5em;border-bottom:2px solid #332288;margin-top:20px} h2{margin-top:1.6em;color:#332288}
+details{border:1px solid #ccc;border-radius:6px;margin:6px 0;padding:4px 10px;scroll-margin-top:80px} summary{cursor:pointer}
+pre{background:#f6f6f6;padding:8px;overflow-x:auto;font-size:12px;white-space:pre-wrap}
+.diff .add{background:#e6f4ea;color:#0b5c1a} .diff .del{background:#fce8e6;color:#8a1c12} .diff .hunk{color:#555}
+.state{padding:1px 6px;border-radius:4px;font-size:12px} .judged{background:#117733;color:#fff} .open{background:#DDCC77}
+.num{font-weight:bold;display:inline-block;min-width:2.4em} .differ{color:#882255;font-size:12px}
+.muted{color:#666;font-size:.9em} table{border-collapse:collapse} td,th{border:1px solid #bbb;padding:3px 8px}
+.bar{position:sticky;top:0;z-index:10;background:#fff;border-bottom:2px solid #332288;padding:8px 0;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.bar button{font-size:15px;padding:6px 14px;border:1px solid #332288;border-radius:6px;background:#fff;color:#332288;cursor:pointer}
+#progress{font-weight:bold;margin-right:6px} #message{color:#117733} #storage-warning{color:#882255}
+#export-box{border:2px solid #882255;border-radius:6px;padding:8px;margin:8px 0} #export-box textarea{width:100%;height:180px;box-sizing:border-box}
+.judge{border-top:1px dashed #999;margin-top:14px;padding:10px 0 4px} .judge .q{font-weight:bold;margin:0 0 6px}
+button.choice{font-size:16px;min-width:180px;padding:10px 14px;margin:4px 8px 4px 0;border:2px solid #888;border-radius:8px;background:#fff;color:#222;cursor:pointer}
+button.choice small{display:block;font-size:12px;color:#555;font-weight:normal}
+button.choice.chosen{background:#332288;border-color:#332288;color:#fff} button.choice.chosen small{color:#eee}
+button.clear{border:none;background:none;color:#666;text-decoration:underline;cursor:pointer;font-size:13px}
+textarea.note{display:block;width:100%;box-sizing:border-box;margin-top:6px;font:inherit;font-size:14px}
+</style></head><body>
+<h1>复看：29 组（约 1 小时）</h1>
+<p>审稿模拟指出两件事：一是有 6 组的判断和相似的组看起来不一致；二是所有判断都没写理由。请按下面的顺序做：</p>
+<ol>
+<li><b>前 6 组（标了“为什么请你再看”）</b>：按判断准则重新看一遍，维持原判就不用动按钮，要改就点另一个按钮。无论改不改，都在备注框里写一句理由。</li>
+<li><b>其余 23 组（你判为 bug 的）</b>：按钮已是你原来的判断，只需在备注框里写一句理由，例如“改名再改回后引用全部丢失，新会话能找到，属于状态错误”。想改判也可以。</li>
+</ol>
+<p><b>判断准则</b>（论文里写的就是这三条）：<b>bug</b>＝被测会话的答案按语言或协议是错的，且没有文档说明这种行为；<b>legitimate</b>＝两边都说得通，因为协议把这件事留给实现决定，或者差异有文档说明；<b>tool-artifact</b>＝差异来自测试工具的输入或规则。</p>
+<p>做完点「复制结果」，粘贴到对话里发给我。随时可以停，下次打开会接着上次的进度。</p>
+<div class="bar"><span id="progress">已判断 29 / 29</span>
+<button type="button" id="copy">复制结果</button><button type="button" id="download">下载结果文件</button>
+<button type="button" id="next">下一条未判断</button><span id="message"></span>
+<span id="storage-warning" hidden>这个浏览器不让本页保存进度：关掉页面前请先点「复制结果」。</span></div>
+<div id="export-box" hidden><p id="export-why"></p><textarea id="export-text" readonly></textarea></div>
+<h2>一、判断看起来不一致的 6 组</h2>
+<p class="differ">为什么请你再看：同样是 gopls 的“创建变量”生成 x := 0 后在使用处出现类型错误；NotAType 那一组你判的是 bug，这一组判的是 legitimate。</p>
+
+<details class="item" id="gopls-r4-diagnostics-extra-invalidifaceassign-mutation-m2-416e90" data-id="gopls-r4-diagnostics-extra-invalidifaceassign-mutation-m2-416e90" data-n="1"><summary><b class="num">1.</b> <span class="state judged">已判断：legitimate</span><span class="differ"></span> <code>gopls-r4-diagnostics-extra-invalidifaceassign-mutation-m2-416e90</code> · R4 编辑有效 · gopls · 成员 1 · 步骤 3→3</summary>
+<div class="body">
+<h3>[gopls v0.23.0] mutation:M2 edit is not valid (diagnostics:extra:InvalidIfaceAssign)</h3>
+<p><b>违反的规则</b>：Edit validity (R4): a quick fix must remove the diagnostic it targets without adding errors; formatting and organize imports applied twice must be no-ops; inserting a completion must not introduce a syntax error.</p>
+<p><b>现象</b>：<code>diagnostics:extra:InvalidIfaceAssign</code>；历史族/子检查：<code>mutation:M2</code></p>
+<h4>最少复现步骤</h4><pre>1. Start gopls v0.23.0 on the project root; answer workspace/configuration with the settings under Environment.
+2. textDocument/didOpen: `open common/crypto/io.go`
+3. textDocument/didChange: `change common/crypto/io.go (17, 10)-(17, 16) &quot;reaer&quot;`
+4. textDocument/didChange: `change common/crypto/io.go (15, 3)-(15, 3) &quot;aer := 0\n\tre&quot;`
+5. Timing: wait until the server is idle after every step.
+6. textDocument/didOpen `proxy/tun/stack_gvisor_icmp_handler.go`, `transport/internet/finalmask/xicmp/xicmp_test.go` (the query step opens every target file that is not open), then wait until the server is idle.
+7. The quick fix above was applied in the same session: the targeted diagnostic must be gone and the error count must not exceed the one before the mutation.
+8. Query `textDocument/diagnostic` on `common/crypto/io.go` line 18, column 11 (LSP position {line: 17, character: 10}) (M2:quickfix-errors:Create variable reaer); compare with the same query in a fresh session on the same content (expected).</pre>
+<h4>预期与实际的差别（红 = 预期，参照会话的答案；绿 = 实际，被测会话的答案）</h4><pre class="diff">--- expected
++++ actual
+<span class="hunk">@@ -1 +1,12 @@</span>
+<span class="del">-[]</span>
+<span class="add">+[</span>
+<span class="add">+ [</span>
+<span class="add">+  0,</span>
+<span class="add">+  0,</span>
+<span class="add">+  0,</span>
+<span class="add">+  0,</span>
+<span class="add">+  1,</span>
+<span class="add">+  &quot;InvalidIfaceAssign&quot;,</span>
+<span class="add">+  &quot;compiler&quot;,</span>
+<span class="add">+  &quot;cannot use reaer (variable of type int) as io.Reader value in struct literal: int does not implement io.Reader (missing method Read)&quot;</span>
+<span class="add">+ ]</span>
+<span class="add">+]</span></pre>
+<h4>证据与缩减</h4><pre>- representative 07c55fb203fd-v00: confirmed 3/3 (each replay: fresh baseline, fresh control and a fresh case session)
+- ops 3 -&gt; 3 (2 probes, 4.5 s, reduced ops confirmed 3/3); query targets narrowed to the key
+- lines: not reduced
+- group: 1 violation(s) in 1 run(s), projects XTLS/Xray-core@d562d8947d31, timings settled, seeds 1</pre>
+<h4>一年前版本上的重放</h4><p>未重放（该组没有一年前的版本可比）</p>
+<h4>可能相关的已有 issue（关键词搜索结果，要你核对）</h4><ul><li><a href="https://github.com/golang/go/issues/68075" target="_blank" rel="noopener">golang/go#68075</a> x/tools/gopls/internal/cmd: `gopls check` doesn&#x27;t wait for didOpen finish before it makes diagnostics request <span class="muted">(open, 2024-06-19)</span></li><li><a href="https://github.com/golang/go/issues/41436" target="_blank" rel="noopener">golang/go#41436</a> x/tools/go/analysis: a Diagnostic should indicate when it is a lint-style warning that should be ignored in generated code <span class="muted">(open, 2020-09-16)</span></li><li><a href="https://github.com/golang/go/issues/70085" target="_blank" rel="noopener">golang/go#70085</a> x/tools/gopls: add refactor.inline.variable-all code action <span class="muted">(open, 2024-10-29)</span></li><li><a href="https://github.com/golang/go/issues/50151" target="_blank" rel="noopener">golang/go#50151</a> x/tools/gopls: high cpu usage when make changes in package which have some cgo package dependents <span class="muted">(open, 2021-12-14)</span></li><li><a href="https://github.com/golang/go/issues/54461" target="_blank" rel="noopener">golang/go#54461</a> x/tools/gopls: regtest flakes due to hanging go commands <span class="muted">(open, 2022-08-15)</span></li></ul>
+<p class="muted">完整报告：<a href="gopls-r4-diagnostics-extra-invalidifaceassign-mutation-m2-416e90/report.md" target="_blank" rel="noopener">gopls-r4-diagnostics-extra-invalidifaceassign-mutation-m2-416e90/report.md</a> ·
+复现命令（在项目根目录运行）：<code>python3 scripts/lsptest/repro_violation.py data/lsptest/runs/main_v1/triage/gopls-r4-diagnostics-extra-invalidifaceassign-mutation-m2-416e90/repro.json</code></p>
+<div class="judge"><p class="q">你的判断：实际（被测会话）这边的答案错了吗？</p><button type="button" class="choice" data-choice="bug" aria-pressed="false"><b>bug</b><small>是 bug</small></button><button type="button" class="choice chosen" data-choice="legitimate" aria-pressed="true"><b>legitimate</b><small>不算问题：两边都说得通</small></button><button type="button" class="choice" data-choice="tool-artifact" aria-pressed="false"><b>tool-artifact</b><small>工具自己的问题</small></button><button type="button" class="clear">清除</button><textarea class="note" rows="2" placeholder="备注（可选）：一句理由、unsure、对上号的 issue 链接……"></textarea></div>
+</div></details>
+<p class="differ">为什么请你再看：同上：“创建变量”生成 x := 0 后该变量被当作可索引的值使用；类似的 NotAType 组判的是 bug。</p>
+
+<details class="item" id="gopls-r4-diagnostics-extra-nonindexableoperand-mutation-m2-ba152b" data-id="gopls-r4-diagnostics-extra-nonindexableoperand-mutation-m2-ba152b" data-n="2"><summary><b class="num">2.</b> <span class="state judged">已判断：legitimate</span><span class="differ"></span> <code>gopls-r4-diagnostics-extra-nonindexableoperand-mutation-m2-ba152b</code> · R4 编辑有效 · gopls · 成员 1 · 步骤 3→3</summary>
+<div class="body">
+<h3>[gopls v0.23.0] mutation:M2 edit is not valid (diagnostics:extra:NonIndexableOperand)</h3>
+<p><b>违反的规则</b>：Edit validity (R4): a quick fix must remove the diagnostic it targets without adding errors; formatting and organize imports applied twice must be no-ops; inserting a completion must not introduce a syntax error.</p>
+<p><b>现象</b>：<code>diagnostics:extra:NonIndexableOperand</code>；历史族/子检查：<code>mutation:M2</code></p>
+<h4>最少复现步骤</h4><pre>1. Start gopls v0.23.0 on the project root; answer workspace/configuration with the settings under Environment.
+2. textDocument/didOpen: `open modules/caddyhttp/reverseproxy/selectionpolicies_test.go`
+3. textDocument/didChange: `change modules/caddyhttp/reverseproxy/selectionpolicies_test.go (125, 1)-(125, 5) &quot;poool&quot;`
+4. textDocument/didChange: `change modules/caddyhttp/reverseproxy/selectionpolicies_test.go (125, 6)-(125, 6) &quot; := 0\n\tpoool&quot;`
+5. Timing: wait until the server is idle after every step.
+6. textDocument/didOpen `modules/caddyhttp/rewrite/caddyfile.go`, `modules/caddypki/acmeserver/policy_test.go` (the query step opens every target file that is not open), then wait until the server is idle.
+7. The quick fix above was applied in the same session: the targeted diagnostic must be gone and the error count must not exceed the one before the mutation.
+8. Query `textDocument/diagnostic` on `modules/caddyhttp/reverseproxy/selectionpolicies_test.go` line 126, column 2 (LSP position {line: 125, character: 1}) (M2:quickfix-errors:Create variable poool); compare with the same query in a fresh session on the same content (expected).</pre>
+<h4>预期与实际的差别（红 = 预期，参照会话的答案；绿 = 实际，被测会话的答案）</h4><pre class="diff">--- expected
++++ actual
+<span class="hunk">@@ -1 +1,12 @@</span>
+<span class="del">-[]</span>
+<span class="add">+[</span>
+<span class="add">+ [</span>
+<span class="add">+  0,</span>
+<span class="add">+  0,</span>
+<span class="add">+  0,</span>
+<span class="add">+  0,</span>
+<span class="add">+  1,</span>
+<span class="add">+  &quot;NonIndexableOperand&quot;,</span>
+<span class="add">+  &quot;compiler&quot;,</span>
+<span class="add">+  &quot;cannot index poool (variable of type int)&quot;</span>
+<span class="add">+ ]</span>
+<span class="add">+]</span></pre>
+<h4>证据与缩减</h4><pre>- representative 1049da1e7f48-v00: confirmed 3/3 (each replay: fresh baseline, fresh control and a fresh case session)
+- ops 3 -&gt; 3 (2 probes, 5.665 s, reduced ops confirmed 3/3); query targets narrowed to the key
+- lines: not reduced
+- group: 1 violation(s) in 1 run(s), projects caddyserver/caddy@c18099a0af5e, timings settled, seeds 2</pre>
+<h4>一年前版本上的重放</h4><p>未重放（该组没有一年前的版本可比）</p>
+<h4>可能相关的已有 issue（关键词搜索结果，要你核对）</h4><ul><li><a href="https://github.com/golang/go/issues/68075" target="_blank" rel="noopener">golang/go#68075</a> x/tools/gopls/internal/cmd: `gopls check` doesn&#x27;t wait for didOpen finish before it makes diagnostics request <span class="muted">(open, 2024-06-19)</span></li><li><a href="https://github.com/golang/go/issues/41436" target="_blank" rel="noopener">golang/go#41436</a> x/tools/go/analysis: a Diagnostic should indicate when it is a lint-style warning that should be ignored in generated code <span class="muted">(open, 2020-09-16)</span></li><li><a href="https://github.com/golang/go/issues/70085" target="_blank" rel="noopener">golang/go#70085</a> x/tools/gopls: add refactor.inline.variable-all code action <span class="muted">(open, 2024-10-29)</span></li><li><a href="https://github.com/golang/go/issues/50151" target="_blank" rel="noopener">golang/go#50151</a> x/tools/gopls: high cpu usage when make changes in package which have some cgo package dependents <span class="muted">(open, 2021-12-14)</span></li><li><a href="https://github.com/golang/go/issues/54461" target="_blank" rel="noopener">golang/go#54461</a> x/tools/gopls: regtest flakes due to hanging go commands <span class="muted">(open, 2022-08-15)</span></li></ul>
+<p class="muted">完整报告：<a href="gopls-r4-diagnostics-extra-nonindexableoperand-mutation-m2-ba152b/report.md" target="_blank" rel="noopener">gopls-r4-diagnostics-extra-nonindexableoperand-mutation-m2-ba152b/report.md</a> ·
+复现命令（在项目根目录运行）：<code>python3 scripts/lsptest/repro_violation.py data/lsptest/runs/main_v1/triage/gopls-r4-diagnostics-extra-nonindexableoperand-mutation-m2-ba152b/repro.json</code></p>
+<div class="judge"><p class="q">你的判断：实际（被测会话）这边的答案错了吗？</p><button type="button" class="choice" data-choice="bug" aria-pressed="false"><b>bug</b><small>是 bug</small></button><button type="button" class="choice chosen" data-choice="legitimate" aria-pressed="true"><b>legitimate</b><small>不算问题：两边都说得通</small></button><button type="button" class="choice" data-choice="tool-artifact" aria-pressed="false"><b>tool-artifact</b><small>工具自己的问题</small></button><button type="button" class="clear">清除</button><textarea class="note" rows="2" placeholder="备注（可选）：一句理由、unsure、对上号的 issue 链接……"></textarea></div>
+</div></details>
+<p class="differ">为什么请你再看：同上：“创建变量”生成 x := 0 后该变量被切片使用；类似的 NotAType 组判的是 bug。</p>
+
+<details class="item" id="gopls-r4-diagnostics-extra-nonsliceableoperand-mutation-m2-d80a9a" data-id="gopls-r4-diagnostics-extra-nonsliceableoperand-mutation-m2-d80a9a" data-n="3"><summary><b class="num">3.</b> <span class="state judged">已判断：legitimate</span><span class="differ"></span> <code>gopls-r4-diagnostics-extra-nonsliceableoperand-mutation-m2-d80a9a</code> · R4 编辑有效 · gopls · 成员 1 · 步骤 3→3</summary>
+<div class="body">
+<h3>[gopls v0.23.0] mutation:M2 edit is not valid (diagnostics:extra:NonSliceableOperand)</h3>
+<p><b>违反的规则</b>：Edit validity (R4): a quick fix must remove the diagnostic it targets without adding errors; formatting and organize imports applied twice must be no-ops; inserting a completion must not introduce a syntax error.</p>
+<p><b>现象</b>：<code>diagnostics:extra:NonSliceableOperand</code>；历史族/子检查：<code>mutation:M2</code></p>
+<h4>最少复现步骤</h4><pre>1. Start gopls v0.23.0 on the project root; answer workspace/configuration with the settings under Environment.
+2. textDocument/didOpen: `open pkg/container/docker_auth.go`
+3. textDocument/didChange: `change pkg/container/docker_auth.go (28, 39)-(28, 44) &quot;imge&quot;`
+4. textDocument/didChange: `change pkg/container/docker_auth.go (28, 2)-(28, 2) &quot;mge := 0\n\ti&quot;`
+5. Timing: wait until the server is idle after every step.
+6. textDocument/didOpen `pkg/container/docker_network.go`, `pkg/runner/step_action_remote.go` (the query step opens every target file that is not open), then wait until the server is idle.
+7. The quick fix above was applied in the same session: the targeted diagnostic must be gone and the error count must not exceed the one before the mutation.
+8. Query `textDocument/diagnostic` on `pkg/container/docker_auth.go` line 29, column 40 (LSP position {line: 28, character: 39}) (M2:quickfix-errors:Create variable imge); compare with the same query in a fresh session on the same content (expected).</pre>
+<h4>预期与实际的差别（红 = 预期，参照会话的答案；绿 = 实际，被测会话的答案）</h4><pre class="diff">--- expected
++++ actual
+<span class="hunk">@@ -1 +1,12 @@</span>
+<span class="del">-[]</span>
+<span class="add">+[</span>
+<span class="add">+ [</span>
+<span class="add">+  0,</span>
+<span class="add">+  0,</span>
+<span class="add">+  0,</span>
+<span class="add">+  0,</span>
+<span class="add">+  1,</span>
+<span class="add">+  &quot;NonSliceableOperand&quot;,</span>
+<span class="add">+  &quot;compiler&quot;,</span>
+<span class="add">+  &quot;cannot slice imge (variable of type int)&quot;</span>
+<span class="add">+ ]</span>
+<span class="add">+]</span></pre>
+<h4>证据与缩减</h4><pre>- representative 7fd3492bb479-v00: confirmed 3/3 (each replay: fresh baseline, fresh control and a fresh case session)
+- ops 3 -&gt; 3 (2 probes, 5.294 s, reduced ops confirmed 3/3); query targets narrowed to the key
+- lines: not reduced
+- group: 1 violation(s) in 1 run(s), projects nektos/act@4f411281417e, timings settled, seeds 1</pre>
+<h4>一年前版本上的重放</h4><p>未重放（该组没有一年前的版本可比）</p>
+<h4>可能相关的已有 issue（关键词搜索结果，要你核对）</h4><ul><li><a href="https://github.com/golang/go/issues/68075" target="_blank" rel="noopener">golang/go#68075</a> x/tools/gopls/internal/cmd: `gopls check` doesn&#x27;t wait for didOpen finish before it makes diagnostics request <span class="muted">(open, 2024-06-19)</span></li><li><a href="https://github.com/golang/go/issues/41436" target="_blank" rel="noopener">golang/go#41436</a> x/tools/go/analysis: a Diagnostic should indicate when it is a lint-style warning that should be ignored in generated code <span class="muted">(open, 2020-09-16)</span></li><li><a href="https://github.com/golang/go/issues/70085" target="_blank" rel="noopener">golang/go#70085</a> x/tools/gopls: add refactor.inline.variable-all code action <span class="muted">(open, 2024-10-29)</span></li><li><a href="https://github.com/golang/go/issues/50151" target="_blank" rel="noopener">golang/go#50151</a> x/tools/gopls: high cpu usage when make changes in package which have some cgo package dependents <span class="muted">(open, 2021-12-14)</span></li><li><a href="https://github.com/golang/go/issues/54461" target="_blank" rel="noopener">golang/go#54461</a> x/tools/gopls: regtest flakes due to hanging go commands <span class="muted">(open, 2022-08-15)</span></li></ul>
+<p class="muted">完整报告：<a href="gopls-r4-diagnostics-extra-nonsliceableoperand-mutation-m2-d80a9a/report.md" target="_blank" rel="noopener">gopls-r4-diagnostics-extra-nonsliceableoperand-mutation-m2-d80a9a/report.md</a> ·
+复现命令（在项目根目录运行）：<code>python3 scripts/lsptest/repro_violation.py data/lsptest/runs/main_v1/triage/gopls-r4-diagnostics-extra-nonsliceableoperand-mutation-m2-d80a9a/repro.json</code></p>
+<div class="judge"><p class="q">你的判断：实际（被测会话）这边的答案错了吗？</p><button type="button" class="choice" data-choice="bug" aria-pressed="false"><b>bug</b><small>是 bug</small></button><button type="button" class="choice chosen" data-choice="legitimate" aria-pressed="true"><b>legitimate</b><small>不算问题：两边都说得通</small></button><button type="button" class="choice" data-choice="tool-artifact" aria-pressed="false"><b>tool-artifact</b><small>工具自己的问题</small></button><button type="button" class="clear">清除</button><textarea class="note" rows="2" placeholder="备注（可选）：一句理由、unsure、对上号的 issue 链接……"></textarea></div>
+</div></details>
+<p class="differ">为什么请你再看：同一服务器、同一检查（从引用跳定义）的另外两组你判的是 bug（C8），这一组判的是 legitimate。</p>
+
+<details class="item" id="rust-analyzer-r3-definitionconsistency-changed-d-2c6179" data-id="rust-analyzer-r3-definitionconsistency-changed-d-2c6179" data-n="4"><summary><b class="num">4.</b> <span class="state judged">已判断：legitimate</span><span class="differ"></span> <code>rust-analyzer-r3-definitionconsistency-changed-d-2c6179</code> · R3 路径等价 · rust-analyzer · 成员 3 · 步骤 0→0</summary>
+<div class="body">
+<h3>[rust-analyzer 2026-09-21] definitionConsistency: two routes to the same fact disagree</h3>
+<p><b>违反的规则</b>：Route equivalence (R3): two protocol routes to the same fact (pull and push diagnostics, semanticTokens range and full, documentHighlight and references, definition at a symbol and at its references) must agree.</p>
+<p><b>现象</b>：<code>definitionConsistency:changed</code>；历史族/子检查：<code>d</code></p>
+<h4>最少复现步骤</h4><pre>1. Start rust-analyzer 2026-09-21 on the project root; answer workspace/configuration with the settings under Environment.
+2. `textDocument/definition` on `src/exercise.rs` at line 122, column 42 (LSP position {line: 121, character: 41}) gives the expected set; didOpen `src/exercise.rs` and `textDocument/definition` at the reference line 244, column 18 (LSP position {line: 243, character: 17}) must give the same set.</pre>
+<h4>预期与实际的差别（红 = 预期，参照会话的答案；绿 = 实际，被测会话的答案）</h4><pre class="diff">--- expected
++++ actual
+<span class="hunk">@@ -2,7 +2,7 @@</span>
+  [
+   &quot;src/exercise.rs&quot;,
+<span class="del">-  103,</span>
+<span class="add">+  243,</span>
+   7,
+<span class="del">-  103,</span>
+<span class="add">+  243,</span>
+   27
+  ]</pre>
+<h4>证据与缩减</h4><pre>- representative 27d79bab3edd-v00: confirmed 3/3 (each replay: fresh baseline, fresh control and a fresh case session)
+- ops 0 -&gt; 0 (0 probes, 0.0 s, reduced ops confirmed 3/3); query targets narrowed to the key
+- lines: not reduced
+- group: 3 violation(s) in 3 run(s), projects dani-garcia/vaultwarden@cc67d644f626, rust-lang/rustlings@a650509c789d, sxyazi/yazi@0ea4c5d9ef75, timings settled, seeds 1</pre>
+<h4>一年前版本上的重放</h4><p>未重放（该组没有一年前的版本可比）</p>
+<h4>可能相关的已有 issue（关键词搜索结果，要你核对）</h4><ul><li><a href="https://github.com/rust-lang/rust-analyzer/issues/8373" target="_blank" rel="noopener">rust-lang/rust-analyzer#8373</a> Monomorphised go to definition <span class="muted">(open, 2021-04-06)</span></li><li><a href="https://github.com/rust-lang/rust-analyzer/issues/17122" target="_blank" rel="noopener">rust-lang/rust-analyzer#17122</a> Go to Definition on Private Symbols <span class="muted">(open, 2024-04-22)</span></li><li><a href="https://github.com/rust-lang/rust-analyzer/issues/22482" target="_blank" rel="noopener">rust-lang/rust-analyzer#22482</a> Panics with &quot;invalid offset&quot; errors ( code: -32603) on &quot;Go to definition&quot; calls <span class="muted">(open, 2026-05-28)</span></li><li><a href="https://github.com/rust-lang/rust-analyzer/issues/14428" target="_blank" rel="noopener">rust-lang/rust-analyzer#14428</a> Go to definition on std types locks rustc <span class="muted">(open, 2023-03-28)</span></li><li><a href="https://github.com/rust-lang/rust-analyzer/issues/10700" target="_blank" rel="noopener">rust-lang/rust-analyzer#10700</a> [Feature Request] Go to Definition from the comments <span class="muted">(open, 2021-11-05)</span></li></ul>
+<p class="muted">完整报告：<a href="rust-analyzer-r3-definitionconsistency-changed-d-2c6179/report.md" target="_blank" rel="noopener">rust-analyzer-r3-definitionconsistency-changed-d-2c6179/report.md</a> ·
+复现命令（在项目根目录运行）：<code>python3 scripts/lsptest/repro_violation.py data/lsptest/runs/main_v1/triage/rust-analyzer-r3-definitionconsistency-changed-d-2c6179/repro.json</code></p>
+<div class="judge"><p class="q">你的判断：实际（被测会话）这边的答案错了吗？</p><button type="button" class="choice" data-choice="bug" aria-pressed="false"><b>bug</b><small>是 bug</small></button><button type="button" class="choice chosen" data-choice="legitimate" aria-pressed="true"><b>legitimate</b><small>不算问题：两边都说得通</small></button><button type="button" class="choice" data-choice="tool-artifact" aria-pressed="false"><b>tool-artifact</b><small>工具自己的问题</small></button><button type="button" class="clear">清除</button><textarea class="note" rows="2" placeholder="备注（可选）：一句理由、unsure、对上号的 issue 链接……"></textarea></div>
+</div></details>
+<p class="differ">为什么请你再看：新会话漏掉了测试文件里的一个引用，而历史会话能找到；这和基准里维护者修过的 gopls-43144（查引用不总搜测试文件）是同一种现象。</p>
+
+<details class="item" id="gopls-r1-references-extra-h9-0290a7" data-id="gopls-r1-references-extra-h9-0290a7" data-n="5"><summary><b class="num">5.</b> <span class="state judged">已判断：legitimate</span><span class="differ"></span> <code>gopls-r1-references-extra-h9-0290a7</code> · R1 历史无关 · gopls · 成员 3 · 步骤 18→7</summary>
+<div class="body">
+<h3>[gopls v0.23.0] references adds entries after edit inside a workspace window</h3>
+<p><b>违反的规则</b>：History independence (R1): after a sequence of edits that returns the documents to content C, every query must answer as in a fresh session opened on C. Fresh sessions on C agree with each other on this query; the session that went through the history does not.</p>
+<p><b>现象</b>：<code>references:extra</code>；历史族/子检查：<code>H9</code></p>
+<h4>最少复现步骤</h4><pre>1. Start gopls v0.23.0 on the project root; answer workspace/configuration with the settings under Environment.
+2. textDocument/didOpen: `open examples/http/main.go (then 200 ms)`
+3. textDocument/didOpen: `open examples/set-window-title/main.go (then 200 ms)`
+4. textDocument/didOpen: `open termios_unix.go (then 200 ms)`
+5. textDocument/didChange: `change termios_unix.go (8, 1)-(8, 1) &quot;(&quot; (then 200 ms)`
+6. textDocument/didClose: `close examples/set-window-title/main.go (then 200 ms)`
+7. textDocument/didOpen: `open examples/set-window-title/main.go (then 200 ms)`
+8. textDocument/didClose: `close termios_unix.go (then 200 ms)`
+9. Timing: send the steps 200 ms apart without waiting, then wait until idle.
+10. textDocument/didOpen `mouse.go` (the query step opens every target file that is not open), then wait until the server is idle.
+11. Query `textDocument/references` on `examples/http/main.go` line 38, column 43 (LSP position {line: 37, character: 42}); compare with the same query in a fresh session opened on the final content (expected).</pre>
+<h4>预期与实际的差别（红 = 预期，参照会话的答案；绿 = 实际，被测会话的答案）</h4><pre class="diff">--- expected
++++ actual
+<span class="hunk">@@ -1,3 +1,10 @@</span>
+ [
+<span class="add">+ [</span>
+<span class="add">+  &quot;cursed_renderer_test.go&quot;,</span>
+<span class="add">+  19,</span>
+<span class="add">+  42,</span>
+<span class="add">+  19,</span>
+<span class="add">+  47</span>
+<span class="add">+ ],</span>
+  [
+   &quot;examples/altscreen-toggle/main.go&quot;,
+<span class="hunk">@@ -491,4 +498,11 @@</span>
+  ],
+  [
+<span class="add">+  &quot;exec_test.go&quot;,</span>
+<span class="add">+  31,</span>
+<span class="add">+  41,</span>
+<span class="add">+  31,</span>
+<span class="add">+  46</span>
+<span class="add">+ ],</span>
+<span class="add">+ [</span>
+   &quot;options.go&quot;,
+   132,
+<span class="hunk">@@ -498,4 +512,18 @@</span>
+  ],
+  [
+<span class="add">+  &quot;options_test.go&quot;,</span>
+<span class="add">+  38,</span>
+<span class="add">+  41,</span>
+<span class="add">+  38,</span>
+<span class="add">+  46</span>
+<span class="add">+ ],</span>
+<span class="add">+ [</span>
+<span class="add">+  &quot;screen_test.go&quot;,</span>
+<span class="add">+  36,</span>
+<span class="add">+  41,</span>
+<span class="add">+  36,</span>
+<span class="add">+  46</span>
+<span class="add">+ ],</span>
+<span class="add">+ [</span>
+   &quot;tea.go&quot;,
+   52,
+<span class="hunk">@@ -559,4 +587,25 @@</span>
+   998,
+   42
+<span class="add">+ ],</span>
+<span class="add">+ [</span>
+<span class="add">+  &quot;tea_test.go&quot;,</span>
+<span class="add">+  36,</span>
+<span class="add">+  37,</span>
+<span class="add">+  36,</span>
+<span class="add">+  42</span>
+<span class="add">+ ],</span>
+<span class="add">+ [</span>
+<span class="add">+  &quot;tea_test.go&quot;,</span>
+<span class="add">+  243,</span>
+<span class="add">+  19,</span>
+<span class="add">+  243,</span>
+<span class="add">+  24</span>
+<span class="add">+ ],</span>
+<span class="add">+ [</span>
+<span class="add">+  &quot;tea_test.go&quot;,</span>
+<span class="add">+  622,</span>
+<span class="add">+  37,</span>
+<span class="add">+  622,</span>
+<span class="add">+  42</span>
+  ]
+ ]</pre>
+<h4>证据与缩减</h4><pre>- representative 12cd746378bc-v01: confirmed 3/3 (each replay: fresh baseline, fresh control and a fresh case session)
+- ops 18 -&gt; 7 (32 probes, 140.343 s, reduced ops confirmed 3/3); query targets narrowed to the key
+- lines: not reduced
+- group: 3 violation(s) in 3 run(s), projects charmbracelet/bubbletea@657aaae216e3, timings race0, race200, settled, seeds 1</pre>
+<h4>一年前版本上的重放</h4><p>未重放（该组没有一年前的版本可比）</p>
+<h4>可能相关的已有 issue（关键词搜索结果，要你核对）</h4><ul><li><a href="https://github.com/golang/go/issues/81408" target="_blank" rel="noopener">golang/go#81408</a> x/tools/gopls: issues many redundant `go list` invocations concurrently <span class="muted">(open, 2026-09-09)</span></li><li><a href="https://github.com/golang/go/issues/50151" target="_blank" rel="noopener">golang/go#50151</a> x/tools/gopls: high cpu usage when make changes in package which have some cgo package dependents <span class="muted">(open, 2021-12-14)</span></li><li><a href="https://github.com/golang/go/issues/38028" target="_blank" rel="noopener">golang/go#38028</a> x/tools/gopls: support change signature refactoring <span class="muted">(open, 2020-03-23)</span></li><li><a href="https://github.com/golang/go/issues/64936" target="_blank" rel="noopener">golang/go#64936</a> x/tools/gopls: support for comment rendering <span class="muted">(open, 2024-01-02)</span></li><li><a href="https://github.com/golang/go/issues/68087" target="_blank" rel="noopener">golang/go#68087</a> x/tools/gopls: `go clean` fails with ENOTEMPTY (openbsd) causing gopls test flakes <span class="muted">(open, 2024-06-20)</span></li></ul>
+<p class="muted">完整报告：<a href="gopls-r1-references-extra-h9-0290a7/report.md" target="_blank" rel="noopener">gopls-r1-references-extra-h9-0290a7/report.md</a> ·
+复现命令（在项目根目录运行）：<code>python3 scripts/lsptest/repro_violation.py data/lsptest/runs/main_v1/triage/gopls-r1-references-extra-h9-0290a7/repro.json</code></p>
+<div class="judge"><p class="q">你的判断：实际（被测会话）这边的答案错了吗？</p><button type="button" class="choice" data-choice="bug" aria-pressed="false"><b>bug</b><small>是 bug</small></button><button type="button" class="choice chosen" data-choice="legitimate" aria-pressed="true"><b>legitimate</b><small>不算问题：两边都说得通</small></button><button type="button" class="choice" data-choice="tool-artifact" aria-pressed="false"><b>tool-artifact</b><small>工具自己的问题</small></button><button type="button" class="clear">清除</button><textarea class="note" rows="2" placeholder="备注（可选）：一句理由、unsure、对上号的 issue 链接……"></textarea></div>
+</div></details>
+<p class="differ">为什么请你再看：TS7 在一次编辑后只返回新会话 6 个引用中的 1 个；TS6 上同样丢引用的组你判的是 bug。</p>
+
+<details class="item" id="ts7-r1-references-missing-h9-2dd24a" data-id="ts7-r1-references-missing-h9-2dd24a" data-n="6"><summary><b class="num">6.</b> <span class="state judged">已判断：legitimate</span><span class="differ"></span> <code>ts7-r1-references-missing-h9-2dd24a</code> · R1 历史无关 · ts7 · 成员 1 · 步骤 14→5</summary>
+<div class="body">
+<h3>[ts7 7.0.2] references misses entries after edit inside a workspace window</h3>
+<p><b>违反的规则</b>：History independence (R1): after a sequence of edits that returns the documents to content C, every query must answer as in a fresh session opened on C. Fresh sessions on C agree with each other on this query; the session that went through the history does not.</p>
+<p><b>现象</b>：<code>references:missing</code>；历史族/子检查：<code>H9</code></p>
+<h4>最少复现步骤</h4><pre>1. Start ts7 7.0.2 on the project root; answer workspace/configuration with the settings under Environment.
+2. textDocument/didOpen: `open examples/V7/disableNativeValidation.tsx`
+3. textDocument/didOpen: `open src/__tests__/logic/getValidateError.test.ts`
+4. textDocument/didOpen: `open src/__tests__/logic/skipValidation.test.ts`
+5. textDocument/didOpen: `open app/src/form.tsx`
+6. textDocument/didChange: `change app/src/form.tsx (1, 14)-(1, 25) &quot;&quot;`
+7. Timing: wait until the server is idle after every step.
+8. Query `textDocument/references` on `src/__tests__/logic/getValidateError.test.ts` line 2, column 15 (LSP position {line: 1, character: 14}); compare with the same query in a fresh session opened on the final content (expected).</pre>
+<h4>预期与实际的差别（红 = 预期，参照会话的答案；绿 = 实际，被测会话的答案）</h4><pre class="diff">--- expected
++++ actual
+<span class="hunk">@@ -6,39 +6,4 @@</span>
+   1,
+   34
+<span class="del">- ],</span>
+<span class="del">- [</span>
+<span class="del">-  &quot;src/form.tsx&quot;,</span>
+<span class="del">-  6,</span>
+<span class="del">-  7,</span>
+<span class="del">-  6,</span>
+<span class="del">-  11</span>
+<span class="del">- ],</span>
+<span class="del">- [</span>
+<span class="del">-  &quot;src/form.tsx&quot;,</span>
+<span class="del">-  38,</span>
+<span class="del">-  15,</span>
+<span class="del">-  38,</span>
+<span class="del">-  19</span>
+<span class="del">- ],</span>
+<span class="del">- [</span>
+<span class="del">-  &quot;src/form.tsx&quot;,</span>
+<span class="del">-  44,</span>
+<span class="del">-  14,</span>
+<span class="del">-  44,</span>
+<span class="del">-  18</span>
+<span class="del">- ],</span>
+<span class="del">- [</span>
+<span class="del">-  &quot;src/form.tsx&quot;,</span>
+<span class="del">-  46,</span>
+<span class="del">-  16,</span>
+<span class="del">-  46,</span>
+<span class="del">-  20</span>
+<span class="del">- ],</span>
+<span class="del">- [</span>
+<span class="del">-  &quot;src/utils/noop.ts&quot;,</span>
+<span class="del">-  0,</span>
+<span class="del">-  24,</span>
+<span class="del">-  0,</span>
+<span class="del">-  28</span>
+  ]
+ ]</pre>
+<h4>证据与缩减</h4><pre>- representative d682da8dbdea-v00: confirmed 3/3 (each replay: fresh baseline, fresh control and a fresh case session)
+- ops 14 -&gt; 5 (6 probes, 190.331 s, reduced ops confirmed 3/3); query targets narrowed to the key
+- lines: not reduced
+- group: 1 violation(s) in 1 run(s), projects react-hook-form/react-hook-form@5fd9ef65290b, timings settled, seeds 3</pre>
+<h4>一年前版本上的重放</h4><p>未重放（该组没有一年前的版本可比）</p>
+<h4>可能相关的已有 issue（关键词搜索结果，要你核对）</h4><ul><li><a href="https://github.com/microsoft/typescript-go/issues/4262" target="_blank" rel="noopener">microsoft/typescript-go#4262</a> Non-deterministic `TS2305 &quot;has no exported member&quot;` errors across project references with `--emitDeclarationOnly` <span class="muted">(closed, 2026-06-10)</span></li><li><a href="https://github.com/microsoft/typescript-go/issues/4230" target="_blank" rel="noopener">microsoft/typescript-go#4230</a> Behavior difference: tsgo no longer infer variadic `args` type when `arguments[...]` is referenced inside plain js function body <span class="muted">(closed, 2026-06-06)</span></li><li><a href="https://github.com/microsoft/typescript-go/issues/3787" target="_blank" rel="noopener">microsoft/typescript-go#3787</a> tsgo and tsc diverge on incomplete composite-ref declaration cache: TS2305 vs filterable TS6305 <span class="muted">(closed, 2026-05-09)</span></li><li><a href="https://github.com/microsoft/typescript-go/issues/2666" target="_blank" rel="noopener">microsoft/typescript-go#2666</a> `tsgo --build` fails to invalidate incremental cache after dependency update <span class="muted">(closed, 2026-02-04)</span></li><li><a href="https://github.com/microsoft/typescript-go/issues/3610" target="_blank" rel="noopener">microsoft/typescript-go#3610</a> API: additional Checker methods for transpiler consumers (follow-up to #3403) <span class="muted">(closed, 2026-04-25)</span></li></ul>
+<p class="muted">完整报告：<a href="ts7-r1-references-missing-h9-2dd24a/report.md" target="_blank" rel="noopener">ts7-r1-references-missing-h9-2dd24a/report.md</a> ·
+复现命令（在项目根目录运行）：<code>python3 scripts/lsptest/repro_violation.py data/lsptest/runs/main_v1/triage/ts7-r1-references-missing-h9-2dd24a/repro.json</code></p>
+<div class="judge"><p class="q">你的判断：实际（被测会话）这边的答案错了吗？</p><button type="button" class="choice" data-choice="bug" aria-pressed="false"><b>bug</b><small>是 bug</small></button><button type="button" class="choice chosen" data-choice="legitimate" aria-pressed="true"><b>legitimate</b><small>不算问题：两边都说得通</small></button><button type="button" class="choice" data-choice="tool-artifact" aria-pressed="false"><b>tool-artifact</b><small>工具自己的问题</small></button><button type="button" class="clear">清除</button><textarea class="note" rows="2" placeholder="备注（可选）：一句理由、unsure、对上号的 issue 链接……"></textarea></div>
+</div></details>
+<h2>二、判为 bug 的组：每组写一句理由</h2>
+
+<details class="item" id="gopls-r2-codeactionresolve-changed-codeaction-70b3e9" data-id="gopls-r2-codeactionresolve-changed-codeaction-70b3e9" data-n="7"><summary><b class="num">7.</b> <span class="state judged">已判断：bug</span><span class="differ"></span> <code>gopls-r2-codeactionresolve-changed-codeaction-70b3e9</code> · R2 句柄有效 · gopls · 成员 3 · 步骤 2→2</summary>
+<div class="body">
+<h3>[gopls v0.23.0] a stale codeAction handle resolves to a different edit after an intervening edit</h3>
+<p><b>违反的规则</b>：Handle validity (R2): a code-action or completion handle minted before an edit and resolved after it must fail, return no edit, or return the same edit as a fresh handle for the same item.</p>
+<p><b>现象</b>：<code>codeActionResolve:changed</code>；历史族/子检查：<code>codeAction</code></p>
+<h4>最少复现步骤</h4><pre>1. Start gopls v0.23.0 on the project root; answer workspace/configuration with the settings under Environment.
+2. didOpen `pkg/container/linux_container_environment_extensions_test.go`; request code actions at line 35, column 39 (LSP position {line: 34, character: 38}) and resolve them; didChange: insert `&quot;\n&quot;` at line 1 (top); wait until idle; resolve the OLD code action `Split arguments into separate lines`; request and resolve a fresh one at the mapped position: the old handle must fail, give no edit, or give the fresh handle&#x27;s edit.</pre>
+<h4>预期与实际的差别（红 = 预期，参照会话的答案；绿 = 实际，被测会话的答案）</h4><pre class="diff">--- expected
++++ actual
+<span class="hunk">@@ -2,24 +2,32 @@</span>
+  [
+   &quot;pkg/container/linux_container_environment_extensions_test.go&quot;,
+<span class="del">-  35,</span>
+<span class="del">-  16,</span>
+<span class="del">-  35,</span>
+<span class="del">-  16,</span>
+<span class="add">+  34,</span>
+<span class="add">+  28,</span>
+<span class="add">+  34,</span>
+<span class="add">+  30,</span>
+<span class="add">+  &quot;,\n\t\t\t\t&quot;</span>
+<span class="add">+ ],</span>
+<span class="add">+ [</span>
+<span class="add">+  &quot;pkg/container/linux_container_environment_extensions_test.go&quot;,</span>
+<span class="add">+  34,</span>
+<span class="add">+  4,</span>
+<span class="add">+  34,</span>
+<span class="add">+  4,</span>
+   &quot;\n\t\t\t\t&quot;
+  ],
+  [
+   &quot;pkg/container/linux_container_environment_extensions_test.go&quot;,
+<span class="del">-  35,</span>
+<span class="del">-  29,</span>
+<span class="del">-  35,</span>
+<span class="del">-  31,</span>
+<span class="add">+  34,</span>
+<span class="add">+  49,</span>
+<span class="add">+  34,</span>
+<span class="add">+  51,</span>
+   &quot;,\n\t\t\t\t&quot;
+  ],
+  [
+   &quot;pkg/container/linux_container_environment_extensions_test.go&quot;,
+<span class="del">-  35,</span>
+<span class="del">-  46,</span>
+<span class="del">-  35,</span>
+<span class="del">-  46,</span>
+<span class="add">+  34,</span>
+<span class="add">+  81,</span>
+<span class="add">+  34,</span>
+<span class="add">+  81,</span>
+   &quot;,\n\t\t\t&quot;
+  ]</pre>
+<h4>证据与缩减</h4><pre>- representative 8253217867f9-v00: confirmed 3/3 (each replay: fresh baseline, fresh control and a fresh case session)
+- ops 2 -&gt; 2 (0 probes, 0.0 s, reduced ops confirmed 3/3); query targets narrowed to the key
+- lines: not reduced
+- group: 3 violation(s) in 3 run(s), projects caddyserver/caddy@c18099a0af5e, charmbracelet/bubbletea@657aaae216e3, nektos/act@4f411281417e, timings settled, seeds 2</pre>
+<h4>一年前版本上的重放</h4><p>未重放（该组没有一年前的版本可比）</p>
+<h4>可能相关的已有 issue（关键词搜索结果，要你核对）</h4><ul><li><a href="https://github.com/golang/go/issues/71314" target="_blank" rel="noopener">golang/go#71314</a> x/tools/gopls: gopls Extracts declarations to new file when a liveshare guest puts a cursor on a function name <span class="muted">(closed, 2025-01-17)</span></li></ul>
+<p class="muted">完整报告：<a href="gopls-r2-codeactionresolve-changed-codeaction-70b3e9/report.md" target="_blank" rel="noopener">gopls-r2-codeactionresolve-changed-codeaction-70b3e9/report.md</a> ·
+复现命令（在项目根目录运行）：<code>python3 scripts/lsptest/repro_violation.py data/lsptest/runs/main_v1/triage/gopls-r2-codeactionresolve-changed-codeaction-70b3e9/repro.json</code></p>
+<div class="judge"><p class="q">你的判断：实际（被测会话）这边的答案错了吗？</p><button type="button" class="choice chosen" data-choice="bug" aria-pressed="true"><b>bug</b><small>是 bug</small></button><button type="button" class="choice" data-choice="legitimate" aria-pressed="false"><b>legitimate</b><small>不算问题：两边都说得通</small></button><button type="button" class="choice" data-choice="tool-artifact" aria-pressed="false"><b>tool-artifact</b><small>工具自己的问题</small></button><button type="button" class="clear">清除</button><textarea class="note" rows="2" placeholder="备注（可选）：一句理由、unsure、对上号的 issue 链接……"></textarea></div>
+</div></details>
+
+<details class="item" id="rust-analyzer-r2-completionresolve-changed-completion-3170a1" data-id="rust-analyzer-r2-completionresolve-changed-completion-3170a1" data-n="8"><summary><b class="num">8.</b> <span class="state judged">已判断：bug</span><span class="differ"></span> <code>rust-analyzer-r2-completionresolve-changed-completion-3170a1</code> · R2 句柄有效 · rust-analyzer · 成员 3 · 步骤 2→2</summary>
+<div class="body">
+<h3>[rust-analyzer 2026-09-21] a stale completion handle resolves to a different edit after an intervening edit</h3>
+<p><b>违反的规则</b>：Handle validity (R2): a code-action or completion handle minted before an edit and resolved after it must fail, return no edit, or return the same edit as a fresh handle for the same item.</p>
+<p><b>现象</b>：<code>completionResolve:changed</code>；历史族/子检查：<code>completion</code></p>
+<h4>最少复现步骤</h4><pre>1. Start rust-analyzer 2026-09-21 on the project root; answer workspace/configuration with the settings under Environment.
+2. didOpen `yazi-parser/src/tasks/spawn.rs`; request completion items at line 6, column 9 (LSP position {line: 5, character: 8}) and resolve them; didChange: insert `&quot;\n\n&quot;` at line 6 (above); wait until idle; resolve the OLD completion item `anyhow::`; request and resolve a fresh one at the mapped position: the old handle must fail, give no edit, or give the fresh handle&#x27;s edit.</pre>
+<h4>预期与实际的差别（红 = 预期，参照会话的答案；绿 = 实际，被测会话的答案）</h4><pre class="diff">--- expected
++++ actual
+<span class="hunk">@@ -2,7 +2,7 @@</span>
+  [
+   &quot;textEdit&quot;,
+<span class="del">-  7,</span>
+<span class="del">-  2,</span>
+<span class="del">-  7,</span>
+<span class="add">+  6,</span>
+<span class="add">+  0,</span>
+<span class="add">+  5,</span>
+   8,
+   &quot;anyhow::&quot;</pre>
+<h4>证据与缩减</h4><pre>- representative 308d26953c2a-v00: confirmed 3/3 (each replay: fresh baseline, fresh control and a fresh case session)
+- ops 2 -&gt; 2 (0 probes, 0.0 s, reduced ops confirmed 3/3); query targets narrowed to the key
+- lines: not reduced
+- group: 3 violation(s) in 3 run(s), projects BurntSushi/ripgrep@3fce3b5bb023, rtk-ai/rtk@b748a5f75563, sxyazi/yazi@0ea4c5d9ef75, timings settled, seeds 1</pre>
+<h4>一年前版本上的重放</h4><p>未重放（该组没有一年前的版本可比）</p>
+<h4>可能相关的已有 issue（关键词搜索结果，要你核对）</h4><ul><li><a href="https://github.com/rust-lang/rust-analyzer/issues/16240" target="_blank" rel="noopener">rust-lang/rust-analyzer#16240</a> No autocompletion for `inherent_associated_types` nightly feature <span class="muted">(open, 2024-01-03)</span></li><li><a href="https://github.com/rust-lang/rust-analyzer/issues/18363" target="_blank" rel="noopener">rust-lang/rust-analyzer#18363</a> Auto-imports not working in Kate <span class="muted">(closed, 2024-10-21)</span></li><li><a href="https://github.com/rust-lang/rust-analyzer/issues/18547" target="_blank" rel="noopener">rust-lang/rust-analyzer#18547</a> Autocomplete suggestion changes to something random once selected <span class="muted">(closed, 2024-11-23)</span></li><li><a href="https://github.com/rust-lang/rust-analyzer/issues/18504" target="_blank" rel="noopener">rust-lang/rust-analyzer#18504</a> No signatures shown in completion popup <span class="muted">(closed, 2024-11-11)</span></li><li><a href="https://github.com/rust-lang/rust-analyzer/issues/13786" target="_blank" rel="noopener">rust-lang/rust-analyzer#13786</a> Borrow/BorrowMut auto importing completions are confusing for newcomers <span class="muted">(closed, 2022-12-16)</span></li></ul>
+<p class="muted">完整报告：<a href="rust-analyzer-r2-completionresolve-changed-completion-3170a1/report.md" target="_blank" rel="noopener">rust-analyzer-r2-completionresolve-changed-completion-3170a1/report.md</a> ·
+复现命令（在项目根目录运行）：<code>python3 scripts/lsptest/repro_violation.py data/lsptest/runs/main_v1/triage/rust-analyzer-r2-completionresolve-changed-completion-3170a1/repro.json</code></p>
+<div class="judge"><p class="q">你的判断：实际（被测会话）这边的答案错了吗？</p><button type="button" class="choice chosen" data-choice="bug" aria-pressed="true"><b>bug</b><small>是 bug</small></button><button type="button" class="choice" data-choice="legitimate" aria-pressed="false"><b>legitimate</b><small>不算问题：两边都说得通</small></button><button type="button" class="choice" data-choice="tool-artifact" aria-pressed="false"><b>tool-artifact</b><small>工具自己的问题</small></button><button type="button" class="clear">清除</button><textarea class="note" rows="2" placeholder="备注（可选）：一句理由、unsure、对上号的 issue 链接……"></textarea></div>
+</div></details>
+
+<details class="item" id="gopls-r4-diagnostics-extra-mutation-m2-111975" data-id="gopls-r4-diagnostics-extra-mutation-m2-111975" data-n="9"><summary><b class="num">9.</b> <span class="state judged">已判断：bug</span><span class="differ"></span> <code>gopls-r4-diagnostics-extra-mutation-m2-111975</code> · R4 编辑有效 · gopls · 成员 1 · 步骤 3→3</summary>
+<div class="body">
+<h3>[gopls v0.23.0] mutation:M2 edit is not valid (diagnostics:extra:?)</h3>
+<p><b>违反的规则</b>：Edit validity (R4): a quick fix must remove the diagnostic it targets without adding errors; formatting and organize imports applied twice must be no-ops; inserting a completion must not introduce a syntax error.</p>
+<p><b>现象</b>：<code>diagnostics:extra:?</code>；历史族/子检查：<code>mutation:M2</code></p>
+<h4>最少复现步骤</h4><pre>1. Start gopls v0.23.0 on the project root; answer workspace/configuration with the settings under Environment.
+2. textDocument/didOpen: `open src/pattern_test.go`
+3. textDocument/didChange: `change src/pattern_test.go (162, 9)-(162, 21) &quot;buildPttern&quot;`
+4. textDocument/didChange: `change src/pattern_test.go (182, 5)-(182, 5) &quot;buildPttern(true1 bool, result, *[]int func(caseSensitive bool, normalize bool, forward bool, input *util.Chars, pattern []rune, withPos bool, slab *util.Slab) (algo.Result, *[]int), extended bool, CaseSmart Case, false1, true2, false2, true3 bool, range []Range, delimiter Delimiter, r []rune) any {\n\tpanic(\&quot;unimplemented\&quot;)\n}\n\nfunc &quot;`
+5. Timing: wait until the server is idle after every step.
+6. textDocument/didOpen `src/reader.go`, `src/util/concurrent_set.go` (the query step opens every target file that is not open), then wait until the server is idle.
+7. The quick fix above was applied in the same session: the targeted diagnostic must be gone and the error count must not exceed the one before the mutation.
+8. Query `textDocument/diagnostic` on `src/pattern_test.go` line 163, column 10 (LSP position {line: 162, character: 9}) (M2:quickfix-errors:Create function buildPttern); compare with the same query in a fresh session on the same content (expected).</pre>
+<h4>预期与实际的差别（红 = 预期，参照会话的答案；绿 = 实际，被测会话的答案）</h4><pre class="diff">--- expected
++++ actual
+<span class="hunk">@@ -1 +1,12 @@</span>
+<span class="del">-[]</span>
+<span class="add">+[</span>
+<span class="add">+ [</span>
+<span class="add">+  0,</span>
+<span class="add">+  0,</span>
+<span class="add">+  0,</span>
+<span class="add">+  0,</span>
+<span class="add">+  1,</span>
+<span class="add">+  &quot;&quot;,</span>
+<span class="add">+  &quot;syntax&quot;,</span>
+<span class="add">+  &quot;missing parameter name&quot;</span>
+<span class="add">+ ]</span>
+<span class="add">+]</span></pre>
+<h4>证据与缩减</h4><pre>- representative 9bb8ccd49c7b-v01: confirmed 3/3 (each replay: fresh baseline, fresh control and a fresh case session)
+- ops 3 -&gt; 3 (2 probes, 4.436 s, reduced ops confirmed 3/3); query targets narrowed to the key
+- lines: not reduced
+- group: 1 violation(s) in 1 run(s), projects junegunn/fzf@b1be3a8be1b8, timings settled, seeds 1</pre>
+<h4>一年前版本上的重放</h4><p>未重放（该组没有一年前的版本可比）</p>
+<h4>可能相关的已有 issue（关键词搜索结果，要你核对）</h4><ul><li><a href="https://github.com/golang/go/issues/68075" target="_blank" rel="noopener">golang/go#68075</a> x/tools/gopls/internal/cmd: `gopls check` doesn&#x27;t wait for didOpen finish before it makes diagnostics request <span class="muted">(open, 2024-06-19)</span></li><li><a href="https://github.com/golang/go/issues/41436" target="_blank" rel="noopener">golang/go#41436</a> x/tools/go/analysis: a Diagnostic should indicate when it is a lint-style warning that should be ignored in generated code <span class="muted">(open, 2020-09-16)</span></li><li><a href="https://github.com/golang/go/issues/70085" target="_blank" rel="noopener">golang/go#70085</a> x/tools/gopls: add refactor.inline.variable-all code action <span class="muted">(open, 2024-10-29)</span></li><li><a href="https://github.com/golang/go/issues/50151" target="_blank" rel="noopener">golang/go#50151</a> x/tools/gopls: high cpu usage when make changes in package which have some cgo package dependents <span class="muted">(open, 2021-12-14)</span></li><li><a href="https://github.com/golang/go/issues/54461" target="_blank" rel="noopener">golang/go#54461</a> x/tools/gopls: regtest flakes due to hanging go commands <span class="muted">(open, 2022-08-15)</span></li></ul>
+<p class="muted">完整报告：<a href="gopls-r4-diagnostics-extra-mutation-m2-111975/report.md" target="_blank" rel="noopener">gopls-r4-diagnostics-extra-mutation-m2-111975/report.md</a> ·
+复现命令（在项目根目录运行）：<code>python3 scripts/lsptest/repro_violation.py data/lsptest/runs/main_v1/triage/gopls-r4-diagnostics-extra-mutation-m2-111975/repro.json</code></p>
+<div class="judge"><p class="q">你的判断：实际（被测会话）这边的答案错了吗？</p><button type="button" class="choice chosen" data-choice="bug" aria-pressed="true"><b>bug</b><small>是 bug</small></button><button type="button" class="choice" data-choice="legitimate" aria-pressed="false"><b>legitimate</b><small>不算问题：两边都说得通</small></button><button type="button" class="choice" data-choice="tool-artifact" aria-pressed="false"><b>tool-artifact</b><small>工具自己的问题</small></button><button type="button" class="clear">清除</button><textarea class="note" rows="2" placeholder="备注（可选）：一句理由、unsure、对上号的 issue 链接……"></textarea></div>
+</div></details>
+
+<details class="item" id="gopls-r4-diagnostics-extra-notatype-mutation-m2-477181" data-id="gopls-r4-diagnostics-extra-notatype-mutation-m2-477181" data-n="10"><summary><b class="num">10.</b> <span class="state judged">已判断：bug</span><span class="differ"></span> <code>gopls-r4-diagnostics-extra-notatype-mutation-m2-477181</code> · R4 编辑有效 · gopls · 成员 2 · 步骤 3→3</summary>
+<div class="body">
+<h3>[gopls v0.23.0] mutation:M2 edit is not valid (diagnostics:extra:NotAType)</h3>
+<p><b>违反的规则</b>：Edit validity (R4): a quick fix must remove the diagnostic it targets without adding errors; formatting and organize imports applied twice must be no-ops; inserting a completion must not introduce a syntax error.</p>
+<p><b>现象</b>：<code>diagnostics:extra:NotAType</code>；历史族/子检查：<code>mutation:M2</code></p>
+<h4>最少复现步骤</h4><pre>1. Start gopls v0.23.0 on the project root; answer workspace/configuration with the settings under Environment.
+2. textDocument/didOpen: `open examples/list-default/main.go`
+3. textDocument/didChange: `change examples/list-default/main.go (78, 6)-(78, 11) &quot;moddel&quot;`
+4. textDocument/didChange: `change examples/list-default/main.go (78, 2)-(78, 2) &quot;oddel := 0\n\tm&quot;`
+5. Timing: wait until the server is idle after every step.
+6. textDocument/didOpen `examples/list-fancy/main.go`, `examples/splash/main.go` (the query step opens every target file that is not open), then wait until the server is idle.
+7. The quick fix above was applied in the same session: the targeted diagnostic must be gone and the error count must not exceed the one before the mutation.
+8. Query `textDocument/diagnostic` on `examples/list-default/main.go` line 79, column 7 (LSP position {line: 78, character: 6}) (M2:quickfix-errors:Create variable moddel); compare with the same query in a fresh session on the same content (expected).</pre>
+<h4>预期与实际的差别（红 = 预期，参照会话的答案；绿 = 实际，被测会话的答案）</h4><pre class="diff">--- expected
++++ actual
+<span class="hunk">@@ -1 +1,12 @@</span>
+<span class="del">-[]</span>
+<span class="add">+[</span>
+<span class="add">+ [</span>
+<span class="add">+  0,</span>
+<span class="add">+  0,</span>
+<span class="add">+  0,</span>
+<span class="add">+  0,</span>
+<span class="add">+  1,</span>
+<span class="add">+  &quot;NotAType&quot;,</span>
+<span class="add">+  &quot;compiler&quot;,</span>
+<span class="add">+  &quot;moddel (local variable) is not a type&quot;</span>
+<span class="add">+ ]</span>
+<span class="add">+]</span></pre>
+<h4>证据与缩减</h4><pre>- representative 73fef80b14e5-v00: confirmed 3/3 (each replay: fresh baseline, fresh control and a fresh case session)
+- ops 3 -&gt; 3 (2 probes, 3.578 s, reduced ops confirmed 3/3); query targets narrowed to the key
+- lines: not reduced
+- group: 2 violation(s) in 2 run(s), projects charmbracelet/bubbletea@657aaae216e3, fatedier/frp@d20a23299600, timings settled, seeds 1, 2</pre>
+<h4>一年前版本上的重放</h4><p>未重放（该组没有一年前的版本可比）</p>
+<h4>可能相关的已有 issue（关键词搜索结果，要你核对）</h4><ul><li><a href="https://github.com/golang/go/issues/68075" target="_blank" rel="noopener">golang/go#68075</a> x/tools/gopls/internal/cmd: `gopls check` doesn&#x27;t wait for didOpen finish before it makes diagnostics request <span class="muted">(open, 2024-06-19)</span></li><li><a href="https://github.com/golang/go/issues/41436" target="_blank" rel="noopener">golang/go#41436</a> x/tools/go/analysis: a Diagnostic should indicate when it is a lint-style warning that should be ignored in generated code <span class="muted">(open, 2020-09-16)</span></li><li><a href="https://github.com/golang/go/issues/70085" target="_blank" rel="noopener">golang/go#70085</a> x/tools/gopls: add refactor.inline.variable-all code action <span class="muted">(open, 2024-10-29)</span></li><li><a href="https://github.com/golang/go/issues/50151" target="_blank" rel="noopener">golang/go#50151</a> x/tools/gopls: high cpu usage when make changes in package which have some cgo package dependents <span class="muted">(open, 2021-12-14)</span></li><li><a href="https://github.com/golang/go/issues/54461" target="_blank" rel="noopener">golang/go#54461</a> x/tools/gopls: regtest flakes due to hanging go commands <span class="muted">(open, 2022-08-15)</span></li></ul>
+<p class="muted">完整报告：<a href="gopls-r4-diagnostics-extra-notatype-mutation-m2-477181/report.md" target="_blank" rel="noopener">gopls-r4-diagnostics-extra-notatype-mutation-m2-477181/report.md</a> ·
+复现命令（在项目根目录运行）：<code>python3 scripts/lsptest/repro_violation.py data/lsptest/runs/main_v1/triage/gopls-r4-diagnostics-extra-notatype-mutation-m2-477181/repro.json</code></p>
+<div class="judge"><p class="q">你的判断：实际（被测会话）这边的答案错了吗？</p><button type="button" class="choice chosen" data-choice="bug" aria-pressed="true"><b>bug</b><small>是 bug</small></button><button type="button" class="choice" data-choice="legitimate" aria-pressed="false"><b>legitimate</b><small>不算问题：两边都说得通</small></button><button type="button" class="choice" data-choice="tool-artifact" aria-pressed="false"><b>tool-artifact</b><small>工具自己的问题</small></button><button type="button" class="clear">清除</button><textarea class="note" rows="2" placeholder="备注（可选）：一句理由、unsure、对上号的 issue 链接……"></textarea></div>
+</div></details>
+
+<details class="item" id="gopls-r4-diagnostics-extra-undeclaredname-wrongar-mutation-m3-946c39" data-id="gopls-r4-diagnostics-extra-undeclaredname-wrongar-mutation-m3-946c39" data-n="11"><summary><b class="num">11.</b> <span class="state judged">已判断：bug</span><span class="differ"></span> <code>gopls-r4-diagnostics-extra-undeclaredname-wrongar-mutation-m3-946c39</code> · R4 编辑有效 · gopls · 成员 1 · 步骤 3→3</summary>
+<div class="body">
+<h3>[gopls v0.23.0] mutation:M3 edit is not valid (diagnostics:extra:UndeclaredName,WrongArgCount)</h3>
+<p><b>违反的规则</b>：Edit validity (R4): a quick fix must remove the diagnostic it targets without adding errors; formatting and organize imports applied twice must be no-ops; inserting a completion must not introduce a syntax error.</p>
+<p><b>现象</b>：<code>diagnostics:extra:UndeclaredName,WrongArgCount</code>；历史族/子检查：<code>mutation:M3</code></p>
+<h4>最少复现步骤</h4><pre>1. Start gopls v0.23.0 on the project root; answer workspace/configuration with the settings under Environment.
+2. textDocument/didOpen: `open pkg/config/legacy/value.go`
+3. textDocument/didChange: `change pkg/config/legacy/value.go (71, 26)-(71, 27) &quot;&quot;`
+4. textDocument/didChange: `change pkg/config/legacy/value.go (65, 1)-(66, 1) &quot;&quot;`
+5. Timing: wait until the server is idle after every step.
+6. textDocument/didOpen `pkg/config/load_test.go`, `pkg/transport/tls.go` (the query step opens every target file that is not open), then wait until the server is idle.
+7. The quick fix above was applied in the same session: the targeted diagnostic must be gone and the error count must not exceed the one before the mutation.
+8. Query `textDocument/diagnostic` on `pkg/config/legacy/value.go` line 66, column 6 (LSP position {line: 65, character: 5}) (M3:quickfix-errors:Remove variable b); compare with the same query in a fresh session on the same content (expected).</pre>
+<h4>预期与实际的差别（红 = 预期，参照会话的答案；绿 = 实际，被测会话的答案）</h4><pre class="diff">--- expected
++++ actual
+<span class="hunk">@@ -1 +1,22 @@</span>
+<span class="del">-[]</span>
+<span class="add">+[</span>
+<span class="add">+ [</span>
+<span class="add">+  0,</span>
+<span class="add">+  0,</span>
+<span class="add">+  0,</span>
+<span class="add">+  0,</span>
+<span class="add">+  1,</span>
+<span class="add">+  &quot;UndeclaredName&quot;,</span>
+<span class="add">+  &quot;compiler&quot;,</span>
+<span class="add">+  &quot;undefined: b&quot;</span>
+<span class="add">+ ],</span>
+<span class="add">+ [</span>
+<span class="add">+  0,</span>
+<span class="add">+  0,</span>
+<span class="add">+  0,</span>
+<span class="add">+  0,</span>
+<span class="add">+  1,</span>
+<span class="add">+  &quot;WrongArgCount&quot;,</span>
+<span class="add">+  &quot;compiler&quot;,</span>
+<span class="add">+  &quot;not enough arguments in call to RenderContent have () want ([]byte)&quot;</span>
+<span class="add">+ ]</span>
+<span class="add">+]</span></pre>
+<h4>证据与缩减</h4><pre>- representative ced4ef795b99-v01: confirmed 3/3 (each replay: fresh baseline, fresh control and a fresh case session)
+- ops 3 -&gt; 3 (2 probes, 4.418 s, reduced ops confirmed 3/3); query targets narrowed to the key
+- lines: not reduced
+- group: 1 violation(s) in 1 run(s), projects fatedier/frp@d20a23299600, timings settled, seeds 1</pre>
+<h4>一年前版本上的重放</h4><p>未重放（该组没有一年前的版本可比）</p>
+<h4>可能相关的已有 issue（关键词搜索结果，要你核对）</h4><ul><li><a href="https://github.com/golang/go/issues/68075" target="_blank" rel="noopener">golang/go#68075</a> x/tools/gopls/internal/cmd: `gopls check` doesn&#x27;t wait for didOpen finish before it makes diagnostics request <span class="muted">(open, 2024-06-19)</span></li><li><a href="https://github.com/golang/go/issues/41436" target="_blank" rel="noopener">golang/go#41436</a> x/tools/go/analysis: a Diagnostic should indicate when it is a lint-style warning that should be ignored in generated code <span class="muted">(open, 2020-09-16)</span></li><li><a href="https://github.com/golang/go/issues/70085" target="_blank" rel="noopener">golang/go#70085</a> x/tools/gopls: add refactor.inline.variable-all code action <span class="muted">(open, 2024-10-29)</span></li><li><a href="https://github.com/golang/go/issues/50151" target="_blank" rel="noopener">golang/go#50151</a> x/tools/gopls: high cpu usage when make changes in package which have some cgo package dependents <span class="muted">(open, 2021-12-14)</span></li><li><a href="https://github.com/golang/go/issues/54461" target="_blank" rel="noopener">golang/go#54461</a> x/tools/gopls: regtest flakes due to hanging go commands <span class="muted">(open, 2022-08-15)</span></li></ul>
+<p class="muted">完整报告：<a href="gopls-r4-diagnostics-extra-undeclaredname-wrongar-mutation-m3-946c39/report.md" target="_blank" rel="noopener">gopls-r4-diagnostics-extra-undeclaredname-wrongar-mutation-m3-946c39/report.md</a> ·
+复现命令（在项目根目录运行）：<code>python3 scripts/lsptest/repro_violation.py data/lsptest/runs/main_v1/triage/gopls-r4-diagnostics-extra-undeclaredname-wrongar-mutation-m3-946c39/repro.json</code></p>
+<div class="judge"><p class="q">你的判断：实际（被测会话）这边的答案错了吗？</p><button type="button" class="choice chosen" data-choice="bug" aria-pressed="true"><b>bug</b><small>是 bug</small></button><button type="button" class="choice" data-choice="legitimate" aria-pressed="false"><b>legitimate</b><small>不算问题：两边都说得通</small></button><button type="button" class="choice" data-choice="tool-artifact" aria-pressed="false"><b>tool-artifact</b><small>工具自己的问题</small></button><button type="button" class="clear">清除</button><textarea class="note" rows="2" placeholder="备注（可选）：一句理由、unsure、对上号的 issue 链接……"></textarea></div>
+</div></details>
+
+<details class="item" id="gopls-r4-diagnostics-extra-untypedniluse-mutation-m2-354f70" data-id="gopls-r4-diagnostics-extra-untypedniluse-mutation-m2-354f70" data-n="12"><summary><b class="num">12.</b> <span class="state judged">已判断：bug</span><span class="differ"></span> <code>gopls-r4-diagnostics-extra-untypedniluse-mutation-m2-354f70</code> · R4 编辑有效 · gopls · 成员 2 · 步骤 3→3</summary>
+<div class="body">
+<h3>[gopls v0.23.0] mutation:M2 edit is not valid (diagnostics:extra:UntypedNilUse)</h3>
+<p><b>违反的规则</b>：Edit validity (R4): a quick fix must remove the diagnostic it targets without adding errors; formatting and organize imports applied twice must be no-ops; inserting a completion must not introduce a syntax error.</p>
+<p><b>现象</b>：<code>diagnostics:extra:UntypedNilUse</code>；历史族/子检查：<code>mutation:M2</code></p>
+<h4>最少复现步骤</h4><pre>1. Start gopls v0.23.0 on the project root; answer workspace/configuration with the settings under Environment.
+2. textDocument/didOpen: `open command_win.go`
+3. textDocument/didChange: `change command_win.go (31, 10)-(31, 27) &quot;MousetrappHelpText&quot;`
+4. textDocument/didChange: `change command_win.go (31, 2)-(31, 2) &quot;MousetrappHelpText := nil\n\t\t&quot;`
+5. Timing: wait until the server is idle after every step.
+6. textDocument/didOpen `doc/rest_docs.go`, `powershell_completions_test.go` (the query step opens every target file that is not open), then wait until the server is idle.
+7. The quick fix above was applied in the same session: the targeted diagnostic must be gone and the error count must not exceed the one before the mutation.
+8. Query `textDocument/diagnostic` on `command_win.go` line 32, column 11 (LSP position {line: 31, character: 10}) (M2:quickfix-errors:Create variable MousetrappHelpText); compare with the same query in a fresh session on the same content (expected).</pre>
+<h4>预期与实际的差别（红 = 预期，参照会话的答案；绿 = 实际，被测会话的答案）</h4><pre class="diff">--- expected
++++ actual
+<span class="hunk">@@ -1 +1,12 @@</span>
+<span class="del">-[]</span>
+<span class="add">+[</span>
+<span class="add">+ [</span>
+<span class="add">+  0,</span>
+<span class="add">+  0,</span>
+<span class="add">+  0,</span>
+<span class="add">+  0,</span>
+<span class="add">+  1,</span>
+<span class="add">+  &quot;UntypedNilUse&quot;,</span>
+<span class="add">+  &quot;compiler&quot;,</span>
+<span class="add">+  &quot;use of untyped nil in assignment [windows,amd64]&quot;</span>
+<span class="add">+ ]</span>
+<span class="add">+]</span></pre>
+<h4>证据与缩减</h4><pre>- representative 9be4e39bca38-v00: confirmed 3/3 (each replay: fresh baseline, fresh control and a fresh case session)
+- ops 3 -&gt; 3 (2 probes, 4.134 s, reduced ops confirmed 3/3); query targets narrowed to the key
+- lines: not reduced
+- group: 2 violation(s) in 2 run(s), projects router-for-me/CLIProxyAPI@673131f57484, spf13/cobra@adbc8813901b, timings settled, seeds 2</pre>
+<h4>一年前版本上的重放</h4><p>未重放（该组没有一年前的版本可比）</p>
+<h4>可能相关的已有 issue（关键词搜索结果，要你核对）</h4><ul><li><a href="https://github.com/golang/go/issues/68075" target="_blank" rel="noopener">golang/go#68075</a> x/tools/gopls/internal/cmd: `gopls check` doesn&#x27;t wait for didOpen finish before it makes diagnostics request <span class="muted">(open, 2024-06-19)</span></li><li><a href="https://github.com/golang/go/issues/41436" target="_blank" rel="noopener">golang/go#41436</a> x/tools/go/analysis: a Diagnostic should indicate when it is a lint-style warning that should be ignored in generated code <span class="muted">(open, 2020-09-16)</span></li><li><a href="https://github.com/golang/go/issues/70085" target="_blank" rel="noopener">golang/go#70085</a> x/tools/gopls: add refactor.inline.variable-all code action <span class="muted">(open, 2024-10-29)</span></li><li><a href="https://github.com/golang/go/issues/50151" target="_blank" rel="noopener">golang/go#50151</a> x/tools/gopls: high cpu usage when make changes in package which have some cgo package dependents <span class="muted">(open, 2021-12-14)</span></li><li><a href="https://github.com/golang/go/issues/54461" target="_blank" rel="noopener">golang/go#54461</a> x/tools/gopls: regtest flakes due to hanging go commands <span class="muted">(open, 2022-08-15)</span></li></ul>
+<p class="muted">完整报告：<a href="gopls-r4-diagnostics-extra-untypedniluse-mutation-m2-354f70/report.md" target="_blank" rel="noopener">gopls-r4-diagnostics-extra-untypedniluse-mutation-m2-354f70/report.md</a> ·
+复现命令（在项目根目录运行）：<code>python3 scripts/lsptest/repro_violation.py data/lsptest/runs/main_v1/triage/gopls-r4-diagnostics-extra-untypedniluse-mutation-m2-354f70/repro.json</code></p>
+<div class="judge"><p class="q">你的判断：实际（被测会话）这边的答案错了吗？</p><button type="button" class="choice chosen" data-choice="bug" aria-pressed="true"><b>bug</b><small>是 bug</small></button><button type="button" class="choice" data-choice="legitimate" aria-pressed="false"><b>legitimate</b><small>不算问题：两边都说得通</small></button><button type="button" class="choice" data-choice="tool-artifact" aria-pressed="false"><b>tool-artifact</b><small>工具自己的问题</small></button><button type="button" class="clear">清除</button><textarea class="note" rows="2" placeholder="备注（可选）：一句理由、unsure、对上号的 issue 链接……"></textarea></div>
+</div></details>
+
+<details class="item" id="gopls-r4-syntax-gained-mutation-m2-86fde3" data-id="gopls-r4-syntax-gained-mutation-m2-86fde3" data-n="13"><summary><b class="num">13.</b> <span class="state judged">已判断：bug</span><span class="differ"></span> <code>gopls-r4-syntax-gained-mutation-m2-86fde3</code> · R4 编辑有效 · gopls · 成员 1 · 步骤 3→3</summary>
+<div class="body">
+<h3>[gopls v0.23.0] mutation:M2 edit is not valid (syntax:gained)</h3>
+<p><b>违反的规则</b>：Edit validity (R4): a quick fix must remove the diagnostic it targets without adding errors; formatting and organize imports applied twice must be no-ops; inserting a completion must not introduce a syntax error.</p>
+<p><b>现象</b>：<code>syntax:gained</code>；历史族/子检查：<code>mutation:M2</code></p>
+<h4>最少复现步骤</h4><pre>1. Start gopls v0.23.0 on the project root; answer workspace/configuration with the settings under Environment.
+2. textDocument/didOpen: `open src/pattern_test.go`
+3. textDocument/didChange: `change src/pattern_test.go (162, 9)-(162, 21) &quot;buildPttern&quot;`
+4. textDocument/didChange: `change src/pattern_test.go (182, 5)-(182, 5) &quot;buildPttern(true1 bool, result, *[]int func(caseSensitive bool, normalize bool, forward bool, input *util.Chars, pattern []rune, withPos bool, slab *util.Slab) (algo.Result, *[]int), extended bool, CaseSmart Case, false1, true2, false2, true3 bool, range []Range, delimiter Delimiter, r []rune) any {\n\tpanic(\&quot;unimplemented\&quot;)\n}\n\nfunc &quot;`
+5. Timing: wait until the server is idle after every step.
+6. textDocument/didOpen `src/reader.go`, `src/util/concurrent_set.go` (the query step opens every target file that is not open), then wait until the server is idle.
+7. The quick fix above was applied in the same session: the targeted diagnostic must be gone and the error count must not exceed the one before the mutation.
+8. Query `syntax` on `src/pattern_test.go` line 163, column 10 (LSP position {line: 162, character: 9}) (M2:quickfix-syntax:Create function buildPttern); compare with the same query in a fresh session on the same content (expected).</pre>
+<h4>预期与实际的差别（红 = 预期，参照会话的答案；绿 = 实际，被测会话的答案）</h4><pre class="diff">--- expected
++++ actual
+<span class="hunk">@@ -1 +1,10 @@</span>
+<span class="del">-[]</span>
+<span class="add">+[</span>
+<span class="add">+ &quot;expected &#x27;)&#x27;, found bool&quot;,</span>
+<span class="add">+ &quot;expected &#x27;;&#x27;, found &#x27;,&#x27;&quot;,</span>
+<span class="add">+ &quot;expected declaration, found &#x27;for&#x27;&quot;,</span>
+<span class="add">+ &quot;expected declaration, found extended&quot;,</span>
+<span class="add">+ &quot;expected declaration, found runtime&quot;,</span>
+<span class="add">+ &quot;expected declaration, found runtime&quot;,</span>
+<span class="add">+ &quot;missing &#x27;,&#x27; in parameter list&quot;,</span>
+<span class="add">+ &quot;missing parameter name&quot;</span>
+<span class="add">+]</span></pre>
+<h4>证据与缩减</h4><pre>- representative 9bb8ccd49c7b-v02: confirmed 3/3 (each replay: fresh baseline, fresh control and a fresh case session)
+- ops 3 -&gt; 3 (2 probes, 4.49 s, reduced ops confirmed 3/3); query targets narrowed to the key
+- lines: not reduced
+- group: 1 violation(s) in 1 run(s), projects junegunn/fzf@b1be3a8be1b8, timings settled, seeds 1</pre>
+<h4>一年前版本上的重放</h4><p>未重放（该组没有一年前的版本可比）</p>
+<h4>可能相关的已有 issue（关键词搜索结果，要你核对）</h4><ul><li><a href="https://github.com/golang/go/issues/79772" target="_blank" rel="noopener">golang/go#79772</a> go/types: SEGV in tpWalker.isParameterized, case Signature <span class="muted">(open, 2026-06-01)</span></li><li><a href="https://github.com/golang/go/issues/73779" target="_blank" rel="noopener">golang/go#73779</a> x/tools/gopls: ChangeSignature: &quot;cannot inline: corrupted reference&quot; bug <span class="muted">(open, 2025-05-19)</span></li><li><a href="https://github.com/golang/go/issues/73874" target="_blank" rel="noopener">golang/go#73874</a> x/tools/gopls: Completion: add description to suggested function literals <span class="muted">(open, 2025-05-27)</span></li><li><a href="https://github.com/golang/go/issues/69626" target="_blank" rel="noopener">golang/go#69626</a> x/tools/gopls: usePlaceholders=false disables variable name suggestions when using the var! suffix completion  <span class="muted">(open, 2024-09-25)</span></li><li><a href="https://github.com/golang/go/issues/70603" target="_blank" rel="noopener">golang/go#70603</a> x/tools/gopls: DidOpen (et al?) fail to reject non-absolute path from client early, triggering assertion failure <span class="muted">(open, 2024-11-27)</span></li></ul>
+<p class="muted">完整报告：<a href="gopls-r4-syntax-gained-mutation-m2-86fde3/report.md" target="_blank" rel="noopener">gopls-r4-syntax-gained-mutation-m2-86fde3/report.md</a> ·
+复现命令（在项目根目录运行）：<code>python3 scripts/lsptest/repro_violation.py data/lsptest/runs/main_v1/triage/gopls-r4-syntax-gained-mutation-m2-86fde3/repro.json</code></p>
+<div class="judge"><p class="q">你的判断：实际（被测会话）这边的答案错了吗？</p><button type="button" class="choice chosen" data-choice="bug" aria-pressed="true"><b>bug</b><small>是 bug</small></button><button type="button" class="choice" data-choice="legitimate" aria-pressed="false"><b>legitimate</b><small>不算问题：两边都说得通</small></button><button type="button" class="choice" data-choice="tool-artifact" aria-pressed="false"><b>tool-artifact</b><small>工具自己的问题</small></button><button type="button" class="clear">清除</button><textarea class="note" rows="2" placeholder="备注（可选）：一句理由、unsure、对上号的 issue 链接……"></textarea></div>
+</div></details>
+
+<details class="item" id="rust-analyzer-r3-definitionconsistency-extra-d-4cbc9e" data-id="rust-analyzer-r3-definitionconsistency-extra-d-4cbc9e" data-n="14"><summary><b class="num">14.</b> <span class="state judged">已判断：bug</span><span class="differ"></span> <code>rust-analyzer-r3-definitionconsistency-extra-d-4cbc9e</code> · R3 路径等价 · rust-analyzer · 成员 1 · 步骤 0→0</summary>
+<div class="body">
+<h3>[rust-analyzer 2026-09-21] definitionConsistency: two routes to the same fact disagree</h3>
+<p><b>违反的规则</b>：Route equivalence (R3): two protocol routes to the same fact (pull and push diagnostics, semanticTokens range and full, documentHighlight and references, definition at a symbol and at its references) must agree.</p>
+<p><b>现象</b>：<code>definitionConsistency:extra</code>；历史族/子检查：<code>d</code></p>
+<h4>最少复现步骤</h4><pre>1. Start rust-analyzer 2026-09-21 on the project root; answer workspace/configuration with the settings under Environment.
+2. `textDocument/definition` on `src/api/core/two_factor/duo.rs` at line 8, column 13 (LSP position {line: 7, character: 12}) gives the expected set; didOpen `src/api/admin.rs` and `textDocument/definition` at the reference line 289, column 30 (LSP position {line: 288, character: 29}) must give the same set.</pre>
+<h4>预期与实际的差别（红 = 预期，参照会话的答案；绿 = 实际，被测会话的答案）</h4><pre class="diff">--- expected
++++ actual
+<span class="hunk">@@ -1,3 +1,66 @@</span>
+ [
+<span class="add">+ [</span>
+<span class="add">+  &quot;~/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rocket-0.5.1/src/lib.rs&quot;,</span>
+<span class="add">+  0,</span>
+<span class="add">+  0,</span>
+<span class="add">+  364,</span>
+<span class="add">+  0</span>
+<span class="add">+ ],</span>
+<span class="add">+ [</span>
+<span class="add">+  &quot;~/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rocket-0.5.1/src/route/handler.rs&quot;,</span>
+<span class="add">+  6,</span>
+<span class="add">+  9,</span>
+<span class="add">+  6,</span>
+<span class="add">+  16</span>
+<span class="add">+ ],</span>
+<span class="add">+ [</span>
+<span class="add">+  &quot;~/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rocket-0.5.1/src/route/handler.rs&quot;,</span>
+<span class="add">+  187,</span>
+<span class="add">+  11,</span>
+<span class="add">+  187,</span>
+<span class="add">+  15</span>
+<span class="add">+ ],</span>
+<span class="add">+ [</span>
+<span class="add">+  &quot;~/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rocket-0.5.1/src/route/mod.rs&quot;,</span>
+<span class="add">+  0,</span>
+<span class="add">+  0,</span>
+<span class="add">+  12,</span>
+<span class="add">+  0</span>
+<span class="add">+ ],</span>
+<span class="add">+ [</span>
+<span class="add">+  &quot;~/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rocket-0.5.1/src/sentinel.rs&quot;,</span>
+<span class="add">+  0,</span>
+<span class="add">+  0,</span>
+<span class="add">+  487,</span>
+<span class="add">+  0</span>
+<span class="add">+ ],</span>
+<span class="add">+ [</span>
+<span class="add">+  &quot;~/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rocket-0.5.1/src/sentinel.rs&quot;,</span>
+<span class="add">+  394,</span>
+<span class="add">+  13,</span>
+<span class="add">+  394,</span>
+<span class="add">+  20</span>
+<span class="add">+ ],</span>
+<span class="add">+ [</span>
+<span class="add">+  &quot;~/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rocket_codegen-0.5.1/src/lib.rs&quot;,</span>
+<span class="add">+  281,</span>
+<span class="add">+  0,</span>
+<span class="add">+  281,</span>
+<span class="add">+  5</span>
+<span class="add">+ ],</span>
+<span class="add">+ [</span>
+<span class="add">+  &quot;src/api/admin.rs&quot;,</span>
+<span class="add">+  287,</span>
+<span class="add">+  2,</span>
+<span class="add">+  287,</span>
+<span class="add">+  20</span>
+<span class="add">+ ],</span>
+<span class="add">+ [</span>
+<span class="add">+  &quot;src/api/admin.rs&quot;,</span>
+<span class="add">+  288,</span>
+<span class="add">+  25,</span>
+<span class="add">+  288,</span>
+<span class="add">+  34</span>
+<span class="add">+ ],</span>
+  [
+   &quot;src/api/mod.rs&quot;,</pre>
+<h4>证据与缩减</h4><pre>- representative ec5d10b1f270-v00: confirmed 3/3 (each replay: fresh baseline, fresh control and a fresh case session)
+- ops 0 -&gt; 0 (0 probes, 0.0 s, reduced ops confirmed 3/3); query targets narrowed to the key
+- lines: not reduced
+- group: 1 violation(s) in 1 run(s), projects dani-garcia/vaultwarden@cc67d644f626, timings settled, seeds 1</pre>
+<h4>一年前版本上的重放</h4><p>未重放（该组没有一年前的版本可比）</p>
+<h4>可能相关的已有 issue（关键词搜索结果，要你核对）</h4><ul><li><a href="https://github.com/rust-lang/rust-analyzer/issues/8373" target="_blank" rel="noopener">rust-lang/rust-analyzer#8373</a> Monomorphised go to definition <span class="muted">(open, 2021-04-06)</span></li><li><a href="https://github.com/rust-lang/rust-analyzer/issues/17122" target="_blank" rel="noopener">rust-lang/rust-analyzer#17122</a> Go to Definition on Private Symbols <span class="muted">(open, 2024-04-22)</span></li><li><a href="https://github.com/rust-lang/rust-analyzer/issues/22482" target="_blank" rel="noopener">rust-lang/rust-analyzer#22482</a> Panics with &quot;invalid offset&quot; errors ( code: -32603) on &quot;Go to definition&quot; calls <span class="muted">(open, 2026-05-28)</span></li><li><a href="https://github.com/rust-lang/rust-analyzer/issues/14428" target="_blank" rel="noopener">rust-lang/rust-analyzer#14428</a> Go to definition on std types locks rustc <span class="muted">(open, 2023-03-28)</span></li><li><a href="https://github.com/rust-lang/rust-analyzer/issues/10700" target="_blank" rel="noopener">rust-lang/rust-analyzer#10700</a> [Feature Request] Go to Definition from the comments <span class="muted">(open, 2021-11-05)</span></li></ul>
+<p class="muted">完整报告：<a href="rust-analyzer-r3-definitionconsistency-extra-d-4cbc9e/report.md" target="_blank" rel="noopener">rust-analyzer-r3-definitionconsistency-extra-d-4cbc9e/report.md</a> ·
+复现命令（在项目根目录运行）：<code>python3 scripts/lsptest/repro_violation.py data/lsptest/runs/main_v1/triage/rust-analyzer-r3-definitionconsistency-extra-d-4cbc9e/repro.json</code></p>
+<div class="judge"><p class="q">你的判断：实际（被测会话）这边的答案错了吗？</p><button type="button" class="choice chosen" data-choice="bug" aria-pressed="true"><b>bug</b><small>是 bug</small></button><button type="button" class="choice" data-choice="legitimate" aria-pressed="false"><b>legitimate</b><small>不算问题：两边都说得通</small></button><button type="button" class="choice" data-choice="tool-artifact" aria-pressed="false"><b>tool-artifact</b><small>工具自己的问题</small></button><button type="button" class="clear">清除</button><textarea class="note" rows="2" placeholder="备注（可选）：一句理由、unsure、对上号的 issue 链接……"></textarea></div>
+</div></details>
+
+<details class="item" id="rust-analyzer-r3-definitionconsistency-missing-d-586fd8" data-id="rust-analyzer-r3-definitionconsistency-missing-d-586fd8" data-n="15"><summary><b class="num">15.</b> <span class="state judged">已判断：bug</span><span class="differ"></span> <code>rust-analyzer-r3-definitionconsistency-missing-d-586fd8</code> · R3 路径等价 · rust-analyzer · 成员 1 · 步骤 0→0</summary>
+<div class="body">
+<h3>[rust-analyzer 2026-09-21] definitionConsistency: two routes to the same fact disagree</h3>
+<p><b>违反的规则</b>：Route equivalence (R3): two protocol routes to the same fact (pull and push diagnostics, semanticTokens range and full, documentHighlight and references, definition at a symbol and at its references) must agree.</p>
+<p><b>现象</b>：<code>definitionConsistency:missing</code>；历史族/子检查：<code>d</code></p>
+<h4>最少复现步骤</h4><pre>1. Start rust-analyzer 2026-09-21 on the project root; answer workspace/configuration with the settings under Environment.
+2. `textDocument/definition` on `src/api/core/two_factor/duo.rs` at line 197, column 81 (LSP position {line: 196, character: 80}) gives the expected set; didOpen `src/api/admin.rs` and `textDocument/definition` at the reference line 309, column 53 (LSP position {line: 308, character: 52}) must give the same set.</pre>
+<h4>预期与实际的差别（红 = 预期，参照会话的答案；绿 = 实际，被测会话的答案）</h4><pre class="diff">--- expected
++++ actual
+<span class="hunk">@@ -1,129 +1,3 @@</span>
+ [
+<span class="del">- [</span>
+<span class="del">-  &quot;~/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rocket-0.5.1/src/lib.rs&quot;,</span>
+<span class="del">-  0,</span>
+<span class="del">-  0,</span>
+<span class="del">-  364,</span>
+<span class="del">-  0</span>
+<span class="del">- ],</span>
+<span class="del">- [</span>
+<span class="del">-  &quot;~/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rocket-0.5.1/src/log.rs&quot;,</span>
+<span class="del">-  0,</span>
+<span class="del">-  0,</span>
+<span class="del">-  245,</span>
+<span class="del">-  0</span>
+<span class="del">- ],</span>
+<span class="del">- [</span>
+<span class="del">-  &quot;~/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rocket-0.5.1/src/log.rs&quot;,</span>
+<span class="del">-  34,</span>
+<span class="del">-  24,</span>
+<span class="del">-  34,</span>
+<span class="del">-  29</span>
+<span class="del">- ],</span>
+<span class="del">- [</span>
+<span class="del">-  &quot;~/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rocket-0.5.1/src/outcome.rs&quot;,</span>
+<span class="del">-  0,</span>
+<span class="del">-  0,</span>
+<span class="del">-  867,</span>
+<span class="del">-  0</span>
+<span class="del">- ],</span>
+<span class="del">- [</span>
+<span class="del">-  &quot;~/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rocket-0.5.1/src/outcome.rs&quot;,</span>
+<span class="del">-  104,</span>
+<span class="del">-  9,</span>
+<span class="del">-  104,</span>
+<span class="del">-  16</span>
+<span class="del">- ],</span>
+<span class="del">- [</span>
+<span class="del">-  &quot;~/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rocket-0.5.1/src/outcome.rs&quot;,</span>
+<span class="del">-  106,</span>
+<span class="del">-  4,</span>
+<span class="del">-  106,</span>
+<span class="del">-  11</span>
+<span class="del">- ],</span>
+<span class="del">- [</span>
+<span class="del">-  &quot;~/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rocket-0.5.1/src/outcome.rs&quot;,</span>
+<span class="del">-  108,</span>
+<span class="del">-  4,</span>
+<span class="del">-  108,</span>
+<span class="del">-  9</span>
+<span class="del">- ],</span>
+<span class="del">- [</span>
+<span class="del">-  &quot;~/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rocket-0.5.1/src/outcome.rs&quot;,</span>
+<span class="del">-  110,</span>
+<span class="del">-  4,</span>
+<span class="del">-  110,</span>
+<span class="del">-  11</span>
+<span class="del">- ],</span>
+<span class="del">- [</span>
+<span class="del">-  &quot;~/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rocket-0.5.1/src/request/from_request.rs&quot;,</span>
+<span class="del">-  372,</span>
+<span class="del">-  10,</span>
+<span class="del">-  372,</span>
+<span class="del">-  21</span>
+<span class="del">- ],</span>
+<span class="del">- [</span>
+<span class="del">-  &quot;~/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rocket-0.5.1/src/request/mod.rs&quot;,</span>
+<span class="del">-  0,</span>
+<span class="del">-  0,</span>
+<span class="del">-  113,</span>
+<span class="del">-  0</span>
+<span class="del">- ],</span>
+<span class="del">- [</span>
+<span class="del">-  &quot;~/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rocket-0.5.1/src/sentinel.rs&quot;,</span>
+<span class="del">-  0,</span>
+<span class="del">-  0,</span>
+<span class="del">-  487,</span>
+<span class="del">-  0</span>
+<span class="del">- ],</span>
+<span class="del">- [</span>
+<span class="del">-  &quot;~/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rocket-0.5.1/src/sentinel.rs&quot;,</span>
+<span class="del">-  394,</span>
+<span class="del">-  13,</span>
+<span class="del">-  394,</span>
+<span class="del">-  20</span>
+<span class="del">- ],</span>
+<span class="del">- [</span>
+<span class="del">-  &quot;~/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rocket_codegen-0.5.1/src/lib.rs&quot;,</span>
+……（还有 54 行差别没显示，完整内容见报告）</pre>
+<h4>证据与缩减</h4><pre>- representative ec5d10b1f270-v01: confirmed 3/3 (each replay: fresh baseline, fresh control and a fresh case session)
+- ops 0 -&gt; 0 (0 probes, 0.0 s, reduced ops confirmed 3/3); query targets narrowed to the key
+- lines: not reduced
+- group: 1 violation(s) in 1 run(s), projects dani-garcia/vaultwarden@cc67d644f626, timings settled, seeds 1</pre>
+<h4>一年前版本上的重放</h4><p>未重放（该组没有一年前的版本可比）</p>
+<h4>可能相关的已有 issue（关键词搜索结果，要你核对）</h4><ul><li><a href="https://github.com/rust-lang/rust-analyzer/issues/8373" target="_blank" rel="noopener">rust-lang/rust-analyzer#8373</a> Monomorphised go to definition <span class="muted">(open, 2021-04-06)</span></li><li><a href="https://github.com/rust-lang/rust-analyzer/issues/17122" target="_blank" rel="noopener">rust-lang/rust-analyzer#17122</a> Go to Definition on Private Symbols <span class="muted">(open, 2024-04-22)</span></li><li><a href="https://github.com/rust-lang/rust-analyzer/issues/22482" target="_blank" rel="noopener">rust-lang/rust-analyzer#22482</a> Panics with &quot;invalid offset&quot; errors ( code: -32603) on &quot;Go to definition&quot; calls <span class="muted">(open, 2026-05-28)</span></li><li><a href="https://github.com/rust-lang/rust-analyzer/issues/14428" target="_blank" rel="noopener">rust-lang/rust-analyzer#14428</a> Go to definition on std types locks rustc <span class="muted">(open, 2023-03-28)</span></li><li><a href="https://github.com/rust-lang/rust-analyzer/issues/10700" target="_blank" rel="noopener">rust-lang/rust-analyzer#10700</a> [Feature Request] Go to Definition from the comments <span class="muted">(open, 2021-11-05)</span></li></ul>
+<p class="muted">完整报告：<a href="rust-analyzer-r3-definitionconsistency-missing-d-586fd8/report.md" target="_blank" rel="noopener">rust-analyzer-r3-definitionconsistency-missing-d-586fd8/report.md</a> ·
+复现命令（在项目根目录运行）：<code>python3 scripts/lsptest/repro_violation.py data/lsptest/runs/main_v1/triage/rust-analyzer-r3-definitionconsistency-missing-d-586fd8/repro.json</code></p>
+<div class="judge"><p class="q">你的判断：实际（被测会话）这边的答案错了吗？</p><button type="button" class="choice chosen" data-choice="bug" aria-pressed="true"><b>bug</b><small>是 bug</small></button><button type="button" class="choice" data-choice="legitimate" aria-pressed="false"><b>legitimate</b><small>不算问题：两边都说得通</small></button><button type="button" class="choice" data-choice="tool-artifact" aria-pressed="false"><b>tool-artifact</b><small>工具自己的问题</small></button><button type="button" class="clear">清除</button><textarea class="note" rows="2" placeholder="备注（可选）：一句理由、unsure、对上号的 issue 链接……"></textarea></div>
+</div></details>
+
+<details class="item" id="ts6-r1-codeaction-key-lost-h5-4f92e2" data-id="ts6-r1-codeaction-key-lost-h5-4f92e2" data-n="16"><summary><b class="num">16.</b> <span class="state judged">已判断：bug</span><span class="differ"></span> <code>ts6-r1-codeaction-key-lost-h5-4f92e2</code> · R1 历史无关 · ts6 · 成员 2 · 步骤 5→3</summary>
+<div class="body">
+<h3>[ts6 6.0.3] codeAction is not answered after file rename round trip</h3>
+<p><b>违反的规则</b>：History independence (R1): after a sequence of edits that returns the documents to content C, every query must answer as in a fresh session opened on C. Fresh sessions on C agree with each other on this query; the session that went through the history does not.</p>
+<p><b>现象</b>：<code>codeAction:key-lost</code>；历史族/子检查：<code>H5</code></p>
+<h4>最少复现步骤</h4><pre>1. Start ts6 6.0.3 on the project root; answer workspace/configuration with the settings under Environment.
+2. textDocument/didOpen: `open src/react.ts`
+3. workspace/willRenameFiles, didClose, rename on disk, workspace/didRenameFiles, didChangeWatchedFiles, didOpen of the new path: `fs_rename src/react.ts -&gt; src/react_rt.ts`
+4. workspace/willRenameFiles, didClose, rename on disk, workspace/didRenameFiles, didChangeWatchedFiles, didOpen of the new path: `fs_rename src/react_rt.ts -&gt; src/react.ts`
+5. Timing: wait until the server is idle after every step.
+6. textDocument/didOpen `src/vanilla/shallow.ts`, `tests/persistSync.test.tsx` (the query step opens every target file that is not open), then wait until the server is idle.
+7. Query `textDocument/codeAction` on `tests/persistSync.test.tsx` line 226, column 35 (LSP position {line: 225, character: 34}) (diag:225:48); compare with the same query in a fresh session opened on the final content (expected).</pre>
+<h4>预期与实际的差别（红 = 预期，参照会话的答案；绿 = 实际，被测会话的答案）</h4><pre class="diff">--- expected
++++ actual
+<span class="hunk">@@ -1,6 +1,3 @@</span>
+ [
+<span class="del">- [</span>
+<span class="del">-  &quot;Move to a new file&quot;,</span>
+<span class="del">-  &quot;refactor.move.newFile&quot;</span>
+<span class="del">- ]</span>
+<span class="add">+ &quot;missing-key&quot;</span>
+ ]</pre>
+<h4>证据与缩减</h4><pre>- representative 210902bea61f-v00: confirmed 3/3 (each replay: fresh baseline, fresh control and a fresh case session)
+- ops 5 -&gt; 3 (11 probes, 228.476 s, reduced ops confirmed 3/3); query targets narrowed to the key
+- lines: not reduced
+- group: 2 violation(s) in 2 run(s), projects pmndrs/zustand@b57db4f86ef1, timings race200, settled, seeds 1</pre>
+<h4>一年前版本上的重放</h4><p>未重放（该组没有一年前的版本可比）</p>
+<h4>可能相关的已有 issue（关键词搜索结果，要你核对）</h4><ul><li><a href="https://github.com/typescript-language-server/typescript-language-server/issues/878" target="_blank" rel="noopener">typescript-language-server/typescript-language-server#878</a> Support renaming files when renaming default exports <span class="muted">(open, 2024-02-27)</span></li><li><a href="https://github.com/typescript-language-server/typescript-language-server/issues/744" target="_blank" rel="noopener">typescript-language-server/typescript-language-server#744</a> EPERM: operation not permitted Cannot Move/Rename Files &amp; Directories when Language Server is Running.  <span class="muted">(closed, 2023-07-31)</span></li><li><a href="https://github.com/typescript-language-server/typescript-language-server/issues/665" target="_blank" rel="noopener">typescript-language-server/typescript-language-server#665</a> Preview rename file <span class="muted">(closed, 2023-01-16)</span></li><li><a href="https://github.com/typescript-language-server/typescript-language-server/issues/430" target="_blank" rel="noopener">typescript-language-server/typescript-language-server#430</a> Rename also trigger on files in node_modules <span class="muted">(closed, 2022-04-07)</span></li><li><a href="https://github.com/typescript-language-server/typescript-language-server/issues/1052" target="_blank" rel="noopener">typescript-language-server/typescript-language-server#1052</a> Question: Where are specific import code actions? <span class="muted">(closed, 2025-11-19)</span></li></ul>
+<p class="muted">完整报告：<a href="ts6-r1-codeaction-key-lost-h5-4f92e2/report.md" target="_blank" rel="noopener">ts6-r1-codeaction-key-lost-h5-4f92e2/report.md</a> ·
+复现命令（在项目根目录运行）：<code>python3 scripts/lsptest/repro_violation.py data/lsptest/runs/main_v1/triage/ts6-r1-codeaction-key-lost-h5-4f92e2/repro.json</code></p>
+<div class="judge"><p class="q">你的判断：实际（被测会话）这边的答案错了吗？</p><button type="button" class="choice chosen" data-choice="bug" aria-pressed="true"><b>bug</b><small>是 bug</small></button><button type="button" class="choice" data-choice="legitimate" aria-pressed="false"><b>legitimate</b><small>不算问题：两边都说得通</small></button><button type="button" class="choice" data-choice="tool-artifact" aria-pressed="false"><b>tool-artifact</b><small>工具自己的问题</small></button><button type="button" class="clear">清除</button><textarea class="note" rows="2" placeholder="备注（可选）：一句理由、unsure、对上号的 issue 链接……"></textarea></div>
+</div></details>
+
+<details class="item" id="ts6-r1-completion-lost-h5-fa501c" data-id="ts6-r1-completion-lost-h5-fa501c" data-n="17"><summary><b class="num">17.</b> <span class="state judged">已判断：bug</span><span class="differ"></span> <code>ts6-r1-completion-lost-h5-fa501c</code> · R1 历史无关 · ts6 · 成员 3 · 步骤 5→3</summary>
+<div class="body">
+<h3>[ts6 6.0.3] completion loses its answer after file rename round trip</h3>
+<p><b>违反的规则</b>：History independence (R1): after a sequence of edits that returns the documents to content C, every query must answer as in a fresh session opened on C. Fresh sessions on C agree with each other on this query; the session that went through the history does not.</p>
+<p><b>现象</b>：<code>completion:lost</code>；历史族/子检查：<code>H5</code></p>
+<h4>最少复现步骤</h4><pre>1. Start ts6 6.0.3 on the project root; answer workspace/configuration with the settings under Environment.
+2. textDocument/didOpen: `open src/react.ts`
+3. workspace/willRenameFiles, didClose, rename on disk, workspace/didRenameFiles, didChangeWatchedFiles, didOpen of the new path: `fs_rename src/react.ts -&gt; src/react_rt.ts`
+4. workspace/willRenameFiles, didClose, rename on disk, workspace/didRenameFiles, didChangeWatchedFiles, didOpen of the new path: `fs_rename src/react_rt.ts -&gt; src/react.ts`
+5. Timing: wait until the server is idle after every step.
+6. textDocument/didOpen `src/vanilla/shallow.ts`, `tests/persistSync.test.tsx` (the query step opens every target file that is not open), then wait until the server is idle.
+7. Query `textDocument/completion` on `tests/persistSync.test.tsx` line 566, column 74 (LSP position {line: 565, character: 73}); compare with the same query in a fresh session opened on the final content (expected).</pre>
+<h4>预期与实际的差别（红 = 预期，参照会话的答案；绿 = 实际，被测会话的答案）</h4><pre class="diff">--- expected
++++ actual
+<span class="hunk">@@ -1,9 +1 @@</span>
+<span class="del">-[</span>
+<span class="del">- &quot;clearStorage&quot;,</span>
+<span class="del">- &quot;getOptions&quot;,</span>
+<span class="del">- &quot;hasHydrated&quot;,</span>
+<span class="del">- &quot;onFinishHydration&quot;,</span>
+<span class="del">- &quot;onHydrate&quot;,</span>
+<span class="del">- &quot;rehydrate&quot;,</span>
+<span class="del">- &quot;setOptions&quot;</span>
+<span class="del">-]</span>
+<span class="add">+[]</span></pre>
+<h4>证据与缩减</h4><pre>- representative 210902bea61f-v01: confirmed 3/3 (each replay: fresh baseline, fresh control and a fresh case session)
+- ops 5 -&gt; 3 (11 probes, 247.672 s, reduced ops confirmed 3/3); query targets narrowed to the key
+- lines: not reduced
+- group: 3 violation(s) in 3 run(s), projects pmndrs/zustand@b57db4f86ef1, timings race0, race200, settled, seeds 1</pre>
+<h4>一年前版本上的重放</h4><p>未重放（该组没有一年前的版本可比）</p>
+<h4>可能相关的已有 issue（关键词搜索结果，要你核对）</h4><ul><li><a href="https://github.com/typescript-language-server/typescript-language-server/issues/878" target="_blank" rel="noopener">typescript-language-server/typescript-language-server#878</a> Support renaming files when renaming default exports <span class="muted">(open, 2024-02-27)</span></li><li><a href="https://github.com/typescript-language-server/typescript-language-server/issues/744" target="_blank" rel="noopener">typescript-language-server/typescript-language-server#744</a> EPERM: operation not permitted Cannot Move/Rename Files &amp; Directories when Language Server is Running.  <span class="muted">(closed, 2023-07-31)</span></li><li><a href="https://github.com/typescript-language-server/typescript-language-server/issues/665" target="_blank" rel="noopener">typescript-language-server/typescript-language-server#665</a> Preview rename file <span class="muted">(closed, 2023-01-16)</span></li><li><a href="https://github.com/typescript-language-server/typescript-language-server/issues/430" target="_blank" rel="noopener">typescript-language-server/typescript-language-server#430</a> Rename also trigger on files in node_modules <span class="muted">(closed, 2022-04-07)</span></li><li><a href="https://github.com/typescript-language-server/typescript-language-server/issues/962" target="_blank" rel="noopener">typescript-language-server/typescript-language-server#962</a> Angular auto-imports disappear depending on the trigger character <span class="muted">(closed, 2025-07-21)</span></li></ul>
+<p class="muted">完整报告：<a href="ts6-r1-completion-lost-h5-fa501c/report.md" target="_blank" rel="noopener">ts6-r1-completion-lost-h5-fa501c/report.md</a> ·
+复现命令（在项目根目录运行）：<code>python3 scripts/lsptest/repro_violation.py data/lsptest/runs/main_v1/triage/ts6-r1-completion-lost-h5-fa501c/repro.json</code></p>
+<div class="judge"><p class="q">你的判断：实际（被测会话）这边的答案错了吗？</p><button type="button" class="choice chosen" data-choice="bug" aria-pressed="true"><b>bug</b><small>是 bug</small></button><button type="button" class="choice" data-choice="legitimate" aria-pressed="false"><b>legitimate</b><small>不算问题：两边都说得通</small></button><button type="button" class="choice" data-choice="tool-artifact" aria-pressed="false"><b>tool-artifact</b><small>工具自己的问题</small></button><button type="button" class="clear">清除</button><textarea class="note" rows="2" placeholder="备注（可选）：一句理由、unsure、对上号的 issue 链接……"></textarea></div>
+</div></details>
+
+<details class="item" id="ts6-r1-definition-lost-h5-61a0fd" data-id="ts6-r1-definition-lost-h5-61a0fd" data-n="18"><summary><b class="num">18.</b> <span class="state judged">已判断：bug</span><span class="differ"></span> <code>ts6-r1-definition-lost-h5-61a0fd</code> · R1 历史无关 · ts6 · 成员 2 · 步骤 5→5</summary>
+<div class="body">
+<h3>[ts6 6.0.3] definition loses its answer after file rename round trip</h3>
+<p><b>违反的规则</b>：History independence (R1): after a sequence of edits that returns the documents to content C, every query must answer as in a fresh session opened on C. Fresh sessions on C agree with each other on this query; the session that went through the history does not.</p>
+<p><b>现象</b>：<code>definition:lost</code>；历史族/子检查：<code>H5</code></p>
+<h4>最少复现步骤</h4><pre>1. Start ts6 6.0.3 on the project root; answer workspace/configuration with the settings under Environment.
+2. textDocument/didOpen: `open src/react.ts`
+3. textDocument/didOpen: `open src/vanilla/shallow.ts`
+4. textDocument/didOpen: `open tests/persistSync.test.tsx`
+5. workspace/willRenameFiles, didClose, rename on disk, workspace/didRenameFiles, didChangeWatchedFiles, didOpen of the new path: `fs_rename src/react.ts -&gt; src/react_rt.ts`
+6. workspace/willRenameFiles, didClose, rename on disk, workspace/didRenameFiles, didChangeWatchedFiles, didOpen of the new path: `fs_rename src/react_rt.ts -&gt; src/react.ts`
+7. Timing: send the steps 0 ms apart without waiting, then wait until idle.
+8. Query `textDocument/definition` on `tests/persistSync.test.tsx` line 566, column 65 (LSP position {line: 565, character: 64}); compare with the same query in a fresh session opened on the final content (expected).</pre>
+<h4>预期与实际的差别（红 = 预期，参照会话的答案；绿 = 实际，被测会话的答案）</h4><pre class="diff">--- expected
++++ actual
+<span class="hunk">@@ -1,9 +1 @@</span>
+<span class="del">-[</span>
+<span class="del">- [</span>
+<span class="del">-  &quot;src/middleware/persist.ts&quot;,</span>
+<span class="del">-  141,</span>
+<span class="del">-  8,</span>
+<span class="del">-  141,</span>
+<span class="del">-  25</span>
+<span class="del">- ]</span>
+<span class="del">-]</span>
+<span class="add">+[]</span></pre>
+<h4>证据与缩减</h4><pre>- representative 3ed0e189007e-v02: confirmed 3/3 (each replay: fresh baseline, fresh control and a fresh case session)
+- ops 5 -&gt; 5 (5 probes, 93.699 s, reduced ops confirmed 3/3); query targets narrowed to the key
+- lines: not reduced
+- group: 2 violation(s) in 2 run(s), projects pmndrs/zustand@b57db4f86ef1, timings race0, race200, seeds 1</pre>
+<h4>一年前版本上的重放</h4><p>未重放（该组没有一年前的版本可比）</p>
+<h4>可能相关的已有 issue（关键词搜索结果，要你核对）</h4><ul><li><a href="https://github.com/typescript-language-server/typescript-language-server/issues/878" target="_blank" rel="noopener">typescript-language-server/typescript-language-server#878</a> Support renaming files when renaming default exports <span class="muted">(open, 2024-02-27)</span></li><li><a href="https://github.com/typescript-language-server/typescript-language-server/issues/744" target="_blank" rel="noopener">typescript-language-server/typescript-language-server#744</a> EPERM: operation not permitted Cannot Move/Rename Files &amp; Directories when Language Server is Running.  <span class="muted">(closed, 2023-07-31)</span></li><li><a href="https://github.com/typescript-language-server/typescript-language-server/issues/665" target="_blank" rel="noopener">typescript-language-server/typescript-language-server#665</a> Preview rename file <span class="muted">(closed, 2023-01-16)</span></li><li><a href="https://github.com/typescript-language-server/typescript-language-server/issues/430" target="_blank" rel="noopener">typescript-language-server/typescript-language-server#430</a> Rename also trigger on files in node_modules <span class="muted">(closed, 2022-04-07)</span></li><li><a href="https://github.com/typescript-language-server/typescript-language-server/issues/60" target="_blank" rel="noopener">typescript-language-server/typescript-language-server#60</a> Error: No Project. When starting LS from a bundled electron Theia application <span class="muted">(closed, 2018-09-02)</span></li></ul>
+<p class="muted">完整报告：<a href="ts6-r1-definition-lost-h5-61a0fd/report.md" target="_blank" rel="noopener">ts6-r1-definition-lost-h5-61a0fd/report.md</a> ·
+复现命令（在项目根目录运行）：<code>python3 scripts/lsptest/repro_violation.py data/lsptest/runs/main_v1/triage/ts6-r1-definition-lost-h5-61a0fd/repro.json</code></p>
+<div class="judge"><p class="q">你的判断：实际（被测会话）这边的答案错了吗？</p><button type="button" class="choice chosen" data-choice="bug" aria-pressed="true"><b>bug</b><small>是 bug</small></button><button type="button" class="choice" data-choice="legitimate" aria-pressed="false"><b>legitimate</b><small>不算问题：两边都说得通</small></button><button type="button" class="choice" data-choice="tool-artifact" aria-pressed="false"><b>tool-artifact</b><small>工具自己的问题</small></button><button type="button" class="clear">清除</button><textarea class="note" rows="2" placeholder="备注（可选）：一句理由、unsure、对上号的 issue 链接……"></textarea></div>
+</div></details>
+
+<details class="item" id="ts6-r1-definition-lost-h9-898f29" data-id="ts6-r1-definition-lost-h9-898f29" data-n="19"><summary><b class="num">19.</b> <span class="state judged">已判断：bug</span><span class="differ"></span> <code>ts6-r1-definition-lost-h9-898f29</code> · R1 历史无关 · ts6 · 成员 1 · 步骤 14→10</summary>
+<div class="body">
+<h3>[ts6 6.0.3] definition loses its answer after edit inside a workspace window</h3>
+<p><b>违反的规则</b>：History independence (R1): after a sequence of edits that returns the documents to content C, every query must answer as in a fresh session opened on C. Fresh sessions on C agree with each other on this query; the session that went through the history does not.</p>
+<p><b>现象</b>：<code>definition:lost</code>；历史族/子检查：<code>H9</code></p>
+<h4>最少复现步骤</h4><pre>1. Start ts6 6.0.3 on the project root; answer workspace/configuration with the settings under Environment.
+2. textDocument/didOpen: `open app/command.ts`
+3. textDocument/didOpen: `open app/components/mask.tsx`
+4. textDocument/didOpen: `open app/utils/store.ts`
+5. workspace/willRenameFiles, didClose, rename on disk, workspace/didRenameFiles, didChangeWatchedFiles, didOpen of the new path: `fs_rename app/utils/store.ts -&gt; app/utils/store_rt.ts`
+6. textDocument/didChange: `change app/components/mask.tsx (231, 0)-(232, 0) &quot;&quot;`
+7. textDocument/didChange: `change app/components/mask.tsx (231, 0)-(231, 0) &quot;       &quot;`
+8. textDocument/didChange: `change app/components/mask.tsx (231, 7)-(231, 7) &quot;           (await showConfirm(L&quot;`
+9. textDocument/didChange: `change app/components/mask.tsx (231, 38)-(231, 38) &quot;ocale.Mask.Config.Syn&quot;`
+10. textDocument/didChange: `change app/components/mask.tsx (231, 59)-(231, 59) &quot;c.Confirm))\n&quot;`
+11. workspace/willRenameFiles, didClose, rename on disk, workspace/didRenameFiles, didChangeWatchedFiles, didOpen of the new path: `fs_rename app/utils/store_rt.ts -&gt; app/utils/store.ts`
+12. Timing: wait until the server is idle after every step.
+13. Query `textDocument/definition` on `app/components/mask.tsx` line 608, column 25 (LSP position {line: 607, character: 24}); compare with the same query in a fresh session opened on the final content (expected).</pre>
+<h4>预期与实际的差别（红 = 预期，参照会话的答案；绿 = 实际，被测会话的答案）</h4><pre class="diff">--- expected
++++ actual
+<span class="hunk">@@ -1,9 +1 @@</span>
+<span class="del">-[</span>
+<span class="del">- [</span>
+<span class="del">-  &quot;app/store/mask.ts&quot;,</span>
+<span class="del">-  18,</span>
+<span class="del">-  2,</span>
+<span class="del">-  18,</span>
+<span class="del">-  9</span>
+<span class="del">- ]</span>
+<span class="del">-]</span>
+<span class="add">+[]</span></pre>
+<h4>证据与缩减</h4><pre>- representative 5ae299935d29-v00: confirmed 3/3 (each replay: fresh baseline, fresh control and a fresh case session)
+- ops 14 -&gt; 10 (19 probes, 1902.65 s, reduced ops confirmed 3/3); query targets narrowed to the key
+- lines: not reduced
+- group: 1 violation(s) in 1 run(s), projects ChatGPTNextWeb/NextChat@defdcdb55d85, timings settled, seeds 2</pre>
+<h4>一年前版本上的重放</h4><p>未重放（该组没有一年前的版本可比）</p>
+<h4>可能相关的已有 issue（关键词搜索结果，要你核对）</h4><ul><li><a href="https://github.com/typescript-language-server/typescript-language-server/issues/60" target="_blank" rel="noopener">typescript-language-server/typescript-language-server#60</a> Error: No Project. When starting LS from a bundled electron Theia application <span class="muted">(closed, 2018-09-02)</span></li><li><a href="https://github.com/typescript-language-server/typescript-language-server/issues/679" target="_blank" rel="noopener">typescript-language-server/typescript-language-server#679</a> Inconsistent completion suggestions on JSX attributes <span class="muted">(closed, 2023-02-07)</span></li><li><a href="https://github.com/typescript-language-server/typescript-language-server/issues/277" target="_blank" rel="noopener">typescript-language-server/typescript-language-server#277</a> Using typescript plugins through neovim-lsp <span class="muted">(closed, 2021-10-31)</span></li><li><a href="https://github.com/typescript-language-server/typescript-language-server/issues/264" target="_blank" rel="noopener">typescript-language-server/typescript-language-server#264</a> Inlay Hints return empty result <span class="muted">(closed, 2021-10-06)</span></li><li><a href="https://github.com/typescript-language-server/typescript-language-server/issues/203" target="_blank" rel="noopener">typescript-language-server/typescript-language-server#203</a> Javascript: Jump to declaration still not at JSDT&#x27;s level <span class="muted">(closed, 2021-04-16)</span></li></ul>
+<p class="muted">完整报告：<a href="ts6-r1-definition-lost-h9-898f29/report.md" target="_blank" rel="noopener">ts6-r1-definition-lost-h9-898f29/report.md</a> ·
+复现命令（在项目根目录运行）：<code>python3 scripts/lsptest/repro_violation.py data/lsptest/runs/main_v1/triage/ts6-r1-definition-lost-h9-898f29/repro.json</code></p>
+<div class="judge"><p class="q">你的判断：实际（被测会话）这边的答案错了吗？</p><button type="button" class="choice chosen" data-choice="bug" aria-pressed="true"><b>bug</b><small>是 bug</small></button><button type="button" class="choice" data-choice="legitimate" aria-pressed="false"><b>legitimate</b><small>不算问题：两边都说得通</small></button><button type="button" class="choice" data-choice="tool-artifact" aria-pressed="false"><b>tool-artifact</b><small>工具自己的问题</small></button><button type="button" class="clear">清除</button><textarea class="note" rows="2" placeholder="备注（可选）：一句理由、unsure、对上号的 issue 链接……"></textarea></div>
+</div></details>
+
+<details class="item" id="ts6-r1-diagnostics-extra-2304-h7-8ca52f" data-id="ts6-r1-diagnostics-extra-2304-h7-8ca52f" data-n="20"><summary><b class="num">20.</b> <span class="state judged">已判断：bug</span><span class="differ"></span> <code>ts6-r1-diagnostics-extra-2304-h7-8ca52f</code> · R1 历史无关 · ts6 · 成员 1 · 步骤 11→3</summary>
+<div class="body">
+<h3>[ts6 6.0.3] diagnostics adds 2304 after interleaving of h1-h6, h8, h9</h3>
+<p><b>违反的规则</b>：History independence (R1): after a sequence of edits that returns the documents to content C, every query must answer as in a fresh session opened on C. Fresh sessions on C agree with each other on this query; the session that went through the history does not.</p>
+<p><b>现象</b>：<code>diagnostics:extra:2304</code>；历史族/子检查：<code>H7</code></p>
+<h4>最少复现步骤</h4><pre>1. Start ts6 6.0.3 on the project root; answer workspace/configuration with the settings under Environment.
+2. textDocument/didOpen: `open examples/V7/validationOnFieldBlur.tsx`
+3. request: `request examples/V7/validationOnFieldBlur.tsx typeDefinition at (9, 9)`
+4. request: `request examples/V7/validationOnFieldBlur.tsx hover at (37, 10)`
+5. Timing: send the steps 0 ms apart without waiting, then wait until idle.
+6. textDocument/didOpen `app/src/main.tsx`, `src/logic/skipValidation.ts` (the query step opens every target file that is not open), then wait until the server is idle.
+7. Query `textDocument/diagnostic` on `examples/V7/validationOnFieldBlur.tsx` for the whole file; compare with the same query in a fresh session opened on the final content (expected).</pre>
+<h4>预期与实际的差别（红 = 预期，参照会话的答案；绿 = 实际，被测会话的答案）</h4><pre class="diff">--- expected
++++ actual
+<span class="hunk">@@ -41,4 +41,14 @@</span>
+  ],
+  [
+<span class="add">+  37,</span>
+<span class="add">+  9,</span>
+<span class="add">+  37,</span>
+<span class="add">+  12,</span>
+<span class="add">+  1,</span>
+<span class="add">+  &quot;2304&quot;,</span>
+<span class="add">+  &quot;typescript&quot;,</span>
+<span class="add">+  &quot;Cannot find name &#x27;div&#x27;.&quot;</span>
+<span class="add">+ ],</span>
+<span class="add">+ [</span>
+   38,
+   33,</pre>
+<h4>证据与缩减</h4><pre>- representative 43c648d37a2b-v01: confirmed 3/3 (each replay: fresh baseline, fresh control and a fresh case session)
+- ops 11 -&gt; 3 (15 probes, 245.715 s, reduced ops confirmed 3/3); query targets narrowed to the key
+- lines: not reduced
+- group: 1 violation(s) in 1 run(s), projects react-hook-form/react-hook-form@5fd9ef65290b, timings race0, seeds 1</pre>
+<h4>一年前版本上的重放</h4><p>未重放（该组没有一年前的版本可比）</p>
+<h4>可能相关的已有 issue（关键词搜索结果，要你核对）</h4><ul><li><a href="https://github.com/typescript-language-server/typescript-language-server/issues/1014" target="_blank" rel="noopener">typescript-language-server/typescript-language-server#1014</a> TypeScript Language Server Hangs on Completion Resolution On Enter Key Pressed <span class="muted">(closed, 2025-09-24)</span></li><li><a href="https://github.com/typescript-language-server/typescript-language-server/issues/917" target="_blank" rel="noopener">typescript-language-server/typescript-language-server#917</a> Shows incorrect type completion item between VSCode and Neovim <span class="muted">(closed, 2024-09-27)</span></li><li><a href="https://github.com/typescript-language-server/typescript-language-server/issues/815" target="_blank" rel="noopener">typescript-language-server/typescript-language-server#815</a> TSServer &gt;=4.1.0 never publishes textDocument/publishDiagnostics event (NeoVim) <span class="muted">(closed, 2023-11-16)</span></li><li><a href="https://github.com/typescript-language-server/typescript-language-server/issues/841" target="_blank" rel="noopener">typescript-language-server/typescript-language-server#841</a> Invalid completions <span class="muted">(closed, 2024-01-02)</span></li><li><a href="https://github.com/typescript-language-server/typescript-language-server/issues/724" target="_blank" rel="noopener">typescript-language-server/typescript-language-server#724</a> &quot;typescript.inlayHints.includeInlayParameterNameHints&quot;: &quot;all&quot; breaks inference with dangling commas <span class="muted">(closed, 2023-05-15)</span></li></ul>
+<p class="muted">完整报告：<a href="ts6-r1-diagnostics-extra-2304-h7-8ca52f/report.md" target="_blank" rel="noopener">ts6-r1-diagnostics-extra-2304-h7-8ca52f/report.md</a> ·
+复现命令（在项目根目录运行）：<code>python3 scripts/lsptest/repro_violation.py data/lsptest/runs/main_v1/triage/ts6-r1-diagnostics-extra-2304-h7-8ca52f/repro.json</code></p>
+<div class="judge"><p class="q">你的判断：实际（被测会话）这边的答案错了吗？</p><button type="button" class="choice chosen" data-choice="bug" aria-pressed="true"><b>bug</b><small>是 bug</small></button><button type="button" class="choice" data-choice="legitimate" aria-pressed="false"><b>legitimate</b><small>不算问题：两边都说得通</small></button><button type="button" class="choice" data-choice="tool-artifact" aria-pressed="false"><b>tool-artifact</b><small>工具自己的问题</small></button><button type="button" class="clear">清除</button><textarea class="note" rows="2" placeholder="备注（可选）：一句理由、unsure、对上号的 issue 链接……"></textarea></div>
+</div></details>
+
+<details class="item" id="ts6-r1-diagnostics-extra-2305-2339-7006-h5-d5a250" data-id="ts6-r1-diagnostics-extra-2305-2339-7006-h5-d5a250" data-n="21"><summary><b class="num">21.</b> <span class="state judged">已判断：bug</span><span class="differ"></span> <code>ts6-r1-diagnostics-extra-2305-2339-7006-h5-d5a250</code> · R1 历史无关 · ts6 · 成员 2 · 步骤 5→5</summary>
+<div class="body">
+<h3>[ts6 6.0.3] diagnostics adds 2305,2339,7006 after file rename round trip</h3>
+<p><b>违反的规则</b>：History independence (R1): after a sequence of edits that returns the documents to content C, every query must answer as in a fresh session opened on C. Fresh sessions on C agree with each other on this query; the session that went through the history does not.</p>
+<p><b>现象</b>：<code>diagnostics:extra:2305,2339,7006</code>；历史族/子检查：<code>H5</code></p>
+<h4>最少复现步骤</h4><pre>1. Start ts6 6.0.3 on the project root; answer workspace/configuration with the settings under Environment.
+2. textDocument/didOpen: `open src/react.ts`
+3. textDocument/didOpen: `open src/vanilla/shallow.ts`
+4. textDocument/didOpen: `open tests/persistSync.test.tsx`
+5. workspace/willRenameFiles, didClose, rename on disk, workspace/didRenameFiles, didChangeWatchedFiles, didOpen of the new path: `fs_rename src/react.ts -&gt; src/react_rt.ts`
+6. workspace/willRenameFiles, didClose, rename on disk, workspace/didRenameFiles, didChangeWatchedFiles, didOpen of the new path: `fs_rename src/react_rt.ts -&gt; src/react.ts`
+7. Timing: send the steps 0 ms apart without waiting, then wait until idle.
+8. Query `textDocument/diagnostic` on `tests/persistSync.test.tsx` for the whole file; compare with the same query in a fresh session opened on the final content (expected).</pre>
+<h4>预期与实际的差别（红 = 预期，参照会话的答案；绿 = 实际，被测会话的答案）</h4><pre class="diff">--- expected
++++ actual
+<span class="hunk">@@ -1,3 +1,13 @@</span>
+ [
+<span class="add">+ [</span>
+<span class="add">+  3,</span>
+<span class="add">+  9,</span>
+<span class="add">+  3,</span>
+<span class="add">+  15,</span>
+<span class="add">+  1,</span>
+<span class="add">+  &quot;2305&quot;,</span>
+<span class="add">+  &quot;typescript&quot;,</span>
+<span class="add">+  &quot;Module &#x27;\&quot;zustand\&quot;&#x27; has no exported member &#x27;create&#x27;.&quot;</span>
+<span class="add">+ ],</span>
+  [
+   70,
+<span class="hunk">@@ -141,4 +151,14 @@</span>
+  ],
+  [
+<span class="add">+  465,</span>
+<span class="add">+  19,</span>
+<span class="add">+  465,</span>
+<span class="add">+  24,</span>
+<span class="add">+  1,</span>
+<span class="add">+  &quot;7006&quot;,</span>
+<span class="add">+  &quot;typescript&quot;,</span>
+<span class="add">+  &quot;Parameter &#x27;state&#x27; implicitly has an &#x27;any&#x27; type.&quot;</span>
+<span class="add">+ ],</span>
+<span class="add">+ [</span>
+   471,
+   23,
+<span class="hunk">@@ -241,4 +261,24 @@</span>
+  ],
+  [
+<span class="add">+  645,</span>
+<span class="add">+  26,</span>
+<span class="add">+  645,</span>
+<span class="add">+  27,</span>
+<span class="add">+  1,</span>
+<span class="add">+  &quot;7006&quot;,</span>
+<span class="add">+  &quot;typescript&quot;,</span>
+<span class="add">+  &quot;Parameter &#x27;s&#x27; implicitly has an &#x27;any&#x27; type.&quot;</span>
+<span class="add">+ ],</span>
+<span class="add">+ [</span>
+<span class="add">+  650,</span>
+<span class="add">+  46,</span>
+<span class="add">+  650,</span>
+<span class="add">+  49,</span>
+<span class="add">+  1,</span>
+<span class="add">+  &quot;2339&quot;,</span>
+<span class="add">+  &quot;typescript&quot;,</span>
+<span class="add">+  &quot;Property &#x27;inc&#x27; does not exist on type &#x27;{}&#x27;.&quot;</span>
+<span class="add">+ ],</span>
+<span class="add">+ [</span>
+   687,
+   34,</pre>
+<h4>证据与缩减</h4><pre>- representative 3ed0e189007e-v03: confirmed 3/3 (each replay: fresh baseline, fresh control and a fresh case session)
+- ops 5 -&gt; 5 (11 probes, 274.132 s, reduced ops confirmed 2/3)
+- lines: not reduced
+- group: 2 violation(s) in 2 run(s), projects pmndrs/zustand@b57db4f86ef1, timings race0, race200, seeds 1</pre>
+<h4>一年前版本上的重放</h4><p>未重放（该组没有一年前的版本可比）</p>
+<h4>可能相关的已有 issue（关键词搜索结果，要你核对）</h4><ul><li><a href="https://github.com/typescript-language-server/typescript-language-server/issues/878" target="_blank" rel="noopener">typescript-language-server/typescript-language-server#878</a> Support renaming files when renaming default exports <span class="muted">(open, 2024-02-27)</span></li><li><a href="https://github.com/typescript-language-server/typescript-language-server/issues/744" target="_blank" rel="noopener">typescript-language-server/typescript-language-server#744</a> EPERM: operation not permitted Cannot Move/Rename Files &amp; Directories when Language Server is Running.  <span class="muted">(closed, 2023-07-31)</span></li><li><a href="https://github.com/typescript-language-server/typescript-language-server/issues/665" target="_blank" rel="noopener">typescript-language-server/typescript-language-server#665</a> Preview rename file <span class="muted">(closed, 2023-01-16)</span></li><li><a href="https://github.com/typescript-language-server/typescript-language-server/issues/430" target="_blank" rel="noopener">typescript-language-server/typescript-language-server#430</a> Rename also trigger on files in node_modules <span class="muted">(closed, 2022-04-07)</span></li><li><a href="https://github.com/typescript-language-server/typescript-language-server/issues/1014" target="_blank" rel="noopener">typescript-language-server/typescript-language-server#1014</a> TypeScript Language Server Hangs on Completion Resolution On Enter Key Pressed <span class="muted">(closed, 2025-09-24)</span></li></ul>
+<p class="muted">完整报告：<a href="ts6-r1-diagnostics-extra-2305-2339-7006-h5-d5a250/report.md" target="_blank" rel="noopener">ts6-r1-diagnostics-extra-2305-2339-7006-h5-d5a250/report.md</a> ·
+复现命令（在项目根目录运行）：<code>python3 scripts/lsptest/repro_violation.py data/lsptest/runs/main_v1/triage/ts6-r1-diagnostics-extra-2305-2339-7006-h5-d5a250/repro.json</code></p>
+<div class="judge"><p class="q">你的判断：实际（被测会话）这边的答案错了吗？</p><button type="button" class="choice chosen" data-choice="bug" aria-pressed="true"><b>bug</b><small>是 bug</small></button><button type="button" class="choice" data-choice="legitimate" aria-pressed="false"><b>legitimate</b><small>不算问题：两边都说得通</small></button><button type="button" class="choice" data-choice="tool-artifact" aria-pressed="false"><b>tool-artifact</b><small>工具自己的问题</small></button><button type="button" class="clear">清除</button><textarea class="note" rows="2" placeholder="备注（可选）：一句理由、unsure、对上号的 issue 链接……"></textarea></div>
+</div></details>
+
+<details class="item" id="ts6-r1-documenthighlight-lost-h5-9b4675" data-id="ts6-r1-documenthighlight-lost-h5-9b4675" data-n="22"><summary><b class="num">22.</b> <span class="state judged">已判断：bug</span><span class="differ"></span> <code>ts6-r1-documenthighlight-lost-h5-9b4675</code> · R1 历史无关 · ts6 · 成员 1 · 步骤 5→5</summary>
+<div class="body">
+<h3>[ts6 6.0.3] documentHighlight loses its answer after file rename round trip</h3>
+<p><b>违反的规则</b>：History independence (R1): after a sequence of edits that returns the documents to content C, every query must answer as in a fresh session opened on C. Fresh sessions on C agree with each other on this query; the session that went through the history does not.</p>
+<p><b>现象</b>：<code>documentHighlight:lost</code>；历史族/子检查：<code>H5</code></p>
+<h4>最少复现步骤</h4><pre>1. Start ts6 6.0.3 on the project root; answer workspace/configuration with the settings under Environment.
+2. textDocument/didOpen: `open src/react.ts`
+3. textDocument/didOpen: `open src/vanilla/shallow.ts`
+4. textDocument/didOpen: `open tests/persistSync.test.tsx`
+5. workspace/willRenameFiles, didClose, rename on disk, workspace/didRenameFiles, didChangeWatchedFiles, didOpen of the new path: `fs_rename src/react.ts -&gt; src/react_rt.ts`
+6. workspace/willRenameFiles, didClose, rename on disk, workspace/didRenameFiles, didChangeWatchedFiles, didOpen of the new path: `fs_rename src/react_rt.ts -&gt; src/react.ts`
+7. Timing: send the steps 0 ms apart without waiting, then wait until idle.
+8. Query `textDocument/documentHighlight` on `tests/persistSync.test.tsx` line 566, column 65 (LSP position {line: 565, character: 64}); compare with the same query in a fresh session opened on the final content (expected).</pre>
+<h4>预期与实际的差别（红 = 预期，参照会话的答案；绿 = 实际，被测会话的答案）</h4><pre class="diff">--- expected
++++ actual
+<span class="hunk">@@ -1,16 +1 @@</span>
+<span class="del">-[</span>
+<span class="del">- [</span>
+<span class="del">-  565,</span>
+<span class="del">-  56,</span>
+<span class="del">-  565,</span>
+<span class="del">-  73,</span>
+<span class="del">-  2</span>
+<span class="del">- ],</span>
+<span class="del">- [</span>
+<span class="del">-  568,</span>
+<span class="del">-  26,</span>
+<span class="del">-  568,</span>
+<span class="del">-  43,</span>
+<span class="del">-  2</span>
+<span class="del">- ]</span>
+<span class="del">-]</span>
+<span class="add">+[]</span></pre>
+<h4>证据与缩减</h4><pre>- representative 3ed0e189007e-v04: confirmed 3/3 (each replay: fresh baseline, fresh control and a fresh case session)
+- ops 5 -&gt; 5 (11 probes, 240.42 s, reduced ops confirmed 2/3); query targets narrowed to the key
+- lines: not reduced
+- group: 1 violation(s) in 1 run(s), projects pmndrs/zustand@b57db4f86ef1, timings race0, seeds 1</pre>
+<h4>一年前版本上的重放</h4><p>未重放（该组没有一年前的版本可比）</p>
+<h4>可能相关的已有 issue（关键词搜索结果，要你核对）</h4><ul><li><a href="https://github.com/typescript-language-server/typescript-language-server/issues/878" target="_blank" rel="noopener">typescript-language-server/typescript-language-server#878</a> Support renaming files when renaming default exports <span class="muted">(open, 2024-02-27)</span></li><li><a href="https://github.com/typescript-language-server/typescript-language-server/issues/744" target="_blank" rel="noopener">typescript-language-server/typescript-language-server#744</a> EPERM: operation not permitted Cannot Move/Rename Files &amp; Directories when Language Server is Running.  <span class="muted">(closed, 2023-07-31)</span></li><li><a href="https://github.com/typescript-language-server/typescript-language-server/issues/665" target="_blank" rel="noopener">typescript-language-server/typescript-language-server#665</a> Preview rename file <span class="muted">(closed, 2023-01-16)</span></li><li><a href="https://github.com/typescript-language-server/typescript-language-server/issues/430" target="_blank" rel="noopener">typescript-language-server/typescript-language-server#430</a> Rename also trigger on files in node_modules <span class="muted">(closed, 2022-04-07)</span></li><li><a href="https://github.com/typescript-language-server/typescript-language-server/issues/236" target="_blank" rel="noopener">typescript-language-server/typescript-language-server#236</a> JSDoc support <span class="muted">(closed, 2021-07-13)</span></li></ul>
+<p class="muted">完整报告：<a href="ts6-r1-documenthighlight-lost-h5-9b4675/report.md" target="_blank" rel="noopener">ts6-r1-documenthighlight-lost-h5-9b4675/report.md</a> ·
+复现命令（在项目根目录运行）：<code>python3 scripts/lsptest/repro_violation.py data/lsptest/runs/main_v1/triage/ts6-r1-documenthighlight-lost-h5-9b4675/repro.json</code></p>
+<div class="judge"><p class="q">你的判断：实际（被测会话）这边的答案错了吗？</p><button type="button" class="choice chosen" data-choice="bug" aria-pressed="true"><b>bug</b><small>是 bug</small></button><button type="button" class="choice" data-choice="legitimate" aria-pressed="false"><b>legitimate</b><small>不算问题：两边都说得通</small></button><button type="button" class="choice" data-choice="tool-artifact" aria-pressed="false"><b>tool-artifact</b><small>工具自己的问题</small></button><button type="button" class="clear">清除</button><textarea class="note" rows="2" placeholder="备注（可选）：一句理由、unsure、对上号的 issue 链接……"></textarea></div>
+</div></details>
+
+<details class="item" id="ts6-r1-references-lost-h5-d24ca6" data-id="ts6-r1-references-lost-h5-d24ca6" data-n="23"><summary><b class="num">23.</b> <span class="state judged">已判断：bug</span><span class="differ"></span> <code>ts6-r1-references-lost-h5-d24ca6</code> · R1 历史无关 · ts6 · 成员 3 · 步骤 5→3</summary>
+<div class="body">
+<h3>[ts6 6.0.3] references loses its answer after file rename round trip</h3>
+<p><b>违反的规则</b>：History independence (R1): after a sequence of edits that returns the documents to content C, every query must answer as in a fresh session opened on C. Fresh sessions on C agree with each other on this query; the session that went through the history does not.</p>
+<p><b>现象</b>：<code>references:lost</code>；历史族/子检查：<code>H5</code></p>
+<h4>最少复现步骤</h4><pre>1. Start ts6 6.0.3 on the project root; answer workspace/configuration with the settings under Environment.
+2. textDocument/didOpen: `open src/react.ts`
+3. workspace/willRenameFiles, didClose, rename on disk, workspace/didRenameFiles, didChangeWatchedFiles, didOpen of the new path: `fs_rename src/react.ts -&gt; src/react_rt.ts`
+4. workspace/willRenameFiles, didClose, rename on disk, workspace/didRenameFiles, didChangeWatchedFiles, didOpen of the new path: `fs_rename src/react_rt.ts -&gt; src/react.ts`
+5. Timing: wait until the server is idle after every step.
+6. textDocument/didOpen `src/vanilla/shallow.ts`, `tests/persistSync.test.tsx` (the query step opens every target file that is not open), then wait until the server is idle.
+7. Query `textDocument/references` on `tests/persistSync.test.tsx` line 566, column 65 (LSP position {line: 565, character: 64}); compare with the same query in a fresh session opened on the final content (expected).</pre>
+<h4>预期与实际的差别（红 = 预期，参照会话的答案；绿 = 实际，被测会话的答案）</h4><pre class="diff">--- expected
++++ actual
+<span class="hunk">@@ -1,44 +1 @@</span>
+<span class="del">-[</span>
+<span class="del">- [</span>
+<span class="del">-  &quot;src/middleware/persist.ts&quot;,</span>
+<span class="del">-  141,</span>
+<span class="del">-  8,</span>
+<span class="del">-  141,</span>
+<span class="del">-  25</span>
+<span class="del">- ],</span>
+<span class="del">- [</span>
+<span class="del">-  &quot;src/middleware/persist.ts&quot;,</span>
+<span class="del">-  361,</span>
+<span class="del">-  4,</span>
+<span class="del">-  361,</span>
+<span class="del">-  21</span>
+<span class="del">- ],</span>
+<span class="del">- [</span>
+<span class="del">-  &quot;tests/persistAsync.test.tsx&quot;,</span>
+<span class="del">-  958,</span>
+<span class="del">-  26,</span>
+<span class="del">-  958,</span>
+<span class="del">-  43</span>
+<span class="del">- ],</span>
+<span class="del">- [</span>
+<span class="del">-  &quot;tests/persistAsync.test.tsx&quot;,</span>
+<span class="del">-  1219,</span>
+<span class="del">-  18,</span>
+<span class="del">-  1219,</span>
+<span class="del">-  35</span>
+<span class="del">- ],</span>
+<span class="del">- [</span>
+<span class="del">-  &quot;tests/persistSync.test.tsx&quot;,</span>
+<span class="del">-  565,</span>
+<span class="del">-  56,</span>
+<span class="del">-  565,</span>
+<span class="del">-  73</span>
+<span class="del">- ],</span>
+<span class="del">- [</span>
+<span class="del">-  &quot;tests/persistSync.test.tsx&quot;,</span>
+<span class="del">-  568,</span>
+<span class="del">-  26,</span>
+<span class="del">-  568,</span>
+<span class="del">-  43</span>
+<span class="del">- ]</span>
+<span class="del">-]</span>
+<span class="add">+[]</span></pre>
+<h4>证据与缩减</h4><pre>- representative 210902bea61f-v07: confirmed 3/3 (each replay: fresh baseline, fresh control and a fresh case session)
+- ops 5 -&gt; 3 (11 probes, 242.092 s, reduced ops confirmed 3/3); query targets narrowed to the key
+- lines: not reduced
+- group: 3 violation(s) in 3 run(s), projects pmndrs/zustand@b57db4f86ef1, timings race0, race200, settled, seeds 1</pre>
+<h4>一年前版本上的重放</h4><p>未重放（该组没有一年前的版本可比）</p>
+<h4>可能相关的已有 issue（关键词搜索结果，要你核对）</h4><ul><li><a href="https://github.com/typescript-language-server/typescript-language-server/issues/878" target="_blank" rel="noopener">typescript-language-server/typescript-language-server#878</a> Support renaming files when renaming default exports <span class="muted">(open, 2024-02-27)</span></li><li><a href="https://github.com/typescript-language-server/typescript-language-server/issues/744" target="_blank" rel="noopener">typescript-language-server/typescript-language-server#744</a> EPERM: operation not permitted Cannot Move/Rename Files &amp; Directories when Language Server is Running.  <span class="muted">(closed, 2023-07-31)</span></li><li><a href="https://github.com/typescript-language-server/typescript-language-server/issues/665" target="_blank" rel="noopener">typescript-language-server/typescript-language-server#665</a> Preview rename file <span class="muted">(closed, 2023-01-16)</span></li><li><a href="https://github.com/typescript-language-server/typescript-language-server/issues/430" target="_blank" rel="noopener">typescript-language-server/typescript-language-server#430</a> Rename also trigger on files in node_modules <span class="muted">(closed, 2022-04-07)</span></li><li><a href="https://github.com/typescript-language-server/typescript-language-server/issues/945" target="_blank" rel="noopener">typescript-language-server/typescript-language-server#945</a> Cross-file referencing not working when using multilspy client <span class="muted">(closed, 2025-03-06)</span></li></ul>
+<p class="muted">完整报告：<a href="ts6-r1-references-lost-h5-d24ca6/report.md" target="_blank" rel="noopener">ts6-r1-references-lost-h5-d24ca6/report.md</a> ·
+复现命令（在项目根目录运行）：<code>python3 scripts/lsptest/repro_violation.py data/lsptest/runs/main_v1/triage/ts6-r1-references-lost-h5-d24ca6/repro.json</code></p>
+<div class="judge"><p class="q">你的判断：实际（被测会话）这边的答案错了吗？</p><button type="button" class="choice chosen" data-choice="bug" aria-pressed="true"><b>bug</b><small>是 bug</small></button><button type="button" class="choice" data-choice="legitimate" aria-pressed="false"><b>legitimate</b><small>不算问题：两边都说得通</small></button><button type="button" class="choice" data-choice="tool-artifact" aria-pressed="false"><b>tool-artifact</b><small>工具自己的问题</small></button><button type="button" class="clear">清除</button><textarea class="note" rows="2" placeholder="备注（可选）：一句理由、unsure、对上号的 issue 链接……"></textarea></div>
+</div></details>
+
+<details class="item" id="ts6-r1-references-missing-h5-cc8950" data-id="ts6-r1-references-missing-h5-cc8950" data-n="24"><summary><b class="num">24.</b> <span class="state judged">已判断：bug</span><span class="differ"></span> <code>ts6-r1-references-missing-h5-cc8950</code> · R1 历史无关 · ts6 · 成员 3 · 步骤 5→3</summary>
+<div class="body">
+<h3>[ts6 6.0.3] references misses entries after file rename round trip</h3>
+<p><b>违反的规则</b>：History independence (R1): after a sequence of edits that returns the documents to content C, every query must answer as in a fresh session opened on C. Fresh sessions on C agree with each other on this query; the session that went through the history does not.</p>
+<p><b>现象</b>：<code>references:missing</code>；历史族/子检查：<code>H5</code></p>
+<h4>最少复现步骤</h4><pre>1. Start ts6 6.0.3 on the project root; answer workspace/configuration with the settings under Environment.
+2. textDocument/didOpen: `open src/core/shared/skill-generation.ts (then 200 ms)`
+3. workspace/willRenameFiles, didClose, rename on disk, workspace/didRenameFiles, didChangeWatchedFiles, didOpen of the new path: `fs_rename src/core/shared/skill-generation.ts -&gt; src/core/shared/skill-generation_rt.ts (then 200 ms)`
+4. workspace/willRenameFiles, didClose, rename on disk, workspace/didRenameFiles, didChangeWatchedFiles, didOpen of the new path: `fs_rename src/core/shared/skill-generation_rt.ts -&gt; src/core/shared/skill-generation.ts (then 200 ms)`
+5. Timing: send the steps 200 ms apart without waiting, then wait until idle.
+6. textDocument/didOpen `src/telemetry/index.ts`, `test/commands/store-git.test.ts` (the query step opens every target file that is not open), then wait until the server is idle.
+7. Query `textDocument/references` on `src/core/shared/skill-generation.ts` line 65, column 6 (LSP position {line: 64, character: 5}); compare with the same query in a fresh session opened on the final content (expected).</pre>
+<h4>预期与实际的差别（红 = 预期，参照会话的答案；绿 = 实际，被测会话的答案）</h4><pre class="diff">--- expected
++++ actual
+<span class="hunk">@@ -1,10 +1,3 @@</span>
+ [
+<span class="del">- [</span>
+<span class="del">-  &quot;src/core/init.ts&quot;,</span>
+<span class="del">-  966,</span>
+<span class="del">-  33,</span>
+<span class="del">-  966,</span>
+<span class="del">-  40</span>
+<span class="del">- ],</span>
+  [
+   &quot;src/core/shared/skill-generation.ts&quot;,
+<span class="hunk">@@ -97,25 +90,4 @@</span>
+   94,
+   54
+<span class="del">- ],</span>
+<span class="del">- [</span>
+<span class="del">-  &quot;src/core/update.ts&quot;,</span>
+<span class="del">-  339,</span>
+<span class="del">-  33,</span>
+<span class="del">-  339,</span>
+<span class="del">-  40</span>
+<span class="del">- ],</span>
+<span class="del">- [</span>
+<span class="del">-  &quot;src/core/update.ts&quot;,</span>
+<span class="del">-  629,</span>
+<span class="del">-  75,</span>
+<span class="del">-  629,</span>
+<span class="del">-  82</span>
+<span class="del">- ],</span>
+<span class="del">- [</span>
+<span class="del">-  &quot;src/core/update.ts&quot;,</span>
+<span class="del">-  1343,</span>
+<span class="del">-  33,</span>
+<span class="del">-  1343,</span>
+<span class="del">-  40</span>
+  ]
+ ]</pre>
+<h4>证据与缩减</h4><pre>- representative 9fc84ad1ca04-v00: confirmed 3/3 (each replay: fresh baseline, fresh control and a fresh case session)
+- ops 5 -&gt; 3 (11 probes, 112.099 s, reduced ops confirmed 3/3); query targets narrowed to the key
+- lines: not reduced
+- group: 3 violation(s) in 3 run(s), projects Fission-AI/OpenSpec@f179ed4e4056, vercel/hyper@30ec0a2a91de, timings race200, settled, seeds 1</pre>
+<h4>一年前版本上的重放</h4><p>未重放（该组没有一年前的版本可比）</p>
+<h4>可能相关的已有 issue（关键词搜索结果，要你核对）</h4><ul><li><a href="https://github.com/typescript-language-server/typescript-language-server/issues/878" target="_blank" rel="noopener">typescript-language-server/typescript-language-server#878</a> Support renaming files when renaming default exports <span class="muted">(open, 2024-02-27)</span></li><li><a href="https://github.com/typescript-language-server/typescript-language-server/issues/744" target="_blank" rel="noopener">typescript-language-server/typescript-language-server#744</a> EPERM: operation not permitted Cannot Move/Rename Files &amp; Directories when Language Server is Running.  <span class="muted">(closed, 2023-07-31)</span></li><li><a href="https://github.com/typescript-language-server/typescript-language-server/issues/665" target="_blank" rel="noopener">typescript-language-server/typescript-language-server#665</a> Preview rename file <span class="muted">(closed, 2023-01-16)</span></li><li><a href="https://github.com/typescript-language-server/typescript-language-server/issues/430" target="_blank" rel="noopener">typescript-language-server/typescript-language-server#430</a> Rename also trigger on files in node_modules <span class="muted">(closed, 2022-04-07)</span></li><li><a href="https://github.com/typescript-language-server/typescript-language-server/issues/945" target="_blank" rel="noopener">typescript-language-server/typescript-language-server#945</a> Cross-file referencing not working when using multilspy client <span class="muted">(closed, 2025-03-06)</span></li></ul>
+<p class="muted">完整报告：<a href="ts6-r1-references-missing-h5-cc8950/report.md" target="_blank" rel="noopener">ts6-r1-references-missing-h5-cc8950/report.md</a> ·
+复现命令（在项目根目录运行）：<code>python3 scripts/lsptest/repro_violation.py data/lsptest/runs/main_v1/triage/ts6-r1-references-missing-h5-cc8950/repro.json</code></p>
+<div class="judge"><p class="q">你的判断：实际（被测会话）这边的答案错了吗？</p><button type="button" class="choice chosen" data-choice="bug" aria-pressed="true"><b>bug</b><small>是 bug</small></button><button type="button" class="choice" data-choice="legitimate" aria-pressed="false"><b>legitimate</b><small>不算问题：两边都说得通</small></button><button type="button" class="choice" data-choice="tool-artifact" aria-pressed="false"><b>tool-artifact</b><small>工具自己的问题</small></button><button type="button" class="clear">清除</button><textarea class="note" rows="2" placeholder="备注（可选）：一句理由、unsure、对上号的 issue 链接……"></textarea></div>
+</div></details>
+
+<details class="item" id="ts6-r1-semantictokens-changed-h5-591c42" data-id="ts6-r1-semantictokens-changed-h5-591c42" data-n="25"><summary><b class="num">25.</b> <span class="state judged">已判断：bug</span><span class="differ"></span> <code>ts6-r1-semantictokens-changed-h5-591c42</code> · R1 历史无关 · ts6 · 成员 2 · 步骤 5→3</summary>
+<div class="body">
+<h3>[ts6 6.0.3] semanticTokens changes its answer after file rename round trip</h3>
+<p><b>违反的规则</b>：History independence (R1): after a sequence of edits that returns the documents to content C, every query must answer as in a fresh session opened on C. Fresh sessions on C agree with each other on this query; the session that went through the history does not.</p>
+<p><b>现象</b>：<code>semanticTokens:changed</code>；历史族/子检查：<code>H5</code></p>
+<h4>最少复现步骤</h4><pre>1. Start ts6 6.0.3 on the project root; answer workspace/configuration with the settings under Environment.
+2. textDocument/didOpen: `open src/react.ts`
+3. workspace/willRenameFiles, didClose, rename on disk, workspace/didRenameFiles, didChangeWatchedFiles, didOpen of the new path: `fs_rename src/react.ts -&gt; src/react_rt.ts`
+4. workspace/willRenameFiles, didClose, rename on disk, workspace/didRenameFiles, didChangeWatchedFiles, didOpen of the new path: `fs_rename src/react_rt.ts -&gt; src/react.ts`
+5. Timing: wait until the server is idle after every step.
+6. textDocument/didOpen `src/vanilla/shallow.ts`, `tests/persistSync.test.tsx` (the query step opens every target file that is not open), then wait until the server is idle.
+7. Query `textDocument/semanticTokens/full` on `tests/persistSync.test.tsx` for the whole file; compare with the same query in a fresh session opened on the final content (expected).</pre>
+<h4>预期与实际的差别（红 = 预期，参照会话的答案；绿 = 实际，被测会话的答案）</h4><pre class="diff">--- expected
++++ actual
+<span class="hunk">@@ -414,11 +414,4 @@</span>
+  ],
+  [
+<span class="del">-  52,</span>
+<span class="del">-  26,</span>
+<span class="del">-  6,</span>
+<span class="del">-  &quot;function&quot;,</span>
+<span class="del">-  &quot;readonly&quot;</span>
+<span class="del">- ],</span>
+<span class="del">- [</span>
+   53,
+   6,
+<span class="hunk">@@ -499,11 +492,4 @@</span>
+  [
+   66,
+<span class="del">-  25,</span>
+<span class="del">-  8,</span>
+<span class="del">-  &quot;member&quot;,</span>
+<span class="del">-  &quot;&quot;</span>
+<span class="del">- ],</span>
+<span class="del">- [</span>
+<span class="del">-  66,</span>
+   37,
+   7,
+<span class="hunk">@@ -624,11 +610,4 @@</span>
+  ],
+  [
+<span class="del">-  86,</span>
+<span class="del">-  4,</span>
+<span class="del">-  6,</span>
+<span class="del">-  &quot;function&quot;,</span>
+<span class="del">-  &quot;readonly&quot;</span>
+<span class="del">- ],</span>
+<span class="del">- [</span>
+   87,
+   6,
+<span class="hunk">@@ -778,11 +757,4 @@</span>
+  ],
+  [
+<span class="del">-  102,</span>
+<span class="del">-  28,</span>
+<span class="del">-  6,</span>
+<span class="del">-  &quot;function&quot;,</span>
+<span class="del">-  &quot;readonly&quot;</span>
+<span class="del">- ],</span>
+<span class="del">- [</span>
+   103,
+   8,
+<span class="hunk">@@ -891,11 +863,4 @@</span>
+  [
+   114,
+<span class="del">-  25,</span>
+<span class="del">-  8,</span>
+<span class="del">-  &quot;member&quot;,</span>
+<span class="del">-  &quot;&quot;</span>
+<span class="del">- ],</span>
+<span class="del">- [</span>
+<span class="del">-  114,</span>
+   37,
+   7,
+<span class="hunk">@@ -947,11 +912,4 @@</span>
+  [
+   118,
+<span class="del">-  18,</span>
+<span class="del">-  8,</span>
+<span class="del">-  &quot;member&quot;,</span>
+<span class="del">-  &quot;&quot;</span>
+<span class="del">- ],</span>
+<span class="del">- [</span>
+<span class="del">-  118,</span>
+   29,
+   5,
+<span class="hunk">@@ -972,11 +930,4 @@</span>
+   &quot;variable&quot;,
+   &quot;local,readonly&quot;
+<span class="del">- ],</span>
+<span class="del">- [</span>
+<span class="del">-  119,</span>
+<span class="del">-  25,</span>
+<span class="del">-  8,</span>
+<span class="del">-  &quot;member&quot;,</span>
+<span class="del">-  &quot;&quot;</span>
+  ],
+  [
+<span class="hunk">@@ -1101,11 +1052,4 @@</span>
+  [
+   131,
+<span class="del">-  26,</span>
+……（还有 846 行差别没显示，完整内容见报告）</pre>
+<h4>证据与缩减</h4><pre>- representative 210902bea61f-v08: confirmed 3/3 (each replay: fresh baseline, fresh control and a fresh case session)
+- ops 5 -&gt; 3 (11 probes, 219.59 s, reduced ops confirmed 3/3); query targets narrowed to the key
+- lines: not reduced
+- group: 2 violation(s) in 2 run(s), projects pmndrs/zustand@b57db4f86ef1, timings race200, settled, seeds 1</pre>
+<h4>一年前版本上的重放</h4><p>未重放（该组没有一年前的版本可比）</p>
+<h4>可能相关的已有 issue（关键词搜索结果，要你核对）</h4><ul><li><a href="https://github.com/typescript-language-server/typescript-language-server/issues/878" target="_blank" rel="noopener">typescript-language-server/typescript-language-server#878</a> Support renaming files when renaming default exports <span class="muted">(open, 2024-02-27)</span></li><li><a href="https://github.com/typescript-language-server/typescript-language-server/issues/744" target="_blank" rel="noopener">typescript-language-server/typescript-language-server#744</a> EPERM: operation not permitted Cannot Move/Rename Files &amp; Directories when Language Server is Running.  <span class="muted">(closed, 2023-07-31)</span></li><li><a href="https://github.com/typescript-language-server/typescript-language-server/issues/665" target="_blank" rel="noopener">typescript-language-server/typescript-language-server#665</a> Preview rename file <span class="muted">(closed, 2023-01-16)</span></li><li><a href="https://github.com/typescript-language-server/typescript-language-server/issues/430" target="_blank" rel="noopener">typescript-language-server/typescript-language-server#430</a> Rename also trigger on files in node_modules <span class="muted">(closed, 2022-04-07)</span></li><li><a href="https://github.com/typescript-language-server/typescript-language-server/issues/753" target="_blank" rel="noopener">typescript-language-server/typescript-language-server#753</a> angle brackets are not being matched properly, causing keywords to be highlighted as a type <span class="muted">(closed, 2023-09-05)</span></li></ul>
+<p class="muted">完整报告：<a href="ts6-r1-semantictokens-changed-h5-591c42/report.md" target="_blank" rel="noopener">ts6-r1-semantictokens-changed-h5-591c42/report.md</a> ·
+复现命令（在项目根目录运行）：<code>python3 scripts/lsptest/repro_violation.py data/lsptest/runs/main_v1/triage/ts6-r1-semantictokens-changed-h5-591c42/repro.json</code></p>
+<div class="judge"><p class="q">你的判断：实际（被测会话）这边的答案错了吗？</p><button type="button" class="choice chosen" data-choice="bug" aria-pressed="true"><b>bug</b><small>是 bug</small></button><button type="button" class="choice" data-choice="legitimate" aria-pressed="false"><b>legitimate</b><small>不算问题：两边都说得通</small></button><button type="button" class="choice" data-choice="tool-artifact" aria-pressed="false"><b>tool-artifact</b><small>工具自己的问题</small></button><button type="button" class="clear">清除</button><textarea class="note" rows="2" placeholder="备注（可选）：一句理由、unsure、对上号的 issue 链接……"></textarea></div>
+</div></details>
+
+<details class="item" id="ts6-r1-semantictokens-missing-h9-d686b3" data-id="ts6-r1-semantictokens-missing-h9-d686b3" data-n="26"><summary><b class="num">26.</b> <span class="state judged">已判断：bug</span><span class="differ"></span> <code>ts6-r1-semantictokens-missing-h9-d686b3</code> · R1 历史无关 · ts6 · 成员 2 · 步骤 14→3</summary>
+<div class="body">
+<h3>[ts6 6.0.3] semanticTokens misses entries after edit inside a workspace window</h3>
+<p><b>违反的规则</b>：History independence (R1): after a sequence of edits that returns the documents to content C, every query must answer as in a fresh session opened on C. Fresh sessions on C agree with each other on this query; the session that went through the history does not.</p>
+<p><b>现象</b>：<code>semanticTokens:missing</code>；历史族/子检查：<code>H9</code></p>
+<h4>最少复现步骤</h4><pre>1. Start ts6 6.0.3 on the project root; answer workspace/configuration with the settings under Environment.
+2. textDocument/didOpen: `open website/plugins/remark-typescript-tools/transpileCodeblocks/plugin.ts`
+3. workspace/willRenameFiles, didClose, rename on disk, workspace/didRenameFiles, didChangeWatchedFiles, didOpen of the new path: `fs_rename website/plugins/remark-typescript-tools/transpileCodeblocks/plugin.ts -&gt; website/plugins/remark-typescript-tools/transpileCodeblocks/plugin_rt.ts`
+4. workspace/willRenameFiles, didClose, rename on disk, workspace/didRenameFiles, didChangeWatchedFiles, didOpen of the new path: `fs_rename website/plugins/remark-typescript-tools/transpileCodeblocks/plugin_rt.ts -&gt; website/plugins/remark-typescript-tools/transpileCodeblocks/plugin.ts`
+5. Timing: wait until the server is idle after every step.
+6. textDocument/didOpen `test/helpers/reducers.ts`, `test/typescript/enhancers.test-d.ts` (the query step opens every target file that is not open), then wait until the server is idle.
+7. Query `textDocument/semanticTokens/full` on `website/plugins/remark-typescript-tools/transpileCodeblocks/plugin.ts` for the whole file; compare with the same query in a fresh session opened on the final content (expected).</pre>
+<h4>预期与实际的差别（红 = 预期，参照会话的答案；绿 = 实际，被测会话的答案）</h4><pre class="diff">--- expected
++++ actual
+<span class="hunk">@@ -1268,25 +1268,4 @@</span>
+  ],
+  [
+<span class="del">-  176,</span>
+<span class="del">-  35,</span>
+<span class="del">-  4,</span>
+<span class="del">-  &quot;property&quot;,</span>
+<span class="del">-  &quot;&quot;</span>
+<span class="del">- ],</span>
+<span class="del">- [</span>
+<span class="del">-  177,</span>
+<span class="del">-  17,</span>
+<span class="del">-  5,</span>
+<span class="del">-  &quot;member&quot;,</span>
+<span class="del">-  &quot;defaultLibrary&quot;</span>
+<span class="del">- ],</span>
+<span class="del">- [</span>
+<span class="del">-  178,</span>
+<span class="del">-  17,</span>
+<span class="del">-  3,</span>
+<span class="del">-  &quot;member&quot;,</span>
+<span class="del">-  &quot;defaultLibrary&quot;</span>
+<span class="del">- ],</span>
+<span class="del">- [</span>
+   179,
+   19,
+<span class="hunk">@@ -1378,11 +1357,4 @@</span>
+   &quot;variable&quot;,
+   &quot;local,readonly&quot;
+<span class="del">- ],</span>
+<span class="del">- [</span>
+<span class="del">-  188,</span>
+<span class="del">-  8,</span>
+<span class="del">-  5,</span>
+<span class="del">-  &quot;member&quot;,</span>
+<span class="del">-  &quot;defaultLibrary&quot;</span>
+  ],
+  [
+<span class="hunk">@@ -1429,11 +1401,4 @@</span>
+  ],
+  [
+<span class="del">-  188,</span>
+<span class="del">-  69,</span>
+<span class="del">-  4,</span>
+<span class="del">-  &quot;member&quot;,</span>
+<span class="del">-  &quot;defaultLibrary&quot;</span>
+<span class="del">- ],</span>
+<span class="del">- [</span>
+   191,
+   18,</pre>
+<h4>证据与缩减</h4><pre>- representative 257881247893-v01: confirmed 3/3 (each replay: fresh baseline, fresh control and a fresh case session)
+- ops 14 -&gt; 3 (27 probes, 644.739 s, reduced ops confirmed 3/3); query targets narrowed to the key
+- lines: not reduced
+- group: 2 violation(s) in 2 run(s), projects ChatGPTNextWeb/NextChat@defdcdb55d85, reduxjs/redux@fb3bad6804d6, timings settled, seeds 2</pre>
+<h4>一年前版本上的重放</h4><p>未重放（该组没有一年前的版本可比）</p>
+<h4>可能相关的已有 issue（关键词搜索结果，要你核对）</h4><ul><li><a href="https://github.com/microsoft/TypeScript/issues/44099" target="_blank" rel="noopener">microsoft/TypeScript#44099</a> Function identifiers no longer receive semantic highlighting tokens <span class="muted">(open, 2021-05-14)</span></li><li><a href="https://github.com/microsoft/TypeScript/issues/57585" target="_blank" rel="noopener">microsoft/TypeScript#57585</a> TypeScript Language Server False Positive Error Reporting <span class="muted">(closed, 2024-02-28)</span></li></ul>
+<p class="muted">完整报告：<a href="ts6-r1-semantictokens-missing-h9-d686b3/report.md" target="_blank" rel="noopener">ts6-r1-semantictokens-missing-h9-d686b3/report.md</a> ·
+复现命令（在项目根目录运行）：<code>python3 scripts/lsptest/repro_violation.py data/lsptest/runs/main_v1/triage/ts6-r1-semantictokens-missing-h9-d686b3/repro.json</code></p>
+<div class="judge"><p class="q">你的判断：实际（被测会话）这边的答案错了吗？</p><button type="button" class="choice chosen" data-choice="bug" aria-pressed="true"><b>bug</b><small>是 bug</small></button><button type="button" class="choice" data-choice="legitimate" aria-pressed="false"><b>legitimate</b><small>不算问题：两边都说得通</small></button><button type="button" class="choice" data-choice="tool-artifact" aria-pressed="false"><b>tool-artifact</b><small>工具自己的问题</small></button><button type="button" class="clear">清除</button><textarea class="note" rows="2" placeholder="备注（可选）：一句理由、unsure、对上号的 issue 链接……"></textarea></div>
+</div></details>
+
+<details class="item" id="ts6-r1-signaturehelp-changed-h5-db5a5e" data-id="ts6-r1-signaturehelp-changed-h5-db5a5e" data-n="27"><summary><b class="num">27.</b> <span class="state judged">已判断：bug</span><span class="differ"></span> <code>ts6-r1-signaturehelp-changed-h5-db5a5e</code> · R1 历史无关 · ts6 · 成员 2 · 步骤 5→5</summary>
+<div class="body">
+<h3>[ts6 6.0.3] signatureHelp changes its answer after file rename round trip</h3>
+<p><b>违反的规则</b>：History independence (R1): after a sequence of edits that returns the documents to content C, every query must answer as in a fresh session opened on C. Fresh sessions on C agree with each other on this query; the session that went through the history does not.</p>
+<p><b>现象</b>：<code>signatureHelp:changed</code>；历史族/子检查：<code>H5</code></p>
+<h4>最少复现步骤</h4><pre>1. Start ts6 6.0.3 on the project root; answer workspace/configuration with the settings under Environment.
+2. textDocument/didOpen: `open src/react.ts`
+3. textDocument/didOpen: `open src/vanilla/shallow.ts`
+4. textDocument/didOpen: `open tests/persistSync.test.tsx`
+5. workspace/willRenameFiles, didClose, rename on disk, workspace/didRenameFiles, didChangeWatchedFiles, didOpen of the new path: `fs_rename src/react.ts -&gt; src/react_rt.ts`
+6. workspace/willRenameFiles, didClose, rename on disk, workspace/didRenameFiles, didChangeWatchedFiles, didOpen of the new path: `fs_rename src/react_rt.ts -&gt; src/react.ts`
+7. Timing: send the steps 0 ms apart without waiting, then wait until idle.
+8. Query `textDocument/signatureHelp` on `tests/persistSync.test.tsx` line 468, column 21 (LSP position {line: 467, character: 20}); compare with the same query in a fresh session opened on the final content (expected).</pre>
+<h4>预期与实际的差别（红 = 预期，参照会话的答案；绿 = 实际，被测会话的答案）</h4><pre class="diff">--- expected
++++ actual
+<span class="hunk">@@ -1 +1 @@</span>
+<span class="del">-&quot;fromEntries(entries: Iterable&lt;readonly [PropertyKey, number]&gt;): { [k: string]: number; }&quot;</span>
+<span class="add">+&quot;fromEntries(entries: Iterable&lt;readonly [PropertyKey, unknown]&gt;): { [k: string]: unknown; }&quot;</span></pre>
+<h4>证据与缩减</h4><pre>- representative 3ed0e189007e-v08: confirmed 3/3 (each replay: fresh baseline, fresh control and a fresh case session)
+- ops 5 -&gt; 5 (11 probes, 121.476 s, reduced ops confirmed 2/3); query targets narrowed to the key
+- lines: not reduced
+- group: 2 violation(s) in 2 run(s), projects pmndrs/zustand@b57db4f86ef1, timings race0, race200, seeds 1</pre>
+<h4>一年前版本上的重放</h4><p>未重放（该组没有一年前的版本可比）</p>
+<h4>可能相关的已有 issue（关键词搜索结果，要你核对）</h4><ul><li><a href="https://github.com/typescript-language-server/typescript-language-server/issues/878" target="_blank" rel="noopener">typescript-language-server/typescript-language-server#878</a> Support renaming files when renaming default exports <span class="muted">(open, 2024-02-27)</span></li><li><a href="https://github.com/typescript-language-server/typescript-language-server/issues/744" target="_blank" rel="noopener">typescript-language-server/typescript-language-server#744</a> EPERM: operation not permitted Cannot Move/Rename Files &amp; Directories when Language Server is Running.  <span class="muted">(closed, 2023-07-31)</span></li><li><a href="https://github.com/typescript-language-server/typescript-language-server/issues/665" target="_blank" rel="noopener">typescript-language-server/typescript-language-server#665</a> Preview rename file <span class="muted">(closed, 2023-01-16)</span></li><li><a href="https://github.com/typescript-language-server/typescript-language-server/issues/430" target="_blank" rel="noopener">typescript-language-server/typescript-language-server#430</a> Rename also trigger on files in node_modules <span class="muted">(closed, 2022-04-07)</span></li><li><a href="https://github.com/microsoft/TypeScript/issues/30039" target="_blank" rel="noopener">microsoft/TypeScript#30039</a> Refactor rename file + rename function <span class="muted">(open, 2019-01-23)</span></li></ul>
+<p class="muted">完整报告：<a href="ts6-r1-signaturehelp-changed-h5-db5a5e/report.md" target="_blank" rel="noopener">ts6-r1-signaturehelp-changed-h5-db5a5e/report.md</a> ·
+复现命令（在项目根目录运行）：<code>python3 scripts/lsptest/repro_violation.py data/lsptest/runs/main_v1/triage/ts6-r1-signaturehelp-changed-h5-db5a5e/repro.json</code></p>
+<div class="judge"><p class="q">你的判断：实际（被测会话）这边的答案错了吗？</p><button type="button" class="choice chosen" data-choice="bug" aria-pressed="true"><b>bug</b><small>是 bug</small></button><button type="button" class="choice" data-choice="legitimate" aria-pressed="false"><b>legitimate</b><small>不算问题：两边都说得通</small></button><button type="button" class="choice" data-choice="tool-artifact" aria-pressed="false"><b>tool-artifact</b><small>工具自己的问题</small></button><button type="button" class="clear">清除</button><textarea class="note" rows="2" placeholder="备注（可选）：一句理由、unsure、对上号的 issue 链接……"></textarea></div>
+</div></details>
+
+<details class="item" id="ts6-r1-signaturehelp-lost-h9-7bd793" data-id="ts6-r1-signaturehelp-lost-h9-7bd793" data-n="28"><summary><b class="num">28.</b> <span class="state judged">已判断：bug</span><span class="differ"></span> <code>ts6-r1-signaturehelp-lost-h9-7bd793</code> · R1 历史无关 · ts6 · 成员 1 · 步骤 14→8</summary>
+<div class="body">
+<h3>[ts6 6.0.3] signatureHelp loses its answer after edit inside a workspace window</h3>
+<p><b>违反的规则</b>：History independence (R1): after a sequence of edits that returns the documents to content C, every query must answer as in a fresh session opened on C. Fresh sessions on C agree with each other on this query; the session that went through the history does not.</p>
+<p><b>现象</b>：<code>signatureHelp:lost</code>；历史族/子检查：<code>H9</code></p>
+<h4>最少复现步骤</h4><pre>1. Start ts6 6.0.3 on the project root; answer workspace/configuration with the settings under Environment.
+2. textDocument/didOpen: `open app/components/mask.tsx`
+3. textDocument/didOpen: `open app/utils/store.ts`
+4. workspace/willRenameFiles, didClose, rename on disk, workspace/didRenameFiles, didChangeWatchedFiles, didOpen of the new path: `fs_rename app/utils/store.ts -&gt; app/utils/store_rt.ts`
+5. textDocument/didChange: `change app/components/mask.tsx (231, 0)-(232, 0) &quot;&quot;`
+6. textDocument/didChange: `change app/components/mask.tsx (231, 7)-(231, 7) &quot;           (await showConfirm(L&quot;`
+7. textDocument/didChange: `change app/components/mask.tsx (231, 38)-(231, 38) &quot;ocale.Mask.Config.Syn&quot;`
+8. textDocument/didChange: `change app/components/mask.tsx (231, 59)-(231, 59) &quot;c.Confirm))\n&quot;`
+9. workspace/willRenameFiles, didClose, rename on disk, workspace/didRenameFiles, didChangeWatchedFiles, didOpen of the new path: `fs_rename app/utils/store_rt.ts -&gt; app/utils/store.ts`
+10. Timing: wait until the server is idle after every step.
+11. textDocument/didOpen `app/command.ts` (the query step opens every target file that is not open), then wait until the server is idle.
+12. Query `textDocument/signatureHelp` on `app/components/mask.tsx` line 608, column 25 (LSP position {line: 607, character: 24}); compare with the same query in a fresh session opened on the final content (expected).</pre>
+<h4>预期与实际的差别（红 = 预期，参照会话的答案；绿 = 实际，被测会话的答案）</h4><pre class="diff">--- expected
++++ actual
+<span class="hunk">@@ -1 +1 @@</span>
+<span class="del">-&quot;map(callbackfn: (value: Mask, index: number, array: Mask[]) =&gt; JSX.Element, thisArg?: any): JSX.Element[]&quot;</span>
+<span class="add">+null</span></pre>
+<h4>证据与缩减</h4><pre>- representative 5ae299935d29-v04: confirmed 3/3 (each replay: fresh baseline, fresh control and a fresh case session)
+- ops 14 -&gt; 8 (32 probes, 1794.615 s, reduced ops confirmed 3/3); query targets narrowed to the key
+- lines: not reduced
+- group: 1 violation(s) in 1 run(s), projects ChatGPTNextWeb/NextChat@defdcdb55d85, timings settled, seeds 2</pre>
+<h4>一年前版本上的重放</h4><p>未重放（该组没有一年前的版本可比）</p>
+<h4>可能相关的已有 issue（关键词搜索结果，要你核对）</h4><ul><li><a href="https://github.com/typescript-language-server/typescript-language-server/issues/948" target="_blank" rel="noopener">typescript-language-server/typescript-language-server#948</a> workspace/symbol Fails to Recognize rootPath and Inconsistent Responses Without Debugging <span class="muted">(closed, 2025-03-14)</span></li><li><a href="https://github.com/microsoft/TypeScript/issues/29041" target="_blank" rel="noopener">microsoft/TypeScript#29041</a> Improve signature help when completing object argument <span class="muted">(open, 2018-12-15)</span></li><li><a href="https://github.com/microsoft/TypeScript/issues/59926" target="_blank" rel="noopener">microsoft/TypeScript#59926</a> Improve Iterator Helper Type Signatures <span class="muted">(open, 2024-09-10)</span></li><li><a href="https://github.com/microsoft/TypeScript/issues/63839" target="_blank" rel="noopener">microsoft/TypeScript#63839</a> Behavior difference: Block comments on `@typedef` structural types are not preserved, if they are imported and reconstructed as inline types in another file <span class="muted">(open, 2026-06-17)</span></li><li><a href="https://github.com/microsoft/TypeScript/issues/30269" target="_blank" rel="noopener">microsoft/TypeScript#30269</a> TypeError: Cannot read property &#x27;kind&#x27; of undefined <span class="muted">(closed, 2019-03-08)</span></li></ul>
+<p class="muted">完整报告：<a href="ts6-r1-signaturehelp-lost-h9-7bd793/report.md" target="_blank" rel="noopener">ts6-r1-signaturehelp-lost-h9-7bd793/report.md</a> ·
+复现命令（在项目根目录运行）：<code>python3 scripts/lsptest/repro_violation.py data/lsptest/runs/main_v1/triage/ts6-r1-signaturehelp-lost-h9-7bd793/repro.json</code></p>
+<div class="judge"><p class="q">你的判断：实际（被测会话）这边的答案错了吗？</p><button type="button" class="choice chosen" data-choice="bug" aria-pressed="true"><b>bug</b><small>是 bug</small></button><button type="button" class="choice" data-choice="legitimate" aria-pressed="false"><b>legitimate</b><small>不算问题：两边都说得通</small></button><button type="button" class="choice" data-choice="tool-artifact" aria-pressed="false"><b>tool-artifact</b><small>工具自己的问题</small></button><button type="button" class="clear">清除</button><textarea class="note" rows="2" placeholder="备注（可选）：一句理由、unsure、对上号的 issue 链接……"></textarea></div>
+</div></details>
+
+<details class="item" id="ts6-r1-typedefinition-lost-h5-712a35" data-id="ts6-r1-typedefinition-lost-h5-712a35" data-n="29"><summary><b class="num">29.</b> <span class="state judged">已判断：bug</span><span class="differ"></span> <code>ts6-r1-typedefinition-lost-h5-712a35</code> · R1 历史无关 · ts6 · 成员 1 · 步骤 5→3</summary>
+<div class="body">
+<h3>[ts6 6.0.3] typeDefinition loses its answer after file rename round trip</h3>
+<p><b>违反的规则</b>：History independence (R1): after a sequence of edits that returns the documents to content C, every query must answer as in a fresh session opened on C. Fresh sessions on C agree with each other on this query; the session that went through the history does not.</p>
+<p><b>现象</b>：<code>typeDefinition:lost</code>；历史族/子检查：<code>H5</code></p>
+<h4>最少复现步骤</h4><pre>1. Start ts6 6.0.3 on the project root; answer workspace/configuration with the settings under Environment.
+2. textDocument/didOpen: `open src/react.ts (then 200 ms)`
+3. workspace/willRenameFiles, didClose, rename on disk, workspace/didRenameFiles, didChangeWatchedFiles, didOpen of the new path: `fs_rename src/react.ts -&gt; src/react_rt.ts (then 200 ms)`
+4. workspace/willRenameFiles, didClose, rename on disk, workspace/didRenameFiles, didChangeWatchedFiles, didOpen of the new path: `fs_rename src/react_rt.ts -&gt; src/react.ts (then 200 ms)`
+5. Timing: send the steps 200 ms apart without waiting, then wait until idle.
+6. textDocument/didOpen `src/vanilla/shallow.ts`, `tests/persistSync.test.tsx` (the query step opens every target file that is not open), then wait until the server is idle.
+7. Query `textDocument/typeDefinition` on `tests/persistSync.test.tsx` line 566, column 65 (LSP position {line: 565, character: 64}); compare with the same query in a fresh session opened on the final content (expected).</pre>
+<h4>预期与实际的差别（红 = 预期，参照会话的答案；绿 = 实际，被测会话的答案）</h4><pre class="diff">--- expected
++++ actual
+<span class="hunk">@@ -1,9 +1 @@</span>
+<span class="del">-[</span>
+<span class="del">- [</span>
+<span class="del">-  &quot;src/middleware/persist.ts&quot;,</span>
+<span class="del">-  141,</span>
+<span class="del">-  27,</span>
+<span class="del">-  141,</span>
+<span class="del">-  65</span>
+<span class="del">- ]</span>
+<span class="del">-]</span>
+<span class="add">+[]</span></pre>
+<h4>证据与缩减</h4><pre>- representative 9defd9c201d7-v08: confirmed 3/3 (each replay: fresh baseline, fresh control and a fresh case session)
+- ops 5 -&gt; 3 (11 probes, 170.623 s, reduced ops confirmed 3/3); query targets narrowed to the key
+- lines: not reduced
+- group: 1 violation(s) in 1 run(s), projects pmndrs/zustand@b57db4f86ef1, timings race200, seeds 1</pre>
+<h4>一年前版本上的重放</h4><p>未重放（该组没有一年前的版本可比）</p>
+<h4>可能相关的已有 issue（关键词搜索结果，要你核对）</h4><ul><li><a href="https://github.com/typescript-language-server/typescript-language-server/issues/878" target="_blank" rel="noopener">typescript-language-server/typescript-language-server#878</a> Support renaming files when renaming default exports <span class="muted">(open, 2024-02-27)</span></li><li><a href="https://github.com/typescript-language-server/typescript-language-server/issues/744" target="_blank" rel="noopener">typescript-language-server/typescript-language-server#744</a> EPERM: operation not permitted Cannot Move/Rename Files &amp; Directories when Language Server is Running.  <span class="muted">(closed, 2023-07-31)</span></li><li><a href="https://github.com/typescript-language-server/typescript-language-server/issues/665" target="_blank" rel="noopener">typescript-language-server/typescript-language-server#665</a> Preview rename file <span class="muted">(closed, 2023-01-16)</span></li><li><a href="https://github.com/typescript-language-server/typescript-language-server/issues/430" target="_blank" rel="noopener">typescript-language-server/typescript-language-server#430</a> Rename also trigger on files in node_modules <span class="muted">(closed, 2022-04-07)</span></li><li><a href="https://github.com/typescript-language-server/typescript-language-server/issues/277" target="_blank" rel="noopener">typescript-language-server/typescript-language-server#277</a> Using typescript plugins through neovim-lsp <span class="muted">(closed, 2021-10-31)</span></li></ul>
+<p class="muted">完整报告：<a href="ts6-r1-typedefinition-lost-h5-712a35/report.md" target="_blank" rel="noopener">ts6-r1-typedefinition-lost-h5-712a35/report.md</a> ·
+复现命令（在项目根目录运行）：<code>python3 scripts/lsptest/repro_violation.py data/lsptest/runs/main_v1/triage/ts6-r1-typedefinition-lost-h5-712a35/repro.json</code></p>
+<div class="judge"><p class="q">你的判断：实际（被测会话）这边的答案错了吗？</p><button type="button" class="choice chosen" data-choice="bug" aria-pressed="true"><b>bug</b><small>是 bug</small></button><button type="button" class="choice" data-choice="legitimate" aria-pressed="false"><b>legitimate</b><small>不算问题：两边都说得通</small></button><button type="button" class="choice" data-choice="tool-artifact" aria-pressed="false"><b>tool-artifact</b><small>工具自己的问题</small></button><button type="button" class="clear">清除</button><textarea class="note" rows="2" placeholder="备注（可选）：一句理由、unsure、对上号的 issue 链接……"></textarea></div>
+</div></details>
+<script type="application/json" id="judge-config">{"campaign": "main_v1-recheck", "choices": ["bug", "legitimate", "tool-artifact"], "key": "tse2-judging:triage:main_v1-recheck", "page": "triage", "seed": {"gopls-r1-references-extra-h9-0290a7": {"choice": "legitimate", "file": "legitimate", "minutes": 0, "note": ""}, "gopls-r2-codeactionresolve-changed-codeaction-70b3e9": {"choice": "bug", "file": "bug", "minutes": 0, "note": ""}, "gopls-r4-diagnostics-extra-invalidifaceassign-mutation-m2-416e90": {"choice": "legitimate", "file": "legitimate", "minutes": 0, "note": ""}, "gopls-r4-diagnostics-extra-mutation-m2-111975": {"choice": "bug", "file": "bug", "minutes": 0, "note": ""}, "gopls-r4-diagnostics-extra-nonindexableoperand-mutation-m2-ba152b": {"choice": "legitimate", "file": "legitimate", "minutes": 0, "note": ""}, "gopls-r4-diagnostics-extra-nonsliceableoperand-mutation-m2-d80a9a": {"choice": "legitimate", "file": "legitimate", "minutes": 0, "note": ""}, "gopls-r4-diagnostics-extra-notatype-mutation-m2-477181": {"choice": "bug", "file": "bug", "minutes": 0, "note": ""}, "gopls-r4-diagnostics-extra-undeclaredname-wrongar-mutation-m3-946c39": {"choice": "bug", "file": "bug", "minutes": 0, "note": ""}, "gopls-r4-diagnostics-extra-untypedniluse-mutation-m2-354f70": {"choice": "bug", "file": "bug", "minutes": 0, "note": ""}, "gopls-r4-syntax-gained-mutation-m2-86fde3": {"choice": "bug", "file": "bug", "minutes": 0, "note": ""}, "rust-analyzer-r2-completionresolve-changed-completion-3170a1": {"choice": "bug", "file": "bug", "minutes": 0, "note": ""}, "rust-analyzer-r3-definitionconsistency-changed-d-2c6179": {"choice": "legitimate", "file": "legitimate", "minutes": 0, "note": ""}, "rust-analyzer-r3-definitionconsistency-extra-d-4cbc9e": {"choice": "bug", "file": "bug", "minutes": 0, "note": ""}, "rust-analyzer-r3-definitionconsistency-missing-d-586fd8": {"choice": "bug", "file": "bug", "minutes": 0, "note": ""}, "ts6-r1-codeaction-key-lost-h5-4f92e2": {"choice": "bug", "file": "bug", "minutes": 0, "note": ""}, "ts6-r1-completion-lost-h5-fa501c": {"choice": "bug", "file": "bug", "minutes": 0, "note": ""}, "ts6-r1-definition-lost-h5-61a0fd": {"choice": "bug", "file": "bug", "minutes": 0, "note": ""}, "ts6-r1-definition-lost-h9-898f29": {"choice": "bug", "file": "bug", "minutes": 0, "note": ""}, "ts6-r1-diagnostics-extra-2304-h7-8ca52f": {"choice": "bug", "file": "bug", "minutes": 0, "note": ""}, "ts6-r1-diagnostics-extra-2305-2339-7006-h5-d5a250": {"choice": "bug", "file": "bug", "minutes": 0, "note": ""}, "ts6-r1-documenthighlight-lost-h5-9b4675": {"choice": "bug", "file": "bug", "minutes": 0, "note": ""}, "ts6-r1-references-lost-h5-d24ca6": {"choice": "bug", "file": "bug", "minutes": 0, "note": ""}, "ts6-r1-references-missing-h5-cc8950": {"choice": "bug", "file": "bug", "minutes": 0, "note": ""}, "ts6-r1-semantictokens-changed-h5-591c42": {"choice": "bug", "file": "bug", "minutes": 0, "note": ""}, "ts6-r1-semantictokens-missing-h9-d686b3": {"choice": "bug", "file": "bug", "minutes": 0, "note": ""}, "ts6-r1-signaturehelp-changed-h5-db5a5e": {"choice": "bug", "file": "bug", "minutes": 0, "note": ""}, "ts6-r1-signaturehelp-lost-h9-7bd793": {"choice": "bug", "file": "bug", "minutes": 0, "note": ""}, "ts6-r1-typedefinition-lost-h5-712a35": {"choice": "bug", "file": "bug", "minutes": 0, "note": ""}, "ts7-r1-references-missing-h9-2dd24a": {"choice": "legitimate", "file": "legitimate", "minutes": 0, "note": ""}}}</script>
+<script>
+(function () {
+  "use strict";
+  var cfg = JSON.parse(document.getElementById("judge-config").textContent);
+  var items = Array.prototype.slice.call(document.querySelectorAll("details.item"));
+  var state = {}, local = {}, current = -1, canStore = true, lastMark = Date.now();
+  function $(id) { return document.getElementById(id); }
+  function each(list, fn) { Array.prototype.forEach.call(list, fn); }
+  function idOf(item) { return item.getAttribute("data-id"); }
+  function clean(s) {
+    s = s || {};
+    return {choice: cfg.choices.indexOf(s.choice) >= 0 ? s.choice : "", note: typeof s.note === "string" ? s.note : "",
+            minutes: typeof s.minutes === "number" && s.minutes > 0 ? Math.round(s.minutes * 10) / 10 : 0};
+  }
+  function load() {
+    var raw = null, data = null;
+    try { raw = window.localStorage.getItem(cfg.key); } catch (e) { canStore = false; }
+    try { data = raw ? JSON.parse(raw) : null; } catch (e) { data = null; }
+    local = data && data.items && typeof data.items === "object" ? data.items : {};
+  }
+  function save() {
+    try { window.localStorage.setItem(cfg.key, JSON.stringify({version: 1, items: local})); canStore = true; }
+    catch (e) { canStore = false; }
+    $("storage-warning").hidden = canStore;
+  }
+  function render(item) {
+    var s = state[idOf(item)], file = (cfg.seed[idOf(item)] || {}).file || "", note = item.querySelector("textarea.note");
+    each(item.querySelectorAll("button.choice"), function (b) {
+      var on = b.getAttribute("data-choice") === s.choice;
+      b.classList.toggle("chosen", on);
+      b.setAttribute("aria-pressed", on ? "true" : "false");
+    });
+    var badge = item.querySelector(".state");
+    badge.textContent = s.choice ? "已判断：" + s.choice : "未判断";
+    badge.className = "state " + (s.choice ? "judged" : "open");
+    item.querySelector(".differ").textContent = file && file !== s.choice ? "（文件里记的是 " + file + "）" : "";
+    if (note.value !== s.note && document.activeElement !== note) { note.value = s.note; }
+  }
+  function progress() {
+    var done = items.filter(function (item) { return state[idOf(item)].choice; }).length;
+    $("progress").textContent = "已判断 " + done + " / " + items.length;
+  }
+  function touch(item) { local[idOf(item)] = state[idOf(item)]; save(); render(item); progress(); }
+  function say(text) { $("message").textContent = text; }
+  function exportText() {
+    var out = [];
+    items.forEach(function (item) {
+      var s = state[idOf(item)], note = s.note.trim();
+      if (s.choice || note) {
+        out.push(JSON.stringify({n: Number(item.getAttribute("data-n")), id: idOf(item), choice: s.choice, note: note,
+                                 minutes: s.minutes}));
+      }
+    });
+    var head = JSON.stringify({page: cfg.page, campaign: cfg.campaign, exported_at: new Date().toISOString()});
+    $("export-text").value = head.slice(0, -1) + ',"items":[\n' + out.join(",\n") + "\n]}\n";
+    return {text: $("export-text").value, count: out.length};
+  }
+  function manual(why) {
+    $("export-why").textContent = why; $("export-box").hidden = false;
+    $("export-box").scrollIntoView({block: "center"}); $("export-text").focus(); $("export-text").select();
+  }
+  load();
+  items.forEach(function (item, i) {
+    var id = idOf(item);
+    state[id] = clean(Object.prototype.hasOwnProperty.call(local, id) ? local[id] : cfg.seed[id]);
+    item.addEventListener("toggle", function () {
+      if (item.open) { current = i; }
+    });
+    each(item.querySelectorAll("button.choice"), function (b) {
+      b.addEventListener("click", function () {
+        var s = state[id];
+        s.choice = b.getAttribute("data-choice"); current = i;
+        // time since the previous judgement on this page (or since the page opened), capped at 30 min for breaks
+        var now = Date.now();
+        if (!s.minutes) { s.minutes = Math.max(0.1, Math.round(Math.min(1800, (now - lastMark) / 1000) / 6) / 10); }
+        lastMark = now;
+        touch(item);
+      });
+    });
+    item.querySelector("button.clear").addEventListener("click", function () { state[id].choice = ""; touch(item); });
+    item.querySelector("textarea.note").addEventListener("input", function (e) { state[id].note = e.target.value; touch(item); });
+    render(item);
+  });
+  progress();
+  $("storage-warning").hidden = canStore;
+  $("copy").addEventListener("click", function () {
+    var ex = exportText();
+    function ok() { say("已复制 " + ex.count + " 条结果，请粘贴到对话里发给我。"); }
+    function legacy() {
+      var ta = document.createElement("textarea"), done = false;
+      ta.value = ex.text; ta.setAttribute("readonly", ""); ta.style.position = "fixed"; ta.style.top = "-1000px";
+      document.body.appendChild(ta); ta.select();
+      try { done = document.execCommand("copy"); } catch (e) { done = false; }
+      document.body.removeChild(ta);
+      if (done) { ok(); } else { manual("浏览器没让自动复制：请点进下面的框，全选（⌘A）后复制（⌘C），再粘贴到对话里。"); }
+    }
+    try {
+      if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(ex.text).then(ok, legacy); return; }
+    } catch (e) { /* the fallback below */ }
+    legacy();
+  });
+  $("download").addEventListener("click", function () {
+    var ex = exportText(), stamp = new Date().toISOString().slice(0, 19).replace(/[:T]/g, "-");
+    var name = "judgements-" + cfg.page + "-" + cfg.campaign + "-" + stamp + ".json";
+    try {
+      var url = URL.createObjectURL(new Blob([ex.text], {type: "application/json"})), a = document.createElement("a");
+      a.href = url; a.download = name; document.body.appendChild(a); a.click(); document.body.removeChild(a);
+      setTimeout(function () { URL.revokeObjectURL(url); }, 5000);
+      say("已下载 " + name + "（" + ex.count + " 条，在浏览器的下载文件夹里）。");
+    } catch (e) { manual("下载没成功：请复制下面框里的内容发给我。"); }
+  });
+  $("next").addEventListener("click", function () {
+    for (var k = 1; k <= items.length; k++) {
+      var i = (current + k) % items.length;
+      if (!state[idOf(items[i])].choice) {
+        if (current >= 0 && current !== i) { items[current].open = false; }
+        items[i].open = true; current = i; items[i].scrollIntoView({block: "start"}); say(""); return;
+      }
+    }
+    say("全部都判断过了。");
+  });
+})();
+</script>
+</body></html>

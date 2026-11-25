@@ -1,0 +1,527 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "c55b9dbc5249-v00",
+ "run_id": "c55b9dbc5249",
+ "oracle": "r3_routes",
+ "server": {
+  "kind": "gopls",
+  "version": "v0.23.0"
+ },
+ "project": {
+  "name": "jesseduffield/lazydocker@7e7aadc2071d",
+  "source": "corpus",
+  "ref": "temp/corpus/jesseduffield__lazydocker@7e7aadc2071d",
+  "commit": "7e7aadc2071d58031bf2daafca1fbd4093efc23f",
+  "language": "go"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "pkg/gui/focus.go",
+    "positions": [
+     [
+      7,
+      12
+     ],
+     [
+      7,
+      31
+     ],
+     [
+      31,
+      45
+     ],
+     [
+      42,
+      8
+     ],
+     [
+      65,
+      9
+     ],
+     [
+      70,
+      8
+     ],
+     [
+      72,
+      5
+     ],
+     [
+      72,
+      14
+     ],
+     [
+      99,
+      40
+     ],
+     [
+      110,
+      29
+     ],
+     [
+      114,
+      36
+     ],
+     [
+      120,
+      26
+     ]
+    ],
+    "ends": [
+     [
+      7,
+      14
+     ],
+     [
+      7,
+      32
+     ],
+     [
+      31,
+      47
+     ],
+     [
+      42,
+      10
+     ],
+     [
+      65,
+      11
+     ],
+     [
+      70,
+      10
+     ],
+     [
+      72,
+      7
+     ],
+     [
+      72,
+      17
+     ],
+     [
+      99,
+      43
+     ],
+     [
+      110,
+      32
+     ],
+     [
+      114,
+      39
+     ],
+     [
+      120,
+      33
+     ]
+    ],
+    "names": [
+     "Gui",
+     "v",
+     "View",
+     "err",
+     "gui",
+     "gui",
+     "len",
+     "State",
+     "State",
+     "Filter",
+     "State",
+     "ViewStackMutex"
+    ]
+   },
+   {
+    "path": "pkg/gui/menu_panel.go",
+    "positions": [
+     [
+      10,
+      15
+     ],
+     [
+      38,
+      42
+     ],
+     [
+      61,
+      9
+     ],
+     [
+      83,
+      10
+     ],
+     [
+      87,
+      79
+     ],
+     [
+      91,
+      33
+     ],
+     [
+      94,
+      12
+     ],
+     [
+      95,
+      10
+     ],
+     [
+      107,
+      6
+     ],
+     [
+      109,
+      16
+     ],
+     [
+      120,
+      31
+     ],
+     [
+      131,
+      17
+     ]
+    ],
+    "ends": [
+     [
+      10,
+      18
+     ],
+     [
+      38,
+      44
+     ],
+     [
+      61,
+      12
+     ],
+     [
+      83,
+      12
+     ],
+     [
+      87,
+      81
+     ],
+     [
+      91,
+      36
+     ],
+     [
+      94,
+      14
+     ],
+     [
+      95,
+      12
+     ],
+     [
+      107,
+      11
+     ],
+     [
+      109,
+      17
+     ],
+     [
+      120,
+      33
+     ],
+     [
+      131,
+      23
+     ]
+    ],
+    "names": [
+     "string",
+     "nil",
+     "Items",
+     "item",
+     "len",
+     "Items",
+     "gui",
+     "err",
+     "optionsMap",
+     "Tr",
+     "gui",
+     "returnFocus"
+    ]
+   },
+   {
+    "path": "pkg/log/log.go",
+    "positions": [
+     [
+      0,
+      9
+     ],
+     [
+      13,
+      18
+     ],
+     [
+      14,
+      20
+     ],
+     [
+      23,
+      21
+     ],
+     [
+      23,
+      31
+     ],
+     [
+      35,
+      3
+     ],
+     [
+      35,
+      9
+     ],
+     [
+      35,
+      18
+     ],
+     [
+      36,
+      12
+     ],
+     [
+      45,
+      30
+     ],
+     [
+      45,
+      91
+     ],
+     [
+      57,
+      17
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      11
+     ],
+     [
+      13,
+      21
+     ],
+     [
+      14,
+      23
+     ],
+     [
+      23,
+      24
+     ],
+     [
+      23,
+      38
+     ],
+     [
+      35,
+      6
+     ],
+     [
+      35,
+      11
+     ],
+     [
+      35,
+      21
+     ],
+     [
+      36,
+      14
+     ],
+     [
+      45,
+      34
+     ],
+     [
+      45,
+      92
+     ],
+     [
+      57,
+      20
+     ]
+    ],
+    "names": [
+     "log",
+     "config",
+     "Logger",
+     "logrus",
+     "JSONFormatter",
+     "level",
+     "err",
+     "logrus",
+     "nil",
+     "filepath",
+     "os",
+     "logrus"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "highlightVsReferences",
+  "path": "pkg/gui/menu_panel.go",
+  "line": 95,
+  "character": 10,
+  "extra": ""
+ },
+ "ops": [],
+ "case": {
+  "path": "pkg/gui/menu_panel.go",
+  "pos": [
+   95,
+   10
+  ],
+  "sub": "c"
+ },
+ "shape": "highlightVsReferences:extra",
+ "signature": "gopls|r3_routes|highlightVsReferences:extra",
+ "expected": [
+  [
+   94,
+   4,
+   94,
+   7
+  ],
+  [
+   94,
+   43,
+   94,
+   46
+  ],
+  [
+   95,
+   9,
+   95,
+   12
+  ]
+ ],
+ "actual": [
+  [
+   58,
+   45,
+   58,
+   50
+  ],
+  [
+   94,
+   4,
+   94,
+   7
+  ],
+  [
+   94,
+   43,
+   94,
+   46
+  ],
+  [
+   95,
+   9,
+   95,
+   12
+  ],
+  [
+   101,
+   8,
+   101,
+   39
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "3 references; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 38s",
+ "violation": {
+  "oracle": "r3_routes",
+  "server": "gopls-v0.23.0",
+  "project": "jesseduffield/lazydocker@7e7aadc2071d",
+  "key": {
+   "method": "highlightVsReferences",
+   "path": "pkg/gui/menu_panel.go",
+   "line": 95,
+   "character": 10,
+   "extra": ""
+  },
+  "expected": [
+   [
+    94,
+    4,
+    94,
+    7
+   ],
+   [
+    94,
+    43,
+    94,
+    46
+   ],
+   [
+    95,
+    9,
+    95,
+    12
+   ]
+  ],
+  "actual": [
+   [
+    58,
+    45,
+    58,
+    50
+   ],
+   [
+    94,
+    4,
+    94,
+    7
+   ],
+   [
+    94,
+    43,
+    94,
+    46
+   ],
+   [
+    95,
+    9,
+    95,
+    12
+   ],
+   [
+    101,
+    8,
+    101,
+    39
+   ]
+  ],
+  "ops": [],
+  "detail": "{\"case\": {\"path\": \"pkg/gui/menu_panel.go\", \"pos\": [95, 10], \"sub\": \"c\"}, \"note\": \"3 references; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 38s\", \"shape\": \"highlightVsReferences:extra\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "gopls|r3_routes|highlightVsReferences:extra",
+  "run_id": "c55b9dbc5249"
+ },
+ "replay_logs": [
+  "logs/gopls-v0.23.0-c55b9dbc5249-r3-replay-baseline-20260923-150102-818b87.jsonl.gz",
+  "logs/gopls-v0.23.0-c55b9dbc5249-r3-replay-control-20260923-150107-2cd2da.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

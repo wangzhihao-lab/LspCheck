@@ -1,0 +1,3 @@
+2026-09-25 15:20:16,664 INFO campaign_run run 784c67fc9b44: r0_crash on rust-analyzer 2024-04-22, rust-analyzer-16858 seed 2 settled, targets ['src/main.rs']
+2026-09-25 15:20:22,596 INFO campaign_run run 784c67fc9b44: 0 candidate(s) in 6s; confirming
+2026-09-25 15:20:22,597 INFO campaign_run run 784c67fc9b44 finished: ok, 0 confirmed of 0 candidate(s), 6s

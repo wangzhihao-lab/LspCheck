@@ -1,0 +1,58 @@
+{
+ "jdtls|r2_handles|codeActionResolve:changed": {
+  "class": "likely-real",
+  "evidence": "Known bug eclipse-jdtls#2111 (pre-fix 1.12.0). The old Generate Getter/Setter handle, resolved after k line breaks were inserted above or below the field, returns the insertion offset computed on the T0 AST reinterpreted in the shifted text: e.g. T0 offset 81 (end of `    private int age;`) becomes (6,18), inside the identifier `age`, while a fresh handle answers (6,20). Post-fix 1.13.0 returns the action without an edit (store cleared on didChange): 0 candidates."
+ },
+ "rust-analyzer|r2_handles|completionResolve:changed": {
+  "class": "likely-real",
+  "evidence": "Completion items carry data {position, version: 11, hash} and no textEdit (deferred to resolve, allowed by the client's resolveSupport). After 2 line breaks at the top (version 12), completionItem/resolve of the old item still answers at line 55, where the text now is the previous `buf.extend_from_slice(...)` statement (found again by hash): textEdit and, for the postfix `.arc`/`.rc` items, the deletion of `buf.` land on the wrong line, while a fresh item resolves to line 57. data.version is not checked; codeAction/resolve rejects the same staleness with -32602 'stale code action'."
+ },
+ "ts6|r2_handles|completionResolve:changed": {
+  "class": "likely-real",
+  "evidence": "typescript-language-server keeps {file, line, offset, entryNames} per item in completionDataCache (reset only by the next completion request, not by didChange) and completionResolve sends that cached line/offset to tsserver completionEntryDetails. After one line break at the top, the old `count` item is resolved at T0 (311,28), now inside `create(` of the previous statement (a value position): `import { count } from 'node:console'`, while a fresh item at the mapped key position (312,28) resolves to `import type { count } ...`."
+ },
+ "ts7|r3_routes|definitionConsistency.signature:changed": {
+  "class": "legitimate-difference",
+  "evidence": "TypeScript adds the declaration of the resolved signature to a definition answer at a call-like site: `new Map(entries)` includes the `new <K, V>(iterable?)` construct signature (lib.es2015.iterable.d.ts:180), `new Map()` the zero-argument one (:179), `x instanceof Map` the `[Symbol.hasInstance]` member (lib.es2015.symbol.wellknown.d.ts:161); the symbol's own declarations agree. Labelled by the checker (differences only in entries wider than the name)."
+ },
+ "ts7|r3_routes|definitionConsistency.shorthand:extra": {
+  "class": "legitimate-difference",
+  "evidence": "Object-literal shorthand `{ map, ... }`: the name denotes the property and the variable, so definition there returns both declarations."
+ },
+ "ts7|r3_routes|definitionConsistency.shorthand:changed": {
+  "class": "legitimate-difference",
+  "evidence": "Destructuring binding `const { storage, setItemSpy } = createPersistentStore(null)`: definition on the binding name answers the property it destructures (the shorthand `setItemSpy,` in the returned object literal, line 30), not the binding itself."
+ },
+ "rust-analyzer|r3_routes|definitionConsistency.shorthand:extra": {
+  "class": "legitimate-difference",
+  "evidence": "Struct literal field-init shorthand `S { name }`: definition on the shorthand returns the field declaration (line 38) and the local variable (line 48)."
+ },
+ "ts7|r5_transforms|foldingRange:changed": {
+  "class": "tool-artifact",
+  "evidence": "T6 (inline comment before `mapB` on line 21): ts7 moved the folding range start from character 59 to 70 (+11 UTF-16 units, correct); the oracle mapped folding-range lines only. Fixed (characters mapped when present) and re-run: 0 candidates."
+ },
+ "gopls|r2_handles|codeActionResolve:changed": {
+  "class": "likely-real",
+  "evidence": "gopls encodes a lazily resolved action as data {command gopls.apply_fix, arguments [{Fix, Location {uri, range at T0}, ResolveEdits: true}]} and codeAction/resolve recomputes the fix at that stored range in the current text; no document version is recorded or checked. After 2 line breaks at the top, the old 'Split elements into separate lines' handle for `grandchildCmd := &Command{...}` (now line 571) splits the composite literal of `rootCmd` (old line 567, now line 569): edits at 569:21/32/43/58 instead of the fresh handle's 571:27/44/55/70."
+ },
+ "gopls|r3_routes|highlightVsReferences:extra": {
+  "class": "legitimate-difference",
+  "evidence": "gopls highlights the printf verb that formats the argument under the cursor: on `got` in `t.Fatalf(\"Expected %q, got %q\", expected, got)` the highlight set adds the second `%q` (94:29-31); on `v` in `fmt.Sprintf(\"Failed to find flag %q ...\", v)` it adds `%q` (37:42-44). A format verb is not a reference, so the subset relation fails by design (documented in r3_routes.py)."
+ },
+ "jdtls|r2_handles|completionResolve:changed": {
+  "class": "likely-real",
+  "evidence": "Present on 1.12.0, 1.13.0 and 1.39.0 (the newest installed build): not covered by the #2111 fix, which cleared only the code-action store. The old completion item, resolved after k line breaks, returns a textEdit whose range is its T0 offset reinterpreted in the shifted text: `String` at (3,12)-(3,18) (offset 48) becomes (4,11)-(4,17) after one line break at line 3, so applying it overwrites ` Strin`; a fresh item gives (4,12)-(4,18). Same for `app` (2,6)-(2,9) vs (2,8)-(2,11) and `nameString` (5,17)-(5,21) vs (5,19)-(5,23). The additionalTextEdits (the import) are computed on the current text and agree."
+ },
+ "ts6|r3_routes|definitionConsistency.signature:changed": {
+  "class": "legitimate-difference",
+  "evidence": "TypeScript adds the declaration of the resolved signature to a definition answer at a call-like site: `new Map(entries)` includes the `new <K, V>(iterable?)` construct signature (lib.es2015.iterable.d.ts:180), `new Map()` the zero-argument one (:179), `x instanceof Map` the `[Symbol.hasInstance]` member (lib.es2015.symbol.wellknown.d.ts:161); the symbol's own declarations agree. Labelled by the checker (differences only in entries wider than the name)."
+ },
+ "ts6|r3_routes|definitionConsistency.shorthand:extra": {
+  "class": "legitimate-difference",
+  "evidence": "Object-literal shorthand `{ map, ... }`: the name denotes the property and the variable, so definition there returns both declarations."
+ },
+ "ts6|r3_routes|definitionConsistency.shorthand:changed": {
+  "class": "legitimate-difference",
+  "evidence": "Destructuring binding `const { storage, setItemSpy } = createPersistentStore(null)`: definition on the binding name answers the property it destructures (the shorthand `setItemSpy,` in the returned object literal, line 30), not the binding itself."
+ }
+}

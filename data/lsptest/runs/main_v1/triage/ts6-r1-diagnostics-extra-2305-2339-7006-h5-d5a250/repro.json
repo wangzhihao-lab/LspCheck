@@ -1,0 +1,1722 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "3ed0e189007e-v03",
+ "run_id": "3ed0e189007e",
+ "oracle": "r1_history",
+ "server": {
+  "kind": "ts6",
+  "version": "6.0.3"
+ },
+ "project": {
+  "name": "pmndrs/zustand@b57db4f86ef1",
+  "source": "corpus",
+  "ref": "temp/corpus/pmndrs__zustand@b57db4f86ef1",
+  "commit": "b57db4f86ef179285da216eeb291266da82c361c",
+  "language": "typescript"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "race0",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "src/react.ts",
+    "positions": [
+     [
+      0,
+      9
+     ],
+     [
+      1,
+      14
+     ],
+     [
+      5,
+      8
+     ],
+     [
+      7,
+      13
+     ],
+     [
+      22,
+      6
+     ],
+     [
+      25,
+      38
+     ],
+     [
+      29,
+      32
+     ],
+     [
+      31,
+      32
+     ],
+     [
+      32,
+      15
+     ],
+     [
+      40,
+      37
+     ],
+     [
+      49,
+      37
+     ],
+     [
+      52,
+      28
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      12
+     ],
+     [
+      1,
+      20
+     ],
+     [
+      5,
+      14
+     ],
+     [
+      7,
+      24
+     ],
+     [
+      22,
+      10
+     ],
+     [
+      25,
+      43
+     ],
+     [
+      29,
+      42
+     ],
+     [
+      31,
+      36
+     ],
+     [
+      32,
+      21
+     ],
+     [
+      40,
+      38
+     ],
+     [
+      49,
+      38
+     ],
+     [
+      52,
+      34
+     ]
+    ],
+    "names": [
+     "React",
+     "createStore",
+     "StateCreator",
+     "StoreMutatorIdentifier",
+     "selector",
+     "StateSlice",
+     "useSyncExternalStore",
+     "selector",
+     "useCallback",
+     "S",
+     "T",
+     "createState"
+    ]
+   },
+   {
+    "path": "src/vanilla/shallow.ts",
+    "positions": [
+     [
+      12,
+      15
+     ],
+     [
+      15,
+      42
+     ],
+     [
+      16,
+      53
+     ],
+     [
+      17,
+      27
+     ],
+     [
+      21,
+      11
+     ],
+     [
+      33,
+      38
+     ],
+     [
+      34,
+      23
+     ],
+     [
+      38,
+      34
+     ],
+     [
+      44,
+      35
+     ],
+     [
+      47,
+      46
+     ],
+     [
+      70,
+      24
+     ],
+     [
+      71,
+      39
+     ]
+    ],
+    "ends": [
+     [
+      12,
+      19
+     ],
+     [
+      15,
+      45
+     ],
+     [
+      16,
+      55
+     ],
+     [
+      17,
+      29
+     ],
+     [
+      21,
+      13
+     ],
+     [
+      33,
+      42
+     ],
+     [
+      34,
+      26
+     ],
+     [
+      38,
+      37
+     ],
+     [
+      44,
+      37
+     ],
+     [
+      47,
+      47
+     ],
+     [
+      70,
+      27
+     ],
+     [
+      71,
+      42
+     ]
+    ],
+    "names": [
+     "entries",
+     "valueA",
+     "Map",
+     "size",
+     "mapB",
+     "iterator",
+     "valueB",
+     "nextB",
+     "done",
+     "T",
+     "Object",
+     "valueB"
+    ]
+   },
+   {
+    "path": "tests/persistSync.test.tsx",
+    "positions": [
+     [
+      14,
+      37
+     ],
+     [
+      16,
+      6
+     ],
+     [
+      136,
+      15
+     ],
+     [
+      274,
+      9
+     ],
+     [
+      291,
+      41
+     ],
+     [
+      311,
+      25
+     ],
+     [
+      467,
+      20
+     ],
+     [
+      565,
+      64
+     ],
+     [
+      683,
+      24
+     ],
+     [
+      717,
+      16
+     ],
+     [
+      732,
+      22
+     ],
+     [
+      742,
+      30
+     ]
+    ],
+    "ends": [
+     [
+      14,
+      41
+     ],
+     [
+      16,
+      9
+     ],
+     [
+      136,
+      20
+     ],
+     [
+      274,
+      13
+     ],
+     [
+      291,
+      48
+     ],
+     [
+      311,
+      28
+     ],
+     [
+      467,
+      24
+     ],
+     [
+      565,
+      73
+     ],
+     [
+      683,
+      26
+     ],
+     [
+      717,
+      21
+     ],
+     [
+      732,
+      33
+     ],
+     [
+      742,
+      32
+     ]
+    ],
+    "names": [
+     "newState",
+     "state",
+     "setItemSpy",
+     "setItem",
+     "toBeCalledWith",
+     "count",
+     "entries",
+     "onFinishHydration",
+     "map",
+     "setItemSpy",
+     "onRehydrateStorageSpy2",
+     "name"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "diagnostics",
+  "path": "tests/persistSync.test.tsx",
+  "line": -1,
+  "character": -1,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "src/react.ts"
+  },
+  {
+   "kind": "open",
+   "path": "src/vanilla/shallow.ts"
+  },
+  {
+   "kind": "open",
+   "path": "tests/persistSync.test.tsx"
+  },
+  {
+   "kind": "fs_rename",
+   "path": "src/react.ts",
+   "new_path": "src/react_rt.ts"
+  },
+  {
+   "kind": "fs_rename",
+   "path": "src/react_rt.ts",
+   "new_path": "src/react.ts"
+  }
+ ],
+ "case": {
+  "chain_step": 0,
+  "families": [],
+  "family": "H5",
+  "history_index": 0,
+  "history_seed": 1001,
+  "mode": "fresh",
+  "note": "rename src/react.ts -> src/react_rt.ts -> back",
+  "seed": 1,
+  "timing": "race0"
+ },
+ "shape": "diagnostics:extra:2305,2339,7006",
+ "signature": "ts6|r1_history|diagnostics:extra:2305,2339,7006",
+ "expected": [
+  [
+   70,
+   34,
+   70,
+   48,
+   4,
+   "6385",
+   "typescript",
+   "'toBeCalledWith' is deprecated."
+  ],
+  [
+   94,
+   16,
+   94,
+   30,
+   4,
+   "6385",
+   "typescript",
+   "'toBeCalledWith' is deprecated."
+  ],
+  [
+   115,
+   34,
+   115,
+   48,
+   4,
+   "6385",
+   "typescript",
+   "'toBeCalledWith' is deprecated."
+  ],
+  [
+   120,
+   23,
+   120,
+   37,
+   4,
+   "6385",
+   "typescript",
+   "'toBeCalledWith' is deprecated."
+  ],
+  [
+   132,
+   35,
+   132,
+   49,
+   4,
+   "6385",
+   "typescript",
+   "'toBeCalledWith' is deprecated."
+  ],
+  [
+   161,
+   23,
+   161,
+   37,
+   4,
+   "6385",
+   "typescript",
+   "'toBeCalledWith' is deprecated."
+  ],
+  [
+   162,
+   23,
+   162,
+   37,
+   4,
+   "6385",
+   "typescript",
+   "'toBeCalledWith' is deprecated."
+  ],
+  [
+   169,
+   34,
+   169,
+   48,
+   4,
+   "6385",
+   "typescript",
+   "'toBeCalledWith' is deprecated."
+  ],
+  [
+   196,
+   34,
+   196,
+   48,
+   4,
+   "6385",
+   "typescript",
+   "'toBeCalledWith' is deprecated."
+  ],
+  [
+   225,
+   34,
+   225,
+   48,
+   4,
+   "6385",
+   "typescript",
+   "'toBeCalledWith' is deprecated."
+  ],
+  [
+   261,
+   34,
+   261,
+   48,
+   4,
+   "6385",
+   "typescript",
+   "'toBeCalledWith' is deprecated."
+  ],
+  [
+   291,
+   34,
+   291,
+   48,
+   4,
+   "6385",
+   "typescript",
+   "'toBeCalledWith' is deprecated."
+  ],
+  [
+   402,
+   23,
+   402,
+   37,
+   4,
+   "6385",
+   "typescript",
+   "'toBeCalledWith' is deprecated."
+  ],
+  [
+   458,
+   23,
+   458,
+   37,
+   4,
+   "6385",
+   "typescript",
+   "'toBeCalledWith' is deprecated."
+  ],
+  [
+   471,
+   23,
+   471,
+   37,
+   4,
+   "6385",
+   "typescript",
+   "'toBeCalledWith' is deprecated."
+  ],
+  [
+   494,
+   26,
+   494,
+   40,
+   4,
+   "6385",
+   "typescript",
+   "'toBeCalledWith' is deprecated."
+  ],
+  [
+   572,
+   26,
+   572,
+   40,
+   4,
+   "6385",
+   "typescript",
+   "'toBeCalledWith' is deprecated."
+  ],
+  [
+   573,
+   26,
+   573,
+   40,
+   4,
+   "6385",
+   "typescript",
+   "'toBeCalledWith' is deprecated."
+  ],
+  [
+   574,
+   34,
+   574,
+   48,
+   4,
+   "6385",
+   "typescript",
+   "'toBeCalledWith' is deprecated."
+  ],
+  [
+   575,
+   34,
+   575,
+   48,
+   4,
+   "6385",
+   "typescript",
+   "'toBeCalledWith' is deprecated."
+  ],
+  [
+   582,
+   30,
+   582,
+   45,
+   4,
+   "6385",
+   "typescript",
+   "'toBeCalledTimes' is deprecated."
+  ],
+  [
+   583,
+   26,
+   583,
+   40,
+   4,
+   "6385",
+   "typescript",
+   "'toBeCalledWith' is deprecated."
+  ],
+  [
+   584,
+   38,
+   584,
+   53,
+   4,
+   "6385",
+   "typescript",
+   "'toBeCalledTimes' is deprecated."
+  ],
+  [
+   585,
+   34,
+   585,
+   48,
+   4,
+   "6385",
+   "typescript",
+   "'toBeCalledWith' is deprecated."
+  ],
+  [
+   687,
+   34,
+   687,
+   48,
+   4,
+   "6385",
+   "typescript",
+   "'toBeCalledWith' is deprecated."
+  ],
+  [
+   709,
+   34,
+   709,
+   48,
+   4,
+   "6385",
+   "typescript",
+   "'toBeCalledWith' is deprecated."
+  ],
+  [
+   717,
+   23,
+   717,
+   37,
+   4,
+   "6385",
+   "typescript",
+   "'toBeCalledWith' is deprecated."
+  ],
+  [
+   732,
+   35,
+   732,
+   49,
+   4,
+   "6385",
+   "typescript",
+   "'toBeCalledWith' is deprecated."
+  ],
+  [
+   757,
+   20,
+   757,
+   35,
+   4,
+   "6385",
+   "typescript",
+   "'toBeCalledTimes' is deprecated."
+  ]
+ ],
+ "actual": [
+  [
+   3,
+   9,
+   3,
+   15,
+   1,
+   "2305",
+   "typescript",
+   "Module '\"zustand\"' has no exported member 'create'."
+  ],
+  [
+   70,
+   34,
+   70,
+   48,
+   4,
+   "6385",
+   "typescript",
+   "'toBeCalledWith' is deprecated."
+  ],
+  [
+   94,
+   16,
+   94,
+   30,
+   4,
+   "6385",
+   "typescript",
+   "'toBeCalledWith' is deprecated."
+  ],
+  [
+   115,
+   34,
+   115,
+   48,
+   4,
+   "6385",
+   "typescript",
+   "'toBeCalledWith' is deprecated."
+  ],
+  [
+   120,
+   23,
+   120,
+   37,
+   4,
+   "6385",
+   "typescript",
+   "'toBeCalledWith' is deprecated."
+  ],
+  [
+   132,
+   35,
+   132,
+   49,
+   4,
+   "6385",
+   "typescript",
+   "'toBeCalledWith' is deprecated."
+  ],
+  [
+   161,
+   23,
+   161,
+   37,
+   4,
+   "6385",
+   "typescript",
+   "'toBeCalledWith' is deprecated."
+  ],
+  [
+   162,
+   23,
+   162,
+   37,
+   4,
+   "6385",
+   "typescript",
+   "'toBeCalledWith' is deprecated."
+  ],
+  [
+   169,
+   34,
+   169,
+   48,
+   4,
+   "6385",
+   "typescript",
+   "'toBeCalledWith' is deprecated."
+  ],
+  [
+   196,
+   34,
+   196,
+   48,
+   4,
+   "6385",
+   "typescript",
+   "'toBeCalledWith' is deprecated."
+  ],
+  [
+   225,
+   34,
+   225,
+   48,
+   4,
+   "6385",
+   "typescript",
+   "'toBeCalledWith' is deprecated."
+  ],
+  [
+   261,
+   34,
+   261,
+   48,
+   4,
+   "6385",
+   "typescript",
+   "'toBeCalledWith' is deprecated."
+  ],
+  [
+   291,
+   34,
+   291,
+   48,
+   4,
+   "6385",
+   "typescript",
+   "'toBeCalledWith' is deprecated."
+  ],
+  [
+   402,
+   23,
+   402,
+   37,
+   4,
+   "6385",
+   "typescript",
+   "'toBeCalledWith' is deprecated."
+  ],
+  [
+   458,
+   23,
+   458,
+   37,
+   4,
+   "6385",
+   "typescript",
+   "'toBeCalledWith' is deprecated."
+  ],
+  [
+   465,
+   19,
+   465,
+   24,
+   1,
+   "7006",
+   "typescript",
+   "Parameter 'state' implicitly has an 'any' type."
+  ],
+  [
+   471,
+   23,
+   471,
+   37,
+   4,
+   "6385",
+   "typescript",
+   "'toBeCalledWith' is deprecated."
+  ],
+  [
+   494,
+   26,
+   494,
+   40,
+   4,
+   "6385",
+   "typescript",
+   "'toBeCalledWith' is deprecated."
+  ],
+  [
+   572,
+   26,
+   572,
+   40,
+   4,
+   "6385",
+   "typescript",
+   "'toBeCalledWith' is deprecated."
+  ],
+  [
+   573,
+   26,
+   573,
+   40,
+   4,
+   "6385",
+   "typescript",
+   "'toBeCalledWith' is deprecated."
+  ],
+  [
+   574,
+   34,
+   574,
+   48,
+   4,
+   "6385",
+   "typescript",
+   "'toBeCalledWith' is deprecated."
+  ],
+  [
+   575,
+   34,
+   575,
+   48,
+   4,
+   "6385",
+   "typescript",
+   "'toBeCalledWith' is deprecated."
+  ],
+  [
+   582,
+   30,
+   582,
+   45,
+   4,
+   "6385",
+   "typescript",
+   "'toBeCalledTimes' is deprecated."
+  ],
+  [
+   583,
+   26,
+   583,
+   40,
+   4,
+   "6385",
+   "typescript",
+   "'toBeCalledWith' is deprecated."
+  ],
+  [
+   584,
+   38,
+   584,
+   53,
+   4,
+   "6385",
+   "typescript",
+   "'toBeCalledTimes' is deprecated."
+  ],
+  [
+   585,
+   34,
+   585,
+   48,
+   4,
+   "6385",
+   "typescript",
+   "'toBeCalledWith' is deprecated."
+  ],
+  [
+   645,
+   26,
+   645,
+   27,
+   1,
+   "7006",
+   "typescript",
+   "Parameter 's' implicitly has an 'any' type."
+  ],
+  [
+   650,
+   46,
+   650,
+   49,
+   1,
+   "2339",
+   "typescript",
+   "Property 'inc' does not exist on type '{}'."
+  ],
+  [
+   687,
+   34,
+   687,
+   48,
+   4,
+   "6385",
+   "typescript",
+   "'toBeCalledWith' is deprecated."
+  ],
+  [
+   709,
+   34,
+   709,
+   48,
+   4,
+   "6385",
+   "typescript",
+   "'toBeCalledWith' is deprecated."
+  ],
+  [
+   717,
+   23,
+   717,
+   37,
+   4,
+   "6385",
+   "typescript",
+   "'toBeCalledWith' is deprecated."
+  ],
+  [
+   732,
+   35,
+   732,
+   49,
+   4,
+   "6385",
+   "typescript",
+   "'toBeCalledWith' is deprecated."
+  ],
+  [
+   757,
+   20,
+   757,
+   35,
+   4,
+   "6385",
+   "typescript",
+   "'toBeCalledTimes' is deprecated."
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "H5: rename src/react.ts -> src/react_rt.ts -> back; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 226s",
+ "violation": {
+  "oracle": "r1_history",
+  "server": "ts6-6.0.3",
+  "project": "pmndrs/zustand@b57db4f86ef1",
+  "key": {
+   "method": "diagnostics",
+   "path": "tests/persistSync.test.tsx",
+   "line": -1,
+   "character": -1,
+   "extra": ""
+  },
+  "expected": [
+   [
+    70,
+    34,
+    70,
+    48,
+    4,
+    "6385",
+    "typescript",
+    "'toBeCalledWith' is deprecated."
+   ],
+   [
+    94,
+    16,
+    94,
+    30,
+    4,
+    "6385",
+    "typescript",
+    "'toBeCalledWith' is deprecated."
+   ],
+   [
+    115,
+    34,
+    115,
+    48,
+    4,
+    "6385",
+    "typescript",
+    "'toBeCalledWith' is deprecated."
+   ],
+   [
+    120,
+    23,
+    120,
+    37,
+    4,
+    "6385",
+    "typescript",
+    "'toBeCalledWith' is deprecated."
+   ],
+   [
+    132,
+    35,
+    132,
+    49,
+    4,
+    "6385",
+    "typescript",
+    "'toBeCalledWith' is deprecated."
+   ],
+   [
+    161,
+    23,
+    161,
+    37,
+    4,
+    "6385",
+    "typescript",
+    "'toBeCalledWith' is deprecated."
+   ],
+   [
+    162,
+    23,
+    162,
+    37,
+    4,
+    "6385",
+    "typescript",
+    "'toBeCalledWith' is deprecated."
+   ],
+   [
+    169,
+    34,
+    169,
+    48,
+    4,
+    "6385",
+    "typescript",
+    "'toBeCalledWith' is deprecated."
+   ],
+   [
+    196,
+    34,
+    196,
+    48,
+    4,
+    "6385",
+    "typescript",
+    "'toBeCalledWith' is deprecated."
+   ],
+   [
+    225,
+    34,
+    225,
+    48,
+    4,
+    "6385",
+    "typescript",
+    "'toBeCalledWith' is deprecated."
+   ],
+   [
+    261,
+    34,
+    261,
+    48,
+    4,
+    "6385",
+    "typescript",
+    "'toBeCalledWith' is deprecated."
+   ],
+   [
+    291,
+    34,
+    291,
+    48,
+    4,
+    "6385",
+    "typescript",
+    "'toBeCalledWith' is deprecated."
+   ],
+   [
+    402,
+    23,
+    402,
+    37,
+    4,
+    "6385",
+    "typescript",
+    "'toBeCalledWith' is deprecated."
+   ],
+   [
+    458,
+    23,
+    458,
+    37,
+    4,
+    "6385",
+    "typescript",
+    "'toBeCalledWith' is deprecated."
+   ],
+   [
+    471,
+    23,
+    471,
+    37,
+    4,
+    "6385",
+    "typescript",
+    "'toBeCalledWith' is deprecated."
+   ],
+   [
+    494,
+    26,
+    494,
+    40,
+    4,
+    "6385",
+    "typescript",
+    "'toBeCalledWith' is deprecated."
+   ],
+   [
+    572,
+    26,
+    572,
+    40,
+    4,
+    "6385",
+    "typescript",
+    "'toBeCalledWith' is deprecated."
+   ],
+   [
+    573,
+    26,
+    573,
+    40,
+    4,
+    "6385",
+    "typescript",
+    "'toBeCalledWith' is deprecated."
+   ],
+   [
+    574,
+    34,
+    574,
+    48,
+    4,
+    "6385",
+    "typescript",
+    "'toBeCalledWith' is deprecated."
+   ],
+   [
+    575,
+    34,
+    575,
+    48,
+    4,
+    "6385",
+    "typescript",
+    "'toBeCalledWith' is deprecated."
+   ],
+   [
+    582,
+    30,
+    582,
+    45,
+    4,
+    "6385",
+    "typescript",
+    "'toBeCalledTimes' is deprecated."
+   ],
+   [
+    583,
+    26,
+    583,
+    40,
+    4,
+    "6385",
+    "typescript",
+    "'toBeCalledWith' is deprecated."
+   ],
+   [
+    584,
+    38,
+    584,
+    53,
+    4,
+    "6385",
+    "typescript",
+    "'toBeCalledTimes' is deprecated."
+   ],
+   [
+    585,
+    34,
+    585,
+    48,
+    4,
+    "6385",
+    "typescript",
+    "'toBeCalledWith' is deprecated."
+   ],
+   [
+    687,
+    34,
+    687,
+    48,
+    4,
+    "6385",
+    "typescript",
+    "'toBeCalledWith' is deprecated."
+   ],
+   [
+    709,
+    34,
+    709,
+    48,
+    4,
+    "6385",
+    "typescript",
+    "'toBeCalledWith' is deprecated."
+   ],
+   [
+    717,
+    23,
+    717,
+    37,
+    4,
+    "6385",
+    "typescript",
+    "'toBeCalledWith' is deprecated."
+   ],
+   [
+    732,
+    35,
+    732,
+    49,
+    4,
+    "6385",
+    "typescript",
+    "'toBeCalledWith' is deprecated."
+   ],
+   [
+    757,
+    20,
+    757,
+    35,
+    4,
+    "6385",
+    "typescript",
+    "'toBeCalledTimes' is deprecated."
+   ]
+  ],
+  "actual": [
+   [
+    3,
+    9,
+    3,
+    15,
+    1,
+    "2305",
+    "typescript",
+    "Module '\"zustand\"' has no exported member 'create'."
+   ],
+   [
+    70,
+    34,
+    70,
+    48,
+    4,
+    "6385",
+    "typescript",
+    "'toBeCalledWith' is deprecated."
+   ],
+   [
+    94,
+    16,
+    94,
+    30,
+    4,
+    "6385",
+    "typescript",
+    "'toBeCalledWith' is deprecated."
+   ],
+   [
+    115,
+    34,
+    115,
+    48,
+    4,
+    "6385",
+    "typescript",
+    "'toBeCalledWith' is deprecated."
+   ],
+   [
+    120,
+    23,
+    120,
+    37,
+    4,
+    "6385",
+    "typescript",
+    "'toBeCalledWith' is deprecated."
+   ],
+   [
+    132,
+    35,
+    132,
+    49,
+    4,
+    "6385",
+    "typescript",
+    "'toBeCalledWith' is deprecated."
+   ],
+   [
+    161,
+    23,
+    161,
+    37,
+    4,
+    "6385",
+    "typescript",
+    "'toBeCalledWith' is deprecated."
+   ],
+   [
+    162,
+    23,
+    162,
+    37,
+    4,
+    "6385",
+    "typescript",
+    "'toBeCalledWith' is deprecated."
+   ],
+   [
+    169,
+    34,
+    169,
+    48,
+    4,
+    "6385",
+    "typescript",
+    "'toBeCalledWith' is deprecated."
+   ],
+   [
+    196,
+    34,
+    196,
+    48,
+    4,
+    "6385",
+    "typescript",
+    "'toBeCalledWith' is deprecated."
+   ],
+   [
+    225,
+    34,
+    225,
+    48,
+    4,
+    "6385",
+    "typescript",
+    "'toBeCalledWith' is deprecated."
+   ],
+   [
+    261,
+    34,
+    261,
+    48,
+    4,
+    "6385",
+    "typescript",
+    "'toBeCalledWith' is deprecated."
+   ],
+   [
+    291,
+    34,
+    291,
+    48,
+    4,
+    "6385",
+    "typescript",
+    "'toBeCalledWith' is deprecated."
+   ],
+   [
+    402,
+    23,
+    402,
+    37,
+    4,
+    "6385",
+    "typescript",
+    "'toBeCalledWith' is deprecated."
+   ],
+   [
+    458,
+    23,
+    458,
+    37,
+    4,
+    "6385",
+    "typescript",
+    "'toBeCalledWith' is deprecated."
+   ],
+   [
+    465,
+    19,
+    465,
+    24,
+    1,
+    "7006",
+    "typescript",
+    "Parameter 'state' implicitly has an 'any' type."
+   ],
+   [
+    471,
+    23,
+    471,
+    37,
+    4,
+    "6385",
+    "typescript",
+    "'toBeCalledWith' is deprecated."
+   ],
+   [
+    494,
+    26,
+    494,
+    40,
+    4,
+    "6385",
+    "typescript",
+    "'toBeCalledWith' is deprecated."
+   ],
+   [
+    572,
+    26,
+    572,
+    40,
+    4,
+    "6385",
+    "typescript",
+    "'toBeCalledWith' is deprecated."
+   ],
+   [
+    573,
+    26,
+    573,
+    40,
+    4,
+    "6385",
+    "typescript",
+    "'toBeCalledWith' is deprecated."
+   ],
+   [
+    574,
+    34,
+    574,
+    48,
+    4,
+    "6385",
+    "typescript",
+    "'toBeCalledWith' is deprecated."
+   ],
+   [
+    575,
+    34,
+    575,
+    48,
+    4,
+    "6385",
+    "typescript",
+    "'toBeCalledWith' is deprecated."
+   ],
+   [
+    582,
+    30,
+    582,
+    45,
+    4,
+    "6385",
+    "typescript",
+    "'toBeCalledTimes' is deprecated."
+   ],
+   [
+    583,
+    26,
+    583,
+    40,
+    4,
+    "6385",
+    "typescript",
+    "'toBeCalledWith' is deprecated."
+   ],
+   [
+    584,
+    38,
+    584,
+    53,
+    4,
+    "6385",
+    "typescript",
+    "'toBeCalledTimes' is deprecated."
+   ],
+   [
+    585,
+    34,
+    585,
+    48,
+    4,
+    "6385",
+    "typescript",
+    "'toBeCalledWith' is deprecated."
+   ],
+   [
+    645,
+    26,
+    645,
+    27,
+    1,
+    "7006",
+    "typescript",
+    "Parameter 's' implicitly has an 'any' type."
+   ],
+   [
+    650,
+    46,
+    650,
+    49,
+    1,
+    "2339",
+    "typescript",
+    "Property 'inc' does not exist on type '{}'."
+   ],
+   [
+    687,
+    34,
+    687,
+    48,
+    4,
+    "6385",
+    "typescript",
+    "'toBeCalledWith' is deprecated."
+   ],
+   [
+    709,
+    34,
+    709,
+    48,
+    4,
+    "6385",
+    "typescript",
+    "'toBeCalledWith' is deprecated."
+   ],
+   [
+    717,
+    23,
+    717,
+    37,
+    4,
+    "6385",
+    "typescript",
+    "'toBeCalledWith' is deprecated."
+   ],
+   [
+    732,
+    35,
+    732,
+    49,
+    4,
+    "6385",
+    "typescript",
+    "'toBeCalledWith' is deprecated."
+   ],
+   [
+    757,
+    20,
+    757,
+    35,
+    4,
+    "6385",
+    "typescript",
+    "'toBeCalledTimes' is deprecated."
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "src/react.ts"
+   },
+   {
+    "kind": "open",
+    "path": "src/vanilla/shallow.ts"
+   },
+   {
+    "kind": "open",
+    "path": "tests/persistSync.test.tsx"
+   },
+   {
+    "kind": "fs_rename",
+    "path": "src/react.ts",
+    "new_path": "src/react_rt.ts"
+   },
+   {
+    "kind": "fs_rename",
+    "path": "src/react_rt.ts",
+    "new_path": "src/react.ts"
+   }
+  ],
+  "detail": "{\"case\": {\"chain_step\": 0, \"families\": [], \"family\": \"H5\", \"history_index\": 0, \"history_seed\": 1001, \"mode\": \"fresh\", \"note\": \"rename src/react.ts -> src/react_rt.ts -> back\", \"seed\": 1, \"timing\": \"race0\"}, \"note\": \"H5: rename src/react.ts -> src/react_rt.ts -> back; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 226s\", \"shape\": \"diagnostics:extra:2305,2339,7006\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "ts6|r1_history|diagnostics:extra:2305,2339,7006",
+  "run_id": "3ed0e189007e"
+ },
+ "replay_logs": [
+  "logs/ts6-6.0.3-trd5a250-replay-baseline-20260925-164811-a516a7.jsonl.gz",
+  "logs/ts6-6.0.3-trd5a250-replay-control-20260925-164811-896424.jsonl.gz",
+  "logs/ts6-6.0.3-trd5a250-replay-history-20260925-164828-38e394.jsonl.gz"
+ ],
+ "project_files": {},
+ "group": "ts6-r1-diagnostics-extra-2305-2339-7006-h5-d5a250",
+ "reduced": true
+}

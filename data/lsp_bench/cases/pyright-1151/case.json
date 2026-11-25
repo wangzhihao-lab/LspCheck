@@ -1,0 +1,70 @@
+{
+ "schema": 1,
+ "id": "pyright-1151",
+ "meta": {
+  "server": "pyright",
+  "kind": "pyright",
+  "number": 1151,
+  "url": "https://github.com/microsoft/pyright/issues/1151",
+  "title": "Completion suggestions are offered when typing \".\" in comment on first line",
+  "oracle_class": "R5",
+  "subtype": "file-edge",
+  "fix_ref": "0bbf5db8a1 (Fixed bug that caused completion suggestions to be presented when typing a period within a comment on the first line of the file), 2020-11-07; first in 1.1.84 (maintainer: 'addressed in Pyright 1.1.84')",
+  "fix_shas": [],
+  "pre_version": "1.1.83",
+  "post_version": "1.1.84",
+  "pre_build": "1.1.83",
+  "post_build": "1.1.84",
+  "build_notes": "npm pyright@1.1.83 (2020-11-04) and pyright@1.1.84 (2020-11-08); the fix commit is the only completion change between the two tags.",
+  "candidate_rank": 67,
+  "effort_minutes": 8,
+  "notes": "Not reproduced (1 attempt): pre-fix 1.1.83 answered an empty completion list for the '.' at the end of the first-line comment, in the original and in the shifted copy. Reading the pre-fix code (completionProvider._isWithinComment: tokens.getItemAtPosition(offset) < 0 -> 'not in a comment') suggests the defect concerns comments that precede the file's first token, which a one-line comment-only file does not have, and which a blank line inserted above would not change; the R5 relation with a blank line therefore cannot separate the builds, and no probe asserts that a completion list is empty. Not retried: a second attempt would need invented code after the comment and a transformation chosen from the fix."
+ },
+ "language": "python",
+ "settings": {},
+ "settings_note": "The issue names no settings; the session defaults apply.",
+ "session": {
+  "settle_timeout_s": 120
+ },
+ "files": [
+  {
+   "path": "main.py",
+   "provenance": "issue-adapted",
+   "source": "issue body (prose only: 'a comment is created on the first line of a source file, typing \".\" within that comment')",
+   "note": "the issue has no code; a one-line file whose first line is a comment ending in the typed '.'"
+  }
+ ],
+ "repro": {
+  "attempt": 1,
+  "timing": "settled",
+  "steps": "Open main.py, whose first line is a comment, and request completions right after the '.' typed in it (line 1, character 10). Reported: completion suggestions appear inside the comment on the first line; they should never appear within a comment. Probe (R5): a copy with a blank line inserted above the comment must give the same completion answer at the mapped position (the report is specific to the first line).",
+  "ops": [
+   {
+    "kind": "open",
+    "path": "main.py"
+   }
+  ],
+  "probe": {
+   "type": "transform_differs",
+   "params": {
+    "transform": {
+     "kind": "insert_lines",
+     "path": "main.py",
+     "line": 0,
+     "text": "\n"
+    },
+    "queries": [
+     {
+      "method": "completion",
+      "path": "main.py",
+      "position": [
+       0,
+       10
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "attempts": []
+}

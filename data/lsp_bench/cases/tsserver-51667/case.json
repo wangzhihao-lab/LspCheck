@@ -1,0 +1,73 @@
+{
+ "schema": 1,
+ "id": "tsserver-51667",
+ "meta": {
+  "server": "tsserver",
+  "kind": "tsserver",
+  "number": 51667,
+  "url": "https://github.com/microsoft/TypeScript/issues/51667",
+  "title": "Intellisense suggestion in Typescript after prop with literal string type",
+  "oracle_class": "R4",
+  "subtype": "completion",
+  "fix_ref": "microsoft/TypeScript#52676 (Exclude literal completions after closing quote and JSX attribute location), 0e357f510b, 2023-02-28; git tag --contains: first in v5.1-beta / v5.1.3",
+  "fix_shas": [
+   "0e357f510b09e5dbbe2dccce8033457890386d55"
+  ],
+  "pre_version": "5.0.4",
+  "post_version": "5.1.3",
+  "pre_build": "5.0.4+tsls3.3.2",
+  "post_build": "5.1.3+tsls3.3.2",
+  "wrapper": "typescript-language-server@3.3.2",
+  "build_notes": "npm typescript@5.0.4 (2023-04-07) and typescript@5.1.3 (2023-06-01), both behind typescript-language-server@3.3.2 (the latest wrapper release before 5.1.3), started with the pinned tsserver.js; the reported TypeScript version is checked on every session.",
+  "candidate_rank": 24,
+  "effort_minutes": 7,
+  "notes": "Same fix PR as tsserver-52675 (the general form of this report). The fix stops offering literal completions at a JSX attribute location, so a post-fix list without the literal is 'absent' (missing: absent)."
+ },
+ "language": "typescript",
+ "settings": {},
+ "settings_note": "The issue's tsconfig.json is used verbatim (jsx preserve, strict, isolatedModules); no client settings are named.",
+ "session": {
+  "settle_timeout_s": 120
+ },
+ "files": [
+  {
+   "path": "index.tsx",
+   "provenance": "issue",
+   "source": "issue body, tsx code block (step 2: 'Create a tsx file with the following code')",
+   "note": "the file name is not given in the issue"
+  },
+  {
+   "path": "tsconfig.json",
+   "provenance": "issue",
+   "source": "issue body, json code block ('the ts config of the current example')",
+   "note": "the trailing blank line of the block dropped"
+  }
+ ],
+ "repro": {
+  "attempt": 1,
+  "timing": "settled",
+  "steps": "Open index.tsx. Go to the empty line after the age prop of the Person element (line 8) and request completions (ctrl+space). Reported: the list offers the literal values of the age prop entered above (middle, old, young) instead of the remaining props such as height; accepting one inserts a bare string literal into the JSX element, which is invalid JSX. Probe: accept the offered literal \"old\"; the edited text must not have a parse error the original did not have. No such item offered counts as absent.",
+  "ops": [
+   {
+    "kind": "open",
+    "path": "index.tsx"
+   }
+  ],
+  "probe": {
+   "type": "edit_breaks_syntax",
+   "params": {
+    "edit": {
+     "via": "completion",
+     "path": "index.tsx",
+     "position": [
+      7,
+      8
+     ],
+     "label_re": "^[\"']old[\"']$",
+     "missing": "absent"
+    }
+   }
+  }
+ },
+ "attempts": []
+}

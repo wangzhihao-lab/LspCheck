@@ -1,0 +1,9 @@
+2026-11-18 13:11:45,050 INFO campaign_run run 4224a39ee10c: r6_crossimpl on ts7 7.0.2, solidjs/solid@4b62bc29e04b seed 2 settled, targets ['examples/rendering/shared/src/router.tsx', 'packages/signals/tests/latest-plain-write-purity.test.ts', 'packages/web/test/server/server-functions-decoder-rejection-ownership.spec.tsx']
+2026-11-18 13:14:12,268 INFO campaign_run run 4224a39ee10c: 22 candidate(s) in 147s; confirming
+2026-11-18 13:15:44,891 INFO flake replay 1/3 of ts7|r6_crossimpl|definition:extra: settled=True control_stable=True reproduced=True (92.6s)
+2026-11-18 13:18:03,936 INFO flake replay 2/3 of ts7|r6_crossimpl|definition:extra: settled=True control_stable=True reproduced=True (139.0s)
+2026-11-18 13:19:41,711 INFO flake replay 3/3 of ts7|r6_crossimpl|definition:extra: settled=True control_stable=True reproduced=True (97.7s)
+2026-11-18 13:21:20,691 INFO flake replay 1/3 of ts7|r6_crossimpl|hover:lost: settled=True control_stable=True reproduced=True (99.0s)
+2026-11-18 13:22:04,363 INFO flake replay 2/3 of ts7|r6_crossimpl|hover:lost: settled=True control_stable=True reproduced=True (43.7s)
+2026-11-18 13:22:40,531 INFO flake replay 3/3 of ts7|r6_crossimpl|hover:lost: settled=True control_stable=True reproduced=True (36.2s)
+2026-11-18 13:22:40,549 INFO campaign_run run 4224a39ee10c finished: ok, 2 confirmed of 22 candidate(s), 656s

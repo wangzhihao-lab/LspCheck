@@ -1,0 +1,532 @@
+{
+ "format": 1,
+ "campaign": "main_v2",
+ "vid": "d2aec7890861-v00",
+ "run_id": "d2aec7890861",
+ "oracle": "r4_edits",
+ "server": {
+  "kind": "ts7",
+  "version": "7.0.2"
+ },
+ "project": {
+  "name": "solidjs/solid@4b62bc29e04b",
+  "source": "corpus",
+  "ref": "temp/corpus/solidjs__solid@4b62bc29e04b",
+  "commit": "4b62bc29e04bfd29573a20ff3d47ae56a8a80ccb",
+  "language": "typescript"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "examples/rendering/shared/src/router.tsx",
+    "positions": [
+     [
+      16,
+      22
+     ]
+    ],
+    "ends": [],
+    "names": [
+     ""
+    ]
+   },
+   {
+    "path": "packages/signals/tests/latest-plain-write-purity.test.ts",
+    "positions": [],
+    "ends": [],
+    "names": []
+   },
+   {
+    "path": "packages/web/test/server/server-functions-decoder-rejection-ownership.spec.tsx",
+    "positions": [],
+    "ends": [],
+    "names": []
+   }
+  ]
+ },
+ "key": {
+  "method": "diagnostics",
+  "path": "examples/rendering/shared/src/router.tsx",
+  "line": 16,
+  "character": 22,
+  "extra": "M1:quickfix-errors:Add import from \"node:vm\""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "examples/rendering/shared/src/router.tsx"
+  },
+  {
+   "kind": "change",
+   "path": "examples/rendering/shared/src/router.tsx",
+   "start": [
+    1,
+    2
+   ],
+   "end": [
+    2,
+    2
+   ]
+  },
+  {
+   "kind": "change",
+   "path": "examples/rendering/shared/src/router.tsx",
+   "start": [
+    7,
+    0
+   ],
+   "end": [
+    7,
+    0
+   ],
+   "text": "import { createContext } from \"node:vm\";\n"
+  }
+ ],
+ "case": {
+  "action_kind": "quickfix",
+  "base_errors": 6,
+  "check": "errors",
+  "diag": {
+   "code": 2304,
+   "message": "Cannot find name 'createContext'.",
+   "range": {
+    "end": {
+     "character": 35,
+     "line": 16
+    },
+    "start": {
+     "character": 22,
+     "line": 16
+    }
+   },
+   "severity": 1
+  },
+  "fix_introduced_errors": [
+   {
+    "code": 2558,
+    "message": "Expected 0 type arguments, but got 1.",
+    "path": "examples/rendering/shared/src/router.tsx",
+    "range": {
+     "end": {
+      "character": 47,
+      "line": 17
+     },
+     "start": {
+      "character": 36,
+      "line": 17
+     }
+    },
+    "severity": 1
+   },
+   {
+    "code": 2604,
+    "message": "JSX element type 'RouterContext' does not have any construct or call signatures.",
+    "path": "examples/rendering/shared/src/router.tsx",
+    "range": {
+     "end": {
+      "character": 20,
+      "line": 30
+     },
+     "start": {
+      "character": 7,
+      "line": 30
+     }
+    },
+    "severity": 1
+   }
+  ],
+  "fix_ops": [
+   {
+    "end": [
+     7,
+     0
+    ],
+    "kind": "change",
+    "path": "examples/rendering/shared/src/router.tsx",
+    "start": [
+     7,
+     0
+    ],
+    "text": "import { createContext } from \"node:vm\";\n"
+   }
+  ],
+  "kind": "mutation",
+  "mutation": {
+   "end": [
+    2,
+    2
+   ],
+   "id": "M1",
+   "offsets": [
+    11,
+    28
+   ],
+   "sha": "769d16e9a291768e",
+   "start": [
+    1,
+    2
+   ],
+   "text": "",
+   "what": "remove 'createContext' from an import"
+  },
+  "n_fix_ops": 1,
+  "path": "examples/rendering/shared/src/router.tsx",
+  "post_errors": 8,
+  "title": "Add import from \"node:vm\"",
+  "via": "edit"
+ },
+ "shape": "diagnostics:extra:2558,2604",
+ "signature": "ts7|r4_edits|diagnostics:extra:2558,2604",
+ "expected": [
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "2307",
+   "ts",
+   "Cannot find module '@solidjs/web' or its corresponding type declarations."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "2307",
+   "ts",
+   "Cannot find module 'solid-js' or its corresponding type declarations."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "2339",
+   "ts",
+   "Property 'url' does not exist on type '{}'."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "2875",
+   "ts",
+   "This JSX tag requires the module path '@solidjs/web/jsx-runtime' to exist, but none could be found. Make sure you have types for the appropriate package installed."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "ts",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "ts",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ]
+ ],
+ "actual": [
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "2307",
+   "ts",
+   "Cannot find module '@solidjs/web' or its corresponding type declarations."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "2307",
+   "ts",
+   "Cannot find module 'solid-js' or its corresponding type declarations."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "2339",
+   "ts",
+   "Property 'url' does not exist on type '{}'."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "2558",
+   "ts",
+   "Expected 0 type arguments, but got 1."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "2604",
+   "ts",
+   "JSX element type 'RouterContext' does not have any construct or call signatures."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "2875",
+   "ts",
+   "This JSX tag requires the module path '@solidjs/web/jsx-runtime' to exist, but none could be found. Make sure you have types for the appropriate package installed."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "ts",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "ts",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "quick fix 'Add import from \"node:vm\"' for 2304 at examples/rendering/shared/src/router.tsx:17:23 raises the error count in the edited files from 6 to 8 (seeded by M1: remove 'createContext' from an import; errors before the mutation 6, after the fix 8); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 470s",
+ "violation": {
+  "oracle": "r4_edits",
+  "server": "ts7-7.0.2",
+  "project": "solidjs/solid@4b62bc29e04b",
+  "key": {
+   "method": "diagnostics",
+   "path": "examples/rendering/shared/src/router.tsx",
+   "line": 16,
+   "character": 22,
+   "extra": "M1:quickfix-errors:Add import from \"node:vm\""
+  },
+  "expected": [
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2307",
+    "ts",
+    "Cannot find module '@solidjs/web' or its corresponding type declarations."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2307",
+    "ts",
+    "Cannot find module 'solid-js' or its corresponding type declarations."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2339",
+    "ts",
+    "Property 'url' does not exist on type '{}'."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2875",
+    "ts",
+    "This JSX tag requires the module path '@solidjs/web/jsx-runtime' to exist, but none could be found. Make sure you have types for the appropriate package installed."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "ts",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "ts",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ]
+  ],
+  "actual": [
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2307",
+    "ts",
+    "Cannot find module '@solidjs/web' or its corresponding type declarations."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2307",
+    "ts",
+    "Cannot find module 'solid-js' or its corresponding type declarations."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2339",
+    "ts",
+    "Property 'url' does not exist on type '{}'."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2558",
+    "ts",
+    "Expected 0 type arguments, but got 1."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2604",
+    "ts",
+    "JSX element type 'RouterContext' does not have any construct or call signatures."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2875",
+    "ts",
+    "This JSX tag requires the module path '@solidjs/web/jsx-runtime' to exist, but none could be found. Make sure you have types for the appropriate package installed."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "ts",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "ts",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "examples/rendering/shared/src/router.tsx"
+   },
+   {
+    "kind": "change",
+    "path": "examples/rendering/shared/src/router.tsx",
+    "start": [
+     1,
+     2
+    ],
+    "end": [
+     2,
+     2
+    ]
+   },
+   {
+    "kind": "change",
+    "path": "examples/rendering/shared/src/router.tsx",
+    "start": [
+     7,
+     0
+    ],
+    "end": [
+     7,
+     0
+    ],
+    "text": "import { createContext } from \"node:vm\";\n"
+   }
+  ],
+  "detail": "{\"case\": {\"action_kind\": \"quickfix\", \"base_errors\": 6, \"check\": \"errors\", \"diag\": {\"code\": 2304, \"message\": \"Cannot find name 'createContext'.\", \"range\": {\"end\": {\"character\": 35, \"line\": 16}, \"start\": {\"character\": 22, \"line\": 16}}, \"severity\": 1}, \"fix_introduced_errors\": [{\"code\": 2558, \"message\": \"Expected 0 type arguments, but got 1.\", \"path\": \"examples/rendering/shared/src/router.tsx\", \"range\": {\"end\": {\"character\": 47, \"line\": 17}, \"start\": {\"character\": 36, \"line\": 17}}, \"severity\": 1}, {\"code\": 2604, \"message\": \"JSX element type 'RouterContext' does not have any construct or call signatures.\", \"path\": \"examples/rendering/shared/src/router.tsx\", \"range\": {\"end\": {\"character\": 20, \"line\": 30}, \"start\": {\"character\": 7, \"line\": 30}}, \"severity\": 1}], \"fix_ops\": [{\"end\": [7, 0], \"kind\": \"change\", \"path\": \"examples/rendering/shared/src/router.tsx\", \"start\": [7, 0], \"text\": \"import { createContext } from \\\"node:vm\\\";\\n\"}], \"kind\": \"mutation\", \"mutation\": {\"end\": [2, 2], \"id\": \"M1\", \"offsets\": [11, 28], \"sha\": \"769d16e9a291768e\", \"start\": [1, 2], \"text\": \"\", \"what\": \"remove 'createContext' from an import\"}, \"n_fix_ops\": 1, \"path\": \"examples/rendering/shared/src/router.tsx\", \"post_errors\": 8, \"title\": \"Add import from \\\"node:vm\\\"\", \"via\": \"edit\"}, \"note\": \"quick fix 'Add import from \\\"node:vm\\\"' for 2304 at examples/rendering/shared/src/router.tsx:17:23 raises the error count in the edited files from 6 to 8 (seeded by M1: remove 'createContext' from an import; errors before the mutation 6, after the fix 8); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 470s\", \"shape\": \"diagnostics:extra:2558,2604\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "ts7|r4_edits|diagnostics:extra:2558,2604",
+  "run_id": "d2aec7890861"
+ },
+ "replay_logs": [
+  "logs/ts7-7.0.2-tread3ee-r4-replay-baseline-20261118-220647-ac19a3.jsonl.gz",
+  "logs/ts7-7.0.2-tread3ee-r4-replay-case-20261118-220628-fdebb7.jsonl.gz",
+  "logs/ts7-7.0.2-tread3ee-r4-replay-control-20261118-220706-7e43cf.jsonl.gz"
+ ],
+ "project_files": {},
+ "group": "ts7-r4-diagnostics-extra-2558-2604-mutation-m1-ead3ee",
+ "reduced": true
+}

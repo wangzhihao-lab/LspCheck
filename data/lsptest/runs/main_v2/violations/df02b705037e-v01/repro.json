@@ -1,0 +1,2041 @@
+{
+ "format": 1,
+ "campaign": "main_v2",
+ "vid": "df02b705037e-v01",
+ "run_id": "df02b705037e",
+ "oracle": "r1_history",
+ "server": {
+  "kind": "ts6",
+  "version": "6.0.3"
+ },
+ "project": {
+  "name": "vadimdemedes/ink@02ae1e59e7c2",
+  "source": "corpus",
+  "ref": "temp/corpus/vadimdemedes__ink@02ae1e59e7c2",
+  "commit": "02ae1e59e7c288e971616100c4c11bcca6b5761b",
+  "language": "typescript"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "race0",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "src/components/FocusContext.ts",
+    "positions": [
+     [
+      4,
+      31
+     ],
+     [
+      5,
+      20
+     ],
+     [
+      6,
+      22
+     ],
+     [
+      8,
+      15
+     ],
+     [
+      11,
+      16
+     ],
+     [
+      16,
+      12
+     ],
+     [
+      16,
+      27
+     ],
+     [
+      16,
+      37
+     ],
+     [
+      17,
+      5
+     ],
+     [
+      24,
+      5
+     ],
+     [
+      25,
+      7
+     ],
+     [
+      29,
+      6
+     ]
+    ],
+    "ends": [
+     [
+      4,
+      35
+     ],
+     [
+      5,
+      21
+     ],
+     [
+      6,
+      23
+     ],
+     [
+      8,
+      21
+     ],
+     [
+      11,
+      23
+     ],
+     [
+      16,
+      18
+     ],
+     [
+      16,
+      34
+     ],
+     [
+      16,
+      40
+     ],
+     [
+      17,
+      9
+     ],
+     [
+      24,
+      10
+     ],
+     [
+      25,
+      14
+     ],
+     [
+      29,
+      12
+     ]
+    ],
+    "names": [
+     "options",
+     "id",
+     "id",
+     "enableFocus",
+     "focusPrevious",
+     "FocusContext",
+     "createContext",
+     "Props",
+     "activeId",
+     "focusNext",
+     "focusPrevious",
+     "FocusContext"
+    ]
+   },
+   {
+    "path": "src/dom.ts",
+    "positions": [
+     [
+      4,
+      14
+     ],
+     [
+      78,
+      7
+     ],
+     [
+      92,
+      18
+     ],
+     [
+      98,
+      7
+     ],
+     [
+      140,
+      9
+     ],
+     [
+      149,
+      36
+     ],
+     [
+      177,
+      9
+     ],
+     [
+      177,
+      34
+     ],
+     [
+      215,
+      2
+     ],
+     [
+      242,
+      63
+     ],
+     [
+      260,
+      26
+     ],
+     [
+      277,
+      35
+     ]
+    ],
+    "ends": [
+     [
+      4,
+      22
+     ],
+     [
+      78,
+      11
+     ],
+     [
+      92,
+      23
+     ],
+     [
+      98,
+      12
+     ],
+     [
+      140,
+      17
+     ],
+     [
+      149,
+      42
+     ],
+     [
+      177,
+      12
+     ],
+     [
+      177,
+      38
+     ],
+     [
+      215,
+      4
+     ],
+     [
+      242,
+      66
+     ],
+     [
+      260,
+      28
+     ],
+     [
+      277,
+      46
+     ]
+    ],
+    "names": [
+     "squashTextNodes",
+     "InkNode",
+     "createNode",
+     "parentNode",
+     "removeChildNode",
+     "newChildNode",
+     "index",
+     "indexOf",
+     "key",
+     "style",
+     "text",
+     "MEASURE_MODE_UNDEFINED"
+    ]
+   },
+   {
+    "path": "test/colon-colors.tsx",
+    "positions": [
+     [
+      15,
+      10
+     ],
+     [
+      21,
+      24
+     ],
+     [
+      26,
+      9
+     ],
+     [
+      37,
+      26
+     ],
+     [
+      39,
+      5
+     ],
+     [
+      44,
+      21
+     ],
+     [
+      53,
+      7
+     ],
+     [
+      54,
+      7
+     ],
+     [
+      55,
+      6
+     ],
+     [
+      61,
+      39
+     ],
+     [
+      70,
+      8
+     ],
+     [
+      97,
+      23
+     ]
+    ],
+    "ends": [
+     [
+      15,
+      13
+     ],
+     [
+      21,
+      26
+     ],
+     [
+      26,
+      11
+     ],
+     [
+      37,
+      28
+     ],
+     [
+      39,
+      7
+     ],
+     [
+      44,
+      28
+     ],
+     [
+      53,
+      9
+     ],
+     [
+      54,
+      9
+     ],
+     [
+      55,
+      8
+     ],
+     [
+      61,
+      44
+     ],
+     [
+      70,
+      10
+     ],
+     [
+      97,
+      27
+     ]
+    ],
+    "names": [
+     "width",
+     "view",
+     "view",
+     "url",
+     "Text",
+     "renderToString",
+     "Box",
+     "Text",
+     "Box",
+     "semicolon",
+     "Text",
+     "overflow"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "inlayHint",
+  "path": "src/dom.ts",
+  "line": -1,
+  "character": -1,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "src/components/FocusContext.ts"
+  },
+  {
+   "kind": "open",
+   "path": "src/dom.ts"
+  },
+  {
+   "kind": "open",
+   "path": "test/colon-colors.tsx"
+  },
+  {
+   "kind": "change",
+   "path": "test/colon-colors.tsx",
+   "start": [
+    32,
+    12
+   ],
+   "end": [
+    32,
+    12
+   ],
+   "text": "// "
+  },
+  {
+   "kind": "change",
+   "path": "test/colon-colors.tsx",
+   "start": [
+    32,
+    12
+   ],
+   "end": [
+    32,
+    15
+   ]
+  },
+  {
+   "kind": "request",
+   "path": "src/dom.ts",
+   "start": [
+    140,
+    9
+   ],
+   "text": "definition"
+  },
+  {
+   "kind": "request",
+   "path": "src/components/FocusContext.ts",
+   "start": [
+    8,
+    15
+   ],
+   "text": "hover"
+  },
+  {
+   "kind": "request",
+   "path": "src/dom.ts",
+   "start": [
+    163,
+    9
+   ],
+   "text": "typeDefinition"
+  },
+  {
+   "kind": "request",
+   "path": "src/dom.ts",
+   "start": [
+    177,
+    38
+   ],
+   "text": "documentHighlight"
+  },
+  {
+   "kind": "request",
+   "path": "src/components/FocusContext.ts",
+   "start": [
+    24,
+    5
+   ],
+   "text": "references"
+  }
+ ],
+ "case": {
+  "chain_step": 0,
+  "families": [],
+  "family": "H8",
+  "history_index": 11,
+  "history_seed": 1012,
+  "mode": "fresh",
+  "note": "after test/colon-colors.tsx: insert '// ' on line 32 and its inverse, 5 requests in a shuffled order: definition@src/dom.ts:140:9, hover@src/components/FocusContext.ts:8:15, typeDefinition@src/dom.ts:163:9, documentHighlight@src/dom.ts:177:38, references@src/components/FocusContext.ts:24:5",
+  "seed": 1,
+  "timing": "race0"
+ },
+ "shape": "inlayHint:changed",
+ "signature": "ts6|r1_history|inlayHint:changed",
+ "expected": [
+  [
+   92,
+   23,
+   ": (nodeName: ElementNames) => DOMElement"
+  ],
+  [
+   105,
+   32,
+   "measureFunc:"
+  ],
+  [
+   105,
+   53,
+   "thisArg:"
+  ],
+  [
+   111,
+   28,
+   ": (node: DOMElement, childNode: DOMElement) => void"
+  ],
+  [
+   116,
+   18,
+   "node:"
+  ],
+  [
+   116,
+   40,
+   "removeNode:"
+  ],
+  [
+   120,
+   22,
+   "...items:"
+  ],
+  [
+   124,
+   3,
+   "child:"
+  ],
+  [
+   125,
+   3,
+   "index:"
+  ],
+  [
+   130,
+   18,
+   "node:"
+  ],
+  [
+   134,
+   29,
+   ": (node: DOMElement, newChildNode: DOMElement | TextNode, beforeChildNode: DOMElement | TextNode) => void"
+  ],
+  [
+   140,
+   18,
+   "node:"
+  ],
+  [
+   140,
+   43,
+   "removeNode:"
+  ],
+  [
+   145,
+   12,
+   ": number"
+  ],
+  [
+   145,
+   39,
+   "searchElement:"
+  ],
+  [
+   147,
+   25,
+   "start:"
+  ],
+  [
+   147,
+   32,
+   "deleteCount:"
+  ],
+  [
+   147,
+   35,
+   "...items:"
+  ],
+  [
+   149,
+   30,
+   "child:"
+  ],
+  [
+   149,
+   53,
+   "index:"
+  ],
+  [
+   152,
+   23,
+   "...items:"
+  ],
+  [
+   156,
+   4,
+   "child:"
+  ],
+  [
+   157,
+   4,
+   "index:"
+  ],
+  [
+   163,
+   18,
+   "node:"
+  ],
+  [
+   167,
+   28,
+   ": (node: DOMElement, removeNode: DOMElement | TextNode) => void"
+  ],
+  [
+   172,
+   47,
+   "child:"
+  ],
+  [
+   177,
+   12,
+   ": number"
+  ],
+  [
+   177,
+   39,
+   "searchElement:"
+  ],
+  [
+   179,
+   25,
+   "start:"
+  ],
+  [
+   179,
+   32,
+   "deleteCount:"
+  ],
+  [
+   183,
+   18,
+   "node:"
+  ],
+  [
+   187,
+   22,
+   ": (node: DOMElement | TextNode) => void"
+  ],
+  [
+   192,
+   20,
+   "node:"
+  ],
+  [
+   207,
+   28,
+   ": (removeNode: DOMElement | TextNode) => void"
+  ],
+  [
+   210,
+   18,
+   "node:"
+  ],
+  [
+   213,
+   25,
+   ": (node: DOMElement, key: string, value: DOMNodeAttribute) => void"
+  ],
+  [
+   229,
+   25,
+   ": (node: DOMElement, transform: OutputTransformer | undefined) => void"
+  ],
+  [
+   237,
+   18,
+   "node:"
+  ],
+  [
+   241,
+   21,
+   ": (node: DOMElement | TextNode, style?: Styles | undefined) => void"
+  ],
+  [
+   251,
+   27,
+   ": (text: string) => TextNode"
+  ],
+  [
+   260,
+   18,
+   "node:"
+  ],
+  [
+   260,
+   24,
+   "text:"
+  ],
+  [
+   265,
+   21,
+   ": (node: DOMElement | TextNode, width: number, widthMode: MeasureMode) => { width: number; height: number }"
+  ],
+  [
+   270,
+   11,
+   ": string"
+  ],
+  [
+   271,
+   63,
+   "node:"
+  ],
+  [
+   273,
+   17,
+   ": Output"
+  ],
+  [
+   273,
+   32,
+   "text:"
+  ],
+  [
+   281,
+   15,
+   ": 'wrap' | 'hard' | 'truncate-end' | 'truncate' | 'truncate-middle' | 'truncate-start'"
+  ],
+  [
+   282,
+   18,
+   ": string"
+  ],
+  [
+   282,
+   30,
+   "text:"
+  ],
+  [
+   282,
+   36,
+   "maxWidth:"
+  ],
+  [
+   282,
+   43,
+   "wrapType:"
+  ],
+  [
+   283,
+   24,
+   ": Output"
+  ],
+  [
+   283,
+   39,
+   "text:"
+  ],
+  [
+   286,
+   25,
+   "searchString:"
+  ],
+  [
+   293,
+   25,
+   ": (node?: DOMElement | TextNode | undefined) => Node | undefined"
+  ],
+  [
+   298,
+   45,
+   "node:"
+  ],
+  [
+   301,
+   21,
+   ": (node?: DOMElement | TextNode | undefined) => void"
+  ],
+  [
+   303,
+   15,
+   ": Node | undefined"
+  ],
+  [
+   303,
+   38,
+   "node:"
+  ],
+  [
+   307,
+   26,
+   ": (node: DOMElement, isHidden: boolean) => void"
+  ],
+  [
+   310,
+   2,
+   "display:"
+  ],
+  [
+   316,
+   18,
+   "node:"
+  ],
+  [
+   320,
+   29,
+   ": (node: TextNode, text: string) => void"
+  ],
+  [
+   322,
+   16,
+   "value:"
+  ],
+  [
+   326,
+   17,
+   "node:"
+  ],
+  [
+   329,
+   30,
+   ": (rootNode: DOMElement, listener: LayoutListener) => () => void"
+  ],
+  [
+   334,
+   11,
+   ": void"
+  ],
+  [
+   338,
+   39,
+   "value:"
+  ],
+  [
+   340,
+   10,
+   ": void"
+  ],
+  [
+   341,
+   44,
+   "value:"
+  ],
+  [
+   345,
+   32,
+   ": (rootNode: DOMElement) => void"
+  ]
+ ],
+ "actual": [
+  [
+   92,
+   23,
+   ": (nodeName: ElementNames) => DOMElement"
+  ],
+  [
+   105,
+   32,
+   "measureFunc:"
+  ],
+  [
+   105,
+   53,
+   "thisArg:"
+  ],
+  [
+   111,
+   28,
+   ": (node: DOMElement, childNode: DOMElement) => void"
+  ],
+  [
+   116,
+   18,
+   "node:"
+  ],
+  [
+   116,
+   40,
+   "removeNode:"
+  ],
+  [
+   120,
+   22,
+   "...items:"
+  ],
+  [
+   124,
+   3,
+   "child:"
+  ],
+  [
+   125,
+   3,
+   "index:"
+  ],
+  [
+   130,
+   18,
+   "node:"
+  ],
+  [
+   134,
+   29,
+   ": (node: DOMElement, newChildNode: TextNode | DOMElement, beforeChildNode: TextNode | DOMElement) => void"
+  ],
+  [
+   140,
+   18,
+   "node:"
+  ],
+  [
+   140,
+   43,
+   "removeNode:"
+  ],
+  [
+   145,
+   12,
+   ": number"
+  ],
+  [
+   145,
+   39,
+   "searchElement:"
+  ],
+  [
+   147,
+   25,
+   "start:"
+  ],
+  [
+   147,
+   32,
+   "deleteCount:"
+  ],
+  [
+   147,
+   35,
+   "...items:"
+  ],
+  [
+   149,
+   30,
+   "child:"
+  ],
+  [
+   149,
+   53,
+   "index:"
+  ],
+  [
+   152,
+   23,
+   "...items:"
+  ],
+  [
+   156,
+   4,
+   "child:"
+  ],
+  [
+   157,
+   4,
+   "index:"
+  ],
+  [
+   163,
+   18,
+   "node:"
+  ],
+  [
+   167,
+   28,
+   ": (node: DOMElement, removeNode: TextNode | DOMElement) => void"
+  ],
+  [
+   172,
+   47,
+   "child:"
+  ],
+  [
+   177,
+   12,
+   ": number"
+  ],
+  [
+   177,
+   39,
+   "searchElement:"
+  ],
+  [
+   179,
+   25,
+   "start:"
+  ],
+  [
+   179,
+   32,
+   "deleteCount:"
+  ],
+  [
+   183,
+   18,
+   "node:"
+  ],
+  [
+   187,
+   22,
+   ": (node: TextNode | DOMElement) => void"
+  ],
+  [
+   192,
+   20,
+   "node:"
+  ],
+  [
+   207,
+   28,
+   ": (removeNode: TextNode | DOMElement) => void"
+  ],
+  [
+   210,
+   18,
+   "node:"
+  ],
+  [
+   213,
+   25,
+   ": (node: DOMElement, key: string, value: DOMNodeAttribute) => void"
+  ],
+  [
+   229,
+   25,
+   ": (node: DOMElement, transform: OutputTransformer | undefined) => void"
+  ],
+  [
+   237,
+   18,
+   "node:"
+  ],
+  [
+   241,
+   21,
+   ": (node: TextNode | DOMElement, style?: Styles | undefined) => void"
+  ],
+  [
+   251,
+   27,
+   ": (text: string) => TextNode"
+  ],
+  [
+   260,
+   18,
+   "node:"
+  ],
+  [
+   260,
+   24,
+   "text:"
+  ],
+  [
+   265,
+   21,
+   ": (node: TextNode | DOMElement, width: number, widthMode: MeasureMode) => { width: number; height: number }"
+  ],
+  [
+   270,
+   11,
+   ": string"
+  ],
+  [
+   271,
+   63,
+   "node:"
+  ],
+  [
+   273,
+   17,
+   ": Output"
+  ],
+  [
+   273,
+   32,
+   "text:"
+  ],
+  [
+   281,
+   15,
+   ": 'wrap' | 'hard' | 'truncate-end' | 'truncate' | 'truncate-middle' | 'truncate-start'"
+  ],
+  [
+   282,
+   18,
+   ": string"
+  ],
+  [
+   282,
+   30,
+   "text:"
+  ],
+  [
+   282,
+   36,
+   "maxWidth:"
+  ],
+  [
+   282,
+   43,
+   "wrapType:"
+  ],
+  [
+   283,
+   24,
+   ": Output"
+  ],
+  [
+   283,
+   39,
+   "text:"
+  ],
+  [
+   286,
+   25,
+   "searchString:"
+  ],
+  [
+   293,
+   25,
+   ": (node?: TextNode | DOMElement | undefined) => Node | undefined"
+  ],
+  [
+   298,
+   45,
+   "node:"
+  ],
+  [
+   301,
+   21,
+   ": (node?: TextNode | DOMElement | undefined) => void"
+  ],
+  [
+   303,
+   15,
+   ": Node | undefined"
+  ],
+  [
+   303,
+   38,
+   "node:"
+  ],
+  [
+   307,
+   26,
+   ": (node: DOMElement, isHidden: boolean) => void"
+  ],
+  [
+   310,
+   2,
+   "display:"
+  ],
+  [
+   316,
+   18,
+   "node:"
+  ],
+  [
+   320,
+   29,
+   ": (node: TextNode, text: string) => void"
+  ],
+  [
+   322,
+   16,
+   "value:"
+  ],
+  [
+   326,
+   17,
+   "node:"
+  ],
+  [
+   329,
+   30,
+   ": (rootNode: DOMElement, listener: LayoutListener) => () => void"
+  ],
+  [
+   334,
+   11,
+   ": void"
+  ],
+  [
+   338,
+   39,
+   "value:"
+  ],
+  [
+   340,
+   10,
+   ": void"
+  ],
+  [
+   341,
+   44,
+   "value:"
+  ],
+  [
+   345,
+   32,
+   ": (rootNode: DOMElement) => void"
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "H8: after test/colon-colors.tsx: insert '// ' on line 32 and its inverse, 5 requests in a shuffled order: definition@src/dom.ts:140:9, hover@src/components/FocusContext.ts:8:15, typeDefinition@src/dom.ts:; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 84s",
+ "violation": {
+  "oracle": "r1_history",
+  "server": "ts6-6.0.3",
+  "project": "vadimdemedes/ink@02ae1e59e7c2",
+  "key": {
+   "method": "inlayHint",
+   "path": "src/dom.ts",
+   "line": -1,
+   "character": -1,
+   "extra": ""
+  },
+  "expected": [
+   [
+    92,
+    23,
+    ": (nodeName: ElementNames) => DOMElement"
+   ],
+   [
+    105,
+    32,
+    "measureFunc:"
+   ],
+   [
+    105,
+    53,
+    "thisArg:"
+   ],
+   [
+    111,
+    28,
+    ": (node: DOMElement, childNode: DOMElement) => void"
+   ],
+   [
+    116,
+    18,
+    "node:"
+   ],
+   [
+    116,
+    40,
+    "removeNode:"
+   ],
+   [
+    120,
+    22,
+    "...items:"
+   ],
+   [
+    124,
+    3,
+    "child:"
+   ],
+   [
+    125,
+    3,
+    "index:"
+   ],
+   [
+    130,
+    18,
+    "node:"
+   ],
+   [
+    134,
+    29,
+    ": (node: DOMElement, newChildNode: DOMElement | TextNode, beforeChildNode: DOMElement | TextNode) => void"
+   ],
+   [
+    140,
+    18,
+    "node:"
+   ],
+   [
+    140,
+    43,
+    "removeNode:"
+   ],
+   [
+    145,
+    12,
+    ": number"
+   ],
+   [
+    145,
+    39,
+    "searchElement:"
+   ],
+   [
+    147,
+    25,
+    "start:"
+   ],
+   [
+    147,
+    32,
+    "deleteCount:"
+   ],
+   [
+    147,
+    35,
+    "...items:"
+   ],
+   [
+    149,
+    30,
+    "child:"
+   ],
+   [
+    149,
+    53,
+    "index:"
+   ],
+   [
+    152,
+    23,
+    "...items:"
+   ],
+   [
+    156,
+    4,
+    "child:"
+   ],
+   [
+    157,
+    4,
+    "index:"
+   ],
+   [
+    163,
+    18,
+    "node:"
+   ],
+   [
+    167,
+    28,
+    ": (node: DOMElement, removeNode: DOMElement | TextNode) => void"
+   ],
+   [
+    172,
+    47,
+    "child:"
+   ],
+   [
+    177,
+    12,
+    ": number"
+   ],
+   [
+    177,
+    39,
+    "searchElement:"
+   ],
+   [
+    179,
+    25,
+    "start:"
+   ],
+   [
+    179,
+    32,
+    "deleteCount:"
+   ],
+   [
+    183,
+    18,
+    "node:"
+   ],
+   [
+    187,
+    22,
+    ": (node: DOMElement | TextNode) => void"
+   ],
+   [
+    192,
+    20,
+    "node:"
+   ],
+   [
+    207,
+    28,
+    ": (removeNode: DOMElement | TextNode) => void"
+   ],
+   [
+    210,
+    18,
+    "node:"
+   ],
+   [
+    213,
+    25,
+    ": (node: DOMElement, key: string, value: DOMNodeAttribute) => void"
+   ],
+   [
+    229,
+    25,
+    ": (node: DOMElement, transform: OutputTransformer | undefined) => void"
+   ],
+   [
+    237,
+    18,
+    "node:"
+   ],
+   [
+    241,
+    21,
+    ": (node: DOMElement | TextNode, style?: Styles | undefined) => void"
+   ],
+   [
+    251,
+    27,
+    ": (text: string) => TextNode"
+   ],
+   [
+    260,
+    18,
+    "node:"
+   ],
+   [
+    260,
+    24,
+    "text:"
+   ],
+   [
+    265,
+    21,
+    ": (node: DOMElement | TextNode, width: number, widthMode: MeasureMode) => { width: number; height: number }"
+   ],
+   [
+    270,
+    11,
+    ": string"
+   ],
+   [
+    271,
+    63,
+    "node:"
+   ],
+   [
+    273,
+    17,
+    ": Output"
+   ],
+   [
+    273,
+    32,
+    "text:"
+   ],
+   [
+    281,
+    15,
+    ": 'wrap' | 'hard' | 'truncate-end' | 'truncate' | 'truncate-middle' | 'truncate-start'"
+   ],
+   [
+    282,
+    18,
+    ": string"
+   ],
+   [
+    282,
+    30,
+    "text:"
+   ],
+   [
+    282,
+    36,
+    "maxWidth:"
+   ],
+   [
+    282,
+    43,
+    "wrapType:"
+   ],
+   [
+    283,
+    24,
+    ": Output"
+   ],
+   [
+    283,
+    39,
+    "text:"
+   ],
+   [
+    286,
+    25,
+    "searchString:"
+   ],
+   [
+    293,
+    25,
+    ": (node?: DOMElement | TextNode | undefined) => Node | undefined"
+   ],
+   [
+    298,
+    45,
+    "node:"
+   ],
+   [
+    301,
+    21,
+    ": (node?: DOMElement | TextNode | undefined) => void"
+   ],
+   [
+    303,
+    15,
+    ": Node | undefined"
+   ],
+   [
+    303,
+    38,
+    "node:"
+   ],
+   [
+    307,
+    26,
+    ": (node: DOMElement, isHidden: boolean) => void"
+   ],
+   [
+    310,
+    2,
+    "display:"
+   ],
+   [
+    316,
+    18,
+    "node:"
+   ],
+   [
+    320,
+    29,
+    ": (node: TextNode, text: string) => void"
+   ],
+   [
+    322,
+    16,
+    "value:"
+   ],
+   [
+    326,
+    17,
+    "node:"
+   ],
+   [
+    329,
+    30,
+    ": (rootNode: DOMElement, listener: LayoutListener) => () => void"
+   ],
+   [
+    334,
+    11,
+    ": void"
+   ],
+   [
+    338,
+    39,
+    "value:"
+   ],
+   [
+    340,
+    10,
+    ": void"
+   ],
+   [
+    341,
+    44,
+    "value:"
+   ],
+   [
+    345,
+    32,
+    ": (rootNode: DOMElement) => void"
+   ]
+  ],
+  "actual": [
+   [
+    92,
+    23,
+    ": (nodeName: ElementNames) => DOMElement"
+   ],
+   [
+    105,
+    32,
+    "measureFunc:"
+   ],
+   [
+    105,
+    53,
+    "thisArg:"
+   ],
+   [
+    111,
+    28,
+    ": (node: DOMElement, childNode: DOMElement) => void"
+   ],
+   [
+    116,
+    18,
+    "node:"
+   ],
+   [
+    116,
+    40,
+    "removeNode:"
+   ],
+   [
+    120,
+    22,
+    "...items:"
+   ],
+   [
+    124,
+    3,
+    "child:"
+   ],
+   [
+    125,
+    3,
+    "index:"
+   ],
+   [
+    130,
+    18,
+    "node:"
+   ],
+   [
+    134,
+    29,
+    ": (node: DOMElement, newChildNode: TextNode | DOMElement, beforeChildNode: TextNode | DOMElement) => void"
+   ],
+   [
+    140,
+    18,
+    "node:"
+   ],
+   [
+    140,
+    43,
+    "removeNode:"
+   ],
+   [
+    145,
+    12,
+    ": number"
+   ],
+   [
+    145,
+    39,
+    "searchElement:"
+   ],
+   [
+    147,
+    25,
+    "start:"
+   ],
+   [
+    147,
+    32,
+    "deleteCount:"
+   ],
+   [
+    147,
+    35,
+    "...items:"
+   ],
+   [
+    149,
+    30,
+    "child:"
+   ],
+   [
+    149,
+    53,
+    "index:"
+   ],
+   [
+    152,
+    23,
+    "...items:"
+   ],
+   [
+    156,
+    4,
+    "child:"
+   ],
+   [
+    157,
+    4,
+    "index:"
+   ],
+   [
+    163,
+    18,
+    "node:"
+   ],
+   [
+    167,
+    28,
+    ": (node: DOMElement, removeNode: TextNode | DOMElement) => void"
+   ],
+   [
+    172,
+    47,
+    "child:"
+   ],
+   [
+    177,
+    12,
+    ": number"
+   ],
+   [
+    177,
+    39,
+    "searchElement:"
+   ],
+   [
+    179,
+    25,
+    "start:"
+   ],
+   [
+    179,
+    32,
+    "deleteCount:"
+   ],
+   [
+    183,
+    18,
+    "node:"
+   ],
+   [
+    187,
+    22,
+    ": (node: TextNode | DOMElement) => void"
+   ],
+   [
+    192,
+    20,
+    "node:"
+   ],
+   [
+    207,
+    28,
+    ": (removeNode: TextNode | DOMElement) => void"
+   ],
+   [
+    210,
+    18,
+    "node:"
+   ],
+   [
+    213,
+    25,
+    ": (node: DOMElement, key: string, value: DOMNodeAttribute) => void"
+   ],
+   [
+    229,
+    25,
+    ": (node: DOMElement, transform: OutputTransformer | undefined) => void"
+   ],
+   [
+    237,
+    18,
+    "node:"
+   ],
+   [
+    241,
+    21,
+    ": (node: TextNode | DOMElement, style?: Styles | undefined) => void"
+   ],
+   [
+    251,
+    27,
+    ": (text: string) => TextNode"
+   ],
+   [
+    260,
+    18,
+    "node:"
+   ],
+   [
+    260,
+    24,
+    "text:"
+   ],
+   [
+    265,
+    21,
+    ": (node: TextNode | DOMElement, width: number, widthMode: MeasureMode) => { width: number; height: number }"
+   ],
+   [
+    270,
+    11,
+    ": string"
+   ],
+   [
+    271,
+    63,
+    "node:"
+   ],
+   [
+    273,
+    17,
+    ": Output"
+   ],
+   [
+    273,
+    32,
+    "text:"
+   ],
+   [
+    281,
+    15,
+    ": 'wrap' | 'hard' | 'truncate-end' | 'truncate' | 'truncate-middle' | 'truncate-start'"
+   ],
+   [
+    282,
+    18,
+    ": string"
+   ],
+   [
+    282,
+    30,
+    "text:"
+   ],
+   [
+    282,
+    36,
+    "maxWidth:"
+   ],
+   [
+    282,
+    43,
+    "wrapType:"
+   ],
+   [
+    283,
+    24,
+    ": Output"
+   ],
+   [
+    283,
+    39,
+    "text:"
+   ],
+   [
+    286,
+    25,
+    "searchString:"
+   ],
+   [
+    293,
+    25,
+    ": (node?: TextNode | DOMElement | undefined) => Node | undefined"
+   ],
+   [
+    298,
+    45,
+    "node:"
+   ],
+   [
+    301,
+    21,
+    ": (node?: TextNode | DOMElement | undefined) => void"
+   ],
+   [
+    303,
+    15,
+    ": Node | undefined"
+   ],
+   [
+    303,
+    38,
+    "node:"
+   ],
+   [
+    307,
+    26,
+    ": (node: DOMElement, isHidden: boolean) => void"
+   ],
+   [
+    310,
+    2,
+    "display:"
+   ],
+   [
+    316,
+    18,
+    "node:"
+   ],
+   [
+    320,
+    29,
+    ": (node: TextNode, text: string) => void"
+   ],
+   [
+    322,
+    16,
+    "value:"
+   ],
+   [
+    326,
+    17,
+    "node:"
+   ],
+   [
+    329,
+    30,
+    ": (rootNode: DOMElement, listener: LayoutListener) => () => void"
+   ],
+   [
+    334,
+    11,
+    ": void"
+   ],
+   [
+    338,
+    39,
+    "value:"
+   ],
+   [
+    340,
+    10,
+    ": void"
+   ],
+   [
+    341,
+    44,
+    "value:"
+   ],
+   [
+    345,
+    32,
+    ": (rootNode: DOMElement) => void"
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "src/components/FocusContext.ts"
+   },
+   {
+    "kind": "open",
+    "path": "src/dom.ts"
+   },
+   {
+    "kind": "open",
+    "path": "test/colon-colors.tsx"
+   },
+   {
+    "kind": "change",
+    "path": "test/colon-colors.tsx",
+    "start": [
+     32,
+     12
+    ],
+    "end": [
+     32,
+     12
+    ],
+    "text": "// "
+   },
+   {
+    "kind": "change",
+    "path": "test/colon-colors.tsx",
+    "start": [
+     32,
+     12
+    ],
+    "end": [
+     32,
+     15
+    ]
+   },
+   {
+    "kind": "request",
+    "path": "src/dom.ts",
+    "start": [
+     140,
+     9
+    ],
+    "text": "definition"
+   },
+   {
+    "kind": "request",
+    "path": "src/components/FocusContext.ts",
+    "start": [
+     8,
+     15
+    ],
+    "text": "hover"
+   },
+   {
+    "kind": "request",
+    "path": "src/dom.ts",
+    "start": [
+     163,
+     9
+    ],
+    "text": "typeDefinition"
+   },
+   {
+    "kind": "request",
+    "path": "src/dom.ts",
+    "start": [
+     177,
+     38
+    ],
+    "text": "documentHighlight"
+   },
+   {
+    "kind": "request",
+    "path": "src/components/FocusContext.ts",
+    "start": [
+     24,
+     5
+    ],
+    "text": "references"
+   }
+  ],
+  "detail": "{\"case\": {\"chain_step\": 0, \"families\": [], \"family\": \"H8\", \"history_index\": 11, \"history_seed\": 1012, \"mode\": \"fresh\", \"note\": \"after test/colon-colors.tsx: insert '// ' on line 32 and its inverse, 5 requests in a shuffled order: definition@src/dom.ts:140:9, hover@src/components/FocusContext.ts:8:15, typeDefinition@src/dom.ts:163:9, documentHighlight@src/dom.ts:177:38, references@src/components/FocusContext.ts:24:5\", \"seed\": 1, \"timing\": \"race0\"}, \"note\": \"H8: after test/colon-colors.tsx: insert '// ' on line 32 and its inverse, 5 requests in a shuffled order: definition@src/dom.ts:140:9, hover@src/components/FocusContext.ts:8:15, typeDefinition@src/dom.ts:; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 84s\", \"shape\": \"inlayHint:changed\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "ts6|r1_history|inlayHint:changed",
+  "run_id": "df02b705037e"
+ },
+ "replay_logs": [
+  "logs/ts6-6.0.3-df02b705037e-replay-baseline-20261118-062157-f2d431.jsonl.gz",
+  "logs/ts6-6.0.3-df02b705037e-replay-control-20261118-062157-1f2ce1.jsonl.gz",
+  "logs/ts6-6.0.3-df02b705037e-replay-history-20261118-062213-34d42d.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

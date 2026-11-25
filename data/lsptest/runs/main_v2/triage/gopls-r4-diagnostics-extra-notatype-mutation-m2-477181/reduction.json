@@ -1,0 +1,42 @@
+{
+ "vid": "508981c8d2e2-v00",
+ "ops_before": 3,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 2,
+ "cache_hits": 0,
+ "reduce_seconds": 4.898,
+ "budget_exhausted": false,
+ "probe_log": [
+  [
+   2,
+   false
+  ],
+  [
+   2,
+   false
+  ]
+ ],
+ "logs": [
+  "gopls-v0.23.0-tr477181-r4-replay-baseline-20261119-000901-ced808.jsonl.gz",
+  "gopls-v0.23.0-tr477181-r4-replay-case-20261119-000851-62da34.jsonl.gz",
+  "gopls-v0.23.0-tr477181-r4-replay-control-20261119-000906-3300f5.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [],
+  "actual": [
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "NotAType",
+    "compiler",
+    "Conttext (local variable) is not a type"
+   ]
+  ]
+ },
+ "ops_after": 3,
+ "total_seconds": 79.5
+}

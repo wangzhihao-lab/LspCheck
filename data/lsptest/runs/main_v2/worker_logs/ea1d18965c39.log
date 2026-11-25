@@ -1,0 +1,3 @@
+2026-11-18 12:57:26,413 INFO campaign_run run ea1d18965c39: r5_transforms on ts6 6.0.3, solidjs/solid@4b62bc29e04b seed 2 settled, targets ['examples/rendering/shared/src/router.tsx', 'packages/signals/tests/latest-plain-write-purity.test.ts', 'packages/web/test/server/server-functions-decoder-rejection-ownership.spec.tsx']
+2026-11-18 13:09:01,333 INFO campaign_run run ea1d18965c39: 0 candidate(s) in 695s; confirming
+2026-11-18 13:09:01,334 INFO campaign_run run ea1d18965c39 finished: ok, 0 confirmed of 0 candidate(s), 695s

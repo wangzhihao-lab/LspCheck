@@ -1,0 +1,3 @@
+2026-09-24 00:38:57,736 INFO campaign_run run 1062b9ab3678: r0_crash on pyright 1.1.414, browser-use/browser-use@d8110c5ff87c seed 1 settled, targets ['browser_use/llm/openrouter/chat.py', 'examples/getting_started/01_basic_search.py', 'tests/ci/models/model_test_helper.py']
+2026-09-24 00:39:26,058 INFO campaign_run run 1062b9ab3678: 0 candidate(s) in 28s; confirming
+2026-09-24 00:39:26,059 INFO campaign_run run 1062b9ab3678 finished: ok, 0 confirmed of 0 candidate(s), 28s

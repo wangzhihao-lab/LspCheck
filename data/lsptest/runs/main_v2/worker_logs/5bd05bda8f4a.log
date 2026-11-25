@@ -1,0 +1,3 @@
+2026-11-18 09:11:28,255 INFO campaign_run run 5bd05bda8f4a: r3_routes on gopls v0.23.0, evanw/esbuild@f6058f8364fe seed 1 settled, targets ['internal/compat/js_table.go', 'internal/fs/fs_real.go', 'internal/js_ast/js_ast_helpers.go']
+2026-11-18 09:12:54,917 INFO campaign_run run 5bd05bda8f4a: 3 candidate(s) in 87s; confirming
+2026-11-18 09:12:54,918 INFO campaign_run run 5bd05bda8f4a finished: ok, 0 confirmed of 3 candidate(s), 87s

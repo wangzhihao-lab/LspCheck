@@ -1,0 +1,3 @@
+2026-11-18 20:43:37,843 INFO campaign_run run c9399d477058: r2_handles on gopls v0.23.0, docker/compose@c6dffb26bdfd seed 2 settled, targets ['cmd/cmdtrace/cmd_span_test.go', 'pkg/compose/logs.go', 'pkg/e2e/compose_run_build_once_test.go']
+2026-11-18 20:44:16,052 INFO campaign_run run c9399d477058: 0 candidate(s) in 38s; confirming
+2026-11-18 20:44:16,053 INFO campaign_run run c9399d477058 finished: ok, 0 confirmed of 0 candidate(s), 38s

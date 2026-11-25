@@ -1,0 +1,5 @@
+<scheduler message>
+2026-11-20 18:56:31,005 INFO C33 ts6-r1-codeaction-key-lost-h8-3e0e0f orig: reproduced 3/3, differed 3, settled 3, control stable 3 
+2026-11-20 18:57:34,392 INFO C33 ts6-r1-codeaction-key-lost-h8-3e0e0f first-only: reproduced 0/3, differed 0, settled 3, control stable 3 
+2026-11-20 18:58:43,756 INFO C33 ts6-r1-codeaction-key-lost-h8-3e0e0f settle: reproduced 0/3, differed 0, settled 3, control stable 3 
+data/lsptest/runs/main_v2/evidence/root_cause_replays_race.json

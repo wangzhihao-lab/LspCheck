@@ -1,0 +1,102 @@
+{
+ "schema": 1,
+ "id": "rust-analyzer-17139",
+ "meta": {
+  "server": "rust-analyzer",
+  "kind": "rust-analyzer",
+  "number": 17139,
+  "url": "https://github.com/rust-lang/rust-analyzer/issues/17139",
+  "title": "removing unused imports generates invalid `use module_name::self`",
+  "oracle_class": "R4",
+  "subtype": "quickfix",
+  "fix_ref": "rust-lang/rust-analyzer#17140 (handle {self} when removing unused imports)",
+  "fix_shas": [
+   "e3e22c67e06252b3a81910969133b5fa40ffcaa1"
+  ],
+  "pre_version": "2024-05-20",
+  "post_version": "2024-05-27",
+  "pre_build": "2024-05-20",
+  "post_build": "2024-05-27",
+  "build_notes": "GitHub release assets rust-analyzer-aarch64-apple-darwin.gz of the weekly tags 2024-05-20 and 2024-05-27; git tag --contains puts the fix first in 2024-05-27. The sysroot is the local rustup toolchain (rustc 1.98.1).",
+  "effort_minutes": 12,
+  "notes": "Removing the unused X from 'use super::inner::{self, X};' left the single-element tree {self}, whose braces were then removed as unnecessary, printing 'super::inner:self'. Attempt 1 (parse errors) did not see the wrong edit: the pre build writes 'use super::inner::self;', which parses; attempt 2 compares the edit with the fix's regression-test golden (specification probe)."
+ },
+ "language": "rust",
+ "settings": {},
+ "settings_note": "The issue names no settings; the session keeps checkOnSave off (native analysis only).",
+ "session": {
+  "settle_timeout_s": 240,
+  "request_timeout_s": 60,
+  "pull_diagnostics": false
+ },
+ "files": [
+  {
+   "path": "src/lib.rs",
+   "provenance": "issue-adapted",
+   "source": "issue body, first code block",
+   "note": "verbatim with the cursor marker $0 removed"
+  },
+  {
+   "path": "Cargo.toml",
+   "provenance": "scaffold",
+   "source": "",
+   "note": "a library crate around the snippet (package name, version, edition 2021)"
+  }
+ ],
+ "repro": {
+  "attempt": 2,
+  "timing": "settled",
+  "steps": "Open src/lib.rs. With the cursor at the end of the use tree 'use super::inner::{self, X}' (line 7, character 31, the issue's $0) apply the assist that removes the unused imports. Reported: 'use super::inner:self;', which is invalid; expected 'use super::inner;'. Probe (specification, attempt 2): the edited src/lib.rs must equal the fix's regression-test golden for the issue's code, which keeps the braces: 'use super::inner::{self};'.",
+  "ops": [
+   {
+    "kind": "open",
+    "path": "src/lib.rs"
+   }
+  ],
+  "probe": {
+   "type": "edit_text_differs",
+   "params": {
+    "edit": {
+     "via": "code_action",
+     "path": "src/lib.rs",
+     "range": [
+      7,
+      31,
+      7,
+      31
+     ],
+     "title_re": "(?i)remove (all )?(the )?unused imports",
+     "missing": "invalid"
+    },
+    "expected": {
+     "path": "src/lib.rs",
+     "text": "\nmod inner {\n    pub struct X();\n    pub struct Y();\n}\n\nmod z {\n    use super::inner::{self};\n\n    fn f() {\n        let y = inner::Y();\n    }\n}\n\n",
+     "source": "crates/ide-assists/src/handlers/remove_unused_imports.rs@e3e22c67 (test remove_unused_fixes_nested_self, the issue's code: expected 'use super::inner::{self};')"
+    }
+   }
+  }
+ },
+ "attempts": [
+  {
+   "attempt": 1,
+   "timing": "settled",
+   "probe": "edit_breaks_syntax",
+   "summary": "'Remove all the unused imports' at the use tree, checked for new parse errors: not-reproduced-pre. The pre build 2024-05-20 did produce the wrong edit, but as 'use super::inner::self;' (two colons, not the reporter's 'inner:self'), which parses (rustc rejects it only in name resolution, E0429 'self imports are only allowed within a { } list', and rust-analyzer reports nothing); the post build 2024-05-27 produced 'use super::inner::{self};'. The parser-based probe cannot see this wrong edit.",
+   "verdict": "not-reproduced-pre (wrong edit parses)",
+   "params": {
+    "edit": {
+     "via": "code_action",
+     "path": "src/lib.rs",
+     "range": [
+      7,
+      31,
+      7,
+      31
+     ],
+     "title_re": "(?i)remove (all )?(the )?unused imports",
+     "missing": "invalid"
+    }
+   }
+  }
+ ]
+}

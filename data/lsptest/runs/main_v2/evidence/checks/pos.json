@@ -1,0 +1,289 @@
+{
+ "gopls-r5-foldingrange-changed-t4-b07c86": {
+  "path": "internal/tracing/mux.go",
+  "inserted_cr": [
+   [
+    0,
+    2
+   ]
+  ],
+  "line_count_lf": 70,
+  "line_count_lsp": 70,
+  "comment_end_from_text": [
+   14,
+   2
+  ],
+  "end_line_text": "*/",
+  "fresh_comment_fold": [
+   [
+    0,
+    2,
+    14,
+    2,
+    "comment"
+   ]
+  ],
+  "history_comment_fold": [
+   [
+    0,
+    2,
+    14,
+    1,
+    "comment"
+   ]
+  ]
+ },
+ "gopls-r5-semantictokens-changed-t4-b423af": {
+  "path": "internal/tracing/mux.go",
+  "inserted_cr": [
+   [
+    1,
+    44
+   ],
+   [
+    2,
+    0
+   ],
+   [
+    3,
+    66
+   ]
+  ],
+  "line_count_lf": 70,
+  "line_count_lsp": 70,
+  "fresh_tokens": [
+   [
+    0,
+    0,
+    2
+   ],
+   [
+    1,
+    0,
+    44
+   ],
+   [
+    3,
+    0,
+    66
+   ],
+   [
+    4,
+    0,
+    67
+   ],
+   [
+    5,
+    0,
+    42
+   ],
+   [
+    7,
+    0,
+    49
+   ],
+   [
+    9,
+    0,
+    70
+   ],
+   [
+    10,
+    0,
+    68
+   ],
+   [
+    11,
+    0,
+    75
+   ],
+   [
+    12,
+    0,
+    70
+   ],
+   [
+    13,
+    0,
+    33
+   ],
+   [
+    14,
+    0,
+    2
+   ]
+  ],
+  "case_tokens": [
+   [
+    0,
+    0,
+    2
+   ],
+   [
+    1,
+    0,
+    44
+   ],
+   [
+    13,
+    31,
+    2
+   ]
+  ],
+  "case_tokens_outside_line": [],
+  "zero_length_tokens": [],
+  "text_lines_0_19": [
+   "0: '/*'",
+   "1: '   Copyright 2023 Docker Compose CLI authors'",
+   "2: ''",
+   "3: '   Licensed under the Apache License, Version 2.0 (the \"License\");'",
+   "4: '   you may not use this file except in compliance with the License.'",
+   "5: '   You may obtain a copy of the License at'",
+   "6: ''",
+   "7: '       http://www.apache.org/licenses/LICENSE-2.0'",
+   "8: ''",
+   "9: '   Unless required by applicable law or agreed to in writing, software'",
+   "10: '   distributed under the License is distributed on an \"AS IS\" BASIS,'",
+   "11: '   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.'",
+   "12: '   See the License for the specific language governing permissions and'",
+   "13: '   limitations under the License.'",
+   "14: '*/'",
+   "15: ''",
+   "16: 'package tracing'",
+   "17: ''",
+   "18: 'import ('",
+   "19: '\\t\"context\"'"
+  ]
+ },
+ "gopls-r5-semantictokens-extra-t4-867006": {
+  "path": "cmd/ssh.go",
+  "inserted_cr": [
+   [
+    13,
+    0
+   ]
+  ],
+  "line_count_lf": 27,
+  "line_count_lsp": 27,
+  "fresh_tokens": [
+   [
+    9,
+    10,
+    5
+   ],
+   [
+    10,
+    19,
+    6
+   ],
+   [
+    10,
+    27,
+    3
+   ],
+   [
+    11,
+    10,
+    17
+   ],
+   [
+    12,
+    7,
+    17
+   ],
+   [
+    14,
+    0,
+    54
+   ],
+   [
+    15,
+    0,
+    40
+   ],
+   [
+    17,
+    0,
+    70
+   ]
+  ],
+  "case_tokens": [
+   [
+    9,
+    10,
+    5
+   ],
+   [
+    10,
+    19,
+    6
+   ],
+   [
+    10,
+    27,
+    3
+   ],
+   [
+    11,
+    10,
+    17
+   ],
+   [
+    12,
+    7,
+    17
+   ],
+   [
+    13,
+    0,
+    0
+   ],
+   [
+    14,
+    0,
+    54
+   ],
+   [
+    15,
+    0,
+    40
+   ],
+   [
+    17,
+    0,
+    70
+   ]
+  ],
+  "case_tokens_outside_line": [],
+  "zero_length_tokens": [
+   [
+    13,
+    0,
+    0,
+    "string"
+   ]
+  ],
+  "text_lines_0_19": [
+   "0: 'package cmd'",
+   "1: ''",
+   "2: 'import ('",
+   "3: '\\t\"github.com/abiosoft/colima/cmd/root\"'",
+   "4: '\\t\"github.com/spf13/cobra\"'",
+   "5: ')'",
+   "6: ''",
+   "7: '// sshCmd represents the ssh command'",
+   "8: 'var sshCmd = &cobra.Command{'",
+   "9: '\\tUse:     \"ssh\",'",
+   "10: '\\tAliases: []string{\"exec\", \"x\"},'",
+   "11: '\\tShort:   \"SSH into the VM\",'",
+   "12: '\\tLong: `SSH into the VM.'",
+   "13: ''",
+   "14: 'Appending additional command runs the command instead.'",
+   "15: \"e.g. 'colima ssh -- htop' will run htop.\"",
+   "16: ''",
+   "17: \"It is recommended to specify '--' to differentiate from colima flags.`,\"",
+   "18: '\\tRunE: func(cmd *cobra.Command, args []string) error {'",
+   "19: '\\t\\treturn newApp().SSH(args...)'"
+  ]
+ }
+}

@@ -1,0 +1,3 @@
+2026-11-18 00:46:04,066 INFO campaign_run run 88650b5b0786: r5_transforms on rust-analyzer 2026-09-21, googleworkspace/cli@a3768d0e82ad seed 1 settled, targets ['crates/google-workspace-cli/src/auth.rs', 'crates/google-workspace-cli/src/helpers/events/mod.rs', 'crates/google-workspace-cli/src/schema.rs']
+2026-11-18 00:52:18,706 INFO campaign_run run 88650b5b0786: 0 candidate(s) in 375s; confirming
+2026-11-18 00:52:18,707 INFO campaign_run run 88650b5b0786 finished: ok, 0 confirmed of 0 candidate(s), 375s

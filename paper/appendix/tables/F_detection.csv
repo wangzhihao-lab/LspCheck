@@ -1,0 +1,81 @@
+case,kind,class_subtype,spec_probe,detected,complete,oracles_pre_only,pre_only_signatures,joint_verdicts,discussed
+gopls-36824,gopls,R4 / organize,no,yes,yes,"r1_history, r4_edits",7,no 6; yes 1,no
+gopls-38424,gopls,R1 / edit-undo,no,yes,yes,r1_history,2,yes 2,no
+gopls-38732,gopls,R1 / edit-undo,no,yes,yes,r1_history,3,partial 1; yes 2,yes
+gopls-41057,gopls,R4 / format,no,no,yes,-,0,-,no
+gopls-42254,gopls,R3 / def-consistency,no,yes,yes,r3_routes,1,yes 1,no
+gopls-43144,gopls,R1 / open-close,no,yes,yes,r5_transforms,1,no 1,no
+gopls-46436,gopls,R4 / completion,no,no,yes,-,0,-,no
+gopls-46667,gopls,R1 / edit-undo,no,no,yes,-,0,-,no
+gopls-47436,gopls,R1 / edit-undo,no,no,yes,-,0,-,no
+gopls-52500,gopls,R1 / edit-undo,no,yes,yes,r1_history,11,yes 11,no
+gopls-52981,gopls,R1 / typing,no,no,yes,-,0,-,no
+gopls-54147,gopls,R1 / typing,no,no,yes,-,0,-,no
+gopls-57480,gopls,R4 / completion,no,no,yes,-,0,-,no
+gopls-60435,gopls,R3 / highlight-refs,no,yes,yes,r3_routes,1,yes 1,yes
+gopls-62141,gopls,R4 / completion,no,yes,yes,r4_edits,1,yes 1,no
+gopls-72753,gopls,R4 / completion,yes,no,yes,-,0,-,no
+gopls-73269,gopls,R4 / quickfix,no,yes,yes,r4_edits,1,yes 1,no
+gopls-73564,gopls,R4 / quickfix,no,yes,yes,r4_edits,1,yes 1,no
+gopls-73576,gopls,R4 / quickfix,no,yes,yes,"r2_handles, r4_edits",2,no 1; yes 1,no
+gopls-73661,gopls,R4 / quickfix,no,yes,yes,r4_edits,1,yes 1,no
+gopls-74708,gopls,R4 / quickfix,no,yes,yes,r4_edits,1,yes 1,no
+gopls-74709,gopls,R4 / quickfix,no,yes,yes,r4_edits,1,yes 1,no
+gopls-74938,gopls,R4 / quickfix,no,no,yes,-,0,-,no
+jdtls-2111,jdtls,R2 / stale-handle,no,yes,yes,r2_handles,1,partial 1,yes
+jdtls-3155,jdtls,R1 / dependency-edit,no,yes,no,"r0_crash, r1_history",3,no 1; partial 1; yes 1,yes
+pyright-2759,pyright,R1 / query-order,no,no,yes,-,0,-,no
+pyright-2983,pyright,R1 / query-order,no,no,yes,-,0,-,no
+pyright-3482,pyright,R1 / edit-undo,no,yes,yes,r1_history,2,yes 2,no
+pyright-3504,pyright,R1 / query-order,no,no,yes,-,0,-,no
+pyright-3585,pyright,R1 / query-order,no,no,yes,-,0,-,no
+pyright-4844,pyright,R1 / query-order,no,yes,yes,r1_history,3,partial 1; yes 2,yes
+pyright-6629,pyright,R1 / typing,no,no,yes,-,0,-,no
+pyright-7466,pyright,R3 / other-route,no,no,yes,-,0,-,no
+pyright-7516,pyright,R1 / query-order,no,no,yes,-,0,-,no
+pyright-8133,pyright,R5 / whitespace,no,no,yes,-,0,-,no
+pyright-8946,pyright,R1 / edit-undo,no,yes,yes,r1_history,7,partial 1; yes 6,yes
+pyright-9681,pyright,R5 / crlf,no,yes,yes,r5_transforms,1,yes 1,no
+rust-analyzer-10326,rust-analyzer,R4 / quickfix,no,no,no,-,0,-,no
+rust-analyzer-10618,rust-analyzer,R4 / quickfix,yes,yes,no,r4_edits,1,yes 1,no
+rust-analyzer-11897,rust-analyzer,R4 / completion,no,no,yes,-,0,-,no
+rust-analyzer-14841,rust-analyzer,R3 / def-consistency,no,yes,yes,r5_transforms,1,partial 1,no
+rust-analyzer-16556,rust-analyzer,R4 / quickfix,no,yes,yes,r4_edits,1,yes 1,no
+rust-analyzer-16858,rust-analyzer,R4 / quickfix,no,yes,yes,r4_edits,1,yes 1,no
+rust-analyzer-17139,rust-analyzer,R4 / quickfix,yes,no,yes,-,0,-,no
+rust-analyzer-17525,rust-analyzer,R4 / completion,no,yes,yes,r1_history,2,no 2,no
+rust-analyzer-17728,rust-analyzer,R4 / quickfix,no,yes,yes,r4_edits,1,yes 1,no
+rust-analyzer-18130,rust-analyzer,R4 / completion,no,yes,yes,r4_edits,1,yes 1,no
+rust-analyzer-18144,rust-analyzer,R5 / comment,no,no,yes,-,0,-,no
+rust-analyzer-18572,rust-analyzer,R4 / completion,no,yes,no,r1_history,2,no 2,no
+rust-analyzer-19694,rust-analyzer,R4 / completion,no,yes,yes,r3_routes,1,no 1,no
+rust-analyzer-19758,rust-analyzer,R4 / completion,yes,no,yes,-,0,-,no
+rust-analyzer-20588,rust-analyzer,R4 / quickfix,no,yes,yes,r1_history,2,no 2,no
+rust-analyzer-20987,rust-analyzer,R4 / completion,no,yes,yes,r4_edits,1,yes 1,no
+rust-analyzer-20998,rust-analyzer,R4 / completion,no,no,no,-,0,-,no
+rust-analyzer-21173,rust-analyzer,R1 / edit-undo,no,yes,no,"r0_crash, r1_history, r3_routes",5,no 1; yes 4,yes
+rust-analyzer-21204,rust-analyzer,R4 / quickfix,yes,no,yes,-,0,-,no
+rust-analyzer-22281,rust-analyzer,R4 / quickfix,yes,no,yes,-,0,-,no
+tsserver-29908,tsserver,R4 / quickfix,no,no,yes,-,0,-,no
+tsserver-32068,tsserver,R4 / format,no,yes,yes,r4_edits,1,yes 1,no
+tsserver-37830,tsserver,R3 / def-consistency,no,yes,yes,r3_routes,1,yes 1,no
+tsserver-41526,tsserver,R4 / quickfix,no,no,yes,-,0,-,no
+tsserver-43278,tsserver,R4 / quickfix,no,no,yes,-,0,-,no
+tsserver-44123,tsserver,R4 / quickfix,no,yes,yes,r4_edits,1,yes 1,no
+tsserver-45270,tsserver,R4 / quickfix,no,no,yes,-,0,-,no
+tsserver-45533,tsserver,R4 / completion,no,no,yes,-,0,-,no
+tsserver-46466,tsserver,R4 / quickfix,no,yes,yes,r4_edits,1,yes 1,no
+tsserver-46564,tsserver,R1 / edit-undo,no,no,yes,-,0,-,no
+tsserver-48006,tsserver,R4 / format,no,no,yes,-,0,-,no
+tsserver-49001,tsserver,R4 / quickfix,no,no,yes,-,0,-,no
+tsserver-49693,tsserver,R4 / quickfix,no,no,yes,-,0,-,no
+tsserver-50076,tsserver,R4 / format,no,no,yes,-,0,-,no
+tsserver-50188,tsserver,R4 / quickfix,no,no,yes,-,0,-,no
+tsserver-51667,tsserver,R4 / completion,no,no,yes,-,0,-,no
+tsserver-51920,tsserver,R4 / quickfix,no,yes,yes,r4_edits,1,yes 1,no
+tsserver-52274,tsserver,R4 / quickfix,no,yes,yes,r4_edits,1,yes 1,no
+tsserver-52675,tsserver,R4 / completion,no,no,yes,-,0,-,no
+tsserver-52792,tsserver,R1 / open-close,no,no,yes,-,0,-,no
+tsserver-57497,tsserver,R4 / quickfix,no,no,yes,-,0,-,no
+tsserver-59116,tsserver,R4 / quickfix,no,yes,yes,r4_edits,1,yes 1,no
+tsserver-60186,tsserver,R4 / quickfix,no,no,yes,-,0,-,no

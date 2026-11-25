@@ -1,0 +1,92 @@
+{
+ "queries": [
+  "\"rename file\" in:title repo:microsoft/pyright is:issue",
+  "definition extra repo:microsoft/pyright is:issue",
+  "definition \"rename file\" repo:microsoft/pyright is:issue",
+  "definition stale repo:microsoft/pyright is:issue"
+ ],
+ "matches": [
+  {
+   "repo": "microsoft/pyright",
+   "number": 375,
+   "title": "rename symbol only seems to apply to open files",
+   "url": "https://github.com/microsoft/pyright/issues/375",
+   "state": "closed",
+   "created": "2019-11-28",
+   "comments": 7,
+   "query": "\"rename file\" in:title repo:microsoft/pyright is:issue"
+  },
+  {
+   "repo": "microsoft/pyright",
+   "number": 10910,
+   "title": "Pyright fails on files that are too large",
+   "url": "https://github.com/microsoft/pyright/issues/10910",
+   "state": "open",
+   "created": "2025-09-09",
+   "comments": 9,
+   "query": "definition extra repo:microsoft/pyright is:issue"
+  },
+  {
+   "repo": "microsoft/pyright",
+   "number": 10252,
+   "title": "Pyright incorrectly reports incompatibleMethodOverride for property overriden with cached_property",
+   "url": "https://github.com/microsoft/pyright/issues/10252",
+   "state": "closed",
+   "created": "2025-04-04",
+   "comments": 2,
+   "query": "definition extra repo:microsoft/pyright is:issue"
+  },
+  {
+   "repo": "microsoft/pyright",
+   "number": 3013,
+   "title": "Strict Setting for Return Types",
+   "url": "https://github.com/microsoft/pyright/issues/3013",
+   "state": "closed",
+   "created": "2022-02-09",
+   "comments": 22,
+   "query": "definition extra repo:microsoft/pyright is:issue"
+  },
+  {
+   "repo": "microsoft/pyright",
+   "number": 10755,
+   "title": "PEP-728 arguments rejected from `typing_extensions.TypedDict`",
+   "url": "https://github.com/microsoft/pyright/issues/10755",
+   "state": "closed",
+   "created": "2025-07-29",
+   "comments": 2,
+   "query": "definition extra repo:microsoft/pyright is:issue"
+  },
+  {
+   "repo": "microsoft/pyright",
+   "number": 1118,
+   "title": "reportUnusedVariable ignore pattern",
+   "url": "https://github.com/microsoft/pyright/issues/1118",
+   "state": "closed",
+   "created": "2020-10-23",
+   "comments": 116,
+   "query": "definition extra repo:microsoft/pyright is:issue"
+  },
+  {
+   "repo": "microsoft/pyright",
+   "number": 4513,
+   "title": "Type of \"xstate\" could not be determined because it refers to itself",
+   "url": "https://github.com/microsoft/pyright/issues/4513",
+   "state": "closed",
+   "created": "2023-01-23",
+   "comments": 11,
+   "query": "definition \"rename file\" repo:microsoft/pyright is:issue"
+  },
+  {
+   "repo": "microsoft/pyright",
+   "number": 395,
+   "title": " 1.1.8 not work when using multi-root workspace",
+   "url": "https://github.com/microsoft/pyright/issues/395",
+   "state": "closed",
+   "created": "2019-12-06",
+   "comments": 21,
+   "query": "definition \"rename file\" repo:microsoft/pyright is:issue"
+  }
+ ],
+ "notes": [],
+ "authenticated": true
+}

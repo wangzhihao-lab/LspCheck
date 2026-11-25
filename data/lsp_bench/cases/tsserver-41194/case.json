@@ -1,0 +1,79 @@
+{
+ "schema": 1,
+ "id": "tsserver-41194",
+ "meta": {
+  "server": "tsserver",
+  "kind": "tsserver",
+  "number": 41194,
+  "url": "https://github.com/microsoft/TypeScript/issues/41194",
+  "title": "Sort import:  Uncoditionally removes JSX Fragment reference",
+  "oracle_class": "R4",
+  "subtype": "organize",
+  "fix_ref": "microsoft/TypeScript#41441 (fix(41194): ignore jsxFrag identifier in import declarations), 03877260f8, 2020-11-24; git tag --contains: first in v4.2-beta / v4.2.2",
+  "fix_shas": [
+   "03877260f8f2f597e8c451f317992417076150d1"
+  ],
+  "pre_version": "4.1.6",
+  "post_version": "4.2.2",
+  "pre_build": "4.1.6+tsls0.7.1",
+  "post_build": "4.2.2+tsls0.7.1",
+  "wrapper": "typescript-language-server@0.7.1",
+  "build_notes": "npm typescript@4.1.6 (the last 4.1 release; the fix is not on the 4.1 branch) and typescript@4.2.2 (2021-02-25), both behind typescript-language-server@0.7.1, started with the pinned tsserver.js; the reported TypeScript version is checked on every session. Deviation from the wrapper rule: the release current at 4.2.2 (0.5.1) offers no organize-imports code action (attempt 1: only 'Move to a new file' for the whole-file range); 0.7.1 offers source.organizeImports, followed through its _typescript.organizeImports command.",
+  "candidate_rank": 93,
+  "effort_minutes": 12,
+  "notes": "The report names VS Code's 'Sort Imports' (organize imports without removing unused imports, added later); the wrapper of the era exposes 'Organize Imports' (source.organizeImports), which runs the same unused-import analysis that drops frag. Removing frag leaves the fragment factory named by /** @jsxFrag frag */ unresolved. Invalid after two attempts, both case-spec errors: the edit spec carried no code-action kind, so the request had no context.only and the wrappers (0.5.1 and 0.7.1) returned only 'Move to a new file'; source actions such as organize imports are returned only when requested with only: ['source.organizeImports']. The bug itself was never exercised."
+ },
+ "language": "typescript",
+ "settings": {},
+ "settings_note": "The issue names no compiler options besides the pragmas in the file; no tsconfig.json, so tsserver uses an inferred project (the wrapper's inferred options enable JSX).",
+ "session": {
+  "settle_timeout_s": 120
+ },
+ "files": [
+  {
+   "path": "index.tsx",
+   "provenance": "issue",
+   "source": "issue body, first tsx code block",
+   "note": "the file name is not given in the issue; 'lib' is not installed, which does not matter for the import analysis"
+  }
+ ],
+ "repro": {
+  "attempt": 2,
+  "timing": "settled",
+  "steps": "Open index.tsx (a JSX file with /** @jsx h */ and /** @jsxFrag frag */ pragmas importing h and frag). Run the source action that organizes imports. Reported: frag is removed from the import although the fragment <>...</> uses it (a runtime error follows); expected: frag stays. Probe: after the edit, a fresh session on the edited file must not report an error the case session did not report before (the targeted diagnostic is an unused-import report, which organize imports is meant to clear).",
+  "ops": [
+   {
+    "kind": "open",
+    "path": "index.tsx"
+   }
+  ],
+  "probe": {
+   "type": "edit_leaves_diagnostic",
+   "params": {
+    "edit": {
+     "via": "code_action",
+     "path": "index.tsx",
+     "range": [
+      0,
+      0,
+      5,
+      0
+     ],
+     "title_re": "(?i)organize imports",
+     "missing": "invalid"
+    },
+    "target": {
+     "code": "6133"
+    }
+   }
+  }
+ },
+ "attempts": [
+  {
+   "attempt": 1,
+   "timing": "settled",
+   "summary": "Builds 4.1.6/4.2.2 behind the era wrapper 0.5.1: the whole-file code-action request offered only 'Move to a new file'; that wrapper exposes no organize-imports code action, so the probe could not be evaluated (invalid on both builds).",
+   "verdict": "invalid"
+  }
+ ]
+}

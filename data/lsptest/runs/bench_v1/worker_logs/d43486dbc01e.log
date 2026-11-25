@@ -1,0 +1,6 @@
+2026-09-24 22:39:34,643 INFO campaign_run run d43486dbc01e: r2_handles on gopls v0.18.1, gopls-73576 seed 1 settled, targets ['main.go']
+2026-09-24 22:40:30,396 INFO campaign_run run d43486dbc01e: 1 candidate(s) in 56s; confirming
+2026-09-24 22:40:41,715 INFO flake replay 1/3 of gopls|r2_handles|codeActionResolve:changed: settled=True control_stable=True reproduced=True (11.3s)
+2026-09-24 22:40:53,233 INFO flake replay 2/3 of gopls|r2_handles|codeActionResolve:changed: settled=True control_stable=True reproduced=True (11.5s)
+2026-09-24 22:41:04,728 INFO flake replay 3/3 of gopls|r2_handles|codeActionResolve:changed: settled=True control_stable=True reproduced=True (11.5s)
+2026-09-24 22:41:04,732 INFO campaign_run run d43486dbc01e finished: ok, 1 confirmed of 1 candidate(s), 90s

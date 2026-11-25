@@ -1,0 +1,6 @@
+2026-09-24 15:12:42,056 INFO campaign_run run c45ba6869f9e: r2_handles on rust-analyzer 2025-10-27, rust-analyzer-17525 seed 1 settled, targets ['src/lib.rs']
+2026-09-24 15:13:57,182 INFO campaign_run run c45ba6869f9e: 3 candidate(s) in 75s; confirming
+2026-09-24 15:14:08,201 INFO flake replay 1/3 of rust-analyzer|r2_handles|completionResolve:changed: settled=True control_stable=True reproduced=True (11.0s)
+2026-09-24 15:14:19,262 INFO flake replay 2/3 of rust-analyzer|r2_handles|completionResolve:changed: settled=True control_stable=True reproduced=True (11.1s)
+2026-09-24 15:14:30,318 INFO flake replay 3/3 of rust-analyzer|r2_handles|completionResolve:changed: settled=True control_stable=True reproduced=True (11.1s)
+2026-09-24 15:14:30,320 INFO campaign_run run c45ba6869f9e finished: ok, 1 confirmed of 3 candidate(s), 108s

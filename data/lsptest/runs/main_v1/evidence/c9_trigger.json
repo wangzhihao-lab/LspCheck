@@ -1,0 +1,226 @@
+{
+ "group": "gopls-r1-references-extra-h9-0290a7",
+ "rows": [
+  {
+   "gid": "gopls-r1-references-extra-h9-0290a7",
+   "replays": 3,
+   "settled": 3,
+   "control_stable": 3,
+   "reproduced": 3,
+   "seconds": 30.3,
+   "error": "",
+   "verdict": "reproduced",
+   "variant": "all seven operations",
+   "ops": [
+    {
+     "kind": "open",
+     "path": "examples/http/main.go",
+     "delay_ms": 200
+    },
+    {
+     "kind": "open",
+     "path": "examples/set-window-title/main.go",
+     "delay_ms": 200
+    },
+    {
+     "kind": "open",
+     "path": "termios_unix.go",
+     "delay_ms": 200
+    },
+    {
+     "kind": "change",
+     "path": "termios_unix.go",
+     "start": [
+      8,
+      1
+     ],
+     "end": [
+      8,
+      1
+     ],
+     "text": "(",
+     "delay_ms": 200
+    },
+    {
+     "kind": "close",
+     "path": "examples/set-window-title/main.go",
+     "delay_ms": 200
+    },
+    {
+     "kind": "open",
+     "path": "examples/set-window-title/main.go",
+     "delay_ms": 200
+    },
+    {
+     "kind": "close",
+     "path": "termios_unix.go",
+     "delay_ms": 200
+    }
+   ]
+  },
+  {
+   "gid": "gopls-r1-references-extra-h9-0290a7",
+   "replays": 3,
+   "settled": 3,
+   "control_stable": 3,
+   "reproduced": 0,
+   "seconds": 28.4,
+   "error": "",
+   "verdict": "not-reproduced",
+   "variant": "without the edit of termios_unix.go",
+   "ops": [
+    {
+     "kind": "open",
+     "path": "examples/http/main.go",
+     "delay_ms": 200
+    },
+    {
+     "kind": "open",
+     "path": "examples/set-window-title/main.go",
+     "delay_ms": 200
+    },
+    {
+     "kind": "open",
+     "path": "termios_unix.go",
+     "delay_ms": 200
+    },
+    {
+     "kind": "close",
+     "path": "examples/set-window-title/main.go",
+     "delay_ms": 200
+    },
+    {
+     "kind": "open",
+     "path": "examples/set-window-title/main.go",
+     "delay_ms": 200
+    },
+    {
+     "kind": "close",
+     "path": "termios_unix.go",
+     "delay_ms": 200
+    }
+   ]
+  },
+  {
+   "gid": "gopls-r1-references-extra-h9-0290a7",
+   "replays": 3,
+   "settled": 3,
+   "control_stable": 3,
+   "reproduced": 3,
+   "seconds": 28.0,
+   "error": "",
+   "verdict": "reproduced",
+   "variant": "open, edit and close termios_unix.go only",
+   "ops": [
+    {
+     "kind": "open",
+     "path": "examples/http/main.go",
+     "delay_ms": 200
+    },
+    {
+     "kind": "open",
+     "path": "termios_unix.go",
+     "delay_ms": 200
+    },
+    {
+     "kind": "change",
+     "path": "termios_unix.go",
+     "start": [
+      8,
+      1
+     ],
+     "end": [
+      8,
+      1
+     ],
+     "text": "(",
+     "delay_ms": 200
+    },
+    {
+     "kind": "close",
+     "path": "termios_unix.go",
+     "delay_ms": 200
+    }
+   ]
+  },
+  {
+   "gid": "gopls-r1-references-extra-h9-0290a7",
+   "replays": 3,
+   "settled": 3,
+   "control_stable": 3,
+   "reproduced": 0,
+   "seconds": 26.7,
+   "error": "",
+   "verdict": "not-reproduced",
+   "variant": "open and close termios_unix.go only",
+   "ops": [
+    {
+     "kind": "open",
+     "path": "examples/http/main.go",
+     "delay_ms": 200
+    },
+    {
+     "kind": "open",
+     "path": "termios_unix.go",
+     "delay_ms": 200
+    },
+    {
+     "kind": "close",
+     "path": "termios_unix.go",
+     "delay_ms": 200
+    }
+   ]
+  },
+  {
+   "gid": "gopls-r1-references-extra-h9-0290a7",
+   "replays": 3,
+   "settled": 3,
+   "control_stable": 3,
+   "reproduced": 0,
+   "seconds": 27.4,
+   "error": "",
+   "verdict": "not-reproduced",
+   "variant": "without termios_unix.go",
+   "ops": [
+    {
+     "kind": "open",
+     "path": "examples/http/main.go",
+     "delay_ms": 200
+    },
+    {
+     "kind": "open",
+     "path": "examples/set-window-title/main.go",
+     "delay_ms": 200
+    },
+    {
+     "kind": "close",
+     "path": "examples/set-window-title/main.go",
+     "delay_ms": 200
+    },
+    {
+     "kind": "open",
+     "path": "examples/set-window-title/main.go",
+     "delay_ms": 200
+    }
+   ]
+  },
+  {
+   "gid": "gopls-r1-references-extra-h9-0290a7",
+   "replays": 3,
+   "settled": 3,
+   "control_stable": 3,
+   "reproduced": 0,
+   "seconds": 25.9,
+   "error": "",
+   "verdict": "not-reproduced",
+   "variant": "open examples/http/main.go only",
+   "ops": [
+    {
+     "kind": "open",
+     "path": "examples/http/main.go",
+     "delay_ms": 200
+    }
+   ]
+  }
+ ]
+}

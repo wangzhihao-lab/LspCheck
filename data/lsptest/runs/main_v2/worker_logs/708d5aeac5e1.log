@@ -1,0 +1,6 @@
+2026-11-18 00:33:12,658 INFO campaign_run run 708d5aeac5e1: r1_history on ts6 6.0.3, vadimdemedes/ink@02ae1e59e7c2 seed 1 settled, targets ['src/components/FocusContext.ts', 'src/dom.ts', 'test/colon-colors.tsx']
+2026-11-18 00:40:37,430 INFO campaign_run run 708d5aeac5e1: 8 candidate(s) in 445s; confirming
+2026-11-18 00:41:41,424 INFO flake replay 1/3 of ts6|r1_history|references:missing: settled=True control_stable=True reproduced=True (64.0s)
+2026-11-18 00:42:46,882 INFO flake replay 2/3 of ts6|r1_history|references:missing: settled=True control_stable=True reproduced=False (65.5s)
+2026-11-18 00:43:57,979 INFO flake replay 3/3 of ts6|r1_history|references:missing: settled=True control_stable=True reproduced=False (71.1s)
+2026-11-18 00:43:57,983 INFO campaign_run run 708d5aeac5e1 finished: ok, 0 confirmed of 8 candidate(s), 645s

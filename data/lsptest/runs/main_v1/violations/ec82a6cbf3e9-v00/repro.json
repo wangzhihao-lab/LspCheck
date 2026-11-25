@@ -1,0 +1,466 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "ec82a6cbf3e9-v00",
+ "run_id": "ec82a6cbf3e9",
+ "oracle": "r3_routes",
+ "server": {
+  "kind": "rust-analyzer",
+  "version": "2026-09-21"
+ },
+ "project": {
+  "name": "sxyazi/yazi@0ea4c5d9ef75",
+  "source": "corpus",
+  "ref": "temp/corpus/sxyazi__yazi@0ea4c5d9ef75",
+  "commit": "0ea4c5d9ef75d7165c2e3b4eb8d713fc11f26c96",
+  "language": "rust"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "yazi-fs/src/mounts/partition.rs",
+    "positions": [
+     [
+      3,
+      15
+     ],
+     [
+      8,
+      21
+     ],
+     [
+      10,
+      19
+     ],
+     [
+      12,
+      9
+     ],
+     [
+      26,
+      41
+     ],
+     [
+      26,
+      64
+     ],
+     [
+      27,
+      11
+     ],
+     [
+      32,
+      7
+     ],
+     [
+      32,
+      42
+     ],
+     [
+      58,
+      6
+     ],
+     [
+      63,
+      10
+     ],
+     [
+      67,
+      9
+     ]
+    ],
+    "ends": [
+     [
+      3,
+      20
+     ],
+     [
+      8,
+      24
+     ],
+     [
+      10,
+      21
+     ],
+     [
+      12,
+      14
+     ],
+     [
+      26,
+      44
+     ],
+     [
+      26,
+      72
+     ],
+     [
+      27,
+      12
+     ],
+     [
+      32,
+      8
+     ],
+     [
+      32,
+      45
+     ],
+     [
+      58,
+      7
+     ],
+     [
+      63,
+      11
+     ],
+     [
+      67,
+      11
+     ]
+    ],
+    "names": [
+     "Partition",
+     "Option",
+     "u64",
+     "removable",
+     "map_or",
+     "as_encoded_bytes",
+     "b",
+     "_b",
+     "map_or",
+     "s",
+     "s",
+     "std"
+    ]
+   },
+   {
+    "path": "yazi-parser/src/tasks/spawn.rs",
+    "positions": [
+     [
+      1,
+      6
+     ],
+     [
+      1,
+      45
+     ],
+     [
+      2,
+      25
+     ],
+     [
+      3,
+      9
+     ],
+     [
+      5,
+      5
+     ],
+     [
+      10,
+      8
+     ],
+     [
+      10,
+      17
+     ],
+     [
+      11,
+      24
+     ],
+     [
+      13,
+      55
+     ],
+     [
+      14,
+      23
+     ],
+     [
+      23,
+      19
+     ],
+     [
+      23,
+      77
+     ]
+    ],
+    "ends": [
+     [
+      1,
+      8
+     ],
+     [
+      1,
+      47
+     ],
+     [
+      2,
+      29
+     ],
+     [
+      3,
+      15
+     ],
+     [
+      5,
+      8
+     ],
+     [
+      10,
+      12
+     ],
+     [
+      10,
+      22
+     ],
+     [
+      11,
+      27
+     ],
+     [
+      13,
+      58
+     ],
+     [
+      14,
+      27
+     ],
+     [
+      23,
+      20
+     ],
+     [
+      23,
+      83
+     ]
+    ],
+    "names": [
+     "mlua",
+     "Lua",
+     "TaskOpt",
+     "yazi_shared",
+     "derive",
+     "TryFrom",
+     "ActionCow",
+     "Error",
+     "Error",
+     "take_any",
+     "_",
+     "into_lua_err"
+    ]
+   },
+   {
+    "path": "yazi-vfs/src/entries.rs",
+    "positions": [
+     [
+      9,
+      70
+     ],
+     [
+      11,
+      10
+     ],
+     [
+      11,
+      57
+     ],
+     [
+      13,
+      17
+     ],
+     [
+      24,
+      33
+     ],
+     [
+      45,
+      16
+     ],
+     [
+      46,
+      33
+     ],
+     [
+      49,
+      18
+     ],
+     [
+      54,
+      40
+     ],
+     [
+      57,
+      28
+     ],
+     [
+      69,
+      56
+     ],
+     [
+      76,
+      16
+     ]
+    ],
+    "ends": [
+     [
+      9,
+      79
+     ],
+     [
+      11,
+      17
+     ],
+     [
+      11,
+      58
+     ],
+     [
+      13,
+      19
+     ],
+     [
+      24,
+      34
+     ],
+     [
+      45,
+      23
+     ],
+     [
+      46,
+      35
+     ],
+     [
+      49,
+      20
+     ],
+     [
+      54,
+      42
+     ],
+     [
+      57,
+      30
+     ],
+     [
+      69,
+      58
+     ],
+     [
+      76,
+      21
+     ]
+    ],
+    "names": [
+     "UnboundedReceiver",
+     "from_dir_bulk",
+     "io",
+     "file",
+     "ok",
+     "from_dir_bulk",
+     "dir",
+     "dent",
+     "Vec",
+     "file",
+     "File",
+     "PARTITIONS"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "definitionConsistency",
+  "path": "yazi-vfs/src/entries.rs",
+  "line": 45,
+  "character": 16,
+  "extra": "from:yazi-vfs/src/entries.rs:11:10"
+ },
+ "ops": [],
+ "case": {
+  "loc": [
+   "yazi-vfs/src/entries.rs",
+   45,
+   10,
+   45,
+   23
+  ],
+  "sub": "d",
+  "target": [
+   "yazi-vfs/src/entries.rs",
+   11,
+   10
+  ]
+ },
+ "shape": "definitionConsistency:changed",
+ "signature": "rust-analyzer|r3_routes|definitionConsistency:changed",
+ "expected": [
+  [
+   "yazi-vfs/src/entries.rs",
+   11,
+   4,
+   11,
+   17
+  ]
+ ],
+ "actual": [
+  [
+   "yazi-vfs/src/entries.rs",
+   45,
+   10,
+   45,
+   23
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "flake 3/3 [r1:SCR r2:SCR r3:SCR] in 479s",
+ "violation": {
+  "oracle": "r3_routes",
+  "server": "rust-analyzer-2026-09-21",
+  "project": "sxyazi/yazi@0ea4c5d9ef75",
+  "key": {
+   "method": "definitionConsistency",
+   "path": "yazi-vfs/src/entries.rs",
+   "line": 45,
+   "character": 16,
+   "extra": "from:yazi-vfs/src/entries.rs:11:10"
+  },
+  "expected": [
+   [
+    "yazi-vfs/src/entries.rs",
+    11,
+    4,
+    11,
+    17
+   ]
+  ],
+  "actual": [
+   [
+    "yazi-vfs/src/entries.rs",
+    45,
+    10,
+    45,
+    23
+   ]
+  ],
+  "ops": [],
+  "detail": "{\"case\": {\"loc\": [\"yazi-vfs/src/entries.rs\", 45, 10, 45, 23], \"sub\": \"d\", \"target\": [\"yazi-vfs/src/entries.rs\", 11, 10]}, \"note\": \"flake 3/3 [r1:SCR r2:SCR r3:SCR] in 479s\", \"shape\": \"definitionConsistency:changed\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "rust-analyzer|r3_routes|definitionConsistency:changed",
+  "run_id": "ec82a6cbf3e9"
+ },
+ "replay_logs": [
+  "logs/rust-analyzer-2026-09-21-ec82a6cbf3e9-r3-replay-baseline-20260923-154030-492158.jsonl.gz",
+  "logs/rust-analyzer-2026-09-21-ec82a6cbf3e9-r3-replay-control-20260923-154157-e73b84.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

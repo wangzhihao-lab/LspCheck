@@ -1,0 +1,731 @@
+{
+ "campaign": "bench_v1",
+ "generated": "2026-11-19T03:45:41",
+ "inputs": {
+  "author": "data/lsptest/runs/bench_v1/detection_author.csv",
+  "rater2": "data/lsptest/runs/bench_v1/detection_rater2.csv",
+  "detection": "data/lsptest/runs/bench_v1/detection.json",
+  "author_sha256": "fb593b5490114464ab5799bde1b8ebb49a76ea79a8721c38ee7655f6b2c572e8",
+  "rater2_sha256": "137a54112190866bfde538cf90d046166d8bf2813e527ea8aebe02963eb9af48",
+  "detection_sha256": "6714ccbf4eeb22a4a8b356efd49c06a94d53fd992fc192981468cc804f3c9abb"
+ },
+ "signatures": {
+  "universe": 77,
+  "author_judged": 77,
+  "rater2_judged": 77,
+  "both": 77,
+  "missing_from_rater2": [],
+  "missing_from_author": [],
+  "rater2_unknown": [],
+  "author_unknown": []
+ },
+ "three_class": {
+  "categories": [
+   "yes",
+   "partial",
+   "no"
+  ],
+  "n": 77,
+  "agree": 70,
+  "percent_agreement": 90.91,
+  "observed_agreement": 0.9090909090909091,
+  "expected_agreement": 0.5675493337831,
+  "kappa": 0.7897815912636504,
+  "se_asymptotic": 0.07190863223361928,
+  "ci95_asymptotic": [
+   0.6488432619082206,
+   0.9307199206190803
+  ],
+  "bootstrap": {
+   "ci95": [
+    0.6353369763205831,
+    0.9185185185185185
+   ],
+   "resamples": 10000,
+   "defined": 10000,
+   "seed": 20261118
+  },
+  "confusion": {
+   "rows": "author",
+   "columns": "rater 2",
+   "matrix": [
+    [
+     52,
+     7,
+     0
+    ],
+    [
+     0,
+     1,
+     0
+    ],
+    [
+     0,
+     0,
+     17
+    ]
+   ]
+  },
+  "marginals": {
+   "author": {
+    "yes": 59,
+    "partial": 1,
+    "no": 17
+   },
+   "rater2": {
+    "yes": 52,
+    "partial": 8,
+    "no": 17
+   }
+  }
+ },
+ "detected_or_not": {
+  "categories": [
+   "detected",
+   "not detected"
+  ],
+  "n": 77,
+  "agree": 70,
+  "percent_agreement": 90.91,
+  "observed_agreement": 0.9090909090909091,
+  "expected_agreement": 0.5933546972508011,
+  "kappa": 0.7764413106594773,
+  "se_asymptotic": 0.07852589808456432,
+  "ci95_asymptotic": [
+   0.6225333785600684,
+   0.9303492427588862
+  ],
+  "bootstrap": {
+   "ci95": [
+    0.6071428571428571,
+    0.9152915291529152
+   ],
+   "resamples": 10000,
+   "defined": 10000,
+   "seed": 20261118
+  },
+  "confusion": {
+   "rows": "author",
+   "columns": "rater 2",
+   "matrix": [
+    [
+     52,
+     7
+    ],
+    [
+     0,
+     18
+    ]
+   ]
+  },
+  "marginals": {
+   "author": {
+    "detected": 59,
+    "not detected": 18
+   },
+   "rater2": {
+    "detected": 52,
+    "not detected": 25
+   }
+  }
+ },
+ "by_relation": {
+  "R0": {
+   "n": 3,
+   "agree": 3,
+   "percent_agreement": 100.0,
+   "kappa": 1.0,
+   "kappa_detected": 1.0
+  },
+  "R1": {
+   "n": 44,
+   "agree": 39,
+   "percent_agreement": 88.6,
+   "kappa": 0.7710718002081167,
+   "kappa_detected": 0.7544642857142859
+  },
+  "R2": {
+   "n": 2,
+   "agree": 1,
+   "percent_agreement": 50.0,
+   "kappa": 0.3333333333333333,
+   "kappa_detected": 0.0
+  },
+  "R3": {
+   "n": 5,
+   "agree": 4,
+   "percent_agreement": 80.0,
+   "kappa": 0.5833333333333334,
+   "kappa_detected": 0.5454545454545455
+  },
+  "R4": {
+   "n": 20,
+   "agree": 20,
+   "percent_agreement": 100.0,
+   "kappa": null,
+   "kappa_detected": null
+  },
+  "R5": {
+   "n": 3,
+   "agree": 3,
+   "percent_agreement": 100.0,
+   "kappa": 1.0,
+   "kappa_detected": 1.0
+  }
+ },
+ "by_server": {
+  "gopls": {
+   "n": 34,
+   "agree": 32,
+   "percent_agreement": 94.1,
+   "kappa": 0.8547008547008547,
+   "kappa_detected": 0.8495575221238938
+  },
+  "jdtls": {
+   "n": 4,
+   "agree": 2,
+   "percent_agreement": 50.0,
+   "kappa": 0.3333333333333333,
+   "kappa_detected": 0.2
+  },
+  "pyright": {
+   "n": 13,
+   "agree": 11,
+   "percent_agreement": 84.6,
+   "kappa": 0.0,
+   "kappa_detected": 0.0
+  },
+  "rust-analyzer": {
+   "n": 19,
+   "agree": 18,
+   "percent_agreement": 94.7,
+   "kappa": 0.9073170731707314,
+   "kappa_detected": 0.8950276243093921
+  },
+  "tsserver": {
+   "n": 7,
+   "agree": 7,
+   "percent_agreement": 100.0,
+   "kappa": null,
+   "kappa_detected": null
+  }
+ },
+ "cases": {
+  "cases": 39,
+  "judged_in_full": 39,
+  "summary": {
+   "categories": [
+    "detected",
+    "not detected"
+   ],
+   "n": 39,
+   "agree": 37,
+   "percent_agreement": 94.87,
+   "observed_agreement": 0.9487179487179487,
+   "expected_agreement": 0.7041420118343196,
+   "kappa": 0.8266666666666665,
+   "se_asymptotic": 0.11757407401573895,
+   "ci95_asymptotic": [
+    0.5962257160801716,
+    1.0
+   ],
+   "bootstrap": {
+    "ci95": [
+     0.5375494071146251,
+     1.0
+    ],
+    "resamples": 10000,
+    "defined": 9999,
+    "seed": 20261118
+   },
+   "confusion": {
+    "rows": "author",
+    "columns": "rater 2",
+    "matrix": [
+     [
+      31,
+      2
+     ],
+     [
+      0,
+      6
+     ]
+    ]
+   },
+   "marginals": {
+    "author": {
+     "detected": 33,
+     "not detected": 6
+    },
+    "rater2": {
+     "detected": 31,
+     "not detected": 8
+    }
+   }
+  },
+  "author_detected": 33,
+  "rater2_detected": 31,
+  "differ": [
+   {
+    "case": "gopls-60435",
+    "author": "detected",
+    "rater2": "not detected"
+   },
+   {
+    "case": "jdtls-2111",
+    "author": "detected",
+    "rater2": "not detected"
+   }
+  ]
+ },
+ "rater2_unsure": {
+  "n": 4,
+  "signatures": [
+   "jdtls-2111 jdtls|r2_handles|codeActionResolve:changed",
+   "rust-analyzer-14841 rust-analyzer|r5_transforms|codeAction:extra",
+   "rust-analyzer-21173 rust-analyzer|r0_crash|codeAction:result->error:-32603",
+   "rust-analyzer-21173 rust-analyzer|r1_history|codeAction:error:-32603->result"
+  ],
+  "agree": 2
+ },
+ "unsure_as_no": {
+  "note": "rater-2 verdicts of the signatures the rater's note marks as unsure recoded to no: an unsure signature does not count as a detection",
+  "three_class": {
+   "categories": [
+    "yes",
+    "partial",
+    "no"
+   ],
+   "n": 77,
+   "agree": 68,
+   "percent_agreement": 88.31,
+   "observed_agreement": 0.8831168831168831,
+   "expected_agreement": 0.568561308821049,
+   "kappa": 0.7290852228303362,
+   "se_asymptotic": 0.07851421310664707,
+   "ci95_asymptotic": [
+    0.5752001928668052,
+    0.8829702527938671
+   ],
+   "bootstrap": {
+    "ci95": [
+     0.5666666666666669,
+     0.8752025931928686
+    ],
+    "resamples": 10000,
+    "defined": 10000,
+    "seed": 20261118
+   },
+   "confusion": {
+    "rows": "author",
+    "columns": "rater 2",
+    "matrix": [
+     [
+      51,
+      5,
+      3
+     ],
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      0,
+      17
+     ]
+    ]
+   },
+   "marginals": {
+    "author": {
+     "yes": 59,
+     "partial": 1,
+     "no": 17
+    },
+    "rater2": {
+     "yes": 51,
+     "partial": 5,
+     "no": 21
+    }
+   }
+  },
+  "detected_or_not": {
+   "categories": [
+    "detected",
+    "not detected"
+   ],
+   "n": 77,
+   "agree": 69,
+   "percent_agreement": 89.61,
+   "observed_agreement": 0.8961038961038961,
+   "expected_agreement": 0.5864395344914826,
+   "kappa": 0.7487765089722674,
+   "se_asymptotic": 0.08138380405016153,
+   "ci95_asymptotic": [
+    0.5892671841090859,
+    0.908285833835449
+   ],
+   "bootstrap": {
+    "ci95": [
+     0.5783132530120481,
+     0.8971962616822429
+    ],
+    "resamples": 10000,
+    "defined": 10000,
+    "seed": 20261118
+   },
+   "confusion": {
+    "rows": "author",
+    "columns": "rater 2",
+    "matrix": [
+     [
+      51,
+      8
+     ],
+     [
+      0,
+      18
+     ]
+    ]
+   },
+   "marginals": {
+    "author": {
+     "detected": 59,
+     "not detected": 18
+    },
+    "rater2": {
+     "detected": 51,
+     "not detected": 26
+    }
+   }
+  },
+  "cases": {
+   "cases": 39,
+   "judged_in_full": 39,
+   "summary": {
+    "categories": [
+     "detected",
+     "not detected"
+    ],
+    "n": 39,
+    "agree": 37,
+    "percent_agreement": 94.87,
+    "observed_agreement": 0.9487179487179487,
+    "expected_agreement": 0.7041420118343196,
+    "kappa": 0.8266666666666665,
+    "se_asymptotic": 0.11757407401573895,
+    "ci95_asymptotic": [
+     0.5962257160801716,
+     1.0
+    ],
+    "bootstrap": {
+     "ci95": [
+      0.5375494071146251,
+      1.0
+     ],
+     "resamples": 10000,
+     "defined": 9999,
+     "seed": 20261118
+    },
+    "confusion": {
+     "rows": "author",
+     "columns": "rater 2",
+     "matrix": [
+      [
+       31,
+       2
+      ],
+      [
+       0,
+       6
+      ]
+     ]
+    },
+    "marginals": {
+     "author": {
+      "detected": 33,
+      "not detected": 6
+     },
+     "rater2": {
+      "detected": 31,
+      "not detected": 8
+     }
+    }
+   },
+   "author_detected": 33,
+   "rater2_detected": 31,
+   "differ": [
+    {
+     "case": "gopls-60435",
+     "author": "detected",
+     "rater2": "not detected"
+    },
+    {
+     "case": "jdtls-2111",
+     "author": "detected",
+     "rater2": "not detected"
+    }
+   ]
+  }
+ },
+ "without_practice_cases": {
+  "note": "signatures of the cases used as practice examples in the second rater's manual left out",
+  "excluded_cases": [
+   "gopls-36824",
+   "pyright-8946",
+   "pyright-9681"
+  ],
+  "excluded_signatures": 15,
+  "three_class": {
+   "categories": [
+    "yes",
+    "partial",
+    "no"
+   ],
+   "n": 62,
+   "agree": 56,
+   "percent_agreement": 90.32,
+   "observed_agreement": 0.903225806451613,
+   "expected_agreement": 0.6056191467221645,
+   "kappa": 0.7546174142480212,
+   "se_asymptotic": 0.09032298416349172,
+   "ci95_asymptotic": [
+    0.5775876183113957,
+    0.9316472101846467
+   ],
+   "bootstrap": {
+    "ci95": [
+     0.5521155830753355,
+     0.9173333333333334
+    ],
+    "resamples": 10000,
+    "defined": 10000,
+    "seed": 20261118
+   },
+   "confusion": {
+    "rows": "author",
+    "columns": "rater 2",
+    "matrix": [
+     [
+      44,
+      6,
+      0
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      0,
+      0,
+      11
+     ]
+    ]
+   },
+   "marginals": {
+    "author": {
+     "yes": 50,
+     "partial": 1,
+     "no": 11
+    },
+    "rater2": {
+     "yes": 44,
+     "partial": 7,
+     "no": 11
+    }
+   }
+  },
+  "detected_or_not": {
+   "categories": [
+    "detected",
+    "not detected"
+   ],
+   "n": 62,
+   "agree": 56,
+   "percent_agreement": 90.32,
+   "observed_agreement": 0.903225806451613,
+   "expected_agreement": 0.6285119667013529,
+   "kappa": 0.7394957983193279,
+   "se_asymptotic": 0.09758369985240992,
+   "ci95_asymptotic": [
+    0.5482352611304379,
+    0.9307563355082179
+   ],
+   "bootstrap": {
+    "ci95": [
+     0.5181347150259067,
+     0.9121813031161474
+    ],
+    "resamples": 10000,
+    "defined": 10000,
+    "seed": 20261118
+   },
+   "confusion": {
+    "rows": "author",
+    "columns": "rater 2",
+    "matrix": [
+     [
+      44,
+      6
+     ],
+     [
+      0,
+      12
+     ]
+    ]
+   },
+   "marginals": {
+    "author": {
+     "detected": 50,
+     "not detected": 12
+    },
+    "rater2": {
+     "detected": 44,
+     "not detected": 18
+    }
+   }
+  },
+  "cases": {
+   "cases": 36,
+   "judged_in_full": 36,
+   "summary": {
+    "categories": [
+     "detected",
+     "not detected"
+    ],
+    "n": 36,
+    "agree": 34,
+    "percent_agreement": 94.44,
+    "observed_agreement": 0.9444444444444444,
+    "expected_agreement": 0.6851851851851851,
+    "kappa": 0.8235294117647058,
+    "se_asymptotic": 0.11936462498726871,
+    "ci95_asymptotic": [
+     0.5895790457615293,
+     1.0
+    ],
+    "bootstrap": {
+     "ci95": [
+      0.5344827586206895,
+      1.0
+     ],
+     "resamples": 10000,
+     "defined": 9998,
+     "seed": 20261118
+    },
+    "confusion": {
+     "rows": "author",
+     "columns": "rater 2",
+     "matrix": [
+      [
+       28,
+       2
+      ],
+      [
+       0,
+       6
+      ]
+     ]
+    },
+    "marginals": {
+     "author": {
+      "detected": 30,
+      "not detected": 6
+     },
+     "rater2": {
+      "detected": 28,
+      "not detected": 8
+     }
+    }
+   },
+   "author_detected": 30,
+   "rater2_detected": 28,
+   "differ": [
+    {
+     "case": "gopls-60435",
+     "author": "detected",
+     "rater2": "not detected"
+    },
+    {
+     "case": "jdtls-2111",
+     "author": "detected",
+     "rater2": "not detected"
+    }
+   ]
+  }
+ },
+ "disagreements": [
+  {
+   "case": "gopls-38732",
+   "signature": "gopls|r1_history|codeAction:key-lost",
+   "relation": "R1",
+   "author": "yes",
+   "rater2": "partial",
+   "author_note": "",
+   "rater2_note": "key-lost 只是因为 foo.go 的那条诊断不见了（见第 72 条），间接表现。"
+  },
+  {
+   "case": "gopls-60435",
+   "signature": "gopls|r3_routes|highlightVsReferences:extra",
+   "relation": "R3",
+   "author": "yes",
+   "rater2": "partial",
+   "author_note": "",
+   "rater2_note": "方向相反：从 http 的使用处高亮，选中了 httptest 的导入路径；很可能是同一个按包名子串匹配的缺陷，但不是 issue 报的那个方向。"
+  },
+  {
+   "case": "jdtls-2111",
+   "signature": "jdtls|r2_handles|codeActionResolve:changed",
+   "relation": "R2",
+   "author": "yes",
+   "rater2": "partial",
+   "author_note": "",
+   "rater2_note": "不确定：过期的 Generate Getter and Setter 句柄在编辑后解析出缩进不同的编辑；与 issue 同属编辑后代码操作状态陈旧，但表现不是 issue 说的选项缺失或无效。"
+  },
+  {
+   "case": "jdtls-3155",
+   "signature": "jdtls|r1_history|codeAction:extra",
+   "relation": "R1",
+   "author": "yes",
+   "rater2": "partial",
+   "author_note": "",
+   "rater2_note": "多出的 Remove unused import 只是因为陈旧的导入错误还在（见第 64 条），间接表现。"
+  },
+  {
+   "case": "pyright-4844",
+   "signature": "pyright|r1_history|codeAction:key-lost",
+   "relation": "R1",
+   "author": "yes",
+   "rater2": "partial",
+   "author_note": "",
+   "rater2_note": "codeAction 的 key-lost 只是因为第一个 f(0) 的误报在操作后消失（见第 36 条），间接表现。"
+  },
+  {
+   "case": "pyright-8946",
+   "signature": "pyright|r1_history|typeDefinition:result->error:-32603",
+   "relation": "R1",
+   "author": "yes",
+   "rater2": "partial",
+   "author_note": "",
+   "rater2_note": "导入的模块名改成 datetime_x 再改回后，对模块名做 typeDefinition 返回内部错误；触发条件同类（编辑改变导入），但表现是内部错误而不是类型无法识别。"
+  },
+  {
+   "case": "rust-analyzer-21173",
+   "signature": "rust-analyzer|r1_history|codeAction:error:-32603->result",
+   "relation": "R1",
+   "author": "yes",
+   "rater2": "partial",
+   "author_note": "",
+   "rater2_note": "不确定：新会话一侧的 codeAction -32603 应是同一个 panic，但这条报的是“操作后不再报错”的历史差异，只间接表现。"
+  }
+ ],
+ "method": {
+  "kappa": "Cohen's kappa on the signatures both raters judged; detected_or_not: yes against partial and no",
+  "ci95_asymptotic": "kappa +- 1.96 SE, SE from the large-sample variance of Fleiss, Cohen and Everitt (1969); clipped to [-1, 1]",
+  "bootstrap": "percentile interval, signatures resampled with replacement, 10000 resamples, seed 20261118; resamples with undefined kappa skipped",
+  "cases": "a case counts as detected by a rater when at least one of its signatures is judged yes; only cases whose signatures both judged in full",
+  "by_relation": "kappa is null where it is undefined (one category only)"
+ }
+}

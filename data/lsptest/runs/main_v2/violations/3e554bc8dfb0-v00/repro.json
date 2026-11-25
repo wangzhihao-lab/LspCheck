@@ -1,0 +1,480 @@
+{
+ "format": 1,
+ "campaign": "main_v2",
+ "vid": "3e554bc8dfb0-v00",
+ "run_id": "3e554bc8dfb0",
+ "oracle": "r3_routes",
+ "server": {
+  "kind": "ts7",
+  "version": "7.0.2"
+ },
+ "project": {
+  "name": "pear-devs/pear-desktop@3ff0a86231fe",
+  "source": "corpus",
+  "ref": "temp/corpus/pear-devs__pear-desktop@3ff0a86231fe",
+  "commit": "3ff0a86231fed97b1a4365de0521fc96794c3f67",
+  "language": "typescript"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "src/plugins/album-actions/templates/undislike-button.tsx",
+    "positions": [
+     [
+      1,
+      13
+     ],
+     [
+      9,
+      8
+     ],
+     [
+      14,
+      24
+     ],
+     [
+      14,
+      38
+     ],
+     [
+      19,
+      10
+     ],
+     [
+      24,
+      12
+     ],
+     [
+      36,
+      12
+     ],
+     [
+      39,
+      17
+     ],
+     [
+      53,
+      15
+     ],
+     [
+      88,
+      12
+     ],
+     [
+      89,
+      10
+     ],
+     [
+      99,
+      11
+     ]
+    ],
+    "ends": [
+     [
+      1,
+      14
+     ],
+     [
+      9,
+      10
+     ],
+     [
+      14,
+      27
+     ],
+     [
+      14,
+      39
+     ],
+     [
+      19,
+      13
+     ],
+     [
+      24,
+      14
+     ],
+     [
+      36,
+      14
+     ],
+     [
+      39,
+      20
+     ],
+     [
+      53,
+      16
+     ],
+     [
+      88,
+      15
+     ],
+     [
+      89,
+      13
+     ],
+     [
+      99,
+      13
+     ]
+    ],
+    "names": [
+     "e",
+     "aria",
+     "props",
+     "e",
+     "style",
+     "aria",
+     "div",
+     "height",
+     "g",
+     "touch",
+     "style",
+     "div"
+    ]
+   },
+   {
+    "path": "src/plugins/downloader/main/index.ts",
+    "positions": [
+     [
+      2,
+      11
+     ],
+     [
+      61,
+      13
+     ],
+     [
+      109,
+      46
+     ],
+     [
+      113,
+      33
+     ],
+     [
+      175,
+      9
+     ],
+     [
+      175,
+      25
+     ],
+     [
+      322,
+      11
+     ],
+     [
+      399,
+      61
+     ],
+     [
+      493,
+      31
+     ],
+     [
+      697,
+      57
+     ],
+     [
+      742,
+      16
+     ],
+     [
+      833,
+      59
+     ]
+    ],
+    "ends": [
+     [
+      2,
+      13
+     ],
+     [
+      61,
+      18
+     ],
+     [
+      109,
+      49
+     ],
+     [
+      113,
+      36
+     ],
+     [
+      175,
+      12
+     ],
+     [
+      175,
+      30
+     ],
+     [
+      322,
+      12
+     ],
+     [
+      399,
+      63
+     ],
+     [
+      493,
+      34
+     ],
+     [
+      697,
+      60
+     ],
+     [
+      742,
+      23
+     ],
+     [
+      833,
+      62
+     ]
+    ],
+    "names": [
+     "join",
+     "properties",
+     "source",
+     "Error",
+     "Object",
+     "globalThis",
+     "on",
+     "text",
+     "value",
+     "title",
+     "showMessageBox",
+     "album"
+    ]
+   },
+   {
+    "path": "src/plugins/equalizer/index.ts",
+    "positions": [
+     [
+      14,
+      5
+     ],
+     [
+      15,
+      17
+     ],
+     [
+      16,
+      27
+     ],
+     [
+      22,
+      14
+     ],
+     [
+      33,
+      8
+     ],
+     [
+      60,
+      14
+     ],
+     [
+      64,
+      48
+     ],
+     [
+      68,
+      41
+     ],
+     [
+      69,
+      29
+     ],
+     [
+      82,
+      6
+     ],
+     [
+      83,
+      13
+     ],
+     [
+      83,
+      44
+     ]
+    ],
+    "ends": [
+     [
+      14,
+      9
+     ],
+     [
+      15,
+      23
+     ],
+     [
+      16,
+      30
+     ],
+     [
+      22,
+      15
+     ],
+     [
+      33,
+      13
+     ],
+     [
+      60,
+      17
+     ],
+     [
+      64,
+      51
+     ],
+     [
+      68,
+      43
+     ],
+     [
+      69,
+      34
+     ],
+     [
+      82,
+      8
+     ],
+     [
+      83,
+      20
+     ],
+     [
+      83,
+      47
+     ]
+    ],
+    "names": [
+     "enabled",
+     "FilterConfig",
+     "Preset",
+     "t",
+     "setConfig",
+     "detail",
+     "preset",
+     "type",
+     "frequency",
+     "stop",
+     "appliedFilters",
+     "filter"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "definitionConsistency",
+  "path": "src/plugins/captions-selector/back.ts",
+  "line": 29,
+  "character": 4,
+  "extra": "from:src/plugins/equalizer/index.ts:82:6"
+ },
+ "ops": [],
+ "case": {
+  "loc": [
+   "src/plugins/captions-selector/back.ts",
+   29,
+   2,
+   29,
+   6
+  ],
+  "sub": "d",
+  "target": [
+   "src/plugins/equalizer/index.ts",
+   82,
+   6
+  ]
+ },
+ "shape": "definitionConsistency:missing",
+ "signature": "ts7|r3_routes|definitionConsistency:missing",
+ "expected": [
+  [
+   "src/plugins/equalizer/index.ts",
+   82,
+   4,
+   82,
+   8
+  ],
+  [
+   "src/types/plugins.ts",
+   20,
+   2,
+   20,
+   6
+  ]
+ ],
+ "actual": [
+  [
+   "src/types/plugins.ts",
+   20,
+   2,
+   20,
+   6
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "flake 3/3 [r1:SCR r2:SCR r3:SCR] in 180s",
+ "violation": {
+  "oracle": "r3_routes",
+  "server": "ts7-7.0.2",
+  "project": "pear-devs/pear-desktop@3ff0a86231fe",
+  "key": {
+   "method": "definitionConsistency",
+   "path": "src/plugins/captions-selector/back.ts",
+   "line": 29,
+   "character": 4,
+   "extra": "from:src/plugins/equalizer/index.ts:82:6"
+  },
+  "expected": [
+   [
+    "src/plugins/equalizer/index.ts",
+    82,
+    4,
+    82,
+    8
+   ],
+   [
+    "src/types/plugins.ts",
+    20,
+    2,
+    20,
+    6
+   ]
+  ],
+  "actual": [
+   [
+    "src/types/plugins.ts",
+    20,
+    2,
+    20,
+    6
+   ]
+  ],
+  "ops": [],
+  "detail": "{\"case\": {\"loc\": [\"src/plugins/captions-selector/back.ts\", 29, 2, 29, 6], \"sub\": \"d\", \"target\": [\"src/plugins/equalizer/index.ts\", 82, 6]}, \"note\": \"flake 3/3 [r1:SCR r2:SCR r3:SCR] in 180s\", \"shape\": \"definitionConsistency:missing\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "ts7|r3_routes|definitionConsistency:missing",
+  "run_id": "3e554bc8dfb0"
+ },
+ "replay_logs": [
+  "logs/ts7-7.0.2-3e554bc8dfb0-r3-replay-baseline-20261118-141101-c37b73.jsonl.gz",
+  "logs/ts7-7.0.2-3e554bc8dfb0-r3-replay-control-20261118-141135-0fb5de.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

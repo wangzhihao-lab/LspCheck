@@ -1,0 +1,3 @@
+2026-09-24 02:32:23,262 INFO campaign_run run a2946ea26514: r5_transforms on rust-analyzer 2026-09-21, AlexsJones/llmfit@2ffe4fd899a6 seed 2 settled, targets ['llmfit-core/src/claim.rs', 'llmfit-core/src/fit.rs', 'llmfit-tui/src/serve_api.rs']
+2026-09-24 03:07:49,326 INFO campaign_run run a2946ea26514: 0 candidate(s) in 2126s; confirming
+2026-09-24 03:07:49,327 INFO campaign_run run a2946ea26514 finished: ok, 0 confirmed of 0 candidate(s), 2126s

@@ -1,0 +1,3 @@
+2026-09-25 06:18:41,880 INFO campaign_run run e421be03f333: r0_crash on tsserver 5.7.2+tsls4.3.3, tsserver-60186 seed 2 settled, targets ['E.ts', 'index.ts']
+2026-09-25 06:18:45,289 INFO campaign_run run e421be03f333: 0 candidate(s) in 3s; confirming
+2026-09-25 06:18:45,290 INFO campaign_run run e421be03f333 finished: ok, 0 confirmed of 0 candidate(s), 4s

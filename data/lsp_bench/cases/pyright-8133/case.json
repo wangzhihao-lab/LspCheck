@@ -1,0 +1,61 @@
+{
+ "schema": 1,
+ "id": "pyright-8133",
+ "meta": {
+  "server": "pyright",
+  "kind": "pyright",
+  "number": 8133,
+  "url": "https://github.com/microsoft/pyright/issues/8133",
+  "title": "Pyright raises type error when supplying an attr field with both default and a validator",
+  "oracle_class": "R5",
+  "subtype": "whitespace",
+  "fix_ref": "none named (maintainer: 'This is addressed in pyright 1.1.374'; the parenthesis dependence was fixed in the release after 1.1.367)",
+  "fix_shas": [
+   "5cb16fe7e4564e20e265afd20f73c530f275c40b",
+   "6913347aa8cab25cf526654758884654cb750432"
+  ],
+  "pre_version": "1.1.367",
+  "post_version": "1.1.374",
+  "pre_build": "1.1.367",
+  "post_build": "1.1.374",
+  "build_notes": "npm pyright@1.1.367 (2024-06-12, the reporter's version) and pyright@1.1.374 (2024-07-31), the release the maintainer names for the fix.",
+  "candidate_rank": 286,
+  "effort_minutes": 7,
+  "notes": "Mechanism differs from the screening class (R5 whitespace): the false positive is reported on a fresh open of the issue's first code block, without any transformation; the parentheses variant (the R5 aspect, which the maintainer calls a separate bug fixed one release after 1.1.367) is not probed. Uses the attrs package installed for the session interpreter (attrs 25.4.0, user site-packages); the reporter's attrs version is not stated."
+ },
+ "language": "python",
+ "settings": {},
+ "settings_note": "The issue names no settings (pyright CLI defaults); the session defaults apply; attrs is resolved from the session interpreter (python3 on PATH).",
+ "session": {
+  "settle_timeout_s": 120
+ },
+ "files": [
+  {
+   "path": "main.py",
+   "provenance": "issue",
+   "source": "issue body, first python code block",
+   "note": ""
+  }
+ ],
+ "repro": {
+  "attempt": 1,
+  "timing": "settled",
+  "steps": "Open main.py (an attrs class whose field has both a default and a validator). Reported: pyright reports an error for 'attrs.field(default=False, validator=attrs.validators.instance_of(bool))' although the code is correct (mypy reports nothing; the maintainer confirms the bug). Probe: no error-severity diagnostic may be reported for main.py.",
+  "ops": [
+   {
+    "kind": "open",
+    "path": "main.py"
+   }
+  ],
+  "probe": {
+   "type": "diagnostic_present",
+   "params": {
+    "path": "main.py",
+    "match": {
+     "severity": 1
+    }
+   }
+  }
+ },
+ "attempts": []
+}

@@ -1,0 +1,543 @@
+{
+ "format": 1,
+ "campaign": "bench_v1",
+ "vid": "163c807c0508-v01",
+ "run_id": "163c807c0508",
+ "oracle": "r1_history",
+ "server": {
+  "kind": "gopls",
+  "version": "v0.18.1"
+ },
+ "project": {
+  "name": "gopls-73564",
+  "source": "dir",
+  "ref": "data/lsp_bench/cases/gopls-73564/project",
+  "commit": "",
+  "language": "go"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 180.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "main.go",
+    "positions": [
+     [
+      8,
+      14
+     ],
+     [
+      15,
+      9
+     ],
+     [
+      19,
+      10
+     ],
+     [
+      19,
+      18
+     ],
+     [
+      23,
+      10
+     ],
+     [
+      23,
+      19
+     ],
+     [
+      24,
+      8
+     ],
+     [
+      28,
+      21
+     ],
+     [
+      29,
+      12
+     ],
+     [
+      30,
+      21
+     ],
+     [
+      32,
+      22
+     ],
+     [
+      38,
+      2
+     ],
+     [
+      41,
+      10
+     ],
+     [
+      49,
+      2
+     ],
+     [
+      49,
+      12
+     ],
+     [
+      50,
+      3
+     ],
+     [
+      50,
+      66
+     ],
+     [
+      50,
+      74
+     ],
+     [
+      52,
+      15
+     ],
+     [
+      55,
+      19
+     ]
+    ],
+    "ends": [
+     [
+      8,
+      17
+     ],
+     [
+      15,
+      11
+     ],
+     [
+      19,
+      13
+     ],
+     [
+      19,
+      22
+     ],
+     [
+      23,
+      13
+     ],
+     [
+      23,
+      24
+     ],
+     [
+      24,
+      9
+     ],
+     [
+      28,
+      24
+     ],
+     [
+      29,
+      15
+     ],
+     [
+      30,
+      24
+     ],
+     [
+      32,
+      25
+     ],
+     [
+      38,
+      3
+     ],
+     [
+      41,
+      13
+     ],
+     [
+      49,
+      3
+     ],
+     [
+      49,
+      13
+     ],
+     [
+      50,
+      5
+     ],
+     [
+      50,
+      70
+     ],
+     [
+      50,
+      75
+     ],
+     [
+      52,
+      20
+     ],
+     [
+      55,
+      24
+     ]
+    ],
+    "names": [
+     "string",
+     "int",
+     "Fruit",
+     "GetName",
+     "Fruit",
+     "GetWeight",
+     "f",
+     "Fruit",
+     "Fruit",
+     "Weight",
+     "Weight",
+     "cb",
+     "fruit",
+     "cb",
+     "f",
+     "fmt",
+     "GetName",
+     "f",
+     "GetWeight",
+     "GetFruits"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "completion",
+  "path": "main.go",
+  "line": 8,
+  "character": 17,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "main.go"
+  },
+  {
+   "kind": "request",
+   "path": "main.go",
+   "start": [
+    15,
+    4
+   ],
+   "text": "typeDefinition"
+  },
+  {
+   "kind": "request",
+   "path": "main.go",
+   "start": [
+    8,
+    14
+   ],
+   "text": "definition"
+  },
+  {
+   "kind": "request",
+   "path": "main.go",
+   "start": [
+    38,
+    2
+   ],
+   "text": "hover"
+  },
+  {
+   "kind": "change",
+   "path": "main.go",
+   "start": [
+    30,
+    0
+   ],
+   "end": [
+    31,
+    0
+   ]
+  },
+  {
+   "kind": "request",
+   "path": "main.go",
+   "start": [
+    49,
+    80
+   ],
+   "text": "documentHighlight"
+  },
+  {
+   "kind": "request",
+   "path": "main.go",
+   "start": [
+    31,
+    5
+   ],
+   "text": "typeDefinition"
+  },
+  {
+   "kind": "request",
+   "path": "main.go",
+   "start": [
+    30,
+    0
+   ],
+   "text": "typeDefinition"
+  },
+  {
+   "kind": "set_config",
+   "settings": {
+    "gopls": {
+     "buildFlags": [
+      "-tags=lsptest"
+     ]
+    }
+   }
+  },
+  {
+   "kind": "request",
+   "path": "main.go",
+   "start": [
+    31,
+    22
+   ],
+   "text": "documentHighlight"
+  },
+  {
+   "kind": "change",
+   "path": "main.go",
+   "start": [
+    30,
+    0
+   ],
+   "end": [
+    30,
+    0
+   ],
+   "text": "\t\t{Name"
+  },
+  {
+   "kind": "set_config",
+   "settings": {
+    "gopls": {
+     "buildFlags": []
+    }
+   }
+  },
+  {
+   "kind": "change",
+   "path": "main.go",
+   "start": [
+    30,
+    7
+   ],
+   "end": [
+    30,
+    7
+   ],
+   "text": ": \"apple\", Weight: 100},\n"
+  },
+  {
+   "kind": "request",
+   "path": "main.go",
+   "start": [
+    50,
+    70
+   ],
+   "text": "completion"
+  }
+ ],
+ "case": {
+  "chain_step": 0,
+  "families": [],
+  "family": "H7",
+  "history_index": 5,
+  "history_seed": 2006,
+  "mode": "fresh",
+  "note": "shuffle: H2 main.go: delete line 30, retype it in 2 chunk(s) | H4 toggle gopls.buildFlags: [] -> ['-tags=lsptest'] -> back | H8 8 requests in a shuffled order: typeDefinition@main.go:15:4, definition@main.go:8:14, hover@main.go:38:2, documentHighlight@main.go:50:80, typeDefinition@main.go:32:5, ...",
+  "seed": 2,
+  "timing": "settled"
+ },
+ "shape": "completion:missing",
+ "signature": "gopls|r1_history|completion:missing",
+ "expected": [
+  "fmt.GoStringer",
+  "fmt.Stringer",
+  "string"
+ ],
+ "actual": [
+  "string"
+ ],
+ "reproduced": "0/3",
+ "note": "H7: shuffle: H2 main.go: delete line 30, retype it in 2 chunk(s) | H4 toggle gopls.buildFlags: [] -> ['-tags=lsptest'] -> back | H8 8 requests in a shuffled order: typeDefinition@main.go:15:4, definition@; flake 0/3 [r1:SCr r2:SCr r3:SCr] in 148s",
+ "violation": {
+  "oracle": "r1_history",
+  "server": "gopls-v0.18.1",
+  "project": "gopls-73564",
+  "key": {
+   "method": "completion",
+   "path": "main.go",
+   "line": 8,
+   "character": 17,
+   "extra": ""
+  },
+  "expected": [
+   "fmt.GoStringer",
+   "fmt.Stringer",
+   "string"
+  ],
+  "actual": [
+   "string"
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "main.go"
+   },
+   {
+    "kind": "request",
+    "path": "main.go",
+    "start": [
+     15,
+     4
+    ],
+    "text": "typeDefinition"
+   },
+   {
+    "kind": "request",
+    "path": "main.go",
+    "start": [
+     8,
+     14
+    ],
+    "text": "definition"
+   },
+   {
+    "kind": "request",
+    "path": "main.go",
+    "start": [
+     38,
+     2
+    ],
+    "text": "hover"
+   },
+   {
+    "kind": "change",
+    "path": "main.go",
+    "start": [
+     30,
+     0
+    ],
+    "end": [
+     31,
+     0
+    ]
+   },
+   {
+    "kind": "request",
+    "path": "main.go",
+    "start": [
+     49,
+     80
+    ],
+    "text": "documentHighlight"
+   },
+   {
+    "kind": "request",
+    "path": "main.go",
+    "start": [
+     31,
+     5
+    ],
+    "text": "typeDefinition"
+   },
+   {
+    "kind": "request",
+    "path": "main.go",
+    "start": [
+     30,
+     0
+    ],
+    "text": "typeDefinition"
+   },
+   {
+    "kind": "set_config",
+    "settings": {
+     "gopls": {
+      "buildFlags": [
+       "-tags=lsptest"
+      ]
+     }
+    }
+   },
+   {
+    "kind": "request",
+    "path": "main.go",
+    "start": [
+     31,
+     22
+    ],
+    "text": "documentHighlight"
+   },
+   {
+    "kind": "change",
+    "path": "main.go",
+    "start": [
+     30,
+     0
+    ],
+    "end": [
+     30,
+     0
+    ],
+    "text": "\t\t{Name"
+   },
+   {
+    "kind": "set_config",
+    "settings": {
+     "gopls": {
+      "buildFlags": []
+     }
+    }
+   },
+   {
+    "kind": "change",
+    "path": "main.go",
+    "start": [
+     30,
+     7
+    ],
+    "end": [
+     30,
+     7
+    ],
+    "text": ": \"apple\", Weight: 100},\n"
+   },
+   {
+    "kind": "request",
+    "path": "main.go",
+    "start": [
+     50,
+     70
+    ],
+    "text": "completion"
+   }
+  ],
+  "detail": "{\"case\": {\"chain_step\": 0, \"families\": [], \"family\": \"H7\", \"history_index\": 5, \"history_seed\": 2006, \"mode\": \"fresh\", \"note\": \"shuffle: H2 main.go: delete line 30, retype it in 2 chunk(s) | H4 toggle gopls.buildFlags: [] -> ['-tags=lsptest'] -> back | H8 8 requests in a shuffled order: typeDefinition@main.go:15:4, definition@main.go:8:14, hover@main.go:38:2, documentHighlight@main.go:50:80, typeDefinition@main.go:32:5, ...\", \"seed\": 2, \"timing\": \"settled\"}, \"note\": \"H7: shuffle: H2 main.go: delete line 30, retype it in 2 chunk(s) | H4 toggle gopls.buildFlags: [] -> ['-tags=lsptest'] -> back | H8 8 requests in a shuffled order: typeDefinition@main.go:15:4, definition@; flake 0/3 [r1:SCr r2:SCr r3:SCr] in 148s\", \"shape\": \"completion:missing\"}",
+  "reproduced": "0/3",
+  "reduced_ops": [],
+  "signature": "gopls|r1_history|completion:missing",
+  "run_id": "163c807c0508"
+ },
+ "replay_logs": [],
+ "project_files": {},
+ "incomplete": false
+}

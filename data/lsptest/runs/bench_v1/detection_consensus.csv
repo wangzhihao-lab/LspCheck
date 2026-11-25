@@ -1,0 +1,8 @@
+case,signature,verdict,followed,unresolved,reason,date
+gopls-38732,gopls|r1_history|codeAction:key-lost,partial,rater2,no,报出的是 codeAction 的键丢失，起因是删掉又重打 build tag 后 foo.go 上那条诊断没跟着更新；与 issue 同属改 build tag 后诊断不更新，但出在 foo.go、方向相反，且只是间接反映，不是 issue 说的 bar.go 诊断残留。,2026-11-21
+gopls-60435,gopls|r3_routes|highlightVsReferences:extra,yes,author,no,从 http 的使用处高亮，却选中了 net/http/httptest 那条导入，与 issue 是同一对父包、子包被混为一谈的错误高亮，查询同是 documentHighlight，只是从另一头触发。,2026-11-21
+jdtls-2111,jdtls|r2_handles|codeActionResolve:changed,partial,rater2,no,过期的 Generate Getter and Setter 句柄在编辑后解析出缩进不同的编辑，与 issue 同属编辑后代码操作状态陈旧，但不是 issue 说的选项缺失或点了没反应。,2026-11-21
+jdtls-3155,jdtls|r1_history|codeAction:extra,partial,rater2,no,多出的 Remove unused import 是 pom.xml 改动后 Foo.java 的导入诊断没有重新校验留下的，属于这个 bug，但报出的是 codeAction 上的间接表现，不是诊断本身。,2026-11-21
+pyright-4844,pyright|r1_history|codeAction:key-lost,partial,rater2,no,键丢失是因为第一个 f(0) 的误报在编辑、关闭、重开后消失，反映的是同一处 Self 求值前后不一致，但报出的是 codeAction 的间接差异，不是 issue 说的误报本身。,2026-11-21
+pyright-8946,pyright|r1_history|typeDefinition:result->error:-32603,partial,rater2,no,触发条件同类（把导入改掉再改回），但表现是对模块名做 typeDefinition 返回 -32603 内部错误，不是 issue 说的错误残留、Pool 不被识别为类型。,2026-11-21
+rust-analyzer-21173,rust-analyzer|r1_history|codeAction:error:-32603->result,yes,author,no,新会话里 codeAction 的 -32603 很可能就是这个 panic，但记录里没有错误信息可核对，请求也不是 issue 里的诊断请求，报出的是操作后不再报错的历史差异；若重放日志里正是 BoundConst 那条 panic，可改判 yes。（2026-11-21 按讨论时写的条件核对：bench_v1/violations/511f3c2a374a-v00 的重放日志里，两个新会话的 20 次 textDocument/codeAction 都返回 -32603，消息为 request handler panicked: cannot find `!BoundConst { var: 0 }` in param-env，正是 issue 的 panic；改判 yes。）,2026-11-21

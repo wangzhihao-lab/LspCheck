@@ -1,0 +1,55 @@
+{
+ "vid": "de1a4347e97f-v00",
+ "ops_before": 7,
+ "narrowed": false,
+ "reduced_confirmed": "3/3",
+ "probes": 4,
+ "cache_hits": 0,
+ "reduce_seconds": 77.986,
+ "budget_exhausted": false,
+ "probe_log": [
+  [
+   5,
+   true
+  ],
+  [
+   4,
+   true
+  ],
+  [
+   3,
+   false
+  ],
+  [
+   3,
+   false
+  ]
+ ],
+ "logs": [
+  "pyright-1.1.414-trfb2ed0-replay-baseline-20261118-224628-616700.jsonl.gz",
+  "pyright-1.1.414-trfb2ed0-replay-control-20261118-224628-aa520d.jsonl.gz",
+  "pyright-1.1.414-trfb2ed0-replay-history-20261118-224637-f7dd74.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [
+   "(variable) tvid: Unknown | None",
+   [
+    137,
+    84,
+    137,
+    88
+   ]
+  ],
+  "actual": [
+   "(variable) tvid: str | Any | None",
+   [
+    137,
+    84,
+    137,
+    88
+   ]
+  ]
+ },
+ "ops_after": 4,
+ "total_seconds": 177.6
+}

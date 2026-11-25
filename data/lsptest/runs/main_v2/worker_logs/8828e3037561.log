@@ -1,0 +1,6 @@
+2026-11-18 00:50:41,132 INFO campaign_run run 8828e3037561: r3_routes on ts7 7.0.2, vadimdemedes/ink@02ae1e59e7c2 seed 1 settled, targets ['src/components/FocusContext.ts', 'src/dom.ts', 'test/colon-colors.tsx']
+2026-11-18 00:53:08,215 INFO campaign_run run 8828e3037561: 5 candidate(s) in 147s; confirming
+2026-11-18 00:53:32,373 INFO flake replay 1/3 of ts7|r3_routes|highlightVsReferences:gained: settled=True control_stable=True reproduced=True (24.2s)
+2026-11-18 00:53:58,257 INFO flake replay 2/3 of ts7|r3_routes|highlightVsReferences:gained: settled=True control_stable=True reproduced=True (25.9s)
+2026-11-18 00:54:22,498 INFO flake replay 3/3 of ts7|r3_routes|highlightVsReferences:gained: settled=True control_stable=True reproduced=True (24.2s)
+2026-11-18 00:54:22,565 INFO campaign_run run 8828e3037561 finished: ok, 1 confirmed of 5 candidate(s), 222s

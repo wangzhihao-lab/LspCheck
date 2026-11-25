@@ -1,0 +1,3 @@
+2026-09-23 15:10:43,809 INFO campaign_run run 2d8d1a6342c8: r0_crash on gopls v0.23.0, jesseduffield/lazydocker@7e7aadc2071d seed 1 settled, targets ['pkg/gui/focus.go', 'pkg/gui/menu_panel.go', 'pkg/log/log.go']
+2026-09-23 15:10:53,745 INFO campaign_run run 2d8d1a6342c8: 0 candidate(s) in 10s; confirming
+2026-09-23 15:10:53,746 INFO campaign_run run 2d8d1a6342c8 finished: ok, 0 confirmed of 0 candidate(s), 10s

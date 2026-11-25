@@ -1,0 +1,3 @@
+2026-09-24 00:29:40,140 INFO campaign_run run f975172d4174: r4_edits on ts7 7.0.2, chenglou/pretext@2e5e2bdaee39 seed 2 settled, targets ['pages/justification-check.ts', 'src/generated/line-break-data.ts', 'tests/wrapping/fixtures/corpora.ts']
+2026-09-24 00:30:26,943 INFO campaign_run run f975172d4174: 0 candidate(s) in 47s; confirming
+2026-09-24 00:30:26,945 INFO campaign_run run f975172d4174 finished: ok, 0 confirmed of 0 candidate(s), 47s

@@ -1,0 +1,477 @@
+{
+ "C3": {
+  "gid": "gopls-r2-codeactionresolve-changed-codeaction-70b3e9",
+  "requested_line_now": "\tassert.Equal(t, \"root\", body)",
+  "line_above": "\tassert.Equal(t, http.StatusOK, status)",
+  "stale": {
+   "lines": [
+    "   82 | \tstatus, body := request(http.MethodGet, \"/health\", e)",
+    "   83 | \tassert.Equal(",
+    "   84 | \t\tt,",
+    "   85 | \t\thttp.StatusOK,",
+    "   86 | \t\tstatus,",
+    "   87 | \t)",
+    "   88 | \tassert.Equal(t, \"root\", body)",
+    "   89 | }"
+   ],
+   "gofmt": {
+    "cmd": "gofmt -e -l <scratch>/c3v2/stale.go",
+    "cwd": "<scratch>/c3v2",
+    "exit": 0,
+    "output": [
+     "<scratch>/c3v2/stale.go"
+    ]
+   }
+  },
+  "fresh": {
+   "lines": [
+    "   82 | \tstatus, body := request(http.MethodGet, \"/health\", e)",
+    "   83 | \tassert.Equal(t, http.StatusOK, status)",
+    "   84 | \tassert.Equal(",
+    "   85 | \t\tt,",
+    "   86 | \t\t\"root\",",
+    "   87 | \t\tbody,",
+    "   88 | \t)",
+    "   89 | }"
+   ],
+   "gofmt": {
+    "cmd": "gofmt -e -l <scratch>/c3v2/fresh.go",
+    "cwd": "<scratch>/c3v2",
+    "exit": 0,
+    "output": [
+     "<scratch>/c3v2/fresh.go"
+    ]
+   }
+  }
+ },
+ "C4": {
+  "gid": "rust-analyzer-r2-completionresolve-changed-completion-3170a1",
+  "returned": [
+   [
+    "textEdit",
+    407,
+    0,
+    406,
+    61,
+    "None$0"
+   ]
+  ],
+  "fresh": [
+   [
+    "textEdit",
+    408,
+    53,
+    408,
+    61,
+    "None$0"
+   ]
+  ],
+  "rules": {
+   "textEdit_0": {
+    "start_after_end": true,
+    "single_line": false
+   },
+   "textEdit_1": {
+    "start_after_end": false,
+    "single_line": true
+   }
+  }
+ },
+ "C5": [
+  {
+   "gid": "gopls-r4-diagnostics-extra-incompatibleassign-mutation-m2-ade1f0",
+   "project": "beego/beego@939cfde380bb",
+   "path": "client/cache/bloom_filter_cache.go",
+   "title": "Create variable expiration",
+   "tool": "go build -o /dev/null ./client/cache",
+   "states": {
+    "base": {
+     "go": {
+      "cmd": "go build -o /dev/null ./client/cache",
+      "cwd": "<scratch>/gopls-r4-diagnostics-extra-incompatibleassign-mutation-m2-ade1f0",
+      "exit": 0,
+      "output": []
+     },
+     "gofmt": {
+      "cmd": "gofmt -e -l <scratch>/gopls-r4-diagnostics-extra-incompatibleassign-mutation-m2-ade1f0/client/cache/bloom_filter_cache.go",
+      "cwd": "<scratch>/gopls-r4-diagnostics-extra-incompatibleassign-mutation-m2-ade1f0",
+      "exit": 0,
+      "output": []
+     }
+    },
+    "pre": {
+     "go": {
+      "cmd": "go build -o /dev/null ./client/cache",
+      "cwd": "<scratch>/gopls-r4-diagnostics-extra-incompatibleassign-mutation-m2-ade1f0",
+      "exit": 1,
+      "output": [
+       "# github.com/beego/beego/v2/client/cache",
+       "client/cache/bloom_filter_cache.go:48:15: undefined: expiration"
+      ]
+     },
+     "gofmt": {
+      "cmd": "gofmt -e -l <scratch>/gopls-r4-diagnostics-extra-incompatibleassign-mutation-m2-ade1f0/client/cache/bloom_filter_cache.go",
+      "cwd": "<scratch>/gopls-r4-diagnostics-extra-incompatibleassign-mutation-m2-ade1f0",
+      "exit": 0,
+      "output": []
+     }
+    },
+    "post": {
+     "go": {
+      "cmd": "go build -o /dev/null ./client/cache",
+      "cwd": "<scratch>/gopls-r4-diagnostics-extra-incompatibleassign-mutation-m2-ade1f0",
+      "exit": 1,
+      "output": [
+       "# github.com/beego/beego/v2/client/cache",
+       "client/cache/bloom_filter_cache.go:49:15: cannot use expiration (variable of type int) as \"time\".Duration value in struct literal"
+      ]
+     },
+     "gofmt": {
+      "cmd": "gofmt -e -l <scratch>/gopls-r4-diagnostics-extra-incompatibleassign-mutation-m2-ade1f0/client/cache/bloom_filter_cache.go",
+      "cwd": "<scratch>/gopls-r4-diagnostics-extra-incompatibleassign-mutation-m2-ade1f0",
+      "exit": 0,
+      "output": []
+     }
+    }
+   }
+  },
+  {
+   "gid": "gopls-r4-diagnostics-extra-mismatchedtypes-mutation-m2-dc6e94",
+   "project": "go-gorm/gorm@b3d3bf219f02",
+   "path": "schema/relationship.go",
+   "title": "Create variable BelonngsTo",
+   "tool": "go build -o /dev/null ./schema",
+   "states": {
+    "base": {
+     "go": {
+      "cmd": "go build -o /dev/null ./schema",
+      "cwd": "<scratch>/gopls-r4-diagnostics-extra-mismatchedtypes-mutation-m2-dc6e94",
+      "exit": 0,
+      "output": []
+     },
+     "gofmt": {
+      "cmd": "gofmt -e -l <scratch>/gopls-r4-diagnostics-extra-mismatchedtypes-mutation-m2-dc6e94/schema/relationship.go",
+      "cwd": "<scratch>/gopls-r4-diagnostics-extra-mismatchedtypes-mutation-m2-dc6e94",
+      "exit": 0,
+      "output": []
+     }
+    },
+    "pre": {
+     "go": {
+      "cmd": "go build -o /dev/null ./schema",
+      "cwd": "<scratch>/gopls-r4-diagnostics-extra-mismatchedtypes-mutation-m2-dc6e94",
+      "exit": 1,
+      "output": [
+       "# gorm.io/gorm/schema",
+       "schema/relationship.go:667:17: undefined: BelonngsTo"
+      ]
+     },
+     "gofmt": {
+      "cmd": "gofmt -e -l <scratch>/gopls-r4-diagnostics-extra-mismatchedtypes-mutation-m2-dc6e94/schema/relationship.go",
+      "cwd": "<scratch>/gopls-r4-diagnostics-extra-mismatchedtypes-mutation-m2-dc6e94",
+      "exit": 0,
+      "output": []
+     }
+    },
+    "post": {
+     "go": {
+      "cmd": "go build -o /dev/null ./schema",
+      "cwd": "<scratch>/gopls-r4-diagnostics-extra-mismatchedtypes-mutation-m2-dc6e94",
+      "exit": 1,
+      "output": [
+       "# gorm.io/gorm/schema",
+       "schema/relationship.go:668:17: invalid operation: rel.Type == BelonngsTo (mismatched types RelationshipType and string)"
+      ]
+     },
+     "gofmt": {
+      "cmd": "gofmt -e -l <scratch>/gopls-r4-diagnostics-extra-mismatchedtypes-mutation-m2-dc6e94/schema/relationship.go",
+      "cwd": "<scratch>/gopls-r4-diagnostics-extra-mismatchedtypes-mutation-m2-dc6e94",
+      "exit": 0,
+      "output": []
+     }
+    }
+   }
+  },
+  {
+   "gid": "gopls-r4-diagnostics-extra-nonsliceableoperand-mutation-m2-d80a9a",
+   "project": "evanw/esbuild@f6058f8364fe",
+   "path": "internal/css_parser/css_decls_transform.go",
+   "title": "Create variable arggs",
+   "tool": "go build -o /dev/null ./internal/css_parser",
+   "states": {
+    "base": {
+     "go": {
+      "cmd": "go build -o /dev/null ./internal/css_parser",
+      "cwd": "<scratch>/gopls-r4-diagnostics-extra-nonsliceableoperand-mutation-m2-d80a9a",
+      "exit": 0,
+      "output": []
+     },
+     "gofmt": {
+      "cmd": "gofmt -e -l <scratch>/gopls-r4-diagnostics-extra-nonsliceableoperand-mutation-m2-d80a9a/internal/css_parser/css_decls_transform.go",
+      "cwd": "<scratch>/gopls-r4-diagnostics-extra-nonsliceableoperand-mutation-m2-d80a9a",
+      "exit": 0,
+      "output": []
+     }
+    },
+    "pre": {
+     "go": {
+      "cmd": "go build -o /dev/null ./internal/css_parser",
+      "cwd": "<scratch>/gopls-r4-diagnostics-extra-nonsliceableoperand-mutation-m2-d80a9a",
+      "exit": 1,
+      "output": [
+       "# github.com/evanw/esbuild/internal/css_parser",
+       "internal/css_parser/css_decls_transform.go:261:26: undefined: arggs"
+      ]
+     },
+     "gofmt": {
+      "cmd": "gofmt -e -l <scratch>/gopls-r4-diagnostics-extra-nonsliceableoperand-mutation-m2-d80a9a/internal/css_parser/css_decls_transform.go",
+      "cwd": "<scratch>/gopls-r4-diagnostics-extra-nonsliceableoperand-mutation-m2-d80a9a",
+      "exit": 0,
+      "output": []
+     }
+    },
+    "post": {
+     "go": {
+      "cmd": "go build -o /dev/null ./internal/css_parser",
+      "cwd": "<scratch>/gopls-r4-diagnostics-extra-nonsliceableoperand-mutation-m2-d80a9a",
+      "exit": 1,
+      "output": [
+       "# github.com/evanw/esbuild/internal/css_parser",
+       "internal/css_parser/css_decls_transform.go:262:26: cannot slice arggs (variable of type int)"
+      ]
+     },
+     "gofmt": {
+      "cmd": "gofmt -e -l <scratch>/gopls-r4-diagnostics-extra-nonsliceableoperand-mutation-m2-d80a9a/internal/css_parser/css_decls_transform.go",
+      "cwd": "<scratch>/gopls-r4-diagnostics-extra-nonsliceableoperand-mutation-m2-d80a9a",
+      "exit": 0,
+      "output": []
+     }
+    }
+   }
+  },
+  {
+   "gid": "gopls-r4-diagnostics-extra-notatype-mutation-m2-477181",
+   "project": "labstack/echo@3d084be90224",
+   "path": "group_method_handling_test.go",
+   "title": "Create variable Conttext",
+   "tool": "go vet .",
+   "states": {
+    "base": {
+     "go": {
+      "cmd": "go vet .",
+      "cwd": "<scratch>/gopls-r4-diagnostics-extra-notatype-mutation-m2-477181",
+      "exit": 0,
+      "output": []
+     },
+     "gofmt": {
+      "cmd": "gofmt -e -l <scratch>/gopls-r4-diagnostics-extra-notatype-mutation-m2-477181/group_method_handling_test.go",
+      "cwd": "<scratch>/gopls-r4-diagnostics-extra-notatype-mutation-m2-477181",
+      "exit": 0,
+      "output": []
+     }
+    },
+    "pre": {
+     "go": {
+      "cmd": "go vet .",
+      "cwd": "<scratch>/gopls-r4-diagnostics-extra-notatype-mutation-m2-477181",
+      "exit": 1,
+      "output": [
+       "# github.com/labstack/echo/v5 [github.com/labstack/echo/v5.test]",
+       "./group_method_handling_test.go:47:26: undefined: Conttext"
+      ]
+     },
+     "gofmt": {
+      "cmd": "gofmt -e -l <scratch>/gopls-r4-diagnostics-extra-notatype-mutation-m2-477181/group_method_handling_test.go",
+      "cwd": "<scratch>/gopls-r4-diagnostics-extra-notatype-mutation-m2-477181",
+      "exit": 0,
+      "output": []
+     }
+    },
+    "post": {
+     "go": {
+      "cmd": "go vet .",
+      "cwd": "<scratch>/gopls-r4-diagnostics-extra-notatype-mutation-m2-477181",
+      "exit": 1,
+      "output": [
+       "# github.com/labstack/echo/v5 [github.com/labstack/echo/v5.test]",
+       "./group_method_handling_test.go:48:26: Conttext (local variable) is not a type"
+      ]
+     },
+     "gofmt": {
+      "cmd": "gofmt -e -l <scratch>/gopls-r4-diagnostics-extra-notatype-mutation-m2-477181/group_method_handling_test.go",
+      "cwd": "<scratch>/gopls-r4-diagnostics-extra-notatype-mutation-m2-477181",
+      "exit": 0,
+      "output": []
+     }
+    }
+   }
+  },
+  {
+   "gid": "gopls-r4-diagnostics-extra-untypedniluse-mutation-m2-354f70",
+   "project": "abiosoft/colima@bba803d3d6fa",
+   "path": "cmd/ssh.go",
+   "title": "Create variable sshCCmd",
+   "tool": "go build -o /dev/null ./cmd",
+   "states": {
+    "base": {
+     "go": {
+      "cmd": "go build -o /dev/null ./cmd",
+      "cwd": "<scratch>/gopls-r4-diagnostics-extra-untypedniluse-mutation-m2-354f70",
+      "exit": 0,
+      "output": []
+     },
+     "gofmt": {
+      "cmd": "gofmt -e -l <scratch>/gopls-r4-diagnostics-extra-untypedniluse-mutation-m2-354f70/cmd/ssh.go",
+      "cwd": "<scratch>/gopls-r4-diagnostics-extra-untypedniluse-mutation-m2-354f70",
+      "exit": 0,
+      "output": []
+     }
+    },
+    "pre": {
+     "go": {
+      "cmd": "go build -o /dev/null ./cmd",
+      "cwd": "<scratch>/gopls-r4-diagnostics-extra-untypedniluse-mutation-m2-354f70",
+      "exit": 1,
+      "output": [
+       "# github.com/abiosoft/colima/cmd",
+       "cmd/ssh.go:25:24: undefined: sshCCmd"
+      ]
+     },
+     "gofmt": {
+      "cmd": "gofmt -e -l <scratch>/gopls-r4-diagnostics-extra-untypedniluse-mutation-m2-354f70/cmd/ssh.go",
+      "cwd": "<scratch>/gopls-r4-diagnostics-extra-untypedniluse-mutation-m2-354f70",
+      "exit": 0,
+      "output": []
+     }
+    },
+    "post": {
+     "go": {
+      "cmd": "go build -o /dev/null ./cmd",
+      "cwd": "<scratch>/gopls-r4-diagnostics-extra-untypedniluse-mutation-m2-354f70",
+      "exit": 1,
+      "output": [
+       "# github.com/abiosoft/colima/cmd",
+       "cmd/ssh.go:25:13: use of untyped nil in assignment"
+      ]
+     },
+     "gofmt": {
+      "cmd": "gofmt -e -l <scratch>/gopls-r4-diagnostics-extra-untypedniluse-mutation-m2-354f70/cmd/ssh.go",
+      "cwd": "<scratch>/gopls-r4-diagnostics-extra-untypedniluse-mutation-m2-354f70",
+      "exit": 0,
+      "output": []
+     }
+    }
+   }
+  }
+ ],
+ "C7": {
+  "gid": "gopls-r4-diagnostics-extra-undeclaredname-mutation-m2-12380c",
+  "project": "abiosoft/colima@bba803d3d6fa",
+  "path": "core/core.go",
+  "title": "Remove variable qemuArch",
+  "tool": "go build -o /dev/null ./core",
+  "states": {
+   "base": {
+    "go": {
+     "cmd": "go build -o /dev/null ./core",
+     "cwd": "<scratch>/gopls-r4-diagnostics-extra-undeclaredname-mutation-m2-12380c",
+     "exit": 0,
+     "output": []
+    },
+    "gofmt": {
+     "cmd": "gofmt -e -l <scratch>/gopls-r4-diagnostics-extra-undeclaredname-mutation-m2-12380c/core/core.go",
+     "cwd": "<scratch>/gopls-r4-diagnostics-extra-undeclaredname-mutation-m2-12380c",
+     "exit": 0,
+     "output": []
+    }
+   },
+   "pre": {
+    "go": {
+     "cmd": "go build -o /dev/null ./core",
+     "cwd": "<scratch>/gopls-r4-diagnostics-extra-undeclaredname-mutation-m2-12380c",
+     "exit": 1,
+     "output": [
+      "# github.com/abiosoft/colima/core",
+      "core/core.go:25:2: declared and not used: qemuArch",
+      "core/core.go:31:95: undefined: qemurch"
+     ]
+    },
+    "gofmt": {
+     "cmd": "gofmt -e -l <scratch>/gopls-r4-diagnostics-extra-undeclaredname-mutation-m2-12380c/core/core.go",
+     "cwd": "<scratch>/gopls-r4-diagnostics-extra-undeclaredname-mutation-m2-12380c",
+     "exit": 0,
+     "output": []
+    }
+   },
+   "post": {
+    "go": {
+     "cmd": "go build -o /dev/null ./core",
+     "cwd": "<scratch>/gopls-r4-diagnostics-extra-undeclaredname-mutation-m2-12380c",
+     "exit": 1,
+     "output": [
+      "# github.com/abiosoft/colima/core",
+      "core/core.go:26:3: undefined: qemuArch",
+      "core/core.go:30:95: undefined: qemurch"
+     ]
+    },
+    "gofmt": {
+     "cmd": "gofmt -e -l <scratch>/gopls-r4-diagnostics-extra-undeclaredname-mutation-m2-12380c/core/core.go",
+     "cwd": "<scratch>/gopls-r4-diagnostics-extra-undeclaredname-mutation-m2-12380c",
+     "exit": 0,
+     "output": []
+    }
+   }
+  }
+ },
+ "C9": {
+  "gid": "gopls-r1-references-extra-h5-e2e003",
+  "query_line": "\t\tt.Errorf(\"Count should work, but got err %v\", err)",
+  "extra": [
+   {
+    "loc": [
+     "statement_test.go",
+     31,
+     6,
+     31,
+     12
+    ],
+    "text": "Errorf",
+    "line": "t.Errorf(\"Where conditions should be different\")"
+   },
+   {
+    "loc": [
+     "statement_test.go",
+     40,
+     4,
+     40,
+     10
+    ],
+    "text": "Errorf",
+    "line": "t.Errorf(\"Nil condition should be empty\")"
+   },
+   {
+    "loc": [
+     "statement_test.go",
+     66,
+     5,
+     66,
+     11
+    ],
+    "text": "Errorf",
+    "line": "t.Errorf(\"failed to match value: %v, got %v, expect: %v\", k, []string{table, column}, v)"
+   }
+  ],
+  "package_clause": "package gorm",
+  "go_list": {
+   "cmd": "go list -test -f {{.ImportPath}} {{.TestGoFiles}} .",
+   "cwd": "<repo>/temp/corpus/go-gorm__gorm@b3d3bf219f02",
+   "exit": 0,
+   "output": [
+    "gorm.io/gorm [statement_test.go]",
+    "gorm.io/gorm.test []",
+    "gorm.io/gorm [gorm.io/gorm.test] [statement_test.go]",
+    "gorm.io/gorm_test [gorm.io/gorm.test] []"
+   ]
+  }
+ }
+}

@@ -1,0 +1,3 @@
+2026-11-18 09:01:24,750 INFO campaign_run run a15a37fee312: r2_handles on ts7 7.0.2, mifi/lossless-cut@85cb95f6aeae seed 1 settled, targets ['src/common/util.ts', 'src/renderer/src/edlFormats.test.ts', 'src/renderer/src/worker/eval.ts']
+2026-11-18 09:02:28,936 INFO campaign_run run a15a37fee312: 0 candidate(s) in 64s; confirming
+2026-11-18 09:02:28,937 INFO campaign_run run a15a37fee312 finished: ok, 0 confirmed of 0 candidate(s), 64s

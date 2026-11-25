@@ -1,0 +1,6 @@
+<scheduler message>
+2026-11-17 21:39:35,615 INFO release_sweep gopls v0.24.0: ok (local-Go build)
+2026-11-17 21:39:50,647 INFO release_sweep rust-analyzer 2026-11-16: ok (release asset; rust-analyzer 0.3.3121-standalone (946b80a756 2026-11-15))
+2026-11-17 21:39:57,387 INFO release_sweep tsserver 6.0.3+tsls6.1.0: ok (npm typescript@6.0.3 typescript-language-server@6.1.0)
+2026-11-17 21:39:59,522 INFO release_sweep ts7 7.0.2: ok (npm typescript@7.0.2 (@typescript/typescript-darwin-arm64@7.0.2))
+2026-11-17 21:39:59,523 INFO release_sweep 4 build(s) checked; unavailable: none

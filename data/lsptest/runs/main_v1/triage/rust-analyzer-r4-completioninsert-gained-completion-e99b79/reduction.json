@@ -1,0 +1,23 @@
+{
+ "vid": "1d56fa44ae9e-v00",
+ "ops_before": 0,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 0,
+ "cache_hits": 0,
+ "reduce_seconds": 0.0,
+ "budget_exhausted": false,
+ "probe_log": [],
+ "logs": [
+  "rust-analyzer-2026-09-21-tre99b79-r4-replay-case-20260925-172005-40ceaf.jsonl.gz",
+  "rust-analyzer-2026-09-21-tre99b79-r4-replay-control-20260925-172105-d13d16.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [],
+  "actual": [
+   "expected one of `.`, `;`, `?`, `}`, or an operator, found `!`"
+  ]
+ },
+ "ops_after": 0,
+ "total_seconds": 525.8
+}

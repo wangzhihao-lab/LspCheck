@@ -1,0 +1,480 @@
+{
+ "format": 1,
+ "campaign": "main_v2",
+ "vid": "d3ee1c1f093d-v00",
+ "run_id": "d3ee1c1f093d",
+ "oracle": "r3_routes",
+ "server": {
+  "kind": "pyright",
+  "version": "1.1.414"
+ },
+ "project": {
+  "name": "soimort/you-get@049548f3f3f3",
+  "source": "corpus",
+  "ref": "temp/corpus/soimort__you-get@049548f3f3f3",
+  "commit": "049548f3f3f35e67ba8d3181c71fdc71d11cf260",
+  "language": "python"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "src/you_get/extractors/icourses.py",
+    "positions": [
+     [
+      41,
+      40
+     ],
+     [
+      52,
+      14
+     ],
+     [
+      66,
+      34
+     ],
+     [
+      73,
+      34
+     ],
+     [
+      105,
+      62
+     ],
+     [
+      155,
+      14
+     ],
+     [
+      162,
+      39
+     ],
+     [
+      182,
+      14
+     ],
+     [
+      233,
+      27
+     ],
+     [
+      235,
+      14
+     ],
+     [
+      253,
+      36
+     ],
+     [
+      269,
+      50
+     ]
+    ],
+    "ends": [
+     [
+      41,
+      45
+     ],
+     [
+      52,
+      16
+     ],
+     [
+      66,
+      36
+     ],
+     [
+      73,
+      35
+     ],
+     [
+      105,
+      65
+     ],
+     [
+      155,
+      16
+     ],
+     [
+      162,
+      43
+     ],
+     [
+      182,
+      16
+     ],
+     [
+      233,
+      31
+     ],
+     [
+      235,
+      21
+     ],
+     [
+      253,
+      40
+     ],
+     [
+      269,
+      54
+     ]
+    ],
+    "names": [
+     "update_url",
+     "page",
+     "page",
+     "i",
+     "group",
+     "page",
+     "res_patt",
+     "url",
+     "api_res",
+     "basic_extract",
+     "get_sign",
+     "api_data"
+    ]
+   },
+   {
+    "path": "src/you_get/extractors/lrts.py",
+    "positions": [
+     [
+      6,
+      26
+     ],
+     [
+      8,
+      28
+     ],
+     [
+      19,
+      31
+     ],
+     [
+      46,
+      66
+     ],
+     [
+      47,
+      10
+     ],
+     [
+      50,
+      33
+     ],
+     [
+      61,
+      63
+     ],
+     [
+      64,
+      15
+     ],
+     [
+      66,
+      20
+     ],
+     [
+      67,
+      57
+     ],
+     [
+      69,
+      10
+     ],
+     [
+      70,
+      18
+     ]
+    ],
+    "ends": [
+     [
+      6,
+      28
+     ],
+     [
+      8,
+      33
+     ],
+     [
+      19,
+      34
+     ],
+     [
+      46,
+      70
+     ],
+     [
+      47,
+      12
+     ],
+     [
+      50,
+      36
+     ],
+     [
+      61,
+      71
+     ],
+     [
+      64,
+      19
+     ],
+     [
+      66,
+      23
+     ],
+     [
+      67,
+      59
+     ],
+     [
+      69,
+      12
+     ],
+     [
+      70,
+      20
+     ]
+    ],
+    "names": [
+     "term",
+     "output_dir",
+     "group",
+     "page_url",
+     "data",
+     "parse",
+     "response_content",
+     "logging",
+     "filter",
+     "len",
+     "item",
+     "item"
+    ]
+   },
+   {
+    "path": "src/you_get/extractors/qie_video.py",
+    "positions": [
+     [
+      1,
+      11
+     ],
+     [
+      13,
+      10
+     ],
+     [
+      20,
+      9
+     ],
+     [
+      34,
+      14
+     ],
+     [
+      39,
+      14
+     ],
+     [
+      44,
+      49
+     ],
+     [
+      53,
+      61
+     ],
+     [
+      53,
+      75
+     ],
+     [
+      54,
+      93
+     ],
+     [
+      64,
+      18
+     ],
+     [
+      66,
+      22
+     ],
+     [
+      76,
+      7
+     ]
+    ],
+    "ends": [
+     [
+      1,
+      16
+     ],
+     [
+      13,
+      16
+     ],
+     [
+      20,
+      11
+     ],
+     [
+      34,
+      16
+     ],
+     [
+      39,
+      17
+     ],
+     [
+      44,
+      56
+     ],
+     [
+      53,
+      72
+     ],
+     [
+      53,
+      77
+     ],
+     [
+      54,
+      95
+     ],
+     [
+      64,
+      22
+     ],
+     [
+      66,
+      25
+     ],
+     [
+      76,
+      15
+     ]
+    ],
+    "names": [
+     "extractor",
+     "stream_types",
+     "hit",
+     "self",
+     "video",
+     "video_profile",
+     "general_m3u8_extractor",
+     "self",
+     "dur",
+     "trimmed",
+     "t_str",
+     "download_by_url"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "definitionConsistency",
+  "path": "src/you_get/common.py",
+  "line": 181,
+  "character": 15,
+  "extra": "from:src/you_get/extractors/qie_video.py:53:61"
+ },
+ "ops": [],
+ "case": {
+  "loc": [
+   "src/you_get/common.py",
+   181,
+   4,
+   181,
+   26
+  ],
+  "sub": "d",
+  "target": [
+   "src/you_get/extractors/qie_video.py",
+   53,
+   61
+  ]
+ },
+ "shape": "definitionConsistency:missing",
+ "signature": "pyright|r3_routes|definitionConsistency:missing",
+ "expected": [
+  [
+   "src/you_get/common.py",
+   181,
+   4,
+   181,
+   26
+  ],
+  [
+   "src/you_get/extractors/qie_video.py",
+   56,
+   4,
+   56,
+   26
+  ]
+ ],
+ "actual": [
+  [
+   "src/you_get/common.py",
+   181,
+   4,
+   181,
+   26
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "flake 3/3 [r1:SCR r2:SCR r3:SCR] in 39s",
+ "violation": {
+  "oracle": "r3_routes",
+  "server": "pyright-1.1.414",
+  "project": "soimort/you-get@049548f3f3f3",
+  "key": {
+   "method": "definitionConsistency",
+   "path": "src/you_get/common.py",
+   "line": 181,
+   "character": 15,
+   "extra": "from:src/you_get/extractors/qie_video.py:53:61"
+  },
+  "expected": [
+   [
+    "src/you_get/common.py",
+    181,
+    4,
+    181,
+    26
+   ],
+   [
+    "src/you_get/extractors/qie_video.py",
+    56,
+    4,
+    56,
+    26
+   ]
+  ],
+  "actual": [
+   [
+    "src/you_get/common.py",
+    181,
+    4,
+    181,
+    26
+   ]
+  ],
+  "ops": [],
+  "detail": "{\"case\": {\"loc\": [\"src/you_get/common.py\", 181, 4, 181, 26], \"sub\": \"d\", \"target\": [\"src/you_get/extractors/qie_video.py\", 53, 61]}, \"note\": \"flake 3/3 [r1:SCR r2:SCR r3:SCR] in 39s\", \"shape\": \"definitionConsistency:missing\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "pyright|r3_routes|definitionConsistency:missing",
+  "run_id": "d3ee1c1f093d"
+ },
+ "replay_logs": [
+  "logs/pyright-1.1.414-d3ee1c1f093d-r3-replay-baseline-20261118-084716-1c049f.jsonl.gz",
+  "logs/pyright-1.1.414-d3ee1c1f093d-r3-replay-control-20261118-084722-7002ac.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

@@ -1,0 +1,72 @@
+{
+ "schema": 1,
+ "id": "gopls-73576",
+ "meta": {
+  "server": "gopls",
+  "kind": "gopls",
+  "number": 73576,
+  "url": "https://github.com/golang/go/issues/73576",
+  "title": "x/tools/gopls/internal/analysis/modernize: minmax offers invalid fix when pattern appears beneath \"else\"",
+  "oracle_class": "R4",
+  "subtype": "quickfix",
+  "fix_ref": "golang/tools@81de76b22eab (gopls/internal/analysis/modernize: fix bug in minmax analyzer that incorrectly handles nested if-else)",
+  "fix_shas": [
+   "81de76b22eab23fdb2bb335a9bff16b599853f4c"
+  ],
+  "pre_version": "v0.18.1",
+  "post_version": "v0.19.0",
+  "pre_build": "v0.18.1",
+  "post_build": "v0.19.0",
+  "toolchain": "go1.24.4",
+  "build_notes": "Both built and run with go1.24.4 (golang.org/dl, under temp/lsp_servers/go-sdks; toolchain.json): the local go1.27 cannot build v0.18.1, go1.24.0 (current when v0.18.1 was tagged, 2025-02-24) cannot build v0.19.0 (its go.mod requires go >= 1.24.2), and go1.24.4 was the current Go release when v0.19.0 was tagged (2025-06-10). The fix merged 2025-05-29.",
+  "candidate_rank": 52,
+  "effort_minutes": 5,
+  "notes": "The minmax pass matched the inner 'if/else' of an else-if chain and replaced it by an assignment, leaving 'else f.focusedElement = min(...)', which is not valid syntax. The fix's regression test (nopeIfElseIf) expects no fix for an if/else-if/else chain."
+ },
+ "language": "go",
+ "settings": {},
+ "settings_note": "The modernize analyzer is on by default in both builds; the reporter ran the modernize command, which runs the same analyzer.",
+ "session": {
+  "settle_timeout_s": 180
+ },
+ "files": [
+  {
+   "path": "main.go",
+   "provenance": "issue",
+   "source": "issue body, 'What did you do?' code block",
+   "note": ""
+  },
+  {
+   "path": "go.mod",
+   "provenance": "scaffold",
+   "source": "",
+   "note": "a module around the file (the reporter used go 1.24.2 and gives no go.mod); go 1.24 (min/max need go1.21)"
+  }
+ ],
+ "repro": {
+  "attempt": 1,
+  "timing": "settled",
+  "steps": "Open main.go. The minmax pass reports the if/else-if/else chain in SetFocus ('if/else statement can be modernized using min'). Apply its fix ('Replace if statement with min'). Reported (with the modernize command): '} else f.focusedElement = min(index, len(f.items) + len(f.buttons))', a syntax error ('else must be followed by if or statement block'). Probe: the edited text must have no parse error that the original did not have; no fix offered means absent (the fix stops offering it).",
+  "ops": [
+   {
+    "kind": "open",
+    "path": "main.go"
+   }
+  ],
+  "probe": {
+   "type": "edit_breaks_syntax",
+   "params": {
+    "edit": {
+     "via": "code_action",
+     "path": "main.go",
+     "diagnostic": {
+      "message_re": "modernized using min"
+     },
+     "title_re": "with min",
+     "missing": "absent"
+    }
+   }
+  }
+ },
+ "attempts": []
+}

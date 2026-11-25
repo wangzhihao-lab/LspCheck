@@ -1,0 +1,155 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "a884f55f15a4-v00",
+ "run_id": "a884f55f15a4",
+ "oracle": "r3_routes",
+ "server": {
+  "kind": "pyright",
+  "version": "1.1.414"
+ },
+ "project": {
+  "name": "pallets/flask@d73fa1cdcbd8",
+  "source": "corpus",
+  "ref": "temp/corpus/pallets__flask@d73fa1cdcbd8",
+  "commit": "d73fa1cdcbd8b1465c151db8924ba58b1dd14e35",
+  "language": "python"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "src/flask/json/tag.py",
+    "positions": [],
+    "ends": [],
+    "names": []
+   },
+   {
+    "path": "src/flask/wrappers.py",
+    "positions": [
+     [
+      89,
+      22
+     ]
+    ],
+    "ends": [],
+    "names": [
+     ""
+    ]
+   },
+   {
+    "path": "tests/type_check/typing_route.py",
+    "positions": [],
+    "ends": [],
+    "names": []
+   }
+  ]
+ },
+ "key": {
+  "method": "definitionConsistency",
+  "path": "src/flask/wrappers.py",
+  "line": 89,
+  "character": 22,
+  "extra": "from:src/flask/wrappers.py:54:13"
+ },
+ "ops": [],
+ "case": {
+  "loc": [
+   "src/flask/wrappers.py",
+   89,
+   13,
+   89,
+   32
+  ],
+  "sub": "d",
+  "target": [
+   "src/flask/wrappers.py",
+   54,
+   13
+  ]
+ },
+ "shape": "definitionConsistency:missing",
+ "signature": "pyright|r3_routes|definitionConsistency:missing",
+ "expected": [
+  [
+   "src/flask/wrappers.py",
+   54,
+   4,
+   54,
+   23
+  ],
+  [
+   "src/flask/wrappers.py",
+   89,
+   13,
+   89,
+   32
+  ]
+ ],
+ "actual": [
+  [
+   "src/flask/wrappers.py",
+   54,
+   4,
+   54,
+   23
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "flake 3/3 [r1:SCR r2:SCR r3:SCR] in 36s",
+ "violation": {
+  "oracle": "r3_routes",
+  "server": "pyright-1.1.414",
+  "project": "pallets/flask@d73fa1cdcbd8",
+  "key": {
+   "method": "definitionConsistency",
+   "path": "src/flask/wrappers.py",
+   "line": 89,
+   "character": 22,
+   "extra": "from:src/flask/wrappers.py:54:13"
+  },
+  "expected": [
+   [
+    "src/flask/wrappers.py",
+    54,
+    4,
+    54,
+    23
+   ],
+   [
+    "src/flask/wrappers.py",
+    89,
+    13,
+    89,
+    32
+   ]
+  ],
+  "actual": [
+   [
+    "src/flask/wrappers.py",
+    54,
+    4,
+    54,
+    23
+   ]
+  ],
+  "ops": [],
+  "detail": "{\"case\": {\"loc\": [\"src/flask/wrappers.py\", 89, 13, 89, 32], \"sub\": \"d\", \"target\": [\"src/flask/wrappers.py\", 54, 13]}, \"note\": \"flake 3/3 [r1:SCR r2:SCR r3:SCR] in 36s\", \"shape\": \"definitionConsistency:missing\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "pyright|r3_routes|definitionConsistency:missing",
+  "run_id": "a884f55f15a4"
+ },
+ "replay_logs": [
+  "logs/pyright-1.1.414-tr81a7e5-r3-replay-baseline-20260925-174423-657e04.jsonl.gz",
+  "logs/pyright-1.1.414-tr81a7e5-r3-replay-control-20260925-174426-7a516d.jsonl.gz"
+ ],
+ "project_files": {},
+ "group": "pyright-r3-definitionconsistency-missing-d-81a7e5",
+ "reduced": true
+}

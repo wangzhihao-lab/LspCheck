@@ -1,0 +1,3 @@
+2026-09-25 12:05:51,885 INFO campaign_run run e1a2391518bd: r3_routes on gopls v0.8.3, gopls-52500 seed 2 settled, targets ['main_test.go', 'other_test.go']
+2026-09-25 12:06:23,868 INFO campaign_run run e1a2391518bd: 0 candidate(s) in 32s; confirming
+2026-09-25 12:06:23,869 INFO campaign_run run e1a2391518bd finished: ok, 0 confirmed of 0 candidate(s), 32s

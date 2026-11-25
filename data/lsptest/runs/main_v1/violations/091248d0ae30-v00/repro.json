@@ -1,0 +1,503 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "091248d0ae30-v00",
+ "run_id": "091248d0ae30",
+ "oracle": "r2_handles",
+ "server": {
+  "kind": "rust-analyzer",
+  "version": "2026-09-21"
+ },
+ "project": {
+  "name": "AlexsJones/llmfit@2ffe4fd899a6",
+  "source": "corpus",
+  "ref": "temp/corpus/AlexsJones__llmfit@2ffe4fd899a6",
+  "commit": "2ffe4fd899a66852dda82783da7ab8390f084d1c",
+  "language": "rust"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "llmfit-core/src/analysis.rs",
+    "positions": [
+     [
+      0,
+      37
+     ],
+     [
+      94,
+      21
+     ],
+     [
+      132,
+      19
+     ],
+     [
+      153,
+      13
+     ],
+     [
+      297,
+      41
+     ],
+     [
+      300,
+      40
+     ],
+     [
+      307,
+      32
+     ],
+     [
+      321,
+      15
+     ],
+     [
+      342,
+      23
+     ],
+     [
+      355,
+      68
+     ],
+     [
+      369,
+      22
+     ],
+     [
+      414,
+      17
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      45
+     ],
+     [
+      94,
+      25
+     ],
+     [
+      132,
+      24
+     ],
+     [
+      153,
+      15
+     ],
+     [
+      297,
+      49
+     ],
+     [
+      300,
+      47
+     ],
+     [
+      307,
+      37
+     ],
+     [
+      321,
+      27
+     ],
+     [
+      342,
+      30
+     ],
+     [
+      355,
+      76
+     ],
+     [
+      369,
+      26
+     ],
+     [
+      414,
+      23
+     ]
+    ],
+    "names": [
+     "InferenceRuntime",
+     "llamacpp",
+     "providers",
+     "out",
+     "rankable_models",
+     "forced_runtime",
+     "installed",
+     "apply_local_calibration",
+     "estimate_basis",
+     "CommunityLlmfit",
+     "iter_mut",
+     "gpu_vram_gb"
+    ]
+   },
+   {
+    "path": "llmfit-tui/src/filter_config.rs",
+    "positions": [
+     [
+      0,
+      29
+     ],
+     [
+      2,
+      10
+     ],
+     [
+      14,
+      32
+     ],
+     [
+      22,
+      44
+     ],
+     [
+      23,
+      29
+     ],
+     [
+      23,
+      44
+     ],
+     [
+      35,
+      17
+     ],
+     [
+      35,
+      38
+     ],
+     [
+      51,
+      31
+     ],
+     [
+      52,
+      21
+     ],
+     [
+      73,
+      20
+     ],
+     [
+      83,
+      48
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      34
+     ],
+     [
+      2,
+      11
+     ],
+     [
+      14,
+      35
+     ],
+     [
+      22,
+      46
+     ],
+     [
+      23,
+      33
+     ],
+     [
+      23,
+      46
+     ],
+     [
+      35,
+      26
+     ],
+     [
+      35,
+      41
+     ],
+     [
+      51,
+      36
+     ],
+     [
+      52,
+      30
+     ],
+     [
+      73,
+      24
+     ],
+     [
+      83,
+      50
+     ]
+    ],
+    "names": [
+     "Serialize",
+     "fs",
+     "Option",
+     "bool",
+     "HashMap",
+     "bool",
+     "filter_mem_pct_max",
+     "String",
+     "serde_json",
+     "unwrap_or_default",
+     "selected",
+     "sel"
+    ]
+   },
+   {
+    "path": "llmfit-tui/src/serve_api.rs",
+    "positions": [
+     [
+      20,
+      6
+     ],
+     [
+      411,
+      27
+     ],
+     [
+      467,
+      65
+     ],
+     [
+      479,
+      16
+     ],
+     [
+      555,
+      6
+     ],
+     [
+      773,
+      57
+     ],
+     [
+      780,
+      16
+     ],
+     [
+      816,
+      32
+     ],
+     [
+      828,
+      67
+     ],
+     [
+      878,
+      43
+     ],
+     [
+      957,
+      15
+     ],
+     [
+      1110,
+      27
+     ]
+    ],
+    "ends": [
+     [
+      20,
+      9
+     ],
+     [
+      411,
+      30
+     ],
+     [
+      467,
+      71
+     ],
+     [
+      479,
+      20
+     ],
+     [
+      555,
+      9
+     ],
+     [
+      773,
+      64
+     ],
+     [
+      780,
+      18
+     ],
+     [
+      816,
+      35
+     ],
+     [
+      828,
+      75
+     ],
+     [
+      878,
+      48
+     ],
+     [
+      957,
+      18
+     ],
+     [
+      1110,
+      31
+     ]
+    ],
+    "names": [
+     "serde",
+     "clone",
+     "is_available",
+     "runtimes",
+     "State",
+     "context_limit",
+     "Err",
+     "label",
+     "InferenceRuntime",
+     "cpu_cores",
+     "value",
+     "response"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "completionResolve",
+  "path": "llmfit-core/src/analysis.rs",
+  "line": 300,
+  "character": 47,
+  "extra": "end|above2|Box|22|null|7ffffff6|0"
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "llmfit-core/src/analysis.rs"
+  },
+  {
+   "kind": "change",
+   "path": "llmfit-core/src/analysis.rs",
+   "start": [
+    300,
+    0
+   ],
+   "end": [
+    300,
+    0
+   ],
+   "text": "\n\n"
+  }
+ ],
+ "case": {
+  "extra": "end",
+  "path": "llmfit-core/src/analysis.rs",
+  "shift": {
+   "col": 0,
+   "line": 300,
+   "text": "\n\n",
+   "variant": "above"
+  },
+  "sub": "completion",
+  "where": [
+   300,
+   47
+  ]
+ },
+ "shape": "completionResolve:changed",
+ "signature": "rust-analyzer|r2_handles|completionResolve:changed",
+ "expected": [
+  [
+   "textEdit",
+   302,
+   33,
+   302,
+   47,
+   "Box"
+  ]
+ ],
+ "actual": [
+  [
+   "textEdit",
+   301,
+   0,
+   300,
+   47,
+   "Box"
+  ]
+ ],
+ "reproduced": "0/3",
+ "note": "flake 0/3 [r1:scr+retry r2:scr+retry r3:scr+retry] in 1820s",
+ "violation": {
+  "oracle": "r2_handles",
+  "server": "rust-analyzer-2026-09-21",
+  "project": "AlexsJones/llmfit@2ffe4fd899a6",
+  "key": {
+   "method": "completionResolve",
+   "path": "llmfit-core/src/analysis.rs",
+   "line": 300,
+   "character": 47,
+   "extra": "end|above2|Box|22|null|7ffffff6|0"
+  },
+  "expected": [
+   [
+    "textEdit",
+    302,
+    33,
+    302,
+    47,
+    "Box"
+   ]
+  ],
+  "actual": [
+   [
+    "textEdit",
+    301,
+    0,
+    300,
+    47,
+    "Box"
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "llmfit-core/src/analysis.rs"
+   },
+   {
+    "kind": "change",
+    "path": "llmfit-core/src/analysis.rs",
+    "start": [
+     300,
+     0
+    ],
+    "end": [
+     300,
+     0
+    ],
+    "text": "\n\n"
+   }
+  ],
+  "detail": "{\"case\": {\"extra\": \"end\", \"path\": \"llmfit-core/src/analysis.rs\", \"shift\": {\"col\": 0, \"line\": 300, \"text\": \"\\n\\n\", \"variant\": \"above\"}, \"sub\": \"completion\", \"where\": [300, 47]}, \"note\": \"flake 0/3 [r1:scr+retry r2:scr+retry r3:scr+retry] in 1820s\", \"shape\": \"completionResolve:changed\"}",
+  "reproduced": "0/3",
+  "reduced_ops": [],
+  "signature": "rust-analyzer|r2_handles|completionResolve:changed",
+  "run_id": "091248d0ae30"
+ },
+ "replay_logs": [],
+ "project_files": {},
+ "incomplete": false
+}

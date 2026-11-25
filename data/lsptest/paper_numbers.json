@@ -1,0 +1,7387 @@
+{
+ "setup": {
+  "main_v1": {
+   "servers": [
+    {
+     "kind": "pyright",
+     "version": "1.1.414",
+     "package_version": "1.1.414",
+     "label": "pyright-1.1.414"
+    },
+    {
+     "kind": "ts6",
+     "version": "6.0.3",
+     "package_version": "6.0.0",
+     "label": "ts6-6.0.3"
+    },
+    {
+     "kind": "ts7",
+     "version": "7.0.2",
+     "package_version": "7.0.2",
+     "label": "ts7-7.0.2"
+    },
+    {
+     "kind": "rust-analyzer",
+     "version": "2026-09-21",
+     "package_version": "",
+     "label": "rust-analyzer-2026-09-21"
+    },
+    {
+     "kind": "gopls",
+     "version": "v0.23.0",
+     "package_version": "",
+     "label": "gopls-v0.23.0"
+    }
+   ],
+   "corpus": {
+    "selection_cutoff": "2026-03-23",
+    "selected_on": "2026-09-23",
+    "projects": 40,
+    "projects_by_language": {
+     "go": 10,
+     "python": 10,
+     "rust": 10,
+     "typescript": 10
+    },
+    "projects_prepared": 40,
+    "pairs": 50,
+    "pairs_by_server": {
+     "gopls": 10,
+     "pyright": 10,
+     "rust-analyzer": 10,
+     "ts6": 10,
+     "ts7": 10
+    },
+    "eligible_pairs": 50,
+    "forced_pairs": [
+     {
+      "server": "ts6",
+      "project": "ChatGPTNextWeb/NextChat@defdcdb55d85",
+      "reason": "the corpus probe did not settle because of a URI-encoding bug in the probe; the engine settles this pair in 5 s"
+     }
+    ],
+    "excluded_pairs": 0
+   },
+   "runs_planned": 720,
+   "runs_planned_by_oracle": {
+    "r0_crash": 50,
+    "r1_history": 250,
+    "r2_handles": 100,
+    "r3_routes": 100,
+    "r4_edits": 100,
+    "r5_transforms": 100,
+    "r6_crossimpl": 20
+   },
+   "runs_planned_by_server": {
+    "gopls": 140,
+    "pyright": 140,
+    "rust-analyzer": 140,
+    "ts6": 140,
+    "ts7": 160
+   },
+   "runs_recorded": 720,
+   "oracles": {
+    "r0_crash": {
+     "seeds": {
+      "settled": [
+       1
+      ]
+     }
+    },
+    "r1_history": {
+     "max_cases": 12,
+     "seeds": {
+      "settled": [
+       1,
+       2,
+       3
+      ],
+      "race0": [
+       1
+      ],
+      "race200": [
+       1
+      ]
+     }
+    },
+    "r2_handles": {
+     "max_cases": 12,
+     "seeds": {
+      "settled": [
+       1,
+       2
+      ]
+     }
+    },
+    "r3_routes": {
+     "seeds": {
+      "settled": [
+       1,
+       2
+      ]
+     }
+    },
+    "r4_edits": {
+     "max_cases": 12,
+     "seeds": {
+      "settled": [
+       1,
+       2
+      ]
+     }
+    },
+    "r5_transforms": {
+     "max_cases": 6,
+     "seeds": {
+      "settled": [
+       1,
+       2
+      ]
+     }
+    },
+    "r6_crossimpl": {
+     "seeds": {
+      "settled": [
+       1,
+       2
+      ]
+     },
+     "servers": [
+      "ts7"
+     ]
+    }
+   },
+   "runs_by_timing": {
+    "race0": 50,
+    "race200": 50,
+    "settled": 620
+   },
+   "runs_by_oracle_timing": {
+    "r0_crash": {
+     "race0": 0,
+     "race200": 0,
+     "settled": 50
+    },
+    "r1_history": {
+     "race0": 50,
+     "race200": 50,
+     "settled": 150
+    },
+    "r2_handles": {
+     "race0": 0,
+     "race200": 0,
+     "settled": 100
+    },
+    "r3_routes": {
+     "race0": 0,
+     "race200": 0,
+     "settled": 100
+    },
+    "r4_edits": {
+     "race0": 0,
+     "race200": 0,
+     "settled": 100
+    },
+    "r5_transforms": {
+     "race0": 0,
+     "race200": 0,
+     "settled": 100
+    },
+    "r6_crossimpl": {
+     "race0": 0,
+     "race200": 0,
+     "settled": 20
+    }
+   },
+   "targets": {
+    "max_files": 3,
+    "max_positions_per_file": 12,
+    "max_file_bytes": 256000
+   },
+   "timeouts_s": {
+    "settle_s": 300,
+    "request_s": 30,
+    "run_s": 7200
+   },
+   "concurrency": 4,
+   "server_limits": {
+    "rust-analyzer": 2
+   },
+   "flake": {
+    "n": 3,
+    "per_signature": 1
+   },
+   "signature_cap": {
+    "runs": 3,
+    "scope": "campaign"
+   },
+   "wall_clock": {
+    "part1_other_oracles": {
+     "runs": 470,
+     "start": "2026-09-23 14:53:58",
+     "end": "2026-09-24 04:28:23",
+     "hours": 13.57
+    },
+    "part2_r1_history": {
+     "runs": 250,
+     "start": "2026-09-24 04:29:08",
+     "end": "2026-09-24 13:35:12",
+     "hours": 9.1
+    }
+   },
+   "run_hours": {
+    "part1_other_oracles": 48.23,
+    "part2_r1_history": 35.94
+   },
+   "invocations": [
+    {
+     "started": "2026-09-23 14:53:58",
+     "finished": "2026-09-24 04:28:23",
+     "elapsed_s": 48864.9,
+     "runs": 470
+    },
+    {
+     "started": "2026-09-24 04:29:08",
+     "finished": "2026-09-24 13:35:12",
+     "elapsed_s": 32764.2,
+     "runs": 250
+    }
+   ],
+   "machine": {
+    "platform": "macOS-27.0-arm64-arm-64bit-Mach-O",
+    "mac_ver": "27.0",
+    "machine": "arm64",
+    "python": "3.14.7",
+    "cpus": 10
+   }
+  },
+  "bench_v1": {
+   "cases": 80,
+   "spec_probe_cases": 6,
+   "builds": 115,
+   "builds_by_kind": {
+    "gopls": 28,
+    "jdtls": 4,
+    "pyright": 24,
+    "rust-analyzer": 31,
+    "tsserver": 28
+   },
+   "oracles": {
+    "r0_crash": {
+     "seeds": {
+      "settled": [
+       1,
+       2
+      ]
+     }
+    },
+    "r1_history": {
+     "max_cases": 12,
+     "seeds": {
+      "settled": [
+       1,
+       2,
+       3
+      ],
+      "race0": [
+       1
+      ]
+     }
+    },
+    "r2_handles": {
+     "max_cases": 12,
+     "seeds": {
+      "settled": [
+       1,
+       2
+      ]
+     }
+    },
+    "r3_routes": {
+     "seeds": {
+      "settled": [
+       1,
+       2
+      ]
+     }
+    },
+    "r4_edits": {
+     "max_cases": 12,
+     "seeds": {
+      "settled": [
+       1,
+       2
+      ]
+     }
+    },
+    "r5_transforms": {
+     "max_cases": 6,
+     "seeds": {
+      "settled": [
+       1,
+       2
+      ]
+     }
+    }
+   },
+   "runs_planned": 2224,
+   "runs_recorded": 2232,
+   "runs_by_timing": {
+    "race0": 160,
+    "settled": 2072
+   },
+   "targets": {
+    "max_files": 100,
+    "max_positions_per_file": 20,
+    "max_file_bytes": 256000,
+    "min_identifiers": 1
+   },
+   "timeouts_s": {
+    "settle_s": 300,
+    "request_s": 30,
+    "run_s": 3600
+   },
+   "settle_timeout_s_by_kind": {
+    "gopls": [
+     180.0
+    ],
+    "jdtls": [
+     400.0,
+     600.0
+    ],
+    "pyright": [
+     120.0
+    ],
+    "rust-analyzer": [
+     240.0
+    ],
+    "tsserver": [
+     120.0
+    ]
+   },
+   "concurrency": 4,
+   "server_limits": {
+    "rust-analyzer": 2
+   },
+   "flake": {
+    "n": 3,
+    "per_signature": 1
+   },
+   "signature_cap": {
+    "runs": 3,
+    "scope": "build"
+   },
+   "wall_clock": {
+    "runs": 2232,
+    "start": "2026-09-24 13:35:14",
+    "end": "2026-09-25 15:35:23",
+    "hours": 26.0
+   },
+   "run_hours": 103.65,
+   "invocations": [
+    {
+     "started": "2026-09-24 13:35:14",
+     "finished": "2026-09-25 15:35:23",
+     "elapsed_s": 93608.2,
+     "runs": 2232
+    },
+    {
+     "started": "2026-09-25 15:37:29",
+     "finished": "2026-09-25 15:37:29",
+     "elapsed_s": 0.0,
+     "runs": 0
+    }
+   ]
+  },
+  "tool_freezes": {
+   "v1": {
+    "created": "2026-09-23T22:57:58-0700",
+    "tree_digest": "f6334f419dff50c0",
+    "files": 123
+   },
+   "v2": {
+    "created": "2026-09-25T15:37:28-0700",
+    "tree_digest": "b0092167ba04401d",
+    "files": 123
+   },
+   "v3": {
+    "created": "2026-09-25T19:30:55-0700",
+    "tree_digest": "12dab33d111abfae",
+    "files": 125
+   }
+  }
+ },
+ "main": {
+  "runs": {
+   "total": 720,
+   "by_status": {
+    "incomplete": 1,
+    "ok": 718,
+    "timeout": 1
+   },
+   "by_oracle": {
+    "r0_crash": 50,
+    "r1_history": 250,
+    "r2_handles": 100,
+    "r3_routes": 100,
+    "r4_edits": 100,
+    "r5_transforms": 100,
+    "r6_crossimpl": 20
+   },
+   "by_server": {
+    "gopls": 140,
+    "pyright": 140,
+    "rust-analyzer": 140,
+    "ts6": 140,
+    "ts7": 160
+   },
+   "by_oracle_status": {
+    "r0_crash": {
+     "incomplete": 0,
+     "ok": 50,
+     "timeout": 0
+    },
+    "r1_history": {
+     "incomplete": 0,
+     "ok": 250,
+     "timeout": 0
+    },
+    "r2_handles": {
+     "incomplete": 0,
+     "ok": 100,
+     "timeout": 0
+    },
+    "r3_routes": {
+     "incomplete": 1,
+     "ok": 98,
+     "timeout": 1
+    },
+    "r4_edits": {
+     "incomplete": 0,
+     "ok": 100,
+     "timeout": 0
+    },
+    "r5_transforms": {
+     "incomplete": 0,
+     "ok": 100,
+     "timeout": 0
+    },
+    "r6_crossimpl": {
+     "incomplete": 0,
+     "ok": 20,
+     "timeout": 0
+    }
+   },
+   "not_ok": [
+    {
+     "run_id": "2483ad50adb0",
+     "oracle": "r3_routes",
+     "server": "rust-analyzer",
+     "project": "lapce/lapce@b604d57de4a8",
+     "seed": 1,
+     "timing": "settled",
+     "status": "timeout",
+     "error": "hard timeout after 7200s"
+    },
+    {
+     "run_id": "5c52751fb09b",
+     "oracle": "r3_routes",
+     "server": "rust-analyzer",
+     "project": "lapce/lapce@b604d57de4a8",
+     "seed": 2,
+     "timing": "settled",
+     "status": "incomplete",
+     "error": "soft deadline: 1 candidate(s) not fully replayed"
+    }
+   ]
+  },
+  "run_seconds": {
+   "measure": "wall_seconds per run (all statuses); p90 by linear interpolation",
+   "total_seconds": 303034.6,
+   "total_hours": 84.18,
+   "per_oracle": {
+    "r0_crash": {
+     "n": 50,
+     "total": 13424.9,
+     "mean": 268.5,
+     "median": 29.6,
+     "p90": 316.2
+    },
+    "r1_history": {
+     "n": 250,
+     "total": 129392.3,
+     "mean": 517.6,
+     "median": 439.2,
+     "p90": 822.4
+    },
+    "r2_handles": {
+     "n": 100,
+     "total": 16174.5,
+     "mean": 161.7,
+     "median": 83.1,
+     "p90": 303.3
+    },
+    "r3_routes": {
+     "n": 100,
+     "total": 56886.1,
+     "mean": 568.9,
+     "median": 238.2,
+     "p90": 1417.4
+    },
+    "r4_edits": {
+     "n": 100,
+     "total": 31134.6,
+     "mean": 311.3,
+     "median": 114.2,
+     "p90": 696.8
+    },
+    "r5_transforms": {
+     "n": 100,
+     "total": 45757.5,
+     "mean": 457.6,
+     "median": 236.2,
+     "p90": 1069.1
+    },
+    "r6_crossimpl": {
+     "n": 20,
+     "total": 10264.7,
+     "mean": 513.2,
+     "median": 142.4,
+     "p90": 1372.1
+    }
+   },
+   "per_oracle_kind": {
+    "r0_crash": {
+     "gopls": {
+      "n": 10,
+      "total": 126.8,
+      "mean": 12.7,
+      "median": 12.1,
+      "p90": 14.7
+     },
+     "pyright": {
+      "n": 10,
+      "total": 240.5,
+      "mean": 24.1,
+      "median": 22.1,
+      "p90": 39.2
+     },
+     "rust-analyzer": {
+      "n": 10,
+      "total": 12224.6,
+      "mean": 1222.5,
+      "median": 364.6,
+      "p90": 3178.8
+     },
+     "ts6": {
+      "n": 10,
+      "total": 459.7,
+      "mean": 46.0,
+      "median": 37.2,
+      "p90": 84.6
+     },
+     "ts7": {
+      "n": 10,
+      "total": 373.3,
+      "mean": 37.3,
+      "median": 29.7,
+      "p90": 62.7
+     }
+    },
+    "r1_history": {
+     "gopls": {
+      "n": 50,
+      "total": 23068.0,
+      "mean": 461.4,
+      "median": 481.6,
+      "p90": 824.8
+     },
+     "pyright": {
+      "n": 50,
+      "total": 17996.2,
+      "mean": 359.9,
+      "median": 349.9,
+      "p90": 597.7
+     },
+     "rust-analyzer": {
+      "n": 50,
+      "total": 29772.6,
+      "mean": 595.5,
+      "median": 451.5,
+      "p90": 834.8
+     },
+     "ts6": {
+      "n": 50,
+      "total": 36911.7,
+      "mean": 738.2,
+      "median": 613.8,
+      "p90": 1647.2
+     },
+     "ts7": {
+      "n": 50,
+      "total": 21643.8,
+      "mean": 432.9,
+      "median": 402.6,
+      "p90": 708.9
+     }
+    },
+    "r2_handles": {
+     "gopls": {
+      "n": 20,
+      "total": 1341.5,
+      "mean": 67.1,
+      "median": 62.0,
+      "p90": 98.8
+     },
+     "pyright": {
+      "n": 20,
+      "total": 1298.6,
+      "mean": 64.9,
+      "median": 68.4,
+      "p90": 75.3
+     },
+     "rust-analyzer": {
+      "n": 20,
+      "total": 9367.4,
+      "mean": 468.4,
+      "median": 303.7,
+      "p90": 906.9
+     },
+     "ts6": {
+      "n": 20,
+      "total": 2549.5,
+      "mean": 127.5,
+      "median": 126.5,
+      "p90": 162.1
+     },
+     "ts7": {
+      "n": 20,
+      "total": 1617.5,
+      "mean": 80.9,
+      "median": 77.0,
+      "p90": 96.2
+     }
+    },
+    "r3_routes": {
+     "gopls": {
+      "n": 20,
+      "total": 3264.8,
+      "mean": 163.2,
+      "median": 154.9,
+      "p90": 225.5
+     },
+     "pyright": {
+      "n": 20,
+      "total": 4690.9,
+      "mean": 234.5,
+      "median": 203.3,
+      "p90": 312.2
+     },
+     "rust-analyzer": {
+      "n": 20,
+      "total": 36521.5,
+      "mean": 1826.1,
+      "median": 1199.7,
+      "p90": 3009.9
+     },
+     "ts6": {
+      "n": 20,
+      "total": 6605.6,
+      "mean": 330.3,
+      "median": 243.1,
+      "p90": 635.4
+     },
+     "ts7": {
+      "n": 20,
+      "total": 5803.3,
+      "mean": 290.2,
+      "median": 250.2,
+      "p90": 524.2
+     }
+    },
+    "r4_edits": {
+     "gopls": {
+      "n": 20,
+      "total": 2338.3,
+      "mean": 116.9,
+      "median": 92.1,
+      "p90": 219.7
+     },
+     "pyright": {
+      "n": 20,
+      "total": 1113.9,
+      "mean": 55.7,
+      "median": 48.3,
+      "p90": 61.0
+     },
+     "rust-analyzer": {
+      "n": 20,
+      "total": 13884.3,
+      "mean": 694.2,
+      "median": 306.1,
+      "p90": 1765.3
+     },
+     "ts6": {
+      "n": 20,
+      "total": 10658.0,
+      "mean": 532.9,
+      "median": 338.6,
+      "p90": 1094.2
+     },
+     "ts7": {
+      "n": 20,
+      "total": 3140.1,
+      "mean": 157.0,
+      "median": 69.5,
+      "p90": 513.8
+     }
+    },
+    "r5_transforms": {
+     "gopls": {
+      "n": 20,
+      "total": 2592.0,
+      "mean": 129.6,
+      "median": 100.7,
+      "p90": 177.6
+     },
+     "pyright": {
+      "n": 20,
+      "total": 4028.7,
+      "mean": 201.4,
+      "median": 148.3,
+      "p90": 304.6
+     },
+     "rust-analyzer": {
+      "n": 20,
+      "total": 23253.1,
+      "mean": 1162.7,
+      "median": 834.2,
+      "p90": 2407.1
+     },
+     "ts6": {
+      "n": 20,
+      "total": 8347.1,
+      "mean": 417.4,
+      "median": 322.2,
+      "p90": 942.6
+     },
+     "ts7": {
+      "n": 20,
+      "total": 7536.6,
+      "mean": 376.8,
+      "median": 308.6,
+      "p90": 859.3
+     }
+    },
+    "r6_crossimpl": {
+     "ts7": {
+      "n": 20,
+      "total": 10264.7,
+      "mean": 513.2,
+      "median": 142.4,
+      "p90": 1372.1
+     }
+    }
+   }
+  },
+  "violations": {
+   "rows": 487,
+   "by_status": {
+    "capped": 140,
+    "confirmed": 189,
+    "flaky": 33,
+    "incomplete": 1,
+    "labelled-legitimate": 87,
+    "not-reproduced": 37
+   },
+   "by_oracle_status": {
+    "r0_crash": {
+     "capped": 0,
+     "confirmed": 2,
+     "flaky": 4,
+     "incomplete": 0,
+     "labelled-legitimate": 0,
+     "not-reproduced": 1
+    },
+    "r1_history": {
+     "capped": 30,
+     "confirmed": 51,
+     "flaky": 27,
+     "incomplete": 0,
+     "labelled-legitimate": 0,
+     "not-reproduced": 22
+    },
+    "r2_handles": {
+     "capped": 3,
+     "confirmed": 6,
+     "flaky": 0,
+     "incomplete": 0,
+     "labelled-legitimate": 0,
+     "not-reproduced": 1
+    },
+    "r3_routes": {
+     "capped": 62,
+     "confirmed": 54,
+     "flaky": 0,
+     "incomplete": 1,
+     "labelled-legitimate": 87,
+     "not-reproduced": 0
+    },
+    "r4_edits": {
+     "capped": 3,
+     "confirmed": 37,
+     "flaky": 0,
+     "incomplete": 0,
+     "labelled-legitimate": 0,
+     "not-reproduced": 1
+    },
+    "r5_transforms": {
+     "capped": 4,
+     "confirmed": 12,
+     "flaky": 1,
+     "incomplete": 0,
+     "labelled-legitimate": 0,
+     "not-reproduced": 12
+    },
+    "r6_crossimpl": {
+     "capped": 38,
+     "confirmed": 27,
+     "flaky": 1,
+     "incomplete": 0,
+     "labelled-legitimate": 0,
+     "not-reproduced": 0
+    }
+   },
+   "replayed": 260,
+   "filtered": 70
+  },
+  "confirmed_signatures": {
+   "total": 98,
+   "by_oracle": {
+    "r0_crash": 2,
+    "r1_history": 23,
+    "r2_handles": 2,
+    "r3_routes": 24,
+    "r4_edits": 26,
+    "r5_transforms": 8,
+    "r6_crossimpl": 13
+   },
+   "by_kind": {
+    "gopls": 18,
+    "pyright": 8,
+    "rust-analyzer": 14,
+    "ts6": 34,
+    "ts7": 24
+   },
+   "oracle_by_kind": {
+    "r0_crash": {
+     "gopls": 0,
+     "pyright": 0,
+     "rust-analyzer": 2,
+     "ts6": 0,
+     "ts7": 0
+    },
+    "r1_history": {
+     "gopls": 3,
+     "pyright": 2,
+     "rust-analyzer": 0,
+     "ts6": 16,
+     "ts7": 2
+    },
+    "r2_handles": {
+     "gopls": 1,
+     "pyright": 0,
+     "rust-analyzer": 1,
+     "ts6": 0,
+     "ts7": 0
+    },
+    "r3_routes": {
+     "gopls": 2,
+     "pyright": 4,
+     "rust-analyzer": 9,
+     "ts6": 5,
+     "ts7": 4
+    },
+    "r4_edits": {
+     "gopls": 10,
+     "pyright": 1,
+     "rust-analyzer": 2,
+     "ts6": 11,
+     "ts7": 2
+    },
+    "r5_transforms": {
+     "gopls": 2,
+     "pyright": 1,
+     "rust-analyzer": 0,
+     "ts6": 2,
+     "ts7": 3
+    },
+    "r6_crossimpl": {
+     "gopls": 0,
+     "pyright": 0,
+     "rust-analyzer": 0,
+     "ts6": 0,
+     "ts7": 13
+    }
+   }
+  },
+  "triage_groups": {
+   "total": 106,
+   "signatures": 98,
+   "members": 189,
+   "by_oracle": {
+    "r0_crash": 2,
+    "r1_history": 29,
+    "r2_handles": 2,
+    "r3_routes": 24,
+    "r4_edits": 27,
+    "r5_transforms": 9,
+    "r6_crossimpl": 13
+   },
+   "by_kind": {
+    "gopls": 19,
+    "pyright": 11,
+    "rust-analyzer": 14,
+    "ts6": 38,
+    "ts7": 24
+   },
+   "oracle_by_kind": {
+    "r0_crash": {
+     "gopls": 0,
+     "pyright": 0,
+     "rust-analyzer": 2,
+     "ts6": 0,
+     "ts7": 0
+    },
+    "r1_history": {
+     "gopls": 3,
+     "pyright": 5,
+     "rust-analyzer": 0,
+     "ts6": 19,
+     "ts7": 2
+    },
+    "r2_handles": {
+     "gopls": 1,
+     "pyright": 0,
+     "rust-analyzer": 1,
+     "ts6": 0,
+     "ts7": 0
+    },
+    "r3_routes": {
+     "gopls": 2,
+     "pyright": 4,
+     "rust-analyzer": 9,
+     "ts6": 5,
+     "ts7": 4
+    },
+    "r4_edits": {
+     "gopls": 10,
+     "pyright": 1,
+     "rust-analyzer": 2,
+     "ts6": 12,
+     "ts7": 2
+    },
+    "r5_transforms": {
+     "gopls": 3,
+     "pyright": 1,
+     "rust-analyzer": 0,
+     "ts6": 2,
+     "ts7": 3
+    },
+    "r6_crossimpl": {
+     "gopls": 0,
+     "pyright": 0,
+     "rust-analyzer": 0,
+     "ts6": 0,
+     "ts7": 13
+    }
+   },
+   "r1_history": {
+    "groups": 29,
+    "by_family": {
+     "H2": 1,
+     "H3": 1,
+     "H4": 2,
+     "H5": 15,
+     "H6": 2,
+     "H7": 1,
+     "H8": 2,
+     "H9": 5
+    },
+    "by_kind": {
+     "gopls": 3,
+     "pyright": 5,
+     "ts6": 19,
+     "ts7": 2
+    }
+   }
+  },
+  "reduction": {
+   "groups": 106,
+   "groups_with_ops": 64,
+   "ops_before": 671,
+   "ops_after": 188,
+   "by_oracle": {
+    "r1_history": {
+     "groups": 29,
+     "ops_before": 221,
+     "ops_after": 94
+    },
+    "r2_handles": {
+     "groups": 2,
+     "ops_before": 4,
+     "ops_after": 4
+    },
+    "r4_edits": {
+     "groups": 24,
+     "ops_before": 72,
+     "ops_after": 72
+    },
+    "r5_transforms": {
+     "groups": 9,
+     "ops_before": 374,
+     "ops_after": 18
+    }
+   },
+   "narrowed": 98,
+   "reduced_confirmed": {
+    "0/3": 4,
+    "1/3": 1,
+    "2/3": 3,
+    "3/3": 98
+   },
+   "budget_exhausted": 3,
+   "probes": 379,
+   "compute_hours": 7.87,
+   "ops_differ_from_triage_json": []
+  },
+  "verdicts": {
+   "rows": 106,
+   "groups_without_row": [],
+   "judged": 106,
+   "by_verdict": {
+    "bug": 29,
+    "legitimate": 54,
+    "tool-artifact": 23
+   },
+   "by_oracle_verdict": {
+    "r0_crash": {
+     "bug": 0,
+     "legitimate": 0,
+     "tool-artifact": 2
+    },
+    "r1_history": {
+     "bug": 16,
+     "legitimate": 11,
+     "tool-artifact": 2
+    },
+    "r2_handles": {
+     "bug": 2,
+     "legitimate": 0,
+     "tool-artifact": 0
+    },
+    "r3_routes": {
+     "bug": 2,
+     "legitimate": 22,
+     "tool-artifact": 0
+    },
+    "r4_edits": {
+     "bug": 9,
+     "legitimate": 1,
+     "tool-artifact": 17
+    },
+    "r5_transforms": {
+     "bug": 0,
+     "legitimate": 7,
+     "tool-artifact": 2
+    },
+    "r6_crossimpl": {
+     "bug": 0,
+     "legitimate": 13,
+     "tool-artifact": 0
+    }
+   },
+   "precision": 0.274,
+   "precision_by_oracle": {
+    "r0_crash": 0.0,
+    "r1_history": 0.552,
+    "r2_handles": 1.0,
+    "r3_routes": 0.083,
+    "r4_edits": 0.333,
+    "r5_transforms": 0.0,
+    "r6_crossimpl": 0.0
+   },
+   "known_issue_links": 0,
+   "report_links": 0,
+   "maintainer_responses": 37,
+   "minutes_total": 22.6,
+   "minutes_rows": 5
+  },
+  "sweep_older_2025": {
+   "label": "older-2025",
+   "groups": 106,
+   "replayed": 82,
+   "by_verdict": {
+    "reproduced": 63,
+    "not-reproduced": 12,
+    "flaky": 4,
+    "unsettled": 3,
+    "error": 0,
+    "skipped": 24
+   },
+   "by_from_kind": {
+    "gopls": {
+     "builds": [
+      "gopls v0.20.0"
+     ],
+     "groups": 19,
+     "by_verdict": {
+      "reproduced": 17,
+      "not-reproduced": 1,
+      "flaky": 0,
+      "unsettled": 1,
+      "error": 0,
+      "skipped": 0
+     }
+    },
+    "pyright": {
+     "builds": [
+      "pyright 1.1.406"
+     ],
+     "groups": 11,
+     "by_verdict": {
+      "reproduced": 11,
+      "not-reproduced": 0,
+      "flaky": 0,
+      "unsettled": 0,
+      "error": 0,
+      "skipped": 0
+     }
+    },
+    "rust-analyzer": {
+     "builds": [
+      "rust-analyzer 2025-10-27"
+     ],
+     "groups": 14,
+     "by_verdict": {
+      "reproduced": 2,
+      "not-reproduced": 10,
+      "flaky": 0,
+      "unsettled": 2,
+      "error": 0,
+      "skipped": 0
+     }
+    },
+    "ts6": {
+     "builds": [
+      "tsserver 5.9.3+tsls5.0.0"
+     ],
+     "groups": 38,
+     "by_verdict": {
+      "reproduced": 33,
+      "not-reproduced": 1,
+      "flaky": 4,
+      "unsettled": 0,
+      "error": 0,
+      "skipped": 0
+     }
+    },
+    "ts7": {
+     "builds": [],
+     "groups": 24,
+     "by_verdict": {
+      "reproduced": 0,
+      "not-reproduced": 0,
+      "flaky": 0,
+      "unsettled": 0,
+      "error": 0,
+      "skipped": 24
+     }
+    }
+   },
+   "by_oracle": {
+    "r0_crash": {
+     "reproduced": 0,
+     "not-reproduced": 2,
+     "flaky": 0,
+     "unsettled": 0,
+     "error": 0,
+     "skipped": 0
+    },
+    "r1_history": {
+     "reproduced": 20,
+     "not-reproduced": 2,
+     "flaky": 4,
+     "unsettled": 1,
+     "error": 0,
+     "skipped": 2
+    },
+    "r2_handles": {
+     "reproduced": 1,
+     "not-reproduced": 0,
+     "flaky": 0,
+     "unsettled": 1,
+     "error": 0,
+     "skipped": 0
+    },
+    "r3_routes": {
+     "reproduced": 13,
+     "not-reproduced": 7,
+     "flaky": 0,
+     "unsettled": 0,
+     "error": 0,
+     "skipped": 4
+    },
+    "r4_edits": {
+     "reproduced": 23,
+     "not-reproduced": 1,
+     "flaky": 0,
+     "unsettled": 1,
+     "error": 0,
+     "skipped": 2
+    },
+    "r5_transforms": {
+     "reproduced": 6,
+     "not-reproduced": 0,
+     "flaky": 0,
+     "unsettled": 0,
+     "error": 0,
+     "skipped": 3
+    },
+    "r6_crossimpl": {
+     "reproduced": 0,
+     "not-reproduced": 0,
+     "flaky": 0,
+     "unsettled": 0,
+     "error": 0,
+     "skipped": 13
+    }
+   },
+   "replay_hours": 1.84
+  },
+  "root_causes": {
+   "causes": 11,
+   "groups": 29,
+   "by_server": {
+    "gopls": 5,
+    "rust-analyzer": 2,
+    "ts6": 3,
+    "ts7": 1
+   },
+   "by_relation": {
+    "R1": 4,
+    "R2": 2,
+    "R3": 1,
+    "R4": 4
+   },
+   "servers_by_relation": {
+    "R1": 3,
+    "R2": 2,
+    "R3": 1,
+    "R4": 2
+   },
+   "long_standing": 8,
+   "detail": {
+    "C1": {
+     "server": "ts6",
+     "trigger": "file rename",
+     "groups": 13,
+     "long_standing": true,
+     "relation": "R1"
+    },
+    "C2": {
+     "server": "ts6",
+     "trigger": "query race after open",
+     "groups": 1,
+     "long_standing": true,
+     "relation": "R1"
+    },
+    "C3": {
+     "server": "gopls",
+     "trigger": "stale code-action handle",
+     "groups": 1,
+     "long_standing": true,
+     "relation": "R2"
+    },
+    "C4": {
+     "server": "rust-analyzer",
+     "trigger": "stale completion handle",
+     "groups": 1,
+     "long_standing": false,
+     "relation": "R2"
+    },
+    "C5": {
+     "server": "gopls",
+     "trigger": "quick fix 'Create variable'",
+     "groups": 5,
+     "long_standing": true,
+     "relation": "R4"
+    },
+    "C6": {
+     "server": "gopls",
+     "trigger": "quick fix 'Create function'",
+     "groups": 2,
+     "long_standing": true,
+     "relation": "R4"
+    },
+    "C7": {
+     "server": "gopls",
+     "trigger": "quick fix 'Remove variable'",
+     "groups": 1,
+     "long_standing": true,
+     "relation": "R4"
+    },
+    "C8": {
+     "server": "rust-analyzer",
+     "trigger": "definition consistency",
+     "groups": 2,
+     "long_standing": false,
+     "relation": "R3"
+    },
+    "C9": {
+     "server": "gopls",
+     "trigger": "package file edited or renamed earlier",
+     "groups": 1,
+     "long_standing": true,
+     "relation": "R1"
+    },
+    "C10": {
+     "server": "ts7",
+     "trigger": "unsaved edit in another file",
+     "groups": 1,
+     "long_standing": false,
+     "relation": "R1"
+    },
+    "C11": {
+     "server": "ts6",
+     "trigger": "quick fix 'Add missing properties'",
+     "groups": 1,
+     "long_standing": true,
+     "relation": "R4"
+    }
+   }
+  }
+ },
+ "benchmark": {
+  "funnel": {
+   "issues_screened": 5617,
+   "retrieved": 1805,
+   "candidates": 402,
+   "candidates_table_kept": 402,
+   "pool_grade_ab_buildable": 287,
+   "attempted": 92,
+   "attempted_outside_candidates": [
+    "jdtls-2111",
+    "jdtls-3155"
+   ],
+   "reproduced": 80,
+   "spec_probe_attempted": 8,
+   "spec_probe_reproduced": 6,
+   "by_server": {
+    "gopls": {
+     "issues": 1343,
+     "retrieved": 666,
+     "kept": 168
+    },
+    "pyright": {
+     "issues": 2503,
+     "retrieved": 342,
+     "kept": 43
+    },
+    "rust-analyzer": {
+     "issues": 1278,
+     "retrieved": 569,
+     "kept": 121
+    },
+    "tsserver": {
+     "issues": 493,
+     "retrieved": 228,
+     "kept": 70
+    }
+   }
+  },
+  "candidates_by_server": {
+   "gopls": 168,
+   "pyright": 43,
+   "rust-analyzer": 121,
+   "tsserver": 70
+  },
+  "candidates_by_grade": {
+   "A": 180,
+   "B": 131,
+   "C": 91
+  },
+  "candidates_by_class": {
+   "R1": 155,
+   "R2": 10,
+   "R3": 18,
+   "R4": 196,
+   "R5": 23
+  },
+  "final_verdicts": {
+   "invalid": 4,
+   "not-reproduced-pre": 8,
+   "reproduced": 80
+  },
+  "attempted_by_kind": {
+   "gopls": 26,
+   "jdtls": 2,
+   "pyright": 14,
+   "rust-analyzer": 23,
+   "tsserver": 27
+  },
+  "reproduced_by_kind": {
+   "gopls": 23,
+   "jdtls": 2,
+   "pyright": 12,
+   "rust-analyzer": 20,
+   "tsserver": 23
+  },
+  "attempted_by_class": {
+   "R1": 24,
+   "R2": 1,
+   "R3": 5,
+   "R4": 58,
+   "R5": 4
+  },
+  "reproduced_by_class": {
+   "R1": 21,
+   "R2": 1,
+   "R3": 5,
+   "R4": 50,
+   "R5": 3
+  },
+  "reproduced_by_probe": {
+   "diagnostic_absent": 1,
+   "diagnostic_present": 4,
+   "differs_from_fresh": 14,
+   "edit_breaks_syntax": 25,
+   "edit_leaves_diagnostic": 20,
+   "edit_text_differs": 6,
+   "error_response": 2,
+   "stale_code_action": 1,
+   "transform_differs": 2,
+   "two_routes_differ": 5
+  },
+  "reproduced_final_attempt": {
+   "1": 65,
+   "2": 15
+  },
+  "repro_runs_recorded": 168,
+  "readme_status": {
+   "attempted": 92,
+   "reproduced": 80
+  },
+  "readme_status_matches": true,
+  "not_reproduced": [
+   {
+    "case": "gopls-41311",
+    "kind": "gopls",
+    "class": "R1",
+    "subtype": "config",
+    "probe": "differs_from_fresh",
+    "attempt": 1,
+    "verdict": "not-reproduced-pre",
+    "reason": "pre 0/3 present: every query equals the fresh session",
+    "note": "not-reproduced-pre (analyses panic under go1.27; pre-check 4)"
+   },
+   {
+    "case": "gopls-73663",
+    "kind": "gopls",
+    "class": "R4",
+    "subtype": "quickfix",
+    "probe": "edit_leaves_diagnostic",
+    "attempt": 1,
+    "verdict": "invalid",
+    "reason": "post run 1: no code_action matching the spec was offered (offered: [\"<no diagnostic matching {'message_re': 'slices\\\\\\\\.Delete'}; have []>\"])",
+    "note": "invalid (post-fix release has the pass disabled)"
+   },
+   {
+    "case": "gopls-77481",
+    "kind": "gopls",
+    "class": "R4",
+    "subtype": "completion",
+    "probe": "edit_text_differs",
+    "attempt": 1,
+    "verdict": "not-reproduced-pre",
+    "reason": "pre 0/3 present: 'colorex' gives the expected text",
+    "note": "not-reproduced-pre (same-package candidate is replaced correctly)"
+   },
+   {
+    "case": "pyright-1151",
+    "kind": "pyright",
+    "class": "R5",
+    "subtype": "file-edge",
+    "probe": "transform_differs",
+    "attempt": 1,
+    "verdict": "not-reproduced-pre",
+    "reason": "pre 0/3 present: every query is invariant under the transformation",
+    "note": ""
+   },
+   {
+    "case": "pyright-2631",
+    "kind": "pyright",
+    "class": "R1",
+    "subtype": "edit-undo",
+    "probe": "differs_from_fresh",
+    "attempt": 2,
+    "verdict": "not-reproduced-pre",
+    "reason": "pre 0/3 present: every query equals the fresh session",
+    "note": ""
+   },
+   {
+    "case": "rust-analyzer-16181",
+    "kind": "rust-analyzer",
+    "class": "R4",
+    "subtype": "quickfix",
+    "probe": "edit_breaks_syntax",
+    "attempt": 1,
+    "verdict": "not-reproduced-pre",
+    "reason": "pre 0/3 present: 'Remove all the unused imports' adds no parse error",
+    "note": "not-reproduced-pre (no released build with the bug)"
+   },
+   {
+    "case": "rust-analyzer-19003",
+    "kind": "rust-analyzer",
+    "class": "R1",
+    "subtype": "edit-undo",
+    "probe": "differs_from_fresh",
+    "attempt": 1,
+    "verdict": "not-reproduced-pre",
+    "reason": "pre 0/3 present: every query equals the fresh session",
+    "note": "not-reproduced-pre (E0308 on fresh sessions of both builds)"
+   },
+   {
+    "case": "rust-analyzer-21663",
+    "kind": "rust-analyzer",
+    "class": "R4",
+    "subtype": "quickfix",
+    "probe": "edit_text_differs",
+    "attempt": 2,
+    "verdict": "invalid",
+    "reason": "pre run 1: no code_action matching the spec was offered (offered: [])",
+    "note": "invalid (no std without an explicit sysroot)"
+   },
+   {
+    "case": "tsserver-40257",
+    "kind": "tsserver",
+    "class": "R4",
+    "subtype": "quickfix",
+    "probe": "edit_breaks_syntax",
+    "attempt": 2,
+    "verdict": "invalid",
+    "reason": "pre run 1: no code_action matching the spec was offered (offered: ['Remove type parameters'])",
+    "note": ""
+   },
+   {
+    "case": "tsserver-41194",
+    "kind": "tsserver",
+    "class": "R4",
+    "subtype": "organize",
+    "probe": "edit_leaves_diagnostic",
+    "attempt": 2,
+    "verdict": "invalid",
+    "reason": "pre run 1: no code_action matching the spec was offered (offered: ['Move to a new file'])",
+    "note": ""
+   },
+   {
+    "case": "tsserver-54818",
+    "kind": "tsserver",
+    "class": "R4",
+    "subtype": "completion",
+    "probe": "edit_breaks_syntax",
+    "attempt": 2,
+    "verdict": "not-reproduced-pre",
+    "reason": "pre 0/3 present: no completion matching the spec was offered (offered: [])",
+    "note": ""
+   },
+   {
+    "case": "tsserver-59304",
+    "kind": "tsserver",
+    "class": "R4",
+    "subtype": "quickfix",
+    "probe": "edit_breaks_syntax",
+    "attempt": 2,
+    "verdict": "not-reproduced-pre",
+    "reason": "pre 0/3 present: \"Convert 'require' to 'import'\" adds no parse error",
+    "note": ""
+   }
+  ]
+ },
+ "detection": {
+  "runs": {
+   "recorded": {
+    "total": 2232,
+    "by_status": {
+     "failed": 8,
+     "incomplete": 8,
+     "ok": 2215,
+     "timeout": 1
+    }
+   },
+   "planned": {
+    "total": 2224,
+    "by_status": {
+     "incomplete": 8,
+     "ok": 2215,
+     "timeout": 1
+    },
+    "by_oracle": {
+     "r0_crash": 320,
+     "r1_history": 640,
+     "r2_handles": 320,
+     "r3_routes": 320,
+     "r4_edits": 312,
+     "r5_transforms": 312
+    }
+   },
+   "recorded_outside_plan": {
+    "total": 8,
+    "by_oracle_kind_status": {
+     "r4_edits|jdtls|failed": 8
+    }
+   }
+  },
+  "cases": 80,
+  "generic": {
+   "cases": 74,
+   "complete": 69,
+   "detected": 38,
+   "detected_by_oracle": {
+    "r0_crash": 2,
+    "r1_history": 12,
+    "r2_handles": 2,
+    "r3_routes": 5,
+    "r4_edits": 19,
+    "r5_transforms": 3
+   }
+  },
+  "spec_probe": {
+   "cases": 6,
+   "complete": 5,
+   "detected": 1,
+   "detected_by_oracle": {
+    "r4_edits": 1
+   }
+  },
+  "all": {
+   "cases": 80,
+   "complete": 74,
+   "detected": 39,
+   "detected_by_oracle": {
+    "r0_crash": 2,
+    "r1_history": 12,
+    "r2_handles": 2,
+    "r3_routes": 5,
+    "r4_edits": 20,
+    "r5_transforms": 3
+   }
+  },
+  "by_kind": {
+   "generic": {
+    "gopls": {
+     "cases": 22,
+     "complete": 22,
+     "detected": 14
+    },
+    "jdtls": {
+     "cases": 2,
+     "complete": 1,
+     "detected": 2
+    },
+    "pyright": {
+     "cases": 12,
+     "complete": 12,
+     "detected": 4
+    },
+    "rust-analyzer": {
+     "cases": 15,
+     "complete": 11,
+     "detected": 11
+    },
+    "tsserver": {
+     "cases": 23,
+     "complete": 23,
+     "detected": 7
+    }
+   },
+   "spec_probe": {
+    "gopls": {
+     "cases": 1,
+     "complete": 1,
+     "detected": 0
+    },
+    "rust-analyzer": {
+     "cases": 5,
+     "complete": 4,
+     "detected": 1
+    }
+   },
+   "all": {
+    "gopls": {
+     "cases": 23,
+     "complete": 23,
+     "detected": 14
+    },
+    "jdtls": {
+     "cases": 2,
+     "complete": 1,
+     "detected": 2
+    },
+    "pyright": {
+     "cases": 12,
+     "complete": 12,
+     "detected": 4
+    },
+    "rust-analyzer": {
+     "cases": 20,
+     "complete": 15,
+     "detected": 12
+    },
+    "tsserver": {
+     "cases": 23,
+     "complete": 23,
+     "detected": 7
+    }
+   }
+  },
+  "by_class": {
+   "generic": {
+    "R1": {
+     "cases": 21,
+     "complete": 19,
+     "detected": 9
+    },
+    "R2": {
+     "cases": 1,
+     "complete": 1,
+     "detected": 1
+    },
+    "R3": {
+     "cases": 5,
+     "complete": 5,
+     "detected": 4
+    },
+    "R4": {
+     "cases": 44,
+     "complete": 41,
+     "detected": 23
+    },
+    "R5": {
+     "cases": 3,
+     "complete": 3,
+     "detected": 1
+    }
+   },
+   "spec_probe": {
+    "R4": {
+     "cases": 6,
+     "complete": 5,
+     "detected": 1
+    }
+   },
+   "all": {
+    "R1": {
+     "cases": 21,
+     "complete": 19,
+     "detected": 9
+    },
+    "R2": {
+     "cases": 1,
+     "complete": 1,
+     "detected": 1
+    },
+    "R3": {
+     "cases": 5,
+     "complete": 5,
+     "detected": 4
+    },
+    "R4": {
+     "cases": 50,
+     "complete": 46,
+     "detected": 24
+    },
+    "R5": {
+     "cases": 3,
+     "complete": 3,
+     "detected": 1
+    }
+   }
+  },
+  "by_probe": {
+   "diagnostic_absent": {
+    "cases": 1,
+    "complete": 1,
+    "detected": 0
+   },
+   "diagnostic_present": {
+    "cases": 4,
+    "complete": 4,
+    "detected": 1
+   },
+   "differs_from_fresh": {
+    "cases": 14,
+    "complete": 13,
+    "detected": 6
+   },
+   "edit_breaks_syntax": {
+    "cases": 25,
+    "complete": 22,
+    "detected": 14
+   },
+   "edit_leaves_diagnostic": {
+    "cases": 20,
+    "complete": 20,
+    "detected": 9
+   },
+   "edit_text_differs": {
+    "cases": 6,
+    "complete": 5,
+    "detected": 1
+   },
+   "error_response": {
+    "cases": 2,
+    "complete": 1,
+    "detected": 1
+   },
+   "stale_code_action": {
+    "cases": 1,
+    "complete": 1,
+    "detected": 1
+   },
+   "transform_differs": {
+    "cases": 2,
+    "complete": 2,
+    "detected": 1
+   },
+   "two_routes_differ": {
+    "cases": 5,
+    "complete": 5,
+    "detected": 5
+   }
+  },
+  "by_probe_family": {
+   "expected-diagnostic": {
+    "cases": 5,
+    "complete": 5,
+    "detected": 1,
+    "detected_by_oracle": {
+     "r1_history": 1
+    }
+   },
+   "expected-text": {
+    "cases": 6,
+    "complete": 5,
+    "detected": 1,
+    "detected_by_oracle": {
+     "r4_edits": 1
+    }
+   },
+   "relation-shaped": {
+    "cases": 69,
+    "complete": 64,
+    "detected": 37,
+    "detected_by_oracle": {
+     "r0_crash": 2,
+     "r1_history": 11,
+     "r2_handles": 2,
+     "r3_routes": 5,
+     "r4_edits": 19,
+     "r5_transforms": 3
+    }
+   }
+  },
+  "by_kind_oracle": {
+   "gopls": {
+    "r0_crash": 0,
+    "r1_history": 4,
+    "r2_handles": 1,
+    "r3_routes": 2,
+    "r4_edits": 8,
+    "r5_transforms": 1
+   },
+   "jdtls": {
+    "r0_crash": 1,
+    "r1_history": 1,
+    "r2_handles": 1,
+    "r3_routes": 0,
+    "r4_edits": 0,
+    "r5_transforms": 0
+   },
+   "pyright": {
+    "r0_crash": 0,
+    "r1_history": 3,
+    "r2_handles": 0,
+    "r3_routes": 0,
+    "r4_edits": 0,
+    "r5_transforms": 1
+   },
+   "rust-analyzer": {
+    "r0_crash": 1,
+    "r1_history": 4,
+    "r2_handles": 0,
+    "r3_routes": 2,
+    "r4_edits": 6,
+    "r5_transforms": 1
+   },
+   "tsserver": {
+    "r0_crash": 0,
+    "r1_history": 0,
+    "r2_handles": 0,
+    "r3_routes": 1,
+    "r4_edits": 6,
+    "r5_transforms": 0
+   }
+  },
+  "r0_crash": {
+   "cases_with_pre_only": [
+    "jdtls-3155",
+    "rust-analyzer-21173"
+   ],
+   "cases": 2,
+   "detected_by_r0_alone": 0
+  },
+  "unique_by_oracle": {
+   "generic": {
+    "r0_crash": 0,
+    "r1_history": 9,
+    "r2_handles": 1,
+    "r3_routes": 4,
+    "r4_edits": 17,
+    "r5_transforms": 3
+   },
+   "all": {
+    "r0_crash": 0,
+    "r1_history": 9,
+    "r2_handles": 1,
+    "r3_routes": 4,
+    "r4_edits": 18,
+    "r5_transforms": 3
+   }
+  },
+  "detected_by_one_relation": 35,
+  "excluding_development_cases": {
+   "cases": 79,
+   "complete": 74,
+   "detected": 38,
+   "detected_by_oracle": {
+    "r0_crash": 1,
+    "r1_history": 11,
+    "r2_handles": 2,
+    "r3_routes": 5,
+    "r4_edits": 20,
+    "r5_transforms": 3
+   }
+  },
+  "detected_by_several_relations": 4,
+  "pairwise_overlap": {
+   "generic": {
+    "r0_crash": {
+     "r0_crash": 2,
+     "r1_history": 2,
+     "r2_handles": 0,
+     "r3_routes": 1,
+     "r4_edits": 0,
+     "r5_transforms": 0
+    },
+    "r1_history": {
+     "r0_crash": 2,
+     "r1_history": 12,
+     "r2_handles": 0,
+     "r3_routes": 1,
+     "r4_edits": 1,
+     "r5_transforms": 0
+    },
+    "r2_handles": {
+     "r0_crash": 0,
+     "r1_history": 0,
+     "r2_handles": 2,
+     "r3_routes": 0,
+     "r4_edits": 1,
+     "r5_transforms": 0
+    },
+    "r3_routes": {
+     "r0_crash": 1,
+     "r1_history": 1,
+     "r2_handles": 0,
+     "r3_routes": 5,
+     "r4_edits": 0,
+     "r5_transforms": 0
+    },
+    "r4_edits": {
+     "r0_crash": 0,
+     "r1_history": 1,
+     "r2_handles": 1,
+     "r3_routes": 0,
+     "r4_edits": 19,
+     "r5_transforms": 0
+    },
+    "r5_transforms": {
+     "r0_crash": 0,
+     "r1_history": 0,
+     "r2_handles": 0,
+     "r3_routes": 0,
+     "r4_edits": 0,
+     "r5_transforms": 3
+    }
+   },
+   "all": {
+    "r0_crash": {
+     "r0_crash": 2,
+     "r1_history": 2,
+     "r2_handles": 0,
+     "r3_routes": 1,
+     "r4_edits": 0,
+     "r5_transforms": 0
+    },
+    "r1_history": {
+     "r0_crash": 2,
+     "r1_history": 12,
+     "r2_handles": 0,
+     "r3_routes": 1,
+     "r4_edits": 1,
+     "r5_transforms": 0
+    },
+    "r2_handles": {
+     "r0_crash": 0,
+     "r1_history": 0,
+     "r2_handles": 2,
+     "r3_routes": 0,
+     "r4_edits": 1,
+     "r5_transforms": 0
+    },
+    "r3_routes": {
+     "r0_crash": 1,
+     "r1_history": 1,
+     "r2_handles": 0,
+     "r3_routes": 5,
+     "r4_edits": 0,
+     "r5_transforms": 0
+    },
+    "r4_edits": {
+     "r0_crash": 0,
+     "r1_history": 1,
+     "r2_handles": 1,
+     "r3_routes": 0,
+     "r4_edits": 20,
+     "r5_transforms": 0
+    },
+    "r5_transforms": {
+     "r0_crash": 0,
+     "r1_history": 0,
+     "r2_handles": 0,
+     "r3_routes": 0,
+     "r4_edits": 0,
+     "r5_transforms": 3
+    }
+   }
+  },
+  "incomplete_cases": [
+   "jdtls-3155",
+   "rust-analyzer-10326",
+   "rust-analyzer-10618",
+   "rust-analyzer-18572",
+   "rust-analyzer-20998",
+   "rust-analyzer-21173"
+  ],
+  "pre_only_signatures": {
+   "total": 77,
+   "by_oracle": {
+    "r0_crash": 3,
+    "r1_history": 44,
+    "r2_handles": 2,
+    "r3_routes": 5,
+    "r4_edits": 20,
+    "r5_transforms": 3
+   },
+   "author_match_filled": 77,
+   "author_match_values": {
+    "no": 17,
+    "partial": 1,
+    "yes": 59
+   },
+   "author_csv_rows": 77,
+   "author_csv_matches_table": true
+  },
+  "after_author": {
+   "judged": 77,
+   "pending": 0,
+   "values": {
+    "no": 17,
+    "partial": 1,
+    "yes": 59
+   },
+   "generic": {
+    "cases": 74,
+    "complete": 69,
+    "detected": 32,
+    "detected_by_oracle": {
+     "r0_crash": 1,
+     "r1_history": 8,
+     "r2_handles": 1,
+     "r3_routes": 4,
+     "r4_edits": 19,
+     "r5_transforms": 1
+    }
+   },
+   "spec_probe": {
+    "cases": 6,
+    "complete": 5,
+    "detected": 1,
+    "detected_by_oracle": {
+     "r4_edits": 1
+    }
+   },
+   "all": {
+    "cases": 80,
+    "complete": 74,
+    "detected": 33,
+    "detected_by_oracle": {
+     "r0_crash": 1,
+     "r1_history": 8,
+     "r2_handles": 1,
+     "r3_routes": 4,
+     "r4_edits": 20,
+     "r5_transforms": 1
+    }
+   },
+   "by_kind": {
+    "generic": {
+     "gopls": {
+      "cases": 22,
+      "complete": 22,
+      "detected": 13
+     },
+     "jdtls": {
+      "cases": 2,
+      "complete": 1,
+      "detected": 2
+     },
+     "pyright": {
+      "cases": 12,
+      "complete": 12,
+      "detected": 4
+     },
+     "rust-analyzer": {
+      "cases": 15,
+      "complete": 11,
+      "detected": 6
+     },
+     "tsserver": {
+      "cases": 23,
+      "complete": 23,
+      "detected": 7
+     }
+    },
+    "spec_probe": {
+     "gopls": {
+      "cases": 1,
+      "complete": 1,
+      "detected": 0
+     },
+     "rust-analyzer": {
+      "cases": 5,
+      "complete": 4,
+      "detected": 1
+     }
+    },
+    "all": {
+     "gopls": {
+      "cases": 23,
+      "complete": 23,
+      "detected": 13
+     },
+     "jdtls": {
+      "cases": 2,
+      "complete": 1,
+      "detected": 2
+     },
+     "pyright": {
+      "cases": 12,
+      "complete": 12,
+      "detected": 4
+     },
+     "rust-analyzer": {
+      "cases": 20,
+      "complete": 15,
+      "detected": 7
+     },
+     "tsserver": {
+      "cases": 23,
+      "complete": 23,
+      "detected": 7
+     }
+    }
+   },
+   "by_class": {
+    "generic": {
+     "R1": {
+      "cases": 21,
+      "complete": 19,
+      "detected": 8
+     },
+     "R2": {
+      "cases": 1,
+      "complete": 1,
+      "detected": 1
+     },
+     "R3": {
+      "cases": 5,
+      "complete": 5,
+      "detected": 3
+     },
+     "R4": {
+      "cases": 44,
+      "complete": 41,
+      "detected": 19
+     },
+     "R5": {
+      "cases": 3,
+      "complete": 3,
+      "detected": 1
+     }
+    },
+    "spec_probe": {
+     "R4": {
+      "cases": 6,
+      "complete": 5,
+      "detected": 1
+     }
+    },
+    "all": {
+     "R1": {
+      "cases": 21,
+      "complete": 19,
+      "detected": 8
+     },
+     "R2": {
+      "cases": 1,
+      "complete": 1,
+      "detected": 1
+     },
+     "R3": {
+      "cases": 5,
+      "complete": 5,
+      "detected": 3
+     },
+     "R4": {
+      "cases": 50,
+      "complete": 46,
+      "detected": 20
+     },
+     "R5": {
+      "cases": 3,
+      "complete": 3,
+      "detected": 1
+     }
+    }
+   },
+   "by_probe": {
+    "diagnostic_absent": {
+     "cases": 1,
+     "complete": 1,
+     "detected": 0
+    },
+    "diagnostic_present": {
+     "cases": 4,
+     "complete": 4,
+     "detected": 1
+    },
+    "differs_from_fresh": {
+     "cases": 14,
+     "complete": 13,
+     "detected": 6
+    },
+    "edit_breaks_syntax": {
+     "cases": 25,
+     "complete": 22,
+     "detected": 10
+    },
+    "edit_leaves_diagnostic": {
+     "cases": 20,
+     "complete": 20,
+     "detected": 9
+    },
+    "edit_text_differs": {
+     "cases": 6,
+     "complete": 5,
+     "detected": 1
+    },
+    "error_response": {
+     "cases": 2,
+     "complete": 1,
+     "detected": 1
+    },
+    "stale_code_action": {
+     "cases": 1,
+     "complete": 1,
+     "detected": 1
+    },
+    "transform_differs": {
+     "cases": 2,
+     "complete": 2,
+     "detected": 1
+    },
+    "two_routes_differ": {
+     "cases": 5,
+     "complete": 5,
+     "detected": 3
+    }
+   },
+   "by_probe_family": {
+    "expected-diagnostic": {
+     "cases": 5,
+     "complete": 5,
+     "detected": 1,
+     "detected_by_oracle": {
+      "r1_history": 1
+     }
+    },
+    "expected-text": {
+     "cases": 6,
+     "complete": 5,
+     "detected": 1,
+     "detected_by_oracle": {
+      "r4_edits": 1
+     }
+    },
+    "relation-shaped": {
+     "cases": 69,
+     "complete": 64,
+     "detected": 31,
+     "detected_by_oracle": {
+      "r0_crash": 1,
+      "r1_history": 7,
+      "r2_handles": 1,
+      "r3_routes": 4,
+      "r4_edits": 19,
+      "r5_transforms": 1
+     }
+    }
+   },
+   "by_kind_oracle": {
+    "gopls": {
+     "r0_crash": 0,
+     "r1_history": 3,
+     "r2_handles": 0,
+     "r3_routes": 2,
+     "r4_edits": 8,
+     "r5_transforms": 0
+    },
+    "jdtls": {
+     "r0_crash": 0,
+     "r1_history": 1,
+     "r2_handles": 1,
+     "r3_routes": 0,
+     "r4_edits": 0,
+     "r5_transforms": 0
+    },
+    "pyright": {
+     "r0_crash": 0,
+     "r1_history": 3,
+     "r2_handles": 0,
+     "r3_routes": 0,
+     "r4_edits": 0,
+     "r5_transforms": 1
+    },
+    "rust-analyzer": {
+     "r0_crash": 1,
+     "r1_history": 1,
+     "r2_handles": 0,
+     "r3_routes": 1,
+     "r4_edits": 6,
+     "r5_transforms": 0
+    },
+    "tsserver": {
+     "r0_crash": 0,
+     "r1_history": 0,
+     "r2_handles": 0,
+     "r3_routes": 1,
+     "r4_edits": 6,
+     "r5_transforms": 0
+    }
+   },
+   "r0_crash": {
+    "cases_with_pre_only": [
+     "rust-analyzer-21173"
+    ],
+    "cases": 1,
+    "detected_by_r0_alone": 0
+   },
+   "unique_by_oracle": {
+    "generic": {
+     "r0_crash": 0,
+     "r1_history": 7,
+     "r2_handles": 1,
+     "r3_routes": 3,
+     "r4_edits": 19,
+     "r5_transforms": 1
+    },
+    "all": {
+     "r0_crash": 0,
+     "r1_history": 7,
+     "r2_handles": 1,
+     "r3_routes": 3,
+     "r4_edits": 20,
+     "r5_transforms": 1
+    }
+   },
+   "detected_by_one_relation": 32,
+   "excluding_development_cases": {
+    "cases": 79,
+    "complete": 74,
+    "detected": 32,
+    "detected_by_oracle": {
+     "r0_crash": 1,
+     "r1_history": 7,
+     "r2_handles": 1,
+     "r3_routes": 4,
+     "r4_edits": 20,
+     "r5_transforms": 1
+    }
+   },
+   "detected_by_several_relations": 1,
+   "pairwise_overlap": {
+    "generic": {
+     "r0_crash": {
+      "r0_crash": 1,
+      "r1_history": 1,
+      "r2_handles": 0,
+      "r3_routes": 1,
+      "r4_edits": 0,
+      "r5_transforms": 0
+     },
+     "r1_history": {
+      "r0_crash": 1,
+      "r1_history": 8,
+      "r2_handles": 0,
+      "r3_routes": 1,
+      "r4_edits": 0,
+      "r5_transforms": 0
+     },
+     "r2_handles": {
+      "r0_crash": 0,
+      "r1_history": 0,
+      "r2_handles": 1,
+      "r3_routes": 0,
+      "r4_edits": 0,
+      "r5_transforms": 0
+     },
+     "r3_routes": {
+      "r0_crash": 1,
+      "r1_history": 1,
+      "r2_handles": 0,
+      "r3_routes": 4,
+      "r4_edits": 0,
+      "r5_transforms": 0
+     },
+     "r4_edits": {
+      "r0_crash": 0,
+      "r1_history": 0,
+      "r2_handles": 0,
+      "r3_routes": 0,
+      "r4_edits": 19,
+      "r5_transforms": 0
+     },
+     "r5_transforms": {
+      "r0_crash": 0,
+      "r1_history": 0,
+      "r2_handles": 0,
+      "r3_routes": 0,
+      "r4_edits": 0,
+      "r5_transforms": 1
+     }
+    },
+    "all": {
+     "r0_crash": {
+      "r0_crash": 1,
+      "r1_history": 1,
+      "r2_handles": 0,
+      "r3_routes": 1,
+      "r4_edits": 0,
+      "r5_transforms": 0
+     },
+     "r1_history": {
+      "r0_crash": 1,
+      "r1_history": 8,
+      "r2_handles": 0,
+      "r3_routes": 1,
+      "r4_edits": 0,
+      "r5_transforms": 0
+     },
+     "r2_handles": {
+      "r0_crash": 0,
+      "r1_history": 0,
+      "r2_handles": 1,
+      "r3_routes": 0,
+      "r4_edits": 0,
+      "r5_transforms": 0
+     },
+     "r3_routes": {
+      "r0_crash": 1,
+      "r1_history": 1,
+      "r2_handles": 0,
+      "r3_routes": 4,
+      "r4_edits": 0,
+      "r5_transforms": 0
+     },
+     "r4_edits": {
+      "r0_crash": 0,
+      "r1_history": 0,
+      "r2_handles": 0,
+      "r3_routes": 0,
+      "r4_edits": 20,
+      "r5_transforms": 0
+     },
+     "r5_transforms": {
+      "r0_crash": 0,
+      "r1_history": 0,
+      "r2_handles": 0,
+      "r3_routes": 0,
+      "r4_edits": 0,
+      "r5_transforms": 1
+     }
+    }
+   }
+  },
+  "missed_attribution": {
+   "generic": {
+    "cases": 43,
+    "by_category": {
+     "equal-on-both-builds": 2,
+     "input-not-generated": 17,
+     "masked-by-design": 14,
+     "needs-ground-truth": 5,
+     "other": 3,
+     "request-not-issued": 2
+    },
+    "input_not_generated_by_detail": {
+     "(a)": 7,
+     "(b)": 6,
+     "(d)": 3,
+     "(e)": 1
+    },
+    "author_rejected": 7,
+    "by_confidence": {
+     "high": 26,
+     "low": 1,
+     "medium": 16
+    },
+    "by_relation_that_could_see": {
+     "R1": 10,
+     "R2": 1,
+     "R3": 2,
+     "R4": 24,
+     "R5": 1,
+     "none": 5
+    }
+   },
+   "spec_probe": {
+    "cases": 5,
+    "by_category": {
+     "needs-ground-truth": 3,
+     "request-not-issued": 2
+    },
+    "input_not_generated_by_detail": {},
+    "author_rejected": 0,
+    "by_confidence": {
+     "high": 3,
+     "medium": 2
+    },
+    "by_relation_that_could_see": {
+     "none": 5
+    }
+   },
+   "rows": 48
+  },
+  "author_check_effect": {
+   "detected_before": 39,
+   "detected_after": 33,
+   "removed": 6
+  },
+  "consistency": {
+   "detection_json_generated": "2026-09-25 15:37",
+   "matches_detection_json": true,
+   "cases_differing": []
+  },
+  "consensus": {
+   "values": {
+    "no": 17,
+    "partial": 6,
+    "yes": 54
+   },
+   "judged": 77,
+   "pending": 0,
+   "all": {
+    "cases": 80,
+    "complete": 74,
+    "detected": 32,
+    "detected_by_oracle": {
+     "r0_crash": 1,
+     "r1_history": 8,
+     "r2_handles": 0,
+     "r3_routes": 4,
+     "r4_edits": 20,
+     "r5_transforms": 1
+    }
+   },
+   "generic": {
+    "cases": 74,
+    "complete": 69,
+    "detected": 31,
+    "detected_by_oracle": {
+     "r0_crash": 1,
+     "r1_history": 8,
+     "r2_handles": 0,
+     "r3_routes": 4,
+     "r4_edits": 19,
+     "r5_transforms": 1
+    }
+   },
+   "spec_probe": {
+    "cases": 6,
+    "complete": 5,
+    "detected": 1,
+    "detected_by_oracle": {
+     "r0_crash": 0,
+     "r1_history": 0,
+     "r2_handles": 0,
+     "r3_routes": 0,
+     "r4_edits": 1,
+     "r5_transforms": 0
+    }
+   },
+   "by_kind": {
+    "generic": {
+     "gopls": {
+      "cases": 22,
+      "complete": 22,
+      "detected": 13
+     },
+     "jdtls": {
+      "cases": 2,
+      "complete": 1,
+      "detected": 1
+     },
+     "pyright": {
+      "cases": 12,
+      "complete": 12,
+      "detected": 4
+     },
+     "rust-analyzer": {
+      "cases": 15,
+      "complete": 11,
+      "detected": 6
+     },
+     "tsserver": {
+      "cases": 23,
+      "complete": 23,
+      "detected": 7
+     }
+    },
+    "spec_probe": {
+     "gopls": {
+      "cases": 1,
+      "complete": 1,
+      "detected": 0
+     },
+     "jdtls": {
+      "cases": 0,
+      "complete": 0,
+      "detected": 0
+     },
+     "pyright": {
+      "cases": 0,
+      "complete": 0,
+      "detected": 0
+     },
+     "rust-analyzer": {
+      "cases": 5,
+      "complete": 4,
+      "detected": 1
+     },
+     "tsserver": {
+      "cases": 0,
+      "complete": 0,
+      "detected": 0
+     }
+    },
+    "all": {
+     "gopls": {
+      "cases": 23,
+      "complete": 23,
+      "detected": 13
+     },
+     "jdtls": {
+      "cases": 2,
+      "complete": 1,
+      "detected": 1
+     },
+     "pyright": {
+      "cases": 12,
+      "complete": 12,
+      "detected": 4
+     },
+     "rust-analyzer": {
+      "cases": 20,
+      "complete": 15,
+      "detected": 7
+     },
+     "tsserver": {
+      "cases": 23,
+      "complete": 23,
+      "detected": 7
+     }
+    }
+   },
+   "by_kind_oracle": {
+    "gopls": {
+     "r0_crash": 0,
+     "r1_history": 3,
+     "r2_handles": 0,
+     "r3_routes": 2,
+     "r4_edits": 8,
+     "r5_transforms": 0
+    },
+    "jdtls": {
+     "r0_crash": 0,
+     "r1_history": 1,
+     "r2_handles": 0,
+     "r3_routes": 0,
+     "r4_edits": 0,
+     "r5_transforms": 0
+    },
+    "pyright": {
+     "r0_crash": 0,
+     "r1_history": 3,
+     "r2_handles": 0,
+     "r3_routes": 0,
+     "r4_edits": 0,
+     "r5_transforms": 1
+    },
+    "rust-analyzer": {
+     "r0_crash": 1,
+     "r1_history": 1,
+     "r2_handles": 0,
+     "r3_routes": 1,
+     "r4_edits": 6,
+     "r5_transforms": 0
+    },
+    "tsserver": {
+     "r0_crash": 0,
+     "r1_history": 0,
+     "r2_handles": 0,
+     "r3_routes": 1,
+     "r4_edits": 6,
+     "r5_transforms": 0
+    }
+   },
+   "by_probe_family": {
+    "expected-diagnostic": {
+     "cases": 5,
+     "detected": 1
+    },
+    "expected-text": {
+     "cases": 6,
+     "detected": 1
+    },
+    "relation-shaped": {
+     "cases": 69,
+     "detected": 30
+    }
+   },
+   "detected_by_one_relation": 31,
+   "detected_by_several_relations": 1,
+   "held_out": {
+    "all": {
+     "cases": 80,
+     "detected": 32
+    },
+    "pre_freeze_cases": 6,
+    "held_out": {
+     "cases": 74,
+     "detected": 27
+    },
+    "held_out_strict": {
+     "cases": 74,
+     "detected": 25,
+     "not_credited": [
+      "pyright-3482",
+      "pyright-9681"
+     ]
+    },
+    "pre_freeze_case_list": [
+     "gopls-60435",
+     "jdtls-2111",
+     "jdtls-3155",
+     "pyright-8946",
+     "rust-analyzer-21173",
+     "tsserver-46466"
+    ],
+    "pre_freeze_detected": 5,
+    "pre_freeze_detected_list": [
+     "gopls-60435",
+     "jdtls-3155",
+     "pyright-8946",
+     "rust-analyzer-21173",
+     "tsserver-46466"
+    ]
+   },
+   "error_oracle": {
+    "any_error_response": 4,
+    "internal_error_or_timeout": 1,
+    "cases": [
+     "gopls-38424",
+     "gopls-38732",
+     "gopls-52500",
+     "rust-analyzer-21173"
+    ],
+    "internal_cases": [
+     "rust-analyzer-21173"
+    ]
+   },
+   "held_out_detail": {
+    "detected": 27,
+    "detected_by_oracle": {
+     "r1_history": 5,
+     "r3_routes": 2,
+     "r4_edits": 19,
+     "r5_transforms": 1
+    },
+    "unique_by_oracle": {
+     "r1_history": 5,
+     "r3_routes": 2,
+     "r4_edits": 19,
+     "r5_transforms": 1
+    },
+    "error_response": 3,
+    "internal_error": 0,
+    "error_cases_pre_freeze": [
+     "rust-analyzer-21173"
+    ]
+   },
+   "intervals": {
+    "all": {
+     "low": 30.0,
+     "high": 51.0
+    },
+    "held_out": {
+     "low": 26.4,
+     "high": 47.9
+    },
+    "strict": {
+     "low": 24.0,
+     "high": 45.1
+    },
+    "relation_shaped": {
+     "low": 32.4,
+     "high": 55.2
+    },
+    "expected_diagnostic": {
+     "low": 3.6,
+     "high": 62.4
+    },
+    "expected_text": {
+     "low": 3.0,
+     "high": 56.4
+    }
+   },
+   "from_consensus": 7,
+   "check_effect": {
+    "detected_before": 39,
+    "detected_after": 32,
+    "removed": 7,
+    "removed_cases": [
+     "gopls-43144",
+     "jdtls-2111",
+     "rust-analyzer-14841",
+     "rust-analyzer-17525",
+     "rust-analyzer-18572",
+     "rust-analyzer-19694",
+     "rust-analyzer-20588"
+    ]
+   },
+   "check_removed": 7
+  }
+ },
+ "author_effort": {
+  "hours_total": 10,
+  "items": 183
+ },
+ "sources": {
+  "data/lsp_bench/README.md": "2a5d5fea904f7904",
+  "data/lsp_bench/candidates.jsonl": "710c6d407ac0fa85",
+  "data/lsp_bench/candidates.md": "e7de8064b3960f57",
+  "data/lsp_bench/cases/gopls-36824/case.json": "2b24b9cd5065f6fe",
+  "data/lsp_bench/cases/gopls-38424/case.json": "248cc6a455956b5a",
+  "data/lsp_bench/cases/gopls-38732/case.json": "3510917d35664d94",
+  "data/lsp_bench/cases/gopls-41057/case.json": "b3ff61192b72af11",
+  "data/lsp_bench/cases/gopls-41311/case.json": "7a6b491d1c594172",
+  "data/lsp_bench/cases/gopls-42254/case.json": "6c269ebee9ca2f61",
+  "data/lsp_bench/cases/gopls-43144/case.json": "6579c1aceaebd8b0",
+  "data/lsp_bench/cases/gopls-46436/case.json": "12222a0ab50e8f7f",
+  "data/lsp_bench/cases/gopls-46667/case.json": "5b8229c538278775",
+  "data/lsp_bench/cases/gopls-47436/case.json": "7b60bcb7895d8a07",
+  "data/lsp_bench/cases/gopls-52500/case.json": "ce01e807083e48cd",
+  "data/lsp_bench/cases/gopls-52981/case.json": "773fb61ae0dea009",
+  "data/lsp_bench/cases/gopls-54147/case.json": "c751982abe010be5",
+  "data/lsp_bench/cases/gopls-57480/case.json": "1c4ccdf828b0d9fe",
+  "data/lsp_bench/cases/gopls-60435/case.json": "31e7363539cf6061",
+  "data/lsp_bench/cases/gopls-62141/case.json": "f2d3fdfbb641b871",
+  "data/lsp_bench/cases/gopls-72753/case.json": "33fedca9d080ee37",
+  "data/lsp_bench/cases/gopls-73269/case.json": "ee245e7087f64b14",
+  "data/lsp_bench/cases/gopls-73564/case.json": "1fdbf5c3bae2514c",
+  "data/lsp_bench/cases/gopls-73576/case.json": "298d0e58aec40aea",
+  "data/lsp_bench/cases/gopls-73661/case.json": "c876961c9c994bae",
+  "data/lsp_bench/cases/gopls-73663/case.json": "7f911723283034d2",
+  "data/lsp_bench/cases/gopls-74708/case.json": "5c861998b281c5d8",
+  "data/lsp_bench/cases/gopls-74709/case.json": "59cd46fd6285fd03",
+  "data/lsp_bench/cases/gopls-74938/case.json": "a7ecc61da81eed5a",
+  "data/lsp_bench/cases/gopls-77481/case.json": "f0de1ad022d4faa6",
+  "data/lsp_bench/cases/jdtls-2111/case.json": "daf68c84e2414113",
+  "data/lsp_bench/cases/jdtls-3155/case.json": "f5d7607d1d62ff93",
+  "data/lsp_bench/cases/pyright-1151/case.json": "10c442a8918f7b32",
+  "data/lsp_bench/cases/pyright-2631/case.json": "aada45160c512b2e",
+  "data/lsp_bench/cases/pyright-2759/case.json": "621136ed77ea83ac",
+  "data/lsp_bench/cases/pyright-2983/case.json": "805f885ef7e8811c",
+  "data/lsp_bench/cases/pyright-3482/case.json": "8f7b4bd1b0cbfebc",
+  "data/lsp_bench/cases/pyright-3504/case.json": "305c7041d1736a83",
+  "data/lsp_bench/cases/pyright-3585/case.json": "680ca3d339adecf2",
+  "data/lsp_bench/cases/pyright-4844/case.json": "a606e3b0df8cbe91",
+  "data/lsp_bench/cases/pyright-6629/case.json": "3eb9cc62ac668fe8",
+  "data/lsp_bench/cases/pyright-7466/case.json": "a488993211f28aff",
+  "data/lsp_bench/cases/pyright-7516/case.json": "0c80853ad060034f",
+  "data/lsp_bench/cases/pyright-8133/case.json": "fe060ada1e4f7b12",
+  "data/lsp_bench/cases/pyright-8946/case.json": "dd984507c2f1d98b",
+  "data/lsp_bench/cases/pyright-9681/case.json": "2fcc40e23d4f1f4b",
+  "data/lsp_bench/cases/rust-analyzer-10326/case.json": "ef0b4bdf5ef06b7a",
+  "data/lsp_bench/cases/rust-analyzer-10618/case.json": "34267502b00d7511",
+  "data/lsp_bench/cases/rust-analyzer-11897/case.json": "837c7ed8dba2fa62",
+  "data/lsp_bench/cases/rust-analyzer-14841/case.json": "cbb110ce82b1bc6f",
+  "data/lsp_bench/cases/rust-analyzer-16181/case.json": "a047ff2c6cb64f95",
+  "data/lsp_bench/cases/rust-analyzer-16556/case.json": "3aa592f2766ba16c",
+  "data/lsp_bench/cases/rust-analyzer-16858/case.json": "352540c511e795ad",
+  "data/lsp_bench/cases/rust-analyzer-17139/case.json": "afc7c3e8cb23c9b1",
+  "data/lsp_bench/cases/rust-analyzer-17525/case.json": "e3e3889e8c497640",
+  "data/lsp_bench/cases/rust-analyzer-17728/case.json": "a71c1d95193b039b",
+  "data/lsp_bench/cases/rust-analyzer-18130/case.json": "a5f00f7a190de5e5",
+  "data/lsp_bench/cases/rust-analyzer-18144/case.json": "4896dd4d7e24f30f",
+  "data/lsp_bench/cases/rust-analyzer-18572/case.json": "3fbe400a4f4b9899",
+  "data/lsp_bench/cases/rust-analyzer-19003/case.json": "d5793d855cbb1bad",
+  "data/lsp_bench/cases/rust-analyzer-19694/case.json": "169724688b641f7a",
+  "data/lsp_bench/cases/rust-analyzer-19758/case.json": "2487dfb59349e099",
+  "data/lsp_bench/cases/rust-analyzer-20588/case.json": "a501c5a2a10ab032",
+  "data/lsp_bench/cases/rust-analyzer-20987/case.json": "c84f86bc61adebba",
+  "data/lsp_bench/cases/rust-analyzer-20998/case.json": "84af11819abceef0",
+  "data/lsp_bench/cases/rust-analyzer-21173/case.json": "a3abd127d5f0c974",
+  "data/lsp_bench/cases/rust-analyzer-21204/case.json": "c84d480b2bfb914d",
+  "data/lsp_bench/cases/rust-analyzer-21663/case.json": "fbd1b6461bcf44bc",
+  "data/lsp_bench/cases/rust-analyzer-22281/case.json": "2dd34694470c677e",
+  "data/lsp_bench/cases/tsserver-29908/case.json": "40e2a173fd61dd55",
+  "data/lsp_bench/cases/tsserver-32068/case.json": "8f399ef1e3dad7fe",
+  "data/lsp_bench/cases/tsserver-37830/case.json": "c2b2cad10f70a1cc",
+  "data/lsp_bench/cases/tsserver-40257/case.json": "e42cfa36bbd8ac2c",
+  "data/lsp_bench/cases/tsserver-41194/case.json": "b4085cd384c5376d",
+  "data/lsp_bench/cases/tsserver-41526/case.json": "3b9fe9c05407efc8",
+  "data/lsp_bench/cases/tsserver-43278/case.json": "b8c139ee5b3a3eb1",
+  "data/lsp_bench/cases/tsserver-44123/case.json": "e1aa9f41343cc73f",
+  "data/lsp_bench/cases/tsserver-45270/case.json": "9e311e461c17bdd6",
+  "data/lsp_bench/cases/tsserver-45533/case.json": "6fb76d7298e04a41",
+  "data/lsp_bench/cases/tsserver-46466/case.json": "a17bbd99446f2398",
+  "data/lsp_bench/cases/tsserver-46564/case.json": "2fd1195023565d59",
+  "data/lsp_bench/cases/tsserver-48006/case.json": "611d802bd268b1eb",
+  "data/lsp_bench/cases/tsserver-49001/case.json": "9109d922fe109c23",
+  "data/lsp_bench/cases/tsserver-49693/case.json": "48720311f5e90444",
+  "data/lsp_bench/cases/tsserver-50076/case.json": "48f17c00a2a17d75",
+  "data/lsp_bench/cases/tsserver-50188/case.json": "02080f1975bfec55",
+  "data/lsp_bench/cases/tsserver-51667/case.json": "56ac72ed4b83694d",
+  "data/lsp_bench/cases/tsserver-51920/case.json": "22b4911c77297fef",
+  "data/lsp_bench/cases/tsserver-52274/case.json": "46981727c58a04ab",
+  "data/lsp_bench/cases/tsserver-52675/case.json": "2eef5851f34589f0",
+  "data/lsp_bench/cases/tsserver-52792/case.json": "b2923503fb29fe86",
+  "data/lsp_bench/cases/tsserver-54818/case.json": "dbe84cb4c17bb934",
+  "data/lsp_bench/cases/tsserver-57497/case.json": "22a8c77a8061c73b",
+  "data/lsp_bench/cases/tsserver-59116/case.json": "93d6c84b29a787c9",
+  "data/lsp_bench/cases/tsserver-59304/case.json": "0c9131d855249833",
+  "data/lsp_bench/cases/tsserver-60186/case.json": "f83daf21bd4d5d28",
+  "data/lsp_bench/repro_results.jsonl": "43d21225b79c9129",
+  "data/lsptest/corpus.json": "94c0fe33611b17e5",
+  "data/lsptest/corpus_prepared.json": "5eadf68b93c4f96d",
+  "data/lsptest/corpus_v2.json": "6427049987892efb",
+  "data/lsptest/corpus_v2_prepared.json": "f5e7e2a1dd52e26f",
+  "data/lsptest/freeze/v1.json": "75c1f1b85b6f0957",
+  "data/lsptest/freeze/v2.json": "876c8a70f1db831c",
+  "data/lsptest/freeze/v3.json": "31364544cb8a90fe",
+  "data/lsptest/root_cause_possible_merges.csv": "f88886238d1fb179",
+  "data/lsptest/root_cause_withdrawn.csv": "9e7480c49e00e6f9",
+  "data/lsptest/runs/bench_v1/config.json": "621ab1d6dc681ca0",
+  "data/lsptest/runs/bench_v1/detection.json": "6714ccbf4eeb22a4",
+  "data/lsptest/runs/bench_v1/detection_author.csv": "fb593b5490114464",
+  "data/lsptest/runs/bench_v1/detection_consensus.csv": "23034a6d38d6793c",
+  "data/lsptest/runs/bench_v1/detection_consensus_reasons_en.csv": "0f6bc5c5b453b143",
+  "data/lsptest/runs/bench_v1/detection_rater2.csv": "137a54112190866b",
+  "data/lsptest/runs/bench_v1/detection_rater2_agreement.json": "100060394be17351",
+  "data/lsptest/runs/bench_v1/missed_attribution.csv": "0e909487221f2948",
+  "data/lsptest/runs/bench_v1/plan_specs.jsonl": "de3863a51a0938ff",
+  "data/lsptest/runs/bench_v1/results.jsonl": "b395cd1f812f6449",
+  "data/lsptest/runs/bench_v1/violations.jsonl": "f4c37b00d86a589f",
+  "data/lsptest/runs/main_v1/config.json": "48a3d9eeec28d1e3",
+  "data/lsptest/runs/main_v1/evidence/answers_ts6_on_ts7-7.0.2.json": "a8c3c8ed2b2435d6",
+  "data/lsptest/runs/main_v1/evidence/answers_ts7_on_ts6-6.0.3.json": "ce64a9fe99ec2b7d",
+  "data/lsptest/runs/main_v1/evidence/c1_rename_edit.json": "483a1a4fe473a2bb",
+  "data/lsptest/runs/main_v1/evidence/c1_rename_external.json": "4574591ef6bc1830",
+  "data/lsptest/runs/main_v1/evidence/c8_vscode/result_default.json": "3afd19be8913f323",
+  "data/lsptest/runs/main_v1/evidence/c8_vscode/result_sqlite.json": "3e0dc64e327e89db",
+  "data/lsptest/runs/main_v1/evidence/c9_trigger.json": "2477cb8669893b44",
+  "data/lsptest/runs/main_v1/evidence/contextual_keywords.json": "bc883a7f422cafa4",
+  "data/lsptest/runs/main_v1/evidence/dup_search.json": "e6da3100941c5aa1",
+  "data/lsptest/runs/main_v1/evidence/evidence_summary.csv": "d033449c0098a58b",
+  "data/lsptest/runs/main_v1/evidence/persistence.json": "e17909b55a37ac82",
+  "data/lsptest/runs/main_v1/evidence/persistence_new.json": "9b704fa462560410",
+  "data/lsptest/runs/main_v1/evidence/persistence_retry.json": "ffb4a9ec9c8114fa",
+  "data/lsptest/runs/main_v1/evidence/ts_quickfix_minimal.json": "825f8cec82ea1cbb",
+  "data/lsptest/runs/main_v1/evidence/ts_wrapper_options.json": "87dbbf38aca8726e",
+  "data/lsptest/runs/main_v1/plan_specs.jsonl": "d5d55291876dcfaa",
+  "data/lsptest/runs/main_v1/results.jsonl": "261771cd4bc0b459",
+  "data/lsptest/runs/main_v1/sweep/head-2026-11-18/releases.json": "a0e91425bad57925",
+  "data/lsptest/runs/main_v1/sweep/head-2026-11-18/results.jsonl": "d3e5a9c1de26111d",
+  "data/lsptest/runs/main_v1/sweep/iso-ts5.9.3-tsls6.0.0/results.jsonl": "1e00ac2775ec4eaf",
+  "data/lsptest/runs/main_v1/sweep/iso-ts6.0.3-tsls5.0.0/results.jsonl": "255f26c811a3464c",
+  "data/lsptest/runs/main_v1/sweep/iso-ts6.0.3-tsls6.0.0/results.jsonl": "67b50e9d3c156603",
+  "data/lsptest/runs/main_v1/sweep/iso-ts6.0.3-tsls6.0.1/results.jsonl": "d5985eaea5007d95",
+  "data/lsptest/runs/main_v1/sweep/lifecycle/releases.json": "4d4de80688b649ae",
+  "data/lsptest/runs/main_v1/sweep/lifecycle/results.jsonl": "6d338615efe11b2d",
+  "data/lsptest/runs/main_v1/sweep/newest-2026-09-28/releases.json": "5f76272c64d275d3",
+  "data/lsptest/runs/main_v1/sweep/newest-2026-09-28/results.jsonl": "669105a9c81b01d0",
+  "data/lsptest/runs/main_v1/sweep/newest-2026-11-18/releases.json": "97d266aa3150df3e",
+  "data/lsptest/runs/main_v1/sweep/newest-2026-11-18/results.jsonl": "ad3207c0c2a06f14",
+  "data/lsptest/runs/main_v1/sweep/older-2025/results.jsonl": "e5077229fcba04ae",
+  "data/lsptest/runs/main_v1/sweep/ts6-groups-on-ts7/results.jsonl": "7423af58d79c51cc",
+  "data/lsptest/runs/main_v1/sweep/ts7-groups-on-ts6/results.jsonl": "13389ce422eb96d0",
+  "data/lsptest/runs/main_v1/triage/consensus.csv": "7473ce9973ba2850",
+  "data/lsptest/runs/main_v1/triage/consensus_reasons_en.csv": "e90aee6452135654",
+  "data/lsptest/runs/main_v1/triage/decisions.csv": "540ba45913ff45fe",
+  "data/lsptest/runs/main_v1/triage/effort.json": "79e2117054e90682",
+  "data/lsptest/runs/main_v1/triage/gopls-r1-codeaction-changed-h4-c5344e/reduction.json": "fac4393a8136eb79",
+  "data/lsptest/runs/main_v1/triage/gopls-r1-codeaction-changed-h4-c5344e/repro.json": "b88d302dfcb8f166",
+  "data/lsptest/runs/main_v1/triage/gopls-r1-completion-extra-h5-2dfa5a/reduction.json": "717336a69f1c9e2f",
+  "data/lsptest/runs/main_v1/triage/gopls-r1-references-extra-h9-0290a7/reduction.json": "aa562f5a0d7ba97f",
+  "data/lsptest/runs/main_v1/triage/gopls-r1-references-extra-h9-0290a7/repro.json": "5559c870a977a2bf",
+  "data/lsptest/runs/main_v1/triage/gopls-r2-codeactionresolve-changed-codeaction-70b3e9/reduction.json": "96263b87dd0f8249",
+  "data/lsptest/runs/main_v1/triage/gopls-r2-codeactionresolve-changed-codeaction-70b3e9/repro.json": "cfa19b63d185cfe7",
+  "data/lsptest/runs/main_v1/triage/gopls-r3-definitionconsistency-changed-d-cf67f4/reduction.json": "7df707a032a82f13",
+  "data/lsptest/runs/main_v1/triage/gopls-r3-highlightvsreferences-extra-c-84be95/reduction.json": "d35217bc09cdcfc7",
+  "data/lsptest/runs/main_v1/triage/gopls-r4-diagnostics-extra-invalidifaceassign-mutation-m2-416e90/reduction.json": "8ac05b8689a105a9",
+  "data/lsptest/runs/main_v1/triage/gopls-r4-diagnostics-extra-invalidifaceassign-mutation-m2-416e90/repro.json": "d7b7d40c362c9dac",
+  "data/lsptest/runs/main_v1/triage/gopls-r4-diagnostics-extra-mutation-m2-111975/reduction.json": "e4c9335ac3256628",
+  "data/lsptest/runs/main_v1/triage/gopls-r4-diagnostics-extra-mutation-m2-111975/repro.json": "574e53d39c7e2103",
+  "data/lsptest/runs/main_v1/triage/gopls-r4-diagnostics-extra-nonindexableoperand-mutation-m2-ba152b/reduction.json": "db6b9f2ecf54befb",
+  "data/lsptest/runs/main_v1/triage/gopls-r4-diagnostics-extra-nonindexableoperand-mutation-m2-ba152b/repro.json": "8fd4ffdc2fb8088f",
+  "data/lsptest/runs/main_v1/triage/gopls-r4-diagnostics-extra-nonsliceableoperand-mutation-m2-d80a9a/reduction.json": "fb994e1083ebce69",
+  "data/lsptest/runs/main_v1/triage/gopls-r4-diagnostics-extra-nonsliceableoperand-mutation-m2-d80a9a/repro.json": "337e2ae9e1be326a",
+  "data/lsptest/runs/main_v1/triage/gopls-r4-diagnostics-extra-notatype-mutation-m2-477181/reduction.json": "027cc85d048ab545",
+  "data/lsptest/runs/main_v1/triage/gopls-r4-diagnostics-extra-notatype-mutation-m2-477181/repro.json": "907e526e4da724bf",
+  "data/lsptest/runs/main_v1/triage/gopls-r4-diagnostics-extra-undeclaredname-mutation-m2-12380c/reduction.json": "a5e3447b06ee4b93",
+  "data/lsptest/runs/main_v1/triage/gopls-r4-diagnostics-extra-undeclaredname-wrongar-mutation-m3-946c39/reduction.json": "07d94bcf2c679f1a",
+  "data/lsptest/runs/main_v1/triage/gopls-r4-diagnostics-extra-undeclaredname-wrongar-mutation-m3-946c39/repro.json": "45062979aa727fe5",
+  "data/lsptest/runs/main_v1/triage/gopls-r4-diagnostics-extra-untypedniluse-mutation-m2-354f70/reduction.json": "eb0ea8bb9444b9b4",
+  "data/lsptest/runs/main_v1/triage/gopls-r4-diagnostics-extra-untypedniluse-mutation-m2-354f70/repro.json": "d04df8ede747b015",
+  "data/lsptest/runs/main_v1/triage/gopls-r4-diagnostics-extra-wrongargcount-mutation-m3-ac10cc/reduction.json": "f9fd01798694d3cb",
+  "data/lsptest/runs/main_v1/triage/gopls-r4-syntax-gained-mutation-m2-86fde3/reduction.json": "efb6d94ca1f715cc",
+  "data/lsptest/runs/main_v1/triage/gopls-r4-syntax-gained-mutation-m2-86fde3/repro.json": "53d5df211fa6b35a",
+  "data/lsptest/runs/main_v1/triage/gopls-r5-codeaction-extra-t1-6dfb45/reduction.json": "bb9d166d708ff8c0",
+  "data/lsptest/runs/main_v1/triage/gopls-r5-codeaction-extra-t2-86a8ac/reduction.json": "4875e7ec76a5eb10",
+  "data/lsptest/runs/main_v1/triage/gopls-r5-foldingrange-changed-t6-ecacad/reduction.json": "93bd4ce0e8845a1c",
+  "data/lsptest/runs/main_v1/triage/judgements/consistency_2026-09-28T00-55-52Z.json": "f6123def550d2e8c",
+  "data/lsptest/runs/main_v1/triage/judgements/decision_2026-09-27T23-18-40Z.json": "5e4ae995d4228426",
+  "data/lsptest/runs/main_v1/triage/judgements/decision_2026-09-28T00-21-23Z.json": "d6095c83a641624d",
+  "data/lsptest/runs/main_v1/triage/judgements/recheck_2026-09-27T13-40-45Z.json": "1eba388e770869fb",
+  "data/lsptest/runs/main_v1/triage/judgements/triage_2026-09-26T15-03-06Z.json": "8f7cc02575fb99b9",
+  "data/lsptest/runs/main_v1/triage/pyright-r1-references-extra-h4-a63d47/reduction.json": "76ed394617f34fa5",
+  "data/lsptest/runs/main_v1/triage/pyright-r1-references-extra-h5-181832/reduction.json": "9f2015ebf11a5033",
+  "data/lsptest/runs/main_v1/triage/pyright-r1-references-extra-h8-98dfb1/reduction.json": "df51592c6cfccf72",
+  "data/lsptest/runs/main_v1/triage/pyright-r1-references-missing-h3-876306/reduction.json": "1d7010e1f189e4f6",
+  "data/lsptest/runs/main_v1/triage/pyright-r1-references-missing-h5-64453c/reduction.json": "74e8013d53f9b1d3",
+  "data/lsptest/runs/main_v1/triage/pyright-r3-definitionconsistency-extra-d-3d112f/reduction.json": "83790b1cdf5f0622",
+  "data/lsptest/runs/main_v1/triage/pyright-r3-definitionconsistency-lost-d-a4eaed/reduction.json": "b883300ac559a779",
+  "data/lsptest/runs/main_v1/triage/pyright-r3-definitionconsistency-missing-d-81a7e5/reduction.json": "13f3c8e258317eba",
+  "data/lsptest/runs/main_v1/triage/pyright-r3-highlightvsreferences-gained-c-3118cc/reduction.json": "4b8e97f49c145457",
+  "data/lsptest/runs/main_v1/triage/pyright-r4-completioninsert-gained-completion-79a584/reduction.json": "2c40cf909e0b1846",
+  "data/lsptest/runs/main_v1/triage/pyright-r5-definition-lost-t1-ae8275/reduction.json": "ba01d12fb2c2268d",
+  "data/lsptest/runs/main_v1/triage/rater2_agreement.json": "95dd9b80eb46acf0",
+  "data/lsptest/runs/main_v1/triage/rater2_decisions.csv": "f827f7f233364740",
+  "data/lsptest/runs/main_v1/triage/rater2_reasons_en.csv": "9816617fb7d35dbd",
+  "data/lsptest/runs/main_v1/triage/rejudged.csv": "4e667b3cfe6a04ff",
+  "data/lsptest/runs/main_v1/triage/root_causes.csv": "fd6daf7564fa5190",
+  "data/lsptest/runs/main_v1/triage/rust-analyzer-r0-references-result-error-timeout-fresh-pair-8a4b8d/reduction.json": "d93a7fe203f65ec3",
+  "data/lsptest/runs/main_v1/triage/rust-analyzer-r0-semantictokens-result-error-timeout-fresh-pair-62256f/reduction.json": "f3ddf1db18cdd48d",
+  "data/lsptest/runs/main_v1/triage/rust-analyzer-r2-completionresolve-changed-completion-3170a1/reduction.json": "0517658e0f8c99f3",
+  "data/lsptest/runs/main_v1/triage/rust-analyzer-r2-completionresolve-changed-completion-3170a1/repro.json": "f85298154eb19735",
+  "data/lsptest/runs/main_v1/triage/rust-analyzer-r3-definitionconsistency-changed-d-2c6179/reduction.json": "f7c810a500a9cba7",
+  "data/lsptest/runs/main_v1/triage/rust-analyzer-r3-definitionconsistency-extra-d-4cbc9e/reduction.json": "647b9342c0102e5d",
+  "data/lsptest/runs/main_v1/triage/rust-analyzer-r3-definitionconsistency-extra-d-4cbc9e/repro.json": "7d20c34c5236a737",
+  "data/lsptest/runs/main_v1/triage/rust-analyzer-r3-definitionconsistency-missing-d-586fd8/reduction.json": "e0b09139b54b510f",
+  "data/lsptest/runs/main_v1/triage/rust-analyzer-r3-definitionconsistency-missing-d-586fd8/repro.json": "4aa8618bbccafa71",
+  "data/lsptest/runs/main_v1/triage/rust-analyzer-r3-diagnostics-extra-non-snake-case-a-52ba0b/reduction.json": "146d4e6020b9438b",
+  "data/lsptest/runs/main_v1/triage/rust-analyzer-r3-diagnostics-extra-unlinked-file-a-751ce1/reduction.json": "9281995cd147edea",
+  "data/lsptest/runs/main_v1/triage/rust-analyzer-r3-diagnostics-missing-e0004-inactive-code-a-731c4f/reduction.json": "061fa205a77bd0d3",
+  "data/lsptest/runs/main_v1/triage/rust-analyzer-r3-diagnostics-missing-e0004-inactive-code-a-731c4f/repro.json": "50e252b7e4d21009",
+  "data/lsptest/runs/main_v1/triage/rust-analyzer-r3-diagnostics-missing-inactive-code-a-0b07f0/reduction.json": "cc7a2adf924d84c5",
+  "data/lsptest/runs/main_v1/triage/rust-analyzer-r3-diagnostics-missing-inactive-code-a-0b07f0/repro.json": "9ed71aed50e58395",
+  "data/lsptest/runs/main_v1/triage/rust-analyzer-r3-highlightvsreferences-extra-c-c2bfed/reduction.json": "f0c4acbe68712ab1",
+  "data/lsptest/runs/main_v1/triage/rust-analyzer-r3-semantictokensrange-changed-b-b6e28b/reduction.json": "90cbc4c73b0b3ede",
+  "data/lsptest/runs/main_v1/triage/rust-analyzer-r3-semantictokensrange-changed-b-b6e28b/repro.json": "3a8d2ae2c0eb79cd",
+  "data/lsptest/runs/main_v1/triage/rust-analyzer-r4-completioninsert-gained-completion-e99b79/reduction.json": "27d35beed0d02c94",
+  "data/lsptest/runs/main_v1/triage/rust-analyzer-r4-completioninsert-gained-completion-e99b79/repro.json": "6d380b4fe5d05d19",
+  "data/lsptest/runs/main_v1/triage/rust-analyzer-r4-diagnostics-extra-inactive-code-quickfix-f2d641/reduction.json": "fa6c021de6995d89",
+  "data/lsptest/runs/main_v1/triage/triage.json": "9a5f1c2c79f9a071",
+  "data/lsptest/runs/main_v1/triage/ts6-r1-codeaction-key-lost-h5-4f92e2/reduction.json": "25d721292e7e6837",
+  "data/lsptest/runs/main_v1/triage/ts6-r1-codeaction-key-lost-h5-4f92e2/repro.json": "1ab0300314bce289",
+  "data/lsptest/runs/main_v1/triage/ts6-r1-completion-lost-h5-fa501c/reduction.json": "3a2c3c7d862a75ef",
+  "data/lsptest/runs/main_v1/triage/ts6-r1-completion-lost-h5-fa501c/repro.json": "9ffe831b76cd8e4a",
+  "data/lsptest/runs/main_v1/triage/ts6-r1-definition-lost-h5-61a0fd/reduction.json": "e85c2dda5962188b",
+  "data/lsptest/runs/main_v1/triage/ts6-r1-definition-lost-h5-61a0fd/repro.json": "28b91ed47bb681a9",
+  "data/lsptest/runs/main_v1/triage/ts6-r1-definition-lost-h9-898f29/reduction.json": "de0c44024410f8ea",
+  "data/lsptest/runs/main_v1/triage/ts6-r1-definition-lost-h9-898f29/repro.json": "baffed82a47287fe",
+  "data/lsptest/runs/main_v1/triage/ts6-r1-diagnostics-extra-2304-h7-8ca52f/reduction.json": "ed2fbd69babed8b4",
+  "data/lsptest/runs/main_v1/triage/ts6-r1-diagnostics-extra-2304-h7-8ca52f/repro.json": "d9db3e306d5ef7a0",
+  "data/lsptest/runs/main_v1/triage/ts6-r1-diagnostics-extra-2305-2339-7006-h5-d5a250/reduction.json": "e4b9661d71177a6c",
+  "data/lsptest/runs/main_v1/triage/ts6-r1-diagnostics-extra-2305-2339-7006-h5-d5a250/repro.json": "31d708e913df0890",
+  "data/lsptest/runs/main_v1/triage/ts6-r1-documenthighlight-lost-h5-9b4675/reduction.json": "93197bb470483dee",
+  "data/lsptest/runs/main_v1/triage/ts6-r1-documenthighlight-lost-h5-9b4675/repro.json": "f4509055dcbce34e",
+  "data/lsptest/runs/main_v1/triage/ts6-r1-hover-text-h2-284519/reduction.json": "b71c4cb1b8c057f2",
+  "data/lsptest/runs/main_v1/triage/ts6-r1-hover-text-h2-284519/repro.json": "d1841a944f3d575f",
+  "data/lsptest/runs/main_v1/triage/ts6-r1-hover-text-h5-b3855d/reduction.json": "e4f451d4df92aaae",
+  "data/lsptest/runs/main_v1/triage/ts6-r1-hover-text-h5-b3855d/repro.json": "979e3e4a80c265c6",
+  "data/lsptest/runs/main_v1/triage/ts6-r1-hover-text-h8-2ce168/reduction.json": "cc7e5c16e18148a6",
+  "data/lsptest/runs/main_v1/triage/ts6-r1-hover-text-h8-2ce168/repro.json": "d37998d08050adfd",
+  "data/lsptest/runs/main_v1/triage/ts6-r1-inlayhint-changed-h5-0c1aa5/reduction.json": "38bef196d7e832c1",
+  "data/lsptest/runs/main_v1/triage/ts6-r1-inlayhint-changed-h5-0c1aa5/repro.json": "3d03879bc1b053e3",
+  "data/lsptest/runs/main_v1/triage/ts6-r1-references-extra-h6-6e0a73/reduction.json": "8dc705d1a5da95f7",
+  "data/lsptest/runs/main_v1/triage/ts6-r1-references-extra-h6-6e0a73/repro.json": "1affdca73cce83de",
+  "data/lsptest/runs/main_v1/triage/ts6-r1-references-lost-h5-d24ca6/reduction.json": "b5dd3b1f7bba6a4e",
+  "data/lsptest/runs/main_v1/triage/ts6-r1-references-lost-h5-d24ca6/repro.json": "22ffb50d83c9f111",
+  "data/lsptest/runs/main_v1/triage/ts6-r1-references-missing-h5-cc8950/reduction.json": "fe765bbda5f8052b",
+  "data/lsptest/runs/main_v1/triage/ts6-r1-references-missing-h5-cc8950/repro.json": "9245a43ed257a40a",
+  "data/lsptest/runs/main_v1/triage/ts6-r1-semantictokens-changed-h5-591c42/reduction.json": "ab4362a550331b8d",
+  "data/lsptest/runs/main_v1/triage/ts6-r1-semantictokens-changed-h5-591c42/repro.json": "00c5a853c22d3dd2",
+  "data/lsptest/runs/main_v1/triage/ts6-r1-semantictokens-missing-h9-d686b3/reduction.json": "478bfcea1dea3349",
+  "data/lsptest/runs/main_v1/triage/ts6-r1-semantictokens-missing-h9-d686b3/repro.json": "ba5a4b34f289013b",
+  "data/lsptest/runs/main_v1/triage/ts6-r1-signaturehelp-changed-h5-db5a5e/reduction.json": "32737de8eea7e792",
+  "data/lsptest/runs/main_v1/triage/ts6-r1-signaturehelp-changed-h5-db5a5e/repro.json": "eb3ba821738226ad",
+  "data/lsptest/runs/main_v1/triage/ts6-r1-signaturehelp-lost-h9-7bd793/reduction.json": "84952ad4cf6068f7",
+  "data/lsptest/runs/main_v1/triage/ts6-r1-signaturehelp-lost-h9-7bd793/repro.json": "f11fdf13acb12c08",
+  "data/lsptest/runs/main_v1/triage/ts6-r1-typedefinition-lost-h5-712a35/reduction.json": "3bba5d171a35bfb8",
+  "data/lsptest/runs/main_v1/triage/ts6-r1-typedefinition-lost-h5-712a35/repro.json": "6f1bbd5318cc82ec",
+  "data/lsptest/runs/main_v1/triage/ts6-r3-definitionconsistency-changed-d-bf619d/reduction.json": "2051bc8c3bcea02a",
+  "data/lsptest/runs/main_v1/triage/ts6-r3-definitionconsistency-extra-d-1fb668/reduction.json": "305fb0b00e1cf4e7",
+  "data/lsptest/runs/main_v1/triage/ts6-r3-definitionconsistency-lost-d-fb78dd/reduction.json": "6c056c8001002837",
+  "data/lsptest/runs/main_v1/triage/ts6-r3-definitionconsistency-missing-d-0ab4de/reduction.json": "1c22a95f15c2711d",
+  "data/lsptest/runs/main_v1/triage/ts6-r3-highlightvsreferences-gained-c-e8db7c/reduction.json": "88f9c3d46bcc5156",
+  "data/lsptest/runs/main_v1/triage/ts6-r4-diagnostics-extra-18004-mutation-m2-63d36d/reduction.json": "ecc4dd3e44ef58eb",
+  "data/lsptest/runs/main_v1/triage/ts6-r4-diagnostics-extra-2304-mutation-m2-1554be/reduction.json": "133698632c95d929",
+  "data/lsptest/runs/main_v1/triage/ts6-r4-diagnostics-extra-2322-2552-2554-mutation-m1-6d8de2/reduction.json": "b454f9f6fd7d2bbe",
+  "data/lsptest/runs/main_v1/triage/ts6-r4-diagnostics-extra-2322-mutation-m3-1879f3/reduction.json": "3226f44a620c1a8a",
+  "data/lsptest/runs/main_v1/triage/ts6-r4-diagnostics-extra-2322-mutation-m3-1879f3/repro.json": "4c613754c99124c7",
+  "data/lsptest/runs/main_v1/triage/ts6-r4-diagnostics-extra-2339-2349-2352-mutation-m1-66b5a5/reduction.json": "1054fed02b33c643",
+  "data/lsptest/runs/main_v1/triage/ts6-r4-diagnostics-extra-2339-7053-mutation-m1-2aad71/reduction.json": "670f37789c66caf9",
+  "data/lsptest/runs/main_v1/triage/ts6-r4-diagnostics-extra-2339-mutation-m1-a8c765/reduction.json": "17b01d38be82aaf4",
+  "data/lsptest/runs/main_v1/triage/ts6-r4-diagnostics-extra-2448-7022-mutation-m1-e5d199/reduction.json": "4509fffa46bb6392",
+  "data/lsptest/runs/main_v1/triage/ts6-r4-diagnostics-extra-2552-mutation-m1-da2133/reduction.json": "638ddd417ffd8fa1",
+  "data/lsptest/runs/main_v1/triage/ts6-r4-diagnostics-extra-2552-mutation-m2-f7e816/reduction.json": "beefa8b944908264",
+  "data/lsptest/runs/main_v1/triage/ts6-r4-diagnostics-extra-2554-mutation-m3-d2ab31/reduction.json": "115be8701a41ea32",
+  "data/lsptest/runs/main_v1/triage/ts6-r4-diagnostics-extra-2678-mutation-m1-7b3f3b/reduction.json": "510d8bf6e83ad216",
+  "data/lsptest/runs/main_v1/triage/ts6-r5-foldingrange-changed-t2-ec7247/reduction.json": "5d03a38f98b3f988",
+  "data/lsptest/runs/main_v1/triage/ts6-r5-foldingrange-extra-t2-625065/reduction.json": "264bc23bd4cdb150",
+  "data/lsptest/runs/main_v1/triage/ts7-r1-references-extra-h6-574e94/reduction.json": "ea532658cbf4205c",
+  "data/lsptest/runs/main_v1/triage/ts7-r1-references-extra-h6-574e94/repro.json": "f43572ef388039b1",
+  "data/lsptest/runs/main_v1/triage/ts7-r1-references-missing-h9-2dd24a/reduction.json": "fc7a4865751959c4",
+  "data/lsptest/runs/main_v1/triage/ts7-r1-references-missing-h9-2dd24a/repro.json": "230527c2a6f970ac",
+  "data/lsptest/runs/main_v1/triage/ts7-r3-definitionconsistency-changed-d-a42b32/reduction.json": "3700e3c32f90f446",
+  "data/lsptest/runs/main_v1/triage/ts7-r3-definitionconsistency-extra-d-fb74d3/reduction.json": "bb7c0b406a10eec7",
+  "data/lsptest/runs/main_v1/triage/ts7-r3-definitionconsistency-missing-d-560852/reduction.json": "b83d330470c400f7",
+  "data/lsptest/runs/main_v1/triage/ts7-r3-highlightvsreferences-gained-c-9f16d3/reduction.json": "0c4de404cd8366cb",
+  "data/lsptest/runs/main_v1/triage/ts7-r4-diagnostics-extra-2339-2349-2352-mutation-m1-47c762/reduction.json": "ff27a9ce7ddfbec0",
+  "data/lsptest/runs/main_v1/triage/ts7-r4-diagnostics-extra-2339-mutation-m1-12bd0a/reduction.json": "6aa9d89dec330cc8",
+  "data/lsptest/runs/main_v1/triage/ts7-r5-documentsymbol-changed-t3-8eae6d/reduction.json": "0314616cf18af7e4",
+  "data/lsptest/runs/main_v1/triage/ts7-r5-foldingrange-changed-t2-5985a9/reduction.json": "2f972fee38e35069",
+  "data/lsptest/runs/main_v1/triage/ts7-r5-foldingrange-extra-t2-5dd83a/reduction.json": "4a01a7fa18f3f86f",
+  "data/lsptest/runs/main_v1/triage/ts7-r6-completion-changed-completion-997cb3/reduction.json": "f1af5ddade006c3b",
+  "data/lsptest/runs/main_v1/triage/ts7-r6-completion-extra-completion-afe533/reduction.json": "d221c2505e6783f3",
+  "data/lsptest/runs/main_v1/triage/ts7-r6-completion-gained-completion-4b6660/reduction.json": "2c9557d823b3f67a",
+  "data/lsptest/runs/main_v1/triage/ts7-r6-completion-missing-completion-60ede6/reduction.json": "d0a50dc637d94f8b",
+  "data/lsptest/runs/main_v1/triage/ts7-r6-definition-changed-definition-1c2318/reduction.json": "c0368c9d5eb90acc",
+  "data/lsptest/runs/main_v1/triage/ts7-r6-definition-extra-definition-d8e982/reduction.json": "9ec75a7fe2dd7a73",
+  "data/lsptest/runs/main_v1/triage/ts7-r6-definition-gained-definition-24364e/reduction.json": "75941dd6c423f9eb",
+  "data/lsptest/runs/main_v1/triage/ts7-r6-diagnostics-changed-2322-2503-2591-diagnostics-dee939/reduction.json": "8834517b8e77eb3a",
+  "data/lsptest/runs/main_v1/triage/ts7-r6-diagnostics-missing-2304-2593-diagnostics-58256c/reduction.json": "04937e7f66542df5",
+  "data/lsptest/runs/main_v1/triage/ts7-r6-diagnostics-missing-80006-diagnostics-da3300/reduction.json": "a61f6751f9cf6306",
+  "data/lsptest/runs/main_v1/triage/ts7-r6-diagnostics-moved-6133-diagnostics-5e7a2f/reduction.json": "c9bdea6c1078789d",
+  "data/lsptest/runs/main_v1/triage/ts7-r6-hover-changed-hover-e5c91e/reduction.json": "36dffe2d97b6ba73",
+  "data/lsptest/runs/main_v1/triage/ts7-r6-hover-lost-hover-feed64/reduction.json": "2eb4ca188eb3e314",
+  "data/lsptest/runs/main_v1/triage/verdict_reasons.csv": "43630b8113ac3a99",
+  "data/lsptest/runs/main_v1/upstream/feedback.csv": "0545d3f8cc71aad4",
+  "data/lsptest/runs/main_v1/violations.jsonl": "7fcf0d6d011d9102",
+  "data/lsptest/runs/main_v2/config.json": "fe1c638b4ce1bb2c",
+  "data/lsptest/runs/main_v2/evidence/c1_rename_edit.json": "e772d3ec772d75b3",
+  "data/lsptest/runs/main_v2/evidence/c1_rename_external.json": "ca19f963a44d019f",
+  "data/lsptest/runs/main_v2/evidence/evidence_summary_v2.csv": "ba750e153e50b45f",
+  "data/lsptest/runs/main_v2/evidence/persistence.json": "e6b130ca8b66f886",
+  "data/lsptest/runs/main_v2/plan_specs.jsonl": "bd6928a5ddfb5a80",
+  "data/lsptest/runs/main_v2/results.jsonl": "069b7352d314ef29",
+  "data/lsptest/runs/main_v2/sweep/lifecycle/releases.json": "ce423cf97767f1c5",
+  "data/lsptest/runs/main_v2/sweep/lifecycle/results.jsonl": "0e8e8f17fe8914d1",
+  "data/lsptest/runs/main_v2/sweep/newest-2026-11-18/releases.json": "325b13829831e9db",
+  "data/lsptest/runs/main_v2/sweep/newest-2026-11-18/results.jsonl": "e619978e9423f9e4",
+  "data/lsptest/runs/main_v2/sweep/older-2025/results.jsonl": "8c147457065d6415",
+  "data/lsptest/runs/main_v2/triage/consensus.csv": "2383b6cb42c22cf7",
+  "data/lsptest/runs/main_v2/triage/consensus_reasons_en.csv": "2103c3f8a7848715",
+  "data/lsptest/runs/main_v2/triage/decisions.csv": "cf9792a1b344d983",
+  "data/lsptest/runs/main_v2/triage/gopls-r1-codeaction-changed-h4-c5344e/reduction.json": "2205323fdedef6c5",
+  "data/lsptest/runs/main_v2/triage/gopls-r1-codeaction-changed-h4-c5344e/repro.json": "b43e980a90becfe0",
+  "data/lsptest/runs/main_v2/triage/gopls-r1-codeaction-changed-h7-383b05/reduction.json": "f6ec0398c49aeed7",
+  "data/lsptest/runs/main_v2/triage/gopls-r1-codeaction-changed-h7-383b05/repro.json": "43b38953878ee861",
+  "data/lsptest/runs/main_v2/triage/gopls-r1-codeaction-key-lost-h7-547744/reduction.json": "3cc510f93c2ae1e2",
+  "data/lsptest/runs/main_v2/triage/gopls-r1-codeaction-key-lost-h7-547744/repro.json": "698ca80c0bc00238",
+  "data/lsptest/runs/main_v2/triage/gopls-r1-completion-extra-h5-2dfa5a/reduction.json": "6feffcde42c160da",
+  "data/lsptest/runs/main_v2/triage/gopls-r1-completion-extra-h6-410566/reduction.json": "06c4eebb8e5f37a8",
+  "data/lsptest/runs/main_v2/triage/gopls-r1-completion-extra-h8-02679b/reduction.json": "afc67bb9a8f09d1e",
+  "data/lsptest/runs/main_v2/triage/gopls-r1-completion-lost-h7-1a1169/reduction.json": "245de161e294eb6b",
+  "data/lsptest/runs/main_v2/triage/gopls-r1-completion-lost-h7-1a1169/repro.json": "3cfebd688814c79c",
+  "data/lsptest/runs/main_v2/triage/gopls-r1-diagnostics-message-h5-e59f2c/reduction.json": "bf51997a6a79b66c",
+  "data/lsptest/runs/main_v2/triage/gopls-r1-diagnostics-message-h5-e59f2c/repro.json": "ef7a28c90fa66c00",
+  "data/lsptest/runs/main_v2/triage/gopls-r1-diagnostics-missing-h7-10a910/reduction.json": "594a929827161fe9",
+  "data/lsptest/runs/main_v2/triage/gopls-r1-diagnostics-missing-h7-10a910/repro.json": "d07ddaf8d9740e1b",
+  "data/lsptest/runs/main_v2/triage/gopls-r1-references-extra-h5-e2e003/reduction.json": "0f8d9c5da335762f",
+  "data/lsptest/runs/main_v2/triage/gopls-r1-references-extra-h5-e2e003/repro.json": "e7cfb5f067e3547c",
+  "data/lsptest/runs/main_v2/triage/gopls-r2-codeactionresolve-changed-codeaction-70b3e9/reduction.json": "f571af723f9d2f2d",
+  "data/lsptest/runs/main_v2/triage/gopls-r2-codeactionresolve-changed-codeaction-70b3e9/repro.json": "14ab6c8d731374ef",
+  "data/lsptest/runs/main_v2/triage/gopls-r3-definitionconsistency-changed-d-cf67f4/reduction.json": "836256f89a73c521",
+  "data/lsptest/runs/main_v2/triage/gopls-r3-definitionconsistency-result-error-0-d-f91fb9/reduction.json": "cca90eb7bc0389a4",
+  "data/lsptest/runs/main_v2/triage/gopls-r3-highlightvsreferences-extra-c-84be95/reduction.json": "fc0574e9060df646",
+  "data/lsptest/runs/main_v2/triage/gopls-r4-completioninsert-gained-completion-22daf7/reduction.json": "7f6744643bbc1bde",
+  "data/lsptest/runs/main_v2/triage/gopls-r4-diagnostics-extra-incompatibleassign-inv-mutation-m2-3cfa07/reduction.json": "66173dbd72343e8b",
+  "data/lsptest/runs/main_v2/triage/gopls-r4-diagnostics-extra-incompatibleassign-mutation-m2-ade1f0/reduction.json": "08062ba286f0f9af",
+  "data/lsptest/runs/main_v2/triage/gopls-r4-diagnostics-extra-incompatibleassign-mutation-m2-ade1f0/repro.json": "c5012aaac4dc70c4",
+  "data/lsptest/runs/main_v2/triage/gopls-r4-diagnostics-extra-mismatchedtypes-mutation-m2-dc6e94/reduction.json": "b8aeada88d1d4554",
+  "data/lsptest/runs/main_v2/triage/gopls-r4-diagnostics-extra-mismatchedtypes-mutation-m2-dc6e94/repro.json": "357924f07e5a17a9",
+  "data/lsptest/runs/main_v2/triage/gopls-r4-diagnostics-extra-nonsliceableoperand-mutation-m2-d80a9a/reduction.json": "edb579cdc8139fe2",
+  "data/lsptest/runs/main_v2/triage/gopls-r4-diagnostics-extra-nonsliceableoperand-mutation-m2-d80a9a/repro.json": "b0ab7944e90c0bd4",
+  "data/lsptest/runs/main_v2/triage/gopls-r4-diagnostics-extra-notatype-mutation-m2-477181/reduction.json": "b5da599424a69fd2",
+  "data/lsptest/runs/main_v2/triage/gopls-r4-diagnostics-extra-notatype-mutation-m2-477181/repro.json": "eb24dc48dd605d60",
+  "data/lsptest/runs/main_v2/triage/gopls-r4-diagnostics-extra-undeclaredname-mutation-m2-12380c/reduction.json": "cdefd861ea99ac7c",
+  "data/lsptest/runs/main_v2/triage/gopls-r4-diagnostics-extra-undeclaredname-mutation-m2-12380c/repro.json": "4c506ff936d4fed5",
+  "data/lsptest/runs/main_v2/triage/gopls-r4-diagnostics-extra-untypedniluse-mutation-m2-354f70/reduction.json": "9b9a85ffdb1aa335",
+  "data/lsptest/runs/main_v2/triage/gopls-r4-diagnostics-extra-untypedniluse-mutation-m2-354f70/repro.json": "a10f0fc55d83bcdb",
+  "data/lsptest/runs/main_v2/triage/gopls-r4-diagnostics-extra-unusedimport-mutation-m3-aefa9e/reduction.json": "c95d2281fa4e40b4",
+  "data/lsptest/runs/main_v2/triage/gopls-r4-diagnostics-extra-unusedimport-mutation-m3-aefa9e/repro.json": "7e2d191f66cc8ded",
+  "data/lsptest/runs/main_v2/triage/gopls-r4-diagnostics-extra-wrongargcount-mutation-m3-ac10cc/reduction.json": "c71d3c84fb93ae72",
+  "data/lsptest/runs/main_v2/triage/gopls-r5-codeaction-extra-t1-6dfb45/reduction.json": "20bd739eedf5a240",
+  "data/lsptest/runs/main_v2/triage/gopls-r5-codeaction-extra-t2-86a8ac/reduction.json": "02e92df2dbb25ee2",
+  "data/lsptest/runs/main_v2/triage/gopls-r5-foldingrange-changed-t4-b07c86/reduction.json": "fc73bc1adf66107b",
+  "data/lsptest/runs/main_v2/triage/gopls-r5-foldingrange-changed-t4-b07c86/repro.json": "fc10fe43bb981e70",
+  "data/lsptest/runs/main_v2/triage/gopls-r5-foldingrange-changed-t6-ecacad/reduction.json": "ae35de606661026a",
+  "data/lsptest/runs/main_v2/triage/gopls-r5-semantictokens-changed-t4-b423af/reduction.json": "09f43799d975c282",
+  "data/lsptest/runs/main_v2/triage/gopls-r5-semantictokens-changed-t4-b423af/repro.json": "f939ed497e5f012d",
+  "data/lsptest/runs/main_v2/triage/gopls-r5-semantictokens-extra-t4-867006/reduction.json": "484205bc026f6d33",
+  "data/lsptest/runs/main_v2/triage/gopls-r5-semantictokens-extra-t4-867006/repro.json": "298996f2d5c7fcc9",
+  "data/lsptest/runs/main_v2/triage/pyright-r0-references-result-error-32603-fresh-pair-2718c4/reduction.json": "3092287e1c174a35",
+  "data/lsptest/runs/main_v2/triage/pyright-r0-references-result-error-32603-fresh-pair-2718c4/repro.json": "97fa02bf846eeaeb",
+  "data/lsptest/runs/main_v2/triage/pyright-r1-definition-extra-h5-2e7477/reduction.json": "200d91392d6d4078",
+  "data/lsptest/runs/main_v2/triage/pyright-r1-definition-missing-h5-964341/reduction.json": "85e5578b031e4f01",
+  "data/lsptest/runs/main_v2/triage/pyright-r1-hover-text-h2-fb2ed0/reduction.json": "8ba40b83462bbe33",
+  "data/lsptest/runs/main_v2/triage/pyright-r1-hover-text-h2-fb2ed0/repro.json": "6f6938a6c1950b5a",
+  "data/lsptest/runs/main_v2/triage/pyright-r1-hover-text-h5-f24c4e/reduction.json": "106269f1fa485cd3",
+  "data/lsptest/runs/main_v2/triage/pyright-r1-hover-text-h5-f24c4e/repro.json": "efa67bfc258a68e8",
+  "data/lsptest/runs/main_v2/triage/pyright-r1-hover-text-h8-2a8227/reduction.json": "6f83a00f05efe8ab",
+  "data/lsptest/runs/main_v2/triage/pyright-r1-hover-text-h8-2a8227/repro.json": "6dd657db13613a6d",
+  "data/lsptest/runs/main_v2/triage/pyright-r1-references-extra-h4-a63d47/reduction.json": "8f931097ee3589e2",
+  "data/lsptest/runs/main_v2/triage/pyright-r1-references-extra-h9-37c1a2/reduction.json": "146f62e6ddc16f8f",
+  "data/lsptest/runs/main_v2/triage/pyright-r1-references-extra-h9-37c1a2/repro.json": "ad2062a8eca784c3",
+  "data/lsptest/runs/main_v2/triage/pyright-r1-references-missing-h5-64453c/reduction.json": "e72cc805b3360905",
+  "data/lsptest/runs/main_v2/triage/pyright-r1-signaturehelp-changed-h9-846c6c/reduction.json": "0d32f43848815879",
+  "data/lsptest/runs/main_v2/triage/pyright-r1-signaturehelp-changed-h9-846c6c/repro.json": "83d13e29bafef7e2",
+  "data/lsptest/runs/main_v2/triage/pyright-r1-typedefinition-extra-h2-764582/reduction.json": "fc1d0e550798686d",
+  "data/lsptest/runs/main_v2/triage/pyright-r1-typedefinition-extra-h8-9c51fd/reduction.json": "aca29fd923769528",
+  "data/lsptest/runs/main_v2/triage/pyright-r3-definitionconsistency-extra-d-3d112f/reduction.json": "c61d0876d3ab3626",
+  "data/lsptest/runs/main_v2/triage/pyright-r3-definitionconsistency-lost-d-a4eaed/reduction.json": "a448bd482db85b7e",
+  "data/lsptest/runs/main_v2/triage/pyright-r3-definitionconsistency-missing-d-81a7e5/reduction.json": "c696964634387794",
+  "data/lsptest/runs/main_v2/triage/pyright-r3-highlightvsreferences-gained-c-3118cc/reduction.json": "c21adf586ea3fe22",
+  "data/lsptest/runs/main_v2/triage/pyright-r4-completioninsert-gained-completion-79a584/reduction.json": "8fe2c68e000ede8a",
+  "data/lsptest/runs/main_v2/triage/pyright-r4-completioninsert-gained-completion-79a584/repro.json": "c20bf792e9d474e1",
+  "data/lsptest/runs/main_v2/triage/rater2_agreement.json": "e1a761c4b40de4f3",
+  "data/lsptest/runs/main_v2/triage/rater2_decisions.csv": "b4194cfb1ab133f3",
+  "data/lsptest/runs/main_v2/triage/rater2_reasons_en.csv": "6a82b40d100f1c4c",
+  "data/lsptest/runs/main_v2/triage/root_causes.csv": "8737bf836cbe2f39",
+  "data/lsptest/runs/main_v2/triage/rust-analyzer-r2-completionresolve-changed-completion-3170a1/reduction.json": "13f457709be6ecef",
+  "data/lsptest/runs/main_v2/triage/rust-analyzer-r2-completionresolve-changed-completion-3170a1/repro.json": "97e8a1c4f93b204b",
+  "data/lsptest/runs/main_v2/triage/rust-analyzer-r3-definitionconsistency-changed-d-2c6179/reduction.json": "9f47bc97f63f57e7",
+  "data/lsptest/runs/main_v2/triage/rust-analyzer-r3-definitionconsistency-missing-d-586fd8/reduction.json": "ae73fc13528373ec",
+  "data/lsptest/runs/main_v2/triage/rust-analyzer-r3-diagnostics-missing-inactive-code-a-0b07f0/reduction.json": "d528a58bbab2c357",
+  "data/lsptest/runs/main_v2/triage/rust-analyzer-r3-diagnostics-missing-inactive-code-a-0b07f0/repro.json": "58c165105fa78325",
+  "data/lsptest/runs/main_v2/triage/rust-analyzer-r3-diagnostics-missing-unlinked-file-a-efb484/reduction.json": "84d2a1de9e2a56e6",
+  "data/lsptest/runs/main_v2/triage/rust-analyzer-r3-diagnostics-missing-unlinked-file-a-efb484/repro.json": "9c2614e87b617ed8",
+  "data/lsptest/runs/main_v2/triage/rust-analyzer-r3-highlightvsreferences-extra-c-c2bfed/reduction.json": "fdaff61f72ead8d3",
+  "data/lsptest/runs/main_v2/triage/rust-analyzer-r3-semantictokensrange-changed-b-b6e28b/reduction.json": "ff4fe81f8db8183d",
+  "data/lsptest/runs/main_v2/triage/rust-analyzer-r3-semantictokensrange-changed-b-b6e28b/repro.json": "854608d5a9776271",
+  "data/lsptest/runs/main_v2/triage/rust-analyzer-r4-completioninsert-gained-completion-e99b79/reduction.json": "0ca45dac906c3876",
+  "data/lsptest/runs/main_v2/triage/rust-analyzer-r4-completioninsert-gained-completion-e99b79/repro.json": "de354df89b5f07b7",
+  "data/lsptest/runs/main_v2/triage/rust-analyzer-r4-diagnostics-extra-e0063-mutation-m1-aeef82/reduction.json": "c316d0b5b9cbc522",
+  "data/lsptest/runs/main_v2/triage/rust-analyzer-r4-diagnostics-extra-e0063-mutation-m1-aeef82/repro.json": "df940f884b6b6230",
+  "data/lsptest/runs/main_v2/triage/rust-analyzer-r4-diagnostics-extra-e0560-mutation-m2-1f508d/reduction.json": "722fb91f9c720bee",
+  "data/lsptest/runs/main_v2/triage/rust-analyzer-r4-diagnostics-extra-inactive-code-quickfix-f2d641/reduction.json": "c2c2dfa61e3b4044",
+  "data/lsptest/runs/main_v2/triage/rust-analyzer-r4-syntax-gained-mutation-m1-7af5e4/reduction.json": "1f53f6bfac67c39d",
+  "data/lsptest/runs/main_v2/triage/rust-analyzer-r4-syntax-gained-mutation-m1-7af5e4/repro.json": "8608c4fd1a6c435b",
+  "data/lsptest/runs/main_v2/triage/rust-analyzer-r5-codeaction-changed-t6-4ee734/reduction.json": "76f80e942491a166",
+  "data/lsptest/runs/main_v2/triage/rust-analyzer-r5-documentsymbol-changed-t6-a3a950/reduction.json": "60d84953ee0ac2f4",
+  "data/lsptest/runs/main_v2/triage/triage.json": "9adc5580709e3188",
+  "data/lsptest/runs/main_v2/triage/ts6-r1-codeaction-extra-h5-f48d27/reduction.json": "41e1f6ef4b530b23",
+  "data/lsptest/runs/main_v2/triage/ts6-r1-codeaction-extra-h5-f48d27/repro.json": "b3500e55db59df47",
+  "data/lsptest/runs/main_v2/triage/ts6-r1-codeaction-key-lost-h8-3e0e0f/reduction.json": "86602a076ccd4c65",
+  "data/lsptest/runs/main_v2/triage/ts6-r1-codeaction-key-lost-h8-3e0e0f/repro.json": "bdbb860cb31a0492",
+  "data/lsptest/runs/main_v2/triage/ts6-r1-completion-lost-h9-ce1ffc/reduction.json": "411a67a464b83bbe",
+  "data/lsptest/runs/main_v2/triage/ts6-r1-completion-lost-h9-ce1ffc/repro.json": "0ed366d33986999b",
+  "data/lsptest/runs/main_v2/triage/ts6-r1-definition-lost-h9-898f29/reduction.json": "04206890bbb6f04d",
+  "data/lsptest/runs/main_v2/triage/ts6-r1-definition-lost-h9-898f29/repro.json": "0f49290fd702e1eb",
+  "data/lsptest/runs/main_v2/triage/ts6-r1-diagnostics-extra-2307-7006-h9-8325a2/reduction.json": "353082dfd0891067",
+  "data/lsptest/runs/main_v2/triage/ts6-r1-diagnostics-extra-2307-7006-h9-8325a2/repro.json": "ee7b1602597532d0",
+  "data/lsptest/runs/main_v2/triage/ts6-r1-diagnostics-moved-2875-h8-751ff9/reduction.json": "1a13ff4073cf6d6f",
+  "data/lsptest/runs/main_v2/triage/ts6-r1-diagnostics-moved-2875-h8-751ff9/repro.json": "d43b974019e31163",
+  "data/lsptest/runs/main_v2/triage/ts6-r1-documenthighlight-missing-h9-2e657a/reduction.json": "007bda08fd882ebb",
+  "data/lsptest/runs/main_v2/triage/ts6-r1-documenthighlight-missing-h9-2e657a/repro.json": "07bb1d0916948060",
+  "data/lsptest/runs/main_v2/triage/ts6-r1-hover-text-h5-b3855d/reduction.json": "782c7d242a7dcecf",
+  "data/lsptest/runs/main_v2/triage/ts6-r1-hover-text-h8-2ce168/reduction.json": "7d67746dd06a9d9b",
+  "data/lsptest/runs/main_v2/triage/ts6-r1-inlayhint-changed-h8-8f6569/reduction.json": "4c1b4b17da4ef224",
+  "data/lsptest/runs/main_v2/triage/ts6-r1-inlayhint-changed-h9-b9d052/reduction.json": "42f5ae392081cf79",
+  "data/lsptest/runs/main_v2/triage/ts6-r1-inlayhint-changed-h9-b9d052/repro.json": "905f0b58be82dcc3",
+  "data/lsptest/runs/main_v2/triage/ts6-r1-references-missing-h5-cc8950/reduction.json": "ed86e17fd6708949",
+  "data/lsptest/runs/main_v2/triage/ts6-r1-references-missing-h5-cc8950/repro.json": "3e2f191d97aff96c",
+  "data/lsptest/runs/main_v2/triage/ts6-r1-semantictokens-changed-h9-c4368c/reduction.json": "2fa133a2f7449cf6",
+  "data/lsptest/runs/main_v2/triage/ts6-r1-semantictokens-changed-h9-c4368c/repro.json": "b79f6414ab791a69",
+  "data/lsptest/runs/main_v2/triage/ts6-r1-signaturehelp-changed-h5-db5a5e/reduction.json": "ada6381f863002a8",
+  "data/lsptest/runs/main_v2/triage/ts6-r1-typedefinition-lost-h9-b52749/reduction.json": "819c13fb2ab56296",
+  "data/lsptest/runs/main_v2/triage/ts6-r1-typedefinition-lost-h9-b52749/repro.json": "f84c203c88a44153",
+  "data/lsptest/runs/main_v2/triage/ts6-r3-definitionconsistency-changed-d-bf619d/reduction.json": "79d6f53052831064",
+  "data/lsptest/runs/main_v2/triage/ts6-r3-definitionconsistency-extra-d-1fb668/reduction.json": "0833ad7dd8cced38",
+  "data/lsptest/runs/main_v2/triage/ts6-r3-definitionconsistency-lost-d-fb78dd/reduction.json": "bb253ea001fe0fb1",
+  "data/lsptest/runs/main_v2/triage/ts6-r3-definitionconsistency-missing-d-0ab4de/reduction.json": "99f654d99e3ddd36",
+  "data/lsptest/runs/main_v2/triage/ts6-r3-highlightvsreferences-gained-c-e8db7c/reduction.json": "e3d6afdcf0caf8b4",
+  "data/lsptest/runs/main_v2/triage/ts6-r4-diagnostics-changed-1064-2322-quickfix-d597f5/reduction.json": "f16f35a2aca8f32e",
+  "data/lsptest/runs/main_v2/triage/ts6-r4-diagnostics-changed-1064-2322-quickfix-d597f5/repro.json": "b67fa7348a9b8401",
+  "data/lsptest/runs/main_v2/triage/ts6-r4-diagnostics-changed-mutation-m1-34f06f/reduction.json": "2a5f66736b72e150",
+  "data/lsptest/runs/main_v2/triage/ts6-r4-diagnostics-changed-mutation-m1-34f06f/repro.json": "cfa4159b7bd41100",
+  "data/lsptest/runs/main_v2/triage/ts6-r4-diagnostics-extra-17000-mutation-m3-07673d/reduction.json": "42c0714a93ecb879",
+  "data/lsptest/runs/main_v2/triage/ts6-r4-diagnostics-extra-17002-2552-mutation-m1-727795/reduction.json": "4b6e0113476dac84",
+  "data/lsptest/runs/main_v2/triage/ts6-r4-diagnostics-extra-17002-2552-mutation-m1-727795/repro.json": "6d1fc746090ac2a4",
+  "data/lsptest/runs/main_v2/triage/ts6-r4-diagnostics-extra-2304-mutation-m2-1554be/reduction.json": "14f9f7f22642132a",
+  "data/lsptest/runs/main_v2/triage/ts6-r4-diagnostics-extra-2322-2345-mutation-m1-2566f2/reduction.json": "2aca3abbfa7cd2da",
+  "data/lsptest/runs/main_v2/triage/ts6-r4-diagnostics-extra-2322-mutation-m1-dc576a/reduction.json": "cdb48fbe3816f72b",
+  "data/lsptest/runs/main_v2/triage/ts6-r4-diagnostics-extra-2322-mutation-m3-1879f3/reduction.json": "bcc952e172f8ed55",
+  "data/lsptest/runs/main_v2/triage/ts6-r4-diagnostics-extra-2322-mutation-m3-1879f3/repro.json": "15d415ab84b43f0c",
+  "data/lsptest/runs/main_v2/triage/ts6-r4-diagnostics-extra-2339-6133-mutation-m1-4cd363/reduction.json": "ced3d241f97bf3a2",
+  "data/lsptest/runs/main_v2/triage/ts6-r4-diagnostics-extra-2345-2554-mutation-m1-d523d0/reduction.json": "dfb02db039bdfc2d",
+  "data/lsptest/runs/main_v2/triage/ts6-r4-diagnostics-extra-2353-mutation-m1-2b6bdb/reduction.json": "0ac5455e8dec09b6",
+  "data/lsptest/runs/main_v2/triage/ts6-r4-diagnostics-extra-2448-7022-mutation-m1-e5d199/reduction.json": "845e8fe2ed7ac0bd",
+  "data/lsptest/runs/main_v2/triage/ts6-r4-diagnostics-extra-2448-7022-mutation-m1-e5d199/repro.json": "612863167b252096",
+  "data/lsptest/runs/main_v2/triage/ts6-r4-diagnostics-extra-2552-mutation-m2-f7e816/reduction.json": "8d94c79b9179e307",
+  "data/lsptest/runs/main_v2/triage/ts6-r4-diagnostics-extra-2554-mutation-m3-d2ab31/reduction.json": "15fdf3e554f3bdf9",
+  "data/lsptest/runs/main_v2/triage/ts6-r4-diagnostics-extra-2555-mutation-m3-8de4a9/reduction.json": "18ac79c9c6d9e3b3",
+  "data/lsptest/runs/main_v2/triage/ts6-r4-diagnostics-extra-2558-2604-mutation-m1-e220b8/reduction.json": "bd10b74c2cb2d89c",
+  "data/lsptest/runs/main_v2/triage/ts6-r4-diagnostics-extra-2604-mutation-m1-0e3b68/reduction.json": "d97cd8051ad0cc4b",
+  "data/lsptest/runs/main_v2/triage/ts6-r4-syntax-gained-mutation-m1-7e3417/reduction.json": "cf239b94cbf76dc4",
+  "data/lsptest/runs/main_v2/triage/ts6-r4-syntax-gained-mutation-m1-7e3417/repro.json": "38af7fa3d861ace3",
+  "data/lsptest/runs/main_v2/triage/ts6-r5-foldingrange-extra-t2-625065/reduction.json": "380f35b4df62bc9a",
+  "data/lsptest/runs/main_v2/triage/ts7-r1-hover-text-h8-500422/reduction.json": "53111c28a7838c8f",
+  "data/lsptest/runs/main_v2/triage/ts7-r3-definitionconsistency-changed-d-a42b32/reduction.json": "4e6cc74aad3df1a1",
+  "data/lsptest/runs/main_v2/triage/ts7-r3-definitionconsistency-extra-d-fb74d3/reduction.json": "5f93bfe9b61cf048",
+  "data/lsptest/runs/main_v2/triage/ts7-r3-definitionconsistency-lost-d-0129b3/reduction.json": "b2a9e6bd87b86b11",
+  "data/lsptest/runs/main_v2/triage/ts7-r3-definitionconsistency-missing-d-560852/reduction.json": "f84d0747b9d2f10e",
+  "data/lsptest/runs/main_v2/triage/ts7-r3-highlightvsreferences-gained-c-9f16d3/reduction.json": "abf958113459bb45",
+  "data/lsptest/runs/main_v2/triage/ts7-r4-diagnostics-extra-2322-2345-mutation-m1-5efcb9/reduction.json": "e6476fad22fa4634",
+  "data/lsptest/runs/main_v2/triage/ts7-r4-diagnostics-extra-2322-mutation-m1-e5a893/reduction.json": "9c2fa3df87145cc7",
+  "data/lsptest/runs/main_v2/triage/ts7-r4-diagnostics-extra-2353-mutation-m1-cf35f5/reduction.json": "973a1a5e5b8caccf",
+  "data/lsptest/runs/main_v2/triage/ts7-r4-diagnostics-extra-2558-2604-mutation-m1-ead3ee/reduction.json": "3e4ad54af32b67d4",
+  "data/lsptest/runs/main_v2/triage/ts7-r5-foldingrange-extra-t2-5dd83a/reduction.json": "17509ecb1faef8b5",
+  "data/lsptest/runs/main_v2/triage/ts7-r6-completion-changed-completion-997cb3/reduction.json": "e62d0635e7ba17ae",
+  "data/lsptest/runs/main_v2/triage/ts7-r6-completion-missing-completion-60ede6/reduction.json": "91e6a308ba0182bc",
+  "data/lsptest/runs/main_v2/triage/ts7-r6-definition-changed-definition-1c2318/reduction.json": "a9bf261dd6f8e36c",
+  "data/lsptest/runs/main_v2/triage/ts7-r6-definition-extra-definition-d8e982/reduction.json": "05d85e6cc0875915",
+  "data/lsptest/runs/main_v2/triage/ts7-r6-definition-gained-definition-24364e/reduction.json": "c886c3f7fd72d0e9",
+  "data/lsptest/runs/main_v2/triage/ts7-r6-diagnostics-missing-2304-2339-2593-diagnostics-31eb88/reduction.json": "125e25e28b5ec459",
+  "data/lsptest/runs/main_v2/triage/ts7-r6-diagnostics-missing-2304-2593-diagnostics-58256c/reduction.json": "99ff399f03aab620",
+  "data/lsptest/runs/main_v2/triage/ts7-r6-diagnostics-missing-80006-diagnostics-da3300/reduction.json": "af269eae68f94355",
+  "data/lsptest/runs/main_v2/triage/ts7-r6-hover-changed-hover-e5c91e/reduction.json": "df5e2e259f0c6afd",
+  "data/lsptest/runs/main_v2/triage/ts7-r6-hover-lost-hover-feed64/reduction.json": "e09b9635241b7c87",
+  "data/lsptest/runs/main_v2/triage/verdict_reasons.csv": "c6c77a5a5376a094",
+  "data/lsptest/runs/main_v2/violations.jsonl": "3044e7fb42838b48"
+ },
+ "example": {
+  "group": "ts6-r1-references-lost-h5-d24ca6",
+  "expected_references": 6,
+  "expected_files": 3,
+  "actual_references": 0,
+  "ops": 3,
+  "line": 566,
+  "column": 65
+ },
+ "review": {
+  "held_out": {
+   "all": {
+    "cases": 80,
+    "detected": 33
+   },
+   "pre_freeze_cases": [
+    "gopls-60435",
+    "jdtls-2111",
+    "jdtls-3155",
+    "pyright-8946",
+    "rust-analyzer-21173",
+    "tsserver-46466"
+   ],
+   "held_out": {
+    "cases": 74,
+    "detected": 27
+   },
+   "held_out_strict": {
+    "cases": 74,
+    "detected": 25,
+    "not_credited": [
+     "pyright-3482",
+     "pyright-9681"
+    ]
+   }
+  },
+  "error_oracle": {
+   "any_error_response": 5,
+   "internal_error_or_timeout": 2,
+   "cases": [
+    "gopls-38424",
+    "gopls-38732",
+    "gopls-52500",
+    "pyright-8946",
+    "rust-analyzer-21173"
+   ],
+   "internal_cases": [
+    "pyright-8946",
+    "rust-analyzer-21173"
+   ]
+  },
+  "screening": {
+   "rejected_by_reason": {
+    "cli": 95,
+    "crash": 283,
+    "display": 123,
+    "feature": 117,
+    "other": 143,
+    "perf": 68,
+    "refactor": 143,
+    "semantic_edit": 67,
+    "type": 311,
+    "ui": 33,
+    "whitespace_only": 20
+   },
+   "rejected_total": 1403
+  },
+  "stable_filter": {
+   "compared": 1099210,
+   "unstable": 2820,
+   "unstable_permille": 2.6,
+   "unstable_by_kind": {
+    "gopls": 19,
+    "pyright": 1,
+    "rust-analyzer": 2800,
+    "ts6": 0,
+    "ts7": 0
+   }
+  },
+  "two_of_three": {
+   "main": {
+    "not_confirmed": 70,
+    "reproduced_2_of_3": 23
+   },
+   "bench": {
+    "not_confirmed": 262,
+    "reproduced_2_of_3": 64
+   }
+  },
+  "merge": {
+   "author": 11,
+   "mechanical": 12
+  },
+  "recheck": {
+   "items": 29,
+   "flagged": 6,
+   "flagged_changed": 5,
+   "bug_groups_rechecked": 23,
+   "bug_groups_changed": 0,
+   "bug_groups_kept": 23,
+   "changes": {
+    "legitimate -> bug": 5
+   },
+   "with_reason": 29,
+   "after_checks_changed": 0,
+   "after_checks": [],
+   "consistency": {
+    "changed": 8,
+    "moves": {
+     "legitimate -> bug": 1,
+     "legitimate -> tool-artifact": 3,
+     "tool-artifact -> legitimate": 4
+    },
+    "to_bug": 1,
+    "between_legitimate_and_artifact": 7
+   }
+  },
+  "not_reconfirmed": 8,
+  "intervals": {
+   "all": {
+    "low": 31.1,
+    "high": 52.2
+   },
+   "held_out": {
+    "low": 26.4,
+    "high": 47.9
+   },
+   "relation_shaped": {
+    "low": 33.8,
+    "high": 56.6
+   },
+   "strict": {
+    "low": 24.0,
+    "high": 45.1
+   },
+   "expected_diagnostic": {
+    "low": 3.6,
+    "high": 62.4
+   },
+   "expected_text": {
+    "low": 3.0,
+    "high": 56.4
+   }
+  },
+  "wall_clock_hours": {
+   "main": 22.7,
+   "main_part1": 13.6,
+   "main_part2": 9.1
+  },
+  "held_out_detail": {
+   "detected": 27,
+   "detected_by_oracle": {
+    "r1_history": 5,
+    "r3_routes": 2,
+    "r4_edits": 19,
+    "r5_transforms": 1
+   },
+   "unique_by_oracle": {
+    "r1_history": 5,
+    "r3_routes": 2,
+    "r4_edits": 19,
+    "r5_transforms": 1
+   },
+   "error_response": 3,
+   "internal_error": 0,
+   "error_cases_pre_freeze": [
+    "pyright-8946",
+    "rust-analyzer-21173"
+   ]
+  },
+  "five_relations": {
+   "groups": 91,
+   "bugs": 29,
+   "precision_pct": 31.9
+  },
+  "sensitivity": {
+   "first_pass": {
+    "bug_groups": 23,
+    "distinct_bugs": 8,
+    "by_relation": {
+     "R1": 14,
+     "R2": 2,
+     "R3": 2,
+     "R4": 5
+    },
+    "distinct_by_relation": {
+     "R1": 2,
+     "R2": 2,
+     "R3": 1,
+     "R4": 3
+    }
+   },
+   "final": {
+    "bug_groups": 29,
+    "distinct_bugs": 11,
+    "by_relation": {
+     "R1": 16,
+     "R2": 2,
+     "R3": 2,
+     "R4": 9
+    },
+    "distinct_by_relation": {
+     "R1": 4,
+     "R2": 2,
+     "R3": 1,
+     "R4": 4
+    }
+   },
+   "decisive_only": {
+    "bug_groups": 11,
+    "distinct_bugs": 6,
+    "by_relation": {
+     "R1": 1,
+     "R2": 1,
+     "R4": 9
+    },
+    "distinct_by_relation": {
+     "R1": 1,
+     "R2": 1,
+     "R4": 4
+    }
+   }
+  },
+  "cost_per_bug": {
+   "R1": {
+    "run_hours": 35.9,
+    "distinct_bugs": 4,
+    "hours_per_bug": 9.0
+   },
+   "R2": {
+    "run_hours": 4.5,
+    "distinct_bugs": 2,
+    "hours_per_bug": 2.2
+   },
+   "R3": {
+    "run_hours": 15.8,
+    "distinct_bugs": 1,
+    "hours_per_bug": 15.8
+   },
+   "R4": {
+    "run_hours": 8.6,
+    "distinct_bugs": 4,
+    "hours_per_bug": 2.2
+   },
+   "R5": {
+    "run_hours": 12.7,
+    "distinct_bugs": 0,
+    "hours_per_bug": null
+   }
+  },
+  "unsettled_r1": {
+   "by_server": {
+    "gopls": {
+     "sessions": 740,
+     "unsettled": 0
+    },
+    "pyright": {
+     "sessions": 700,
+     "unsettled": 1
+    },
+    "rust-analyzer": {
+     "sessions": 174,
+     "unsettled": 18
+    },
+    "ts6": {
+     "sessions": 740,
+     "unsettled": 0
+    },
+    "ts7": {
+     "sessions": 740,
+     "unsettled": 0
+    }
+   },
+   "unsettled": 19,
+   "sessions": 3094
+  },
+  "classes": {
+   "A1": 7,
+   "A2": 14,
+   "A4": 2,
+   "L1": 5,
+   "L2": 6,
+   "L3": 1,
+   "L4": 21,
+   "L5": 7,
+   "L6": 13,
+   "L7": 1
+  }
+ },
+ "evidence": {
+  "causes": 11,
+  "independent": {
+   "decisive": 6,
+   "partial": 4,
+   "none": 1
+  },
+  "independent_causes": {
+   "decisive": "C4, C5, C6, C7, C9, C11",
+   "partial": "C1, C2, C3, C8",
+   "none": "C10"
+  },
+  "related_possible": 4,
+  "related_possible_causes": "C4, C7, C8, C9",
+  "related_none": 7,
+  "search": {
+   "date": "2026-09-27",
+   "causes": 11,
+   "queries_min": 6,
+   "queries_max": 16,
+   "hits_per_query": 6,
+   "candidates": 300
+  },
+  "contextual_keywords": {
+   "groups": 2,
+   "groups_checked": 86,
+   "tokens": "from, get"
+  },
+  "isolation": {
+   "pairs": 5,
+   "typescript": [
+    "5.9.3",
+    "6.0.3"
+   ],
+   "wrappers": [
+    "5.0.0",
+    "6.0.0",
+    "6.0.1"
+   ],
+   "by_cause": {
+    "C1": {
+     "flaky": 22,
+     "not-reproduced": 2,
+     "reproduced": 41
+    },
+    "C11": {
+     "not_run": 4,
+     "reproduced": 1
+    },
+    "C2": {
+     "reproduced": 5
+    }
+   },
+   "cells": {
+    "C1": 65,
+    "C11": 5,
+    "C2": 5
+   },
+   "not_reproduced": {
+    "C1": 2,
+    "C11": 0,
+    "C2": 0
+   },
+   "not_run": {
+    "C1": 0,
+    "C11": 4,
+    "C2": 0
+   },
+   "causes_run_on_all_builds": 2,
+   "control": {
+    "groups": 14,
+    "reproduced": 8,
+    "not_reproduced": 1
+   }
+  },
+  "cross": {
+   "ts6_on_other": {
+    "groups": 19,
+    "by_verdict": {
+     "bug": {
+      "not-reproduced": 14
+     },
+     "legitimate": {
+      "not-reproduced": 4
+     },
+     "tool-artifact": {
+      "reproduced": 1
+     }
+    },
+    "bug_groups": 14,
+    "bug_not_reproduced": 14,
+    "artifact_groups": 1,
+    "artifact_reproduced": 1,
+    "answers_checked": true,
+    "bug_match": {
+     "fresh": 13,
+     "no answer": 1
+    },
+    "bug_matches_fresh": 13,
+    "bug_no_answer": 1,
+    "bug_matches_history": 0
+   },
+   "ts7_on_other": {
+    "groups": 2,
+    "by_verdict": {
+     "bug": {
+      "not-reproduced": 1
+     },
+     "tool-artifact": {
+      "reproduced": 1
+     }
+    },
+    "bug_groups": 1,
+    "bug_not_reproduced": 1,
+    "artifact_groups": 1,
+    "artifact_reproduced": 1,
+    "answers_checked": true,
+    "bug_match": {
+     "history": 1
+    },
+    "bug_matches_fresh": 0,
+    "bug_no_answer": 0,
+    "bug_matches_history": 1
+   }
+  },
+  "c1_edit": {
+   "groups": 13,
+   "by_verdict": {
+    "not-reproduced": 13
+   },
+   "reproduced_any": 0,
+   "reproduced_all": 0,
+   "renames_with_edits": 78,
+   "renames": 78,
+   "all_restored": true
+  },
+  "c1_external": {
+   "groups": 13,
+   "by_verdict": {
+    "not-reproduced": 6,
+    "reproduced": 7
+   },
+   "reproduced_any": 7,
+   "reproduced_all": 7,
+   "renames_with_edits": 0,
+   "renames": 0,
+   "all_restored": true
+  },
+  "persistence": {
+   "groups": 16,
+   "causes": 4,
+   "by_wait": {
+    "0": 15,
+    "5": 13,
+    "30": 13,
+    "60": 13
+   },
+   "reproduced_without_wait": 15,
+   "still_after_longest": 15,
+   "never_after_longest": 1,
+   "retried_groups": 3,
+   "retry_replays": 6,
+   "longest_wait_s": 60,
+   "gone_causes": "C2",
+   "gone_last_seen_s": 30
+  },
+  "c9_trigger": {
+   "all seven operations": "3/3",
+   "without the edit of termios_unix.go": "0/3",
+   "open, edit and close termios_unix.go only": "3/3",
+   "open and close termios_unix.go only": "0/3",
+   "without termios_unix.go": "0/3",
+   "open examples/http/main.go only": "0/3"
+  }
+ },
+ "c1": {
+  "campaign": "main_v1",
+  "runs": {
+   "planned": 720,
+   "recorded": 720,
+   "ok": 718,
+   "by_status": {
+    "incomplete": 1,
+    "ok": 718,
+    "timeout": 1
+   },
+   "planned_by_relation": {
+    "R0": 50,
+    "R1": 250,
+    "R2": 100,
+    "R3": 100,
+    "R4": 100,
+    "R5": 100,
+    "R6": 20
+   }
+  },
+  "run_hours": {
+   "total": 84.18,
+   "by_relation": {
+    "R0": 3.73,
+    "R1": 35.94,
+    "R2": 4.49,
+    "R3": 15.8,
+    "R4": 8.65,
+    "R5": 12.71,
+    "R6": 2.85
+   }
+  },
+  "wall_clock_hours": 22.67,
+  "confirmed_signatures": 98,
+  "groups": {
+   "total": 106,
+   "by_relation": {
+    "R0": 2,
+    "R1": 29,
+    "R2": 2,
+    "R3": 24,
+    "R4": 27,
+    "R5": 9,
+    "R6": 13
+   },
+   "by_server": {
+    "gopls": 19,
+    "pyright": 11,
+    "rust-analyzer": 14,
+    "ts6": 38,
+    "ts7": 24
+   }
+  },
+  "verdicts": {
+   "by_verdict": {
+    "bug": 34,
+    "legitimate": 46,
+    "tool-artifact": 26
+   },
+   "by_relation": {
+    "R0": {
+     "bug": 0,
+     "legitimate": 0,
+     "tool-artifact": 2
+    },
+    "R1": {
+     "bug": 17,
+     "legitimate": 10,
+     "tool-artifact": 2
+    },
+    "R2": {
+     "bug": 2,
+     "legitimate": 0,
+     "tool-artifact": 0
+    },
+    "R3": {
+     "bug": 5,
+     "legitimate": 19,
+     "tool-artifact": 0
+    },
+    "R4": {
+     "bug": 10,
+     "legitimate": 1,
+     "tool-artifact": 16
+    },
+    "R5": {
+     "bug": 0,
+     "legitimate": 3,
+     "tool-artifact": 6
+    },
+    "R6": {
+     "bug": 0,
+     "legitimate": 13,
+     "tool-artifact": 0
+    }
+   },
+   "from_consensus": 23,
+   "rejudged": 2
+  },
+  "bug_groups": {
+   "total": 34,
+   "by_relation": {
+    "R0": 0,
+    "R1": 17,
+    "R2": 2,
+    "R3": 5,
+    "R4": 10,
+    "R5": 0,
+    "R6": 0
+   },
+   "by_server": {
+    "gopls": 11,
+    "pyright": 0,
+    "rust-analyzer": 7,
+    "ts6": 15,
+    "ts7": 1
+   }
+  },
+  "five_relations": {
+   "groups": 91,
+   "bugs": 34,
+   "precision_pct": 37.4
+  },
+  "precision_pct": 32.1,
+  "precision_by_relation_pct": {
+   "R0": 0.0,
+   "R1": 58.6,
+   "R2": 100.0,
+   "R3": 20.8,
+   "R4": 37.0,
+   "R5": 0.0,
+   "R6": 0.0
+  },
+  "root_causes": {
+   "total": 15,
+   "list": "C1, C2, C3, C4, C5, C6, C7, C8, C9, C10, C11, C12, C25, C26, C27",
+   "by_server": {
+    "gopls": 6,
+    "pyright": 0,
+    "rust-analyzer": 5,
+    "ts6": 3,
+    "ts7": 1
+   },
+   "by_relation": {
+    "R0": 0,
+    "R1": 5,
+    "R2": 2,
+    "R3": 3,
+    "R4": 5,
+    "R5": 0,
+    "R6": 0
+   }
+  },
+  "corpus": {
+   "projects": 40,
+   "projects_by_language": {
+    "go": 10,
+    "python": 10,
+    "rust": 10,
+    "typescript": 10
+   },
+   "projects_tested": 40,
+   "pairs": 50,
+   "excluded_pairs": 0,
+   "selection_cutoff": "2026-03-23",
+   "selected_on": "2026-09-23"
+  },
+  "servers": {
+   "pyright": {
+    "version": "1.1.414",
+    "package_version": "1.1.414",
+    "label": "pyright-1.1.414"
+   },
+   "ts6": {
+    "version": "6.0.3",
+    "package_version": "6.0.0",
+    "label": "ts6-6.0.3"
+   },
+   "ts7": {
+    "version": "7.0.2",
+    "package_version": "7.0.2",
+    "label": "ts7-7.0.2"
+   },
+   "rust-analyzer": {
+    "version": "2026-09-21",
+    "package_version": "",
+    "label": "rust-analyzer-2026-09-21"
+   },
+   "gopls": {
+    "version": "v0.23.0",
+    "package_version": "",
+    "label": "gopls-v0.23.0"
+   }
+  },
+  "run_seconds": {
+   "measure": "wall_seconds per run (all statuses); p90 by linear interpolation",
+   "total_seconds": 303034.6,
+   "total_hours": 84.18,
+   "per_oracle": {
+    "r0_crash": {
+     "n": 50,
+     "total": 13424.9,
+     "mean": 268.5,
+     "median": 29.6,
+     "p90": 316.2
+    },
+    "r1_history": {
+     "n": 250,
+     "total": 129392.3,
+     "mean": 517.6,
+     "median": 439.2,
+     "p90": 822.4
+    },
+    "r2_handles": {
+     "n": 100,
+     "total": 16174.5,
+     "mean": 161.7,
+     "median": 83.1,
+     "p90": 303.3
+    },
+    "r3_routes": {
+     "n": 100,
+     "total": 56886.1,
+     "mean": 568.9,
+     "median": 238.2,
+     "p90": 1417.4
+    },
+    "r4_edits": {
+     "n": 100,
+     "total": 31134.6,
+     "mean": 311.3,
+     "median": 114.2,
+     "p90": 696.8
+    },
+    "r5_transforms": {
+     "n": 100,
+     "total": 45757.5,
+     "mean": 457.6,
+     "median": 236.2,
+     "p90": 1069.1
+    },
+    "r6_crossimpl": {
+     "n": 20,
+     "total": 10264.7,
+     "mean": 513.2,
+     "median": 142.4,
+     "p90": 1372.1
+    }
+   },
+   "per_oracle_kind": {
+    "r0_crash": {
+     "gopls": {
+      "n": 10,
+      "total": 126.8,
+      "mean": 12.7,
+      "median": 12.1,
+      "p90": 14.7
+     },
+     "pyright": {
+      "n": 10,
+      "total": 240.5,
+      "mean": 24.1,
+      "median": 22.1,
+      "p90": 39.2
+     },
+     "rust-analyzer": {
+      "n": 10,
+      "total": 12224.6,
+      "mean": 1222.5,
+      "median": 364.6,
+      "p90": 3178.8
+     },
+     "ts6": {
+      "n": 10,
+      "total": 459.7,
+      "mean": 46.0,
+      "median": 37.2,
+      "p90": 84.6
+     },
+     "ts7": {
+      "n": 10,
+      "total": 373.3,
+      "mean": 37.3,
+      "median": 29.7,
+      "p90": 62.7
+     }
+    },
+    "r1_history": {
+     "gopls": {
+      "n": 50,
+      "total": 23068.0,
+      "mean": 461.4,
+      "median": 481.6,
+      "p90": 824.8
+     },
+     "pyright": {
+      "n": 50,
+      "total": 17996.2,
+      "mean": 359.9,
+      "median": 349.9,
+      "p90": 597.7
+     },
+     "rust-analyzer": {
+      "n": 50,
+      "total": 29772.6,
+      "mean": 595.5,
+      "median": 451.5,
+      "p90": 834.8
+     },
+     "ts6": {
+      "n": 50,
+      "total": 36911.7,
+      "mean": 738.2,
+      "median": 613.8,
+      "p90": 1647.2
+     },
+     "ts7": {
+      "n": 50,
+      "total": 21643.8,
+      "mean": 432.9,
+      "median": 402.6,
+      "p90": 708.9
+     }
+    },
+    "r2_handles": {
+     "gopls": {
+      "n": 20,
+      "total": 1341.5,
+      "mean": 67.1,
+      "median": 62.0,
+      "p90": 98.8
+     },
+     "pyright": {
+      "n": 20,
+      "total": 1298.6,
+      "mean": 64.9,
+      "median": 68.4,
+      "p90": 75.3
+     },
+     "rust-analyzer": {
+      "n": 20,
+      "total": 9367.4,
+      "mean": 468.4,
+      "median": 303.7,
+      "p90": 906.9
+     },
+     "ts6": {
+      "n": 20,
+      "total": 2549.5,
+      "mean": 127.5,
+      "median": 126.5,
+      "p90": 162.1
+     },
+     "ts7": {
+      "n": 20,
+      "total": 1617.5,
+      "mean": 80.9,
+      "median": 77.0,
+      "p90": 96.2
+     }
+    },
+    "r3_routes": {
+     "gopls": {
+      "n": 20,
+      "total": 3264.8,
+      "mean": 163.2,
+      "median": 154.9,
+      "p90": 225.5
+     },
+     "pyright": {
+      "n": 20,
+      "total": 4690.9,
+      "mean": 234.5,
+      "median": 203.3,
+      "p90": 312.2
+     },
+     "rust-analyzer": {
+      "n": 20,
+      "total": 36521.5,
+      "mean": 1826.1,
+      "median": 1199.7,
+      "p90": 3009.9
+     },
+     "ts6": {
+      "n": 20,
+      "total": 6605.6,
+      "mean": 330.3,
+      "median": 243.1,
+      "p90": 635.4
+     },
+     "ts7": {
+      "n": 20,
+      "total": 5803.3,
+      "mean": 290.2,
+      "median": 250.2,
+      "p90": 524.2
+     }
+    },
+    "r4_edits": {
+     "gopls": {
+      "n": 20,
+      "total": 2338.3,
+      "mean": 116.9,
+      "median": 92.1,
+      "p90": 219.7
+     },
+     "pyright": {
+      "n": 20,
+      "total": 1113.9,
+      "mean": 55.7,
+      "median": 48.3,
+      "p90": 61.0
+     },
+     "rust-analyzer": {
+      "n": 20,
+      "total": 13884.3,
+      "mean": 694.2,
+      "median": 306.1,
+      "p90": 1765.3
+     },
+     "ts6": {
+      "n": 20,
+      "total": 10658.0,
+      "mean": 532.9,
+      "median": 338.6,
+      "p90": 1094.2
+     },
+     "ts7": {
+      "n": 20,
+      "total": 3140.1,
+      "mean": 157.0,
+      "median": 69.5,
+      "p90": 513.8
+     }
+    },
+    "r5_transforms": {
+     "gopls": {
+      "n": 20,
+      "total": 2592.0,
+      "mean": 129.6,
+      "median": 100.7,
+      "p90": 177.6
+     },
+     "pyright": {
+      "n": 20,
+      "total": 4028.7,
+      "mean": 201.4,
+      "median": 148.3,
+      "p90": 304.6
+     },
+     "rust-analyzer": {
+      "n": 20,
+      "total": 23253.1,
+      "mean": 1162.7,
+      "median": 834.2,
+      "p90": 2407.1
+     },
+     "ts6": {
+      "n": 20,
+      "total": 8347.1,
+      "mean": 417.4,
+      "median": 322.2,
+      "p90": 942.6
+     },
+     "ts7": {
+      "n": 20,
+      "total": 7536.6,
+      "mean": 376.8,
+      "median": 308.6,
+      "p90": 859.3
+     }
+    },
+    "r6_crossimpl": {
+     "ts7": {
+      "n": 20,
+      "total": 10264.7,
+      "mean": 513.2,
+      "median": 142.4,
+      "p90": 1372.1
+     }
+    }
+   }
+  },
+  "stable_filter": {
+   "compared": 1099210,
+   "unstable": 2820,
+   "unstable_permille": 2.6,
+   "unstable_by_kind": {
+    "gopls": 19,
+    "pyright": 1,
+    "rust-analyzer": 2800,
+    "ts6": 0,
+    "ts7": 0
+   }
+  },
+  "violations": {
+   "rows": 487,
+   "by_status": {
+    "capped": 140,
+    "confirmed": 189,
+    "flaky": 33,
+    "incomplete": 1,
+    "labelled-legitimate": 87,
+    "not-reproduced": 37
+   },
+   "by_oracle_status": {
+    "r0_crash": {
+     "capped": 0,
+     "confirmed": 2,
+     "flaky": 4,
+     "incomplete": 0,
+     "labelled-legitimate": 0,
+     "not-reproduced": 1
+    },
+    "r1_history": {
+     "capped": 30,
+     "confirmed": 51,
+     "flaky": 27,
+     "incomplete": 0,
+     "labelled-legitimate": 0,
+     "not-reproduced": 22
+    },
+    "r2_handles": {
+     "capped": 3,
+     "confirmed": 6,
+     "flaky": 0,
+     "incomplete": 0,
+     "labelled-legitimate": 0,
+     "not-reproduced": 1
+    },
+    "r3_routes": {
+     "capped": 62,
+     "confirmed": 54,
+     "flaky": 0,
+     "incomplete": 1,
+     "labelled-legitimate": 87,
+     "not-reproduced": 0
+    },
+    "r4_edits": {
+     "capped": 3,
+     "confirmed": 37,
+     "flaky": 0,
+     "incomplete": 0,
+     "labelled-legitimate": 0,
+     "not-reproduced": 1
+    },
+    "r5_transforms": {
+     "capped": 4,
+     "confirmed": 12,
+     "flaky": 1,
+     "incomplete": 0,
+     "labelled-legitimate": 0,
+     "not-reproduced": 12
+    },
+    "r6_crossimpl": {
+     "capped": 38,
+     "confirmed": 27,
+     "flaky": 1,
+     "incomplete": 0,
+     "labelled-legitimate": 0,
+     "not-reproduced": 0
+    }
+   },
+   "replayed": 260,
+   "filtered": 70,
+   "filtered_pct": 27
+  },
+  "two_of_three": {
+   "not_confirmed": 70,
+   "reproduced_2_of_3": 23
+  },
+  "reduction": {
+   "groups": 106,
+   "groups_with_ops": 64,
+   "ops_before": 671,
+   "ops_after": 188,
+   "by_oracle": {
+    "r1_history": {
+     "groups": 29,
+     "ops_before": 221,
+     "ops_after": 94
+    },
+    "r2_handles": {
+     "groups": 2,
+     "ops_before": 4,
+     "ops_after": 4
+    },
+    "r4_edits": {
+     "groups": 24,
+     "ops_before": 72,
+     "ops_after": 72
+    },
+    "r5_transforms": {
+     "groups": 9,
+     "ops_before": 374,
+     "ops_after": 18
+    }
+   },
+   "narrowed": 98,
+   "reduced_confirmed": {
+    "0/3": 4,
+    "1/3": 1,
+    "2/3": 3,
+    "3/3": 98
+   },
+   "budget_exhausted": 3,
+   "probes": 379,
+   "compute_hours": 7.87,
+   "ops_differ_from_triage_json": []
+  },
+  "not_reconfirmed": 8,
+  "merge": {
+   "author": 15,
+   "mechanical": 16
+  },
+  "unsettled_r1": {
+   "by_server": {
+    "gopls": {
+     "sessions": 740,
+     "unsettled": 0
+    },
+    "pyright": {
+     "sessions": 700,
+     "unsettled": 1
+    },
+    "rust-analyzer": {
+     "sessions": 174,
+     "unsettled": 18
+    },
+    "ts6": {
+     "sessions": 740,
+     "unsettled": 0
+    },
+    "ts7": {
+     "sessions": 740,
+     "unsettled": 0
+    }
+   },
+   "unsettled": 19,
+   "sessions": 3094
+  },
+  "evidence": {
+   "c1_edit": {
+    "groups": 13,
+    "reproduced_any": 0,
+    "reproduced_all": 0,
+    "unsettled": 0,
+    "all_restored": true,
+    "not_restored_groups": 0,
+    "group_list": [
+     "ts6-r1-codeaction-key-lost-h5-4f92e2",
+     "ts6-r1-completion-lost-h5-fa501c",
+     "ts6-r1-definition-lost-h5-61a0fd",
+     "ts6-r1-definition-lost-h9-898f29",
+     "ts6-r1-diagnostics-extra-2305-2339-7006-h5-d5a250",
+     "ts6-r1-documenthighlight-lost-h5-9b4675",
+     "ts6-r1-references-lost-h5-d24ca6",
+     "ts6-r1-references-missing-h5-cc8950",
+     "ts6-r1-semantictokens-changed-h5-591c42",
+     "ts6-r1-semantictokens-missing-h9-d686b3",
+     "ts6-r1-signaturehelp-changed-h5-db5a5e",
+     "ts6-r1-signaturehelp-lost-h9-7bd793",
+     "ts6-r1-typedefinition-lost-h5-712a35"
+    ]
+   },
+   "c1_external": {
+    "groups": 13,
+    "reproduced_any": 7,
+    "reproduced_all": 7,
+    "unsettled": 0,
+    "all_restored": true,
+    "not_restored_groups": 0,
+    "group_list": [
+     "ts6-r1-codeaction-key-lost-h5-4f92e2",
+     "ts6-r1-completion-lost-h5-fa501c",
+     "ts6-r1-definition-lost-h5-61a0fd",
+     "ts6-r1-definition-lost-h9-898f29",
+     "ts6-r1-diagnostics-extra-2305-2339-7006-h5-d5a250",
+     "ts6-r1-documenthighlight-lost-h5-9b4675",
+     "ts6-r1-references-lost-h5-d24ca6",
+     "ts6-r1-references-missing-h5-cc8950",
+     "ts6-r1-semantictokens-changed-h5-591c42",
+     "ts6-r1-semantictokens-missing-h9-d686b3",
+     "ts6-r1-signaturehelp-changed-h5-db5a5e",
+     "ts6-r1-signaturehelp-lost-h9-7bd793",
+     "ts6-r1-typedefinition-lost-h5-712a35"
+    ]
+   }
+  },
+  "sensitivity": {
+   "bug_groups": {
+    "author": {
+     "R0": 0,
+     "R1": 16,
+     "R2": 2,
+     "R3": 2,
+     "R4": 9,
+     "R5": 0,
+     "R6": 0,
+     "total": 29
+    },
+    "rater2": {
+     "R0": 2,
+     "R1": 17,
+     "R2": 2,
+     "R3": 8,
+     "R4": 7,
+     "R5": 0,
+     "R6": 2,
+     "total": 38
+    },
+    "final": {
+     "R0": 0,
+     "R1": 17,
+     "R2": 2,
+     "R3": 5,
+     "R4": 10,
+     "R5": 0,
+     "R6": 0,
+     "total": 34
+    }
+   },
+   "distinct": {
+    "final": {
+     "R0": 0,
+     "R1": 5,
+     "R2": 2,
+     "R3": 3,
+     "R4": 5,
+     "R5": 0,
+     "R6": 0,
+     "total": 15
+    },
+    "decisive": {
+     "R0": 0,
+     "R1": 1,
+     "R2": 1,
+     "R3": 1,
+     "R4": 5,
+     "R5": 0,
+     "R6": 0,
+     "total": 8
+    }
+   }
+  },
+  "classes": {
+   "L1": 4,
+   "L2": 6,
+   "L3": 1,
+   "L4": 18,
+   "L5": 3,
+   "L6": 13,
+   "L7": 1
+  },
+  "artifact_classes": {
+   "A1": 7,
+   "A2": 17,
+   "A3": 2,
+   "A4": 0
+  }
+ },
+ "c2": {
+  "campaign": "main_v2",
+  "runs": {
+   "planned": 690,
+   "recorded": 690,
+   "ok": 689,
+   "by_status": {
+    "incomplete": 1,
+    "ok": 689
+   },
+   "planned_by_relation": {
+    "R0": 48,
+    "R1": 240,
+    "R2": 96,
+    "R3": 96,
+    "R4": 96,
+    "R5": 96,
+    "R6": 18
+   }
+  },
+  "run_hours": {
+   "total": 73.25,
+   "by_relation": {
+    "R0": 0.52,
+    "R1": 38.1,
+    "R2": 2.33,
+    "R3": 11.08,
+    "R4": 8.65,
+    "R5": 10.25,
+    "R6": 2.32
+   }
+  },
+  "wall_clock_hours": 18.76,
+  "confirmed_signatures": 109,
+  "groups": {
+   "total": 121,
+   "by_relation": {
+    "R0": 1,
+    "R1": 37,
+    "R2": 2,
+    "R3": 23,
+    "R4": 38,
+    "R5": 10,
+    "R6": 10
+   },
+   "by_server": {
+    "gopls": 30,
+    "pyright": 17,
+    "rust-analyzer": 14,
+    "ts6": 39,
+    "ts7": 21
+   }
+  },
+  "verdicts": {
+   "by_verdict": {
+    "bug": 49,
+    "legitimate": 48,
+    "tool-artifact": 24
+   },
+   "by_relation": {
+    "R0": {
+     "bug": 1,
+     "legitimate": 0,
+     "tool-artifact": 0
+    },
+    "R1": {
+     "bug": 23,
+     "legitimate": 14,
+     "tool-artifact": 0
+    },
+    "R2": {
+     "bug": 2,
+     "legitimate": 0,
+     "tool-artifact": 0
+    },
+    "R3": {
+     "bug": 3,
+     "legitimate": 20,
+     "tool-artifact": 0
+    },
+    "R4": {
+     "bug": 17,
+     "legitimate": 0,
+     "tool-artifact": 21
+    },
+    "R5": {
+     "bug": 3,
+     "legitimate": 4,
+     "tool-artifact": 3
+    },
+    "R6": {
+     "bug": 0,
+     "legitimate": 10,
+     "tool-artifact": 0
+    }
+   },
+   "from_consensus": 5,
+   "rejudged": 0
+  },
+  "bug_groups": {
+   "total": 49,
+   "by_relation": {
+    "R0": 1,
+    "R1": 23,
+    "R2": 2,
+    "R3": 3,
+    "R4": 17,
+    "R5": 3,
+    "R6": 0
+   },
+   "by_server": {
+    "gopls": 18,
+    "pyright": 7,
+    "rust-analyzer": 7,
+    "ts6": 17,
+    "ts7": 0
+   }
+  },
+  "five_relations": {
+   "groups": 110,
+   "bugs": 48,
+   "precision_pct": 43.6
+  },
+  "precision_pct": 40.5,
+  "precision_by_relation_pct": {
+   "R0": 100.0,
+   "R1": 62.2,
+   "R2": 100.0,
+   "R3": 13.0,
+   "R4": 44.7,
+   "R5": 30.0,
+   "R6": 0.0
+  },
+  "root_causes": {
+   "total": 29,
+   "list": "C1, C2, C3, C4, C5, C7, C9, C11, C12, C13, C14, C15, C16, C17, C18, C19, C20, C21, C22, C25, C26, C28, C29, C30, C31, C32, C33, C34, C35",
+   "by_server": {
+    "gopls": 9,
+    "pyright": 6,
+    "rust-analyzer": 5,
+    "ts6": 9,
+    "ts7": 0
+   },
+   "by_relation": {
+    "R0": 1,
+    "R1": 12,
+    "R2": 2,
+    "R3": 2,
+    "R4": 11,
+    "R5": 1,
+    "R6": 0
+   }
+  },
+  "corpus": {
+   "projects": 40,
+   "projects_by_language": {
+    "go": 10,
+    "python": 10,
+    "rust": 10,
+    "typescript": 10
+   },
+   "projects_tested": 39,
+   "pairs": 48,
+   "excluded_pairs": 2,
+   "selection_cutoff": "2026-03-23",
+   "selected_on": "2026-09-23"
+  },
+  "servers": {
+   "pyright": {
+    "version": "1.1.414",
+    "package_version": "1.1.414",
+    "label": "pyright-1.1.414"
+   },
+   "rust-analyzer": {
+    "version": "2026-09-21",
+    "package_version": "",
+    "label": "rust-analyzer-2026-09-21"
+   },
+   "gopls": {
+    "version": "v0.23.0",
+    "package_version": "",
+    "label": "gopls-v0.23.0"
+   },
+   "ts6": {
+    "version": "6.0.3",
+    "package_version": "6.0.0",
+    "label": "ts6-6.0.3"
+   },
+   "ts7": {
+    "version": "7.0.2",
+    "package_version": "7.0.2",
+    "label": "ts7-7.0.2"
+   }
+  },
+  "run_seconds": {
+   "measure": "wall_seconds per run (all statuses); p90 by linear interpolation",
+   "total_seconds": 263716.3,
+   "total_hours": 73.25,
+   "per_oracle": {
+    "r0_crash": {
+     "n": 48,
+     "total": 1872.7,
+     "mean": 39.0,
+     "median": 22.6,
+     "p90": 90.8
+    },
+    "r1_history": {
+     "n": 240,
+     "total": 137167.9,
+     "mean": 571.5,
+     "median": 453.7,
+     "p90": 961.9
+    },
+    "r2_handles": {
+     "n": 96,
+     "total": 8386.7,
+     "mean": 87.4,
+     "median": 71.3,
+     "p90": 145.8
+    },
+    "r3_routes": {
+     "n": 96,
+     "total": 39896.2,
+     "mean": 415.6,
+     "median": 219.1,
+     "p90": 744.9
+    },
+    "r4_edits": {
+     "n": 96,
+     "total": 31141.6,
+     "mean": 324.4,
+     "median": 78.0,
+     "p90": 916.4
+    },
+    "r5_transforms": {
+     "n": 96,
+     "total": 36887.5,
+     "mean": 384.2,
+     "median": 196.1,
+     "p90": 705.6
+    },
+    "r6_crossimpl": {
+     "n": 18,
+     "total": 8363.7,
+     "mean": 464.7,
+     "median": 229.6,
+     "p90": 1294.4
+    }
+   },
+   "per_oracle_kind": {
+    "r0_crash": {
+     "gopls": {
+      "n": 10,
+      "total": 114.4,
+      "mean": 11.4,
+      "median": 10.5,
+      "p90": 15.6
+     },
+     "pyright": {
+      "n": 10,
+      "total": 129.6,
+      "mean": 13.0,
+      "median": 12.1,
+      "p90": 23.2
+     },
+     "rust-analyzer": {
+      "n": 10,
+      "total": 899.5,
+      "mean": 90.0,
+      "median": 69.3,
+      "p90": 159.3
+     },
+     "ts6": {
+      "n": 9,
+      "total": 400.6,
+      "mean": 44.5,
+      "median": 32.2,
+      "p90": 66.5
+     },
+     "ts7": {
+      "n": 9,
+      "total": 328.6,
+      "mean": 36.5,
+      "median": 26.1,
+      "p90": 56.6
+     }
+    },
+    "r1_history": {
+     "gopls": {
+      "n": 50,
+      "total": 25357.0,
+      "mean": 507.1,
+      "median": 492.2,
+      "p90": 856.0
+     },
+     "pyright": {
+      "n": 50,
+      "total": 18577.4,
+      "mean": 371.5,
+      "median": 349.1,
+      "p90": 765.3
+     },
+     "rust-analyzer": {
+      "n": 50,
+      "total": 29980.8,
+      "mean": 599.6,
+      "median": 396.1,
+      "p90": 853.9
+     },
+     "ts6": {
+      "n": 45,
+      "total": 39148.6,
+      "mean": 870.0,
+      "median": 712.7,
+      "p90": 1469.2
+     },
+     "ts7": {
+      "n": 45,
+      "total": 24104.1,
+      "mean": 535.6,
+      "median": 468.1,
+      "p90": 882.8
+     }
+    },
+    "r2_handles": {
+     "gopls": {
+      "n": 20,
+      "total": 1157.4,
+      "mean": 57.9,
+      "median": 55.3,
+      "p90": 76.9
+     },
+     "pyright": {
+      "n": 20,
+      "total": 1149.1,
+      "mean": 57.5,
+      "median": 56.3,
+      "p90": 63.3
+     },
+     "rust-analyzer": {
+      "n": 20,
+      "total": 2446.8,
+      "mean": 122.3,
+      "median": 115.7,
+      "p90": 180.5
+     },
+     "ts6": {
+      "n": 18,
+      "total": 2285.6,
+      "mean": 127.0,
+      "median": 130.8,
+      "p90": 171.3
+     },
+     "ts7": {
+      "n": 18,
+      "total": 1347.8,
+      "mean": 74.9,
+      "median": 71.3,
+      "p90": 99.4
+     }
+    },
+    "r3_routes": {
+     "gopls": {
+      "n": 20,
+      "total": 3143.0,
+      "mean": 157.2,
+      "median": 145.9,
+      "p90": 226.8
+     },
+     "pyright": {
+      "n": 20,
+      "total": 6732.2,
+      "mean": 336.6,
+      "median": 155.5,
+      "p90": 323.0
+     },
+     "rust-analyzer": {
+      "n": 20,
+      "total": 19025.9,
+      "mean": 951.3,
+      "median": 610.9,
+      "p90": 1319.9
+     },
+     "ts6": {
+      "n": 18,
+      "total": 5401.5,
+      "mean": 300.1,
+      "median": 235.9,
+      "p90": 595.6
+     },
+     "ts7": {
+      "n": 18,
+      "total": 5593.6,
+      "mean": 310.8,
+      "median": 229.4,
+      "p90": 559.0
+     }
+    },
+    "r4_edits": {
+     "gopls": {
+      "n": 20,
+      "total": 2069.6,
+      "mean": 103.5,
+      "median": 113.6,
+      "p90": 169.0
+     },
+     "pyright": {
+      "n": 20,
+      "total": 980.0,
+      "mean": 49.0,
+      "median": 46.3,
+      "p90": 52.8
+     },
+     "rust-analyzer": {
+      "n": 20,
+      "total": 10959.8,
+      "mean": 548.0,
+      "median": 111.6,
+      "p90": 835.0
+     },
+     "ts6": {
+      "n": 18,
+      "total": 14175.9,
+      "mean": 787.5,
+      "median": 665.0,
+      "p90": 1707.0
+     },
+     "ts7": {
+      "n": 18,
+      "total": 2956.3,
+      "mean": 164.2,
+      "median": 67.9,
+      "p90": 361.2
+     }
+    },
+    "r5_transforms": {
+     "gopls": {
+      "n": 20,
+      "total": 2052.0,
+      "mean": 102.6,
+      "median": 78.5,
+      "p90": 162.1
+     },
+     "pyright": {
+      "n": 20,
+      "total": 1924.3,
+      "mean": 96.2,
+      "median": 60.4,
+      "p90": 127.3
+     },
+     "rust-analyzer": {
+      "n": 20,
+      "total": 18280.7,
+      "mean": 914.0,
+      "median": 515.9,
+      "p90": 1541.4
+     },
+     "ts6": {
+      "n": 18,
+      "total": 7903.5,
+      "mean": 439.1,
+      "median": 436.1,
+      "p90": 703.6
+     },
+     "ts7": {
+      "n": 18,
+      "total": 6727.0,
+      "mean": 373.7,
+      "median": 370.4,
+      "p90": 647.4
+     }
+    },
+    "r6_crossimpl": {
+     "ts7": {
+      "n": 18,
+      "total": 8363.7,
+      "mean": 464.7,
+      "median": 229.6,
+      "p90": 1294.4
+     }
+    }
+   }
+  },
+  "stable_filter": {
+   "compared": 1073304,
+   "unstable": 32,
+   "unstable_permille": 0.0,
+   "unstable_by_kind": {
+    "gopls": 23,
+    "pyright": 2,
+    "rust-analyzer": 7,
+    "ts6": 0,
+    "ts7": 0
+   }
+  },
+  "violations": {
+   "rows": 508,
+   "by_status": {
+    "capped": 162,
+    "confirmed": 197,
+    "flaky": 22,
+    "incomplete": 7,
+    "labelled-legitimate": 81,
+    "not-reproduced": 39
+   },
+   "by_oracle_status": {
+    "r0_crash": {
+     "capped": 0,
+     "confirmed": 1,
+     "flaky": 0,
+     "incomplete": 0,
+     "labelled-legitimate": 0,
+     "not-reproduced": 0
+    },
+    "r1_history": {
+     "capped": 28,
+     "confirmed": 50,
+     "flaky": 11,
+     "incomplete": 7,
+     "labelled-legitimate": 0,
+     "not-reproduced": 29
+    },
+    "r2_handles": {
+     "capped": 4,
+     "confirmed": 6,
+     "flaky": 0,
+     "incomplete": 0,
+     "labelled-legitimate": 0,
+     "not-reproduced": 0
+    },
+    "r3_routes": {
+     "capped": 82,
+     "confirmed": 55,
+     "flaky": 7,
+     "incomplete": 0,
+     "labelled-legitimate": 81,
+     "not-reproduced": 2
+    },
+    "r4_edits": {
+     "capped": 6,
+     "confirmed": 49,
+     "flaky": 2,
+     "incomplete": 0,
+     "labelled-legitimate": 0,
+     "not-reproduced": 2
+    },
+    "r5_transforms": {
+     "capped": 4,
+     "confirmed": 14,
+     "flaky": 2,
+     "incomplete": 0,
+     "labelled-legitimate": 0,
+     "not-reproduced": 6
+    },
+    "r6_crossimpl": {
+     "capped": 38,
+     "confirmed": 22,
+     "flaky": 0,
+     "incomplete": 0,
+     "labelled-legitimate": 0,
+     "not-reproduced": 0
+    }
+   },
+   "replayed": 265,
+   "filtered": 61,
+   "filtered_pct": 23
+  },
+  "two_of_three": {
+   "not_confirmed": 61,
+   "reproduced_2_of_3": 15
+  },
+  "reduction": {
+   "groups": 121,
+   "groups_with_ops": 82,
+   "ops_before": 623,
+   "ops_after": 268,
+   "by_oracle": {
+    "r1_history": {
+     "groups": 37,
+     "ops_before": 339,
+     "ops_after": 143
+    },
+    "r2_handles": {
+     "groups": 2,
+     "ops_before": 4,
+     "ops_after": 4
+    },
+    "r4_edits": {
+     "groups": 33,
+     "ops_before": 99,
+     "ops_after": 99
+    },
+    "r5_transforms": {
+     "groups": 10,
+     "ops_before": 181,
+     "ops_after": 22
+    }
+   },
+   "narrowed": 113,
+   "reduced_confirmed": {
+    "0/3": 3,
+    "2/3": 3,
+    "3/3": 115
+   },
+   "budget_exhausted": 6,
+   "probes": 612,
+   "compute_hours": 12.98,
+   "ops_differ_from_triage_json": []
+  },
+  "not_reconfirmed": 6,
+  "merge": {
+   "author": 29,
+   "mechanical": 26
+  },
+  "unsettled_r1": {
+   "by_server": {
+    "gopls": {
+     "sessions": 742,
+     "unsettled": 0
+    },
+    "pyright": {
+     "sessions": 700,
+     "unsettled": 2
+    },
+    "rust-analyzer": {
+     "sessions": 176,
+     "unsettled": 7
+    },
+    "ts6": {
+     "sessions": 666,
+     "unsettled": 0
+    },
+    "ts7": {
+     "sessions": 666,
+     "unsettled": 0
+    }
+   },
+   "unsettled": 9,
+   "sessions": 2950
+  },
+  "evidence": {
+   "c1_edit": {
+    "groups": 7,
+    "reproduced_any": 0,
+    "reproduced_all": 0,
+    "unsettled": 2,
+    "all_restored": false,
+    "not_restored_groups": 6,
+    "group_list": [
+     "ts6-r1-completion-lost-h9-ce1ffc",
+     "ts6-r1-definition-lost-h9-898f29",
+     "ts6-r1-diagnostics-extra-2307-7006-h9-8325a2",
+     "ts6-r1-documenthighlight-missing-h9-2e657a",
+     "ts6-r1-references-missing-h5-cc8950",
+     "ts6-r1-semantictokens-changed-h9-c4368c",
+     "ts6-r1-typedefinition-lost-h9-b52749"
+    ]
+   },
+   "c1_external": {
+    "groups": 7,
+    "reproduced_any": 7,
+    "reproduced_all": 7,
+    "unsettled": 0,
+    "all_restored": true,
+    "not_restored_groups": 0,
+    "group_list": [
+     "ts6-r1-completion-lost-h9-ce1ffc",
+     "ts6-r1-definition-lost-h9-898f29",
+     "ts6-r1-diagnostics-extra-2307-7006-h9-8325a2",
+     "ts6-r1-documenthighlight-missing-h9-2e657a",
+     "ts6-r1-references-missing-h5-cc8950",
+     "ts6-r1-semantictokens-changed-h9-c4368c",
+     "ts6-r1-typedefinition-lost-h9-b52749"
+    ]
+   }
+  },
+  "sensitivity": {
+   "bug_groups": {
+    "author": {
+     "R0": 1,
+     "R1": 23,
+     "R2": 2,
+     "R3": 3,
+     "R4": 17,
+     "R5": 3,
+     "R6": 0,
+     "total": 49
+    },
+    "rater2": {
+     "R0": 1,
+     "R1": 23,
+     "R2": 2,
+     "R3": 5,
+     "R4": 17,
+     "R5": 4,
+     "R6": 0,
+     "total": 52
+    },
+    "final": {
+     "R0": 1,
+     "R1": 23,
+     "R2": 2,
+     "R3": 3,
+     "R4": 17,
+     "R5": 3,
+     "R6": 0,
+     "total": 49
+    }
+   },
+   "distinct": {
+    "final": {
+     "R0": 1,
+     "R1": 12,
+     "R2": 2,
+     "R3": 2,
+     "R4": 11,
+     "R5": 1,
+     "R6": 0,
+     "total": 29
+    },
+    "decisive": {
+     "R0": 1,
+     "R1": 4,
+     "R2": 1,
+     "R3": 1,
+     "R4": 11,
+     "R5": 1,
+     "R6": 0,
+     "total": 19
+    }
+   }
+  },
+  "classes": {
+   "L1": 7,
+   "L2": 8,
+   "L3": 3,
+   "L4": 17,
+   "L5": 2,
+   "L6": 10,
+   "L7": 1
+  },
+  "artifact_classes": {
+   "A1": 8,
+   "A2": 16,
+   "A3": 0,
+   "A4": 0
+  }
+ },
+ "cur": {
+  "campaigns": 2,
+  "runs": {
+   "planned": 1410,
+   "recorded": 1410,
+   "ok": 1407
+  },
+  "run_hours": {
+   "total": 157.43,
+   "by_relation": {
+    "R0": 4.25,
+    "R1": 74.04,
+    "R2": 6.82,
+    "R3": 26.88,
+    "R4": 17.3,
+    "R5": 22.96,
+    "R6": 5.17
+   }
+  },
+  "wall_clock_hours": 41.43,
+  "projects": 80,
+  "projects_distinct": 80,
+  "projects_tested": 79,
+  "pairs": 98,
+  "groups": {
+   "total": 227,
+   "by_relation": {
+    "R0": 3,
+    "R1": 66,
+    "R2": 4,
+    "R3": 47,
+    "R4": 65,
+    "R5": 19,
+    "R6": 23
+   },
+   "by_server": {
+    "gopls": 49,
+    "pyright": 28,
+    "rust-analyzer": 28,
+    "ts6": 77,
+    "ts7": 45
+   }
+  },
+  "verdicts": {
+   "by_verdict": {
+    "bug": 83,
+    "legitimate": 94,
+    "tool-artifact": 50
+   },
+   "by_relation": {
+    "R0": {
+     "bug": 1,
+     "legitimate": 0,
+     "tool-artifact": 2
+    },
+    "R1": {
+     "bug": 40,
+     "legitimate": 24,
+     "tool-artifact": 2
+    },
+    "R2": {
+     "bug": 4,
+     "legitimate": 0,
+     "tool-artifact": 0
+    },
+    "R3": {
+     "bug": 8,
+     "legitimate": 39,
+     "tool-artifact": 0
+    },
+    "R4": {
+     "bug": 27,
+     "legitimate": 1,
+     "tool-artifact": 37
+    },
+    "R5": {
+     "bug": 3,
+     "legitimate": 7,
+     "tool-artifact": 9
+    },
+    "R6": {
+     "bug": 0,
+     "legitimate": 23,
+     "tool-artifact": 0
+    }
+   }
+  },
+  "bug_groups": {
+   "total": 83,
+   "by_relation": {
+    "R0": 1,
+    "R1": 40,
+    "R2": 4,
+    "R3": 8,
+    "R4": 27,
+    "R5": 3,
+    "R6": 0
+   },
+   "by_server": {
+    "gopls": 29,
+    "pyright": 7,
+    "rust-analyzer": 14,
+    "ts6": 32,
+    "ts7": 1
+   }
+  },
+  "five_relations": {
+   "groups": 201,
+   "bugs": 82,
+   "precision_pct": 40.8
+  },
+  "precision_pct": 36.6,
+  "precision_by_relation_pct": {
+   "R0": 33.3,
+   "R1": 60.6,
+   "R2": 100.0,
+   "R3": 17.0,
+   "R4": 41.5,
+   "R5": 15.8,
+   "R6": 0.0
+  },
+  "root_causes": {
+   "total": 33,
+   "list": "C1, C2, C3, C4, C5, C6, C7, C8, C9, C10, C11, C12, C13, C14, C15, C16, C17, C18, C19, C20, C21, C22, C25, C26, C27, C28, C29, C30, C31, C32, C33, C34, C35",
+   "by_server": {
+    "gopls": 10,
+    "pyright": 6,
+    "rust-analyzer": 7,
+    "ts6": 9,
+    "ts7": 1
+   },
+   "by_relation": {
+    "R0": 1,
+    "R1": 13,
+    "R2": 2,
+    "R3": 3,
+    "R4": 13,
+    "R5": 1,
+    "R6": 0
+   },
+   "first_only": 4,
+   "second_only": 18,
+   "both": 11,
+   "first_only_list": "C6, C8, C10, C27",
+   "second_only_list": "C13, C14, C15, C16, C17, C18, C19, C20, C21, C22, C28, C29, C30, C31, C32, C33, C34, C35",
+   "both_list": "C1, C2, C3, C4, C5, C7, C9, C11, C12, C25, C26",
+   "only_relation": {
+    "R0": 1,
+    "R1": 13,
+    "R2": 2,
+    "R3": 3,
+    "R4": 13,
+    "R5": 1,
+    "R6": 0
+   },
+   "hours_per_bug": {
+    "R0": 4.2,
+    "R1": 5.7,
+    "R2": 3.4,
+    "R3": 9.0,
+    "R4": 1.3,
+    "R5": 23.0
+   },
+   "detail": {
+    "C1": {
+     "groups": 20,
+     "groups_c1": 13,
+     "groups_c2": 7,
+     "server": "ts6",
+     "relation": "R1"
+    },
+    "C2": {
+     "groups": 3,
+     "groups_c1": 1,
+     "groups_c2": 2,
+     "server": "ts6",
+     "relation": "R1"
+    },
+    "C3": {
+     "groups": 2,
+     "groups_c1": 1,
+     "groups_c2": 1,
+     "server": "gopls",
+     "relation": "R2"
+    },
+    "C4": {
+     "groups": 2,
+     "groups_c1": 1,
+     "groups_c2": 1,
+     "server": "rust-analyzer",
+     "relation": "R2"
+    },
+    "C5": {
+     "groups": 10,
+     "groups_c1": 5,
+     "groups_c2": 5,
+     "server": "gopls",
+     "relation": "R4"
+    },
+    "C6": {
+     "groups": 2,
+     "groups_c1": 2,
+     "groups_c2": 0,
+     "server": "gopls",
+     "relation": "R4"
+    },
+    "C7": {
+     "groups": 2,
+     "groups_c1": 1,
+     "groups_c2": 1,
+     "server": "gopls",
+     "relation": "R4"
+    },
+    "C8": {
+     "groups": 2,
+     "groups_c1": 2,
+     "groups_c2": 0,
+     "server": "rust-analyzer",
+     "relation": "R3"
+    },
+    "C9": {
+     "groups": 2,
+     "groups_c1": 1,
+     "groups_c2": 1,
+     "server": "gopls",
+     "relation": "R1"
+    },
+    "C10": {
+     "groups": 1,
+     "groups_c1": 1,
+     "groups_c2": 0,
+     "server": "ts7",
+     "relation": "R1"
+    },
+    "C11": {
+     "groups": 2,
+     "groups_c1": 1,
+     "groups_c2": 1,
+     "server": "ts6",
+     "relation": "R4"
+    },
+    "C12": {
+     "groups": 3,
+     "groups_c1": 1,
+     "groups_c2": 2,
+     "server": "gopls",
+     "relation": "R1"
+    },
+    "C13": {
+     "groups": 3,
+     "groups_c1": 0,
+     "groups_c2": 3,
+     "server": "gopls",
+     "relation": "R1"
+    },
+    "C14": {
+     "groups": 1,
+     "groups_c1": 0,
+     "groups_c2": 1,
+     "server": "gopls",
+     "relation": "R1"
+    },
+    "C15": {
+     "groups": 1,
+     "groups_c1": 0,
+     "groups_c2": 1,
+     "server": "gopls",
+     "relation": "R4"
+    },
+    "C16": {
+     "groups": 3,
+     "groups_c1": 0,
+     "groups_c2": 3,
+     "server": "gopls",
+     "relation": "R5"
+    },
+    "C17": {
+     "groups": 1,
+     "groups_c1": 0,
+     "groups_c2": 1,
+     "server": "pyright",
+     "relation": "R0"
+    },
+    "C18": {
+     "groups": 2,
+     "groups_c1": 0,
+     "groups_c2": 2,
+     "server": "pyright",
+     "relation": "R1"
+    },
+    "C19": {
+     "groups": 1,
+     "groups_c1": 0,
+     "groups_c2": 1,
+     "server": "pyright",
+     "relation": "R1"
+    },
+    "C20": {
+     "groups": 1,
+     "groups_c1": 0,
+     "groups_c2": 1,
+     "server": "pyright",
+     "relation": "R1"
+    },
+    "C21": {
+     "groups": 1,
+     "groups_c1": 0,
+     "groups_c2": 1,
+     "server": "pyright",
+     "relation": "R1"
+    },
+    "C22": {
+     "groups": 1,
+     "groups_c1": 0,
+     "groups_c2": 1,
+     "server": "pyright",
+     "relation": "R4"
+    },
+    "C25": {
+     "groups": 4,
+     "groups_c1": 2,
+     "groups_c2": 2,
+     "server": "rust-analyzer",
+     "relation": "R3"
+    },
+    "C26": {
+     "groups": 2,
+     "groups_c1": 1,
+     "groups_c2": 1,
+     "server": "rust-analyzer",
+     "relation": "R3"
+    },
+    "C27": {
+     "groups": 1,
+     "groups_c1": 1,
+     "groups_c2": 0,
+     "server": "rust-analyzer",
+     "relation": "R4"
+    },
+    "C28": {
+     "groups": 1,
+     "groups_c1": 0,
+     "groups_c2": 1,
+     "server": "rust-analyzer",
+     "relation": "R4"
+    },
+    "C29": {
+     "groups": 2,
+     "groups_c1": 0,
+     "groups_c2": 2,
+     "server": "rust-analyzer",
+     "relation": "R4"
+    },
+    "C30": {
+     "groups": 1,
+     "groups_c1": 0,
+     "groups_c2": 1,
+     "server": "ts6",
+     "relation": "R1"
+    },
+    "C31": {
+     "groups": 1,
+     "groups_c1": 0,
+     "groups_c2": 1,
+     "server": "ts6",
+     "relation": "R1"
+    },
+    "C32": {
+     "groups": 1,
+     "groups_c1": 0,
+     "groups_c2": 1,
+     "server": "ts6",
+     "relation": "R4"
+    },
+    "C33": {
+     "groups": 1,
+     "groups_c1": 0,
+     "groups_c2": 1,
+     "server": "ts6",
+     "relation": "R4"
+    },
+    "C34": {
+     "groups": 2,
+     "groups_c1": 0,
+     "groups_c2": 2,
+     "server": "ts6",
+     "relation": "R4"
+    },
+    "C35": {
+     "groups": 1,
+     "groups_c1": 0,
+     "groups_c2": 1,
+     "server": "ts6",
+     "relation": "R4"
+    }
+   },
+   "lower_bound": 28,
+   "possible_merge_sets": 4
+  },
+  "baseline": {
+   "crash": {
+    "groups": 3,
+    "bug_groups": 1,
+    "causes": 1,
+    "cause_list": "C17"
+   },
+   "cross_impl": {
+    "groups": 23,
+    "bug_groups": 0,
+    "causes": 0,
+    "cause_list": ""
+   },
+   "failing_request": {
+    "groups": 4,
+    "bug_groups": 1,
+    "causes": 1,
+    "cause_list": "C17"
+   },
+   "failing_request_five": {
+    "groups": 1,
+    "bug_groups": 0,
+    "causes": 0,
+    "cause_list": ""
+   },
+   "any": {
+    "causes": 1,
+    "cause_list": "C17"
+   },
+   "relations": {
+    "causes": 32
+   },
+   "relations_only": {
+    "causes": 32,
+    "also_baseline": 0,
+    "also_baseline_list": ""
+   }
+  },
+  "run_seconds": {
+   "measure": "wall_seconds per run (all statuses); p90 by linear interpolation",
+   "total_seconds": 566750.9,
+   "total_hours": 157.43,
+   "per_oracle": {
+    "r0_crash": {
+     "n": 98,
+     "total": 15297.6,
+     "mean": 156.1,
+     "median": 24.6,
+     "p90": 126.4
+    },
+    "r1_history": {
+     "n": 490,
+     "total": 266560.2,
+     "mean": 544.0,
+     "median": 444.6,
+     "p90": 905.3
+    },
+    "r2_handles": {
+     "n": 196,
+     "total": 24561.2,
+     "mean": 125.3,
+     "median": 77.0,
+     "p90": 193.1
+    },
+    "r3_routes": {
+     "n": 196,
+     "total": 96782.3,
+     "mean": 493.8,
+     "median": 222.4,
+     "p90": 890.0
+    },
+    "r4_edits": {
+     "n": 196,
+     "total": 62276.2,
+     "mean": 317.7,
+     "median": 99.1,
+     "p90": 807.7
+    },
+    "r5_transforms": {
+     "n": 196,
+     "total": 82645.0,
+     "mean": 421.7,
+     "median": 216.4,
+     "p90": 850.2
+    },
+    "r6_crossimpl": {
+     "n": 38,
+     "total": 18628.4,
+     "mean": 490.2,
+     "median": 162.2,
+     "p90": 1345.7
+    }
+   },
+   "per_oracle_kind": {
+    "r0_crash": {
+     "gopls": {
+      "n": 20,
+      "total": 241.2,
+      "mean": 12.1,
+      "median": 11.1,
+      "p90": 15.6
+     },
+     "pyright": {
+      "n": 20,
+      "total": 370.1,
+      "mean": 18.5,
+      "median": 14.1,
+      "p90": 29.9
+     },
+     "rust-analyzer": {
+      "n": 20,
+      "total": 13124.1,
+      "mean": 656.2,
+      "median": 115.2,
+      "p90": 2910.4
+     },
+     "ts6": {
+      "n": 19,
+      "total": 860.3,
+      "mean": 45.3,
+      "median": 37.2,
+      "p90": 86.9
+     },
+     "ts7": {
+      "n": 19,
+      "total": 701.9,
+      "mean": 36.9,
+      "median": 26.1,
+      "p90": 67.3
+     }
+    },
+    "r1_history": {
+     "gopls": {
+      "n": 100,
+      "total": 48425.0,
+      "mean": 484.2,
+      "median": 484.8,
+      "p90": 856.0
+     },
+     "pyright": {
+      "n": 100,
+      "total": 36573.6,
+      "mean": 365.7,
+      "median": 349.8,
+      "p90": 663.5
+     },
+     "rust-analyzer": {
+      "n": 100,
+      "total": 59753.4,
+      "mean": 597.5,
+      "median": 422.1,
+      "p90": 853.9
+     },
+     "ts6": {
+      "n": 95,
+      "total": 76060.3,
+      "mean": 800.6,
+      "median": 649.1,
+      "p90": 1610.9
+     },
+     "ts7": {
+      "n": 95,
+      "total": 45747.9,
+      "mean": 481.6,
+      "median": 420.1,
+      "p90": 788.0
+     }
+    },
+    "r2_handles": {
+     "gopls": {
+      "n": 40,
+      "total": 2498.9,
+      "mean": 62.5,
+      "median": 60.8,
+      "p90": 90.2
+     },
+     "pyright": {
+      "n": 40,
+      "total": 2447.7,
+      "mean": 61.2,
+      "median": 59.3,
+      "p90": 73.8
+     },
+     "rust-analyzer": {
+      "n": 40,
+      "total": 11814.2,
+      "mean": 295.4,
+      "median": 185.2,
+      "p90": 519.0
+     },
+     "ts6": {
+      "n": 38,
+      "total": 4835.1,
+      "mean": 127.2,
+      "median": 130.8,
+      "p90": 171.3
+     },
+     "ts7": {
+      "n": 38,
+      "total": 2965.3,
+      "mean": 78.0,
+      "median": 75.4,
+      "p90": 99.4
+     }
+    },
+    "r3_routes": {
+     "gopls": {
+      "n": 40,
+      "total": 6407.8,
+      "mean": 160.2,
+      "median": 149.8,
+      "p90": 226.8
+     },
+     "pyright": {
+      "n": 40,
+      "total": 11423.1,
+      "mean": 285.6,
+      "median": 175.1,
+      "p90": 323.0
+     },
+     "rust-analyzer": {
+      "n": 40,
+      "total": 55547.4,
+      "mean": 1388.7,
+      "median": 771.8,
+      "p90": 2729.8
+     },
+     "ts6": {
+      "n": 38,
+      "total": 12007.1,
+      "mean": 316.0,
+      "median": 236.9,
+      "p90": 606.4
+     },
+     "ts7": {
+      "n": 38,
+      "total": 11396.9,
+      "mean": 299.9,
+      "median": 237.5,
+      "p90": 559.0
+     }
+    },
+    "r4_edits": {
+     "gopls": {
+      "n": 40,
+      "total": 4407.9,
+      "mean": 110.2,
+      "median": 110.6,
+      "p90": 215.9
+     },
+     "pyright": {
+      "n": 40,
+      "total": 2093.9,
+      "mean": 52.3,
+      "median": 47.8,
+      "p90": 54.5
+     },
+     "rust-analyzer": {
+      "n": 40,
+      "total": 24844.1,
+      "mean": 621.1,
+      "median": 211.7,
+      "p90": 1257.8
+     },
+     "ts6": {
+      "n": 38,
+      "total": 24833.9,
+      "mean": 653.5,
+      "median": 376.5,
+      "p90": 1587.7
+     },
+     "ts7": {
+      "n": 38,
+      "total": 6096.4,
+      "mean": 160.4,
+      "median": 67.9,
+      "p90": 524.6
+     }
+    },
+    "r5_transforms": {
+     "gopls": {
+      "n": 40,
+      "total": 4644.0,
+      "mean": 116.1,
+      "median": 94.7,
+      "p90": 166.2
+     },
+     "pyright": {
+      "n": 40,
+      "total": 5953.0,
+      "mean": 148.8,
+      "median": 94.5,
+      "p90": 221.4
+     },
+     "rust-analyzer": {
+      "n": 40,
+      "total": 41533.8,
+      "mean": 1038.3,
+      "median": 779.9,
+      "p90": 2407.1
+     },
+     "ts6": {
+      "n": 38,
+      "total": 16250.6,
+      "mean": 427.6,
+      "median": 383.1,
+      "p90": 726.2
+     },
+     "ts7": {
+      "n": 38,
+      "total": 14263.6,
+      "mean": 375.4,
+      "median": 338.8,
+      "p90": 661.2
+     }
+    },
+    "r6_crossimpl": {
+     "ts7": {
+      "n": 38,
+      "total": 18628.4,
+      "mean": 490.2,
+      "median": 162.2,
+      "p90": 1345.7
+     }
+    }
+   }
+  },
+  "stable_filter": {
+   "compared": 2172514,
+   "unstable": 2852,
+   "unstable_permille": 1.3,
+   "unstable_by_kind": {
+    "gopls": 42,
+    "pyright": 3,
+    "rust-analyzer": 2807,
+    "ts6": 0,
+    "ts7": 0
+   }
+  },
+  "violations": {
+   "rows": 995,
+   "by_status": {
+    "capped": 302,
+    "confirmed": 386,
+    "flaky": 55,
+    "incomplete": 8,
+    "labelled-legitimate": 168,
+    "not-reproduced": 76
+   },
+   "replayed": 525,
+   "filtered": 131,
+   "filtered_pct": 25
+  },
+  "two_of_three": {
+   "not_confirmed": 131,
+   "reproduced_2_of_3": 38
+  },
+  "reduction": {
+   "groups": 227,
+   "groups_with_ops": 146,
+   "ops_before": 1294,
+   "ops_after": 456,
+   "narrowed": 211,
+   "reduced_confirmed": {
+    "0/3": 7,
+    "1/3": 1,
+    "2/3": 6,
+    "3/3": 213
+   },
+   "budget_exhausted": 9,
+   "probes": 991,
+   "compute_hours": 20.85
+  },
+  "not_reconfirmed": 14,
+  "merge": {
+   "author": 33,
+   "mechanical": 31
+  },
+  "unsettled_r1": {
+   "by_server": {
+    "gopls": {
+     "sessions": 1482,
+     "unsettled": 0
+    },
+    "pyright": {
+     "sessions": 1400,
+     "unsettled": 3
+    },
+    "rust-analyzer": {
+     "sessions": 350,
+     "unsettled": 25
+    },
+    "ts6": {
+     "sessions": 1406,
+     "unsettled": 0
+    },
+    "ts7": {
+     "sessions": 1406,
+     "unsettled": 0
+    }
+   },
+   "unsettled": 28,
+   "sessions": 6044
+  },
+  "classes": {
+   "L1": 11,
+   "L2": 14,
+   "L3": 4,
+   "L4": 35,
+   "L5": 5,
+   "L6": 23,
+   "L7": 2
+  },
+  "artifact_classes": {
+   "A1": 15,
+   "A2": 33,
+   "A3": 2,
+   "A4": 0
+  },
+  "sensitivity": {
+   "bug_groups": {
+    "author": {
+     "R0": 1,
+     "R1": 39,
+     "R2": 4,
+     "R3": 5,
+     "R4": 26,
+     "R5": 3,
+     "R6": 0,
+     "total": 78
+    },
+    "rater2": {
+     "R0": 3,
+     "R1": 40,
+     "R2": 4,
+     "R3": 13,
+     "R4": 24,
+     "R5": 4,
+     "R6": 2,
+     "total": 90
+    },
+    "final": {
+     "R0": 1,
+     "R1": 40,
+     "R2": 4,
+     "R3": 8,
+     "R4": 27,
+     "R5": 3,
+     "R6": 0,
+     "total": 83
+    }
+   },
+   "distinct": {
+    "final": {
+     "R0": 1,
+     "R1": 13,
+     "R2": 2,
+     "R3": 3,
+     "R4": 13,
+     "R5": 1,
+     "R6": 0,
+     "total": 33
+    },
+    "decisive": {
+     "R0": 1,
+     "R1": 4,
+     "R2": 1,
+     "R3": 1,
+     "R4": 13,
+     "R5": 1,
+     "R6": 0,
+     "total": 21
+    }
+   }
+  },
+  "evidence": {
+   "independent": {
+    "decisive": 21,
+    "partial": 8,
+    "none": 4,
+    "causes": 33
+   },
+   "causes": 32,
+   "decisive": 20,
+   "partial": 8,
+   "none": 4,
+   "decisive_list": "C4, C5, C6, C7, C9, C11, C13, C15, C16, C20, C22, C26, C27, C28, C29, C31, C32, C33, C34, C35",
+   "partial_list": "C1, C2, C3, C8, C14, C19, C21, C25",
+   "none_list": "C10, C12, C18, C30",
+   "excluded_list": "C17",
+   "by_relation": {
+    "R0": {
+     "decisive": 1,
+     "partial": 0,
+     "none": 0
+    },
+    "R1": {
+     "decisive": 4,
+     "partial": 5,
+     "none": 4
+    },
+    "R2": {
+     "decisive": 1,
+     "partial": 1,
+     "none": 0
+    },
+    "R3": {
+     "decisive": 1,
+     "partial": 2,
+     "none": 0
+    },
+    "R4": {
+     "decisive": 13,
+     "partial": 0,
+     "none": 0
+    },
+    "R5": {
+     "decisive": 1,
+     "partial": 0,
+     "none": 0
+    },
+    "R6": {
+     "decisive": 0,
+     "partial": 0,
+     "none": 0
+    }
+   },
+   "related_none": 25,
+   "related_none_all": 26,
+   "c1_edit": {
+    "groups": 20,
+    "reproduced_any": 0,
+    "reproduced_all": 0,
+    "unsettled": 2,
+    "not_restored_groups": 6,
+    "all_restored": false
+   },
+   "c1_external": {
+    "groups": 20,
+    "reproduced_any": 14,
+    "reproduced_all": 14,
+    "unsettled": 0,
+    "not_restored_groups": 0,
+    "all_restored": true
+   }
+  },
+  "cost": {
+   "campaign_hours": 41.43,
+   "bench_hours": 26.0,
+   "reduction_hours": 20.85,
+   "total_hours": 88.28,
+   "total_days": 3.7,
+   "run_hours": 157.4,
+   "wall_hours": 41.4,
+   "wall_hours_c1": 22.7,
+   "wall_hours_c2": 18.8,
+   "bench_run_hours": 103.7,
+   "bench_wall_hours": 26.0
+  },
+  "over_time": {
+   "R0": {
+    "hours": 4.2,
+    "bugs": 1,
+    "bug_groups": 1,
+    "groups": 3,
+    "last_bug_hours": 4.1,
+    "campaign_start_hours": {
+     "main_v1": 0.0,
+     "main_v2": 3.7
+    }
+   },
+   "R1": {
+    "hours": 74.0,
+    "bugs": 13,
+    "bug_groups": 40,
+    "groups": 66,
+    "last_bug_hours": 67.8,
+    "campaign_start_hours": {
+     "main_v1": 0.0,
+     "main_v2": 35.9
+    }
+   },
+   "R2": {
+    "hours": 6.8,
+    "bugs": 2,
+    "bug_groups": 4,
+    "groups": 4,
+    "last_bug_hours": 2.5,
+    "campaign_start_hours": {
+     "main_v1": 0.0,
+     "main_v2": 4.5
+    }
+   },
+   "R3": {
+    "hours": 26.9,
+    "bugs": 3,
+    "bug_groups": 8,
+    "groups": 47,
+    "last_bug_hours": 3.6,
+    "campaign_start_hours": {
+     "main_v1": 0.0,
+     "main_v2": 15.8
+    }
+   },
+   "R4": {
+    "hours": 17.3,
+    "bugs": 13,
+    "bug_groups": 27,
+    "groups": 65,
+    "last_bug_hours": 16.3,
+    "campaign_start_hours": {
+     "main_v1": 0.0,
+     "main_v2": 8.6
+    }
+   },
+   "R5": {
+    "hours": 23.0,
+    "bugs": 1,
+    "bug_groups": 3,
+    "groups": 19,
+    "last_bug_hours": 12.8,
+    "campaign_start_hours": {
+     "main_v1": 0.0,
+     "main_v2": 12.7
+    }
+   },
+   "R6": {
+    "hours": 5.2,
+    "bugs": 0,
+    "bug_groups": 0,
+    "groups": 23,
+    "last_bug_hours": null,
+    "campaign_start_hours": {
+     "main_v1": 0.0,
+     "main_v2": 2.9
+    }
+   }
+  },
+  "newest": {
+   "groups": 83,
+   "reproduced_all": 65,
+   "reproduced_some": 8,
+   "not_reproduced": 10,
+   "not_judged": 0,
+   "errors": 0,
+   "causes_partly_gone": 2,
+   "causes_partly_gone_list": "C5, C25",
+   "causes": 33,
+   "causes_reproduced": 31,
+   "causes_reproduced_all": 31,
+   "causes_not_reproduced": 2,
+   "causes_not_reproduced_list": "C28, C31",
+   "causes_reproduced_list": "C1, C2, C3, C4, C5, C6, C7, C8, C9, C10, C11, C12, C13, C14, C15, C16, C17, C18, C19, C20, C21, C22, C25, C26, C27, C29, C30, C32, C33, C34, C35",
+   "by_cause": {
+    "C1": {
+     "groups": 20,
+     "reproducing": 20,
+     "gone": 0
+    },
+    "C2": {
+     "groups": 3,
+     "reproducing": 3,
+     "gone": 0
+    },
+    "C3": {
+     "groups": 2,
+     "reproducing": 2,
+     "gone": 0
+    },
+    "C4": {
+     "groups": 2,
+     "reproducing": 2,
+     "gone": 0
+    },
+    "C5": {
+     "groups": 10,
+     "reproducing": 4,
+     "gone": 6
+    },
+    "C6": {
+     "groups": 2,
+     "reproducing": 2,
+     "gone": 0
+    },
+    "C7": {
+     "groups": 2,
+     "reproducing": 2,
+     "gone": 0
+    },
+    "C8": {
+     "groups": 2,
+     "reproducing": 2,
+     "gone": 0
+    },
+    "C9": {
+     "groups": 2,
+     "reproducing": 2,
+     "gone": 0
+    },
+    "C10": {
+     "groups": 1,
+     "reproducing": 1,
+     "gone": 0
+    },
+    "C11": {
+     "groups": 2,
+     "reproducing": 2,
+     "gone": 0
+    },
+    "C12": {
+     "groups": 3,
+     "reproducing": 3,
+     "gone": 0
+    },
+    "C13": {
+     "groups": 3,
+     "reproducing": 3,
+     "gone": 0
+    },
+    "C14": {
+     "groups": 1,
+     "reproducing": 1,
+     "gone": 0
+    },
+    "C15": {
+     "groups": 1,
+     "reproducing": 1,
+     "gone": 0
+    },
+    "C16": {
+     "groups": 3,
+     "reproducing": 3,
+     "gone": 0
+    },
+    "C17": {
+     "groups": 1,
+     "reproducing": 1,
+     "gone": 0
+    },
+    "C18": {
+     "groups": 2,
+     "reproducing": 2,
+     "gone": 0
+    },
+    "C19": {
+     "groups": 1,
+     "reproducing": 1,
+     "gone": 0
+    },
+    "C20": {
+     "groups": 1,
+     "reproducing": 1,
+     "gone": 0
+    },
+    "C21": {
+     "groups": 1,
+     "reproducing": 1,
+     "gone": 0
+    },
+    "C22": {
+     "groups": 1,
+     "reproducing": 1,
+     "gone": 0
+    },
+    "C25": {
+     "groups": 4,
+     "reproducing": 2,
+     "gone": 2
+    },
+    "C26": {
+     "groups": 2,
+     "reproducing": 2,
+     "gone": 0
+    },
+    "C27": {
+     "groups": 1,
+     "reproducing": 1,
+     "gone": 0
+    },
+    "C28": {
+     "groups": 1,
+     "reproducing": 0,
+     "gone": 1
+    },
+    "C29": {
+     "groups": 2,
+     "reproducing": 2,
+     "gone": 0
+    },
+    "C30": {
+     "groups": 1,
+     "reproducing": 1,
+     "gone": 0
+    },
+    "C31": {
+     "groups": 1,
+     "reproducing": 0,
+     "gone": 1
+    },
+    "C32": {
+     "groups": 1,
+     "reproducing": 1,
+     "gone": 0
+    },
+    "C33": {
+     "groups": 1,
+     "reproducing": 1,
+     "gone": 0
+    },
+    "C34": {
+     "groups": 2,
+     "reproducing": 2,
+     "gone": 0
+    },
+    "C35": {
+     "groups": 1,
+     "reproducing": 1,
+     "gone": 0
+    }
+   },
+   "date": "2026-11-18",
+   "releases": {
+    "gopls": "v0.24.0",
+    "pyright": "1.1.414",
+    "rust-analyzer": "2026-11-16",
+    "ts6": "6.0.3+tsls6.1.0",
+    "ts7": "7.0.2"
+   },
+   "relations": {
+    "groups": 82,
+    "causes": 32,
+    "causes_reproduced": 30,
+    "causes_reproduced_all": 30,
+    "causes_not_reproduced": 2,
+    "causes_not_reproduced_list": "C28, C31"
+   },
+   "upstream_fixed": {
+    "total": 3,
+    "only_unreleased": 2,
+    "only_unreleased_list": "C6, C7",
+    "in_part": 1,
+    "in_part_list": "C5",
+    "gone_in_release": 0,
+    "gone_in_release_list": "none"
+   }
+  },
+  "lifecycle": {
+   "older_than_year": 21,
+   "causes": 33,
+   "age_months": {
+    "C1": 20.8,
+    "C2": 20.8,
+    "C3": 12.9,
+    "C4": 2.5,
+    "C5": 12.9,
+    "C6": 18.8,
+    "C7": 12.9,
+    "C8": 5.5,
+    "C9": 12.9,
+    "C10": 0.7,
+    "C11": 20.8,
+    "C12": 1.7,
+    "C13": 24.5,
+    "C14": 24.5,
+    "C15": 11.3,
+    "C16": 12.9,
+    "C17": 23.3,
+    "C18": 19.8,
+    "C19": 23.3,
+    "C20": 23.3,
+    "C21": 4.8,
+    "C22": 23.3,
+    "C25": 0.0,
+    "C26": 17.5,
+    "C27": 23.5,
+    "C28": 23.5,
+    "C29": 5.5,
+    "C30": 0.0,
+    "C31": null,
+    "C32": 0.0,
+    "C33": 0.0,
+    "C34": 20.8,
+    "C35": 20.8
+   },
+   "oldest": {
+    "C1": "5.5.4+tsls4.3.3",
+    "C2": "5.5.4+tsls4.3.3",
+    "C3": "v0.19.0",
+    "C4": "2026-07-06",
+    "C5": "v0.19.0",
+    "C6": "v0.17.0",
+    "C7": "v0.19.0",
+    "C8": "2026-04-06",
+    "C9": "v0.19.0",
+    "C10": "7.0.1-rc",
+    "C11": "5.5.4+tsls4.3.3",
+    "C12": "v0.22.0",
+    "C13": "v0.16.0",
+    "C14": "v0.16.0",
+    "C15": "v0.20.0",
+    "C16": "v0.19.0",
+    "C17": "1.1.383",
+    "C18": "1.1.392",
+    "C19": "1.1.383",
+    "C20": "1.1.383",
+    "C21": "1.1.409",
+    "C22": "1.1.383",
+    "C25": "2026-09-21",
+    "C26": "2025-04-07",
+    "C27": "2024-10-07",
+    "C28": "2024-10-07",
+    "C29": "2026-04-06",
+    "C30": "6.0.3+tsls5.1.3",
+    "C31": null,
+    "C32": "6.0.3+tsls5.1.3",
+    "C33": "6.0.3+tsls5.1.3",
+    "C34": "5.5.4+tsls4.3.3",
+    "C35": "5.5.4+tsls4.3.3"
+   },
+   "relations": {
+    "causes": 32,
+    "older_than_year": 20
+   }
+  },
+  "persistence": {
+   "groups": 40,
+   "causes": 13,
+   "by_wait": {
+    "0": 37,
+    "5": 36,
+    "30": 36,
+    "60": 37
+   },
+   "reproduced_without_wait": 37,
+   "still_after_longest": 39,
+   "never_after_longest": 1,
+   "retried_groups": 3,
+   "retry_replays": 6,
+   "longest_wait_s": 60,
+   "gone_causes": "C2",
+   "gone_last_seen_s": 30
+  }
+ },
+ "agree": {
+  "c1": {
+   "groups": 106,
+   "three_class": {
+    "kappa": 0.66312007738013,
+    "ci_low": 0.5444935886667235,
+    "ci_high": 0.7817465660935365,
+    "agree": 83,
+    "n": 106,
+    "agreement_pct": 78.3
+   },
+   "bug_or_not": {
+    "kappa": 0.6320947325438954,
+    "ci_low": 0.47613191348176614,
+    "ci_high": 0.7880575516060246,
+    "agree": 89,
+    "n": 106,
+    "agreement_pct": 83.96
+   },
+   "unsure": 5
+  },
+  "c2": {
+   "groups": 121,
+   "three_class": {
+    "kappa": 0.9348551738989986,
+    "ci_low": 0.8791396150832939,
+    "ci_high": 0.9905707327147034,
+    "agree": 116,
+    "n": 121,
+    "agreement_pct": 95.87
+   },
+   "bug_or_not": {
+    "kappa": 0.9490526315789473,
+    "ci_low": 0.8921944231864402,
+    "ci_high": 1.0,
+    "agree": 118,
+    "n": 121,
+    "agreement_pct": 97.52
+   },
+   "unsure": 6
+  },
+  "signatures": {
+   "all": {
+    "n": 77,
+    "three_class": {
+     "kappa": 0.7897815912636504,
+     "ci_low": 0.6488432619082206,
+     "ci_high": 0.9307199206190803,
+     "agree": 70,
+     "n": 77,
+     "agreement_pct": 90.91
+    },
+    "detected_or_not": {
+     "kappa": 0.7764413106594773,
+     "ci_low": 0.6225333785600684,
+     "ci_high": 0.9303492427588862,
+     "agree": 70,
+     "n": 77,
+     "agreement_pct": 90.91
+    },
+    "bugs": {
+     "author_detected": 33,
+     "rater2_detected": 31,
+     "kappa": 0.8266666666666665,
+     "ci_low": 0.5962257160801716,
+     "ci_high": 1.0,
+     "agree": 37,
+     "n": 39,
+     "agreement_pct": 94.87
+    }
+   },
+   "without_practice": {
+    "n": 62,
+    "excluded_signatures": 15,
+    "excluded_cases": 3,
+    "three_class": {
+     "kappa": 0.7546174142480212,
+     "ci_low": 0.5775876183113957,
+     "ci_high": 0.9316472101846467,
+     "agree": 56,
+     "n": 62,
+     "agreement_pct": 90.32
+    },
+    "detected_or_not": {
+     "kappa": 0.7394957983193279,
+     "ci_low": 0.5482352611304379,
+     "ci_high": 0.9307563355082179,
+     "agree": 56,
+     "n": 62,
+     "agreement_pct": 90.32
+    },
+    "bugs": {
+     "author_detected": 30,
+     "rater2_detected": 28,
+     "kappa": 0.8235294117647058,
+     "ci_low": 0.5895790457615293,
+     "ci_high": 1.0,
+     "agree": 34,
+     "n": 36,
+     "agreement_pct": 94.44
+    }
+   },
+   "unsure": 4
+  },
+  "discussion": {
+   "items": 35,
+   "by_batch": {
+    "c1": 23,
+    "c2": 5,
+    "signatures": 7
+   },
+   "followed": {
+    "author": 17,
+    "rater2": 18,
+    "both": 0
+   },
+   "followed_by_batch": {
+    "c1": {
+     "author": 12,
+     "rater2": 11,
+     "both": 0
+    },
+    "c2": {
+     "author": 3,
+     "rater2": 2,
+     "both": 0
+    },
+    "signatures": {
+     "author": 2,
+     "rater2": 5,
+     "both": 0
+    }
+   },
+   "unresolved": 0,
+   "unresolved_by_batch": {
+    "c1": 0,
+    "c2": 0,
+    "signatures": 0
+   },
+   "changed": {
+    "c1_bug_groups": {
+     "author": 29,
+     "rater2": 38,
+     "final": 34
+    },
+    "c1_groups_changed_from_author": 9,
+    "c2_bug_groups": {
+     "author": 49,
+     "rater2": 52,
+     "final": 49
+    },
+    "c2_groups_changed_from_author": 2,
+    "bug_groups": {
+     "author": 78,
+     "rater2": 90,
+     "final": 83
+    },
+    "signatures_yes": {
+     "author": 59,
+     "rater2": 52,
+     "final": 54
+    },
+    "signatures_changed_from_author": 5,
+    "detected": {
+     "author": 33,
+     "rater2": 31,
+     "final": 32
+    }
+   }
+  }
+ },
+ "release": {
+  "newest": {
+   "groups": 36,
+   "reproduced_all": 25,
+   "reproduced_some": 6,
+   "not_reproduced": 5,
+   "not_judged": 0,
+   "errors": 0,
+   "causes_partly_gone": 1,
+   "causes_partly_gone_list": "C5",
+   "causes": 15,
+   "causes_reproduced": 15,
+   "causes_reproduced_all": 15,
+   "causes_not_reproduced": 0,
+   "causes_not_reproduced_list": "none",
+   "causes_reproduced_list": "C1, C2, C3, C4, C5, C6, C7, C8, C9, C10, C11, C12, C25, C26, C27",
+   "by_cause": {
+    "C1": {
+     "groups": 13,
+     "reproducing": 13,
+     "gone": 0
+    },
+    "C2": {
+     "groups": 1,
+     "reproducing": 1,
+     "gone": 0
+    },
+    "C3": {
+     "groups": 1,
+     "reproducing": 1,
+     "gone": 0
+    },
+    "C4": {
+     "groups": 1,
+     "reproducing": 1,
+     "gone": 0
+    },
+    "C5": {
+     "groups": 5,
+     "reproducing": 2,
+     "gone": 3
+    },
+    "C6": {
+     "groups": 2,
+     "reproducing": 2,
+     "gone": 0
+    },
+    "C7": {
+     "groups": 1,
+     "reproducing": 1,
+     "gone": 0
+    },
+    "C8": {
+     "groups": 2,
+     "reproducing": 2,
+     "gone": 0
+    },
+    "C9": {
+     "groups": 1,
+     "reproducing": 1,
+     "gone": 0
+    },
+    "C10": {
+     "groups": 1,
+     "reproducing": 1,
+     "gone": 0
+    },
+    "C11": {
+     "groups": 1,
+     "reproducing": 1,
+     "gone": 0
+    },
+    "C12": {
+     "groups": 1,
+     "reproducing": 1,
+     "gone": 0
+    },
+    "C25": {
+     "groups": 2,
+     "reproducing": 2,
+     "gone": 0
+    },
+    "C26": {
+     "groups": 1,
+     "reproducing": 1,
+     "gone": 0
+    },
+    "C27": {
+     "groups": 1,
+     "reproducing": 1,
+     "gone": 0
+    }
+   },
+   "date": "2026-11-18",
+   "releases": {
+    "gopls": "v0.24.0",
+    "rust-analyzer": "2026-11-16",
+    "ts6": "6.0.3+tsls6.1.0",
+    "ts7": "7.0.2"
+   },
+   "upstream_fixed": {
+    "total": 3,
+    "only_unreleased": 2,
+    "only_unreleased_list": "C6, C7",
+    "in_part": 1,
+    "in_part_list": "C5",
+    "gone_in_release": 0,
+    "gone_in_release_list": "none"
+   }
+  },
+  "first_newest": {
+   "groups": 29,
+   "reproduced_all": 26,
+   "reproduced_some": 3,
+   "not_reproduced": 0,
+   "not_judged": 0,
+   "errors": 0,
+   "causes_partly_gone": 0,
+   "causes_partly_gone_list": "none",
+   "causes": 11,
+   "causes_reproduced": 11,
+   "causes_reproduced_all": 11,
+   "causes_not_reproduced": 0,
+   "causes_not_reproduced_list": "none",
+   "causes_reproduced_list": "C1, C2, C3, C4, C5, C6, C7, C8, C9, C10, C11",
+   "by_cause": {
+    "C1": {
+     "groups": 13,
+     "reproducing": 13,
+     "gone": 0
+    },
+    "C2": {
+     "groups": 1,
+     "reproducing": 1,
+     "gone": 0
+    },
+    "C3": {
+     "groups": 1,
+     "reproducing": 1,
+     "gone": 0
+    },
+    "C4": {
+     "groups": 1,
+     "reproducing": 1,
+     "gone": 0
+    },
+    "C5": {
+     "groups": 5,
+     "reproducing": 5,
+     "gone": 0
+    },
+    "C6": {
+     "groups": 2,
+     "reproducing": 2,
+     "gone": 0
+    },
+    "C7": {
+     "groups": 1,
+     "reproducing": 1,
+     "gone": 0
+    },
+    "C8": {
+     "groups": 2,
+     "reproducing": 2,
+     "gone": 0
+    },
+    "C9": {
+     "groups": 1,
+     "reproducing": 1,
+     "gone": 0
+    },
+    "C10": {
+     "groups": 1,
+     "reproducing": 1,
+     "gone": 0
+    },
+    "C11": {
+     "groups": 1,
+     "reproducing": 1,
+     "gone": 0
+    }
+   },
+   "date": "2026-09-28",
+   "releases": {
+    "gopls": "v0.23.0",
+    "rust-analyzer": "2026-09-28",
+    "ts6": "6.0.3+tsls6.0.1",
+    "ts7": "7.0.2"
+   }
+  },
+  "head": {
+   "groups": 10,
+   "reproduced_all": 4,
+   "reproduced_some": 0,
+   "not_reproduced": 6,
+   "not_judged": 0,
+   "errors": 0,
+   "causes_partly_gone": 1,
+   "causes_partly_gone_list": "C5",
+   "causes": 5,
+   "causes_reproduced": 3,
+   "causes_reproduced_all": 3,
+   "causes_not_reproduced": 2,
+   "causes_not_reproduced_list": "C6, C7",
+   "causes_reproduced_list": "C3, C5, C9",
+   "by_cause": {
+    "C3": {
+     "groups": 1,
+     "reproducing": 1,
+     "gone": 0
+    },
+    "C5": {
+     "groups": 5,
+     "reproducing": 2,
+     "gone": 3
+    },
+    "C6": {
+     "groups": 2,
+     "reproducing": 0,
+     "gone": 2
+    },
+    "C7": {
+     "groups": 1,
+     "reproducing": 0,
+     "gone": 1
+    },
+    "C9": {
+     "groups": 1,
+     "reproducing": 1,
+     "gone": 0
+    }
+   },
+   "date": "2026-11-18",
+   "releases": {
+    "gopls": "v0.0.0-20261118023053-8967817d2000"
+   },
+   "version": "v0.0.0-20261118023053-8967817d2000",
+   "commit": "8967817d2000",
+   "commit_date": "2026-11-18"
+  },
+  "lifecycle": {
+   "older_than_year": 10,
+   "causes": 17,
+   "age_months": {
+    "C1": 20.8,
+    "C2": 20.8,
+    "C3": 12.9,
+    "C4": 2.5,
+    "C5": 12.9,
+    "C6": 18.8,
+    "C7": 12.9,
+    "C8": 5.5,
+    "C9": 12.9,
+    "C10": 0.7,
+    "C11": 20.8,
+    "C12": 1.7,
+    "C23": null,
+    "C24": null,
+    "C25": 0.0,
+    "C26": 17.5,
+    "C27": 23.5
+   },
+   "oldest": {
+    "C1": "5.5.4+tsls4.3.3",
+    "C2": "5.5.4+tsls4.3.3",
+    "C3": "v0.19.0",
+    "C4": "2026-07-06",
+    "C5": "v0.19.0",
+    "C6": "v0.17.0",
+    "C7": "v0.19.0",
+    "C8": "2026-04-06",
+    "C9": "v0.19.0",
+    "C10": "7.0.1-rc",
+    "C11": "5.5.4+tsls4.3.3",
+    "C12": "v0.22.0",
+    "C23": null,
+    "C24": null,
+    "C25": "2026-09-21",
+    "C26": "2025-04-07",
+    "C27": "2024-10-07"
+   }
+  },
+  "over_time": {
+   "R0": {
+    "hours": 3.7,
+    "bugs": 0,
+    "bug_groups": 0,
+    "groups": 2,
+    "last_bug_hours": null
+   },
+   "R1": {
+    "hours": 35.9,
+    "bugs": 4,
+    "bug_groups": 16,
+    "groups": 29,
+    "last_bug_hours": 29.9
+   },
+   "R2": {
+    "hours": 4.5,
+    "bugs": 2,
+    "bug_groups": 2,
+    "groups": 2,
+    "last_bug_hours": 2.5
+   },
+   "R3": {
+    "hours": 15.8,
+    "bugs": 1,
+    "bug_groups": 2,
+    "groups": 24,
+    "last_bug_hours": 2.4
+   },
+   "R4": {
+    "hours": 8.6,
+    "bugs": 4,
+    "bug_groups": 9,
+    "groups": 27,
+    "last_bug_hours": 4.6
+   },
+   "R5": {
+    "hours": 12.7,
+    "bugs": 0,
+    "bug_groups": 0,
+    "groups": 9,
+    "last_bug_hours": null
+   },
+   "R6": {
+    "hours": 2.9,
+    "bugs": 0,
+    "bug_groups": 0,
+    "groups": 13,
+    "last_bug_hours": null
+   }
+  },
+  "upstream": {
+   "reported": 10,
+   "responded": 10,
+   "by_status": {
+    "fixed": 3,
+    "fix-planned": 1,
+    "confirmed": 1,
+    "investigating": 1,
+    "info-requested": 1,
+    "cause-confirmed": 2,
+    "disputed": 1,
+    "no-reply": 0,
+    "not-reported": 1
+   },
+   "position_taken": 8,
+   "treated_as_defect": 7,
+   "fixed_or_confirmed": 5,
+   "planned_or_confirmed": 2,
+   "as_of": "2026-11-18"
+  },
+  "follow_up": {
+   "c1_client_watcher": {
+    "groups": 7,
+    "reproduced_any": 0,
+    "replays": 21
+   },
+   "c2_syntax_server_never": {
+    "reproduced": 3,
+    "replays": 3
+   },
+   "c11_minimal": {
+    "ts6_inserts_undefined": true,
+    "ts7_quick_fixes": 0
+   },
+   "c8_vscode": {
+    "vscode": "1.140.0",
+    "extension": "0.3.3073",
+    "server_date": "2026-10-04",
+    "runs": 2,
+    "runs_same_answer": 2,
+    "tested_locations": 10,
+    "reference_locations": 1
+   }
+  }
+ },
+ "rater2": {
+  "groups": 106,
+  "rater_bugs": 38,
+  "three_class": {
+   "kappa": 0.66312007738013,
+   "ci_low": 0.5444935886667235,
+   "ci_high": 0.7817465660935365,
+   "agree": 83,
+   "n": 106,
+   "agreement_pct": 78.3
+  },
+  "bug_or_not": {
+   "kappa": 0.6320947325438954,
+   "ci_low": 0.47613191348176614,
+   "ci_high": 0.7880575516060246,
+   "agree": 89,
+   "n": 106,
+   "agreement_pct": 83.96
+  },
+  "unsure": 5,
+  "unsure_as_legitimate": {
+   "three_class_kappa": 0.6267605633802819,
+   "bug_kappa": 0.643247791333614
+  },
+  "r1": {
+   "groups": 29,
+   "agree": 26,
+   "kappa_bug": 0.929782082324455
+  },
+  "by_relation": {
+   "R0": {
+    "n": 2,
+    "agree": 0
+   },
+   "R1": {
+    "n": 29,
+    "agree": 26
+   },
+   "R2": {
+    "n": 2,
+    "agree": 2
+   },
+   "R3": {
+    "n": 24,
+    "agree": 18
+   },
+   "R4": {
+    "n": 27,
+    "agree": 21
+   },
+   "R5": {
+    "n": 9,
+    "agree": 5
+   },
+   "R6": {
+    "n": 13,
+    "agree": 11
+   }
+  },
+  "five_relations": {
+   "groups": 91,
+   "three_class": {
+    "kappa": 0.6832172957127155,
+    "ci_low": 0.5584295995253206,
+    "ci_high": 0.8080049919001104,
+    "agree": 72,
+    "n": 91
+   },
+   "bug_or_not": {
+    "kappa": 0.6854559957458124,
+    "ci_low": 0.52903785488265,
+    "ci_high": 0.8418741366089748,
+    "agree": 78,
+    "n": 91
+   }
+  },
+  "both_bug_groups": 25,
+  "causes_with_both_bug": 11,
+  "differ": 23,
+  "differ_on_bug": 17,
+  "rater_bug_author_not": {
+   "total": 13,
+   "by_relation": {
+    "R0": 2,
+    "R1": 1,
+    "R3": 6,
+    "R4": 2,
+    "R6": 2
+   },
+   "by_server": {
+    "gopls": 1,
+    "rust-analyzer": 9,
+    "ts6": 1,
+    "ts7": 2
+   }
+  },
+  "author_bug_rater_not": {
+   "total": 4,
+   "causes": "C5",
+   "by_rater_verdict": {
+    "tool-artifact": 4
+   }
+  }
+ }
+}

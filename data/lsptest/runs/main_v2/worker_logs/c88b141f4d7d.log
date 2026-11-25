@@ -1,0 +1,9 @@
+2026-11-18 09:41:36,539 INFO campaign_run run c88b141f4d7d: r1_history on ts6 6.0.3, solidjs/solid@4b62bc29e04b seed 1 race200, targets ['examples/rendering/shared/src/components/Reveal.tsx', 'packages/web/test/hydration/spread-innerhtml.spec.tsx', 'packages/web/test/latest-shadow-owned-write-issue-3378.spec.tsx']
+2026-11-18 09:48:45,995 INFO campaign_run run c88b141f4d7d: 2 candidate(s) in 430s; confirming
+2026-11-18 09:49:57,997 INFO flake replay 1/3 of ts6|r1_history|codeAction:key-lost: settled=True control_stable=True reproduced=True (72.0s)
+2026-11-18 09:51:07,447 INFO flake replay 2/3 of ts6|r1_history|codeAction:key-lost: settled=True control_stable=True reproduced=True (69.4s)
+2026-11-18 09:52:17,538 INFO flake replay 3/3 of ts6|r1_history|codeAction:key-lost: settled=True control_stable=True reproduced=True (70.1s)
+2026-11-18 09:53:40,453 INFO flake replay 1/3 of ts6|r1_history|diagnostics:moved:2875: settled=True control_stable=True reproduced=True (82.9s)
+2026-11-18 09:54:48,538 INFO flake replay 2/3 of ts6|r1_history|diagnostics:moved:2875: settled=True control_stable=True reproduced=True (68.1s)
+2026-11-18 09:56:01,164 INFO flake replay 3/3 of ts6|r1_history|diagnostics:moved:2875: settled=True control_stable=True reproduced=True (72.6s)
+2026-11-18 09:56:02,513 INFO campaign_run run c88b141f4d7d finished: ok, 2 confirmed of 2 candidate(s), 866s

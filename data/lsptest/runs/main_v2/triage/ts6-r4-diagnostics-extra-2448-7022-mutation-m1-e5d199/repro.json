@@ -1,0 +1,290 @@
+{
+ "format": 1,
+ "campaign": "main_v2",
+ "vid": "d76274109238-v00",
+ "run_id": "d76274109238",
+ "oracle": "r4_edits",
+ "server": {
+  "kind": "ts6",
+  "version": "6.0.3"
+ },
+ "project": {
+  "name": "pear-devs/pear-desktop@3ff0a86231fe",
+  "source": "corpus",
+  "ref": "temp/corpus/pear-devs__pear-desktop@3ff0a86231fe",
+  "commit": "3ff0a86231fed97b1a4365de0521fc96794c3f67",
+  "language": "typescript"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "src/plugins/album-actions/templates/undislike-button.tsx",
+    "positions": [],
+    "ends": [],
+    "names": []
+   },
+   {
+    "path": "src/plugins/downloader/main/index.ts",
+    "positions": [
+     [
+      724,
+      17
+     ]
+    ],
+    "ends": [],
+    "names": [
+     ""
+    ]
+   },
+   {
+    "path": "src/plugins/equalizer/index.ts",
+    "positions": [],
+    "ends": [],
+    "names": []
+   }
+  ]
+ },
+ "key": {
+  "method": "diagnostics",
+  "path": "src/plugins/downloader/main/index.ts",
+  "line": 724,
+  "character": 17,
+  "extra": "M1:quickfix-errors:Change spelling to 'folder'"
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "src/plugins/downloader/main/index.ts"
+  },
+  {
+   "kind": "change",
+   "path": "src/plugins/downloader/main/index.ts",
+   "start": [
+    35,
+    2
+   ],
+   "end": [
+    36,
+    2
+   ]
+  },
+  {
+   "kind": "change",
+   "path": "src/plugins/downloader/main/index.ts",
+   "start": [
+    724,
+    17
+   ],
+   "end": [
+    724,
+    21
+   ],
+   "text": "f"
+  }
+ ],
+ "case": {
+  "action_kind": "quickfix",
+  "base_errors": 0,
+  "check": "errors",
+  "diag": {
+   "code": 2552,
+   "message": "Cannot find name 'getFolder'. Did you mean 'folder'?",
+   "range": {
+    "end": {
+     "character": 26,
+     "line": 724
+    },
+    "start": {
+     "character": 17,
+     "line": 724
+    }
+   },
+   "severity": 1
+  },
+  "fix_introduced_errors": [
+   {
+    "code": 7022,
+    "message": "'folder' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.",
+    "path": "src/plugins/downloader/main/index.ts",
+    "range": {
+     "end": {
+      "character": 14,
+      "line": 724
+     },
+     "start": {
+      "character": 8,
+      "line": 724
+     }
+    },
+    "severity": 1
+   },
+   {
+    "code": 2448,
+    "message": "Block-scoped variable 'folder' used before its declaration.",
+    "path": "src/plugins/downloader/main/index.ts",
+    "range": {
+     "end": {
+      "character": 23,
+      "line": 724
+     },
+     "start": {
+      "character": 17,
+      "line": 724
+     }
+    },
+    "severity": 1
+   }
+  ],
+  "fix_ops": [
+   {
+    "end": [
+     724,
+     21
+    ],
+    "kind": "change",
+    "path": "src/plugins/downloader/main/index.ts",
+    "start": [
+     724,
+     17
+    ],
+    "text": "f"
+   }
+  ],
+  "kind": "mutation",
+  "mutation": {
+   "end": [
+    36,
+    2
+   ],
+   "id": "M1",
+   "offsets": [
+    848,
+    861
+   ],
+   "sha": "04e681ab8ec14da7",
+   "start": [
+    35,
+    2
+   ],
+   "text": "",
+   "what": "remove 'getFolder' from an import"
+  },
+  "n_fix_ops": 1,
+  "path": "src/plugins/downloader/main/index.ts",
+  "post_errors": 2,
+  "title": "Change spelling to 'folder'",
+  "via": "edit"
+ },
+ "shape": "diagnostics:extra:2448,7022",
+ "signature": "ts6|r4_edits|diagnostics:extra:2448,7022",
+ "expected": [],
+ "actual": [
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "2448",
+   "typescript",
+   "Block-scoped variable 'folder' used before its declaration."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7022",
+   "typescript",
+   "'folder' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer."
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "quick fix \"Change spelling to 'folder'\" for 2552 at src/plugins/downloader/main/index.ts:725:18 raises the error count in the edited files from 0 to 2 (seeded by M1: remove 'getFolder' from an import; errors before the mutation 0, after the fix 2); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 441s",
+ "violation": {
+  "oracle": "r4_edits",
+  "server": "ts6-6.0.3",
+  "project": "pear-devs/pear-desktop@3ff0a86231fe",
+  "key": {
+   "method": "diagnostics",
+   "path": "src/plugins/downloader/main/index.ts",
+   "line": 724,
+   "character": 17,
+   "extra": "M1:quickfix-errors:Change spelling to 'folder'"
+  },
+  "expected": [],
+  "actual": [
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2448",
+    "typescript",
+    "Block-scoped variable 'folder' used before its declaration."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7022",
+    "typescript",
+    "'folder' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer."
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "src/plugins/downloader/main/index.ts"
+   },
+   {
+    "kind": "change",
+    "path": "src/plugins/downloader/main/index.ts",
+    "start": [
+     35,
+     2
+    ],
+    "end": [
+     36,
+     2
+    ]
+   },
+   {
+    "kind": "change",
+    "path": "src/plugins/downloader/main/index.ts",
+    "start": [
+     724,
+     17
+    ],
+    "end": [
+     724,
+     21
+    ],
+    "text": "f"
+   }
+  ],
+  "detail": "{\"case\": {\"action_kind\": \"quickfix\", \"base_errors\": 0, \"check\": \"errors\", \"diag\": {\"code\": 2552, \"message\": \"Cannot find name 'getFolder'. Did you mean 'folder'?\", \"range\": {\"end\": {\"character\": 26, \"line\": 724}, \"start\": {\"character\": 17, \"line\": 724}}, \"severity\": 1}, \"fix_introduced_errors\": [{\"code\": 7022, \"message\": \"'folder' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.\", \"path\": \"src/plugins/downloader/main/index.ts\", \"range\": {\"end\": {\"character\": 14, \"line\": 724}, \"start\": {\"character\": 8, \"line\": 724}}, \"severity\": 1}, {\"code\": 2448, \"message\": \"Block-scoped variable 'folder' used before its declaration.\", \"path\": \"src/plugins/downloader/main/index.ts\", \"range\": {\"end\": {\"character\": 23, \"line\": 724}, \"start\": {\"character\": 17, \"line\": 724}}, \"severity\": 1}], \"fix_ops\": [{\"end\": [724, 21], \"kind\": \"change\", \"path\": \"src/plugins/downloader/main/index.ts\", \"start\": [724, 17], \"text\": \"f\"}], \"kind\": \"mutation\", \"mutation\": {\"end\": [36, 2], \"id\": \"M1\", \"offsets\": [848, 861], \"sha\": \"04e681ab8ec14da7\", \"start\": [35, 2], \"text\": \"\", \"what\": \"remove 'getFolder' from an import\"}, \"n_fix_ops\": 1, \"path\": \"src/plugins/downloader/main/index.ts\", \"post_errors\": 2, \"title\": \"Change spelling to 'folder'\", \"via\": \"edit\"}, \"note\": \"quick fix \\\"Change spelling to 'folder'\\\" for 2552 at src/plugins/downloader/main/index.ts:725:18 raises the error count in the edited files from 0 to 2 (seeded by M1: remove 'getFolder' from an import; errors before the mutation 0, after the fix 2); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 441s\", \"shape\": \"diagnostics:extra:2448,7022\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "ts6|r4_edits|diagnostics:extra:2448,7022",
+  "run_id": "d76274109238"
+ },
+ "replay_logs": [
+  "logs/ts6-6.0.3-tre5d199-r4-replay-baseline-20261119-031326-0018d7.jsonl.gz",
+  "logs/ts6-6.0.3-tre5d199-r4-replay-case-20261119-031305-8ced8f.jsonl.gz",
+  "logs/ts6-6.0.3-tre5d199-r4-replay-control-20261119-031344-70ea24.jsonl.gz"
+ ],
+ "project_files": {},
+ "group": "ts6-r4-diagnostics-extra-2448-7022-mutation-m1-e5d199",
+ "reduced": true
+}

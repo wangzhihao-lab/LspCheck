@@ -1,0 +1,94 @@
+{
+ "vid": "43cf47dfbeec-v01",
+ "ops_before": 15,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 10,
+ "cache_hits": 9,
+ "reduce_seconds": 250.19,
+ "budget_exhausted": false,
+ "probe_log": [
+  [
+   10,
+   true
+  ],
+  [
+   7,
+   false
+  ],
+  [
+   5,
+   false
+  ],
+  [
+   9,
+   true
+  ],
+  [
+   7,
+   true
+  ],
+  [
+   6,
+   false
+  ],
+  [
+   6,
+   true
+  ],
+  [
+   5,
+   false
+  ],
+  [
+   5,
+   false
+  ],
+  [
+   5,
+   false
+  ]
+ ],
+ "logs": [
+  "gopls-v0.23.0-tr547744-replay-baseline-20261118-215850-f70b6e.jsonl.gz",
+  "gopls-v0.23.0-tr547744-replay-control-20261118-215850-47a4ec.jsonl.gz",
+  "gopls-v0.23.0-tr547744-replay-history-20261118-215854-90d8bc.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [
+   [
+    "Browse documentation for package gorm",
+    "source.doc"
+   ],
+   [
+    "Browse free symbols",
+    "source.freesymbols"
+   ],
+   [
+    "Browse gopls feature documentation",
+    "gopls.doc.features"
+   ],
+   [
+    "Convert to raw string literal",
+    "refactor.rewrite.changeQuote"
+   ],
+   [
+    "Show compiler optimization details for \"tests\"",
+    "source.toggleCompilerOptDetails"
+   ],
+   [
+    "Split package \"tests_test\"",
+    "source.splitPackage"
+   ],
+   [
+    "go get package gorm.io/gorm",
+    "quickfix"
+   ]
+  ],
+  "actual": [
+   "missing-key"
+  ]
+ },
+ "ops_after": 6,
+ "total_seconds": 383.2
+}

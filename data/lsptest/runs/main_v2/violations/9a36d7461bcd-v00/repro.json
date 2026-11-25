@@ -1,0 +1,618 @@
+{
+ "format": 1,
+ "campaign": "main_v2",
+ "vid": "9a36d7461bcd-v00",
+ "run_id": "9a36d7461bcd",
+ "oracle": "r5_transforms",
+ "server": {
+  "kind": "gopls",
+  "version": "v0.23.0"
+ },
+ "project": {
+  "name": "abiosoft/colima@bba803d3d6fa",
+  "source": "corpus",
+  "ref": "temp/corpus/abiosoft__colima@bba803d3d6fa",
+  "commit": "bba803d3d6fa9372a60f747e5dad4c8e80db7cde",
+  "language": "go"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 6,
+  "targets": [
+   {
+    "path": "cmd/ssh.go",
+    "positions": [
+     [
+      10,
+      4
+     ],
+     [
+      10,
+      15
+     ],
+     [
+      11,
+      3
+     ],
+     [
+      18,
+      13
+     ],
+     [
+      18,
+      19
+     ],
+     [
+      18,
+      26
+     ],
+     [
+      18,
+      34
+     ],
+     [
+      18,
+      42
+     ],
+     [
+      18,
+      49
+     ],
+     [
+      23,
+      7
+     ],
+     [
+      24,
+      3
+     ],
+     [
+      24,
+      17
+     ]
+    ],
+    "ends": [
+     [
+      10,
+      8
+     ],
+     [
+      10,
+      18
+     ],
+     [
+      11,
+      6
+     ],
+     [
+      18,
+      15
+     ],
+     [
+      18,
+      22
+     ],
+     [
+      18,
+      30
+     ],
+     [
+      18,
+      36
+     ],
+     [
+      18,
+      45
+     ],
+     [
+      18,
+      52
+     ],
+     [
+      23,
+      9
+     ],
+     [
+      24,
+      5
+     ],
+     [
+      24,
+      22
+     ]
+    ],
+    "names": [
+     "Aliases",
+     "string",
+     "Short",
+     "cmd",
+     "cobra",
+     "Command",
+     "args",
+     "string",
+     "error",
+     "init",
+     "root",
+     "AddCommand"
+    ]
+   },
+   {
+    "path": "environment/container/kubernetes/kubernetes.go",
+    "positions": [
+     [
+      26,
+      83
+     ],
+     [
+      43,
+      3
+     ],
+     [
+      133,
+      21
+     ],
+     [
+      133,
+      25
+     ],
+     [
+      139,
+      19
+     ],
+     [
+      145,
+      12
+     ],
+     [
+      148,
+      48
+     ],
+     [
+      196,
+      9
+     ],
+     [
+      207,
+      16
+     ],
+     [
+      232,
+      8
+     ],
+     [
+      233,
+      19
+     ],
+     [
+      263,
+      12
+     ]
+    ],
+    "ends": [
+     [
+      26,
+      89
+     ],
+     [
+      43,
+      6
+     ],
+     [
+      133,
+      22
+     ],
+     [
+      133,
+      28
+     ],
+     [
+      139,
+      20
+     ],
+     [
+      145,
+      14
+     ],
+     [
+      148,
+      52
+     ],
+     [
+      196,
+      12
+     ],
+     [
+      207,
+      25
+     ],
+     [
+      232,
+      9
+     ],
+     [
+      233,
+      21
+     ],
+     [
+      263,
+      14
+     ]
+    ],
+    "names": [
+     "environment",
+     "guest",
+     "c",
+     "guest",
+     "c",
+     "Exec",
+     "Context",
+     "docker",
+     "kubernetesRuntime",
+     "c",
+     "Name",
+     "Exec"
+    ]
+   },
+   {
+    "path": "util/downloader/http.go",
+    "positions": [
+     [
+      20,
+      20
+     ],
+     [
+      81,
+      20
+     ],
+     [
+      105,
+      11
+     ],
+     [
+      118,
+      6
+     ],
+     [
+      120,
+      6
+     ],
+     [
+      128,
+      5
+     ],
+     [
+      137,
+      16
+     ],
+     [
+      145,
+      10
+     ],
+     [
+      182,
+      19
+     ],
+     [
+      231,
+      14
+     ],
+     [
+      257,
+      23
+     ],
+     [
+      303,
+      20
+     ]
+    ],
+    "ends": [
+     [
+      20,
+      23
+     ],
+     [
+      81,
+      26
+     ],
+     [
+      105,
+      14
+     ],
+     [
+      118,
+      8
+     ],
+     [
+      120,
+      8
+     ],
+     [
+      128,
+      7
+     ],
+     [
+      137,
+      22
+     ],
+     [
+      145,
+      12
+     ],
+     [
+      182,
+      21
+     ],
+     [
+      231,
+      15
+     ],
+     [
+      257,
+      33
+     ],
+     [
+      303,
+      22
+     ]
+    ],
+    "names": [
+     "Client",
+     "NetworkError",
+     "error",
+     "file",
+     "err",
+     "err",
+     "ExpectedETag",
+     "nil",
+     "nil",
+     "h",
+     "OptionClearOnFinish",
+     "bool"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "codeAction",
+  "path": "cmd/ssh.go",
+  "line": 10,
+  "character": 4,
+  "extra": "pos"
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "cmd/ssh.go"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/ssh.go",
+   "start": [
+    6,
+    0
+   ],
+   "end": [
+    6,
+    0
+   ],
+   "text": "\n\n\n"
+  }
+ ],
+ "case": {
+  "mapped_key": [
+   "codeAction",
+   "cmd/ssh.go",
+   13,
+   4,
+   "pos"
+  ],
+  "transform": {
+   "back": {
+    "col": 0,
+    "eof": [],
+    "line": -1,
+    "n": 0,
+    "path": "cmd/ssh.go",
+    "w": 0
+   },
+   "edits": [
+    [
+     6,
+     0,
+     6,
+     0,
+     "\n\n\n"
+    ]
+   ],
+   "kind": "T1",
+   "path": "cmd/ssh.go",
+   "shift": {
+    "col": 0,
+    "eof": [],
+    "line": 6,
+    "n": 3,
+    "path": "cmd/ssh.go",
+    "w": 0
+   }
+  }
+ },
+ "shape": "codeAction:extra",
+ "signature": "gopls|r5_transforms|codeAction:extra",
+ "expected": [
+  [
+   "Browse arm64 assembly for package initializer",
+   "source.assembly"
+  ],
+  [
+   "Browse documentation for package cmd",
+   "source.doc"
+  ],
+  [
+   "Browse gopls feature documentation",
+   "gopls.doc.features"
+  ],
+  [
+   "Fill cobra.Command",
+   "refactor.rewrite.fillStruct"
+  ],
+  [
+   "Join elements into one line",
+   "refactor.rewrite.joinLines"
+  ],
+  [
+   "Show compiler optimization details for \"cmd\"",
+   "source.toggleCompilerOptDetails"
+  ],
+  [
+   "Split package \"cmd\"",
+   "source.splitPackage"
+  ]
+ ],
+ "actual": [
+  [
+   "Browse arm64 assembly for package initializer",
+   "source.assembly"
+  ],
+  [
+   "Browse documentation for package cmd",
+   "source.doc"
+  ],
+  [
+   "Browse gopls feature documentation",
+   "gopls.doc.features"
+  ],
+  [
+   "Fill cobra.Command",
+   "refactor.rewrite.fillStruct"
+  ],
+  [
+   "Join elements into one line",
+   "refactor.rewrite.joinLines"
+  ],
+  [
+   "Organize Imports",
+   "source.organizeImports"
+  ],
+  [
+   "Show compiler optimization details for \"cmd\"",
+   "source.toggleCompilerOptDetails"
+  ],
+  [
+   "Split package \"cmd\"",
+   "source.splitPackage"
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "T1 cmd/ssh.go: 1 edit(s), first [6, 0, 6, 0]; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 41s",
+ "violation": {
+  "oracle": "r5_transforms",
+  "server": "gopls-v0.23.0",
+  "project": "abiosoft/colima@bba803d3d6fa",
+  "key": {
+   "method": "codeAction",
+   "path": "cmd/ssh.go",
+   "line": 10,
+   "character": 4,
+   "extra": "pos"
+  },
+  "expected": [
+   [
+    "Browse arm64 assembly for package initializer",
+    "source.assembly"
+   ],
+   [
+    "Browse documentation for package cmd",
+    "source.doc"
+   ],
+   [
+    "Browse gopls feature documentation",
+    "gopls.doc.features"
+   ],
+   [
+    "Fill cobra.Command",
+    "refactor.rewrite.fillStruct"
+   ],
+   [
+    "Join elements into one line",
+    "refactor.rewrite.joinLines"
+   ],
+   [
+    "Show compiler optimization details for \"cmd\"",
+    "source.toggleCompilerOptDetails"
+   ],
+   [
+    "Split package \"cmd\"",
+    "source.splitPackage"
+   ]
+  ],
+  "actual": [
+   [
+    "Browse arm64 assembly for package initializer",
+    "source.assembly"
+   ],
+   [
+    "Browse documentation for package cmd",
+    "source.doc"
+   ],
+   [
+    "Browse gopls feature documentation",
+    "gopls.doc.features"
+   ],
+   [
+    "Fill cobra.Command",
+    "refactor.rewrite.fillStruct"
+   ],
+   [
+    "Join elements into one line",
+    "refactor.rewrite.joinLines"
+   ],
+   [
+    "Organize Imports",
+    "source.organizeImports"
+   ],
+   [
+    "Show compiler optimization details for \"cmd\"",
+    "source.toggleCompilerOptDetails"
+   ],
+   [
+    "Split package \"cmd\"",
+    "source.splitPackage"
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "cmd/ssh.go"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/ssh.go",
+    "start": [
+     6,
+     0
+    ],
+    "end": [
+     6,
+     0
+    ],
+    "text": "\n\n\n"
+   }
+  ],
+  "detail": "{\"case\": {\"mapped_key\": [\"codeAction\", \"cmd/ssh.go\", 13, 4, \"pos\"], \"transform\": {\"back\": {\"col\": 0, \"eof\": [], \"line\": -1, \"n\": 0, \"path\": \"cmd/ssh.go\", \"w\": 0}, \"edits\": [[6, 0, 6, 0, \"\\n\\n\\n\"]], \"kind\": \"T1\", \"path\": \"cmd/ssh.go\", \"shift\": {\"col\": 0, \"eof\": [], \"line\": 6, \"n\": 3, \"path\": \"cmd/ssh.go\", \"w\": 0}}}, \"note\": \"T1 cmd/ssh.go: 1 edit(s), first [6, 0, 6, 0]; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 41s\", \"shape\": \"codeAction:extra\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "gopls|r5_transforms|codeAction:extra",
+  "run_id": "9a36d7461bcd"
+ },
+ "replay_logs": [
+  "logs/gopls-v0.23.0-9a36d7461bcd-r5-replay-baseline-20261118-004837-d0f3df.jsonl.gz",
+  "logs/gopls-v0.23.0-9a36d7461bcd-r5-replay-case-20261118-004847-5626f4.jsonl.gz",
+  "logs/gopls-v0.23.0-9a36d7461bcd-r5-replay-control-20261118-004842-280caa.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

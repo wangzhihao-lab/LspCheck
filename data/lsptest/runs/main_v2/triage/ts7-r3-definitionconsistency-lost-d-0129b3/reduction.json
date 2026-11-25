@@ -1,0 +1,85 @@
+{
+ "vid": "b5bcb0e49763-v01",
+ "ops_before": 0,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 0,
+ "cache_hits": 0,
+ "reduce_seconds": 0.0,
+ "budget_exhausted": false,
+ "probe_log": [],
+ "logs": [
+  "ts7-7.0.2-tr0129b3-r3-replay-baseline-20261118-214911-7b2242.jsonl.gz",
+  "ts7-7.0.2-tr0129b3-r3-replay-control-20261118-214921-fe3864.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [
+   [
+    "node_modules/@types/node/buffer.d.ts",
+    87,
+    18,
+    87,
+    24
+   ],
+   [
+    "node_modules/@types/node/compatibility/iterators.d.ts",
+    11,
+    18,
+    11,
+    24
+   ],
+   [
+    "node_modules/@types/node/events.d.ts",
+    57,
+    18,
+    57,
+    24
+   ],
+   [
+    "node_modules/@types/node/globals.d.ts",
+    74,
+    18,
+    74,
+    24
+   ],
+   [
+    "node_modules/@types/node/globals.typedarray.d.ts",
+    3,
+    14,
+    3,
+    20
+   ],
+   [
+    "node_modules/@types/node/module.d.ts",
+    574,
+    18,
+    574,
+    24
+   ],
+   [
+    "node_modules/@types/node/process.d.ts",
+    142,
+    18,
+    142,
+    24
+   ],
+   [
+    "node_modules/@types/node/stream.d.ts",
+    1737,
+    18,
+    1737,
+    24
+   ],
+   [
+    "node_modules/@types/node/timers.d.ts",
+    12,
+    18,
+    12,
+    24
+   ]
+  ],
+  "actual": []
+ },
+ "ops_after": 0,
+ "total_seconds": 83.1
+}

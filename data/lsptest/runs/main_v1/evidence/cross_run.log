@@ -1,0 +1,47 @@
+2026-09-27 06:49:01,343 INFO version_sweep group ts7-r1-references-extra-h6-574e94 (r1_history): ts7 7.0.2 -> ts6 6.0.3
+2026-09-27 06:50:00,884 INFO version_sweep group ts7-r1-references-missing-h9-2dd24a (r1_history): ts7 7.0.2 -> ts6 6.0.3
+ts7-r1-references-extra-h6-574e94: reproduced (3/3, 59.5s)
+ts7-r1-references-missing-h9-2dd24a: not-reproduced (0/3, 112.3s)
+sweep ts7-groups-on-ts6: 2 group(s); not-reproduced 1, reproduced 1; see data/lsptest/runs/main_v1/sweep/ts7-groups-on-ts6/summary.md
+2026-09-27 06:51:53,246 INFO group ts7-r1-references-extra-h6-574e94 on ts6 6.0.3
+2026-09-27 06:52:12,122 INFO   -> settled True stable True history==fresh False 
+2026-09-27 06:52:12,123 INFO group ts7-r1-references-missing-h9-2dd24a on ts6 6.0.3
+2026-09-27 06:52:44,183 INFO   -> settled True stable True history==fresh True 
+2026-09-27 06:52:44,239 INFO group ts6-r1-codeaction-key-lost-h5-4f92e2 on ts7 7.0.2
+2026-09-27 06:53:12,217 INFO   -> settled True stable True history==fresh True 
+2026-09-27 06:53:12,217 INFO group ts6-r1-completion-lost-h5-fa501c on ts7 7.0.2
+2026-09-27 06:53:39,813 INFO   -> settled True stable True history==fresh True 
+2026-09-27 06:53:39,813 INFO group ts6-r1-definition-lost-h5-61a0fd on ts7 7.0.2
+2026-09-27 06:53:56,395 INFO   -> settled True stable True history==fresh True 
+2026-09-27 06:53:56,395 INFO group ts6-r1-definition-lost-h9-898f29 on ts7 7.0.2
+2026-09-27 06:54:54,777 INFO   -> settled True stable True history==fresh True 
+2026-09-27 06:54:54,777 INFO group ts6-r1-diagnostics-extra-2304-h7-8ca52f on ts7 7.0.2
+2026-09-27 06:55:17,382 INFO   -> settled True stable True history==fresh True 
+2026-09-27 06:55:17,382 INFO group ts6-r1-diagnostics-extra-2305-2339-7006-h5-d5a250 on ts7 7.0.2
+2026-09-27 06:55:34,279 INFO   -> settled True stable True history==fresh True 
+2026-09-27 06:55:34,279 INFO group ts6-r1-documenthighlight-lost-h5-9b4675 on ts7 7.0.2
+2026-09-27 06:55:50,650 INFO   -> settled True stable True history==fresh True 
+2026-09-27 06:55:50,650 INFO group ts6-r1-hover-text-h2-284519 on ts7 7.0.2
+2026-09-27 06:56:12,882 INFO   -> settled True stable True history==fresh True 
+2026-09-27 06:56:12,883 INFO group ts6-r1-hover-text-h5-b3855d on ts7 7.0.2
+2026-09-27 06:56:40,985 INFO   -> settled True stable True history==fresh True 
+2026-09-27 06:56:40,985 INFO group ts6-r1-hover-text-h8-2ce168 on ts7 7.0.2
+2026-09-27 06:57:10,556 INFO   -> settled True stable True history==fresh True 
+2026-09-27 06:57:10,556 INFO group ts6-r1-inlayhint-changed-h5-0c1aa5 on ts7 7.0.2
+2026-09-27 06:57:37,583 INFO   -> settled True stable True history==fresh True 
+2026-09-27 06:57:37,583 INFO group ts6-r1-references-extra-h6-6e0a73 on ts7 7.0.2
+2026-09-27 06:58:01,917 INFO   -> settled True stable True history==fresh False 
+2026-09-27 06:58:01,917 INFO group ts6-r1-references-lost-h5-d24ca6 on ts7 7.0.2
+2026-09-27 06:58:30,714 INFO   -> settled True stable True history==fresh True 
+2026-09-27 06:58:30,714 INFO group ts6-r1-references-missing-h5-cc8950 on ts7 7.0.2
+2026-09-27 06:58:53,682 INFO   -> settled True stable True history==fresh True 
+2026-09-27 06:58:53,682 INFO group ts6-r1-semantictokens-changed-h5-591c42 on ts7 7.0.2
+2026-09-27 06:59:21,747 INFO   -> settled True stable True history==fresh True 
+2026-09-27 06:59:21,747 INFO group ts6-r1-semantictokens-missing-h9-d686b3 on ts7 7.0.2
+2026-09-27 06:59:44,931 INFO   -> settled True stable True history==fresh True 
+2026-09-27 06:59:44,931 INFO group ts6-r1-signaturehelp-changed-h5-db5a5e on ts7 7.0.2
+2026-09-27 07:00:01,772 INFO   -> settled True stable True history==fresh True 
+2026-09-27 07:00:01,772 INFO group ts6-r1-signaturehelp-lost-h9-7bd793 on ts7 7.0.2
+2026-09-27 07:01:04,938 INFO   -> settled True stable True history==fresh True 
+2026-09-27 07:01:04,938 INFO group ts6-r1-typedefinition-lost-h5-712a35 on ts7 7.0.2
+2026-09-27 07:01:24,661 INFO   -> settled True stable True history==fresh True 

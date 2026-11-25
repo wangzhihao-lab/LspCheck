@@ -1,0 +1,480 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "abd6fbb4978e-v00",
+ "run_id": "abd6fbb4978e",
+ "oracle": "r3_routes",
+ "server": {
+  "kind": "pyright",
+  "version": "1.1.414"
+ },
+ "project": {
+  "name": "browser-use/browser-use@d8110c5ff87c",
+  "source": "corpus",
+  "ref": "temp/corpus/browser-use__browser-use@d8110c5ff87c",
+  "commit": "d8110c5ff87ccba887aaa726cdb780f2f84bef8d",
+  "language": "python"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "browser_use/llm/openrouter/chat.py",
+    "positions": [
+     [
+      3,
+      8
+     ],
+     [
+      16,
+      18
+     ],
+     [
+      34,
+      9
+     ],
+     [
+      46,
+      15
+     ],
+     [
+      51,
+      24
+     ],
+     [
+      60,
+      29
+     ],
+     [
+      100,
+      61
+     ],
+     [
+      166,
+      13
+     ],
+     [
+      193,
+      10
+     ],
+     [
+      209,
+      19
+     ],
+     [
+      223,
+      16
+     ],
+     [
+      230,
+      52
+     ]
+    ],
+    "ends": [
+     [
+      3,
+      11
+     ],
+     [
+      16,
+      20
+     ],
+     [
+      34,
+      11
+     ],
+     [
+      46,
+      17
+     ],
+     [
+      51,
+      26
+     ],
+     [
+      60,
+      30
+     ],
+     [
+      100,
+      64
+     ],
+     [
+      166,
+      15
+     ],
+     [
+      193,
+      16
+     ],
+     [
+      209,
+      21
+     ],
+     [
+      223,
+      23
+     ],
+     [
+      230,
+      58
+     ]
+    ],
+    "names": [
+     "typing",
+     "llm",
+     "str",
+     "int",
+     "Any",
+     "os",
+     "Choice",
+     "self",
+     "temperature",
+     "name",
+     "RateLimitError",
+     "status_code"
+    ]
+   },
+   {
+    "path": "examples/getting_started/01_basic_search.py",
+    "positions": [
+     [
+      11,
+      12
+     ],
+     [
+      11,
+      21
+     ],
+     [
+      11,
+      59
+     ],
+     [
+      11,
+      65
+     ],
+     [
+      11,
+      75
+     ],
+     [
+      15,
+      5
+     ],
+     [
+      21,
+      24
+     ],
+     [
+      23,
+      22
+     ],
+     [
+      24,
+      14
+     ],
+     [
+      27,
+      7
+     ],
+     [
+      28,
+      10
+     ],
+     [
+      28,
+      15
+     ]
+    ],
+    "ends": [
+     [
+      11,
+      15
+     ],
+     [
+      11,
+      23
+     ],
+     [
+      11,
+      63
+     ],
+     [
+      11,
+      66
+     ],
+     [
+      11,
+      79
+     ],
+     [
+      15,
+      11
+     ],
+     [
+      21,
+      27
+     ],
+     [
+      23,
+      24
+     ],
+     [
+      24,
+      16
+     ],
+     [
+      27,
+      11
+     ],
+     [
+      28,
+      12
+     ],
+     [
+      28,
+      17
+     ]
+    ],
+    "names": [
+     "append",
+     "path",
+     "dirname",
+     "os",
+     "abspath",
+     "load_dotenv",
+     "model",
+     "task",
+     "run",
+     "__name__",
+     "run",
+     "main"
+    ]
+   },
+   {
+    "path": "tests/ci/models/model_test_helper.py",
+    "positions": [
+     [
+      6,
+      10
+     ],
+     [
+      6,
+      26
+     ],
+     [
+      8,
+      47
+     ],
+     [
+      30,
+      12
+     ],
+     [
+      42,
+      8
+     ],
+     [
+      42,
+      59
+     ],
+     [
+      65,
+      12
+     ],
+     [
+      65,
+      26
+     ],
+     [
+      77,
+      18
+     ],
+     [
+      82,
+      5
+     ],
+     [
+      89,
+      5
+     ],
+     [
+      97,
+      8
+     ]
+    ],
+    "ends": [
+     [
+      6,
+      16
+     ],
+     [
+      6,
+      30
+     ],
+     [
+      8,
+      54
+     ],
+     [
+      30,
+      14
+     ],
+     [
+      42,
+      14
+     ],
+     [
+      42,
+      66
+     ],
+     [
+      65,
+      18
+     ],
+     [
+      65,
+      31
+     ],
+     [
+      77,
+      21
+     ],
+     [
+      82,
+      7
+     ],
+     [
+      89,
+      8
+     ],
+     [
+      97,
+      10
+     ]
+    ],
+    "names": [
+     "browser_use",
+     "service",
+     "BrowserSession",
+     "skip",
+     "extra_kwargs",
+     "azure_endpoint",
+     "model_class",
+     "llm_kwargs",
+     "start",
+     "task",
+     "result",
+     "step"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "definitionConsistency",
+  "path": "tests/ci/models/test_llm_anthropic.py",
+  "line": 12,
+  "character": 8,
+  "extra": "from:tests/ci/models/model_test_helper.py:42:8"
+ },
+ "ops": [],
+ "case": {
+  "loc": [
+   "tests/ci/models/test_llm_anthropic.py",
+   12,
+   2,
+   12,
+   14
+  ],
+  "sub": "d",
+  "target": [
+   "tests/ci/models/model_test_helper.py",
+   42,
+   8
+  ]
+ },
+ "shape": "definitionConsistency:missing",
+ "signature": "pyright|r3_routes|definitionConsistency:missing",
+ "expected": [
+  [
+   "tests/ci/models/model_test_helper.py",
+   15,
+   1,
+   15,
+   19
+  ],
+  [
+   "tests/ci/models/model_test_helper.py",
+   42,
+   2,
+   42,
+   14
+  ]
+ ],
+ "actual": [
+  [
+   "tests/ci/models/model_test_helper.py",
+   15,
+   1,
+   15,
+   19
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "flake 3/3 [r1:SCR r2:SCR r3:SCR] in 67s",
+ "violation": {
+  "oracle": "r3_routes",
+  "server": "pyright-1.1.414",
+  "project": "browser-use/browser-use@d8110c5ff87c",
+  "key": {
+   "method": "definitionConsistency",
+   "path": "tests/ci/models/test_llm_anthropic.py",
+   "line": 12,
+   "character": 8,
+   "extra": "from:tests/ci/models/model_test_helper.py:42:8"
+  },
+  "expected": [
+   [
+    "tests/ci/models/model_test_helper.py",
+    15,
+    1,
+    15,
+    19
+   ],
+   [
+    "tests/ci/models/model_test_helper.py",
+    42,
+    2,
+    42,
+    14
+   ]
+  ],
+  "actual": [
+   [
+    "tests/ci/models/model_test_helper.py",
+    15,
+    1,
+    15,
+    19
+   ]
+  ],
+  "ops": [],
+  "detail": "{\"case\": {\"loc\": [\"tests/ci/models/test_llm_anthropic.py\", 12, 2, 12, 14], \"sub\": \"d\", \"target\": [\"tests/ci/models/model_test_helper.py\", 42, 8]}, \"note\": \"flake 3/3 [r1:SCR r2:SCR r3:SCR] in 67s\", \"shape\": \"definitionConsistency:missing\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "pyright|r3_routes|definitionConsistency:missing",
+  "run_id": "abd6fbb4978e"
+ },
+ "replay_logs": [
+  "logs/pyright-1.1.414-abd6fbb4978e-r3-replay-baseline-20260923-194146-18b8cf.jsonl.gz",
+  "logs/pyright-1.1.414-abd6fbb4978e-r3-replay-control-20260923-194155-98f59f.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

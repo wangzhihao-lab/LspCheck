@@ -1,0 +1,603 @@
+{
+ "format": 1,
+ "campaign": "bench_v1",
+ "vid": "7f07815cf38a-v00",
+ "run_id": "7f07815cf38a",
+ "oracle": "r1_history",
+ "server": {
+  "kind": "tsserver",
+  "version": "5.0.4+tsls3.3.2"
+ },
+ "project": {
+  "name": "tsserver-51667",
+  "source": "dir",
+  "ref": "data/lsp_bench/cases/tsserver-51667/project",
+  "commit": "",
+  "language": "typescript"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "race0",
+  "settle_timeout_s": 120.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "index.tsx",
+    "positions": [
+     [
+      0,
+      12
+     ],
+     [
+      0,
+      18
+     ],
+     [
+      0,
+      25
+     ],
+     [
+      0,
+      60
+     ],
+     [
+      1,
+      13
+     ],
+     [
+      1,
+      19
+     ],
+     [
+      4,
+      12
+     ],
+     [
+      4,
+      19
+     ],
+     [
+      5,
+      15
+     ],
+     [
+      6,
+      9
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      15
+     ],
+     [
+      0,
+      21
+     ],
+     [
+      0,
+      27
+     ],
+     [
+      0,
+      63
+     ],
+     [
+      1,
+      15
+     ],
+     [
+      1,
+      21
+     ],
+     [
+      4,
+      16
+     ],
+     [
+      4,
+      22
+     ],
+     [
+      5,
+      18
+     ],
+     [
+      6,
+      11
+     ]
+    ],
+    "names": [
+     "Person",
+     "props",
+     "age",
+     "height",
+     "div",
+     "div",
+     "Example",
+     "props",
+     "Person",
+     "age"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "diagnostics",
+  "path": "index.tsx",
+  "line": -1,
+  "character": -1,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "index.tsx"
+  },
+  {
+   "kind": "change",
+   "path": "index.tsx",
+   "start": [
+    5,
+    12
+   ],
+   "end": [
+    5,
+    18
+   ],
+   "text": "zz"
+  },
+  {
+   "kind": "change",
+   "path": "index.tsx",
+   "start": [
+    5,
+    12
+   ],
+   "end": [
+    5,
+    14
+   ],
+   "text": "Person"
+  },
+  {
+   "kind": "request",
+   "path": "index.tsx",
+   "start": [
+    0,
+    18
+   ],
+   "text": "typeDefinition"
+  },
+  {
+   "kind": "request",
+   "path": "index.tsx",
+   "start": [
+    0,
+    12
+   ],
+   "text": "definition"
+  },
+  {
+   "kind": "request",
+   "path": "index.tsx",
+   "start": [
+    6,
+    11
+   ],
+   "text": "documentHighlight"
+  },
+  {
+   "kind": "request",
+   "path": "index.tsx",
+   "start": [
+    1,
+    21
+   ],
+   "text": "references"
+  },
+  {
+   "kind": "request",
+   "path": "index.tsx",
+   "start": [
+    4,
+    16
+   ],
+   "text": "typeDefinition"
+  },
+  {
+   "kind": "request",
+   "path": "index.tsx",
+   "start": [
+    0,
+    27
+   ],
+   "text": "completion"
+  },
+  {
+   "kind": "request",
+   "path": "index.tsx",
+   "start": [
+    5,
+    15
+   ],
+   "text": "definition"
+  },
+  {
+   "kind": "request",
+   "path": "index.tsx",
+   "start": [
+    4,
+    12
+   ],
+   "text": "definition"
+  },
+  {
+   "kind": "request",
+   "path": "index.tsx",
+   "start": [
+    0,
+    25
+   ],
+   "text": "typeDefinition"
+  }
+ ],
+ "case": {
+  "chain_step": 0,
+  "families": [],
+  "family": "H8",
+  "history_index": 2,
+  "history_seed": 1003,
+  "mode": "fresh",
+  "note": "after index.tsx: replace 'Person' by 'zz' on line 5 and its inverse, 9 requests in a shuffled order: typeDefinition@index.tsx:0:18, definition@index.tsx:0:12, documentHighlight@index.tsx:6:11, references@index.tsx:1:21, typeDefinition@index.tsx:4:16, ...",
+  "seed": 1,
+  "timing": "race0"
+ },
+ "shape": "diagnostics:message:2741",
+ "signature": "tsserver|r1_history|diagnostics:message:2741",
+ "expected": [
+  [
+   0,
+   16,
+   0,
+   21,
+   4,
+   "6133",
+   "typescript",
+   "'props' is declared but its value is never read."
+  ],
+  [
+   1,
+   11,
+   1,
+   16,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   1,
+   16,
+   1,
+   22,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   4,
+   17,
+   4,
+   22,
+   4,
+   "6133",
+   "typescript",
+   "'props' is declared but its value is never read."
+  ],
+  [
+   5,
+   12,
+   5,
+   18,
+   1,
+   "2741",
+   "typescript",
+   "Property 'height' is missing in type '{ age: \"middle\"; }' but required in type '{ age: \"old\" | \"middle\" | \"young\"; height: \"short\" | \"medium\" | \"tall\"; }'."
+  ]
+ ],
+ "actual": [
+  [
+   0,
+   16,
+   0,
+   21,
+   4,
+   "6133",
+   "typescript",
+   "'props' is declared but its value is never read."
+  ],
+  [
+   1,
+   11,
+   1,
+   16,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   1,
+   16,
+   1,
+   22,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   4,
+   17,
+   4,
+   22,
+   4,
+   "6133",
+   "typescript",
+   "'props' is declared but its value is never read."
+  ],
+  [
+   5,
+   12,
+   5,
+   18,
+   1,
+   "2741",
+   "typescript",
+   "Property 'height' is missing in type '{ age: \"middle\"; }' but required in type '{ age: \"middle\" | \"old\" | \"young\"; height: \"short\" | \"medium\" | \"tall\"; }'."
+  ]
+ ],
+ "reproduced": "0/3",
+ "note": "H8: after index.tsx: replace 'Person' by 'zz' on line 5 and its inverse, 9 requests in a shuffled order: typeDefinition@index.tsx:0:18, definition@index.tsx:0:12, documentHighlight@index.tsx:6:11, referen; flake 0/3 [r1:SCr r2:SCr r3:SCr] in 22s",
+ "violation": {
+  "oracle": "r1_history",
+  "server": "tsserver-5.0.4+tsls3.3.2",
+  "project": "tsserver-51667",
+  "key": {
+   "method": "diagnostics",
+   "path": "index.tsx",
+   "line": -1,
+   "character": -1,
+   "extra": ""
+  },
+  "expected": [
+   [
+    0,
+    16,
+    0,
+    21,
+    4,
+    "6133",
+    "typescript",
+    "'props' is declared but its value is never read."
+   ],
+   [
+    1,
+    11,
+    1,
+    16,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    1,
+    16,
+    1,
+    22,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    4,
+    17,
+    4,
+    22,
+    4,
+    "6133",
+    "typescript",
+    "'props' is declared but its value is never read."
+   ],
+   [
+    5,
+    12,
+    5,
+    18,
+    1,
+    "2741",
+    "typescript",
+    "Property 'height' is missing in type '{ age: \"middle\"; }' but required in type '{ age: \"old\" | \"middle\" | \"young\"; height: \"short\" | \"medium\" | \"tall\"; }'."
+   ]
+  ],
+  "actual": [
+   [
+    0,
+    16,
+    0,
+    21,
+    4,
+    "6133",
+    "typescript",
+    "'props' is declared but its value is never read."
+   ],
+   [
+    1,
+    11,
+    1,
+    16,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    1,
+    16,
+    1,
+    22,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    4,
+    17,
+    4,
+    22,
+    4,
+    "6133",
+    "typescript",
+    "'props' is declared but its value is never read."
+   ],
+   [
+    5,
+    12,
+    5,
+    18,
+    1,
+    "2741",
+    "typescript",
+    "Property 'height' is missing in type '{ age: \"middle\"; }' but required in type '{ age: \"middle\" | \"old\" | \"young\"; height: \"short\" | \"medium\" | \"tall\"; }'."
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "index.tsx"
+   },
+   {
+    "kind": "change",
+    "path": "index.tsx",
+    "start": [
+     5,
+     12
+    ],
+    "end": [
+     5,
+     18
+    ],
+    "text": "zz"
+   },
+   {
+    "kind": "change",
+    "path": "index.tsx",
+    "start": [
+     5,
+     12
+    ],
+    "end": [
+     5,
+     14
+    ],
+    "text": "Person"
+   },
+   {
+    "kind": "request",
+    "path": "index.tsx",
+    "start": [
+     0,
+     18
+    ],
+    "text": "typeDefinition"
+   },
+   {
+    "kind": "request",
+    "path": "index.tsx",
+    "start": [
+     0,
+     12
+    ],
+    "text": "definition"
+   },
+   {
+    "kind": "request",
+    "path": "index.tsx",
+    "start": [
+     6,
+     11
+    ],
+    "text": "documentHighlight"
+   },
+   {
+    "kind": "request",
+    "path": "index.tsx",
+    "start": [
+     1,
+     21
+    ],
+    "text": "references"
+   },
+   {
+    "kind": "request",
+    "path": "index.tsx",
+    "start": [
+     4,
+     16
+    ],
+    "text": "typeDefinition"
+   },
+   {
+    "kind": "request",
+    "path": "index.tsx",
+    "start": [
+     0,
+     27
+    ],
+    "text": "completion"
+   },
+   {
+    "kind": "request",
+    "path": "index.tsx",
+    "start": [
+     5,
+     15
+    ],
+    "text": "definition"
+   },
+   {
+    "kind": "request",
+    "path": "index.tsx",
+    "start": [
+     4,
+     12
+    ],
+    "text": "definition"
+   },
+   {
+    "kind": "request",
+    "path": "index.tsx",
+    "start": [
+     0,
+     25
+    ],
+    "text": "typeDefinition"
+   }
+  ],
+  "detail": "{\"case\": {\"chain_step\": 0, \"families\": [], \"family\": \"H8\", \"history_index\": 2, \"history_seed\": 1003, \"mode\": \"fresh\", \"note\": \"after index.tsx: replace 'Person' by 'zz' on line 5 and its inverse, 9 requests in a shuffled order: typeDefinition@index.tsx:0:18, definition@index.tsx:0:12, documentHighlight@index.tsx:6:11, references@index.tsx:1:21, typeDefinition@index.tsx:4:16, ...\", \"seed\": 1, \"timing\": \"race0\"}, \"note\": \"H8: after index.tsx: replace 'Person' by 'zz' on line 5 and its inverse, 9 requests in a shuffled order: typeDefinition@index.tsx:0:18, definition@index.tsx:0:12, documentHighlight@index.tsx:6:11, referen; flake 0/3 [r1:SCr r2:SCr r3:SCr] in 22s\", \"shape\": \"diagnostics:message:2741\"}",
+  "reproduced": "0/3",
+  "reduced_ops": [],
+  "signature": "tsserver|r1_history|diagnostics:message:2741",
+  "run_id": "7f07815cf38a"
+ },
+ "replay_logs": [],
+ "project_files": {},
+ "incomplete": false
+}

@@ -1,0 +1,318 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "84e8a4a832bf-v00",
+ "run_id": "84e8a4a832bf",
+ "oracle": "r4_edits",
+ "server": {
+  "kind": "ts6",
+  "version": "6.0.3"
+ },
+ "project": {
+  "name": "reduxjs/redux@fb3bad6804d6",
+  "source": "corpus",
+  "ref": "temp/corpus/reduxjs__redux@fb3bad6804d6",
+  "commit": "fb3bad6804d651b8ae0e909f32765beb989ba6f8",
+  "language": "typescript"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "examples/counter-ts/src/reportWebVitals.ts",
+    "positions": [
+     [
+      4,
+      57
+     ]
+    ],
+    "ends": [],
+    "names": [
+     ""
+    ]
+   },
+   {
+    "path": "scripts/clean.mts",
+    "positions": [],
+    "ends": [],
+    "names": []
+   },
+   {
+    "path": "test/helpers/middleware.ts",
+    "positions": [],
+    "ends": [],
+    "names": []
+   }
+  ]
+ },
+ "key": {
+  "method": "diagnostics",
+  "path": "examples/counter-ts/src/reportWebVitals.ts",
+  "line": 4,
+  "character": 57,
+  "extra": "M2:quickfix-errors:Remove unused declaration for: 'getLCP'"
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "examples/counter-ts/src/reportWebVitals.ts"
+  },
+  {
+   "kind": "change",
+   "path": "examples/counter-ts/src/reportWebVitals.ts",
+   "start": [
+    8,
+    6
+   ],
+   "end": [
+    8,
+    12
+   ],
+   "text": "getCP"
+  },
+  {
+   "kind": "change",
+   "path": "examples/counter-ts/src/reportWebVitals.ts",
+   "start": [
+    4,
+    60
+   ],
+   "end": [
+    4,
+    68
+   ]
+  }
+ ],
+ "case": {
+  "action_kind": "quickfix",
+  "base_errors": 2,
+  "check": "errors",
+  "diag": {
+   "code": 6133,
+   "message": "'getLCP' is declared but its value is never read.",
+   "range": {
+    "end": {
+     "character": 63,
+     "line": 4
+    },
+    "start": {
+     "character": 57,
+     "line": 4
+    }
+   },
+   "severity": 4
+  },
+  "fix_introduced_errors": [],
+  "fix_ops": [
+   {
+    "end": [
+     4,
+     68
+    ],
+    "kind": "change",
+    "path": "examples/counter-ts/src/reportWebVitals.ts",
+    "start": [
+     4,
+     60
+    ]
+   }
+  ],
+  "kind": "mutation",
+  "mutation": {
+   "end": [
+    8,
+    12
+   ],
+   "id": "M2",
+   "offsets": [
+    324,
+    330
+   ],
+   "sha": "78cee02ad5a13316",
+   "start": [
+    8,
+    6
+   ],
+   "text": "getCP",
+   "what": "misspell 'getLCP' as 'getCP' (drop a middle character)"
+  },
+  "n_fix_ops": 1,
+  "path": "examples/counter-ts/src/reportWebVitals.ts",
+  "post_errors": 3,
+  "title": "Remove unused declaration for: 'getLCP'",
+  "via": "edit"
+ },
+ "shape": "diagnostics:extra:2552",
+ "signature": "ts6|r4_edits|diagnostics:extra:2552",
+ "expected": [
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "2307",
+   "typescript",
+   "Cannot find module 'web-vitals' or its corresponding type declarations."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "2307",
+   "typescript",
+   "Cannot find module 'web-vitals' or its corresponding type declarations."
+  ]
+ ],
+ "actual": [
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "2307",
+   "typescript",
+   "Cannot find module 'web-vitals' or its corresponding type declarations."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "2307",
+   "typescript",
+   "Cannot find module 'web-vitals' or its corresponding type declarations."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "2552",
+   "typescript",
+   "Cannot find name 'getCP'. Did you mean 'getFCP'?"
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "quick fix \"Remove unused declaration for: 'getLCP'\" for 6133 at examples/counter-ts/src/reportWebVitals.ts:5:58 raises the error count in the edited files from 2 to 3 (seeded by M2: misspell 'getLCP' as 'getCP' (drop a middle character); errors before the mutation 2, after the fix 3); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 130s",
+ "violation": {
+  "oracle": "r4_edits",
+  "server": "ts6-6.0.3",
+  "project": "reduxjs/redux@fb3bad6804d6",
+  "key": {
+   "method": "diagnostics",
+   "path": "examples/counter-ts/src/reportWebVitals.ts",
+   "line": 4,
+   "character": 57,
+   "extra": "M2:quickfix-errors:Remove unused declaration for: 'getLCP'"
+  },
+  "expected": [
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2307",
+    "typescript",
+    "Cannot find module 'web-vitals' or its corresponding type declarations."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2307",
+    "typescript",
+    "Cannot find module 'web-vitals' or its corresponding type declarations."
+   ]
+  ],
+  "actual": [
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2307",
+    "typescript",
+    "Cannot find module 'web-vitals' or its corresponding type declarations."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2307",
+    "typescript",
+    "Cannot find module 'web-vitals' or its corresponding type declarations."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2552",
+    "typescript",
+    "Cannot find name 'getCP'. Did you mean 'getFCP'?"
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "examples/counter-ts/src/reportWebVitals.ts"
+   },
+   {
+    "kind": "change",
+    "path": "examples/counter-ts/src/reportWebVitals.ts",
+    "start": [
+     8,
+     6
+    ],
+    "end": [
+     8,
+     12
+    ],
+    "text": "getCP"
+   },
+   {
+    "kind": "change",
+    "path": "examples/counter-ts/src/reportWebVitals.ts",
+    "start": [
+     4,
+     60
+    ],
+    "end": [
+     4,
+     68
+    ]
+   }
+  ],
+  "detail": "{\"case\": {\"action_kind\": \"quickfix\", \"base_errors\": 2, \"check\": \"errors\", \"diag\": {\"code\": 6133, \"message\": \"'getLCP' is declared but its value is never read.\", \"range\": {\"end\": {\"character\": 63, \"line\": 4}, \"start\": {\"character\": 57, \"line\": 4}}, \"severity\": 4}, \"fix_introduced_errors\": [], \"fix_ops\": [{\"end\": [4, 68], \"kind\": \"change\", \"path\": \"examples/counter-ts/src/reportWebVitals.ts\", \"start\": [4, 60]}], \"kind\": \"mutation\", \"mutation\": {\"end\": [8, 12], \"id\": \"M2\", \"offsets\": [324, 330], \"sha\": \"78cee02ad5a13316\", \"start\": [8, 6], \"text\": \"getCP\", \"what\": \"misspell 'getLCP' as 'getCP' (drop a middle character)\"}, \"n_fix_ops\": 1, \"path\": \"examples/counter-ts/src/reportWebVitals.ts\", \"post_errors\": 3, \"title\": \"Remove unused declaration for: 'getLCP'\", \"via\": \"edit\"}, \"note\": \"quick fix \\\"Remove unused declaration for: 'getLCP'\\\" for 6133 at examples/counter-ts/src/reportWebVitals.ts:5:58 raises the error count in the edited files from 2 to 3 (seeded by M2: misspell 'getLCP' as 'getCP' (drop a middle character); errors before the mutation 2, after the fix 3); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 130s\", \"shape\": \"diagnostics:extra:2552\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "ts6|r4_edits|diagnostics:extra:2552",
+  "run_id": "84e8a4a832bf"
+ },
+ "replay_logs": [
+  "logs/ts6-6.0.3-trf7e816-r4-replay-baseline-20260925-191631-4368ee.jsonl.gz",
+  "logs/ts6-6.0.3-trf7e816-r4-replay-case-20260925-191622-67d3a9.jsonl.gz",
+  "logs/ts6-6.0.3-trf7e816-r4-replay-control-20260925-191636-693fd4.jsonl.gz"
+ ],
+ "project_files": {},
+ "group": "ts6-r4-diagnostics-extra-2552-mutation-m2-f7e816",
+ "reduced": true
+}

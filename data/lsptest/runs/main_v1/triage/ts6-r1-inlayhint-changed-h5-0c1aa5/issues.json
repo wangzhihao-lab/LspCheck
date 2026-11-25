@@ -1,0 +1,96 @@
+{
+ "queries": [
+  "\"rename file\" in:title repo:typescript-language-server/typescript-language-server is:issue",
+  "\"inlay hint\" wrong repo:typescript-language-server/typescript-language-server is:issue",
+  "\"inlay hint\" \"rename file\" repo:typescript-language-server/typescript-language-server is:issue",
+  "\"inlay hint\" stale repo:typescript-language-server/typescript-language-server is:issue",
+  "\"rename file\" in:title repo:microsoft/TypeScript is:issue",
+  "\"inlay hint\" wrong repo:microsoft/TypeScript is:issue",
+  "\"inlay hint\" \"rename file\" repo:microsoft/TypeScript is:issue",
+  "\"inlay hint\" stale repo:microsoft/TypeScript is:issue"
+ ],
+ "matches": [
+  {
+   "repo": "typescript-language-server/typescript-language-server",
+   "number": 878,
+   "title": "Support renaming files when renaming default exports",
+   "url": "https://github.com/typescript-language-server/typescript-language-server/issues/878",
+   "state": "open",
+   "created": "2024-02-27",
+   "comments": 1,
+   "query": "\"rename file\" in:title repo:typescript-language-server/typescript-language-server is:issue"
+  },
+  {
+   "repo": "typescript-language-server/typescript-language-server",
+   "number": 744,
+   "title": "EPERM: operation not permitted Cannot Move/Rename Files & Directories when Language Server is Running. ",
+   "url": "https://github.com/typescript-language-server/typescript-language-server/issues/744",
+   "state": "closed",
+   "created": "2023-07-31",
+   "comments": 1,
+   "query": "\"rename file\" in:title repo:typescript-language-server/typescript-language-server is:issue"
+  },
+  {
+   "repo": "typescript-language-server/typescript-language-server",
+   "number": 665,
+   "title": "Preview rename file",
+   "url": "https://github.com/typescript-language-server/typescript-language-server/issues/665",
+   "state": "closed",
+   "created": "2023-01-16",
+   "comments": 1,
+   "query": "\"rename file\" in:title repo:typescript-language-server/typescript-language-server is:issue"
+  },
+  {
+   "repo": "typescript-language-server/typescript-language-server",
+   "number": 430,
+   "title": "Rename also trigger on files in node_modules",
+   "url": "https://github.com/typescript-language-server/typescript-language-server/issues/430",
+   "state": "closed",
+   "created": "2022-04-07",
+   "comments": 0,
+   "query": "\"rename file\" in:title repo:typescript-language-server/typescript-language-server is:issue"
+  },
+  {
+   "repo": "typescript-language-server/typescript-language-server",
+   "number": 738,
+   "title": "Do not send paddingLeft = true for type parameters' hints",
+   "url": "https://github.com/typescript-language-server/typescript-language-server/issues/738",
+   "state": "closed",
+   "created": "2023-07-07",
+   "comments": 7,
+   "query": "\"inlay hint\" wrong repo:typescript-language-server/typescript-language-server is:issue"
+  },
+  {
+   "repo": "typescript-language-server/typescript-language-server",
+   "number": 258,
+   "title": "Support inlay hints",
+   "url": "https://github.com/typescript-language-server/typescript-language-server/issues/258",
+   "state": "closed",
+   "created": "2021-09-16",
+   "comments": 0,
+   "query": "\"inlay hint\" wrong repo:typescript-language-server/typescript-language-server is:issue"
+  },
+  {
+   "repo": "typescript-language-server/typescript-language-server",
+   "number": 264,
+   "title": "Inlay Hints return empty result",
+   "url": "https://github.com/typescript-language-server/typescript-language-server/issues/264",
+   "state": "closed",
+   "created": "2021-10-06",
+   "comments": 4,
+   "query": "\"inlay hint\" wrong repo:typescript-language-server/typescript-language-server is:issue"
+  },
+  {
+   "repo": "microsoft/TypeScript",
+   "number": 30039,
+   "title": "Refactor rename file + rename function",
+   "url": "https://github.com/microsoft/TypeScript/issues/30039",
+   "state": "open",
+   "created": "2019-01-23",
+   "comments": 6,
+   "query": "\"rename file\" in:title repo:microsoft/TypeScript is:issue"
+  }
+ ],
+ "notes": [],
+ "authenticated": true
+}

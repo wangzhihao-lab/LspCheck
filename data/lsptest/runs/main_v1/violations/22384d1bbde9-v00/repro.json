@@ -1,0 +1,513 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "22384d1bbde9-v00",
+ "run_id": "22384d1bbde9",
+ "oracle": "r1_history",
+ "server": {
+  "kind": "gopls",
+  "version": "v0.23.0"
+ },
+ "project": {
+  "name": "charmbracelet/bubbletea@657aaae216e3",
+  "source": "corpus",
+  "ref": "temp/corpus/charmbracelet__bubbletea@657aaae216e3",
+  "commit": "657aaae216e3f87df09b60959a9fe5de7b2ca419",
+  "language": "go"
+ },
+ "context": {
+  "seed": 3,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "examples/list-default/main.go",
+    "positions": [
+     [
+      25,
+      6
+     ],
+     [
+      37,
+      31
+     ],
+     [
+      41,
+      10
+     ],
+     [
+      52,
+      14
+     ],
+     [
+      58,
+      24
+     ],
+     [
+      68,
+      4
+     ],
+     [
+      71,
+      4
+     ],
+     [
+      71,
+      9
+     ],
+     [
+      74,
+      33
+     ],
+     [
+      83,
+      17
+     ],
+     [
+      83,
+      31
+     ],
+     [
+      84,
+      3
+     ]
+    ],
+    "ends": [
+     [
+      25,
+      7
+     ],
+     [
+      37,
+      33
+     ],
+     [
+      41,
+      12
+     ],
+     [
+      52,
+      16
+     ],
+     [
+      58,
+      26
+     ],
+     [
+      68,
+      6
+     ],
+     [
+      71,
+      6
+     ],
+     [
+      71,
+      12
+     ],
+     [
+      74,
+      35
+     ],
+     [
+      83,
+      19
+     ],
+     [
+      83,
+      33
+     ],
+     [
+      84,
+      5
+     ]
+    ],
+    "names": [
+     "m",
+     "msg",
+     "cmd",
+     "list",
+     "desc",
+     "item",
+     "item",
+     "title",
+     "desc",
+     "Run",
+     "nil",
+     "fmt"
+    ]
+   },
+   {
+    "path": "examples/print-key/main.go",
+    "positions": [
+     [
+      14,
+      37
+     ],
+     [
+      14,
+      42
+     ],
+     [
+      14,
+      48
+     ],
+     [
+      15,
+      9
+     ],
+     [
+      16,
+      21
+     ],
+     [
+      20,
+      10
+     ],
+     [
+      22,
+      16
+     ],
+     [
+      34,
+      19
+     ],
+     [
+      39,
+      23
+     ],
+     [
+      41,
+      1
+     ],
+     [
+      47,
+      4
+     ],
+     [
+      48,
+      3
+     ]
+    ],
+    "ends": [
+     [
+      14,
+      39
+     ],
+     [
+      14,
+      45
+     ],
+     [
+      14,
+      50
+     ],
+     [
+      15,
+      11
+     ],
+     [
+      16,
+      33
+     ],
+     [
+      20,
+      12
+     ],
+     [
+      22,
+      22
+     ],
+     [
+      34,
+      22
+     ],
+     [
+      39,
+      25
+     ],
+     [
+      41,
+      2
+     ],
+     [
+      47,
+      5
+     ],
+     [
+      48,
+      5
+     ]
+    ],
+    "names": [
+     "tea",
+     "Model",
+     "tea",
+     "msg",
+     "KeyboardEnhancementsMsg",
+     "msg",
+     "KeyPressMsg",
+     "Printf",
+     "tea",
+     "v",
+     "_",
+     "log"
+    ]
+   },
+   {
+    "path": "examples/vanish/main.go",
+    "positions": [
+     [
+      11,
+      27
+     ],
+     [
+      12,
+      9
+     ],
+     [
+      15,
+      10
+     ],
+     [
+      15,
+      42
+     ],
+     [
+      16,
+      37
+     ],
+     [
+      17,
+      8
+     ],
+     [
+      20,
+      8
+     ],
+     [
+      24,
+      4
+     ],
+     [
+      25,
+      10
+     ],
+     [
+      31,
+      7
+     ],
+     [
+      31,
+      23
+     ],
+     [
+      32,
+      4
+     ]
+    ],
+    "ends": [
+     [
+      11,
+      29
+     ],
+     [
+      12,
+      11
+     ],
+     [
+      15,
+      13
+     ],
+     [
+      15,
+      45
+     ],
+     [
+      16,
+      38
+     ],
+     [
+      17,
+      10
+     ],
+     [
+      20,
+      9
+     ],
+     [
+      24,
+      5
+     ],
+     [
+      25,
+      12
+     ],
+     [
+      31,
+      9
+     ],
+     [
+      31,
+      26
+     ],
+     [
+      32,
+      5
+     ]
+    ],
+    "names": [
+     "Cmd",
+     "nil",
+     "model",
+     "Model",
+     "ok",
+     "true",
+     "m",
+     "m",
+     "tea",
+     "tea",
+     "model",
+     "_"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "completion",
+  "path": "examples/list-default/main.go",
+  "line": 37,
+  "character": 33,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "examples/list-default/main.go"
+  },
+  {
+   "kind": "open",
+   "path": "examples/print-key/main.go"
+  },
+  {
+   "kind": "open",
+   "path": "examples/vanish/main.go"
+  },
+  {
+   "kind": "set_config",
+   "settings": {
+    "gopls": {
+     "analyses": {
+      "unusedparams": false
+     }
+    }
+   }
+  },
+  {
+   "kind": "set_config",
+   "settings": {
+    "gopls": {
+     "analyses": {
+      "unusedparams": true
+     }
+    }
+   }
+  }
+ ],
+ "case": {
+  "chain_step": 0,
+  "families": [],
+  "family": "H4",
+  "history_index": 6,
+  "history_seed": 3007,
+  "mode": "fresh",
+  "note": "toggle gopls.analyses.unusedparams: True -> False -> back",
+  "seed": 3,
+  "timing": "settled"
+ },
+ "shape": "completion:changed",
+ "signature": "gopls|r1_history|completion:changed",
+ "expected": [
+  "m.list.GlobalIndex",
+  "msg",
+  "msg.Height",
+  "msg.Width"
+ ],
+ "actual": [
+  "m.list.Paginator.SetTotalPages",
+  "msg",
+  "msg.Height",
+  "msg.Width"
+ ],
+ "reproduced": "0/3",
+ "note": "H4: toggle gopls.analyses.unusedparams: True -> False -> back; flake 0/3 [r1:SCr r2:SCr r3:Scr] in 145s",
+ "violation": {
+  "oracle": "r1_history",
+  "server": "gopls-v0.23.0",
+  "project": "charmbracelet/bubbletea@657aaae216e3",
+  "key": {
+   "method": "completion",
+   "path": "examples/list-default/main.go",
+   "line": 37,
+   "character": 33,
+   "extra": ""
+  },
+  "expected": [
+   "m.list.GlobalIndex",
+   "msg",
+   "msg.Height",
+   "msg.Width"
+  ],
+  "actual": [
+   "m.list.Paginator.SetTotalPages",
+   "msg",
+   "msg.Height",
+   "msg.Width"
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "examples/list-default/main.go"
+   },
+   {
+    "kind": "open",
+    "path": "examples/print-key/main.go"
+   },
+   {
+    "kind": "open",
+    "path": "examples/vanish/main.go"
+   },
+   {
+    "kind": "set_config",
+    "settings": {
+     "gopls": {
+      "analyses": {
+       "unusedparams": false
+      }
+     }
+    }
+   },
+   {
+    "kind": "set_config",
+    "settings": {
+     "gopls": {
+      "analyses": {
+       "unusedparams": true
+      }
+     }
+    }
+   }
+  ],
+  "detail": "{\"case\": {\"chain_step\": 0, \"families\": [], \"family\": \"H4\", \"history_index\": 6, \"history_seed\": 3007, \"mode\": \"fresh\", \"note\": \"toggle gopls.analyses.unusedparams: True -> False -> back\", \"seed\": 3, \"timing\": \"settled\"}, \"note\": \"H4: toggle gopls.analyses.unusedparams: True -> False -> back; flake 0/3 [r1:SCr r2:SCr r3:Scr] in 145s\", \"shape\": \"completion:changed\"}",
+  "reproduced": "0/3",
+  "reduced_ops": [],
+  "signature": "gopls|r1_history|completion:changed",
+  "run_id": "22384d1bbde9"
+ },
+ "replay_logs": [],
+ "project_files": {},
+ "incomplete": false
+}

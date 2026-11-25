@@ -1,0 +1,35 @@
+{
+ "vid": "5817b62f1d51-v00",
+ "ops_before": 5,
+ "narrowed": false,
+ "reduced_confirmed": "0/3",
+ "probes": 5,
+ "cache_hits": 0,
+ "reduce_seconds": 224.163,
+ "budget_exhausted": false,
+ "probe_log": [
+  [
+   4,
+   false
+  ],
+  [
+   4,
+   false
+  ],
+  [
+   4,
+   false
+  ],
+  [
+   4,
+   false
+  ],
+  [
+   4,
+   false
+  ]
+ ],
+ "logs": [],
+ "ops_after": 5,
+ "total_seconds": 459.1
+}

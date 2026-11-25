@@ -1,0 +1,3 @@
+2026-11-18 01:11:32,024 INFO campaign_run run f5bfda5dac9e: r0_crash on gopls v0.23.0, abiosoft/colima@bba803d3d6fa seed 1 settled, targets ['cmd/ssh.go', 'environment/container/kubernetes/kubernetes.go', 'util/downloader/http.go']
+2026-11-18 01:11:40,348 INFO campaign_run run f5bfda5dac9e: 0 candidate(s) in 8s; confirming
+2026-11-18 01:11:40,349 INFO campaign_run run f5bfda5dac9e finished: ok, 0 confirmed of 0 candidate(s), 8s

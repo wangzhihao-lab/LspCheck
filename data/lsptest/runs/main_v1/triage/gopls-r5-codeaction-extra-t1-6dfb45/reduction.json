@@ -1,0 +1,84 @@
+{
+ "vid": "0c88a9c856de-v00",
+ "ops_before": 2,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 0,
+ "cache_hits": 0,
+ "reduce_seconds": 0.0,
+ "budget_exhausted": false,
+ "probe_log": [],
+ "logs": [
+  "gopls-v0.23.0-tr6dfb45-r5-replay-baseline-20260925-161024-3c2591.jsonl.gz",
+  "gopls-v0.23.0-tr6dfb45-r5-replay-case-20260925-161034-3a15ac.jsonl.gz",
+  "gopls-v0.23.0-tr6dfb45-r5-replay-control-20260925-161029-78ad47.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [
+   [
+    "Add test for Name",
+    "source.addTest"
+   ],
+   [
+    "Browse arm64 assembly for Name",
+    "source.assembly"
+   ],
+   [
+    "Browse documentation for package binding",
+    "source.doc"
+   ],
+   [
+    "Browse gopls feature documentation",
+    "gopls.doc.features"
+   ],
+   [
+    "Extract declarations to new file",
+    "refactor.extract.toNewFile"
+   ],
+   [
+    "Show compiler optimization details for \"binding\"",
+    "source.toggleCompilerOptDetails"
+   ],
+   [
+    "Split package \"binding\"",
+    "source.splitPackage"
+   ]
+  ],
+  "actual": [
+   [
+    "Add test for Name",
+    "source.addTest"
+   ],
+   [
+    "Browse arm64 assembly for Name",
+    "source.assembly"
+   ],
+   [
+    "Browse documentation for package binding",
+    "source.doc"
+   ],
+   [
+    "Browse gopls feature documentation",
+    "gopls.doc.features"
+   ],
+   [
+    "Extract declarations to new file",
+    "refactor.extract.toNewFile"
+   ],
+   [
+    "Organize Imports",
+    "source.organizeImports"
+   ],
+   [
+    "Show compiler optimization details for \"binding\"",
+    "source.toggleCompilerOptDetails"
+   ],
+   [
+    "Split package \"binding\"",
+    "source.splitPackage"
+   ]
+  ]
+ },
+ "ops_after": 2,
+ "total_seconds": 55.5
+}

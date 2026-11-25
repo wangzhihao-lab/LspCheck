@@ -1,0 +1,402 @@
+{
+ "format": 1,
+ "campaign": "bench_v1",
+ "vid": "743ea742c597-v00",
+ "run_id": "743ea742c597",
+ "oracle": "r4_edits",
+ "server": {
+  "kind": "gopls",
+  "version": "v0.20.0"
+ },
+ "project": {
+  "name": "gopls-74938",
+  "source": "dir",
+  "ref": "data/lsp_bench/cases/gopls-74938/project",
+  "commit": "",
+  "language": "go"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 180.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "slicescontains.go",
+    "positions": [
+     [
+      23,
+      10
+     ],
+     [
+      52,
+      24
+     ],
+     [
+      52,
+      38
+     ],
+     [
+      52,
+      43
+     ],
+     [
+      54,
+      24
+     ],
+     [
+      70,
+      6
+     ],
+     [
+      74,
+      4
+     ],
+     [
+      89,
+      25
+     ],
+     [
+      118,
+      17
+     ],
+     [
+      119,
+      9
+     ],
+     [
+      128,
+      8
+     ],
+     [
+      128,
+      43
+     ],
+     [
+      158,
+      50
+     ],
+     [
+      159,
+      10
+     ],
+     [
+      170,
+      12
+     ],
+     [
+      178,
+      10
+     ],
+     [
+      185,
+      9
+     ],
+     [
+      188,
+      24
+     ],
+     [
+      193,
+      10
+     ],
+     [
+      197,
+      24
+     ]
+    ],
+    "ends": [
+     [
+      23,
+      15
+     ],
+     [
+      52,
+      27
+     ],
+     [
+      52,
+      41
+     ],
+     [
+      52,
+      45
+     ],
+     [
+      54,
+      27
+     ],
+     [
+      70,
+      9
+     ],
+     [
+      74,
+      7
+     ],
+     [
+      89,
+      27
+     ],
+     [
+      118,
+      19
+     ],
+     [
+      119,
+      12
+     ],
+     [
+      128,
+      12
+     ],
+     [
+      128,
+      45
+     ],
+     [
+      158,
+      52
+     ],
+     [
+      159,
+      12
+     ],
+     [
+      170,
+      14
+     ],
+     [
+      178,
+      13
+     ],
+     [
+      185,
+      10
+     ],
+     [
+      188,
+      27
+     ],
+     [
+      193,
+      13
+     ],
+     [
+      197,
+      27
+     ]
+    ],
+    "names": [
+     "rangeValue",
+     "slice",
+     "needle",
+     "int",
+     "slice",
+     "found",
+     "print",
+     "int",
+     "elem",
+     "needle",
+     "generic",
+     "bool",
+     "bool",
+     "elem",
+     "int",
+     "false",
+     "F",
+     "slice",
+     "false",
+     "slice"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "diagnostics",
+  "path": "slicescontains.go",
+  "line": 174,
+  "character": 7,
+  "extra": "M2:quickfix-errors:Create variable elm"
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "slicescontains.go"
+  },
+  {
+   "kind": "change",
+   "path": "slicescontains.go",
+   "start": [
+    174,
+    7
+   ],
+   "end": [
+    174,
+    11
+   ],
+   "text": "elm"
+  },
+  {
+   "kind": "change",
+   "path": "slicescontains.go",
+   "start": [
+    174,
+    2
+   ],
+   "end": [
+    174,
+    2
+   ],
+   "text": "elm := 0\n\t\t"
+  }
+ ],
+ "case": {
+  "action_kind": "quickfix",
+  "base_errors": 0,
+  "check": "errors",
+  "diag": {
+   "code": "UndeclaredName",
+   "message": "undefined: elm",
+   "range": {
+    "end": {
+     "character": 10,
+     "line": 174
+    },
+    "start": {
+     "character": 7,
+     "line": 174
+    }
+   },
+   "severity": 1
+  },
+  "fix_introduced_errors": [],
+  "fix_ops": [
+   {
+    "end": [
+     174,
+     2
+    ],
+    "kind": "change",
+    "path": "slicescontains.go",
+    "start": [
+     174,
+     2
+    ],
+    "text": "elm := 0\n\t\t"
+   }
+  ],
+  "kind": "mutation",
+  "mutation": {
+   "end": [
+    174,
+    11
+   ],
+   "id": "M2",
+   "offsets": [
+    3554,
+    3558
+   ],
+   "sha": "061962355a8902e2",
+   "start": [
+    174,
+    7
+   ],
+   "text": "elm",
+   "what": "misspell 'elem' as 'elm' (drop a middle character)"
+  },
+  "n_fix_ops": 1,
+  "path": "slicescontains.go",
+  "post_errors": 1,
+  "title": "Create variable elm",
+  "via": "resolve"
+ },
+ "shape": "diagnostics:extra:UnusedVar",
+ "signature": "gopls|r4_edits|diagnostics:extra:UnusedVar",
+ "expected": [],
+ "actual": [
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "UnusedVar",
+   "compiler",
+   "declared and not used: elem"
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "quick fix 'Create variable elm' for UndeclaredName at slicescontains.go:175:8 raises the error count in the edited files from 0 to 1 (seeded by M2: misspell 'elem' as 'elm' (drop a middle character); errors before the mutation 0, after the fix 1); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 44s",
+ "violation": {
+  "oracle": "r4_edits",
+  "server": "gopls-v0.20.0",
+  "project": "gopls-74938",
+  "key": {
+   "method": "diagnostics",
+   "path": "slicescontains.go",
+   "line": 174,
+   "character": 7,
+   "extra": "M2:quickfix-errors:Create variable elm"
+  },
+  "expected": [],
+  "actual": [
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "UnusedVar",
+    "compiler",
+    "declared and not used: elem"
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "slicescontains.go"
+   },
+   {
+    "kind": "change",
+    "path": "slicescontains.go",
+    "start": [
+     174,
+     7
+    ],
+    "end": [
+     174,
+     11
+    ],
+    "text": "elm"
+   },
+   {
+    "kind": "change",
+    "path": "slicescontains.go",
+    "start": [
+     174,
+     2
+    ],
+    "end": [
+     174,
+     2
+    ],
+    "text": "elm := 0\n\t\t"
+   }
+  ],
+  "detail": "{\"case\": {\"action_kind\": \"quickfix\", \"base_errors\": 0, \"check\": \"errors\", \"diag\": {\"code\": \"UndeclaredName\", \"message\": \"undefined: elm\", \"range\": {\"end\": {\"character\": 10, \"line\": 174}, \"start\": {\"character\": 7, \"line\": 174}}, \"severity\": 1}, \"fix_introduced_errors\": [], \"fix_ops\": [{\"end\": [174, 2], \"kind\": \"change\", \"path\": \"slicescontains.go\", \"start\": [174, 2], \"text\": \"elm := 0\\n\\t\\t\"}], \"kind\": \"mutation\", \"mutation\": {\"end\": [174, 11], \"id\": \"M2\", \"offsets\": [3554, 3558], \"sha\": \"061962355a8902e2\", \"start\": [174, 7], \"text\": \"elm\", \"what\": \"misspell 'elem' as 'elm' (drop a middle character)\"}, \"n_fix_ops\": 1, \"path\": \"slicescontains.go\", \"post_errors\": 1, \"title\": \"Create variable elm\", \"via\": \"resolve\"}, \"note\": \"quick fix 'Create variable elm' for UndeclaredName at slicescontains.go:175:8 raises the error count in the edited files from 0 to 1 (seeded by M2: misspell 'elem' as 'elm' (drop a middle character); errors before the mutation 0, after the fix 1); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 44s\", \"shape\": \"diagnostics:extra:UnusedVar\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "gopls|r4_edits|diagnostics:extra:UnusedVar",
+  "run_id": "743ea742c597"
+ },
+ "replay_logs": [
+  "logs/gopls-v0.20.0-743ea742c597-r4-replay-baseline-20260924-160324-a9ee2a.jsonl.gz",
+  "logs/gopls-v0.20.0-743ea742c597-r4-replay-case-20260924-160315-ec81a1.jsonl.gz",
+  "logs/gopls-v0.20.0-743ea742c597-r4-replay-control-20260924-160326-b561a1.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

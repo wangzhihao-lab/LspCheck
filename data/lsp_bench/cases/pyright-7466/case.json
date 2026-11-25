@@ -1,0 +1,79 @@
+{
+ "schema": 1,
+ "id": "pyright-7466",
+ "meta": {
+  "server": "pyright",
+  "kind": "pyright",
+  "number": 7466,
+  "url": "https://github.com/microsoft/pyright/issues/7466",
+  "title": "type from type checker is different to the type displayed on hover",
+  "oracle_class": "R3",
+  "subtype": "other-route",
+  "fix_ref": "none named (maintainer: 'This is addressed in pyright 1.1.364')",
+  "fix_shas": [
+   "7724fce513baa528baccc5aec1cf3cd171a190cd"
+  ],
+  "pre_version": "1.1.363",
+  "post_version": "1.1.364",
+  "pre_build": "1.1.363",
+  "post_build": "1.1.364",
+  "build_notes": "npm pyright@1.1.363 (2024-05-15) and pyright@1.1.364 (2024-05-22); release window from the maintainer's comment.",
+  "candidate_rank": 315,
+  "effort_minutes": 8,
+  "notes": "The report is an R3 inconsistency between two routes (the hover type Never vs the reveal_type type int); comparing a hover text with a diagnostic message is not a relation of the probe library, so the case uses the maintainer's diagnosis ('evaluation-order-dependent results'): a hover that evaluates foo before the checker must not change the checker's answers (R1 query-order)."
+ },
+ "language": "python",
+ "settings": {},
+ "settings_note": "The issue names no settings (pyright VS Code extension 1.1.353 defaults); the session defaults apply.",
+ "session": {
+  "settle_timeout_s": 120
+ },
+ "files": [
+  {
+   "path": "main.py",
+   "provenance": "issue",
+   "source": "issue body, python code block",
+   "note": ""
+  }
+ ],
+ "repro": {
+  "attempt": 1,
+  "timing": "race",
+  "steps": "Open main.py and hover foo in 'reveal_type(foo)' right away, before the server has checked the file (the reporter's editor hovers it). Reported: the hover says Never while reveal_type says int; the maintainer: the type depends on the evaluation order. After the server settles, the diagnostics of main.py (including the reveal_type message) and the hover on foo must equal those of a fresh session that opened the same text without the early hover.",
+  "ops": [
+   {
+    "kind": "open",
+    "path": "main.py"
+   },
+   {
+    "kind": "request",
+    "path": "main.py",
+    "start": [
+     6,
+     20
+    ],
+    "text": "hover"
+   }
+  ],
+  "probe": {
+   "type": "differs_from_fresh",
+   "params": {
+    "queries": [
+     {
+      "method": "diagnostics",
+      "path": "main.py"
+     },
+     {
+      "method": "hover",
+      "path": "main.py",
+      "position": [
+       6,
+       20
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "attempts": []
+}

@@ -1,0 +1,256 @@
+{
+ "format": 1,
+ "campaign": "main_v2",
+ "vid": "bf89675973e9-v01",
+ "run_id": "bf89675973e9",
+ "oracle": "r4_edits",
+ "server": {
+  "kind": "gopls",
+  "version": "v0.23.0"
+ },
+ "project": {
+  "name": "abiosoft/colima@bba803d3d6fa",
+  "source": "corpus",
+  "ref": "temp/corpus/abiosoft__colima@bba803d3d6fa",
+  "commit": "bba803d3d6fa9372a60f747e5dad4c8e80db7cde",
+  "language": "go"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "cmd/ssh.go",
+    "positions": [
+     [
+      24,
+      23
+     ]
+    ],
+    "ends": [],
+    "names": [
+     ""
+    ]
+   },
+   {
+    "path": "environment/container/kubernetes/kubernetes.go",
+    "positions": [],
+    "ends": [],
+    "names": []
+   },
+   {
+    "path": "util/downloader/http.go",
+    "positions": [],
+    "ends": [],
+    "names": []
+   }
+  ]
+ },
+ "key": {
+  "method": "diagnostics",
+  "path": "cmd/ssh.go",
+  "line": 24,
+  "character": 23,
+  "extra": "M2:quickfix-errors:Create variable sshCCmd"
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "cmd/ssh.go"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/ssh.go",
+   "start": [
+    24,
+    23
+   ],
+   "end": [
+    24,
+    29
+   ],
+   "text": "sshCCmd"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/ssh.go",
+   "start": [
+    24,
+    1
+   ],
+   "end": [
+    24,
+    1
+   ],
+   "text": "sshCCmd := nil\n\t"
+  }
+ ],
+ "case": {
+  "action_kind": "quickfix",
+  "base_errors": 0,
+  "check": "errors",
+  "diag": {
+   "code": "UndeclaredName",
+   "message": "undefined: sshCCmd",
+   "range": {
+    "end": {
+     "character": 30,
+     "line": 24
+    },
+    "start": {
+     "character": 23,
+     "line": 24
+    }
+   },
+   "severity": 1
+  },
+  "fix_introduced_errors": [
+   {
+    "code": "UntypedNilUse",
+    "message": "use of untyped nil in assignment",
+    "path": "cmd/ssh.go",
+    "range": {
+     "end": {
+      "character": 15,
+      "line": 24
+     },
+     "start": {
+      "character": 12,
+      "line": 24
+     }
+    },
+    "severity": 1
+   }
+  ],
+  "fix_ops": [
+   {
+    "end": [
+     24,
+     1
+    ],
+    "kind": "change",
+    "path": "cmd/ssh.go",
+    "start": [
+     24,
+     1
+    ],
+    "text": "sshCCmd := nil\n\t"
+   }
+  ],
+  "kind": "mutation",
+  "mutation": {
+   "end": [
+    24,
+    29
+   ],
+   "id": "M2",
+   "offsets": [
+    560,
+    566
+   ],
+   "sha": "82e9e5dfceea2b05",
+   "start": [
+    24,
+    23
+   ],
+   "text": "sshCCmd",
+   "what": "misspell 'sshCmd' as 'sshCCmd' (duplicate a middle character)"
+  },
+  "n_fix_ops": 1,
+  "path": "cmd/ssh.go",
+  "post_errors": 1,
+  "title": "Create variable sshCCmd",
+  "via": "resolve"
+ },
+ "shape": "diagnostics:extra:UntypedNilUse",
+ "signature": "gopls|r4_edits|diagnostics:extra:UntypedNilUse",
+ "expected": [],
+ "actual": [
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "UntypedNilUse",
+   "compiler",
+   "use of untyped nil in assignment"
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "quick fix 'Create variable sshCCmd' for UndeclaredName at cmd/ssh.go:25:24 raises the error count in the edited files from 0 to 1 (seeded by M2: misspell 'sshCmd' as 'sshCCmd' (duplicate a middle character); errors before the mutation 0, after the fix 1); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 47s",
+ "violation": {
+  "oracle": "r4_edits",
+  "server": "gopls-v0.23.0",
+  "project": "abiosoft/colima@bba803d3d6fa",
+  "key": {
+   "method": "diagnostics",
+   "path": "cmd/ssh.go",
+   "line": 24,
+   "character": 23,
+   "extra": "M2:quickfix-errors:Create variable sshCCmd"
+  },
+  "expected": [],
+  "actual": [
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "UntypedNilUse",
+    "compiler",
+    "use of untyped nil in assignment"
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "cmd/ssh.go"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/ssh.go",
+    "start": [
+     24,
+     23
+    ],
+    "end": [
+     24,
+     29
+    ],
+    "text": "sshCCmd"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/ssh.go",
+    "start": [
+     24,
+     1
+    ],
+    "end": [
+     24,
+     1
+    ],
+    "text": "sshCCmd := nil\n\t"
+   }
+  ],
+  "detail": "{\"case\": {\"action_kind\": \"quickfix\", \"base_errors\": 0, \"check\": \"errors\", \"diag\": {\"code\": \"UndeclaredName\", \"message\": \"undefined: sshCCmd\", \"range\": {\"end\": {\"character\": 30, \"line\": 24}, \"start\": {\"character\": 23, \"line\": 24}}, \"severity\": 1}, \"fix_introduced_errors\": [{\"code\": \"UntypedNilUse\", \"message\": \"use of untyped nil in assignment\", \"path\": \"cmd/ssh.go\", \"range\": {\"end\": {\"character\": 15, \"line\": 24}, \"start\": {\"character\": 12, \"line\": 24}}, \"severity\": 1}], \"fix_ops\": [{\"end\": [24, 1], \"kind\": \"change\", \"path\": \"cmd/ssh.go\", \"start\": [24, 1], \"text\": \"sshCCmd := nil\\n\\t\"}], \"kind\": \"mutation\", \"mutation\": {\"end\": [24, 29], \"id\": \"M2\", \"offsets\": [560, 566], \"sha\": \"82e9e5dfceea2b05\", \"start\": [24, 23], \"text\": \"sshCCmd\", \"what\": \"misspell 'sshCmd' as 'sshCCmd' (duplicate a middle character)\"}, \"n_fix_ops\": 1, \"path\": \"cmd/ssh.go\", \"post_errors\": 1, \"title\": \"Create variable sshCCmd\", \"via\": \"resolve\"}, \"note\": \"quick fix 'Create variable sshCCmd' for UndeclaredName at cmd/ssh.go:25:24 raises the error count in the edited files from 0 to 1 (seeded by M2: misspell 'sshCmd' as 'sshCCmd' (duplicate a middle character); errors before the mutation 0, after the fix 1); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 47s\", \"shape\": \"diagnostics:extra:UntypedNilUse\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "gopls|r4_edits|diagnostics:extra:UntypedNilUse",
+  "run_id": "bf89675973e9"
+ },
+ "replay_logs": [
+  "logs/gopls-v0.23.0-tr354f70-r4-replay-baseline-20261119-001120-1cd129.jsonl.gz",
+  "logs/gopls-v0.23.0-tr354f70-r4-replay-case-20261119-001112-5000ff.jsonl.gz",
+  "logs/gopls-v0.23.0-tr354f70-r4-replay-control-20261119-001123-a895d7.jsonl.gz"
+ ],
+ "project_files": {},
+ "group": "gopls-r4-diagnostics-extra-untypedniluse-mutation-m2-354f70",
+ "reduced": true
+}

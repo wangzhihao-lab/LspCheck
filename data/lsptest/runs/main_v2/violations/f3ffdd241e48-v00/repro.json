@@ -1,0 +1,537 @@
+{
+ "format": 1,
+ "campaign": "main_v2",
+ "vid": "f3ffdd241e48-v00",
+ "run_id": "f3ffdd241e48",
+ "oracle": "r1_history",
+ "server": {
+  "kind": "gopls",
+  "version": "v0.23.0"
+ },
+ "project": {
+  "name": "abiosoft/colima@bba803d3d6fa",
+  "source": "corpus",
+  "ref": "temp/corpus/abiosoft__colima@bba803d3d6fa",
+  "commit": "bba803d3d6fa9372a60f747e5dad4c8e80db7cde",
+  "language": "go"
+ },
+ "context": {
+  "seed": 3,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "environment/vm/lima/limautil/ssh.go",
+    "positions": [
+     [
+      15,
+      26
+     ],
+     [
+      15,
+      34
+     ],
+     [
+      18,
+      12
+     ],
+     [
+      21,
+      4
+     ],
+     [
+      22,
+      2
+     ],
+     [
+      29,
+      24
+     ],
+     [
+      44,
+      5
+     ],
+     [
+      44,
+      24
+     ],
+     [
+      62,
+      118
+     ],
+     [
+      64,
+      11
+     ],
+     [
+      68,
+      6
+     ],
+     [
+      69,
+      15
+     ]
+    ],
+    "ends": [
+     [
+      15,
+      29
+     ],
+     [
+      15,
+      36
+     ],
+     [
+      18,
+      15
+     ],
+     [
+      21,
+      6
+     ],
+     [
+      22,
+      4
+     ],
+     [
+      29,
+      26
+     ],
+     [
+      44,
+      7
+     ],
+     [
+      44,
+      29
+     ],
+     [
+      62,
+      124
+     ],
+     [
+      64,
+      14
+     ],
+     [
+      68,
+      7
+     ],
+     [
+      69,
+      18
+     ]
+    ],
+    "names": [
+     "string",
+     "resp",
+     "string",
+     "err",
+     "ssh",
+     "File",
+     "line",
+     "profileID",
+     "DisplayName",
+     "string",
+     "s",
+     "config"
+    ]
+   },
+   {
+    "path": "util/fsutil/fs.go",
+    "positions": [
+     [
+      12,
+      22
+     ],
+     [
+      12,
+      80
+     ],
+     [
+      19,
+      29
+     ],
+     [
+      19,
+      35
+     ],
+     [
+      23,
+      4
+     ],
+     [
+      23,
+      23
+     ],
+     [
+      43,
+      16
+     ],
+     [
+      44,
+      11
+     ],
+     [
+      45,
+      4
+     ],
+     [
+      50,
+      42
+     ],
+     [
+      50,
+      56
+     ],
+     [
+      50,
+      70
+     ]
+    ],
+    "ends": [
+     [
+      12,
+      25
+     ],
+     [
+      12,
+      82
+     ],
+     [
+      19,
+      30
+     ],
+     [
+      19,
+      39
+     ],
+     [
+      23,
+      5
+     ],
+     [
+      23,
+      28
+     ],
+     [
+      43,
+      18
+     ],
+     [
+      44,
+      14
+     ],
+     [
+      45,
+      6
+     ],
+     [
+      50,
+      43
+     ],
+     [
+      50,
+      59
+     ],
+     [
+      50,
+      72
+     ]
+    ],
+    "names": [
+     "string",
+     "perm",
+     "os",
+     "FileMode",
+     "_",
+     "DefaultFS",
+     "Open",
+     "fstest",
+     "Data",
+     "fs",
+     "error",
+     "nil"
+    ]
+   },
+   {
+    "path": "util/terminal/terminal.go",
+    "positions": [
+     [
+      11,
+      19
+     ],
+     [
+      20,
+      10
+     ],
+     [
+      30,
+      12
+     ],
+     [
+      40,
+      11
+     ],
+     [
+      54,
+      11
+     ],
+     [
+      55,
+      15
+     ],
+     [
+      80,
+      10
+     ],
+     [
+      84,
+      11
+     ],
+     [
+      105,
+      33
+     ],
+     [
+      113,
+      8
+     ],
+     [
+      134,
+      5
+     ],
+     [
+      134,
+      9
+     ]
+    ],
+    "ends": [
+     [
+      11,
+      21
+     ],
+     [
+      20,
+      15
+     ],
+     [
+      30,
+      19
+     ],
+     [
+      40,
+      18
+     ],
+     [
+      54,
+      18
+     ],
+     [
+      55,
+      17
+     ],
+     [
+      80,
+      13
+     ],
+     [
+      84,
+      13
+     ],
+     [
+      105,
+      39
+     ],
+     [
+      113,
+      13
+     ],
+     [
+      134,
+      6
+     ],
+     [
+      134,
+      10
+     ]
+    ],
+    "names": [
+     "term",
+     "isTerminal",
+     "EnterAltScreen",
+     "ExitAltScreen",
+     "WithAltScreen",
+     "len",
+     "Print",
+     "done",
+     "headerLines",
+     "hasHeader",
+     "_",
+     "ch"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "completion",
+  "path": "environment/vm/lima/limautil/ssh.go",
+  "line": 15,
+  "character": 29,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "environment/vm/lima/limautil/ssh.go"
+  },
+  {
+   "kind": "open",
+   "path": "util/fsutil/fs.go"
+  },
+  {
+   "kind": "open",
+   "path": "util/terminal/terminal.go"
+  },
+  {
+   "kind": "change",
+   "path": "util/terminal/terminal.go",
+   "start": [
+    82,
+    9
+   ],
+   "end": [
+    82,
+    9
+   ],
+   "text": " "
+  },
+  {
+   "kind": "save",
+   "path": "util/terminal/terminal.go"
+  },
+  {
+   "kind": "change",
+   "path": "util/terminal/terminal.go",
+   "start": [
+    82,
+    9
+   ],
+   "end": [
+    82,
+    10
+   ]
+  },
+  {
+   "kind": "save",
+   "path": "util/terminal/terminal.go"
+  }
+ ],
+ "case": {
+  "chain_step": 0,
+  "families": [],
+  "family": "H1",
+  "history_index": 7,
+  "history_seed": 3008,
+  "mode": "fresh",
+  "note": "util/terminal/terminal.go: insert ' ' on line 82, then its inverse (saved)",
+  "seed": 3,
+  "timing": "settled"
+ },
+ "shape": "completion:missing",
+ "signature": "gopls|r1_history|completion:missing",
+ "expected": [
+  "fmt.GoStringer",
+  "fmt.Stringer",
+  "string",
+  "strings",
+  "strings.Builder"
+ ],
+ "actual": [
+  "string",
+  "strings"
+ ],
+ "reproduced": "1/3",
+ "note": "H1: util/terminal/terminal.go: insert ' ' on line 82, then its inverse (saved); flake 1/3 [r1:SCR r2:SCr r3:SCr] in 87s",
+ "violation": {
+  "oracle": "r1_history",
+  "server": "gopls-v0.23.0",
+  "project": "abiosoft/colima@bba803d3d6fa",
+  "key": {
+   "method": "completion",
+   "path": "environment/vm/lima/limautil/ssh.go",
+   "line": 15,
+   "character": 29,
+   "extra": ""
+  },
+  "expected": [
+   "fmt.GoStringer",
+   "fmt.Stringer",
+   "string",
+   "strings",
+   "strings.Builder"
+  ],
+  "actual": [
+   "string",
+   "strings"
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "environment/vm/lima/limautil/ssh.go"
+   },
+   {
+    "kind": "open",
+    "path": "util/fsutil/fs.go"
+   },
+   {
+    "kind": "open",
+    "path": "util/terminal/terminal.go"
+   },
+   {
+    "kind": "change",
+    "path": "util/terminal/terminal.go",
+    "start": [
+     82,
+     9
+    ],
+    "end": [
+     82,
+     9
+    ],
+    "text": " "
+   },
+   {
+    "kind": "save",
+    "path": "util/terminal/terminal.go"
+   },
+   {
+    "kind": "change",
+    "path": "util/terminal/terminal.go",
+    "start": [
+     82,
+     9
+    ],
+    "end": [
+     82,
+     10
+    ]
+   },
+   {
+    "kind": "save",
+    "path": "util/terminal/terminal.go"
+   }
+  ],
+  "detail": "{\"case\": {\"chain_step\": 0, \"families\": [], \"family\": \"H1\", \"history_index\": 7, \"history_seed\": 3008, \"mode\": \"fresh\", \"note\": \"util/terminal/terminal.go: insert ' ' on line 82, then its inverse (saved)\", \"seed\": 3, \"timing\": \"settled\"}, \"note\": \"H1: util/terminal/terminal.go: insert ' ' on line 82, then its inverse (saved); flake 1/3 [r1:SCR r2:SCr r3:SCr] in 87s\", \"shape\": \"completion:missing\"}",
+  "reproduced": "1/3",
+  "reduced_ops": [],
+  "signature": "gopls|r1_history|completion:missing",
+  "run_id": "f3ffdd241e48"
+ },
+ "replay_logs": [],
+ "project_files": {},
+ "incomplete": false
+}

@@ -1,0 +1,3 @@
+2026-11-18 14:04:19,618 INFO campaign_run run a1bf890c2d6c: r3_routes on ts6 6.0.3, pear-devs/pear-desktop@3ff0a86231fe seed 2 settled, targets ['src/plugins/album-actions/templates/undislike-button.tsx', 'src/plugins/downloader/main/index.ts', 'src/plugins/equalizer/index.ts']
+2026-11-18 14:07:58,683 INFO campaign_run run a1bf890c2d6c: 35 candidate(s) in 219s; confirming
+2026-11-18 14:07:58,685 INFO campaign_run run a1bf890c2d6c finished: ok, 0 confirmed of 35 candidate(s), 219s

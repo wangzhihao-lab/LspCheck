@@ -1,0 +1,3 @@
+2026-09-24 08:43:53,020 INFO campaign_run run bcf4b7103e0c: r1_history on rust-analyzer 2026-09-21, sxyazi/yazi@0ea4c5d9ef75 seed 1 race200, targets ['yazi-fs/src/mounts/partition.rs', 'yazi-parser/src/tasks/spawn.rs', 'yazi-vfs/src/entries.rs']
+2026-09-24 08:49:11,537 INFO campaign_run run bcf4b7103e0c: 0 candidate(s) in 319s; confirming
+2026-09-24 08:49:11,538 INFO campaign_run run bcf4b7103e0c finished: ok, 0 confirmed of 0 candidate(s), 319s

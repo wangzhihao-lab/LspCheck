@@ -1,0 +1,157 @@
+{
+ "vid": "56aea42fc074-v00",
+ "ops_before": 5,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 13,
+ "cache_hits": 2,
+ "reduce_seconds": 104.763,
+ "budget_exhausted": false,
+ "probe_log": [
+  [
+   4,
+   false
+  ],
+  [
+   4,
+   false
+  ],
+  [
+   4,
+   true
+  ],
+  [
+   3,
+   false
+  ],
+  [
+   3,
+   false
+  ],
+  [
+   2,
+   false
+  ],
+  [
+   2,
+   false
+  ],
+  [
+   1,
+   false
+  ],
+  [
+   1,
+   false
+  ],
+  [
+   1,
+   false
+  ],
+  [
+   1,
+   false
+  ],
+  [
+   3,
+   false
+  ],
+  [
+   3,
+   false
+  ]
+ ],
+ "logs": [
+  "gopls-v0.23.0-tre59f2c-replay-baseline-20261118-234319-ff49d2.jsonl.gz",
+  "gopls-v0.23.0-tre59f2c-replay-control-20261118-234319-816bd1.jsonl.gz",
+  "gopls-v0.23.0-tre59f2c-replay-history-20261118-234324-38006d.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [
+   [
+    10,
+    1,
+    10,
+    15,
+    1,
+    "",
+    "compiler",
+    "error while importing gorm.io/gorm: missing go.sum entry for module providing package github.com/jinzhu/inflection (imported by gorm.io/gorm/schema); to add: go get gorm.io/gorm/schema@v1.31.0"
+   ],
+   [
+    10,
+    1,
+    10,
+    15,
+    1,
+    "",
+    "compiler",
+    "error while importing gorm.io/gorm: missing go.sum entry for module providing package github.com/jinzhu/now (imported by gorm.io/gorm/tests); to add: go get -t gorm.io/gorm/tests"
+   ],
+   [
+    10,
+    1,
+    10,
+    15,
+    1,
+    "",
+    "compiler",
+    "error while importing gorm.io/gorm: missing go.sum entry for module providing package golang.org/x/text/cases (imported by gorm.io/gorm/schema); to add: go get gorm.io/gorm/schema@v1.31.0"
+   ],
+   [
+    10,
+    1,
+    10,
+    15,
+    1,
+    "",
+    "compiler",
+    "error while importing gorm.io/gorm: missing go.sum entry for module providing package golang.org/x/text/language (imported by gorm.io/gorm/schema); to add: go get gorm.io/gorm/schema@v1.31.0"
+   ]
+  ],
+  "actual": [
+   [
+    10,
+    1,
+    10,
+    15,
+    1,
+    "",
+    "compiler",
+    "error while importing gorm.io/gorm: missing go.sum entry for module providing package github.com/jinzhu/inflection (imported by gorm.io/gorm/schema); to add: go get gorm.io/gorm/schema@v1.31.0"
+   ],
+   [
+    10,
+    1,
+    10,
+    15,
+    1,
+    "",
+    "compiler",
+    "error while importing gorm.io/gorm: missing go.sum entry for module providing package github.com/jinzhu/now (imported by gorm.io/gorm); to add: go get gorm.io/gorm@v1.31.0"
+   ],
+   [
+    10,
+    1,
+    10,
+    15,
+    1,
+    "",
+    "compiler",
+    "error while importing gorm.io/gorm: missing go.sum entry for module providing package golang.org/x/text/cases (imported by gorm.io/gorm/schema); to add: go get gorm.io/gorm/schema@v1.31.0"
+   ],
+   [
+    10,
+    1,
+    10,
+    15,
+    1,
+    "",
+    "compiler",
+    "error while importing gorm.io/gorm: missing go.sum entry for module providing package golang.org/x/text/language (imported by gorm.io/gorm/schema); to add: go get gorm.io/gorm/schema@v1.31.0"
+   ]
+  ]
+ },
+ "ops_after": 4,
+ "total_seconds": 177.9
+}

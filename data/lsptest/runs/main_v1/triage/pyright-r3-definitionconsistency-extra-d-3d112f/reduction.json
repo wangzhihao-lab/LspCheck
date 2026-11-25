@@ -1,0 +1,51 @@
+{
+ "vid": "96ea95edb4ad-v00",
+ "ops_before": 0,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 0,
+ "cache_hits": 0,
+ "reduce_seconds": 0.0,
+ "budget_exhausted": false,
+ "probe_log": [],
+ "logs": [
+  "pyright-1.1.414-tr3d112f-r3-replay-baseline-20260925-174310-fb851c.jsonl.gz",
+  "pyright-1.1.414-tr3d112f-r3-replay-control-20260925-174313-e175ce.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [
+   [
+    "browser_use/browser/watchdogs/aboutblank_watchdog.py",
+    39,
+    1,
+    39,
+    10
+   ]
+  ],
+  "actual": [
+   [
+    "browser_use/browser/watchdogs/aboutblank_watchdog.py",
+    39,
+    1,
+    39,
+    10
+   ],
+   [
+    "browser_use/browser/watchdogs/aboutblank_watchdog.py",
+    44,
+    7,
+    44,
+    16
+   ],
+   [
+    "browser_use/browser/watchdogs/aboutblank_watchdog.py",
+    49,
+    7,
+    49,
+    16
+   ]
+  ]
+ },
+ "ops_after": 0,
+ "total_seconds": 26.7
+}

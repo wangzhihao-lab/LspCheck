@@ -1,0 +1,100 @@
+{
+ "vid": "ec5d10b1f270-v00",
+ "ops_before": 0,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 0,
+ "cache_hits": 0,
+ "reduce_seconds": 0.0,
+ "budget_exhausted": false,
+ "probe_log": [],
+ "logs": [
+  "rust-analyzer-2026-09-21-tr4cbc9e-r3-replay-baseline-20260925-163846-a69316.jsonl.gz",
+  "rust-analyzer-2026-09-21-tr4cbc9e-r3-replay-control-20260925-163942-029959.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [
+   [
+    "src/api/mod.rs",
+    43,
+    9,
+    43,
+    18
+   ]
+  ],
+  "actual": [
+   [
+    "~/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rocket-0.5.1/src/lib.rs",
+    0,
+    0,
+    364,
+    0
+   ],
+   [
+    "~/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rocket-0.5.1/src/route/handler.rs",
+    6,
+    9,
+    6,
+    16
+   ],
+   [
+    "~/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rocket-0.5.1/src/route/handler.rs",
+    187,
+    11,
+    187,
+    15
+   ],
+   [
+    "~/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rocket-0.5.1/src/route/mod.rs",
+    0,
+    0,
+    12,
+    0
+   ],
+   [
+    "~/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rocket-0.5.1/src/sentinel.rs",
+    0,
+    0,
+    487,
+    0
+   ],
+   [
+    "~/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rocket-0.5.1/src/sentinel.rs",
+    394,
+    13,
+    394,
+    20
+   ],
+   [
+    "~/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rocket_codegen-0.5.1/src/lib.rs",
+    281,
+    0,
+    281,
+    5
+   ],
+   [
+    "src/api/admin.rs",
+    287,
+    2,
+    287,
+    20
+   ],
+   [
+    "src/api/admin.rs",
+    288,
+    25,
+    288,
+    34
+   ],
+   [
+    "src/api/mod.rs",
+    43,
+    9,
+    43,
+    18
+   ]
+  ]
+ },
+ "ops_after": 0,
+ "total_seconds": 438.2
+}

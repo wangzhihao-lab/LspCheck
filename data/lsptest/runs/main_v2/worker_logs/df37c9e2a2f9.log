@@ -1,0 +1,3 @@
+2026-11-18 11:05:43,402 INFO campaign_run run df37c9e2a2f9: r2_handles on rust-analyzer 2026-09-21, h4ckf0r0day/obscura@0e17221dbb55 seed 2 settled, targets ['crates/obscura-cdp/tests/treewalker_document_order.rs', 'crates/obscura-cli/tests/screenshot_after_eval.rs', 'crates/obscura-cli/tests/text_whitespace.rs']
+2026-11-18 11:07:40,019 INFO campaign_run run df37c9e2a2f9: 3 candidate(s) in 117s; confirming
+2026-11-18 11:07:40,020 INFO campaign_run run df37c9e2a2f9 finished: ok, 0 confirmed of 3 candidate(s), 117s

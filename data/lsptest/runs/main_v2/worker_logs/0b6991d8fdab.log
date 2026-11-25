@@ -1,0 +1,3 @@
+2026-11-18 08:03:59,443 INFO campaign_run run 0b6991d8fdab: r5_transforms on rust-analyzer 2026-09-21, niri-wm/niri@5f4469b6a992 seed 1 settled, targets ['niri-visual-tests/src/cases/gradient_oklch_alpha.rs', 'niri-visual-tests/src/cases/layout.rs', 'src/layer/mod.rs']
+2026-11-18 08:17:53,377 INFO campaign_run run 0b6991d8fdab: 0 candidate(s) in 834s; confirming
+2026-11-18 08:17:53,378 INFO campaign_run run 0b6991d8fdab finished: ok, 0 confirmed of 0 candidate(s), 834s

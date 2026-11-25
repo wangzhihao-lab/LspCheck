@@ -1,0 +1,79 @@
+{
+ "schema": 1,
+ "id": "gopls-42254",
+ "meta": {
+  "server": "gopls",
+  "kind": "gopls",
+  "number": 42254,
+  "url": "https://github.com/golang/go/issues/42254",
+  "title": "x/tools/gopls: can't jump-to-definition on embedded type alias",
+  "oracle_class": "R3",
+  "subtype": "def-consistency",
+  "fix_ref": "golang/tools@5bad45943a20 (internal/lsp: fix godef for embedded type aliases; CL 272186, 'Fixes golang/go#42254')",
+  "fix_shas": [
+   "5bad45943a20282573b574e359809c1a37df2077"
+  ],
+  "pre_version": "v0.5.3",
+  "post_version": "v0.5.4",
+  "pre_build": "v0.5.3",
+  "post_build": "v0.5.4",
+  "build_notes": "Built with the local Go (go1.27.1): v0.5.3 through a wrapper module (its go.mod replaces x/tools), v0.5.4 with go install; the server runs the local go command. The era Go (go1.15) has no darwin/arm64 release. With go1.27 go/types always records aliases as *types.Alias (the gotypesalias setting was removed in Go 1.27); the pre-fix code maps the embedded field's type to an object only for *types.Named (and pointers to it), so it finds no object both for the era's struct{} and for the *types.Alias and keeps the field itself, as in the report. v0.5.3 tagged 2020-11-10, fix merged 2020-11-23, v0.5.4 tagged 2020-11-24.",
+  "candidate_rank": 10,
+  "effort_minutes": 10,
+  "notes": "Old code: definition on an embedded field replaced the field by the object of the field's type, which for an alias is the aliased (here unnamed) type, so no object was found and the answer stayed at the embedded field itself; the fix looks up the field's identifier in types.Info.Uses, which yields the alias's TypeName."
+ },
+ "language": "go",
+ "settings": {},
+ "settings_note": "The issue names no settings.",
+ "session": {
+  "settle_timeout_s": 180
+ },
+ "files": [
+  {
+   "path": "main.go",
+   "provenance": "issue-adapted",
+   "source": "issue body, 'Setup' code block",
+   "note": "the snippet verbatim (two-space indentation kept) after an added package clause 'package p' and a blank line; the snippet has no package clause"
+  },
+  {
+   "path": "go.mod",
+   "provenance": "scaffold",
+   "source": "",
+   "note": "module path and the go directive of the era (Go 1.15, November 2020)"
+  }
+ ],
+ "repro": {
+  "attempt": 1,
+  "timing": "settled",
+  "steps": "Open main.go. Jump to definition on the T embedded in S (line 5, character 2) and on the T of 'var x T' (line 8, character 6). Reported: the second jumps to the alias declaration 'type T = struct{}', the first does not. Probe: both definitions of the same identifier T must be equal.",
+  "ops": [
+   {
+    "kind": "open",
+    "path": "main.go"
+   }
+  ],
+  "probe": {
+   "type": "two_routes_differ",
+   "params": {
+    "relation": "equal",
+    "a": {
+     "method": "definition",
+     "path": "main.go",
+     "position": [
+      5,
+      2
+     ]
+    },
+    "b": {
+     "method": "definition",
+     "path": "main.go",
+     "position": [
+      8,
+      6
+     ]
+    }
+   }
+  }
+ },
+ "attempts": []
+}

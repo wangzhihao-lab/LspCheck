@@ -1,0 +1,3 @@
+2026-09-24 10:50:39,873 INFO campaign_run run d1108226a395: r1_history on ts7 7.0.2, ChromeDevTools/chrome-devtools-mcp@2250cdcde4aa seed 2 settled, targets ['scripts/eval_result.ts', 'scripts/profile/source_map_server.ts', 'tests/shutdown.test.ts']
+2026-09-24 10:58:03,015 INFO campaign_run run d1108226a395: 0 candidate(s) in 443s; confirming
+2026-09-24 10:58:03,015 INFO campaign_run run d1108226a395 finished: ok, 0 confirmed of 0 candidate(s), 443s

@@ -1,0 +1,295 @@
+<scheduler message>
+2026-11-21 07:11:18,807 INFO release_sweep 146 job(s) for gopls,rust-analyzer,ts6,ts7,pyright
+2026-11-21 07:11:18,807 INFO release_sweep lifecycle: gopls-r1-codeaction-key-lost-h7-547744 on gopls v0.16.0
+2026-11-21 07:12:47,751 INFO release_sweep   -> reproduced (3/3, 89s) 
+2026-11-21 07:12:47,751 INFO release_sweep lifecycle: gopls-r1-completion-lost-h7-1a1169 on gopls v0.16.0
+2026-11-21 07:44:34,878 INFO release_sweep   -> reproduced (3/3, 1907s) 
+2026-11-21 07:44:34,878 INFO release_sweep lifecycle: gopls-r1-codeaction-key-lost-h7-547744 on gopls v0.17.0
+2026-11-21 07:45:53,220 INFO release_sweep   -> reproduced (3/3, 78s) 
+2026-11-21 07:45:53,220 INFO release_sweep lifecycle: gopls-r1-completion-lost-h7-1a1169 on gopls v0.17.0
+2026-11-21 08:17:41,235 INFO release_sweep   -> reproduced (3/3, 1908s) 
+2026-11-21 08:17:41,235 INFO release_sweep lifecycle: gopls-r1-codeaction-key-lost-h7-547744 on gopls v0.18.0
+2026-11-21 08:19:03,076 INFO release_sweep   -> reproduced (3/3, 82s) 
+2026-11-21 08:19:03,076 INFO release_sweep lifecycle: gopls-r1-completion-lost-h7-1a1169 on gopls v0.18.0
+2026-11-21 08:50:49,865 INFO release_sweep   -> reproduced (3/3, 1907s) 
+2026-11-21 08:50:49,865 INFO release_sweep lifecycle: gopls-r1-codeaction-key-lost-h7-547744 on gopls v0.19.0+go1.27.1
+2026-11-21 08:52:05,475 INFO release_sweep   -> reproduced (3/3, 76s) 
+2026-11-21 08:52:05,475 INFO release_sweep lifecycle: gopls-r1-completion-lost-h7-1a1169 on gopls v0.19.0+go1.27.1
+2026-11-21 09:23:53,291 INFO release_sweep   -> reproduced (3/3, 1908s) 
+2026-11-21 09:23:53,291 INFO release_sweep lifecycle: gopls-r4-diagnostics-extra-unusedimport-mutation-m3-aefa9e on gopls v0.19.0+go1.27.1
+2026-11-21 09:24:10,198 INFO release_sweep   -> unsettled (0/3, 17s) 
+2026-11-21 09:24:10,198 INFO release_sweep lifecycle: gopls-r5-foldingrange-changed-t4-b07c86 on gopls v0.19.0+go1.27.1
+2026-11-21 09:24:53,139 INFO release_sweep   -> reproduced (3/3, 43s) 
+2026-11-21 09:24:53,139 INFO release_sweep lifecycle: gopls-r1-codeaction-key-lost-h7-547744 on gopls v0.20.0
+2026-11-21 09:26:14,121 INFO release_sweep   -> reproduced (3/3, 81s) 
+2026-11-21 09:26:14,121 INFO release_sweep lifecycle: gopls-r1-completion-lost-h7-1a1169 on gopls v0.20.0
+2026-11-21 09:58:07,152 INFO release_sweep   -> reproduced (3/3, 1913s) 
+2026-11-21 09:58:07,152 INFO release_sweep lifecycle: gopls-r4-diagnostics-extra-unusedimport-mutation-m3-aefa9e on gopls v0.20.0
+2026-11-21 09:58:53,115 INFO release_sweep   -> reproduced (3/3, 46s) 
+2026-11-21 09:58:53,115 INFO release_sweep lifecycle: gopls-r5-foldingrange-changed-t4-b07c86 on gopls v0.20.0
+2026-11-21 09:59:35,784 INFO release_sweep   -> reproduced (3/3, 43s) 
+2026-11-21 09:59:35,784 INFO release_sweep lifecycle: gopls-r1-codeaction-key-lost-h7-547744 on gopls v0.21.0
+2026-11-21 10:00:50,155 INFO release_sweep   -> reproduced (3/3, 74s) 
+2026-11-21 10:00:50,155 INFO release_sweep lifecycle: gopls-r1-completion-lost-h7-1a1169 on gopls v0.21.0
+2026-11-21 10:32:36,881 INFO release_sweep   -> reproduced (3/3, 1907s) 
+2026-11-21 10:32:36,881 INFO release_sweep lifecycle: gopls-r4-diagnostics-extra-unusedimport-mutation-m3-aefa9e on gopls v0.21.0
+2026-11-21 10:32:53,711 INFO release_sweep   -> unsettled (0/3, 17s) 
+2026-11-21 10:32:53,711 INFO release_sweep lifecycle: gopls-r5-foldingrange-changed-t4-b07c86 on gopls v0.21.0
+2026-11-21 10:33:36,420 INFO release_sweep   -> reproduced (3/3, 43s) 
+2026-11-21 10:33:36,420 INFO release_sweep lifecycle: gopls-r1-codeaction-key-lost-h7-547744 on gopls v0.22.0
+2026-11-21 10:34:50,556 INFO release_sweep   -> reproduced (3/3, 74s) 
+2026-11-21 10:34:50,556 INFO release_sweep lifecycle: gopls-r1-completion-lost-h7-1a1169 on gopls v0.22.0
+2026-11-21 11:06:36,998 INFO release_sweep   -> reproduced (3/3, 1906s) 
+2026-11-21 11:06:36,998 INFO release_sweep lifecycle: gopls-r4-diagnostics-extra-unusedimport-mutation-m3-aefa9e on gopls v0.22.0
+2026-11-21 11:06:53,865 INFO release_sweep   -> unsettled (0/3, 17s) 
+2026-11-21 11:06:53,865 INFO release_sweep lifecycle: gopls-r5-foldingrange-changed-t4-b07c86 on gopls v0.22.0
+2026-11-21 11:07:37,066 INFO release_sweep   -> reproduced (3/3, 43s) 
+2026-11-21 11:07:37,066 INFO release_sweep lifecycle: gopls-r1-codeaction-key-lost-h7-547744 on gopls v0.23.0
+2026-11-21 11:08:57,473 INFO release_sweep   -> reproduced (3/3, 80s) 
+2026-11-21 11:08:57,473 INFO release_sweep lifecycle: gopls-r1-completion-lost-h7-1a1169 on gopls v0.23.0
+2026-11-21 11:40:49,927 INFO release_sweep   -> reproduced (3/3, 1912s) 
+2026-11-21 11:40:49,927 INFO release_sweep lifecycle: gopls-r4-diagnostics-extra-unusedimport-mutation-m3-aefa9e on gopls v0.23.0
+2026-11-21 11:41:35,727 INFO release_sweep   -> reproduced (3/3, 46s) 
+2026-11-21 11:41:35,727 INFO release_sweep lifecycle: gopls-r5-foldingrange-changed-t4-b07c86 on gopls v0.23.0
+2026-11-21 11:42:18,208 INFO release_sweep   -> reproduced (3/3, 42s) 
+2026-11-21 11:42:18,209 INFO release_sweep lifecycle: rust-analyzer-r4-completioninsert-gained-completion-e99b79 on rust-analyzer 2024-10-07
+2026-11-21 11:45:50,343 INFO release_sweep   -> reproduced (3/3, 212s) 
+2026-11-21 11:45:50,343 INFO release_sweep lifecycle: rust-analyzer-r4-diagnostics-extra-e0063-mutation-m1-aeef82 on rust-analyzer 2024-10-07
+2026-11-21 11:46:58,926 INFO release_sweep   -> unsettled (0/3, 69s) 
+2026-11-21 11:46:58,926 INFO release_sweep lifecycle: rust-analyzer-r4-completioninsert-gained-completion-e99b79 on rust-analyzer 2025-01-06
+2026-11-21 13:26:41,976 INFO release_sweep   -> unsettled (0/3, 5983s) 
+2026-11-21 13:26:41,978 INFO release_sweep lifecycle: rust-analyzer-r4-diagnostics-extra-e0063-mutation-m1-aeef82 on rust-analyzer 2025-01-06
+2026-11-21 13:27:34,497 INFO release_sweep   -> unsettled (0/3, 52s) 
+2026-11-21 13:27:34,497 INFO release_sweep lifecycle: rust-analyzer-r4-completioninsert-gained-completion-e99b79 on rust-analyzer 2025-04-07
+2026-11-21 13:31:51,879 INFO release_sweep   -> reproduced (3/3, 257s) 
+2026-11-21 13:31:51,879 INFO release_sweep lifecycle: rust-analyzer-r4-diagnostics-extra-e0063-mutation-m1-aeef82 on rust-analyzer 2025-04-07
+2026-11-21 13:32:44,485 INFO release_sweep   -> unsettled (0/3, 53s) 
+2026-11-21 13:32:44,485 INFO release_sweep lifecycle: rust-analyzer-r4-completioninsert-gained-completion-e99b79 on rust-analyzer 2025-10-27
+2026-11-21 13:34:02,468 INFO release_sweep   -> reproduced (3/3, 78s) 
+2026-11-21 13:34:02,468 INFO release_sweep lifecycle: rust-analyzer-r4-diagnostics-extra-e0063-mutation-m1-aeef82 on rust-analyzer 2025-10-27
+2026-11-21 13:34:30,655 INFO release_sweep   -> unsettled (0/3, 28s) 
+2026-11-21 13:34:30,655 INFO release_sweep lifecycle: rust-analyzer-r4-completioninsert-gained-completion-e99b79 on rust-analyzer 2026-01-05
+2026-11-21 13:35:45,734 INFO release_sweep   -> reproduced (3/3, 75s) 
+2026-11-21 13:35:45,734 INFO release_sweep lifecycle: rust-analyzer-r4-diagnostics-extra-e0063-mutation-m1-aeef82 on rust-analyzer 2026-01-05
+2026-11-21 13:36:12,022 INFO release_sweep   -> unsettled (0/3, 26s) 
+2026-11-21 13:36:12,022 INFO release_sweep lifecycle: rust-analyzer-r4-completioninsert-gained-completion-e99b79 on rust-analyzer 2026-04-06
+2026-11-21 13:39:03,028 INFO release_sweep   -> reproduced (3/3, 171s) 
+2026-11-21 13:39:03,028 INFO release_sweep lifecycle: rust-analyzer-r4-diagnostics-extra-e0063-mutation-m1-aeef82 on rust-analyzer 2026-04-06
+2026-11-21 13:42:02,478 INFO release_sweep   -> reproduced (3/3, 179s) 
+2026-11-21 13:42:02,478 INFO release_sweep lifecycle: rust-analyzer-r4-completioninsert-gained-completion-e99b79 on rust-analyzer 2026-07-06
+2026-11-21 13:44:55,397 INFO release_sweep   -> reproduced (3/3, 173s) 
+2026-11-21 13:44:55,398 INFO release_sweep lifecycle: rust-analyzer-r4-diagnostics-extra-e0063-mutation-m1-aeef82 on rust-analyzer 2026-07-06
+2026-11-21 13:47:57,413 INFO release_sweep   -> reproduced (3/3, 182s) 
+2026-11-21 13:47:57,414 INFO release_sweep lifecycle: rust-analyzer-r4-completioninsert-gained-completion-e99b79 on rust-analyzer 2026-09-21
+2026-11-21 13:50:51,342 INFO release_sweep   -> reproduced (3/3, 174s) 
+2026-11-21 13:50:51,342 INFO release_sweep lifecycle: rust-analyzer-r4-diagnostics-extra-e0063-mutation-m1-aeef82 on rust-analyzer 2026-09-21
+2026-11-21 13:53:53,366 INFO release_sweep   -> reproduced (3/3, 182s) 
+2026-11-21 13:53:53,367 INFO release_sweep lifecycle: rust-analyzer-r4-completioninsert-gained-completion-e99b79 on rust-analyzer 2026-09-28
+2026-11-21 13:56:46,195 INFO release_sweep   -> not-reproduced (0/3, 173s) 
+2026-11-21 13:56:46,195 INFO release_sweep lifecycle: rust-analyzer-r4-diagnostics-extra-e0063-mutation-m1-aeef82 on rust-analyzer 2026-09-28
+2026-11-21 13:59:46,082 INFO release_sweep   -> reproduced (3/3, 180s) 
+2026-11-21 13:59:46,083 INFO release_sweep lifecycle: ts6-r1-inlayhint-changed-h9-b9d052 on tsserver 5.5.4+tsls4.3.3
+2026-11-21 14:06:30,377 INFO release_sweep   -> not-reproduced (0/3, 404s) 
+2026-11-21 14:06:30,378 INFO release_sweep lifecycle: ts6-r1-codeaction-extra-h5-f48d27 on tsserver 5.5.4+tsls4.3.3
+2026-11-21 14:07:13,251 INFO release_sweep   -> unsettled (0/3, 43s) 
+2026-11-21 14:07:13,251 INFO release_sweep lifecycle: ts6-r4-diagnostics-changed-1064-2322-quickfix-d597f5 on tsserver 5.5.4+tsls4.3.3
+2026-11-21 14:07:57,585 INFO release_sweep   -> unsettled (0/3, 44s) 
+2026-11-21 14:07:57,585 INFO release_sweep lifecycle: ts6-r4-diagnostics-changed-mutation-m1-34f06f on tsserver 5.5.4+tsls4.3.3
+2026-11-21 14:08:27,053 INFO release_sweep   -> unsettled (0/3, 30s) 
+2026-11-21 14:08:27,053 INFO release_sweep lifecycle: ts6-r4-diagnostics-extra-17002-2552-mutation-m1-727795 on tsserver 5.5.4+tsls4.3.3
+2026-11-21 14:10:16,931 INFO release_sweep   -> reproduced (3/3, 110s) 
+2026-11-21 14:10:16,931 INFO release_sweep lifecycle: ts6-r4-diagnostics-extra-2448-7022-mutation-m1-e5d199 on tsserver 5.5.4+tsls4.3.3
+2026-11-21 14:13:06,726 INFO release_sweep   -> reproduced (3/3, 170s) 
+2026-11-21 14:13:06,726 INFO release_sweep lifecycle: ts6-r1-inlayhint-changed-h9-b9d052 on tsserver 5.6.3+tsls4.3.3
+2026-11-21 14:19:41,134 INFO release_sweep   -> not-reproduced (0/3, 394s) 
+2026-11-21 14:19:41,135 INFO release_sweep lifecycle: ts6-r1-codeaction-extra-h5-f48d27 on tsserver 5.6.3+tsls4.3.3
+2026-11-21 14:20:24,269 INFO release_sweep   -> unsettled (0/3, 43s) 
+2026-11-21 14:20:24,269 INFO release_sweep lifecycle: ts6-r4-diagnostics-changed-1064-2322-quickfix-d597f5 on tsserver 5.6.3+tsls4.3.3
+2026-11-21 14:21:08,933 INFO release_sweep   -> unsettled (0/3, 45s) 
+2026-11-21 14:21:08,933 INFO release_sweep lifecycle: ts6-r4-diagnostics-changed-mutation-m1-34f06f on tsserver 5.6.3+tsls4.3.3
+2026-11-21 14:21:38,453 INFO release_sweep   -> unsettled (0/3, 30s) 
+2026-11-21 14:21:38,453 INFO release_sweep lifecycle: ts6-r4-diagnostics-extra-17002-2552-mutation-m1-727795 on tsserver 5.6.3+tsls4.3.3
+2026-11-21 14:23:29,189 INFO release_sweep   -> reproduced (3/3, 111s) 
+2026-11-21 14:23:29,189 INFO release_sweep lifecycle: ts6-r4-diagnostics-extra-2448-7022-mutation-m1-e5d199 on tsserver 5.6.3+tsls4.3.3
+2026-11-21 14:26:19,915 INFO release_sweep   -> reproduced (3/3, 171s) 
+2026-11-21 14:26:19,915 INFO release_sweep lifecycle: ts6-r1-inlayhint-changed-h9-b9d052 on tsserver 5.7.3+tsls4.3.3
+2026-11-21 14:32:53,094 INFO release_sweep   -> not-reproduced (0/3, 393s) 
+2026-11-21 14:32:53,094 INFO release_sweep lifecycle: ts6-r1-codeaction-extra-h5-f48d27 on tsserver 5.7.3+tsls4.3.3
+2026-11-21 14:33:36,134 INFO release_sweep   -> unsettled (0/3, 43s) 
+2026-11-21 14:33:36,134 INFO release_sweep lifecycle: ts6-r4-diagnostics-changed-1064-2322-quickfix-d597f5 on tsserver 5.7.3+tsls4.3.3
+2026-11-21 14:34:20,610 INFO release_sweep   -> unsettled (0/3, 44s) 
+2026-11-21 14:34:20,610 INFO release_sweep lifecycle: ts6-r4-diagnostics-changed-mutation-m1-34f06f on tsserver 5.7.3+tsls4.3.3
+2026-11-21 14:34:50,246 INFO release_sweep   -> unsettled (0/3, 30s) 
+2026-11-21 14:34:50,246 INFO release_sweep lifecycle: ts6-r4-diagnostics-extra-17002-2552-mutation-m1-727795 on tsserver 5.7.3+tsls4.3.3
+2026-11-21 15:54:26,012 INFO release_sweep   -> reproduced (3/3, 118s) 
+2026-11-21 15:54:26,012 INFO release_sweep lifecycle: ts6-r4-diagnostics-extra-2448-7022-mutation-m1-e5d199 on tsserver 5.7.3+tsls4.3.3
+2026-11-21 15:57:20,685 INFO release_sweep   -> reproduced (3/3, 175s) 
+2026-11-21 15:57:20,686 INFO release_sweep lifecycle: ts6-r1-inlayhint-changed-h9-b9d052 on tsserver 5.8.3+tsls4.3.4
+2026-11-21 16:03:51,400 INFO release_sweep   -> not-reproduced (0/3, 391s) 
+2026-11-21 16:03:51,400 INFO release_sweep lifecycle: ts6-r1-codeaction-extra-h5-f48d27 on tsserver 5.8.3+tsls4.3.4
+2026-11-21 16:04:34,396 INFO release_sweep   -> unsettled (0/3, 43s) 
+2026-11-21 16:04:34,396 INFO release_sweep lifecycle: ts6-r4-diagnostics-changed-1064-2322-quickfix-d597f5 on tsserver 5.8.3+tsls4.3.4
+2026-11-21 16:05:18,544 INFO release_sweep   -> unsettled (0/3, 44s) 
+2026-11-21 16:05:18,544 INFO release_sweep lifecycle: ts6-r4-diagnostics-changed-mutation-m1-34f06f on tsserver 5.8.3+tsls4.3.4
+2026-11-21 16:05:47,603 INFO release_sweep   -> unsettled (0/3, 29s) 
+2026-11-21 16:05:47,603 INFO release_sweep lifecycle: ts6-r4-diagnostics-extra-17002-2552-mutation-m1-727795 on tsserver 5.8.3+tsls4.3.4
+2026-11-21 16:07:34,512 INFO release_sweep   -> reproduced (3/3, 107s) 
+2026-11-21 16:07:34,512 INFO release_sweep lifecycle: ts6-r4-diagnostics-extra-2448-7022-mutation-m1-e5d199 on tsserver 5.8.3+tsls4.3.4
+2026-11-21 16:10:22,614 INFO release_sweep   -> reproduced (3/3, 168s) 
+2026-11-21 16:10:22,614 INFO release_sweep lifecycle: ts6-r1-inlayhint-changed-h9-b9d052 on tsserver 5.9.3+tsls5.0.0
+2026-11-21 16:16:50,659 INFO release_sweep   -> not-reproduced (0/3, 388s) 
+2026-11-21 16:16:50,660 INFO release_sweep lifecycle: ts6-r1-codeaction-extra-h5-f48d27 on tsserver 5.9.3+tsls5.0.0
+2026-11-21 16:17:33,597 INFO release_sweep   -> unsettled (0/3, 43s) 
+2026-11-21 16:17:33,597 INFO release_sweep lifecycle: ts6-r4-diagnostics-changed-1064-2322-quickfix-d597f5 on tsserver 5.9.3+tsls5.0.0
+2026-11-21 16:18:17,748 INFO release_sweep   -> unsettled (0/3, 44s) 
+2026-11-21 16:18:17,749 INFO release_sweep lifecycle: ts6-r4-diagnostics-changed-mutation-m1-34f06f on tsserver 5.9.3+tsls5.0.0
+2026-11-21 16:18:46,754 INFO release_sweep   -> unsettled (0/3, 29s) 
+2026-11-21 16:18:46,755 INFO release_sweep lifecycle: ts6-r4-diagnostics-extra-17002-2552-mutation-m1-727795 on tsserver 5.9.3+tsls5.0.0
+2026-11-21 16:20:33,532 INFO release_sweep   -> reproduced (3/3, 107s) 
+2026-11-21 16:20:33,533 INFO release_sweep lifecycle: ts6-r4-diagnostics-extra-2448-7022-mutation-m1-e5d199 on tsserver 5.9.3+tsls5.0.0
+2026-11-21 16:23:21,529 INFO release_sweep   -> reproduced (3/3, 168s) 
+2026-11-21 16:23:21,529 INFO release_sweep lifecycle: ts6-r1-inlayhint-changed-h9-b9d052 on tsserver 6.0.3+tsls5.1.3
+2026-11-21 16:29:53,002 INFO release_sweep   -> not-reproduced (0/3, 392s) 
+2026-11-21 16:29:53,003 INFO release_sweep lifecycle: ts6-r1-codeaction-extra-h5-f48d27 on tsserver 6.0.3+tsls5.1.3
+2026-11-21 16:30:35,810 INFO release_sweep   -> reproduced (3/3, 43s) 
+2026-11-21 16:30:35,810 INFO release_sweep lifecycle: ts6-r4-diagnostics-changed-1064-2322-quickfix-d597f5 on tsserver 6.0.3+tsls5.1.3
+2026-11-21 16:32:33,296 INFO release_sweep   -> reproduced (3/3, 118s) 
+2026-11-21 16:32:33,296 INFO release_sweep lifecycle: ts6-r4-diagnostics-changed-mutation-m1-34f06f on tsserver 6.0.3+tsls5.1.3
+2026-11-21 16:34:20,430 INFO release_sweep   -> reproduced (3/3, 107s) 
+2026-11-21 16:34:20,430 INFO release_sweep lifecycle: ts6-r4-diagnostics-extra-17002-2552-mutation-m1-727795 on tsserver 6.0.3+tsls5.1.3
+2026-11-21 16:36:08,160 INFO release_sweep   -> reproduced (3/3, 108s) 
+2026-11-21 16:36:08,160 INFO release_sweep lifecycle: ts6-r4-diagnostics-extra-2448-7022-mutation-m1-e5d199 on tsserver 6.0.3+tsls5.1.3
+2026-11-21 16:38:56,801 INFO release_sweep   -> reproduced (3/3, 169s) 
+2026-11-21 16:38:56,801 INFO release_sweep lifecycle: ts6-r1-inlayhint-changed-h9-b9d052 on tsserver 6.0.3+tsls6.0.0
+2026-11-21 16:45:25,191 INFO release_sweep   -> not-reproduced (0/3, 388s) 
+2026-11-21 16:45:25,192 INFO release_sweep lifecycle: ts6-r1-codeaction-extra-h5-f48d27 on tsserver 6.0.3+tsls6.0.0
+2026-11-21 16:46:07,910 INFO release_sweep   -> reproduced (3/3, 43s) 
+2026-11-21 16:46:07,910 INFO release_sweep lifecycle: ts6-r4-diagnostics-changed-1064-2322-quickfix-d597f5 on tsserver 6.0.3+tsls6.0.0
+2026-11-21 16:48:05,867 INFO release_sweep   -> reproduced (3/3, 118s) 
+2026-11-21 16:48:05,867 INFO release_sweep lifecycle: ts6-r4-diagnostics-changed-mutation-m1-34f06f on tsserver 6.0.3+tsls6.0.0
+2026-11-21 16:49:53,507 INFO release_sweep   -> reproduced (3/3, 108s) 
+2026-11-21 16:49:53,507 INFO release_sweep lifecycle: ts6-r4-diagnostics-extra-17002-2552-mutation-m1-727795 on tsserver 6.0.3+tsls6.0.0
+2026-11-21 16:51:40,846 INFO release_sweep   -> reproduced (3/3, 107s) 
+2026-11-21 16:51:40,847 INFO release_sweep lifecycle: ts6-r4-diagnostics-extra-2448-7022-mutation-m1-e5d199 on tsserver 6.0.3+tsls6.0.0
+2026-11-21 16:54:29,385 INFO release_sweep   -> reproduced (3/3, 168s) 
+2026-11-21 16:54:29,385 INFO release_sweep lifecycle: ts6-r1-inlayhint-changed-h9-b9d052 on tsserver 6.0.3+tsls6.0.1
+2026-11-21 17:00:58,569 INFO release_sweep   -> not-reproduced (0/3, 389s) 
+2026-11-21 17:00:58,569 INFO release_sweep lifecycle: ts6-r1-codeaction-extra-h5-f48d27 on tsserver 6.0.3+tsls6.0.1
+2026-11-21 17:01:41,290 INFO release_sweep   -> reproduced (3/3, 43s) 
+2026-11-21 17:01:41,290 INFO release_sweep lifecycle: ts6-r4-diagnostics-changed-1064-2322-quickfix-d597f5 on tsserver 6.0.3+tsls6.0.1
+2026-11-21 17:03:39,062 INFO release_sweep   -> reproduced (3/3, 118s) 
+2026-11-21 17:03:39,062 INFO release_sweep lifecycle: ts6-r4-diagnostics-changed-mutation-m1-34f06f on tsserver 6.0.3+tsls6.0.1
+2026-11-21 17:05:26,630 INFO release_sweep   -> reproduced (3/3, 108s) 
+2026-11-21 17:05:26,630 INFO release_sweep lifecycle: ts6-r4-diagnostics-extra-17002-2552-mutation-m1-727795 on tsserver 6.0.3+tsls6.0.1
+2026-11-21 17:07:14,109 INFO release_sweep   -> reproduced (3/3, 108s) 
+2026-11-21 17:07:14,109 INFO release_sweep lifecycle: ts6-r4-diagnostics-extra-2448-7022-mutation-m1-e5d199 on tsserver 6.0.3+tsls6.0.1
+2026-11-21 17:10:03,219 INFO release_sweep   -> reproduced (3/3, 169s) 
+2026-11-21 17:10:03,219 INFO release_sweep lifecycle: pyright-r0-references-result-error-32603-fresh-pair-2718c4 on pyright 1.1.383
+2026-11-21 17:10:12,342 INFO release_sweep   -> reproduced (3/3, 9s) 
+2026-11-21 17:10:12,343 INFO release_sweep lifecycle: pyright-r1-hover-text-h2-fb2ed0 on pyright 1.1.383
+2026-11-21 17:11:05,141 INFO release_sweep   -> not-reproduced (0/3, 53s) 
+2026-11-21 17:11:05,141 INFO release_sweep lifecycle: pyright-r1-hover-text-h5-f24c4e on pyright 1.1.383
+2026-11-21 17:12:20,130 INFO release_sweep   -> reproduced (3/3, 75s) 
+2026-11-21 17:12:20,131 INFO release_sweep lifecycle: pyright-r1-references-extra-h9-37c1a2 on pyright 1.1.383
+2026-11-21 17:12:49,521 INFO release_sweep   -> reproduced (3/3, 29s) 
+2026-11-21 17:12:49,521 INFO release_sweep lifecycle: pyright-r1-signaturehelp-changed-h9-846c6c on pyright 1.1.383
+2026-11-21 17:13:19,876 INFO release_sweep   -> not-reproduced (0/3, 30s) 
+2026-11-21 17:13:19,876 INFO release_sweep lifecycle: pyright-r4-completioninsert-gained-completion-79a584 on pyright 1.1.383
+2026-11-21 17:14:08,490 INFO release_sweep   -> reproduced (3/3, 49s) 
+2026-11-21 17:14:08,491 INFO release_sweep lifecycle: pyright-r0-references-result-error-32603-fresh-pair-2718c4 on pyright 1.1.392
+2026-11-21 17:14:17,500 INFO release_sweep   -> reproduced (3/3, 9s) 
+2026-11-21 17:14:17,501 INFO release_sweep lifecycle: pyright-r1-hover-text-h2-fb2ed0 on pyright 1.1.392
+2026-11-21 17:15:10,338 INFO release_sweep   -> reproduced (3/3, 53s) 
+2026-11-21 17:15:10,339 INFO release_sweep lifecycle: pyright-r1-hover-text-h5-f24c4e on pyright 1.1.392
+2026-11-21 17:16:24,936 INFO release_sweep   -> reproduced (3/3, 75s) 
+2026-11-21 17:16:24,936 INFO release_sweep lifecycle: pyright-r1-references-extra-h9-37c1a2 on pyright 1.1.392
+2026-11-21 17:16:54,310 INFO release_sweep   -> reproduced (3/3, 29s) 
+2026-11-21 17:16:54,310 INFO release_sweep lifecycle: pyright-r1-signaturehelp-changed-h9-846c6c on pyright 1.1.392
+2026-11-21 17:17:24,174 INFO release_sweep   -> not-reproduced (0/3, 30s) 
+2026-11-21 17:17:24,174 INFO release_sweep lifecycle: pyright-r4-completioninsert-gained-completion-79a584 on pyright 1.1.392
+2026-11-21 17:18:12,794 INFO release_sweep   -> reproduced (3/3, 49s) 
+2026-11-21 17:18:12,794 INFO release_sweep lifecycle: pyright-r0-references-result-error-32603-fresh-pair-2718c4 on pyright 1.1.399
+2026-11-21 17:18:21,937 INFO release_sweep   -> reproduced (3/3, 9s) 
+2026-11-21 17:18:21,937 INFO release_sweep lifecycle: pyright-r1-hover-text-h2-fb2ed0 on pyright 1.1.399
+2026-11-21 17:19:15,525 INFO release_sweep   -> reproduced (3/3, 54s) 
+2026-11-21 17:19:15,526 INFO release_sweep lifecycle: pyright-r1-hover-text-h5-f24c4e on pyright 1.1.399
+2026-11-21 17:20:33,896 INFO release_sweep   -> reproduced (3/3, 78s) 
+2026-11-21 17:20:33,897 INFO release_sweep lifecycle: pyright-r1-references-extra-h9-37c1a2 on pyright 1.1.399
+2026-11-21 17:21:03,747 INFO release_sweep   -> reproduced (3/3, 30s) 
+2026-11-21 17:21:03,747 INFO release_sweep lifecycle: pyright-r1-signaturehelp-changed-h9-846c6c on pyright 1.1.399
+2026-11-21 17:21:34,049 INFO release_sweep   -> not-reproduced (0/3, 30s) 
+2026-11-21 17:21:34,050 INFO release_sweep lifecycle: pyright-r4-completioninsert-gained-completion-79a584 on pyright 1.1.399
+2026-11-21 17:22:22,793 INFO release_sweep   -> reproduced (3/3, 49s) 
+2026-11-21 17:22:22,793 INFO release_sweep lifecycle: pyright-r0-references-result-error-32603-fresh-pair-2718c4 on pyright 1.1.403
+2026-11-21 17:22:31,921 INFO release_sweep   -> reproduced (3/3, 9s) 
+2026-11-21 17:22:31,922 INFO release_sweep lifecycle: pyright-r1-hover-text-h2-fb2ed0 on pyright 1.1.403
+2026-11-21 17:23:25,616 INFO release_sweep   -> reproduced (3/3, 54s) 
+2026-11-21 17:23:25,616 INFO release_sweep lifecycle: pyright-r1-hover-text-h5-f24c4e on pyright 1.1.403
+2026-11-21 17:24:44,484 INFO release_sweep   -> reproduced (3/3, 79s) 
+2026-11-21 17:24:44,485 INFO release_sweep lifecycle: pyright-r1-references-extra-h9-37c1a2 on pyright 1.1.403
+2026-11-21 17:25:14,326 INFO release_sweep   -> reproduced (3/3, 30s) 
+2026-11-21 17:25:14,327 INFO release_sweep lifecycle: pyright-r1-signaturehelp-changed-h9-846c6c on pyright 1.1.403
+2026-11-21 17:25:44,877 INFO release_sweep   -> not-reproduced (0/3, 30s) 
+2026-11-21 17:25:44,878 INFO release_sweep lifecycle: pyright-r4-completioninsert-gained-completion-79a584 on pyright 1.1.403
+2026-11-21 17:26:33,676 INFO release_sweep   -> reproduced (3/3, 49s) 
+2026-11-21 17:26:33,677 INFO release_sweep lifecycle: pyright-r0-references-result-error-32603-fresh-pair-2718c4 on pyright 1.1.406
+2026-11-21 17:26:42,746 INFO release_sweep   -> reproduced (3/3, 9s) 
+2026-11-21 17:26:42,746 INFO release_sweep lifecycle: pyright-r1-hover-text-h2-fb2ed0 on pyright 1.1.406
+2026-11-21 17:27:50,009 INFO release_sweep   -> reproduced (3/3, 67s) 
+2026-11-21 17:27:50,009 INFO release_sweep lifecycle: pyright-r1-hover-text-h5-f24c4e on pyright 1.1.406
+2026-11-21 17:29:01,293 INFO release_sweep   -> reproduced (3/3, 71s) 
+2026-11-21 17:29:01,293 INFO release_sweep lifecycle: pyright-r1-references-extra-h9-37c1a2 on pyright 1.1.406
+2026-11-21 17:29:30,749 INFO release_sweep   -> reproduced (3/3, 30s) 
+2026-11-21 17:29:30,749 INFO release_sweep lifecycle: pyright-r1-signaturehelp-changed-h9-846c6c on pyright 1.1.406
+2026-11-21 17:30:01,080 INFO release_sweep   -> not-reproduced (0/3, 30s) 
+2026-11-21 17:30:01,081 INFO release_sweep lifecycle: pyright-r4-completioninsert-gained-completion-79a584 on pyright 1.1.406
+2026-11-21 17:30:49,940 INFO release_sweep   -> reproduced (3/3, 49s) 
+2026-11-21 17:30:49,941 INFO release_sweep lifecycle: pyright-r0-references-result-error-32603-fresh-pair-2718c4 on pyright 1.1.408
+2026-11-21 17:30:58,990 INFO release_sweep   -> reproduced (3/3, 9s) 
+2026-11-21 17:30:58,991 INFO release_sweep lifecycle: pyright-r1-hover-text-h2-fb2ed0 on pyright 1.1.408
+2026-11-21 17:32:07,116 INFO release_sweep   -> reproduced (3/3, 68s) 
+2026-11-21 17:32:07,116 INFO release_sweep lifecycle: pyright-r1-hover-text-h5-f24c4e on pyright 1.1.408
+2026-11-21 17:33:18,463 INFO release_sweep   -> reproduced (3/3, 71s) 
+2026-11-21 17:33:18,463 INFO release_sweep lifecycle: pyright-r1-references-extra-h9-37c1a2 on pyright 1.1.408
+2026-11-21 17:33:47,911 INFO release_sweep   -> reproduced (3/3, 29s) 
+2026-11-21 17:33:47,911 INFO release_sweep lifecycle: pyright-r1-signaturehelp-changed-h9-846c6c on pyright 1.1.408
+2026-11-21 17:34:18,267 INFO release_sweep   -> not-reproduced (0/3, 30s) 
+2026-11-21 17:34:18,267 INFO release_sweep lifecycle: pyright-r4-completioninsert-gained-completion-79a584 on pyright 1.1.408
+2026-11-21 17:35:07,024 INFO release_sweep   -> reproduced (3/3, 49s) 
+2026-11-21 17:35:07,024 INFO release_sweep lifecycle: pyright-r0-references-result-error-32603-fresh-pair-2718c4 on pyright 1.1.409
+2026-11-21 17:35:16,305 INFO release_sweep   -> reproduced (3/3, 9s) 
+2026-11-21 17:35:16,306 INFO release_sweep lifecycle: pyright-r1-hover-text-h2-fb2ed0 on pyright 1.1.409
+2026-11-21 17:36:25,030 INFO release_sweep   -> reproduced (3/3, 69s) 
+2026-11-21 17:36:25,031 INFO release_sweep lifecycle: pyright-r1-hover-text-h5-f24c4e on pyright 1.1.409
+2026-11-21 17:37:36,169 INFO release_sweep   -> reproduced (3/3, 71s) 
+2026-11-21 17:37:36,170 INFO release_sweep lifecycle: pyright-r1-references-extra-h9-37c1a2 on pyright 1.1.409
+2026-11-21 17:38:05,829 INFO release_sweep   -> reproduced (3/3, 30s) 
+2026-11-21 17:38:05,829 INFO release_sweep lifecycle: pyright-r1-signaturehelp-changed-h9-846c6c on pyright 1.1.409
+2026-11-21 17:38:36,708 INFO release_sweep   -> reproduced (3/3, 31s) 
+2026-11-21 17:38:36,709 INFO release_sweep lifecycle: pyright-r4-completioninsert-gained-completion-79a584 on pyright 1.1.409
+2026-11-21 17:39:25,820 INFO release_sweep   -> reproduced (3/3, 49s) 
+2026-11-21 17:39:25,821 INFO release_sweep lifecycle: pyright-r0-references-result-error-32603-fresh-pair-2718c4 on pyright 1.1.412
+2026-11-21 17:39:35,015 INFO release_sweep   -> reproduced (3/3, 9s) 
+2026-11-21 17:39:35,016 INFO release_sweep lifecycle: pyright-r1-hover-text-h2-fb2ed0 on pyright 1.1.412
+2026-11-21 17:41:16,480 INFO release_sweep   -> reproduced (3/3, 102s) 
+2026-11-21 17:41:16,480 INFO release_sweep lifecycle: pyright-r1-hover-text-h5-f24c4e on pyright 1.1.412
+2026-11-21 17:42:26,367 INFO release_sweep   -> reproduced (3/3, 70s) 
+2026-11-21 17:42:26,367 INFO release_sweep lifecycle: pyright-r1-references-extra-h9-37c1a2 on pyright 1.1.412
+2026-11-21 17:42:55,831 INFO release_sweep   -> reproduced (3/3, 30s) 
+2026-11-21 17:42:55,832 INFO release_sweep lifecycle: pyright-r1-signaturehelp-changed-h9-846c6c on pyright 1.1.412
+2026-11-21 17:43:26,661 INFO release_sweep   -> reproduced (3/3, 31s) 
+2026-11-21 17:43:26,661 INFO release_sweep lifecycle: pyright-r4-completioninsert-gained-completion-79a584 on pyright 1.1.412
+2026-11-21 17:44:15,719 INFO release_sweep   -> reproduced (3/3, 49s) 
+2026-11-21 17:44:15,720 INFO release_sweep lifecycle: pyright-r0-references-result-error-32603-fresh-pair-2718c4 on pyright 1.1.414
+2026-11-21 17:44:24,963 INFO release_sweep   -> reproduced (3/3, 9s) 
+2026-11-21 17:44:24,964 INFO release_sweep lifecycle: pyright-r1-hover-text-h2-fb2ed0 on pyright 1.1.414
+2026-11-21 17:45:36,713 INFO release_sweep   -> reproduced (3/3, 72s) 
+2026-11-21 17:45:36,713 INFO release_sweep lifecycle: pyright-r1-hover-text-h5-f24c4e on pyright 1.1.414
+2026-11-21 17:46:47,167 INFO release_sweep   -> reproduced (3/3, 70s) 
+2026-11-21 17:46:47,167 INFO release_sweep lifecycle: pyright-r1-references-extra-h9-37c1a2 on pyright 1.1.414
+2026-11-21 17:47:17,069 INFO release_sweep   -> reproduced (3/3, 30s) 
+2026-11-21 17:47:17,069 INFO release_sweep lifecycle: pyright-r1-signaturehelp-changed-h9-846c6c on pyright 1.1.414
+2026-11-21 17:47:48,506 INFO release_sweep   -> reproduced (3/3, 31s) 
+2026-11-21 17:47:48,506 INFO release_sweep lifecycle: pyright-r4-completioninsert-gained-completion-79a584 on pyright 1.1.414
+2026-11-21 17:48:37,655 INFO release_sweep   -> reproduced (3/3, 49s) 
+2026-11-21 17:48:37,655 INFO release_sweep all jobs of gopls,rust-analyzer,ts6,ts7,pyright done

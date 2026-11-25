@@ -1,0 +1,3 @@
+2026-11-18 09:05:35,290 INFO campaign_run run a11764cfa915: r5_transforms on ts7 7.0.2, mifi/lossless-cut@85cb95f6aeae seed 1 settled, targets ['src/common/util.ts', 'src/renderer/src/edlFormats.test.ts', 'src/renderer/src/worker/eval.ts']
+2026-11-18 09:11:27,634 INFO campaign_run run a11764cfa915: 0 candidate(s) in 352s; confirming
+2026-11-18 09:11:27,635 INFO campaign_run run a11764cfa915 finished: ok, 0 confirmed of 0 candidate(s), 352s

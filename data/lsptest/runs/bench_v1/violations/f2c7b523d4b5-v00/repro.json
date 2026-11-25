@@ -1,0 +1,203 @@
+{
+ "format": 1,
+ "campaign": "bench_v1",
+ "vid": "f2c7b523d4b5-v00",
+ "run_id": "f2c7b523d4b5",
+ "oracle": "r4_edits",
+ "server": {
+  "kind": "rust-analyzer",
+  "version": "2024-08-05"
+ },
+ "project": {
+  "name": "rust-analyzer-17728",
+  "source": "dir",
+  "ref": "data/lsp_bench/cases/rust-analyzer-17728/project",
+  "commit": "",
+  "language": "rust"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 240.0,
+  "request_timeout_s": 60.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "src/main.rs",
+    "positions": [
+     [
+      0,
+      8
+     ],
+     [
+      0,
+      12
+     ],
+     [
+      0,
+      18
+     ],
+     [
+      0,
+      25
+     ],
+     [
+      0,
+      33
+     ],
+     [
+      0,
+      37
+     ],
+     [
+      2,
+      4
+     ],
+     [
+      2,
+      15
+     ],
+     [
+      4,
+      5
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      11
+     ],
+     [
+      0,
+      13
+     ],
+     [
+      0,
+      20
+     ],
+     [
+      0,
+      28
+     ],
+     [
+      0,
+      36
+     ],
+     [
+      0,
+      38
+     ],
+     [
+      2,
+      6
+     ],
+     [
+      2,
+      18
+     ],
+     [
+      4,
+      7
+     ]
+    ],
+    "names": [
+     "Result",
+     "T",
+     "std",
+     "result",
+     "Result",
+     "T",
+     "foo",
+     "Result",
+     "main"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "completionInsert",
+  "path": "src/main.rs",
+  "line": 0,
+  "character": 20,
+  "extra": "shift_right_and_insert!(…) (use std::arch::aarch64::shift_right_and_insert)"
+ },
+ "ops": [],
+ "case": {
+  "character": 20,
+  "edits": [
+   {
+    "newText": "shift_right_and_insert!()",
+    "range": {
+     "end": {
+      "character": 20,
+      "line": 0
+     },
+     "start": {
+      "character": 17,
+      "line": 0
+     }
+    }
+   },
+   {
+    "newText": "use std::arch::aarch64::shift_right_and_insert;\n\n",
+    "range": {
+     "end": {
+      "character": 0,
+      "line": 0
+     },
+     "start": {
+      "character": 0,
+      "line": 0
+     }
+    }
+   }
+  ],
+  "excerpt": "type Result<T> = shift_right_and_insert!()::result::Result<T, ()>;",
+  "item_kind": 3,
+  "kind": "completion",
+  "label": "shift_right_and_insert!(…) (use std::arch::aarch64::shift_right_and_insert)",
+  "line": 0,
+  "name": "std",
+  "new_errors": [
+   "3:18: missing angle brackets in associated item path"
+  ],
+  "path": "src/main.rs"
+ },
+ "shape": "completionInsert:gained",
+ "signature": "rust-analyzer|r4_edits|completionInsert:gained",
+ "expected": [],
+ "actual": [
+  "missing angle brackets in associated item path"
+ ],
+ "reproduced": "3/3",
+ "note": "accepting completion item 'shift_right_and_insert!(…) (use std::arch::aarch64::shift_right_and_insert)' (kind 3) after 'std' at src/main.rs:1:21 introduces ['3:18: missing angle brackets in associated item path']; confirmed in a fresh session on the original content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 283s",
+ "violation": {
+  "oracle": "r4_edits",
+  "server": "rust-analyzer-2024-08-05",
+  "project": "rust-analyzer-17728",
+  "key": {
+   "method": "completionInsert",
+   "path": "src/main.rs",
+   "line": 0,
+   "character": 20,
+   "extra": "shift_right_and_insert!(…) (use std::arch::aarch64::shift_right_and_insert)"
+  },
+  "expected": [],
+  "actual": [
+   "missing angle brackets in associated item path"
+  ],
+  "ops": [],
+  "detail": "{\"case\": {\"character\": 20, \"edits\": [{\"newText\": \"shift_right_and_insert!()\", \"range\": {\"end\": {\"character\": 20, \"line\": 0}, \"start\": {\"character\": 17, \"line\": 0}}}, {\"newText\": \"use std::arch::aarch64::shift_right_and_insert;\\n\\n\", \"range\": {\"end\": {\"character\": 0, \"line\": 0}, \"start\": {\"character\": 0, \"line\": 0}}}], \"excerpt\": \"type Result<T> = shift_right_and_insert!()::result::Result<T, ()>;\", \"item_kind\": 3, \"kind\": \"completion\", \"label\": \"shift_right_and_insert!(\\u2026) (use std::arch::aarch64::shift_right_and_insert)\", \"line\": 0, \"name\": \"std\", \"new_errors\": [\"3:18: missing angle brackets in associated item path\"], \"path\": \"src/main.rs\"}, \"note\": \"accepting completion item 'shift_right_and_insert!(\\u2026) (use std::arch::aarch64::shift_right_and_insert)' (kind 3) after 'std' at src/main.rs:1:21 introduces ['3:18: missing angle brackets in associated item path']; confirmed in a fresh session on the original content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 283s\", \"shape\": \"completionInsert:gained\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "rust-analyzer|r4_edits|completionInsert:gained",
+  "run_id": "f2c7b523d4b5"
+ },
+ "replay_logs": [
+  "logs/rust-analyzer-2024-08-05-f2c7b523d4b5-r4-replay-case-20260925-002142-2d0cdc.jsonl.gz",
+  "logs/rust-analyzer-2024-08-05-f2c7b523d4b5-r4-replay-control-20260925-002214-cc725f.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

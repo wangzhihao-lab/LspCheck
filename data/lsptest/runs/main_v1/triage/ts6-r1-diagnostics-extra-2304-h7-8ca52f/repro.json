@@ -1,0 +1,430 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "43c648d37a2b-v01",
+ "run_id": "43c648d37a2b",
+ "oracle": "r1_history",
+ "server": {
+  "kind": "ts6",
+  "version": "6.0.3"
+ },
+ "project": {
+  "name": "react-hook-form/react-hook-form@5fd9ef65290b",
+  "source": "corpus",
+  "ref": "temp/corpus/react-hook-form__react-hook-form@5fd9ef65290b",
+  "commit": "5fd9ef65290bef2ccaa7ac96dc8d5d55478b5410",
+  "language": "typescript"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "race0",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "app/src/main.tsx",
+    "positions": [],
+    "ends": [],
+    "names": []
+   },
+   {
+    "path": "examples/V7/validationOnFieldBlur.tsx",
+    "positions": [],
+    "ends": [],
+    "names": []
+   },
+   {
+    "path": "src/logic/skipValidation.ts",
+    "positions": [],
+    "ends": [],
+    "names": []
+   }
+  ]
+ },
+ "key": {
+  "method": "diagnostics",
+  "path": "examples/V7/validationOnFieldBlur.tsx",
+  "line": -1,
+  "character": -1,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "examples/V7/validationOnFieldBlur.tsx"
+  },
+  {
+   "kind": "request",
+   "path": "examples/V7/validationOnFieldBlur.tsx",
+   "start": [
+    9,
+    9
+   ],
+   "text": "typeDefinition"
+  },
+  {
+   "kind": "request",
+   "path": "examples/V7/validationOnFieldBlur.tsx",
+   "start": [
+    37,
+    10
+   ],
+   "text": "hover"
+  }
+ ],
+ "case": {
+  "chain_step": 0,
+  "families": [],
+  "family": "H7",
+  "history_index": 8,
+  "history_seed": 1009,
+  "mode": "fresh",
+  "note": "nest 1>0: H6 config round trip on app/tsconfig.json: line 11 deleted | H8 after app/src/main.tsx: delete \" ReactDOM from 'react-\" on line 1 and its inverse, 4 requests in a shuffled order: completion@app/src/main.tsx:5:32, documentHighlight@src/logic/skipValidation.ts:7:25, typeDefinition@examples/V7/validationOnFieldBlur.tsx:9:9, hover@examples/V7/validationOnFieldBlur.tsx:37:10",
+  "seed": 1,
+  "timing": "race0"
+ },
+ "shape": "diagnostics:extra:2304",
+ "signature": "ts6|r1_history|diagnostics:extra:2304",
+ "expected": [
+  [
+   0,
+   0,
+   0,
+   26,
+   4,
+   "6133",
+   "typescript",
+   "'React' is declared but its value is never read."
+  ],
+  [
+   1,
+   0,
+   1,
+   33,
+   4,
+   "6133",
+   "typescript",
+   "'ReactDOM' is declared but its value is never read."
+  ],
+  [
+   2,
+   24,
+   2,
+   41,
+   1,
+   "2307",
+   "typescript",
+   "Cannot find module 'react-hook-form' or its corresponding type declarations."
+  ],
+  [
+   12,
+   20,
+   12,
+   24,
+   1,
+   "7006",
+   "typescript",
+   "Parameter 'data' implicitly has an 'any' type."
+  ],
+  [
+   38,
+   33,
+   38,
+   44,
+   1,
+   "2322",
+   "typescript",
+   "Type '{ children: string; htmlFor: string; placeholder: string; }' is not assignable to type 'DetailedHTMLProps<LabelHTMLAttributes<HTMLLabelElement>, HTMLLabelElement>'. Property 'placeholder' does not exist on type 'DetailedHTMLProps<LabelHTMLAttributes<HTMLLabelElement>, HTMLLabelElement>'."
+  ]
+ ],
+ "actual": [
+  [
+   0,
+   0,
+   0,
+   26,
+   4,
+   "6133",
+   "typescript",
+   "'React' is declared but its value is never read."
+  ],
+  [
+   1,
+   0,
+   1,
+   33,
+   4,
+   "6133",
+   "typescript",
+   "'ReactDOM' is declared but its value is never read."
+  ],
+  [
+   2,
+   24,
+   2,
+   41,
+   1,
+   "2307",
+   "typescript",
+   "Cannot find module 'react-hook-form' or its corresponding type declarations."
+  ],
+  [
+   12,
+   20,
+   12,
+   24,
+   1,
+   "7006",
+   "typescript",
+   "Parameter 'data' implicitly has an 'any' type."
+  ],
+  [
+   37,
+   9,
+   37,
+   12,
+   1,
+   "2304",
+   "typescript",
+   "Cannot find name 'div'."
+  ],
+  [
+   38,
+   33,
+   38,
+   44,
+   1,
+   "2322",
+   "typescript",
+   "Type '{ children: string; htmlFor: string; placeholder: string; }' is not assignable to type 'DetailedHTMLProps<LabelHTMLAttributes<HTMLLabelElement>, HTMLLabelElement>'. Property 'placeholder' does not exist on type 'DetailedHTMLProps<LabelHTMLAttributes<HTMLLabelElement>, HTMLLabelElement>'."
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "H7: nest 1>0: H6 config round trip on app/tsconfig.json: line 11 deleted | H8 after app/src/main.tsx: delete \" ReactDOM from 'react-\" on line 1 and its inverse, 4 requests in a shuffled order: completion@; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 155s",
+ "violation": {
+  "oracle": "r1_history",
+  "server": "ts6-6.0.3",
+  "project": "react-hook-form/react-hook-form@5fd9ef65290b",
+  "key": {
+   "method": "diagnostics",
+   "path": "examples/V7/validationOnFieldBlur.tsx",
+   "line": -1,
+   "character": -1,
+   "extra": ""
+  },
+  "expected": [
+   [
+    0,
+    0,
+    0,
+    26,
+    4,
+    "6133",
+    "typescript",
+    "'React' is declared but its value is never read."
+   ],
+   [
+    1,
+    0,
+    1,
+    33,
+    4,
+    "6133",
+    "typescript",
+    "'ReactDOM' is declared but its value is never read."
+   ],
+   [
+    2,
+    24,
+    2,
+    41,
+    1,
+    "2307",
+    "typescript",
+    "Cannot find module 'react-hook-form' or its corresponding type declarations."
+   ],
+   [
+    12,
+    20,
+    12,
+    24,
+    1,
+    "7006",
+    "typescript",
+    "Parameter 'data' implicitly has an 'any' type."
+   ],
+   [
+    38,
+    33,
+    38,
+    44,
+    1,
+    "2322",
+    "typescript",
+    "Type '{ children: string; htmlFor: string; placeholder: string; }' is not assignable to type 'DetailedHTMLProps<LabelHTMLAttributes<HTMLLabelElement>, HTMLLabelElement>'. Property 'placeholder' does not exist on type 'DetailedHTMLProps<LabelHTMLAttributes<HTMLLabelElement>, HTMLLabelElement>'."
+   ]
+  ],
+  "actual": [
+   [
+    0,
+    0,
+    0,
+    26,
+    4,
+    "6133",
+    "typescript",
+    "'React' is declared but its value is never read."
+   ],
+   [
+    1,
+    0,
+    1,
+    33,
+    4,
+    "6133",
+    "typescript",
+    "'ReactDOM' is declared but its value is never read."
+   ],
+   [
+    2,
+    24,
+    2,
+    41,
+    1,
+    "2307",
+    "typescript",
+    "Cannot find module 'react-hook-form' or its corresponding type declarations."
+   ],
+   [
+    12,
+    20,
+    12,
+    24,
+    1,
+    "7006",
+    "typescript",
+    "Parameter 'data' implicitly has an 'any' type."
+   ],
+   [
+    37,
+    9,
+    37,
+    12,
+    1,
+    "2304",
+    "typescript",
+    "Cannot find name 'div'."
+   ],
+   [
+    38,
+    33,
+    38,
+    44,
+    1,
+    "2322",
+    "typescript",
+    "Type '{ children: string; htmlFor: string; placeholder: string; }' is not assignable to type 'DetailedHTMLProps<LabelHTMLAttributes<HTMLLabelElement>, HTMLLabelElement>'. Property 'placeholder' does not exist on type 'DetailedHTMLProps<LabelHTMLAttributes<HTMLLabelElement>, HTMLLabelElement>'."
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "app/src/main.tsx"
+   },
+   {
+    "kind": "open",
+    "path": "examples/V7/validationOnFieldBlur.tsx"
+   },
+   {
+    "kind": "open",
+    "path": "src/logic/skipValidation.ts"
+   },
+   {
+    "kind": "change",
+    "path": "app/src/main.tsx",
+    "start": [
+     1,
+     6
+    ],
+    "end": [
+     1,
+     28
+    ]
+   },
+   {
+    "kind": "fs_write",
+    "path": "app/tsconfig.json",
+    "text": "{\n  \"compilerOptions\": {\n    \"target\": \"ESNext\",\n    \"lib\": [\"DOM\", \"DOM.Iterable\", \"ESNext\"],\n    \"types\": [\"vite/client\"],\n    \"allowJs\": false,\n    \"skipLibCheck\": false,\n    \"esModuleInterop\": false,\n    \"allowSyntheticDefaultImports\": true,\n    \"strict\": true,\n    \"forceConsistentCasingInFileNames\": true,\n    \"moduleResolution\": \"Node\",\n    \"resolveJsonModule\": true,\n    \"isolatedModules\": true,\n    \"noEmit\": true,\n    \"jsx\": \"react\"\n  },\n  \"include\": [\"./src\"]\n}\n"
+   },
+   {
+    "kind": "fs_write",
+    "path": "app/tsconfig.json",
+    "text": "{\n  \"compilerOptions\": {\n    \"target\": \"ESNext\",\n    \"lib\": [\"DOM\", \"DOM.Iterable\", \"ESNext\"],\n    \"types\": [\"vite/client\"],\n    \"allowJs\": false,\n    \"skipLibCheck\": false,\n    \"esModuleInterop\": false,\n    \"allowSyntheticDefaultImports\": true,\n    \"strict\": true,\n    \"forceConsistentCasingInFileNames\": true,\n    \"module\": \"ESNext\",\n    \"moduleResolution\": \"Node\",\n    \"resolveJsonModule\": true,\n    \"isolatedModules\": true,\n    \"noEmit\": true,\n    \"jsx\": \"react\"\n  },\n  \"include\": [\"./src\"]\n}\n"
+   },
+   {
+    "kind": "change",
+    "path": "app/src/main.tsx",
+    "start": [
+     1,
+     6
+    ],
+    "end": [
+     1,
+     6
+    ],
+    "text": " ReactDOM from 'react-"
+   },
+   {
+    "kind": "request",
+    "path": "app/src/main.tsx",
+    "start": [
+     5,
+     32
+    ],
+    "text": "completion"
+   },
+   {
+    "kind": "request",
+    "path": "src/logic/skipValidation.ts",
+    "start": [
+     7,
+     25
+    ],
+    "text": "documentHighlight"
+   },
+   {
+    "kind": "request",
+    "path": "examples/V7/validationOnFieldBlur.tsx",
+    "start": [
+     9,
+     9
+    ],
+    "text": "typeDefinition"
+   },
+   {
+    "kind": "request",
+    "path": "examples/V7/validationOnFieldBlur.tsx",
+    "start": [
+     37,
+     10
+    ],
+    "text": "hover"
+   }
+  ],
+  "detail": "{\"case\": {\"chain_step\": 0, \"families\": [], \"family\": \"H7\", \"history_index\": 8, \"history_seed\": 1009, \"mode\": \"fresh\", \"note\": \"nest 1>0: H6 config round trip on app/tsconfig.json: line 11 deleted | H8 after app/src/main.tsx: delete \\\" ReactDOM from 'react-\\\" on line 1 and its inverse, 4 requests in a shuffled order: completion@app/src/main.tsx:5:32, documentHighlight@src/logic/skipValidation.ts:7:25, typeDefinition@examples/V7/validationOnFieldBlur.tsx:9:9, hover@examples/V7/validationOnFieldBlur.tsx:37:10\", \"seed\": 1, \"timing\": \"race0\"}, \"note\": \"H7: nest 1>0: H6 config round trip on app/tsconfig.json: line 11 deleted | H8 after app/src/main.tsx: delete \\\" ReactDOM from 'react-\\\" on line 1 and its inverse, 4 requests in a shuffled order: completion@; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 155s\", \"shape\": \"diagnostics:extra:2304\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "ts6|r1_history|diagnostics:extra:2304",
+  "run_id": "43c648d37a2b"
+ },
+ "replay_logs": [
+  "logs/ts6-6.0.3-tr8ca52f-replay-baseline-20260925-164109-649202.jsonl.gz",
+  "logs/ts6-6.0.3-tr8ca52f-replay-control-20260925-164109-3fd769.jsonl.gz",
+  "logs/ts6-6.0.3-tr8ca52f-replay-history-20260925-164127-a11b3f.jsonl.gz"
+ ],
+ "project_files": {},
+ "group": "ts6-r1-diagnostics-extra-2304-h7-8ca52f",
+ "reduced": true
+}

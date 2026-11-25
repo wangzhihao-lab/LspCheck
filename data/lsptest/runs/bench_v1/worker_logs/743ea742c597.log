@@ -1,0 +1,6 @@
+2026-09-24 16:01:47,113 INFO campaign_run run 743ea742c597: r4_edits on gopls v0.20.0, gopls-74938 seed 1 settled, targets ['slicescontains.go']
+2026-09-24 16:02:46,136 INFO campaign_run run 743ea742c597: 1 candidate(s) in 59s; confirming
+2026-09-24 16:03:00,634 INFO flake replay 1/3 of gopls|r4_edits|diagnostics:extra:UnusedVar: settled=True control_stable=True reproduced=True (14.5s)
+2026-09-24 16:03:15,199 INFO flake replay 2/3 of gopls|r4_edits|diagnostics:extra:UnusedVar: settled=True control_stable=True reproduced=True (14.6s)
+2026-09-24 16:03:29,818 INFO flake replay 3/3 of gopls|r4_edits|diagnostics:extra:UnusedVar: settled=True control_stable=True reproduced=True (14.6s)
+2026-09-24 16:03:29,822 INFO campaign_run run 743ea742c597 finished: ok, 1 confirmed of 1 candidate(s), 103s

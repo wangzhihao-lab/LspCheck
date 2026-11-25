@@ -1,0 +1,22 @@
+2026-11-17 21:40:12,737 INFO release_sweep 10 job(s) for gopls
+2026-11-17 21:40:12,737 INFO release_sweep newest-2026-11-18: gopls-r2-codeactionresolve-changed-codeaction-70b3e9 on gopls v0.24.0
+2026-11-17 21:40:51,675 INFO release_sweep   -> reproduced (3/3, 39s) 
+2026-11-17 21:40:51,675 INFO release_sweep newest-2026-11-18: gopls-r4-diagnostics-extra-notatype-mutation-m2-477181 on gopls v0.24.0
+2026-11-17 21:41:09,136 INFO release_sweep   -> unsettled (0/3, 18s) 
+2026-11-17 21:41:09,136 INFO release_sweep newest-2026-11-18: gopls-r4-diagnostics-extra-untypedniluse-mutation-m2-354f70 on gopls v0.24.0
+2026-11-17 21:41:40,631 INFO release_sweep   -> unsettled (0/3, 32s) 
+2026-11-17 21:41:40,631 INFO release_sweep newest-2026-11-18: gopls-r4-diagnostics-extra-invalidifaceassign-mutation-m2-416e90 on gopls v0.24.0
+2026-11-17 21:42:10,095 INFO release_sweep   -> unsettled (0/3, 30s) 
+2026-11-17 21:42:10,095 INFO release_sweep newest-2026-11-18: gopls-r4-diagnostics-extra-nonindexableoperand-mutation-m2-ba152b on gopls v0.24.0
+2026-11-17 21:43:10,700 INFO release_sweep   -> reproduced (3/3, 61s) 
+2026-11-17 21:43:10,700 INFO release_sweep newest-2026-11-18: gopls-r4-diagnostics-extra-nonsliceableoperand-mutation-m2-d80a9a on gopls v0.24.0
+2026-11-17 21:44:27,092 INFO release_sweep   -> reproduced (3/3, 76s) 
+2026-11-17 21:44:27,092 INFO release_sweep newest-2026-11-18: gopls-r4-diagnostics-extra-mutation-m2-111975 on gopls v0.24.0
+2026-11-17 21:45:17,906 INFO release_sweep   -> reproduced (3/3, 51s) 
+2026-11-17 21:45:17,906 INFO release_sweep newest-2026-11-18: gopls-r4-syntax-gained-mutation-m2-86fde3 on gopls v0.24.0
+2026-11-17 21:46:07,807 INFO release_sweep   -> reproduced (3/3, 50s) 
+2026-11-17 21:46:07,807 INFO release_sweep newest-2026-11-18: gopls-r4-diagnostics-extra-undeclaredname-wrongar-mutation-m3-946c39 on gopls v0.24.0
+2026-11-17 21:47:11,706 INFO release_sweep   -> reproduced (3/3, 64s) 
+2026-11-17 21:47:11,707 INFO release_sweep newest-2026-11-18: gopls-r1-references-extra-h9-0290a7 on gopls v0.24.0
+2026-11-17 21:47:43,577 INFO release_sweep   -> reproduced (3/3, 32s) 
+2026-11-17 21:47:43,577 INFO release_sweep all jobs of gopls done

@@ -1,0 +1,3 @@
+2026-09-24 03:23:22,588 INFO campaign_run run bd84f3066087: r4_edits on rust-analyzer 2026-09-21, BurntSushi/ripgrep@3fce3b5bb023 seed 2 settled, targets ['crates/ignore/src/types.rs', 'crates/searcher/examples/search-stdin.rs', 'tests/misc.rs']
+2026-09-24 03:26:04,473 INFO campaign_run run bd84f3066087: 0 candidate(s) in 162s; confirming
+2026-09-24 03:26:04,474 INFO campaign_run run bd84f3066087 finished: ok, 0 confirmed of 0 candidate(s), 162s

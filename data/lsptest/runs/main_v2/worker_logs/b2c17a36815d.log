@@ -1,0 +1,6 @@
+2026-11-18 19:51:43,905 INFO campaign_run run b2c17a36815d: r1_history on gopls v0.23.0, zeromicro/go-zero@5b1b5bdc3adc seed 3 settled, targets ['core/proc/env.go', 'core/stores/sqlx/mysql.go', 'zrpc/resolver/internal/resolver_test.go']
+2026-11-18 20:00:55,536 INFO campaign_run run b2c17a36815d: 4 candidate(s) in 552s; confirming
+2026-11-18 20:01:39,946 INFO flake replay 1/3 of gopls|r1_history|completion:missing: settled=True control_stable=True reproduced=False (44.4s)
+2026-11-18 20:02:23,257 INFO flake replay 2/3 of gopls|r1_history|completion:missing: settled=True control_stable=False reproduced=False (43.3s)
+2026-11-18 20:03:05,442 INFO flake replay 3/3 of gopls|r1_history|completion:missing: settled=True control_stable=False reproduced=False (42.2s)
+2026-11-18 20:03:05,447 INFO campaign_run run b2c17a36815d finished: ok, 0 confirmed of 4 candidate(s), 682s

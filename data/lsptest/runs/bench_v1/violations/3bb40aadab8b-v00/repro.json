@@ -1,0 +1,260 @@
+{
+ "format": 1,
+ "campaign": "bench_v1",
+ "vid": "3bb40aadab8b-v00",
+ "run_id": "3bb40aadab8b",
+ "oracle": "r4_edits",
+ "server": {
+  "kind": "gopls",
+  "version": "v0.20.0"
+ },
+ "project": {
+  "name": "gopls-74708",
+  "source": "dir",
+  "ref": "data/lsp_bench/cases/gopls-74708/project",
+  "commit": "",
+  "language": "go"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 180.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "b.go",
+    "positions": [
+     [
+      2,
+      10
+     ],
+     [
+      6,
+      5
+     ],
+     [
+      7,
+      5
+     ],
+     [
+      7,
+      10
+     ],
+     [
+      8,
+      1
+     ],
+     [
+      8,
+      4
+     ],
+     [
+      8,
+      7
+     ],
+     [
+      10,
+      4
+     ],
+     [
+      11,
+      2
+     ],
+     [
+      11,
+      5
+     ],
+     [
+      11,
+      9
+     ],
+     [
+      15,
+      8
+     ],
+     [
+      16,
+      2
+     ],
+     [
+      16,
+      6
+     ],
+     [
+      16,
+      13
+     ]
+    ],
+    "ends": [
+     [
+      2,
+      13
+     ],
+     [
+      6,
+      6
+     ],
+     [
+      7,
+      6
+     ],
+     [
+      7,
+      13
+     ],
+     [
+      8,
+      2
+     ],
+     [
+      8,
+      5
+     ],
+     [
+      8,
+      9
+     ],
+     [
+      10,
+      7
+     ],
+     [
+      11,
+      3
+     ],
+     [
+      11,
+      6
+     ],
+     [
+      11,
+      11
+     ],
+     [
+      15,
+      11
+     ],
+     [
+      16,
+      3
+     ],
+     [
+      16,
+      8
+     ],
+     [
+      16,
+      18
+     ]
+    ],
+    "names": [
+     "tools",
+     "_",
+     "s",
+     "Server",
+     "s",
+     "wg",
+     "Add",
+     "print",
+     "s",
+     "wg",
+     "Done",
+     "Server",
+     "wg",
+     "sync",
+     "WaitGroup"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "diagnostics",
+  "path": "b.go",
+  "line": 8,
+  "character": 1,
+  "extra": "quickfix-errors:Simplify by using WaitGroup.Go"
+ },
+ "ops": [],
+ "case": {
+  "action_kind": "quickfix",
+  "base_errors": 0,
+  "check": "errors",
+  "diag": {
+   "code": "waitgroup",
+   "message": "Goroutine creation can be simplified using WaitGroup.Go",
+   "range": {
+    "end": {
+     "character": 4,
+     "line": 12
+    },
+    "start": {
+     "character": 1,
+     "line": 8
+    }
+   },
+   "severity": 4
+  },
+  "kind": "quickfix",
+  "path": "b.go",
+  "post_errors": 1,
+  "title": "Simplify by using WaitGroup.Go",
+  "via": "edit"
+ },
+ "shape": "diagnostics:extra:?",
+ "signature": "gopls|r4_edits|diagnostics:extra:?",
+ "expected": [],
+ "actual": [
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "",
+   "syntax",
+   "expected operand, found '{'"
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "quick fix 'Simplify by using WaitGroup.Go' for waitgroup at b.go:9:2 raises the error count in the edited files from 0 to 1; confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 47s",
+ "violation": {
+  "oracle": "r4_edits",
+  "server": "gopls-v0.20.0",
+  "project": "gopls-74708",
+  "key": {
+   "method": "diagnostics",
+   "path": "b.go",
+   "line": 8,
+   "character": 1,
+   "extra": "quickfix-errors:Simplify by using WaitGroup.Go"
+  },
+  "expected": [],
+  "actual": [
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "",
+    "syntax",
+    "expected operand, found '{'"
+   ]
+  ],
+  "ops": [],
+  "detail": "{\"case\": {\"action_kind\": \"quickfix\", \"base_errors\": 0, \"check\": \"errors\", \"diag\": {\"code\": \"waitgroup\", \"message\": \"Goroutine creation can be simplified using WaitGroup.Go\", \"range\": {\"end\": {\"character\": 4, \"line\": 12}, \"start\": {\"character\": 1, \"line\": 8}}, \"severity\": 4}, \"kind\": \"quickfix\", \"path\": \"b.go\", \"post_errors\": 1, \"title\": \"Simplify by using WaitGroup.Go\", \"via\": \"edit\"}, \"note\": \"quick fix 'Simplify by using WaitGroup.Go' for waitgroup at b.go:9:2 raises the error count in the edited files from 0 to 1; confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 47s\", \"shape\": \"diagnostics:extra:?\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "gopls|r4_edits|diagnostics:extra:?",
+  "run_id": "3bb40aadab8b"
+ },
+ "replay_logs": [
+  "logs/gopls-v0.20.0-3bb40aadab8b-r4-replay-baseline-20260925-043716-e86a8f.jsonl.gz",
+  "logs/gopls-v0.20.0-3bb40aadab8b-r4-replay-case-20260925-043706-c9fa0b.jsonl.gz",
+  "logs/gopls-v0.20.0-3bb40aadab8b-r4-replay-control-20260925-043719-884bd8.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

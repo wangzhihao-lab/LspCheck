@@ -1,0 +1,513 @@
+{
+ "format": 1,
+ "campaign": "main_v2",
+ "vid": "2d8bb2d806d3-v00",
+ "run_id": "2d8bb2d806d3",
+ "oracle": "r3_routes",
+ "server": {
+  "kind": "pyright",
+  "version": "1.1.414"
+ },
+ "project": {
+  "name": "scrapy/scrapy@91d87364637c",
+  "source": "corpus",
+  "ref": "temp/corpus/scrapy__scrapy@91d87364637c",
+  "commit": "91d87364637c1b18fd5bb21d1ed3bb356cf9b6fc",
+  "language": "python"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "tests/AsyncCrawlerProcess/asyncio_custom_loop_custom_settings_different.py",
+    "positions": [
+     [
+      1,
+      8
+     ],
+     [
+      4,
+      14
+     ],
+     [
+      4,
+      33
+     ],
+     [
+      5,
+      6
+     ],
+     [
+      6,
+      11
+     ],
+     [
+      15,
+      3
+     ],
+     [
+      15,
+      19
+     ],
+     [
+      16,
+      8
+     ],
+     [
+      21,
+      3
+     ],
+     [
+      21,
+      10
+     ],
+     [
+      21,
+      22
+     ],
+     [
+      22,
+      10
+     ]
+    ],
+    "ends": [
+     [
+      1,
+      11
+     ],
+     [
+      4,
+      22
+     ],
+     [
+      4,
+      36
+     ],
+     [
+      5,
+      8
+     ],
+     [
+      6,
+      19
+     ],
+     [
+      15,
+      7
+     ],
+     [
+      15,
+      29
+     ],
+     [
+      16,
+      12
+     ],
+     [
+      21,
+      7
+     ],
+     [
+      21,
+      13
+     ],
+     [
+      21,
+      30
+     ],
+     [
+      22,
+      13
+     ]
+    ],
+    "names": [
+     "scrapy",
+     "NoRequestsSpider",
+     "Spider",
+     "name",
+     "custom_settings",
+     "process",
+     "AsyncCrawlerProcess",
+     "settings",
+     "process",
+     "crawl",
+     "NoRequestsSpider",
+     "start"
+    ]
+   },
+   {
+    "path": "tests/AsyncCrawlerProcess/default_name_resolver.py",
+    "positions": [
+     [
+      0,
+      10
+     ],
+     [
+      1,
+      15
+     ],
+     [
+      1,
+      36
+     ],
+     [
+      4,
+      20
+     ],
+     [
+      4,
+      27
+     ],
+     [
+      10,
+      6
+     ],
+     [
+      14,
+      24
+     ],
+     [
+      18,
+      7
+     ],
+     [
+      18,
+      23
+     ],
+     [
+      19,
+      14
+     ],
+     [
+      19,
+      23
+     ],
+     [
+      20,
+      7
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      13
+     ],
+     [
+      1,
+      19
+     ],
+     [
+      1,
+      46
+     ],
+     [
+      4,
+      23
+     ],
+     [
+      4,
+      30
+     ],
+     [
+      10,
+      8
+     ],
+     [
+      14,
+      28
+     ],
+     [
+      18,
+      11
+     ],
+     [
+      18,
+      33
+     ],
+     [
+      19,
+      17
+     ],
+     [
+      19,
+      28
+     ],
+     [
+      20,
+      11
+     ]
+    ],
+    "names": [
+     "scrapy",
+     "crawler",
+     "AsyncCrawlerProcess",
+     "scrapy",
+     "Spider",
+     "name",
+     "Request",
+     "process",
+     "AsyncCrawlerProcess",
+     "crawl",
+     "IPv6Spider",
+     "process"
+    ]
+   },
+   {
+    "path": "tests/utils/decorators.py",
+    "positions": [
+     [
+      2,
+      9
+     ],
+     [
+      8,
+      20
+     ],
+     [
+      12,
+      47
+     ],
+     [
+      19,
+      4
+     ],
+     [
+      19,
+      24
+     ],
+     [
+      20,
+      9
+     ],
+     [
+      52,
+      15
+     ],
+     [
+      65,
+      21
+     ],
+     [
+      69,
+      27
+     ],
+     [
+      69,
+      38
+     ],
+     [
+      69,
+      47
+     ],
+     [
+      70,
+      24
+     ]
+    ],
+    "ends": [
+     [
+      2,
+      14
+     ],
+     [
+      8,
+      23
+     ],
+     [
+      12,
+      51
+     ],
+     [
+      19,
+      5
+     ],
+     [
+      19,
+      29
+     ],
+     [
+      20,
+      13
+     ],
+     [
+      52,
+      16
+     ],
+     [
+      65,
+      31
+     ],
+     [
+      69,
+      29
+     ],
+     [
+      69,
+      44
+     ],
+     [
+      69,
+      48
+     ],
+     [
+      70,
+      33
+     ]
+    ],
+    "names": [
+     "functools",
+     "defer",
+     "Callable",
+     "f",
+     "Generator",
+     "Callable",
+     "_P",
+     "is_reactor_installed",
+     "args",
+     "coro_kwargs",
+     "_P",
+     "deferred_from_coro"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "highlightVsReferences",
+  "path": "tests/utils/decorators.py",
+  "line": 69,
+  "character": 27,
+  "extra": ""
+ },
+ "ops": [],
+ "case": {
+  "path": "tests/utils/decorators.py",
+  "pos": [
+   69,
+   27
+  ],
+  "sub": "c"
+ },
+ "shape": "highlightVsReferences:gained",
+ "signature": "pyright|r3_routes|highlightVsReferences:gained",
+ "expected": [],
+ "actual": [
+  [
+   34,
+   32,
+   34,
+   36
+  ],
+  [
+   34,
+   41,
+   34,
+   45
+  ],
+  [
+   35,
+   57,
+   35,
+   61
+  ],
+  [
+   43,
+   9,
+   43,
+   13
+  ],
+  [
+   43,
+   18,
+   43,
+   22
+  ],
+  [
+   45,
+   18,
+   45,
+   22
+  ],
+  [
+   69,
+   25,
+   69,
+   29
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "0 references; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 22s",
+ "violation": {
+  "oracle": "r3_routes",
+  "server": "pyright-1.1.414",
+  "project": "scrapy/scrapy@91d87364637c",
+  "key": {
+   "method": "highlightVsReferences",
+   "path": "tests/utils/decorators.py",
+   "line": 69,
+   "character": 27,
+   "extra": ""
+  },
+  "expected": [],
+  "actual": [
+   [
+    34,
+    32,
+    34,
+    36
+   ],
+   [
+    34,
+    41,
+    34,
+    45
+   ],
+   [
+    35,
+    57,
+    35,
+    61
+   ],
+   [
+    43,
+    9,
+    43,
+    13
+   ],
+   [
+    43,
+    18,
+    43,
+    22
+   ],
+   [
+    45,
+    18,
+    45,
+    22
+   ],
+   [
+    69,
+    25,
+    69,
+    29
+   ]
+  ],
+  "ops": [],
+  "detail": "{\"case\": {\"path\": \"tests/utils/decorators.py\", \"pos\": [69, 27], \"sub\": \"c\"}, \"note\": \"0 references; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 22s\", \"shape\": \"highlightVsReferences:gained\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "pyright|r3_routes|highlightVsReferences:gained",
+  "run_id": "2d8bb2d806d3"
+ },
+ "replay_logs": [
+  "logs/pyright-1.1.414-2d8bb2d806d3-r3-replay-baseline-20261118-022634-db5ecf.jsonl.gz",
+  "logs/pyright-1.1.414-2d8bb2d806d3-r3-replay-control-20261118-022638-30220c.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

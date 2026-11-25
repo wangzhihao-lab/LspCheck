@@ -1,0 +1,92 @@
+{
+ "queries": [
+  "unicode in:title repo:rust-lang/rust-analyzer is:issue",
+  "\"code action\" wrong repo:rust-lang/rust-analyzer is:issue",
+  "\"code action\" unicode repo:rust-lang/rust-analyzer is:issue",
+  "\"code action\" whitespace repo:rust-lang/rust-analyzer is:issue"
+ ],
+ "matches": [
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 23301,
+   "title": "Error messages disappear when `rustc-unicode` is enabled",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/23301",
+   "state": "closed",
+   "created": "2026-09-06",
+   "comments": 4,
+   "query": "unicode in:title repo:rust-lang/rust-analyzer is:issue"
+  },
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 17420,
+   "title": "\"Request textdocument/selectionrange Failed\" when executing editor.action.smartSelect.expand in vscode on some unicode box drawing characters",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/17420",
+   "state": "closed",
+   "created": "2024-06-14",
+   "comments": 1,
+   "query": "unicode in:title repo:rust-lang/rust-analyzer is:issue"
+  },
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 9401,
+   "title": "Add unicode character snippets",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/9401",
+   "state": "closed",
+   "created": "2021-06-25",
+   "comments": 2,
+   "query": "unicode in:title repo:rust-lang/rust-analyzer is:issue"
+  },
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 9121,
+   "title": "Panic on textDocument/didChange containing a multi-byte unicode character",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/9121",
+   "state": "closed",
+   "created": "2021-06-03",
+   "comments": 5,
+   "query": "unicode in:title repo:rust-lang/rust-analyzer is:issue"
+  },
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 7635,
+   "title": "Unicode-related panic when editing comment",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/7635",
+   "state": "closed",
+   "created": "2021-02-10",
+   "comments": 2,
+   "query": "unicode in:title repo:rust-lang/rust-analyzer is:issue"
+  },
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 16504,
+   "title": "Wrong `try_into` for enum variant if `Result` is shadowed",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/16504",
+   "state": "open",
+   "created": "2024-02-07",
+   "comments": 0,
+   "query": "\"code action\" wrong repo:rust-lang/rust-analyzer is:issue"
+  },
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 21601,
+   "title": "Inline assist on `.into()` produces wrong code",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/21601",
+   "state": "open",
+   "created": "2026-02-07",
+   "comments": 3,
+   "query": "\"code action\" wrong repo:rust-lang/rust-analyzer is:issue"
+  },
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 12938,
+   "title": "fill match arms assist put the code in the wrong place",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/12938",
+   "state": "open",
+   "created": "2022-08-04",
+   "comments": 10,
+   "query": "\"code action\" wrong repo:rust-lang/rust-analyzer is:issue"
+  }
+ ],
+ "notes": [],
+ "authenticated": true
+}

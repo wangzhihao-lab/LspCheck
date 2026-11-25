@@ -1,0 +1,92 @@
+{
+ "queries": [
+  "\"go to definition\" in:title repo:microsoft/typescript-go is:issue",
+  "definition wrong repo:microsoft/typescript-go is:issue",
+  "definition \"go to definition\" repo:microsoft/typescript-go is:issue",
+  "definition inconsistent repo:microsoft/typescript-go is:issue"
+ ],
+ "matches": [
+  {
+   "repo": "microsoft/typescript-go",
+   "number": 4908,
+   "title": "Go-to-definition does not work at the right edge of a JSX tag name",
+   "url": "https://github.com/microsoft/typescript-go/issues/4908",
+   "state": "closed",
+   "created": "2026-08-17",
+   "comments": 0,
+   "query": "\"go to definition\" in:title repo:microsoft/typescript-go is:issue"
+  },
+  {
+   "repo": "microsoft/typescript-go",
+   "number": 1885,
+   "title": "go to definition panic (windows, wsl)",
+   "url": "https://github.com/microsoft/typescript-go/issues/1885",
+   "state": "closed",
+   "created": "2025-10-15",
+   "comments": 4,
+   "query": "\"go to definition\" in:title repo:microsoft/typescript-go is:issue"
+  },
+  {
+   "repo": "microsoft/typescript-go",
+   "number": 2209,
+   "title": "[lsp] Go to Definition missing getter when property returns callable interface",
+   "url": "https://github.com/microsoft/typescript-go/issues/2209",
+   "state": "closed",
+   "created": "2025-12-04",
+   "comments": 0,
+   "query": "\"go to definition\" in:title repo:microsoft/typescript-go is:issue"
+  },
+  {
+   "repo": "microsoft/typescript-go",
+   "number": 2839,
+   "title": "Cannot \"go to definition\" of a playwright fixture",
+   "url": "https://github.com/microsoft/typescript-go/issues/2839",
+   "state": "closed",
+   "created": "2026-02-19",
+   "comments": 1,
+   "query": "\"go to definition\" in:title repo:microsoft/typescript-go is:issue"
+  },
+  {
+   "repo": "microsoft/typescript-go",
+   "number": 2847,
+   "title": "panic on go-to-type-definition of tuple type",
+   "url": "https://github.com/microsoft/typescript-go/issues/2847",
+   "state": "closed",
+   "created": "2026-02-20",
+   "comments": 0,
+   "query": "\"go to definition\" in:title repo:microsoft/typescript-go is:issue"
+  },
+  {
+   "repo": "microsoft/typescript-go",
+   "number": 1673,
+   "title": "Panic on textDocument/definition",
+   "url": "https://github.com/microsoft/typescript-go/issues/1673",
+   "state": "closed",
+   "created": "2025-09-03",
+   "comments": 8,
+   "query": "definition wrong repo:microsoft/typescript-go is:issue"
+  },
+  {
+   "repo": "microsoft/typescript-go",
+   "number": 2183,
+   "title": "cannot resolve type definition with type:module",
+   "url": "https://github.com/microsoft/typescript-go/issues/2183",
+   "state": "closed",
+   "created": "2025-12-03",
+   "comments": 8,
+   "query": "definition wrong repo:microsoft/typescript-go is:issue"
+  },
+  {
+   "repo": "microsoft/typescript-go",
+   "number": 3026,
+   "title": "TypeScript Native Preview VS Code extension status bar color is confusing",
+   "url": "https://github.com/microsoft/typescript-go/issues/3026",
+   "state": "closed",
+   "created": "2026-03-09",
+   "comments": 3,
+   "query": "definition wrong repo:microsoft/typescript-go is:issue"
+  }
+ ],
+ "notes": [],
+ "authenticated": true
+}

@@ -1,0 +1,74 @@
+{
+ "vid": "76cde4f3a703-v00",
+ "ops_before": 0,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 0,
+ "cache_hits": 0,
+ "reduce_seconds": 0.0,
+ "budget_exhausted": false,
+ "probe_log": [],
+ "logs": [
+  "ts6-6.0.3-trd597f5-r4-replay-baseline-20261119-023813-1f325e.jsonl.gz",
+  "ts6-6.0.3-trd597f5-r4-replay-case-20261119-023757-f1aaf1.jsonl.gz",
+  "ts6-6.0.3-trd597f5-r4-replay-control-20261119-023825-9f4748.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2322",
+    "typescript",
+    "Type 'Bluebird<{ name: string; path: string; } | undefined>' is not assignable to type 'Bluebird<{ name: string; path: string; }>'. Type '{ name: string; path: string; } | undefined' is not assignable to type '{ name: string; path: string; }'. Type 'undefined' is not assignable to type '{ name: string; path: string; }'."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7053",
+    "typescript",
+    "Element implicitly has an 'any' type because expression of type 'string' can't be used to index type '{ normal: string; }'. No index signature with a parameter of type 'string' was found on type '{ normal: string; }'."
+   ]
+  ],
+  "actual": [
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "1064",
+    "typescript",
+    "The return type of an async function or method must be the global Promise<T> type. Did you mean to write 'Promise<{ name: string; path: string; }>'?"
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2322",
+    "typescript",
+    "Type '{ name: string; path: string; } | undefined' is not assignable to type '{ name: string; path: string; }'. Type 'undefined' is not assignable to type '{ name: string; path: string; }'."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7053",
+    "typescript",
+    "Element implicitly has an 'any' type because expression of type 'string' can't be used to index type '{ normal: string; }'. No index signature with a parameter of type 'string' was found on type '{ normal: string; }'."
+   ]
+  ]
+ },
+ "ops_after": 0,
+ "total_seconds": 157.0
+}

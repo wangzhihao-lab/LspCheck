@@ -1,0 +1,267 @@
+{
+ "format": 1,
+ "campaign": "main_v2",
+ "vid": "ed216fc8dca5-v00",
+ "run_id": "ed216fc8dca5",
+ "oracle": "r1_history",
+ "server": {
+  "kind": "pyright",
+  "version": "1.1.414"
+ },
+ "project": {
+  "name": "ultralytics/yolov5@402e17ddf820",
+  "source": "corpus",
+  "ref": "temp/corpus/ultralytics__yolov5@402e17ddf820",
+  "commit": "402e17ddf820996f51a191cbb798376e1144f069",
+  "language": "python"
+ },
+ "context": {
+  "seed": 3,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "models/yolo.py",
+    "positions": [],
+    "ends": [],
+    "names": []
+   },
+   {
+    "path": "utils/activations.py",
+    "positions": [],
+    "ends": [],
+    "names": []
+   },
+   {
+    "path": "utils/dataloaders.py",
+    "positions": [
+     [
+      344,
+      79
+     ]
+    ],
+    "ends": [],
+    "names": [
+     ""
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "signatureHelp",
+  "path": "utils/dataloaders.py",
+  "line": 344,
+  "character": 79,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "models/common.py"
+  }
+ ],
+ "case": {
+  "chain_step": 0,
+  "families": [],
+  "family": "H9",
+  "history_index": 9,
+  "history_seed": 3010,
+  "mode": "fresh",
+  "note": "window: models/common.py in the editor: delete '(x)' on line 373; inside: utils/dataloaders.py: unsaved edit (replace '_' by 'zz' on line 186), close, reopen; utils/activations.py: line 55 deleted and retyped in 4 chunk(s); models/yolo.py: line 266 deleted and retyped in 1 chunk(s); then W reverted",
+  "seed": 3,
+  "timing": "settled"
+ },
+ "shape": "signatureHelp:changed",
+ "signature": "pyright|r1_history|signatureHelp:changed",
+ "expected": "(im: Unknown, new_shape: Unknown = (640, 640), color: Unknown = (114, 114, 114), auto: bool = True, scaleFill: bool = False, scaleup: bool = True, stride: int = 32) -> tuple[Unknown, tuple[float | Unknown, float | Unknown] | tuple[Unknown, Unknown], tuple[Any | float | Unknown, Any | float | Unknown]]",
+ "actual": "(im: Unknown, new_shape: Unknown = (640, 640), color: Unknown = (114, 114, 114), auto: bool = True, scaleFill: bool = False, scaleup: bool = True, stride: int = 32) -> Unknown",
+ "reproduced": "3/3",
+ "note": "H9: window: models/common.py in the editor: delete '(x)' on line 373; inside: utils/dataloaders.py: unsaved edit (replace '_' by 'zz' on line 186), close, reopen; utils/activations.py: line 55 deleted and; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 171s",
+ "violation": {
+  "oracle": "r1_history",
+  "server": "pyright-1.1.414",
+  "project": "ultralytics/yolov5@402e17ddf820",
+  "key": {
+   "method": "signatureHelp",
+   "path": "utils/dataloaders.py",
+   "line": 344,
+   "character": 79,
+   "extra": ""
+  },
+  "expected": "(im: Unknown, new_shape: Unknown = (640, 640), color: Unknown = (114, 114, 114), auto: bool = True, scaleFill: bool = False, scaleup: bool = True, stride: int = 32) -> tuple[Unknown, tuple[float | Unknown, float | Unknown] | tuple[Unknown, Unknown], tuple[Any | float | Unknown, Any | float | Unknown]]",
+  "actual": "(im: Unknown, new_shape: Unknown = (640, 640), color: Unknown = (114, 114, 114), auto: bool = True, scaleFill: bool = False, scaleup: bool = True, stride: int = 32) -> Unknown",
+  "ops": [
+   {
+    "kind": "open",
+    "path": "models/yolo.py"
+   },
+   {
+    "kind": "open",
+    "path": "utils/activations.py"
+   },
+   {
+    "kind": "open",
+    "path": "utils/dataloaders.py"
+   },
+   {
+    "kind": "open",
+    "path": "models/common.py"
+   },
+   {
+    "kind": "change",
+    "path": "models/common.py",
+    "start": [
+     373,
+     20
+    ],
+    "end": [
+     373,
+     23
+    ]
+   },
+   {
+    "kind": "change",
+    "path": "utils/dataloaders.py",
+    "start": [
+     186,
+     12
+    ],
+    "end": [
+     186,
+     13
+    ],
+    "text": "zz"
+   },
+   {
+    "kind": "close",
+    "path": "utils/dataloaders.py"
+   },
+   {
+    "kind": "open",
+    "path": "utils/dataloaders.py"
+   },
+   {
+    "kind": "change",
+    "path": "utils/activations.py",
+    "start": [
+     55,
+     0
+    ],
+    "end": [
+     56,
+     0
+    ]
+   },
+   {
+    "kind": "change",
+    "path": "utils/activations.py",
+    "start": [
+     55,
+     0
+    ],
+    "end": [
+     55,
+     0
+    ],
+    "text": "            \"\"\"Com"
+   },
+   {
+    "kind": "change",
+    "path": "utils/activations.py",
+    "start": [
+     55,
+     18
+    ],
+    "end": [
+     55,
+     18
+    ],
+    "text": "pu"
+   },
+   {
+    "kind": "change",
+    "path": "utils/activations.py",
+    "start": [
+     55,
+     20
+    ],
+    "end": [
+     55,
+     20
+    ],
+    "text": "tes the gradient of the Mish activation funct"
+   },
+   {
+    "kind": "change",
+    "path": "utils/activations.py",
+    "start": [
+     55,
+     65
+    ],
+    "end": [
+     55,
+     65
+    ],
+    "text": "ion with respect to input `x`.\"\"\"\n"
+   },
+   {
+    "kind": "change",
+    "path": "models/yolo.py",
+    "start": [
+     266,
+     0
+    ],
+    "end": [
+     267,
+     0
+    ]
+   },
+   {
+    "kind": "change",
+    "path": "models/yolo.py",
+    "start": [
+     266,
+     0
+    ],
+    "end": [
+     266,
+     0
+    ],
+    "text": "        return self._forward_once(x, profile)  # single-scale inference, train\n"
+   },
+   {
+    "kind": "change",
+    "path": "models/common.py",
+    "start": [
+     373,
+     20
+    ],
+    "end": [
+     373,
+     20
+    ],
+    "text": "(x)"
+   },
+   {
+    "kind": "close",
+    "path": "models/common.py"
+   }
+  ],
+  "detail": "{\"case\": {\"chain_step\": 0, \"families\": [], \"family\": \"H9\", \"history_index\": 9, \"history_seed\": 3010, \"mode\": \"fresh\", \"note\": \"window: models/common.py in the editor: delete '(x)' on line 373; inside: utils/dataloaders.py: unsaved edit (replace '_' by 'zz' on line 186), close, reopen; utils/activations.py: line 55 deleted and retyped in 4 chunk(s); models/yolo.py: line 266 deleted and retyped in 1 chunk(s); then W reverted\", \"seed\": 3, \"timing\": \"settled\"}, \"note\": \"H9: window: models/common.py in the editor: delete '(x)' on line 373; inside: utils/dataloaders.py: unsaved edit (replace '_' by 'zz' on line 186), close, reopen; utils/activations.py: line 55 deleted and; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 171s\", \"shape\": \"signatureHelp:changed\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "pyright|r1_history|signatureHelp:changed",
+  "run_id": "ed216fc8dca5"
+ },
+ "replay_logs": [
+  "logs/pyright-1.1.414-tr846c6c-replay-baseline-20261118-231152-a7f871.jsonl.gz",
+  "logs/pyright-1.1.414-tr846c6c-replay-control-20261118-231152-45b174.jsonl.gz",
+  "logs/pyright-1.1.414-tr846c6c-replay-history-20261118-231156-f52173.jsonl.gz"
+ ],
+ "project_files": {},
+ "group": "pyright-r1-signaturehelp-changed-h9-846c6c",
+ "reduced": true
+}

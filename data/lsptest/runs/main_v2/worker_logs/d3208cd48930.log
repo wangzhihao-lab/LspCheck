@@ -1,0 +1,6 @@
+2026-11-18 15:48:26,881 INFO campaign_run run d3208cd48930: r3_routes on rust-analyzer 2026-09-21, sharkdp/hyperfine@0d6ade930afc seed 2 settled, targets ['src/benchmark/relative_speed.rs', 'src/cli.rs', 'src/main.rs']
+2026-11-18 15:50:31,992 INFO campaign_run run d3208cd48930: 3 candidate(s) in 125s; confirming
+2026-11-18 15:51:01,844 INFO flake replay 1/3 of rust-analyzer|r3_routes|diagnostics:missing:inactive_code: settled=True control_stable=True reproduced=True (29.9s)
+2026-11-18 15:51:31,783 INFO flake replay 2/3 of rust-analyzer|r3_routes|diagnostics:missing:inactive_code: settled=True control_stable=True reproduced=True (29.9s)
+2026-11-18 15:52:10,858 INFO flake replay 3/3 of rust-analyzer|r3_routes|diagnostics:missing:inactive_code: settled=True control_stable=True reproduced=True (39.1s)
+2026-11-18 15:52:10,866 INFO campaign_run run d3208cd48930 finished: ok, 1 confirmed of 3 candidate(s), 224s

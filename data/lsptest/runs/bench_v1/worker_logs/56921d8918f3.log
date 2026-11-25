@@ -1,0 +1,3 @@
+2026-09-25 04:08:54,102 INFO campaign_run run 56921d8918f3: r2_handles on gopls v0.7.1, gopls-46667 seed 2 settled, targets ['a/a.go', 'b/b.go']
+2026-09-25 04:09:04,663 INFO campaign_run run 56921d8918f3: 0 candidate(s) in 11s; confirming
+2026-09-25 04:09:04,663 INFO campaign_run run 56921d8918f3 finished: ok, 0 confirmed of 0 candidate(s), 11s

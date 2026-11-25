@@ -1,0 +1,75 @@
+{
+ "vid": "210902bea61f-v01",
+ "ops_before": 5,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 11,
+ "cache_hits": 2,
+ "reduce_seconds": 247.672,
+ "budget_exhausted": false,
+ "probe_log": [
+  [
+   4,
+   false
+  ],
+  [
+   4,
+   false
+  ],
+  [
+   4,
+   false
+  ],
+  [
+   4,
+   true
+  ],
+  [
+   3,
+   true
+  ],
+  [
+   1,
+   false
+  ],
+  [
+   2,
+   false
+  ],
+  [
+   1,
+   false
+  ],
+  [
+   1,
+   false
+  ],
+  [
+   2,
+   false
+  ],
+  [
+   2,
+   false
+  ]
+ ],
+ "logs": [
+  "ts6-6.0.3-trfa501c-replay-baseline-20260925-154939-abb18b.jsonl.gz",
+  "ts6-6.0.3-trfa501c-replay-control-20260925-154939-7760f8.jsonl.gz",
+  "ts6-6.0.3-trfa501c-replay-history-20260925-154955-899610.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [
+   "clearStorage",
+   "getOptions",
+   "hasHydrated",
+   "onFinishHydration",
+   "onHydrate",
+   "rehydrate",
+   "setOptions"
+  ],
+  "actual": []
+ },
+ "ops_after": 3,
+ "total_seconds": 402.9
+}

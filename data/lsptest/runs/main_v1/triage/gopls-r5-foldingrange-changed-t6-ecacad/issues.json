@@ -1,0 +1,42 @@
+{
+ "queries": [
+  "unicode in:title repo:golang/go is:issue label:gopls",
+  "\"folding range\" wrong repo:golang/go is:issue label:gopls",
+  "\"folding range\" unicode repo:golang/go is:issue label:gopls",
+  "\"folding range\" whitespace repo:golang/go is:issue label:gopls"
+ ],
+ "matches": [
+  {
+   "repo": "golang/go",
+   "number": 29149,
+   "title": "x/tools/internal/lsp: handle unicode code points that are encoded as multiple bytes",
+   "url": "https://github.com/golang/go/issues/29149",
+   "state": "closed",
+   "created": "2018-12-07",
+   "comments": 2,
+   "query": "unicode in:title repo:golang/go is:issue label:gopls"
+  },
+  {
+   "repo": "golang/go",
+   "number": 71489,
+   "title": "x/tools/gopls: FoldingRange omitempty causes EndCharacter=0 to be omitted, changing its semantics in clients that distinguish 0 from missing",
+   "url": "https://github.com/golang/go/issues/71489",
+   "state": "closed",
+   "created": "2025-01-30",
+   "comments": 15,
+   "query": "\"folding range\" wrong repo:golang/go is:issue label:gopls"
+  },
+  {
+   "repo": "golang/go",
+   "number": 79524,
+   "title": "x/tools/gopls: semantic tokens no longer returned (regression in v0.22.0)",
+   "url": "https://github.com/golang/go/issues/79524",
+   "state": "closed",
+   "created": "2026-05-19",
+   "comments": 11,
+   "query": "\"folding range\" wrong repo:golang/go is:issue label:gopls"
+  }
+ ],
+ "notes": [],
+ "authenticated": true
+}

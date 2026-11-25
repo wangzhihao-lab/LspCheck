@@ -1,0 +1,6 @@
+2026-09-25 05:57:49,059 INFO campaign_run run d1cb3430e2d9: r3_routes on gopls v0.19.0, gopls-73269 seed 2 settled, targets ['main.go']
+2026-09-25 05:58:00,312 INFO campaign_run run d1cb3430e2d9: 1 candidate(s) in 11s; confirming
+2026-09-25 05:58:07,910 INFO flake replay 1/3 of gopls|r3_routes|highlightVsReferences:extra: settled=True control_stable=True reproduced=True (7.6s)
+2026-09-25 05:58:15,410 INFO flake replay 2/3 of gopls|r3_routes|highlightVsReferences:extra: settled=True control_stable=True reproduced=True (7.5s)
+2026-09-25 05:58:22,943 INFO flake replay 3/3 of gopls|r3_routes|highlightVsReferences:extra: settled=True control_stable=True reproduced=True (7.5s)
+2026-09-25 05:58:22,946 INFO campaign_run run d1cb3430e2d9 finished: ok, 1 confirmed of 1 candidate(s), 34s

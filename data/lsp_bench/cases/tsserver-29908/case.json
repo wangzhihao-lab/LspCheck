@@ -1,0 +1,69 @@
+{
+ "schema": 1,
+ "id": "tsserver-29908",
+ "meta": {
+  "server": "tsserver",
+  "kind": "tsserver",
+  "number": 29908,
+  "url": "https://github.com/microsoft/TypeScript/issues/29908",
+  "title": "Declare static method/property quickfix can add static member to interface",
+  "oracle_class": "R4",
+  "subtype": "quickfix",
+  "fix_ref": "microsoft/TypeScript#36854 (fix(29908): Declare static method/property quickfix can add static member to interface), bc12123115, 2020-02-18; git tag --contains: first in v3.9-beta / v3.9.2",
+  "fix_shas": [
+   "bc121231155f37dc70d5359ff9d26ae030d99620"
+  ],
+  "pre_version": "3.8.3",
+  "post_version": "3.9.2",
+  "pre_build": "3.8.3+tsls0.4.0",
+  "post_build": "3.9.2+tsls0.4.0",
+  "wrapper": "typescript-language-server@0.4.0",
+  "build_notes": "npm typescript@3.8.3 (2020-02-28) and typescript@3.9.2 (2020-05-12), both behind typescript-language-server@0.4.0 (the latest wrapper release before 3.9.2), started with the pinned tsserver.js; the reported TypeScript version is checked on every session. Wrapper 0.4.0 is installed with the dependencies of its release date (install_builds.wrapper_before). The wrapper logs no TypeScript version; the build check verifies that its tsserver child runs the pinned tsserver.js.",
+  "candidate_rank": 102,
+  "effort_minutes": 5,
+  "notes": "A 'static' member in an interface is reported by the checker (TS1070), not by the parser, hence edit_leaves_diagnostic. The era wrapper returns quick fixes as bare commands (_typescript.applyWorkspaceEdit) without a code-action kind, so the edit spec selects by title only."
+ },
+ "language": "typescript",
+ "settings": {},
+ "settings_note": "The issue names no settings; no tsconfig.json, so tsserver uses an inferred project.",
+ "session": {
+  "settle_timeout_s": 120
+ },
+ "files": [
+  {
+   "path": "index.ts",
+   "provenance": "issue",
+   "source": "issue body, Code block",
+   "note": "the file name is not given in the issue"
+  }
+ ],
+ "repro": {
+  "attempt": 1,
+  "timing": "settled",
+  "steps": "Open index.ts: 'Foo.bard()' reports that bard does not exist on typeof Foo. Trigger the 'declare static method' quick fix on bard. Reported: 'static bard(): any;' is added to interface Foo (static is not allowed on a type member); expected: the method goes to the namespace, or no such fix is offered. Probe: after the fix, a fresh session on the edited file must neither report the targeted error on bard nor a new error. No offered action counts as absent.",
+  "ops": [
+   {
+    "kind": "open",
+    "path": "index.ts"
+   }
+  ],
+  "probe": {
+   "type": "edit_leaves_diagnostic",
+   "params": {
+    "edit": {
+     "via": "code_action",
+     "path": "index.ts",
+     "diagnostic": {
+      "message_re": "'bard'"
+     },
+     "title_re": "(?i)declare (static )?method",
+     "missing": "absent"
+    },
+    "target": {
+     "message_re": "'bard'"
+    }
+   }
+  }
+ },
+ "attempts": []
+}

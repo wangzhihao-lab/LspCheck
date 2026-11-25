@@ -1,0 +1,5 @@
+<scheduler message>
+2026-11-20 18:53:39,679 INFO C2 ts6-r1-diagnostics-extra-2304-h7-8ca52f orig: reproduced 3/3, differed 3, settled 3, control stable 3 
+2026-11-20 18:54:25,645 INFO C2 ts6-r1-diagnostics-extra-2304-h7-8ca52f first-only: reproduced 0/3, differed 0, settled 3, control stable 3 
+2026-11-20 18:55:17,954 INFO C2 ts6-r1-diagnostics-extra-2304-h7-8ca52f settle: reproduced 0/3, differed 0, settled 3, control stable 3 
+data/lsptest/runs/main_v1/evidence/root_cause_replays_race.json

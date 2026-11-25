@@ -1,0 +1,3 @@
+2026-11-18 07:26:45,540 INFO campaign_run run c243b9774c46: r2_handles on ts6 6.0.3, Gitlawb/openclaude@5cd11336caea seed 1 settled, targets ['src/commands/privacy-settings/index.ts', 'src/components/PromptInput/Notifications.tsx', 'src/utils/log.test.ts']
+2026-11-18 07:29:34,500 INFO campaign_run run c243b9774c46: 0 candidate(s) in 169s; confirming
+2026-11-18 07:29:34,502 INFO campaign_run run c243b9774c46 finished: ok, 0 confirmed of 0 candidate(s), 169s

@@ -1,0 +1,432 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "51c467cdc512-v03",
+ "run_id": "51c467cdc512",
+ "oracle": "r6_crossimpl",
+ "server": {
+  "kind": "ts7",
+  "version": "7.0.2"
+ },
+ "project": {
+  "name": "upstash/context7@6477e43e31d2",
+  "source": "corpus",
+  "ref": "temp/corpus/upstash__context7@6477e43e31d2",
+  "commit": "6477e43e31d27a5c1bc044506e1c14de15f8a110",
+  "language": "typescript"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "packages/cli/src/__tests__/command-auth-wiring.test.ts",
+    "positions": [
+     [
+      1,
+      21
+     ],
+     [
+      17,
+      72
+     ],
+     [
+      18,
+      23
+     ],
+     [
+      18,
+      64
+     ],
+     [
+      19,
+      7
+     ],
+     [
+      30,
+      5
+     ],
+     [
+      38,
+      12
+     ],
+     [
+      39,
+      15
+     ],
+     [
+      51,
+      5
+     ],
+     [
+      64,
+      16
+     ],
+     [
+      67,
+      14
+     ],
+     [
+      101,
+      40
+     ]
+    ],
+    "ends": [
+     [
+      1,
+      23
+     ],
+     [
+      17,
+      74
+     ],
+     [
+      18,
+      25
+     ],
+     [
+      18,
+      66
+     ],
+     [
+      19,
+      12
+     ],
+     [
+      30,
+      7
+     ],
+     [
+      38,
+      13
+     ],
+     [
+      39,
+      16
+     ],
+     [
+      51,
+      10
+     ],
+     [
+      64,
+      18
+     ],
+     [
+      67,
+      18
+     ],
+     [
+      101,
+      50
+     ]
+    ],
+    "names": [
+     "from",
+     "args",
+     "args",
+     "args",
+     "getBaseUrl",
+     "mock",
+     "fn",
+     "fn",
+     "beforeEach",
+     "run",
+     "program",
+     "toHaveBeenCalledWith"
+    ]
+   },
+   {
+    "path": "packages/sdk/src/client.ts",
+    "positions": [
+     [
+      17,
+      2
+     ],
+     [
+      30,
+      11
+     ],
+     [
+      36,
+      44
+     ],
+     [
+      38,
+      46
+     ],
+     [
+      42,
+      14
+     ],
+     [
+      81,
+      9
+     ],
+     [
+      97,
+      34
+     ],
+     [
+      98,
+      14
+     ],
+     [
+      147,
+      79
+     ],
+     [
+      179,
+      18
+     ],
+     [
+      188,
+      74
+     ],
+     [
+      190,
+      37
+     ]
+    ],
+    "ends": [
+     [
+      17,
+      4
+     ],
+     [
+      30,
+      13
+     ],
+     [
+      36,
+      47
+     ],
+     [
+      38,
+      51
+     ],
+     [
+      42,
+      19
+     ],
+     [
+      81,
+      15
+     ],
+     [
+      97,
+      44
+     ],
+     [
+      98,
+      18
+     ],
+     [
+      147,
+      83
+     ],
+     [
+      179,
+      25
+     ],
+     [
+      188,
+      77
+     ],
+     [
+      190,
+      40
+     ]
+    ],
+    "names": [
+     "type",
+     "from",
+     "config",
+     "credential",
+     "httpClient",
+     "libraryName",
+     "SearchLibraryCommand",
+     "command",
+     "Promise",
+     "Context7Error",
+     "Record",
+     "filter"
+    ]
+   },
+   {
+    "path": "packages/sdk/src/commands/command.ts",
+    "positions": [
+     [
+      0,
+      15
+     ],
+     [
+      1,
+      35
+     ],
+     [
+      5,
+      20
+     ],
+     [
+      10,
+      21
+     ],
+     [
+      13,
+      7
+     ],
+     [
+      13,
+      30
+     ],
+     [
+      14,
+      22
+     ],
+     [
+      15,
+      13
+     ],
+     [
+      25,
+      38
+     ],
+     [
+      25,
+      47
+     ],
+     [
+      26,
+      15
+     ],
+     [
+      26,
+      32
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      22
+     ],
+     [
+      1,
+      40
+     ],
+     [
+      5,
+      28
+     ],
+     [
+      10,
+      25
+     ],
+     [
+      13,
+      13
+     ],
+     [
+      13,
+      37
+     ],
+     [
+      14,
+      26
+     ],
+     [
+      15,
+      17
+     ],
+     [
+      25,
+      41
+     ],
+     [
+      25,
+      52
+     ],
+     [
+      26,
+      18
+     ],
+     [
+      26,
+      35
+     ]
+    ],
+    "names": [
+     "Context7Error",
+     "Requester",
+     "EndpointVariants",
+     "request",
+     "constructor",
+     "CommandRequest",
+     "request",
+     "endpoint",
+     "client",
+     "Requester",
+     "result",
+     "client"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "hover",
+  "path": "packages/cli/src/__tests__/command-auth-wiring.test.ts",
+  "line": 30,
+  "character": 5,
+  "extra": ""
+ },
+ "ops": [],
+ "case": {
+  "intended": [],
+  "intended_source": "4519ec0a93607319a96f4feb967aa06a251ccc816544e2fed5c985c1d45dc11a",
+  "method": "hover",
+  "only_reference": null,
+  "only_test": null,
+  "reference": {
+   "kind": "ts6",
+   "version": "6.0.3"
+  }
+ },
+ "shape": "hover:changed",
+ "signature": "ts7|r6_crossimpl|hover:changed",
+ "expected": "(method) VitestUtils.mock(path: string, factory?: ModuleMockFactoryWithHelper | ModuleMockOptions): void (+1 overload)",
+ "actual": "(method) VitestUtils.mock(path: string, factory?: ModuleMockFactoryWithHelper | ModuleMockOptions): void",
+ "reproduced": "3/3",
+ "note": "ts7-7.0.2 and ts6-6.0.3 differ on hover at packages/cli/src/__tests__/command-auth-wiring.test.ts:31:6; no documented intended difference matches; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 351s",
+ "violation": {
+  "oracle": "r6_crossimpl",
+  "server": "ts7-7.0.2",
+  "project": "upstash/context7@6477e43e31d2",
+  "key": {
+   "method": "hover",
+   "path": "packages/cli/src/__tests__/command-auth-wiring.test.ts",
+   "line": 30,
+   "character": 5,
+   "extra": ""
+  },
+  "expected": "(method) VitestUtils.mock(path: string, factory?: ModuleMockFactoryWithHelper | ModuleMockOptions): void (+1 overload)",
+  "actual": "(method) VitestUtils.mock(path: string, factory?: ModuleMockFactoryWithHelper | ModuleMockOptions): void",
+  "ops": [],
+  "detail": "{\"case\": {\"intended\": [], \"intended_source\": \"4519ec0a93607319a96f4feb967aa06a251ccc816544e2fed5c985c1d45dc11a\", \"method\": \"hover\", \"only_reference\": null, \"only_test\": null, \"reference\": {\"kind\": \"ts6\", \"version\": \"6.0.3\"}}, \"note\": \"ts7-7.0.2 and ts6-6.0.3 differ on hover at packages/cli/src/__tests__/command-auth-wiring.test.ts:31:6; no documented intended difference matches; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 351s\", \"shape\": \"hover:changed\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "ts7|r6_crossimpl|hover:changed",
+  "run_id": "51c467cdc512"
+ },
+ "replay_logs": [
+  "logs/ts6-6.0.3-51c467cdc512-ref-r6-replay-ref-baseline-20260923-153001-7d995e.jsonl.gz",
+  "logs/ts6-6.0.3-51c467cdc512-ref-r6-replay-ref-control-20260923-153036-2867b8.jsonl.gz",
+  "logs/ts7-7.0.2-51c467cdc512-r6-replay-test-baseline-20260923-152900-4f506f.jsonl.gz",
+  "logs/ts7-7.0.2-51c467cdc512-r6-replay-test-control-20260923-152937-4b7b7c.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

@@ -1,0 +1,101 @@
+{
+ "schema": 1,
+ "id": "jdtls-3155",
+ "meta": {
+  "server": "jdtls",
+  "kind": "jdtls",
+  "number": 3155,
+  "url": "https://github.com/eclipse-jdtls/eclipse.jdt.ls/issues/3155",
+  "title": "Doesn't revalidate project files after classpath changes if autobuild is off.",
+  "oracle_class": "R1",
+  "subtype": "dependency-edit",
+  "fix_ref": "bb26c98d (Revalidate open files in project when classpath updates.), 2024-05-16; git tag --contains: first in v1.37.0",
+  "fix_shas": [
+   "bb26c98d438832451700d71ce36a463575848618"
+  ],
+  "pre_version": "1.36.0",
+  "post_version": "1.37.0",
+  "pre_build": "1.36.0",
+  "post_build": "1.37.0",
+  "build_notes": "Eclipse JDT LS release tarballs 1.36.0 (jdt-language-server-1.36.0-202405301306) and 1.37.0 (-202406271335), unpacked under temp/lsp_servers/ and run on the bundled JDK 17 with a private -data directory per session. The first session resolves the Maven dependency (commons-lang3 3.5) and the compiler plugin into ~/.m2/repository.",
+  "candidate_rank": null,
+  "effort_minutes": 14,
+  "notes": "Converted from the validated state-bug spike (scripts/lsp_repro/cases/jdtls_3155.py), but with the reporter's own reproduction instead of the spike's hand-made .classpath project: the Maven project 'salut' from the issue (pom.xml and Foo.java verbatim) and the reported steps (delete the dependency from the open pom.xml, save; the build file change reaches the server as a watched-file change, as the editor's file watcher reports the save). Not in candidates.jsonl (JDT LS was not part of the candidate mining)."
+ },
+ "language": "java",
+ "settings": {
+  "java": {
+   "autobuild": {
+    "enabled": false
+   }
+  }
+ },
+ "settings_note": "java.autobuild.enabled=false is the precondition named in the issue title; java.configuration.updateBuildConfiguration=automatic (session default) stands for the reporter answering yes to the synchronize prompt.",
+ "session": {
+  "settle_timeout_s": 600,
+  "request_timeout_s": 60
+ },
+ "files": [
+  {
+   "path": "pom.xml",
+   "provenance": "issue",
+   "source": "issue comment by ethan-vanderheijden (2024-05-10), pom.xml code block ('derived from the test case in org.eclipse.jdt.ls.tests/projects/maven/salut')",
+   "note": ""
+  },
+  {
+   "path": "src/main/java/java/Foo.java",
+   "provenance": "issue",
+   "source": "issue comment by ethan-vanderheijden (2024-05-10), Foo.java code block",
+   "note": "path from the directory tree in the same comment (salut/src/main/java/java/Foo.java)"
+  }
+ ],
+ "repro": {
+  "attempt": 1,
+  "timing": "settled",
+  "steps": "With java.autobuild.enabled=false: open Foo.java and pom.xml and let the server settle (step 1). Delete the commons-lang3 dependency from pom.xml and save it; the configuration update is automatic in the session settings (the reporter clicked yes on 'synchronize the Java classpath'), and the saved build file reaches the server as a watched-file change, as the editor's file watcher reports it (step 2). Reported: no errors appear in Foo.java because its diagnostics are stale; they appear only once the file gets focus (step 3). Probe (R1): the diagnostics of Foo.java must equal those of a fresh session on the final files (which reports the unresolved import and StringUtils).",
+  "ops": [
+   {
+    "kind": "open",
+    "path": "src/main/java/java/Foo.java"
+   },
+   {
+    "kind": "open",
+    "path": "pom.xml"
+   },
+   {
+    "kind": "change",
+    "path": "pom.xml",
+    "start": [
+     19,
+     0
+    ],
+    "end": [
+     24,
+     0
+    ],
+    "text": ""
+   },
+   {
+    "kind": "save",
+    "path": "pom.xml"
+   },
+   {
+    "kind": "fs_write",
+    "path": "pom.xml",
+    "text": "<project xmlns=\"http://maven.apache.org/POM/4.0.0\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n\txsi:schemaLocation=\"http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd\">\n\t<modelVersion>4.0.0</modelVersion>\n\t<groupId>foo.bar</groupId>\n\t<artifactId>salut</artifactId>\n\t<version>0.0.1-SNAPSHOT</version>\n\t<build>\n\t\t<plugins>\n\t\t\t<plugin>\n\t\t\t\t<artifactId>maven-compiler-plugin</artifactId>\n\t\t\t\t<version>3.5.1</version>\n\t\t\t\t<configuration>\n\t\t\t\t\t<source>1.7</source>\n\t\t\t\t\t<target>1.7</target>\n\t\t\t\t</configuration>\n\t\t\t</plugin>\n\t\t</plugins>\n\t</build>\n\t<dependencies>\n\t</dependencies>\n</project>\n"
+   }
+  ],
+  "probe": {
+   "type": "differs_from_fresh",
+   "params": {
+    "queries": [
+     {
+      "method": "diagnostics",
+      "path": "src/main/java/java/Foo.java"
+     }
+    ]
+   }
+  }
+ },
+ "attempts": []
+}

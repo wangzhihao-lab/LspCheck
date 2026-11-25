@@ -1,0 +1,3 @@
+2026-09-24 12:02:55,807 INFO campaign_run run b6f2be9e602a: r1_history on rust-analyzer 2026-09-21, dani-garcia/vaultwarden@cc67d644f626 seed 3 settled, targets ['macros/src/lib.rs', 'src/api/core/folders.rs', 'src/api/core/two_factor/protected_actions.rs']
+2026-09-24 12:13:34,063 INFO campaign_run run b6f2be9e602a: 0 candidate(s) in 638s; confirming
+2026-09-24 12:13:34,063 INFO campaign_run run b6f2be9e602a finished: ok, 0 confirmed of 0 candidate(s), 638s

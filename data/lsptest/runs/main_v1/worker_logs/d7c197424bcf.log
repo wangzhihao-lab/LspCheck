@@ -1,0 +1,3 @@
+2026-09-24 12:54:16,689 INFO campaign_run run d7c197424bcf: r1_history on ts6 6.0.3, vercel/hyper@30ec0a2a91de seed 3 settled, targets ['lib/components/style-sheet.tsx', 'lib/components/tab.tsx', 'test/index.ts']
+2026-09-24 13:06:25,835 INFO campaign_run run d7c197424bcf: 8 candidate(s) in 729s; confirming
+2026-09-24 13:06:25,837 INFO campaign_run run d7c197424bcf finished: ok, 0 confirmed of 8 candidate(s), 729s

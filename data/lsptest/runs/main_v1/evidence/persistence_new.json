@@ -1,0 +1,52 @@
+{
+ "waits_s": [
+  0,
+  5,
+  30,
+  60
+ ],
+ "replays": 1,
+ "rows": [
+  {
+   "gid": "gopls-r1-codeaction-changed-h4-c5344e",
+   "by_wait": {
+    "0": {
+     "verdict": "reproduced",
+     "replays": 1,
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 38.8,
+     "error": ""
+    },
+    "5": {
+     "verdict": "reproduced",
+     "replays": 1,
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 50.0,
+     "error": ""
+    },
+    "30": {
+     "verdict": "reproduced",
+     "replays": 1,
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 68.5,
+     "error": ""
+    },
+    "60": {
+     "verdict": "reproduced",
+     "replays": 1,
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 99.1,
+     "error": ""
+    }
+   }
+  }
+ ]
+}

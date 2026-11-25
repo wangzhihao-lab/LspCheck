@@ -1,0 +1,52 @@
+{
+ "vid": "ced4ef795b99-v01",
+ "ops_before": 3,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 2,
+ "cache_hits": 0,
+ "reduce_seconds": 4.418,
+ "budget_exhausted": false,
+ "probe_log": [
+  [
+   2,
+   false
+  ],
+  [
+   2,
+   false
+  ]
+ ],
+ "logs": [
+  "gopls-v0.23.0-tr946c39-r4-replay-baseline-20260925-160541-cd43f9.jsonl.gz",
+  "gopls-v0.23.0-tr946c39-r4-replay-case-20260925-160530-f99f42.jsonl.gz",
+  "gopls-v0.23.0-tr946c39-r4-replay-control-20260925-160547-4a080d.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [],
+  "actual": [
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "UndeclaredName",
+    "compiler",
+    "undefined: b"
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "WrongArgCount",
+    "compiler",
+    "not enough arguments in call to RenderContent have () want ([]byte)"
+   ]
+  ]
+ },
+ "ops_after": 3,
+ "total_seconds": 87.7
+}

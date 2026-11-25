@@ -1,0 +1,29 @@
+{
+ "vid": "0f7d1b71b1a8-v00",
+ "ops_before": 0,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 0,
+ "cache_hits": 0,
+ "reduce_seconds": 0.0,
+ "budget_exhausted": false,
+ "probe_log": [],
+ "logs": [
+  "pyright-1.1.414-tra4eaed-r3-replay-baseline-20260925-174352-413712.jsonl.gz",
+  "pyright-1.1.414-tra4eaed-r3-replay-control-20260925-174358-01bc98.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [
+   [
+    "scrapling/parser.py",
+    76,
+    6,
+    76,
+    14
+   ]
+  ],
+  "actual": []
+ },
+ "ops_after": 0,
+ "total_seconds": 47.4
+}

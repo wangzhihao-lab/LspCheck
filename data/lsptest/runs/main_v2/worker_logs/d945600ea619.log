@@ -1,0 +1,3 @@
+2026-11-18 15:27:18,690 INFO campaign_run run d945600ea619: r3_routes on ts7 7.0.2, hexojs/hexo@751e856691bf seed 2 settled, targets ['lib/hexo/scaffold.ts', 'test/fixtures/post_render.ts', 'test/scripts/tags/blockquote.ts']
+2026-11-18 15:29:32,789 INFO campaign_run run d945600ea619: 3 candidate(s) in 134s; confirming
+2026-11-18 15:29:32,790 INFO campaign_run run d945600ea619 finished: ok, 0 confirmed of 3 candidate(s), 134s

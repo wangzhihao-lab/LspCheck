@@ -1,0 +1,3 @@
+2026-11-18 15:22:56,843 INFO campaign_run run a32b63e0d93c: r1_history on gopls v0.23.0, labstack/echo@3d084be90224 seed 2 settled, targets ['group_method_handling_test.go', 'json.go', 'middleware/basic_auth_test.go']
+2026-11-18 15:31:12,991 INFO campaign_run run a32b63e0d93c: 0 candidate(s) in 496s; confirming
+2026-11-18 15:31:12,992 INFO campaign_run run a32b63e0d93c finished: ok, 0 confirmed of 0 candidate(s), 496s

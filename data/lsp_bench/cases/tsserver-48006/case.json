@@ -1,0 +1,67 @@
+{
+ "schema": 1,
+ "id": "tsserver-48006",
+ "meta": {
+  "server": "tsserver",
+  "kind": "tsserver",
+  "number": 48006,
+  "url": "https://github.com/microsoft/TypeScript/issues/48006",
+  "title": "Paste into editor with format on paste removes pasted word",
+  "oracle_class": "R4",
+  "subtype": "format",
+  "fix_ref": "microsoft/TypeScript#48921 (Fix formatter's processChildNodes), e73d755668, 2022-05-02; git tag --contains: first in v4.7-rc / v4.7.2",
+  "fix_shas": [
+   "e73d7556688977405f0397665d7634673f88bd26"
+  ],
+  "pre_version": "4.6.4",
+  "post_version": "4.7.2",
+  "pre_build": "4.6.4+tsls0.10.1",
+  "post_build": "4.7.2+tsls0.10.1",
+  "wrapper": "typescript-language-server@0.10.1",
+  "build_notes": "npm typescript@4.6.4 (2022-04-28) and typescript@4.7.2 (2022-05-24), both behind typescript-language-server@0.10.1 (the latest wrapper release before 4.7.2), started with the pinned tsserver.js (--tsserver-path); the reported TypeScript version is checked on every session. A maintainer traced the regression to PR #46875 (4.6 development), so 4.6.4 has it.",
+  "candidate_rank": 206,
+  "effort_minutes": 8,
+  "notes": "Uses the format request of the maintainer's trace (bpasero's line, paste into the first argument: format over the pasted 'aaaa'), whose destructive answer deletes from the opening quote into the second argument and leaves an unterminated string. The issue's other simplified repro (paste into f('') of 'const a = f('').x();') deletes the whole argument but leaves parseable code, which the parse probe cannot see."
+ },
+ "language": "typescript",
+ "settings": {},
+ "settings_note": "Format on paste is the client's behaviour (a range format of the pasted text), expressed as the probe's range_format; FormattingOptions are the probe defaults.",
+ "session": {
+  "settle_timeout_s": 120
+ },
+ "files": [
+  {
+   "path": "index.ts",
+   "provenance": "issue",
+   "source": "issue comment by bpasero (2022-02-21, 'it reproduces as simple as with this')",
+   "note": "the file name follows the maintainer's trace (index.ts)"
+  }
+ ],
+ "repro": {
+  "attempt": 1,
+  "timing": "settled",
+  "steps": "Open index.ts ('const x = f('aaaa', 'aaaa').x()', the text after pasting aaaa) and, as format on paste does, format the pasted range: the maintainer's trace sends format for line 1, offsets 14-18 (the aaaa of the first argument). Reported: the answer deletes line 1, offsets 13-23, i.e. the pasted word and more; expected: no destructive edit. Probe: the range-format edit applied to the text must not add a parse error.",
+  "ops": [
+   {
+    "kind": "open",
+    "path": "index.ts"
+   }
+  ],
+  "probe": {
+   "type": "edit_breaks_syntax",
+   "params": {
+    "edit": {
+     "via": "range_format",
+     "path": "index.ts",
+     "range": [
+      0,
+      13,
+      0,
+      17
+     ]
+    }
+   }
+  }
+ },
+ "attempts": []
+}

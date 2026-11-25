@@ -1,0 +1,389 @@
+{
+ "format": 1,
+ "campaign": "bench_v1",
+ "vid": "0bac0bd3f9dd-v00",
+ "run_id": "0bac0bd3f9dd",
+ "oracle": "r1_history",
+ "server": {
+  "kind": "gopls",
+  "version": "v0.20.0"
+ },
+ "project": {
+  "name": "gopls-74938",
+  "source": "dir",
+  "ref": "data/lsp_bench/cases/gopls-74938/project",
+  "commit": "",
+  "language": "go"
+ },
+ "context": {
+  "seed": 3,
+  "timing": "settled",
+  "settle_timeout_s": 180.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "slicescontains.go",
+    "positions": [
+     [
+      4,
+      27
+     ],
+     [
+      6,
+      38
+     ],
+     [
+      23,
+      37
+     ],
+     [
+      26,
+      6
+     ],
+     [
+      41,
+      12
+     ],
+     [
+      43,
+      24
+     ],
+     [
+      56,
+      5
+     ],
+     [
+      63,
+      52
+     ],
+     [
+      89,
+      25
+     ],
+     [
+      98,
+      33
+     ],
+     [
+      104,
+      10
+     ],
+     [
+      107,
+      11
+     ],
+     [
+      117,
+      5
+     ],
+     [
+      142,
+      54
+     ],
+     [
+      151,
+      23
+     ],
+     [
+      152,
+      6
+     ],
+     [
+      160,
+      25
+     ],
+     [
+      182,
+      5
+     ],
+     [
+      188,
+      24
+     ],
+     [
+      189,
+      9
+     ]
+    ],
+    "ends": [
+     [
+      4,
+      29
+     ],
+     [
+      6,
+      40
+     ],
+     [
+      23,
+      39
+     ],
+     [
+      26,
+      10
+     ],
+     [
+      41,
+      20
+     ],
+     [
+      43,
+      27
+     ],
+     [
+      56,
+      8
+     ],
+     [
+      63,
+      55
+     ],
+     [
+      89,
+      27
+     ],
+     [
+      98,
+      36
+     ],
+     [
+      104,
+      12
+     ],
+     [
+      107,
+      17
+     ],
+     [
+      117,
+      6
+     ],
+     [
+      142,
+      57
+     ],
+     [
+      151,
+      25
+     ],
+     [
+      152,
+      8
+     ],
+     [
+      160,
+      27
+     ],
+     [
+      182,
+      6
+     ],
+     [
+      188,
+      27
+     ],
+     [
+      189,
+      11
+     ]
+    ],
+    "names": [
+     "int",
+     "int",
+     "int",
+     "println",
+     "assignTrueBreak",
+     "slice",
+     "found",
+     "needle",
+     "int",
+     "needle",
+     "true",
+     "containsFunc",
+     "_",
+     "error",
+     "args",
+     "arg",
+     "elem",
+     "I",
+     "slice",
+     "elem"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "completion",
+  "path": "slicescontains.go",
+  "line": 4,
+  "character": 29,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "slicescontains.go"
+  },
+  {
+   "kind": "fs_write",
+   "path": "go.mod",
+   "text": "module example.com/slicescontains\nmodule example.com/slicescontains\n\ngo 1.24\n"
+  },
+  {
+   "kind": "change",
+   "path": "slicescontains.go",
+   "start": [
+    107,
+    42
+   ],
+   "end": [
+    107,
+    47
+   ]
+  },
+  {
+   "kind": "save",
+   "path": "slicescontains.go"
+  },
+  {
+   "kind": "change",
+   "path": "slicescontains.go",
+   "start": [
+    107,
+    42
+   ],
+   "end": [
+    107,
+    42
+   ],
+   "text": " bool"
+  },
+  {
+   "kind": "save",
+   "path": "slicescontains.go"
+  },
+  {
+   "kind": "fs_write",
+   "path": "go.mod",
+   "text": "module example.com/slicescontains\n\ngo 1.24\n"
+  }
+ ],
+ "case": {
+  "chain_step": 0,
+  "families": [],
+  "family": "H9",
+  "history_index": 9,
+  "history_seed": 3010,
+  "mode": "fresh",
+  "note": "window: go.mod: line 0 duplicated; inside: slicescontains.go: delete ' bool' on line 107, then its inverse; then W reverted",
+  "seed": 3,
+  "timing": "settled"
+ },
+ "shape": "completion:lost",
+ "signature": "gopls|r1_history|completion:lost",
+ "expected": [
+  "int",
+  "int16",
+  "int32",
+  "int64",
+  "int8",
+  "uint",
+  "uint16",
+  "uint32",
+  "uint64",
+  "uint8",
+  "uintptr"
+ ],
+ "actual": [],
+ "reproduced": "3/3",
+ "note": "H9: window: go.mod: line 0 duplicated; inside: slicescontains.go: delete ' bool' on line 107, then its inverse; then W reverted; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 230s",
+ "violation": {
+  "oracle": "r1_history",
+  "server": "gopls-v0.20.0",
+  "project": "gopls-74938",
+  "key": {
+   "method": "completion",
+   "path": "slicescontains.go",
+   "line": 4,
+   "character": 29,
+   "extra": ""
+  },
+  "expected": [
+   "int",
+   "int16",
+   "int32",
+   "int64",
+   "int8",
+   "uint",
+   "uint16",
+   "uint32",
+   "uint64",
+   "uint8",
+   "uintptr"
+  ],
+  "actual": [],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "slicescontains.go"
+   },
+   {
+    "kind": "fs_write",
+    "path": "go.mod",
+    "text": "module example.com/slicescontains\nmodule example.com/slicescontains\n\ngo 1.24\n"
+   },
+   {
+    "kind": "change",
+    "path": "slicescontains.go",
+    "start": [
+     107,
+     42
+    ],
+    "end": [
+     107,
+     47
+    ]
+   },
+   {
+    "kind": "save",
+    "path": "slicescontains.go"
+   },
+   {
+    "kind": "change",
+    "path": "slicescontains.go",
+    "start": [
+     107,
+     42
+    ],
+    "end": [
+     107,
+     42
+    ],
+    "text": " bool"
+   },
+   {
+    "kind": "save",
+    "path": "slicescontains.go"
+   },
+   {
+    "kind": "fs_write",
+    "path": "go.mod",
+    "text": "module example.com/slicescontains\n\ngo 1.24\n"
+   }
+  ],
+  "detail": "{\"case\": {\"chain_step\": 0, \"families\": [], \"family\": \"H9\", \"history_index\": 9, \"history_seed\": 3010, \"mode\": \"fresh\", \"note\": \"window: go.mod: line 0 duplicated; inside: slicescontains.go: delete ' bool' on line 107, then its inverse; then W reverted\", \"seed\": 3, \"timing\": \"settled\"}, \"note\": \"H9: window: go.mod: line 0 duplicated; inside: slicescontains.go: delete ' bool' on line 107, then its inverse; then W reverted; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 230s\", \"shape\": \"completion:lost\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "gopls|r1_history|completion:lost",
+  "run_id": "0bac0bd3f9dd"
+ },
+ "replay_logs": [
+  "logs/gopls-v0.20.0-0bac0bd3f9dd-replay-baseline-20260925-080335-9689b5.jsonl.gz",
+  "logs/gopls-v0.20.0-0bac0bd3f9dd-replay-control-20260925-080335-f9b9ee.jsonl.gz",
+  "logs/gopls-v0.20.0-0bac0bd3f9dd-replay-history-20260925-080341-c4eab8.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

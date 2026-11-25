@@ -1,0 +1,39 @@
+{
+ "vid": "7b994d0b8763-v02",
+ "ops_before": 3,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 2,
+ "cache_hits": 0,
+ "reduce_seconds": 18.633,
+ "budget_exhausted": false,
+ "probe_log": [
+  [
+   2,
+   false
+  ],
+  [
+   2,
+   false
+  ]
+ ],
+ "lines": {
+  "repro.py": "6/15 non-blank lines kept"
+ },
+ "line_probes": 15,
+ "line_seconds": 216.6,
+ "lines_confirmed": "3/3",
+ "line_skipped": [],
+ "line_budget_exhausted": false,
+ "logs": [
+  "pyright-1.1.380-tr2664b0-replay-baseline-20260923-114035-b40d7c.jsonl.gz",
+  "pyright-1.1.380-tr2664b0-replay-control-20260923-114035-698b98.jsonl.gz",
+  "pyright-1.1.380-tr2664b0-replay-history-20260923-114038-32ab29.jsonl.gz"
+ ],
+ "observed": {
+  "expected": "(func: (_S@map) -> _T@map, iterable: Iterable[_S@map], chunksize: int | None = None) -> list[_T@map]",
+  "actual": null
+ },
+ "ops_after": 3,
+ "total_seconds": 284.0
+}

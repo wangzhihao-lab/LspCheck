@@ -1,0 +1,954 @@
+{
+ "waits_s": [
+  0,
+  5,
+  30,
+  60
+ ],
+ "replays": 1,
+ "rows": [
+  {
+   "gid": "ts6-r1-completion-lost-h9-ce1ffc",
+   "by_wait": {
+    "0": {
+     "verdict": "reproduced",
+     "replays": 1,
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 137.7,
+     "error": ""
+    },
+    "5": {
+     "verdict": "reproduced",
+     "replays": 1,
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 137.3,
+     "error": ""
+    },
+    "30": {
+     "verdict": "reproduced",
+     "replays": 1,
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 164.3,
+     "error": ""
+    },
+    "60": {
+     "verdict": "reproduced",
+     "replays": 1,
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 180.8,
+     "error": ""
+    }
+   }
+  },
+  {
+   "gid": "ts6-r1-definition-lost-h9-898f29",
+   "by_wait": {
+    "0": {
+     "verdict": "reproduced",
+     "replays": 1,
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 61.4,
+     "error": ""
+    },
+    "5": {
+     "verdict": "reproduced",
+     "replays": 1,
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 72.3,
+     "error": ""
+    },
+    "30": {
+     "verdict": "reproduced",
+     "replays": 1,
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 108.6,
+     "error": ""
+    },
+    "60": {
+     "verdict": "reproduced",
+     "replays": 1,
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 133.6,
+     "error": ""
+    }
+   }
+  },
+  {
+   "gid": "ts6-r1-diagnostics-extra-2307-7006-h9-8325a2",
+   "by_wait": {
+    "0": {
+     "verdict": "reproduced",
+     "replays": 1,
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 55.6,
+     "error": ""
+    },
+    "5": {
+     "verdict": "reproduced",
+     "replays": 1,
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 59.7,
+     "error": ""
+    },
+    "30": {
+     "verdict": "not-reproduced",
+     "replays": 1,
+     "reproduced": 0,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 85.2,
+     "error": ""
+    },
+    "60": {
+     "verdict": "reproduced",
+     "replays": 1,
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 111.7,
+     "error": ""
+    }
+   }
+  },
+  {
+   "gid": "ts6-r1-documenthighlight-missing-h9-2e657a",
+   "by_wait": {
+    "0": {
+     "verdict": "not-reproduced",
+     "replays": 1,
+     "reproduced": 0,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 67.3,
+     "error": ""
+    },
+    "5": {
+     "verdict": "not-reproduced",
+     "replays": 1,
+     "reproduced": 0,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 71.6,
+     "error": ""
+    },
+    "30": {
+     "verdict": "reproduced",
+     "replays": 1,
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 84.5,
+     "error": ""
+    },
+    "60": {
+     "verdict": "reproduced",
+     "replays": 1,
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 118.0,
+     "error": ""
+    }
+   }
+  },
+  {
+   "gid": "ts6-r1-inlayhint-changed-h9-b9d052",
+   "by_wait": {
+    "0": {
+     "verdict": "not-reproduced",
+     "replays": 1,
+     "reproduced": 0,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 141.0,
+     "error": ""
+    },
+    "5": {
+     "verdict": "reproduced",
+     "replays": 1,
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 148.0,
+     "error": ""
+    },
+    "30": {
+     "verdict": "reproduced",
+     "replays": 1,
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 177.6,
+     "error": ""
+    },
+    "60": {
+     "verdict": "reproduced",
+     "replays": 1,
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 194.1,
+     "error": ""
+    }
+   }
+  },
+  {
+   "gid": "ts6-r1-references-missing-h5-cc8950",
+   "by_wait": {
+    "0": {
+     "verdict": "reproduced",
+     "replays": 1,
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 58.6,
+     "error": ""
+    },
+    "5": {
+     "verdict": "reproduced",
+     "replays": 1,
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 62.7,
+     "error": ""
+    },
+    "30": {
+     "verdict": "reproduced",
+     "replays": 1,
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 91.0,
+     "error": ""
+    },
+    "60": {
+     "verdict": "reproduced",
+     "replays": 1,
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 124.4,
+     "error": ""
+    }
+   }
+  },
+  {
+   "gid": "ts6-r1-semantictokens-changed-h9-c4368c",
+   "by_wait": {
+    "0": {
+     "verdict": "reproduced",
+     "replays": 1,
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 43.3,
+     "error": ""
+    },
+    "5": {
+     "verdict": "reproduced",
+     "replays": 1,
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 48.8,
+     "error": ""
+    },
+    "30": {
+     "verdict": "reproduced",
+     "replays": 1,
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 75.3,
+     "error": ""
+    },
+    "60": {
+     "verdict": "reproduced",
+     "replays": 1,
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 100.7,
+     "error": ""
+    }
+   }
+  },
+  {
+   "gid": "ts6-r1-typedefinition-lost-h9-b52749",
+   "by_wait": {
+    "0": {
+     "verdict": "reproduced",
+     "replays": 1,
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 63.1,
+     "error": ""
+    },
+    "5": {
+     "verdict": "reproduced",
+     "replays": 1,
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 68.7,
+     "error": ""
+    },
+    "30": {
+     "verdict": "reproduced",
+     "replays": 1,
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 99.7,
+     "error": ""
+    },
+    "60": {
+     "verdict": "reproduced",
+     "replays": 1,
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 126.6,
+     "error": ""
+    }
+   }
+  },
+  {
+   "gid": "gopls-r1-references-extra-h5-e2e003",
+   "by_wait": {
+    "0": {
+     "verdict": "reproduced",
+     "replays": 1,
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 50.4,
+     "error": ""
+    },
+    "5": {
+     "verdict": "reproduced",
+     "replays": 1,
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 55.1,
+     "error": ""
+    },
+    "30": {
+     "verdict": "reproduced",
+     "replays": 1,
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 80.2,
+     "error": ""
+    },
+    "60": {
+     "verdict": "reproduced",
+     "replays": 1,
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 110.1,
+     "error": ""
+    }
+   }
+  },
+  {
+   "gid": "gopls-r1-codeaction-changed-h4-c5344e",
+   "by_wait": {
+    "0": {
+     "verdict": "reproduced",
+     "replays": 1,
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 24.3,
+     "error": ""
+    },
+    "5": {
+     "verdict": "reproduced",
+     "replays": 1,
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 28.8,
+     "error": ""
+    },
+    "30": {
+     "verdict": "reproduced",
+     "replays": 1,
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 53.7,
+     "error": ""
+    },
+    "60": {
+     "verdict": "reproduced",
+     "replays": 1,
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 98.8,
+     "error": ""
+    }
+   }
+  },
+  {
+   "gid": "gopls-r1-codeaction-changed-h7-383b05",
+   "by_wait": {
+    "0": {
+     "verdict": "reproduced",
+     "replays": 1,
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 38.3,
+     "error": ""
+    },
+    "5": {
+     "verdict": "reproduced",
+     "replays": 1,
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 49.8,
+     "error": ""
+    },
+    "30": {
+     "verdict": "reproduced",
+     "replays": 1,
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 68.4,
+     "error": ""
+    },
+    "60": {
+     "verdict": "reproduced",
+     "replays": 1,
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 98.6,
+     "error": ""
+    }
+   }
+  },
+  {
+   "gid": "gopls-r1-codeaction-key-lost-h7-547744",
+   "by_wait": {
+    "0": {
+     "verdict": "reproduced",
+     "replays": 1,
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 26.6,
+     "error": ""
+    },
+    "5": {
+     "verdict": "reproduced",
+     "replays": 1,
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 31.9,
+     "error": ""
+    },
+    "30": {
+     "verdict": "reproduced",
+     "replays": 1,
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 56.8,
+     "error": ""
+    },
+    "60": {
+     "verdict": "reproduced",
+     "replays": 1,
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 87.1,
+     "error": ""
+    }
+   }
+  },
+  {
+   "gid": "gopls-r1-diagnostics-missing-h7-10a910",
+   "by_wait": {
+    "0": {
+     "verdict": "reproduced",
+     "replays": 1,
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 26.8,
+     "error": ""
+    },
+    "5": {
+     "verdict": "reproduced",
+     "replays": 1,
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 31.8,
+     "error": ""
+    },
+    "30": {
+     "verdict": "reproduced",
+     "replays": 1,
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 56.8,
+     "error": ""
+    },
+    "60": {
+     "verdict": "reproduced",
+     "replays": 1,
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 86.8,
+     "error": ""
+    }
+   }
+  },
+  {
+   "gid": "gopls-r1-completion-lost-h7-1a1169",
+   "by_wait": {
+    "0": {
+     "verdict": "reproduced",
+     "replays": 1,
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 637.7,
+     "error": ""
+    },
+    "5": {
+     "verdict": "reproduced",
+     "replays": 1,
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 642.6,
+     "error": ""
+    },
+    "30": {
+     "verdict": "reproduced",
+     "replays": 1,
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 667.9,
+     "error": ""
+    },
+    "60": {
+     "verdict": "reproduced",
+     "replays": 1,
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 698.3,
+     "error": ""
+    }
+   }
+  },
+  {
+   "gid": "gopls-r1-diagnostics-message-h5-e59f2c",
+   "by_wait": {
+    "0": {
+     "verdict": "reproduced",
+     "replays": 1,
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 23.5,
+     "error": ""
+    },
+    "5": {
+     "verdict": "reproduced",
+     "replays": 1,
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 28.7,
+     "error": ""
+    },
+    "30": {
+     "verdict": "reproduced",
+     "replays": 1,
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 52.9,
+     "error": ""
+    },
+    "60": {
+     "verdict": "reproduced",
+     "replays": 1,
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 83.2,
+     "error": ""
+    }
+   }
+  },
+  {
+   "gid": "pyright-r1-hover-text-h2-fb2ed0",
+   "by_wait": {
+    "0": {
+     "verdict": "reproduced",
+     "replays": 1,
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 24.6,
+     "error": ""
+    },
+    "5": {
+     "verdict": "reproduced",
+     "replays": 1,
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 29.4,
+     "error": ""
+    },
+    "30": {
+     "verdict": "reproduced",
+     "replays": 1,
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 54.5,
+     "error": ""
+    },
+    "60": {
+     "verdict": "reproduced",
+     "replays": 1,
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 84.3,
+     "error": ""
+    }
+   }
+  },
+  {
+   "gid": "pyright-r1-hover-text-h8-2a8227",
+   "by_wait": {
+    "0": {
+     "verdict": "reproduced",
+     "replays": 1,
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 14.6,
+     "error": ""
+    },
+    "5": {
+     "verdict": "reproduced",
+     "replays": 1,
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 21.1,
+     "error": ""
+    },
+    "30": {
+     "verdict": "reproduced",
+     "replays": 1,
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 48.5,
+     "error": ""
+    },
+    "60": {
+     "verdict": "reproduced",
+     "replays": 1,
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 74.5,
+     "error": ""
+    }
+   }
+  },
+  {
+   "gid": "pyright-r1-hover-text-h5-f24c4e",
+   "by_wait": {
+    "0": {
+     "verdict": "reproduced",
+     "replays": 1,
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 23.6,
+     "error": ""
+    },
+    "5": {
+     "verdict": "reproduced",
+     "replays": 1,
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 33.3,
+     "error": ""
+    },
+    "30": {
+     "verdict": "reproduced",
+     "replays": 1,
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 53.7,
+     "error": ""
+    },
+    "60": {
+     "verdict": "reproduced",
+     "replays": 1,
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 90.8,
+     "error": ""
+    }
+   }
+  },
+  {
+   "gid": "pyright-r1-references-extra-h9-37c1a2",
+   "by_wait": {
+    "0": {
+     "verdict": "reproduced",
+     "replays": 1,
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 15.8,
+     "error": ""
+    },
+    "5": {
+     "verdict": "reproduced",
+     "replays": 1,
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 15.5,
+     "error": ""
+    },
+    "30": {
+     "verdict": "reproduced",
+     "replays": 1,
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 39.9,
+     "error": ""
+    },
+    "60": {
+     "verdict": "reproduced",
+     "replays": 1,
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 69.8,
+     "error": ""
+    }
+   }
+  },
+  {
+   "gid": "pyright-r1-signaturehelp-changed-h9-846c6c",
+   "by_wait": {
+    "0": {
+     "verdict": "reproduced",
+     "replays": 1,
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 10.6,
+     "error": ""
+    },
+    "5": {
+     "verdict": "reproduced",
+     "replays": 1,
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 17.0,
+     "error": ""
+    },
+    "30": {
+     "verdict": "reproduced",
+     "replays": 1,
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 40.5,
+     "error": ""
+    },
+    "60": {
+     "verdict": "reproduced",
+     "replays": 1,
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 70.5,
+     "error": ""
+    }
+   }
+  },
+  {
+   "gid": "ts6-r1-codeaction-extra-h5-f48d27",
+   "by_wait": {
+    "0": {
+     "verdict": "reproduced",
+     "replays": 1,
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 14.3,
+     "error": ""
+    },
+    "5": {
+     "verdict": "reproduced",
+     "replays": 1,
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 19.5,
+     "error": ""
+    },
+    "30": {
+     "verdict": "reproduced",
+     "replays": 1,
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 44.2,
+     "error": ""
+    },
+    "60": {
+     "verdict": "reproduced",
+     "replays": 1,
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 74.3,
+     "error": ""
+    }
+   }
+  },
+  {
+   "gid": "ts6-r1-codeaction-key-lost-h8-3e0e0f",
+   "by_wait": {
+    "0": {
+     "verdict": "reproduced",
+     "replays": 1,
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 22.5,
+     "error": ""
+    },
+    "5": {
+     "verdict": "reproduced",
+     "replays": 1,
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 26.5,
+     "error": ""
+    },
+    "30": {
+     "verdict": "reproduced",
+     "replays": 1,
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 50.7,
+     "error": ""
+    },
+    "60": {
+     "verdict": "reproduced",
+     "replays": 1,
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 80.8,
+     "error": ""
+    }
+   }
+  },
+  {
+   "gid": "ts6-r1-diagnostics-moved-2875-h8-751ff9",
+   "by_wait": {
+    "0": {
+     "verdict": "reproduced",
+     "replays": 1,
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 20.1,
+     "error": ""
+    },
+    "5": {
+     "verdict": "reproduced",
+     "replays": 1,
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 25.5,
+     "error": ""
+    },
+    "30": {
+     "verdict": "reproduced",
+     "replays": 1,
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 50.6,
+     "error": ""
+    },
+    "60": {
+     "verdict": "reproduced",
+     "replays": 1,
+     "reproduced": 1,
+     "settled": 1,
+     "control_stable": 1,
+     "seconds": 80.7,
+     "error": ""
+    }
+   }
+  }
+ ]
+}

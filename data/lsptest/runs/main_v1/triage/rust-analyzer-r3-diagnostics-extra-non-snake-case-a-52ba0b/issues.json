@@ -1,0 +1,92 @@
+{
+ "queries": [
+  "\"pull diagnostics\" in:title repo:rust-lang/rust-analyzer is:issue",
+  "diagnostics extra repo:rust-lang/rust-analyzer is:issue",
+  "diagnostics \"pull diagnostics\" repo:rust-lang/rust-analyzer is:issue",
+  "diagnostics inconsistent repo:rust-lang/rust-analyzer is:issue"
+ ],
+ "matches": [
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 18375,
+   "title": "Implement the LSP diagnostics pull model",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/18375",
+   "state": "closed",
+   "created": "2024-10-23",
+   "comments": 0,
+   "query": "\"pull diagnostics\" in:title repo:rust-lang/rust-analyzer is:issue"
+  },
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 23193,
+   "title": "FP `expected &&&u32, found &&&&&&&&&&&&&&&&&&&&&&&&&i32`",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/23193",
+   "state": "open",
+   "created": "2026-08-19",
+   "comments": 5,
+   "query": "diagnostics extra repo:rust-lang/rust-analyzer is:issue"
+  },
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 13317,
+   "title": "Runnables: Extra Args sets Args instead of Extra Args",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/13317",
+   "state": "open",
+   "created": "2022-09-30",
+   "comments": 0,
+   "query": "diagnostics extra repo:rust-lang/rust-analyzer is:issue"
+  },
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 19491,
+   "title": "Too many arguments generates two diagnostics",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/19491",
+   "state": "open",
+   "created": "2025-04-01",
+   "comments": 13,
+   "query": "diagnostics extra repo:rust-lang/rust-analyzer is:issue"
+  },
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 22828,
+   "title": "panic: `can't project out of`",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/22828",
+   "state": "open",
+   "created": "2026-07-16",
+   "comments": 6,
+   "query": "diagnostics extra repo:rust-lang/rust-analyzer is:issue"
+  },
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 21662,
+   "title": "Documentation hint discrepency between autocomplete and inner function",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/21662",
+   "state": "open",
+   "created": "2026-02-17",
+   "comments": 2,
+   "query": "diagnostics extra repo:rust-lang/rust-analyzer is:issue"
+  },
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 18709,
+   "title": "rust-analyzer didn't return warning/hint diagnostics on `textDocument/diagnostic`",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/18709",
+   "state": "open",
+   "created": "2024-12-18",
+   "comments": 11,
+   "query": "diagnostics \"pull diagnostics\" repo:rust-lang/rust-analyzer is:issue"
+  },
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 18732,
+   "title": "stale diagnostic after panic",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/18732",
+   "state": "open",
+   "created": "2024-12-21",
+   "comments": 6,
+   "query": "diagnostics \"pull diagnostics\" repo:rust-lang/rust-analyzer is:issue"
+  }
+ ],
+ "notes": [],
+ "authenticated": true
+}

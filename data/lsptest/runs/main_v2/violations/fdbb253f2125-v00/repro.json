@@ -1,0 +1,661 @@
+{
+ "format": 1,
+ "campaign": "main_v2",
+ "vid": "fdbb253f2125-v00",
+ "run_id": "fdbb253f2125",
+ "oracle": "r1_history",
+ "server": {
+  "kind": "gopls",
+  "version": "v0.23.0"
+ },
+ "project": {
+  "name": "zeromicro/go-zero@5b1b5bdc3adc",
+  "source": "corpus",
+  "ref": "temp/corpus/zeromicro__go-zero@5b1b5bdc3adc",
+  "commit": "5b1b5bdc3adcc189b3bd8b77f2cc8a363ec3374c",
+  "language": "go"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "race0",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "core/discov/internal/vars.go",
+    "positions": [
+     [
+      0,
+      12
+     ],
+     [
+      8,
+      9
+     ],
+     [
+      9,
+      9
+     ],
+     [
+      9,
+      24
+     ],
+     [
+      9,
+      30
+     ],
+     [
+      10,
+      28
+     ],
+     [
+      11,
+      8
+     ],
+     [
+      11,
+      28
+     ],
+     [
+      11,
+      34
+     ],
+     [
+      12,
+      10
+     ],
+     [
+      17,
+      6
+     ],
+     [
+      19,
+      8
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      16
+     ],
+     [
+      8,
+      17
+     ],
+     [
+      9,
+      17
+     ],
+     [
+      9,
+      26
+     ],
+     [
+      9,
+      33
+     ],
+     [
+      10,
+      30
+     ],
+     [
+      11,
+      15
+     ],
+     [
+      11,
+      30
+     ],
+     [
+      11,
+      37
+     ],
+     [
+      12,
+      19
+     ],
+     [
+      17,
+      12
+     ],
+     [
+      19,
+      15
+     ]
+    ],
+    "names": [
+     "internal",
+     "autoSyncInterval",
+     "coolDownInterval",
+     "time",
+     "Second",
+     "time",
+     "requestTimeout",
+     "time",
+     "Second",
+     "endpointsSeparator",
+     "DialTimeout",
+     "RequestTimeout"
+    ]
+   },
+   {
+    "path": "core/stores/sqlx/metrics_test.go",
+    "positions": [
+     [
+      22,
+      13
+     ],
+     [
+      31,
+      16
+     ],
+     [
+      33,
+      17
+     ],
+     [
+      33,
+      24
+     ],
+     [
+      34,
+      4
+     ],
+     [
+      35,
+      4
+     ],
+     [
+      50,
+      13
+     ],
+     [
+      52,
+      6
+     ],
+     [
+      62,
+      24
+     ],
+     [
+      86,
+      6
+     ],
+     [
+      89,
+      32
+     ],
+     [
+      145,
+      4
+     ]
+    ],
+    "ends": [
+     [
+      22,
+      18
+     ],
+     [
+      31,
+      18
+     ],
+     [
+      33,
+      21
+     ],
+     [
+      33,
+      26
+     ],
+     [
+      34,
+      7
+     ],
+     [
+      35,
+      8
+     ],
+     [
+      50,
+      22
+     ],
+     [
+      52,
+      9
+     ],
+     [
+      62,
+      29
+     ],
+     [
+      86,
+      9
+     ],
+     [
+      89,
+      34
+     ],
+     [
+      145,
+      7
+     ]
+    ],
+    "names": [
+     "StartAsync",
+     "err",
+     "ReadAll",
+     "resp",
+     "assert",
+     "content",
+     "MaxOpenConnections",
+     "InUse",
+     "statGetter",
+     "InUse",
+     "time",
+     "assert"
+    ]
+   },
+   {
+    "path": "mcp/request_metadata.go",
+    "positions": [
+     [
+      20,
+      45
+     ],
+     [
+      21,
+      6
+     ],
+     [
+      25,
+      20
+     ],
+     [
+      29,
+      38
+     ],
+     [
+      35,
+      28
+     ],
+     [
+      36,
+      10
+     ],
+     [
+      65,
+      7
+     ],
+     [
+      85,
+      46
+     ],
+     [
+      105,
+      50
+     ],
+     [
+      124,
+      67
+     ],
+     [
+      124,
+      76
+     ],
+     [
+      131,
+      17
+     ]
+    ],
+    "ends": [
+     [
+      20,
+      47
+     ],
+     [
+      21,
+      7
+     ],
+     [
+      25,
+      32
+     ],
+     [
+      29,
+      42
+     ],
+     [
+      35,
+      30
+     ],
+     [
+      36,
+      12
+     ],
+     [
+      65,
+      8
+     ],
+     [
+      85,
+      49
+     ],
+     [
+      105,
+      54
+     ],
+     [
+      124,
+      70
+     ],
+     [
+      124,
+      79
+     ],
+     [
+      131,
+      19
+     ]
+    ],
+    "names": [
+     "ctx",
+     "ok",
+     "normalizeRequestMetadata",
+     "Context",
+     "http",
+     "vals",
+     "ok",
+     "Header",
+     "Headers",
+     "string",
+     "string",
+     "http"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "completion",
+  "path": "core/discov/internal/vars.go",
+  "line": 9,
+  "character": 26,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "core/discov/internal/vars.go"
+  },
+  {
+   "kind": "open",
+   "path": "core/stores/sqlx/metrics_test.go"
+  },
+  {
+   "kind": "open",
+   "path": "mcp/request_metadata.go"
+  },
+  {
+   "kind": "change",
+   "path": "core/discov/internal/vars.go",
+   "start": [
+    4,
+    0
+   ],
+   "end": [
+    4,
+    5
+   ]
+  },
+  {
+   "kind": "change",
+   "path": "core/discov/internal/vars.go",
+   "start": [
+    4,
+    0
+   ],
+   "end": [
+    4,
+    0
+   ],
+   "text": "const"
+  },
+  {
+   "kind": "request",
+   "path": "core/stores/sqlx/metrics_test.go",
+   "start": [
+    49,
+    17
+   ],
+   "text": "typeDefinition"
+  },
+  {
+   "kind": "request",
+   "path": "core/stores/sqlx/metrics_test.go",
+   "start": [
+    52,
+    9
+   ],
+   "text": "documentHighlight"
+  },
+  {
+   "kind": "fs_write",
+   "path": "go.mod",
+   "text": "module github.com/zeromicro/go-zero\n\ngo 1.25.0\n\nrequire (\n\tgithub.com/DATA-DOG/go-sqlmock v1.5.2\n\tgithub.com/alicebob/miniredis/v2 v2.38.0\n\tgithub.com/fatih/color v1.18.0\n\tgithub.com/fullstorydev/grpcurl v1.9.4\n\tgithub.com/go-sql-driver/mysql v1.10.0\n\tgithub.com/golang-jwt/jwt/v4 v4.5.2\n\tgithub.com/golang/protobuf v1.5.4\n\tgithub.com/google/uuid v1.6.0\n\tgithub.com/grafana/pyroscope-go v1.4.2\n\tgithub.com/jackc/pgx/v5 v5.9.2\n\tgithub.com/jhump/protoreflect v1.18.1\n\tgithub.com/modelcontextprotocol/go-sdk v1.4.1\n\tgithub.com/pelletier/go-toml/v2 v2.4.3\n\tgithub.com/prometheus/client_golang v1.23.2\n\tgithub.com/redis/go-redis/v9 v9.22.0\n\tgithub.com/spaolacci/murmur3 v1.1.0\n\tgithub.com/stretchr/testify v1.12.1\n\tgithub.com/titanous/json5 v1.0.0\n\tgo.etcd.io/etcd/api/v3 v3.5.21\n\tgo.etcd.io/etcd/client/v3 v3.5.21\n\tgo.mongodb.org/mongo-driver/v2 v2.8.2\n\tgo.opentelemetry.io/otel v1.46.0\n\tgo.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracegrpc v1.40.0\n\tgo.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracehttp v1.46.0\n\tgo.opentelemetry.io/otel/exporters/stdout/stdouttrace v1.46.0\n\tgo.opentelemetry.io/otel/exporters/zipkin v1.46.0\n\tgo.opentelemetry.io/otel/sdk v1.46.0\n\tgo.opentelemetry.io/otel/trace v1.46.0\n\tgo.uber.org/automaxprocs v1.6.0\n\tgo.uber.org/goleak v1.3.0\n\tgo.uber.org/mock v0.6.0\n\tgolang.org/x/net v0.58.0\n\tgolang.org/x/sys v0.47.0\n\tgolang.org/x/time v0.14.0\n\tgoogle.golang.org/genproto/googleapis/api v0.0.0-20260819154853-08b0e4226688\n\tgoogle.golang.org/grpc v1.83.2\n\tgoogle.golang.org/protobuf v1.36.12\n\tgopkg.in/cheggaaa/pb.v1 v1.0.28\n\tgopkg.in/h2non/gock.v1 v1.1.2\n\tgopkg.in/yaml.v2 v2.4.0\n\tk8s.io/api v0.34.3\n\tk8s.io/apimachinery v0.34.3\n\tk8s.io/client-go v0.34.3\n\tk8s.io/utils v0.0.0-20260707023825-cf1189d6abe3\n)\n\nrequire (\n\tfilippo.io/edwards25519 v1.2.0 // indirect\n\tgithub.com/beorn7/perks v1.0.1 // indirect\n\tgithub.com/cenkalti/backoff/v5 v5.0.3 // indirect\n\tgithub.com/cespare/xxhash/v2 v2.3.0 // indirect\n\tgithub.com/clipperhouse/uax29/v2 v2.2.0 // indirect\n\tgithub.com/cncf/xds/go v0.0.0-20260202195803-dba9d589def2 // indirect\n\tgithub.com/coreos/go-semver v0.3.1 // indirect\n\tgithub.com/coreos/go-systemd/v22 v22.7.0 // indirect\n\tgithub.com/davecgh/go-spew v1.1.1 // indirect\n\tgithub.com/emicklei/go-restful/v3 v3.13.0 // indirect\n\tgithub.com/envoyproxy/go-control-plane/envoy v1.37.0 // indirect\n\tgithub.com/envoyproxy/protoc-gen-validate v1.3.3 // indirect\n\tgithub.com/fxamacker/cbor/v2 v2.9.2 // indirect\n\tgithub.com/go-jose/go-jose/v4 v4.1.4 // indirect\n\tgithub.com/go-logr/logr v1.4.4 // indirect\n\tgithub.com/go-logr/stdr v1.2.2 // indirect\n\tgithub.com/go-openapi/jsonpointer v1.0.0 // indirect\n\tgithub.com/go-openapi/jsonreference v1.0.0 // indirect\n\tgithub.com/go-openapi/swag v0.28.0 // indirect\n\tgithub.com/go-openapi/swag/cmdutils v0.28.0 // indirect\n\tgithub.com/go-openapi/swag/conv v0.28.0 // indirect\n\tgithub.com/go-openapi/swag/fileutils v0.28.0 // indirect\n\tgithub.com/go-openapi/swag/jsonutils v0.28.0 // indirect\n\tgithub.com/go-openapi/swag/loading v0.28.0 // indirect\n\tgithub.com/go-openapi/swag/mangling v0.28.0 // indirect\n\tgithub.com/go-openapi/swag/netutils v0.28.0 // indirect\n\tgithub.com/go-openapi/swag/pools v0.28.0 // indirect\n\tgithub.com/go-openapi/swag/stringutils v0.28.0 // indirect\n\tgithub.com/go-openapi/swag/typeutils v0.28.0 // indirect\n\tgithub.com/go-openapi/swag/yamlutils v0.28.0 // indirect\n\tgithub.com/gogo/protobuf v1.3.2 // indirect\n\tgithub.com/golang-jwt/jwt/v5 v5.3.1 // indirect\n\tgithub.com/google/gnostic-models v0.7.1 // indirect\n\tgithub.com/google/go-cmp v0.7.0 // indirect\n\tgithub.com/google/jsonschema-go v0.4.3 // indirect\n\tgithub.com/google/pprof v0.0.0-20260709232956-b9395ee17fa0 // indirect\n\tgithub.com/grafana/pyroscope-go/godeltaprof v0.1.11 // indirect\n\tgithub.com/grpc-ecosystem/grpc-gateway/v2 v2.30.0 // indirect\n\tgithub.com/h2non/parth v0.0.0-20190131123155-b4df798d6542 // indirect\n\tgithub.com/jackc/pgpassfile v1.0.0 // indirect\n\tgithub.com/jackc/pgservicefile v0.0.0-20240606120523-5a60cdf6a761 // indirect\n\tgithub.com/jackc/puddle/v2 v2.2.2 // indirect\n\tgithub.com/jhump/protoreflect/v2 v2.0.0-beta.2 // indirect\n\tgithub.com/json-iterator/go v1.1.12 // indirect\n\tgithub.com/klauspost/cpuid/v2 v2.4.0 // indirect\n\tgithub.com/kylelemons/godebug v1.1.0 // indirect\n\tgithub.com/mattn/go-colorable v0.1.15 // indirect\n\tgithub.com/mattn/go-isatty v0.0.24 // indirect\n\tgithub.com/mattn/go-runewidth v0.0.27 // indirect\n\tgithub.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd // indirect\n\tgithub.com/modern-go/reflect2 v1.0.3-0.20250322232337-35a7c28c31ee // indirect\n\tgithub.com/munnerz/goautoneg v0.0.0-20191010083416-a7dc8b61c822 // indirect\n\tgithub.com/openzipkin/zipkin-go v0.4.3 // indirect\n\tgithub.com/petermattis/goid v0.0.0-20260725062400-500c67a39b75 // indirect\n\tgithub.com/planetscale/vtprotobuf v0.6.1-0.20240319094008-0393e58bdf10 // indirect\n\tgithub.com/pmezard/go-difflib v1.0.0 // indirect\n\tgithub.com/prometheus/client_model v0.6.2 // indirect\n\tgithub.com/prometheus/common v0.66.1 // indirect\n\tgithub.com/prometheus/procfs v0.16.1 // indirect\n\tgithub.com/robertkrimen/otto v0.5.1 // indirect\n\tgithub.com/rogpeppe/go-internal v1.15.0 // indirect\n\tgithub.com/segmentio/asm v1.2.1 // indirect\n\tgithub.com/segmentio/encoding v0.5.4 // indirect\n\tgithub.com/spf13/pflag v1.0.10 // indirect\n\tgithub.com/spiffe/go-spiffe/v2 v2.8.1 // indirect\n\tgithub.com/stretchr/objx v0.5.3 // indirect\n\tgithub.com/x448/float16 v0.8.4 // indirect\n\tgithub.com/xdg-go/pbkdf2 v1.0.0 // indirect\n\tgithub.com/xdg-go/scram v1.2.0 // indirect\n\tgithub.com/xdg-go/stringprep v1.0.4 // indirect\n\tgithub.com/yosida95/uritemplate/v3 v3.0.2 // indirect\n\tgithub.com/youmark/pkcs8 v0.0.0-20240726163527-a2c0da244d78 // indirect\n\tgithub.com/yuin/gopher-lua v1.1.2 // indirect\n\tgo.etcd.io/etcd/client/pkg/v3 v3.5.21 // indirect\n\tgo.opentelemetry.io/auto/sdk v1.2.1 // indirect\n\tgo.opentelemetry.io/otel/exporters/otlp/otlptrace v1.46.0 // indirect\n\tgo.opentelemetry.io/otel/metric v1.46.0 // indirect\n\tgo.opentelemetry.io/proto/otlp v1.11.0 // indirect\n\tgo.uber.org/atomic v1.11.0 // indirect\n\tgo.uber.org/multierr v1.11.0 // indirect\n\tgo.uber.org/zap v1.28.0 // indirect\n\tgo.yaml.in/yaml/v2 v2.4.4 // indirect\n\tgo.yaml.in/yaml/v3 v3.0.5 // indirect\n\tgolang.org/x/crypto v0.55.0 // indirect\n\tgolang.org/x/oauth2 v0.36.0 // indirect\n\tgolang.org/x/sync v0.22.0 // indirect\n\tgolang.org/x/term v0.45.0 // indirect\n\tgolang.org/x/text v0.41.0 // indirect\n\tgoogle.golang.org/genproto/googleapis/rpc v0.0.0-20260825221802-da73d73af1c5 // indirect\n\tgopkg.in/evanphx/json-patch.v4 v4.13.0 // indirect\n\tgopkg.in/inf.v0 v0.9.1 // indirect\n\tk8s.io/klog/v2 v2.140.0 // indirect\n\tk8s.io/kube-openapi v0.0.0-20250710124328-f3f2b991d03b // indirect\n\tsigs.k8s.io/json v0.0.0-20250730193827-2d320260d730 // indirect\n\tsigs.k8s.io/randfill v1.0.0 // indirect\n\tsigs.k8s.io/structured-merge-diff/v6 v6.4.2 // indirect\n\tsigs.k8s.io/yaml v1.6.0 // indirect\n)\n"
+  },
+  {
+   "kind": "request",
+   "path": "core/stores/sqlx/metrics_test.go",
+   "start": [
+    26,
+    15
+   ],
+   "text": "definition"
+  },
+  {
+   "kind": "request",
+   "path": "core/stores/sqlx/metrics_test.go",
+   "start": [
+    31,
+    18
+   ],
+   "text": "typeDefinition"
+  },
+  {
+   "kind": "request",
+   "path": "mcp/request_metadata.go",
+   "start": [
+    25,
+    32
+   ],
+   "text": "typeDefinition"
+  },
+  {
+   "kind": "request",
+   "path": "core/discov/internal/vars.go",
+   "start": [
+    9,
+    24
+   ],
+   "text": "signatureHelp"
+  },
+  {
+   "kind": "fs_write",
+   "path": "go.mod",
+   "text": "module github.com/zeromicro/go-zero\n\ngo 1.25.0\n\nrequire (\n\tgithub.com/DATA-DOG/go-sqlmock v1.5.2\n\tgithub.com/alicebob/miniredis/v2 v2.38.0\n\tgithub.com/fatih/color v1.18.0\n\tgithub.com/fullstorydev/grpcurl v1.9.4\n\tgithub.com/go-sql-driver/mysql v1.10.0\n\tgithub.com/golang-jwt/jwt/v4 v4.5.2\n\tgithub.com/golang/protobuf v1.5.4\n\tgithub.com/google/uuid v1.6.0\n\tgithub.com/grafana/pyroscope-go v1.4.2\n\tgithub.com/jackc/pgx/v5 v5.9.2\n\tgithub.com/jhump/protoreflect v1.18.1\n\tgithub.com/modelcontextprotocol/go-sdk v1.4.1\n\tgithub.com/pelletier/go-toml/v2 v2.4.3\n\tgithub.com/prometheus/client_golang v1.23.2\n\tgithub.com/redis/go-redis/v9 v9.22.0\n\tgithub.com/spaolacci/murmur3 v1.1.0\n\tgithub.com/stretchr/testify v1.12.1\n\tgithub.com/titanous/json5 v1.0.0\n\tgo.etcd.io/etcd/api/v3 v3.5.21\n\tgo.etcd.io/etcd/client/v3 v3.5.21\n\tgo.mongodb.org/mongo-driver/v2 v2.8.2\n\tgo.opentelemetry.io/otel v1.46.0\n\tgo.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracegrpc v1.40.0\n\tgo.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracehttp v1.46.0\n\tgo.opentelemetry.io/otel/exporters/stdout/stdouttrace v1.46.0\n\tgo.opentelemetry.io/otel/exporters/zipkin v1.46.0\n\tgo.opentelemetry.io/otel/sdk v1.46.0\n\tgo.opentelemetry.io/otel/trace v1.46.0\n\tgo.uber.org/automaxprocs v1.6.0\n\tgo.uber.org/goleak v1.3.0\n\tgo.uber.org/mock v0.6.0\n\tgolang.org/x/net v0.58.0\n\tgolang.org/x/sys v0.47.0\n\tgolang.org/x/time v0.14.0\n\tgoogle.golang.org/genproto/googleapis/api v0.0.0-20260819154853-08b0e4226688\n\tgoogle.golang.org/grpc v1.83.2\n\tgoogle.golang.org/protobuf v1.36.12\n\tgopkg.in/cheggaaa/pb.v1 v1.0.28\n\tgopkg.in/h2non/gock.v1 v1.1.2\n\tgopkg.in/yaml.v2 v2.4.0\n\tk8s.io/api v0.34.3\n\tk8s.io/apimachinery v0.34.3\n\tk8s.io/client-go v0.34.3\n\tk8s.io/utils v0.0.0-20260707023825-cf1189d6abe3\n)\n\nrequire (\n\tfilippo.io/edwards25519 v1.2.0 // indirect\n\tgithub.com/beorn7/perks v1.0.1 // indirect\n\tgithub.com/cenkalti/backoff/v5 v5.0.3 // indirect\n\tgithub.com/cespare/xxhash/v2 v2.3.0 // indirect\n\tgithub.com/clipperhouse/uax29/v2 v2.2.0 // indirect\n\tgithub.com/cncf/xds/go v0.0.0-20260202195803-dba9d589def2 // indirect\n\tgithub.com/coreos/go-semver v0.3.1 // indirect\n\tgithub.com/coreos/go-systemd/v22 v22.7.0 // indirect\n\tgithub.com/davecgh/go-spew v1.1.1 // indirect\n\tgithub.com/emicklei/go-restful/v3 v3.13.0 // indirect\n\tgithub.com/envoyproxy/go-control-plane/envoy v1.37.0 // indirect\n\tgithub.com/envoyproxy/protoc-gen-validate v1.3.3 // indirect\n\tgithub.com/fxamacker/cbor/v2 v2.9.2 // indirect\n\tgithub.com/go-jose/go-jose/v4 v4.1.4 // indirect\n\tgithub.com/go-logr/logr v1.4.4 // indirect\n\tgithub.com/go-logr/stdr v1.2.2 // indirect\n\tgithub.com/go-openapi/jsonpointer v1.0.0 // indirect\n\tgithub.com/go-openapi/jsonreference v1.0.0 // indirect\n\tgithub.com/go-openapi/swag v0.28.0 // indirect\n\tgithub.com/go-openapi/swag/cmdutils v0.28.0 // indirect\n\tgithub.com/go-openapi/swag/conv v0.28.0 // indirect\n\tgithub.com/go-openapi/swag/fileutils v0.28.0 // indirect\n\tgithub.com/go-openapi/swag/jsonutils v0.28.0 // indirect\n\tgithub.com/go-openapi/swag/loading v0.28.0 // indirect\n\tgithub.com/go-openapi/swag/mangling v0.28.0 // indirect\n\tgithub.com/go-openapi/swag/netutils v0.28.0 // indirect\n\tgithub.com/go-openapi/swag/pools v0.28.0 // indirect\n\tgithub.com/go-openapi/swag/stringutils v0.28.0 // indirect\n\tgithub.com/go-openapi/swag/typeutils v0.28.0 // indirect\n\tgithub.com/go-openapi/swag/yamlutils v0.28.0 // indirect\n\tgithub.com/gogo/protobuf v1.3.2 // indirect\n\tgithub.com/golang-jwt/jwt/v5 v5.3.1 // indirect\n\tgithub.com/google/gnostic-models v0.7.1 // indirect\n\tgithub.com/google/go-cmp v0.7.0 // indirect\n\tgithub.com/google/jsonschema-go v0.4.3 // indirect\n\tgithub.com/google/pprof v0.0.0-20260709232956-b9395ee17fa0 // indirect\n\tgithub.com/grafana/pyroscope-go/godeltaprof v0.1.11 // indirect\n\tgithub.com/grpc-ecosystem/grpc-gateway/v2 v2.30.0 // indirect\n\tgithub.com/h2non/parth v0.0.0-20190131123155-b4df798d6542 // indirect\n\tgithub.com/jackc/pgpassfile v1.0.0 // indirect\n\tgithub.com/jackc/pgservicefile v0.0.0-20240606120523-5a60cdf6a761 // indirect\n\tgithub.com/jackc/puddle/v2 v2.2.2 // indirect\n\tgithub.com/jhump/protoreflect/v2 v2.0.0-beta.2 // indirect\n\tgithub.com/json-iterator/go v1.1.12 // indirect\n\tgithub.com/klauspost/compress v1.19.1 // indirect\n\tgithub.com/klauspost/cpuid/v2 v2.4.0 // indirect\n\tgithub.com/kylelemons/godebug v1.1.0 // indirect\n\tgithub.com/mattn/go-colorable v0.1.15 // indirect\n\tgithub.com/mattn/go-isatty v0.0.24 // indirect\n\tgithub.com/mattn/go-runewidth v0.0.27 // indirect\n\tgithub.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd // indirect\n\tgithub.com/modern-go/reflect2 v1.0.3-0.20250322232337-35a7c28c31ee // indirect\n\tgithub.com/munnerz/goautoneg v0.0.0-20191010083416-a7dc8b61c822 // indirect\n\tgithub.com/openzipkin/zipkin-go v0.4.3 // indirect\n\tgithub.com/petermattis/goid v0.0.0-20260725062400-500c67a39b75 // indirect\n\tgithub.com/planetscale/vtprotobuf v0.6.1-0.20240319094008-0393e58bdf10 // indirect\n\tgithub.com/pmezard/go-difflib v1.0.0 // indirect\n\tgithub.com/prometheus/client_model v0.6.2 // indirect\n\tgithub.com/prometheus/common v0.66.1 // indirect\n\tgithub.com/prometheus/procfs v0.16.1 // indirect\n\tgithub.com/robertkrimen/otto v0.5.1 // indirect\n\tgithub.com/rogpeppe/go-internal v1.15.0 // indirect\n\tgithub.com/segmentio/asm v1.2.1 // indirect\n\tgithub.com/segmentio/encoding v0.5.4 // indirect\n\tgithub.com/spf13/pflag v1.0.10 // indirect\n\tgithub.com/spiffe/go-spiffe/v2 v2.8.1 // indirect\n\tgithub.com/stretchr/objx v0.5.3 // indirect\n\tgithub.com/x448/float16 v0.8.4 // indirect\n\tgithub.com/xdg-go/pbkdf2 v1.0.0 // indirect\n\tgithub.com/xdg-go/scram v1.2.0 // indirect\n\tgithub.com/xdg-go/stringprep v1.0.4 // indirect\n\tgithub.com/yosida95/uritemplate/v3 v3.0.2 // indirect\n\tgithub.com/youmark/pkcs8 v0.0.0-20240726163527-a2c0da244d78 // indirect\n\tgithub.com/yuin/gopher-lua v1.1.2 // indirect\n\tgo.etcd.io/etcd/client/pkg/v3 v3.5.21 // indirect\n\tgo.opentelemetry.io/auto/sdk v1.2.1 // indirect\n\tgo.opentelemetry.io/otel/exporters/otlp/otlptrace v1.46.0 // indirect\n\tgo.opentelemetry.io/otel/metric v1.46.0 // indirect\n\tgo.opentelemetry.io/proto/otlp v1.11.0 // indirect\n\tgo.uber.org/atomic v1.11.0 // indirect\n\tgo.uber.org/multierr v1.11.0 // indirect\n\tgo.uber.org/zap v1.28.0 // indirect\n\tgo.yaml.in/yaml/v2 v2.4.4 // indirect\n\tgo.yaml.in/yaml/v3 v3.0.5 // indirect\n\tgolang.org/x/crypto v0.55.0 // indirect\n\tgolang.org/x/oauth2 v0.36.0 // indirect\n\tgolang.org/x/sync v0.22.0 // indirect\n\tgolang.org/x/term v0.45.0 // indirect\n\tgolang.org/x/text v0.41.0 // indirect\n\tgoogle.golang.org/genproto/googleapis/rpc v0.0.0-20260825221802-da73d73af1c5 // indirect\n\tgopkg.in/evanphx/json-patch.v4 v4.13.0 // indirect\n\tgopkg.in/inf.v0 v0.9.1 // indirect\n\tk8s.io/klog/v2 v2.140.0 // indirect\n\tk8s.io/kube-openapi v0.0.0-20250710124328-f3f2b991d03b // indirect\n\tsigs.k8s.io/json v0.0.0-20250730193827-2d320260d730 // indirect\n\tsigs.k8s.io/randfill v1.0.0 // indirect\n\tsigs.k8s.io/structured-merge-diff/v6 v6.4.2 // indirect\n\tsigs.k8s.io/yaml v1.6.0 // indirect\n)\n"
+  }
+ ],
+ "case": {
+  "chain_step": 0,
+  "families": [],
+  "family": "H7",
+  "history_index": 8,
+  "history_seed": 1009,
+  "mode": "fresh",
+  "note": "shuffle: H6 config round trip on go.mod: line 96 deleted | H8 after core/discov/internal/vars.go: delete 'const' on line 4 and its inverse, 6 requests in a shuffled order: typeDefinition@core/stores/sqlx/metrics_test.go:49:17, documentHighlight@core/stores/sqlx/metrics_test.go:52:9, definition@core/stores/sqlx/metrics_test.go:26:15, typeDefinition@core/stores/sqlx/metrics_test.go:31:18, typeDefinition@mcp/request_metadata.go:25:32, ...",
+  "seed": 1,
+  "timing": "race0"
+ },
+ "shape": "completion:missing",
+ "signature": "gopls|r1_history|completion:missing",
+ "expected": [
+  "DialTimeout",
+  "RequestTimeout",
+  "dialTimeout",
+  "requestTimeout",
+  "time",
+  "time.Time",
+  "time.TimeOnly",
+  "time.Timer"
+ ],
+ "actual": [
+  "DialTimeout",
+  "RequestTimeout",
+  "dialTimeout",
+  "requestTimeout",
+  "time"
+ ],
+ "reproduced": "2/3",
+ "note": "H7: shuffle: H6 config round trip on go.mod: line 96 deleted | H8 after core/discov/internal/vars.go: delete 'const' on line 4 and its inverse, 6 requests in a shuffled order: typeDefinition@core/stores/s; flake 2/3 [r1:Scr r2:SCR r3:SCR] in 100s",
+ "violation": {
+  "oracle": "r1_history",
+  "server": "gopls-v0.23.0",
+  "project": "zeromicro/go-zero@5b1b5bdc3adc",
+  "key": {
+   "method": "completion",
+   "path": "core/discov/internal/vars.go",
+   "line": 9,
+   "character": 26,
+   "extra": ""
+  },
+  "expected": [
+   "DialTimeout",
+   "RequestTimeout",
+   "dialTimeout",
+   "requestTimeout",
+   "time",
+   "time.Time",
+   "time.TimeOnly",
+   "time.Timer"
+  ],
+  "actual": [
+   "DialTimeout",
+   "RequestTimeout",
+   "dialTimeout",
+   "requestTimeout",
+   "time"
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "core/discov/internal/vars.go"
+   },
+   {
+    "kind": "open",
+    "path": "core/stores/sqlx/metrics_test.go"
+   },
+   {
+    "kind": "open",
+    "path": "mcp/request_metadata.go"
+   },
+   {
+    "kind": "change",
+    "path": "core/discov/internal/vars.go",
+    "start": [
+     4,
+     0
+    ],
+    "end": [
+     4,
+     5
+    ]
+   },
+   {
+    "kind": "change",
+    "path": "core/discov/internal/vars.go",
+    "start": [
+     4,
+     0
+    ],
+    "end": [
+     4,
+     0
+    ],
+    "text": "const"
+   },
+   {
+    "kind": "request",
+    "path": "core/stores/sqlx/metrics_test.go",
+    "start": [
+     49,
+     17
+    ],
+    "text": "typeDefinition"
+   },
+   {
+    "kind": "request",
+    "path": "core/stores/sqlx/metrics_test.go",
+    "start": [
+     52,
+     9
+    ],
+    "text": "documentHighlight"
+   },
+   {
+    "kind": "fs_write",
+    "path": "go.mod",
+    "text": "module github.com/zeromicro/go-zero\n\ngo 1.25.0\n\nrequire (\n\tgithub.com/DATA-DOG/go-sqlmock v1.5.2\n\tgithub.com/alicebob/miniredis/v2 v2.38.0\n\tgithub.com/fatih/color v1.18.0\n\tgithub.com/fullstorydev/grpcurl v1.9.4\n\tgithub.com/go-sql-driver/mysql v1.10.0\n\tgithub.com/golang-jwt/jwt/v4 v4.5.2\n\tgithub.com/golang/protobuf v1.5.4\n\tgithub.com/google/uuid v1.6.0\n\tgithub.com/grafana/pyroscope-go v1.4.2\n\tgithub.com/jackc/pgx/v5 v5.9.2\n\tgithub.com/jhump/protoreflect v1.18.1\n\tgithub.com/modelcontextprotocol/go-sdk v1.4.1\n\tgithub.com/pelletier/go-toml/v2 v2.4.3\n\tgithub.com/prometheus/client_golang v1.23.2\n\tgithub.com/redis/go-redis/v9 v9.22.0\n\tgithub.com/spaolacci/murmur3 v1.1.0\n\tgithub.com/stretchr/testify v1.12.1\n\tgithub.com/titanous/json5 v1.0.0\n\tgo.etcd.io/etcd/api/v3 v3.5.21\n\tgo.etcd.io/etcd/client/v3 v3.5.21\n\tgo.mongodb.org/mongo-driver/v2 v2.8.2\n\tgo.opentelemetry.io/otel v1.46.0\n\tgo.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracegrpc v1.40.0\n\tgo.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracehttp v1.46.0\n\tgo.opentelemetry.io/otel/exporters/stdout/stdouttrace v1.46.0\n\tgo.opentelemetry.io/otel/exporters/zipkin v1.46.0\n\tgo.opentelemetry.io/otel/sdk v1.46.0\n\tgo.opentelemetry.io/otel/trace v1.46.0\n\tgo.uber.org/automaxprocs v1.6.0\n\tgo.uber.org/goleak v1.3.0\n\tgo.uber.org/mock v0.6.0\n\tgolang.org/x/net v0.58.0\n\tgolang.org/x/sys v0.47.0\n\tgolang.org/x/time v0.14.0\n\tgoogle.golang.org/genproto/googleapis/api v0.0.0-20260819154853-08b0e4226688\n\tgoogle.golang.org/grpc v1.83.2\n\tgoogle.golang.org/protobuf v1.36.12\n\tgopkg.in/cheggaaa/pb.v1 v1.0.28\n\tgopkg.in/h2non/gock.v1 v1.1.2\n\tgopkg.in/yaml.v2 v2.4.0\n\tk8s.io/api v0.34.3\n\tk8s.io/apimachinery v0.34.3\n\tk8s.io/client-go v0.34.3\n\tk8s.io/utils v0.0.0-20260707023825-cf1189d6abe3\n)\n\nrequire (\n\tfilippo.io/edwards25519 v1.2.0 // indirect\n\tgithub.com/beorn7/perks v1.0.1 // indirect\n\tgithub.com/cenkalti/backoff/v5 v5.0.3 // indirect\n\tgithub.com/cespare/xxhash/v2 v2.3.0 // indirect\n\tgithub.com/clipperhouse/uax29/v2 v2.2.0 // indirect\n\tgithub.com/cncf/xds/go v0.0.0-20260202195803-dba9d589def2 // indirect\n\tgithub.com/coreos/go-semver v0.3.1 // indirect\n\tgithub.com/coreos/go-systemd/v22 v22.7.0 // indirect\n\tgithub.com/davecgh/go-spew v1.1.1 // indirect\n\tgithub.com/emicklei/go-restful/v3 v3.13.0 // indirect\n\tgithub.com/envoyproxy/go-control-plane/envoy v1.37.0 // indirect\n\tgithub.com/envoyproxy/protoc-gen-validate v1.3.3 // indirect\n\tgithub.com/fxamacker/cbor/v2 v2.9.2 // indirect\n\tgithub.com/go-jose/go-jose/v4 v4.1.4 // indirect\n\tgithub.com/go-logr/logr v1.4.4 // indirect\n\tgithub.com/go-logr/stdr v1.2.2 // indirect\n\tgithub.com/go-openapi/jsonpointer v1.0.0 // indirect\n\tgithub.com/go-openapi/jsonreference v1.0.0 // indirect\n\tgithub.com/go-openapi/swag v0.28.0 // indirect\n\tgithub.com/go-openapi/swag/cmdutils v0.28.0 // indirect\n\tgithub.com/go-openapi/swag/conv v0.28.0 // indirect\n\tgithub.com/go-openapi/swag/fileutils v0.28.0 // indirect\n\tgithub.com/go-openapi/swag/jsonutils v0.28.0 // indirect\n\tgithub.com/go-openapi/swag/loading v0.28.0 // indirect\n\tgithub.com/go-openapi/swag/mangling v0.28.0 // indirect\n\tgithub.com/go-openapi/swag/netutils v0.28.0 // indirect\n\tgithub.com/go-openapi/swag/pools v0.28.0 // indirect\n\tgithub.com/go-openapi/swag/stringutils v0.28.0 // indirect\n\tgithub.com/go-openapi/swag/typeutils v0.28.0 // indirect\n\tgithub.com/go-openapi/swag/yamlutils v0.28.0 // indirect\n\tgithub.com/gogo/protobuf v1.3.2 // indirect\n\tgithub.com/golang-jwt/jwt/v5 v5.3.1 // indirect\n\tgithub.com/google/gnostic-models v0.7.1 // indirect\n\tgithub.com/google/go-cmp v0.7.0 // indirect\n\tgithub.com/google/jsonschema-go v0.4.3 // indirect\n\tgithub.com/google/pprof v0.0.0-20260709232956-b9395ee17fa0 // indirect\n\tgithub.com/grafana/pyroscope-go/godeltaprof v0.1.11 // indirect\n\tgithub.com/grpc-ecosystem/grpc-gateway/v2 v2.30.0 // indirect\n\tgithub.com/h2non/parth v0.0.0-20190131123155-b4df798d6542 // indirect\n\tgithub.com/jackc/pgpassfile v1.0.0 // indirect\n\tgithub.com/jackc/pgservicefile v0.0.0-20240606120523-5a60cdf6a761 // indirect\n\tgithub.com/jackc/puddle/v2 v2.2.2 // indirect\n\tgithub.com/jhump/protoreflect/v2 v2.0.0-beta.2 // indirect\n\tgithub.com/json-iterator/go v1.1.12 // indirect\n\tgithub.com/klauspost/cpuid/v2 v2.4.0 // indirect\n\tgithub.com/kylelemons/godebug v1.1.0 // indirect\n\tgithub.com/mattn/go-colorable v0.1.15 // indirect\n\tgithub.com/mattn/go-isatty v0.0.24 // indirect\n\tgithub.com/mattn/go-runewidth v0.0.27 // indirect\n\tgithub.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd // indirect\n\tgithub.com/modern-go/reflect2 v1.0.3-0.20250322232337-35a7c28c31ee // indirect\n\tgithub.com/munnerz/goautoneg v0.0.0-20191010083416-a7dc8b61c822 // indirect\n\tgithub.com/openzipkin/zipkin-go v0.4.3 // indirect\n\tgithub.com/petermattis/goid v0.0.0-20260725062400-500c67a39b75 // indirect\n\tgithub.com/planetscale/vtprotobuf v0.6.1-0.20240319094008-0393e58bdf10 // indirect\n\tgithub.com/pmezard/go-difflib v1.0.0 // indirect\n\tgithub.com/prometheus/client_model v0.6.2 // indirect\n\tgithub.com/prometheus/common v0.66.1 // indirect\n\tgithub.com/prometheus/procfs v0.16.1 // indirect\n\tgithub.com/robertkrimen/otto v0.5.1 // indirect\n\tgithub.com/rogpeppe/go-internal v1.15.0 // indirect\n\tgithub.com/segmentio/asm v1.2.1 // indirect\n\tgithub.com/segmentio/encoding v0.5.4 // indirect\n\tgithub.com/spf13/pflag v1.0.10 // indirect\n\tgithub.com/spiffe/go-spiffe/v2 v2.8.1 // indirect\n\tgithub.com/stretchr/objx v0.5.3 // indirect\n\tgithub.com/x448/float16 v0.8.4 // indirect\n\tgithub.com/xdg-go/pbkdf2 v1.0.0 // indirect\n\tgithub.com/xdg-go/scram v1.2.0 // indirect\n\tgithub.com/xdg-go/stringprep v1.0.4 // indirect\n\tgithub.com/yosida95/uritemplate/v3 v3.0.2 // indirect\n\tgithub.com/youmark/pkcs8 v0.0.0-20240726163527-a2c0da244d78 // indirect\n\tgithub.com/yuin/gopher-lua v1.1.2 // indirect\n\tgo.etcd.io/etcd/client/pkg/v3 v3.5.21 // indirect\n\tgo.opentelemetry.io/auto/sdk v1.2.1 // indirect\n\tgo.opentelemetry.io/otel/exporters/otlp/otlptrace v1.46.0 // indirect\n\tgo.opentelemetry.io/otel/metric v1.46.0 // indirect\n\tgo.opentelemetry.io/proto/otlp v1.11.0 // indirect\n\tgo.uber.org/atomic v1.11.0 // indirect\n\tgo.uber.org/multierr v1.11.0 // indirect\n\tgo.uber.org/zap v1.28.0 // indirect\n\tgo.yaml.in/yaml/v2 v2.4.4 // indirect\n\tgo.yaml.in/yaml/v3 v3.0.5 // indirect\n\tgolang.org/x/crypto v0.55.0 // indirect\n\tgolang.org/x/oauth2 v0.36.0 // indirect\n\tgolang.org/x/sync v0.22.0 // indirect\n\tgolang.org/x/term v0.45.0 // indirect\n\tgolang.org/x/text v0.41.0 // indirect\n\tgoogle.golang.org/genproto/googleapis/rpc v0.0.0-20260825221802-da73d73af1c5 // indirect\n\tgopkg.in/evanphx/json-patch.v4 v4.13.0 // indirect\n\tgopkg.in/inf.v0 v0.9.1 // indirect\n\tk8s.io/klog/v2 v2.140.0 // indirect\n\tk8s.io/kube-openapi v0.0.0-20250710124328-f3f2b991d03b // indirect\n\tsigs.k8s.io/json v0.0.0-20250730193827-2d320260d730 // indirect\n\tsigs.k8s.io/randfill v1.0.0 // indirect\n\tsigs.k8s.io/structured-merge-diff/v6 v6.4.2 // indirect\n\tsigs.k8s.io/yaml v1.6.0 // indirect\n)\n"
+   },
+   {
+    "kind": "request",
+    "path": "core/stores/sqlx/metrics_test.go",
+    "start": [
+     26,
+     15
+    ],
+    "text": "definition"
+   },
+   {
+    "kind": "request",
+    "path": "core/stores/sqlx/metrics_test.go",
+    "start": [
+     31,
+     18
+    ],
+    "text": "typeDefinition"
+   },
+   {
+    "kind": "request",
+    "path": "mcp/request_metadata.go",
+    "start": [
+     25,
+     32
+    ],
+    "text": "typeDefinition"
+   },
+   {
+    "kind": "request",
+    "path": "core/discov/internal/vars.go",
+    "start": [
+     9,
+     24
+    ],
+    "text": "signatureHelp"
+   },
+   {
+    "kind": "fs_write",
+    "path": "go.mod",
+    "text": "module github.com/zeromicro/go-zero\n\ngo 1.25.0\n\nrequire (\n\tgithub.com/DATA-DOG/go-sqlmock v1.5.2\n\tgithub.com/alicebob/miniredis/v2 v2.38.0\n\tgithub.com/fatih/color v1.18.0\n\tgithub.com/fullstorydev/grpcurl v1.9.4\n\tgithub.com/go-sql-driver/mysql v1.10.0\n\tgithub.com/golang-jwt/jwt/v4 v4.5.2\n\tgithub.com/golang/protobuf v1.5.4\n\tgithub.com/google/uuid v1.6.0\n\tgithub.com/grafana/pyroscope-go v1.4.2\n\tgithub.com/jackc/pgx/v5 v5.9.2\n\tgithub.com/jhump/protoreflect v1.18.1\n\tgithub.com/modelcontextprotocol/go-sdk v1.4.1\n\tgithub.com/pelletier/go-toml/v2 v2.4.3\n\tgithub.com/prometheus/client_golang v1.23.2\n\tgithub.com/redis/go-redis/v9 v9.22.0\n\tgithub.com/spaolacci/murmur3 v1.1.0\n\tgithub.com/stretchr/testify v1.12.1\n\tgithub.com/titanous/json5 v1.0.0\n\tgo.etcd.io/etcd/api/v3 v3.5.21\n\tgo.etcd.io/etcd/client/v3 v3.5.21\n\tgo.mongodb.org/mongo-driver/v2 v2.8.2\n\tgo.opentelemetry.io/otel v1.46.0\n\tgo.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracegrpc v1.40.0\n\tgo.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracehttp v1.46.0\n\tgo.opentelemetry.io/otel/exporters/stdout/stdouttrace v1.46.0\n\tgo.opentelemetry.io/otel/exporters/zipkin v1.46.0\n\tgo.opentelemetry.io/otel/sdk v1.46.0\n\tgo.opentelemetry.io/otel/trace v1.46.0\n\tgo.uber.org/automaxprocs v1.6.0\n\tgo.uber.org/goleak v1.3.0\n\tgo.uber.org/mock v0.6.0\n\tgolang.org/x/net v0.58.0\n\tgolang.org/x/sys v0.47.0\n\tgolang.org/x/time v0.14.0\n\tgoogle.golang.org/genproto/googleapis/api v0.0.0-20260819154853-08b0e4226688\n\tgoogle.golang.org/grpc v1.83.2\n\tgoogle.golang.org/protobuf v1.36.12\n\tgopkg.in/cheggaaa/pb.v1 v1.0.28\n\tgopkg.in/h2non/gock.v1 v1.1.2\n\tgopkg.in/yaml.v2 v2.4.0\n\tk8s.io/api v0.34.3\n\tk8s.io/apimachinery v0.34.3\n\tk8s.io/client-go v0.34.3\n\tk8s.io/utils v0.0.0-20260707023825-cf1189d6abe3\n)\n\nrequire (\n\tfilippo.io/edwards25519 v1.2.0 // indirect\n\tgithub.com/beorn7/perks v1.0.1 // indirect\n\tgithub.com/cenkalti/backoff/v5 v5.0.3 // indirect\n\tgithub.com/cespare/xxhash/v2 v2.3.0 // indirect\n\tgithub.com/clipperhouse/uax29/v2 v2.2.0 // indirect\n\tgithub.com/cncf/xds/go v0.0.0-20260202195803-dba9d589def2 // indirect\n\tgithub.com/coreos/go-semver v0.3.1 // indirect\n\tgithub.com/coreos/go-systemd/v22 v22.7.0 // indirect\n\tgithub.com/davecgh/go-spew v1.1.1 // indirect\n\tgithub.com/emicklei/go-restful/v3 v3.13.0 // indirect\n\tgithub.com/envoyproxy/go-control-plane/envoy v1.37.0 // indirect\n\tgithub.com/envoyproxy/protoc-gen-validate v1.3.3 // indirect\n\tgithub.com/fxamacker/cbor/v2 v2.9.2 // indirect\n\tgithub.com/go-jose/go-jose/v4 v4.1.4 // indirect\n\tgithub.com/go-logr/logr v1.4.4 // indirect\n\tgithub.com/go-logr/stdr v1.2.2 // indirect\n\tgithub.com/go-openapi/jsonpointer v1.0.0 // indirect\n\tgithub.com/go-openapi/jsonreference v1.0.0 // indirect\n\tgithub.com/go-openapi/swag v0.28.0 // indirect\n\tgithub.com/go-openapi/swag/cmdutils v0.28.0 // indirect\n\tgithub.com/go-openapi/swag/conv v0.28.0 // indirect\n\tgithub.com/go-openapi/swag/fileutils v0.28.0 // indirect\n\tgithub.com/go-openapi/swag/jsonutils v0.28.0 // indirect\n\tgithub.com/go-openapi/swag/loading v0.28.0 // indirect\n\tgithub.com/go-openapi/swag/mangling v0.28.0 // indirect\n\tgithub.com/go-openapi/swag/netutils v0.28.0 // indirect\n\tgithub.com/go-openapi/swag/pools v0.28.0 // indirect\n\tgithub.com/go-openapi/swag/stringutils v0.28.0 // indirect\n\tgithub.com/go-openapi/swag/typeutils v0.28.0 // indirect\n\tgithub.com/go-openapi/swag/yamlutils v0.28.0 // indirect\n\tgithub.com/gogo/protobuf v1.3.2 // indirect\n\tgithub.com/golang-jwt/jwt/v5 v5.3.1 // indirect\n\tgithub.com/google/gnostic-models v0.7.1 // indirect\n\tgithub.com/google/go-cmp v0.7.0 // indirect\n\tgithub.com/google/jsonschema-go v0.4.3 // indirect\n\tgithub.com/google/pprof v0.0.0-20260709232956-b9395ee17fa0 // indirect\n\tgithub.com/grafana/pyroscope-go/godeltaprof v0.1.11 // indirect\n\tgithub.com/grpc-ecosystem/grpc-gateway/v2 v2.30.0 // indirect\n\tgithub.com/h2non/parth v0.0.0-20190131123155-b4df798d6542 // indirect\n\tgithub.com/jackc/pgpassfile v1.0.0 // indirect\n\tgithub.com/jackc/pgservicefile v0.0.0-20240606120523-5a60cdf6a761 // indirect\n\tgithub.com/jackc/puddle/v2 v2.2.2 // indirect\n\tgithub.com/jhump/protoreflect/v2 v2.0.0-beta.2 // indirect\n\tgithub.com/json-iterator/go v1.1.12 // indirect\n\tgithub.com/klauspost/compress v1.19.1 // indirect\n\tgithub.com/klauspost/cpuid/v2 v2.4.0 // indirect\n\tgithub.com/kylelemons/godebug v1.1.0 // indirect\n\tgithub.com/mattn/go-colorable v0.1.15 // indirect\n\tgithub.com/mattn/go-isatty v0.0.24 // indirect\n\tgithub.com/mattn/go-runewidth v0.0.27 // indirect\n\tgithub.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd // indirect\n\tgithub.com/modern-go/reflect2 v1.0.3-0.20250322232337-35a7c28c31ee // indirect\n\tgithub.com/munnerz/goautoneg v0.0.0-20191010083416-a7dc8b61c822 // indirect\n\tgithub.com/openzipkin/zipkin-go v0.4.3 // indirect\n\tgithub.com/petermattis/goid v0.0.0-20260725062400-500c67a39b75 // indirect\n\tgithub.com/planetscale/vtprotobuf v0.6.1-0.20240319094008-0393e58bdf10 // indirect\n\tgithub.com/pmezard/go-difflib v1.0.0 // indirect\n\tgithub.com/prometheus/client_model v0.6.2 // indirect\n\tgithub.com/prometheus/common v0.66.1 // indirect\n\tgithub.com/prometheus/procfs v0.16.1 // indirect\n\tgithub.com/robertkrimen/otto v0.5.1 // indirect\n\tgithub.com/rogpeppe/go-internal v1.15.0 // indirect\n\tgithub.com/segmentio/asm v1.2.1 // indirect\n\tgithub.com/segmentio/encoding v0.5.4 // indirect\n\tgithub.com/spf13/pflag v1.0.10 // indirect\n\tgithub.com/spiffe/go-spiffe/v2 v2.8.1 // indirect\n\tgithub.com/stretchr/objx v0.5.3 // indirect\n\tgithub.com/x448/float16 v0.8.4 // indirect\n\tgithub.com/xdg-go/pbkdf2 v1.0.0 // indirect\n\tgithub.com/xdg-go/scram v1.2.0 // indirect\n\tgithub.com/xdg-go/stringprep v1.0.4 // indirect\n\tgithub.com/yosida95/uritemplate/v3 v3.0.2 // indirect\n\tgithub.com/youmark/pkcs8 v0.0.0-20240726163527-a2c0da244d78 // indirect\n\tgithub.com/yuin/gopher-lua v1.1.2 // indirect\n\tgo.etcd.io/etcd/client/pkg/v3 v3.5.21 // indirect\n\tgo.opentelemetry.io/auto/sdk v1.2.1 // indirect\n\tgo.opentelemetry.io/otel/exporters/otlp/otlptrace v1.46.0 // indirect\n\tgo.opentelemetry.io/otel/metric v1.46.0 // indirect\n\tgo.opentelemetry.io/proto/otlp v1.11.0 // indirect\n\tgo.uber.org/atomic v1.11.0 // indirect\n\tgo.uber.org/multierr v1.11.0 // indirect\n\tgo.uber.org/zap v1.28.0 // indirect\n\tgo.yaml.in/yaml/v2 v2.4.4 // indirect\n\tgo.yaml.in/yaml/v3 v3.0.5 // indirect\n\tgolang.org/x/crypto v0.55.0 // indirect\n\tgolang.org/x/oauth2 v0.36.0 // indirect\n\tgolang.org/x/sync v0.22.0 // indirect\n\tgolang.org/x/term v0.45.0 // indirect\n\tgolang.org/x/text v0.41.0 // indirect\n\tgoogle.golang.org/genproto/googleapis/rpc v0.0.0-20260825221802-da73d73af1c5 // indirect\n\tgopkg.in/evanphx/json-patch.v4 v4.13.0 // indirect\n\tgopkg.in/inf.v0 v0.9.1 // indirect\n\tk8s.io/klog/v2 v2.140.0 // indirect\n\tk8s.io/kube-openapi v0.0.0-20250710124328-f3f2b991d03b // indirect\n\tsigs.k8s.io/json v0.0.0-20250730193827-2d320260d730 // indirect\n\tsigs.k8s.io/randfill v1.0.0 // indirect\n\tsigs.k8s.io/structured-merge-diff/v6 v6.4.2 // indirect\n\tsigs.k8s.io/yaml v1.6.0 // indirect\n)\n"
+   }
+  ],
+  "detail": "{\"case\": {\"chain_step\": 0, \"families\": [], \"family\": \"H7\", \"history_index\": 8, \"history_seed\": 1009, \"mode\": \"fresh\", \"note\": \"shuffle: H6 config round trip on go.mod: line 96 deleted | H8 after core/discov/internal/vars.go: delete 'const' on line 4 and its inverse, 6 requests in a shuffled order: typeDefinition@core/stores/sqlx/metrics_test.go:49:17, documentHighlight@core/stores/sqlx/metrics_test.go:52:9, definition@core/stores/sqlx/metrics_test.go:26:15, typeDefinition@core/stores/sqlx/metrics_test.go:31:18, typeDefinition@mcp/request_metadata.go:25:32, ...\", \"seed\": 1, \"timing\": \"race0\"}, \"note\": \"H7: shuffle: H6 config round trip on go.mod: line 96 deleted | H8 after core/discov/internal/vars.go: delete 'const' on line 4 and its inverse, 6 requests in a shuffled order: typeDefinition@core/stores/s; flake 2/3 [r1:Scr r2:SCR r3:SCR] in 100s\", \"shape\": \"completion:missing\"}",
+  "reproduced": "2/3",
+  "reduced_ops": [],
+  "signature": "gopls|r1_history|completion:missing",
+  "run_id": "fdbb253f2125"
+ },
+ "replay_logs": [],
+ "project_files": {},
+ "incomplete": false
+}

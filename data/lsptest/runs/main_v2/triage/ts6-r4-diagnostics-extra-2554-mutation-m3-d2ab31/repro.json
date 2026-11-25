@@ -1,0 +1,234 @@
+{
+ "format": 1,
+ "campaign": "main_v2",
+ "vid": "3db536a7b58d-v01",
+ "run_id": "3db536a7b58d",
+ "oracle": "r4_edits",
+ "server": {
+  "kind": "ts6",
+  "version": "6.0.3"
+ },
+ "project": {
+  "name": "DayuanJiang/next-ai-draw-io@58b73ef761d8",
+  "source": "corpus",
+  "ref": "temp/corpus/DayuanJiang__next-ai-draw-io@58b73ef761d8",
+  "commit": "58b73ef761d8a5e5b2afa2c360428d3dea996312",
+  "language": "typescript"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "components/code-block.tsx",
+    "positions": [
+     [
+      17,
+      20
+     ]
+    ],
+    "ends": [],
+    "names": [
+     ""
+    ]
+   },
+   {
+    "path": "components/ui/command.tsx",
+    "positions": [],
+    "ends": [],
+    "names": []
+   },
+   {
+    "path": "packages/mcp-server/src/pages.ts",
+    "positions": [],
+    "ends": [],
+    "names": []
+   }
+  ]
+ },
+ "key": {
+  "method": "diagnostics",
+  "path": "components/code-block.tsx",
+  "line": 17,
+  "character": 20,
+  "extra": "M3:quickfix-errors:Remove unused declaration for: 'getLineProps'"
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "components/code-block.tsx"
+  },
+  {
+   "kind": "change",
+   "path": "components/code-block.tsx",
+   "start": [
+    33,
+    36
+   ],
+   "end": [
+    46,
+    25
+   ]
+  },
+  {
+   "kind": "change",
+   "path": "components/code-block.tsx",
+   "start": [
+    17,
+    23
+   ],
+   "end": [
+    18,
+    23
+   ]
+  }
+ ],
+ "case": {
+  "action_kind": "quickfix",
+  "base_errors": 0,
+  "check": "errors",
+  "diag": {
+   "code": 6133,
+   "message": "'getLineProps' is declared but its value is never read.",
+   "range": {
+    "end": {
+     "character": 32,
+     "line": 17
+    },
+    "start": {
+     "character": 20,
+     "line": 17
+    }
+   },
+   "severity": 4
+  },
+  "fix_introduced_errors": [],
+  "fix_ops": [
+   {
+    "end": [
+     18,
+     23
+    ],
+    "kind": "change",
+    "path": "components/code-block.tsx",
+    "start": [
+     17,
+     23
+    ]
+   }
+  ],
+  "kind": "mutation",
+  "mutation": {
+   "end": [
+    46,
+    25
+   ],
+   "id": "M3",
+   "offsets": [
+    1243,
+    1845
+   ],
+   "sha": "fc66f726c3603e97",
+   "start": [
+    33,
+    36
+   ],
+   "text": "",
+   "what": "drop the last argument of 'map(...)'"
+  },
+  "n_fix_ops": 1,
+  "path": "components/code-block.tsx",
+  "post_errors": 1,
+  "title": "Remove unused declaration for: 'getLineProps'",
+  "via": "edit"
+ },
+ "shape": "diagnostics:extra:2554",
+ "signature": "ts6|r4_edits|diagnostics:extra:2554",
+ "expected": [],
+ "actual": [
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "2554",
+   "typescript",
+   "Expected 1-2 arguments, but got 0."
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "quick fix \"Remove unused declaration for: 'getLineProps'\" for 6133 at components/code-block.tsx:18:21 raises the error count in the edited files from 0 to 1 (seeded by M3: drop the last argument of 'map(...)'; errors before the mutation 0, after the fix 1); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 246s",
+ "violation": {
+  "oracle": "r4_edits",
+  "server": "ts6-6.0.3",
+  "project": "DayuanJiang/next-ai-draw-io@58b73ef761d8",
+  "key": {
+   "method": "diagnostics",
+   "path": "components/code-block.tsx",
+   "line": 17,
+   "character": 20,
+   "extra": "M3:quickfix-errors:Remove unused declaration for: 'getLineProps'"
+  },
+  "expected": [],
+  "actual": [
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2554",
+    "typescript",
+    "Expected 1-2 arguments, but got 0."
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "components/code-block.tsx"
+   },
+   {
+    "kind": "change",
+    "path": "components/code-block.tsx",
+    "start": [
+     33,
+     36
+    ],
+    "end": [
+     46,
+     25
+    ]
+   },
+   {
+    "kind": "change",
+    "path": "components/code-block.tsx",
+    "start": [
+     17,
+     23
+    ],
+    "end": [
+     18,
+     23
+    ]
+   }
+  ],
+  "detail": "{\"case\": {\"action_kind\": \"quickfix\", \"base_errors\": 0, \"check\": \"errors\", \"diag\": {\"code\": 6133, \"message\": \"'getLineProps' is declared but its value is never read.\", \"range\": {\"end\": {\"character\": 32, \"line\": 17}, \"start\": {\"character\": 20, \"line\": 17}}, \"severity\": 4}, \"fix_introduced_errors\": [], \"fix_ops\": [{\"end\": [18, 23], \"kind\": \"change\", \"path\": \"components/code-block.tsx\", \"start\": [17, 23]}], \"kind\": \"mutation\", \"mutation\": {\"end\": [46, 25], \"id\": \"M3\", \"offsets\": [1243, 1845], \"sha\": \"fc66f726c3603e97\", \"start\": [33, 36], \"text\": \"\", \"what\": \"drop the last argument of 'map(...)'\"}, \"n_fix_ops\": 1, \"path\": \"components/code-block.tsx\", \"post_errors\": 1, \"title\": \"Remove unused declaration for: 'getLineProps'\", \"via\": \"edit\"}, \"note\": \"quick fix \\\"Remove unused declaration for: 'getLineProps'\\\" for 6133 at components/code-block.tsx:18:21 raises the error count in the edited files from 0 to 1 (seeded by M3: drop the last argument of 'map(...)'; errors before the mutation 0, after the fix 1); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 246s\", \"shape\": \"diagnostics:extra:2554\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "ts6|r4_edits|diagnostics:extra:2554",
+  "run_id": "3db536a7b58d"
+ },
+ "replay_logs": [
+  "logs/ts6-6.0.3-trd2ab31-r4-replay-baseline-20261119-032237-99916b.jsonl.gz",
+  "logs/ts6-6.0.3-trd2ab31-r4-replay-case-20261119-032211-b7730e.jsonl.gz",
+  "logs/ts6-6.0.3-trd2ab31-r4-replay-control-20261119-032300-d85b6b.jsonl.gz"
+ ],
+ "project_files": {},
+ "group": "ts6-r4-diagnostics-extra-2554-mutation-m3-d2ab31",
+ "reduced": true
+}

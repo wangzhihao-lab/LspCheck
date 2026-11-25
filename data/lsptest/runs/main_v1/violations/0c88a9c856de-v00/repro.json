@@ -1,0 +1,618 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "0c88a9c856de-v00",
+ "run_id": "0c88a9c856de",
+ "oracle": "r5_transforms",
+ "server": {
+  "kind": "gopls",
+  "version": "v0.23.0"
+ },
+ "project": {
+  "name": "gin-gonic/gin@3b08cd7235bd",
+  "source": "corpus",
+  "ref": "temp/corpus/gin-gonic__gin@3b08cd7235bd",
+  "commit": "3b08cd7235bd5ad2f055aa9e38135f111f6c5926",
+  "language": "go"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 6,
+  "targets": [
+   {
+    "path": "binding/json.go",
+    "positions": [
+     [
+      28,
+      21
+     ],
+     [
+      32,
+      11
+     ],
+     [
+      32,
+      54
+     ],
+     [
+      33,
+      5
+     ],
+     [
+      33,
+      12
+     ],
+     [
+      33,
+      31
+     ],
+     [
+      36,
+      20
+     ],
+     [
+      36,
+      25
+     ],
+     [
+      39,
+      37
+     ],
+     [
+      43,
+      24
+     ],
+     [
+      44,
+      18
+     ],
+     [
+      46,
+      14
+     ]
+    ],
+    "ends": [
+     [
+      28,
+      23
+     ],
+     [
+      32,
+      17
+     ],
+     [
+      32,
+      57
+     ],
+     [
+      33,
+      7
+     ],
+     [
+      33,
+      14
+     ],
+     [
+      33,
+      33
+     ],
+     [
+      36,
+      22
+     ],
+     [
+      36,
+      27
+     ],
+     [
+      39,
+      39
+     ],
+     [
+      43,
+      27
+     ],
+     [
+      44,
+      20
+     ],
+     [
+      46,
+      19
+     ]
+    ],
+    "names": [
+     "Name",
+     "jsonBinding",
+     "error",
+     "req",
+     "nil",
+     "nil",
+     "req",
+     "Body",
+     "byte",
+     "Reader",
+     "API",
+     "UseNumber"
+    ]
+   },
+   {
+    "path": "binding/toml_test.go",
+    "positions": [
+     [
+      4,
+      11
+     ],
+     [
+      13,
+      16
+     ],
+     [
+      13,
+      29
+     ],
+     [
+      14,
+      5
+     ],
+     [
+      15,
+      9
+     ],
+     [
+      17,
+      5
+     ],
+     [
+      18,
+      35
+     ],
+     [
+      18,
+      42
+     ],
+     [
+      19,
+      12
+     ],
+     [
+      19,
+      21
+     ],
+     [
+      20,
+      4
+     ],
+     [
+      20,
+      10
+     ]
+    ],
+    "ends": [
+     [
+      4,
+      15
+     ],
+     [
+      13,
+      28
+     ],
+     [
+      13,
+      30
+     ],
+     [
+      14,
+      6
+     ],
+     [
+      15,
+      12
+     ],
+     [
+      17,
+      9
+     ],
+     [
+      18,
+      37
+     ],
+     [
+      18,
+      46
+     ],
+     [
+      19,
+      16
+     ],
+     [
+      19,
+      23
+     ],
+     [
+      20,
+      7
+     ],
+     [
+      20,
+      13
+     ]
+    ],
+    "names": [
+     "binding",
+     "TestTOMLBindingBindBody",
+     "t",
+     "s",
+     "string",
+     "tomlBody",
+     "byte",
+     "tomlBody",
+     "NoError",
+     "err",
+     "assert",
+     "Equal"
+    ]
+   },
+   {
+    "path": "mode_test.go",
+    "positions": [
+     [
+      21,
+      10
+     ],
+     [
+      28,
+      4
+     ],
+     [
+      33,
+      19
+     ],
+     [
+      33,
+      28
+     ],
+     [
+      33,
+      58
+     ],
+     [
+      34,
+      4
+     ],
+     [
+      36,
+      4
+     ],
+     [
+      44,
+      1
+     ],
+     [
+      51,
+      20
+     ],
+     [
+      57,
+      54
+     ],
+     [
+      58,
+      4
+     ],
+     [
+      60,
+      41
+     ]
+    ],
+    "ends": [
+     [
+      21,
+      13
+     ],
+     [
+      28,
+      8
+     ],
+     [
+      33,
+      22
+     ],
+     [
+      33,
+      34
+     ],
+     [
+      33,
+      62
+     ],
+     [
+      34,
+      7
+     ],
+     [
+      36,
+      8
+     ],
+     [
+      44,
+      2
+     ],
+     [
+      51,
+      35
+     ],
+     [
+      57,
+      58
+     ],
+     [
+      58,
+      7
+     ],
+     [
+      60,
+      58
+     ]
+    ],
+    "names": [
+     "Equal",
+     "SetMode",
+     "int32",
+     "releaseCode",
+     "ginMode",
+     "assert",
+     "SetMode",
+     "v",
+     "TestEnableJsonDecoderUseNumber",
+     "testing",
+     "assert",
+     "EnableDecoderDisallowUnknownFields"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "codeAction",
+  "path": "binding/json.go",
+  "line": 28,
+  "character": 21,
+  "extra": "pos"
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "binding/json.go"
+  },
+  {
+   "kind": "change",
+   "path": "binding/json.go",
+   "start": [
+    14,
+    0
+   ],
+   "end": [
+    14,
+    0
+   ],
+   "text": "\n\n\n"
+  }
+ ],
+ "case": {
+  "mapped_key": [
+   "codeAction",
+   "binding/json.go",
+   31,
+   21,
+   "pos"
+  ],
+  "transform": {
+   "back": {
+    "col": 0,
+    "eof": [],
+    "line": -1,
+    "n": 0,
+    "path": "binding/json.go",
+    "w": 0
+   },
+   "edits": [
+    [
+     14,
+     0,
+     14,
+     0,
+     "\n\n\n"
+    ]
+   ],
+   "kind": "T1",
+   "path": "binding/json.go",
+   "shift": {
+    "col": 0,
+    "eof": [],
+    "line": 14,
+    "n": 3,
+    "path": "binding/json.go",
+    "w": 0
+   }
+  }
+ },
+ "shape": "codeAction:extra",
+ "signature": "gopls|r5_transforms|codeAction:extra",
+ "expected": [
+  [
+   "Add test for Name",
+   "source.addTest"
+  ],
+  [
+   "Browse arm64 assembly for Name",
+   "source.assembly"
+  ],
+  [
+   "Browse documentation for package binding",
+   "source.doc"
+  ],
+  [
+   "Browse gopls feature documentation",
+   "gopls.doc.features"
+  ],
+  [
+   "Extract declarations to new file",
+   "refactor.extract.toNewFile"
+  ],
+  [
+   "Show compiler optimization details for \"binding\"",
+   "source.toggleCompilerOptDetails"
+  ],
+  [
+   "Split package \"binding\"",
+   "source.splitPackage"
+  ]
+ ],
+ "actual": [
+  [
+   "Add test for Name",
+   "source.addTest"
+  ],
+  [
+   "Browse arm64 assembly for Name",
+   "source.assembly"
+  ],
+  [
+   "Browse documentation for package binding",
+   "source.doc"
+  ],
+  [
+   "Browse gopls feature documentation",
+   "gopls.doc.features"
+  ],
+  [
+   "Extract declarations to new file",
+   "refactor.extract.toNewFile"
+  ],
+  [
+   "Organize Imports",
+   "source.organizeImports"
+  ],
+  [
+   "Show compiler optimization details for \"binding\"",
+   "source.toggleCompilerOptDetails"
+  ],
+  [
+   "Split package \"binding\"",
+   "source.splitPackage"
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "T1 binding/json.go: 1 edit(s), first [14, 0, 14, 0]; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 45s",
+ "violation": {
+  "oracle": "r5_transforms",
+  "server": "gopls-v0.23.0",
+  "project": "gin-gonic/gin@3b08cd7235bd",
+  "key": {
+   "method": "codeAction",
+   "path": "binding/json.go",
+   "line": 28,
+   "character": 21,
+   "extra": "pos"
+  },
+  "expected": [
+   [
+    "Add test for Name",
+    "source.addTest"
+   ],
+   [
+    "Browse arm64 assembly for Name",
+    "source.assembly"
+   ],
+   [
+    "Browse documentation for package binding",
+    "source.doc"
+   ],
+   [
+    "Browse gopls feature documentation",
+    "gopls.doc.features"
+   ],
+   [
+    "Extract declarations to new file",
+    "refactor.extract.toNewFile"
+   ],
+   [
+    "Show compiler optimization details for \"binding\"",
+    "source.toggleCompilerOptDetails"
+   ],
+   [
+    "Split package \"binding\"",
+    "source.splitPackage"
+   ]
+  ],
+  "actual": [
+   [
+    "Add test for Name",
+    "source.addTest"
+   ],
+   [
+    "Browse arm64 assembly for Name",
+    "source.assembly"
+   ],
+   [
+    "Browse documentation for package binding",
+    "source.doc"
+   ],
+   [
+    "Browse gopls feature documentation",
+    "gopls.doc.features"
+   ],
+   [
+    "Extract declarations to new file",
+    "refactor.extract.toNewFile"
+   ],
+   [
+    "Organize Imports",
+    "source.organizeImports"
+   ],
+   [
+    "Show compiler optimization details for \"binding\"",
+    "source.toggleCompilerOptDetails"
+   ],
+   [
+    "Split package \"binding\"",
+    "source.splitPackage"
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "binding/json.go"
+   },
+   {
+    "kind": "change",
+    "path": "binding/json.go",
+    "start": [
+     14,
+     0
+    ],
+    "end": [
+     14,
+     0
+    ],
+    "text": "\n\n\n"
+   }
+  ],
+  "detail": "{\"case\": {\"mapped_key\": [\"codeAction\", \"binding/json.go\", 31, 21, \"pos\"], \"transform\": {\"back\": {\"col\": 0, \"eof\": [], \"line\": -1, \"n\": 0, \"path\": \"binding/json.go\", \"w\": 0}, \"edits\": [[14, 0, 14, 0, \"\\n\\n\\n\"]], \"kind\": \"T1\", \"path\": \"binding/json.go\", \"shift\": {\"col\": 0, \"eof\": [], \"line\": 14, \"n\": 3, \"path\": \"binding/json.go\", \"w\": 0}}}, \"note\": \"T1 binding/json.go: 1 edit(s), first [14, 0, 14, 0]; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 45s\", \"shape\": \"codeAction:extra\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "gopls|r5_transforms|codeAction:extra",
+  "run_id": "0c88a9c856de"
+ },
+ "replay_logs": [
+  "logs/gopls-v0.23.0-0c88a9c856de-r5-replay-baseline-20260923-160730-9873a9.jsonl.gz",
+  "logs/gopls-v0.23.0-0c88a9c856de-r5-replay-case-20260923-160740-32ec56.jsonl.gz",
+  "logs/gopls-v0.23.0-0c88a9c856de-r5-replay-control-20260923-160735-6aa475.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

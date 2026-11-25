@@ -1,0 +1,3 @@
+2026-09-24 23:29:10,772 INFO campaign_run run e08708ebbd78: r2_handles on rust-analyzer 2025-05-12, rust-analyzer-19758 seed 1 settled, targets ['src/main.rs']
+2026-09-24 23:30:21,208 INFO campaign_run run e08708ebbd78: 0 candidate(s) in 70s; confirming
+2026-09-24 23:30:21,209 INFO campaign_run run e08708ebbd78 finished: ok, 0 confirmed of 0 candidate(s), 70s

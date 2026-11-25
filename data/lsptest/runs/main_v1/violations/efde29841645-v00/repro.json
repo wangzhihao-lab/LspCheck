@@ -1,0 +1,451 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "efde29841645-v00",
+ "run_id": "efde29841645",
+ "oracle": "r4_edits",
+ "server": {
+  "kind": "rust-analyzer",
+  "version": "2026-09-21"
+ },
+ "project": {
+  "name": "alacritty/alacritty@d692748d3f61",
+  "source": "corpus",
+  "ref": "temp/corpus/alacritty__alacritty@d692748d3f61",
+  "commit": "d692748d3f61253ebe9f5094320120d22f6a046f",
+  "language": "rust"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "alacritty/src/cli.rs",
+    "positions": [
+     [
+      38,
+      8
+     ],
+     [
+      43,
+      8
+     ],
+     [
+      180,
+      23
+     ],
+     [
+      188,
+      33
+     ],
+     [
+      216,
+      13
+     ],
+     [
+      220,
+      12
+     ],
+     [
+      255,
+      37
+     ],
+     [
+      351,
+      12
+     ],
+     [
+      367,
+      17
+     ],
+     [
+      383,
+      20
+     ],
+     [
+      415,
+      9
+     ],
+     [
+      477,
+      10
+     ]
+    ],
+    "ends": [
+     [
+      38,
+      10
+     ],
+     [
+      43,
+      10
+     ],
+     [
+      180,
+      32
+     ],
+     [
+      188,
+      35
+     ],
+     [
+      216,
+      15
+     ],
+     [
+      220,
+      19
+     ],
+     [
+      255,
+      43
+     ],
+     [
+      351,
+      17
+     ],
+     [
+      367,
+      18
+     ],
+     [
+      383,
+      23
+     ],
+     [
+      415,
+      12
+     ],
+     [
+      477,
+      13
+     ]
+    ],
+    "names": [
+     "clap",
+     "clap",
+     "working_directory",
+     "Some",
+     "long",
+     "WindowIdentity",
+     "Deserialize",
+     "window_id",
+     "Ok",
+     "option",
+     "deref",
+     "table"
+    ]
+   },
+   {
+    "path": "alacritty/src/display/window.rs",
+    "positions": [
+     [
+      7,
+      3
+     ],
+     [
+      72,
+      14
+     ],
+     [
+      188,
+      49
+     ],
+     [
+      193,
+      47
+     ],
+     [
+      201,
+      18
+     ],
+     [
+      229,
+      9
+     ],
+     [
+      278,
+      33
+     ],
+     [
+      297,
+      60
+     ],
+     [
+      383,
+      38
+     ],
+     [
+      435,
+      50
+     ],
+     [
+      473,
+      48
+     ],
+     [
+      475,
+      19
+     ]
+    ],
+    "ends": [
+     [
+      7,
+      5
+     ],
+     [
+      72,
+      17
+     ],
+     [
+      188,
+      51
+     ],
+     [
+      193,
+      51
+     ],
+     [
+      201,
+      24
+     ],
+     [
+      229,
+      12
+     ],
+     [
+      278,
+      42
+     ],
+     [
+      297,
+      66
+     ],
+     [
+      383,
+      43
+     ],
+     [
+      435,
+      59
+     ],
+     [
+      473,
+      50
+     ],
+     [
+      475,
+      27
+     ]
+    ],
+    "names": [
+     "cfg",
+     "Error",
+     "Text",
+     "Terminal",
+     "scale_factor",
+     "inline",
+     "set_cursor_visible",
+     "WINDOW_ICON",
+     "minimized",
+     "simple_fullscreen",
+     "bool",
+     "RawWindowHandle"
+    ]
+   },
+   {
+    "path": "alacritty/src/macos/proc.rs",
+    "positions": [
+     [
+      0,
+      17
+     ],
+     [
+      24,
+      31
+     ],
+     [
+      30,
+      30
+     ],
+     [
+      48,
+      9
+     ],
+     [
+      54,
+      34
+     ],
+     [
+      55,
+      29
+     ],
+     [
+      56,
+      10
+     ],
+     [
+      59,
+      28
+     ],
+     [
+      73,
+      43
+     ],
+     [
+      88,
+      11
+     ],
+     [
+      94,
+      22
+     ],
+     [
+      115,
+      28
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      19
+     ],
+     [
+      24,
+      33
+     ],
+     [
+      30,
+      35
+     ],
+     [
+      48,
+      11
+     ],
+     [
+      54,
+      36
+     ],
+     [
+      55,
+      34
+     ],
+     [
+      56,
+      12
+     ],
+     [
+      59,
+      30
+     ],
+     [
+      73,
+      48
+     ],
+     [
+      88,
+      12
+     ],
+     [
+      94,
+      24
+     ],
+     [
+      115,
+      31
+     ]
+    ],
+    "names": [
+     "CStr",
+     "err",
+     "Formatter",
+     "from",
+     "sys",
+     "as_mut_ptr",
+     "size",
+     "sys",
+     "c_longlong",
+     "C",
+     "u64",
+     "Clone"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "completionInsert",
+  "path": "alacritty/src/display/window.rs",
+  "line": 7,
+  "character": 5,
+  "extra": "cfg(…)"
+ },
+ "ops": [],
+ "case": {
+  "character": 5,
+  "edits": [
+   {
+    "newText": "cfg(predicate)",
+    "range": {
+     "end": {
+      "character": 5,
+      "line": 7
+     },
+     "start": {
+      "character": 2,
+      "line": 7
+     }
+    }
+   }
+  ],
+  "excerpt": "#[cfg(predicate)(all(not(feature = \"x11\"), not(any(target_os = \"macos\", windows))))]",
+  "item_kind": 3,
+  "kind": "completion",
+  "label": "cfg(…)",
+  "line": 7,
+  "name": "cfg",
+  "new_errors": [
+   "8:17: expected `]`, found `(`"
+  ],
+  "path": "alacritty/src/display/window.rs"
+ },
+ "shape": "completionInsert:gained",
+ "signature": "rust-analyzer|r4_edits|completionInsert:gained",
+ "expected": [],
+ "actual": [
+  "expected `]`, found `(`"
+ ],
+ "reproduced": "3/3",
+ "note": "accepting completion item 'cfg(…)' (kind 3) after 'cfg' at alacritty/src/display/window.rs:8:6 introduces ['8:17: expected `]`, found `(`']; confirmed in a fresh session on the original content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 537s",
+ "violation": {
+  "oracle": "r4_edits",
+  "server": "rust-analyzer-2026-09-21",
+  "project": "alacritty/alacritty@d692748d3f61",
+  "key": {
+   "method": "completionInsert",
+   "path": "alacritty/src/display/window.rs",
+   "line": 7,
+   "character": 5,
+   "extra": "cfg(…)"
+  },
+  "expected": [],
+  "actual": [
+   "expected `]`, found `(`"
+  ],
+  "ops": [],
+  "detail": "{\"case\": {\"character\": 5, \"edits\": [{\"newText\": \"cfg(predicate)\", \"range\": {\"end\": {\"character\": 5, \"line\": 7}, \"start\": {\"character\": 2, \"line\": 7}}}], \"excerpt\": \"#[cfg(predicate)(all(not(feature = \\\"x11\\\"), not(any(target_os = \\\"macos\\\", windows))))]\", \"item_kind\": 3, \"kind\": \"completion\", \"label\": \"cfg(\\u2026)\", \"line\": 7, \"name\": \"cfg\", \"new_errors\": [\"8:17: expected `]`, found `(`\"], \"path\": \"alacritty/src/display/window.rs\"}, \"note\": \"accepting completion item 'cfg(\\u2026)' (kind 3) after 'cfg' at alacritty/src/display/window.rs:8:6 introduces ['8:17: expected `]`, found `(`']; confirmed in a fresh session on the original content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 537s\", \"shape\": \"completionInsert:gained\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "rust-analyzer|r4_edits|completionInsert:gained",
+  "run_id": "efde29841645"
+ },
+ "replay_logs": [
+  "logs/rust-analyzer-2026-09-21-efde29841645-r4-replay-case-20260924-005010-e3df67.jsonl.gz",
+  "logs/rust-analyzer-2026-09-21-efde29841645-r4-replay-control-20260924-005214-8a1858.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

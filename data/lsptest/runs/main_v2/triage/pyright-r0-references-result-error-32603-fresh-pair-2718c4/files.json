@@ -1,0 +1,3 @@
+{
+ "hedge_fund/backtesting/__init__.py": "\"\"\"v2 backtesting — simulate a fund (or a single alpha model) over history.\"\"\"\n\nfrom hedge_fund.backtesting.engine import BacktestEngine\nfrom hedge_fund.backtesting.fund import (\n    FundBacktestMetrics,\n    FundBacktestResult,\n    backtest_fund,\n    rebalance_grid,\n)\nfrom hedge_fund.backtesting.models import (\n    BacktestResult,\n    PerformanceMetrics,\n    Trade,\n)\n\n__all__ = [\n    \"BacktestEngine\",\n    \"BacktestResult\",\n    \"FundBacktestMetrics\",\n    \"FundBacktestResult\",\n    \"PerformanceMetrics\",\n    \"Trade\",\n    \"backtest_fund\",\n    \"rebalance_grid\",\n]\n"
+}

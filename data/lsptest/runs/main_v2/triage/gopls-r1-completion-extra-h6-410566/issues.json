@@ -1,0 +1,92 @@
+{
+ "queries": [
+  "\"file changed\" in:title repo:golang/go is:issue label:gopls",
+  "completion extra repo:golang/go is:issue label:gopls",
+  "completion \"file changed\" repo:golang/go is:issue label:gopls",
+  "completion stale repo:golang/go is:issue label:gopls"
+ ],
+ "matches": [
+  {
+   "repo": "golang/go",
+   "number": 50748,
+   "title": "x/tools/gopls/internal/regtest/workspace: frequent failures in TestWatchReplaceTargets with ‘Unmet: completed work \"diagnosing files changed on disk\"’",
+   "url": "https://github.com/golang/go/issues/50748",
+   "state": "closed",
+   "created": "2022-01-21",
+   "comments": 3,
+   "query": "\"file changed\" in:title repo:golang/go is:issue label:gopls"
+  },
+  {
+   "repo": "golang/go",
+   "number": 54983,
+   "title": "x/tools/gopls: resend diagnostics for changed files",
+   "url": "https://github.com/golang/go/issues/54983",
+   "state": "closed",
+   "created": "2022-09-09",
+   "comments": 2,
+   "query": "\"file changed\" in:title repo:golang/go is:issue label:gopls"
+  },
+  {
+   "repo": "golang/go",
+   "number": 42499,
+   "title": "x/tools/gopls: add a second analysis diagnostics pass for changed files",
+   "url": "https://github.com/golang/go/issues/42499",
+   "state": "closed",
+   "created": "2020-11-11",
+   "comments": 1,
+   "query": "\"file changed\" in:title repo:golang/go is:issue label:gopls"
+  },
+  {
+   "repo": "golang/go",
+   "number": 32510,
+   "title": "x/tools/gopls: bad completion insertion after syntax error",
+   "url": "https://github.com/golang/go/issues/32510",
+   "state": "open",
+   "created": "2019-06-09",
+   "comments": 2,
+   "query": "completion extra repo:golang/go is:issue label:gopls"
+  },
+  {
+   "repo": "golang/go",
+   "number": 61210,
+   "title": "x/tools/gopls: offer test function snippets as completion candidates in test files",
+   "url": "https://github.com/golang/go/issues/61210",
+   "state": "open",
+   "created": "2023-07-06",
+   "comments": 3,
+   "query": "completion extra repo:golang/go is:issue label:gopls"
+  },
+  {
+   "repo": "golang/go",
+   "number": 32768,
+   "title": "x/tools/gopls: completion offers too many irrelevant candidates in struct literal",
+   "url": "https://github.com/golang/go/issues/32768",
+   "state": "open",
+   "created": "2019-06-25",
+   "comments": 18,
+   "query": "completion extra repo:golang/go is:issue label:gopls"
+  },
+  {
+   "repo": "golang/go",
+   "number": 63282,
+   "title": "x/tools/gopls: express completion scoring in terms of down-ranking factors",
+   "url": "https://github.com/golang/go/issues/63282",
+   "state": "open",
+   "created": "2023-09-28",
+   "comments": 2,
+   "query": "completion extra repo:golang/go is:issue label:gopls"
+  },
+  {
+   "repo": "golang/go",
+   "number": 65944,
+   "title": "x/tools/gopls: extract variable returns an extra lhs expression and no template edit support is available",
+   "url": "https://github.com/golang/go/issues/65944",
+   "state": "open",
+   "created": "2024-02-22",
+   "comments": 5,
+   "query": "completion extra repo:golang/go is:issue label:gopls"
+  }
+ ],
+ "notes": [],
+ "authenticated": true
+}

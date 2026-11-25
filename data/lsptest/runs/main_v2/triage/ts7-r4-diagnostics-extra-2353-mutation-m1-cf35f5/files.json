@@ -1,0 +1,3 @@
+{
+ "src/commands/privacy-settings/index.ts": "import type { Command } from '../../commands.js'\nimport { isConsumerSubscriber } from '../../utils/auth.js'\n\nconst privacySettings = {\n  type: 'local-jsx',\n  name: 'privacy-settings',\n  description: 'View and update your privacy settings',\n  isEnabled: () => {\n    return isConsumerSubscriber()\n  },\n  load: () => import('./privacy-settings.js'),\n} satisfies Command\n\nexport default privacySettings\n"
+}

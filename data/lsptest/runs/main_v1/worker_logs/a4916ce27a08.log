@@ -1,0 +1,3 @@
+2026-09-24 08:51:25,346 INFO campaign_run run a4916ce27a08: r1_history on gopls v0.23.0, gin-gonic/gin@3b08cd7235bd seed 1 race200, targets ['binding/json.go', 'binding/toml_test.go', 'mode_test.go']
+2026-09-24 08:53:44,475 INFO campaign_run run a4916ce27a08: 0 candidate(s) in 139s; confirming
+2026-09-24 08:53:44,476 INFO campaign_run run a4916ce27a08 finished: ok, 0 confirmed of 0 candidate(s), 139s

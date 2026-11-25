@@ -1,0 +1,3 @@
+2026-11-18 05:10:38,765 INFO campaign_run run 090d7545a8ca: r0_crash on pyright 1.1.414, scrapy/scrapy@91d87364637c seed 1 settled, targets ['tests/AsyncCrawlerProcess/asyncio_custom_loop_custom_settings_different.py', 'tests/AsyncCrawlerProcess/default_name_resolver.py', 'tests/utils/decorators.py']
+2026-11-18 05:10:49,314 INFO campaign_run run 090d7545a8ca: 0 candidate(s) in 11s; confirming
+2026-11-18 05:10:49,315 INFO campaign_run run 090d7545a8ca finished: ok, 0 confirmed of 0 candidate(s), 11s

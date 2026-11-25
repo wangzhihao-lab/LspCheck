@@ -1,0 +1,76 @@
+{
+ "schema": 1,
+ "id": "rust-analyzer-10326",
+ "meta": {
+  "server": "rust-analyzer",
+  "kind": "rust-analyzer",
+  "number": 10326,
+  "url": "https://github.com/rust-lang/rust-analyzer/issues/10326",
+  "title": "\"Implement missing members\" helper doesn't parenthesise compound traits behind references",
+  "oracle_class": "R4",
+  "subtype": "quickfix",
+  "fix_ref": "rust-lang/rust-analyzer#22741 (fix: add parens in transformed dyn type in ref type)",
+  "fix_shas": [
+   "29677075a141e121789e3b25ff3e40e79207b442"
+  ],
+  "pre_version": "2026-07-06",
+  "post_version": "2026-07-13",
+  "pre_build": "2026-07-06",
+  "post_build": "2026-07-13",
+  "build_notes": "GitHub release assets rust-analyzer-aarch64-apple-darwin.gz of the weekly tags 2026-07-06 and 2026-07-13; git tag --contains puts the fix first in 2026-07-13. The sysroot is the local rustup toolchain (rustc 1.98.1).",
+  "effort_minutes": 6,
+  "notes": "The assist substitutes the trait's type parameter T in '&T' by 'dyn 'a + B' without parentheses; '&dyn 'a + B' is a syntax error (ambiguous '+' in a type). Reported in 2021, fixed in 2026-07.",
+  "candidate_rank": 11
+ },
+ "language": "rust",
+ "settings": {},
+ "settings_note": "The issue names no settings; the session keeps checkOnSave off (native analysis only).",
+ "session": {
+  "settle_timeout_s": 240,
+  "request_timeout_s": 60,
+  "pull_diagnostics": false
+ },
+ "files": [
+  {
+   "path": "src/lib.rs",
+   "provenance": "issue",
+   "source": "issue body, first code block ('Given')",
+   "note": ""
+  },
+  {
+   "path": "Cargo.toml",
+   "provenance": "scaffold",
+   "source": "",
+   "note": "a library crate around the snippet (package name, version, edition 2021)"
+  }
+ ],
+ "repro": {
+  "attempt": 1,
+  "timing": "settled",
+  "steps": "Open src/lib.rs. On the impl 'impl<'a, T: B> A<dyn 'a + B> for T {}' (cursor between the braces, line 5, character 36) apply the assist 'Implement missing members'. Reported: the generated signature 'fn a(&self) -> &dyn 'a + B' is a syntax error; expected '&(dyn 'a + B)'. Probe: the edited text must have no parse error that the original did not have.",
+  "ops": [
+   {
+    "kind": "open",
+    "path": "src/lib.rs"
+   }
+  ],
+  "probe": {
+   "type": "edit_breaks_syntax",
+   "params": {
+    "edit": {
+     "via": "code_action",
+     "path": "src/lib.rs",
+     "range": [
+      5,
+      36,
+      5,
+      36
+     ],
+     "title_re": "^Implement missing members",
+     "missing": "invalid"
+    }
+   }
+  }
+ },
+ "attempts": []
+}

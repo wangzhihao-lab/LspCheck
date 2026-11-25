@@ -1,0 +1,663 @@
+{
+ "format": 1,
+ "campaign": "main_v2",
+ "vid": "9e258e704f75-v01",
+ "run_id": "9e258e704f75",
+ "oracle": "r1_history",
+ "server": {
+  "kind": "pyright",
+  "version": "1.1.414"
+ },
+ "project": {
+  "name": "ultralytics/yolov5@402e17ddf820",
+  "source": "corpus",
+  "ref": "temp/corpus/ultralytics__yolov5@402e17ddf820",
+  "commit": "402e17ddf820996f51a191cbb798376e1144f069",
+  "language": "python"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "race200",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "detect.py",
+    "positions": [
+     [
+      82,
+      8
+     ],
+     [
+      171,
+      71
+     ],
+     [
+      192,
+      61
+     ],
+     [
+      255,
+      29
+     ],
+     [
+      267,
+      58
+     ],
+     [
+      270,
+      71
+     ],
+     [
+      308,
+      41
+     ],
+     [
+      371,
+      17
+     ],
+     [
+      372,
+      7
+     ],
+     [
+      389,
+      17
+     ],
+     [
+      393,
+      17
+     ],
+     [
+      438,
+      10
+     ]
+    ],
+    "ends": [
+     [
+      82,
+      12
+     ],
+     [
+      171,
+      73
+     ],
+     [
+      192,
+      66
+     ],
+     [
+      255,
+      31
+     ],
+     [
+      267,
+      60
+     ],
+     [
+      270,
+      72
+     ],
+     [
+      308,
+      43
+     ],
+     [
+      371,
+      23
+     ],
+     [
+      372,
+      10
+     ],
+     [
+      389,
+      23
+     ],
+     [
+      393,
+      23
+     ],
+     [
+      438,
+      12
+     ]
+    ],
+    "names": [
+     "save_csv",
+     "data",
+     "prediction",
+     "conf",
+     "xyxy",
+     "gn",
+     "cv2",
+     "add_argument",
+     "parser",
+     "add_argument",
+     "add_argument",
+     "opt"
+    ]
+   },
+   {
+    "path": "utils/segment/dataloaders.py",
+    "positions": [
+     [
+      55,
+      20
+     ],
+     [
+      69,
+      8
+     ],
+     [
+      116,
+      18
+     ],
+     [
+      117,
+      18
+     ],
+     [
+      225,
+      12
+     ],
+     [
+      248,
+      32
+     ],
+     [
+      252,
+      66
+     ],
+     [
+      253,
+      76
+     ],
+     [
+      261,
+      51
+     ],
+     [
+      288,
+      26
+     ],
+     [
+      296,
+      49
+     ],
+     [
+      300,
+      43
+     ]
+    ],
+    "ends": [
+     [
+      55,
+      22
+     ],
+     [
+      69,
+      13
+     ],
+     [
+      116,
+      25
+     ],
+     [
+      117,
+      24
+     ],
+     [
+      225,
+      13
+     ],
+     [
+      248,
+      33
+     ],
+     [
+      252,
+      67
+     ],
+     [
+      253,
+      77
+     ],
+     [
+      261,
+      53
+     ],
+     [
+      288,
+      28
+     ],
+     [
+      296,
+      52
+     ],
+     [
+      300,
+      45
+     ]
+    ],
+    "names": [
+     "int",
+     "generator",
+     "image_weights",
+     "cache_images",
+     "nl",
+     "s",
+     "w",
+     "h",
+     "x1b",
+     "self",
+     "batch",
+     "cat"
+    ]
+   },
+   {
+    "path": "utils/segment/general.py",
+    "positions": [
+     [
+      16,
+      17
+     ],
+     [
+      17,
+      35
+     ],
+     [
+      24,
+      10
+     ],
+     [
+      39,
+      6
+     ],
+     [
+      42,
+      13
+     ],
+     [
+      44,
+      33
+     ],
+     [
+      68,
+      40
+     ],
+     [
+      69,
+      34
+     ],
+     [
+      71,
+      35
+     ],
+     [
+      93,
+      9
+     ],
+     [
+      104,
+      13
+     ],
+     [
+      111,
+      10
+     ]
+    ],
+    "ends": [
+     [
+      16,
+      20
+     ],
+     [
+      17,
+      38
+     ],
+     [
+      24,
+      16
+     ],
+     [
+      39,
+      9
+     ],
+     [
+      42,
+      22
+     ],
+     [
+      44,
+      34
+     ],
+     [
+      68,
+      41
+     ],
+     [
+      69,
+      36
+     ],
+     [
+      71,
+      37
+     ],
+     [
+      93,
+      11
+     ],
+     [
+      104,
+      15
+     ],
+     [
+      111,
+      13
+     ]
+    ],
+    "names": [
+     "masks",
+     "boxes",
+     "process_mask",
+     "masks",
+     "downsampled_bboxes",
+     "mh",
+     "mh",
+     "pad",
+     "left",
+     "pad",
+     "cv2",
+     "masks"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "signatureHelp",
+  "path": "utils/segment/dataloaders.py",
+  "line": 252,
+  "character": 66,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "detect.py",
+   "delay_ms": 200
+  },
+  {
+   "kind": "open",
+   "path": "utils/segment/dataloaders.py",
+   "delay_ms": 200
+  },
+  {
+   "kind": "open",
+   "path": "utils/segment/general.py",
+   "delay_ms": 200
+  },
+  {
+   "kind": "change",
+   "path": "detect.py",
+   "start": [
+    76,
+    6
+   ],
+   "end": [
+    76,
+    28
+   ],
+   "delay_ms": 200
+  },
+  {
+   "kind": "change",
+   "path": "detect.py",
+   "start": [
+    76,
+    6
+   ],
+   "end": [
+    76,
+    6
+   ],
+   "text": "u_thres=0.45,  # NMS I",
+   "delay_ms": 200
+  },
+  {
+   "kind": "request",
+   "path": "utils/segment/dataloaders.py",
+   "start": [
+    67,
+    49
+   ],
+   "text": "references",
+   "delay_ms": 200
+  },
+  {
+   "kind": "fs_write",
+   "path": "pyproject.toml",
+   "text": "# Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license\n\n# Overview:\n# This pyproject.toml file manages the packaging metadata and tool configuration for Ultralytics YOLOv5.\n# Most users run YOLOv5 directly from a repository clone with dependencies from requirements.txt.\n\n# Key Sections:\n# - [build-system]: Specifies the build requirements and backend (e.g., setuptools, wheel).\n# - [project]: Includes details like name, version, description, authors, dependencies and more.\n# - [project.optional-dependencies]: Provides additional, optional packages for extended features.\n# - [tool.*]: Configures settings for various tools (pytest, ruff, etc.) used in the project.\n\n# Documentation:\n# For comprehensive documentation and usage instructions, visit: https://docs.ultralytics.com/yolov5\n\n[build-system]\nrequires = [\"setuptools>=43.0.0\", \"wheel\"]\nbuild-backend = \"setuptools.build_meta\"\n\n# Project settings -----------------------------------------------------------------------------------------------------\n[project]\nversion = \"7.0.0\"\nname = \"YOLOv5\"\ndescription = \"Ultralytics YOLOv5 for object detection, instance segmentation and image classification.\"\nreadme = \"README.md\"\nrequires-python = \">=3.8\"\nlicense = { \"text\" = \"AGPL-3.0\" }\nkeywords = [\"machine-learning\", \"deep-learning\", \"computer-vision\", \"ML\", \"DL\", \"AI\", \"YOLO\", \"YOLOv3\", \"YOLOv5\", \"Ultralytics\"]\nauthors = [\n    { name = \"Glenn Jocher\" },\n    { name = \"Ayush Chaurasia\" },\n    { name = \"Jing Qiu\" }\n]\nmaintainers = [\n    { name = \"Glenn Jocher\" },\n    { name = \"Ayush Chaurasia\" },\n    { name = \"Jing Qiu\" }\n]\nclassifiers = [\n    \"Development Status :: 4 - Beta\",\n    \"Intended Audience :: Developers\",\n    \"Intended Audience :: Education\",\n    \"Intended Audience :: Science/Research\",\n    \"License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)\",\n    \"Programming Language :: Python :: 3\",\n    \"Programming Language :: Python :: 3.8\",\n    \"Programming Language :: Python :: 3.9\",\n    \"Programming Language :: Python :: 3.10\",\n    \"Programming Language :: Python :: 3.11\",\n    \"Programming Language :: Python :: 3.12\",\n    \"Programming Language :: Python :: 3.13\",\n    \"Programming Language :: Python :: 3.14\",\n    \"Topic :: Software Development\",\n    \"Topic :: Scientific/Engineering\",\n    \"Topic :: Scientific/Engineering :: Artificial Intelligence\",\n    \"Topic :: Scientific/Engineering :: Image Recognition\",\n    \"Operating System :: POSIX :: Linux\",\n    \"Operating System :: MacOS\",\n    \"Operating System :: Microsoft :: Windows\",\n]\n\n# Required dependencies ------------------------------------------------------------------------------------------------\ndependencies = [\n    \"matplotlib>=3.3.0\",\n    \"numpy>=1.23.5\",\n    \"opencv-python>=4.6.0\",\n    \"pillow>=10.3.0\",\n    \"pyyaml>=5.3.1\",\n    \"requests>=2.32.2\",\n    \"scipy>=1.4.1\",\n    \"torch>=1.8.0\",\n    \"torchvision>=0.9.0\",\n    \"psutil\", # system utilization\n    \"ultralytics-thop>=2.1.6\", # FLOPs computation https://github.com/ultralytics/thop\n    \"pandas>=1.1.4\",\n    \"seaborn>=0.11.0\", # plotting\n    \"packaging\", # general utilities\n    \"ultralytics>=8.4.132\"\n]\n\n# Optional dependencies ------------------------------------------------------------------------------------------------\n[project.optional-dependencies]\ndev = [\n    \"ipython\",\n    \"pytest\",\n    \"pytest-cov\",\n    \"coverage[toml]\",\n]\nexport = [\n    \"onnx>=1.12.0\", # ONNX export\n    \"coremltools>=9.0; platform_system != 'Windows'\", # CoreML only supported on macOS and Linux\n    \"openvino>=2024.0.0\", # OpenVINO export\n    \"tensorflow>=2.0.0,<=2.19.0\", # TF bug https://github.com/ultralytics/ultralytics/issues/5161\n    \"tensorflowjs>=3.9.0\", # TF.js export, automatically installs tensorflow\n    \"keras>=3.5.0,<=3.12.0\", # pin to avoid XNNPACK errors\n]\n# tflite-support  # for TFLite model metadata\n# tensorrt  # TensorRT export\nlogging = [\n    \"comet_ml\", # https://docs.ultralytics.com/integrations/comet\n]\nextra = [\n    \"ipython\", # interactive notebook\n    \"albumentations>=1.0.3\", # training augmentations\n    \"pycocotools>=2.0.6\", # COCO mAP\n]\n\n[project.urls]\n\"Bug Reports\" = \"https://github.com/ultralytics/yolov5/issues\"\n\"Funding\" = \"https://ultralytics.com\"\n\"Source\" = \"https://github.com/ultralytics/yolov5/\"\n\n# Tools settings -------------------------------------------------------------------------------------------------------\n[tool.pytest.ini_options]\nnorecursedirs = [\".git\", \"dist\", \"build\"]\n\n[tool.ruff]\nline-length = 120\n\n[tool.ruff.lint.per-file-ignores]\n\"benchmarks.py\" = [\"E402\"]\n\"classify/*.py\" = [\"E402\"]\n\"detect.py\" = [\"E402\"]\n\"export.py\" = [\"E402\"]\n\"models/tf.py\" = [\"E402\"]\n\"models/yolo.py\" = [\"E402\"]\n\"segment/*.py\" = [\"E402\"]\n\"tests/test_flask_rest_api.py\" = [\"D101\", \"D102\", \"D103\"]\n\"train.py\" = [\"E402\"]\n\"utils/loggers/comet/__init__.py\" = [\"E402\"]\n\"utils/loggers/comet/hpo.py\" = [\"E402\"]\n\"val.py\" = [\"E402\"]\n\n[tool.docformatter]\nwrap-summaries = 120\nwrap-descriptions = 120\nin-place = true\npre-summary-newline = true\nclose-quotes-on-newline = true\n\n[tool.codespell]\nignore-words-list = \"grey,nd,writeable\"\nskip = '*venv*'\n",
+   "delay_ms": 200
+  },
+  {
+   "kind": "fs_write",
+   "path": "pyproject.toml",
+   "text": "# Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license\n\n# Overview:\n# This pyproject.toml file manages the packaging metadata and tool configuration for Ultralytics YOLOv5.\n# Most users run YOLOv5 directly from a repository clone with dependencies from requirements.txt.\n\n# Key Sections:\n# - [build-system]: Specifies the build requirements and backend (e.g., setuptools, wheel).\n# - [project]: Includes details like name, version, description, authors, dependencies and more.\n# - [project.optional-dependencies]: Provides additional, optional packages for extended features.\n# - [tool.*]: Configures settings for various tools (pytest, ruff, etc.) used in the project.\n\n# Documentation:\n# For comprehensive documentation and usage instructions, visit: https://docs.ultralytics.com/yolov5\n\n[build-system]\nrequires = [\"setuptools>=43.0.0\", \"wheel\"]\nbuild-backend = \"setuptools.build_meta\"\n\n# Project settings -----------------------------------------------------------------------------------------------------\n[project]\nversion = \"7.0.0\"\nname = \"YOLOv5\"\ndescription = \"Ultralytics YOLOv5 for object detection, instance segmentation and image classification.\"\nreadme = \"README.md\"\nrequires-python = \">=3.8\"\nlicense = { \"text\" = \"AGPL-3.0\" }\nkeywords = [\"machine-learning\", \"deep-learning\", \"computer-vision\", \"ML\", \"DL\", \"AI\", \"YOLO\", \"YOLOv3\", \"YOLOv5\", \"Ultralytics\"]\nauthors = [\n    { name = \"Glenn Jocher\" },\n    { name = \"Ayush Chaurasia\" },\n    { name = \"Jing Qiu\" }\n]\nmaintainers = [\n    { name = \"Glenn Jocher\" },\n    { name = \"Ayush Chaurasia\" },\n    { name = \"Jing Qiu\" }\n]\nclassifiers = [\n    \"Development Status :: 4 - Beta\",\n    \"Intended Audience :: Developers\",\n    \"Intended Audience :: Education\",\n    \"Intended Audience :: Science/Research\",\n    \"License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)\",\n    \"Programming Language :: Python :: 3\",\n    \"Programming Language :: Python :: 3.8\",\n    \"Programming Language :: Python :: 3.9\",\n    \"Programming Language :: Python :: 3.10\",\n    \"Programming Language :: Python :: 3.11\",\n    \"Programming Language :: Python :: 3.12\",\n    \"Programming Language :: Python :: 3.13\",\n    \"Programming Language :: Python :: 3.14\",\n    \"Topic :: Software Development\",\n    \"Topic :: Scientific/Engineering\",\n    \"Topic :: Scientific/Engineering :: Artificial Intelligence\",\n    \"Topic :: Scientific/Engineering :: Image Recognition\",\n    \"Operating System :: POSIX :: Linux\",\n    \"Operating System :: MacOS\",\n    \"Operating System :: Microsoft :: Windows\",\n]\n\n# Required dependencies ------------------------------------------------------------------------------------------------\ndependencies = [\n    \"matplotlib>=3.3.0\",\n    \"numpy>=1.23.5\",\n    \"opencv-python>=4.6.0\",\n    \"pillow>=10.3.0\",\n    \"pyyaml>=5.3.1\",\n    \"requests>=2.32.2\",\n    \"scipy>=1.4.1\",\n    \"torch>=1.8.0\",\n    \"torchvision>=0.9.0\",\n    \"psutil\", # system utilization\n    \"ultralytics-thop>=2.1.6\", # FLOPs computation https://github.com/ultralytics/thop\n    \"pandas>=1.1.4\",\n    \"seaborn>=0.11.0\", # plotting\n    \"packaging\", # general utilities\n    \"ultralytics>=8.4.132\"\n]\n\n# Optional dependencies ------------------------------------------------------------------------------------------------\n[project.optional-dependencies]\ndev = [\n    \"ipython\",\n    \"pytest\",\n    \"pytest-cov\",\n    \"coverage[toml]\",\n]\nexport = [\n    \"onnx>=1.12.0\", # ONNX export\n    \"coremltools>=9.0; platform_system != 'Windows'\", # CoreML only supported on macOS and Linux\n    \"openvino>=2024.0.0\", # OpenVINO export\n    \"tensorflow>=2.0.0,<=2.19.0\", # TF bug https://github.com/ultralytics/ultralytics/issues/5161\n    \"tensorflowjs>=3.9.0\", # TF.js export, automatically installs tensorflow\n    \"keras>=3.5.0,<=3.12.0\", # pin to avoid XNNPACK errors\n]\n# tflite-support  # for TFLite model metadata\n# tensorrt  # TensorRT export\nlogging = [\n    \"comet_ml\", # https://docs.ultralytics.com/integrations/comet\n    \"tensorboard>=2.13.0\",\n]\nextra = [\n    \"ipython\", # interactive notebook\n    \"albumentations>=1.0.3\", # training augmentations\n    \"pycocotools>=2.0.6\", # COCO mAP\n]\n\n[project.urls]\n\"Bug Reports\" = \"https://github.com/ultralytics/yolov5/issues\"\n\"Funding\" = \"https://ultralytics.com\"\n\"Source\" = \"https://github.com/ultralytics/yolov5/\"\n\n# Tools settings -------------------------------------------------------------------------------------------------------\n[tool.pytest.ini_options]\nnorecursedirs = [\".git\", \"dist\", \"build\"]\n\n[tool.ruff]\nline-length = 120\n\n[tool.ruff.lint.per-file-ignores]\n\"benchmarks.py\" = [\"E402\"]\n\"classify/*.py\" = [\"E402\"]\n\"detect.py\" = [\"E402\"]\n\"export.py\" = [\"E402\"]\n\"models/tf.py\" = [\"E402\"]\n\"models/yolo.py\" = [\"E402\"]\n\"segment/*.py\" = [\"E402\"]\n\"tests/test_flask_rest_api.py\" = [\"D101\", \"D102\", \"D103\"]\n\"train.py\" = [\"E402\"]\n\"utils/loggers/comet/__init__.py\" = [\"E402\"]\n\"utils/loggers/comet/hpo.py\" = [\"E402\"]\n\"val.py\" = [\"E402\"]\n\n[tool.docformatter]\nwrap-summaries = 120\nwrap-descriptions = 120\nin-place = true\npre-summary-newline = true\nclose-quotes-on-newline = true\n\n[tool.codespell]\nignore-words-list = \"grey,nd,writeable\"\nskip = '*venv*'\n",
+   "delay_ms": 200
+  },
+  {
+   "kind": "request",
+   "path": "utils/segment/general.py",
+   "start": [
+    66,
+    44
+   ],
+   "text": "definition",
+   "delay_ms": 200
+  },
+  {
+   "kind": "request",
+   "path": "detect.py",
+   "start": [
+    393,
+    17
+   ],
+   "text": "references",
+   "delay_ms": 200
+  },
+  {
+   "kind": "request",
+   "path": "utils/segment/dataloaders.py",
+   "start": [
+    253,
+    77
+   ],
+   "text": "signatureHelp",
+   "delay_ms": 200
+  },
+  {
+   "kind": "request",
+   "path": "utils/segment/general.py",
+   "start": [
+    111,
+    13
+   ],
+   "text": "signatureHelp",
+   "delay_ms": 200
+  },
+  {
+   "kind": "request",
+   "path": "utils/segment/general.py",
+   "start": [
+    104,
+    15
+   ],
+   "text": "references",
+   "delay_ms": 200
+  }
+ ],
+ "case": {
+  "chain_step": 0,
+  "families": [],
+  "family": "H7",
+  "history_index": 8,
+  "history_seed": 1009,
+  "mode": "fresh",
+  "note": "nest 1>0: H6 config round trip on pyproject.toml: line 100 deleted | H8 after detect.py: delete 'u_thres=0.45,  # NMS I' on line 76 and its inverse, 6 requests in a shuffled order: references@utils/segment/dataloaders.py:67:49, definition@utils/segment/general.py:66:44, references@detect.py:393:17, signatureHelp@utils/segment/dataloaders.py:253:77, signatureHelp@utils/segment/general.py:111:13, ...",
+  "seed": 1,
+  "timing": "race200"
+ },
+ "shape": "signatureHelp:result->error:timeout",
+ "signature": "pyright|r1_history|signatureHelp:result->error:timeout",
+ "expected": "(arg1: int, arg2: int, /, *_args: int, key: None = None) -> int",
+ "actual": [
+  "error",
+  "timeout"
+ ],
+ "reproduced": "0/3",
+ "note": "H7: nest 1>0: H6 config round trip on pyproject.toml: line 100 deleted | H8 after detect.py: delete 'u_thres=0.45,  # NMS I' on line 76 and its inverse, 6 requests in a shuffled order: references@utils/se; flake 0/3 [r1:SCr r2:SCr r3:SCr] in 141s",
+ "violation": {
+  "oracle": "r1_history",
+  "server": "pyright-1.1.414",
+  "project": "ultralytics/yolov5@402e17ddf820",
+  "key": {
+   "method": "signatureHelp",
+   "path": "utils/segment/dataloaders.py",
+   "line": 252,
+   "character": 66,
+   "extra": ""
+  },
+  "expected": "(arg1: int, arg2: int, /, *_args: int, key: None = None) -> int",
+  "actual": [
+   "error",
+   "timeout"
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "detect.py",
+    "delay_ms": 200
+   },
+   {
+    "kind": "open",
+    "path": "utils/segment/dataloaders.py",
+    "delay_ms": 200
+   },
+   {
+    "kind": "open",
+    "path": "utils/segment/general.py",
+    "delay_ms": 200
+   },
+   {
+    "kind": "change",
+    "path": "detect.py",
+    "start": [
+     76,
+     6
+    ],
+    "end": [
+     76,
+     28
+    ],
+    "delay_ms": 200
+   },
+   {
+    "kind": "change",
+    "path": "detect.py",
+    "start": [
+     76,
+     6
+    ],
+    "end": [
+     76,
+     6
+    ],
+    "text": "u_thres=0.45,  # NMS I",
+    "delay_ms": 200
+   },
+   {
+    "kind": "request",
+    "path": "utils/segment/dataloaders.py",
+    "start": [
+     67,
+     49
+    ],
+    "text": "references",
+    "delay_ms": 200
+   },
+   {
+    "kind": "fs_write",
+    "path": "pyproject.toml",
+    "text": "# Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license\n\n# Overview:\n# This pyproject.toml file manages the packaging metadata and tool configuration for Ultralytics YOLOv5.\n# Most users run YOLOv5 directly from a repository clone with dependencies from requirements.txt.\n\n# Key Sections:\n# - [build-system]: Specifies the build requirements and backend (e.g., setuptools, wheel).\n# - [project]: Includes details like name, version, description, authors, dependencies and more.\n# - [project.optional-dependencies]: Provides additional, optional packages for extended features.\n# - [tool.*]: Configures settings for various tools (pytest, ruff, etc.) used in the project.\n\n# Documentation:\n# For comprehensive documentation and usage instructions, visit: https://docs.ultralytics.com/yolov5\n\n[build-system]\nrequires = [\"setuptools>=43.0.0\", \"wheel\"]\nbuild-backend = \"setuptools.build_meta\"\n\n# Project settings -----------------------------------------------------------------------------------------------------\n[project]\nversion = \"7.0.0\"\nname = \"YOLOv5\"\ndescription = \"Ultralytics YOLOv5 for object detection, instance segmentation and image classification.\"\nreadme = \"README.md\"\nrequires-python = \">=3.8\"\nlicense = { \"text\" = \"AGPL-3.0\" }\nkeywords = [\"machine-learning\", \"deep-learning\", \"computer-vision\", \"ML\", \"DL\", \"AI\", \"YOLO\", \"YOLOv3\", \"YOLOv5\", \"Ultralytics\"]\nauthors = [\n    { name = \"Glenn Jocher\" },\n    { name = \"Ayush Chaurasia\" },\n    { name = \"Jing Qiu\" }\n]\nmaintainers = [\n    { name = \"Glenn Jocher\" },\n    { name = \"Ayush Chaurasia\" },\n    { name = \"Jing Qiu\" }\n]\nclassifiers = [\n    \"Development Status :: 4 - Beta\",\n    \"Intended Audience :: Developers\",\n    \"Intended Audience :: Education\",\n    \"Intended Audience :: Science/Research\",\n    \"License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)\",\n    \"Programming Language :: Python :: 3\",\n    \"Programming Language :: Python :: 3.8\",\n    \"Programming Language :: Python :: 3.9\",\n    \"Programming Language :: Python :: 3.10\",\n    \"Programming Language :: Python :: 3.11\",\n    \"Programming Language :: Python :: 3.12\",\n    \"Programming Language :: Python :: 3.13\",\n    \"Programming Language :: Python :: 3.14\",\n    \"Topic :: Software Development\",\n    \"Topic :: Scientific/Engineering\",\n    \"Topic :: Scientific/Engineering :: Artificial Intelligence\",\n    \"Topic :: Scientific/Engineering :: Image Recognition\",\n    \"Operating System :: POSIX :: Linux\",\n    \"Operating System :: MacOS\",\n    \"Operating System :: Microsoft :: Windows\",\n]\n\n# Required dependencies ------------------------------------------------------------------------------------------------\ndependencies = [\n    \"matplotlib>=3.3.0\",\n    \"numpy>=1.23.5\",\n    \"opencv-python>=4.6.0\",\n    \"pillow>=10.3.0\",\n    \"pyyaml>=5.3.1\",\n    \"requests>=2.32.2\",\n    \"scipy>=1.4.1\",\n    \"torch>=1.8.0\",\n    \"torchvision>=0.9.0\",\n    \"psutil\", # system utilization\n    \"ultralytics-thop>=2.1.6\", # FLOPs computation https://github.com/ultralytics/thop\n    \"pandas>=1.1.4\",\n    \"seaborn>=0.11.0\", # plotting\n    \"packaging\", # general utilities\n    \"ultralytics>=8.4.132\"\n]\n\n# Optional dependencies ------------------------------------------------------------------------------------------------\n[project.optional-dependencies]\ndev = [\n    \"ipython\",\n    \"pytest\",\n    \"pytest-cov\",\n    \"coverage[toml]\",\n]\nexport = [\n    \"onnx>=1.12.0\", # ONNX export\n    \"coremltools>=9.0; platform_system != 'Windows'\", # CoreML only supported on macOS and Linux\n    \"openvino>=2024.0.0\", # OpenVINO export\n    \"tensorflow>=2.0.0,<=2.19.0\", # TF bug https://github.com/ultralytics/ultralytics/issues/5161\n    \"tensorflowjs>=3.9.0\", # TF.js export, automatically installs tensorflow\n    \"keras>=3.5.0,<=3.12.0\", # pin to avoid XNNPACK errors\n]\n# tflite-support  # for TFLite model metadata\n# tensorrt  # TensorRT export\nlogging = [\n    \"comet_ml\", # https://docs.ultralytics.com/integrations/comet\n]\nextra = [\n    \"ipython\", # interactive notebook\n    \"albumentations>=1.0.3\", # training augmentations\n    \"pycocotools>=2.0.6\", # COCO mAP\n]\n\n[project.urls]\n\"Bug Reports\" = \"https://github.com/ultralytics/yolov5/issues\"\n\"Funding\" = \"https://ultralytics.com\"\n\"Source\" = \"https://github.com/ultralytics/yolov5/\"\n\n# Tools settings -------------------------------------------------------------------------------------------------------\n[tool.pytest.ini_options]\nnorecursedirs = [\".git\", \"dist\", \"build\"]\n\n[tool.ruff]\nline-length = 120\n\n[tool.ruff.lint.per-file-ignores]\n\"benchmarks.py\" = [\"E402\"]\n\"classify/*.py\" = [\"E402\"]\n\"detect.py\" = [\"E402\"]\n\"export.py\" = [\"E402\"]\n\"models/tf.py\" = [\"E402\"]\n\"models/yolo.py\" = [\"E402\"]\n\"segment/*.py\" = [\"E402\"]\n\"tests/test_flask_rest_api.py\" = [\"D101\", \"D102\", \"D103\"]\n\"train.py\" = [\"E402\"]\n\"utils/loggers/comet/__init__.py\" = [\"E402\"]\n\"utils/loggers/comet/hpo.py\" = [\"E402\"]\n\"val.py\" = [\"E402\"]\n\n[tool.docformatter]\nwrap-summaries = 120\nwrap-descriptions = 120\nin-place = true\npre-summary-newline = true\nclose-quotes-on-newline = true\n\n[tool.codespell]\nignore-words-list = \"grey,nd,writeable\"\nskip = '*venv*'\n",
+    "delay_ms": 200
+   },
+   {
+    "kind": "fs_write",
+    "path": "pyproject.toml",
+    "text": "# Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license\n\n# Overview:\n# This pyproject.toml file manages the packaging metadata and tool configuration for Ultralytics YOLOv5.\n# Most users run YOLOv5 directly from a repository clone with dependencies from requirements.txt.\n\n# Key Sections:\n# - [build-system]: Specifies the build requirements and backend (e.g., setuptools, wheel).\n# - [project]: Includes details like name, version, description, authors, dependencies and more.\n# - [project.optional-dependencies]: Provides additional, optional packages for extended features.\n# - [tool.*]: Configures settings for various tools (pytest, ruff, etc.) used in the project.\n\n# Documentation:\n# For comprehensive documentation and usage instructions, visit: https://docs.ultralytics.com/yolov5\n\n[build-system]\nrequires = [\"setuptools>=43.0.0\", \"wheel\"]\nbuild-backend = \"setuptools.build_meta\"\n\n# Project settings -----------------------------------------------------------------------------------------------------\n[project]\nversion = \"7.0.0\"\nname = \"YOLOv5\"\ndescription = \"Ultralytics YOLOv5 for object detection, instance segmentation and image classification.\"\nreadme = \"README.md\"\nrequires-python = \">=3.8\"\nlicense = { \"text\" = \"AGPL-3.0\" }\nkeywords = [\"machine-learning\", \"deep-learning\", \"computer-vision\", \"ML\", \"DL\", \"AI\", \"YOLO\", \"YOLOv3\", \"YOLOv5\", \"Ultralytics\"]\nauthors = [\n    { name = \"Glenn Jocher\" },\n    { name = \"Ayush Chaurasia\" },\n    { name = \"Jing Qiu\" }\n]\nmaintainers = [\n    { name = \"Glenn Jocher\" },\n    { name = \"Ayush Chaurasia\" },\n    { name = \"Jing Qiu\" }\n]\nclassifiers = [\n    \"Development Status :: 4 - Beta\",\n    \"Intended Audience :: Developers\",\n    \"Intended Audience :: Education\",\n    \"Intended Audience :: Science/Research\",\n    \"License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)\",\n    \"Programming Language :: Python :: 3\",\n    \"Programming Language :: Python :: 3.8\",\n    \"Programming Language :: Python :: 3.9\",\n    \"Programming Language :: Python :: 3.10\",\n    \"Programming Language :: Python :: 3.11\",\n    \"Programming Language :: Python :: 3.12\",\n    \"Programming Language :: Python :: 3.13\",\n    \"Programming Language :: Python :: 3.14\",\n    \"Topic :: Software Development\",\n    \"Topic :: Scientific/Engineering\",\n    \"Topic :: Scientific/Engineering :: Artificial Intelligence\",\n    \"Topic :: Scientific/Engineering :: Image Recognition\",\n    \"Operating System :: POSIX :: Linux\",\n    \"Operating System :: MacOS\",\n    \"Operating System :: Microsoft :: Windows\",\n]\n\n# Required dependencies ------------------------------------------------------------------------------------------------\ndependencies = [\n    \"matplotlib>=3.3.0\",\n    \"numpy>=1.23.5\",\n    \"opencv-python>=4.6.0\",\n    \"pillow>=10.3.0\",\n    \"pyyaml>=5.3.1\",\n    \"requests>=2.32.2\",\n    \"scipy>=1.4.1\",\n    \"torch>=1.8.0\",\n    \"torchvision>=0.9.0\",\n    \"psutil\", # system utilization\n    \"ultralytics-thop>=2.1.6\", # FLOPs computation https://github.com/ultralytics/thop\n    \"pandas>=1.1.4\",\n    \"seaborn>=0.11.0\", # plotting\n    \"packaging\", # general utilities\n    \"ultralytics>=8.4.132\"\n]\n\n# Optional dependencies ------------------------------------------------------------------------------------------------\n[project.optional-dependencies]\ndev = [\n    \"ipython\",\n    \"pytest\",\n    \"pytest-cov\",\n    \"coverage[toml]\",\n]\nexport = [\n    \"onnx>=1.12.0\", # ONNX export\n    \"coremltools>=9.0; platform_system != 'Windows'\", # CoreML only supported on macOS and Linux\n    \"openvino>=2024.0.0\", # OpenVINO export\n    \"tensorflow>=2.0.0,<=2.19.0\", # TF bug https://github.com/ultralytics/ultralytics/issues/5161\n    \"tensorflowjs>=3.9.0\", # TF.js export, automatically installs tensorflow\n    \"keras>=3.5.0,<=3.12.0\", # pin to avoid XNNPACK errors\n]\n# tflite-support  # for TFLite model metadata\n# tensorrt  # TensorRT export\nlogging = [\n    \"comet_ml\", # https://docs.ultralytics.com/integrations/comet\n    \"tensorboard>=2.13.0\",\n]\nextra = [\n    \"ipython\", # interactive notebook\n    \"albumentations>=1.0.3\", # training augmentations\n    \"pycocotools>=2.0.6\", # COCO mAP\n]\n\n[project.urls]\n\"Bug Reports\" = \"https://github.com/ultralytics/yolov5/issues\"\n\"Funding\" = \"https://ultralytics.com\"\n\"Source\" = \"https://github.com/ultralytics/yolov5/\"\n\n# Tools settings -------------------------------------------------------------------------------------------------------\n[tool.pytest.ini_options]\nnorecursedirs = [\".git\", \"dist\", \"build\"]\n\n[tool.ruff]\nline-length = 120\n\n[tool.ruff.lint.per-file-ignores]\n\"benchmarks.py\" = [\"E402\"]\n\"classify/*.py\" = [\"E402\"]\n\"detect.py\" = [\"E402\"]\n\"export.py\" = [\"E402\"]\n\"models/tf.py\" = [\"E402\"]\n\"models/yolo.py\" = [\"E402\"]\n\"segment/*.py\" = [\"E402\"]\n\"tests/test_flask_rest_api.py\" = [\"D101\", \"D102\", \"D103\"]\n\"train.py\" = [\"E402\"]\n\"utils/loggers/comet/__init__.py\" = [\"E402\"]\n\"utils/loggers/comet/hpo.py\" = [\"E402\"]\n\"val.py\" = [\"E402\"]\n\n[tool.docformatter]\nwrap-summaries = 120\nwrap-descriptions = 120\nin-place = true\npre-summary-newline = true\nclose-quotes-on-newline = true\n\n[tool.codespell]\nignore-words-list = \"grey,nd,writeable\"\nskip = '*venv*'\n",
+    "delay_ms": 200
+   },
+   {
+    "kind": "request",
+    "path": "utils/segment/general.py",
+    "start": [
+     66,
+     44
+    ],
+    "text": "definition",
+    "delay_ms": 200
+   },
+   {
+    "kind": "request",
+    "path": "detect.py",
+    "start": [
+     393,
+     17
+    ],
+    "text": "references",
+    "delay_ms": 200
+   },
+   {
+    "kind": "request",
+    "path": "utils/segment/dataloaders.py",
+    "start": [
+     253,
+     77
+    ],
+    "text": "signatureHelp",
+    "delay_ms": 200
+   },
+   {
+    "kind": "request",
+    "path": "utils/segment/general.py",
+    "start": [
+     111,
+     13
+    ],
+    "text": "signatureHelp",
+    "delay_ms": 200
+   },
+   {
+    "kind": "request",
+    "path": "utils/segment/general.py",
+    "start": [
+     104,
+     15
+    ],
+    "text": "references",
+    "delay_ms": 200
+   }
+  ],
+  "detail": "{\"case\": {\"chain_step\": 0, \"families\": [], \"family\": \"H7\", \"history_index\": 8, \"history_seed\": 1009, \"mode\": \"fresh\", \"note\": \"nest 1>0: H6 config round trip on pyproject.toml: line 100 deleted | H8 after detect.py: delete 'u_thres=0.45,  # NMS I' on line 76 and its inverse, 6 requests in a shuffled order: references@utils/segment/dataloaders.py:67:49, definition@utils/segment/general.py:66:44, references@detect.py:393:17, signatureHelp@utils/segment/dataloaders.py:253:77, signatureHelp@utils/segment/general.py:111:13, ...\", \"seed\": 1, \"timing\": \"race200\"}, \"note\": \"H7: nest 1>0: H6 config round trip on pyproject.toml: line 100 deleted | H8 after detect.py: delete 'u_thres=0.45,  # NMS I' on line 76 and its inverse, 6 requests in a shuffled order: references@utils/se; flake 0/3 [r1:SCr r2:SCr r3:SCr] in 141s\", \"shape\": \"signatureHelp:result->error:timeout\"}",
+  "reproduced": "0/3",
+  "reduced_ops": [],
+  "signature": "pyright|r1_history|signatureHelp:result->error:timeout",
+  "run_id": "9e258e704f75"
+ },
+ "replay_logs": [],
+ "project_files": {},
+ "incomplete": false
+}

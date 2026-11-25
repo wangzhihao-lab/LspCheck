@@ -1,0 +1,62 @@
+{
+ "vid": "634d2a95e4c7-v00",
+ "ops_before": 3,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 2,
+ "cache_hits": 0,
+ "reduce_seconds": 6.034,
+ "budget_exhausted": false,
+ "probe_log": [
+  [
+   2,
+   false
+  ],
+  [
+   2,
+   false
+  ]
+ ],
+ "logs": [
+  "ts6-6.0.3-tr4cd363-r4-replay-baseline-20261119-030206-0146e0.jsonl.gz",
+  "ts6-6.0.3-tr4cd363-r4-replay-case-20261119-030152-c198e2.jsonl.gz",
+  "ts6-6.0.3-tr4cd363-r4-replay-control-20261119-030215-0ff9dc.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [],
+  "actual": [
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2339",
+    "typescript",
+    "Property 'displayName' does not exist on type 'void'."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "6133",
+    "typescript",
+    "'T' is declared but its value is never read."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "6133",
+    "typescript",
+    "'arg0' is declared but its value is never read."
+   ]
+  ]
+ },
+ "ops_after": 3,
+ "total_seconds": 122.8
+}

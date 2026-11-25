@@ -1,0 +1,51 @@
+{
+ "vid": "02943665191c-v01",
+ "ops_before": 0,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 0,
+ "cache_hits": 0,
+ "reduce_seconds": 0.0,
+ "budget_exhausted": false,
+ "probe_log": [],
+ "logs": [
+  "ts6-6.0.3-trbf619d-r3-replay-baseline-20261119-022609-9dbdc2.jsonl.gz",
+  "ts6-6.0.3-trbf619d-r3-replay-control-20261119-022620-f29d4d.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [
+   [
+    "temp/lsp_servers/ts6-6.0.3/node_modules/typescript/lib/lib.dom.d.ts",
+    13912,
+    8,
+    13912,
+    19
+   ],
+   [
+    "temp/lsp_servers/ts6-6.0.3/node_modules/typescript/lib/lib.dom.d.ts",
+    13913,
+    8,
+    13913,
+    19
+   ]
+  ],
+  "actual": [
+   [
+    "temp/lsp_servers/ts6-6.0.3/node_modules/typescript/lib/lib.dom.d.ts",
+    13225,
+    8,
+    13225,
+    19
+   ],
+   [
+    "temp/lsp_servers/ts6-6.0.3/node_modules/typescript/lib/lib.dom.d.ts",
+    13226,
+    8,
+    13226,
+    19
+   ]
+  ]
+ },
+ "ops_after": 0,
+ "total_seconds": 91.6
+}

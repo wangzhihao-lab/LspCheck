@@ -1,0 +1,3 @@
+2026-11-18 09:13:45,065 INFO campaign_run run 337c97ed9820: r5_transforms on pyright 1.1.414, Alishahryar1/free-claude-code@1f8b1fd7d054 seed 1 settled, targets ['smoke/product/test_api_product_live.py', 'src/free_claude_code/providers/vertex/client.py', 'tests/providers/test_together.py']
+2026-11-18 09:15:11,236 INFO campaign_run run 337c97ed9820: 0 candidate(s) in 86s; confirming
+2026-11-18 09:15:11,239 INFO campaign_run run 337c97ed9820 finished: ok, 0 confirmed of 0 candidate(s), 86s

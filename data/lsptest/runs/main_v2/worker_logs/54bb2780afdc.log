@@ -1,0 +1,6 @@
+2026-11-18 05:48:18,757 INFO campaign_run run 54bb2780afdc: r4_edits on rust-analyzer 2026-09-21, tokio-rs/tokio@3930bd182cb1 seed 1 settled, targets ['tokio/src/runtime/time/wheel/mod.rs', 'tokio/src/runtime/time_alt/wheel/level.rs', 'tokio/tests/uds_split.rs']
+2026-11-18 05:49:36,876 INFO campaign_run run 54bb2780afdc: 1 candidate(s) in 78s; confirming
+2026-11-18 05:51:17,569 INFO flake replay 1/3 of rust-analyzer|r4_edits|diagnostics:extra:inactive_code: settled=True control_stable=True reproduced=True (100.7s)
+2026-11-18 05:53:31,039 INFO flake replay 2/3 of rust-analyzer|r4_edits|diagnostics:extra:inactive_code: settled=True control_stable=True reproduced=True (133.5s)
+2026-11-18 05:55:28,537 INFO flake replay 3/3 of rust-analyzer|r4_edits|diagnostics:extra:inactive_code: settled=True control_stable=True reproduced=True (117.5s)
+2026-11-18 05:55:28,566 INFO campaign_run run 54bb2780afdc finished: ok, 1 confirmed of 1 candidate(s), 430s

@@ -1,0 +1,3 @@
+2026-09-24 12:17:55,311 INFO campaign_run run 9b262f78c351: r1_history on pyright 1.1.414, Graphify-Labs/graphify@a5957aa6ef51 seed 3 settled, targets ['tests/test_cross_repo_member_calls.py', 'tests/test_inherited_field_receivers.py', 'tests/test_ts_import_require.py']
+2026-09-24 12:25:14,818 INFO campaign_run run 9b262f78c351: 0 candidate(s) in 440s; confirming
+2026-09-24 12:25:14,819 INFO campaign_run run 9b262f78c351 finished: ok, 0 confirmed of 0 candidate(s), 440s

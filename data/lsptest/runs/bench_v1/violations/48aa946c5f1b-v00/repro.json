@@ -1,0 +1,206 @@
+{
+ "format": 1,
+ "campaign": "bench_v1",
+ "vid": "48aa946c5f1b-v00",
+ "run_id": "48aa946c5f1b",
+ "oracle": "r4_edits",
+ "server": {
+  "kind": "tsserver",
+  "version": "4.3.5+tsls0.7.1"
+ },
+ "project": {
+  "name": "tsserver-44123",
+  "source": "dir",
+  "ref": "data/lsp_bench/cases/tsserver-44123/project",
+  "commit": "",
+  "language": "typescript"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 120.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "index.ts",
+    "positions": [
+     [
+      0,
+      22
+     ],
+     [
+      0,
+      36
+     ],
+     [
+      0,
+      48
+     ],
+     [
+      1,
+      16
+     ],
+     [
+      1,
+      26
+     ],
+     [
+      1,
+      43
+     ],
+     [
+      2,
+      23
+     ],
+     [
+      2,
+      28
+     ],
+     [
+      3,
+      24
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      28
+     ],
+     [
+      0,
+      43
+     ],
+     [
+      0,
+      52
+     ],
+     [
+      1,
+      23
+     ],
+     [
+      1,
+      28
+     ],
+     [
+      1,
+      47
+     ],
+     [
+      2,
+      24
+     ],
+     [
+      2,
+      32
+     ],
+     [
+      3,
+      30
+     ]
+    ],
+    "names": [
+     "uppercaseAll",
+     "stringsPromise",
+     "Promise",
+     "stringsPromise",
+     "then",
+     "strings",
+     "of",
+     "strings",
+     "toUpperCase"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "diagnostics",
+  "path": "index.ts",
+  "line": 0,
+  "character": 16,
+  "extra": "quickfix-errors:Convert to async function"
+ },
+ "ops": [],
+ "case": {
+  "action_kind": "quickfix",
+  "base_errors": 0,
+  "check": "errors",
+  "diag": {
+   "code": 80006,
+   "message": "This may be converted to an async function.",
+   "range": {
+    "end": {
+     "character": 28,
+     "line": 0
+    },
+    "start": {
+     "character": 16,
+     "line": 0
+    }
+   },
+   "severity": 4
+  },
+  "kind": "quickfix",
+  "path": "index.ts",
+  "post_errors": 1,
+  "title": "Convert to async function",
+  "via": "command"
+ },
+ "shape": "diagnostics:extra:1163",
+ "signature": "tsserver|r4_edits|diagnostics:extra:1163",
+ "expected": [],
+ "actual": [
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "1163",
+   "typescript",
+   "A 'yield' expression is only allowed in a generator body."
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "quick fix 'Convert to async function' for 80006 at index.ts:1:17 raises the error count in the edited files from 0 to 1; confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 46s",
+ "violation": {
+  "oracle": "r4_edits",
+  "server": "tsserver-4.3.5+tsls0.7.1",
+  "project": "tsserver-44123",
+  "key": {
+   "method": "diagnostics",
+   "path": "index.ts",
+   "line": 0,
+   "character": 16,
+   "extra": "quickfix-errors:Convert to async function"
+  },
+  "expected": [],
+  "actual": [
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "1163",
+    "typescript",
+    "A 'yield' expression is only allowed in a generator body."
+   ]
+  ],
+  "ops": [],
+  "detail": "{\"case\": {\"action_kind\": \"quickfix\", \"base_errors\": 0, \"check\": \"errors\", \"diag\": {\"code\": 80006, \"message\": \"This may be converted to an async function.\", \"range\": {\"end\": {\"character\": 28, \"line\": 0}, \"start\": {\"character\": 16, \"line\": 0}}, \"severity\": 4}, \"kind\": \"quickfix\", \"path\": \"index.ts\", \"post_errors\": 1, \"title\": \"Convert to async function\", \"via\": \"command\"}, \"note\": \"quick fix 'Convert to async function' for 80006 at index.ts:1:17 raises the error count in the edited files from 0 to 1; confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 46s\", \"shape\": \"diagnostics:extra:1163\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "tsserver|r4_edits|diagnostics:extra:1163",
+  "run_id": "48aa946c5f1b"
+ },
+ "replay_logs": [
+  "logs/tsserver-4.3.5+tsls0.7.1-48aa946c5f1b-r4-replay-baseline-20260924-212439-e470ed.jsonl.gz",
+  "logs/tsserver-4.3.5+tsls0.7.1-48aa946c5f1b-r4-replay-case-20260924-212431-27744e.jsonl.gz",
+  "logs/tsserver-4.3.5+tsls0.7.1-48aa946c5f1b-r4-replay-control-20260924-212443-8832bc.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

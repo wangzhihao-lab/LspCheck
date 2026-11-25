@@ -1,0 +1,6 @@
+2026-11-18 10:43:17,618 INFO campaign_run run 9932809db252: r5_transforms on ts7 7.0.2, vadimdemedes/ink@02ae1e59e7c2 seed 2 settled, targets ['src/dom.ts', 'test/fixtures/issue-935-overflow-rerender.tsx', 'test/helpers/create-stdout.ts']
+2026-11-18 10:46:19,667 INFO campaign_run run 9932809db252: 1 candidate(s) in 182s; confirming
+2026-11-18 10:47:18,296 INFO flake replay 1/3 of ts7|r5_transforms|foldingRange:extra: settled=True control_stable=True reproduced=True (58.6s)
+2026-11-18 10:48:14,110 INFO flake replay 2/3 of ts7|r5_transforms|foldingRange:extra: settled=True control_stable=True reproduced=True (55.8s)
+2026-11-18 10:49:05,982 INFO flake replay 3/3 of ts7|r5_transforms|foldingRange:extra: settled=True control_stable=True reproduced=True (51.9s)
+2026-11-18 10:49:05,992 INFO campaign_run run 9932809db252 finished: ok, 1 confirmed of 1 candidate(s), 348s

@@ -1,0 +1,3261 @@
+{
+ "format": 1,
+ "campaign": "main_v2",
+ "vid": "fa21096f3d2f-v00",
+ "run_id": "fa21096f3d2f",
+ "oracle": "r4_edits",
+ "server": {
+  "kind": "ts6",
+  "version": "6.0.3"
+ },
+ "project": {
+  "name": "solidjs/solid@4b62bc29e04b",
+  "source": "corpus",
+  "ref": "temp/corpus/solidjs__solid@4b62bc29e04b",
+  "commit": "4b62bc29e04bfd29573a20ff3d47ae56a8a80ccb",
+  "language": "typescript"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "examples/rendering/shared/src/components/Reveal.tsx",
+    "positions": [
+     [
+      47,
+      28
+     ],
+     [
+      59,
+      15
+     ],
+     [
+      69,
+      15
+     ],
+     [
+      73,
+      17
+     ],
+     [
+      79,
+      11
+     ],
+     [
+      84,
+      47
+     ],
+     [
+      86,
+      44
+     ],
+     [
+      94,
+      81
+     ],
+     [
+      109,
+      21
+     ],
+     [
+      109,
+      56
+     ],
+     [
+      113,
+      25
+     ],
+     [
+      128,
+      20
+     ]
+    ],
+    "ends": [
+     [
+      47,
+      31
+     ],
+     [
+      59,
+      18
+     ],
+     [
+      69,
+      18
+     ],
+     [
+      73,
+      21
+     ],
+     [
+      79,
+      14
+     ],
+     [
+      84,
+      54
+     ],
+     [
+      86,
+      45
+     ],
+     [
+      94,
+      83
+     ],
+     [
+      109,
+      23
+     ],
+     [
+      109,
+      58
+     ],
+     [
+      113,
+      28
+     ],
+     [
+      128,
+      25
+     ]
+    ],
+    "names": [
+     "legend",
+     "input",
+     "input",
+     "checked",
+     "label",
+     "currentTarget",
+     "em",
+     "code",
+     "the",
+     "card",
+     "title",
+     "RevealPage"
+    ]
+   },
+   {
+    "path": "packages/web/test/hydration/spread-innerhtml.spec.tsx",
+    "positions": [
+     [
+      5,
+      37
+     ],
+     [
+      6,
+      12
+     ],
+     [
+      11,
+      34
+     ],
+     [
+      14,
+      4
+     ],
+     [
+      16,
+      6
+     ],
+     [
+      23,
+      18
+     ],
+     [
+      28,
+      9
+     ],
+     [
+      38,
+      20
+     ],
+     [
+      42,
+      58
+     ],
+     [
+      43,
+      45
+     ],
+     [
+      55,
+      7
+     ],
+     [
+      56,
+      40
+     ]
+    ],
+    "ends": [
+     [
+      5,
+      40
+     ],
+     [
+      6,
+      16
+     ],
+     [
+      11,
+      37
+     ],
+     [
+      14,
+      8
+     ],
+     [
+      16,
+      10
+     ],
+     [
+      23,
+      23
+     ],
+     [
+      28,
+      13
+     ],
+     [
+      38,
+      21
+     ],
+     [
+      42,
+      61
+     ],
+     [
+      43,
+      48
+     ],
+     [
+      55,
+      10
+     ],
+     [
+      56,
+      42
+     ]
+    ],
+    "names": [
+     "flush",
+     "hydrate",
+     "events",
+     "describe",
+     "document",
+     "innerHTML",
+     "dispose",
+     "v",
+     "count",
+     "style",
+     "expect",
+     "toBe"
+    ]
+   },
+   {
+    "path": "packages/web/test/latest-shadow-owned-write-issue-3378.spec.tsx",
+    "positions": [
+     [
+      12,
+      23
+     ],
+     [
+      12,
+      30
+     ],
+     [
+      13,
+      12
+     ],
+     [
+      18,
+      52
+     ],
+     [
+      23,
+      18
+     ],
+     [
+      44,
+      10
+     ],
+     [
+      48,
+      4
+     ],
+     [
+      49,
+      18
+     ],
+     [
+      53,
+      9
+     ],
+     [
+      54,
+      12
+     ],
+     [
+      61,
+      10
+     ],
+     [
+      66,
+      28
+     ]
+    ],
+    "ends": [
+     [
+      12,
+      26
+     ],
+     [
+      12,
+      32
+     ],
+     [
+      13,
+      15
+     ],
+     [
+      18,
+      53
+     ],
+     [
+      23,
+      19
+     ],
+     [
+      44,
+      12
+     ],
+     [
+      48,
+      7
+     ],
+     [
+      49,
+      24
+     ],
+     [
+      53,
+      11
+     ],
+     [
+      54,
+      14
+     ],
+     [
+      61,
+      14
+     ],
+     [
+      66,
+      30
+     ]
+    ],
+    "names": [
+     "expect",
+     "test",
+     "action",
+     "r",
+     "i",
+     "div",
+     "flush",
+     "textContent",
+     "run",
+     "gate",
+     "resolve",
+     "toBe"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "diagnostics",
+  "path": "examples/rendering/shared/src/components/Reveal.tsx",
+  "line": 97,
+  "character": 9,
+  "extra": "M1:quickfix-errors:Change spelling to 'eval'"
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "examples/rendering/shared/src/components/Reveal.tsx"
+  },
+  {
+   "kind": "change",
+   "path": "examples/rendering/shared/src/components/Reveal.tsx",
+   "start": [
+    0,
+    44
+   ],
+   "end": [
+    0,
+    52
+   ]
+  },
+  {
+   "kind": "change",
+   "path": "examples/rendering/shared/src/components/Reveal.tsx",
+   "start": [
+    97,
+    9
+   ],
+   "end": [
+    97,
+    13
+   ],
+   "text": "ev"
+  }
+ ],
+ "case": {
+  "action_kind": "quickfix",
+  "base_errors": 64,
+  "check": "errors",
+  "diag": {
+   "code": 2552,
+   "message": "Cannot find name 'Reveal'. Did you mean 'eval'?",
+   "range": {
+    "end": {
+     "character": 15,
+     "line": 97
+    },
+    "start": {
+     "character": 9,
+     "line": 97
+    }
+   },
+   "severity": 1
+  },
+  "fix_introduced_errors": [
+   {
+    "code": 7026,
+    "message": "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+    "path": "examples/rendering/shared/src/components/Reveal.tsx",
+    "range": {
+     "end": {
+      "character": 54,
+      "line": 97
+     },
+     "start": {
+      "character": 8,
+      "line": 97
+     }
+    },
+    "severity": 1
+   }
+  ],
+  "fix_ops": [
+   {
+    "end": [
+     97,
+     13
+    ],
+    "kind": "change",
+    "path": "examples/rendering/shared/src/components/Reveal.tsx",
+    "start": [
+     97,
+     9
+    ],
+    "text": "ev"
+   }
+  ],
+  "kind": "mutation",
+  "mutation": {
+   "end": [
+    0,
+    52
+   ],
+   "id": "M1",
+   "offsets": [
+    44,
+    52
+   ],
+   "sha": "a5518ce50cfd594b",
+   "start": [
+    0,
+    44
+   ],
+   "text": "",
+   "what": "remove 'Reveal' from an import"
+  },
+  "n_fix_ops": 1,
+  "path": "examples/rendering/shared/src/components/Reveal.tsx",
+  "post_errors": 71,
+  "title": "Change spelling to 'eval'",
+  "via": "edit"
+ },
+ "shape": "diagnostics:extra:17002,2552",
+ "signature": "ts6|r4_edits|diagnostics:extra:17002,2552",
+ "expected": [
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "2307",
+   "typescript",
+   "Cannot find module 'solid-js' or its corresponding type declarations."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "2875",
+   "typescript",
+   "This JSX tag requires the module path '@solidjs/web/jsx-runtime' to exist, but none could be found. Make sure you have types for the appropriate package installed."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7006",
+   "typescript",
+   "Parameter 'e' implicitly has an 'any' type."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7006",
+   "typescript",
+   "Parameter 's' implicitly has an 'any' type."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ]
+ ],
+ "actual": [
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "17002",
+   "typescript",
+   "Expected corresponding JSX closing tag for 'eval'."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "2307",
+   "typescript",
+   "Cannot find module 'solid-js' or its corresponding type declarations."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "2552",
+   "typescript",
+   "Cannot find name 'Reveal'. Did you mean 'eval'?"
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "2552",
+   "typescript",
+   "Cannot find name 'Reveal'. Did you mean 'eval'?"
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "2552",
+   "typescript",
+   "Cannot find name 'Reveal'. Did you mean 'eval'?"
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "2552",
+   "typescript",
+   "Cannot find name 'Reveal'. Did you mean 'eval'?"
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "2552",
+   "typescript",
+   "Cannot find name 'Reveal'. Did you mean 'eval'?"
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "2875",
+   "typescript",
+   "This JSX tag requires the module path '@solidjs/web/jsx-runtime' to exist, but none could be found. Make sure you have types for the appropriate package installed."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7006",
+   "typescript",
+   "Parameter 'e' implicitly has an 'any' type."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7006",
+   "typescript",
+   "Parameter 's' implicitly has an 'any' type."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7026",
+   "typescript",
+   "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "quick fix \"Change spelling to 'eval'\" for 2552 at examples/rendering/shared/src/components/Reveal.tsx:98:10 raises the error count in the edited files from 64 to 71 (seeded by M1: remove 'Reveal' from an import; errors before the mutation 64, after the fix 71); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 477s",
+ "violation": {
+  "oracle": "r4_edits",
+  "server": "ts6-6.0.3",
+  "project": "solidjs/solid@4b62bc29e04b",
+  "key": {
+   "method": "diagnostics",
+   "path": "examples/rendering/shared/src/components/Reveal.tsx",
+   "line": 97,
+   "character": 9,
+   "extra": "M1:quickfix-errors:Change spelling to 'eval'"
+  },
+  "expected": [
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2307",
+    "typescript",
+    "Cannot find module 'solid-js' or its corresponding type declarations."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2875",
+    "typescript",
+    "This JSX tag requires the module path '@solidjs/web/jsx-runtime' to exist, but none could be found. Make sure you have types for the appropriate package installed."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7006",
+    "typescript",
+    "Parameter 'e' implicitly has an 'any' type."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7006",
+    "typescript",
+    "Parameter 's' implicitly has an 'any' type."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ]
+  ],
+  "actual": [
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "17002",
+    "typescript",
+    "Expected corresponding JSX closing tag for 'eval'."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2307",
+    "typescript",
+    "Cannot find module 'solid-js' or its corresponding type declarations."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2552",
+    "typescript",
+    "Cannot find name 'Reveal'. Did you mean 'eval'?"
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2552",
+    "typescript",
+    "Cannot find name 'Reveal'. Did you mean 'eval'?"
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2552",
+    "typescript",
+    "Cannot find name 'Reveal'. Did you mean 'eval'?"
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2552",
+    "typescript",
+    "Cannot find name 'Reveal'. Did you mean 'eval'?"
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2552",
+    "typescript",
+    "Cannot find name 'Reveal'. Did you mean 'eval'?"
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2875",
+    "typescript",
+    "This JSX tag requires the module path '@solidjs/web/jsx-runtime' to exist, but none could be found. Make sure you have types for the appropriate package installed."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7006",
+    "typescript",
+    "Parameter 'e' implicitly has an 'any' type."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7006",
+    "typescript",
+    "Parameter 's' implicitly has an 'any' type."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7026",
+    "typescript",
+    "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "examples/rendering/shared/src/components/Reveal.tsx"
+   },
+   {
+    "kind": "change",
+    "path": "examples/rendering/shared/src/components/Reveal.tsx",
+    "start": [
+     0,
+     44
+    ],
+    "end": [
+     0,
+     52
+    ]
+   },
+   {
+    "kind": "change",
+    "path": "examples/rendering/shared/src/components/Reveal.tsx",
+    "start": [
+     97,
+     9
+    ],
+    "end": [
+     97,
+     13
+    ],
+    "text": "ev"
+   }
+  ],
+  "detail": "{\"case\": {\"action_kind\": \"quickfix\", \"base_errors\": 64, \"check\": \"errors\", \"diag\": {\"code\": 2552, \"message\": \"Cannot find name 'Reveal'. Did you mean 'eval'?\", \"range\": {\"end\": {\"character\": 15, \"line\": 97}, \"start\": {\"character\": 9, \"line\": 97}}, \"severity\": 1}, \"fix_introduced_errors\": [{\"code\": 7026, \"message\": \"JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.\", \"path\": \"examples/rendering/shared/src/components/Reveal.tsx\", \"range\": {\"end\": {\"character\": 54, \"line\": 97}, \"start\": {\"character\": 8, \"line\": 97}}, \"severity\": 1}], \"fix_ops\": [{\"end\": [97, 13], \"kind\": \"change\", \"path\": \"examples/rendering/shared/src/components/Reveal.tsx\", \"start\": [97, 9], \"text\": \"ev\"}], \"kind\": \"mutation\", \"mutation\": {\"end\": [0, 52], \"id\": \"M1\", \"offsets\": [44, 52], \"sha\": \"a5518ce50cfd594b\", \"start\": [0, 44], \"text\": \"\", \"what\": \"remove 'Reveal' from an import\"}, \"n_fix_ops\": 1, \"path\": \"examples/rendering/shared/src/components/Reveal.tsx\", \"post_errors\": 71, \"title\": \"Change spelling to 'eval'\", \"via\": \"edit\"}, \"note\": \"quick fix \\\"Change spelling to 'eval'\\\" for 2552 at examples/rendering/shared/src/components/Reveal.tsx:98:10 raises the error count in the edited files from 64 to 71 (seeded by M1: remove 'Reveal' from an import; errors before the mutation 64, after the fix 71); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 477s\", \"shape\": \"diagnostics:extra:17002,2552\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "ts6|r4_edits|diagnostics:extra:17002,2552",
+  "run_id": "fa21096f3d2f"
+ },
+ "replay_logs": [
+  "logs/ts6-6.0.3-fa21096f3d2f-r4-replay-baseline-20261118-042639-655129.jsonl.gz",
+  "logs/ts6-6.0.3-fa21096f3d2f-r4-replay-case-20261118-042507-16674f.jsonl.gz",
+  "logs/ts6-6.0.3-fa21096f3d2f-r4-replay-control-20261118-042714-b461be.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

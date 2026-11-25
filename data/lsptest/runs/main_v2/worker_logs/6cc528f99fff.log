@@ -1,0 +1,3 @@
+2026-11-18 01:32:54,721 INFO campaign_run run 6cc528f99fff: r1_history on rust-analyzer 2026-09-21, tokio-rs/tokio@3930bd182cb1 seed 1 settled, targets ['tokio/src/runtime/time/wheel/mod.rs', 'tokio/src/runtime/time_alt/wheel/level.rs', 'tokio/tests/uds_split.rs']
+2026-11-18 02:23:10,328 INFO campaign_run run 6cc528f99fff: 0 candidate(s) in 413s; confirming
+2026-11-18 02:23:10,328 INFO campaign_run run 6cc528f99fff finished: ok, 0 confirmed of 0 candidate(s), 413s

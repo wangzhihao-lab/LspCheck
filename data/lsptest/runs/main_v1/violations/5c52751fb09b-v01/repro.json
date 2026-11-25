@@ -1,0 +1,465 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "5c52751fb09b-v01",
+ "run_id": "5c52751fb09b",
+ "oracle": "r3_routes",
+ "server": {
+  "kind": "rust-analyzer",
+  "version": "2026-09-21"
+ },
+ "project": {
+  "name": "lapce/lapce@b604d57de4a8",
+  "source": "corpus",
+  "ref": "temp/corpus/lapce__lapce@b604d57de4a8",
+  "commit": "b604d57de4a820006d335a3be0d7583eb8fab558",
+  "language": "rust"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "lapce-app/src/proxy/remote.rs",
+    "positions": [
+     [
+      154,
+      16
+     ],
+     [
+      192,
+      36
+     ],
+     [
+      193,
+      36
+     ],
+     [
+      201,
+      53
+     ],
+     [
+      216,
+      36
+     ],
+     [
+      234,
+      38
+     ],
+     [
+      267,
+      18
+     ],
+     [
+      348,
+      25
+     ],
+     [
+      354,
+      25
+     ],
+     [
+      359,
+      18
+     ],
+     [
+      420,
+      45
+     ],
+     [
+      422,
+      57
+     ]
+    ],
+    "ends": [
+     [
+      154,
+      19
+     ],
+     [
+      192,
+      42
+     ],
+     [
+      193,
+      38
+     ],
+     [
+      201,
+      55
+     ],
+     [
+      216,
+      41
+     ],
+     [
+      234,
+      39
+     ],
+     [
+      267,
+      24
+     ],
+     [
+      348,
+      28
+     ],
+     [
+      354,
+      27
+     ],
+     [
+      359,
+      21
+     ],
+     [
+      420,
+      48
+     ],
+     [
+      422,
+      61
+     ]
+    ],
+    "names": [
+     "remote",
+     "Notification",
+     "err",
+     "err",
+     "writer_tx",
+     "n",
+     "proxy_script",
+     "format",
+     "out",
+     "error",
+     "stdout",
+     "parse_os"
+    ]
+   },
+   {
+    "path": "lapce-core/src/lib.rs",
+    "positions": [
+     [
+      0,
+      5
+     ],
+     [
+      0,
+      12
+     ],
+     [
+      0,
+      23
+     ],
+     [
+      2,
+      12
+     ],
+     [
+      3,
+      12
+     ],
+     [
+      4,
+      12
+     ],
+     [
+      5,
+      10
+     ],
+     [
+      6,
+      10
+     ],
+     [
+      7,
+      14
+     ],
+     [
+      8,
+      10
+     ],
+     [
+      9,
+      11
+     ],
+     [
+      12,
+      16
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      8
+     ],
+     [
+      0,
+      15
+     ],
+     [
+      0,
+      29
+     ],
+     [
+      2,
+      17
+     ],
+     [
+      3,
+      16
+     ],
+     [
+      4,
+      16
+     ],
+     [
+      5,
+      12
+     ],
+     [
+      6,
+      12
+     ],
+     [
+      7,
+      21
+     ],
+     [
+      8,
+      13
+     ],
+     [
+      9,
+      14
+     ],
+     [
+      12,
+      25
+     ]
+    ],
+    "names": [
+     "allow",
+     "clippy",
+     "manual_clamp",
+     "directory",
+     "encoding",
+     "language",
+     "lens",
+     "meta",
+     "rope_text_pos",
+     "style",
+     "syntax",
+     "floem_editor_core"
+    ]
+   },
+   {
+    "path": "lapce-proxy/src/plugin/dap.rs",
+    "positions": [
+     [
+      31,
+      18
+     ],
+     [
+      219,
+      38
+     ],
+     [
+      241,
+      28
+     ],
+     [
+      355,
+      45
+     ],
+     [
+      442,
+      39
+     ],
+     [
+      540,
+      26
+     ],
+     [
+      540,
+      40
+     ],
+     [
+      595,
+      18
+     ],
+     [
+      641,
+      57
+     ],
+     [
+      648,
+      46
+     ],
+     [
+      653,
+      16
+     ],
+     [
+      741,
+      16
+     ]
+    ],
+    "ends": [
+     [
+      31,
+      21
+     ],
+     [
+      219,
+      43
+     ],
+     [
+      241,
+      38
+     ],
+     [
+      355,
+      47
+     ],
+     [
+      442,
+      41
+     ],
+     [
+      540,
+      28
+     ],
+     [
+      540,
+      43
+     ],
+     [
+      595,
+      29
+     ],
+     [
+      641,
+      59
+     ],
+     [
+      648,
+      49
+     ],
+     [
+      653,
+      21
+     ],
+     [
+      741,
+      20
+     ]
+    ],
+    "names": [
+     "Value",
+     "plugin_rpc",
+     "all_threads_stopped",
+     "err",
+     "u64",
+     "new",
+     "result",
+     "handle_server_response",
+     "Vec",
+     "DapRpc",
+     "disconnect",
+     "request"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "diagnostics",
+  "path": "lapce-proxy/src/plugin/dap.rs",
+  "line": -1,
+  "character": -1,
+  "extra": "route:push"
+ },
+ "ops": [],
+ "case": {
+  "path": "lapce-proxy/src/plugin/dap.rs",
+  "sub": "a",
+  "want_pull": false
+ },
+ "shape": "diagnostics:changed:inactive_code,unlinked-file",
+ "signature": "rust-analyzer|r3_routes|diagnostics:changed:inactive_code,unlinked-file",
+ "expected": [
+  [
+   174,
+   8,
+   178,
+   9,
+   4,
+   "inactive_code",
+   "rust-analyzer",
+   "code is inactive due to #[cfg] directives: target_os = \"windows\" is disabled"
+  ]
+ ],
+ "actual": [
+  [
+   0,
+   0,
+   0,
+   2,
+   4,
+   "unlinked-file",
+   "rust-analyzer",
+   "This file is not included in any crates, so rust-analyzer can't offer IDE services. If you're intentionally working on unowned files, you can silence this warning by adding \"unlinked-file\" to rust-analyzer.diagnostics.disabled in your settings."
+  ]
+ ],
+ "reproduced": "0/3",
+ "note": "pull vs push; flake 0/3 [r1:scr+retry r2:scr+retry r3:scr+retry] in 2793s",
+ "violation": {
+  "oracle": "r3_routes",
+  "server": "rust-analyzer-2026-09-21",
+  "project": "lapce/lapce@b604d57de4a8",
+  "key": {
+   "method": "diagnostics",
+   "path": "lapce-proxy/src/plugin/dap.rs",
+   "line": -1,
+   "character": -1,
+   "extra": "route:push"
+  },
+  "expected": [
+   [
+    174,
+    8,
+    178,
+    9,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives: target_os = \"windows\" is disabled"
+   ]
+  ],
+  "actual": [
+   [
+    0,
+    0,
+    0,
+    2,
+    4,
+    "unlinked-file",
+    "rust-analyzer",
+    "This file is not included in any crates, so rust-analyzer can't offer IDE services. If you're intentionally working on unowned files, you can silence this warning by adding \"unlinked-file\" to rust-analyzer.diagnostics.disabled in your settings."
+   ]
+  ],
+  "ops": [],
+  "detail": "{\"case\": {\"path\": \"lapce-proxy/src/plugin/dap.rs\", \"sub\": \"a\", \"want_pull\": false}, \"note\": \"pull vs push; flake 0/3 [r1:scr+retry r2:scr+retry r3:scr+retry] in 2793s\", \"shape\": \"diagnostics:changed:inactive_code,unlinked-file\"}",
+  "reproduced": "0/3",
+  "reduced_ops": [],
+  "signature": "rust-analyzer|r3_routes|diagnostics:changed:inactive_code,unlinked-file",
+  "run_id": "5c52751fb09b"
+ },
+ "replay_logs": [],
+ "project_files": {},
+ "incomplete": true
+}

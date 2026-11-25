@@ -1,0 +1,3 @@
+2026-09-24 00:41:29,352 INFO campaign_run run 655c758f86c9: r0_crash on gopls v0.23.0, junegunn/fzf@b1be3a8be1b8 seed 1 settled, targets ['src/pattern_test.go', 'src/reader.go', 'src/util/concurrent_set.go']
+2026-09-24 00:41:37,991 INFO campaign_run run 655c758f86c9: 0 candidate(s) in 9s; confirming
+2026-09-24 00:41:37,992 INFO campaign_run run 655c758f86c9 finished: ok, 0 confirmed of 0 candidate(s), 9s

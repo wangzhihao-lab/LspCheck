@@ -1,0 +1,74 @@
+{
+ "schema": 1,
+ "id": "tsserver-59304",
+ "meta": {
+  "server": "tsserver",
+  "kind": "tsserver",
+  "number": 59304,
+  "url": "https://github.com/microsoft/TypeScript/issues/59304",
+  "title": "Convert to ESM uses template strings instead of string literals",
+  "oracle_class": "R4",
+  "subtype": "quickfix",
+  "fix_ref": "microsoft/TypeScript#59306 (fix(59304): Convert to ESM uses template strings instead of string literals), bf39eccee6, 2024-07-16; git tag --contains: first in v5.6-beta / v5.6.2",
+  "fix_shas": [
+   "bf39eccee6cd31d8c57fc080cc568628a6a8d35f"
+  ],
+  "pre_version": "5.5.4",
+  "post_version": "5.6.2",
+  "pre_build": "5.5.4+tsls4.3.3",
+  "post_build": "5.6.2+tsls4.3.3",
+  "wrapper": "typescript-language-server@4.3.3",
+  "build_notes": "npm typescript@5.5.4 (2024-07-22) and typescript@5.6.2 (2024-09-09), both behind typescript-language-server@4.3.3 (the latest wrapper release before 5.6.2), started with the pinned tsserver.js; the reported TypeScript version is checked on every session.",
+  "candidate_rank": 154,
+  "effort_minutes": 9,
+  "notes": "Not reproduced after two attempts, although attempt 2 shows the reported behaviour: pre-fix 5.5.4 converts to 'import swc from `@swc/core`;' (post-fix 5.6.2: 'import swc from \"@swc/core\";'). The parse probe does not flag it because TypeScript's parser accepts any expression as a module specifier; 'String literal expected' (TS1141) is a checker diagnostic, which edit_leaves_diagnostic would have seen. Probe choice error on attempt 2 (the issue calls it a syntax error); no third attempt under the two-attempt rule."
+ },
+ "language": "typescript",
+ "settings": {},
+ "settings_note": "The issue names no settings; no tsconfig.json, so tsserver uses an inferred project.",
+ "session": {
+  "settle_timeout_s": 120
+ },
+ "files": [
+  {
+   "path": "index.ts",
+   "provenance": "issue-adapted",
+   "source": "issue body, step 1 (inline code: const swc = require(`@swc/core`))",
+   "note": "the one-line inline code of step 1 as the file; a .ts file, because the fix named in step 2 (\"'require' call may be converted to an import\", TS80005) is the suggestion tsserver reports for require calls in TypeScript files (in .js files it reports TS80001 'File is a CommonJS module' instead)"
+  }
+ ],
+ "repro": {
+  "attempt": 2,
+  "timing": "settled",
+  "steps": "Open index.ts with 'const swc = require(`@swc/core`)' (step 1). Apply the \"'require' call may be converted to an import\" fix (step 2). Reported: the result uses backticks in the import statement ('import swc from `@swc/core`'), a syntax error. Probe: the fixed text must not have a parse error the original did not have.",
+  "ops": [
+   {
+    "kind": "open",
+    "path": "index.ts"
+   }
+  ],
+  "probe": {
+   "type": "edit_breaks_syntax",
+   "params": {
+    "edit": {
+     "via": "code_action",
+     "path": "index.ts",
+     "diagnostic": {
+      "code": "80005"
+     },
+     "kind": "quickfix",
+     "title_re": "(?i)convert.*import",
+     "missing": "invalid"
+    }
+   }
+  }
+ },
+ "attempts": [
+  {
+   "attempt": 1,
+   "timing": "settled",
+   "summary": "The same line in index.js: tsserver reports TS80001 ('File is a CommonJS module; it may be converted to an ES module') and no TS80005 for a .js file, so the fix named in step 2 was not offered on either build (invalid). The step-2 message identifies a TypeScript file.",
+   "verdict": "invalid"
+  }
+ ]
+}

@@ -1,0 +1,530 @@
+{
+ "format": 1,
+ "campaign": "main_v2",
+ "vid": "0c1168881081-v00",
+ "run_id": "0c1168881081",
+ "oracle": "r5_transforms",
+ "server": {
+  "kind": "rust-analyzer",
+  "version": "2026-09-21"
+ },
+ "project": {
+  "name": "niri-wm/niri@5f4469b6a992",
+  "source": "corpus",
+  "ref": "temp/corpus/niri-wm__niri@5f4469b6a992",
+  "commit": "5f4469b6a992492cf7221b269e9379f42e737649",
+  "language": "rust"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 6,
+  "targets": [
+   {
+    "path": "niri-config/src/misc.rs",
+    "positions": [
+     [
+      6,
+      9
+     ],
+     [
+      51,
+      50
+     ],
+     [
+      72,
+      67
+     ],
+     [
+      81,
+      44
+     ],
+     [
+      82,
+      24
+     ],
+     [
+      105,
+      27
+     ],
+     [
+      115,
+      42
+     ],
+     [
+      137,
+      21
+     ],
+     [
+      137,
+      42
+     ],
+     [
+      157,
+      21
+     ],
+     [
+      159,
+      18
+     ],
+     [
+      180,
+      21
+     ]
+    ],
+    "ends": [
+     [
+      6,
+      13
+     ],
+     [
+      51,
+      61
+     ],
+     [
+      72,
+      68
+     ],
+     [
+      81,
+      53
+     ],
+     [
+      82,
+      26
+     ],
+     [
+      105,
+      29
+     ],
+     [
+      115,
+      49
+     ],
+     [
+      137,
+      24
+     ],
+     [
+      137,
+      44
+     ],
+     [
+      157,
+      24
+     ],
+     [
+      159,
+      23
+     ],
+     [
+      180,
+      24
+     ]
+    ],
+    "names": [
+     "knuffel",
+     "hide_after_inactive_ms",
+     "Eq",
+     "HotkeyOverlayPart",
+     "part",
+     "bool",
+     "ClipboardPart",
+     "Decode",
+     "Copy",
+     "Decode",
+     "node_name",
+     "Decode"
+    ]
+   },
+   {
+    "path": "src/handlers/compositor.rs",
+    "positions": [
+     [
+      0,
+      5
+     ],
+     [
+      25,
+      14
+     ],
+     [
+      79,
+      73
+     ],
+     [
+      86,
+      33
+     ],
+     [
+      189,
+      38
+     ],
+     [
+      212,
+      40
+     ],
+     [
+      229,
+      41
+     ],
+     [
+      238,
+      70
+     ],
+     [
+      343,
+      68
+     ],
+     [
+      433,
+      19
+     ],
+     [
+      478,
+      10
+     ],
+     [
+      548,
+      53
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      7
+     ],
+     [
+      25,
+      17
+     ],
+     [
+      79,
+      76
+     ],
+     [
+      86,
+      36
+     ],
+     [
+      189,
+      41
+     ],
+     [
+      212,
+      42
+     ],
+     [
+      229,
+      44
+     ],
+     [
+      238,
+      71
+     ],
+     [
+      343,
+      71
+     ],
+     [
+      433,
+      21
+     ],
+     [
+      478,
+      13
+     ],
+     [
+      548,
+      56
+     ]
+    ],
+    "names": [
+     "std",
+     "window",
+     "entry",
+     "remove",
+     "output",
+     "niri",
+     "layout",
+     "m",
+     "layout",
+     "niri",
+     "trace",
+     "client"
+    ]
+   },
+   {
+    "path": "src/ipc/client.rs",
+    "positions": [
+     [
+      53,
+      39
+     ],
+     [
+      61,
+      13
+     ],
+     [
+      105,
+      33
+     ],
+     [
+      236,
+      51
+     ],
+     [
+      238,
+      55
+     ],
+     [
+      269,
+      59
+     ],
+     [
+      358,
+      20
+     ],
+     [
+      377,
+      74
+     ],
+     [
+      506,
+      22
+     ],
+     [
+      522,
+      27
+     ],
+     [
+      529,
+      18
+     ],
+     [
+      562,
+      55
+     ]
+    ],
+    "ends": [
+     [
+      53,
+      42
+     ],
+     [
+      61,
+      20
+     ],
+     [
+      105,
+      37
+     ],
+     [
+      236,
+      57
+     ],
+     [
+      238,
+      59
+     ],
+     [
+      269,
+      62
+     ],
+     [
+      358,
+      24
+     ],
+     [
+      377,
+      77
+     ],
+     [
+      506,
+      25
+     ],
+     [
+      522,
+      31
+     ],
+     [
+      529,
+      20
+     ],
+     [
+      562,
+      60
+     ]
+    ],
+    "names": [
+     "stdin",
+     "print_request",
+     "version",
+     "LayerSurface",
+     "surface",
+     "Layer",
+     "Response",
+     "output",
+     "Event",
+     "println",
+     "bail",
+     "stream_id"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "codeAction",
+  "path": "src/ipc/client.rs",
+  "line": 53,
+  "character": 39,
+  "extra": "pos"
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "src/ipc/client.rs"
+  },
+  {
+   "kind": "change",
+   "path": "src/ipc/client.rs",
+   "start": [
+    53,
+    37
+   ],
+   "end": [
+    53,
+    37
+   ],
+   "text": "/* 注释🙂 */ "
+  }
+ ],
+ "case": {
+  "mapped_key": [
+   "codeAction",
+   "src/ipc/client.rs",
+   53,
+   50,
+   "pos"
+  ],
+  "transform": {
+   "back": {
+    "col": 0,
+    "eof": [],
+    "line": -1,
+    "n": 0,
+    "path": "src/ipc/client.rs",
+    "w": 0
+   },
+   "edits": [
+    [
+     53,
+     37,
+     53,
+     37,
+     "/* 注释🙂 */ "
+    ]
+   ],
+   "kind": "T6",
+   "path": "src/ipc/client.rs",
+   "shift": {
+    "col": 37,
+    "eof": [],
+    "line": 53,
+    "n": 0,
+    "path": "src/ipc/client.rs",
+    "w": 11
+   }
+  }
+ },
+ "shape": "codeAction:changed",
+ "signature": "rust-analyzer|r5_transforms|codeAction:changed",
+ "expected": [
+  [
+   "Inline `std::io::stdin`",
+   "refactor.inline"
+  ],
+  [
+   "Replace qualified path with use",
+   "refactor.rewrite"
+  ]
+ ],
+ "actual": [
+  [
+   "Inline `std::io::/* 注释🙂 */ stdin`",
+   "refactor.inline"
+  ],
+  [
+   "Replace qualified path with use",
+   "refactor.rewrite"
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "T6 src/ipc/client.rs: 1 edit(s), first [53, 37, 53, 37]; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 419s",
+ "violation": {
+  "oracle": "r5_transforms",
+  "server": "rust-analyzer-2026-09-21",
+  "project": "niri-wm/niri@5f4469b6a992",
+  "key": {
+   "method": "codeAction",
+   "path": "src/ipc/client.rs",
+   "line": 53,
+   "character": 39,
+   "extra": "pos"
+  },
+  "expected": [
+   [
+    "Inline `std::io::stdin`",
+    "refactor.inline"
+   ],
+   [
+    "Replace qualified path with use",
+    "refactor.rewrite"
+   ]
+  ],
+  "actual": [
+   [
+    "Inline `std::io::/* 注释🙂 */ stdin`",
+    "refactor.inline"
+   ],
+   [
+    "Replace qualified path with use",
+    "refactor.rewrite"
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "src/ipc/client.rs"
+   },
+   {
+    "kind": "change",
+    "path": "src/ipc/client.rs",
+    "start": [
+     53,
+     37
+    ],
+    "end": [
+     53,
+     37
+    ],
+    "text": "/* 注释🙂 */ "
+   }
+  ],
+  "detail": "{\"case\": {\"mapped_key\": [\"codeAction\", \"src/ipc/client.rs\", 53, 50, \"pos\"], \"transform\": {\"back\": {\"col\": 0, \"eof\": [], \"line\": -1, \"n\": 0, \"path\": \"src/ipc/client.rs\", \"w\": 0}, \"edits\": [[53, 37, 53, 37, \"/* \\u6ce8\\u91ca\\ud83d\\ude42 */ \"]], \"kind\": \"T6\", \"path\": \"src/ipc/client.rs\", \"shift\": {\"col\": 37, \"eof\": [], \"line\": 53, \"n\": 0, \"path\": \"src/ipc/client.rs\", \"w\": 11}}}, \"note\": \"T6 src/ipc/client.rs: 1 edit(s), first [53, 37, 53, 37]; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 419s\", \"shape\": \"codeAction:changed\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "rust-analyzer|r5_transforms|codeAction:changed",
+  "run_id": "0c1168881081"
+ },
+ "replay_logs": [
+  "logs/rust-analyzer-2026-09-21-0c1168881081-r5-replay-baseline-20261118-182241-7a5dc2.jsonl.gz",
+  "logs/rust-analyzer-2026-09-21-0c1168881081-r5-replay-case-20261118-182409-92a3fe.jsonl.gz",
+  "logs/rust-analyzer-2026-09-21-0c1168881081-r5-replay-control-20261118-182324-8d34bf.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

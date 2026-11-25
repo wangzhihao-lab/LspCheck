@@ -1,0 +1,92 @@
+{
+ "label": "head-2026-11-18",
+ "as_of": "2026-11-18",
+ "planned": "2026-11-17T21:43:11",
+ "rule": {
+  "gopls": "the development head: golang.org/x/tools/gopls at the pseudo-version of @master on 2026-11-18"
+ },
+ "common": [
+  "3 replays per group; verdicts of version_sweep.verdict; compiled and run with the local Go",
+  "every gopls bug group of triage/root_causes.csv"
+ ],
+ "sources": [
+  "go list -m -json golang.org/x/tools/gopls@master (module proxy)"
+ ],
+ "groups": [
+  {
+   "cause": "C3",
+   "line": "gopls",
+   "gid": "gopls-r2-codeactionresolve-changed-codeaction-70b3e9"
+  },
+  {
+   "cause": "C5",
+   "line": "gopls",
+   "gid": "gopls-r4-diagnostics-extra-notatype-mutation-m2-477181"
+  },
+  {
+   "cause": "C5",
+   "line": "gopls",
+   "gid": "gopls-r4-diagnostics-extra-untypedniluse-mutation-m2-354f70"
+  },
+  {
+   "cause": "C5",
+   "line": "gopls",
+   "gid": "gopls-r4-diagnostics-extra-invalidifaceassign-mutation-m2-416e90"
+  },
+  {
+   "cause": "C5",
+   "line": "gopls",
+   "gid": "gopls-r4-diagnostics-extra-nonindexableoperand-mutation-m2-ba152b"
+  },
+  {
+   "cause": "C5",
+   "line": "gopls",
+   "gid": "gopls-r4-diagnostics-extra-nonsliceableoperand-mutation-m2-d80a9a"
+  },
+  {
+   "cause": "C6",
+   "line": "gopls",
+   "gid": "gopls-r4-diagnostics-extra-mutation-m2-111975"
+  },
+  {
+   "cause": "C6",
+   "line": "gopls",
+   "gid": "gopls-r4-syntax-gained-mutation-m2-86fde3"
+  },
+  {
+   "cause": "C7",
+   "line": "gopls",
+   "gid": "gopls-r4-diagnostics-extra-undeclaredname-wrongar-mutation-m3-946c39"
+  },
+  {
+   "cause": "C9",
+   "line": "gopls",
+   "gid": "gopls-r1-references-extra-h9-0290a7"
+  }
+ ],
+ "builds": [
+  {
+   "line": "gopls",
+   "kind": "gopls",
+   "version": "v0.0.0-20261118023053-8967817d2000",
+   "release": "v0.0.0-20261118023053-8967817d2000",
+   "tag": "h8967817",
+   "released": "2026-11-18",
+   "roles": [
+    "development head"
+   ],
+   "status": "ok",
+   "launch": {
+    "init_s": 0.8,
+    "ok": true,
+    "diagnostics": [
+     "cannot use \"oops\" (untyped string constant) as int value in variable d"
+    ]
+   },
+   "built_with": "go1.27.1",
+   "detail": "go build in the gopls module of a golang/tools checkout at 8967817d2000 with the local Go",
+   "go": "go1.27.1",
+   "skip": {}
+  }
+ ]
+}

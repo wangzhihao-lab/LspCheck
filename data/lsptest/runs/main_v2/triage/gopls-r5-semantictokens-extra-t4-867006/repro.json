@@ -1,0 +1,1919 @@
+{
+ "format": 1,
+ "campaign": "main_v2",
+ "vid": "9a36d7461bcd-v01",
+ "run_id": "9a36d7461bcd",
+ "oracle": "r5_transforms",
+ "server": {
+  "kind": "gopls",
+  "version": "v0.23.0"
+ },
+ "project": {
+  "name": "abiosoft/colima@bba803d3d6fa",
+  "source": "corpus",
+  "ref": "temp/corpus/abiosoft__colima@bba803d3d6fa",
+  "commit": "bba803d3d6fa9372a60f747e5dad4c8e80db7cde",
+  "language": "go"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 6,
+  "targets": [
+   {
+    "path": "cmd/ssh.go",
+    "positions": [],
+    "ends": [],
+    "names": []
+   },
+   {
+    "path": "environment/container/kubernetes/kubernetes.go",
+    "positions": [],
+    "ends": [],
+    "names": []
+   },
+   {
+    "path": "util/downloader/http.go",
+    "positions": [],
+    "ends": [],
+    "names": []
+   }
+  ]
+ },
+ "key": {
+  "method": "semanticTokens",
+  "path": "cmd/ssh.go",
+  "line": -1,
+  "character": -1,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "cmd/ssh.go"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/ssh.go",
+   "start": [
+    13,
+    0
+   ],
+   "end": [
+    13,
+    0
+   ],
+   "text": "\r"
+  }
+ ],
+ "case": {
+  "mapped_key": [
+   "semanticTokens",
+   "cmd/ssh.go",
+   -1,
+   -1,
+   ""
+  ],
+  "transform": {
+   "back": {
+    "col": 0,
+    "eof": [],
+    "line": -1,
+    "n": 0,
+    "path": "cmd/ssh.go",
+    "w": 0
+   },
+   "edits": [
+    [
+     0,
+     11,
+     0,
+     11,
+     "\r"
+    ],
+    [
+     1,
+     0,
+     1,
+     0,
+     "\r"
+    ],
+    [
+     2,
+     8,
+     2,
+     8,
+     "\r"
+    ],
+    [
+     3,
+     38,
+     3,
+     38,
+     "\r"
+    ],
+    [
+     4,
+     25,
+     4,
+     25,
+     "\r"
+    ],
+    [
+     5,
+     1,
+     5,
+     1,
+     "\r"
+    ],
+    [
+     6,
+     0,
+     6,
+     0,
+     "\r"
+    ],
+    [
+     7,
+     36,
+     7,
+     36,
+     "\r"
+    ],
+    [
+     8,
+     28,
+     8,
+     28,
+     "\r"
+    ],
+    [
+     9,
+     16,
+     9,
+     16,
+     "\r"
+    ],
+    [
+     10,
+     32,
+     10,
+     32,
+     "\r"
+    ],
+    [
+     11,
+     28,
+     11,
+     28,
+     "\r"
+    ],
+    [
+     12,
+     24,
+     12,
+     24,
+     "\r"
+    ],
+    [
+     13,
+     0,
+     13,
+     0,
+     "\r"
+    ],
+    [
+     14,
+     54,
+     14,
+     54,
+     "\r"
+    ],
+    [
+     15,
+     40,
+     15,
+     40,
+     "\r"
+    ],
+    [
+     16,
+     0,
+     16,
+     0,
+     "\r"
+    ],
+    [
+     17,
+     71,
+     17,
+     71,
+     "\r"
+    ],
+    [
+     18,
+     54,
+     18,
+     54,
+     "\r"
+    ],
+    [
+     19,
+     30,
+     19,
+     30,
+     "\r"
+    ],
+    [
+     20,
+     3,
+     20,
+     3,
+     "\r"
+    ],
+    [
+     21,
+     1,
+     21,
+     1,
+     "\r"
+    ],
+    [
+     22,
+     0,
+     22,
+     0,
+     "\r"
+    ],
+    [
+     23,
+     13,
+     23,
+     13,
+     "\r"
+    ],
+    [
+     24,
+     30,
+     24,
+     30,
+     "\r"
+    ],
+    [
+     25,
+     1,
+     25,
+     1,
+     "\r"
+    ]
+   ],
+   "kind": "T4",
+   "path": "cmd/ssh.go",
+   "shift": {
+    "col": 0,
+    "eof": [],
+    "line": -1,
+    "n": 0,
+    "path": "cmd/ssh.go",
+    "w": 0
+   }
+  }
+ },
+ "shape": "semanticTokens:extra",
+ "signature": "gopls|r5_transforms|semanticTokens:extra",
+ "expected": [
+  [
+   0,
+   0,
+   7,
+   "keyword",
+   ""
+  ],
+  [
+   0,
+   8,
+   3,
+   "namespace",
+   ""
+  ],
+  [
+   10,
+   1,
+   7,
+   "property",
+   "slice"
+  ],
+  [
+   10,
+   12,
+   6,
+   "type",
+   "defaultLibrary,string"
+  ],
+  [
+   10,
+   19,
+   6,
+   "string",
+   ""
+  ],
+  [
+   10,
+   27,
+   3,
+   "string",
+   ""
+  ],
+  [
+   11,
+   1,
+   5,
+   "property",
+   "string"
+  ],
+  [
+   11,
+   10,
+   17,
+   "string",
+   ""
+  ],
+  [
+   12,
+   1,
+   4,
+   "property",
+   "string"
+  ],
+  [
+   12,
+   7,
+   17,
+   "string",
+   ""
+  ],
+  [
+   14,
+   0,
+   54,
+   "string",
+   ""
+  ],
+  [
+   15,
+   0,
+   40,
+   "string",
+   ""
+  ],
+  [
+   17,
+   0,
+   70,
+   "string",
+   ""
+  ],
+  [
+   18,
+   1,
+   4,
+   "property",
+   "signature"
+  ],
+  [
+   18,
+   12,
+   3,
+   "parameter",
+   "definition,pointer"
+  ],
+  [
+   18,
+   16,
+   1,
+   "operator",
+   ""
+  ],
+  [
+   18,
+   17,
+   5,
+   "namespace",
+   ""
+  ],
+  [
+   18,
+   23,
+   7,
+   "type",
+   "struct"
+  ],
+  [
+   18,
+   32,
+   4,
+   "parameter",
+   "definition,slice"
+  ],
+  [
+   18,
+   39,
+   6,
+   "type",
+   "defaultLibrary,string"
+  ],
+  [
+   18,
+   47,
+   5,
+   "type",
+   "defaultLibrary,interface"
+  ],
+  [
+   18,
+   7,
+   4,
+   "keyword",
+   ""
+  ],
+  [
+   19,
+   18,
+   3,
+   "method",
+   "signature"
+  ],
+  [
+   19,
+   2,
+   6,
+   "keyword",
+   ""
+  ],
+  [
+   19,
+   22,
+   4,
+   "parameter",
+   "slice"
+  ],
+  [
+   19,
+   26,
+   3,
+   "operator",
+   ""
+  ],
+  [
+   19,
+   9,
+   6,
+   "function",
+   "signature"
+  ],
+  [
+   2,
+   0,
+   6,
+   "keyword",
+   ""
+  ],
+  [
+   23,
+   0,
+   4,
+   "keyword",
+   ""
+  ],
+  [
+   23,
+   5,
+   4,
+   "function",
+   "definition,signature"
+  ],
+  [
+   24,
+   1,
+   4,
+   "namespace",
+   ""
+  ],
+  [
+   24,
+   12,
+   10,
+   "method",
+   "signature"
+  ],
+  [
+   24,
+   23,
+   6,
+   "variable",
+   "pointer,static"
+  ],
+  [
+   24,
+   6,
+   3,
+   "function",
+   "signature"
+  ],
+  [
+   3,
+   33,
+   4,
+   "namespace",
+   ""
+  ],
+  [
+   4,
+   19,
+   5,
+   "namespace",
+   ""
+  ],
+  [
+   7,
+   0,
+   36,
+   "comment",
+   ""
+  ],
+  [
+   8,
+   0,
+   3,
+   "keyword",
+   ""
+  ],
+  [
+   8,
+   13,
+   1,
+   "operator",
+   ""
+  ],
+  [
+   8,
+   14,
+   5,
+   "namespace",
+   ""
+  ],
+  [
+   8,
+   20,
+   7,
+   "type",
+   "struct"
+  ],
+  [
+   8,
+   4,
+   6,
+   "variable",
+   "definition,pointer,static"
+  ],
+  [
+   9,
+   1,
+   3,
+   "property",
+   "string"
+  ],
+  [
+   9,
+   10,
+   5,
+   "string",
+   ""
+  ]
+ ],
+ "actual": [
+  [
+   0,
+   0,
+   7,
+   "keyword",
+   ""
+  ],
+  [
+   0,
+   8,
+   3,
+   "namespace",
+   ""
+  ],
+  [
+   10,
+   1,
+   7,
+   "property",
+   "slice"
+  ],
+  [
+   10,
+   12,
+   6,
+   "type",
+   "defaultLibrary,string"
+  ],
+  [
+   10,
+   19,
+   6,
+   "string",
+   ""
+  ],
+  [
+   10,
+   27,
+   3,
+   "string",
+   ""
+  ],
+  [
+   11,
+   1,
+   5,
+   "property",
+   "string"
+  ],
+  [
+   11,
+   10,
+   17,
+   "string",
+   ""
+  ],
+  [
+   12,
+   1,
+   4,
+   "property",
+   "string"
+  ],
+  [
+   12,
+   7,
+   17,
+   "string",
+   ""
+  ],
+  [
+   13,
+   0,
+   0,
+   "string",
+   ""
+  ],
+  [
+   14,
+   0,
+   54,
+   "string",
+   ""
+  ],
+  [
+   15,
+   0,
+   40,
+   "string",
+   ""
+  ],
+  [
+   17,
+   0,
+   70,
+   "string",
+   ""
+  ],
+  [
+   18,
+   1,
+   4,
+   "property",
+   "signature"
+  ],
+  [
+   18,
+   12,
+   3,
+   "parameter",
+   "definition,pointer"
+  ],
+  [
+   18,
+   16,
+   1,
+   "operator",
+   ""
+  ],
+  [
+   18,
+   17,
+   5,
+   "namespace",
+   ""
+  ],
+  [
+   18,
+   23,
+   7,
+   "type",
+   "struct"
+  ],
+  [
+   18,
+   32,
+   4,
+   "parameter",
+   "definition,slice"
+  ],
+  [
+   18,
+   39,
+   6,
+   "type",
+   "defaultLibrary,string"
+  ],
+  [
+   18,
+   47,
+   5,
+   "type",
+   "defaultLibrary,interface"
+  ],
+  [
+   18,
+   7,
+   4,
+   "keyword",
+   ""
+  ],
+  [
+   19,
+   18,
+   3,
+   "method",
+   "signature"
+  ],
+  [
+   19,
+   2,
+   6,
+   "keyword",
+   ""
+  ],
+  [
+   19,
+   22,
+   4,
+   "parameter",
+   "slice"
+  ],
+  [
+   19,
+   26,
+   3,
+   "operator",
+   ""
+  ],
+  [
+   19,
+   9,
+   6,
+   "function",
+   "signature"
+  ],
+  [
+   2,
+   0,
+   6,
+   "keyword",
+   ""
+  ],
+  [
+   23,
+   0,
+   4,
+   "keyword",
+   ""
+  ],
+  [
+   23,
+   5,
+   4,
+   "function",
+   "definition,signature"
+  ],
+  [
+   24,
+   1,
+   4,
+   "namespace",
+   ""
+  ],
+  [
+   24,
+   12,
+   10,
+   "method",
+   "signature"
+  ],
+  [
+   24,
+   23,
+   6,
+   "variable",
+   "pointer,static"
+  ],
+  [
+   24,
+   6,
+   3,
+   "function",
+   "signature"
+  ],
+  [
+   3,
+   33,
+   4,
+   "namespace",
+   ""
+  ],
+  [
+   4,
+   19,
+   5,
+   "namespace",
+   ""
+  ],
+  [
+   7,
+   0,
+   36,
+   "comment",
+   ""
+  ],
+  [
+   8,
+   0,
+   3,
+   "keyword",
+   ""
+  ],
+  [
+   8,
+   13,
+   1,
+   "operator",
+   ""
+  ],
+  [
+   8,
+   14,
+   5,
+   "namespace",
+   ""
+  ],
+  [
+   8,
+   20,
+   7,
+   "type",
+   "struct"
+  ],
+  [
+   8,
+   4,
+   6,
+   "variable",
+   "definition,pointer,static"
+  ],
+  [
+   9,
+   1,
+   3,
+   "property",
+   "string"
+  ],
+  [
+   9,
+   10,
+   5,
+   "string",
+   ""
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "T4 cmd/ssh.go: 26 edit(s), first [0, 11, 0, 11]; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 40s",
+ "violation": {
+  "oracle": "r5_transforms",
+  "server": "gopls-v0.23.0",
+  "project": "abiosoft/colima@bba803d3d6fa",
+  "key": {
+   "method": "semanticTokens",
+   "path": "cmd/ssh.go",
+   "line": -1,
+   "character": -1,
+   "extra": ""
+  },
+  "expected": [
+   [
+    0,
+    0,
+    7,
+    "keyword",
+    ""
+   ],
+   [
+    0,
+    8,
+    3,
+    "namespace",
+    ""
+   ],
+   [
+    10,
+    1,
+    7,
+    "property",
+    "slice"
+   ],
+   [
+    10,
+    12,
+    6,
+    "type",
+    "defaultLibrary,string"
+   ],
+   [
+    10,
+    19,
+    6,
+    "string",
+    ""
+   ],
+   [
+    10,
+    27,
+    3,
+    "string",
+    ""
+   ],
+   [
+    11,
+    1,
+    5,
+    "property",
+    "string"
+   ],
+   [
+    11,
+    10,
+    17,
+    "string",
+    ""
+   ],
+   [
+    12,
+    1,
+    4,
+    "property",
+    "string"
+   ],
+   [
+    12,
+    7,
+    17,
+    "string",
+    ""
+   ],
+   [
+    14,
+    0,
+    54,
+    "string",
+    ""
+   ],
+   [
+    15,
+    0,
+    40,
+    "string",
+    ""
+   ],
+   [
+    17,
+    0,
+    70,
+    "string",
+    ""
+   ],
+   [
+    18,
+    1,
+    4,
+    "property",
+    "signature"
+   ],
+   [
+    18,
+    12,
+    3,
+    "parameter",
+    "definition,pointer"
+   ],
+   [
+    18,
+    16,
+    1,
+    "operator",
+    ""
+   ],
+   [
+    18,
+    17,
+    5,
+    "namespace",
+    ""
+   ],
+   [
+    18,
+    23,
+    7,
+    "type",
+    "struct"
+   ],
+   [
+    18,
+    32,
+    4,
+    "parameter",
+    "definition,slice"
+   ],
+   [
+    18,
+    39,
+    6,
+    "type",
+    "defaultLibrary,string"
+   ],
+   [
+    18,
+    47,
+    5,
+    "type",
+    "defaultLibrary,interface"
+   ],
+   [
+    18,
+    7,
+    4,
+    "keyword",
+    ""
+   ],
+   [
+    19,
+    18,
+    3,
+    "method",
+    "signature"
+   ],
+   [
+    19,
+    2,
+    6,
+    "keyword",
+    ""
+   ],
+   [
+    19,
+    22,
+    4,
+    "parameter",
+    "slice"
+   ],
+   [
+    19,
+    26,
+    3,
+    "operator",
+    ""
+   ],
+   [
+    19,
+    9,
+    6,
+    "function",
+    "signature"
+   ],
+   [
+    2,
+    0,
+    6,
+    "keyword",
+    ""
+   ],
+   [
+    23,
+    0,
+    4,
+    "keyword",
+    ""
+   ],
+   [
+    23,
+    5,
+    4,
+    "function",
+    "definition,signature"
+   ],
+   [
+    24,
+    1,
+    4,
+    "namespace",
+    ""
+   ],
+   [
+    24,
+    12,
+    10,
+    "method",
+    "signature"
+   ],
+   [
+    24,
+    23,
+    6,
+    "variable",
+    "pointer,static"
+   ],
+   [
+    24,
+    6,
+    3,
+    "function",
+    "signature"
+   ],
+   [
+    3,
+    33,
+    4,
+    "namespace",
+    ""
+   ],
+   [
+    4,
+    19,
+    5,
+    "namespace",
+    ""
+   ],
+   [
+    7,
+    0,
+    36,
+    "comment",
+    ""
+   ],
+   [
+    8,
+    0,
+    3,
+    "keyword",
+    ""
+   ],
+   [
+    8,
+    13,
+    1,
+    "operator",
+    ""
+   ],
+   [
+    8,
+    14,
+    5,
+    "namespace",
+    ""
+   ],
+   [
+    8,
+    20,
+    7,
+    "type",
+    "struct"
+   ],
+   [
+    8,
+    4,
+    6,
+    "variable",
+    "definition,pointer,static"
+   ],
+   [
+    9,
+    1,
+    3,
+    "property",
+    "string"
+   ],
+   [
+    9,
+    10,
+    5,
+    "string",
+    ""
+   ]
+  ],
+  "actual": [
+   [
+    0,
+    0,
+    7,
+    "keyword",
+    ""
+   ],
+   [
+    0,
+    8,
+    3,
+    "namespace",
+    ""
+   ],
+   [
+    10,
+    1,
+    7,
+    "property",
+    "slice"
+   ],
+   [
+    10,
+    12,
+    6,
+    "type",
+    "defaultLibrary,string"
+   ],
+   [
+    10,
+    19,
+    6,
+    "string",
+    ""
+   ],
+   [
+    10,
+    27,
+    3,
+    "string",
+    ""
+   ],
+   [
+    11,
+    1,
+    5,
+    "property",
+    "string"
+   ],
+   [
+    11,
+    10,
+    17,
+    "string",
+    ""
+   ],
+   [
+    12,
+    1,
+    4,
+    "property",
+    "string"
+   ],
+   [
+    12,
+    7,
+    17,
+    "string",
+    ""
+   ],
+   [
+    13,
+    0,
+    0,
+    "string",
+    ""
+   ],
+   [
+    14,
+    0,
+    54,
+    "string",
+    ""
+   ],
+   [
+    15,
+    0,
+    40,
+    "string",
+    ""
+   ],
+   [
+    16,
+    0,
+    0,
+    "string",
+    ""
+   ],
+   [
+    17,
+    0,
+    70,
+    "string",
+    ""
+   ],
+   [
+    18,
+    1,
+    4,
+    "property",
+    "signature"
+   ],
+   [
+    18,
+    12,
+    3,
+    "parameter",
+    "definition,pointer"
+   ],
+   [
+    18,
+    16,
+    1,
+    "operator",
+    ""
+   ],
+   [
+    18,
+    17,
+    5,
+    "namespace",
+    ""
+   ],
+   [
+    18,
+    23,
+    7,
+    "type",
+    "struct"
+   ],
+   [
+    18,
+    32,
+    4,
+    "parameter",
+    "definition,slice"
+   ],
+   [
+    18,
+    39,
+    6,
+    "type",
+    "defaultLibrary,string"
+   ],
+   [
+    18,
+    47,
+    5,
+    "type",
+    "defaultLibrary,interface"
+   ],
+   [
+    18,
+    7,
+    4,
+    "keyword",
+    ""
+   ],
+   [
+    19,
+    18,
+    3,
+    "method",
+    "signature"
+   ],
+   [
+    19,
+    2,
+    6,
+    "keyword",
+    ""
+   ],
+   [
+    19,
+    22,
+    4,
+    "parameter",
+    "slice"
+   ],
+   [
+    19,
+    26,
+    3,
+    "operator",
+    ""
+   ],
+   [
+    19,
+    9,
+    6,
+    "function",
+    "signature"
+   ],
+   [
+    2,
+    0,
+    6,
+    "keyword",
+    ""
+   ],
+   [
+    23,
+    0,
+    4,
+    "keyword",
+    ""
+   ],
+   [
+    23,
+    5,
+    4,
+    "function",
+    "definition,signature"
+   ],
+   [
+    24,
+    1,
+    4,
+    "namespace",
+    ""
+   ],
+   [
+    24,
+    12,
+    10,
+    "method",
+    "signature"
+   ],
+   [
+    24,
+    23,
+    6,
+    "variable",
+    "pointer,static"
+   ],
+   [
+    24,
+    6,
+    3,
+    "function",
+    "signature"
+   ],
+   [
+    3,
+    33,
+    4,
+    "namespace",
+    ""
+   ],
+   [
+    4,
+    19,
+    5,
+    "namespace",
+    ""
+   ],
+   [
+    7,
+    0,
+    36,
+    "comment",
+    ""
+   ],
+   [
+    8,
+    0,
+    3,
+    "keyword",
+    ""
+   ],
+   [
+    8,
+    13,
+    1,
+    "operator",
+    ""
+   ],
+   [
+    8,
+    14,
+    5,
+    "namespace",
+    ""
+   ],
+   [
+    8,
+    20,
+    7,
+    "type",
+    "struct"
+   ],
+   [
+    8,
+    4,
+    6,
+    "variable",
+    "definition,pointer,static"
+   ],
+   [
+    9,
+    1,
+    3,
+    "property",
+    "string"
+   ],
+   [
+    9,
+    10,
+    5,
+    "string",
+    ""
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "cmd/ssh.go"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/ssh.go",
+    "start": [
+     0,
+     11
+    ],
+    "end": [
+     0,
+     11
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/ssh.go",
+    "start": [
+     1,
+     0
+    ],
+    "end": [
+     1,
+     0
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/ssh.go",
+    "start": [
+     2,
+     8
+    ],
+    "end": [
+     2,
+     8
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/ssh.go",
+    "start": [
+     3,
+     38
+    ],
+    "end": [
+     3,
+     38
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/ssh.go",
+    "start": [
+     4,
+     25
+    ],
+    "end": [
+     4,
+     25
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/ssh.go",
+    "start": [
+     5,
+     1
+    ],
+    "end": [
+     5,
+     1
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/ssh.go",
+    "start": [
+     6,
+     0
+    ],
+    "end": [
+     6,
+     0
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/ssh.go",
+    "start": [
+     7,
+     36
+    ],
+    "end": [
+     7,
+     36
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/ssh.go",
+    "start": [
+     8,
+     28
+    ],
+    "end": [
+     8,
+     28
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/ssh.go",
+    "start": [
+     9,
+     16
+    ],
+    "end": [
+     9,
+     16
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/ssh.go",
+    "start": [
+     10,
+     32
+    ],
+    "end": [
+     10,
+     32
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/ssh.go",
+    "start": [
+     11,
+     28
+    ],
+    "end": [
+     11,
+     28
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/ssh.go",
+    "start": [
+     12,
+     24
+    ],
+    "end": [
+     12,
+     24
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/ssh.go",
+    "start": [
+     13,
+     0
+    ],
+    "end": [
+     13,
+     0
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/ssh.go",
+    "start": [
+     14,
+     54
+    ],
+    "end": [
+     14,
+     54
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/ssh.go",
+    "start": [
+     15,
+     40
+    ],
+    "end": [
+     15,
+     40
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/ssh.go",
+    "start": [
+     16,
+     0
+    ],
+    "end": [
+     16,
+     0
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/ssh.go",
+    "start": [
+     17,
+     71
+    ],
+    "end": [
+     17,
+     71
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/ssh.go",
+    "start": [
+     18,
+     54
+    ],
+    "end": [
+     18,
+     54
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/ssh.go",
+    "start": [
+     19,
+     30
+    ],
+    "end": [
+     19,
+     30
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/ssh.go",
+    "start": [
+     20,
+     3
+    ],
+    "end": [
+     20,
+     3
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/ssh.go",
+    "start": [
+     21,
+     1
+    ],
+    "end": [
+     21,
+     1
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/ssh.go",
+    "start": [
+     22,
+     0
+    ],
+    "end": [
+     22,
+     0
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/ssh.go",
+    "start": [
+     23,
+     13
+    ],
+    "end": [
+     23,
+     13
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/ssh.go",
+    "start": [
+     24,
+     30
+    ],
+    "end": [
+     24,
+     30
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/ssh.go",
+    "start": [
+     25,
+     1
+    ],
+    "end": [
+     25,
+     1
+    ],
+    "text": "\r"
+   }
+  ],
+  "detail": "{\"case\": {\"mapped_key\": [\"semanticTokens\", \"cmd/ssh.go\", -1, -1, \"\"], \"transform\": {\"back\": {\"col\": 0, \"eof\": [], \"line\": -1, \"n\": 0, \"path\": \"cmd/ssh.go\", \"w\": 0}, \"edits\": [[0, 11, 0, 11, \"\\r\"], [1, 0, 1, 0, \"\\r\"], [2, 8, 2, 8, \"\\r\"], [3, 38, 3, 38, \"\\r\"], [4, 25, 4, 25, \"\\r\"], [5, 1, 5, 1, \"\\r\"], [6, 0, 6, 0, \"\\r\"], [7, 36, 7, 36, \"\\r\"], [8, 28, 8, 28, \"\\r\"], [9, 16, 9, 16, \"\\r\"], [10, 32, 10, 32, \"\\r\"], [11, 28, 11, 28, \"\\r\"], [12, 24, 12, 24, \"\\r\"], [13, 0, 13, 0, \"\\r\"], [14, 54, 14, 54, \"\\r\"], [15, 40, 15, 40, \"\\r\"], [16, 0, 16, 0, \"\\r\"], [17, 71, 17, 71, \"\\r\"], [18, 54, 18, 54, \"\\r\"], [19, 30, 19, 30, \"\\r\"], [20, 3, 20, 3, \"\\r\"], [21, 1, 21, 1, \"\\r\"], [22, 0, 22, 0, \"\\r\"], [23, 13, 23, 13, \"\\r\"], [24, 30, 24, 30, \"\\r\"], [25, 1, 25, 1, \"\\r\"]], \"kind\": \"T4\", \"path\": \"cmd/ssh.go\", \"shift\": {\"col\": 0, \"eof\": [], \"line\": -1, \"n\": 0, \"path\": \"cmd/ssh.go\", \"w\": 0}}}, \"note\": \"T4 cmd/ssh.go: 26 edit(s), first [0, 11, 0, 11]; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 40s\", \"shape\": \"semanticTokens:extra\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "gopls|r5_transforms|semanticTokens:extra",
+  "run_id": "9a36d7461bcd"
+ },
+ "replay_logs": [
+  "logs/gopls-v0.23.0-tr867006-r5-replay-baseline-20261119-002900-c25ed2.jsonl.gz",
+  "logs/gopls-v0.23.0-tr867006-r5-replay-case-20261119-002909-d21d50.jsonl.gz",
+  "logs/gopls-v0.23.0-tr867006-r5-replay-control-20261119-002904-e3e530.jsonl.gz"
+ ],
+ "project_files": {},
+ "group": "gopls-r5-semantictokens-extra-t4-867006",
+ "reduced": true
+}

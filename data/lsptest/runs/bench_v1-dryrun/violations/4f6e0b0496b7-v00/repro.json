@@ -1,0 +1,390 @@
+{
+ "format": 1,
+ "campaign": "bench_v1-dryrun",
+ "vid": "4f6e0b0496b7-v00",
+ "run_id": "4f6e0b0496b7",
+ "oracle": "r4_edits",
+ "server": {
+  "kind": "tsserver",
+  "version": "4.4.4+tsls0.7.1"
+ },
+ "project": {
+  "name": "tsserver-46466",
+  "source": "dir",
+  "ref": "data/lsp_bench/cases/tsserver-46466/project",
+  "commit": "",
+  "language": "typescript"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 120.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "index.ts",
+    "positions": [
+     [
+      0,
+      8
+     ],
+     [
+      0,
+      14
+     ],
+     [
+      0,
+      17
+     ],
+     [
+      0,
+      20
+     ],
+     [
+      1,
+      17
+     ],
+     [
+      1,
+      26
+     ],
+     [
+      1,
+      38
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      10
+     ],
+     [
+      0,
+      15
+     ],
+     [
+      0,
+      18
+     ],
+     [
+      0,
+      21
+     ],
+     [
+      1,
+      21
+     ],
+     [
+      1,
+      30
+     ],
+     [
+      1,
+      42
+     ]
+    ],
+    "names": [
+     "test",
+     "T",
+     "x",
+     "T",
+     "Promise",
+     "resolve",
+     "resolve"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "diagnostics",
+  "path": "index.ts",
+  "line": 1,
+  "character": 4,
+  "extra": "quickfix-errors:Add async modifier to containing function"
+ },
+ "ops": [],
+ "case": {
+  "action_kind": "quickfix",
+  "base_errors": 1,
+  "check": "errors",
+  "diag": {
+   "code": 1308,
+   "message": "'await' expressions are only allowed within async functions and at the top levels of modules.",
+   "range": {
+    "end": {
+     "character": 9,
+     "line": 1
+    },
+    "start": {
+     "character": 4,
+     "line": 1
+    }
+   },
+   "severity": 1
+  },
+  "kind": "quickfix",
+  "path": "index.ts",
+  "post_errors": 10,
+  "title": "Add async modifier to containing function",
+  "via": "command"
+ },
+ "shape": "diagnostics:changed:1005,1109,1308",
+ "signature": "tsserver|r4_edits|diagnostics:changed:1005,1109,1308",
+ "expected": [
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "1308",
+   "typescript",
+   "'await' expressions are only allowed within async functions and at the top levels of modules."
+  ]
+ ],
+ "actual": [
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "1005",
+   "typescript",
+   "',' expected."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "1005",
+   "typescript",
+   "',' expected."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "1005",
+   "typescript",
+   "',' expected."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "1109",
+   "typescript",
+   "Expression expected."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "2304",
+   "typescript",
+   "Cannot find name 'T'."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "2304",
+   "typescript",
+   "Cannot find name 'T'."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "2304",
+   "typescript",
+   "Cannot find name 'async'."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "2304",
+   "typescript",
+   "Cannot find name 'x'."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "2451",
+   "typescript",
+   "Cannot redeclare block-scoped variable 'Promise'."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7005",
+   "typescript",
+   "Variable 'Promise' implicitly has an 'any' type."
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "quick fix 'Add async modifier to containing function' for 1308 at index.ts:2:5 raises the error count in the edited files from 1 to 10; confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 43s",
+ "violation": {
+  "oracle": "r4_edits",
+  "server": "tsserver-4.4.4+tsls0.7.1",
+  "project": "tsserver-46466",
+  "key": {
+   "method": "diagnostics",
+   "path": "index.ts",
+   "line": 1,
+   "character": 4,
+   "extra": "quickfix-errors:Add async modifier to containing function"
+  },
+  "expected": [
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "1308",
+    "typescript",
+    "'await' expressions are only allowed within async functions and at the top levels of modules."
+   ]
+  ],
+  "actual": [
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "1005",
+    "typescript",
+    "',' expected."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "1005",
+    "typescript",
+    "',' expected."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "1005",
+    "typescript",
+    "',' expected."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "1109",
+    "typescript",
+    "Expression expected."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2304",
+    "typescript",
+    "Cannot find name 'T'."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2304",
+    "typescript",
+    "Cannot find name 'T'."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2304",
+    "typescript",
+    "Cannot find name 'async'."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2304",
+    "typescript",
+    "Cannot find name 'x'."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2451",
+    "typescript",
+    "Cannot redeclare block-scoped variable 'Promise'."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7005",
+    "typescript",
+    "Variable 'Promise' implicitly has an 'any' type."
+   ]
+  ],
+  "ops": [],
+  "detail": "{\"case\": {\"action_kind\": \"quickfix\", \"base_errors\": 1, \"check\": \"errors\", \"diag\": {\"code\": 1308, \"message\": \"'await' expressions are only allowed within async functions and at the top levels of modules.\", \"range\": {\"end\": {\"character\": 9, \"line\": 1}, \"start\": {\"character\": 4, \"line\": 1}}, \"severity\": 1}, \"kind\": \"quickfix\", \"path\": \"index.ts\", \"post_errors\": 10, \"title\": \"Add async modifier to containing function\", \"via\": \"command\"}, \"note\": \"quick fix 'Add async modifier to containing function' for 1308 at index.ts:2:5 raises the error count in the edited files from 1 to 10; confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 43s\", \"shape\": \"diagnostics:changed:1005,1109,1308\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "tsserver|r4_edits|diagnostics:changed:1005,1109,1308",
+  "run_id": "4f6e0b0496b7"
+ },
+ "replay_logs": [
+  "logs/tsserver-4.4.4+tsls0.7.1-4f6e0b0496b7-r4-replay-baseline-20260923-133756-fbfa97.jsonl.gz",
+  "logs/tsserver-4.4.4+tsls0.7.1-4f6e0b0496b7-r4-replay-case-20260923-133749-1db274.jsonl.gz",
+  "logs/tsserver-4.4.4+tsls0.7.1-4f6e0b0496b7-r4-replay-control-20260923-133800-f41a10.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

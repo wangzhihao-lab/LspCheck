@@ -1,0 +1,82 @@
+{
+ "queries": [
+  "\"blank lines\" in:title repo:microsoft/pyright is:issue",
+  "definition missing repo:microsoft/pyright is:issue",
+  "definition \"blank lines\" repo:microsoft/pyright is:issue",
+  "definition whitespace repo:microsoft/pyright is:issue"
+ ],
+ "matches": [
+  {
+   "repo": "microsoft/pyright",
+   "number": 11470,
+   "title": "Pyright is incorrectly handling overload functions",
+   "url": "https://github.com/microsoft/pyright/issues/11470",
+   "state": "closed",
+   "created": "2026-05-28",
+   "comments": 3,
+   "query": "definition missing repo:microsoft/pyright is:issue"
+  },
+  {
+   "repo": "microsoft/pyright",
+   "number": 10845,
+   "title": "Methods of a variadic generic class become uncallable when specified with TypeVarTuple and a suffix",
+   "url": "https://github.com/microsoft/pyright/issues/10845",
+   "state": "closed",
+   "created": "2025-08-25",
+   "comments": 1,
+   "query": "definition missing repo:microsoft/pyright is:issue"
+  },
+  {
+   "repo": "microsoft/pyright",
+   "number": 3968,
+   "title": "Pyright reports reportMissingSuperCall in a class that is not a subclass",
+   "url": "https://github.com/microsoft/pyright/issues/3968",
+   "state": "closed",
+   "created": "2022-09-20",
+   "comments": 8,
+   "query": "definition missing repo:microsoft/pyright is:issue"
+  },
+  {
+   "repo": "microsoft/pyright",
+   "number": 3013,
+   "title": "Strict Setting for Return Types",
+   "url": "https://github.com/microsoft/pyright/issues/3013",
+   "state": "closed",
+   "created": "2022-02-09",
+   "comments": 22,
+   "query": "definition missing repo:microsoft/pyright is:issue"
+  },
+  {
+   "repo": "microsoft/pyright",
+   "number": 6237,
+   "title": "reportUnsupportedDunderAll does not consider submodule names in __all__",
+   "url": "https://github.com/microsoft/pyright/issues/6237",
+   "state": "closed",
+   "created": "2023-10-26",
+   "comments": 6,
+   "query": "definition missing repo:microsoft/pyright is:issue"
+  },
+  {
+   "repo": "microsoft/pyright",
+   "number": 9660,
+   "title": "FP and inconsistent analysis of classes as callables",
+   "url": "https://github.com/microsoft/pyright/issues/9660",
+   "state": "closed",
+   "created": "2025-01-04",
+   "comments": 2,
+   "query": "definition \"blank lines\" repo:microsoft/pyright is:issue"
+  },
+  {
+   "repo": "microsoft/pyright",
+   "number": 5966,
+   "title": "`deprecated` decorator with multi line reason string doesn't work on implementation when function has overloads",
+   "url": "https://github.com/microsoft/pyright/issues/5966",
+   "state": "closed",
+   "created": "2023-09-17",
+   "comments": 7,
+   "query": "definition whitespace repo:microsoft/pyright is:issue"
+  }
+ ],
+ "notes": [],
+ "authenticated": true
+}

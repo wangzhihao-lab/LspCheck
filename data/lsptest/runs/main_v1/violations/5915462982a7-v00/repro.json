@@ -1,0 +1,466 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "5915462982a7-v00",
+ "run_id": "5915462982a7",
+ "oracle": "r3_routes",
+ "server": {
+  "kind": "gopls",
+  "version": "v0.23.0"
+ },
+ "project": {
+  "name": "gin-gonic/gin@3b08cd7235bd",
+  "source": "corpus",
+  "ref": "temp/corpus/gin-gonic__gin@3b08cd7235bd",
+  "commit": "3b08cd7235bd5ad2f055aa9e38135f111f6c5926",
+  "language": "go"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "binding/json.go",
+    "positions": [
+     [
+      28,
+      21
+     ],
+     [
+      32,
+      11
+     ],
+     [
+      32,
+      54
+     ],
+     [
+      33,
+      5
+     ],
+     [
+      33,
+      12
+     ],
+     [
+      33,
+      31
+     ],
+     [
+      36,
+      20
+     ],
+     [
+      36,
+      25
+     ],
+     [
+      39,
+      37
+     ],
+     [
+      43,
+      24
+     ],
+     [
+      44,
+      18
+     ],
+     [
+      46,
+      14
+     ]
+    ],
+    "ends": [
+     [
+      28,
+      23
+     ],
+     [
+      32,
+      17
+     ],
+     [
+      32,
+      57
+     ],
+     [
+      33,
+      7
+     ],
+     [
+      33,
+      14
+     ],
+     [
+      33,
+      33
+     ],
+     [
+      36,
+      22
+     ],
+     [
+      36,
+      27
+     ],
+     [
+      39,
+      39
+     ],
+     [
+      43,
+      27
+     ],
+     [
+      44,
+      20
+     ],
+     [
+      46,
+      19
+     ]
+    ],
+    "names": [
+     "Name",
+     "jsonBinding",
+     "error",
+     "req",
+     "nil",
+     "nil",
+     "req",
+     "Body",
+     "byte",
+     "Reader",
+     "API",
+     "UseNumber"
+    ]
+   },
+   {
+    "path": "binding/toml_test.go",
+    "positions": [
+     [
+      4,
+      11
+     ],
+     [
+      13,
+      16
+     ],
+     [
+      13,
+      29
+     ],
+     [
+      14,
+      5
+     ],
+     [
+      15,
+      9
+     ],
+     [
+      17,
+      5
+     ],
+     [
+      18,
+      35
+     ],
+     [
+      18,
+      42
+     ],
+     [
+      19,
+      12
+     ],
+     [
+      19,
+      21
+     ],
+     [
+      20,
+      4
+     ],
+     [
+      20,
+      10
+     ]
+    ],
+    "ends": [
+     [
+      4,
+      15
+     ],
+     [
+      13,
+      28
+     ],
+     [
+      13,
+      30
+     ],
+     [
+      14,
+      6
+     ],
+     [
+      15,
+      12
+     ],
+     [
+      17,
+      9
+     ],
+     [
+      18,
+      37
+     ],
+     [
+      18,
+      46
+     ],
+     [
+      19,
+      16
+     ],
+     [
+      19,
+      23
+     ],
+     [
+      20,
+      7
+     ],
+     [
+      20,
+      13
+     ]
+    ],
+    "names": [
+     "binding",
+     "TestTOMLBindingBindBody",
+     "t",
+     "s",
+     "string",
+     "tomlBody",
+     "byte",
+     "tomlBody",
+     "NoError",
+     "err",
+     "assert",
+     "Equal"
+    ]
+   },
+   {
+    "path": "mode_test.go",
+    "positions": [
+     [
+      21,
+      10
+     ],
+     [
+      28,
+      4
+     ],
+     [
+      33,
+      19
+     ],
+     [
+      33,
+      28
+     ],
+     [
+      33,
+      58
+     ],
+     [
+      34,
+      4
+     ],
+     [
+      36,
+      4
+     ],
+     [
+      44,
+      1
+     ],
+     [
+      51,
+      20
+     ],
+     [
+      57,
+      54
+     ],
+     [
+      58,
+      4
+     ],
+     [
+      60,
+      41
+     ]
+    ],
+    "ends": [
+     [
+      21,
+      13
+     ],
+     [
+      28,
+      8
+     ],
+     [
+      33,
+      22
+     ],
+     [
+      33,
+      34
+     ],
+     [
+      33,
+      62
+     ],
+     [
+      34,
+      7
+     ],
+     [
+      36,
+      8
+     ],
+     [
+      44,
+      2
+     ],
+     [
+      51,
+      35
+     ],
+     [
+      57,
+      58
+     ],
+     [
+      58,
+      7
+     ],
+     [
+      60,
+      58
+     ]
+    ],
+    "names": [
+     "Equal",
+     "SetMode",
+     "int32",
+     "releaseCode",
+     "ginMode",
+     "assert",
+     "SetMode",
+     "v",
+     "TestEnableJsonDecoderUseNumber",
+     "testing",
+     "assert",
+     "EnableDecoderDisallowUnknownFields"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "definitionConsistency",
+  "path": "binding/binding_test.go",
+  "line": 4,
+  "character": 11,
+  "extra": "from:binding/toml_test.go:4:11"
+ },
+ "ops": [],
+ "case": {
+  "loc": [
+   "binding/binding_test.go",
+   4,
+   8,
+   4,
+   15
+  ],
+  "sub": "d",
+  "target": [
+   "binding/toml_test.go",
+   4,
+   11
+  ]
+ },
+ "shape": "definitionConsistency:changed",
+ "signature": "gopls|r3_routes|definitionConsistency:changed",
+ "expected": [
+  [
+   "binding/toml_test.go",
+   4,
+   8,
+   4,
+   15
+  ]
+ ],
+ "actual": [
+  [
+   "binding/binding_test.go",
+   4,
+   8,
+   4,
+   15
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "flake 3/3 [r1:SCR r2:SCR r3:SCR] in 50s",
+ "violation": {
+  "oracle": "r3_routes",
+  "server": "gopls-v0.23.0",
+  "project": "gin-gonic/gin@3b08cd7235bd",
+  "key": {
+   "method": "definitionConsistency",
+   "path": "binding/binding_test.go",
+   "line": 4,
+   "character": 11,
+   "extra": "from:binding/toml_test.go:4:11"
+  },
+  "expected": [
+   [
+    "binding/toml_test.go",
+    4,
+    8,
+    4,
+    15
+   ]
+  ],
+  "actual": [
+   [
+    "binding/binding_test.go",
+    4,
+    8,
+    4,
+    15
+   ]
+  ],
+  "ops": [],
+  "detail": "{\"case\": {\"loc\": [\"binding/binding_test.go\", 4, 8, 4, 15], \"sub\": \"d\", \"target\": [\"binding/toml_test.go\", 4, 11]}, \"note\": \"flake 3/3 [r1:SCR r2:SCR r3:SCR] in 50s\", \"shape\": \"definitionConsistency:changed\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "gopls|r3_routes|definitionConsistency:changed",
+  "run_id": "5915462982a7"
+ },
+ "replay_logs": [
+  "logs/gopls-v0.23.0-5915462982a7-r3-replay-baseline-20260923-155954-5a0d6a.jsonl.gz",
+  "logs/gopls-v0.23.0-5915462982a7-r3-replay-control-20260923-160002-2d65ee.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

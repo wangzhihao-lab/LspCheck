@@ -1,0 +1,2 @@
+== ts6 6.0.3: inserted ['{\n    name: "x",\n    stores: undefined\n}']; tsc after fix: ["min.ts(5,5): error TS2322: Type 'undefined' is not assignable to type 'Record<string, StoreInformation>'."]
+== ts7 7.0.2: no quick fix titled 'Add missing properties'

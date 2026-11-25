@@ -1,0 +1,3 @@
+2026-09-24 16:54:29,386 INFO campaign_run run 9255657e6ddb: r1_history on rust-analyzer 2024-09-16, rust-analyzer-18144 seed 1 settled, targets ['src/lib.rs']
+2026-09-24 16:59:16,448 INFO campaign_run run 9255657e6ddb: 0 candidate(s) in 287s; confirming
+2026-09-24 16:59:16,448 INFO campaign_run run 9255657e6ddb finished: ok, 0 confirmed of 0 candidate(s), 287s

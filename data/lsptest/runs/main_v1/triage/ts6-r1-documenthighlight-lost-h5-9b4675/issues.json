@@ -1,0 +1,96 @@
+{
+ "queries": [
+  "\"rename file\" in:title repo:typescript-language-server/typescript-language-server is:issue",
+  "highlight missing repo:typescript-language-server/typescript-language-server is:issue",
+  "highlight \"rename file\" repo:typescript-language-server/typescript-language-server is:issue",
+  "highlight stale repo:typescript-language-server/typescript-language-server is:issue",
+  "\"rename file\" in:title repo:microsoft/TypeScript is:issue",
+  "highlight missing repo:microsoft/TypeScript is:issue",
+  "highlight \"rename file\" repo:microsoft/TypeScript is:issue",
+  "highlight stale repo:microsoft/TypeScript is:issue"
+ ],
+ "matches": [
+  {
+   "repo": "typescript-language-server/typescript-language-server",
+   "number": 878,
+   "title": "Support renaming files when renaming default exports",
+   "url": "https://github.com/typescript-language-server/typescript-language-server/issues/878",
+   "state": "open",
+   "created": "2024-02-27",
+   "comments": 1,
+   "query": "\"rename file\" in:title repo:typescript-language-server/typescript-language-server is:issue"
+  },
+  {
+   "repo": "typescript-language-server/typescript-language-server",
+   "number": 744,
+   "title": "EPERM: operation not permitted Cannot Move/Rename Files & Directories when Language Server is Running. ",
+   "url": "https://github.com/typescript-language-server/typescript-language-server/issues/744",
+   "state": "closed",
+   "created": "2023-07-31",
+   "comments": 1,
+   "query": "\"rename file\" in:title repo:typescript-language-server/typescript-language-server is:issue"
+  },
+  {
+   "repo": "typescript-language-server/typescript-language-server",
+   "number": 665,
+   "title": "Preview rename file",
+   "url": "https://github.com/typescript-language-server/typescript-language-server/issues/665",
+   "state": "closed",
+   "created": "2023-01-16",
+   "comments": 1,
+   "query": "\"rename file\" in:title repo:typescript-language-server/typescript-language-server is:issue"
+  },
+  {
+   "repo": "typescript-language-server/typescript-language-server",
+   "number": 430,
+   "title": "Rename also trigger on files in node_modules",
+   "url": "https://github.com/typescript-language-server/typescript-language-server/issues/430",
+   "state": "closed",
+   "created": "2022-04-07",
+   "comments": 0,
+   "query": "\"rename file\" in:title repo:typescript-language-server/typescript-language-server is:issue"
+  },
+  {
+   "repo": "typescript-language-server/typescript-language-server",
+   "number": 236,
+   "title": "JSDoc support",
+   "url": "https://github.com/typescript-language-server/typescript-language-server/issues/236",
+   "state": "closed",
+   "created": "2021-07-13",
+   "comments": 6,
+   "query": "highlight \"rename file\" repo:typescript-language-server/typescript-language-server is:issue"
+  },
+  {
+   "repo": "typescript-language-server/typescript-language-server",
+   "number": 225,
+   "title": "Rename command doesn't work on TS LS ",
+   "url": "https://github.com/typescript-language-server/typescript-language-server/issues/225",
+   "state": "closed",
+   "created": "2021-06-25",
+   "comments": 10,
+   "query": "highlight \"rename file\" repo:typescript-language-server/typescript-language-server is:issue"
+  },
+  {
+   "repo": "microsoft/TypeScript",
+   "number": 30039,
+   "title": "Refactor rename file + rename function",
+   "url": "https://github.com/microsoft/TypeScript/issues/30039",
+   "state": "open",
+   "created": "2019-01-23",
+   "comments": 6,
+   "query": "\"rename file\" in:title repo:microsoft/TypeScript is:issue"
+  },
+  {
+   "repo": "microsoft/TypeScript",
+   "number": 29294,
+   "title": "Rename file when renaming default export",
+   "url": "https://github.com/microsoft/TypeScript/issues/29294",
+   "state": "open",
+   "created": "2019-01-05",
+   "comments": 0,
+   "query": "\"rename file\" in:title repo:microsoft/TypeScript is:issue"
+  }
+ ],
+ "notes": [],
+ "authenticated": true
+}

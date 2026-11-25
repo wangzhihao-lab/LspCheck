@@ -1,0 +1,113 @@
+{
+ "vid": "2c59f4574505-v00",
+ "ops_before": 0,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 0,
+ "cache_hits": 0,
+ "reduce_seconds": 0.0,
+ "budget_exhausted": false,
+ "probe_log": [],
+ "logs": [
+  "rust-analyzer-2026-09-21-tr0b07f0-r3-replay-baseline-20260925-170810-165ef4.jsonl.gz",
+  "rust-analyzer-2026-09-21-tr0b07f0-r3-replay-control-20260925-170831-ed9939.jsonl.gz",
+  "rust-analyzer-2026-09-21-tr0b07f0-r3-replay-route-20260925-170849-3d7c9b.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [
+   [
+    35,
+    4,
+    39,
+    36,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives: target_os = \"macos\" is enabled"
+   ],
+   [
+    41,
+    4,
+    44,
+    36,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives: windows is disabled"
+   ],
+   [
+    202,
+    12,
+    203,
+    30,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives: target_os = \"windows\" is disabled"
+   ],
+   [
+    307,
+    4,
+    310,
+    40,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives: target_os = \"macos\" is enabled"
+   ],
+   [
+    430,
+    4,
+    431,
+    22,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives: target_os = \"linux\" is disabled"
+   ],
+   [
+    432,
+    4,
+    433,
+    22,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives: target_os = \"linux\" is disabled"
+   ],
+   [
+    435,
+    4,
+    436,
+    29,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives: target_os = \"linux\" is disabled"
+   ],
+   [
+    437,
+    4,
+    438,
+    29,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives: target_os = \"linux\" is disabled"
+   ],
+   [
+    536,
+    4,
+    565,
+    5,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives: target_os = \"linux\" is disabled"
+   ]
+  ],
+  "actual": []
+ },
+ "ops_after": 0,
+ "total_seconds": 253.3
+}

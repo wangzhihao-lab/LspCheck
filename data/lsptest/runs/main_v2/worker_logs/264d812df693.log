@@ -1,0 +1,3 @@
+2026-11-18 07:14:57,754 INFO campaign_run run 264d812df693: r3_routes on rust-analyzer 2026-09-21, sharkdp/hyperfine@0d6ade930afc seed 1 settled, targets ['src/benchmark/benchmark_result.rs', 'src/export/markdown.rs', 'src/timer/unix_timer.rs']
+2026-11-18 07:17:39,950 INFO campaign_run run 264d812df693: 0 candidate(s) in 162s; confirming
+2026-11-18 07:17:39,951 INFO campaign_run run 264d812df693 finished: ok, 0 confirmed of 0 candidate(s), 162s

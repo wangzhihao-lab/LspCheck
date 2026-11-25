@@ -1,0 +1,6 @@
+2026-09-24 22:03:28,098 INFO campaign_run run 19940235efbf: r4_edits on gopls v0.4.4, gopls-41057 seed 1 settled, targets ['main.go']
+2026-09-24 22:03:47,247 INFO campaign_run run 19940235efbf: 2 candidate(s) in 19s; confirming
+2026-09-24 22:03:53,920 INFO flake replay 1/3 of gopls|r4_edits|completionInsert:gained: settled=True control_stable=True reproduced=True (6.7s)
+2026-09-24 22:04:00,120 INFO flake replay 2/3 of gopls|r4_edits|completionInsert:gained: settled=True control_stable=False reproduced=True (6.2s)
+2026-09-24 22:04:06,560 INFO flake replay 3/3 of gopls|r4_edits|completionInsert:gained: settled=True control_stable=True reproduced=True (6.4s)
+2026-09-24 22:04:06,562 INFO campaign_run run 19940235efbf finished: ok, 0 confirmed of 2 candidate(s), 38s

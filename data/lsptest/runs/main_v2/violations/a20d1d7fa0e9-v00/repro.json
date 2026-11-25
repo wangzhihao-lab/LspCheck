@@ -1,0 +1,679 @@
+{
+ "format": 1,
+ "campaign": "main_v2",
+ "vid": "a20d1d7fa0e9-v00",
+ "run_id": "a20d1d7fa0e9",
+ "oracle": "r1_history",
+ "server": {
+  "kind": "ts6",
+  "version": "6.0.3"
+ },
+ "project": {
+  "name": "pear-devs/pear-desktop@3ff0a86231fe",
+  "source": "corpus",
+  "ref": "temp/corpus/pear-devs__pear-desktop@3ff0a86231fe",
+  "commit": "3ff0a86231fed97b1a4365de0521fc96794c3f67",
+  "language": "typescript"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "race0",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "src/plugins/album-actions/templates/like-button.tsx",
+    "positions": [
+     [
+      7,
+      8
+     ],
+     [
+      24,
+      18
+     ],
+     [
+      54,
+      15
+     ],
+     [
+      70,
+      17
+     ],
+     [
+      72,
+      16
+     ],
+     [
+      74,
+      14
+     ],
+     [
+      77,
+      9
+     ],
+     [
+      78,
+      12
+     ],
+     [
+      80,
+      12
+     ],
+     [
+      80,
+      18
+     ],
+     [
+      86,
+      21
+     ],
+     [
+      87,
+      9
+     ]
+    ],
+    "ends": [
+     [
+      7,
+      11
+     ],
+     [
+      24,
+      21
+     ],
+     [
+      54,
+      17
+     ],
+     [
+      70,
+      19
+     ],
+     [
+      72,
+      17
+     ],
+     [
+      74,
+      15
+     ],
+     [
+      77,
+      11
+     ],
+     [
+      78,
+      15
+     ],
+     [
+      80,
+      14
+     ],
+     [
+      80,
+      21
+     ],
+     [
+      86,
+      25
+     ],
+     [
+      87,
+      12
+     ]
+    ],
+    "names": [
+     "button",
+     "hidden",
+     "svg",
+     "path",
+     "d",
+     "g",
+     "div",
+     "touch",
+     "aria",
+     "hidden",
+     "feedback",
+     "button"
+    ]
+   },
+   {
+    "path": "src/plugins/sponsorblock/index.ts",
+    "positions": [
+     [
+      2,
+      15
+     ],
+     [
+      23,
+      24
+     ],
+     [
+      42,
+      16
+     ],
+     [
+      53,
+      13
+     ],
+     [
+      58,
+      14
+     ],
+     [
+      63,
+      32
+     ],
+     [
+      63,
+      38
+     ],
+     [
+      77,
+      47
+     ],
+     [
+      79,
+      11
+     ],
+     [
+      97,
+      19
+     ],
+     [
+      97,
+      28
+     ],
+     [
+      106,
+      48
+     ]
+    ],
+    "ends": [
+     [
+      2,
+      17
+     ],
+     [
+      23,
+      28
+     ],
+     [
+      42,
+      23
+     ],
+     [
+      53,
+      17
+     ],
+     [
+      58,
+      16
+     ],
+     [
+      63,
+      36
+     ],
+     [
+      63,
+      40
+     ],
+     [
+      77,
+      49
+     ],
+     [
+      79,
+      14
+     ],
+     [
+      97,
+      22
+     ],
+     [
+      97,
+      33
+     ],
+     [
+      106,
+      52
+     ]
+    ],
+    "names": [
+     "from",
+     "Segment",
+     "fetchSegments",
+     "headers",
+     "resp",
+     "segments",
+     "map",
+     "data",
+     "apiURL",
+     "window",
+     "electronIs",
+     "Segment"
+    ]
+   },
+   {
+    "path": "src/plugins/synced-lyrics/renderer/components/SyncedLine.tsx",
+    "positions": [
+     [
+      0,
+      24
+     ],
+     [
+      22,
+      10
+     ],
+     [
+      24,
+      15
+     ],
+     [
+      30,
+      20
+     ],
+     [
+      32,
+      39
+     ],
+     [
+      48,
+      54
+     ],
+     [
+      87,
+      17
+     ],
+     [
+      90,
+      39
+     ],
+     [
+      92,
+      13
+     ],
+     [
+      106,
+      14
+     ],
+     [
+      134,
+      14
+     ],
+     [
+      158,
+      16
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      26
+     ],
+     [
+      22,
+      15
+     ],
+     [
+      24,
+      21
+     ],
+     [
+      30,
+      23
+     ],
+     [
+      32,
+      43
+     ],
+     [
+      48,
+      57
+     ],
+     [
+      87,
+      20
+     ],
+     [
+      90,
+      41
+     ],
+     [
+      92,
+      15
+     ],
+     [
+      106,
+      18
+     ],
+     [
+      134,
+      17
+     ],
+     [
+      158,
+      18
+     ]
+    ],
+    "names": [
+     "For",
+     "EmptyLine",
+     "defaultText",
+     "props",
+     "progress",
+     "props",
+     "props",
+     "line",
+     "line",
+     "fallback",
+     "style",
+     "when"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "hover",
+  "path": "src/plugins/synced-lyrics/renderer/components/SyncedLine.tsx",
+  "line": 134,
+  "character": 14,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "src/plugins/album-actions/templates/like-button.tsx"
+  },
+  {
+   "kind": "open",
+   "path": "src/plugins/sponsorblock/index.ts"
+  },
+  {
+   "kind": "open",
+   "path": "src/plugins/synced-lyrics/renderer/components/SyncedLine.tsx"
+  },
+  {
+   "kind": "change",
+   "path": "src/plugins/synced-lyrics/renderer/components/SyncedLine.tsx",
+   "start": [
+    51,
+    12
+   ],
+   "end": [
+    51,
+    12
+   ],
+   "text": " "
+  },
+  {
+   "kind": "change",
+   "path": "src/plugins/synced-lyrics/renderer/components/SyncedLine.tsx",
+   "start": [
+    51,
+    12
+   ],
+   "end": [
+    51,
+    13
+   ]
+  },
+  {
+   "kind": "request",
+   "path": "src/plugins/synced-lyrics/renderer/components/SyncedLine.tsx",
+   "start": [
+    118,
+    62
+   ],
+   "text": "typeDefinition"
+  },
+  {
+   "kind": "request",
+   "path": "src/plugins/album-actions/templates/like-button.tsx",
+   "start": [
+    24,
+    21
+   ],
+   "text": "signatureHelp"
+  },
+  {
+   "kind": "request",
+   "path": "src/plugins/synced-lyrics/renderer/components/SyncedLine.tsx",
+   "start": [
+    24,
+    15
+   ],
+   "text": "documentHighlight"
+  },
+  {
+   "kind": "request",
+   "path": "src/plugins/synced-lyrics/renderer/components/SyncedLine.tsx",
+   "start": [
+    32,
+    15
+   ],
+   "text": "references"
+  },
+  {
+   "kind": "request",
+   "path": "src/plugins/album-actions/templates/like-button.tsx",
+   "start": [
+    70,
+    17
+   ],
+   "text": "completion"
+  },
+  {
+   "kind": "request",
+   "path": "src/plugins/album-actions/templates/like-button.tsx",
+   "start": [
+    74,
+    14
+   ],
+   "text": "typeDefinition"
+  },
+  {
+   "kind": "request",
+   "path": "src/plugins/album-actions/templates/like-button.tsx",
+   "start": [
+    7,
+    11
+   ],
+   "text": "completion"
+  },
+  {
+   "kind": "request",
+   "path": "src/plugins/synced-lyrics/renderer/components/SyncedLine.tsx",
+   "start": [
+    168,
+    26
+   ],
+   "text": "documentHighlight"
+  }
+ ],
+ "case": {
+  "chain_step": 0,
+  "families": [],
+  "family": "H8",
+  "history_index": 11,
+  "history_seed": 1012,
+  "mode": "fresh",
+  "note": "after src/plugins/synced-lyrics/renderer/components/SyncedLine.tsx: insert ' ' on line 51 and its inverse, 8 requests in a shuffled order: typeDefinition@src/plugins/synced-lyrics/renderer/components/SyncedLine.tsx:118:62, signatureHelp@src/plugins/album-actions/templates/like-button.tsx:24:21, documentHighlight@src/plugins/synced-lyrics/renderer/components/SyncedLine.tsx:24:15, references@src/plugins/synced-lyrics/renderer/components/SyncedLine.tsx:32:15, completion@src/plugins/album-actions/templates/like-button.tsx:70:17, ...",
+  "seed": 1,
+  "timing": "race0"
+ },
+ "shape": "hover:text",
+ "signature": "ts6|r1_history|hover:text",
+ "expected": [
+  "(property) JSX.DOMAttributes<HTMLDivElement>.style?: string | JSX.CSSProperties | undefined",
+  [
+   134,
+   12,
+   134,
+   17
+  ]
+ ],
+ "actual": [
+  "(property) JSX.DOMAttributes<T>.style?: string | JSX.CSSProperties | undefined",
+  [
+   134,
+   12,
+   134,
+   17
+  ]
+ ],
+ "reproduced": "0/3",
+ "note": "H8: after src/plugins/synced-lyrics/renderer/components/SyncedLine.tsx: insert ' ' on line 51 and its inverse, 8 requests in a shuffled order: typeDefinition@src/plugins/synced-lyrics/renderer/components/; flake 0/3 [r1:SCr r2:SCr r3:SCr] in 171s",
+ "violation": {
+  "oracle": "r1_history",
+  "server": "ts6-6.0.3",
+  "project": "pear-devs/pear-desktop@3ff0a86231fe",
+  "key": {
+   "method": "hover",
+   "path": "src/plugins/synced-lyrics/renderer/components/SyncedLine.tsx",
+   "line": 134,
+   "character": 14,
+   "extra": ""
+  },
+  "expected": [
+   "(property) JSX.DOMAttributes<HTMLDivElement>.style?: string | JSX.CSSProperties | undefined",
+   [
+    134,
+    12,
+    134,
+    17
+   ]
+  ],
+  "actual": [
+   "(property) JSX.DOMAttributes<T>.style?: string | JSX.CSSProperties | undefined",
+   [
+    134,
+    12,
+    134,
+    17
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "src/plugins/album-actions/templates/like-button.tsx"
+   },
+   {
+    "kind": "open",
+    "path": "src/plugins/sponsorblock/index.ts"
+   },
+   {
+    "kind": "open",
+    "path": "src/plugins/synced-lyrics/renderer/components/SyncedLine.tsx"
+   },
+   {
+    "kind": "change",
+    "path": "src/plugins/synced-lyrics/renderer/components/SyncedLine.tsx",
+    "start": [
+     51,
+     12
+    ],
+    "end": [
+     51,
+     12
+    ],
+    "text": " "
+   },
+   {
+    "kind": "change",
+    "path": "src/plugins/synced-lyrics/renderer/components/SyncedLine.tsx",
+    "start": [
+     51,
+     12
+    ],
+    "end": [
+     51,
+     13
+    ]
+   },
+   {
+    "kind": "request",
+    "path": "src/plugins/synced-lyrics/renderer/components/SyncedLine.tsx",
+    "start": [
+     118,
+     62
+    ],
+    "text": "typeDefinition"
+   },
+   {
+    "kind": "request",
+    "path": "src/plugins/album-actions/templates/like-button.tsx",
+    "start": [
+     24,
+     21
+    ],
+    "text": "signatureHelp"
+   },
+   {
+    "kind": "request",
+    "path": "src/plugins/synced-lyrics/renderer/components/SyncedLine.tsx",
+    "start": [
+     24,
+     15
+    ],
+    "text": "documentHighlight"
+   },
+   {
+    "kind": "request",
+    "path": "src/plugins/synced-lyrics/renderer/components/SyncedLine.tsx",
+    "start": [
+     32,
+     15
+    ],
+    "text": "references"
+   },
+   {
+    "kind": "request",
+    "path": "src/plugins/album-actions/templates/like-button.tsx",
+    "start": [
+     70,
+     17
+    ],
+    "text": "completion"
+   },
+   {
+    "kind": "request",
+    "path": "src/plugins/album-actions/templates/like-button.tsx",
+    "start": [
+     74,
+     14
+    ],
+    "text": "typeDefinition"
+   },
+   {
+    "kind": "request",
+    "path": "src/plugins/album-actions/templates/like-button.tsx",
+    "start": [
+     7,
+     11
+    ],
+    "text": "completion"
+   },
+   {
+    "kind": "request",
+    "path": "src/plugins/synced-lyrics/renderer/components/SyncedLine.tsx",
+    "start": [
+     168,
+     26
+    ],
+    "text": "documentHighlight"
+   }
+  ],
+  "detail": "{\"case\": {\"chain_step\": 0, \"families\": [], \"family\": \"H8\", \"history_index\": 11, \"history_seed\": 1012, \"mode\": \"fresh\", \"note\": \"after src/plugins/synced-lyrics/renderer/components/SyncedLine.tsx: insert ' ' on line 51 and its inverse, 8 requests in a shuffled order: typeDefinition@src/plugins/synced-lyrics/renderer/components/SyncedLine.tsx:118:62, signatureHelp@src/plugins/album-actions/templates/like-button.tsx:24:21, documentHighlight@src/plugins/synced-lyrics/renderer/components/SyncedLine.tsx:24:15, references@src/plugins/synced-lyrics/renderer/components/SyncedLine.tsx:32:15, completion@src/plugins/album-actions/templates/like-button.tsx:70:17, ...\", \"seed\": 1, \"timing\": \"race0\"}, \"note\": \"H8: after src/plugins/synced-lyrics/renderer/components/SyncedLine.tsx: insert ' ' on line 51 and its inverse, 8 requests in a shuffled order: typeDefinition@src/plugins/synced-lyrics/renderer/components/; flake 0/3 [r1:SCr r2:SCr r3:SCr] in 171s\", \"shape\": \"hover:text\"}",
+  "reproduced": "0/3",
+  "reduced_ops": [],
+  "signature": "ts6|r1_history|hover:text",
+  "run_id": "a20d1d7fa0e9"
+ },
+ "replay_logs": [],
+ "project_files": {},
+ "incomplete": false
+}

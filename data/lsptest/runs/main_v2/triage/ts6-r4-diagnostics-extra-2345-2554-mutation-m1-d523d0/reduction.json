@@ -1,0 +1,93 @@
+{
+ "vid": "5da3b411f176-v00",
+ "ops_before": 3,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 2,
+ "cache_hits": 0,
+ "reduce_seconds": 13.28,
+ "budget_exhausted": false,
+ "probe_log": [
+  [
+   2,
+   false
+  ],
+  [
+   2,
+   false
+  ]
+ ],
+ "logs": [
+  "ts6-6.0.3-trd523d0-r4-replay-baseline-20261119-030556-a43706.jsonl.gz",
+  "ts6-6.0.3-trd523d0-r4-replay-case-20261119-030532-41c6a0.jsonl.gz",
+  "ts6-6.0.3-trd523d0-r4-replay-control-20261119-030615-ef8c09.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2307",
+    "typescript",
+    "Cannot find module 'bun:test' or its corresponding type declarations."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2339",
+    "typescript",
+    "Property 'dir' does not exist on type 'ImportMeta'."
+   ]
+  ],
+  "actual": [
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2307",
+    "typescript",
+    "Cannot find module 'bun:test' or its corresponding type declarations."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2339",
+    "typescript",
+    "Property 'dir' does not exist on type 'ImportMeta'."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2345",
+    "typescript",
+    "Argument of type 'void' is not assignable to parameter of type 'string | undefined'."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2554",
+    "typescript",
+    "Expected 1 arguments, but got 0."
+   ]
+  ]
+ },
+ "ops_after": 3,
+ "total_seconds": 248.2
+}

@@ -1,0 +1,9 @@
+2026-09-25 09:08:49,483 INFO campaign_run run fc1a0e798310: r5_transforms on gopls v0.9.5, gopls-43144 seed 2 settled, targets ['bar/bar.go', 'bar/bar_test.go', 'bar/bar_x_test.go', 'foo/foo.go']
+2026-09-25 09:09:23,452 INFO campaign_run run fc1a0e798310: 2 candidate(s) in 34s; confirming
+2026-09-25 09:09:33,503 INFO flake replay 1/3 of gopls|r5_transforms|documentSymbol:changed: settled=True control_stable=True reproduced=True (10.1s)
+2026-09-25 09:09:43,564 INFO flake replay 2/3 of gopls|r5_transforms|documentSymbol:changed: settled=True control_stable=True reproduced=True (10.1s)
+2026-09-25 09:09:53,873 INFO flake replay 3/3 of gopls|r5_transforms|documentSymbol:changed: settled=True control_stable=True reproduced=True (10.3s)
+2026-09-25 09:10:04,241 INFO flake replay 1/3 of gopls|r5_transforms|semanticTokens:missing: settled=True control_stable=True reproduced=True (10.4s)
+2026-09-25 09:10:14,638 INFO flake replay 2/3 of gopls|r5_transforms|semanticTokens:missing: settled=True control_stable=True reproduced=True (10.4s)
+2026-09-25 09:10:25,297 INFO flake replay 3/3 of gopls|r5_transforms|semanticTokens:missing: settled=True control_stable=True reproduced=True (10.7s)
+2026-09-25 09:10:25,309 INFO campaign_run run fc1a0e798310 finished: ok, 2 confirmed of 2 candidate(s), 96s

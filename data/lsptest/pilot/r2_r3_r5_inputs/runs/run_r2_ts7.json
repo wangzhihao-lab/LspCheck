@@ -1,0 +1,194 @@
+{
+ "oracle": "r2_handles",
+ "server": "ts7",
+ "version": "7.0.2",
+ "project": "pmndrs/zustand@b57db4f86ef1",
+ "language": "typescript",
+ "seed": 1,
+ "targets": [
+  {
+   "path": "src/vanilla/shallow.ts",
+   "positions": [
+    [
+     12,
+     15
+    ],
+    [
+     16,
+     53
+    ],
+    [
+     21,
+     11
+    ],
+    [
+     33,
+     38
+    ],
+    [
+     34,
+     23
+    ],
+    [
+     38,
+     34
+    ],
+    [
+     44,
+     35
+    ],
+    [
+     47,
+     46
+    ]
+   ],
+   "ends": [
+    [
+     12,
+     19
+    ],
+    [
+     16,
+     55
+    ],
+    [
+     21,
+     13
+    ],
+    [
+     33,
+     42
+    ],
+    [
+     34,
+     26
+    ],
+    [
+     38,
+     37
+    ],
+    [
+     44,
+     37
+    ],
+    [
+     47,
+     47
+    ]
+   ],
+   "names": [
+    "entries",
+    "Map",
+    "mapB",
+    "iterator",
+    "valueB",
+    "nextB",
+    "done",
+    "T"
+   ]
+  },
+  {
+   "path": "tests/persistSync.test.tsx",
+   "positions": [
+    [
+     14,
+     37
+    ],
+    [
+     16,
+     6
+    ],
+    [
+     274,
+     9
+    ],
+    [
+     291,
+     41
+    ],
+    [
+     311,
+     25
+    ],
+    [
+     565,
+     64
+    ],
+    [
+     683,
+     24
+    ],
+    [
+     717,
+     16
+    ]
+   ],
+   "ends": [
+    [
+     14,
+     41
+    ],
+    [
+     16,
+     9
+    ],
+    [
+     274,
+     13
+    ],
+    [
+     291,
+     48
+    ],
+    [
+     311,
+     28
+    ],
+    [
+     565,
+     73
+    ],
+    [
+     683,
+     26
+    ],
+    [
+     717,
+     21
+    ]
+   ],
+   "names": [
+    "newState",
+    "state",
+    "setItem",
+    "toBeCalledWith",
+    "count",
+    "onFinishHydration",
+    "map",
+    "setItemSpy"
+   ]
+  }
+ ],
+ "max_cases": 12,
+ "timing": "settled",
+ "result": {
+  "oracle": "r2_handles",
+  "run_id": "r2_handles-ts7-074237",
+  "cases": 12,
+  "invalid_cases": 0,
+  "sessions": 1,
+  "unsettled": 0,
+  "compared": {
+   "completionResolve": 26
+  },
+  "unstable": {},
+  "seconds": 75.441,
+  "notes": [
+   "handle kinds: {'codeAction': False, 'completion': True, 'delta': False}",
+   "allowed completionResolve no edit: 11"
+  ],
+  "candidates": []
+ },
+ "replays": [],
+ "total_seconds": 75.4
+}

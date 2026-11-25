@@ -1,0 +1,3 @@
+2026-11-18 10:42:19,247 INFO campaign_run run c6538cd7f025: r4_edits on ts7 7.0.2, vadimdemedes/ink@02ae1e59e7c2 seed 2 settled, targets ['src/dom.ts', 'test/fixtures/issue-935-overflow-rerender.tsx', 'test/helpers/create-stdout.ts']
+2026-11-18 10:43:17,793 INFO campaign_run run c6538cd7f025: 0 candidate(s) in 59s; confirming
+2026-11-18 10:43:17,793 INFO campaign_run run c6538cd7f025 finished: ok, 0 confirmed of 0 candidate(s), 59s

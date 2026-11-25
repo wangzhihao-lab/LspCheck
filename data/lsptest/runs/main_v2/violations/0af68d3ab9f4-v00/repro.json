@@ -1,0 +1,450 @@
+{
+ "format": 1,
+ "campaign": "main_v2",
+ "vid": "0af68d3ab9f4-v00",
+ "run_id": "0af68d3ab9f4",
+ "oracle": "r3_routes",
+ "server": {
+  "kind": "pyright",
+  "version": "1.1.414"
+ },
+ "project": {
+  "name": "Alishahryar1/free-claude-code@1f8b1fd7d054",
+  "source": "corpus",
+  "ref": "temp/corpus/Alishahryar1__free-claude-code@1f8b1fd7d054",
+  "commit": "1f8b1fd7d05473652416376cb7acbb8dbf466ea9",
+  "language": "python"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "smoke/product/test_api_product_live.py",
+    "positions": [
+     [
+      5,
+      7
+     ],
+     [
+      27,
+      24
+     ],
+     [
+      32,
+      18
+     ],
+     [
+      84,
+      8
+     ],
+     [
+      167,
+      14
+     ],
+     [
+      170,
+      47
+     ],
+     [
+      170,
+      62
+     ],
+     [
+      177,
+      23
+     ],
+     [
+      184,
+      33
+     ],
+     [
+      186,
+      15
+     ],
+     [
+      187,
+      18
+     ],
+     [
+      198,
+      15
+     ]
+    ],
+    "ends": [
+     [
+      5,
+      10
+     ],
+     [
+      27,
+      33
+     ],
+     [
+      32,
+      20
+     ],
+     [
+      84,
+      12
+     ],
+     [
+      167,
+      16
+     ],
+     [
+      170,
+      49
+     ],
+     [
+      170,
+      64
+     ],
+     [
+      177,
+      29
+     ],
+     [
+      184,
+      38
+     ],
+     [
+      186,
+      19
+     ],
+     [
+      187,
+      22
+     ],
+     [
+      198,
+      19
+     ]
+    ],
+    "names": [
+     "smoke",
+     "ConversationDriver",
+     "text",
+     "response",
+     "json",
+     "name",
+     "text",
+     "SmokeConfig",
+     "timeout_s",
+     "response",
+     "response",
+     "response"
+    ]
+   },
+   {
+    "path": "src/free_claude_code/providers/vertex/client.py",
+    "positions": [
+     [
+      2,
+      27
+     ],
+     [
+      9,
+      26
+     ],
+     [
+      19,
+      53
+     ],
+     [
+      25,
+      12
+     ],
+     [
+      34,
+      10
+     ],
+     [
+      42,
+      13
+     ],
+     [
+      59,
+      49
+     ],
+     [
+      75,
+      62
+     ],
+     [
+      88,
+      13
+     ],
+     [
+      109,
+      33
+     ],
+     [
+      112,
+      26
+     ],
+     [
+      126,
+      22
+     ]
+    ],
+    "ends": [
+     [
+      2,
+      31
+     ],
+     [
+      9,
+      31
+     ],
+     [
+      19,
+      62
+     ],
+     [
+      25,
+      21
+     ],
+     [
+      34,
+      17
+     ],
+     [
+      42,
+      20
+     ],
+     [
+      59,
+      62
+     ],
+     [
+      75,
+      68
+     ],
+     [
+      88,
+      18
+     ],
+     [
+      109,
+      36
+     ],
+     [
+      112,
+      32
+     ],
+     [
+      126,
+      24
+     ]
+    ],
+    "names": [
+     "replace",
+     "providers",
+     "maybe_await_aclose",
+     "OpenAIChatProfile",
+     "provider_name",
+     "VertexProvider",
+     "GoogleAccessTokenProvider",
+     "_project_id",
+     "page_token",
+     "httpx",
+     "_models_url",
+     "self"
+    ]
+   },
+   {
+    "path": "tests/providers/test_together.py",
+    "positions": [
+     [
+      21,
+      12
+     ],
+     [
+      34,
+      17
+     ],
+     [
+      43,
+      33
+     ],
+     [
+      92,
+      13
+     ],
+     [
+      103,
+      39
+     ],
+     [
+      114,
+      78
+     ],
+     [
+      175,
+      39
+     ],
+     [
+      193,
+      36
+     ],
+     [
+      214,
+      11
+     ],
+     [
+      222,
+      22
+     ],
+     [
+      250,
+      52
+     ],
+     [
+      256,
+      4
+     ]
+    ],
+    "ends": [
+     [
+      21,
+      21
+     ],
+     [
+      34,
+      23
+     ],
+     [
+      43,
+      37
+     ],
+     [
+      92,
+      15
+     ],
+     [
+      103,
+      74
+     ],
+     [
+      114,
+      83
+     ],
+     [
+      175,
+      41
+     ],
+     [
+      193,
+      62
+     ],
+     [
+      214,
+      15
+     ],
+     [
+      222,
+      31
+     ],
+     [
+      250,
+      58
+     ],
+     [
+      256,
+      7
+     ]
+    ],
+    "names": [
+     "profiled_provider",
+     "rate_window",
+     "_api_key",
+     "body",
+     "test_build_request_body_does_not_invent_catalog_wide_reasoning_control",
+     "reasoning",
+     "list",
+     "test_model_catalog_uses_configured_base_url_and_auth",
+     "api_key",
+     "together_provider",
+     "return_value",
+     "pytest"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "definitionConsistency",
+  "path": "src/free_claude_code/providers/vertex/__init__.py",
+  "line": 4,
+  "character": 19,
+  "extra": "from:src/free_claude_code/providers/vertex/client.py:42:13"
+ },
+ "ops": [],
+ "case": {
+  "loc": [
+   "src/free_claude_code/providers/vertex/__init__.py",
+   4,
+   12,
+   4,
+   26
+  ],
+  "sub": "d",
+  "target": [
+   "src/free_claude_code/providers/vertex/client.py",
+   42,
+   13
+  ]
+ },
+ "shape": "definitionConsistency:lost",
+ "signature": "pyright|r3_routes|definitionConsistency:lost",
+ "expected": [
+  [
+   "src/free_claude_code/providers/vertex/client.py",
+   42,
+   6,
+   42,
+   20
+  ]
+ ],
+ "actual": [],
+ "reproduced": "3/3",
+ "note": "flake 3/3 [r1:SCR r2:SCR r3:SCR] in 46s",
+ "violation": {
+  "oracle": "r3_routes",
+  "server": "pyright-1.1.414",
+  "project": "Alishahryar1/free-claude-code@1f8b1fd7d054",
+  "key": {
+   "method": "definitionConsistency",
+   "path": "src/free_claude_code/providers/vertex/__init__.py",
+   "line": 4,
+   "character": 19,
+   "extra": "from:src/free_claude_code/providers/vertex/client.py:42:13"
+  },
+  "expected": [
+   [
+    "src/free_claude_code/providers/vertex/client.py",
+    42,
+    6,
+    42,
+    20
+   ]
+  ],
+  "actual": [],
+  "ops": [],
+  "detail": "{\"case\": {\"loc\": [\"src/free_claude_code/providers/vertex/__init__.py\", 4, 12, 4, 26], \"sub\": \"d\", \"target\": [\"src/free_claude_code/providers/vertex/client.py\", 42, 13]}, \"note\": \"flake 3/3 [r1:SCR r2:SCR r3:SCR] in 46s\", \"shape\": \"definitionConsistency:lost\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "pyright|r3_routes|definitionConsistency:lost",
+  "run_id": "0af68d3ab9f4"
+ },
+ "replay_logs": [
+  "logs/pyright-1.1.414-0af68d3ab9f4-r3-replay-baseline-20261118-091550-16f80c.jsonl.gz",
+  "logs/pyright-1.1.414-0af68d3ab9f4-r3-replay-control-20261118-091559-d225cd.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

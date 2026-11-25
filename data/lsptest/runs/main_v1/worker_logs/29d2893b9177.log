@@ -1,0 +1,9 @@
+2026-09-24 03:19:07,308 INFO campaign_run run 29d2893b9177: r3_routes on rust-analyzer 2026-09-21, BurntSushi/ripgrep@3fce3b5bb023 seed 2 settled, targets ['crates/ignore/src/types.rs', 'crates/searcher/examples/search-stdin.rs', 'tests/misc.rs']
+2026-09-24 03:36:48,851 INFO campaign_run run 29d2893b9177: 3 candidate(s) in 1062s; confirming
+2026-09-24 03:41:48,506 INFO flake replay 1/3 of rust-analyzer|r3_routes|diagnostics:extra:unlinked-file: settled=True control_stable=True reproduced=True (299.7s)
+2026-09-24 03:45:44,890 INFO flake replay 2/3 of rust-analyzer|r3_routes|diagnostics:extra:unlinked-file: settled=True control_stable=True reproduced=True (236.4s)
+2026-09-24 03:49:37,975 INFO flake replay 3/3 of rust-analyzer|r3_routes|diagnostics:extra:unlinked-file: settled=True control_stable=True reproduced=True (233.1s)
+2026-09-24 03:53:16,994 INFO flake replay 1/3 of rust-analyzer|r3_routes|diagnostics:extra:non_snake_case: settled=True control_stable=True reproduced=True (219.0s)
+2026-09-24 03:56:32,611 INFO flake replay 2/3 of rust-analyzer|r3_routes|diagnostics:extra:non_snake_case: settled=True control_stable=True reproduced=True (195.6s)
+2026-09-24 03:59:34,101 INFO flake replay 3/3 of rust-analyzer|r3_routes|diagnostics:extra:non_snake_case: settled=True control_stable=True reproduced=True (181.5s)
+2026-09-24 03:59:34,166 INFO campaign_run run 29d2893b9177 finished: ok, 2 confirmed of 3 candidate(s), 2427s

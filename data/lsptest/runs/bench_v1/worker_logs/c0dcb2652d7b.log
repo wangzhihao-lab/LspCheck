@@ -1,0 +1,3 @@
+2026-09-24 20:09:27,193 INFO campaign_run run c0dcb2652d7b: r2_handles on rust-analyzer 2025-05-05, rust-analyzer-19694 seed 1 settled, targets ['src/main.rs']
+2026-09-24 20:10:01,389 INFO campaign_run run c0dcb2652d7b: 0 candidate(s) in 34s; confirming
+2026-09-24 20:10:01,389 INFO campaign_run run c0dcb2652d7b finished: ok, 0 confirmed of 0 candidate(s), 34s

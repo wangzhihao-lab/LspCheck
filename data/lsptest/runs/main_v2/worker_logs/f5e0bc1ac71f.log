@@ -1,0 +1,3 @@
+2026-11-18 19:01:47,430 INFO campaign_run run f5e0bc1ac71f: r1_history on gopls v0.23.0, SagerNet/sing-box@0d91c4547921 seed 3 settled, targets ['adapter/dns.go', 'protocol/naive/inbound.go', 'route/router.go']
+2026-11-18 19:10:43,200 INFO campaign_run run f5e0bc1ac71f: 0 candidate(s) in 536s; confirming
+2026-11-18 19:10:43,200 INFO campaign_run run f5e0bc1ac71f finished: ok, 0 confirmed of 0 candidate(s), 536s

@@ -1,0 +1,100 @@
+{
+ "rows": [
+  {
+   "gid": "ts6-r1-codeaction-key-lost-h5-4f92e2",
+   "replays": 3,
+   "settled": 3,
+   "control_stable": 3,
+   "reproduced": 0,
+   "seconds": 95.1,
+   "error": "",
+   "verdict": "not-reproduced",
+   "case": "c1",
+   "setting": "tsserver.useClientFileWatcher=true, relativePatternSupport"
+  },
+  {
+   "gid": "ts6-r1-completion-lost-h5-fa501c",
+   "replays": 3,
+   "settled": 3,
+   "control_stable": 3,
+   "reproduced": 0,
+   "seconds": 74.8,
+   "error": "",
+   "verdict": "not-reproduced",
+   "case": "c1",
+   "setting": "tsserver.useClientFileWatcher=true, relativePatternSupport"
+  },
+  {
+   "gid": "ts6-r1-definition-lost-h9-898f29",
+   "replays": 3,
+   "settled": 3,
+   "control_stable": 3,
+   "reproduced": 0,
+   "seconds": 358.6,
+   "error": "",
+   "verdict": "not-reproduced",
+   "case": "c1",
+   "setting": "tsserver.useClientFileWatcher=true, relativePatternSupport"
+  },
+  {
+   "gid": "ts6-r1-references-lost-h5-d24ca6",
+   "replays": 3,
+   "settled": 3,
+   "control_stable": 3,
+   "reproduced": 0,
+   "seconds": 99.1,
+   "error": "",
+   "verdict": "not-reproduced",
+   "case": "c1",
+   "setting": "tsserver.useClientFileWatcher=true, relativePatternSupport"
+  },
+  {
+   "gid": "ts6-r1-semantictokens-changed-h5-591c42",
+   "replays": 3,
+   "settled": 3,
+   "control_stable": 3,
+   "reproduced": 0,
+   "seconds": 100.8,
+   "error": "",
+   "verdict": "not-reproduced",
+   "case": "c1",
+   "setting": "tsserver.useClientFileWatcher=true, relativePatternSupport"
+  },
+  {
+   "gid": "ts6-r1-semantictokens-missing-h9-d686b3",
+   "replays": 3,
+   "settled": 3,
+   "control_stable": 3,
+   "reproduced": 0,
+   "seconds": 73.9,
+   "error": "",
+   "verdict": "not-reproduced",
+   "case": "c1",
+   "setting": "tsserver.useClientFileWatcher=true, relativePatternSupport"
+  },
+  {
+   "gid": "ts6-r1-signaturehelp-lost-h9-7bd793",
+   "replays": 3,
+   "settled": 3,
+   "control_stable": 3,
+   "reproduced": 0,
+   "seconds": 213.5,
+   "error": "",
+   "verdict": "not-reproduced",
+   "case": "c1",
+   "setting": "tsserver.useClientFileWatcher=true, relativePatternSupport"
+  },
+  {
+   "gid": "ts6-r1-diagnostics-extra-2304-h7-8ca52f",
+   "replays": 3,
+   "settled": 3,
+   "control_stable": 3,
+   "reproduced": 3,
+   "seconds": 76.7,
+   "error": "",
+   "verdict": "reproduced",
+   "case": "c2",
+   "setting": "tsserver.useSyntaxServer=never"
+  }
+ ]
+}

@@ -1,0 +1,81 @@
+{
+ "campaign": "main_v2",
+ "subcommand": "push-wait",
+ "written": "2026-11-20 05:25",
+ "rows": [
+  {
+   "gid": "rust-analyzer-r3-diagnostics-missing-inactive-code-a-0b07f0",
+   "error": "",
+   "server": {
+    "kind": "rust-analyzer",
+    "version": "2026-09-21"
+   },
+   "project": {
+    "name": "googleworkspace/cli@a3768d0e82ad",
+    "source": "corpus",
+    "ref": "temp/corpus/googleworkspace__cli@a3768d0e82ad",
+    "commit": "a3768d0e82ad83cca2da97724e46bea4ff0e6dbd",
+    "language": "rust"
+   },
+   "path": "crates/google-workspace-cli/src/auth.rs",
+   "wait_s": 180.0,
+   "push_settled": true,
+   "push_pull_mode": false,
+   "push_assumed": [],
+   "push_timeline": [
+    {
+     "after_snapshot_s": 0.0,
+     "publish_index": 1377,
+     "version": 1,
+     "n": 0,
+     "codes": {}
+    }
+   ],
+   "pull_settled": true,
+   "pull_mode": true,
+   "pull_error": null,
+   "pull_n": 15,
+   "pull_codes": {
+    "inactive_code/rust-analyzer": 15
+   },
+   "seconds": 216.7
+  },
+  {
+   "gid": "rust-analyzer-r3-diagnostics-missing-unlinked-file-a-efb484",
+   "error": "",
+   "server": {
+    "kind": "rust-analyzer",
+    "version": "2026-09-21"
+   },
+   "project": {
+    "name": "yewstack/yew@bfa6c19af971",
+    "source": "corpus",
+    "ref": "temp/corpus/yewstack__yew@bfa6c19af971",
+    "commit": "bfa6c19af971084f9547495388bde9aceeb81aaa",
+    "language": "rust"
+   },
+   "path": "packages/yew-macro/tests/classes_macro/classes-fail.rs",
+   "wait_s": 180.0,
+   "push_settled": true,
+   "push_pull_mode": false,
+   "push_assumed": [],
+   "push_timeline": [
+    {
+     "after_snapshot_s": 0.0,
+     "publish_index": 705,
+     "version": 1,
+     "n": 0,
+     "codes": {}
+    }
+   ],
+   "pull_settled": true,
+   "pull_mode": true,
+   "pull_error": null,
+   "pull_n": 1,
+   "pull_codes": {
+    "unlinked-file/rust-analyzer": 1
+   },
+   "seconds": 271.6
+  }
+ ]
+}

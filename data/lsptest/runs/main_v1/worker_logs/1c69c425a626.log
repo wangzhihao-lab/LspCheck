@@ -1,0 +1,3 @@
+2026-09-24 02:14:48,949 INFO campaign_run run 1c69c425a626: r3_routes on rust-analyzer 2026-09-21, AlexsJones/llmfit@2ffe4fd899a6 seed 2 settled, targets ['llmfit-core/src/claim.rs', 'llmfit-core/src/fit.rs', 'llmfit-tui/src/serve_api.rs']
+2026-09-24 02:25:24,583 INFO campaign_run run 1c69c425a626: 0 candidate(s) in 636s; confirming
+2026-09-24 02:25:24,584 INFO campaign_run run 1c69c425a626 finished: ok, 0 confirmed of 0 candidate(s), 636s

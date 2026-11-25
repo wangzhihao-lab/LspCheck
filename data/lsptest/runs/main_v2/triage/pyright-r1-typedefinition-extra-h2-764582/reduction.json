@@ -1,0 +1,76 @@
+{
+ "vid": "de1a4347e97f-v01",
+ "ops_before": 7,
+ "narrowed": false,
+ "reduced_confirmed": "3/3",
+ "probes": 4,
+ "cache_hits": 0,
+ "reduce_seconds": 76.957,
+ "budget_exhausted": false,
+ "probe_log": [
+  [
+   5,
+   true
+  ],
+  [
+   4,
+   true
+  ],
+  [
+   3,
+   false
+  ],
+  [
+   3,
+   false
+  ]
+ ],
+ "logs": [
+  "pyright-1.1.414-tr764582-replay-baseline-20261118-231435-860d13.jsonl.gz",
+  "pyright-1.1.414-tr764582-replay-control-20261118-231435-5f9047.jsonl.gz",
+  "pyright-1.1.414-tr764582-replay-history-20261118-231445-eb20db.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [
+   [
+    "temp/lsp_servers/pyright-1.1.414/node_modules/pyright/dist/typeshed-fallback/stdlib/types.pyi",
+    712,
+    6,
+    712,
+    14
+   ],
+   [
+    "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/types.py",
+    69,
+    4,
+    69,
+    12
+   ]
+  ],
+  "actual": [
+   [
+    "temp/lsp_servers/pyright-1.1.414/node_modules/pyright/dist/typeshed-fallback/stdlib/builtins.pyi",
+    486,
+    6,
+    486,
+    9
+   ],
+   [
+    "temp/lsp_servers/pyright-1.1.414/node_modules/pyright/dist/typeshed-fallback/stdlib/types.pyi",
+    712,
+    6,
+    712,
+    14
+   ],
+   [
+    "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/types.py",
+    69,
+    4,
+    69,
+    12
+   ]
+  ]
+ },
+ "ops_after": 4,
+ "total_seconds": 179.3
+}

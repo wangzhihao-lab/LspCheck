@@ -1,0 +1,9 @@
+2026-09-24 21:05:44,058 INFO campaign_run run 844d29971420: r3_routes on gopls v0.9.1, gopls-54147 seed 1 settled, targets ['bar.go', 'foo.go']
+2026-09-24 21:05:53,229 INFO campaign_run run 844d29971420: 3 candidate(s) in 9s; confirming
+2026-09-24 21:05:59,218 INFO flake replay 1/3 of gopls|r3_routes|highlightVsReferences:extra: settled=True control_stable=True reproduced=True (6.0s)
+2026-09-24 21:06:05,170 INFO flake replay 2/3 of gopls|r3_routes|highlightVsReferences:extra: settled=True control_stable=True reproduced=True (6.0s)
+2026-09-24 21:06:11,024 INFO flake replay 3/3 of gopls|r3_routes|highlightVsReferences:extra: settled=True control_stable=True reproduced=True (5.9s)
+2026-09-24 21:06:16,965 INFO flake replay 1/3 of gopls|r3_routes|definitionConsistency:changed: settled=True control_stable=True reproduced=True (5.9s)
+2026-09-24 21:06:23,142 INFO flake replay 2/3 of gopls|r3_routes|definitionConsistency:changed: settled=True control_stable=True reproduced=True (6.2s)
+2026-09-24 21:06:29,250 INFO flake replay 3/3 of gopls|r3_routes|definitionConsistency:changed: settled=True control_stable=True reproduced=True (6.1s)
+2026-09-24 21:06:29,259 INFO campaign_run run 844d29971420 finished: ok, 2 confirmed of 3 candidate(s), 45s

@@ -1,0 +1,419 @@
+{
+ "format": 1,
+ "campaign": "bench_v1",
+ "vid": "44db83dc3380-v00",
+ "run_id": "44db83dc3380",
+ "oracle": "r4_edits",
+ "server": {
+  "kind": "gopls",
+  "version": "v0.20.0"
+ },
+ "project": {
+  "name": "gopls-74938",
+  "source": "dir",
+  "ref": "data/lsp_bench/cases/gopls-74938/project",
+  "commit": "",
+  "language": "go"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 180.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "slicescontains.go",
+    "positions": [
+     [
+      6,
+      33
+     ],
+     [
+      8,
+      7
+     ],
+     [
+      43,
+      5
+     ],
+     [
+      60,
+      3
+     ],
+     [
+      60,
+      9
+     ],
+     [
+      63,
+      20
+     ],
+     [
+      80,
+      17
+     ],
+     [
+      81,
+      6
+     ],
+     [
+      85,
+      4
+     ],
+     [
+      118,
+      9
+     ],
+     [
+      128,
+      13
+     ],
+     [
+      128,
+      28
+     ],
+     [
+      151,
+      5
+     ],
+     [
+      152,
+      12
+     ],
+     [
+      169,
+      45
+     ],
+     [
+      170,
+      26
+     ],
+     [
+      171,
+      11
+     ],
+     [
+      175,
+      12
+     ],
+     [
+      187,
+      22
+     ],
+     [
+      187,
+      51
+     ]
+    ],
+    "ends": [
+     [
+      6,
+      36
+     ],
+     [
+      8,
+      10
+     ],
+     [
+      43,
+      6
+     ],
+     [
+      60,
+      6
+     ],
+     [
+      60,
+      12
+     ],
+     [
+      63,
+      35
+     ],
+     [
+      80,
+      20
+     ],
+     [
+      81,
+      9
+     ],
+     [
+      85,
+      7
+     ],
+     [
+      118,
+      14
+     ],
+     [
+      128,
+      14
+     ],
+     [
+      128,
+      29
+     ],
+     [
+      151,
+      6
+     ],
+     [
+      152,
+      13
+     ],
+     [
+      169,
+      47
+     ],
+     [
+      170,
+      28
+     ],
+     [
+      171,
+      13
+     ],
+     [
+      175,
+      14
+     ],
+     [
+      187,
+      39
+     ],
+     [
+      187,
+      52
+     ]
+    ],
+    "names": [
+     "needle",
+     "slice",
+     "_",
+     "print",
+     "found",
+     "assignFalseBreakInSelectSwitch",
+     "needle",
+     "found",
+     "print",
+     "predicate",
+     "T",
+     "T",
+     "_",
+     "x",
+     "bool",
+     "bool",
+     "true",
+     "true",
+     "nopeImplicitConversionContainsFunc",
+     "f"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "diagnostics",
+  "path": "slicescontains.go",
+  "line": 108,
+  "character": 22,
+  "extra": "M2:quickfix-errors:Create variable slce"
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "slicescontains.go"
+  },
+  {
+   "kind": "change",
+   "path": "slicescontains.go",
+   "start": [
+    108,
+    22
+   ],
+   "end": [
+    108,
+    27
+   ],
+   "text": "slce"
+  },
+  {
+   "kind": "change",
+   "path": "slicescontains.go",
+   "start": [
+    108,
+    1
+   ],
+   "end": [
+    108,
+    1
+   ],
+   "text": "slce := 0\n\t"
+  }
+ ],
+ "case": {
+  "action_kind": "quickfix",
+  "base_errors": 0,
+  "check": "errors",
+  "diag": {
+   "code": "UndeclaredName",
+   "message": "undefined: slce",
+   "range": {
+    "end": {
+     "character": 26,
+     "line": 108
+    },
+    "start": {
+     "character": 22,
+     "line": 108
+    }
+   },
+   "severity": 1
+  },
+  "fix_introduced_errors": [
+   {
+    "code": "InvalidIterVar",
+    "message": "range over slce (variable of type int) permits only one iteration variable",
+    "path": "slicescontains.go",
+    "range": {
+     "end": {
+      "character": 12,
+      "line": 109
+     },
+     "start": {
+      "character": 8,
+      "line": 109
+     }
+    },
+    "severity": 1
+   }
+  ],
+  "fix_ops": [
+   {
+    "end": [
+     108,
+     1
+    ],
+    "kind": "change",
+    "path": "slicescontains.go",
+    "start": [
+     108,
+     1
+    ],
+    "text": "slce := 0\n\t"
+   }
+  ],
+  "kind": "mutation",
+  "mutation": {
+   "end": [
+    108,
+    27
+   ],
+   "id": "M2",
+   "offsets": [
+    2283,
+    2288
+   ],
+   "sha": "061962355a8902e2",
+   "start": [
+    108,
+    22
+   ],
+   "text": "slce",
+   "what": "misspell 'slice' as 'slce' (drop a middle character)"
+  },
+  "n_fix_ops": 1,
+  "path": "slicescontains.go",
+  "post_errors": 1,
+  "title": "Create variable slce",
+  "via": "resolve"
+ },
+ "shape": "diagnostics:extra:InvalidIterVar",
+ "signature": "gopls|r4_edits|diagnostics:extra:InvalidIterVar",
+ "expected": [],
+ "actual": [
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "InvalidIterVar",
+   "compiler",
+   "range over slce (variable of type int) permits only one iteration variable"
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "quick fix 'Create variable slce' for UndeclaredName at slicescontains.go:109:23 raises the error count in the edited files from 0 to 1 (seeded by M2: misspell 'slice' as 'slce' (drop a middle character); errors before the mutation 0, after the fix 1); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 44s",
+ "violation": {
+  "oracle": "r4_edits",
+  "server": "gopls-v0.20.0",
+  "project": "gopls-74938",
+  "key": {
+   "method": "diagnostics",
+   "path": "slicescontains.go",
+   "line": 108,
+   "character": 22,
+   "extra": "M2:quickfix-errors:Create variable slce"
+  },
+  "expected": [],
+  "actual": [
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "InvalidIterVar",
+    "compiler",
+    "range over slce (variable of type int) permits only one iteration variable"
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "slicescontains.go"
+   },
+   {
+    "kind": "change",
+    "path": "slicescontains.go",
+    "start": [
+     108,
+     22
+    ],
+    "end": [
+     108,
+     27
+    ],
+    "text": "slce"
+   },
+   {
+    "kind": "change",
+    "path": "slicescontains.go",
+    "start": [
+     108,
+     1
+    ],
+    "end": [
+     108,
+     1
+    ],
+    "text": "slce := 0\n\t"
+   }
+  ],
+  "detail": "{\"case\": {\"action_kind\": \"quickfix\", \"base_errors\": 0, \"check\": \"errors\", \"diag\": {\"code\": \"UndeclaredName\", \"message\": \"undefined: slce\", \"range\": {\"end\": {\"character\": 26, \"line\": 108}, \"start\": {\"character\": 22, \"line\": 108}}, \"severity\": 1}, \"fix_introduced_errors\": [{\"code\": \"InvalidIterVar\", \"message\": \"range over slce (variable of type int) permits only one iteration variable\", \"path\": \"slicescontains.go\", \"range\": {\"end\": {\"character\": 12, \"line\": 109}, \"start\": {\"character\": 8, \"line\": 109}}, \"severity\": 1}], \"fix_ops\": [{\"end\": [108, 1], \"kind\": \"change\", \"path\": \"slicescontains.go\", \"start\": [108, 1], \"text\": \"slce := 0\\n\\t\"}], \"kind\": \"mutation\", \"mutation\": {\"end\": [108, 27], \"id\": \"M2\", \"offsets\": [2283, 2288], \"sha\": \"061962355a8902e2\", \"start\": [108, 22], \"text\": \"slce\", \"what\": \"misspell 'slice' as 'slce' (drop a middle character)\"}, \"n_fix_ops\": 1, \"path\": \"slicescontains.go\", \"post_errors\": 1, \"title\": \"Create variable slce\", \"via\": \"resolve\"}, \"note\": \"quick fix 'Create variable slce' for UndeclaredName at slicescontains.go:109:23 raises the error count in the edited files from 0 to 1 (seeded by M2: misspell 'slice' as 'slce' (drop a middle character); errors before the mutation 0, after the fix 1); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 44s\", \"shape\": \"diagnostics:extra:InvalidIterVar\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "gopls|r4_edits|diagnostics:extra:InvalidIterVar",
+  "run_id": "44db83dc3380"
+ },
+ "replay_logs": [
+  "logs/gopls-v0.20.0-44db83dc3380-r4-replay-baseline-20260925-021325-85a7da.jsonl.gz",
+  "logs/gopls-v0.20.0-44db83dc3380-r4-replay-case-20260925-021316-9f9457.jsonl.gz",
+  "logs/gopls-v0.20.0-44db83dc3380-r4-replay-control-20260925-021328-db6772.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

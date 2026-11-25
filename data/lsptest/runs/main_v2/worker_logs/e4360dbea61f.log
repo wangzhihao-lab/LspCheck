@@ -1,0 +1,3 @@
+2026-11-18 19:10:21,508 INFO campaign_run run e4360dbea61f: r4_edits on pyright 1.1.414, soimort/you-get@049548f3f3f3 seed 2 settled, targets ['src/you_get/extractors/ifeng.py', 'src/you_get/extractors/pixnet.py', 'src/you_get/extractors/suntv.py']
+2026-11-18 19:11:03,568 INFO campaign_run run e4360dbea61f: 0 candidate(s) in 42s; confirming
+2026-11-18 19:11:03,568 INFO campaign_run run e4360dbea61f finished: ok, 0 confirmed of 0 candidate(s), 42s

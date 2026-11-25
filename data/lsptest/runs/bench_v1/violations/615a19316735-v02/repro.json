@@ -1,0 +1,232 @@
+{
+ "format": 1,
+ "campaign": "bench_v1",
+ "vid": "615a19316735-v02",
+ "run_id": "615a19316735",
+ "oracle": "r5_transforms",
+ "server": {
+  "kind": "gopls",
+  "version": "v0.7.1"
+ },
+ "project": {
+  "name": "gopls-47436",
+  "source": "dir",
+  "ref": "data/lsp_bench/cases/gopls-47436/project",
+  "commit": "",
+  "language": "go"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 180.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 6,
+  "targets": [
+   {
+    "path": "main.go",
+    "positions": [
+     [
+      0,
+      8
+     ],
+     [
+      5,
+      3
+     ],
+     [
+      9,
+      6
+     ],
+     [
+      9,
+      11
+     ],
+     [
+      9,
+      16
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      9
+     ],
+     [
+      5,
+      6
+     ],
+     [
+      9,
+      8
+     ],
+     [
+      9,
+      14
+     ],
+     [
+      9,
+      17
+     ]
+    ],
+    "names": [
+     "p",
+     "Hello",
+     "myFS",
+     "embed",
+     "FS"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "hover",
+  "path": "main.go",
+  "line": 9,
+  "character": 16,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "main.go"
+  },
+  {
+   "kind": "change",
+   "path": "main.go",
+   "start": [
+    9,
+    17
+   ],
+   "end": [
+    10,
+    0
+   ]
+  }
+ ],
+ "case": {
+  "mapped_key": [
+   "hover",
+   "main.go",
+   9,
+   16,
+   ""
+  ],
+  "transform": {
+   "back": {
+    "col": 0,
+    "eof": [],
+    "line": -1,
+    "n": 0,
+    "path": "main.go",
+    "w": 0
+   },
+   "edits": [
+    [
+     9,
+     17,
+     10,
+     0,
+     ""
+    ]
+   ],
+   "kind": "T5",
+   "path": "main.go",
+   "shift": {
+    "col": 0,
+    "eof": [
+     10,
+     0,
+     9,
+     17
+    ],
+    "line": -1,
+    "n": 0,
+    "path": "main.go",
+    "w": 0
+   }
+  }
+ },
+ "shape": "hover:range",
+ "signature": "gopls|r5_transforms|hover:range",
+ "expected": [
+  "type FS struct { // The compiler knows the layout of this struct. // See cmd/compile/internal/staticdata's WriteEmbed. // // The files list is sorted by name but not by simple string comparison. // Instead, each file's name takes the form \"dir/elem\" or \"dir/elem/\". // The optional trailing slash indicates that the file is itself a directory. // The files list is sorted first by dir (if dir is missing, it is taken to be \".\") // and then by base, so this list of files: // // p // q/ // q/r // q/s/ // q/s/t // q/s/u // q/v // w // // is actually sorted as: // // p # dir=. elem=p // q/ # dir=. elem=q // w # dir=. elem=w // q/r # dir=q elem=r // q/s/ # dir=q elem=s // q/v # dir=q elem=v // q/s/t # dir=q/s elem=t // q/s/u # dir=q/s elem=u // // This order brings directory contents together in contiguous sections // of the list, allowing a directory read to use binary search to find // the relevant sequence of entries. files *[]file } [`embed.FS` on pkg.go.dev](https://pkg.go.dev/embed?utm_source=gopls#FS) An FS is a read\\-only collection of files, usually initialized with a \\/\\/go\\:embed directive\\. When declared without a \\/\\/go\\:embed directive, an FS is an empty file system\\. An FS is a read\\-only value, so it is safe to use from multiple goroutines simultaneously and also safe to assign values of type FS to each other\\. FS implements fs\\.FS, so it can be used with any package that understands file system interfaces, including net\\/http, text\\/template, and html\\/template\\. See the package documentation for more details about initializing an FS\\.",
+  [
+   9,
+   15,
+   9,
+   17
+  ]
+ ],
+ "actual": [
+  "type FS struct { // The compiler knows the layout of this struct. // See cmd/compile/internal/staticdata's WriteEmbed. // // The files list is sorted by name but not by simple string comparison. // Instead, each file's name takes the form \"dir/elem\" or \"dir/elem/\". // The optional trailing slash indicates that the file is itself a directory. // The files list is sorted first by dir (if dir is missing, it is taken to be \".\") // and then by base, so this list of files: // // p // q/ // q/r // q/s/ // q/s/t // q/s/u // q/v // w // // is actually sorted as: // // p # dir=. elem=p // q/ # dir=. elem=q // w # dir=. elem=w // q/r # dir=q elem=r // q/s/ # dir=q elem=s // q/v # dir=q elem=v // q/s/t # dir=q/s elem=t // q/s/u # dir=q/s elem=u // // This order brings directory contents together in contiguous sections // of the list, allowing a directory read to use binary search to find // the relevant sequence of entries. files *[]file } [`embed.FS` on pkg.go.dev](https://pkg.go.dev/embed?utm_source=gopls#FS) An FS is a read\\-only collection of files, usually initialized with a \\/\\/go\\:embed directive\\. When declared without a \\/\\/go\\:embed directive, an FS is an empty file system\\. An FS is a read\\-only value, so it is safe to use from multiple goroutines simultaneously and also safe to assign values of type FS to each other\\. FS implements fs\\.FS, so it can be used with any package that understands file system interfaces, including net\\/http, text\\/template, and html\\/template\\. See the package documentation for more details about initializing an FS\\.",
+  [
+   9,
+   15,
+   10,
+   0
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "T5 main.go: 1 edit(s), first [9, 17, 10, 0]; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 26s",
+ "violation": {
+  "oracle": "r5_transforms",
+  "server": "gopls-v0.7.1",
+  "project": "gopls-47436",
+  "key": {
+   "method": "hover",
+   "path": "main.go",
+   "line": 9,
+   "character": 16,
+   "extra": ""
+  },
+  "expected": [
+   "type FS struct { // The compiler knows the layout of this struct. // See cmd/compile/internal/staticdata's WriteEmbed. // // The files list is sorted by name but not by simple string comparison. // Instead, each file's name takes the form \"dir/elem\" or \"dir/elem/\". // The optional trailing slash indicates that the file is itself a directory. // The files list is sorted first by dir (if dir is missing, it is taken to be \".\") // and then by base, so this list of files: // // p // q/ // q/r // q/s/ // q/s/t // q/s/u // q/v // w // // is actually sorted as: // // p # dir=. elem=p // q/ # dir=. elem=q // w # dir=. elem=w // q/r # dir=q elem=r // q/s/ # dir=q elem=s // q/v # dir=q elem=v // q/s/t # dir=q/s elem=t // q/s/u # dir=q/s elem=u // // This order brings directory contents together in contiguous sections // of the list, allowing a directory read to use binary search to find // the relevant sequence of entries. files *[]file } [`embed.FS` on pkg.go.dev](https://pkg.go.dev/embed?utm_source=gopls#FS) An FS is a read\\-only collection of files, usually initialized with a \\/\\/go\\:embed directive\\. When declared without a \\/\\/go\\:embed directive, an FS is an empty file system\\. An FS is a read\\-only value, so it is safe to use from multiple goroutines simultaneously and also safe to assign values of type FS to each other\\. FS implements fs\\.FS, so it can be used with any package that understands file system interfaces, including net\\/http, text\\/template, and html\\/template\\. See the package documentation for more details about initializing an FS\\.",
+   [
+    9,
+    15,
+    9,
+    17
+   ]
+  ],
+  "actual": [
+   "type FS struct { // The compiler knows the layout of this struct. // See cmd/compile/internal/staticdata's WriteEmbed. // // The files list is sorted by name but not by simple string comparison. // Instead, each file's name takes the form \"dir/elem\" or \"dir/elem/\". // The optional trailing slash indicates that the file is itself a directory. // The files list is sorted first by dir (if dir is missing, it is taken to be \".\") // and then by base, so this list of files: // // p // q/ // q/r // q/s/ // q/s/t // q/s/u // q/v // w // // is actually sorted as: // // p # dir=. elem=p // q/ # dir=. elem=q // w # dir=. elem=w // q/r # dir=q elem=r // q/s/ # dir=q elem=s // q/v # dir=q elem=v // q/s/t # dir=q/s elem=t // q/s/u # dir=q/s elem=u // // This order brings directory contents together in contiguous sections // of the list, allowing a directory read to use binary search to find // the relevant sequence of entries. files *[]file } [`embed.FS` on pkg.go.dev](https://pkg.go.dev/embed?utm_source=gopls#FS) An FS is a read\\-only collection of files, usually initialized with a \\/\\/go\\:embed directive\\. When declared without a \\/\\/go\\:embed directive, an FS is an empty file system\\. An FS is a read\\-only value, so it is safe to use from multiple goroutines simultaneously and also safe to assign values of type FS to each other\\. FS implements fs\\.FS, so it can be used with any package that understands file system interfaces, including net\\/http, text\\/template, and html\\/template\\. See the package documentation for more details about initializing an FS\\.",
+   [
+    9,
+    15,
+    10,
+    0
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "main.go"
+   },
+   {
+    "kind": "change",
+    "path": "main.go",
+    "start": [
+     9,
+     17
+    ],
+    "end": [
+     10,
+     0
+    ]
+   }
+  ],
+  "detail": "{\"case\": {\"mapped_key\": [\"hover\", \"main.go\", 9, 16, \"\"], \"transform\": {\"back\": {\"col\": 0, \"eof\": [], \"line\": -1, \"n\": 0, \"path\": \"main.go\", \"w\": 0}, \"edits\": [[9, 17, 10, 0, \"\"]], \"kind\": \"T5\", \"path\": \"main.go\", \"shift\": {\"col\": 0, \"eof\": [10, 0, 9, 17], \"line\": -1, \"n\": 0, \"path\": \"main.go\", \"w\": 0}}}, \"note\": \"T5 main.go: 1 edit(s), first [9, 17, 10, 0]; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 26s\", \"shape\": \"hover:range\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "gopls|r5_transforms|hover:range",
+  "run_id": "615a19316735"
+ },
+ "replay_logs": [
+  "logs/gopls-v0.7.1-615a19316735-r5-replay-baseline-20260924-145137-359de1.jsonl.gz",
+  "logs/gopls-v0.7.1-615a19316735-r5-replay-case-20260924-145143-4e607b.jsonl.gz",
+  "logs/gopls-v0.7.1-615a19316735-r5-replay-control-20260924-145140-39963d.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

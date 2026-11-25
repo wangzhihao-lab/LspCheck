@@ -1,0 +1,75 @@
+{
+ "vid": "8f90deb06cba-v00",
+ "ops_before": 0,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 0,
+ "cache_hits": 0,
+ "reduce_seconds": 0.0,
+ "budget_exhausted": false,
+ "probe_log": [],
+ "logs": [
+  "ts6-6.0.3-trda3300-ref-r6-replay-ref-baseline-20261118-223056-409662.jsonl.gz",
+  "ts6-6.0.3-trda3300-ref-r6-replay-ref-control-20261118-223103-466633.jsonl.gz",
+  "ts7-7.0.2-trda3300-r6-replay-test-baseline-20261118-223045-e3ff72.jsonl.gz",
+  "ts7-7.0.2-trda3300-r6-replay-test-control-20261118-223050-0ee447.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [
+   [
+    46,
+    2,
+    46,
+    14,
+    0,
+    "80006",
+    "",
+    ""
+   ],
+   [
+    50,
+    4,
+    50,
+    10,
+    0,
+    "2322",
+    "",
+    ""
+   ],
+   [
+    59,
+    13,
+    59,
+    32,
+    0,
+    "7053",
+    "",
+    ""
+   ]
+  ],
+  "actual": [
+   [
+    50,
+    4,
+    50,
+    10,
+    0,
+    "2322",
+    "",
+    ""
+   ],
+   [
+    59,
+    13,
+    59,
+    32,
+    0,
+    "7053",
+    "",
+    ""
+   ]
+  ]
+ },
+ "ops_after": 0,
+ "total_seconds": 96.9
+}

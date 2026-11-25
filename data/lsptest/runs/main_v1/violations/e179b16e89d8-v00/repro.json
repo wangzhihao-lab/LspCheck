@@ -1,0 +1,507 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "e179b16e89d8-v00",
+ "run_id": "e179b16e89d8",
+ "oracle": "r2_handles",
+ "server": {
+  "kind": "gopls",
+  "version": "v0.23.0"
+ },
+ "project": {
+  "name": "caddyserver/caddy@c18099a0af5e",
+  "source": "corpus",
+  "ref": "temp/corpus/caddyserver__caddy@c18099a0af5e",
+  "commit": "c18099a0af5e88c8d9da0b9d797f6f2c62d60a23",
+  "language": "go"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "modules/caddyhttp/reverseproxy/selectionpolicies_test.go",
+    "positions": [
+     [
+      85,
+      11
+     ],
+     [
+      120,
+      34
+     ],
+     [
+      207,
+      6
+     ],
+     [
+      447,
+      21
+     ],
+     [
+      449,
+      6
+     ],
+     [
+      476,
+      14
+     ],
+     [
+      509,
+      5
+     ],
+     [
+      571,
+      22
+     ],
+     [
+      597,
+      20
+     ],
+     [
+      706,
+      3
+     ],
+     [
+      738,
+      3
+     ],
+     [
+      946,
+      50
+     ]
+    ],
+    "ends": [
+     [
+      85,
+      13
+     ],
+     [
+      120,
+      36
+     ],
+     [
+      207,
+      9
+     ],
+     [
+      447,
+      23
+     ],
+     [
+      449,
+      9
+     ],
+     [
+      476,
+      17
+     ],
+     [
+      509,
+      7
+     ],
+     [
+      571,
+      25
+     ],
+     [
+      597,
+      23
+     ],
+     [
+      706,
+      5
+     ],
+     [
+      738,
+      5
+     ],
+     [
+      946,
+      51
+     ]
+    ],
+    "names": [
+     "pool",
+     "nil",
+     "Error",
+     "pool",
+     "Error",
+     "SetVar",
+     "Host",
+     "false",
+     "Select",
+     "pool",
+     "pool",
+     "w"
+    ]
+   },
+   {
+    "path": "modules/caddyhttp/rewrite/caddyfile.go",
+    "positions": [
+     [
+      63,
+      10
+     ],
+     [
+      68,
+      38
+     ],
+     [
+      79,
+      9
+     ],
+     [
+      109,
+      15
+     ],
+     [
+      117,
+      27
+     ],
+     [
+      120,
+      22
+     ],
+     [
+      136,
+      7
+     ],
+     [
+      148,
+      6
+     ],
+     [
+      167,
+      12
+     ],
+     [
+      171,
+      6
+     ],
+     [
+      211,
+      40
+     ],
+     [
+      280,
+      3
+     ]
+    ],
+    "ends": [
+     [
+      63,
+      12
+     ],
+     [
+      68,
+      42
+     ],
+     [
+      79,
+      13
+     ],
+     [
+      109,
+      16
+     ],
+     [
+      117,
+      29
+     ],
+     [
+      120,
+      24
+     ],
+     [
+      136,
+      9
+     ],
+     [
+      148,
+      8
+     ],
+     [
+      167,
+      14
+     ],
+     [
+      171,
+      7
+     ],
+     [
+      211,
+      49
+     ],
+     [
+      280,
+      6
+     ]
+    ],
+    "names": [
+     "nil",
+     "Rewrite",
+     "NextArg",
+     "h",
+     "args",
+     "lim",
+     "err",
+     "len",
+     "nil",
+     "h",
+     "queryOpsArguments",
+     "route"
+    ]
+   },
+   {
+    "path": "modules/caddypki/acmeserver/policy_test.go",
+    "positions": [
+     [
+      0,
+      13
+     ],
+     [
+      10,
+      41
+     ],
+     [
+      19,
+      24
+     ],
+     [
+      23,
+      14
+     ],
+     [
+      73,
+      41
+     ],
+     [
+      91,
+      14
+     ],
+     [
+      102,
+      8
+     ],
+     [
+      116,
+      24
+     ],
+     [
+      122,
+      5
+     ],
+     [
+      123,
+      9
+     ],
+     [
+      123,
+      33
+     ],
+     [
+      151,
+      25
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      18
+     ],
+     [
+      10,
+      45
+     ],
+     [
+      19,
+      32
+     ],
+     [
+      23,
+      17
+     ],
+     [
+      73,
+      45
+     ],
+     [
+      91,
+      17
+     ],
+     [
+      102,
+      12
+     ],
+     [
+      116,
+      32
+     ],
+     [
+      122,
+      6
+     ],
+     [
+      123,
+      10
+     ],
+     [
+      123,
+      34
+     ],
+     [
+      151,
+      27
+     ]
+    ],
+    "names": [
+     "acmeserver",
+     "testing",
+     "X509NameOptions",
+     "fields",
+     "testing",
+     "fields",
+     "Domains",
+     "X509NameOptions",
+     "_",
+     "tt",
+     "T",
+     "nil"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "codeActionResolve",
+  "path": "modules/caddyhttp/reverseproxy/selectionpolicies_test.go",
+  "line": 738,
+  "character": 3,
+  "extra": "pos:738:3|top1|Inline call to setHealthy|refactor.inline.call|0"
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "modules/caddyhttp/reverseproxy/selectionpolicies_test.go"
+  },
+  {
+   "kind": "change",
+   "path": "modules/caddyhttp/reverseproxy/selectionpolicies_test.go",
+   "start": [
+    0,
+    0
+   ],
+   "end": [
+    0,
+    0
+   ],
+   "text": "\n"
+  }
+ ],
+ "case": {
+  "extra": "pos",
+  "path": "modules/caddyhttp/reverseproxy/selectionpolicies_test.go",
+  "shift": {
+   "col": 0,
+   "line": 0,
+   "text": "\n",
+   "variant": "top"
+  },
+  "sub": "codeAction",
+  "where": [
+   738,
+   3,
+   738,
+   3
+  ]
+ },
+ "shape": "codeActionResolve:changed",
+ "signature": "gopls|r2_handles|codeActionResolve:changed",
+ "expected": [
+  [
+   "modules/caddyhttp/reverseproxy/selectionpolicies_test.go",
+   739,
+   1,
+   739,
+   25,
+   "func() bool {\n\tvar u *Upstream = pool[1]\n\tvar unhealthy, compare int32 = 1, 0\n\tif true {\n\t\tunhealthy, compare = 0, 1\n\t}\n\treturn u.unhealthy.CompareAndSwap(compare, unhealthy)\n}()"
+  ]
+ ],
+ "actual": [
+  [
+   "modules/caddyhttp/reverseproxy/selectionpolicies_test.go",
+   738,
+   1,
+   738,
+   26,
+   "func() bool {\n\tvar u *Upstream = pool[0]\n\tvar unhealthy, compare int32 = 1, 0\n\tif false {\n\t\tunhealthy, compare = 0, 1\n\t}\n\treturn u.unhealthy.CompareAndSwap(compare, unhealthy)\n}()"
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "flake 3/3 [r1:SCR r2:SCR r3:SCR] in 45s",
+ "violation": {
+  "oracle": "r2_handles",
+  "server": "gopls-v0.23.0",
+  "project": "caddyserver/caddy@c18099a0af5e",
+  "key": {
+   "method": "codeActionResolve",
+   "path": "modules/caddyhttp/reverseproxy/selectionpolicies_test.go",
+   "line": 738,
+   "character": 3,
+   "extra": "pos:738:3|top1|Inline call to setHealthy|refactor.inline.call|0"
+  },
+  "expected": [
+   [
+    "modules/caddyhttp/reverseproxy/selectionpolicies_test.go",
+    739,
+    1,
+    739,
+    25,
+    "func() bool {\n\tvar u *Upstream = pool[1]\n\tvar unhealthy, compare int32 = 1, 0\n\tif true {\n\t\tunhealthy, compare = 0, 1\n\t}\n\treturn u.unhealthy.CompareAndSwap(compare, unhealthy)\n}()"
+   ]
+  ],
+  "actual": [
+   [
+    "modules/caddyhttp/reverseproxy/selectionpolicies_test.go",
+    738,
+    1,
+    738,
+    26,
+    "func() bool {\n\tvar u *Upstream = pool[0]\n\tvar unhealthy, compare int32 = 1, 0\n\tif false {\n\t\tunhealthy, compare = 0, 1\n\t}\n\treturn u.unhealthy.CompareAndSwap(compare, unhealthy)\n}()"
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "modules/caddyhttp/reverseproxy/selectionpolicies_test.go"
+   },
+   {
+    "kind": "change",
+    "path": "modules/caddyhttp/reverseproxy/selectionpolicies_test.go",
+    "start": [
+     0,
+     0
+    ],
+    "end": [
+     0,
+     0
+    ],
+    "text": "\n"
+   }
+  ],
+  "detail": "{\"case\": {\"extra\": \"pos\", \"path\": \"modules/caddyhttp/reverseproxy/selectionpolicies_test.go\", \"shift\": {\"col\": 0, \"line\": 0, \"text\": \"\\n\", \"variant\": \"top\"}, \"sub\": \"codeAction\", \"where\": [738, 3, 738, 3]}, \"note\": \"flake 3/3 [r1:SCR r2:SCR r3:SCR] in 45s\", \"shape\": \"codeActionResolve:changed\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "gopls|r2_handles|codeActionResolve:changed",
+  "run_id": "e179b16e89d8"
+ },
+ "replay_logs": [
+  "logs/gopls-v0.23.0-e179b16e89d8-r2-replay-20260923-204042-909795.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

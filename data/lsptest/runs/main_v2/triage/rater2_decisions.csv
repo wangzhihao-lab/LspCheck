@@ -1,0 +1,122 @@
+group,verdict,class,note,judged_at
+gopls-r1-codeaction-changed-h4-c5344e,bug,,R1：配置切换回原样后，relationship.go 第 638 行的 codeAction 多出“Replace interface{} by any”；工具每次都按同一份默认设置应答，新会话没有这一项，关于项目文件的答案随历史变了。,2026-11-20T10:12:34.192Z
+gopls-r1-codeaction-changed-h7-383b05,bug,,R1：同第 43 组的现象，改过一次配置之后，chainable_api.go 第 18 行的 codeAction 多出“Replace interface{} by any”；改的是不相干的 completeUnimported，说明是配置重载后状态变了。,2026-11-20T12:32:13.519Z
+gopls-r1-codeaction-key-lost-h7-547744,bug,,R1：内容相同，joins_test.go 第 10 行的 codeAction 新会话给出 7 项，经过这串打开、关闭、编辑的会话却没有回答；关于项目文件的答案不同。,2026-11-20T08:03:29.928Z
+gopls-r1-completion-extra-h5-2dfa5a,legitimate,L3,R1：多出的只是 atomic.Bool、internalcli.BoolFlag 这类带包名的深层候选，同第 29 组；gopls 文档写明补全按时间预算尽力而为。,2026-11-20T12:50:48.351Z
+gopls-r1-completion-extra-h6-410566,legitimate,L3,R1：多出的只是 fmt.GoStringer、fmt.Stringer 这类深层候选；gopls 文档写明补全按时间预算（completionBudget）尽力而为、会缩小搜索范围。,2026-11-20T07:40:17.848Z
+gopls-r1-completion-extra-h8-02679b,legitimate,L3,R1：多出的只是 atomic.Bool、internalcli.BoolFlag 这类带包名的深层候选；gopls 文档写明补全按时间预算尽力而为、会缩小搜索范围。,2026-11-20T08:54:29.276Z
+gopls-r1-completion-lost-h7-1a1169,bug,,R1：go.mod 改写又改回、测试文件改名又改回，内容相同；geekbang_test.go 第 12 行 string 末尾的补全从 [string] 变成空，连内置类型都没有，不是预算缩小搜索能解释的。,2026-11-20T07:40:17.832Z
+gopls-r1-diagnostics-message-h5-e59f2c,bug,,R1：hooks_test.go 同一条“missing go.sum entry”诊断，新会话说由 gorm.io/gorm/tests 导入、建议 go get -t gorm.io/gorm/tests，被测会话说由 gorm.io/gorm 导入、建议 go get gorm.io/gorm@v1.31.0；内容不同，不只是措辞。,2026-11-20T12:32:13.535Z
+gopls-r1-diagnostics-missing-h7-10a910,bug,,R1：内容相同，joins_test.go 的诊断里新会话有一条“missing go.sum entry … github.com/jinzhu/now”，经过这串操作的会话没有；关于项目文件的答案不同。,2026-11-20T08:38:09.240Z
+gopls-r1-references-extra-h5-e2e003,bug,,R1：chainable_api.go 改名又改回、内容相同后，count_test.go 第 59 行的引用多出 statement_test.go 的 3 条；关于项目文件的答案不同。,2026-11-20T10:59:32.330Z
+gopls-r2-codeactionresolve-changed-codeaction-70b3e9,bug,,R2：顶部插一行后兑现旧的“Split arguments into separate lines”，返回的修改还落在旧行号（第 83 行），列也不同，套到现在的文件上会改错地方；既没失败也不等于新句柄的修改。,2026-11-20T10:24:16.866Z
+gopls-r3-definitionconsistency-changed-d-cf67f4,legitimate,L4,R3：在 assert.X 的包名上跳定义回到本文件的 import 行，在 import 路径字符串上跳定义列出 testify/assert 包的各个文件；gopls 对包名和导入路径分别这样设计，两者本来不是同一件事。,2026-11-20T10:59:32.297Z
+gopls-r3-definitionconsistency-result-error-0-d-f91fb9,legitimate,L4,"不确定：第 8 行 unsafe.Pointer 的包名跳定义回到 import 行，第 4 行是 import 路径字符串 ""unsafe""，在路径上跳定义 gopls 返回错误；包名和导入路径本来是两条不同的导航，差别属设计，只是对 unsafe 报错可以算个小毛病。",2026-11-20T11:18:21.902Z
+gopls-r3-highlightvsreferences-extra-c-84be95,legitimate,L4,R3：光标在 return Table{…} 的 Table 上，gopls 的高亮把整个返回表达式（第 48–50 行）也标出来，这是对返回值的控制流高亮，不是引用；看得见的设计。,2026-11-20T10:12:34.225Z
+gopls-r4-completioninsert-gained-completion-22daf7,tool-artifact,A2,"不确定：补全位置在 testing.T 的 testing 末尾、点号之前，插入后多出 missing ',' / missing parameter type，像是插入了 testing.X 这类带包名的深层候选又留下原来的 .T；页面没写插的是哪一项，倾向是工具选的位置和候选造成的。",2026-11-20T09:29:34.467Z
+gopls-r4-diagnostics-extra-incompatibleassign-inv-mutation-m2-3cfa07,tool-artifact,A1,R4/M2：埋错把内置的 make 拼成 mae，“Create function mae”只能生成一个返回 any、内容 panic 的桩函数，多出的类型错误来自桩函数和把类型当参数的调用；是埋错带来的副作用。,2026-11-20T11:59:28.686Z
+gopls-r4-diagnostics-extra-incompatibleassign-mutation-m2-ade1f0,bug,,R4/M2：“Create variable expiration”生成 expiration := 0，变量成了 int，用在要求 time.Duration 的结构体字段上新增 IncompatibleAssign；修复推断的类型不对（同第 89 组）。,2026-11-20T11:46:29.928Z
+gopls-r4-diagnostics-extra-mismatchedtypes-mutation-m2-dc6e94,bug,,"R4/M2：“Create variable BelonngsTo”生成 BelonngsTo := """"，变量成了 string，和 rel.Type（RelationshipType）比较时新增 MismatchedTypes；修复推断的类型不对，生成的代码自己就有错。",2026-11-20T11:39:13.460Z
+gopls-r4-diagnostics-extra-nonsliceableoperand-mutation-m2-d80a9a,bug,,R4/M2：“Create variable arggs”生成 arggs := 0，变量成了 int，原处要对它切片，新增 NonSliceableOperand；修复推断的类型不对（同第 89、96 组）。,2026-11-20T12:50:48.368Z
+gopls-r4-diagnostics-extra-notatype-mutation-m2-477181,bug,,R4/M2：拼错的 Conttext 用在类型位置，gopls 却提议“Create variable Conttext”，用上后变成 NotAType（局部变量不是类型）；在类型位置建议建变量本身就不对，两个项目都出现。,2026-11-20T10:24:16.833Z
+gopls-r4-diagnostics-extra-undeclaredname-mutation-m2-12380c,bug,,R4/M2：变量因埋错变成未使用，gopls 的“Remove variable qemuArch”只删了第 25 行声明、留下第 27 行的赋值，新增 undefined: qemuArch；修复本身造出新错误（undefined: qemurch 是埋错本身的）。,2026-11-20T07:40:17.848Z
+gopls-r4-diagnostics-extra-untypedniluse-mutation-m2-354f70,bug,,R4/M2：“Create variable sshCCmd”生成的是 sshCCmd := nil，Go 里无类型 nil 不能这样声明，新增 UntypedNilUse；修复生成的代码按语言规则必错，应当写成带类型的声明。,2026-11-20T11:39:13.428Z
+gopls-r4-diagnostics-extra-unusedimport-mutation-m3-aefa9e,bug,,R4/M3：“Delete var sshCmd”删掉了变量声明，它的初始化是这个文件里 cobra 唯一的用处，删完留下未使用的 cobra 导入，新增 UnusedImport（Go 里是编译错误）；修复本身造出新错误。,2026-11-20T11:59:28.588Z
+gopls-r4-diagnostics-extra-wrongargcount-mutation-m3-ac10cc,tool-artifact,A1,R4/M3：埋错删掉调用参数后 checker 变成未使用，修复把它改成 _ 是对的；剩下的 WrongArgCount 是埋错本身（少了参数），不是修复带来的。,2026-11-20T09:48:48.069Z
+gopls-r5-codeaction-extra-t1-6dfb45,legitimate,L5,R5/T1：空行插在 import 块紧后面，“Organize Imports”这个动作只在 import 区域排版需要整理时才出现，按设计取决于行的排布；程序意思没变，但这类答案本来就看空行。,2026-11-20T11:18:21.934Z
+gopls-r5-codeaction-extra-t2-86a8ac,legitimate,L5,R5/T2：注释插在 import 块紧后面，“Organize Imports”只在 import 区域排版需要整理时出现，按设计取决于行的排布（同第 82 组）。,2026-11-20T12:50:48.335Z
+gopls-r5-foldingrange-changed-t4-b07c86,bug,,R5/T4：只把换行改成 CRLF，文件头块注释的折叠区域结束列从 2 变成 1；行内字符没变，位置换算后应当一致。,2026-11-20T08:03:29.912Z
+gopls-r5-foldingrange-changed-t6-ecacad,bug,,不确定：T6 只在第 69 行插了一段行内注释，同一行一个折叠区域的起点就从原来的位置挪到注释开头（15）；按位置换算本应不变，倾向 gopls 计算起点时把注释算了进去，是个小缺陷。,2026-11-20T12:50:48.319Z
+gopls-r5-semantictokens-changed-t4-b423af,bug,,R5/T4：只把换行改成 CRLF，文件头块注释在语义着色里的逐行 comment 记号少了或变了；行内字符不变，换算后应当一致（同第 15 组的 CRLF 问题）。,2026-11-20T09:29:34.483Z
+gopls-r5-semantictokens-extra-t4-867006,bug,,R5/T4：只把换行改成 CRLF，语义着色多出 string 记号，其中一个长度为 0（第 14 行）；行内内容没变，换算后应一致（同第 36 组的 CRLF 问题）。,2026-11-20T12:50:48.351Z
+pyright-r0-references-result-error-32603-fresh-pair-2718c4,bug,,R0：没改过的项目上，backtesting/__init__.py 第 3 行的 references 请求在两个独立新会话里都返回内部错误 -32603；正常位置上的请求不该让服务器内部出错。,2026-11-20T11:39:13.444Z
+pyright-r1-definition-extra-h5-2e7477,legitimate,L2,R1：被测会话多出的定义位置在 site-packages 里的 typing_extensions.py，差别只在项目以外的位置。,2026-11-20T10:32:59.773Z
+pyright-r1-definition-missing-h5-964341,legitimate,L2,R1：被测会话少的那个定义位置在 Python 标准库的 _py_warnings.py 里，差别只在项目以外的位置。,2026-11-20T10:24:16.850Z
+pyright-r1-hover-text-h2-fb2ed0,bug,,R1：内容相同，iqiyi.py 第 138 行 tvid 的悬停类型一边是 Unknown | None、一边是 str | Any | None；关于项目文件的答案不同，不属于例外。,2026-11-20T06:37:43.515Z
+pyright-r1-hover-text-h5-f24c4e,bug,,R1：versions.py 改名再改回、内容相同后，第 7 行 warn 的悬停提示少了文档字符串；关于项目文件位置的答案不同，不属于三种例外。,2026-11-20T07:40:17.832Z
+pyright-r1-hover-text-h8-2a8227,bug,,R1：内容相同，ifeng.py 第 12 行参数 title 的悬停类型一边是 Unknown | None、一边是 str | Any | None；关于项目文件的答案不同（与第 3 组同类）。,2026-11-20T10:12:34.209Z
+pyright-r1-references-extra-h4-a63d47,legitimate,L2,R1：被测会话（切过 workspace 诊断模式又切回）多出的引用都在 site-packages 里的 httpx 等第三方库文件中，差别只在项目以外的位置。,2026-11-20T12:23:36.223Z
+pyright-r1-references-extra-h9-37c1a2,bug,,R1：内容相同，只是先打开过 scrapy/utils/misc.py，test_feedexport.py 第 840 行的引用就多出 misc.py 第 33、54 行两处；项目文件里的引用随打开历史变化。,2026-11-20T12:23:36.239Z
+pyright-r1-references-missing-h5-64453c,legitimate,L2,R1：被测会话少的那条引用在 Python 标准库的 _py_warnings.py 里，差别只在项目以外的位置（同第 51 组）。,2026-11-20T12:32:13.634Z
+pyright-r1-signaturehelp-changed-h9-846c6c,bug,,R1：内容相同，被测会话对 utils/dataloaders.py 第 345 行的参数提示把返回类型给成 Unknown，新会话给出具体的 tuple 类型；关于项目文件的答案不同，不属于三种例外。,2026-11-20T06:37:43.499Z
+pyright-r1-typedefinition-extra-h2-764582,legitimate,L2,R1：被测会话多出的类型定义位置在 pyright 自带 typeshed 的 builtins.pyi 里，差别只在项目以外的位置（同第 20 组）。,2026-11-20T10:45:29.478Z
+pyright-r1-typedefinition-extra-h8-9c51fd,legitimate,L2,R1：被测会话多出的类型定义位置在 pyright 自带 typeshed 的 builtins.pyi 里，差别只在项目以外的位置。,2026-11-20T08:38:09.240Z
+pyright-r3-definitionconsistency-extra-d-3d112f,legitimate,L4,R3：第 33 行是这个成员的声明处，在那里跳定义多给出第 129 行的另一处赋值；在第 117 行的用法上只回到带注解的声明。声明处列出全部声明、用法处只给主声明，是看得见的设计。,2026-11-20T10:54:00.640Z
+pyright-r3-definitionconsistency-lost-d-a4eaed,legitimate,L4,"R3：所谓“引用”是 __init__.py 里 __all__ = [""VertexProvider""] 的字符串，pyright 把 __all__ 条目算进引用，但在字符串上跳定义不给结果；看得见的设计，三个项目都一样。",2026-11-20T12:50:48.286Z
+pyright-r3-definitionconsistency-missing-d-81a7e5,legitimate,L4,R3：第 30 行是成员的声明处，在那里跳定义多给出第 57 行的另一处赋值；第 60 行的用法只回到带注解的声明。同第 67 组，是看得见的设计，三个项目都一样。,2026-11-20T12:32:13.584Z
+pyright-r3-highlightvsreferences-gained-c-3118cc,bug,,不确定：光标在 _P.args 的 args 上，高亮标出文件里 7 处 args（含别的函数的 *args 参数），引用在本文件里一处都没给；同一文件两条路径对不上，看不出有文档说明，倾向 bug，三个项目都一样。,2026-11-20T12:23:36.255Z
+pyright-r4-completioninsert-gained-completion-79a584,bug,,R4：插入补全后出现“future feature _VersionInfo is not defined”，说明补全带出了 from __future__ import _VersionInfo；__future__ 里的私有名不是合法的 future 特性，补全不该提供这种自动导入。,2026-11-20T10:32:59.741Z
+rust-analyzer-r2-completionresolve-changed-completion-3170a1,bug,,R2：顶部插两行后兑现旧的补全句柄，返回的 textEdit 范围是从 407:0 到 406:61，起点在终点之后，是无效范围；既不是失败也不是新句柄的修改。,2026-11-20T08:54:29.178Z
+rust-analyzer-r3-definitionconsistency-changed-d-2c6179,legitimate,L4,R3：impl 块里 Self 跳定义落到 impl Layout 头上的类型名，而直接在 impl Layout 的 Layout 上跳定义到 struct；Self 指向所在 impl 是看得见的设计，协议不要求两者一致。,2026-11-20T08:03:29.896Z
+rust-analyzer-r3-definitionconsistency-missing-d-586fd8,legitimate,L4,R3：第 12 行是结构体简写字段 source，跳定义同时给出局部变量和 error.rs 里的字段；作为“引用”的第 11 行是闭包参数本身，只回到自己。简写同时指两样是看得见的设计。,2026-11-20T08:54:29.161Z
+rust-analyzer-r3-diagnostics-missing-inactive-code-a-0b07f0,bug,,R3：同一项目同一文件，默认的拉取诊断有一百多条 inactive_code 提示，推送路线什么都没有；两条路径应一致，一年前的版本没有这个差别。,2026-11-20T08:54:29.260Z
+rust-analyzer-r3-diagnostics-missing-unlinked-file-a-efb484,bug,,R3：classes-fail.rs 不属于任何 crate，默认的拉取诊断给出 unlinked-file 提示，推送路线什么都没有；两条路径应一致（同第 28 组的推送缺诊断）。,2026-11-20T11:59:28.637Z
+rust-analyzer-r3-highlightvsreferences-extra-c-c2bfed,legitimate,L4,R3：在 use clap::Parser 的 Parser 上高亮，多出第 67 行 Opt::parse() 的 parse；rust-analyzer 对 trait 导入会把用到的 trait 方法一起高亮，是看得见的设计，不是引用。,2026-11-20T08:54:29.292Z
+rust-analyzer-r3-semantictokensrange-changed-b-b6e28b,bug,,R3：auth.rs 同一段代码，range 请求的着色丢了 macro、procMacro 修饰，还把一个方法标成 unresolvedReference，与 full 截取那一段不一致；协议要求 range 的结果正确完整。,2026-11-20T08:03:29.912Z
+rust-analyzer-r4-completioninsert-gained-completion-e99b79,bug,,"R4：在 #[derive(…)] 的 derive 末尾补全，插入的属性补全自带一对括号，和原有参数列表连在一起，出现 expected `]`, found `(`；三个项目都出现，补全没顾及已有括号。",2026-11-20T07:40:17.848Z
+rust-analyzer-r4-diagnostics-extra-e0063-mutation-m1-aeef82,bug,,R4/M1：“Add .to_owned() here”把结构体简写字段 space 改成了 space.to_owned()，没补上 space: 字段名，于是多出 E0063 缺少字段 space；修复本身把代码改坏。,2026-11-20T08:03:29.896Z
+rust-analyzer-r4-diagnostics-extra-e0560-mutation-m2-1f508d,tool-artifact,A1,R4/M2：“Fill struct fields”补上了 weight_limit，没造出新错误；剩下的 E0560 no such field 是埋错拼错的 weightlimit 本身。,2026-11-20T09:48:48.086Z
+rust-analyzer-r4-diagnostics-extra-inactive-code-quickfix-f2d641,tool-artifact,A2,R4：针对 inactive_code（#[cfg] 关掉的代码）去应用“Remove all unused imports”，这个修复本来就不是消这条提示的；未启用代码的提示也没法靠修复消掉，是工具把不相干的修复配给了这条诊断。,2026-11-20T10:12:34.241Z
+rust-analyzer-r4-syntax-gained-mutation-m1-7af5e4,bug,,"R4/M1：同第 13 组，“Add .to_owned() here”把简写字段 space 改成 space.to_owned()，没加字段名，产生语法错误 expected one of `,`, `:`, or `}`, found `.`。",2026-11-20T09:29:34.450Z
+rust-analyzer-r5-codeaction-changed-t6-4ee734,legitimate,L1,R5/T6：工具在路径中间插了注释，“Inline std::io::stdin”这个重构的标题照源码文字把注释也印了进去；动作本身没变，只是标题的打印方式（同第 98 组）。,2026-11-20T12:32:13.568Z
+rust-analyzer-r5-documentsymbol-changed-t6-a3a950,legitimate,L1,R5/T6：工具在泛型参数里插了一段注释，impl 的大纲名字照源码文字原样带上了注释；符号本身、位置都没变，只是名字的打印方式把注释也印了出来。,2026-11-20T11:59:28.604Z
+ts6-r1-codeaction-extra-h5-f48d27,bug,,R1：内容相同，blockquote.ts 第 4 行的 codeAction 在被测会话里多出“Add all missing imports”“Add import from node:test”；只是打开文件的先后不同，关于项目文件的答案就变了。,2026-11-20T12:23:36.206Z
+ts6-r1-codeaction-key-lost-h8-3e0e0f,bug,,R1：内容相同，spread-innerhtml.spec.tsx 第 44 行的 codeAction 新会话给出 4 个重构，经过这串连续请求的会话没有回答；关于项目文件的答案不同。,2026-11-20T10:45:29.462Z
+ts6-r1-completion-lost-h9-ce1ffc,bug,,R1：文件改名又改回、内容相同后，TopMenu.tsx 第 54 行的补全从 52 个设置项变成空列表；关于项目文件的答案不同（与第 4 组同一段历史）。,2026-11-20T10:12:34.209Z
+ts6-r1-definition-lost-h9-898f29,bug,,R1：同第 4 组那段历史（改名又改回、内容相同），TopMenu.tsx 第 54 行跳定义从 useUserSettingsRoot.ts 的一处变成空集；关于项目文件的答案不同。,2026-11-20T10:59:32.265Z
+ts6-r1-diagnostics-extra-2307-7006-h9-8325a2,bug,,R1：useUserSettings.ts 改名又改回、内容相同后，TopMenu.tsx 多出“找不到模块 ./hooks/useUserSettings”（2307）和一条隐式 any；关于项目文件的答案不同（同第 4 组）。,2026-11-20T11:59:28.670Z
+ts6-r1-diagnostics-moved-2875-h8-751ff9,bug,,R1：内容相同，同一行的两条 JSX 诊断（7026 和 2875）在两个会话里对调了范围，各自的位置变了，不只是顺序；关于项目文件的答案不同。,2026-11-20T09:29:34.467Z
+ts6-r1-documenthighlight-missing-h9-2e657a,bug,,R1：modelOptions.ts 改名又改回、内容相同后，第 370 行的高亮少了第 791 行的两处；关于项目文件的答案不同。,2026-11-20T10:24:16.866Z
+ts6-r1-hover-text-h5-b3855d,legitimate,L1,R1：同第 65 组，length 属性的悬停里所属类型一次印成 Array<T>、一次印成 Array<string>，类型和说明都一样，只是打印方式不同。,2026-11-20T11:46:29.895Z
+ts6-r1-hover-text-h8-2ce168,legitimate,L1,R1：悬停文字只差联合类型成员的顺序（DOMElement | TextNode 与 TextNode | DOMElement），内容相同（同第 6 组）。,2026-11-20T11:39:13.477Z
+ts6-r1-inlayhint-changed-h8-8f6569,legitimate,L1,R1：差别只是联合类型成员的打印顺序（DOMElement | TextNode 与 TextNode | DOMElement），内容相同。,2026-11-20T06:37:43.532Z
+ts6-r1-inlayhint-changed-h9-b9d052,bug,,R1：改名又改回、编辑又改回、内容相同后，modelOptions.ts 第 790 行的行内类型提示从 : string 变成 : any；关于项目文件的答案不同。,2026-11-20T11:39:13.428Z
+ts6-r1-references-missing-h5-cc8950,bug,,R1：util.ts 改名又改回、内容相同后，第 3 行这个导出的引用少了 ffmpeg.ts、App.tsx 等处的 6 条；关于项目文件的答案不同，三个项目都出现。,2026-11-20T10:32:59.806Z
+ts6-r1-semantictokens-changed-h9-c4368c,bug,,R1：useUserSettings.ts 改名又改回、内容相同后，TopMenu.tsx 里几个局部常量的语义着色从 function 变成 variable；关于项目文件的答案不同。,2026-11-20T10:32:59.790Z
+ts6-r1-signaturehelp-changed-h5-db5a5e,legitimate,L1,R1：参数提示的长签名里只差一处联合类型成员的顺序（$ZodIssueInvalidType 和 $ZodIssueUnrecognizedKeys 对调），内容相同。,2026-11-20T11:46:29.879Z
+ts6-r1-typedefinition-lost-h9-b52749,bug,,R1：文件改名又改回、内容相同之后，TopMenu.tsx 第 54 行跳到类型定义从 useUserSettingsRoot.ts 的一处变成空集；关于项目文件的答案不同。,2026-11-20T06:37:43.515Z
+ts6-r3-definitionconsistency-changed-d-bf619d,legitimate,L2,R3：两处跳定义都落在 lib.dom.d.ts，只是对应的声明行不同（两个用法的接收者类型不同）；差别只在项目以外的库文件里，三个项目都一样。,2026-11-20T10:45:29.544Z
+ts6-r3-definitionconsistency-extra-d-1fb668,legitimate,L4,R3：重载函数在调用处跳定义只给命中的那个签名，在非调用的引用处给出全部三处声明（重载加实现）；TypeScript 的既定行为，两种都说得通。,2026-11-20T10:59:32.314Z
+ts6-r3-definitionconsistency-lost-d-fb78dd,legitimate,L4,R3：第 169 行是参数解构里的剩余元素 ...props，在它本身上跳定义 TS 返回空（解构名跳定义是去找源类型里的属性，剩余元素没有对应属性），在第 178 行的用法上能回到它；看得见的设计。,2026-11-20T11:39:13.444Z
+ts6-r3-definitionconsistency-missing-d-0ab4de,legitimate,L4,R3：两处是不同组件上同名的属性，一处跳定义给出 SectionHeader 的 prop 加库里的声明，另一处只给库里的声明；它们只是经共同的基声明被引用串在一起，跳定义不同是看得见的设计。,2026-11-20T11:18:21.951Z
+ts6-r3-highlightvsreferences-gained-c-e8db7c,legitimate,L4,R3：光标在 JSX 内置标签 label 上，高亮成对标出开、闭两个标签，而这个项目没有 JSX.IntrinsicElements，引用查不到符号；配对高亮标签是看得见的设计。,2026-11-20T10:45:29.511Z
+ts6-r4-diagnostics-changed-1064-2322-quickfix-d597f5,bug,,R4：对原有代码的 80006 建议应用“Convert to async function”，函数仍标着 Bluebird 返回类型，于是新增 1064（async 函数必须返回全局 Promise）；修复把代码改出了新错误，没有埋错参与。,2026-11-20T10:32:59.773Z
+ts6-r4-diagnostics-changed-mutation-m1-34f06f,bug,,R4/M1：“Fix all detected spelling errors”把组件标签 Reveal 全改成小写 eval，在 JSX 里变成内置元素，多出一串 7026；对组件标签建议小写名字本身就改变了含义（同第 37 组）。,2026-11-20T09:48:48.069Z
+ts6-r4-diagnostics-extra-17000-mutation-m3-07673d,tool-artifact,A1,R4/M3：埋错把 JSX 属性里的表达式删空，留下 17000；修复删掉因此变成未使用的 showActions 是对的，剩下的 17000 是埋错本身。,2026-11-20T10:54:00.705Z
+ts6-r4-diagnostics-extra-17002-2552-mutation-m1-727795,bug,,R4/M1：同第 37 组，“Change spelling to 'eval'”只改开标签，闭标签不变，新增 17002 等错误；对组件标签建议小写名字本身就不对。,2026-11-20T11:46:29.912Z
+ts6-r4-diagnostics-extra-2304-mutation-m2-1554be,tool-artifact,A1,R4/M2：埋错把 BoardViewHeader 拼错后导入变成未使用，修复删掉这条导入是对的；剩下的 2304 找不到 BoardVieewHeader 是埋错本身，三个项目都一样。,2026-11-20T11:46:29.912Z
+ts6-r4-diagnostics-extra-2322-2345-mutation-m1-2566f2,tool-artifact,A1,R4/M1：同第 5 组，工具删掉 join 的导入后，被测的快速修复从 bluebird 导入同名 join，多出的 2322/2345 来自这个同名候选的类型；是埋错加工具选候选造成的。,2026-11-20T08:54:29.243Z
+ts6-r4-diagnostics-extra-2322-mutation-m1-dc576a,tool-artifact,A1,R4/M1：工具删掉 Command 的导入后，被测的快速修复从 @commander-js/extra-typings 导入了同名的 Command，多出的 2322 来自这个同名类型；同第 16 组，是埋错加工具选候选造成的。,2026-11-20T10:59:32.281Z
+ts6-r4-diagnostics-extra-2322-mutation-m3-1879f3,bug,,"R4/M3：埋错删掉了 globalObj 属性，“Add missing properties”补回时填的是 undefined，与 Record<string, any> 不合，新增 2322；类型已知、本可填 {}，修复生成的代码自己就通不过类型检查（与第 85、89 组同类）。",2026-11-20T11:39:13.411Z
+ts6-r4-diagnostics-extra-2339-6133-mutation-m1-4cd363,tool-artifact,A1,R4/M1：工具删掉 react 的 createContext 导入后，被测的是“Add missing function declaration”这个桩函数修复，多出的 2339、6133 来自桩函数本身（返回 void、参数未用）；修复按设计就是生成桩，差别是埋错带来的。,2026-11-20T09:29:34.434Z
+ts6-r4-diagnostics-extra-2345-2554-mutation-m1-d523d0,tool-artifact,A1,R4/M1：工具删掉导入后，被测的拼写修复把名字改成作用域里另一个相近的函数 setClaudeConfigHomeDir，它的签名不同，于是多出 2345/2554；候选本身合法，是埋错后挑了相近名字带来的副作用。,2026-11-20T12:23:36.190Z
+ts6-r4-diagnostics-extra-2353-mutation-m1-2b6bdb,tool-artifact,A1,R4/M1：同第 16 组（TS6 版），被测的修复从 vscode-languageserver-protocol 导入同名 Command，多出的 2353 来自这个同名类型；是埋错加工具选候选造成的。,2026-11-20T11:18:21.918Z
+ts6-r4-diagnostics-extra-2448-7022-mutation-m1-e5d199,bug,,R4/M1：“Change spelling to 'folder'”把名字改成正在声明、还没声明完的块级变量 folder，于是新增 2448（声明前使用）和 7022；建议一个在自身初始化里不能用的名字，本身就不合语言规则。,2026-11-20T10:45:29.511Z
+ts6-r4-diagnostics-extra-2552-mutation-m2-f7e816,tool-artifact,A1,R4/M2：修复“Infer parameter types from usage”补上了参数类型，没造出新错误；剩下的 2552 找不到 lie 是埋错把 line 拼错本身，三个项目都一样。,2026-11-20T11:59:28.653Z
+ts6-r4-diagnostics-extra-2554-mutation-m3-d2ab31,tool-artifact,A1,R4/M3：埋错删掉调用参数后 getLineProps 变成未使用，修复把它删掉是对的；剩下的 2554（少了参数）是埋错本身，不是修复带来的。,2026-11-20T10:54:00.673Z
+ts6-r4-diagnostics-extra-2555-mutation-m3-8de4a9,tool-artifact,A1,R4/M3：埋错删掉调用参数后 labels 变成未使用，修复删掉它是对的；剩下的 2555（参数不够）是埋错本身。,2026-11-20T12:23:36.272Z
+ts6-r4-diagnostics-extra-2558-2604-mutation-m1-e220b8,tool-artifact,A1,R4/M1：工具删掉 createContext 的导入后，被测的快速修复从 Node 的 vm 模块导入了同名函数，多出的 2558/2604 来自这个同名候选；同第 5 组，差别是埋错加工具选候选造成的。,2026-11-20T10:54:00.722Z
+ts6-r4-diagnostics-extra-2604-mutation-m1-0e3b68,tool-artifact,A1,R4/M1：工具删掉 createContext 的导入后，被测的是“Add missing function declaration”桩函数修复，多出的 2604 来自桩函数没有返回 Context；同第 31 组，差别是埋错加桩函数设计带来的。,2026-11-20T09:48:48.053Z
+ts6-r4-syntax-gained-mutation-m1-7e3417,bug,,R4/M1：“Change spelling to 'eval'”只把开标签 <Reveal 改成 <eval，闭标签 </Reveal> 没动，新增语法错误 TS17002；修复本身把 JSX 改坏，而且对组件标签建议小写名字也不对。,2026-11-20T09:48:48.037Z
+ts6-r5-foldingrange-extra-t2-625065,tool-artifact,A2,R5/T2：同第 19 组（TS6 版），多出的“注释”折叠区域由工具插入的注释和原有单行注释合成；插注释本身就改变注释折叠的答案，比较不成立。,2026-11-20T10:54:00.689Z
+ts7-r1-hover-text-h8-500422,legitimate,L1,R1：同一个 length 属性，悬停里所属类型一次印成 Array<T>、一次印成 Array<string>，类型 number 和说明都一样，只是打印方式不同。,2026-11-20T10:45:29.527Z
+ts7-r3-definitionconsistency-changed-d-a42b32,legitimate,L2,R3：同第 66 组（TS7 版），两处跳定义都在 lib.dom.d.ts，只是落到不同的声明行；差别只在项目以外的库文件里。,2026-11-20T10:59:32.297Z
+ts7-r3-definitionconsistency-extra-d-fb74d3,legitimate,L4,R3：在定义文件内部的那处引用上跳定义，多给出同文件第 18 行的另一处声明；声明所在文件里列出相关的全部声明、别处只给主要的，是看得见的设计，三个项目都一样。,2026-11-20T11:18:21.951Z
+ts7-r3-definitionconsistency-lost-d-0129b3,bug,,R3：对同一个符号 NodeJS，从 test/helpers/create-stdout.ts 的引用跳定义得到 @types/node 里的 9 处声明，从 src/ink.tsx 第 147 行的引用跳定义却得到空集；同一符号两条路径不一致，没有文档解释。,2026-11-20T06:22:36.472Z
+ts7-r3-definitionconsistency-missing-d-560852,legitimate,L4,R3：equalizer/index.ts 第 83 行是对象字面量里实现接口的属性声明，跳定义给出它自己加 types/plugins.ts 的接口成员；back.ts 第 30 行是用法，只回到接口成员。声明处包含自身是看得见的设计。,2026-11-20T10:12:34.192Z
+ts7-r3-highlightvsreferences-gained-c-9f16d3,legitimate,L4,R3：同第 64 组的位置（JSX 内置标签 label），TS7 高亮把开标签和闭标签整段标出，引用查不到符号；配对高亮标签是看得见的设计，三个项目都一样。,2026-11-20T10:54:00.705Z
+ts7-r4-diagnostics-extra-2322-2345-mutation-m1-5efcb9,tool-artifact,A1,R4/M1：工具删掉 join 的导入后，被测的快速修复是“从 bluebird 导入 join”，多出的 2322/2345 来自这个同名候选本身的类型；服务器列出多个导入来源是正常设计，差别是埋错加工具选候选造成的。,2026-11-20T06:37:43.532Z
+ts7-r4-diagnostics-extra-2322-mutation-m1-e5a893,tool-artifact,A1,R4/M1：同第 74 组（TS7 版），工具删掉 Command 的导入后，被测的修复从 @commander-js/extra-typings 导入同名 Command，多出的 2322 来自这个同名类型；是埋错加工具选候选造成的。,2026-11-20T11:18:21.869Z
+ts7-r4-diagnostics-extra-2353-mutation-m1-cf35f5,tool-artifact,A1,R4/M1：工具删掉 Command 的导入后，被测的快速修复从 vscode-languageserver-protocol 导入了同名的 Command，多出的 2353 来自这个同名类型；服务器列出多个导入来源是正常设计。,2026-11-20T08:03:29.912Z
+ts7-r4-diagnostics-extra-2558-2604-mutation-m1-ead3ee,tool-artifact,A1,R4/M1：同第 72 组（TS7 版），被测的修复从 node:vm 导入同名的 createContext，多出的 2558/2604 来自这个同名候选；是埋错加工具选候选造成的。,2026-11-20T12:50:48.384Z
+ts7-r5-foldingrange-extra-t2-5dd83a,tool-artifact,A2,R5/T2：多出的折叠区域是“注释”类，正好由工具插入的那行注释和下面原有的单行注释合成；插注释本身就改变注释折叠的答案，这个比较不成立。,2026-11-20T08:38:09.223Z
+ts7-r6-completion-changed-completion-997cb3,legitimate,L6,R6：几百项的补全列表里，TS7 少了 Long、protobuf 这类全局名，多了 addNotification、removeNotification；只是候选集合边缘的差别，看不出哪边错，属于 TS6 与 TS7 的实现差别。,2026-11-20T10:24:16.833Z
+ts7-r6-completion-missing-completion-60ede6,legitimate,L6,R6：在 JSX 标签名位置补全，TS7 少了 RevealOrder（只作为类型导入）和 babel；这两个都不能当 JSX 标签用，TS7 过滤得更严，两边都说得通。,2026-11-20T09:48:48.053Z
+ts7-r6-definition-changed-definition-1c2318,legitimate,L6,R6：同一处用法跳定义，TS6 停在本文件第 3 行的导入名上，TS7 直接跳到 hexo-util 的声明文件整体；两种解析别名的方式都说得通，属于 TS6 与 TS7 的差别。,2026-11-20T11:46:29.928Z
+ts7-r6-definition-extra-definition-d8e982,legitimate,L6,R6：重载函数上跳定义，TS6 只给命中的那一个签名，TS7 把同名的三处声明（重载加实现）都给出；两种都站得住，三个项目都一样。,2026-11-20T08:38:09.256Z
+ts7-r6-definition-gained-definition-24364e,legitimate,L6,R6：位置是参数解构里的剩余元素 ...props 本身，TS6 跳定义返回空（同第 88 组），TS7 返回它自己；两种都说得通，属于 TS6 与 TS7 的差别。,2026-11-20T12:32:13.601Z
+ts7-r6-diagnostics-missing-2304-2339-2593-diagnostics-31eb88,legitimate,L6,不确定：同第 22 组，hexo 的 mocha 测试文件里 TS6 报 describe/it/should 找不到（2593/2304/2339），TS7 不报；像是两者给测试文件配项目和 types 的方式不同，看不出哪边错，倾向 L6。,2026-11-20T10:24:16.866Z
+ts7-r6-diagnostics-missing-2304-2593-diagnostics-58256c,legitimate,L6,不确定：TS6 在这个 mocha 测试文件里报 describe、it 等找不到（2593/2304），TS7 不报；看起来是两者给不在 tsconfig 里的测试文件配置项目和 types 的方式不同，看不出哪边错，倾向 L6。,2026-11-20T08:38:09.240Z
+ts7-r6-diagnostics-missing-80006-diagnostics-da3300,legitimate,L6,R6：TS7 少的是 80006“可以改成 async 函数”这类建议级提示，不是错误；提不提这类建议由实现决定，属于 TS6 与 TS7 的差别。,2026-11-20T08:38:09.256Z
+ts7-r6-hover-changed-hover-e5c91e,legitimate,L6,R6：同一个 describe，TS6 显示成带“+1 overload”的函数，TS7 显示成 const 加函数类型；只是悬停文字的打印方式不同，三个项目都一样。,2026-11-20T09:29:34.450Z
+ts7-r6-hover-lost-hover-feed64,legitimate,L6,R6：import 列表里一个解析不到的名字，TS6 悬停只给“import useContext”，TS7 不给悬停；两边都只是表示没有更多信息，属于 TS6 与 TS7 的差别。,2026-11-20T10:32:59.757Z

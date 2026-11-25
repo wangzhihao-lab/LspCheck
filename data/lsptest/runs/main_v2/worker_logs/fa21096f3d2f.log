@@ -1,0 +1,12 @@
+2026-11-18 04:11:32,985 INFO campaign_run run fa21096f3d2f: r4_edits on ts6 6.0.3, solidjs/solid@4b62bc29e04b seed 1 settled, targets ['examples/rendering/shared/src/components/Reveal.tsx', 'packages/web/test/hydration/spread-innerhtml.spec.tsx', 'packages/web/test/latest-shadow-owned-write-issue-3378.spec.tsx']
+2026-11-18 04:19:52,646 INFO campaign_run run fa21096f3d2f: 6 candidate(s) in 500s; confirming
+2026-11-18 04:22:30,006 INFO flake replay 1/3 of ts6|r4_edits|diagnostics:extra:17002,2552: settled=True control_stable=True reproduced=True (157.4s)
+2026-11-18 04:25:07,216 INFO flake replay 2/3 of ts6|r4_edits|diagnostics:extra:17002,2552: settled=True control_stable=True reproduced=True (157.2s)
+2026-11-18 04:27:49,635 INFO flake replay 3/3 of ts6|r4_edits|diagnostics:extra:17002,2552: settled=True control_stable=True reproduced=True (162.4s)
+2026-11-18 04:30:17,721 INFO flake replay 1/3 of ts6|r4_edits|syntax:gained: settled=True control_stable=True reproduced=True (148.1s)
+2026-11-18 04:32:39,814 INFO flake replay 2/3 of ts6|r4_edits|syntax:gained: settled=True control_stable=True reproduced=True (142.1s)
+2026-11-18 04:35:04,243 INFO flake replay 3/3 of ts6|r4_edits|syntax:gained: settled=True control_stable=True reproduced=True (144.4s)
+2026-11-18 04:38:10,845 INFO flake replay 1/3 of ts6|r4_edits|diagnostics:changed:: settled=True control_stable=True reproduced=True (186.6s)
+2026-11-18 04:40:57,806 INFO flake replay 2/3 of ts6|r4_edits|diagnostics:changed:: settled=True control_stable=True reproduced=True (167.0s)
+2026-11-18 04:43:56,068 INFO flake replay 3/3 of ts6|r4_edits|diagnostics:changed:: settled=True control_stable=True reproduced=True (178.2s)
+2026-11-18 04:43:56,118 INFO campaign_run run fa21096f3d2f finished: ok, 3 confirmed of 6 candidate(s), 1943s

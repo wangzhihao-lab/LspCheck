@@ -1,0 +1,67 @@
+{
+ "vid": "3ed0e189007e-v08",
+ "ops_before": 5,
+ "narrowed": true,
+ "reduced_confirmed": "2/3",
+ "probes": 11,
+ "cache_hits": 2,
+ "reduce_seconds": 121.476,
+ "budget_exhausted": false,
+ "probe_log": [
+  [
+   4,
+   false
+  ],
+  [
+   4,
+   false
+  ],
+  [
+   4,
+   false
+  ],
+  [
+   4,
+   true
+  ],
+  [
+   3,
+   true
+  ],
+  [
+   1,
+   false
+  ],
+  [
+   2,
+   false
+  ],
+  [
+   1,
+   false
+  ],
+  [
+   1,
+   false
+  ],
+  [
+   2,
+   false
+  ],
+  [
+   2,
+   false
+  ]
+ ],
+ "logs": [
+  "ts6-6.0.3-trdb5a5e-replay-baseline-20260925-180826-b4e470.jsonl.gz",
+  "ts6-6.0.3-trdb5a5e-replay-control-20260925-180826-c6912e.jsonl.gz",
+  "ts6-6.0.3-trdb5a5e-replay-history-20260925-180832-b721ec.jsonl.gz"
+ ],
+ "observed": {
+  "expected": "fromEntries(entries: Iterable<readonly [PropertyKey, number]>): { [k: string]: number; }",
+  "actual": "fromEntries(entries: Iterable<readonly [PropertyKey, unknown]>): { [k: string]: unknown; }"
+ },
+ "ops_after": 5,
+ "total_seconds": 193.7
+}

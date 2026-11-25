@@ -1,0 +1,30 @@
+{
+ "queries": [
+  "\"signature help\" wrong repo:microsoft/pyright is:issue",
+  "\"signature help\" stale repo:microsoft/pyright is:issue"
+ ],
+ "matches": [
+  {
+   "repo": "microsoft/pyright",
+   "number": 4813,
+   "title": "ParamSpec-based signature change works with functions but not classes",
+   "url": "https://github.com/microsoft/pyright/issues/4813",
+   "state": "closed",
+   "created": "2023-03-21",
+   "comments": 11,
+   "query": "\"signature help\" wrong repo:microsoft/pyright is:issue"
+  },
+  {
+   "repo": "microsoft/pyright",
+   "number": 2758,
+   "title": "reportGeneralTypeIssues when using pep612 `ParamSpec`",
+   "url": "https://github.com/microsoft/pyright/issues/2758",
+   "state": "closed",
+   "created": "2021-12-23",
+   "comments": 14,
+   "query": "\"signature help\" wrong repo:microsoft/pyright is:issue"
+  }
+ ],
+ "notes": [],
+ "authenticated": true
+}

@@ -1,0 +1,6 @@
+2026-09-24 11:50:01,431 INFO campaign_run run d682da8dbdea: r1_history on ts7 7.0.2, react-hook-form/react-hook-form@5fd9ef65290b seed 3 settled, targets ['examples/V7/disableNativeValidation.tsx', 'src/__tests__/logic/getValidateError.test.ts', 'src/__tests__/logic/skipValidation.test.ts']
+2026-09-24 11:58:57,390 INFO campaign_run run d682da8dbdea: 12 candidate(s) in 536s; confirming
+2026-09-24 11:59:54,189 INFO flake replay 1/3 of ts7|r1_history|references:missing: settled=True control_stable=True reproduced=True (56.8s)
+2026-09-24 12:00:49,973 INFO flake replay 2/3 of ts7|r1_history|references:missing: settled=True control_stable=True reproduced=True (55.8s)
+2026-09-24 12:01:47,187 INFO flake replay 3/3 of ts7|r1_history|references:missing: settled=True control_stable=True reproduced=True (57.2s)
+2026-09-24 12:01:47,306 INFO campaign_run run d682da8dbdea finished: ok, 1 confirmed of 12 candidate(s), 706s

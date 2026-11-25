@@ -1,0 +1,254 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "085638e189e1-v00",
+ "run_id": "085638e189e1",
+ "oracle": "r4_edits",
+ "server": {
+  "kind": "ts7",
+  "version": "7.0.2"
+ },
+ "project": {
+  "name": "ChromeDevTools/chrome-devtools-mcp@2250cdcde4aa",
+  "source": "corpus",
+  "ref": "temp/corpus/ChromeDevTools__chrome-devtools-mcp@2250cdcde4aa",
+  "commit": "2250cdcde4aad79d54101c80346df4190e0c2da7",
+  "language": "typescript"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "scripts/eval_scenarios/network_test.ts",
+    "positions": [
+     [
+      23,
+      4
+     ]
+    ],
+    "ends": [],
+    "names": [
+     ""
+    ]
+   },
+   {
+    "path": "tests/e2e/telemetry.test.ts",
+    "positions": [],
+    "ends": [],
+    "names": []
+   },
+   {
+    "path": "tests/trace-processing/ChunkedTraceParser.test.ts",
+    "positions": [],
+    "ends": [],
+    "names": []
+   }
+  ]
+ },
+ "key": {
+  "method": "diagnostics",
+  "path": "scripts/eval_scenarios/network_test.ts",
+  "line": 23,
+  "character": 4,
+  "extra": "M1:quickfix-errors:Add import from \"node:test\""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "scripts/eval_scenarios/network_test.ts"
+  },
+  {
+   "kind": "change",
+   "path": "scripts/eval_scenarios/network_test.ts",
+   "start": [
+    6,
+    0
+   ],
+   "end": [
+    7,
+    0
+   ]
+  },
+  {
+   "kind": "change",
+   "path": "scripts/eval_scenarios/network_test.ts",
+   "start": [
+    7,
+    7
+   ],
+   "end": [
+    7,
+    7
+   ],
+   "text": "{ assert } from 'node:test';\nimport "
+  }
+ ],
+ "case": {
+  "action_kind": "quickfix",
+  "base_errors": 0,
+  "check": "errors",
+  "diag": {
+   "code": 2304,
+   "message": "Cannot find name 'assert'.",
+   "range": {
+    "end": {
+     "character": 10,
+     "line": 23
+    },
+    "start": {
+     "character": 4,
+     "line": 23
+    }
+   },
+   "severity": 1
+  },
+  "fix_introduced_errors": [
+   {
+    "code": 2339,
+    "message": "Property 'ok' does not exist on type 'typeof assert'.",
+    "path": "scripts/eval_scenarios/network_test.ts",
+    "range": {
+     "end": {
+      "character": 13,
+      "line": 24
+     },
+     "start": {
+      "character": 11,
+      "line": 24
+     }
+    },
+    "severity": 1
+   }
+  ],
+  "fix_ops": [
+   {
+    "end": [
+     7,
+     7
+    ],
+    "kind": "change",
+    "path": "scripts/eval_scenarios/network_test.ts",
+    "start": [
+     7,
+     7
+    ],
+    "text": "{ assert } from 'node:test';\nimport "
+   }
+  ],
+  "kind": "mutation",
+  "mutation": {
+   "end": [
+    7,
+    0
+   ],
+   "id": "M1",
+   "offsets": [
+    89,
+    123
+   ],
+   "sha": "ce2f264131f2a261",
+   "start": [
+    6,
+    0
+   ],
+   "text": "",
+   "what": "remove the import of 'assert'"
+  },
+  "n_fix_ops": 1,
+  "path": "scripts/eval_scenarios/network_test.ts",
+  "post_errors": 1,
+  "title": "Add import from \"node:test\"",
+  "via": "edit"
+ },
+ "shape": "diagnostics:extra:2339",
+ "signature": "ts7|r4_edits|diagnostics:extra:2339",
+ "expected": [],
+ "actual": [
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "2339",
+   "ts",
+   "Property 'ok' does not exist on type 'typeof assert'."
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "quick fix 'Add import from \"node:test\"' for 2304 at scripts/eval_scenarios/network_test.ts:24:5 raises the error count in the edited files from 0 to 1 (seeded by M1: remove the import of 'assert'; errors before the mutation 0, after the fix 1); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 361s",
+ "violation": {
+  "oracle": "r4_edits",
+  "server": "ts7-7.0.2",
+  "project": "ChromeDevTools/chrome-devtools-mcp@2250cdcde4aa",
+  "key": {
+   "method": "diagnostics",
+   "path": "scripts/eval_scenarios/network_test.ts",
+   "line": 23,
+   "character": 4,
+   "extra": "M1:quickfix-errors:Add import from \"node:test\""
+  },
+  "expected": [],
+  "actual": [
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2339",
+    "ts",
+    "Property 'ok' does not exist on type 'typeof assert'."
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "scripts/eval_scenarios/network_test.ts"
+   },
+   {
+    "kind": "change",
+    "path": "scripts/eval_scenarios/network_test.ts",
+    "start": [
+     6,
+     0
+    ],
+    "end": [
+     7,
+     0
+    ]
+   },
+   {
+    "kind": "change",
+    "path": "scripts/eval_scenarios/network_test.ts",
+    "start": [
+     7,
+     7
+    ],
+    "end": [
+     7,
+     7
+    ],
+    "text": "{ assert } from 'node:test';\nimport "
+   }
+  ],
+  "detail": "{\"case\": {\"action_kind\": \"quickfix\", \"base_errors\": 0, \"check\": \"errors\", \"diag\": {\"code\": 2304, \"message\": \"Cannot find name 'assert'.\", \"range\": {\"end\": {\"character\": 10, \"line\": 23}, \"start\": {\"character\": 4, \"line\": 23}}, \"severity\": 1}, \"fix_introduced_errors\": [{\"code\": 2339, \"message\": \"Property 'ok' does not exist on type 'typeof assert'.\", \"path\": \"scripts/eval_scenarios/network_test.ts\", \"range\": {\"end\": {\"character\": 13, \"line\": 24}, \"start\": {\"character\": 11, \"line\": 24}}, \"severity\": 1}], \"fix_ops\": [{\"end\": [7, 7], \"kind\": \"change\", \"path\": \"scripts/eval_scenarios/network_test.ts\", \"start\": [7, 7], \"text\": \"{ assert } from 'node:test';\\nimport \"}], \"kind\": \"mutation\", \"mutation\": {\"end\": [7, 0], \"id\": \"M1\", \"offsets\": [89, 123], \"sha\": \"ce2f264131f2a261\", \"start\": [6, 0], \"text\": \"\", \"what\": \"remove the import of 'assert'\"}, \"n_fix_ops\": 1, \"path\": \"scripts/eval_scenarios/network_test.ts\", \"post_errors\": 1, \"title\": \"Add import from \\\"node:test\\\"\", \"via\": \"edit\"}, \"note\": \"quick fix 'Add import from \\\"node:test\\\"' for 2304 at scripts/eval_scenarios/network_test.ts:24:5 raises the error count in the edited files from 0 to 1 (seeded by M1: remove the import of 'assert'; errors before the mutation 0, after the fix 1); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 361s\", \"shape\": \"diagnostics:extra:2339\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "ts7|r4_edits|diagnostics:extra:2339",
+  "run_id": "085638e189e1"
+ },
+ "replay_logs": [
+  "logs/ts7-7.0.2-tr12bd0a-r4-replay-baseline-20260925-155629-a72938.jsonl.gz",
+  "logs/ts7-7.0.2-tr12bd0a-r4-replay-case-20260925-155611-b83d8c.jsonl.gz",
+  "logs/ts7-7.0.2-tr12bd0a-r4-replay-control-20260925-155650-40cf88.jsonl.gz"
+ ],
+ "project_files": {},
+ "group": "ts7-r4-diagnostics-extra-2339-mutation-m1-12bd0a",
+ "reduced": true
+}

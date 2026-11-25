@@ -1,0 +1,87 @@
+{
+ "vid": "db23e5877dcf-v00",
+ "ops_before": 5,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 10,
+ "cache_hits": 6,
+ "reduce_seconds": 90.527,
+ "budget_exhausted": false,
+ "probe_log": [
+  [
+   3,
+   false
+  ],
+  [
+   3,
+   false
+  ],
+  [
+   2,
+   false
+  ],
+  [
+   2,
+   false
+  ],
+  [
+   2,
+   false
+  ],
+  [
+   2,
+   false
+  ],
+  [
+   4,
+   false
+  ],
+  [
+   4,
+   true
+  ],
+  [
+   3,
+   false
+  ],
+  [
+   3,
+   true
+  ]
+ ],
+ "lines": {
+  "repro.py": "7/15 non-blank lines kept"
+ },
+ "line_probes": 10,
+ "line_seconds": 155.5,
+ "lines_confirmed": "3/3",
+ "line_skipped": [],
+ "line_budget_exhausted": false,
+ "logs": [
+  "pyright-1.1.380-trfb2ed0-replay-baseline-20260923-113550-3f3ede.jsonl.gz",
+  "pyright-1.1.380-trfb2ed0-replay-control-20260923-113550-98c71f.jsonl.gz",
+  "pyright-1.1.380-trfb2ed0-replay-history-20260923-113553-704488.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [
+   "(parameter) cmd: (date) -> str",
+   [
+    14,
+    4,
+    14,
+    7
+   ]
+  ],
+  "actual": [
+   "(parameter) cmd: (Unknown) -> str",
+   [
+    14,
+    4,
+    14,
+    7
+   ]
+  ]
+ },
+ "ops_after": 3,
+ "total_seconds": 299.9
+}

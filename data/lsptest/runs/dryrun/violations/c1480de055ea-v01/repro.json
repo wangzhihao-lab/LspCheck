@@ -1,0 +1,432 @@
+{
+ "format": 1,
+ "campaign": "dryrun",
+ "vid": "c1480de055ea-v01",
+ "run_id": "c1480de055ea",
+ "oracle": "r6_crossimpl",
+ "server": {
+  "kind": "ts7",
+  "version": "7.0.2"
+ },
+ "project": {
+  "name": "pmndrs/zustand@b57db4f86ef1",
+  "source": "corpus",
+  "ref": "temp/corpus/pmndrs__zustand@b57db4f86ef1",
+  "commit": "b57db4f86ef179285da216eeb291266da82c361c",
+  "language": "typescript"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 2,
+  "targets": [
+   {
+    "path": "src/react.ts",
+    "positions": [
+     [
+      0,
+      9
+     ],
+     [
+      1,
+      14
+     ],
+     [
+      5,
+      8
+     ],
+     [
+      7,
+      13
+     ],
+     [
+      22,
+      6
+     ],
+     [
+      25,
+      38
+     ],
+     [
+      29,
+      32
+     ],
+     [
+      31,
+      32
+     ],
+     [
+      32,
+      15
+     ],
+     [
+      40,
+      37
+     ],
+     [
+      49,
+      37
+     ],
+     [
+      52,
+      28
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      12
+     ],
+     [
+      1,
+      20
+     ],
+     [
+      5,
+      14
+     ],
+     [
+      7,
+      24
+     ],
+     [
+      22,
+      10
+     ],
+     [
+      25,
+      43
+     ],
+     [
+      29,
+      42
+     ],
+     [
+      31,
+      36
+     ],
+     [
+      32,
+      21
+     ],
+     [
+      40,
+      38
+     ],
+     [
+      49,
+      38
+     ],
+     [
+      52,
+      34
+     ]
+    ],
+    "names": [
+     "React",
+     "createStore",
+     "StateCreator",
+     "StoreMutatorIdentifier",
+     "selector",
+     "StateSlice",
+     "useSyncExternalStore",
+     "selector",
+     "useCallback",
+     "S",
+     "T",
+     "createState"
+    ]
+   },
+   {
+    "path": "src/vanilla/shallow.ts",
+    "positions": [
+     [
+      12,
+      15
+     ],
+     [
+      15,
+      42
+     ],
+     [
+      16,
+      53
+     ],
+     [
+      17,
+      27
+     ],
+     [
+      21,
+      11
+     ],
+     [
+      33,
+      38
+     ],
+     [
+      34,
+      23
+     ],
+     [
+      38,
+      34
+     ],
+     [
+      44,
+      35
+     ],
+     [
+      47,
+      46
+     ],
+     [
+      70,
+      24
+     ],
+     [
+      71,
+      39
+     ]
+    ],
+    "ends": [
+     [
+      12,
+      19
+     ],
+     [
+      15,
+      45
+     ],
+     [
+      16,
+      55
+     ],
+     [
+      17,
+      29
+     ],
+     [
+      21,
+      13
+     ],
+     [
+      33,
+      42
+     ],
+     [
+      34,
+      26
+     ],
+     [
+      38,
+      37
+     ],
+     [
+      44,
+      37
+     ],
+     [
+      47,
+      47
+     ],
+     [
+      70,
+      27
+     ],
+     [
+      71,
+      42
+     ]
+    ],
+    "names": [
+     "entries",
+     "valueA",
+     "Map",
+     "size",
+     "mapB",
+     "iterator",
+     "valueB",
+     "nextB",
+     "done",
+     "T",
+     "Object",
+     "valueB"
+    ]
+   },
+   {
+    "path": "tests/persistSync.test.tsx",
+    "positions": [
+     [
+      14,
+      37
+     ],
+     [
+      16,
+      6
+     ],
+     [
+      136,
+      15
+     ],
+     [
+      274,
+      9
+     ],
+     [
+      291,
+      41
+     ],
+     [
+      311,
+      25
+     ],
+     [
+      467,
+      20
+     ],
+     [
+      565,
+      64
+     ],
+     [
+      683,
+      24
+     ],
+     [
+      717,
+      16
+     ],
+     [
+      732,
+      22
+     ],
+     [
+      742,
+      30
+     ]
+    ],
+    "ends": [
+     [
+      14,
+      41
+     ],
+     [
+      16,
+      9
+     ],
+     [
+      136,
+      20
+     ],
+     [
+      274,
+      13
+     ],
+     [
+      291,
+      48
+     ],
+     [
+      311,
+      28
+     ],
+     [
+      467,
+      24
+     ],
+     [
+      565,
+      73
+     ],
+     [
+      683,
+      26
+     ],
+     [
+      717,
+      21
+     ],
+     [
+      732,
+      33
+     ],
+     [
+      742,
+      32
+     ]
+    ],
+    "names": [
+     "newState",
+     "state",
+     "setItemSpy",
+     "setItem",
+     "toBeCalledWith",
+     "count",
+     "entries",
+     "onFinishHydration",
+     "map",
+     "setItemSpy",
+     "onRehydrateStorageSpy2",
+     "name"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "hover",
+  "path": "src/react.ts",
+  "line": 5,
+  "character": 8,
+  "extra": ""
+ },
+ "ops": [],
+ "case": {
+  "intended": [],
+  "intended_source": "4519ec0a93607319a96f4feb967aa06a251ccc816544e2fed5c985c1d45dc11a",
+  "method": "hover",
+  "only_reference": null,
+  "only_test": null,
+  "reference": {
+   "kind": "ts6",
+   "version": "6.0.3"
+  }
+ },
+ "shape": "hover:changed",
+ "signature": "ts7|r6_crossimpl|hover:changed",
+ "expected": "(alias) type StateCreator<T, Mis extends [StoreMutatorIdentifier, unknown][] = [], Mos extends [StoreMutatorIdentifier, unknown][] = [], U = T> = ((setState: Get<Mutate<StoreApi<T>, Mis>, \"setState\", never>, getState: Get<Mutate<StoreApi<T>, Mis>, \"getState\", never>, store: Mutate<StoreApi<T>, Mis>) => U) & { $$storeMutators?: Mos; }",
+ "actual": "(alias) type StateCreator<T, Mis extends [keyof StoreMutators<unknown, unknown>, unknown][] = [], Mos extends [keyof StoreMutators<unknown, unknown>, unknown][] = [], U = T> = ((setState: Get<Mutate<StoreApi<T>, Mis>, \"setState\", never>, getState: Get<Mutate<StoreApi<T>, Mis>, \"getState\", never>, store: Mutate<StoreApi<T>, Mis>) => U) & { $$storeMutators?: Mos; }",
+ "reproduced": "3/3",
+ "note": "ts7-7.0.2 and ts6-6.0.3 differ on hover at src/react.ts:6:9; no documented intended difference matches; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 128s",
+ "violation": {
+  "oracle": "r6_crossimpl",
+  "server": "ts7-7.0.2",
+  "project": "pmndrs/zustand@b57db4f86ef1",
+  "key": {
+   "method": "hover",
+   "path": "src/react.ts",
+   "line": 5,
+   "character": 8,
+   "extra": ""
+  },
+  "expected": "(alias) type StateCreator<T, Mis extends [StoreMutatorIdentifier, unknown][] = [], Mos extends [StoreMutatorIdentifier, unknown][] = [], U = T> = ((setState: Get<Mutate<StoreApi<T>, Mis>, \"setState\", never>, getState: Get<Mutate<StoreApi<T>, Mis>, \"getState\", never>, store: Mutate<StoreApi<T>, Mis>) => U) & { $$storeMutators?: Mos; }",
+  "actual": "(alias) type StateCreator<T, Mis extends [keyof StoreMutators<unknown, unknown>, unknown][] = [], Mos extends [keyof StoreMutators<unknown, unknown>, unknown][] = [], U = T> = ((setState: Get<Mutate<StoreApi<T>, Mis>, \"setState\", never>, getState: Get<Mutate<StoreApi<T>, Mis>, \"getState\", never>, store: Mutate<StoreApi<T>, Mis>) => U) & { $$storeMutators?: Mos; }",
+  "ops": [],
+  "detail": "{\"case\": {\"intended\": [], \"intended_source\": \"4519ec0a93607319a96f4feb967aa06a251ccc816544e2fed5c985c1d45dc11a\", \"method\": \"hover\", \"only_reference\": null, \"only_test\": null, \"reference\": {\"kind\": \"ts6\", \"version\": \"6.0.3\"}}, \"note\": \"ts7-7.0.2 and ts6-6.0.3 differ on hover at src/react.ts:6:9; no documented intended difference matches; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 128s\", \"shape\": \"hover:changed\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "ts7|r6_crossimpl|hover:changed",
+  "run_id": "c1480de055ea"
+ },
+ "replay_logs": [
+  "logs/ts6-6.0.3-c1480de055ea-ref-r6-replay-ref-baseline-20260923-112512-4ba7e6.jsonl.gz",
+  "logs/ts6-6.0.3-c1480de055ea-ref-r6-replay-ref-control-20260923-112526-e80f89.jsonl.gz",
+  "logs/ts7-7.0.2-c1480de055ea-r6-replay-test-baseline-20260923-112450-1716ce.jsonl.gz",
+  "logs/ts7-7.0.2-c1480de055ea-r6-replay-test-control-20260923-112500-832ebd.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

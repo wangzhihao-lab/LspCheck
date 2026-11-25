@@ -1,0 +1,3 @@
+2026-09-24 10:31:22,824 INFO campaign_run run 838a78cffc9f: r1_history on rust-analyzer 2026-09-21, alacritty/alacritty@d692748d3f61 seed 2 settled, targets ['alacritty/src/cli.rs', 'alacritty/src/display/window.rs', 'alacritty/src/macos/proc.rs']
+2026-09-24 10:37:22,625 INFO campaign_run run 838a78cffc9f: 0 candidate(s) in 360s; confirming
+2026-09-24 10:37:22,625 INFO campaign_run run 838a78cffc9f finished: ok, 0 confirmed of 0 candidate(s), 360s

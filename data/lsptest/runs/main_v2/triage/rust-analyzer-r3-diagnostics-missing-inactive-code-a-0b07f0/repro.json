@@ -1,0 +1,395 @@
+{
+ "format": 1,
+ "campaign": "main_v2",
+ "vid": "7f3fa823fc51-v02",
+ "run_id": "7f3fa823fc51",
+ "oracle": "r3_routes",
+ "server": {
+  "kind": "rust-analyzer",
+  "version": "2026-09-21"
+ },
+ "project": {
+  "name": "googleworkspace/cli@a3768d0e82ad",
+  "source": "corpus",
+  "ref": "temp/corpus/googleworkspace__cli@a3768d0e82ad",
+  "commit": "a3768d0e82ad83cca2da97724e46bea4ff0e6dbd",
+  "language": "rust"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "crates/google-workspace-cli/src/auth.rs",
+    "positions": [],
+    "ends": [],
+    "names": []
+   },
+   {
+    "path": "crates/google-workspace-cli/src/helpers/events/mod.rs",
+    "positions": [],
+    "ends": [],
+    "names": []
+   },
+   {
+    "path": "crates/google-workspace-cli/src/schema.rs",
+    "positions": [],
+    "ends": [],
+    "names": []
+   }
+  ]
+ },
+ "key": {
+  "method": "diagnostics",
+  "path": "crates/google-workspace-cli/src/auth.rs",
+  "line": -1,
+  "character": -1,
+  "extra": "route:push"
+ },
+ "ops": [],
+ "case": {
+  "path": "crates/google-workspace-cli/src/auth.rs",
+  "sub": "a",
+  "want_pull": false
+ },
+ "shape": "diagnostics:missing:inactive_code",
+ "signature": "rust-analyzer|r3_routes|diagnostics:missing:inactive_code",
+ "expected": [
+  [
+   536,
+   46,
+   536,
+   47,
+   4,
+   "inactive_code",
+   "rust-analyzer",
+   "code is inactive due to #[cfg] directives"
+  ],
+  [
+   563,
+   27,
+   569,
+   9,
+   4,
+   "inactive_code",
+   "rust-analyzer",
+   "code is inactive due to #[cfg] directives"
+  ],
+  [
+   600,
+   27,
+   608,
+   9,
+   4,
+   "inactive_code",
+   "rust-analyzer",
+   "code is inactive due to #[cfg] directives"
+  ],
+  [
+   630,
+   9,
+   630,
+   10,
+   4,
+   "inactive_code",
+   "rust-analyzer",
+   "code is inactive due to #[cfg] directives"
+  ],
+  [
+   642,
+   72,
+   642,
+   73,
+   4,
+   "inactive_code",
+   "rust-analyzer",
+   "code is inactive due to #[cfg] directives"
+  ],
+  [
+   664,
+   18,
+   670,
+   9,
+   4,
+   "inactive_code",
+   "rust-analyzer",
+   "code is inactive due to #[cfg] directives"
+  ],
+  [
+   696,
+   18,
+   701,
+   9,
+   4,
+   "inactive_code",
+   "rust-analyzer",
+   "code is inactive due to #[cfg] directives"
+  ],
+  [
+   719,
+   18,
+   724,
+   9,
+   4,
+   "inactive_code",
+   "rust-analyzer",
+   "code is inactive due to #[cfg] directives"
+  ],
+  [
+   735,
+   52,
+   735,
+   53,
+   4,
+   "inactive_code",
+   "rust-analyzer",
+   "code is inactive due to #[cfg] directives"
+  ],
+  [
+   748,
+   44,
+   748,
+   45,
+   4,
+   "inactive_code",
+   "rust-analyzer",
+   "code is inactive due to #[cfg] directives"
+  ],
+  [
+   776,
+   18,
+   783,
+   9,
+   4,
+   "inactive_code",
+   "rust-analyzer",
+   "code is inactive due to #[cfg] directives"
+  ],
+  [
+   814,
+   18,
+   822,
+   9,
+   4,
+   "inactive_code",
+   "rust-analyzer",
+   "code is inactive due to #[cfg] directives"
+  ],
+  [
+   856,
+   9,
+   856,
+   10,
+   4,
+   "inactive_code",
+   "rust-analyzer",
+   "code is inactive due to #[cfg] directives"
+  ],
+  [
+   895,
+   76,
+   895,
+   77,
+   4,
+   "inactive_code",
+   "rust-analyzer",
+   "code is inactive due to #[cfg] directives"
+  ],
+  [
+   922,
+   46,
+   922,
+   47,
+   4,
+   "inactive_code",
+   "rust-analyzer",
+   "code is inactive due to #[cfg] directives"
+  ]
+ ],
+ "actual": [],
+ "reproduced": "3/3",
+ "note": "pull vs push; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 329s",
+ "violation": {
+  "oracle": "r3_routes",
+  "server": "rust-analyzer-2026-09-21",
+  "project": "googleworkspace/cli@a3768d0e82ad",
+  "key": {
+   "method": "diagnostics",
+   "path": "crates/google-workspace-cli/src/auth.rs",
+   "line": -1,
+   "character": -1,
+   "extra": "route:push"
+  },
+  "expected": [
+   [
+    536,
+    46,
+    536,
+    47,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives"
+   ],
+   [
+    563,
+    27,
+    569,
+    9,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives"
+   ],
+   [
+    600,
+    27,
+    608,
+    9,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives"
+   ],
+   [
+    630,
+    9,
+    630,
+    10,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives"
+   ],
+   [
+    642,
+    72,
+    642,
+    73,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives"
+   ],
+   [
+    664,
+    18,
+    670,
+    9,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives"
+   ],
+   [
+    696,
+    18,
+    701,
+    9,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives"
+   ],
+   [
+    719,
+    18,
+    724,
+    9,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives"
+   ],
+   [
+    735,
+    52,
+    735,
+    53,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives"
+   ],
+   [
+    748,
+    44,
+    748,
+    45,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives"
+   ],
+   [
+    776,
+    18,
+    783,
+    9,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives"
+   ],
+   [
+    814,
+    18,
+    822,
+    9,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives"
+   ],
+   [
+    856,
+    9,
+    856,
+    10,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives"
+   ],
+   [
+    895,
+    76,
+    895,
+    77,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives"
+   ],
+   [
+    922,
+    46,
+    922,
+    47,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives"
+   ]
+  ],
+  "actual": [],
+  "ops": [],
+  "detail": "{\"case\": {\"path\": \"crates/google-workspace-cli/src/auth.rs\", \"sub\": \"a\", \"want_pull\": false}, \"note\": \"pull vs push; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 329s\", \"shape\": \"diagnostics:missing:inactive_code\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "rust-analyzer|r3_routes|diagnostics:missing:inactive_code",
+  "run_id": "7f3fa823fc51"
+ },
+ "replay_logs": [
+  "logs/rust-analyzer-2026-09-21-tr0b07f0-r3-replay-baseline-20261119-005601-b988f7.jsonl.gz",
+  "logs/rust-analyzer-2026-09-21-tr0b07f0-r3-replay-control-20261119-005631-70054e.jsonl.gz",
+  "logs/rust-analyzer-2026-09-21-tr0b07f0-r3-replay-route-20261119-005656-8eb05a.jsonl.gz"
+ ],
+ "project_files": {},
+ "group": "rust-analyzer-r3-diagnostics-missing-inactive-code-a-0b07f0",
+ "reduced": true
+}

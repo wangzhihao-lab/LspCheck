@@ -1,0 +1,3 @@
+2026-11-19 03:56:21,849 INFO campaign_run run 040b8d0c2b46: r1_history on rust-analyzer 2026-09-21, googleworkspace/cli@a3768d0e82ad seed 2 settled, targets ['crates/google-workspace-cli/src/helpers/chat.rs', 'crates/google-workspace-cli/src/helpers/events/mod.rs', 'crates/google-workspace-cli/src/main.rs']
+2026-11-19 04:01:55,168 INFO campaign_run run 040b8d0c2b46: 0 candidate(s) in 333s; confirming
+2026-11-19 04:01:55,169 INFO campaign_run run 040b8d0c2b46 finished: ok, 0 confirmed of 0 candidate(s), 333s

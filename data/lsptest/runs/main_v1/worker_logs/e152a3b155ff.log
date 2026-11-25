@@ -1,0 +1,6 @@
+2026-09-23 20:14:30,696 INFO campaign_run run e152a3b155ff: r3_routes on pyright 1.1.414, hiyouga/LlamaFactory@97b32d3133b5 seed 2 settled, targets ['scripts/bench_qwen.py', 'src/llamafactory/hparams/training_args.py', 'src/llamafactory/v1/plugins/model_plugins/kernels/ops/mlp/cuda_fused_moe.py']
+2026-09-23 20:16:25,820 INFO campaign_run run e152a3b155ff: 9 candidate(s) in 115s; confirming
+2026-09-23 20:16:41,234 INFO flake replay 1/3 of pyright|r3_routes|definitionConsistency:lost: settled=True control_stable=True reproduced=True (15.4s)
+2026-09-23 20:16:57,604 INFO flake replay 2/3 of pyright|r3_routes|definitionConsistency:lost: settled=True control_stable=True reproduced=True (16.4s)
+2026-09-23 20:17:14,544 INFO flake replay 3/3 of pyright|r3_routes|definitionConsistency:lost: settled=True control_stable=True reproduced=True (16.9s)
+2026-09-23 20:17:14,553 INFO campaign_run run e152a3b155ff finished: ok, 1 confirmed of 9 candidate(s), 164s

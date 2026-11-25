@@ -1,0 +1,581 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "73fef80b14e5-v00",
+ "run_id": "73fef80b14e5",
+ "oracle": "r4_edits",
+ "server": {
+  "kind": "gopls",
+  "version": "v0.23.0"
+ },
+ "project": {
+  "name": "charmbracelet/bubbletea@657aaae216e3",
+  "source": "corpus",
+  "ref": "temp/corpus/charmbracelet__bubbletea@657aaae216e3",
+  "commit": "657aaae216e3f87df09b60959a9fe5de7b2ca419",
+  "language": "go"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "examples/list-default/main.go",
+    "positions": [
+     [
+      19,
+      44
+     ],
+     [
+      29,
+      10
+     ],
+     [
+      33,
+      10
+     ],
+     [
+      40,
+      6
+     ],
+     [
+      48,
+      8
+     ],
+     [
+      52,
+      14
+     ],
+     [
+      59,
+      9
+     ],
+     [
+      68,
+      31
+     ],
+     [
+      79,
+      10
+     ],
+     [
+      81,
+      15
+     ],
+     [
+      84,
+      3
+     ],
+     [
+      85,
+      7
+     ]
+    ],
+    "ends": [
+     [
+      19,
+      45
+     ],
+     [
+      29,
+      13
+     ],
+     [
+      33,
+      11
+     ],
+     [
+      40,
+      8
+     ],
+     [
+      48,
+      9
+     ],
+     [
+      52,
+      16
+     ],
+     [
+      59,
+      12
+     ],
+     [
+      68,
+      33
+     ],
+     [
+      79,
+      13
+     ],
+     [
+      81,
+      20
+     ],
+     [
+      84,
+      5
+     ],
+     [
+      85,
+      9
+     ]
+    ],
+    "names": [
+     "i",
+     "model",
+     "m",
+     "cmd",
+     "v",
+     "list",
+     "title",
+     "desc",
+     "Title",
+     "NewProgram",
+     "fmt",
+     "Exit"
+    ]
+   },
+   {
+    "path": "examples/list-fancy/main.go",
+    "positions": [
+     [
+      36,
+      6
+     ],
+     [
+      36,
+      16
+     ],
+     [
+      40,
+      6
+     ],
+     [
+      47,
+      25
+     ],
+     [
+      54,
+      23
+     ],
+     [
+      84,
+      11
+     ],
+     [
+      94,
+      3
+     ],
+     [
+      105,
+      23
+     ],
+     [
+      143,
+      32
+     ],
+     [
+      180,
+      1
+     ],
+     [
+      188,
+      32
+     ],
+     [
+      199,
+      18
+     ]
+    ],
+    "ends": [
+     [
+      36,
+      12
+     ],
+     [
+      36,
+      19
+     ],
+     [
+      40,
+      7
+     ],
+     [
+      47,
+      29
+     ],
+     [
+      54,
+      28
+     ],
+     [
+      84,
+      14
+     ],
+     [
+      94,
+      5
+     ],
+     [
+      105,
+      24
+     ],
+     [
+      143,
+      34
+     ],
+     [
+      180,
+      2
+     ],
+     [
+      188,
+      36
+     ],
+     [
+      199,
+      22
+     ]
+    ],
+    "names": [
+     "description",
+     "string",
+     "i",
+     "Binding",
+     "NewBinding",
+     "height",
+     "tea",
+     "m",
+     "list",
+     "m",
+     "numItems",
+     "Binding"
+    ]
+   },
+   {
+    "path": "examples/splash/main.go",
+    "positions": [
+     [
+      28,
+      12
+     ],
+     [
+      51,
+      9
+     ],
+     [
+      56,
+      28
+     ],
+     [
+      70,
+      62
+     ],
+     [
+      73,
+      5
+     ],
+     [
+      75,
+      15
+     ],
+     [
+      87,
+      69
+     ],
+     [
+      94,
+      5
+     ],
+     [
+      130,
+      23
+     ],
+     [
+      152,
+      10
+     ],
+     [
+      153,
+      2
+     ],
+     [
+      171,
+      10
+     ]
+    ],
+    "ends": [
+     [
+      28,
+      15
+     ],
+     [
+      51,
+      10
+     ],
+     [
+      56,
+      30
+     ],
+     [
+      70,
+      65
+     ],
+     [
+      73,
+      9
+     ],
+     [
+      75,
+      19
+     ],
+     [
+      87,
+      70
+     ],
+     [
+      94,
+      8
+     ],
+     [
+      130,
+      25
+     ],
+     [
+      152,
+      11
+     ],
+     [
+      153,
+      3
+     ],
+     [
+      171,
+      12
+     ]
+    ],
+    "names": [
+     "Color",
+     "m",
+     "View",
+     "Second",
+     "cosAngle",
+     "float64",
+     "m",
+     "style",
+     "idx",
+     "b2",
+     "r2",
+     "rate"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "diagnostics",
+  "path": "examples/list-default/main.go",
+  "line": 78,
+  "character": 6,
+  "extra": "M2:quickfix-errors:Create variable moddel"
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "examples/list-default/main.go"
+  },
+  {
+   "kind": "change",
+   "path": "examples/list-default/main.go",
+   "start": [
+    78,
+    6
+   ],
+   "end": [
+    78,
+    11
+   ],
+   "text": "moddel"
+  },
+  {
+   "kind": "change",
+   "path": "examples/list-default/main.go",
+   "start": [
+    78,
+    2
+   ],
+   "end": [
+    78,
+    2
+   ],
+   "text": "oddel := 0\n\tm"
+  }
+ ],
+ "case": {
+  "action_kind": "quickfix",
+  "base_errors": 0,
+  "check": "errors",
+  "diag": {
+   "code": "UndeclaredName",
+   "message": "undefined: moddel",
+   "range": {
+    "end": {
+     "character": 12,
+     "line": 78
+    },
+    "start": {
+     "character": 6,
+     "line": 78
+    }
+   },
+   "severity": 1
+  },
+  "fix_introduced_errors": [
+   {
+    "code": "NotAType",
+    "message": "moddel (local variable) is not a type",
+    "path": "examples/list-default/main.go",
+    "range": {
+     "end": {
+      "character": 12,
+      "line": 79
+     },
+     "start": {
+      "character": 6,
+      "line": 79
+     }
+    },
+    "severity": 1
+   }
+  ],
+  "fix_ops": [
+   {
+    "end": [
+     78,
+     2
+    ],
+    "kind": "change",
+    "path": "examples/list-default/main.go",
+    "start": [
+     78,
+     2
+    ],
+    "text": "oddel := 0\n\tm"
+   }
+  ],
+  "kind": "mutation",
+  "mutation": {
+   "end": [
+    78,
+    11
+   ],
+   "id": "M2",
+   "offsets": [
+    2489,
+    2494
+   ],
+   "sha": "63c19d1b0bea2d56",
+   "start": [
+    78,
+    6
+   ],
+   "text": "moddel",
+   "what": "misspell 'model' as 'moddel' (duplicate a middle character)"
+  },
+  "n_fix_ops": 1,
+  "path": "examples/list-default/main.go",
+  "post_errors": 1,
+  "title": "Create variable moddel",
+  "via": "resolve"
+ },
+ "shape": "diagnostics:extra:NotAType",
+ "signature": "gopls|r4_edits|diagnostics:extra:NotAType",
+ "expected": [],
+ "actual": [
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "NotAType",
+   "compiler",
+   "moddel (local variable) is not a type"
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "quick fix 'Create variable moddel' for UndeclaredName at examples/list-default/main.go:79:7 raises the error count in the edited files from 0 to 1 (seeded by M2: misspell 'model' as 'moddel' (duplicate a middle character); errors before the mutation 0, after the fix 1); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 53s",
+ "violation": {
+  "oracle": "r4_edits",
+  "server": "gopls-v0.23.0",
+  "project": "charmbracelet/bubbletea@657aaae216e3",
+  "key": {
+   "method": "diagnostics",
+   "path": "examples/list-default/main.go",
+   "line": 78,
+   "character": 6,
+   "extra": "M2:quickfix-errors:Create variable moddel"
+  },
+  "expected": [],
+  "actual": [
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "NotAType",
+    "compiler",
+    "moddel (local variable) is not a type"
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "examples/list-default/main.go"
+   },
+   {
+    "kind": "change",
+    "path": "examples/list-default/main.go",
+    "start": [
+     78,
+     6
+    ],
+    "end": [
+     78,
+     11
+    ],
+    "text": "moddel"
+   },
+   {
+    "kind": "change",
+    "path": "examples/list-default/main.go",
+    "start": [
+     78,
+     2
+    ],
+    "end": [
+     78,
+     2
+    ],
+    "text": "oddel := 0\n\tm"
+   }
+  ],
+  "detail": "{\"case\": {\"action_kind\": \"quickfix\", \"base_errors\": 0, \"check\": \"errors\", \"diag\": {\"code\": \"UndeclaredName\", \"message\": \"undefined: moddel\", \"range\": {\"end\": {\"character\": 12, \"line\": 78}, \"start\": {\"character\": 6, \"line\": 78}}, \"severity\": 1}, \"fix_introduced_errors\": [{\"code\": \"NotAType\", \"message\": \"moddel (local variable) is not a type\", \"path\": \"examples/list-default/main.go\", \"range\": {\"end\": {\"character\": 12, \"line\": 79}, \"start\": {\"character\": 6, \"line\": 79}}, \"severity\": 1}], \"fix_ops\": [{\"end\": [78, 2], \"kind\": \"change\", \"path\": \"examples/list-default/main.go\", \"start\": [78, 2], \"text\": \"oddel := 0\\n\\tm\"}], \"kind\": \"mutation\", \"mutation\": {\"end\": [78, 11], \"id\": \"M2\", \"offsets\": [2489, 2494], \"sha\": \"63c19d1b0bea2d56\", \"start\": [78, 6], \"text\": \"moddel\", \"what\": \"misspell 'model' as 'moddel' (duplicate a middle character)\"}, \"n_fix_ops\": 1, \"path\": \"examples/list-default/main.go\", \"post_errors\": 1, \"title\": \"Create variable moddel\", \"via\": \"resolve\"}, \"note\": \"quick fix 'Create variable moddel' for UndeclaredName at examples/list-default/main.go:79:7 raises the error count in the edited files from 0 to 1 (seeded by M2: misspell 'model' as 'moddel' (duplicate a middle character); errors before the mutation 0, after the fix 1); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 53s\", \"shape\": \"diagnostics:extra:NotAType\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "gopls|r4_edits|diagnostics:extra:NotAType",
+  "run_id": "73fef80b14e5"
+ },
+ "replay_logs": [
+  "logs/gopls-v0.23.0-73fef80b14e5-r4-replay-baseline-20260923-231914-0beacf.jsonl.gz",
+  "logs/gopls-v0.23.0-73fef80b14e5-r4-replay-case-20260923-231905-ae9ab8.jsonl.gz",
+  "logs/gopls-v0.23.0-73fef80b14e5-r4-replay-control-20260923-231919-2a3056.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

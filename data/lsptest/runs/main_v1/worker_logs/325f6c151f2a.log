@@ -1,0 +1,3 @@
+2026-09-23 16:59:13,256 INFO campaign_run run 325f6c151f2a: r4_edits on ts7 7.0.2, modelcontextprotocol/servers@f46d9578190b seed 1 settled, targets ['src/everything/prompts/resource.ts', 'src/everything/prompts/simple.ts', 'src/sequentialthinking/__tests__/input-schema.test.ts']
+2026-09-23 16:59:57,838 INFO campaign_run run 325f6c151f2a: 0 candidate(s) in 45s; confirming
+2026-09-23 16:59:57,840 INFO campaign_run run 325f6c151f2a finished: ok, 0 confirmed of 0 candidate(s), 45s

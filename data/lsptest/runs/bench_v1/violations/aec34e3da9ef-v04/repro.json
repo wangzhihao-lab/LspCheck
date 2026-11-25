@@ -1,0 +1,297 @@
+{
+ "format": 1,
+ "campaign": "bench_v1",
+ "vid": "aec34e3da9ef-v04",
+ "run_id": "aec34e3da9ef",
+ "oracle": "r5_transforms",
+ "server": {
+  "kind": "gopls",
+  "version": "v0.5.3"
+ },
+ "project": {
+  "name": "gopls-42254",
+  "source": "dir",
+  "ref": "data/lsp_bench/cases/gopls-42254/project",
+  "commit": "",
+  "language": "go"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 180.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 6,
+  "targets": [
+   {
+    "path": "main.go",
+    "positions": [
+     [
+      0,
+      8
+     ],
+     [
+      2,
+      5
+     ],
+     [
+      4,
+      5
+     ],
+     [
+      5,
+      2
+     ],
+     [
+      8,
+      4
+     ],
+     [
+      8,
+      6
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      9
+     ],
+     [
+      2,
+      6
+     ],
+     [
+      4,
+      6
+     ],
+     [
+      5,
+      3
+     ],
+     [
+      8,
+      5
+     ],
+     [
+      8,
+      7
+     ]
+    ],
+    "names": [
+     "p",
+     "T",
+     "S",
+     "T",
+     "x",
+     "T"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "references",
+  "path": "main.go",
+  "line": 2,
+  "character": 5,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "main.go"
+  },
+  {
+   "kind": "change",
+   "path": "main.go",
+   "start": [
+    8,
+    7
+   ],
+   "end": [
+    9,
+    0
+   ]
+  }
+ ],
+ "case": {
+  "mapped_key": [
+   "references",
+   "main.go",
+   2,
+   5,
+   ""
+  ],
+  "transform": {
+   "back": {
+    "col": 0,
+    "eof": [],
+    "line": -1,
+    "n": 0,
+    "path": "main.go",
+    "w": 0
+   },
+   "edits": [
+    [
+     8,
+     7,
+     9,
+     0,
+     ""
+    ]
+   ],
+   "kind": "T5",
+   "path": "main.go",
+   "shift": {
+    "col": 0,
+    "eof": [
+     9,
+     0,
+     8,
+     7
+    ],
+    "line": -1,
+    "n": 0,
+    "path": "main.go",
+    "w": 0
+   }
+  }
+ },
+ "shape": "references:changed",
+ "signature": "gopls|r5_transforms|references:changed",
+ "expected": [
+  [
+   "main.go",
+   2,
+   5,
+   2,
+   6
+  ],
+  [
+   "main.go",
+   5,
+   2,
+   5,
+   3
+  ],
+  [
+   "main.go",
+   8,
+   6,
+   8,
+   7
+  ]
+ ],
+ "actual": [
+  [
+   "main.go",
+   2,
+   5,
+   2,
+   6
+  ],
+  [
+   "main.go",
+   5,
+   2,
+   5,
+   3
+  ],
+  [
+   "main.go",
+   8,
+   6,
+   9,
+   0
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "T5 main.go: 1 edit(s), first [8, 7, 9, 0]; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 92s",
+ "violation": {
+  "oracle": "r5_transforms",
+  "server": "gopls-v0.5.3",
+  "project": "gopls-42254",
+  "key": {
+   "method": "references",
+   "path": "main.go",
+   "line": 2,
+   "character": 5,
+   "extra": ""
+  },
+  "expected": [
+   [
+    "main.go",
+    2,
+    5,
+    2,
+    6
+   ],
+   [
+    "main.go",
+    5,
+    2,
+    5,
+    3
+   ],
+   [
+    "main.go",
+    8,
+    6,
+    8,
+    7
+   ]
+  ],
+  "actual": [
+   [
+    "main.go",
+    2,
+    5,
+    2,
+    6
+   ],
+   [
+    "main.go",
+    5,
+    2,
+    5,
+    3
+   ],
+   [
+    "main.go",
+    8,
+    6,
+    9,
+    0
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "main.go"
+   },
+   {
+    "kind": "change",
+    "path": "main.go",
+    "start": [
+     8,
+     7
+    ],
+    "end": [
+     9,
+     0
+    ]
+   }
+  ],
+  "detail": "{\"case\": {\"mapped_key\": [\"references\", \"main.go\", 2, 5, \"\"], \"transform\": {\"back\": {\"col\": 0, \"eof\": [], \"line\": -1, \"n\": 0, \"path\": \"main.go\", \"w\": 0}, \"edits\": [[8, 7, 9, 0, \"\"]], \"kind\": \"T5\", \"path\": \"main.go\", \"shift\": {\"col\": 0, \"eof\": [9, 0, 8, 7], \"line\": -1, \"n\": 0, \"path\": \"main.go\", \"w\": 0}}}, \"note\": \"T5 main.go: 1 edit(s), first [8, 7, 9, 0]; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 92s\", \"shape\": \"references:changed\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "gopls|r5_transforms|references:changed",
+  "run_id": "aec34e3da9ef"
+ },
+ "replay_logs": [
+  "logs/gopls-v0.5.3-aec34e3da9ef-r5-replay-baseline-20260924-141014-aaec35.jsonl.gz",
+  "logs/gopls-v0.5.3-aec34e3da9ef-r5-replay-case-20260924-141034-78e793.jsonl.gz",
+  "logs/gopls-v0.5.3-aec34e3da9ef-r5-replay-control-20260924-141024-4339ca.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

@@ -1,0 +1,3 @@
+2026-11-18 16:02:14,998 INFO campaign_run run 0c5c6a4e50ab: r1_history on gopls v0.23.0, docker/compose@c6dffb26bdfd seed 2 settled, targets ['cmd/cmdtrace/cmd_span_test.go', 'pkg/compose/logs.go', 'pkg/e2e/compose_run_build_once_test.go']
+2026-11-18 16:11:21,449 INFO campaign_run run 0c5c6a4e50ab: 0 candidate(s) in 546s; confirming
+2026-11-18 16:11:21,450 INFO campaign_run run 0c5c6a4e50ab finished: ok, 0 confirmed of 0 candidate(s), 546s

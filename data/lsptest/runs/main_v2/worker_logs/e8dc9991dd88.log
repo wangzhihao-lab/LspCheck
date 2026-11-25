@@ -1,0 +1,3 @@
+2026-11-18 07:17:40,898 INFO campaign_run run e8dc9991dd88: r5_transforms on gopls v0.23.0, schollz/croc@5890191be511 seed 1 settled, targets ['src/cli/updatecheck_test.go', 'src/comm/comm.go', 'src/croc/overwrite_test.go']
+2026-11-18 07:18:52,214 INFO campaign_run run e8dc9991dd88: 0 candidate(s) in 71s; confirming
+2026-11-18 07:18:52,215 INFO campaign_run run e8dc9991dd88 finished: ok, 0 confirmed of 0 candidate(s), 71s

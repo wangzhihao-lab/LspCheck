@@ -1,0 +1,3 @@
+2026-11-18 19:31:15,514 INFO campaign_run run 6607e11f57be: r3_routes on ts6 6.0.3, mifi/lossless-cut@85cb95f6aeae seed 2 settled, targets ['src/main/progress.test.ts', 'src/renderer/src/TopMenu.tsx', 'src/renderer/src/hooks/useUserSettings.ts']
+2026-11-18 19:33:08,721 INFO campaign_run run 6607e11f57be: 18 candidate(s) in 113s; confirming
+2026-11-18 19:33:08,721 INFO campaign_run run 6607e11f57be finished: ok, 0 confirmed of 18 candidate(s), 113s

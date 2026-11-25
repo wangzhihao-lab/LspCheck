@@ -1,0 +1,7204 @@
+{
+ "benchmark_overlap": {
+  "cases": 80,
+  "held_out_cases": 74,
+  "rows": [
+   {
+    "case": "gopls-36824",
+    "held_out": true,
+    "oracles": [
+     "R4"
+    ]
+   },
+   {
+    "case": "gopls-38424",
+    "held_out": true,
+    "oracles": [
+     "R1",
+     "error"
+    ]
+   },
+   {
+    "case": "gopls-38732",
+    "held_out": true,
+    "oracles": [
+     "R1",
+     "error"
+    ]
+   },
+   {
+    "case": "gopls-42254",
+    "held_out": true,
+    "oracles": [
+     "R3"
+    ]
+   },
+   {
+    "case": "gopls-52500",
+    "held_out": true,
+    "oracles": [
+     "R1",
+     "error"
+    ]
+   },
+   {
+    "case": "gopls-60435",
+    "held_out": false,
+    "oracles": [
+     "R3"
+    ]
+   },
+   {
+    "case": "gopls-62141",
+    "held_out": true,
+    "oracles": [
+     "R4"
+    ]
+   },
+   {
+    "case": "gopls-73269",
+    "held_out": true,
+    "oracles": [
+     "R4"
+    ]
+   },
+   {
+    "case": "gopls-73564",
+    "held_out": true,
+    "oracles": [
+     "R4"
+    ]
+   },
+   {
+    "case": "gopls-73576",
+    "held_out": true,
+    "oracles": [
+     "R4"
+    ]
+   },
+   {
+    "case": "gopls-73661",
+    "held_out": true,
+    "oracles": [
+     "R4"
+    ]
+   },
+   {
+    "case": "gopls-74708",
+    "held_out": true,
+    "oracles": [
+     "R4"
+    ]
+   },
+   {
+    "case": "gopls-74709",
+    "held_out": true,
+    "oracles": [
+     "R4"
+    ]
+   },
+   {
+    "case": "jdtls-3155",
+    "held_out": false,
+    "oracles": [
+     "R1"
+    ]
+   },
+   {
+    "case": "pyright-3482",
+    "held_out": true,
+    "oracles": [
+     "R1"
+    ]
+   },
+   {
+    "case": "pyright-4844",
+    "held_out": true,
+    "oracles": [
+     "R1"
+    ]
+   },
+   {
+    "case": "pyright-8946",
+    "held_out": false,
+    "oracles": [
+     "R1"
+    ]
+   },
+   {
+    "case": "pyright-9681",
+    "held_out": true,
+    "oracles": [
+     "R5"
+    ]
+   },
+   {
+    "case": "rust-analyzer-10618",
+    "held_out": true,
+    "oracles": [
+     "R4"
+    ]
+   },
+   {
+    "case": "rust-analyzer-16556",
+    "held_out": true,
+    "oracles": [
+     "R4"
+    ]
+   },
+   {
+    "case": "rust-analyzer-16858",
+    "held_out": true,
+    "oracles": [
+     "R4"
+    ]
+   },
+   {
+    "case": "rust-analyzer-17728",
+    "held_out": true,
+    "oracles": [
+     "R4"
+    ]
+   },
+   {
+    "case": "rust-analyzer-18130",
+    "held_out": true,
+    "oracles": [
+     "R4"
+    ]
+   },
+   {
+    "case": "rust-analyzer-20987",
+    "held_out": true,
+    "oracles": [
+     "R4"
+    ]
+   },
+   {
+    "case": "rust-analyzer-21173",
+    "held_out": false,
+    "oracles": [
+     "R0",
+     "R1",
+     "R3",
+     "error"
+    ]
+   },
+   {
+    "case": "tsserver-32068",
+    "held_out": true,
+    "oracles": [
+     "R4"
+    ]
+   },
+   {
+    "case": "tsserver-37830",
+    "held_out": true,
+    "oracles": [
+     "R3"
+    ]
+   },
+   {
+    "case": "tsserver-44123",
+    "held_out": true,
+    "oracles": [
+     "R4"
+    ]
+   },
+   {
+    "case": "tsserver-46466",
+    "held_out": false,
+    "oracles": [
+     "R4"
+    ]
+   },
+   {
+    "case": "tsserver-51920",
+    "held_out": true,
+    "oracles": [
+     "R4"
+    ]
+   },
+   {
+    "case": "tsserver-52274",
+    "held_out": true,
+    "oracles": [
+     "R4"
+    ]
+   },
+   {
+    "case": "tsserver-59116",
+    "held_out": true,
+    "oracles": [
+     "R4"
+    ]
+   }
+  ]
+ },
+ "bugs_over_time": {
+  "R0": {
+   "runs": 98,
+   "hours": 4.2493,
+   "points": [
+    {
+     "hours": 0.0,
+     "groups": 0,
+     "bug_groups": 0,
+     "bugs": 0
+    },
+    {
+     "hours": 0.458,
+     "groups": 1,
+     "bug_groups": 0,
+     "bugs": 0
+    },
+    {
+     "hours": 3.5386,
+     "groups": 2,
+     "bug_groups": 0,
+     "bugs": 0
+    },
+    {
+     "hours": 4.1143,
+     "groups": 3,
+     "bug_groups": 1,
+     "bugs": 1
+    },
+    {
+     "hours": 4.2493,
+     "groups": 3,
+     "bug_groups": 1,
+     "bugs": 1
+    }
+   ],
+   "campaign_start_hours": {
+    "main_v1": 0.0,
+    "main_v2": 3.7291
+   }
+  },
+  "R1": {
+   "runs": 490,
+   "hours": 74.0445,
+   "points": [
+    {
+     "hours": 0.0,
+     "groups": 0,
+     "bug_groups": 0,
+     "bugs": 0
+    },
+    {
+     "hours": 0.9763,
+     "groups": 1,
+     "bug_groups": 0,
+     "bugs": 0
+    },
+    {
+     "hours": 1.2203,
+     "groups": 2,
+     "bug_groups": 0,
+     "bugs": 0
+    },
+    {
+     "hours": 1.4379,
+     "groups": 3,
+     "bug_groups": 0,
+     "bugs": 0
+    },
+    {
+     "hours": 2.0068,
+     "groups": 4,
+     "bug_groups": 0,
+     "bugs": 0
+    },
+    {
+     "hours": 2.3201,
+     "groups": 5,
+     "bug_groups": 1,
+     "bugs": 1
+    },
+    {
+     "hours": 5.2631,
+     "groups": 6,
+     "bug_groups": 1,
+     "bugs": 1
+    },
+    {
+     "hours": 6.6452,
+     "groups": 10,
+     "bug_groups": 5,
+     "bugs": 1
+    },
+    {
+     "hours": 7.1483,
+     "groups": 11,
+     "bug_groups": 5,
+     "bugs": 1
+    },
+    {
+     "hours": 7.4128,
+     "groups": 12,
+     "bug_groups": 6,
+     "bugs": 2
+    },
+    {
+     "hours": 11.7766,
+     "groups": 13,
+     "bug_groups": 6,
+     "bugs": 2
+    },
+    {
+     "hours": 12.251,
+     "groups": 15,
+     "bug_groups": 6,
+     "bugs": 2
+    },
+    {
+     "hours": 12.7354,
+     "groups": 16,
+     "bug_groups": 7,
+     "bugs": 3
+    },
+    {
+     "hours": 14.6622,
+     "groups": 17,
+     "bug_groups": 7,
+     "bugs": 3
+    },
+    {
+     "hours": 15.3537,
+     "groups": 21,
+     "bug_groups": 11,
+     "bugs": 3
+    },
+    {
+     "hours": 15.4212,
+     "groups": 22,
+     "bug_groups": 11,
+     "bugs": 3
+    },
+    {
+     "hours": 19.97,
+     "groups": 23,
+     "bug_groups": 12,
+     "bugs": 3
+    },
+    {
+     "hours": 23.7296,
+     "groups": 24,
+     "bug_groups": 13,
+     "bugs": 3
+    },
+    {
+     "hours": 24.5933,
+     "groups": 25,
+     "bug_groups": 13,
+     "bugs": 3
+    },
+    {
+     "hours": 25.0866,
+     "groups": 26,
+     "bug_groups": 14,
+     "bugs": 4
+    },
+    {
+     "hours": 29.5651,
+     "groups": 28,
+     "bug_groups": 16,
+     "bugs": 4
+    },
+    {
+     "hours": 29.911,
+     "groups": 29,
+     "bug_groups": 17,
+     "bugs": 5
+    },
+    {
+     "hours": 38.2171,
+     "groups": 30,
+     "bug_groups": 18,
+     "bugs": 5
+    },
+    {
+     "hours": 38.4527,
+     "groups": 31,
+     "bug_groups": 19,
+     "bugs": 6
+    },
+    {
+     "hours": 40.3219,
+     "groups": 32,
+     "bug_groups": 19,
+     "bugs": 6
+    },
+    {
+     "hours": 41.6491,
+     "groups": 33,
+     "bug_groups": 20,
+     "bugs": 7
+    },
+    {
+     "hours": 42.4496,
+     "groups": 34,
+     "bug_groups": 20,
+     "bugs": 7
+    },
+    {
+     "hours": 43.1643,
+     "groups": 36,
+     "bug_groups": 20,
+     "bugs": 7
+    },
+    {
+     "hours": 45.9173,
+     "groups": 38,
+     "bug_groups": 20,
+     "bugs": 7
+    },
+    {
+     "hours": 48.1018,
+     "groups": 40,
+     "bug_groups": 22,
+     "bugs": 7
+    },
+    {
+     "hours": 48.8076,
+     "groups": 41,
+     "bug_groups": 22,
+     "bugs": 7
+    },
+    {
+     "hours": 58.8558,
+     "groups": 44,
+     "bug_groups": 25,
+     "bugs": 7
+    },
+    {
+     "hours": 59.3621,
+     "groups": 45,
+     "bug_groups": 25,
+     "bugs": 7
+    },
+    {
+     "hours": 60.0315,
+     "groups": 46,
+     "bug_groups": 26,
+     "bugs": 8
+    },
+    {
+     "hours": 60.5133,
+     "groups": 47,
+     "bug_groups": 26,
+     "bugs": 8
+    },
+    {
+     "hours": 61.1279,
+     "groups": 49,
+     "bug_groups": 28,
+     "bugs": 9
+    },
+    {
+     "hours": 61.401,
+     "groups": 50,
+     "bug_groups": 28,
+     "bugs": 9
+    },
+    {
+     "hours": 63.9547,
+     "groups": 52,
+     "bug_groups": 29,
+     "bugs": 10
+    },
+    {
+     "hours": 65.7438,
+     "groups": 57,
+     "bug_groups": 34,
+     "bugs": 10
+    },
+    {
+     "hours": 67.2951,
+     "groups": 61,
+     "bug_groups": 36,
+     "bugs": 12
+    },
+    {
+     "hours": 67.7744,
+     "groups": 62,
+     "bug_groups": 37,
+     "bugs": 13
+    },
+    {
+     "hours": 68.9478,
+     "groups": 64,
+     "bug_groups": 39,
+     "bugs": 13
+    },
+    {
+     "hours": 72.5451,
+     "groups": 66,
+     "bug_groups": 40,
+     "bugs": 13
+    },
+    {
+     "hours": 74.0445,
+     "groups": 66,
+     "bug_groups": 40,
+     "bugs": 13
+    }
+   ],
+   "campaign_start_hours": {
+    "main_v1": 0.0,
+    "main_v2": 35.9423
+   }
+  },
+  "R2": {
+   "runs": 196,
+   "hours": 6.8226,
+   "points": [
+    {
+     "hours": 0.0,
+     "groups": 0,
+     "bug_groups": 0,
+     "bugs": 0
+    },
+    {
+     "hours": 0.3181,
+     "groups": 1,
+     "bug_groups": 1,
+     "bugs": 1
+    },
+    {
+     "hours": 2.4794,
+     "groups": 2,
+     "bug_groups": 2,
+     "bugs": 2
+    },
+    {
+     "hours": 4.5928,
+     "groups": 3,
+     "bug_groups": 3,
+     "bugs": 2
+    },
+    {
+     "hours": 5.7142,
+     "groups": 4,
+     "bug_groups": 4,
+     "bugs": 2
+    },
+    {
+     "hours": 6.8226,
+     "groups": 4,
+     "bug_groups": 4,
+     "bugs": 2
+    }
+   ],
+   "campaign_start_hours": {
+    "main_v1": 0.0,
+    "main_v2": 4.4929
+   }
+  },
+  "R3": {
+   "runs": 196,
+   "hours": 26.884,
+   "points": [
+    {
+     "hours": 0.0,
+     "groups": 0,
+     "bug_groups": 0,
+     "bugs": 0
+    },
+    {
+     "hours": 0.0568,
+     "groups": 1,
+     "bug_groups": 0,
+     "bugs": 0
+    },
+    {
+     "hours": 0.1463,
+     "groups": 2,
+     "bug_groups": 0,
+     "bugs": 0
+    },
+    {
+     "hours": 0.2345,
+     "groups": 3,
+     "bug_groups": 0,
+     "bugs": 0
+    },
+    {
+     "hours": 0.2882,
+     "groups": 5,
+     "bug_groups": 0,
+     "bugs": 0
+    },
+    {
+     "hours": 0.3875,
+     "groups": 6,
+     "bug_groups": 0,
+     "bugs": 0
+    },
+    {
+     "hours": 0.5425,
+     "groups": 7,
+     "bug_groups": 0,
+     "bugs": 0
+    },
+    {
+     "hours": 0.7248,
+     "groups": 8,
+     "bug_groups": 0,
+     "bugs": 0
+    },
+    {
+     "hours": 1.3637,
+     "groups": 9,
+     "bug_groups": 1,
+     "bugs": 1
+    },
+    {
+     "hours": 1.4778,
+     "groups": 10,
+     "bug_groups": 1,
+     "bugs": 1
+    },
+    {
+     "hours": 2.4341,
+     "groups": 13,
+     "bug_groups": 4,
+     "bugs": 2
+    },
+    {
+     "hours": 3.6252,
+     "groups": 14,
+     "bug_groups": 5,
+     "bugs": 3
+    },
+    {
+     "hours": 3.6705,
+     "groups": 15,
+     "bug_groups": 5,
+     "bugs": 3
+    },
+    {
+     "hours": 4.2161,
+     "groups": 16,
+     "bug_groups": 5,
+     "bugs": 3
+    },
+    {
+     "hours": 6.7836,
+     "groups": 17,
+     "bug_groups": 5,
+     "bugs": 3
+    },
+    {
+     "hours": 7.1273,
+     "groups": 18,
+     "bug_groups": 5,
+     "bugs": 3
+    },
+    {
+     "hours": 7.6696,
+     "groups": 19,
+     "bug_groups": 5,
+     "bugs": 3
+    },
+    {
+     "hours": 9.814,
+     "groups": 20,
+     "bug_groups": 5,
+     "bugs": 3
+    },
+    {
+     "hours": 10.9977,
+     "groups": 21,
+     "bug_groups": 5,
+     "bugs": 3
+    },
+    {
+     "hours": 12.1119,
+     "groups": 22,
+     "bug_groups": 5,
+     "bugs": 3
+    },
+    {
+     "hours": 14.8946,
+     "groups": 23,
+     "bug_groups": 5,
+     "bugs": 3
+    },
+    {
+     "hours": 15.569,
+     "groups": 24,
+     "bug_groups": 5,
+     "bugs": 3
+    },
+    {
+     "hours": 15.8291,
+     "groups": 25,
+     "bug_groups": 5,
+     "bugs": 3
+    },
+    {
+     "hours": 15.8832,
+     "groups": 27,
+     "bug_groups": 5,
+     "bugs": 3
+    },
+    {
+     "hours": 15.9449,
+     "groups": 28,
+     "bug_groups": 5,
+     "bugs": 3
+    },
+    {
+     "hours": 16.015,
+     "groups": 29,
+     "bug_groups": 5,
+     "bugs": 3
+    },
+    {
+     "hours": 16.2818,
+     "groups": 32,
+     "bug_groups": 7,
+     "bugs": 3
+    },
+    {
+     "hours": 16.4136,
+     "groups": 33,
+     "bug_groups": 7,
+     "bugs": 3
+    },
+    {
+     "hours": 16.9648,
+     "groups": 34,
+     "bug_groups": 7,
+     "bugs": 3
+    },
+    {
+     "hours": 17.3496,
+     "groups": 35,
+     "bug_groups": 7,
+     "bugs": 3
+    },
+    {
+     "hours": 17.6542,
+     "groups": 36,
+     "bug_groups": 7,
+     "bugs": 3
+    },
+    {
+     "hours": 18.3588,
+     "groups": 37,
+     "bug_groups": 7,
+     "bugs": 3
+    },
+    {
+     "hours": 18.4091,
+     "groups": 38,
+     "bug_groups": 7,
+     "bugs": 3
+    },
+    {
+     "hours": 18.4468,
+     "groups": 40,
+     "bug_groups": 7,
+     "bugs": 3
+    },
+    {
+     "hours": 19.4153,
+     "groups": 41,
+     "bug_groups": 7,
+     "bugs": 3
+    },
+    {
+     "hours": 20.7806,
+     "groups": 42,
+     "bug_groups": 7,
+     "bugs": 3
+    },
+    {
+     "hours": 21.2056,
+     "groups": 43,
+     "bug_groups": 7,
+     "bugs": 3
+    },
+    {
+     "hours": 21.3079,
+     "groups": 44,
+     "bug_groups": 7,
+     "bugs": 3
+    },
+    {
+     "hours": 21.8062,
+     "groups": 45,
+     "bug_groups": 7,
+     "bugs": 3
+    },
+    {
+     "hours": 21.9724,
+     "groups": 46,
+     "bug_groups": 7,
+     "bugs": 3
+    },
+    {
+     "hours": 25.7358,
+     "groups": 47,
+     "bug_groups": 8,
+     "bugs": 3
+    },
+    {
+     "hours": 26.884,
+     "groups": 47,
+     "bug_groups": 8,
+     "bugs": 3
+    }
+   ],
+   "campaign_start_hours": {
+    "main_v1": 0.0,
+    "main_v2": 15.8017
+   }
+  },
+  "R4": {
+   "runs": 196,
+   "hours": 17.2989,
+   "points": [
+    {
+     "hours": 0.0,
+     "groups": 0,
+     "bug_groups": 0,
+     "bugs": 0
+    },
+    {
+     "hours": 0.1264,
+     "groups": 2,
+     "bug_groups": 0,
+     "bugs": 0
+    },
+    {
+     "hours": 0.3459,
+     "groups": 3,
+     "bug_groups": 0,
+     "bugs": 0
+    },
+    {
+     "hours": 0.6155,
+     "groups": 4,
+     "bug_groups": 0,
+     "bugs": 0
+    },
+    {
+     "hours": 0.7546,
+     "groups": 5,
+     "bug_groups": 0,
+     "bugs": 0
+    },
+    {
+     "hours": 0.8618,
+     "groups": 6,
+     "bug_groups": 0,
+     "bugs": 0
+    },
+    {
+     "hours": 0.9219,
+     "groups": 8,
+     "bug_groups": 2,
+     "bugs": 2
+    },
+    {
+     "hours": 1.1583,
+     "groups": 9,
+     "bug_groups": 3,
+     "bugs": 2
+    },
+    {
+     "hours": 1.2593,
+     "groups": 10,
+     "bug_groups": 3,
+     "bugs": 2
+    },
+    {
+     "hours": 1.4112,
+     "groups": 11,
+     "bug_groups": 3,
+     "bugs": 2
+    },
+    {
+     "hours": 1.897,
+     "groups": 13,
+     "bug_groups": 3,
+     "bugs": 2
+    },
+    {
+     "hours": 2.0132,
+     "groups": 14,
+     "bug_groups": 4,
+     "bugs": 2
+    },
+    {
+     "hours": 2.9004,
+     "groups": 16,
+     "bug_groups": 6,
+     "bugs": 3
+    },
+    {
+     "hours": 3.5815,
+     "groups": 17,
+     "bug_groups": 7,
+     "bugs": 4
+    },
+    {
+     "hours": 3.8163,
+     "groups": 18,
+     "bug_groups": 8,
+     "bugs": 4
+    },
+    {
+     "hours": 4.1144,
+     "groups": 20,
+     "bug_groups": 8,
+     "bugs": 4
+    },
+    {
+     "hours": 4.2965,
+     "groups": 21,
+     "bug_groups": 8,
+     "bugs": 4
+    },
+    {
+     "hours": 4.3404,
+     "groups": 22,
+     "bug_groups": 8,
+     "bugs": 4
+    },
+    {
+     "hours": 4.4056,
+     "groups": 23,
+     "bug_groups": 9,
+     "bugs": 4
+    },
+    {
+     "hours": 4.5985,
+     "groups": 24,
+     "bug_groups": 10,
+     "bugs": 5
+    },
+    {
+     "hours": 6.7976,
+     "groups": 25,
+     "bug_groups": 10,
+     "bugs": 5
+    },
+    {
+     "hours": 7.0089,
+     "groups": 26,
+     "bug_groups": 10,
+     "bugs": 5
+    },
+    {
+     "hours": 7.329,
+     "groups": 27,
+     "bug_groups": 10,
+     "bugs": 5
+    },
+    {
+     "hours": 8.7458,
+     "groups": 29,
+     "bug_groups": 12,
+     "bugs": 6
+    },
+    {
+     "hours": 8.9083,
+     "groups": 30,
+     "bug_groups": 12,
+     "bugs": 6
+    },
+    {
+     "hours": 9.4456,
+     "groups": 32,
+     "bug_groups": 12,
+     "bugs": 6
+    },
+    {
+     "hours": 10.0504,
+     "groups": 35,
+     "bug_groups": 15,
+     "bugs": 8
+    },
+    {
+     "hours": 11.6243,
+     "groups": 37,
+     "bug_groups": 15,
+     "bugs": 8
+    },
+    {
+     "hours": 11.9808,
+     "groups": 38,
+     "bug_groups": 16,
+     "bugs": 9
+    },
+    {
+     "hours": 12.0917,
+     "groups": 39,
+     "bug_groups": 16,
+     "bugs": 9
+    },
+    {
+     "hours": 12.3902,
+     "groups": 41,
+     "bug_groups": 16,
+     "bugs": 9
+    },
+    {
+     "hours": 12.8875,
+     "groups": 43,
+     "bug_groups": 16,
+     "bugs": 9
+    },
+    {
+     "hours": 13.0686,
+     "groups": 44,
+     "bug_groups": 17,
+     "bugs": 9
+    },
+    {
+     "hours": 13.4563,
+     "groups": 45,
+     "bug_groups": 17,
+     "bugs": 9
+    },
+    {
+     "hours": 13.5141,
+     "groups": 46,
+     "bug_groups": 18,
+     "bugs": 9
+    },
+    {
+     "hours": 13.6906,
+     "groups": 48,
+     "bug_groups": 20,
+     "bugs": 10
+    },
+    {
+     "hours": 13.8127,
+     "groups": 49,
+     "bug_groups": 21,
+     "bugs": 10
+    },
+    {
+     "hours": 14.3723,
+     "groups": 50,
+     "bug_groups": 21,
+     "bugs": 10
+    },
+    {
+     "hours": 14.4241,
+     "groups": 51,
+     "bug_groups": 22,
+     "bugs": 10
+    },
+    {
+     "hours": 14.7513,
+     "groups": 52,
+     "bug_groups": 22,
+     "bugs": 10
+    },
+    {
+     "hours": 15.1824,
+     "groups": 54,
+     "bug_groups": 22,
+     "bugs": 10
+    },
+    {
+     "hours": 15.5948,
+     "groups": 56,
+     "bug_groups": 24,
+     "bugs": 11
+    },
+    {
+     "hours": 15.704,
+     "groups": 57,
+     "bug_groups": 24,
+     "bugs": 11
+    },
+    {
+     "hours": 15.9308,
+     "groups": 60,
+     "bug_groups": 25,
+     "bugs": 12
+    },
+    {
+     "hours": 16.2791,
+     "groups": 61,
+     "bug_groups": 25,
+     "bugs": 12
+    },
+    {
+     "hours": 16.3084,
+     "groups": 62,
+     "bug_groups": 26,
+     "bugs": 13
+    },
+    {
+     "hours": 16.6355,
+     "groups": 63,
+     "bug_groups": 26,
+     "bugs": 13
+    },
+    {
+     "hours": 16.8225,
+     "groups": 64,
+     "bug_groups": 27,
+     "bugs": 13
+    },
+    {
+     "hours": 17.2989,
+     "groups": 65,
+     "bug_groups": 27,
+     "bugs": 13
+    },
+    {
+     "hours": 17.2989,
+     "groups": 65,
+     "bug_groups": 27,
+     "bugs": 13
+    }
+   ],
+   "campaign_start_hours": {
+    "main_v1": 0.0,
+    "main_v2": 8.6485
+   }
+  },
+  "R5": {
+   "runs": 196,
+   "hours": 22.9569,
+   "points": [
+    {
+     "hours": 0.0,
+     "groups": 0,
+     "bug_groups": 0,
+     "bugs": 0
+    },
+    {
+     "hours": 0.9118,
+     "groups": 1,
+     "bug_groups": 0,
+     "bugs": 0
+    },
+    {
+     "hours": 0.9946,
+     "groups": 2,
+     "bug_groups": 0,
+     "bugs": 0
+    },
+    {
+     "hours": 1.0256,
+     "groups": 3,
+     "bug_groups": 0,
+     "bugs": 0
+    },
+    {
+     "hours": 2.1819,
+     "groups": 4,
+     "bug_groups": 0,
+     "bugs": 0
+    },
+    {
+     "hours": 4.0349,
+     "groups": 6,
+     "bug_groups": 0,
+     "bugs": 0
+    },
+    {
+     "hours": 7.0195,
+     "groups": 7,
+     "bug_groups": 0,
+     "bugs": 0
+    },
+    {
+     "hours": 9.7842,
+     "groups": 8,
+     "bug_groups": 0,
+     "bugs": 0
+    },
+    {
+     "hours": 10.0409,
+     "groups": 9,
+     "bug_groups": 0,
+     "bugs": 0
+    },
+    {
+     "hours": 12.7614,
+     "groups": 11,
+     "bug_groups": 1,
+     "bugs": 1
+    },
+    {
+     "hours": 13.0449,
+     "groups": 12,
+     "bug_groups": 1,
+     "bugs": 1
+    },
+    {
+     "hours": 13.8588,
+     "groups": 13,
+     "bug_groups": 1,
+     "bugs": 1
+    },
+    {
+     "hours": 17.4352,
+     "groups": 14,
+     "bug_groups": 1,
+     "bugs": 1
+    },
+    {
+     "hours": 18.2847,
+     "groups": 16,
+     "bug_groups": 3,
+     "bugs": 1
+    },
+    {
+     "hours": 18.4696,
+     "groups": 17,
+     "bug_groups": 3,
+     "bugs": 1
+    },
+    {
+     "hours": 18.5762,
+     "groups": 18,
+     "bug_groups": 3,
+     "bugs": 1
+    },
+    {
+     "hours": 22.7205,
+     "groups": 19,
+     "bug_groups": 3,
+     "bugs": 1
+    },
+    {
+     "hours": 22.9569,
+     "groups": 19,
+     "bug_groups": 3,
+     "bugs": 1
+    }
+   ],
+   "campaign_start_hours": {
+    "main_v1": 0.0,
+    "main_v2": 12.7104
+   }
+  },
+  "R6": {
+   "runs": 38,
+   "hours": 5.1746,
+   "points": [
+    {
+     "hours": 0.0,
+     "groups": 0,
+     "bug_groups": 0,
+     "bugs": 0
+    },
+    {
+     "hours": 0.3683,
+     "groups": 4,
+     "bug_groups": 0,
+     "bugs": 0
+    },
+    {
+     "hours": 0.7395,
+     "groups": 6,
+     "bug_groups": 0,
+     "bugs": 0
+    },
+    {
+     "hours": 1.0052,
+     "groups": 9,
+     "bug_groups": 0,
+     "bugs": 0
+    },
+    {
+     "hours": 2.3782,
+     "groups": 12,
+     "bug_groups": 0,
+     "bugs": 0
+    },
+    {
+     "hours": 2.8022,
+     "groups": 13,
+     "bug_groups": 0,
+     "bugs": 0
+    },
+    {
+     "hours": 2.9585,
+     "groups": 15,
+     "bug_groups": 0,
+     "bugs": 0
+    },
+    {
+     "hours": 3.3385,
+     "groups": 16,
+     "bug_groups": 0,
+     "bugs": 0
+    },
+    {
+     "hours": 3.7914,
+     "groups": 17,
+     "bug_groups": 0,
+     "bugs": 0
+    },
+    {
+     "hours": 4.0896,
+     "groups": 21,
+     "bug_groups": 0,
+     "bugs": 0
+    },
+    {
+     "hours": 5.0535,
+     "groups": 23,
+     "bug_groups": 0,
+     "bugs": 0
+    },
+    {
+     "hours": 5.1746,
+     "groups": 23,
+     "bug_groups": 0,
+     "bugs": 0
+    }
+   ],
+   "campaign_start_hours": {
+    "main_v1": 0.0,
+    "main_v2": 2.8513
+   }
+  }
+ },
+ "lifecycle": {
+  "C1": {
+   "line": "ts6",
+   "group": "ts6-r1-references-lost-h5-d24ca6",
+   "cells": [
+    {
+     "version": "5.5.4+tsls4.3.3",
+     "build": "5.5.4+tsls4.3.3",
+     "released": "2024-07-22",
+     "roles": [
+      "last patch of 5.5"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "5.6.3+tsls4.3.3",
+     "build": "5.6.3+tsls4.3.3",
+     "released": "2024-10-08",
+     "roles": [
+      "last patch of 5.6"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "5.7.3+tsls4.3.3",
+     "build": "5.7.3+tsls4.3.3",
+     "released": "2025-01-08",
+     "roles": [
+      "last patch of 5.7"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "5.8.3+tsls4.3.4",
+     "build": "5.8.3+tsls4.3.4",
+     "released": "2025-04-05",
+     "roles": [
+      "last patch of 5.8"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "5.9.3+tsls5.0.0",
+     "build": "5.9.3+tsls5.0.0",
+     "released": "2025-09-30",
+     "roles": [
+      "last patch of 5.9"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "6.0.3+tsls5.1.3",
+     "build": "6.0.3+tsls5.1.3",
+     "released": "2026-04-16",
+     "roles": [
+      "last patch of 6.0"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "6.0.3+tsls6.0.0",
+     "build": "6.0.3+tsls6.0.0",
+     "released": "2026-04-16",
+     "roles": [
+      "campaign"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "6.0.3+tsls6.0.1",
+     "build": "6.0.3+tsls6.0.1",
+     "released": "2026-04-16",
+     "roles": [
+      "newest on 2026-09-28"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "6.0.3+tsls6.1.0",
+     "build": "6.0.3+tsls6.1.0",
+     "released": "2026-04-16",
+     "roles": [
+      "newest"
+     ],
+     "state": "partly",
+     "reproduced": 2,
+     "replays": 3
+    }
+   ],
+   "campaign_release": "2026-04-16",
+   "oldest_reproduced": "5.5.4+tsls4.3.3",
+   "oldest_released": "2024-07-22",
+   "age_months": 20.8
+  },
+  "C2": {
+   "line": "ts6",
+   "group": "ts6-r1-diagnostics-extra-2304-h7-8ca52f",
+   "cells": [
+    {
+     "version": "5.5.4+tsls4.3.3",
+     "build": "5.5.4+tsls4.3.3",
+     "released": "2024-07-22",
+     "roles": [
+      "last patch of 5.5"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "5.6.3+tsls4.3.3",
+     "build": "5.6.3+tsls4.3.3",
+     "released": "2024-10-08",
+     "roles": [
+      "last patch of 5.6"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "5.7.3+tsls4.3.3",
+     "build": "5.7.3+tsls4.3.3",
+     "released": "2025-01-08",
+     "roles": [
+      "last patch of 5.7"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "5.8.3+tsls4.3.4",
+     "build": "5.8.3+tsls4.3.4",
+     "released": "2025-04-05",
+     "roles": [
+      "last patch of 5.8"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "5.9.3+tsls5.0.0",
+     "build": "5.9.3+tsls5.0.0",
+     "released": "2025-09-30",
+     "roles": [
+      "last patch of 5.9"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "6.0.3+tsls5.1.3",
+     "build": "6.0.3+tsls5.1.3",
+     "released": "2026-04-16",
+     "roles": [
+      "last patch of 6.0"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "6.0.3+tsls6.0.0",
+     "build": "6.0.3+tsls6.0.0",
+     "released": "2026-04-16",
+     "roles": [
+      "campaign"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "6.0.3+tsls6.0.1",
+     "build": "6.0.3+tsls6.0.1",
+     "released": "2026-04-16",
+     "roles": [
+      "newest on 2026-09-28"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "6.0.3+tsls6.1.0",
+     "build": "6.0.3+tsls6.1.0",
+     "released": "2026-04-16",
+     "roles": [
+      "newest"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    }
+   ],
+   "campaign_release": "2026-04-16",
+   "oldest_reproduced": "5.5.4+tsls4.3.3",
+   "oldest_released": "2024-07-22",
+   "age_months": 20.8
+  },
+  "C3": {
+   "line": "gopls",
+   "group": "gopls-r2-codeactionresolve-changed-codeaction-70b3e9",
+   "cells": [
+    {
+     "version": "v0.16.0",
+     "build": "v0.16.0",
+     "released": "2024-06-20",
+     "roles": [
+      "first of v0.16"
+     ],
+     "state": "n/a",
+     "reproduced": null,
+     "replays": null
+    },
+    {
+     "version": "v0.17.0",
+     "build": "v0.17.0",
+     "released": "2024-12-11",
+     "roles": [
+      "first of v0.17"
+     ],
+     "state": "n/a",
+     "reproduced": null,
+     "replays": null
+    },
+    {
+     "version": "v0.18.0",
+     "build": "v0.18.0",
+     "released": "2025-02-20",
+     "roles": [
+      "first of v0.18"
+     ],
+     "state": "n/a",
+     "reproduced": null,
+     "replays": null
+    },
+    {
+     "version": "v0.19.0",
+     "build": "v0.19.0+go1.27.1",
+     "released": "2025-06-10",
+     "roles": [
+      "first of v0.19"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "v0.20.0",
+     "build": "v0.20.0",
+     "released": "2025-07-28",
+     "roles": [
+      "first of v0.20"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "v0.21.0",
+     "build": "v0.21.0",
+     "released": "2025-12-05",
+     "roles": [
+      "first of v0.21"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "v0.22.0",
+     "build": "v0.22.0",
+     "released": "2026-05-15",
+     "roles": [
+      "first of v0.22"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "v0.23.0",
+     "build": "v0.23.0",
+     "released": "2026-07-07",
+     "roles": [
+      "first of v0.23",
+      "newest on 2026-09-28",
+      "campaign"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "v0.24.0",
+     "build": "v0.24.0",
+     "released": "2026-10-14",
+     "roles": [
+      "newest"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "v0.0.0-20261118023053-8967817d2000",
+     "build": "v0.0.0-20261118023053-8967817d2000",
+     "released": "2026-11-18",
+     "roles": [
+      "development head"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    }
+   ],
+   "campaign_release": "2026-07-07",
+   "oldest_reproduced": "v0.19.0",
+   "oldest_released": "2025-06-10",
+   "age_months": 12.9
+  },
+  "C4": {
+   "line": "rust-analyzer",
+   "group": "rust-analyzer-r2-completionresolve-changed-completion-3170a1",
+   "cells": [
+    {
+     "version": "2024-10-07",
+     "build": "2024-10-07",
+     "released": "2024-10-07",
+     "roles": [
+      "first of 2024-Q4"
+     ],
+     "state": "n/a",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "2025-01-06",
+     "build": "2025-01-06",
+     "released": "2025-01-06",
+     "roles": [
+      "first of 2025-Q1"
+     ],
+     "state": "n/a",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "2025-04-07",
+     "build": "2025-04-07",
+     "released": "2025-04-07",
+     "roles": [
+      "first of 2025-Q2"
+     ],
+     "state": "n/a",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "2025-07-07",
+     "build": "2025-07-07",
+     "released": "2025-07-07",
+     "roles": [
+      "first of 2025-Q3"
+     ],
+     "state": "n/a",
+     "reproduced": null,
+     "replays": null
+    },
+    {
+     "version": "2025-10-27",
+     "build": "2025-10-27",
+     "released": "2025-10-27",
+     "roles": [
+      "first of 2025-Q4"
+     ],
+     "state": "n/a",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "2026-01-05",
+     "build": "2026-01-05",
+     "released": "2026-01-05",
+     "roles": [
+      "first of 2026-Q1"
+     ],
+     "state": "n/a",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "2026-04-06",
+     "build": "2026-04-06",
+     "released": "2026-04-06",
+     "roles": [
+      "first of 2026-Q2"
+     ],
+     "state": "n/a",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "2026-07-06",
+     "build": "2026-07-06",
+     "released": "2026-07-06",
+     "roles": [
+      "first of 2026-Q3"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "2026-09-21",
+     "build": "2026-09-21",
+     "released": "2026-09-21",
+     "roles": [
+      "campaign"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "2026-09-28",
+     "build": "2026-09-28",
+     "released": "2026-09-28",
+     "roles": [
+      "newest on 2026-09-28"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "2026-11-16",
+     "build": "2026-11-16",
+     "released": "2026-11-16",
+     "roles": [
+      "newest"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    }
+   ],
+   "campaign_release": "2026-09-21",
+   "oldest_reproduced": "2026-07-06",
+   "oldest_released": "2026-07-06",
+   "age_months": 2.5
+  },
+  "C5": {
+   "line": "gopls",
+   "group": "gopls-r4-diagnostics-extra-notatype-mutation-m2-477181",
+   "cells": [
+    {
+     "version": "v0.16.0",
+     "build": "v0.16.0",
+     "released": "2024-06-20",
+     "roles": [
+      "first of v0.16"
+     ],
+     "state": "n/a",
+     "reproduced": null,
+     "replays": null
+    },
+    {
+     "version": "v0.17.0",
+     "build": "v0.17.0",
+     "released": "2024-12-11",
+     "roles": [
+      "first of v0.17"
+     ],
+     "state": "n/a",
+     "reproduced": null,
+     "replays": null
+    },
+    {
+     "version": "v0.18.0",
+     "build": "v0.18.0",
+     "released": "2025-02-20",
+     "roles": [
+      "first of v0.18"
+     ],
+     "state": "n/a",
+     "reproduced": null,
+     "replays": null
+    },
+    {
+     "version": "v0.19.0",
+     "build": "v0.19.0+go1.27.1",
+     "released": "2025-06-10",
+     "roles": [
+      "first of v0.19"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "v0.20.0",
+     "build": "v0.20.0",
+     "released": "2025-07-28",
+     "roles": [
+      "first of v0.20"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "v0.21.0",
+     "build": "v0.21.0",
+     "released": "2025-12-05",
+     "roles": [
+      "first of v0.21"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "v0.22.0",
+     "build": "v0.22.0",
+     "released": "2026-05-15",
+     "roles": [
+      "first of v0.22"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "v0.23.0",
+     "build": "v0.23.0",
+     "released": "2026-07-07",
+     "roles": [
+      "first of v0.23",
+      "newest on 2026-09-28",
+      "campaign"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "v0.24.0",
+     "build": "v0.24.0",
+     "released": "2026-10-14",
+     "roles": [
+      "newest"
+     ],
+     "state": "not-reproduced",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "v0.0.0-20261118023053-8967817d2000",
+     "build": "v0.0.0-20261118023053-8967817d2000",
+     "released": "2026-11-18",
+     "roles": [
+      "development head"
+     ],
+     "state": "not-reproduced",
+     "reproduced": 0,
+     "replays": 3
+    }
+   ],
+   "campaign_release": "2026-07-07",
+   "oldest_reproduced": "v0.19.0",
+   "oldest_released": "2025-06-10",
+   "age_months": 12.9
+  },
+  "C6": {
+   "line": "gopls",
+   "group": "gopls-r4-diagnostics-extra-mutation-m2-111975",
+   "cells": [
+    {
+     "version": "v0.16.0",
+     "build": "v0.16.0",
+     "released": "2024-06-20",
+     "roles": [
+      "first of v0.16"
+     ],
+     "state": "not-reproduced",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "v0.17.0",
+     "build": "v0.17.0",
+     "released": "2024-12-11",
+     "roles": [
+      "first of v0.17"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "v0.18.0",
+     "build": "v0.18.0",
+     "released": "2025-02-20",
+     "roles": [
+      "first of v0.18"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "v0.19.0",
+     "build": "v0.19.0+go1.27.1",
+     "released": "2025-06-10",
+     "roles": [
+      "first of v0.19"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "v0.20.0",
+     "build": "v0.20.0",
+     "released": "2025-07-28",
+     "roles": [
+      "first of v0.20"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "v0.21.0",
+     "build": "v0.21.0",
+     "released": "2025-12-05",
+     "roles": [
+      "first of v0.21"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "v0.22.0",
+     "build": "v0.22.0",
+     "released": "2026-05-15",
+     "roles": [
+      "first of v0.22"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "v0.23.0",
+     "build": "v0.23.0",
+     "released": "2026-07-07",
+     "roles": [
+      "first of v0.23",
+      "newest on 2026-09-28",
+      "campaign"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "v0.24.0",
+     "build": "v0.24.0",
+     "released": "2026-10-14",
+     "roles": [
+      "newest"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "v0.0.0-20261118023053-8967817d2000",
+     "build": "v0.0.0-20261118023053-8967817d2000",
+     "released": "2026-11-18",
+     "roles": [
+      "development head"
+     ],
+     "state": "not-reproduced",
+     "reproduced": 0,
+     "replays": 3
+    }
+   ],
+   "campaign_release": "2026-07-07",
+   "oldest_reproduced": "v0.17.0",
+   "oldest_released": "2024-12-11",
+   "age_months": 18.8
+  },
+  "C7": {
+   "line": "gopls",
+   "group": "gopls-r4-diagnostics-extra-undeclaredname-wrongar-mutation-m3-946c39",
+   "cells": [
+    {
+     "version": "v0.16.0",
+     "build": "v0.16.0",
+     "released": "2024-06-20",
+     "roles": [
+      "first of v0.16"
+     ],
+     "state": "n/a",
+     "reproduced": null,
+     "replays": null
+    },
+    {
+     "version": "v0.17.0",
+     "build": "v0.17.0",
+     "released": "2024-12-11",
+     "roles": [
+      "first of v0.17"
+     ],
+     "state": "n/a",
+     "reproduced": null,
+     "replays": null
+    },
+    {
+     "version": "v0.18.0",
+     "build": "v0.18.0",
+     "released": "2025-02-20",
+     "roles": [
+      "first of v0.18"
+     ],
+     "state": "n/a",
+     "reproduced": null,
+     "replays": null
+    },
+    {
+     "version": "v0.19.0",
+     "build": "v0.19.0+go1.27.1",
+     "released": "2025-06-10",
+     "roles": [
+      "first of v0.19"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "v0.20.0",
+     "build": "v0.20.0",
+     "released": "2025-07-28",
+     "roles": [
+      "first of v0.20"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "v0.21.0",
+     "build": "v0.21.0",
+     "released": "2025-12-05",
+     "roles": [
+      "first of v0.21"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "v0.22.0",
+     "build": "v0.22.0",
+     "released": "2026-05-15",
+     "roles": [
+      "first of v0.22"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "v0.23.0",
+     "build": "v0.23.0",
+     "released": "2026-07-07",
+     "roles": [
+      "first of v0.23",
+      "newest on 2026-09-28",
+      "campaign"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "v0.24.0",
+     "build": "v0.24.0",
+     "released": "2026-10-14",
+     "roles": [
+      "newest"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "v0.0.0-20261118023053-8967817d2000",
+     "build": "v0.0.0-20261118023053-8967817d2000",
+     "released": "2026-11-18",
+     "roles": [
+      "development head"
+     ],
+     "state": "not-reproduced",
+     "reproduced": 0,
+     "replays": 3
+    }
+   ],
+   "campaign_release": "2026-07-07",
+   "oldest_reproduced": "v0.19.0",
+   "oldest_released": "2025-06-10",
+   "age_months": 12.9
+  },
+  "C8": {
+   "line": "rust-analyzer",
+   "group": "rust-analyzer-r3-definitionconsistency-extra-d-4cbc9e",
+   "cells": [
+    {
+     "version": "2024-10-07",
+     "build": "2024-10-07",
+     "released": "2024-10-07",
+     "roles": [
+      "first of 2024-Q4"
+     ],
+     "state": "not-reproduced",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "2025-01-06",
+     "build": "2025-01-06",
+     "released": "2025-01-06",
+     "roles": [
+      "first of 2025-Q1"
+     ],
+     "state": "n/a",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "2025-04-07",
+     "build": "2025-04-07",
+     "released": "2025-04-07",
+     "roles": [
+      "first of 2025-Q2"
+     ],
+     "state": "not-reproduced",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "2025-07-07",
+     "build": "2025-07-07",
+     "released": "2025-07-07",
+     "roles": [
+      "first of 2025-Q3"
+     ],
+     "state": "n/a",
+     "reproduced": null,
+     "replays": null
+    },
+    {
+     "version": "2025-10-27",
+     "build": "2025-10-27",
+     "released": "2025-10-27",
+     "roles": [
+      "first of 2025-Q4"
+     ],
+     "state": "not-reproduced",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "2026-01-05",
+     "build": "2026-01-05",
+     "released": "2026-01-05",
+     "roles": [
+      "first of 2026-Q1"
+     ],
+     "state": "not-reproduced",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "2026-04-06",
+     "build": "2026-04-06",
+     "released": "2026-04-06",
+     "roles": [
+      "first of 2026-Q2"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "2026-07-06",
+     "build": "2026-07-06",
+     "released": "2026-07-06",
+     "roles": [
+      "first of 2026-Q3"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "2026-09-21",
+     "build": "2026-09-21",
+     "released": "2026-09-21",
+     "roles": [
+      "campaign"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "2026-09-28",
+     "build": "2026-09-28",
+     "released": "2026-09-28",
+     "roles": [
+      "newest on 2026-09-28"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "2026-11-16",
+     "build": "2026-11-16",
+     "released": "2026-11-16",
+     "roles": [
+      "newest"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    }
+   ],
+   "campaign_release": "2026-09-21",
+   "oldest_reproduced": "2026-04-06",
+   "oldest_released": "2026-04-06",
+   "age_months": 5.5
+  },
+  "C9": {
+   "line": "gopls",
+   "group": "gopls-r1-references-extra-h9-0290a7",
+   "cells": [
+    {
+     "version": "v0.16.0",
+     "build": "v0.16.0",
+     "released": "2024-06-20",
+     "roles": [
+      "first of v0.16"
+     ],
+     "state": "n/a",
+     "reproduced": null,
+     "replays": null
+    },
+    {
+     "version": "v0.17.0",
+     "build": "v0.17.0",
+     "released": "2024-12-11",
+     "roles": [
+      "first of v0.17"
+     ],
+     "state": "n/a",
+     "reproduced": null,
+     "replays": null
+    },
+    {
+     "version": "v0.18.0",
+     "build": "v0.18.0",
+     "released": "2025-02-20",
+     "roles": [
+      "first of v0.18"
+     ],
+     "state": "n/a",
+     "reproduced": null,
+     "replays": null
+    },
+    {
+     "version": "v0.19.0",
+     "build": "v0.19.0+go1.27.1",
+     "released": "2025-06-10",
+     "roles": [
+      "first of v0.19"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "v0.20.0",
+     "build": "v0.20.0",
+     "released": "2025-07-28",
+     "roles": [
+      "first of v0.20"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "v0.21.0",
+     "build": "v0.21.0",
+     "released": "2025-12-05",
+     "roles": [
+      "first of v0.21"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "v0.22.0",
+     "build": "v0.22.0",
+     "released": "2026-05-15",
+     "roles": [
+      "first of v0.22"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "v0.23.0",
+     "build": "v0.23.0",
+     "released": "2026-07-07",
+     "roles": [
+      "first of v0.23",
+      "newest on 2026-09-28",
+      "campaign"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "v0.24.0",
+     "build": "v0.24.0",
+     "released": "2026-10-14",
+     "roles": [
+      "newest"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "v0.0.0-20261118023053-8967817d2000",
+     "build": "v0.0.0-20261118023053-8967817d2000",
+     "released": "2026-11-18",
+     "roles": [
+      "development head"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    }
+   ],
+   "campaign_release": "2026-07-07",
+   "oldest_reproduced": "v0.19.0",
+   "oldest_released": "2025-06-10",
+   "age_months": 12.9
+  },
+  "C10": {
+   "line": "ts7",
+   "group": "ts7-r1-references-missing-h9-2dd24a",
+   "cells": [
+    {
+     "version": "7.0.1-rc",
+     "build": "7.0.1-rc",
+     "released": "2026-06-18",
+     "roles": [
+      "pre-release"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "7.0.2",
+     "build": "7.0.2",
+     "released": "2026-07-08",
+     "roles": [
+      "campaign",
+      "newest",
+      "newest on 2026-09-28"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    }
+   ],
+   "campaign_release": "2026-07-08",
+   "oldest_reproduced": "7.0.1-rc",
+   "oldest_released": "2026-06-18",
+   "age_months": 0.7
+  },
+  "C11": {
+   "line": "ts6",
+   "group": "ts6-r4-diagnostics-extra-2322-mutation-m3-1879f3",
+   "cells": [
+    {
+     "version": "5.5.4+tsls4.3.3",
+     "build": "5.5.4+tsls4.3.3",
+     "released": "2024-07-22",
+     "roles": [
+      "last patch of 5.5"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "5.6.3+tsls4.3.3",
+     "build": "5.6.3+tsls4.3.3",
+     "released": "2024-10-08",
+     "roles": [
+      "last patch of 5.6"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "5.7.3+tsls4.3.3",
+     "build": "5.7.3+tsls4.3.3",
+     "released": "2025-01-08",
+     "roles": [
+      "last patch of 5.7"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "5.8.3+tsls4.3.4",
+     "build": "5.8.3+tsls4.3.4",
+     "released": "2025-04-05",
+     "roles": [
+      "last patch of 5.8"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "5.9.3+tsls5.0.0",
+     "build": "5.9.3+tsls5.0.0",
+     "released": "2025-09-30",
+     "roles": [
+      "last patch of 5.9"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "6.0.3+tsls5.1.3",
+     "build": "6.0.3+tsls5.1.3",
+     "released": "2026-04-16",
+     "roles": [
+      "last patch of 6.0"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "6.0.3+tsls6.0.0",
+     "build": "6.0.3+tsls6.0.0",
+     "released": "2026-04-16",
+     "roles": [
+      "campaign"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "6.0.3+tsls6.0.1",
+     "build": "6.0.3+tsls6.0.1",
+     "released": "2026-04-16",
+     "roles": [
+      "newest on 2026-09-28"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "6.0.3+tsls6.1.0",
+     "build": "6.0.3+tsls6.1.0",
+     "released": "2026-04-16",
+     "roles": [
+      "newest"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    }
+   ],
+   "campaign_release": "2026-04-16",
+   "oldest_reproduced": "5.5.4+tsls4.3.3",
+   "oldest_released": "2024-07-22",
+   "age_months": 20.8
+  },
+  "C12": {
+   "line": "gopls",
+   "group": "gopls-r1-codeaction-changed-h4-c5344e",
+   "cells": [
+    {
+     "version": "v0.16.0",
+     "build": "v0.16.0",
+     "released": "2024-06-20",
+     "roles": [
+      "first of v0.16"
+     ],
+     "state": "n/a",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "v0.17.0",
+     "build": "v0.17.0",
+     "released": "2024-12-11",
+     "roles": [
+      "first of v0.17"
+     ],
+     "state": "n/a",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "v0.18.0",
+     "build": "v0.18.0",
+     "released": "2025-02-20",
+     "roles": [
+      "first of v0.18"
+     ],
+     "state": "n/a",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "v0.19.0",
+     "build": "v0.19.0+go1.27.1",
+     "released": "2025-06-10",
+     "roles": [
+      "first of v0.19"
+     ],
+     "state": "n/a",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "v0.20.0",
+     "build": "v0.20.0",
+     "released": "2025-07-28",
+     "roles": [
+      "first of v0.20"
+     ],
+     "state": "n/a",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "v0.21.0",
+     "build": "v0.21.0",
+     "released": "2025-12-05",
+     "roles": [
+      "first of v0.21"
+     ],
+     "state": "n/a",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "v0.22.0",
+     "build": "v0.22.0",
+     "released": "2026-05-15",
+     "roles": [
+      "first of v0.22"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "v0.23.0",
+     "build": "v0.23.0",
+     "released": "2026-07-07",
+     "roles": [
+      "first of v0.23",
+      "newest on 2026-09-28",
+      "campaign"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "v0.24.0",
+     "build": "v0.24.0",
+     "released": "2026-10-14",
+     "roles": [
+      "newest"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    }
+   ],
+   "campaign_release": "2026-07-07",
+   "oldest_reproduced": "v0.22.0",
+   "oldest_released": "2026-05-15",
+   "age_months": 1.7
+  },
+  "C23": {
+   "line": "rust-analyzer",
+   "group": "rust-analyzer-r0-references-result-error-timeout-fresh-pair-8a4b8d",
+   "cells": [
+    {
+     "version": "2024-10-07",
+     "build": "2024-10-07",
+     "released": "2024-10-07",
+     "roles": [
+      "first of 2024-Q4"
+     ],
+     "state": "not-reproduced",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "2025-01-06",
+     "build": "2025-01-06",
+     "released": "2025-01-06",
+     "roles": [
+      "first of 2025-Q1"
+     ],
+     "state": "n/a",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "2025-04-07",
+     "build": "2025-04-07",
+     "released": "2025-04-07",
+     "roles": [
+      "first of 2025-Q2"
+     ],
+     "state": "not-reproduced",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "2025-07-07",
+     "build": "2025-07-07",
+     "released": "2025-07-07",
+     "roles": [
+      "first of 2025-Q3"
+     ],
+     "state": "n/a",
+     "reproduced": null,
+     "replays": null
+    },
+    {
+     "version": "2025-10-27",
+     "build": "2025-10-27",
+     "released": "2025-10-27",
+     "roles": [
+      "first of 2025-Q4"
+     ],
+     "state": "not-reproduced",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "2026-01-05",
+     "build": "2026-01-05",
+     "released": "2026-01-05",
+     "roles": [
+      "first of 2026-Q1"
+     ],
+     "state": "not-reproduced",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "2026-04-06",
+     "build": "2026-04-06",
+     "released": "2026-04-06",
+     "roles": [
+      "first of 2026-Q2"
+     ],
+     "state": "not-reproduced",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "2026-07-06",
+     "build": "2026-07-06",
+     "released": "2026-07-06",
+     "roles": [
+      "first of 2026-Q3"
+     ],
+     "state": "not-reproduced",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "2026-09-21",
+     "build": "2026-09-21",
+     "released": "2026-09-21",
+     "roles": [
+      "campaign"
+     ],
+     "state": "not-reproduced",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "2026-09-28",
+     "build": "2026-09-28",
+     "released": "2026-09-28",
+     "roles": [
+      "newest on 2026-09-28"
+     ],
+     "state": "not-reproduced",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "2026-11-16",
+     "build": "2026-11-16",
+     "released": "2026-11-16",
+     "roles": [
+      "newest"
+     ],
+     "state": "not-reproduced",
+     "reproduced": 0,
+     "replays": 3
+    }
+   ],
+   "campaign_release": "2026-09-21",
+   "oldest_reproduced": null,
+   "oldest_released": null,
+   "age_months": null
+  },
+  "C24": {
+   "line": "rust-analyzer",
+   "group": "rust-analyzer-r0-semantictokens-result-error-timeout-fresh-pair-62256f",
+   "cells": [
+    {
+     "version": "2024-10-07",
+     "build": "2024-10-07",
+     "released": "2024-10-07",
+     "roles": [
+      "first of 2024-Q4"
+     ],
+     "state": "not-reproduced",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "2025-01-06",
+     "build": "2025-01-06",
+     "released": "2025-01-06",
+     "roles": [
+      "first of 2025-Q1"
+     ],
+     "state": "not-reproduced",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "2025-04-07",
+     "build": "2025-04-07",
+     "released": "2025-04-07",
+     "roles": [
+      "first of 2025-Q2"
+     ],
+     "state": "not-reproduced",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "2025-07-07",
+     "build": "2025-07-07",
+     "released": "2025-07-07",
+     "roles": [
+      "first of 2025-Q3"
+     ],
+     "state": "n/a",
+     "reproduced": null,
+     "replays": null
+    },
+    {
+     "version": "2025-10-27",
+     "build": "2025-10-27",
+     "released": "2025-10-27",
+     "roles": [
+      "first of 2025-Q4"
+     ],
+     "state": "not-reproduced",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "2026-01-05",
+     "build": "2026-01-05",
+     "released": "2026-01-05",
+     "roles": [
+      "first of 2026-Q1"
+     ],
+     "state": "not-reproduced",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "2026-04-06",
+     "build": "2026-04-06",
+     "released": "2026-04-06",
+     "roles": [
+      "first of 2026-Q2"
+     ],
+     "state": "not-reproduced",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "2026-07-06",
+     "build": "2026-07-06",
+     "released": "2026-07-06",
+     "roles": [
+      "first of 2026-Q3"
+     ],
+     "state": "not-reproduced",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "2026-09-21",
+     "build": "2026-09-21",
+     "released": "2026-09-21",
+     "roles": [
+      "campaign"
+     ],
+     "state": "not-reproduced",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "2026-09-28",
+     "build": "2026-09-28",
+     "released": "2026-09-28",
+     "roles": [
+      "newest on 2026-09-28"
+     ],
+     "state": "not-reproduced",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "2026-11-16",
+     "build": "2026-11-16",
+     "released": "2026-11-16",
+     "roles": [
+      "newest"
+     ],
+     "state": "not-reproduced",
+     "reproduced": 0,
+     "replays": 3
+    }
+   ],
+   "campaign_release": "2026-09-21",
+   "oldest_reproduced": null,
+   "oldest_released": null,
+   "age_months": null
+  },
+  "C25": {
+   "line": "rust-analyzer",
+   "group": "rust-analyzer-r3-diagnostics-missing-e0004-inactive-code-a-731c4f",
+   "cells": [
+    {
+     "version": "2024-10-07",
+     "build": "2024-10-07",
+     "released": "2024-10-07",
+     "roles": [
+      "first of 2024-Q4"
+     ],
+     "state": "not-reproduced",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "2025-01-06",
+     "build": "2025-01-06",
+     "released": "2025-01-06",
+     "roles": [
+      "first of 2025-Q1"
+     ],
+     "state": "n/a",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "2025-04-07",
+     "build": "2025-04-07",
+     "released": "2025-04-07",
+     "roles": [
+      "first of 2025-Q2"
+     ],
+     "state": "not-reproduced",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "2025-07-07",
+     "build": "2025-07-07",
+     "released": "2025-07-07",
+     "roles": [
+      "first of 2025-Q3"
+     ],
+     "state": "n/a",
+     "reproduced": null,
+     "replays": null
+    },
+    {
+     "version": "2025-10-27",
+     "build": "2025-10-27",
+     "released": "2025-10-27",
+     "roles": [
+      "first of 2025-Q4"
+     ],
+     "state": "not-reproduced",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "2026-01-05",
+     "build": "2026-01-05",
+     "released": "2026-01-05",
+     "roles": [
+      "first of 2026-Q1"
+     ],
+     "state": "not-reproduced",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "2026-04-06",
+     "build": "2026-04-06",
+     "released": "2026-04-06",
+     "roles": [
+      "first of 2026-Q2"
+     ],
+     "state": "not-reproduced",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "2026-07-06",
+     "build": "2026-07-06",
+     "released": "2026-07-06",
+     "roles": [
+      "first of 2026-Q3"
+     ],
+     "state": "not-reproduced",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "2026-09-21",
+     "build": "2026-09-21",
+     "released": "2026-09-21",
+     "roles": [
+      "campaign"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "2026-09-28",
+     "build": "2026-09-28",
+     "released": "2026-09-28",
+     "roles": [
+      "newest on 2026-09-28"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "2026-11-16",
+     "build": "2026-11-16",
+     "released": "2026-11-16",
+     "roles": [
+      "newest"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    }
+   ],
+   "campaign_release": "2026-09-21",
+   "oldest_reproduced": "2026-09-21",
+   "oldest_released": "2026-09-21",
+   "age_months": 0.0
+  },
+  "C26": {
+   "line": "rust-analyzer",
+   "group": "rust-analyzer-r3-semantictokensrange-changed-b-b6e28b",
+   "cells": [
+    {
+     "version": "2024-10-07",
+     "build": "2024-10-07",
+     "released": "2024-10-07",
+     "roles": [
+      "first of 2024-Q4"
+     ],
+     "state": "not-reproduced",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "2025-01-06",
+     "build": "2025-01-06",
+     "released": "2025-01-06",
+     "roles": [
+      "first of 2025-Q1"
+     ],
+     "state": "not-reproduced",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "2025-04-07",
+     "build": "2025-04-07",
+     "released": "2025-04-07",
+     "roles": [
+      "first of 2025-Q2"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "2025-07-07",
+     "build": "2025-07-07",
+     "released": "2025-07-07",
+     "roles": [
+      "first of 2025-Q3"
+     ],
+     "state": "n/a",
+     "reproduced": null,
+     "replays": null
+    },
+    {
+     "version": "2025-10-27",
+     "build": "2025-10-27",
+     "released": "2025-10-27",
+     "roles": [
+      "first of 2025-Q4"
+     ],
+     "state": "not-reproduced",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "2026-01-05",
+     "build": "2026-01-05",
+     "released": "2026-01-05",
+     "roles": [
+      "first of 2026-Q1"
+     ],
+     "state": "not-reproduced",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "2026-04-06",
+     "build": "2026-04-06",
+     "released": "2026-04-06",
+     "roles": [
+      "first of 2026-Q2"
+     ],
+     "state": "partly",
+     "reproduced": 2,
+     "replays": 3
+    },
+    {
+     "version": "2026-07-06",
+     "build": "2026-07-06",
+     "released": "2026-07-06",
+     "roles": [
+      "first of 2026-Q3"
+     ],
+     "state": "partly",
+     "reproduced": 2,
+     "replays": 3
+    },
+    {
+     "version": "2026-09-21",
+     "build": "2026-09-21",
+     "released": "2026-09-21",
+     "roles": [
+      "campaign"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "2026-09-28",
+     "build": "2026-09-28",
+     "released": "2026-09-28",
+     "roles": [
+      "newest on 2026-09-28"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "2026-11-16",
+     "build": "2026-11-16",
+     "released": "2026-11-16",
+     "roles": [
+      "newest"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    }
+   ],
+   "campaign_release": "2026-09-21",
+   "oldest_reproduced": "2025-04-07",
+   "oldest_released": "2025-04-07",
+   "age_months": 17.5
+  },
+  "C27": {
+   "line": "rust-analyzer",
+   "group": "rust-analyzer-r4-completioninsert-gained-completion-e99b79",
+   "cells": [
+    {
+     "version": "2024-10-07",
+     "build": "2024-10-07",
+     "released": "2024-10-07",
+     "roles": [
+      "first of 2024-Q4"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "2025-01-06",
+     "build": "2025-01-06",
+     "released": "2025-01-06",
+     "roles": [
+      "first of 2025-Q1"
+     ],
+     "state": "n/a",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "2025-04-07",
+     "build": "2025-04-07",
+     "released": "2025-04-07",
+     "roles": [
+      "first of 2025-Q2"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "2025-07-07",
+     "build": "2025-07-07",
+     "released": "2025-07-07",
+     "roles": [
+      "first of 2025-Q3"
+     ],
+     "state": "n/a",
+     "reproduced": null,
+     "replays": null
+    },
+    {
+     "version": "2025-10-27",
+     "build": "2025-10-27",
+     "released": "2025-10-27",
+     "roles": [
+      "first of 2025-Q4"
+     ],
+     "state": "not-reproduced",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "2026-01-05",
+     "build": "2026-01-05",
+     "released": "2026-01-05",
+     "roles": [
+      "first of 2026-Q1"
+     ],
+     "state": "not-reproduced",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "2026-04-06",
+     "build": "2026-04-06",
+     "released": "2026-04-06",
+     "roles": [
+      "first of 2026-Q2"
+     ],
+     "state": "not-reproduced",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "2026-07-06",
+     "build": "2026-07-06",
+     "released": "2026-07-06",
+     "roles": [
+      "first of 2026-Q3"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "2026-09-21",
+     "build": "2026-09-21",
+     "released": "2026-09-21",
+     "roles": [
+      "campaign"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "2026-09-28",
+     "build": "2026-09-28",
+     "released": "2026-09-28",
+     "roles": [
+      "newest on 2026-09-28"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "2026-11-16",
+     "build": "2026-11-16",
+     "released": "2026-11-16",
+     "roles": [
+      "newest"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    }
+   ],
+   "campaign_release": "2026-09-21",
+   "oldest_reproduced": "2024-10-07",
+   "oldest_released": "2024-10-07",
+   "age_months": 23.5
+  }
+ },
+ "lifecycle_cur": {
+  "C1": {
+   "line": "ts6",
+   "group": "ts6-r1-references-lost-h5-d24ca6",
+   "cells": [
+    {
+     "version": "5.5.4+tsls4.3.3",
+     "build": "5.5.4+tsls4.3.3",
+     "released": "2024-07-22",
+     "roles": [
+      "last patch of 5.5"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "5.6.3+tsls4.3.3",
+     "build": "5.6.3+tsls4.3.3",
+     "released": "2024-10-08",
+     "roles": [
+      "last patch of 5.6"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "5.7.3+tsls4.3.3",
+     "build": "5.7.3+tsls4.3.3",
+     "released": "2025-01-08",
+     "roles": [
+      "last patch of 5.7"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "5.8.3+tsls4.3.4",
+     "build": "5.8.3+tsls4.3.4",
+     "released": "2025-04-05",
+     "roles": [
+      "last patch of 5.8"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "5.9.3+tsls5.0.0",
+     "build": "5.9.3+tsls5.0.0",
+     "released": "2025-09-30",
+     "roles": [
+      "last patch of 5.9"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "6.0.3+tsls5.1.3",
+     "build": "6.0.3+tsls5.1.3",
+     "released": "2026-04-16",
+     "roles": [
+      "last patch of 6.0"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "6.0.3+tsls6.0.0",
+     "build": "6.0.3+tsls6.0.0",
+     "released": "2026-04-16",
+     "roles": [
+      "campaign"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "6.0.3+tsls6.0.1",
+     "build": "6.0.3+tsls6.0.1",
+     "released": "2026-04-16",
+     "roles": [
+      "newest on 2026-09-28"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "6.0.3+tsls6.1.0",
+     "build": "6.0.3+tsls6.1.0",
+     "released": "2026-04-16",
+     "roles": [
+      "newest"
+     ],
+     "state": "partly",
+     "reproduced": 2,
+     "replays": 3
+    }
+   ],
+   "campaign_release": "2026-04-16",
+   "oldest_reproduced": "5.5.4+tsls4.3.3",
+   "oldest_released": "2024-07-22",
+   "age_months": 20.8,
+   "campaign": "main_v1",
+   "corpus": "first"
+  },
+  "C2": {
+   "line": "ts6",
+   "group": "ts6-r1-diagnostics-extra-2304-h7-8ca52f",
+   "cells": [
+    {
+     "version": "5.5.4+tsls4.3.3",
+     "build": "5.5.4+tsls4.3.3",
+     "released": "2024-07-22",
+     "roles": [
+      "last patch of 5.5"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "5.6.3+tsls4.3.3",
+     "build": "5.6.3+tsls4.3.3",
+     "released": "2024-10-08",
+     "roles": [
+      "last patch of 5.6"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "5.7.3+tsls4.3.3",
+     "build": "5.7.3+tsls4.3.3",
+     "released": "2025-01-08",
+     "roles": [
+      "last patch of 5.7"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "5.8.3+tsls4.3.4",
+     "build": "5.8.3+tsls4.3.4",
+     "released": "2025-04-05",
+     "roles": [
+      "last patch of 5.8"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "5.9.3+tsls5.0.0",
+     "build": "5.9.3+tsls5.0.0",
+     "released": "2025-09-30",
+     "roles": [
+      "last patch of 5.9"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "6.0.3+tsls5.1.3",
+     "build": "6.0.3+tsls5.1.3",
+     "released": "2026-04-16",
+     "roles": [
+      "last patch of 6.0"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "6.0.3+tsls6.0.0",
+     "build": "6.0.3+tsls6.0.0",
+     "released": "2026-04-16",
+     "roles": [
+      "campaign"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "6.0.3+tsls6.0.1",
+     "build": "6.0.3+tsls6.0.1",
+     "released": "2026-04-16",
+     "roles": [
+      "newest on 2026-09-28"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "6.0.3+tsls6.1.0",
+     "build": "6.0.3+tsls6.1.0",
+     "released": "2026-04-16",
+     "roles": [
+      "newest"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    }
+   ],
+   "campaign_release": "2026-04-16",
+   "oldest_reproduced": "5.5.4+tsls4.3.3",
+   "oldest_released": "2024-07-22",
+   "age_months": 20.8,
+   "campaign": "main_v1",
+   "corpus": "first"
+  },
+  "C3": {
+   "line": "gopls",
+   "group": "gopls-r2-codeactionresolve-changed-codeaction-70b3e9",
+   "cells": [
+    {
+     "version": "v0.16.0",
+     "build": "v0.16.0",
+     "released": "2024-06-20",
+     "roles": [
+      "first of v0.16"
+     ],
+     "state": "n/a",
+     "reproduced": null,
+     "replays": null
+    },
+    {
+     "version": "v0.17.0",
+     "build": "v0.17.0",
+     "released": "2024-12-11",
+     "roles": [
+      "first of v0.17"
+     ],
+     "state": "n/a",
+     "reproduced": null,
+     "replays": null
+    },
+    {
+     "version": "v0.18.0",
+     "build": "v0.18.0",
+     "released": "2025-02-20",
+     "roles": [
+      "first of v0.18"
+     ],
+     "state": "n/a",
+     "reproduced": null,
+     "replays": null
+    },
+    {
+     "version": "v0.19.0",
+     "build": "v0.19.0+go1.27.1",
+     "released": "2025-06-10",
+     "roles": [
+      "first of v0.19"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "v0.20.0",
+     "build": "v0.20.0",
+     "released": "2025-07-28",
+     "roles": [
+      "first of v0.20"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "v0.21.0",
+     "build": "v0.21.0",
+     "released": "2025-12-05",
+     "roles": [
+      "first of v0.21"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "v0.22.0",
+     "build": "v0.22.0",
+     "released": "2026-05-15",
+     "roles": [
+      "first of v0.22"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "v0.23.0",
+     "build": "v0.23.0",
+     "released": "2026-07-07",
+     "roles": [
+      "first of v0.23",
+      "newest on 2026-09-28",
+      "campaign"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "v0.24.0",
+     "build": "v0.24.0",
+     "released": "2026-10-14",
+     "roles": [
+      "newest"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "v0.0.0-20261118023053-8967817d2000",
+     "build": "v0.0.0-20261118023053-8967817d2000",
+     "released": "2026-11-18",
+     "roles": [
+      "development head"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    }
+   ],
+   "campaign_release": "2026-07-07",
+   "oldest_reproduced": "v0.19.0",
+   "oldest_released": "2025-06-10",
+   "age_months": 12.9,
+   "campaign": "main_v1",
+   "corpus": "first"
+  },
+  "C4": {
+   "line": "rust-analyzer",
+   "group": "rust-analyzer-r2-completionresolve-changed-completion-3170a1",
+   "cells": [
+    {
+     "version": "2024-10-07",
+     "build": "2024-10-07",
+     "released": "2024-10-07",
+     "roles": [
+      "first of 2024-Q4"
+     ],
+     "state": "n/a",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "2025-01-06",
+     "build": "2025-01-06",
+     "released": "2025-01-06",
+     "roles": [
+      "first of 2025-Q1"
+     ],
+     "state": "n/a",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "2025-04-07",
+     "build": "2025-04-07",
+     "released": "2025-04-07",
+     "roles": [
+      "first of 2025-Q2"
+     ],
+     "state": "n/a",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "2025-07-07",
+     "build": "2025-07-07",
+     "released": "2025-07-07",
+     "roles": [
+      "first of 2025-Q3"
+     ],
+     "state": "n/a",
+     "reproduced": null,
+     "replays": null
+    },
+    {
+     "version": "2025-10-27",
+     "build": "2025-10-27",
+     "released": "2025-10-27",
+     "roles": [
+      "first of 2025-Q4"
+     ],
+     "state": "n/a",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "2026-01-05",
+     "build": "2026-01-05",
+     "released": "2026-01-05",
+     "roles": [
+      "first of 2026-Q1"
+     ],
+     "state": "n/a",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "2026-04-06",
+     "build": "2026-04-06",
+     "released": "2026-04-06",
+     "roles": [
+      "first of 2026-Q2"
+     ],
+     "state": "n/a",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "2026-07-06",
+     "build": "2026-07-06",
+     "released": "2026-07-06",
+     "roles": [
+      "first of 2026-Q3"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "2026-09-21",
+     "build": "2026-09-21",
+     "released": "2026-09-21",
+     "roles": [
+      "campaign"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "2026-09-28",
+     "build": "2026-09-28",
+     "released": "2026-09-28",
+     "roles": [
+      "newest on 2026-09-28"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "2026-11-16",
+     "build": "2026-11-16",
+     "released": "2026-11-16",
+     "roles": [
+      "newest"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    }
+   ],
+   "campaign_release": "2026-09-21",
+   "oldest_reproduced": "2026-07-06",
+   "oldest_released": "2026-07-06",
+   "age_months": 2.5,
+   "campaign": "main_v1",
+   "corpus": "first"
+  },
+  "C5": {
+   "line": "gopls",
+   "group": "gopls-r4-diagnostics-extra-notatype-mutation-m2-477181",
+   "cells": [
+    {
+     "version": "v0.16.0",
+     "build": "v0.16.0",
+     "released": "2024-06-20",
+     "roles": [
+      "first of v0.16"
+     ],
+     "state": "n/a",
+     "reproduced": null,
+     "replays": null
+    },
+    {
+     "version": "v0.17.0",
+     "build": "v0.17.0",
+     "released": "2024-12-11",
+     "roles": [
+      "first of v0.17"
+     ],
+     "state": "n/a",
+     "reproduced": null,
+     "replays": null
+    },
+    {
+     "version": "v0.18.0",
+     "build": "v0.18.0",
+     "released": "2025-02-20",
+     "roles": [
+      "first of v0.18"
+     ],
+     "state": "n/a",
+     "reproduced": null,
+     "replays": null
+    },
+    {
+     "version": "v0.19.0",
+     "build": "v0.19.0+go1.27.1",
+     "released": "2025-06-10",
+     "roles": [
+      "first of v0.19"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "v0.20.0",
+     "build": "v0.20.0",
+     "released": "2025-07-28",
+     "roles": [
+      "first of v0.20"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "v0.21.0",
+     "build": "v0.21.0",
+     "released": "2025-12-05",
+     "roles": [
+      "first of v0.21"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "v0.22.0",
+     "build": "v0.22.0",
+     "released": "2026-05-15",
+     "roles": [
+      "first of v0.22"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "v0.23.0",
+     "build": "v0.23.0",
+     "released": "2026-07-07",
+     "roles": [
+      "first of v0.23",
+      "newest on 2026-09-28",
+      "campaign"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "v0.24.0",
+     "build": "v0.24.0",
+     "released": "2026-10-14",
+     "roles": [
+      "newest"
+     ],
+     "state": "not-reproduced",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "v0.0.0-20261118023053-8967817d2000",
+     "build": "v0.0.0-20261118023053-8967817d2000",
+     "released": "2026-11-18",
+     "roles": [
+      "development head"
+     ],
+     "state": "not-reproduced",
+     "reproduced": 0,
+     "replays": 3
+    }
+   ],
+   "campaign_release": "2026-07-07",
+   "oldest_reproduced": "v0.19.0",
+   "oldest_released": "2025-06-10",
+   "age_months": 12.9,
+   "campaign": "main_v1",
+   "corpus": "first"
+  },
+  "C6": {
+   "line": "gopls",
+   "group": "gopls-r4-diagnostics-extra-mutation-m2-111975",
+   "cells": [
+    {
+     "version": "v0.16.0",
+     "build": "v0.16.0",
+     "released": "2024-06-20",
+     "roles": [
+      "first of v0.16"
+     ],
+     "state": "not-reproduced",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "v0.17.0",
+     "build": "v0.17.0",
+     "released": "2024-12-11",
+     "roles": [
+      "first of v0.17"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "v0.18.0",
+     "build": "v0.18.0",
+     "released": "2025-02-20",
+     "roles": [
+      "first of v0.18"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "v0.19.0",
+     "build": "v0.19.0+go1.27.1",
+     "released": "2025-06-10",
+     "roles": [
+      "first of v0.19"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "v0.20.0",
+     "build": "v0.20.0",
+     "released": "2025-07-28",
+     "roles": [
+      "first of v0.20"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "v0.21.0",
+     "build": "v0.21.0",
+     "released": "2025-12-05",
+     "roles": [
+      "first of v0.21"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "v0.22.0",
+     "build": "v0.22.0",
+     "released": "2026-05-15",
+     "roles": [
+      "first of v0.22"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "v0.23.0",
+     "build": "v0.23.0",
+     "released": "2026-07-07",
+     "roles": [
+      "first of v0.23",
+      "newest on 2026-09-28",
+      "campaign"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "v0.24.0",
+     "build": "v0.24.0",
+     "released": "2026-10-14",
+     "roles": [
+      "newest"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "v0.0.0-20261118023053-8967817d2000",
+     "build": "v0.0.0-20261118023053-8967817d2000",
+     "released": "2026-11-18",
+     "roles": [
+      "development head"
+     ],
+     "state": "not-reproduced",
+     "reproduced": 0,
+     "replays": 3
+    }
+   ],
+   "campaign_release": "2026-07-07",
+   "oldest_reproduced": "v0.17.0",
+   "oldest_released": "2024-12-11",
+   "age_months": 18.8,
+   "campaign": "main_v1",
+   "corpus": "first"
+  },
+  "C7": {
+   "line": "gopls",
+   "group": "gopls-r4-diagnostics-extra-undeclaredname-wrongar-mutation-m3-946c39",
+   "cells": [
+    {
+     "version": "v0.16.0",
+     "build": "v0.16.0",
+     "released": "2024-06-20",
+     "roles": [
+      "first of v0.16"
+     ],
+     "state": "n/a",
+     "reproduced": null,
+     "replays": null
+    },
+    {
+     "version": "v0.17.0",
+     "build": "v0.17.0",
+     "released": "2024-12-11",
+     "roles": [
+      "first of v0.17"
+     ],
+     "state": "n/a",
+     "reproduced": null,
+     "replays": null
+    },
+    {
+     "version": "v0.18.0",
+     "build": "v0.18.0",
+     "released": "2025-02-20",
+     "roles": [
+      "first of v0.18"
+     ],
+     "state": "n/a",
+     "reproduced": null,
+     "replays": null
+    },
+    {
+     "version": "v0.19.0",
+     "build": "v0.19.0+go1.27.1",
+     "released": "2025-06-10",
+     "roles": [
+      "first of v0.19"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "v0.20.0",
+     "build": "v0.20.0",
+     "released": "2025-07-28",
+     "roles": [
+      "first of v0.20"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "v0.21.0",
+     "build": "v0.21.0",
+     "released": "2025-12-05",
+     "roles": [
+      "first of v0.21"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "v0.22.0",
+     "build": "v0.22.0",
+     "released": "2026-05-15",
+     "roles": [
+      "first of v0.22"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "v0.23.0",
+     "build": "v0.23.0",
+     "released": "2026-07-07",
+     "roles": [
+      "first of v0.23",
+      "newest on 2026-09-28",
+      "campaign"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "v0.24.0",
+     "build": "v0.24.0",
+     "released": "2026-10-14",
+     "roles": [
+      "newest"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "v0.0.0-20261118023053-8967817d2000",
+     "build": "v0.0.0-20261118023053-8967817d2000",
+     "released": "2026-11-18",
+     "roles": [
+      "development head"
+     ],
+     "state": "not-reproduced",
+     "reproduced": 0,
+     "replays": 3
+    }
+   ],
+   "campaign_release": "2026-07-07",
+   "oldest_reproduced": "v0.19.0",
+   "oldest_released": "2025-06-10",
+   "age_months": 12.9,
+   "campaign": "main_v1",
+   "corpus": "first"
+  },
+  "C8": {
+   "line": "rust-analyzer",
+   "group": "rust-analyzer-r3-definitionconsistency-extra-d-4cbc9e",
+   "cells": [
+    {
+     "version": "2024-10-07",
+     "build": "2024-10-07",
+     "released": "2024-10-07",
+     "roles": [
+      "first of 2024-Q4"
+     ],
+     "state": "not-reproduced",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "2025-01-06",
+     "build": "2025-01-06",
+     "released": "2025-01-06",
+     "roles": [
+      "first of 2025-Q1"
+     ],
+     "state": "n/a",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "2025-04-07",
+     "build": "2025-04-07",
+     "released": "2025-04-07",
+     "roles": [
+      "first of 2025-Q2"
+     ],
+     "state": "not-reproduced",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "2025-07-07",
+     "build": "2025-07-07",
+     "released": "2025-07-07",
+     "roles": [
+      "first of 2025-Q3"
+     ],
+     "state": "n/a",
+     "reproduced": null,
+     "replays": null
+    },
+    {
+     "version": "2025-10-27",
+     "build": "2025-10-27",
+     "released": "2025-10-27",
+     "roles": [
+      "first of 2025-Q4"
+     ],
+     "state": "not-reproduced",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "2026-01-05",
+     "build": "2026-01-05",
+     "released": "2026-01-05",
+     "roles": [
+      "first of 2026-Q1"
+     ],
+     "state": "not-reproduced",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "2026-04-06",
+     "build": "2026-04-06",
+     "released": "2026-04-06",
+     "roles": [
+      "first of 2026-Q2"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "2026-07-06",
+     "build": "2026-07-06",
+     "released": "2026-07-06",
+     "roles": [
+      "first of 2026-Q3"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "2026-09-21",
+     "build": "2026-09-21",
+     "released": "2026-09-21",
+     "roles": [
+      "campaign"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "2026-09-28",
+     "build": "2026-09-28",
+     "released": "2026-09-28",
+     "roles": [
+      "newest on 2026-09-28"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "2026-11-16",
+     "build": "2026-11-16",
+     "released": "2026-11-16",
+     "roles": [
+      "newest"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    }
+   ],
+   "campaign_release": "2026-09-21",
+   "oldest_reproduced": "2026-04-06",
+   "oldest_released": "2026-04-06",
+   "age_months": 5.5,
+   "campaign": "main_v1",
+   "corpus": "first"
+  },
+  "C9": {
+   "line": "gopls",
+   "group": "gopls-r1-references-extra-h9-0290a7",
+   "cells": [
+    {
+     "version": "v0.16.0",
+     "build": "v0.16.0",
+     "released": "2024-06-20",
+     "roles": [
+      "first of v0.16"
+     ],
+     "state": "n/a",
+     "reproduced": null,
+     "replays": null
+    },
+    {
+     "version": "v0.17.0",
+     "build": "v0.17.0",
+     "released": "2024-12-11",
+     "roles": [
+      "first of v0.17"
+     ],
+     "state": "n/a",
+     "reproduced": null,
+     "replays": null
+    },
+    {
+     "version": "v0.18.0",
+     "build": "v0.18.0",
+     "released": "2025-02-20",
+     "roles": [
+      "first of v0.18"
+     ],
+     "state": "n/a",
+     "reproduced": null,
+     "replays": null
+    },
+    {
+     "version": "v0.19.0",
+     "build": "v0.19.0+go1.27.1",
+     "released": "2025-06-10",
+     "roles": [
+      "first of v0.19"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "v0.20.0",
+     "build": "v0.20.0",
+     "released": "2025-07-28",
+     "roles": [
+      "first of v0.20"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "v0.21.0",
+     "build": "v0.21.0",
+     "released": "2025-12-05",
+     "roles": [
+      "first of v0.21"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "v0.22.0",
+     "build": "v0.22.0",
+     "released": "2026-05-15",
+     "roles": [
+      "first of v0.22"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "v0.23.0",
+     "build": "v0.23.0",
+     "released": "2026-07-07",
+     "roles": [
+      "first of v0.23",
+      "newest on 2026-09-28",
+      "campaign"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "v0.24.0",
+     "build": "v0.24.0",
+     "released": "2026-10-14",
+     "roles": [
+      "newest"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "v0.0.0-20261118023053-8967817d2000",
+     "build": "v0.0.0-20261118023053-8967817d2000",
+     "released": "2026-11-18",
+     "roles": [
+      "development head"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    }
+   ],
+   "campaign_release": "2026-07-07",
+   "oldest_reproduced": "v0.19.0",
+   "oldest_released": "2025-06-10",
+   "age_months": 12.9,
+   "campaign": "main_v1",
+   "corpus": "first"
+  },
+  "C10": {
+   "line": "ts7",
+   "group": "ts7-r1-references-missing-h9-2dd24a",
+   "cells": [
+    {
+     "version": "7.0.1-rc",
+     "build": "7.0.1-rc",
+     "released": "2026-06-18",
+     "roles": [
+      "pre-release"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "7.0.2",
+     "build": "7.0.2",
+     "released": "2026-07-08",
+     "roles": [
+      "campaign",
+      "newest",
+      "newest on 2026-09-28"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    }
+   ],
+   "campaign_release": "2026-07-08",
+   "oldest_reproduced": "7.0.1-rc",
+   "oldest_released": "2026-06-18",
+   "age_months": 0.7,
+   "campaign": "main_v1",
+   "corpus": "first"
+  },
+  "C11": {
+   "line": "ts6",
+   "group": "ts6-r4-diagnostics-extra-2322-mutation-m3-1879f3",
+   "cells": [
+    {
+     "version": "5.5.4+tsls4.3.3",
+     "build": "5.5.4+tsls4.3.3",
+     "released": "2024-07-22",
+     "roles": [
+      "last patch of 5.5"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "5.6.3+tsls4.3.3",
+     "build": "5.6.3+tsls4.3.3",
+     "released": "2024-10-08",
+     "roles": [
+      "last patch of 5.6"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "5.7.3+tsls4.3.3",
+     "build": "5.7.3+tsls4.3.3",
+     "released": "2025-01-08",
+     "roles": [
+      "last patch of 5.7"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "5.8.3+tsls4.3.4",
+     "build": "5.8.3+tsls4.3.4",
+     "released": "2025-04-05",
+     "roles": [
+      "last patch of 5.8"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "5.9.3+tsls5.0.0",
+     "build": "5.9.3+tsls5.0.0",
+     "released": "2025-09-30",
+     "roles": [
+      "last patch of 5.9"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "6.0.3+tsls5.1.3",
+     "build": "6.0.3+tsls5.1.3",
+     "released": "2026-04-16",
+     "roles": [
+      "last patch of 6.0"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "6.0.3+tsls6.0.0",
+     "build": "6.0.3+tsls6.0.0",
+     "released": "2026-04-16",
+     "roles": [
+      "campaign"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "6.0.3+tsls6.0.1",
+     "build": "6.0.3+tsls6.0.1",
+     "released": "2026-04-16",
+     "roles": [
+      "newest on 2026-09-28"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "6.0.3+tsls6.1.0",
+     "build": "6.0.3+tsls6.1.0",
+     "released": "2026-04-16",
+     "roles": [
+      "newest"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    }
+   ],
+   "campaign_release": "2026-04-16",
+   "oldest_reproduced": "5.5.4+tsls4.3.3",
+   "oldest_released": "2024-07-22",
+   "age_months": 20.8,
+   "campaign": "main_v1",
+   "corpus": "first"
+  },
+  "C12": {
+   "line": "gopls",
+   "group": "gopls-r1-codeaction-changed-h4-c5344e",
+   "cells": [
+    {
+     "version": "v0.16.0",
+     "build": "v0.16.0",
+     "released": "2024-06-20",
+     "roles": [
+      "first of v0.16"
+     ],
+     "state": "n/a",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "v0.17.0",
+     "build": "v0.17.0",
+     "released": "2024-12-11",
+     "roles": [
+      "first of v0.17"
+     ],
+     "state": "n/a",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "v0.18.0",
+     "build": "v0.18.0",
+     "released": "2025-02-20",
+     "roles": [
+      "first of v0.18"
+     ],
+     "state": "n/a",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "v0.19.0",
+     "build": "v0.19.0+go1.27.1",
+     "released": "2025-06-10",
+     "roles": [
+      "first of v0.19"
+     ],
+     "state": "n/a",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "v0.20.0",
+     "build": "v0.20.0",
+     "released": "2025-07-28",
+     "roles": [
+      "first of v0.20"
+     ],
+     "state": "n/a",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "v0.21.0",
+     "build": "v0.21.0",
+     "released": "2025-12-05",
+     "roles": [
+      "first of v0.21"
+     ],
+     "state": "n/a",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "v0.22.0",
+     "build": "v0.22.0",
+     "released": "2026-05-15",
+     "roles": [
+      "first of v0.22"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "v0.23.0",
+     "build": "v0.23.0",
+     "released": "2026-07-07",
+     "roles": [
+      "first of v0.23",
+      "newest on 2026-09-28",
+      "campaign"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "v0.24.0",
+     "build": "v0.24.0",
+     "released": "2026-10-14",
+     "roles": [
+      "newest"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    }
+   ],
+   "campaign_release": "2026-07-07",
+   "oldest_reproduced": "v0.22.0",
+   "oldest_released": "2026-05-15",
+   "age_months": 1.7,
+   "campaign": "main_v1",
+   "corpus": "first"
+  },
+  "C13": {
+   "line": "gopls",
+   "group": "gopls-r1-codeaction-key-lost-h7-547744",
+   "cells": [
+    {
+     "version": "v0.16.0",
+     "build": "v0.16.0",
+     "released": "2024-06-20",
+     "roles": [
+      "first of v0.16"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "v0.17.0",
+     "build": "v0.17.0",
+     "released": "2024-12-11",
+     "roles": [
+      "first of v0.17"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "v0.18.0",
+     "build": "v0.18.0",
+     "released": "2025-02-20",
+     "roles": [
+      "first of v0.18"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "v0.19.0",
+     "build": "v0.19.0+go1.27.1",
+     "released": "2025-06-10",
+     "roles": [
+      "first of v0.19"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "v0.20.0",
+     "build": "v0.20.0",
+     "released": "2025-07-28",
+     "roles": [
+      "first of v0.20"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "v0.21.0",
+     "build": "v0.21.0",
+     "released": "2025-12-05",
+     "roles": [
+      "first of v0.21"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "v0.22.0",
+     "build": "v0.22.0",
+     "released": "2026-05-15",
+     "roles": [
+      "first of v0.22"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "v0.23.0",
+     "build": "v0.23.0",
+     "released": "2026-07-07",
+     "roles": [
+      "first of v0.23",
+      "newest on 2026-09-28",
+      "campaign"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "v0.24.0",
+     "build": "v0.24.0",
+     "released": "2026-10-14",
+     "roles": [
+      "newest"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    }
+   ],
+   "campaign_release": "2026-07-07",
+   "oldest_reproduced": "v0.16.0",
+   "oldest_released": "2024-06-20",
+   "age_months": 24.5,
+   "campaign": "main_v2",
+   "corpus": "second"
+  },
+  "C14": {
+   "line": "gopls",
+   "group": "gopls-r1-completion-lost-h7-1a1169",
+   "cells": [
+    {
+     "version": "v0.16.0",
+     "build": "v0.16.0",
+     "released": "2024-06-20",
+     "roles": [
+      "first of v0.16"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "v0.17.0",
+     "build": "v0.17.0",
+     "released": "2024-12-11",
+     "roles": [
+      "first of v0.17"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "v0.18.0",
+     "build": "v0.18.0",
+     "released": "2025-02-20",
+     "roles": [
+      "first of v0.18"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "v0.19.0",
+     "build": "v0.19.0+go1.27.1",
+     "released": "2025-06-10",
+     "roles": [
+      "first of v0.19"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "v0.20.0",
+     "build": "v0.20.0",
+     "released": "2025-07-28",
+     "roles": [
+      "first of v0.20"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "v0.21.0",
+     "build": "v0.21.0",
+     "released": "2025-12-05",
+     "roles": [
+      "first of v0.21"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "v0.22.0",
+     "build": "v0.22.0",
+     "released": "2026-05-15",
+     "roles": [
+      "first of v0.22"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "v0.23.0",
+     "build": "v0.23.0",
+     "released": "2026-07-07",
+     "roles": [
+      "first of v0.23",
+      "newest on 2026-09-28",
+      "campaign"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "v0.24.0",
+     "build": "v0.24.0",
+     "released": "2026-10-14",
+     "roles": [
+      "newest"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    }
+   ],
+   "campaign_release": "2026-07-07",
+   "oldest_reproduced": "v0.16.0",
+   "oldest_released": "2024-06-20",
+   "age_months": 24.5,
+   "campaign": "main_v2",
+   "corpus": "second"
+  },
+  "C15": {
+   "line": "gopls",
+   "group": "gopls-r4-diagnostics-extra-unusedimport-mutation-m3-aefa9e",
+   "cells": [
+    {
+     "version": "v0.16.0",
+     "build": "v0.16.0",
+     "released": "2024-06-20",
+     "roles": [
+      "first of v0.16"
+     ],
+     "state": "n/a",
+     "reproduced": null,
+     "replays": null
+    },
+    {
+     "version": "v0.17.0",
+     "build": "v0.17.0",
+     "released": "2024-12-11",
+     "roles": [
+      "first of v0.17"
+     ],
+     "state": "n/a",
+     "reproduced": null,
+     "replays": null
+    },
+    {
+     "version": "v0.18.0",
+     "build": "v0.18.0",
+     "released": "2025-02-20",
+     "roles": [
+      "first of v0.18"
+     ],
+     "state": "n/a",
+     "reproduced": null,
+     "replays": null
+    },
+    {
+     "version": "v0.19.0",
+     "build": "v0.19.0+go1.27.1",
+     "released": "2025-06-10",
+     "roles": [
+      "first of v0.19"
+     ],
+     "state": "not-reproduced",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "v0.20.0",
+     "build": "v0.20.0",
+     "released": "2025-07-28",
+     "roles": [
+      "first of v0.20"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "v0.21.0",
+     "build": "v0.21.0",
+     "released": "2025-12-05",
+     "roles": [
+      "first of v0.21"
+     ],
+     "state": "not-reproduced",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "v0.22.0",
+     "build": "v0.22.0",
+     "released": "2026-05-15",
+     "roles": [
+      "first of v0.22"
+     ],
+     "state": "not-reproduced",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "v0.23.0",
+     "build": "v0.23.0",
+     "released": "2026-07-07",
+     "roles": [
+      "first of v0.23",
+      "newest on 2026-09-28",
+      "campaign"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "v0.24.0",
+     "build": "v0.24.0",
+     "released": "2026-10-14",
+     "roles": [
+      "newest"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    }
+   ],
+   "campaign_release": "2026-07-07",
+   "oldest_reproduced": "v0.20.0",
+   "oldest_released": "2025-07-28",
+   "age_months": 11.3,
+   "campaign": "main_v2",
+   "corpus": "second"
+  },
+  "C16": {
+   "line": "gopls",
+   "group": "gopls-r5-foldingrange-changed-t4-b07c86",
+   "cells": [
+    {
+     "version": "v0.16.0",
+     "build": "v0.16.0",
+     "released": "2024-06-20",
+     "roles": [
+      "first of v0.16"
+     ],
+     "state": "n/a",
+     "reproduced": null,
+     "replays": null
+    },
+    {
+     "version": "v0.17.0",
+     "build": "v0.17.0",
+     "released": "2024-12-11",
+     "roles": [
+      "first of v0.17"
+     ],
+     "state": "n/a",
+     "reproduced": null,
+     "replays": null
+    },
+    {
+     "version": "v0.18.0",
+     "build": "v0.18.0",
+     "released": "2025-02-20",
+     "roles": [
+      "first of v0.18"
+     ],
+     "state": "n/a",
+     "reproduced": null,
+     "replays": null
+    },
+    {
+     "version": "v0.19.0",
+     "build": "v0.19.0+go1.27.1",
+     "released": "2025-06-10",
+     "roles": [
+      "first of v0.19"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "v0.20.0",
+     "build": "v0.20.0",
+     "released": "2025-07-28",
+     "roles": [
+      "first of v0.20"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "v0.21.0",
+     "build": "v0.21.0",
+     "released": "2025-12-05",
+     "roles": [
+      "first of v0.21"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "v0.22.0",
+     "build": "v0.22.0",
+     "released": "2026-05-15",
+     "roles": [
+      "first of v0.22"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "v0.23.0",
+     "build": "v0.23.0",
+     "released": "2026-07-07",
+     "roles": [
+      "first of v0.23",
+      "newest on 2026-09-28",
+      "campaign"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "v0.24.0",
+     "build": "v0.24.0",
+     "released": "2026-10-14",
+     "roles": [
+      "newest"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    }
+   ],
+   "campaign_release": "2026-07-07",
+   "oldest_reproduced": "v0.19.0",
+   "oldest_released": "2025-06-10",
+   "age_months": 12.9,
+   "campaign": "main_v2",
+   "corpus": "second"
+  },
+  "C17": {
+   "line": "pyright",
+   "group": "pyright-r0-references-result-error-32603-fresh-pair-2718c4",
+   "cells": [
+    {
+     "version": "1.1.383",
+     "build": "1.1.383",
+     "released": "2024-10-01",
+     "roles": [
+      "first of 2024-Q4"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "1.1.392",
+     "build": "1.1.392",
+     "released": "2025-01-15",
+     "roles": [
+      "first of 2025-Q1"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "1.1.399",
+     "build": "1.1.399",
+     "released": "2025-04-09",
+     "roles": [
+      "first of 2025-Q2"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "1.1.403",
+     "build": "1.1.403",
+     "released": "2025-07-08",
+     "roles": [
+      "first of 2025-Q3"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "1.1.406",
+     "build": "1.1.406",
+     "released": "2025-10-01",
+     "roles": [
+      "first of 2025-Q4"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "1.1.408",
+     "build": "1.1.408",
+     "released": "2026-01-08",
+     "roles": [
+      "first of 2026-Q1"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "1.1.409",
+     "build": "1.1.409",
+     "released": "2026-04-16",
+     "roles": [
+      "first of 2026-Q2"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "1.1.412",
+     "build": "1.1.412",
+     "released": "2026-08-12",
+     "roles": [
+      "first of 2026-Q3"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "1.1.414",
+     "build": "1.1.414",
+     "released": "2026-09-09",
+     "roles": [
+      "campaign",
+      "newest",
+      "newest on 2026-09-28"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    }
+   ],
+   "campaign_release": "2026-09-09",
+   "oldest_reproduced": "1.1.383",
+   "oldest_released": "2024-10-01",
+   "age_months": 23.3,
+   "campaign": "main_v2",
+   "corpus": "second"
+  },
+  "C18": {
+   "line": "pyright",
+   "group": "pyright-r1-hover-text-h2-fb2ed0",
+   "cells": [
+    {
+     "version": "1.1.383",
+     "build": "1.1.383",
+     "released": "2024-10-01",
+     "roles": [
+      "first of 2024-Q4"
+     ],
+     "state": "not-reproduced",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "1.1.392",
+     "build": "1.1.392",
+     "released": "2025-01-15",
+     "roles": [
+      "first of 2025-Q1"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "1.1.399",
+     "build": "1.1.399",
+     "released": "2025-04-09",
+     "roles": [
+      "first of 2025-Q2"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "1.1.403",
+     "build": "1.1.403",
+     "released": "2025-07-08",
+     "roles": [
+      "first of 2025-Q3"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "1.1.406",
+     "build": "1.1.406",
+     "released": "2025-10-01",
+     "roles": [
+      "first of 2025-Q4"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "1.1.408",
+     "build": "1.1.408",
+     "released": "2026-01-08",
+     "roles": [
+      "first of 2026-Q1"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "1.1.409",
+     "build": "1.1.409",
+     "released": "2026-04-16",
+     "roles": [
+      "first of 2026-Q2"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "1.1.412",
+     "build": "1.1.412",
+     "released": "2026-08-12",
+     "roles": [
+      "first of 2026-Q3"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "1.1.414",
+     "build": "1.1.414",
+     "released": "2026-09-09",
+     "roles": [
+      "campaign",
+      "newest",
+      "newest on 2026-09-28"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    }
+   ],
+   "campaign_release": "2026-09-09",
+   "oldest_reproduced": "1.1.392",
+   "oldest_released": "2025-01-15",
+   "age_months": 19.8,
+   "campaign": "main_v2",
+   "corpus": "second"
+  },
+  "C19": {
+   "line": "pyright",
+   "group": "pyright-r1-hover-text-h5-f24c4e",
+   "cells": [
+    {
+     "version": "1.1.383",
+     "build": "1.1.383",
+     "released": "2024-10-01",
+     "roles": [
+      "first of 2024-Q4"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "1.1.392",
+     "build": "1.1.392",
+     "released": "2025-01-15",
+     "roles": [
+      "first of 2025-Q1"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "1.1.399",
+     "build": "1.1.399",
+     "released": "2025-04-09",
+     "roles": [
+      "first of 2025-Q2"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "1.1.403",
+     "build": "1.1.403",
+     "released": "2025-07-08",
+     "roles": [
+      "first of 2025-Q3"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "1.1.406",
+     "build": "1.1.406",
+     "released": "2025-10-01",
+     "roles": [
+      "first of 2025-Q4"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "1.1.408",
+     "build": "1.1.408",
+     "released": "2026-01-08",
+     "roles": [
+      "first of 2026-Q1"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "1.1.409",
+     "build": "1.1.409",
+     "released": "2026-04-16",
+     "roles": [
+      "first of 2026-Q2"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "1.1.412",
+     "build": "1.1.412",
+     "released": "2026-08-12",
+     "roles": [
+      "first of 2026-Q3"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "1.1.414",
+     "build": "1.1.414",
+     "released": "2026-09-09",
+     "roles": [
+      "campaign",
+      "newest",
+      "newest on 2026-09-28"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    }
+   ],
+   "campaign_release": "2026-09-09",
+   "oldest_reproduced": "1.1.383",
+   "oldest_released": "2024-10-01",
+   "age_months": 23.3,
+   "campaign": "main_v2",
+   "corpus": "second"
+  },
+  "C20": {
+   "line": "pyright",
+   "group": "pyright-r1-references-extra-h9-37c1a2",
+   "cells": [
+    {
+     "version": "1.1.383",
+     "build": "1.1.383",
+     "released": "2024-10-01",
+     "roles": [
+      "first of 2024-Q4"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "1.1.392",
+     "build": "1.1.392",
+     "released": "2025-01-15",
+     "roles": [
+      "first of 2025-Q1"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "1.1.399",
+     "build": "1.1.399",
+     "released": "2025-04-09",
+     "roles": [
+      "first of 2025-Q2"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "1.1.403",
+     "build": "1.1.403",
+     "released": "2025-07-08",
+     "roles": [
+      "first of 2025-Q3"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "1.1.406",
+     "build": "1.1.406",
+     "released": "2025-10-01",
+     "roles": [
+      "first of 2025-Q4"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "1.1.408",
+     "build": "1.1.408",
+     "released": "2026-01-08",
+     "roles": [
+      "first of 2026-Q1"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "1.1.409",
+     "build": "1.1.409",
+     "released": "2026-04-16",
+     "roles": [
+      "first of 2026-Q2"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "1.1.412",
+     "build": "1.1.412",
+     "released": "2026-08-12",
+     "roles": [
+      "first of 2026-Q3"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "1.1.414",
+     "build": "1.1.414",
+     "released": "2026-09-09",
+     "roles": [
+      "campaign",
+      "newest",
+      "newest on 2026-09-28"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    }
+   ],
+   "campaign_release": "2026-09-09",
+   "oldest_reproduced": "1.1.383",
+   "oldest_released": "2024-10-01",
+   "age_months": 23.3,
+   "campaign": "main_v2",
+   "corpus": "second"
+  },
+  "C21": {
+   "line": "pyright",
+   "group": "pyright-r1-signaturehelp-changed-h9-846c6c",
+   "cells": [
+    {
+     "version": "1.1.383",
+     "build": "1.1.383",
+     "released": "2024-10-01",
+     "roles": [
+      "first of 2024-Q4"
+     ],
+     "state": "not-reproduced",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "1.1.392",
+     "build": "1.1.392",
+     "released": "2025-01-15",
+     "roles": [
+      "first of 2025-Q1"
+     ],
+     "state": "not-reproduced",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "1.1.399",
+     "build": "1.1.399",
+     "released": "2025-04-09",
+     "roles": [
+      "first of 2025-Q2"
+     ],
+     "state": "not-reproduced",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "1.1.403",
+     "build": "1.1.403",
+     "released": "2025-07-08",
+     "roles": [
+      "first of 2025-Q3"
+     ],
+     "state": "not-reproduced",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "1.1.406",
+     "build": "1.1.406",
+     "released": "2025-10-01",
+     "roles": [
+      "first of 2025-Q4"
+     ],
+     "state": "not-reproduced",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "1.1.408",
+     "build": "1.1.408",
+     "released": "2026-01-08",
+     "roles": [
+      "first of 2026-Q1"
+     ],
+     "state": "not-reproduced",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "1.1.409",
+     "build": "1.1.409",
+     "released": "2026-04-16",
+     "roles": [
+      "first of 2026-Q2"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "1.1.412",
+     "build": "1.1.412",
+     "released": "2026-08-12",
+     "roles": [
+      "first of 2026-Q3"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "1.1.414",
+     "build": "1.1.414",
+     "released": "2026-09-09",
+     "roles": [
+      "campaign",
+      "newest",
+      "newest on 2026-09-28"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    }
+   ],
+   "campaign_release": "2026-09-09",
+   "oldest_reproduced": "1.1.409",
+   "oldest_released": "2026-04-16",
+   "age_months": 4.8,
+   "campaign": "main_v2",
+   "corpus": "second"
+  },
+  "C22": {
+   "line": "pyright",
+   "group": "pyright-r4-completioninsert-gained-completion-79a584",
+   "cells": [
+    {
+     "version": "1.1.383",
+     "build": "1.1.383",
+     "released": "2024-10-01",
+     "roles": [
+      "first of 2024-Q4"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "1.1.392",
+     "build": "1.1.392",
+     "released": "2025-01-15",
+     "roles": [
+      "first of 2025-Q1"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "1.1.399",
+     "build": "1.1.399",
+     "released": "2025-04-09",
+     "roles": [
+      "first of 2025-Q2"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "1.1.403",
+     "build": "1.1.403",
+     "released": "2025-07-08",
+     "roles": [
+      "first of 2025-Q3"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "1.1.406",
+     "build": "1.1.406",
+     "released": "2025-10-01",
+     "roles": [
+      "first of 2025-Q4"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "1.1.408",
+     "build": "1.1.408",
+     "released": "2026-01-08",
+     "roles": [
+      "first of 2026-Q1"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "1.1.409",
+     "build": "1.1.409",
+     "released": "2026-04-16",
+     "roles": [
+      "first of 2026-Q2"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "1.1.412",
+     "build": "1.1.412",
+     "released": "2026-08-12",
+     "roles": [
+      "first of 2026-Q3"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "1.1.414",
+     "build": "1.1.414",
+     "released": "2026-09-09",
+     "roles": [
+      "campaign",
+      "newest",
+      "newest on 2026-09-28"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    }
+   ],
+   "campaign_release": "2026-09-09",
+   "oldest_reproduced": "1.1.383",
+   "oldest_released": "2024-10-01",
+   "age_months": 23.3,
+   "campaign": "main_v2",
+   "corpus": "second"
+  },
+  "C25": {
+   "line": "rust-analyzer",
+   "group": "rust-analyzer-r3-diagnostics-missing-e0004-inactive-code-a-731c4f",
+   "cells": [
+    {
+     "version": "2024-10-07",
+     "build": "2024-10-07",
+     "released": "2024-10-07",
+     "roles": [
+      "first of 2024-Q4"
+     ],
+     "state": "not-reproduced",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "2025-01-06",
+     "build": "2025-01-06",
+     "released": "2025-01-06",
+     "roles": [
+      "first of 2025-Q1"
+     ],
+     "state": "n/a",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "2025-04-07",
+     "build": "2025-04-07",
+     "released": "2025-04-07",
+     "roles": [
+      "first of 2025-Q2"
+     ],
+     "state": "not-reproduced",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "2025-07-07",
+     "build": "2025-07-07",
+     "released": "2025-07-07",
+     "roles": [
+      "first of 2025-Q3"
+     ],
+     "state": "n/a",
+     "reproduced": null,
+     "replays": null
+    },
+    {
+     "version": "2025-10-27",
+     "build": "2025-10-27",
+     "released": "2025-10-27",
+     "roles": [
+      "first of 2025-Q4"
+     ],
+     "state": "not-reproduced",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "2026-01-05",
+     "build": "2026-01-05",
+     "released": "2026-01-05",
+     "roles": [
+      "first of 2026-Q1"
+     ],
+     "state": "not-reproduced",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "2026-04-06",
+     "build": "2026-04-06",
+     "released": "2026-04-06",
+     "roles": [
+      "first of 2026-Q2"
+     ],
+     "state": "not-reproduced",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "2026-07-06",
+     "build": "2026-07-06",
+     "released": "2026-07-06",
+     "roles": [
+      "first of 2026-Q3"
+     ],
+     "state": "not-reproduced",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "2026-09-21",
+     "build": "2026-09-21",
+     "released": "2026-09-21",
+     "roles": [
+      "campaign"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "2026-09-28",
+     "build": "2026-09-28",
+     "released": "2026-09-28",
+     "roles": [
+      "newest on 2026-09-28"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "2026-11-16",
+     "build": "2026-11-16",
+     "released": "2026-11-16",
+     "roles": [
+      "newest"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    }
+   ],
+   "campaign_release": "2026-09-21",
+   "oldest_reproduced": "2026-09-21",
+   "oldest_released": "2026-09-21",
+   "age_months": 0.0,
+   "campaign": "main_v1",
+   "corpus": "first"
+  },
+  "C26": {
+   "line": "rust-analyzer",
+   "group": "rust-analyzer-r3-semantictokensrange-changed-b-b6e28b",
+   "cells": [
+    {
+     "version": "2024-10-07",
+     "build": "2024-10-07",
+     "released": "2024-10-07",
+     "roles": [
+      "first of 2024-Q4"
+     ],
+     "state": "not-reproduced",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "2025-01-06",
+     "build": "2025-01-06",
+     "released": "2025-01-06",
+     "roles": [
+      "first of 2025-Q1"
+     ],
+     "state": "not-reproduced",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "2025-04-07",
+     "build": "2025-04-07",
+     "released": "2025-04-07",
+     "roles": [
+      "first of 2025-Q2"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "2025-07-07",
+     "build": "2025-07-07",
+     "released": "2025-07-07",
+     "roles": [
+      "first of 2025-Q3"
+     ],
+     "state": "n/a",
+     "reproduced": null,
+     "replays": null
+    },
+    {
+     "version": "2025-10-27",
+     "build": "2025-10-27",
+     "released": "2025-10-27",
+     "roles": [
+      "first of 2025-Q4"
+     ],
+     "state": "not-reproduced",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "2026-01-05",
+     "build": "2026-01-05",
+     "released": "2026-01-05",
+     "roles": [
+      "first of 2026-Q1"
+     ],
+     "state": "not-reproduced",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "2026-04-06",
+     "build": "2026-04-06",
+     "released": "2026-04-06",
+     "roles": [
+      "first of 2026-Q2"
+     ],
+     "state": "partly",
+     "reproduced": 2,
+     "replays": 3
+    },
+    {
+     "version": "2026-07-06",
+     "build": "2026-07-06",
+     "released": "2026-07-06",
+     "roles": [
+      "first of 2026-Q3"
+     ],
+     "state": "partly",
+     "reproduced": 2,
+     "replays": 3
+    },
+    {
+     "version": "2026-09-21",
+     "build": "2026-09-21",
+     "released": "2026-09-21",
+     "roles": [
+      "campaign"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "2026-09-28",
+     "build": "2026-09-28",
+     "released": "2026-09-28",
+     "roles": [
+      "newest on 2026-09-28"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "2026-11-16",
+     "build": "2026-11-16",
+     "released": "2026-11-16",
+     "roles": [
+      "newest"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    }
+   ],
+   "campaign_release": "2026-09-21",
+   "oldest_reproduced": "2025-04-07",
+   "oldest_released": "2025-04-07",
+   "age_months": 17.5,
+   "campaign": "main_v1",
+   "corpus": "first"
+  },
+  "C27": {
+   "line": "rust-analyzer",
+   "group": "rust-analyzer-r4-completioninsert-gained-completion-e99b79",
+   "cells": [
+    {
+     "version": "2024-10-07",
+     "build": "2024-10-07",
+     "released": "2024-10-07",
+     "roles": [
+      "first of 2024-Q4"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "2025-01-06",
+     "build": "2025-01-06",
+     "released": "2025-01-06",
+     "roles": [
+      "first of 2025-Q1"
+     ],
+     "state": "n/a",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "2025-04-07",
+     "build": "2025-04-07",
+     "released": "2025-04-07",
+     "roles": [
+      "first of 2025-Q2"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "2025-07-07",
+     "build": "2025-07-07",
+     "released": "2025-07-07",
+     "roles": [
+      "first of 2025-Q3"
+     ],
+     "state": "n/a",
+     "reproduced": null,
+     "replays": null
+    },
+    {
+     "version": "2025-10-27",
+     "build": "2025-10-27",
+     "released": "2025-10-27",
+     "roles": [
+      "first of 2025-Q4"
+     ],
+     "state": "not-reproduced",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "2026-01-05",
+     "build": "2026-01-05",
+     "released": "2026-01-05",
+     "roles": [
+      "first of 2026-Q1"
+     ],
+     "state": "not-reproduced",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "2026-04-06",
+     "build": "2026-04-06",
+     "released": "2026-04-06",
+     "roles": [
+      "first of 2026-Q2"
+     ],
+     "state": "not-reproduced",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "2026-07-06",
+     "build": "2026-07-06",
+     "released": "2026-07-06",
+     "roles": [
+      "first of 2026-Q3"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "2026-09-21",
+     "build": "2026-09-21",
+     "released": "2026-09-21",
+     "roles": [
+      "campaign"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "2026-09-28",
+     "build": "2026-09-28",
+     "released": "2026-09-28",
+     "roles": [
+      "newest on 2026-09-28"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "2026-11-16",
+     "build": "2026-11-16",
+     "released": "2026-11-16",
+     "roles": [
+      "newest"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    }
+   ],
+   "campaign_release": "2026-09-21",
+   "oldest_reproduced": "2024-10-07",
+   "oldest_released": "2024-10-07",
+   "age_months": 23.5,
+   "campaign": "main_v1",
+   "corpus": "first"
+  },
+  "C28": {
+   "line": "rust-analyzer",
+   "group": "rust-analyzer-r4-completioninsert-gained-completion-e99b79",
+   "cells": [
+    {
+     "version": "2024-10-07",
+     "build": "2024-10-07",
+     "released": "2024-10-07",
+     "roles": [
+      "first of 2024-Q4"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "2025-01-06",
+     "build": "2025-01-06",
+     "released": "2025-01-06",
+     "roles": [
+      "first of 2025-Q1"
+     ],
+     "state": "n/a",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "2025-04-07",
+     "build": "2025-04-07",
+     "released": "2025-04-07",
+     "roles": [
+      "first of 2025-Q2"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "2025-07-07",
+     "build": "2025-07-07",
+     "released": "2025-07-07",
+     "roles": [
+      "first of 2025-Q3"
+     ],
+     "state": "n/a",
+     "reproduced": null,
+     "replays": null
+    },
+    {
+     "version": "2025-10-27",
+     "build": "2025-10-27",
+     "released": "2025-10-27",
+     "roles": [
+      "first of 2025-Q4"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "2026-01-05",
+     "build": "2026-01-05",
+     "released": "2026-01-05",
+     "roles": [
+      "first of 2026-Q1"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "2026-04-06",
+     "build": "2026-04-06",
+     "released": "2026-04-06",
+     "roles": [
+      "first of 2026-Q2"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "2026-07-06",
+     "build": "2026-07-06",
+     "released": "2026-07-06",
+     "roles": [
+      "first of 2026-Q3"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "2026-09-21",
+     "build": "2026-09-21",
+     "released": "2026-09-21",
+     "roles": [
+      "campaign"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "2026-09-28",
+     "build": "2026-09-28",
+     "released": "2026-09-28",
+     "roles": [
+      "newest on 2026-09-28"
+     ],
+     "state": "not-reproduced",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "2026-11-16",
+     "build": "2026-11-16",
+     "released": "2026-11-16",
+     "roles": [
+      "newest"
+     ],
+     "state": "not-reproduced",
+     "reproduced": 0,
+     "replays": 3
+    }
+   ],
+   "campaign_release": "2026-09-21",
+   "oldest_reproduced": "2024-10-07",
+   "oldest_released": "2024-10-07",
+   "age_months": 23.5,
+   "campaign": "main_v2",
+   "corpus": "second"
+  },
+  "C29": {
+   "line": "rust-analyzer",
+   "group": "rust-analyzer-r4-diagnostics-extra-e0063-mutation-m1-aeef82",
+   "cells": [
+    {
+     "version": "2024-10-07",
+     "build": "2024-10-07",
+     "released": "2024-10-07",
+     "roles": [
+      "first of 2024-Q4"
+     ],
+     "state": "not-reproduced",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "2025-01-06",
+     "build": "2025-01-06",
+     "released": "2025-01-06",
+     "roles": [
+      "first of 2025-Q1"
+     ],
+     "state": "not-reproduced",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "2025-04-07",
+     "build": "2025-04-07",
+     "released": "2025-04-07",
+     "roles": [
+      "first of 2025-Q2"
+     ],
+     "state": "not-reproduced",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "2025-07-07",
+     "build": "2025-07-07",
+     "released": "2025-07-07",
+     "roles": [
+      "first of 2025-Q3"
+     ],
+     "state": "n/a",
+     "reproduced": null,
+     "replays": null
+    },
+    {
+     "version": "2025-10-27",
+     "build": "2025-10-27",
+     "released": "2025-10-27",
+     "roles": [
+      "first of 2025-Q4"
+     ],
+     "state": "not-reproduced",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "2026-01-05",
+     "build": "2026-01-05",
+     "released": "2026-01-05",
+     "roles": [
+      "first of 2026-Q1"
+     ],
+     "state": "not-reproduced",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "2026-04-06",
+     "build": "2026-04-06",
+     "released": "2026-04-06",
+     "roles": [
+      "first of 2026-Q2"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "2026-07-06",
+     "build": "2026-07-06",
+     "released": "2026-07-06",
+     "roles": [
+      "first of 2026-Q3"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "2026-09-21",
+     "build": "2026-09-21",
+     "released": "2026-09-21",
+     "roles": [
+      "campaign"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "2026-09-28",
+     "build": "2026-09-28",
+     "released": "2026-09-28",
+     "roles": [
+      "newest on 2026-09-28"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "2026-11-16",
+     "build": "2026-11-16",
+     "released": "2026-11-16",
+     "roles": [
+      "newest"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    }
+   ],
+   "campaign_release": "2026-09-21",
+   "oldest_reproduced": "2026-04-06",
+   "oldest_released": "2026-04-06",
+   "age_months": 5.5,
+   "campaign": "main_v2",
+   "corpus": "second"
+  },
+  "C30": {
+   "line": "ts6",
+   "group": "ts6-r1-codeaction-extra-h5-f48d27",
+   "cells": [
+    {
+     "version": "5.5.4+tsls4.3.3",
+     "build": "5.5.4+tsls4.3.3",
+     "released": "2024-07-22",
+     "roles": [
+      "last patch of 5.5"
+     ],
+     "state": "n/a",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "5.6.3+tsls4.3.3",
+     "build": "5.6.3+tsls4.3.3",
+     "released": "2024-10-08",
+     "roles": [
+      "last patch of 5.6"
+     ],
+     "state": "n/a",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "5.7.3+tsls4.3.3",
+     "build": "5.7.3+tsls4.3.3",
+     "released": "2025-01-08",
+     "roles": [
+      "last patch of 5.7"
+     ],
+     "state": "n/a",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "5.8.3+tsls4.3.4",
+     "build": "5.8.3+tsls4.3.4",
+     "released": "2025-04-05",
+     "roles": [
+      "last patch of 5.8"
+     ],
+     "state": "n/a",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "5.9.3+tsls5.0.0",
+     "build": "5.9.3+tsls5.0.0",
+     "released": "2025-09-30",
+     "roles": [
+      "last patch of 5.9"
+     ],
+     "state": "n/a",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "6.0.3+tsls5.1.3",
+     "build": "6.0.3+tsls5.1.3",
+     "released": "2026-04-16",
+     "roles": [
+      "last patch of 6.0"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "6.0.3+tsls6.0.0",
+     "build": "6.0.3+tsls6.0.0",
+     "released": "2026-04-16",
+     "roles": [
+      "campaign"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "6.0.3+tsls6.0.1",
+     "build": "6.0.3+tsls6.0.1",
+     "released": "2026-04-16",
+     "roles": [
+      "newest on 2026-09-28"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "6.0.3+tsls6.1.0",
+     "build": "6.0.3+tsls6.1.0",
+     "released": "2026-04-16",
+     "roles": [
+      "newest"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    }
+   ],
+   "campaign_release": "2026-04-16",
+   "oldest_reproduced": "6.0.3+tsls5.1.3",
+   "oldest_released": "2026-04-16",
+   "age_months": 0.0,
+   "campaign": "main_v2",
+   "corpus": "second"
+  },
+  "C31": {
+   "line": "ts6",
+   "group": "ts6-r1-inlayhint-changed-h9-b9d052",
+   "cells": [
+    {
+     "version": "5.5.4+tsls4.3.3",
+     "build": "5.5.4+tsls4.3.3",
+     "released": "2024-07-22",
+     "roles": [
+      "last patch of 5.5"
+     ],
+     "state": "not-reproduced",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "5.6.3+tsls4.3.3",
+     "build": "5.6.3+tsls4.3.3",
+     "released": "2024-10-08",
+     "roles": [
+      "last patch of 5.6"
+     ],
+     "state": "not-reproduced",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "5.7.3+tsls4.3.3",
+     "build": "5.7.3+tsls4.3.3",
+     "released": "2025-01-08",
+     "roles": [
+      "last patch of 5.7"
+     ],
+     "state": "not-reproduced",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "5.8.3+tsls4.3.4",
+     "build": "5.8.3+tsls4.3.4",
+     "released": "2025-04-05",
+     "roles": [
+      "last patch of 5.8"
+     ],
+     "state": "not-reproduced",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "5.9.3+tsls5.0.0",
+     "build": "5.9.3+tsls5.0.0",
+     "released": "2025-09-30",
+     "roles": [
+      "last patch of 5.9"
+     ],
+     "state": "not-reproduced",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "6.0.3+tsls5.1.3",
+     "build": "6.0.3+tsls5.1.3",
+     "released": "2026-04-16",
+     "roles": [
+      "last patch of 6.0"
+     ],
+     "state": "not-reproduced",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "6.0.3+tsls6.0.0",
+     "build": "6.0.3+tsls6.0.0",
+     "released": "2026-04-16",
+     "roles": [
+      "campaign"
+     ],
+     "state": "not-reproduced",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "6.0.3+tsls6.0.1",
+     "build": "6.0.3+tsls6.0.1",
+     "released": "2026-04-16",
+     "roles": [
+      "newest on 2026-09-28"
+     ],
+     "state": "not-reproduced",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "6.0.3+tsls6.1.0",
+     "build": "6.0.3+tsls6.1.0",
+     "released": "2026-04-16",
+     "roles": [
+      "newest"
+     ],
+     "state": "not-reproduced",
+     "reproduced": 0,
+     "replays": 3
+    }
+   ],
+   "campaign_release": "2026-04-16",
+   "oldest_reproduced": null,
+   "oldest_released": null,
+   "age_months": null,
+   "campaign": "main_v2",
+   "corpus": "second"
+  },
+  "C32": {
+   "line": "ts6",
+   "group": "ts6-r4-diagnostics-changed-1064-2322-quickfix-d597f5",
+   "cells": [
+    {
+     "version": "5.5.4+tsls4.3.3",
+     "build": "5.5.4+tsls4.3.3",
+     "released": "2024-07-22",
+     "roles": [
+      "last patch of 5.5"
+     ],
+     "state": "n/a",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "5.6.3+tsls4.3.3",
+     "build": "5.6.3+tsls4.3.3",
+     "released": "2024-10-08",
+     "roles": [
+      "last patch of 5.6"
+     ],
+     "state": "n/a",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "5.7.3+tsls4.3.3",
+     "build": "5.7.3+tsls4.3.3",
+     "released": "2025-01-08",
+     "roles": [
+      "last patch of 5.7"
+     ],
+     "state": "n/a",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "5.8.3+tsls4.3.4",
+     "build": "5.8.3+tsls4.3.4",
+     "released": "2025-04-05",
+     "roles": [
+      "last patch of 5.8"
+     ],
+     "state": "n/a",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "5.9.3+tsls5.0.0",
+     "build": "5.9.3+tsls5.0.0",
+     "released": "2025-09-30",
+     "roles": [
+      "last patch of 5.9"
+     ],
+     "state": "n/a",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "6.0.3+tsls5.1.3",
+     "build": "6.0.3+tsls5.1.3",
+     "released": "2026-04-16",
+     "roles": [
+      "last patch of 6.0"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "6.0.3+tsls6.0.0",
+     "build": "6.0.3+tsls6.0.0",
+     "released": "2026-04-16",
+     "roles": [
+      "campaign"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "6.0.3+tsls6.0.1",
+     "build": "6.0.3+tsls6.0.1",
+     "released": "2026-04-16",
+     "roles": [
+      "newest on 2026-09-28"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "6.0.3+tsls6.1.0",
+     "build": "6.0.3+tsls6.1.0",
+     "released": "2026-04-16",
+     "roles": [
+      "newest"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    }
+   ],
+   "campaign_release": "2026-04-16",
+   "oldest_reproduced": "6.0.3+tsls5.1.3",
+   "oldest_released": "2026-04-16",
+   "age_months": 0.0,
+   "campaign": "main_v2",
+   "corpus": "second"
+  },
+  "C33": {
+   "line": "ts6",
+   "group": "ts6-r4-diagnostics-changed-mutation-m1-34f06f",
+   "cells": [
+    {
+     "version": "5.5.4+tsls4.3.3",
+     "build": "5.5.4+tsls4.3.3",
+     "released": "2024-07-22",
+     "roles": [
+      "last patch of 5.5"
+     ],
+     "state": "not-reproduced",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "5.6.3+tsls4.3.3",
+     "build": "5.6.3+tsls4.3.3",
+     "released": "2024-10-08",
+     "roles": [
+      "last patch of 5.6"
+     ],
+     "state": "not-reproduced",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "5.7.3+tsls4.3.3",
+     "build": "5.7.3+tsls4.3.3",
+     "released": "2025-01-08",
+     "roles": [
+      "last patch of 5.7"
+     ],
+     "state": "not-reproduced",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "5.8.3+tsls4.3.4",
+     "build": "5.8.3+tsls4.3.4",
+     "released": "2025-04-05",
+     "roles": [
+      "last patch of 5.8"
+     ],
+     "state": "not-reproduced",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "5.9.3+tsls5.0.0",
+     "build": "5.9.3+tsls5.0.0",
+     "released": "2025-09-30",
+     "roles": [
+      "last patch of 5.9"
+     ],
+     "state": "not-reproduced",
+     "reproduced": 0,
+     "replays": 3
+    },
+    {
+     "version": "6.0.3+tsls5.1.3",
+     "build": "6.0.3+tsls5.1.3",
+     "released": "2026-04-16",
+     "roles": [
+      "last patch of 6.0"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "6.0.3+tsls6.0.0",
+     "build": "6.0.3+tsls6.0.0",
+     "released": "2026-04-16",
+     "roles": [
+      "campaign"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "6.0.3+tsls6.0.1",
+     "build": "6.0.3+tsls6.0.1",
+     "released": "2026-04-16",
+     "roles": [
+      "newest on 2026-09-28"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "6.0.3+tsls6.1.0",
+     "build": "6.0.3+tsls6.1.0",
+     "released": "2026-04-16",
+     "roles": [
+      "newest"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    }
+   ],
+   "campaign_release": "2026-04-16",
+   "oldest_reproduced": "6.0.3+tsls5.1.3",
+   "oldest_released": "2026-04-16",
+   "age_months": 0.0,
+   "campaign": "main_v2",
+   "corpus": "second"
+  },
+  "C34": {
+   "line": "ts6",
+   "group": "ts6-r4-diagnostics-extra-17002-2552-mutation-m1-727795",
+   "cells": [
+    {
+     "version": "5.5.4+tsls4.3.3",
+     "build": "5.5.4+tsls4.3.3",
+     "released": "2024-07-22",
+     "roles": [
+      "last patch of 5.5"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "5.6.3+tsls4.3.3",
+     "build": "5.6.3+tsls4.3.3",
+     "released": "2024-10-08",
+     "roles": [
+      "last patch of 5.6"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "5.7.3+tsls4.3.3",
+     "build": "5.7.3+tsls4.3.3",
+     "released": "2025-01-08",
+     "roles": [
+      "last patch of 5.7"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "5.8.3+tsls4.3.4",
+     "build": "5.8.3+tsls4.3.4",
+     "released": "2025-04-05",
+     "roles": [
+      "last patch of 5.8"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "5.9.3+tsls5.0.0",
+     "build": "5.9.3+tsls5.0.0",
+     "released": "2025-09-30",
+     "roles": [
+      "last patch of 5.9"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "6.0.3+tsls5.1.3",
+     "build": "6.0.3+tsls5.1.3",
+     "released": "2026-04-16",
+     "roles": [
+      "last patch of 6.0"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "6.0.3+tsls6.0.0",
+     "build": "6.0.3+tsls6.0.0",
+     "released": "2026-04-16",
+     "roles": [
+      "campaign"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "6.0.3+tsls6.0.1",
+     "build": "6.0.3+tsls6.0.1",
+     "released": "2026-04-16",
+     "roles": [
+      "newest on 2026-09-28"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "6.0.3+tsls6.1.0",
+     "build": "6.0.3+tsls6.1.0",
+     "released": "2026-04-16",
+     "roles": [
+      "newest"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    }
+   ],
+   "campaign_release": "2026-04-16",
+   "oldest_reproduced": "5.5.4+tsls4.3.3",
+   "oldest_released": "2024-07-22",
+   "age_months": 20.8,
+   "campaign": "main_v2",
+   "corpus": "second"
+  },
+  "C35": {
+   "line": "ts6",
+   "group": "ts6-r4-diagnostics-extra-2448-7022-mutation-m1-e5d199",
+   "cells": [
+    {
+     "version": "5.5.4+tsls4.3.3",
+     "build": "5.5.4+tsls4.3.3",
+     "released": "2024-07-22",
+     "roles": [
+      "last patch of 5.5"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "5.6.3+tsls4.3.3",
+     "build": "5.6.3+tsls4.3.3",
+     "released": "2024-10-08",
+     "roles": [
+      "last patch of 5.6"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "5.7.3+tsls4.3.3",
+     "build": "5.7.3+tsls4.3.3",
+     "released": "2025-01-08",
+     "roles": [
+      "last patch of 5.7"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "5.8.3+tsls4.3.4",
+     "build": "5.8.3+tsls4.3.4",
+     "released": "2025-04-05",
+     "roles": [
+      "last patch of 5.8"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "5.9.3+tsls5.0.0",
+     "build": "5.9.3+tsls5.0.0",
+     "released": "2025-09-30",
+     "roles": [
+      "last patch of 5.9"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "6.0.3+tsls5.1.3",
+     "build": "6.0.3+tsls5.1.3",
+     "released": "2026-04-16",
+     "roles": [
+      "last patch of 6.0"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "6.0.3+tsls6.0.0",
+     "build": "6.0.3+tsls6.0.0",
+     "released": "2026-04-16",
+     "roles": [
+      "campaign"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "6.0.3+tsls6.0.1",
+     "build": "6.0.3+tsls6.0.1",
+     "released": "2026-04-16",
+     "roles": [
+      "newest on 2026-09-28"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    },
+    {
+     "version": "6.0.3+tsls6.1.0",
+     "build": "6.0.3+tsls6.1.0",
+     "released": "2026-04-16",
+     "roles": [
+      "newest"
+     ],
+     "state": "reproduced",
+     "reproduced": 3,
+     "replays": 3
+    }
+   ],
+   "campaign_release": "2026-04-16",
+   "oldest_reproduced": "5.5.4+tsls4.3.3",
+   "oldest_released": "2024-07-22",
+   "age_months": 20.8,
+   "campaign": "main_v2",
+   "corpus": "second"
+  }
+ }
+}

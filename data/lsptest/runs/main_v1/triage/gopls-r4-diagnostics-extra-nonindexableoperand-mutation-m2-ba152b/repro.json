@@ -1,0 +1,256 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "1049da1e7f48-v00",
+ "run_id": "1049da1e7f48",
+ "oracle": "r4_edits",
+ "server": {
+  "kind": "gopls",
+  "version": "v0.23.0"
+ },
+ "project": {
+  "name": "caddyserver/caddy@c18099a0af5e",
+  "source": "corpus",
+  "ref": "temp/corpus/caddyserver__caddy@c18099a0af5e",
+  "commit": "c18099a0af5e88c8d9da0b9d797f6f2c62d60a23",
+  "language": "go"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "modules/caddyhttp/reverseproxy/selectionpolicies_test.go",
+    "positions": [
+     [
+      125,
+      1
+     ]
+    ],
+    "ends": [],
+    "names": [
+     ""
+    ]
+   },
+   {
+    "path": "modules/caddyhttp/rewrite/caddyfile.go",
+    "positions": [],
+    "ends": [],
+    "names": []
+   },
+   {
+    "path": "modules/caddypki/acmeserver/policy_test.go",
+    "positions": [],
+    "ends": [],
+    "names": []
+   }
+  ]
+ },
+ "key": {
+  "method": "diagnostics",
+  "path": "modules/caddyhttp/reverseproxy/selectionpolicies_test.go",
+  "line": 125,
+  "character": 1,
+  "extra": "M2:quickfix-errors:Create variable poool"
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "modules/caddyhttp/reverseproxy/selectionpolicies_test.go"
+  },
+  {
+   "kind": "change",
+   "path": "modules/caddyhttp/reverseproxy/selectionpolicies_test.go",
+   "start": [
+    125,
+    1
+   ],
+   "end": [
+    125,
+    5
+   ],
+   "text": "poool"
+  },
+  {
+   "kind": "change",
+   "path": "modules/caddyhttp/reverseproxy/selectionpolicies_test.go",
+   "start": [
+    125,
+    6
+   ],
+   "end": [
+    125,
+    6
+   ],
+   "text": " := 0\n\tpoool"
+  }
+ ],
+ "case": {
+  "action_kind": "quickfix",
+  "base_errors": 0,
+  "check": "errors",
+  "diag": {
+   "code": "UndeclaredName",
+   "message": "undefined: poool",
+   "range": {
+    "end": {
+     "character": 6,
+     "line": 125
+    },
+    "start": {
+     "character": 1,
+     "line": 125
+    }
+   },
+   "severity": 1
+  },
+  "fix_introduced_errors": [
+   {
+    "code": "NonIndexableOperand",
+    "message": "cannot index poool (variable of type int)",
+    "path": "modules/caddyhttp/reverseproxy/selectionpolicies_test.go",
+    "range": {
+     "end": {
+      "character": 6,
+      "line": 126
+     },
+     "start": {
+      "character": 1,
+      "line": 126
+     }
+    },
+    "severity": 1
+   }
+  ],
+  "fix_ops": [
+   {
+    "end": [
+     125,
+     6
+    ],
+    "kind": "change",
+    "path": "modules/caddyhttp/reverseproxy/selectionpolicies_test.go",
+    "start": [
+     125,
+     6
+    ],
+    "text": " := 0\n\tpoool"
+   }
+  ],
+  "kind": "mutation",
+  "mutation": {
+   "end": [
+    125,
+    5
+   ],
+   "id": "M2",
+   "offsets": [
+    3669,
+    3673
+   ],
+   "sha": "fe48a8afcad62b36",
+   "start": [
+    125,
+    1
+   ],
+   "text": "poool",
+   "what": "misspell 'pool' as 'poool' (duplicate a middle character)"
+  },
+  "n_fix_ops": 1,
+  "path": "modules/caddyhttp/reverseproxy/selectionpolicies_test.go",
+  "post_errors": 1,
+  "title": "Create variable poool",
+  "via": "resolve"
+ },
+ "shape": "diagnostics:extra:NonIndexableOperand",
+ "signature": "gopls|r4_edits|diagnostics:extra:NonIndexableOperand",
+ "expected": [],
+ "actual": [
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "NonIndexableOperand",
+   "compiler",
+   "cannot index poool (variable of type int)"
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "quick fix 'Create variable poool' for UndeclaredName at modules/caddyhttp/reverseproxy/selectionpolicies_test.go:126:2 raises the error count in the edited files from 0 to 1 (seeded by M2: misspell 'pool' as 'poool' (duplicate a middle character); errors before the mutation 0, after the fix 1); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 69s",
+ "violation": {
+  "oracle": "r4_edits",
+  "server": "gopls-v0.23.0",
+  "project": "caddyserver/caddy@c18099a0af5e",
+  "key": {
+   "method": "diagnostics",
+   "path": "modules/caddyhttp/reverseproxy/selectionpolicies_test.go",
+   "line": 125,
+   "character": 1,
+   "extra": "M2:quickfix-errors:Create variable poool"
+  },
+  "expected": [],
+  "actual": [
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "NonIndexableOperand",
+    "compiler",
+    "cannot index poool (variable of type int)"
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "modules/caddyhttp/reverseproxy/selectionpolicies_test.go"
+   },
+   {
+    "kind": "change",
+    "path": "modules/caddyhttp/reverseproxy/selectionpolicies_test.go",
+    "start": [
+     125,
+     1
+    ],
+    "end": [
+     125,
+     5
+    ],
+    "text": "poool"
+   },
+   {
+    "kind": "change",
+    "path": "modules/caddyhttp/reverseproxy/selectionpolicies_test.go",
+    "start": [
+     125,
+     6
+    ],
+    "end": [
+     125,
+     6
+    ],
+    "text": " := 0\n\tpoool"
+   }
+  ],
+  "detail": "{\"case\": {\"action_kind\": \"quickfix\", \"base_errors\": 0, \"check\": \"errors\", \"diag\": {\"code\": \"UndeclaredName\", \"message\": \"undefined: poool\", \"range\": {\"end\": {\"character\": 6, \"line\": 125}, \"start\": {\"character\": 1, \"line\": 125}}, \"severity\": 1}, \"fix_introduced_errors\": [{\"code\": \"NonIndexableOperand\", \"message\": \"cannot index poool (variable of type int)\", \"path\": \"modules/caddyhttp/reverseproxy/selectionpolicies_test.go\", \"range\": {\"end\": {\"character\": 6, \"line\": 126}, \"start\": {\"character\": 1, \"line\": 126}}, \"severity\": 1}], \"fix_ops\": [{\"end\": [125, 6], \"kind\": \"change\", \"path\": \"modules/caddyhttp/reverseproxy/selectionpolicies_test.go\", \"start\": [125, 6], \"text\": \" := 0\\n\\tpoool\"}], \"kind\": \"mutation\", \"mutation\": {\"end\": [125, 5], \"id\": \"M2\", \"offsets\": [3669, 3673], \"sha\": \"fe48a8afcad62b36\", \"start\": [125, 1], \"text\": \"poool\", \"what\": \"misspell 'pool' as 'poool' (duplicate a middle character)\"}, \"n_fix_ops\": 1, \"path\": \"modules/caddyhttp/reverseproxy/selectionpolicies_test.go\", \"post_errors\": 1, \"title\": \"Create variable poool\", \"via\": \"resolve\"}, \"note\": \"quick fix 'Create variable poool' for UndeclaredName at modules/caddyhttp/reverseproxy/selectionpolicies_test.go:126:2 raises the error count in the edited files from 0 to 1 (seeded by M2: misspell 'pool' as 'poool' (duplicate a middle character); errors before the mutation 0, after the fix 1); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 69s\", \"shape\": \"diagnostics:extra:NonIndexableOperand\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "gopls|r4_edits|diagnostics:extra:NonIndexableOperand",
+  "run_id": "1049da1e7f48"
+ },
+ "replay_logs": [
+  "logs/gopls-v0.23.0-trba152b-r4-replay-baseline-20260925-160013-6919ab.jsonl.gz",
+  "logs/gopls-v0.23.0-trba152b-r4-replay-case-20260925-160002-3e5b86.jsonl.gz",
+  "logs/gopls-v0.23.0-trba152b-r4-replay-control-20260925-160018-c100dd.jsonl.gz"
+ ],
+ "project_files": {},
+ "group": "gopls-r4-diagnostics-extra-nonindexableoperand-mutation-m2-ba152b",
+ "reduced": true
+}

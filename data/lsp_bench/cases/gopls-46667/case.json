@@ -1,0 +1,112 @@
+{
+ "schema": 1,
+ "id": "gopls-46667",
+ "meta": {
+  "server": "gopls",
+  "kind": "gopls",
+  "number": 46667,
+  "url": "https://github.com/golang/go/issues/46667",
+  "title": "x/tools/gopls: diagnostics not cleared when import cycle is resolved",
+  "oracle_class": "R1",
+  "subtype": "edit-undo",
+  "fix_ref": "golang/tools@9aa007ed1667 (internal/lsp/cache: invalidate broken packages when imports are deleted; CL 326589)",
+  "fix_shas": [
+   "9aa007ed16670bde17b8276c371085aeb77fdfbe"
+  ],
+  "pre_version": "v0.7.0",
+  "post_version": "v0.7.1",
+  "pre_build": "v0.7.0",
+  "post_build": "v0.7.1",
+  "build_notes": "go install golang.org/x/tools/gopls@<version> with the local Go (go1.27.1), which builds both; the server runs the local go command. v0.7.0 was tagged 2021-06-08 (a commenter reproduced the bug with v0.7.0), the fix merged 2021-06-10, v0.7.1 was tagged 2021-08-02.",
+  "candidate_rank": 43,
+  "effort_minutes": 8,
+  "notes": "A go list error (the import cycle) became sticky: when the edit deleted the import that closed the cycle, the broken packages were not invalidated, so the cycle error on b/b.go and the 'could not import mod.test/b' error on a/a.go stayed. The fix invalidates packages with errors when imports are deleted."
+ },
+ "language": "go",
+ "settings": {},
+ "settings_note": "The reporter's editor ran goimports on save; the case applies the edit that goimports makes (deleting the unused import) as a second change, then saves.",
+ "session": {
+  "settle_timeout_s": 180
+ },
+ "files": [
+  {
+   "path": "go.mod",
+   "provenance": "issue",
+   "source": "issue body, 'Setup' txtar, section '-- go.mod --'",
+   "note": ""
+  },
+  {
+   "path": "a/a.go",
+   "provenance": "issue",
+   "source": "issue body, 'Setup' txtar, section '-- a/a.go --'",
+   "note": ""
+  },
+  {
+   "path": "b/b.go",
+   "provenance": "issue",
+   "source": "issue body, 'Setup' txtar, section '-- b/b.go --'",
+   "note": ""
+  }
+ ],
+ "repro": {
+  "attempt": 1,
+  "timing": "settled",
+  "steps": "Open a/a.go and b/b.go (a and b import each other: import cycle). In b/b.go delete 'const B = a.B' (line 5), then delete the now unused import of mod.test/a (lines 2-3, what goimports does on save) and save. Reported: the cycle is resolved but gopls keeps 'could not import mod.test/b' on a/a.go and 'import cycle not allowed' on b/b.go. Probe: the diagnostics of both files after the edits are compared with a fresh session on the edited files and a fresh control.",
+  "ops": [
+   {
+    "kind": "open",
+    "path": "a/a.go"
+   },
+   {
+    "kind": "open",
+    "path": "b/b.go"
+   },
+   {
+    "kind": "change",
+    "path": "b/b.go",
+    "start": [
+     5,
+     0
+    ],
+    "end": [
+     6,
+     0
+    ],
+    "text": ""
+   },
+   {
+    "kind": "change",
+    "path": "b/b.go",
+    "start": [
+     2,
+     0
+    ],
+    "end": [
+     4,
+     0
+    ],
+    "text": ""
+   },
+   {
+    "kind": "save",
+    "path": "b/b.go"
+   }
+  ],
+  "probe": {
+   "type": "differs_from_fresh",
+   "params": {
+    "queries": [
+     {
+      "method": "diagnostics",
+      "path": "a/a.go"
+     },
+     {
+      "method": "diagnostics",
+      "path": "b/b.go"
+     }
+    ]
+   }
+  }
+ },
+ "attempts": []
+}

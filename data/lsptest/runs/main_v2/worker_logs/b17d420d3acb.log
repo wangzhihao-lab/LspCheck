@@ -1,0 +1,3 @@
+2026-11-18 16:33:53,851 INFO campaign_run run b17d420d3acb: r5_transforms on gopls v0.23.0, zeromicro/go-zero@5b1b5bdc3adc seed 2 settled, targets ['core/logx/syslog_test.go', 'tools/goctl/internal/cobrax/cobrax.go', 'zrpc/server_test.go']
+2026-11-18 16:35:02,653 INFO campaign_run run b17d420d3acb: 0 candidate(s) in 69s; confirming
+2026-11-18 16:35:02,653 INFO campaign_run run b17d420d3acb finished: ok, 0 confirmed of 0 candidate(s), 69s

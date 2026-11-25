@@ -1,0 +1,3 @@
+2026-09-24 09:50:48,596 INFO campaign_run run 486e23224b56: r1_history on ts7 7.0.2, upstash/context7@6477e43e31d2 seed 2 settled, targets ['packages/cli/src/utils/update-check.ts', 'packages/sdk/src/commands/search-library/types.ts', 'packages/sdk/src/http/index.ts']
+2026-09-24 09:57:37,082 INFO campaign_run run 486e23224b56: 0 candidate(s) in 409s; confirming
+2026-09-24 09:57:37,083 INFO campaign_run run 486e23224b56 finished: ok, 0 confirmed of 0 candidate(s), 408s

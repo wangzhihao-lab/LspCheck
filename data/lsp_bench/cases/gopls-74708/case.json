@@ -1,0 +1,71 @@
+{
+ "schema": 1,
+ "id": "gopls-74708",
+ "meta": {
+  "server": "gopls",
+  "kind": "gopls",
+  "number": 74708,
+  "url": "https://github.com/golang/go/issues/74708",
+  "title": "x/tools/gopls/internal/analysis/modernize: waitgroup modernizer makes a complete mess of it",
+  "oracle_class": "R4",
+  "subtype": "quickfix",
+  "fix_ref": "golang/tools@6ebfec2837bb (gopls/internal/analysis: fix waitgroup modernizer formatting; CL 698155)",
+  "fix_shas": [
+   "6ebfec2837bbfbbdc5d3a9fe087c70c29be27fbf"
+  ],
+  "pre_version": "v0.20.0",
+  "post_version": "v0.21.0",
+  "pre_build": "v0.20.0",
+  "post_build": "v0.21.0",
+  "build_notes": "go install golang.org/x/tools/gopls@<version> with the local Go (go1.27.1), which builds both; the server runs the local go command, whose standard library has sync.WaitGroup.Go (Go 1.25+). The issue was reported 2025-07-22 against the analyzer at x/tools master; v0.20.0 was tagged 2025-07-28 with the waitgroup pass (modernize.go calls waitgroup(pass)); the fix merged 2025-08-21, v0.21.0 was tagged 2025-12-05.",
+  "candidate_rank": 34,
+  "effort_minutes": 6,
+  "notes": "The pre-fix fix text printed the receiver expression s.wg as a Go value ('&{s wg}') instead of formatting the source expression, producing invalid syntax."
+ },
+ "language": "go",
+ "settings": {},
+ "settings_note": "The modernize analyzer is on by default in both builds.",
+ "session": {
+  "settle_timeout_s": 180
+ },
+ "files": [
+  {
+   "path": "b.go",
+   "provenance": "issue",
+   "source": "issue body, first code block (output of 'cat b.go', the shell prompt line omitted)",
+   "note": ""
+  },
+  {
+   "path": "go.mod",
+   "provenance": "scaffold",
+   "source": "",
+   "note": "a module around the file (the reporter ran in the x/tools module); go 1.25, the release that added WaitGroup.Go, like the file's build constraint"
+  }
+ ],
+ "repro": {
+  "attempt": 1,
+  "timing": "settled",
+  "steps": "Open b.go. The waitgroup pass reports the s.wg.Add(1) / go func(){...; s.wg.Done()}() pattern ('Goroutine creation can be simplified using WaitGroup.Go'). Apply its fix ('Simplify by using WaitGroup.Go'). Reported (with the modernize command): the result '&{s wg}.Go(func() {' does not parse. Probe: the edited text must have no parse error that the original did not have.",
+  "ops": [
+   {
+    "kind": "open",
+    "path": "b.go"
+   }
+  ],
+  "probe": {
+   "type": "edit_breaks_syntax",
+   "params": {
+    "edit": {
+     "via": "code_action",
+     "path": "b.go",
+     "diagnostic": {
+      "message_re": "WaitGroup\\.Go"
+     },
+     "title_re": "WaitGroup\\.Go",
+     "missing": "invalid"
+    }
+   }
+  }
+ },
+ "attempts": []
+}

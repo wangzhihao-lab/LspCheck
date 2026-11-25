@@ -1,0 +1,12 @@
+2026-11-18 04:32:12,012 INFO campaign_run run 89ebeb799563: r6_crossimpl on ts7 7.0.2, solidjs/solid@4b62bc29e04b seed 1 settled, targets ['examples/rendering/shared/src/components/Reveal.tsx', 'packages/web/test/hydration/spread-innerhtml.spec.tsx', 'packages/web/test/latest-shadow-owned-write-issue-3378.spec.tsx']
+2026-11-18 04:34:37,285 INFO campaign_run run 89ebeb799563: 23 candidate(s) in 146s; confirming
+2026-11-18 04:36:56,516 INFO flake replay 1/3 of ts7|r6_crossimpl|completion:missing: settled=True control_stable=True reproduced=True (139.2s)
+2026-11-18 04:39:23,483 INFO flake replay 2/3 of ts7|r6_crossimpl|completion:missing: settled=True control_stable=True reproduced=True (147.0s)
+2026-11-18 04:41:32,676 INFO flake replay 3/3 of ts7|r6_crossimpl|completion:missing: settled=True control_stable=True reproduced=True (129.2s)
+2026-11-18 04:44:04,544 INFO flake replay 1/3 of ts7|r6_crossimpl|hover:lost: settled=True control_stable=True reproduced=True (151.9s)
+2026-11-18 04:46:55,292 INFO flake replay 2/3 of ts7|r6_crossimpl|hover:lost: settled=True control_stable=True reproduced=True (170.8s)
+2026-11-18 04:49:19,379 INFO flake replay 3/3 of ts7|r6_crossimpl|hover:lost: settled=True control_stable=True reproduced=True (144.1s)
+2026-11-18 04:52:59,969 INFO flake replay 1/3 of ts7|r6_crossimpl|hover:changed: settled=True control_stable=True reproduced=True (220.6s)
+2026-11-18 04:55:47,151 INFO flake replay 2/3 of ts7|r6_crossimpl|hover:changed: settled=True control_stable=True reproduced=True (167.2s)
+2026-11-18 04:59:21,594 INFO flake replay 3/3 of ts7|r6_crossimpl|hover:changed: settled=True control_stable=True reproduced=True (214.4s)
+2026-11-18 04:59:21,689 INFO campaign_run run 89ebeb799563 finished: ok, 3 confirmed of 23 candidate(s), 1630s

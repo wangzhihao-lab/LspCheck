@@ -1,0 +1,74 @@
+{
+ "vid": "210902bea61f-v00",
+ "ops_before": 5,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 11,
+ "cache_hits": 2,
+ "reduce_seconds": 228.476,
+ "budget_exhausted": false,
+ "probe_log": [
+  [
+   4,
+   false
+  ],
+  [
+   4,
+   false
+  ],
+  [
+   4,
+   false
+  ],
+  [
+   4,
+   true
+  ],
+  [
+   3,
+   true
+  ],
+  [
+   1,
+   false
+  ],
+  [
+   2,
+   false
+  ],
+  [
+   1,
+   false
+  ],
+  [
+   1,
+   false
+  ],
+  [
+   2,
+   false
+  ],
+  [
+   2,
+   false
+  ]
+ ],
+ "logs": [
+  "ts6-6.0.3-tr4f92e2-replay-baseline-20260925-154305-ea12ba.jsonl.gz",
+  "ts6-6.0.3-tr4f92e2-replay-control-20260925-154305-5100b3.jsonl.gz",
+  "ts6-6.0.3-tr4f92e2-replay-history-20260925-154312-fa1d91.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [
+   [
+    "Move to a new file",
+    "refactor.move.newFile"
+   ]
+  ],
+  "actual": [
+   "missing-key"
+  ]
+ },
+ "ops_after": 3,
+ "total_seconds": 363.8
+}

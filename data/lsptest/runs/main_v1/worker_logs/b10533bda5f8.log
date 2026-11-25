@@ -1,0 +1,3 @@
+2026-09-24 11:31:23,913 INFO campaign_run run b10533bda5f8: r1_history on ts6 6.0.3, upstash/context7@6477e43e31d2 seed 3 settled, targets ['packages/opencode/src/index.ts', 'packages/sdk/src/client.test.ts', 'packages/sdk/src/commands/get-context/index.test.ts']
+2026-09-24 11:43:15,357 INFO campaign_run run b10533bda5f8: 0 candidate(s) in 711s; confirming
+2026-09-24 11:43:15,357 INFO campaign_run run b10533bda5f8 finished: ok, 0 confirmed of 0 candidate(s), 712s

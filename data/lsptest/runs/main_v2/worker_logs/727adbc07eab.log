@@ -1,0 +1,9 @@
+2026-11-18 07:30:43,667 INFO campaign_run run 727adbc07eab: r4_edits on ts7 7.0.2, Gitlawb/openclaude@5cd11336caea seed 1 settled, targets ['src/commands/privacy-settings/index.ts', 'src/components/PromptInput/Notifications.tsx', 'src/utils/log.test.ts']
+2026-11-18 07:34:18,055 INFO campaign_run run 727adbc07eab: 3 candidate(s) in 214s; confirming
+2026-11-18 07:36:47,769 INFO flake replay 1/3 of ts7|r4_edits|diagnostics:extra:2353: settled=True control_stable=True reproduced=True (149.7s)
+2026-11-18 07:39:14,486 INFO flake replay 2/3 of ts7|r4_edits|diagnostics:extra:2353: settled=True control_stable=True reproduced=True (146.7s)
+2026-11-18 07:41:43,060 INFO flake replay 3/3 of ts7|r4_edits|diagnostics:extra:2353: settled=True control_stable=True reproduced=True (148.6s)
+2026-11-18 07:44:00,368 INFO flake replay 1/3 of ts7|r4_edits|diagnostics:extra:2322: settled=True control_stable=True reproduced=True (137.3s)
+2026-11-18 07:46:11,633 INFO flake replay 2/3 of ts7|r4_edits|diagnostics:extra:2322: settled=True control_stable=True reproduced=True (131.3s)
+2026-11-18 07:48:37,548 INFO flake replay 3/3 of ts7|r4_edits|diagnostics:extra:2322: settled=True control_stable=True reproduced=True (145.9s)
+2026-11-18 07:48:37,563 INFO campaign_run run 727adbc07eab finished: ok, 2 confirmed of 3 candidate(s), 1074s

@@ -1,0 +1,3 @@
+2026-11-18 10:06:54,117 INFO campaign_run run 3f5a9e8bb0cd: r6_crossimpl on ts7 7.0.2, date-fns/date-fns@f34149bb1ba1 seed 1 settled, targets ['pkgs/core/src/fp/differenceInCalendarQuartersWithOptions/index.ts', 'pkgs/core/src/fp/isSameWeek/index.ts', 'pkgs/core/src/fp/lastDayOfMonth/index.ts']
+2026-11-18 10:08:48,030 INFO campaign_run run 3f5a9e8bb0cd: 21 candidate(s) in 114s; confirming
+2026-11-18 10:08:48,049 INFO campaign_run run 3f5a9e8bb0cd finished: ok, 0 confirmed of 21 candidate(s), 114s

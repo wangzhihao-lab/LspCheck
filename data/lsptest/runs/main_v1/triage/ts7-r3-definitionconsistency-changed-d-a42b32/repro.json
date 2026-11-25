@@ -1,0 +1,141 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "08daa748dcca-v00",
+ "run_id": "08daa748dcca",
+ "oracle": "r3_routes",
+ "server": {
+  "kind": "ts7",
+  "version": "7.0.2"
+ },
+ "project": {
+  "name": "upstash/context7@6477e43e31d2",
+  "source": "corpus",
+  "ref": "temp/corpus/upstash__context7@6477e43e31d2",
+  "commit": "6477e43e31d27a5c1bc044506e1c14de15f8a110",
+  "language": "typescript"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "packages/cli/src/__tests__/command-auth-wiring.test.ts",
+    "positions": [],
+    "ends": [],
+    "names": []
+   },
+   {
+    "path": "packages/sdk/src/client.ts",
+    "positions": [],
+    "ends": [],
+    "names": []
+   },
+   {
+    "path": "packages/sdk/src/commands/command.ts",
+    "positions": [
+     [
+      28,
+      11
+     ]
+    ],
+    "ends": [],
+    "names": [
+     ""
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "definitionConsistency",
+  "path": "packages/sdk/src/commands/command.ts",
+  "line": 28,
+  "character": 11,
+  "extra": "from:packages/sdk/src/commands/command.ts:26:15"
+ },
+ "ops": [],
+ "case": {
+  "loc": [
+   "packages/sdk/src/commands/command.ts",
+   28,
+   8,
+   28,
+   14
+  ],
+  "sub": "d",
+  "target": [
+   "packages/sdk/src/commands/command.ts",
+   26,
+   15
+  ]
+ },
+ "shape": "definitionConsistency:changed",
+ "signature": "ts7|r3_routes|definitionConsistency:changed",
+ "expected": [
+  [
+   "packages/sdk/src/http/types.ts",
+   60,
+   2,
+   60,
+   8
+  ]
+ ],
+ "actual": [
+  [
+   "packages/sdk/src/commands/command.ts",
+   26,
+   12,
+   26,
+   18
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "flake 3/3 [r1:SCR r2:SCR r3:SCR] in 145s",
+ "violation": {
+  "oracle": "r3_routes",
+  "server": "ts7-7.0.2",
+  "project": "upstash/context7@6477e43e31d2",
+  "key": {
+   "method": "definitionConsistency",
+   "path": "packages/sdk/src/commands/command.ts",
+   "line": 28,
+   "character": 11,
+   "extra": "from:packages/sdk/src/commands/command.ts:26:15"
+  },
+  "expected": [
+   [
+    "packages/sdk/src/http/types.ts",
+    60,
+    2,
+    60,
+    8
+   ]
+  ],
+  "actual": [
+   [
+    "packages/sdk/src/commands/command.ts",
+    26,
+    12,
+    26,
+    18
+   ]
+  ],
+  "ops": [],
+  "detail": "{\"case\": {\"loc\": [\"packages/sdk/src/commands/command.ts\", 28, 8, 28, 14], \"sub\": \"d\", \"target\": [\"packages/sdk/src/commands/command.ts\", 26, 15]}, \"note\": \"flake 3/3 [r1:SCR r2:SCR r3:SCR] in 145s\", \"shape\": \"definitionConsistency:changed\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "ts7|r3_routes|definitionConsistency:changed",
+  "run_id": "08daa748dcca"
+ },
+ "replay_logs": [
+  "logs/ts7-7.0.2-tra42b32-r3-replay-baseline-20260925-154708-95a6c8.jsonl.gz",
+  "logs/ts7-7.0.2-tra42b32-r3-replay-control-20260925-154718-f06443.jsonl.gz"
+ ],
+ "project_files": {},
+ "group": "ts7-r3-definitionconsistency-changed-d-a42b32",
+ "reduced": true
+}

@@ -1,0 +1,3 @@
+2026-09-24 05:31:55,248 INFO campaign_run run 422d230f1348: r1_history on rust-analyzer 2026-09-21, alacritty/alacritty@d692748d3f61 seed 1 settled, targets ['alacritty/src/config/monitor.rs', 'alacritty_terminal/src/term/mod.rs', 'alacritty_terminal/src/tty/unix.rs']
+2026-09-24 05:42:07,747 INFO campaign_run run 422d230f1348: 0 candidate(s) in 613s; confirming
+2026-09-24 05:42:07,748 INFO campaign_run run 422d230f1348 finished: ok, 0 confirmed of 0 candidate(s), 613s

@@ -1,0 +1,537 @@
+{
+ "format": 1,
+ "campaign": "main_v2",
+ "vid": "eea1fa5c526e-v00",
+ "run_id": "eea1fa5c526e",
+ "oracle": "r1_history",
+ "server": {
+  "kind": "gopls",
+  "version": "v0.23.0"
+ },
+ "project": {
+  "name": "labstack/echo@3d084be90224",
+  "source": "corpus",
+  "ref": "temp/corpus/labstack__echo@3d084be90224",
+  "commit": "3d084be9022432c5a5257924c7d74bfc3444b456",
+  "language": "go"
+ },
+ "context": {
+  "seed": 3,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "bind.go",
+    "positions": [
+     [
+      39,
+      29
+     ],
+     [
+      43,
+      40
+     ],
+     [
+      98,
+      14
+     ],
+     [
+      123,
+      55
+     ],
+     [
+      360,
+      43
+     ],
+     [
+      368,
+      17
+     ],
+     [
+      405,
+      8
+     ],
+     [
+      423,
+      10
+     ],
+     [
+      445,
+      49
+     ],
+     [
+      478,
+      5
+     ],
+     [
+      504,
+      15
+     ],
+     [
+      517,
+      18
+     ]
+    ],
+    "ends": [
+     [
+      39,
+      32
+     ],
+     [
+      43,
+      42
+     ],
+     [
+      98,
+      23
+     ],
+     [
+      123,
+      58
+     ],
+     [
+      360,
+      45
+     ],
+     [
+      368,
+      21
+     ],
+     [
+      405,
+      13
+     ],
+     [
+      423,
+      12
+     ],
+     [
+      445,
+      51
+     ],
+     [
+      478,
+      7
+     ],
+     [
+      504,
+      25
+     ],
+     [
+      517,
+      32
+     ]
+    ],
+    "names": [
+     "string",
+     "any",
+     "MIMEMultipartForm",
+     "error",
+     "Kind",
+     "Pointer",
+     "valueKind",
+     "Set",
+     "val",
+     "err",
+     "isFieldMultipartFile",
+     "setMultipartFileHeaderTypes"
+    ]
+   },
+   {
+    "path": "bind_test.go",
+    "positions": [
+     [
+      202,
+      7
+     ],
+     [
+      393,
+      19
+     ],
+     [
+      413,
+      37
+     ],
+     [
+      527,
+      24
+     ],
+     [
+      786,
+      6
+     ],
+     [
+      905,
+      22
+     ],
+     [
+      908,
+      47
+     ],
+     [
+      1026,
+      23
+     ],
+     [
+      1113,
+      4
+     ],
+     [
+      1350,
+      3
+     ],
+     [
+      1566,
+      11
+     ],
+     [
+      1578,
+      29
+     ]
+    ],
+    "ends": [
+     [
+      202,
+      13
+     ],
+     [
+      393,
+      22
+     ],
+     [
+      413,
+      42
+     ],
+     [
+      527,
+      28
+     ],
+     [
+      786,
+      9
+     ],
+     [
+      905,
+      23
+     ],
+     [
+      908,
+      48
+     ],
+     [
+      1026,
+      25
+     ],
+     [
+      1113,
+      6
+     ],
+     [
+      1350,
+      5
+     ],
+     [
+      1566,
+      15
+     ],
+     [
+      1578,
+      31
+     ]
+    ],
+    "names": [
+     "testBindOkay",
+     "result",
+     "MethodGet",
+     "bindData",
+     "expect",
+     "t",
+     "tc",
+     "http",
+     "req",
+     "err",
+     "NoError",
+     "file"
+    ]
+   },
+   {
+    "path": "renderer.go",
+    "positions": [
+     [
+      8,
+      9
+     ],
+     [
+      9,
+      14
+     ],
+     [
+      9,
+      56
+     ],
+     [
+      22,
+      13
+     ],
+     [
+      24,
+      22
+     ],
+     [
+      24,
+      47
+     ],
+     [
+      24,
+      51
+     ],
+     [
+      29,
+      61
+     ],
+     [
+      29,
+      74
+     ],
+     [
+      30,
+      8
+     ],
+     [
+      30,
+      35
+     ],
+     [
+      30,
+      40
+     ]
+    ],
+    "ends": [
+     [
+      8,
+      13
+     ],
+     [
+      9,
+      18
+     ],
+     [
+      9,
+      58
+     ],
+     [
+      22,
+      21
+     ],
+     [
+      24,
+      23
+     ],
+     [
+      24,
+      49
+     ],
+     [
+      24,
+      53
+     ],
+     [
+      29,
+      63
+     ],
+     [
+      29,
+      76
+     ],
+     [
+      30,
+      9
+     ],
+     [
+      30,
+      36
+     ],
+     [
+      30,
+      42
+     ]
+    ],
+    "names": [
+     "Renderer",
+     "Context",
+     "data",
+     "TemplateRenderer",
+     "io",
+     "data",
+     "any",
+     "name",
+     "data",
+     "t",
+     "w",
+     "name"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "completion",
+  "path": "bind.go",
+  "line": 39,
+  "character": 32,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "bind.go"
+  },
+  {
+   "kind": "open",
+   "path": "bind_test.go"
+  },
+  {
+   "kind": "open",
+   "path": "renderer.go"
+  },
+  {
+   "kind": "open",
+   "path": "echo_test.go"
+  },
+  {
+   "kind": "change",
+   "path": "echo_test.go",
+   "start": [
+    689,
+    2
+   ],
+   "end": [
+    689,
+    2
+   ],
+   "text": "0"
+  },
+  {
+   "kind": "change",
+   "path": "echo_test.go",
+   "start": [
+    689,
+    2
+   ],
+   "end": [
+    689,
+    3
+   ]
+  },
+  {
+   "kind": "close",
+   "path": "echo_test.go"
+  }
+ ],
+ "case": {
+  "chain_step": 0,
+  "families": [],
+  "family": "H6",
+  "history_index": 1,
+  "history_seed": 3002,
+  "mode": "fresh",
+  "note": "dep-editor round trip on echo_test.go: insert '0' on line 689",
+  "seed": 3,
+  "timing": "settled"
+ },
+ "shape": "completion:missing",
+ "signature": "gopls|r1_history|completion:missing",
+ "expected": [
+  "fmt.GoStringer",
+  "fmt.Stringer",
+  "reflect.StringHeader",
+  "string",
+  "strings"
+ ],
+ "actual": [
+  "string",
+  "strings"
+ ],
+ "reproduced": "0/3",
+ "note": "H6: dep-editor round trip on echo_test.go: insert '0' on line 689; flake 0/3 [r1:SCr r2:SCr r3:SCr] in 96s",
+ "violation": {
+  "oracle": "r1_history",
+  "server": "gopls-v0.23.0",
+  "project": "labstack/echo@3d084be90224",
+  "key": {
+   "method": "completion",
+   "path": "bind.go",
+   "line": 39,
+   "character": 32,
+   "extra": ""
+  },
+  "expected": [
+   "fmt.GoStringer",
+   "fmt.Stringer",
+   "reflect.StringHeader",
+   "string",
+   "strings"
+  ],
+  "actual": [
+   "string",
+   "strings"
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "bind.go"
+   },
+   {
+    "kind": "open",
+    "path": "bind_test.go"
+   },
+   {
+    "kind": "open",
+    "path": "renderer.go"
+   },
+   {
+    "kind": "open",
+    "path": "echo_test.go"
+   },
+   {
+    "kind": "change",
+    "path": "echo_test.go",
+    "start": [
+     689,
+     2
+    ],
+    "end": [
+     689,
+     2
+    ],
+    "text": "0"
+   },
+   {
+    "kind": "change",
+    "path": "echo_test.go",
+    "start": [
+     689,
+     2
+    ],
+    "end": [
+     689,
+     3
+    ]
+   },
+   {
+    "kind": "close",
+    "path": "echo_test.go"
+   }
+  ],
+  "detail": "{\"case\": {\"chain_step\": 0, \"families\": [], \"family\": \"H6\", \"history_index\": 1, \"history_seed\": 3002, \"mode\": \"fresh\", \"note\": \"dep-editor round trip on echo_test.go: insert '0' on line 689\", \"seed\": 3, \"timing\": \"settled\"}, \"note\": \"H6: dep-editor round trip on echo_test.go: insert '0' on line 689; flake 0/3 [r1:SCr r2:SCr r3:SCr] in 96s\", \"shape\": \"completion:missing\"}",
+  "reproduced": "0/3",
+  "reduced_ops": [],
+  "signature": "gopls|r1_history|completion:missing",
+  "run_id": "eea1fa5c526e"
+ },
+ "replay_logs": [],
+ "project_files": {},
+ "incomplete": false
+}

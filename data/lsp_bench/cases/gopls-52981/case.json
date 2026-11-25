@@ -1,0 +1,89 @@
+{
+ "schema": 1,
+ "id": "gopls-52981",
+ "meta": {
+  "server": "gopls",
+  "kind": "gopls",
+  "number": 52981,
+  "url": "https://github.com/golang/go/issues/52981",
+  "title": "x/tools/gopls: metadata is not invalidated by fixing import syntax",
+  "oracle_class": "R1",
+  "subtype": "typing",
+  "fix_ref": "golang/tools@ccb10502d1a5 (internal/lsp/cache: invalidate metadata when parsing issues resolve; CL 407501)",
+  "fix_shas": [
+   "ccb10502d1a5c404de12649bc783a8f25bac5c5d"
+  ],
+  "pre_version": "v0.8.4",
+  "post_version": "v0.9.0",
+  "pre_build": "v0.8.4",
+  "post_build": "v0.9.0",
+  "build_notes": "go install golang.org/x/tools/gopls@<version> with the local Go (go1.27.1), which builds both; the server runs the local go command. v0.8.4 was tagged 2022-05-13, the fix merged 2022-05-23, v0.9.0 was tagged 2022-06-30.",
+  "candidate_rank": 25,
+  "effort_minutes": 10,
+  "notes": "Before the fix, gopls re-ran go list only when the parsed imports changed; an import block that went from unparseable to parseable left the package graph computed while the block was broken (without embed), so the importer reported 'could not import embed'."
+ },
+ "language": "go",
+ "settings": {},
+ "settings_note": "The issue names no settings.",
+ "session": {
+  "settle_timeout_s": 180
+ },
+ "files": [
+  {
+   "path": "main.go",
+   "provenance": "issue-adapted",
+   "source": "issue body, first code block (the import block typed so far)",
+   "note": "the unterminated import block verbatim (two-space indent, the empty line the cursor is on) after an added package clause 'package p' and a blank line; the issue shows only the import declaration"
+  },
+  {
+   "path": "go.mod",
+   "provenance": "scaffold",
+   "source": "",
+   "note": "module path and the go directive of the era (Go 1.18, May 2022); embed is a standard-library package"
+  }
+ ],
+ "repro": {
+  "attempt": 1,
+  "timing": "settled",
+  "steps": "Open main.go, whose import block is not closed yet ('import (' and '_ \"embed\"', then the empty line the cursor is on). Type the closing ')' on that line (line 4, character 0). Reported: the error 'could not import embed (no required module provides package \"embed\")' appears, because gopls keeps the package graph it computed while the import block did not parse. Probe: the diagnostics of main.go after typing are compared with a fresh session on the final text and a fresh control.",
+  "ops": [
+   {
+    "kind": "open",
+    "path": "main.go"
+   },
+   {
+    "kind": "change",
+    "path": "main.go",
+    "start": [
+     4,
+     0
+    ],
+    "end": [
+     4,
+     0
+    ],
+    "text": ")"
+   }
+  ],
+  "probe": {
+   "type": "differs_from_fresh",
+   "params": {
+    "queries": [
+     {
+      "method": "diagnostics",
+      "path": "main.go"
+     }
+    ]
+   }
+  }
+ },
+ "attempts": [
+  {
+   "attempt": 1,
+   "timing": "settled",
+   "probe": "differs_from_fresh",
+   "summary": "First run of this attempt (2026-09-23T08:41): pre v0.8.4 present 3/3 (the case session keeps 'could not import embed (no required module provides package \"embed\")', the fresh session has none), post v0.9.0 present 3/3 only because the fresh session had no publishDiagnostics for main.go at all (answer None) while the case session had an empty publish ([]): gopls before v0.9.2 does not publish for a clean file on open. The harness then treated None and [] as different (verdict still-present-post, a harness artifact). The driver now answers [] for a push document without a publish after settling; the same case revision was rerun unchanged.",
+   "verdict": "still-present-post (harness artifact: no publish vs empty publish)"
+  }
+ ]
+}

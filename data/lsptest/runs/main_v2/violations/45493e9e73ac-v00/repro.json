@@ -1,0 +1,466 @@
+{
+ "format": 1,
+ "campaign": "main_v2",
+ "vid": "45493e9e73ac-v00",
+ "run_id": "45493e9e73ac",
+ "oracle": "r3_routes",
+ "server": {
+  "kind": "ts7",
+  "version": "7.0.2"
+ },
+ "project": {
+  "name": "DayuanJiang/next-ai-draw-io@58b73ef761d8",
+  "source": "corpus",
+  "ref": "temp/corpus/DayuanJiang__next-ai-draw-io@58b73ef761d8",
+  "commit": "58b73ef761d8a5e5b2afa2c360428d3dea996312",
+  "language": "typescript"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "app/api/validate-diagram/route.ts",
+    "positions": [
+     [
+      31,
+      36
+     ],
+     [
+      31,
+      49
+     ],
+     [
+      36,
+      55
+     ],
+     [
+      45,
+      35
+     ],
+     [
+      49,
+      21
+     ],
+     [
+      53,
+      57
+     ],
+     [
+      66,
+      17
+     ],
+     [
+      68,
+      23
+     ],
+     [
+      84,
+      30
+     ],
+     [
+      98,
+      32
+     ],
+     [
+      126,
+      15
+     ],
+     [
+      129,
+      39
+     ]
+    ],
+    "ends": [
+     [
+      31,
+      39
+     ],
+     [
+      31,
+      57
+     ],
+     [
+      36,
+      60
+     ],
+     [
+      45,
+      39
+     ],
+     [
+      49,
+      29
+     ],
+     [
+      53,
+      59
+     ],
+     [
+      66,
+      22
+     ],
+     [
+      68,
+      27
+     ],
+     [
+      84,
+      42
+     ],
+     [
+      98,
+      44
+     ],
+     [
+      126,
+      18
+     ],
+     [
+      129,
+      42
+     ]
+    ],
+    "names": [
+     "result",
+     "ValidationResult",
+     "stringify",
+     "Request",
+     "enableValidation",
+     "json",
+     "imageData",
+     "Response",
+     "createStreamingResponse",
+     "VALIDATION_SYSTEM_PROMPT",
+     "error",
+     "error"
+    ]
+   },
+   {
+    "path": "lib/server-model-config.ts",
+    "positions": [
+     [
+      2,
+      15
+     ],
+     [
+      6,
+      22
+     ],
+     [
+      6,
+      38
+     ],
+     [
+      20,
+      28
+     ],
+     [
+      21,
+      13
+     ],
+     [
+      23,
+      9
+     ],
+     [
+      74,
+      14
+     ],
+     [
+      92,
+      28
+     ],
+     [
+      96,
+      18
+     ],
+     [
+      187,
+      61
+     ],
+     [
+      197,
+      18
+     ],
+     [
+      236,
+      42
+     ]
+    ],
+    "ends": [
+     [
+      2,
+      17
+     ],
+     [
+      6,
+      31
+     ],
+     [
+      6,
+      42
+     ],
+     [
+      20,
+      30
+     ],
+     [
+      21,
+      17
+     ],
+     [
+      23,
+      14
+     ],
+     [
+      74,
+      19
+     ],
+     [
+      92,
+      29
+     ],
+     [
+      96,
+      21
+     ],
+     [
+      187,
+      67
+     ],
+     [
+      197,
+      22
+     ],
+     [
+      236,
+      46
+     ]
+    ],
+    "names": [
+     "from",
+     "ProviderNameSchema",
+     "ZodType",
+     "min",
+     "optional",
+     "baseUrlEnv",
+     "aiProvider",
+     "s",
+     "length",
+     "ProviderName",
+     "nameSlug",
+     "modelId"
+    ]
+   },
+   {
+    "path": "lib/types/model-config.ts",
+    "positions": [
+     [
+      30,
+      5
+     ],
+     [
+      70,
+      7
+     ],
+     [
+      131,
+      8
+     ],
+     [
+      146,
+      10
+     ],
+     [
+      169,
+      7
+     ],
+     [
+      231,
+      8
+     ],
+     [
+      451,
+      6
+     ],
+     [
+      470,
+      53
+     ],
+     [
+      470,
+      69
+     ],
+     [
+      475,
+      35
+     ],
+     [
+      484,
+      9
+     ],
+     [
+      501,
+      34
+     ]
+    ],
+    "ends": [
+     [
+      30,
+      6
+     ],
+     [
+      70,
+      11
+     ],
+     [
+      131,
+      13
+     ],
+     [
+      146,
+      13
+     ],
+     [
+      169,
+      11
+     ],
+     [
+      231,
+      13
+     ],
+     [
+      451,
+      8
+     ],
+     [
+      470,
+      59
+     ],
+     [
+      470,
+      76
+     ],
+     [
+      475,
+      39
+     ],
+     [
+      484,
+      10
+     ],
+     [
+      501,
+      38
+     ]
+    ],
+    "names": [
+     "id",
+     "baseUrl",
+     "anthropic",
+     "label",
+     "gateway",
+     "anthropic",
+     "mimo",
+     "ProviderName",
+     "ProviderConfig",
+     "provider",
+     "id",
+     "modelId"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "definitionConsistency",
+  "path": "components/chat/TemplatePanel.tsx",
+  "line": 217,
+  "character": 34,
+  "extra": "from:app/api/validate-diagram/route.ts:36:55"
+ },
+ "ops": [],
+ "case": {
+  "loc": [
+   "components/chat/TemplatePanel.tsx",
+   217,
+   30,
+   217,
+   39
+  ],
+  "sub": "d",
+  "target": [
+   "app/api/validate-diagram/route.ts",
+   36,
+   55
+  ]
+ },
+ "shape": "definitionConsistency:changed",
+ "signature": "ts7|r3_routes|definitionConsistency:changed",
+ "expected": [
+  [
+   "temp/lsp_servers/ts7-7.0.2/node_modules/@typescript/typescript-darwin-arm64/lib/lib.es5.d.ts",
+   1168,
+   4,
+   1168,
+   13
+  ]
+ ],
+ "actual": [
+  [
+   "temp/lsp_servers/ts7-7.0.2/node_modules/@typescript/typescript-darwin-arm64/lib/lib.es5.d.ts",
+   1176,
+   4,
+   1176,
+   13
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "flake 3/3 [r1:SCR r2:SCR r3:SCR] in 282s",
+ "violation": {
+  "oracle": "r3_routes",
+  "server": "ts7-7.0.2",
+  "project": "DayuanJiang/next-ai-draw-io@58b73ef761d8",
+  "key": {
+   "method": "definitionConsistency",
+   "path": "components/chat/TemplatePanel.tsx",
+   "line": 217,
+   "character": 34,
+   "extra": "from:app/api/validate-diagram/route.ts:36:55"
+  },
+  "expected": [
+   [
+    "temp/lsp_servers/ts7-7.0.2/node_modules/@typescript/typescript-darwin-arm64/lib/lib.es5.d.ts",
+    1168,
+    4,
+    1168,
+    13
+   ]
+  ],
+  "actual": [
+   [
+    "temp/lsp_servers/ts7-7.0.2/node_modules/@typescript/typescript-darwin-arm64/lib/lib.es5.d.ts",
+    1176,
+    4,
+    1176,
+    13
+   ]
+  ],
+  "ops": [],
+  "detail": "{\"case\": {\"loc\": [\"components/chat/TemplatePanel.tsx\", 217, 30, 217, 39], \"sub\": \"d\", \"target\": [\"app/api/validate-diagram/route.ts\", 36, 55]}, \"note\": \"flake 3/3 [r1:SCR r2:SCR r3:SCR] in 282s\", \"shape\": \"definitionConsistency:changed\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "ts7|r3_routes|definitionConsistency:changed",
+  "run_id": "45493e9e73ac"
+ },
+ "replay_logs": [
+  "logs/ts7-7.0.2-45493e9e73ac-r3-replay-baseline-20261118-083208-fee5f4.jsonl.gz",
+  "logs/ts7-7.0.2-45493e9e73ac-r3-replay-control-20261118-083301-d2e92e.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

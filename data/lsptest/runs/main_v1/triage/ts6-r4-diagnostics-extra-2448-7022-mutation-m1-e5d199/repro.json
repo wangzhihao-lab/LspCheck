@@ -1,0 +1,290 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "3ee57b1ff483-v00",
+ "run_id": "3ee57b1ff483",
+ "oracle": "r4_edits",
+ "server": {
+  "kind": "ts6",
+  "version": "6.0.3"
+ },
+ "project": {
+  "name": "modelcontextprotocol/servers@f46d9578190b",
+  "source": "corpus",
+  "ref": "temp/corpus/modelcontextprotocol__servers@f46d9578190b",
+  "commit": "f46d9578190b476b3501923ea8977d899e8db2cb",
+  "language": "typescript"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "src/everything/prompts/resource.ts",
+    "positions": [
+     [
+      69,
+      12
+     ]
+    ],
+    "ends": [],
+    "names": [
+     ""
+    ]
+   },
+   {
+    "path": "src/everything/prompts/simple.ts",
+    "positions": [],
+    "ends": [],
+    "names": []
+   },
+   {
+    "path": "src/sequentialthinking/__tests__/input-schema.test.ts",
+    "positions": [],
+    "ends": [],
+    "names": []
+   }
+  ]
+ },
+ "key": {
+  "method": "diagnostics",
+  "path": "src/everything/prompts/resource.ts",
+  "line": 69,
+  "character": 12,
+  "extra": "M1:quickfix-errors:Change spelling to 'resource'"
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "src/everything/prompts/resource.ts"
+  },
+  {
+   "kind": "change",
+   "path": "src/everything/prompts/resource.ts",
+   "start": [
+    9,
+    2
+   ],
+   "end": [
+    10,
+    2
+   ]
+  },
+  {
+   "kind": "change",
+   "path": "src/everything/prompts/resource.ts",
+   "start": [
+    69,
+    12
+   ],
+   "end": [
+    69,
+    17
+   ],
+   "text": "r"
+  }
+ ],
+ "case": {
+  "action_kind": "quickfix",
+  "base_errors": 0,
+  "check": "errors",
+  "diag": {
+   "code": 2552,
+   "message": "Cannot find name 'blobResource'. Did you mean 'resource'?",
+   "range": {
+    "end": {
+     "character": 24,
+     "line": 69
+    },
+    "start": {
+     "character": 12,
+     "line": 69
+    }
+   },
+   "severity": 1
+  },
+  "fix_introduced_errors": [
+   {
+    "code": 7022,
+    "message": "'resource' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.",
+    "path": "src/everything/prompts/resource.ts",
+    "range": {
+     "end": {
+      "character": 20,
+      "line": 66
+     },
+     "start": {
+      "character": 12,
+      "line": 66
+     }
+    },
+    "severity": 1
+   },
+   {
+    "code": 2448,
+    "message": "Block-scoped variable 'resource' used before its declaration.",
+    "path": "src/everything/prompts/resource.ts",
+    "range": {
+     "end": {
+      "character": 20,
+      "line": 69
+     },
+     "start": {
+      "character": 12,
+      "line": 69
+     }
+    },
+    "severity": 1
+   }
+  ],
+  "fix_ops": [
+   {
+    "end": [
+     69,
+     17
+    ],
+    "kind": "change",
+    "path": "src/everything/prompts/resource.ts",
+    "start": [
+     69,
+     12
+    ],
+    "text": "r"
+   }
+  ],
+  "kind": "mutation",
+  "mutation": {
+   "end": [
+    10,
+    2
+   ],
+   "id": "M1",
+   "offsets": [
+    236,
+    252
+   ],
+   "sha": "95c4ff2b04eb203e",
+   "start": [
+    9,
+    2
+   ],
+   "text": "",
+   "what": "remove 'blobResource' from an import"
+  },
+  "n_fix_ops": 1,
+  "path": "src/everything/prompts/resource.ts",
+  "post_errors": 2,
+  "title": "Change spelling to 'resource'",
+  "via": "edit"
+ },
+ "shape": "diagnostics:extra:2448,7022",
+ "signature": "ts6|r4_edits|diagnostics:extra:2448,7022",
+ "expected": [],
+ "actual": [
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "2448",
+   "typescript",
+   "Block-scoped variable 'resource' used before its declaration."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7022",
+   "typescript",
+   "'resource' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer."
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "quick fix \"Change spelling to 'resource'\" for 2552 at src/everything/prompts/resource.ts:70:13 raises the error count in the edited files from 0 to 2 (seeded by M1: remove 'blobResource' from an import; errors before the mutation 0, after the fix 2); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 119s",
+ "violation": {
+  "oracle": "r4_edits",
+  "server": "ts6-6.0.3",
+  "project": "modelcontextprotocol/servers@f46d9578190b",
+  "key": {
+   "method": "diagnostics",
+   "path": "src/everything/prompts/resource.ts",
+   "line": 69,
+   "character": 12,
+   "extra": "M1:quickfix-errors:Change spelling to 'resource'"
+  },
+  "expected": [],
+  "actual": [
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2448",
+    "typescript",
+    "Block-scoped variable 'resource' used before its declaration."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7022",
+    "typescript",
+    "'resource' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer."
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "src/everything/prompts/resource.ts"
+   },
+   {
+    "kind": "change",
+    "path": "src/everything/prompts/resource.ts",
+    "start": [
+     9,
+     2
+    ],
+    "end": [
+     10,
+     2
+    ]
+   },
+   {
+    "kind": "change",
+    "path": "src/everything/prompts/resource.ts",
+    "start": [
+     69,
+     12
+    ],
+    "end": [
+     69,
+     17
+    ],
+    "text": "r"
+   }
+  ],
+  "detail": "{\"case\": {\"action_kind\": \"quickfix\", \"base_errors\": 0, \"check\": \"errors\", \"diag\": {\"code\": 2552, \"message\": \"Cannot find name 'blobResource'. Did you mean 'resource'?\", \"range\": {\"end\": {\"character\": 24, \"line\": 69}, \"start\": {\"character\": 12, \"line\": 69}}, \"severity\": 1}, \"fix_introduced_errors\": [{\"code\": 7022, \"message\": \"'resource' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.\", \"path\": \"src/everything/prompts/resource.ts\", \"range\": {\"end\": {\"character\": 20, \"line\": 66}, \"start\": {\"character\": 12, \"line\": 66}}, \"severity\": 1}, {\"code\": 2448, \"message\": \"Block-scoped variable 'resource' used before its declaration.\", \"path\": \"src/everything/prompts/resource.ts\", \"range\": {\"end\": {\"character\": 20, \"line\": 69}, \"start\": {\"character\": 12, \"line\": 69}}, \"severity\": 1}], \"fix_ops\": [{\"end\": [69, 17], \"kind\": \"change\", \"path\": \"src/everything/prompts/resource.ts\", \"start\": [69, 12], \"text\": \"r\"}], \"kind\": \"mutation\", \"mutation\": {\"end\": [10, 2], \"id\": \"M1\", \"offsets\": [236, 252], \"sha\": \"95c4ff2b04eb203e\", \"start\": [9, 2], \"text\": \"\", \"what\": \"remove 'blobResource' from an import\"}, \"n_fix_ops\": 1, \"path\": \"src/everything/prompts/resource.ts\", \"post_errors\": 2, \"title\": \"Change spelling to 'resource'\", \"via\": \"edit\"}, \"note\": \"quick fix \\\"Change spelling to 'resource'\\\" for 2552 at src/everything/prompts/resource.ts:70:13 raises the error count in the edited files from 0 to 2 (seeded by M1: remove 'blobResource' from an import; errors before the mutation 0, after the fix 2); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 119s\", \"shape\": \"diagnostics:extra:2448,7022\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "ts6|r4_edits|diagnostics:extra:2448,7022",
+  "run_id": "3ee57b1ff483"
+ },
+ "replay_logs": [
+  "logs/ts6-6.0.3-tre5d199-r4-replay-baseline-20260925-191348-3e20c1.jsonl.gz",
+  "logs/ts6-6.0.3-tre5d199-r4-replay-case-20260925-191339-2837d0.jsonl.gz",
+  "logs/ts6-6.0.3-tre5d199-r4-replay-control-20260925-191354-63d4e9.jsonl.gz"
+ ],
+ "project_files": {},
+ "group": "ts6-r4-diagnostics-extra-2448-7022-mutation-m1-e5d199",
+ "reduced": true
+}

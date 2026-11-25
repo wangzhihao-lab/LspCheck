@@ -1,0 +1,12 @@
+2026-11-18 10:13:53,838 INFO campaign_run run 11bbeaaa308c: r5_transforms on gopls v0.23.0, docker/compose@c6dffb26bdfd seed 1 settled, targets ['internal/tracing/mux.go', 'pkg/compose/model.go', 'pkg/watch/temp.go']
+2026-11-18 10:15:14,999 INFO campaign_run run 11bbeaaa308c: 3 candidate(s) in 81s; confirming
+2026-11-18 10:15:35,594 INFO flake replay 1/3 of gopls|r5_transforms|foldingRange:changed: settled=True control_stable=True reproduced=True (20.6s)
+2026-11-18 10:15:54,930 INFO flake replay 2/3 of gopls|r5_transforms|foldingRange:changed: settled=True control_stable=True reproduced=True (19.3s)
+2026-11-18 10:16:15,967 INFO flake replay 3/3 of gopls|r5_transforms|foldingRange:changed: settled=True control_stable=True reproduced=True (21.0s)
+2026-11-18 10:16:35,377 INFO flake replay 1/3 of gopls|r5_transforms|semanticTokens:changed: settled=True control_stable=True reproduced=True (19.4s)
+2026-11-18 10:16:57,012 INFO flake replay 2/3 of gopls|r5_transforms|semanticTokens:changed: settled=True control_stable=True reproduced=True (21.6s)
+2026-11-18 10:17:15,149 INFO flake replay 3/3 of gopls|r5_transforms|semanticTokens:changed: settled=True control_stable=True reproduced=True (18.1s)
+2026-11-18 10:17:35,637 INFO flake replay 1/3 of gopls|r5_transforms|completion:changed: settled=True control_stable=False reproduced=False (20.5s)
+2026-11-18 10:17:55,347 INFO flake replay 2/3 of gopls|r5_transforms|completion:changed: settled=True control_stable=False reproduced=False (19.7s)
+2026-11-18 10:18:14,237 INFO flake replay 3/3 of gopls|r5_transforms|completion:changed: settled=True control_stable=False reproduced=False (18.9s)
+2026-11-18 10:18:14,278 INFO campaign_run run 11bbeaaa308c finished: ok, 2 confirmed of 3 candidate(s), 260s

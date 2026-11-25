@@ -1,0 +1,4 @@
+$ scripts/lsptest/version_sweep.py main_v1 --label iso-ts6.0.3-tsls6.0.0 --map ts6=tsserver:6.0.3+tsls6.0.0 --only ts6-r1-diagnostics-extra-2304-h7-8ca52f --replays 3
+2026-09-27 05:41:06,602 INFO version_sweep group ts6-r1-diagnostics-extra-2304-h7-8ca52f (r1_history): ts6 6.0.3 -> tsserver 6.0.3+tsls6.0.0
+ts6-r1-diagnostics-extra-2304-h7-8ca52f: reproduced (3/3, 48.0s)
+sweep iso-ts6.0.3-tsls6.0.0: 1 group(s); reproduced 1; see data/lsptest/runs/main_v1/sweep/iso-ts6.0.3-tsls6.0.0/summary.md

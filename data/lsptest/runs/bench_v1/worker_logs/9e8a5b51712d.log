@@ -1,0 +1,3 @@
+2026-09-24 19:41:21,388 INFO campaign_run run 9e8a5b51712d: r5_transforms on rust-analyzer 2026-05-18, rust-analyzer-22281 seed 1 settled, targets ['src/main.rs']
+2026-09-24 19:42:03,278 INFO campaign_run run 9e8a5b51712d: 0 candidate(s) in 42s; confirming
+2026-09-24 19:42:03,279 INFO campaign_run run 9e8a5b51712d finished: ok, 0 confirmed of 0 candidate(s), 42s

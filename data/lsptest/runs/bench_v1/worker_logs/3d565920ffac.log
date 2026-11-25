@@ -1,0 +1,3 @@
+2026-09-24 17:14:19,277 INFO campaign_run run 3d565920ffac: r1_history on gopls v0.12.1, gopls-60435 seed 1 settled, targets ['main.go']
+2026-09-24 17:24:43,373 INFO campaign_run run 3d565920ffac: 0 candidate(s) in 624s; confirming
+2026-09-24 17:24:43,374 INFO campaign_run run 3d565920ffac finished: ok, 0 confirmed of 0 candidate(s), 624s

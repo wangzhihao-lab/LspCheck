@@ -1,0 +1,32 @@
+{
+ "vid": "74c1574f1393-v01",
+ "ops_before": 0,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 0,
+ "cache_hits": 0,
+ "reduce_seconds": 0.0,
+ "budget_exhausted": false,
+ "probe_log": [],
+ "logs": [
+  "gopls-v0.23.0-trf91fb9-r3-replay-baseline-20261119-000012-a77371.jsonl.gz",
+  "gopls-v0.23.0-trf91fb9-r3-replay-control-20261119-000023-cb5436.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [
+   [
+    "protocol/bridge/linkname_darwin.go",
+    3,
+    1,
+    3,
+    9
+   ]
+  ],
+  "actual": [
+   "error",
+   0
+  ]
+ },
+ "ops_after": 0,
+ "total_seconds": 90.5
+}

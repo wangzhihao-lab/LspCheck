@@ -1,0 +1,453 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "47aa0dcc1d51-v00",
+ "run_id": "47aa0dcc1d51",
+ "oracle": "r3_routes",
+ "server": {
+  "kind": "pyright",
+  "version": "1.1.414"
+ },
+ "project": {
+  "name": "TauricResearch/TradingAgents@2d17df8da153",
+  "source": "corpus",
+  "ref": "temp/corpus/TauricResearch__TradingAgents@2d17df8da153",
+  "commit": "2d17df8da1536c121e4d7395ac5a5dcec9e96d6f",
+  "language": "python"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "tests/test_date_boundaries.py",
+    "positions": [
+     [
+      9,
+      13
+     ],
+     [
+      10,
+      25
+     ],
+     [
+      14,
+      10
+     ],
+     [
+      22,
+      15
+     ],
+     [
+      22,
+      34
+     ],
+     [
+      29,
+      18
+     ],
+     [
+      29,
+      23
+     ],
+     [
+      43,
+      35
+     ],
+     [
+      55,
+      25
+     ],
+     [
+      56,
+      27
+     ],
+     [
+      57,
+      5
+     ],
+     [
+      59,
+      44
+     ]
+    ],
+    "ends": [
+     [
+      9,
+      20
+     ],
+     [
+      10,
+      30
+     ],
+     [
+      14,
+      12
+     ],
+     [
+      22,
+      19
+     ],
+     [
+      22,
+      36
+     ],
+     [
+      29,
+      21
+     ],
+     [
+      29,
+      25
+     ],
+     [
+      43,
+      37
+     ],
+     [
+      55,
+      26
+     ],
+     [
+      56,
+      30
+     ],
+     [
+      57,
+      6
+     ],
+     [
+      59,
+      45
+     ]
+    ],
+    "names": [
+     "tradingagents",
+     "dataflows",
+     "mark",
+     "history",
+     "end",
+     "index",
+     "idx",
+     "str",
+     "su",
+     "today",
+     "su",
+     "pd"
+    ]
+   },
+   {
+    "path": "tests/test_memory_log.py",
+    "positions": [
+     [
+      8,
+      49
+     ],
+     [
+      233,
+      9
+     ],
+     [
+      264,
+      11
+     ],
+     [
+      599,
+      13
+     ],
+     [
+      695,
+      19
+     ],
+     [
+      701,
+      26
+     ],
+     [
+      702,
+      16
+     ],
+     [
+      776,
+      18
+     ],
+     [
+      810,
+      11
+     ],
+     [
+      835,
+      38
+     ],
+     [
+      928,
+      13
+     ],
+     [
+      986,
+      25
+     ]
+    ],
+    "ends": [
+     [
+      8,
+      58
+     ],
+     [
+      233,
+      11
+     ],
+     [
+      264,
+      15
+     ],
+     [
+      599,
+      18
+     ],
+     [
+      695,
+      26
+     ],
+     [
+      701,
+      33
+     ],
+     [
+      702,
+      18
+     ],
+     [
+      776,
+      21
+     ],
+     [
+      810,
+      14
+     ],
+     [
+      835,
+      40
+     ],
+     [
+      928,
+      18
+     ],
+     [
+      986,
+      28
+     ]
+    ],
+    "names": [
+     "PortfolioDecision",
+     "log",
+     "pending",
+     "mock_graph",
+     "store_decision",
+     "_fetch_returns",
+     "len",
+     "state",
+     "result",
+     "self",
+     "mock_graph",
+     "graph"
+    ]
+   },
+   {
+    "path": "tradingagents/default_config.py",
+    "positions": [
+     [
+      2,
+      48
+     ],
+     [
+      42,
+      31
+     ],
+     [
+      43,
+      13
+     ],
+     [
+      51,
+      22
+     ],
+     [
+      52,
+      21
+     ],
+     [
+      54,
+      17
+     ],
+     [
+      55,
+      13
+     ],
+     [
+      58,
+      28
+     ],
+     [
+      72,
+      49
+     ],
+     [
+      73,
+      80
+     ],
+     [
+      75,
+      29
+     ],
+     [
+      75,
+      88
+     ]
+    ],
+    "ends": [
+     [
+      2,
+      53
+     ],
+     [
+      42,
+      33
+     ],
+     [
+      43,
+      18
+     ],
+     [
+      51,
+      27
+     ],
+     [
+      52,
+      24
+     ],
+     [
+      54,
+      20
+     ],
+     [
+      55,
+      16
+     ],
+     [
+      58,
+      31
+     ],
+     [
+      72,
+      50
+     ],
+     [
+      73,
+      90
+     ],
+     [
+      75,
+      32
+     ],
+     [
+      75,
+      98
+     ]
+    ],
+    "names": [
+     "expanduser",
+     "bool",
+     "normalized",
+     "reference",
+     "value",
+     "float",
+     "value",
+     "config",
+     "os",
+     "_TRADINGAGENTS_HOME",
+     "getenv",
+     "_TRADINGAGENTS_HOME"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "highlightVsReferences",
+  "path": "tests/test_date_boundaries.py",
+  "line": 14,
+  "character": 10,
+  "extra": ""
+ },
+ "ops": [],
+ "case": {
+  "path": "tests/test_date_boundaries.py",
+  "pos": [
+   14,
+   10
+  ],
+  "sub": "c"
+ },
+ "shape": "highlightVsReferences:gained",
+ "signature": "pyright|r3_routes|highlightVsReferences:gained",
+ "expected": [],
+ "actual": [
+  [
+   14,
+   8,
+   14,
+   12
+  ],
+  [
+   41,
+   8,
+   41,
+   12
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "0 references; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 35s",
+ "violation": {
+  "oracle": "r3_routes",
+  "server": "pyright-1.1.414",
+  "project": "TauricResearch/TradingAgents@2d17df8da153",
+  "key": {
+   "method": "highlightVsReferences",
+   "path": "tests/test_date_boundaries.py",
+   "line": 14,
+   "character": 10,
+   "extra": ""
+  },
+  "expected": [],
+  "actual": [
+   [
+    14,
+    8,
+    14,
+    12
+   ],
+   [
+    41,
+    8,
+    41,
+    12
+   ]
+  ],
+  "ops": [],
+  "detail": "{\"case\": {\"path\": \"tests/test_date_boundaries.py\", \"pos\": [14, 10], \"sub\": \"c\"}, \"note\": \"0 references; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 35s\", \"shape\": \"highlightVsReferences:gained\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "pyright|r3_routes|highlightVsReferences:gained",
+  "run_id": "47aa0dcc1d51"
+ },
+ "replay_logs": [
+  "logs/pyright-1.1.414-47aa0dcc1d51-r3-replay-baseline-20260923-161713-0048c0.jsonl.gz",
+  "logs/pyright-1.1.414-47aa0dcc1d51-r3-replay-control-20260923-161718-d42e13.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

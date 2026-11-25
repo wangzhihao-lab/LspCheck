@@ -1,0 +1,210 @@
+{
+ "format": 1,
+ "campaign": "bench_v1",
+ "vid": "004dc6fad33d-v01",
+ "run_id": "004dc6fad33d",
+ "oracle": "r5_transforms",
+ "server": {
+  "kind": "gopls",
+  "version": "v0.5.0"
+ },
+ "project": {
+  "name": "gopls-41057",
+  "source": "dir",
+  "ref": "data/lsp_bench/cases/gopls-41057/project",
+  "commit": "",
+  "language": "go"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 180.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 6,
+  "targets": [
+   {
+    "path": "main.go",
+    "positions": [
+     [
+      0,
+      10
+     ],
+     [
+      5,
+      7
+     ],
+     [
+      6,
+      4
+     ],
+     [
+      6,
+      7
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      12
+     ],
+     [
+      5,
+      10
+     ],
+     [
+      6,
+      5
+     ],
+     [
+      6,
+      9
+     ]
+    ],
+    "names": [
+     "main",
+     "Gronk",
+     "d",
+     "New"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "codeAction",
+  "path": "main.go",
+  "line": 6,
+  "character": 4,
+  "extra": "diag:6:9"
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "main.go"
+  },
+  {
+   "kind": "change",
+   "path": "main.go",
+   "start": [
+    6,
+    6
+   ],
+   "end": [
+    6,
+    6
+   ],
+   "text": "/* 注释🙂 */ "
+  }
+ ],
+ "case": {
+  "mapped_key": [
+   "codeAction",
+   "main.go",
+   6,
+   4,
+   "diag:6:20"
+  ],
+  "transform": {
+   "back": {
+    "col": 0,
+    "eof": [],
+    "line": -1,
+    "n": 0,
+    "path": "main.go",
+    "w": 0
+   },
+   "edits": [
+    [
+     6,
+     6,
+     6,
+     6,
+     "/* 注释🙂 */ "
+    ]
+   ],
+   "kind": "T6",
+   "path": "main.go",
+   "shift": {
+    "col": 6,
+    "eof": [],
+    "line": 6,
+    "n": 0,
+    "path": "main.go",
+    "w": 11
+   }
+  }
+ },
+ "shape": "codeAction:key-lost",
+ "signature": "gopls|r5_transforms|codeAction:key-lost",
+ "expected": [
+  [
+   "Extract to variable",
+   "refactor.extract"
+  ],
+  [
+   "Organize Imports",
+   "source.organizeImports"
+  ]
+ ],
+ "actual": [
+  "missing-key"
+ ],
+ "reproduced": "3/3",
+ "note": "T6 main.go: 1 edit(s), first [6, 6, 6, 6]; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 54s",
+ "violation": {
+  "oracle": "r5_transforms",
+  "server": "gopls-v0.5.0",
+  "project": "gopls-41057",
+  "key": {
+   "method": "codeAction",
+   "path": "main.go",
+   "line": 6,
+   "character": 4,
+   "extra": "diag:6:9"
+  },
+  "expected": [
+   [
+    "Extract to variable",
+    "refactor.extract"
+   ],
+   [
+    "Organize Imports",
+    "source.organizeImports"
+   ]
+  ],
+  "actual": [
+   "missing-key"
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "main.go"
+   },
+   {
+    "kind": "change",
+    "path": "main.go",
+    "start": [
+     6,
+     6
+    ],
+    "end": [
+     6,
+     6
+    ],
+    "text": "/* 注释🙂 */ "
+   }
+  ],
+  "detail": "{\"case\": {\"mapped_key\": [\"codeAction\", \"main.go\", 6, 4, \"diag:6:20\"], \"transform\": {\"back\": {\"col\": 0, \"eof\": [], \"line\": -1, \"n\": 0, \"path\": \"main.go\", \"w\": 0}, \"edits\": [[6, 6, 6, 6, \"/* \\u6ce8\\u91ca\\ud83d\\ude42 */ \"]], \"kind\": \"T6\", \"path\": \"main.go\", \"shift\": {\"col\": 6, \"eof\": [], \"line\": 6, \"n\": 0, \"path\": \"main.go\", \"w\": 11}}}, \"note\": \"T6 main.go: 1 edit(s), first [6, 6, 6, 6]; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 54s\", \"shape\": \"codeAction:key-lost\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "gopls|r5_transforms|codeAction:key-lost",
+  "run_id": "004dc6fad33d"
+ },
+ "replay_logs": [
+  "logs/gopls-v0.5.0-004dc6fad33d-r5-replay-baseline-20260924-221755-a5a011.jsonl.gz",
+  "logs/gopls-v0.5.0-004dc6fad33d-r5-replay-case-20260924-221807-6e49d8.jsonl.gz",
+  "logs/gopls-v0.5.0-004dc6fad33d-r5-replay-control-20260924-221801-963aee.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

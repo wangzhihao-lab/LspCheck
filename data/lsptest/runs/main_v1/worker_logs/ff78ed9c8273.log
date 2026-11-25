@@ -1,0 +1,6 @@
+2026-09-24 00:36:47,010 INFO campaign_run run ff78ed9c8273: r5_transforms on gopls v0.23.0, router-for-me/CLIProxyAPI@673131f57484 seed 2 settled, targets ['internal/api/handlers/management/quota.go', 'internal/runtime/executor/helps/claude_device_profile.go', 'sdk/cliproxy/auth/home_concurrency.go']
+2026-09-24 00:39:16,934 INFO campaign_run run ff78ed9c8273: 14 candidate(s) in 150s; confirming
+2026-09-24 00:40:01,087 INFO flake replay 1/3 of gopls|r5_transforms|completion:missing: settled=True control_stable=True reproduced=False (44.2s)
+2026-09-24 00:40:47,471 INFO flake replay 2/3 of gopls|r5_transforms|completion:missing: settled=True control_stable=True reproduced=False (46.4s)
+2026-09-24 00:41:28,262 INFO flake replay 3/3 of gopls|r5_transforms|completion:missing: settled=True control_stable=True reproduced=False (40.8s)
+2026-09-24 00:41:28,273 INFO campaign_run run ff78ed9c8273 finished: ok, 0 confirmed of 14 candidate(s), 281s

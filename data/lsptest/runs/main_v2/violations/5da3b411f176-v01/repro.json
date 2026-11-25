@@ -1,0 +1,646 @@
+{
+ "format": 1,
+ "campaign": "main_v2",
+ "vid": "5da3b411f176-v01",
+ "run_id": "5da3b411f176",
+ "oracle": "r4_edits",
+ "server": {
+  "kind": "ts6",
+  "version": "6.0.3"
+ },
+ "project": {
+  "name": "Gitlawb/openclaude@5cd11336caea",
+  "source": "corpus",
+  "ref": "temp/corpus/Gitlawb__openclaude@5cd11336caea",
+  "commit": "5cd11336caeaf2023ca1e02e5975c761cfc585fe",
+  "language": "typescript"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "src/context/repoMap/repoMap.test.ts",
+    "positions": [
+     [
+      27,
+      22
+     ],
+     [
+      57,
+      20
+     ],
+     [
+      199,
+      4
+     ],
+     [
+      260,
+      14
+     ],
+     [
+      273,
+      7
+     ],
+     [
+      382,
+      4
+     ],
+     [
+      409,
+      34
+     ],
+     [
+      495,
+      45
+     ],
+     [
+      725,
+      42
+     ],
+     [
+      741,
+      11
+     ],
+     [
+      808,
+      12
+     ],
+     [
+      809,
+      10
+     ]
+    ],
+    "ends": [
+     [
+      27,
+      35
+     ],
+     [
+      57,
+      36
+     ],
+     [
+      199,
+      6
+     ],
+     [
+      260,
+      16
+     ],
+     [
+      273,
+      10
+     ],
+     [
+      382,
+      8
+     ],
+     [
+      409,
+      35
+     ],
+     [
+      495,
+      47
+     ],
+     [
+      725,
+      44
+     ],
+     [
+      741,
+      13
+     ],
+     [
+      808,
+      19
+     ],
+     [
+      809,
+      12
+     ]
+    ],
+    "names": [
+     "clearSymbolExtractorCaches",
+     "setClaudeConfigHomeDirForTesting",
+     "test",
+     "tags",
+     "expect",
+     "describe",
+     "l",
+     "map",
+     "cwd",
+     "env",
+     "writeFileSync",
+     "join"
+    ]
+   },
+   {
+    "path": "src/utils/envFile.ts",
+    "positions": [
+     [
+      189,
+      30
+     ],
+     [
+      193,
+      29
+     ],
+     [
+      214,
+      15
+     ],
+     [
+      252,
+      35
+     ],
+     [
+      260,
+      21
+     ],
+     [
+      291,
+      14
+     ],
+     [
+      293,
+      12
+     ],
+     [
+      307,
+      21
+     ],
+     [
+      318,
+      5
+     ],
+     [
+      319,
+      6
+     ],
+     [
+      341,
+      25
+     ],
+     [
+      359,
+      21
+     ]
+    ],
+    "ends": [
+     [
+      189,
+      32
+     ],
+     [
+      193,
+      31
+     ],
+     [
+      214,
+      23
+     ],
+     [
+      252,
+      38
+     ],
+     [
+      260,
+      26
+     ],
+     [
+      291,
+      18
+     ],
+     [
+      293,
+      15
+     ],
+     [
+      307,
+      25
+     ],
+     [
+      318,
+      8
+     ],
+     [
+      319,
+      11
+     ],
+     [
+      341,
+      30
+     ],
+     [
+      359,
+      27
+     ]
+    ],
+    "names": [
+     "raw",
+     "raw",
+     "closingQuoteIdx",
+     "length",
+     "expression",
+     "nextArg",
+     "paths",
+     "filePath",
+     "values",
+     "targetEnv",
+     "ProcessEnv",
+     "loadEnvFile"
+    ]
+   },
+   {
+    "path": "src/utils/model/modelOptions.ts",
+    "positions": [
+     [
+      7,
+      4
+     ],
+     [
+      18,
+      19
+     ],
+     [
+      102,
+      13
+     ],
+     [
+      254,
+      39
+     ],
+     [
+      276,
+      71
+     ],
+     [
+      369,
+      6
+     ],
+     [
+      450,
+      8
+     ],
+     [
+      826,
+      13
+     ],
+     [
+      948,
+      20
+     ],
+     [
+      953,
+      21
+     ],
+     [
+      984,
+      28
+     ],
+     [
+      1031,
+      8
+     ]
+    ],
+    "ends": [
+     [
+      7,
+      6
+     ],
+     [
+      18,
+      30
+     ],
+     [
+      102,
+      15
+     ],
+     [
+      254,
+      42
+     ],
+     [
+      276,
+      82
+     ],
+     [
+      369,
+      9
+     ],
+     [
+      450,
+      11
+     ],
+     [
+      826,
+      19
+     ],
+     [
+      948,
+      21
+     ],
+     [
+      953,
+      24
+     ],
+     [
+      984,
+      32
+     ],
+     [
+      1031,
+      11
+     ]
+    ],
+    "names": [
+     "from",
+     "getModelPricingString",
+     "tail",
+     "opus48",
+     "getOpus46PricingSuffix",
+     "value",
+     "value",
+     "currentName",
+     "of",
+     "count",
+     "apiName",
+     "alias"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "diagnostics",
+  "path": "src/context/repoMap/repoMap.test.ts",
+  "line": 465,
+  "character": 41,
+  "extra": "M2:quickfix-errors:Remove unused declaration for: 'file'"
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "src/context/repoMap/repoMap.test.ts"
+  },
+  {
+   "kind": "change",
+   "path": "src/context/repoMap/repoMap.test.ts",
+   "start": [
+    465,
+    49
+   ],
+   "end": [
+    465,
+    53
+   ],
+   "text": "fie"
+  },
+  {
+   "kind": "change",
+   "path": "src/context/repoMap/repoMap.test.ts",
+   "start": [
+    465,
+    41
+   ],
+   "end": [
+    465,
+    45
+   ],
+   "text": "()"
+  }
+ ],
+ "case": {
+  "action_kind": "quickfix",
+  "base_errors": 2,
+  "check": "errors",
+  "diag": {
+   "code": 6133,
+   "message": "'file' is declared but its value is never read.",
+   "range": {
+    "end": {
+     "character": 45,
+     "line": 465
+    },
+    "start": {
+     "character": 41,
+     "line": 465
+    }
+   },
+   "severity": 4
+  },
+  "fix_introduced_errors": [],
+  "fix_ops": [
+   {
+    "end": [
+     465,
+     45
+    ],
+    "kind": "change",
+    "path": "src/context/repoMap/repoMap.test.ts",
+    "start": [
+     465,
+     41
+    ],
+    "text": "()"
+   }
+  ],
+  "kind": "mutation",
+  "mutation": {
+   "end": [
+    465,
+    53
+   ],
+   "id": "M2",
+   "offsets": [
+    13941,
+    13945
+   ],
+   "sha": "c56369aa99477b3f",
+   "start": [
+    465,
+    49
+   ],
+   "text": "fie",
+   "what": "misspell 'file' as 'fie' (drop a middle character)"
+  },
+  "n_fix_ops": 1,
+  "path": "src/context/repoMap/repoMap.test.ts",
+  "post_errors": 3,
+  "title": "Remove unused declaration for: 'file'",
+  "via": "edit"
+ },
+ "shape": "diagnostics:extra:2552",
+ "signature": "ts6|r4_edits|diagnostics:extra:2552",
+ "expected": [
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "2307",
+   "typescript",
+   "Cannot find module 'bun:test' or its corresponding type declarations."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "2339",
+   "typescript",
+   "Property 'dir' does not exist on type 'ImportMeta'."
+  ]
+ ],
+ "actual": [
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "2307",
+   "typescript",
+   "Cannot find module 'bun:test' or its corresponding type declarations."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "2339",
+   "typescript",
+   "Property 'dir' does not exist on type 'ImportMeta'."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "2552",
+   "typescript",
+   "Cannot find name 'fie'. Did you mean 'File'?"
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "quick fix \"Remove unused declaration for: 'file'\" for 6133 at src/context/repoMap/repoMap.test.ts:466:42 raises the error count in the edited files from 2 to 3 (seeded by M2: misspell 'file' as 'fie' (drop a middle character); errors before the mutation 2, after the fix 3); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 242s",
+ "violation": {
+  "oracle": "r4_edits",
+  "server": "ts6-6.0.3",
+  "project": "Gitlawb/openclaude@5cd11336caea",
+  "key": {
+   "method": "diagnostics",
+   "path": "src/context/repoMap/repoMap.test.ts",
+   "line": 465,
+   "character": 41,
+   "extra": "M2:quickfix-errors:Remove unused declaration for: 'file'"
+  },
+  "expected": [
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2307",
+    "typescript",
+    "Cannot find module 'bun:test' or its corresponding type declarations."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2339",
+    "typescript",
+    "Property 'dir' does not exist on type 'ImportMeta'."
+   ]
+  ],
+  "actual": [
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2307",
+    "typescript",
+    "Cannot find module 'bun:test' or its corresponding type declarations."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2339",
+    "typescript",
+    "Property 'dir' does not exist on type 'ImportMeta'."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2552",
+    "typescript",
+    "Cannot find name 'fie'. Did you mean 'File'?"
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "src/context/repoMap/repoMap.test.ts"
+   },
+   {
+    "kind": "change",
+    "path": "src/context/repoMap/repoMap.test.ts",
+    "start": [
+     465,
+     49
+    ],
+    "end": [
+     465,
+     53
+    ],
+    "text": "fie"
+   },
+   {
+    "kind": "change",
+    "path": "src/context/repoMap/repoMap.test.ts",
+    "start": [
+     465,
+     41
+    ],
+    "end": [
+     465,
+     45
+    ],
+    "text": "()"
+   }
+  ],
+  "detail": "{\"case\": {\"action_kind\": \"quickfix\", \"base_errors\": 2, \"check\": \"errors\", \"diag\": {\"code\": 6133, \"message\": \"'file' is declared but its value is never read.\", \"range\": {\"end\": {\"character\": 45, \"line\": 465}, \"start\": {\"character\": 41, \"line\": 465}}, \"severity\": 4}, \"fix_introduced_errors\": [], \"fix_ops\": [{\"end\": [465, 45], \"kind\": \"change\", \"path\": \"src/context/repoMap/repoMap.test.ts\", \"start\": [465, 41], \"text\": \"()\"}], \"kind\": \"mutation\", \"mutation\": {\"end\": [465, 53], \"id\": \"M2\", \"offsets\": [13941, 13945], \"sha\": \"c56369aa99477b3f\", \"start\": [465, 49], \"text\": \"fie\", \"what\": \"misspell 'file' as 'fie' (drop a middle character)\"}, \"n_fix_ops\": 1, \"path\": \"src/context/repoMap/repoMap.test.ts\", \"post_errors\": 3, \"title\": \"Remove unused declaration for: 'file'\", \"via\": \"edit\"}, \"note\": \"quick fix \\\"Remove unused declaration for: 'file'\\\" for 6133 at src/context/repoMap/repoMap.test.ts:466:42 raises the error count in the edited files from 2 to 3 (seeded by M2: misspell 'file' as 'fie' (drop a middle character); errors before the mutation 2, after the fix 3); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 242s\", \"shape\": \"diagnostics:extra:2552\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "ts6|r4_edits|diagnostics:extra:2552",
+  "run_id": "5da3b411f176"
+ },
+ "replay_logs": [
+  "logs/ts6-6.0.3-5da3b411f176-r4-replay-baseline-20261118-162215-425c3e.jsonl.gz",
+  "logs/ts6-6.0.3-5da3b411f176-r4-replay-case-20261118-162147-43579d.jsonl.gz",
+  "logs/ts6-6.0.3-5da3b411f176-r4-replay-control-20261118-162244-d17142.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

@@ -1,0 +1,3 @@
+2026-11-18 10:53:57,824 INFO campaign_run run b3ba712661cb: r1_history on ts7 7.0.2, mifi/lossless-cut@85cb95f6aeae seed 1 race200, targets ['src/common/util.ts', 'src/renderer/src/edlFormats.test.ts', 'src/renderer/src/worker/eval.ts']
+2026-11-18 11:00:32,078 INFO campaign_run run b3ba712661cb: 0 candidate(s) in 394s; confirming
+2026-11-18 11:00:32,079 INFO campaign_run run b3ba712661cb finished: ok, 0 confirmed of 0 candidate(s), 394s

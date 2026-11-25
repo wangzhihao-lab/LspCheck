@@ -1,0 +1,3 @@
+2026-11-18 19:19:31,259 INFO campaign_run run 14fc385b8c0f: r1_history on gopls v0.23.0, iawia002/lux@dd00f6d258d8 seed 3 settled, targets ['downloader/downloader.go', 'extractors/weibo/weibo_test.go', 'extractors/zingmp3/zingmp3.go']
+2026-11-18 19:27:38,143 INFO campaign_run run 14fc385b8c0f: 0 candidate(s) in 487s; confirming
+2026-11-18 19:27:38,144 INFO campaign_run run 14fc385b8c0f finished: ok, 0 confirmed of 0 candidate(s), 487s

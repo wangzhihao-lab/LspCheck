@@ -1,0 +1,218 @@
+{
+ "format": 1,
+ "campaign": "bench_v1",
+ "vid": "9c922ebba470-v04",
+ "run_id": "9c922ebba470",
+ "oracle": "r1_history",
+ "server": {
+  "kind": "tsserver",
+  "version": "5.5.4+tsls4.3.3"
+ },
+ "project": {
+  "name": "tsserver-59116",
+  "source": "dir",
+  "ref": "data/lsp_bench/cases/tsserver-59116/project",
+  "commit": "",
+  "language": "typescript"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "race0",
+  "settle_timeout_s": 120.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "lib.ts",
+    "positions": [
+     [
+      0,
+      17
+     ],
+     [
+      1,
+      22
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      18
+     ],
+     [
+      1,
+      24
+     ]
+    ],
+    "names": [
+     "X",
+     "test"
+    ]
+   },
+   {
+    "path": "main.ts",
+    "positions": [
+     [
+      0,
+      9
+     ],
+     [
+      0,
+      15
+     ],
+     [
+      10,
+      0
+     ],
+     [
+      10,
+      5
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      10
+     ],
+     [
+      0,
+      17
+     ],
+     [
+      10,
+      1
+     ],
+     [
+      10,
+      8
+     ]
+    ],
+    "names": [
+     "X",
+     "from",
+     "X",
+     "foobar"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "definition",
+  "path": "main.ts",
+  "line": 0,
+  "character": 9,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "lib.ts"
+  },
+  {
+   "kind": "open",
+   "path": "main.ts"
+  },
+  {
+   "kind": "fs_rename",
+   "path": "lib.ts",
+   "new_path": "lib_rt.ts"
+  },
+  {
+   "kind": "fs_rename",
+   "path": "lib_rt.ts",
+   "new_path": "lib.ts"
+  }
+ ],
+ "case": {
+  "chain_step": 0,
+  "families": [],
+  "family": "H5",
+  "history_index": 7,
+  "history_seed": 1010,
+  "mode": "fresh",
+  "note": "rename lib.ts -> lib_rt.ts -> back",
+  "seed": 1,
+  "timing": "race0"
+ },
+ "shape": "definition:changed",
+ "signature": "tsserver|r1_history|definition:changed",
+ "expected": [
+  [
+   "lib.ts",
+   0,
+   17,
+   0,
+   18
+  ]
+ ],
+ "actual": [
+  [
+   "main.ts",
+   0,
+   9,
+   0,
+   10
+  ]
+ ],
+ "reproduced": "1/3",
+ "note": "H5: rename lib.ts -> lib_rt.ts -> back; flake 1/3 [r1:SCR r2:SCr r3:SCr] in 33s",
+ "violation": {
+  "oracle": "r1_history",
+  "server": "tsserver-5.5.4+tsls4.3.3",
+  "project": "tsserver-59116",
+  "key": {
+   "method": "definition",
+   "path": "main.ts",
+   "line": 0,
+   "character": 9,
+   "extra": ""
+  },
+  "expected": [
+   [
+    "lib.ts",
+    0,
+    17,
+    0,
+    18
+   ]
+  ],
+  "actual": [
+   [
+    "main.ts",
+    0,
+    9,
+    0,
+    10
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "lib.ts"
+   },
+   {
+    "kind": "open",
+    "path": "main.ts"
+   },
+   {
+    "kind": "fs_rename",
+    "path": "lib.ts",
+    "new_path": "lib_rt.ts"
+   },
+   {
+    "kind": "fs_rename",
+    "path": "lib_rt.ts",
+    "new_path": "lib.ts"
+   }
+  ],
+  "detail": "{\"case\": {\"chain_step\": 0, \"families\": [], \"family\": \"H5\", \"history_index\": 7, \"history_seed\": 1010, \"mode\": \"fresh\", \"note\": \"rename lib.ts -> lib_rt.ts -> back\", \"seed\": 1, \"timing\": \"race0\"}, \"note\": \"H5: rename lib.ts -> lib_rt.ts -> back; flake 1/3 [r1:SCR r2:SCr r3:SCr] in 33s\", \"shape\": \"definition:changed\"}",
+  "reproduced": "1/3",
+  "reduced_ops": [],
+  "signature": "tsserver|r1_history|definition:changed",
+  "run_id": "9c922ebba470"
+ },
+ "replay_logs": [],
+ "project_files": {},
+ "incomplete": false
+}

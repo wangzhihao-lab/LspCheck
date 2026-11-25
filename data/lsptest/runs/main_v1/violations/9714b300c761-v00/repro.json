@@ -1,0 +1,480 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "9714b300c761-v00",
+ "run_id": "9714b300c761",
+ "oracle": "r3_routes",
+ "server": {
+  "kind": "ts7",
+  "version": "7.0.2"
+ },
+ "project": {
+  "name": "ChatGPTNextWeb/NextChat@defdcdb55d85",
+  "source": "corpus",
+  "ref": "temp/corpus/ChatGPTNextWeb__NextChat@defdcdb55d85",
+  "commit": "defdcdb55d850cd12c4c657eb83729fd66e215c0",
+  "language": "typescript"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "app/api/stability.ts",
+    "positions": [
+     [
+      26,
+      17
+     ],
+     [
+      44,
+      34
+     ],
+     [
+      49,
+      27
+     ],
+     [
+      50,
+      28
+     ],
+     [
+      50,
+      61
+     ],
+     [
+      52,
+      50
+     ],
+     [
+      70,
+      29
+     ],
+     [
+      74,
+      13
+     ],
+     [
+      77,
+      8
+     ],
+     [
+      84,
+      11
+     ],
+     [
+      90,
+      19
+     ],
+     [
+      91,
+      21
+     ]
+    ],
+    "ends": [
+     [
+      26,
+      21
+     ],
+     [
+      44,
+      39
+     ],
+     [
+      49,
+      31
+     ],
+     [
+      50,
+      30
+     ],
+     [
+      50,
+      63
+     ],
+     [
+      52,
+      58
+     ],
+     [
+      70,
+      33
+     ],
+     [
+      74,
+      15
+     ],
+     [
+      77,
+      12
+     ],
+     [
+      84,
+      13
+     ],
+     [
+      90,
+      23
+     ],
+     [
+      91,
+      24
+     ]
+    ],
+    "names": [
+     "baseUrl",
+     "authResult",
+     "headers",
+     "trim",
+     "trim",
+     "stabilityApiKey",
+     "headers",
+     "req",
+     "redirect",
+     "res",
+     "Response",
+     "status"
+    ]
+   },
+   {
+    "path": "app/client/platforms/glm.ts",
+    "positions": [
+     [
+      1,
+      48
+     ],
+     [
+      20,
+      8
+     ],
+     [
+      60,
+      10
+     ],
+     [
+      67,
+      18
+     ],
+     [
+      81,
+      15
+     ],
+     [
+      107,
+      39
+     ],
+     [
+      127,
+      33
+     ],
+     [
+      147,
+      9
+     ],
+     [
+      156,
+      41
+     ],
+     [
+      177,
+      7
+     ],
+     [
+      259,
+      43
+     ],
+     [
+      272,
+      17
+     ]
+    ],
+    "ends": [
+     [
+      1,
+      50
+     ],
+     [
+      20,
+      15
+     ],
+     [
+      60,
+      13
+     ],
+     [
+      67,
+      22
+     ],
+     [
+      81,
+      21
+     ],
+     [
+      107,
+      44
+     ],
+     [
+      127,
+      38
+     ],
+     [
+      147,
+      16
+     ],
+     [
+      156,
+      45
+     ],
+     [
+      177,
+      11
+     ],
+     [
+      259,
+      46
+     ],
+     [
+      272,
+      21
+     ]
+    ],
+    "names": [
+     "from",
+     "isVisionModel",
+     "model",
+     "ChatGLM",
+     "lastMessage",
+     "ModelType",
+     "chatglmUrl",
+     "extractMessage",
+     "options",
+     "console",
+     "length",
+     "message"
+    ]
+   },
+   {
+    "path": "app/locales/index.ts",
+    "positions": [
+     [
+      14,
+      12
+     ],
+     [
+      30,
+      3
+     ],
+     [
+      55,
+      40
+     ],
+     [
+      79,
+      12
+     ],
+     [
+      93,
+      12
+     ],
+     [
+      93,
+      32
+     ],
+     [
+      100,
+      13
+     ],
+     [
+      130,
+      21
+     ],
+     [
+      132,
+      5
+     ],
+     [
+      153,
+      3
+     ],
+     [
+      160,
+      3
+     ],
+     [
+      168,
+      19
+     ]
+    ],
+    "ends": [
+     [
+      14,
+      14
+     ],
+     [
+      30,
+      4
+     ],
+     [
+      55,
+      42
+     ],
+     [
+      79,
+      18
+     ],
+     [
+      93,
+      16
+     ],
+     [
+      93,
+      35
+     ],
+     [
+      100,
+      16
+     ],
+     [
+      130,
+      26
+     ],
+     [
+      132,
+      6
+     ],
+     [
+      153,
+      4
+     ],
+     [
+      160,
+      4
+     ],
+     [
+      168,
+      27
+     ]
+    ],
+    "names": [
+     "from",
+     "en",
+     "Lang",
+     "DEFAULT_LANG",
+     "setItem",
+     "value",
+     "region",
+     "getISOLang",
+     "cn",
+     "tr",
+     "bn",
+     "DEFAULT_STT_LANG"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "definitionConsistency",
+  "path": "app/client/platforms/alibaba.ts",
+  "line": 210,
+  "character": 38,
+  "extra": "from:app/client/platforms/glm.ts:259:43"
+ },
+ "ops": [],
+ "case": {
+  "loc": [
+   "app/client/platforms/alibaba.ts",
+   210,
+   35,
+   210,
+   41
+  ],
+  "sub": "d",
+  "target": [
+   "app/client/platforms/glm.ts",
+   259,
+   43
+  ]
+ },
+ "shape": "definitionConsistency:extra",
+ "signature": "ts7|r3_routes|definitionConsistency:extra",
+ "expected": [
+  [
+   "temp/lsp_servers/ts7-7.0.2/node_modules/@typescript/typescript-darwin-arm64/lib/lib.es5.d.ts",
+   1326,
+   4,
+   1326,
+   10
+  ]
+ ],
+ "actual": [
+  [
+   "temp/lsp_servers/ts7-7.0.2/node_modules/@typescript/typescript-darwin-arm64/lib/lib.es5.d.ts",
+   514,
+   13,
+   514,
+   19
+  ],
+  [
+   "temp/lsp_servers/ts7-7.0.2/node_modules/@typescript/typescript-darwin-arm64/lib/lib.es5.d.ts",
+   1326,
+   4,
+   1326,
+   10
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "flake 3/3 [r1:SCR r2:SCR r3:SCR] in 287s",
+ "violation": {
+  "oracle": "r3_routes",
+  "server": "ts7-7.0.2",
+  "project": "ChatGPTNextWeb/NextChat@defdcdb55d85",
+  "key": {
+   "method": "definitionConsistency",
+   "path": "app/client/platforms/alibaba.ts",
+   "line": 210,
+   "character": 38,
+   "extra": "from:app/client/platforms/glm.ts:259:43"
+  },
+  "expected": [
+   [
+    "temp/lsp_servers/ts7-7.0.2/node_modules/@typescript/typescript-darwin-arm64/lib/lib.es5.d.ts",
+    1326,
+    4,
+    1326,
+    10
+   ]
+  ],
+  "actual": [
+   [
+    "temp/lsp_servers/ts7-7.0.2/node_modules/@typescript/typescript-darwin-arm64/lib/lib.es5.d.ts",
+    514,
+    13,
+    514,
+    19
+   ],
+   [
+    "temp/lsp_servers/ts7-7.0.2/node_modules/@typescript/typescript-darwin-arm64/lib/lib.es5.d.ts",
+    1326,
+    4,
+    1326,
+    10
+   ]
+  ],
+  "ops": [],
+  "detail": "{\"case\": {\"loc\": [\"app/client/platforms/alibaba.ts\", 210, 35, 210, 41], \"sub\": \"d\", \"target\": [\"app/client/platforms/glm.ts\", 259, 43]}, \"note\": \"flake 3/3 [r1:SCR r2:SCR r3:SCR] in 287s\", \"shape\": \"definitionConsistency:extra\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "ts7|r3_routes|definitionConsistency:extra",
+  "run_id": "9714b300c761"
+ },
+ "replay_logs": [
+  "logs/ts7-7.0.2-9714b300c761-r3-replay-baseline-20260923-195109-9aeb45.jsonl.gz",
+  "logs/ts7-7.0.2-9714b300c761-r3-replay-control-20260923-195153-239e2b.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

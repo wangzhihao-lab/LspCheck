@@ -1,0 +1,137 @@
+{
+ "schema": 1,
+ "id": "gopls-43144",
+ "meta": {
+  "server": "gopls",
+  "kind": "gopls",
+  "number": 43144,
+  "url": "https://github.com/golang/go/issues/43144",
+  "title": "x/tools/gopls: find-references doesn't always search tests",
+  "oracle_class": "R1",
+  "subtype": "open-close",
+  "fix_ref": "golang/tools@906c733cc2d5 (gopls/internal/lsp/source: find references in test packages; CL 438755, 'Fixes golang/go#43144')",
+  "fix_shas": [
+   "906c733cc2d5f823ccd70dd604aab8e2cc3c25d0"
+  ],
+  "pre_version": "v0.9.5",
+  "post_version": "v0.10.0",
+  "pre_build": "v0.9.5",
+  "post_build": "v0.10.0",
+  "build_notes": "go install golang.org/x/tools/gopls@<version> with the local Go (go1.27.1), which builds both releases; no era toolchain (the Go of the era, go1.19, is not needed to build them). The server runs the local go command. v0.9.5 was tagged 2022-09-08, the fix merged 2022-10-11, v0.10.0 was tagged 2022-10-28.",
+  "candidate_rank": 4,
+  "effort_minutes": 25,
+  "notes": "Attempt 1 (the screened R1 open-close formulation on the issue's layout) did not reproduce: v0.9.5 already returns bar/bar_test.go from a fresh session that opens only foo.go, so the literal 2020 symptom is gone on the pre-fix build. The bug fixed by 906c733c: references searched only the packages of a file without its intermediate test variants (PackagesForFile(..., TypecheckAll, false)), so uses reached through an intermediate test variant (foo [bar.test], imported by the external test package bar_test) were missed. Attempt 2 uses the fix's regression test and a route relation (references from the declaration vs from a use); the observed mechanism is route-dependent and history-independent, not the screened R1 open-close."
+ },
+ "language": "go",
+ "settings": {},
+ "settings_note": "The reporter's settings (staticcheck, gofumpt, experiments) play no role in finding references; the session defaults apply.",
+ "session": {
+  "settle_timeout_s": 180
+ },
+ "files": [
+  {
+   "path": "go.mod",
+   "provenance": "issue-adapted",
+   "source": "golang/tools@906c733cc2d5:gopls/internal/regtest/misc/references_test.go, TestReferencesInTestVariants ('Test for golang/go#43144'), txtar section '-- go.mod --'",
+   "note": "the maintainers' reproduction of this issue in the fix's regression test: the issue's layout (a package importing bar, bar with an in-package test file) plus an external test package bar_test that imports foo, which makes foo [bar.test] an intermediate test variant"
+  },
+  {
+   "path": "foo/foo.go",
+   "provenance": "issue-adapted",
+   "source": "golang/tools@906c733cc2d5:gopls/internal/regtest/misc/references_test.go, TestReferencesInTestVariants ('Test for golang/go#43144'), txtar section '-- foo/foo.go --'",
+   "note": "the maintainers' reproduction of this issue in the fix's regression test: the issue's layout (a package importing bar, bar with an in-package test file) plus an external test package bar_test that imports foo, which makes foo [bar.test] an intermediate test variant"
+  },
+  {
+   "path": "bar/bar.go",
+   "provenance": "issue-adapted",
+   "source": "golang/tools@906c733cc2d5:gopls/internal/regtest/misc/references_test.go, TestReferencesInTestVariants ('Test for golang/go#43144'), txtar section '-- bar/bar.go --'",
+   "note": "the maintainers' reproduction of this issue in the fix's regression test: the issue's layout (a package importing bar, bar with an in-package test file) plus an external test package bar_test that imports foo, which makes foo [bar.test] an intermediate test variant"
+  },
+  {
+   "path": "bar/bar_test.go",
+   "provenance": "issue-adapted",
+   "source": "golang/tools@906c733cc2d5:gopls/internal/regtest/misc/references_test.go, TestReferencesInTestVariants ('Test for golang/go#43144'), txtar section '-- bar/bar_test.go --'",
+   "note": "the maintainers' reproduction of this issue in the fix's regression test: the issue's layout (a package importing bar, bar with an in-package test file) plus an external test package bar_test that imports foo, which makes foo [bar.test] an intermediate test variant"
+  },
+  {
+   "path": "bar/bar_x_test.go",
+   "provenance": "issue-adapted",
+   "source": "golang/tools@906c733cc2d5:gopls/internal/regtest/misc/references_test.go, TestReferencesInTestVariants ('Test for golang/go#43144'), txtar section '-- bar/bar_x_test.go --'",
+   "note": "the maintainers' reproduction of this issue in the fix's regression test: the issue's layout (a package importing bar, bar with an in-package test file) plus an external test package bar_test that imports foo, which makes foo [bar.test] an intermediate test variant"
+  }
+ ],
+ "repro": {
+  "attempt": 2,
+  "timing": "settled",
+  "steps": "The fix's regression test (open foo/foo.go; references on Foo, declared in foo/foo.go, must include its use in bar/bar_x_test.go, reached only through the intermediate test variant foo [bar.test]). Route a: references at the declaration of Foo in foo/foo.go (line 4, character 6, the test's RegexpSearch position). Route b: references at the use foo.Foo in bar/bar_x_test.go (line 12, character 9). Probe: both routes name the same object, so their references must be equal.",
+  "ops": [
+   {
+    "kind": "open",
+    "path": "foo/foo.go"
+   }
+  ],
+  "probe": {
+   "type": "two_routes_differ",
+   "params": {
+    "relation": "equal",
+    "a": {
+     "method": "references",
+     "path": "foo/foo.go",
+     "position": [
+      4,
+      6
+     ]
+    },
+    "b": {
+     "method": "references",
+     "path": "bar/bar_x_test.go",
+     "position": [
+      12,
+      9
+     ]
+    }
+   }
+  }
+ },
+ "attempts": [
+  {
+   "attempt": 1,
+   "timing": "settled",
+   "probe": "differs_from_fresh",
+   "summary": "As screened (R1 open-close) on the issue's own layout (go.mod 'module foo', foo.go, bar/bar.go, bar/bar_test.go): open foo.go, open and close bar/bar.go (the reporter's 'jump into bar.go'), then references on Blah in foo.go (5:12) compared with fresh sessions that open only foo.go. On v0.9.5 the case, fresh and control sessions all answered bar/bar.go, bar/bar_test.go and foo.go (3/3 runs), and so did v0.10.0: the issue's layout no longer shows the bug on the pre-fix build, with or without the open/close history (the fresh session opens only foo.go, the reporter's literal setup). The part of the issue still open in 2022 and fixed by 906c733c concerns intermediate test variants (a package imported by an external test package), which the issue's layout does not contain.",
+   "verdict": "not-reproduced-pre",
+   "files": [
+    "go.mod (issue)",
+    "foo.go (issue)",
+    "bar/bar.go (issue)",
+    "bar/bar_test.go (issue)"
+   ],
+   "ops": [
+    {
+     "kind": "open",
+     "path": "foo.go"
+    },
+    {
+     "kind": "open",
+     "path": "bar/bar.go"
+    },
+    {
+     "kind": "close",
+     "path": "bar/bar.go"
+    }
+   ],
+   "params": {
+    "queries": [
+     {
+      "method": "references",
+      "path": "foo.go",
+      "position": [
+       5,
+       12
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

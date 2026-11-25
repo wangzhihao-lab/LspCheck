@@ -1,0 +1,3 @@
+2026-11-18 08:18:07,395 INFO campaign_run run 5ebbb07d08bb: r0_crash on rust-analyzer 2026-09-21, tokio-rs/tokio@3930bd182cb1 seed 1 settled, targets ['tokio/src/runtime/time/wheel/mod.rs', 'tokio/src/runtime/time_alt/wheel/level.rs', 'tokio/tests/uds_split.rs']
+2026-11-18 08:19:07,489 INFO campaign_run run 5ebbb07d08bb: 0 candidate(s) in 60s; confirming
+2026-11-18 08:19:07,490 INFO campaign_run run 5ebbb07d08bb finished: ok, 0 confirmed of 0 candidate(s), 60s

@@ -1,0 +1,491 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "daf9853a6ca8-v00",
+ "run_id": "daf9853a6ca8",
+ "oracle": "r1_history",
+ "server": {
+  "kind": "gopls",
+  "version": "v0.23.0"
+ },
+ "project": {
+  "name": "fatedier/frp@d20a23299600",
+  "source": "corpus",
+  "ref": "temp/corpus/fatedier__frp@d20a23299600",
+  "commit": "d20a232996007dfe6ab425abc0a39a3ae9a0889b",
+  "language": "go"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "pkg/config/legacy/value.go",
+    "positions": [
+     [
+      23,
+      26
+     ],
+     [
+      28,
+      9
+     ],
+     [
+      43,
+      4
+     ],
+     [
+      47,
+      11
+     ],
+     [
+      48,
+      27
+     ],
+     [
+      50,
+      3
+     ],
+     [
+      54,
+      13
+     ],
+     [
+      56,
+      2
+     ],
+     [
+      57,
+      12
+     ],
+     [
+      65,
+      5
+     ],
+     [
+      71,
+      7
+     ],
+     [
+      71,
+      18
+     ]
+    ],
+    "ends": [
+     [
+      23,
+      29
+     ],
+     [
+      28,
+      11
+     ],
+     [
+      43,
+      6
+     ],
+     [
+      47,
+      18
+     ],
+     [
+      48,
+      29
+     ],
+     [
+      50,
+      5
+     ],
+     [
+      54,
+      16
+     ],
+     [
+      56,
+      4
+     ],
+     [
+      57,
+      14
+     ],
+     [
+      65,
+      6
+     ],
+     [
+      71,
+      9
+     ],
+     [
+      71,
+      25
+     ]
+    ],
+    "names": [
+     "string",
+     "env",
+     "Envs",
+     "RenderContent",
+     "New",
+     "err",
+     "bytes",
+     "err",
+     "nil",
+     "b",
+     "err",
+     "RenderContent"
+    ]
+   },
+   {
+    "path": "pkg/config/load_test.go",
+    "positions": [
+     [
+      108,
+      22
+     ],
+     [
+      211,
+      2
+     ],
+     [
+      214,
+      2
+     ],
+     [
+      313,
+      27
+     ],
+     [
+      326,
+      99
+     ],
+     [
+      379,
+      4
+     ],
+     [
+      440,
+      9
+     ],
+     [
+      450,
+      10
+     ],
+     [
+      456,
+      57
+     ],
+     [
+      466,
+      25
+     ],
+     [
+      555,
+      5
+     ],
+     [
+      709,
+      4
+     ]
+    ],
+    "ends": [
+     [
+      108,
+      24
+     ],
+     [
+      211,
+      4
+     ],
+     [
+      214,
+      4
+     ],
+     [
+      313,
+      36
+     ],
+     [
+      326,
+      108
+     ],
+     [
+      379,
+      8
+     ],
+     [
+      440,
+      17
+     ],
+     [
+      450,
+      19
+     ],
+     [
+      456,
+      58
+     ],
+     [
+      466,
+      46
+     ],
+     [
+      555,
+      6
+     ],
+     [
+      709,
+      8
+     ]
+    ],
+    "names": [
+     "err",
+     "err",
+     "err",
+     "XTCPVisitorConfig",
+     "VisitorConfigurer",
+     "require",
+     "proxyDropByStart",
+     "proxyDropByEnabled",
+     "v1",
+     "TestLoadClientConfigResult_DuplicateNames",
+     "_",
+     "require"
+    ]
+   },
+   {
+    "path": "pkg/transport/tls.go",
+    "positions": [
+     [
+      50,
+      19
+     ],
+     [
+      56,
+      18
+     ],
+     [
+      56,
+      38
+     ],
+     [
+      69,
+      12
+     ],
+     [
+      80,
+      36
+     ],
+     [
+      83,
+      3
+     ],
+     [
+      83,
+      30
+     ],
+     [
+      88,
+      31
+     ],
+     [
+      120,
+      21
+     ],
+     [
+      127,
+      65
+     ],
+     [
+      147,
+      4
+     ],
+     [
+      161,
+      37
+     ]
+    ],
+    "ends": [
+     [
+      50,
+      21
+     ],
+     [
+      56,
+      20
+     ],
+     [
+      56,
+      40
+     ],
+     [
+      69,
+      14
+     ],
+     [
+      80,
+      38
+     ],
+     [
+      83,
+      6
+     ],
+     [
+      83,
+      33
+     ],
+     [
+      88,
+      34
+     ],
+     [
+      120,
+      23
+     ],
+     [
+      127,
+      68
+     ],
+     [
+      147,
+      6
+     ],
+     [
+      161,
+      40
+     ]
+    ],
+    "names": [
+     "Sign",
+     "time",
+     "time",
+     "pem",
+     "x509",
+     "caCrt",
+     "caPath",
+     "caCrt",
+     "tls",
+     "string",
+     "base",
+     "Block"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "completion",
+  "path": "pkg/config/legacy/value.go",
+  "line": 23,
+  "character": 29,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "pkg/config/legacy/value.go"
+  },
+  {
+   "kind": "open",
+   "path": "pkg/config/load_test.go"
+  },
+  {
+   "kind": "open",
+   "path": "pkg/transport/tls.go"
+  },
+  {
+   "kind": "fs_rename",
+   "path": "pkg/config/legacy/value.go",
+   "new_path": "pkg/config/legacy/value_rt.go"
+  },
+  {
+   "kind": "fs_rename",
+   "path": "pkg/config/legacy/value_rt.go",
+   "new_path": "pkg/config/legacy/value.go"
+  }
+ ],
+ "case": {
+  "chain_step": 0,
+  "families": [],
+  "family": "H5",
+  "history_index": 0,
+  "history_seed": 1001,
+  "mode": "fresh",
+  "note": "rename pkg/config/legacy/value.go -> pkg/config/legacy/value_rt.go -> back",
+  "seed": 1,
+  "timing": "settled"
+ },
+ "shape": "completion:extra",
+ "signature": "gopls|r1_history|completion:extra",
+ "expected": [
+  "string",
+  "strings"
+ ],
+ "actual": [
+  "string",
+  "strings",
+  "strings.Builder",
+  "strings.Reader",
+  "strings.Replacer"
+ ],
+ "reproduced": "2/3",
+ "note": "H5: rename pkg/config/legacy/value.go -> pkg/config/legacy/value_rt.go -> back; flake 2/3 [r1:SCR r2:SCR r3:SCr] in 188s",
+ "violation": {
+  "oracle": "r1_history",
+  "server": "gopls-v0.23.0",
+  "project": "fatedier/frp@d20a23299600",
+  "key": {
+   "method": "completion",
+   "path": "pkg/config/legacy/value.go",
+   "line": 23,
+   "character": 29,
+   "extra": ""
+  },
+  "expected": [
+   "string",
+   "strings"
+  ],
+  "actual": [
+   "string",
+   "strings",
+   "strings.Builder",
+   "strings.Reader",
+   "strings.Replacer"
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "pkg/config/legacy/value.go"
+   },
+   {
+    "kind": "open",
+    "path": "pkg/config/load_test.go"
+   },
+   {
+    "kind": "open",
+    "path": "pkg/transport/tls.go"
+   },
+   {
+    "kind": "fs_rename",
+    "path": "pkg/config/legacy/value.go",
+    "new_path": "pkg/config/legacy/value_rt.go"
+   },
+   {
+    "kind": "fs_rename",
+    "path": "pkg/config/legacy/value_rt.go",
+    "new_path": "pkg/config/legacy/value.go"
+   }
+  ],
+  "detail": "{\"case\": {\"chain_step\": 0, \"families\": [], \"family\": \"H5\", \"history_index\": 0, \"history_seed\": 1001, \"mode\": \"fresh\", \"note\": \"rename pkg/config/legacy/value.go -> pkg/config/legacy/value_rt.go -> back\", \"seed\": 1, \"timing\": \"settled\"}, \"note\": \"H5: rename pkg/config/legacy/value.go -> pkg/config/legacy/value_rt.go -> back; flake 2/3 [r1:SCR r2:SCR r3:SCr] in 188s\", \"shape\": \"completion:extra\"}",
+  "reproduced": "2/3",
+  "reduced_ops": [],
+  "signature": "gopls|r1_history|completion:extra",
+  "run_id": "daf9853a6ca8"
+ },
+ "replay_logs": [],
+ "project_files": {},
+ "incomplete": false
+}

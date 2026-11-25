@@ -1,0 +1,3 @@
+{
+ "extractors/geekbang/geekbang_test.go": "package geekbang\n\nimport (\n\t\"testing\"\n\n\t\"github.com/iawia002/lux/extractors\"\n\t\"github.com/iawia002/lux/test\"\n)\n\nfunc TestDownload(t *testing.T) {\n\ttests := []struct {\n\t\tname string\n\t\targs test.Args\n\t}{\n\t\t{\n\t\t\tname: \"normal test\",\n\t\t\targs: test.Args{\n\t\t\t\tURL:   \"https://time.geekbang.org/course/detail/190-97203\",\n\t\t\t\tTitle: \"02 | 内容综述 - 玩转webpack\",\n\t\t\t\tSize:  10752472,\n\t\t\t},\n\t\t},\n\t}\n\tfor _, tt := range tests {\n\t\tt.Run(tt.name, func(t *testing.T) {\n\t\t\tdata, err := New().Extract(tt.args.URL, extractors.Options{})\n\t\t\ttest.CheckError(t, err)\n\t\t\ttest.Check(t, tt.args, data[0])\n\t\t})\n\t}\n}\n"
+}

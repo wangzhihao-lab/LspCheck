@@ -1,0 +1,3 @@
+2026-11-18 13:15:46,311 INFO campaign_run run cca76cc1cfbd: r1_history on pyright 1.1.414, ultralytics/yolov5@402e17ddf820 seed 2 settled, targets ['segment/val.py', 'utils/__init__.py', 'utils/loggers/clearml/hpo.py']
+2026-11-18 13:23:32,755 INFO campaign_run run cca76cc1cfbd: 0 candidate(s) in 467s; confirming
+2026-11-18 13:23:32,755 INFO campaign_run run cca76cc1cfbd finished: ok, 0 confirmed of 0 candidate(s), 466s

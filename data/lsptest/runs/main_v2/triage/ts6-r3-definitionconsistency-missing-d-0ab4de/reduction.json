@@ -1,0 +1,44 @@
+{
+ "vid": "d6ece30a31a2-v00",
+ "ops_before": 0,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 0,
+ "cache_hits": 0,
+ "reduce_seconds": 0.0,
+ "budget_exhausted": false,
+ "probe_log": [],
+ "logs": [
+  "ts6-6.0.3-tr0ab4de-r3-replay-baseline-20261119-023147-1bf8ee.jsonl.gz",
+  "ts6-6.0.3-tr0ab4de-r3-replay-control-20261119-023204-d3cf37.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [
+   [
+    "node_modules/.pnpm/@types+react@19.3.0/node_modules/@types/react/index.d.ts",
+    2903,
+    8,
+    2903,
+    13
+   ],
+   [
+    "src/components/common/SectionHeader.tsx",
+    10,
+    2,
+    10,
+    7
+   ]
+  ],
+  "actual": [
+   [
+    "node_modules/.pnpm/@types+react@19.3.0/node_modules/@types/react/index.d.ts",
+    2903,
+    8,
+    2903,
+    13
+   ]
+  ]
+ },
+ "ops_after": 0,
+ "total_seconds": 143.3
+}

@@ -1,0 +1,3 @@
+2026-11-18 16:11:42,451 INFO campaign_run run 1049d936d1ac: r5_transforms on ts7 7.0.2, Gitlawb/openclaude@5cd11336caea seed 2 settled, targets ['src/context/repoMap/repoMap.test.ts', 'src/utils/envFile.ts', 'src/utils/model/modelOptions.ts']
+2026-11-18 16:17:27,782 INFO campaign_run run 1049d936d1ac: 0 candidate(s) in 345s; confirming
+2026-11-18 16:17:27,782 INFO campaign_run run 1049d936d1ac finished: ok, 0 confirmed of 0 candidate(s), 345s

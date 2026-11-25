@@ -1,0 +1,3 @@
+2026-11-18 13:09:27,292 INFO campaign_run run cd6671b32c40: r1_history on rust-analyzer 2026-09-21, h4ckf0r0day/obscura@0e17221dbb55 seed 2 settled, targets ['crates/obscura-cdp/tests/treewalker_document_order.rs', 'crates/obscura-cli/tests/screenshot_after_eval.rs', 'crates/obscura-cli/tests/text_whitespace.rs']
+2026-11-18 13:24:47,685 INFO campaign_run run cd6671b32c40: 0 candidate(s) in 921s; confirming
+2026-11-18 13:24:47,685 INFO campaign_run run cd6671b32c40 finished: ok, 0 confirmed of 0 candidate(s), 920s

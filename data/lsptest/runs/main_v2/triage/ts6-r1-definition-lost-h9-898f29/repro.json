@@ -1,0 +1,291 @@
+{
+ "format": 1,
+ "campaign": "main_v2",
+ "vid": "d943bb79c7d7-v01",
+ "run_id": "d943bb79c7d7",
+ "oracle": "r1_history",
+ "server": {
+  "kind": "ts6",
+  "version": "6.0.3"
+ },
+ "project": {
+  "name": "mifi/lossless-cut@85cb95f6aeae",
+  "source": "corpus",
+  "ref": "temp/corpus/mifi__lossless-cut@85cb95f6aeae",
+  "commit": "85cb95f6aeaed9c26dfe64fd5ac6c6ac7760c55f",
+  "language": "typescript"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "src/main/progress.test.ts",
+    "positions": [],
+    "ends": [],
+    "names": []
+   },
+   {
+    "path": "src/renderer/src/TopMenu.tsx",
+    "positions": [
+     [
+      53,
+      31
+     ]
+    ],
+    "ends": [],
+    "names": [
+     ""
+    ]
+   },
+   {
+    "path": "src/renderer/src/hooks/useUserSettings.ts",
+    "positions": [],
+    "ends": [],
+    "names": []
+   }
+  ]
+ },
+ "key": {
+  "method": "definition",
+  "path": "src/renderer/src/TopMenu.tsx",
+  "line": 53,
+  "character": 31,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "src/renderer/src/TopMenu.tsx"
+  },
+  {
+   "kind": "open",
+   "path": "src/renderer/src/hooks/useUserSettings.ts"
+  },
+  {
+   "kind": "fs_rename",
+   "path": "src/renderer/src/hooks/useUserSettings.ts",
+   "new_path": "src/renderer/src/hooks/useUserSettings_rt.ts"
+  },
+  {
+   "kind": "change",
+   "path": "src/renderer/src/TopMenu.tsx",
+   "start": [
+    23,
+    0
+   ],
+   "end": [
+    24,
+    0
+   ]
+  },
+  {
+   "kind": "change",
+   "path": "src/renderer/src/TopMenu.tsx",
+   "start": [
+    23,
+    10
+   ],
+   "end": [
+    23,
+    10
+   ],
+   "text": "opMenu("
+  },
+  {
+   "kind": "change",
+   "path": "src/renderer/src/TopMenu.tsx",
+   "start": [
+    23,
+    17
+   ],
+   "end": [
+    23,
+    17
+   ],
+   "text": "{\n"
+  },
+  {
+   "kind": "fs_rename",
+   "path": "src/renderer/src/hooks/useUserSettings_rt.ts",
+   "new_path": "src/renderer/src/hooks/useUserSettings.ts"
+  }
+ ],
+ "case": {
+  "chain_step": 0,
+  "families": [],
+  "family": "H9",
+  "history_index": 3,
+  "history_seed": 2004,
+  "mode": "fresh",
+  "note": "window: rename src/renderer/src/hooks/useUserSettings.ts -> src/renderer/src/hooks/useUserSettings_rt.ts; inside: src/main/progress.test.ts: insert 'x' on line 8, then its inverse; src/renderer/src/TopMenu.tsx: line 23 deleted and retyped in 4 chunk(s); then W reverted",
+  "seed": 2,
+  "timing": "settled"
+ },
+ "shape": "definition:lost",
+ "signature": "ts6|r1_history|definition:lost",
+ "expected": [
+  [
+   "src/renderer/src/hooks/useUserSettingsRoot.ts",
+   329,
+   4,
+   329,
+   19
+  ]
+ ],
+ "actual": [],
+ "reproduced": "3/3",
+ "note": "H9: window: rename src/renderer/src/hooks/useUserSettings.ts -> src/renderer/src/hooks/useUserSettings_rt.ts; inside: src/main/progress.test.ts: insert 'x' on line 8, then its inverse; src/renderer/src/To; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 281s",
+ "violation": {
+  "oracle": "r1_history",
+  "server": "ts6-6.0.3",
+  "project": "mifi/lossless-cut@85cb95f6aeae",
+  "key": {
+   "method": "definition",
+   "path": "src/renderer/src/TopMenu.tsx",
+   "line": 53,
+   "character": 31,
+   "extra": ""
+  },
+  "expected": [
+   [
+    "src/renderer/src/hooks/useUserSettingsRoot.ts",
+    329,
+    4,
+    329,
+    19
+   ]
+  ],
+  "actual": [],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "src/main/progress.test.ts"
+   },
+   {
+    "kind": "open",
+    "path": "src/renderer/src/TopMenu.tsx"
+   },
+   {
+    "kind": "open",
+    "path": "src/renderer/src/hooks/useUserSettings.ts"
+   },
+   {
+    "kind": "fs_rename",
+    "path": "src/renderer/src/hooks/useUserSettings.ts",
+    "new_path": "src/renderer/src/hooks/useUserSettings_rt.ts"
+   },
+   {
+    "kind": "change",
+    "path": "src/main/progress.test.ts",
+    "start": [
+     8,
+     4
+    ],
+    "end": [
+     8,
+     4
+    ],
+    "text": "x"
+   },
+   {
+    "kind": "change",
+    "path": "src/main/progress.test.ts",
+    "start": [
+     8,
+     4
+    ],
+    "end": [
+     8,
+     5
+    ]
+   },
+   {
+    "kind": "change",
+    "path": "src/renderer/src/TopMenu.tsx",
+    "start": [
+     23,
+     0
+    ],
+    "end": [
+     24,
+     0
+    ]
+   },
+   {
+    "kind": "change",
+    "path": "src/renderer/src/TopMenu.tsx",
+    "start": [
+     23,
+     0
+    ],
+    "end": [
+     23,
+     0
+    ],
+    "text": "fu"
+   },
+   {
+    "kind": "change",
+    "path": "src/renderer/src/TopMenu.tsx",
+    "start": [
+     23,
+     2
+    ],
+    "end": [
+     23,
+     2
+    ],
+    "text": "nction T"
+   },
+   {
+    "kind": "change",
+    "path": "src/renderer/src/TopMenu.tsx",
+    "start": [
+     23,
+     10
+    ],
+    "end": [
+     23,
+     10
+    ],
+    "text": "opMenu("
+   },
+   {
+    "kind": "change",
+    "path": "src/renderer/src/TopMenu.tsx",
+    "start": [
+     23,
+     17
+    ],
+    "end": [
+     23,
+     17
+    ],
+    "text": "{\n"
+   },
+   {
+    "kind": "fs_rename",
+    "path": "src/renderer/src/hooks/useUserSettings_rt.ts",
+    "new_path": "src/renderer/src/hooks/useUserSettings.ts"
+   }
+  ],
+  "detail": "{\"case\": {\"chain_step\": 0, \"families\": [], \"family\": \"H9\", \"history_index\": 3, \"history_seed\": 2004, \"mode\": \"fresh\", \"note\": \"window: rename src/renderer/src/hooks/useUserSettings.ts -> src/renderer/src/hooks/useUserSettings_rt.ts; inside: src/main/progress.test.ts: insert 'x' on line 8, then its inverse; src/renderer/src/TopMenu.tsx: line 23 deleted and retyped in 4 chunk(s); then W reverted\", \"seed\": 2, \"timing\": \"settled\"}, \"note\": \"H9: window: rename src/renderer/src/hooks/useUserSettings.ts -> src/renderer/src/hooks/useUserSettings_rt.ts; inside: src/main/progress.test.ts: insert 'x' on line 8, then its inverse; src/renderer/src/To; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 281s\", \"shape\": \"definition:lost\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "ts6|r1_history|definition:lost",
+  "run_id": "d943bb79c7d7"
+ },
+ "replay_logs": [
+  "logs/ts6-6.0.3-tr898f29-replay-baseline-20261118-230036-38b8c1.jsonl.gz",
+  "logs/ts6-6.0.3-tr898f29-replay-control-20261118-230036-d07e7e.jsonl.gz",
+  "logs/ts6-6.0.3-tr898f29-replay-history-20261118-230054-bca4fc.jsonl.gz"
+ ],
+ "project_files": {},
+ "group": "ts6-r1-definition-lost-h9-898f29",
+ "reduced": true
+}

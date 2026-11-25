@@ -1,0 +1,3 @@
+2026-11-18 10:10:11,365 INFO campaign_run run af0ecfa14654: r3_routes on pyright 1.1.414, MemPalace/mempalace@c4d3711ee247 seed 1 settled, targets ['benchmarks/locomo_bench.py', 'tests/test_room_detector_local.py', 'tests/test_serve.py']
+2026-11-18 10:12:39,221 INFO campaign_run run af0ecfa14654: 3 candidate(s) in 148s; confirming
+2026-11-18 10:12:39,222 INFO campaign_run run af0ecfa14654 finished: ok, 0 confirmed of 3 candidate(s), 148s

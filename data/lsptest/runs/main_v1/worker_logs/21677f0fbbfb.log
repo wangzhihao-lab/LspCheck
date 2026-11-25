@@ -1,0 +1,3 @@
+2026-09-24 07:07:46,112 INFO campaign_run run 21677f0fbbfb: r1_history on ts7 7.0.2, ChatGPTNextWeb/NextChat@defdcdb55d85 seed 1 settled, targets ['app/api/stability.ts', 'app/client/platforms/glm.ts', 'app/locales/index.ts']
+2026-09-24 07:18:38,772 INFO campaign_run run 21677f0fbbfb: 0 candidate(s) in 653s; confirming
+2026-09-24 07:18:38,773 INFO campaign_run run 21677f0fbbfb finished: ok, 0 confirmed of 0 candidate(s), 653s

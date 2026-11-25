@@ -1,0 +1,109 @@
+<scheduler message>
+2026-11-21 01:53:26,090 INFO release_sweep 125 job(s) for gopls,rust-analyzer,ts6,ts7,pyright
+2026-11-21 01:53:26,090 INFO release_sweep lifecycle: gopls-r1-codeaction-changed-h4-c5344e on gopls v0.16.0
+2026-11-21 01:55:22,732 INFO release_sweep   -> unsettled (0/3, 117s) 
+2026-11-21 01:55:22,733 INFO release_sweep lifecycle: gopls-r1-codeaction-changed-h4-c5344e on gopls v0.17.0
+2026-11-21 01:57:15,666 INFO release_sweep   -> unsettled (0/3, 113s) 
+2026-11-21 01:57:15,667 INFO release_sweep lifecycle: gopls-r1-codeaction-changed-h4-c5344e on gopls v0.18.0
+2026-11-21 01:59:12,277 INFO release_sweep   -> unsettled (0/3, 117s) 
+2026-11-21 01:59:12,278 INFO release_sweep lifecycle: gopls-r1-codeaction-changed-h4-c5344e on gopls v0.19.0+go1.27.1
+2026-11-21 02:01:06,623 INFO release_sweep   -> unsettled (0/3, 114s) 
+2026-11-21 02:01:06,624 INFO release_sweep lifecycle: gopls-r1-codeaction-changed-h4-c5344e on gopls v0.20.0
+2026-11-21 02:02:59,006 INFO release_sweep   -> unsettled (0/3, 112s) 
+2026-11-21 02:02:59,007 INFO release_sweep lifecycle: gopls-r1-codeaction-changed-h4-c5344e on gopls v0.21.0
+2026-11-21 02:04:51,279 INFO release_sweep   -> unsettled (0/3, 112s) 
+2026-11-21 02:04:51,281 INFO release_sweep lifecycle: gopls-r1-codeaction-changed-h4-c5344e on gopls v0.22.0
+2026-11-21 02:06:47,141 INFO release_sweep   -> reproduced (3/3, 116s) 
+2026-11-21 02:06:47,143 INFO release_sweep lifecycle: gopls-r1-codeaction-changed-h4-c5344e on gopls v0.23.0
+2026-11-21 02:08:42,374 INFO release_sweep   -> reproduced (3/3, 115s) 
+2026-11-21 02:08:42,375 INFO release_sweep lifecycle: rust-analyzer-r0-references-result-error-timeout-fresh-pair-8a4b8d on rust-analyzer 2024-10-07
+2026-11-21 02:13:54,096 INFO release_sweep   -> not-reproduced (0/3, 312s) 
+2026-11-21 02:13:54,096 INFO release_sweep lifecycle: rust-analyzer-r0-semantictokens-result-error-timeout-fresh-pair-62256f on rust-analyzer 2024-10-07
+2026-11-21 02:21:22,813 INFO release_sweep   -> not-reproduced (0/3, 449s) 
+2026-11-21 02:21:22,813 INFO release_sweep lifecycle: rust-analyzer-r3-diagnostics-missing-e0004-inactive-code-a-731c4f on rust-analyzer 2024-10-07
+2026-11-21 02:24:27,882 INFO release_sweep   -> not-reproduced (0/3, 185s) 
+2026-11-21 02:24:27,883 INFO release_sweep lifecycle: rust-analyzer-r3-semantictokensrange-changed-b-b6e28b on rust-analyzer 2024-10-07
+2026-11-21 02:25:56,512 INFO release_sweep   -> not-reproduced (0/3, 89s) 
+2026-11-21 02:25:56,513 INFO release_sweep lifecycle: rust-analyzer-r4-completioninsert-gained-completion-e99b79 on rust-analyzer 2024-10-07
+2026-11-21 02:28:39,315 INFO release_sweep   -> reproduced (3/3, 163s) 
+2026-11-21 02:28:39,315 INFO release_sweep lifecycle: rust-analyzer-r0-references-result-error-timeout-fresh-pair-8a4b8d on rust-analyzer 2025-01-06
+2026-11-21 02:48:29,218 INFO release_sweep   -> unsettled (0/3, 1190s) 
+2026-11-21 02:48:29,221 INFO release_sweep lifecycle: rust-analyzer-r0-semantictokens-result-error-timeout-fresh-pair-62256f on rust-analyzer 2025-01-06
+2026-11-21 02:56:36,571 INFO release_sweep   -> not-reproduced (0/3, 487s) 
+2026-11-21 02:56:36,572 INFO release_sweep lifecycle: rust-analyzer-r3-diagnostics-missing-e0004-inactive-code-a-731c4f on rust-analyzer 2025-01-06
+2026-11-21 03:51:35,960 INFO release_sweep   -> unsettled (0/3, 3299s) 
+2026-11-21 03:51:35,961 INFO release_sweep lifecycle: rust-analyzer-r3-semantictokensrange-changed-b-b6e28b on rust-analyzer 2025-01-06
+2026-11-21 03:53:21,575 INFO release_sweep   -> not-reproduced (0/3, 106s) 
+2026-11-21 03:53:21,575 INFO release_sweep lifecycle: rust-analyzer-r4-completioninsert-gained-completion-e99b79 on rust-analyzer 2025-01-06
+2026-11-21 05:33:03,596 INFO release_sweep   -> unsettled (0/3, 5982s) 
+2026-11-21 05:33:03,599 INFO release_sweep lifecycle: rust-analyzer-r0-references-result-error-timeout-fresh-pair-8a4b8d on rust-analyzer 2025-04-07
+2026-11-21 05:40:29,022 INFO release_sweep   -> not-reproduced (0/3, 445s) 
+2026-11-21 05:40:29,023 INFO release_sweep lifecycle: rust-analyzer-r0-semantictokens-result-error-timeout-fresh-pair-62256f on rust-analyzer 2025-04-07
+2026-11-21 05:48:44,197 INFO release_sweep   -> not-reproduced (0/3, 495s) 
+2026-11-21 05:48:44,198 INFO release_sweep lifecycle: rust-analyzer-r3-diagnostics-missing-e0004-inactive-code-a-731c4f on rust-analyzer 2025-04-07
+2026-11-21 05:52:11,892 INFO release_sweep   -> not-reproduced (0/3, 208s) 
+2026-11-21 05:52:11,892 INFO release_sweep lifecycle: rust-analyzer-r3-semantictokensrange-changed-b-b6e28b on rust-analyzer 2025-04-07
+2026-11-21 05:53:58,899 INFO release_sweep   -> reproduced (3/3, 107s) 
+2026-11-21 05:53:58,899 INFO release_sweep lifecycle: rust-analyzer-r4-completioninsert-gained-completion-e99b79 on rust-analyzer 2025-04-07
+2026-11-21 05:57:06,342 INFO release_sweep   -> reproduced (3/3, 187s) 
+2026-11-21 05:57:06,343 INFO release_sweep lifecycle: rust-analyzer-r0-references-result-error-timeout-fresh-pair-8a4b8d on rust-analyzer 2025-10-27
+2026-11-21 05:57:39,536 INFO release_sweep   -> not-reproduced (0/3, 33s) 
+2026-11-21 05:57:39,537 INFO release_sweep lifecycle: rust-analyzer-r0-semantictokens-result-error-timeout-fresh-pair-62256f on rust-analyzer 2025-10-27
+2026-11-21 05:58:08,479 INFO release_sweep   -> not-reproduced (0/3, 29s) 
+2026-11-21 05:58:08,479 INFO release_sweep lifecycle: rust-analyzer-r3-diagnostics-missing-e0004-inactive-code-a-731c4f on rust-analyzer 2025-10-27
+2026-11-21 05:58:57,619 INFO release_sweep   -> not-reproduced (0/3, 49s) 
+2026-11-21 05:58:57,619 INFO release_sweep lifecycle: rust-analyzer-r3-semantictokensrange-changed-b-b6e28b on rust-analyzer 2025-10-27
+2026-11-21 05:59:32,177 INFO release_sweep   -> not-reproduced (0/3, 35s) 
+2026-11-21 05:59:32,177 INFO release_sweep lifecycle: rust-analyzer-r4-completioninsert-gained-completion-e99b79 on rust-analyzer 2025-10-27
+2026-11-21 06:00:50,008 INFO release_sweep   -> not-reproduced (0/3, 78s) 
+2026-11-21 06:00:50,008 INFO release_sweep lifecycle: rust-analyzer-r0-references-result-error-timeout-fresh-pair-8a4b8d on rust-analyzer 2026-01-05
+2026-11-21 06:02:13,941 INFO release_sweep   -> not-reproduced (0/3, 84s) 
+2026-11-21 06:02:13,941 INFO release_sweep lifecycle: rust-analyzer-r0-semantictokens-result-error-timeout-fresh-pair-62256f on rust-analyzer 2026-01-05
+2026-11-21 06:03:00,374 INFO release_sweep   -> not-reproduced (0/3, 46s) 
+2026-11-21 06:03:00,374 INFO release_sweep lifecycle: rust-analyzer-r3-diagnostics-missing-e0004-inactive-code-a-731c4f on rust-analyzer 2026-01-05
+2026-11-21 06:03:47,246 INFO release_sweep   -> not-reproduced (0/3, 47s) 
+2026-11-21 06:03:47,247 INFO release_sweep lifecycle: rust-analyzer-r3-semantictokensrange-changed-b-b6e28b on rust-analyzer 2026-01-05
+2026-11-21 06:04:18,739 INFO release_sweep   -> not-reproduced (0/3, 32s) 
+2026-11-21 06:04:18,740 INFO release_sweep lifecycle: rust-analyzer-r4-completioninsert-gained-completion-e99b79 on rust-analyzer 2026-01-05
+2026-11-21 06:05:34,238 INFO release_sweep   -> not-reproduced (0/3, 76s) 
+2026-11-21 06:05:34,238 INFO release_sweep lifecycle: rust-analyzer-r0-references-result-error-timeout-fresh-pair-8a4b8d on rust-analyzer 2026-04-06
+2026-11-21 06:10:29,150 INFO release_sweep   -> not-reproduced (0/3, 295s) 
+2026-11-21 06:10:29,150 INFO release_sweep lifecycle: rust-analyzer-r0-semantictokens-result-error-timeout-fresh-pair-62256f on rust-analyzer 2026-04-06
+2026-11-21 06:16:14,631 INFO release_sweep   -> not-reproduced (0/3, 346s) 
+2026-11-21 06:16:14,631 INFO release_sweep lifecycle: rust-analyzer-r3-diagnostics-missing-e0004-inactive-code-a-731c4f on rust-analyzer 2026-04-06
+2026-11-21 06:20:36,236 INFO release_sweep   -> not-reproduced (0/3, 262s) 
+2026-11-21 06:20:36,236 INFO release_sweep lifecycle: rust-analyzer-r3-semantictokensrange-changed-b-b6e28b on rust-analyzer 2026-04-06
+2026-11-21 06:21:33,483 INFO release_sweep   -> unsettled (2/3, 57s) 
+2026-11-21 06:21:33,483 INFO release_sweep lifecycle: rust-analyzer-r4-completioninsert-gained-completion-e99b79 on rust-analyzer 2026-04-06
+2026-11-21 06:25:18,567 INFO release_sweep   -> not-reproduced (0/3, 225s) 
+2026-11-21 06:25:18,568 INFO release_sweep lifecycle: rust-analyzer-r0-references-result-error-timeout-fresh-pair-8a4b8d on rust-analyzer 2026-07-06
+2026-11-21 06:28:39,312 INFO release_sweep   -> not-reproduced (0/3, 201s) 
+2026-11-21 06:28:39,312 INFO release_sweep lifecycle: rust-analyzer-r0-semantictokens-result-error-timeout-fresh-pair-62256f on rust-analyzer 2026-07-06
+2026-11-21 06:31:12,952 INFO release_sweep   -> not-reproduced (0/3, 154s) 
+2026-11-21 06:31:12,952 INFO release_sweep lifecycle: rust-analyzer-r3-diagnostics-missing-e0004-inactive-code-a-731c4f on rust-analyzer 2026-07-06
+2026-11-21 06:35:37,552 INFO release_sweep   -> not-reproduced (0/3, 265s) 
+2026-11-21 06:35:37,552 INFO release_sweep lifecycle: rust-analyzer-r3-semantictokensrange-changed-b-b6e28b on rust-analyzer 2026-07-06
+2026-11-21 06:36:34,660 INFO release_sweep   -> unsettled (2/3, 57s) 
+2026-11-21 06:36:34,660 INFO release_sweep lifecycle: rust-analyzer-r4-completioninsert-gained-completion-e99b79 on rust-analyzer 2026-07-06
+2026-11-21 06:40:26,769 INFO release_sweep   -> reproduced (3/3, 232s) 
+2026-11-21 06:40:26,770 INFO release_sweep lifecycle: rust-analyzer-r0-references-result-error-timeout-fresh-pair-8a4b8d on rust-analyzer 2026-09-21
+2026-11-21 06:43:48,595 INFO release_sweep   -> not-reproduced (0/3, 202s) 
+2026-11-21 06:43:48,595 INFO release_sweep lifecycle: rust-analyzer-r0-semantictokens-result-error-timeout-fresh-pair-62256f on rust-analyzer 2026-09-21
+2026-11-21 06:46:23,510 INFO release_sweep   -> not-reproduced (0/3, 155s) 
+2026-11-21 06:46:23,510 INFO release_sweep lifecycle: rust-analyzer-r3-diagnostics-missing-e0004-inactive-code-a-731c4f on rust-analyzer 2026-09-21
+2026-11-21 06:50:53,332 INFO release_sweep   -> reproduced (3/3, 270s) 
+2026-11-21 06:50:53,333 INFO release_sweep lifecycle: rust-analyzer-r3-semantictokensrange-changed-b-b6e28b on rust-analyzer 2026-09-21
+2026-11-21 06:52:01,932 INFO release_sweep   -> reproduced (3/3, 69s) 
+2026-11-21 06:52:01,933 INFO release_sweep lifecycle: rust-analyzer-r4-completioninsert-gained-completion-e99b79 on rust-analyzer 2026-09-21
+2026-11-21 06:55:52,277 INFO release_sweep   -> reproduced (3/3, 230s) 
+2026-11-21 06:55:52,277 INFO release_sweep lifecycle: rust-analyzer-r0-references-result-error-timeout-fresh-pair-8a4b8d on rust-analyzer 2026-09-28
+2026-11-21 06:59:19,926 INFO release_sweep   -> not-reproduced (0/3, 208s) 
+2026-11-21 06:59:19,926 INFO release_sweep lifecycle: rust-analyzer-r0-semantictokens-result-error-timeout-fresh-pair-62256f on rust-analyzer 2026-09-28
+2026-11-21 07:01:53,765 INFO release_sweep   -> not-reproduced (0/3, 154s) 
+2026-11-21 07:01:53,765 INFO release_sweep lifecycle: rust-analyzer-r3-diagnostics-missing-e0004-inactive-code-a-731c4f on rust-analyzer 2026-09-28
+2026-11-21 07:06:18,038 INFO release_sweep   -> reproduced (3/3, 264s) 
+2026-11-21 07:06:18,038 INFO release_sweep lifecycle: rust-analyzer-r3-semantictokensrange-changed-b-b6e28b on rust-analyzer 2026-09-28
+2026-11-21 07:07:26,711 INFO release_sweep   -> reproduced (3/3, 69s) 
+2026-11-21 07:07:26,711 INFO release_sweep lifecycle: rust-analyzer-r4-completioninsert-gained-completion-e99b79 on rust-analyzer 2026-09-28
+2026-11-21 07:11:18,574 INFO release_sweep   -> reproduced (3/3, 232s) 
+2026-11-21 07:11:18,581 INFO release_sweep all jobs of gopls,rust-analyzer,ts6,ts7,pyright done

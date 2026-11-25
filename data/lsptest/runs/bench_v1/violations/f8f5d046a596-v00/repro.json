@@ -1,0 +1,292 @@
+{
+ "format": 1,
+ "campaign": "bench_v1",
+ "vid": "f8f5d046a596-v00",
+ "run_id": "f8f5d046a596",
+ "oracle": "r5_transforms",
+ "server": {
+  "kind": "rust-analyzer",
+  "version": "2025-12-15"
+ },
+ "project": {
+  "name": "rust-analyzer-21204",
+  "source": "dir",
+  "ref": "data/lsp_bench/cases/rust-analyzer-21204/project",
+  "commit": "",
+  "language": "rust"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 240.0,
+  "request_timeout_s": 60.0,
+  "extra_settings": null,
+  "max_cases": 6,
+  "targets": [
+   {
+    "path": "src/foo.rs",
+    "positions": [
+     [
+      0,
+      10
+     ],
+     [
+      1,
+      7
+     ],
+     [
+      2,
+      9
+     ],
+     [
+      2,
+      14
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      12
+     ],
+     [
+      1,
+      11
+     ],
+     [
+      2,
+      11
+     ],
+     [
+      2,
+      16
+     ]
+    ],
+    "names": [
+     "Foo",
+     "Variant",
+     "bar",
+     "i32"
+    ]
+   },
+   {
+    "path": "src/main.rs",
+    "positions": [
+     [
+      0,
+      5
+     ],
+     [
+      2,
+      5
+     ],
+     [
+      3,
+      5
+     ],
+     [
+      3,
+      10
+     ],
+     [
+      3,
+      17
+     ],
+     [
+      3,
+      25
+     ],
+     [
+      3,
+      33
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      7
+     ],
+     [
+      2,
+      7
+     ],
+     [
+      3,
+      7
+     ],
+     [
+      3,
+      12
+     ],
+     [
+      3,
+      21
+     ],
+     [
+      3,
+      27
+     ],
+     [
+      3,
+      35
+     ]
+    ],
+    "names": [
+     "foo",
+     "main",
+     "foo",
+     "Foo",
+     "Variant",
+     "bar",
+     "baz"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "definition",
+  "path": "src/main.rs",
+  "line": 0,
+  "character": 5,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "src/foo.rs"
+  },
+  {
+   "kind": "change",
+   "path": "src/foo.rs",
+   "start": [
+    0,
+    0
+   ],
+   "end": [
+    0,
+    0
+   ],
+   "text": "\n\n"
+  }
+ ],
+ "case": {
+  "mapped_key": [
+   "definition",
+   "src/main.rs",
+   0,
+   5,
+   ""
+  ],
+  "transform": {
+   "back": {
+    "col": 0,
+    "eof": [],
+    "line": -1,
+    "n": 0,
+    "path": "src/foo.rs",
+    "w": 0
+   },
+   "edits": [
+    [
+     0,
+     0,
+     0,
+     0,
+     "\n\n"
+    ]
+   ],
+   "kind": "T1",
+   "path": "src/foo.rs",
+   "shift": {
+    "col": 0,
+    "eof": [],
+    "line": 0,
+    "n": 2,
+    "path": "src/foo.rs",
+    "w": 0
+   }
+  }
+ },
+ "shape": "definition:changed",
+ "signature": "rust-analyzer|r5_transforms|definition:changed",
+ "expected": [
+  [
+   "src/foo.rs",
+   2,
+   0,
+   7,
+   0
+  ]
+ ],
+ "actual": [
+  [
+   "src/foo.rs",
+   0,
+   0,
+   7,
+   0
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "T1 src/foo.rs: 1 edit(s), first [0, 0, 0, 0]; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 77s",
+ "violation": {
+  "oracle": "r5_transforms",
+  "server": "rust-analyzer-2025-12-15",
+  "project": "rust-analyzer-21204",
+  "key": {
+   "method": "definition",
+   "path": "src/main.rs",
+   "line": 0,
+   "character": 5,
+   "extra": ""
+  },
+  "expected": [
+   [
+    "src/foo.rs",
+    2,
+    0,
+    7,
+    0
+   ]
+  ],
+  "actual": [
+   [
+    "src/foo.rs",
+    0,
+    0,
+    7,
+    0
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "src/foo.rs"
+   },
+   {
+    "kind": "change",
+    "path": "src/foo.rs",
+    "start": [
+     0,
+     0
+    ],
+    "end": [
+     0,
+     0
+    ],
+    "text": "\n\n"
+   }
+  ],
+  "detail": "{\"case\": {\"mapped_key\": [\"definition\", \"src/main.rs\", 0, 5, \"\"], \"transform\": {\"back\": {\"col\": 0, \"eof\": [], \"line\": -1, \"n\": 0, \"path\": \"src/foo.rs\", \"w\": 0}, \"edits\": [[0, 0, 0, 0, \"\\n\\n\"]], \"kind\": \"T1\", \"path\": \"src/foo.rs\", \"shift\": {\"col\": 0, \"eof\": [], \"line\": 0, \"n\": 2, \"path\": \"src/foo.rs\", \"w\": 0}}}, \"note\": \"T1 src/foo.rs: 1 edit(s), first [0, 0, 0, 0]; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 77s\", \"shape\": \"definition:changed\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "rust-analyzer|r5_transforms|definition:changed",
+  "run_id": "f8f5d046a596"
+ },
+ "replay_logs": [
+  "logs/rust-analyzer-2025-12-15-f8f5d046a596-r5-replay-baseline-20260925-115145-0e8624.jsonl.gz",
+  "logs/rust-analyzer-2025-12-15-f8f5d046a596-r5-replay-case-20260925-115201-223f27.jsonl.gz",
+  "logs/rust-analyzer-2025-12-15-f8f5d046a596-r5-replay-control-20260925-115153-1da92b.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

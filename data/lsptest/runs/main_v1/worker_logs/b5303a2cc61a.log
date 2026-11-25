@@ -1,0 +1,3 @@
+2026-09-24 05:32:28,355 INFO campaign_run run b5303a2cc61a: r1_history on gopls v0.23.0, spf13/cobra@adbc8813901b seed 1 settled, targets ['args_test.go', 'doc/yaml_docs.go', 'flag_groups.go']
+2026-09-24 05:40:19,423 INFO campaign_run run b5303a2cc61a: 0 candidate(s) in 471s; confirming
+2026-09-24 05:40:19,425 INFO campaign_run run b5303a2cc61a finished: ok, 0 confirmed of 0 candidate(s), 471s

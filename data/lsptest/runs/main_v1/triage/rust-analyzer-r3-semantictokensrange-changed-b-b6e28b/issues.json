@@ -1,0 +1,92 @@
+{
+ "queries": [
+  "range in:title repo:rust-lang/rust-analyzer is:issue",
+  "\"semantic tokens range\" wrong repo:rust-lang/rust-analyzer is:issue",
+  "\"semantic tokens range\" range repo:rust-lang/rust-analyzer is:issue",
+  "\"semantic tokens range\" inconsistent repo:rust-lang/rust-analyzer is:issue"
+ ],
+ "matches": [
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 23199,
+   "title": "Wrong range when request at edited std",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/23199",
+   "state": "open",
+   "created": "2026-08-20",
+   "comments": 7,
+   "query": "range in:title repo:rust-lang/rust-analyzer is:issue"
+  },
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 23124,
+   "title": "panic: highlight: `type parameter `#1` (#1/1) out of range when instantiating, args=[#0]`",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/23124",
+   "state": "open",
+   "created": "2026-08-11",
+   "comments": 0,
+   "query": "range in:title repo:rust-lang/rust-analyzer is:issue"
+  },
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 12640,
+   "title": "Feature request: lifetime range visualizations",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/12640",
+   "state": "open",
+   "created": "2022-06-26",
+   "comments": 1,
+   "query": "range in:title repo:rust-lang/rust-analyzer is:issue"
+  },
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 16535,
+   "title": "Hover range breaks within attribute macros",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/16535",
+   "state": "open",
+   "created": "2024-02-12",
+   "comments": 0,
+   "query": "range in:title repo:rust-lang/rust-analyzer is:issue"
+  },
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 13931,
+   "title": "Range hover inside macro is wrong",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/13931",
+   "state": "open",
+   "created": "2023-01-11",
+   "comments": 0,
+   "query": "range in:title repo:rust-lang/rust-analyzer is:issue"
+  },
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 15737,
+   "title": "work node crashes",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/15737",
+   "state": "closed",
+   "created": "2023-10-09",
+   "comments": 1,
+   "query": "\"semantic tokens range\" wrong repo:rust-lang/rust-analyzer is:issue"
+  },
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 9601,
+   "title": "GTK3 on Windows 10: Type hinting but no type checking?",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/9601",
+   "state": "closed",
+   "created": "2021-07-14",
+   "comments": 16,
+   "query": "\"semantic tokens range\" wrong repo:rust-lang/rust-analyzer is:issue"
+  },
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 7416,
+   "title": "Support in band lifetimes",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/7416",
+   "state": "closed",
+   "created": "2021-01-24",
+   "comments": 5,
+   "query": "\"semantic tokens range\" wrong repo:rust-lang/rust-analyzer is:issue"
+  }
+ ],
+ "notes": [],
+ "authenticated": true
+}

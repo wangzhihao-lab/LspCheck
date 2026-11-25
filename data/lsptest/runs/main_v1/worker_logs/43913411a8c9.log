@@ -1,0 +1,3 @@
+2026-09-24 01:09:28,787 INFO campaign_run run 43913411a8c9: r4_edits on gopls v0.23.0, junegunn/fzf@b1be3a8be1b8 seed 2 settled, targets ['src/reader_test.go', 'src/tui/light.go', 'src/util/atomicbool_test.go']
+2026-09-24 01:10:34,958 INFO campaign_run run 43913411a8c9: 0 candidate(s) in 66s; confirming
+2026-09-24 01:10:34,959 INFO campaign_run run 43913411a8c9 finished: ok, 0 confirmed of 0 candidate(s), 66s

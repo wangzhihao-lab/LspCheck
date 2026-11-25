@@ -1,0 +1,450 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "0f7d1b71b1a8-v00",
+ "run_id": "0f7d1b71b1a8",
+ "oracle": "r3_routes",
+ "server": {
+  "kind": "pyright",
+  "version": "1.1.414"
+ },
+ "project": {
+  "name": "D4Vinci/Scrapling@08f107b1240f",
+  "source": "corpus",
+  "ref": "temp/corpus/D4Vinci__Scrapling@08f107b1240f",
+  "commit": "08f107b1240fd72847b0f5e10426c7e6cc16e67e",
+  "language": "python"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "scrapling/engines/_browsers/_types.py",
+    "positions": [
+     [
+      30,
+      35
+     ],
+     [
+      33,
+      33
+     ],
+     [
+      34,
+      26
+     ],
+     [
+      35,
+      21
+     ],
+     [
+      44,
+      16
+     ],
+     [
+      58,
+      30
+     ],
+     [
+      67,
+      20
+     ],
+     [
+      75,
+      30
+     ],
+     [
+      84,
+      25
+     ],
+     [
+      86,
+      19
+     ],
+     [
+      105,
+      12
+     ],
+     [
+      116,
+      29
+     ]
+    ],
+    "ends": [
+     [
+      30,
+      38
+     ],
+     [
+      33,
+      35
+     ],
+     [
+      34,
+      31
+     ],
+     [
+      35,
+      23
+     ],
+     [
+      44,
+      20
+     ],
+     [
+      58,
+      32
+     ],
+     [
+      67,
+      22
+     ],
+     [
+      75,
+      34
+     ],
+     [
+      84,
+      29
+     ],
+     [
+      86,
+      21
+     ],
+     [
+      105,
+      21
+     ],
+     [
+      116,
+      38
+     ]
+    ],
+    "names": [
+     "total",
+     "bool",
+     "ProxySpec",
+     "str",
+     "Optional",
+     "str",
+     "bool",
+     "Callable",
+     "Optional",
+     "bool",
+     "disable_resources",
+     "PlaywrightSession"
+    ]
+   },
+   {
+    "path": "tests/fetchers/async/test_stealth.py",
+    "positions": [
+     [
+      17,
+      17
+     ],
+     [
+      34,
+      44
+     ],
+     [
+      36,
+      38
+     ],
+     [
+      38,
+      18
+     ],
+     [
+      40,
+      32
+     ],
+     [
+      43,
+      32
+     ],
+     [
+      44,
+      25
+     ],
+     [
+      44,
+      31
+     ],
+     [
+      50,
+      61
+     ],
+     [
+      50,
+      73
+     ],
+     [
+      74,
+      12
+     ],
+     [
+      75,
+      14
+     ]
+    ],
+    "ends": [
+     [
+      17,
+      21
+     ],
+     [
+      34,
+      48
+     ],
+     [
+      36,
+      44
+     ],
+     [
+      38,
+      22
+     ],
+     [
+      40,
+      34
+     ],
+     [
+      43,
+      34
+     ],
+     [
+      44,
+      28
+     ],
+     [
+      44,
+      34
+     ],
+     [
+      50,
+      67
+     ],
+     [
+      50,
+      79
+     ],
+     [
+      74,
+      16
+     ],
+     [
+      75,
+      16
+     ]
+    ],
+    "names": [
+     "httpbin",
+     "fetcher",
+     "async_fetch",
+     "cookies",
+     "self",
+     "page",
+     "mouse",
+     "wheel",
+     "page_action",
+     "scroll_page",
+     "response",
+     "urls"
+    ]
+   },
+   {
+    "path": "tests/parser/test_attributes_handler.py",
+    "positions": [
+     [
+      4,
+      48
+     ],
+     [
+      124,
+      13
+     ],
+     [
+      152,
+      40
+     ],
+     [
+      164,
+      13
+     ],
+     [
+      191,
+      20
+     ],
+     [
+      219,
+      31
+     ],
+     [
+      246,
+      36
+     ],
+     [
+      252,
+      13
+     ],
+     [
+      279,
+      13
+     ],
+     [
+      293,
+      34
+     ],
+     [
+      304,
+      19
+     ],
+     [
+      328,
+      18
+     ]
+    ],
+    "ends": [
+     [
+      4,
+      57
+     ],
+     [
+      124,
+      19
+     ],
+     [
+      152,
+      47
+     ],
+     [
+      164,
+      18
+     ],
+     [
+      191,
+      25
+     ],
+     [
+      219,
+      34
+     ],
+     [
+      246,
+      42
+     ],
+     [
+      252,
+      15
+     ],
+     [
+      279,
+      18
+     ],
+     [
+      293,
+      36
+     ],
+     [
+      304,
+      23
+     ],
+     [
+      328,
+      20
+     ]
+    ],
+    "names": [
+     "AttributesHandler",
+     "json_string",
+     "search_values",
+     "input_elem",
+     "TypeError",
+     "attrib",
+     "elem1_again",
+     "key",
+     "attrs_list",
+     "self",
+     "Selector",
+     "page"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "definitionConsistency",
+  "path": "scrapling/__init__.py",
+  "line": 23,
+  "character": 16,
+  "extra": "from:tests/parser/test_attributes_handler.py:304:19"
+ },
+ "ops": [],
+ "case": {
+  "loc": [
+   "scrapling/__init__.py",
+   23,
+   12,
+   23,
+   20
+  ],
+  "sub": "d",
+  "target": [
+   "tests/parser/test_attributes_handler.py",
+   304,
+   19
+  ]
+ },
+ "shape": "definitionConsistency:lost",
+ "signature": "pyright|r3_routes|definitionConsistency:lost",
+ "expected": [
+  [
+   "scrapling/parser.py",
+   76,
+   6,
+   76,
+   14
+  ]
+ ],
+ "actual": [],
+ "reproduced": "3/3",
+ "note": "flake 3/3 [r1:SCR r2:SCR r3:SCR] in 44s",
+ "violation": {
+  "oracle": "r3_routes",
+  "server": "pyright-1.1.414",
+  "project": "D4Vinci/Scrapling@08f107b1240f",
+  "key": {
+   "method": "definitionConsistency",
+   "path": "scrapling/__init__.py",
+   "line": 23,
+   "character": 16,
+   "extra": "from:tests/parser/test_attributes_handler.py:304:19"
+  },
+  "expected": [
+   [
+    "scrapling/parser.py",
+    76,
+    6,
+    76,
+    14
+   ]
+  ],
+  "actual": [],
+  "ops": [],
+  "detail": "{\"case\": {\"loc\": [\"scrapling/__init__.py\", 23, 12, 23, 20], \"sub\": \"d\", \"target\": [\"tests/parser/test_attributes_handler.py\", 304, 19]}, \"note\": \"flake 3/3 [r1:SCR r2:SCR r3:SCR] in 44s\", \"shape\": \"definitionConsistency:lost\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "pyright|r3_routes|definitionConsistency:lost",
+  "run_id": "0f7d1b71b1a8"
+ },
+ "replay_logs": [
+  "logs/pyright-1.1.414-0f7d1b71b1a8-r3-replay-baseline-20260923-175223-225846.jsonl.gz",
+  "logs/pyright-1.1.414-0f7d1b71b1a8-r3-replay-control-20260923-175231-bfbdcf.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

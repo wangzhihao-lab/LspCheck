@@ -1,0 +1,6 @@
+2026-09-25 14:01:24,646 INFO campaign_run run 916270691e73: r2_handles on jdtls 1.13.0, jdtls-2111 seed 2 settled, targets ['src/app/Person.java']
+2026-09-25 14:03:05,537 INFO campaign_run run 916270691e73: 3 candidate(s) in 101s; confirming
+2026-09-25 14:03:23,045 INFO flake replay 1/3 of jdtls|r2_handles|completionResolve:changed: settled=True control_stable=True reproduced=True (17.5s)
+2026-09-25 14:03:41,262 INFO flake replay 2/3 of jdtls|r2_handles|completionResolve:changed: settled=True control_stable=True reproduced=True (18.2s)
+2026-09-25 14:03:58,779 INFO flake replay 3/3 of jdtls|r2_handles|completionResolve:changed: settled=True control_stable=True reproduced=True (17.5s)
+2026-09-25 14:03:58,781 INFO campaign_run run 916270691e73 finished: ok, 1 confirmed of 3 candidate(s), 154s

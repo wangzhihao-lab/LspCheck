@@ -1,0 +1,82 @@
+{
+ "queries": [
+  "unicode in:title repo:rust-lang/rust-analyzer is:issue",
+  "\"document symbol\" wrong repo:rust-lang/rust-analyzer is:issue",
+  "\"document symbol\" unicode repo:rust-lang/rust-analyzer is:issue",
+  "\"document symbol\" whitespace repo:rust-lang/rust-analyzer is:issue"
+ ],
+ "matches": [
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 23301,
+   "title": "Error messages disappear when `rustc-unicode` is enabled",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/23301",
+   "state": "closed",
+   "created": "2026-09-06",
+   "comments": 4,
+   "query": "unicode in:title repo:rust-lang/rust-analyzer is:issue"
+  },
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 17420,
+   "title": "\"Request textdocument/selectionrange Failed\" when executing editor.action.smartSelect.expand in vscode on some unicode box drawing characters",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/17420",
+   "state": "closed",
+   "created": "2024-06-14",
+   "comments": 1,
+   "query": "unicode in:title repo:rust-lang/rust-analyzer is:issue"
+  },
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 9401,
+   "title": "Add unicode character snippets",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/9401",
+   "state": "closed",
+   "created": "2021-06-25",
+   "comments": 2,
+   "query": "unicode in:title repo:rust-lang/rust-analyzer is:issue"
+  },
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 9121,
+   "title": "Panic on textDocument/didChange containing a multi-byte unicode character",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/9121",
+   "state": "closed",
+   "created": "2021-06-03",
+   "comments": 5,
+   "query": "unicode in:title repo:rust-lang/rust-analyzer is:issue"
+  },
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 7635,
+   "title": "Unicode-related panic when editing comment",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/7635",
+   "state": "closed",
+   "created": "2021-02-10",
+   "comments": 2,
+   "query": "unicode in:title repo:rust-lang/rust-analyzer is:issue"
+  },
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 144,
+   "title": "LSP: Validate responses against client capabilities",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/144",
+   "state": "open",
+   "created": "2018-10-18",
+   "comments": 17,
+   "query": "\"document symbol\" wrong repo:rust-lang/rust-analyzer is:issue"
+  },
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 9601,
+   "title": "GTK3 on Windows 10: Type hinting but no type checking?",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/9601",
+   "state": "closed",
+   "created": "2021-07-14",
+   "comments": 16,
+   "query": "\"document symbol\" wrong repo:rust-lang/rust-analyzer is:issue"
+  }
+ ],
+ "notes": [],
+ "authenticated": true
+}

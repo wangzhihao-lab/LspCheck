@@ -1,0 +1,77 @@
+{
+ "schema": 1,
+ "id": "gopls-72753",
+ "meta": {
+  "server": "gopls",
+  "kind": "gopls",
+  "number": 72753,
+  "url": "https://github.com/golang/go/issues/72753",
+  "title": "x/tools/gopls: completion has wrong textedit in some cases",
+  "oracle_class": "R4",
+  "subtype": "completion",
+  "fix_ref": "golang/tools@1587f35e0f29 (gopls/internal/server/completion: get correct surrounding for second lhs)",
+  "fix_shas": [
+   "1587f35e0f29901400db45729165312c35747447"
+  ],
+  "pre_version": "v0.18.1",
+  "post_version": "v0.19.0",
+  "pre_build": "v0.18.1",
+  "post_build": "v0.19.0",
+  "toolchain": "go1.24.4",
+  "build_notes": "Both built and run with go1.24.4 (golang.org/dl, under temp/lsp_servers/go-sdks; toolchain.json), as for the other v0.18.1/v0.19.0 cases: the local go1.27 cannot build v0.18.1 and go1.24.0 cannot build v0.19.0. The issue was reported 2025-03-09 against master; v0.18.1 was tagged 2025-02-24, v0.19.0 2025-06-10.",
+  "effort_minutes": 6,
+  "notes": "For 'left,ri' (an assignment's left-hand side cut short) gopls found no identifier for the second operand (the fix's message: the expression list parses as an ExprStmt rather than a BadExpr, so no surrounding was computed), and the completion's replacement range was empty at the cursor, so the client appended the item ('riright'). The statement is a parse error before and after the completion and gopls suppresses type errors in files with parse errors, so the case uses the specification probe edit_text_differs with the output the issue expects."
+ },
+ "language": "go",
+ "settings": {},
+ "settings_note": "The issue names no settings.",
+ "session": {
+  "settle_timeout_s": 180
+ },
+ "files": [
+  {
+   "path": "f.go",
+   "provenance": "issue-adapted",
+   "source": "issue body, 'What did you do?' code block",
+   "note": "the function verbatim after an added package clause 'package p' and a blank line"
+  },
+  {
+   "path": "go.mod",
+   "provenance": "scaffold",
+   "source": "",
+   "note": "a module around the file; go 1.24, the Go of the era"
+  }
+ ],
+ "repro": {
+  "attempt": 1,
+  "timing": "settled",
+  "steps": "Open f.go. Request completion with the cursor on 'ri' in 'left,ri' (line 3, character 8, the end of 'ri') and accept 'right'. Reported: 'left,riright'; expected (issue): 'left,right'. Probe (specification): the edited f.go must equal the issue's expected function text (after the same package clause).",
+  "ops": [
+   {
+    "kind": "open",
+    "path": "f.go"
+   }
+  ],
+  "probe": {
+   "type": "edit_text_differs",
+   "params": {
+    "edit": {
+     "via": "completion",
+     "path": "f.go",
+     "position": [
+      3,
+      8
+     ],
+     "label_re": "^right$",
+     "missing": "invalid"
+    },
+    "expected": {
+     "path": "f.go",
+     "text": "package p\n\nfunc f(left,right string){\n\tleft,right\n}\n",
+     "source": "issue body ('What did you expect to see?' block), after the same added package clause"
+    }
+   }
+  }
+ },
+ "attempts": []
+}

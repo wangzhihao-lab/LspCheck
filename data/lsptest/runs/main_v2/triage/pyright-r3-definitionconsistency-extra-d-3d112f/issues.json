@@ -1,0 +1,92 @@
+{
+ "queries": [
+  "\"go to definition\" in:title repo:microsoft/pyright is:issue",
+  "definition extra repo:microsoft/pyright is:issue",
+  "definition \"go to definition\" repo:microsoft/pyright is:issue",
+  "definition inconsistent repo:microsoft/pyright is:issue"
+ ],
+ "matches": [
+  {
+   "repo": "microsoft/pyright",
+   "number": 795,
+   "title": "Go To Definition jumps to source rather than typeshed stubs",
+   "url": "https://github.com/microsoft/pyright/issues/795",
+   "state": "closed",
+   "created": "2020-07-06",
+   "comments": 13,
+   "query": "\"go to definition\" in:title repo:microsoft/pyright is:issue"
+  },
+  {
+   "repo": "microsoft/pyright",
+   "number": 6041,
+   "title": "Is it possible to implement Go to definition inside Doc-strings or comments?",
+   "url": "https://github.com/microsoft/pyright/issues/6041",
+   "state": "closed",
+   "created": "2023-09-29",
+   "comments": 3,
+   "query": "\"go to definition\" in:title repo:microsoft/pyright is:issue"
+  },
+  {
+   "repo": "microsoft/pyright",
+   "number": 3201,
+   "title": "Wrong behavior going to definition on 3rd party libraries",
+   "url": "https://github.com/microsoft/pyright/issues/3201",
+   "state": "closed",
+   "created": "2022-03-15",
+   "comments": 6,
+   "query": "\"go to definition\" in:title repo:microsoft/pyright is:issue"
+  },
+  {
+   "repo": "microsoft/pyright",
+   "number": 10910,
+   "title": "Pyright fails on files that are too large",
+   "url": "https://github.com/microsoft/pyright/issues/10910",
+   "state": "open",
+   "created": "2025-09-09",
+   "comments": 9,
+   "query": "definition extra repo:microsoft/pyright is:issue"
+  },
+  {
+   "repo": "microsoft/pyright",
+   "number": 10252,
+   "title": "Pyright incorrectly reports incompatibleMethodOverride for property overriden with cached_property",
+   "url": "https://github.com/microsoft/pyright/issues/10252",
+   "state": "closed",
+   "created": "2025-04-04",
+   "comments": 2,
+   "query": "definition extra repo:microsoft/pyright is:issue"
+  },
+  {
+   "repo": "microsoft/pyright",
+   "number": 3013,
+   "title": "Strict Setting for Return Types",
+   "url": "https://github.com/microsoft/pyright/issues/3013",
+   "state": "closed",
+   "created": "2022-02-09",
+   "comments": 22,
+   "query": "definition extra repo:microsoft/pyright is:issue"
+  },
+  {
+   "repo": "microsoft/pyright",
+   "number": 10755,
+   "title": "PEP-728 arguments rejected from `typing_extensions.TypedDict`",
+   "url": "https://github.com/microsoft/pyright/issues/10755",
+   "state": "closed",
+   "created": "2025-07-29",
+   "comments": 2,
+   "query": "definition extra repo:microsoft/pyright is:issue"
+  },
+  {
+   "repo": "microsoft/pyright",
+   "number": 1118,
+   "title": "reportUnusedVariable ignore pattern",
+   "url": "https://github.com/microsoft/pyright/issues/1118",
+   "state": "closed",
+   "created": "2020-10-23",
+   "comments": 116,
+   "query": "definition extra repo:microsoft/pyright is:issue"
+  }
+ ],
+ "notes": [],
+ "authenticated": true
+}

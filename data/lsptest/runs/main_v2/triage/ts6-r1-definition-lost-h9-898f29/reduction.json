@@ -1,0 +1,159 @@
+{
+ "vid": "d943bb79c7d7-v01",
+ "ops_before": 12,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 32,
+ "cache_hits": 21,
+ "reduce_seconds": 1782.011,
+ "budget_exhausted": true,
+ "probe_log": [
+  [
+   7,
+   false
+  ],
+  [
+   8,
+   false
+  ],
+  [
+   5,
+   false
+  ],
+  [
+   5,
+   false
+  ],
+  [
+   5,
+   false
+  ],
+  [
+   6,
+   false
+  ],
+  [
+   10,
+   false
+  ],
+  [
+   10,
+   false
+  ],
+  [
+   10,
+   true
+  ],
+  [
+   8,
+   false
+  ],
+  [
+   8,
+   false
+  ],
+  [
+   4,
+   false
+  ],
+  [
+   4,
+   false
+  ],
+  [
+   4,
+   false
+  ],
+  [
+   4,
+   false
+  ],
+  [
+   4,
+   false
+  ],
+  [
+   5,
+   false
+  ],
+  [
+   9,
+   false
+  ],
+  [
+   9,
+   true
+  ],
+  [
+   8,
+   true
+  ],
+  [
+   7,
+   false
+  ],
+  [
+   7,
+   false
+  ],
+  [
+   6,
+   false
+  ],
+  [
+   4,
+   false
+  ],
+  [
+   4,
+   false
+  ],
+  [
+   7,
+   false
+  ],
+  [
+   7,
+   false
+  ],
+  [
+   7,
+   true
+  ],
+  [
+   6,
+   false
+  ],
+  [
+   3,
+   false
+  ],
+  [
+   1,
+   false
+  ],
+  [
+   2,
+   false
+  ]
+ ],
+ "logs": [
+  "ts6-6.0.3-tr898f29-replay-baseline-20261118-230036-38b8c1.jsonl.gz",
+  "ts6-6.0.3-tr898f29-replay-control-20261118-230036-d07e7e.jsonl.gz",
+  "ts6-6.0.3-tr898f29-replay-history-20261118-230054-bca4fc.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [
+   [
+    "src/renderer/src/hooks/useUserSettingsRoot.ts",
+    329,
+    4,
+    329,
+    19
+   ]
+  ],
+  "actual": []
+ },
+ "ops_after": 7,
+ "total_seconds": 2053.9
+}

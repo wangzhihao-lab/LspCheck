@@ -1,0 +1,349 @@
+{
+ "oracle": "r3_routes",
+ "server": "rust-analyzer",
+ "version": "2026-09-21",
+ "project": "rust-lang/rustlings@a650509c789d",
+ "language": "rust",
+ "seed": 1,
+ "targets": [
+  {
+   "path": "src/cargo_toml.rs",
+   "positions": [
+    [
+     1,
+     5
+    ],
+    [
+     29,
+     5
+    ],
+    [
+     55,
+     20
+    ],
+    [
+     71,
+     14
+    ],
+    [
+     92,
+     18
+    ],
+    [
+     94,
+     45
+    ],
+    [
+     122,
+     31
+    ],
+    [
+     129,
+     12
+    ]
+   ],
+   "ends": [
+    [
+     1,
+     7
+    ],
+    [
+     29,
+     7
+    ],
+    [
+     55,
+     29
+    ],
+    [
+     71,
+     24
+    ],
+    [
+     92,
+     30
+    ],
+    [
+     94,
+     46
+    ],
+    [
+     122,
+     33
+    ],
+    [
+     129,
+     17
+    ]
+   ],
+   "names": [
+    "std",
+    "buf",
+    "extend_from_slice",
+    "exercise_path_prefix",
+    "test_bins_start_end_ind",
+    "ok",
+    "new",
+    "assert_eq"
+   ]
+  },
+  {
+   "path": "src/watch/state.rs",
+   "positions": [
+    [
+     17,
+     22
+    ],
+    [
+     48,
+     17
+    ],
+    [
+     66,
+     46
+    ],
+    [
+     165,
+     13
+    ],
+    [
+     183,
+     31
+    ],
+    [
+     208,
+     12
+    ],
+    [
+     276,
+     15
+    ],
+    [
+     279,
+     27
+    ]
+   ],
+   "ends": [
+    [
+     17,
+     30
+    ],
+    [
+     48,
+     22
+    ],
+    [
+     66,
+     54
+    ],
+    [
+     165,
+     15
+    ],
+    [
+     183,
+     37
+    ],
+    [
+     208,
+     16
+    ],
+    [
+     276,
+     20
+    ],
+    [
+     279,
+     30
+    ]
+   ],
+   "names": [
+    "OUTPUT_CAPACITY",
+    "term_width",
+    "OUTPUT_CAPACITY",
+    "done",
+    "SetAttribute",
+    "show_key",
+    "show_hint",
+    "stdout"
+   ]
+  }
+ ],
+ "max_cases": 12,
+ "timing": "settled",
+ "result": {
+  "oracle": "r3_routes",
+  "run_id": "r3_routes-rust-analyzer-092430",
+  "cases": 106,
+  "invalid_cases": 0,
+  "sessions": 3,
+  "unsettled": 0,
+  "compared": {
+   "semanticTokensRange": 6,
+   "definitionConsistency": 82,
+   "highlightVsReferences": 16,
+   "definitionConsistency.shorthand": 1,
+   "diagnostics:route": 2
+  },
+  "unstable": {},
+  "seconds": 186.166,
+  "notes": [],
+  "candidates": [
+   {
+    "oracle": "r3_routes",
+    "server": "rust-analyzer-2026-09-21",
+    "project": "rust-lang/rustlings@a650509c789d",
+    "key": {
+     "method": "definitionConsistency.shorthand",
+     "path": "src/watch/state.rs",
+     "line": 70,
+     "character": 17,
+     "extra": "from:src/watch/state.rs:48:17"
+    },
+    "expected": [
+     [
+      "src/watch/state.rs",
+      48,
+      12,
+      48,
+      22
+     ]
+    ],
+    "actual": [
+     [
+      "src/watch/state.rs",
+      38,
+      4,
+      38,
+      14
+     ],
+     [
+      "src/watch/state.rs",
+      48,
+      12,
+      48,
+      22
+     ]
+    ],
+    "ops": [],
+    "detail": "{\"case\": {\"loc\": [\"src/watch/state.rs\", 70, 12, 70, 22], \"sub\": \"d\", \"target\": [\"src/watch/state.rs\", 48, 17]}, \"note\": \"shorthand\", \"shape\": \"definitionConsistency.shorthand:extra\"}",
+    "reproduced": "0/0",
+    "reduced_ops": [],
+    "signature": "rust-analyzer|r3_routes|definitionConsistency.shorthand:extra",
+    "run_id": "r3_routes-rust-analyzer-092430"
+   }
+  ]
+ },
+ "replays": [
+  {
+   "signature": "rust-analyzer|r3_routes|definitionConsistency.shorthand:extra",
+   "key": {
+    "method": "definitionConsistency.shorthand",
+    "path": "src/watch/state.rs",
+    "line": 70,
+    "character": 17,
+    "extra": "from:src/watch/state.rs:48:17"
+   },
+   "outcomes": [
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 52.488,
+     "observed_shape": "definitionConsistency.shorthand:extra",
+     "observed_actual": [
+      [
+       "src/watch/state.rs",
+       38,
+       4,
+       38,
+       14
+      ],
+      [
+       "src/watch/state.rs",
+       48,
+       12,
+       48,
+       22
+      ]
+     ],
+     "observed_expected": [
+      [
+       "src/watch/state.rs",
+       48,
+       12,
+       48,
+       22
+      ]
+     ]
+    },
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 31.371,
+     "observed_shape": "definitionConsistency.shorthand:extra",
+     "observed_actual": [
+      [
+       "src/watch/state.rs",
+       38,
+       4,
+       38,
+       14
+      ],
+      [
+       "src/watch/state.rs",
+       48,
+       12,
+       48,
+       22
+      ]
+     ],
+     "observed_expected": [
+      [
+       "src/watch/state.rs",
+       48,
+       12,
+       48,
+       22
+      ]
+     ]
+    },
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 30.624,
+     "observed_shape": "definitionConsistency.shorthand:extra",
+     "observed_actual": [
+      [
+       "src/watch/state.rs",
+       38,
+       4,
+       38,
+       14
+      ],
+      [
+       "src/watch/state.rs",
+       48,
+       12,
+       48,
+       22
+      ]
+     ],
+     "observed_expected": [
+      [
+       "src/watch/state.rs",
+       48,
+       12,
+       48,
+       22
+      ]
+     ]
+    }
+   ],
+   "reproduced": "3/3"
+  }
+ ],
+ "total_seconds": 300.7
+}

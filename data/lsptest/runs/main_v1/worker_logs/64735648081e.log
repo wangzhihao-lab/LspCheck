@@ -1,0 +1,3 @@
+2026-09-23 22:42:02,343 INFO campaign_run run 64735648081e: r3_routes on gopls v0.23.0, XTLS/Xray-core@d562d8947d31 seed 2 settled, targets ['common/protocol/account.go', 'main/commands/all/api/source_ip_block.go', 'transport/pipe/impl.go']
+2026-09-23 22:47:48,098 INFO campaign_run run 64735648081e: 23 candidate(s) in 346s; confirming
+2026-09-23 22:47:48,102 INFO campaign_run run 64735648081e finished: ok, 0 confirmed of 23 candidate(s), 346s

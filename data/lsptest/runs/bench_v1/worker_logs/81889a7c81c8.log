@@ -1,0 +1,3 @@
+2026-09-24 19:59:11,138 INFO campaign_run run 81889a7c81c8: r1_history on rust-analyzer 2024-09-30, rust-analyzer-18130 seed 1 race0, targets ['src/lib.rs']
+2026-09-24 20:00:59,407 INFO campaign_run run 81889a7c81c8: 0 candidate(s) in 108s; confirming
+2026-09-24 20:00:59,407 INFO campaign_run run 81889a7c81c8 finished: ok, 0 confirmed of 0 candidate(s), 108s

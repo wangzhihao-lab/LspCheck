@@ -1,0 +1,9 @@
+2026-11-18 18:51:26,969 INFO campaign_run run 3db536a7b58d: r4_edits on ts6 6.0.3, DayuanJiang/next-ai-draw-io@58b73ef761d8 seed 2 settled, targets ['components/code-block.tsx', 'components/ui/command.tsx', 'packages/mcp-server/src/pages.ts']
+2026-11-18 18:56:33,092 INFO campaign_run run 3db536a7b58d: 4 candidate(s) in 306s; confirming
+2026-11-18 18:59:13,588 INFO flake replay 1/3 of ts6|r4_edits|diagnostics:extra:2552: settled=True control_stable=True reproduced=True (160.5s)
+2026-11-18 19:02:09,198 INFO flake replay 2/3 of ts6|r4_edits|diagnostics:extra:2552: settled=True control_stable=True reproduced=True (175.6s)
+2026-11-18 19:03:39,394 INFO flake replay 3/3 of ts6|r4_edits|diagnostics:extra:2552: settled=True control_stable=True reproduced=True (90.2s)
+2026-11-18 19:05:02,629 INFO flake replay 1/3 of ts6|r4_edits|diagnostics:extra:2554: settled=True control_stable=True reproduced=True (83.2s)
+2026-11-18 19:06:22,828 INFO flake replay 2/3 of ts6|r4_edits|diagnostics:extra:2554: settled=True control_stable=True reproduced=True (80.2s)
+2026-11-18 19:07:44,985 INFO flake replay 3/3 of ts6|r4_edits|diagnostics:extra:2554: settled=True control_stable=True reproduced=True (82.2s)
+2026-11-18 19:07:44,990 INFO campaign_run run 3db536a7b58d finished: ok, 2 confirmed of 4 candidate(s), 978s

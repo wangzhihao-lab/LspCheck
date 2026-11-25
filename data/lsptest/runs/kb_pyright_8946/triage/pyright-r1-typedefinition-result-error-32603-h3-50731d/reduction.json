@@ -1,0 +1,66 @@
+{
+ "vid": "7b994d0b8763-v00",
+ "ops_before": 4,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 6,
+ "cache_hits": 2,
+ "reduce_seconds": 46.602,
+ "budget_exhausted": false,
+ "probe_log": [
+  [
+   3,
+   false
+  ],
+  [
+   3,
+   true
+  ],
+  [
+   1,
+   false
+  ],
+  [
+   1,
+   false
+  ],
+  [
+   2,
+   false
+  ],
+  [
+   2,
+   false
+  ]
+ ],
+ "lines": {
+  "repro.py": "2/15 non-blank lines kept"
+ },
+ "line_probes": 3,
+ "line_seconds": 84.6,
+ "lines_confirmed": "3/3",
+ "line_skipped": [],
+ "line_budget_exhausted": false,
+ "logs": [
+  "pyright-1.1.380-tr50731d-replay-baseline-20260923-114839-b72909.jsonl.gz",
+  "pyright-1.1.380-tr50731d-replay-control-20260923-114839-d939c3.jsonl.gz",
+  "pyright-1.1.380-tr50731d-replay-history-20260923-114843-bab976.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [
+   [
+    "temp/lsp_servers/pyright-1.1.380/node_modules/pyright/dist/typeshed-fallback/stdlib/datetime.pyi",
+    0,
+    0,
+    0,
+    0
+   ]
+  ],
+  "actual": [
+   "error",
+   -32603
+  ]
+ },
+ "ops_after": 3,
+ "total_seconds": 191.5
+}

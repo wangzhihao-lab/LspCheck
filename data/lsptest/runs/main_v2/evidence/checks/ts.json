@@ -1,0 +1,745 @@
+{
+ "C31": {
+  "cause": "C31",
+  "gid": "ts6-r1-inlayhint-changed-h9-b9d052",
+  "paths_differing_from_corpus": [],
+  "programs": {
+   "TypeScript 6.0.3 (campaign build)": {
+    "version": "6.0.3",
+    "inProgram": true,
+    "found": true,
+    "type": "string",
+    "initializer": "typeof baseOption.value === 'string' ? baseOption.value : ''",
+    "objectType": "ModelOption",
+    "declaredPropertyType": "string",
+    "fileDiagnostics": [
+     "19:5 TS5101 Option 'baseUrl' is deprecated and will stop functioning in TypeScript 7.0. Specify compilerOption '\"ignoreDeprecations\": \"6.0\"' to silence this error.   Visit https://aka.ms/ts6 for migration information."
+    ]
+   },
+   "project's own TypeScript": {
+    "version": "5.9.3",
+    "inProgram": true,
+    "found": true,
+    "type": "string",
+    "initializer": "typeof baseOption.value === 'string' ? baseOption.value : ''",
+    "objectType": "ModelOption",
+    "declaredPropertyType": "string",
+    "fileDiagnostics": []
+   }
+  },
+  "narrow_any": {
+   "version": "6.0.3",
+   "source": "declare const v: any;\nconst m = typeof v.value === 'string' ? v.value : '';\n",
+   "type": "any"
+  }
+ },
+ "C11": {
+  "cause": "C11",
+  "gid": "ts6-r4-diagnostics-extra-2322-mutation-m3-1879f3",
+  "path": "src/plugins/downloader/main/index.ts",
+  "title": "Add missing properties",
+  "tsconfig": "tsconfig.json",
+  "compilers": {
+   "tsc 6.0.3 (campaign build)": {
+    "base": {
+     "cmd": "node <repo>/temp/lsp_servers/ts6-6.0.3/node_modules/typescript/bin/tsc --noEmit --pretty false -p tsconfig.json",
+     "exit": 0,
+     "errors_in_file": [],
+     "codes": [],
+     "head": []
+    },
+    "pre": {
+     "cmd": "node <repo>/temp/lsp_servers/ts6-6.0.3/node_modules/typescript/bin/tsc --noEmit --pretty false -p tsconfig.json",
+     "exit": 2,
+     "errors_in_file": [
+      "src/plugins/downloader/main/index.ts(181,13): error TS2741: Property 'globalObj' is missing in type '{ fetch: { (input: RequestInfo | URL, init?: RequestInit): Promise<Response>; (input: string | URL | Request, init?: RequestInit): Promise<Response>; (input: string | URL | Request, init?: RequestInit): Promise<Response>; }; identifier: string; requestKey: string; }' but required in type 'BgConfig'."
+     ],
+     "codes": [
+      "2741"
+     ],
+     "head": [
+      "src/plugins/downloader/main/index.ts(181,13): error TS2741: Property 'globalObj' is missing in type '{ fetch: { (input: RequestInfo | URL, init?: RequestInit): Promise<Response>; (input: string | URL | Request, init?: RequestInit): Promise<Response>; (input: string | URL | Request, init?: RequestInit): Promise<Response>; }; identifier: string; requestKey: string; }' but required in type 'BgConfig'."
+     ]
+    },
+    "post": {
+     "cmd": "node <repo>/temp/lsp_servers/ts6-6.0.3/node_modules/typescript/bin/tsc --noEmit --pretty false -p tsconfig.json",
+     "exit": 2,
+     "errors_in_file": [
+      "src/plugins/downloader/main/index.ts(185,9): error TS2322: Type 'undefined' is not assignable to type 'Record<string, any>'."
+     ],
+     "codes": [
+      "2322"
+     ],
+     "head": [
+      "src/plugins/downloader/main/index.ts(185,9): error TS2322: Type 'undefined' is not assignable to type 'Record<string, any>'."
+     ]
+    }
+   },
+   "tsc 7.0.1-rc (project's own)": {
+    "base": {
+     "cmd": "<scratch>/ts6-r4-diagnostics-extra-2322-mutation-m3-1879f3/node_modules/.bin/tsc --noEmit --pretty false -p tsconfig.json",
+     "exit": 0,
+     "errors_in_file": [],
+     "codes": [],
+     "head": []
+    },
+    "pre": {
+     "cmd": "<scratch>/ts6-r4-diagnostics-extra-2322-mutation-m3-1879f3/node_modules/.bin/tsc --noEmit --pretty false -p tsconfig.json",
+     "exit": 1,
+     "errors_in_file": [
+      "src/plugins/downloader/main/index.ts(181,13): error TS2741: Property 'globalObj' is missing in type '{ fetch: { (input: RequestInfo | URL, init?: RequestInit): Promise<Response>; (input: string | URL | Request, init?: RequestInit): Promise<Response>; (input: string | URL | Request, init?: RequestInit): Promise<Response>; }; identifier: string; requestKey: string; }' but required in type 'BgConfig'."
+     ],
+     "codes": [
+      "2741"
+     ],
+     "head": [
+      "src/plugins/downloader/main/index.ts(181,13): error TS2741: Property 'globalObj' is missing in type '{ fetch: { (input: RequestInfo | URL, init?: RequestInit): Promise<Response>; (input: string | URL | Request, init?: RequestInit): Promise<Response>; (input: string | URL | Request, init?: RequestInit): Promise<Response>; }; identifier: string; requestKey: string; }' but required in type 'BgConfig'."
+     ]
+    },
+    "post": {
+     "cmd": "<scratch>/ts6-r4-diagnostics-extra-2322-mutation-m3-1879f3/node_modules/.bin/tsc --noEmit --pretty false -p tsconfig.json",
+     "exit": 1,
+     "errors_in_file": [
+      "src/plugins/downloader/main/index.ts(185,9): error TS2322: Type 'undefined' is not assignable to type 'Record<string, any>'."
+     ],
+     "codes": [
+      "2322"
+     ],
+     "head": [
+      "src/plugins/downloader/main/index.ts(185,9): error TS2322: Type 'undefined' is not assignable to type 'Record<string, any>'."
+     ]
+    }
+   }
+  }
+ },
+ "C32": {
+  "cause": "C32",
+  "gid": "ts6-r4-diagnostics-changed-1064-2322-quickfix-d597f5",
+  "path": "lib/hexo/scaffold.ts",
+  "title": "Convert to async function",
+  "tsconfig": "tsconfig.json",
+  "compilers": {
+   "tsc 6.0.3 (campaign build)": {
+    "base": {
+     "cmd": "node <repo>/temp/lsp_servers/ts6-6.0.3/node_modules/typescript/bin/tsc --noEmit --pretty false -p tsconfig.json",
+     "exit": 2,
+     "errors_in_file": [
+      "lib/hexo/scaffold.ts(51,5): error TS2322: Type 'Bluebird<{ name: string; path: string; } | undefined>' is not assignable to type 'Bluebird<{ name: string; path: string; }>'.",
+      "lib/hexo/scaffold.ts(60,14): error TS7053: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type '{ normal: string; }'."
+     ],
+     "codes": [
+      "2322",
+      "7053"
+     ],
+     "head": [
+      "lib/box/index.ts(65,5): error TS2322: Type '(RegExp | null)[]' is not assignable to type 'RegExp[]'.",
+      "  Type 'RegExp | null' is not assignable to type 'RegExp'.",
+      "    Type 'null' is not assignable to type 'RegExp'."
+     ]
+    },
+    "post": {
+     "cmd": "node <repo>/temp/lsp_servers/ts6-6.0.3/node_modules/typescript/bin/tsc --noEmit --pretty false -p tsconfig.json",
+     "exit": 2,
+     "errors_in_file": [
+      "lib/hexo/scaffold.ts(47,37): error TS1064: The return type of an async function or method must be the global Promise<T> type. Did you mean to write 'Promise<{ name: string; path: string; }>'?",
+      "lib/hexo/scaffold.ts(52,7): error TS2322: Type '{ name: string; path: string; } | undefined' is not assignable to type '{ name: string; path: string; }'.",
+      "lib/hexo/scaffold.ts(61,14): error TS7053: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type '{ normal: string; }'."
+     ],
+     "codes": [
+      "1064",
+      "2322",
+      "7053"
+     ],
+     "head": [
+      "lib/box/index.ts(65,5): error TS2322: Type '(RegExp | null)[]' is not assignable to type 'RegExp[]'.",
+      "  Type 'RegExp | null' is not assignable to type 'RegExp'.",
+      "    Type 'null' is not assignable to type 'RegExp'."
+     ]
+    }
+   },
+   "tsc 5.9.3 (project's own)": {
+    "base": {
+     "cmd": "<scratch>/ts6-r4-diagnostics-changed-1064-2322-quickfix-d597f5/node_modules/.bin/tsc --noEmit --pretty false -p tsconfig.json",
+     "exit": 0,
+     "errors_in_file": [],
+     "codes": [],
+     "head": []
+    },
+    "post": {
+     "cmd": "<scratch>/ts6-r4-diagnostics-changed-1064-2322-quickfix-d597f5/node_modules/.bin/tsc --noEmit --pretty false -p tsconfig.json",
+     "exit": 2,
+     "errors_in_file": [
+      "lib/hexo/scaffold.ts(47,37): error TS1064: The return type of an async function or method must be the global Promise<T> type. Did you mean to write 'Promise<{ name: string; path: string; }>'?"
+     ],
+     "codes": [
+      "1064"
+     ],
+     "head": [
+      "lib/hexo/scaffold.ts(47,37): error TS1064: The return type of an async function or method must be the global Promise<T> type. Did you mean to write 'Promise<{ name: string; path: string; }>'?"
+     ]
+    }
+   }
+  }
+ },
+ "C33": {
+  "cause": "C33",
+  "gid": "ts6-r4-diagnostics-changed-mutation-m1-34f06f",
+  "path": "examples/rendering/shared/src/components/Reveal.tsx",
+  "title": "Fix all detected spelling errors",
+  "tsconfig": "examples/rendering/tsconfig.json",
+  "compilers": {
+   "tsc 6.0.3 (campaign build)": {
+    "base": {
+     "cmd": "node <repo>/temp/lsp_servers/ts6-6.0.3/node_modules/typescript/bin/tsc --noEmit --pretty false -p tsconfig.json",
+     "exit": 2,
+     "errors_in_file": [
+      "shared/src/components/Reveal.tsx(1,83): error TS2307: Cannot find module 'solid-js' or its corresponding type declarations.",
+      "shared/src/components/Reveal.tsx(13,5): error TS2875: This JSX tag requires the module path '@solidjs/web/jsx-runtime' to exist, but none could be found. Make sure you have types for the appropriate package installed.",
+      "shared/src/components/Reveal.tsx(13,24): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(13,68): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(14,7): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(15,9): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(15,30): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(16,9): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(16,23): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(17,7): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(29,7): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(29,17): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(30,7): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(31,48): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(31,59): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(34,7): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(35,7): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(36,9): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(36,21): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(37,7): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(38,7): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(47,9): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(48,11): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(48,24): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(49,11): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(50,13): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(58,11): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(59,11): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(60,13): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(68,11): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(69,11): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(70,13): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(78,11): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(79,9): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(80,9): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(81,11): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(85,22): error TS7006: Parameter 'e' implicitly has an 'any' type.",
+      "shared/src/components/Reveal.tsx(87,21): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(87,42): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(88,9): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(89,9): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(89,40): error TS7006: Parameter 's' implicitly has an 'any' type.",
+      "shared/src/components/Reveal.tsx(89,64): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(90,7): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(93,9): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(93,26): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(94,9): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(95,41): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(95,78): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(97,9): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(99,11): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(103,11): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(106,9): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(106,25): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(107,9): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(108,32): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(108,55): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(109,11): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(109,32): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(111,9): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(113,11): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(116,15): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(119,15): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(122,11): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+     ],
+     "codes": [
+      "2307",
+      "2875",
+      "7006",
+      "7026"
+     ],
+     "head": [
+      "csr/client.tsx(1,24): error TS2307: Cannot find module '@solidjs/web' or its corresponding type declarations.",
+      "csr/client.tsx(4,14): error TS2875: This JSX tag requires the module path '@solidjs/web/jsx-runtime' to exist, but none could be found. Make sure you have types for the appropriate package installed.",
+      "shared/src/components/App.tsx(1,48): error TS2307: Cannot find module 'solid-js' or its corresponding type declarations."
+     ]
+    },
+    "pre": {
+     "cmd": "node <repo>/temp/lsp_servers/ts6-6.0.3/node_modules/typescript/bin/tsc --noEmit --pretty false -p tsconfig.json",
+     "exit": 2,
+     "errors_in_file": [
+      "shared/src/components/Reveal.tsx(1,75): error TS2307: Cannot find module 'solid-js' or its corresponding type declarations.",
+      "shared/src/components/Reveal.tsx(13,5): error TS2875: This JSX tag requires the module path '@solidjs/web/jsx-runtime' to exist, but none could be found. Make sure you have types for the appropriate package installed.",
+      "shared/src/components/Reveal.tsx(13,24): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(13,68): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(14,7): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(15,9): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(15,30): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(16,9): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(16,23): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(17,7): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(29,7): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(29,17): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(30,7): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(31,48): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(31,59): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(34,7): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(35,7): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(36,9): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(36,21): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(37,7): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(38,7): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(47,9): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(48,11): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(48,24): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(49,11): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(50,13): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(58,11): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(59,11): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(60,13): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(68,11): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(69,11): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(70,13): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(78,11): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(79,9): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(80,9): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(81,11): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(85,22): error TS7006: Parameter 'e' implicitly has an 'any' type.",
+      "shared/src/components/Reveal.tsx(87,21): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(87,42): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(88,9): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(89,9): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(89,40): error TS7006: Parameter 's' implicitly has an 'any' type.",
+      "shared/src/components/Reveal.tsx(89,64): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(90,7): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(93,9): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(93,26): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(94,9): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(95,41): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(95,78): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(97,9): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(98,10): error TS2552: Cannot find name 'Reveal'. Did you mean 'eval'?",
+      "shared/src/components/Reveal.tsx(99,11): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(103,11): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(104,11): error TS2552: Cannot find name 'Reveal'. Did you mean 'eval'?",
+      "shared/src/components/Reveal.tsx(106,9): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(106,25): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(107,9): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(108,32): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(108,55): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(109,11): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(109,32): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(111,9): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(112,10): error TS2552: Cannot find name 'Reveal'. Did you mean 'eval'?",
+      "shared/src/components/Reveal.tsx(113,11): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(115,14): error TS2552: Cannot find name 'Reveal'. Did you mean 'eval'?",
+      "shared/src/components/Reveal.tsx(116,15): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(119,15): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(120,15): error TS2552: Cannot find name 'Reveal'. Did you mean 'eval'?",
+      "shared/src/components/Reveal.tsx(122,11): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(123,11): error TS2552: Cannot find name 'Reveal'. Did you mean 'eval'?"
+     ],
+     "codes": [
+      "2307",
+      "2552",
+      "2875",
+      "7006",
+      "7026"
+     ],
+     "head": [
+      "csr/client.tsx(1,24): error TS2307: Cannot find module '@solidjs/web' or its corresponding type declarations.",
+      "csr/client.tsx(4,14): error TS2875: This JSX tag requires the module path '@solidjs/web/jsx-runtime' to exist, but none could be found. Make sure you have types for the appropriate package installed.",
+      "shared/src/components/App.tsx(1,48): error TS2307: Cannot find module 'solid-js' or its corresponding type declarations."
+     ]
+    },
+    "post": {
+     "cmd": "node <repo>/temp/lsp_servers/ts6-6.0.3/node_modules/typescript/bin/tsc --noEmit --pretty false -p tsconfig.json",
+     "exit": 2,
+     "errors_in_file": [
+      "shared/src/components/Reveal.tsx(1,75): error TS2307: Cannot find module 'solid-js' or its corresponding type declarations.",
+      "shared/src/components/Reveal.tsx(13,5): error TS2875: This JSX tag requires the module path '@solidjs/web/jsx-runtime' to exist, but none could be found. Make sure you have types for the appropriate package installed.",
+      "shared/src/components/Reveal.tsx(13,24): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(13,68): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(14,7): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(15,9): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(15,30): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(16,9): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(16,23): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(17,7): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(29,7): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(29,17): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(30,7): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(31,48): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(31,59): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(34,7): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(35,7): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(36,9): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(36,21): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(37,7): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(38,7): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(47,9): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(48,11): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(48,24): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(49,11): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(50,13): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(58,11): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(59,11): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(60,13): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(68,11): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(69,11): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(70,13): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(78,11): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(79,9): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(80,9): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(81,11): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(85,22): error TS7006: Parameter 'e' implicitly has an 'any' type.",
+      "shared/src/components/Reveal.tsx(87,21): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(87,42): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(88,9): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(89,9): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(89,40): error TS7006: Parameter 's' implicitly has an 'any' type.",
+      "shared/src/components/Reveal.tsx(89,64): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(90,7): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(93,9): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(93,26): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(94,9): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(95,41): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(95,78): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(97,9): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(98,9): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(99,11): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(103,11): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(104,9): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(106,9): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(106,25): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(107,9): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(108,32): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(108,55): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(109,11): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(109,32): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(111,9): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(112,9): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(113,11): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(115,13): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(116,15): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(119,15): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(120,13): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(122,11): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(123,9): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+     ],
+     "codes": [
+      "2307",
+      "2875",
+      "7006",
+      "7026"
+     ],
+     "head": [
+      "csr/client.tsx(1,24): error TS2307: Cannot find module '@solidjs/web' or its corresponding type declarations.",
+      "csr/client.tsx(4,14): error TS2875: This JSX tag requires the module path '@solidjs/web/jsx-runtime' to exist, but none could be found. Make sure you have types for the appropriate package installed.",
+      "shared/src/components/App.tsx(1,48): error TS2307: Cannot find module 'solid-js' or its corresponding type declarations."
+     ]
+    }
+   }
+  }
+ },
+ "C34": {
+  "cause": "C34",
+  "gid": "ts6-r4-diagnostics-extra-17002-2552-mutation-m1-727795",
+  "path": "examples/rendering/shared/src/components/Reveal.tsx",
+  "title": "Change spelling to 'eval'",
+  "tsconfig": "examples/rendering/tsconfig.json",
+  "compilers": {
+   "tsc 6.0.3 (campaign build)": {
+    "base": {
+     "cmd": "node <repo>/temp/lsp_servers/ts6-6.0.3/node_modules/typescript/bin/tsc --noEmit --pretty false -p tsconfig.json",
+     "exit": 2,
+     "errors_in_file": [
+      "shared/src/components/Reveal.tsx(1,83): error TS2307: Cannot find module 'solid-js' or its corresponding type declarations.",
+      "shared/src/components/Reveal.tsx(13,5): error TS2875: This JSX tag requires the module path '@solidjs/web/jsx-runtime' to exist, but none could be found. Make sure you have types for the appropriate package installed.",
+      "shared/src/components/Reveal.tsx(13,24): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(13,68): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(14,7): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(15,9): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(15,30): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(16,9): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(16,23): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(17,7): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(29,7): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(29,17): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(30,7): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(31,48): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(31,59): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(34,7): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(35,7): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(36,9): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(36,21): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(37,7): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(38,7): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(47,9): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(48,11): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(48,24): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(49,11): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(50,13): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(58,11): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(59,11): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(60,13): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(68,11): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(69,11): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(70,13): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(78,11): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(79,9): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(80,9): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(81,11): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(85,22): error TS7006: Parameter 'e' implicitly has an 'any' type.",
+      "shared/src/components/Reveal.tsx(87,21): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(87,42): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(88,9): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(89,9): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(89,40): error TS7006: Parameter 's' implicitly has an 'any' type.",
+      "shared/src/components/Reveal.tsx(89,64): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(90,7): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(93,9): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(93,26): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(94,9): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(95,41): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(95,78): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(97,9): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(99,11): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(103,11): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(106,9): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(106,25): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(107,9): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(108,32): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(108,55): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(109,11): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(109,32): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(111,9): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(113,11): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(116,15): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(119,15): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(122,11): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+     ],
+     "codes": [
+      "2307",
+      "2875",
+      "7006",
+      "7026"
+     ],
+     "head": [
+      "csr/client.tsx(1,24): error TS2307: Cannot find module '@solidjs/web' or its corresponding type declarations.",
+      "csr/client.tsx(4,14): error TS2875: This JSX tag requires the module path '@solidjs/web/jsx-runtime' to exist, but none could be found. Make sure you have types for the appropriate package installed.",
+      "shared/src/components/App.tsx(1,48): error TS2307: Cannot find module 'solid-js' or its corresponding type declarations."
+     ]
+    },
+    "pre": {
+     "cmd": "node <repo>/temp/lsp_servers/ts6-6.0.3/node_modules/typescript/bin/tsc --noEmit --pretty false -p tsconfig.json",
+     "exit": 2,
+     "errors_in_file": [
+      "shared/src/components/Reveal.tsx(1,75): error TS2307: Cannot find module 'solid-js' or its corresponding type declarations.",
+      "shared/src/components/Reveal.tsx(13,5): error TS2875: This JSX tag requires the module path '@solidjs/web/jsx-runtime' to exist, but none could be found. Make sure you have types for the appropriate package installed.",
+      "shared/src/components/Reveal.tsx(13,24): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(13,68): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(14,7): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(15,9): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(15,30): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(16,9): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(16,23): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(17,7): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(29,7): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(29,17): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(30,7): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(31,48): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(31,59): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(34,7): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(35,7): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(36,9): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(36,21): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(37,7): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(38,7): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(47,9): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(48,11): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(48,24): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(49,11): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(50,13): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(58,11): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(59,11): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(60,13): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(68,11): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(69,11): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(70,13): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(78,11): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(79,9): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(80,9): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(81,11): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(85,22): error TS7006: Parameter 'e' implicitly has an 'any' type.",
+      "shared/src/components/Reveal.tsx(87,21): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(87,42): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(88,9): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(89,9): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(89,40): error TS7006: Parameter 's' implicitly has an 'any' type.",
+      "shared/src/components/Reveal.tsx(89,64): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(90,7): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(93,9): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(93,26): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(94,9): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(95,41): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(95,78): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(97,9): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(98,10): error TS2552: Cannot find name 'Reveal'. Did you mean 'eval'?",
+      "shared/src/components/Reveal.tsx(99,11): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(103,11): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(104,11): error TS2552: Cannot find name 'Reveal'. Did you mean 'eval'?",
+      "shared/src/components/Reveal.tsx(106,9): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(106,25): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(107,9): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(108,32): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(108,55): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(109,11): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(109,32): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(111,9): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(112,10): error TS2552: Cannot find name 'Reveal'. Did you mean 'eval'?",
+      "shared/src/components/Reveal.tsx(113,11): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(115,14): error TS2552: Cannot find name 'Reveal'. Did you mean 'eval'?",
+      "shared/src/components/Reveal.tsx(116,15): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(119,15): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(120,15): error TS2552: Cannot find name 'Reveal'. Did you mean 'eval'?",
+      "shared/src/components/Reveal.tsx(122,11): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.",
+      "shared/src/components/Reveal.tsx(123,11): error TS2552: Cannot find name 'Reveal'. Did you mean 'eval'?"
+     ],
+     "codes": [
+      "2307",
+      "2552",
+      "2875",
+      "7006",
+      "7026"
+     ],
+     "head": [
+      "csr/client.tsx(1,24): error TS2307: Cannot find module '@solidjs/web' or its corresponding type declarations.",
+      "csr/client.tsx(4,14): error TS2875: This JSX tag requires the module path '@solidjs/web/jsx-runtime' to exist, but none could be found. Make sure you have types for the appropriate package installed.",
+      "shared/src/components/App.tsx(1,48): error TS2307: Cannot find module 'solid-js' or its corresponding type declarations."
+     ]
+    },
+    "post": {
+     "cmd": "node <repo>/temp/lsp_servers/ts6-6.0.3/node_modules/typescript/bin/tsc --noEmit --pretty false -p tsconfig.json",
+     "exit": 2,
+     "errors_in_file": [
+      "shared/src/components/Reveal.tsx(104,11): error TS17002: Expected corresponding JSX closing tag for 'eval'."
+     ],
+     "codes": [
+      "17002"
+     ],
+     "head": [
+      "shared/src/components/Reveal.tsx(104,11): error TS17002: Expected corresponding JSX closing tag for 'eval'."
+     ]
+    }
+   }
+  },
+  "parser_only": {
+   "base": {
+    "version": "6.0.3",
+    "parseDiagnostics": []
+   },
+   "pre": {
+    "version": "6.0.3",
+    "parseDiagnostics": []
+   },
+   "post": {
+    "version": "6.0.3",
+    "parseDiagnostics": [
+     "104:11 TS17002 Expected corresponding JSX closing tag for 'eval'."
+    ]
+   }
+  }
+ },
+ "C35": {
+  "cause": "C35",
+  "gid": "ts6-r4-diagnostics-extra-2448-7022-mutation-m1-e5d199",
+  "path": "src/plugins/downloader/main/index.ts",
+  "title": "Change spelling to 'folder'",
+  "tsconfig": "tsconfig.json",
+  "compilers": {
+   "tsc 6.0.3 (campaign build)": {
+    "base": {
+     "cmd": "node <repo>/temp/lsp_servers/ts6-6.0.3/node_modules/typescript/bin/tsc --noEmit --pretty false -p tsconfig.json",
+     "exit": 0,
+     "errors_in_file": [],
+     "codes": [],
+     "head": []
+    },
+    "pre": {
+     "cmd": "node <repo>/temp/lsp_servers/ts6-6.0.3/node_modules/typescript/bin/tsc --noEmit --pretty false -p tsconfig.json",
+     "exit": 2,
+     "errors_in_file": [
+      "src/plugins/downloader/main/index.ts(725,18): error TS2552: Cannot find name 'getFolder'. Did you mean 'folder'?"
+     ],
+     "codes": [
+      "2552"
+     ],
+     "head": [
+      "src/plugins/downloader/main/index.ts(725,18): error TS2552: Cannot find name 'getFolder'. Did you mean 'folder'?"
+     ]
+    },
+    "post": {
+     "cmd": "node <repo>/temp/lsp_servers/ts6-6.0.3/node_modules/typescript/bin/tsc --noEmit --pretty false -p tsconfig.json",
+     "exit": 2,
+     "errors_in_file": [
+      "src/plugins/downloader/main/index.ts(725,9): error TS7022: 'folder' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.",
+      "src/plugins/downloader/main/index.ts(725,18): error TS2448: Block-scoped variable 'folder' used before its declaration."
+     ],
+     "codes": [
+      "2448",
+      "7022"
+     ],
+     "head": [
+      "src/plugins/downloader/main/index.ts(725,9): error TS7022: 'folder' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.",
+      "src/plugins/downloader/main/index.ts(725,18): error TS2448: Block-scoped variable 'folder' used before its declaration."
+     ]
+    }
+   },
+   "tsc 7.0.1-rc (project's own)": {
+    "base": {
+     "cmd": "<scratch>/ts6-r4-diagnostics-extra-2448-7022-mutation-m1-e5d199/node_modules/.bin/tsc --noEmit --pretty false -p tsconfig.json",
+     "exit": 0,
+     "errors_in_file": [],
+     "codes": [],
+     "head": []
+    },
+    "pre": {
+     "cmd": "<scratch>/ts6-r4-diagnostics-extra-2448-7022-mutation-m1-e5d199/node_modules/.bin/tsc --noEmit --pretty false -p tsconfig.json",
+     "exit": 1,
+     "errors_in_file": [
+      "src/plugins/downloader/main/index.ts(725,18): error TS2552: Cannot find name 'getFolder'. Did you mean 'folder'?"
+     ],
+     "codes": [
+      "2552"
+     ],
+     "head": [
+      "src/plugins/downloader/main/index.ts(725,18): error TS2552: Cannot find name 'getFolder'. Did you mean 'folder'?"
+     ]
+    },
+    "post": {
+     "cmd": "<scratch>/ts6-r4-diagnostics-extra-2448-7022-mutation-m1-e5d199/node_modules/.bin/tsc --noEmit --pretty false -p tsconfig.json",
+     "exit": 1,
+     "errors_in_file": [
+      "src/plugins/downloader/main/index.ts(725,9): error TS7022: 'folder' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.",
+      "src/plugins/downloader/main/index.ts(725,18): error TS2448: Block-scoped variable 'folder' used before its declaration."
+     ],
+     "codes": [
+      "2448",
+      "7022"
+     ],
+     "head": [
+      "src/plugins/downloader/main/index.ts(725,9): error TS7022: 'folder' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.",
+      "src/plugins/downloader/main/index.ts(725,18): error TS2448: Block-scoped variable 'folder' used before its declaration."
+     ]
+    }
+   }
+  }
+ }
+}

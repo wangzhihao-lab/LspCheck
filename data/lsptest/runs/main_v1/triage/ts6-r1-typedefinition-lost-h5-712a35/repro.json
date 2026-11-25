@@ -1,0 +1,168 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "9defd9c201d7-v08",
+ "run_id": "9defd9c201d7",
+ "oracle": "r1_history",
+ "server": {
+  "kind": "ts6",
+  "version": "6.0.3"
+ },
+ "project": {
+  "name": "pmndrs/zustand@b57db4f86ef1",
+  "source": "corpus",
+  "ref": "temp/corpus/pmndrs__zustand@b57db4f86ef1",
+  "commit": "b57db4f86ef179285da216eeb291266da82c361c",
+  "language": "typescript"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "race200",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "src/react.ts",
+    "positions": [],
+    "ends": [],
+    "names": []
+   },
+   {
+    "path": "src/vanilla/shallow.ts",
+    "positions": [],
+    "ends": [],
+    "names": []
+   },
+   {
+    "path": "tests/persistSync.test.tsx",
+    "positions": [
+     [
+      565,
+      64
+     ]
+    ],
+    "ends": [],
+    "names": [
+     ""
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "typeDefinition",
+  "path": "tests/persistSync.test.tsx",
+  "line": 565,
+  "character": 64,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "src/react.ts",
+   "delay_ms": 200
+  },
+  {
+   "kind": "fs_rename",
+   "path": "src/react.ts",
+   "new_path": "src/react_rt.ts",
+   "delay_ms": 200
+  },
+  {
+   "kind": "fs_rename",
+   "path": "src/react_rt.ts",
+   "new_path": "src/react.ts",
+   "delay_ms": 200
+  }
+ ],
+ "case": {
+  "chain_step": 0,
+  "families": [],
+  "family": "H5",
+  "history_index": 0,
+  "history_seed": 1001,
+  "mode": "fresh",
+  "note": "rename src/react.ts -> src/react_rt.ts -> back",
+  "seed": 1,
+  "timing": "race200"
+ },
+ "shape": "typeDefinition:lost",
+ "signature": "ts6|r1_history|typeDefinition:lost",
+ "expected": [
+  [
+   "src/middleware/persist.ts",
+   141,
+   27,
+   141,
+   65
+  ]
+ ],
+ "actual": [],
+ "reproduced": "3/3",
+ "note": "H5: rename src/react.ts -> src/react_rt.ts -> back; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 175s",
+ "violation": {
+  "oracle": "r1_history",
+  "server": "ts6-6.0.3",
+  "project": "pmndrs/zustand@b57db4f86ef1",
+  "key": {
+   "method": "typeDefinition",
+   "path": "tests/persistSync.test.tsx",
+   "line": 565,
+   "character": 64,
+   "extra": ""
+  },
+  "expected": [
+   [
+    "src/middleware/persist.ts",
+    141,
+    27,
+    141,
+    65
+   ]
+  ],
+  "actual": [],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "src/react.ts",
+    "delay_ms": 200
+   },
+   {
+    "kind": "open",
+    "path": "src/vanilla/shallow.ts",
+    "delay_ms": 200
+   },
+   {
+    "kind": "open",
+    "path": "tests/persistSync.test.tsx",
+    "delay_ms": 200
+   },
+   {
+    "kind": "fs_rename",
+    "path": "src/react.ts",
+    "new_path": "src/react_rt.ts",
+    "delay_ms": 200
+   },
+   {
+    "kind": "fs_rename",
+    "path": "src/react_rt.ts",
+    "new_path": "src/react.ts",
+    "delay_ms": 200
+   }
+  ],
+  "detail": "{\"case\": {\"chain_step\": 0, \"families\": [], \"family\": \"H5\", \"history_index\": 0, \"history_seed\": 1001, \"mode\": \"fresh\", \"note\": \"rename src/react.ts -> src/react_rt.ts -> back\", \"seed\": 1, \"timing\": \"race200\"}, \"note\": \"H5: rename src/react.ts -> src/react_rt.ts -> back; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 175s\", \"shape\": \"typeDefinition:lost\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "ts6|r1_history|typeDefinition:lost",
+  "run_id": "9defd9c201d7"
+ },
+ "replay_logs": [
+  "logs/ts6-6.0.3-tr712a35-replay-baseline-20260925-184717-641f56.jsonl.gz",
+  "logs/ts6-6.0.3-tr712a35-replay-control-20260925-184717-da8a14.jsonl.gz",
+  "logs/ts6-6.0.3-tr712a35-replay-history-20260925-184725-c34528.jsonl.gz"
+ ],
+ "project_files": {},
+ "group": "ts6-r1-typedefinition-lost-h5-712a35",
+ "reduced": true
+}

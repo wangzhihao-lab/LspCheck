@@ -1,0 +1,118 @@
+{
+ "vid": "170b9b1e53a4-v00",
+ "ops_before": 10,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 19,
+ "cache_hits": 8,
+ "reduce_seconds": 203.437,
+ "budget_exhausted": false,
+ "probe_log": [
+  [
+   6,
+   false
+  ],
+  [
+   7,
+   true
+  ],
+  [
+   5,
+   false
+  ],
+  [
+   5,
+   false
+  ],
+  [
+   4,
+   false
+  ],
+  [
+   4,
+   false
+  ],
+  [
+   4,
+   false
+  ],
+  [
+   4,
+   false
+  ],
+  [
+   6,
+   true
+  ],
+  [
+   5,
+   true
+  ],
+  [
+   4,
+   true
+  ],
+  [
+   3,
+   false
+  ],
+  [
+   3,
+   true
+  ],
+  [
+   1,
+   false
+  ],
+  [
+   2,
+   false
+  ],
+  [
+   1,
+   false
+  ],
+  [
+   1,
+   false
+  ],
+  [
+   2,
+   false
+  ],
+  [
+   2,
+   false
+  ]
+ ],
+ "logs": [
+  "ts6-6.0.3-tr3e0e0f-replay-baseline-20261118-214856-4150c2.jsonl.gz",
+  "ts6-6.0.3-tr3e0e0f-replay-control-20261118-214856-a07937.jsonl.gz",
+  "ts6-6.0.3-tr3e0e0f-replay-history-20261118-214909-66a2e6.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [
+   [
+    "Extract to constant in enclosing scope",
+    "refactor.extract.constant"
+   ],
+   [
+    "Extract to function in module scope",
+    "refactor.extract.function"
+   ],
+   [
+    "Extract to inner function in arrow function",
+    "refactor.extract.function"
+   ],
+   [
+    "Move to a new file",
+    "refactor.move.newFile"
+   ]
+  ],
+  "actual": [
+   "missing-key"
+  ]
+ },
+ "ops_after": 3,
+ "total_seconds": 309.0
+}

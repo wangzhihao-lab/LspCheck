@@ -1,0 +1,6 @@
+2026-11-18 08:44:54,474 INFO campaign_run run d3ee1c1f093d: r3_routes on pyright 1.1.414, soimort/you-get@049548f3f3f3 seed 1 settled, targets ['src/you_get/extractors/icourses.py', 'src/you_get/extractors/lrts.py', 'src/you_get/extractors/qie_video.py']
+2026-11-18 08:46:49,648 INFO campaign_run run d3ee1c1f093d: 8 candidate(s) in 115s; confirming
+2026-11-18 08:47:03,276 INFO flake replay 1/3 of pyright|r3_routes|definitionConsistency:missing: settled=True control_stable=True reproduced=True (13.6s)
+2026-11-18 08:47:16,083 INFO flake replay 2/3 of pyright|r3_routes|definitionConsistency:missing: settled=True control_stable=True reproduced=True (12.8s)
+2026-11-18 08:47:29,049 INFO flake replay 3/3 of pyright|r3_routes|definitionConsistency:missing: settled=True control_stable=True reproduced=True (13.0s)
+2026-11-18 08:47:29,074 INFO campaign_run run d3ee1c1f093d finished: ok, 1 confirmed of 8 candidate(s), 155s

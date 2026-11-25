@@ -1,0 +1,3 @@
+2026-11-18 20:51:35,938 INFO campaign_run run f48037203d11: r1_history on pyright 1.1.414, MemPalace/mempalace@c4d3711ee247 seed 3 settled, targets ['tests/test_backend_conformance.py', 'tests/test_mcp_mine.py', 'tests/test_repair_lock_safety.py']
+2026-11-18 20:58:21,562 INFO campaign_run run f48037203d11: 0 candidate(s) in 406s; confirming
+2026-11-18 20:58:21,563 INFO campaign_run run f48037203d11 finished: ok, 0 confirmed of 0 candidate(s), 406s

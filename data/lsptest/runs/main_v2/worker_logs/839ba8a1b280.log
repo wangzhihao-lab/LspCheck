@@ -1,0 +1,3 @@
+2026-11-18 05:10:49,788 INFO campaign_run run 839ba8a1b280: r0_crash on rust-analyzer 2026-09-21, h4ckf0r0day/obscura@0e17221dbb55 seed 1 settled, targets ['crates/obscura-cdp/src/domains/browser.rs', 'crates/obscura-js/src/cdp_watchdog.rs', 'crates/obscura-mcp/tests/sse_stream_does_not_wedge.rs']
+2026-11-18 05:13:15,398 INFO campaign_run run 839ba8a1b280: 0 candidate(s) in 146s; confirming
+2026-11-18 05:13:15,399 INFO campaign_run run 839ba8a1b280 finished: ok, 0 confirmed of 0 candidate(s), 146s

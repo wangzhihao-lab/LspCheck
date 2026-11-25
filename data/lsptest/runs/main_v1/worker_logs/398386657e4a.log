@@ -1,0 +1,3 @@
+2026-09-24 11:44:10,017 INFO campaign_run run 398386657e4a: r1_history on pyright 1.1.414, Z4nzu/hackingtool@ef5334f8d37e seed 3 settled, targets ['scripts/audit_tools.py', 'src/hackingtool/tools/others/socialmedia.py', 'tests/test_skill.py']
+2026-09-24 11:50:00,570 INFO campaign_run run 398386657e4a: 0 candidate(s) in 351s; confirming
+2026-09-24 11:50:00,570 INFO campaign_run run 398386657e4a finished: ok, 0 confirmed of 0 candidate(s), 351s

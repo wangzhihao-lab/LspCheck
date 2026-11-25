@@ -1,0 +1,3 @@
+{
+ "src/free_claude_code/providers/vertex/__init__.py": "\"\"\"Google Vertex AI OpenAI-compatible adapter.\"\"\"\n\nfrom .client import VertexProvider\n\n__all__ = [\"VertexProvider\"]\n"
+}

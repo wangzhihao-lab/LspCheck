@@ -1,0 +1,74 @@
+{
+ "schema": 1,
+ "id": "gopls-41057",
+ "meta": {
+  "server": "gopls",
+  "kind": "gopls",
+  "number": 41057,
+  "url": "https://github.com/golang/go/issues/41057",
+  "title": "x/tools/gopls: bad formatting with CRLF line ending",
+  "oracle_class": "R4",
+  "subtype": "format",
+  "fix_ref": "golang/tools@cf7880770c1e (internal/lsp: reproduce and fix golang/go#41057; CL 252457)",
+  "fix_shas": [
+   "cf7880770c1e80a90b5973b87c1583154b05af5f"
+  ],
+  "pre_version": "v0.4.4",
+  "post_version": "v0.5.0",
+  "pre_build": "v0.4.4",
+  "post_build": "v0.5.0",
+  "build_notes": "Both built with the local Go (go1.27.1) through a wrapper module (their go.mod replaces x/tools); the server runs the local go command. v0.4.4 was tagged 2020-07-29, the fix merged 2020-09-02, v0.5.0 was tagged 2020-09-14. (Analyses of these builds panic under go1.27, see gopls-41311; import organization does not use them.)",
+  "effort_minutes": 10,
+  "notes": "Import organization (run on save by the editor, source.organizeImports) computes its edit from the import prefix of the file, which ended at a multi-line comment's End position; with CRLF line endings that position is two bytes short of the closing '*/' (golang/go#41197), so the edit re-inserted '*/'. The fix accounts for the '*/'."
+ },
+ "language": "go",
+ "settings": {},
+ "settings_note": "The issue names no settings; organize imports on save is the editor default of the Go extension.",
+ "session": {
+  "settle_timeout_s": 180
+ },
+ "files": [
+  {
+   "path": "main.go",
+   "provenance": "issue-adapted",
+   "source": "issue body, 'Before' code block",
+   "note": "verbatim with CRLF line endings, as the title says (the code block itself is shown with LF)"
+  },
+  {
+   "path": "go.mod",
+   "provenance": "scaffold",
+   "source": "",
+   "note": "a module around the file; go 1.14, the Go of the era"
+  }
+ ],
+ "repro": {
+  "attempt": 1,
+  "timing": "settled",
+  "steps": "Open main.go (CRLF line endings, a /* */ doc comment above func Gronk). Run organize imports (source.organizeImports at 0:0), which the editor runs on save. Reported: after saving, the comment's closing '*/' appears twice, which does not parse. Probe: the edited text must have no parse error that the original did not have (an empty edit adds none).",
+  "ops": [
+   {
+    "kind": "open",
+    "path": "main.go"
+   }
+  ],
+  "probe": {
+   "type": "edit_breaks_syntax",
+   "params": {
+    "edit": {
+     "via": "code_action",
+     "path": "main.go",
+     "range": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "kind": "source.organizeImports",
+     "title_re": "(?i)organi[sz]e imports",
+     "missing": "invalid"
+    }
+   }
+  }
+ },
+ "attempts": []
+}

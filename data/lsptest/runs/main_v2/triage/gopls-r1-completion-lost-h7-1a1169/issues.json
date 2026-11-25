@@ -1,0 +1,92 @@
+{
+ "queries": [
+  "\"after edit\" in:title repo:golang/go is:issue label:gopls",
+  "completion missing repo:golang/go is:issue label:gopls",
+  "completion \"after edit\" repo:golang/go is:issue label:gopls",
+  "completion stale repo:golang/go is:issue label:gopls"
+ ],
+ "matches": [
+  {
+   "repo": "golang/go",
+   "number": 81812,
+   "title": "x/tools/gopls: codeAction/resolve after a document change computes the edit at the old position",
+   "url": "https://github.com/golang/go/issues/81812",
+   "state": "open",
+   "created": "2026-09-28",
+   "comments": 4,
+   "query": "\"after edit\" in:title repo:golang/go is:issue label:gopls"
+  },
+  {
+   "repo": "golang/go",
+   "number": 70604,
+   "title": "x/tools/gopls: marker test should ensure type checked file remain type checked after code edits",
+   "url": "https://github.com/golang/go/issues/70604",
+   "state": "closed",
+   "created": "2024-11-27",
+   "comments": 1,
+   "query": "\"after edit\" in:title repo:golang/go is:issue label:gopls"
+  },
+  {
+   "repo": "golang/go",
+   "number": 59587,
+   "title": "x/tools/gopls: diagnostics only clear after diagnosticsDelay for edited files",
+   "url": "https://github.com/golang/go/issues/59587",
+   "state": "closed",
+   "created": "2023-04-12",
+   "comments": 1,
+   "query": "\"after edit\" in:title repo:golang/go is:issue label:gopls"
+  },
+  {
+   "repo": "golang/go",
+   "number": 51325,
+   "title": "x/tools/gopls: push diagnostics after `go mod edit -go=1.18`",
+   "url": "https://github.com/golang/go/issues/51325",
+   "state": "closed",
+   "created": "2022-02-22",
+   "comments": 1,
+   "query": "\"after edit\" in:title repo:golang/go is:issue label:gopls"
+  },
+  {
+   "repo": "golang/go",
+   "number": 33989,
+   "title": "x/tools/gopls: Context cancelled errors after some editing",
+   "url": "https://github.com/golang/go/issues/33989",
+   "state": "closed",
+   "created": "2019-08-30",
+   "comments": 4,
+   "query": "\"after edit\" in:title repo:golang/go is:issue label:gopls"
+  },
+  {
+   "repo": "golang/go",
+   "number": 82092,
+   "title": "x/tools/gopls: completion: don't suggest selectors that are illegal because of same-depth conflicts",
+   "url": "https://github.com/golang/go/issues/82092",
+   "state": "open",
+   "created": "2026-10-09",
+   "comments": 6,
+   "query": "completion missing repo:golang/go is:issue label:gopls"
+  },
+  {
+   "repo": "golang/go",
+   "number": 81658,
+   "title": "x/tools/gopls: completion of receiver types depends on where in the file the type is defined",
+   "url": "https://github.com/golang/go/issues/81658",
+   "state": "open",
+   "created": "2026-09-22",
+   "comments": 2,
+   "query": "completion missing repo:golang/go is:issue label:gopls"
+  },
+  {
+   "repo": "golang/go",
+   "number": 73426,
+   "title": "x/tools/gopls: no autocompletion when missing closing parenthesis",
+   "url": "https://github.com/golang/go/issues/73426",
+   "state": "open",
+   "created": "2025-04-17",
+   "comments": 6,
+   "query": "completion missing repo:golang/go is:issue label:gopls"
+  }
+ ],
+ "notes": [],
+ "authenticated": true
+}

@@ -1,0 +1,6 @@
+2026-09-23 19:45:45,464 INFO campaign_run run 723ffafaec5f: r4_edits on rust-analyzer 2026-09-21, BurntSushi/ripgrep@3fce3b5bb023 seed 1 settled, targets ['crates/cli/src/escape.rs', 'crates/core/index/disabled.rs', 'crates/matcher/tests/util.rs']
+2026-09-23 19:53:18,104 INFO campaign_run run 723ffafaec5f: 1 candidate(s) in 453s; confirming
+2026-09-23 19:58:08,721 INFO flake replay 1/3 of rust-analyzer|r4_edits|completionInsert:gained: settled=True control_stable=True reproduced=True (290.6s)
+2026-09-23 20:04:43,490 INFO flake replay 2/3 of rust-analyzer|r4_edits|completionInsert:gained: settled=True control_stable=True reproduced=True (394.8s)
+2026-09-23 20:11:53,758 INFO flake replay 3/3 of rust-analyzer|r4_edits|completionInsert:gained: settled=True control_stable=True reproduced=True (430.3s)
+2026-09-23 20:11:53,791 INFO campaign_run run 723ffafaec5f finished: ok, 1 confirmed of 1 candidate(s), 1568s

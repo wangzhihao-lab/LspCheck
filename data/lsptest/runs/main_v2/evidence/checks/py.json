@@ -1,0 +1,85 @@
+{
+ "python": "3.14.7",
+ "C22": {
+  "gid": "pyright-r4-completioninsert-gained-completion-79a584",
+  "path": "hedge_fund/event_study/__main__.py",
+  "line6_before": "from __future__ import annotations",
+  "line6_after": "from __future__ import _VersionInfo, annotations",
+  "base": {
+   "cmd": "/opt/homebrew/opt/python@3.14/bin/python3.14 -m py_compile <scratch>/py/base_main.py",
+   "cwd": "<scratch>/py",
+   "exit": 0,
+   "output": []
+  },
+  "post": {
+   "cmd": "/opt/homebrew/opt/python@3.14/bin/python3.14 -m py_compile <scratch>/py/post_main.py",
+   "cwd": "<scratch>/py",
+   "exit": 1,
+   "output": [
+    "File \"<scratch>/py/post_main.py\", line 6",
+    "    from __future__ import _VersionInfo, annotations",
+    "                           ^^^^^^^^^^^^",
+    "SyntaxError: future feature _VersionInfo is not defined"
+   ]
+  }
+ },
+ "C17": {
+  "__init__.py": {
+   "cmd": "/opt/homebrew/opt/python@3.14/bin/python3.14 -m py_compile <scratch>/py/c17___init__.py",
+   "cwd": "<scratch>/py",
+   "exit": 0,
+   "output": []
+  },
+  "engine.py": {
+   "cmd": "/opt/homebrew/opt/python@3.14/bin/python3.14 -m py_compile <scratch>/py/c17_engine.py",
+   "cwd": "<scratch>/py",
+   "exit": 0,
+   "output": []
+  },
+  "engine_defines_BacktestEngine": true
+ },
+ "C20": {
+  "imports_of_Any": [
+   "line 15: from typing import TYPE_CHECKING, Any, ParamSpec, Protocol, TypeVar, cast, overload"
+  ],
+  "rebindings_of_Any": [],
+  "strings": [
+   {
+    "line": 33,
+    "col": 41,
+    "string": "Callable[..., Any]",
+    "names": [
+     "Any",
+     "Callable"
+    ]
+   },
+   {
+    "line": 54,
+    "col": 20,
+    "string": "Iterable[Any]",
+    "names": [
+     "Any",
+     "Iterable"
+    ]
+   }
+  ],
+  "TypeVar_bound_runtime": "ForwardRef('Callable[..., Any]')"
+ },
+ "C21": {
+  "def_line": 85,
+  "returns": [
+   {
+    "line": 115,
+    "value": "(im, ratio, (dw, dh))",
+    "tuple_len": 3
+   }
+  ],
+  "has_yield": false,
+  "annotated_return": null
+ },
+ "C19": {
+  "module_file": "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/_py_warnings.py",
+  "warn_doc_first_line": "Issue a warning, or maybe ignore it or raise an exception.",
+  "warnings.warn_is": "_warnings.warn"
+ }
+}

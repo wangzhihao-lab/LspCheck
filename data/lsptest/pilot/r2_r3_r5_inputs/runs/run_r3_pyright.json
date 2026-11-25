@@ -1,0 +1,193 @@
+{
+ "oracle": "r3_routes",
+ "server": "pyright",
+ "version": "1.1.414",
+ "project": "pallets/flask@d73fa1cdcbd8",
+ "language": "python",
+ "seed": 1,
+ "targets": [
+  {
+   "path": "src/flask/blueprints.py",
+   "positions": [
+    [
+     0,
+     28
+    ],
+    [
+     18,
+     12
+    ],
+    [
+     22,
+     36
+    ],
+    [
+     27,
+     32
+    ],
+    [
+     52,
+     14
+    ],
+    [
+     71,
+     31
+    ],
+    [
+     100,
+     16
+    ],
+    [
+     119,
+     13
+    ]
+   ],
+   "ends": [
+    [
+     0,
+     34
+    ],
+    [
+     18,
+     16
+    ],
+    [
+     22,
+     40
+    ],
+    [
+     27,
+     33
+    ],
+    [
+     52,
+     16
+    ],
+    [
+     71,
+     34
+    ],
+    [
+     100,
+     18
+    ],
+    [
+     119,
+     15
+    ]
+   ],
+   "names": [
+    "annotations",
+    "__init__",
+    "PathLike",
+    "t",
+    "cli",
+    "config",
+    "cast",
+    "mode"
+   ]
+  },
+  {
+   "path": "tests/test_apps/blueprintapp/apps/frontend/__init__.py",
+   "positions": [
+    [
+     0,
+     7
+    ],
+    [
+     1,
+     25
+    ],
+    [
+     3,
+     15
+    ],
+    [
+     3,
+     50
+    ],
+    [
+     6,
+     5
+    ],
+    [
+     11,
+     12
+    ],
+    [
+     12,
+     12
+    ],
+    [
+     13,
+     18
+    ]
+   ],
+   "ends": [
+    [
+     0,
+     10
+    ],
+    [
+     1,
+     33
+    ],
+    [
+     3,
+     20
+    ],
+    [
+     3,
+     58
+    ],
+    [
+     6,
+     9
+    ],
+    [
+     11,
+     15
+    ],
+    [
+     12,
+     20
+    ],
+    [
+     13,
+     26
+    ]
+   ],
+   "names": [
+    "flask",
+    "render_template",
+    "Blueprint",
+    "template_folder",
+    "frontend",
+    "route",
+    "missing_template",
+    "render_template"
+   ]
+  }
+ ],
+ "max_cases": 12,
+ "timing": "settled",
+ "result": {
+  "oracle": "r3_routes",
+  "run_id": "r3_routes-pyright-091401",
+  "cases": 103,
+  "invalid_cases": 0,
+  "sessions": 3,
+  "unsettled": 0,
+  "compared": {
+   "definitionConsistency": 86,
+   "highlightVsReferences": 16,
+   "diagnostics:route": 2
+  },
+  "unstable": {},
+  "seconds": 108.474,
+  "notes": [],
+  "candidates": []
+ },
+ "replays": [],
+ "total_seconds": 108.5
+}

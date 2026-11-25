@@ -1,0 +1,581 @@
+{
+ "format": 1,
+ "campaign": "main_v2",
+ "vid": "612e72c9f59f-v00",
+ "run_id": "612e72c9f59f",
+ "oracle": "r4_edits",
+ "server": {
+  "kind": "gopls",
+  "version": "v0.23.0"
+ },
+ "project": {
+  "name": "labstack/echo@3d084be90224",
+  "source": "corpus",
+  "ref": "temp/corpus/labstack__echo@3d084be90224",
+  "commit": "3d084be9022432c5a5257924c7d74bfc3444b456",
+  "language": "go"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "echo_test.go",
+    "positions": [
+     [
+      519,
+      13
+     ],
+     [
+      519,
+      44
+     ],
+     [
+      625,
+      17
+     ],
+     [
+      683,
+      40
+     ],
+     [
+      794,
+      10
+     ],
+     [
+      1059,
+      20
+     ],
+     [
+      1088,
+      4
+     ],
+     [
+      1388,
+      23
+     ],
+     [
+      1549,
+      10
+     ],
+     [
+      1680,
+      53
+     ],
+     [
+      1723,
+      14
+     ],
+     [
+      1779,
+      15
+     ]
+    ],
+    "ends": [
+     [
+      519,
+      14
+     ],
+     [
+      519,
+      47
+     ],
+     [
+      625,
+      22
+     ],
+     [
+      683,
+      41
+     ],
+     [
+      794,
+      12
+     ],
+     [
+      1059,
+      24
+     ],
+     [
+      1088,
+      6
+     ],
+     [
+      1388,
+      25
+     ],
+     [
+      1549,
+      12
+     ],
+     [
+      1680,
+      55
+     ],
+     [
+      1723,
+      19
+     ],
+     [
+      1779,
+      16
+     ]
+    ],
+    "names": [
+     "tc",
+     "whenFS",
+     "givenPath",
+     "T",
+     "GET",
+     "Context",
+     "name",
+     "http",
+     "nil",
+     "nil",
+     "NewRouter",
+     "w"
+    ]
+   },
+   {
+    "path": "echotest/reader_test.go",
+    "positions": [
+     [
+      12,
+      12
+     ],
+     [
+      12,
+      32
+     ],
+     [
+      13,
+      13
+     ],
+     [
+      14,
+      10
+     ],
+     [
+      14,
+      21
+     ],
+     [
+      17,
+      20
+     ],
+     [
+      18,
+      3
+     ],
+     [
+      18,
+      19
+     ],
+     [
+      18,
+      51
+     ],
+     [
+      19,
+      4
+     ],
+     [
+      19,
+      10
+     ],
+     [
+      19,
+      31
+     ]
+    ],
+    "ends": [
+     [
+      12,
+      20
+     ],
+     [
+      12,
+      33
+     ],
+     [
+      13,
+      18
+     ],
+     [
+      14,
+      13
+     ],
+     [
+      14,
+      23
+     ],
+     [
+      17,
+      35
+     ],
+     [
+      18,
+      5
+     ],
+     [
+      18,
+      20
+     ],
+     [
+      18,
+      58
+     ],
+     [
+      19,
+      7
+     ],
+     [
+      19,
+      13
+     ],
+     [
+      19,
+      39
+     ]
+    ],
+    "names": [
+     "TestLoadBytesOK",
+     "T",
+     "LoadBytes",
+     "Equal",
+     "byte",
+     "TestLoadBytesOK_TrimNewlineEnd",
+     "data",
+     "t",
+     "TrimNewlineEnd",
+     "assert",
+     "Equal",
+     "testJSONContent"
+    ]
+   },
+   {
+    "path": "middleware/rate_limiter_test.go",
+    "positions": [
+     [
+      69,
+      12
+     ],
+     [
+      74,
+      97
+     ],
+     [
+      208,
+      6
+     ],
+     [
+      264,
+      12
+     ],
+     [
+      267,
+      4
+     ],
+     [
+      288,
+      24
+     ],
+     [
+      416,
+      21
+     ],
+     [
+      439,
+      27
+     ],
+     [
+      463,
+      5
+     ],
+     [
+      464,
+      8
+     ],
+     [
+      541,
+      7
+     ],
+     [
+      557,
+      23
+     ]
+    ],
+    "ends": [
+     [
+      69,
+      23
+     ],
+     [
+      74,
+      100
+     ],
+     [
+      208,
+      7
+     ],
+     [
+      264,
+      14
+     ],
+     [
+      267,
+      8
+     ],
+     [
+      288,
+      26
+     ],
+     [
+      416,
+      23
+     ],
+     [
+      439,
+      29
+     ],
+     [
+      463,
+      6
+     ],
+     [
+      464,
+      9
+     ],
+     [
+      541,
+      11
+     ],
+     [
+      557,
+      33
+     ]
+    ],
+    "names": [
+     "RateLimiterWithConfig",
+     "Burst",
+     "_",
+     "New",
+     "handler",
+     "nil",
+     "int",
+     "time",
+     "i",
+     "i",
+     "Parallel",
+     "requestsPerGoroutine"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "diagnostics",
+  "path": "echo_test.go",
+  "line": 665,
+  "character": 30,
+  "extra": "M2:quickfix-errors:Create variable HandlrFunc"
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "echo_test.go"
+  },
+  {
+   "kind": "change",
+   "path": "echo_test.go",
+   "start": [
+    665,
+    30
+   ],
+   "end": [
+    665,
+    41
+   ],
+   "text": "HandlrFunc"
+  },
+  {
+   "kind": "change",
+   "path": "echo_test.go",
+   "start": [
+    665,
+    1
+   ],
+   "end": [
+    665,
+    1
+   ],
+   "text": "HandlrFunc := 0\n\t"
+  }
+ ],
+ "case": {
+  "action_kind": "quickfix",
+  "base_errors": 0,
+  "check": "errors",
+  "diag": {
+   "code": "UndeclaredName",
+   "message": "undefined: HandlrFunc",
+   "range": {
+    "end": {
+     "character": 40,
+     "line": 665
+    },
+    "start": {
+     "character": 30,
+     "line": 665
+    }
+   },
+   "severity": 1
+  },
+  "fix_introduced_errors": [
+   {
+    "code": "NotAType",
+    "message": "HandlrFunc (local variable) is not a type",
+    "path": "echo_test.go",
+    "range": {
+     "end": {
+      "character": 40,
+      "line": 666
+     },
+     "start": {
+      "character": 30,
+      "line": 666
+     }
+    },
+    "severity": 1
+   }
+  ],
+  "fix_ops": [
+   {
+    "end": [
+     665,
+     1
+    ],
+    "kind": "change",
+    "path": "echo_test.go",
+    "start": [
+     665,
+     1
+    ],
+    "text": "HandlrFunc := 0\n\t"
+   }
+  ],
+  "kind": "mutation",
+  "mutation": {
+   "end": [
+    665,
+    41
+   ],
+   "id": "M2",
+   "offsets": [
+    22465,
+    22476
+   ],
+   "sha": "05d46a0016d1d429",
+   "start": [
+    665,
+    30
+   ],
+   "text": "HandlrFunc",
+   "what": "misspell 'HandlerFunc' as 'HandlrFunc' (drop a middle character)"
+  },
+  "n_fix_ops": 1,
+  "path": "echo_test.go",
+  "post_errors": 1,
+  "title": "Create variable HandlrFunc",
+  "via": "resolve"
+ },
+ "shape": "diagnostics:extra:NotAType",
+ "signature": "gopls|r4_edits|diagnostics:extra:NotAType",
+ "expected": [],
+ "actual": [
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "NotAType",
+   "compiler",
+   "HandlrFunc (local variable) is not a type"
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "quick fix 'Create variable HandlrFunc' for UndeclaredName at echo_test.go:666:31 raises the error count in the edited files from 0 to 1 (seeded by M2: misspell 'HandlerFunc' as 'HandlrFunc' (drop a middle character); errors before the mutation 0, after the fix 1); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 48s",
+ "violation": {
+  "oracle": "r4_edits",
+  "server": "gopls-v0.23.0",
+  "project": "labstack/echo@3d084be90224",
+  "key": {
+   "method": "diagnostics",
+   "path": "echo_test.go",
+   "line": 665,
+   "character": 30,
+   "extra": "M2:quickfix-errors:Create variable HandlrFunc"
+  },
+  "expected": [],
+  "actual": [
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "NotAType",
+    "compiler",
+    "HandlrFunc (local variable) is not a type"
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "echo_test.go"
+   },
+   {
+    "kind": "change",
+    "path": "echo_test.go",
+    "start": [
+     665,
+     30
+    ],
+    "end": [
+     665,
+     41
+    ],
+    "text": "HandlrFunc"
+   },
+   {
+    "kind": "change",
+    "path": "echo_test.go",
+    "start": [
+     665,
+     1
+    ],
+    "end": [
+     665,
+     1
+    ],
+    "text": "HandlrFunc := 0\n\t"
+   }
+  ],
+  "detail": "{\"case\": {\"action_kind\": \"quickfix\", \"base_errors\": 0, \"check\": \"errors\", \"diag\": {\"code\": \"UndeclaredName\", \"message\": \"undefined: HandlrFunc\", \"range\": {\"end\": {\"character\": 40, \"line\": 665}, \"start\": {\"character\": 30, \"line\": 665}}, \"severity\": 1}, \"fix_introduced_errors\": [{\"code\": \"NotAType\", \"message\": \"HandlrFunc (local variable) is not a type\", \"path\": \"echo_test.go\", \"range\": {\"end\": {\"character\": 40, \"line\": 666}, \"start\": {\"character\": 30, \"line\": 666}}, \"severity\": 1}], \"fix_ops\": [{\"end\": [665, 1], \"kind\": \"change\", \"path\": \"echo_test.go\", \"start\": [665, 1], \"text\": \"HandlrFunc := 0\\n\\t\"}], \"kind\": \"mutation\", \"mutation\": {\"end\": [665, 41], \"id\": \"M2\", \"offsets\": [22465, 22476], \"sha\": \"05d46a0016d1d429\", \"start\": [665, 30], \"text\": \"HandlrFunc\", \"what\": \"misspell 'HandlerFunc' as 'HandlrFunc' (drop a middle character)\"}, \"n_fix_ops\": 1, \"path\": \"echo_test.go\", \"post_errors\": 1, \"title\": \"Create variable HandlrFunc\", \"via\": \"resolve\"}, \"note\": \"quick fix 'Create variable HandlrFunc' for UndeclaredName at echo_test.go:666:31 raises the error count in the edited files from 0 to 1 (seeded by M2: misspell 'HandlerFunc' as 'HandlrFunc' (drop a middle character); errors before the mutation 0, after the fix 1); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 48s\", \"shape\": \"diagnostics:extra:NotAType\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "gopls|r4_edits|diagnostics:extra:NotAType",
+  "run_id": "612e72c9f59f"
+ },
+ "replay_logs": [
+  "logs/gopls-v0.23.0-612e72c9f59f-r4-replay-baseline-20261118-084914-9598c2.jsonl.gz",
+  "logs/gopls-v0.23.0-612e72c9f59f-r4-replay-case-20261118-084904-2ad254.jsonl.gz",
+  "logs/gopls-v0.23.0-612e72c9f59f-r4-replay-control-20261118-084917-5a5fbf.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

@@ -1,0 +1,23 @@
+{
+ "vid": "f1084e14ba1e-v05",
+ "ops_before": 0,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 0,
+ "cache_hits": 0,
+ "reduce_seconds": 0.0,
+ "budget_exhausted": false,
+ "probe_log": [],
+ "logs": [
+  "ts6-6.0.3-trfeed64-ref-r6-replay-ref-baseline-20260925-171535-05ba4f.jsonl.gz",
+  "ts6-6.0.3-trfeed64-ref-r6-replay-ref-control-20260925-171553-74710d.jsonl.gz",
+  "ts7-7.0.2-trfeed64-r6-replay-test-baseline-20260925-171506-0e6315.jsonl.gz",
+  "ts7-7.0.2-trfeed64-r6-replay-test-control-20260925-171521-5ddfd7.jsonl.gz"
+ ],
+ "observed": {
+  "expected": "import useForm",
+  "actual": null
+ },
+ "ops_after": 0,
+ "total_seconds": 265.3
+}

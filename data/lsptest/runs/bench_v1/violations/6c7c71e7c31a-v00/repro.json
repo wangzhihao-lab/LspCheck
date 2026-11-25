@@ -1,0 +1,223 @@
+{
+ "format": 1,
+ "campaign": "bench_v1",
+ "vid": "6c7c71e7c31a-v00",
+ "run_id": "6c7c71e7c31a",
+ "oracle": "r3_routes",
+ "server": {
+  "kind": "gopls",
+  "version": "v0.7.0"
+ },
+ "project": {
+  "name": "gopls-46667",
+  "source": "dir",
+  "ref": "data/lsp_bench/cases/gopls-46667/project",
+  "commit": "",
+  "language": "go"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 180.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "a/a.go",
+    "positions": [
+     [
+      0,
+      8
+     ],
+     [
+      4,
+      6
+     ],
+     [
+      4,
+      10
+     ],
+     [
+      4,
+      12
+     ],
+     [
+      5,
+      6
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      9
+     ],
+     [
+      4,
+      7
+     ],
+     [
+      4,
+      11
+     ],
+     [
+      4,
+      13
+     ],
+     [
+      5,
+      7
+     ]
+    ],
+    "names": [
+     "a",
+     "A",
+     "b",
+     "A",
+     "B"
+    ]
+   },
+   {
+    "path": "b/b.go",
+    "positions": [
+     [
+      0,
+      8
+     ],
+     [
+      4,
+      6
+     ],
+     [
+      5,
+      6
+     ],
+     [
+      5,
+      10
+     ],
+     [
+      5,
+      12
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      9
+     ],
+     [
+      4,
+      7
+     ],
+     [
+      5,
+      7
+     ],
+     [
+      5,
+      11
+     ],
+     [
+      5,
+      13
+     ]
+    ],
+    "names": [
+     "b",
+     "A",
+     "B",
+     "a",
+     "B"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "definitionConsistency",
+  "path": "b/b.go",
+  "line": 2,
+  "character": 13,
+  "extra": "from:b/b.go:5:10"
+ },
+ "ops": [],
+ "case": {
+  "loc": [
+   "b/b.go",
+   2,
+   7,
+   2,
+   19
+  ],
+  "sub": "d",
+  "target": [
+   "b/b.go",
+   5,
+   10
+  ]
+ },
+ "shape": "definitionConsistency:changed",
+ "signature": "gopls|r3_routes|definitionConsistency:changed",
+ "expected": [
+  [
+   "b/b.go",
+   2,
+   7,
+   2,
+   19
+  ]
+ ],
+ "actual": [
+  [
+   "a/a.go",
+   0,
+   0,
+   5,
+   11
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "flake 3/3 [r1:SCR r2:SCR r3:SCR] in 63s",
+ "violation": {
+  "oracle": "r3_routes",
+  "server": "gopls-v0.7.0",
+  "project": "gopls-46667",
+  "key": {
+   "method": "definitionConsistency",
+   "path": "b/b.go",
+   "line": 2,
+   "character": 13,
+   "extra": "from:b/b.go:5:10"
+  },
+  "expected": [
+   [
+    "b/b.go",
+    2,
+    7,
+    2,
+    19
+   ]
+  ],
+  "actual": [
+   [
+    "a/a.go",
+    0,
+    0,
+    5,
+    11
+   ]
+  ],
+  "ops": [],
+  "detail": "{\"case\": {\"loc\": [\"b/b.go\", 2, 7, 2, 19], \"sub\": \"d\", \"target\": [\"b/b.go\", 5, 10]}, \"note\": \"flake 3/3 [r1:SCR r2:SCR r3:SCR] in 63s\", \"shape\": \"definitionConsistency:changed\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "gopls|r3_routes|definitionConsistency:changed",
+  "run_id": "6c7c71e7c31a"
+ },
+ "replay_logs": [
+  "logs/gopls-v0.7.0-6c7c71e7c31a-r3-replay-baseline-20260925-035645-8c3c50.jsonl.gz",
+  "logs/gopls-v0.7.0-6c7c71e7c31a-r3-replay-control-20260925-035655-98ee7d.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

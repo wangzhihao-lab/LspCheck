@@ -1,0 +1,3 @@
+2026-11-18 09:02:29,156 INFO campaign_run run 32ccbb0521b4: r3_routes on ts6 6.0.3, mifi/lossless-cut@85cb95f6aeae seed 1 settled, targets ['src/common/util.ts', 'src/renderer/src/edlFormats.test.ts', 'src/renderer/src/worker/eval.ts']
+2026-11-18 09:06:04,786 INFO campaign_run run 32ccbb0521b4: 25 candidate(s) in 216s; confirming
+2026-11-18 09:06:04,789 INFO campaign_run run 32ccbb0521b4 finished: ok, 0 confirmed of 25 candidate(s), 216s

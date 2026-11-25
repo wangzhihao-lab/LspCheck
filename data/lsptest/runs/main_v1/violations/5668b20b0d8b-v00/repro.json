@@ -1,0 +1,564 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "5668b20b0d8b-v00",
+ "run_id": "5668b20b0d8b",
+ "oracle": "r4_edits",
+ "server": {
+  "kind": "gopls",
+  "version": "v0.23.0"
+ },
+ "project": {
+  "name": "jesseduffield/lazydocker@7e7aadc2071d",
+  "source": "corpus",
+  "ref": "temp/corpus/jesseduffield__lazydocker@7e7aadc2071d",
+  "commit": "7e7aadc2071d58031bf2daafca1fbd4093efc23f",
+  "language": "go"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "pkg/gui/focus.go",
+    "positions": [
+     [
+      7,
+      12
+     ],
+     [
+      7,
+      31
+     ],
+     [
+      31,
+      45
+     ],
+     [
+      42,
+      8
+     ],
+     [
+      65,
+      9
+     ],
+     [
+      70,
+      8
+     ],
+     [
+      72,
+      5
+     ],
+     [
+      72,
+      14
+     ],
+     [
+      99,
+      40
+     ],
+     [
+      110,
+      29
+     ],
+     [
+      114,
+      36
+     ],
+     [
+      120,
+      26
+     ]
+    ],
+    "ends": [
+     [
+      7,
+      14
+     ],
+     [
+      7,
+      32
+     ],
+     [
+      31,
+      47
+     ],
+     [
+      42,
+      10
+     ],
+     [
+      65,
+      11
+     ],
+     [
+      70,
+      10
+     ],
+     [
+      72,
+      7
+     ],
+     [
+      72,
+      17
+     ],
+     [
+      99,
+      43
+     ],
+     [
+      110,
+      32
+     ],
+     [
+      114,
+      39
+     ],
+     [
+      120,
+      33
+     ]
+    ],
+    "names": [
+     "Gui",
+     "v",
+     "View",
+     "err",
+     "gui",
+     "gui",
+     "len",
+     "State",
+     "State",
+     "Filter",
+     "State",
+     "ViewStackMutex"
+    ]
+   },
+   {
+    "path": "pkg/gui/menu_panel.go",
+    "positions": [
+     [
+      10,
+      15
+     ],
+     [
+      38,
+      42
+     ],
+     [
+      61,
+      9
+     ],
+     [
+      83,
+      10
+     ],
+     [
+      87,
+      79
+     ],
+     [
+      91,
+      33
+     ],
+     [
+      94,
+      12
+     ],
+     [
+      95,
+      10
+     ],
+     [
+      107,
+      6
+     ],
+     [
+      109,
+      16
+     ],
+     [
+      120,
+      31
+     ],
+     [
+      131,
+      17
+     ]
+    ],
+    "ends": [
+     [
+      10,
+      18
+     ],
+     [
+      38,
+      44
+     ],
+     [
+      61,
+      12
+     ],
+     [
+      83,
+      12
+     ],
+     [
+      87,
+      81
+     ],
+     [
+      91,
+      36
+     ],
+     [
+      94,
+      14
+     ],
+     [
+      95,
+      12
+     ],
+     [
+      107,
+      11
+     ],
+     [
+      109,
+      17
+     ],
+     [
+      120,
+      33
+     ],
+     [
+      131,
+      23
+     ]
+    ],
+    "names": [
+     "string",
+     "nil",
+     "Items",
+     "item",
+     "len",
+     "Items",
+     "gui",
+     "err",
+     "optionsMap",
+     "Tr",
+     "gui",
+     "returnFocus"
+    ]
+   },
+   {
+    "path": "pkg/log/log.go",
+    "positions": [
+     [
+      0,
+      9
+     ],
+     [
+      13,
+      18
+     ],
+     [
+      14,
+      20
+     ],
+     [
+      23,
+      21
+     ],
+     [
+      23,
+      31
+     ],
+     [
+      35,
+      3
+     ],
+     [
+      35,
+      9
+     ],
+     [
+      35,
+      18
+     ],
+     [
+      36,
+      12
+     ],
+     [
+      45,
+      30
+     ],
+     [
+      45,
+      91
+     ],
+     [
+      57,
+      17
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      11
+     ],
+     [
+      13,
+      21
+     ],
+     [
+      14,
+      23
+     ],
+     [
+      23,
+      24
+     ],
+     [
+      23,
+      38
+     ],
+     [
+      35,
+      6
+     ],
+     [
+      35,
+      11
+     ],
+     [
+      35,
+      21
+     ],
+     [
+      36,
+      14
+     ],
+     [
+      45,
+      34
+     ],
+     [
+      45,
+      92
+     ],
+     [
+      57,
+      20
+     ]
+    ],
+    "names": [
+     "log",
+     "config",
+     "Logger",
+     "logrus",
+     "JSONFormatter",
+     "level",
+     "err",
+     "logrus",
+     "nil",
+     "filepath",
+     "os",
+     "logrus"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "diagnostics",
+  "path": "pkg/gui/focus.go",
+  "line": 12,
+  "character": 1,
+  "extra": "M2:quickfix-errors:Remove variable currentListPanel"
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "pkg/gui/focus.go"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    14,
+    9
+   ],
+   "end": [
+    14,
+    25
+   ],
+   "text": "currentLstPanel"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/gui/focus.go",
+   "start": [
+    12,
+    1
+   ],
+   "end": [
+    12,
+    17
+   ],
+   "text": "_"
+  }
+ ],
+ "case": {
+  "action_kind": "quickfix",
+  "base_errors": 0,
+  "check": "errors",
+  "diag": {
+   "code": "UnusedVar",
+   "message": "declared and not used: currentListPanel",
+   "range": {
+    "end": {
+     "character": 17,
+     "line": 12
+    },
+    "start": {
+     "character": 1,
+     "line": 12
+    }
+   },
+   "severity": 1
+  },
+  "fix_introduced_errors": [],
+  "fix_ops": [
+   {
+    "end": [
+     12,
+     17
+    ],
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     12,
+     1
+    ],
+    "text": "_"
+   }
+  ],
+  "kind": "mutation",
+  "mutation": {
+   "end": [
+    14,
+    25
+   ],
+   "id": "M2",
+   "offsets": [
+    235,
+    251
+   ],
+   "sha": "11c8538bccb0f1dd",
+   "start": [
+    14,
+    9
+   ],
+   "text": "currentLstPanel",
+   "what": "misspell 'currentListPanel' as 'currentLstPanel' (drop a middle character)"
+  },
+  "n_fix_ops": 1,
+  "path": "pkg/gui/focus.go",
+  "post_errors": 1,
+  "title": "Remove variable currentListPanel",
+  "via": "edit"
+ },
+ "shape": "diagnostics:extra:UndeclaredName",
+ "signature": "gopls|r4_edits|diagnostics:extra:UndeclaredName",
+ "expected": [],
+ "actual": [
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "UndeclaredName",
+   "compiler",
+   "undefined: currentLstPanel"
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "quick fix 'Remove variable currentListPanel' for UnusedVar at pkg/gui/focus.go:13:2 raises the error count in the edited files from 0 to 1 (seeded by M2: misspell 'currentListPanel' as 'currentLstPanel' (drop a middle character); errors before the mutation 0, after the fix 1); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 71s",
+ "violation": {
+  "oracle": "r4_edits",
+  "server": "gopls-v0.23.0",
+  "project": "jesseduffield/lazydocker@7e7aadc2071d",
+  "key": {
+   "method": "diagnostics",
+   "path": "pkg/gui/focus.go",
+   "line": 12,
+   "character": 1,
+   "extra": "M2:quickfix-errors:Remove variable currentListPanel"
+  },
+  "expected": [],
+  "actual": [
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "UndeclaredName",
+    "compiler",
+    "undefined: currentLstPanel"
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "pkg/gui/focus.go"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     14,
+     9
+    ],
+    "end": [
+     14,
+     25
+    ],
+    "text": "currentLstPanel"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/gui/focus.go",
+    "start": [
+     12,
+     1
+    ],
+    "end": [
+     12,
+     17
+    ],
+    "text": "_"
+   }
+  ],
+  "detail": "{\"case\": {\"action_kind\": \"quickfix\", \"base_errors\": 0, \"check\": \"errors\", \"diag\": {\"code\": \"UnusedVar\", \"message\": \"declared and not used: currentListPanel\", \"range\": {\"end\": {\"character\": 17, \"line\": 12}, \"start\": {\"character\": 1, \"line\": 12}}, \"severity\": 1}, \"fix_introduced_errors\": [], \"fix_ops\": [{\"end\": [12, 17], \"kind\": \"change\", \"path\": \"pkg/gui/focus.go\", \"start\": [12, 1], \"text\": \"_\"}], \"kind\": \"mutation\", \"mutation\": {\"end\": [14, 25], \"id\": \"M2\", \"offsets\": [235, 251], \"sha\": \"11c8538bccb0f1dd\", \"start\": [14, 9], \"text\": \"currentLstPanel\", \"what\": \"misspell 'currentListPanel' as 'currentLstPanel' (drop a middle character)\"}, \"n_fix_ops\": 1, \"path\": \"pkg/gui/focus.go\", \"post_errors\": 1, \"title\": \"Remove variable currentListPanel\", \"via\": \"edit\"}, \"note\": \"quick fix 'Remove variable currentListPanel' for UnusedVar at pkg/gui/focus.go:13:2 raises the error count in the edited files from 0 to 1 (seeded by M2: misspell 'currentListPanel' as 'currentLstPanel' (drop a middle character); errors before the mutation 0, after the fix 1); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 71s\", \"shape\": \"diagnostics:extra:UndeclaredName\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "gopls|r4_edits|diagnostics:extra:UndeclaredName",
+  "run_id": "5668b20b0d8b"
+ },
+ "replay_logs": [
+  "logs/gopls-v0.23.0-5668b20b0d8b-r4-replay-baseline-20260923-150522-47c12e.jsonl.gz",
+  "logs/gopls-v0.23.0-5668b20b0d8b-r4-replay-case-20260923-150508-e8f94d.jsonl.gz",
+  "logs/gopls-v0.23.0-5668b20b0d8b-r4-replay-control-20260923-150527-10478f.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

@@ -1,0 +1,434 @@
+{
+ "format": 1,
+ "campaign": "bench_v1",
+ "vid": "d3d8b2935bd8-v01",
+ "run_id": "d3d8b2935bd8",
+ "oracle": "r4_edits",
+ "server": {
+  "kind": "gopls",
+  "version": "v0.19.0"
+ },
+ "project": {
+  "name": "gopls-73564",
+  "source": "dir",
+  "ref": "data/lsp_bench/cases/gopls-73564/project",
+  "commit": "",
+  "language": "go"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 180.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "main.go",
+    "positions": [
+     [
+      7,
+      9
+     ],
+     [
+      8,
+      4
+     ],
+     [
+      14,
+      3
+     ],
+     [
+      19,
+      18
+     ],
+     [
+      19,
+      28
+     ],
+     [
+      23,
+      19
+     ],
+     [
+      24,
+      8
+     ],
+     [
+      32,
+      22
+     ],
+     [
+      37,
+      4
+     ],
+     [
+      38,
+      13
+     ],
+     [
+      38,
+      22
+     ],
+     [
+      40,
+      5
+     ],
+     [
+      40,
+      10
+     ],
+     [
+      40,
+      26
+     ],
+     [
+      41,
+      6
+     ],
+     [
+      49,
+      12
+     ],
+     [
+      49,
+      27
+     ],
+     [
+      50,
+      9
+     ],
+     [
+      50,
+      61
+     ],
+     [
+      50,
+      74
+     ]
+    ],
+    "ends": [
+     [
+      7,
+      14
+     ],
+     [
+      8,
+      8
+     ],
+     [
+      14,
+      5
+     ],
+     [
+      19,
+      22
+     ],
+     [
+      19,
+      31
+     ],
+     [
+      23,
+      24
+     ],
+     [
+      24,
+      9
+     ],
+     [
+      32,
+      25
+     ],
+     [
+      37,
+      7
+     ],
+     [
+      38,
+      18
+     ],
+     [
+      38,
+      24
+     ],
+     [
+      40,
+      6
+     ],
+     [
+      40,
+      13
+     ],
+     [
+      40,
+      29
+     ],
+     [
+      41,
+      7
+     ],
+     [
+      49,
+      13
+     ],
+     [
+      49,
+      29
+     ],
+     [
+      50,
+      12
+     ],
+     [
+      50,
+      62
+     ],
+     [
+      50,
+      75
+     ]
+    ],
+    "names": [
+     "FruitInfo",
+     "GetName",
+     "Name",
+     "GetName",
+     "string",
+     "GetWeight",
+     "f",
+     "Weight",
+     "fruits",
+     "FruitInfo",
+     "bool",
+     "_",
+     "fruit",
+     "fruits",
+     "cb",
+     "f",
+     "bool",
+     "Printf",
+     "f",
+     "f"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "diagnostics",
+  "path": "main.go",
+  "line": 49,
+  "character": 1,
+  "extra": "M3:quickfix-errors:Remove variable cb"
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "main.go"
+  },
+  {
+   "kind": "change",
+   "path": "main.go",
+   "start": [
+    55,
+    26
+   ],
+   "end": [
+    55,
+    30
+   ]
+  },
+  {
+   "kind": "change",
+   "path": "main.go",
+   "start": [
+    49,
+    1
+   ],
+   "end": [
+    55,
+    1
+   ]
+  }
+ ],
+ "case": {
+  "action_kind": "quickfix",
+  "base_errors": 0,
+  "check": "errors",
+  "diag": {
+   "code": "UnusedVar",
+   "message": "declared and not used: cb",
+   "range": {
+    "end": {
+     "character": 3,
+     "line": 49
+    },
+    "start": {
+     "character": 1,
+     "line": 49
+    }
+   },
+   "severity": 1
+  },
+  "fix_introduced_errors": [
+   {
+    "code": "UnusedImport",
+    "message": "\"fmt\" imported and not used",
+    "path": "main.go",
+    "range": {
+     "end": {
+      "character": 6,
+      "line": 3
+     },
+     "start": {
+      "character": 1,
+      "line": 3
+     }
+    },
+    "severity": 1
+   }
+  ],
+  "fix_ops": [
+   {
+    "end": [
+     55,
+     1
+    ],
+    "kind": "change",
+    "path": "main.go",
+    "start": [
+     49,
+     1
+    ]
+   }
+  ],
+  "kind": "mutation",
+  "mutation": {
+   "end": [
+    55,
+    30
+   ],
+   "id": "M3",
+   "offsets": [
+    1035,
+    1039
+   ],
+   "sha": "9ea85c80efb915fb",
+   "start": [
+    55,
+    26
+   ],
+   "text": "",
+   "what": "drop the last argument of 'IterateFruits(...)'"
+  },
+  "n_fix_ops": 1,
+  "path": "main.go",
+  "post_errors": 2,
+  "title": "Remove variable cb",
+  "via": "edit"
+ },
+ "shape": "diagnostics:extra:UnusedImport,WrongArgCount",
+ "signature": "gopls|r4_edits|diagnostics:extra:UnusedImport,WrongArgCount",
+ "expected": [],
+ "actual": [
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "UnusedImport",
+   "compiler",
+   "\"fmt\" imported and not used"
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "WrongArgCount",
+   "compiler",
+   "not enough arguments in call to IterateFruits have ([]Fruit) want ([]Fruit, func(FruitInfo) bool)"
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "quick fix 'Remove variable cb' for UnusedVar at main.go:50:2 raises the error count in the edited files from 0 to 2 (seeded by M3: drop the last argument of 'IterateFruits(...)'; errors before the mutation 0, after the fix 2); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 43s",
+ "violation": {
+  "oracle": "r4_edits",
+  "server": "gopls-v0.19.0",
+  "project": "gopls-73564",
+  "key": {
+   "method": "diagnostics",
+   "path": "main.go",
+   "line": 49,
+   "character": 1,
+   "extra": "M3:quickfix-errors:Remove variable cb"
+  },
+  "expected": [],
+  "actual": [
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "UnusedImport",
+    "compiler",
+    "\"fmt\" imported and not used"
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "WrongArgCount",
+    "compiler",
+    "not enough arguments in call to IterateFruits have ([]Fruit) want ([]Fruit, func(FruitInfo) bool)"
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "main.go"
+   },
+   {
+    "kind": "change",
+    "path": "main.go",
+    "start": [
+     55,
+     26
+    ],
+    "end": [
+     55,
+     30
+    ]
+   },
+   {
+    "kind": "change",
+    "path": "main.go",
+    "start": [
+     49,
+     1
+    ],
+    "end": [
+     55,
+     1
+    ]
+   }
+  ],
+  "detail": "{\"case\": {\"action_kind\": \"quickfix\", \"base_errors\": 0, \"check\": \"errors\", \"diag\": {\"code\": \"UnusedVar\", \"message\": \"declared and not used: cb\", \"range\": {\"end\": {\"character\": 3, \"line\": 49}, \"start\": {\"character\": 1, \"line\": 49}}, \"severity\": 1}, \"fix_introduced_errors\": [{\"code\": \"UnusedImport\", \"message\": \"\\\"fmt\\\" imported and not used\", \"path\": \"main.go\", \"range\": {\"end\": {\"character\": 6, \"line\": 3}, \"start\": {\"character\": 1, \"line\": 3}}, \"severity\": 1}], \"fix_ops\": [{\"end\": [55, 1], \"kind\": \"change\", \"path\": \"main.go\", \"start\": [49, 1]}], \"kind\": \"mutation\", \"mutation\": {\"end\": [55, 30], \"id\": \"M3\", \"offsets\": [1035, 1039], \"sha\": \"9ea85c80efb915fb\", \"start\": [55, 26], \"text\": \"\", \"what\": \"drop the last argument of 'IterateFruits(...)'\"}, \"n_fix_ops\": 1, \"path\": \"main.go\", \"post_errors\": 2, \"title\": \"Remove variable cb\", \"via\": \"edit\"}, \"note\": \"quick fix 'Remove variable cb' for UnusedVar at main.go:50:2 raises the error count in the edited files from 0 to 2 (seeded by M3: drop the last argument of 'IterateFruits(...)'; errors before the mutation 0, after the fix 2); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 43s\", \"shape\": \"diagnostics:extra:UnusedImport,WrongArgCount\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "gopls|r4_edits|diagnostics:extra:UnusedImport,WrongArgCount",
+  "run_id": "d3d8b2935bd8"
+ },
+ "replay_logs": [
+  "logs/gopls-v0.19.0-d3d8b2935bd8-r4-replay-baseline-20260924-202836-dcf705.jsonl.gz",
+  "logs/gopls-v0.19.0-d3d8b2935bd8-r4-replay-case-20260924-202828-ea8fb1.jsonl.gz",
+  "logs/gopls-v0.19.0-d3d8b2935bd8-r4-replay-control-20260924-202839-6e8efc.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

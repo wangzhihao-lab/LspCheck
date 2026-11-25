@@ -1,0 +1,3 @@
+2026-09-24 21:04:58,693 INFO campaign_run run cae7736dba61: r2_handles on tsserver 5.5.4+tsls4.3.3, tsserver-59116 seed 1 settled, targets ['lib.ts', 'main.ts']
+2026-09-24 21:05:42,824 INFO campaign_run run cae7736dba61: 0 candidate(s) in 44s; confirming
+2026-09-24 21:05:42,825 INFO campaign_run run cae7736dba61 finished: ok, 0 confirmed of 0 candidate(s), 44s

@@ -1,0 +1,533 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "9665ded99b16-v00",
+ "run_id": "9665ded99b16",
+ "oracle": "r5_transforms",
+ "server": {
+  "kind": "gopls",
+  "version": "v0.23.0"
+ },
+ "project": {
+  "name": "spf13/cobra@adbc8813901b",
+  "source": "corpus",
+  "ref": "temp/corpus/spf13__cobra@adbc8813901b",
+  "commit": "adbc8813901bba65827259daa8e22ff94ec1f30e",
+  "language": "go"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 6,
+  "targets": [
+   {
+    "path": "args_test.go",
+    "positions": [
+     [
+      94,
+      45
+     ],
+     [
+      98,
+      53
+     ],
+     [
+      135,
+      1
+     ],
+     [
+      187,
+      61
+     ],
+     [
+      241,
+      13
+     ],
+     [
+      252,
+      5
+     ],
+     [
+      326,
+      29
+     ],
+     [
+      347,
+      32
+     ],
+     [
+      394,
+      20
+     ],
+     [
+      517,
+      25
+     ],
+     [
+      538,
+      63
+     ],
+     [
+      569,
+      28
+     ]
+    ],
+    "ends": [
+     [
+      94,
+      47
+     ],
+     [
+      98,
+      54
+     ],
+     [
+      135,
+      2
+     ],
+     [
+      187,
+      63
+     ],
+     [
+      241,
+      25
+     ],
+     [
+      252,
+      7
+     ],
+     [
+      326,
+      30
+     ],
+     [
+      347,
+      33
+     ],
+     [
+      394,
+      35
+     ],
+     [
+      517,
+      27
+     ],
+     [
+      538,
+      67
+     ],
+     [
+      569,
+      30
+     ]
+    ],
+    "names": [
+     "got",
+     "T",
+     "c",
+     "true",
+     "validOnlyWithInvalidArgs",
+     "err",
+     "t",
+     "t",
+     "TestRangeArgs_WithInvalidCount",
+     "fail",
+     "testing",
+     "Use"
+    ]
+   },
+   {
+    "path": "doc/yaml_docs.go",
+    "positions": [
+     [
+      77,
+      50
+     ],
+     [
+      80,
+      55
+     ],
+     [
+      87,
+      41
+     ],
+     [
+      92,
+      72
+     ],
+     [
+      99,
+      41
+     ],
+     [
+      114,
+      3
+     ],
+     [
+      116,
+      45
+     ],
+     [
+      122,
+      14
+     ],
+     [
+      139,
+      3
+     ],
+     [
+      139,
+      7
+     ],
+     [
+      151,
+      29
+     ],
+     [
+      169,
+      28
+     ]
+    ],
+    "ends": [
+     [
+      77,
+      54
+     ],
+     [
+      80,
+      57
+     ],
+     [
+      87,
+      44
+     ],
+     [
+      92,
+      75
+     ],
+     [
+      99,
+      44
+     ],
+     [
+      114,
+      6
+     ],
+     [
+      116,
+      48
+     ],
+     [
+      122,
+      16
+     ],
+     [
+      139,
+      4
+     ],
+     [
+      139,
+      9
+     ],
+     [
+      151,
+      32
+     ],
+     [
+      169,
+      30
+     ]
+    ],
+    "names": [
+     "filename",
+     "nil",
+     "Writer",
+     "string",
+     "Short",
+     "flags",
+     "flags",
+     "cmd",
+     "os",
+     "Exit",
+     "pflag",
+     "opt"
+    ]
+   },
+   {
+    "path": "flag_groups.go",
+    "positions": [
+     [
+      34,
+      5
+     ],
+     [
+      37,
+      5
+     ],
+     [
+      37,
+      93
+     ],
+     [
+      55,
+      140
+     ],
+     [
+      68,
+      5
+     ],
+     [
+      85,
+      14
+     ],
+     [
+      92,
+      3
+     ],
+     [
+      98,
+      24
+     ],
+     [
+      110,
+      23
+     ],
+     [
+      125,
+      33
+     ],
+     [
+      232,
+      40
+     ],
+     [
+      236,
+      41
+     ]
+    ],
+    "ends": [
+     [
+      34,
+      6
+     ],
+     [
+      37,
+      8
+     ],
+     [
+      37,
+      94
+     ],
+     [
+      55,
+      142
+     ],
+     [
+      68,
+      6
+     ],
+     [
+      85,
+      17
+     ],
+     [
+      92,
+      6
+     ],
+     [
+      98,
+      37
+     ],
+     [
+      110,
+      25
+     ],
+     [
+      125,
+      36
+     ],
+     [
+      232,
+      43
+     ],
+     [
+      236,
+      44
+     ]
+    ],
+    "names": [
+     "_",
+     "panic",
+     "v",
+     "err",
+     "f",
+     "Flags",
+     "flags",
+     "validateRequiredFlagGroups",
+     "flag",
+     "group",
+     "string",
+     "pflag"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "completion",
+  "path": "flag_groups.go",
+  "line": 236,
+  "character": 44,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "doc/yaml_docs.go"
+  },
+  {
+   "kind": "change",
+   "path": "doc/yaml_docs.go",
+   "start": [
+    174,
+    1
+   ],
+   "end": [
+    175,
+    0
+   ]
+  }
+ ],
+ "case": {
+  "mapped_key": [
+   "completion",
+   "flag_groups.go",
+   236,
+   44,
+   ""
+  ],
+  "transform": {
+   "back": {
+    "col": 0,
+    "eof": [],
+    "line": -1,
+    "n": 0,
+    "path": "doc/yaml_docs.go",
+    "w": 0
+   },
+   "edits": [
+    [
+     174,
+     1,
+     175,
+     0,
+     ""
+    ]
+   ],
+   "kind": "T5",
+   "path": "doc/yaml_docs.go",
+   "shift": {
+    "col": 0,
+    "eof": [
+     175,
+     0,
+     174,
+     1
+    ],
+    "line": -1,
+    "n": 0,
+    "path": "doc/yaml_docs.go",
+    "w": 0
+   }
+  }
+ },
+ "shape": "completion:changed",
+ "signature": "gopls|r5_transforms|completion:changed",
+ "expected": [
+  "c.helpCommand.persistentFlag",
+  "c.persistentFlag",
+  "flag.PFlagFromGoFlag",
+  "helpFlagName",
+  "pflag",
+  "prepareCustomAnnotationsForFlags",
+  "processFlagForGroupAnnotation",
+  "stripFlags",
+  "writeLocalNonPersistentFlag"
+ ],
+ "actual": [
+  "c.Parent().persistentFlag",
+  "c.persistentFlag",
+  "flag.PFlagFromGoFlag",
+  "helpFlagName",
+  "pflag",
+  "prepareCustomAnnotationsForFlags",
+  "processFlagForGroupAnnotation",
+  "stripFlags",
+  "writeLocalNonPersistentFlag"
+ ],
+ "reproduced": "0/3",
+ "note": "T5 doc/yaml_docs.go: 1 edit(s), first [174, 1, 175, 0]; flake 0/3 [r1:SCr r2:SCr r3:Scr] in 43s",
+ "violation": {
+  "oracle": "r5_transforms",
+  "server": "gopls-v0.23.0",
+  "project": "spf13/cobra@adbc8813901b",
+  "key": {
+   "method": "completion",
+   "path": "flag_groups.go",
+   "line": 236,
+   "character": 44,
+   "extra": ""
+  },
+  "expected": [
+   "c.helpCommand.persistentFlag",
+   "c.persistentFlag",
+   "flag.PFlagFromGoFlag",
+   "helpFlagName",
+   "pflag",
+   "prepareCustomAnnotationsForFlags",
+   "processFlagForGroupAnnotation",
+   "stripFlags",
+   "writeLocalNonPersistentFlag"
+  ],
+  "actual": [
+   "c.Parent().persistentFlag",
+   "c.persistentFlag",
+   "flag.PFlagFromGoFlag",
+   "helpFlagName",
+   "pflag",
+   "prepareCustomAnnotationsForFlags",
+   "processFlagForGroupAnnotation",
+   "stripFlags",
+   "writeLocalNonPersistentFlag"
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "doc/yaml_docs.go"
+   },
+   {
+    "kind": "change",
+    "path": "doc/yaml_docs.go",
+    "start": [
+     174,
+     1
+    ],
+    "end": [
+     175,
+     0
+    ]
+   }
+  ],
+  "detail": "{\"case\": {\"mapped_key\": [\"completion\", \"flag_groups.go\", 236, 44, \"\"], \"transform\": {\"back\": {\"col\": 0, \"eof\": [], \"line\": -1, \"n\": 0, \"path\": \"doc/yaml_docs.go\", \"w\": 0}, \"edits\": [[174, 1, 175, 0, \"\"]], \"kind\": \"T5\", \"path\": \"doc/yaml_docs.go\", \"shift\": {\"col\": 0, \"eof\": [175, 0, 174, 1], \"line\": -1, \"n\": 0, \"path\": \"doc/yaml_docs.go\", \"w\": 0}}}, \"note\": \"T5 doc/yaml_docs.go: 1 edit(s), first [174, 1, 175, 0]; flake 0/3 [r1:SCr r2:SCr r3:Scr] in 43s\", \"shape\": \"completion:changed\"}",
+  "reproduced": "0/3",
+  "reduced_ops": [],
+  "signature": "gopls|r5_transforms|completion:changed",
+  "run_id": "9665ded99b16"
+ },
+ "replay_logs": [],
+ "project_files": {},
+ "incomplete": false
+}

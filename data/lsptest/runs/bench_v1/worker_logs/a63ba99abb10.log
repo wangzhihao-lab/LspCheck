@@ -1,0 +1,21 @@
+2026-09-24 14:25:02,023 INFO campaign_run run a63ba99abb10: r1_history on tsserver 4.2.4+tsls0.5.1, tsserver-43278 seed 1 settled, targets ['index.js']
+2026-09-24 14:27:24,374 INFO campaign_run run a63ba99abb10: 110 candidate(s) in 142s; confirming
+2026-09-24 14:27:38,084 INFO flake replay 1/3 of tsserver|r1_history|completion:changed: settled=True control_stable=True reproduced=False (13.7s)
+2026-09-24 14:27:51,809 INFO flake replay 2/3 of tsserver|r1_history|completion:changed: settled=True control_stable=True reproduced=False (13.7s)
+2026-09-24 14:28:05,928 INFO flake replay 3/3 of tsserver|r1_history|completion:changed: settled=True control_stable=True reproduced=False (14.1s)
+2026-09-24 14:28:19,680 INFO flake replay 1/3 of tsserver|r1_history|definition:changed: settled=True control_stable=True reproduced=False (13.8s)
+2026-09-24 14:28:31,570 INFO flake replay 2/3 of tsserver|r1_history|definition:changed: settled=True control_stable=True reproduced=False (11.9s)
+2026-09-24 14:28:43,480 INFO flake replay 3/3 of tsserver|r1_history|definition:changed: settled=True control_stable=True reproduced=False (11.9s)
+2026-09-24 14:28:55,508 INFO flake replay 1/3 of tsserver|r1_history|definition:gained: settled=True control_stable=True reproduced=False (12.0s)
+2026-09-24 14:29:07,450 INFO flake replay 2/3 of tsserver|r1_history|definition:gained: settled=True control_stable=True reproduced=False (11.9s)
+2026-09-24 14:29:19,442 INFO flake replay 3/3 of tsserver|r1_history|definition:gained: settled=True control_stable=True reproduced=False (12.0s)
+2026-09-24 14:29:31,414 INFO flake replay 1/3 of tsserver|r1_history|hover:text: settled=True control_stable=True reproduced=False (12.0s)
+2026-09-24 14:29:43,414 INFO flake replay 2/3 of tsserver|r1_history|hover:text: settled=True control_stable=True reproduced=False (12.0s)
+2026-09-24 14:29:55,994 INFO flake replay 3/3 of tsserver|r1_history|hover:text: settled=True control_stable=True reproduced=False (12.6s)
+2026-09-24 14:30:08,351 INFO flake replay 1/3 of tsserver|r1_history|references:extra: settled=True control_stable=True reproduced=False (12.4s)
+2026-09-24 14:30:20,828 INFO flake replay 2/3 of tsserver|r1_history|references:extra: settled=True control_stable=True reproduced=False (12.5s)
+2026-09-24 14:30:34,158 INFO flake replay 3/3 of tsserver|r1_history|references:extra: settled=True control_stable=True reproduced=False (13.3s)
+2026-09-24 14:30:47,280 INFO flake replay 1/3 of tsserver|r1_history|typeDefinition:gained: settled=True control_stable=True reproduced=False (13.1s)
+2026-09-24 14:30:59,517 INFO flake replay 2/3 of tsserver|r1_history|typeDefinition:gained: settled=True control_stable=True reproduced=False (12.2s)
+2026-09-24 14:31:11,950 INFO flake replay 3/3 of tsserver|r1_history|typeDefinition:gained: settled=True control_stable=True reproduced=False (12.4s)
+2026-09-24 14:31:11,959 INFO campaign_run run a63ba99abb10 finished: ok, 0 confirmed of 110 candidate(s), 370s

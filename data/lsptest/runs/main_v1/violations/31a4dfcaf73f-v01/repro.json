@@ -1,0 +1,468 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "31a4dfcaf73f-v01",
+ "run_id": "31a4dfcaf73f",
+ "oracle": "r6_crossimpl",
+ "server": {
+  "kind": "ts7",
+  "version": "7.0.2"
+ },
+ "project": {
+  "name": "Fission-AI/OpenSpec@f179ed4e4056",
+  "source": "corpus",
+  "ref": "temp/corpus/Fission-AI__OpenSpec@f179ed4e4056",
+  "commit": "f179ed4e40567cdb56501ee3f4d09efbcb1557b8",
+  "language": "typescript"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "src/core/schemas/index.ts",
+    "positions": [
+     [
+      1,
+      9
+     ],
+     [
+      2,
+      10
+     ],
+     [
+      3,
+      4
+     ],
+     [
+      3,
+      11
+     ],
+     [
+      4,
+      4
+     ],
+     [
+      13,
+      11
+     ],
+     [
+      15,
+      8
+     ],
+     [
+      16,
+      4
+     ],
+     [
+      17,
+      9
+     ],
+     [
+      18,
+      4
+     ],
+     [
+      18,
+      10
+     ],
+     [
+      19,
+      4
+     ]
+    ],
+    "ends": [
+     [
+      1,
+      16
+     ],
+     [
+      2,
+      19
+     ],
+     [
+      3,
+      6
+     ],
+     [
+      3,
+      15
+     ],
+     [
+      4,
+      6
+     ],
+     [
+      13,
+      20
+     ],
+     [
+      15,
+      14
+     ],
+     [
+      16,
+      6
+     ],
+     [
+      17,
+      12
+     ],
+     [
+      18,
+      6
+     ],
+     [
+      18,
+      13
+     ],
+     [
+      19,
+      6
+     ]
+    ],
+    "names": [
+     "ScenarioSchema",
+     "RequirementSchema",
+     "type",
+     "Scenario",
+     "type",
+     "DeltaOperationType",
+     "ChangeSchema",
+     "type",
+     "Delta",
+     "type",
+     "Change",
+     "from"
+    ]
+   },
+   {
+    "path": "src/utils/requirement-diff.ts",
+    "positions": [
+     [
+      0,
+      14
+     ],
+     [
+      34,
+      29
+     ],
+     [
+      34,
+      48
+     ],
+     [
+      39,
+      20
+     ],
+     [
+      40,
+      50
+     ],
+     [
+      62,
+      10
+     ],
+     [
+      78,
+      19
+     ],
+     [
+      79,
+      16
+     ],
+     [
+      80,
+      12
+     ],
+     [
+      80,
+      37
+     ],
+     [
+      80,
+      41
+     ],
+     [
+      82,
+      17
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      20
+     ],
+     [
+      34,
+      42
+     ],
+     [
+      34,
+      54
+     ],
+     [
+      39,
+      21
+     ],
+     [
+      40,
+      52
+     ],
+     [
+      62,
+      13
+     ],
+     [
+      78,
+      21
+     ],
+     [
+      79,
+      17
+     ],
+     [
+      80,
+      14
+     ],
+     [
+      80,
+      38
+     ],
+     [
+      80,
+      43
+     ],
+     [
+      82,
+      19
+     ]
+    ],
+    "names": [
+     "formatPatch",
+     "extractRequirementsSection",
+     "specContent",
+     "of",
+     "name",
+     "delta",
+     "Map",
+     "of",
+     "from",
+     "r",
+     "from",
+     "from"
+    ]
+   },
+   {
+    "path": "test/core/misplaced-delta-files.test.ts",
+    "positions": [
+     [
+      92,
+      7
+     ],
+     [
+      104,
+      41
+     ],
+     [
+      108,
+      3
+     ],
+     [
+      165,
+      56
+     ],
+     [
+      198,
+      20
+     ],
+     [
+      228,
+      31
+     ],
+     [
+      242,
+      29
+     ],
+     [
+      305,
+      18
+     ],
+     [
+      317,
+      20
+     ],
+     [
+      322,
+      31
+     ],
+     [
+      331,
+      17
+     ],
+     [
+      409,
+      14
+     ]
+    ],
+    "ends": [
+     [
+      92,
+      10
+     ],
+     [
+      104,
+      44
+     ],
+     [
+      108,
+      4
+     ],
+     [
+      165,
+      59
+     ],
+     [
+      198,
+      25
+     ],
+     [
+      228,
+      39
+     ],
+     [
+      242,
+      33
+     ],
+     [
+      305,
+      19
+     ],
+     [
+      317,
+      25
+     ],
+     [
+      322,
+      36
+     ],
+     [
+      331,
+      23
+     ],
+     [
+      409,
+      18
+     ]
+    ],
+    "names": [
+     "expect",
+     "DELTA",
+     "it",
+     "DELTA",
+     "changeDir",
+     "originalExitCode",
+     "content",
+     "fs",
+     "changeDir",
+     "recursive",
+     "instructions",
+     "archived"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "definition",
+  "path": "test/core/misplaced-delta-files.test.ts",
+  "line": 322,
+  "character": 31,
+  "extra": ""
+ },
+ "ops": [],
+ "case": {
+  "intended": [],
+  "intended_source": "4519ec0a93607319a96f4feb967aa06a251ccc816544e2fed5c985c1d45dc11a",
+  "method": "definition",
+  "only_reference": [
+   "[\"node_modules/.pnpm/@types+node@20.19.43/node_modules/@types/node/fs.d.ts\", 1639, 8, 1639, 17]"
+  ],
+  "only_test": [
+   "[\"~/Library/Caches/typescript/7.0/node_modules/@types/node/fs.d.ts\", 1941, 8, 1941, 17]"
+  ],
+  "reference": {
+   "kind": "ts6",
+   "version": "6.0.3"
+  }
+ },
+ "shape": "definition:changed",
+ "signature": "ts7|r6_crossimpl|definition:changed",
+ "expected": [
+  [
+   "node_modules/.pnpm/@types+node@20.19.43/node_modules/@types/node/fs.d.ts",
+   1639,
+   8,
+   1639,
+   17
+  ]
+ ],
+ "actual": [
+  [
+   "~/Library/Caches/typescript/7.0/node_modules/@types/node/fs.d.ts",
+   1941,
+   8,
+   1941,
+   17
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "ts7-7.0.2 and ts6-6.0.3 differ on definition at test/core/misplaced-delta-files.test.ts:323:32; no documented intended difference matches; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 144s",
+ "violation": {
+  "oracle": "r6_crossimpl",
+  "server": "ts7-7.0.2",
+  "project": "Fission-AI/OpenSpec@f179ed4e4056",
+  "key": {
+   "method": "definition",
+   "path": "test/core/misplaced-delta-files.test.ts",
+   "line": 322,
+   "character": 31,
+   "extra": ""
+  },
+  "expected": [
+   [
+    "node_modules/.pnpm/@types+node@20.19.43/node_modules/@types/node/fs.d.ts",
+    1639,
+    8,
+    1639,
+    17
+   ]
+  ],
+  "actual": [
+   [
+    "~/Library/Caches/typescript/7.0/node_modules/@types/node/fs.d.ts",
+    1941,
+    8,
+    1941,
+    17
+   ]
+  ],
+  "ops": [],
+  "detail": "{\"case\": {\"intended\": [], \"intended_source\": \"4519ec0a93607319a96f4feb967aa06a251ccc816544e2fed5c985c1d45dc11a\", \"method\": \"definition\", \"only_reference\": [\"[\\\"node_modules/.pnpm/@types+node@20.19.43/node_modules/@types/node/fs.d.ts\\\", 1639, 8, 1639, 17]\"], \"only_test\": [\"[\\\"~/Library/Caches/typescript/7.0/node_modules/@types/node/fs.d.ts\\\", 1941, 8, 1941, 17]\"], \"reference\": {\"kind\": \"ts6\", \"version\": \"6.0.3\"}}, \"note\": \"ts7-7.0.2 and ts6-6.0.3 differ on definition at test/core/misplaced-delta-files.test.ts:323:32; no documented intended difference matches; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 144s\", \"shape\": \"definition:changed\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "ts7|r6_crossimpl|definition:changed",
+  "run_id": "31a4dfcaf73f"
+ },
+ "replay_logs": [
+  "logs/ts6-6.0.3-31a4dfcaf73f-ref-r6-replay-ref-baseline-20260923-214325-a1d440.jsonl.gz",
+  "logs/ts6-6.0.3-31a4dfcaf73f-ref-r6-replay-ref-control-20260923-214337-f4a5e8.jsonl.gz",
+  "logs/ts7-7.0.2-31a4dfcaf73f-r6-replay-test-baseline-20260923-214300-571ee4.jsonl.gz",
+  "logs/ts7-7.0.2-31a4dfcaf73f-r6-replay-test-control-20260923-214312-d78df3.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

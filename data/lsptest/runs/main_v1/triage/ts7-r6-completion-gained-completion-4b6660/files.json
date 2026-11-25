@@ -1,0 +1,3 @@
+{
+ "src/__tests__/utils/objectHasFunction.test.ts": "import noop from '../../utils/noop';\nimport objectHasFunction from '../../utils/objectHasFunction';\n\ndescribe('objectHasFunction', () => {\n  it('should detect if any object has function', () => {\n    expect(objectHasFunction({})).toBeFalsy();\n    expect(\n      objectHasFunction({\n        test: '',\n      }),\n    ).toBeFalsy();\n\n    expect(\n      objectHasFunction({\n        test: noop,\n      }),\n    ).toBeTruthy();\n  });\n});\n"
+}

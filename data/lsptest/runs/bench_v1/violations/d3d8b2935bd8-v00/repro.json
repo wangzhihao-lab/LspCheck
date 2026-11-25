@@ -1,0 +1,402 @@
+{
+ "format": 1,
+ "campaign": "bench_v1",
+ "vid": "d3d8b2935bd8-v00",
+ "run_id": "d3d8b2935bd8",
+ "oracle": "r4_edits",
+ "server": {
+  "kind": "gopls",
+  "version": "v0.19.0"
+ },
+ "project": {
+  "name": "gopls-73564",
+  "source": "dir",
+  "ref": "data/lsp_bench/cases/gopls-73564/project",
+  "commit": "",
+  "language": "go"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 180.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "main.go",
+    "positions": [
+     [
+      7,
+      9
+     ],
+     [
+      8,
+      4
+     ],
+     [
+      14,
+      3
+     ],
+     [
+      19,
+      18
+     ],
+     [
+      19,
+      28
+     ],
+     [
+      23,
+      19
+     ],
+     [
+      24,
+      8
+     ],
+     [
+      32,
+      22
+     ],
+     [
+      37,
+      4
+     ],
+     [
+      38,
+      13
+     ],
+     [
+      38,
+      22
+     ],
+     [
+      40,
+      5
+     ],
+     [
+      40,
+      10
+     ],
+     [
+      40,
+      26
+     ],
+     [
+      41,
+      6
+     ],
+     [
+      49,
+      12
+     ],
+     [
+      49,
+      27
+     ],
+     [
+      50,
+      9
+     ],
+     [
+      50,
+      61
+     ],
+     [
+      50,
+      74
+     ]
+    ],
+    "ends": [
+     [
+      7,
+      14
+     ],
+     [
+      8,
+      8
+     ],
+     [
+      14,
+      5
+     ],
+     [
+      19,
+      22
+     ],
+     [
+      19,
+      31
+     ],
+     [
+      23,
+      24
+     ],
+     [
+      24,
+      9
+     ],
+     [
+      32,
+      25
+     ],
+     [
+      37,
+      7
+     ],
+     [
+      38,
+      18
+     ],
+     [
+      38,
+      24
+     ],
+     [
+      40,
+      6
+     ],
+     [
+      40,
+      13
+     ],
+     [
+      40,
+      29
+     ],
+     [
+      41,
+      7
+     ],
+     [
+      49,
+      13
+     ],
+     [
+      49,
+      29
+     ],
+     [
+      50,
+      12
+     ],
+     [
+      50,
+      62
+     ],
+     [
+      50,
+      75
+     ]
+    ],
+    "names": [
+     "FruitInfo",
+     "GetName",
+     "Name",
+     "GetName",
+     "string",
+     "GetWeight",
+     "f",
+     "Weight",
+     "fruits",
+     "FruitInfo",
+     "bool",
+     "_",
+     "fruit",
+     "fruits",
+     "cb",
+     "f",
+     "bool",
+     "Printf",
+     "f",
+     "f"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "diagnostics",
+  "path": "main.go",
+  "line": 41,
+  "character": 8,
+  "extra": "M2:quickfix-errors:Declare missing methods of FruitInfo"
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "main.go"
+  },
+  {
+   "kind": "change",
+   "path": "main.go",
+   "start": [
+    23,
+    8
+   ],
+   "end": [
+    23,
+    13
+   ],
+   "text": "Frit"
+  },
+  {
+   "kind": "change",
+   "path": "main.go",
+   "start": [
+    18,
+    3
+   ],
+   "end": [
+    18,
+    3
+   ],
+   "text": "GetWeight implements FruitInfo.\nfunc (f Fruit) GetWeight() int {\n\tpanic(\"unimplemented\")\n}\n\n// "
+  }
+ ],
+ "case": {
+  "action_kind": "quickfix",
+  "base_errors": 0,
+  "check": "errors",
+  "diag": {
+   "code": "InvalidIfaceAssign",
+   "message": "cannot use fruit (variable of struct type Fruit) as FruitInfo value in argument to cb: Fruit does not implement FruitInfo (missing method GetWeight)",
+   "range": {
+    "end": {
+     "character": 13,
+     "line": 41
+    },
+    "start": {
+     "character": 8,
+     "line": 41
+    }
+   },
+   "severity": 1
+  },
+  "fix_introduced_errors": [],
+  "fix_ops": [
+   {
+    "end": [
+     18,
+     3
+    ],
+    "kind": "change",
+    "path": "main.go",
+    "start": [
+     18,
+     3
+    ],
+    "text": "GetWeight implements FruitInfo.\nfunc (f Fruit) GetWeight() int {\n\tpanic(\"unimplemented\")\n}\n\n// "
+   }
+  ],
+  "kind": "mutation",
+  "mutation": {
+   "end": [
+    23,
+    13
+   ],
+   "id": "M2",
+   "offsets": [
+    301,
+    306
+   ],
+   "sha": "9ea85c80efb915fb",
+   "start": [
+    23,
+    8
+   ],
+   "text": "Frit",
+   "what": "misspell 'Fruit' as 'Frit' (drop a middle character)"
+  },
+  "n_fix_ops": 1,
+  "path": "main.go",
+  "post_errors": 1,
+  "title": "Declare missing methods of FruitInfo",
+  "via": "resolve"
+ },
+ "shape": "diagnostics:extra:UndeclaredName",
+ "signature": "gopls|r4_edits|diagnostics:extra:UndeclaredName",
+ "expected": [],
+ "actual": [
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "UndeclaredName",
+   "compiler",
+   "undefined: Frit"
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "quick fix 'Declare missing methods of FruitInfo' for InvalidIfaceAssign at main.go:42:9 raises the error count in the edited files from 0 to 1 (seeded by M2: misspell 'Fruit' as 'Frit' (drop a middle character); errors before the mutation 0, after the fix 1); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 43s",
+ "violation": {
+  "oracle": "r4_edits",
+  "server": "gopls-v0.19.0",
+  "project": "gopls-73564",
+  "key": {
+   "method": "diagnostics",
+   "path": "main.go",
+   "line": 41,
+   "character": 8,
+   "extra": "M2:quickfix-errors:Declare missing methods of FruitInfo"
+  },
+  "expected": [],
+  "actual": [
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "UndeclaredName",
+    "compiler",
+    "undefined: Frit"
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "main.go"
+   },
+   {
+    "kind": "change",
+    "path": "main.go",
+    "start": [
+     23,
+     8
+    ],
+    "end": [
+     23,
+     13
+    ],
+    "text": "Frit"
+   },
+   {
+    "kind": "change",
+    "path": "main.go",
+    "start": [
+     18,
+     3
+    ],
+    "end": [
+     18,
+     3
+    ],
+    "text": "GetWeight implements FruitInfo.\nfunc (f Fruit) GetWeight() int {\n\tpanic(\"unimplemented\")\n}\n\n// "
+   }
+  ],
+  "detail": "{\"case\": {\"action_kind\": \"quickfix\", \"base_errors\": 0, \"check\": \"errors\", \"diag\": {\"code\": \"InvalidIfaceAssign\", \"message\": \"cannot use fruit (variable of struct type Fruit) as FruitInfo value in argument to cb: Fruit does not implement FruitInfo (missing method GetWeight)\", \"range\": {\"end\": {\"character\": 13, \"line\": 41}, \"start\": {\"character\": 8, \"line\": 41}}, \"severity\": 1}, \"fix_introduced_errors\": [], \"fix_ops\": [{\"end\": [18, 3], \"kind\": \"change\", \"path\": \"main.go\", \"start\": [18, 3], \"text\": \"GetWeight implements FruitInfo.\\nfunc (f Fruit) GetWeight() int {\\n\\tpanic(\\\"unimplemented\\\")\\n}\\n\\n// \"}], \"kind\": \"mutation\", \"mutation\": {\"end\": [23, 13], \"id\": \"M2\", \"offsets\": [301, 306], \"sha\": \"9ea85c80efb915fb\", \"start\": [23, 8], \"text\": \"Frit\", \"what\": \"misspell 'Fruit' as 'Frit' (drop a middle character)\"}, \"n_fix_ops\": 1, \"path\": \"main.go\", \"post_errors\": 1, \"title\": \"Declare missing methods of FruitInfo\", \"via\": \"resolve\"}, \"note\": \"quick fix 'Declare missing methods of FruitInfo' for InvalidIfaceAssign at main.go:42:9 raises the error count in the edited files from 0 to 1 (seeded by M2: misspell 'Fruit' as 'Frit' (drop a middle character); errors before the mutation 0, after the fix 1); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 43s\", \"shape\": \"diagnostics:extra:UndeclaredName\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "gopls|r4_edits|diagnostics:extra:UndeclaredName",
+  "run_id": "d3d8b2935bd8"
+ },
+ "replay_logs": [
+  "logs/gopls-v0.19.0-d3d8b2935bd8-r4-replay-baseline-20260924-202753-336500.jsonl.gz",
+  "logs/gopls-v0.19.0-d3d8b2935bd8-r4-replay-case-20260924-202745-8f5289.jsonl.gz",
+  "logs/gopls-v0.19.0-d3d8b2935bd8-r4-replay-control-20260924-202756-2d5a00.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

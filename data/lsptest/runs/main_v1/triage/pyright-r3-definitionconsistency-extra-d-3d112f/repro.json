@@ -1,0 +1,169 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "96ea95edb4ad-v00",
+ "run_id": "96ea95edb4ad",
+ "oracle": "r3_routes",
+ "server": {
+  "kind": "pyright",
+  "version": "1.1.414"
+ },
+ "project": {
+  "name": "browser-use/browser-use@d8110c5ff87c",
+  "source": "corpus",
+  "ref": "temp/corpus/browser-use__browser-use@d8110c5ff87c",
+  "commit": "d8110c5ff87ccba887aaa726cdb780f2f84bef8d",
+  "language": "python"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "browser_use/browser/_cdp_timeout.py",
+    "positions": [],
+    "ends": [],
+    "names": []
+   },
+   {
+    "path": "browser_use/browser/watchdogs/aboutblank_watchdog.py",
+    "positions": [
+     [
+      39,
+      5
+     ]
+    ],
+    "ends": [],
+    "names": [
+     ""
+    ]
+   },
+   {
+    "path": "tests/ci/test_image_only_dom_representation.py",
+    "positions": [],
+    "ends": [],
+    "names": []
+   }
+  ]
+ },
+ "key": {
+  "method": "definitionConsistency",
+  "path": "browser_use/browser/watchdogs/aboutblank_watchdog.py",
+  "line": 39,
+  "character": 5,
+  "extra": "from:browser_use/browser/watchdogs/aboutblank_watchdog.py:49:11"
+ },
+ "ops": [],
+ "case": {
+  "loc": [
+   "browser_use/browser/watchdogs/aboutblank_watchdog.py",
+   39,
+   1,
+   39,
+   10
+  ],
+  "sub": "d",
+  "target": [
+   "browser_use/browser/watchdogs/aboutblank_watchdog.py",
+   49,
+   11
+  ]
+ },
+ "shape": "definitionConsistency:extra",
+ "signature": "pyright|r3_routes|definitionConsistency:extra",
+ "expected": [
+  [
+   "browser_use/browser/watchdogs/aboutblank_watchdog.py",
+   39,
+   1,
+   39,
+   10
+  ]
+ ],
+ "actual": [
+  [
+   "browser_use/browser/watchdogs/aboutblank_watchdog.py",
+   39,
+   1,
+   39,
+   10
+  ],
+  [
+   "browser_use/browser/watchdogs/aboutblank_watchdog.py",
+   44,
+   7,
+   44,
+   16
+  ],
+  [
+   "browser_use/browser/watchdogs/aboutblank_watchdog.py",
+   49,
+   7,
+   49,
+   16
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "flake 3/3 [r1:SCR r2:SCR r3:SCR] in 28s",
+ "violation": {
+  "oracle": "r3_routes",
+  "server": "pyright-1.1.414",
+  "project": "browser-use/browser-use@d8110c5ff87c",
+  "key": {
+   "method": "definitionConsistency",
+   "path": "browser_use/browser/watchdogs/aboutblank_watchdog.py",
+   "line": 39,
+   "character": 5,
+   "extra": "from:browser_use/browser/watchdogs/aboutblank_watchdog.py:49:11"
+  },
+  "expected": [
+   [
+    "browser_use/browser/watchdogs/aboutblank_watchdog.py",
+    39,
+    1,
+    39,
+    10
+   ]
+  ],
+  "actual": [
+   [
+    "browser_use/browser/watchdogs/aboutblank_watchdog.py",
+    39,
+    1,
+    39,
+    10
+   ],
+   [
+    "browser_use/browser/watchdogs/aboutblank_watchdog.py",
+    44,
+    7,
+    44,
+    16
+   ],
+   [
+    "browser_use/browser/watchdogs/aboutblank_watchdog.py",
+    49,
+    7,
+    49,
+    16
+   ]
+  ],
+  "ops": [],
+  "detail": "{\"case\": {\"loc\": [\"browser_use/browser/watchdogs/aboutblank_watchdog.py\", 39, 1, 39, 10], \"sub\": \"d\", \"target\": [\"browser_use/browser/watchdogs/aboutblank_watchdog.py\", 49, 11]}, \"note\": \"flake 3/3 [r1:SCR r2:SCR r3:SCR] in 28s\", \"shape\": \"definitionConsistency:extra\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "pyright|r3_routes|definitionConsistency:extra",
+  "run_id": "96ea95edb4ad"
+ },
+ "replay_logs": [
+  "logs/pyright-1.1.414-tr3d112f-r3-replay-baseline-20260925-174310-fb851c.jsonl.gz",
+  "logs/pyright-1.1.414-tr3d112f-r3-replay-control-20260925-174313-e175ce.jsonl.gz"
+ ],
+ "project_files": {},
+ "group": "pyright-r3-definitionconsistency-extra-d-3d112f",
+ "reduced": true
+}

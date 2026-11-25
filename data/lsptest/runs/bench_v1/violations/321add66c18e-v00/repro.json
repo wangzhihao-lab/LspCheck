@@ -1,0 +1,480 @@
+{
+ "format": 1,
+ "campaign": "bench_v1",
+ "vid": "321add66c18e-v00",
+ "run_id": "321add66c18e",
+ "oracle": "r5_transforms",
+ "server": {
+  "kind": "gopls",
+  "version": "v0.5.3"
+ },
+ "project": {
+  "name": "gopls-42254",
+  "source": "dir",
+  "ref": "data/lsp_bench/cases/gopls-42254/project",
+  "commit": "",
+  "language": "go"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 180.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 6,
+  "targets": [
+   {
+    "path": "main.go",
+    "positions": [
+     [
+      0,
+      8
+     ],
+     [
+      2,
+      5
+     ],
+     [
+      4,
+      5
+     ],
+     [
+      5,
+      2
+     ],
+     [
+      8,
+      4
+     ],
+     [
+      8,
+      6
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      9
+     ],
+     [
+      2,
+      6
+     ],
+     [
+      4,
+      6
+     ],
+     [
+      5,
+      3
+     ],
+     [
+      8,
+      5
+     ],
+     [
+      8,
+      7
+     ]
+    ],
+    "names": [
+     "p",
+     "T",
+     "S",
+     "T",
+     "x",
+     "T"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "codeAction",
+  "path": "main.go",
+  "line": 0,
+  "character": 8,
+  "extra": "pos"
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "main.go"
+  },
+  {
+   "kind": "change",
+   "path": "main.go",
+   "start": [
+    0,
+    9
+   ],
+   "end": [
+    0,
+    9
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "main.go",
+   "start": [
+    1,
+    0
+   ],
+   "end": [
+    1,
+    0
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "main.go",
+   "start": [
+    2,
+    17
+   ],
+   "end": [
+    2,
+    17
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "main.go",
+   "start": [
+    3,
+    0
+   ],
+   "end": [
+    3,
+    0
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "main.go",
+   "start": [
+    4,
+    15
+   ],
+   "end": [
+    4,
+    15
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "main.go",
+   "start": [
+    5,
+    3
+   ],
+   "end": [
+    5,
+    3
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "main.go",
+   "start": [
+    6,
+    1
+   ],
+   "end": [
+    6,
+    1
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "main.go",
+   "start": [
+    7,
+    0
+   ],
+   "end": [
+    7,
+    0
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "main.go",
+   "start": [
+    8,
+    7
+   ],
+   "end": [
+    8,
+    7
+   ],
+   "text": "\r"
+  }
+ ],
+ "case": {
+  "mapped_key": [
+   "codeAction",
+   "main.go",
+   0,
+   8,
+   "pos"
+  ],
+  "transform": {
+   "back": {
+    "col": 0,
+    "eof": [],
+    "line": -1,
+    "n": 0,
+    "path": "main.go",
+    "w": 0
+   },
+   "edits": [
+    [
+     0,
+     9,
+     0,
+     9,
+     "\r"
+    ],
+    [
+     1,
+     0,
+     1,
+     0,
+     "\r"
+    ],
+    [
+     2,
+     17,
+     2,
+     17,
+     "\r"
+    ],
+    [
+     3,
+     0,
+     3,
+     0,
+     "\r"
+    ],
+    [
+     4,
+     15,
+     4,
+     15,
+     "\r"
+    ],
+    [
+     5,
+     3,
+     5,
+     3,
+     "\r"
+    ],
+    [
+     6,
+     1,
+     6,
+     1,
+     "\r"
+    ],
+    [
+     7,
+     0,
+     7,
+     0,
+     "\r"
+    ],
+    [
+     8,
+     7,
+     8,
+     7,
+     "\r"
+    ]
+   ],
+   "kind": "T4",
+   "path": "main.go",
+   "shift": {
+    "col": 0,
+    "eof": [],
+    "line": -1,
+    "n": 0,
+    "path": "main.go",
+    "w": 0
+   }
+  }
+ },
+ "shape": "codeAction:gained",
+ "signature": "gopls|r5_transforms|codeAction:gained",
+ "expected": [],
+ "actual": [
+  [
+   "Organize Imports",
+   "source.organizeImports"
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "T4 main.go: 9 edit(s), first [0, 9, 0, 9]; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 93s",
+ "violation": {
+  "oracle": "r5_transforms",
+  "server": "gopls-v0.5.3",
+  "project": "gopls-42254",
+  "key": {
+   "method": "codeAction",
+   "path": "main.go",
+   "line": 0,
+   "character": 8,
+   "extra": "pos"
+  },
+  "expected": [],
+  "actual": [
+   [
+    "Organize Imports",
+    "source.organizeImports"
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "main.go"
+   },
+   {
+    "kind": "change",
+    "path": "main.go",
+    "start": [
+     0,
+     9
+    ],
+    "end": [
+     0,
+     9
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "main.go",
+    "start": [
+     1,
+     0
+    ],
+    "end": [
+     1,
+     0
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "main.go",
+    "start": [
+     2,
+     17
+    ],
+    "end": [
+     2,
+     17
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "main.go",
+    "start": [
+     3,
+     0
+    ],
+    "end": [
+     3,
+     0
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "main.go",
+    "start": [
+     4,
+     15
+    ],
+    "end": [
+     4,
+     15
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "main.go",
+    "start": [
+     5,
+     3
+    ],
+    "end": [
+     5,
+     3
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "main.go",
+    "start": [
+     6,
+     1
+    ],
+    "end": [
+     6,
+     1
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "main.go",
+    "start": [
+     7,
+     0
+    ],
+    "end": [
+     7,
+     0
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "main.go",
+    "start": [
+     8,
+     7
+    ],
+    "end": [
+     8,
+     7
+    ],
+    "text": "\r"
+   }
+  ],
+  "detail": "{\"case\": {\"mapped_key\": [\"codeAction\", \"main.go\", 0, 8, \"pos\"], \"transform\": {\"back\": {\"col\": 0, \"eof\": [], \"line\": -1, \"n\": 0, \"path\": \"main.go\", \"w\": 0}, \"edits\": [[0, 9, 0, 9, \"\\r\"], [1, 0, 1, 0, \"\\r\"], [2, 17, 2, 17, \"\\r\"], [3, 0, 3, 0, \"\\r\"], [4, 15, 4, 15, \"\\r\"], [5, 3, 5, 3, \"\\r\"], [6, 1, 6, 1, \"\\r\"], [7, 0, 7, 0, \"\\r\"], [8, 7, 8, 7, \"\\r\"]], \"kind\": \"T4\", \"path\": \"main.go\", \"shift\": {\"col\": 0, \"eof\": [], \"line\": -1, \"n\": 0, \"path\": \"main.go\", \"w\": 0}}}, \"note\": \"T4 main.go: 9 edit(s), first [0, 9, 0, 9]; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 93s\", \"shape\": \"codeAction:gained\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "gopls|r5_transforms|codeAction:gained",
+  "run_id": "321add66c18e"
+ },
+ "replay_logs": [
+  "logs/gopls-v0.5.3-321add66c18e-r5-replay-baseline-20260924-234904-10703f.jsonl.gz",
+  "logs/gopls-v0.5.3-321add66c18e-r5-replay-case-20260924-234924-cae854.jsonl.gz",
+  "logs/gopls-v0.5.3-321add66c18e-r5-replay-control-20260924-234914-52325b.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

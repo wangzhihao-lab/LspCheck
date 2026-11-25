@@ -1,0 +1,92 @@
+{
+ "queries": [
+  "order in:title repo:microsoft/pyright is:issue",
+  "\"type definition\" extra repo:microsoft/pyright is:issue",
+  "\"type definition\" order repo:microsoft/pyright is:issue",
+  "\"type definition\" stale repo:microsoft/pyright is:issue"
+ ],
+ "matches": [
+  {
+   "repo": "microsoft/pyright",
+   "number": 11581,
+   "title": "Helping hand from order of messages: causes and consequences",
+   "url": "https://github.com/microsoft/pyright/issues/11581",
+   "state": "open",
+   "created": "2026-08-02",
+   "comments": 0,
+   "query": "order in:title repo:microsoft/pyright is:issue"
+  },
+  {
+   "repo": "microsoft/pyright",
+   "number": 11644,
+   "title": "Order-dependent overload resolution failure due to memorised Protocol conformance check on generic class",
+   "url": "https://github.com/microsoft/pyright/issues/11644",
+   "state": "open",
+   "created": "2026-08-15",
+   "comments": 4,
+   "query": "order in:title repo:microsoft/pyright is:issue"
+  },
+  {
+   "repo": "microsoft/pyright",
+   "number": 11549,
+   "title": "Order of additional overloads matters in subclass where it shouldnt [reportIncompatibleMethodOverride]",
+   "url": "https://github.com/microsoft/pyright/issues/11549",
+   "state": "open",
+   "created": "2026-07-17",
+   "comments": 0,
+   "query": "order in:title repo:microsoft/pyright is:issue"
+  },
+  {
+   "repo": "microsoft/pyright",
+   "number": 11303,
+   "title": "Type inference fails for application of higher-order generic function",
+   "url": "https://github.com/microsoft/pyright/issues/11303",
+   "state": "open",
+   "created": "2026-03-02",
+   "comments": 0,
+   "query": "order in:title repo:microsoft/pyright is:issue"
+  },
+  {
+   "repo": "microsoft/pyright",
+   "number": 10607,
+   "title": "Order dependent inference results with some protocols against numpy",
+   "url": "https://github.com/microsoft/pyright/issues/10607",
+   "state": "open",
+   "created": "2025-06-14",
+   "comments": 0,
+   "query": "order in:title repo:microsoft/pyright is:issue"
+  },
+  {
+   "repo": "microsoft/pyright",
+   "number": 10755,
+   "title": "PEP-728 arguments rejected from `typing_extensions.TypedDict`",
+   "url": "https://github.com/microsoft/pyright/issues/10755",
+   "state": "closed",
+   "created": "2025-07-29",
+   "comments": 2,
+   "query": "\"type definition\" extra repo:microsoft/pyright is:issue"
+  },
+  {
+   "repo": "microsoft/pyright",
+   "number": 10493,
+   "title": "Follow-up on #10482, backwards incomaptible change to type narrowing with TypedDict",
+   "url": "https://github.com/microsoft/pyright/issues/10493",
+   "state": "closed",
+   "created": "2025-05-22",
+   "comments": 2,
+   "query": "\"type definition\" extra repo:microsoft/pyright is:issue"
+  },
+  {
+   "repo": "microsoft/pyright",
+   "number": 10832,
+   "title": "1.1.404 performance regression with scipy-stubs",
+   "url": "https://github.com/microsoft/pyright/issues/10832",
+   "state": "closed",
+   "created": "2025-08-20",
+   "comments": 37,
+   "query": "\"type definition\" extra repo:microsoft/pyright is:issue"
+  }
+ ],
+ "notes": [],
+ "authenticated": true
+}

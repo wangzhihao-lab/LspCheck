@@ -1,0 +1,3 @@
+2026-11-18 06:40:59,509 INFO campaign_run run 4d8f9fe649cb: r0_crash on rust-analyzer 2026-09-21, cloudflare/pingora@4487f7b2ab50 seed 1 settled, targets ['pingora-cache/src/eviction/async_lru.rs', 'pingora-core/src/protocols/digest.rs', 'pingora-http/src/lib.rs']
+2026-11-18 06:45:34,126 INFO campaign_run run 4d8f9fe649cb: 0 candidate(s) in 275s; confirming
+2026-11-18 06:45:34,128 INFO campaign_run run 4d8f9fe649cb finished: ok, 0 confirmed of 0 candidate(s), 275s

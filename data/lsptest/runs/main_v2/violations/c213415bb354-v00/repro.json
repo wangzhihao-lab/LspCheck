@@ -1,0 +1,581 @@
+{
+ "format": 1,
+ "campaign": "main_v2",
+ "vid": "c213415bb354-v00",
+ "run_id": "c213415bb354",
+ "oracle": "r4_edits",
+ "server": {
+  "kind": "gopls",
+  "version": "v0.23.0"
+ },
+ "project": {
+  "name": "go-gorm/gorm@b3d3bf219f02",
+  "source": "corpus",
+  "ref": "temp/corpus/go-gorm__gorm@b3d3bf219f02",
+  "commit": "b3d3bf219f0283f8e2e985bac509cb643170f729",
+  "language": "go"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "schema/relationship.go",
+    "positions": [
+     [
+      36,
+      2
+     ],
+     [
+      217,
+      57
+     ],
+     [
+      218,
+      43
+     ],
+     [
+      331,
+      24
+     ],
+     [
+      339,
+      83
+     ],
+     [
+      413,
+      7
+     ],
+     [
+      463,
+      7
+     ],
+     [
+      516,
+      13
+     ],
+     [
+      593,
+      24
+     ],
+     [
+      729,
+      7
+     ],
+     [
+      736,
+      51
+     ],
+     [
+      756,
+      6
+     ]
+    ],
+    "ends": [
+     [
+      36,
+      4
+     ],
+     [
+      217,
+      58
+     ],
+     [
+      218,
+      48
+     ],
+     [
+      331,
+      28
+     ],
+     [
+      339,
+      85
+     ],
+     [
+      413,
+      11
+     ],
+     [
+      463,
+      10
+     ],
+     [
+      516,
+      22
+     ],
+     [
+      593,
+      26
+     ],
+     [
+      729,
+      14
+     ],
+     [
+      736,
+      56
+     ],
+     [
+      756,
+      9
+     ]
+    ],
+    "names": [
+     "Mux",
+     "ok",
+     "TrimSpace",
+     "relation",
+     "idx",
+     "joinRel",
+     "field",
+     "primarySchemaName",
+     "Mux",
+     "foreignFields",
+     "PrimaryKey",
+     "conds"
+    ]
+   },
+   {
+    "path": "tests/joins_test.go",
+    "positions": [
+     [
+      14,
+      85
+     ],
+     [
+      95,
+      2
+     ],
+     [
+      121,
+      12
+     ],
+     [
+      154,
+      34
+     ],
+     [
+      237,
+      99
+     ],
+     [
+      244,
+      13
+     ],
+     [
+      248,
+      60
+     ],
+     [
+      359,
+      17
+     ],
+     [
+      411,
+      8
+     ],
+     [
+      412,
+      5
+     ],
+     [
+      473,
+      21
+     ],
+     [
+      476,
+      23
+     ]
+    ],
+    "ends": [
+     [
+      14,
+      89
+     ],
+     [
+      95,
+      3
+     ],
+     [
+      121,
+      13
+     ],
+     [
+      154,
+      36
+     ],
+     [
+      237,
+      102
+     ],
+     [
+      244,
+      14
+     ],
+     [
+      248,
+      65
+     ],
+     [
+      359,
+      19
+     ],
+     [
+      411,
+      12
+     ],
+     [
+      412,
+      6
+     ],
+     [
+      473,
+      24
+     ],
+     [
+      476,
+      27
+     ]
+    ],
+    "names": [
+     "NamedPet",
+     "DB",
+     "DB",
+     "Pets",
+     "false",
+     "t",
+     "InnerJoins",
+     "uint",
+     "userIDs",
+     "i",
+     "Error",
+     "entries"
+    ]
+   },
+   {
+    "path": "utils/tests/dummy_dialecter.go",
+    "positions": [
+     [
+      19,
+      37
+     ],
+     [
+      30,
+      21
+     ],
+     [
+      33,
+      43
+     ],
+     [
+      38,
+      12
+     ],
+     [
+      45,
+      9
+     ],
+     [
+      63,
+      6
+     ],
+     [
+      63,
+      20
+     ],
+     [
+      68,
+      20
+     ],
+     [
+      83,
+      36
+     ],
+     [
+      86,
+      4
+     ],
+     [
+      89,
+      25
+     ],
+     [
+      89,
+      31
+     ]
+    ],
+    "ends": [
+     [
+      19,
+      38
+     ],
+     [
+      30,
+      23
+     ],
+     [
+      33,
+      45
+     ],
+     [
+      38,
+      17
+     ],
+     [
+      45,
+      16
+     ],
+     [
+      63,
+      9
+     ],
+     [
+      63,
+      21
+     ],
+     [
+      68,
+      22
+     ],
+     [
+      83,
+      41
+     ],
+     [
+      86,
+      7
+     ],
+     [
+      89,
+      29
+     ],
+     [
+      89,
+      33
+     ]
+    ],
+    "names": [
+     "db",
+     "SQL",
+     "gorm",
+     "WriteByte",
+     "shiftDelimiter",
+     "writer",
+     "v",
+     "true",
+     "selfQuoted",
+     "writer",
+     "Explain",
+     "sql"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "diagnostics",
+  "path": "schema/relationship.go",
+  "line": 666,
+  "character": 16,
+  "extra": "M2:quickfix-errors:Create variable BelonngsTo"
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "schema/relationship.go"
+  },
+  {
+   "kind": "change",
+   "path": "schema/relationship.go",
+   "start": [
+    666,
+    16
+   ],
+   "end": [
+    666,
+    25
+   ],
+   "text": "BelonngsTo"
+  },
+  {
+   "kind": "change",
+   "path": "schema/relationship.go",
+   "start": [
+    666,
+    1
+   ],
+   "end": [
+    666,
+    1
+   ],
+   "text": "BelonngsTo := \"\"\n\t"
+  }
+ ],
+ "case": {
+  "action_kind": "quickfix",
+  "base_errors": 0,
+  "check": "errors",
+  "diag": {
+   "code": "UndeclaredName",
+   "message": "undefined: BelonngsTo",
+   "range": {
+    "end": {
+     "character": 26,
+     "line": 666
+    },
+    "start": {
+     "character": 16,
+     "line": 666
+    }
+   },
+   "severity": 1
+  },
+  "fix_introduced_errors": [
+   {
+    "code": "MismatchedTypes",
+    "message": "invalid operation: rel.Type == BelonngsTo (mismatched types RelationshipType and string)",
+    "path": "schema/relationship.go",
+    "range": {
+     "end": {
+      "character": 26,
+      "line": 667
+     },
+     "start": {
+      "character": 16,
+      "line": 667
+     }
+    },
+    "severity": 1
+   }
+  ],
+  "fix_ops": [
+   {
+    "end": [
+     666,
+     1
+    ],
+    "kind": "change",
+    "path": "schema/relationship.go",
+    "start": [
+     666,
+     1
+    ],
+    "text": "BelonngsTo := \"\"\n\t"
+   }
+  ],
+  "kind": "mutation",
+  "mutation": {
+   "end": [
+    666,
+    25
+   ],
+   "id": "M2",
+   "offsets": [
+    20083,
+    20092
+   ],
+   "sha": "6d711c47ed86d4af",
+   "start": [
+    666,
+    16
+   ],
+   "text": "BelonngsTo",
+   "what": "misspell 'BelongsTo' as 'BelonngsTo' (duplicate a middle character)"
+  },
+  "n_fix_ops": 1,
+  "path": "schema/relationship.go",
+  "post_errors": 1,
+  "title": "Create variable BelonngsTo",
+  "via": "resolve"
+ },
+ "shape": "diagnostics:extra:MismatchedTypes",
+ "signature": "gopls|r4_edits|diagnostics:extra:MismatchedTypes",
+ "expected": [],
+ "actual": [
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "MismatchedTypes",
+   "compiler",
+   "invalid operation: rel.Type == BelonngsTo (mismatched types RelationshipType and string)"
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "quick fix 'Create variable BelonngsTo' for UndeclaredName at schema/relationship.go:667:17 raises the error count in the edited files from 0 to 1 (seeded by M2: misspell 'BelongsTo' as 'BelonngsTo' (duplicate a middle character); errors before the mutation 0, after the fix 1); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 60s",
+ "violation": {
+  "oracle": "r4_edits",
+  "server": "gopls-v0.23.0",
+  "project": "go-gorm/gorm@b3d3bf219f02",
+  "key": {
+   "method": "diagnostics",
+   "path": "schema/relationship.go",
+   "line": 666,
+   "character": 16,
+   "extra": "M2:quickfix-errors:Create variable BelonngsTo"
+  },
+  "expected": [],
+  "actual": [
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "MismatchedTypes",
+    "compiler",
+    "invalid operation: rel.Type == BelonngsTo (mismatched types RelationshipType and string)"
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "schema/relationship.go"
+   },
+   {
+    "kind": "change",
+    "path": "schema/relationship.go",
+    "start": [
+     666,
+     16
+    ],
+    "end": [
+     666,
+     25
+    ],
+    "text": "BelonngsTo"
+   },
+   {
+    "kind": "change",
+    "path": "schema/relationship.go",
+    "start": [
+     666,
+     1
+    ],
+    "end": [
+     666,
+     1
+    ],
+    "text": "BelonngsTo := \"\"\n\t"
+   }
+  ],
+  "detail": "{\"case\": {\"action_kind\": \"quickfix\", \"base_errors\": 0, \"check\": \"errors\", \"diag\": {\"code\": \"UndeclaredName\", \"message\": \"undefined: BelonngsTo\", \"range\": {\"end\": {\"character\": 26, \"line\": 666}, \"start\": {\"character\": 16, \"line\": 666}}, \"severity\": 1}, \"fix_introduced_errors\": [{\"code\": \"MismatchedTypes\", \"message\": \"invalid operation: rel.Type == BelonngsTo (mismatched types RelationshipType and string)\", \"path\": \"schema/relationship.go\", \"range\": {\"end\": {\"character\": 26, \"line\": 667}, \"start\": {\"character\": 16, \"line\": 667}}, \"severity\": 1}], \"fix_ops\": [{\"end\": [666, 1], \"kind\": \"change\", \"path\": \"schema/relationship.go\", \"start\": [666, 1], \"text\": \"BelonngsTo := \\\"\\\"\\n\\t\"}], \"kind\": \"mutation\", \"mutation\": {\"end\": [666, 25], \"id\": \"M2\", \"offsets\": [20083, 20092], \"sha\": \"6d711c47ed86d4af\", \"start\": [666, 16], \"text\": \"BelonngsTo\", \"what\": \"misspell 'BelongsTo' as 'BelonngsTo' (duplicate a middle character)\"}, \"n_fix_ops\": 1, \"path\": \"schema/relationship.go\", \"post_errors\": 1, \"title\": \"Create variable BelonngsTo\", \"via\": \"resolve\"}, \"note\": \"quick fix 'Create variable BelonngsTo' for UndeclaredName at schema/relationship.go:667:17 raises the error count in the edited files from 0 to 1 (seeded by M2: misspell 'BelongsTo' as 'BelonngsTo' (duplicate a middle character); errors before the mutation 0, after the fix 1); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 60s\", \"shape\": \"diagnostics:extra:MismatchedTypes\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "gopls|r4_edits|diagnostics:extra:MismatchedTypes",
+  "run_id": "c213415bb354"
+ },
+ "replay_logs": [
+  "logs/gopls-v0.23.0-c213415bb354-r4-replay-baseline-20261118-115643-88c893.jsonl.gz",
+  "logs/gopls-v0.23.0-c213415bb354-r4-replay-case-20261118-115633-8c0812.jsonl.gz",
+  "logs/gopls-v0.23.0-c213415bb354-r4-replay-control-20261118-115648-785865.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

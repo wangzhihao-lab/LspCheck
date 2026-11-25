@@ -1,0 +1,38 @@
+{
+ "vid": "085638e189e1-v00",
+ "ops_before": 3,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 1,
+ "cache_hits": 0,
+ "reduce_seconds": 0.0,
+ "budget_exhausted": false,
+ "probe_log": [
+  [
+   2,
+   false
+  ]
+ ],
+ "logs": [
+  "ts7-7.0.2-tr12bd0a-r4-replay-baseline-20260925-155629-a72938.jsonl.gz",
+  "ts7-7.0.2-tr12bd0a-r4-replay-case-20260925-155611-b83d8c.jsonl.gz",
+  "ts7-7.0.2-tr12bd0a-r4-replay-control-20260925-155650-40cf88.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [],
+  "actual": [
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2339",
+    "ts",
+    "Property 'ok' does not exist on type 'typeof assert'."
+   ]
+  ]
+ },
+ "ops_after": 3,
+ "total_seconds": 193.6
+}

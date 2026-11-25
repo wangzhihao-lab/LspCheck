@@ -1,0 +1,96 @@
+{
+ "queries": [
+  "order in:title repo:typescript-language-server/typescript-language-server is:issue",
+  "\"code action\" missing repo:typescript-language-server/typescript-language-server is:issue",
+  "\"code action\" order repo:typescript-language-server/typescript-language-server is:issue",
+  "\"code action\" stale repo:typescript-language-server/typescript-language-server is:issue",
+  "order in:title repo:microsoft/TypeScript is:issue",
+  "\"code action\" missing repo:microsoft/TypeScript is:issue",
+  "\"code action\" order repo:microsoft/TypeScript is:issue",
+  "\"code action\" stale repo:microsoft/TypeScript is:issue"
+ ],
+ "matches": [
+  {
+   "repo": "typescript-language-server/typescript-language-server",
+   "number": 1052,
+   "title": "Question: Where are specific import code actions?",
+   "url": "https://github.com/typescript-language-server/typescript-language-server/issues/1052",
+   "state": "closed",
+   "created": "2025-11-19",
+   "comments": 9,
+   "query": "\"code action\" missing repo:typescript-language-server/typescript-language-server is:issue"
+  },
+  {
+   "repo": "typescript-language-server/typescript-language-server",
+   "number": 844,
+   "title": "Server crashed when asking for textDocument/codeAction",
+   "url": "https://github.com/typescript-language-server/typescript-language-server/issues/844",
+   "state": "closed",
+   "created": "2024-01-06",
+   "comments": 11,
+   "query": "\"code action\" missing repo:typescript-language-server/typescript-language-server is:issue"
+  },
+  {
+   "repo": "typescript-language-server/typescript-language-server",
+   "number": 655,
+   "title": "Code actions not working",
+   "url": "https://github.com/typescript-language-server/typescript-language-server/issues/655",
+   "state": "closed",
+   "created": "2023-01-05",
+   "comments": 7,
+   "query": "\"code action\" missing repo:typescript-language-server/typescript-language-server is:issue"
+  },
+  {
+   "repo": "typescript-language-server/typescript-language-server",
+   "number": 623,
+   "title": "missing import code action tries to import React unnecessarily",
+   "url": "https://github.com/typescript-language-server/typescript-language-server/issues/623",
+   "state": "closed",
+   "created": "2022-11-14",
+   "comments": 4,
+   "query": "\"code action\" missing repo:typescript-language-server/typescript-language-server is:issue"
+  },
+  {
+   "repo": "typescript-language-server/typescript-language-server",
+   "number": 210,
+   "title": "Multiple import options on auto-import",
+   "url": "https://github.com/typescript-language-server/typescript-language-server/issues/210",
+   "state": "closed",
+   "created": "2021-05-01",
+   "comments": 4,
+   "query": "\"code action\" missing repo:typescript-language-server/typescript-language-server is:issue"
+  },
+  {
+   "repo": "typescript-language-server/typescript-language-server",
+   "number": 894,
+   "title": "How to Disable \"Move to a new file\" action?",
+   "url": "https://github.com/typescript-language-server/typescript-language-server/issues/894",
+   "state": "closed",
+   "created": "2024-05-09",
+   "comments": 2,
+   "query": "\"code action\" order repo:typescript-language-server/typescript-language-server is:issue"
+  },
+  {
+   "repo": "microsoft/TypeScript",
+   "number": 63758,
+   "title": "Investigate decorator initialization order re: renames of classes",
+   "url": "https://github.com/microsoft/TypeScript/issues/63758",
+   "state": "open",
+   "created": "2026-08-18",
+   "comments": 0,
+   "query": "order in:title repo:microsoft/TypeScript is:issue"
+  },
+  {
+   "repo": "microsoft/TypeScript",
+   "number": 46633,
+   "title": "Inconsistent order of properties inferred from a generic type",
+   "url": "https://github.com/microsoft/TypeScript/issues/46633",
+   "state": "open",
+   "created": "2021-11-02",
+   "comments": 2,
+   "query": "order in:title repo:microsoft/TypeScript is:issue"
+  }
+ ],
+ "notes": [],
+ "authenticated": true
+}

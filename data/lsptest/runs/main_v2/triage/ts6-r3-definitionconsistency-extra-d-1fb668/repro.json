@@ -1,0 +1,162 @@
+{
+ "format": 1,
+ "campaign": "main_v2",
+ "vid": "08c8c634e424-v00",
+ "run_id": "08c8c634e424",
+ "oracle": "r3_routes",
+ "server": {
+  "kind": "ts6",
+  "version": "6.0.3"
+ },
+ "project": {
+  "name": "solidjs/solid@4b62bc29e04b",
+  "source": "corpus",
+  "ref": "temp/corpus/solidjs__solid@4b62bc29e04b",
+  "commit": "4b62bc29e04bfd29573a20ff3d47ae56a8a80ccb",
+  "language": "typescript"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "examples/rendering/shared/src/router.tsx",
+    "positions": [],
+    "ends": [],
+    "names": []
+   },
+   {
+    "path": "packages/signals/tests/latest-plain-write-purity.test.ts",
+    "positions": [],
+    "ends": [],
+    "names": []
+   },
+   {
+    "path": "packages/web/test/server/server-functions-decoder-rejection-ownership.spec.tsx",
+    "positions": [],
+    "ends": [],
+    "names": []
+   }
+  ]
+ },
+ "key": {
+  "method": "definitionConsistency",
+  "path": "packages/signals/src/core/scheduler.ts",
+  "line": 441,
+  "character": 21,
+  "extra": "from:packages/signals/tests/latest-plain-write-purity.test.ts:26:4"
+ },
+ "ops": [],
+ "case": {
+  "loc": [
+   "packages/signals/src/core/scheduler.ts",
+   441,
+   19,
+   441,
+   24
+  ],
+  "sub": "d",
+  "target": [
+   "packages/signals/tests/latest-plain-write-purity.test.ts",
+   26,
+   4
+  ]
+ },
+ "shape": "definitionConsistency:extra",
+ "signature": "ts6|r3_routes|definitionConsistency:extra",
+ "expected": [
+  [
+   "packages/signals/src/core/scheduler.ts",
+   1557,
+   16,
+   1557,
+   21
+  ]
+ ],
+ "actual": [
+  [
+   "packages/signals/src/core/scheduler.ts",
+   1557,
+   16,
+   1557,
+   21
+  ],
+  [
+   "packages/signals/src/core/scheduler.ts",
+   1558,
+   16,
+   1558,
+   21
+  ],
+  [
+   "packages/signals/src/core/scheduler.ts",
+   1559,
+   16,
+   1559,
+   21
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "flake 3/3 [r1:SCR r2:SCR r3:SCR] in 216s",
+ "violation": {
+  "oracle": "r3_routes",
+  "server": "ts6-6.0.3",
+  "project": "solidjs/solid@4b62bc29e04b",
+  "key": {
+   "method": "definitionConsistency",
+   "path": "packages/signals/src/core/scheduler.ts",
+   "line": 441,
+   "character": 21,
+   "extra": "from:packages/signals/tests/latest-plain-write-purity.test.ts:26:4"
+  },
+  "expected": [
+   [
+    "packages/signals/src/core/scheduler.ts",
+    1557,
+    16,
+    1557,
+    21
+   ]
+  ],
+  "actual": [
+   [
+    "packages/signals/src/core/scheduler.ts",
+    1557,
+    16,
+    1557,
+    21
+   ],
+   [
+    "packages/signals/src/core/scheduler.ts",
+    1558,
+    16,
+    1558,
+    21
+   ],
+   [
+    "packages/signals/src/core/scheduler.ts",
+    1559,
+    16,
+    1559,
+    21
+   ]
+  ],
+  "ops": [],
+  "detail": "{\"case\": {\"loc\": [\"packages/signals/src/core/scheduler.ts\", 441, 19, 441, 24], \"sub\": \"d\", \"target\": [\"packages/signals/tests/latest-plain-write-purity.test.ts\", 26, 4]}, \"note\": \"flake 3/3 [r1:SCR r2:SCR r3:SCR] in 216s\", \"shape\": \"definitionConsistency:extra\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "ts6|r3_routes|definitionConsistency:extra",
+  "run_id": "08c8c634e424"
+ },
+ "replay_logs": [
+  "logs/ts6-6.0.3-tr1fb668-r3-replay-baseline-20261119-022742-9e8116.jsonl.gz",
+  "logs/ts6-6.0.3-tr1fb668-r3-replay-control-20261119-022754-aaf74b.jsonl.gz"
+ ],
+ "project_files": {},
+ "group": "ts6-r3-definitionconsistency-extra-d-1fb668",
+ "reduced": true
+}

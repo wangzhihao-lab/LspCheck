@@ -1,0 +1,3 @@
+2026-09-25 06:19:31,301 INFO campaign_run run 5250ea25e513: r3_routes on tsserver 5.7.2+tsls4.3.3, tsserver-60186 seed 2 settled, targets ['E.ts', 'index.ts']
+2026-09-25 06:19:40,270 INFO campaign_run run 5250ea25e513: 0 candidate(s) in 9s; confirming
+2026-09-25 06:19:40,271 INFO campaign_run run 5250ea25e513 finished: ok, 0 confirmed of 0 candidate(s), 9s

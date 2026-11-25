@@ -1,0 +1,92 @@
+{
+ "queries": [
+  "references in:title repo:golang/go is:issue label:gopls",
+  "highlight extra repo:golang/go is:issue label:gopls",
+  "highlight references repo:golang/go is:issue label:gopls",
+  "highlight inconsistent repo:golang/go is:issue label:gopls"
+ ],
+ "matches": [
+  {
+   "repo": "golang/go",
+   "number": 81462,
+   "title": "x/tools/gopls: follow linkname references",
+   "url": "https://github.com/golang/go/issues/81462",
+   "state": "open",
+   "created": "2026-09-10",
+   "comments": 3,
+   "query": "references in:title repo:golang/go is:issue label:gopls"
+  },
+  {
+   "repo": "golang/go",
+   "number": 73781,
+   "title": "x/tools/gopls: References does not find all references in the workspace",
+   "url": "https://github.com/golang/go/issues/73781",
+   "state": "open",
+   "created": "2022-09-08",
+   "comments": 24,
+   "query": "references in:title repo:golang/go is:issue label:gopls"
+  },
+  {
+   "repo": "golang/go",
+   "number": 74307,
+   "title": "x/tools/gopls: References: report unkeyed composite literals as implicit references to struct fields",
+   "url": "https://github.com/golang/go/issues/74307",
+   "state": "open",
+   "created": "2025-06-19",
+   "comments": 3,
+   "query": "references in:title repo:golang/go is:issue label:gopls"
+  },
+  {
+   "repo": "golang/go",
+   "number": 66356,
+   "title": "x/tools/gopls: feature: alternative 'references' query that reports implied references to struct fields (etc)",
+   "url": "https://github.com/golang/go/issues/66356",
+   "state": "open",
+   "created": "2024-03-16",
+   "comments": 7,
+   "query": "references in:title repo:golang/go is:issue label:gopls"
+  },
+  {
+   "repo": "golang/go",
+   "number": 40862,
+   "title": "x/tools/gopls: add codelens to show number of references to each symbol",
+   "url": "https://github.com/golang/go/issues/40862",
+   "state": "open",
+   "created": "2020-08-16",
+   "comments": 41,
+   "query": "references in:title repo:golang/go is:issue label:gopls"
+  },
+  {
+   "repo": "golang/go",
+   "number": 74917,
+   "title": "x/tools/gopls: prefix SignatureHelp label with \"func\"",
+   "url": "https://github.com/golang/go/issues/74917",
+   "state": "open",
+   "created": "2025-08-06",
+   "comments": 4,
+   "query": "highlight extra repo:golang/go is:issue label:gopls"
+  },
+  {
+   "repo": "golang/go",
+   "number": 63282,
+   "title": "x/tools/gopls: express completion scoring in terms of down-ranking factors",
+   "url": "https://github.com/golang/go/issues/63282",
+   "state": "open",
+   "created": "2023-09-28",
+   "comments": 2,
+   "query": "highlight extra repo:golang/go is:issue label:gopls"
+  },
+  {
+   "repo": "golang/go",
+   "number": 57963,
+   "title": "x/tools/gopls: add analyzer that reports broken doc links",
+   "url": "https://github.com/golang/go/issues/57963",
+   "state": "open",
+   "created": "2023-01-23",
+   "comments": 13,
+   "query": "highlight extra repo:golang/go is:issue label:gopls"
+  }
+ ],
+ "notes": [],
+ "authenticated": true
+}

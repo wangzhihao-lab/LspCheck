@@ -1,0 +1,6 @@
+2026-09-25 12:47:45,068 INFO campaign_run run 304f496fb3dc: r5_transforms on gopls v0.4.4, gopls-41057 seed 2 settled, targets ['main.go']
+2026-09-25 12:48:30,628 INFO campaign_run run 304f496fb3dc: 1 candidate(s) in 46s; confirming
+2026-09-25 12:48:39,328 INFO flake replay 1/3 of gopls|r5_transforms|documentSymbol:changed: settled=True control_stable=True reproduced=True (8.7s)
+2026-09-25 12:48:47,926 INFO flake replay 2/3 of gopls|r5_transforms|documentSymbol:changed: settled=True control_stable=True reproduced=True (8.6s)
+2026-09-25 12:48:56,575 INFO flake replay 3/3 of gopls|r5_transforms|documentSymbol:changed: settled=True control_stable=True reproduced=True (8.6s)
+2026-09-25 12:48:56,585 INFO campaign_run run 304f496fb3dc finished: ok, 1 confirmed of 1 candidate(s), 72s

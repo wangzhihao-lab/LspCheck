@@ -1,0 +1,6 @@
+2026-11-18 00:39:42,303 INFO campaign_run run 06365021d85d: r2_handles on rust-analyzer 2026-09-21, googleworkspace/cli@a3768d0e82ad seed 1 settled, targets ['crates/google-workspace-cli/src/auth.rs', 'crates/google-workspace-cli/src/helpers/events/mod.rs', 'crates/google-workspace-cli/src/schema.rs']
+2026-11-18 00:41:30,732 INFO campaign_run run 06365021d85d: 3 candidate(s) in 108s; confirming
+2026-11-18 00:42:15,381 INFO flake replay 1/3 of rust-analyzer|r2_handles|completionResolve:changed: settled=True control_stable=True reproduced=True (44.6s)
+2026-11-18 00:43:11,035 INFO flake replay 2/3 of rust-analyzer|r2_handles|completionResolve:changed: settled=True control_stable=True reproduced=True (55.7s)
+2026-11-18 00:43:56,477 INFO flake replay 3/3 of rust-analyzer|r2_handles|completionResolve:changed: settled=True control_stable=True reproduced=True (45.4s)
+2026-11-18 00:43:56,498 INFO campaign_run run 06365021d85d finished: ok, 1 confirmed of 3 candidate(s), 254s

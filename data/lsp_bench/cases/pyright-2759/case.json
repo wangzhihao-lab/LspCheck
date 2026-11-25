@@ -1,0 +1,102 @@
+{
+ "schema": 1,
+ "id": "pyright-2759",
+ "meta": {
+  "server": "pyright",
+  "kind": "pyright",
+  "number": 2759,
+  "url": "https://github.com/microsoft/pyright/issues/2759",
+  "title": "Type evaluation results depend on evaluation ordering",
+  "oracle_class": "R1",
+  "subtype": "query-order",
+  "fix_ref": "none named (maintainer: 'This is addressed in pyright 1.1.200')",
+  "fix_shas": [],
+  "pre_version": "1.1.199",
+  "post_version": "1.1.200",
+  "pre_build": "1.1.199",
+  "post_build": "1.1.200",
+  "build_notes": "npm pyright@1.1.199 (2021-12-22) and pyright@1.1.200 (2021-12-25); release window from the maintainer's comment.",
+  "candidate_rank": 68,
+  "effort_minutes": 6,
+  "notes": "Tracking bug of microsoft/pylance-release#2192; same pattern as the pilot case pyright-2983 (race timing: a hover right after the edit, before the server re-analyses)."
+ },
+ "language": "python",
+ "settings": {},
+ "settings_note": "The file sets strict mode itself ('# pyright: strict'); no other settings are named.",
+ "session": {
+  "settle_timeout_s": 120
+ },
+ "files": [
+  {
+   "path": "main.py",
+   "provenance": "issue",
+   "source": "issue body, python code block",
+   "note": "the '# pyright: strict' comment is part of the issue's code"
+  }
+ ],
+ "repro": {
+  "attempt": 1,
+  "timing": "race",
+  "steps": "Open main.py and let the server analyze it. Modify the file (add a space at the end of the last line) and hover the 'initial' identifier immediately afterwards, before the server re-analyzes the file. Reported: types are then evaluated as unknown, which produces errors in strict mode; without the hover no unknowns are produced. After the server settles, the diagnostics of main.py and the hovers on lst and initial must equal those of a fresh session on the same final text.",
+  "ops": [
+   {
+    "kind": "open",
+    "path": "main.py"
+   },
+   {
+    "kind": "wait",
+    "text": "settle"
+   },
+   {
+    "kind": "change",
+    "path": "main.py",
+    "start": [
+     4,
+     76
+    ],
+    "end": [
+     4,
+     76
+    ],
+    "text": " "
+   },
+   {
+    "kind": "request",
+    "path": "main.py",
+    "start": [
+     4,
+     65
+    ],
+    "text": "hover"
+   }
+  ],
+  "probe": {
+   "type": "differs_from_fresh",
+   "params": {
+    "queries": [
+     {
+      "method": "diagnostics",
+      "path": "main.py"
+     },
+     {
+      "method": "hover",
+      "path": "main.py",
+      "position": [
+       4,
+       0
+      ]
+     },
+     {
+      "method": "hover",
+      "path": "main.py",
+      "position": [
+       4,
+       65
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "attempts": []
+}

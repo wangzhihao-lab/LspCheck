@@ -1,0 +1,92 @@
+{
+ "queries": [
+  "\"rename file\" in:title repo:golang/go is:issue label:gopls",
+  "references extra repo:golang/go is:issue label:gopls",
+  "references \"rename file\" repo:golang/go is:issue label:gopls",
+  "references stale repo:golang/go is:issue label:gopls"
+ ],
+ "matches": [
+  {
+   "repo": "golang/go",
+   "number": 51037,
+   "title": "x/tools/gopls: Add support for workspace/{Will,Did}{Rename,Delete,Create}Files methods",
+   "url": "https://github.com/golang/go/issues/51037",
+   "state": "open",
+   "created": "2022-02-06",
+   "comments": 1,
+   "query": "\"rename file\" in:title repo:golang/go is:issue label:gopls"
+  },
+  {
+   "repo": "golang/go",
+   "number": 59550,
+   "title": "x/tools/gopls: rename applies duplicate edits to a file with aliases (symlinks)",
+   "url": "https://github.com/golang/go/issues/59550",
+   "state": "open",
+   "created": "2023-04-11",
+   "comments": 0,
+   "query": "\"rename file\" in:title repo:golang/go is:issue label:gopls"
+  },
+  {
+   "repo": "golang/go",
+   "number": 69563,
+   "title": "x/tools/gopls: Show specific file name when renaming failed.",
+   "url": "https://github.com/golang/go/issues/69563",
+   "state": "closed",
+   "created": "2024-09-20",
+   "comments": 3,
+   "query": "\"rename file\" in:title repo:golang/go is:issue label:gopls"
+  },
+  {
+   "repo": "golang/go",
+   "number": 45317,
+   "title": "x/tools/gopls: renaming test file package declaration `package_test `-> `package` falsely claims import cycle",
+   "url": "https://github.com/golang/go/issues/45317",
+   "state": "closed",
+   "created": "2021-03-31",
+   "comments": 3,
+   "query": "\"rename file\" in:title repo:golang/go is:issue label:gopls"
+  },
+  {
+   "repo": "golang/go",
+   "number": 32562,
+   "title": "x/tools/cmd/gopls: error when renaming a file",
+   "url": "https://github.com/golang/go/issues/32562",
+   "state": "closed",
+   "created": "2019-06-12",
+   "comments": 1,
+   "query": "\"rename file\" in:title repo:golang/go is:issue label:gopls"
+  },
+  {
+   "repo": "golang/go",
+   "number": 81408,
+   "title": "x/tools/gopls: issues many redundant `go list` invocations concurrently",
+   "url": "https://github.com/golang/go/issues/81408",
+   "state": "open",
+   "created": "2026-09-09",
+   "comments": 5,
+   "query": "references extra repo:golang/go is:issue label:gopls"
+  },
+  {
+   "repo": "golang/go",
+   "number": 50151,
+   "title": "x/tools/gopls: high cpu usage when make changes in package which have some cgo package dependents",
+   "url": "https://github.com/golang/go/issues/50151",
+   "state": "open",
+   "created": "2021-12-14",
+   "comments": 15,
+   "query": "references extra repo:golang/go is:issue label:gopls"
+  },
+  {
+   "repo": "golang/go",
+   "number": 38028,
+   "title": "x/tools/gopls: support change signature refactoring",
+   "url": "https://github.com/golang/go/issues/38028",
+   "state": "open",
+   "created": "2020-03-23",
+   "comments": 9,
+   "query": "references extra repo:golang/go is:issue label:gopls"
+  }
+ ],
+ "notes": [],
+ "authenticated": true
+}

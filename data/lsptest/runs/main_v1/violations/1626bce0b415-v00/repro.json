@@ -1,0 +1,523 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "1626bce0b415-v00",
+ "run_id": "1626bce0b415",
+ "oracle": "r1_history",
+ "server": {
+  "kind": "gopls",
+  "version": "v0.23.0"
+ },
+ "project": {
+  "name": "caddyserver/caddy@c18099a0af5e",
+  "source": "corpus",
+  "ref": "temp/corpus/caddyserver__caddy@c18099a0af5e",
+  "commit": "c18099a0af5e88c8d9da0b9d797f6f2c62d60a23",
+  "language": "go"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "modules/caddyhttp/reverseproxy/selectionpolicies_test.go",
+    "positions": [
+     [
+      85,
+      11
+     ],
+     [
+      120,
+      34
+     ],
+     [
+      207,
+      6
+     ],
+     [
+      447,
+      21
+     ],
+     [
+      449,
+      6
+     ],
+     [
+      476,
+      14
+     ],
+     [
+      509,
+      5
+     ],
+     [
+      571,
+      22
+     ],
+     [
+      597,
+      20
+     ],
+     [
+      706,
+      3
+     ],
+     [
+      738,
+      3
+     ],
+     [
+      946,
+      50
+     ]
+    ],
+    "ends": [
+     [
+      85,
+      13
+     ],
+     [
+      120,
+      36
+     ],
+     [
+      207,
+      9
+     ],
+     [
+      447,
+      23
+     ],
+     [
+      449,
+      9
+     ],
+     [
+      476,
+      17
+     ],
+     [
+      509,
+      7
+     ],
+     [
+      571,
+      25
+     ],
+     [
+      597,
+      23
+     ],
+     [
+      706,
+      5
+     ],
+     [
+      738,
+      5
+     ],
+     [
+      946,
+      51
+     ]
+    ],
+    "names": [
+     "pool",
+     "nil",
+     "Error",
+     "pool",
+     "Error",
+     "SetVar",
+     "Host",
+     "false",
+     "Select",
+     "pool",
+     "pool",
+     "w"
+    ]
+   },
+   {
+    "path": "modules/caddyhttp/rewrite/caddyfile.go",
+    "positions": [
+     [
+      63,
+      10
+     ],
+     [
+      68,
+      38
+     ],
+     [
+      79,
+      9
+     ],
+     [
+      109,
+      15
+     ],
+     [
+      117,
+      27
+     ],
+     [
+      120,
+      22
+     ],
+     [
+      136,
+      7
+     ],
+     [
+      148,
+      6
+     ],
+     [
+      167,
+      12
+     ],
+     [
+      171,
+      6
+     ],
+     [
+      211,
+      40
+     ],
+     [
+      280,
+      3
+     ]
+    ],
+    "ends": [
+     [
+      63,
+      12
+     ],
+     [
+      68,
+      42
+     ],
+     [
+      79,
+      13
+     ],
+     [
+      109,
+      16
+     ],
+     [
+      117,
+      29
+     ],
+     [
+      120,
+      24
+     ],
+     [
+      136,
+      9
+     ],
+     [
+      148,
+      8
+     ],
+     [
+      167,
+      14
+     ],
+     [
+      171,
+      7
+     ],
+     [
+      211,
+      49
+     ],
+     [
+      280,
+      6
+     ]
+    ],
+    "names": [
+     "nil",
+     "Rewrite",
+     "NextArg",
+     "h",
+     "args",
+     "lim",
+     "err",
+     "len",
+     "nil",
+     "h",
+     "queryOpsArguments",
+     "route"
+    ]
+   },
+   {
+    "path": "modules/caddypki/acmeserver/policy_test.go",
+    "positions": [
+     [
+      0,
+      13
+     ],
+     [
+      10,
+      41
+     ],
+     [
+      19,
+      24
+     ],
+     [
+      23,
+      14
+     ],
+     [
+      73,
+      41
+     ],
+     [
+      91,
+      14
+     ],
+     [
+      102,
+      8
+     ],
+     [
+      116,
+      24
+     ],
+     [
+      122,
+      5
+     ],
+     [
+      123,
+      9
+     ],
+     [
+      123,
+      33
+     ],
+     [
+      151,
+      25
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      18
+     ],
+     [
+      10,
+      45
+     ],
+     [
+      19,
+      32
+     ],
+     [
+      23,
+      17
+     ],
+     [
+      73,
+      45
+     ],
+     [
+      91,
+      17
+     ],
+     [
+      102,
+      12
+     ],
+     [
+      116,
+      32
+     ],
+     [
+      122,
+      6
+     ],
+     [
+      123,
+      10
+     ],
+     [
+      123,
+      34
+     ],
+     [
+      151,
+      27
+     ]
+    ],
+    "names": [
+     "acmeserver",
+     "testing",
+     "X509NameOptions",
+     "fields",
+     "testing",
+     "fields",
+     "Domains",
+     "X509NameOptions",
+     "_",
+     "tt",
+     "T",
+     "nil"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "completion",
+  "path": "modules/caddyhttp/reverseproxy/selectionpolicies_test.go",
+  "line": 85,
+  "character": 13,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "modules/caddyhttp/reverseproxy/selectionpolicies_test.go"
+  },
+  {
+   "kind": "open",
+   "path": "modules/caddyhttp/rewrite/caddyfile.go"
+  },
+  {
+   "kind": "open",
+   "path": "modules/caddypki/acmeserver/policy_test.go"
+  },
+  {
+   "kind": "fs_write",
+   "path": "modules/caddyhttp/caddyhttp.go",
+   "text": "// Copyright 2015 Matthew Holt and The Caddy Authors\n//\n// Licensed under the Apache License, Version 2.0 (the \"License\");\n// you may not use this file except in compliance with the License.\n// You may obtain a copy of the License at\n//\n//     http://www.apache.org/licenses/LICENSE-2.0\n//\n// Unless required by applicable law or agreed to in writing, software\n// distributed under the License is distributed on an \"AS IS\" BASIS,\n// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n// See the License for the specific language governing permissions and\n// limitations under the License.\n\npackage caddyhttp\n\nimport (\n\t\"bytes\"\n\t\"encoding/json\"\n\t\"io\"\n\t\"net\"\n\t\"net/http\"\n\t\"path\"\n\t\"path/filepath\"\n\t\"strconv\"\n\t\"strings\"\n\n\t\"github.com/caddyserver/caddy/v2\"\n\t\"github.com/caddyserver/caddy/v2/caddyconfig/caddyfile\"\n)\n\nfunc init() {\n\tcaddy.RegisterModule(tlsPlaceholderWrapper{})\n}\n\n// RequestMatcher is a type that can match to a request.\n// A route matcher MUST NOT modify the request, with the\n// only exception being its context.\n//\n// Deprecated: Matchers should now implement RequestMatcherWithError.\n// You may remove any interface guards for RequestMatcher\n// but keep your Match() methods for backwards compatibility.\ntype RequestMatcher interface {\n\tMatch(*http.Request) bool\n}\n\n// RequestMatcherWithError is like RequestMatcher but can return an error.\n// An error during matching will abort the request middleware chain and\n// invoke the error middleware chain.\n//\n// This will eventually replace RequestMatcher. Matcher modules\n// should implement both interfaces, and once all modules have\n// been updated to use RequestMatcherWithError, the RequestMatcher\n// interface may eventually be dropped.\ntype RequestMatcherWithError interface {\n\tMatchWithError(*http.Request) (bool, error)\n}\n\n// Handler is like http.Handler except ServeHTTP may return an error.\n//\n// If any handler encounters an error, it should be returned for proper\n// handling. Return values should be propagated down the middleware chain\n// by returning it unchanged. Returned errors should not be re-wrapped\n// if they are already HandlerError values.\ntype Handler interface {\n\tServeHTTP(http.ResponseWriter, *http.Request) error\n}\n\n// HandlerFunc is a convenience type like http.HandlerFunc.\ntype HandlerFunc func(http.ResponseWriter, *http.Request) error\n\n// ServeHTTP implements the Handler interface.\nfunc (f HandlerFunc) ServeHTTP(w http.ResponseWriter, r *http.Request) error {\n\treturn f(w, r)\n}\n\n// Middleware chains one Handler to the next by being passed\n// the next Handler in the chain.\ntype Middleware func(Handler) Handler\n\n// MiddlewareHandler is like Handler except it takes as a third\n// argument the next handler in the chain. The next handler will\n// never be nil, but may be a no-op handler if this is the last\n// handler in the chain. Handlers which act as middleware should\n// call the next handler's ServeHTTP method so as to propagate\n// the request down the chain properly. Handlers which act as\n// responders (content origins) need not invoke the next handler,\n// since the last handler in the chain should be the first to\n// write the response.\ntype MiddlewareHandler interface {\n\tServeHTTP(http.ResponseWriter, *http.Request, Handler) error\n}\n\n// emptyHandler is used as a no-op handler.\nvar emptyHandler Handler = HandlerFunc(func(_ http.ResponseWriter, req *http.Request) error {\n\tSetVar(req.Context(), \"unhandled\", true)\n\treturn nil\n})\n\n// An implicit suffix middleware that, if reached, sets the StatusCode to the\n// error stored in the ErrorCtxKey. This is to prevent situations where the\n// Error chain does not actually handle the error (for instance, it matches only\n// on some errors). See #3053\nvar errorEmptyHandler Handler = HandlerFunc(func(w http.ResponseWriter, r *http.Request) error {\n\thttpError := r.Context().Value(ErrorCtxKey)\n\tif handlerError, ok := httpError.(HandlerError); ok {\n\t\tw.WriteHeader(handlerError.StatusCode)\n\t} else {\n\t\tw.WriteHeader(http.StatusInternalServerError)\n\t}\n\treturn nil\n})\n\n// ResponseHandler pairs a response matcher with custom handling\n// logic. Either the status code can be changed to something else\n// while using the original response body, or, if a status code\n// is not set, it can execute a custom route list; this is useful\n// for executing handler routes based on the properties of an HTTP\n// response that has not been written out to the client yet.\n//\n// To use this type, provision it at module load time, then when\n// ready to use, match the response against its matcher; if it\n// matches (or doesn't have a matcher), change the status code on\n// the response if configured; otherwise invoke the routes by\n// calling `rh.Routes.Compile(next).ServeHTTP(rw, req)` (or similar).\ntype ResponseHandler struct {\n\t// The response matcher for this handler. If empty/nil,\n\t// it always matches.\n\tMatch *ResponseMatcher `json:\"match,omitempty\"`\n\n\t// To write the original response body but with a different\n\t// status code, set this field to the desired status code.\n\t// If set, this takes priority over routes.\n\tStatusCode WeakString `json:\"status_code,omitempty\"`\n\n\t// The list of HTTP routes to execute if no status code is\n\t// specified. If evaluated, the original response body\n\t// will not be written.\n\tRoutes RouteList `json:\"routes,omitempty\"`\n}\n\n// Provision sets up the routes in rh.\nfunc (rh *ResponseHandler) Provision(ctx caddy.Context) error {\n\tif rh.Routes != nil {\n\t\terr := rh.Routes.Provision(ctx)\n\t\tif err != nil {\n\t\t\treturn err\n\t\t}\n\t}\n\treturn nil\n}\n\n// WeakString is a type that unmarshals any JSON value\n// as a string literal, with the following exceptions:\n//\n// 1. actual string values are decoded as strings; and\n// 2. null is decoded as empty string;\n//\n// and provides methods for getting the value as various\n// primitive types. However, using this type removes any\n// type safety as far as deserializing JSON is concerned.\ntype WeakString string\n\n// UnmarshalJSON satisfies json.Unmarshaler according to\n// this type's documentation.\nfunc (ws *WeakString) UnmarshalJSON(b []byte) error {\n\tif len(b) == 0 {\n\t\treturn io.EOF\n\t}\n\tif b[0] == byte('\"') && b[len(b)-1] == byte('\"') {\n\t\tvar s string\n\t\terr := json.Unmarshal(b, &s)\n\t\tif err != nil {\n\t\t\treturn err\n\t\t}\n\t\t*ws = WeakString(s)\n\t\treturn nil\n\t}\n\tif bytes.Equal(b, []byte(\"null\")) {\n\t\treturn nil\n\t}\n\t*ws = WeakString(b)\n\treturn nil\n}\n\n// MarshalJSON marshals was a boolean if true or false,\n// a number if an integer, or a string otherwise.\nfunc (ws WeakString) MarshalJSON() ([]byte, error) {\n\tif ws == \"true\" {\n\t\treturn []byte(\"true\"), nil\n\t}\n\tif ws == \"false\" {\n\t\treturn []byte(\"false\"), nil\n\t}\n\tif num, err := strconv.Atoi(string(ws)); err == nil {\n\t\treturn json.Marshal(num)\nx\t}\n\treturn json.Marshal(string(ws))\n}\n\n// Int returns ws as an integer. If ws is not an\n// integer, 0 is returned.\nfunc (ws WeakString) Int() int {\n\tnum, _ := strconv.Atoi(string(ws))\n\treturn num\n}\n\n// Float64 returns ws as a float64. If ws is not a\n// float value, the zero value is returned.\nfunc (ws WeakString) Float64() float64 {\n\tnum, _ := strconv.ParseFloat(string(ws), 64)\n\treturn num\n}\n\n// Bool returns ws as a boolean. If ws is not a\n// boolean, false is returned.\nfunc (ws WeakString) Bool() bool {\n\treturn string(ws) == \"true\"\n}\n\n// String returns ws as a string.\nfunc (ws WeakString) String() string {\n\treturn string(ws)\n}\n\n// StatusCodeMatches returns true if a real HTTP status code matches\n// the configured status code, which may be either a real HTTP status\n// code or an integer representing a class of codes (e.g. 4 for all\n// 4xx statuses).\nfunc StatusCodeMatches(actual, configured int) bool {\n\tif actual == configured {\n\t\treturn true\n\t}\n\tif configured < 100 &&\n\t\tactual >= configured*100 &&\n\t\tactual < (configured+1)*100 {\n\t\treturn true\n\t}\n\treturn false\n}\n\n// SanitizedPathJoin performs filepath.Join(root, reqPath) that\n// is safe against directory traversal attacks. It uses logic\n// similar to that in the Go standard library, specifically\n// in the implementation of http.Dir. The root is assumed to\n// be a trusted path, but reqPath is not; and the output will\n// never be outside of root. The resulting path can be used\n// with the local file system. If root is empty, the current\n// directory is assumed. If the cleaned request path is deemed\n// not local according to lexical processing (i.e. ignoring links),\n// it will be rejected as unsafe and only the root will be returned.\nfunc SanitizedPathJoin(root, reqPath string) string {\n\tif root == \"\" {\n\t\troot = \".\"\n\t}\n\n\trelPath := path.Clean(\"/\" + reqPath)[1:] // clean path and trim the leading /\n\tif relPath != \"\" && !filepath.IsLocal(relPath) {\n\t\t// path is unsafe (see https://github.com/golang/go/issues/56336#issuecomment-1416214885)\n\t\treturn root\n\t}\n\n\tpath := filepath.Join(root, filepath.FromSlash(relPath))\n\n\t// filepath.Join also cleans the path, and cleaning strips\n\t// the trailing slash, so we need to re-add it afterwards.\n\t// if the length is 1, then it's a path to the root,\n\t// and that should return \".\", so we don't append the separator.\n\tif strings.HasSuffix(reqPath, \"/\") && len(reqPath) > 1 {\n\t\tpath += separator\n\t}\n\n\treturn path\n}\n\n// CleanPath cleans path p according to path.Clean(), but only\n// merges repeated slashes if collapseSlashes is true, and always\n// preserves trailing slashes.\nfunc CleanPath(p string, collapseSlashes bool) string {\n\tif collapseSlashes {\n\t\treturn cleanPath(p)\n\t}\n\n\t// insert an invalid/impossible URI character into each two consecutive\n\t// slashes to expand empty path segments; then clean the path as usual,\n\t// and then remove the remaining temporary characters.\n\tconst tmpCh = 0xff\n\tvar sb strings.Builder\n\tfor i, ch := range p {\n\t\tif ch == '/' && i > 0 && p[i-1] == '/' {\n\t\t\tsb.WriteByte(tmpCh)\n\t\t}\n\t\tsb.WriteRune(ch)\n\t}\n\thalfCleaned := cleanPath(sb.String())\n\thalfCleaned = strings.ReplaceAll(halfCleaned, string([]byte{tmpCh}), \"\")\n\n\treturn halfCleaned\n}\n\n// cleanPath does path.Clean(p) but preserves any trailing slash.\nfunc cleanPath(p string) string {\n\tcleaned := path.Clean(p)\n\tif cleaned != \"/\" && strings.HasSuffix(p, \"/\") {\n\t\tcleaned = cleaned + \"/\"\n\t}\n\treturn cleaned\n}\n\n// tlsPlaceholderWrapper is a no-op listener wrapper that marks\n// where the TLS listener should be in a chain of listener wrappers.\n// It should only be used if another listener wrapper must be placed\n// in front of the TLS handshake.\ntype tlsPlaceholderWrapper struct{}\n\nfunc (tlsPlaceholderWrapper) CaddyModule() caddy.ModuleInfo {\n\treturn caddy.ModuleInfo{\n\t\tID:  \"caddy.listeners.tls\",\n\t\tNew: func() caddy.Module { return new(tlsPlaceholderWrapper) },\n\t}\n}\n\nfunc (tlsPlaceholderWrapper) WrapListener(ln net.Listener) net.Listener { return ln }\n\nfunc (tlsPlaceholderWrapper) UnmarshalCaddyfile(d *caddyfile.Dispenser) error { return nil }\n\nconst (\n\t// DefaultHTTPPort is the default port for HTTP.\n\tDefaultHTTPPort = 80\n\n\t// DefaultHTTPSPort is the default port for HTTPS.\n\tDefaultHTTPSPort = 443\n)\n\nconst separator = string(filepath.Separator)\n\n// Interface guard\nvar (\n\t_ caddy.ListenerWrapper = (*tlsPlaceholderWrapper)(nil)\n\t_ caddyfile.Unmarshaler = (*tlsPlaceholderWrapper)(nil)\n)\n"
+  },
+  {
+   "kind": "fs_write",
+   "path": "modules/caddyhttp/caddyhttp.go",
+   "text": "// Copyright 2015 Matthew Holt and The Caddy Authors\n//\n// Licensed under the Apache License, Version 2.0 (the \"License\");\n// you may not use this file except in compliance with the License.\n// You may obtain a copy of the License at\n//\n//     http://www.apache.org/licenses/LICENSE-2.0\n//\n// Unless required by applicable law or agreed to in writing, software\n// distributed under the License is distributed on an \"AS IS\" BASIS,\n// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n// See the License for the specific language governing permissions and\n// limitations under the License.\n\npackage caddyhttp\n\nimport (\n\t\"bytes\"\n\t\"encoding/json\"\n\t\"io\"\n\t\"net\"\n\t\"net/http\"\n\t\"path\"\n\t\"path/filepath\"\n\t\"strconv\"\n\t\"strings\"\n\n\t\"github.com/caddyserver/caddy/v2\"\n\t\"github.com/caddyserver/caddy/v2/caddyconfig/caddyfile\"\n)\n\nfunc init() {\n\tcaddy.RegisterModule(tlsPlaceholderWrapper{})\n}\n\n// RequestMatcher is a type that can match to a request.\n// A route matcher MUST NOT modify the request, with the\n// only exception being its context.\n//\n// Deprecated: Matchers should now implement RequestMatcherWithError.\n// You may remove any interface guards for RequestMatcher\n// but keep your Match() methods for backwards compatibility.\ntype RequestMatcher interface {\n\tMatch(*http.Request) bool\n}\n\n// RequestMatcherWithError is like RequestMatcher but can return an error.\n// An error during matching will abort the request middleware chain and\n// invoke the error middleware chain.\n//\n// This will eventually replace RequestMatcher. Matcher modules\n// should implement both interfaces, and once all modules have\n// been updated to use RequestMatcherWithError, the RequestMatcher\n// interface may eventually be dropped.\ntype RequestMatcherWithError interface {\n\tMatchWithError(*http.Request) (bool, error)\n}\n\n// Handler is like http.Handler except ServeHTTP may return an error.\n//\n// If any handler encounters an error, it should be returned for proper\n// handling. Return values should be propagated down the middleware chain\n// by returning it unchanged. Returned errors should not be re-wrapped\n// if they are already HandlerError values.\ntype Handler interface {\n\tServeHTTP(http.ResponseWriter, *http.Request) error\n}\n\n// HandlerFunc is a convenience type like http.HandlerFunc.\ntype HandlerFunc func(http.ResponseWriter, *http.Request) error\n\n// ServeHTTP implements the Handler interface.\nfunc (f HandlerFunc) ServeHTTP(w http.ResponseWriter, r *http.Request) error {\n\treturn f(w, r)\n}\n\n// Middleware chains one Handler to the next by being passed\n// the next Handler in the chain.\ntype Middleware func(Handler) Handler\n\n// MiddlewareHandler is like Handler except it takes as a third\n// argument the next handler in the chain. The next handler will\n// never be nil, but may be a no-op handler if this is the last\n// handler in the chain. Handlers which act as middleware should\n// call the next handler's ServeHTTP method so as to propagate\n// the request down the chain properly. Handlers which act as\n// responders (content origins) need not invoke the next handler,\n// since the last handler in the chain should be the first to\n// write the response.\ntype MiddlewareHandler interface {\n\tServeHTTP(http.ResponseWriter, *http.Request, Handler) error\n}\n\n// emptyHandler is used as a no-op handler.\nvar emptyHandler Handler = HandlerFunc(func(_ http.ResponseWriter, req *http.Request) error {\n\tSetVar(req.Context(), \"unhandled\", true)\n\treturn nil\n})\n\n// An implicit suffix middleware that, if reached, sets the StatusCode to the\n// error stored in the ErrorCtxKey. This is to prevent situations where the\n// Error chain does not actually handle the error (for instance, it matches only\n// on some errors). See #3053\nvar errorEmptyHandler Handler = HandlerFunc(func(w http.ResponseWriter, r *http.Request) error {\n\thttpError := r.Context().Value(ErrorCtxKey)\n\tif handlerError, ok := httpError.(HandlerError); ok {\n\t\tw.WriteHeader(handlerError.StatusCode)\n\t} else {\n\t\tw.WriteHeader(http.StatusInternalServerError)\n\t}\n\treturn nil\n})\n\n// ResponseHandler pairs a response matcher with custom handling\n// logic. Either the status code can be changed to something else\n// while using the original response body, or, if a status code\n// is not set, it can execute a custom route list; this is useful\n// for executing handler routes based on the properties of an HTTP\n// response that has not been written out to the client yet.\n//\n// To use this type, provision it at module load time, then when\n// ready to use, match the response against its matcher; if it\n// matches (or doesn't have a matcher), change the status code on\n// the response if configured; otherwise invoke the routes by\n// calling `rh.Routes.Compile(next).ServeHTTP(rw, req)` (or similar).\ntype ResponseHandler struct {\n\t// The response matcher for this handler. If empty/nil,\n\t// it always matches.\n\tMatch *ResponseMatcher `json:\"match,omitempty\"`\n\n\t// To write the original response body but with a different\n\t// status code, set this field to the desired status code.\n\t// If set, this takes priority over routes.\n\tStatusCode WeakString `json:\"status_code,omitempty\"`\n\n\t// The list of HTTP routes to execute if no status code is\n\t// specified. If evaluated, the original response body\n\t// will not be written.\n\tRoutes RouteList `json:\"routes,omitempty\"`\n}\n\n// Provision sets up the routes in rh.\nfunc (rh *ResponseHandler) Provision(ctx caddy.Context) error {\n\tif rh.Routes != nil {\n\t\terr := rh.Routes.Provision(ctx)\n\t\tif err != nil {\n\t\t\treturn err\n\t\t}\n\t}\n\treturn nil\n}\n\n// WeakString is a type that unmarshals any JSON value\n// as a string literal, with the following exceptions:\n//\n// 1. actual string values are decoded as strings; and\n// 2. null is decoded as empty string;\n//\n// and provides methods for getting the value as various\n// primitive types. However, using this type removes any\n// type safety as far as deserializing JSON is concerned.\ntype WeakString string\n\n// UnmarshalJSON satisfies json.Unmarshaler according to\n// this type's documentation.\nfunc (ws *WeakString) UnmarshalJSON(b []byte) error {\n\tif len(b) == 0 {\n\t\treturn io.EOF\n\t}\n\tif b[0] == byte('\"') && b[len(b)-1] == byte('\"') {\n\t\tvar s string\n\t\terr := json.Unmarshal(b, &s)\n\t\tif err != nil {\n\t\t\treturn err\n\t\t}\n\t\t*ws = WeakString(s)\n\t\treturn nil\n\t}\n\tif bytes.Equal(b, []byte(\"null\")) {\n\t\treturn nil\n\t}\n\t*ws = WeakString(b)\n\treturn nil\n}\n\n// MarshalJSON marshals was a boolean if true or false,\n// a number if an integer, or a string otherwise.\nfunc (ws WeakString) MarshalJSON() ([]byte, error) {\n\tif ws == \"true\" {\n\t\treturn []byte(\"true\"), nil\n\t}\n\tif ws == \"false\" {\n\t\treturn []byte(\"false\"), nil\n\t}\n\tif num, err := strconv.Atoi(string(ws)); err == nil {\n\t\treturn json.Marshal(num)\n\t}\n\treturn json.Marshal(string(ws))\n}\n\n// Int returns ws as an integer. If ws is not an\n// integer, 0 is returned.\nfunc (ws WeakString) Int() int {\n\tnum, _ := strconv.Atoi(string(ws))\n\treturn num\n}\n\n// Float64 returns ws as a float64. If ws is not a\n// float value, the zero value is returned.\nfunc (ws WeakString) Float64() float64 {\n\tnum, _ := strconv.ParseFloat(string(ws), 64)\n\treturn num\n}\n\n// Bool returns ws as a boolean. If ws is not a\n// boolean, false is returned.\nfunc (ws WeakString) Bool() bool {\n\treturn string(ws) == \"true\"\n}\n\n// String returns ws as a string.\nfunc (ws WeakString) String() string {\n\treturn string(ws)\n}\n\n// StatusCodeMatches returns true if a real HTTP status code matches\n// the configured status code, which may be either a real HTTP status\n// code or an integer representing a class of codes (e.g. 4 for all\n// 4xx statuses).\nfunc StatusCodeMatches(actual, configured int) bool {\n\tif actual == configured {\n\t\treturn true\n\t}\n\tif configured < 100 &&\n\t\tactual >= configured*100 &&\n\t\tactual < (configured+1)*100 {\n\t\treturn true\n\t}\n\treturn false\n}\n\n// SanitizedPathJoin performs filepath.Join(root, reqPath) that\n// is safe against directory traversal attacks. It uses logic\n// similar to that in the Go standard library, specifically\n// in the implementation of http.Dir. The root is assumed to\n// be a trusted path, but reqPath is not; and the output will\n// never be outside of root. The resulting path can be used\n// with the local file system. If root is empty, the current\n// directory is assumed. If the cleaned request path is deemed\n// not local according to lexical processing (i.e. ignoring links),\n// it will be rejected as unsafe and only the root will be returned.\nfunc SanitizedPathJoin(root, reqPath string) string {\n\tif root == \"\" {\n\t\troot = \".\"\n\t}\n\n\trelPath := path.Clean(\"/\" + reqPath)[1:] // clean path and trim the leading /\n\tif relPath != \"\" && !filepath.IsLocal(relPath) {\n\t\t// path is unsafe (see https://github.com/golang/go/issues/56336#issuecomment-1416214885)\n\t\treturn root\n\t}\n\n\tpath := filepath.Join(root, filepath.FromSlash(relPath))\n\n\t// filepath.Join also cleans the path, and cleaning strips\n\t// the trailing slash, so we need to re-add it afterwards.\n\t// if the length is 1, then it's a path to the root,\n\t// and that should return \".\", so we don't append the separator.\n\tif strings.HasSuffix(reqPath, \"/\") && len(reqPath) > 1 {\n\t\tpath += separator\n\t}\n\n\treturn path\n}\n\n// CleanPath cleans path p according to path.Clean(), but only\n// merges repeated slashes if collapseSlashes is true, and always\n// preserves trailing slashes.\nfunc CleanPath(p string, collapseSlashes bool) string {\n\tif collapseSlashes {\n\t\treturn cleanPath(p)\n\t}\n\n\t// insert an invalid/impossible URI character into each two consecutive\n\t// slashes to expand empty path segments; then clean the path as usual,\n\t// and then remove the remaining temporary characters.\n\tconst tmpCh = 0xff\n\tvar sb strings.Builder\n\tfor i, ch := range p {\n\t\tif ch == '/' && i > 0 && p[i-1] == '/' {\n\t\t\tsb.WriteByte(tmpCh)\n\t\t}\n\t\tsb.WriteRune(ch)\n\t}\n\thalfCleaned := cleanPath(sb.String())\n\thalfCleaned = strings.ReplaceAll(halfCleaned, string([]byte{tmpCh}), \"\")\n\n\treturn halfCleaned\n}\n\n// cleanPath does path.Clean(p) but preserves any trailing slash.\nfunc cleanPath(p string) string {\n\tcleaned := path.Clean(p)\n\tif cleaned != \"/\" && strings.HasSuffix(p, \"/\") {\n\t\tcleaned = cleaned + \"/\"\n\t}\n\treturn cleaned\n}\n\n// tlsPlaceholderWrapper is a no-op listener wrapper that marks\n// where the TLS listener should be in a chain of listener wrappers.\n// It should only be used if another listener wrapper must be placed\n// in front of the TLS handshake.\ntype tlsPlaceholderWrapper struct{}\n\nfunc (tlsPlaceholderWrapper) CaddyModule() caddy.ModuleInfo {\n\treturn caddy.ModuleInfo{\n\t\tID:  \"caddy.listeners.tls\",\n\t\tNew: func() caddy.Module { return new(tlsPlaceholderWrapper) },\n\t}\n}\n\nfunc (tlsPlaceholderWrapper) WrapListener(ln net.Listener) net.Listener { return ln }\n\nfunc (tlsPlaceholderWrapper) UnmarshalCaddyfile(d *caddyfile.Dispenser) error { return nil }\n\nconst (\n\t// DefaultHTTPPort is the default port for HTTP.\n\tDefaultHTTPPort = 80\n\n\t// DefaultHTTPSPort is the default port for HTTPS.\n\tDefaultHTTPSPort = 443\n)\n\nconst separator = string(filepath.Separator)\n\n// Interface guard\nvar (\n\t_ caddy.ListenerWrapper = (*tlsPlaceholderWrapper)(nil)\n\t_ caddyfile.Unmarshaler = (*tlsPlaceholderWrapper)(nil)\n)\n"
+  }
+ ],
+ "case": {
+  "chain_step": 0,
+  "families": [],
+  "family": "H6",
+  "history_index": 0,
+  "history_seed": 2001,
+  "mode": "fresh",
+  "note": "dep-disk round trip on modules/caddyhttp/caddyhttp.go: insert 'x' on line 196",
+  "seed": 2,
+  "timing": "settled"
+ },
+ "shape": "completion:extra",
+ "signature": "gopls|r1_history|completion:extra",
+ "expected": [
+  "TestAdminUpstreamsBothPools",
+  "TestAdminUpstreamsNoOverlapBetweenPools",
+  "TestHTTPTransportH3UsesConfiguredTrustPool",
+  "TestHTTPTransportUnmarshalCaddyFileWithCaPools",
+  "UpstreamPool",
+  "bufPool",
+  "drainHostsPool",
+  "pool",
+  "streamingBufPool",
+  "testPool"
+ ],
+ "actual": [
+  "TestAdminUpstreamsBothPools",
+  "TestAdminUpstreamsNoOverlapBetweenPools",
+  "TestHTTPTransportH3UsesConfiguredTrustPool",
+  "TestHTTPTransportUnmarshalCaddyFileWithCaPools",
+  "UpstreamPool",
+  "bufPool",
+  "bufPool.New",
+  "caddy.NewUsagePool",
+  "caddy.UsagePool",
+  "drainHostsPool",
+  "pool",
+  "streamingBufPool",
+  "testPool"
+ ],
+ "reproduced": "0/3",
+ "note": "H6: dep-disk round trip on modules/caddyhttp/caddyhttp.go: insert 'x' on line 196; flake 0/3 [r1:SCr r2:SCr r3:SCr] in 174s",
+ "violation": {
+  "oracle": "r1_history",
+  "server": "gopls-v0.23.0",
+  "project": "caddyserver/caddy@c18099a0af5e",
+  "key": {
+   "method": "completion",
+   "path": "modules/caddyhttp/reverseproxy/selectionpolicies_test.go",
+   "line": 85,
+   "character": 13,
+   "extra": ""
+  },
+  "expected": [
+   "TestAdminUpstreamsBothPools",
+   "TestAdminUpstreamsNoOverlapBetweenPools",
+   "TestHTTPTransportH3UsesConfiguredTrustPool",
+   "TestHTTPTransportUnmarshalCaddyFileWithCaPools",
+   "UpstreamPool",
+   "bufPool",
+   "drainHostsPool",
+   "pool",
+   "streamingBufPool",
+   "testPool"
+  ],
+  "actual": [
+   "TestAdminUpstreamsBothPools",
+   "TestAdminUpstreamsNoOverlapBetweenPools",
+   "TestHTTPTransportH3UsesConfiguredTrustPool",
+   "TestHTTPTransportUnmarshalCaddyFileWithCaPools",
+   "UpstreamPool",
+   "bufPool",
+   "bufPool.New",
+   "caddy.NewUsagePool",
+   "caddy.UsagePool",
+   "drainHostsPool",
+   "pool",
+   "streamingBufPool",
+   "testPool"
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "modules/caddyhttp/reverseproxy/selectionpolicies_test.go"
+   },
+   {
+    "kind": "open",
+    "path": "modules/caddyhttp/rewrite/caddyfile.go"
+   },
+   {
+    "kind": "open",
+    "path": "modules/caddypki/acmeserver/policy_test.go"
+   },
+   {
+    "kind": "fs_write",
+    "path": "modules/caddyhttp/caddyhttp.go",
+    "text": "// Copyright 2015 Matthew Holt and The Caddy Authors\n//\n// Licensed under the Apache License, Version 2.0 (the \"License\");\n// you may not use this file except in compliance with the License.\n// You may obtain a copy of the License at\n//\n//     http://www.apache.org/licenses/LICENSE-2.0\n//\n// Unless required by applicable law or agreed to in writing, software\n// distributed under the License is distributed on an \"AS IS\" BASIS,\n// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n// See the License for the specific language governing permissions and\n// limitations under the License.\n\npackage caddyhttp\n\nimport (\n\t\"bytes\"\n\t\"encoding/json\"\n\t\"io\"\n\t\"net\"\n\t\"net/http\"\n\t\"path\"\n\t\"path/filepath\"\n\t\"strconv\"\n\t\"strings\"\n\n\t\"github.com/caddyserver/caddy/v2\"\n\t\"github.com/caddyserver/caddy/v2/caddyconfig/caddyfile\"\n)\n\nfunc init() {\n\tcaddy.RegisterModule(tlsPlaceholderWrapper{})\n}\n\n// RequestMatcher is a type that can match to a request.\n// A route matcher MUST NOT modify the request, with the\n// only exception being its context.\n//\n// Deprecated: Matchers should now implement RequestMatcherWithError.\n// You may remove any interface guards for RequestMatcher\n// but keep your Match() methods for backwards compatibility.\ntype RequestMatcher interface {\n\tMatch(*http.Request) bool\n}\n\n// RequestMatcherWithError is like RequestMatcher but can return an error.\n// An error during matching will abort the request middleware chain and\n// invoke the error middleware chain.\n//\n// This will eventually replace RequestMatcher. Matcher modules\n// should implement both interfaces, and once all modules have\n// been updated to use RequestMatcherWithError, the RequestMatcher\n// interface may eventually be dropped.\ntype RequestMatcherWithError interface {\n\tMatchWithError(*http.Request) (bool, error)\n}\n\n// Handler is like http.Handler except ServeHTTP may return an error.\n//\n// If any handler encounters an error, it should be returned for proper\n// handling. Return values should be propagated down the middleware chain\n// by returning it unchanged. Returned errors should not be re-wrapped\n// if they are already HandlerError values.\ntype Handler interface {\n\tServeHTTP(http.ResponseWriter, *http.Request) error\n}\n\n// HandlerFunc is a convenience type like http.HandlerFunc.\ntype HandlerFunc func(http.ResponseWriter, *http.Request) error\n\n// ServeHTTP implements the Handler interface.\nfunc (f HandlerFunc) ServeHTTP(w http.ResponseWriter, r *http.Request) error {\n\treturn f(w, r)\n}\n\n// Middleware chains one Handler to the next by being passed\n// the next Handler in the chain.\ntype Middleware func(Handler) Handler\n\n// MiddlewareHandler is like Handler except it takes as a third\n// argument the next handler in the chain. The next handler will\n// never be nil, but may be a no-op handler if this is the last\n// handler in the chain. Handlers which act as middleware should\n// call the next handler's ServeHTTP method so as to propagate\n// the request down the chain properly. Handlers which act as\n// responders (content origins) need not invoke the next handler,\n// since the last handler in the chain should be the first to\n// write the response.\ntype MiddlewareHandler interface {\n\tServeHTTP(http.ResponseWriter, *http.Request, Handler) error\n}\n\n// emptyHandler is used as a no-op handler.\nvar emptyHandler Handler = HandlerFunc(func(_ http.ResponseWriter, req *http.Request) error {\n\tSetVar(req.Context(), \"unhandled\", true)\n\treturn nil\n})\n\n// An implicit suffix middleware that, if reached, sets the StatusCode to the\n// error stored in the ErrorCtxKey. This is to prevent situations where the\n// Error chain does not actually handle the error (for instance, it matches only\n// on some errors). See #3053\nvar errorEmptyHandler Handler = HandlerFunc(func(w http.ResponseWriter, r *http.Request) error {\n\thttpError := r.Context().Value(ErrorCtxKey)\n\tif handlerError, ok := httpError.(HandlerError); ok {\n\t\tw.WriteHeader(handlerError.StatusCode)\n\t} else {\n\t\tw.WriteHeader(http.StatusInternalServerError)\n\t}\n\treturn nil\n})\n\n// ResponseHandler pairs a response matcher with custom handling\n// logic. Either the status code can be changed to something else\n// while using the original response body, or, if a status code\n// is not set, it can execute a custom route list; this is useful\n// for executing handler routes based on the properties of an HTTP\n// response that has not been written out to the client yet.\n//\n// To use this type, provision it at module load time, then when\n// ready to use, match the response against its matcher; if it\n// matches (or doesn't have a matcher), change the status code on\n// the response if configured; otherwise invoke the routes by\n// calling `rh.Routes.Compile(next).ServeHTTP(rw, req)` (or similar).\ntype ResponseHandler struct {\n\t// The response matcher for this handler. If empty/nil,\n\t// it always matches.\n\tMatch *ResponseMatcher `json:\"match,omitempty\"`\n\n\t// To write the original response body but with a different\n\t// status code, set this field to the desired status code.\n\t// If set, this takes priority over routes.\n\tStatusCode WeakString `json:\"status_code,omitempty\"`\n\n\t// The list of HTTP routes to execute if no status code is\n\t// specified. If evaluated, the original response body\n\t// will not be written.\n\tRoutes RouteList `json:\"routes,omitempty\"`\n}\n\n// Provision sets up the routes in rh.\nfunc (rh *ResponseHandler) Provision(ctx caddy.Context) error {\n\tif rh.Routes != nil {\n\t\terr := rh.Routes.Provision(ctx)\n\t\tif err != nil {\n\t\t\treturn err\n\t\t}\n\t}\n\treturn nil\n}\n\n// WeakString is a type that unmarshals any JSON value\n// as a string literal, with the following exceptions:\n//\n// 1. actual string values are decoded as strings; and\n// 2. null is decoded as empty string;\n//\n// and provides methods for getting the value as various\n// primitive types. However, using this type removes any\n// type safety as far as deserializing JSON is concerned.\ntype WeakString string\n\n// UnmarshalJSON satisfies json.Unmarshaler according to\n// this type's documentation.\nfunc (ws *WeakString) UnmarshalJSON(b []byte) error {\n\tif len(b) == 0 {\n\t\treturn io.EOF\n\t}\n\tif b[0] == byte('\"') && b[len(b)-1] == byte('\"') {\n\t\tvar s string\n\t\terr := json.Unmarshal(b, &s)\n\t\tif err != nil {\n\t\t\treturn err\n\t\t}\n\t\t*ws = WeakString(s)\n\t\treturn nil\n\t}\n\tif bytes.Equal(b, []byte(\"null\")) {\n\t\treturn nil\n\t}\n\t*ws = WeakString(b)\n\treturn nil\n}\n\n// MarshalJSON marshals was a boolean if true or false,\n// a number if an integer, or a string otherwise.\nfunc (ws WeakString) MarshalJSON() ([]byte, error) {\n\tif ws == \"true\" {\n\t\treturn []byte(\"true\"), nil\n\t}\n\tif ws == \"false\" {\n\t\treturn []byte(\"false\"), nil\n\t}\n\tif num, err := strconv.Atoi(string(ws)); err == nil {\n\t\treturn json.Marshal(num)\nx\t}\n\treturn json.Marshal(string(ws))\n}\n\n// Int returns ws as an integer. If ws is not an\n// integer, 0 is returned.\nfunc (ws WeakString) Int() int {\n\tnum, _ := strconv.Atoi(string(ws))\n\treturn num\n}\n\n// Float64 returns ws as a float64. If ws is not a\n// float value, the zero value is returned.\nfunc (ws WeakString) Float64() float64 {\n\tnum, _ := strconv.ParseFloat(string(ws), 64)\n\treturn num\n}\n\n// Bool returns ws as a boolean. If ws is not a\n// boolean, false is returned.\nfunc (ws WeakString) Bool() bool {\n\treturn string(ws) == \"true\"\n}\n\n// String returns ws as a string.\nfunc (ws WeakString) String() string {\n\treturn string(ws)\n}\n\n// StatusCodeMatches returns true if a real HTTP status code matches\n// the configured status code, which may be either a real HTTP status\n// code or an integer representing a class of codes (e.g. 4 for all\n// 4xx statuses).\nfunc StatusCodeMatches(actual, configured int) bool {\n\tif actual == configured {\n\t\treturn true\n\t}\n\tif configured < 100 &&\n\t\tactual >= configured*100 &&\n\t\tactual < (configured+1)*100 {\n\t\treturn true\n\t}\n\treturn false\n}\n\n// SanitizedPathJoin performs filepath.Join(root, reqPath) that\n// is safe against directory traversal attacks. It uses logic\n// similar to that in the Go standard library, specifically\n// in the implementation of http.Dir. The root is assumed to\n// be a trusted path, but reqPath is not; and the output will\n// never be outside of root. The resulting path can be used\n// with the local file system. If root is empty, the current\n// directory is assumed. If the cleaned request path is deemed\n// not local according to lexical processing (i.e. ignoring links),\n// it will be rejected as unsafe and only the root will be returned.\nfunc SanitizedPathJoin(root, reqPath string) string {\n\tif root == \"\" {\n\t\troot = \".\"\n\t}\n\n\trelPath := path.Clean(\"/\" + reqPath)[1:] // clean path and trim the leading /\n\tif relPath != \"\" && !filepath.IsLocal(relPath) {\n\t\t// path is unsafe (see https://github.com/golang/go/issues/56336#issuecomment-1416214885)\n\t\treturn root\n\t}\n\n\tpath := filepath.Join(root, filepath.FromSlash(relPath))\n\n\t// filepath.Join also cleans the path, and cleaning strips\n\t// the trailing slash, so we need to re-add it afterwards.\n\t// if the length is 1, then it's a path to the root,\n\t// and that should return \".\", so we don't append the separator.\n\tif strings.HasSuffix(reqPath, \"/\") && len(reqPath) > 1 {\n\t\tpath += separator\n\t}\n\n\treturn path\n}\n\n// CleanPath cleans path p according to path.Clean(), but only\n// merges repeated slashes if collapseSlashes is true, and always\n// preserves trailing slashes.\nfunc CleanPath(p string, collapseSlashes bool) string {\n\tif collapseSlashes {\n\t\treturn cleanPath(p)\n\t}\n\n\t// insert an invalid/impossible URI character into each two consecutive\n\t// slashes to expand empty path segments; then clean the path as usual,\n\t// and then remove the remaining temporary characters.\n\tconst tmpCh = 0xff\n\tvar sb strings.Builder\n\tfor i, ch := range p {\n\t\tif ch == '/' && i > 0 && p[i-1] == '/' {\n\t\t\tsb.WriteByte(tmpCh)\n\t\t}\n\t\tsb.WriteRune(ch)\n\t}\n\thalfCleaned := cleanPath(sb.String())\n\thalfCleaned = strings.ReplaceAll(halfCleaned, string([]byte{tmpCh}), \"\")\n\n\treturn halfCleaned\n}\n\n// cleanPath does path.Clean(p) but preserves any trailing slash.\nfunc cleanPath(p string) string {\n\tcleaned := path.Clean(p)\n\tif cleaned != \"/\" && strings.HasSuffix(p, \"/\") {\n\t\tcleaned = cleaned + \"/\"\n\t}\n\treturn cleaned\n}\n\n// tlsPlaceholderWrapper is a no-op listener wrapper that marks\n// where the TLS listener should be in a chain of listener wrappers.\n// It should only be used if another listener wrapper must be placed\n// in front of the TLS handshake.\ntype tlsPlaceholderWrapper struct{}\n\nfunc (tlsPlaceholderWrapper) CaddyModule() caddy.ModuleInfo {\n\treturn caddy.ModuleInfo{\n\t\tID:  \"caddy.listeners.tls\",\n\t\tNew: func() caddy.Module { return new(tlsPlaceholderWrapper) },\n\t}\n}\n\nfunc (tlsPlaceholderWrapper) WrapListener(ln net.Listener) net.Listener { return ln }\n\nfunc (tlsPlaceholderWrapper) UnmarshalCaddyfile(d *caddyfile.Dispenser) error { return nil }\n\nconst (\n\t// DefaultHTTPPort is the default port for HTTP.\n\tDefaultHTTPPort = 80\n\n\t// DefaultHTTPSPort is the default port for HTTPS.\n\tDefaultHTTPSPort = 443\n)\n\nconst separator = string(filepath.Separator)\n\n// Interface guard\nvar (\n\t_ caddy.ListenerWrapper = (*tlsPlaceholderWrapper)(nil)\n\t_ caddyfile.Unmarshaler = (*tlsPlaceholderWrapper)(nil)\n)\n"
+   },
+   {
+    "kind": "fs_write",
+    "path": "modules/caddyhttp/caddyhttp.go",
+    "text": "// Copyright 2015 Matthew Holt and The Caddy Authors\n//\n// Licensed under the Apache License, Version 2.0 (the \"License\");\n// you may not use this file except in compliance with the License.\n// You may obtain a copy of the License at\n//\n//     http://www.apache.org/licenses/LICENSE-2.0\n//\n// Unless required by applicable law or agreed to in writing, software\n// distributed under the License is distributed on an \"AS IS\" BASIS,\n// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n// See the License for the specific language governing permissions and\n// limitations under the License.\n\npackage caddyhttp\n\nimport (\n\t\"bytes\"\n\t\"encoding/json\"\n\t\"io\"\n\t\"net\"\n\t\"net/http\"\n\t\"path\"\n\t\"path/filepath\"\n\t\"strconv\"\n\t\"strings\"\n\n\t\"github.com/caddyserver/caddy/v2\"\n\t\"github.com/caddyserver/caddy/v2/caddyconfig/caddyfile\"\n)\n\nfunc init() {\n\tcaddy.RegisterModule(tlsPlaceholderWrapper{})\n}\n\n// RequestMatcher is a type that can match to a request.\n// A route matcher MUST NOT modify the request, with the\n// only exception being its context.\n//\n// Deprecated: Matchers should now implement RequestMatcherWithError.\n// You may remove any interface guards for RequestMatcher\n// but keep your Match() methods for backwards compatibility.\ntype RequestMatcher interface {\n\tMatch(*http.Request) bool\n}\n\n// RequestMatcherWithError is like RequestMatcher but can return an error.\n// An error during matching will abort the request middleware chain and\n// invoke the error middleware chain.\n//\n// This will eventually replace RequestMatcher. Matcher modules\n// should implement both interfaces, and once all modules have\n// been updated to use RequestMatcherWithError, the RequestMatcher\n// interface may eventually be dropped.\ntype RequestMatcherWithError interface {\n\tMatchWithError(*http.Request) (bool, error)\n}\n\n// Handler is like http.Handler except ServeHTTP may return an error.\n//\n// If any handler encounters an error, it should be returned for proper\n// handling. Return values should be propagated down the middleware chain\n// by returning it unchanged. Returned errors should not be re-wrapped\n// if they are already HandlerError values.\ntype Handler interface {\n\tServeHTTP(http.ResponseWriter, *http.Request) error\n}\n\n// HandlerFunc is a convenience type like http.HandlerFunc.\ntype HandlerFunc func(http.ResponseWriter, *http.Request) error\n\n// ServeHTTP implements the Handler interface.\nfunc (f HandlerFunc) ServeHTTP(w http.ResponseWriter, r *http.Request) error {\n\treturn f(w, r)\n}\n\n// Middleware chains one Handler to the next by being passed\n// the next Handler in the chain.\ntype Middleware func(Handler) Handler\n\n// MiddlewareHandler is like Handler except it takes as a third\n// argument the next handler in the chain. The next handler will\n// never be nil, but may be a no-op handler if this is the last\n// handler in the chain. Handlers which act as middleware should\n// call the next handler's ServeHTTP method so as to propagate\n// the request down the chain properly. Handlers which act as\n// responders (content origins) need not invoke the next handler,\n// since the last handler in the chain should be the first to\n// write the response.\ntype MiddlewareHandler interface {\n\tServeHTTP(http.ResponseWriter, *http.Request, Handler) error\n}\n\n// emptyHandler is used as a no-op handler.\nvar emptyHandler Handler = HandlerFunc(func(_ http.ResponseWriter, req *http.Request) error {\n\tSetVar(req.Context(), \"unhandled\", true)\n\treturn nil\n})\n\n// An implicit suffix middleware that, if reached, sets the StatusCode to the\n// error stored in the ErrorCtxKey. This is to prevent situations where the\n// Error chain does not actually handle the error (for instance, it matches only\n// on some errors). See #3053\nvar errorEmptyHandler Handler = HandlerFunc(func(w http.ResponseWriter, r *http.Request) error {\n\thttpError := r.Context().Value(ErrorCtxKey)\n\tif handlerError, ok := httpError.(HandlerError); ok {\n\t\tw.WriteHeader(handlerError.StatusCode)\n\t} else {\n\t\tw.WriteHeader(http.StatusInternalServerError)\n\t}\n\treturn nil\n})\n\n// ResponseHandler pairs a response matcher with custom handling\n// logic. Either the status code can be changed to something else\n// while using the original response body, or, if a status code\n// is not set, it can execute a custom route list; this is useful\n// for executing handler routes based on the properties of an HTTP\n// response that has not been written out to the client yet.\n//\n// To use this type, provision it at module load time, then when\n// ready to use, match the response against its matcher; if it\n// matches (or doesn't have a matcher), change the status code on\n// the response if configured; otherwise invoke the routes by\n// calling `rh.Routes.Compile(next).ServeHTTP(rw, req)` (or similar).\ntype ResponseHandler struct {\n\t// The response matcher for this handler. If empty/nil,\n\t// it always matches.\n\tMatch *ResponseMatcher `json:\"match,omitempty\"`\n\n\t// To write the original response body but with a different\n\t// status code, set this field to the desired status code.\n\t// If set, this takes priority over routes.\n\tStatusCode WeakString `json:\"status_code,omitempty\"`\n\n\t// The list of HTTP routes to execute if no status code is\n\t// specified. If evaluated, the original response body\n\t// will not be written.\n\tRoutes RouteList `json:\"routes,omitempty\"`\n}\n\n// Provision sets up the routes in rh.\nfunc (rh *ResponseHandler) Provision(ctx caddy.Context) error {\n\tif rh.Routes != nil {\n\t\terr := rh.Routes.Provision(ctx)\n\t\tif err != nil {\n\t\t\treturn err\n\t\t}\n\t}\n\treturn nil\n}\n\n// WeakString is a type that unmarshals any JSON value\n// as a string literal, with the following exceptions:\n//\n// 1. actual string values are decoded as strings; and\n// 2. null is decoded as empty string;\n//\n// and provides methods for getting the value as various\n// primitive types. However, using this type removes any\n// type safety as far as deserializing JSON is concerned.\ntype WeakString string\n\n// UnmarshalJSON satisfies json.Unmarshaler according to\n// this type's documentation.\nfunc (ws *WeakString) UnmarshalJSON(b []byte) error {\n\tif len(b) == 0 {\n\t\treturn io.EOF\n\t}\n\tif b[0] == byte('\"') && b[len(b)-1] == byte('\"') {\n\t\tvar s string\n\t\terr := json.Unmarshal(b, &s)\n\t\tif err != nil {\n\t\t\treturn err\n\t\t}\n\t\t*ws = WeakString(s)\n\t\treturn nil\n\t}\n\tif bytes.Equal(b, []byte(\"null\")) {\n\t\treturn nil\n\t}\n\t*ws = WeakString(b)\n\treturn nil\n}\n\n// MarshalJSON marshals was a boolean if true or false,\n// a number if an integer, or a string otherwise.\nfunc (ws WeakString) MarshalJSON() ([]byte, error) {\n\tif ws == \"true\" {\n\t\treturn []byte(\"true\"), nil\n\t}\n\tif ws == \"false\" {\n\t\treturn []byte(\"false\"), nil\n\t}\n\tif num, err := strconv.Atoi(string(ws)); err == nil {\n\t\treturn json.Marshal(num)\n\t}\n\treturn json.Marshal(string(ws))\n}\n\n// Int returns ws as an integer. If ws is not an\n// integer, 0 is returned.\nfunc (ws WeakString) Int() int {\n\tnum, _ := strconv.Atoi(string(ws))\n\treturn num\n}\n\n// Float64 returns ws as a float64. If ws is not a\n// float value, the zero value is returned.\nfunc (ws WeakString) Float64() float64 {\n\tnum, _ := strconv.ParseFloat(string(ws), 64)\n\treturn num\n}\n\n// Bool returns ws as a boolean. If ws is not a\n// boolean, false is returned.\nfunc (ws WeakString) Bool() bool {\n\treturn string(ws) == \"true\"\n}\n\n// String returns ws as a string.\nfunc (ws WeakString) String() string {\n\treturn string(ws)\n}\n\n// StatusCodeMatches returns true if a real HTTP status code matches\n// the configured status code, which may be either a real HTTP status\n// code or an integer representing a class of codes (e.g. 4 for all\n// 4xx statuses).\nfunc StatusCodeMatches(actual, configured int) bool {\n\tif actual == configured {\n\t\treturn true\n\t}\n\tif configured < 100 &&\n\t\tactual >= configured*100 &&\n\t\tactual < (configured+1)*100 {\n\t\treturn true\n\t}\n\treturn false\n}\n\n// SanitizedPathJoin performs filepath.Join(root, reqPath) that\n// is safe against directory traversal attacks. It uses logic\n// similar to that in the Go standard library, specifically\n// in the implementation of http.Dir. The root is assumed to\n// be a trusted path, but reqPath is not; and the output will\n// never be outside of root. The resulting path can be used\n// with the local file system. If root is empty, the current\n// directory is assumed. If the cleaned request path is deemed\n// not local according to lexical processing (i.e. ignoring links),\n// it will be rejected as unsafe and only the root will be returned.\nfunc SanitizedPathJoin(root, reqPath string) string {\n\tif root == \"\" {\n\t\troot = \".\"\n\t}\n\n\trelPath := path.Clean(\"/\" + reqPath)[1:] // clean path and trim the leading /\n\tif relPath != \"\" && !filepath.IsLocal(relPath) {\n\t\t// path is unsafe (see https://github.com/golang/go/issues/56336#issuecomment-1416214885)\n\t\treturn root\n\t}\n\n\tpath := filepath.Join(root, filepath.FromSlash(relPath))\n\n\t// filepath.Join also cleans the path, and cleaning strips\n\t// the trailing slash, so we need to re-add it afterwards.\n\t// if the length is 1, then it's a path to the root,\n\t// and that should return \".\", so we don't append the separator.\n\tif strings.HasSuffix(reqPath, \"/\") && len(reqPath) > 1 {\n\t\tpath += separator\n\t}\n\n\treturn path\n}\n\n// CleanPath cleans path p according to path.Clean(), but only\n// merges repeated slashes if collapseSlashes is true, and always\n// preserves trailing slashes.\nfunc CleanPath(p string, collapseSlashes bool) string {\n\tif collapseSlashes {\n\t\treturn cleanPath(p)\n\t}\n\n\t// insert an invalid/impossible URI character into each two consecutive\n\t// slashes to expand empty path segments; then clean the path as usual,\n\t// and then remove the remaining temporary characters.\n\tconst tmpCh = 0xff\n\tvar sb strings.Builder\n\tfor i, ch := range p {\n\t\tif ch == '/' && i > 0 && p[i-1] == '/' {\n\t\t\tsb.WriteByte(tmpCh)\n\t\t}\n\t\tsb.WriteRune(ch)\n\t}\n\thalfCleaned := cleanPath(sb.String())\n\thalfCleaned = strings.ReplaceAll(halfCleaned, string([]byte{tmpCh}), \"\")\n\n\treturn halfCleaned\n}\n\n// cleanPath does path.Clean(p) but preserves any trailing slash.\nfunc cleanPath(p string) string {\n\tcleaned := path.Clean(p)\n\tif cleaned != \"/\" && strings.HasSuffix(p, \"/\") {\n\t\tcleaned = cleaned + \"/\"\n\t}\n\treturn cleaned\n}\n\n// tlsPlaceholderWrapper is a no-op listener wrapper that marks\n// where the TLS listener should be in a chain of listener wrappers.\n// It should only be used if another listener wrapper must be placed\n// in front of the TLS handshake.\ntype tlsPlaceholderWrapper struct{}\n\nfunc (tlsPlaceholderWrapper) CaddyModule() caddy.ModuleInfo {\n\treturn caddy.ModuleInfo{\n\t\tID:  \"caddy.listeners.tls\",\n\t\tNew: func() caddy.Module { return new(tlsPlaceholderWrapper) },\n\t}\n}\n\nfunc (tlsPlaceholderWrapper) WrapListener(ln net.Listener) net.Listener { return ln }\n\nfunc (tlsPlaceholderWrapper) UnmarshalCaddyfile(d *caddyfile.Dispenser) error { return nil }\n\nconst (\n\t// DefaultHTTPPort is the default port for HTTP.\n\tDefaultHTTPPort = 80\n\n\t// DefaultHTTPSPort is the default port for HTTPS.\n\tDefaultHTTPSPort = 443\n)\n\nconst separator = string(filepath.Separator)\n\n// Interface guard\nvar (\n\t_ caddy.ListenerWrapper = (*tlsPlaceholderWrapper)(nil)\n\t_ caddyfile.Unmarshaler = (*tlsPlaceholderWrapper)(nil)\n)\n"
+   }
+  ],
+  "detail": "{\"case\": {\"chain_step\": 0, \"families\": [], \"family\": \"H6\", \"history_index\": 0, \"history_seed\": 2001, \"mode\": \"fresh\", \"note\": \"dep-disk round trip on modules/caddyhttp/caddyhttp.go: insert 'x' on line 196\", \"seed\": 2, \"timing\": \"settled\"}, \"note\": \"H6: dep-disk round trip on modules/caddyhttp/caddyhttp.go: insert 'x' on line 196; flake 0/3 [r1:SCr r2:SCr r3:SCr] in 174s\", \"shape\": \"completion:extra\"}",
+  "reproduced": "0/3",
+  "reduced_ops": [],
+  "signature": "gopls|r1_history|completion:extra",
+  "run_id": "1626bce0b415"
+ },
+ "replay_logs": [],
+ "project_files": {},
+ "incomplete": false
+}

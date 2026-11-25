@@ -1,0 +1,376 @@
+{
+ "format": 1,
+ "campaign": "bench_v1",
+ "vid": "85b8f9190a22-v00",
+ "run_id": "85b8f9190a22",
+ "oracle": "r5_transforms",
+ "server": {
+  "kind": "gopls",
+  "version": "v0.18.1"
+ },
+ "project": {
+  "name": "gopls-73564",
+  "source": "dir",
+  "ref": "data/lsp_bench/cases/gopls-73564/project",
+  "commit": "",
+  "language": "go"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 180.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 6,
+  "targets": [
+   {
+    "path": "main.go",
+    "positions": [
+     [
+      8,
+      14
+     ],
+     [
+      15,
+      9
+     ],
+     [
+      19,
+      10
+     ],
+     [
+      19,
+      18
+     ],
+     [
+      23,
+      10
+     ],
+     [
+      23,
+      19
+     ],
+     [
+      24,
+      8
+     ],
+     [
+      28,
+      21
+     ],
+     [
+      29,
+      12
+     ],
+     [
+      30,
+      21
+     ],
+     [
+      32,
+      22
+     ],
+     [
+      38,
+      2
+     ],
+     [
+      41,
+      10
+     ],
+     [
+      49,
+      2
+     ],
+     [
+      49,
+      12
+     ],
+     [
+      50,
+      3
+     ],
+     [
+      50,
+      66
+     ],
+     [
+      50,
+      74
+     ],
+     [
+      52,
+      15
+     ],
+     [
+      55,
+      19
+     ]
+    ],
+    "ends": [
+     [
+      8,
+      17
+     ],
+     [
+      15,
+      11
+     ],
+     [
+      19,
+      13
+     ],
+     [
+      19,
+      22
+     ],
+     [
+      23,
+      13
+     ],
+     [
+      23,
+      24
+     ],
+     [
+      24,
+      9
+     ],
+     [
+      28,
+      24
+     ],
+     [
+      29,
+      15
+     ],
+     [
+      30,
+      24
+     ],
+     [
+      32,
+      25
+     ],
+     [
+      38,
+      3
+     ],
+     [
+      41,
+      13
+     ],
+     [
+      49,
+      3
+     ],
+     [
+      49,
+      13
+     ],
+     [
+      50,
+      5
+     ],
+     [
+      50,
+      70
+     ],
+     [
+      50,
+      75
+     ],
+     [
+      52,
+      20
+     ],
+     [
+      55,
+      24
+     ]
+    ],
+    "names": [
+     "string",
+     "int",
+     "Fruit",
+     "GetName",
+     "Fruit",
+     "GetWeight",
+     "f",
+     "Fruit",
+     "Fruit",
+     "Weight",
+     "Weight",
+     "cb",
+     "fruit",
+     "cb",
+     "f",
+     "fmt",
+     "GetName",
+     "f",
+     "GetWeight",
+     "GetFruits"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "codeAction",
+  "path": "main.go",
+  "line": 8,
+  "character": 14,
+  "extra": "pos"
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "main.go"
+  },
+  {
+   "kind": "change",
+   "path": "main.go",
+   "start": [
+    5,
+    0
+   ],
+   "end": [
+    5,
+    0
+   ],
+   "text": "\n\n\n"
+  }
+ ],
+ "case": {
+  "mapped_key": [
+   "codeAction",
+   "main.go",
+   11,
+   14,
+   "pos"
+  ],
+  "transform": {
+   "back": {
+    "col": 0,
+    "eof": [],
+    "line": -1,
+    "n": 0,
+    "path": "main.go",
+    "w": 0
+   },
+   "edits": [
+    [
+     5,
+     0,
+     5,
+     0,
+     "\n\n\n"
+    ]
+   ],
+   "kind": "T1",
+   "path": "main.go",
+   "shift": {
+    "col": 0,
+    "eof": [],
+    "line": 5,
+    "n": 3,
+    "path": "main.go",
+    "w": 0
+   }
+  }
+ },
+ "shape": "codeAction:extra",
+ "signature": "gopls|r5_transforms|codeAction:extra",
+ "expected": [
+  [
+   "Browse gopls feature documentation",
+   "gopls.doc.features"
+  ],
+  [
+   "Show compiler optimization details for \"ws\"",
+   "source.toggleCompilerOptDetails"
+  ]
+ ],
+ "actual": [
+  [
+   "Browse gopls feature documentation",
+   "gopls.doc.features"
+  ],
+  [
+   "Organize Imports",
+   "source.organizeImports"
+  ],
+  [
+   "Show compiler optimization details for \"ws\"",
+   "source.toggleCompilerOptDetails"
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "T1 main.go: 1 edit(s), first [5, 0, 5, 0]; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 38s",
+ "violation": {
+  "oracle": "r5_transforms",
+  "server": "gopls-v0.18.1",
+  "project": "gopls-73564",
+  "key": {
+   "method": "codeAction",
+   "path": "main.go",
+   "line": 8,
+   "character": 14,
+   "extra": "pos"
+  },
+  "expected": [
+   [
+    "Browse gopls feature documentation",
+    "gopls.doc.features"
+   ],
+   [
+    "Show compiler optimization details for \"ws\"",
+    "source.toggleCompilerOptDetails"
+   ]
+  ],
+  "actual": [
+   [
+    "Browse gopls feature documentation",
+    "gopls.doc.features"
+   ],
+   [
+    "Organize Imports",
+    "source.organizeImports"
+   ],
+   [
+    "Show compiler optimization details for \"ws\"",
+    "source.toggleCompilerOptDetails"
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "main.go"
+   },
+   {
+    "kind": "change",
+    "path": "main.go",
+    "start": [
+     5,
+     0
+    ],
+    "end": [
+     5,
+     0
+    ],
+    "text": "\n\n\n"
+   }
+  ],
+  "detail": "{\"case\": {\"mapped_key\": [\"codeAction\", \"main.go\", 11, 14, \"pos\"], \"transform\": {\"back\": {\"col\": 0, \"eof\": [], \"line\": -1, \"n\": 0, \"path\": \"main.go\", \"w\": 0}, \"edits\": [[5, 0, 5, 0, \"\\n\\n\\n\"]], \"kind\": \"T1\", \"path\": \"main.go\", \"shift\": {\"col\": 0, \"eof\": [], \"line\": 5, \"n\": 3, \"path\": \"main.go\", \"w\": 0}}}, \"note\": \"T1 main.go: 1 edit(s), first [5, 0, 5, 0]; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 38s\", \"shape\": \"codeAction:extra\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "gopls|r5_transforms|codeAction:extra",
+  "run_id": "85b8f9190a22"
+ },
+ "replay_logs": [
+  "logs/gopls-v0.18.1-85b8f9190a22-r5-replay-baseline-20260925-082844-98db4c.jsonl.gz",
+  "logs/gopls-v0.18.1-85b8f9190a22-r5-replay-case-20260925-082853-574936.jsonl.gz",
+  "logs/gopls-v0.18.1-85b8f9190a22-r5-replay-control-20260925-082848-638d28.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

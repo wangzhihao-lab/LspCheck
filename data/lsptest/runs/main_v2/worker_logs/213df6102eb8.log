@@ -1,0 +1,3 @@
+2026-11-18 06:05:53,251 INFO campaign_run run 213df6102eb8: r4_edits on ts6 6.0.3, pear-devs/pear-desktop@3ff0a86231fe seed 1 settled, targets ['src/plugins/album-actions/templates/like-button.tsx', 'src/plugins/sponsorblock/index.ts', 'src/plugins/synced-lyrics/renderer/components/SyncedLine.tsx']
+2026-11-18 06:08:25,000 INFO campaign_run run 213df6102eb8: 0 candidate(s) in 152s; confirming
+2026-11-18 06:08:25,000 INFO campaign_run run 213df6102eb8 finished: ok, 0 confirmed of 0 candidate(s), 152s

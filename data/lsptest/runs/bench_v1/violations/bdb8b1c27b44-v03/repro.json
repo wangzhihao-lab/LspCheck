@@ -1,0 +1,296 @@
+{
+ "format": 1,
+ "campaign": "bench_v1",
+ "vid": "bdb8b1c27b44-v03",
+ "run_id": "bdb8b1c27b44",
+ "oracle": "r5_transforms",
+ "server": {
+  "kind": "gopls",
+  "version": "v0.8.3"
+ },
+ "project": {
+  "name": "gopls-52500",
+  "source": "dir",
+  "ref": "data/lsp_bench/cases/gopls-52500/project",
+  "commit": "",
+  "language": "go"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 180.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 6,
+  "targets": [
+   {
+    "path": "main_test.go",
+    "positions": [
+     [
+      0,
+      12
+     ],
+     [
+      2,
+      8
+     ],
+     [
+      4,
+      10
+     ],
+     [
+      4,
+      23
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      17
+     ],
+     [
+      2,
+      11
+     ],
+     [
+      4,
+      15
+     ],
+     [
+      4,
+      28
+     ]
+    ],
+    "names": [
+     "main_test",
+     "Server",
+     "mainConst",
+     "otherConst"
+    ]
+   },
+   {
+    "path": "other_test.go",
+    "positions": [
+     [
+      0,
+      12
+     ],
+     [
+      2,
+      11
+     ],
+     [
+      4,
+      9
+     ],
+     [
+      4,
+      15
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      17
+     ],
+     [
+      2,
+      16
+     ],
+     [
+      4,
+      12
+     ],
+     [
+      4,
+      17
+     ]
+    ],
+    "names": [
+     "main_test",
+     "otherConst",
+     "Server",
+     "Foo"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "references",
+  "path": "main_test.go",
+  "line": 4,
+  "character": 23,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "main_test.go"
+  },
+  {
+   "kind": "change",
+   "path": "main_test.go",
+   "start": [
+    4,
+    28
+   ],
+   "end": [
+    5,
+    0
+   ]
+  }
+ ],
+ "case": {
+  "mapped_key": [
+   "references",
+   "main_test.go",
+   4,
+   23,
+   ""
+  ],
+  "transform": {
+   "back": {
+    "col": 0,
+    "eof": [],
+    "line": -1,
+    "n": 0,
+    "path": "main_test.go",
+    "w": 0
+   },
+   "edits": [
+    [
+     4,
+     28,
+     5,
+     0,
+     ""
+    ]
+   ],
+   "kind": "T5",
+   "path": "main_test.go",
+   "shift": {
+    "col": 0,
+    "eof": [
+     5,
+     0,
+     4,
+     28
+    ],
+    "line": -1,
+    "n": 0,
+    "path": "main_test.go",
+    "w": 0
+   }
+  }
+ },
+ "shape": "references:changed",
+ "signature": "gopls|r5_transforms|references:changed",
+ "expected": [
+  [
+   "main_test.go",
+   4,
+   18,
+   4,
+   28
+  ],
+  [
+   "other_test.go",
+   2,
+   6,
+   2,
+   16
+  ]
+ ],
+ "actual": [
+  [
+   "main_test.go",
+   4,
+   18,
+   5,
+   0
+  ],
+  [
+   "other_test.go",
+   2,
+   6,
+   2,
+   16
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "T5 main_test.go: 1 edit(s), first [4, 28, 5, 0]; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 96s",
+ "violation": {
+  "oracle": "r5_transforms",
+  "server": "gopls-v0.8.3",
+  "project": "gopls-52500",
+  "key": {
+   "method": "references",
+   "path": "main_test.go",
+   "line": 4,
+   "character": 23,
+   "extra": ""
+  },
+  "expected": [
+   [
+    "main_test.go",
+    4,
+    18,
+    4,
+    28
+   ],
+   [
+    "other_test.go",
+    2,
+    6,
+    2,
+    16
+   ]
+  ],
+  "actual": [
+   [
+    "main_test.go",
+    4,
+    18,
+    5,
+    0
+   ],
+   [
+    "other_test.go",
+    2,
+    6,
+    2,
+    16
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "main_test.go"
+   },
+   {
+    "kind": "change",
+    "path": "main_test.go",
+    "start": [
+     4,
+     28
+    ],
+    "end": [
+     5,
+     0
+    ]
+   }
+  ],
+  "detail": "{\"case\": {\"mapped_key\": [\"references\", \"main_test.go\", 4, 23, \"\"], \"transform\": {\"back\": {\"col\": 0, \"eof\": [], \"line\": -1, \"n\": 0, \"path\": \"main_test.go\", \"w\": 0}, \"edits\": [[4, 28, 5, 0, \"\"]], \"kind\": \"T5\", \"path\": \"main_test.go\", \"shift\": {\"col\": 0, \"eof\": [5, 0, 4, 28], \"line\": -1, \"n\": 0, \"path\": \"main_test.go\", \"w\": 0}}}, \"note\": \"T5 main_test.go: 1 edit(s), first [4, 28, 5, 0]; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 96s\", \"shape\": \"references:changed\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "gopls|r5_transforms|references:changed",
+  "run_id": "bdb8b1c27b44"
+ },
+ "replay_logs": [
+  "logs/gopls-v0.8.3-bdb8b1c27b44-r5-replay-baseline-20260925-121435-88d39c.jsonl.gz",
+  "logs/gopls-v0.8.3-bdb8b1c27b44-r5-replay-case-20260925-121457-200ce2.jsonl.gz",
+  "logs/gopls-v0.8.3-bdb8b1c27b44-r5-replay-control-20260925-121446-8f8038.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

@@ -1,0 +1,6 @@
+2026-11-18 03:29:49,332 INFO campaign_run run a6ea07767325: r3_routes on pyright 1.1.414, ultralytics/yolov5@402e17ddf820 seed 1 settled, targets ['detect.py', 'utils/segment/dataloaders.py', 'utils/segment/general.py']
+2026-11-18 03:30:41,483 INFO campaign_run run a6ea07767325: 1 candidate(s) in 52s; confirming
+2026-11-18 03:30:51,322 INFO flake replay 1/3 of pyright|r3_routes|highlightVsReferences:gained: settled=True control_stable=True reproduced=True (9.8s)
+2026-11-18 03:31:02,880 INFO flake replay 2/3 of pyright|r3_routes|highlightVsReferences:gained: settled=True control_stable=True reproduced=True (11.6s)
+2026-11-18 03:31:24,534 INFO flake replay 3/3 of pyright|r3_routes|highlightVsReferences:gained: settled=True control_stable=True reproduced=True (21.7s)
+2026-11-18 03:31:24,546 INFO campaign_run run a6ea07767325 finished: ok, 1 confirmed of 1 candidate(s), 95s

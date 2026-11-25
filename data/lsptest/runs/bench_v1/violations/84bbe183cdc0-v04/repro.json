@@ -1,0 +1,776 @@
+{
+ "format": 1,
+ "campaign": "bench_v1",
+ "vid": "84bbe183cdc0-v04",
+ "run_id": "84bbe183cdc0",
+ "oracle": "r1_history",
+ "server": {
+  "kind": "rust-analyzer",
+  "version": "2024-09-30"
+ },
+ "project": {
+  "name": "rust-analyzer-18144",
+  "source": "dir",
+  "ref": "data/lsp_bench/cases/rust-analyzer-18144/project",
+  "commit": "",
+  "language": "rust"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "race0",
+  "settle_timeout_s": 240.0,
+  "request_timeout_s": 60.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "src/lib.rs",
+    "positions": [
+     [
+      0,
+      4
+     ],
+     [
+      1,
+      11
+     ],
+     [
+      3,
+      4
+     ],
+     [
+      3,
+      12
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      7
+     ],
+     [
+      1,
+      18
+     ],
+     [
+      3,
+      6
+     ],
+     [
+      3,
+      18
+     ]
+    ],
+    "names": [
+     "allow",
+     "non_snake_case",
+     "foo",
+     "_HelloWorld"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "documentHighlight",
+  "path": "src/lib.rs",
+  "line": 3,
+  "character": 4,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "src/lib.rs"
+  },
+  {
+   "kind": "fs_rename",
+   "path": "src/lib.rs",
+   "new_path": "src/lib_rt.rs"
+  },
+  {
+   "kind": "fs_rename",
+   "path": "src/lib_rt.rs",
+   "new_path": "src/lib.rs"
+  },
+  {
+   "kind": "change",
+   "path": "src/lib.rs",
+   "start": [
+    0,
+    2
+   ],
+   "end": [
+    0,
+    7
+   ]
+  },
+  {
+   "kind": "close",
+   "path": "src/lib.rs"
+  },
+  {
+   "kind": "open",
+   "path": "src/lib.rs"
+  },
+  {
+   "kind": "change",
+   "path": "src/lib.rs",
+   "start": [
+    3,
+    7
+   ],
+   "end": [
+    3,
+    18
+   ],
+   "text": "zz"
+  },
+  {
+   "kind": "change",
+   "path": "src/lib.rs",
+   "start": [
+    3,
+    7
+   ],
+   "end": [
+    3,
+    9
+   ],
+   "text": "_HelloWorld"
+  },
+  {
+   "kind": "request",
+   "path": "src/lib.rs",
+   "start": [
+    0,
+    4
+   ],
+   "text": "definition"
+  },
+  {
+   "kind": "request",
+   "path": "src/lib.rs",
+   "start": [
+    3,
+    12
+   ],
+   "text": "definition"
+  },
+  {
+   "kind": "request",
+   "path": "src/lib.rs",
+   "start": [
+    3,
+    18
+   ],
+   "text": "hover"
+  },
+  {
+   "kind": "request",
+   "path": "src/lib.rs",
+   "start": [
+    1,
+    18
+   ],
+   "text": "documentHighlight"
+  },
+  {
+   "kind": "request",
+   "path": "src/lib.rs",
+   "start": [
+    0,
+    7
+   ],
+   "text": "hover"
+  },
+  {
+   "kind": "request",
+   "path": "src/lib.rs",
+   "start": [
+    1,
+    11
+   ],
+   "text": "signatureHelp"
+  },
+  {
+   "kind": "request",
+   "path": "src/lib.rs",
+   "start": [
+    3,
+    4
+   ],
+   "text": "documentHighlight"
+  },
+  {
+   "kind": "fs_write",
+   "path": "Cargo.toml",
+   "text": "[package]\nname = \"issue18144\"\nname = \"issue18144\"\nversion = \"0.1.0\"\nedition = \"2021\"\n"
+  },
+  {
+   "kind": "change",
+   "path": "src/lib.rs",
+   "start": [
+    3,
+    8
+   ],
+   "end": [
+    3,
+    15
+   ]
+  },
+  {
+   "kind": "save",
+   "path": "src/lib.rs"
+  },
+  {
+   "kind": "change",
+   "path": "src/lib.rs",
+   "start": [
+    3,
+    8
+   ],
+   "end": [
+    3,
+    8
+   ],
+   "text": "HelloWo"
+  },
+  {
+   "kind": "save",
+   "path": "src/lib.rs"
+  },
+  {
+   "kind": "fs_write",
+   "path": "Cargo.toml",
+   "text": "[package]\nname = \"issue18144\"\nversion = \"0.1.0\"\nedition = \"2021\"\n"
+  },
+  {
+   "kind": "fs_write",
+   "path": "Cargo.toml",
+   "text": "[package]\nname = \"issue18144\"\nversion = \"0.1.0\"\nedition = \"2021\"\nedition = \"2021\"\n"
+  },
+  {
+   "kind": "fs_write",
+   "path": "Cargo.toml",
+   "text": "[package]\nname = \"issue18144\"\nversion = \"0.1.0\"\nedition = \"2021\"\n"
+  },
+  {
+   "kind": "change",
+   "path": "src/lib.rs",
+   "start": [
+    3,
+    0
+   ],
+   "end": [
+    4,
+    0
+   ]
+  },
+  {
+   "kind": "save",
+   "path": "src/lib.rs"
+  },
+  {
+   "kind": "change",
+   "path": "src/lib.rs",
+   "start": [
+    3,
+    0
+   ],
+   "end": [
+    3,
+    0
+   ],
+   "text": "fn foo(_HelloW"
+  },
+  {
+   "kind": "change",
+   "path": "src/lib.rs",
+   "start": [
+    3,
+    14
+   ],
+   "end": [
+    3,
+    14
+   ],
+   "text": "orld: ()) {}\n"
+  },
+  {
+   "kind": "save",
+   "path": "src/lib.rs"
+  },
+  {
+   "kind": "set_config",
+   "settings": {
+    "rust-analyzer": {
+     "procMacro": {
+      "enable": false
+     }
+    }
+   }
+  },
+  {
+   "kind": "set_config",
+   "settings": {
+    "rust-analyzer": {
+     "procMacro": {
+      "enable": true
+     }
+    }
+   }
+  },
+  {
+   "kind": "change",
+   "path": "src/lib.rs",
+   "start": [
+    0,
+    2
+   ],
+   "end": [
+    0,
+    7
+   ],
+   "text": "zz"
+  },
+  {
+   "kind": "change",
+   "path": "src/lib.rs",
+   "start": [
+    0,
+    2
+   ],
+   "end": [
+    0,
+    4
+   ],
+   "text": "allow"
+  },
+  {
+   "kind": "fs_write",
+   "path": "Cargo.toml",
+   "text": "[package]\nname = \"issue18144\"\nedition = \"2021\"\n"
+  },
+  {
+   "kind": "change",
+   "path": "src/lib.rs",
+   "start": [
+    2,
+    0
+   ],
+   "end": [
+    3,
+    0
+   ]
+  },
+  {
+   "kind": "change",
+   "path": "src/lib.rs",
+   "start": [
+    2,
+    0
+   ],
+   "end": [
+    2,
+    0
+   ],
+   "text": ")]\n"
+  },
+  {
+   "kind": "fs_write",
+   "path": "Cargo.toml",
+   "text": "[package]\nname = \"issue18144\"\nversion = \"0.1.0\"\nedition = \"2021\"\n"
+  },
+  {
+   "kind": "fs_rename",
+   "path": "src/lib.rs",
+   "new_path": "src/lib_rt.rs"
+  },
+  {
+   "kind": "fs_rename",
+   "path": "src/lib_rt.rs",
+   "new_path": "src/lib.rs"
+  }
+ ],
+ "case": {
+  "chain_step": 10,
+  "families": [
+   "H5",
+   "H3",
+   "H8",
+   "H9",
+   "H6",
+   "H2",
+   "H4",
+   "H1",
+   "H7",
+   "H5"
+  ],
+  "family": "H5",
+  "history_index": 9,
+  "history_seed": 1010,
+  "mode": "chain",
+  "note": "rename src/lib.rs -> src/lib_rt.rs -> back",
+  "seed": 1,
+  "timing": "race0"
+ },
+ "shape": "documentHighlight:lost",
+ "signature": "rust-analyzer|r1_history|documentHighlight:lost",
+ "expected": [
+  [
+   3,
+   3,
+   3,
+   6,
+   1
+  ]
+ ],
+ "actual": [],
+ "reproduced": "0/3",
+ "note": "H5: rename src/lib.rs -> src/lib_rt.rs -> back; flake 0/3 [r1:SCr r2:SCr r3:SCr] in 148s",
+ "violation": {
+  "oracle": "r1_history",
+  "server": "rust-analyzer-2024-09-30",
+  "project": "rust-analyzer-18144",
+  "key": {
+   "method": "documentHighlight",
+   "path": "src/lib.rs",
+   "line": 3,
+   "character": 4,
+   "extra": ""
+  },
+  "expected": [
+   [
+    3,
+    3,
+    3,
+    6,
+    1
+   ]
+  ],
+  "actual": [],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "src/lib.rs"
+   },
+   {
+    "kind": "fs_rename",
+    "path": "src/lib.rs",
+    "new_path": "src/lib_rt.rs"
+   },
+   {
+    "kind": "fs_rename",
+    "path": "src/lib_rt.rs",
+    "new_path": "src/lib.rs"
+   },
+   {
+    "kind": "change",
+    "path": "src/lib.rs",
+    "start": [
+     0,
+     2
+    ],
+    "end": [
+     0,
+     7
+    ]
+   },
+   {
+    "kind": "close",
+    "path": "src/lib.rs"
+   },
+   {
+    "kind": "open",
+    "path": "src/lib.rs"
+   },
+   {
+    "kind": "change",
+    "path": "src/lib.rs",
+    "start": [
+     3,
+     7
+    ],
+    "end": [
+     3,
+     18
+    ],
+    "text": "zz"
+   },
+   {
+    "kind": "change",
+    "path": "src/lib.rs",
+    "start": [
+     3,
+     7
+    ],
+    "end": [
+     3,
+     9
+    ],
+    "text": "_HelloWorld"
+   },
+   {
+    "kind": "request",
+    "path": "src/lib.rs",
+    "start": [
+     0,
+     4
+    ],
+    "text": "definition"
+   },
+   {
+    "kind": "request",
+    "path": "src/lib.rs",
+    "start": [
+     3,
+     12
+    ],
+    "text": "definition"
+   },
+   {
+    "kind": "request",
+    "path": "src/lib.rs",
+    "start": [
+     3,
+     18
+    ],
+    "text": "hover"
+   },
+   {
+    "kind": "request",
+    "path": "src/lib.rs",
+    "start": [
+     1,
+     18
+    ],
+    "text": "documentHighlight"
+   },
+   {
+    "kind": "request",
+    "path": "src/lib.rs",
+    "start": [
+     0,
+     7
+    ],
+    "text": "hover"
+   },
+   {
+    "kind": "request",
+    "path": "src/lib.rs",
+    "start": [
+     1,
+     11
+    ],
+    "text": "signatureHelp"
+   },
+   {
+    "kind": "request",
+    "path": "src/lib.rs",
+    "start": [
+     3,
+     4
+    ],
+    "text": "documentHighlight"
+   },
+   {
+    "kind": "fs_write",
+    "path": "Cargo.toml",
+    "text": "[package]\nname = \"issue18144\"\nname = \"issue18144\"\nversion = \"0.1.0\"\nedition = \"2021\"\n"
+   },
+   {
+    "kind": "change",
+    "path": "src/lib.rs",
+    "start": [
+     3,
+     8
+    ],
+    "end": [
+     3,
+     15
+    ]
+   },
+   {
+    "kind": "save",
+    "path": "src/lib.rs"
+   },
+   {
+    "kind": "change",
+    "path": "src/lib.rs",
+    "start": [
+     3,
+     8
+    ],
+    "end": [
+     3,
+     8
+    ],
+    "text": "HelloWo"
+   },
+   {
+    "kind": "save",
+    "path": "src/lib.rs"
+   },
+   {
+    "kind": "fs_write",
+    "path": "Cargo.toml",
+    "text": "[package]\nname = \"issue18144\"\nversion = \"0.1.0\"\nedition = \"2021\"\n"
+   },
+   {
+    "kind": "fs_write",
+    "path": "Cargo.toml",
+    "text": "[package]\nname = \"issue18144\"\nversion = \"0.1.0\"\nedition = \"2021\"\nedition = \"2021\"\n"
+   },
+   {
+    "kind": "fs_write",
+    "path": "Cargo.toml",
+    "text": "[package]\nname = \"issue18144\"\nversion = \"0.1.0\"\nedition = \"2021\"\n"
+   },
+   {
+    "kind": "change",
+    "path": "src/lib.rs",
+    "start": [
+     3,
+     0
+    ],
+    "end": [
+     4,
+     0
+    ]
+   },
+   {
+    "kind": "save",
+    "path": "src/lib.rs"
+   },
+   {
+    "kind": "change",
+    "path": "src/lib.rs",
+    "start": [
+     3,
+     0
+    ],
+    "end": [
+     3,
+     0
+    ],
+    "text": "fn foo(_HelloW"
+   },
+   {
+    "kind": "change",
+    "path": "src/lib.rs",
+    "start": [
+     3,
+     14
+    ],
+    "end": [
+     3,
+     14
+    ],
+    "text": "orld: ()) {}\n"
+   },
+   {
+    "kind": "save",
+    "path": "src/lib.rs"
+   },
+   {
+    "kind": "set_config",
+    "settings": {
+     "rust-analyzer": {
+      "procMacro": {
+       "enable": false
+      }
+     }
+    }
+   },
+   {
+    "kind": "set_config",
+    "settings": {
+     "rust-analyzer": {
+      "procMacro": {
+       "enable": true
+      }
+     }
+    }
+   },
+   {
+    "kind": "change",
+    "path": "src/lib.rs",
+    "start": [
+     0,
+     2
+    ],
+    "end": [
+     0,
+     7
+    ],
+    "text": "zz"
+   },
+   {
+    "kind": "change",
+    "path": "src/lib.rs",
+    "start": [
+     0,
+     2
+    ],
+    "end": [
+     0,
+     4
+    ],
+    "text": "allow"
+   },
+   {
+    "kind": "fs_write",
+    "path": "Cargo.toml",
+    "text": "[package]\nname = \"issue18144\"\nedition = \"2021\"\n"
+   },
+   {
+    "kind": "change",
+    "path": "src/lib.rs",
+    "start": [
+     2,
+     0
+    ],
+    "end": [
+     3,
+     0
+    ]
+   },
+   {
+    "kind": "change",
+    "path": "src/lib.rs",
+    "start": [
+     2,
+     0
+    ],
+    "end": [
+     2,
+     0
+    ],
+    "text": ")]\n"
+   },
+   {
+    "kind": "fs_write",
+    "path": "Cargo.toml",
+    "text": "[package]\nname = \"issue18144\"\nversion = \"0.1.0\"\nedition = \"2021\"\n"
+   },
+   {
+    "kind": "fs_rename",
+    "path": "src/lib.rs",
+    "new_path": "src/lib_rt.rs"
+   },
+   {
+    "kind": "fs_rename",
+    "path": "src/lib_rt.rs",
+    "new_path": "src/lib.rs"
+   }
+  ],
+  "detail": "{\"case\": {\"chain_step\": 10, \"families\": [\"H5\", \"H3\", \"H8\", \"H9\", \"H6\", \"H2\", \"H4\", \"H1\", \"H7\", \"H5\"], \"family\": \"H5\", \"history_index\": 9, \"history_seed\": 1010, \"mode\": \"chain\", \"note\": \"rename src/lib.rs -> src/lib_rt.rs -> back\", \"seed\": 1, \"timing\": \"race0\"}, \"note\": \"H5: rename src/lib.rs -> src/lib_rt.rs -> back; flake 0/3 [r1:SCr r2:SCr r3:SCr] in 148s\", \"shape\": \"documentHighlight:lost\"}",
+  "reproduced": "0/3",
+  "reduced_ops": [],
+  "signature": "rust-analyzer|r1_history|documentHighlight:lost",
+  "run_id": "84bbe183cdc0"
+ },
+ "replay_logs": [],
+ "project_files": {},
+ "incomplete": false
+}

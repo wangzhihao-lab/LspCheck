@@ -1,0 +1,3 @@
+2026-11-18 20:46:29,009 INFO campaign_run run 11b6450a537a: r5_transforms on pyright 1.1.414, MemPalace/mempalace@c4d3711ee247 seed 2 settled, targets ['benchmarks/test_ollama_ornith_routine.py', 'mempalace/backends/sqlite_exact.py', 'tests/mcp/test_write_tools.py']
+2026-11-18 20:49:52,437 INFO campaign_run run 11b6450a537a: 0 candidate(s) in 203s; confirming
+2026-11-18 20:49:52,439 INFO campaign_run run 11b6450a537a finished: ok, 0 confirmed of 0 candidate(s), 204s

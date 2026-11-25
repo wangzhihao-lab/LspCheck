@@ -1,0 +1,177 @@
+2026-09-27 17:21:32,175 INFO group ts6-r1-codeaction-key-lost-h5-4f92e2
+2026-09-27 17:23:36,830 INFO   -> not-reproduced 0/3; renames with edits: 6; restored: {'src/index.ts': True}
+2026-09-27 17:23:36,830 INFO group ts6-r1-completion-lost-h5-fa501c
+2026-09-27 17:25:41,152 INFO   -> not-reproduced 0/3; renames with edits: 6; restored: {'src/index.ts': True}
+2026-09-27 17:25:41,152 INFO group ts6-r1-definition-lost-h5-61a0fd
+2026-09-27 17:26:29,869 INFO   -> not-reproduced 0/3; renames with edits: 6; restored: {'src/index.ts': True}
+2026-09-27 17:26:29,869 INFO group ts6-r1-definition-lost-h9-898f29
+2026-09-27 17:32:21,335 INFO   -> not-reproduced 0/3; renames with edits: 6; restored: {'app/store/access.ts': True, 'app/store/mask.ts': True, 'app/store/chat.ts': True, 'app/store/update.ts': True, 'app/store/plugin.ts': True, 'app/store/config.ts': True, 'app/store/prompt.ts': True, 'app/store/sd.ts': True, 'app/store/sync.ts': True}
+2026-09-27 17:32:21,335 INFO group ts6-r1-diagnostics-extra-2305-2339-7006-h5-d5a250
+2026-09-27 17:33:14,273 INFO   -> not-reproduced 0/3; renames with edits: 6; restored: {'src/index.ts': True}
+2026-09-27 17:33:14,273 INFO group ts6-r1-documenthighlight-lost-h5-9b4675
+2026-09-27 17:34:03,009 INFO   -> not-reproduced 0/3; renames with edits: 6; restored: {'src/index.ts': True}
+2026-09-27 17:34:03,009 INFO group ts6-r1-references-lost-h5-d24ca6
+2026-09-27 17:36:08,581 INFO   -> not-reproduced 0/3; renames with edits: 6; restored: {'src/index.ts': True}
+2026-09-27 17:36:08,581 INFO group ts6-r1-references-missing-h5-cc8950
+2026-09-27 17:36:58,145 INFO   -> not-reproduced 0/3; renames with edits: 6; restored: {'src/core/shared/tool-detection.ts': True, 'src/core/shared/index.ts': True}
+2026-09-27 17:36:58,145 INFO group ts6-r1-semantictokens-changed-h5-591c42
+2026-09-27 17:39:02,500 INFO   -> not-reproduced 0/3; renames with edits: 6; restored: {'src/index.ts': True}
+2026-09-27 17:39:02,500 INFO group ts6-r1-semantictokens-missing-h9-d686b3
+2026-09-27 17:41:04,196 INFO   -> not-reproduced 0/3; renames with edits: 6; restored: {'website/plugins/remark-typescript-tools/transpileCodeblocks/compiler.ts': True, 'website/plugins/remark-typescript-tools/transpileCodeblocks/postProcessing.ts': True, 'website/plugins/remark-typescript-tools/index.ts': True}
+2026-09-27 17:41:04,196 INFO group ts6-r1-signaturehelp-changed-h5-db5a5e
+2026-09-27 17:41:52,876 INFO   -> not-reproduced 0/3; renames with edits: 6; restored: {'src/index.ts': True}
+2026-09-27 17:41:52,876 INFO group ts6-r1-signaturehelp-lost-h9-7bd793
+2026-09-27 17:46:20,864 INFO   -> not-reproduced 0/3; renames with edits: 6; restored: {'app/store/access.ts': True, 'app/store/mask.ts': True, 'app/store/chat.ts': True, 'app/store/update.ts': True, 'app/store/plugin.ts': True, 'app/store/config.ts': True, 'app/store/prompt.ts': True, 'app/store/sd.ts': True, 'app/store/sync.ts': True}
+2026-09-27 17:46:20,864 INFO group ts6-r1-typedefinition-lost-h5-712a35
+2026-09-27 17:47:18,615 INFO   -> not-reproduced 0/3; renames with edits: 6; restored: {'src/index.ts': True}
+ts6-r1-codeaction-key-lost-h5-4f92e2: not-reproduced (0/3); renames 6, with edits 6; edited files restored {'src/index.ts': True} 
+ts6-r1-completion-lost-h5-fa501c: not-reproduced (0/3); renames 6, with edits 6; edited files restored {'src/index.ts': True} 
+ts6-r1-definition-lost-h5-61a0fd: not-reproduced (0/3); renames 6, with edits 6; edited files restored {'src/index.ts': True} 
+ts6-r1-definition-lost-h9-898f29: not-reproduced (0/3); renames 6, with edits 6; edited files restored {'app/store/access.ts': True, 'app/store/mask.ts': True, 'app/store/chat.ts': True, 'app/store/update.ts': True, 'app/store/plugin.ts': True, 'app/store/config.ts': True, 'app/store/prompt.ts': True, 'app/store/sd.ts': True, 'app/store/sync.ts': True} 
+ts6-r1-diagnostics-extra-2305-2339-7006-h5-d5a250: not-reproduced (0/3); renames 6, with edits 6; edited files restored {'src/index.ts': True} 
+ts6-r1-documenthighlight-lost-h5-9b4675: not-reproduced (0/3); renames 6, with edits 6; edited files restored {'src/index.ts': True} 
+ts6-r1-references-lost-h5-d24ca6: not-reproduced (0/3); renames 6, with edits 6; edited files restored {'src/index.ts': True} 
+ts6-r1-references-missing-h5-cc8950: not-reproduced (0/3); renames 6, with edits 6; edited files restored {'src/core/shared/tool-detection.ts': True, 'src/core/shared/index.ts': True} 
+ts6-r1-semantictokens-changed-h5-591c42: not-reproduced (0/3); renames 6, with edits 6; edited files restored {'src/index.ts': True} 
+ts6-r1-semantictokens-missing-h9-d686b3: not-reproduced (0/3); renames 6, with edits 6; edited files restored {'website/plugins/remark-typescript-tools/transpileCodeblocks/compiler.ts': True, 'website/plugins/remark-typescript-tools/transpileCodeblocks/postProcessing.ts': True, 'website/plugins/remark-typescript-tools/index.ts': True} 
+ts6-r1-signaturehelp-changed-h5-db5a5e: not-reproduced (0/3); renames 6, with edits 6; edited files restored {'src/index.ts': True} 
+ts6-r1-signaturehelp-lost-h9-7bd793: not-reproduced (0/3); renames 6, with edits 6; edited files restored {'app/store/access.ts': True, 'app/store/mask.ts': True, 'app/store/chat.ts': True, 'app/store/update.ts': True, 'app/store/plugin.ts': True, 'app/store/config.ts': True, 'app/store/prompt.ts': True, 'app/store/sd.ts': True, 'app/store/sync.ts': True} 
+ts6-r1-typedefinition-lost-h5-712a35: not-reproduced (0/3); renames 6, with edits 6; edited files restored {'src/index.ts': True} 
+2026-09-27 17:47:18,689 INFO group ts6-r1-codeaction-key-lost-h5-4f92e2
+2026-09-27 17:48:36,090 INFO   -> reproduced 3/3; renames with edits: 0; restored: {}
+2026-09-27 17:48:36,090 INFO group ts6-r1-completion-lost-h5-fa501c
+2026-09-27 17:49:52,604 INFO   -> reproduced 3/3; renames with edits: 0; restored: {}
+2026-09-27 17:49:52,604 INFO group ts6-r1-definition-lost-h5-61a0fd
+2026-09-27 17:50:40,290 INFO   -> not-reproduced 0/3; renames with edits: 0; restored: {}
+2026-09-27 17:50:40,291 INFO group ts6-r1-definition-lost-h9-898f29
+2026-09-27 17:56:24,102 INFO   -> reproduced 3/3; renames with edits: 0; restored: {}
+2026-09-27 17:56:24,102 INFO group ts6-r1-diagnostics-extra-2305-2339-7006-h5-d5a250
+2026-09-27 17:57:15,467 INFO   -> not-reproduced 0/3; renames with edits: 0; restored: {}
+2026-09-27 17:57:15,467 INFO group ts6-r1-documenthighlight-lost-h5-9b4675
+2026-09-27 17:58:02,543 INFO   -> not-reproduced 0/3; renames with edits: 0; restored: {}
+2026-09-27 17:58:02,543 INFO group ts6-r1-references-lost-h5-d24ca6
+2026-09-27 17:59:19,137 INFO   -> reproduced 3/3; renames with edits: 0; restored: {}
+2026-09-27 17:59:19,137 INFO group ts6-r1-references-missing-h5-cc8950
+2026-09-27 18:00:07,441 INFO   -> not-reproduced 0/3; renames with edits: 0; restored: {}
+2026-09-27 18:00:07,441 INFO group ts6-r1-semantictokens-changed-h5-591c42
+2026-09-27 18:01:23,917 INFO   -> reproduced 3/3; renames with edits: 0; restored: {}
+2026-09-27 18:01:23,917 INFO group ts6-r1-semantictokens-missing-h9-d686b3
+2026-09-27 18:02:30,264 INFO   -> reproduced 3/3; renames with edits: 0; restored: {}
+2026-09-27 18:02:30,264 INFO group ts6-r1-signaturehelp-changed-h5-db5a5e
+2026-09-27 18:03:17,370 INFO   -> not-reproduced 0/3; renames with edits: 0; restored: {}
+2026-09-27 18:03:17,370 INFO group ts6-r1-signaturehelp-lost-h9-7bd793
+2026-09-27 18:06:19,447 INFO   -> reproduced 3/3; renames with edits: 0; restored: {}
+2026-09-27 18:06:19,447 INFO group ts6-r1-typedefinition-lost-h5-712a35
+2026-09-27 18:07:17,150 INFO   -> not-reproduced 0/3; renames with edits: 0; restored: {}
+ts6-r1-codeaction-key-lost-h5-4f92e2: reproduced (3/3); renames 0, with edits 0; edited files restored {} 
+ts6-r1-completion-lost-h5-fa501c: reproduced (3/3); renames 0, with edits 0; edited files restored {} 
+ts6-r1-definition-lost-h5-61a0fd: not-reproduced (0/3); renames 0, with edits 0; edited files restored {} 
+ts6-r1-definition-lost-h9-898f29: reproduced (3/3); renames 0, with edits 0; edited files restored {} 
+ts6-r1-diagnostics-extra-2305-2339-7006-h5-d5a250: not-reproduced (0/3); renames 0, with edits 0; edited files restored {} 
+ts6-r1-documenthighlight-lost-h5-9b4675: not-reproduced (0/3); renames 0, with edits 0; edited files restored {} 
+ts6-r1-references-lost-h5-d24ca6: reproduced (3/3); renames 0, with edits 0; edited files restored {} 
+ts6-r1-references-missing-h5-cc8950: not-reproduced (0/3); renames 0, with edits 0; edited files restored {} 
+ts6-r1-semantictokens-changed-h5-591c42: reproduced (3/3); renames 0, with edits 0; edited files restored {} 
+ts6-r1-semantictokens-missing-h9-d686b3: reproduced (3/3); renames 0, with edits 0; edited files restored {} 
+ts6-r1-signaturehelp-changed-h5-db5a5e: not-reproduced (0/3); renames 0, with edits 0; edited files restored {} 
+ts6-r1-signaturehelp-lost-h9-7bd793: reproduced (3/3); renames 0, with edits 0; edited files restored {} 
+ts6-r1-typedefinition-lost-h5-712a35: not-reproduced (0/3); renames 0, with edits 0; edited files restored {} 
+2026-09-27 18:07:17,239 INFO variant: all seven operations
+2026-09-27 18:07:47,503 INFO   -> reproduced (3/3)
+2026-09-27 18:07:47,503 INFO variant: without the edit of termios_unix.go
+2026-09-27 18:08:15,922 INFO   -> not-reproduced (0/3)
+2026-09-27 18:08:15,922 INFO variant: open, edit and close termios_unix.go only
+2026-09-27 18:08:43,938 INFO   -> reproduced (3/3)
+2026-09-27 18:08:43,938 INFO variant: open and close termios_unix.go only
+2026-09-27 18:09:10,640 INFO   -> not-reproduced (0/3)
+2026-09-27 18:09:10,640 INFO variant: without termios_unix.go
+2026-09-27 18:09:38,045 INFO   -> not-reproduced (0/3)
+2026-09-27 18:09:38,045 INFO variant: open examples/http/main.go only
+2026-09-27 18:10:03,985 INFO   -> not-reproduced (0/3)
+all seven operations: reproduced (3/3) 
+without the edit of termios_unix.go: not-reproduced (0/3) 
+open, edit and close termios_unix.go only: reproduced (3/3) 
+open and close termios_unix.go only: not-reproduced (0/3) 
+without termios_unix.go: not-reproduced (0/3) 
+open examples/http/main.go only: not-reproduced (0/3) 
+2026-09-27 18:10:29,720 INFO ts6-r1-codeaction-key-lost-h5-4f92e2 wait 0s: reproduced
+2026-09-27 18:11:00,304 INFO ts6-r1-codeaction-key-lost-h5-4f92e2 wait 5s: reproduced
+2026-09-27 18:11:55,892 INFO ts6-r1-codeaction-key-lost-h5-4f92e2 wait 30s: reproduced
+2026-09-27 18:13:21,790 INFO ts6-r1-codeaction-key-lost-h5-4f92e2 wait 60s: reproduced
+2026-09-27 18:13:47,543 INFO ts6-r1-completion-lost-h5-fa501c wait 0s: reproduced
+2026-09-27 18:14:18,058 INFO ts6-r1-completion-lost-h5-fa501c wait 5s: reproduced
+2026-09-27 18:15:13,576 INFO ts6-r1-completion-lost-h5-fa501c wait 30s: reproduced
+2026-09-27 18:16:39,105 INFO ts6-r1-completion-lost-h5-fa501c wait 60s: reproduced
+2026-09-27 18:16:55,332 INFO ts6-r1-definition-lost-h5-61a0fd wait 0s: not-reproduced
+2026-09-27 18:17:20,005 INFO ts6-r1-definition-lost-h5-61a0fd wait 5s: not-reproduced
+2026-09-27 18:18:11,929 INFO ts6-r1-definition-lost-h5-61a0fd wait 30s: reproduced
+2026-09-27 18:19:28,709 INFO ts6-r1-definition-lost-h5-61a0fd wait 60s: reproduced
+2026-09-27 18:21:24,461 INFO ts6-r1-definition-lost-h9-898f29 wait 0s: reproduced
+2026-09-27 18:23:24,488 INFO ts6-r1-definition-lost-h9-898f29 wait 5s: reproduced
+2026-09-27 18:25:49,520 INFO ts6-r1-definition-lost-h9-898f29 wait 30s: reproduced
+2026-09-27 18:28:44,338 INFO ts6-r1-definition-lost-h9-898f29 wait 60s: reproduced
+2026-09-27 18:29:02,169 INFO ts6-r1-diagnostics-extra-2305-2339-7006-h5-d5a250 wait 0s: reproduced
+2026-09-27 18:29:24,445 INFO ts6-r1-diagnostics-extra-2305-2339-7006-h5-d5a250 wait 5s: not-reproduced
+2026-09-27 18:30:11,739 INFO ts6-r1-diagnostics-extra-2305-2339-7006-h5-d5a250 wait 30s: not-reproduced
+2026-09-27 18:31:29,003 INFO ts6-r1-diagnostics-extra-2305-2339-7006-h5-d5a250 wait 60s: not-reproduced
+2026-09-27 18:31:45,345 INFO ts6-r1-documenthighlight-lost-h5-9b4675 wait 0s: reproduced
+2026-09-27 18:32:06,622 INFO ts6-r1-documenthighlight-lost-h5-9b4675 wait 5s: not-reproduced
+2026-09-27 18:32:52,917 INFO ts6-r1-documenthighlight-lost-h5-9b4675 wait 30s: reproduced
+2026-09-27 18:34:09,033 INFO ts6-r1-documenthighlight-lost-h5-9b4675 wait 60s: reproduced
+2026-09-27 18:34:34,730 INFO ts6-r1-references-lost-h5-d24ca6 wait 0s: reproduced
+2026-09-27 18:35:05,299 INFO ts6-r1-references-lost-h5-d24ca6 wait 5s: reproduced
+2026-09-27 18:36:00,748 INFO ts6-r1-references-lost-h5-d24ca6 wait 30s: reproduced
+2026-09-27 18:37:26,465 INFO ts6-r1-references-lost-h5-d24ca6 wait 60s: reproduced
+2026-09-27 18:37:43,150 INFO ts6-r1-references-missing-h5-cc8950 wait 0s: reproduced
+2026-09-27 18:38:04,714 INFO ts6-r1-references-missing-h5-cc8950 wait 5s: reproduced
+2026-09-27 18:38:51,204 INFO ts6-r1-references-missing-h5-cc8950 wait 30s: reproduced
+2026-09-27 18:40:07,504 INFO ts6-r1-references-missing-h5-cc8950 wait 60s: reproduced
+2026-09-27 18:40:32,947 INFO ts6-r1-semantictokens-changed-h5-591c42 wait 0s: reproduced
+2026-09-27 18:41:03,604 INFO ts6-r1-semantictokens-changed-h5-591c42 wait 5s: reproduced
+2026-09-27 18:41:59,056 INFO ts6-r1-semantictokens-changed-h5-591c42 wait 30s: reproduced
+2026-09-27 18:43:24,352 INFO ts6-r1-semantictokens-changed-h5-591c42 wait 60s: reproduced
+2026-09-27 18:43:46,822 INFO ts6-r1-semantictokens-missing-h9-d686b3 wait 0s: reproduced
+2026-09-27 18:44:14,125 INFO ts6-r1-semantictokens-missing-h9-d686b3 wait 5s: reproduced
+2026-09-27 18:45:06,648 INFO ts6-r1-semantictokens-missing-h9-d686b3 wait 30s: reproduced
+2026-09-27 18:46:28,826 INFO ts6-r1-semantictokens-missing-h9-d686b3 wait 60s: reproduced
+2026-09-27 18:46:44,708 INFO ts6-r1-signaturehelp-changed-h5-db5a5e wait 0s: reproduced
+2026-09-27 18:47:05,762 INFO ts6-r1-signaturehelp-changed-h5-db5a5e wait 5s: reproduced
+2026-09-27 18:47:51,682 INFO ts6-r1-signaturehelp-changed-h5-db5a5e wait 30s: not-reproduced
+2026-09-27 18:49:07,681 INFO ts6-r1-signaturehelp-changed-h5-db5a5e wait 60s: reproduced
+2026-09-27 18:50:08,868 INFO ts6-r1-signaturehelp-lost-h9-7bd793 wait 0s: reproduced
+2026-09-27 18:51:15,154 INFO ts6-r1-signaturehelp-lost-h9-7bd793 wait 5s: reproduced
+2026-09-27 18:52:41,990 INFO ts6-r1-signaturehelp-lost-h9-7bd793 wait 30s: not-reproduced
+2026-09-27 18:54:39,006 INFO ts6-r1-signaturehelp-lost-h9-7bd793 wait 60s: reproduced
+2026-09-27 18:54:57,955 INFO ts6-r1-typedefinition-lost-h5-712a35 wait 0s: reproduced
+2026-09-27 18:55:21,251 INFO ts6-r1-typedefinition-lost-h5-712a35 wait 5s: reproduced
+2026-09-27 18:56:09,601 INFO ts6-r1-typedefinition-lost-h5-712a35 wait 30s: reproduced
+2026-09-27 18:57:28,116 INFO ts6-r1-typedefinition-lost-h5-712a35 wait 60s: not-reproduced
+2026-09-27 18:57:43,390 INFO ts6-r1-diagnostics-extra-2304-h7-8ca52f wait 0s: reproduced
+2026-09-27 18:58:02,880 INFO ts6-r1-diagnostics-extra-2304-h7-8ca52f wait 5s: reproduced
+2026-09-27 18:58:47,124 INFO ts6-r1-diagnostics-extra-2304-h7-8ca52f wait 30s: reproduced
+2026-09-27 19:00:01,399 INFO ts6-r1-diagnostics-extra-2304-h7-8ca52f wait 60s: not-reproduced
+2026-09-27 19:00:11,708 INFO gopls-r1-references-extra-h9-0290a7 wait 0s: reproduced
+2026-09-27 19:00:26,410 INFO gopls-r1-references-extra-h9-0290a7 wait 5s: reproduced
+2026-09-27 19:01:06,105 INFO gopls-r1-references-extra-h9-0290a7 wait 30s: reproduced
+2026-09-27 19:02:15,791 INFO gopls-r1-references-extra-h9-0290a7 wait 60s: reproduced
+2026-09-27 19:02:50,481 INFO ts7-r1-references-missing-h9-2dd24a wait 0s: reproduced
+2026-09-27 19:03:29,103 INFO ts7-r1-references-missing-h9-2dd24a wait 5s: reproduced
+2026-09-27 19:04:32,695 INFO ts7-r1-references-missing-h9-2dd24a wait 30s: reproduced
+2026-09-27 19:06:06,496 INFO ts7-r1-references-missing-h9-2dd24a wait 60s: reproduced
+ts6-r1-codeaction-key-lost-h5-4f92e2: 0s reproduced, 5s reproduced, 30s reproduced, 60s reproduced
+ts6-r1-completion-lost-h5-fa501c: 0s reproduced, 5s reproduced, 30s reproduced, 60s reproduced
+ts6-r1-definition-lost-h5-61a0fd: 0s not-reproduced, 5s not-reproduced, 30s reproduced, 60s reproduced
+ts6-r1-definition-lost-h9-898f29: 0s reproduced, 5s reproduced, 30s reproduced, 60s reproduced
+ts6-r1-diagnostics-extra-2305-2339-7006-h5-d5a250: 0s reproduced, 5s not-reproduced, 30s not-reproduced, 60s not-reproduced
+ts6-r1-documenthighlight-lost-h5-9b4675: 0s reproduced, 5s not-reproduced, 30s reproduced, 60s reproduced
+ts6-r1-references-lost-h5-d24ca6: 0s reproduced, 5s reproduced, 30s reproduced, 60s reproduced
+ts6-r1-references-missing-h5-cc8950: 0s reproduced, 5s reproduced, 30s reproduced, 60s reproduced
+ts6-r1-semantictokens-changed-h5-591c42: 0s reproduced, 5s reproduced, 30s reproduced, 60s reproduced
+ts6-r1-semantictokens-missing-h9-d686b3: 0s reproduced, 5s reproduced, 30s reproduced, 60s reproduced
+ts6-r1-signaturehelp-changed-h5-db5a5e: 0s reproduced, 5s reproduced, 30s not-reproduced, 60s reproduced
+ts6-r1-signaturehelp-lost-h9-7bd793: 0s reproduced, 5s reproduced, 30s not-reproduced, 60s reproduced
+ts6-r1-typedefinition-lost-h5-712a35: 0s reproduced, 5s reproduced, 30s reproduced, 60s not-reproduced
+ts6-r1-diagnostics-extra-2304-h7-8ca52f: 0s reproduced, 5s reproduced, 30s reproduced, 60s not-reproduced
+gopls-r1-references-extra-h9-0290a7: 0s reproduced, 5s reproduced, 30s reproduced, 60s reproduced
+ts7-r1-references-missing-h9-2dd24a: 0s reproduced, 5s reproduced, 30s reproduced, 60s reproduced
+chain finished Sun Sep 27 19:06:06 PDT 2026

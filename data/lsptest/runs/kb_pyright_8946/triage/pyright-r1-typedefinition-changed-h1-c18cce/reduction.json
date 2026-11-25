@@ -1,0 +1,62 @@
+{
+ "vid": "7b994d0b8763-v03",
+ "ops_before": 3,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 2,
+ "cache_hits": 0,
+ "reduce_seconds": 18.753,
+ "budget_exhausted": false,
+ "probe_log": [
+  [
+   2,
+   false
+  ],
+  [
+   2,
+   false
+  ]
+ ],
+ "lines": {
+  "repro.py": "6/15 non-blank lines kept"
+ },
+ "line_probes": 15,
+ "line_seconds": 217.9,
+ "lines_confirmed": "3/3",
+ "line_skipped": [],
+ "line_budget_exhausted": false,
+ "logs": [
+  "pyright-1.1.380-trc18cce-replay-baseline-20260923-114525-5c65ca.jsonl.gz",
+  "pyright-1.1.380-trc18cce-replay-control-20260923-114525-92d82c.jsonl.gz",
+  "pyright-1.1.380-trc18cce-replay-history-20260923-114528-060cce.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [
+   [
+    "temp/lsp_servers/pyright-1.1.380/node_modules/pyright/dist/typeshed-fallback/stdlib/multiprocessing/pool.pyi",
+    46,
+    6,
+    46,
+    10
+   ],
+   [
+    "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/multiprocessing/pool.py",
+    172,
+    6,
+    172,
+    10
+   ]
+  ],
+  "actual": [
+   [
+    "repro.py",
+    17,
+    26,
+    17,
+    28
+   ]
+  ]
+ },
+ "ops_after": 3,
+ "total_seconds": 284.6
+}

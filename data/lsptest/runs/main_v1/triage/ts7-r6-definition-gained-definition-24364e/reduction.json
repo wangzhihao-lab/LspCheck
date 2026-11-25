@@ -1,0 +1,73 @@
+{
+ "vid": "15682bd48ce1-v03",
+ "ops_before": 0,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 0,
+ "cache_hits": 0,
+ "reduce_seconds": 0.0,
+ "budget_exhausted": false,
+ "probe_log": [],
+ "logs": [
+  "ts6-6.0.3-tr24364e-ref-r6-replay-ref-baseline-20260925-164429-f0988a.jsonl.gz",
+  "ts6-6.0.3-tr24364e-ref-r6-replay-ref-control-20260925-164442-78ebce.jsonl.gz",
+  "ts7-7.0.2-tr24364e-r6-replay-test-baseline-20260925-164412-70464a.jsonl.gz",
+  "ts7-7.0.2-tr24364e-r6-replay-test-control-20260925-164419-e5c459.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [],
+  "actual": [
+   [
+    "~/Library/Caches/typescript/7.0/node_modules/@types/node/globals.d.ts",
+    2,
+    12,
+    2,
+    19
+   ],
+   [
+    "~/Library/Caches/typescript/7.0/node_modules/@types/node/process.d.ts",
+    140,
+    12,
+    140,
+    19
+   ],
+   [
+    "~/Library/Caches/typescript/7.0/node_modules/@types/node/process.d.ts",
+    141,
+    18,
+    141,
+    25
+   ],
+   [
+    "node_modules/.pnpm/@types+node@20.19.43/node_modules/@types/node/globals.d.ts",
+    2,
+    12,
+    2,
+    19
+   ],
+   [
+    "node_modules/.pnpm/@types+node@20.19.43/node_modules/@types/node/process.d.ts",
+    121,
+    12,
+    121,
+    19
+   ],
+   [
+    "node_modules/@types/node/globals.d.ts",
+    2,
+    12,
+    2,
+    19
+   ],
+   [
+    "node_modules/@types/node/process.d.ts",
+    121,
+    12,
+    121,
+    19
+   ]
+  ]
+ },
+ "ops_after": 0,
+ "total_seconds": 162.2
+}

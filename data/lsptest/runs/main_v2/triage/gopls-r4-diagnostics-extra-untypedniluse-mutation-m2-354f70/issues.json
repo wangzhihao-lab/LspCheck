@@ -1,0 +1,90 @@
+{
+ "queries": [
+  "diagnostics extra repo:golang/go is:issue label:gopls",
+  "diagnostics \"wrong edit\" repo:golang/go is:issue label:gopls"
+ ],
+ "matches": [
+  {
+   "repo": "golang/go",
+   "number": 68075,
+   "title": "x/tools/gopls/internal/cmd: `gopls check` doesn't wait for didOpen finish before it makes diagnostics request",
+   "url": "https://github.com/golang/go/issues/68075",
+   "state": "open",
+   "created": "2024-06-19",
+   "comments": 4,
+   "query": "diagnostics extra repo:golang/go is:issue label:gopls"
+  },
+  {
+   "repo": "golang/go",
+   "number": 41436,
+   "title": "x/tools/go/analysis: a Diagnostic should indicate when it is a lint-style warning that should be ignored in generated code",
+   "url": "https://github.com/golang/go/issues/41436",
+   "state": "open",
+   "created": "2020-09-16",
+   "comments": 34,
+   "query": "diagnostics extra repo:golang/go is:issue label:gopls"
+  },
+  {
+   "repo": "golang/go",
+   "number": 70085,
+   "title": "x/tools/gopls: add refactor.inline.variable-all code action",
+   "url": "https://github.com/golang/go/issues/70085",
+   "state": "open",
+   "created": "2024-10-29",
+   "comments": 11,
+   "query": "diagnostics extra repo:golang/go is:issue label:gopls"
+  },
+  {
+   "repo": "golang/go",
+   "number": 50151,
+   "title": "x/tools/gopls: high cpu usage when make changes in package which have some cgo package dependents",
+   "url": "https://github.com/golang/go/issues/50151",
+   "state": "open",
+   "created": "2021-12-14",
+   "comments": 15,
+   "query": "diagnostics extra repo:golang/go is:issue label:gopls"
+  },
+  {
+   "repo": "golang/go",
+   "number": 54461,
+   "title": "x/tools/gopls: regtest flakes due to hanging go commands",
+   "url": "https://github.com/golang/go/issues/54461",
+   "state": "open",
+   "created": "2022-08-15",
+   "comments": 422,
+   "query": "diagnostics extra repo:golang/go is:issue label:gopls"
+  },
+  {
+   "repo": "golang/go",
+   "number": 69646,
+   "title": "x/tools/gopls: packages.Load failure with conflicting go.work and go.mod toolchain versions",
+   "url": "https://github.com/golang/go/issues/69646",
+   "state": "open",
+   "created": "2024-09-16",
+   "comments": 5,
+   "query": "diagnostics \"wrong edit\" repo:golang/go is:issue label:gopls"
+  },
+  {
+   "repo": "golang/go",
+   "number": 79892,
+   "title": "x/tools/gopls: mcp go_diagnostics misattributes diagnostics to files[0] (and drops its own) when given multiple files",
+   "url": "https://github.com/golang/go/issues/79892",
+   "state": "closed",
+   "created": "2026-06-07",
+   "comments": 2,
+   "query": "diagnostics \"wrong edit\" repo:golang/go is:issue label:gopls"
+  },
+  {
+   "repo": "golang/go",
+   "number": 68026,
+   "title": "x/tools/gopls: broken hovering in the builtin file",
+   "url": "https://github.com/golang/go/issues/68026",
+   "state": "closed",
+   "created": "2024-06-16",
+   "comments": 11,
+   "query": "diagnostics \"wrong edit\" repo:golang/go is:issue label:gopls"
+  }
+ ],
+ "notes": [],
+ "authenticated": true
+}

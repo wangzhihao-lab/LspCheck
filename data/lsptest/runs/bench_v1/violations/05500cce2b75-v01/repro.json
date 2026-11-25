@@ -1,0 +1,417 @@
+{
+ "format": 1,
+ "campaign": "bench_v1",
+ "vid": "05500cce2b75-v01",
+ "run_id": "05500cce2b75",
+ "oracle": "r1_history",
+ "server": {
+  "kind": "pyright",
+  "version": "1.1.247"
+ },
+ "project": {
+  "name": "pyright-3482",
+  "source": "dir",
+  "ref": "data/lsp_bench/cases/pyright-3482/project",
+  "commit": "",
+  "language": "python"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "race0",
+  "settle_timeout_s": 120.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "main.py",
+    "positions": [
+     [
+      1,
+      8
+     ],
+     [
+      1,
+      32
+     ],
+     [
+      3,
+      13
+     ],
+     [
+      3,
+      34
+     ],
+     [
+      9,
+      24
+     ],
+     [
+      10,
+      42
+     ],
+     [
+      10,
+      51
+     ],
+     [
+      15,
+      7
+     ],
+     [
+      18,
+      7
+     ],
+     [
+      18,
+      13
+     ],
+     [
+      18,
+      26
+     ],
+     [
+      18,
+      48
+     ],
+     [
+      18,
+      55
+     ],
+     [
+      19,
+      22
+     ],
+     [
+      19,
+      35
+     ],
+     [
+      20,
+      38
+     ],
+     [
+      22,
+      15
+     ],
+     [
+      22,
+      28
+     ],
+     [
+      26,
+      17
+     ],
+     [
+      28,
+      27
+     ]
+    ],
+    "ends": [
+     [
+      1,
+      11
+     ],
+     [
+      1,
+      36
+     ],
+     [
+      3,
+      22
+     ],
+     [
+      3,
+      39
+     ],
+     [
+      9,
+      25
+     ],
+     [
+      10,
+      43
+     ],
+     [
+      10,
+      54
+     ],
+     [
+      15,
+      14
+     ],
+     [
+      18,
+      11
+     ],
+     [
+      18,
+      14
+     ],
+     [
+      18,
+      27
+     ],
+     [
+      18,
+      52
+     ],
+     [
+      18,
+      56
+     ],
+     [
+      19,
+      26
+     ],
+     [
+      19,
+      42
+     ],
+     [
+      20,
+      42
+     ],
+     [
+      22,
+      19
+     ],
+     [
+      22,
+      30
+     ],
+     [
+      26,
+      20
+     ],
+     [
+      28,
+      28
+     ]
+    ],
+    "names": [
+     "typing",
+     "Generic",
+     "typing_extensions",
+     "ParamSpec",
+     "_P",
+     "kw",
+     "kwargs",
+     "TailCallResult",
+     "tailrec",
+     "fn",
+     "_P",
+     "_TResult",
+     "_P",
+     "bouncer",
+     "TailCallResult",
+     "TailCall",
+     "bouncer",
+     "args",
+     "wraps",
+     "fn"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "hover",
+  "path": "main.py",
+  "line": 22,
+  "character": 28,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "main.py"
+  },
+  {
+   "kind": "change",
+   "path": "main.py",
+   "start": [
+    15,
+    33
+   ],
+   "end": [
+    15,
+    41
+   ],
+   "text": "zz"
+  },
+  {
+   "kind": "change",
+   "path": "main.py",
+   "start": [
+    15,
+    33
+   ],
+   "end": [
+    15,
+    35
+   ],
+   "text": "TailCall"
+  },
+  {
+   "kind": "request",
+   "path": "main.py",
+   "start": [
+    28,
+    39
+   ],
+   "text": "documentHighlight"
+  },
+  {
+   "kind": "request",
+   "path": "main.py",
+   "start": [
+    9,
+    10
+   ],
+   "text": "references"
+  },
+  {
+   "kind": "request",
+   "path": "main.py",
+   "start": [
+    18,
+    67
+   ],
+   "text": "completion"
+  }
+ ],
+ "case": {
+  "chain_step": 0,
+  "families": [],
+  "family": "H8",
+  "history_index": 2,
+  "history_seed": 1003,
+  "mode": "fresh",
+  "note": "after main.py: replace 'TailCall' by 'zz' on line 15 and its inverse, 3 requests in a shuffled order: documentHighlight@main.py:28:39, references@main.py:9:10, completion@main.py:18:67",
+  "seed": 1,
+  "timing": "race0"
+ },
+ "shape": "hover:text",
+ "signature": "pyright|r1_history|hover:text",
+ "expected": [
+  "(variable) args: _P.args",
+  [
+   22,
+   26,
+   22,
+   30
+  ]
+ ],
+ "actual": [
+  "(variable) args: Unknown | _P.args",
+  [
+   22,
+   26,
+   22,
+   30
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "H8: after main.py: replace 'TailCall' by 'zz' on line 15 and its inverse, 3 requests in a shuffled order: documentHighlight@main.py:28:39, references@main.py:9:10, completion@main.py:18:67; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 22s",
+ "violation": {
+  "oracle": "r1_history",
+  "server": "pyright-1.1.247",
+  "project": "pyright-3482",
+  "key": {
+   "method": "hover",
+   "path": "main.py",
+   "line": 22,
+   "character": 28,
+   "extra": ""
+  },
+  "expected": [
+   "(variable) args: _P.args",
+   [
+    22,
+    26,
+    22,
+    30
+   ]
+  ],
+  "actual": [
+   "(variable) args: Unknown | _P.args",
+   [
+    22,
+    26,
+    22,
+    30
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "main.py"
+   },
+   {
+    "kind": "change",
+    "path": "main.py",
+    "start": [
+     15,
+     33
+    ],
+    "end": [
+     15,
+     41
+    ],
+    "text": "zz"
+   },
+   {
+    "kind": "change",
+    "path": "main.py",
+    "start": [
+     15,
+     33
+    ],
+    "end": [
+     15,
+     35
+    ],
+    "text": "TailCall"
+   },
+   {
+    "kind": "request",
+    "path": "main.py",
+    "start": [
+     28,
+     39
+    ],
+    "text": "documentHighlight"
+   },
+   {
+    "kind": "request",
+    "path": "main.py",
+    "start": [
+     9,
+     10
+    ],
+    "text": "references"
+   },
+   {
+    "kind": "request",
+    "path": "main.py",
+    "start": [
+     18,
+     67
+    ],
+    "text": "completion"
+   }
+  ],
+  "detail": "{\"case\": {\"chain_step\": 0, \"families\": [], \"family\": \"H8\", \"history_index\": 2, \"history_seed\": 1003, \"mode\": \"fresh\", \"note\": \"after main.py: replace 'TailCall' by 'zz' on line 15 and its inverse, 3 requests in a shuffled order: documentHighlight@main.py:28:39, references@main.py:9:10, completion@main.py:18:67\", \"seed\": 1, \"timing\": \"race0\"}, \"note\": \"H8: after main.py: replace 'TailCall' by 'zz' on line 15 and its inverse, 3 requests in a shuffled order: documentHighlight@main.py:28:39, references@main.py:9:10, completion@main.py:18:67; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 22s\", \"shape\": \"hover:text\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "pyright|r1_history|hover:text",
+  "run_id": "05500cce2b75"
+ },
+ "replay_logs": [
+  "logs/pyright-1.1.247-05500cce2b75-replay-baseline-20260924-225550-462135.jsonl.gz",
+  "logs/pyright-1.1.247-05500cce2b75-replay-control-20260924-225550-428559.jsonl.gz",
+  "logs/pyright-1.1.247-05500cce2b75-replay-history-20260924-225554-d9391c.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

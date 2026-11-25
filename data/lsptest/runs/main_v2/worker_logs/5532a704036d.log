@@ -1,0 +1,3 @@
+2026-11-18 19:38:39,110 INFO campaign_run run 5532a704036d: r1_history on ts7 7.0.2, Gitlawb/openclaude@5cd11336caea seed 3 settled, targets ['src/components/ConfigurableShortcutHint.tsx', 'src/components/CustomSelect/use-select-input.ts', 'src/utils/contextPartitioning.ts']
+2026-11-18 19:46:28,292 INFO campaign_run run 5532a704036d: 0 candidate(s) in 469s; confirming
+2026-11-18 19:46:28,293 INFO campaign_run run 5532a704036d finished: ok, 0 confirmed of 0 candidate(s), 469s

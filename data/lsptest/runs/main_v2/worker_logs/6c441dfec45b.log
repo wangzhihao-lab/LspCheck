@@ -1,0 +1,3 @@
+2026-11-18 10:25:52,480 INFO campaign_run run 6c441dfec45b: r2_handles on pyright 1.1.414, karpathy/nanochat@92d63d4e8bb4 seed 2 settled, targets ['nanochat/gpt.py', 'scripts/tok_train.py', 'tasks/arc.py']
+2026-11-18 10:26:38,353 INFO campaign_run run 6c441dfec45b: 0 candidate(s) in 46s; confirming
+2026-11-18 10:26:38,354 INFO campaign_run run 6c441dfec45b finished: ok, 0 confirmed of 0 candidate(s), 46s

@@ -1,0 +1,677 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "623dae4a042e-v00",
+ "run_id": "623dae4a042e",
+ "oracle": "r1_history",
+ "server": {
+  "kind": "gopls",
+  "version": "v0.23.0"
+ },
+ "project": {
+  "name": "spf13/cobra@adbc8813901b",
+  "source": "corpus",
+  "ref": "temp/corpus/spf13__cobra@adbc8813901b",
+  "commit": "adbc8813901bba65827259daa8e22ff94ec1f30e",
+  "language": "go"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "race0",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "args_test.go",
+    "positions": [
+     [
+      94,
+      45
+     ],
+     [
+      98,
+      53
+     ],
+     [
+      135,
+      1
+     ],
+     [
+      187,
+      61
+     ],
+     [
+      241,
+      13
+     ],
+     [
+      252,
+      5
+     ],
+     [
+      326,
+      29
+     ],
+     [
+      347,
+      32
+     ],
+     [
+      394,
+      20
+     ],
+     [
+      517,
+      25
+     ],
+     [
+      538,
+      63
+     ],
+     [
+      569,
+      28
+     ]
+    ],
+    "ends": [
+     [
+      94,
+      47
+     ],
+     [
+      98,
+      54
+     ],
+     [
+      135,
+      2
+     ],
+     [
+      187,
+      63
+     ],
+     [
+      241,
+      25
+     ],
+     [
+      252,
+      7
+     ],
+     [
+      326,
+      30
+     ],
+     [
+      347,
+      33
+     ],
+     [
+      394,
+      35
+     ],
+     [
+      517,
+      27
+     ],
+     [
+      538,
+      67
+     ],
+     [
+      569,
+      30
+     ]
+    ],
+    "names": [
+     "got",
+     "T",
+     "c",
+     "true",
+     "validOnlyWithInvalidArgs",
+     "err",
+     "t",
+     "t",
+     "TestRangeArgs_WithInvalidCount",
+     "fail",
+     "testing",
+     "Use"
+    ]
+   },
+   {
+    "path": "doc/yaml_docs.go",
+    "positions": [
+     [
+      77,
+      50
+     ],
+     [
+      80,
+      55
+     ],
+     [
+      87,
+      41
+     ],
+     [
+      92,
+      72
+     ],
+     [
+      99,
+      41
+     ],
+     [
+      114,
+      3
+     ],
+     [
+      116,
+      45
+     ],
+     [
+      122,
+      14
+     ],
+     [
+      139,
+      3
+     ],
+     [
+      139,
+      7
+     ],
+     [
+      151,
+      29
+     ],
+     [
+      169,
+      28
+     ]
+    ],
+    "ends": [
+     [
+      77,
+      54
+     ],
+     [
+      80,
+      57
+     ],
+     [
+      87,
+      44
+     ],
+     [
+      92,
+      75
+     ],
+     [
+      99,
+      44
+     ],
+     [
+      114,
+      6
+     ],
+     [
+      116,
+      48
+     ],
+     [
+      122,
+      16
+     ],
+     [
+      139,
+      4
+     ],
+     [
+      139,
+      9
+     ],
+     [
+      151,
+      32
+     ],
+     [
+      169,
+      30
+     ]
+    ],
+    "names": [
+     "filename",
+     "nil",
+     "Writer",
+     "string",
+     "Short",
+     "flags",
+     "flags",
+     "cmd",
+     "os",
+     "Exit",
+     "pflag",
+     "opt"
+    ]
+   },
+   {
+    "path": "flag_groups.go",
+    "positions": [
+     [
+      34,
+      5
+     ],
+     [
+      37,
+      5
+     ],
+     [
+      37,
+      93
+     ],
+     [
+      55,
+      140
+     ],
+     [
+      68,
+      5
+     ],
+     [
+      85,
+      14
+     ],
+     [
+      92,
+      3
+     ],
+     [
+      98,
+      24
+     ],
+     [
+      110,
+      23
+     ],
+     [
+      125,
+      33
+     ],
+     [
+      232,
+      40
+     ],
+     [
+      236,
+      41
+     ]
+    ],
+    "ends": [
+     [
+      34,
+      6
+     ],
+     [
+      37,
+      8
+     ],
+     [
+      37,
+      94
+     ],
+     [
+      55,
+      142
+     ],
+     [
+      68,
+      6
+     ],
+     [
+      85,
+      17
+     ],
+     [
+      92,
+      6
+     ],
+     [
+      98,
+      37
+     ],
+     [
+      110,
+      25
+     ],
+     [
+      125,
+      36
+     ],
+     [
+      232,
+      43
+     ],
+     [
+      236,
+      44
+     ]
+    ],
+    "names": [
+     "_",
+     "panic",
+     "v",
+     "err",
+     "f",
+     "Flags",
+     "flags",
+     "validateRequiredFlagGroups",
+     "flag",
+     "group",
+     "string",
+     "pflag"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "completion",
+  "path": "args_test.go",
+  "line": 347,
+  "character": 33,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "args_test.go"
+  },
+  {
+   "kind": "open",
+   "path": "doc/yaml_docs.go"
+  },
+  {
+   "kind": "open",
+   "path": "flag_groups.go"
+  },
+  {
+   "kind": "fs_rename",
+   "path": "args_test.go",
+   "new_path": "args_test_rt.go"
+  },
+  {
+   "kind": "fs_rename",
+   "path": "args_test_rt.go",
+   "new_path": "args_test.go"
+  }
+ ],
+ "case": {
+  "chain_step": 0,
+  "families": [],
+  "family": "H5",
+  "history_index": 9,
+  "history_seed": 1010,
+  "mode": "fresh",
+  "note": "rename args_test.go -> args_test_rt.go -> back",
+  "seed": 1,
+  "timing": "race0"
+ },
+ "shape": "completion:changed",
+ "signature": "gopls|r1_history|completion:changed",
+ "expected": [
+  "&testing.T{}",
+  "TestActiveHelpAlone",
+  "TestActiveHelpForFlag",
+  "TestActiveHelpWithComps",
+  "TestAddGroup",
+  "TestAddTemplateFunctions",
+  "TestAliasPrefixMatching",
+  "TestArbitraryArgs",
+  "TestArbitraryArgs_WithValid",
+  "TestArbitraryArgs_WithValidOnly_WithInvalidArgs",
+  "TestArbitraryArgs_WithValid_WithInvalidArgs",
+  "TestArgAliasesCompletionInGo",
+  "TestArgsNotDetectedAsFlagsCompletionInGo",
+  "TestBashCompletionDeprecatedFlag",
+  "TestBashCompletionHiddenFlag",
+  "TestBashCompletionNoActiveHelp",
+  "TestBashCompletionTraverseChildren",
+  "TestBashCompletionV2WithActiveHelp",
+  "TestBashCompletions",
+  "TestCallCommandWithoutSubcommands",
+  "TestCalledAs",
+  "TestCaseInsensitive",
+  "TestCaseSensitivityBackwardCompatibility",
+  "TestChildCommand",
+  "TestChildFlag",
+  "TestChildFlagShadowsParentPersistentFlag",
+  "TestChildFlagWithParentLocalFlag",
+  "TestChildSameName",
+  "TestChildTakesArgs",
+  "TestChildTakesNoArgs",
+  "TestCmdNameCompletionInGo",
+  "TestCommandAlias",
+  "TestCommandPrintRedirection",
+  "TestCommandsAreSorted",
+  "TestCompleteCmdInBashScript",
+  "TestCompleteCmdInFishScript",
+  "TestCompleteCmdInZshScript",
+  "TestCompleteCompletion",
+  "TestCompleteHelp",
+  "TestCompleteNoDesCmdInFishScript",
+  "TestCompleteNoDesCmdInZshScript",
+  "TestCompleteWithDisableFlagParsing",
+  "TestCompleteWithRootAndLegacyArgs",
+  "t",
+  "templateFuncs",
+  "testPersistentHooks",
+  "testing",
+  "tmpl",
+  "tmplFunc",
+  "trimRightSpace"
+ ],
+ "actual": [
+  "TestActiveHelpAlone",
+  "TestActiveHelpForFlag",
+  "TestActiveHelpWithComps",
+  "TestAddGroup",
+  "TestAddTemplateFunctions",
+  "TestAliasPrefixMatching",
+  "TestArbitraryArgs",
+  "TestArbitraryArgs_WithValid",
+  "TestArbitraryArgs_WithValidOnly_WithInvalidArgs",
+  "TestArbitraryArgs_WithValid_WithInvalidArgs",
+  "TestArgAliasesCompletionInGo",
+  "TestArgsNotDetectedAsFlagsCompletionInGo",
+  "TestBashCompletionDeprecatedFlag",
+  "TestBashCompletionHiddenFlag",
+  "TestBashCompletionNoActiveHelp",
+  "TestBashCompletionTraverseChildren",
+  "TestBashCompletionV2WithActiveHelp",
+  "TestBashCompletions",
+  "TestCallCommandWithoutSubcommands",
+  "TestCalledAs",
+  "TestCaseInsensitive",
+  "TestCaseSensitivityBackwardCompatibility",
+  "TestChildCommand",
+  "TestChildFlag",
+  "TestChildFlagShadowsParentPersistentFlag",
+  "TestChildFlagWithParentLocalFlag",
+  "TestChildSameName",
+  "TestChildTakesArgs",
+  "TestChildTakesNoArgs",
+  "TestCmdNameCompletionInGo",
+  "TestCommandAlias",
+  "TestCommandPrintRedirection",
+  "TestCommandsAreSorted",
+  "TestCompleteCmdInBashScript",
+  "TestCompleteCmdInFishScript",
+  "TestCompleteCmdInZshScript",
+  "TestCompleteCompletion",
+  "TestCompleteHelp",
+  "TestCompleteNoDesCmdInFishScript",
+  "TestCompleteNoDesCmdInZshScript",
+  "TestCompleteWithDisableFlagParsing",
+  "TestCompleteWithRootAndLegacyArgs",
+  "TestCompletionCobraFlags",
+  "t",
+  "templateFuncs",
+  "testPersistentHooks",
+  "testing",
+  "tmpl",
+  "tmplFunc",
+  "trimRightSpace"
+ ],
+ "reproduced": "0/3",
+ "note": "H5: rename args_test.go -> args_test_rt.go -> back; flake 0/3 [r1:SCr r2:SCr r3:SCr] in 56s",
+ "violation": {
+  "oracle": "r1_history",
+  "server": "gopls-v0.23.0",
+  "project": "spf13/cobra@adbc8813901b",
+  "key": {
+   "method": "completion",
+   "path": "args_test.go",
+   "line": 347,
+   "character": 33,
+   "extra": ""
+  },
+  "expected": [
+   "&testing.T{}",
+   "TestActiveHelpAlone",
+   "TestActiveHelpForFlag",
+   "TestActiveHelpWithComps",
+   "TestAddGroup",
+   "TestAddTemplateFunctions",
+   "TestAliasPrefixMatching",
+   "TestArbitraryArgs",
+   "TestArbitraryArgs_WithValid",
+   "TestArbitraryArgs_WithValidOnly_WithInvalidArgs",
+   "TestArbitraryArgs_WithValid_WithInvalidArgs",
+   "TestArgAliasesCompletionInGo",
+   "TestArgsNotDetectedAsFlagsCompletionInGo",
+   "TestBashCompletionDeprecatedFlag",
+   "TestBashCompletionHiddenFlag",
+   "TestBashCompletionNoActiveHelp",
+   "TestBashCompletionTraverseChildren",
+   "TestBashCompletionV2WithActiveHelp",
+   "TestBashCompletions",
+   "TestCallCommandWithoutSubcommands",
+   "TestCalledAs",
+   "TestCaseInsensitive",
+   "TestCaseSensitivityBackwardCompatibility",
+   "TestChildCommand",
+   "TestChildFlag",
+   "TestChildFlagShadowsParentPersistentFlag",
+   "TestChildFlagWithParentLocalFlag",
+   "TestChildSameName",
+   "TestChildTakesArgs",
+   "TestChildTakesNoArgs",
+   "TestCmdNameCompletionInGo",
+   "TestCommandAlias",
+   "TestCommandPrintRedirection",
+   "TestCommandsAreSorted",
+   "TestCompleteCmdInBashScript",
+   "TestCompleteCmdInFishScript",
+   "TestCompleteCmdInZshScript",
+   "TestCompleteCompletion",
+   "TestCompleteHelp",
+   "TestCompleteNoDesCmdInFishScript",
+   "TestCompleteNoDesCmdInZshScript",
+   "TestCompleteWithDisableFlagParsing",
+   "TestCompleteWithRootAndLegacyArgs",
+   "t",
+   "templateFuncs",
+   "testPersistentHooks",
+   "testing",
+   "tmpl",
+   "tmplFunc",
+   "trimRightSpace"
+  ],
+  "actual": [
+   "TestActiveHelpAlone",
+   "TestActiveHelpForFlag",
+   "TestActiveHelpWithComps",
+   "TestAddGroup",
+   "TestAddTemplateFunctions",
+   "TestAliasPrefixMatching",
+   "TestArbitraryArgs",
+   "TestArbitraryArgs_WithValid",
+   "TestArbitraryArgs_WithValidOnly_WithInvalidArgs",
+   "TestArbitraryArgs_WithValid_WithInvalidArgs",
+   "TestArgAliasesCompletionInGo",
+   "TestArgsNotDetectedAsFlagsCompletionInGo",
+   "TestBashCompletionDeprecatedFlag",
+   "TestBashCompletionHiddenFlag",
+   "TestBashCompletionNoActiveHelp",
+   "TestBashCompletionTraverseChildren",
+   "TestBashCompletionV2WithActiveHelp",
+   "TestBashCompletions",
+   "TestCallCommandWithoutSubcommands",
+   "TestCalledAs",
+   "TestCaseInsensitive",
+   "TestCaseSensitivityBackwardCompatibility",
+   "TestChildCommand",
+   "TestChildFlag",
+   "TestChildFlagShadowsParentPersistentFlag",
+   "TestChildFlagWithParentLocalFlag",
+   "TestChildSameName",
+   "TestChildTakesArgs",
+   "TestChildTakesNoArgs",
+   "TestCmdNameCompletionInGo",
+   "TestCommandAlias",
+   "TestCommandPrintRedirection",
+   "TestCommandsAreSorted",
+   "TestCompleteCmdInBashScript",
+   "TestCompleteCmdInFishScript",
+   "TestCompleteCmdInZshScript",
+   "TestCompleteCompletion",
+   "TestCompleteHelp",
+   "TestCompleteNoDesCmdInFishScript",
+   "TestCompleteNoDesCmdInZshScript",
+   "TestCompleteWithDisableFlagParsing",
+   "TestCompleteWithRootAndLegacyArgs",
+   "TestCompletionCobraFlags",
+   "t",
+   "templateFuncs",
+   "testPersistentHooks",
+   "testing",
+   "tmpl",
+   "tmplFunc",
+   "trimRightSpace"
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "args_test.go"
+   },
+   {
+    "kind": "open",
+    "path": "doc/yaml_docs.go"
+   },
+   {
+    "kind": "open",
+    "path": "flag_groups.go"
+   },
+   {
+    "kind": "fs_rename",
+    "path": "args_test.go",
+    "new_path": "args_test_rt.go"
+   },
+   {
+    "kind": "fs_rename",
+    "path": "args_test_rt.go",
+    "new_path": "args_test.go"
+   }
+  ],
+  "detail": "{\"case\": {\"chain_step\": 0, \"families\": [], \"family\": \"H5\", \"history_index\": 9, \"history_seed\": 1010, \"mode\": \"fresh\", \"note\": \"rename args_test.go -> args_test_rt.go -> back\", \"seed\": 1, \"timing\": \"race0\"}, \"note\": \"H5: rename args_test.go -> args_test_rt.go -> back; flake 0/3 [r1:SCr r2:SCr r3:SCr] in 56s\", \"shape\": \"completion:changed\"}",
+  "reproduced": "0/3",
+  "reduced_ops": [],
+  "signature": "gopls|r1_history|completion:changed",
+  "run_id": "623dae4a042e"
+ },
+ "replay_logs": [],
+ "project_files": {},
+ "incomplete": false
+}

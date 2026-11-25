@@ -1,0 +1,12 @@
+2026-09-23 13:36:21,082 INFO campaign_run run 4f6e0b0496b7: r4_edits on tsserver 4.4.4+tsls0.7.1, tsserver-46466 seed 2 settled, targets ['index.ts']
+2026-09-23 13:37:20,739 INFO campaign_run run 4f6e0b0496b7: 3 candidate(s) in 60s; confirming
+2026-09-23 13:37:35,129 INFO flake replay 1/3 of tsserver|r4_edits|diagnostics:changed:1005,1109,1308: settled=True control_stable=True reproduced=True (14.4s)
+2026-09-23 13:37:49,116 INFO flake replay 2/3 of tsserver|r4_edits|diagnostics:changed:1005,1109,1308: settled=True control_stable=True reproduced=True (14.0s)
+2026-09-23 13:38:03,532 INFO flake replay 3/3 of tsserver|r4_edits|diagnostics:changed:1005,1109,1308: settled=True control_stable=True reproduced=True (14.4s)
+2026-09-23 13:38:17,693 INFO flake replay 1/3 of tsserver|r4_edits|diagnostics:extra:2304: settled=True control_stable=True reproduced=True (14.2s)
+2026-09-23 13:38:30,573 INFO flake replay 2/3 of tsserver|r4_edits|diagnostics:extra:2304: settled=True control_stable=True reproduced=True (12.9s)
+2026-09-23 13:38:43,239 INFO flake replay 3/3 of tsserver|r4_edits|diagnostics:extra:2304: settled=True control_stable=True reproduced=True (12.7s)
+2026-09-23 13:38:56,351 INFO flake replay 1/3 of tsserver|r4_edits|diagnostics:extra:2552: settled=True control_stable=True reproduced=True (13.1s)
+2026-09-23 13:39:10,014 INFO flake replay 2/3 of tsserver|r4_edits|diagnostics:extra:2552: settled=True control_stable=True reproduced=True (13.7s)
+2026-09-23 13:39:23,757 INFO flake replay 3/3 of tsserver|r4_edits|diagnostics:extra:2552: settled=True control_stable=True reproduced=True (13.7s)
+2026-09-23 13:39:23,767 INFO campaign_run run 4f6e0b0496b7 finished: ok, 3 confirmed of 3 candidate(s), 183s

@@ -1,0 +1,324 @@
+{
+ "format": 1,
+ "campaign": "bench_v1",
+ "vid": "2ac0672495d0-v00",
+ "run_id": "2ac0672495d0",
+ "oracle": "r1_history",
+ "server": {
+  "kind": "gopls",
+  "version": "v0.21.0"
+ },
+ "project": {
+  "name": "gopls-74708",
+  "source": "dir",
+  "ref": "data/lsp_bench/cases/gopls-74708/project",
+  "commit": "",
+  "language": "go"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 180.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "b.go",
+    "positions": [
+     [
+      2,
+      10
+     ],
+     [
+      6,
+      5
+     ],
+     [
+      7,
+      5
+     ],
+     [
+      7,
+      10
+     ],
+     [
+      8,
+      1
+     ],
+     [
+      8,
+      4
+     ],
+     [
+      8,
+      7
+     ],
+     [
+      10,
+      4
+     ],
+     [
+      11,
+      2
+     ],
+     [
+      11,
+      5
+     ],
+     [
+      11,
+      9
+     ],
+     [
+      15,
+      8
+     ],
+     [
+      16,
+      2
+     ],
+     [
+      16,
+      6
+     ],
+     [
+      16,
+      13
+     ]
+    ],
+    "ends": [
+     [
+      2,
+      13
+     ],
+     [
+      6,
+      6
+     ],
+     [
+      7,
+      6
+     ],
+     [
+      7,
+      13
+     ],
+     [
+      8,
+      2
+     ],
+     [
+      8,
+      5
+     ],
+     [
+      8,
+      9
+     ],
+     [
+      10,
+      7
+     ],
+     [
+      11,
+      3
+     ],
+     [
+      11,
+      6
+     ],
+     [
+      11,
+      11
+     ],
+     [
+      15,
+      11
+     ],
+     [
+      16,
+      3
+     ],
+     [
+      16,
+      8
+     ],
+     [
+      16,
+      18
+     ]
+    ],
+    "names": [
+     "tools",
+     "_",
+     "s",
+     "Server",
+     "s",
+     "wg",
+     "Add",
+     "print",
+     "s",
+     "wg",
+     "Done",
+     "Server",
+     "wg",
+     "sync",
+     "WaitGroup"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "completion",
+  "path": "b.go",
+  "line": 7,
+  "character": 13,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "b.go"
+  },
+  {
+   "kind": "fs_write",
+   "path": "go.mod",
+   "text": "module example.com/tools\nmodule example.com/tools\n\ngo 1.25\n"
+  },
+  {
+   "kind": "change",
+   "path": "b.go",
+   "start": [
+    15,
+    8
+   ],
+   "end": [
+    15,
+    12
+   ]
+  },
+  {
+   "kind": "save",
+   "path": "b.go"
+  },
+  {
+   "kind": "change",
+   "path": "b.go",
+   "start": [
+    15,
+    8
+   ],
+   "end": [
+    15,
+    8
+   ],
+   "text": "ver "
+  },
+  {
+   "kind": "save",
+   "path": "b.go"
+  },
+  {
+   "kind": "fs_write",
+   "path": "go.mod",
+   "text": "module example.com/tools\n\ngo 1.25\n"
+  }
+ ],
+ "case": {
+  "chain_step": 0,
+  "families": [],
+  "family": "H9",
+  "history_index": 3,
+  "history_seed": 1004,
+  "mode": "fresh",
+  "note": "window: go.mod: line 0 duplicated; inside: b.go: delete 'ver ' on line 15, then its inverse; then W reverted",
+  "seed": 1,
+  "timing": "settled"
+ },
+ "shape": "completion:lost",
+ "signature": "gopls|r1_history|completion:lost",
+ "expected": [
+  "Server"
+ ],
+ "actual": [],
+ "reproduced": "3/3",
+ "note": "H9: window: go.mod: line 0 duplicated; inside: b.go: delete 'ver ' on line 15, then its inverse; then W reverted; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 224s",
+ "violation": {
+  "oracle": "r1_history",
+  "server": "gopls-v0.21.0",
+  "project": "gopls-74708",
+  "key": {
+   "method": "completion",
+   "path": "b.go",
+   "line": 7,
+   "character": 13,
+   "extra": ""
+  },
+  "expected": [
+   "Server"
+  ],
+  "actual": [],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "b.go"
+   },
+   {
+    "kind": "fs_write",
+    "path": "go.mod",
+    "text": "module example.com/tools\nmodule example.com/tools\n\ngo 1.25\n"
+   },
+   {
+    "kind": "change",
+    "path": "b.go",
+    "start": [
+     15,
+     8
+    ],
+    "end": [
+     15,
+     12
+    ]
+   },
+   {
+    "kind": "save",
+    "path": "b.go"
+   },
+   {
+    "kind": "change",
+    "path": "b.go",
+    "start": [
+     15,
+     8
+    ],
+    "end": [
+     15,
+     8
+    ],
+    "text": "ver "
+   },
+   {
+    "kind": "save",
+    "path": "b.go"
+   },
+   {
+    "kind": "fs_write",
+    "path": "go.mod",
+    "text": "module example.com/tools\n\ngo 1.25\n"
+   }
+  ],
+  "detail": "{\"case\": {\"chain_step\": 0, \"families\": [], \"family\": \"H9\", \"history_index\": 3, \"history_seed\": 1004, \"mode\": \"fresh\", \"note\": \"window: go.mod: line 0 duplicated; inside: b.go: delete 'ver ' on line 15, then its inverse; then W reverted\", \"seed\": 1, \"timing\": \"settled\"}, \"note\": \"H9: window: go.mod: line 0 duplicated; inside: b.go: delete 'ver ' on line 15, then its inverse; then W reverted; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 224s\", \"shape\": \"completion:lost\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "gopls|r1_history|completion:lost",
+  "run_id": "2ac0672495d0"
+ },
+ "replay_logs": [
+  "logs/gopls-v0.21.0-2ac0672495d0-replay-baseline-20260924-161542-533afc.jsonl.gz",
+  "logs/gopls-v0.21.0-2ac0672495d0-replay-control-20260924-161542-65feaa.jsonl.gz",
+  "logs/gopls-v0.21.0-2ac0672495d0-replay-history-20260924-161547-6be45c.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

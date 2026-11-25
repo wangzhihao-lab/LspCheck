@@ -1,0 +1,92 @@
+{
+ "queries": [
+  "order in:title repo:microsoft/pyright is:issue",
+  "references extra repo:microsoft/pyright is:issue",
+  "references order repo:microsoft/pyright is:issue",
+  "references stale repo:microsoft/pyright is:issue"
+ ],
+ "matches": [
+  {
+   "repo": "microsoft/pyright",
+   "number": 11581,
+   "title": "Helping hand from order of messages: causes and consequences",
+   "url": "https://github.com/microsoft/pyright/issues/11581",
+   "state": "open",
+   "created": "2026-08-02",
+   "comments": 0,
+   "query": "order in:title repo:microsoft/pyright is:issue"
+  },
+  {
+   "repo": "microsoft/pyright",
+   "number": 11644,
+   "title": "Order-dependent overload resolution failure due to memorised Protocol conformance check on generic class",
+   "url": "https://github.com/microsoft/pyright/issues/11644",
+   "state": "open",
+   "created": "2026-08-15",
+   "comments": 4,
+   "query": "order in:title repo:microsoft/pyright is:issue"
+  },
+  {
+   "repo": "microsoft/pyright",
+   "number": 11549,
+   "title": "Order of additional overloads matters in subclass where it shouldnt [reportIncompatibleMethodOverride]",
+   "url": "https://github.com/microsoft/pyright/issues/11549",
+   "state": "open",
+   "created": "2026-07-17",
+   "comments": 0,
+   "query": "order in:title repo:microsoft/pyright is:issue"
+  },
+  {
+   "repo": "microsoft/pyright",
+   "number": 11303,
+   "title": "Type inference fails for application of higher-order generic function",
+   "url": "https://github.com/microsoft/pyright/issues/11303",
+   "state": "open",
+   "created": "2026-03-02",
+   "comments": 0,
+   "query": "order in:title repo:microsoft/pyright is:issue"
+  },
+  {
+   "repo": "microsoft/pyright",
+   "number": 10607,
+   "title": "Order dependent inference results with some protocols against numpy",
+   "url": "https://github.com/microsoft/pyright/issues/10607",
+   "state": "open",
+   "created": "2025-06-14",
+   "comments": 0,
+   "query": "order in:title repo:microsoft/pyright is:issue"
+  },
+  {
+   "repo": "microsoft/pyright",
+   "number": 10279,
+   "title": "Unknown Send type in generator with yield from",
+   "url": "https://github.com/microsoft/pyright/issues/10279",
+   "state": "closed",
+   "created": "2025-04-08",
+   "comments": 4,
+   "query": "references extra repo:microsoft/pyright is:issue"
+  },
+  {
+   "repo": "microsoft/pyright",
+   "number": 10414,
+   "title": "\"Type is partially unknown\" on typed functions when using `--verifytypes`, even with `--ignoreexternal`",
+   "url": "https://github.com/microsoft/pyright/issues/10414",
+   "state": "closed",
+   "created": "2025-05-05",
+   "comments": 5,
+   "query": "references extra repo:microsoft/pyright is:issue"
+  },
+  {
+   "repo": "microsoft/pyright",
+   "number": 10715,
+   "title": "@overload function gives incorrect revealed type for Pylance but not for pyright/mypy",
+   "url": "https://github.com/microsoft/pyright/issues/10715",
+   "state": "closed",
+   "created": "2025-07-16",
+   "comments": 38,
+   "query": "references extra repo:microsoft/pyright is:issue"
+  }
+ ],
+ "notes": [],
+ "authenticated": true
+}

@@ -1,0 +1,3 @@
+2026-11-18 20:45:13,469 INFO campaign_run run 18939547effa: r4_edits on rust-analyzer 2026-09-21, dandavison/delta@5ddd7fa66ee9 seed 2 settled, targets ['src/features/diff_so_fancy.rs', 'src/subcommands/show_colors.rs', 'src/tests/test_example_diffs.rs']
+2026-11-18 20:45:59,459 INFO campaign_run run 18939547effa: 0 candidate(s) in 46s; confirming
+2026-11-18 20:45:59,459 INFO campaign_run run 18939547effa finished: ok, 0 confirmed of 0 candidate(s), 46s

@@ -1,0 +1,3 @@
+2026-11-18 16:33:17,615 INFO campaign_run run 318d3ca75447: r5_transforms on pyright 1.1.414, virattt/ai-hedge-fund@7d897a002c26 seed 2 settled, targets ['hedge_fund/data/cached.py', 'hedge_fund/event_study/__main__.py', 'hedge_fund/llm/contract.py']
+2026-11-18 16:33:50,179 INFO campaign_run run 318d3ca75447: 0 candidate(s) in 33s; confirming
+2026-11-18 16:33:50,180 INFO campaign_run run 318d3ca75447 finished: ok, 0 confirmed of 0 candidate(s), 33s

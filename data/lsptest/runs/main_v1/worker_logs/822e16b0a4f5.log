@@ -1,0 +1,3 @@
+2026-09-24 11:23:19,889 INFO campaign_run run 822e16b0a4f5: r1_history on rust-analyzer 2026-09-21, rtk-ai/rtk@b748a5f75563 seed 2 settled, targets ['src/cmds/js/next_cmd.rs', 'src/cmds/python/pytest_cmd.rs', 'src/cmds/ruby/rake_cmd.rs']
+2026-09-24 11:30:49,958 INFO campaign_run run 822e16b0a4f5: 0 candidate(s) in 450s; confirming
+2026-09-24 11:30:49,958 INFO campaign_run run 822e16b0a4f5 finished: ok, 0 confirmed of 0 candidate(s), 450s

@@ -1,0 +1,3 @@
+2026-09-24 10:13:27,125 INFO campaign_run run 203ed578757b: r1_history on rust-analyzer 2026-09-21, dani-garcia/vaultwarden@cc67d644f626 seed 2 settled, targets ['src/api/core/organizations.rs', 'src/api/core/two_factor/email.rs', 'src/db/models/folder.rs']
+2026-09-24 10:22:04,531 INFO campaign_run run 203ed578757b: 0 candidate(s) in 517s; confirming
+2026-09-24 10:22:04,531 INFO campaign_run run 203ed578757b finished: ok, 0 confirmed of 0 candidate(s), 517s

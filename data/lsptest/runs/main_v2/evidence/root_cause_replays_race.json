@@ -1,0 +1,1147 @@
+{
+ "campaign": "main_v2",
+ "subcommand": "race",
+ "written": "2026-11-20 19:02",
+ "rows": [
+  {
+   "cause": "C33",
+   "campaign": "main_v2",
+   "gid": "ts6-r1-codeaction-key-lost-h8-3e0e0f",
+   "variant": "orig",
+   "ops": [
+    {
+     "kind": "open",
+     "path": "packages/web/test/hydration/spread-innerhtml.spec.tsx"
+    },
+    {
+     "kind": "request",
+     "path": "packages/web/test/hydration/spread-innerhtml.spec.tsx",
+     "start": [
+      28,
+      13
+     ],
+     "text": "typeDefinition"
+    },
+    {
+     "kind": "request",
+     "path": "packages/web/test/hydration/spread-innerhtml.spec.tsx",
+     "start": [
+      43,
+      90
+     ],
+     "text": "completion"
+    }
+   ],
+   "key": {
+    "method": "codeAction",
+    "path": "packages/web/test/hydration/spread-innerhtml.spec.tsx",
+    "line": 43,
+    "character": 13,
+    "extra": "diag:43:93"
+   },
+   "recorded_expected": [
+    [
+     "Extract to constant in enclosing scope",
+     "refactor.extract.constant"
+    ],
+    [
+     "Extract to function in module scope",
+     "refactor.extract.function"
+    ],
+    [
+     "Extract to inner function in arrow function",
+     "refactor.extract.function"
+    ],
+    [
+     "Move to a new file",
+     "refactor.move.newFile"
+    ]
+   ],
+   "recorded_actual": [
+    "missing-key"
+   ],
+   "replays": 3,
+   "settled": 3,
+   "control_stable": 3,
+   "reproduced": 3,
+   "differed": 3,
+   "runs": [
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "differed": true,
+     "seconds": 21.67,
+     "observed_expected": [
+      [
+       "Extract to constant in enclosing scope",
+       "refactor.extract.constant"
+      ],
+      [
+       "Extract to function in module scope",
+       "refactor.extract.function"
+      ],
+      [
+       "Extract to inner function in arrow function",
+       "refactor.extract.function"
+      ],
+      [
+       "Move to a new file",
+       "refactor.move.newFile"
+      ]
+     ],
+     "observed_actual": [
+      "missing-key"
+     ]
+    },
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "differed": true,
+     "seconds": 21.019,
+     "observed_expected": [
+      [
+       "Extract to constant in enclosing scope",
+       "refactor.extract.constant"
+      ],
+      [
+       "Extract to function in module scope",
+       "refactor.extract.function"
+      ],
+      [
+       "Extract to inner function in arrow function",
+       "refactor.extract.function"
+      ],
+      [
+       "Move to a new file",
+       "refactor.move.newFile"
+      ]
+     ],
+     "observed_actual": [
+      "missing-key"
+     ]
+    },
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "differed": true,
+     "seconds": 20.933,
+     "observed_expected": [
+      [
+       "Extract to constant in enclosing scope",
+       "refactor.extract.constant"
+      ],
+      [
+       "Extract to function in module scope",
+       "refactor.extract.function"
+      ],
+      [
+       "Extract to inner function in arrow function",
+       "refactor.extract.function"
+      ],
+      [
+       "Move to a new file",
+       "refactor.move.newFile"
+      ]
+     ],
+     "observed_actual": [
+      "missing-key"
+     ]
+    }
+   ],
+   "error": "",
+   "seconds": 63.6
+  },
+  {
+   "cause": "C33",
+   "campaign": "main_v2",
+   "gid": "ts6-r1-codeaction-key-lost-h8-3e0e0f",
+   "variant": "first-only",
+   "ops": [
+    {
+     "kind": "open",
+     "path": "packages/web/test/hydration/spread-innerhtml.spec.tsx"
+    },
+    {
+     "kind": "request",
+     "path": "packages/web/test/hydration/spread-innerhtml.spec.tsx",
+     "start": [
+      28,
+      13
+     ],
+     "text": "typeDefinition"
+    }
+   ],
+   "key": {
+    "method": "codeAction",
+    "path": "packages/web/test/hydration/spread-innerhtml.spec.tsx",
+    "line": 43,
+    "character": 13,
+    "extra": "diag:43:93"
+   },
+   "recorded_expected": [
+    [
+     "Extract to constant in enclosing scope",
+     "refactor.extract.constant"
+    ],
+    [
+     "Extract to function in module scope",
+     "refactor.extract.function"
+    ],
+    [
+     "Extract to inner function in arrow function",
+     "refactor.extract.function"
+    ],
+    [
+     "Move to a new file",
+     "refactor.move.newFile"
+    ]
+   ],
+   "recorded_actual": [
+    "missing-key"
+   ],
+   "replays": 3,
+   "settled": 3,
+   "control_stable": 3,
+   "reproduced": 0,
+   "differed": 0,
+   "runs": [
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": false,
+     "differed": false,
+     "seconds": 21.156
+    },
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": false,
+     "differed": false,
+     "seconds": 20.994
+    },
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": false,
+     "differed": false,
+     "seconds": 21.235
+    }
+   ],
+   "error": "",
+   "seconds": 63.4
+  },
+  {
+   "cause": "C33",
+   "campaign": "main_v2",
+   "gid": "ts6-r1-codeaction-key-lost-h8-3e0e0f",
+   "variant": "settle",
+   "ops": [
+    {
+     "kind": "open",
+     "path": "packages/web/test/hydration/spread-innerhtml.spec.tsx"
+    },
+    {
+     "kind": "settle"
+    },
+    {
+     "kind": "request",
+     "path": "packages/web/test/hydration/spread-innerhtml.spec.tsx",
+     "start": [
+      28,
+      13
+     ],
+     "text": "typeDefinition"
+    },
+    {
+     "kind": "request",
+     "path": "packages/web/test/hydration/spread-innerhtml.spec.tsx",
+     "start": [
+      43,
+      90
+     ],
+     "text": "completion"
+    }
+   ],
+   "key": {
+    "method": "codeAction",
+    "path": "packages/web/test/hydration/spread-innerhtml.spec.tsx",
+    "line": 43,
+    "character": 13,
+    "extra": "diag:43:93"
+   },
+   "recorded_expected": [
+    [
+     "Extract to constant in enclosing scope",
+     "refactor.extract.constant"
+    ],
+    [
+     "Extract to function in module scope",
+     "refactor.extract.function"
+    ],
+    [
+     "Extract to inner function in arrow function",
+     "refactor.extract.function"
+    ],
+    [
+     "Move to a new file",
+     "refactor.move.newFile"
+    ]
+   ],
+   "recorded_actual": [
+    "missing-key"
+   ],
+   "replays": 3,
+   "settled": 3,
+   "control_stable": 3,
+   "reproduced": 0,
+   "differed": 0,
+   "runs": [
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": false,
+     "differed": false,
+     "seconds": 22.959
+    },
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": false,
+     "differed": false,
+     "seconds": 23.142
+    },
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": false,
+     "differed": false,
+     "seconds": 23.262
+    }
+   ],
+   "error": "",
+   "seconds": 69.4
+  },
+  {
+   "cause": "C33",
+   "campaign": "main_v2",
+   "gid": "ts6-r1-diagnostics-moved-2875-h8-751ff9",
+   "variant": "orig",
+   "ops": [
+    {
+     "kind": "open",
+     "path": "packages/web/test/hydration/spread-innerhtml.spec.tsx"
+    },
+    {
+     "kind": "request",
+     "path": "packages/web/test/hydration/spread-innerhtml.spec.tsx",
+     "start": [
+      28,
+      13
+     ],
+     "text": "typeDefinition"
+    },
+    {
+     "kind": "request",
+     "path": "packages/web/test/hydration/spread-innerhtml.spec.tsx",
+     "start": [
+      43,
+      90
+     ],
+     "text": "completion"
+    }
+   ],
+   "key": {
+    "method": "diagnostics",
+    "path": "packages/web/test/hydration/spread-innerhtml.spec.tsx",
+    "line": -1,
+    "character": -1,
+    "extra": ""
+   },
+   "recorded_expected": [
+    [
+     5,
+     65,
+     5,
+     75,
+     1,
+     "2307",
+     "typescript",
+     "Cannot find module 'solid-js' or its corresponding type declarations."
+    ],
+    [
+     6,
+     24,
+     6,
+     38,
+     1,
+     "2307",
+     "typescript",
+     "Cannot find module '@solidjs/web' or its corresponding type declarations."
+    ],
+    [
+     43,
+     13,
+     43,
+     87,
+     1,
+     "7026",
+     "typescript",
+     "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+    ],
+    [
+     43,
+     13,
+     43,
+     93,
+     1,
+     "2875",
+     "typescript",
+     "This JSX tag requires the module path '@solidjs/web/jsx-runtime' to exist, but none could be found. Make sure you have types for the appropriate package installed."
+    ],
+    [
+     43,
+     87,
+     43,
+     93,
+     1,
+     "7026",
+     "typescript",
+     "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+    ]
+   ],
+   "recorded_actual": [
+    [
+     5,
+     65,
+     5,
+     75,
+     1,
+     "2307",
+     "typescript",
+     "Cannot find module 'solid-js' or its corresponding type declarations."
+    ],
+    [
+     6,
+     24,
+     6,
+     38,
+     1,
+     "2307",
+     "typescript",
+     "Cannot find module '@solidjs/web' or its corresponding type declarations."
+    ],
+    [
+     43,
+     13,
+     43,
+     87,
+     1,
+     "2875",
+     "typescript",
+     "This JSX tag requires the module path '@solidjs/web/jsx-runtime' to exist, but none could be found. Make sure you have types for the appropriate package installed."
+    ],
+    [
+     43,
+     13,
+     43,
+     87,
+     1,
+     "7026",
+     "typescript",
+     "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+    ],
+    [
+     43,
+     87,
+     43,
+     93,
+     1,
+     "7026",
+     "typescript",
+     "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+    ]
+   ],
+   "replays": 3,
+   "settled": 3,
+   "control_stable": 3,
+   "reproduced": 3,
+   "differed": 3,
+   "runs": [
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "differed": true,
+     "seconds": 20.305,
+     "observed_expected": [
+      [
+       5,
+       65,
+       5,
+       75,
+       1,
+       "2307",
+       "typescript",
+       "Cannot find module 'solid-js' or its corresponding type declarations."
+      ],
+      [
+       6,
+       24,
+       6,
+       38,
+       1,
+       "2307",
+       "typescript",
+       "Cannot find module '@solidjs/web' or its corresponding type declarations."
+      ],
+      [
+       43,
+       13,
+       43,
+       87,
+       1,
+       "7026",
+       "typescript",
+       "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+      ],
+      [
+       43,
+       13,
+       43,
+       93,
+       1,
+       "2875",
+       "typescript",
+       "This JSX tag requires the module path '@solidjs/web/jsx-runtime' to exist, but none could be found. Make sure you have types for the appropriate package installed."
+      ],
+      [
+       43,
+       87,
+       43,
+       93,
+       1,
+       "7026",
+       "typescript",
+       "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+      ]
+     ],
+     "observed_actual": [
+      [
+       5,
+       65,
+       5,
+       75,
+       1,
+       "2307",
+       "typescript",
+       "Cannot find module 'solid-js' or its corresponding type declarations."
+      ],
+      [
+       6,
+       24,
+       6,
+       38,
+       1,
+       "2307",
+       "typescript",
+       "Cannot find module '@solidjs/web' or its corresponding type declarations."
+      ],
+      [
+       43,
+       13,
+       43,
+       87,
+       1,
+       "2875",
+       "typescript",
+       "This JSX tag requires the module path '@solidjs/web/jsx-runtime' to exist, but none could be found. Make sure you have types for the appropriate package installed."
+      ],
+      [
+       43,
+       13,
+       43,
+       87,
+       1,
+       "7026",
+       "typescript",
+       "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+      ],
+      [
+       43,
+       87,
+       43,
+       93,
+       1,
+       "7026",
+       "typescript",
+       "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+      ]
+     ]
+    },
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "differed": true,
+     "seconds": 20.656,
+     "observed_expected": [
+      [
+       5,
+       65,
+       5,
+       75,
+       1,
+       "2307",
+       "typescript",
+       "Cannot find module 'solid-js' or its corresponding type declarations."
+      ],
+      [
+       6,
+       24,
+       6,
+       38,
+       1,
+       "2307",
+       "typescript",
+       "Cannot find module '@solidjs/web' or its corresponding type declarations."
+      ],
+      [
+       43,
+       13,
+       43,
+       87,
+       1,
+       "7026",
+       "typescript",
+       "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+      ],
+      [
+       43,
+       13,
+       43,
+       93,
+       1,
+       "2875",
+       "typescript",
+       "This JSX tag requires the module path '@solidjs/web/jsx-runtime' to exist, but none could be found. Make sure you have types for the appropriate package installed."
+      ],
+      [
+       43,
+       87,
+       43,
+       93,
+       1,
+       "7026",
+       "typescript",
+       "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+      ]
+     ],
+     "observed_actual": [
+      [
+       5,
+       65,
+       5,
+       75,
+       1,
+       "2307",
+       "typescript",
+       "Cannot find module 'solid-js' or its corresponding type declarations."
+      ],
+      [
+       6,
+       24,
+       6,
+       38,
+       1,
+       "2307",
+       "typescript",
+       "Cannot find module '@solidjs/web' or its corresponding type declarations."
+      ],
+      [
+       43,
+       13,
+       43,
+       87,
+       1,
+       "2875",
+       "typescript",
+       "This JSX tag requires the module path '@solidjs/web/jsx-runtime' to exist, but none could be found. Make sure you have types for the appropriate package installed."
+      ],
+      [
+       43,
+       13,
+       43,
+       87,
+       1,
+       "7026",
+       "typescript",
+       "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+      ],
+      [
+       43,
+       87,
+       43,
+       93,
+       1,
+       "7026",
+       "typescript",
+       "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+      ]
+     ]
+    },
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "differed": true,
+     "seconds": 20.591,
+     "observed_expected": [
+      [
+       5,
+       65,
+       5,
+       75,
+       1,
+       "2307",
+       "typescript",
+       "Cannot find module 'solid-js' or its corresponding type declarations."
+      ],
+      [
+       6,
+       24,
+       6,
+       38,
+       1,
+       "2307",
+       "typescript",
+       "Cannot find module '@solidjs/web' or its corresponding type declarations."
+      ],
+      [
+       43,
+       13,
+       43,
+       87,
+       1,
+       "7026",
+       "typescript",
+       "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+      ],
+      [
+       43,
+       13,
+       43,
+       93,
+       1,
+       "2875",
+       "typescript",
+       "This JSX tag requires the module path '@solidjs/web/jsx-runtime' to exist, but none could be found. Make sure you have types for the appropriate package installed."
+      ],
+      [
+       43,
+       87,
+       43,
+       93,
+       1,
+       "7026",
+       "typescript",
+       "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+      ]
+     ],
+     "observed_actual": [
+      [
+       5,
+       65,
+       5,
+       75,
+       1,
+       "2307",
+       "typescript",
+       "Cannot find module 'solid-js' or its corresponding type declarations."
+      ],
+      [
+       6,
+       24,
+       6,
+       38,
+       1,
+       "2307",
+       "typescript",
+       "Cannot find module '@solidjs/web' or its corresponding type declarations."
+      ],
+      [
+       43,
+       13,
+       43,
+       87,
+       1,
+       "2875",
+       "typescript",
+       "This JSX tag requires the module path '@solidjs/web/jsx-runtime' to exist, but none could be found. Make sure you have types for the appropriate package installed."
+      ],
+      [
+       43,
+       13,
+       43,
+       87,
+       1,
+       "7026",
+       "typescript",
+       "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+      ],
+      [
+       43,
+       87,
+       43,
+       93,
+       1,
+       "7026",
+       "typescript",
+       "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+      ]
+     ]
+    }
+   ],
+   "error": "",
+   "seconds": 61.6
+  },
+  {
+   "cause": "C33",
+   "campaign": "main_v2",
+   "gid": "ts6-r1-diagnostics-moved-2875-h8-751ff9",
+   "variant": "first-only",
+   "ops": [
+    {
+     "kind": "open",
+     "path": "packages/web/test/hydration/spread-innerhtml.spec.tsx"
+    },
+    {
+     "kind": "request",
+     "path": "packages/web/test/hydration/spread-innerhtml.spec.tsx",
+     "start": [
+      28,
+      13
+     ],
+     "text": "typeDefinition"
+    }
+   ],
+   "key": {
+    "method": "diagnostics",
+    "path": "packages/web/test/hydration/spread-innerhtml.spec.tsx",
+    "line": -1,
+    "character": -1,
+    "extra": ""
+   },
+   "recorded_expected": [
+    [
+     5,
+     65,
+     5,
+     75,
+     1,
+     "2307",
+     "typescript",
+     "Cannot find module 'solid-js' or its corresponding type declarations."
+    ],
+    [
+     6,
+     24,
+     6,
+     38,
+     1,
+     "2307",
+     "typescript",
+     "Cannot find module '@solidjs/web' or its corresponding type declarations."
+    ],
+    [
+     43,
+     13,
+     43,
+     87,
+     1,
+     "7026",
+     "typescript",
+     "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+    ],
+    [
+     43,
+     13,
+     43,
+     93,
+     1,
+     "2875",
+     "typescript",
+     "This JSX tag requires the module path '@solidjs/web/jsx-runtime' to exist, but none could be found. Make sure you have types for the appropriate package installed."
+    ],
+    [
+     43,
+     87,
+     43,
+     93,
+     1,
+     "7026",
+     "typescript",
+     "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+    ]
+   ],
+   "recorded_actual": [
+    [
+     5,
+     65,
+     5,
+     75,
+     1,
+     "2307",
+     "typescript",
+     "Cannot find module 'solid-js' or its corresponding type declarations."
+    ],
+    [
+     6,
+     24,
+     6,
+     38,
+     1,
+     "2307",
+     "typescript",
+     "Cannot find module '@solidjs/web' or its corresponding type declarations."
+    ],
+    [
+     43,
+     13,
+     43,
+     87,
+     1,
+     "2875",
+     "typescript",
+     "This JSX tag requires the module path '@solidjs/web/jsx-runtime' to exist, but none could be found. Make sure you have types for the appropriate package installed."
+    ],
+    [
+     43,
+     13,
+     43,
+     87,
+     1,
+     "7026",
+     "typescript",
+     "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+    ],
+    [
+     43,
+     87,
+     43,
+     93,
+     1,
+     "7026",
+     "typescript",
+     "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+    ]
+   ],
+   "replays": 3,
+   "settled": 3,
+   "control_stable": 3,
+   "reproduced": 0,
+   "differed": 0,
+   "runs": [
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": false,
+     "differed": false,
+     "seconds": 20.607
+    },
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": false,
+     "differed": false,
+     "seconds": 20.663
+    },
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": false,
+     "differed": false,
+     "seconds": 20.553
+    }
+   ],
+   "error": "",
+   "seconds": 61.8
+  },
+  {
+   "cause": "C33",
+   "campaign": "main_v2",
+   "gid": "ts6-r1-diagnostics-moved-2875-h8-751ff9",
+   "variant": "settle",
+   "ops": [
+    {
+     "kind": "open",
+     "path": "packages/web/test/hydration/spread-innerhtml.spec.tsx"
+    },
+    {
+     "kind": "settle"
+    },
+    {
+     "kind": "request",
+     "path": "packages/web/test/hydration/spread-innerhtml.spec.tsx",
+     "start": [
+      28,
+      13
+     ],
+     "text": "typeDefinition"
+    },
+    {
+     "kind": "request",
+     "path": "packages/web/test/hydration/spread-innerhtml.spec.tsx",
+     "start": [
+      43,
+      90
+     ],
+     "text": "completion"
+    }
+   ],
+   "key": {
+    "method": "diagnostics",
+    "path": "packages/web/test/hydration/spread-innerhtml.spec.tsx",
+    "line": -1,
+    "character": -1,
+    "extra": ""
+   },
+   "recorded_expected": [
+    [
+     5,
+     65,
+     5,
+     75,
+     1,
+     "2307",
+     "typescript",
+     "Cannot find module 'solid-js' or its corresponding type declarations."
+    ],
+    [
+     6,
+     24,
+     6,
+     38,
+     1,
+     "2307",
+     "typescript",
+     "Cannot find module '@solidjs/web' or its corresponding type declarations."
+    ],
+    [
+     43,
+     13,
+     43,
+     87,
+     1,
+     "7026",
+     "typescript",
+     "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+    ],
+    [
+     43,
+     13,
+     43,
+     93,
+     1,
+     "2875",
+     "typescript",
+     "This JSX tag requires the module path '@solidjs/web/jsx-runtime' to exist, but none could be found. Make sure you have types for the appropriate package installed."
+    ],
+    [
+     43,
+     87,
+     43,
+     93,
+     1,
+     "7026",
+     "typescript",
+     "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+    ]
+   ],
+   "recorded_actual": [
+    [
+     5,
+     65,
+     5,
+     75,
+     1,
+     "2307",
+     "typescript",
+     "Cannot find module 'solid-js' or its corresponding type declarations."
+    ],
+    [
+     6,
+     24,
+     6,
+     38,
+     1,
+     "2307",
+     "typescript",
+     "Cannot find module '@solidjs/web' or its corresponding type declarations."
+    ],
+    [
+     43,
+     13,
+     43,
+     87,
+     1,
+     "2875",
+     "typescript",
+     "This JSX tag requires the module path '@solidjs/web/jsx-runtime' to exist, but none could be found. Make sure you have types for the appropriate package installed."
+    ],
+    [
+     43,
+     13,
+     43,
+     87,
+     1,
+     "7026",
+     "typescript",
+     "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+    ],
+    [
+     43,
+     87,
+     43,
+     93,
+     1,
+     "7026",
+     "typescript",
+     "JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists."
+    ]
+   ],
+   "replays": 3,
+   "settled": 3,
+   "control_stable": 3,
+   "reproduced": 0,
+   "differed": 0,
+   "runs": [
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": false,
+     "differed": false,
+     "seconds": 22.6
+    },
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": false,
+     "differed": false,
+     "seconds": 22.703
+    },
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": false,
+     "differed": false,
+     "seconds": 22.717
+    }
+   ],
+   "error": "",
+   "seconds": 68.0
+  }
+ ]
+}

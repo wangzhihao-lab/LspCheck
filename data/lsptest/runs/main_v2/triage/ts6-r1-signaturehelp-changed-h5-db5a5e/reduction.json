@@ -1,0 +1,47 @@
+{
+ "vid": "83d8f26e74ae-v00",
+ "ops_before": 5,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 6,
+ "cache_hits": 0,
+ "reduce_seconds": 169.663,
+ "budget_exhausted": false,
+ "probe_log": [
+  [
+   4,
+   false
+  ],
+  [
+   4,
+   false
+  ],
+  [
+   4,
+   true
+  ],
+  [
+   3,
+   false
+  ],
+  [
+   3,
+   true
+  ],
+  [
+   1,
+   true
+  ]
+ ],
+ "logs": [
+  "ts6-6.0.3-trdb5a5e-replay-baseline-20261119-015220-9df85d.jsonl.gz",
+  "ts6-6.0.3-trdb5a5e-replay-control-20261119-015220-9f4d61.jsonl.gz",
+  "ts6-6.0.3-trdb5a5e-replay-history-20261119-015239-62c47a.jsonl.gz"
+ ],
+ "observed": {
+  "expected": "object(shape?: { name: z.ZodString; provider: z.ZodType<ProviderName, unknown, z.core.$ZodTypeInternals<ProviderName, unknown>>; models: z.ZodArray<z.ZodString>; apiKeyEnv: z.ZodOptional<...>; baseUrlEnv: z.ZodOptional<...>; default: z.ZodOptional<...>; } | undefined, params?: string | { error?: string | z.core.$ZodErrorMap<NonNullable<z.core.$ZodIssueInvalidType<unknown> | z.core.$ZodIssueUnrecognizedKeys>> | undefined; message?: string | undefined | undefined; } | undefined): z.ZodObject<{ name: z.ZodString; provider: z.ZodType<ProviderName, unknown, z.core.$ZodTypeInternals<ProviderName, unknown>>; models: z.ZodArray<z.ZodString>; apiKeyEnv: z.ZodOptional<...>; baseUrlEnv: z.ZodOptional<...>; default: z.ZodOptional<...>; }, z.core.$strip>",
+  "actual": "object(shape?: { name: z.ZodString; provider: z.ZodType<ProviderName, unknown, z.core.$ZodTypeInternals<ProviderName, unknown>>; models: z.ZodArray<z.ZodString>; apiKeyEnv: z.ZodOptional<...>; baseUrlEnv: z.ZodOptional<...>; default: z.ZodOptional<...>; } | undefined, params?: string | { error?: string | z.core.$ZodErrorMap<NonNullable<z.core.$ZodIssueUnrecognizedKeys | z.core.$ZodIssueInvalidType<unknown>>> | undefined; message?: string | undefined | undefined; } | undefined): z.ZodObject<{ name: z.ZodString; provider: z.ZodType<ProviderName, unknown, z.core.$ZodTypeInternals<ProviderName, unknown>>; models: z.ZodArray<z.ZodString>; apiKeyEnv: z.ZodOptional<...>; baseUrlEnv: z.ZodOptional<...>; default: z.ZodOptional<...>; }, z.core.$strip>"
+ },
+ "ops_after": 1,
+ "total_seconds": 314.5
+}

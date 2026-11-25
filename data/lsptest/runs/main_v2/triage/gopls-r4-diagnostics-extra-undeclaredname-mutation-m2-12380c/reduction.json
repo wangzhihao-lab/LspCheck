@@ -1,0 +1,52 @@
+{
+ "vid": "f373be50b7d7-v01",
+ "ops_before": 3,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 2,
+ "cache_hits": 0,
+ "reduce_seconds": 3.13,
+ "budget_exhausted": false,
+ "probe_log": [
+  [
+   2,
+   false
+  ],
+  [
+   2,
+   false
+  ]
+ ],
+ "logs": [
+  "gopls-v0.23.0-tr12380c-r4-replay-baseline-20261119-001008-239c48.jsonl.gz",
+  "gopls-v0.23.0-tr12380c-r4-replay-case-20261119-001000-51c62f.jsonl.gz",
+  "gopls-v0.23.0-tr12380c-r4-replay-control-20261119-001013-966f15.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [],
+  "actual": [
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "UndeclaredName",
+    "compiler",
+    "undefined: qemuArch"
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "UndeclaredName",
+    "compiler",
+    "undefined: qemurch"
+   ]
+  ]
+ },
+ "ops_after": 3,
+ "total_seconds": 65.8
+}

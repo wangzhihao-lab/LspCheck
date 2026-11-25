@@ -1,0 +1,513 @@
+{
+ "format": 1,
+ "campaign": "main_v2",
+ "vid": "a1d24603cbb6-v00",
+ "run_id": "a1d24603cbb6",
+ "oracle": "r1_history",
+ "server": {
+  "kind": "ts6",
+  "version": "6.0.3"
+ },
+ "project": {
+  "name": "hexojs/hexo@751e856691bf",
+  "source": "corpus",
+  "ref": "temp/corpus/hexojs__hexo@751e856691bf",
+  "commit": "751e856691bfe24182cf8763feb29db0422dcfee",
+  "language": "typescript"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "lib/hexo/scaffold.ts",
+    "positions": [
+     [
+      0,
+      12
+     ],
+     [
+      6,
+      10
+     ],
+     [
+      24,
+      10
+     ],
+     [
+      34,
+      23
+     ],
+     [
+      46,
+      8
+     ],
+     [
+      50,
+      29
+     ],
+     [
+      50,
+      60
+     ],
+     [
+      53,
+      8
+     ],
+     [
+      56,
+      19
+     ],
+     [
+      60,
+      22
+     ],
+     [
+      68,
+      14
+     ],
+     [
+      75,
+      22
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      16
+     ],
+     [
+      6,
+      14
+     ],
+     [
+      24,
+      12
+     ],
+     [
+      34,
+      29
+     ],
+     [
+      46,
+      14
+     ],
+     [
+      50,
+      31
+     ],
+     [
+      50,
+      62
+     ],
+     [
+      53,
+      10
+     ],
+     [
+      56,
+      23
+     ],
+     [
+      60,
+      26
+     ],
+     [
+      68,
+      18
+     ],
+     [
+      75,
+      28
+     ]
+    ],
+    "names": [
+     "extname",
+     "Scaffold",
+     "join",
+     "scaffoldDir",
+     "_getScaffold",
+     "then",
+     "item",
+     "name",
+     "readFile",
+     "callback",
+     "extname",
+     "_getScaffold"
+    ]
+   },
+   {
+    "path": "test/fixtures/post_render.ts",
+    "positions": [
+     [
+      2,
+      8
+     ],
+     [
+      7,
+      16
+     ],
+     [
+      22,
+      4
+     ],
+     [
+      24,
+      17
+     ],
+     [
+      26,
+      14
+     ],
+     [
+      34,
+      4
+     ],
+     [
+      38,
+      6
+     ],
+     [
+      38,
+      14
+     ],
+     [
+      61,
+      4
+     ],
+     [
+      65,
+      43
+     ],
+     [
+      65,
+      67
+     ],
+     [
+      79,
+      4
+     ]
+    ],
+    "ends": [
+     [
+      2,
+      10
+     ],
+     [
+      7,
+      20
+     ],
+     [
+      22,
+      6
+     ],
+     [
+      24,
+      21
+     ],
+     [
+      26,
+      16
+     ],
+     [
+      34,
+      6
+     ],
+     [
+      38,
+      11
+     ],
+     [
+      38,
+      16
+     ],
+     [
+      61,
+      6
+     ],
+     [
+      65,
+      47
+     ],
+     [
+      65,
+      71
+     ],
+     [
+      79,
+      6
+     ]
+    ],
+    "names": [
+     "code",
+     "content",
+     "join",
+     "expected",
+     "code",
+     "join",
+     "highlight",
+     "code",
+     "join",
+     "replace",
+     "replace",
+     "join"
+    ]
+   },
+   {
+    "path": "test/scripts/tags/blockquote.ts",
+    "positions": [
+     [
+      0,
+      14
+     ],
+     [
+      5,
+      27
+     ],
+     [
+      5,
+      37
+     ],
+     [
+      7,
+      17
+     ],
+     [
+      16,
+      3
+     ],
+     [
+      22,
+      20
+     ],
+     [
+      31,
+      3
+     ],
+     [
+      32,
+      20
+     ],
+     [
+      37,
+      20
+     ],
+     [
+      39,
+      20
+     ],
+     [
+      40,
+      14
+     ],
+     [
+      42,
+      12
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      16
+     ],
+     [
+      5,
+      34
+     ],
+     [
+      5,
+      39
+     ],
+     [
+      7,
+      19
+     ],
+     [
+      16,
+      4
+     ],
+     [
+      22,
+      21
+     ],
+     [
+      31,
+      4
+     ],
+     [
+      32,
+      21
+     ],
+     [
+      37,
+      25
+     ],
+     [
+      39,
+      21
+     ],
+     [
+      40,
+      17
+     ],
+     [
+      42,
+      15
+     ]
+    ],
+    "names": [
+     "from",
+     "tagBlockquote",
+     "hexo",
+     "hexo",
+     "it",
+     "bq",
+     "it",
+     "bq",
+     "titlecase",
+     "bq",
+     "should",
+     "config"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "codeAction",
+  "path": "test/scripts/tags/blockquote.ts",
+  "line": 3,
+  "character": 0,
+  "extra": "diag:3:8"
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "lib/hexo/scaffold.ts"
+  },
+  {
+   "kind": "open",
+   "path": "test/fixtures/post_render.ts"
+  },
+  {
+   "kind": "open",
+   "path": "test/scripts/tags/blockquote.ts"
+  },
+  {
+   "kind": "fs_rename",
+   "path": "lib/hexo/scaffold.ts",
+   "new_path": "lib/hexo/scaffold_rt.ts"
+  },
+  {
+   "kind": "fs_rename",
+   "path": "lib/hexo/scaffold_rt.ts",
+   "new_path": "lib/hexo/scaffold.ts"
+  }
+ ],
+ "case": {
+  "chain_step": 0,
+  "families": [],
+  "family": "H5",
+  "history_index": 1,
+  "history_seed": 2002,
+  "mode": "fresh",
+  "note": "rename lib/hexo/scaffold.ts -> lib/hexo/scaffold_rt.ts -> back",
+  "seed": 2,
+  "timing": "settled"
+ },
+ "shape": "codeAction:extra",
+ "signature": "ts6|r1_history|codeAction:extra",
+ "expected": [
+  [
+   "Move to a new file",
+   "refactor.move.newFile"
+  ]
+ ],
+ "actual": [
+  [
+   "Add all missing imports",
+   "quickfix"
+  ],
+  [
+   "Add import from \"node:test\"",
+   "quickfix"
+  ],
+  [
+   "Move to a new file",
+   "refactor.move.newFile"
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "H5: rename lib/hexo/scaffold.ts -> lib/hexo/scaffold_rt.ts -> back; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 154s",
+ "violation": {
+  "oracle": "r1_history",
+  "server": "ts6-6.0.3",
+  "project": "hexojs/hexo@751e856691bf",
+  "key": {
+   "method": "codeAction",
+   "path": "test/scripts/tags/blockquote.ts",
+   "line": 3,
+   "character": 0,
+   "extra": "diag:3:8"
+  },
+  "expected": [
+   [
+    "Move to a new file",
+    "refactor.move.newFile"
+   ]
+  ],
+  "actual": [
+   [
+    "Add all missing imports",
+    "quickfix"
+   ],
+   [
+    "Add import from \"node:test\"",
+    "quickfix"
+   ],
+   [
+    "Move to a new file",
+    "refactor.move.newFile"
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "lib/hexo/scaffold.ts"
+   },
+   {
+    "kind": "open",
+    "path": "test/fixtures/post_render.ts"
+   },
+   {
+    "kind": "open",
+    "path": "test/scripts/tags/blockquote.ts"
+   },
+   {
+    "kind": "fs_rename",
+    "path": "lib/hexo/scaffold.ts",
+    "new_path": "lib/hexo/scaffold_rt.ts"
+   },
+   {
+    "kind": "fs_rename",
+    "path": "lib/hexo/scaffold_rt.ts",
+    "new_path": "lib/hexo/scaffold.ts"
+   }
+  ],
+  "detail": "{\"case\": {\"chain_step\": 0, \"families\": [], \"family\": \"H5\", \"history_index\": 1, \"history_seed\": 2002, \"mode\": \"fresh\", \"note\": \"rename lib/hexo/scaffold.ts -> lib/hexo/scaffold_rt.ts -> back\", \"seed\": 2, \"timing\": \"settled\"}, \"note\": \"H5: rename lib/hexo/scaffold.ts -> lib/hexo/scaffold_rt.ts -> back; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 154s\", \"shape\": \"codeAction:extra\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "ts6|r1_history|codeAction:extra",
+  "run_id": "a1d24603cbb6"
+ },
+ "replay_logs": [
+  "logs/ts6-6.0.3-a1d24603cbb6-replay-baseline-20261118-142954-0bc36f.jsonl.gz",
+  "logs/ts6-6.0.3-a1d24603cbb6-replay-control-20261118-142954-07a303.jsonl.gz",
+  "logs/ts6-6.0.3-a1d24603cbb6-replay-history-20261118-143002-06a35a.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

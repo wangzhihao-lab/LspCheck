@@ -1,0 +1,3 @@
+2026-09-24 08:55:46,940 INFO campaign_run run b31a84098af6: r1_history on rust-analyzer 2026-09-21, FuelLabs/fuels-rs@d9a250a51818 seed 1 race200, targets ['e2e/tests/contracts.rs', 'packages/fuels-core/src/types/wrappers/input.rs', 'packages/fuels-macros/src/setup_program_test/parsing/commands.rs']
+2026-09-24 09:03:31,958 INFO campaign_run run b31a84098af6: 0 candidate(s) in 465s; confirming
+2026-09-24 09:03:31,959 INFO campaign_run run b31a84098af6 finished: ok, 0 confirmed of 0 candidate(s), 465s

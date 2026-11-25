@@ -1,0 +1,176 @@
+{
+ "format": 1,
+ "campaign": "bench_v1",
+ "vid": "1dac3ec4521c-v00",
+ "run_id": "1dac3ec4521c",
+ "oracle": "r4_edits",
+ "server": {
+  "kind": "rust-analyzer",
+  "version": "2023-06-12"
+ },
+ "project": {
+  "name": "rust-analyzer-14841",
+  "source": "dir",
+  "ref": "data/lsp_bench/cases/rust-analyzer-14841/project",
+  "commit": "",
+  "language": "rust"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 240.0,
+  "request_timeout_s": 60.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "src/main.rs",
+    "positions": [
+     [
+      0,
+      5
+     ],
+     [
+      1,
+      8
+     ],
+     [
+      2,
+      7
+     ],
+     [
+      2,
+      24
+     ],
+     [
+      2,
+      28
+     ],
+     [
+      2,
+      39
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      7
+     ],
+     [
+      1,
+      9
+     ],
+     [
+      2,
+      10
+     ],
+     [
+      2,
+      25
+     ],
+     [
+      2,
+      30
+     ],
+     [
+      2,
+      40
+     ]
+    ],
+    "names": [
+     "main",
+     "a",
+     "format",
+     "a",
+     "vec",
+     "a"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "completionInsert",
+  "path": "src/main.rs",
+  "line": 2,
+  "character": 10,
+  "extra": "format(…) (use std::fmt::format)"
+ },
+ "ops": [],
+ "case": {
+  "character": 10,
+  "edits": [
+   {
+    "newText": "format(args)",
+    "range": {
+     "end": {
+      "character": 10,
+      "line": 2
+     },
+     "start": {
+      "character": 4,
+      "line": 2
+     }
+    }
+   },
+   {
+    "newText": "use std::fmt::format;\n\n",
+    "range": {
+     "end": {
+      "character": 0,
+      "line": 0
+     },
+     "start": {
+      "character": 0,
+      "line": 0
+     }
+    }
+   }
+  ],
+  "excerpt": "    format(args)!(\"{} {} {}\", a, vec![2, 3], a);",
+  "item_kind": 3,
+  "kind": "completion",
+  "label": "format(…) (use std::fmt::format)",
+  "line": 2,
+  "name": "format",
+  "new_errors": [
+   "5:17: expected one of `.`, `;`, `?`, `}`, or an operator, found `!`"
+  ],
+  "path": "src/main.rs"
+ },
+ "shape": "completionInsert:gained",
+ "signature": "rust-analyzer|r4_edits|completionInsert:gained",
+ "expected": [],
+ "actual": [
+  "expected one of `.`, `;`, `?`, `}`, or an operator, found `!`"
+ ],
+ "reproduced": "3/3",
+ "note": "accepting completion item 'format(…) (use std::fmt::format)' (kind 3) after 'format' at src/main.rs:3:11 introduces ['5:17: expected one of `.`, `;`, `?`, `}`, or an operator, found `!`']; confirmed in a fresh session on the original content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 39s",
+ "violation": {
+  "oracle": "r4_edits",
+  "server": "rust-analyzer-2023-06-12",
+  "project": "rust-analyzer-14841",
+  "key": {
+   "method": "completionInsert",
+   "path": "src/main.rs",
+   "line": 2,
+   "character": 10,
+   "extra": "format(…) (use std::fmt::format)"
+  },
+  "expected": [],
+  "actual": [
+   "expected one of `.`, `;`, `?`, `}`, or an operator, found `!`"
+  ],
+  "ops": [],
+  "detail": "{\"case\": {\"character\": 10, \"edits\": [{\"newText\": \"format(args)\", \"range\": {\"end\": {\"character\": 10, \"line\": 2}, \"start\": {\"character\": 4, \"line\": 2}}}, {\"newText\": \"use std::fmt::format;\\n\\n\", \"range\": {\"end\": {\"character\": 0, \"line\": 0}, \"start\": {\"character\": 0, \"line\": 0}}}], \"excerpt\": \"    format(args)!(\\\"{} {} {}\\\", a, vec![2, 3], a);\", \"item_kind\": 3, \"kind\": \"completion\", \"label\": \"format(\\u2026) (use std::fmt::format)\", \"line\": 2, \"name\": \"format\", \"new_errors\": [\"5:17: expected one of `.`, `;`, `?`, `}`, or an operator, found `!`\"], \"path\": \"src/main.rs\"}, \"note\": \"accepting completion item 'format(\\u2026) (use std::fmt::format)' (kind 3) after 'format' at src/main.rs:3:11 introduces ['5:17: expected one of `.`, `;`, `?`, `}`, or an operator, found `!`']; confirmed in a fresh session on the original content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 39s\", \"shape\": \"completionInsert:gained\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "rust-analyzer|r4_edits|completionInsert:gained",
+  "run_id": "1dac3ec4521c"
+ },
+ "replay_logs": [
+  "logs/rust-analyzer-2023-06-12-1dac3ec4521c-r4-replay-case-20260925-135751-9a1969.jsonl.gz",
+  "logs/rust-analyzer-2023-06-12-1dac3ec4521c-r4-replay-control-20260925-135757-46b75c.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

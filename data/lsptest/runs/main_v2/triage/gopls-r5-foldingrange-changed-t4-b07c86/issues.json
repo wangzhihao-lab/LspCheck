@@ -1,0 +1,82 @@
+{
+ "queries": [
+  "CRLF in:title repo:golang/go is:issue label:gopls",
+  "\"folding range\" wrong repo:golang/go is:issue label:gopls",
+  "\"folding range\" CRLF repo:golang/go is:issue label:gopls",
+  "\"folding range\" whitespace repo:golang/go is:issue label:gopls"
+ ],
+ "matches": [
+  {
+   "repo": "golang/go",
+   "number": 80666,
+   "title": "x/tools/gopls: assembly identifier positions drift in CRLF files",
+   "url": "https://github.com/golang/go/issues/80666",
+   "state": "closed",
+   "created": "2026-07-31",
+   "comments": 3,
+   "query": "CRLF in:title repo:golang/go is:issue label:gopls"
+  },
+  {
+   "repo": "golang/go",
+   "number": 47200,
+   "title": "x/tools/gopls: autoimport doesn't work properly in VS Code when using CRLF line endings",
+   "url": "https://github.com/golang/go/issues/47200",
+   "state": "closed",
+   "created": "2021-07-14",
+   "comments": 4,
+   "query": "CRLF in:title repo:golang/go is:issue label:gopls"
+  },
+  {
+   "repo": "golang/go",
+   "number": 46791,
+   "title": "x/tools/gopls: unimported completions produces invalid edits with windows line endings when CRLF is used",
+   "url": "https://github.com/golang/go/issues/46791",
+   "state": "closed",
+   "created": "2021-05-09",
+   "comments": 32,
+   "query": "CRLF in:title repo:golang/go is:issue label:gopls"
+  },
+  {
+   "repo": "golang/go",
+   "number": 42923,
+   "title": "x/tools/gopls: comments duplicated with CRLF files",
+   "url": "https://github.com/golang/go/issues/42923",
+   "state": "closed",
+   "created": "2020-12-01",
+   "comments": 8,
+   "query": "CRLF in:title repo:golang/go is:issue label:gopls"
+  },
+  {
+   "repo": "golang/go",
+   "number": 41057,
+   "title": "x/tools/gopls: bad formatting with CRLF line ending",
+   "url": "https://github.com/golang/go/issues/41057",
+   "state": "closed",
+   "created": "2020-08-27",
+   "comments": 2,
+   "query": "CRLF in:title repo:golang/go is:issue label:gopls"
+  },
+  {
+   "repo": "golang/go",
+   "number": 71489,
+   "title": "x/tools/gopls: FoldingRange omitempty causes EndCharacter=0 to be omitted, changing its semantics in clients that distinguish 0 from missing",
+   "url": "https://github.com/golang/go/issues/71489",
+   "state": "closed",
+   "created": "2025-01-30",
+   "comments": 15,
+   "query": "\"folding range\" wrong repo:golang/go is:issue label:gopls"
+  },
+  {
+   "repo": "golang/go",
+   "number": 79524,
+   "title": "x/tools/gopls: semantic tokens no longer returned (regression in v0.22.0)",
+   "url": "https://github.com/golang/go/issues/79524",
+   "state": "closed",
+   "created": "2026-05-19",
+   "comments": 11,
+   "query": "\"folding range\" wrong repo:golang/go is:issue label:gopls"
+  }
+ ],
+ "notes": [],
+ "authenticated": true
+}

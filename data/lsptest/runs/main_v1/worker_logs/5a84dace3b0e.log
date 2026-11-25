@@ -1,0 +1,3 @@
+2026-09-23 21:27:26,548 INFO campaign_run run 5a84dace3b0e: r5_transforms on rust-analyzer 2026-09-21, rtk-ai/rtk@b748a5f75563 seed 1 settled, targets ['src/cmds/js/next_cmd.rs', 'src/cmds/system/env_cmd.rs', 'src/parser/types.rs']
+2026-09-23 21:34:05,170 INFO campaign_run run 5a84dace3b0e: 0 candidate(s) in 399s; confirming
+2026-09-23 21:34:05,171 INFO campaign_run run 5a84dace3b0e finished: ok, 0 confirmed of 0 candidate(s), 399s

@@ -1,0 +1,16 @@
+{
+    "title": "LspCheck: replication package of \"Testing Language Servers without Ground Truth: Functional Relations over the Language Server Protocol\"",
+    "upload_type": "software",
+    "description": "<p>The replication package of the paper <em>Testing Language Servers without Ground Truth: Functional Relations over the Language Server Protocol</em>. It contains the tool LspCheck, the benchmark of reproducible historical language-server bugs, the data of the campaigns on the current releases of pyright, TypeScript 6 and 7, rust-analyzer and gopls over two corpora of open-source projects and of the benchmark campaign, the verdicts of both raters and the verdicts they agreed on in discussion, the independent checks of the candidate bugs, and the scripts that compute every number and appendix table of the paper from these data.</p><p>Code: MIT License. Data: CC BY 4.0, except the benchmark programs and issue excerpts, which keep the terms of their sources (see README.md and LICENSE-DATA.md).</p>",
+    "creators": [
+        {"name": "Wang, Zhihao", "affiliation": "Shandong University of Finance and Economics"},
+        {"name": "Ren, Min", "affiliation": "Shandong University of Finance and Economics"},
+        {"name": "Liang, Xia", "affiliation": "Shandong University of Finance and Economics"},
+        {"name": "Li, Gaoyong", "affiliation": "Shandong University of Finance and Economics"},
+        {"name": "Ding, Ding", "affiliation": "Intuit"}
+    ],
+    "access_right": "open",
+    "license": "mit",
+    "keywords": ["language server protocol", "software testing", "test oracles", "metamorphic testing", "differential testing"],
+    "language": "eng"
+}

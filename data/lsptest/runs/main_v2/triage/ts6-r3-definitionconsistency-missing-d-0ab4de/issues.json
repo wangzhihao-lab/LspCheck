@@ -1,0 +1,96 @@
+{
+ "queries": [
+  "\"go to definition\" in:title repo:typescript-language-server/typescript-language-server is:issue",
+  "definition missing repo:typescript-language-server/typescript-language-server is:issue",
+  "definition \"go to definition\" repo:typescript-language-server/typescript-language-server is:issue",
+  "definition inconsistent repo:typescript-language-server/typescript-language-server is:issue",
+  "\"go to definition\" in:title repo:microsoft/TypeScript is:issue",
+  "definition missing repo:microsoft/TypeScript is:issue",
+  "definition \"go to definition\" repo:microsoft/TypeScript is:issue",
+  "definition inconsistent repo:microsoft/TypeScript is:issue"
+ ],
+ "matches": [
+  {
+   "repo": "typescript-language-server/typescript-language-server",
+   "number": 795,
+   "title": "Go to definition is not working on neovim",
+   "url": "https://github.com/typescript-language-server/typescript-language-server/issues/795",
+   "state": "closed",
+   "created": "2023-11-12",
+   "comments": 2,
+   "query": "\"go to definition\" in:title repo:typescript-language-server/typescript-language-server is:issue"
+  },
+  {
+   "repo": "typescript-language-server/typescript-language-server",
+   "number": 507,
+   "title": "Possibility of including Go to Source Definition?",
+   "url": "https://github.com/typescript-language-server/typescript-language-server/issues/507",
+   "state": "closed",
+   "created": "2022-07-03",
+   "comments": 4,
+   "query": "\"go to definition\" in:title repo:typescript-language-server/typescript-language-server is:issue"
+  },
+  {
+   "repo": "typescript-language-server/typescript-language-server",
+   "number": 431,
+   "title": "Go to definition function broken in monorepo project",
+   "url": "https://github.com/typescript-language-server/typescript-language-server/issues/431",
+   "state": "closed",
+   "created": "2022-04-10",
+   "comments": 4,
+   "query": "\"go to definition\" in:title repo:typescript-language-server/typescript-language-server is:issue"
+  },
+  {
+   "repo": "typescript-language-server/typescript-language-server",
+   "number": 60,
+   "title": "Error: No Project. When starting LS from a bundled electron Theia application",
+   "url": "https://github.com/typescript-language-server/typescript-language-server/issues/60",
+   "state": "closed",
+   "created": "2018-09-02",
+   "comments": 9,
+   "query": "definition missing repo:typescript-language-server/typescript-language-server is:issue"
+  },
+  {
+   "repo": "typescript-language-server/typescript-language-server",
+   "number": 679,
+   "title": "Inconsistent completion suggestions on JSX attributes",
+   "url": "https://github.com/typescript-language-server/typescript-language-server/issues/679",
+   "state": "closed",
+   "created": "2023-02-07",
+   "comments": 22,
+   "query": "definition missing repo:typescript-language-server/typescript-language-server is:issue"
+  },
+  {
+   "repo": "typescript-language-server/typescript-language-server",
+   "number": 277,
+   "title": "Using typescript plugins through neovim-lsp",
+   "url": "https://github.com/typescript-language-server/typescript-language-server/issues/277",
+   "state": "closed",
+   "created": "2021-10-31",
+   "comments": 10,
+   "query": "definition missing repo:typescript-language-server/typescript-language-server is:issue"
+  },
+  {
+   "repo": "typescript-language-server/typescript-language-server",
+   "number": 264,
+   "title": "Inlay Hints return empty result",
+   "url": "https://github.com/typescript-language-server/typescript-language-server/issues/264",
+   "state": "closed",
+   "created": "2021-10-06",
+   "comments": 4,
+   "query": "definition missing repo:typescript-language-server/typescript-language-server is:issue"
+  },
+  {
+   "repo": "typescript-language-server/typescript-language-server",
+   "number": 203,
+   "title": "Javascript: Jump to declaration still not at JSDT's level",
+   "url": "https://github.com/typescript-language-server/typescript-language-server/issues/203",
+   "state": "closed",
+   "created": "2021-04-16",
+   "comments": 9,
+   "query": "definition missing repo:typescript-language-server/typescript-language-server is:issue"
+  }
+ ],
+ "notes": [],
+ "authenticated": true
+}

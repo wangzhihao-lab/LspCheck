@@ -1,0 +1,3 @@
+2026-11-18 06:08:40,328 INFO campaign_run run feeab267aea0: r5_transforms on ts7 7.0.2, pear-devs/pear-desktop@3ff0a86231fe seed 1 settled, targets ['src/plugins/album-actions/templates/like-button.tsx', 'src/plugins/sponsorblock/index.ts', 'src/plugins/synced-lyrics/renderer/components/SyncedLine.tsx']
+2026-11-18 06:16:05,778 INFO campaign_run run feeab267aea0: 0 candidate(s) in 445s; confirming
+2026-11-18 06:16:05,779 INFO campaign_run run feeab267aea0 finished: ok, 0 confirmed of 0 candidate(s), 446s

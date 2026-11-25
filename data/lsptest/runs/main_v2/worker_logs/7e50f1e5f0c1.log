@@ -1,0 +1,3 @@
+2026-11-18 18:50:45,746 INFO campaign_run run 7e50f1e5f0c1: r3_routes on ts7 7.0.2, DayuanJiang/next-ai-draw-io@58b73ef761d8 seed 2 settled, targets ['components/code-block.tsx', 'components/ui/command.tsx', 'packages/mcp-server/src/pages.ts']
+2026-11-18 18:53:10,196 INFO campaign_run run 7e50f1e5f0c1: 8 candidate(s) in 144s; confirming
+2026-11-18 18:53:10,197 INFO campaign_run run 7e50f1e5f0c1 finished: ok, 0 confirmed of 8 candidate(s), 144s

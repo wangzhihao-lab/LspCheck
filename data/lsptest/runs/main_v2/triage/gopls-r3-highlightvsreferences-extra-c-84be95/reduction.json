@@ -1,0 +1,65 @@
+{
+ "vid": "660200eada5b-v00",
+ "ops_before": 0,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 0,
+ "cache_hits": 0,
+ "reduce_seconds": 0.0,
+ "budget_exhausted": false,
+ "probe_log": [],
+ "logs": [
+  "gopls-v0.23.0-tr84be95-r3-replay-baseline-20261119-000100-6228a6.jsonl.gz",
+  "gopls-v0.23.0-tr84be95-r3-replay-control-20261119-000105-e63561.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [
+   [
+    40,
+    12,
+    40,
+    17
+   ],
+   [
+    46,
+    32,
+    46,
+    37
+   ],
+   [
+    47,
+    8,
+    47,
+    13
+   ]
+  ],
+  "actual": [
+   [
+    40,
+    12,
+    40,
+    17
+   ],
+   [
+    46,
+    32,
+    46,
+    37
+   ],
+   [
+    47,
+    8,
+    47,
+    13
+   ],
+   [
+    47,
+    8,
+    49,
+    2
+   ]
+  ]
+ },
+ "ops_after": 0,
+ "total_seconds": 38.1
+}

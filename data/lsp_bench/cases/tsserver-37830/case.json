@@ -1,0 +1,74 @@
+{
+ "schema": 1,
+ "id": "tsserver-37830",
+ "meta": {
+  "server": "tsserver",
+  "kind": "tsserver",
+  "number": 37830,
+  "url": "https://github.com/microsoft/TypeScript/issues/37830",
+  "title": "Find all references counts references for static member and regular member with same name",
+  "oracle_class": "R3",
+  "subtype": "def-consistency",
+  "fix_ref": "microsoft/TypeScript#38730 (fix static method reference non-static), bf1ea6508b, 2020-07-09; git tag --contains: first in v4.0-rc / v4.0.2",
+  "fix_shas": [
+   "bf1ea6508b672e43513bcc4f30423c8c400d7cfa"
+  ],
+  "pre_version": "3.9.10",
+  "post_version": "4.0.2",
+  "pre_build": "3.9.10+tsls0.4.0",
+  "post_build": "4.0.2+tsls0.4.0",
+  "wrapper": "typescript-language-server@0.4.0",
+  "build_notes": "npm typescript@3.9.10 (2021-06-16, the last 3.9 release; the fix is not on the 3.9 branch) and typescript@4.0.2 (2020-08-20), both behind typescript-language-server@0.4.0 (the latest wrapper release before 4.0.2), started with the pinned tsserver.js (--tsserver-path); the reported TypeScript version is checked on every session. The wrapper is installed with the npm dependencies of its release date (install_builds.wrapper_before); it logs no TypeScript version, so the build check verifies that the wrapper's tsserver child runs the pinned tsserver.js.",
+  "candidate_rank": 6,
+  "effort_minutes": 8,
+  "notes": "R3 formulation of the issue's expected result ('There should only be a single reference (itself)'): the static foo has no uses, so every location find-all-references returns for it must be one of its definitions; pre-fix the instance method foo of the base class is returned as well."
+ },
+ "language": "typescript",
+ "settings": {},
+ "settings_note": "The issue names no settings; no tsconfig.json, so tsserver uses an inferred project.",
+ "session": {
+  "settle_timeout_s": 120
+ },
+ "files": [
+  {
+   "path": "index.ts",
+   "provenance": "issue",
+   "source": "issue body, Code block",
+   "note": "tab indentation as in the issue; the maintainer's trace was taken on a .js file with the same code"
+  }
+ ],
+ "repro": {
+  "attempt": 1,
+  "timing": "settled",
+  "steps": "Open index.ts and run find all references on the static foo of class X (line 5, the position the maintainer's trace queries). Reported: two references are returned, the static foo and the instance foo of the base class Y; expected: a single reference (itself). Probe (R3, one session): the references of the static foo must be a subset of its definitions (textDocument/definition at the same position).",
+  "ops": [
+   {
+    "kind": "open",
+    "path": "index.ts"
+   }
+  ],
+  "probe": {
+   "type": "two_routes_differ",
+   "params": {
+    "relation": "subset",
+    "a": {
+     "method": "references",
+     "path": "index.ts",
+     "position": [
+      4,
+      8
+     ]
+    },
+    "b": {
+     "method": "definition",
+     "path": "index.ts",
+     "position": [
+      4,
+      8
+     ]
+    }
+   }
+  }
+ },
+ "attempts": []
+}

@@ -1,0 +1,9 @@
+2026-11-18 03:36:12,730 INFO campaign_run run 0082cb0ebd81: r4_edits on rust-analyzer 2026-09-21, cloudflare/pingora@4487f7b2ab50 seed 1 settled, targets ['pingora-cache/src/eviction/async_lru.rs', 'pingora-core/src/protocols/digest.rs', 'pingora-http/src/lib.rs']
+2026-11-18 03:52:10,736 INFO campaign_run run 0082cb0ebd81: 4 candidate(s) in 958s; confirming
+2026-11-18 04:01:50,726 INFO flake replay 1/3 of rust-analyzer|r4_edits|diagnostics:extra:inactive_code: settled=True control_stable=True reproduced=True (580.0s)
+2026-11-18 04:11:29,455 INFO flake replay 2/3 of rust-analyzer|r4_edits|diagnostics:extra:inactive_code: settled=True control_stable=True reproduced=True (578.7s)
+2026-11-18 04:20:53,044 INFO flake replay 3/3 of rust-analyzer|r4_edits|diagnostics:extra:inactive_code: settled=True control_stable=True reproduced=True (563.6s)
+2026-11-18 04:32:40,529 INFO flake replay 1/3 of rust-analyzer|r4_edits|diagnostics:extra:E0560: settled=True control_stable=True reproduced=True (707.5s)
+2026-11-18 04:46:37,506 INFO flake replay 2/3 of rust-analyzer|r4_edits|diagnostics:extra:E0560: settled=True control_stable=True reproduced=True (837.0s)
+2026-11-18 05:10:38,266 INFO flake replay 3/3 of rust-analyzer|r4_edits|diagnostics:extra:E0560: settled=True control_stable=True reproduced=True (572.3s)
+2026-11-18 05:10:38,362 INFO campaign_run run 0082cb0ebd81 finished: ok, 2 confirmed of 4 candidate(s), 5666s

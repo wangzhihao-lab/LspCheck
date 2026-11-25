@@ -1,0 +1,172 @@
+{
+ "format": 1,
+ "campaign": "bench_v1",
+ "vid": "ea64eec81319-v00",
+ "run_id": "ea64eec81319",
+ "oracle": "r4_edits",
+ "server": {
+  "kind": "rust-analyzer",
+  "version": "2025-12-15"
+ },
+ "project": {
+  "name": "rust-analyzer-20987",
+  "source": "dir",
+  "ref": "data/lsp_bench/cases/rust-analyzer-20987/project",
+  "commit": "",
+  "language": "rust"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 240.0,
+  "request_timeout_s": 60.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "src/main.rs",
+    "positions": [
+     [
+      0,
+      10
+     ],
+     [
+      2,
+      13
+     ],
+     [
+      2,
+      25
+     ],
+     [
+      2,
+      36
+     ],
+     [
+      4,
+      5
+     ],
+     [
+      5,
+      14
+     ],
+     [
+      5,
+      27
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      18
+     ],
+     [
+      2,
+      24
+     ],
+     [
+      2,
+      26
+     ],
+     [
+      2,
+      39
+     ],
+     [
+      4,
+      7
+     ],
+     [
+      5,
+      25
+     ],
+     [
+      5,
+      28
+     ]
+    ],
+    "names": [
+     "called_function",
+     "higher_order_function",
+     "_",
+     "FnOnce",
+     "main",
+     "higher_order_function",
+     "ca"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "completionInsert",
+  "path": "src/main.rs",
+  "line": 5,
+  "character": 28,
+  "extra": "called_function()"
+ },
+ "ops": [],
+ "case": {
+  "character": 28,
+  "edits": [
+   {
+    "newText": "called_function();",
+    "range": {
+     "end": {
+      "character": 28,
+      "line": 5
+     },
+     "start": {
+      "character": 26,
+      "line": 5
+     }
+    }
+   }
+  ],
+  "excerpt": "    higher_order_function(called_function(); /* cursor */);",
+  "item_kind": 3,
+  "kind": "completion",
+  "label": "called_function()",
+  "line": 5,
+  "name": "ca",
+  "new_errors": [
+   "6:44: expected one of `)`, `,`, `.`, `?`, or an operator, found `;`"
+  ],
+  "path": "src/main.rs"
+ },
+ "shape": "completionInsert:gained",
+ "signature": "rust-analyzer|r4_edits|completionInsert:gained",
+ "expected": [],
+ "actual": [
+  "expected one of `)`, `,`, `.`, `?`, or an operator, found `;`"
+ ],
+ "reproduced": "3/3",
+ "note": "accepting completion item 'called_function()' (kind 3) after 'ca' at src/main.rs:6:29 introduces ['6:44: expected one of `)`, `,`, `.`, `?`, or an operator, found `;`']; confirmed in a fresh session on the original content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 192s",
+ "violation": {
+  "oracle": "r4_edits",
+  "server": "rust-analyzer-2025-12-15",
+  "project": "rust-analyzer-20987",
+  "key": {
+   "method": "completionInsert",
+   "path": "src/main.rs",
+   "line": 5,
+   "character": 28,
+   "extra": "called_function()"
+  },
+  "expected": [],
+  "actual": [
+   "expected one of `)`, `,`, `.`, `?`, or an operator, found `;`"
+  ],
+  "ops": [],
+  "detail": "{\"case\": {\"character\": 28, \"edits\": [{\"newText\": \"called_function();\", \"range\": {\"end\": {\"character\": 28, \"line\": 5}, \"start\": {\"character\": 26, \"line\": 5}}}], \"excerpt\": \"    higher_order_function(called_function(); /* cursor */);\", \"item_kind\": 3, \"kind\": \"completion\", \"label\": \"called_function()\", \"line\": 5, \"name\": \"ca\", \"new_errors\": [\"6:44: expected one of `)`, `,`, `.`, `?`, or an operator, found `;`\"], \"path\": \"src/main.rs\"}, \"note\": \"accepting completion item 'called_function()' (kind 3) after 'ca' at src/main.rs:6:29 introduces ['6:44: expected one of `)`, `,`, `.`, `?`, or an operator, found `;`']; confirmed in a fresh session on the original content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 192s\", \"shape\": \"completionInsert:gained\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "rust-analyzer|r4_edits|completionInsert:gained",
+  "run_id": "ea64eec81319"
+ },
+ "replay_logs": [
+  "logs/rust-analyzer-2025-12-15-ea64eec81319-r4-replay-case-20260924-221101-070850.jsonl.gz",
+  "logs/rust-analyzer-2025-12-15-ea64eec81319-r4-replay-control-20260924-221120-215b38.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

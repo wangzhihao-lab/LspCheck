@@ -1,0 +1,879 @@
+{
+ "mode": "edit",
+ "rows": [
+  {
+   "gid": "ts6-r1-codeaction-key-lost-h5-4f92e2",
+   "replays": 3,
+   "settled": 3,
+   "control_stable": 3,
+   "reproduced": 0,
+   "seconds": 124.7,
+   "error": "",
+   "verdict": "not-reproduced",
+   "renames": [
+    {
+     "from": "src/react.ts",
+     "to": "src/react_rt.ts",
+     "edits": {
+      "src/index.ts": 1
+     }
+    },
+    {
+     "from": "src/react_rt.ts",
+     "to": "src/react.ts",
+     "edits": {
+      "src/index.ts": 1
+     }
+    },
+    {
+     "from": "src/react.ts",
+     "to": "src/react_rt.ts",
+     "edits": {
+      "src/index.ts": 1
+     }
+    },
+    {
+     "from": "src/react_rt.ts",
+     "to": "src/react.ts",
+     "edits": {
+      "src/index.ts": 1
+     }
+    },
+    {
+     "from": "src/react.ts",
+     "to": "src/react_rt.ts",
+     "edits": {
+      "src/index.ts": 1
+     }
+    },
+    {
+     "from": "src/react_rt.ts",
+     "to": "src/react.ts",
+     "edits": {
+      "src/index.ts": 1
+     }
+    }
+   ],
+   "edited_restored": {
+    "src/index.ts": true
+   }
+  },
+  {
+   "gid": "ts6-r1-completion-lost-h5-fa501c",
+   "replays": 3,
+   "settled": 3,
+   "control_stable": 3,
+   "reproduced": 0,
+   "seconds": 124.3,
+   "error": "",
+   "verdict": "not-reproduced",
+   "renames": [
+    {
+     "from": "src/react.ts",
+     "to": "src/react_rt.ts",
+     "edits": {
+      "src/index.ts": 1
+     }
+    },
+    {
+     "from": "src/react_rt.ts",
+     "to": "src/react.ts",
+     "edits": {
+      "src/index.ts": 1
+     }
+    },
+    {
+     "from": "src/react.ts",
+     "to": "src/react_rt.ts",
+     "edits": {
+      "src/index.ts": 1
+     }
+    },
+    {
+     "from": "src/react_rt.ts",
+     "to": "src/react.ts",
+     "edits": {
+      "src/index.ts": 1
+     }
+    },
+    {
+     "from": "src/react.ts",
+     "to": "src/react_rt.ts",
+     "edits": {
+      "src/index.ts": 1
+     }
+    },
+    {
+     "from": "src/react_rt.ts",
+     "to": "src/react.ts",
+     "edits": {
+      "src/index.ts": 1
+     }
+    }
+   ],
+   "edited_restored": {
+    "src/index.ts": true
+   }
+  },
+  {
+   "gid": "ts6-r1-definition-lost-h5-61a0fd",
+   "replays": 3,
+   "settled": 3,
+   "control_stable": 3,
+   "reproduced": 0,
+   "seconds": 48.7,
+   "error": "",
+   "verdict": "not-reproduced",
+   "renames": [
+    {
+     "from": "src/react.ts",
+     "to": "src/react_rt.ts",
+     "edits": {
+      "src/index.ts": 1
+     }
+    },
+    {
+     "from": "src/react_rt.ts",
+     "to": "src/react.ts",
+     "edits": {
+      "src/index.ts": 1
+     }
+    },
+    {
+     "from": "src/react.ts",
+     "to": "src/react_rt.ts",
+     "edits": {
+      "src/index.ts": 1
+     }
+    },
+    {
+     "from": "src/react_rt.ts",
+     "to": "src/react.ts",
+     "edits": {
+      "src/index.ts": 1
+     }
+    },
+    {
+     "from": "src/react.ts",
+     "to": "src/react_rt.ts",
+     "edits": {
+      "src/index.ts": 1
+     }
+    },
+    {
+     "from": "src/react_rt.ts",
+     "to": "src/react.ts",
+     "edits": {
+      "src/index.ts": 1
+     }
+    }
+   ],
+   "edited_restored": {
+    "src/index.ts": true
+   }
+  },
+  {
+   "gid": "ts6-r1-definition-lost-h9-898f29",
+   "replays": 3,
+   "settled": 3,
+   "control_stable": 3,
+   "reproduced": 0,
+   "seconds": 351.5,
+   "error": "",
+   "verdict": "not-reproduced",
+   "renames": [
+    {
+     "from": "app/utils/store.ts",
+     "to": "app/utils/store_rt.ts",
+     "edits": {
+      "app/store/access.ts": 1,
+      "app/store/mask.ts": 1,
+      "app/store/chat.ts": 1,
+      "app/store/update.ts": 1,
+      "app/store/plugin.ts": 1,
+      "app/store/config.ts": 1,
+      "app/store/prompt.ts": 1,
+      "app/store/sd.ts": 1,
+      "app/store/sync.ts": 1
+     }
+    },
+    {
+     "from": "app/utils/store_rt.ts",
+     "to": "app/utils/store.ts",
+     "edits": {
+      "app/store/access.ts": 1,
+      "app/store/mask.ts": 1,
+      "app/store/chat.ts": 1,
+      "app/store/update.ts": 1,
+      "app/store/plugin.ts": 1,
+      "app/store/config.ts": 1,
+      "app/store/prompt.ts": 1,
+      "app/store/sd.ts": 1,
+      "app/store/sync.ts": 1
+     }
+    },
+    {
+     "from": "app/utils/store.ts",
+     "to": "app/utils/store_rt.ts",
+     "edits": {
+      "app/store/access.ts": 1,
+      "app/store/mask.ts": 1,
+      "app/store/chat.ts": 1,
+      "app/store/update.ts": 1,
+      "app/store/plugin.ts": 1,
+      "app/store/config.ts": 1,
+      "app/store/prompt.ts": 1,
+      "app/store/sd.ts": 1,
+      "app/store/sync.ts": 1
+     }
+    },
+    {
+     "from": "app/utils/store_rt.ts",
+     "to": "app/utils/store.ts",
+     "edits": {
+      "app/store/access.ts": 1,
+      "app/store/mask.ts": 1,
+      "app/store/chat.ts": 1,
+      "app/store/update.ts": 1,
+      "app/store/plugin.ts": 1,
+      "app/store/config.ts": 1,
+      "app/store/prompt.ts": 1,
+      "app/store/sd.ts": 1,
+      "app/store/sync.ts": 1
+     }
+    },
+    {
+     "from": "app/utils/store.ts",
+     "to": "app/utils/store_rt.ts",
+     "edits": {
+      "app/store/access.ts": 1,
+      "app/store/mask.ts": 1,
+      "app/store/chat.ts": 1,
+      "app/store/update.ts": 1,
+      "app/store/plugin.ts": 1,
+      "app/store/config.ts": 1,
+      "app/store/prompt.ts": 1,
+      "app/store/sd.ts": 1,
+      "app/store/sync.ts": 1
+     }
+    },
+    {
+     "from": "app/utils/store_rt.ts",
+     "to": "app/utils/store.ts",
+     "edits": {
+      "app/store/access.ts": 1,
+      "app/store/mask.ts": 1,
+      "app/store/chat.ts": 1,
+      "app/store/update.ts": 1,
+      "app/store/plugin.ts": 1,
+      "app/store/config.ts": 1,
+      "app/store/prompt.ts": 1,
+      "app/store/sd.ts": 1,
+      "app/store/sync.ts": 1
+     }
+    }
+   ],
+   "edited_restored": {
+    "app/store/access.ts": true,
+    "app/store/mask.ts": true,
+    "app/store/chat.ts": true,
+    "app/store/update.ts": true,
+    "app/store/plugin.ts": true,
+    "app/store/config.ts": true,
+    "app/store/prompt.ts": true,
+    "app/store/sd.ts": true,
+    "app/store/sync.ts": true
+   }
+  },
+  {
+   "gid": "ts6-r1-diagnostics-extra-2305-2339-7006-h5-d5a250",
+   "replays": 3,
+   "settled": 3,
+   "control_stable": 3,
+   "reproduced": 0,
+   "seconds": 52.9,
+   "error": "",
+   "verdict": "not-reproduced",
+   "renames": [
+    {
+     "from": "src/react.ts",
+     "to": "src/react_rt.ts",
+     "edits": {
+      "src/index.ts": 1
+     }
+    },
+    {
+     "from": "src/react_rt.ts",
+     "to": "src/react.ts",
+     "edits": {
+      "src/index.ts": 1
+     }
+    },
+    {
+     "from": "src/react.ts",
+     "to": "src/react_rt.ts",
+     "edits": {
+      "src/index.ts": 1
+     }
+    },
+    {
+     "from": "src/react_rt.ts",
+     "to": "src/react.ts",
+     "edits": {
+      "src/index.ts": 1
+     }
+    },
+    {
+     "from": "src/react.ts",
+     "to": "src/react_rt.ts",
+     "edits": {
+      "src/index.ts": 1
+     }
+    },
+    {
+     "from": "src/react_rt.ts",
+     "to": "src/react.ts",
+     "edits": {
+      "src/index.ts": 1
+     }
+    }
+   ],
+   "edited_restored": {
+    "src/index.ts": true
+   }
+  },
+  {
+   "gid": "ts6-r1-documenthighlight-lost-h5-9b4675",
+   "replays": 3,
+   "settled": 3,
+   "control_stable": 3,
+   "reproduced": 0,
+   "seconds": 48.7,
+   "error": "",
+   "verdict": "not-reproduced",
+   "renames": [
+    {
+     "from": "src/react.ts",
+     "to": "src/react_rt.ts",
+     "edits": {
+      "src/index.ts": 1
+     }
+    },
+    {
+     "from": "src/react_rt.ts",
+     "to": "src/react.ts",
+     "edits": {
+      "src/index.ts": 1
+     }
+    },
+    {
+     "from": "src/react.ts",
+     "to": "src/react_rt.ts",
+     "edits": {
+      "src/index.ts": 1
+     }
+    },
+    {
+     "from": "src/react_rt.ts",
+     "to": "src/react.ts",
+     "edits": {
+      "src/index.ts": 1
+     }
+    },
+    {
+     "from": "src/react.ts",
+     "to": "src/react_rt.ts",
+     "edits": {
+      "src/index.ts": 1
+     }
+    },
+    {
+     "from": "src/react_rt.ts",
+     "to": "src/react.ts",
+     "edits": {
+      "src/index.ts": 1
+     }
+    }
+   ],
+   "edited_restored": {
+    "src/index.ts": true
+   }
+  },
+  {
+   "gid": "ts6-r1-references-lost-h5-d24ca6",
+   "replays": 3,
+   "settled": 3,
+   "control_stable": 3,
+   "reproduced": 0,
+   "seconds": 125.6,
+   "error": "",
+   "verdict": "not-reproduced",
+   "renames": [
+    {
+     "from": "src/react.ts",
+     "to": "src/react_rt.ts",
+     "edits": {
+      "src/index.ts": 1
+     }
+    },
+    {
+     "from": "src/react_rt.ts",
+     "to": "src/react.ts",
+     "edits": {
+      "src/index.ts": 1
+     }
+    },
+    {
+     "from": "src/react.ts",
+     "to": "src/react_rt.ts",
+     "edits": {
+      "src/index.ts": 1
+     }
+    },
+    {
+     "from": "src/react_rt.ts",
+     "to": "src/react.ts",
+     "edits": {
+      "src/index.ts": 1
+     }
+    },
+    {
+     "from": "src/react.ts",
+     "to": "src/react_rt.ts",
+     "edits": {
+      "src/index.ts": 1
+     }
+    },
+    {
+     "from": "src/react_rt.ts",
+     "to": "src/react.ts",
+     "edits": {
+      "src/index.ts": 1
+     }
+    }
+   ],
+   "edited_restored": {
+    "src/index.ts": true
+   }
+  },
+  {
+   "gid": "ts6-r1-references-missing-h5-cc8950",
+   "replays": 3,
+   "settled": 3,
+   "control_stable": 3,
+   "reproduced": 0,
+   "seconds": 49.6,
+   "error": "",
+   "verdict": "not-reproduced",
+   "renames": [
+    {
+     "from": "src/core/shared/skill-generation.ts",
+     "to": "src/core/shared/skill-generation_rt.ts",
+     "edits": {
+      "src/core/shared/tool-detection.ts": 1,
+      "src/core/shared/index.ts": 1
+     }
+    },
+    {
+     "from": "src/core/shared/skill-generation_rt.ts",
+     "to": "src/core/shared/skill-generation.ts",
+     "edits": {
+      "src/core/shared/tool-detection.ts": 1,
+      "src/core/shared/index.ts": 1
+     }
+    },
+    {
+     "from": "src/core/shared/skill-generation.ts",
+     "to": "src/core/shared/skill-generation_rt.ts",
+     "edits": {
+      "src/core/shared/tool-detection.ts": 1,
+      "src/core/shared/index.ts": 1
+     }
+    },
+    {
+     "from": "src/core/shared/skill-generation_rt.ts",
+     "to": "src/core/shared/skill-generation.ts",
+     "edits": {
+      "src/core/shared/tool-detection.ts": 1,
+      "src/core/shared/index.ts": 1
+     }
+    },
+    {
+     "from": "src/core/shared/skill-generation.ts",
+     "to": "src/core/shared/skill-generation_rt.ts",
+     "edits": {
+      "src/core/shared/tool-detection.ts": 1,
+      "src/core/shared/index.ts": 1
+     }
+    },
+    {
+     "from": "src/core/shared/skill-generation_rt.ts",
+     "to": "src/core/shared/skill-generation.ts",
+     "edits": {
+      "src/core/shared/tool-detection.ts": 1,
+      "src/core/shared/index.ts": 1
+     }
+    }
+   ],
+   "edited_restored": {
+    "src/core/shared/tool-detection.ts": true,
+    "src/core/shared/index.ts": true
+   }
+  },
+  {
+   "gid": "ts6-r1-semantictokens-changed-h5-591c42",
+   "replays": 3,
+   "settled": 3,
+   "control_stable": 3,
+   "reproduced": 0,
+   "seconds": 124.4,
+   "error": "",
+   "verdict": "not-reproduced",
+   "renames": [
+    {
+     "from": "src/react.ts",
+     "to": "src/react_rt.ts",
+     "edits": {
+      "src/index.ts": 1
+     }
+    },
+    {
+     "from": "src/react_rt.ts",
+     "to": "src/react.ts",
+     "edits": {
+      "src/index.ts": 1
+     }
+    },
+    {
+     "from": "src/react.ts",
+     "to": "src/react_rt.ts",
+     "edits": {
+      "src/index.ts": 1
+     }
+    },
+    {
+     "from": "src/react_rt.ts",
+     "to": "src/react.ts",
+     "edits": {
+      "src/index.ts": 1
+     }
+    },
+    {
+     "from": "src/react.ts",
+     "to": "src/react_rt.ts",
+     "edits": {
+      "src/index.ts": 1
+     }
+    },
+    {
+     "from": "src/react_rt.ts",
+     "to": "src/react.ts",
+     "edits": {
+      "src/index.ts": 1
+     }
+    }
+   ],
+   "edited_restored": {
+    "src/index.ts": true
+   }
+  },
+  {
+   "gid": "ts6-r1-semantictokens-missing-h9-d686b3",
+   "replays": 3,
+   "settled": 3,
+   "control_stable": 3,
+   "reproduced": 0,
+   "seconds": 121.7,
+   "error": "",
+   "verdict": "not-reproduced",
+   "renames": [
+    {
+     "from": "website/plugins/remark-typescript-tools/transpileCodeblocks/plugin.ts",
+     "to": "website/plugins/remark-typescript-tools/transpileCodeblocks/plugin_rt.ts",
+     "edits": {
+      "website/plugins/remark-typescript-tools/transpileCodeblocks/compiler.ts": 1,
+      "website/plugins/remark-typescript-tools/transpileCodeblocks/postProcessing.ts": 1,
+      "website/plugins/remark-typescript-tools/index.ts": 2
+     }
+    },
+    {
+     "from": "website/plugins/remark-typescript-tools/transpileCodeblocks/plugin_rt.ts",
+     "to": "website/plugins/remark-typescript-tools/transpileCodeblocks/plugin.ts",
+     "edits": {
+      "website/plugins/remark-typescript-tools/transpileCodeblocks/compiler.ts": 1,
+      "website/plugins/remark-typescript-tools/transpileCodeblocks/postProcessing.ts": 1,
+      "website/plugins/remark-typescript-tools/index.ts": 2
+     }
+    },
+    {
+     "from": "website/plugins/remark-typescript-tools/transpileCodeblocks/plugin.ts",
+     "to": "website/plugins/remark-typescript-tools/transpileCodeblocks/plugin_rt.ts",
+     "edits": {
+      "website/plugins/remark-typescript-tools/transpileCodeblocks/compiler.ts": 1,
+      "website/plugins/remark-typescript-tools/transpileCodeblocks/postProcessing.ts": 1,
+      "website/plugins/remark-typescript-tools/index.ts": 2
+     }
+    },
+    {
+     "from": "website/plugins/remark-typescript-tools/transpileCodeblocks/plugin_rt.ts",
+     "to": "website/plugins/remark-typescript-tools/transpileCodeblocks/plugin.ts",
+     "edits": {
+      "website/plugins/remark-typescript-tools/transpileCodeblocks/compiler.ts": 1,
+      "website/plugins/remark-typescript-tools/transpileCodeblocks/postProcessing.ts": 1,
+      "website/plugins/remark-typescript-tools/index.ts": 2
+     }
+    },
+    {
+     "from": "website/plugins/remark-typescript-tools/transpileCodeblocks/plugin.ts",
+     "to": "website/plugins/remark-typescript-tools/transpileCodeblocks/plugin_rt.ts",
+     "edits": {
+      "website/plugins/remark-typescript-tools/transpileCodeblocks/compiler.ts": 1,
+      "website/plugins/remark-typescript-tools/transpileCodeblocks/postProcessing.ts": 1,
+      "website/plugins/remark-typescript-tools/index.ts": 2
+     }
+    },
+    {
+     "from": "website/plugins/remark-typescript-tools/transpileCodeblocks/plugin_rt.ts",
+     "to": "website/plugins/remark-typescript-tools/transpileCodeblocks/plugin.ts",
+     "edits": {
+      "website/plugins/remark-typescript-tools/transpileCodeblocks/compiler.ts": 1,
+      "website/plugins/remark-typescript-tools/transpileCodeblocks/postProcessing.ts": 1,
+      "website/plugins/remark-typescript-tools/index.ts": 2
+     }
+    }
+   ],
+   "edited_restored": {
+    "website/plugins/remark-typescript-tools/transpileCodeblocks/compiler.ts": true,
+    "website/plugins/remark-typescript-tools/transpileCodeblocks/postProcessing.ts": true,
+    "website/plugins/remark-typescript-tools/index.ts": true
+   }
+  },
+  {
+   "gid": "ts6-r1-signaturehelp-changed-h5-db5a5e",
+   "replays": 3,
+   "settled": 3,
+   "control_stable": 3,
+   "reproduced": 0,
+   "seconds": 48.7,
+   "error": "",
+   "verdict": "not-reproduced",
+   "renames": [
+    {
+     "from": "src/react.ts",
+     "to": "src/react_rt.ts",
+     "edits": {
+      "src/index.ts": 1
+     }
+    },
+    {
+     "from": "src/react_rt.ts",
+     "to": "src/react.ts",
+     "edits": {
+      "src/index.ts": 1
+     }
+    },
+    {
+     "from": "src/react.ts",
+     "to": "src/react_rt.ts",
+     "edits": {
+      "src/index.ts": 1
+     }
+    },
+    {
+     "from": "src/react_rt.ts",
+     "to": "src/react.ts",
+     "edits": {
+      "src/index.ts": 1
+     }
+    },
+    {
+     "from": "src/react.ts",
+     "to": "src/react_rt.ts",
+     "edits": {
+      "src/index.ts": 1
+     }
+    },
+    {
+     "from": "src/react_rt.ts",
+     "to": "src/react.ts",
+     "edits": {
+      "src/index.ts": 1
+     }
+    }
+   ],
+   "edited_restored": {
+    "src/index.ts": true
+   }
+  },
+  {
+   "gid": "ts6-r1-signaturehelp-lost-h9-7bd793",
+   "replays": 3,
+   "settled": 3,
+   "control_stable": 3,
+   "reproduced": 0,
+   "seconds": 268.0,
+   "error": "",
+   "verdict": "not-reproduced",
+   "renames": [
+    {
+     "from": "app/utils/store.ts",
+     "to": "app/utils/store_rt.ts",
+     "edits": {
+      "app/store/access.ts": 1,
+      "app/store/mask.ts": 1,
+      "app/store/chat.ts": 1,
+      "app/store/update.ts": 1,
+      "app/store/plugin.ts": 1,
+      "app/store/config.ts": 1,
+      "app/store/prompt.ts": 1,
+      "app/store/sd.ts": 1,
+      "app/store/sync.ts": 1
+     }
+    },
+    {
+     "from": "app/utils/store_rt.ts",
+     "to": "app/utils/store.ts",
+     "edits": {
+      "app/store/access.ts": 1,
+      "app/store/mask.ts": 1,
+      "app/store/chat.ts": 1,
+      "app/store/update.ts": 1,
+      "app/store/plugin.ts": 1,
+      "app/store/config.ts": 1,
+      "app/store/prompt.ts": 1,
+      "app/store/sd.ts": 1,
+      "app/store/sync.ts": 1
+     }
+    },
+    {
+     "from": "app/utils/store.ts",
+     "to": "app/utils/store_rt.ts",
+     "edits": {
+      "app/store/access.ts": 1,
+      "app/store/mask.ts": 1,
+      "app/store/chat.ts": 1,
+      "app/store/update.ts": 1,
+      "app/store/plugin.ts": 1,
+      "app/store/config.ts": 1,
+      "app/store/prompt.ts": 1,
+      "app/store/sd.ts": 1,
+      "app/store/sync.ts": 1
+     }
+    },
+    {
+     "from": "app/utils/store_rt.ts",
+     "to": "app/utils/store.ts",
+     "edits": {
+      "app/store/access.ts": 1,
+      "app/store/mask.ts": 1,
+      "app/store/chat.ts": 1,
+      "app/store/update.ts": 1,
+      "app/store/plugin.ts": 1,
+      "app/store/config.ts": 1,
+      "app/store/prompt.ts": 1,
+      "app/store/sd.ts": 1,
+      "app/store/sync.ts": 1
+     }
+    },
+    {
+     "from": "app/utils/store.ts",
+     "to": "app/utils/store_rt.ts",
+     "edits": {
+      "app/store/access.ts": 1,
+      "app/store/mask.ts": 1,
+      "app/store/chat.ts": 1,
+      "app/store/update.ts": 1,
+      "app/store/plugin.ts": 1,
+      "app/store/config.ts": 1,
+      "app/store/prompt.ts": 1,
+      "app/store/sd.ts": 1,
+      "app/store/sync.ts": 1
+     }
+    },
+    {
+     "from": "app/utils/store_rt.ts",
+     "to": "app/utils/store.ts",
+     "edits": {
+      "app/store/access.ts": 1,
+      "app/store/mask.ts": 1,
+      "app/store/chat.ts": 1,
+      "app/store/update.ts": 1,
+      "app/store/plugin.ts": 1,
+      "app/store/config.ts": 1,
+      "app/store/prompt.ts": 1,
+      "app/store/sd.ts": 1,
+      "app/store/sync.ts": 1
+     }
+    }
+   ],
+   "edited_restored": {
+    "app/store/access.ts": true,
+    "app/store/mask.ts": true,
+    "app/store/chat.ts": true,
+    "app/store/update.ts": true,
+    "app/store/plugin.ts": true,
+    "app/store/config.ts": true,
+    "app/store/prompt.ts": true,
+    "app/store/sd.ts": true,
+    "app/store/sync.ts": true
+   }
+  },
+  {
+   "gid": "ts6-r1-typedefinition-lost-h5-712a35",
+   "replays": 3,
+   "settled": 3,
+   "control_stable": 3,
+   "reproduced": 0,
+   "seconds": 57.7,
+   "error": "",
+   "verdict": "not-reproduced",
+   "renames": [
+    {
+     "from": "src/react.ts",
+     "to": "src/react_rt.ts",
+     "edits": {
+      "src/index.ts": 1
+     }
+    },
+    {
+     "from": "src/react_rt.ts",
+     "to": "src/react.ts",
+     "edits": {
+      "src/index.ts": 1
+     }
+    },
+    {
+     "from": "src/react.ts",
+     "to": "src/react_rt.ts",
+     "edits": {
+      "src/index.ts": 1
+     }
+    },
+    {
+     "from": "src/react_rt.ts",
+     "to": "src/react.ts",
+     "edits": {
+      "src/index.ts": 1
+     }
+    },
+    {
+     "from": "src/react.ts",
+     "to": "src/react_rt.ts",
+     "edits": {
+      "src/index.ts": 1
+     }
+    },
+    {
+     "from": "src/react_rt.ts",
+     "to": "src/react.ts",
+     "edits": {
+      "src/index.ts": 1
+     }
+    }
+   ],
+   "edited_restored": {
+    "src/index.ts": true
+   }
+  }
+ ]
+}

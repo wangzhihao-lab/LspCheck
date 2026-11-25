@@ -1,0 +1,12 @@
+2026-11-18 07:29:35,366 INFO campaign_run run 81b728f0bb1d: r4_edits on ts6 6.0.3, Gitlawb/openclaude@5cd11336caea seed 1 settled, targets ['src/commands/privacy-settings/index.ts', 'src/components/PromptInput/Notifications.tsx', 'src/utils/log.test.ts']
+2026-11-18 07:33:16,393 INFO campaign_run run 81b728f0bb1d: 3 candidate(s) in 221s; confirming
+2026-11-18 07:36:14,234 INFO flake replay 1/3 of ts6|r4_edits|diagnostics:extra:2353: settled=True control_stable=True reproduced=True (177.8s)
+2026-11-18 07:39:20,868 INFO flake replay 2/3 of ts6|r4_edits|diagnostics:extra:2353: settled=True control_stable=True reproduced=True (186.6s)
+2026-11-18 07:42:15,241 INFO flake replay 3/3 of ts6|r4_edits|diagnostics:extra:2353: settled=True control_stable=True reproduced=True (174.4s)
+2026-11-18 07:45:01,834 INFO flake replay 1/3 of ts6|r4_edits|diagnostics:extra:2322: settled=True control_stable=True reproduced=True (166.6s)
+2026-11-18 07:47:49,666 INFO flake replay 2/3 of ts6|r4_edits|diagnostics:extra:2322: settled=True control_stable=True reproduced=True (167.8s)
+2026-11-18 07:51:13,712 INFO flake replay 3/3 of ts6|r4_edits|diagnostics:extra:2322: settled=True control_stable=True reproduced=True (204.0s)
+2026-11-18 07:54:06,207 INFO flake replay 1/3 of ts6|r4_edits|diagnostics:extra:2304: settled=True control_stable=True reproduced=True (172.5s)
+2026-11-18 07:56:48,901 INFO flake replay 2/3 of ts6|r4_edits|diagnostics:extra:2304: settled=True control_stable=True reproduced=True (162.7s)
+2026-11-18 07:59:24,947 INFO flake replay 3/3 of ts6|r4_edits|diagnostics:extra:2304: settled=True control_stable=True reproduced=True (156.0s)
+2026-11-18 07:59:24,961 INFO campaign_run run 81b728f0bb1d finished: ok, 3 confirmed of 3 candidate(s), 1790s

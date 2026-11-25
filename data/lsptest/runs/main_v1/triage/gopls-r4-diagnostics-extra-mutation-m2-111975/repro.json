@@ -1,0 +1,256 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "9bb8ccd49c7b-v01",
+ "run_id": "9bb8ccd49c7b",
+ "oracle": "r4_edits",
+ "server": {
+  "kind": "gopls",
+  "version": "v0.23.0"
+ },
+ "project": {
+  "name": "junegunn/fzf@b1be3a8be1b8",
+  "source": "corpus",
+  "ref": "temp/corpus/junegunn__fzf@b1be3a8be1b8",
+  "commit": "b1be3a8be1b833ce5b92fbbac11637643d60a046",
+  "language": "go"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "src/pattern_test.go",
+    "positions": [
+     [
+      162,
+      9
+     ]
+    ],
+    "ends": [],
+    "names": [
+     ""
+    ]
+   },
+   {
+    "path": "src/reader.go",
+    "positions": [],
+    "ends": [],
+    "names": []
+   },
+   {
+    "path": "src/util/concurrent_set.go",
+    "positions": [],
+    "ends": [],
+    "names": []
+   }
+  ]
+ },
+ "key": {
+  "method": "diagnostics",
+  "path": "src/pattern_test.go",
+  "line": 162,
+  "character": 9,
+  "extra": "M2:quickfix-errors:Create function buildPttern"
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "src/pattern_test.go"
+  },
+  {
+   "kind": "change",
+   "path": "src/pattern_test.go",
+   "start": [
+    162,
+    9
+   ],
+   "end": [
+    162,
+    21
+   ],
+   "text": "buildPttern"
+  },
+  {
+   "kind": "change",
+   "path": "src/pattern_test.go",
+   "start": [
+    182,
+    5
+   ],
+   "end": [
+    182,
+    5
+   ],
+   "text": "buildPttern(true1 bool, result, *[]int func(caseSensitive bool, normalize bool, forward bool, input *util.Chars, pattern []rune, withPos bool, slab *util.Slab) (algo.Result, *[]int), extended bool, CaseSmart Case, false1, true2, false2, true3 bool, range []Range, delimiter Delimiter, r []rune) any {\n\tpanic(\"unimplemented\")\n}\n\nfunc "
+  }
+ ],
+ "case": {
+  "action_kind": "quickfix",
+  "base_errors": 0,
+  "check": "errors",
+  "diag": {
+   "code": "UndeclaredName",
+   "message": "undefined: buildPttern",
+   "range": {
+    "end": {
+     "character": 20,
+     "line": 162
+    },
+    "start": {
+     "character": 9,
+     "line": 162
+    }
+   },
+   "severity": 1
+  },
+  "fix_introduced_errors": [
+   {
+    "code": null,
+    "message": "missing parameter name",
+    "path": "src/pattern_test.go",
+    "range": {
+     "end": {
+      "character": 37,
+      "line": 182
+     },
+     "start": {
+      "character": 37,
+      "line": 182
+     }
+    },
+    "severity": 1
+   }
+  ],
+  "fix_ops": [
+   {
+    "end": [
+     182,
+     5
+    ],
+    "kind": "change",
+    "path": "src/pattern_test.go",
+    "start": [
+     182,
+     5
+    ],
+    "text": "buildPttern(true1 bool, result, *[]int func(caseSensitive bool, normalize bool, forward bool, input *util.Chars, pattern []rune, withPos bool, slab *util.Slab) (algo.Result, *[]int), extended bool, CaseSmart Case, false1, true2, false2, true3 bool, range []Range, delimiter Delimiter, r []rune) any {\n\tpanic(\"unimplemented\")\n}\n\nfunc "
+   }
+  ],
+  "kind": "mutation",
+  "mutation": {
+   "end": [
+    162,
+    21
+   ],
+   "id": "M2",
+   "offsets": [
+    6591,
+    6603
+   ],
+   "sha": "a23b2e95a8599766",
+   "start": [
+    162,
+    9
+   ],
+   "text": "buildPttern",
+   "what": "misspell 'buildPattern' as 'buildPttern' (drop a middle character)"
+  },
+  "n_fix_ops": 1,
+  "path": "src/pattern_test.go",
+  "post_errors": 1,
+  "title": "Create function buildPttern",
+  "via": "resolve"
+ },
+ "shape": "diagnostics:extra:?",
+ "signature": "gopls|r4_edits|diagnostics:extra:?",
+ "expected": [],
+ "actual": [
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "",
+   "syntax",
+   "missing parameter name"
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "quick fix 'Create function buildPttern' for UndeclaredName at src/pattern_test.go:163:10 raises the error count in the edited files from 0 to 1 (seeded by M2: misspell 'buildPattern' as 'buildPttern' (drop a middle character); errors before the mutation 0, after the fix 1); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 52s",
+ "violation": {
+  "oracle": "r4_edits",
+  "server": "gopls-v0.23.0",
+  "project": "junegunn/fzf@b1be3a8be1b8",
+  "key": {
+   "method": "diagnostics",
+   "path": "src/pattern_test.go",
+   "line": 162,
+   "character": 9,
+   "extra": "M2:quickfix-errors:Create function buildPttern"
+  },
+  "expected": [],
+  "actual": [
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "",
+    "syntax",
+    "missing parameter name"
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "src/pattern_test.go"
+   },
+   {
+    "kind": "change",
+    "path": "src/pattern_test.go",
+    "start": [
+     162,
+     9
+    ],
+    "end": [
+     162,
+     21
+    ],
+    "text": "buildPttern"
+   },
+   {
+    "kind": "change",
+    "path": "src/pattern_test.go",
+    "start": [
+     182,
+     5
+    ],
+    "end": [
+     182,
+     5
+    ],
+    "text": "buildPttern(true1 bool, result, *[]int func(caseSensitive bool, normalize bool, forward bool, input *util.Chars, pattern []rune, withPos bool, slab *util.Slab) (algo.Result, *[]int), extended bool, CaseSmart Case, false1, true2, false2, true3 bool, range []Range, delimiter Delimiter, r []rune) any {\n\tpanic(\"unimplemented\")\n}\n\nfunc "
+   }
+  ],
+  "detail": "{\"case\": {\"action_kind\": \"quickfix\", \"base_errors\": 0, \"check\": \"errors\", \"diag\": {\"code\": \"UndeclaredName\", \"message\": \"undefined: buildPttern\", \"range\": {\"end\": {\"character\": 20, \"line\": 162}, \"start\": {\"character\": 9, \"line\": 162}}, \"severity\": 1}, \"fix_introduced_errors\": [{\"code\": null, \"message\": \"missing parameter name\", \"path\": \"src/pattern_test.go\", \"range\": {\"end\": {\"character\": 37, \"line\": 182}, \"start\": {\"character\": 37, \"line\": 182}}, \"severity\": 1}], \"fix_ops\": [{\"end\": [182, 5], \"kind\": \"change\", \"path\": \"src/pattern_test.go\", \"start\": [182, 5], \"text\": \"buildPttern(true1 bool, result, *[]int func(caseSensitive bool, normalize bool, forward bool, input *util.Chars, pattern []rune, withPos bool, slab *util.Slab) (algo.Result, *[]int), extended bool, CaseSmart Case, false1, true2, false2, true3 bool, range []Range, delimiter Delimiter, r []rune) any {\\n\\tpanic(\\\"unimplemented\\\")\\n}\\n\\nfunc \"}], \"kind\": \"mutation\", \"mutation\": {\"end\": [162, 21], \"id\": \"M2\", \"offsets\": [6591, 6603], \"sha\": \"a23b2e95a8599766\", \"start\": [162, 9], \"text\": \"buildPttern\", \"what\": \"misspell 'buildPattern' as 'buildPttern' (drop a middle character)\"}, \"n_fix_ops\": 1, \"path\": \"src/pattern_test.go\", \"post_errors\": 1, \"title\": \"Create function buildPttern\", \"via\": \"resolve\"}, \"note\": \"quick fix 'Create function buildPttern' for UndeclaredName at src/pattern_test.go:163:10 raises the error count in the edited files from 0 to 1 (seeded by M2: misspell 'buildPattern' as 'buildPttern' (drop a middle character); errors before the mutation 0, after the fix 1); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 52s\", \"shape\": \"diagnostics:extra:?\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "gopls|r4_edits|diagnostics:extra:?",
+  "run_id": "9bb8ccd49c7b"
+ },
+ "replay_logs": [
+  "logs/gopls-v0.23.0-tr111975-r4-replay-baseline-20260925-155725-137c7e.jsonl.gz",
+  "logs/gopls-v0.23.0-tr111975-r4-replay-case-20260925-155716-63b0a2.jsonl.gz",
+  "logs/gopls-v0.23.0-tr111975-r4-replay-control-20260925-155728-0b8682.jsonl.gz"
+ ],
+ "project_files": {},
+ "group": "gopls-r4-diagnostics-extra-mutation-m2-111975",
+ "reduced": true
+}

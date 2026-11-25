@@ -1,0 +1,6 @@
+2026-09-24 19:55:13,208 INFO campaign_run run 4964c981f685: r3_routes on tsserver 5.0.4+tsls3.3.2, tsserver-51667 seed 1 settled, targets ['index.tsx']
+2026-09-24 19:55:20,559 INFO campaign_run run 4964c981f685: 2 candidate(s) in 7s; confirming
+2026-09-24 19:55:25,391 INFO flake replay 1/3 of tsserver|r3_routes|highlightVsReferences:gained: settled=True control_stable=True reproduced=True (4.8s)
+2026-09-24 19:55:30,261 INFO flake replay 2/3 of tsserver|r3_routes|highlightVsReferences:gained: settled=True control_stable=True reproduced=True (4.9s)
+2026-09-24 19:55:35,115 INFO flake replay 3/3 of tsserver|r3_routes|highlightVsReferences:gained: settled=True control_stable=True reproduced=True (4.9s)
+2026-09-24 19:55:35,118 INFO campaign_run run 4964c981f685 finished: ok, 1 confirmed of 2 candidate(s), 22s

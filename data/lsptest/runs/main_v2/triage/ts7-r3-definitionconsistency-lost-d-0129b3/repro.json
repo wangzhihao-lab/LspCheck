@@ -1,0 +1,230 @@
+{
+ "format": 1,
+ "campaign": "main_v2",
+ "vid": "b5bcb0e49763-v01",
+ "run_id": "b5bcb0e49763",
+ "oracle": "r3_routes",
+ "server": {
+  "kind": "ts7",
+  "version": "7.0.2"
+ },
+ "project": {
+  "name": "vadimdemedes/ink@02ae1e59e7c2",
+  "source": "corpus",
+  "ref": "temp/corpus/vadimdemedes__ink@02ae1e59e7c2",
+  "commit": "02ae1e59e7c288e971616100c4c11bcca6b5761b",
+  "language": "typescript"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "src/dom.ts",
+    "positions": [],
+    "ends": [],
+    "names": []
+   },
+   {
+    "path": "test/fixtures/issue-935-overflow-rerender.tsx",
+    "positions": [],
+    "ends": [],
+    "names": []
+   },
+   {
+    "path": "test/helpers/create-stdout.ts",
+    "positions": [],
+    "ends": [],
+    "names": []
+   }
+  ]
+ },
+ "key": {
+  "method": "definitionConsistency",
+  "path": "src/ink.tsx",
+  "line": 146,
+  "character": 11,
+  "extra": "from:test/helpers/create-stdout.ts:7:7"
+ },
+ "ops": [],
+ "case": {
+  "loc": [
+   "src/ink.tsx",
+   146,
+   8,
+   146,
+   14
+  ],
+  "sub": "d",
+  "target": [
+   "test/helpers/create-stdout.ts",
+   7,
+   7
+  ]
+ },
+ "shape": "definitionConsistency:lost",
+ "signature": "ts7|r3_routes|definitionConsistency:lost",
+ "expected": [
+  [
+   "node_modules/@types/node/buffer.d.ts",
+   87,
+   18,
+   87,
+   24
+  ],
+  [
+   "node_modules/@types/node/compatibility/iterators.d.ts",
+   11,
+   18,
+   11,
+   24
+  ],
+  [
+   "node_modules/@types/node/events.d.ts",
+   57,
+   18,
+   57,
+   24
+  ],
+  [
+   "node_modules/@types/node/globals.d.ts",
+   74,
+   18,
+   74,
+   24
+  ],
+  [
+   "node_modules/@types/node/globals.typedarray.d.ts",
+   3,
+   14,
+   3,
+   20
+  ],
+  [
+   "node_modules/@types/node/module.d.ts",
+   574,
+   18,
+   574,
+   24
+  ],
+  [
+   "node_modules/@types/node/process.d.ts",
+   142,
+   18,
+   142,
+   24
+  ],
+  [
+   "node_modules/@types/node/stream.d.ts",
+   1737,
+   18,
+   1737,
+   24
+  ],
+  [
+   "node_modules/@types/node/timers.d.ts",
+   12,
+   18,
+   12,
+   24
+  ]
+ ],
+ "actual": [],
+ "reproduced": "3/3",
+ "note": "flake 3/3 [r1:SCR r2:SCR r3:SCR] in 65s",
+ "violation": {
+  "oracle": "r3_routes",
+  "server": "ts7-7.0.2",
+  "project": "vadimdemedes/ink@02ae1e59e7c2",
+  "key": {
+   "method": "definitionConsistency",
+   "path": "src/ink.tsx",
+   "line": 146,
+   "character": 11,
+   "extra": "from:test/helpers/create-stdout.ts:7:7"
+  },
+  "expected": [
+   [
+    "node_modules/@types/node/buffer.d.ts",
+    87,
+    18,
+    87,
+    24
+   ],
+   [
+    "node_modules/@types/node/compatibility/iterators.d.ts",
+    11,
+    18,
+    11,
+    24
+   ],
+   [
+    "node_modules/@types/node/events.d.ts",
+    57,
+    18,
+    57,
+    24
+   ],
+   [
+    "node_modules/@types/node/globals.d.ts",
+    74,
+    18,
+    74,
+    24
+   ],
+   [
+    "node_modules/@types/node/globals.typedarray.d.ts",
+    3,
+    14,
+    3,
+    20
+   ],
+   [
+    "node_modules/@types/node/module.d.ts",
+    574,
+    18,
+    574,
+    24
+   ],
+   [
+    "node_modules/@types/node/process.d.ts",
+    142,
+    18,
+    142,
+    24
+   ],
+   [
+    "node_modules/@types/node/stream.d.ts",
+    1737,
+    18,
+    1737,
+    24
+   ],
+   [
+    "node_modules/@types/node/timers.d.ts",
+    12,
+    18,
+    12,
+    24
+   ]
+  ],
+  "actual": [],
+  "ops": [],
+  "detail": "{\"case\": {\"loc\": [\"src/ink.tsx\", 146, 8, 146, 14], \"sub\": \"d\", \"target\": [\"test/helpers/create-stdout.ts\", 7, 7]}, \"note\": \"flake 3/3 [r1:SCR r2:SCR r3:SCR] in 65s\", \"shape\": \"definitionConsistency:lost\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "ts7|r3_routes|definitionConsistency:lost",
+  "run_id": "b5bcb0e49763"
+ },
+ "replay_logs": [
+  "logs/ts7-7.0.2-tr0129b3-r3-replay-baseline-20261118-214911-7b2242.jsonl.gz",
+  "logs/ts7-7.0.2-tr0129b3-r3-replay-control-20261118-214921-fe3864.jsonl.gz"
+ ],
+ "project_files": {},
+ "group": "ts7-r3-definitionconsistency-lost-d-0129b3",
+ "reduced": true
+}

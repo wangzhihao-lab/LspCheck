@@ -1,0 +1,286 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "8d2a914da68a-v00",
+ "run_id": "8d2a914da68a",
+ "oracle": "r6_crossimpl",
+ "server": {
+  "kind": "ts7",
+  "version": "7.0.2"
+ },
+ "project": {
+  "name": "vercel/hyper@30ec0a2a91de",
+  "source": "corpus",
+  "ref": "temp/corpus/vercel__hyper@30ec0a2a91de",
+  "commit": "30ec0a2a91de17eeb32dd71998fe8a8ec59f98eb",
+  "language": "typescript"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "app/menus/menus/window.ts",
+    "positions": [],
+    "ends": [],
+    "names": []
+   },
+   {
+    "path": "cli/index.ts",
+    "positions": [],
+    "ends": [],
+    "names": []
+   },
+   {
+    "path": "lib/utils/term-groups.ts",
+    "positions": [],
+    "ends": [],
+    "names": []
+   }
+  ]
+ },
+ "key": {
+  "method": "diagnostics",
+  "path": "cli/index.ts",
+  "line": -1,
+  "character": -1,
+  "extra": ""
+ },
+ "ops": [],
+ "case": {
+  "intended": [],
+  "intended_source": "4519ec0a93607319a96f4feb967aa06a251ccc816544e2fed5c985c1d45dc11a",
+  "method": "diagnostics",
+  "only_reference": [
+   "[101, 6, 101, 14, 0, \"80006\", \"\", \"\"]"
+  ],
+  "only_test": [],
+  "reference": {
+   "kind": "ts6",
+   "version": "6.0.3"
+  }
+ },
+ "shape": "diagnostics:missing:80006",
+ "signature": "ts7|r6_crossimpl|diagnostics:missing:80006",
+ "expected": [
+  [
+   101,
+   6,
+   101,
+   14,
+   0,
+   "80006",
+   "",
+   ""
+  ],
+  [
+   120,
+   3,
+   120,
+   7,
+   0,
+   "6133",
+   "",
+   ""
+  ],
+  [
+   168,
+   3,
+   168,
+   7,
+   0,
+   "6133",
+   "",
+   ""
+  ],
+  [
+   57,
+   3,
+   57,
+   7,
+   0,
+   "6133",
+   "",
+   ""
+  ],
+  [
+   72,
+   3,
+   72,
+   7,
+   0,
+   "6133",
+   "",
+   ""
+  ]
+ ],
+ "actual": [
+  [
+   120,
+   3,
+   120,
+   7,
+   0,
+   "6133",
+   "",
+   ""
+  ],
+  [
+   168,
+   3,
+   168,
+   7,
+   0,
+   "6133",
+   "",
+   ""
+  ],
+  [
+   57,
+   3,
+   57,
+   7,
+   0,
+   "6133",
+   "",
+   ""
+  ],
+  [
+   72,
+   3,
+   72,
+   7,
+   0,
+   "6133",
+   "",
+   ""
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "ts7-7.0.2 and ts6-6.0.3 differ on diagnostics at cli/index.ts:0:0; no documented intended difference matches; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 623s",
+ "violation": {
+  "oracle": "r6_crossimpl",
+  "server": "ts7-7.0.2",
+  "project": "vercel/hyper@30ec0a2a91de",
+  "key": {
+   "method": "diagnostics",
+   "path": "cli/index.ts",
+   "line": -1,
+   "character": -1,
+   "extra": ""
+  },
+  "expected": [
+   [
+    101,
+    6,
+    101,
+    14,
+    0,
+    "80006",
+    "",
+    ""
+   ],
+   [
+    120,
+    3,
+    120,
+    7,
+    0,
+    "6133",
+    "",
+    ""
+   ],
+   [
+    168,
+    3,
+    168,
+    7,
+    0,
+    "6133",
+    "",
+    ""
+   ],
+   [
+    57,
+    3,
+    57,
+    7,
+    0,
+    "6133",
+    "",
+    ""
+   ],
+   [
+    72,
+    3,
+    72,
+    7,
+    0,
+    "6133",
+    "",
+    ""
+   ]
+  ],
+  "actual": [
+   [
+    120,
+    3,
+    120,
+    7,
+    0,
+    "6133",
+    "",
+    ""
+   ],
+   [
+    168,
+    3,
+    168,
+    7,
+    0,
+    "6133",
+    "",
+    ""
+   ],
+   [
+    57,
+    3,
+    57,
+    7,
+    0,
+    "6133",
+    "",
+    ""
+   ],
+   [
+    72,
+    3,
+    72,
+    7,
+    0,
+    "6133",
+    "",
+    ""
+   ]
+  ],
+  "ops": [],
+  "detail": "{\"case\": {\"intended\": [], \"intended_source\": \"4519ec0a93607319a96f4feb967aa06a251ccc816544e2fed5c985c1d45dc11a\", \"method\": \"diagnostics\", \"only_reference\": [\"[101, 6, 101, 14, 0, \\\"80006\\\", \\\"\\\", \\\"\\\"]\"], \"only_test\": [], \"reference\": {\"kind\": \"ts6\", \"version\": \"6.0.3\"}}, \"note\": \"ts7-7.0.2 and ts6-6.0.3 differ on diagnostics at cli/index.ts:0:0; no documented intended difference matches; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 623s\", \"shape\": \"diagnostics:missing:80006\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "ts7|r6_crossimpl|diagnostics:missing:80006",
+  "run_id": "8d2a914da68a"
+ },
+ "replay_logs": [
+  "logs/ts6-6.0.3-trda3300-ref-r6-replay-ref-baseline-20260925-170339-50b349.jsonl.gz",
+  "logs/ts6-6.0.3-trda3300-ref-r6-replay-ref-control-20260925-170438-1c6169.jsonl.gz",
+  "logs/ts7-7.0.2-trda3300-r6-replay-test-baseline-20260925-170149-7b8058.jsonl.gz",
+  "logs/ts7-7.0.2-trda3300-r6-replay-test-control-20260925-170242-35e835.jsonl.gz"
+ ],
+ "project_files": {},
+ "group": "ts7-r6-diagnostics-missing-80006-diagnostics-da3300",
+ "reduced": true
+}

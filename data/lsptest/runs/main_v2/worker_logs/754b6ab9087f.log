@@ -1,0 +1,6 @@
+2026-11-18 13:53:33,535 INFO campaign_run run 754b6ab9087f: r1_history on pyright 1.1.414, usestrix/strix@56f7d45388e6 seed 2 settled, targets ['strix/interface/tui/backend/live_view.py', 'strix/report/state.py', 'tests/test_finish_coverage_gate.py']
+2026-11-18 14:00:21,701 INFO campaign_run run 754b6ab9087f: 3 candidate(s) in 408s; confirming
+2026-11-18 14:00:54,790 INFO flake replay 1/3 of pyright|r1_history|references:extra: settled=True control_stable=True reproduced=True (33.1s)
+2026-11-18 14:01:30,542 INFO flake replay 2/3 of pyright|r1_history|references:extra: settled=True control_stable=True reproduced=True (35.7s)
+2026-11-18 14:02:05,254 INFO flake replay 3/3 of pyright|r1_history|references:extra: settled=True control_stable=True reproduced=True (34.7s)
+2026-11-18 14:02:05,406 INFO campaign_run run 754b6ab9087f finished: ok, 1 confirmed of 3 candidate(s), 512s

@@ -1,0 +1,3 @@
+2026-11-18 07:21:03,552 INFO campaign_run run 06ab77b78bb1: r1_history on rust-analyzer 2026-09-21, iced-rs/iced@0ef42477fb6f seed 1 race0, targets ['examples/custom_shader/src/scene/pipeline/vertex.rs', 'examples/svg/src/main.rs', 'wgpu/src/quad/solid.rs']
+2026-11-18 07:25:07,995 INFO campaign_run run 06ab77b78bb1: 0 candidate(s) in 245s; confirming
+2026-11-18 07:25:07,996 INFO campaign_run run 06ab77b78bb1 finished: ok, 0 confirmed of 0 candidate(s), 244s

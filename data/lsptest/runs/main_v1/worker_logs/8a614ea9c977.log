@@ -1,0 +1,3 @@
+2026-09-23 17:17:10,688 INFO campaign_run run 8a614ea9c977: r3_routes on gopls v0.23.0, charmbracelet/bubbletea@657aaae216e3 seed 1 settled, targets ['examples/http/main.go', 'examples/set-window-title/main.go', 'mouse.go']
+2026-09-23 17:19:32,282 INFO campaign_run run 8a614ea9c977: 11 candidate(s) in 142s; confirming
+2026-09-23 17:19:32,284 INFO campaign_run run 8a614ea9c977 finished: ok, 0 confirmed of 11 candidate(s), 142s

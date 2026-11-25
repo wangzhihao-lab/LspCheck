@@ -1,0 +1,343 @@
+{
+ "format": 1,
+ "campaign": "bench_v1",
+ "vid": "f827acc194b5-v04",
+ "run_id": "f827acc194b5",
+ "oracle": "r1_history",
+ "server": {
+  "kind": "pyright",
+  "version": "1.1.199"
+ },
+ "project": {
+  "name": "pyright-2759",
+  "source": "dir",
+  "ref": "data/lsp_bench/cases/pyright-2759/project",
+  "commit": "",
+  "language": "python"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "race0",
+  "settle_timeout_s": 120.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "main.py",
+    "positions": [
+     [
+      1,
+      9
+     ],
+     [
+      1,
+      27
+     ],
+     [
+      3,
+      4
+     ],
+     [
+      4,
+      1
+     ],
+     [
+      4,
+      8
+     ],
+     [
+      4,
+      16
+     ],
+     [
+      4,
+      26
+     ],
+     [
+      4,
+      41
+     ],
+     [
+      4,
+      46
+     ],
+     [
+      4,
+      51
+     ],
+     [
+      4,
+      61
+     ],
+     [
+      4,
+      68
+     ]
+    ],
+    "ends": [
+     [
+      1,
+      14
+     ],
+     [
+      1,
+      32
+     ],
+     [
+      3,
+      9
+     ],
+     [
+      4,
+      3
+     ],
+     [
+      4,
+      10
+     ],
+     [
+      4,
+      21
+     ],
+     [
+      4,
+      31
+     ],
+     [
+      4,
+      43
+     ],
+     [
+      4,
+      48
+     ],
+     [
+      4,
+      53
+     ],
+     [
+      4,
+      63
+     ],
+     [
+      4,
+      72
+     ]
+    ],
+    "names": [
+     "itertools",
+     "accumulate",
+     "cashflows",
+     "lst",
+     "list",
+     "accumulate",
+     "cashflows",
+     "bal",
+     "pmt",
+     "bal",
+     "pmt",
+     "initial"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "typeDefinition",
+  "path": "main.py",
+  "line": 4,
+  "character": 68,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "main.py"
+  },
+  {
+   "kind": "change",
+   "path": "main.py",
+   "start": [
+    3,
+    0
+   ],
+   "end": [
+    3,
+    9
+   ],
+   "text": "zz"
+  },
+  {
+   "kind": "change",
+   "path": "main.py",
+   "start": [
+    3,
+    0
+   ],
+   "end": [
+    3,
+    2
+   ],
+   "text": "cashflows"
+  },
+  {
+   "kind": "request",
+   "path": "main.py",
+   "start": [
+    3,
+    9
+   ],
+   "text": "definition"
+  },
+  {
+   "kind": "request",
+   "path": "main.py",
+   "start": [
+    4,
+    72
+   ],
+   "text": "definition"
+  },
+  {
+   "kind": "request",
+   "path": "main.py",
+   "start": [
+    1,
+    9
+   ],
+   "text": "typeDefinition"
+  },
+  {
+   "kind": "request",
+   "path": "main.py",
+   "start": [
+    4,
+    1
+   ],
+   "text": "definition"
+  }
+ ],
+ "case": {
+  "chain_step": 0,
+  "families": [],
+  "family": "H8",
+  "history_index": 2,
+  "history_seed": 1003,
+  "mode": "fresh",
+  "note": "after main.py: replace 'cashflows' by 'zz' on line 3 and its inverse, 4 requests in a shuffled order: definition@main.py:3:9, definition@main.py:4:72, typeDefinition@main.py:1:9, definition@main.py:4:1",
+  "seed": 1,
+  "timing": "race0"
+ },
+ "shape": "typeDefinition:lost",
+ "signature": "pyright|r1_history|typeDefinition:lost",
+ "expected": [
+  [
+   "temp/lsp_servers/pyright-1.1.199/node_modules/pyright/dist/typeshed-fallback/stdlib/builtins.pyi",
+   185,
+   6,
+   185,
+   9
+  ]
+ ],
+ "actual": [],
+ "reproduced": "0/3",
+ "note": "H8: after main.py: replace 'cashflows' by 'zz' on line 3 and its inverse, 4 requests in a shuffled order: definition@main.py:3:9, definition@main.py:4:72, typeDefinition@main.py:1:9, definition@main.py:4:; flake 0/3 [r1:SCr r2:SCr r3:SCr] in 20s",
+ "violation": {
+  "oracle": "r1_history",
+  "server": "pyright-1.1.199",
+  "project": "pyright-2759",
+  "key": {
+   "method": "typeDefinition",
+   "path": "main.py",
+   "line": 4,
+   "character": 68,
+   "extra": ""
+  },
+  "expected": [
+   [
+    "temp/lsp_servers/pyright-1.1.199/node_modules/pyright/dist/typeshed-fallback/stdlib/builtins.pyi",
+    185,
+    6,
+    185,
+    9
+   ]
+  ],
+  "actual": [],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "main.py"
+   },
+   {
+    "kind": "change",
+    "path": "main.py",
+    "start": [
+     3,
+     0
+    ],
+    "end": [
+     3,
+     9
+    ],
+    "text": "zz"
+   },
+   {
+    "kind": "change",
+    "path": "main.py",
+    "start": [
+     3,
+     0
+    ],
+    "end": [
+     3,
+     2
+    ],
+    "text": "cashflows"
+   },
+   {
+    "kind": "request",
+    "path": "main.py",
+    "start": [
+     3,
+     9
+    ],
+    "text": "definition"
+   },
+   {
+    "kind": "request",
+    "path": "main.py",
+    "start": [
+     4,
+     72
+    ],
+    "text": "definition"
+   },
+   {
+    "kind": "request",
+    "path": "main.py",
+    "start": [
+     1,
+     9
+    ],
+    "text": "typeDefinition"
+   },
+   {
+    "kind": "request",
+    "path": "main.py",
+    "start": [
+     4,
+     1
+    ],
+    "text": "definition"
+   }
+  ],
+  "detail": "{\"case\": {\"chain_step\": 0, \"families\": [], \"family\": \"H8\", \"history_index\": 2, \"history_seed\": 1003, \"mode\": \"fresh\", \"note\": \"after main.py: replace 'cashflows' by 'zz' on line 3 and its inverse, 4 requests in a shuffled order: definition@main.py:3:9, definition@main.py:4:72, typeDefinition@main.py:1:9, definition@main.py:4:1\", \"seed\": 1, \"timing\": \"race0\"}, \"note\": \"H8: after main.py: replace 'cashflows' by 'zz' on line 3 and its inverse, 4 requests in a shuffled order: definition@main.py:3:9, definition@main.py:4:72, typeDefinition@main.py:1:9, definition@main.py:4:; flake 0/3 [r1:SCr r2:SCr r3:SCr] in 20s\", \"shape\": \"typeDefinition:lost\"}",
+  "reproduced": "0/3",
+  "reduced_ops": [],
+  "signature": "pyright|r1_history|typeDefinition:lost",
+  "run_id": "f827acc194b5"
+ },
+ "replay_logs": [],
+ "project_files": {},
+ "incomplete": false
+}

@@ -1,0 +1,3 @@
+{
+ "yazi-parser/src/tasks/spawn.rs": "use anyhow::anyhow;\nuse mlua::{ExternalError, FromLua, IntoLua, Lua, Value};\nuse yazi_core::tasks::TaskOpt;\nuse yazi_shared::event::ActionCow;\n\n#[derive(Clone, Debug)]\npub struct SpawnForm {\n\tpub opt: TaskOpt,\n}\n\nimpl TryFrom<ActionCow> for SpawnForm {\n\ttype Error = anyhow::Error;\n\n\tfn try_from(mut a: ActionCow) -> Result<Self, Self::Error> {\n\t\tOk(Self { opt: a.take_any(\"opt\").ok_or_else(|| anyhow!(\"Invalid 'opt' in SpawnForm\"))? })\n\t}\n}\n\nimpl FromLua for SpawnForm {\n\tfn from_lua(_: Value, _: &Lua) -> mlua::Result<Self> { Err(\"unsupported\".into_lua_err()) }\n}\n\nimpl IntoLua for SpawnForm {\n\tfn into_lua(self, _: &Lua) -> mlua::Result<Value> { Err(\"unsupported\".into_lua_err()) }\n}\n"
+}

@@ -1,0 +1,6 @@
+2026-11-18 09:59:39,399 INFO campaign_run run 3f88d8735aba: r4_edits on ts6 6.0.3, date-fns/date-fns@f34149bb1ba1 seed 1 settled, targets ['pkgs/core/src/fp/differenceInCalendarQuartersWithOptions/index.ts', 'pkgs/core/src/fp/isSameWeek/index.ts', 'pkgs/core/src/fp/lastDayOfMonth/index.ts']
+2026-11-18 10:01:10,599 INFO campaign_run run 3f88d8735aba: 1 candidate(s) in 91s; confirming
+2026-11-18 10:02:58,422 INFO flake replay 1/3 of ts6|r4_edits|diagnostics:extra:2304: settled=True control_stable=True reproduced=True (107.8s)
+2026-11-18 10:04:52,247 INFO flake replay 2/3 of ts6|r4_edits|diagnostics:extra:2304: settled=True control_stable=True reproduced=True (113.8s)
+2026-11-18 10:06:53,581 INFO flake replay 3/3 of ts6|r4_edits|diagnostics:extra:2304: settled=True control_stable=True reproduced=True (121.3s)
+2026-11-18 10:06:53,585 INFO campaign_run run 3f88d8735aba finished: ok, 1 confirmed of 1 candidate(s), 434s

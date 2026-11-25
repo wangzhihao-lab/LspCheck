@@ -1,0 +1,9 @@
+2026-09-24 20:50:45,816 INFO campaign_run run 40056ba100a6: r5_transforms on gopls v0.10.0, gopls-43144 seed 1 settled, targets ['bar/bar.go', 'bar/bar_test.go', 'bar/bar_x_test.go', 'foo/foo.go']
+2026-09-24 20:51:16,636 INFO campaign_run run 40056ba100a6: 2 candidate(s) in 31s; confirming
+2026-09-24 20:51:25,425 INFO flake replay 1/3 of gopls|r5_transforms|semanticTokens:missing: settled=True control_stable=True reproduced=True (8.8s)
+2026-09-24 20:51:34,478 INFO flake replay 2/3 of gopls|r5_transforms|semanticTokens:missing: settled=True control_stable=True reproduced=True (9.1s)
+2026-09-24 20:51:43,137 INFO flake replay 3/3 of gopls|r5_transforms|semanticTokens:missing: settled=True control_stable=True reproduced=True (8.7s)
+2026-09-24 20:51:51,734 INFO flake replay 1/3 of gopls|r5_transforms|foldingRange:changed: settled=True control_stable=True reproduced=True (8.6s)
+2026-09-24 20:52:00,372 INFO flake replay 2/3 of gopls|r5_transforms|foldingRange:changed: settled=True control_stable=True reproduced=True (8.6s)
+2026-09-24 20:52:09,260 INFO flake replay 3/3 of gopls|r5_transforms|foldingRange:changed: settled=True control_stable=True reproduced=True (8.9s)
+2026-09-24 20:52:09,270 INFO campaign_run run 40056ba100a6 finished: ok, 2 confirmed of 2 candidate(s), 84s

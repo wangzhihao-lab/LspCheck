@@ -1,0 +1,83 @@
+{
+ "schema": 1,
+ "id": "tsserver-45533",
+ "meta": {
+  "server": "tsserver",
+  "kind": "tsserver",
+  "number": 45533,
+  "url": "https://github.com/microsoft/TypeScript/issues/45533",
+  "title": "Completion for enum variables suggest enum values instead of enum keys",
+  "oracle_class": "R4",
+  "subtype": "completion",
+  "fix_ref": "microsoft/TypeScript#45588 (Don't include literals from enum members in completions), 9f025b90a4, 2021-08-26; git tag --contains: first in v4.5-beta / v4.5.2",
+  "fix_shas": [
+   "9f025b90a48d8d5663a816122a2e8cf3cf2700b5"
+  ],
+  "pre_version": "4.4.4",
+  "post_version": "4.5.2",
+  "pre_build": "4.4.4+tsls0.7.1",
+  "post_build": "4.5.2+tsls0.7.1",
+  "wrapper": "typescript-language-server@0.7.1",
+  "build_notes": "npm typescript@4.4.4 (2021-10-12) and typescript@4.5.2 (2021-11-17), both behind typescript-language-server@0.7.1 (the latest wrapper release before 4.5.2), started with the pinned tsserver.js; the reported TypeScript version is checked on every session.",
+  "candidate_rank": 57,
+  "effort_minutes": 7,
+  "notes": "The fix removes the literal values of enum members from the completion list, so a post-fix list without the literal is 'absent' (missing: absent). Accepting the pre-fix literal \"str\" for a variable of the string enum type ES is a type error (TS2322)."
+ },
+ "language": "typescript",
+ "settings": {},
+ "settings_note": "The issue names no settings (its playground link uses TS 4.0.5 defaults); no tsconfig.json, so tsserver uses an inferred project.",
+ "session": {
+  "settle_timeout_s": 120
+ },
+ "files": [
+  {
+   "path": "index.ts",
+   "provenance": "issue",
+   "source": "issue body, Code block",
+   "note": ""
+  }
+ ],
+ "repro": {
+  "attempt": 1,
+  "timing": "settled",
+  "steps": "Open index.ts. The issue's last line shows the literal \"str\" the completion service suggests for 'const es: ES = '; to ask for that completion, delete \"str\" and request completions after '= ' on that line. Reported: the list offers the enum member values (\"str\") instead of the member names; accepting \"str\" gives a type error for the string enum. Probe: accept the offered \"str\" item; a fresh session on the edited file must not report an error the case session did not report before (the missing expression TS1109 is the targeted diagnostic). No such item offered counts as absent.",
+  "ops": [
+   {
+    "kind": "open",
+    "path": "index.ts"
+   },
+   {
+    "kind": "change",
+    "path": "index.ts",
+    "start": [
+     9,
+     15
+    ],
+    "end": [
+     9,
+     20
+    ],
+    "text": ""
+   }
+  ],
+  "probe": {
+   "type": "edit_leaves_diagnostic",
+   "params": {
+    "edit": {
+     "via": "completion",
+     "path": "index.ts",
+     "position": [
+      9,
+      15
+     ],
+     "label_re": "^[\"']str[\"']$",
+     "missing": "absent"
+    },
+    "target": {
+     "code": "1109"
+    }
+   }
+  }
+ },
+ "attempts": []
+}

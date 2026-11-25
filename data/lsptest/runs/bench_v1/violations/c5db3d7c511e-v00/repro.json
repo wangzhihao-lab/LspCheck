@@ -1,0 +1,232 @@
+{
+ "format": 1,
+ "campaign": "bench_v1",
+ "vid": "c5db3d7c511e-v00",
+ "run_id": "c5db3d7c511e",
+ "oracle": "r5_transforms",
+ "server": {
+  "kind": "gopls",
+  "version": "v0.7.1"
+ },
+ "project": {
+  "name": "gopls-47436",
+  "source": "dir",
+  "ref": "data/lsp_bench/cases/gopls-47436/project",
+  "commit": "",
+  "language": "go"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 180.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 6,
+  "targets": [
+   {
+    "path": "main.go",
+    "positions": [
+     [
+      0,
+      8
+     ],
+     [
+      5,
+      3
+     ],
+     [
+      9,
+      6
+     ],
+     [
+      9,
+      11
+     ],
+     [
+      9,
+      16
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      9
+     ],
+     [
+      5,
+      6
+     ],
+     [
+      9,
+      8
+     ],
+     [
+      9,
+      14
+     ],
+     [
+      9,
+      17
+     ]
+    ],
+    "names": [
+     "p",
+     "Hello",
+     "myFS",
+     "embed",
+     "FS"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "documentHighlight",
+  "path": "main.go",
+  "line": 9,
+  "character": 16,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "main.go"
+  },
+  {
+   "kind": "change",
+   "path": "main.go",
+   "start": [
+    9,
+    17
+   ],
+   "end": [
+    10,
+    0
+   ]
+  }
+ ],
+ "case": {
+  "mapped_key": [
+   "documentHighlight",
+   "main.go",
+   9,
+   16,
+   ""
+  ],
+  "transform": {
+   "back": {
+    "col": 0,
+    "eof": [],
+    "line": -1,
+    "n": 0,
+    "path": "main.go",
+    "w": 0
+   },
+   "edits": [
+    [
+     9,
+     17,
+     10,
+     0,
+     ""
+    ]
+   ],
+   "kind": "T5",
+   "path": "main.go",
+   "shift": {
+    "col": 0,
+    "eof": [
+     10,
+     0,
+     9,
+     17
+    ],
+    "line": -1,
+    "n": 0,
+    "path": "main.go",
+    "w": 0
+   }
+  }
+ },
+ "shape": "documentHighlight:changed",
+ "signature": "gopls|r5_transforms|documentHighlight:changed",
+ "expected": [
+  [
+   9,
+   15,
+   9,
+   17,
+   1
+  ]
+ ],
+ "actual": [
+  [
+   9,
+   15,
+   10,
+   0,
+   1
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "T5 main.go: 1 edit(s), first [9, 17, 10, 0]; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 29s",
+ "violation": {
+  "oracle": "r5_transforms",
+  "server": "gopls-v0.7.1",
+  "project": "gopls-47436",
+  "key": {
+   "method": "documentHighlight",
+   "path": "main.go",
+   "line": 9,
+   "character": 16,
+   "extra": ""
+  },
+  "expected": [
+   [
+    9,
+    15,
+    9,
+    17,
+    1
+   ]
+  ],
+  "actual": [
+   [
+    9,
+    15,
+    10,
+    0,
+    1
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "main.go"
+   },
+   {
+    "kind": "change",
+    "path": "main.go",
+    "start": [
+     9,
+     17
+    ],
+    "end": [
+     10,
+     0
+    ]
+   }
+  ],
+  "detail": "{\"case\": {\"mapped_key\": [\"documentHighlight\", \"main.go\", 9, 16, \"\"], \"transform\": {\"back\": {\"col\": 0, \"eof\": [], \"line\": -1, \"n\": 0, \"path\": \"main.go\", \"w\": 0}, \"edits\": [[9, 17, 10, 0, \"\"]], \"kind\": \"T5\", \"path\": \"main.go\", \"shift\": {\"col\": 0, \"eof\": [10, 0, 9, 17], \"line\": -1, \"n\": 0, \"path\": \"main.go\", \"w\": 0}}}, \"note\": \"T5 main.go: 1 edit(s), first [9, 17, 10, 0]; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 29s\", \"shape\": \"documentHighlight:changed\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "gopls|r5_transforms|documentHighlight:changed",
+  "run_id": "c5db3d7c511e"
+ },
+ "replay_logs": [
+  "logs/gopls-v0.7.1-c5db3d7c511e-r5-replay-baseline-20260925-005453-2ef0ee.jsonl.gz",
+  "logs/gopls-v0.7.1-c5db3d7c511e-r5-replay-case-20260925-005459-178b64.jsonl.gz",
+  "logs/gopls-v0.7.1-c5db3d7c511e-r5-replay-control-20260925-005456-8f7510.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

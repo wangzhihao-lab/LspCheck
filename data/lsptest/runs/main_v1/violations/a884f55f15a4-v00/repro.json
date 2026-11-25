@@ -1,0 +1,480 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "a884f55f15a4-v00",
+ "run_id": "a884f55f15a4",
+ "oracle": "r3_routes",
+ "server": {
+  "kind": "pyright",
+  "version": "1.1.414"
+ },
+ "project": {
+  "name": "pallets/flask@d73fa1cdcbd8",
+  "source": "corpus",
+  "ref": "temp/corpus/pallets__flask@d73fa1cdcbd8",
+  "commit": "d73fa1cdcbd8b1465c151db8924ba58b1dd14e35",
+  "language": "python"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "src/flask/json/tag.py",
+    "positions": [
+     [
+      76,
+      32
+     ],
+     [
+      86,
+      28
+     ],
+     [
+      110,
+      26
+     ],
+     [
+      140,
+      18
+     ],
+     [
+      153,
+      48
+     ],
+     [
+      183,
+      24
+     ],
+     [
+      183,
+      42
+     ],
+     [
+      205,
+      8
+     ],
+     [
+      306,
+      22
+     ],
+     [
+      306,
+      42
+     ],
+     [
+      311,
+      34
+     ],
+     [
+      320,
+      30
+     ]
+    ],
+    "ends": [
+     [
+      76,
+      34
+     ],
+     [
+      86,
+      30
+     ],
+     [
+      110,
+      29
+     ],
+     [
+      140,
+      20
+     ],
+     [
+      153,
+      50
+     ],
+     [
+      183,
+      27
+     ],
+     [
+      183,
+      44
+     ],
+     [
+      205,
+      13
+     ],
+     [
+      306,
+      24
+     ],
+     [
+      306,
+      45
+     ],
+     [
+      311,
+      40
+     ],
+     [
+      320,
+      32
+     ]
+    ],
+    "names": [
+     "Any",
+     "Any",
+     "value",
+     "self",
+     "item",
+     "value",
+     "Any",
+     "__slots__",
+     "tags",
+     "value",
+     "_untag_scan",
+     "Any"
+    ]
+   },
+   {
+    "path": "src/flask/wrappers.py",
+    "positions": [
+     [
+      0,
+      10
+     ],
+     [
+      14,
+      35
+     ],
+     [
+      54,
+      13
+     ],
+     [
+      92,
+      39
+     ],
+     [
+      116,
+      10
+     ],
+     [
+      119,
+      15
+     ],
+     [
+      142,
+      31
+     ],
+     [
+      145,
+      9
+     ],
+     [
+      161,
+      28
+     ],
+     [
+      179,
+      9
+     ],
+     [
+      239,
+      23
+     ],
+     [
+      241,
+      9
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      15
+     ],
+     [
+      14,
+      37
+     ],
+     [
+      54,
+      23
+     ],
+     [
+      92,
+      41
+     ],
+     [
+      116,
+      12
+     ],
+     [
+      119,
+      22
+     ],
+     [
+      142,
+      34
+     ],
+     [
+      145,
+      13
+     ],
+     [
+      161,
+      30
+     ],
+     [
+      179,
+      13
+     ],
+     [
+      239,
+      25
+     ],
+     [
+      241,
+      15
+     ]
+    ],
+    "names": [
+     "__future__",
+     "Rule",
+     "_max_content_length",
+     "int",
+     "self",
+     "max_form_parts",
+     "value",
+     "property",
+     "str",
+     "property",
+     "str",
+     "json_module"
+    ]
+   },
+   {
+    "path": "tests/type_check/typing_route.py",
+    "positions": [
+     [
+      10,
+      15
+     ],
+     [
+      27,
+      14
+     ],
+     [
+      31,
+      11
+     ],
+     [
+      31,
+      31
+     ],
+     [
+      36,
+      30
+     ],
+     [
+      44,
+      2
+     ],
+     [
+      59,
+      17
+     ],
+     [
+      68,
+      7
+     ],
+     [
+      70,
+      24
+     ],
+     [
+      76,
+      25
+     ],
+     [
+      92,
+      43
+     ],
+     [
+      108,
+      1
+     ]
+    ],
+    "ends": [
+     [
+      10,
+      19
+     ],
+     [
+      27,
+      18
+     ],
+     [
+      31,
+      19
+     ],
+     [
+      31,
+      33
+     ],
+     [
+      36,
+      31
+     ],
+     [
+      44,
+      4
+     ],
+     [
+      59,
+      30
+     ],
+     [
+      68,
+      10
+     ],
+     [
+      70,
+      26
+     ],
+     [
+      76,
+      30
+     ],
+     [
+      92,
+      45
+     ],
+     [
+      108,
+      3
+     ]
+    ],
+    "names": [
+     "wrappers",
+     "jsonify",
+     "hello_json_dict",
+     "str",
+     "t",
+     "app",
+     "hello_generator_expression",
+     "route",
+     "int",
+     "HTTPStatus",
+     "name",
+     "app"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "definitionConsistency",
+  "path": "src/flask/wrappers.py",
+  "line": 89,
+  "character": 22,
+  "extra": "from:src/flask/wrappers.py:54:13"
+ },
+ "ops": [],
+ "case": {
+  "loc": [
+   "src/flask/wrappers.py",
+   89,
+   13,
+   89,
+   32
+  ],
+  "sub": "d",
+  "target": [
+   "src/flask/wrappers.py",
+   54,
+   13
+  ]
+ },
+ "shape": "definitionConsistency:missing",
+ "signature": "pyright|r3_routes|definitionConsistency:missing",
+ "expected": [
+  [
+   "src/flask/wrappers.py",
+   54,
+   4,
+   54,
+   23
+  ],
+  [
+   "src/flask/wrappers.py",
+   89,
+   13,
+   89,
+   32
+  ]
+ ],
+ "actual": [
+  [
+   "src/flask/wrappers.py",
+   54,
+   4,
+   54,
+   23
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "flake 3/3 [r1:SCR r2:SCR r3:SCR] in 36s",
+ "violation": {
+  "oracle": "r3_routes",
+  "server": "pyright-1.1.414",
+  "project": "pallets/flask@d73fa1cdcbd8",
+  "key": {
+   "method": "definitionConsistency",
+   "path": "src/flask/wrappers.py",
+   "line": 89,
+   "character": 22,
+   "extra": "from:src/flask/wrappers.py:54:13"
+  },
+  "expected": [
+   [
+    "src/flask/wrappers.py",
+    54,
+    4,
+    54,
+    23
+   ],
+   [
+    "src/flask/wrappers.py",
+    89,
+    13,
+    89,
+    32
+   ]
+  ],
+  "actual": [
+   [
+    "src/flask/wrappers.py",
+    54,
+    4,
+    54,
+    23
+   ]
+  ],
+  "ops": [],
+  "detail": "{\"case\": {\"loc\": [\"src/flask/wrappers.py\", 89, 13, 89, 32], \"sub\": \"d\", \"target\": [\"src/flask/wrappers.py\", 54, 13]}, \"note\": \"flake 3/3 [r1:SCR r2:SCR r3:SCR] in 36s\", \"shape\": \"definitionConsistency:missing\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "pyright|r3_routes|definitionConsistency:missing",
+  "run_id": "a884f55f15a4"
+ },
+ "replay_logs": [
+  "logs/pyright-1.1.414-a884f55f15a4-r3-replay-baseline-20260923-225903-30842b.jsonl.gz",
+  "logs/pyright-1.1.414-a884f55f15a4-r3-replay-control-20260923-225909-f5428e.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

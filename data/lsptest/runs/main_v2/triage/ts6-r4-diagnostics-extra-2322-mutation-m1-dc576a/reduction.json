@@ -1,0 +1,52 @@
+{
+ "vid": "81b728f0bb1d-v01",
+ "ops_before": 3,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 2,
+ "cache_hits": 0,
+ "reduce_seconds": 12.541,
+ "budget_exhausted": false,
+ "probe_log": [
+  [
+   2,
+   false
+  ],
+  [
+   2,
+   false
+  ]
+ ],
+ "logs": [
+  "ts6-6.0.3-trdc576a-r4-replay-baseline-20261119-025423-46bf54.jsonl.gz",
+  "ts6-6.0.3-trdc576a-r4-replay-case-20261119-025401-6e6046.jsonl.gz",
+  "ts6-6.0.3-trdc576a-r4-replay-control-20261119-025443-ecd04c.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [],
+  "actual": [
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2322",
+    "typescript",
+    "Type 'string' is not assignable to type '{ (str: string): Command<[], {}>; (): string; }'."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2322",
+    "typescript",
+    "Type 'string' is not assignable to type '{ (str: string): Command<[], {}>; (str: string, argsDescription: Record<string, string>): Command<[], {}>; (): string; }'."
+   ]
+  ]
+ },
+ "ops_after": 3,
+ "total_seconds": 238.6
+}

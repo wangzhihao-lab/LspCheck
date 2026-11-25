@@ -1,0 +1,6 @@
+2026-09-24 18:05:37,212 INFO campaign_run run db1bca460fe2: r4_edits on gopls v0.20.0, gopls-74708 seed 1 settled, targets ['b.go']
+2026-09-24 18:06:16,174 INFO campaign_run run db1bca460fe2: 1 candidate(s) in 39s; confirming
+2026-09-24 18:06:31,873 INFO flake replay 1/3 of gopls|r4_edits|diagnostics:extra:?: settled=True control_stable=True reproduced=True (15.7s)
+2026-09-24 18:06:47,349 INFO flake replay 2/3 of gopls|r4_edits|diagnostics:extra:?: settled=True control_stable=True reproduced=True (15.5s)
+2026-09-24 18:07:02,707 INFO flake replay 3/3 of gopls|r4_edits|diagnostics:extra:?: settled=True control_stable=True reproduced=True (15.4s)
+2026-09-24 18:07:02,710 INFO campaign_run run db1bca460fe2 finished: ok, 1 confirmed of 1 candidate(s), 86s

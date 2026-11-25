@@ -1,0 +1,74 @@
+{
+ "schema": 1,
+ "id": "rust-analyzer-20987",
+ "meta": {
+  "server": "rust-analyzer",
+  "kind": "rust-analyzer",
+  "number": 20987,
+  "url": "https://github.com/rust-lang/rust-analyzer/issues/20987",
+  "title": "Completing a function with return type `()` inserts a semicolon even when in an expression",
+  "oracle_class": "R4",
+  "subtype": "completion",
+  "fix_ref": "rust-lang/rust-analyzer#21032 (Fix complete unit return semicolon in arg-list)",
+  "fix_shas": [
+   "87cfc881f13a7fbfa6797fd1383534cf6598054d"
+  ],
+  "pre_version": "2025-12-15",
+  "post_version": "2025-12-22",
+  "pre_build": "2025-12-15",
+  "post_build": "2025-12-22",
+  "build_notes": "GitHub release assets rust-analyzer-aarch64-apple-darwin.gz of the weekly tags 2025-12-15 and 2025-12-22; git tag --contains puts the fix first in 2025-12-22. The sysroot is the local rustup toolchain (rustc 1.98.1).",
+  "effort_minutes": 5,
+  "notes": "Completion of a unit-returning function appends ';' when the call looks like a statement; inside an argument list the result 'called_function();' is a syntax error.",
+  "candidate_rank": 41
+ },
+ "language": "rust",
+ "settings": {},
+ "settings_note": "The issue names no settings; the session keeps checkOnSave off (native analysis only).",
+ "session": {
+  "settle_timeout_s": 240,
+  "request_timeout_s": 60,
+  "pull_diagnostics": false
+ },
+ "files": [
+  {
+   "path": "src/main.rs",
+   "provenance": "issue",
+   "source": "issue body, first code block",
+   "note": ""
+  },
+  {
+   "path": "Cargo.toml",
+   "provenance": "scaffold",
+   "source": "",
+   "note": "a binary crate around the snippet (package name, version, edition 2021)"
+  }
+ ],
+ "repro": {
+  "attempt": 1,
+  "timing": "settled",
+  "steps": "Open src/main.rs. Request completion right after 'ca' in 'higher_order_function(ca /* cursor */);' (line 5, character 28) and accept called_function. Reported: 'higher_order_function(called_function(););', a syntax error. Probe: the edited text must have no parse error that the original did not have.",
+  "ops": [
+   {
+    "kind": "open",
+    "path": "src/main.rs"
+   }
+  ],
+  "probe": {
+   "type": "edit_breaks_syntax",
+   "params": {
+    "edit": {
+     "via": "completion",
+     "path": "src/main.rs",
+     "position": [
+      5,
+      28
+     ],
+     "label_re": "^called_function",
+     "missing": "invalid"
+    }
+   }
+  }
+ },
+ "attempts": []
+}

@@ -1,0 +1,339 @@
+{
+ "format": 1,
+ "campaign": "bench_v1",
+ "vid": "c9de54d83e5d-v00",
+ "run_id": "c9de54d83e5d",
+ "oracle": "r4_edits",
+ "server": {
+  "kind": "rust-analyzer",
+  "version": "2022-07-18"
+ },
+ "project": {
+  "name": "rust-analyzer-11897",
+  "source": "dir",
+  "ref": "data/lsp_bench/cases/rust-analyzer-11897/project",
+  "commit": "",
+  "language": "rust"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 240.0,
+  "request_timeout_s": 60.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "src/main.rs",
+    "positions": [
+     [
+      0,
+      5
+     ],
+     [
+      1,
+      6
+     ],
+     [
+      1,
+      16
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      7
+     ],
+     [
+      1,
+      7
+     ],
+     [
+      1,
+      17
+     ]
+    ],
+    "names": [
+     "main",
+     "x",
+     "ok"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "diagnostics",
+  "path": "src/main.rs",
+  "line": -1,
+  "character": -1,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "src/main.rs"
+  },
+  {
+   "kind": "change",
+   "path": "src/main.rs",
+   "start": [
+    1,
+    17
+   ],
+   "end": [
+    1,
+    17
+   ],
+   "text": ";"
+  },
+  {
+   "kind": "change",
+   "path": "src/main.rs",
+   "start": [
+    1,
+    17
+   ],
+   "end": [
+    1,
+    18
+   ]
+  },
+  {
+   "kind": "change",
+   "path": "src/main.rs",
+   "start": [
+    1,
+    17
+   ],
+   "end": [
+    1,
+    17
+   ],
+   "text": ";"
+  }
+ ],
+ "case": {
+  "kind": "r1-suspect",
+  "open": [
+   "src/main.rs"
+  ],
+  "options": null,
+  "origin": "quickfix",
+  "origin_case": {
+   "action_kind": "quickfix",
+   "check": "persist",
+   "diag": {
+    "code": null,
+    "message": "expected `;`, found `}`",
+    "range": {
+     "end": {
+      "character": 17,
+      "line": 1
+     },
+     "start": {
+      "character": 17,
+      "line": 1
+     }
+    },
+    "severity": 1
+   },
+   "kind": "quickfix",
+   "mapped": [
+    [
+     1,
+     17
+    ],
+    [
+     1,
+     18
+    ],
+    true
+   ],
+   "path": "src/main.rs",
+   "title": "add `;` here: `;`",
+   "via": "edit"
+  },
+  "path": "src/main.rs",
+  "query": "diagnostics"
+ },
+ "shape": "diagnostics:extra:?",
+ "signature": "rust-analyzer|r4_edits|diagnostics:extra:?",
+ "expected": [
+  [
+   1,
+   15,
+   1,
+   17,
+   1,
+   "E0610",
+   "rustc",
+   "`char` is a primitive type and therefore doesn't have fields"
+  ]
+ ],
+ "actual": [
+  [
+   1,
+   15,
+   1,
+   17,
+   1,
+   "E0610",
+   "rustc",
+   "`char` is a primitive type and therefore doesn't have fields"
+  ],
+  [
+   1,
+   17,
+   1,
+   17,
+   1,
+   "",
+   "rustc",
+   "expected `;`, found `}`"
+  ],
+  [
+   1,
+   17,
+   1,
+   17,
+   4,
+   "",
+   "rustc",
+   "add `;` here: `;`"
+  ],
+  [
+   2,
+   0,
+   2,
+   1,
+   4,
+   "",
+   "rustc",
+   "unexpected token"
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "quick fix 'add `;` here: `;`' for expected `;`, found `}` at src/main.rs:2:18 leaves the diagnostic at the mapped range [[1, 17], [1, 18], True]; NOT shown by a fresh session on the same content: the running session's diagnostics answer for src/main.rs after 4 ops differs from a fresh session (incremental state, filed as r1-suspect, not an edit defect); flake 3/3 [r1:SCR r2:SCR r3:SCR] in 131s",
+ "violation": {
+  "oracle": "r4_edits",
+  "server": "rust-analyzer-2022-07-18",
+  "project": "rust-analyzer-11897",
+  "key": {
+   "method": "diagnostics",
+   "path": "src/main.rs",
+   "line": -1,
+   "character": -1,
+   "extra": ""
+  },
+  "expected": [
+   [
+    1,
+    15,
+    1,
+    17,
+    1,
+    "E0610",
+    "rustc",
+    "`char` is a primitive type and therefore doesn't have fields"
+   ]
+  ],
+  "actual": [
+   [
+    1,
+    15,
+    1,
+    17,
+    1,
+    "E0610",
+    "rustc",
+    "`char` is a primitive type and therefore doesn't have fields"
+   ],
+   [
+    1,
+    17,
+    1,
+    17,
+    1,
+    "",
+    "rustc",
+    "expected `;`, found `}`"
+   ],
+   [
+    1,
+    17,
+    1,
+    17,
+    4,
+    "",
+    "rustc",
+    "add `;` here: `;`"
+   ],
+   [
+    2,
+    0,
+    2,
+    1,
+    4,
+    "",
+    "rustc",
+    "unexpected token"
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "src/main.rs"
+   },
+   {
+    "kind": "change",
+    "path": "src/main.rs",
+    "start": [
+     1,
+     17
+    ],
+    "end": [
+     1,
+     17
+    ],
+    "text": ";"
+   },
+   {
+    "kind": "change",
+    "path": "src/main.rs",
+    "start": [
+     1,
+     17
+    ],
+    "end": [
+     1,
+     18
+    ]
+   },
+   {
+    "kind": "change",
+    "path": "src/main.rs",
+    "start": [
+     1,
+     17
+    ],
+    "end": [
+     1,
+     17
+    ],
+    "text": ";"
+   }
+  ],
+  "detail": "{\"case\": {\"kind\": \"r1-suspect\", \"open\": [\"src/main.rs\"], \"options\": null, \"origin\": \"quickfix\", \"origin_case\": {\"action_kind\": \"quickfix\", \"check\": \"persist\", \"diag\": {\"code\": null, \"message\": \"expected `;`, found `}`\", \"range\": {\"end\": {\"character\": 17, \"line\": 1}, \"start\": {\"character\": 17, \"line\": 1}}, \"severity\": 1}, \"kind\": \"quickfix\", \"mapped\": [[1, 17], [1, 18], true], \"path\": \"src/main.rs\", \"title\": \"add `;` here: `;`\", \"via\": \"edit\"}, \"path\": \"src/main.rs\", \"query\": \"diagnostics\"}, \"note\": \"quick fix 'add `;` here: `;`' for expected `;`, found `}` at src/main.rs:2:18 leaves the diagnostic at the mapped range [[1, 17], [1, 18], True]; NOT shown by a fresh session on the same content: the running session's diagnostics answer for src/main.rs after 4 ops differs from a fresh session (incremental state, filed as r1-suspect, not an edit defect); flake 3/3 [r1:SCR r2:SCR r3:SCR] in 131s\", \"shape\": \"diagnostics:extra:?\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "rust-analyzer|r4_edits|diagnostics:extra:?",
+  "run_id": "c9de54d83e5d"
+ },
+ "replay_logs": [
+  "logs/rust-analyzer-2022-07-18-c9de54d83e5d-r4-replay-baseline-20260925-121247-bc03f7.jsonl.gz",
+  "logs/rust-analyzer-2022-07-18-c9de54d83e5d-r4-replay-control-20260925-121259-f44065.jsonl.gz",
+  "logs/rust-analyzer-2022-07-18-c9de54d83e5d-r4-replay-history-20260925-121227-23bc0e.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

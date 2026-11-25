@@ -1,0 +1,72 @@
+{
+ "queries": [
+  "comment in:title repo:microsoft/typescript-go is:issue",
+  "\"folding range\" wrong repo:microsoft/typescript-go is:issue",
+  "\"folding range\" comment repo:microsoft/typescript-go is:issue",
+  "\"folding range\" whitespace repo:microsoft/typescript-go is:issue"
+ ],
+ "matches": [
+  {
+   "repo": "microsoft/typescript-go",
+   "number": 4722,
+   "title": "Nested nullish coalescing + comment + ES2018 causes function body to be ignored",
+   "url": "https://github.com/microsoft/typescript-go/issues/4722",
+   "state": "closed",
+   "created": "2026-07-23",
+   "comments": 1,
+   "query": "comment in:title repo:microsoft/typescript-go is:issue"
+  },
+  {
+   "repo": "microsoft/typescript-go",
+   "number": 4684,
+   "title": "VS Code extension does not provide completions for directive comments",
+   "url": "https://github.com/microsoft/typescript-go/issues/4684",
+   "state": "closed",
+   "created": "2026-07-20",
+   "comments": 4,
+   "query": "comment in:title repo:microsoft/typescript-go is:issue"
+  },
+  {
+   "repo": "microsoft/typescript-go",
+   "number": 3659,
+   "title": "Behavior difference: JSDoc comments are stripped for mapped types",
+   "url": "https://github.com/microsoft/typescript-go/issues/3659",
+   "state": "closed",
+   "created": "2026-04-29",
+   "comments": 2,
+   "query": "comment in:title repo:microsoft/typescript-go is:issue"
+  },
+  {
+   "repo": "microsoft/typescript-go",
+   "number": 4388,
+   "title": "Parameters not automatically filled for JSdoc comments",
+   "url": "https://github.com/microsoft/typescript-go/issues/4388",
+   "state": "closed",
+   "created": "2026-06-22",
+   "comments": 9,
+   "query": "comment in:title repo:microsoft/typescript-go is:issue"
+  },
+  {
+   "repo": "microsoft/typescript-go",
+   "number": 4016,
+   "title": "@fileoverview breaks @jsx comments",
+   "url": "https://github.com/microsoft/typescript-go/issues/4016",
+   "state": "closed",
+   "created": "2026-05-20",
+   "comments": 0,
+   "query": "comment in:title repo:microsoft/typescript-go is:issue"
+  },
+  {
+   "repo": "microsoft/typescript-go",
+   "number": 3384,
+   "title": "Crash in adjusting positions for folding ranges",
+   "url": "https://github.com/microsoft/typescript-go/issues/3384",
+   "state": "closed",
+   "created": "2026-04-10",
+   "comments": 8,
+   "query": "\"folding range\" wrong repo:microsoft/typescript-go is:issue"
+  }
+ ],
+ "notes": [],
+ "authenticated": true
+}

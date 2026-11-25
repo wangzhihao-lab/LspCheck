@@ -1,0 +1,18 @@
+2026-09-24 11:18:28,991 INFO campaign_run run 5ae299935d29: r1_history on ts6 6.0.3, ChatGPTNextWeb/NextChat@defdcdb55d85 seed 2 settled, targets ['app/command.ts', 'app/components/mask.tsx', 'app/utils/store.ts']
+2026-09-24 11:29:38,385 INFO campaign_run run 5ae299935d29: 16 candidate(s) in 669s; confirming
+2026-09-24 11:31:37,982 INFO flake replay 1/3 of ts6|r1_history|definition:lost: settled=True control_stable=True reproduced=True (119.6s)
+2026-09-24 11:33:28,860 INFO flake replay 2/3 of ts6|r1_history|definition:lost: settled=True control_stable=True reproduced=True (110.9s)
+2026-09-24 11:35:07,654 INFO flake replay 3/3 of ts6|r1_history|definition:lost: settled=True control_stable=True reproduced=True (98.8s)
+2026-09-24 11:36:44,477 INFO flake replay 1/3 of ts6|r1_history|diagnostics:extra:7006,7053: settled=True control_stable=True reproduced=True (96.8s)
+2026-09-24 11:38:19,275 INFO flake replay 2/3 of ts6|r1_history|diagnostics:extra:7006,7053: settled=True control_stable=True reproduced=True (94.8s)
+2026-09-24 11:40:23,895 INFO flake replay 3/3 of ts6|r1_history|diagnostics:extra:7006,7053: settled=True control_stable=True reproduced=False (124.6s)
+2026-09-24 11:41:56,849 INFO flake replay 1/3 of ts6|r1_history|documentHighlight:lost: settled=True control_stable=True reproduced=True (93.0s)
+2026-09-24 11:43:48,706 INFO flake replay 2/3 of ts6|r1_history|documentHighlight:lost: settled=True control_stable=True reproduced=True (111.9s)
+2026-09-24 11:45:18,463 INFO flake replay 3/3 of ts6|r1_history|documentHighlight:lost: settled=True control_stable=True reproduced=False (89.8s)
+2026-09-24 11:47:01,048 INFO flake replay 1/3 of ts6|r1_history|semanticTokens:missing: settled=True control_stable=True reproduced=True (102.6s)
+2026-09-24 11:48:40,485 INFO flake replay 2/3 of ts6|r1_history|semanticTokens:missing: settled=True control_stable=True reproduced=True (99.4s)
+2026-09-24 11:50:20,239 INFO flake replay 3/3 of ts6|r1_history|semanticTokens:missing: settled=True control_stable=True reproduced=True (99.7s)
+2026-09-24 11:52:16,110 INFO flake replay 1/3 of ts6|r1_history|signatureHelp:lost: settled=True control_stable=True reproduced=True (115.9s)
+2026-09-24 11:55:06,384 INFO flake replay 2/3 of ts6|r1_history|signatureHelp:lost: settled=True control_stable=True reproduced=True (170.3s)
+2026-09-24 11:56:48,404 INFO flake replay 3/3 of ts6|r1_history|signatureHelp:lost: settled=True control_stable=True reproduced=True (102.0s)
+2026-09-24 11:56:49,067 INFO campaign_run run 5ae299935d29 finished: ok, 3 confirmed of 16 candidate(s), 2300s

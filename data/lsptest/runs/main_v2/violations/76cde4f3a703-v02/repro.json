@@ -1,0 +1,646 @@
+{
+ "format": 1,
+ "campaign": "main_v2",
+ "vid": "76cde4f3a703-v02",
+ "run_id": "76cde4f3a703",
+ "oracle": "r4_edits",
+ "server": {
+  "kind": "ts6",
+  "version": "6.0.3"
+ },
+ "project": {
+  "name": "hexojs/hexo@751e856691bf",
+  "source": "corpus",
+  "ref": "temp/corpus/hexojs__hexo@751e856691bf",
+  "commit": "751e856691bfe24182cf8763feb29db0422dcfee",
+  "language": "typescript"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "lib/hexo/scaffold.ts",
+    "positions": [
+     [
+      0,
+      12
+     ],
+     [
+      6,
+      10
+     ],
+     [
+      24,
+      10
+     ],
+     [
+      34,
+      23
+     ],
+     [
+      46,
+      8
+     ],
+     [
+      50,
+      29
+     ],
+     [
+      50,
+      60
+     ],
+     [
+      53,
+      8
+     ],
+     [
+      56,
+      19
+     ],
+     [
+      60,
+      22
+     ],
+     [
+      68,
+      14
+     ],
+     [
+      75,
+      22
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      16
+     ],
+     [
+      6,
+      14
+     ],
+     [
+      24,
+      12
+     ],
+     [
+      34,
+      29
+     ],
+     [
+      46,
+      14
+     ],
+     [
+      50,
+      31
+     ],
+     [
+      50,
+      62
+     ],
+     [
+      53,
+      10
+     ],
+     [
+      56,
+      23
+     ],
+     [
+      60,
+      26
+     ],
+     [
+      68,
+      18
+     ],
+     [
+      75,
+      28
+     ]
+    ],
+    "names": [
+     "extname",
+     "Scaffold",
+     "join",
+     "scaffoldDir",
+     "_getScaffold",
+     "then",
+     "item",
+     "name",
+     "readFile",
+     "callback",
+     "extname",
+     "_getScaffold"
+    ]
+   },
+   {
+    "path": "test/fixtures/post_render.ts",
+    "positions": [
+     [
+      2,
+      8
+     ],
+     [
+      7,
+      16
+     ],
+     [
+      22,
+      4
+     ],
+     [
+      24,
+      17
+     ],
+     [
+      26,
+      14
+     ],
+     [
+      34,
+      4
+     ],
+     [
+      38,
+      6
+     ],
+     [
+      38,
+      14
+     ],
+     [
+      61,
+      4
+     ],
+     [
+      65,
+      43
+     ],
+     [
+      65,
+      67
+     ],
+     [
+      79,
+      4
+     ]
+    ],
+    "ends": [
+     [
+      2,
+      10
+     ],
+     [
+      7,
+      20
+     ],
+     [
+      22,
+      6
+     ],
+     [
+      24,
+      21
+     ],
+     [
+      26,
+      16
+     ],
+     [
+      34,
+      6
+     ],
+     [
+      38,
+      11
+     ],
+     [
+      38,
+      16
+     ],
+     [
+      61,
+      6
+     ],
+     [
+      65,
+      47
+     ],
+     [
+      65,
+      71
+     ],
+     [
+      79,
+      6
+     ]
+    ],
+    "names": [
+     "code",
+     "content",
+     "join",
+     "expected",
+     "code",
+     "join",
+     "highlight",
+     "code",
+     "join",
+     "replace",
+     "replace",
+     "join"
+    ]
+   },
+   {
+    "path": "test/scripts/tags/blockquote.ts",
+    "positions": [
+     [
+      0,
+      14
+     ],
+     [
+      5,
+      27
+     ],
+     [
+      5,
+      37
+     ],
+     [
+      7,
+      17
+     ],
+     [
+      16,
+      3
+     ],
+     [
+      22,
+      20
+     ],
+     [
+      31,
+      3
+     ],
+     [
+      32,
+      20
+     ],
+     [
+      37,
+      20
+     ],
+     [
+      39,
+      20
+     ],
+     [
+      40,
+      14
+     ],
+     [
+      42,
+      12
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      16
+     ],
+     [
+      5,
+      34
+     ],
+     [
+      5,
+      39
+     ],
+     [
+      7,
+      19
+     ],
+     [
+      16,
+      4
+     ],
+     [
+      22,
+      21
+     ],
+     [
+      31,
+      4
+     ],
+     [
+      32,
+      21
+     ],
+     [
+      37,
+      25
+     ],
+     [
+      39,
+      21
+     ],
+     [
+      40,
+      17
+     ],
+     [
+      42,
+      15
+     ]
+    ],
+    "names": [
+     "from",
+     "tagBlockquote",
+     "hexo",
+     "hexo",
+     "it",
+     "bq",
+     "it",
+     "bq",
+     "titlecase",
+     "bq",
+     "should",
+     "config"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "diagnostics",
+  "path": "lib/hexo/scaffold.ts",
+  "line": 67,
+  "character": 17,
+  "extra": "M2:quickfix-errors:Change spelling to 'iteem'"
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "lib/hexo/scaffold.ts"
+  },
+  {
+   "kind": "change",
+   "path": "lib/hexo/scaffold.ts",
+   "start": [
+    66,
+    40
+   ],
+   "end": [
+    66,
+    44
+   ],
+   "text": "iteem"
+  },
+  {
+   "kind": "change",
+   "path": "lib/hexo/scaffold.ts",
+   "start": [
+    67,
+    20
+   ],
+   "end": [
+    67,
+    20
+   ],
+   "text": "e"
+  }
+ ],
+ "case": {
+  "action_kind": "quickfix",
+  "base_errors": 2,
+  "check": "errors",
+  "diag": {
+   "code": 2552,
+   "message": "Cannot find name 'item'. Did you mean 'iteem'?",
+   "range": {
+    "end": {
+     "character": 21,
+     "line": 67
+    },
+    "start": {
+     "character": 17,
+     "line": 67
+    }
+   },
+   "severity": 1
+  },
+  "fix_introduced_errors": [],
+  "fix_ops": [
+   {
+    "end": [
+     67,
+     20
+    ],
+    "kind": "change",
+    "path": "lib/hexo/scaffold.ts",
+    "start": [
+     67,
+     20
+    ],
+    "text": "e"
+   }
+  ],
+  "kind": "mutation",
+  "mutation": {
+   "end": [
+    66,
+    44
+   ],
+   "id": "M2",
+   "offsets": [
+    1644,
+    1648
+   ],
+   "sha": "7fd88a425ae7cf07",
+   "start": [
+    66,
+    40
+   ],
+   "text": "iteem",
+   "what": "misspell 'item' as 'iteem' (duplicate a middle character)"
+  },
+  "n_fix_ops": 1,
+  "path": "lib/hexo/scaffold.ts",
+  "post_errors": 3,
+  "title": "Change spelling to 'iteem'",
+  "via": "edit"
+ },
+ "shape": "diagnostics:extra:2552",
+ "signature": "ts6|r4_edits|diagnostics:extra:2552",
+ "expected": [
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "2322",
+   "typescript",
+   "Type 'Bluebird<{ name: string; path: string; } | undefined>' is not assignable to type 'Bluebird<{ name: string; path: string; }>'. Type '{ name: string; path: string; } | undefined' is not assignable to type '{ name: string; path: string; }'. Type 'undefined' is not assignable to type '{ name: string; path: string; }'."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7053",
+   "typescript",
+   "Element implicitly has an 'any' type because expression of type 'string' can't be used to index type '{ normal: string; }'. No index signature with a parameter of type 'string' was found on type '{ normal: string; }'."
+  ]
+ ],
+ "actual": [
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "2322",
+   "typescript",
+   "Type 'Bluebird<{ name: string; path: string; } | undefined>' is not assignable to type 'Bluebird<{ name: string; path: string; }>'. Type '{ name: string; path: string; } | undefined' is not assignable to type '{ name: string; path: string; }'. Type 'undefined' is not assignable to type '{ name: string; path: string; }'."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "2552",
+   "typescript",
+   "Cannot find name 'item'. Did you mean 'iteem'?"
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7053",
+   "typescript",
+   "Element implicitly has an 'any' type because expression of type 'string' can't be used to index type '{ normal: string; }'. No index signature with a parameter of type 'string' was found on type '{ normal: string; }'."
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "quick fix \"Change spelling to 'iteem'\" for 2552 at lib/hexo/scaffold.ts:68:18 raises the error count in the edited files from 2 to 3 (seeded by M2: misspell 'item' as 'iteem' (duplicate a middle character); errors before the mutation 2, after the fix 3); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 117s",
+ "violation": {
+  "oracle": "r4_edits",
+  "server": "ts6-6.0.3",
+  "project": "hexojs/hexo@751e856691bf",
+  "key": {
+   "method": "diagnostics",
+   "path": "lib/hexo/scaffold.ts",
+   "line": 67,
+   "character": 17,
+   "extra": "M2:quickfix-errors:Change spelling to 'iteem'"
+  },
+  "expected": [
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2322",
+    "typescript",
+    "Type 'Bluebird<{ name: string; path: string; } | undefined>' is not assignable to type 'Bluebird<{ name: string; path: string; }>'. Type '{ name: string; path: string; } | undefined' is not assignable to type '{ name: string; path: string; }'. Type 'undefined' is not assignable to type '{ name: string; path: string; }'."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7053",
+    "typescript",
+    "Element implicitly has an 'any' type because expression of type 'string' can't be used to index type '{ normal: string; }'. No index signature with a parameter of type 'string' was found on type '{ normal: string; }'."
+   ]
+  ],
+  "actual": [
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2322",
+    "typescript",
+    "Type 'Bluebird<{ name: string; path: string; } | undefined>' is not assignable to type 'Bluebird<{ name: string; path: string; }>'. Type '{ name: string; path: string; } | undefined' is not assignable to type '{ name: string; path: string; }'. Type 'undefined' is not assignable to type '{ name: string; path: string; }'."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2552",
+    "typescript",
+    "Cannot find name 'item'. Did you mean 'iteem'?"
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7053",
+    "typescript",
+    "Element implicitly has an 'any' type because expression of type 'string' can't be used to index type '{ normal: string; }'. No index signature with a parameter of type 'string' was found on type '{ normal: string; }'."
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "lib/hexo/scaffold.ts"
+   },
+   {
+    "kind": "change",
+    "path": "lib/hexo/scaffold.ts",
+    "start": [
+     66,
+     40
+    ],
+    "end": [
+     66,
+     44
+    ],
+    "text": "iteem"
+   },
+   {
+    "kind": "change",
+    "path": "lib/hexo/scaffold.ts",
+    "start": [
+     67,
+     20
+    ],
+    "end": [
+     67,
+     20
+    ],
+    "text": "e"
+   }
+  ],
+  "detail": "{\"case\": {\"action_kind\": \"quickfix\", \"base_errors\": 2, \"check\": \"errors\", \"diag\": {\"code\": 2552, \"message\": \"Cannot find name 'item'. Did you mean 'iteem'?\", \"range\": {\"end\": {\"character\": 21, \"line\": 67}, \"start\": {\"character\": 17, \"line\": 67}}, \"severity\": 1}, \"fix_introduced_errors\": [], \"fix_ops\": [{\"end\": [67, 20], \"kind\": \"change\", \"path\": \"lib/hexo/scaffold.ts\", \"start\": [67, 20], \"text\": \"e\"}], \"kind\": \"mutation\", \"mutation\": {\"end\": [66, 44], \"id\": \"M2\", \"offsets\": [1644, 1648], \"sha\": \"7fd88a425ae7cf07\", \"start\": [66, 40], \"text\": \"iteem\", \"what\": \"misspell 'item' as 'iteem' (duplicate a middle character)\"}, \"n_fix_ops\": 1, \"path\": \"lib/hexo/scaffold.ts\", \"post_errors\": 3, \"title\": \"Change spelling to 'iteem'\", \"via\": \"edit\"}, \"note\": \"quick fix \\\"Change spelling to 'iteem'\\\" for 2552 at lib/hexo/scaffold.ts:68:18 raises the error count in the edited files from 2 to 3 (seeded by M2: misspell 'item' as 'iteem' (duplicate a middle character); errors before the mutation 2, after the fix 3); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 117s\", \"shape\": \"diagnostics:extra:2552\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "ts6|r4_edits|diagnostics:extra:2552",
+  "run_id": "76cde4f3a703"
+ },
+ "replay_logs": [
+  "logs/ts6-6.0.3-76cde4f3a703-r4-replay-baseline-20261118-154105-1e667c.jsonl.gz",
+  "logs/ts6-6.0.3-76cde4f3a703-r4-replay-case-20261118-154050-7187cd.jsonl.gz",
+  "logs/ts6-6.0.3-76cde4f3a703-r4-replay-control-20261118-154120-ce45a3.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

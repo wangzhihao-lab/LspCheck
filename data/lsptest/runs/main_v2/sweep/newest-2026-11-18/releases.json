@@ -1,0 +1,365 @@
+{
+ "label": "newest-2026-11-18",
+ "as_of": "2026-11-18",
+ "planned": "2026-11-20T23:19:32",
+ "rule": {
+  "gopls": "newest stable version on proxy.golang.org",
+  "rust-analyzer": "newest weekly GitHub release (tag YYYY-MM-DD)",
+  "ts6": "newest TypeScript 6.x with the newest typescript-language-server (npm)",
+  "pyright": "newest stable pyright (npm)"
+ },
+ "common": [
+  "releases published up to 2026-11-18; 3 replays per group and build; verdicts of version_sweep.verdict",
+  "ts6 line through the frozen sweep's kind tsserver (pinned wrapper started with the pinned tsserver.js, no ts6 session settings), as older-2025 and ts_isolation.py; the campaign pair in that kind controls for the kind",
+  "gopls builds are compiled and run with the local Go (go1.27.1, the toolchain of the campaign's v0.23.0 build); a release the local Go cannot compile is compiled and run with go1.24.4 (install_builds --go); where the install directory already holds an era-Go benchmark build, the local-Go build goes to gopls-<v>+<go>/",
+  "a gopls group is replayed on a build only if the build's Go meets every go directive of the group's project (go.mod/go.work), since the harness runs gopls with GOTOOLCHAIN=local; other pairs are listed under skip",
+  "a build that cannot be installed, or fails the launch check (smoke_servers.smoke: initialize, diagnostics and hover on a one-file project), after two attempts is recorded as unavailable",
+  "the C2 group (timing race) runs alone; otherwise at most 3 jobs at once (gopls, rust-analyzer, ts6+ts7)"
+ ],
+ "sources": [
+  "https://registry.npmjs.org/<package> (time)",
+  "https://proxy.golang.org/golang.org/x/tools/gopls/@v/list and @v/<version>.info",
+  "https://api.github.com/repos/rust-lang/rust-analyzer/releases (tag_name, published_at, asset rust-analyzer-aarch64-apple-darwin.gz)"
+ ],
+ "groups": [
+  {
+   "cause": "C1",
+   "line": "ts6",
+   "gid": "ts6-r1-completion-lost-h9-ce1ffc"
+  },
+  {
+   "cause": "C1",
+   "line": "ts6",
+   "gid": "ts6-r1-definition-lost-h9-898f29"
+  },
+  {
+   "cause": "C1",
+   "line": "ts6",
+   "gid": "ts6-r1-diagnostics-extra-2307-7006-h9-8325a2"
+  },
+  {
+   "cause": "C1",
+   "line": "ts6",
+   "gid": "ts6-r1-documenthighlight-missing-h9-2e657a"
+  },
+  {
+   "cause": "C31",
+   "line": "ts6",
+   "gid": "ts6-r1-inlayhint-changed-h9-b9d052"
+  },
+  {
+   "cause": "C1",
+   "line": "ts6",
+   "gid": "ts6-r1-references-missing-h5-cc8950"
+  },
+  {
+   "cause": "C1",
+   "line": "ts6",
+   "gid": "ts6-r1-semantictokens-changed-h9-c4368c"
+  },
+  {
+   "cause": "C1",
+   "line": "ts6",
+   "gid": "ts6-r1-typedefinition-lost-h9-b52749"
+  },
+  {
+   "cause": "C3",
+   "line": "gopls",
+   "gid": "gopls-r2-codeactionresolve-changed-codeaction-70b3e9"
+  },
+  {
+   "cause": "C4",
+   "line": "rust-analyzer",
+   "gid": "rust-analyzer-r2-completionresolve-changed-completion-3170a1"
+  },
+  {
+   "cause": "C5",
+   "line": "gopls",
+   "gid": "gopls-r4-diagnostics-extra-incompatibleassign-mutation-m2-ade1f0"
+  },
+  {
+   "cause": "C5",
+   "line": "gopls",
+   "gid": "gopls-r4-diagnostics-extra-mismatchedtypes-mutation-m2-dc6e94"
+  },
+  {
+   "cause": "C5",
+   "line": "gopls",
+   "gid": "gopls-r4-diagnostics-extra-nonsliceableoperand-mutation-m2-d80a9a"
+  },
+  {
+   "cause": "C5",
+   "line": "gopls",
+   "gid": "gopls-r4-diagnostics-extra-notatype-mutation-m2-477181"
+  },
+  {
+   "cause": "C5",
+   "line": "gopls",
+   "gid": "gopls-r4-diagnostics-extra-untypedniluse-mutation-m2-354f70"
+  },
+  {
+   "cause": "C7",
+   "line": "gopls",
+   "gid": "gopls-r4-diagnostics-extra-undeclaredname-mutation-m2-12380c"
+  },
+  {
+   "cause": "C9",
+   "line": "gopls",
+   "gid": "gopls-r1-references-extra-h5-e2e003"
+  },
+  {
+   "cause": "C11",
+   "line": "ts6",
+   "gid": "ts6-r4-diagnostics-extra-2322-mutation-m3-1879f3"
+  },
+  {
+   "cause": "C12",
+   "line": "gopls",
+   "gid": "gopls-r1-codeaction-changed-h4-c5344e"
+  },
+  {
+   "cause": "C12",
+   "line": "gopls",
+   "gid": "gopls-r1-codeaction-changed-h7-383b05"
+  },
+  {
+   "cause": "C13",
+   "line": "gopls",
+   "gid": "gopls-r1-codeaction-key-lost-h7-547744"
+  },
+  {
+   "cause": "C13",
+   "line": "gopls",
+   "gid": "gopls-r1-diagnostics-missing-h7-10a910"
+  },
+  {
+   "cause": "C14",
+   "line": "gopls",
+   "gid": "gopls-r1-completion-lost-h7-1a1169"
+  },
+  {
+   "cause": "C13",
+   "line": "gopls",
+   "gid": "gopls-r1-diagnostics-message-h5-e59f2c"
+  },
+  {
+   "cause": "C15",
+   "line": "gopls",
+   "gid": "gopls-r4-diagnostics-extra-unusedimport-mutation-m3-aefa9e"
+  },
+  {
+   "cause": "C16",
+   "line": "gopls",
+   "gid": "gopls-r5-foldingrange-changed-t4-b07c86"
+  },
+  {
+   "cause": "C16",
+   "line": "gopls",
+   "gid": "gopls-r5-semantictokens-changed-t4-b423af"
+  },
+  {
+   "cause": "C16",
+   "line": "gopls",
+   "gid": "gopls-r5-semantictokens-extra-t4-867006"
+  },
+  {
+   "cause": "C17",
+   "line": "pyright",
+   "gid": "pyright-r0-references-result-error-32603-fresh-pair-2718c4"
+  },
+  {
+   "cause": "C18",
+   "line": "pyright",
+   "gid": "pyright-r1-hover-text-h2-fb2ed0"
+  },
+  {
+   "cause": "C18",
+   "line": "pyright",
+   "gid": "pyright-r1-hover-text-h8-2a8227"
+  },
+  {
+   "cause": "C19",
+   "line": "pyright",
+   "gid": "pyright-r1-hover-text-h5-f24c4e"
+  },
+  {
+   "cause": "C20",
+   "line": "pyright",
+   "gid": "pyright-r1-references-extra-h9-37c1a2"
+  },
+  {
+   "cause": "C21",
+   "line": "pyright",
+   "gid": "pyright-r1-signaturehelp-changed-h9-846c6c"
+  },
+  {
+   "cause": "C22",
+   "line": "pyright",
+   "gid": "pyright-r4-completioninsert-gained-completion-79a584"
+  },
+  {
+   "cause": "C25",
+   "line": "rust-analyzer",
+   "gid": "rust-analyzer-r3-diagnostics-missing-inactive-code-a-0b07f0"
+  },
+  {
+   "cause": "C25",
+   "line": "rust-analyzer",
+   "gid": "rust-analyzer-r3-diagnostics-missing-unlinked-file-a-efb484"
+  },
+  {
+   "cause": "C26",
+   "line": "rust-analyzer",
+   "gid": "rust-analyzer-r3-semantictokensrange-changed-b-b6e28b"
+  },
+  {
+   "cause": "C28",
+   "line": "rust-analyzer",
+   "gid": "rust-analyzer-r4-completioninsert-gained-completion-e99b79"
+  },
+  {
+   "cause": "C29",
+   "line": "rust-analyzer",
+   "gid": "rust-analyzer-r4-diagnostics-extra-e0063-mutation-m1-aeef82"
+  },
+  {
+   "cause": "C29",
+   "line": "rust-analyzer",
+   "gid": "rust-analyzer-r4-syntax-gained-mutation-m1-7af5e4"
+  },
+  {
+   "cause": "C30",
+   "line": "ts6",
+   "gid": "ts6-r1-codeaction-extra-h5-f48d27"
+  },
+  {
+   "cause": "C2",
+   "line": "ts6",
+   "gid": "ts6-r1-codeaction-key-lost-h8-3e0e0f"
+  },
+  {
+   "cause": "C2",
+   "line": "ts6",
+   "gid": "ts6-r1-diagnostics-moved-2875-h8-751ff9"
+  },
+  {
+   "cause": "C32",
+   "line": "ts6",
+   "gid": "ts6-r4-diagnostics-changed-1064-2322-quickfix-d597f5"
+  },
+  {
+   "cause": "C33",
+   "line": "ts6",
+   "gid": "ts6-r4-diagnostics-changed-mutation-m1-34f06f"
+  },
+  {
+   "cause": "C34",
+   "line": "ts6",
+   "gid": "ts6-r4-diagnostics-extra-17002-2552-mutation-m1-727795"
+  },
+  {
+   "cause": "C34",
+   "line": "ts6",
+   "gid": "ts6-r4-syntax-gained-mutation-m1-7e3417"
+  },
+  {
+   "cause": "C35",
+   "line": "ts6",
+   "gid": "ts6-r4-diagnostics-extra-2448-7022-mutation-m1-e5d199"
+  }
+ ],
+ "builds": [
+  {
+   "line": "gopls",
+   "kind": "gopls",
+   "version": "v0.24.0",
+   "release": "v0.24.0",
+   "tag": "g0240",
+   "released": "2026-10-14",
+   "roles": [
+    "newest"
+   ],
+   "status": "ok",
+   "detail": "existing local-Go build",
+   "attempts": 1,
+   "launch": {
+    "init_s": 0.1,
+    "ok": true,
+    "diagnostics": [
+     "cannot use \"oops\" (untyped string constant) as int value in variable d"
+    ]
+   },
+   "built_with": "go1.27.1",
+   "go": "go1.27.1",
+   "skip": {}
+  },
+  {
+   "line": "rust-analyzer",
+   "kind": "rust-analyzer",
+   "version": "2026-11-16",
+   "release": "2026-11-16",
+   "tag": "r261116",
+   "released": "2026-11-16",
+   "roles": [
+    "newest"
+   ],
+   "status": "ok",
+   "detail": "release asset; rust-analyzer 0.3.3121-standalone (946b80a756 2026-11-15)",
+   "attempts": 1,
+   "launch": {
+    "init_s": 0.0,
+    "ok": true,
+    "diagnostics": [
+     "expected 2 arguments, found 1"
+    ]
+   }
+  },
+  {
+   "line": "ts6",
+   "kind": "tsserver",
+   "version": "6.0.3+tsls6.1.0",
+   "release": "6.0.3+tsls6.1.0",
+   "tag": "t603w610",
+   "released": "2026-04-16",
+   "roles": [
+    "newest"
+   ],
+   "status": "ok",
+   "wrapper_released": "2026-11-12",
+   "detail": "npm typescript@6.0.3 typescript-language-server@6.1.0",
+   "attempts": 1,
+   "launch": {
+    "init_s": 0.0,
+    "ok": true,
+    "diagnostics": [
+     "Type 'string' is not assignable to type 'number'."
+    ]
+   }
+  },
+  {
+   "line": "pyright",
+   "kind": "pyright",
+   "version": "1.1.414",
+   "release": "1.1.414",
+   "tag": "p11414",
+   "released": "2026-09-09",
+   "roles": [
+    "newest",
+    "campaign"
+   ],
+   "status": "ok",
+   "detail": "npm pyright@1.1.414",
+   "attempts": 1,
+   "launch": {
+    "init_s": 0.1,
+    "ok": true,
+    "diagnostics": [
+     "Type \"Literal['oops']\" is not assignable to declared type \"int\"\n  \"Lit"
+    ]
+   }
+  }
+ ],
+ "campaign": "main_v2",
+ "representatives": "every group of triage/root_causes.csv",
+ "installed": "2026-11-20T23:25:33"
+}

@@ -1,0 +1,3 @@
+2026-09-24 20:45:49,877 INFO campaign_run run f7672e45683f: r1_history on tsserver 4.7.4+tsls1.1.2, tsserver-49001 seed 1 race0, targets ['bar.ts', 'foo.ts']
+2026-09-24 20:46:48,333 INFO campaign_run run f7672e45683f: 0 candidate(s) in 59s; confirming
+2026-09-24 20:46:48,335 INFO campaign_run run f7672e45683f finished: ok, 0 confirmed of 0 candidate(s), 58s

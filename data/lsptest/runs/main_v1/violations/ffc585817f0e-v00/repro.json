@@ -1,0 +1,916 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "ffc585817f0e-v00",
+ "run_id": "ffc585817f0e",
+ "oracle": "r1_history",
+ "server": {
+  "kind": "rust-analyzer",
+  "version": "2026-09-21"
+ },
+ "project": {
+  "name": "lapce/lapce@b604d57de4a8",
+  "source": "corpus",
+  "ref": "temp/corpus/lapce__lapce@b604d57de4a8",
+  "commit": "b604d57de4a820006d335a3be0d7583eb8fab558",
+  "language": "rust"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "lapce-app/src/command.rs",
+    "positions": [
+     [
+      14,
+      7
+     ],
+     [
+      83,
+      28
+     ],
+     [
+      104,
+      36
+     ],
+     [
+      303,
+      8
+     ],
+     [
+      462,
+      13
+     ],
+     [
+      481,
+      8
+     ],
+     [
+      542,
+      16
+     ],
+     [
+      626,
+      14
+     ],
+     [
+      672,
+      11
+     ],
+     [
+      724,
+      18
+     ],
+     [
+      755,
+      10
+     ],
+     [
+      815,
+      8
+     ]
+    ],
+    "ends": [
+     [
+      14,
+      10
+     ],
+     [
+      83,
+      34
+     ],
+     [
+      104,
+      37
+     ],
+     [
+      303,
+      11
+     ],
+     [
+      462,
+      22
+     ],
+     [
+      481,
+      11
+     ],
+     [
+      542,
+      21
+     ],
+     [
+      626,
+      20
+     ],
+     [
+      672,
+      15
+     ],
+     [
+      724,
+      23
+     ],
+     [
+      755,
+      13
+     ],
+     [
+      815,
+      13
+     ]
+    ],
+    "names": [
+     "plugin",
+     "motion_mode",
+     "c",
+     "strum",
+     "ToggleProblemFocus",
+     "strum",
+     "serialize",
+     "current_path",
+     "term_id",
+     "Modifiers",
+     "title",
+     "NewWindow"
+    ]
+   },
+   {
+    "path": "lapce-app/src/db.rs",
+    "positions": [
+     [
+      36,
+      15
+     ],
+     [
+      72,
+      73
+     ],
+     [
+      140,
+      15
+     ],
+     [
+      163,
+      54
+     ],
+     [
+      179,
+      50
+     ],
+     [
+      253,
+      23
+     ],
+     [
+      311,
+      51
+     ],
+     [
+      337,
+      21
+     ],
+     [
+      357,
+      51
+     ],
+     [
+      391,
+      9
+     ],
+     [
+      395,
+      19
+     ],
+     [
+      422,
+      67
+     ]
+    ],
+    "ends": [
+     [
+      36,
+      26
+     ],
+     [
+      72,
+      75
+     ],
+     [
+      140,
+      19
+     ],
+     [
+      163,
+      57
+     ],
+     [
+      179,
+      52
+     ],
+     [
+      253,
+      26
+     ],
+     [
+      311,
+      54
+     ],
+     [
+      337,
+      26
+     ],
+     [
+      357,
+      58
+     ],
+     [
+      391,
+      11
+     ],
+     [
+      395,
+      28
+     ],
+     [
+      422,
+      71
+     ]
+    ],
+    "names": [
+     "WorkspaceDisabledVolts",
+     "info",
+     "tracing",
+     "volts",
+     "join",
+     "error",
+     "folder",
+     "window_tab",
+     "WindowTabData",
+     "std",
+     "save_doc_position",
+     "contents"
+    ]
+   },
+   {
+    "path": "lapce-app/src/keypress/loader.rs",
+    "positions": [
+     [
+      1,
+      18
+     ],
+     [
+      2,
+      9
+     ],
+     [
+      2,
+      18
+     ],
+     [
+      51,
+      40
+     ],
+     [
+      57,
+      50
+     ],
+     [
+      66,
+      59
+     ],
+     [
+      68,
+      39
+     ],
+     [
+      94,
+      35
+     ],
+     [
+      196,
+      22
+     ],
+     [
+      220,
+      16
+     ],
+     [
+      231,
+      16
+     ],
+     [
+      232,
+      28
+     ]
+    ],
+    "ends": [
+     [
+      1,
+      22
+     ],
+     [
+      2,
+      14
+     ],
+     [
+      2,
+      20
+     ],
+     [
+      51,
+      43
+     ],
+     [
+      57,
+      52
+     ],
+     [
+      66,
+      63
+     ],
+     [
+      68,
+      42
+     ],
+     [
+      94,
+      38
+     ],
+     [
+      196,
+      26
+     ],
+     [
+      220,
+      20
+     ],
+     [
+      231,
+      20
+     ],
+     [
+      232,
+      30
+     ]
+    ],
+    "names": [
+     "IndexMap",
+     "lapce_core",
+     "mode",
+     "keymap",
+     "bool",
+     "get_mut",
+     "remove",
+     "Table",
+     "keymaps",
+     "keypress",
+     "keypress",
+     "get"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "references",
+  "path": "lapce-app/src/command.rs",
+  "line": 14,
+  "character": 7,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "lapce-app/src/command.rs"
+  },
+  {
+   "kind": "open",
+   "path": "lapce-app/src/db.rs"
+  },
+  {
+   "kind": "open",
+   "path": "lapce-app/src/keypress/loader.rs"
+  },
+  {
+   "kind": "fs_rename",
+   "path": "lapce-app/src/command.rs",
+   "new_path": "lapce-app/src/command_rt.rs"
+  },
+  {
+   "kind": "fs_rename",
+   "path": "lapce-app/src/command_rt.rs",
+   "new_path": "lapce-app/src/command.rs"
+  },
+  {
+   "kind": "change",
+   "path": "lapce-app/src/command.rs",
+   "start": [
+    104,
+    32
+   ],
+   "end": [
+    104,
+    44
+   ]
+  },
+  {
+   "kind": "close",
+   "path": "lapce-app/src/command.rs"
+  },
+  {
+   "kind": "open",
+   "path": "lapce-app/src/command.rs"
+  }
+ ],
+ "case": {
+  "chain_step": 2,
+  "families": [
+   "H5",
+   "H3"
+  ],
+  "family": "H3",
+  "history_index": 1,
+  "history_seed": 1002,
+  "mode": "chain",
+  "note": "lapce-app/src/command.rs: unsaved edit (delete 'dit(c.clone(' on line 104), close, reopen",
+  "seed": 1,
+  "timing": "settled"
+ },
+ "shape": "references:result->error:timeout",
+ "signature": "rust-analyzer|r1_history|references:result->error:timeout",
+ "expected": [
+  [
+   "lapce-app/src/code_action.rs",
+   8,
+   15,
+   8,
+   21
+  ],
+  [
+   "lapce-app/src/command.rs",
+   14,
+   4,
+   14,
+   10
+  ],
+  [
+   "lapce-app/src/completion.rs",
+   10,
+   16,
+   10,
+   22
+  ],
+  [
+   "lapce-app/src/config.rs",
+   11,
+   15,
+   11,
+   21
+  ],
+  [
+   "lapce-app/src/db.rs",
+   10,
+   15,
+   10,
+   21
+  ],
+  [
+   "lapce-app/src/doc.rs",
+   59,
+   4,
+   59,
+   10
+  ],
+  [
+   "lapce-app/src/editor.rs",
+   50,
+   34,
+   50,
+   40
+  ],
+  [
+   "lapce-app/src/editor/view.rs",
+   50,
+   4,
+   50,
+   10
+  ],
+  [
+   "lapce-app/src/editor_tab.rs",
+   17,
+   15,
+   17,
+   21
+  ],
+  [
+   "lapce-app/src/main_split.rs",
+   23,
+   4,
+   23,
+   10
+  ],
+  [
+   "lapce-app/src/panel/plugin_view.rs",
+   18,
+   4,
+   18,
+   10
+  ],
+  [
+   "lapce-app/src/plugin.rs",
+   29,
+   4,
+   29,
+   10
+  ],
+  [
+   "lapce-app/src/proxy.rs",
+   11,
+   4,
+   11,
+   10
+  ],
+  [
+   "lapce-app/src/settings.rs",
+   23,
+   15,
+   23,
+   21
+  ],
+  [
+   "lapce-app/src/window_tab.rs",
+   41,
+   4,
+   41,
+   10
+  ],
+  [
+   "lapce-app/src/window_tab.rs",
+   669,
+   31,
+   669,
+   37
+  ],
+  [
+   "lapce-proxy/src/plugin/catalog.rs",
+   14,
+   4,
+   14,
+   10
+  ],
+  [
+   "lapce-proxy/src/plugin/catalog.rs",
+   120,
+   31,
+   120,
+   37
+  ],
+  [
+   "lapce-proxy/src/plugin/lsp.rs",
+   15,
+   4,
+   15,
+   10
+  ],
+  [
+   "lapce-proxy/src/plugin/mod.rs",
+   27,
+   4,
+   27,
+   10
+  ],
+  [
+   "lapce-proxy/src/plugin/psp.rs",
+   20,
+   4,
+   20,
+   10
+  ],
+  [
+   "lapce-proxy/src/plugin/wasi.rs",
+   18,
+   4,
+   18,
+   10
+  ],
+  [
+   "lapce-proxy/src/plugin/wasi/tests.rs",
+   2,
+   15,
+   2,
+   21
+  ],
+  [
+   "lapce-rpc/src/core.rs",
+   23,
+   4,
+   23,
+   10
+  ],
+  [
+   "lapce-rpc/src/lib.rs",
+   9,
+   8,
+   9,
+   14
+  ],
+  [
+   "lapce-rpc/src/plugin.rs",
+   144,
+   8,
+   144,
+   13
+  ],
+  [
+   "lapce-rpc/src/proxy.rs",
+   23,
+   11,
+   23,
+   17
+  ],
+  [
+   "lapce-rpc/src/proxy.rs",
+   30,
+   4,
+   30,
+   10
+  ]
+ ],
+ "actual": [
+  "error",
+  "timeout"
+ ],
+ "reproduced": "0/3",
+ "note": "H3: lapce-app/src/command.rs: unsaved edit (delete 'dit(c.clone(' on line 104), close, reopen; flake 0/3 [r1:SCr+retry r2:Scr+retry r3:Scr] in 3274s",
+ "violation": {
+  "oracle": "r1_history",
+  "server": "rust-analyzer-2026-09-21",
+  "project": "lapce/lapce@b604d57de4a8",
+  "key": {
+   "method": "references",
+   "path": "lapce-app/src/command.rs",
+   "line": 14,
+   "character": 7,
+   "extra": ""
+  },
+  "expected": [
+   [
+    "lapce-app/src/code_action.rs",
+    8,
+    15,
+    8,
+    21
+   ],
+   [
+    "lapce-app/src/command.rs",
+    14,
+    4,
+    14,
+    10
+   ],
+   [
+    "lapce-app/src/completion.rs",
+    10,
+    16,
+    10,
+    22
+   ],
+   [
+    "lapce-app/src/config.rs",
+    11,
+    15,
+    11,
+    21
+   ],
+   [
+    "lapce-app/src/db.rs",
+    10,
+    15,
+    10,
+    21
+   ],
+   [
+    "lapce-app/src/doc.rs",
+    59,
+    4,
+    59,
+    10
+   ],
+   [
+    "lapce-app/src/editor.rs",
+    50,
+    34,
+    50,
+    40
+   ],
+   [
+    "lapce-app/src/editor/view.rs",
+    50,
+    4,
+    50,
+    10
+   ],
+   [
+    "lapce-app/src/editor_tab.rs",
+    17,
+    15,
+    17,
+    21
+   ],
+   [
+    "lapce-app/src/main_split.rs",
+    23,
+    4,
+    23,
+    10
+   ],
+   [
+    "lapce-app/src/panel/plugin_view.rs",
+    18,
+    4,
+    18,
+    10
+   ],
+   [
+    "lapce-app/src/plugin.rs",
+    29,
+    4,
+    29,
+    10
+   ],
+   [
+    "lapce-app/src/proxy.rs",
+    11,
+    4,
+    11,
+    10
+   ],
+   [
+    "lapce-app/src/settings.rs",
+    23,
+    15,
+    23,
+    21
+   ],
+   [
+    "lapce-app/src/window_tab.rs",
+    41,
+    4,
+    41,
+    10
+   ],
+   [
+    "lapce-app/src/window_tab.rs",
+    669,
+    31,
+    669,
+    37
+   ],
+   [
+    "lapce-proxy/src/plugin/catalog.rs",
+    14,
+    4,
+    14,
+    10
+   ],
+   [
+    "lapce-proxy/src/plugin/catalog.rs",
+    120,
+    31,
+    120,
+    37
+   ],
+   [
+    "lapce-proxy/src/plugin/lsp.rs",
+    15,
+    4,
+    15,
+    10
+   ],
+   [
+    "lapce-proxy/src/plugin/mod.rs",
+    27,
+    4,
+    27,
+    10
+   ],
+   [
+    "lapce-proxy/src/plugin/psp.rs",
+    20,
+    4,
+    20,
+    10
+   ],
+   [
+    "lapce-proxy/src/plugin/wasi.rs",
+    18,
+    4,
+    18,
+    10
+   ],
+   [
+    "lapce-proxy/src/plugin/wasi/tests.rs",
+    2,
+    15,
+    2,
+    21
+   ],
+   [
+    "lapce-rpc/src/core.rs",
+    23,
+    4,
+    23,
+    10
+   ],
+   [
+    "lapce-rpc/src/lib.rs",
+    9,
+    8,
+    9,
+    14
+   ],
+   [
+    "lapce-rpc/src/plugin.rs",
+    144,
+    8,
+    144,
+    13
+   ],
+   [
+    "lapce-rpc/src/proxy.rs",
+    23,
+    11,
+    23,
+    17
+   ],
+   [
+    "lapce-rpc/src/proxy.rs",
+    30,
+    4,
+    30,
+    10
+   ]
+  ],
+  "actual": [
+   "error",
+   "timeout"
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "lapce-app/src/command.rs"
+   },
+   {
+    "kind": "open",
+    "path": "lapce-app/src/db.rs"
+   },
+   {
+    "kind": "open",
+    "path": "lapce-app/src/keypress/loader.rs"
+   },
+   {
+    "kind": "fs_rename",
+    "path": "lapce-app/src/command.rs",
+    "new_path": "lapce-app/src/command_rt.rs"
+   },
+   {
+    "kind": "fs_rename",
+    "path": "lapce-app/src/command_rt.rs",
+    "new_path": "lapce-app/src/command.rs"
+   },
+   {
+    "kind": "change",
+    "path": "lapce-app/src/command.rs",
+    "start": [
+     104,
+     32
+    ],
+    "end": [
+     104,
+     44
+    ]
+   },
+   {
+    "kind": "close",
+    "path": "lapce-app/src/command.rs"
+   },
+   {
+    "kind": "open",
+    "path": "lapce-app/src/command.rs"
+   }
+  ],
+  "detail": "{\"case\": {\"chain_step\": 2, \"families\": [\"H5\", \"H3\"], \"family\": \"H3\", \"history_index\": 1, \"history_seed\": 1002, \"mode\": \"chain\", \"note\": \"lapce-app/src/command.rs: unsaved edit (delete 'dit(c.clone(' on line 104), close, reopen\", \"seed\": 1, \"timing\": \"settled\"}, \"note\": \"H3: lapce-app/src/command.rs: unsaved edit (delete 'dit(c.clone(' on line 104), close, reopen; flake 0/3 [r1:SCr+retry r2:Scr+retry r3:Scr] in 3274s\", \"shape\": \"references:result->error:timeout\"}",
+  "reproduced": "0/3",
+  "reduced_ops": [],
+  "signature": "rust-analyzer|r1_history|references:result->error:timeout",
+  "run_id": "ffc585817f0e"
+ },
+ "replay_logs": [],
+ "project_files": {},
+ "incomplete": false
+}

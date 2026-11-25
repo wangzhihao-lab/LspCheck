@@ -1,0 +1,3 @@
+2026-11-18 15:49:04,091 INFO campaign_run run 539ac18e8643: r3_routes on gopls v0.23.0, schollz/croc@5890191be511 seed 2 settled, targets ['internal/tailcat/pickregion_js.go', 'src/cli/update.go', 'src/tailcattransport/bundle_supported.go']
+2026-11-18 15:51:28,516 INFO campaign_run run 539ac18e8643: 10 candidate(s) in 144s; confirming
+2026-11-18 15:51:28,517 INFO campaign_run run 539ac18e8643 finished: ok, 0 confirmed of 10 candidate(s), 144s

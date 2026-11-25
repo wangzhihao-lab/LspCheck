@@ -1,0 +1,103 @@
+{
+ "vid": "76cde4f3a703-v01",
+ "ops_before": 3,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 2,
+ "cache_hits": 0,
+ "reduce_seconds": 4.889,
+ "budget_exhausted": false,
+ "probe_log": [
+  [
+   2,
+   false
+  ],
+  [
+   2,
+   false
+  ]
+ ],
+ "logs": [
+  "ts6-6.0.3-tr2566f2-r4-replay-baseline-20261119-030006-dc7334.jsonl.gz",
+  "ts6-6.0.3-tr2566f2-r4-replay-case-20261119-025955-8e85f5.jsonl.gz",
+  "ts6-6.0.3-tr2566f2-r4-replay-control-20261119-030013-e1b992.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2322",
+    "typescript",
+    "Type 'Bluebird<{ name: string; path: string; } | undefined>' is not assignable to type 'Bluebird<{ name: string; path: string; }>'. Type '{ name: string; path: string; } | undefined' is not assignable to type '{ name: string; path: string; }'. Type 'undefined' is not assignable to type '{ name: string; path: string; }'."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7053",
+    "typescript",
+    "Element implicitly has an 'any' type because expression of type 'string' can't be used to index type '{ normal: string; }'. No index signature with a parameter of type 'string' was found on type '{ normal: string; }'."
+   ]
+  ],
+  "actual": [
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2322",
+    "typescript",
+    "Type 'Bluebird<{ name: string; path: Bluebird<string[]>; }[]>' is not assignable to type 'Bluebird<{ name: string; path: string; }[]>'. Type '{ name: string; path: Bluebird<string[]>; }[]' is not assignable to type '{ name: string; path: string; }[]'. Type '{ name: string; path: Promise<string[]>; }' is not assignable to type '{ name: string; path: string; }'. Types of property 'path' are incompatible. Type 'Bluebird<string[]>' is not assignable to type 'string'."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2322",
+    "typescript",
+    "Type 'Bluebird<{ name: string; path: string; } | undefined>' is not assignable to type 'Bluebird<{ name: string; path: string; }>'. Type '{ name: string; path: string; } | undefined' is not assignable to type '{ name: string; path: string; }'. Type 'undefined' is not assignable to type '{ name: string; path: string; }'."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2345",
+    "typescript",
+    "Argument of type 'string | Bluebird<string[]>' is not assignable to parameter of type 'string'. Type 'Bluebird<string[]>' is not assignable to type 'string'."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2345",
+    "typescript",
+    "Argument of type 'string | Bluebird<string[]>' is not assignable to parameter of type 'string'. Type 'Bluebird<string[]>' is not assignable to type 'string'."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7053",
+    "typescript",
+    "Element implicitly has an 'any' type because expression of type 'string' can't be used to index type '{ normal: string; }'. No index signature with a parameter of type 'string' was found on type '{ normal: string; }'."
+   ]
+  ]
+ },
+ "ops_after": 3,
+ "total_seconds": 102.8
+}

@@ -1,0 +1,3 @@
+2026-09-25 00:39:24,838 INFO campaign_run run 3e62396f3dbe: r0_crash on rust-analyzer 2024-09-16, rust-analyzer-18130 seed 2 settled, targets ['src/lib.rs']
+2026-09-25 00:40:08,447 INFO campaign_run run 3e62396f3dbe: 0 candidate(s) in 44s; confirming
+2026-09-25 00:40:08,449 INFO campaign_run run 3e62396f3dbe finished: ok, 0 confirmed of 0 candidate(s), 44s

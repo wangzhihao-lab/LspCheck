@@ -1,0 +1,90 @@
+{
+ "queries": [
+  "references extra repo:golang/go is:issue label:gopls",
+  "references stale repo:golang/go is:issue label:gopls"
+ ],
+ "matches": [
+  {
+   "repo": "golang/go",
+   "number": 81408,
+   "title": "x/tools/gopls: issues many redundant `go list` invocations concurrently",
+   "url": "https://github.com/golang/go/issues/81408",
+   "state": "open",
+   "created": "2026-09-09",
+   "comments": 5,
+   "query": "references extra repo:golang/go is:issue label:gopls"
+  },
+  {
+   "repo": "golang/go",
+   "number": 50151,
+   "title": "x/tools/gopls: high cpu usage when make changes in package which have some cgo package dependents",
+   "url": "https://github.com/golang/go/issues/50151",
+   "state": "open",
+   "created": "2021-12-14",
+   "comments": 15,
+   "query": "references extra repo:golang/go is:issue label:gopls"
+  },
+  {
+   "repo": "golang/go",
+   "number": 38028,
+   "title": "x/tools/gopls: support change signature refactoring",
+   "url": "https://github.com/golang/go/issues/38028",
+   "state": "open",
+   "created": "2020-03-23",
+   "comments": 9,
+   "query": "references extra repo:golang/go is:issue label:gopls"
+  },
+  {
+   "repo": "golang/go",
+   "number": 64936,
+   "title": "x/tools/gopls: support for comment rendering",
+   "url": "https://github.com/golang/go/issues/64936",
+   "state": "open",
+   "created": "2024-01-02",
+   "comments": 9,
+   "query": "references extra repo:golang/go is:issue label:gopls"
+  },
+  {
+   "repo": "golang/go",
+   "number": 68087,
+   "title": "x/tools/gopls: `go clean` fails with ENOTEMPTY (openbsd) causing gopls test flakes",
+   "url": "https://github.com/golang/go/issues/68087",
+   "state": "open",
+   "created": "2024-06-20",
+   "comments": 190,
+   "query": "references extra repo:golang/go is:issue label:gopls"
+  },
+  {
+   "repo": "golang/go",
+   "number": 40862,
+   "title": "x/tools/gopls: add codelens to show number of references to each symbol",
+   "url": "https://github.com/golang/go/issues/40862",
+   "state": "open",
+   "created": "2020-08-16",
+   "comments": 41,
+   "query": "references stale repo:golang/go is:issue label:gopls"
+  },
+  {
+   "repo": "golang/go",
+   "number": 68002,
+   "title": "x/tools/gopls: improvements to loading behavior",
+   "url": "https://github.com/golang/go/issues/68002",
+   "state": "open",
+   "created": "2024-06-14",
+   "comments": 5,
+   "query": "references stale repo:golang/go is:issue label:gopls"
+  },
+  {
+   "repo": "golang/go",
+   "number": 81400,
+   "title": "x/tools/gopls: after a workspace load error is fixed, every later go.mod change makes requests fail with \"no package metadata\" for about a second",
+   "url": "https://github.com/golang/go/issues/81400",
+   "state": "closed",
+   "created": "2026-09-09",
+   "comments": 5,
+   "query": "references stale repo:golang/go is:issue label:gopls"
+  }
+ ],
+ "notes": [],
+ "authenticated": true
+}

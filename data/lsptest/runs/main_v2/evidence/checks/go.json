@@ -1,0 +1,210 @@
+{
+ "go_version": [
+  "go version go1.27.1 darwin/arm64"
+ ],
+ "env": "{\"GOPATH\": \"<repo>/temp/lsp_servers/gopath\", \"GOMODCACHE\": \"<repo>/temp/lsp_servers/gopath/pkg/mod\", \"GOPROXY\": \"off\", \"GOFLAGS\": \"-modcacherw -mod=readonly\", \"GOTOOLCHAIN\": \"local\"}",
+ "C15": {
+  "cause": "C15",
+  "gid": "gopls-r4-diagnostics-extra-unusedimport-mutation-m3-aefa9e",
+  "path": "cmd/ssh.go",
+  "title": "Delete var \"sshCmd\"",
+  "post_snippet": [
+   "    1 | package cmd",
+   "    2 | ",
+   "    3 | import (",
+   "    4 | \t\"github.com/abiosoft/colima/cmd/root\"",
+   "    5 | \t\"github.com/spf13/cobra\"",
+   "    6 | )",
+   "    7 | ",
+   "    8 | ",
+   "    9 | ",
+   "   10 | func init() {",
+   "   11 | \troot.Cmd().AddCommand()",
+   "   12 | }",
+   "   13 | "
+  ],
+  "states": {
+   "base": {
+    "go": {
+     "cmd": "go build -o /dev/null ./cmd",
+     "cwd": "<scratch>/gopls-r4-diagnostics-extra-unusedimport-mutation-m3-aefa9e",
+     "exit": 0,
+     "output": []
+    },
+    "gofmt": {
+     "cmd": "gofmt -e -l cmd/ssh.go",
+     "cwd": "<scratch>/gopls-r4-diagnostics-extra-unusedimport-mutation-m3-aefa9e",
+     "exit": 0,
+     "output": []
+    }
+   },
+   "pre": {
+    "go": {
+     "cmd": "go build -o /dev/null ./cmd",
+     "cwd": "<scratch>/gopls-r4-diagnostics-extra-unusedimport-mutation-m3-aefa9e",
+     "exit": 0,
+     "output": []
+    },
+    "gofmt": {
+     "cmd": "gofmt -e -l cmd/ssh.go",
+     "cwd": "<scratch>/gopls-r4-diagnostics-extra-unusedimport-mutation-m3-aefa9e",
+     "exit": 0,
+     "output": []
+    }
+   },
+   "post": {
+    "go": {
+     "cmd": "go build -o /dev/null ./cmd",
+     "cwd": "<scratch>/gopls-r4-diagnostics-extra-unusedimport-mutation-m3-aefa9e",
+     "exit": 1,
+     "output": [
+      "# github.com/abiosoft/colima/cmd",
+      "cmd/ssh.go:5:2: \"github.com/spf13/cobra\" imported and not used"
+     ]
+    },
+    "gofmt": {
+     "cmd": "gofmt -e -l cmd/ssh.go",
+     "cwd": "<scratch>/gopls-r4-diagnostics-extra-unusedimport-mutation-m3-aefa9e",
+     "exit": 0,
+     "output": [
+      "cmd/ssh.go"
+     ]
+    }
+   }
+  }
+ },
+ "C14": {
+  "cause": "C14",
+  "gid": "gopls-r1-completion-lost-h7-1a1169",
+  "paths_differing_from_corpus": [],
+  "go_vet": {
+   "cmd": "go vet ./extractors/geekbang",
+   "cwd": "<scratch>/gopls-r1-completion-lost-h7-1a1169",
+   "exit": 0,
+   "output": []
+  }
+ },
+ "C13": {
+  "cause": "C13",
+  "runs": [
+   {
+    "gid": "gopls-r1-diagnostics-missing-h7-10a910",
+    "files_differing_from_corpus": [
+     "utils/tests/dummy_dialecter.go"
+    ],
+    "list": {
+     "cmd": "go list -e -test -f {{.ImportPath}} err={{.Error}} deps={{.DepsErrors}} .",
+     "cwd": "<scratch>/gopls-r1-diagnostics-missing-h7-10a910/tests",
+     "exit": 0,
+     "output": [
+      "gorm.io/gorm/tests err=<nil> deps=[]",
+      "gorm.io/gorm/tests.test err=<nil> deps=[../soft_delete.go:9:2: missing go.sum entry for module providing package github.com/jinzhu/now (imported by gorm.io/gorm/tests); to add:",
+      "\tgo get -t gorm.io/gorm/tests ../schema/naming.go:12:2: missing go.sum entry for module providing package golang.org/x/text/language (imported by gorm.io/gorm/schema); to add:",
+      "\tgo get gorm.io/gorm/schema@v1.31.0 ../schema/naming.go:10:2: missing go.sum entry for module providing package github.com/jinzhu/inflection (imported by gorm.io/gorm/schema); to add:",
+      "\tgo get gorm.io/gorm/schema@v1.31.0 ../schema/naming.go:11:2: missing go.sum entry for module providing package golang.org/x/text/cases (imported by gorm.io/gorm/schema); to add:",
+      "\tgo get gorm.io/gorm/schema@v1.31.0 joins_test.go:9:2: missing go.sum entry for module providing package github.com/stretchr/testify/assert (imported by gorm.io/gorm/tests); to add:",
+      "\tgo get -t gorm.io/gorm/tests gaussdb_test.go:7:2: missing go.sum entry for module providing package github.com/google/uuid (imported by gorm.io/gorm/tests); to add:",
+      "\tgo get -t gorm.io/gorm/tests tests_test.go:14:2: missing go.sum entry for module providing package gorm.io/driver/sqlite (imported by gorm.io/gorm/tests); to add:",
+      "\tgo get -t gorm.io/gorm/tests connection_test.go:6:2: missing go.sum entry for module providing package gorm.io/driver/mysql (imported by gorm.io/gorm/tests); to add:",
+      "\tgo get -t gorm.io/gorm/tests migrate_test.go:15:2: missing go.sum entry for module providing package gorm.io/driver/gaussdb (imported by gorm.io/gorm/tests); to add:",
+      "\tgo get -t gorm.io/gorm/tests gaussdb_test.go:8:2: missing go.sum entry for module providing package github.com/lib/pq (imported by gorm.io/gorm/tests); to add:",
+      "\tgo get -t gorm.io/gorm/tests tests_test.go:15:2: missing go.sum entry for module providing package gorm.io/driver/sqlserver (imported by gorm.io/gorm/tests); to add:",
+      "\tgo get -t gorm.io/gorm/tests migrate_test.go:16:2: missing go.sum entry for module providing package gorm.io/driver/postgres (imported by gorm.io/gorm/tests); to add:",
+      "\tgo get -t gorm.io/gorm/tests ../utils/tests/dummy_dialecter.go:3:11: missing import path]",
+      "gorm.io/gorm/tests [gorm.io/gorm/tests.test] err=<nil> deps=[../soft_delete.go:9:2: missing go.sum entry for module providing package github.com/jinzhu/now (imported by gorm.io/gorm/tests); to add:",
+      "\tgo get -t gorm.io/gorm/tests ../schema/naming.go:11:2: missing go.sum entry for module providing package golang.org/x/text/cases (imported by gorm.io/gorm/schema); to add:",
+      "\tgo get gorm.io/gorm/schema@v1.31.0 ../schema/naming.go:12:2: missing go.sum entry for module providing package golang.org/x/text/language (imported by gorm.io/gorm/schema); to add:",
+      "\tgo get gorm.io/gorm/schema@v1.31.0 ../schema/naming.go:10:2: missing go.sum entry for module providing package github.com/jinzhu/inflection (imported by gorm.io/gorm/schema); to add:",
+      "\tgo get gorm.io/gorm/schema@v1.31.0]",
+      "gorm.io/gorm/tests_test [gorm.io/gorm/tests.test] err=<nil> deps=[../soft_delete.go:9:2: missing go.sum entry for module providing package github.com/jinzhu/now (imported by gorm.io/gorm/tests); to add:",
+      "\tgo get -t gorm.io/gorm/tests ../schema/naming.go:10:2: missing go.sum entry for module providing package github.com/jinzhu/inflection (imported by gorm.io/gorm/schema); to add:",
+      "\tgo get gorm.io/gorm/schema@v1.31.0 ../schema/naming.go:12:2: missing go.sum entry for module providing package golang.org/x/text/language (imported by gorm.io/gorm/schema); to add:",
+      "\tgo get gorm.io/gorm/schema@v1.31.0 ../schema/naming.go:11:2: missing go.sum entry for module providing package golang.org/x/text/cases (imported by gorm.io/gorm/schema); to add:",
+      "\tgo get gorm.io/gorm/schema@v1.31.0 migrate_test.go:15:2: missing go.sum entry for module providing package gorm.io/driver/gaussdb (imported by gorm.io/gorm/tests); to add:",
+      "\tgo get -t gorm.io/gorm/tests migrate_test.go:16:2: missing go.sum entry for module providing package gorm.io/driver/postgres (imported by gorm.io/gorm/tests); to add:",
+      "\tgo get -t gorm.io/gorm/tests connection_test.go:6:2: missing go.sum entry for module providing package gorm.io/driver/mysql (imported by gorm.io/gorm/tests); to add:",
+      "\tgo get -t gorm.io/gorm/tests gaussdb_test.go:8:2: missing go.sum entry for module providing package github.com/lib/pq (imported by gorm.io/gorm/tests); to add:",
+      "\tgo get -t gorm.io/gorm/tests tests_test.go:14:2: missing go.sum entry for module providing package gorm.io/driver/sqlite (imported by gorm.io/gorm/tests); to add:",
+      "\tgo get -t gorm.io/gorm/tests tests_test.go:15:2: missing go.sum entry for module providing package gorm.io/driver/sqlserver (imported by gorm.io/gorm/tests); to add:",
+      "\tgo get -t gorm.io/gorm/tests gaussdb_test.go:7:2: missing go.sum entry for module providing package github.com/google/uuid (imported by gorm.io/gorm/tests); to add:",
+      "\tgo get -t gorm.io/gorm/tests joins_test.go:9:2: missing go.sum entry for module providing package github.com/stretchr/testify/assert (imported by gorm.io/gorm/tests); to add:",
+      "\tgo get -t gorm.io/gorm/tests ../utils/tests/dummy_dialecter.go:3:11: missing import path]"
+     ]
+    },
+    "build_root_from_tests": {
+     "cmd": "go build -o /dev/null gorm.io/gorm",
+     "cwd": "<scratch>/gopls-r1-diagnostics-missing-h7-10a910/tests",
+     "exit": 1,
+     "output": [
+      "../soft_delete.go:9:2: missing go.sum entry for module providing package github.com/jinzhu/now (imported by gorm.io/gorm); to add:",
+      "\tgo get gorm.io/gorm@v1.31.0",
+      "../schema/naming.go:10:2: missing go.sum entry for module providing package github.com/jinzhu/inflection (imported by gorm.io/gorm/schema); to add:",
+      "\tgo get gorm.io/gorm/schema@v1.31.0",
+      "../schema/naming.go:11:2: missing go.sum entry for module providing package golang.org/x/text/cases (imported by gorm.io/gorm/schema); to add:",
+      "\tgo get gorm.io/gorm/schema@v1.31.0",
+      "../schema/naming.go:12:2: missing go.sum entry for module providing package golang.org/x/text/language (imported by gorm.io/gorm/schema); to add:",
+      "\tgo get gorm.io/gorm/schema@v1.31.0"
+     ]
+    }
+   },
+   {
+    "gid": "gopls-r1-diagnostics-message-h5-e59f2c",
+    "files_differing_from_corpus": [],
+    "list": {
+     "cmd": "go list -e -test -f {{.ImportPath}} err={{.Error}} deps={{.DepsErrors}} .",
+     "cwd": "<scratch>/gopls-r1-diagnostics-message-h5-e59f2c/tests",
+     "exit": 0,
+     "output": [
+      "gorm.io/gorm/tests err=<nil> deps=[]",
+      "gorm.io/gorm/tests.test err=<nil> deps=[../soft_delete.go:9:2: missing go.sum entry for module providing package github.com/jinzhu/now (imported by gorm.io/gorm/tests); to add:",
+      "\tgo get -t gorm.io/gorm/tests ../schema/naming.go:10:2: missing go.sum entry for module providing package github.com/jinzhu/inflection (imported by gorm.io/gorm/schema); to add:",
+      "\tgo get gorm.io/gorm/schema@v1.31.0 ../schema/naming.go:11:2: missing go.sum entry for module providing package golang.org/x/text/cases (imported by gorm.io/gorm/schema); to add:",
+      "\tgo get gorm.io/gorm/schema@v1.31.0 ../schema/naming.go:12:2: missing go.sum entry for module providing package golang.org/x/text/language (imported by gorm.io/gorm/schema); to add:",
+      "\tgo get gorm.io/gorm/schema@v1.31.0 gaussdb_test.go:7:2: missing go.sum entry for module providing package github.com/google/uuid (imported by gorm.io/gorm/tests); to add:",
+      "\tgo get -t gorm.io/gorm/tests tests_test.go:14:2: missing go.sum entry for module providing package gorm.io/driver/sqlite (imported by gorm.io/gorm/tests); to add:",
+      "\tgo get -t gorm.io/gorm/tests joins_test.go:9:2: missing go.sum entry for module providing package github.com/stretchr/testify/assert (imported by gorm.io/gorm/tests); to add:",
+      "\tgo get -t gorm.io/gorm/tests connection_test.go:6:2: missing go.sum entry for module providing package gorm.io/driver/mysql (imported by gorm.io/gorm/tests); to add:",
+      "\tgo get -t gorm.io/gorm/tests migrate_test.go:16:2: missing go.sum entry for module providing package gorm.io/driver/postgres (imported by gorm.io/gorm/tests); to add:",
+      "\tgo get -t gorm.io/gorm/tests tests_test.go:15:2: missing go.sum entry for module providing package gorm.io/driver/sqlserver (imported by gorm.io/gorm/tests); to add:",
+      "\tgo get -t gorm.io/gorm/tests gaussdb_test.go:8:2: missing go.sum entry for module providing package github.com/lib/pq (imported by gorm.io/gorm/tests); to add:",
+      "\tgo get -t gorm.io/gorm/tests migrate_test.go:15:2: missing go.sum entry for module providing package gorm.io/driver/gaussdb (imported by gorm.io/gorm/tests); to add:",
+      "\tgo get -t gorm.io/gorm/tests]",
+      "gorm.io/gorm/tests [gorm.io/gorm/tests.test] err=<nil> deps=[../soft_delete.go:9:2: missing go.sum entry for module providing package github.com/jinzhu/now (imported by gorm.io/gorm/tests); to add:",
+      "\tgo get -t gorm.io/gorm/tests ../schema/naming.go:10:2: missing go.sum entry for module providing package github.com/jinzhu/inflection (imported by gorm.io/gorm/schema); to add:",
+      "\tgo get gorm.io/gorm/schema@v1.31.0 ../schema/naming.go:11:2: missing go.sum entry for module providing package golang.org/x/text/cases (imported by gorm.io/gorm/schema); to add:",
+      "\tgo get gorm.io/gorm/schema@v1.31.0 ../schema/naming.go:12:2: missing go.sum entry for module providing package golang.org/x/text/language (imported by gorm.io/gorm/schema); to add:",
+      "\tgo get gorm.io/gorm/schema@v1.31.0]",
+      "gorm.io/gorm/tests_test [gorm.io/gorm/tests.test] err=<nil> deps=[../soft_delete.go:9:2: missing go.sum entry for module providing package github.com/jinzhu/now (imported by gorm.io/gorm/tests); to add:",
+      "\tgo get -t gorm.io/gorm/tests ../schema/naming.go:10:2: missing go.sum entry for module providing package github.com/jinzhu/inflection (imported by gorm.io/gorm/schema); to add:",
+      "\tgo get gorm.io/gorm/schema@v1.31.0 ../schema/naming.go:11:2: missing go.sum entry for module providing package golang.org/x/text/cases (imported by gorm.io/gorm/schema); to add:",
+      "\tgo get gorm.io/gorm/schema@v1.31.0 ../schema/naming.go:12:2: missing go.sum entry for module providing package golang.org/x/text/language (imported by gorm.io/gorm/schema); to add:",
+      "\tgo get gorm.io/gorm/schema@v1.31.0 tests_test.go:15:2: missing go.sum entry for module providing package gorm.io/driver/sqlserver (imported by gorm.io/gorm/tests); to add:",
+      "\tgo get -t gorm.io/gorm/tests gaussdb_test.go:8:2: missing go.sum entry for module providing package github.com/lib/pq (imported by gorm.io/gorm/tests); to add:",
+      "\tgo get -t gorm.io/gorm/tests migrate_test.go:15:2: missing go.sum entry for module providing package gorm.io/driver/gaussdb (imported by gorm.io/gorm/tests); to add:",
+      "\tgo get -t gorm.io/gorm/tests gaussdb_test.go:7:2: missing go.sum entry for module providing package github.com/google/uuid (imported by gorm.io/gorm/tests); to add:",
+      "\tgo get -t gorm.io/gorm/tests joins_test.go:9:2: missing go.sum entry for module providing package github.com/stretchr/testify/assert (imported by gorm.io/gorm/tests); to add:",
+      "\tgo get -t gorm.io/gorm/tests connection_test.go:6:2: missing go.sum entry for module providing package gorm.io/driver/mysql (imported by gorm.io/gorm/tests); to add:",
+      "\tgo get -t gorm.io/gorm/tests migrate_test.go:16:2: missing go.sum entry for module providing package gorm.io/driver/postgres (imported by gorm.io/gorm/tests); to add:",
+      "\tgo get -t gorm.io/gorm/tests tests_test.go:14:2: missing go.sum entry for module providing package gorm.io/driver/sqlite (imported by gorm.io/gorm/tests); to add:",
+      "\tgo get -t gorm.io/gorm/tests]"
+     ]
+    },
+    "build_root_from_tests": {
+     "cmd": "go build -o /dev/null gorm.io/gorm",
+     "cwd": "<scratch>/gopls-r1-diagnostics-message-h5-e59f2c/tests",
+     "exit": 1,
+     "output": [
+      "../soft_delete.go:9:2: missing go.sum entry for module providing package github.com/jinzhu/now (imported by gorm.io/gorm); to add:",
+      "\tgo get gorm.io/gorm@v1.31.0",
+      "../schema/naming.go:10:2: missing go.sum entry for module providing package github.com/jinzhu/inflection (imported by gorm.io/gorm/schema); to add:",
+      "\tgo get gorm.io/gorm/schema@v1.31.0",
+      "../schema/naming.go:11:2: missing go.sum entry for module providing package golang.org/x/text/cases (imported by gorm.io/gorm/schema); to add:",
+      "\tgo get gorm.io/gorm/schema@v1.31.0",
+      "../schema/naming.go:12:2: missing go.sum entry for module providing package golang.org/x/text/language (imported by gorm.io/gorm/schema); to add:",
+      "\tgo get gorm.io/gorm/schema@v1.31.0"
+     ]
+    }
+   }
+  ]
+ }
+}

@@ -1,0 +1,495 @@
+{
+ "format": 1,
+ "campaign": "main_v2",
+ "vid": "4224a39ee10c-v00",
+ "run_id": "4224a39ee10c",
+ "oracle": "r6_crossimpl",
+ "server": {
+  "kind": "ts7",
+  "version": "7.0.2"
+ },
+ "project": {
+  "name": "solidjs/solid@4b62bc29e04b",
+  "source": "corpus",
+  "ref": "temp/corpus/solidjs__solid@4b62bc29e04b",
+  "commit": "4b62bc29e04bfd29573a20ff3d47ae56a8a80ccb",
+  "language": "typescript"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "examples/rendering/shared/src/router.tsx",
+    "positions": [
+     [
+      3,
+      7
+     ],
+     [
+      4,
+      4
+     ],
+     [
+      7,
+      13
+     ],
+     [
+      9,
+      2
+     ],
+     [
+      17,
+      28
+     ],
+     [
+      17,
+      41
+     ],
+     [
+      19,
+      13
+     ],
+     [
+      23,
+      23
+     ],
+     [
+      26,
+      18
+     ],
+     [
+      51,
+      9
+     ],
+     [
+      51,
+      24
+     ],
+     [
+      55,
+      47
+     ]
+    ],
+    "ends": [
+     [
+      3,
+      12
+     ],
+     [
+      4,
+      6
+     ],
+     [
+      7,
+      17
+     ],
+     [
+      9,
+      4
+     ],
+     [
+      17,
+      35
+     ],
+     [
+      17,
+      47
+     ],
+     [
+      19,
+      17
+     ],
+     [
+      23,
+      26
+     ],
+     [
+      26,
+      23
+     ],
+     [
+      51,
+      15
+     ],
+     [
+      51,
+      26
+     ],
+     [
+      55,
+      51
+     ]
+    ],
+    "names": [
+     "useContext",
+     "type",
+     "isServer",
+     "type",
+     "createContext",
+     "RouterValue",
+     "RouteHOC",
+     "match",
+     "onpopstate",
+     "setLocation",
+     "path",
+     "onClick"
+    ]
+   },
+   {
+    "path": "packages/signals/tests/latest-plain-write-purity.test.ts",
+    "positions": [
+     [
+      15,
+      71
+     ],
+     [
+      22,
+      19
+     ],
+     [
+      26,
+      4
+     ],
+     [
+      33,
+      16
+     ],
+     [
+      46,
+      4
+     ],
+     [
+      56,
+      22
+     ],
+     [
+      69,
+      10
+     ],
+     [
+      70,
+      7
+     ],
+     [
+      79,
+      6
+     ],
+     [
+      83,
+      10
+     ],
+     [
+      93,
+      18
+     ],
+     [
+      101,
+      6
+     ]
+    ],
+    "ends": [
+     [
+      15,
+      74
+     ],
+     [
+      22,
+      21
+     ],
+     [
+      26,
+      7
+     ],
+     [
+      33,
+      18
+     ],
+     [
+      46,
+      5
+     ],
+     [
+      56,
+      24
+     ],
+     [
+      69,
+      14
+     ],
+     [
+      70,
+      12
+     ],
+     [
+      79,
+      10
+     ],
+     [
+      83,
+      11
+     ],
+     [
+      93,
+      19
+     ],
+     [
+      101,
+      10
+     ]
+    ],
+    "names": [
+     "latest",
+     "set",
+     "flush",
+     "toBe",
+     "m",
+     "toBe",
+     "setCount",
+     "createRoot",
+     "setCount",
+     "m2",
+     "v",
+     "setCount"
+    ]
+   },
+   {
+    "path": "packages/web/test/server/server-functions-decoder-rejection-ownership.spec.tsx",
+    "positions": [
+     [
+      32,
+      60
+     ],
+     [
+      34,
+      15
+     ],
+     [
+      60,
+      61
+     ],
+     [
+      68,
+      7
+     ],
+     [
+      80,
+      22
+     ],
+     [
+      83,
+      49
+     ],
+     [
+      86,
+      25
+     ],
+     [
+      137,
+      8
+     ],
+     [
+      138,
+      27
+     ],
+     [
+      156,
+      37
+     ],
+     [
+      175,
+      13
+     ],
+     [
+      176,
+      34
+     ]
+    ],
+    "ends": [
+     [
+      32,
+      61
+     ],
+     [
+      34,
+      29
+     ],
+     [
+      60,
+      64
+     ],
+     [
+      68,
+      13
+     ],
+     [
+      80,
+      26
+     ],
+     [
+      83,
+      51
+     ],
+     [
+      86,
+      27
+     ],
+     [
+      137,
+      10
+     ],
+     [
+      138,
+      31
+     ],
+     [
+      156,
+      48
+     ],
+     [
+      175,
+      16
+     ],
+     [
+      176,
+      38
+     ]
+    ],
+    "names": [
+     "it",
+     "handleServerFunctionRequest",
+     "input",
+     "disconnects",
+     "process",
+     "push",
+     "run",
+     "fail",
+     "resolve",
+     "ATOMIC_REJECTED_GRAPH",
+     "length",
+     "toString"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "definition",
+  "path": "packages/signals/tests/latest-plain-write-purity.test.ts",
+  "line": 26,
+  "character": 4,
+  "extra": ""
+ },
+ "ops": [],
+ "case": {
+  "intended": [],
+  "intended_source": "4519ec0a93607319a96f4feb967aa06a251ccc816544e2fed5c985c1d45dc11a",
+  "method": "definition",
+  "only_reference": [],
+  "only_test": [
+   "[\"packages/signals/src/core/scheduler.ts\", 1558, 16, 1558, 21]",
+   "[\"packages/signals/src/core/scheduler.ts\", 1559, 16, 1559, 21]"
+  ],
+  "reference": {
+   "kind": "ts6",
+   "version": "6.0.3"
+  }
+ },
+ "shape": "definition:extra",
+ "signature": "ts7|r6_crossimpl|definition:extra",
+ "expected": [
+  [
+   "packages/signals/src/core/scheduler.ts",
+   1557,
+   16,
+   1557,
+   21
+  ]
+ ],
+ "actual": [
+  [
+   "packages/signals/src/core/scheduler.ts",
+   1557,
+   16,
+   1557,
+   21
+  ],
+  [
+   "packages/signals/src/core/scheduler.ts",
+   1558,
+   16,
+   1558,
+   21
+  ],
+  [
+   "packages/signals/src/core/scheduler.ts",
+   1559,
+   16,
+   1559,
+   21
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "ts7-7.0.2 and ts6-6.0.3 differ on definition at packages/signals/tests/latest-plain-write-purity.test.ts:27:5; no documented intended difference matches; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 329s",
+ "violation": {
+  "oracle": "r6_crossimpl",
+  "server": "ts7-7.0.2",
+  "project": "solidjs/solid@4b62bc29e04b",
+  "key": {
+   "method": "definition",
+   "path": "packages/signals/tests/latest-plain-write-purity.test.ts",
+   "line": 26,
+   "character": 4,
+   "extra": ""
+  },
+  "expected": [
+   [
+    "packages/signals/src/core/scheduler.ts",
+    1557,
+    16,
+    1557,
+    21
+   ]
+  ],
+  "actual": [
+   [
+    "packages/signals/src/core/scheduler.ts",
+    1557,
+    16,
+    1557,
+    21
+   ],
+   [
+    "packages/signals/src/core/scheduler.ts",
+    1558,
+    16,
+    1558,
+    21
+   ],
+   [
+    "packages/signals/src/core/scheduler.ts",
+    1559,
+    16,
+    1559,
+    21
+   ]
+  ],
+  "ops": [],
+  "detail": "{\"case\": {\"intended\": [], \"intended_source\": \"4519ec0a93607319a96f4feb967aa06a251ccc816544e2fed5c985c1d45dc11a\", \"method\": \"definition\", \"only_reference\": [], \"only_test\": [\"[\\\"packages/signals/src/core/scheduler.ts\\\", 1558, 16, 1558, 21]\", \"[\\\"packages/signals/src/core/scheduler.ts\\\", 1559, 16, 1559, 21]\"], \"reference\": {\"kind\": \"ts6\", \"version\": \"6.0.3\"}}, \"note\": \"ts7-7.0.2 and ts6-6.0.3 differ on definition at packages/signals/tests/latest-plain-write-purity.test.ts:27:5; no documented intended difference matches; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 329s\", \"shape\": \"definition:extra\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "ts7|r6_crossimpl|definition:extra",
+  "run_id": "4224a39ee10c"
+ },
+ "replay_logs": [
+  "logs/ts6-6.0.3-4224a39ee10c-ref-r6-replay-ref-baseline-20261118-131916-3dbee1.jsonl.gz",
+  "logs/ts6-6.0.3-4224a39ee10c-ref-r6-replay-ref-control-20261118-131927-7791ec.jsonl.gz",
+  "logs/ts7-7.0.2-4224a39ee10c-r6-replay-test-baseline-20261118-131804-cb0b53.jsonl.gz",
+  "logs/ts7-7.0.2-4224a39ee10c-r6-replay-test-control-20261118-131902-e99b13.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

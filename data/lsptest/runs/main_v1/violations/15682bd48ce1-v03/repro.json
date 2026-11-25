@@ -1,0 +1,540 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "15682bd48ce1-v03",
+ "run_id": "15682bd48ce1",
+ "oracle": "r6_crossimpl",
+ "server": {
+  "kind": "ts7",
+  "version": "7.0.2"
+ },
+ "project": {
+  "name": "Fission-AI/OpenSpec@f179ed4e4056",
+  "source": "corpus",
+  "ref": "temp/corpus/Fission-AI__OpenSpec@f179ed4e4056",
+  "commit": "f179ed4e40567cdb56501ee3f4d09efbcb1557b8",
+  "language": "typescript"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "src/core/shared/skill-generation.ts",
+    "positions": [
+     [
+      13,
+      14
+     ],
+     [
+      16,
+      16
+     ],
+     [
+      39,
+      40
+     ],
+     [
+      56,
+      49
+     ],
+     [
+      64,
+      5
+     ],
+     [
+      93,
+      46
+     ],
+     [
+      98,
+      26
+     ],
+     [
+      137,
+      50
+     ],
+     [
+      148,
+      16
+     ],
+     [
+      151,
+      6
+     ],
+     [
+      172,
+      43
+     ],
+     [
+      182,
+      29
+     ]
+    ],
+    "ends": [
+     [
+      13,
+      27
+     ],
+     [
+      16,
+      30
+     ],
+     [
+      39,
+      42
+     ],
+     [
+      56,
+      56
+     ],
+     [
+      64,
+      9
+     ],
+     [
+      93,
+      50
+     ],
+     [
+      98,
+      33
+     ],
+     [
+      137,
+      54
+     ],
+     [
+      148,
+      24
+     ],
+     [
+      151,
+      8
+     ],
+     [
+      172,
+      49
+     ],
+     [
+      182,
+      35
+     ]
+    ],
+    "names": [
+     "getSyncSpecsSkillTemplate",
+     "getVerifyChangeSkillTemplate",
+     "from",
+     "ALL_WORKFLOWS",
+     "dirName",
+     "dirName",
+     "workflowFilter",
+     "template",
+     "commandTemplates",
+     "name",
+     "instructions",
+     "description"
+    ]
+   },
+   {
+    "path": "src/telemetry/index.ts",
+    "positions": [
+     [
+      22,
+      16
+     ],
+     [
+      25,
+      21
+     ],
+     [
+      46,
+      14
+     ],
+     [
+      110,
+      11
+     ],
+     [
+      131,
+      41
+     ],
+     [
+      132,
+      10
+     ],
+     [
+      145,
+      27
+     ],
+     [
+      149,
+      17
+     ],
+     [
+      150,
+      7
+     ],
+     [
+      176,
+      36
+     ],
+     [
+      229,
+      37
+     ],
+     [
+      230,
+      12
+     ]
+    ],
+    "ends": [
+     [
+      22,
+      24
+     ],
+     [
+      25,
+      33
+     ],
+     [
+      46,
+      18
+     ],
+     [
+      110,
+      17
+     ],
+     [
+      131,
+      44
+     ],
+     [
+      132,
+      12
+     ],
+     [
+      145,
+      36
+     ],
+     [
+      149,
+      23
+     ],
+     [
+      150,
+      9
+     ],
+     [
+      176,
+      47
+     ],
+     [
+      229,
+      41
+     ],
+     [
+      230,
+      19
+     ]
+    ],
+    "names": [
+     "getGlobalConfig",
+     "isTelemetryOptedOutByEnv",
+     "response",
+     "anonymousId",
+     "event",
+     "body",
+     "safeTelemetryFetch",
+     "AbortSignal",
+     "then",
+     "getOrCreateAnonymousId",
+     "Promise",
+     "pendingEvents"
+    ]
+   },
+   {
+    "path": "test/commands/store-git.test.ts",
+    "positions": [
+     [
+      12,
+      12
+     ],
+     [
+      13,
+      43
+     ],
+     [
+      68,
+      40
+     ],
+     [
+      96,
+      15
+     ],
+     [
+      134,
+      7
+     ],
+     [
+      150,
+      23
+     ],
+     [
+      184,
+      19
+     ],
+     [
+      200,
+      35
+     ],
+     [
+      208,
+      57
+     ],
+     [
+      241,
+      23
+     ],
+     [
+      276,
+      35
+     ],
+     [
+      310,
+      30
+     ]
+    ],
+    "ends": [
+     [
+      12,
+      15
+     ],
+     [
+      13,
+      50
+     ],
+     [
+      68,
+      42
+     ],
+     [
+      96,
+      17
+     ],
+     [
+      134,
+      10
+     ],
+     [
+      150,
+      25
+     ],
+     [
+      184,
+      23
+     ],
+     [
+      200,
+      39
+     ],
+     [
+      208,
+      62
+     ],
+     [
+      241,
+      25
+     ],
+     [
+      276,
+      40
+     ],
+     [
+      310,
+      32
+     ]
+    ],
+    "names": [
+     "runCLI",
+     "isolatedGitEnv",
+     "env",
+     "JSON",
+     "expect",
+     "path",
+     "process",
+     "tempDir",
+     "recursive",
+     "path",
+     "toContain",
+     "toBe"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "definition",
+  "path": "test/commands/store-git.test.ts",
+  "line": 184,
+  "character": 19,
+  "extra": ""
+ },
+ "ops": [],
+ "case": {
+  "intended": [],
+  "intended_source": "4519ec0a93607319a96f4feb967aa06a251ccc816544e2fed5c985c1d45dc11a",
+  "method": "definition",
+  "only_reference": [],
+  "only_test": [
+   "[\"~/Library/Caches/typescript/7.0/node_modules/@types/node/globals.d.ts\", 2, 12, 2, 19]",
+   "[\"~/Library/Caches/typescript/7.0/node_modules/@types/node/process.d.ts\", 140, 12, 140, 19]",
+   "[\"~/Library/Caches/typescript/7.0/node_modules/@types/node/process.d.ts\", 141, 18, 141, 25]",
+   "[\"node_modules/.pnpm/@types+node@20.19.43/node_modules/@types/node/globals.d.ts\", 2, 12, 2, 19]",
+   "[\"node_modules/.pnpm/@types+node@20.19.43/node_modules/@types/node/process.d.ts\", 121, 12, 121, 19]",
+   "[\"node_modules/@types/node/globals.d.ts\", 2, 12, 2, 19]",
+   "[\"node_modules/@types/node/process.d.ts\", 121, 12, 121, 19]"
+  ],
+  "reference": {
+   "kind": "ts6",
+   "version": "6.0.3"
+  }
+ },
+ "shape": "definition:gained",
+ "signature": "ts7|r6_crossimpl|definition:gained",
+ "expected": [],
+ "actual": [
+  [
+   "~/Library/Caches/typescript/7.0/node_modules/@types/node/globals.d.ts",
+   2,
+   12,
+   2,
+   19
+  ],
+  [
+   "~/Library/Caches/typescript/7.0/node_modules/@types/node/process.d.ts",
+   140,
+   12,
+   140,
+   19
+  ],
+  [
+   "~/Library/Caches/typescript/7.0/node_modules/@types/node/process.d.ts",
+   141,
+   18,
+   141,
+   25
+  ],
+  [
+   "node_modules/.pnpm/@types+node@20.19.43/node_modules/@types/node/globals.d.ts",
+   2,
+   12,
+   2,
+   19
+  ],
+  [
+   "node_modules/.pnpm/@types+node@20.19.43/node_modules/@types/node/process.d.ts",
+   121,
+   12,
+   121,
+   19
+  ],
+  [
+   "node_modules/@types/node/globals.d.ts",
+   2,
+   12,
+   2,
+   19
+  ],
+  [
+   "node_modules/@types/node/process.d.ts",
+   121,
+   12,
+   121,
+   19
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "ts7-7.0.2 and ts6-6.0.3 differ on definition at test/commands/store-git.test.ts:185:20; no documented intended difference matches; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 144s",
+ "violation": {
+  "oracle": "r6_crossimpl",
+  "server": "ts7-7.0.2",
+  "project": "Fission-AI/OpenSpec@f179ed4e4056",
+  "key": {
+   "method": "definition",
+   "path": "test/commands/store-git.test.ts",
+   "line": 184,
+   "character": 19,
+   "extra": ""
+  },
+  "expected": [],
+  "actual": [
+   [
+    "~/Library/Caches/typescript/7.0/node_modules/@types/node/globals.d.ts",
+    2,
+    12,
+    2,
+    19
+   ],
+   [
+    "~/Library/Caches/typescript/7.0/node_modules/@types/node/process.d.ts",
+    140,
+    12,
+    140,
+    19
+   ],
+   [
+    "~/Library/Caches/typescript/7.0/node_modules/@types/node/process.d.ts",
+    141,
+    18,
+    141,
+    25
+   ],
+   [
+    "node_modules/.pnpm/@types+node@20.19.43/node_modules/@types/node/globals.d.ts",
+    2,
+    12,
+    2,
+    19
+   ],
+   [
+    "node_modules/.pnpm/@types+node@20.19.43/node_modules/@types/node/process.d.ts",
+    121,
+    12,
+    121,
+    19
+   ],
+   [
+    "node_modules/@types/node/globals.d.ts",
+    2,
+    12,
+    2,
+    19
+   ],
+   [
+    "node_modules/@types/node/process.d.ts",
+    121,
+    12,
+    121,
+    19
+   ]
+  ],
+  "ops": [],
+  "detail": "{\"case\": {\"intended\": [], \"intended_source\": \"4519ec0a93607319a96f4feb967aa06a251ccc816544e2fed5c985c1d45dc11a\", \"method\": \"definition\", \"only_reference\": [], \"only_test\": [\"[\\\"~/Library/Caches/typescript/7.0/node_modules/@types/node/globals.d.ts\\\", 2, 12, 2, 19]\", \"[\\\"~/Library/Caches/typescript/7.0/node_modules/@types/node/process.d.ts\\\", 140, 12, 140, 19]\", \"[\\\"~/Library/Caches/typescript/7.0/node_modules/@types/node/process.d.ts\\\", 141, 18, 141, 25]\", \"[\\\"node_modules/.pnpm/@types+node@20.19.43/node_modules/@types/node/globals.d.ts\\\", 2, 12, 2, 19]\", \"[\\\"node_modules/.pnpm/@types+node@20.19.43/node_modules/@types/node/process.d.ts\\\", 121, 12, 121, 19]\", \"[\\\"node_modules/@types/node/globals.d.ts\\\", 2, 12, 2, 19]\", \"[\\\"node_modules/@types/node/process.d.ts\\\", 121, 12, 121, 19]\"], \"reference\": {\"kind\": \"ts6\", \"version\": \"6.0.3\"}}, \"note\": \"ts7-7.0.2 and ts6-6.0.3 differ on definition at test/commands/store-git.test.ts:185:20; no documented intended difference matches; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 144s\", \"shape\": \"definition:gained\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "ts7|r6_crossimpl|definition:gained",
+  "run_id": "15682bd48ce1"
+ },
+ "replay_logs": [
+  "logs/ts6-6.0.3-15682bd48ce1-ref-r6-replay-ref-baseline-20260923-161722-035c5f.jsonl.gz",
+  "logs/ts6-6.0.3-15682bd48ce1-ref-r6-replay-ref-control-20260923-161735-29901b.jsonl.gz",
+  "logs/ts7-7.0.2-15682bd48ce1-r6-replay-test-baseline-20260923-161701-b07951.jsonl.gz",
+  "logs/ts7-7.0.2-15682bd48ce1-r6-replay-test-control-20260923-161713-c0258e.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

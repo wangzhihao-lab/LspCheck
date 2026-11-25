@@ -1,0 +1,3 @@
+2026-09-24 11:30:50,708 INFO campaign_run run 00bc583ca6b7: r1_history on pyright 1.1.414, hiyouga/LlamaFactory@97b32d3133b5 seed 3 settled, targets ['scripts/stat_utils/length_cdf.py', 'src/llamafactory/third_party/muon/muon.py', 'src/llamafactory/v1/plugins/model_plugins/quantization.py']
+2026-09-24 11:38:17,101 INFO campaign_run run 00bc583ca6b7: 0 candidate(s) in 446s; confirming
+2026-09-24 11:38:17,102 INFO campaign_run run 00bc583ca6b7 finished: ok, 0 confirmed of 0 candidate(s), 446s

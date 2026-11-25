@@ -1,0 +1,261 @@
+{
+ "format": 1,
+ "campaign": "bench_v1",
+ "vid": "3e24b9f64ff9-v00",
+ "run_id": "3e24b9f64ff9",
+ "oracle": "r5_transforms",
+ "server": {
+  "kind": "tsserver",
+  "version": "4.1.6+tsls0.5.1"
+ },
+ "project": {
+  "name": "tsserver-41526",
+  "source": "dir",
+  "ref": "data/lsp_bench/cases/tsserver-41526/project",
+  "commit": "",
+  "language": "javascript"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 120.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 6,
+  "targets": [
+   {
+    "path": "index.js",
+    "positions": [
+     [
+      2,
+      19
+     ],
+     [
+      2,
+      25
+     ],
+     [
+      3,
+      13
+     ],
+     [
+      3,
+      20
+     ],
+     [
+      3,
+      26
+     ],
+     [
+      3,
+      34
+     ],
+     [
+      3,
+      42
+     ]
+    ],
+    "ends": [
+     [
+      2,
+      22
+     ],
+     [
+      2,
+      28
+     ],
+     [
+      3,
+      16
+     ],
+     [
+      3,
+      23
+     ],
+     [
+      3,
+      28
+     ],
+     [
+      3,
+      36
+     ],
+     [
+      3,
+      47
+     ]
+    ],
+    "names": [
+     "filter",
+     "names",
+     "names",
+     "filter",
+     "name",
+     "name",
+     "startsWith"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "foldingRange",
+  "path": "index.js",
+  "line": -1,
+  "character": -1,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "index.js"
+  },
+  {
+   "kind": "change",
+   "path": "index.js",
+   "start": [
+    1,
+    0
+   ],
+   "end": [
+    1,
+    0
+   ],
+   "text": "\n// inserted comment line\n\n"
+  }
+ ],
+ "case": {
+  "mapped_key": [
+   "foldingRange",
+   "index.js",
+   -1,
+   -1,
+   ""
+  ],
+  "transform": {
+   "back": {
+    "col": 0,
+    "eof": [],
+    "line": -1,
+    "n": 0,
+    "path": "index.js",
+    "w": 0
+   },
+   "edits": [
+    [
+     1,
+     0,
+     1,
+     0,
+     "\n// inserted comment line\n\n"
+    ]
+   ],
+   "kind": "T2",
+   "path": "index.js",
+   "shift": {
+    "col": 0,
+    "eof": [],
+    "line": 1,
+    "n": 3,
+    "path": "index.js",
+    "w": 0
+   }
+  }
+ },
+ "shape": "foldingRange:extra",
+ "signature": "tsserver|r5_transforms|foldingRange:extra",
+ "expected": [
+  [
+   5,
+   -1,
+   6,
+   -1,
+   ""
+  ]
+ ],
+ "actual": [
+  [
+   0,
+   -1,
+   2,
+   -1,
+   "comment"
+  ],
+  [
+   5,
+   -1,
+   6,
+   -1,
+   ""
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "T2 index.js: 1 edit(s), first [1, 0, 1, 0]; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 23s",
+ "violation": {
+  "oracle": "r5_transforms",
+  "server": "tsserver-4.1.6+tsls0.5.1",
+  "project": "tsserver-41526",
+  "key": {
+   "method": "foldingRange",
+   "path": "index.js",
+   "line": -1,
+   "character": -1,
+   "extra": ""
+  },
+  "expected": [
+   [
+    5,
+    -1,
+    6,
+    -1,
+    ""
+   ]
+  ],
+  "actual": [
+   [
+    0,
+    -1,
+    2,
+    -1,
+    "comment"
+   ],
+   [
+    5,
+    -1,
+    6,
+    -1,
+    ""
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "index.js"
+   },
+   {
+    "kind": "change",
+    "path": "index.js",
+    "start": [
+     1,
+     0
+    ],
+    "end": [
+     1,
+     0
+    ],
+    "text": "\n// inserted comment line\n\n"
+   }
+  ],
+  "detail": "{\"case\": {\"mapped_key\": [\"foldingRange\", \"index.js\", -1, -1, \"\"], \"transform\": {\"back\": {\"col\": 0, \"eof\": [], \"line\": -1, \"n\": 0, \"path\": \"index.js\", \"w\": 0}, \"edits\": [[1, 0, 1, 0, \"\\n// inserted comment line\\n\\n\"]], \"kind\": \"T2\", \"path\": \"index.js\", \"shift\": {\"col\": 0, \"eof\": [], \"line\": 1, \"n\": 3, \"path\": \"index.js\", \"w\": 0}}}, \"note\": \"T2 index.js: 1 edit(s), first [1, 0, 1, 0]; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 23s\", \"shape\": \"foldingRange:extra\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "tsserver|r5_transforms|foldingRange:extra",
+  "run_id": "3e24b9f64ff9"
+ },
+ "replay_logs": [
+  "logs/tsserver-4.1.6+tsls0.5.1-3e24b9f64ff9-r5-replay-baseline-20260924-145048-3993b4.jsonl.gz",
+  "logs/tsserver-4.1.6+tsls0.5.1-3e24b9f64ff9-r5-replay-case-20260924-145053-cae699.jsonl.gz",
+  "logs/tsserver-4.1.6+tsls0.5.1-3e24b9f64ff9-r5-replay-control-20260924-145050-013a53.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

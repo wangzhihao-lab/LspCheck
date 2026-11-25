@@ -1,0 +1,76 @@
+{
+ "schema": 1,
+ "id": "tsserver-60186",
+ "meta": {
+  "server": "tsserver",
+  "kind": "tsserver",
+  "number": 60186,
+  "url": "https://github.com/microsoft/TypeScript/issues/60186",
+  "title": "Quick fix \"add missing properties\" fails with enums from other module",
+  "oracle_class": "R4",
+  "subtype": "quickfix",
+  "fix_ref": "microsoft/TypeScript#60191 (fix(60186): Quick fix \"add missing properties\" fails with enums from other module), e99e6e2e87, 2024-10-14; git tag --contains: first in v5.7-rc / v5.7.2",
+  "fix_shas": [
+   "e99e6e2e87a6d7f152eb7cc491ce11da1926662b"
+  ],
+  "pre_version": "5.6.3",
+  "post_version": "5.7.2",
+  "pre_build": "5.6.3+tsls4.3.3",
+  "post_build": "5.7.2+tsls4.3.3",
+  "wrapper": "typescript-language-server@4.3.3",
+  "build_notes": "npm typescript@5.6.3 (2024-10-08) and typescript@5.7.2 (2024-11-22), both behind typescript-language-server@4.3.3 (the latest wrapper release before 5.7.2), started with the pinned tsserver.js; the reported TypeScript version is checked on every session.",
+  "candidate_rank": 12,
+  "effort_minutes": 6,
+  "notes": "The generated initializer '\"<module path>\".A' is a property access on a string literal: it parses, but does not type-check, hence edit_leaves_diagnostic."
+ },
+ "language": "typescript",
+ "settings": {},
+ "settings_note": "The issue names no settings; no tsconfig.json, so tsserver uses an inferred project for the open file and its import.",
+ "session": {
+  "settle_timeout_s": 120
+ },
+ "files": [
+  {
+   "path": "E.ts",
+   "provenance": "issue",
+   "source": "issue body, Code block (// @filename: E.ts)",
+   "note": "split at the fourslash // @filename markers; the marker lines are not part of the files"
+  },
+  {
+   "path": "index.ts",
+   "provenance": "issue",
+   "source": "issue body, Code block (// @filename: index.ts)",
+   "note": "split at the // @filename markers; the trailing comment line of the block is kept (a comment)"
+  }
+ ],
+ "repro": {
+  "attempt": 1,
+  "timing": "settled",
+  "steps": "Open index.ts: 'const t:T = {}' is reported (TS2741, property e is missing). Apply the quick fix 'Add missing properties' on t. Reported: the fix writes 'e: \"file:///E\".A' (the module path as a string literal) instead of 'e: E.A'. Probe: after the fix, a fresh session on the edited file must neither report the targeted TS2741 nor a new error.",
+  "ops": [
+   {
+    "kind": "open",
+    "path": "index.ts"
+   }
+  ],
+  "probe": {
+   "type": "edit_leaves_diagnostic",
+   "params": {
+    "edit": {
+     "via": "code_action",
+     "path": "index.ts",
+     "diagnostic": {
+      "code": "2741"
+     },
+     "kind": "quickfix",
+     "title_re": "(?i)add missing properties",
+     "missing": "invalid"
+    },
+    "target": {
+     "code": "2741"
+    }
+   }
+  }
+ },
+ "attempts": []
+}

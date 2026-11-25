@@ -1,0 +1,3 @@
+2026-09-24 00:41:38,407 INFO campaign_run run 380494b8d063: r2_handles on pyright 1.1.414, browser-use/browser-use@d8110c5ff87c seed 2 settled, targets ['browser_use/browser/_cdp_timeout.py', 'browser_use/browser/watchdogs/aboutblank_watchdog.py', 'tests/ci/test_image_only_dom_representation.py']
+2026-09-24 00:42:47,351 INFO campaign_run run 380494b8d063: 0 candidate(s) in 69s; confirming
+2026-09-24 00:42:47,355 INFO campaign_run run 380494b8d063 finished: ok, 0 confirmed of 0 candidate(s), 69s

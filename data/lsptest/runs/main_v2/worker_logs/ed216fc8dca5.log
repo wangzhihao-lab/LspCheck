@@ -1,0 +1,6 @@
+2026-11-18 18:28:50,411 INFO campaign_run run ed216fc8dca5: r1_history on pyright 1.1.414, ultralytics/yolov5@402e17ddf820 seed 3 settled, targets ['models/yolo.py', 'utils/activations.py', 'utils/dataloaders.py']
+2026-11-18 18:38:43,276 INFO campaign_run run ed216fc8dca5: 2 candidate(s) in 593s; confirming
+2026-11-18 18:39:41,640 INFO flake replay 1/3 of pyright|r1_history|signatureHelp:changed: settled=True control_stable=True reproduced=True (58.4s)
+2026-11-18 18:40:37,886 INFO flake replay 2/3 of pyright|r1_history|signatureHelp:changed: settled=True control_stable=True reproduced=True (56.2s)
+2026-11-18 18:41:34,030 INFO flake replay 3/3 of pyright|r1_history|signatureHelp:changed: settled=True control_stable=True reproduced=True (56.1s)
+2026-11-18 18:41:34,139 INFO campaign_run run ed216fc8dca5 finished: ok, 1 confirmed of 2 candidate(s), 764s

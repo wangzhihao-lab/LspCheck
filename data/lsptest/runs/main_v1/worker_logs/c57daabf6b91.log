@@ -1,0 +1,3 @@
+2026-09-23 16:46:41,060 INFO campaign_run run c57daabf6b91: r5_transforms on rust-analyzer 2026-09-21, FuelLabs/fuels-rs@d9a250a51818 seed 1 settled, targets ['e2e/tests/contracts.rs', 'packages/fuels-core/src/types/wrappers/input.rs', 'packages/fuels-macros/src/setup_program_test/parsing/commands.rs']
+2026-09-23 16:50:30,987 INFO campaign_run run c57daabf6b91: 0 candidate(s) in 230s; confirming
+2026-09-23 16:50:30,988 INFO campaign_run run c57daabf6b91 finished: ok, 0 confirmed of 0 candidate(s), 230s

@@ -1,0 +1,510 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "1862963f2542-v00",
+ "run_id": "1862963f2542",
+ "oracle": "r5_transforms",
+ "server": {
+  "kind": "pyright",
+  "version": "1.1.414"
+ },
+ "project": {
+  "name": "TheAlgorithms/Python@60cea20f8537",
+  "source": "corpus",
+  "ref": "temp/corpus/TheAlgorithms__Python@60cea20f8537",
+  "commit": "60cea20f8537466e90b019f2a8fb2714165d10c5",
+  "language": "python"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 6,
+  "targets": [
+   {
+    "path": "boolean_algebra/multiplexer.py",
+    "positions": [
+     [
+      0,
+      5
+     ],
+     [
+      0,
+      11
+     ],
+     [
+      0,
+      17
+     ],
+     [
+      0,
+      30
+     ],
+     [
+      0,
+      37
+     ],
+     [
+      0,
+      51
+     ],
+     [
+      33,
+      27
+     ],
+     [
+      33,
+      36
+     ],
+     [
+      33,
+      52
+     ],
+     [
+      34,
+      18
+     ],
+     [
+      38,
+      7
+     ],
+     [
+      41,
+      7
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      7
+     ],
+     [
+      0,
+      14
+     ],
+     [
+      0,
+      19
+     ],
+     [
+      0,
+      32
+     ],
+     [
+      0,
+      40
+     ],
+     [
+      0,
+      53
+     ],
+     [
+      33,
+      28
+     ],
+     [
+      33,
+      39
+     ],
+     [
+      33,
+      55
+     ],
+     [
+      34,
+      21
+     ],
+     [
+      38,
+      11
+     ],
+     [
+      41,
+      11
+     ]
+    ],
+    "names": [
+     "mux",
+     "input0",
+     "int",
+     "int",
+     "select",
+     "int",
+     "i",
+     "input0",
+     "select",
+     "input1",
+     "__name__",
+     "doctest"
+    ]
+   },
+   {
+    "path": "maths/special_numbers/armstrong_numbers.py",
+    "positions": [
+     [
+      11,
+      3
+     ],
+     [
+      15,
+      12
+     ],
+     [
+      15,
+      21
+     ],
+     [
+      34,
+      11
+     ],
+     [
+      37,
+      10
+     ],
+     [
+      37,
+      18
+     ],
+     [
+      50,
+      16
+     ],
+     [
+      61,
+      13
+     ],
+     [
+      66,
+      11
+     ],
+     [
+      81,
+      11
+     ],
+     [
+      84,
+      6
+     ],
+     [
+      91,
+      6
+     ]
+    ],
+    "ends": [
+     [
+      11,
+      7
+     ],
+     [
+      15,
+      20
+     ],
+     [
+      15,
+      22
+     ],
+     [
+      34,
+      12
+     ],
+     [
+      37,
+      13
+     ],
+     [
+      37,
+      20
+     ],
+     [
+      50,
+      21
+     ],
+     [
+      61,
+      19
+     ],
+     [
+      66,
+      12
+     ],
+     [
+      81,
+      12
+     ],
+     [
+      84,
+      8
+     ],
+     [
+      91,
+      9
+     ]
+    ],
+    "names": [
+     "PASSING",
+     "armstrong_number",
+     "n",
+     "n",
+     "total",
+     "rem",
+     "isinstance",
+     "digit_total",
+     "n",
+     "n",
+     "main",
+     "print"
+    ]
+   },
+   {
+    "path": "strings/palindrome.py",
+    "positions": [
+     [
+      17,
+      35
+     ],
+     [
+      17,
+      44
+     ],
+     [
+      17,
+      50
+     ],
+     [
+      20,
+      18
+     ],
+     [
+      28,
+      7
+     ],
+     [
+      31,
+      25
+     ],
+     [
+      46,
+      5
+     ],
+     [
+      55,
+      12
+     ],
+     [
+      55,
+      47
+     ],
+     [
+      86,
+      7
+     ],
+     [
+      87,
+      54
+     ],
+     [
+      99,
+      13
+     ]
+    ],
+    "ends": [
+     [
+      17,
+      38
+     ],
+     [
+      17,
+      46
+     ],
+     [
+      17,
+      53
+     ],
+     [
+      20,
+      19
+     ],
+     [
+      28,
+      11
+     ],
+     [
+      31,
+      26
+     ],
+     [
+      46,
+      7
+     ],
+     [
+      55,
+      14
+     ],
+     [
+      55,
+      50
+     ],
+     [
+      86,
+      10
+     ],
+     [
+      87,
+      57
+     ],
+     [
+      99,
+      22
+     ]
+    ],
+    "names": [
+     "value",
+     "key",
+     "value",
+     "s",
+     "start_i",
+     "s",
+     "end",
+     "all",
+     "range",
+     "number",
+     "number",
+     "benchmark_function"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "definition",
+  "path": "boolean_algebra/multiplexer.py",
+  "line": 38,
+  "character": 7,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "boolean_algebra/multiplexer.py"
+  },
+  {
+   "kind": "change",
+   "path": "boolean_algebra/multiplexer.py",
+   "start": [
+    0,
+    0
+   ],
+   "end": [
+    0,
+    0
+   ],
+   "text": "\n\n\n"
+  }
+ ],
+ "case": {
+  "mapped_key": [
+   "definition",
+   "boolean_algebra/multiplexer.py",
+   41,
+   7,
+   ""
+  ],
+  "transform": {
+   "back": {
+    "col": 0,
+    "eof": [],
+    "line": -1,
+    "n": 0,
+    "path": "boolean_algebra/multiplexer.py",
+    "w": 0
+   },
+   "edits": [
+    [
+     0,
+     0,
+     0,
+     0,
+     "\n\n\n"
+    ]
+   ],
+   "kind": "T1",
+   "path": "boolean_algebra/multiplexer.py",
+   "shift": {
+    "col": 0,
+    "eof": [],
+    "line": 0,
+    "n": 3,
+    "path": "boolean_algebra/multiplexer.py",
+    "w": 0
+   }
+  }
+ },
+ "shape": "definition:lost",
+ "signature": "pyright|r5_transforms|definition:lost",
+ "expected": [
+  [
+   "boolean_algebra/multiplexer.py",
+   3,
+   0,
+   3,
+   0
+  ]
+ ],
+ "actual": [],
+ "reproduced": "3/3",
+ "note": "T1 boolean_algebra/multiplexer.py: 1 edit(s), first [0, 0, 0, 0]; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 48s",
+ "violation": {
+  "oracle": "r5_transforms",
+  "server": "pyright-1.1.414",
+  "project": "TheAlgorithms/Python@60cea20f8537",
+  "key": {
+   "method": "definition",
+   "path": "boolean_algebra/multiplexer.py",
+   "line": 38,
+   "character": 7,
+   "extra": ""
+  },
+  "expected": [
+   [
+    "boolean_algebra/multiplexer.py",
+    3,
+    0,
+    3,
+    0
+   ]
+  ],
+  "actual": [],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "boolean_algebra/multiplexer.py"
+   },
+   {
+    "kind": "change",
+    "path": "boolean_algebra/multiplexer.py",
+    "start": [
+     0,
+     0
+    ],
+    "end": [
+     0,
+     0
+    ],
+    "text": "\n\n\n"
+   }
+  ],
+  "detail": "{\"case\": {\"mapped_key\": [\"definition\", \"boolean_algebra/multiplexer.py\", 41, 7, \"\"], \"transform\": {\"back\": {\"col\": 0, \"eof\": [], \"line\": -1, \"n\": 0, \"path\": \"boolean_algebra/multiplexer.py\", \"w\": 0}, \"edits\": [[0, 0, 0, 0, \"\\n\\n\\n\"]], \"kind\": \"T1\", \"path\": \"boolean_algebra/multiplexer.py\", \"shift\": {\"col\": 0, \"eof\": [], \"line\": 0, \"n\": 3, \"path\": \"boolean_algebra/multiplexer.py\", \"w\": 0}}}, \"note\": \"T1 boolean_algebra/multiplexer.py: 1 edit(s), first [0, 0, 0, 0]; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 48s\", \"shape\": \"definition:lost\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "pyright|r5_transforms|definition:lost",
+  "run_id": "1862963f2542"
+ },
+ "replay_logs": [
+  "logs/pyright-1.1.414-1862963f2542-r5-replay-baseline-20260923-170605-f502de.jsonl.gz",
+  "logs/pyright-1.1.414-1862963f2542-r5-replay-case-20260923-170616-bff5a7.jsonl.gz",
+  "logs/pyright-1.1.414-1862963f2542-r5-replay-control-20260923-170610-801997.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

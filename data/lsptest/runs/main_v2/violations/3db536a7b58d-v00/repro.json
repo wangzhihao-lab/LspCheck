@@ -1,0 +1,564 @@
+{
+ "format": 1,
+ "campaign": "main_v2",
+ "vid": "3db536a7b58d-v00",
+ "run_id": "3db536a7b58d",
+ "oracle": "r4_edits",
+ "server": {
+  "kind": "ts6",
+  "version": "6.0.3"
+ },
+ "project": {
+  "name": "DayuanJiang/next-ai-draw-io@58b73ef761d8",
+  "source": "corpus",
+  "ref": "temp/corpus/DayuanJiang__next-ai-draw-io@58b73ef761d8",
+  "commit": "58b73ef761d8a5e5b2afa2c360428d3dea996312",
+  "language": "typescript"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "components/code-block.tsx",
+    "positions": [
+     [
+      2,
+      23
+     ],
+     [
+      9,
+      20
+     ],
+     [
+      11,
+      17
+     ],
+     [
+      12,
+      17
+     ],
+     [
+      15,
+      22
+     ],
+     [
+      26,
+      35
+     ],
+     [
+      33,
+      28
+     ],
+     [
+      33,
+      43
+     ],
+     [
+      39,
+      45
+     ],
+     [
+      39,
+      51
+     ],
+     [
+      41,
+      46
+     ],
+     [
+      50,
+      11
+     ]
+    ],
+    "ends": [
+     [
+      2,
+      26
+     ],
+     [
+      9,
+      25
+     ],
+     [
+      11,
+      22
+     ],
+     [
+      12,
+      22
+     ],
+     [
+      15,
+      25
+     ],
+     [
+      26,
+      43
+     ],
+     [
+      33,
+      31
+     ],
+     [
+      33,
+      44
+     ],
+     [
+      39,
+      48
+     ],
+     [
+      39,
+      53
+     ],
+     [
+      41,
+      48
+     ],
+     [
+      50,
+      13
+     ]
+    ],
+    "names": [
+     "themes",
+     "CodeBlock",
+     "className",
+     "Highlight",
+     "style",
+     "backgroundColor",
+     "tokens",
+     "i",
+     "token",
+     "key",
+     "key",
+     "div"
+    ]
+   },
+   {
+    "path": "components/ui/command.tsx",
+    "positions": [
+     [
+      10,
+      10
+     ],
+     [
+      40,
+      6
+     ],
+     [
+      46,
+      50
+     ],
+     [
+      82,
+      9
+     ],
+     [
+      86,
+      13
+     ],
+     [
+      89,
+      12
+     ],
+     [
+      101,
+      13
+     ],
+     [
+      154,
+      53
+     ],
+     [
+      167,
+      6
+     ],
+     [
+      171,
+      7
+     ],
+     [
+      177,
+      12
+     ],
+     [
+      189,
+      7
+     ]
+    ],
+    "ends": [
+     [
+      10,
+      19
+     ],
+     [
+      40,
+      11
+     ],
+     [
+      46,
+      59
+     ],
+     [
+      82,
+      14
+     ],
+     [
+      86,
+      15
+     ],
+     [
+      89,
+      17
+     ],
+     [
+      101,
+      21
+     ],
+     [
+      154,
+      61
+     ],
+     [
+      167,
+      11
+     ],
+     [
+      171,
+      9
+     ],
+     [
+      177,
+      15
+     ],
+     [
+      189,
+      13
+     ]
+    ],
+    "names": [
+     "DialogDescription",
+     "className",
+     "DialogDescription",
+     "className",
+     "slot",
+     "className",
+     "CommandPrimitive",
+     "querySelectorAll",
+     "className",
+     "span",
+     "props",
+     "CommandItem"
+    ]
+   },
+   {
+    "path": "packages/mcp-server/src/pages.ts",
+    "positions": [
+     [
+      79,
+      12
+     ],
+     [
+      92,
+      50
+     ],
+     [
+      102,
+      12
+     ],
+     [
+      127,
+      9
+     ],
+     [
+      150,
+      67
+     ],
+     [
+      158,
+      33
+     ],
+     [
+      182,
+      21
+     ],
+     [
+      208,
+      34
+     ],
+     [
+      239,
+      12
+     ],
+     [
+      303,
+      26
+     ],
+     [
+      313,
+      51
+     ],
+     [
+      314,
+      35
+     ]
+    ],
+    "ends": [
+     [
+      79,
+      14
+     ],
+     [
+      92,
+      52
+     ],
+     [
+      102,
+      15
+     ],
+     [
+      127,
+      11
+     ],
+     [
+      150,
+      76
+     ],
+     [
+      158,
+      41
+     ],
+     [
+      182,
+      27
+     ],
+     [
+      208,
+      39
+     ],
+     [
+      239,
+      14
+     ],
+     [
+      303,
+      34
+     ],
+     [
+      313,
+      55
+     ],
+     [
+      314,
+      36
+     ]
+    ],
+    "names": [
+     "xml",
+     "host",
+     "inner",
+     "type",
+     "serializeToString",
+     "querySelectorAll",
+     "PageSelector",
+     "page_index",
+     "name",
+     "listPagesFromDoc",
+     "element",
+     "id"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "diagnostics",
+  "path": "components/code-block.tsx",
+  "line": 39,
+  "character": 42,
+  "extra": "M2:quickfix-errors:Infer parameter types from usage"
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "components/code-block.tsx"
+  },
+  {
+   "kind": "change",
+   "path": "components/code-block.tsx",
+   "start": [
+    39,
+    33
+   ],
+   "end": [
+    39,
+    37
+   ],
+   "text": "lie"
+  },
+  {
+   "kind": "change",
+   "path": "components/code-block.tsx",
+   "start": [
+    3,
+    0
+   ],
+   "end": [
+    39,
+    52
+   ],
+   "text": "import { Key } from \"react\"\n\ninterface CodeBlockProps {\n    code: string\n    language?: \"xml\" | \"json\"\n}\n\nexport function CodeBlock({ code, language = \"xml\" }: CodeBlockProps) {\n    return (\n        <div className=\"overflow-hidden w-full\">\n            <Highlight theme={themes.github} code={code} language={language}>\n                {({\n                    className: _className,\n                    style,\n                    tokens,\n                    getLineProps,\n                    getTokenProps,\n                }) => (\n                    <pre\n                        className=\"text-[11px] leading-relaxed overflow-x-auto overflow-y-auto max-h-48 scrollbar-thin break-all\"\n                        style={{\n                            ...style,\n                            fontFamily:\n                                \"var(--font-mono), ui-monospace, monospace\",\n                            backgroundColor: \"transparent\",\n                            margin: 0,\n                            padding: 0,\n                            wordBreak: \"break-all\",\n                            whiteSpace: \"pre-wrap\",\n                        }}\n                    >\n                        {tokens.map((line, i) => (\n                            <div\n                                key={i}\n                                {...getLineProps({ line })}\n                                style={{ wordBreak: \"break-all\" }}\n                            >\n                                {lie.map((token: any, key: Key | null | undefined"
+  }
+ ],
+ "case": {
+  "action_kind": "quickfix",
+  "base_errors": 0,
+  "check": "errors",
+  "diag": {
+   "code": 7006,
+   "message": "Parameter 'token' implicitly has an 'any' type.",
+   "range": {
+    "end": {
+     "character": 47,
+     "line": 39
+    },
+    "start": {
+     "character": 42,
+     "line": 39
+    }
+   },
+   "severity": 1
+  },
+  "fix_introduced_errors": [],
+  "fix_ops": [
+   {
+    "end": [
+     39,
+     52
+    ],
+    "kind": "change",
+    "path": "components/code-block.tsx",
+    "start": [
+     3,
+     0
+    ],
+    "text": "import { Key } from \"react\"\n\ninterface CodeBlockProps {\n    code: string\n    language?: \"xml\" | \"json\"\n}\n\nexport function CodeBlock({ code, language = \"xml\" }: CodeBlockProps) {\n    return (\n        <div className=\"overflow-hidden w-full\">\n            <Highlight theme={themes.github} code={code} language={language}>\n                {({\n                    className: _className,\n                    style,\n                    tokens,\n                    getLineProps,\n                    getTokenProps,\n                }) => (\n                    <pre\n                        className=\"text-[11px] leading-relaxed overflow-x-auto overflow-y-auto max-h-48 scrollbar-thin break-all\"\n                        style={{\n                            ...style,\n                            fontFamily:\n                                \"var(--font-mono), ui-monospace, monospace\",\n                            backgroundColor: \"transparent\",\n                            margin: 0,\n                            padding: 0,\n                            wordBreak: \"break-all\",\n                            whiteSpace: \"pre-wrap\",\n                        }}\n                    >\n                        {tokens.map((line, i) => (\n                            <div\n                                key={i}\n                                {...getLineProps({ line })}\n                                style={{ wordBreak: \"break-all\" }}\n                            >\n                                {lie.map((token: any, key: Key | null | undefined"
+   }
+  ],
+  "kind": "mutation",
+  "mutation": {
+   "end": [
+    39,
+    37
+   ],
+   "id": "M2",
+   "offsets": [
+    1521,
+    1525
+   ],
+   "sha": "fc66f726c3603e97",
+   "start": [
+    39,
+    33
+   ],
+   "text": "lie",
+   "what": "misspell 'line' as 'lie' (drop a middle character)"
+  },
+  "n_fix_ops": 1,
+  "path": "components/code-block.tsx",
+  "post_errors": 1,
+  "title": "Infer parameter types from usage",
+  "via": "edit"
+ },
+ "shape": "diagnostics:extra:2552",
+ "signature": "ts6|r4_edits|diagnostics:extra:2552",
+ "expected": [],
+ "actual": [
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "2552",
+   "typescript",
+   "Cannot find name 'lie'. Did you mean 'line'?"
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "quick fix 'Infer parameter types from usage' for 7006 at components/code-block.tsx:40:43 raises the error count in the edited files from 0 to 1 (seeded by M2: misspell 'line' as 'lie' (drop a middle character); errors before the mutation 0, after the fix 1); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 426s",
+ "violation": {
+  "oracle": "r4_edits",
+  "server": "ts6-6.0.3",
+  "project": "DayuanJiang/next-ai-draw-io@58b73ef761d8",
+  "key": {
+   "method": "diagnostics",
+   "path": "components/code-block.tsx",
+   "line": 39,
+   "character": 42,
+   "extra": "M2:quickfix-errors:Infer parameter types from usage"
+  },
+  "expected": [],
+  "actual": [
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2552",
+    "typescript",
+    "Cannot find name 'lie'. Did you mean 'line'?"
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "components/code-block.tsx"
+   },
+   {
+    "kind": "change",
+    "path": "components/code-block.tsx",
+    "start": [
+     39,
+     33
+    ],
+    "end": [
+     39,
+     37
+    ],
+    "text": "lie"
+   },
+   {
+    "kind": "change",
+    "path": "components/code-block.tsx",
+    "start": [
+     3,
+     0
+    ],
+    "end": [
+     39,
+     52
+    ],
+    "text": "import { Key } from \"react\"\n\ninterface CodeBlockProps {\n    code: string\n    language?: \"xml\" | \"json\"\n}\n\nexport function CodeBlock({ code, language = \"xml\" }: CodeBlockProps) {\n    return (\n        <div className=\"overflow-hidden w-full\">\n            <Highlight theme={themes.github} code={code} language={language}>\n                {({\n                    className: _className,\n                    style,\n                    tokens,\n                    getLineProps,\n                    getTokenProps,\n                }) => (\n                    <pre\n                        className=\"text-[11px] leading-relaxed overflow-x-auto overflow-y-auto max-h-48 scrollbar-thin break-all\"\n                        style={{\n                            ...style,\n                            fontFamily:\n                                \"var(--font-mono), ui-monospace, monospace\",\n                            backgroundColor: \"transparent\",\n                            margin: 0,\n                            padding: 0,\n                            wordBreak: \"break-all\",\n                            whiteSpace: \"pre-wrap\",\n                        }}\n                    >\n                        {tokens.map((line, i) => (\n                            <div\n                                key={i}\n                                {...getLineProps({ line })}\n                                style={{ wordBreak: \"break-all\" }}\n                            >\n                                {lie.map((token: any, key: Key | null | undefined"
+   }
+  ],
+  "detail": "{\"case\": {\"action_kind\": \"quickfix\", \"base_errors\": 0, \"check\": \"errors\", \"diag\": {\"code\": 7006, \"message\": \"Parameter 'token' implicitly has an 'any' type.\", \"range\": {\"end\": {\"character\": 47, \"line\": 39}, \"start\": {\"character\": 42, \"line\": 39}}, \"severity\": 1}, \"fix_introduced_errors\": [], \"fix_ops\": [{\"end\": [39, 52], \"kind\": \"change\", \"path\": \"components/code-block.tsx\", \"start\": [3, 0], \"text\": \"import { Key } from \\\"react\\\"\\n\\ninterface CodeBlockProps {\\n    code: string\\n    language?: \\\"xml\\\" | \\\"json\\\"\\n}\\n\\nexport function CodeBlock({ code, language = \\\"xml\\\" }: CodeBlockProps) {\\n    return (\\n        <div className=\\\"overflow-hidden w-full\\\">\\n            <Highlight theme={themes.github} code={code} language={language}>\\n                {({\\n                    className: _className,\\n                    style,\\n                    tokens,\\n                    getLineProps,\\n                    getTokenProps,\\n                }) => (\\n                    <pre\\n                        className=\\\"text-[11px] leading-relaxed overflow-x-auto overflow-y-auto max-h-48 scrollbar-thin break-all\\\"\\n                        style={{\\n                            ...style,\\n                            fontFamily:\\n                                \\\"var(--font-mono), ui-monospace, monospace\\\",\\n                            backgroundColor: \\\"transparent\\\",\\n                            margin: 0,\\n                            padding: 0,\\n                            wordBreak: \\\"break-all\\\",\\n                            whiteSpace: \\\"pre-wrap\\\",\\n                        }}\\n                    >\\n                        {tokens.map((line, i) => (\\n                            <div\\n                                key={i}\\n                                {...getLineProps({ line })}\\n                                style={{ wordBreak: \\\"break-all\\\" }}\\n                            >\\n                                {lie.map((token: any, key: Key | null | undefined\"}], \"kind\": \"mutation\", \"mutation\": {\"end\": [39, 37], \"id\": \"M2\", \"offsets\": [1521, 1525], \"sha\": \"fc66f726c3603e97\", \"start\": [39, 33], \"text\": \"lie\", \"what\": \"misspell 'line' as 'lie' (drop a middle character)\"}, \"n_fix_ops\": 1, \"path\": \"components/code-block.tsx\", \"post_errors\": 1, \"title\": \"Infer parameter types from usage\", \"via\": \"edit\"}, \"note\": \"quick fix 'Infer parameter types from usage' for 7006 at components/code-block.tsx:40:43 raises the error count in the edited files from 0 to 1 (seeded by M2: misspell 'line' as 'lie' (drop a middle character); errors before the mutation 0, after the fix 1); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 426s\", \"shape\": \"diagnostics:extra:2552\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "ts6|r4_edits|diagnostics:extra:2552",
+  "run_id": "3db536a7b58d"
+ },
+ "replay_logs": [
+  "logs/ts6-6.0.3-3db536a7b58d-r4-replay-baseline-20261118-190249-dd5579.jsonl.gz",
+  "logs/ts6-6.0.3-3db536a7b58d-r4-replay-case-20261118-190209-41039c.jsonl.gz",
+  "logs/ts6-6.0.3-3db536a7b58d-r4-replay-control-20261118-190319-84e493.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

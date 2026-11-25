@@ -1,0 +1,9 @@
+2026-11-18 08:41:08,711 INFO campaign_run run 1a87471d103c: r1_history on gopls v0.23.0, evanw/esbuild@f6058f8364fe seed 1 race0, targets ['internal/compat/js_table.go', 'internal/fs/fs_real.go', 'internal/js_ast/js_ast_helpers.go']
+2026-11-18 08:43:22,901 INFO campaign_run run 1a87471d103c: 3 candidate(s) in 134s; confirming
+2026-11-18 08:43:39,934 INFO flake replay 1/3 of gopls|r1_history|completion:changed: settled=True control_stable=True reproduced=False (17.0s)
+2026-11-18 08:43:54,925 INFO flake replay 2/3 of gopls|r1_history|completion:changed: settled=True control_stable=True reproduced=False (15.0s)
+2026-11-18 08:44:09,422 INFO flake replay 3/3 of gopls|r1_history|completion:changed: settled=True control_stable=True reproduced=False (14.5s)
+2026-11-18 08:44:25,041 INFO flake replay 1/3 of gopls|r1_history|completion:missing: settled=True control_stable=True reproduced=False (15.6s)
+2026-11-18 08:44:40,398 INFO flake replay 2/3 of gopls|r1_history|completion:missing: settled=True control_stable=True reproduced=False (15.3s)
+2026-11-18 08:44:54,303 INFO flake replay 3/3 of gopls|r1_history|completion:missing: settled=True control_stable=True reproduced=False (13.9s)
+2026-11-18 08:44:54,306 INFO campaign_run run 1a87471d103c finished: ok, 0 confirmed of 3 candidate(s), 226s

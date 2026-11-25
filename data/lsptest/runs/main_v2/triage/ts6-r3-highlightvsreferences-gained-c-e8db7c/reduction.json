@@ -1,0 +1,34 @@
+{
+ "vid": "02943665191c-v00",
+ "ops_before": 0,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 0,
+ "cache_hits": 0,
+ "reduce_seconds": 0.0,
+ "budget_exhausted": false,
+ "probe_log": [],
+ "logs": [
+  "ts6-6.0.3-tre8db7c-r3-replay-baseline-20261119-023316-895ec7.jsonl.gz",
+  "ts6-6.0.3-tre8db7c-r3-replay-control-20261119-023325-3fc794.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [],
+  "actual": [
+   [
+    79,
+    9,
+    79,
+    14
+   ],
+   [
+    87,
+    10,
+    87,
+    15
+   ]
+  ]
+ },
+ "ops_after": 0,
+ "total_seconds": 71.9
+}

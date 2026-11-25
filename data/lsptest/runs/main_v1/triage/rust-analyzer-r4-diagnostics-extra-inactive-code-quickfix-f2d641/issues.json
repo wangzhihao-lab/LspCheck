@@ -1,0 +1,92 @@
+{
+ "queries": [
+  "\"quick fix\" in:title repo:rust-lang/rust-analyzer is:issue",
+  "diagnostics extra repo:rust-lang/rust-analyzer is:issue",
+  "diagnostics \"quick fix\" repo:rust-lang/rust-analyzer is:issue",
+  "diagnostics \"wrong edit\" repo:rust-lang/rust-analyzer is:issue"
+ ],
+ "matches": [
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 16642,
+   "title": "When using code actions for quick fix, multiple possible options were not split",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/16642",
+   "state": "open",
+   "created": "2024-02-23",
+   "comments": 6,
+   "query": "\"quick fix\" in:title repo:rust-lang/rust-analyzer is:issue"
+  },
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 15733,
+   "title": "Import quick fix offers duplicate options",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/15733",
+   "state": "open",
+   "created": "2023-10-09",
+   "comments": 0,
+   "query": "\"quick fix\" in:title repo:rust-lang/rust-analyzer is:issue"
+  },
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 11039,
+   "title": "Quick fix to declare an unresolved lifetime",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/11039",
+   "state": "open",
+   "created": "2021-12-17",
+   "comments": 1,
+   "query": "\"quick fix\" in:title repo:rust-lang/rust-analyzer is:issue"
+  },
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 14373,
+   "title": "Consider present type aliases when using quick fixes",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/14373",
+   "state": "open",
+   "created": "2023-03-18",
+   "comments": 2,
+   "query": "\"quick fix\" in:title repo:rust-lang/rust-analyzer is:issue"
+  },
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 14189,
+   "title": "Quick Fix options for implementing individual default members",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/14189",
+   "state": "open",
+   "created": "2023-02-22",
+   "comments": 0,
+   "query": "\"quick fix\" in:title repo:rust-lang/rust-analyzer is:issue"
+  },
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 23193,
+   "title": "FP `expected &&&u32, found &&&&&&&&&&&&&&&&&&&&&&&&&i32`",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/23193",
+   "state": "open",
+   "created": "2026-08-19",
+   "comments": 5,
+   "query": "diagnostics extra repo:rust-lang/rust-analyzer is:issue"
+  },
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 13317,
+   "title": "Runnables: Extra Args sets Args instead of Extra Args",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/13317",
+   "state": "open",
+   "created": "2022-09-30",
+   "comments": 0,
+   "query": "diagnostics extra repo:rust-lang/rust-analyzer is:issue"
+  },
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 19491,
+   "title": "Too many arguments generates two diagnostics",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/19491",
+   "state": "open",
+   "created": "2025-04-01",
+   "comments": 13,
+   "query": "diagnostics extra repo:rust-lang/rust-analyzer is:issue"
+  }
+ ],
+ "notes": [],
+ "authenticated": true
+}

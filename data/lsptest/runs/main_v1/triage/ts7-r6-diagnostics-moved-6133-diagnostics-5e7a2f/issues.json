@@ -1,0 +1,60 @@
+{
+ "queries": [
+  "diagnostics \"wrong range\" repo:microsoft/typescript-go is:issue",
+  "diagnostics \"TypeScript 6\" repo:microsoft/typescript-go is:issue"
+ ],
+ "matches": [
+  {
+   "repo": "microsoft/typescript-go",
+   "number": 4745,
+   "title": "Native API syntactic diagnostics omit start and length",
+   "url": "https://github.com/microsoft/typescript-go/issues/4745",
+   "state": "closed",
+   "created": "2026-07-26",
+   "comments": 2,
+   "query": "diagnostics \"TypeScript 6\" repo:microsoft/typescript-go is:issue"
+  },
+  {
+   "repo": "microsoft/typescript-go",
+   "number": 4827,
+   "title": "Generic type argument inferred from the wrong inference slot (cyclic union-of-intersections); larger programs show scheduling-dependent diagnostics",
+   "url": "https://github.com/microsoft/typescript-go/issues/4827",
+   "state": "closed",
+   "created": "2026-08-04",
+   "comments": 1,
+   "query": "diagnostics \"TypeScript 6\" repo:microsoft/typescript-go is:issue"
+  },
+  {
+   "repo": "microsoft/typescript-go",
+   "number": 4719,
+   "title": "tsgo reports type errors in external-library (node_modules) source files that tsc suppresses",
+   "url": "https://github.com/microsoft/typescript-go/issues/4719",
+   "state": "closed",
+   "created": "2026-07-23",
+   "comments": 2,
+   "query": "diagnostics \"TypeScript 6\" repo:microsoft/typescript-go is:issue"
+  },
+  {
+   "repo": "microsoft/typescript-go",
+   "number": 4129,
+   "title": "tsgo reports compiler-option diagnostics even when syntactic errors exist",
+   "url": "https://github.com/microsoft/typescript-go/issues/4129",
+   "state": "closed",
+   "created": "2026-05-31",
+   "comments": 0,
+   "query": "diagnostics \"TypeScript 6\" repo:microsoft/typescript-go is:issue"
+  },
+  {
+   "repo": "microsoft/typescript-go",
+   "number": 4373,
+   "title": "Project-reference redirect fails for directory (`index.ts`) subpaths of symlinked packages",
+   "url": "https://github.com/microsoft/typescript-go/issues/4373",
+   "state": "closed",
+   "created": "2026-06-19",
+   "comments": 0,
+   "query": "diagnostics \"TypeScript 6\" repo:microsoft/typescript-go is:issue"
+  }
+ ],
+ "notes": [],
+ "authenticated": true
+}

@@ -1,0 +1,453 @@
+{
+ "format": 1,
+ "campaign": "main_v2",
+ "vid": "a6ea07767325-v00",
+ "run_id": "a6ea07767325",
+ "oracle": "r3_routes",
+ "server": {
+  "kind": "pyright",
+  "version": "1.1.414"
+ },
+ "project": {
+  "name": "ultralytics/yolov5@402e17ddf820",
+  "source": "corpus",
+  "ref": "temp/corpus/ultralytics__yolov5@402e17ddf820",
+  "commit": "402e17ddf820996f51a191cbb798376e1144f069",
+  "language": "python"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "detect.py",
+    "positions": [
+     [
+      82,
+      8
+     ],
+     [
+      171,
+      71
+     ],
+     [
+      192,
+      61
+     ],
+     [
+      255,
+      29
+     ],
+     [
+      267,
+      58
+     ],
+     [
+      270,
+      71
+     ],
+     [
+      308,
+      41
+     ],
+     [
+      371,
+      17
+     ],
+     [
+      372,
+      7
+     ],
+     [
+      389,
+      17
+     ],
+     [
+      393,
+      17
+     ],
+     [
+      438,
+      10
+     ]
+    ],
+    "ends": [
+     [
+      82,
+      12
+     ],
+     [
+      171,
+      73
+     ],
+     [
+      192,
+      66
+     ],
+     [
+      255,
+      31
+     ],
+     [
+      267,
+      60
+     ],
+     [
+      270,
+      72
+     ],
+     [
+      308,
+      43
+     ],
+     [
+      371,
+      23
+     ],
+     [
+      372,
+      10
+     ],
+     [
+      389,
+      23
+     ],
+     [
+      393,
+      23
+     ],
+     [
+      438,
+      12
+     ]
+    ],
+    "names": [
+     "save_csv",
+     "data",
+     "prediction",
+     "conf",
+     "xyxy",
+     "gn",
+     "cv2",
+     "add_argument",
+     "parser",
+     "add_argument",
+     "add_argument",
+     "opt"
+    ]
+   },
+   {
+    "path": "utils/segment/dataloaders.py",
+    "positions": [
+     [
+      55,
+      20
+     ],
+     [
+      69,
+      8
+     ],
+     [
+      116,
+      18
+     ],
+     [
+      117,
+      18
+     ],
+     [
+      225,
+      12
+     ],
+     [
+      248,
+      32
+     ],
+     [
+      252,
+      66
+     ],
+     [
+      253,
+      76
+     ],
+     [
+      261,
+      51
+     ],
+     [
+      288,
+      26
+     ],
+     [
+      296,
+      49
+     ],
+     [
+      300,
+      43
+     ]
+    ],
+    "ends": [
+     [
+      55,
+      22
+     ],
+     [
+      69,
+      13
+     ],
+     [
+      116,
+      25
+     ],
+     [
+      117,
+      24
+     ],
+     [
+      225,
+      13
+     ],
+     [
+      248,
+      33
+     ],
+     [
+      252,
+      67
+     ],
+     [
+      253,
+      77
+     ],
+     [
+      261,
+      53
+     ],
+     [
+      288,
+      28
+     ],
+     [
+      296,
+      52
+     ],
+     [
+      300,
+      45
+     ]
+    ],
+    "names": [
+     "int",
+     "generator",
+     "image_weights",
+     "cache_images",
+     "nl",
+     "s",
+     "w",
+     "h",
+     "x1b",
+     "self",
+     "batch",
+     "cat"
+    ]
+   },
+   {
+    "path": "utils/segment/general.py",
+    "positions": [
+     [
+      16,
+      17
+     ],
+     [
+      17,
+      35
+     ],
+     [
+      24,
+      10
+     ],
+     [
+      39,
+      6
+     ],
+     [
+      42,
+      13
+     ],
+     [
+      44,
+      33
+     ],
+     [
+      68,
+      40
+     ],
+     [
+      69,
+      34
+     ],
+     [
+      71,
+      35
+     ],
+     [
+      93,
+      9
+     ],
+     [
+      104,
+      13
+     ],
+     [
+      111,
+      10
+     ]
+    ],
+    "ends": [
+     [
+      16,
+      20
+     ],
+     [
+      17,
+      38
+     ],
+     [
+      24,
+      16
+     ],
+     [
+      39,
+      9
+     ],
+     [
+      42,
+      22
+     ],
+     [
+      44,
+      34
+     ],
+     [
+      68,
+      41
+     ],
+     [
+      69,
+      36
+     ],
+     [
+      71,
+      37
+     ],
+     [
+      93,
+      11
+     ],
+     [
+      104,
+      15
+     ],
+     [
+      111,
+      13
+     ]
+    ],
+    "names": [
+     "masks",
+     "boxes",
+     "process_mask",
+     "masks",
+     "downsampled_bboxes",
+     "mh",
+     "mh",
+     "pad",
+     "left",
+     "pad",
+     "cv2",
+     "masks"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "highlightVsReferences",
+  "path": "utils/segment/dataloaders.py",
+  "line": 300,
+  "character": 43,
+  "extra": ""
+ },
+ "ops": [],
+ "case": {
+  "path": "utils/segment/dataloaders.py",
+  "pos": [
+   300,
+   43
+  ],
+  "sub": "c"
+ },
+ "shape": "highlightVsReferences:gained",
+ "signature": "pyright|r3_routes|highlightVsReferences:gained",
+ "expected": [],
+ "actual": [
+  [
+   297,
+   30,
+   297,
+   33
+  ],
+  [
+   300,
+   42,
+   300,
+   45
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "0 references; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 43s",
+ "violation": {
+  "oracle": "r3_routes",
+  "server": "pyright-1.1.414",
+  "project": "ultralytics/yolov5@402e17ddf820",
+  "key": {
+   "method": "highlightVsReferences",
+   "path": "utils/segment/dataloaders.py",
+   "line": 300,
+   "character": 43,
+   "extra": ""
+  },
+  "expected": [],
+  "actual": [
+   [
+    297,
+    30,
+    297,
+    33
+   ],
+   [
+    300,
+    42,
+    300,
+    45
+   ]
+  ],
+  "ops": [],
+  "detail": "{\"case\": {\"path\": \"utils/segment/dataloaders.py\", \"pos\": [300, 43], \"sub\": \"c\"}, \"note\": \"0 references; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 43s\", \"shape\": \"highlightVsReferences:gained\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "pyright|r3_routes|highlightVsReferences:gained",
+  "run_id": "a6ea07767325"
+ },
+ "replay_logs": [
+  "logs/pyright-1.1.414-a6ea07767325-r3-replay-baseline-20261118-033102-f75d59.jsonl.gz",
+  "logs/pyright-1.1.414-a6ea07767325-r3-replay-control-20261118-033112-64fa35.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

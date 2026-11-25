@@ -1,0 +1,15 @@
+2026-09-24 21:20:24,788 INFO campaign_run run 9750d516f636: r4_edits on rust-analyzer 2022-07-18, rust-analyzer-11897 seed 1 settled, targets ['src/main.rs']
+2026-09-24 21:23:29,195 INFO campaign_run run 9750d516f636: 9 candidate(s) in 184s; confirming
+2026-09-24 21:24:21,232 INFO flake replay 1/3 of rust-analyzer|r4_edits|diagnostics:extra:?: settled=True control_stable=True reproduced=True (52.0s)
+2026-09-24 21:25:12,066 INFO flake replay 2/3 of rust-analyzer|r4_edits|diagnostics:extra:?: settled=True control_stable=True reproduced=True (50.8s)
+2026-09-24 21:26:01,151 INFO flake replay 3/3 of rust-analyzer|r4_edits|diagnostics:extra:?: settled=True control_stable=True reproduced=True (49.1s)
+2026-09-24 21:26:46,907 INFO flake replay 1/3 of rust-analyzer|r4_edits|diagnostics:extra:E0610: settled=True control_stable=True reproduced=True (45.8s)
+2026-09-24 21:27:36,591 INFO flake replay 2/3 of rust-analyzer|r4_edits|diagnostics:extra:E0610: settled=True control_stable=True reproduced=True (49.7s)
+2026-09-24 21:28:28,585 INFO flake replay 3/3 of rust-analyzer|r4_edits|diagnostics:extra:E0610: settled=True control_stable=True reproduced=True (52.0s)
+2026-09-24 21:29:43,113 INFO flake replay 1/3 of rust-analyzer|r4_edits|diagnostics:changed:?,E0610: settled=True control_stable=True reproduced=False (74.5s)
+2026-09-24 21:30:56,355 INFO flake replay 2/3 of rust-analyzer|r4_edits|diagnostics:changed:?,E0610: settled=True control_stable=False reproduced=False (73.2s)
+2026-09-24 21:32:07,131 INFO flake replay 3/3 of rust-analyzer|r4_edits|diagnostics:changed:?,E0610: settled=True control_stable=True reproduced=False (70.8s)
+2026-09-24 21:32:54,541 INFO flake replay 1/3 of rust-analyzer|r4_edits|syntax:changed: settled=True control_stable=True reproduced=True (47.4s)
+2026-09-24 21:33:45,110 INFO flake replay 2/3 of rust-analyzer|r4_edits|syntax:changed: settled=True control_stable=False reproduced=True (50.6s)
+2026-09-24 21:34:35,960 INFO flake replay 3/3 of rust-analyzer|r4_edits|syntax:changed: settled=True control_stable=True reproduced=True (50.9s)
+2026-09-24 21:34:35,983 INFO campaign_run run 9750d516f636 finished: ok, 2 confirmed of 9 candidate(s), 851s

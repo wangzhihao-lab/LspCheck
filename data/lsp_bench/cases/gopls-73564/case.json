@@ -1,0 +1,75 @@
+{
+ "schema": 1,
+ "id": "gopls-73564",
+ "meta": {
+  "server": "gopls",
+  "kind": "gopls",
+  "number": 73564,
+  "url": "https://github.com/golang/go/issues/73564",
+  "title": "x/tools/gopls/internal/analysis/modernize: slicescontains offers fix that elides an implicit interface conversion",
+  "oracle_class": "R4",
+  "subtype": "quickfix",
+  "fix_ref": "golang/tools@51dcb32d9b95 (gopls/internal/analysis/modernize: add checks to prevent invalid fixes from slicesContains; CL 669355)",
+  "fix_shas": [
+   "51dcb32d9b958687a0361730dd5aa3c291419f00"
+  ],
+  "pre_version": "v0.18.1",
+  "post_version": "v0.19.0",
+  "pre_build": "v0.18.1",
+  "post_build": "v0.19.0",
+  "toolchain": "go1.24.4",
+  "build_notes": "Both built and run with go1.24.4 (golang.org/dl, under temp/lsp_servers/go-sdks; toolchain.json): the local go1.27 cannot build v0.18.1, go1.24.0 (current when v0.18.1 was tagged, 2025-02-24) cannot build v0.19.0 (its go.mod requires go >= 1.24.2), and go1.24.4 was the current Go release when v0.19.0 was tagged (2025-06-10). The fix merged 2025-05-08.",
+  "candidate_rank": 64,
+  "effort_minutes": 4,
+  "notes": "The slicescontains pass rewrote a loop that calls cb(fruit), with cb func(FruitInfo) bool and fruit of the concrete type Fruit, to slices.ContainsFunc(fruits, cb), which does not type-check (the implicit conversion to the interface is lost). The fix rejects an interface parameter with a non-interface element (the check later generalized for golang/go#74938)."
+ },
+ "language": "go",
+ "settings": {},
+ "settings_note": "The modernize analyzer is on by default in both builds; the reporter ran the modernize command, which runs the same analyzer.",
+ "session": {
+  "settle_timeout_s": 180
+ },
+ "files": [
+  {
+   "path": "main.go",
+   "provenance": "issue",
+   "source": "issue body, 'What did you do?' code block",
+   "note": ""
+  },
+  {
+   "path": "go.mod",
+   "provenance": "scaffold",
+   "source": "",
+   "note": "a module around the file (the reporter used go 1.24.2 and gives no go.mod); go 1.24 (slices needs go1.21)"
+  }
+ ],
+ "repro": {
+  "attempt": 1,
+  "timing": "settled",
+  "steps": "Open main.go. The slicescontains pass reports the loop in IterateFruits ('Loop can be simplified using slices.ContainsFunc'). Apply its fix ('Replace loop by call to slices.ContainsFunc'). Reported: 'in call to slices.ContainsFunc, S (type []Fruit) does not satisfy ~[]E'. Probe: a fresh session on the edited text must report no error the original did not have; no fix offered means absent (the fix stops offering it).",
+  "ops": [
+   {
+    "kind": "open",
+    "path": "main.go"
+   }
+  ],
+  "probe": {
+   "type": "edit_leaves_diagnostic",
+   "params": {
+    "edit": {
+     "via": "code_action",
+     "path": "main.go",
+     "diagnostic": {
+      "message_re": "slices\\.ContainsFunc"
+     },
+     "title_re": "slices\\.ContainsFunc",
+     "missing": "absent"
+    },
+    "target": {
+     "message_re": "Loop can be simplified using slices\\.ContainsFunc"
+    }
+   }
+  }
+ },
+ "attempts": []
+}

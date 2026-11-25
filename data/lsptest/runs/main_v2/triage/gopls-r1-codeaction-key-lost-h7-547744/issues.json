@@ -1,0 +1,92 @@
+{
+ "queries": [
+  "\"after edit\" in:title repo:golang/go is:issue label:gopls",
+  "\"code action\" missing repo:golang/go is:issue label:gopls",
+  "\"code action\" \"after edit\" repo:golang/go is:issue label:gopls",
+  "\"code action\" stale repo:golang/go is:issue label:gopls"
+ ],
+ "matches": [
+  {
+   "repo": "golang/go",
+   "number": 81812,
+   "title": "x/tools/gopls: codeAction/resolve after a document change computes the edit at the old position",
+   "url": "https://github.com/golang/go/issues/81812",
+   "state": "open",
+   "created": "2026-09-28",
+   "comments": 4,
+   "query": "\"after edit\" in:title repo:golang/go is:issue label:gopls"
+  },
+  {
+   "repo": "golang/go",
+   "number": 70604,
+   "title": "x/tools/gopls: marker test should ensure type checked file remain type checked after code edits",
+   "url": "https://github.com/golang/go/issues/70604",
+   "state": "closed",
+   "created": "2024-11-27",
+   "comments": 1,
+   "query": "\"after edit\" in:title repo:golang/go is:issue label:gopls"
+  },
+  {
+   "repo": "golang/go",
+   "number": 59587,
+   "title": "x/tools/gopls: diagnostics only clear after diagnosticsDelay for edited files",
+   "url": "https://github.com/golang/go/issues/59587",
+   "state": "closed",
+   "created": "2023-04-12",
+   "comments": 1,
+   "query": "\"after edit\" in:title repo:golang/go is:issue label:gopls"
+  },
+  {
+   "repo": "golang/go",
+   "number": 51325,
+   "title": "x/tools/gopls: push diagnostics after `go mod edit -go=1.18`",
+   "url": "https://github.com/golang/go/issues/51325",
+   "state": "closed",
+   "created": "2022-02-22",
+   "comments": 1,
+   "query": "\"after edit\" in:title repo:golang/go is:issue label:gopls"
+  },
+  {
+   "repo": "golang/go",
+   "number": 33989,
+   "title": "x/tools/gopls: Context cancelled errors after some editing",
+   "url": "https://github.com/golang/go/issues/33989",
+   "state": "closed",
+   "created": "2019-08-30",
+   "comments": 4,
+   "query": "\"after edit\" in:title repo:golang/go is:issue label:gopls"
+  },
+  {
+   "repo": "golang/go",
+   "number": 74644,
+   "title": "x/tools/gopls: Misguided missing method code action",
+   "url": "https://github.com/golang/go/issues/74644",
+   "state": "open",
+   "created": "2025-07-16",
+   "comments": 5,
+   "query": "\"code action\" missing repo:golang/go is:issue label:gopls"
+  },
+  {
+   "repo": "golang/go",
+   "number": 82624,
+   "title": "x/tools/gopls: preserve interface method order when generating missing methods",
+   "url": "https://github.com/golang/go/issues/82624",
+   "state": "open",
+   "created": "2026-10-27",
+   "comments": 3,
+   "query": "\"code action\" missing repo:golang/go is:issue label:gopls"
+  },
+  {
+   "repo": "golang/go",
+   "number": 39805,
+   "title": "x/tools/gopls: convert 'gofumpt' from formatter to code action provider",
+   "url": "https://github.com/golang/go/issues/39805",
+   "state": "open",
+   "created": "2020-06-24",
+   "comments": 5,
+   "query": "\"code action\" missing repo:golang/go is:issue label:gopls"
+  }
+ ],
+ "notes": [],
+ "authenticated": true
+}

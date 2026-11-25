@@ -1,0 +1,104 @@
+{
+ "schema": 1,
+ "id": "tsserver-52792",
+ "meta": {
+  "server": "tsserver",
+  "kind": "tsserver",
+  "number": 52792,
+  "url": "https://github.com/microsoft/TypeScript/issues/52792",
+  "title": "Opening a file causes subsequent completion failures",
+  "oracle_class": "R1",
+  "subtype": "open-close",
+  "fix_ref": "microsoft/TypeScript#53001 (ScriptInfo versioning improvements, 1da6d87a05, 2023-03-01; first stable release 5.1.3); #53472 (3a3146e25f) only adds the regression tests and says the crash was fully fixed by #53001",
+  "fix_shas": [
+   "1da6d87a053746901a7eca6395a4bd15190b13c4",
+   "3a3146e25f7dfa71acbe5b8b5989e6343bbfd77d"
+  ],
+  "pre_version": "5.0.4",
+  "post_version": "5.1.3",
+  "pre_build": "5.0.4+tsls3.3.2",
+  "post_build": "5.1.3+tsls3.3.2",
+  "wrapper": "typescript-language-server@3.3.2",
+  "build_notes": "npm typescript@5.0.4 and typescript@5.1.3, both behind typescript-language-server@3.3.2 (the latest wrapper release before 5.1.3); the wrapper is started with the pinned tsserver.js and the reported TypeScript version is checked on every session. git tag --contains 1da6d87a05: first in v5.1-beta / v5.1.3, not in any 5.0.x.",
+  "candidate_rank": 3,
+  "effort_minutes": 12,
+  "notes": "Opening utils.ts swaps its script-info backing store; the next program update re-parses it, so the cached export-info map holds a stale module symbol and the class-member completion with an auto-import fails with 'Debug Failure' in addImportFromExportedSymbol."
+ },
+ "language": "typescript",
+ "settings": {},
+ "settings_note": "The issue asks for completions with auto-imports and class member completions; both are on in the tsserver preferences of the kind (servers_bench.TSSERVER_PREFERENCES, the wrapper defaults).",
+ "session": {
+  "settle_timeout_s": 120
+ },
+ "files": [
+  {
+   "path": "classes.ts",
+   "provenance": "issue",
+   "source": "issue body, first code block (// @filename: classes.ts)",
+   "note": "split at the fourslash // @filename markers; the /**/ marker is kept (a comment)"
+  },
+  {
+   "path": "utils.ts",
+   "provenance": "issue",
+   "source": "issue body, first code block (// @filename: utils.ts)",
+   "note": "split at the fourslash // @filename markers"
+  },
+  {
+   "path": "tsconfig.json",
+   "provenance": "issue",
+   "source": "issue body, json5 code block (// @filename: tsconfig.json)",
+   "note": "the marker line removed"
+  }
+ ],
+ "repro": {
+  "attempt": 1,
+  "timing": "settled",
+  "steps": "1. Request completions (auto-imports and class member completions) at /**/ in classes.ts (line 3, character 10). 2. Open utils.ts, which was only part of the program so far. 3. Erase a single character at the marker (the 'r' of render). 4. Request completions again: in the report this request fails with 'Debug Failure' in addImportFromExportedSymbol. The probe is the failed request itself (an error response to the fourth step).",
+  "ops": [
+   {
+    "kind": "open",
+    "path": "classes.ts"
+   },
+   {
+    "kind": "request",
+    "path": "classes.ts",
+    "start": [
+     3,
+     10
+    ],
+    "text": "completion"
+   },
+   {
+    "kind": "open",
+    "path": "utils.ts"
+   },
+   {
+    "kind": "change",
+    "path": "classes.ts",
+    "start": [
+     3,
+     9
+    ],
+    "end": [
+     3,
+     10
+    ],
+    "text": ""
+   }
+  ],
+  "probe": {
+   "type": "error_response",
+   "params": {
+    "query": {
+     "method": "completion",
+     "path": "classes.ts",
+     "position": [
+      3,
+      9
+     ]
+    }
+   }
+  }
+ },
+ "attempts": []
+}

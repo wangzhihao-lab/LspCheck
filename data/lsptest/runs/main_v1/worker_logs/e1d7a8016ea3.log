@@ -1,0 +1,3 @@
+2026-09-24 00:39:26,701 INFO campaign_run run e1d7a8016ea3: r0_crash on ts6 6.0.3, ChatGPTNextWeb/NextChat@defdcdb55d85 seed 1 settled, targets ['app/api/stability.ts', 'app/client/platforms/glm.ts', 'app/locales/index.ts']
+2026-09-24 00:40:48,191 INFO campaign_run run e1d7a8016ea3: 0 candidate(s) in 82s; confirming
+2026-09-24 00:40:48,194 INFO campaign_run run e1d7a8016ea3 finished: ok, 0 confirmed of 0 candidate(s), 82s

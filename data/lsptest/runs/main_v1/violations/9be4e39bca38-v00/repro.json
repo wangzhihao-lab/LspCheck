@@ -1,0 +1,581 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "9be4e39bca38-v00",
+ "run_id": "9be4e39bca38",
+ "oracle": "r4_edits",
+ "server": {
+  "kind": "gopls",
+  "version": "v0.23.0"
+ },
+ "project": {
+  "name": "spf13/cobra@adbc8813901b",
+  "source": "corpus",
+  "ref": "temp/corpus/spf13__cobra@adbc8813901b",
+  "commit": "adbc8813901bba65827259daa8e22ff94ec1f30e",
+  "language": "go"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "command_win.go",
+    "positions": [
+     [
+      17,
+      10
+     ],
+     [
+      27,
+      10
+     ],
+     [
+      29,
+      10
+     ],
+     [
+      29,
+      17
+     ],
+     [
+      29,
+      23
+     ],
+     [
+      30,
+      12
+     ],
+     [
+      30,
+      35
+     ],
+     [
+      30,
+      49
+     ],
+     [
+      31,
+      2
+     ],
+     [
+      31,
+      18
+     ],
+     [
+      38,
+      3
+     ],
+     [
+      38,
+      7
+     ]
+    ],
+    "ends": [
+     [
+      17,
+      13
+     ],
+     [
+      27,
+      17
+     ],
+     [
+      29,
+      16
+     ],
+     [
+      29,
+      18
+     ],
+     [
+      29,
+      27
+     ],
+     [
+      30,
+      21
+     ],
+     [
+      30,
+      40
+     ],
+     [
+      30,
+      58
+     ],
+     [
+      31,
+      3
+     ],
+     [
+      31,
+      27
+     ],
+     [
+      38,
+      4
+     ],
+     [
+      38,
+      9
+     ]
+    ],
+    "names": [
+     "cobra",
+     "preExecHookFn",
+     "preExecHook",
+     "c",
+     "Command",
+     "MousetrapHelpText",
+     "mousetrap",
+     "StartedByExplorer",
+     "c",
+     "MousetrapHelpText",
+     "os",
+     "Exit"
+    ]
+   },
+   {
+    "path": "doc/rest_docs.go",
+    "positions": [
+     [
+      57,
+      27
+     ],
+     [
+      71,
+      4
+     ],
+     [
+      78,
+      10
+     ],
+     [
+      80,
+      2
+     ],
+     [
+      104,
+      4
+     ],
+     [
+      127,
+      12
+     ],
+     [
+      144,
+      61
+     ],
+     [
+      144,
+      77
+     ],
+     [
+      145,
+      27
+     ],
+     [
+      162,
+      15
+     ],
+     [
+      174,
+      13
+     ],
+     [
+      184,
+      16
+     ]
+    ],
+    "ends": [
+     [
+      57,
+      28
+     ],
+     [
+      71,
+      6
+     ],
+     [
+      78,
+      16
+     ],
+     [
+      80,
+      4
+     ],
+     [
+      104,
+      6
+     ],
+     [
+      127,
+      14
+     ],
+     [
+      144,
+      68
+     ],
+     [
+      144,
+      80
+     ],
+     [
+      145,
+      31
+     ],
+     [
+      162,
+      16
+     ],
+     [
+      174,
+      14
+     ],
+     [
+      184,
+      18
+     ]
+    ],
+    "names": [
+     "w",
+     "long",
+     "WriteString",
+     "buf",
+     "cmd",
+     "buf",
+     "filePrepender",
+     "string",
+     "Commands",
+     "io",
+     "s",
+     "res"
+    ]
+   },
+   {
+    "path": "powershell_completions_test.go",
+    "positions": [
+     [
+      22,
+      47
+     ],
+     [
+      23,
+      16
+     ],
+     [
+      25,
+      14
+     ],
+     [
+      25,
+      21
+     ],
+     [
+      26,
+      13
+     ],
+     [
+      26,
+      43
+     ],
+     [
+      27,
+      12
+     ],
+     [
+      27,
+      18
+     ],
+     [
+      30,
+      7
+     ],
+     [
+      31,
+      7
+     ],
+     [
+      31,
+      13
+     ],
+     [
+      31,
+      25
+     ]
+    ],
+    "ends": [
+     [
+      22,
+      48
+     ],
+     [
+      23,
+      18
+     ],
+     [
+      25,
+      17
+     ],
+     [
+      25,
+      24
+     ],
+     [
+      26,
+      14
+     ],
+     [
+      26,
+      45
+     ],
+     [
+      27,
+      14
+     ],
+     [
+      27,
+      21
+     ],
+     [
+      30,
+      14
+     ],
+     [
+      31,
+      8
+     ],
+     [
+      31,
+      16
+     ],
+     [
+      31,
+      29
+     ]
+    ],
+    "names": [
+     "T",
+     "Use",
+     "bytes",
+     "Buffer",
+     "t",
+     "buf",
+     "buf",
+     "String",
+     "activeHelpVar",
+     "t",
+     "output",
+     "Sprintf"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "diagnostics",
+  "path": "command_win.go",
+  "line": 31,
+  "character": 10,
+  "extra": "M2:quickfix-errors:Create variable MousetrappHelpText"
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "command_win.go"
+  },
+  {
+   "kind": "change",
+   "path": "command_win.go",
+   "start": [
+    31,
+    10
+   ],
+   "end": [
+    31,
+    27
+   ],
+   "text": "MousetrappHelpText"
+  },
+  {
+   "kind": "change",
+   "path": "command_win.go",
+   "start": [
+    31,
+    2
+   ],
+   "end": [
+    31,
+    2
+   ],
+   "text": "MousetrappHelpText := nil\n\t\t"
+  }
+ ],
+ "case": {
+  "action_kind": "quickfix",
+  "base_errors": 0,
+  "check": "errors",
+  "diag": {
+   "code": "UndeclaredName",
+   "message": "undefined: MousetrappHelpText [windows,amd64]",
+   "range": {
+    "end": {
+     "character": 28,
+     "line": 31
+    },
+    "start": {
+     "character": 10,
+     "line": 31
+    }
+   },
+   "severity": 1
+  },
+  "fix_introduced_errors": [
+   {
+    "code": "UntypedNilUse",
+    "message": "use of untyped nil in assignment [windows,amd64]",
+    "path": "command_win.go",
+    "range": {
+     "end": {
+      "character": 27,
+      "line": 31
+     },
+     "start": {
+      "character": 24,
+      "line": 31
+     }
+    },
+    "severity": 1
+   }
+  ],
+  "fix_ops": [
+   {
+    "end": [
+     31,
+     2
+    ],
+    "kind": "change",
+    "path": "command_win.go",
+    "start": [
+     31,
+     2
+    ],
+    "text": "MousetrappHelpText := nil\n\t\t"
+   }
+  ],
+  "kind": "mutation",
+  "mutation": {
+   "end": [
+    31,
+    27
+   ],
+   "id": "M2",
+   "offsets": [
+    865,
+    882
+   ],
+   "sha": "a9f85ba76b54df4b",
+   "start": [
+    31,
+    10
+   ],
+   "text": "MousetrappHelpText",
+   "what": "misspell 'MousetrapHelpText' as 'MousetrappHelpText' (duplicate a middle character)"
+  },
+  "n_fix_ops": 1,
+  "path": "command_win.go",
+  "post_errors": 1,
+  "title": "Create variable MousetrappHelpText",
+  "via": "resolve"
+ },
+ "shape": "diagnostics:extra:UntypedNilUse",
+ "signature": "gopls|r4_edits|diagnostics:extra:UntypedNilUse",
+ "expected": [],
+ "actual": [
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "UntypedNilUse",
+   "compiler",
+   "use of untyped nil in assignment [windows,amd64]"
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "quick fix 'Create variable MousetrappHelpText' for UndeclaredName at command_win.go:32:11 raises the error count in the edited files from 0 to 1 (seeded by M2: misspell 'MousetrapHelpText' as 'MousetrappHelpText' (duplicate a middle character); errors before the mutation 0, after the fix 1); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 58s",
+ "violation": {
+  "oracle": "r4_edits",
+  "server": "gopls-v0.23.0",
+  "project": "spf13/cobra@adbc8813901b",
+  "key": {
+   "method": "diagnostics",
+   "path": "command_win.go",
+   "line": 31,
+   "character": 10,
+   "extra": "M2:quickfix-errors:Create variable MousetrappHelpText"
+  },
+  "expected": [],
+  "actual": [
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "UntypedNilUse",
+    "compiler",
+    "use of untyped nil in assignment [windows,amd64]"
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "command_win.go"
+   },
+   {
+    "kind": "change",
+    "path": "command_win.go",
+    "start": [
+     31,
+     10
+    ],
+    "end": [
+     31,
+     27
+    ],
+    "text": "MousetrappHelpText"
+   },
+   {
+    "kind": "change",
+    "path": "command_win.go",
+    "start": [
+     31,
+     2
+    ],
+    "end": [
+     31,
+     2
+    ],
+    "text": "MousetrappHelpText := nil\n\t\t"
+   }
+  ],
+  "detail": "{\"case\": {\"action_kind\": \"quickfix\", \"base_errors\": 0, \"check\": \"errors\", \"diag\": {\"code\": \"UndeclaredName\", \"message\": \"undefined: MousetrappHelpText [windows,amd64]\", \"range\": {\"end\": {\"character\": 28, \"line\": 31}, \"start\": {\"character\": 10, \"line\": 31}}, \"severity\": 1}, \"fix_introduced_errors\": [{\"code\": \"UntypedNilUse\", \"message\": \"use of untyped nil in assignment [windows,amd64]\", \"path\": \"command_win.go\", \"range\": {\"end\": {\"character\": 27, \"line\": 31}, \"start\": {\"character\": 24, \"line\": 31}}, \"severity\": 1}], \"fix_ops\": [{\"end\": [31, 2], \"kind\": \"change\", \"path\": \"command_win.go\", \"start\": [31, 2], \"text\": \"MousetrappHelpText := nil\\n\\t\\t\"}], \"kind\": \"mutation\", \"mutation\": {\"end\": [31, 27], \"id\": \"M2\", \"offsets\": [865, 882], \"sha\": \"a9f85ba76b54df4b\", \"start\": [31, 10], \"text\": \"MousetrappHelpText\", \"what\": \"misspell 'MousetrapHelpText' as 'MousetrappHelpText' (duplicate a middle character)\"}, \"n_fix_ops\": 1, \"path\": \"command_win.go\", \"post_errors\": 1, \"title\": \"Create variable MousetrappHelpText\", \"via\": \"resolve\"}, \"note\": \"quick fix 'Create variable MousetrappHelpText' for UndeclaredName at command_win.go:32:11 raises the error count in the edited files from 0 to 1 (seeded by M2: misspell 'MousetrapHelpText' as 'MousetrappHelpText' (duplicate a middle character); errors before the mutation 0, after the fix 1); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 58s\", \"shape\": \"diagnostics:extra:UntypedNilUse\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "gopls|r4_edits|diagnostics:extra:UntypedNilUse",
+  "run_id": "9be4e39bca38"
+ },
+ "replay_logs": [
+  "logs/gopls-v0.23.0-9be4e39bca38-r4-replay-baseline-20260923-221334-5cbb9c.jsonl.gz",
+  "logs/gopls-v0.23.0-9be4e39bca38-r4-replay-case-20260923-221324-56d9f1.jsonl.gz",
+  "logs/gopls-v0.23.0-9be4e39bca38-r4-replay-control-20260923-221339-c80518.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

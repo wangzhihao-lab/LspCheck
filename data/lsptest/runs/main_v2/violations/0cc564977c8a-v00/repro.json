@@ -1,0 +1,437 @@
+{
+ "format": 1,
+ "campaign": "main_v2",
+ "vid": "0cc564977c8a-v00",
+ "run_id": "0cc564977c8a",
+ "oracle": "r0_crash",
+ "server": {
+  "kind": "pyright",
+  "version": "1.1.414"
+ },
+ "project": {
+  "name": "virattt/ai-hedge-fund@7d897a002c26",
+  "source": "corpus",
+  "ref": "temp/corpus/virattt__ai-hedge-fund@7d897a002c26",
+  "commit": "7d897a002c263f106201154d877a4bcf74efae03",
+  "language": "python"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "hedge_fund/backtesting/__init__.py",
+    "positions": [
+     [
+      2,
+      10
+     ],
+     [
+      2,
+      21
+     ],
+     [
+      2,
+      31
+     ],
+     [
+      2,
+      49
+     ],
+     [
+      3,
+      30
+     ],
+     [
+      4,
+      13
+     ],
+     [
+      7,
+      11
+     ],
+     [
+      9,
+      10
+     ],
+     [
+      9,
+      31
+     ],
+     [
+      10,
+      11
+     ],
+     [
+      11,
+      13
+     ],
+     [
+      12,
+      6
+     ]
+    ],
+    "ends": [
+     [
+      2,
+      15
+     ],
+     [
+      2,
+      27
+     ],
+     [
+      2,
+      34
+     ],
+     [
+      2,
+      56
+     ],
+     [
+      3,
+      32
+     ],
+     [
+      4,
+      23
+     ],
+     [
+      7,
+      18
+     ],
+     [
+      9,
+      15
+     ],
+     [
+      9,
+      34
+     ],
+     [
+      10,
+      18
+     ],
+     [
+      11,
+      22
+     ],
+     [
+      12,
+      9
+     ]
+    ],
+    "names": [
+     "hedge_fund",
+     "backtesting",
+     "engine",
+     "BacktestEngine",
+     "fund",
+     "FundBacktestMetrics",
+     "rebalance_grid",
+     "hedge_fund",
+     "models",
+     "BacktestResult",
+     "PerformanceMetrics",
+     "Trade"
+    ]
+   },
+   {
+    "path": "hedge_fund/llm/contract.py",
+    "positions": [
+     [
+      23,
+      5
+     ],
+     [
+      46,
+      37
+     ],
+     [
+      55,
+      69
+     ],
+     [
+      74,
+      54
+     ],
+     [
+      83,
+      18
+     ],
+     [
+      89,
+      20
+     ],
+     [
+      90,
+      29
+     ],
+     [
+      90,
+      71
+     ],
+     [
+      94,
+      14
+     ],
+     [
+      114,
+      106
+     ],
+     [
+      119,
+      20
+     ],
+     [
+      123,
+      39
+     ]
+    ],
+    "ends": [
+     [
+      23,
+      11
+     ],
+     [
+      46,
+      39
+     ],
+     [
+      55,
+      71
+     ],
+     [
+      74,
+      56
+     ],
+     [
+      83,
+      22
+     ],
+     [
+      89,
+      24
+     ],
+     [
+      90,
+      32
+     ],
+     [
+      90,
+      78
+     ],
+     [
+      94,
+      21
+     ],
+     [
+      114,
+      108
+     ],
+     [
+      119,
+      23
+     ],
+     [
+      123,
+      43
+     ]
+    ],
+    "names": [
+     "_DIRECTIONS",
+     "user",
+     "user",
+     "dict",
+     "response",
+     "answers",
+     "answer",
+     "expected_type",
+     "_distribution",
+     "math",
+     "value",
+     "rel_tol"
+    ]
+   },
+   {
+    "path": "hedge_fund/signals/test_llm_agents.py",
+    "positions": [
+     [
+      7,
+      10
+     ],
+     [
+      28,
+      19
+     ],
+     [
+      40,
+      70
+     ],
+     [
+      55,
+      62
+     ],
+     [
+      80,
+      23
+     ],
+     [
+      110,
+      23
+     ],
+     [
+      111,
+      19
+     ],
+     [
+      130,
+      31
+     ],
+     [
+      147,
+      30
+     ],
+     [
+      192,
+      31
+     ],
+     [
+      205,
+      31
+     ],
+     [
+      219,
+      47
+     ]
+    ],
+    "ends": [
+     [
+      7,
+      15
+     ],
+     [
+      28,
+      21
+     ],
+     [
+      40,
+      73
+     ],
+     [
+      55,
+      72
+     ],
+     [
+      80,
+      27
+     ],
+     [
+      110,
+      27
+     ],
+     [
+      111,
+      23
+     ],
+     [
+      130,
+      35
+     ],
+     [
+      147,
+      32
+     ],
+     [
+      192,
+      34
+     ],
+     [
+      205,
+      35
+     ],
+     [
+      219,
+      50
+     ]
+    ],
+    "names": [
+     "hedge_fund",
+     "self",
+     "limit",
+     "book_value_per_share",
+     "tmp_path",
+     "tmp_path",
+     "predict",
+     "metrics",
+     "llm",
+     "record",
+     "FakeLLM",
+     "prompt"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "references",
+  "path": "hedge_fund/backtesting/__init__.py",
+  "line": 2,
+  "character": 21,
+  "extra": ""
+ },
+ "ops": [],
+ "case": {
+  "codes": [
+   "-32603",
+   "-32603"
+  ],
+  "mode": "fresh-pair",
+  "phase": [
+   "done",
+   "done"
+  ],
+  "seed": 1
+ },
+ "shape": "references:result->error:-32603",
+ "signature": "pyright|r0_crash|references:result->error:-32603",
+ "expected": "an answer that is not a server error, a crash or a timeout",
+ "actual": [
+  "error",
+  -32603
+ ],
+ "reproduced": "3/3",
+ "note": "references answered ['error', -32603] in the fresh baseline and ['error', -32603] in the fresh control; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 17s",
+ "violation": {
+  "oracle": "r0_crash",
+  "server": "pyright-1.1.414",
+  "project": "virattt/ai-hedge-fund@7d897a002c26",
+  "key": {
+   "method": "references",
+   "path": "hedge_fund/backtesting/__init__.py",
+   "line": 2,
+   "character": 21,
+   "extra": ""
+  },
+  "expected": "an answer that is not a server error, a crash or a timeout",
+  "actual": [
+   "error",
+   -32603
+  ],
+  "ops": [],
+  "detail": "{\"case\": {\"codes\": [\"-32603\", \"-32603\"], \"mode\": \"fresh-pair\", \"phase\": [\"done\", \"done\"], \"seed\": 1}, \"note\": \"references answered ['error', -32603] in the fresh baseline and ['error', -32603] in the fresh control; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 17s\", \"shape\": \"references:result->error:-32603\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "pyright|r0_crash|references:result->error:-32603",
+  "run_id": "0cc564977c8a"
+ },
+ "replay_logs": [
+  "logs/pyright-1.1.414-0cc564977c8a-r0-replay-baseline-20261118-131418-e01080.jsonl.gz",
+  "logs/pyright-1.1.414-0cc564977c8a-r0-replay-control-20261118-131418-d88c51.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

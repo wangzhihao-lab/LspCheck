@@ -1,0 +1,31 @@
+{
+ "vid": "8bf86710b7ff-v01",
+ "ops_before": 0,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 0,
+ "cache_hits": 0,
+ "reduce_seconds": 0.0,
+ "budget_exhausted": false,
+ "probe_log": [],
+ "logs": [
+  "ts6-6.0.3-tr24364e-ref-r6-replay-ref-baseline-20261118-222438-ba4dce.jsonl.gz",
+  "ts6-6.0.3-tr24364e-ref-r6-replay-ref-control-20261118-222452-923aaa.jsonl.gz",
+  "ts7-7.0.2-tr24364e-r6-replay-test-baseline-20261118-222417-bd3604.jsonl.gz",
+  "ts7-7.0.2-tr24364e-r6-replay-test-control-20261118-222428-1d0dc4.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [],
+  "actual": [
+   [
+    "src/components/PromptInput/Notifications.tsx",
+    41,
+    5,
+    41,
+    10
+   ]
+  ]
+ },
+ "ops_after": 0,
+ "total_seconds": 221.2
+}

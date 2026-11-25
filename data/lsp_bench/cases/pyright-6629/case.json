@@ -1,0 +1,60 @@
+{
+ "schema": 1,
+ "id": "pyright-6629",
+ "meta": {
+  "server": "pyright",
+  "kind": "pyright",
+  "number": 6629,
+  "url": "https://github.com/microsoft/pyright/issues/6629",
+  "title": "Edge case with operator lookup on Unions",
+  "oracle_class": "R1",
+  "subtype": "typing",
+  "fix_ref": "none named (maintainer: 'This is addressed in pyright 1.1.339')",
+  "fix_shas": [
+   "559f9194acaae55783306eecd94da4a5d2193ffd"
+  ],
+  "pre_version": "1.1.338",
+  "post_version": "1.1.339",
+  "pre_build": "1.1.338",
+  "post_build": "1.1.339",
+  "build_notes": "npm pyright@1.1.338 (2023-11-29) and pyright@1.1.339 (2023-12-06); release window from the maintainer's comment.",
+  "candidate_rank": 74,
+  "effort_minutes": 6,
+  "notes": "Mechanism differs from the screening class (R1 typing): the false positive is reported on a fresh open (the issue's CLI run shows it too); the reporter's remark that an edit sometimes clears it in Pylance is not needed to see the bug."
+ },
+ "language": "python",
+ "settings": {},
+ "settings_note": "The issue names no settings (pyright CLI 1.1.338 defaults); the session defaults (basic type checking) apply.",
+ "session": {
+  "settle_timeout_s": 120
+ },
+ "files": [
+  {
+   "path": "main.py",
+   "provenance": "issue",
+   "source": "issue body, python code block",
+   "note": "the match statement needs Python 3.10+; the session interpreter is newer"
+  }
+ ],
+ "repro": {
+  "attempt": 1,
+  "timing": "settled",
+  "steps": "Open main.py. Reported: '~v' in the Bar(v) case is flagged ('Operator \"~\" not supported for type \"FooBar\"') although every member of the union derives from _Base0, which implements __invert__ ('v + v' and 'v.__invert__()' are accepted). Probe: no diagnostic about operator '~' may be reported for main.py.",
+  "ops": [
+   {
+    "kind": "open",
+    "path": "main.py"
+   }
+  ],
+  "probe": {
+   "type": "diagnostic_present",
+   "params": {
+    "path": "main.py",
+    "match": {
+     "message_re": "Operator \"~\" not supported"
+    }
+   }
+  }
+ },
+ "attempts": []
+}

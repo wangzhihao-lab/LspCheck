@@ -1,0 +1,6 @@
+2026-09-24 00:28:41,851 INFO campaign_run run dc251ae86847: r4_edits on ts6 6.0.3, chenglou/pretext@2e5e2bdaee39 seed 2 settled, targets ['pages/justification-check.ts', 'src/generated/line-break-data.ts', 'tests/wrapping/fixtures/corpora.ts']
+2026-09-24 00:32:13,045 INFO campaign_run run dc251ae86847: 1 candidate(s) in 211s; confirming
+2026-09-24 00:32:44,894 INFO flake replay 1/3 of ts6|r4_edits|diagnostics:extra:2339,7053: settled=True control_stable=True reproduced=True (31.9s)
+2026-09-24 00:33:22,213 INFO flake replay 2/3 of ts6|r4_edits|diagnostics:extra:2339,7053: settled=True control_stable=True reproduced=True (37.3s)
+2026-09-24 00:33:54,221 INFO flake replay 3/3 of ts6|r4_edits|diagnostics:extra:2339,7053: settled=True control_stable=True reproduced=True (32.0s)
+2026-09-24 00:33:54,228 INFO campaign_run run dc251ae86847 finished: ok, 1 confirmed of 1 candidate(s), 312s

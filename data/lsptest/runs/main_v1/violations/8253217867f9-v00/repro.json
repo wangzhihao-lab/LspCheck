@@ -1,0 +1,587 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "8253217867f9-v00",
+ "run_id": "8253217867f9",
+ "oracle": "r2_handles",
+ "server": {
+  "kind": "gopls",
+  "version": "v0.23.0"
+ },
+ "project": {
+  "name": "nektos/act@4f411281417e",
+  "source": "corpus",
+  "ref": "temp/corpus/nektos__act@4f411281417e",
+  "commit": "4f411281417e88660bea1c1a1749aa71ae0bd60f",
+  "language": "go"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "pkg/container/docker_volume.go",
+    "positions": [
+     [
+      11,
+      49
+     ],
+     [
+      11,
+      62
+     ],
+     [
+      13,
+      8
+     ],
+     [
+      19,
+      4
+     ],
+     [
+      19,
+      24
+     ],
+     [
+      20,
+      13
+     ],
+     [
+      24,
+      10
+     ],
+     [
+      24,
+      29
+     ],
+     [
+      35,
+      12
+     ],
+     [
+      35,
+      58
+     ],
+     [
+      38,
+      55
+     ],
+     [
+      44,
+      8
+     ]
+    ],
+    "ends": [
+     [
+      11,
+      52
+     ],
+     [
+      11,
+      64
+     ],
+     [
+      13,
+      10
+     ],
+     [
+      19,
+      6
+     ],
+     [
+      19,
+      29
+     ],
+     [
+      20,
+      15
+     ],
+     [
+      24,
+      12
+     ],
+     [
+      24,
+      32
+     ],
+     [
+      35,
+      19
+     ],
+     [
+      35,
+      62
+     ],
+     [
+      38,
+      58
+     ],
+     [
+      44,
+      10
+     ]
+    ],
+    "names": [
+     "string",
+     "bool",
+     "err",
+     "list",
+     "VolumeList",
+     "nil",
+     "vol",
+     "Items",
+     "removeExecutor",
+     "Executor",
+     "volume",
+     "err"
+    ]
+   },
+   {
+    "path": "pkg/container/linux_container_environment_extensions_test.go",
+    "positions": [
+     [
+      15,
+      9
+     ],
+     [
+      25,
+      14
+     ],
+     [
+      29,
+      34
+     ],
+     [
+      30,
+      6
+     ],
+     [
+      33,
+      75
+     ],
+     [
+      34,
+      38
+     ],
+     [
+      37,
+      8
+     ],
+     [
+      38,
+      16
+     ],
+     [
+      43,
+      12
+     ],
+     [
+      46,
+      6
+     ],
+     [
+      51,
+      13
+     ],
+     [
+      57,
+      5
+     ]
+    ],
+    "ends": [
+     [
+      15,
+      17
+     ],
+     [
+      25,
+      16
+     ],
+     [
+      29,
+      39
+     ],
+     [
+      30,
+      7
+     ],
+     [
+      33,
+      80
+     ],
+     [
+      34,
+      46
+     ],
+     [
+      37,
+      10
+     ],
+     [
+      38,
+      18
+     ],
+     [
+      43,
+      15
+     ],
+     [
+      46,
+      8
+     ],
+     [
+      51,
+      15
+     ],
+     [
+      57,
+      7
+     ]
+    ],
+    "names": [
+     "destinationPath",
+     "err",
+     "ReplaceAll",
+     "_",
+     "rootDrive",
+     "rootDriveLetter",
+     "err",
+     "err",
+     "Equal",
+     "err",
+     "nil",
+     "cwd"
+    ]
+   },
+   {
+    "path": "pkg/runner/action.go",
+    "positions": [
+     [
+      42,
+      21
+     ],
+     [
+      152,
+      60
+     ],
+     [
+      235,
+      24
+     ],
+     [
+      390,
+      64
+     ],
+     [
+      444,
+      6
+     ],
+     [
+      532,
+      34
+     ],
+     [
+      569,
+      50
+     ],
+     [
+      594,
+      128
+     ],
+     [
+      618,
+      13
+     ],
+     [
+      658,
+      13
+     ],
+     [
+      665,
+      36
+     ],
+     [
+      679,
+      51
+     ]
+    ],
+    "ends": [
+     [
+      42,
+      23
+     ],
+     [
+      152,
+      66
+     ],
+     [
+      235,
+      27
+     ],
+     [
+      390,
+      65
+     ],
+     [
+      444,
+      10
+     ],
+     [
+      532,
+      42
+     ],
+     [
+      569,
+      55
+     ],
+     [
+      594,
+      134
+     ],
+     [
+      618,
+      15
+     ],
+     [
+      658,
+      24
+     ],
+     [
+      665,
+      43
+     ],
+     [
+      679,
+      53
+     ]
+    ],
+    "names": [
+     "ctx",
+     "remoteAction",
+     "Debugf",
+     "s",
+     "envName",
+     "stepActionRemote",
+     "actionDir",
+     "getStepModel",
+     "Runs",
+     "populateEnvsFromInput",
+     "containerArgs",
+     "nil"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "codeActionResolve",
+  "path": "pkg/container/linux_container_environment_extensions_test.go",
+  "line": 34,
+  "character": 38,
+  "extra": "pos:34:38|top1|Split arguments into separate lines|refactor.rewrite.splitLines|0"
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "pkg/container/linux_container_environment_extensions_test.go"
+  },
+  {
+   "kind": "change",
+   "path": "pkg/container/linux_container_environment_extensions_test.go",
+   "start": [
+    0,
+    0
+   ],
+   "end": [
+    0,
+    0
+   ],
+   "text": "\n"
+  }
+ ],
+ "case": {
+  "extra": "pos",
+  "path": "pkg/container/linux_container_environment_extensions_test.go",
+  "shift": {
+   "col": 0,
+   "line": 0,
+   "text": "\n",
+   "variant": "top"
+  },
+  "sub": "codeAction",
+  "where": [
+   34,
+   38,
+   34,
+   38
+  ]
+ },
+ "shape": "codeActionResolve:changed",
+ "signature": "gopls|r2_handles|codeActionResolve:changed",
+ "expected": [
+  [
+   "pkg/container/linux_container_environment_extensions_test.go",
+   35,
+   16,
+   35,
+   16,
+   "\n\t\t\t\t"
+  ],
+  [
+   "pkg/container/linux_container_environment_extensions_test.go",
+   35,
+   29,
+   35,
+   31,
+   ",\n\t\t\t\t"
+  ],
+  [
+   "pkg/container/linux_container_environment_extensions_test.go",
+   35,
+   46,
+   35,
+   46,
+   ",\n\t\t\t"
+  ]
+ ],
+ "actual": [
+  [
+   "pkg/container/linux_container_environment_extensions_test.go",
+   34,
+   28,
+   34,
+   30,
+   ",\n\t\t\t\t"
+  ],
+  [
+   "pkg/container/linux_container_environment_extensions_test.go",
+   34,
+   4,
+   34,
+   4,
+   "\n\t\t\t\t"
+  ],
+  [
+   "pkg/container/linux_container_environment_extensions_test.go",
+   34,
+   49,
+   34,
+   51,
+   ",\n\t\t\t\t"
+  ],
+  [
+   "pkg/container/linux_container_environment_extensions_test.go",
+   34,
+   81,
+   34,
+   81,
+   ",\n\t\t\t"
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "flake 3/3 [r1:SCR r2:SCR r3:SCR] in 42s",
+ "violation": {
+  "oracle": "r2_handles",
+  "server": "gopls-v0.23.0",
+  "project": "nektos/act@4f411281417e",
+  "key": {
+   "method": "codeActionResolve",
+   "path": "pkg/container/linux_container_environment_extensions_test.go",
+   "line": 34,
+   "character": 38,
+   "extra": "pos:34:38|top1|Split arguments into separate lines|refactor.rewrite.splitLines|0"
+  },
+  "expected": [
+   [
+    "pkg/container/linux_container_environment_extensions_test.go",
+    35,
+    16,
+    35,
+    16,
+    "\n\t\t\t\t"
+   ],
+   [
+    "pkg/container/linux_container_environment_extensions_test.go",
+    35,
+    29,
+    35,
+    31,
+    ",\n\t\t\t\t"
+   ],
+   [
+    "pkg/container/linux_container_environment_extensions_test.go",
+    35,
+    46,
+    35,
+    46,
+    ",\n\t\t\t"
+   ]
+  ],
+  "actual": [
+   [
+    "pkg/container/linux_container_environment_extensions_test.go",
+    34,
+    28,
+    34,
+    30,
+    ",\n\t\t\t\t"
+   ],
+   [
+    "pkg/container/linux_container_environment_extensions_test.go",
+    34,
+    4,
+    34,
+    4,
+    "\n\t\t\t\t"
+   ],
+   [
+    "pkg/container/linux_container_environment_extensions_test.go",
+    34,
+    49,
+    34,
+    51,
+    ",\n\t\t\t\t"
+   ],
+   [
+    "pkg/container/linux_container_environment_extensions_test.go",
+    34,
+    81,
+    34,
+    81,
+    ",\n\t\t\t"
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "pkg/container/linux_container_environment_extensions_test.go"
+   },
+   {
+    "kind": "change",
+    "path": "pkg/container/linux_container_environment_extensions_test.go",
+    "start": [
+     0,
+     0
+    ],
+    "end": [
+     0,
+     0
+    ],
+    "text": "\n"
+   }
+  ],
+  "detail": "{\"case\": {\"extra\": \"pos\", \"path\": \"pkg/container/linux_container_environment_extensions_test.go\", \"shift\": {\"col\": 0, \"line\": 0, \"text\": \"\\n\", \"variant\": \"top\"}, \"sub\": \"codeAction\", \"where\": [34, 38, 34, 38]}, \"note\": \"flake 3/3 [r1:SCR r2:SCR r3:SCR] in 42s\", \"shape\": \"codeActionResolve:changed\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "gopls|r2_handles|codeActionResolve:changed",
+  "run_id": "8253217867f9"
+ },
+ "replay_logs": [
+  "logs/gopls-v0.23.0-8253217867f9-r2-replay-20260923-233340-137ca3.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

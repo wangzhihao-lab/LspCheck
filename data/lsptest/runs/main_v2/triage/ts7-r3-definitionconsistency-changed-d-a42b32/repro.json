@@ -1,0 +1,162 @@
+{
+ "format": 1,
+ "campaign": "main_v2",
+ "vid": "2743534ec8dd-v01",
+ "run_id": "2743534ec8dd",
+ "oracle": "r3_routes",
+ "server": {
+  "kind": "ts7",
+  "version": "7.0.2"
+ },
+ "project": {
+  "name": "solidjs/solid@4b62bc29e04b",
+  "source": "corpus",
+  "ref": "temp/corpus/solidjs__solid@4b62bc29e04b",
+  "commit": "4b62bc29e04bfd29573a20ff3d47ae56a8a80ccb",
+  "language": "typescript"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "examples/rendering/shared/src/components/Reveal.tsx",
+    "positions": [],
+    "ends": [],
+    "names": []
+   },
+   {
+    "path": "packages/web/test/hydration/spread-innerhtml.spec.tsx",
+    "positions": [],
+    "ends": [],
+    "names": []
+   },
+   {
+    "path": "packages/web/test/latest-shadow-owned-write-issue-3378.spec.tsx",
+    "positions": [],
+    "ends": [],
+    "names": []
+   }
+  ]
+ },
+ "key": {
+  "method": "definitionConsistency",
+  "path": "packages/element/test/element.spec.tsx",
+  "line": 158,
+  "character": 34,
+  "extra": "from:packages/web/test/latest-shadow-owned-write-issue-3378.spec.tsx:49:18"
+ },
+ "ops": [],
+ "case": {
+  "loc": [
+   "packages/element/test/element.spec.tsx",
+   158,
+   29,
+   158,
+   40
+  ],
+  "sub": "d",
+  "target": [
+   "packages/web/test/latest-shadow-owned-write-issue-3378.spec.tsx",
+   49,
+   18
+  ]
+ },
+ "shape": "definitionConsistency:changed",
+ "signature": "ts7|r3_routes|definitionConsistency:changed",
+ "expected": [
+  [
+   "temp/lsp_servers/ts7-7.0.2/node_modules/@typescript/typescript-darwin-arm64/lib/lib.dom.d.ts",
+   13912,
+   8,
+   13912,
+   19
+  ],
+  [
+   "temp/lsp_servers/ts7-7.0.2/node_modules/@typescript/typescript-darwin-arm64/lib/lib.dom.d.ts",
+   13913,
+   8,
+   13913,
+   19
+  ]
+ ],
+ "actual": [
+  [
+   "temp/lsp_servers/ts7-7.0.2/node_modules/@typescript/typescript-darwin-arm64/lib/lib.dom.d.ts",
+   13225,
+   8,
+   13225,
+   19
+  ],
+  [
+   "temp/lsp_servers/ts7-7.0.2/node_modules/@typescript/typescript-darwin-arm64/lib/lib.dom.d.ts",
+   13226,
+   8,
+   13226,
+   19
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "flake 3/3 [r1:SCR r2:SCR r3:SCR] in 160s",
+ "violation": {
+  "oracle": "r3_routes",
+  "server": "ts7-7.0.2",
+  "project": "solidjs/solid@4b62bc29e04b",
+  "key": {
+   "method": "definitionConsistency",
+   "path": "packages/element/test/element.spec.tsx",
+   "line": 158,
+   "character": 34,
+   "extra": "from:packages/web/test/latest-shadow-owned-write-issue-3378.spec.tsx:49:18"
+  },
+  "expected": [
+   [
+    "temp/lsp_servers/ts7-7.0.2/node_modules/@typescript/typescript-darwin-arm64/lib/lib.dom.d.ts",
+    13912,
+    8,
+    13912,
+    19
+   ],
+   [
+    "temp/lsp_servers/ts7-7.0.2/node_modules/@typescript/typescript-darwin-arm64/lib/lib.dom.d.ts",
+    13913,
+    8,
+    13913,
+    19
+   ]
+  ],
+  "actual": [
+   [
+    "temp/lsp_servers/ts7-7.0.2/node_modules/@typescript/typescript-darwin-arm64/lib/lib.dom.d.ts",
+    13225,
+    8,
+    13225,
+    19
+   ],
+   [
+    "temp/lsp_servers/ts7-7.0.2/node_modules/@typescript/typescript-darwin-arm64/lib/lib.dom.d.ts",
+    13226,
+    8,
+    13226,
+    19
+   ]
+  ],
+  "ops": [],
+  "detail": "{\"case\": {\"loc\": [\"packages/element/test/element.spec.tsx\", 158, 29, 158, 40], \"sub\": \"d\", \"target\": [\"packages/web/test/latest-shadow-owned-write-issue-3378.spec.tsx\", 49, 18]}, \"note\": \"flake 3/3 [r1:SCR r2:SCR r3:SCR] in 160s\", \"shape\": \"definitionConsistency:changed\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "ts7|r3_routes|definitionConsistency:changed",
+  "run_id": "2743534ec8dd"
+ },
+ "replay_logs": [
+  "logs/ts7-7.0.2-tra42b32-r3-replay-baseline-20261118-214609-29a754.jsonl.gz",
+  "logs/ts7-7.0.2-tra42b32-r3-replay-control-20261118-214620-c52ca8.jsonl.gz"
+ ],
+ "project_files": {},
+ "group": "ts7-r3-definitionconsistency-changed-d-a42b32",
+ "reduced": true
+}

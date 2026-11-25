@@ -1,0 +1,71 @@
+{
+ "schema": 1,
+ "id": "gopls-46436",
+ "meta": {
+  "server": "gopls",
+  "kind": "gopls",
+  "number": 46436,
+  "url": "https://github.com/golang/go/issues/46436",
+  "title": "x/tools/gopls: invalid completion in index expression",
+  "oracle_class": "R4",
+  "subtype": "completion",
+  "fix_ref": "golang/tools@7295a4e735b5 (lsp/completion: don't offer untyped conversions; CL 323469)",
+  "fix_shas": [
+   "7295a4e735b539a844928f5ad15ff2e84236af39"
+  ],
+  "pre_version": "v0.7.0",
+  "post_version": "v0.7.1",
+  "pre_build": "v0.7.0",
+  "post_build": "v0.7.1",
+  "build_notes": "go install golang.org/x/tools/gopls@<version> with the local Go (go1.27.1), which builds both; the server runs the local go command. v0.7.0 was tagged 2021-06-08, the fix merged 2021-06, v0.7.1 was tagged 2021-08-02.",
+  "effort_minutes": 6,
+  "notes": "Completion offered a conversion to the expected type of the index, 'untyped int', and printed that type name into the code ('untyped int()'). The fix does not offer conversions to untyped types. (The same mistake came back in another place as golang/go#62141, in the floating-point case.)"
+ },
+ "language": "go",
+ "settings": {},
+ "settings_note": "The issue names no settings.",
+ "session": {
+  "settle_timeout_s": 180
+ },
+ "files": [
+  {
+   "path": "p.go",
+   "provenance": "issue-adapted",
+   "source": "issue body, code block '[]int{}[<>]'",
+   "note": "the expression with the cursor marker <> removed, as a statement in an added function of an added package"
+  },
+  {
+   "path": "go.mod",
+   "provenance": "scaffold",
+   "source": "",
+   "note": "a module around the file; go 1.16, the Go of the era"
+  }
+ ],
+ "repro": {
+  "attempt": 1,
+  "timing": "settled",
+  "steps": "Open p.go. Request completion inside the empty index of '[]int{}[]' (line 3, character 9, the issue's <>) and accept the candidate 'untyped int()'. Reported: gopls offers the conversion 'untyped int()', which is not Go. Probe: the edited text must have no parse error that the original did not have; when no such candidate is offered the bug is absent (the fix stops offering it).",
+  "ops": [
+   {
+    "kind": "open",
+    "path": "p.go"
+   }
+  ],
+  "probe": {
+   "type": "edit_breaks_syntax",
+   "params": {
+    "edit": {
+     "via": "completion",
+     "path": "p.go",
+     "position": [
+      3,
+      9
+     ],
+     "label_re": "untyped int",
+     "missing": "absent"
+    }
+   }
+  }
+ },
+ "attempts": []
+}

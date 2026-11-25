@@ -1,0 +1,274 @@
+{
+ "format": 1,
+ "campaign": "bench_v1",
+ "vid": "be061778f191-v03",
+ "run_id": "be061778f191",
+ "oracle": "r1_history",
+ "server": {
+  "kind": "tsserver",
+  "version": "4.8.2+tsls1.1.2"
+ },
+ "project": {
+  "name": "tsserver-49001",
+  "source": "dir",
+  "ref": "data/lsp_bench/cases/tsserver-49001/project",
+  "commit": "",
+  "language": "typescript"
+ },
+ "context": {
+  "seed": 3,
+  "timing": "settled",
+  "settle_timeout_s": 120.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "bar.ts",
+    "positions": [
+     [
+      0,
+      9
+     ],
+     [
+      0,
+      16
+     ],
+     [
+      0,
+      25
+     ],
+     [
+      2,
+      18
+     ],
+     [
+      3,
+      3
+     ],
+     [
+      3,
+      13
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      11
+     ],
+     [
+      0,
+      20
+     ],
+     [
+      0,
+      26
+     ],
+     [
+      2,
+      20
+     ],
+     [
+      3,
+      5
+     ],
+     [
+      3,
+      17
+     ]
+    ],
+    "names": [
+     "type",
+     "SomeType",
+     "x",
+     "Bar",
+     "bar",
+     "SomeType"
+    ]
+   },
+   {
+    "path": "foo.ts",
+    "positions": [
+     [
+      0,
+      10
+     ],
+     [
+      0,
+      17
+     ],
+     [
+      2,
+      7
+     ],
+     [
+      2,
+      12
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      12
+     ],
+     [
+      0,
+      19
+     ],
+     [
+      2,
+      9
+     ],
+     [
+      2,
+      14
+     ]
+    ],
+    "names": [
+     "Bar",
+     "from",
+     "bar",
+     "Bar"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "definition",
+  "path": "foo.ts",
+  "line": 0,
+  "character": 10,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "bar.ts"
+  },
+  {
+   "kind": "open",
+   "path": "foo.ts"
+  },
+  {
+   "kind": "fs_rename",
+   "path": "bar.ts",
+   "new_path": "bar_rt.ts"
+  },
+  {
+   "kind": "close",
+   "path": "foo.ts"
+  },
+  {
+   "kind": "open",
+   "path": "foo.ts"
+  },
+  {
+   "kind": "fs_rename",
+   "path": "bar_rt.ts",
+   "new_path": "bar.ts"
+  }
+ ],
+ "case": {
+  "chain_step": 0,
+  "families": [],
+  "family": "H7",
+  "history_index": 10,
+  "history_seed": 3014,
+  "mode": "fresh",
+  "note": "nest 0>1>2: H5 rename bar.ts -> bar_rt.ts -> back | H3 foo.ts: close, reopen | H8 3 requests in a shuffled order: references@bar.ts:0:20, hover@bar.ts:3:5, definition@bar.ts:0:16",
+  "seed": 3,
+  "timing": "settled"
+ },
+ "shape": "definition:changed",
+ "signature": "tsserver|r1_history|definition:changed",
+ "expected": [
+  [
+   "bar.ts",
+   2,
+   17,
+   2,
+   20
+  ]
+ ],
+ "actual": [
+  [
+   "foo.ts",
+   0,
+   9,
+   0,
+   12
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "H7: nest 0>1>2: H5 rename bar.ts -> bar_rt.ts -> back | H3 foo.ts: close, reopen | H8 3 requests in a shuffled order: references@bar.ts:0:20, hover@bar.ts:3:5, definition@bar.ts:0:16; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 75s",
+ "violation": {
+  "oracle": "r1_history",
+  "server": "tsserver-4.8.2+tsls1.1.2",
+  "project": "tsserver-49001",
+  "key": {
+   "method": "definition",
+   "path": "foo.ts",
+   "line": 0,
+   "character": 10,
+   "extra": ""
+  },
+  "expected": [
+   [
+    "bar.ts",
+    2,
+    17,
+    2,
+    20
+   ]
+  ],
+  "actual": [
+   [
+    "foo.ts",
+    0,
+    9,
+    0,
+    12
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "bar.ts"
+   },
+   {
+    "kind": "open",
+    "path": "foo.ts"
+   },
+   {
+    "kind": "fs_rename",
+    "path": "bar.ts",
+    "new_path": "bar_rt.ts"
+   },
+   {
+    "kind": "close",
+    "path": "foo.ts"
+   },
+   {
+    "kind": "open",
+    "path": "foo.ts"
+   },
+   {
+    "kind": "fs_rename",
+    "path": "bar_rt.ts",
+    "new_path": "bar.ts"
+   }
+  ],
+  "detail": "{\"case\": {\"chain_step\": 0, \"families\": [], \"family\": \"H7\", \"history_index\": 10, \"history_seed\": 3014, \"mode\": \"fresh\", \"note\": \"nest 0>1>2: H5 rename bar.ts -> bar_rt.ts -> back | H3 foo.ts: close, reopen | H8 3 requests in a shuffled order: references@bar.ts:0:20, hover@bar.ts:3:5, definition@bar.ts:0:16\", \"seed\": 3, \"timing\": \"settled\"}, \"note\": \"H7: nest 0>1>2: H5 rename bar.ts -> bar_rt.ts -> back | H3 foo.ts: close, reopen | H8 3 requests in a shuffled order: references@bar.ts:0:20, hover@bar.ts:3:5, definition@bar.ts:0:16; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 75s\", \"shape\": \"definition:changed\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "tsserver|r1_history|definition:changed",
+  "run_id": "be061778f191"
+ },
+ "replay_logs": [
+  "logs/tsserver-4.8.2+tsls1.1.2-be061778f191-replay-baseline-20260925-102846-2525fe.jsonl.gz",
+  "logs/tsserver-4.8.2+tsls1.1.2-be061778f191-replay-control-20260925-102846-790439.jsonl.gz",
+  "logs/tsserver-4.8.2+tsls1.1.2-be061778f191-replay-history-20260925-102850-016f27.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

@@ -1,0 +1,6 @@
+2026-09-23 16:58:00,871 INFO campaign_run run 41afcf8c4817: r0_crash on rust-analyzer 2026-09-21, dani-garcia/vaultwarden@cc67d644f626 seed 1 settled, targets ['src/api/core/two_factor/duo.rs', 'src/db/models/attachment.rs', 'src/sso.rs']
+2026-09-23 17:01:48,680 INFO campaign_run run 41afcf8c4817: 3 candidate(s) in 228s; confirming
+2026-09-23 17:06:16,553 INFO flake replay 1/3 of rust-analyzer|r0_crash|references:result->error:timeout: settled=True control_stable=True reproduced=True (267.9s)
+2026-09-23 17:13:03,771 INFO flake replay 2/3 of rust-analyzer|r0_crash|references:result->error:timeout: settled=True control_stable=True reproduced=True (407.2s)
+2026-09-23 17:17:28,854 INFO flake replay 3/3 of rust-analyzer|r0_crash|references:result->error:timeout: settled=True control_stable=True reproduced=True (265.1s)
+2026-09-23 17:17:28,932 INFO campaign_run run 41afcf8c4817 finished: ok, 1 confirmed of 3 candidate(s), 1168s

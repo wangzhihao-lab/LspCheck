@@ -1,0 +1,3 @@
+2026-11-18 14:23:13,911 INFO campaign_run run 591c783dac41: r1_history on pyright 1.1.414, FoundationAgents/OpenManus@3309bf4e416f seed 2 settled, targets ['app/tool/base.py', 'app/tool/sandbox/sb_browser_tool.py', 'sandbox_main.py']
+2026-11-18 14:28:20,160 INFO campaign_run run 591c783dac41: 0 candidate(s) in 306s; confirming
+2026-11-18 14:28:20,160 INFO campaign_run run 591c783dac41 finished: ok, 0 confirmed of 0 candidate(s), 306s

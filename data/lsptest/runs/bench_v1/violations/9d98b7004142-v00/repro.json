@@ -1,0 +1,278 @@
+{
+ "format": 1,
+ "campaign": "bench_v1",
+ "vid": "9d98b7004142-v00",
+ "run_id": "9d98b7004142",
+ "oracle": "r4_edits",
+ "server": {
+  "kind": "gopls",
+  "version": "v0.18.1"
+ },
+ "project": {
+  "name": "gopls-73661",
+  "source": "dir",
+  "ref": "data/lsp_bench/cases/gopls-73661/project",
+  "commit": "",
+  "language": "go"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 180.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "main.go",
+    "positions": [
+     [
+      0,
+      10
+     ],
+     [
+      4,
+      6
+     ],
+     [
+      4,
+      14
+     ],
+     [
+      5,
+      6
+     ],
+     [
+      5,
+      14
+     ],
+     [
+      7,
+      4
+     ],
+     [
+      7,
+      7
+     ],
+     [
+      7,
+      13
+     ],
+     [
+      9,
+      7
+     ],
+     [
+      10,
+      5
+     ],
+     [
+      10,
+      8
+     ],
+     [
+      10,
+      16
+     ],
+     [
+      10,
+      25
+     ],
+     [
+      10,
+      32
+     ],
+     [
+      12,
+      2
+     ],
+     [
+      12,
+      8
+     ],
+     [
+      12,
+      13
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      12
+     ],
+     [
+      4,
+      8
+     ],
+     [
+      4,
+      17
+     ],
+     [
+      5,
+      8
+     ],
+     [
+      5,
+      17
+     ],
+     [
+      7,
+      5
+     ],
+     [
+      7,
+      9
+     ],
+     [
+      7,
+      15
+     ],
+     [
+      9,
+      9
+     ],
+     [
+      10,
+      6
+     ],
+     [
+      10,
+      10
+     ],
+     [
+      10,
+      19
+     ],
+     [
+      10,
+      28
+     ],
+     [
+      10,
+      33
+     ],
+     [
+      12,
+      4
+     ],
+     [
+      12,
+      12
+     ],
+     [
+      12,
+      14
+     ]
+    ],
+    "names": [
+     "main",
+     "ssa",
+     "string",
+     "ssb",
+     "string",
+     "a",
+     "ssa",
+     "ssa",
+     "main",
+     "b",
+     "ssb",
+     "append",
+     "string",
+     "a",
+     "fmt",
+     "Println",
+     "b"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "diagnostics",
+  "path": "main.go",
+  "line": 10,
+  "character": 13,
+  "extra": "quickfix-errors:Replace append with slices.Clone"
+ },
+ "ops": [],
+ "case": {
+  "action_kind": "quickfix",
+  "base_errors": 0,
+  "check": "errors",
+  "diag": {
+   "code": "slicesclone",
+   "message": "Replace append with slices.Clone",
+   "range": {
+    "end": {
+     "character": 37,
+     "line": 10
+    },
+    "start": {
+     "character": 13,
+     "line": 10
+    }
+   },
+   "severity": 4
+  },
+  "kind": "quickfix",
+  "path": "main.go",
+  "post_errors": 1,
+  "title": "Replace append with slices.Clone",
+  "via": "edit"
+ },
+ "shape": "diagnostics:extra:IncompatibleAssign",
+ "signature": "gopls|r4_edits|diagnostics:extra:IncompatibleAssign",
+ "expected": [],
+ "actual": [
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "IncompatibleAssign",
+   "compiler",
+   "cannot use slices.Clone(a) (value of slice type ssa) as ssb value in variable declaration"
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "quick fix 'Replace append with slices.Clone' for slicesclone at main.go:11:14 raises the error count in the edited files from 0 to 1; confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 50s",
+ "violation": {
+  "oracle": "r4_edits",
+  "server": "gopls-v0.18.1",
+  "project": "gopls-73661",
+  "key": {
+   "method": "diagnostics",
+   "path": "main.go",
+   "line": 10,
+   "character": 13,
+   "extra": "quickfix-errors:Replace append with slices.Clone"
+  },
+  "expected": [],
+  "actual": [
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "IncompatibleAssign",
+    "compiler",
+    "cannot use slices.Clone(a) (value of slice type ssa) as ssb value in variable declaration"
+   ]
+  ],
+  "ops": [],
+  "detail": "{\"case\": {\"action_kind\": \"quickfix\", \"base_errors\": 0, \"check\": \"errors\", \"diag\": {\"code\": \"slicesclone\", \"message\": \"Replace append with slices.Clone\", \"range\": {\"end\": {\"character\": 37, \"line\": 10}, \"start\": {\"character\": 13, \"line\": 10}}, \"severity\": 4}, \"kind\": \"quickfix\", \"path\": \"main.go\", \"post_errors\": 1, \"title\": \"Replace append with slices.Clone\", \"via\": \"edit\"}, \"note\": \"quick fix 'Replace append with slices.Clone' for slicesclone at main.go:11:14 raises the error count in the edited files from 0 to 1; confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 50s\", \"shape\": \"diagnostics:extra:IncompatibleAssign\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "gopls|r4_edits|diagnostics:extra:IncompatibleAssign",
+  "run_id": "9d98b7004142"
+ },
+ "replay_logs": [
+  "logs/gopls-v0.18.1-9d98b7004142-r4-replay-baseline-20260925-032505-6e4400.jsonl.gz",
+  "logs/gopls-v0.18.1-9d98b7004142-r4-replay-case-20260925-032454-ed2ebd.jsonl.gz",
+  "logs/gopls-v0.18.1-9d98b7004142-r4-replay-control-20260925-032508-152894.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

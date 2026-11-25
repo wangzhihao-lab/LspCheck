@@ -1,0 +1,448 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "9bb8ccd49c7b-v00",
+ "run_id": "9bb8ccd49c7b",
+ "oracle": "r4_edits",
+ "server": {
+  "kind": "gopls",
+  "version": "v0.23.0"
+ },
+ "project": {
+  "name": "junegunn/fzf@b1be3a8be1b8",
+  "source": "corpus",
+  "ref": "temp/corpus/junegunn__fzf@b1be3a8be1b8",
+  "commit": "b1be3a8be1b833ce5b92fbbac11637643d60a046",
+  "language": "go"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "src/pattern_test.go",
+    "positions": [
+     [
+      25,
+      37
+     ],
+     [
+      28,
+      49
+     ],
+     [
+      36,
+      27
+     ],
+     [
+      51,
+      72
+     ],
+     [
+      54,
+      56
+     ],
+     [
+      77,
+      12
+     ],
+     [
+      81,
+      57
+     ],
+     [
+      114,
+      30
+     ],
+     [
+      140,
+      38
+     ],
+     [
+      184,
+      86
+     ],
+     [
+      263,
+      66
+     ],
+     [
+      280,
+      38
+     ]
+    ],
+    "ends": [
+     [
+      25,
+      40
+     ],
+     [
+      28,
+      51
+     ],
+     [
+      36,
+      30
+     ],
+     [
+      51,
+      74
+     ],
+     [
+      54,
+      58
+     ],
+     [
+      77,
+      14
+     ],
+     [
+      81,
+      59
+     ],
+     [
+      114,
+      32
+     ],
+     [
+      140,
+      41
+     ],
+     [
+      184,
+      88
+     ],
+     [
+      263,
+      70
+     ],
+     [
+      280,
+      41
+     ]
+    ],
+    "names": [
+     "terms",
+     "inv",
+     "terms",
+     "text",
+     "len",
+     "util",
+     "res",
+     "algo",
+     "chunk",
+     "true",
+     "cacheMem",
+     "chunk"
+    ]
+   },
+   {
+    "path": "src/reader.go",
+    "positions": [
+     [
+      35,
+      78
+     ],
+     [
+      83,
+      9
+     ],
+     [
+      107,
+      25
+     ],
+     [
+      110,
+      22
+     ],
+     [
+      116,
+      10
+     ],
+     [
+      135,
+      18
+     ],
+     [
+      137,
+      23
+     ],
+     [
+      182,
+      13
+     ],
+     [
+      262,
+      10
+     ],
+     [
+      310,
+      41
+     ],
+     [
+      358,
+      35
+     ],
+     [
+      395,
+      5
+     ]
+    ],
+    "ends": [
+     [
+      35,
+      80
+     ],
+     [
+      83,
+      11
+     ],
+     [
+      107,
+      30
+     ],
+     [
+      110,
+      28
+     ],
+     [
+      116,
+      13
+     ],
+     [
+      135,
+      22
+     ],
+     [
+      137,
+      24
+     ],
+     [
+      182,
+      15
+     ],
+     [
+      262,
+      13
+     ],
+     [
+      310,
+      44
+     ],
+     [
+      358,
+      38
+     ],
+     [
+      395,
+      7
+     ]
+    ],
+    "names": [
+     "util",
+     "nil",
+     "tempFiles",
+     "readChannel",
+     "pusher",
+     "initCmd",
+     "os",
+     "src",
+     "bytes",
+     "ignore",
+     "ignore",
+     "err"
+    ]
+   },
+   {
+    "path": "src/util/concurrent_set.go",
+    "positions": [
+     [
+      6,
+      9
+     ],
+     [
+      7,
+      11
+     ],
+     [
+      11,
+      45
+     ],
+     [
+      12,
+      23
+     ],
+     [
+      13,
+      4
+     ],
+     [
+      18,
+      15
+     ],
+     [
+      19,
+      5
+     ],
+     [
+      20,
+      11
+     ],
+     [
+      21,
+      11
+     ],
+     [
+      32,
+      23
+     ],
+     [
+      32,
+      36
+     ],
+     [
+      35,
+      19
+     ]
+    ],
+    "ends": [
+     [
+      6,
+      11
+     ],
+     [
+      7,
+      12
+     ],
+     [
+      11,
+      52
+     ],
+     [
+      12,
+      24
+     ],
+     [
+      13,
+      7
+     ],
+     [
+      18,
+      22
+     ],
+     [
+      19,
+      7
+     ],
+     [
+      20,
+      13
+     ],
+     [
+      21,
+      13
+     ],
+     [
+      32,
+      24
+     ],
+     [
+      32,
+      37
+     ],
+     [
+      35,
+      20
+     ]
+    ],
+    "names": [
+     "sync",
+     "T",
+     "ConcurrentSet",
+     "T",
+     "items",
+     "ConcurrentSet",
+     "lock",
+     "lock",
+     "item",
+     "T",
+     "fn",
+     "s"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "completionInsert",
+  "path": "src/reader.go",
+  "line": 35,
+  "character": 80,
+  "extra": "util.Chars"
+ },
+ "ops": [],
+ "case": {
+  "character": 80,
+  "edits": [
+   {
+    "newText": "util.Chars",
+    "range": {
+     "end": {
+      "character": 80,
+      "line": 35
+     },
+     "start": {
+      "character": 76,
+      "line": 35
+     }
+    }
+   }
+  ],
+  "excerpt": "func NewReader(pusher func([]byte) bool, eventBox *util.EventBox, executor *util.Chars.Executor, delimNil bool, wait bool) *Reader {",
+  "item_kind": 22,
+  "kind": "completion",
+  "label": "util.Chars",
+  "line": 35,
+  "name": "util",
+  "new_errors": [
+   "36:87: missing ',' in parameter list"
+  ],
+  "path": "src/reader.go"
+ },
+ "shape": "completionInsert:gained",
+ "signature": "gopls|r4_edits|completionInsert:gained",
+ "expected": [],
+ "actual": [
+  "missing ',' in parameter list"
+ ],
+ "reproduced": "0/3",
+ "note": "accepting completion item 'util.Chars' (kind 22) after 'util' at src/reader.go:36:81 introduces [\"36:87: missing ',' in parameter list\"]; confirmed in a fresh session on the original content; flake 0/3 [r1:SCr r2:SCr r3:SCr] in 66s",
+ "violation": {
+  "oracle": "r4_edits",
+  "server": "gopls-v0.23.0",
+  "project": "junegunn/fzf@b1be3a8be1b8",
+  "key": {
+   "method": "completionInsert",
+   "path": "src/reader.go",
+   "line": 35,
+   "character": 80,
+   "extra": "util.Chars"
+  },
+  "expected": [],
+  "actual": [
+   "missing ',' in parameter list"
+  ],
+  "ops": [],
+  "detail": "{\"case\": {\"character\": 80, \"edits\": [{\"newText\": \"util.Chars\", \"range\": {\"end\": {\"character\": 80, \"line\": 35}, \"start\": {\"character\": 76, \"line\": 35}}}], \"excerpt\": \"func NewReader(pusher func([]byte) bool, eventBox *util.EventBox, executor *util.Chars.Executor, delimNil bool, wait bool) *Reader {\", \"item_kind\": 22, \"kind\": \"completion\", \"label\": \"util.Chars\", \"line\": 35, \"name\": \"util\", \"new_errors\": [\"36:87: missing ',' in parameter list\"], \"path\": \"src/reader.go\"}, \"note\": \"accepting completion item 'util.Chars' (kind 22) after 'util' at src/reader.go:36:81 introduces [\\\"36:87: missing ',' in parameter list\\\"]; confirmed in a fresh session on the original content; flake 0/3 [r1:SCr r2:SCr r3:SCr] in 66s\", \"shape\": \"completionInsert:gained\"}",
+  "reproduced": "0/3",
+  "reduced_ops": [],
+  "signature": "gopls|r4_edits|completionInsert:gained",
+  "run_id": "9bb8ccd49c7b"
+ },
+ "replay_logs": [],
+ "project_files": {},
+ "incomplete": false
+}

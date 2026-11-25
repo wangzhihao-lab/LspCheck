@@ -1,0 +1,11558 @@
+{
+ "format": 1,
+ "campaign": "main_v2",
+ "vid": "355575949131-v01",
+ "run_id": "355575949131",
+ "oracle": "r5_transforms",
+ "server": {
+  "kind": "gopls",
+  "version": "v0.23.0"
+ },
+ "project": {
+  "name": "docker/compose@c6dffb26bdfd",
+  "source": "corpus",
+  "ref": "temp/corpus/docker__compose@c6dffb26bdfd",
+  "commit": "c6dffb26bdfd94efb1f4e1c743f1241a150d120a",
+  "language": "go"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 6,
+  "targets": [
+   {
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "positions": [
+     [
+      28,
+      24
+     ],
+     [
+      35,
+      8
+     ],
+     [
+      36,
+      2
+     ],
+     [
+      36,
+      18
+     ],
+     [
+      47,
+      23
+     ],
+     [
+      59,
+      24
+     ],
+     [
+      60,
+      42
+     ],
+     [
+      69,
+      4
+     ],
+     [
+      71,
+      4
+     ],
+     [
+      79,
+      26
+     ],
+     [
+      91,
+      7
+     ],
+     [
+      99,
+      14
+     ]
+    ],
+    "ends": [
+     [
+      28,
+      28
+     ],
+     [
+      35,
+      13
+     ],
+     [
+      36,
+      3
+     ],
+     [
+      36,
+      22
+     ],
+     [
+      47,
+      28
+     ],
+     [
+      59,
+      26
+     ],
+     [
+      60,
+      46
+     ],
+     [
+      69,
+      6
+     ],
+     [
+      71,
+      6
+     ],
+     [
+      79,
+      30
+     ],
+     [
+      91,
+      11
+     ],
+     [
+      99,
+      17
+     ]
+    ],
+    "names": [
+     "testing",
+     "StringVar",
+     "fs",
+     "timeout",
+     "NewFlagSet",
+     "test",
+     "expected",
+     "name",
+     "want",
+     "Command",
+     "setupCmd",
+     "string"
+    ]
+   },
+   {
+    "path": "pkg/compose/logs.go",
+    "positions": [
+     [
+      41,
+      20
+     ],
+     [
+      58,
+      27
+     ],
+     [
+      77,
+      108
+     ],
+     [
+      87,
+      31
+     ],
+     [
+      97,
+      102
+     ],
+     [
+      98,
+      35
+     ],
+     [
+      113,
+      145
+     ],
+     [
+      162,
+      13
+     ],
+     [
+      174,
+      6
+     ],
+     [
+      180,
+      4
+     ],
+     [
+      237,
+      12
+     ],
+     [
+      237,
+      22
+     ]
+    ],
+    "ends": [
+     [
+      41,
+      21
+     ],
+     [
+      58,
+      31
+     ],
+     [
+      77,
+      111
+     ],
+     [
+      87,
+      33
+     ],
+     [
+      97,
+      106
+     ],
+     [
+      98,
+      43
+     ],
+     [
+      113,
+      147
+     ],
+     [
+      162,
+      21
+     ],
+     [
+      174,
+      7
+     ],
+     [
+      180,
+      5
+     ],
+     [
+      237,
+      13
+     ],
+     [
+      237,
+      23
+     ]
+    ],
+    "names": [
+     "s",
+     "options",
+     "Index",
+     "len",
+     "Summary",
+     "ContainerInspect",
+     "api",
+     "newRunEndTracker",
+     "t",
+     "mu",
+     "io",
+     "r"
+    ]
+   },
+   {
+    "path": "pkg/e2e/compose_run_build_once_test.go",
+    "positions": [
+     [
+      31,
+      17
+     ],
+     [
+      31,
+      75
+     ],
+     [
+      34,
+      32
+     ],
+     [
+      36,
+      13
+     ],
+     [
+      36,
+      65
+     ],
+     [
+      43,
+      22
+     ],
+     [
+      43,
+      40
+     ],
+     [
+      44,
+      1
+     ],
+     [
+      51,
+      7
+     ],
+     [
+      53,
+      18
+     ],
+     [
+      59,
+      40
+     ],
+     [
+      60,
+      4
+     ]
+    ],
+    "ends": [
+     [
+      31,
+      26
+     ],
+     [
+      31,
+      78
+     ],
+     [
+      34,
+      33
+     ],
+     [
+      36,
+      18
+     ],
+     [
+      36,
+      69
+     ],
+     [
+      43,
+      39
+     ],
+     [
+      43,
+      41
+     ],
+     [
+      44,
+      2
+     ],
+     [
+      51,
+      12
+     ],
+     [
+      53,
+      22
+     ],
+     [
+      59,
+      41
+     ],
+     [
+      60,
+      6
+     ]
+    ],
+    "names": [
+     "OutputMatchesCount",
+     "regexp",
+     "t",
+     "DockerCmd",
+     "MayFail",
+     "TestRunBuildOnceNestedDependencies",
+     "t",
+     "s",
+     "builtOnce",
+     "Project",
+     "s",
+     "Step"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "semanticTokens",
+  "path": "cmd/cmdtrace/cmd_span_test.go",
+  "line": -1,
+  "character": -1,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "cmd/cmdtrace/cmd_span_test.go"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    0,
+    2
+   ],
+   "end": [
+    0,
+    2
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    1,
+    44
+   ],
+   "end": [
+    1,
+    44
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    2,
+    0
+   ],
+   "end": [
+    2,
+    0
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    3,
+    66
+   ],
+   "end": [
+    3,
+    66
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    4,
+    67
+   ],
+   "end": [
+    4,
+    67
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    5,
+    42
+   ],
+   "end": [
+    5,
+    42
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    6,
+    0
+   ],
+   "end": [
+    6,
+    0
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    7,
+    49
+   ],
+   "end": [
+    7,
+    49
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    8,
+    0
+   ],
+   "end": [
+    8,
+    0
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    9,
+    70
+   ],
+   "end": [
+    9,
+    70
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    10,
+    68
+   ],
+   "end": [
+    10,
+    68
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    11,
+    75
+   ],
+   "end": [
+    11,
+    75
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    12,
+    70
+   ],
+   "end": [
+    12,
+    70
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    13,
+    33
+   ],
+   "end": [
+    13,
+    33
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    14,
+    2
+   ],
+   "end": [
+    14,
+    2
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    15,
+    0
+   ],
+   "end": [
+    15,
+    0
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    16,
+    16
+   ],
+   "end": [
+    16,
+    16
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    17,
+    0
+   ],
+   "end": [
+    17,
+    0
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    18,
+    8
+   ],
+   "end": [
+    18,
+    8
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    19,
+    10
+   ],
+   "end": [
+    19,
+    10
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    20,
+    10
+   ],
+   "end": [
+    20,
+    10
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    21,
+    0
+   ],
+   "end": [
+    21,
+    0
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    22,
+    25
+   ],
+   "end": [
+    22,
+    25
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    23,
+    30
+   ],
+   "end": [
+    23,
+    30
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    24,
+    0
+   ],
+   "end": [
+    24,
+    0
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    25,
+    52
+   ],
+   "end": [
+    25,
+    52
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    26,
+    1
+   ],
+   "end": [
+    26,
+    1
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    27,
+    0
+   ],
+   "end": [
+    27,
+    0
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    28,
+    33
+   ],
+   "end": [
+    28,
+    33
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    29,
+    33
+   ],
+   "end": [
+    29,
+    33
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    30,
+    50
+   ],
+   "end": [
+    30,
+    50
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    31,
+    6
+   ],
+   "end": [
+    31,
+    6
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    32,
+    16
+   ],
+   "end": [
+    32,
+    16
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    33,
+    16
+   ],
+   "end": [
+    33,
+    16
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    34,
+    2
+   ],
+   "end": [
+    34,
+    2
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    35,
+    41
+   ],
+   "end": [
+    35,
+    41
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    36,
+    43
+   ],
+   "end": [
+    36,
+    43
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    37,
+    31
+   ],
+   "end": [
+    37,
+    31
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    38,
+    33
+   ],
+   "end": [
+    38,
+    33
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    39,
+    0
+   ],
+   "end": [
+    39,
+    0
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    40,
+    20
+   ],
+   "end": [
+    40,
+    20
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    41,
+    17
+   ],
+   "end": [
+    41,
+    17
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    42,
+    24
+   ],
+   "end": [
+    42,
+    24
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    43,
+    19
+   ],
+   "end": [
+    43,
+    19
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    44,
+    3
+   ],
+   "end": [
+    44,
+    3
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    45,
+    3
+   ],
+   "end": [
+    45,
+    3
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    46,
+    23
+   ],
+   "end": [
+    46,
+    23
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    47,
+    62
+   ],
+   "end": [
+    47,
+    62
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    48,
+    17
+   ],
+   "end": [
+    48,
+    17
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    49,
+    4
+   ],
+   "end": [
+    49,
+    4
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    50,
+    3
+   ],
+   "end": [
+    50,
+    3
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    51,
+    21
+   ],
+   "end": [
+    51,
+    21
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    52,
+    16
+   ],
+   "end": [
+    52,
+    16
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    53,
+    43
+   ],
+   "end": [
+    53,
+    43
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    54,
+    4
+   ],
+   "end": [
+    54,
+    4
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    55,
+    2
+   ],
+   "end": [
+    55,
+    2
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    56,
+    0
+   ],
+   "end": [
+    56,
+    0
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    57,
+    29
+   ],
+   "end": [
+    57,
+    29
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    58,
+    39
+   ],
+   "end": [
+    58,
+    39
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    59,
+    33
+   ],
+   "end": [
+    59,
+    33
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    60,
+    49
+   ],
+   "end": [
+    60,
+    49
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    61,
+    62
+   ],
+   "end": [
+    61,
+    62
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    62,
+    4
+   ],
+   "end": [
+    62,
+    4
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    63,
+    4
+   ],
+   "end": [
+    63,
+    4
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    64,
+    2
+   ],
+   "end": [
+    64,
+    2
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    65,
+    1
+   ],
+   "end": [
+    65,
+    1
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    66,
+    0
+   ],
+   "end": [
+    66,
+    0
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    67,
+    36
+   ],
+   "end": [
+    67,
+    36
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    68,
+    20
+   ],
+   "end": [
+    68,
+    20
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    69,
+    17
+   ],
+   "end": [
+    69,
+    17
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    70,
+    32
+   ],
+   "end": [
+    70,
+    32
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    71,
+    19
+   ],
+   "end": [
+    71,
+    19
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    72,
+    3
+   ],
+   "end": [
+    72,
+    3
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    73,
+    3
+   ],
+   "end": [
+    73,
+    3
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    74,
+    56
+   ],
+   "end": [
+    74,
+    56
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    75,
+    36
+   ],
+   "end": [
+    75,
+    36
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    76,
+    46
+   ],
+   "end": [
+    76,
+    46
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    77,
+    58
+   ],
+   "end": [
+    77,
+    58
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    78,
+    44
+   ],
+   "end": [
+    78,
+    44
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    79,
+    44
+   ],
+   "end": [
+    79,
+    44
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    80,
+    0
+   ],
+   "end": [
+    80,
+    0
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    81,
+    36
+   ],
+   "end": [
+    81,
+    36
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    82,
+    35
+   ],
+   "end": [
+    82,
+    35
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    83,
+    33
+   ],
+   "end": [
+    83,
+    33
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    84,
+    0
+   ],
+   "end": [
+    84,
+    0
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    85,
+    19
+   ],
+   "end": [
+    85,
+    19
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    86,
+    5
+   ],
+   "end": [
+    86,
+    5
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    87,
+    36
+   ],
+   "end": [
+    87,
+    36
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    88,
+    4
+   ],
+   "end": [
+    88,
+    4
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    89,
+    3
+   ],
+   "end": [
+    89,
+    3
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    90,
+    37
+   ],
+   "end": [
+    90,
+    37
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    91,
+    36
+   ],
+   "end": [
+    91,
+    36
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    92,
+    64
+   ],
+   "end": [
+    92,
+    64
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    93,
+    38
+   ],
+   "end": [
+    93,
+    38
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    94,
+    0
+   ],
+   "end": [
+    94,
+    0
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    95,
+    38
+   ],
+   "end": [
+    95,
+    38
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    96,
+    0
+   ],
+   "end": [
+    96,
+    0
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    97,
+    16
+   ],
+   "end": [
+    97,
+    16
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    98,
+    5
+   ],
+   "end": [
+    98,
+    5
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    99,
+    24
+   ],
+   "end": [
+    99,
+    24
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    100,
+    4
+   ],
+   "end": [
+    100,
+    4
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    101,
+    2
+   ],
+   "end": [
+    101,
+    2
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    102,
+    0
+   ],
+   "end": [
+    102,
+    0
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    103,
+    27
+   ],
+   "end": [
+    103,
+    27
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    104,
+    37
+   ],
+   "end": [
+    104,
+    37
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    105,
+    23
+   ],
+   "end": [
+    105,
+    23
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    106,
+    26
+   ],
+   "end": [
+    106,
+    26
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    107,
+    40
+   ],
+   "end": [
+    107,
+    40
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    108,
+    57
+   ],
+   "end": [
+    108,
+    57
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    109,
+    4
+   ],
+   "end": [
+    109,
+    4
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    110,
+    4
+   ],
+   "end": [
+    110,
+    4
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    111,
+    2
+   ],
+   "end": [
+    111,
+    2
+   ],
+   "text": "\r"
+  },
+  {
+   "kind": "change",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "start": [
+    112,
+    1
+   ],
+   "end": [
+    112,
+    1
+   ],
+   "text": "\r"
+  }
+ ],
+ "case": {
+  "mapped_key": [
+   "semanticTokens",
+   "cmd/cmdtrace/cmd_span_test.go",
+   -1,
+   -1,
+   ""
+  ],
+  "transform": {
+   "back": {
+    "col": 0,
+    "eof": [],
+    "line": -1,
+    "n": 0,
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "w": 0
+   },
+   "edits": [
+    [
+     0,
+     2,
+     0,
+     2,
+     "\r"
+    ],
+    [
+     1,
+     44,
+     1,
+     44,
+     "\r"
+    ],
+    [
+     2,
+     0,
+     2,
+     0,
+     "\r"
+    ],
+    [
+     3,
+     66,
+     3,
+     66,
+     "\r"
+    ],
+    [
+     4,
+     67,
+     4,
+     67,
+     "\r"
+    ],
+    [
+     5,
+     42,
+     5,
+     42,
+     "\r"
+    ],
+    [
+     6,
+     0,
+     6,
+     0,
+     "\r"
+    ],
+    [
+     7,
+     49,
+     7,
+     49,
+     "\r"
+    ],
+    [
+     8,
+     0,
+     8,
+     0,
+     "\r"
+    ],
+    [
+     9,
+     70,
+     9,
+     70,
+     "\r"
+    ],
+    [
+     10,
+     68,
+     10,
+     68,
+     "\r"
+    ],
+    [
+     11,
+     75,
+     11,
+     75,
+     "\r"
+    ],
+    [
+     12,
+     70,
+     12,
+     70,
+     "\r"
+    ],
+    [
+     13,
+     33,
+     13,
+     33,
+     "\r"
+    ],
+    [
+     14,
+     2,
+     14,
+     2,
+     "\r"
+    ],
+    [
+     15,
+     0,
+     15,
+     0,
+     "\r"
+    ],
+    [
+     16,
+     16,
+     16,
+     16,
+     "\r"
+    ],
+    [
+     17,
+     0,
+     17,
+     0,
+     "\r"
+    ],
+    [
+     18,
+     8,
+     18,
+     8,
+     "\r"
+    ],
+    [
+     19,
+     10,
+     19,
+     10,
+     "\r"
+    ],
+    [
+     20,
+     10,
+     20,
+     10,
+     "\r"
+    ],
+    [
+     21,
+     0,
+     21,
+     0,
+     "\r"
+    ],
+    [
+     22,
+     25,
+     22,
+     25,
+     "\r"
+    ],
+    [
+     23,
+     30,
+     23,
+     30,
+     "\r"
+    ],
+    [
+     24,
+     0,
+     24,
+     0,
+     "\r"
+    ],
+    [
+     25,
+     52,
+     25,
+     52,
+     "\r"
+    ],
+    [
+     26,
+     1,
+     26,
+     1,
+     "\r"
+    ],
+    [
+     27,
+     0,
+     27,
+     0,
+     "\r"
+    ],
+    [
+     28,
+     33,
+     28,
+     33,
+     "\r"
+    ],
+    [
+     29,
+     33,
+     29,
+     33,
+     "\r"
+    ],
+    [
+     30,
+     50,
+     30,
+     50,
+     "\r"
+    ],
+    [
+     31,
+     6,
+     31,
+     6,
+     "\r"
+    ],
+    [
+     32,
+     16,
+     32,
+     16,
+     "\r"
+    ],
+    [
+     33,
+     16,
+     33,
+     16,
+     "\r"
+    ],
+    [
+     34,
+     2,
+     34,
+     2,
+     "\r"
+    ],
+    [
+     35,
+     41,
+     35,
+     41,
+     "\r"
+    ],
+    [
+     36,
+     43,
+     36,
+     43,
+     "\r"
+    ],
+    [
+     37,
+     31,
+     37,
+     31,
+     "\r"
+    ],
+    [
+     38,
+     33,
+     38,
+     33,
+     "\r"
+    ],
+    [
+     39,
+     0,
+     39,
+     0,
+     "\r"
+    ],
+    [
+     40,
+     20,
+     40,
+     20,
+     "\r"
+    ],
+    [
+     41,
+     17,
+     41,
+     17,
+     "\r"
+    ],
+    [
+     42,
+     24,
+     42,
+     24,
+     "\r"
+    ],
+    [
+     43,
+     19,
+     43,
+     19,
+     "\r"
+    ],
+    [
+     44,
+     3,
+     44,
+     3,
+     "\r"
+    ],
+    [
+     45,
+     3,
+     45,
+     3,
+     "\r"
+    ],
+    [
+     46,
+     23,
+     46,
+     23,
+     "\r"
+    ],
+    [
+     47,
+     62,
+     47,
+     62,
+     "\r"
+    ],
+    [
+     48,
+     17,
+     48,
+     17,
+     "\r"
+    ],
+    [
+     49,
+     4,
+     49,
+     4,
+     "\r"
+    ],
+    [
+     50,
+     3,
+     50,
+     3,
+     "\r"
+    ],
+    [
+     51,
+     21,
+     51,
+     21,
+     "\r"
+    ],
+    [
+     52,
+     16,
+     52,
+     16,
+     "\r"
+    ],
+    [
+     53,
+     43,
+     53,
+     43,
+     "\r"
+    ],
+    [
+     54,
+     4,
+     54,
+     4,
+     "\r"
+    ],
+    [
+     55,
+     2,
+     55,
+     2,
+     "\r"
+    ],
+    [
+     56,
+     0,
+     56,
+     0,
+     "\r"
+    ],
+    [
+     57,
+     29,
+     57,
+     29,
+     "\r"
+    ],
+    [
+     58,
+     39,
+     58,
+     39,
+     "\r"
+    ],
+    [
+     59,
+     33,
+     59,
+     33,
+     "\r"
+    ],
+    [
+     60,
+     49,
+     60,
+     49,
+     "\r"
+    ],
+    [
+     61,
+     62,
+     61,
+     62,
+     "\r"
+    ],
+    [
+     62,
+     4,
+     62,
+     4,
+     "\r"
+    ],
+    [
+     63,
+     4,
+     63,
+     4,
+     "\r"
+    ],
+    [
+     64,
+     2,
+     64,
+     2,
+     "\r"
+    ],
+    [
+     65,
+     1,
+     65,
+     1,
+     "\r"
+    ],
+    [
+     66,
+     0,
+     66,
+     0,
+     "\r"
+    ],
+    [
+     67,
+     36,
+     67,
+     36,
+     "\r"
+    ],
+    [
+     68,
+     20,
+     68,
+     20,
+     "\r"
+    ],
+    [
+     69,
+     17,
+     69,
+     17,
+     "\r"
+    ],
+    [
+     70,
+     32,
+     70,
+     32,
+     "\r"
+    ],
+    [
+     71,
+     19,
+     71,
+     19,
+     "\r"
+    ],
+    [
+     72,
+     3,
+     72,
+     3,
+     "\r"
+    ],
+    [
+     73,
+     3,
+     73,
+     3,
+     "\r"
+    ],
+    [
+     74,
+     56,
+     74,
+     56,
+     "\r"
+    ],
+    [
+     75,
+     36,
+     75,
+     36,
+     "\r"
+    ],
+    [
+     76,
+     46,
+     76,
+     46,
+     "\r"
+    ],
+    [
+     77,
+     58,
+     77,
+     58,
+     "\r"
+    ],
+    [
+     78,
+     44,
+     78,
+     44,
+     "\r"
+    ],
+    [
+     79,
+     44,
+     79,
+     44,
+     "\r"
+    ],
+    [
+     80,
+     0,
+     80,
+     0,
+     "\r"
+    ],
+    [
+     81,
+     36,
+     81,
+     36,
+     "\r"
+    ],
+    [
+     82,
+     35,
+     82,
+     35,
+     "\r"
+    ],
+    [
+     83,
+     33,
+     83,
+     33,
+     "\r"
+    ],
+    [
+     84,
+     0,
+     84,
+     0,
+     "\r"
+    ],
+    [
+     85,
+     19,
+     85,
+     19,
+     "\r"
+    ],
+    [
+     86,
+     5,
+     86,
+     5,
+     "\r"
+    ],
+    [
+     87,
+     36,
+     87,
+     36,
+     "\r"
+    ],
+    [
+     88,
+     4,
+     88,
+     4,
+     "\r"
+    ],
+    [
+     89,
+     3,
+     89,
+     3,
+     "\r"
+    ],
+    [
+     90,
+     37,
+     90,
+     37,
+     "\r"
+    ],
+    [
+     91,
+     36,
+     91,
+     36,
+     "\r"
+    ],
+    [
+     92,
+     64,
+     92,
+     64,
+     "\r"
+    ],
+    [
+     93,
+     38,
+     93,
+     38,
+     "\r"
+    ],
+    [
+     94,
+     0,
+     94,
+     0,
+     "\r"
+    ],
+    [
+     95,
+     38,
+     95,
+     38,
+     "\r"
+    ],
+    [
+     96,
+     0,
+     96,
+     0,
+     "\r"
+    ],
+    [
+     97,
+     16,
+     97,
+     16,
+     "\r"
+    ],
+    [
+     98,
+     5,
+     98,
+     5,
+     "\r"
+    ],
+    [
+     99,
+     24,
+     99,
+     24,
+     "\r"
+    ],
+    [
+     100,
+     4,
+     100,
+     4,
+     "\r"
+    ],
+    [
+     101,
+     2,
+     101,
+     2,
+     "\r"
+    ],
+    [
+     102,
+     0,
+     102,
+     0,
+     "\r"
+    ],
+    [
+     103,
+     27,
+     103,
+     27,
+     "\r"
+    ],
+    [
+     104,
+     37,
+     104,
+     37,
+     "\r"
+    ],
+    [
+     105,
+     23,
+     105,
+     23,
+     "\r"
+    ],
+    [
+     106,
+     26,
+     106,
+     26,
+     "\r"
+    ],
+    [
+     107,
+     40,
+     107,
+     40,
+     "\r"
+    ],
+    [
+     108,
+     57,
+     108,
+     57,
+     "\r"
+    ],
+    [
+     109,
+     4,
+     109,
+     4,
+     "\r"
+    ],
+    [
+     110,
+     4,
+     110,
+     4,
+     "\r"
+    ],
+    [
+     111,
+     2,
+     111,
+     2,
+     "\r"
+    ],
+    [
+     112,
+     1,
+     112,
+     1,
+     "\r"
+    ]
+   ],
+   "kind": "T4",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "shift": {
+    "col": 0,
+    "eof": [],
+    "line": -1,
+    "n": 0,
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "w": 0
+   }
+  }
+ },
+ "shape": "semanticTokens:changed",
+ "signature": "gopls|r5_transforms|semanticTokens:changed",
+ "expected": [
+  [
+   0,
+   0,
+   2,
+   "comment",
+   ""
+  ],
+  [
+   1,
+   0,
+   44,
+   "comment",
+   ""
+  ],
+  [
+   10,
+   0,
+   68,
+   "comment",
+   ""
+  ],
+  [
+   103,
+   1,
+   3,
+   "keyword",
+   ""
+  ],
+  [
+   103,
+   14,
+   5,
+   "keyword",
+   ""
+  ],
+  [
+   103,
+   20,
+   5,
+   "variable",
+   "slice"
+  ],
+  [
+   103,
+   5,
+   1,
+   "variable",
+   "definition,number"
+  ],
+  [
+   103,
+   8,
+   2,
+   "variable",
+   "definition,struct"
+  ],
+  [
+   104,
+   11,
+   4,
+   "property",
+   "string"
+  ],
+  [
+   104,
+   17,
+   4,
+   "keyword",
+   ""
+  ],
+  [
+   104,
+   2,
+   1,
+   "parameter",
+   "pointer"
+  ],
+  [
+   104,
+   22,
+   1,
+   "parameter",
+   "definition,pointer,shadowing"
+  ],
+  [
+   104,
+   24,
+   1,
+   "operator",
+   ""
+  ],
+  [
+   104,
+   25,
+   7,
+   "namespace",
+   ""
+  ],
+  [
+   104,
+   33,
+   1,
+   "type",
+   "struct"
+  ],
+  [
+   104,
+   4,
+   3,
+   "method",
+   "signature"
+  ],
+  [
+   104,
+   8,
+   2,
+   "variable",
+   "struct"
+  ],
+  [
+   105,
+   10,
+   2,
+   "variable",
+   "struct"
+  ],
+  [
+   105,
+   13,
+   8,
+   "property",
+   "signature"
+  ],
+  [
+   105,
+   3,
+   3,
+   "variable",
+   "definition,pointer"
+  ],
+  [
+   105,
+   7,
+   2,
+   "operator",
+   ""
+  ],
+  [
+   106,
+   10,
+   11,
+   "function",
+   "signature"
+  ],
+  [
+   106,
+   22,
+   3,
+   "variable",
+   "pointer"
+  ],
+  [
+   106,
+   3,
+   3,
+   "variable",
+   "definition,slice"
+  ],
+  [
+   106,
+   7,
+   2,
+   "operator",
+   ""
+  ],
+  [
+   107,
+   15,
+   9,
+   "function",
+   "signature"
+  ],
+  [
+   107,
+   25,
+   3,
+   "variable",
+   "slice"
+  ],
+  [
+   107,
+   3,
+   2,
+   "keyword",
+   ""
+  ],
+  [
+   107,
+   30,
+   2,
+   "variable",
+   "struct"
+  ],
+  [
+   107,
+   33,
+   4,
+   "property",
+   "slice"
+  ],
+  [
+   107,
+   6,
+   1,
+   "operator",
+   ""
+  ],
+  [
+   107,
+   7,
+   7,
+   "namespace",
+   ""
+  ],
+  [
+   108,
+   13,
+   17,
+   "string",
+   ""
+  ],
+  [
+   108,
+   30,
+   2,
+   "string",
+   "format"
+  ],
+  [
+   108,
+   32,
+   7,
+   "string",
+   ""
+  ],
+  [
+   108,
+   39,
+   2,
+   "string",
+   "format"
+  ],
+  [
+   108,
+   4,
+   1,
+   "parameter",
+   "pointer"
+  ],
+  [
+   108,
+   41,
+   1,
+   "string",
+   ""
+  ],
+  [
+   108,
+   44,
+   3,
+   "variable",
+   "slice"
+  ],
+  [
+   108,
+   49,
+   2,
+   "variable",
+   "struct"
+  ],
+  [
+   108,
+   52,
+   4,
+   "property",
+   "slice"
+  ],
+  [
+   108,
+   6,
+   6,
+   "method",
+   "signature"
+  ],
+  [
+   11,
+   0,
+   75,
+   "comment",
+   ""
+  ],
+  [
+   12,
+   0,
+   70,
+   "comment",
+   ""
+  ],
+  [
+   13,
+   0,
+   33,
+   "comment",
+   ""
+  ],
+  [
+   14,
+   0,
+   2,
+   "comment",
+   ""
+  ],
+  [
+   16,
+   0,
+   7,
+   "keyword",
+   ""
+  ],
+  [
+   16,
+   8,
+   8,
+   "namespace",
+   ""
+  ],
+  [
+   18,
+   0,
+   6,
+   "keyword",
+   ""
+  ],
+  [
+   19,
+   2,
+   7,
+   "namespace",
+   ""
+  ],
+  [
+   20,
+   2,
+   7,
+   "namespace",
+   ""
+  ],
+  [
+   22,
+   19,
+   5,
+   "namespace",
+   ""
+  ],
+  [
+   23,
+   1,
+   4,
+   "namespace",
+   ""
+  ],
+  [
+   25,
+   1,
+   8,
+   "namespace",
+   ""
+  ],
+  [
+   28,
+   0,
+   4,
+   "keyword",
+   ""
+  ],
+  [
+   28,
+   18,
+   1,
+   "parameter",
+   "definition,pointer"
+  ],
+  [
+   28,
+   20,
+   1,
+   "operator",
+   ""
+  ],
+  [
+   28,
+   21,
+   7,
+   "namespace",
+   ""
+  ],
+  [
+   28,
+   29,
+   1,
+   "type",
+   "struct"
+  ],
+  [
+   28,
+   5,
+   12,
+   "function",
+   "definition,signature"
+  ],
+  [
+   29,
+   1,
+   32,
+   "comment",
+   ""
+  ],
+  [
+   3,
+   0,
+   66,
+   "comment",
+   ""
+  ],
+  [
+   30,
+   1,
+   2,
+   "variable",
+   "definition,pointer"
+  ],
+  [
+   30,
+   12,
+   10,
+   "function",
+   "signature"
+  ],
+  [
+   30,
+   23,
+   4,
+   "string",
+   ""
+  ],
+  [
+   30,
+   29,
+   4,
+   "namespace",
+   ""
+  ],
+  [
+   30,
+   34,
+   15,
+   "variable",
+   "number,readonly"
+  ],
+  [
+   30,
+   4,
+   2,
+   "operator",
+   ""
+  ],
+  [
+   30,
+   7,
+   4,
+   "namespace",
+   ""
+  ],
+  [
+   31,
+   1,
+   3,
+   "keyword",
+   ""
+  ],
+  [
+   32,
+   10,
+   6,
+   "type",
+   "defaultLibrary,string"
+  ],
+  [
+   32,
+   2,
+   6,
+   "variable",
+   "definition,string"
+  ],
+  [
+   33,
+   10,
+   6,
+   "type",
+   "defaultLibrary,string"
+  ],
+  [
+   33,
+   2,
+   7,
+   "variable",
+   "definition,string"
+  ],
+  [
+   35,
+   1,
+   2,
+   "variable",
+   "pointer"
+  ],
+  [
+   35,
+   14,
+   1,
+   "operator",
+   ""
+  ],
+  [
+   35,
+   15,
+   6,
+   "variable",
+   "string"
+  ],
+  [
+   35,
+   23,
+   8,
+   "string",
+   ""
+  ],
+  [
+   35,
+   33,
+   3,
+   "string",
+   ""
+  ],
+  [
+   35,
+   38,
+   2,
+   "string",
+   ""
+  ],
+  [
+   35,
+   4,
+   9,
+   "method",
+   "signature"
+  ],
+  [
+   36,
+   1,
+   2,
+   "variable",
+   "pointer"
+  ],
+  [
+   36,
+   14,
+   1,
+   "operator",
+   ""
+  ],
+  [
+   36,
+   15,
+   7,
+   "variable",
+   "string"
+  ],
+  [
+   36,
+   24,
+   9,
+   "string",
+   ""
+  ],
+  [
+   36,
+   35,
+   3,
+   "string",
+   ""
+  ],
+  [
+   36,
+   4,
+   9,
+   "method",
+   "signature"
+  ],
+  [
+   36,
+   40,
+   2,
+   "string",
+   ""
+  ],
+  [
+   37,
+   1,
+   1,
+   "variable",
+   ""
+  ],
+  [
+   37,
+   12,
+   8,
+   "string",
+   ""
+  ],
+  [
+   37,
+   22,
+   8,
+   "string",
+   ""
+  ],
+  [
+   37,
+   3,
+   1,
+   "operator",
+   ""
+  ],
+  [
+   37,
+   5,
+   2,
+   "variable",
+   "pointer"
+  ],
+  [
+   37,
+   8,
+   3,
+   "method",
+   "signature"
+  ],
+  [
+   38,
+   1,
+   1,
+   "variable",
+   ""
+  ],
+  [
+   38,
+   12,
+   9,
+   "string",
+   ""
+  ],
+  [
+   38,
+   23,
+   9,
+   "string",
+   ""
+  ],
+  [
+   38,
+   3,
+   1,
+   "operator",
+   ""
+  ],
+  [
+   38,
+   5,
+   2,
+   "variable",
+   "pointer"
+  ],
+  [
+   38,
+   8,
+   3,
+   "method",
+   "signature"
+  ],
+  [
+   4,
+   0,
+   67,
+   "comment",
+   ""
+  ],
+  [
+   40,
+   1,
+   5,
+   "variable",
+   "definition,slice"
+  ],
+  [
+   40,
+   12,
+   6,
+   "keyword",
+   ""
+  ],
+  [
+   40,
+   7,
+   2,
+   "operator",
+   ""
+  ],
+  [
+   41,
+   11,
+   6,
+   "type",
+   "defaultLibrary,string"
+  ],
+  [
+   41,
+   2,
+   4,
+   "property",
+   "definition,string"
+  ],
+  [
+   42,
+   11,
+   1,
+   "operator",
+   ""
+  ],
+  [
+   42,
+   12,
+   4,
+   "namespace",
+   ""
+  ],
+  [
+   42,
+   17,
+   7,
+   "type",
+   "struct"
+  ],
+  [
+   42,
+   2,
+   5,
+   "property",
+   "definition,pointer"
+  ],
+  [
+   43,
+   13,
+   6,
+   "type",
+   "defaultLibrary,string"
+  ],
+  [
+   43,
+   2,
+   8,
+   "property",
+   "definition,slice"
+  ],
+  [
+   46,
+   13,
+   9,
+   "string",
+   ""
+  ],
+  [
+   46,
+   3,
+   4,
+   "property",
+   "string"
+  ],
+  [
+   47,
+   13,
+   4,
+   "namespace",
+   ""
+  ],
+  [
+   47,
+   18,
+   10,
+   "function",
+   "signature"
+  ],
+  [
+   47,
+   29,
+   9,
+   "string",
+   ""
+  ],
+  [
+   47,
+   3,
+   5,
+   "property",
+   "pointer"
+  ],
+  [
+   47,
+   40,
+   4,
+   "namespace",
+   ""
+  ],
+  [
+   47,
+   45,
+   15,
+   "variable",
+   "number,readonly"
+  ],
+  [
+   48,
+   13,
+   3,
+   "variable",
+   "defaultLibrary,readonly"
+  ],
+  [
+   48,
+   3,
+   8,
+   "property",
+   "slice"
+  ],
+  [
+   5,
+   0,
+   42,
+   "comment",
+   ""
+  ],
+  [
+   51,
+   13,
+   7,
+   "string",
+   ""
+  ],
+  [
+   51,
+   3,
+   4,
+   "property",
+   "string"
+  ],
+  [
+   52,
+   13,
+   2,
+   "variable",
+   "pointer"
+  ],
+  [
+   52,
+   3,
+   5,
+   "property",
+   "pointer"
+  ],
+  [
+   53,
+   15,
+   6,
+   "type",
+   "defaultLibrary,string"
+  ],
+  [
+   53,
+   22,
+   8,
+   "string",
+   ""
+  ],
+  [
+   53,
+   3,
+   8,
+   "property",
+   "slice"
+  ],
+  [
+   53,
+   32,
+   9,
+   "string",
+   ""
+  ],
+  [
+   57,
+   1,
+   3,
+   "keyword",
+   ""
+  ],
+  [
+   57,
+   16,
+   5,
+   "keyword",
+   ""
+  ],
+  [
+   57,
+   22,
+   5,
+   "variable",
+   "slice"
+  ],
+  [
+   57,
+   5,
+   1,
+   "variable",
+   "definition,number"
+  ],
+  [
+   57,
+   8,
+   4,
+   "variable",
+   "definition,struct"
+  ],
+  [
+   58,
+   13,
+   4,
+   "property",
+   "string"
+  ],
+  [
+   58,
+   19,
+   4,
+   "keyword",
+   ""
+  ],
+  [
+   58,
+   2,
+   1,
+   "parameter",
+   "pointer"
+  ],
+  [
+   58,
+   24,
+   1,
+   "parameter",
+   "definition,pointer,shadowing"
+  ],
+  [
+   58,
+   26,
+   1,
+   "operator",
+   ""
+  ],
+  [
+   58,
+   27,
+   7,
+   "namespace",
+   ""
+  ],
+  [
+   58,
+   35,
+   1,
+   "type",
+   "struct"
+  ],
+  [
+   58,
+   4,
+   3,
+   "method",
+   "signature"
+  ],
+  [
+   58,
+   8,
+   4,
+   "variable",
+   "struct"
+  ],
+  [
+   59,
+   10,
+   2,
+   "operator",
+   ""
+  ],
+  [
+   59,
+   13,
+   8,
+   "function",
+   "signature"
+  ],
+  [
+   59,
+   22,
+   4,
+   "variable",
+   "struct"
+  ],
+  [
+   59,
+   27,
+   5,
+   "property",
+   "pointer"
+  ],
+  [
+   59,
+   3,
+   6,
+   "variable",
+   "definition,slice"
+  ],
+  [
+   60,
+   15,
+   9,
+   "function",
+   "signature"
+  ],
+  [
+   60,
+   25,
+   6,
+   "variable",
+   "slice"
+  ],
+  [
+   60,
+   3,
+   2,
+   "keyword",
+   ""
+  ],
+  [
+   60,
+   33,
+   4,
+   "variable",
+   "struct"
+  ],
+  [
+   60,
+   38,
+   8,
+   "property",
+   "slice"
+  ],
+  [
+   60,
+   6,
+   1,
+   "operator",
+   ""
+  ],
+  [
+   60,
+   7,
+   7,
+   "namespace",
+   ""
+  ],
+  [
+   61,
+   13,
+   10,
+   "string",
+   ""
+  ],
+  [
+   61,
+   23,
+   2,
+   "string",
+   "format"
+  ],
+  [
+   61,
+   25,
+   10,
+   "string",
+   ""
+  ],
+  [
+   61,
+   35,
+   2,
+   "string",
+   "format"
+  ],
+  [
+   61,
+   37,
+   1,
+   "string",
+   ""
+  ],
+  [
+   61,
+   4,
+   1,
+   "parameter",
+   "pointer"
+  ],
+  [
+   61,
+   40,
+   4,
+   "variable",
+   "struct"
+  ],
+  [
+   61,
+   45,
+   8,
+   "property",
+   "slice"
+  ],
+  [
+   61,
+   55,
+   6,
+   "variable",
+   "slice"
+  ],
+  [
+   61,
+   6,
+   6,
+   "method",
+   "signature"
+  ],
+  [
+   67,
+   0,
+   4,
+   "keyword",
+   ""
+  ],
+  [
+   67,
+   21,
+   1,
+   "parameter",
+   "definition,pointer"
+  ],
+  [
+   67,
+   23,
+   1,
+   "operator",
+   ""
+  ],
+  [
+   67,
+   24,
+   7,
+   "namespace",
+   ""
+  ],
+  [
+   67,
+   32,
+   1,
+   "type",
+   "struct"
+  ],
+  [
+   67,
+   5,
+   15,
+   "function",
+   "definition,signature"
+  ],
+  [
+   68,
+   1,
+   5,
+   "variable",
+   "definition,slice"
+  ],
+  [
+   68,
+   12,
+   6,
+   "keyword",
+   ""
+  ],
+  [
+   68,
+   7,
+   2,
+   "operator",
+   ""
+  ],
+  [
+   69,
+   11,
+   6,
+   "type",
+   "defaultLibrary,string"
+  ],
+  [
+   69,
+   2,
+   4,
+   "property",
+   "definition,string"
+  ],
+  [
+   7,
+   0,
+   49,
+   "comment",
+   ""
+  ],
+  [
+   70,
+   11,
+   4,
+   "keyword",
+   ""
+  ],
+  [
+   70,
+   18,
+   1,
+   "operator",
+   ""
+  ],
+  [
+   70,
+   19,
+   5,
+   "namespace",
+   ""
+  ],
+  [
+   70,
+   2,
+   8,
+   "property",
+   "definition,signature"
+  ],
+  [
+   70,
+   25,
+   7,
+   "type",
+   "struct"
+  ],
+  [
+   71,
+   13,
+   6,
+   "type",
+   "defaultLibrary,string"
+  ],
+  [
+   71,
+   2,
+   4,
+   "property",
+   "definition,slice"
+  ],
+  [
+   74,
+   3,
+   4,
+   "property",
+   "string"
+  ],
+  [
+   74,
+   9,
+   46,
+   "string",
+   ""
+  ],
+  [
+   75,
+   13,
+   4,
+   "keyword",
+   ""
+  ],
+  [
+   75,
+   20,
+   1,
+   "operator",
+   ""
+  ],
+  [
+   75,
+   21,
+   5,
+   "namespace",
+   ""
+  ],
+  [
+   75,
+   27,
+   7,
+   "type",
+   "struct"
+  ],
+  [
+   75,
+   3,
+   8,
+   "property",
+   "signature"
+  ],
+  [
+   76,
+   14,
+   2,
+   "operator",
+   ""
+  ],
+  [
+   76,
+   17,
+   1,
+   "operator",
+   ""
+  ],
+  [
+   76,
+   18,
+   5,
+   "namespace",
+   ""
+  ],
+  [
+   76,
+   24,
+   7,
+   "type",
+   "struct"
+  ],
+  [
+   76,
+   32,
+   3,
+   "property",
+   "string"
+  ],
+  [
+   76,
+   37,
+   8,
+   "string",
+   ""
+  ],
+  [
+   76,
+   4,
+   9,
+   "variable",
+   "definition,pointer"
+  ],
+  [
+   77,
+   15,
+   2,
+   "operator",
+   ""
+  ],
+  [
+   77,
+   18,
+   1,
+   "operator",
+   ""
+  ],
+  [
+   77,
+   19,
+   5,
+   "namespace",
+   ""
+  ],
+  [
+   77,
+   25,
+   7,
+   "type",
+   "struct"
+  ],
+  [
+   77,
+   33,
+   3,
+   "property",
+   "string"
+  ],
+  [
+   77,
+   38,
+   8,
+   "namespace",
+   ""
+  ],
+  [
+   77,
+   4,
+   10,
+   "variable",
+   "definition,pointer"
+  ],
+  [
+   77,
+   47,
+   10,
+   "variable",
+   "readonly"
+  ],
+  [
+   78,
+   13,
+   2,
+   "operator",
+   ""
+  ],
+  [
+   78,
+   16,
+   1,
+   "operator",
+   ""
+  ],
+  [
+   78,
+   17,
+   5,
+   "namespace",
+   ""
+  ],
+  [
+   78,
+   23,
+   7,
+   "type",
+   "struct"
+  ],
+  [
+   78,
+   31,
+   3,
+   "property",
+   "string"
+  ],
+  [
+   78,
+   36,
+   7,
+   "string",
+   ""
+  ],
+  [
+   78,
+   4,
+   8,
+   "variable",
+   "definition,pointer"
+  ],
+  [
+   79,
+   13,
+   2,
+   "operator",
+   ""
+  ],
+  [
+   79,
+   16,
+   1,
+   "operator",
+   ""
+  ],
+  [
+   79,
+   17,
+   5,
+   "namespace",
+   ""
+  ],
+  [
+   79,
+   23,
+   7,
+   "type",
+   "struct"
+  ],
+  [
+   79,
+   31,
+   3,
+   "property",
+   "string"
+  ],
+  [
+   79,
+   36,
+   7,
+   "string",
+   ""
+  ],
+  [
+   79,
+   4,
+   8,
+   "variable",
+   "definition,pointer"
+  ],
+  [
+   81,
+   14,
+   10,
+   "method",
+   "signature"
+  ],
+  [
+   81,
+   25,
+   10,
+   "variable",
+   "pointer"
+  ],
+  [
+   81,
+   4,
+   9,
+   "variable",
+   "pointer"
+  ],
+  [
+   82,
+   15,
+   10,
+   "method",
+   "signature"
+  ],
+  [
+   82,
+   26,
+   8,
+   "variable",
+   "pointer"
+  ],
+  [
+   82,
+   4,
+   10,
+   "variable",
+   "pointer"
+  ],
+  [
+   83,
+   13,
+   10,
+   "method",
+   "signature"
+  ],
+  [
+   83,
+   24,
+   8,
+   "variable",
+   "pointer"
+  ],
+  [
+   83,
+   4,
+   8,
+   "variable",
+   "pointer"
+  ],
+  [
+   85,
+   11,
+   8,
+   "variable",
+   "pointer"
+  ],
+  [
+   85,
+   4,
+   6,
+   "keyword",
+   ""
+  ],
+  [
+   87,
+   11,
+   6,
+   "type",
+   "defaultLibrary,string"
+  ],
+  [
+   87,
+   18,
+   7,
+   "string",
+   ""
+  ],
+  [
+   87,
+   27,
+   7,
+   "string",
+   ""
+  ],
+  [
+   87,
+   3,
+   4,
+   "property",
+   "slice"
+  ],
+  [
+   9,
+   0,
+   70,
+   "comment",
+   ""
+  ],
+  [
+   90,
+   3,
+   4,
+   "property",
+   "string"
+  ],
+  [
+   90,
+   9,
+   27,
+   "string",
+   ""
+  ],
+  [
+   91,
+   13,
+   4,
+   "keyword",
+   ""
+  ],
+  [
+   91,
+   20,
+   1,
+   "operator",
+   ""
+  ],
+  [
+   91,
+   21,
+   5,
+   "namespace",
+   ""
+  ],
+  [
+   91,
+   27,
+   7,
+   "type",
+   "struct"
+  ],
+  [
+   91,
+   3,
+   8,
+   "property",
+   "signature"
+  ],
+  [
+   92,
+   21,
+   2,
+   "operator",
+   ""
+  ],
+  [
+   92,
+   24,
+   1,
+   "operator",
+   ""
+  ],
+  [
+   92,
+   25,
+   5,
+   "namespace",
+   ""
+  ],
+  [
+   92,
+   31,
+   7,
+   "type",
+   "struct"
+  ],
+  [
+   92,
+   39,
+   3,
+   "property",
+   "string"
+  ],
+  [
+   92,
+   4,
+   16,
+   "variable",
+   "definition,pointer"
+  ],
+  [
+   92,
+   44,
+   8,
+   "namespace",
+   ""
+  ],
+  [
+   92,
+   53,
+   10,
+   "variable",
+   "readonly"
+  ],
+  [
+   93,
+   10,
+   2,
+   "operator",
+   ""
+  ],
+  [
+   93,
+   13,
+   1,
+   "operator",
+   ""
+  ],
+  [
+   93,
+   14,
+   5,
+   "namespace",
+   ""
+  ],
+  [
+   93,
+   20,
+   7,
+   "type",
+   "struct"
+  ],
+  [
+   93,
+   28,
+   3,
+   "property",
+   "string"
+  ],
+  [
+   93,
+   33,
+   4,
+   "string",
+   ""
+  ],
+  [
+   93,
+   4,
+   5,
+   "variable",
+   "definition,pointer"
+  ],
+  [
+   95,
+   21,
+   10,
+   "method",
+   "signature"
+  ],
+  [
+   95,
+   32,
+   5,
+   "variable",
+   "pointer"
+  ],
+  [
+   95,
+   4,
+   16,
+   "variable",
+   "pointer"
+  ],
+  [
+   97,
+   11,
+   5,
+   "variable",
+   "pointer"
+  ],
+  [
+   97,
+   4,
+   6,
+   "keyword",
+   ""
+  ],
+  [
+   99,
+   11,
+   6,
+   "type",
+   "defaultLibrary,string"
+  ],
+  [
+   99,
+   18,
+   4,
+   "string",
+   ""
+  ],
+  [
+   99,
+   3,
+   4,
+   "property",
+   "slice"
+  ]
+ ],
+ "actual": [
+  [
+   0,
+   0,
+   2,
+   "comment",
+   ""
+  ],
+  [
+   103,
+   1,
+   3,
+   "keyword",
+   ""
+  ],
+  [
+   103,
+   14,
+   5,
+   "keyword",
+   ""
+  ],
+  [
+   103,
+   20,
+   5,
+   "variable",
+   "slice"
+  ],
+  [
+   103,
+   5,
+   1,
+   "variable",
+   "definition,number"
+  ],
+  [
+   103,
+   8,
+   2,
+   "variable",
+   "definition,struct"
+  ],
+  [
+   104,
+   11,
+   4,
+   "property",
+   "string"
+  ],
+  [
+   104,
+   17,
+   4,
+   "keyword",
+   ""
+  ],
+  [
+   104,
+   2,
+   1,
+   "parameter",
+   "pointer"
+  ],
+  [
+   104,
+   22,
+   1,
+   "parameter",
+   "definition,pointer,shadowing"
+  ],
+  [
+   104,
+   24,
+   1,
+   "operator",
+   ""
+  ],
+  [
+   104,
+   25,
+   7,
+   "namespace",
+   ""
+  ],
+  [
+   104,
+   33,
+   1,
+   "type",
+   "struct"
+  ],
+  [
+   104,
+   4,
+   3,
+   "method",
+   "signature"
+  ],
+  [
+   104,
+   8,
+   2,
+   "variable",
+   "struct"
+  ],
+  [
+   105,
+   10,
+   2,
+   "variable",
+   "struct"
+  ],
+  [
+   105,
+   13,
+   8,
+   "property",
+   "signature"
+  ],
+  [
+   105,
+   3,
+   3,
+   "variable",
+   "definition,pointer"
+  ],
+  [
+   105,
+   7,
+   2,
+   "operator",
+   ""
+  ],
+  [
+   106,
+   10,
+   11,
+   "function",
+   "signature"
+  ],
+  [
+   106,
+   22,
+   3,
+   "variable",
+   "pointer"
+  ],
+  [
+   106,
+   3,
+   3,
+   "variable",
+   "definition,slice"
+  ],
+  [
+   106,
+   7,
+   2,
+   "operator",
+   ""
+  ],
+  [
+   107,
+   15,
+   9,
+   "function",
+   "signature"
+  ],
+  [
+   107,
+   25,
+   3,
+   "variable",
+   "slice"
+  ],
+  [
+   107,
+   3,
+   2,
+   "keyword",
+   ""
+  ],
+  [
+   107,
+   30,
+   2,
+   "variable",
+   "struct"
+  ],
+  [
+   107,
+   33,
+   4,
+   "property",
+   "slice"
+  ],
+  [
+   107,
+   6,
+   1,
+   "operator",
+   ""
+  ],
+  [
+   107,
+   7,
+   7,
+   "namespace",
+   ""
+  ],
+  [
+   108,
+   13,
+   17,
+   "string",
+   ""
+  ],
+  [
+   108,
+   30,
+   2,
+   "string",
+   "format"
+  ],
+  [
+   108,
+   32,
+   7,
+   "string",
+   ""
+  ],
+  [
+   108,
+   39,
+   2,
+   "string",
+   "format"
+  ],
+  [
+   108,
+   4,
+   1,
+   "parameter",
+   "pointer"
+  ],
+  [
+   108,
+   41,
+   1,
+   "string",
+   ""
+  ],
+  [
+   108,
+   44,
+   3,
+   "variable",
+   "slice"
+  ],
+  [
+   108,
+   49,
+   2,
+   "variable",
+   "struct"
+  ],
+  [
+   108,
+   52,
+   4,
+   "property",
+   "slice"
+  ],
+  [
+   108,
+   6,
+   6,
+   "method",
+   "signature"
+  ],
+  [
+   13,
+   21,
+   2,
+   "comment",
+   ""
+  ],
+  [
+   16,
+   0,
+   7,
+   "keyword",
+   ""
+  ],
+  [
+   16,
+   8,
+   8,
+   "namespace",
+   ""
+  ],
+  [
+   18,
+   0,
+   6,
+   "keyword",
+   ""
+  ],
+  [
+   19,
+   2,
+   7,
+   "namespace",
+   ""
+  ],
+  [
+   20,
+   2,
+   7,
+   "namespace",
+   ""
+  ],
+  [
+   22,
+   19,
+   5,
+   "namespace",
+   ""
+  ],
+  [
+   23,
+   1,
+   4,
+   "namespace",
+   ""
+  ],
+  [
+   25,
+   1,
+   8,
+   "namespace",
+   ""
+  ],
+  [
+   28,
+   0,
+   4,
+   "keyword",
+   ""
+  ],
+  [
+   28,
+   18,
+   1,
+   "parameter",
+   "definition,pointer"
+  ],
+  [
+   28,
+   20,
+   1,
+   "operator",
+   ""
+  ],
+  [
+   28,
+   21,
+   7,
+   "namespace",
+   ""
+  ],
+  [
+   28,
+   29,
+   1,
+   "type",
+   "struct"
+  ],
+  [
+   28,
+   5,
+   12,
+   "function",
+   "definition,signature"
+  ],
+  [
+   29,
+   1,
+   32,
+   "comment",
+   ""
+  ],
+  [
+   30,
+   1,
+   2,
+   "variable",
+   "definition,pointer"
+  ],
+  [
+   30,
+   12,
+   10,
+   "function",
+   "signature"
+  ],
+  [
+   30,
+   23,
+   4,
+   "string",
+   ""
+  ],
+  [
+   30,
+   29,
+   4,
+   "namespace",
+   ""
+  ],
+  [
+   30,
+   34,
+   15,
+   "variable",
+   "number,readonly"
+  ],
+  [
+   30,
+   4,
+   2,
+   "operator",
+   ""
+  ],
+  [
+   30,
+   7,
+   4,
+   "namespace",
+   ""
+  ],
+  [
+   31,
+   1,
+   3,
+   "keyword",
+   ""
+  ],
+  [
+   32,
+   10,
+   6,
+   "type",
+   "defaultLibrary,string"
+  ],
+  [
+   32,
+   2,
+   6,
+   "variable",
+   "definition,string"
+  ],
+  [
+   33,
+   10,
+   6,
+   "type",
+   "defaultLibrary,string"
+  ],
+  [
+   33,
+   2,
+   7,
+   "variable",
+   "definition,string"
+  ],
+  [
+   35,
+   1,
+   2,
+   "variable",
+   "pointer"
+  ],
+  [
+   35,
+   14,
+   1,
+   "operator",
+   ""
+  ],
+  [
+   35,
+   15,
+   6,
+   "variable",
+   "string"
+  ],
+  [
+   35,
+   23,
+   8,
+   "string",
+   ""
+  ],
+  [
+   35,
+   33,
+   3,
+   "string",
+   ""
+  ],
+  [
+   35,
+   38,
+   2,
+   "string",
+   ""
+  ],
+  [
+   35,
+   4,
+   9,
+   "method",
+   "signature"
+  ],
+  [
+   36,
+   1,
+   2,
+   "variable",
+   "pointer"
+  ],
+  [
+   36,
+   14,
+   1,
+   "operator",
+   ""
+  ],
+  [
+   36,
+   15,
+   7,
+   "variable",
+   "string"
+  ],
+  [
+   36,
+   24,
+   9,
+   "string",
+   ""
+  ],
+  [
+   36,
+   35,
+   3,
+   "string",
+   ""
+  ],
+  [
+   36,
+   4,
+   9,
+   "method",
+   "signature"
+  ],
+  [
+   36,
+   40,
+   2,
+   "string",
+   ""
+  ],
+  [
+   37,
+   1,
+   1,
+   "variable",
+   ""
+  ],
+  [
+   37,
+   12,
+   8,
+   "string",
+   ""
+  ],
+  [
+   37,
+   22,
+   8,
+   "string",
+   ""
+  ],
+  [
+   37,
+   3,
+   1,
+   "operator",
+   ""
+  ],
+  [
+   37,
+   5,
+   2,
+   "variable",
+   "pointer"
+  ],
+  [
+   37,
+   8,
+   3,
+   "method",
+   "signature"
+  ],
+  [
+   38,
+   1,
+   1,
+   "variable",
+   ""
+  ],
+  [
+   38,
+   12,
+   9,
+   "string",
+   ""
+  ],
+  [
+   38,
+   23,
+   9,
+   "string",
+   ""
+  ],
+  [
+   38,
+   3,
+   1,
+   "operator",
+   ""
+  ],
+  [
+   38,
+   5,
+   2,
+   "variable",
+   "pointer"
+  ],
+  [
+   38,
+   8,
+   3,
+   "method",
+   "signature"
+  ],
+  [
+   40,
+   1,
+   5,
+   "variable",
+   "definition,slice"
+  ],
+  [
+   40,
+   12,
+   6,
+   "keyword",
+   ""
+  ],
+  [
+   40,
+   7,
+   2,
+   "operator",
+   ""
+  ],
+  [
+   41,
+   11,
+   6,
+   "type",
+   "defaultLibrary,string"
+  ],
+  [
+   41,
+   2,
+   4,
+   "property",
+   "definition,string"
+  ],
+  [
+   42,
+   11,
+   1,
+   "operator",
+   ""
+  ],
+  [
+   42,
+   12,
+   4,
+   "namespace",
+   ""
+  ],
+  [
+   42,
+   17,
+   7,
+   "type",
+   "struct"
+  ],
+  [
+   42,
+   2,
+   5,
+   "property",
+   "definition,pointer"
+  ],
+  [
+   43,
+   13,
+   6,
+   "type",
+   "defaultLibrary,string"
+  ],
+  [
+   43,
+   2,
+   8,
+   "property",
+   "definition,slice"
+  ],
+  [
+   46,
+   13,
+   9,
+   "string",
+   ""
+  ],
+  [
+   46,
+   3,
+   4,
+   "property",
+   "string"
+  ],
+  [
+   47,
+   13,
+   4,
+   "namespace",
+   ""
+  ],
+  [
+   47,
+   18,
+   10,
+   "function",
+   "signature"
+  ],
+  [
+   47,
+   29,
+   9,
+   "string",
+   ""
+  ],
+  [
+   47,
+   3,
+   5,
+   "property",
+   "pointer"
+  ],
+  [
+   47,
+   40,
+   4,
+   "namespace",
+   ""
+  ],
+  [
+   47,
+   45,
+   15,
+   "variable",
+   "number,readonly"
+  ],
+  [
+   48,
+   13,
+   3,
+   "variable",
+   "defaultLibrary,readonly"
+  ],
+  [
+   48,
+   3,
+   8,
+   "property",
+   "slice"
+  ],
+  [
+   51,
+   13,
+   7,
+   "string",
+   ""
+  ],
+  [
+   51,
+   3,
+   4,
+   "property",
+   "string"
+  ],
+  [
+   52,
+   13,
+   2,
+   "variable",
+   "pointer"
+  ],
+  [
+   52,
+   3,
+   5,
+   "property",
+   "pointer"
+  ],
+  [
+   53,
+   15,
+   6,
+   "type",
+   "defaultLibrary,string"
+  ],
+  [
+   53,
+   22,
+   8,
+   "string",
+   ""
+  ],
+  [
+   53,
+   3,
+   8,
+   "property",
+   "slice"
+  ],
+  [
+   53,
+   32,
+   9,
+   "string",
+   ""
+  ],
+  [
+   57,
+   1,
+   3,
+   "keyword",
+   ""
+  ],
+  [
+   57,
+   16,
+   5,
+   "keyword",
+   ""
+  ],
+  [
+   57,
+   22,
+   5,
+   "variable",
+   "slice"
+  ],
+  [
+   57,
+   5,
+   1,
+   "variable",
+   "definition,number"
+  ],
+  [
+   57,
+   8,
+   4,
+   "variable",
+   "definition,struct"
+  ],
+  [
+   58,
+   13,
+   4,
+   "property",
+   "string"
+  ],
+  [
+   58,
+   19,
+   4,
+   "keyword",
+   ""
+  ],
+  [
+   58,
+   2,
+   1,
+   "parameter",
+   "pointer"
+  ],
+  [
+   58,
+   24,
+   1,
+   "parameter",
+   "definition,pointer,shadowing"
+  ],
+  [
+   58,
+   26,
+   1,
+   "operator",
+   ""
+  ],
+  [
+   58,
+   27,
+   7,
+   "namespace",
+   ""
+  ],
+  [
+   58,
+   35,
+   1,
+   "type",
+   "struct"
+  ],
+  [
+   58,
+   4,
+   3,
+   "method",
+   "signature"
+  ],
+  [
+   58,
+   8,
+   4,
+   "variable",
+   "struct"
+  ],
+  [
+   59,
+   10,
+   2,
+   "operator",
+   ""
+  ],
+  [
+   59,
+   13,
+   8,
+   "function",
+   "signature"
+  ],
+  [
+   59,
+   22,
+   4,
+   "variable",
+   "struct"
+  ],
+  [
+   59,
+   27,
+   5,
+   "property",
+   "pointer"
+  ],
+  [
+   59,
+   3,
+   6,
+   "variable",
+   "definition,slice"
+  ],
+  [
+   60,
+   15,
+   9,
+   "function",
+   "signature"
+  ],
+  [
+   60,
+   25,
+   6,
+   "variable",
+   "slice"
+  ],
+  [
+   60,
+   3,
+   2,
+   "keyword",
+   ""
+  ],
+  [
+   60,
+   33,
+   4,
+   "variable",
+   "struct"
+  ],
+  [
+   60,
+   38,
+   8,
+   "property",
+   "slice"
+  ],
+  [
+   60,
+   6,
+   1,
+   "operator",
+   ""
+  ],
+  [
+   60,
+   7,
+   7,
+   "namespace",
+   ""
+  ],
+  [
+   61,
+   13,
+   10,
+   "string",
+   ""
+  ],
+  [
+   61,
+   23,
+   2,
+   "string",
+   "format"
+  ],
+  [
+   61,
+   25,
+   10,
+   "string",
+   ""
+  ],
+  [
+   61,
+   35,
+   2,
+   "string",
+   "format"
+  ],
+  [
+   61,
+   37,
+   1,
+   "string",
+   ""
+  ],
+  [
+   61,
+   4,
+   1,
+   "parameter",
+   "pointer"
+  ],
+  [
+   61,
+   40,
+   4,
+   "variable",
+   "struct"
+  ],
+  [
+   61,
+   45,
+   8,
+   "property",
+   "slice"
+  ],
+  [
+   61,
+   55,
+   6,
+   "variable",
+   "slice"
+  ],
+  [
+   61,
+   6,
+   6,
+   "method",
+   "signature"
+  ],
+  [
+   67,
+   0,
+   4,
+   "keyword",
+   ""
+  ],
+  [
+   67,
+   21,
+   1,
+   "parameter",
+   "definition,pointer"
+  ],
+  [
+   67,
+   23,
+   1,
+   "operator",
+   ""
+  ],
+  [
+   67,
+   24,
+   7,
+   "namespace",
+   ""
+  ],
+  [
+   67,
+   32,
+   1,
+   "type",
+   "struct"
+  ],
+  [
+   67,
+   5,
+   15,
+   "function",
+   "definition,signature"
+  ],
+  [
+   68,
+   1,
+   5,
+   "variable",
+   "definition,slice"
+  ],
+  [
+   68,
+   12,
+   6,
+   "keyword",
+   ""
+  ],
+  [
+   68,
+   7,
+   2,
+   "operator",
+   ""
+  ],
+  [
+   69,
+   11,
+   6,
+   "type",
+   "defaultLibrary,string"
+  ],
+  [
+   69,
+   2,
+   4,
+   "property",
+   "definition,string"
+  ],
+  [
+   70,
+   11,
+   4,
+   "keyword",
+   ""
+  ],
+  [
+   70,
+   18,
+   1,
+   "operator",
+   ""
+  ],
+  [
+   70,
+   19,
+   5,
+   "namespace",
+   ""
+  ],
+  [
+   70,
+   2,
+   8,
+   "property",
+   "definition,signature"
+  ],
+  [
+   70,
+   25,
+   7,
+   "type",
+   "struct"
+  ],
+  [
+   71,
+   13,
+   6,
+   "type",
+   "defaultLibrary,string"
+  ],
+  [
+   71,
+   2,
+   4,
+   "property",
+   "definition,slice"
+  ],
+  [
+   74,
+   3,
+   4,
+   "property",
+   "string"
+  ],
+  [
+   74,
+   9,
+   46,
+   "string",
+   ""
+  ],
+  [
+   75,
+   13,
+   4,
+   "keyword",
+   ""
+  ],
+  [
+   75,
+   20,
+   1,
+   "operator",
+   ""
+  ],
+  [
+   75,
+   21,
+   5,
+   "namespace",
+   ""
+  ],
+  [
+   75,
+   27,
+   7,
+   "type",
+   "struct"
+  ],
+  [
+   75,
+   3,
+   8,
+   "property",
+   "signature"
+  ],
+  [
+   76,
+   14,
+   2,
+   "operator",
+   ""
+  ],
+  [
+   76,
+   17,
+   1,
+   "operator",
+   ""
+  ],
+  [
+   76,
+   18,
+   5,
+   "namespace",
+   ""
+  ],
+  [
+   76,
+   24,
+   7,
+   "type",
+   "struct"
+  ],
+  [
+   76,
+   32,
+   3,
+   "property",
+   "string"
+  ],
+  [
+   76,
+   37,
+   8,
+   "string",
+   ""
+  ],
+  [
+   76,
+   4,
+   9,
+   "variable",
+   "definition,pointer"
+  ],
+  [
+   77,
+   15,
+   2,
+   "operator",
+   ""
+  ],
+  [
+   77,
+   18,
+   1,
+   "operator",
+   ""
+  ],
+  [
+   77,
+   19,
+   5,
+   "namespace",
+   ""
+  ],
+  [
+   77,
+   25,
+   7,
+   "type",
+   "struct"
+  ],
+  [
+   77,
+   33,
+   3,
+   "property",
+   "string"
+  ],
+  [
+   77,
+   38,
+   8,
+   "namespace",
+   ""
+  ],
+  [
+   77,
+   4,
+   10,
+   "variable",
+   "definition,pointer"
+  ],
+  [
+   77,
+   47,
+   10,
+   "variable",
+   "readonly"
+  ],
+  [
+   78,
+   13,
+   2,
+   "operator",
+   ""
+  ],
+  [
+   78,
+   16,
+   1,
+   "operator",
+   ""
+  ],
+  [
+   78,
+   17,
+   5,
+   "namespace",
+   ""
+  ],
+  [
+   78,
+   23,
+   7,
+   "type",
+   "struct"
+  ],
+  [
+   78,
+   31,
+   3,
+   "property",
+   "string"
+  ],
+  [
+   78,
+   36,
+   7,
+   "string",
+   ""
+  ],
+  [
+   78,
+   4,
+   8,
+   "variable",
+   "definition,pointer"
+  ],
+  [
+   79,
+   13,
+   2,
+   "operator",
+   ""
+  ],
+  [
+   79,
+   16,
+   1,
+   "operator",
+   ""
+  ],
+  [
+   79,
+   17,
+   5,
+   "namespace",
+   ""
+  ],
+  [
+   79,
+   23,
+   7,
+   "type",
+   "struct"
+  ],
+  [
+   79,
+   31,
+   3,
+   "property",
+   "string"
+  ],
+  [
+   79,
+   36,
+   7,
+   "string",
+   ""
+  ],
+  [
+   79,
+   4,
+   8,
+   "variable",
+   "definition,pointer"
+  ],
+  [
+   81,
+   14,
+   10,
+   "method",
+   "signature"
+  ],
+  [
+   81,
+   25,
+   10,
+   "variable",
+   "pointer"
+  ],
+  [
+   81,
+   4,
+   9,
+   "variable",
+   "pointer"
+  ],
+  [
+   82,
+   15,
+   10,
+   "method",
+   "signature"
+  ],
+  [
+   82,
+   26,
+   8,
+   "variable",
+   "pointer"
+  ],
+  [
+   82,
+   4,
+   10,
+   "variable",
+   "pointer"
+  ],
+  [
+   83,
+   13,
+   10,
+   "method",
+   "signature"
+  ],
+  [
+   83,
+   24,
+   8,
+   "variable",
+   "pointer"
+  ],
+  [
+   83,
+   4,
+   8,
+   "variable",
+   "pointer"
+  ],
+  [
+   85,
+   11,
+   8,
+   "variable",
+   "pointer"
+  ],
+  [
+   85,
+   4,
+   6,
+   "keyword",
+   ""
+  ],
+  [
+   87,
+   11,
+   6,
+   "type",
+   "defaultLibrary,string"
+  ],
+  [
+   87,
+   18,
+   7,
+   "string",
+   ""
+  ],
+  [
+   87,
+   27,
+   7,
+   "string",
+   ""
+  ],
+  [
+   87,
+   3,
+   4,
+   "property",
+   "slice"
+  ],
+  [
+   90,
+   3,
+   4,
+   "property",
+   "string"
+  ],
+  [
+   90,
+   9,
+   27,
+   "string",
+   ""
+  ],
+  [
+   91,
+   13,
+   4,
+   "keyword",
+   ""
+  ],
+  [
+   91,
+   20,
+   1,
+   "operator",
+   ""
+  ],
+  [
+   91,
+   21,
+   5,
+   "namespace",
+   ""
+  ],
+  [
+   91,
+   27,
+   7,
+   "type",
+   "struct"
+  ],
+  [
+   91,
+   3,
+   8,
+   "property",
+   "signature"
+  ],
+  [
+   92,
+   21,
+   2,
+   "operator",
+   ""
+  ],
+  [
+   92,
+   24,
+   1,
+   "operator",
+   ""
+  ],
+  [
+   92,
+   25,
+   5,
+   "namespace",
+   ""
+  ],
+  [
+   92,
+   31,
+   7,
+   "type",
+   "struct"
+  ],
+  [
+   92,
+   39,
+   3,
+   "property",
+   "string"
+  ],
+  [
+   92,
+   4,
+   16,
+   "variable",
+   "definition,pointer"
+  ],
+  [
+   92,
+   44,
+   8,
+   "namespace",
+   ""
+  ],
+  [
+   92,
+   53,
+   10,
+   "variable",
+   "readonly"
+  ],
+  [
+   93,
+   10,
+   2,
+   "operator",
+   ""
+  ],
+  [
+   93,
+   13,
+   1,
+   "operator",
+   ""
+  ],
+  [
+   93,
+   14,
+   5,
+   "namespace",
+   ""
+  ],
+  [
+   93,
+   20,
+   7,
+   "type",
+   "struct"
+  ],
+  [
+   93,
+   28,
+   3,
+   "property",
+   "string"
+  ],
+  [
+   93,
+   33,
+   4,
+   "string",
+   ""
+  ],
+  [
+   93,
+   4,
+   5,
+   "variable",
+   "definition,pointer"
+  ],
+  [
+   95,
+   21,
+   10,
+   "method",
+   "signature"
+  ],
+  [
+   95,
+   32,
+   5,
+   "variable",
+   "pointer"
+  ],
+  [
+   95,
+   4,
+   16,
+   "variable",
+   "pointer"
+  ],
+  [
+   97,
+   11,
+   5,
+   "variable",
+   "pointer"
+  ],
+  [
+   97,
+   4,
+   6,
+   "keyword",
+   ""
+  ],
+  [
+   99,
+   11,
+   6,
+   "type",
+   "defaultLibrary,string"
+  ],
+  [
+   99,
+   18,
+   4,
+   "string",
+   ""
+  ],
+  [
+   99,
+   3,
+   4,
+   "property",
+   "slice"
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "T4 cmd/cmdtrace/cmd_span_test.go: 113 edit(s), first [0, 2, 0, 2]; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 51s",
+ "violation": {
+  "oracle": "r5_transforms",
+  "server": "gopls-v0.23.0",
+  "project": "docker/compose@c6dffb26bdfd",
+  "key": {
+   "method": "semanticTokens",
+   "path": "cmd/cmdtrace/cmd_span_test.go",
+   "line": -1,
+   "character": -1,
+   "extra": ""
+  },
+  "expected": [
+   [
+    0,
+    0,
+    2,
+    "comment",
+    ""
+   ],
+   [
+    1,
+    0,
+    44,
+    "comment",
+    ""
+   ],
+   [
+    10,
+    0,
+    68,
+    "comment",
+    ""
+   ],
+   [
+    103,
+    1,
+    3,
+    "keyword",
+    ""
+   ],
+   [
+    103,
+    14,
+    5,
+    "keyword",
+    ""
+   ],
+   [
+    103,
+    20,
+    5,
+    "variable",
+    "slice"
+   ],
+   [
+    103,
+    5,
+    1,
+    "variable",
+    "definition,number"
+   ],
+   [
+    103,
+    8,
+    2,
+    "variable",
+    "definition,struct"
+   ],
+   [
+    104,
+    11,
+    4,
+    "property",
+    "string"
+   ],
+   [
+    104,
+    17,
+    4,
+    "keyword",
+    ""
+   ],
+   [
+    104,
+    2,
+    1,
+    "parameter",
+    "pointer"
+   ],
+   [
+    104,
+    22,
+    1,
+    "parameter",
+    "definition,pointer,shadowing"
+   ],
+   [
+    104,
+    24,
+    1,
+    "operator",
+    ""
+   ],
+   [
+    104,
+    25,
+    7,
+    "namespace",
+    ""
+   ],
+   [
+    104,
+    33,
+    1,
+    "type",
+    "struct"
+   ],
+   [
+    104,
+    4,
+    3,
+    "method",
+    "signature"
+   ],
+   [
+    104,
+    8,
+    2,
+    "variable",
+    "struct"
+   ],
+   [
+    105,
+    10,
+    2,
+    "variable",
+    "struct"
+   ],
+   [
+    105,
+    13,
+    8,
+    "property",
+    "signature"
+   ],
+   [
+    105,
+    3,
+    3,
+    "variable",
+    "definition,pointer"
+   ],
+   [
+    105,
+    7,
+    2,
+    "operator",
+    ""
+   ],
+   [
+    106,
+    10,
+    11,
+    "function",
+    "signature"
+   ],
+   [
+    106,
+    22,
+    3,
+    "variable",
+    "pointer"
+   ],
+   [
+    106,
+    3,
+    3,
+    "variable",
+    "definition,slice"
+   ],
+   [
+    106,
+    7,
+    2,
+    "operator",
+    ""
+   ],
+   [
+    107,
+    15,
+    9,
+    "function",
+    "signature"
+   ],
+   [
+    107,
+    25,
+    3,
+    "variable",
+    "slice"
+   ],
+   [
+    107,
+    3,
+    2,
+    "keyword",
+    ""
+   ],
+   [
+    107,
+    30,
+    2,
+    "variable",
+    "struct"
+   ],
+   [
+    107,
+    33,
+    4,
+    "property",
+    "slice"
+   ],
+   [
+    107,
+    6,
+    1,
+    "operator",
+    ""
+   ],
+   [
+    107,
+    7,
+    7,
+    "namespace",
+    ""
+   ],
+   [
+    108,
+    13,
+    17,
+    "string",
+    ""
+   ],
+   [
+    108,
+    30,
+    2,
+    "string",
+    "format"
+   ],
+   [
+    108,
+    32,
+    7,
+    "string",
+    ""
+   ],
+   [
+    108,
+    39,
+    2,
+    "string",
+    "format"
+   ],
+   [
+    108,
+    4,
+    1,
+    "parameter",
+    "pointer"
+   ],
+   [
+    108,
+    41,
+    1,
+    "string",
+    ""
+   ],
+   [
+    108,
+    44,
+    3,
+    "variable",
+    "slice"
+   ],
+   [
+    108,
+    49,
+    2,
+    "variable",
+    "struct"
+   ],
+   [
+    108,
+    52,
+    4,
+    "property",
+    "slice"
+   ],
+   [
+    108,
+    6,
+    6,
+    "method",
+    "signature"
+   ],
+   [
+    11,
+    0,
+    75,
+    "comment",
+    ""
+   ],
+   [
+    12,
+    0,
+    70,
+    "comment",
+    ""
+   ],
+   [
+    13,
+    0,
+    33,
+    "comment",
+    ""
+   ],
+   [
+    14,
+    0,
+    2,
+    "comment",
+    ""
+   ],
+   [
+    16,
+    0,
+    7,
+    "keyword",
+    ""
+   ],
+   [
+    16,
+    8,
+    8,
+    "namespace",
+    ""
+   ],
+   [
+    18,
+    0,
+    6,
+    "keyword",
+    ""
+   ],
+   [
+    19,
+    2,
+    7,
+    "namespace",
+    ""
+   ],
+   [
+    20,
+    2,
+    7,
+    "namespace",
+    ""
+   ],
+   [
+    22,
+    19,
+    5,
+    "namespace",
+    ""
+   ],
+   [
+    23,
+    1,
+    4,
+    "namespace",
+    ""
+   ],
+   [
+    25,
+    1,
+    8,
+    "namespace",
+    ""
+   ],
+   [
+    28,
+    0,
+    4,
+    "keyword",
+    ""
+   ],
+   [
+    28,
+    18,
+    1,
+    "parameter",
+    "definition,pointer"
+   ],
+   [
+    28,
+    20,
+    1,
+    "operator",
+    ""
+   ],
+   [
+    28,
+    21,
+    7,
+    "namespace",
+    ""
+   ],
+   [
+    28,
+    29,
+    1,
+    "type",
+    "struct"
+   ],
+   [
+    28,
+    5,
+    12,
+    "function",
+    "definition,signature"
+   ],
+   [
+    29,
+    1,
+    32,
+    "comment",
+    ""
+   ],
+   [
+    3,
+    0,
+    66,
+    "comment",
+    ""
+   ],
+   [
+    30,
+    1,
+    2,
+    "variable",
+    "definition,pointer"
+   ],
+   [
+    30,
+    12,
+    10,
+    "function",
+    "signature"
+   ],
+   [
+    30,
+    23,
+    4,
+    "string",
+    ""
+   ],
+   [
+    30,
+    29,
+    4,
+    "namespace",
+    ""
+   ],
+   [
+    30,
+    34,
+    15,
+    "variable",
+    "number,readonly"
+   ],
+   [
+    30,
+    4,
+    2,
+    "operator",
+    ""
+   ],
+   [
+    30,
+    7,
+    4,
+    "namespace",
+    ""
+   ],
+   [
+    31,
+    1,
+    3,
+    "keyword",
+    ""
+   ],
+   [
+    32,
+    10,
+    6,
+    "type",
+    "defaultLibrary,string"
+   ],
+   [
+    32,
+    2,
+    6,
+    "variable",
+    "definition,string"
+   ],
+   [
+    33,
+    10,
+    6,
+    "type",
+    "defaultLibrary,string"
+   ],
+   [
+    33,
+    2,
+    7,
+    "variable",
+    "definition,string"
+   ],
+   [
+    35,
+    1,
+    2,
+    "variable",
+    "pointer"
+   ],
+   [
+    35,
+    14,
+    1,
+    "operator",
+    ""
+   ],
+   [
+    35,
+    15,
+    6,
+    "variable",
+    "string"
+   ],
+   [
+    35,
+    23,
+    8,
+    "string",
+    ""
+   ],
+   [
+    35,
+    33,
+    3,
+    "string",
+    ""
+   ],
+   [
+    35,
+    38,
+    2,
+    "string",
+    ""
+   ],
+   [
+    35,
+    4,
+    9,
+    "method",
+    "signature"
+   ],
+   [
+    36,
+    1,
+    2,
+    "variable",
+    "pointer"
+   ],
+   [
+    36,
+    14,
+    1,
+    "operator",
+    ""
+   ],
+   [
+    36,
+    15,
+    7,
+    "variable",
+    "string"
+   ],
+   [
+    36,
+    24,
+    9,
+    "string",
+    ""
+   ],
+   [
+    36,
+    35,
+    3,
+    "string",
+    ""
+   ],
+   [
+    36,
+    4,
+    9,
+    "method",
+    "signature"
+   ],
+   [
+    36,
+    40,
+    2,
+    "string",
+    ""
+   ],
+   [
+    37,
+    1,
+    1,
+    "variable",
+    ""
+   ],
+   [
+    37,
+    12,
+    8,
+    "string",
+    ""
+   ],
+   [
+    37,
+    22,
+    8,
+    "string",
+    ""
+   ],
+   [
+    37,
+    3,
+    1,
+    "operator",
+    ""
+   ],
+   [
+    37,
+    5,
+    2,
+    "variable",
+    "pointer"
+   ],
+   [
+    37,
+    8,
+    3,
+    "method",
+    "signature"
+   ],
+   [
+    38,
+    1,
+    1,
+    "variable",
+    ""
+   ],
+   [
+    38,
+    12,
+    9,
+    "string",
+    ""
+   ],
+   [
+    38,
+    23,
+    9,
+    "string",
+    ""
+   ],
+   [
+    38,
+    3,
+    1,
+    "operator",
+    ""
+   ],
+   [
+    38,
+    5,
+    2,
+    "variable",
+    "pointer"
+   ],
+   [
+    38,
+    8,
+    3,
+    "method",
+    "signature"
+   ],
+   [
+    4,
+    0,
+    67,
+    "comment",
+    ""
+   ],
+   [
+    40,
+    1,
+    5,
+    "variable",
+    "definition,slice"
+   ],
+   [
+    40,
+    12,
+    6,
+    "keyword",
+    ""
+   ],
+   [
+    40,
+    7,
+    2,
+    "operator",
+    ""
+   ],
+   [
+    41,
+    11,
+    6,
+    "type",
+    "defaultLibrary,string"
+   ],
+   [
+    41,
+    2,
+    4,
+    "property",
+    "definition,string"
+   ],
+   [
+    42,
+    11,
+    1,
+    "operator",
+    ""
+   ],
+   [
+    42,
+    12,
+    4,
+    "namespace",
+    ""
+   ],
+   [
+    42,
+    17,
+    7,
+    "type",
+    "struct"
+   ],
+   [
+    42,
+    2,
+    5,
+    "property",
+    "definition,pointer"
+   ],
+   [
+    43,
+    13,
+    6,
+    "type",
+    "defaultLibrary,string"
+   ],
+   [
+    43,
+    2,
+    8,
+    "property",
+    "definition,slice"
+   ],
+   [
+    46,
+    13,
+    9,
+    "string",
+    ""
+   ],
+   [
+    46,
+    3,
+    4,
+    "property",
+    "string"
+   ],
+   [
+    47,
+    13,
+    4,
+    "namespace",
+    ""
+   ],
+   [
+    47,
+    18,
+    10,
+    "function",
+    "signature"
+   ],
+   [
+    47,
+    29,
+    9,
+    "string",
+    ""
+   ],
+   [
+    47,
+    3,
+    5,
+    "property",
+    "pointer"
+   ],
+   [
+    47,
+    40,
+    4,
+    "namespace",
+    ""
+   ],
+   [
+    47,
+    45,
+    15,
+    "variable",
+    "number,readonly"
+   ],
+   [
+    48,
+    13,
+    3,
+    "variable",
+    "defaultLibrary,readonly"
+   ],
+   [
+    48,
+    3,
+    8,
+    "property",
+    "slice"
+   ],
+   [
+    5,
+    0,
+    42,
+    "comment",
+    ""
+   ],
+   [
+    51,
+    13,
+    7,
+    "string",
+    ""
+   ],
+   [
+    51,
+    3,
+    4,
+    "property",
+    "string"
+   ],
+   [
+    52,
+    13,
+    2,
+    "variable",
+    "pointer"
+   ],
+   [
+    52,
+    3,
+    5,
+    "property",
+    "pointer"
+   ],
+   [
+    53,
+    15,
+    6,
+    "type",
+    "defaultLibrary,string"
+   ],
+   [
+    53,
+    22,
+    8,
+    "string",
+    ""
+   ],
+   [
+    53,
+    3,
+    8,
+    "property",
+    "slice"
+   ],
+   [
+    53,
+    32,
+    9,
+    "string",
+    ""
+   ],
+   [
+    57,
+    1,
+    3,
+    "keyword",
+    ""
+   ],
+   [
+    57,
+    16,
+    5,
+    "keyword",
+    ""
+   ],
+   [
+    57,
+    22,
+    5,
+    "variable",
+    "slice"
+   ],
+   [
+    57,
+    5,
+    1,
+    "variable",
+    "definition,number"
+   ],
+   [
+    57,
+    8,
+    4,
+    "variable",
+    "definition,struct"
+   ],
+   [
+    58,
+    13,
+    4,
+    "property",
+    "string"
+   ],
+   [
+    58,
+    19,
+    4,
+    "keyword",
+    ""
+   ],
+   [
+    58,
+    2,
+    1,
+    "parameter",
+    "pointer"
+   ],
+   [
+    58,
+    24,
+    1,
+    "parameter",
+    "definition,pointer,shadowing"
+   ],
+   [
+    58,
+    26,
+    1,
+    "operator",
+    ""
+   ],
+   [
+    58,
+    27,
+    7,
+    "namespace",
+    ""
+   ],
+   [
+    58,
+    35,
+    1,
+    "type",
+    "struct"
+   ],
+   [
+    58,
+    4,
+    3,
+    "method",
+    "signature"
+   ],
+   [
+    58,
+    8,
+    4,
+    "variable",
+    "struct"
+   ],
+   [
+    59,
+    10,
+    2,
+    "operator",
+    ""
+   ],
+   [
+    59,
+    13,
+    8,
+    "function",
+    "signature"
+   ],
+   [
+    59,
+    22,
+    4,
+    "variable",
+    "struct"
+   ],
+   [
+    59,
+    27,
+    5,
+    "property",
+    "pointer"
+   ],
+   [
+    59,
+    3,
+    6,
+    "variable",
+    "definition,slice"
+   ],
+   [
+    60,
+    15,
+    9,
+    "function",
+    "signature"
+   ],
+   [
+    60,
+    25,
+    6,
+    "variable",
+    "slice"
+   ],
+   [
+    60,
+    3,
+    2,
+    "keyword",
+    ""
+   ],
+   [
+    60,
+    33,
+    4,
+    "variable",
+    "struct"
+   ],
+   [
+    60,
+    38,
+    8,
+    "property",
+    "slice"
+   ],
+   [
+    60,
+    6,
+    1,
+    "operator",
+    ""
+   ],
+   [
+    60,
+    7,
+    7,
+    "namespace",
+    ""
+   ],
+   [
+    61,
+    13,
+    10,
+    "string",
+    ""
+   ],
+   [
+    61,
+    23,
+    2,
+    "string",
+    "format"
+   ],
+   [
+    61,
+    25,
+    10,
+    "string",
+    ""
+   ],
+   [
+    61,
+    35,
+    2,
+    "string",
+    "format"
+   ],
+   [
+    61,
+    37,
+    1,
+    "string",
+    ""
+   ],
+   [
+    61,
+    4,
+    1,
+    "parameter",
+    "pointer"
+   ],
+   [
+    61,
+    40,
+    4,
+    "variable",
+    "struct"
+   ],
+   [
+    61,
+    45,
+    8,
+    "property",
+    "slice"
+   ],
+   [
+    61,
+    55,
+    6,
+    "variable",
+    "slice"
+   ],
+   [
+    61,
+    6,
+    6,
+    "method",
+    "signature"
+   ],
+   [
+    67,
+    0,
+    4,
+    "keyword",
+    ""
+   ],
+   [
+    67,
+    21,
+    1,
+    "parameter",
+    "definition,pointer"
+   ],
+   [
+    67,
+    23,
+    1,
+    "operator",
+    ""
+   ],
+   [
+    67,
+    24,
+    7,
+    "namespace",
+    ""
+   ],
+   [
+    67,
+    32,
+    1,
+    "type",
+    "struct"
+   ],
+   [
+    67,
+    5,
+    15,
+    "function",
+    "definition,signature"
+   ],
+   [
+    68,
+    1,
+    5,
+    "variable",
+    "definition,slice"
+   ],
+   [
+    68,
+    12,
+    6,
+    "keyword",
+    ""
+   ],
+   [
+    68,
+    7,
+    2,
+    "operator",
+    ""
+   ],
+   [
+    69,
+    11,
+    6,
+    "type",
+    "defaultLibrary,string"
+   ],
+   [
+    69,
+    2,
+    4,
+    "property",
+    "definition,string"
+   ],
+   [
+    7,
+    0,
+    49,
+    "comment",
+    ""
+   ],
+   [
+    70,
+    11,
+    4,
+    "keyword",
+    ""
+   ],
+   [
+    70,
+    18,
+    1,
+    "operator",
+    ""
+   ],
+   [
+    70,
+    19,
+    5,
+    "namespace",
+    ""
+   ],
+   [
+    70,
+    2,
+    8,
+    "property",
+    "definition,signature"
+   ],
+   [
+    70,
+    25,
+    7,
+    "type",
+    "struct"
+   ],
+   [
+    71,
+    13,
+    6,
+    "type",
+    "defaultLibrary,string"
+   ],
+   [
+    71,
+    2,
+    4,
+    "property",
+    "definition,slice"
+   ],
+   [
+    74,
+    3,
+    4,
+    "property",
+    "string"
+   ],
+   [
+    74,
+    9,
+    46,
+    "string",
+    ""
+   ],
+   [
+    75,
+    13,
+    4,
+    "keyword",
+    ""
+   ],
+   [
+    75,
+    20,
+    1,
+    "operator",
+    ""
+   ],
+   [
+    75,
+    21,
+    5,
+    "namespace",
+    ""
+   ],
+   [
+    75,
+    27,
+    7,
+    "type",
+    "struct"
+   ],
+   [
+    75,
+    3,
+    8,
+    "property",
+    "signature"
+   ],
+   [
+    76,
+    14,
+    2,
+    "operator",
+    ""
+   ],
+   [
+    76,
+    17,
+    1,
+    "operator",
+    ""
+   ],
+   [
+    76,
+    18,
+    5,
+    "namespace",
+    ""
+   ],
+   [
+    76,
+    24,
+    7,
+    "type",
+    "struct"
+   ],
+   [
+    76,
+    32,
+    3,
+    "property",
+    "string"
+   ],
+   [
+    76,
+    37,
+    8,
+    "string",
+    ""
+   ],
+   [
+    76,
+    4,
+    9,
+    "variable",
+    "definition,pointer"
+   ],
+   [
+    77,
+    15,
+    2,
+    "operator",
+    ""
+   ],
+   [
+    77,
+    18,
+    1,
+    "operator",
+    ""
+   ],
+   [
+    77,
+    19,
+    5,
+    "namespace",
+    ""
+   ],
+   [
+    77,
+    25,
+    7,
+    "type",
+    "struct"
+   ],
+   [
+    77,
+    33,
+    3,
+    "property",
+    "string"
+   ],
+   [
+    77,
+    38,
+    8,
+    "namespace",
+    ""
+   ],
+   [
+    77,
+    4,
+    10,
+    "variable",
+    "definition,pointer"
+   ],
+   [
+    77,
+    47,
+    10,
+    "variable",
+    "readonly"
+   ],
+   [
+    78,
+    13,
+    2,
+    "operator",
+    ""
+   ],
+   [
+    78,
+    16,
+    1,
+    "operator",
+    ""
+   ],
+   [
+    78,
+    17,
+    5,
+    "namespace",
+    ""
+   ],
+   [
+    78,
+    23,
+    7,
+    "type",
+    "struct"
+   ],
+   [
+    78,
+    31,
+    3,
+    "property",
+    "string"
+   ],
+   [
+    78,
+    36,
+    7,
+    "string",
+    ""
+   ],
+   [
+    78,
+    4,
+    8,
+    "variable",
+    "definition,pointer"
+   ],
+   [
+    79,
+    13,
+    2,
+    "operator",
+    ""
+   ],
+   [
+    79,
+    16,
+    1,
+    "operator",
+    ""
+   ],
+   [
+    79,
+    17,
+    5,
+    "namespace",
+    ""
+   ],
+   [
+    79,
+    23,
+    7,
+    "type",
+    "struct"
+   ],
+   [
+    79,
+    31,
+    3,
+    "property",
+    "string"
+   ],
+   [
+    79,
+    36,
+    7,
+    "string",
+    ""
+   ],
+   [
+    79,
+    4,
+    8,
+    "variable",
+    "definition,pointer"
+   ],
+   [
+    81,
+    14,
+    10,
+    "method",
+    "signature"
+   ],
+   [
+    81,
+    25,
+    10,
+    "variable",
+    "pointer"
+   ],
+   [
+    81,
+    4,
+    9,
+    "variable",
+    "pointer"
+   ],
+   [
+    82,
+    15,
+    10,
+    "method",
+    "signature"
+   ],
+   [
+    82,
+    26,
+    8,
+    "variable",
+    "pointer"
+   ],
+   [
+    82,
+    4,
+    10,
+    "variable",
+    "pointer"
+   ],
+   [
+    83,
+    13,
+    10,
+    "method",
+    "signature"
+   ],
+   [
+    83,
+    24,
+    8,
+    "variable",
+    "pointer"
+   ],
+   [
+    83,
+    4,
+    8,
+    "variable",
+    "pointer"
+   ],
+   [
+    85,
+    11,
+    8,
+    "variable",
+    "pointer"
+   ],
+   [
+    85,
+    4,
+    6,
+    "keyword",
+    ""
+   ],
+   [
+    87,
+    11,
+    6,
+    "type",
+    "defaultLibrary,string"
+   ],
+   [
+    87,
+    18,
+    7,
+    "string",
+    ""
+   ],
+   [
+    87,
+    27,
+    7,
+    "string",
+    ""
+   ],
+   [
+    87,
+    3,
+    4,
+    "property",
+    "slice"
+   ],
+   [
+    9,
+    0,
+    70,
+    "comment",
+    ""
+   ],
+   [
+    90,
+    3,
+    4,
+    "property",
+    "string"
+   ],
+   [
+    90,
+    9,
+    27,
+    "string",
+    ""
+   ],
+   [
+    91,
+    13,
+    4,
+    "keyword",
+    ""
+   ],
+   [
+    91,
+    20,
+    1,
+    "operator",
+    ""
+   ],
+   [
+    91,
+    21,
+    5,
+    "namespace",
+    ""
+   ],
+   [
+    91,
+    27,
+    7,
+    "type",
+    "struct"
+   ],
+   [
+    91,
+    3,
+    8,
+    "property",
+    "signature"
+   ],
+   [
+    92,
+    21,
+    2,
+    "operator",
+    ""
+   ],
+   [
+    92,
+    24,
+    1,
+    "operator",
+    ""
+   ],
+   [
+    92,
+    25,
+    5,
+    "namespace",
+    ""
+   ],
+   [
+    92,
+    31,
+    7,
+    "type",
+    "struct"
+   ],
+   [
+    92,
+    39,
+    3,
+    "property",
+    "string"
+   ],
+   [
+    92,
+    4,
+    16,
+    "variable",
+    "definition,pointer"
+   ],
+   [
+    92,
+    44,
+    8,
+    "namespace",
+    ""
+   ],
+   [
+    92,
+    53,
+    10,
+    "variable",
+    "readonly"
+   ],
+   [
+    93,
+    10,
+    2,
+    "operator",
+    ""
+   ],
+   [
+    93,
+    13,
+    1,
+    "operator",
+    ""
+   ],
+   [
+    93,
+    14,
+    5,
+    "namespace",
+    ""
+   ],
+   [
+    93,
+    20,
+    7,
+    "type",
+    "struct"
+   ],
+   [
+    93,
+    28,
+    3,
+    "property",
+    "string"
+   ],
+   [
+    93,
+    33,
+    4,
+    "string",
+    ""
+   ],
+   [
+    93,
+    4,
+    5,
+    "variable",
+    "definition,pointer"
+   ],
+   [
+    95,
+    21,
+    10,
+    "method",
+    "signature"
+   ],
+   [
+    95,
+    32,
+    5,
+    "variable",
+    "pointer"
+   ],
+   [
+    95,
+    4,
+    16,
+    "variable",
+    "pointer"
+   ],
+   [
+    97,
+    11,
+    5,
+    "variable",
+    "pointer"
+   ],
+   [
+    97,
+    4,
+    6,
+    "keyword",
+    ""
+   ],
+   [
+    99,
+    11,
+    6,
+    "type",
+    "defaultLibrary,string"
+   ],
+   [
+    99,
+    18,
+    4,
+    "string",
+    ""
+   ],
+   [
+    99,
+    3,
+    4,
+    "property",
+    "slice"
+   ]
+  ],
+  "actual": [
+   [
+    0,
+    0,
+    2,
+    "comment",
+    ""
+   ],
+   [
+    103,
+    1,
+    3,
+    "keyword",
+    ""
+   ],
+   [
+    103,
+    14,
+    5,
+    "keyword",
+    ""
+   ],
+   [
+    103,
+    20,
+    5,
+    "variable",
+    "slice"
+   ],
+   [
+    103,
+    5,
+    1,
+    "variable",
+    "definition,number"
+   ],
+   [
+    103,
+    8,
+    2,
+    "variable",
+    "definition,struct"
+   ],
+   [
+    104,
+    11,
+    4,
+    "property",
+    "string"
+   ],
+   [
+    104,
+    17,
+    4,
+    "keyword",
+    ""
+   ],
+   [
+    104,
+    2,
+    1,
+    "parameter",
+    "pointer"
+   ],
+   [
+    104,
+    22,
+    1,
+    "parameter",
+    "definition,pointer,shadowing"
+   ],
+   [
+    104,
+    24,
+    1,
+    "operator",
+    ""
+   ],
+   [
+    104,
+    25,
+    7,
+    "namespace",
+    ""
+   ],
+   [
+    104,
+    33,
+    1,
+    "type",
+    "struct"
+   ],
+   [
+    104,
+    4,
+    3,
+    "method",
+    "signature"
+   ],
+   [
+    104,
+    8,
+    2,
+    "variable",
+    "struct"
+   ],
+   [
+    105,
+    10,
+    2,
+    "variable",
+    "struct"
+   ],
+   [
+    105,
+    13,
+    8,
+    "property",
+    "signature"
+   ],
+   [
+    105,
+    3,
+    3,
+    "variable",
+    "definition,pointer"
+   ],
+   [
+    105,
+    7,
+    2,
+    "operator",
+    ""
+   ],
+   [
+    106,
+    10,
+    11,
+    "function",
+    "signature"
+   ],
+   [
+    106,
+    22,
+    3,
+    "variable",
+    "pointer"
+   ],
+   [
+    106,
+    3,
+    3,
+    "variable",
+    "definition,slice"
+   ],
+   [
+    106,
+    7,
+    2,
+    "operator",
+    ""
+   ],
+   [
+    107,
+    15,
+    9,
+    "function",
+    "signature"
+   ],
+   [
+    107,
+    25,
+    3,
+    "variable",
+    "slice"
+   ],
+   [
+    107,
+    3,
+    2,
+    "keyword",
+    ""
+   ],
+   [
+    107,
+    30,
+    2,
+    "variable",
+    "struct"
+   ],
+   [
+    107,
+    33,
+    4,
+    "property",
+    "slice"
+   ],
+   [
+    107,
+    6,
+    1,
+    "operator",
+    ""
+   ],
+   [
+    107,
+    7,
+    7,
+    "namespace",
+    ""
+   ],
+   [
+    108,
+    13,
+    17,
+    "string",
+    ""
+   ],
+   [
+    108,
+    30,
+    2,
+    "string",
+    "format"
+   ],
+   [
+    108,
+    32,
+    7,
+    "string",
+    ""
+   ],
+   [
+    108,
+    39,
+    2,
+    "string",
+    "format"
+   ],
+   [
+    108,
+    4,
+    1,
+    "parameter",
+    "pointer"
+   ],
+   [
+    108,
+    41,
+    1,
+    "string",
+    ""
+   ],
+   [
+    108,
+    44,
+    3,
+    "variable",
+    "slice"
+   ],
+   [
+    108,
+    49,
+    2,
+    "variable",
+    "struct"
+   ],
+   [
+    108,
+    52,
+    4,
+    "property",
+    "slice"
+   ],
+   [
+    108,
+    6,
+    6,
+    "method",
+    "signature"
+   ],
+   [
+    13,
+    21,
+    2,
+    "comment",
+    ""
+   ],
+   [
+    16,
+    0,
+    7,
+    "keyword",
+    ""
+   ],
+   [
+    16,
+    8,
+    8,
+    "namespace",
+    ""
+   ],
+   [
+    18,
+    0,
+    6,
+    "keyword",
+    ""
+   ],
+   [
+    19,
+    2,
+    7,
+    "namespace",
+    ""
+   ],
+   [
+    20,
+    2,
+    7,
+    "namespace",
+    ""
+   ],
+   [
+    22,
+    19,
+    5,
+    "namespace",
+    ""
+   ],
+   [
+    23,
+    1,
+    4,
+    "namespace",
+    ""
+   ],
+   [
+    25,
+    1,
+    8,
+    "namespace",
+    ""
+   ],
+   [
+    28,
+    0,
+    4,
+    "keyword",
+    ""
+   ],
+   [
+    28,
+    18,
+    1,
+    "parameter",
+    "definition,pointer"
+   ],
+   [
+    28,
+    20,
+    1,
+    "operator",
+    ""
+   ],
+   [
+    28,
+    21,
+    7,
+    "namespace",
+    ""
+   ],
+   [
+    28,
+    29,
+    1,
+    "type",
+    "struct"
+   ],
+   [
+    28,
+    5,
+    12,
+    "function",
+    "definition,signature"
+   ],
+   [
+    29,
+    1,
+    32,
+    "comment",
+    ""
+   ],
+   [
+    30,
+    1,
+    2,
+    "variable",
+    "definition,pointer"
+   ],
+   [
+    30,
+    12,
+    10,
+    "function",
+    "signature"
+   ],
+   [
+    30,
+    23,
+    4,
+    "string",
+    ""
+   ],
+   [
+    30,
+    29,
+    4,
+    "namespace",
+    ""
+   ],
+   [
+    30,
+    34,
+    15,
+    "variable",
+    "number,readonly"
+   ],
+   [
+    30,
+    4,
+    2,
+    "operator",
+    ""
+   ],
+   [
+    30,
+    7,
+    4,
+    "namespace",
+    ""
+   ],
+   [
+    31,
+    1,
+    3,
+    "keyword",
+    ""
+   ],
+   [
+    32,
+    10,
+    6,
+    "type",
+    "defaultLibrary,string"
+   ],
+   [
+    32,
+    2,
+    6,
+    "variable",
+    "definition,string"
+   ],
+   [
+    33,
+    10,
+    6,
+    "type",
+    "defaultLibrary,string"
+   ],
+   [
+    33,
+    2,
+    7,
+    "variable",
+    "definition,string"
+   ],
+   [
+    35,
+    1,
+    2,
+    "variable",
+    "pointer"
+   ],
+   [
+    35,
+    14,
+    1,
+    "operator",
+    ""
+   ],
+   [
+    35,
+    15,
+    6,
+    "variable",
+    "string"
+   ],
+   [
+    35,
+    23,
+    8,
+    "string",
+    ""
+   ],
+   [
+    35,
+    33,
+    3,
+    "string",
+    ""
+   ],
+   [
+    35,
+    38,
+    2,
+    "string",
+    ""
+   ],
+   [
+    35,
+    4,
+    9,
+    "method",
+    "signature"
+   ],
+   [
+    36,
+    1,
+    2,
+    "variable",
+    "pointer"
+   ],
+   [
+    36,
+    14,
+    1,
+    "operator",
+    ""
+   ],
+   [
+    36,
+    15,
+    7,
+    "variable",
+    "string"
+   ],
+   [
+    36,
+    24,
+    9,
+    "string",
+    ""
+   ],
+   [
+    36,
+    35,
+    3,
+    "string",
+    ""
+   ],
+   [
+    36,
+    4,
+    9,
+    "method",
+    "signature"
+   ],
+   [
+    36,
+    40,
+    2,
+    "string",
+    ""
+   ],
+   [
+    37,
+    1,
+    1,
+    "variable",
+    ""
+   ],
+   [
+    37,
+    12,
+    8,
+    "string",
+    ""
+   ],
+   [
+    37,
+    22,
+    8,
+    "string",
+    ""
+   ],
+   [
+    37,
+    3,
+    1,
+    "operator",
+    ""
+   ],
+   [
+    37,
+    5,
+    2,
+    "variable",
+    "pointer"
+   ],
+   [
+    37,
+    8,
+    3,
+    "method",
+    "signature"
+   ],
+   [
+    38,
+    1,
+    1,
+    "variable",
+    ""
+   ],
+   [
+    38,
+    12,
+    9,
+    "string",
+    ""
+   ],
+   [
+    38,
+    23,
+    9,
+    "string",
+    ""
+   ],
+   [
+    38,
+    3,
+    1,
+    "operator",
+    ""
+   ],
+   [
+    38,
+    5,
+    2,
+    "variable",
+    "pointer"
+   ],
+   [
+    38,
+    8,
+    3,
+    "method",
+    "signature"
+   ],
+   [
+    40,
+    1,
+    5,
+    "variable",
+    "definition,slice"
+   ],
+   [
+    40,
+    12,
+    6,
+    "keyword",
+    ""
+   ],
+   [
+    40,
+    7,
+    2,
+    "operator",
+    ""
+   ],
+   [
+    41,
+    11,
+    6,
+    "type",
+    "defaultLibrary,string"
+   ],
+   [
+    41,
+    2,
+    4,
+    "property",
+    "definition,string"
+   ],
+   [
+    42,
+    11,
+    1,
+    "operator",
+    ""
+   ],
+   [
+    42,
+    12,
+    4,
+    "namespace",
+    ""
+   ],
+   [
+    42,
+    17,
+    7,
+    "type",
+    "struct"
+   ],
+   [
+    42,
+    2,
+    5,
+    "property",
+    "definition,pointer"
+   ],
+   [
+    43,
+    13,
+    6,
+    "type",
+    "defaultLibrary,string"
+   ],
+   [
+    43,
+    2,
+    8,
+    "property",
+    "definition,slice"
+   ],
+   [
+    46,
+    13,
+    9,
+    "string",
+    ""
+   ],
+   [
+    46,
+    3,
+    4,
+    "property",
+    "string"
+   ],
+   [
+    47,
+    13,
+    4,
+    "namespace",
+    ""
+   ],
+   [
+    47,
+    18,
+    10,
+    "function",
+    "signature"
+   ],
+   [
+    47,
+    29,
+    9,
+    "string",
+    ""
+   ],
+   [
+    47,
+    3,
+    5,
+    "property",
+    "pointer"
+   ],
+   [
+    47,
+    40,
+    4,
+    "namespace",
+    ""
+   ],
+   [
+    47,
+    45,
+    15,
+    "variable",
+    "number,readonly"
+   ],
+   [
+    48,
+    13,
+    3,
+    "variable",
+    "defaultLibrary,readonly"
+   ],
+   [
+    48,
+    3,
+    8,
+    "property",
+    "slice"
+   ],
+   [
+    51,
+    13,
+    7,
+    "string",
+    ""
+   ],
+   [
+    51,
+    3,
+    4,
+    "property",
+    "string"
+   ],
+   [
+    52,
+    13,
+    2,
+    "variable",
+    "pointer"
+   ],
+   [
+    52,
+    3,
+    5,
+    "property",
+    "pointer"
+   ],
+   [
+    53,
+    15,
+    6,
+    "type",
+    "defaultLibrary,string"
+   ],
+   [
+    53,
+    22,
+    8,
+    "string",
+    ""
+   ],
+   [
+    53,
+    3,
+    8,
+    "property",
+    "slice"
+   ],
+   [
+    53,
+    32,
+    9,
+    "string",
+    ""
+   ],
+   [
+    57,
+    1,
+    3,
+    "keyword",
+    ""
+   ],
+   [
+    57,
+    16,
+    5,
+    "keyword",
+    ""
+   ],
+   [
+    57,
+    22,
+    5,
+    "variable",
+    "slice"
+   ],
+   [
+    57,
+    5,
+    1,
+    "variable",
+    "definition,number"
+   ],
+   [
+    57,
+    8,
+    4,
+    "variable",
+    "definition,struct"
+   ],
+   [
+    58,
+    13,
+    4,
+    "property",
+    "string"
+   ],
+   [
+    58,
+    19,
+    4,
+    "keyword",
+    ""
+   ],
+   [
+    58,
+    2,
+    1,
+    "parameter",
+    "pointer"
+   ],
+   [
+    58,
+    24,
+    1,
+    "parameter",
+    "definition,pointer,shadowing"
+   ],
+   [
+    58,
+    26,
+    1,
+    "operator",
+    ""
+   ],
+   [
+    58,
+    27,
+    7,
+    "namespace",
+    ""
+   ],
+   [
+    58,
+    35,
+    1,
+    "type",
+    "struct"
+   ],
+   [
+    58,
+    4,
+    3,
+    "method",
+    "signature"
+   ],
+   [
+    58,
+    8,
+    4,
+    "variable",
+    "struct"
+   ],
+   [
+    59,
+    10,
+    2,
+    "operator",
+    ""
+   ],
+   [
+    59,
+    13,
+    8,
+    "function",
+    "signature"
+   ],
+   [
+    59,
+    22,
+    4,
+    "variable",
+    "struct"
+   ],
+   [
+    59,
+    27,
+    5,
+    "property",
+    "pointer"
+   ],
+   [
+    59,
+    3,
+    6,
+    "variable",
+    "definition,slice"
+   ],
+   [
+    60,
+    15,
+    9,
+    "function",
+    "signature"
+   ],
+   [
+    60,
+    25,
+    6,
+    "variable",
+    "slice"
+   ],
+   [
+    60,
+    3,
+    2,
+    "keyword",
+    ""
+   ],
+   [
+    60,
+    33,
+    4,
+    "variable",
+    "struct"
+   ],
+   [
+    60,
+    38,
+    8,
+    "property",
+    "slice"
+   ],
+   [
+    60,
+    6,
+    1,
+    "operator",
+    ""
+   ],
+   [
+    60,
+    7,
+    7,
+    "namespace",
+    ""
+   ],
+   [
+    61,
+    13,
+    10,
+    "string",
+    ""
+   ],
+   [
+    61,
+    23,
+    2,
+    "string",
+    "format"
+   ],
+   [
+    61,
+    25,
+    10,
+    "string",
+    ""
+   ],
+   [
+    61,
+    35,
+    2,
+    "string",
+    "format"
+   ],
+   [
+    61,
+    37,
+    1,
+    "string",
+    ""
+   ],
+   [
+    61,
+    4,
+    1,
+    "parameter",
+    "pointer"
+   ],
+   [
+    61,
+    40,
+    4,
+    "variable",
+    "struct"
+   ],
+   [
+    61,
+    45,
+    8,
+    "property",
+    "slice"
+   ],
+   [
+    61,
+    55,
+    6,
+    "variable",
+    "slice"
+   ],
+   [
+    61,
+    6,
+    6,
+    "method",
+    "signature"
+   ],
+   [
+    67,
+    0,
+    4,
+    "keyword",
+    ""
+   ],
+   [
+    67,
+    21,
+    1,
+    "parameter",
+    "definition,pointer"
+   ],
+   [
+    67,
+    23,
+    1,
+    "operator",
+    ""
+   ],
+   [
+    67,
+    24,
+    7,
+    "namespace",
+    ""
+   ],
+   [
+    67,
+    32,
+    1,
+    "type",
+    "struct"
+   ],
+   [
+    67,
+    5,
+    15,
+    "function",
+    "definition,signature"
+   ],
+   [
+    68,
+    1,
+    5,
+    "variable",
+    "definition,slice"
+   ],
+   [
+    68,
+    12,
+    6,
+    "keyword",
+    ""
+   ],
+   [
+    68,
+    7,
+    2,
+    "operator",
+    ""
+   ],
+   [
+    69,
+    11,
+    6,
+    "type",
+    "defaultLibrary,string"
+   ],
+   [
+    69,
+    2,
+    4,
+    "property",
+    "definition,string"
+   ],
+   [
+    70,
+    11,
+    4,
+    "keyword",
+    ""
+   ],
+   [
+    70,
+    18,
+    1,
+    "operator",
+    ""
+   ],
+   [
+    70,
+    19,
+    5,
+    "namespace",
+    ""
+   ],
+   [
+    70,
+    2,
+    8,
+    "property",
+    "definition,signature"
+   ],
+   [
+    70,
+    25,
+    7,
+    "type",
+    "struct"
+   ],
+   [
+    71,
+    13,
+    6,
+    "type",
+    "defaultLibrary,string"
+   ],
+   [
+    71,
+    2,
+    4,
+    "property",
+    "definition,slice"
+   ],
+   [
+    74,
+    3,
+    4,
+    "property",
+    "string"
+   ],
+   [
+    74,
+    9,
+    46,
+    "string",
+    ""
+   ],
+   [
+    75,
+    13,
+    4,
+    "keyword",
+    ""
+   ],
+   [
+    75,
+    20,
+    1,
+    "operator",
+    ""
+   ],
+   [
+    75,
+    21,
+    5,
+    "namespace",
+    ""
+   ],
+   [
+    75,
+    27,
+    7,
+    "type",
+    "struct"
+   ],
+   [
+    75,
+    3,
+    8,
+    "property",
+    "signature"
+   ],
+   [
+    76,
+    14,
+    2,
+    "operator",
+    ""
+   ],
+   [
+    76,
+    17,
+    1,
+    "operator",
+    ""
+   ],
+   [
+    76,
+    18,
+    5,
+    "namespace",
+    ""
+   ],
+   [
+    76,
+    24,
+    7,
+    "type",
+    "struct"
+   ],
+   [
+    76,
+    32,
+    3,
+    "property",
+    "string"
+   ],
+   [
+    76,
+    37,
+    8,
+    "string",
+    ""
+   ],
+   [
+    76,
+    4,
+    9,
+    "variable",
+    "definition,pointer"
+   ],
+   [
+    77,
+    15,
+    2,
+    "operator",
+    ""
+   ],
+   [
+    77,
+    18,
+    1,
+    "operator",
+    ""
+   ],
+   [
+    77,
+    19,
+    5,
+    "namespace",
+    ""
+   ],
+   [
+    77,
+    25,
+    7,
+    "type",
+    "struct"
+   ],
+   [
+    77,
+    33,
+    3,
+    "property",
+    "string"
+   ],
+   [
+    77,
+    38,
+    8,
+    "namespace",
+    ""
+   ],
+   [
+    77,
+    4,
+    10,
+    "variable",
+    "definition,pointer"
+   ],
+   [
+    77,
+    47,
+    10,
+    "variable",
+    "readonly"
+   ],
+   [
+    78,
+    13,
+    2,
+    "operator",
+    ""
+   ],
+   [
+    78,
+    16,
+    1,
+    "operator",
+    ""
+   ],
+   [
+    78,
+    17,
+    5,
+    "namespace",
+    ""
+   ],
+   [
+    78,
+    23,
+    7,
+    "type",
+    "struct"
+   ],
+   [
+    78,
+    31,
+    3,
+    "property",
+    "string"
+   ],
+   [
+    78,
+    36,
+    7,
+    "string",
+    ""
+   ],
+   [
+    78,
+    4,
+    8,
+    "variable",
+    "definition,pointer"
+   ],
+   [
+    79,
+    13,
+    2,
+    "operator",
+    ""
+   ],
+   [
+    79,
+    16,
+    1,
+    "operator",
+    ""
+   ],
+   [
+    79,
+    17,
+    5,
+    "namespace",
+    ""
+   ],
+   [
+    79,
+    23,
+    7,
+    "type",
+    "struct"
+   ],
+   [
+    79,
+    31,
+    3,
+    "property",
+    "string"
+   ],
+   [
+    79,
+    36,
+    7,
+    "string",
+    ""
+   ],
+   [
+    79,
+    4,
+    8,
+    "variable",
+    "definition,pointer"
+   ],
+   [
+    81,
+    14,
+    10,
+    "method",
+    "signature"
+   ],
+   [
+    81,
+    25,
+    10,
+    "variable",
+    "pointer"
+   ],
+   [
+    81,
+    4,
+    9,
+    "variable",
+    "pointer"
+   ],
+   [
+    82,
+    15,
+    10,
+    "method",
+    "signature"
+   ],
+   [
+    82,
+    26,
+    8,
+    "variable",
+    "pointer"
+   ],
+   [
+    82,
+    4,
+    10,
+    "variable",
+    "pointer"
+   ],
+   [
+    83,
+    13,
+    10,
+    "method",
+    "signature"
+   ],
+   [
+    83,
+    24,
+    8,
+    "variable",
+    "pointer"
+   ],
+   [
+    83,
+    4,
+    8,
+    "variable",
+    "pointer"
+   ],
+   [
+    85,
+    11,
+    8,
+    "variable",
+    "pointer"
+   ],
+   [
+    85,
+    4,
+    6,
+    "keyword",
+    ""
+   ],
+   [
+    87,
+    11,
+    6,
+    "type",
+    "defaultLibrary,string"
+   ],
+   [
+    87,
+    18,
+    7,
+    "string",
+    ""
+   ],
+   [
+    87,
+    27,
+    7,
+    "string",
+    ""
+   ],
+   [
+    87,
+    3,
+    4,
+    "property",
+    "slice"
+   ],
+   [
+    90,
+    3,
+    4,
+    "property",
+    "string"
+   ],
+   [
+    90,
+    9,
+    27,
+    "string",
+    ""
+   ],
+   [
+    91,
+    13,
+    4,
+    "keyword",
+    ""
+   ],
+   [
+    91,
+    20,
+    1,
+    "operator",
+    ""
+   ],
+   [
+    91,
+    21,
+    5,
+    "namespace",
+    ""
+   ],
+   [
+    91,
+    27,
+    7,
+    "type",
+    "struct"
+   ],
+   [
+    91,
+    3,
+    8,
+    "property",
+    "signature"
+   ],
+   [
+    92,
+    21,
+    2,
+    "operator",
+    ""
+   ],
+   [
+    92,
+    24,
+    1,
+    "operator",
+    ""
+   ],
+   [
+    92,
+    25,
+    5,
+    "namespace",
+    ""
+   ],
+   [
+    92,
+    31,
+    7,
+    "type",
+    "struct"
+   ],
+   [
+    92,
+    39,
+    3,
+    "property",
+    "string"
+   ],
+   [
+    92,
+    4,
+    16,
+    "variable",
+    "definition,pointer"
+   ],
+   [
+    92,
+    44,
+    8,
+    "namespace",
+    ""
+   ],
+   [
+    92,
+    53,
+    10,
+    "variable",
+    "readonly"
+   ],
+   [
+    93,
+    10,
+    2,
+    "operator",
+    ""
+   ],
+   [
+    93,
+    13,
+    1,
+    "operator",
+    ""
+   ],
+   [
+    93,
+    14,
+    5,
+    "namespace",
+    ""
+   ],
+   [
+    93,
+    20,
+    7,
+    "type",
+    "struct"
+   ],
+   [
+    93,
+    28,
+    3,
+    "property",
+    "string"
+   ],
+   [
+    93,
+    33,
+    4,
+    "string",
+    ""
+   ],
+   [
+    93,
+    4,
+    5,
+    "variable",
+    "definition,pointer"
+   ],
+   [
+    95,
+    21,
+    10,
+    "method",
+    "signature"
+   ],
+   [
+    95,
+    32,
+    5,
+    "variable",
+    "pointer"
+   ],
+   [
+    95,
+    4,
+    16,
+    "variable",
+    "pointer"
+   ],
+   [
+    97,
+    11,
+    5,
+    "variable",
+    "pointer"
+   ],
+   [
+    97,
+    4,
+    6,
+    "keyword",
+    ""
+   ],
+   [
+    99,
+    11,
+    6,
+    "type",
+    "defaultLibrary,string"
+   ],
+   [
+    99,
+    18,
+    4,
+    "string",
+    ""
+   ],
+   [
+    99,
+    3,
+    4,
+    "property",
+    "slice"
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "cmd/cmdtrace/cmd_span_test.go"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     0,
+     2
+    ],
+    "end": [
+     0,
+     2
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     1,
+     44
+    ],
+    "end": [
+     1,
+     44
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     2,
+     0
+    ],
+    "end": [
+     2,
+     0
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     3,
+     66
+    ],
+    "end": [
+     3,
+     66
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     4,
+     67
+    ],
+    "end": [
+     4,
+     67
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     5,
+     42
+    ],
+    "end": [
+     5,
+     42
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     6,
+     0
+    ],
+    "end": [
+     6,
+     0
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     7,
+     49
+    ],
+    "end": [
+     7,
+     49
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     8,
+     0
+    ],
+    "end": [
+     8,
+     0
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     9,
+     70
+    ],
+    "end": [
+     9,
+     70
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     10,
+     68
+    ],
+    "end": [
+     10,
+     68
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     11,
+     75
+    ],
+    "end": [
+     11,
+     75
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     12,
+     70
+    ],
+    "end": [
+     12,
+     70
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     13,
+     33
+    ],
+    "end": [
+     13,
+     33
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     14,
+     2
+    ],
+    "end": [
+     14,
+     2
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     15,
+     0
+    ],
+    "end": [
+     15,
+     0
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     16,
+     16
+    ],
+    "end": [
+     16,
+     16
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     17,
+     0
+    ],
+    "end": [
+     17,
+     0
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     18,
+     8
+    ],
+    "end": [
+     18,
+     8
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     19,
+     10
+    ],
+    "end": [
+     19,
+     10
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     20,
+     10
+    ],
+    "end": [
+     20,
+     10
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     21,
+     0
+    ],
+    "end": [
+     21,
+     0
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     22,
+     25
+    ],
+    "end": [
+     22,
+     25
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     23,
+     30
+    ],
+    "end": [
+     23,
+     30
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     24,
+     0
+    ],
+    "end": [
+     24,
+     0
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     25,
+     52
+    ],
+    "end": [
+     25,
+     52
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     26,
+     1
+    ],
+    "end": [
+     26,
+     1
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     27,
+     0
+    ],
+    "end": [
+     27,
+     0
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     28,
+     33
+    ],
+    "end": [
+     28,
+     33
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     29,
+     33
+    ],
+    "end": [
+     29,
+     33
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     30,
+     50
+    ],
+    "end": [
+     30,
+     50
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     31,
+     6
+    ],
+    "end": [
+     31,
+     6
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     32,
+     16
+    ],
+    "end": [
+     32,
+     16
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     33,
+     16
+    ],
+    "end": [
+     33,
+     16
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     34,
+     2
+    ],
+    "end": [
+     34,
+     2
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     35,
+     41
+    ],
+    "end": [
+     35,
+     41
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     36,
+     43
+    ],
+    "end": [
+     36,
+     43
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     37,
+     31
+    ],
+    "end": [
+     37,
+     31
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     38,
+     33
+    ],
+    "end": [
+     38,
+     33
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     39,
+     0
+    ],
+    "end": [
+     39,
+     0
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     40,
+     20
+    ],
+    "end": [
+     40,
+     20
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     41,
+     17
+    ],
+    "end": [
+     41,
+     17
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     42,
+     24
+    ],
+    "end": [
+     42,
+     24
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     43,
+     19
+    ],
+    "end": [
+     43,
+     19
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     44,
+     3
+    ],
+    "end": [
+     44,
+     3
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     45,
+     3
+    ],
+    "end": [
+     45,
+     3
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     46,
+     23
+    ],
+    "end": [
+     46,
+     23
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     47,
+     62
+    ],
+    "end": [
+     47,
+     62
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     48,
+     17
+    ],
+    "end": [
+     48,
+     17
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     49,
+     4
+    ],
+    "end": [
+     49,
+     4
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     50,
+     3
+    ],
+    "end": [
+     50,
+     3
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     51,
+     21
+    ],
+    "end": [
+     51,
+     21
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     52,
+     16
+    ],
+    "end": [
+     52,
+     16
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     53,
+     43
+    ],
+    "end": [
+     53,
+     43
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     54,
+     4
+    ],
+    "end": [
+     54,
+     4
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     55,
+     2
+    ],
+    "end": [
+     55,
+     2
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     56,
+     0
+    ],
+    "end": [
+     56,
+     0
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     57,
+     29
+    ],
+    "end": [
+     57,
+     29
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     58,
+     39
+    ],
+    "end": [
+     58,
+     39
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     59,
+     33
+    ],
+    "end": [
+     59,
+     33
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     60,
+     49
+    ],
+    "end": [
+     60,
+     49
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     61,
+     62
+    ],
+    "end": [
+     61,
+     62
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     62,
+     4
+    ],
+    "end": [
+     62,
+     4
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     63,
+     4
+    ],
+    "end": [
+     63,
+     4
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     64,
+     2
+    ],
+    "end": [
+     64,
+     2
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     65,
+     1
+    ],
+    "end": [
+     65,
+     1
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     66,
+     0
+    ],
+    "end": [
+     66,
+     0
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     67,
+     36
+    ],
+    "end": [
+     67,
+     36
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     68,
+     20
+    ],
+    "end": [
+     68,
+     20
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     69,
+     17
+    ],
+    "end": [
+     69,
+     17
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     70,
+     32
+    ],
+    "end": [
+     70,
+     32
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     71,
+     19
+    ],
+    "end": [
+     71,
+     19
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     72,
+     3
+    ],
+    "end": [
+     72,
+     3
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     73,
+     3
+    ],
+    "end": [
+     73,
+     3
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     74,
+     56
+    ],
+    "end": [
+     74,
+     56
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     75,
+     36
+    ],
+    "end": [
+     75,
+     36
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     76,
+     46
+    ],
+    "end": [
+     76,
+     46
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     77,
+     58
+    ],
+    "end": [
+     77,
+     58
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     78,
+     44
+    ],
+    "end": [
+     78,
+     44
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     79,
+     44
+    ],
+    "end": [
+     79,
+     44
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     80,
+     0
+    ],
+    "end": [
+     80,
+     0
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     81,
+     36
+    ],
+    "end": [
+     81,
+     36
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     82,
+     35
+    ],
+    "end": [
+     82,
+     35
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     83,
+     33
+    ],
+    "end": [
+     83,
+     33
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     84,
+     0
+    ],
+    "end": [
+     84,
+     0
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     85,
+     19
+    ],
+    "end": [
+     85,
+     19
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     86,
+     5
+    ],
+    "end": [
+     86,
+     5
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     87,
+     36
+    ],
+    "end": [
+     87,
+     36
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     88,
+     4
+    ],
+    "end": [
+     88,
+     4
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     89,
+     3
+    ],
+    "end": [
+     89,
+     3
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     90,
+     37
+    ],
+    "end": [
+     90,
+     37
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     91,
+     36
+    ],
+    "end": [
+     91,
+     36
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     92,
+     64
+    ],
+    "end": [
+     92,
+     64
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     93,
+     38
+    ],
+    "end": [
+     93,
+     38
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     94,
+     0
+    ],
+    "end": [
+     94,
+     0
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     95,
+     38
+    ],
+    "end": [
+     95,
+     38
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     96,
+     0
+    ],
+    "end": [
+     96,
+     0
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     97,
+     16
+    ],
+    "end": [
+     97,
+     16
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     98,
+     5
+    ],
+    "end": [
+     98,
+     5
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     99,
+     24
+    ],
+    "end": [
+     99,
+     24
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     100,
+     4
+    ],
+    "end": [
+     100,
+     4
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     101,
+     2
+    ],
+    "end": [
+     101,
+     2
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     102,
+     0
+    ],
+    "end": [
+     102,
+     0
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     103,
+     27
+    ],
+    "end": [
+     103,
+     27
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     104,
+     37
+    ],
+    "end": [
+     104,
+     37
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     105,
+     23
+    ],
+    "end": [
+     105,
+     23
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     106,
+     26
+    ],
+    "end": [
+     106,
+     26
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     107,
+     40
+    ],
+    "end": [
+     107,
+     40
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     108,
+     57
+    ],
+    "end": [
+     108,
+     57
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     109,
+     4
+    ],
+    "end": [
+     109,
+     4
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     110,
+     4
+    ],
+    "end": [
+     110,
+     4
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     111,
+     2
+    ],
+    "end": [
+     111,
+     2
+    ],
+    "text": "\r"
+   },
+   {
+    "kind": "change",
+    "path": "cmd/cmdtrace/cmd_span_test.go",
+    "start": [
+     112,
+     1
+    ],
+    "end": [
+     112,
+     1
+    ],
+    "text": "\r"
+   }
+  ],
+  "detail": "{\"case\": {\"mapped_key\": [\"semanticTokens\", \"cmd/cmdtrace/cmd_span_test.go\", -1, -1, \"\"], \"transform\": {\"back\": {\"col\": 0, \"eof\": [], \"line\": -1, \"n\": 0, \"path\": \"cmd/cmdtrace/cmd_span_test.go\", \"w\": 0}, \"edits\": [[0, 2, 0, 2, \"\\r\"], [1, 44, 1, 44, \"\\r\"], [2, 0, 2, 0, \"\\r\"], [3, 66, 3, 66, \"\\r\"], [4, 67, 4, 67, \"\\r\"], [5, 42, 5, 42, \"\\r\"], [6, 0, 6, 0, \"\\r\"], [7, 49, 7, 49, \"\\r\"], [8, 0, 8, 0, \"\\r\"], [9, 70, 9, 70, \"\\r\"], [10, 68, 10, 68, \"\\r\"], [11, 75, 11, 75, \"\\r\"], [12, 70, 12, 70, \"\\r\"], [13, 33, 13, 33, \"\\r\"], [14, 2, 14, 2, \"\\r\"], [15, 0, 15, 0, \"\\r\"], [16, 16, 16, 16, \"\\r\"], [17, 0, 17, 0, \"\\r\"], [18, 8, 18, 8, \"\\r\"], [19, 10, 19, 10, \"\\r\"], [20, 10, 20, 10, \"\\r\"], [21, 0, 21, 0, \"\\r\"], [22, 25, 22, 25, \"\\r\"], [23, 30, 23, 30, \"\\r\"], [24, 0, 24, 0, \"\\r\"], [25, 52, 25, 52, \"\\r\"], [26, 1, 26, 1, \"\\r\"], [27, 0, 27, 0, \"\\r\"], [28, 33, 28, 33, \"\\r\"], [29, 33, 29, 33, \"\\r\"], [30, 50, 30, 50, \"\\r\"], [31, 6, 31, 6, \"\\r\"], [32, 16, 32, 16, \"\\r\"], [33, 16, 33, 16, \"\\r\"], [34, 2, 34, 2, \"\\r\"], [35, 41, 35, 41, \"\\r\"], [36, 43, 36, 43, \"\\r\"], [37, 31, 37, 31, \"\\r\"], [38, 33, 38, 33, \"\\r\"], [39, 0, 39, 0, \"\\r\"], [40, 20, 40, 20, \"\\r\"], [41, 17, 41, 17, \"\\r\"], [42, 24, 42, 24, \"\\r\"], [43, 19, 43, 19, \"\\r\"], [44, 3, 44, 3, \"\\r\"], [45, 3, 45, 3, \"\\r\"], [46, 23, 46, 23, \"\\r\"], [47, 62, 47, 62, \"\\r\"], [48, 17, 48, 17, \"\\r\"], [49, 4, 49, 4, \"\\r\"], [50, 3, 50, 3, \"\\r\"], [51, 21, 51, 21, \"\\r\"], [52, 16, 52, 16, \"\\r\"], [53, 43, 53, 43, \"\\r\"], [54, 4, 54, 4, \"\\r\"], [55, 2, 55, 2, \"\\r\"], [56, 0, 56, 0, \"\\r\"], [57, 29, 57, 29, \"\\r\"], [58, 39, 58, 39, \"\\r\"], [59, 33, 59, 33, \"\\r\"], [60, 49, 60, 49, \"\\r\"], [61, 62, 61, 62, \"\\r\"], [62, 4, 62, 4, \"\\r\"], [63, 4, 63, 4, \"\\r\"], [64, 2, 64, 2, \"\\r\"], [65, 1, 65, 1, \"\\r\"], [66, 0, 66, 0, \"\\r\"], [67, 36, 67, 36, \"\\r\"], [68, 20, 68, 20, \"\\r\"], [69, 17, 69, 17, \"\\r\"], [70, 32, 70, 32, \"\\r\"], [71, 19, 71, 19, \"\\r\"], [72, 3, 72, 3, \"\\r\"], [73, 3, 73, 3, \"\\r\"], [74, 56, 74, 56, \"\\r\"], [75, 36, 75, 36, \"\\r\"], [76, 46, 76, 46, \"\\r\"], [77, 58, 77, 58, \"\\r\"], [78, 44, 78, 44, \"\\r\"], [79, 44, 79, 44, \"\\r\"], [80, 0, 80, 0, \"\\r\"], [81, 36, 81, 36, \"\\r\"], [82, 35, 82, 35, \"\\r\"], [83, 33, 83, 33, \"\\r\"], [84, 0, 84, 0, \"\\r\"], [85, 19, 85, 19, \"\\r\"], [86, 5, 86, 5, \"\\r\"], [87, 36, 87, 36, \"\\r\"], [88, 4, 88, 4, \"\\r\"], [89, 3, 89, 3, \"\\r\"], [90, 37, 90, 37, \"\\r\"], [91, 36, 91, 36, \"\\r\"], [92, 64, 92, 64, \"\\r\"], [93, 38, 93, 38, \"\\r\"], [94, 0, 94, 0, \"\\r\"], [95, 38, 95, 38, \"\\r\"], [96, 0, 96, 0, \"\\r\"], [97, 16, 97, 16, \"\\r\"], [98, 5, 98, 5, \"\\r\"], [99, 24, 99, 24, \"\\r\"], [100, 4, 100, 4, \"\\r\"], [101, 2, 101, 2, \"\\r\"], [102, 0, 102, 0, \"\\r\"], [103, 27, 103, 27, \"\\r\"], [104, 37, 104, 37, \"\\r\"], [105, 23, 105, 23, \"\\r\"], [106, 26, 106, 26, \"\\r\"], [107, 40, 107, 40, \"\\r\"], [108, 57, 108, 57, \"\\r\"], [109, 4, 109, 4, \"\\r\"], [110, 4, 110, 4, \"\\r\"], [111, 2, 111, 2, \"\\r\"], [112, 1, 112, 1, \"\\r\"]], \"kind\": \"T4\", \"path\": \"cmd/cmdtrace/cmd_span_test.go\", \"shift\": {\"col\": 0, \"eof\": [], \"line\": -1, \"n\": 0, \"path\": \"cmd/cmdtrace/cmd_span_test.go\", \"w\": 0}}}, \"note\": \"T4 cmd/cmdtrace/cmd_span_test.go: 113 edit(s), first [0, 2, 0, 2]; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 51s\", \"shape\": \"semanticTokens:changed\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "gopls|r5_transforms|semanticTokens:changed",
+  "run_id": "355575949131"
+ },
+ "replay_logs": [
+  "logs/gopls-v0.23.0-355575949131-r5-replay-baseline-20261118-205118-a6e76c.jsonl.gz",
+  "logs/gopls-v0.23.0-355575949131-r5-replay-case-20261118-205130-931e6b.jsonl.gz",
+  "logs/gopls-v0.23.0-355575949131-r5-replay-control-20261118-205124-985f8d.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

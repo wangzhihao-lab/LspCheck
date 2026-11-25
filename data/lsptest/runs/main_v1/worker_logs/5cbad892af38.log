@@ -1,0 +1,3 @@
+2026-09-23 15:42:00,562 INFO campaign_run run 5cbad892af38: r2_handles on gopls v0.23.0, gin-gonic/gin@3b08cd7235bd seed 1 settled, targets ['binding/json.go', 'binding/toml_test.go', 'mode_test.go']
+2026-09-23 15:43:08,871 INFO campaign_run run 5cbad892af38: 0 candidate(s) in 68s; confirming
+2026-09-23 15:43:08,872 INFO campaign_run run 5cbad892af38 finished: ok, 0 confirmed of 0 candidate(s), 68s

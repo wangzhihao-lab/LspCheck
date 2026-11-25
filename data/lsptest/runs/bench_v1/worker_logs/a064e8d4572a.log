@@ -1,0 +1,3 @@
+2026-09-25 05:48:45,243 INFO campaign_run run a064e8d4572a: r1_history on gopls v0.6.7, gopls-38732 seed 2 settled, targets ['bar.go', 'foo.go']
+2026-09-25 05:55:48,479 INFO campaign_run run a064e8d4572a: 0 candidate(s) in 423s; confirming
+2026-09-25 05:55:48,480 INFO campaign_run run a064e8d4572a finished: ok, 0 confirmed of 0 candidate(s), 423s

@@ -1,0 +1,225 @@
+{
+ "campaign": "main_v2",
+ "subcommand": "ts-definition",
+ "written": "2026-11-20 05:27",
+ "rows": [
+  {
+   "gid": "ts7-r3-definitionconsistency-lost-d-0129b3",
+   "build": [
+    "ts7",
+    "7.0.2"
+   ],
+   "error": "",
+   "project": {
+    "name": "vadimdemedes/ink@02ae1e59e7c2",
+    "source": "corpus",
+    "ref": "temp/corpus/vadimdemedes__ink@02ae1e59e7c2",
+    "commit": "02ae1e59e7c288e971616100c4c11bcca6b5761b",
+    "language": "typescript"
+   },
+   "target": [
+    "test/helpers/create-stdout.ts",
+    7,
+    7
+   ],
+   "reference": [
+    "src/ink.tsx",
+    146,
+    11
+   ],
+   "settled": true,
+   "definition_at_target": [
+    [
+     "node_modules/@types/node/buffer.d.ts",
+     87,
+     18,
+     87,
+     24
+    ],
+    [
+     "node_modules/@types/node/compatibility/iterators.d.ts",
+     11,
+     18,
+     11,
+     24
+    ],
+    [
+     "node_modules/@types/node/events.d.ts",
+     57,
+     18,
+     57,
+     24
+    ],
+    [
+     "node_modules/@types/node/globals.d.ts",
+     74,
+     18,
+     74,
+     24
+    ],
+    [
+     "node_modules/@types/node/globals.typedarray.d.ts",
+     3,
+     14,
+     3,
+     20
+    ],
+    [
+     "node_modules/@types/node/module.d.ts",
+     574,
+     18,
+     574,
+     24
+    ],
+    [
+     "node_modules/@types/node/process.d.ts",
+     142,
+     18,
+     142,
+     24
+    ],
+    [
+     "node_modules/@types/node/stream.d.ts",
+     1737,
+     18,
+     1737,
+     24
+    ],
+    [
+     "node_modules/@types/node/timers.d.ts",
+     12,
+     18,
+     12,
+     24
+    ]
+   ],
+   "definition_at_target_error": null,
+   "definition_at_reference": [],
+   "definition_at_reference_error": null,
+   "hover_at_reference": "```typescript\ntype NodeJS = /*unresolved*/ any\n```\n",
+   "hover_error": null,
+   "diagnostics_on_reference_line": [
+    {
+     "code": "2503/ts",
+     "message": "Cannot find namespace 'NodeJS'."
+    }
+   ],
+   "diagnostics_reference_file_codes": {
+    "2304/ts": 2,
+    "2503/ts": 1,
+    "2550/ts": 1,
+    "2591/ts": 1
+   },
+   "seconds": 6.5
+  },
+  {
+   "gid": "ts7-r3-definitionconsistency-lost-d-0129b3",
+   "build": [
+    "ts6",
+    "6.0.3"
+   ],
+   "error": "",
+   "project": {
+    "name": "vadimdemedes/ink@02ae1e59e7c2",
+    "source": "corpus",
+    "ref": "temp/corpus/vadimdemedes__ink@02ae1e59e7c2",
+    "commit": "02ae1e59e7c288e971616100c4c11bcca6b5761b",
+    "language": "typescript"
+   },
+   "target": [
+    "test/helpers/create-stdout.ts",
+    7,
+    7
+   ],
+   "reference": [
+    "src/ink.tsx",
+    146,
+    11
+   ],
+   "settled": true,
+   "definition_at_target": [
+    [
+     "node_modules/@types/node/buffer.d.ts",
+     87,
+     18,
+     87,
+     24
+    ],
+    [
+     "node_modules/@types/node/compatibility/iterators.d.ts",
+     11,
+     18,
+     11,
+     24
+    ],
+    [
+     "node_modules/@types/node/events.d.ts",
+     57,
+     18,
+     57,
+     24
+    ],
+    [
+     "node_modules/@types/node/globals.d.ts",
+     74,
+     18,
+     74,
+     24
+    ],
+    [
+     "node_modules/@types/node/globals.typedarray.d.ts",
+     3,
+     14,
+     3,
+     20
+    ],
+    [
+     "node_modules/@types/node/module.d.ts",
+     574,
+     18,
+     574,
+     24
+    ],
+    [
+     "node_modules/@types/node/process.d.ts",
+     142,
+     18,
+     142,
+     24
+    ],
+    [
+     "node_modules/@types/node/stream.d.ts",
+     1737,
+     18,
+     1737,
+     24
+    ],
+    [
+     "node_modules/@types/node/timers.d.ts",
+     12,
+     18,
+     12,
+     24
+    ]
+   ],
+   "definition_at_target_error": null,
+   "definition_at_reference": [],
+   "definition_at_reference_error": null,
+   "hover_at_reference": "",
+   "hover_error": null,
+   "diagnostics_on_reference_line": [
+    {
+     "code": "2503/typescript",
+     "message": "Cannot find namespace 'NodeJS'."
+    }
+   ],
+   "diagnostics_reference_file_codes": {
+    "2304/typescript": 2,
+    "2503/typescript": 1,
+    "2550/typescript": 1,
+    "2591/typescript": 1
+   },
+   "seconds": 7.4
+  }
+ ]
+}

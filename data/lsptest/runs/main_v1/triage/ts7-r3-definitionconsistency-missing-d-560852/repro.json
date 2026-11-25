@@ -1,0 +1,155 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "0b8a8909a573-v00",
+ "run_id": "0b8a8909a573",
+ "oracle": "r3_routes",
+ "server": {
+  "kind": "ts7",
+  "version": "7.0.2"
+ },
+ "project": {
+  "name": "upstash/context7@6477e43e31d2",
+  "source": "corpus",
+  "ref": "temp/corpus/upstash__context7@6477e43e31d2",
+  "commit": "6477e43e31d27a5c1bc044506e1c14de15f8a110",
+  "language": "typescript"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "packages/cli/src/utils/update-check.ts",
+    "positions": [],
+    "ends": [],
+    "names": []
+   },
+   {
+    "path": "packages/sdk/src/commands/search-library/types.ts",
+    "positions": [],
+    "ends": [],
+    "names": []
+   },
+   {
+    "path": "packages/sdk/src/http/index.ts",
+    "positions": [
+     [
+      131,
+      12
+     ]
+    ],
+    "ends": [],
+    "names": [
+     ""
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "definitionConsistency",
+  "path": "packages/sdk/src/http/index.ts",
+  "line": 131,
+  "character": 12,
+  "extra": "from:packages/sdk/src/http/index.ts:151:37"
+ },
+ "ops": [],
+ "case": {
+  "loc": [
+   "packages/sdk/src/http/index.ts",
+   131,
+   8,
+   131,
+   16
+  ],
+  "sub": "d",
+  "target": [
+   "packages/sdk/src/http/index.ts",
+   151,
+   37
+  ]
+ },
+ "shape": "definitionConsistency:missing",
+ "signature": "ts7|r3_routes|definitionConsistency:missing",
+ "expected": [
+  [
+   "packages/sdk/src/http/index.ts",
+   29,
+   2,
+   29,
+   10
+  ],
+  [
+   "packages/sdk/src/http/index.ts",
+   129,
+   10,
+   129,
+   18
+  ]
+ ],
+ "actual": [
+  [
+   "packages/sdk/src/http/index.ts",
+   129,
+   10,
+   129,
+   18
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "flake 3/3 [r1:SCR r2:SCR r3:SCR] in 196s",
+ "violation": {
+  "oracle": "r3_routes",
+  "server": "ts7-7.0.2",
+  "project": "upstash/context7@6477e43e31d2",
+  "key": {
+   "method": "definitionConsistency",
+   "path": "packages/sdk/src/http/index.ts",
+   "line": 131,
+   "character": 12,
+   "extra": "from:packages/sdk/src/http/index.ts:151:37"
+  },
+  "expected": [
+   [
+    "packages/sdk/src/http/index.ts",
+    29,
+    2,
+    29,
+    10
+   ],
+   [
+    "packages/sdk/src/http/index.ts",
+    129,
+    10,
+    129,
+    18
+   ]
+  ],
+  "actual": [
+   [
+    "packages/sdk/src/http/index.ts",
+    129,
+    10,
+    129,
+    18
+   ]
+  ],
+  "ops": [],
+  "detail": "{\"case\": {\"loc\": [\"packages/sdk/src/http/index.ts\", 131, 8, 131, 16], \"sub\": \"d\", \"target\": [\"packages/sdk/src/http/index.ts\", 151, 37]}, \"note\": \"flake 3/3 [r1:SCR r2:SCR r3:SCR] in 196s\", \"shape\": \"definitionConsistency:missing\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "ts7|r3_routes|definitionConsistency:missing",
+  "run_id": "0b8a8909a573"
+ },
+ "replay_logs": [
+  "logs/ts7-7.0.2-tr560852-r3-replay-baseline-20260925-155132-84eb92.jsonl.gz",
+  "logs/ts7-7.0.2-tr560852-r3-replay-control-20260925-155145-48b7d3.jsonl.gz"
+ ],
+ "project_files": {},
+ "group": "ts7-r3-definitionconsistency-missing-d-560852",
+ "reduced": true
+}

@@ -1,0 +1,58 @@
+{
+ "vid": "2fe2fd5714b0-v00",
+ "ops_before": 3,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 1,
+ "cache_hits": 0,
+ "reduce_seconds": 0.0,
+ "budget_exhausted": false,
+ "probe_log": [
+  [
+   2,
+   false
+  ]
+ ],
+ "logs": [
+  "ts6-6.0.3-tr6d8de2-r4-replay-baseline-20260925-190413-7fcedd.jsonl.gz",
+  "ts6-6.0.3-tr6d8de2-r4-replay-case-20260925-190403-97d225.jsonl.gz",
+  "ts6-6.0.3-tr6d8de2-r4-replay-control-20260925-190419-2d38b7.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [],
+  "actual": [
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2322",
+    "typescript",
+    "Type '{ template: { instructions: ReadonlySet<string>; name: string; description: string; license?: string | undefined; compatibility?: string | undefined; metadata?: Record<string, string> | undefined; }; dirName: string; workflowId: string; }[]' is not assignable to type 'SkillTemplateEntry[]'. Type '{ template: { instructions: ReadonlySet<string>; name: string; description: string; license?: string; compatibility?: string; metadata?: Record<string, string>; }; dirName: string; workflowId: string; }' is not assignable to type 'SkillTemplateEntry'. The types of 'template.instructions' are incompatible between these types. Type 'ReadonlySet<string>' is not assignable to type 'string'."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2552",
+    "typescript",
+    "Cannot find name 'resolveOptionalWorkflows'. Did you mean 'resolveInstalledWorkflows'?"
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2554",
+    "typescript",
+    "Expected 0-1 arguments, but got 2."
+   ]
+  ]
+ },
+ "ops_after": 3,
+ "total_seconds": 81.2
+}

@@ -1,0 +1,7 @@
+2026-09-24 08:51:19,278 INFO campaign_run run eec5367c6a7c: r1_history on rust-analyzer 2026-09-21, dani-garcia/vaultwarden@cc67d644f626 seed 1 race200, targets ['src/api/core/two_factor/duo.rs', 'src/db/models/attachment.rs', 'src/sso.rs']
+2026-09-24 09:04:02,676 INFO campaign_run run eec5367c6a7c: 1 candidate(s) in 763s; confirming
+2026-09-24 09:06:10,714 WARNING oracles.r1_history session replay-history failed: LspError: server stdin closed: [Errno 32] Broken pipe
+2026-09-24 09:10:06,836 INFO flake replay 1/3 of rust-analyzer|r1_history|references:result->error:timeout: settled=True control_stable=True reproduced=False (236.1s)
+2026-09-24 09:16:31,369 INFO flake replay 2/3 of rust-analyzer|r1_history|references:result->error:timeout: settled=True control_stable=True reproduced=True (384.5s)
+2026-09-24 09:21:32,493 INFO flake replay 3/3 of rust-analyzer|r1_history|references:result->error:timeout: settled=True control_stable=True reproduced=False (301.1s)
+2026-09-24 09:21:32,499 INFO campaign_run run eec5367c6a7c finished: ok, 0 confirmed of 1 candidate(s), 1813s

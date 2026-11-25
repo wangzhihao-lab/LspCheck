@@ -1,0 +1,12 @@
+2026-09-23 23:09:40,119 INFO campaign_run run 4f319fe5eb21: r0_crash on rust-analyzer 2026-09-21, AlexsJones/llmfit@2ffe4fd899a6 seed 1 settled, targets ['llmfit-core/src/analysis.rs', 'llmfit-tui/src/filter_config.rs', 'llmfit-tui/src/serve_api.rs']
+2026-09-23 23:16:13,711 INFO campaign_run run 4f319fe5eb21: 3 candidate(s) in 394s; confirming
+2026-09-23 23:22:47,296 INFO flake replay 1/3 of rust-analyzer|r0_crash|diagnostics:result->error:timeout: settled=True control_stable=True reproduced=True (393.6s)
+2026-09-23 23:29:20,395 INFO flake replay 2/3 of rust-analyzer|r0_crash|diagnostics:result->error:timeout: settled=True control_stable=True reproduced=True (393.1s)
+2026-09-23 23:34:31,341 INFO flake replay 3/3 of rust-analyzer|r0_crash|diagnostics:result->error:timeout: settled=True control_stable=True reproduced=False (310.9s)
+2026-09-23 23:41:05,902 INFO flake replay 1/3 of rust-analyzer|r0_crash|inlayHint:result->error:timeout: settled=True control_stable=True reproduced=True (394.6s)
+2026-09-23 23:47:40,222 INFO flake replay 2/3 of rust-analyzer|r0_crash|inlayHint:result->error:timeout: settled=True control_stable=True reproduced=True (394.3s)
+2026-09-23 23:55:21,336 INFO flake replay 3/3 of rust-analyzer|r0_crash|inlayHint:result->error:timeout: settled=True control_stable=True reproduced=False (461.1s)
+2026-09-24 00:01:55,730 INFO flake replay 1/3 of rust-analyzer|r0_crash|semanticTokens:result->error:timeout: settled=True control_stable=True reproduced=True (394.4s)
+2026-09-24 00:08:28,988 INFO flake replay 2/3 of rust-analyzer|r0_crash|semanticTokens:result->error:timeout: settled=True control_stable=True reproduced=True (393.3s)
+2026-09-24 00:15:01,701 INFO flake replay 3/3 of rust-analyzer|r0_crash|semanticTokens:result->error:timeout: settled=True control_stable=True reproduced=True (392.7s)
+2026-09-24 00:15:01,757 INFO campaign_run run 4f319fe5eb21 finished: ok, 1 confirmed of 3 candidate(s), 3922s

@@ -1,0 +1,598 @@
+{
+ "format": 1,
+ "campaign": "main_v2",
+ "vid": "f373be50b7d7-v01",
+ "run_id": "f373be50b7d7",
+ "oracle": "r4_edits",
+ "server": {
+  "kind": "gopls",
+  "version": "v0.23.0"
+ },
+ "project": {
+  "name": "abiosoft/colima@bba803d3d6fa",
+  "source": "corpus",
+  "ref": "temp/corpus/abiosoft__colima@bba803d3d6fa",
+  "commit": "bba803d3d6fa9372a60f747e5dad4c8e80db7cde",
+  "language": "go"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "core/core.go",
+    "positions": [
+     [
+      23,
+      74
+     ],
+     [
+      30,
+      14
+     ],
+     [
+      30,
+      19
+     ],
+     [
+      45,
+      15
+     ],
+     [
+      49,
+      18
+     ],
+     [
+      51,
+      8
+     ],
+     [
+      53,
+      23
+     ],
+     [
+      54,
+      56
+     ],
+     [
+      63,
+      5
+     ],
+     [
+      68,
+      10
+     ],
+     [
+      72,
+      48
+     ],
+     [
+      74,
+      16
+     ]
+    ],
+    "ends": [
+     [
+      23,
+      76
+     ],
+     [
+      30,
+      17
+     ],
+     [
+      30,
+      21
+     ],
+     [
+      45,
+      25
+     ],
+     [
+      49,
+      21
+     ],
+     [
+      51,
+      11
+     ],
+     [
+      53,
+      25
+     ],
+     [
+      54,
+      58
+     ],
+     [
+      63,
+      8
+     ],
+     [
+      68,
+      12
+     ],
+     [
+      72,
+      53
+     ],
+     [
+      74,
+      19
+     ]
+    ],
+    "names": [
+     "Arch",
+     "guest",
+     "Run",
+     "LimaVersionSupported",
+     "Buffer",
+     "Stdout",
+     "err",
+     "err",
+     "values",
+     "nil",
+     "TrimPrefix",
+     "Errorf"
+    ]
+   },
+   {
+    "path": "environment/vm/lima/limautil/image_test.go",
+    "positions": [
+     [
+      4,
+      26
+     ],
+     [
+      4,
+      31
+     ],
+     [
+      8,
+      12
+     ],
+     [
+      9,
+      12
+     ],
+     [
+      10,
+      12
+     ],
+     [
+      15,
+      13
+     ],
+     [
+      21,
+      4
+     ],
+     [
+      23,
+      5
+     ],
+     [
+      27,
+      13
+     ],
+     [
+      29,
+      5
+     ],
+     [
+      38,
+      5
+     ],
+     [
+      40,
+      24
+     ]
+    ],
+    "ends": [
+     [
+      4,
+      30
+     ],
+     [
+      4,
+      32
+     ],
+     [
+      8,
+      15
+     ],
+     [
+      9,
+      15
+     ],
+     [
+      10,
+      15
+     ],
+     [
+      15,
+      16
+     ],
+     [
+      21,
+      6
+     ],
+     [
+      23,
+      7
+     ],
+     [
+      27,
+      16
+     ],
+     [
+      29,
+      7
+     ],
+     [
+      38,
+      6
+     ],
+     [
+      40,
+      25
+     ]
+    ],
+    "names": [
+     "testing",
+     "T",
+     "string",
+     "string",
+     "string",
+     "ghURL",
+     "url",
+     "want",
+     "ghURL",
+     "want",
+     "_",
+     "tt"
+    ]
+   },
+   {
+    "path": "util/downloader/download.go",
+    "positions": [
+     [
+      48,
+      24
+     ],
+     [
+      49,
+      17
+     ],
+     [
+      75,
+      42
+     ],
+     [
+      94,
+      15
+     ],
+     [
+      104,
+      34
+     ],
+     [
+      112,
+      27
+     ],
+     [
+      113,
+      14
+     ],
+     [
+      121,
+      27
+     ],
+     [
+      147,
+      28
+     ],
+     [
+      152,
+      6
+     ],
+     [
+      152,
+      13
+     ],
+     [
+      153,
+      34
+     ]
+    ],
+    "ends": [
+     [
+      48,
+      33
+     ],
+     [
+      49,
+      18
+     ],
+     [
+      75,
+      43
+     ],
+     [
+      94,
+      17
+     ],
+     [
+      104,
+      37
+     ],
+     [
+      112,
+      34
+     ],
+     [
+      113,
+      21
+     ],
+     [
+      121,
+      31
+     ],
+     [
+      147,
+      30
+     ],
+     [
+      152,
+      7
+     ],
+     [
+      152,
+      18
+     ],
+     [
+      153,
+      36
+     ]
+    ],
+    "names": [
+     "ValidateDownloader",
+     "d",
+     "ID",
+     "err",
+     "string",
+     "resumeInfoPath",
+     "CacheFilename",
+     "cacheDir",
+     "etag",
+     "d",
+     "downloader",
+     "url"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "diagnostics",
+  "path": "core/core.go",
+  "line": 24,
+  "character": 1,
+  "extra": "M2:quickfix-errors:Remove variable qemuArch"
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "core/core.go"
+  },
+  {
+   "kind": "change",
+   "path": "core/core.go",
+   "start": [
+    30,
+    94
+   ],
+   "end": [
+    30,
+    102
+   ],
+   "text": "qemurch"
+  },
+  {
+   "kind": "change",
+   "path": "core/core.go",
+   "start": [
+    24,
+    1
+   ],
+   "end": [
+    25,
+    1
+   ]
+  }
+ ],
+ "case": {
+  "action_kind": "quickfix",
+  "base_errors": 0,
+  "check": "errors",
+  "diag": {
+   "code": "UnusedVar",
+   "message": "declared and not used: qemuArch",
+   "range": {
+    "end": {
+     "character": 9,
+     "line": 24
+    },
+    "start": {
+     "character": 1,
+     "line": 24
+    }
+   },
+   "severity": 1
+  },
+  "fix_introduced_errors": [
+   {
+    "code": "UndeclaredName",
+    "message": "undefined: qemuArch",
+    "path": "core/core.go",
+    "range": {
+     "end": {
+      "character": 10,
+      "line": 25
+     },
+     "start": {
+      "character": 2,
+      "line": 25
+     }
+    },
+    "severity": 1
+   }
+  ],
+  "fix_ops": [
+   {
+    "end": [
+     25,
+     1
+    ],
+    "kind": "change",
+    "path": "core/core.go",
+    "start": [
+     24,
+     1
+    ]
+   }
+  ],
+  "kind": "mutation",
+  "mutation": {
+   "end": [
+    30,
+    102
+   ],
+   "id": "M2",
+   "offsets": [
+    730,
+    738
+   ],
+   "sha": "6ebf83ee70cd52ba",
+   "start": [
+    30,
+    94
+   ],
+   "text": "qemurch",
+   "what": "misspell 'qemuArch' as 'qemurch' (drop a middle character)"
+  },
+  "n_fix_ops": 1,
+  "path": "core/core.go",
+  "post_errors": 2,
+  "title": "Remove variable qemuArch",
+  "via": "edit"
+ },
+ "shape": "diagnostics:extra:UndeclaredName",
+ "signature": "gopls|r4_edits|diagnostics:extra:UndeclaredName",
+ "expected": [],
+ "actual": [
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "UndeclaredName",
+   "compiler",
+   "undefined: qemuArch"
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "UndeclaredName",
+   "compiler",
+   "undefined: qemurch"
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "quick fix 'Remove variable qemuArch' for UnusedVar at core/core.go:25:2 raises the error count in the edited files from 0 to 2 (seeded by M2: misspell 'qemuArch' as 'qemurch' (drop a middle character); errors before the mutation 0, after the fix 2); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 45s",
+ "violation": {
+  "oracle": "r4_edits",
+  "server": "gopls-v0.23.0",
+  "project": "abiosoft/colima@bba803d3d6fa",
+  "key": {
+   "method": "diagnostics",
+   "path": "core/core.go",
+   "line": 24,
+   "character": 1,
+   "extra": "M2:quickfix-errors:Remove variable qemuArch"
+  },
+  "expected": [],
+  "actual": [
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "UndeclaredName",
+    "compiler",
+    "undefined: qemuArch"
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "UndeclaredName",
+    "compiler",
+    "undefined: qemurch"
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "core/core.go"
+   },
+   {
+    "kind": "change",
+    "path": "core/core.go",
+    "start": [
+     30,
+     94
+    ],
+    "end": [
+     30,
+     102
+    ],
+    "text": "qemurch"
+   },
+   {
+    "kind": "change",
+    "path": "core/core.go",
+    "start": [
+     24,
+     1
+    ],
+    "end": [
+     25,
+     1
+    ]
+   }
+  ],
+  "detail": "{\"case\": {\"action_kind\": \"quickfix\", \"base_errors\": 0, \"check\": \"errors\", \"diag\": {\"code\": \"UnusedVar\", \"message\": \"declared and not used: qemuArch\", \"range\": {\"end\": {\"character\": 9, \"line\": 24}, \"start\": {\"character\": 1, \"line\": 24}}, \"severity\": 1}, \"fix_introduced_errors\": [{\"code\": \"UndeclaredName\", \"message\": \"undefined: qemuArch\", \"path\": \"core/core.go\", \"range\": {\"end\": {\"character\": 10, \"line\": 25}, \"start\": {\"character\": 2, \"line\": 25}}, \"severity\": 1}], \"fix_ops\": [{\"end\": [25, 1], \"kind\": \"change\", \"path\": \"core/core.go\", \"start\": [24, 1]}], \"kind\": \"mutation\", \"mutation\": {\"end\": [30, 102], \"id\": \"M2\", \"offsets\": [730, 738], \"sha\": \"6ebf83ee70cd52ba\", \"start\": [30, 94], \"text\": \"qemurch\", \"what\": \"misspell 'qemuArch' as 'qemurch' (drop a middle character)\"}, \"n_fix_ops\": 1, \"path\": \"core/core.go\", \"post_errors\": 2, \"title\": \"Remove variable qemuArch\", \"via\": \"edit\"}, \"note\": \"quick fix 'Remove variable qemuArch' for UnusedVar at core/core.go:25:2 raises the error count in the edited files from 0 to 2 (seeded by M2: misspell 'qemuArch' as 'qemurch' (drop a middle character); errors before the mutation 0, after the fix 2); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 45s\", \"shape\": \"diagnostics:extra:UndeclaredName\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "gopls|r4_edits|diagnostics:extra:UndeclaredName",
+  "run_id": "f373be50b7d7"
+ },
+ "replay_logs": [
+  "logs/gopls-v0.23.0-f373be50b7d7-r4-replay-baseline-20261118-103513-d3c2b2.jsonl.gz",
+  "logs/gopls-v0.23.0-f373be50b7d7-r4-replay-case-20261118-103504-7c82fb.jsonl.gz",
+  "logs/gopls-v0.23.0-f373be50b7d7-r4-replay-control-20261118-103516-701306.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

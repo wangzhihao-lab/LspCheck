@@ -1,0 +1,44 @@
+{
+ "vid": "3e554bc8dfb0-v00",
+ "ops_before": 0,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 0,
+ "cache_hits": 0,
+ "reduce_seconds": 0.0,
+ "budget_exhausted": false,
+ "probe_log": [],
+ "logs": [
+  "ts7-7.0.2-tr560852-r3-replay-baseline-20261118-215059-8b8e2c.jsonl.gz",
+  "ts7-7.0.2-tr560852-r3-replay-control-20261118-215117-34d00b.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [
+   [
+    "src/plugins/equalizer/index.ts",
+    82,
+    4,
+    82,
+    8
+   ],
+   [
+    "src/types/plugins.ts",
+    20,
+    2,
+    20,
+    6
+   ]
+  ],
+  "actual": [
+   [
+    "src/types/plugins.ts",
+    20,
+    2,
+    20,
+    6
+   ]
+  ]
+ },
+ "ops_after": 0,
+ "total_seconds": 118.3
+}

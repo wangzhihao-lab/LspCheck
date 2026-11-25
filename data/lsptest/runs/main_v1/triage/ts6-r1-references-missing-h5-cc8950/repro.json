@@ -1,0 +1,576 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "9fc84ad1ca04-v00",
+ "run_id": "9fc84ad1ca04",
+ "oracle": "r1_history",
+ "server": {
+  "kind": "ts6",
+  "version": "6.0.3"
+ },
+ "project": {
+  "name": "Fission-AI/OpenSpec@f179ed4e4056",
+  "source": "corpus",
+  "ref": "temp/corpus/Fission-AI__OpenSpec@f179ed4e4056",
+  "commit": "f179ed4e40567cdb56501ee3f4d09efbcb1557b8",
+  "language": "typescript"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "race200",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "src/core/shared/skill-generation.ts",
+    "positions": [
+     [
+      64,
+      5
+     ]
+    ],
+    "ends": [],
+    "names": [
+     ""
+    ]
+   },
+   {
+    "path": "src/telemetry/index.ts",
+    "positions": [],
+    "ends": [],
+    "names": []
+   },
+   {
+    "path": "test/commands/store-git.test.ts",
+    "positions": [],
+    "ends": [],
+    "names": []
+   }
+  ]
+ },
+ "key": {
+  "method": "references",
+  "path": "src/core/shared/skill-generation.ts",
+  "line": 64,
+  "character": 5,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "src/core/shared/skill-generation.ts",
+   "delay_ms": 200
+  },
+  {
+   "kind": "fs_rename",
+   "path": "src/core/shared/skill-generation.ts",
+   "new_path": "src/core/shared/skill-generation_rt.ts",
+   "delay_ms": 200
+  },
+  {
+   "kind": "fs_rename",
+   "path": "src/core/shared/skill-generation_rt.ts",
+   "new_path": "src/core/shared/skill-generation.ts",
+   "delay_ms": 200
+  }
+ ],
+ "case": {
+  "chain_step": 0,
+  "families": [],
+  "family": "H5",
+  "history_index": 9,
+  "history_seed": 1010,
+  "mode": "fresh",
+  "note": "rename src/core/shared/skill-generation.ts -> src/core/shared/skill-generation_rt.ts -> back",
+  "seed": 1,
+  "timing": "race200"
+ },
+ "shape": "references:missing",
+ "signature": "ts6|r1_history|references:missing",
+ "expected": [
+  [
+   "src/core/init.ts",
+   966,
+   33,
+   966,
+   40
+  ],
+  [
+   "src/core/shared/skill-generation.ts",
+   64,
+   2,
+   64,
+   9
+  ],
+  [
+   "src/core/shared/skill-generation.ts",
+   83,
+   43,
+   83,
+   50
+  ],
+  [
+   "src/core/shared/skill-generation.ts",
+   84,
+   45,
+   84,
+   52
+  ],
+  [
+   "src/core/shared/skill-generation.ts",
+   85,
+   50,
+   85,
+   57
+  ],
+  [
+   "src/core/shared/skill-generation.ts",
+   86,
+   47,
+   86,
+   54
+  ],
+  [
+   "src/core/shared/skill-generation.ts",
+   87,
+   48,
+   87,
+   55
+  ],
+  [
+   "src/core/shared/skill-generation.ts",
+   88,
+   44,
+   88,
+   51
+  ],
+  [
+   "src/core/shared/skill-generation.ts",
+   89,
+   45,
+   89,
+   52
+  ],
+  [
+   "src/core/shared/skill-generation.ts",
+   90,
+   49,
+   90,
+   56
+  ],
+  [
+   "src/core/shared/skill-generation.ts",
+   91,
+   53,
+   91,
+   60
+  ],
+  [
+   "src/core/shared/skill-generation.ts",
+   92,
+   48,
+   92,
+   55
+  ],
+  [
+   "src/core/shared/skill-generation.ts",
+   93,
+   43,
+   93,
+   50
+  ],
+  [
+   "src/core/shared/skill-generation.ts",
+   94,
+   47,
+   94,
+   54
+  ],
+  [
+   "src/core/update.ts",
+   339,
+   33,
+   339,
+   40
+  ],
+  [
+   "src/core/update.ts",
+   629,
+   75,
+   629,
+   82
+  ],
+  [
+   "src/core/update.ts",
+   1343,
+   33,
+   1343,
+   40
+  ]
+ ],
+ "actual": [
+  [
+   "src/core/shared/skill-generation.ts",
+   64,
+   2,
+   64,
+   9
+  ],
+  [
+   "src/core/shared/skill-generation.ts",
+   83,
+   43,
+   83,
+   50
+  ],
+  [
+   "src/core/shared/skill-generation.ts",
+   84,
+   45,
+   84,
+   52
+  ],
+  [
+   "src/core/shared/skill-generation.ts",
+   85,
+   50,
+   85,
+   57
+  ],
+  [
+   "src/core/shared/skill-generation.ts",
+   86,
+   47,
+   86,
+   54
+  ],
+  [
+   "src/core/shared/skill-generation.ts",
+   87,
+   48,
+   87,
+   55
+  ],
+  [
+   "src/core/shared/skill-generation.ts",
+   88,
+   44,
+   88,
+   51
+  ],
+  [
+   "src/core/shared/skill-generation.ts",
+   89,
+   45,
+   89,
+   52
+  ],
+  [
+   "src/core/shared/skill-generation.ts",
+   90,
+   49,
+   90,
+   56
+  ],
+  [
+   "src/core/shared/skill-generation.ts",
+   91,
+   53,
+   91,
+   60
+  ],
+  [
+   "src/core/shared/skill-generation.ts",
+   92,
+   48,
+   92,
+   55
+  ],
+  [
+   "src/core/shared/skill-generation.ts",
+   93,
+   43,
+   93,
+   50
+  ],
+  [
+   "src/core/shared/skill-generation.ts",
+   94,
+   47,
+   94,
+   54
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "H5: rename src/core/shared/skill-generation.ts -> src/core/shared/skill-generation_rt.ts -> back; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 112s",
+ "violation": {
+  "oracle": "r1_history",
+  "server": "ts6-6.0.3",
+  "project": "Fission-AI/OpenSpec@f179ed4e4056",
+  "key": {
+   "method": "references",
+   "path": "src/core/shared/skill-generation.ts",
+   "line": 64,
+   "character": 5,
+   "extra": ""
+  },
+  "expected": [
+   [
+    "src/core/init.ts",
+    966,
+    33,
+    966,
+    40
+   ],
+   [
+    "src/core/shared/skill-generation.ts",
+    64,
+    2,
+    64,
+    9
+   ],
+   [
+    "src/core/shared/skill-generation.ts",
+    83,
+    43,
+    83,
+    50
+   ],
+   [
+    "src/core/shared/skill-generation.ts",
+    84,
+    45,
+    84,
+    52
+   ],
+   [
+    "src/core/shared/skill-generation.ts",
+    85,
+    50,
+    85,
+    57
+   ],
+   [
+    "src/core/shared/skill-generation.ts",
+    86,
+    47,
+    86,
+    54
+   ],
+   [
+    "src/core/shared/skill-generation.ts",
+    87,
+    48,
+    87,
+    55
+   ],
+   [
+    "src/core/shared/skill-generation.ts",
+    88,
+    44,
+    88,
+    51
+   ],
+   [
+    "src/core/shared/skill-generation.ts",
+    89,
+    45,
+    89,
+    52
+   ],
+   [
+    "src/core/shared/skill-generation.ts",
+    90,
+    49,
+    90,
+    56
+   ],
+   [
+    "src/core/shared/skill-generation.ts",
+    91,
+    53,
+    91,
+    60
+   ],
+   [
+    "src/core/shared/skill-generation.ts",
+    92,
+    48,
+    92,
+    55
+   ],
+   [
+    "src/core/shared/skill-generation.ts",
+    93,
+    43,
+    93,
+    50
+   ],
+   [
+    "src/core/shared/skill-generation.ts",
+    94,
+    47,
+    94,
+    54
+   ],
+   [
+    "src/core/update.ts",
+    339,
+    33,
+    339,
+    40
+   ],
+   [
+    "src/core/update.ts",
+    629,
+    75,
+    629,
+    82
+   ],
+   [
+    "src/core/update.ts",
+    1343,
+    33,
+    1343,
+    40
+   ]
+  ],
+  "actual": [
+   [
+    "src/core/shared/skill-generation.ts",
+    64,
+    2,
+    64,
+    9
+   ],
+   [
+    "src/core/shared/skill-generation.ts",
+    83,
+    43,
+    83,
+    50
+   ],
+   [
+    "src/core/shared/skill-generation.ts",
+    84,
+    45,
+    84,
+    52
+   ],
+   [
+    "src/core/shared/skill-generation.ts",
+    85,
+    50,
+    85,
+    57
+   ],
+   [
+    "src/core/shared/skill-generation.ts",
+    86,
+    47,
+    86,
+    54
+   ],
+   [
+    "src/core/shared/skill-generation.ts",
+    87,
+    48,
+    87,
+    55
+   ],
+   [
+    "src/core/shared/skill-generation.ts",
+    88,
+    44,
+    88,
+    51
+   ],
+   [
+    "src/core/shared/skill-generation.ts",
+    89,
+    45,
+    89,
+    52
+   ],
+   [
+    "src/core/shared/skill-generation.ts",
+    90,
+    49,
+    90,
+    56
+   ],
+   [
+    "src/core/shared/skill-generation.ts",
+    91,
+    53,
+    91,
+    60
+   ],
+   [
+    "src/core/shared/skill-generation.ts",
+    92,
+    48,
+    92,
+    55
+   ],
+   [
+    "src/core/shared/skill-generation.ts",
+    93,
+    43,
+    93,
+    50
+   ],
+   [
+    "src/core/shared/skill-generation.ts",
+    94,
+    47,
+    94,
+    54
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "src/core/shared/skill-generation.ts",
+    "delay_ms": 200
+   },
+   {
+    "kind": "open",
+    "path": "src/telemetry/index.ts",
+    "delay_ms": 200
+   },
+   {
+    "kind": "open",
+    "path": "test/commands/store-git.test.ts",
+    "delay_ms": 200
+   },
+   {
+    "kind": "fs_rename",
+    "path": "src/core/shared/skill-generation.ts",
+    "new_path": "src/core/shared/skill-generation_rt.ts",
+    "delay_ms": 200
+   },
+   {
+    "kind": "fs_rename",
+    "path": "src/core/shared/skill-generation_rt.ts",
+    "new_path": "src/core/shared/skill-generation.ts",
+    "delay_ms": 200
+   }
+  ],
+  "detail": "{\"case\": {\"chain_step\": 0, \"families\": [], \"family\": \"H5\", \"history_index\": 9, \"history_seed\": 1010, \"mode\": \"fresh\", \"note\": \"rename src/core/shared/skill-generation.ts -> src/core/shared/skill-generation_rt.ts -> back\", \"seed\": 1, \"timing\": \"race200\"}, \"note\": \"H5: rename src/core/shared/skill-generation.ts -> src/core/shared/skill-generation_rt.ts -> back; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 112s\", \"shape\": \"references:missing\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "ts6|r1_history|references:missing",
+  "run_id": "9fc84ad1ca04"
+ },
+ "replay_logs": [
+  "logs/ts6-6.0.3-trcc8950-replay-baseline-20260925-174630-73b598.jsonl.gz",
+  "logs/ts6-6.0.3-trcc8950-replay-control-20260925-174630-2fc3c6.jsonl.gz",
+  "logs/ts6-6.0.3-trcc8950-replay-history-20260925-174636-e6d35b.jsonl.gz"
+ ],
+ "project_files": {},
+ "group": "ts6-r1-references-missing-h5-cc8950",
+ "reduced": true
+}

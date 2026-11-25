@@ -1,0 +1,3 @@
+{
+ "src/cache_lock.rs": "use super::*;\n\npub(crate) struct CacheLock {\n  pub(crate) file: File,\n  pub(crate) path: Utf8PathBuf,\n  pub(crate) recipe: Modulepath,\n}\n\nimpl CacheLock {\n  pub(crate) fn save(mut self) -> RunResult<'static> {\n    let context = |source| Error::FilesystemIo {\n      source,\n      path: self.path.clone(),\n    };\n\n    self.file.set_len(0).map_err(context)?;\n\n    self.file.rewind().map_err(context)?;\n\n    let entry = CacheEntry {\n      recipe: self.recipe,\n    };\n\n    serde_json::to_writer(&mut self.file, &entry).map_err(|source| Error::CacheEntryWrite {\n      source,\n      path: self.path,\n    })\n  }\n}\n"
+}

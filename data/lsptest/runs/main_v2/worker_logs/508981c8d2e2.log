@@ -1,0 +1,6 @@
+2026-11-18 19:11:03,828 INFO campaign_run run 508981c8d2e2: r4_edits on gopls v0.23.0, labstack/echo@3d084be90224 seed 2 settled, targets ['group_method_handling_test.go', 'json.go', 'middleware/basic_auth_test.go']
+2026-11-18 19:12:07,033 INFO campaign_run run 508981c8d2e2: 1 candidate(s) in 63s; confirming
+2026-11-18 19:12:22,628 INFO flake replay 1/3 of gopls|r4_edits|diagnostics:extra:NotAType: settled=True control_stable=True reproduced=True (15.6s)
+2026-11-18 19:12:37,755 INFO flake replay 2/3 of gopls|r4_edits|diagnostics:extra:NotAType: settled=True control_stable=True reproduced=True (15.1s)
+2026-11-18 19:12:53,561 INFO flake replay 3/3 of gopls|r4_edits|diagnostics:extra:NotAType: settled=True control_stable=True reproduced=True (15.8s)
+2026-11-18 19:12:53,565 INFO campaign_run run 508981c8d2e2 finished: ok, 1 confirmed of 1 candidate(s), 110s

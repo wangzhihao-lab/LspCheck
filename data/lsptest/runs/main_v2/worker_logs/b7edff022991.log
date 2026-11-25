@@ -1,0 +1,3 @@
+2026-11-18 08:58:29,641 INFO campaign_run run b7edff022991: r1_history on gopls v0.23.0, abiosoft/colima@bba803d3d6fa seed 1 race200, targets ['cmd/ssh.go', 'environment/container/kubernetes/kubernetes.go', 'util/downloader/http.go']
+2026-11-18 09:00:41,161 INFO campaign_run run b7edff022991: 0 candidate(s) in 132s; confirming
+2026-11-18 09:00:41,162 INFO campaign_run run b7edff022991 finished: ok, 0 confirmed of 0 candidate(s), 132s

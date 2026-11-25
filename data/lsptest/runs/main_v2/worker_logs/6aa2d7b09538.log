@@ -1,0 +1,6 @@
+2026-11-18 05:47:12,380 INFO campaign_run run 6aa2d7b09538: r3_routes on rust-analyzer 2026-09-21, tokio-rs/tokio@3930bd182cb1 seed 1 settled, targets ['tokio/src/runtime/time/wheel/mod.rs', 'tokio/src/runtime/time_alt/wheel/level.rs', 'tokio/tests/uds_split.rs']
+2026-11-18 05:51:52,406 INFO campaign_run run 6aa2d7b09538: 1 candidate(s) in 280s; confirming
+2026-11-18 05:53:16,066 INFO flake replay 1/3 of rust-analyzer|r3_routes|diagnostics:extra:unlinked-file: settled=True control_stable=True reproduced=True (83.7s)
+2026-11-18 05:54:46,094 INFO flake replay 2/3 of rust-analyzer|r3_routes|diagnostics:extra:unlinked-file: settled=True control_stable=True reproduced=True (90.0s)
+2026-11-18 05:56:05,549 INFO flake replay 3/3 of rust-analyzer|r3_routes|diagnostics:extra:unlinked-file: settled=True control_stable=True reproduced=False (79.5s)
+2026-11-18 05:56:05,551 INFO campaign_run run 6aa2d7b09538 finished: ok, 0 confirmed of 1 candidate(s), 533s

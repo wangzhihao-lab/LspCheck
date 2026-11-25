@@ -1,0 +1,40 @@
+{
+ "vid": "0c1168881081-v00",
+ "ops_before": 2,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 0,
+ "cache_hits": 0,
+ "reduce_seconds": 0.0,
+ "budget_exhausted": false,
+ "probe_log": [],
+ "logs": [
+  "rust-analyzer-2026-09-21-tr4ee734-r5-replay-baseline-20261118-234118-7dadd0.jsonl.gz",
+  "rust-analyzer-2026-09-21-tr4ee734-r5-replay-case-20261118-234231-4821d3.jsonl.gz",
+  "rust-analyzer-2026-09-21-tr4ee734-r5-replay-control-20261118-234152-883123.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [
+   [
+    "Inline `std::io::stdin`",
+    "refactor.inline"
+   ],
+   [
+    "Replace qualified path with use",
+    "refactor.rewrite"
+   ]
+  ],
+  "actual": [
+   [
+    "Inline `std::io::/* 注释🙂 */ stdin`",
+    "refactor.inline"
+   ],
+   [
+    "Replace qualified path with use",
+    "refactor.rewrite"
+   ]
+  ]
+ },
+ "ops_after": 2,
+ "total_seconds": 402.2
+}

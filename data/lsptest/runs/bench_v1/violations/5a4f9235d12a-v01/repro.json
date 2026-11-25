@@ -1,0 +1,455 @@
+{
+ "format": 1,
+ "campaign": "bench_v1",
+ "vid": "5a4f9235d12a-v01",
+ "run_id": "5a4f9235d12a",
+ "oracle": "r1_history",
+ "server": {
+  "kind": "pyright",
+  "version": "1.1.380"
+ },
+ "project": {
+  "name": "pyright-8946",
+  "source": "dir",
+  "ref": "data/lsp_bench/cases/pyright-8946/project",
+  "commit": "",
+  "language": "python"
+ },
+ "context": {
+  "seed": 3,
+  "timing": "settled",
+  "settle_timeout_s": 120.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "main.py",
+    "positions": [
+     [
+      0,
+      10
+     ],
+     [
+      2,
+      25
+     ],
+     [
+      4,
+      9
+     ],
+     [
+      8,
+      12
+     ],
+     [
+      8,
+      30
+     ],
+     [
+      9,
+      8
+     ],
+     [
+      9,
+      23
+     ],
+     [
+      12,
+      15
+     ],
+     [
+      13,
+      6
+     ],
+     [
+      13,
+      13
+     ],
+     [
+      13,
+      27
+     ],
+     [
+      14,
+      5
+     ],
+     [
+      14,
+      13
+     ],
+     [
+      14,
+      23
+     ],
+     [
+      16,
+      25
+     ],
+     [
+      16,
+      32
+     ],
+     [
+      18,
+      22
+     ],
+     [
+      18,
+      34
+     ],
+     [
+      18,
+      51
+     ],
+     [
+      18,
+      58
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      15
+     ],
+     [
+      2,
+      32
+     ],
+     [
+      4,
+      16
+     ],
+     [
+      8,
+      20
+     ],
+     [
+      8,
+      32
+     ],
+     [
+      9,
+      11
+     ],
+     [
+      9,
+      27
+     ],
+     [
+      12,
+      26
+     ],
+     [
+      13,
+      9
+     ],
+     [
+      13,
+      15
+     ],
+     [
+      13,
+      29
+     ],
+     [
+      14,
+      7
+     ],
+     [
+      14,
+      17
+     ],
+     [
+      14,
+      27
+     ],
+     [
+      16,
+      29
+     ],
+     [
+      16,
+      34
+     ],
+     [
+      18,
+      23
+     ],
+     [
+      18,
+      37
+     ],
+     [
+      18,
+      52
+     ],
+     [
+      18,
+      61
+     ]
+    ],
+    "names": [
+     "__future__",
+     "TYPE_CHECKING",
+     "TYPE_CHECKING",
+     "multiprocessing",
+     "Pool",
+     "typing",
+     "Callable",
+     "execute_shell_commands",
+     "dates",
+     "list",
+     "date",
+     "cmd",
+     "Callable",
+     "datetime",
+     "datetime",
+     "date",
+     "po",
+     "system",
+     "d",
+     "dates"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "hover",
+  "path": "main.py",
+  "line": 12,
+  "character": 15,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "main.py"
+  },
+  {
+   "kind": "request",
+   "path": "main.py",
+   "start": [
+    15,
+    7
+   ],
+   "text": "completion"
+  },
+  {
+   "kind": "change",
+   "path": "main.py",
+   "start": [
+    5,
+    0
+   ],
+   "end": [
+    6,
+    0
+   ]
+  },
+  {
+   "kind": "request",
+   "path": "main.py",
+   "start": [
+    8,
+    8
+   ],
+   "text": "definition"
+  },
+  {
+   "kind": "change",
+   "path": "main.py",
+   "start": [
+    5,
+    0
+   ],
+   "end": [
+    5,
+    0
+   ],
+   "text": "    import datetime\n"
+  },
+  {
+   "kind": "set_config",
+   "settings": {
+    "python": {
+     "analysis": {
+      "useLibraryCodeForTypes": false
+     }
+    }
+   }
+  },
+  {
+   "kind": "set_config",
+   "settings": {
+    "python": {
+     "analysis": {
+      "useLibraryCodeForTypes": true
+     }
+    }
+   }
+  },
+  {
+   "kind": "request",
+   "path": "main.py",
+   "start": [
+    2,
+    32
+   ],
+   "text": "documentHighlight"
+  }
+ ],
+ "case": {
+  "chain_step": 0,
+  "families": [],
+  "family": "H7",
+  "history_index": 2,
+  "history_seed": 3005,
+  "mode": "fresh",
+  "note": "shuffle: H2 main.py: delete line 5, retype it in 1 chunk(s) | H4 toggle python.analysis.useLibraryCodeForTypes: True -> False -> back | H8 3 requests in a shuffled order: completion@main.py:15:7, definition@main.py:9:8, documentHighlight@main.py:2:32",
+  "seed": 3,
+  "timing": "settled"
+ },
+ "shape": "hover:text",
+ "signature": "pyright|r1_history|hover:text",
+ "expected": [
+  "(function) def execute_shell_commands( dates: list[date], cmd: (date) -> str, workers: int = 1 ) -> list[tuple[int, date]]",
+  [
+   12,
+   4,
+   12,
+   26
+  ]
+ ],
+ "actual": [
+  "(function) def execute_shell_commands( dates: list[Unknown], cmd: (Unknown) -> str, workers: int = 1 ) -> list[tuple[int, Unknown]]",
+  [
+   12,
+   4,
+   12,
+   26
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "H7: shuffle: H2 main.py: delete line 5, retype it in 1 chunk(s) | H4 toggle python.analysis.useLibraryCodeForTypes: True -> False -> back | H8 3 requests in a shuffled order: completion@main.py:15:7, defi; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 82s",
+ "violation": {
+  "oracle": "r1_history",
+  "server": "pyright-1.1.380",
+  "project": "pyright-8946",
+  "key": {
+   "method": "hover",
+   "path": "main.py",
+   "line": 12,
+   "character": 15,
+   "extra": ""
+  },
+  "expected": [
+   "(function) def execute_shell_commands( dates: list[date], cmd: (date) -> str, workers: int = 1 ) -> list[tuple[int, date]]",
+   [
+    12,
+    4,
+    12,
+    26
+   ]
+  ],
+  "actual": [
+   "(function) def execute_shell_commands( dates: list[Unknown], cmd: (Unknown) -> str, workers: int = 1 ) -> list[tuple[int, Unknown]]",
+   [
+    12,
+    4,
+    12,
+    26
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "main.py"
+   },
+   {
+    "kind": "request",
+    "path": "main.py",
+    "start": [
+     15,
+     7
+    ],
+    "text": "completion"
+   },
+   {
+    "kind": "change",
+    "path": "main.py",
+    "start": [
+     5,
+     0
+    ],
+    "end": [
+     6,
+     0
+    ]
+   },
+   {
+    "kind": "request",
+    "path": "main.py",
+    "start": [
+     8,
+     8
+    ],
+    "text": "definition"
+   },
+   {
+    "kind": "change",
+    "path": "main.py",
+    "start": [
+     5,
+     0
+    ],
+    "end": [
+     5,
+     0
+    ],
+    "text": "    import datetime\n"
+   },
+   {
+    "kind": "set_config",
+    "settings": {
+     "python": {
+      "analysis": {
+       "useLibraryCodeForTypes": false
+      }
+     }
+    }
+   },
+   {
+    "kind": "set_config",
+    "settings": {
+     "python": {
+      "analysis": {
+       "useLibraryCodeForTypes": true
+      }
+     }
+    }
+   },
+   {
+    "kind": "request",
+    "path": "main.py",
+    "start": [
+     2,
+     32
+    ],
+    "text": "documentHighlight"
+   }
+  ],
+  "detail": "{\"case\": {\"chain_step\": 0, \"families\": [], \"family\": \"H7\", \"history_index\": 2, \"history_seed\": 3005, \"mode\": \"fresh\", \"note\": \"shuffle: H2 main.py: delete line 5, retype it in 1 chunk(s) | H4 toggle python.analysis.useLibraryCodeForTypes: True -> False -> back | H8 3 requests in a shuffled order: completion@main.py:15:7, definition@main.py:9:8, documentHighlight@main.py:2:32\", \"seed\": 3, \"timing\": \"settled\"}, \"note\": \"H7: shuffle: H2 main.py: delete line 5, retype it in 1 chunk(s) | H4 toggle python.analysis.useLibraryCodeForTypes: True -> False -> back | H8 3 requests in a shuffled order: completion@main.py:15:7, defi; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 82s\", \"shape\": \"hover:text\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "pyright|r1_history|hover:text",
+  "run_id": "5a4f9235d12a"
+ },
+ "replay_logs": [
+  "logs/pyright-1.1.380-5a4f9235d12a-replay-baseline-20260925-080458-2b8ba4.jsonl.gz",
+  "logs/pyright-1.1.380-5a4f9235d12a-replay-control-20260925-080458-d58469.jsonl.gz",
+  "logs/pyright-1.1.380-5a4f9235d12a-replay-history-20260925-080503-780d1c.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

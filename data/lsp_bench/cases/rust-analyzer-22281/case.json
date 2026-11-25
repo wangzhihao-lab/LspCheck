@@ -1,0 +1,106 @@
+{
+ "schema": 1,
+ "id": "rust-analyzer-22281",
+ "meta": {
+  "server": "rust-analyzer",
+  "kind": "rust-analyzer",
+  "number": 22281,
+  "url": "https://github.com/rust-lang/rust-analyzer/issues/22281",
+  "title": "Qualify path loses path segment",
+  "oracle_class": "R4",
+  "subtype": "quickfix",
+  "fix_ref": "rust-lang/rust-analyzer#22354 (Fix assit `qualify_path` loses path segment)",
+  "fix_shas": [
+   "463396f44de42e1ab2236232978693205a707784"
+  ],
+  "pre_version": "2026-05-11",
+  "post_version": "2026-05-18",
+  "pre_build": "2026-05-11",
+  "post_build": "2026-05-18",
+  "build_notes": "GitHub release assets rust-analyzer-aarch64-apple-darwin.gz of the weekly tags 2026-05-11 and 2026-05-18; git tag --contains puts the fix first in 2026-05-18. The sysroot is the local rustup toolchain (rustc 1.98.1).",
+  "effort_minutes": 12,
+  "notes": "The qualify_path assist rebuilt the path from the resolved item's module path and dropped the segment 'ext' when the cursor was on the last segment: 'make::ext::foo' became 'ast::make::foo'. Attempt 1 (diagnostics after the edit) could not see the wrong path because rust-analyzer does not report the unresolved multi-segment path; attempt 2 compares with the issue's expected text (specification probe).",
+  "candidate_rank": 23
+ },
+ "language": "rust",
+ "settings": {},
+ "settings_note": "The issue names no settings; the session keeps checkOnSave off (native analysis only).",
+ "session": {
+  "settle_timeout_s": 240,
+  "request_timeout_s": 60,
+  "pull_diagnostics": false
+ },
+ "files": [
+  {
+   "path": "src/main.rs",
+   "provenance": "issue-adapted",
+   "source": "issue body, first code block",
+   "note": "the module line verbatim; the path expression 'make::ext::foo' (cursor marker $0 removed) is placed as a statement in an added fn main, since a bare path is not an item"
+  },
+  {
+   "path": "Cargo.toml",
+   "provenance": "scaffold",
+   "source": "",
+   "note": "a binary crate around the snippet (package name, version, edition 2021)"
+  }
+ ],
+ "repro": {
+  "attempt": 2,
+  "timing": "settled",
+  "steps": "Open src/main.rs. With the cursor at the end of the unresolved path 'make::ext::foo' (line 2, character 18, the issue's $0) apply the qualify-path fix (Qualify ...). Reported: 'ast::make::foo', which does not resolve; expected 'ast::make::ext::foo'. Probe (specification, attempt 2): the edited src/main.rs must equal the issue's expected result, the path qualified as ast::make::ext::foo.",
+  "ops": [
+   {
+    "kind": "open",
+    "path": "src/main.rs"
+   }
+  ],
+  "probe": {
+   "type": "edit_text_differs",
+   "params": {
+    "edit": {
+     "via": "code_action",
+     "path": "src/main.rs",
+     "range": [
+      2,
+      18,
+      2,
+      18
+     ],
+     "title_re": "^Qualify",
+     "missing": "invalid"
+    },
+    "expected": {
+     "path": "src/main.rs",
+     "text": "mod ast { pub mod make { pub mod ext { pub fn foo() {} } } }\nfn main() {\n    ast::make::ext::foo;\n}\n",
+     "source": "issue body ('expect' block: ast::make::ext::foo), in the same fn main"
+    }
+   }
+  }
+ },
+ "attempts": [
+  {
+   "attempt": 1,
+   "timing": "settled",
+   "probe": "edit_leaves_diagnostic",
+   "summary": "Qualify-path fix checked with a fresh session on the edited text: not-reproduced-pre. The pre build 2026-05-11 did make the reported wrong edit ('ast::make::foo;', segment ext lost; the post build 2026-05-18 wrote 'ast::make::ext::foo;'), but rust-analyzer reports no diagnostic for the unresolved multi-segment path (neither before nor after the edit), so the diagnostic probe cannot see it.",
+   "verdict": "not-reproduced-pre (wrong edit, no diagnostic)",
+   "params": {
+    "edit": {
+     "via": "code_action",
+     "path": "src/main.rs",
+     "range": [
+      2,
+      18,
+      2,
+      18
+     ],
+     "title_re": "^Qualify",
+     "missing": "invalid"
+    },
+    "target": {
+     "message_re": "(?i)unresolved|no such|cannot find"
+    }
+   }
+  }
+ ]
+}

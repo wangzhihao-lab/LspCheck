@@ -1,0 +1,2811 @@
+{
+ "date": "2026-09-23 01:44",
+ "seed": 1,
+ "files": 3,
+ "positions": 12,
+ "servers": [
+  {
+   "server": "pyright",
+   "version": "1.1.414",
+   "language": "python",
+   "fixture": {
+    "repo": "pallets/flask",
+    "commit": "d73fa1cdcbd8b1465c151db8924ba58b1dd14e35",
+    "prepare_s": 0.04
+   },
+   "targets": [
+    {
+     "path": "examples/celery/src/task_app/tasks.py",
+     "positions": [
+      [
+       2,
+       8
+      ],
+      [
+       2,
+       24
+      ],
+      [
+       3,
+       21
+      ],
+      [
+       6,
+       19
+      ],
+      [
+       7,
+       16
+      ],
+      [
+       13,
+       11
+      ],
+      [
+       16,
+       15
+      ],
+      [
+       17,
+       7
+      ],
+      [
+       18,
+       8
+      ],
+      [
+       19,
+       10
+      ],
+      [
+       19,
+       19
+      ],
+      [
+       19,
+       79
+      ]
+     ],
+     "ends": [
+      [
+       2,
+       11
+      ],
+      [
+       2,
+       30
+      ],
+      [
+       3,
+       23
+      ],
+      [
+       6,
+       26
+      ],
+      [
+       7,
+       17
+      ],
+      [
+       13,
+       14
+      ],
+      [
+       16,
+       17
+      ],
+      [
+       17,
+       11
+      ],
+      [
+       18,
+       9
+      ],
+      [
+       19,
+       12
+      ],
+      [
+       19,
+       25
+      ],
+      [
+       19,
+       82
+      ]
+     ],
+     "names": [
+      "celery",
+      "shared_task",
+      "Task",
+      "ignore_result",
+      "b",
+      "sleep",
+      "bind",
+      "process",
+      "i",
+      "self",
+      "update_state",
+      "total"
+     ]
+    },
+    {
+     "path": "examples/javascript/js_example/views.py",
+     "positions": [
+      [
+       0,
+       7
+      ],
+      [
+       1,
+       7
+      ],
+      [
+       4,
+       15
+      ],
+      [
+       10,
+       18
+      ],
+      [
+       10,
+       42
+      ],
+      [
+       10,
+       45
+      ],
+      [
+       13,
+       7
+      ],
+      [
+       14,
+       5
+      ],
+      [
+       15,
+       4
+      ],
+      [
+       15,
+       11
+      ],
+      [
+       15,
+       22
+      ],
+      [
+       16,
+       40
+      ]
+     ],
+     "ends": [
+      [
+       0,
+       10
+      ],
+      [
+       1,
+       10
+      ],
+      [
+       4,
+       17
+      ],
+      [
+       10,
+       26
+      ],
+      [
+       10,
+       43
+      ],
+      [
+       10,
+       46
+      ],
+      [
+       13,
+       10
+      ],
+      [
+       14,
+       7
+      ],
+      [
+       15,
+       5
+      ],
+      [
+       15,
+       15
+      ],
+      [
+       15,
+       24
+      ],
+      [
+       16,
+       43
+      ]
+     ],
+     "names": [
+      "flask",
+      "flask",
+      "app",
+      "render_template",
+      "js",
+      "js",
+      "route",
+      "add",
+      "a",
+      "request",
+      "get",
+      "float"
+     ]
+    },
+    {
+     "path": "examples/javascript/tests/test_js_example.py",
+     "positions": [
+      [
+       4,
+       10
+      ],
+      [
+       14,
+       17
+      ],
+      [
+       14,
+       26
+      ],
+      [
+       15,
+       26
+      ],
+      [
+       17,
+       33
+      ],
+      [
+       18,
+       16
+      ],
+      [
+       21,
+       10
+      ],
+      [
+       21,
+       18
+      ],
+      [
+       24,
+       8
+      ],
+      [
+       24,
+       21
+      ],
+      [
+       24,
+       24
+      ],
+      [
+       25,
+       37
+      ]
+     ],
+     "ends": [
+      [
+       4,
+       12
+      ],
+      [
+       14,
+       20
+      ],
+      [
+       14,
+       30
+      ],
+      [
+       15,
+       28
+      ],
+      [
+       17,
+       39
+      ],
+      [
+       18,
+       18
+      ],
+      [
+       21,
+       12
+      ],
+      [
+       21,
+       24
+      ],
+      [
+       24,
+       12
+      ],
+      [
+       24,
+       22
+      ],
+      [
+       24,
+       25
+      ],
+      [
+       25,
+       39
+      ]
+     ],
+     "names": [
+      "mark",
+      "sender",
+      "template",
+      "name",
+      "connected_to",
+      "get",
+      "mark",
+      "parametrize",
+      "test_add",
+      "a",
+      "b",
+      "data"
+     ]
+    }
+   ],
+   "baseline": {
+    "label": "baseline",
+    "init_s": 0.24,
+    "settle": {
+     "settled": true,
+     "mode": "push",
+     "seconds": 3.25,
+     "reason": "published and quiet",
+     "rounds": 0,
+     "refreshes": 0,
+     "assumed": [],
+     "diagnostics": {
+      "examples/celery/src/task_app/tasks.py": 2,
+      "examples/javascript/js_example/views.py": 0,
+      "examples/javascript/tests/test_js_example.py": 3
+     },
+     "server_status": null
+    },
+    "suite_s": 33.513,
+    "errors": {},
+    "unsupported": [
+     "foldingRange",
+     "inlayHint",
+     "semanticTokens"
+    ],
+    "mean_ms": {
+     "codeAction": 0.9,
+     "completion": 23.9,
+     "definition": 2.1,
+     "diagnostics": 0.0,
+     "documentHighlight": 2.8,
+     "documentSymbol": 1.3,
+     "hover": 7.7,
+     "references": 886.1,
+     "signatureHelp": 3.1,
+     "typeDefinition": 2.0
+    },
+    "keys": 299,
+    "settled": true,
+    "session": "pyright-1.1.414-baseline-20260923-013822-f1dfbb",
+    "close": {
+     "session": "pyright-1.1.414-baseline-20260923-013822-f1dfbb",
+     "log": "data/lsptest/logs/pyright-1.1.414-baseline-20260923-013822-f1dfbb.jsonl",
+     "exit_code": 0,
+     "server_pids": [
+      46836
+     ],
+     "killed": [],
+     "kept": ""
+    },
+    "total_s": 37.18
+   },
+   "control": {
+    "label": "control",
+    "init_s": 0.25,
+    "settle": {
+     "settled": true,
+     "mode": "push",
+     "seconds": 3.449,
+     "reason": "published and quiet",
+     "rounds": 0,
+     "refreshes": 0,
+     "assumed": [],
+     "diagnostics": {
+      "examples/celery/src/task_app/tasks.py": 2,
+      "examples/javascript/js_example/views.py": 0,
+      "examples/javascript/tests/test_js_example.py": 3
+     },
+     "server_status": null
+    },
+    "suite_s": 43.481,
+    "errors": {},
+    "unsupported": [
+     "foldingRange",
+     "inlayHint",
+     "semanticTokens"
+    ],
+    "mean_ms": {
+     "codeAction": 1.4,
+     "completion": 31.6,
+     "definition": 2.8,
+     "diagnostics": 0.0,
+     "documentHighlight": 2.1,
+     "documentSymbol": 4.0,
+     "hover": 10.3,
+     "references": 1149.5,
+     "signatureHelp": 5.8,
+     "typeDefinition": 2.1
+    },
+    "keys": 299,
+    "settled": true,
+    "session": "pyright-1.1.414-control-20260923-013900-0f444b",
+    "close": {
+     "session": "pyright-1.1.414-control-20260923-013900-0f444b",
+     "log": "data/lsptest/logs/pyright-1.1.414-control-20260923-013900-0f444b.jsonl",
+     "exit_code": 0,
+     "server_pids": [
+      47020
+     ],
+     "killed": [],
+     "kept": ""
+    },
+    "total_s": 47.37
+   },
+   "stability": {
+    "per_method": {
+     "codeAction": {
+      "keys": 41,
+      "equal": 41,
+      "share": 1.0,
+      "informative": 0
+     },
+     "completion": {
+      "keys": 36,
+      "equal": 36,
+      "share": 1.0,
+      "informative": 16
+     },
+     "definition": {
+      "keys": 36,
+      "equal": 36,
+      "share": 1.0,
+      "informative": 21
+     },
+     "diagnostics": {
+      "keys": 3,
+      "equal": 3,
+      "share": 1.0,
+      "informative": 2
+     },
+     "documentHighlight": {
+      "keys": 36,
+      "equal": 36,
+      "share": 1.0,
+      "informative": 36
+     },
+     "documentSymbol": {
+      "keys": 3,
+      "equal": 3,
+      "share": 1.0,
+      "informative": 3
+     },
+     "hover": {
+      "keys": 36,
+      "equal": 36,
+      "share": 1.0,
+      "informative": 36
+     },
+     "references": {
+      "keys": 36,
+      "equal": 36,
+      "share": 1.0,
+      "informative": 22
+     },
+     "signatureHelp": {
+      "keys": 36,
+      "equal": 36,
+      "share": 1.0,
+      "informative": 2
+     },
+     "typeDefinition": {
+      "keys": 36,
+      "equal": 36,
+      "share": 1.0,
+      "informative": 19
+     }
+    },
+    "overall": 1.0,
+    "examples": {}
+   },
+   "noise": {
+    "total": 5,
+    "unresolved_module": 1,
+    "by_code": {
+     "<none>": 2,
+     "reportAttributeAccessIssue": 2,
+     "reportMissingImports": 1
+    }
+   }
+  },
+  {
+   "server": "ts6",
+   "version": "6.0.3",
+   "language": "typescript",
+   "fixture": {
+    "repo": "pmndrs/zustand",
+    "commit": "b57db4f86ef179285da216eeb291266da82c361c",
+    "prepare_s": 0.08
+   },
+   "targets": [
+    {
+     "path": "src/react.ts",
+     "positions": [
+      [
+       0,
+       9
+      ],
+      [
+       1,
+       14
+      ],
+      [
+       5,
+       8
+      ],
+      [
+       7,
+       13
+      ],
+      [
+       22,
+       6
+      ],
+      [
+       25,
+       38
+      ],
+      [
+       29,
+       32
+      ],
+      [
+       31,
+       32
+      ],
+      [
+       32,
+       15
+      ],
+      [
+       40,
+       37
+      ],
+      [
+       49,
+       37
+      ],
+      [
+       52,
+       28
+      ]
+     ],
+     "ends": [
+      [
+       0,
+       12
+      ],
+      [
+       1,
+       20
+      ],
+      [
+       5,
+       14
+      ],
+      [
+       7,
+       24
+      ],
+      [
+       22,
+       10
+      ],
+      [
+       25,
+       43
+      ],
+      [
+       29,
+       42
+      ],
+      [
+       31,
+       36
+      ],
+      [
+       32,
+       21
+      ],
+      [
+       40,
+       38
+      ],
+      [
+       49,
+       38
+      ],
+      [
+       52,
+       34
+      ]
+     ],
+     "names": [
+      "React",
+      "createStore",
+      "StateCreator",
+      "StoreMutatorIdentifier",
+      "selector",
+      "StateSlice",
+      "useSyncExternalStore",
+      "selector",
+      "useCallback",
+      "S",
+      "T",
+      "createState"
+     ]
+    },
+    {
+     "path": "src/vanilla/shallow.ts",
+     "positions": [
+      [
+       12,
+       15
+      ],
+      [
+       15,
+       42
+      ],
+      [
+       16,
+       53
+      ],
+      [
+       17,
+       27
+      ],
+      [
+       21,
+       11
+      ],
+      [
+       33,
+       38
+      ],
+      [
+       34,
+       23
+      ],
+      [
+       38,
+       34
+      ],
+      [
+       44,
+       35
+      ],
+      [
+       47,
+       46
+      ],
+      [
+       70,
+       24
+      ],
+      [
+       71,
+       39
+      ]
+     ],
+     "ends": [
+      [
+       12,
+       19
+      ],
+      [
+       15,
+       45
+      ],
+      [
+       16,
+       55
+      ],
+      [
+       17,
+       29
+      ],
+      [
+       21,
+       13
+      ],
+      [
+       33,
+       42
+      ],
+      [
+       34,
+       26
+      ],
+      [
+       38,
+       37
+      ],
+      [
+       44,
+       37
+      ],
+      [
+       47,
+       47
+      ],
+      [
+       70,
+       27
+      ],
+      [
+       71,
+       42
+      ]
+     ],
+     "names": [
+      "entries",
+      "valueA",
+      "Map",
+      "size",
+      "mapB",
+      "iterator",
+      "valueB",
+      "nextB",
+      "done",
+      "T",
+      "Object",
+      "valueB"
+     ]
+    },
+    {
+     "path": "tests/persistSync.test.tsx",
+     "positions": [
+      [
+       14,
+       37
+      ],
+      [
+       16,
+       6
+      ],
+      [
+       136,
+       15
+      ],
+      [
+       274,
+       9
+      ],
+      [
+       291,
+       41
+      ],
+      [
+       311,
+       25
+      ],
+      [
+       467,
+       20
+      ],
+      [
+       565,
+       64
+      ],
+      [
+       683,
+       24
+      ],
+      [
+       717,
+       16
+      ],
+      [
+       732,
+       22
+      ],
+      [
+       742,
+       30
+      ]
+     ],
+     "ends": [
+      [
+       14,
+       41
+      ],
+      [
+       16,
+       9
+      ],
+      [
+       136,
+       20
+      ],
+      [
+       274,
+       13
+      ],
+      [
+       291,
+       48
+      ],
+      [
+       311,
+       28
+      ],
+      [
+       467,
+       24
+      ],
+      [
+       565,
+       73
+      ],
+      [
+       683,
+       26
+      ],
+      [
+       717,
+       21
+      ],
+      [
+       732,
+       33
+      ],
+      [
+       742,
+       32
+      ]
+     ],
+     "names": [
+      "newState",
+      "state",
+      "setItemSpy",
+      "setItem",
+      "toBeCalledWith",
+      "count",
+      "entries",
+      "onFinishHydration",
+      "map",
+      "setItemSpy",
+      "onRehydrateStorageSpy2",
+      "name"
+     ]
+    }
+   ],
+   "baseline": {
+    "label": "baseline",
+    "init_s": 0.27,
+    "settle": {
+     "settled": true,
+     "mode": "push",
+     "seconds": 5.376,
+     "reason": "published and quiet",
+     "rounds": 0,
+     "refreshes": 1,
+     "assumed": [],
+     "diagnostics": {
+      "src/react.ts": 1,
+      "src/vanilla/shallow.ts": 0,
+      "tests/persistSync.test.tsx": 2
+     },
+     "server_status": null
+    },
+    "suite_s": 3.132,
+    "errors": {},
+    "unsupported": [],
+    "mean_ms": {
+     "codeAction": 2.8,
+     "completion": 21.0,
+     "definition": 2.0,
+     "diagnostics": 0.0,
+     "documentHighlight": 1.4,
+     "documentSymbol": 13.7,
+     "foldingRange": 6.0,
+     "hover": 6.1,
+     "inlayHint": 13.7,
+     "references": 45.0,
+     "semanticTokens": 13.7,
+     "signatureHelp": 2.4,
+     "typeDefinition": 0.9
+    },
+    "keys": 306,
+    "settled": true,
+    "session": "ts6-6.0.3-baseline-20260923-013947-0d303c",
+    "close": {
+     "session": "ts6-6.0.3-baseline-20260923-013947-0d303c",
+     "log": "data/lsptest/logs/ts6-6.0.3-baseline-20260923-013947-0d303c.jsonl",
+     "exit_code": 0,
+     "server_pids": [
+      48961,
+      48980,
+      48987,
+      49018
+     ],
+     "killed": [],
+     "kept": ""
+    },
+    "total_s": 8.89
+   },
+   "control": {
+    "label": "control",
+    "init_s": 0.18,
+    "settle": {
+     "settled": true,
+     "mode": "push",
+     "seconds": 3.426,
+     "reason": "published and quiet",
+     "rounds": 0,
+     "refreshes": 0,
+     "assumed": [],
+     "diagnostics": {
+      "src/react.ts": 1,
+      "src/vanilla/shallow.ts": 0,
+      "tests/persistSync.test.tsx": 2
+     },
+     "server_status": null
+    },
+    "suite_s": 2.156,
+    "errors": {},
+    "unsupported": [],
+    "mean_ms": {
+     "codeAction": 2.7,
+     "completion": 14.3,
+     "definition": 1.2,
+     "diagnostics": 0.0,
+     "documentHighlight": 1.3,
+     "documentSymbol": 13.7,
+     "foldingRange": 7.3,
+     "hover": 2.6,
+     "inlayHint": 12.3,
+     "references": 28.0,
+     "semanticTokens": 11.3,
+     "signatureHelp": 3.8,
+     "typeDefinition": 1.0
+    },
+    "keys": 306,
+    "settled": true,
+    "session": "ts6-6.0.3-control-20260923-013956-1fc676",
+    "close": {
+     "session": "ts6-6.0.3-control-20260923-013956-1fc676",
+     "log": "data/lsptest/logs/ts6-6.0.3-control-20260923-013956-1fc676.jsonl",
+     "exit_code": 0,
+     "server_pids": [
+      50160,
+      50161,
+      50162,
+      50163
+     ],
+     "killed": [],
+     "kept": ""
+    },
+    "total_s": 5.89
+   },
+   "stability": {
+    "per_method": {
+     "codeAction": {
+      "keys": 39,
+      "equal": 39,
+      "share": 1.0,
+      "informative": 37
+     },
+     "completion": {
+      "keys": 36,
+      "equal": 36,
+      "share": 1.0,
+      "informative": 28
+     },
+     "definition": {
+      "keys": 36,
+      "equal": 36,
+      "share": 1.0,
+      "informative": 33
+     },
+     "diagnostics": {
+      "keys": 3,
+      "equal": 3,
+      "share": 1.0,
+      "informative": 2
+     },
+     "documentHighlight": {
+      "keys": 36,
+      "equal": 36,
+      "share": 1.0,
+      "informative": 33
+     },
+     "documentSymbol": {
+      "keys": 3,
+      "equal": 3,
+      "share": 1.0,
+      "informative": 3
+     },
+     "foldingRange": {
+      "keys": 3,
+      "equal": 3,
+      "share": 1.0,
+      "informative": 3
+     },
+     "hover": {
+      "keys": 36,
+      "equal": 36,
+      "share": 1.0,
+      "informative": 36
+     },
+     "inlayHint": {
+      "keys": 3,
+      "equal": 3,
+      "share": 1.0,
+      "informative": 3
+     },
+     "references": {
+      "keys": 36,
+      "equal": 36,
+      "share": 1.0,
+      "informative": 33
+     },
+     "semanticTokens": {
+      "keys": 3,
+      "equal": 3,
+      "share": 1.0,
+      "informative": 3
+     },
+     "signatureHelp": {
+      "keys": 36,
+      "equal": 36,
+      "share": 1.0,
+      "informative": 5
+     },
+     "typeDefinition": {
+      "keys": 36,
+      "equal": 36,
+      "share": 1.0,
+      "informative": 21
+     }
+    },
+    "overall": 1.0,
+    "examples": {}
+   },
+   "noise": {
+    "total": 3,
+    "unresolved_module": 3,
+    "by_code": {
+     "2307": 2,
+     "2688": 1
+    }
+   }
+  },
+  {
+   "server": "ts7",
+   "version": "7.0.2",
+   "language": "typescript",
+   "fixture": {
+    "repo": "pmndrs/zustand",
+    "commit": "b57db4f86ef179285da216eeb291266da82c361c",
+    "prepare_s": 0.04
+   },
+   "targets": [
+    {
+     "path": "src/react.ts",
+     "positions": [
+      [
+       0,
+       9
+      ],
+      [
+       1,
+       14
+      ],
+      [
+       5,
+       8
+      ],
+      [
+       7,
+       13
+      ],
+      [
+       22,
+       6
+      ],
+      [
+       25,
+       38
+      ],
+      [
+       29,
+       32
+      ],
+      [
+       31,
+       32
+      ],
+      [
+       32,
+       15
+      ],
+      [
+       40,
+       37
+      ],
+      [
+       49,
+       37
+      ],
+      [
+       52,
+       28
+      ]
+     ],
+     "ends": [
+      [
+       0,
+       12
+      ],
+      [
+       1,
+       20
+      ],
+      [
+       5,
+       14
+      ],
+      [
+       7,
+       24
+      ],
+      [
+       22,
+       10
+      ],
+      [
+       25,
+       43
+      ],
+      [
+       29,
+       42
+      ],
+      [
+       31,
+       36
+      ],
+      [
+       32,
+       21
+      ],
+      [
+       40,
+       38
+      ],
+      [
+       49,
+       38
+      ],
+      [
+       52,
+       34
+      ]
+     ],
+     "names": [
+      "React",
+      "createStore",
+      "StateCreator",
+      "StoreMutatorIdentifier",
+      "selector",
+      "StateSlice",
+      "useSyncExternalStore",
+      "selector",
+      "useCallback",
+      "S",
+      "T",
+      "createState"
+     ]
+    },
+    {
+     "path": "src/vanilla/shallow.ts",
+     "positions": [
+      [
+       12,
+       15
+      ],
+      [
+       15,
+       42
+      ],
+      [
+       16,
+       53
+      ],
+      [
+       17,
+       27
+      ],
+      [
+       21,
+       11
+      ],
+      [
+       33,
+       38
+      ],
+      [
+       34,
+       23
+      ],
+      [
+       38,
+       34
+      ],
+      [
+       44,
+       35
+      ],
+      [
+       47,
+       46
+      ],
+      [
+       70,
+       24
+      ],
+      [
+       71,
+       39
+      ]
+     ],
+     "ends": [
+      [
+       12,
+       19
+      ],
+      [
+       15,
+       45
+      ],
+      [
+       16,
+       55
+      ],
+      [
+       17,
+       29
+      ],
+      [
+       21,
+       13
+      ],
+      [
+       33,
+       42
+      ],
+      [
+       34,
+       26
+      ],
+      [
+       38,
+       37
+      ],
+      [
+       44,
+       37
+      ],
+      [
+       47,
+       47
+      ],
+      [
+       70,
+       27
+      ],
+      [
+       71,
+       42
+      ]
+     ],
+     "names": [
+      "entries",
+      "valueA",
+      "Map",
+      "size",
+      "mapB",
+      "iterator",
+      "valueB",
+      "nextB",
+      "done",
+      "T",
+      "Object",
+      "valueB"
+     ]
+    },
+    {
+     "path": "tests/persistSync.test.tsx",
+     "positions": [
+      [
+       14,
+       37
+      ],
+      [
+       16,
+       6
+      ],
+      [
+       136,
+       15
+      ],
+      [
+       274,
+       9
+      ],
+      [
+       291,
+       41
+      ],
+      [
+       311,
+       25
+      ],
+      [
+       467,
+       20
+      ],
+      [
+       565,
+       64
+      ],
+      [
+       683,
+       24
+      ],
+      [
+       717,
+       16
+      ],
+      [
+       732,
+       22
+      ],
+      [
+       742,
+       30
+      ]
+     ],
+     "ends": [
+      [
+       14,
+       41
+      ],
+      [
+       16,
+       9
+      ],
+      [
+       136,
+       20
+      ],
+      [
+       274,
+       13
+      ],
+      [
+       291,
+       48
+      ],
+      [
+       311,
+       28
+      ],
+      [
+       467,
+       24
+      ],
+      [
+       565,
+       73
+      ],
+      [
+       683,
+       26
+      ],
+      [
+       717,
+       21
+      ],
+      [
+       732,
+       33
+      ],
+      [
+       742,
+       32
+      ]
+     ],
+     "names": [
+      "newState",
+      "state",
+      "setItemSpy",
+      "setItem",
+      "toBeCalledWith",
+      "count",
+      "entries",
+      "onFinishHydration",
+      "map",
+      "setItemSpy",
+      "onRehydrateStorageSpy2",
+      "name"
+     ]
+    }
+   ],
+   "baseline": {
+    "label": "baseline",
+    "init_s": 0.15,
+    "settle": {
+     "settled": true,
+     "mode": "pull",
+     "seconds": 2.566,
+     "reason": "two identical pulls, quiet",
+     "rounds": 2,
+     "refreshes": 0,
+     "assumed": [],
+     "diagnostics": {
+      "src/react.ts": 1,
+      "src/vanilla/shallow.ts": 0,
+      "tests/persistSync.test.tsx": 2
+     },
+     "server_status": null
+    },
+    "suite_s": 0.576,
+    "errors": {},
+    "unsupported": [],
+    "mean_ms": {
+     "codeAction": 0.2,
+     "completion": 5.6,
+     "definition": 0.3,
+     "diagnostics": 0.3,
+     "documentHighlight": 0.4,
+     "documentSymbol": 2.7,
+     "foldingRange": 1.7,
+     "hover": 0.5,
+     "inlayHint": 5.3,
+     "references": 5.2,
+     "semanticTokens": 10.0,
+     "signatureHelp": 0.4,
+     "typeDefinition": 0.6
+    },
+    "keys": 306,
+    "settled": true,
+    "session": "ts7-7.0.2-baseline-20260923-014002-4a62fb",
+    "close": {
+     "session": "ts7-7.0.2-baseline-20260923-014002-4a62fb",
+     "log": "data/lsptest/logs/ts7-7.0.2-baseline-20260923-014002-4a62fb.jsonl",
+     "exit_code": 1,
+     "server_pids": [
+      50263
+     ],
+     "killed": [],
+     "kept": ""
+    },
+    "total_s": 3.4
+   },
+   "control": {
+    "label": "control",
+    "init_s": 0.1,
+    "settle": {
+     "settled": true,
+     "mode": "pull",
+     "seconds": 2.609,
+     "reason": "two identical pulls, quiet",
+     "rounds": 2,
+     "refreshes": 0,
+     "assumed": [],
+     "diagnostics": {
+      "src/react.ts": 1,
+      "src/vanilla/shallow.ts": 0,
+      "tests/persistSync.test.tsx": 2
+     },
+     "server_status": null
+    },
+    "suite_s": 0.581,
+    "errors": {},
+    "unsupported": [],
+    "mean_ms": {
+     "codeAction": 0.3,
+     "completion": 5.9,
+     "definition": 0.3,
+     "diagnostics": 0.3,
+     "documentHighlight": 0.7,
+     "documentSymbol": 2.3,
+     "foldingRange": 1.3,
+     "hover": 0.5,
+     "inlayHint": 4.3,
+     "references": 4.9,
+     "semanticTokens": 10.3,
+     "signatureHelp": 0.5,
+     "typeDefinition": 0.3
+    },
+    "keys": 306,
+    "settled": true,
+    "session": "ts7-7.0.2-control-20260923-014005-1745c6",
+    "close": {
+     "session": "ts7-7.0.2-control-20260923-014005-1745c6",
+     "log": "data/lsptest/logs/ts7-7.0.2-control-20260923-014005-1745c6.jsonl",
+     "exit_code": 1,
+     "server_pids": [
+      50293
+     ],
+     "killed": [],
+     "kept": ""
+    },
+    "total_s": 3.42
+   },
+   "stability": {
+    "per_method": {
+     "codeAction": {
+      "keys": 39,
+      "equal": 39,
+      "share": 1.0,
+      "informative": 0
+     },
+     "completion": {
+      "keys": 36,
+      "equal": 36,
+      "share": 1.0,
+      "informative": 28
+     },
+     "definition": {
+      "keys": 36,
+      "equal": 36,
+      "share": 1.0,
+      "informative": 33
+     },
+     "diagnostics": {
+      "keys": 3,
+      "equal": 3,
+      "share": 1.0,
+      "informative": 2
+     },
+     "documentHighlight": {
+      "keys": 36,
+      "equal": 36,
+      "share": 1.0,
+      "informative": 33
+     },
+     "documentSymbol": {
+      "keys": 3,
+      "equal": 3,
+      "share": 1.0,
+      "informative": 3
+     },
+     "foldingRange": {
+      "keys": 3,
+      "equal": 3,
+      "share": 1.0,
+      "informative": 3
+     },
+     "hover": {
+      "keys": 36,
+      "equal": 36,
+      "share": 1.0,
+      "informative": 35
+     },
+     "inlayHint": {
+      "keys": 3,
+      "equal": 3,
+      "share": 1.0,
+      "informative": 3
+     },
+     "references": {
+      "keys": 36,
+      "equal": 36,
+      "share": 1.0,
+      "informative": 33
+     },
+     "semanticTokens": {
+      "keys": 3,
+      "equal": 3,
+      "share": 1.0,
+      "informative": 3
+     },
+     "signatureHelp": {
+      "keys": 36,
+      "equal": 36,
+      "share": 1.0,
+      "informative": 5
+     },
+     "typeDefinition": {
+      "keys": 36,
+      "equal": 36,
+      "share": 1.0,
+      "informative": 19
+     }
+    },
+    "overall": 1.0,
+    "examples": {}
+   },
+   "noise": {
+    "total": 3,
+    "unresolved_module": 3,
+    "by_code": {
+     "2307": 2,
+     "2688": 1
+    }
+   }
+  },
+  {
+   "server": "rust-analyzer",
+   "version": "2026-09-21",
+   "language": "rust",
+   "fixture": {
+    "repo": "sharkdp/fd",
+    "commit": "9e8927e8f3ee7bb699df55cb0b440f848dce6857",
+    "prepare_s": 0.04
+   },
+   "targets": [
+    {
+     "path": "src/filetypes.rs",
+     "positions": [
+      [
+       3,
+       7
+      ],
+      [
+       6,
+       12
+      ],
+      [
+       20,
+       66
+      ],
+      [
+       21,
+       29
+      ],
+      [
+       22,
+       21
+      ],
+      [
+       22,
+       33
+      ],
+      [
+       23,
+       55
+      ],
+      [
+       27,
+       42
+      ],
+      [
+       28,
+       50
+      ],
+      [
+       29,
+       64
+      ],
+      [
+       34,
+       28
+      ],
+      [
+       35,
+       56
+      ]
+     ],
+     "ends": [
+      [
+       3,
+       11
+      ],
+      [
+       6,
+       16
+      ],
+      [
+       20,
+       68
+      ],
+      [
+       21,
+       34
+      ],
+      [
+       22,
+       24
+      ],
+      [
+       22,
+       38
+      ],
+      [
+       23,
+       58
+      ],
+      [
+       27,
+       47
+      ],
+      [
+       28,
+       54
+      ],
+      [
+       29,
+       69
+      ],
+      [
+       34,
+       33
+      ],
+      [
+       35,
+       61
+      ]
+     ],
+     "names": [
+      "faccess",
+      "Default",
+      "bool",
+      "entry_type",
+      "files",
+      "entry_type",
+      "is_dir",
+      "filesystem",
+      "is_pipe",
+      "executable",
+      "filesystem",
+      "entry_type"
+     ]
+    },
+    {
+     "path": "src/output.rs",
+     "positions": [
+      [
+       38,
+       10
+      ],
+      [
+       40,
+       20
+      ],
+      [
+       48,
+       13
+      ],
+      [
+       54,
+       17
+      ],
+      [
+       60,
+       25
+      ],
+      [
+       76,
+       22
+      ],
+      [
+       110,
+       44
+      ],
+      [
+       141,
+       10
+      ],
+      [
+       164,
+       61
+      ],
+      [
+       171,
+       12
+      ],
+      [
+       189,
+       47
+      ],
+      [
+       193,
+       47
+      ]
+     ],
+     "ends": [
+      [
+       38,
+       13
+      ],
+      [
+       40,
+       23
+      ],
+      [
+       48,
+       23
+      ],
+      [
+       54,
+       22
+      ],
+      [
+       60,
+       34
+      ],
+      [
+       76,
+       29
+      ],
+      [
+       110,
+       48
+      ],
+      [
+       141,
+       13
+      ],
+      [
+       164,
+       67
+      ],
+      [
+       171,
+       14
+      ],
+      [
+       189,
+       50
+      ],
+      [
+       193,
+       50
+      ]
+     ],
+     "names": [
+      "write",
+      "stdout",
+      "print_trailing_slash",
+      "file_type",
+      "unwrap_or_default",
+      "path_separator",
+      "path_str",
+      "style",
+      "path_string",
+      "unix",
+      "entry",
+      "config"
+     ]
+    },
+    {
+     "path": "src/walk.rs",
+     "positions": [
+      [
+       82,
+       27
+      ],
+      [
+       92,
+       30
+      ],
+      [
+       114,
+       35
+      ],
+      [
+       165,
+       16
+      ],
+      [
+       188,
+       30
+      ],
+      [
+       252,
+       54
+      ],
+      [
+       407,
+       30
+      ],
+      [
+       598,
+       64
+      ],
+      [
+       619,
+       22
+      ],
+      [
+       641,
+       40
+      ],
+      [
+       649,
+       19
+      ],
+      [
+       655,
+       9
+      ]
+     ],
+     "ends": [
+      [
+       82,
+       29
+      ],
+      [
+       92,
+       32
+      ],
+      [
+       114,
+       38
+      ],
+      [
+       165,
+       20
+      ],
+      [
+       188,
+       35
+      ],
+      [
+       252,
+       59
+      ],
+      [
+       407,
+       33
+      ],
+      [
+       598,
+       67
+      ],
+      [
+       619,
+       27
+      ],
+      [
+       641,
+       41
+      ],
+      [
+       649,
+       24
+      ],
+      [
+       655,
+       14
+      ]
+     ],
+     "names": [
+      "new",
+      "len",
+      "clone",
+      "deadline",
+      "Streaming",
+      "BrokenPipe",
+      "config",
+      "entry",
+      "ls_colors",
+      "tx",
+      "exit_code",
+      "entry_path"
+     ]
+    }
+   ],
+   "baseline": {
+    "label": "baseline",
+    "init_s": 0.27,
+    "settle": {
+     "settled": true,
+     "mode": "pull",
+     "seconds": 105.195,
+     "reason": "two identical pulls, quiet",
+     "rounds": 2,
+     "refreshes": 6,
+     "assumed": [],
+     "diagnostics": {
+      "src/filetypes.rs": 0,
+      "src/output.rs": 1,
+      "src/walk.rs": 0
+     },
+     "server_status": {
+      "health": "ok",
+      "quiescent": true,
+      "message": null
+     }
+    },
+    "suite_s": 12.514,
+    "errors": {},
+    "unsupported": [],
+    "mean_ms": {
+     "codeAction": 112.1,
+     "completion": 18.9,
+     "definition": 15.1,
+     "diagnostics": 6.0,
+     "documentHighlight": 19.5,
+     "documentSymbol": 5.0,
+     "foldingRange": 14.7,
+     "hover": 20.9,
+     "inlayHint": 80.0,
+     "references": 112.0,
+     "semanticTokens": 14.3,
+     "signatureHelp": 12.7,
+     "typeDefinition": 22.5
+    },
+    "keys": 304,
+    "settled": true,
+    "session": "rust-analyzer-2026-09-21-baseline-20260923-014009-c639a9",
+    "close": {
+     "session": "rust-analyzer-2026-09-21-baseline-20260923-014009-c639a9",
+     "log": "data/lsptest/logs/rust-analyzer-2026-09-21-baseline-20260923-014009-c639a9.jsonl",
+     "exit_code": 0,
+     "server_pids": [
+      50316,
+      50342,
+      50343
+     ],
+     "killed": [],
+     "kept": ""
+    },
+    "total_s": 118.21
+   },
+   "control": {
+    "label": "control",
+    "init_s": 0.35,
+    "settle": {
+     "settled": true,
+     "mode": "pull",
+     "seconds": 120.486,
+     "reason": "two identical pulls, quiet",
+     "rounds": 2,
+     "refreshes": 9,
+     "assumed": [],
+     "diagnostics": {
+      "src/filetypes.rs": 0,
+      "src/output.rs": 1,
+      "src/walk.rs": 0
+     },
+     "server_status": {
+      "health": "ok",
+      "quiescent": true,
+      "message": null
+     }
+    },
+    "suite_s": 4.284,
+    "errors": {},
+    "unsupported": [],
+    "mean_ms": {
+     "codeAction": 21.7,
+     "completion": 12.1,
+     "definition": 2.1,
+     "diagnostics": 15.7,
+     "documentHighlight": 6.2,
+     "documentSymbol": 1.7,
+     "foldingRange": 4.7,
+     "hover": 3.7,
+     "inlayHint": 32.7,
+     "references": 62.3,
+     "semanticTokens": 8.0,
+     "signatureHelp": 0.7,
+     "typeDefinition": 3.5
+    },
+    "keys": 304,
+    "settled": true,
+    "session": "rust-analyzer-2026-09-21-control-20260923-014207-79f383",
+    "close": {
+     "session": "rust-analyzer-2026-09-21-control-20260923-014207-79f383",
+     "log": "data/lsptest/logs/rust-analyzer-2026-09-21-control-20260923-014207-79f383.jsonl",
+     "exit_code": 0,
+     "server_pids": [
+      52521,
+      52631,
+      52633
+     ],
+     "killed": [],
+     "kept": ""
+    },
+    "total_s": 125.42
+   },
+   "stability": {
+    "per_method": {
+     "codeAction": {
+      "keys": 37,
+      "equal": 37,
+      "share": 1.0,
+      "informative": 26
+     },
+     "completion": {
+      "keys": 36,
+      "equal": 36,
+      "share": 1.0,
+      "informative": 34
+     },
+     "definition": {
+      "keys": 36,
+      "equal": 36,
+      "share": 1.0,
+      "informative": 35
+     },
+     "diagnostics": {
+      "keys": 3,
+      "equal": 3,
+      "share": 1.0,
+      "informative": 1
+     },
+     "documentHighlight": {
+      "keys": 36,
+      "equal": 36,
+      "share": 1.0,
+      "informative": 35
+     },
+     "documentSymbol": {
+      "keys": 3,
+      "equal": 3,
+      "share": 1.0,
+      "informative": 3
+     },
+     "foldingRange": {
+      "keys": 3,
+      "equal": 3,
+      "share": 1.0,
+      "informative": 3
+     },
+     "hover": {
+      "keys": 36,
+      "equal": 36,
+      "share": 1.0,
+      "informative": 35
+     },
+     "inlayHint": {
+      "keys": 3,
+      "equal": 3,
+      "share": 1.0,
+      "informative": 3
+     },
+     "references": {
+      "keys": 36,
+      "equal": 36,
+      "share": 1.0,
+      "informative": 35
+     },
+     "semanticTokens": {
+      "keys": 3,
+      "equal": 3,
+      "share": 1.0,
+      "informative": 3
+     },
+     "signatureHelp": {
+      "keys": 36,
+      "equal": 36,
+      "share": 1.0,
+      "informative": 13
+     },
+     "typeDefinition": {
+      "keys": 36,
+      "equal": 36,
+      "share": 1.0,
+      "informative": 22
+     }
+    },
+    "overall": 1.0,
+    "examples": {}
+   },
+   "noise": {
+    "total": 1,
+    "unresolved_module": 0,
+    "by_code": {
+     "inactive_code": 1
+    }
+   }
+  },
+  {
+   "server": "gopls",
+   "version": "v0.23.0",
+   "language": "go",
+   "fixture": {
+    "repo": "spf13/cobra",
+    "commit": "adbc8813901bba65827259daa8e22ff94ec1f30e",
+    "prepare_s": 0.03
+   },
+   "targets": [
+    {
+     "path": "args_test.go",
+     "positions": [
+      [
+       94,
+       45
+      ],
+      [
+       98,
+       53
+      ],
+      [
+       135,
+       1
+      ],
+      [
+       187,
+       61
+      ],
+      [
+       241,
+       13
+      ],
+      [
+       252,
+       5
+      ],
+      [
+       326,
+       29
+      ],
+      [
+       347,
+       32
+      ],
+      [
+       394,
+       20
+      ],
+      [
+       517,
+       25
+      ],
+      [
+       538,
+       63
+      ],
+      [
+       569,
+       28
+      ]
+     ],
+     "ends": [
+      [
+       94,
+       47
+      ],
+      [
+       98,
+       54
+      ],
+      [
+       135,
+       2
+      ],
+      [
+       187,
+       63
+      ],
+      [
+       241,
+       25
+      ],
+      [
+       252,
+       7
+      ],
+      [
+       326,
+       30
+      ],
+      [
+       347,
+       33
+      ],
+      [
+       394,
+       35
+      ],
+      [
+       517,
+       27
+      ],
+      [
+       538,
+       67
+      ],
+      [
+       569,
+       30
+      ]
+     ],
+     "names": [
+      "got",
+      "T",
+      "c",
+      "true",
+      "validOnlyWithInvalidArgs",
+      "err",
+      "t",
+      "t",
+      "TestRangeArgs_WithInvalidCount",
+      "fail",
+      "testing",
+      "Use"
+     ]
+    },
+    {
+     "path": "doc/yaml_docs.go",
+     "positions": [
+      [
+       77,
+       50
+      ],
+      [
+       80,
+       55
+      ],
+      [
+       87,
+       41
+      ],
+      [
+       92,
+       72
+      ],
+      [
+       99,
+       41
+      ],
+      [
+       114,
+       3
+      ],
+      [
+       116,
+       45
+      ],
+      [
+       122,
+       14
+      ],
+      [
+       139,
+       3
+      ],
+      [
+       139,
+       7
+      ],
+      [
+       151,
+       29
+      ],
+      [
+       169,
+       28
+      ]
+     ],
+     "ends": [
+      [
+       77,
+       54
+      ],
+      [
+       80,
+       57
+      ],
+      [
+       87,
+       44
+      ],
+      [
+       92,
+       75
+      ],
+      [
+       99,
+       44
+      ],
+      [
+       114,
+       6
+      ],
+      [
+       116,
+       48
+      ],
+      [
+       122,
+       16
+      ],
+      [
+       139,
+       4
+      ],
+      [
+       139,
+       9
+      ],
+      [
+       151,
+       32
+      ],
+      [
+       169,
+       30
+      ]
+     ],
+     "names": [
+      "filename",
+      "nil",
+      "Writer",
+      "string",
+      "Short",
+      "flags",
+      "flags",
+      "cmd",
+      "os",
+      "Exit",
+      "pflag",
+      "opt"
+     ]
+    },
+    {
+     "path": "flag_groups.go",
+     "positions": [
+      [
+       34,
+       5
+      ],
+      [
+       37,
+       5
+      ],
+      [
+       37,
+       93
+      ],
+      [
+       55,
+       140
+      ],
+      [
+       68,
+       5
+      ],
+      [
+       85,
+       14
+      ],
+      [
+       92,
+       3
+      ],
+      [
+       98,
+       24
+      ],
+      [
+       110,
+       23
+      ],
+      [
+       125,
+       33
+      ],
+      [
+       232,
+       40
+      ],
+      [
+       236,
+       41
+      ]
+     ],
+     "ends": [
+      [
+       34,
+       6
+      ],
+      [
+       37,
+       8
+      ],
+      [
+       37,
+       94
+      ],
+      [
+       55,
+       142
+      ],
+      [
+       68,
+       6
+      ],
+      [
+       85,
+       17
+      ],
+      [
+       92,
+       6
+      ],
+      [
+       98,
+       37
+      ],
+      [
+       110,
+       25
+      ],
+      [
+       125,
+       36
+      ],
+      [
+       232,
+       43
+      ],
+      [
+       236,
+       44
+      ]
+     ],
+     "names": [
+      "_",
+      "panic",
+      "v",
+      "err",
+      "f",
+      "Flags",
+      "flags",
+      "validateRequiredFlagGroups",
+      "flag",
+      "group",
+      "string",
+      "pflag"
+     ]
+    }
+   ],
+   "baseline": {
+    "label": "baseline",
+    "init_s": 0.3,
+    "settle": {
+     "settled": true,
+     "mode": "push",
+     "seconds": 4.156,
+     "reason": "published and quiet",
+     "rounds": 0,
+     "refreshes": 0,
+     "assumed": [],
+     "diagnostics": {
+      "args_test.go": 0,
+      "doc/yaml_docs.go": 0,
+      "flag_groups.go": 0
+     },
+     "server_status": null
+    },
+    "suite_s": 1.719,
+    "errors": {
+     "typeDefinition": 10,
+     "references": 5
+    },
+    "unsupported": [],
+    "mean_ms": {
+     "codeAction": 1.0,
+     "completion": 40.2,
+     "definition": 0.3,
+     "diagnostics": 0.0,
+     "documentHighlight": 0.4,
+     "documentSymbol": 1.0,
+     "foldingRange": 1.0,
+     "hover": 1.4,
+     "inlayHint": 2.0,
+     "references": 2.4,
+     "semanticTokens": 2.0,
+     "signatureHelp": 0.4,
+     "typeDefinition": 0.3
+    },
+    "keys": 303,
+    "settled": true,
+    "session": "gopls-v0.23.0-baseline-20260923-014412-dd1dc3",
+    "close": {
+     "session": "gopls-v0.23.0-baseline-20260923-014412-dd1dc3",
+     "log": "data/lsptest/logs/gopls-v0.23.0-baseline-20260923-014412-dd1dc3.jsonl",
+     "exit_code": 0,
+     "server_pids": [
+      54128,
+      54129
+     ],
+     "killed": [],
+     "kept": ""
+    },
+    "total_s": 6.31
+   },
+   "control": {
+    "label": "control",
+    "init_s": 0.15,
+    "settle": {
+     "settled": true,
+     "mode": "push",
+     "seconds": 3.957,
+     "reason": "published and quiet",
+     "rounds": 0,
+     "refreshes": 0,
+     "assumed": [],
+     "diagnostics": {
+      "args_test.go": 0,
+      "doc/yaml_docs.go": 0,
+      "flag_groups.go": 0
+     },
+     "server_status": null
+    },
+    "suite_s": 1.67,
+    "errors": {
+     "typeDefinition": 10,
+     "references": 5
+    },
+    "unsupported": [],
+    "mean_ms": {
+     "codeAction": 1.1,
+     "completion": 38.8,
+     "definition": 0.4,
+     "diagnostics": 0.0,
+     "documentHighlight": 0.4,
+     "documentSymbol": 0.7,
+     "foldingRange": 1.0,
+     "hover": 1.3,
+     "inlayHint": 1.7,
+     "references": 2.4,
+     "semanticTokens": 2.0,
+     "signatureHelp": 0.4,
+     "typeDefinition": 0.3
+    },
+    "keys": 303,
+    "settled": true,
+    "session": "gopls-v0.23.0-control-20260923-014419-1d102e",
+    "close": {
+     "session": "gopls-v0.23.0-control-20260923-014419-1d102e",
+     "log": "data/lsptest/logs/gopls-v0.23.0-control-20260923-014419-1d102e.jsonl",
+     "exit_code": 0,
+     "server_pids": [
+      54260,
+      54261
+     ],
+     "killed": [],
+     "kept": ""
+    },
+    "total_s": 5.92
+   },
+   "stability": {
+    "per_method": {
+     "codeAction": {
+      "keys": 36,
+      "equal": 36,
+      "share": 1.0,
+      "informative": 36
+     },
+     "completion": {
+      "keys": 36,
+      "equal": 36,
+      "share": 1.0,
+      "informative": 31
+     },
+     "definition": {
+      "keys": 36,
+      "equal": 36,
+      "share": 1.0,
+      "informative": 36
+     },
+     "diagnostics": {
+      "keys": 3,
+      "equal": 3,
+      "share": 1.0,
+      "informative": 0
+     },
+     "documentHighlight": {
+      "keys": 36,
+      "equal": 36,
+      "share": 1.0,
+      "informative": 36
+     },
+     "documentSymbol": {
+      "keys": 3,
+      "equal": 3,
+      "share": 1.0,
+      "informative": 3
+     },
+     "foldingRange": {
+      "keys": 3,
+      "equal": 3,
+      "share": 1.0,
+      "informative": 3
+     },
+     "hover": {
+      "keys": 36,
+      "equal": 36,
+      "share": 1.0,
+      "informative": 36
+     },
+     "inlayHint": {
+      "keys": 3,
+      "equal": 3,
+      "share": 1.0,
+      "informative": 3
+     },
+     "references": {
+      "keys": 36,
+      "equal": 36,
+      "share": 1.0,
+      "informative": 31
+     },
+     "semanticTokens": {
+      "keys": 3,
+      "equal": 3,
+      "share": 1.0,
+      "informative": 3
+     },
+     "signatureHelp": {
+      "keys": 36,
+      "equal": 36,
+      "share": 1.0,
+      "informative": 15
+     },
+     "typeDefinition": {
+      "keys": 36,
+      "equal": 36,
+      "share": 1.0,
+      "informative": 26
+     }
+    },
+    "overall": 1.0,
+    "examples": {}
+   },
+   "noise": {
+    "total": 0,
+    "unresolved_module": 0,
+    "by_code": {}
+   }
+  }
+ ],
+ "leftover": {
+  "session_pids": 22,
+  "alive": [],
+  "pgrep": []
+ },
+ "interpretation": [
+  "Completion 'server order' is the display order the server requests (sortText, else label, per LSP); the array order is alphabetical in ts6 and arbitrary in ts7, so its first 50 items would be meaningless. sortText values are not stored.",
+  "Exploratory run with seed 2, 4 files x 20 positions (about 665 keys per server): all servers and methods 100% stable except gopls completion, 78/80. Five further fresh gopls sessions differed pairwise on the same 2 keys (identifier prefixes 'int' and 'w'), each time with a different subset of unimported-package names from the Go module cache. This is nondeterminism inside gopls, not a volatile field (completionBudget=0s does not remove it); the oracles' fresh-vs-fresh control excludes such keys.",
+  "Edit round trip (insert a comment line, run the full query suite, apply the computed inverse, settle, query again) matched a fresh baseline on 100% of keys for ts6, ts7 and gopls. For pyright 1.1.414, 2 auto-import completion keys differed, reproduced 2/2 (fresh-vs-fresh is 100% stable). This is a candidate for R1 triage, not an engine artifact.",
+  "rust-analyzer settle time is dominated by cache priming (indexing std and dependencies; 15-90 s per session). Setting cachePriming.enable=false would shorten sessions if needed. gopls keeps a content-addressed analysis cache in ~/Library/Caches/gopls shared across sessions (GOPLSCACHE could isolate it per session)."
+ ]
+}

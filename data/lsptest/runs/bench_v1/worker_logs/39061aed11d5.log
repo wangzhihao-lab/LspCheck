@@ -1,0 +1,3 @@
+2026-09-24 22:25:25,973 INFO campaign_run run 39061aed11d5: r0_crash on gopls v0.6.6, gopls-38732 seed 1 settled, targets ['bar.go', 'foo.go']
+2026-09-24 22:25:31,434 INFO campaign_run run 39061aed11d5: 0 candidate(s) in 6s; confirming
+2026-09-24 22:25:31,435 INFO campaign_run run 39061aed11d5 finished: ok, 0 confirmed of 0 candidate(s), 6s

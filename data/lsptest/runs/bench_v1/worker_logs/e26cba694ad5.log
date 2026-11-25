@@ -1,0 +1,3 @@
+2026-09-24 18:12:40,473 INFO campaign_run run e26cba694ad5: r5_transforms on rust-analyzer 2024-05-20, rust-analyzer-17139 seed 1 settled, targets ['src/lib.rs']
+2026-09-24 18:13:25,613 INFO campaign_run run e26cba694ad5: 0 candidate(s) in 45s; confirming
+2026-09-24 18:13:25,613 INFO campaign_run run e26cba694ad5 finished: ok, 0 confirmed of 0 candidate(s), 45s

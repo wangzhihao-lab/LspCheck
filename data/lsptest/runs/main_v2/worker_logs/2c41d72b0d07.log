@@ -1,0 +1,3 @@
+2026-11-18 04:24:33,279 INFO campaign_run run 2c41d72b0d07: r5_transforms on ts7 7.0.2, solidjs/solid@4b62bc29e04b seed 1 settled, targets ['examples/rendering/shared/src/components/Reveal.tsx', 'packages/web/test/hydration/spread-innerhtml.spec.tsx', 'packages/web/test/latest-shadow-owned-write-issue-3378.spec.tsx']
+2026-11-18 04:32:11,020 INFO campaign_run run 2c41d72b0d07: 0 candidate(s) in 458s; confirming
+2026-11-18 04:32:11,021 INFO campaign_run run 2c41d72b0d07 finished: ok, 0 confirmed of 0 candidate(s), 458s

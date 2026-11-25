@@ -1,0 +1,173 @@
+{
+ "vid": "7f3fa823fc51-v02",
+ "ops_before": 0,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 0,
+ "cache_hits": 0,
+ "reduce_seconds": 0.0,
+ "budget_exhausted": false,
+ "probe_log": [],
+ "logs": [
+  "rust-analyzer-2026-09-21-tr0b07f0-r3-replay-baseline-20261119-005601-b988f7.jsonl.gz",
+  "rust-analyzer-2026-09-21-tr0b07f0-r3-replay-control-20261119-005631-70054e.jsonl.gz",
+  "rust-analyzer-2026-09-21-tr0b07f0-r3-replay-route-20261119-005656-8eb05a.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [
+   [
+    536,
+    46,
+    536,
+    47,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives"
+   ],
+   [
+    563,
+    27,
+    569,
+    9,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives"
+   ],
+   [
+    600,
+    27,
+    608,
+    9,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives"
+   ],
+   [
+    630,
+    9,
+    630,
+    10,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives"
+   ],
+   [
+    642,
+    72,
+    642,
+    73,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives"
+   ],
+   [
+    664,
+    18,
+    670,
+    9,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives"
+   ],
+   [
+    696,
+    18,
+    701,
+    9,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives"
+   ],
+   [
+    719,
+    18,
+    724,
+    9,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives"
+   ],
+   [
+    735,
+    52,
+    735,
+    53,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives"
+   ],
+   [
+    748,
+    44,
+    748,
+    45,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives"
+   ],
+   [
+    776,
+    18,
+    783,
+    9,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives"
+   ],
+   [
+    814,
+    18,
+    822,
+    9,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives"
+   ],
+   [
+    856,
+    9,
+    856,
+    10,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives"
+   ],
+   [
+    895,
+    76,
+    895,
+    77,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives"
+   ],
+   [
+    922,
+    46,
+    922,
+    47,
+    4,
+    "inactive_code",
+    "rust-analyzer",
+    "code is inactive due to #[cfg] directives"
+   ]
+  ],
+  "actual": []
+ },
+ "ops_after": 0,
+ "total_seconds": 557.6
+}

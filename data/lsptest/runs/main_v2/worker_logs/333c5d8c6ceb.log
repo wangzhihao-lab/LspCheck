@@ -1,0 +1,3 @@
+2026-11-18 15:19:55,799 INFO campaign_run run 333c5d8c6ceb: r0_crash on rust-analyzer 2026-09-21, casey/just@6119e6aff518 seed 1 settled, targets ['src/cache_lock.rs', 'src/path_error.rs', 'tests/datetime.rs']
+2026-11-18 15:20:19,811 INFO campaign_run run 333c5d8c6ceb: 0 candidate(s) in 24s; confirming
+2026-11-18 15:20:19,812 INFO campaign_run run 333c5d8c6ceb finished: ok, 0 confirmed of 0 candidate(s), 24s

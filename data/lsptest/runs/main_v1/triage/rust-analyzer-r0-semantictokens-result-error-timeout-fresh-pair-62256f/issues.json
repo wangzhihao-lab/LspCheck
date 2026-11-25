@@ -1,0 +1,71 @@
+{
+ "queries": [
+  "exception in:title repo:rust-lang/rust-analyzer is:issue",
+  "\"semantic tokens\" hang repo:rust-lang/rust-analyzer is:issue",
+  "\"semantic tokens\" exception repo:rust-lang/rust-analyzer is:issue"
+ ],
+ "matches": [
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 18428,
+   "title": "codeAction/resolve throws an exception for a code action without `data`",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/18428",
+   "state": "open",
+   "created": "2024-10-28",
+   "comments": 0,
+   "query": "exception in:title repo:rust-lang/rust-analyzer is:issue"
+  },
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 9154,
+   "title": "How to stop reporting `missing-unsafe` errors in embedded exceptions",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/9154",
+   "state": "closed",
+   "created": "2021-06-06",
+   "comments": 2,
+   "query": "exception in:title repo:rust-lang/rust-analyzer is:issue"
+  },
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 8057,
+   "title": "Exception when loading the VSCode plugin",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/8057",
+   "state": "closed",
+   "created": "2021-03-16",
+   "comments": 25,
+   "query": "exception in:title repo:rust-lang/rust-analyzer is:issue"
+  },
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 19404,
+   "title": "Performance regression after salsa migration",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/19404",
+   "state": "closed",
+   "created": "2025-03-20",
+   "comments": 28,
+   "query": "\"semantic tokens\" hang repo:rust-lang/rust-analyzer is:issue"
+  },
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 6844,
+   "title": "high cpu usage on macOS",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/6844",
+   "state": "closed",
+   "created": "2020-12-12",
+   "comments": 7,
+   "query": "\"semantic tokens\" hang repo:rust-lang/rust-analyzer is:issue"
+  },
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 6560,
+   "title": "Panic when trying to rename a local variable",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/6560",
+   "state": "closed",
+   "created": "2020-11-15",
+   "comments": 5,
+   "query": "\"semantic tokens\" exception repo:rust-lang/rust-analyzer is:issue"
+  }
+ ],
+ "notes": [],
+ "authenticated": true
+}

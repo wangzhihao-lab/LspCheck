@@ -1,0 +1,6 @@
+2026-09-24 09:29:15,211 INFO campaign_run run 56c549819beb: r1_history on pyright 1.1.414, D4Vinci/Scrapling@08f107b1240f seed 1 race200, targets ['scrapling/engines/_browsers/_types.py', 'tests/fetchers/async/test_stealth.py', 'tests/parser/test_attributes_handler.py']
+2026-09-24 09:32:36,979 INFO campaign_run run 56c549819beb: 2 candidate(s) in 202s; confirming
+2026-09-24 09:33:06,597 INFO flake replay 1/3 of pyright|r1_history|references:extra: settled=True control_stable=True reproduced=True (29.6s)
+2026-09-24 09:33:41,458 INFO flake replay 2/3 of pyright|r1_history|references:extra: settled=True control_stable=True reproduced=False (34.9s)
+2026-09-24 09:34:09,206 INFO flake replay 3/3 of pyright|r1_history|references:extra: settled=True control_stable=True reproduced=True (27.7s)
+2026-09-24 09:34:09,232 INFO campaign_run run 56c549819beb finished: ok, 0 confirmed of 2 candidate(s), 294s

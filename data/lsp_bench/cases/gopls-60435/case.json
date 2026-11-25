@@ -1,0 +1,80 @@
+{
+ "schema": 1,
+ "id": "gopls-60435",
+ "meta": {
+  "server": "gopls",
+  "kind": "gopls",
+  "number": 60435,
+  "url": "https://github.com/golang/go/issues/60435",
+  "title": "x/tools/gopls: documentHighlight from subpackage selects usage for parent package",
+  "oracle_class": "R3",
+  "subtype": "highlight-refs",
+  "fix_ref": "golang/tools@933c7ccb1545 (internal/lsp/source: use exact match in import highlighting)",
+  "fix_shas": [
+   "933c7ccb15451459ca4fe53c041a4108f4859d91"
+  ],
+  "pre_version": "v0.12.0",
+  "post_version": "v0.12.1",
+  "pre_build": "v0.12.0",
+  "post_build": "v0.12.1",
+  "toolchain": "go1.20.4",
+  "build_notes": "go install golang.org/x/tools/gopls@<version> with go1.20.4 (golang.org/dl, under temp/lsp_servers/go-sdks); the server runs with that Go first on PATH (toolchain.json). The reporter used go1.20; go1.20.4 was the current Go release when v0.12.0 was tagged. The local go1.27 cannot build v0.12.x (internal/tokeninternal array-length check).",
+  "candidate_rank": 1,
+  "effort_minutes": 12,
+  "notes": "Old code: highlighting from an import path string highlighted every package name contained in the path as a substring, so 'httptest' also selected uses of 'http'. The fix matches the imported package object exactly."
+ },
+ "language": "go",
+ "settings": {},
+ "settings_note": "The maintainer's reproduction names no settings (the reporter's buildFlags -tags=integration play no role in it).",
+ "session": {
+  "settle_timeout_s": 180
+ },
+ "files": [
+  {
+   "path": "main.go",
+   "provenance": "issue",
+   "source": "comment by suzmue on 2023-05-25 (repro case, main.go)",
+   "note": ""
+  },
+  {
+   "path": "go.mod",
+   "provenance": "scaffold",
+   "source": "",
+   "note": "module path and the go directive of the era (the maintainer's reproduction is a single-file module in a directory)"
+  }
+ ],
+ "repro": {
+  "attempt": 1,
+  "timing": "settled",
+  "steps": "Open main.go, which imports net/http and net/http/httptest and uses http first. Request textDocument/documentHighlight on 'httptest' inside the import path \"net/http/httptest\" (line 4, character 15, the position in the maintainer's trace). Expected: the httptest import and its use only; reported: the http.CanonicalHeaderKey use is selected too. Probe: every highlight in the file must also be a reference of the same symbol (references at the same position, declaration included).",
+  "ops": [
+   {
+    "kind": "open",
+    "path": "main.go"
+   }
+  ],
+  "probe": {
+   "type": "two_routes_differ",
+   "params": {
+    "relation": "highlights_in_references",
+    "a": {
+     "method": "documentHighlight",
+     "path": "main.go",
+     "position": [
+      4,
+      15
+     ]
+    },
+    "b": {
+     "method": "references",
+     "path": "main.go",
+     "position": [
+      4,
+      15
+     ]
+    }
+   }
+  }
+ },
+ "attempts": []
+}

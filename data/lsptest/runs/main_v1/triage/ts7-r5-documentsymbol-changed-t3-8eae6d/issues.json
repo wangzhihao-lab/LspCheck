@@ -1,0 +1,22 @@
+{
+ "queries": [
+  "\"trailing whitespace\" in:title repo:microsoft/typescript-go is:issue",
+  "\"document symbol\" wrong repo:microsoft/typescript-go is:issue",
+  "\"document symbol\" \"trailing whitespace\" repo:microsoft/typescript-go is:issue",
+  "\"document symbol\" whitespace repo:microsoft/typescript-go is:issue"
+ ],
+ "matches": [
+  {
+   "repo": "microsoft/typescript-go",
+   "number": 1439,
+   "title": "Support `LocationLink` in go-to-definition",
+   "url": "https://github.com/microsoft/typescript-go/issues/1439",
+   "state": "closed",
+   "created": "2025-07-23",
+   "comments": 2,
+   "query": "\"document symbol\" \"trailing whitespace\" repo:microsoft/typescript-go is:issue"
+  }
+ ],
+ "notes": [],
+ "authenticated": true
+}

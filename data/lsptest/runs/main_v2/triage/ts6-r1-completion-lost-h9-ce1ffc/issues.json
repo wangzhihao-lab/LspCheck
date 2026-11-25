@@ -1,0 +1,92 @@
+{
+ "queries": [
+  "completion missing repo:typescript-language-server/typescript-language-server is:issue",
+  "completion stale repo:typescript-language-server/typescript-language-server is:issue",
+  "completion missing repo:microsoft/TypeScript is:issue",
+  "completion stale repo:microsoft/TypeScript is:issue"
+ ],
+ "matches": [
+  {
+   "repo": "typescript-language-server/typescript-language-server",
+   "number": 962,
+   "title": "Angular auto-imports disappear depending on the trigger character",
+   "url": "https://github.com/typescript-language-server/typescript-language-server/issues/962",
+   "state": "closed",
+   "created": "2025-07-21",
+   "comments": 2,
+   "query": "completion missing repo:typescript-language-server/typescript-language-server is:issue"
+  },
+  {
+   "repo": "typescript-language-server/typescript-language-server",
+   "number": 904,
+   "title": "Ignore typescript type errors in `.js` / `.jsx` files",
+   "url": "https://github.com/typescript-language-server/typescript-language-server/issues/904",
+   "state": "closed",
+   "created": "2024-06-28",
+   "comments": 3,
+   "query": "completion missing repo:typescript-language-server/typescript-language-server is:issue"
+  },
+  {
+   "repo": "typescript-language-server/typescript-language-server",
+   "number": 679,
+   "title": "Inconsistent completion suggestions on JSX attributes",
+   "url": "https://github.com/typescript-language-server/typescript-language-server/issues/679",
+   "state": "closed",
+   "created": "2023-02-07",
+   "comments": 22,
+   "query": "completion missing repo:typescript-language-server/typescript-language-server is:issue"
+  },
+  {
+   "repo": "typescript-language-server/typescript-language-server",
+   "number": 631,
+   "title": "missed ?.  and filterText",
+   "url": "https://github.com/typescript-language-server/typescript-language-server/issues/631",
+   "state": "closed",
+   "created": "2022-11-22",
+   "comments": 34,
+   "query": "completion missing repo:typescript-language-server/typescript-language-server is:issue"
+  },
+  {
+   "repo": "typescript-language-server/typescript-language-server",
+   "number": 650,
+   "title": "[Request for info] open performance work",
+   "url": "https://github.com/typescript-language-server/typescript-language-server/issues/650",
+   "state": "closed",
+   "created": "2022-12-29",
+   "comments": 2,
+   "query": "completion missing repo:typescript-language-server/typescript-language-server is:issue"
+  },
+  {
+   "repo": "microsoft/TypeScript",
+   "number": 37281,
+   "title": "No completions in `@param` tag missing parameter name",
+   "url": "https://github.com/microsoft/TypeScript/issues/37281",
+   "state": "open",
+   "created": "2020-03-08",
+   "comments": 1,
+   "query": "completion missing repo:microsoft/TypeScript is:issue"
+  },
+  {
+   "repo": "microsoft/TypeScript",
+   "number": 38738,
+   "title": "TSServer Completions - Context Needed",
+   "url": "https://github.com/microsoft/TypeScript/issues/38738",
+   "state": "open",
+   "created": "2020-05-22",
+   "comments": 3,
+   "query": "completion missing repo:microsoft/TypeScript is:issue"
+  },
+  {
+   "repo": "microsoft/TypeScript",
+   "number": 62778,
+   "title": "Inconsistent object literal key completion for enum keys",
+   "url": "https://github.com/microsoft/TypeScript/issues/62778",
+   "state": "open",
+   "created": "2025-11-18",
+   "comments": 4,
+   "query": "completion missing repo:microsoft/TypeScript is:issue"
+  }
+ ],
+ "notes": [],
+ "authenticated": true
+}

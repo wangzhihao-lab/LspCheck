@@ -1,0 +1,6 @@
+2026-09-23 16:48:29,424 INFO campaign_run run 9665ded99b16: r5_transforms on gopls v0.23.0, spf13/cobra@adbc8813901b seed 1 settled, targets ['args_test.go', 'doc/yaml_docs.go', 'flag_groups.go']
+2026-09-23 16:49:35,931 INFO campaign_run run 9665ded99b16: 1 candidate(s) in 67s; confirming
+2026-09-23 16:49:50,356 INFO flake replay 1/3 of gopls|r5_transforms|completion:changed: settled=True control_stable=True reproduced=False (14.4s)
+2026-09-23 16:50:04,384 INFO flake replay 2/3 of gopls|r5_transforms|completion:changed: settled=True control_stable=True reproduced=False (14.0s)
+2026-09-23 16:50:19,423 INFO flake replay 3/3 of gopls|r5_transforms|completion:changed: settled=True control_stable=False reproduced=False (15.0s)
+2026-09-23 16:50:19,427 INFO campaign_run run 9665ded99b16 finished: ok, 0 confirmed of 1 candidate(s), 110s

@@ -1,0 +1,3 @@
+2026-11-18 19:01:42,341 INFO campaign_run run 137e69e6e1b4: r1_history on rust-analyzer 2026-09-21, tokio-rs/tokio@3930bd182cb1 seed 3 settled, targets ['tokio-test/tests/io.rs', 'tokio/src/io/async_buf_read.rs', 'tokio/src/net/unix/datagram/socket.rs']
+2026-11-18 19:08:05,902 INFO campaign_run run 137e69e6e1b4: 0 candidate(s) in 384s; confirming
+2026-11-18 19:08:05,903 INFO campaign_run run 137e69e6e1b4 finished: ok, 0 confirmed of 0 candidate(s), 384s

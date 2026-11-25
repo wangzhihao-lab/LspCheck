@@ -1,0 +1,3 @@
+2026-09-24 09:29:17,173 INFO campaign_run run 79c5c3906f8c: r1_history on ts6 6.0.3, vercel/hyper@30ec0a2a91de seed 1 race200, targets ['app/utils/renderer-utils.ts', 'lib/index.tsx', 'lib/reducers/index.ts']
+2026-09-24 09:43:04,047 INFO campaign_run run 79c5c3906f8c: 6 candidate(s) in 827s; confirming
+2026-09-24 09:43:04,049 INFO campaign_run run 79c5c3906f8c finished: ok, 0 confirmed of 6 candidate(s), 827s

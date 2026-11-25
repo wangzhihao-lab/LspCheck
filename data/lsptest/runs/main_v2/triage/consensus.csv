@@ -1,0 +1,6 @@
+group,verdict,class,followed,unresolved,reason,date
+gopls-r5-foldingrange-changed-t6-ecacad,tool-artifact,A2,author,no,行内注释正好插在折叠区起点（assert.NotNil( 的左括号后），gopls 仍从左括号后开始折叠、终点也对，差别来自工具把原起点映射到注释之后；一年前版本相同，与第一批同组两人都判 A2 一致。,2026-11-21
+pyright-r3-highlightvsreferences-gained-c-3118cc,legitimate,L4,author,no,LSP 明说 documentHighlight 可以比 references 更模糊；光标在 ParamSpec 的 _P.args 上，没有可解析的声明，pyright 按设计退回同名匹配；一年前版本同样，与第一批同组两人都判 L4 一致。,2026-11-21
+ts6-r5-foldingrange-extra-t2-625065,tool-artifact,A2,rater2,no,同第 19 条（TS6，项目 ink）：多出的 comment 折叠区由插入的注释和隔一个空行的原有注释合成，这个比较不成立（A2）。,2026-11-21
+ts7-r3-definitionconsistency-lost-d-0129b3,legitimate,L7,author,no,补充重放里 TS6、TS7 都在 src/ink.tsx 第 147 行报 2503（找不到 namespace NodeJS），该文件所在的程序没有 node 类型，那里跳定义为空是对的；两处不在同一程序里，不是同一个符号。,2026-11-21
+ts7-r5-foldingrange-extra-t2-5dd83a,tool-artifact,A2,rater2,no,同第 21、27 条（TS7 版）：多出的 comment 折叠区由插入的注释与原有注释合成，这个比较不成立（A2）。,2026-11-21

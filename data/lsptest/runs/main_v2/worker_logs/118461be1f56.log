@@ -1,0 +1,6 @@
+2026-11-18 10:12:19,230 INFO campaign_run run 118461be1f56: r4_edits on gopls v0.23.0, docker/compose@c6dffb26bdfd seed 1 settled, targets ['internal/tracing/mux.go', 'pkg/compose/model.go', 'pkg/watch/temp.go']
+2026-11-18 10:13:26,284 INFO campaign_run run 118461be1f56: 1 candidate(s) in 67s; confirming
+2026-11-18 10:13:45,981 INFO flake replay 1/3 of gopls|r4_edits|diagnostics:extra:IncompatibleAssign,InvalidAppend,NotAnExpr: settled=True control_stable=True reproduced=True (19.7s)
+2026-11-18 10:14:03,540 INFO flake replay 2/3 of gopls|r4_edits|diagnostics:extra:IncompatibleAssign,InvalidAppend,NotAnExpr: settled=True control_stable=True reproduced=True (17.6s)
+2026-11-18 10:14:25,437 INFO flake replay 3/3 of gopls|r4_edits|diagnostics:extra:IncompatibleAssign,InvalidAppend,NotAnExpr: settled=True control_stable=True reproduced=True (21.9s)
+2026-11-18 10:14:25,443 INFO campaign_run run 118461be1f56 finished: ok, 1 confirmed of 1 candidate(s), 126s

@@ -1,0 +1,125 @@
+{
+ "vid": "33f1bc8d2cec-v03",
+ "ops_before": 0,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 0,
+ "cache_hits": 0,
+ "reduce_seconds": 0.0,
+ "budget_exhausted": false,
+ "probe_log": [],
+ "logs": [
+  "ts6-6.0.3-tr5e7a2f-ref-r6-replay-ref-baseline-20260925-170917-a18bd4.jsonl.gz",
+  "ts6-6.0.3-tr5e7a2f-ref-r6-replay-ref-control-20260925-170932-a0c065.jsonl.gz",
+  "ts7-7.0.2-tr5e7a2f-r6-replay-test-baseline-20260925-170841-bfdcb8.jsonl.gz",
+  "ts7-7.0.2-tr5e7a2f-r6-replay-test-control-20260925-170855-f473c0.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [
+   [
+    0,
+    0,
+    0,
+    26,
+    0,
+    "6133",
+    "",
+    ""
+   ],
+   [
+    1,
+    0,
+    1,
+    33,
+    0,
+    "6133",
+    "",
+    ""
+   ],
+   [
+    12,
+    20,
+    12,
+    24,
+    0,
+    "7006",
+    "",
+    ""
+   ],
+   [
+    2,
+    24,
+    2,
+    41,
+    0,
+    "2307",
+    "",
+    ""
+   ],
+   [
+    38,
+    33,
+    38,
+    44,
+    0,
+    "2322",
+    "",
+    ""
+   ]
+  ],
+  "actual": [
+   [
+    0,
+    7,
+    0,
+    12,
+    0,
+    "6133",
+    "",
+    ""
+   ],
+   [
+    1,
+    7,
+    1,
+    15,
+    0,
+    "6133",
+    "",
+    ""
+   ],
+   [
+    12,
+    20,
+    12,
+    24,
+    0,
+    "7006",
+    "",
+    ""
+   ],
+   [
+    2,
+    24,
+    2,
+    41,
+    0,
+    "2307",
+    "",
+    ""
+   ],
+   [
+    38,
+    33,
+    38,
+    44,
+    0,
+    "2322",
+    "",
+    ""
+   ]
+  ]
+ },
+ "ops_after": 0,
+ "total_seconds": 255.5
+}

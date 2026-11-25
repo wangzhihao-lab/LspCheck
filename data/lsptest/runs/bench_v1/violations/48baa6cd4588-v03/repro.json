@@ -1,0 +1,776 @@
+{
+ "format": 1,
+ "campaign": "bench_v1",
+ "vid": "48baa6cd4588-v03",
+ "run_id": "48baa6cd4588",
+ "oracle": "r1_history",
+ "server": {
+  "kind": "rust-analyzer",
+  "version": "2024-05-27"
+ },
+ "project": {
+  "name": "rust-analyzer-17139",
+  "source": "dir",
+  "ref": "data/lsp_bench/cases/rust-analyzer-17139/project",
+  "commit": "",
+  "language": "rust"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "race0",
+  "settle_timeout_s": 240.0,
+  "request_timeout_s": 60.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "src/lib.rs",
+    "positions": [
+     [
+      1,
+      6
+     ],
+     [
+      2,
+      15
+     ],
+     [
+      3,
+      15
+     ],
+     [
+      6,
+      4
+     ],
+     [
+      7,
+      17
+     ],
+     [
+      7,
+      29
+     ],
+     [
+      9,
+      7
+     ],
+     [
+      10,
+      12
+     ],
+     [
+      10,
+      18
+     ],
+     [
+      10,
+      23
+     ]
+    ],
+    "ends": [
+     [
+      1,
+      9
+     ],
+     [
+      2,
+      16
+     ],
+     [
+      3,
+      16
+     ],
+     [
+      6,
+      5
+     ],
+     [
+      7,
+      20
+     ],
+     [
+      7,
+      30
+     ],
+     [
+      9,
+      8
+     ],
+     [
+      10,
+      13
+     ],
+     [
+      10,
+      21
+     ],
+     [
+      10,
+      24
+     ]
+    ],
+    "names": [
+     "inner",
+     "X",
+     "Y",
+     "z",
+     "inner",
+     "X",
+     "f",
+     "y",
+     "inner",
+     "Y"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "definition",
+  "path": "src/lib.rs",
+  "line": 1,
+  "character": 6,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "src/lib.rs"
+  },
+  {
+   "kind": "fs_rename",
+   "path": "src/lib.rs",
+   "new_path": "src/lib_rt.rs"
+  },
+  {
+   "kind": "fs_rename",
+   "path": "src/lib_rt.rs",
+   "new_path": "src/lib.rs"
+  },
+  {
+   "kind": "change",
+   "path": "src/lib.rs",
+   "start": [
+    1,
+    8
+   ],
+   "end": [
+    1,
+    11
+   ]
+  },
+  {
+   "kind": "close",
+   "path": "src/lib.rs"
+  },
+  {
+   "kind": "open",
+   "path": "src/lib.rs"
+  },
+  {
+   "kind": "change",
+   "path": "src/lib.rs",
+   "start": [
+    7,
+    29
+   ],
+   "end": [
+    7,
+    30
+   ],
+   "text": "zz"
+  },
+  {
+   "kind": "change",
+   "path": "src/lib.rs",
+   "start": [
+    7,
+    29
+   ],
+   "end": [
+    7,
+    31
+   ],
+   "text": "X"
+  },
+  {
+   "kind": "request",
+   "path": "src/lib.rs",
+   "start": [
+    3,
+    16
+   ],
+   "text": "definition"
+  },
+  {
+   "kind": "request",
+   "path": "src/lib.rs",
+   "start": [
+    10,
+    13
+   ],
+   "text": "definition"
+  },
+  {
+   "kind": "request",
+   "path": "src/lib.rs",
+   "start": [
+    1,
+    6
+   ],
+   "text": "typeDefinition"
+  },
+  {
+   "kind": "request",
+   "path": "src/lib.rs",
+   "start": [
+    6,
+    5
+   ],
+   "text": "definition"
+  },
+  {
+   "kind": "fs_write",
+   "path": "Cargo.toml",
+   "text": "[package]\nname = \"issue17139\"\nname = \"issue17139\"\nversion = \"0.1.0\"\nedition = \"2021\"\n"
+  },
+  {
+   "kind": "change",
+   "path": "src/lib.rs",
+   "start": [
+    7,
+    17
+   ],
+   "end": [
+    7,
+    21
+   ]
+  },
+  {
+   "kind": "save",
+   "path": "src/lib.rs"
+  },
+  {
+   "kind": "change",
+   "path": "src/lib.rs",
+   "start": [
+    7,
+    17
+   ],
+   "end": [
+    7,
+    17
+   ],
+   "text": "ner:"
+  },
+  {
+   "kind": "save",
+   "path": "src/lib.rs"
+  },
+  {
+   "kind": "fs_write",
+   "path": "Cargo.toml",
+   "text": "[package]\nname = \"issue17139\"\nversion = \"0.1.0\"\nedition = \"2021\"\n"
+  },
+  {
+   "kind": "fs_write",
+   "path": "Cargo.toml",
+   "text": "[package]\nname = \"issue17139\"\nversion = \"0.1.0\"\nedition = \"2021\"\nedition = \"2021\"\n"
+  },
+  {
+   "kind": "fs_write",
+   "path": "Cargo.toml",
+   "text": "[package]\nname = \"issue17139\"\nversion = \"0.1.0\"\nedition = \"2021\"\n"
+  },
+  {
+   "kind": "change",
+   "path": "src/lib.rs",
+   "start": [
+    7,
+    0
+   ],
+   "end": [
+    8,
+    0
+   ]
+  },
+  {
+   "kind": "save",
+   "path": "src/lib.rs"
+  },
+  {
+   "kind": "change",
+   "path": "src/lib.rs",
+   "start": [
+    7,
+    0
+   ],
+   "end": [
+    7,
+    0
+   ],
+   "text": "    use super::inner::{self"
+  },
+  {
+   "kind": "change",
+   "path": "src/lib.rs",
+   "start": [
+    7,
+    27
+   ],
+   "end": [
+    7,
+    27
+   ],
+   "text": ", X};\n"
+  },
+  {
+   "kind": "save",
+   "path": "src/lib.rs"
+  },
+  {
+   "kind": "set_config",
+   "settings": {
+    "rust-analyzer": {
+     "procMacro": {
+      "enable": false
+     }
+    }
+   }
+  },
+  {
+   "kind": "set_config",
+   "settings": {
+    "rust-analyzer": {
+     "procMacro": {
+      "enable": true
+     }
+    }
+   }
+  },
+  {
+   "kind": "change",
+   "path": "src/lib.rs",
+   "start": [
+    1,
+    4
+   ],
+   "end": [
+    1,
+    9
+   ],
+   "text": "zz"
+  },
+  {
+   "kind": "change",
+   "path": "src/lib.rs",
+   "start": [
+    1,
+    4
+   ],
+   "end": [
+    1,
+    6
+   ],
+   "text": "inner"
+  },
+  {
+   "kind": "fs_write",
+   "path": "Cargo.toml",
+   "text": "[package]\nname = \"issue17139\"\nedition = \"2021\"\n"
+  },
+  {
+   "kind": "change",
+   "path": "src/lib.rs",
+   "start": [
+    6,
+    0
+   ],
+   "end": [
+    7,
+    0
+   ]
+  },
+  {
+   "kind": "change",
+   "path": "src/lib.rs",
+   "start": [
+    6,
+    0
+   ],
+   "end": [
+    6,
+    0
+   ],
+   "text": "mod z {\n"
+  },
+  {
+   "kind": "fs_write",
+   "path": "Cargo.toml",
+   "text": "[package]\nname = \"issue17139\"\nversion = \"0.1.0\"\nedition = \"2021\"\n"
+  },
+  {
+   "kind": "fs_rename",
+   "path": "src/lib.rs",
+   "new_path": "src/lib_rt.rs"
+  },
+  {
+   "kind": "fs_rename",
+   "path": "src/lib_rt.rs",
+   "new_path": "src/lib.rs"
+  }
+ ],
+ "case": {
+  "chain_step": 10,
+  "families": [
+   "H5",
+   "H3",
+   "H8",
+   "H9",
+   "H6",
+   "H2",
+   "H4",
+   "H1",
+   "H7",
+   "H5"
+  ],
+  "family": "H5",
+  "history_index": 9,
+  "history_seed": 1010,
+  "mode": "chain",
+  "note": "rename src/lib.rs -> src/lib_rt.rs -> back",
+  "seed": 1,
+  "timing": "race0"
+ },
+ "shape": "definition:lost",
+ "signature": "rust-analyzer|r1_history|definition:lost",
+ "expected": [
+  [
+   "src/lib.rs",
+   1,
+   4,
+   1,
+   9
+  ]
+ ],
+ "actual": [],
+ "reproduced": "0/3",
+ "note": "H5: rename src/lib.rs -> src/lib_rt.rs -> back; flake 0/3 [r1:SCr r2:SCr r3:SCr] in 108s",
+ "violation": {
+  "oracle": "r1_history",
+  "server": "rust-analyzer-2024-05-27",
+  "project": "rust-analyzer-17139",
+  "key": {
+   "method": "definition",
+   "path": "src/lib.rs",
+   "line": 1,
+   "character": 6,
+   "extra": ""
+  },
+  "expected": [
+   [
+    "src/lib.rs",
+    1,
+    4,
+    1,
+    9
+   ]
+  ],
+  "actual": [],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "src/lib.rs"
+   },
+   {
+    "kind": "fs_rename",
+    "path": "src/lib.rs",
+    "new_path": "src/lib_rt.rs"
+   },
+   {
+    "kind": "fs_rename",
+    "path": "src/lib_rt.rs",
+    "new_path": "src/lib.rs"
+   },
+   {
+    "kind": "change",
+    "path": "src/lib.rs",
+    "start": [
+     1,
+     8
+    ],
+    "end": [
+     1,
+     11
+    ]
+   },
+   {
+    "kind": "close",
+    "path": "src/lib.rs"
+   },
+   {
+    "kind": "open",
+    "path": "src/lib.rs"
+   },
+   {
+    "kind": "change",
+    "path": "src/lib.rs",
+    "start": [
+     7,
+     29
+    ],
+    "end": [
+     7,
+     30
+    ],
+    "text": "zz"
+   },
+   {
+    "kind": "change",
+    "path": "src/lib.rs",
+    "start": [
+     7,
+     29
+    ],
+    "end": [
+     7,
+     31
+    ],
+    "text": "X"
+   },
+   {
+    "kind": "request",
+    "path": "src/lib.rs",
+    "start": [
+     3,
+     16
+    ],
+    "text": "definition"
+   },
+   {
+    "kind": "request",
+    "path": "src/lib.rs",
+    "start": [
+     10,
+     13
+    ],
+    "text": "definition"
+   },
+   {
+    "kind": "request",
+    "path": "src/lib.rs",
+    "start": [
+     1,
+     6
+    ],
+    "text": "typeDefinition"
+   },
+   {
+    "kind": "request",
+    "path": "src/lib.rs",
+    "start": [
+     6,
+     5
+    ],
+    "text": "definition"
+   },
+   {
+    "kind": "fs_write",
+    "path": "Cargo.toml",
+    "text": "[package]\nname = \"issue17139\"\nname = \"issue17139\"\nversion = \"0.1.0\"\nedition = \"2021\"\n"
+   },
+   {
+    "kind": "change",
+    "path": "src/lib.rs",
+    "start": [
+     7,
+     17
+    ],
+    "end": [
+     7,
+     21
+    ]
+   },
+   {
+    "kind": "save",
+    "path": "src/lib.rs"
+   },
+   {
+    "kind": "change",
+    "path": "src/lib.rs",
+    "start": [
+     7,
+     17
+    ],
+    "end": [
+     7,
+     17
+    ],
+    "text": "ner:"
+   },
+   {
+    "kind": "save",
+    "path": "src/lib.rs"
+   },
+   {
+    "kind": "fs_write",
+    "path": "Cargo.toml",
+    "text": "[package]\nname = \"issue17139\"\nversion = \"0.1.0\"\nedition = \"2021\"\n"
+   },
+   {
+    "kind": "fs_write",
+    "path": "Cargo.toml",
+    "text": "[package]\nname = \"issue17139\"\nversion = \"0.1.0\"\nedition = \"2021\"\nedition = \"2021\"\n"
+   },
+   {
+    "kind": "fs_write",
+    "path": "Cargo.toml",
+    "text": "[package]\nname = \"issue17139\"\nversion = \"0.1.0\"\nedition = \"2021\"\n"
+   },
+   {
+    "kind": "change",
+    "path": "src/lib.rs",
+    "start": [
+     7,
+     0
+    ],
+    "end": [
+     8,
+     0
+    ]
+   },
+   {
+    "kind": "save",
+    "path": "src/lib.rs"
+   },
+   {
+    "kind": "change",
+    "path": "src/lib.rs",
+    "start": [
+     7,
+     0
+    ],
+    "end": [
+     7,
+     0
+    ],
+    "text": "    use super::inner::{self"
+   },
+   {
+    "kind": "change",
+    "path": "src/lib.rs",
+    "start": [
+     7,
+     27
+    ],
+    "end": [
+     7,
+     27
+    ],
+    "text": ", X};\n"
+   },
+   {
+    "kind": "save",
+    "path": "src/lib.rs"
+   },
+   {
+    "kind": "set_config",
+    "settings": {
+     "rust-analyzer": {
+      "procMacro": {
+       "enable": false
+      }
+     }
+    }
+   },
+   {
+    "kind": "set_config",
+    "settings": {
+     "rust-analyzer": {
+      "procMacro": {
+       "enable": true
+      }
+     }
+    }
+   },
+   {
+    "kind": "change",
+    "path": "src/lib.rs",
+    "start": [
+     1,
+     4
+    ],
+    "end": [
+     1,
+     9
+    ],
+    "text": "zz"
+   },
+   {
+    "kind": "change",
+    "path": "src/lib.rs",
+    "start": [
+     1,
+     4
+    ],
+    "end": [
+     1,
+     6
+    ],
+    "text": "inner"
+   },
+   {
+    "kind": "fs_write",
+    "path": "Cargo.toml",
+    "text": "[package]\nname = \"issue17139\"\nedition = \"2021\"\n"
+   },
+   {
+    "kind": "change",
+    "path": "src/lib.rs",
+    "start": [
+     6,
+     0
+    ],
+    "end": [
+     7,
+     0
+    ]
+   },
+   {
+    "kind": "change",
+    "path": "src/lib.rs",
+    "start": [
+     6,
+     0
+    ],
+    "end": [
+     6,
+     0
+    ],
+    "text": "mod z {\n"
+   },
+   {
+    "kind": "fs_write",
+    "path": "Cargo.toml",
+    "text": "[package]\nname = \"issue17139\"\nversion = \"0.1.0\"\nedition = \"2021\"\n"
+   },
+   {
+    "kind": "fs_rename",
+    "path": "src/lib.rs",
+    "new_path": "src/lib_rt.rs"
+   },
+   {
+    "kind": "fs_rename",
+    "path": "src/lib_rt.rs",
+    "new_path": "src/lib.rs"
+   }
+  ],
+  "detail": "{\"case\": {\"chain_step\": 10, \"families\": [\"H5\", \"H3\", \"H8\", \"H9\", \"H6\", \"H2\", \"H4\", \"H1\", \"H7\", \"H5\"], \"family\": \"H5\", \"history_index\": 9, \"history_seed\": 1010, \"mode\": \"chain\", \"note\": \"rename src/lib.rs -> src/lib_rt.rs -> back\", \"seed\": 1, \"timing\": \"race0\"}, \"note\": \"H5: rename src/lib.rs -> src/lib_rt.rs -> back; flake 0/3 [r1:SCr r2:SCr r3:SCr] in 108s\", \"shape\": \"definition:lost\"}",
+  "reproduced": "0/3",
+  "reduced_ops": [],
+  "signature": "rust-analyzer|r1_history|definition:lost",
+  "run_id": "48baa6cd4588"
+ },
+ "replay_logs": [],
+ "project_files": {},
+ "incomplete": false
+}

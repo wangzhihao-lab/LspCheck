@@ -1,0 +1,549 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "0112eaa84042-v00",
+ "run_id": "0112eaa84042",
+ "oracle": "r3_routes",
+ "server": {
+  "kind": "pyright",
+  "version": "1.1.414"
+ },
+ "project": {
+  "name": "Panniantong/Agent-Reach@a19a171fa980",
+  "source": "corpus",
+  "ref": "temp/corpus/Panniantong__Agent-Reach@a19a171fa980",
+  "commit": "a19a171fa980a0785849596492e0af4db800c82f",
+  "language": "python"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "agent_reach/channels/bilibili.py",
+    "positions": [
+     [
+      25,
+      28
+     ],
+     [
+      27,
+      31
+     ],
+     [
+      40,
+      31
+     ],
+     [
+      45,
+      16
+     ],
+     [
+      50,
+      15
+     ],
+     [
+      54,
+      27
+     ],
+     [
+      62,
+      53
+     ],
+     [
+      65,
+      19
+     ],
+     [
+      67,
+      22
+     ],
+     [
+      73,
+      50
+     ],
+     [
+      83,
+      68
+     ],
+     [
+      102,
+      12
+     ]
+    ],
+    "ends": [
+     [
+      25,
+      32
+     ],
+     [
+      27,
+      35
+     ],
+     [
+      40,
+      33
+     ],
+     [
+      45,
+      18
+     ],
+     [
+      50,
+      19
+     ],
+     [
+      54,
+      29
+     ],
+     [
+      62,
+      54
+     ],
+     [
+      65,
+      23
+     ],
+     [
+      67,
+      24
+     ],
+     [
+      73,
+      51
+     ],
+     [
+      83,
+      72
+     ],
+     [
+      102,
+      13
+     ]
+    ],
+    "names": [
+     "Request",
+     "urlopen",
+     "str",
+     "self",
+     "backend",
+     "self",
+     "s",
+     "backend",
+     "self",
+     "m",
+     "package",
+     "st"
+    ]
+   },
+   {
+    "path": "agent_reach/channels/boss.py",
+    "positions": [
+     [
+      45,
+      15
+     ],
+     [
+      84,
+      34
+     ],
+     [
+      95,
+      13
+     ],
+     [
+      106,
+      14
+     ],
+     [
+      152,
+      31
+     ],
+     [
+      173,
+      9
+     ],
+     [
+      180,
+      20
+     ],
+     [
+      220,
+      18
+     ],
+     [
+      226,
+      66
+     ],
+     [
+      235,
+      66
+     ],
+     [
+      248,
+      15
+     ],
+     [
+      272,
+      20
+     ]
+    ],
+    "ends": [
+     [
+      45,
+      26
+     ],
+     [
+      84,
+      40
+     ],
+     [
+      95,
+      15
+     ],
+     [
+      106,
+      16
+     ],
+     [
+      152,
+      34
+     ],
+     [
+      173,
+      11
+     ],
+     [
+      180,
+      23
+     ],
+     [
+      220,
+      19
+     ],
+     [
+      226,
+      69
+     ],
+     [
+      235,
+      68
+     ],
+     [
+      248,
+      20
+     ],
+     [
+      272,
+      23
+     ]
+    ],
+    "names": [
+     "_chrome_launch_command",
+     "build_opener",
+     "page",
+     "get",
+     "unpack",
+     "len",
+     "header",
+     "_",
+     "digest",
+     "buf",
+     "Exception",
+     "status"
+    ]
+   },
+   {
+    "path": "tests/test_mcp_server.py",
+    "positions": [
+     [
+      10,
+      22
+     ],
+     [
+      14,
+      13
+     ],
+     [
+      23,
+      14
+     ],
+     [
+      31,
+      51
+     ],
+     [
+      35,
+      20
+     ],
+     [
+      41,
+      32
+     ],
+     [
+      46,
+      22
+     ],
+     [
+      69,
+      34
+     ],
+     [
+      70,
+      14
+     ],
+     [
+      78,
+      14
+     ],
+     [
+      82,
+      14
+     ],
+     [
+      98,
+      31
+     ]
+    ],
+    "ends": [
+     [
+      10,
+      24
+     ],
+     [
+      14,
+      18
+     ],
+     [
+      23,
+      16
+     ],
+     [
+      31,
+      57
+     ],
+     [
+      35,
+      23
+     ],
+     [
+      41,
+      40
+     ],
+     [
+      46,
+      41
+     ],
+     [
+      69,
+      39
+     ],
+     [
+      70,
+      17
+     ],
+     [
+      78,
+      16
+     ],
+     [
+      82,
+      16
+     ],
+     [
+      98,
+      33
+     ]
+    ],
+    "names": [
+     "name",
+     "list_tools",
+     "self",
+     "_FakeServer",
+     "kwargs",
+     "SimpleNamespace",
+     "test_mcp_status_uses_read_only_config",
+     "read_only",
+     "result",
+     "self",
+     "self",
+     "text"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "highlightVsReferences",
+  "path": "agent_reach/channels/boss.py",
+  "line": 106,
+  "character": 14,
+  "extra": ""
+ },
+ "ops": [],
+ "case": {
+  "path": "agent_reach/channels/boss.py",
+  "pos": [
+   106,
+   14
+  ],
+  "sub": "c"
+ },
+ "shape": "highlightVsReferences:gained",
+ "signature": "pyright|r3_routes|highlightVsReferences:gained",
+ "expected": [],
+ "actual": [
+  [
+   95,
+   16,
+   95,
+   19
+  ],
+  [
+   95,
+   60,
+   95,
+   63
+  ],
+  [
+   106,
+   13,
+   106,
+   16
+  ],
+  [
+   108,
+   16,
+   108,
+   19
+  ],
+  [
+   108,
+   60,
+   108,
+   63
+  ],
+  [
+   191,
+   29,
+   191,
+   32
+  ],
+  [
+   239,
+   24,
+   239,
+   27
+  ],
+  [
+   243,
+   45,
+   243,
+   48
+  ],
+  [
+   244,
+   30,
+   244,
+   33
+  ],
+  [
+   244,
+   74,
+   244,
+   77
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "0 references; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 26s",
+ "violation": {
+  "oracle": "r3_routes",
+  "server": "pyright-1.1.414",
+  "project": "Panniantong/Agent-Reach@a19a171fa980",
+  "key": {
+   "method": "highlightVsReferences",
+   "path": "agent_reach/channels/boss.py",
+   "line": 106,
+   "character": 14,
+   "extra": ""
+  },
+  "expected": [],
+  "actual": [
+   [
+    95,
+    16,
+    95,
+    19
+   ],
+   [
+    95,
+    60,
+    95,
+    63
+   ],
+   [
+    106,
+    13,
+    106,
+    16
+   ],
+   [
+    108,
+    16,
+    108,
+    19
+   ],
+   [
+    108,
+    60,
+    108,
+    63
+   ],
+   [
+    191,
+    29,
+    191,
+    32
+   ],
+   [
+    239,
+    24,
+    239,
+    27
+   ],
+   [
+    243,
+    45,
+    243,
+    48
+   ],
+   [
+    244,
+    30,
+    244,
+    33
+   ],
+   [
+    244,
+    74,
+    244,
+    77
+   ]
+  ],
+  "ops": [],
+  "detail": "{\"case\": {\"path\": \"agent_reach/channels/boss.py\", \"pos\": [106, 14], \"sub\": \"c\"}, \"note\": \"0 references; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 26s\", \"shape\": \"highlightVsReferences:gained\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "pyright|r3_routes|highlightVsReferences:gained",
+  "run_id": "0112eaa84042"
+ },
+ "replay_logs": [
+  "logs/pyright-1.1.414-0112eaa84042-r3-replay-baseline-20260923-154544-1a8f02.jsonl.gz",
+  "logs/pyright-1.1.414-0112eaa84042-r3-replay-control-20260923-154548-ed260d.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

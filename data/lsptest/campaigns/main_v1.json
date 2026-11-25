@@ -1,0 +1,48 @@
+{
+  "id": "main_v1",
+  "description": "First campaign (draft). The five first-batch servers on every eligible corpus pair. Per (server, project): r0_crash 1 seed; r1_history 3 settled seeds + 1 race0 + 1 race200 seed; r2-r5 2 seeds each; r6 2 seeds on ts7 with ts6 as the reference. Concurrency, per-run timeout and the wall-clock budget are to be fixed from the dry-run timings.",
+  "corpus": "data/lsptest/corpus_prepared.json",
+  "servers": [
+    {"kind": "pyright", "version": "1.1.414"},
+    {"kind": "ts6", "version": "6.0.3"},
+    {"kind": "ts7", "version": "7.0.2"},
+    {"kind": "rust-analyzer", "version": "2026-09-21"},
+    {"kind": "gopls", "version": "v0.23.0"}
+  ],
+  "oracles": {
+    "r0_crash": {"seeds": {"settled": [1]}},
+    "r1_history": {"seeds": {"settled": [1, 2, 3], "race0": [1], "race200": [1]}, "max_cases": 12},
+    "r2_handles": {"seeds": {"settled": [1, 2]}, "max_cases": 12},
+    "r3_routes": {"seeds": {"settled": [1, 2]}},
+    "r4_edits": {"seeds": {"settled": [1, 2]}, "max_cases": 12},
+    "r5_transforms": {"seeds": {"settled": [1, 2]}, "max_cases": 6},
+    "r6_crossimpl": {"seeds": {"settled": [1, 2]}, "servers": ["ts7"]}
+  },
+  "targets": {"max_files": 3, "max_positions_per_file": 12, "max_file_bytes": 256000},
+  "timeouts": {"settle_s": 300, "request_s": 30, "run_s": 7200},
+  "concurrency": 4,
+  "server_limits": {"rust-analyzer": 2},
+  "wall_clock_budget_h": 0,
+  "flake": {"n": 3, "per_signature": 1},
+  "signature_cap": {"runs": 3, "scope": "campaign"},
+  "eligibility": {
+    "force": [
+      {"server": "ts6", "repo": "ChatGPTNextWeb/NextChat",
+       "reason": "the corpus probe did not settle because of a URI-encoding bug in the probe; the engine settles this pair in 5 s"}
+    ],
+    "exclude": []
+  },
+  "project_overrides": {
+    "rust-lang/rustlings": {
+      "exclude_dirs": ["exercises", "solutions", "dev", "tests"],
+      "reason": "exercise and solution files belong to no crate (rust-analyzer offers no IDE services there); as in the R2/R3/R5 pilot"
+    }
+  },
+  "notes": [
+    "race0 and race200 use seed 1, the seed of the first settled run: same targets and histories, different timing, so that timing-only violations can be told apart.",
+    "r3_routes, r6_crossimpl and r0_crash do not use max_cases (they check every target).",
+    "server_limits: at most 2 rust-analyzer runs at a time (a session takes up to 3.5 GB; R1 runs two side by side).",
+    "Cost controls (campaign_costs.py): candidates with a registered legitimate-difference label (r3_routes definitionConsistency.signature / .shorthand) are recorded as labelled-legitimate without replay; a signature confirmed in 3 runs is capped (later candidates recorded as capped, not replayed).",
+    "Draft: the final budget is decided from the dry run (data/lsptest/runs/dryrun)."
+  ]
+}

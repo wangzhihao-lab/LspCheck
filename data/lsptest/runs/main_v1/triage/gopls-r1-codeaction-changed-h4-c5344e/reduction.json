@@ -1,0 +1,141 @@
+{
+ "vid": "72feff27b572-v01",
+ "ops_before": 5,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 6,
+ "cache_hits": 0,
+ "reduce_seconds": 165.652,
+ "budget_exhausted": false,
+ "probe_log": [
+  [
+   4,
+   true
+  ],
+  [
+   3,
+   false
+  ],
+  [
+   3,
+   true
+  ],
+  [
+   2,
+   true
+  ],
+  [
+   1,
+   false
+  ],
+  [
+   1,
+   false
+  ]
+ ],
+ "logs": [
+  "gopls-v0.23.0-trc5344e-replay-baseline-20260925-154217-16295c.jsonl.gz",
+  "gopls-v0.23.0-trc5344e-replay-control-20260925-154217-b85a46.jsonl.gz",
+  "gopls-v0.23.0-trc5344e-replay-history-20260925-154222-4b3cfd.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [
+   [
+    "Add test for PassThrough",
+    "source.addTest"
+   ],
+   [
+    "Browse arm64 assembly for PassThrough",
+    "source.assembly"
+   ],
+   [
+    "Browse documentation for method (*LightRenderer).PassThrough",
+    "source.doc"
+   ],
+   [
+    "Browse free symbols",
+    "source.freesymbols"
+   ],
+   [
+    "Browse gopls feature documentation",
+    "gopls.doc.features"
+   ],
+   [
+    "Extract variable",
+    "refactor.extract.variable"
+   ],
+   [
+    "Inline call to WriteString",
+    "refactor.inline.call"
+   ],
+   [
+    "Show compiler optimization details for \"tui\"",
+    "source.toggleCompilerOptDetails"
+   ],
+   [
+    "Split into separate WriteString calls",
+    "quickfix"
+   ],
+   [
+    "Split into separate WriteString calls",
+    "quickfix"
+   ],
+   [
+    "Split package \"tui\"",
+    "source.splitPackage"
+   ]
+  ],
+  "actual": [
+   [
+    "Add test for PassThrough",
+    "source.addTest"
+   ],
+   [
+    "Browse arm64 assembly for PassThrough",
+    "source.assembly"
+   ],
+   [
+    "Browse documentation for method (*LightRenderer).PassThrough",
+    "source.doc"
+   ],
+   [
+    "Browse free symbols",
+    "source.freesymbols"
+   ],
+   [
+    "Browse gopls feature documentation",
+    "gopls.doc.features"
+   ],
+   [
+    "Extract variable",
+    "refactor.extract.variable"
+   ],
+   [
+    "Inline call to WriteString",
+    "refactor.inline.call"
+   ],
+   [
+    "Show compiler optimization details for \"tui\"",
+    "source.toggleCompilerOptDetails"
+   ],
+   [
+    "Split into separate WriteString calls",
+    "quickfix"
+   ],
+   [
+    "Split into separate WriteString calls",
+    "quickfix"
+   ],
+   [
+    "Split into separate WriteString calls",
+    "quickfix"
+   ],
+   [
+    "Split package \"tui\"",
+    "source.splitPackage"
+   ]
+  ]
+ },
+ "ops_after": 2,
+ "total_seconds": 326.8
+}

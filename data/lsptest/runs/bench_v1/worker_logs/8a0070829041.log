@@ -1,0 +1,3 @@
+2026-09-24 20:13:54,437 INFO campaign_run run 8a0070829041: r1_history on gopls v0.21.0, gopls-74938 seed 1 race0, targets ['slicescontains.go']
+2026-09-24 20:15:16,146 INFO campaign_run run 8a0070829041: 0 candidate(s) in 82s; confirming
+2026-09-24 20:15:16,147 INFO campaign_run run 8a0070829041 finished: ok, 0 confirmed of 0 candidate(s), 82s

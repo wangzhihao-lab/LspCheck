@@ -1,0 +1,213 @@
+{
+ "format": 1,
+ "campaign": "bench_v1",
+ "vid": "25bc91a5e36e-v00",
+ "run_id": "25bc91a5e36e",
+ "oracle": "r5_transforms",
+ "server": {
+  "kind": "gopls",
+  "version": "v0.6.6"
+ },
+ "project": {
+  "name": "gopls-38732",
+  "source": "dir",
+  "ref": "data/lsp_bench/cases/gopls-38732/project",
+  "commit": "",
+  "language": "go"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 180.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 6,
+  "targets": [
+   {
+    "path": "bar.go",
+    "positions": [
+     [
+      0,
+      9
+     ],
+     [
+      1,
+      5
+     ],
+     [
+      1,
+      11
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      11
+     ],
+     [
+      1,
+      7
+     ],
+     [
+      1,
+      13
+     ]
+    ],
+    "names": [
+     "foo",
+     "Bar",
+     "Foo"
+    ]
+   },
+   {
+    "path": "foo.go",
+    "positions": [
+     [
+      2,
+      9
+     ],
+     [
+      3,
+      5
+     ]
+    ],
+    "ends": [
+     [
+      2,
+      11
+     ],
+     [
+      3,
+      7
+     ]
+    ],
+    "names": [
+     "foo",
+     "Foo"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "codeAction",
+  "path": "bar.go",
+  "line": 1,
+  "character": 10,
+  "extra": "diag:1:13"
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "bar.go"
+  },
+  {
+   "kind": "change",
+   "path": "bar.go",
+   "start": [
+    1,
+    13
+   ],
+   "end": [
+    2,
+    0
+   ]
+  }
+ ],
+ "case": {
+  "mapped_key": [
+   "codeAction",
+   "bar.go",
+   1,
+   10,
+   "diag:1:13"
+  ],
+  "transform": {
+   "back": {
+    "col": 0,
+    "eof": [],
+    "line": -1,
+    "n": 0,
+    "path": "bar.go",
+    "w": 0
+   },
+   "edits": [
+    [
+     1,
+     13,
+     2,
+     0,
+     ""
+    ]
+   ],
+   "kind": "T5",
+   "path": "bar.go",
+   "shift": {
+    "col": 0,
+    "eof": [
+     2,
+     0,
+     1,
+     13
+    ],
+    "line": -1,
+    "n": 0,
+    "path": "bar.go",
+    "w": 0
+   }
+  }
+ },
+ "shape": "codeAction:key-lost",
+ "signature": "gopls|r5_transforms|codeAction:key-lost",
+ "expected": [],
+ "actual": [
+  "missing-key"
+ ],
+ "reproduced": "3/3",
+ "note": "T5 bar.go: 1 edit(s), first [1, 13, 2, 0]; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 31s",
+ "violation": {
+  "oracle": "r5_transforms",
+  "server": "gopls-v0.6.6",
+  "project": "gopls-38732",
+  "key": {
+   "method": "codeAction",
+   "path": "bar.go",
+   "line": 1,
+   "character": 10,
+   "extra": "diag:1:13"
+  },
+  "expected": [],
+  "actual": [
+   "missing-key"
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "bar.go"
+   },
+   {
+    "kind": "change",
+    "path": "bar.go",
+    "start": [
+     1,
+     13
+    ],
+    "end": [
+     2,
+     0
+    ]
+   }
+  ],
+  "detail": "{\"case\": {\"mapped_key\": [\"codeAction\", \"bar.go\", 1, 10, \"diag:1:13\"], \"transform\": {\"back\": {\"col\": 0, \"eof\": [], \"line\": -1, \"n\": 0, \"path\": \"bar.go\", \"w\": 0}, \"edits\": [[1, 13, 2, 0, \"\"]], \"kind\": \"T5\", \"path\": \"bar.go\", \"shift\": {\"col\": 0, \"eof\": [2, 0, 1, 13], \"line\": -1, \"n\": 0, \"path\": \"bar.go\", \"w\": 0}}}, \"note\": \"T5 bar.go: 1 edit(s), first [1, 13, 2, 0]; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 31s\", \"shape\": \"codeAction:key-lost\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "gopls|r5_transforms|codeAction:key-lost",
+  "run_id": "25bc91a5e36e"
+ },
+ "replay_logs": [
+  "logs/gopls-v0.6.6-25bc91a5e36e-r5-replay-baseline-20260924-222732-890095.jsonl.gz",
+  "logs/gopls-v0.6.6-25bc91a5e36e-r5-replay-case-20260924-222739-059982.jsonl.gz",
+  "logs/gopls-v0.6.6-25bc91a5e36e-r5-replay-control-20260924-222736-302d8f.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

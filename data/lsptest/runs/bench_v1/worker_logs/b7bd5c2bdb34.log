@@ -1,0 +1,3 @@
+2026-09-24 18:03:39,252 INFO campaign_run run b7bd5c2bdb34: r0_crash on gopls v0.20.0, gopls-74708 seed 1 settled, targets ['b.go']
+2026-09-24 18:03:43,785 INFO campaign_run run b7bd5c2bdb34: 0 candidate(s) in 5s; confirming
+2026-09-24 18:03:43,786 INFO campaign_run run b7bd5c2bdb34 finished: ok, 0 confirmed of 0 candidate(s), 5s

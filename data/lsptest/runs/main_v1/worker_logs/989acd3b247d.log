@@ -1,0 +1,3 @@
+2026-09-23 20:28:05,508 INFO campaign_run run 989acd3b247d: r5_transforms on ts7 7.0.2, upstash/context7@6477e43e31d2 seed 2 settled, targets ['packages/cli/src/utils/update-check.ts', 'packages/sdk/src/commands/search-library/types.ts', 'packages/sdk/src/http/index.ts']
+2026-09-23 20:35:38,091 INFO campaign_run run 989acd3b247d: 0 candidate(s) in 453s; confirming
+2026-09-23 20:35:38,092 INFO campaign_run run 989acd3b247d finished: ok, 0 confirmed of 0 candidate(s), 453s

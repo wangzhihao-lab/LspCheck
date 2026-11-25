@@ -1,0 +1,3 @@
+2026-09-23 15:21:11,123 INFO campaign_run run dfb7f6dfed42: r4_edits on ts7 7.0.2, react-hook-form/react-hook-form@5fd9ef65290b seed 1 settled, targets ['app/src/main.tsx', 'examples/V7/validationOnFieldBlur.tsx', 'src/logic/skipValidation.ts']
+2026-09-23 15:21:59,472 INFO campaign_run run dfb7f6dfed42: 0 candidate(s) in 48s; confirming
+2026-09-23 15:21:59,472 INFO campaign_run run dfb7f6dfed42 finished: ok, 0 confirmed of 0 candidate(s), 48s

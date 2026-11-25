@@ -1,0 +1,160 @@
+{
+ "vid": "95c1b8d86026-v01",
+ "ops_before": 13,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 25,
+ "cache_hits": 15,
+ "reduce_seconds": 257.736,
+ "budget_exhausted": false,
+ "probe_log": [
+  [
+   8,
+   true
+  ],
+  [
+   5,
+   false
+  ],
+  [
+   6,
+   false
+  ],
+  [
+   4,
+   false
+  ],
+  [
+   4,
+   false
+  ],
+  [
+   4,
+   false
+  ],
+  [
+   5,
+   false
+  ],
+  [
+   7,
+   false
+  ],
+  [
+   7,
+   false
+  ],
+  [
+   7,
+   true
+  ],
+  [
+   6,
+   false
+  ],
+  [
+   6,
+   false
+  ],
+  [
+   4,
+   false
+  ],
+  [
+   4,
+   false
+  ],
+  [
+   6,
+   false
+  ],
+  [
+   6,
+   true
+  ],
+  [
+   5,
+   true
+  ],
+  [
+   4,
+   true
+  ],
+  [
+   3,
+   false
+  ],
+  [
+   2,
+   false
+  ],
+  [
+   1,
+   false
+  ],
+  [
+   1,
+   false
+  ],
+  [
+   1,
+   false
+  ],
+  [
+   3,
+   false
+  ],
+  [
+   3,
+   false
+  ]
+ ],
+ "logs": [
+  "pyright-1.1.414-tr9c51fd-replay-baseline-20261118-232009-506d1c.jsonl.gz",
+  "pyright-1.1.414-tr9c51fd-replay-control-20261118-232009-712d41.jsonl.gz",
+  "pyright-1.1.414-tr9c51fd-replay-history-20261118-232012-e85c26.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [
+   [
+    "temp/lsp_servers/pyright-1.1.414/node_modules/pyright/dist/typeshed-fallback/stdlib/types.pyi",
+    712,
+    6,
+    712,
+    14
+   ],
+   [
+    "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/types.py",
+    69,
+    4,
+    69,
+    12
+   ]
+  ],
+  "actual": [
+   [
+    "temp/lsp_servers/pyright-1.1.414/node_modules/pyright/dist/typeshed-fallback/stdlib/builtins.pyi",
+    486,
+    6,
+    486,
+    9
+   ],
+   [
+    "temp/lsp_servers/pyright-1.1.414/node_modules/pyright/dist/typeshed-fallback/stdlib/types.pyi",
+    712,
+    6,
+    712,
+    14
+   ],
+   [
+    "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/types.py",
+    69,
+    4,
+    69,
+    12
+   ]
+  ]
+ },
+ "ops_after": 4,
+ "total_seconds": 322.0
+}

@@ -1,0 +1,15 @@
+2026-09-24 16:41:55,539 INFO campaign_run run 1e936ea162f6: r1_history on gopls v0.4.1, gopls-36824 seed 1 settled, targets ['x.go']
+2026-09-24 16:46:45,767 INFO campaign_run run 1e936ea162f6: 16 candidate(s) in 290s; confirming
+2026-09-24 16:47:11,916 INFO flake replay 1/3 of gopls|r1_history|codeAction:key-lost: settled=True control_stable=True reproduced=True (26.1s)
+2026-09-24 16:47:38,022 INFO flake replay 2/3 of gopls|r1_history|codeAction:key-lost: settled=True control_stable=True reproduced=True (26.1s)
+2026-09-24 16:48:04,108 INFO flake replay 3/3 of gopls|r1_history|codeAction:key-lost: settled=True control_stable=True reproduced=True (26.1s)
+2026-09-24 16:48:30,221 INFO flake replay 1/3 of gopls|r1_history|diagnostics:missing:?: settled=True control_stable=True reproduced=True (26.1s)
+2026-09-24 16:48:56,327 INFO flake replay 2/3 of gopls|r1_history|diagnostics:missing:?: settled=True control_stable=True reproduced=True (26.1s)
+2026-09-24 16:49:22,439 INFO flake replay 3/3 of gopls|r1_history|diagnostics:missing:?: settled=True control_stable=True reproduced=True (26.1s)
+2026-09-24 16:49:56,056 INFO flake replay 1/3 of gopls|r1_history|codeAction:result->error:0: settled=True control_stable=True reproduced=True (33.6s)
+2026-09-24 16:50:29,782 INFO flake replay 2/3 of gopls|r1_history|codeAction:result->error:0: settled=True control_stable=True reproduced=True (33.7s)
+2026-09-24 16:51:03,377 INFO flake replay 3/3 of gopls|r1_history|codeAction:result->error:0: settled=True control_stable=True reproduced=True (33.6s)
+2026-09-24 16:51:37,018 INFO flake replay 1/3 of gopls|r1_history|diagnostics:changed:?: settled=True control_stable=True reproduced=True (33.6s)
+2026-09-24 16:52:10,730 INFO flake replay 2/3 of gopls|r1_history|diagnostics:changed:?: settled=True control_stable=True reproduced=True (33.7s)
+2026-09-24 16:52:44,382 INFO flake replay 3/3 of gopls|r1_history|diagnostics:changed:?: settled=True control_stable=True reproduced=True (33.7s)
+2026-09-24 16:52:44,395 INFO campaign_run run 1e936ea162f6 finished: ok, 4 confirmed of 16 candidate(s), 649s

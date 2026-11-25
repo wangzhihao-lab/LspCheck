@@ -1,0 +1,3 @@
+2026-11-18 08:45:30,723 INFO campaign_run run 6257078baec0: r3_routes on gopls v0.23.0, labstack/echo@3d084be90224 seed 1 settled, targets ['echo_test.go', 'echotest/reader_test.go', 'middleware/rate_limiter_test.go']
+2026-11-18 08:47:22,924 INFO campaign_run run 6257078baec0: 3 candidate(s) in 112s; confirming
+2026-11-18 08:47:22,925 INFO campaign_run run 6257078baec0 finished: ok, 0 confirmed of 3 candidate(s), 112s

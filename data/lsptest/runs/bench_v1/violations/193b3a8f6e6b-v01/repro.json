@@ -1,0 +1,462 @@
+{
+ "format": 1,
+ "campaign": "bench_v1",
+ "vid": "193b3a8f6e6b-v01",
+ "run_id": "193b3a8f6e6b",
+ "oracle": "r1_history",
+ "server": {
+  "kind": "gopls",
+  "version": "v0.10.0"
+ },
+ "project": {
+  "name": "gopls-43144",
+  "source": "dir",
+  "ref": "data/lsp_bench/cases/gopls-43144/project",
+  "commit": "",
+  "language": "go"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 180.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "bar/bar.go",
+    "positions": [
+     [
+      0,
+      9
+     ],
+     [
+      2,
+      6
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      11
+     ],
+     [
+      2,
+      8
+     ]
+    ],
+    "names": [
+     "bar",
+     "Blah"
+    ]
+   },
+   {
+    "path": "bar/bar_test.go",
+    "positions": [
+     [
+      0,
+      9
+     ],
+     [
+      2,
+      6
+     ],
+     [
+      3,
+      7
+     ],
+     [
+      3,
+      11
+     ],
+     [
+      5,
+      8
+     ],
+     [
+      6,
+      1
+     ],
+     [
+      6,
+      7
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      11
+     ],
+     [
+      2,
+      8
+     ],
+     [
+      3,
+      9
+     ],
+     [
+      3,
+      12
+     ],
+     [
+      5,
+      12
+     ],
+     [
+      6,
+      2
+     ],
+     [
+      6,
+      9
+     ]
+    ],
+    "names": [
+     "bar",
+     "Mer",
+     "Mer",
+     "M",
+     "TestBar",
+     "_",
+     "Blah"
+    ]
+   },
+   {
+    "path": "bar/bar_x_test.go",
+    "positions": [
+     [
+      0,
+      12
+     ],
+     [
+      7,
+      6
+     ],
+     [
+      8,
+      7
+     ],
+     [
+      8,
+      11
+     ],
+     [
+      10,
+      5
+     ],
+     [
+      11,
+      1
+     ],
+     [
+      11,
+      6
+     ],
+     [
+      11,
+      11
+     ],
+     [
+      12,
+      1
+     ],
+     [
+      12,
+      6
+     ],
+     [
+      12,
+      10
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      16
+     ],
+     [
+      7,
+      8
+     ],
+     [
+      8,
+      9
+     ],
+     [
+      8,
+      12
+     ],
+     [
+      10,
+      6
+     ],
+     [
+      11,
+      2
+     ],
+     [
+      11,
+      8
+     ],
+     [
+      11,
+      13
+     ],
+     [
+      12,
+      2
+     ],
+     [
+      12,
+      8
+     ],
+     [
+      12,
+      12
+     ]
+    ],
+    "names": [
+     "bar_test",
+     "Mer",
+     "Mer",
+     "M",
+     "_",
+     "_",
+     "bar",
+     "Blah",
+     "_",
+     "foo",
+     "Foo"
+    ]
+   },
+   {
+    "path": "foo/foo.go",
+    "positions": [
+     [
+      0,
+      9
+     ],
+     [
+      4,
+      7
+     ],
+     [
+      6,
+      5
+     ],
+     [
+      6,
+      8
+     ],
+     [
+      7,
+      9
+     ],
+     [
+      7,
+      26
+     ],
+     [
+      9,
+      5
+     ],
+     [
+      10,
+      1
+     ],
+     [
+      10,
+      6
+     ],
+     [
+      10,
+      11
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      11
+     ],
+     [
+      4,
+      9
+     ],
+     [
+      6,
+      6
+     ],
+     [
+      6,
+      10
+     ],
+     [
+      7,
+      14
+     ],
+     [
+      7,
+      27
+     ],
+     [
+      9,
+      6
+     ],
+     [
+      10,
+      2
+     ],
+     [
+      10,
+      8
+     ],
+     [
+      10,
+      13
+     ]
+    ],
+    "names": [
+     "foo",
+     "Foo",
+     "T",
+     "int",
+     "Interface",
+     "M",
+     "_",
+     "_",
+     "bar",
+     "Blah"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "definition",
+  "path": "foo/foo.go",
+  "line": 10,
+  "character": 11,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "bar/bar.go"
+  },
+  {
+   "kind": "open",
+   "path": "bar/bar_test.go"
+  },
+  {
+   "kind": "open",
+   "path": "bar/bar_x_test.go"
+  },
+  {
+   "kind": "open",
+   "path": "foo/foo.go"
+  },
+  {
+   "kind": "fs_rename",
+   "path": "bar/bar_x_test.go",
+   "new_path": "bar/bar_x_test_rt.go"
+  },
+  {
+   "kind": "fs_rename",
+   "path": "bar/bar_x_test_rt.go",
+   "new_path": "bar/bar_x_test.go"
+  }
+ ],
+ "case": {
+  "chain_step": 0,
+  "families": [],
+  "family": "H5",
+  "history_index": 1,
+  "history_seed": 2002,
+  "mode": "fresh",
+  "note": "rename bar/bar_x_test.go -> bar/bar_x_test_rt.go -> back",
+  "seed": 2,
+  "timing": "settled"
+ },
+ "shape": "definition:result->error:0",
+ "signature": "gopls|r1_history|definition:result->error:0",
+ "expected": [
+  [
+   "bar/bar.go",
+   2,
+   4,
+   2,
+   8
+  ]
+ ],
+ "actual": [
+  "error",
+  0
+ ],
+ "reproduced": "3/3",
+ "note": "H5: rename bar/bar_x_test.go -> bar/bar_x_test_rt.go -> back; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 110s",
+ "violation": {
+  "oracle": "r1_history",
+  "server": "gopls-v0.10.0",
+  "project": "gopls-43144",
+  "key": {
+   "method": "definition",
+   "path": "foo/foo.go",
+   "line": 10,
+   "character": 11,
+   "extra": ""
+  },
+  "expected": [
+   [
+    "bar/bar.go",
+    2,
+    4,
+    2,
+    8
+   ]
+  ],
+  "actual": [
+   "error",
+   0
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "bar/bar.go"
+   },
+   {
+    "kind": "open",
+    "path": "bar/bar_test.go"
+   },
+   {
+    "kind": "open",
+    "path": "bar/bar_x_test.go"
+   },
+   {
+    "kind": "open",
+    "path": "foo/foo.go"
+   },
+   {
+    "kind": "fs_rename",
+    "path": "bar/bar_x_test.go",
+    "new_path": "bar/bar_x_test_rt.go"
+   },
+   {
+    "kind": "fs_rename",
+    "path": "bar/bar_x_test_rt.go",
+    "new_path": "bar/bar_x_test.go"
+   }
+  ],
+  "detail": "{\"case\": {\"chain_step\": 0, \"families\": [], \"family\": \"H5\", \"history_index\": 1, \"history_seed\": 2002, \"mode\": \"fresh\", \"note\": \"rename bar/bar_x_test.go -> bar/bar_x_test_rt.go -> back\", \"seed\": 2, \"timing\": \"settled\"}, \"note\": \"H5: rename bar/bar_x_test.go -> bar/bar_x_test_rt.go -> back; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 110s\", \"shape\": \"definition:result->error:0\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "gopls|r1_history|definition:result->error:0",
+  "run_id": "193b3a8f6e6b"
+ },
+ "replay_logs": [
+  "logs/gopls-v0.10.0-193b3a8f6e6b-replay-baseline-20260925-043129-c265e8.jsonl.gz",
+  "logs/gopls-v0.10.0-193b3a8f6e6b-replay-control-20260925-043129-df2c12.jsonl.gz",
+  "logs/gopls-v0.10.0-193b3a8f6e6b-replay-history-20260925-043134-39d8c2.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

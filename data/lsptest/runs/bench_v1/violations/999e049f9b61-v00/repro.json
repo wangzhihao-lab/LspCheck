@@ -1,0 +1,369 @@
+{
+ "format": 1,
+ "campaign": "bench_v1",
+ "vid": "999e049f9b61-v00",
+ "run_id": "999e049f9b61",
+ "oracle": "r4_edits",
+ "server": {
+  "kind": "tsserver",
+  "version": "5.0.4+tsls3.3.2"
+ },
+ "project": {
+  "name": "tsserver-52792",
+  "source": "dir",
+  "ref": "data/lsp_bench/cases/tsserver-52792/project",
+  "commit": "",
+  "language": "typescript"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 120.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "classes.ts",
+    "positions": [
+     [
+      0,
+      13
+     ],
+     [
+      0,
+      23
+     ],
+     [
+      2,
+      18
+     ],
+     [
+      2,
+      37
+     ],
+     [
+      3,
+      7
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      18
+     ],
+     [
+      0,
+      25
+     ],
+     [
+      2,
+      24
+     ],
+     [
+      2,
+      42
+     ],
+     [
+      3,
+      10
+     ]
+    ],
+    "names": [
+     "Component",
+     "from",
+     "MyComponent",
+     "Component",
+     "render"
+    ]
+   },
+   {
+    "path": "utils.ts",
+    "positions": [
+     [
+      0,
+      16
+     ],
+     [
+      4,
+      26
+     ],
+     [
+      5,
+      16
+     ],
+     [
+      5,
+      26
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      20
+     ],
+     [
+      4,
+      31
+     ],
+     [
+      5,
+      19
+     ],
+     [
+      5,
+      30
+     ]
+    ],
+    "names": [
+     "Element",
+     "Component",
+     "render",
+     "Element"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "diagnostics",
+  "path": "classes.ts",
+  "line": 1,
+  "character": 33,
+  "extra": "M1:quickfix-errors:Change spelling to 'MyComponent'"
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "classes.ts"
+  },
+  {
+   "kind": "change",
+   "path": "classes.ts",
+   "start": [
+    0,
+    0
+   ],
+   "end": [
+    1,
+    0
+   ]
+  },
+  {
+   "kind": "change",
+   "path": "classes.ts",
+   "start": [
+    1,
+    33
+   ],
+   "end": [
+    1,
+    33
+   ],
+   "text": "My"
+  }
+ ],
+ "case": {
+  "action_kind": "quickfix",
+  "base_errors": 1,
+  "check": "errors",
+  "diag": {
+   "code": 2552,
+   "message": "Cannot find name 'Component'. Did you mean 'MyComponent'?",
+   "range": {
+    "end": {
+     "character": 42,
+     "line": 1
+    },
+    "start": {
+     "character": 33,
+     "line": 1
+    }
+   },
+   "severity": 1
+  },
+  "fix_introduced_errors": [
+   {
+    "code": 2506,
+    "message": "'MyComponent' is referenced directly or indirectly in its own base expression.",
+    "path": "classes.ts",
+    "range": {
+     "end": {
+      "character": 24,
+      "line": 1
+     },
+     "start": {
+      "character": 13,
+      "line": 1
+     }
+    },
+    "severity": 1
+   }
+  ],
+  "fix_ops": [
+   {
+    "end": [
+     1,
+     33
+    ],
+    "kind": "change",
+    "path": "classes.ts",
+    "start": [
+     1,
+     33
+    ],
+    "text": "My"
+   }
+  ],
+  "kind": "mutation",
+  "mutation": {
+   "end": [
+    1,
+    0
+   ],
+   "id": "M1",
+   "offsets": [
+    0,
+    40
+   ],
+   "sha": "1d16da7fb52bfeaf",
+   "start": [
+    0,
+    0
+   ],
+   "text": "",
+   "what": "remove the import of 'Component'"
+  },
+  "n_fix_ops": 1,
+  "path": "classes.ts",
+  "post_errors": 2,
+  "title": "Change spelling to 'MyComponent'",
+  "via": "command"
+ },
+ "shape": "diagnostics:extra:2506",
+ "signature": "tsserver|r4_edits|diagnostics:extra:2506",
+ "expected": [
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7008",
+   "typescript",
+   "Member 'render' implicitly has an 'any' type."
+  ]
+ ],
+ "actual": [
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "2506",
+   "typescript",
+   "'MyComponent' is referenced directly or indirectly in its own base expression."
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "7008",
+   "typescript",
+   "Member 'render' implicitly has an 'any' type."
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "quick fix \"Change spelling to 'MyComponent'\" for 2552 at classes.ts:2:34 raises the error count in the edited files from 1 to 2 (seeded by M1: remove the import of 'Component'; errors before the mutation 1, after the fix 2); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 46s",
+ "violation": {
+  "oracle": "r4_edits",
+  "server": "tsserver-5.0.4+tsls3.3.2",
+  "project": "tsserver-52792",
+  "key": {
+   "method": "diagnostics",
+   "path": "classes.ts",
+   "line": 1,
+   "character": 33,
+   "extra": "M1:quickfix-errors:Change spelling to 'MyComponent'"
+  },
+  "expected": [
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7008",
+    "typescript",
+    "Member 'render' implicitly has an 'any' type."
+   ]
+  ],
+  "actual": [
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2506",
+    "typescript",
+    "'MyComponent' is referenced directly or indirectly in its own base expression."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7008",
+    "typescript",
+    "Member 'render' implicitly has an 'any' type."
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "classes.ts"
+   },
+   {
+    "kind": "change",
+    "path": "classes.ts",
+    "start": [
+     0,
+     0
+    ],
+    "end": [
+     1,
+     0
+    ]
+   },
+   {
+    "kind": "change",
+    "path": "classes.ts",
+    "start": [
+     1,
+     33
+    ],
+    "end": [
+     1,
+     33
+    ],
+    "text": "My"
+   }
+  ],
+  "detail": "{\"case\": {\"action_kind\": \"quickfix\", \"base_errors\": 1, \"check\": \"errors\", \"diag\": {\"code\": 2552, \"message\": \"Cannot find name 'Component'. Did you mean 'MyComponent'?\", \"range\": {\"end\": {\"character\": 42, \"line\": 1}, \"start\": {\"character\": 33, \"line\": 1}}, \"severity\": 1}, \"fix_introduced_errors\": [{\"code\": 2506, \"message\": \"'MyComponent' is referenced directly or indirectly in its own base expression.\", \"path\": \"classes.ts\", \"range\": {\"end\": {\"character\": 24, \"line\": 1}, \"start\": {\"character\": 13, \"line\": 1}}, \"severity\": 1}], \"fix_ops\": [{\"end\": [1, 33], \"kind\": \"change\", \"path\": \"classes.ts\", \"start\": [1, 33], \"text\": \"My\"}], \"kind\": \"mutation\", \"mutation\": {\"end\": [1, 0], \"id\": \"M1\", \"offsets\": [0, 40], \"sha\": \"1d16da7fb52bfeaf\", \"start\": [0, 0], \"text\": \"\", \"what\": \"remove the import of 'Component'\"}, \"n_fix_ops\": 1, \"path\": \"classes.ts\", \"post_errors\": 2, \"title\": \"Change spelling to 'MyComponent'\", \"via\": \"command\"}, \"note\": \"quick fix \\\"Change spelling to 'MyComponent'\\\" for 2552 at classes.ts:2:34 raises the error count in the edited files from 1 to 2 (seeded by M1: remove the import of 'Component'; errors before the mutation 1, after the fix 2); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 46s\", \"shape\": \"diagnostics:extra:2506\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "tsserver|r4_edits|diagnostics:extra:2506",
+  "run_id": "999e049f9b61"
+ },
+ "replay_logs": [
+  "logs/tsserver-5.0.4+tsls3.3.2-999e049f9b61-r4-replay-baseline-20260925-090754-06b375.jsonl.gz",
+  "logs/tsserver-5.0.4+tsls3.3.2-999e049f9b61-r4-replay-case-20260925-090745-5eda9b.jsonl.gz",
+  "logs/tsserver-5.0.4+tsls3.3.2-999e049f9b61-r4-replay-control-20260925-090757-0d6602.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

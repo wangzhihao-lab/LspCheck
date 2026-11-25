@@ -1,0 +1,310 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "33f1bc8d2cec-v03",
+ "run_id": "33f1bc8d2cec",
+ "oracle": "r6_crossimpl",
+ "server": {
+  "kind": "ts7",
+  "version": "7.0.2"
+ },
+ "project": {
+  "name": "react-hook-form/react-hook-form@5fd9ef65290b",
+  "source": "corpus",
+  "ref": "temp/corpus/react-hook-form__react-hook-form@5fd9ef65290b",
+  "commit": "5fd9ef65290bef2ccaa7ac96dc8d5d55478b5410",
+  "language": "typescript"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "app/src/main.tsx",
+    "positions": [],
+    "ends": [],
+    "names": []
+   },
+   {
+    "path": "examples/V7/validationOnFieldBlur.tsx",
+    "positions": [],
+    "ends": [],
+    "names": []
+   },
+   {
+    "path": "src/logic/skipValidation.ts",
+    "positions": [],
+    "ends": [],
+    "names": []
+   }
+  ]
+ },
+ "key": {
+  "method": "diagnostics",
+  "path": "examples/V7/validationOnFieldBlur.tsx",
+  "line": -1,
+  "character": -1,
+  "extra": ""
+ },
+ "ops": [],
+ "case": {
+  "intended": [],
+  "intended_source": "4519ec0a93607319a96f4feb967aa06a251ccc816544e2fed5c985c1d45dc11a",
+  "method": "diagnostics",
+  "only_reference": [
+   "[0, 0, 0, 26, 0, \"6133\", \"\", \"\"]",
+   "[1, 0, 1, 33, 0, \"6133\", \"\", \"\"]"
+  ],
+  "only_test": [
+   "[0, 7, 0, 12, 0, \"6133\", \"\", \"\"]",
+   "[1, 7, 1, 15, 0, \"6133\", \"\", \"\"]"
+  ],
+  "reference": {
+   "kind": "ts6",
+   "version": "6.0.3"
+  }
+ },
+ "shape": "diagnostics:moved:6133",
+ "signature": "ts7|r6_crossimpl|diagnostics:moved:6133",
+ "expected": [
+  [
+   0,
+   0,
+   0,
+   26,
+   0,
+   "6133",
+   "",
+   ""
+  ],
+  [
+   1,
+   0,
+   1,
+   33,
+   0,
+   "6133",
+   "",
+   ""
+  ],
+  [
+   12,
+   20,
+   12,
+   24,
+   0,
+   "7006",
+   "",
+   ""
+  ],
+  [
+   2,
+   24,
+   2,
+   41,
+   0,
+   "2307",
+   "",
+   ""
+  ],
+  [
+   38,
+   33,
+   38,
+   44,
+   0,
+   "2322",
+   "",
+   ""
+  ]
+ ],
+ "actual": [
+  [
+   0,
+   7,
+   0,
+   12,
+   0,
+   "6133",
+   "",
+   ""
+  ],
+  [
+   1,
+   7,
+   1,
+   15,
+   0,
+   "6133",
+   "",
+   ""
+  ],
+  [
+   12,
+   20,
+   12,
+   24,
+   0,
+   "7006",
+   "",
+   ""
+  ],
+  [
+   2,
+   24,
+   2,
+   41,
+   0,
+   "2307",
+   "",
+   ""
+  ],
+  [
+   38,
+   33,
+   38,
+   44,
+   0,
+   "2322",
+   "",
+   ""
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "ts7-7.0.2 and ts6-6.0.3 differ on diagnostics at examples/V7/validationOnFieldBlur.tsx:0:0; no documented intended difference matches; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 236s",
+ "violation": {
+  "oracle": "r6_crossimpl",
+  "server": "ts7-7.0.2",
+  "project": "react-hook-form/react-hook-form@5fd9ef65290b",
+  "key": {
+   "method": "diagnostics",
+   "path": "examples/V7/validationOnFieldBlur.tsx",
+   "line": -1,
+   "character": -1,
+   "extra": ""
+  },
+  "expected": [
+   [
+    0,
+    0,
+    0,
+    26,
+    0,
+    "6133",
+    "",
+    ""
+   ],
+   [
+    1,
+    0,
+    1,
+    33,
+    0,
+    "6133",
+    "",
+    ""
+   ],
+   [
+    12,
+    20,
+    12,
+    24,
+    0,
+    "7006",
+    "",
+    ""
+   ],
+   [
+    2,
+    24,
+    2,
+    41,
+    0,
+    "2307",
+    "",
+    ""
+   ],
+   [
+    38,
+    33,
+    38,
+    44,
+    0,
+    "2322",
+    "",
+    ""
+   ]
+  ],
+  "actual": [
+   [
+    0,
+    7,
+    0,
+    12,
+    0,
+    "6133",
+    "",
+    ""
+   ],
+   [
+    1,
+    7,
+    1,
+    15,
+    0,
+    "6133",
+    "",
+    ""
+   ],
+   [
+    12,
+    20,
+    12,
+    24,
+    0,
+    "7006",
+    "",
+    ""
+   ],
+   [
+    2,
+    24,
+    2,
+    41,
+    0,
+    "2307",
+    "",
+    ""
+   ],
+   [
+    38,
+    33,
+    38,
+    44,
+    0,
+    "2322",
+    "",
+    ""
+   ]
+  ],
+  "ops": [],
+  "detail": "{\"case\": {\"intended\": [], \"intended_source\": \"4519ec0a93607319a96f4feb967aa06a251ccc816544e2fed5c985c1d45dc11a\", \"method\": \"diagnostics\", \"only_reference\": [\"[0, 0, 0, 26, 0, \\\"6133\\\", \\\"\\\", \\\"\\\"]\", \"[1, 0, 1, 33, 0, \\\"6133\\\", \\\"\\\", \\\"\\\"]\"], \"only_test\": [\"[0, 7, 0, 12, 0, \\\"6133\\\", \\\"\\\", \\\"\\\"]\", \"[1, 7, 1, 15, 0, \\\"6133\\\", \\\"\\\", \\\"\\\"]\"], \"reference\": {\"kind\": \"ts6\", \"version\": \"6.0.3\"}}, \"note\": \"ts7-7.0.2 and ts6-6.0.3 differ on diagnostics at examples/V7/validationOnFieldBlur.tsx:0:0; no documented intended difference matches; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 236s\", \"shape\": \"diagnostics:moved:6133\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "ts7|r6_crossimpl|diagnostics:moved:6133",
+  "run_id": "33f1bc8d2cec"
+ },
+ "replay_logs": [
+  "logs/ts6-6.0.3-tr5e7a2f-ref-r6-replay-ref-baseline-20260925-170917-a18bd4.jsonl.gz",
+  "logs/ts6-6.0.3-tr5e7a2f-ref-r6-replay-ref-control-20260925-170932-a0c065.jsonl.gz",
+  "logs/ts7-7.0.2-tr5e7a2f-r6-replay-test-baseline-20260925-170841-bfdcb8.jsonl.gz",
+  "logs/ts7-7.0.2-tr5e7a2f-r6-replay-test-control-20260925-170855-f473c0.jsonl.gz"
+ ],
+ "project_files": {},
+ "group": "ts7-r6-diagnostics-moved-6133-diagnostics-5e7a2f",
+ "reduced": true
+}

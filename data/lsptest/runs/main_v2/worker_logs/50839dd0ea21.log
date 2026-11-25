@@ -1,0 +1,6 @@
+2026-11-18 03:36:20,860 INFO campaign_run run 50839dd0ea21: r4_edits on gopls v0.23.0, go-gorm/gorm@b3d3bf219f02 seed 1 settled, targets ['clause/joins.go', 'migrator/column_type.go', 'tests/hooks_test.go']
+2026-11-18 03:37:08,294 INFO campaign_run run 50839dd0ea21: 5 candidate(s) in 48s; confirming
+2026-11-18 03:37:30,834 INFO flake replay 1/3 of gopls|r4_edits|completionInsert:gained: settled=True control_stable=True reproduced=True (22.5s)
+2026-11-18 03:37:53,098 INFO flake replay 2/3 of gopls|r4_edits|completionInsert:gained: settled=True control_stable=True reproduced=True (22.3s)
+2026-11-18 03:38:15,332 INFO flake replay 3/3 of gopls|r4_edits|completionInsert:gained: settled=True control_stable=False reproduced=True (22.2s)
+2026-11-18 03:38:15,335 INFO campaign_run run 50839dd0ea21 finished: ok, 0 confirmed of 5 candidate(s), 115s

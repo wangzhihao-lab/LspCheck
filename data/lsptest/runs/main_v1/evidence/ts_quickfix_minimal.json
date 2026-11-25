@@ -1,0 +1,32 @@
+{
+ "source": "interface StoreInformation { name: string }\ninterface Options { name: string; stores: Record<string, StoreInformation> }\nconst options: Options = { name: \"x\" }\nexport { options }\n",
+ "rows": [
+  {
+   "kind": "ts6",
+   "version": "6.0.3",
+   "diagnostics_before": [
+    "TS2741: Property 'stores' is missing in type '{ name: string; }' but required in type 'Options'."
+   ],
+   "quick_fixes": [
+    "Add missing properties"
+   ],
+   "inserted": [
+    "{\n    name: \"x\",\n    stores: undefined\n}"
+   ],
+   "fixed_source": "interface StoreInformation { name: string }\ninterface Options { name: string; stores: Record<string, StoreInformation> }\nconst options: Options = {\n    name: \"x\",\n    stores: undefined\n}\nexport { options }\n",
+   "tsc_after_fix": [
+    "min.ts(5,5): error TS2322: Type 'undefined' is not assignable to type 'Record<string, StoreInformation>'."
+   ],
+   "inserts_undefined": true
+  },
+  {
+   "kind": "ts7",
+   "version": "7.0.2",
+   "diagnostics_before": [
+    "TS2741: Property 'stores' is missing in type '{ name: string; }' but required in type 'Options'."
+   ],
+   "quick_fixes": [],
+   "error": "no quick fix titled 'Add missing properties'"
+  }
+ ]
+}

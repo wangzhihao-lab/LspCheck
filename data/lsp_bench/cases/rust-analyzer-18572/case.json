@@ -1,0 +1,87 @@
+{
+ "schema": 1,
+ "id": "rust-analyzer-18572",
+ "meta": {
+  "server": "rust-analyzer",
+  "kind": "rust-analyzer",
+  "number": 18572,
+  "url": "https://github.com/rust-lang/rust-analyzer/issues/18572",
+  "title": "Ref completions break when the prefix is a keyword (e.g. `mod`)",
+  "oracle_class": "R4",
+  "subtype": "completion",
+  "fix_ref": "rust-lang/rust-analyzer#21999 (fix: Fix ref_match position when keyword prefix)",
+  "fix_shas": [
+   "8b961289a272e1d51dfe5fd9e51adf4852020934"
+  ],
+  "pre_version": "2026-04-13",
+  "post_version": "2026-04-20",
+  "pre_build": "2026-04-13",
+  "post_build": "2026-04-20",
+  "build_notes": "GitHub release assets rust-analyzer-aarch64-apple-darwin.gz of the weekly tags 2026-04-13 and 2026-04-20; git tag --contains puts the fix first in 2026-04-20. The sysroot is the local rustup toolchain (rustc 1.98.1).",
+  "effort_minutes": 8,
+  "notes": "For a reference-match completion ('&mut mod_info') the position of the inserted '&mut ' was computed from an adjusted syntax tree; when the typed prefix is a keyword (mod) the ref text was inserted inside the prefix, giving 'mod&mmod_info'. Reported 2024-11 (0.3.2196), fixed 2026-04.",
+  "candidate_rank": 29
+ },
+ "language": "rust",
+ "settings": {},
+ "settings_note": "The issue names no settings; the session keeps checkOnSave off (native analysis only).",
+ "session": {
+  "settle_timeout_s": 240,
+  "request_timeout_s": 60,
+  "pull_diagnostics": false
+ },
+ "files": [
+  {
+   "path": "src/main.rs",
+   "provenance": "issue",
+   "source": "issue body, code block",
+   "note": ""
+  },
+  {
+   "path": "Cargo.toml",
+   "provenance": "scaffold",
+   "source": "",
+   "note": "a binary crate around the snippet (package name, version, edition 2021)"
+  }
+ ],
+ "repro": {
+  "attempt": 1,
+  "timing": "settled",
+  "steps": "Open src/main.rs. Type 'mod' inside the empty argument list of reader.read_to_string() (line 6, character 30), request completion at the end of 'mod' and accept the '&mut mod_info' item. Reported: 'mod&mmod_info'. Probe: the edited text must have no parse error that the text before the completion did not have.",
+  "ops": [
+   {
+    "kind": "open",
+    "path": "src/main.rs"
+   },
+   {
+    "kind": "change",
+    "path": "src/main.rs",
+    "start": [
+     6,
+     30
+    ],
+    "end": [
+     6,
+     30
+    ],
+    "text": "mod"
+   }
+  ],
+  "probe": {
+   "type": "edit_breaks_syntax",
+   "params": {
+    "edit": {
+     "via": "completion",
+     "path": "src/main.rs",
+     "position": [
+      6,
+      33
+     ],
+     "label_re": "&mut mod_info",
+     "missing": "invalid"
+    }
+   }
+  }
+ },
+ "attempts": []
+}

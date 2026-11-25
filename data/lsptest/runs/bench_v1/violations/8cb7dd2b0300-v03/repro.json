@@ -1,0 +1,700 @@
+{
+ "format": 1,
+ "campaign": "bench_v1",
+ "vid": "8cb7dd2b0300-v03",
+ "run_id": "8cb7dd2b0300",
+ "oracle": "r1_history",
+ "server": {
+  "kind": "rust-analyzer",
+  "version": "2026-04-13"
+ },
+ "project": {
+  "name": "rust-analyzer-18572",
+  "source": "dir",
+  "ref": "data/lsp_bench/cases/rust-analyzer-18572/project",
+  "commit": "",
+  "language": "rust"
+ },
+ "context": {
+  "seed": 3,
+  "timing": "settled",
+  "settle_timeout_s": 240.0,
+  "request_timeout_s": 60.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "src/main.rs",
+    "positions": [
+     [
+      0,
+      5
+     ],
+     [
+      0,
+      11
+     ],
+     [
+      0,
+      16
+     ],
+     [
+      0,
+      21
+     ],
+     [
+      0,
+      29
+     ],
+     [
+      0,
+      38
+     ],
+     [
+      2,
+      5
+     ],
+     [
+      3,
+      12
+     ],
+     [
+      3,
+      16
+     ],
+     [
+      3,
+      24
+     ],
+     [
+      3,
+      30
+     ],
+     [
+      4,
+      19
+     ],
+     [
+      4,
+      29
+     ],
+     [
+      4,
+      37
+     ],
+     [
+      4,
+      42
+     ],
+     [
+      5,
+      20
+     ],
+     [
+      5,
+      30
+     ],
+     [
+      5,
+      36
+     ],
+     [
+      6,
+      11
+     ],
+     [
+      6,
+      22
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      7
+     ],
+     [
+      0,
+      12
+     ],
+     [
+      0,
+      18
+     ],
+     [
+      0,
+      22
+     ],
+     [
+      0,
+      34
+     ],
+     [
+      0,
+      40
+     ],
+     [
+      2,
+      7
+     ],
+     [
+      3,
+      13
+     ],
+     [
+      3,
+      18
+     ],
+     [
+      3,
+      26
+     ],
+     [
+      3,
+      32
+     ],
+     [
+      4,
+      22
+     ],
+     [
+      4,
+      34
+     ],
+     [
+      4,
+      39
+     ],
+     [
+      4,
+      44
+     ],
+     [
+      5,
+      24
+     ],
+     [
+      5,
+      33
+     ],
+     [
+      5,
+      38
+     ],
+     [
+      6,
+      14
+     ],
+     [
+      6,
+      29
+     ]
+    ],
+    "names": [
+     "std",
+     "fs",
+     "File",
+     "io",
+     "BufReader",
+     "Read",
+     "main",
+     "Ok",
+     "file",
+     "File",
+     "open",
+     "reader",
+     "BufReader",
+     "new",
+     "file",
+     "mod_info",
+     "String",
+     "new",
+     "reader",
+     "read_to_string"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "completion",
+  "path": "src/main.rs",
+  "line": 0,
+  "character": 7,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "src/main.rs"
+  },
+  {
+   "kind": "fs_write",
+   "path": "Cargo.toml",
+   "text": "[package]\nname = \"issue18572\"\nversion = \"0.1.0\"\n"
+  },
+  {
+   "kind": "change",
+   "path": "src/main.rs",
+   "start": [
+    7,
+    0
+   ],
+   "end": [
+    7,
+    0
+   ],
+   "text": "\t"
+  },
+  {
+   "kind": "change",
+   "path": "src/main.rs",
+   "start": [
+    7,
+    0
+   ],
+   "end": [
+    7,
+    1
+   ]
+  },
+  {
+   "kind": "fs_write",
+   "path": "Cargo.toml",
+   "text": "[package]\nname = \"issue18572\"\nversion = \"0.1.0\"\nedition = \"2021\"\n"
+  },
+  {
+   "kind": "fs_write",
+   "path": "Cargo.toml",
+   "text": "[package]\nname = \"issue18572\"\nversion = \"0.1.0\"\n"
+  },
+  {
+   "kind": "fs_write",
+   "path": "Cargo.toml",
+   "text": "[package]\nname = \"issue18572\"\nversion = \"0.1.0\"\nedition = \"2021\"\n"
+  },
+  {
+   "kind": "change",
+   "path": "src/main.rs",
+   "start": [
+    3,
+    0
+   ],
+   "end": [
+    4,
+    0
+   ]
+  },
+  {
+   "kind": "save",
+   "path": "src/main.rs"
+  },
+  {
+   "kind": "change",
+   "path": "src/main.rs",
+   "start": [
+    3,
+    0
+   ],
+   "end": [
+    3,
+    0
+   ],
+   "text": "    if let Ok(file) = File::open(\"bug.txt\") {\n"
+  },
+  {
+   "kind": "save",
+   "path": "src/main.rs"
+  },
+  {
+   "kind": "request",
+   "path": "src/main.rs",
+   "start": [
+    0,
+    38
+   ],
+   "text": "signatureHelp"
+  },
+  {
+   "kind": "request",
+   "path": "src/main.rs",
+   "start": [
+    5,
+    33
+   ],
+   "text": "completion"
+  },
+  {
+   "kind": "request",
+   "path": "src/main.rs",
+   "start": [
+    4,
+    44
+   ],
+   "text": "definition"
+  },
+  {
+   "kind": "request",
+   "path": "src/main.rs",
+   "start": [
+    0,
+    22
+   ],
+   "text": "references"
+  },
+  {
+   "kind": "request",
+   "path": "src/main.rs",
+   "start": [
+    0,
+    5
+   ],
+   "text": "typeDefinition"
+  },
+  {
+   "kind": "request",
+   "path": "src/main.rs",
+   "start": [
+    0,
+    16
+   ],
+   "text": "typeDefinition"
+  },
+  {
+   "kind": "request",
+   "path": "src/main.rs",
+   "start": [
+    4,
+    29
+   ],
+   "text": "signatureHelp"
+  },
+  {
+   "kind": "fs_write",
+   "path": "Cargo.toml",
+   "text": "[package]\nversion = \"0.1.0\"\nedition = \"2021\"\n"
+  },
+  {
+   "kind": "change",
+   "path": "src/main.rs",
+   "start": [
+    0,
+    0
+   ],
+   "end": [
+    1,
+    0
+   ]
+  },
+  {
+   "kind": "fs_write",
+   "path": "Cargo.toml",
+   "text": "[package]\nname = \"issue18572\"\nversion = \"0.1.0\"\nedition = \"2021\"\n"
+  },
+  {
+   "kind": "request",
+   "path": "src/main.rs",
+   "start": [
+    4,
+    24
+   ],
+   "text": "definition"
+  },
+  {
+   "kind": "request",
+   "path": "src/main.rs",
+   "start": [
+    3,
+    34
+   ],
+   "text": "completion"
+  },
+  {
+   "kind": "change",
+   "path": "src/main.rs",
+   "start": [
+    0,
+    0
+   ],
+   "end": [
+    0,
+    0
+   ],
+   "text": "use std::{fs::File, io::{BufReader, Read}};\n"
+  },
+  {
+   "kind": "fs_rename",
+   "path": "src/main.rs",
+   "new_path": "src/main_rt.rs"
+  },
+  {
+   "kind": "fs_rename",
+   "path": "src/main_rt.rs",
+   "new_path": "src/main.rs"
+  }
+ ],
+ "case": {
+  "chain_step": 6,
+  "families": [
+   "H9",
+   "H6",
+   "H2",
+   "H8",
+   "H7",
+   "H5"
+  ],
+  "family": "H5",
+  "history_index": 5,
+  "history_seed": 3006,
+  "mode": "chain",
+  "note": "rename src/main.rs -> src/main_rt.rs -> back",
+  "seed": 3,
+  "timing": "settled"
+ },
+ "shape": "completion:lost",
+ "signature": "rust-analyzer|r1_history|completion:lost",
+ "expected": [
+  "core",
+  "crate::",
+  "self::",
+  "std"
+ ],
+ "actual": [],
+ "reproduced": "0/3",
+ "note": "H5: rename src/main.rs -> src/main_rt.rs -> back; flake 0/3 [r1:SCr r2:SCr r3:SCr] in 342s",
+ "violation": {
+  "oracle": "r1_history",
+  "server": "rust-analyzer-2026-04-13",
+  "project": "rust-analyzer-18572",
+  "key": {
+   "method": "completion",
+   "path": "src/main.rs",
+   "line": 0,
+   "character": 7,
+   "extra": ""
+  },
+  "expected": [
+   "core",
+   "crate::",
+   "self::",
+   "std"
+  ],
+  "actual": [],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "src/main.rs"
+   },
+   {
+    "kind": "fs_write",
+    "path": "Cargo.toml",
+    "text": "[package]\nname = \"issue18572\"\nversion = \"0.1.0\"\n"
+   },
+   {
+    "kind": "change",
+    "path": "src/main.rs",
+    "start": [
+     7,
+     0
+    ],
+    "end": [
+     7,
+     0
+    ],
+    "text": "\t"
+   },
+   {
+    "kind": "change",
+    "path": "src/main.rs",
+    "start": [
+     7,
+     0
+    ],
+    "end": [
+     7,
+     1
+    ]
+   },
+   {
+    "kind": "fs_write",
+    "path": "Cargo.toml",
+    "text": "[package]\nname = \"issue18572\"\nversion = \"0.1.0\"\nedition = \"2021\"\n"
+   },
+   {
+    "kind": "fs_write",
+    "path": "Cargo.toml",
+    "text": "[package]\nname = \"issue18572\"\nversion = \"0.1.0\"\n"
+   },
+   {
+    "kind": "fs_write",
+    "path": "Cargo.toml",
+    "text": "[package]\nname = \"issue18572\"\nversion = \"0.1.0\"\nedition = \"2021\"\n"
+   },
+   {
+    "kind": "change",
+    "path": "src/main.rs",
+    "start": [
+     3,
+     0
+    ],
+    "end": [
+     4,
+     0
+    ]
+   },
+   {
+    "kind": "save",
+    "path": "src/main.rs"
+   },
+   {
+    "kind": "change",
+    "path": "src/main.rs",
+    "start": [
+     3,
+     0
+    ],
+    "end": [
+     3,
+     0
+    ],
+    "text": "    if let Ok(file) = File::open(\"bug.txt\") {\n"
+   },
+   {
+    "kind": "save",
+    "path": "src/main.rs"
+   },
+   {
+    "kind": "request",
+    "path": "src/main.rs",
+    "start": [
+     0,
+     38
+    ],
+    "text": "signatureHelp"
+   },
+   {
+    "kind": "request",
+    "path": "src/main.rs",
+    "start": [
+     5,
+     33
+    ],
+    "text": "completion"
+   },
+   {
+    "kind": "request",
+    "path": "src/main.rs",
+    "start": [
+     4,
+     44
+    ],
+    "text": "definition"
+   },
+   {
+    "kind": "request",
+    "path": "src/main.rs",
+    "start": [
+     0,
+     22
+    ],
+    "text": "references"
+   },
+   {
+    "kind": "request",
+    "path": "src/main.rs",
+    "start": [
+     0,
+     5
+    ],
+    "text": "typeDefinition"
+   },
+   {
+    "kind": "request",
+    "path": "src/main.rs",
+    "start": [
+     0,
+     16
+    ],
+    "text": "typeDefinition"
+   },
+   {
+    "kind": "request",
+    "path": "src/main.rs",
+    "start": [
+     4,
+     29
+    ],
+    "text": "signatureHelp"
+   },
+   {
+    "kind": "fs_write",
+    "path": "Cargo.toml",
+    "text": "[package]\nversion = \"0.1.0\"\nedition = \"2021\"\n"
+   },
+   {
+    "kind": "change",
+    "path": "src/main.rs",
+    "start": [
+     0,
+     0
+    ],
+    "end": [
+     1,
+     0
+    ]
+   },
+   {
+    "kind": "fs_write",
+    "path": "Cargo.toml",
+    "text": "[package]\nname = \"issue18572\"\nversion = \"0.1.0\"\nedition = \"2021\"\n"
+   },
+   {
+    "kind": "request",
+    "path": "src/main.rs",
+    "start": [
+     4,
+     24
+    ],
+    "text": "definition"
+   },
+   {
+    "kind": "request",
+    "path": "src/main.rs",
+    "start": [
+     3,
+     34
+    ],
+    "text": "completion"
+   },
+   {
+    "kind": "change",
+    "path": "src/main.rs",
+    "start": [
+     0,
+     0
+    ],
+    "end": [
+     0,
+     0
+    ],
+    "text": "use std::{fs::File, io::{BufReader, Read}};\n"
+   },
+   {
+    "kind": "fs_rename",
+    "path": "src/main.rs",
+    "new_path": "src/main_rt.rs"
+   },
+   {
+    "kind": "fs_rename",
+    "path": "src/main_rt.rs",
+    "new_path": "src/main.rs"
+   }
+  ],
+  "detail": "{\"case\": {\"chain_step\": 6, \"families\": [\"H9\", \"H6\", \"H2\", \"H8\", \"H7\", \"H5\"], \"family\": \"H5\", \"history_index\": 5, \"history_seed\": 3006, \"mode\": \"chain\", \"note\": \"rename src/main.rs -> src/main_rt.rs -> back\", \"seed\": 3, \"timing\": \"settled\"}, \"note\": \"H5: rename src/main.rs -> src/main_rt.rs -> back; flake 0/3 [r1:SCr r2:SCr r3:SCr] in 342s\", \"shape\": \"completion:lost\"}",
+  "reproduced": "0/3",
+  "reduced_ops": [],
+  "signature": "rust-analyzer|r1_history|completion:lost",
+  "run_id": "8cb7dd2b0300"
+ },
+ "replay_logs": [],
+ "project_files": {},
+ "incomplete": false
+}

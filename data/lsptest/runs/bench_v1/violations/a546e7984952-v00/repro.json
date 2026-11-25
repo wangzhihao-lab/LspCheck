@@ -1,0 +1,209 @@
+{
+ "format": 1,
+ "campaign": "bench_v1",
+ "vid": "a546e7984952-v00",
+ "run_id": "a546e7984952",
+ "oracle": "r3_routes",
+ "server": {
+  "kind": "rust-analyzer",
+  "version": "2025-12-15"
+ },
+ "project": {
+  "name": "rust-analyzer-21204",
+  "source": "dir",
+  "ref": "data/lsp_bench/cases/rust-analyzer-21204/project",
+  "commit": "",
+  "language": "rust"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 240.0,
+  "request_timeout_s": 60.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "src/foo.rs",
+    "positions": [
+     [
+      0,
+      10
+     ],
+     [
+      1,
+      7
+     ],
+     [
+      2,
+      9
+     ],
+     [
+      2,
+      14
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      12
+     ],
+     [
+      1,
+      11
+     ],
+     [
+      2,
+      11
+     ],
+     [
+      2,
+      16
+     ]
+    ],
+    "names": [
+     "Foo",
+     "Variant",
+     "bar",
+     "i32"
+    ]
+   },
+   {
+    "path": "src/main.rs",
+    "positions": [
+     [
+      0,
+      5
+     ],
+     [
+      2,
+      5
+     ],
+     [
+      3,
+      5
+     ],
+     [
+      3,
+      10
+     ],
+     [
+      3,
+      17
+     ],
+     [
+      3,
+      25
+     ],
+     [
+      3,
+      33
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      7
+     ],
+     [
+      2,
+      7
+     ],
+     [
+      3,
+      7
+     ],
+     [
+      3,
+      12
+     ],
+     [
+      3,
+      21
+     ],
+     [
+      3,
+      27
+     ],
+     [
+      3,
+      35
+     ]
+    ],
+    "names": [
+     "foo",
+     "main",
+     "foo",
+     "Foo",
+     "Variant",
+     "bar",
+     "baz"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "diagnostics",
+  "path": "src/main.rs",
+  "line": -1,
+  "character": -1,
+  "extra": "route:push"
+ },
+ "ops": [],
+ "case": {
+  "path": "src/main.rs",
+  "sub": "a",
+  "want_pull": false
+ },
+ "shape": "diagnostics:missing:E0559",
+ "signature": "rust-analyzer|r3_routes|diagnostics:missing:E0559",
+ "expected": [
+  [
+   3,
+   32,
+   3,
+   42,
+   1,
+   "E0559",
+   "rust-analyzer",
+   "no such field"
+  ]
+ ],
+ "actual": [],
+ "reproduced": "0/3",
+ "note": "pull vs push; flake 0/3 [r1:SCr r2:SCr r3:SCr] in 81s",
+ "violation": {
+  "oracle": "r3_routes",
+  "server": "rust-analyzer-2025-12-15",
+  "project": "rust-analyzer-21204",
+  "key": {
+   "method": "diagnostics",
+   "path": "src/main.rs",
+   "line": -1,
+   "character": -1,
+   "extra": "route:push"
+  },
+  "expected": [
+   [
+    3,
+    32,
+    3,
+    42,
+    1,
+    "E0559",
+    "rust-analyzer",
+    "no such field"
+   ]
+  ],
+  "actual": [],
+  "ops": [],
+  "detail": "{\"case\": {\"path\": \"src/main.rs\", \"sub\": \"a\", \"want_pull\": false}, \"note\": \"pull vs push; flake 0/3 [r1:SCr r2:SCr r3:SCr] in 81s\", \"shape\": \"diagnostics:missing:E0559\"}",
+  "reproduced": "0/3",
+  "reduced_ops": [],
+  "signature": "rust-analyzer|r3_routes|diagnostics:missing:E0559",
+  "run_id": "a546e7984952"
+ },
+ "replay_logs": [],
+ "project_files": {},
+ "incomplete": false
+}

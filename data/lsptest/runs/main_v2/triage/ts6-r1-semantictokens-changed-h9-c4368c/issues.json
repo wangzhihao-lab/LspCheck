@@ -1,0 +1,42 @@
+{
+ "queries": [
+  "\"semantic tokens\" wrong repo:typescript-language-server/typescript-language-server is:issue",
+  "\"semantic tokens\" stale repo:typescript-language-server/typescript-language-server is:issue",
+  "\"semantic tokens\" wrong repo:microsoft/TypeScript is:issue",
+  "\"semantic tokens\" stale repo:microsoft/TypeScript is:issue"
+ ],
+ "matches": [
+  {
+   "repo": "typescript-language-server/typescript-language-server",
+   "number": 753,
+   "title": "angle brackets are not being matched properly, causing keywords to be highlighted as a type",
+   "url": "https://github.com/typescript-language-server/typescript-language-server/issues/753",
+   "state": "closed",
+   "created": "2023-09-05",
+   "comments": 1,
+   "query": "\"semantic tokens\" wrong repo:typescript-language-server/typescript-language-server is:issue"
+  },
+  {
+   "repo": "typescript-language-server/typescript-language-server",
+   "number": 632,
+   "title": "Wrong or confusing Semantic Token Types reported",
+   "url": "https://github.com/typescript-language-server/typescript-language-server/issues/632",
+   "state": "closed",
+   "created": "2022-11-23",
+   "comments": 1,
+   "query": "\"semantic tokens\" wrong repo:typescript-language-server/typescript-language-server is:issue"
+  },
+  {
+   "repo": "microsoft/TypeScript",
+   "number": 57585,
+   "title": "TypeScript Language Server False Positive Error Reporting",
+   "url": "https://github.com/microsoft/TypeScript/issues/57585",
+   "state": "closed",
+   "created": "2024-02-28",
+   "comments": 25,
+   "query": "\"semantic tokens\" wrong repo:microsoft/TypeScript is:issue"
+  }
+ ],
+ "notes": [],
+ "authenticated": true
+}

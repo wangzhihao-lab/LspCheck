@@ -1,0 +1,12 @@
+2026-09-24 19:20:32,503 INFO campaign_run run 864711338949: r4_edits on gopls v0.18.1, gopls-73269 seed 1 settled, targets ['main.go']
+2026-09-24 19:21:40,152 INFO campaign_run run 864711338949: 3 candidate(s) in 68s; confirming
+2026-09-24 19:21:55,609 INFO flake replay 1/3 of gopls|r4_edits|diagnostics:extra:CannotInferTypeArgs: settled=True control_stable=True reproduced=True (15.5s)
+2026-09-24 19:22:11,063 INFO flake replay 2/3 of gopls|r4_edits|diagnostics:extra:CannotInferTypeArgs: settled=True control_stable=True reproduced=True (15.4s)
+2026-09-24 19:22:26,518 INFO flake replay 3/3 of gopls|r4_edits|diagnostics:extra:CannotInferTypeArgs: settled=True control_stable=True reproduced=True (15.5s)
+2026-09-24 19:22:40,860 INFO flake replay 1/3 of gopls|r4_edits|diagnostics:extra:UndeclaredName: settled=True control_stable=True reproduced=True (14.3s)
+2026-09-24 19:22:55,219 INFO flake replay 2/3 of gopls|r4_edits|diagnostics:extra:UndeclaredName: settled=True control_stable=True reproduced=True (14.4s)
+2026-09-24 19:23:09,533 INFO flake replay 3/3 of gopls|r4_edits|diagnostics:extra:UndeclaredName: settled=True control_stable=True reproduced=True (14.3s)
+2026-09-24 19:23:23,808 INFO flake replay 1/3 of gopls|r4_edits|diagnostics:extra:InvalidIterVar,UnusedVar: settled=True control_stable=True reproduced=True (14.3s)
+2026-09-24 19:23:38,114 INFO flake replay 2/3 of gopls|r4_edits|diagnostics:extra:InvalidIterVar,UnusedVar: settled=True control_stable=True reproduced=True (14.3s)
+2026-09-24 19:23:52,585 INFO flake replay 3/3 of gopls|r4_edits|diagnostics:extra:InvalidIterVar,UnusedVar: settled=True control_stable=True reproduced=True (14.5s)
+2026-09-24 19:23:52,591 INFO campaign_run run 864711338949 finished: ok, 3 confirmed of 3 candidate(s), 200s

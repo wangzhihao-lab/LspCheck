@@ -1,0 +1,9 @@
+2026-11-18 09:34:00,780 INFO campaign_run run 9e258e704f75: r1_history on pyright 1.1.414, ultralytics/yolov5@402e17ddf820 seed 1 race200, targets ['detect.py', 'utils/segment/dataloaders.py', 'utils/segment/general.py']
+2026-11-18 09:41:20,538 INFO campaign_run run 9e258e704f75: 4 candidate(s) in 440s; confirming
+2026-11-18 09:42:12,334 INFO flake replay 1/3 of pyright|r1_history|codeAction:result->error:timeout: settled=True control_stable=True reproduced=False (51.8s)
+2026-11-18 09:43:44,610 INFO flake replay 2/3 of pyright|r1_history|codeAction:result->error:timeout: settled=True control_stable=True reproduced=False (92.3s)
+2026-11-18 09:44:42,854 INFO flake replay 3/3 of pyright|r1_history|codeAction:result->error:timeout: settled=True control_stable=True reproduced=False (58.2s)
+2026-11-18 09:45:29,222 INFO flake replay 1/3 of pyright|r1_history|signatureHelp:result->error:timeout: settled=True control_stable=True reproduced=False (46.4s)
+2026-11-18 09:46:10,808 INFO flake replay 2/3 of pyright|r1_history|signatureHelp:result->error:timeout: settled=True control_stable=True reproduced=False (41.6s)
+2026-11-18 09:47:03,689 INFO flake replay 3/3 of pyright|r1_history|signatureHelp:result->error:timeout: settled=True control_stable=True reproduced=False (52.9s)
+2026-11-18 09:47:03,692 INFO campaign_run run 9e258e704f75 finished: ok, 0 confirmed of 4 candidate(s), 783s

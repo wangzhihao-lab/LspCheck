@@ -1,0 +1,3 @@
+2026-09-23 17:52:39,266 INFO campaign_run run cc23dd13463b: r3_routes on ts7 7.0.2, vercel/hyper@30ec0a2a91de seed 1 settled, targets ['app/utils/renderer-utils.ts', 'lib/index.tsx', 'lib/reducers/index.ts']
+2026-09-23 17:59:00,271 INFO campaign_run run cc23dd13463b: 9 candidate(s) in 381s; confirming
+2026-09-23 17:59:00,273 INFO campaign_run run cc23dd13463b finished: ok, 0 confirmed of 9 candidate(s), 381s

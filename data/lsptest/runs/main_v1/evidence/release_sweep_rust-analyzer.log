@@ -1,0 +1,46 @@
+2026-09-28 06:06:48,654 INFO release_sweep 21 job(s) for rust-analyzer
+2026-09-28 06:06:48,654 INFO release_sweep newest-2026-09-28: rust-analyzer-r2-completionresolve-changed-completion-3170a1 on rust-analyzer 2026-09-28
+2026-09-28 06:08:48,725 INFO release_sweep   -> reproduced (3/3, 120s) 
+2026-09-28 06:08:48,725 INFO release_sweep newest-2026-09-28: rust-analyzer-r3-definitionconsistency-extra-d-4cbc9e on rust-analyzer 2026-09-28
+2026-09-28 06:13:54,784 INFO release_sweep   -> reproduced (3/3, 306s) 
+2026-09-28 06:13:54,785 INFO release_sweep newest-2026-09-28: rust-analyzer-r3-definitionconsistency-missing-d-586fd8 on rust-analyzer 2026-09-28
+2026-09-28 06:18:59,742 INFO release_sweep   -> reproduced (3/3, 305s) 
+2026-09-28 06:18:59,743 INFO release_sweep lifecycle: rust-analyzer-r2-completionresolve-changed-completion-3170a1 on rust-analyzer 2024-10-07
+2026-09-28 06:22:55,670 INFO release_sweep   -> unsettled (0/3, 236s) 
+2026-09-28 06:22:55,670 INFO release_sweep lifecycle: rust-analyzer-r3-definitionconsistency-extra-d-4cbc9e on rust-analyzer 2024-10-07
+2026-09-28 06:28:38,021 INFO release_sweep   -> not-reproduced (0/3, 342s) 
+2026-09-28 06:28:38,021 INFO release_sweep lifecycle: rust-analyzer-r2-completionresolve-changed-completion-3170a1 on rust-analyzer 2025-01-06
+2026-09-28 06:43:59,558 INFO release_sweep   -> unsettled (0/3, 922s) 
+2026-09-28 06:43:59,558 INFO release_sweep lifecycle: rust-analyzer-r3-definitionconsistency-extra-d-4cbc9e on rust-analyzer 2025-01-06
+2026-09-28 07:35:45,138 INFO release_sweep   -> unsettled (0/3, 1843s) 
+2026-09-28 07:35:45,138 INFO release_sweep lifecycle: rust-analyzer-r2-completionresolve-changed-completion-3170a1 on rust-analyzer 2025-04-07
+2026-09-28 16:16:20,201 INFO release_sweep 21 job(s) for rust-analyzer
+2026-09-28 16:16:20,202 INFO release_sweep lifecycle: rust-analyzer-r2-completionresolve-changed-completion-3170a1 on rust-analyzer 2025-04-07
+2026-09-28 16:18:15,865 INFO release_sweep   -> unsettled (0/3, 116s) 
+2026-09-28 16:18:15,865 INFO release_sweep lifecycle: rust-analyzer-r3-definitionconsistency-extra-d-4cbc9e on rust-analyzer 2025-04-07
+2026-09-28 16:21:29,609 INFO release_sweep   -> not-reproduced (0/3, 194s) 
+2026-09-28 16:21:29,609 INFO release_sweep lifecycle: rust-analyzer-r2-completionresolve-changed-completion-3170a1 on rust-analyzer 2025-10-27
+2026-09-28 16:21:46,585 INFO release_sweep   -> unsettled (0/3, 17s) 
+2026-09-28 16:21:46,585 INFO release_sweep lifecycle: rust-analyzer-r3-definitionconsistency-extra-d-4cbc9e on rust-analyzer 2025-10-27
+2026-09-28 16:22:44,626 INFO release_sweep   -> not-reproduced (0/3, 58s) 
+2026-09-28 16:22:44,626 INFO release_sweep lifecycle: rust-analyzer-r2-completionresolve-changed-completion-3170a1 on rust-analyzer 2026-01-05
+2026-09-28 16:23:02,293 INFO release_sweep   -> unsettled (0/3, 18s) 
+2026-09-28 16:23:02,294 INFO release_sweep lifecycle: rust-analyzer-r3-definitionconsistency-extra-d-4cbc9e on rust-analyzer 2026-01-05
+2026-09-28 16:23:56,086 INFO release_sweep   -> not-reproduced (0/3, 54s) 
+2026-09-28 16:23:56,086 INFO release_sweep lifecycle: rust-analyzer-r2-completionresolve-changed-completion-3170a1 on rust-analyzer 2026-04-06
+2026-09-28 16:25:49,938 INFO release_sweep   -> unsettled (0/3, 114s) 
+2026-09-28 16:25:49,939 INFO release_sweep lifecycle: rust-analyzer-r3-definitionconsistency-extra-d-4cbc9e on rust-analyzer 2026-04-06
+2026-09-28 16:29:53,689 INFO release_sweep   -> reproduced (3/3, 244s) 
+2026-09-28 16:29:53,689 INFO release_sweep lifecycle: rust-analyzer-r2-completionresolve-changed-completion-3170a1 on rust-analyzer 2026-07-06
+2026-09-28 16:32:01,213 INFO release_sweep   -> reproduced (3/3, 128s) 
+2026-09-28 16:32:01,213 INFO release_sweep lifecycle: rust-analyzer-r3-definitionconsistency-extra-d-4cbc9e on rust-analyzer 2026-07-06
+2026-09-28 16:36:09,717 INFO release_sweep   -> reproduced (3/3, 248s) 
+2026-09-28 16:36:09,717 INFO release_sweep lifecycle: rust-analyzer-r2-completionresolve-changed-completion-3170a1 on rust-analyzer 2026-09-21
+2026-09-28 16:38:16,621 INFO release_sweep   -> reproduced (3/3, 127s) 
+2026-09-28 16:38:16,621 INFO release_sweep lifecycle: rust-analyzer-r3-definitionconsistency-extra-d-4cbc9e on rust-analyzer 2026-09-21
+2026-09-28 16:42:19,699 INFO release_sweep   -> reproduced (3/3, 243s) 
+2026-09-28 16:42:19,700 INFO release_sweep lifecycle: rust-analyzer-r2-completionresolve-changed-completion-3170a1 on rust-analyzer 2026-09-28
+2026-09-28 16:44:06,785 INFO release_sweep   -> reproduced (3/3, 107s) 
+2026-09-28 16:44:06,785 INFO release_sweep lifecycle: rust-analyzer-r3-definitionconsistency-extra-d-4cbc9e on rust-analyzer 2026-09-28
+2026-09-28 16:47:37,432 INFO release_sweep   -> reproduced (3/3, 211s) 
+2026-09-28 16:47:37,432 INFO release_sweep all jobs of rust-analyzer done

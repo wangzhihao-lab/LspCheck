@@ -1,0 +1,239 @@
+{
+ "format": 1,
+ "campaign": "main_v2",
+ "vid": "0082cb0ebd81-v01",
+ "run_id": "0082cb0ebd81",
+ "oracle": "r4_edits",
+ "server": {
+  "kind": "rust-analyzer",
+  "version": "2026-09-21"
+ },
+ "project": {
+  "name": "cloudflare/pingora@4487f7b2ab50",
+  "source": "corpus",
+  "ref": "temp/corpus/cloudflare__pingora@4487f7b2ab50",
+  "commit": "4487f7b2ab50f159e4a2cf4f6a6b813f61bb6e19",
+  "language": "rust"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "pingora-cache/src/eviction/async_lru.rs",
+    "positions": [
+     [
+      147,
+      8
+     ]
+    ],
+    "ends": [],
+    "names": [
+     ""
+    ]
+   },
+   {
+    "path": "pingora-core/src/protocols/digest.rs",
+    "positions": [],
+    "ends": [],
+    "names": []
+   },
+   {
+    "path": "pingora-http/src/lib.rs",
+    "positions": [],
+    "ends": [],
+    "names": []
+   }
+  ]
+ },
+ "key": {
+  "method": "diagnostics",
+  "path": "pingora-cache/src/eviction/async_lru.rs",
+  "line": 147,
+  "character": 8,
+  "extra": "M2:quickfix-errors:Fill struct fields"
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "pingora-cache/src/eviction/async_lru.rs"
+  },
+  {
+   "kind": "change",
+   "path": "pingora-cache/src/eviction/async_lru.rs",
+   "start": [
+    148,
+    12
+   ],
+   "end": [
+    148,
+    24
+   ],
+   "text": "weightlimit"
+  },
+  {
+   "kind": "change",
+   "path": "pingora-cache/src/eviction/async_lru.rs",
+   "start": [
+    155,
+    8
+   ],
+   "end": [
+    155,
+    8
+   ],
+   "text": "    weight_limit,\n        "
+  }
+ ],
+ "case": {
+  "action_kind": "quickfix",
+  "base_errors": 0,
+  "check": "errors",
+  "diag": {
+   "code": "E0063",
+   "message": "missing structure fields:\n- weight_limit\n",
+   "range": {
+    "end": {
+     "character": 22,
+     "line": 147
+    },
+    "start": {
+     "character": 8,
+     "line": 147
+    }
+   },
+   "severity": 1
+  },
+  "fix_introduced_errors": [],
+  "fix_ops": [
+   {
+    "end": [
+     155,
+     8
+    ],
+    "kind": "change",
+    "path": "pingora-cache/src/eviction/async_lru.rs",
+    "start": [
+     155,
+     8
+    ],
+    "text": "    weight_limit,\n        "
+   }
+  ],
+  "kind": "mutation",
+  "mutation": {
+   "end": [
+    148,
+    24
+   ],
+   "id": "M2",
+   "offsets": [
+    5003,
+    5015
+   ],
+   "sha": "62f1fe771e23cd7f",
+   "start": [
+    148,
+    12
+   ],
+   "text": "weightlimit",
+   "what": "misspell 'weight_limit' as 'weightlimit' (drop a middle character)"
+  },
+  "n_fix_ops": 1,
+  "path": "pingora-cache/src/eviction/async_lru.rs",
+  "post_errors": 1,
+  "title": "Fill struct fields",
+  "via": "edit"
+ },
+ "shape": "diagnostics:extra:E0560",
+ "signature": "rust-analyzer|r4_edits|diagnostics:extra:E0560",
+ "expected": [],
+ "actual": [
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "E0560",
+   "rust-analyzer",
+   "no such field"
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "quick fix 'Fill struct fields' for E0063 at pingora-cache/src/eviction/async_lru.rs:148:9 raises the error count in the edited files from 0 to 1 (seeded by M2: misspell 'weight_limit' as 'weightlimit' (drop a middle character); errors before the mutation 0, after the fix 1); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR+retry] in 2985s",
+ "violation": {
+  "oracle": "r4_edits",
+  "server": "rust-analyzer-2026-09-21",
+  "project": "cloudflare/pingora@4487f7b2ab50",
+  "key": {
+   "method": "diagnostics",
+   "path": "pingora-cache/src/eviction/async_lru.rs",
+   "line": 147,
+   "character": 8,
+   "extra": "M2:quickfix-errors:Fill struct fields"
+  },
+  "expected": [],
+  "actual": [
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "E0560",
+    "rust-analyzer",
+    "no such field"
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "pingora-cache/src/eviction/async_lru.rs"
+   },
+   {
+    "kind": "change",
+    "path": "pingora-cache/src/eviction/async_lru.rs",
+    "start": [
+     148,
+     12
+    ],
+    "end": [
+     148,
+     24
+    ],
+    "text": "weightlimit"
+   },
+   {
+    "kind": "change",
+    "path": "pingora-cache/src/eviction/async_lru.rs",
+    "start": [
+     155,
+     8
+    ],
+    "end": [
+     155,
+     8
+    ],
+    "text": "    weight_limit,\n        "
+   }
+  ],
+  "detail": "{\"case\": {\"action_kind\": \"quickfix\", \"base_errors\": 0, \"check\": \"errors\", \"diag\": {\"code\": \"E0063\", \"message\": \"missing structure fields:\\n- weight_limit\\n\", \"range\": {\"end\": {\"character\": 22, \"line\": 147}, \"start\": {\"character\": 8, \"line\": 147}}, \"severity\": 1}, \"fix_introduced_errors\": [], \"fix_ops\": [{\"end\": [155, 8], \"kind\": \"change\", \"path\": \"pingora-cache/src/eviction/async_lru.rs\", \"start\": [155, 8], \"text\": \"    weight_limit,\\n        \"}], \"kind\": \"mutation\", \"mutation\": {\"end\": [148, 24], \"id\": \"M2\", \"offsets\": [5003, 5015], \"sha\": \"62f1fe771e23cd7f\", \"start\": [148, 12], \"text\": \"weightlimit\", \"what\": \"misspell 'weight_limit' as 'weightlimit' (drop a middle character)\"}, \"n_fix_ops\": 1, \"path\": \"pingora-cache/src/eviction/async_lru.rs\", \"post_errors\": 1, \"title\": \"Fill struct fields\", \"via\": \"edit\"}, \"note\": \"quick fix 'Fill struct fields' for E0063 at pingora-cache/src/eviction/async_lru.rs:148:9 raises the error count in the edited files from 0 to 1 (seeded by M2: misspell 'weight_limit' as 'weightlimit' (drop a middle character); errors before the mutation 0, after the fix 1); confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR+retry] in 2985s\", \"shape\": \"diagnostics:extra:E0560\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "rust-analyzer|r4_edits|diagnostics:extra:E0560",
+  "run_id": "0082cb0ebd81"
+ },
+ "replay_logs": [
+  "logs/rust-analyzer-2026-09-21-tr1f508d-r4-replay-baseline-20261119-002721-05d1ea.jsonl.gz",
+  "logs/rust-analyzer-2026-09-21-tr1f508d-r4-replay-case-20261119-002525-0f5e00.jsonl.gz",
+  "logs/rust-analyzer-2026-09-21-tr1f508d-r4-replay-control-20261119-002902-5a0608.jsonl.gz"
+ ],
+ "project_files": {},
+ "group": "rust-analyzer-r4-diagnostics-extra-e0560-mutation-m2-1f508d",
+ "reduced": true
+}

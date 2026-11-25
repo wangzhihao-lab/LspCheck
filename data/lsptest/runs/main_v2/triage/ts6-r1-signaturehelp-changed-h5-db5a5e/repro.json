@@ -1,0 +1,140 @@
+{
+ "format": 1,
+ "campaign": "main_v2",
+ "vid": "83d8f26e74ae-v00",
+ "run_id": "83d8f26e74ae",
+ "oracle": "r1_history",
+ "server": {
+  "kind": "ts6",
+  "version": "6.0.3"
+ },
+ "project": {
+  "name": "DayuanJiang/next-ai-draw-io@58b73ef761d8",
+  "source": "corpus",
+  "ref": "temp/corpus/DayuanJiang__next-ai-draw-io@58b73ef761d8",
+  "commit": "58b73ef761d8a5e5b2afa2c360428d3dea996312",
+  "language": "typescript"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "race200",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "app/api/validate-diagram/route.ts",
+    "positions": [],
+    "ends": [],
+    "names": []
+   },
+   {
+    "path": "lib/server-model-config.ts",
+    "positions": [
+     [
+      21,
+      13
+     ]
+    ],
+    "ends": [],
+    "names": [
+     ""
+    ]
+   },
+   {
+    "path": "lib/types/model-config.ts",
+    "positions": [],
+    "ends": [],
+    "names": []
+   }
+  ]
+ },
+ "key": {
+  "method": "signatureHelp",
+  "path": "lib/server-model-config.ts",
+  "line": 21,
+  "character": 13,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "lib/server-model-config.ts",
+   "delay_ms": 200
+  }
+ ],
+ "case": {
+  "chain_step": 0,
+  "families": [],
+  "family": "H5",
+  "history_index": 0,
+  "history_seed": 1001,
+  "mode": "fresh",
+  "note": "rename app/api/validate-diagram/route.ts -> app/api/validate-diagram/route_rt.ts -> back",
+  "seed": 1,
+  "timing": "race200"
+ },
+ "shape": "signatureHelp:changed",
+ "signature": "ts6|r1_history|signatureHelp:changed",
+ "expected": "object(shape?: { name: z.ZodString; provider: z.ZodType<ProviderName, unknown, z.core.$ZodTypeInternals<ProviderName, unknown>>; models: z.ZodArray<z.ZodString>; apiKeyEnv: z.ZodOptional<...>; baseUrlEnv: z.ZodOptional<...>; default: z.ZodOptional<...>; } | undefined, params?: string | { error?: string | z.core.$ZodErrorMap<NonNullable<z.core.$ZodIssueInvalidType<unknown> | z.core.$ZodIssueUnrecognizedKeys>> | undefined; message?: string | undefined | undefined; } | undefined): z.ZodObject<{ name: z.ZodString; provider: z.ZodType<ProviderName, unknown, z.core.$ZodTypeInternals<ProviderName, unknown>>; models: z.ZodArray<z.ZodString>; apiKeyEnv: z.ZodOptional<...>; baseUrlEnv: z.ZodOptional<...>; default: z.ZodOptional<...>; }, z.core.$strip>",
+ "actual": "object(shape?: { name: z.ZodString; provider: z.ZodType<ProviderName, unknown, z.core.$ZodTypeInternals<ProviderName, unknown>>; models: z.ZodArray<z.ZodString>; apiKeyEnv: z.ZodOptional<...>; baseUrlEnv: z.ZodOptional<...>; default: z.ZodOptional<...>; } | undefined, params?: string | { error?: string | z.core.$ZodErrorMap<NonNullable<z.core.$ZodIssueUnrecognizedKeys | z.core.$ZodIssueInvalidType<unknown>>> | undefined; message?: string | undefined | undefined; } | undefined): z.ZodObject<{ name: z.ZodString; provider: z.ZodType<ProviderName, unknown, z.core.$ZodTypeInternals<ProviderName, unknown>>; models: z.ZodArray<z.ZodString>; apiKeyEnv: z.ZodOptional<...>; baseUrlEnv: z.ZodOptional<...>; default: z.ZodOptional<...>; }, z.core.$strip>",
+ "reproduced": "3/3",
+ "note": "H5: rename app/api/validate-diagram/route.ts -> app/api/validate-diagram/route_rt.ts -> back; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 376s",
+ "violation": {
+  "oracle": "r1_history",
+  "server": "ts6-6.0.3",
+  "project": "DayuanJiang/next-ai-draw-io@58b73ef761d8",
+  "key": {
+   "method": "signatureHelp",
+   "path": "lib/server-model-config.ts",
+   "line": 21,
+   "character": 13,
+   "extra": ""
+  },
+  "expected": "object(shape?: { name: z.ZodString; provider: z.ZodType<ProviderName, unknown, z.core.$ZodTypeInternals<ProviderName, unknown>>; models: z.ZodArray<z.ZodString>; apiKeyEnv: z.ZodOptional<...>; baseUrlEnv: z.ZodOptional<...>; default: z.ZodOptional<...>; } | undefined, params?: string | { error?: string | z.core.$ZodErrorMap<NonNullable<z.core.$ZodIssueInvalidType<unknown> | z.core.$ZodIssueUnrecognizedKeys>> | undefined; message?: string | undefined | undefined; } | undefined): z.ZodObject<{ name: z.ZodString; provider: z.ZodType<ProviderName, unknown, z.core.$ZodTypeInternals<ProviderName, unknown>>; models: z.ZodArray<z.ZodString>; apiKeyEnv: z.ZodOptional<...>; baseUrlEnv: z.ZodOptional<...>; default: z.ZodOptional<...>; }, z.core.$strip>",
+  "actual": "object(shape?: { name: z.ZodString; provider: z.ZodType<ProviderName, unknown, z.core.$ZodTypeInternals<ProviderName, unknown>>; models: z.ZodArray<z.ZodString>; apiKeyEnv: z.ZodOptional<...>; baseUrlEnv: z.ZodOptional<...>; default: z.ZodOptional<...>; } | undefined, params?: string | { error?: string | z.core.$ZodErrorMap<NonNullable<z.core.$ZodIssueUnrecognizedKeys | z.core.$ZodIssueInvalidType<unknown>>> | undefined; message?: string | undefined | undefined; } | undefined): z.ZodObject<{ name: z.ZodString; provider: z.ZodType<ProviderName, unknown, z.core.$ZodTypeInternals<ProviderName, unknown>>; models: z.ZodArray<z.ZodString>; apiKeyEnv: z.ZodOptional<...>; baseUrlEnv: z.ZodOptional<...>; default: z.ZodOptional<...>; }, z.core.$strip>",
+  "ops": [
+   {
+    "kind": "open",
+    "path": "app/api/validate-diagram/route.ts",
+    "delay_ms": 200
+   },
+   {
+    "kind": "open",
+    "path": "lib/server-model-config.ts",
+    "delay_ms": 200
+   },
+   {
+    "kind": "open",
+    "path": "lib/types/model-config.ts",
+    "delay_ms": 200
+   },
+   {
+    "kind": "fs_rename",
+    "path": "app/api/validate-diagram/route.ts",
+    "new_path": "app/api/validate-diagram/route_rt.ts",
+    "delay_ms": 200
+   },
+   {
+    "kind": "fs_rename",
+    "path": "app/api/validate-diagram/route_rt.ts",
+    "new_path": "app/api/validate-diagram/route.ts",
+    "delay_ms": 200
+   }
+  ],
+  "detail": "{\"case\": {\"chain_step\": 0, \"families\": [], \"family\": \"H5\", \"history_index\": 0, \"history_seed\": 1001, \"mode\": \"fresh\", \"note\": \"rename app/api/validate-diagram/route.ts -> app/api/validate-diagram/route_rt.ts -> back\", \"seed\": 1, \"timing\": \"race200\"}, \"note\": \"H5: rename app/api/validate-diagram/route.ts -> app/api/validate-diagram/route_rt.ts -> back; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 376s\", \"shape\": \"signatureHelp:changed\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "ts6|r1_history|signatureHelp:changed",
+  "run_id": "83d8f26e74ae"
+ },
+ "replay_logs": [
+  "logs/ts6-6.0.3-trdb5a5e-replay-baseline-20261119-015220-9df85d.jsonl.gz",
+  "logs/ts6-6.0.3-trdb5a5e-replay-control-20261119-015220-9f4d61.jsonl.gz",
+  "logs/ts6-6.0.3-trdb5a5e-replay-history-20261119-015239-62c47a.jsonl.gz"
+ ],
+ "project_files": {},
+ "group": "ts6-r1-signaturehelp-changed-h5-db5a5e",
+ "reduced": true
+}

@@ -1,0 +1,480 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "2e5b5cb87f65-v00",
+ "run_id": "2e5b5cb87f65",
+ "oracle": "r3_routes",
+ "server": {
+  "kind": "ts6",
+  "version": "6.0.3"
+ },
+ "project": {
+  "name": "vercel/hyper@30ec0a2a91de",
+  "source": "corpus",
+  "ref": "temp/corpus/vercel__hyper@30ec0a2a91de",
+  "commit": "30ec0a2a91de17eeb32dd71998fe8a8ec59f98eb",
+  "language": "typescript"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "app/menus/menus/window.ts",
+    "positions": [
+     [
+      3,
+      7
+     ],
+     [
+      4,
+      19
+     ],
+     [
+      37,
+      17
+     ],
+     [
+      38,
+      22
+     ],
+     [
+      43,
+      14
+     ],
+     [
+      45,
+      22
+     ],
+     [
+      45,
+      32
+     ],
+     [
+      46,
+      44
+     ],
+     [
+      63,
+      17
+     ],
+     [
+      85,
+      10
+     ],
+     [
+      85,
+      28
+     ],
+     [
+      91,
+      26
+     ]
+    ],
+    "ends": [
+     [
+      3,
+      13
+     ],
+     [
+      4,
+      23
+     ],
+     [
+      37,
+      23
+     ],
+     [
+      38,
+      24
+     ],
+     [
+      43,
+      17
+     ],
+     [
+      45,
+      24
+     ],
+     [
+      45,
+      39
+     ],
+     [
+      46,
+      51
+     ],
+     [
+      63,
+      23
+     ],
+     [
+      85,
+      13
+     ],
+     [
+      85,
+      35
+     ],
+     [
+      91,
+      32
+     ]
+    ],
+    "names": [
+     "commandKeys",
+     "command",
+     "accelerator",
+     "item",
+     "label",
+     "item",
+     "focusedWindow",
+     "focusedWindow",
+     "accelerator",
+     "click",
+     "focusedWindow",
+     "commandKeys"
+    ]
+   },
+   {
+    "path": "cli/index.ts",
+    "positions": [
+     [
+      34,
+      12
+     ],
+     [
+      39,
+      14
+     ],
+     [
+      45,
+      26
+     ],
+     [
+      94,
+      25
+     ],
+     [
+      109,
+      38
+     ],
+     [
+      124,
+      32
+     ],
+     [
+      153,
+      24
+     ],
+     [
+      171,
+      37
+     ],
+     [
+      191,
+      16
+     ],
+     [
+      223,
+      22
+     ],
+     [
+      244,
+      34
+     ],
+     [
+      248,
+      32
+     ]
+    ],
+    "ends": [
+     [
+      34,
+      15
+     ],
+     [
+      39,
+      21
+     ],
+     [
+      45,
+      34
+     ],
+     [
+      94,
+      27
+     ],
+     [
+      109,
+      41
+     ],
+     [
+      124,
+      35
+     ],
+     [
+      153,
+      29
+     ],
+     [
+      171,
+      42
+     ],
+     [
+      191,
+      18
+     ],
+     [
+      223,
+      24
+     ],
+     [
+      244,
+      38
+     ],
+     [
+      248,
+      34
+     ]
+    ],
+    "names": [
+     "error",
+     "maxNameLength",
+     "descriptionWidth",
+     "red",
+     "entry",
+     "query",
+     "columnify",
+     "pluginName",
+     "argv",
+     "sub",
+     "execPath",
+     "data"
+    ]
+   },
+   {
+    "path": "lib/utils/term-groups.ts",
+    "positions": [
+     [
+      0,
+      9
+     ],
+     [
+      0,
+      18
+     ],
+     [
+      2,
+      30
+     ],
+     [
+      2,
+      45
+     ],
+     [
+      2,
+      59
+     ],
+     [
+      3,
+      14
+     ],
+     [
+      3,
+      30
+     ],
+     [
+      4,
+      26
+     ],
+     [
+      5,
+      11
+     ],
+     [
+      5,
+      30
+     ],
+     [
+      6,
+      13
+     ],
+     [
+      6,
+      23
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      11
+     ],
+     [
+      0,
+      23
+     ],
+     [
+      2,
+      37
+     ],
+     [
+      2,
+      52
+     ],
+     [
+      2,
+      64
+     ],
+     [
+      3,
+      19
+     ],
+     [
+      3,
+      37
+     ],
+     [
+      4,
+      31
+     ],
+     [
+      5,
+      13
+     ],
+     [
+      5,
+      32
+     ],
+     [
+      6,
+      16
+     ],
+     [
+      6,
+      26
+     ]
+    ],
+    "names": [
+     "type",
+     "ITermState",
+     "findBySession",
+     "termGroupState",
+     "ITermState",
+     "termGroups",
+     "termGroupState",
+     "termGroups",
+     "uid",
+     "uid",
+     "group",
+     "group"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "definitionConsistency",
+  "path": "app/index.ts",
+  "line": 182,
+  "character": 16,
+  "extra": "from:app/menus/menus/window.ts:43:14"
+ },
+ "ops": [],
+ "case": {
+  "loc": [
+   "app/index.ts",
+   182,
+   14,
+   182,
+   19
+  ],
+  "sub": "d",
+  "target": [
+   "app/menus/menus/window.ts",
+   43,
+   14
+  ]
+ },
+ "shape": "definitionConsistency:extra",
+ "signature": "ts6|r3_routes|definitionConsistency:extra",
+ "expected": [
+  [
+   "node_modules/electron/electron.d.ts",
+   14683,
+   4,
+   14683,
+   9
+  ]
+ ],
+ "actual": [
+  [
+   "node_modules/electron/electron.d.ts",
+   5713,
+   4,
+   5713,
+   9
+  ],
+  [
+   "node_modules/electron/electron.d.ts",
+   14683,
+   4,
+   14683,
+   9
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "flake 3/3 [r1:SCR r2:SCR r3:SCR] in 441s",
+ "violation": {
+  "oracle": "r3_routes",
+  "server": "ts6-6.0.3",
+  "project": "vercel/hyper@30ec0a2a91de",
+  "key": {
+   "method": "definitionConsistency",
+   "path": "app/index.ts",
+   "line": 182,
+   "character": 16,
+   "extra": "from:app/menus/menus/window.ts:43:14"
+  },
+  "expected": [
+   [
+    "node_modules/electron/electron.d.ts",
+    14683,
+    4,
+    14683,
+    9
+   ]
+  ],
+  "actual": [
+   [
+    "node_modules/electron/electron.d.ts",
+    5713,
+    4,
+    5713,
+    9
+   ],
+   [
+    "node_modules/electron/electron.d.ts",
+    14683,
+    4,
+    14683,
+    9
+   ]
+  ],
+  "ops": [],
+  "detail": "{\"case\": {\"loc\": [\"app/index.ts\", 182, 14, 182, 19], \"sub\": \"d\", \"target\": [\"app/menus/menus/window.ts\", 43, 14]}, \"note\": \"flake 3/3 [r1:SCR r2:SCR r3:SCR] in 441s\", \"shape\": \"definitionConsistency:extra\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "ts6|r3_routes|definitionConsistency:extra",
+  "run_id": "2e5b5cb87f65"
+ },
+ "replay_logs": [
+  "logs/ts6-6.0.3-2e5b5cb87f65-r3-replay-baseline-20260923-234347-06ec9d.jsonl.gz",
+  "logs/ts6-6.0.3-2e5b5cb87f65-r3-replay-control-20260923-234455-43866d.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

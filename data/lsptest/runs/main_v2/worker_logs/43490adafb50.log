@@ -1,0 +1,6 @@
+2026-11-18 09:51:15,984 INFO campaign_run run 43490adafb50: r1_history on rust-analyzer 2026-09-21, tokio-rs/tokio@3930bd182cb1 seed 1 race200, targets ['tokio/src/runtime/time/wheel/mod.rs', 'tokio/src/runtime/time_alt/wheel/level.rs', 'tokio/tests/uds_split.rs']
+2026-11-18 09:59:01,021 INFO campaign_run run 43490adafb50: 1 candidate(s) in 465s; confirming
+2026-11-18 10:01:07,284 INFO flake replay 1/3 of rust-analyzer|r1_history|references:result->error:timeout: settled=True control_stable=True reproduced=False (126.3s)
+2026-11-18 10:03:25,064 INFO flake replay 2/3 of rust-analyzer|r1_history|references:result->error:timeout: settled=True control_stable=False reproduced=False (137.8s)
+2026-11-18 10:05:55,042 INFO flake replay 3/3 of rust-analyzer|r1_history|references:result->error:timeout: settled=True control_stable=False reproduced=False (150.0s)
+2026-11-18 10:05:55,172 INFO campaign_run run 43490adafb50 finished: ok, 0 confirmed of 1 candidate(s), 879s

@@ -1,0 +1,121 @@
+{
+ "schema": 1,
+ "id": "gopls-38424",
+ "meta": {
+  "server": "gopls",
+  "kind": "gopls",
+  "number": 38424,
+  "url": "https://github.com/golang/go/issues/38424",
+  "title": "x/tools/gopls: \"expected declaration, found 'package'\" after cutting and pasting a file's contents",
+  "oracle_class": "R1",
+  "subtype": "edit-undo",
+  "fix_ref": "golang/tools@77f530d86f9a (internal/lsp: handle deletion of file content; CL 243577, 'Fixes golang/go#38424')",
+  "fix_shas": [
+   "77f530d86f9a1635c231e39648d626564edd37e6"
+  ],
+  "pre_version": "v0.4.3",
+  "post_version": "v0.4.4",
+  "pre_build": "v0.4.3",
+  "post_build": "v0.4.4",
+  "build_notes": "Both built with the local Go (go1.27.1) through a wrapper module (their go.mod replaces x/tools); the server runs the local go command. v0.4.3 was tagged 2020-07-08, the fix merged 2020-07-21, v0.4.4 was tagged 2020-07-29.",
+  "candidate_rank": 61,
+  "effort_minutes": 10,
+  "notes": "The server treated a change whose resulting content is empty like a change without content and kept the previous overlay text, so after cutting a file's whole content its view of the buffer diverged from the client's; the next paste was applied to the stale text. The fix distinguishes empty content from missing content (only a save may come without content)."
+ },
+ "language": "go",
+ "settings": {},
+ "settings_note": "The issue names no settings.",
+ "session": {
+  "settle_timeout_s": 180
+ },
+ "files": [
+  {
+   "path": "go.mod",
+   "provenance": "scaffold",
+   "source": "",
+   "note": "the go.mod of the fix's regression test TestCutAndPaste (internal/lsp/regtest/diagnostics_test.go at 77f530d8); the issue gives no code"
+  },
+  {
+   "path": "main2.go",
+   "provenance": "scaffold",
+   "source": "",
+   "note": "the file main2.go of the fix's regression test TestCutAndPaste (a second file of package main)"
+  },
+  {
+   "path": "main.go",
+   "provenance": "scaffold",
+   "source": "",
+   "note": "empty, as the buffer TestCutAndPaste creates and saves (CreateBuffer(\"main.go\", \"\") then a save)"
+  }
+ ],
+ "repro": {
+  "attempt": 1,
+  "timing": "settled",
+  "steps": "The fix's regression test TestCutAndPaste, which reproduces the issue: open the empty main.go and save it; type 'package main' with an empty func main and save; cut the whole content (delete lines 0-4); paste a new content with 'var x int' in main. Reported: the error \"expected declaration, found 'package'\" (the server's copy of the buffer still holds the cut text); expected: only the unused-variable error on x. Probe: the diagnostics of main.go after the edits are compared with a fresh session on the final text and a fresh control.",
+  "ops": [
+   {
+    "kind": "open",
+    "path": "main.go"
+   },
+   {
+    "kind": "save",
+    "path": "main.go"
+   },
+   {
+    "kind": "change",
+    "path": "main.go",
+    "start": [
+     0,
+     0
+    ],
+    "end": [
+     0,
+     0
+    ],
+    "text": "package main\n\nfunc main() {\n}\n"
+   },
+   {
+    "kind": "save",
+    "path": "main.go"
+   },
+   {
+    "kind": "change",
+    "path": "main.go",
+    "start": [
+     0,
+     0
+    ],
+    "end": [
+     4,
+     0
+    ],
+    "text": ""
+   },
+   {
+    "kind": "change",
+    "path": "main.go",
+    "start": [
+     0,
+     0
+    ],
+    "end": [
+     0,
+     0
+    ],
+    "text": "package main\n\nfunc main() {\n\tvar x int\n}\n"
+   }
+  ],
+  "probe": {
+   "type": "differs_from_fresh",
+   "params": {
+    "queries": [
+     {
+      "method": "diagnostics",
+      "path": "main.go"
+     }
+    ]
+   }
+  }
+ },
+ "attempts": []
+}

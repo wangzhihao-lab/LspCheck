@@ -1,0 +1,103 @@
+{
+ "campaign": "kb_pyright_8946",
+ "config_file": "data/lsptest/campaigns/kb_pyright_8946.json",
+ "dry_run": false,
+ "config": {
+  "id": "kb_pyright_8946",
+  "description": "Known-bug mini campaign for triage: r1_history on the pre-fix pyright 1.1.380, project built from the historical files of microsoft/pyright#8946 only (as validate_known_bugs.py builds it), seeds 1 and 2, 16 histories per run.",
+  "corpus": "",
+  "servers": [
+   {
+    "kind": "pyright",
+    "version": "1.1.380"
+   }
+  ],
+  "oracles": {
+   "r1_history": {
+    "seeds": {
+     "settled": [
+      1,
+      2
+     ]
+    },
+    "max_cases": 16
+   }
+  },
+  "case_projects": [
+   {
+    "case": "pyright_8946",
+    "language": "python",
+    "servers": [
+     "pyright"
+    ]
+   }
+  ],
+  "targets": {
+   "max_files": 3,
+   "max_positions_per_file": 12,
+   "max_file_bytes": 256000
+  },
+  "timeouts": {
+   "settle_s": 300,
+   "request_s": 30,
+   "run_s": 3600
+  },
+  "concurrency": 2,
+  "flake": {
+   "n": 3,
+   "per_signature": 1
+  }
+ },
+ "server_builds": [
+  {
+   "kind": "pyright",
+   "version": "1.1.380",
+   "label": "pyright-1.1.380",
+   "cmd": [
+    "~/.local/state/fnm_multishells/22713_1790129010272/bin/node",
+    "temp/lsp_servers/pyright-1.1.380/node_modules/pyright/langserver.index.js",
+    "--stdio"
+   ],
+   "entry": "temp/lsp_servers/pyright-1.1.380/node_modules/pyright/langserver.index.js",
+   "sha256": "f200762078eb9880",
+   "package_version": "1.1.380",
+   "node": "v24.3.0"
+  }
+ ],
+ "machine": {
+  "platform": "macOS-27.0-arm64-arm-64bit-Mach-O",
+  "mac_ver": "27.0",
+  "machine": "arm64",
+  "python": "3.14.7",
+  "cpus": 10
+ },
+ "projects": {
+  "pyright_8946": {
+   "case": "pyright_8946",
+   "case_sha256": "69b96726c9b0ca9d",
+   "language": "python"
+  }
+ },
+ "eligible_pairs": [
+  {
+   "server": "pyright",
+   "project": "pyright_8946",
+   "forced": ""
+  }
+ ],
+ "excluded_pairs": [],
+ "plan": {
+  "runs": 2,
+  "per_oracle_server": {
+   "r1_history pyright": 2
+  }
+ },
+ "invocations": [
+  {
+   "started": "2026-09-23 10:46:02",
+   "finished": "2026-09-23 10:51:52",
+   "elapsed_s": 349.6,
+   "runs": 2
+  }
+ ]
+}

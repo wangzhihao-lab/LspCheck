@@ -1,0 +1,385 @@
+{
+ "format": 1,
+ "campaign": "bench_v1",
+ "vid": "e9015e08b65a-v00",
+ "run_id": "e9015e08b65a",
+ "oracle": "r1_history",
+ "server": {
+  "kind": "gopls",
+  "version": "v0.18.1"
+ },
+ "project": {
+  "name": "gopls-73576",
+  "source": "dir",
+  "ref": "data/lsp_bench/cases/gopls-73576/project",
+  "commit": "",
+  "language": "go"
+ },
+ "context": {
+  "seed": 3,
+  "timing": "settled",
+  "settle_timeout_s": 180.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "main.go",
+    "positions": [
+     [
+      0,
+      10
+     ],
+     [
+      5,
+      26
+     ],
+     [
+      7,
+      2
+     ],
+     [
+      7,
+      11
+     ],
+     [
+      8,
+      37
+     ],
+     [
+      9,
+      25
+     ],
+     [
+      9,
+      40
+     ],
+     [
+      11,
+      2
+     ],
+     [
+      11,
+      23
+     ],
+     [
+      14,
+      12
+     ],
+     [
+      16,
+      8
+     ],
+     [
+      19,
+      7
+     ],
+     [
+      22,
+      8
+     ],
+     [
+      29,
+      4
+     ],
+     [
+      31,
+      5
+     ],
+     [
+      32,
+      4
+     ],
+     [
+      37,
+      3
+     ],
+     [
+      38,
+      10
+     ],
+     [
+      39,
+      3
+     ],
+     [
+      40,
+      10
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      12
+     ],
+     [
+      5,
+      29
+     ],
+     [
+      7,
+      3
+     ],
+     [
+      7,
+      18
+     ],
+     [
+      8,
+      38
+     ],
+     [
+      9,
+      26
+     ],
+     [
+      9,
+      41
+     ],
+     [
+      11,
+      3
+     ],
+     [
+      11,
+      26
+     ],
+     [
+      14,
+      13
+     ],
+     [
+      16,
+      9
+     ],
+     [
+      19,
+      9
+     ],
+     [
+      22,
+      15
+     ],
+     [
+      29,
+      7
+     ],
+     [
+      31,
+      9
+     ],
+     [
+      32,
+      6
+     ],
+     [
+      37,
+      5
+     ],
+     [
+      38,
+      14
+     ],
+     [
+      39,
+      5
+     ],
+     [
+      40,
+      14
+     ]
+    ],
+    "names": [
+     "main",
+     "index",
+     "f",
+     "focusedElement",
+     "f",
+     "f",
+     "f",
+     "f",
+     "index",
+     "f",
+     "f",
+     "Form",
+     "focusedElement",
+     "items",
+     "changed",
+     "fmt",
+     "form",
+     "SetFocus",
+     "form",
+     "SetFocus"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "completion",
+  "path": "main.go",
+  "line": 7,
+  "character": 3,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "main.go"
+  },
+  {
+   "kind": "fs_write",
+   "path": "go.mod",
+   "text": "module example.com/main\nmodule example.com/main\n\ngo 1.24\n"
+  },
+  {
+   "kind": "change",
+   "path": "main.go",
+   "start": [
+    19,
+    16
+   ],
+   "end": [
+    19,
+    17
+   ]
+  },
+  {
+   "kind": "save",
+   "path": "main.go"
+  },
+  {
+   "kind": "change",
+   "path": "main.go",
+   "start": [
+    19,
+    16
+   ],
+   "end": [
+    19,
+    16
+   ],
+   "text": " "
+  },
+  {
+   "kind": "save",
+   "path": "main.go"
+  },
+  {
+   "kind": "fs_write",
+   "path": "go.mod",
+   "text": "module example.com/main\n\ngo 1.24\n"
+  }
+ ],
+ "case": {
+  "chain_step": 0,
+  "families": [],
+  "family": "H9",
+  "history_index": 9,
+  "history_seed": 3010,
+  "mode": "fresh",
+  "note": "window: go.mod: line 0 duplicated; inside: main.go: delete ' ' on line 19, then its inverse; then W reverted",
+  "seed": 3,
+  "timing": "settled"
+ },
+ "shape": "completion:lost",
+ "signature": "gopls|r1_history|completion:lost",
+ "expected": [
+  "Form",
+  "f",
+  "f.buttons",
+  "f.focusedElement",
+  "f.items",
+  "false",
+  "float32",
+  "float64",
+  "fmt"
+ ],
+ "actual": [],
+ "reproduced": "3/3",
+ "note": "H9: window: go.mod: line 0 duplicated; inside: main.go: delete ' ' on line 19, then its inverse; then W reverted; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 225s",
+ "violation": {
+  "oracle": "r1_history",
+  "server": "gopls-v0.18.1",
+  "project": "gopls-73576",
+  "key": {
+   "method": "completion",
+   "path": "main.go",
+   "line": 7,
+   "character": 3,
+   "extra": ""
+  },
+  "expected": [
+   "Form",
+   "f",
+   "f.buttons",
+   "f.focusedElement",
+   "f.items",
+   "false",
+   "float32",
+   "float64",
+   "fmt"
+  ],
+  "actual": [],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "main.go"
+   },
+   {
+    "kind": "fs_write",
+    "path": "go.mod",
+    "text": "module example.com/main\nmodule example.com/main\n\ngo 1.24\n"
+   },
+   {
+    "kind": "change",
+    "path": "main.go",
+    "start": [
+     19,
+     16
+    ],
+    "end": [
+     19,
+     17
+    ]
+   },
+   {
+    "kind": "save",
+    "path": "main.go"
+   },
+   {
+    "kind": "change",
+    "path": "main.go",
+    "start": [
+     19,
+     16
+    ],
+    "end": [
+     19,
+     16
+    ],
+    "text": " "
+   },
+   {
+    "kind": "save",
+    "path": "main.go"
+   },
+   {
+    "kind": "fs_write",
+    "path": "go.mod",
+    "text": "module example.com/main\n\ngo 1.24\n"
+   }
+  ],
+  "detail": "{\"case\": {\"chain_step\": 0, \"families\": [], \"family\": \"H9\", \"history_index\": 9, \"history_seed\": 3010, \"mode\": \"fresh\", \"note\": \"window: go.mod: line 0 duplicated; inside: main.go: delete ' ' on line 19, then its inverse; then W reverted\", \"seed\": 3, \"timing\": \"settled\"}, \"note\": \"H9: window: go.mod: line 0 duplicated; inside: main.go: delete ' ' on line 19, then its inverse; then W reverted; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 225s\", \"shape\": \"completion:lost\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "gopls|r1_history|completion:lost",
+  "run_id": "e9015e08b65a"
+ },
+ "replay_logs": [
+  "logs/gopls-v0.18.1-e9015e08b65a-replay-baseline-20260925-151405-6ebc97.jsonl.gz",
+  "logs/gopls-v0.18.1-e9015e08b65a-replay-control-20260925-151405-325e50.jsonl.gz",
+  "logs/gopls-v0.18.1-e9015e08b65a-replay-history-20260925-151410-323e63.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

@@ -1,0 +1,3 @@
+2026-09-25 10:39:26,016 INFO campaign_run run d94648f2153d: r5_transforms on tsserver 5.5.4+tsls4.3.3, tsserver-59116 seed 2 settled, targets ['lib.ts', 'main.ts']
+2026-09-25 10:39:53,903 INFO campaign_run run d94648f2153d: 0 candidate(s) in 28s; confirming
+2026-09-25 10:39:53,904 INFO campaign_run run d94648f2153d finished: ok, 0 confirmed of 0 candidate(s), 28s

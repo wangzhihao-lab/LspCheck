@@ -1,0 +1,101 @@
+{
+ "mode": "external",
+ "rows": [
+  {
+   "gid": "ts6-r1-completion-lost-h9-ce1ffc",
+   "replays": 3,
+   "settled": 3,
+   "control_stable": 3,
+   "reproduced": 3,
+   "seconds": 306.1,
+   "error": "",
+   "verdict": "reproduced",
+   "renames": [],
+   "edited_restored": {}
+  },
+  {
+   "gid": "ts6-r1-definition-lost-h9-898f29",
+   "replays": 3,
+   "settled": 3,
+   "control_stable": 3,
+   "reproduced": 3,
+   "seconds": 171.8,
+   "error": "",
+   "verdict": "reproduced",
+   "renames": [],
+   "edited_restored": {}
+  },
+  {
+   "gid": "ts6-r1-diagnostics-extra-2307-7006-h9-8325a2",
+   "replays": 3,
+   "settled": 3,
+   "control_stable": 3,
+   "reproduced": 3,
+   "seconds": 120.0,
+   "error": "",
+   "verdict": "reproduced",
+   "renames": [],
+   "edited_restored": {}
+  },
+  {
+   "gid": "ts6-r1-documenthighlight-missing-h9-2e657a",
+   "replays": 3,
+   "settled": 3,
+   "control_stable": 3,
+   "reproduced": 3,
+   "seconds": 142.9,
+   "error": "",
+   "verdict": "reproduced",
+   "renames": [],
+   "edited_restored": {}
+  },
+  {
+   "gid": "ts6-r1-inlayhint-changed-h9-b9d052",
+   "replays": 3,
+   "settled": 3,
+   "control_stable": 3,
+   "reproduced": 3,
+   "seconds": 391.6,
+   "error": "",
+   "verdict": "reproduced",
+   "renames": [],
+   "edited_restored": {}
+  },
+  {
+   "gid": "ts6-r1-references-missing-h5-cc8950",
+   "replays": 3,
+   "settled": 3,
+   "control_stable": 3,
+   "reproduced": 3,
+   "seconds": 174.3,
+   "error": "",
+   "verdict": "reproduced",
+   "renames": [],
+   "edited_restored": {}
+  },
+  {
+   "gid": "ts6-r1-semantictokens-changed-h9-c4368c",
+   "replays": 3,
+   "settled": 3,
+   "control_stable": 3,
+   "reproduced": 3,
+   "seconds": 118.2,
+   "error": "",
+   "verdict": "reproduced",
+   "renames": [],
+   "edited_restored": {}
+  },
+  {
+   "gid": "ts6-r1-typedefinition-lost-h9-b52749",
+   "replays": 3,
+   "settled": 3,
+   "control_stable": 3,
+   "reproduced": 3,
+   "seconds": 171.2,
+   "error": "",
+   "verdict": "reproduced",
+   "renames": [],
+   "edited_restored": {}
+  }
+ ]
+}

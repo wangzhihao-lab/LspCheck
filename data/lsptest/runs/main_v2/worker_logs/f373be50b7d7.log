@@ -1,0 +1,9 @@
+2026-11-18 10:32:36,592 INFO campaign_run run f373be50b7d7: r4_edits on gopls v0.23.0, abiosoft/colima@bba803d3d6fa seed 2 settled, targets ['core/core.go', 'environment/vm/lima/limautil/image_test.go', 'util/downloader/download.go']
+2026-11-18 10:33:42,894 INFO campaign_run run f373be50b7d7: 3 candidate(s) in 66s; confirming
+2026-11-18 10:33:59,938 INFO flake replay 1/3 of gopls|r4_edits|completionInsert:gained: settled=True control_stable=False reproduced=False (17.0s)
+2026-11-18 10:34:17,281 INFO flake replay 2/3 of gopls|r4_edits|completionInsert:gained: settled=True control_stable=True reproduced=False (17.3s)
+2026-11-18 10:34:34,706 INFO flake replay 3/3 of gopls|r4_edits|completionInsert:gained: settled=True control_stable=False reproduced=False (17.4s)
+2026-11-18 10:34:50,477 INFO flake replay 1/3 of gopls|r4_edits|diagnostics:extra:UndeclaredName: settled=True control_stable=True reproduced=True (15.8s)
+2026-11-18 10:35:04,987 INFO flake replay 2/3 of gopls|r4_edits|diagnostics:extra:UndeclaredName: settled=True control_stable=True reproduced=True (14.5s)
+2026-11-18 10:35:19,681 INFO flake replay 3/3 of gopls|r4_edits|diagnostics:extra:UndeclaredName: settled=True control_stable=True reproduced=True (14.7s)
+2026-11-18 10:35:19,690 INFO campaign_run run f373be50b7d7 finished: ok, 1 confirmed of 3 candidate(s), 163s

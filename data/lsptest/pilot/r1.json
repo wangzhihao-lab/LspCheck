@@ -1,0 +1,2666 @@
+{
+ "what": "R1 pilot: one prepared corpus project per first-batch server, seed 2, 6 histories per run (families H2 H3 H7 H5 H4 H8 in the seeded order), settled timing plus one race0 run (pyright); candidates confirmed with flake.confirm (3 fresh replays, 3/3 with a stable control), at most 2 candidates per signature; one confirmed violation per history reduced with ddmin (32 probes / 1 h; rust-analyzer 12 probes) and the reduced ops re-confirmed 3/3.",
+ "run_line": "python3 scripts/lsptest/validate_known_bugs.py --pilot",
+ "seed_note": "seed 2 for every project: with seed 1 the rustlings targets are exercise files that belong to no crate (rust-analyzer offers no IDE services there)",
+ "final_run": {
+  "date": "2026-09-23 14:34",
+  "tool_state": "r1_history settle guard + engine fixes (lspclient null responses, workspace-level ops require a fresh publish, completion normalizer without auto-import items)",
+  "runs": [
+   {
+    "run_id": "pilot-pyright-settled-s2",
+    "seed": 2,
+    "timing": "settled",
+    "targets": [
+     "src/flask/json/tag.py",
+     "src/flask/wrappers.py",
+     "tests/type_check/typing_route.py"
+    ],
+    "run": {
+     "oracle": "r1_history",
+     "run_id": "pilot-pyright-settled-s2",
+     "cases": 6,
+     "invalid_cases": 0,
+     "sessions": 8,
+     "unsettled": 0,
+     "compared": {
+      "references": 216,
+      "definition": 216,
+      "hover": 216,
+      "signatureHelp": 216,
+      "completion": 216,
+      "codeAction": 276,
+      "documentHighlight": 216,
+      "typeDefinition": 216,
+      "documentSymbol": 18,
+      "diagnostics": 18
+     },
+     "unstable": {},
+     "seconds": 130.914,
+     "notes": [
+      "fresh mode; histories: H2, H3, H7, H5, H4, H8"
+     ]
+    },
+    "candidates": [],
+    "flake": {
+     "candidates": 0,
+     "signatures": 0,
+     "replayed": 0,
+     "confirmed": 0,
+     "flaky": 0
+    },
+    "confirmations": [],
+    "confirmed": [],
+    "reductions": [],
+    "seconds": 130.9,
+    "server": "pyright",
+    "version": "1.1.414",
+    "project": "pallets__flask@d73fa1cdcbd8",
+    "max_cases": 6
+   },
+   {
+    "run_id": "pilot-pyright-race0-s2",
+    "seed": 2,
+    "timing": "race0",
+    "targets": [
+     "src/flask/json/tag.py",
+     "src/flask/wrappers.py",
+     "tests/type_check/typing_route.py"
+    ],
+    "run": {
+     "oracle": "r1_history",
+     "run_id": "pilot-pyright-race0-s2",
+     "cases": 6,
+     "invalid_cases": 0,
+     "sessions": 8,
+     "unsettled": 0,
+     "compared": {
+      "references": 216,
+      "definition": 216,
+      "hover": 216,
+      "signatureHelp": 216,
+      "completion": 216,
+      "codeAction": 276,
+      "documentHighlight": 216,
+      "typeDefinition": 216,
+      "documentSymbol": 18,
+      "diagnostics": 18
+     },
+     "unstable": {},
+     "seconds": 46.842,
+     "notes": [
+      "fresh mode; histories: H2, H3, H7, H5, H4, H8"
+     ]
+    },
+    "candidates": [],
+    "flake": {
+     "candidates": 0,
+     "signatures": 0,
+     "replayed": 0,
+     "confirmed": 0,
+     "flaky": 0
+    },
+    "confirmations": [],
+    "confirmed": [],
+    "reductions": [],
+    "seconds": 46.8,
+    "server": "pyright",
+    "version": "1.1.414",
+    "project": "pallets__flask@d73fa1cdcbd8",
+    "max_cases": 6
+   },
+   {
+    "run_id": "pilot-ts6-settled-s2",
+    "seed": 2,
+    "timing": "settled",
+    "targets": [
+     "src/middleware/devtools.ts",
+     "src/traditional.ts",
+     "tests/immer.test.tsx"
+    ],
+    "run": {
+     "oracle": "r1_history",
+     "run_id": "pilot-ts6-settled-s2",
+     "cases": 6,
+     "invalid_cases": 0,
+     "sessions": 8,
+     "unsettled": 0,
+     "compared": {
+      "typeDefinition": 216,
+      "documentHighlight": 216,
+      "codeAction": 216,
+      "references": 216,
+      "hover": 216,
+      "signatureHelp": 216,
+      "semanticTokens": 18,
+      "foldingRange": 18,
+      "completion": 216,
+      "definition": 216,
+      "diagnostics": 18,
+      "inlayHint": 18,
+      "documentSymbol": 18
+     },
+     "unstable": {},
+     "seconds": 221.017,
+     "notes": [
+      "fresh mode; histories: H2, H3, H7, H5, H4, H8"
+     ]
+    },
+    "candidates": [],
+    "flake": {
+     "candidates": 0,
+     "signatures": 0,
+     "replayed": 0,
+     "confirmed": 0,
+     "flaky": 0
+    },
+    "confirmations": [],
+    "confirmed": [],
+    "reductions": [],
+    "seconds": 221.0,
+    "server": "ts6",
+    "version": "6.0.3",
+    "project": "pmndrs__zustand@b57db4f86ef1",
+    "max_cases": 6
+   },
+   {
+    "run_id": "pilot-ts7-settled-s2",
+    "seed": 2,
+    "timing": "settled",
+    "targets": [
+     "src/middleware/devtools.ts",
+     "src/traditional.ts",
+     "tests/immer.test.tsx"
+    ],
+    "run": {
+     "oracle": "r1_history",
+     "run_id": "pilot-ts7-settled-s2",
+     "cases": 6,
+     "invalid_cases": 0,
+     "sessions": 8,
+     "unsettled": 0,
+     "compared": {
+      "typeDefinition": 216,
+      "documentHighlight": 216,
+      "codeAction": 216,
+      "references": 216,
+      "hover": 216,
+      "signatureHelp": 216,
+      "semanticTokens": 18,
+      "foldingRange": 18,
+      "completion": 216,
+      "definition": 216,
+      "diagnostics": 18,
+      "inlayHint": 18,
+      "documentSymbol": 18
+     },
+     "unstable": {},
+     "seconds": 153.436,
+     "notes": [
+      "fresh mode; histories: H2, H3, H7, H5, H4, H8"
+     ]
+    },
+    "candidates": [],
+    "flake": {
+     "candidates": 0,
+     "signatures": 0,
+     "replayed": 0,
+     "confirmed": 0,
+     "flaky": 0
+    },
+    "confirmations": [],
+    "confirmed": [],
+    "reductions": [],
+    "seconds": 153.4,
+    "server": "ts7",
+    "version": "7.0.2",
+    "project": "pmndrs__zustand@b57db4f86ef1",
+    "max_cases": 6
+   },
+   {
+    "run_id": "pilot-gopls-settled-s2",
+    "seed": 2,
+    "timing": "settled",
+    "targets": [
+     "command_win.go",
+     "doc/rest_docs.go",
+     "powershell_completions_test.go"
+    ],
+    "run": {
+     "oracle": "r1_history",
+     "run_id": "pilot-gopls-settled-s2",
+     "cases": 6,
+     "invalid_cases": 0,
+     "sessions": 8,
+     "unsettled": 0,
+     "compared": {
+      "typeDefinition": 216,
+      "completion": 216,
+      "codeAction": 258,
+      "documentHighlight": 216,
+      "definition": 216,
+      "hover": 216,
+      "signatureHelp": 216,
+      "references": 216,
+      "foldingRange": 18,
+      "diagnostics": 18,
+      "inlayHint": 18,
+      "semanticTokens": 18,
+      "documentSymbol": 18
+     },
+     "unstable": {},
+     "seconds": 239.246,
+     "notes": [
+      "fresh mode; histories: H2, H3, H7, H5, H4, H8"
+     ]
+    },
+    "candidates": [
+     {
+      "signature": "gopls|r1_history|completion:extra",
+      "key": {
+       "method": "completion",
+       "path": "doc/rest_docs.go",
+       "line": 57,
+       "character": 28,
+       "extra": ""
+      },
+      "shape": "completion:extra",
+      "family": "H2",
+      "history_index": 0,
+      "chain_step": 0,
+      "note": "command_win.go: delete line 19, retype it in 1 chunk(s)",
+      "reproduced": "0/0",
+      "ops": 5,
+      "expected": "[\"w\"]",
+      "actual": "[\"cobra.WriteStringAndCheck\", \"filepath.Walk\", \"filepath.WalkFunc\", \"w\"]"
+     },
+     {
+      "signature": "gopls|r1_history|completion:extra",
+      "key": {
+       "method": "completion",
+       "path": "doc/rest_docs.go",
+       "line": 57,
+       "character": 28,
+       "extra": ""
+      },
+      "shape": "completion:extra",
+      "family": "H3",
+      "history_index": 1,
+      "chain_step": 0,
+      "note": "command_win.go: unsaved edit (replace 'preExecHookFn' by 'preExecHookFn_x' on line 27), close, reopen",
+      "reproduced": "0/0",
+      "ops": 6,
+      "expected": "[\"w\"]",
+      "actual": "[\"cobra.WriteStringAndCheck\", \"filepath.Walk\", \"filepath.WalkFunc\", \"w\"]"
+     },
+     {
+      "signature": "gopls|r1_history|completion:extra",
+      "key": {
+       "method": "completion",
+       "path": "doc/rest_docs.go",
+       "line": 57,
+       "character": 28,
+       "extra": ""
+      },
+      "shape": "completion:extra",
+      "family": "H7",
+      "history_index": 2,
+      "chain_step": 0,
+      "note": "nest 1>0: H1 powershell_completions_test.go: insert '}' on line 22, then its inverse | H5 rename flag_groups.go -> flag_groups_rt.go -> back",
+      "reproduced": "0/0",
+      "ops": 7,
+      "expected": "[\"w\"]",
+      "actual": "[\"cobra.WriteStringAndCheck\", \"filepath.Walk\", \"filepath.WalkFunc\", \"w\"]"
+     },
+     {
+      "signature": "gopls|r1_history|completion:extra",
+      "key": {
+       "method": "completion",
+       "path": "doc/rest_docs.go",
+       "line": 57,
+       "character": 28,
+       "extra": ""
+      },
+      "shape": "completion:extra",
+      "family": "H5",
+      "history_index": 3,
+      "chain_step": 0,
+      "note": "rename doc/rest_docs.go -> doc/rest_docs_rt.go -> back",
+      "reproduced": "0/0",
+      "ops": 5,
+      "expected": "[\"w\"]",
+      "actual": "[\"cobra.WriteStringAndCheck\", \"filepath.Walk\", \"filepath.WalkFunc\", \"w\"]"
+     },
+     {
+      "signature": "gopls|r1_history|codeAction:changed",
+      "key": {
+       "method": "codeAction",
+       "path": "doc/rest_docs.go",
+       "line": 29,
+       "character": 61,
+       "extra": "diag:29:72"
+      },
+      "shape": "codeAction:changed",
+      "family": "H4",
+      "history_index": 4,
+      "chain_step": 0,
+      "note": "toggle gopls.semanticTokens: True -> False -> back",
+      "reproduced": "0/0",
+      "ops": 5,
+      "expected": "[[\"Add test for printOptionsReST\", \"source.addTest\"], [\"Browse arm64 assembly for printOptionsReST\", \"source.assembly\"], [\"Browse documentation for package doc\", \"source.doc\"], [\"Browse free symbols\", \"source.freesymbols\"], [\"Browse gopls feature documentation\", \"gopls.doc.features\"], [\"Move parameter left\", \"refactor.rewrite.moveParamLeft\"], [\"Remove unused parameter\", \"refactor.rewrite.removeUnu...",
+      "actual": "[[\"Add test for printOptionsReST\", \"source.addTest\"], [\"Browse arm64 assembly for printOptionsReST\", \"source.assembly\"], [\"Browse documentation for package doc\", \"source.doc\"], [\"Browse free symbols\", \"source.freesymbols\"], [\"Browse gopls feature documentation\", \"gopls.doc.features\"], [\"Move parameter left\", \"refactor.rewrite.moveParamLeft\"], [\"Remove unused parameter\", \"refactor.rewrite.removeUnu..."
+     },
+     {
+      "signature": "gopls|r1_history|codeAction:changed",
+      "key": {
+       "method": "codeAction",
+       "path": "doc/rest_docs.go",
+       "line": 75,
+       "character": 1,
+       "extra": "diag:75:40"
+      },
+      "shape": "codeAction:changed",
+      "family": "H4",
+      "history_index": 4,
+      "chain_step": 0,
+      "note": "toggle gopls.semanticTokens: True -> False -> back",
+      "reproduced": "0/0",
+      "ops": 5,
+      "expected": "[[\"Add test for GenReSTCustom\", \"source.addTest\"], [\"Browse arm64 assembly for GenReSTCustom\", \"source.assembly\"], [\"Browse documentation for func GenReSTCustom\", \"source.doc\"], [\"Browse free symbols\", \"source.freesymbols\"], [\"Browse gopls feature documentation\", \"gopls.doc.features\"], [\"Extract variable\", \"refactor.extract.variable\"], [\"Inline call to WriteString\", \"refactor.inline.call\"], [\"Show...",
+      "actual": "[[\"Add test for GenReSTCustom\", \"source.addTest\"], [\"Browse arm64 assembly for GenReSTCustom\", \"source.assembly\"], [\"Browse documentation for func GenReSTCustom\", \"source.doc\"], [\"Browse free symbols\", \"source.freesymbols\"], [\"Browse gopls feature documentation\", \"gopls.doc.features\"], [\"Extract variable\", \"refactor.extract.variable\"], [\"Inline call to WriteString\", \"refactor.inline.call\"], [\"Show..."
+     },
+     {
+      "signature": "gopls|r1_history|codeAction:changed",
+      "key": {
+       "method": "codeAction",
+       "path": "doc/rest_docs.go",
+       "line": 76,
+       "character": 1,
+       "extra": "diag:76:29"
+      },
+      "shape": "codeAction:changed",
+      "family": "H4",
+      "history_index": 4,
+      "chain_step": 0,
+      "note": "toggle gopls.semanticTokens: True -> False -> back",
+      "reproduced": "0/0",
+      "ops": 5,
+      "expected": "[[\"Add test for GenReSTCustom\", \"source.addTest\"], [\"Browse arm64 assembly for GenReSTCustom\", \"source.assembly\"], [\"Browse documentation for func GenReSTCustom\", \"source.doc\"], [\"Browse free symbols\", \"source.freesymbols\"], [\"Browse gopls feature documentation\", \"gopls.doc.features\"], [\"Extract variable\", \"refactor.extract.variable\"], [\"Inline call to WriteString\", \"refactor.inline.call\"], [\"Show...",
+      "actual": "[[\"Add test for GenReSTCustom\", \"source.addTest\"], [\"Browse arm64 assembly for GenReSTCustom\", \"source.assembly\"], [\"Browse documentation for func GenReSTCustom\", \"source.doc\"], [\"Browse free symbols\", \"source.freesymbols\"], [\"Browse gopls feature documentation\", \"gopls.doc.features\"], [\"Extract variable\", \"refactor.extract.variable\"], [\"Inline call to WriteString\", \"refactor.inline.call\"], [\"Show..."
+     },
+     {
+      "signature": "gopls|r1_history|codeAction:changed",
+      "key": {
+       "method": "codeAction",
+       "path": "doc/rest_docs.go",
+       "line": 77,
+       "character": 1,
+       "extra": "diag:77:57"
+      },
+      "shape": "codeAction:changed",
+      "family": "H4",
+      "history_index": 4,
+      "chain_step": 0,
+      "note": "toggle gopls.semanticTokens: True -> False -> back",
+      "reproduced": "0/0",
+      "ops": 5,
+      "expected": "[[\"Add test for GenReSTCustom\", \"source.addTest\"], [\"Browse arm64 assembly for GenReSTCustom\", \"source.assembly\"], [\"Browse documentation for func GenReSTCustom\", \"source.doc\"], [\"Browse free symbols\", \"source.freesymbols\"], [\"Browse gopls feature documentation\", \"gopls.doc.features\"], [\"Extract variable\", \"refactor.extract.variable\"], [\"Inline call to WriteString\", \"refactor.inline.call\"], [\"Show...",
+      "actual": "[[\"Add test for GenReSTCustom\", \"source.addTest\"], [\"Browse arm64 assembly for GenReSTCustom\", \"source.assembly\"], [\"Browse documentation for func GenReSTCustom\", \"source.doc\"], [\"Browse free symbols\", \"source.freesymbols\"], [\"Browse gopls feature documentation\", \"gopls.doc.features\"], [\"Extract variable\", \"refactor.extract.variable\"], [\"Inline call to WriteString\", \"refactor.inline.call\"], [\"Show..."
+     },
+     {
+      "signature": "gopls|r1_history|codeAction:changed",
+      "key": {
+       "method": "codeAction",
+       "path": "doc/rest_docs.go",
+       "line": 78,
+       "character": 1,
+       "extra": "diag:78:32"
+      },
+      "shape": "codeAction:changed",
+      "family": "H4",
+      "history_index": 4,
+      "chain_step": 0,
+      "note": "toggle gopls.semanticTokens: True -> False -> back",
+      "reproduced": "0/0",
+      "ops": 5,
+      "expected": "[[\"Add test for GenReSTCustom\", \"source.addTest\"], [\"Browse arm64 assembly for GenReSTCustom\", \"source.assembly\"], [\"Browse documentation for func GenReSTCustom\", \"source.doc\"], [\"Browse free symbols\", \"source.freesymbols\"], [\"Browse gopls feature documentation\", \"gopls.doc.features\"], [\"Extract variable\", \"refactor.extract.variable\"], [\"Inline call to WriteString\", \"refactor.inline.call\"], [\"Show...",
+      "actual": "[[\"Add test for GenReSTCustom\", \"source.addTest\"], [\"Browse arm64 assembly for GenReSTCustom\", \"source.assembly\"], [\"Browse documentation for func GenReSTCustom\", \"source.doc\"], [\"Browse free symbols\", \"source.freesymbols\"], [\"Browse gopls feature documentation\", \"gopls.doc.features\"], [\"Extract variable\", \"refactor.extract.variable\"], [\"Inline call to WriteString\", \"refactor.inline.call\"], [\"Show..."
+     },
+     {
+      "signature": "gopls|r1_history|codeAction:changed",
+      "key": {
+       "method": "codeAction",
+       "path": "doc/rest_docs.go",
+       "line": 78,
+       "character": 10,
+       "extra": "pos"
+      },
+      "shape": "codeAction:changed",
+      "family": "H4",
+      "history_index": 4,
+      "chain_step": 0,
+      "note": "toggle gopls.semanticTokens: True -> False -> back",
+      "reproduced": "0/0",
+      "ops": 5,
+      "expected": "[[\"Add test for GenReSTCustom\", \"source.addTest\"], [\"Browse arm64 assembly for GenReSTCustom\", \"source.assembly\"], [\"Browse documentation for method bytes.(*Buffer).WriteString\", \"source.doc\"], [\"Browse gopls feature documentation\", \"gopls.doc.features\"], [\"Inline call to WriteString\", \"refactor.inline.call\"], [\"Show compiler optimization details for \\\"doc\\\"\", \"source.toggleCompilerOptDetails\"], [...",
+      "actual": "[[\"Add test for GenReSTCustom\", \"source.addTest\"], [\"Browse arm64 assembly for GenReSTCustom\", \"source.assembly\"], [\"Browse documentation for method bytes.(*Buffer).WriteString\", \"source.doc\"], [\"Browse gopls feature documentation\", \"gopls.doc.features\"], [\"Inline call to WriteString\", \"refactor.inline.call\"], [\"Show compiler optimization details for \\\"doc\\\"\", \"source.toggleCompilerOptDetails\"], [..."
+     },
+     {
+      "signature": "gopls|r1_history|codeAction:changed",
+      "key": {
+       "method": "codeAction",
+       "path": "doc/rest_docs.go",
+       "line": 81,
+       "character": 1,
+       "extra": "diag:81:38"
+      },
+      "shape": "codeAction:changed",
+      "family": "H4",
+      "history_index": 4,
+      "chain_step": 0,
+      "note": "toggle gopls.semanticTokens: True -> False -> back",
+      "reproduced": "0/0",
+      "ops": 5,
+      "expected": "[[\"Add test for GenReSTCustom\", \"source.addTest\"], [\"Browse arm64 assembly for GenReSTCustom\", \"source.assembly\"], [\"Browse documentation for func GenReSTCustom\", \"source.doc\"], [\"Browse free symbols\", \"source.freesymbols\"], [\"Browse gopls feature documentation\", \"gopls.doc.features\"], [\"Extract variable\", \"refactor.extract.variable\"], [\"Inline call to WriteString\", \"refactor.inline.call\"], [\"Show...",
+      "actual": "[[\"Add test for GenReSTCustom\", \"source.addTest\"], [\"Browse arm64 assembly for GenReSTCustom\", \"source.assembly\"], [\"Browse documentation for func GenReSTCustom\", \"source.doc\"], [\"Browse free symbols\", \"source.freesymbols\"], [\"Browse gopls feature documentation\", \"gopls.doc.features\"], [\"Extract variable\", \"refactor.extract.variable\"], [\"Inline call to WriteString\", \"refactor.inline.call\"], [\"Show..."
+     },
+     {
+      "signature": "gopls|r1_history|codeAction:changed",
+      "key": {
+       "method": "codeAction",
+       "path": "doc/rest_docs.go",
+       "line": 125,
+       "character": 2,
+       "extra": "diag:125:97"
+      },
+      "shape": "codeAction:changed",
+      "family": "H4",
+      "history_index": 4,
+      "chain_step": 0,
+      "note": "toggle gopls.semanticTokens: True -> False -> back",
+      "reproduced": "0/0",
+      "ops": 5,
+      "expected": "[[\"Add test for GenReSTCustom\", \"source.addTest\"], [\"Browse arm64 assembly for GenReSTCustom\", \"source.assembly\"], [\"Browse documentation for func GenReSTCustom\", \"source.doc\"], [\"Browse free symbols\", \"source.freesymbols\"], [\"Browse gopls feature documentation\", \"gopls.doc.features\"], [\"Extract variable\", \"refactor.extract.variable\"], [\"Inline call to WriteString\", \"refactor.inline.call\"], [\"Show...",
+      "actual": "[[\"Add test for GenReSTCustom\", \"source.addTest\"], [\"Browse arm64 assembly for GenReSTCustom\", \"source.assembly\"], [\"Browse documentation for func GenReSTCustom\", \"source.doc\"], [\"Browse free symbols\", \"source.freesymbols\"], [\"Browse gopls feature documentation\", \"gopls.doc.features\"], [\"Extract variable\", \"refactor.extract.variable\"], [\"Inline call to WriteString\", \"refactor.inline.call\"], [\"Show..."
+     },
+     {
+      "signature": "gopls|r1_history|completion:extra",
+      "key": {
+       "method": "completion",
+       "path": "doc/rest_docs.go",
+       "line": 57,
+       "character": 28,
+       "extra": ""
+      },
+      "shape": "completion:extra",
+      "family": "H4",
+      "history_index": 4,
+      "chain_step": 0,
+      "note": "toggle gopls.semanticTokens: True -> False -> back",
+      "reproduced": "0/0",
+      "ops": 5,
+      "expected": "[\"w\"]",
+      "actual": "[\"cobra.WriteStringAndCheck\", \"filepath.Walk\", \"filepath.WalkFunc\", \"w\"]"
+     },
+     {
+      "signature": "gopls|r1_history|completion:extra",
+      "key": {
+       "method": "completion",
+       "path": "doc/rest_docs.go",
+       "line": 57,
+       "character": 28,
+       "extra": ""
+      },
+      "shape": "completion:extra",
+      "family": "H8",
+      "history_index": 5,
+      "chain_step": 0,
+      "note": "after command_win.go: insert '(' on line 19 and its inverse, 4 requests in a shuffled order: references@doc/rest_docs.go:162:15, documentHighlight@powershell_completions_test.go:27:18, documentHighlight@doc/rest_docs.go:73:29, signatureHelp@doc/rest_docs.go:155:28",
+      "reproduced": "0/0",
+      "ops": 9,
+      "expected": "[\"w\"]",
+      "actual": "[\"cobra.WriteStringAndCheck\", \"filepath.Walk\", \"filepath.WalkFunc\", \"w\"]"
+     }
+    ],
+    "flake": {
+     "candidates": 14,
+     "signatures": 2,
+     "replayed": 3,
+     "confirmed": 1,
+     "flaky": 2
+    },
+    "confirmations": [
+     {
+      "signature": "gopls|r1_history|completion:extra",
+      "key": {
+       "method": "completion",
+       "path": "doc/rest_docs.go",
+       "line": 57,
+       "character": 28,
+       "extra": ""
+      },
+      "shape": "completion:extra",
+      "family": "H2",
+      "history_index": 0,
+      "chain_step": 0,
+      "note": "command_win.go: delete line 19, retype it in 1 chunk(s)",
+      "reproduced": "1/3",
+      "ops": 5,
+      "expected": "[\"w\"]",
+      "actual": "[\"cobra.WriteStringAndCheck\", \"filepath.Walk\", \"filepath.WalkFunc\", \"w\"]",
+      "detail_note": "H2: command_win.go: delete line 19, retype it in 1 chunk(s); flake 1/3 [r1:Scr r2:SCr r3:SCR] in 85s"
+     },
+     {
+      "signature": "gopls|r1_history|completion:extra",
+      "key": {
+       "method": "completion",
+       "path": "doc/rest_docs.go",
+       "line": 57,
+       "character": 28,
+       "extra": ""
+      },
+      "shape": "completion:extra",
+      "family": "H3",
+      "history_index": 1,
+      "chain_step": 0,
+      "note": "command_win.go: unsaved edit (replace 'preExecHookFn' by 'preExecHookFn_x' on line 27), close, reopen",
+      "reproduced": "2/3",
+      "ops": 6,
+      "expected": "[\"w\"]",
+      "actual": "[\"cobra.WriteStringAndCheck\", \"filepath.Walk\", \"filepath.WalkFunc\", \"w\"]",
+      "detail_note": "H3: command_win.go: unsaved edit (replace 'preExecHookFn' by 'preExecHookFn_x' on line 27), close, reopen; flake 2/3 [r1:SCR r2:SCR r3:Scr] in 89s"
+     },
+     {
+      "signature": "gopls|r1_history|codeAction:changed",
+      "key": {
+       "method": "codeAction",
+       "path": "doc/rest_docs.go",
+       "line": 29,
+       "character": 61,
+       "extra": "diag:29:72"
+      },
+      "shape": "codeAction:changed",
+      "family": "H4",
+      "history_index": 4,
+      "chain_step": 0,
+      "note": "toggle gopls.semanticTokens: True -> False -> back",
+      "reproduced": "3/3",
+      "ops": 5,
+      "expected": "[[\"Add test for printOptionsReST\", \"source.addTest\"], [\"Browse arm64 assembly for printOptionsReST\", \"source.assembly\"], [\"Browse documentation for package doc\", \"source.doc\"], [\"Browse free symbols\", \"source.freesymbols\"], [\"Browse gopls feature documentation\", \"gopls.doc.features\"], [\"Move parameter left\", \"refactor.rewrite.moveParamLeft\"], [\"Remove unused parameter\", \"refactor.rewrite.removeUnu...",
+      "actual": "[[\"Add test for printOptionsReST\", \"source.addTest\"], [\"Browse arm64 assembly for printOptionsReST\", \"source.assembly\"], [\"Browse documentation for package doc\", \"source.doc\"], [\"Browse free symbols\", \"source.freesymbols\"], [\"Browse gopls feature documentation\", \"gopls.doc.features\"], [\"Move parameter left\", \"refactor.rewrite.moveParamLeft\"], [\"Remove unused parameter\", \"refactor.rewrite.removeUnu...",
+      "detail_note": "H4: toggle gopls.semanticTokens: True -> False -> back; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 148s"
+     }
+    ],
+    "confirmed": [
+     {
+      "oracle": "r1_history",
+      "server": "gopls-v0.23.0",
+      "project": "spf13/cobra@adbc8813901b",
+      "key": {
+       "method": "codeAction",
+       "path": "doc/rest_docs.go",
+       "line": 29,
+       "character": 61,
+       "extra": "diag:29:72"
+      },
+      "expected": [
+       [
+        "Add test for printOptionsReST",
+        "source.addTest"
+       ],
+       [
+        "Browse arm64 assembly for printOptionsReST",
+        "source.assembly"
+       ],
+       [
+        "Browse documentation for package doc",
+        "source.doc"
+       ],
+       [
+        "Browse free symbols",
+        "source.freesymbols"
+       ],
+       [
+        "Browse gopls feature documentation",
+        "gopls.doc.features"
+       ],
+       [
+        "Move parameter left",
+        "refactor.rewrite.moveParamLeft"
+       ],
+       [
+        "Remove unused parameter",
+        "refactor.rewrite.removeUnusedParam"
+       ],
+       [
+        "Remove unused parameter \"name\"",
+        "quickfix"
+       ],
+       [
+        "Remove unused parameter \"name\"",
+        "quickfix"
+       ],
+       [
+        "Rename parameter to \"_\"",
+        "quickfix"
+       ],
+       [
+        "Rename parameter to \"_\"",
+        "quickfix"
+       ],
+       [
+        "Show compiler optimization details for \"doc\"",
+        "source.toggleCompilerOptDetails"
+       ],
+       [
+        "Split package \"doc\"",
+        "source.splitPackage"
+       ],
+       [
+        "Split parameters into separate lines",
+        "refactor.rewrite.splitLines"
+       ]
+      ],
+      "actual": [
+       [
+        "Add test for printOptionsReST",
+        "source.addTest"
+       ],
+       [
+        "Browse arm64 assembly for printOptionsReST",
+        "source.assembly"
+       ],
+       [
+        "Browse documentation for package doc",
+        "source.doc"
+       ],
+       [
+        "Browse free symbols",
+        "source.freesymbols"
+       ],
+       [
+        "Browse gopls feature documentation",
+        "gopls.doc.features"
+       ],
+       [
+        "Move parameter left",
+        "refactor.rewrite.moveParamLeft"
+       ],
+       [
+        "Remove unused parameter",
+        "refactor.rewrite.removeUnusedParam"
+       ],
+       [
+        "Remove unused parameter \"name\"",
+        "quickfix"
+       ],
+       [
+        "Remove unused parameter \"name\"",
+        "quickfix"
+       ],
+       [
+        "Remove unused parameter \"name\"",
+        "quickfix"
+       ],
+       [
+        "Remove unused parameter \"name\"",
+        "quickfix"
+       ],
+       [
+        "Rename parameter to \"_\"",
+        "quickfix"
+       ],
+       [
+        "Rename parameter to \"_\"",
+        "quickfix"
+       ],
+       [
+        "Rename parameter to \"_\"",
+        "quickfix"
+       ],
+       [
+        "Rename parameter to \"_\"",
+        "quickfix"
+       ],
+       [
+        "Show compiler optimization details for \"doc\"",
+        "source.toggleCompilerOptDetails"
+       ],
+       [
+        "Split package \"doc\"",
+        "source.splitPackage"
+       ],
+       [
+        "Split parameters into separate lines",
+        "refactor.rewrite.splitLines"
+       ]
+      ],
+      "ops": [
+       {
+        "kind": "open",
+        "path": "command_win.go"
+       },
+       {
+        "kind": "open",
+        "path": "doc/rest_docs.go"
+       },
+       {
+        "kind": "open",
+        "path": "powershell_completions_test.go"
+       },
+       {
+        "kind": "set_config",
+        "settings": {
+         "gopls": {
+          "semanticTokens": false
+         }
+        }
+       },
+       {
+        "kind": "set_config",
+        "settings": {
+         "gopls": {
+          "semanticTokens": true
+         }
+        }
+       }
+      ],
+      "detail": "{\"case\": {\"chain_step\": 0, \"families\": [], \"family\": \"H4\", \"history_index\": 4, \"history_seed\": 2005, \"mode\": \"fresh\", \"note\": \"toggle gopls.semanticTokens: True -> False -> back\", \"seed\": 2, \"timing\": \"settled\"}, \"note\": \"H4: toggle gopls.semanticTokens: True -> False -> back; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 148s\", \"shape\": \"codeAction:changed\"}",
+      "reproduced": "3/3",
+      "reduced_ops": [],
+      "signature": "gopls|r1_history|codeAction:changed",
+      "run_id": "pilot-gopls-settled-s2"
+     }
+    ],
+    "reductions": [
+     {
+      "signature": "gopls|r1_history|codeAction:changed",
+      "family": "H4",
+      "reduced_confirmed": "3/3",
+      "reduction": {
+       "ops": [
+        {
+         "kind": "open",
+         "path": "command_win.go"
+        },
+        {
+         "kind": "set_config",
+         "settings": {
+          "gopls": {
+           "semanticTokens": false
+          }
+         }
+        }
+       ],
+       "original": 5,
+       "probes": 6,
+       "cache_hits": 0,
+       "free_rejects": 0,
+       "seconds": 187.694,
+       "exhausted": false,
+       "log": [
+        [
+         4,
+         true
+        ],
+        [
+         3,
+         false
+        ],
+        [
+         3,
+         true
+        ],
+        [
+         2,
+         true
+        ],
+        [
+         1,
+         false
+        ],
+        [
+         1,
+         false
+        ]
+       ]
+      },
+      "violation": {
+       "oracle": "r1_history",
+       "server": "gopls-v0.23.0",
+       "project": "spf13/cobra@adbc8813901b",
+       "key": {
+        "method": "codeAction",
+        "path": "doc/rest_docs.go",
+        "line": 29,
+        "character": 61,
+        "extra": "diag:29:72"
+       },
+       "expected": [
+        [
+         "Add test for printOptionsReST",
+         "source.addTest"
+        ],
+        [
+         "Browse arm64 assembly for printOptionsReST",
+         "source.assembly"
+        ],
+        [
+         "Browse documentation for package doc",
+         "source.doc"
+        ],
+        [
+         "Browse free symbols",
+         "source.freesymbols"
+        ],
+        [
+         "Browse gopls feature documentation",
+         "gopls.doc.features"
+        ],
+        [
+         "Move parameter left",
+         "refactor.rewrite.moveParamLeft"
+        ],
+        [
+         "Remove unused parameter",
+         "refactor.rewrite.removeUnusedParam"
+        ],
+        [
+         "Remove unused parameter \"name\"",
+         "quickfix"
+        ],
+        [
+         "Remove unused parameter \"name\"",
+         "quickfix"
+        ],
+        [
+         "Rename parameter to \"_\"",
+         "quickfix"
+        ],
+        [
+         "Rename parameter to \"_\"",
+         "quickfix"
+        ],
+        [
+         "Show compiler optimization details for \"doc\"",
+         "source.toggleCompilerOptDetails"
+        ],
+        [
+         "Split package \"doc\"",
+         "source.splitPackage"
+        ],
+        [
+         "Split parameters into separate lines",
+         "refactor.rewrite.splitLines"
+        ]
+       ],
+       "actual": [
+        [
+         "Add test for printOptionsReST",
+         "source.addTest"
+        ],
+        [
+         "Browse arm64 assembly for printOptionsReST",
+         "source.assembly"
+        ],
+        [
+         "Browse documentation for package doc",
+         "source.doc"
+        ],
+        [
+         "Browse free symbols",
+         "source.freesymbols"
+        ],
+        [
+         "Browse gopls feature documentation",
+         "gopls.doc.features"
+        ],
+        [
+         "Move parameter left",
+         "refactor.rewrite.moveParamLeft"
+        ],
+        [
+         "Remove unused parameter",
+         "refactor.rewrite.removeUnusedParam"
+        ],
+        [
+         "Remove unused parameter \"name\"",
+         "quickfix"
+        ],
+        [
+         "Remove unused parameter \"name\"",
+         "quickfix"
+        ],
+        [
+         "Remove unused parameter \"name\"",
+         "quickfix"
+        ],
+        [
+         "Remove unused parameter \"name\"",
+         "quickfix"
+        ],
+        [
+         "Rename parameter to \"_\"",
+         "quickfix"
+        ],
+        [
+         "Rename parameter to \"_\"",
+         "quickfix"
+        ],
+        [
+         "Rename parameter to \"_\"",
+         "quickfix"
+        ],
+        [
+         "Rename parameter to \"_\"",
+         "quickfix"
+        ],
+        [
+         "Show compiler optimization details for \"doc\"",
+         "source.toggleCompilerOptDetails"
+        ],
+        [
+         "Split package \"doc\"",
+         "source.splitPackage"
+        ],
+        [
+         "Split parameters into separate lines",
+         "refactor.rewrite.splitLines"
+        ]
+       ],
+       "ops": [
+        {
+         "kind": "open",
+         "path": "command_win.go"
+        },
+        {
+         "kind": "open",
+         "path": "doc/rest_docs.go"
+        },
+        {
+         "kind": "open",
+         "path": "powershell_completions_test.go"
+        },
+        {
+         "kind": "set_config",
+         "settings": {
+          "gopls": {
+           "semanticTokens": false
+          }
+         }
+        },
+        {
+         "kind": "set_config",
+         "settings": {
+          "gopls": {
+           "semanticTokens": true
+          }
+         }
+        }
+       ],
+       "detail": "{\"case\": {\"chain_step\": 0, \"families\": [], \"family\": \"H4\", \"history_index\": 4, \"history_seed\": 2005, \"mode\": \"fresh\", \"note\": \"toggle gopls.semanticTokens: True -> False -> back\", \"seed\": 2, \"timing\": \"settled\"}, \"note\": \"H4: toggle gopls.semanticTokens: True -> False -> back; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 148s\", \"shape\": \"codeAction:changed\"}",
+       "reproduced": "3/3",
+       "reduced_ops": [
+        {
+         "kind": "open",
+         "path": "command_win.go"
+        },
+        {
+         "kind": "set_config",
+         "settings": {
+          "gopls": {
+           "semanticTokens": false
+          }
+         }
+        }
+       ],
+       "signature": "gopls|r1_history|codeAction:changed",
+       "run_id": "pilot-gopls-settled-s2"
+      }
+     }
+    ],
+    "seconds": 883.9,
+    "server": "gopls",
+    "version": "v0.23.0",
+    "project": "spf13__cobra@adbc8813901b",
+    "max_cases": 6
+   },
+   {
+    "run_id": "pilot-rust-analyzer-settled-s2",
+    "seed": 2,
+    "timing": "settled",
+    "targets": [
+     "solutions/16_lifetimes/lifetimes2.rs",
+     "src/info_file.rs",
+     "tests/integration_tests.rs"
+    ],
+    "run": {
+     "oracle": "r1_history",
+     "run_id": "pilot-rust-analyzer-settled-s2",
+     "cases": 6,
+     "invalid_cases": 0,
+     "sessions": 3,
+     "unsettled": 0,
+     "compared": {
+      "definition": 216,
+      "completion": 216,
+      "hover": 216,
+      "signatureHelp": 216,
+      "documentHighlight": 216,
+      "codeAction": 222,
+      "typeDefinition": 216,
+      "references": 216,
+      "diagnostics": 18,
+      "inlayHint": 18,
+      "documentSymbol": 18,
+      "foldingRange": 18,
+      "semanticTokens": 18
+     },
+     "unstable": {},
+     "seconds": 147.216,
+     "notes": [
+      "chain mode; histories: H2, H3, H7, H5, H4, H8"
+     ]
+    },
+    "candidates": [],
+    "flake": {
+     "candidates": 0,
+     "signatures": 0,
+     "replayed": 0,
+     "confirmed": 0,
+     "flaky": 0
+    },
+    "confirmations": [],
+    "confirmed": [],
+    "reductions": [],
+    "seconds": 147.2,
+    "server": "rust-analyzer",
+    "version": "2026-09-21",
+    "project": "rust-lang__rustlings@a650509c789d",
+    "max_cases": 6
+   }
+  ]
+ },
+ "first_run": {
+  "date": "2026-09-23 14:03",
+  "tool_state": "before the r1_history settle guard and before the engine's workspace-op settle fix",
+  "runs": [
+   {
+    "run_id": "pilot-pyright-settled-s2",
+    "seed": 2,
+    "timing": "settled",
+    "targets": [
+     "src/flask/json/tag.py",
+     "src/flask/wrappers.py",
+     "tests/type_check/typing_route.py"
+    ],
+    "run": {
+     "oracle": "r1_history",
+     "run_id": "pilot-pyright-settled-s2",
+     "cases": 6,
+     "invalid_cases": 0,
+     "sessions": 8,
+     "unsettled": 0,
+     "compared": {
+      "hover": 216,
+      "codeAction": 276,
+      "definition": 216,
+      "documentSymbol": 18,
+      "documentHighlight": 216,
+      "signatureHelp": 216,
+      "typeDefinition": 216,
+      "references": 216,
+      "completion": 216,
+      "diagnostics": 18
+     },
+     "unstable": {},
+     "seconds": 108.629,
+     "notes": [
+      "fresh mode; histories: H2, H3, H7, H5, H4, H8"
+     ]
+    },
+    "candidates": [],
+    "flake": {
+     "candidates": 0,
+     "signatures": 0,
+     "replayed": 0,
+     "confirmed": 0,
+     "flaky": 0
+    },
+    "confirmations": [],
+    "confirmed": [],
+    "reductions": [],
+    "seconds": 108.6,
+    "server": "pyright",
+    "version": "1.1.414",
+    "project": "pallets__flask@d73fa1cdcbd8",
+    "max_cases": 6
+   },
+   {
+    "run_id": "pilot-pyright-race0-s2",
+    "seed": 2,
+    "timing": "race0",
+    "targets": [
+     "src/flask/json/tag.py",
+     "src/flask/wrappers.py",
+     "tests/type_check/typing_route.py"
+    ],
+    "run": {
+     "oracle": "r1_history",
+     "run_id": "pilot-pyright-race0-s2",
+     "cases": 6,
+     "invalid_cases": 0,
+     "sessions": 8,
+     "unsettled": 0,
+     "compared": {
+      "hover": 216,
+      "codeAction": 276,
+      "definition": 216,
+      "documentSymbol": 18,
+      "documentHighlight": 216,
+      "signatureHelp": 216,
+      "typeDefinition": 216,
+      "references": 216,
+      "completion": 216,
+      "diagnostics": 18
+     },
+     "unstable": {},
+     "seconds": 33.554,
+     "notes": [
+      "fresh mode; histories: H2, H3, H7, H5, H4, H8"
+     ]
+    },
+    "candidates": [],
+    "flake": {
+     "candidates": 0,
+     "signatures": 0,
+     "replayed": 0,
+     "confirmed": 0,
+     "flaky": 0
+    },
+    "confirmations": [],
+    "confirmed": [],
+    "reductions": [],
+    "seconds": 33.6,
+    "server": "pyright",
+    "version": "1.1.414",
+    "project": "pallets__flask@d73fa1cdcbd8",
+    "max_cases": 6
+   },
+   {
+    "run_id": "pilot-ts6-settled-s2",
+    "seed": 2,
+    "timing": "settled",
+    "targets": [
+     "src/middleware/devtools.ts",
+     "src/traditional.ts",
+     "tests/immer.test.tsx"
+    ],
+    "run": {
+     "oracle": "r1_history",
+     "run_id": "pilot-ts6-settled-s2",
+     "cases": 6,
+     "invalid_cases": 0,
+     "sessions": 8,
+     "unsettled": 0,
+     "compared": {
+      "definition": 216,
+      "codeAction": 216,
+      "documentHighlight": 216,
+      "references": 216,
+      "typeDefinition": 216,
+      "hover": 216,
+      "foldingRange": 18,
+      "signatureHelp": 216,
+      "completion": 216,
+      "diagnostics": 18,
+      "semanticTokens": 18,
+      "inlayHint": 18,
+      "documentSymbol": 18
+     },
+     "unstable": {},
+     "seconds": 133.02,
+     "notes": [
+      "fresh mode; histories: H2, H3, H7, H5, H4, H8"
+     ]
+    },
+    "candidates": [
+     {
+      "signature": "ts6|r1_history|codeAction:extra",
+      "key": {
+       "method": "codeAction",
+       "path": "tests/immer.test.tsx",
+       "line": 48,
+       "character": 18,
+       "extra": "pos"
+      },
+      "shape": "codeAction:extra",
+      "family": "H7",
+      "history_index": 2,
+      "chain_step": 0,
+      "note": "nest 1>0: H1 tests/immer.test.tsx: insert '}' on line 51, then its inverse | H5 rename src/react.ts -> src/react_rt.ts -> back",
+      "reproduced": "0/0",
+      "ops": 7,
+      "expected": "[[\"Add braces to arrow function\", \"refactor.rewrite.arrow.braces.add\"], [\"Convert to anonymous function\", \"refactor.rewrite.function.anonymous\"], [\"Generate 'get' and 'set' accessors\", \"refactor.rewrite.property.generateAccessors\"], [\"Infer function return type\", \"refactor.rewrite.function.returnType\"], [\"Move to a new file\", \"refactor.move.newFile\"]]",
+      "actual": "[[\"Add braces to arrow function\", \"refactor.rewrite.arrow.braces.add\"], [\"Convert to anonymous function\", \"refactor.rewrite.function.anonymous\"], [\"Generate 'get' and 'set' accessors\", \"refactor.rewrite.property.generateAccessors\"], [\"Infer function return type\", \"refactor.rewrite.function.returnType\"], [\"Infer parameter types from usage\", \"quickfix\"], [\"Move to a new file\", \"refactor.move.newFile..."
+     },
+     {
+      "signature": "ts6|r1_history|diagnostics:extra:2305,7006",
+      "key": {
+       "method": "diagnostics",
+       "path": "tests/immer.test.tsx",
+       "line": -1,
+       "character": -1,
+       "extra": ""
+      },
+      "shape": "diagnostics:extra:2305,7006",
+      "family": "H7",
+      "history_index": 2,
+      "chain_step": 0,
+      "note": "nest 1>0: H1 tests/immer.test.tsx: insert '}' on line 51, then its inverse | H5 rename src/react.ts -> src/react_rt.ts -> back",
+      "reproduced": "0/0",
+      "ops": 7,
+      "expected": "[]",
+      "actual": "[[1, 9, 1, 15, 1, \"2305\", \"typescript\", \"Module '\\\"zustand\\\"' has no exported member 'create'.\"], [12, 15, 12, 20, 1, \"7006\", \"typescript\", \"Parameter 'state' implicitly has an 'any' type.\"], [48, 17, 48, 20, 1, \"7006\", \"typescript\", \"Parameter 'tag' implicitly has an 'any' type.\"], [49, 15, 49, 20, 1, \"7006\", \"typescript\", \"Parameter 'state' implicitly has an 'any' type.\"]]"
+     }
+    ],
+    "flake": {
+     "candidates": 2,
+     "signatures": 2,
+     "replayed": 2,
+     "confirmed": 2,
+     "flaky": 0
+    },
+    "confirmations": [
+     {
+      "signature": "ts6|r1_history|codeAction:extra",
+      "key": {
+       "method": "codeAction",
+       "path": "tests/immer.test.tsx",
+       "line": 48,
+       "character": 18,
+       "extra": "pos"
+      },
+      "shape": "codeAction:extra",
+      "family": "H7",
+      "history_index": 2,
+      "chain_step": 0,
+      "note": "nest 1>0: H1 tests/immer.test.tsx: insert '}' on line 51, then its inverse | H5 rename src/react.ts -> src/react_rt.ts -> back",
+      "reproduced": "3/3",
+      "ops": 7,
+      "expected": "[[\"Add braces to arrow function\", \"refactor.rewrite.arrow.braces.add\"], [\"Convert to anonymous function\", \"refactor.rewrite.function.anonymous\"], [\"Generate 'get' and 'set' accessors\", \"refactor.rewrite.property.generateAccessors\"], [\"Infer function return type\", \"refactor.rewrite.function.returnType\"], [\"Move to a new file\", \"refactor.move.newFile\"]]",
+      "actual": "[[\"Add braces to arrow function\", \"refactor.rewrite.arrow.braces.add\"], [\"Convert to anonymous function\", \"refactor.rewrite.function.anonymous\"], [\"Generate 'get' and 'set' accessors\", \"refactor.rewrite.property.generateAccessors\"], [\"Infer function return type\", \"refactor.rewrite.function.returnType\"], [\"Infer parameter types from usage\", \"quickfix\"], [\"Move to a new file\", \"refactor.move.newFile...",
+      "detail_note": "H7: nest 1>0: H1 tests/immer.test.tsx: insert '}' on line 51, then its inverse | H5 rename src/react.ts -> src/react_rt.ts -> back; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 110s"
+     },
+     {
+      "signature": "ts6|r1_history|diagnostics:extra:2305,7006",
+      "key": {
+       "method": "diagnostics",
+       "path": "tests/immer.test.tsx",
+       "line": -1,
+       "character": -1,
+       "extra": ""
+      },
+      "shape": "diagnostics:extra:2305,7006",
+      "family": "H7",
+      "history_index": 2,
+      "chain_step": 0,
+      "note": "nest 1>0: H1 tests/immer.test.tsx: insert '}' on line 51, then its inverse | H5 rename src/react.ts -> src/react_rt.ts -> back",
+      "reproduced": "3/3",
+      "ops": 7,
+      "expected": "[]",
+      "actual": "[[1, 9, 1, 15, 1, \"2305\", \"typescript\", \"Module '\\\"zustand\\\"' has no exported member 'create'.\"], [12, 15, 12, 20, 1, \"7006\", \"typescript\", \"Parameter 'state' implicitly has an 'any' type.\"], [48, 17, 48, 20, 1, \"7006\", \"typescript\", \"Parameter 'tag' implicitly has an 'any' type.\"], [49, 15, 49, 20, 1, \"7006\", \"typescript\", \"Parameter 'state' implicitly has an 'any' type.\"]]",
+      "detail_note": "H7: nest 1>0: H1 tests/immer.test.tsx: insert '}' on line 51, then its inverse | H5 rename src/react.ts -> src/react_rt.ts -> back; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 110s"
+     }
+    ],
+    "confirmed": [
+     {
+      "oracle": "r1_history",
+      "server": "ts6-6.0.3",
+      "project": "pmndrs/zustand@b57db4f86ef1",
+      "key": {
+       "method": "codeAction",
+       "path": "tests/immer.test.tsx",
+       "line": 48,
+       "character": 18,
+       "extra": "pos"
+      },
+      "expected": [
+       [
+        "Add braces to arrow function",
+        "refactor.rewrite.arrow.braces.add"
+       ],
+       [
+        "Convert to anonymous function",
+        "refactor.rewrite.function.anonymous"
+       ],
+       [
+        "Generate 'get' and 'set' accessors",
+        "refactor.rewrite.property.generateAccessors"
+       ],
+       [
+        "Infer function return type",
+        "refactor.rewrite.function.returnType"
+       ],
+       [
+        "Move to a new file",
+        "refactor.move.newFile"
+       ]
+      ],
+      "actual": [
+       [
+        "Add braces to arrow function",
+        "refactor.rewrite.arrow.braces.add"
+       ],
+       [
+        "Convert to anonymous function",
+        "refactor.rewrite.function.anonymous"
+       ],
+       [
+        "Generate 'get' and 'set' accessors",
+        "refactor.rewrite.property.generateAccessors"
+       ],
+       [
+        "Infer function return type",
+        "refactor.rewrite.function.returnType"
+       ],
+       [
+        "Infer parameter types from usage",
+        "quickfix"
+       ],
+       [
+        "Move to a new file",
+        "refactor.move.newFile"
+       ]
+      ],
+      "ops": [
+       {
+        "kind": "open",
+        "path": "src/middleware/devtools.ts"
+       },
+       {
+        "kind": "open",
+        "path": "src/traditional.ts"
+       },
+       {
+        "kind": "open",
+        "path": "tests/immer.test.tsx"
+       },
+       {
+        "kind": "fs_rename",
+        "path": "src/react.ts",
+        "new_path": "src/react_rt.ts"
+       },
+       {
+        "kind": "change",
+        "path": "tests/immer.test.tsx",
+        "start": [
+         51,
+         1
+        ],
+        "end": [
+         51,
+         1
+        ],
+        "text": "}"
+       },
+       {
+        "kind": "change",
+        "path": "tests/immer.test.tsx",
+        "start": [
+         51,
+         1
+        ],
+        "end": [
+         51,
+         2
+        ]
+       },
+       {
+        "kind": "fs_rename",
+        "path": "src/react_rt.ts",
+        "new_path": "src/react.ts"
+       }
+      ],
+      "detail": "{\"case\": {\"chain_step\": 0, \"families\": [], \"family\": \"H7\", \"history_index\": 2, \"history_seed\": 2003, \"mode\": \"fresh\", \"note\": \"nest 1>0: H1 tests/immer.test.tsx: insert '}' on line 51, then its inverse | H5 rename src/react.ts -> src/react_rt.ts -> back\", \"seed\": 2, \"timing\": \"settled\"}, \"note\": \"H7: nest 1>0: H1 tests/immer.test.tsx: insert '}' on line 51, then its inverse | H5 rename src/react.ts -> src/react_rt.ts -> back; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 110s\", \"shape\": \"codeAction:extra\"}",
+      "reproduced": "3/3",
+      "reduced_ops": [],
+      "signature": "ts6|r1_history|codeAction:extra",
+      "run_id": "pilot-ts6-settled-s2"
+     },
+     {
+      "oracle": "r1_history",
+      "server": "ts6-6.0.3",
+      "project": "pmndrs/zustand@b57db4f86ef1",
+      "key": {
+       "method": "diagnostics",
+       "path": "tests/immer.test.tsx",
+       "line": -1,
+       "character": -1,
+       "extra": ""
+      },
+      "expected": [],
+      "actual": [
+       [
+        1,
+        9,
+        1,
+        15,
+        1,
+        "2305",
+        "typescript",
+        "Module '\"zustand\"' has no exported member 'create'."
+       ],
+       [
+        12,
+        15,
+        12,
+        20,
+        1,
+        "7006",
+        "typescript",
+        "Parameter 'state' implicitly has an 'any' type."
+       ],
+       [
+        48,
+        17,
+        48,
+        20,
+        1,
+        "7006",
+        "typescript",
+        "Parameter 'tag' implicitly has an 'any' type."
+       ],
+       [
+        49,
+        15,
+        49,
+        20,
+        1,
+        "7006",
+        "typescript",
+        "Parameter 'state' implicitly has an 'any' type."
+       ]
+      ],
+      "ops": [
+       {
+        "kind": "open",
+        "path": "src/middleware/devtools.ts"
+       },
+       {
+        "kind": "open",
+        "path": "src/traditional.ts"
+       },
+       {
+        "kind": "open",
+        "path": "tests/immer.test.tsx"
+       },
+       {
+        "kind": "fs_rename",
+        "path": "src/react.ts",
+        "new_path": "src/react_rt.ts"
+       },
+       {
+        "kind": "change",
+        "path": "tests/immer.test.tsx",
+        "start": [
+         51,
+         1
+        ],
+        "end": [
+         51,
+         1
+        ],
+        "text": "}"
+       },
+       {
+        "kind": "change",
+        "path": "tests/immer.test.tsx",
+        "start": [
+         51,
+         1
+        ],
+        "end": [
+         51,
+         2
+        ]
+       },
+       {
+        "kind": "fs_rename",
+        "path": "src/react_rt.ts",
+        "new_path": "src/react.ts"
+       }
+      ],
+      "detail": "{\"case\": {\"chain_step\": 0, \"families\": [], \"family\": \"H7\", \"history_index\": 2, \"history_seed\": 2003, \"mode\": \"fresh\", \"note\": \"nest 1>0: H1 tests/immer.test.tsx: insert '}' on line 51, then its inverse | H5 rename src/react.ts -> src/react_rt.ts -> back\", \"seed\": 2, \"timing\": \"settled\"}, \"note\": \"H7: nest 1>0: H1 tests/immer.test.tsx: insert '}' on line 51, then its inverse | H5 rename src/react.ts -> src/react_rt.ts -> back; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 110s\", \"shape\": \"diagnostics:extra:2305,7006\"}",
+      "reproduced": "3/3",
+      "reduced_ops": [],
+      "signature": "ts6|r1_history|diagnostics:extra:2305,7006",
+      "run_id": "pilot-ts6-settled-s2"
+     }
+    ],
+    "reductions": [
+     {
+      "signature": "ts6|r1_history|codeAction:extra",
+      "family": "H7",
+      "reduced_confirmed": "3/3",
+      "reduction": {
+       "ops": [
+        {
+         "kind": "open",
+         "path": "src/middleware/devtools.ts"
+        },
+        {
+         "kind": "open",
+         "path": "src/traditional.ts"
+        },
+        {
+         "kind": "open",
+         "path": "tests/immer.test.tsx"
+        },
+        {
+         "kind": "fs_rename",
+         "path": "src/react.ts",
+         "new_path": "src/react_rt.ts"
+        },
+        {
+         "kind": "change",
+         "path": "tests/immer.test.tsx",
+         "start": [
+          51,
+          1
+         ],
+         "end": [
+          51,
+          2
+         ]
+        },
+        {
+         "kind": "fs_rename",
+         "path": "src/react_rt.ts",
+         "new_path": "src/react.ts"
+        }
+       ],
+       "original": 7,
+       "probes": 12,
+       "cache_hits": 4,
+       "free_rejects": 1,
+       "seconds": 367.654,
+       "exhausted": false,
+       "log": [
+        [
+         5,
+         false
+        ],
+        [
+         5,
+         false
+        ],
+        [
+         4,
+         false
+        ],
+        [
+         4,
+         false
+        ],
+        [
+         4,
+         false
+        ],
+        [
+         4,
+         false
+        ],
+        [
+         6,
+         false
+        ],
+        [
+         6,
+         true
+        ],
+        [
+         5,
+         false
+        ],
+        [
+         5,
+         false
+        ],
+        [
+         5,
+         false
+        ],
+        [
+         5,
+         false
+        ]
+       ]
+      },
+      "violation": {
+       "oracle": "r1_history",
+       "server": "ts6-6.0.3",
+       "project": "pmndrs/zustand@b57db4f86ef1",
+       "key": {
+        "method": "codeAction",
+        "path": "tests/immer.test.tsx",
+        "line": 48,
+        "character": 18,
+        "extra": "pos"
+       },
+       "expected": [
+        [
+         "Add braces to arrow function",
+         "refactor.rewrite.arrow.braces.add"
+        ],
+        [
+         "Convert to anonymous function",
+         "refactor.rewrite.function.anonymous"
+        ],
+        [
+         "Generate 'get' and 'set' accessors",
+         "refactor.rewrite.property.generateAccessors"
+        ],
+        [
+         "Infer function return type",
+         "refactor.rewrite.function.returnType"
+        ],
+        [
+         "Move to a new file",
+         "refactor.move.newFile"
+        ]
+       ],
+       "actual": [
+        [
+         "Add braces to arrow function",
+         "refactor.rewrite.arrow.braces.add"
+        ],
+        [
+         "Convert to anonymous function",
+         "refactor.rewrite.function.anonymous"
+        ],
+        [
+         "Generate 'get' and 'set' accessors",
+         "refactor.rewrite.property.generateAccessors"
+        ],
+        [
+         "Infer function return type",
+         "refactor.rewrite.function.returnType"
+        ],
+        [
+         "Infer parameter types from usage",
+         "quickfix"
+        ],
+        [
+         "Move to a new file",
+         "refactor.move.newFile"
+        ]
+       ],
+       "ops": [
+        {
+         "kind": "open",
+         "path": "src/middleware/devtools.ts"
+        },
+        {
+         "kind": "open",
+         "path": "src/traditional.ts"
+        },
+        {
+         "kind": "open",
+         "path": "tests/immer.test.tsx"
+        },
+        {
+         "kind": "fs_rename",
+         "path": "src/react.ts",
+         "new_path": "src/react_rt.ts"
+        },
+        {
+         "kind": "change",
+         "path": "tests/immer.test.tsx",
+         "start": [
+          51,
+          1
+         ],
+         "end": [
+          51,
+          1
+         ],
+         "text": "}"
+        },
+        {
+         "kind": "change",
+         "path": "tests/immer.test.tsx",
+         "start": [
+          51,
+          1
+         ],
+         "end": [
+          51,
+          2
+         ]
+        },
+        {
+         "kind": "fs_rename",
+         "path": "src/react_rt.ts",
+         "new_path": "src/react.ts"
+        }
+       ],
+       "detail": "{\"case\": {\"chain_step\": 0, \"families\": [], \"family\": \"H7\", \"history_index\": 2, \"history_seed\": 2003, \"mode\": \"fresh\", \"note\": \"nest 1>0: H1 tests/immer.test.tsx: insert '}' on line 51, then its inverse | H5 rename src/react.ts -> src/react_rt.ts -> back\", \"seed\": 2, \"timing\": \"settled\"}, \"note\": \"H7: nest 1>0: H1 tests/immer.test.tsx: insert '}' on line 51, then its inverse | H5 rename src/react.ts -> src/react_rt.ts -> back; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 110s\", \"shape\": \"codeAction:extra\"}",
+       "reproduced": "3/3",
+       "reduced_ops": [
+        {
+         "kind": "open",
+         "path": "src/middleware/devtools.ts"
+        },
+        {
+         "kind": "open",
+         "path": "src/traditional.ts"
+        },
+        {
+         "kind": "open",
+         "path": "tests/immer.test.tsx"
+        },
+        {
+         "kind": "fs_rename",
+         "path": "src/react.ts",
+         "new_path": "src/react_rt.ts"
+        },
+        {
+         "kind": "change",
+         "path": "tests/immer.test.tsx",
+         "start": [
+          51,
+          1
+         ],
+         "end": [
+          51,
+          2
+         ]
+        },
+        {
+         "kind": "fs_rename",
+         "path": "src/react_rt.ts",
+         "new_path": "src/react.ts"
+        }
+       ],
+       "signature": "ts6|r1_history|codeAction:extra",
+       "run_id": "pilot-ts6-settled-s2"
+      }
+     }
+    ],
+    "seconds": 838.4,
+    "server": "ts6",
+    "version": "6.0.3",
+    "project": "pmndrs__zustand@b57db4f86ef1",
+    "max_cases": 6
+   },
+   {
+    "run_id": "pilot-ts7-settled-s2",
+    "seed": 2,
+    "timing": "settled",
+    "targets": [
+     "src/middleware/devtools.ts",
+     "src/traditional.ts",
+     "tests/immer.test.tsx"
+    ],
+    "run": {
+     "oracle": "r1_history",
+     "run_id": "pilot-ts7-settled-s2",
+     "cases": 6,
+     "invalid_cases": 0,
+     "sessions": 8,
+     "unsettled": 0,
+     "compared": {
+      "definition": 216,
+      "codeAction": 216,
+      "documentHighlight": 216,
+      "references": 216,
+      "typeDefinition": 216,
+      "hover": 216,
+      "foldingRange": 18,
+      "signatureHelp": 216,
+      "completion": 216,
+      "diagnostics": 18,
+      "semanticTokens": 18,
+      "inlayHint": 18,
+      "documentSymbol": 18
+     },
+     "unstable": {},
+     "seconds": 133.087,
+     "notes": [
+      "fresh mode; histories: H2, H3, H7, H5, H4, H8"
+     ]
+    },
+    "candidates": [],
+    "flake": {
+     "candidates": 0,
+     "signatures": 0,
+     "replayed": 0,
+     "confirmed": 0,
+     "flaky": 0
+    },
+    "confirmations": [],
+    "confirmed": [],
+    "reductions": [],
+    "seconds": 133.1,
+    "server": "ts7",
+    "version": "7.0.2",
+    "project": "pmndrs__zustand@b57db4f86ef1",
+    "max_cases": 6
+   },
+   {
+    "run_id": "pilot-gopls-settled-s2",
+    "seed": 2,
+    "timing": "settled",
+    "targets": [
+     "command_win.go",
+     "doc/rest_docs.go",
+     "powershell_completions_test.go"
+    ],
+    "run": {
+     "oracle": "r1_history",
+     "run_id": "pilot-gopls-settled-s2",
+     "cases": 6,
+     "invalid_cases": 0,
+     "sessions": 8,
+     "unsettled": 0,
+     "compared": {
+      "signatureHelp": 216,
+      "codeAction": 258,
+      "definition": 216,
+      "hover": 216,
+      "completion": 210,
+      "references": 216,
+      "documentHighlight": 216,
+      "typeDefinition": 216,
+      "inlayHint": 18,
+      "diagnostics": 18,
+      "foldingRange": 18,
+      "documentSymbol": 18,
+      "semanticTokens": 18
+     },
+     "unstable": {
+      "completion": 1
+     },
+     "seconds": 140.323,
+     "notes": [
+      "fresh mode; histories: H2, H3, H7, H5, H4, H8"
+     ]
+    },
+    "candidates": [
+     {
+      "signature": "gopls|r1_history|codeAction:changed",
+      "key": {
+       "method": "codeAction",
+       "path": "doc/rest_docs.go",
+       "line": 29,
+       "character": 61,
+       "extra": "diag:29:72"
+      },
+      "shape": "codeAction:changed",
+      "family": "H4",
+      "history_index": 4,
+      "chain_step": 0,
+      "note": "toggle gopls.semanticTokens: True -> False -> back",
+      "reproduced": "0/0",
+      "ops": 5,
+      "expected": "[[\"Add test for printOptionsReST\", \"source.addTest\"], [\"Browse arm64 assembly for printOptionsReST\", \"source.assembly\"], [\"Browse documentation for package doc\", \"source.doc\"], [\"Browse free symbols\", \"source.freesymbols\"], [\"Browse gopls feature documentation\", \"gopls.doc.features\"], [\"Move parameter left\", \"refactor.rewrite.moveParamLeft\"], [\"Remove unused parameter\", \"refactor.rewrite.removeUnu...",
+      "actual": "[[\"Add test for printOptionsReST\", \"source.addTest\"], [\"Browse arm64 assembly for printOptionsReST\", \"source.assembly\"], [\"Browse documentation for package doc\", \"source.doc\"], [\"Browse free symbols\", \"source.freesymbols\"], [\"Browse gopls feature documentation\", \"gopls.doc.features\"], [\"Move parameter left\", \"refactor.rewrite.moveParamLeft\"], [\"Remove unused parameter\", \"refactor.rewrite.removeUnu..."
+     },
+     {
+      "signature": "gopls|r1_history|codeAction:changed",
+      "key": {
+       "method": "codeAction",
+       "path": "doc/rest_docs.go",
+       "line": 75,
+       "character": 1,
+       "extra": "diag:75:40"
+      },
+      "shape": "codeAction:changed",
+      "family": "H4",
+      "history_index": 4,
+      "chain_step": 0,
+      "note": "toggle gopls.semanticTokens: True -> False -> back",
+      "reproduced": "0/0",
+      "ops": 5,
+      "expected": "[[\"Add test for GenReSTCustom\", \"source.addTest\"], [\"Browse arm64 assembly for GenReSTCustom\", \"source.assembly\"], [\"Browse documentation for func GenReSTCustom\", \"source.doc\"], [\"Browse free symbols\", \"source.freesymbols\"], [\"Browse gopls feature documentation\", \"gopls.doc.features\"], [\"Extract variable\", \"refactor.extract.variable\"], [\"Inline call to WriteString\", \"refactor.inline.call\"], [\"Show...",
+      "actual": "[[\"Add test for GenReSTCustom\", \"source.addTest\"], [\"Browse arm64 assembly for GenReSTCustom\", \"source.assembly\"], [\"Browse documentation for func GenReSTCustom\", \"source.doc\"], [\"Browse free symbols\", \"source.freesymbols\"], [\"Browse gopls feature documentation\", \"gopls.doc.features\"], [\"Extract variable\", \"refactor.extract.variable\"], [\"Inline call to WriteString\", \"refactor.inline.call\"], [\"Show..."
+     },
+     {
+      "signature": "gopls|r1_history|codeAction:changed",
+      "key": {
+       "method": "codeAction",
+       "path": "doc/rest_docs.go",
+       "line": 76,
+       "character": 1,
+       "extra": "diag:76:29"
+      },
+      "shape": "codeAction:changed",
+      "family": "H4",
+      "history_index": 4,
+      "chain_step": 0,
+      "note": "toggle gopls.semanticTokens: True -> False -> back",
+      "reproduced": "0/0",
+      "ops": 5,
+      "expected": "[[\"Add test for GenReSTCustom\", \"source.addTest\"], [\"Browse arm64 assembly for GenReSTCustom\", \"source.assembly\"], [\"Browse documentation for func GenReSTCustom\", \"source.doc\"], [\"Browse free symbols\", \"source.freesymbols\"], [\"Browse gopls feature documentation\", \"gopls.doc.features\"], [\"Extract variable\", \"refactor.extract.variable\"], [\"Inline call to WriteString\", \"refactor.inline.call\"], [\"Show...",
+      "actual": "[[\"Add test for GenReSTCustom\", \"source.addTest\"], [\"Browse arm64 assembly for GenReSTCustom\", \"source.assembly\"], [\"Browse documentation for func GenReSTCustom\", \"source.doc\"], [\"Browse free symbols\", \"source.freesymbols\"], [\"Browse gopls feature documentation\", \"gopls.doc.features\"], [\"Extract variable\", \"refactor.extract.variable\"], [\"Inline call to WriteString\", \"refactor.inline.call\"], [\"Show..."
+     },
+     {
+      "signature": "gopls|r1_history|codeAction:changed",
+      "key": {
+       "method": "codeAction",
+       "path": "doc/rest_docs.go",
+       "line": 77,
+       "character": 1,
+       "extra": "diag:77:57"
+      },
+      "shape": "codeAction:changed",
+      "family": "H4",
+      "history_index": 4,
+      "chain_step": 0,
+      "note": "toggle gopls.semanticTokens: True -> False -> back",
+      "reproduced": "0/0",
+      "ops": 5,
+      "expected": "[[\"Add test for GenReSTCustom\", \"source.addTest\"], [\"Browse arm64 assembly for GenReSTCustom\", \"source.assembly\"], [\"Browse documentation for func GenReSTCustom\", \"source.doc\"], [\"Browse free symbols\", \"source.freesymbols\"], [\"Browse gopls feature documentation\", \"gopls.doc.features\"], [\"Extract variable\", \"refactor.extract.variable\"], [\"Inline call to WriteString\", \"refactor.inline.call\"], [\"Show...",
+      "actual": "[[\"Add test for GenReSTCustom\", \"source.addTest\"], [\"Browse arm64 assembly for GenReSTCustom\", \"source.assembly\"], [\"Browse documentation for func GenReSTCustom\", \"source.doc\"], [\"Browse free symbols\", \"source.freesymbols\"], [\"Browse gopls feature documentation\", \"gopls.doc.features\"], [\"Extract variable\", \"refactor.extract.variable\"], [\"Inline call to WriteString\", \"refactor.inline.call\"], [\"Show..."
+     },
+     {
+      "signature": "gopls|r1_history|codeAction:changed",
+      "key": {
+       "method": "codeAction",
+       "path": "doc/rest_docs.go",
+       "line": 78,
+       "character": 1,
+       "extra": "diag:78:32"
+      },
+      "shape": "codeAction:changed",
+      "family": "H4",
+      "history_index": 4,
+      "chain_step": 0,
+      "note": "toggle gopls.semanticTokens: True -> False -> back",
+      "reproduced": "0/0",
+      "ops": 5,
+      "expected": "[[\"Add test for GenReSTCustom\", \"source.addTest\"], [\"Browse arm64 assembly for GenReSTCustom\", \"source.assembly\"], [\"Browse documentation for func GenReSTCustom\", \"source.doc\"], [\"Browse free symbols\", \"source.freesymbols\"], [\"Browse gopls feature documentation\", \"gopls.doc.features\"], [\"Extract variable\", \"refactor.extract.variable\"], [\"Inline call to WriteString\", \"refactor.inline.call\"], [\"Show...",
+      "actual": "[[\"Add test for GenReSTCustom\", \"source.addTest\"], [\"Browse arm64 assembly for GenReSTCustom\", \"source.assembly\"], [\"Browse documentation for func GenReSTCustom\", \"source.doc\"], [\"Browse free symbols\", \"source.freesymbols\"], [\"Browse gopls feature documentation\", \"gopls.doc.features\"], [\"Extract variable\", \"refactor.extract.variable\"], [\"Inline call to WriteString\", \"refactor.inline.call\"], [\"Show..."
+     },
+     {
+      "signature": "gopls|r1_history|codeAction:changed",
+      "key": {
+       "method": "codeAction",
+       "path": "doc/rest_docs.go",
+       "line": 78,
+       "character": 10,
+       "extra": "pos"
+      },
+      "shape": "codeAction:changed",
+      "family": "H4",
+      "history_index": 4,
+      "chain_step": 0,
+      "note": "toggle gopls.semanticTokens: True -> False -> back",
+      "reproduced": "0/0",
+      "ops": 5,
+      "expected": "[[\"Add test for GenReSTCustom\", \"source.addTest\"], [\"Browse arm64 assembly for GenReSTCustom\", \"source.assembly\"], [\"Browse documentation for method bytes.(*Buffer).WriteString\", \"source.doc\"], [\"Browse gopls feature documentation\", \"gopls.doc.features\"], [\"Inline call to WriteString\", \"refactor.inline.call\"], [\"Show compiler optimization details for \\\"doc\\\"\", \"source.toggleCompilerOptDetails\"], [...",
+      "actual": "[[\"Add test for GenReSTCustom\", \"source.addTest\"], [\"Browse arm64 assembly for GenReSTCustom\", \"source.assembly\"], [\"Browse documentation for method bytes.(*Buffer).WriteString\", \"source.doc\"], [\"Browse gopls feature documentation\", \"gopls.doc.features\"], [\"Inline call to WriteString\", \"refactor.inline.call\"], [\"Show compiler optimization details for \\\"doc\\\"\", \"source.toggleCompilerOptDetails\"], [..."
+     },
+     {
+      "signature": "gopls|r1_history|codeAction:changed",
+      "key": {
+       "method": "codeAction",
+       "path": "doc/rest_docs.go",
+       "line": 81,
+       "character": 1,
+       "extra": "diag:81:38"
+      },
+      "shape": "codeAction:changed",
+      "family": "H4",
+      "history_index": 4,
+      "chain_step": 0,
+      "note": "toggle gopls.semanticTokens: True -> False -> back",
+      "reproduced": "0/0",
+      "ops": 5,
+      "expected": "[[\"Add test for GenReSTCustom\", \"source.addTest\"], [\"Browse arm64 assembly for GenReSTCustom\", \"source.assembly\"], [\"Browse documentation for func GenReSTCustom\", \"source.doc\"], [\"Browse free symbols\", \"source.freesymbols\"], [\"Browse gopls feature documentation\", \"gopls.doc.features\"], [\"Extract variable\", \"refactor.extract.variable\"], [\"Inline call to WriteString\", \"refactor.inline.call\"], [\"Show...",
+      "actual": "[[\"Add test for GenReSTCustom\", \"source.addTest\"], [\"Browse arm64 assembly for GenReSTCustom\", \"source.assembly\"], [\"Browse documentation for func GenReSTCustom\", \"source.doc\"], [\"Browse free symbols\", \"source.freesymbols\"], [\"Browse gopls feature documentation\", \"gopls.doc.features\"], [\"Extract variable\", \"refactor.extract.variable\"], [\"Inline call to WriteString\", \"refactor.inline.call\"], [\"Show..."
+     },
+     {
+      "signature": "gopls|r1_history|codeAction:changed",
+      "key": {
+       "method": "codeAction",
+       "path": "doc/rest_docs.go",
+       "line": 125,
+       "character": 2,
+       "extra": "diag:125:97"
+      },
+      "shape": "codeAction:changed",
+      "family": "H4",
+      "history_index": 4,
+      "chain_step": 0,
+      "note": "toggle gopls.semanticTokens: True -> False -> back",
+      "reproduced": "0/0",
+      "ops": 5,
+      "expected": "[[\"Add test for GenReSTCustom\", \"source.addTest\"], [\"Browse arm64 assembly for GenReSTCustom\", \"source.assembly\"], [\"Browse documentation for func GenReSTCustom\", \"source.doc\"], [\"Browse free symbols\", \"source.freesymbols\"], [\"Browse gopls feature documentation\", \"gopls.doc.features\"], [\"Extract variable\", \"refactor.extract.variable\"], [\"Inline call to WriteString\", \"refactor.inline.call\"], [\"Show...",
+      "actual": "[[\"Add test for GenReSTCustom\", \"source.addTest\"], [\"Browse arm64 assembly for GenReSTCustom\", \"source.assembly\"], [\"Browse documentation for func GenReSTCustom\", \"source.doc\"], [\"Browse free symbols\", \"source.freesymbols\"], [\"Browse gopls feature documentation\", \"gopls.doc.features\"], [\"Extract variable\", \"refactor.extract.variable\"], [\"Inline call to WriteString\", \"refactor.inline.call\"], [\"Show..."
+     }
+    ],
+    "flake": {
+     "candidates": 8,
+     "signatures": 1,
+     "replayed": 1,
+     "confirmed": 1,
+     "flaky": 0
+    },
+    "confirmations": [
+     {
+      "signature": "gopls|r1_history|codeAction:changed",
+      "key": {
+       "method": "codeAction",
+       "path": "doc/rest_docs.go",
+       "line": 29,
+       "character": 61,
+       "extra": "diag:29:72"
+      },
+      "shape": "codeAction:changed",
+      "family": "H4",
+      "history_index": 4,
+      "chain_step": 0,
+      "note": "toggle gopls.semanticTokens: True -> False -> back",
+      "reproduced": "3/3",
+      "ops": 5,
+      "expected": "[[\"Add test for printOptionsReST\", \"source.addTest\"], [\"Browse arm64 assembly for printOptionsReST\", \"source.assembly\"], [\"Browse documentation for package doc\", \"source.doc\"], [\"Browse free symbols\", \"source.freesymbols\"], [\"Browse gopls feature documentation\", \"gopls.doc.features\"], [\"Move parameter left\", \"refactor.rewrite.moveParamLeft\"], [\"Remove unused parameter\", \"refactor.rewrite.removeUnu...",
+      "actual": "[[\"Add test for printOptionsReST\", \"source.addTest\"], [\"Browse arm64 assembly for printOptionsReST\", \"source.assembly\"], [\"Browse documentation for package doc\", \"source.doc\"], [\"Browse free symbols\", \"source.freesymbols\"], [\"Browse gopls feature documentation\", \"gopls.doc.features\"], [\"Move parameter left\", \"refactor.rewrite.moveParamLeft\"], [\"Remove unused parameter\", \"refactor.rewrite.removeUnu...",
+      "detail_note": "H4: toggle gopls.semanticTokens: True -> False -> back; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 80s"
+     }
+    ],
+    "confirmed": [
+     {
+      "oracle": "r1_history",
+      "server": "gopls-v0.23.0",
+      "project": "spf13/cobra@adbc8813901b",
+      "key": {
+       "method": "codeAction",
+       "path": "doc/rest_docs.go",
+       "line": 29,
+       "character": 61,
+       "extra": "diag:29:72"
+      },
+      "expected": [
+       [
+        "Add test for printOptionsReST",
+        "source.addTest"
+       ],
+       [
+        "Browse arm64 assembly for printOptionsReST",
+        "source.assembly"
+       ],
+       [
+        "Browse documentation for package doc",
+        "source.doc"
+       ],
+       [
+        "Browse free symbols",
+        "source.freesymbols"
+       ],
+       [
+        "Browse gopls feature documentation",
+        "gopls.doc.features"
+       ],
+       [
+        "Move parameter left",
+        "refactor.rewrite.moveParamLeft"
+       ],
+       [
+        "Remove unused parameter",
+        "refactor.rewrite.removeUnusedParam"
+       ],
+       [
+        "Remove unused parameter \"name\"",
+        "quickfix"
+       ],
+       [
+        "Remove unused parameter \"name\"",
+        "quickfix"
+       ],
+       [
+        "Rename parameter to \"_\"",
+        "quickfix"
+       ],
+       [
+        "Rename parameter to \"_\"",
+        "quickfix"
+       ],
+       [
+        "Show compiler optimization details for \"doc\"",
+        "source.toggleCompilerOptDetails"
+       ],
+       [
+        "Split package \"doc\"",
+        "source.splitPackage"
+       ],
+       [
+        "Split parameters into separate lines",
+        "refactor.rewrite.splitLines"
+       ]
+      ],
+      "actual": [
+       [
+        "Add test for printOptionsReST",
+        "source.addTest"
+       ],
+       [
+        "Browse arm64 assembly for printOptionsReST",
+        "source.assembly"
+       ],
+       [
+        "Browse documentation for package doc",
+        "source.doc"
+       ],
+       [
+        "Browse free symbols",
+        "source.freesymbols"
+       ],
+       [
+        "Browse gopls feature documentation",
+        "gopls.doc.features"
+       ],
+       [
+        "Move parameter left",
+        "refactor.rewrite.moveParamLeft"
+       ],
+       [
+        "Remove unused parameter",
+        "refactor.rewrite.removeUnusedParam"
+       ],
+       [
+        "Remove unused parameter \"name\"",
+        "quickfix"
+       ],
+       [
+        "Remove unused parameter \"name\"",
+        "quickfix"
+       ],
+       [
+        "Remove unused parameter \"name\"",
+        "quickfix"
+       ],
+       [
+        "Remove unused parameter \"name\"",
+        "quickfix"
+       ],
+       [
+        "Rename parameter to \"_\"",
+        "quickfix"
+       ],
+       [
+        "Rename parameter to \"_\"",
+        "quickfix"
+       ],
+       [
+        "Rename parameter to \"_\"",
+        "quickfix"
+       ],
+       [
+        "Rename parameter to \"_\"",
+        "quickfix"
+       ],
+       [
+        "Show compiler optimization details for \"doc\"",
+        "source.toggleCompilerOptDetails"
+       ],
+       [
+        "Split package \"doc\"",
+        "source.splitPackage"
+       ],
+       [
+        "Split parameters into separate lines",
+        "refactor.rewrite.splitLines"
+       ]
+      ],
+      "ops": [
+       {
+        "kind": "open",
+        "path": "command_win.go"
+       },
+       {
+        "kind": "open",
+        "path": "doc/rest_docs.go"
+       },
+       {
+        "kind": "open",
+        "path": "powershell_completions_test.go"
+       },
+       {
+        "kind": "set_config",
+        "settings": {
+         "gopls": {
+          "semanticTokens": false
+         }
+        }
+       },
+       {
+        "kind": "set_config",
+        "settings": {
+         "gopls": {
+          "semanticTokens": true
+         }
+        }
+       }
+      ],
+      "detail": "{\"case\": {\"chain_step\": 0, \"families\": [], \"family\": \"H4\", \"history_index\": 4, \"history_seed\": 2005, \"mode\": \"fresh\", \"note\": \"toggle gopls.semanticTokens: True -> False -> back\", \"seed\": 2, \"timing\": \"settled\"}, \"note\": \"H4: toggle gopls.semanticTokens: True -> False -> back; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 80s\", \"shape\": \"codeAction:changed\"}",
+      "reproduced": "3/3",
+      "reduced_ops": [],
+      "signature": "gopls|r1_history|codeAction:changed",
+      "run_id": "pilot-gopls-settled-s2"
+     }
+    ],
+    "reductions": [
+     {
+      "signature": "gopls|r1_history|codeAction:changed",
+      "family": "H4",
+      "reduced_confirmed": "3/3",
+      "reduction": {
+       "ops": [
+        {
+         "kind": "open",
+         "path": "command_win.go"
+        },
+        {
+         "kind": "set_config",
+         "settings": {
+          "gopls": {
+           "semanticTokens": false
+          }
+         }
+        }
+       ],
+       "original": 5,
+       "probes": 6,
+       "cache_hits": 0,
+       "free_rejects": 0,
+       "seconds": 95.946,
+       "exhausted": false,
+       "log": [
+        [
+         4,
+         true
+        ],
+        [
+         3,
+         false
+        ],
+        [
+         3,
+         true
+        ],
+        [
+         2,
+         true
+        ],
+        [
+         1,
+         false
+        ],
+        [
+         1,
+         false
+        ]
+       ]
+      },
+      "violation": {
+       "oracle": "r1_history",
+       "server": "gopls-v0.23.0",
+       "project": "spf13/cobra@adbc8813901b",
+       "key": {
+        "method": "codeAction",
+        "path": "doc/rest_docs.go",
+        "line": 29,
+        "character": 61,
+        "extra": "diag:29:72"
+       },
+       "expected": [
+        [
+         "Add test for printOptionsReST",
+         "source.addTest"
+        ],
+        [
+         "Browse arm64 assembly for printOptionsReST",
+         "source.assembly"
+        ],
+        [
+         "Browse documentation for package doc",
+         "source.doc"
+        ],
+        [
+         "Browse free symbols",
+         "source.freesymbols"
+        ],
+        [
+         "Browse gopls feature documentation",
+         "gopls.doc.features"
+        ],
+        [
+         "Move parameter left",
+         "refactor.rewrite.moveParamLeft"
+        ],
+        [
+         "Remove unused parameter",
+         "refactor.rewrite.removeUnusedParam"
+        ],
+        [
+         "Remove unused parameter \"name\"",
+         "quickfix"
+        ],
+        [
+         "Remove unused parameter \"name\"",
+         "quickfix"
+        ],
+        [
+         "Rename parameter to \"_\"",
+         "quickfix"
+        ],
+        [
+         "Rename parameter to \"_\"",
+         "quickfix"
+        ],
+        [
+         "Show compiler optimization details for \"doc\"",
+         "source.toggleCompilerOptDetails"
+        ],
+        [
+         "Split package \"doc\"",
+         "source.splitPackage"
+        ],
+        [
+         "Split parameters into separate lines",
+         "refactor.rewrite.splitLines"
+        ]
+       ],
+       "actual": [
+        [
+         "Add test for printOptionsReST",
+         "source.addTest"
+        ],
+        [
+         "Browse arm64 assembly for printOptionsReST",
+         "source.assembly"
+        ],
+        [
+         "Browse documentation for package doc",
+         "source.doc"
+        ],
+        [
+         "Browse free symbols",
+         "source.freesymbols"
+        ],
+        [
+         "Browse gopls feature documentation",
+         "gopls.doc.features"
+        ],
+        [
+         "Move parameter left",
+         "refactor.rewrite.moveParamLeft"
+        ],
+        [
+         "Remove unused parameter",
+         "refactor.rewrite.removeUnusedParam"
+        ],
+        [
+         "Remove unused parameter \"name\"",
+         "quickfix"
+        ],
+        [
+         "Remove unused parameter \"name\"",
+         "quickfix"
+        ],
+        [
+         "Remove unused parameter \"name\"",
+         "quickfix"
+        ],
+        [
+         "Remove unused parameter \"name\"",
+         "quickfix"
+        ],
+        [
+         "Rename parameter to \"_\"",
+         "quickfix"
+        ],
+        [
+         "Rename parameter to \"_\"",
+         "quickfix"
+        ],
+        [
+         "Rename parameter to \"_\"",
+         "quickfix"
+        ],
+        [
+         "Rename parameter to \"_\"",
+         "quickfix"
+        ],
+        [
+         "Show compiler optimization details for \"doc\"",
+         "source.toggleCompilerOptDetails"
+        ],
+        [
+         "Split package \"doc\"",
+         "source.splitPackage"
+        ],
+        [
+         "Split parameters into separate lines",
+         "refactor.rewrite.splitLines"
+        ]
+       ],
+       "ops": [
+        {
+         "kind": "open",
+         "path": "command_win.go"
+        },
+        {
+         "kind": "open",
+         "path": "doc/rest_docs.go"
+        },
+        {
+         "kind": "open",
+         "path": "powershell_completions_test.go"
+        },
+        {
+         "kind": "set_config",
+         "settings": {
+          "gopls": {
+           "semanticTokens": false
+          }
+         }
+        },
+        {
+         "kind": "set_config",
+         "settings": {
+          "gopls": {
+           "semanticTokens": true
+          }
+         }
+        }
+       ],
+       "detail": "{\"case\": {\"chain_step\": 0, \"families\": [], \"family\": \"H4\", \"history_index\": 4, \"history_seed\": 2005, \"mode\": \"fresh\", \"note\": \"toggle gopls.semanticTokens: True -> False -> back\", \"seed\": 2, \"timing\": \"settled\"}, \"note\": \"H4: toggle gopls.semanticTokens: True -> False -> back; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 80s\", \"shape\": \"codeAction:changed\"}",
+       "reproduced": "3/3",
+       "reduced_ops": [
+        {
+         "kind": "open",
+         "path": "command_win.go"
+        },
+        {
+         "kind": "set_config",
+         "settings": {
+          "gopls": {
+           "semanticTokens": false
+          }
+         }
+        }
+       ],
+       "signature": "gopls|r1_history|codeAction:changed",
+       "run_id": "pilot-gopls-settled-s2"
+      }
+     }
+    ],
+    "seconds": 378.8,
+    "server": "gopls",
+    "version": "v0.23.0",
+    "project": "spf13__cobra@adbc8813901b",
+    "max_cases": 6
+   },
+   {
+    "run_id": "pilot-rust-analyzer-settled-s2",
+    "seed": 2,
+    "timing": "settled",
+    "targets": [
+     "solutions/16_lifetimes/lifetimes2.rs",
+     "src/info_file.rs",
+     "tests/integration_tests.rs"
+    ],
+    "run": {
+     "oracle": "r1_history",
+     "run_id": "pilot-rust-analyzer-settled-s2",
+     "cases": 6,
+     "invalid_cases": 0,
+     "sessions": 3,
+     "unsettled": 0,
+     "compared": {
+      "typeDefinition": 216,
+      "documentHighlight": 216,
+      "hover": 216,
+      "definition": 216,
+      "codeAction": 222,
+      "references": 216,
+      "completion": 216,
+      "signatureHelp": 216,
+      "inlayHint": 18,
+      "documentSymbol": 18,
+      "foldingRange": 18,
+      "diagnostics": 18,
+      "semanticTokens": 18
+     },
+     "unstable": {},
+     "seconds": 100.589,
+     "notes": [
+      "chain mode; histories: H2, H3, H7, H5, H4, H8"
+     ]
+    },
+    "candidates": [],
+    "flake": {
+     "candidates": 0,
+     "signatures": 0,
+     "replayed": 0,
+     "confirmed": 0,
+     "flaky": 0
+    },
+    "confirmations": [],
+    "confirmed": [],
+    "reductions": [],
+    "seconds": 100.6,
+    "server": "rust-analyzer",
+    "version": "2026-09-21",
+    "project": "rust-lang__rustlings@a650509c789d",
+    "max_cases": 6
+   }
+  ]
+ },
+ "ts6_no_guard_check": {
+  "what": "ts6 pilot run (seed 2, same budget) with the r1_history guard switched off, after the engine fix (ops.py: workspace/didChangeWatchedFiles and didChangeConfiguration require a fresh publish per open document)",
+  "runs": [
+   {
+    "server": "ts6",
+    "timing": "settled",
+    "seed": 2,
+    "candidates": [],
+    "confirmed": [],
+    "cases": 6,
+    "sessions": 8,
+    "seconds": 201.654
+   }
+  ],
+  "result": "0 candidates; the H7 history (rename src/react.ts away and back around an edit of tests/immer.test.tsx) is clean: the settle after the rename back now waits, the server republishes immer.test.tsx as [] 4.1 s later, and the snapshot records it"
+ },
+ "classification": [
+  {
+   "run": "first_run",
+   "server": "ts6-6.0.3",
+   "signatures": [
+    "ts6|r1_history|diagnostics:extra:2305,7006",
+    "ts6|r1_history|codeAction:extra"
+   ],
+   "history": "H7: nest (H5 rename src/react.ts -> src/react_rt.ts -> back) around (H1 insert '}' at tests/immer.test.tsx 51:1 and delete it)",
+   "reduced_ops": [
+    {
+     "kind": "open",
+     "path": "src/middleware/devtools.ts"
+    },
+    {
+     "kind": "open",
+     "path": "src/traditional.ts"
+    },
+    {
+     "kind": "open",
+     "path": "tests/immer.test.tsx"
+    },
+    {
+     "kind": "fs_rename",
+     "path": "src/react.ts",
+     "new_path": "src/react_rt.ts"
+    },
+    {
+     "kind": "change",
+     "path": "tests/immer.test.tsx",
+     "start": [
+      51,
+      1
+     ],
+     "end": [
+      51,
+      2
+     ]
+    },
+    {
+     "kind": "fs_rename",
+     "path": "src/react_rt.ts",
+     "new_path": "src/react.ts"
+    }
+   ],
+   "class": "tool-artifact",
+   "evidence": "Session log h02-H7: rename back sent at 15.2 s; PushSettle returned 'published and quiet' at 17.2 s (the last publish for immer.test.tsx, 13.2 s, was newer than its last didChange, so no fresh publish was required); the snapshot read the stale TS2305 'Module \"zustand\" has no exported member create' and TS7006; the server published [] for immer.test.tsx at 18.4 s, during the query suite. typescript-language-server ignores client didChangeWatchedFiles unless tsserver.useClientFileWatcher is set, so tsserver sees the rename through its own watcher about 3 s later. TS 7 on the identical ops: no candidate. Fixed by the r1_history settle guard and by the engine (workspace-level ops require a fresh publish); final run and no-guard check: 0 candidates."
+  },
+  {
+   "run": "first_run and final_run",
+   "server": "gopls-v0.23.0",
+   "signatures": [
+    "gopls|r1_history|codeAction:changed"
+   ],
+   "history": "H4: toggle gopls.semanticTokens true -> false -> back (prelude opens command_win.go, doc/rest_docs.go, powershell_completions_test.go)",
+   "reduced_ops": [
+    {
+     "kind": "open",
+     "path": "command_win.go"
+    },
+    {
+     "kind": "set_config",
+     "settings": {
+      "gopls": {
+       "semanticTokens": false
+      }
+     }
+    }
+   ],
+   "class": "likely-real",
+   "evidence": "Expected vs actual at 8 diagnostic ranges of doc/rest_docs.go (unusedparams diagnostics): 14 vs 18 code actions; the history session returns 'Remove unused parameter \"name\"' (quickfix) and 'Rename parameter to \"_\"' (quickfix) three times each, a fresh session with the same final settings once. gopls log: a fresh session started with semanticTokens=false logs 'Created View' twice (default view and the GOOS=windows view that command_win.go needs); the reduced history (open command_win.go; set semanticTokens=false) logs 5 (2 at start, 3 after the one didChangeConfiguration); in the unreduced history the second change creates 4 more (#6-#9). Each configuration change recreates the views with one more than before, and the duplicated views duplicate the quick fixes. Confirmed 3/3 in both runs; reduced 5 -> 2 ops, re-confirmed 3/3."
+  },
+  {
+   "run": "final_run",
+   "server": "gopls-v0.23.0",
+   "signatures": [
+    "gopls|r1_history|completion:extra"
+   ],
+   "class": "flaky (not confirmed)",
+   "evidence": "two candidates at doc/rest_docs.go 57:28 replayed 1/3 and 2/3; in the failing replays the fresh control was unstable on the key: gopls completion is nondeterministic across fresh sessions (engine smoke: unimported-package candidates vary between sessions)"
+  }
+ ],
+ "smoke_lead": {
+  "what": "engine-smoke lead: pyright 1.1.414, flask fixture, seed-1 targets; insert a comment line, run the full query suite, apply the inverse, settle, query again; compare with a fresh session",
+  "result": "not reproduced on 2026-09-23 ~15:00: both snapshots settled, no differing key, and the raw top-50 completion labels are identical at all 36 completion keys (before normalization)",
+  "class": "legitimate-difference",
+  "evidence": "the 2/2 difference seen at 01:44 was in auto-import completion items only; pyright bounds auto-import lookups by time and count, so a cold session under load returns fewer of them than a warm one. The engine's completion normalizer now drops auto-import items (completion_kind.py); an R1 history that queries in the middle (H7/H8 with requests) can still reach such states, but they are no longer compared."
+ }
+}

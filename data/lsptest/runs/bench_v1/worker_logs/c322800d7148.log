@@ -1,0 +1,3 @@
+2026-09-24 21:28:28,195 INFO campaign_run run c322800d7148: r1_history on gopls v0.12.0, gopls-60435 seed 1 race0, targets ['main.go']
+2026-09-24 21:29:42,359 INFO campaign_run run c322800d7148: 0 candidate(s) in 74s; confirming
+2026-09-24 21:29:42,360 INFO campaign_run run c322800d7148 finished: ok, 0 confirmed of 0 candidate(s), 74s

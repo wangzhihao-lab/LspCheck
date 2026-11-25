@@ -1,0 +1,3 @@
+2026-11-18 14:22:26,770 INFO campaign_run run 7de7337dab93: r1_history on ts7 7.0.2, hexojs/hexo@751e856691bf seed 2 settled, targets ['lib/hexo/scaffold.ts', 'test/fixtures/post_render.ts', 'test/scripts/tags/blockquote.ts']
+2026-11-18 14:28:53,246 INFO campaign_run run 7de7337dab93: 0 candidate(s) in 387s; confirming
+2026-11-18 14:28:53,247 INFO campaign_run run 7de7337dab93 finished: ok, 0 confirmed of 0 candidate(s), 386s

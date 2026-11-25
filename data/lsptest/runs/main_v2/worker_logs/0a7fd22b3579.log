@@ -1,0 +1,3 @@
+2026-11-18 10:14:01,957 INFO campaign_run run 0a7fd22b3579: r1_history on ts6 6.0.3, pear-devs/pear-desktop@3ff0a86231fe seed 1 race200, targets ['src/plugins/album-actions/templates/like-button.tsx', 'src/plugins/sponsorblock/index.ts', 'src/plugins/synced-lyrics/renderer/components/SyncedLine.tsx']
+2026-11-18 10:23:28,222 INFO campaign_run run 0a7fd22b3579: 3 candidate(s) in 566s; confirming
+2026-11-18 10:23:28,223 INFO campaign_run run 0a7fd22b3579 finished: ok, 0 confirmed of 3 candidate(s), 566s

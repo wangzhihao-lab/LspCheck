@@ -1,0 +1,6 @@
+2026-09-25 07:32:13,363 INFO campaign_run run aa69bf241b19: r4_edits on tsserver 4.9.5+tsls3.3.0, tsserver-52274 seed 2 settled, targets ['index.ts']
+2026-09-25 07:32:41,864 INFO campaign_run run aa69bf241b19: 2 candidate(s) in 29s; confirming
+2026-09-25 07:32:56,208 INFO flake replay 1/3 of tsserver|r4_edits|diagnostics:extra:8024: settled=True control_stable=True reproduced=True (14.3s)
+2026-09-25 07:33:11,006 INFO flake replay 2/3 of tsserver|r4_edits|diagnostics:extra:8024: settled=True control_stable=True reproduced=True (14.8s)
+2026-09-25 07:33:25,790 INFO flake replay 3/3 of tsserver|r4_edits|diagnostics:extra:8024: settled=True control_stable=True reproduced=True (14.8s)
+2026-09-25 07:33:25,794 INFO campaign_run run aa69bf241b19 finished: ok, 1 confirmed of 2 candidate(s), 72s

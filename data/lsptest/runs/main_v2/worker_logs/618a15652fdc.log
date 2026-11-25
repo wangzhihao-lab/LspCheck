@@ -1,0 +1,18 @@
+2026-11-18 09:09:32,595 INFO campaign_run run 618a15652fdc: r3_routes on rust-analyzer 2026-09-21, yewstack/yew@bfa6c19af971 seed 1 settled, targets ['examples/immutable/src/string.rs', 'examples/simple_ssr/src/bin/simple_ssr_hydrate.rs', 'packages/yew-macro/src/derive_props/mod.rs']
+2026-11-18 09:17:53,877 INFO campaign_run run 618a15652fdc: 26 candidate(s) in 501s; confirming
+2026-11-18 09:21:51,338 INFO flake replay 1/3 of rust-analyzer|r3_routes|definitionConsistency:changed: settled=True control_stable=True reproduced=True (237.5s)
+2026-11-18 09:25:27,926 INFO flake replay 2/3 of rust-analyzer|r3_routes|definitionConsistency:changed: settled=True control_stable=True reproduced=True (216.6s)
+2026-11-18 09:29:15,704 INFO flake replay 3/3 of rust-analyzer|r3_routes|definitionConsistency:changed: settled=True control_stable=True reproduced=True (227.8s)
+2026-11-18 09:31:59,329 INFO flake replay 1/3 of rust-analyzer|r3_routes|highlightVsReferences:extra: settled=True control_stable=True reproduced=True (163.6s)
+2026-11-18 09:34:31,578 INFO flake replay 2/3 of rust-analyzer|r3_routes|highlightVsReferences:extra: settled=True control_stable=True reproduced=True (152.2s)
+2026-11-18 09:37:12,872 INFO flake replay 3/3 of rust-analyzer|r3_routes|highlightVsReferences:extra: settled=True control_stable=True reproduced=True (161.3s)
+2026-11-18 09:43:49,431 INFO flake replay 1/3 of rust-analyzer|r3_routes|definitionConsistency:missing: settled=True control_stable=True reproduced=True (396.6s)
+2026-11-18 09:46:15,022 INFO flake replay 2/3 of rust-analyzer|r3_routes|definitionConsistency:missing: settled=True control_stable=True reproduced=True (145.6s)
+2026-11-18 09:48:44,260 INFO flake replay 3/3 of rust-analyzer|r3_routes|definitionConsistency:missing: settled=True control_stable=True reproduced=True (149.2s)
+2026-11-18 09:53:06,857 INFO flake replay 1/3 of rust-analyzer|r3_routes|diagnostics:extra:unlinked-file: settled=True control_stable=True reproduced=True (262.6s)
+2026-11-18 09:57:00,157 INFO flake replay 2/3 of rust-analyzer|r3_routes|diagnostics:extra:unlinked-file: settled=True control_stable=True reproduced=False (233.3s)
+2026-11-18 10:00:16,498 INFO flake replay 3/3 of rust-analyzer|r3_routes|diagnostics:extra:unlinked-file: settled=True control_stable=True reproduced=True (196.3s)
+2026-11-18 10:04:14,407 INFO flake replay 1/3 of rust-analyzer|r3_routes|diagnostics:missing:inactive_code: settled=True control_stable=True reproduced=False (237.9s)
+2026-11-18 10:08:07,871 INFO flake replay 2/3 of rust-analyzer|r3_routes|diagnostics:missing:inactive_code: settled=True control_stable=True reproduced=True (233.5s)
+2026-11-18 10:11:33,812 INFO flake replay 3/3 of rust-analyzer|r3_routes|diagnostics:missing:inactive_code: settled=True control_stable=True reproduced=True (205.9s)
+2026-11-18 10:11:33,852 INFO campaign_run run 618a15652fdc finished: ok, 3 confirmed of 26 candidate(s), 3721s

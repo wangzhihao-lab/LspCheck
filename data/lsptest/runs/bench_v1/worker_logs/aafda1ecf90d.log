@@ -1,0 +1,3 @@
+2026-09-24 17:36:52,667 INFO campaign_run run aafda1ecf90d: r2_handles on gopls v0.7.0, gopls-46667 seed 1 settled, targets ['a/a.go', 'b/b.go']
+2026-09-24 17:37:03,106 INFO campaign_run run aafda1ecf90d: 0 candidate(s) in 10s; confirming
+2026-09-24 17:37:03,106 INFO campaign_run run aafda1ecf90d finished: ok, 0 confirmed of 0 candidate(s), 10s

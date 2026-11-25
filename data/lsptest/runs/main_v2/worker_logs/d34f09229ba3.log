@@ -1,0 +1,3 @@
+2026-11-18 05:44:42,635 INFO campaign_run run d34f09229ba3: r2_handles on rust-analyzer 2026-09-21, tokio-rs/tokio@3930bd182cb1 seed 1 settled, targets ['tokio/src/runtime/time/wheel/mod.rs', 'tokio/src/runtime/time_alt/wheel/level.rs', 'tokio/tests/uds_split.rs']
+2026-11-18 05:46:07,431 INFO campaign_run run d34f09229ba3: 0 candidate(s) in 85s; confirming
+2026-11-18 05:46:07,433 INFO campaign_run run d34f09229ba3 finished: ok, 0 confirmed of 0 candidate(s), 85s

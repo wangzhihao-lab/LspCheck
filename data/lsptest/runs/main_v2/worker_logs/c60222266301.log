@@ -1,0 +1,6 @@
+2026-11-18 20:45:59,798 INFO campaign_run run c60222266301: r4_edits on gopls v0.23.0, docker/compose@c6dffb26bdfd seed 2 settled, targets ['cmd/cmdtrace/cmd_span_test.go', 'pkg/compose/logs.go', 'pkg/e2e/compose_run_build_once_test.go']
+2026-11-18 20:46:52,600 INFO campaign_run run c60222266301: 3 candidate(s) in 53s; confirming
+2026-11-18 20:47:14,755 INFO flake replay 1/3 of gopls|r4_edits|completionInsert:gained: settled=True control_stable=True reproduced=True (22.1s)
+2026-11-18 20:47:37,206 INFO flake replay 2/3 of gopls|r4_edits|completionInsert:gained: settled=True control_stable=True reproduced=True (22.4s)
+2026-11-18 20:47:59,614 INFO flake replay 3/3 of gopls|r4_edits|completionInsert:gained: settled=True control_stable=True reproduced=True (22.4s)
+2026-11-18 20:47:59,616 INFO campaign_run run c60222266301 finished: ok, 1 confirmed of 3 candidate(s), 120s

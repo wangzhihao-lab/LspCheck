@@ -1,0 +1,3 @@
+2026-11-18 07:18:38,899 INFO campaign_run run 941c62dcee71: r0_crash on ts7 7.0.2, solidjs/solid@4b62bc29e04b seed 1 settled, targets ['examples/rendering/shared/src/components/Reveal.tsx', 'packages/web/test/hydration/spread-innerhtml.spec.tsx', 'packages/web/test/latest-shadow-owned-write-issue-3378.spec.tsx']
+2026-11-18 07:19:17,704 INFO campaign_run run 941c62dcee71: 0 candidate(s) in 39s; confirming
+2026-11-18 07:19:17,706 INFO campaign_run run 941c62dcee71 finished: ok, 0 confirmed of 0 candidate(s), 39s

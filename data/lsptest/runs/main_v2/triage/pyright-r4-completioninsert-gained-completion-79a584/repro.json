@@ -1,0 +1,139 @@
+{
+ "format": 1,
+ "campaign": "main_v2",
+ "vid": "41dcb7100681-v00",
+ "run_id": "41dcb7100681",
+ "oracle": "r4_edits",
+ "server": {
+  "kind": "pyright",
+  "version": "1.1.414"
+ },
+ "project": {
+  "name": "virattt/ai-hedge-fund@7d897a002c26",
+  "source": "corpus",
+  "ref": "temp/corpus/virattt__ai-hedge-fund@7d897a002c26",
+  "commit": "7d897a002c263f106201154d877a4bcf74efae03",
+  "language": "python"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "hedge_fund/data/cached.py",
+    "positions": [],
+    "ends": [],
+    "names": []
+   },
+   {
+    "path": "hedge_fund/event_study/__main__.py",
+    "positions": [
+     [
+      59,
+      8
+     ]
+    ],
+    "ends": [],
+    "names": [
+     ""
+    ]
+   },
+   {
+    "path": "hedge_fund/llm/contract.py",
+    "positions": [],
+    "ends": [],
+    "names": []
+   }
+  ]
+ },
+ "key": {
+  "method": "completionInsert",
+  "path": "hedge_fund/event_study/__main__.py",
+  "line": 59,
+  "character": 8,
+  "extra": "_VersionInfo"
+ },
+ "ops": [],
+ "case": {
+  "character": 8,
+  "edits": [
+   {
+    "newText": "_VersionInfo",
+    "range": {
+     "end": {
+      "character": 8,
+      "line": 59
+     },
+     "start": {
+      "character": 7,
+      "line": 59
+     }
+    }
+   },
+   {
+    "newText": "_VersionInfo, ",
+    "range": {
+     "end": {
+      "character": 23,
+      "line": 5
+     },
+     "start": {
+      "character": 23,
+      "line": 5
+     }
+    }
+   }
+  ],
+  "excerpt": "from __future__ import _VersionInfo, annotations",
+  "item_kind": 6,
+  "kind": "completion",
+  "label": "_VersionInfo",
+  "line": 59,
+  "name": "v",
+  "new_errors": [
+   "6:24: future feature _VersionInfo is not defined"
+  ],
+  "path": "hedge_fund/event_study/__main__.py"
+ },
+ "shape": "completionInsert:gained",
+ "signature": "pyright|r4_edits|completionInsert:gained",
+ "expected": [],
+ "actual": [
+  "future feature _VersionInfo is not defined"
+ ],
+ "reproduced": "3/3",
+ "note": "accepting completion item '_VersionInfo' (kind 6) after 'v' at hedge_fund/event_study/__main__.py:60:9 introduces ['6:24: future feature _VersionInfo is not defined']; confirmed in a fresh session on the original content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 49s",
+ "violation": {
+  "oracle": "r4_edits",
+  "server": "pyright-1.1.414",
+  "project": "virattt/ai-hedge-fund@7d897a002c26",
+  "key": {
+   "method": "completionInsert",
+   "path": "hedge_fund/event_study/__main__.py",
+   "line": 59,
+   "character": 8,
+   "extra": "_VersionInfo"
+  },
+  "expected": [],
+  "actual": [
+   "future feature _VersionInfo is not defined"
+  ],
+  "ops": [],
+  "detail": "{\"case\": {\"character\": 8, \"edits\": [{\"newText\": \"_VersionInfo\", \"range\": {\"end\": {\"character\": 8, \"line\": 59}, \"start\": {\"character\": 7, \"line\": 59}}}, {\"newText\": \"_VersionInfo, \", \"range\": {\"end\": {\"character\": 23, \"line\": 5}, \"start\": {\"character\": 23, \"line\": 5}}}], \"excerpt\": \"from __future__ import _VersionInfo, annotations\", \"item_kind\": 6, \"kind\": \"completion\", \"label\": \"_VersionInfo\", \"line\": 59, \"name\": \"v\", \"new_errors\": [\"6:24: future feature _VersionInfo is not defined\"], \"path\": \"hedge_fund/event_study/__main__.py\"}, \"note\": \"accepting completion item '_VersionInfo' (kind 6) after 'v' at hedge_fund/event_study/__main__.py:60:9 introduces ['6:24: future feature _VersionInfo is not defined']; confirmed in a fresh session on the original content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 49s\", \"shape\": \"completionInsert:gained\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "pyright|r4_edits|completionInsert:gained",
+  "run_id": "41dcb7100681"
+ },
+ "replay_logs": [
+  "logs/pyright-1.1.414-tr79a584-r4-replay-case-20261118-232316-da1e1a.jsonl.gz",
+  "logs/pyright-1.1.414-tr79a584-r4-replay-control-20261118-232324-de8c92.jsonl.gz"
+ ],
+ "project_files": {},
+ "group": "pyright-r4-completioninsert-gained-completion-79a584",
+ "reduced": true
+}

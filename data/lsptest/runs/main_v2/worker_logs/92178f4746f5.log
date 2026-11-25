@@ -1,0 +1,3 @@
+2026-11-18 08:19:07,822 INFO campaign_run run 92178f4746f5: r0_crash on gopls v0.23.0, SagerNet/sing-box@0d91c4547921 seed 1 settled, targets ['common/process/searcher_stub.go', 'option/shadowsocksr.go', 'protocol/bridge/linkname_darwin.go']
+2026-11-18 08:19:26,713 INFO campaign_run run 92178f4746f5: 0 candidate(s) in 19s; confirming
+2026-11-18 08:19:26,714 INFO campaign_run run 92178f4746f5 finished: ok, 0 confirmed of 0 candidate(s), 19s

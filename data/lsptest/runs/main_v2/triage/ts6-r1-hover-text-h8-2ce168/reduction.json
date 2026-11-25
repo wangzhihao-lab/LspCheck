@@ -1,0 +1,79 @@
+{
+ "vid": "df02b705037e-v00",
+ "ops_before": 10,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 10,
+ "cache_hits": 0,
+ "reduce_seconds": 188.504,
+ "budget_exhausted": false,
+ "probe_log": [
+  [
+   6,
+   false
+  ],
+  [
+   7,
+   true
+  ],
+  [
+   5,
+   true
+  ],
+  [
+   4,
+   false
+  ],
+  [
+   4,
+   true
+  ],
+  [
+   3,
+   true
+  ],
+  [
+   2,
+   false
+  ],
+  [
+   2,
+   true
+  ],
+  [
+   1,
+   false
+  ],
+  [
+   1,
+   false
+  ]
+ ],
+ "logs": [
+  "ts6-6.0.3-tr2ce168-replay-baseline-20261119-001253-7cb99a.jsonl.gz",
+  "ts6-6.0.3-tr2ce168-replay-control-20261119-001253-f1dd5b.jsonl.gz",
+  "ts6-6.0.3-tr2ce168-replay-history-20261119-001309-022367.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [
+   "(parameter) newChildNode: DOMElement | TextNode",
+   [
+    149,
+    30,
+    149,
+    42
+   ]
+  ],
+  "actual": [
+   "(parameter) newChildNode: TextNode | DOMElement",
+   [
+    149,
+    30,
+    149,
+    42
+   ]
+  ]
+ },
+ "ops_after": 2,
+ "total_seconds": 338.4
+}

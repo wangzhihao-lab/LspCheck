@@ -1,0 +1,93 @@
+{
+ "queries": [
+  "\"Cannot read properties of undefined reading fileInfo\" repo:microsoft/pyright is:issue",
+  "reopen in:title repo:microsoft/pyright is:issue",
+  "\"type definition\" \"internal error\" repo:microsoft/pyright is:issue",
+  "\"type definition\" reopen repo:microsoft/pyright is:issue",
+  "\"type definition\" stale repo:microsoft/pyright is:issue"
+ ],
+ "matches": [
+  {
+   "repo": "microsoft/pyright",
+   "number": 6490,
+   "title": "bound methods of a TypedDict don't retain type information",
+   "url": "https://github.com/microsoft/pyright/issues/6490",
+   "state": "closed",
+   "created": "2023-11-18",
+   "comments": 2,
+   "query": "\"type definition\" \"internal error\" repo:microsoft/pyright is:issue"
+  },
+  {
+   "repo": "microsoft/pyright",
+   "number": 6183,
+   "title": "Pyright failing to match recursive (nested?) generic protocol",
+   "url": "https://github.com/microsoft/pyright/issues/6183",
+   "state": "closed",
+   "created": "2023-10-17",
+   "comments": 4,
+   "query": "\"type definition\" \"internal error\" repo:microsoft/pyright is:issue"
+  },
+  {
+   "repo": "microsoft/pyright",
+   "number": 1914,
+   "title": "`Error: Debug Failure. False expression` for mypy/config_parser.py:107:46",
+   "url": "https://github.com/microsoft/pyright/issues/1914",
+   "state": "closed",
+   "created": "2021-05-27",
+   "comments": 11,
+   "query": "\"type definition\" \"internal error\" repo:microsoft/pyright is:issue"
+  },
+  {
+   "repo": "microsoft/pyright",
+   "number": 1047,
+   "title": "dataclasses.replace does not type correctly",
+   "url": "https://github.com/microsoft/pyright/issues/1047",
+   "state": "closed",
+   "created": "2020-09-20",
+   "comments": 9,
+   "query": "\"type definition\" reopen repo:microsoft/pyright is:issue"
+  },
+  {
+   "repo": "microsoft/pyright",
+   "number": 9969,
+   "title": "False error being identified in async code",
+   "url": "https://github.com/microsoft/pyright/issues/9969",
+   "state": "closed",
+   "created": "2025-02-22",
+   "comments": 6,
+   "query": "\"type definition\" reopen repo:microsoft/pyright is:issue"
+  },
+  {
+   "repo": "microsoft/pyright",
+   "number": 9239,
+   "title": "A required argument overriding an optional argument in the `ParamSpec` is incorrectly marked as optional when this argument is introduced by referencing `__init__`.",
+   "url": "https://github.com/microsoft/pyright/issues/9239",
+   "state": "closed",
+   "created": "2024-10-16",
+   "comments": 6,
+   "query": "\"type definition\" reopen repo:microsoft/pyright is:issue"
+  },
+  {
+   "repo": "microsoft/pyright",
+   "number": 4706,
+   "title": "Regression with default match pattern for Never type on 1.1.296",
+   "url": "https://github.com/microsoft/pyright/issues/4706",
+   "state": "closed",
+   "created": "2023-02-28",
+   "comments": 26,
+   "query": "\"type definition\" reopen repo:microsoft/pyright is:issue"
+  },
+  {
+   "repo": "microsoft/pyright",
+   "number": 6514,
+   "title": "False negative with dict literal on strict mode",
+   "url": "https://github.com/microsoft/pyright/issues/6514",
+   "state": "closed",
+   "created": "2023-11-21",
+   "comments": 6,
+   "query": "\"type definition\" reopen repo:microsoft/pyright is:issue"
+  }
+ ],
+ "notes": [],
+ "authenticated": true
+}

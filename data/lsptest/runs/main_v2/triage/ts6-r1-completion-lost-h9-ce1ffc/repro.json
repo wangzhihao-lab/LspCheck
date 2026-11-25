@@ -1,0 +1,381 @@
+{
+ "format": 1,
+ "campaign": "main_v2",
+ "vid": "d943bb79c7d7-v00",
+ "run_id": "d943bb79c7d7",
+ "oracle": "r1_history",
+ "server": {
+  "kind": "ts6",
+  "version": "6.0.3"
+ },
+ "project": {
+  "name": "mifi/lossless-cut@85cb95f6aeae",
+  "source": "corpus",
+  "ref": "temp/corpus/mifi__lossless-cut@85cb95f6aeae",
+  "commit": "85cb95f6aeaed9c26dfe64fd5ac6c6ac7760c55f",
+  "language": "typescript"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "src/main/progress.test.ts",
+    "positions": [],
+    "ends": [],
+    "names": []
+   },
+   {
+    "path": "src/renderer/src/TopMenu.tsx",
+    "positions": [],
+    "ends": [
+     [
+      53,
+      39
+     ]
+    ],
+    "names": [
+     ""
+    ]
+   },
+   {
+    "path": "src/renderer/src/hooks/useUserSettings.ts",
+    "positions": [],
+    "ends": [],
+    "names": []
+   }
+  ]
+ },
+ "key": {
+  "method": "completion",
+  "path": "src/renderer/src/TopMenu.tsx",
+  "line": 53,
+  "character": 39,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "src/main/progress.test.ts"
+  },
+  {
+   "kind": "open",
+   "path": "src/renderer/src/TopMenu.tsx"
+  },
+  {
+   "kind": "open",
+   "path": "src/renderer/src/hooks/useUserSettings.ts"
+  },
+  {
+   "kind": "fs_rename",
+   "path": "src/renderer/src/hooks/useUserSettings.ts",
+   "new_path": "src/renderer/src/hooks/useUserSettings_rt.ts"
+  },
+  {
+   "kind": "change",
+   "path": "src/renderer/src/TopMenu.tsx",
+   "start": [
+    23,
+    0
+   ],
+   "end": [
+    24,
+    0
+   ]
+  },
+  {
+   "kind": "change",
+   "path": "src/renderer/src/TopMenu.tsx",
+   "start": [
+    23,
+    10
+   ],
+   "end": [
+    23,
+    10
+   ],
+   "text": "opMenu("
+  },
+  {
+   "kind": "change",
+   "path": "src/renderer/src/TopMenu.tsx",
+   "start": [
+    23,
+    17
+   ],
+   "end": [
+    23,
+    17
+   ],
+   "text": "{\n"
+  },
+  {
+   "kind": "fs_rename",
+   "path": "src/renderer/src/hooks/useUserSettings_rt.ts",
+   "new_path": "src/renderer/src/hooks/useUserSettings.ts"
+  }
+ ],
+ "case": {
+  "chain_step": 0,
+  "families": [],
+  "family": "H9",
+  "history_index": 3,
+  "history_seed": 2004,
+  "mode": "fresh",
+  "note": "window: rename src/renderer/src/hooks/useUserSettings.ts -> src/renderer/src/hooks/useUserSettings_rt.ts; inside: src/main/progress.test.ts: insert 'x' on line 8, then its inverse; src/renderer/src/TopMenu.tsx: line 23 deleted and retyped in 4 chunk(s); then W reverted",
+  "seed": 2,
+  "timing": "settled"
+ },
+ "shape": "completion:lost",
+ "signature": "ts6|r1_history|completion:lost",
+ "expected": [
+  "allowMultipleInstances",
+  "askBeforeClose",
+  "autoDeleteMergedSegments",
+  "autoExportExtraStreams",
+  "autoLoadTimecode",
+  "autoMerge",
+  "autoSaveProjectFile",
+  "avoidNegativeTs",
+  "captureFormat",
+  "captureFrameFileNameFormat",
+  "captureFrameMethod",
+  "captureFrameQuality",
+  "changeOutDir",
+  "cleanupChoices",
+  "customFfPath",
+  "cutFileTemplate",
+  "cutFromAdjustmentFrames",
+  "cutMergedFileTemplate",
+  "cutToAdjustmentFrames",
+  "effectiveExportMode",
+  "enableAskForFileOpenAction",
+  "enableAutoHtml5ify",
+  "enableCustomOutDir",
+  "enableImportChapters",
+  "enableNativeHevc",
+  "enableOverwriteOutput",
+  "enableSmartCut",
+  "enableUpdateCheck",
+  "ensureWritableOutDirWithFilePath",
+  "exportConfirmEnabled",
+  "ffmpegExperimental",
+  "ffmpegHwaccel",
+  "hideNotifications",
+  "hideOsNotifications",
+  "invertCutSegments",
+  "invertTimelineScroll",
+  "keyBindings",
+  "keyboardNormalSeekSpeed",
+  "keyboardSeekAccFactor",
+  "keyboardSeekSpeed2",
+  "keyboardSeekSpeed3",
+  "keyframeCut",
+  "keyframesEnabled",
+  "language",
+  "lastAppVersion",
+  "mergedFileTemplate",
+  "mouseWheelFrameSeekModifierKey",
+  "mouseWheelKeyframeSeekModifierKey",
+  "mouseWheelZoomModifierKey",
+  "movFastStart"
+ ],
+ "actual": [],
+ "reproduced": "3/3",
+ "note": "H9: window: rename src/renderer/src/hooks/useUserSettings.ts -> src/renderer/src/hooks/useUserSettings_rt.ts; inside: src/main/progress.test.ts: insert 'x' on line 8, then its inverse; src/renderer/src/To; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 267s",
+ "violation": {
+  "oracle": "r1_history",
+  "server": "ts6-6.0.3",
+  "project": "mifi/lossless-cut@85cb95f6aeae",
+  "key": {
+   "method": "completion",
+   "path": "src/renderer/src/TopMenu.tsx",
+   "line": 53,
+   "character": 39,
+   "extra": ""
+  },
+  "expected": [
+   "allowMultipleInstances",
+   "askBeforeClose",
+   "autoDeleteMergedSegments",
+   "autoExportExtraStreams",
+   "autoLoadTimecode",
+   "autoMerge",
+   "autoSaveProjectFile",
+   "avoidNegativeTs",
+   "captureFormat",
+   "captureFrameFileNameFormat",
+   "captureFrameMethod",
+   "captureFrameQuality",
+   "changeOutDir",
+   "cleanupChoices",
+   "customFfPath",
+   "cutFileTemplate",
+   "cutFromAdjustmentFrames",
+   "cutMergedFileTemplate",
+   "cutToAdjustmentFrames",
+   "effectiveExportMode",
+   "enableAskForFileOpenAction",
+   "enableAutoHtml5ify",
+   "enableCustomOutDir",
+   "enableImportChapters",
+   "enableNativeHevc",
+   "enableOverwriteOutput",
+   "enableSmartCut",
+   "enableUpdateCheck",
+   "ensureWritableOutDirWithFilePath",
+   "exportConfirmEnabled",
+   "ffmpegExperimental",
+   "ffmpegHwaccel",
+   "hideNotifications",
+   "hideOsNotifications",
+   "invertCutSegments",
+   "invertTimelineScroll",
+   "keyBindings",
+   "keyboardNormalSeekSpeed",
+   "keyboardSeekAccFactor",
+   "keyboardSeekSpeed2",
+   "keyboardSeekSpeed3",
+   "keyframeCut",
+   "keyframesEnabled",
+   "language",
+   "lastAppVersion",
+   "mergedFileTemplate",
+   "mouseWheelFrameSeekModifierKey",
+   "mouseWheelKeyframeSeekModifierKey",
+   "mouseWheelZoomModifierKey",
+   "movFastStart"
+  ],
+  "actual": [],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "src/main/progress.test.ts"
+   },
+   {
+    "kind": "open",
+    "path": "src/renderer/src/TopMenu.tsx"
+   },
+   {
+    "kind": "open",
+    "path": "src/renderer/src/hooks/useUserSettings.ts"
+   },
+   {
+    "kind": "fs_rename",
+    "path": "src/renderer/src/hooks/useUserSettings.ts",
+    "new_path": "src/renderer/src/hooks/useUserSettings_rt.ts"
+   },
+   {
+    "kind": "change",
+    "path": "src/main/progress.test.ts",
+    "start": [
+     8,
+     4
+    ],
+    "end": [
+     8,
+     4
+    ],
+    "text": "x"
+   },
+   {
+    "kind": "change",
+    "path": "src/main/progress.test.ts",
+    "start": [
+     8,
+     4
+    ],
+    "end": [
+     8,
+     5
+    ]
+   },
+   {
+    "kind": "change",
+    "path": "src/renderer/src/TopMenu.tsx",
+    "start": [
+     23,
+     0
+    ],
+    "end": [
+     24,
+     0
+    ]
+   },
+   {
+    "kind": "change",
+    "path": "src/renderer/src/TopMenu.tsx",
+    "start": [
+     23,
+     0
+    ],
+    "end": [
+     23,
+     0
+    ],
+    "text": "fu"
+   },
+   {
+    "kind": "change",
+    "path": "src/renderer/src/TopMenu.tsx",
+    "start": [
+     23,
+     2
+    ],
+    "end": [
+     23,
+     2
+    ],
+    "text": "nction T"
+   },
+   {
+    "kind": "change",
+    "path": "src/renderer/src/TopMenu.tsx",
+    "start": [
+     23,
+     10
+    ],
+    "end": [
+     23,
+     10
+    ],
+    "text": "opMenu("
+   },
+   {
+    "kind": "change",
+    "path": "src/renderer/src/TopMenu.tsx",
+    "start": [
+     23,
+     17
+    ],
+    "end": [
+     23,
+     17
+    ],
+    "text": "{\n"
+   },
+   {
+    "kind": "fs_rename",
+    "path": "src/renderer/src/hooks/useUserSettings_rt.ts",
+    "new_path": "src/renderer/src/hooks/useUserSettings.ts"
+   }
+  ],
+  "detail": "{\"case\": {\"chain_step\": 0, \"families\": [], \"family\": \"H9\", \"history_index\": 3, \"history_seed\": 2004, \"mode\": \"fresh\", \"note\": \"window: rename src/renderer/src/hooks/useUserSettings.ts -> src/renderer/src/hooks/useUserSettings_rt.ts; inside: src/main/progress.test.ts: insert 'x' on line 8, then its inverse; src/renderer/src/TopMenu.tsx: line 23 deleted and retyped in 4 chunk(s); then W reverted\", \"seed\": 2, \"timing\": \"settled\"}, \"note\": \"H9: window: rename src/renderer/src/hooks/useUserSettings.ts -> src/renderer/src/hooks/useUserSettings_rt.ts; inside: src/main/progress.test.ts: insert 'x' on line 8, then its inverse; src/renderer/src/To; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 267s\", \"shape\": \"completion:lost\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "ts6|r1_history|completion:lost",
+  "run_id": "d943bb79c7d7"
+ },
+ "replay_logs": [
+  "logs/ts6-6.0.3-trce1ffc-replay-baseline-20261118-222526-bd22b8.jsonl.gz",
+  "logs/ts6-6.0.3-trce1ffc-replay-control-20261118-222526-967e5b.jsonl.gz",
+  "logs/ts6-6.0.3-trce1ffc-replay-history-20261118-222550-660f14.jsonl.gz"
+ ],
+ "project_files": {},
+ "group": "ts6-r1-completion-lost-h9-ce1ffc",
+ "reduced": true
+}

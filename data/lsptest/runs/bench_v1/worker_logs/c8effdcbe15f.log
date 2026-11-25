@@ -1,0 +1,3 @@
+2026-09-25 05:10:31,852 INFO campaign_run run c8effdcbe15f: r1_history on tsserver 4.4.2+tsls0.7.1, tsserver-45270 seed 2 settled, targets ['index.ts']
+2026-09-25 05:13:40,585 INFO campaign_run run c8effdcbe15f: 0 candidate(s) in 189s; confirming
+2026-09-25 05:13:40,586 INFO campaign_run run c8effdcbe15f finished: ok, 0 confirmed of 0 candidate(s), 189s

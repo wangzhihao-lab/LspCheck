@@ -1,0 +1,585 @@
+{
+ "format": 1,
+ "campaign": "bench_v1",
+ "vid": "28212517fd6f-v00",
+ "run_id": "28212517fd6f",
+ "oracle": "r1_history",
+ "server": {
+  "kind": "pyright",
+  "version": "1.1.300"
+ },
+ "project": {
+  "name": "pyright-4844",
+  "source": "dir",
+  "ref": "data/lsp_bench/cases/pyright-4844/project",
+  "commit": "",
+  "language": "python"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "race0",
+  "settle_timeout_s": 120.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": {
+   "python": {
+    "analysis": {
+     "typeCheckingMode": "strict",
+     "diagnosticSeverityOverrides": {
+      "reportAssertAlwaysTrue": "error",
+      "reportConstantRedefinition": "error",
+      "reportDuplicateImport": "warning",
+      "reportFunctionMemberAccess": "error",
+      "reportGeneralTypeIssues": "information",
+      "reportImplicitStringConcatenation": "warning",
+      "reportImportCycles": "none",
+      "reportIncompatibleMethodOverride": "error",
+      "reportIncompatibleVariableOverride": "error",
+      "reportInconsistentConstructor": "warning",
+      "reportInvalidStubStatement": "none",
+      "reportMissingModuleSource": "none",
+      "reportMissingTypeArgument": "none",
+      "reportMissingTypeStubs": "none",
+      "reportOverlappingOverload": "none",
+      "reportPrivateImportUsage": "none",
+      "reportPrivateUsage": "none",
+      "reportPropertyTypeMismatch": "none",
+      "reportUnknownArgumentType": "none",
+      "reportUnknownLambdaType": "none",
+      "reportUnknownMemberType": "none",
+      "reportUnknownParameterType": "none",
+      "reportUnknownVariableType": "none",
+      "reportUnnecessaryCast": "none",
+      "reportUnnecessaryComparison": "none",
+      "reportUnnecessaryIsInstance": "none",
+      "reportUnsupportedDunderAll": "warning",
+      "reportUntypedClassDecorator": "none",
+      "reportUntypedFunctionDecorator": "none",
+      "reportUnusedCallResult": "error",
+      "reportUnusedClass": "error",
+      "reportUnusedFunction": "error",
+      "reportUnusedImport": "warning",
+      "reportUnusedVariable": "error"
+     }
+    }
+   }
+  },
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "main.py",
+    "positions": [
+     [
+      0,
+      10
+     ],
+     [
+      0,
+      28
+     ],
+     [
+      2,
+      8
+     ],
+     [
+      2,
+      23
+     ],
+     [
+      3,
+      13
+     ],
+     [
+      3,
+      32
+     ],
+     [
+      5,
+      10
+     ],
+     [
+      5,
+      20
+     ],
+     [
+      6,
+      11
+     ],
+     [
+      6,
+      18
+     ],
+     [
+      6,
+      27
+     ],
+     [
+      8,
+      4
+     ],
+     [
+      8,
+      6
+     ],
+     [
+      8,
+      13
+     ],
+     [
+      10,
+      0
+     ],
+     [
+      11,
+      0
+     ],
+     [
+      11,
+      3
+     ],
+     [
+      12,
+      0
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      15
+     ],
+     [
+      0,
+      34
+     ],
+     [
+      2,
+      11
+     ],
+     [
+      2,
+      27
+     ],
+     [
+      3,
+      22
+     ],
+     [
+      3,
+      34
+     ],
+     [
+      5,
+      15
+     ],
+     [
+      5,
+      24
+     ],
+     [
+      6,
+      15
+     ],
+     [
+      6,
+      20
+     ],
+     [
+      6,
+      29
+     ],
+     [
+      8,
+      5
+     ],
+     [
+      8,
+      7
+     ],
+     [
+      8,
+      18
+     ],
+     [
+      10,
+      1
+     ],
+     [
+      11,
+      1
+     ],
+     [
+      11,
+      5
+     ],
+     [
+      12,
+      1
+     ]
+    ],
+    "names": [
+     "__future__",
+     "annotations",
+     "typing",
+     "Protocol",
+     "typing_extensions",
+     "Self",
+     "Negatable",
+     "Protocol",
+     "__neg__",
+     "self",
+     "Self",
+     "f",
+     "x",
+     "Negatable",
+     "f",
+     "f",
+     "int",
+     "f"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "diagnostics",
+  "path": "main.py",
+  "line": -1,
+  "character": -1,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "main.py"
+  },
+  {
+   "kind": "change",
+   "path": "main.py",
+   "start": [
+    5,
+    6
+   ],
+   "end": [
+    5,
+    15
+   ],
+   "text": "Negatable_x"
+  },
+  {
+   "kind": "change",
+   "path": "main.py",
+   "start": [
+    5,
+    6
+   ],
+   "end": [
+    5,
+    17
+   ],
+   "text": "Negatable"
+  },
+  {
+   "kind": "request",
+   "path": "main.py",
+   "start": [
+    12,
+    0
+   ],
+   "text": "completion"
+  },
+  {
+   "kind": "request",
+   "path": "main.py",
+   "start": [
+    3,
+    22
+   ],
+   "text": "completion"
+  },
+  {
+   "kind": "request",
+   "path": "main.py",
+   "start": [
+    8,
+    6
+   ],
+   "text": "references"
+  },
+  {
+   "kind": "request",
+   "path": "main.py",
+   "start": [
+    8,
+    7
+   ],
+   "text": "hover"
+  },
+  {
+   "kind": "request",
+   "path": "main.py",
+   "start": [
+    6,
+    27
+   ],
+   "text": "typeDefinition"
+  },
+  {
+   "kind": "request",
+   "path": "main.py",
+   "start": [
+    0,
+    10
+   ],
+   "text": "typeDefinition"
+  },
+  {
+   "kind": "request",
+   "path": "main.py",
+   "start": [
+    6,
+    15
+   ],
+   "text": "completion"
+  }
+ ],
+ "case": {
+  "chain_step": 0,
+  "families": [],
+  "family": "H8",
+  "history_index": 9,
+  "history_seed": 1012,
+  "mode": "fresh",
+  "note": "after main.py: replace 'Negatable' by 'Negatable_x' on line 5 and its inverse, 7 requests in a shuffled order: completion@main.py:12:0, completion@main.py:3:22, references@main.py:8:6, hover@main.py:8:7, typeDefinition@main.py:6:27, ...",
+  "seed": 1,
+  "timing": "race0"
+ },
+ "shape": "diagnostics:extra:reportGeneralTypeIssues",
+ "signature": "pyright|r1_history|diagnostics:extra:reportGeneralTypeIssues",
+ "expected": [
+  [
+   8,
+   6,
+   8,
+   7,
+   4,
+   "",
+   "Pyright",
+   "\"x\" is not accessed"
+  ],
+  [
+   10,
+   2,
+   10,
+   3,
+   3,
+   "reportGeneralTypeIssues",
+   "Pyright",
+   "Argument of type \"Literal[0]\" cannot be assigned to parameter \"x\" of type \"Negatable\" in function \"f\" \"Literal[0]\" is incompatible with protocol \"Negatable\" \"__neg__\" is an incompatible type Type \"() -> int\" cannot be assigned to type \"() -> Literal[0]\" Function return type \"int\" is incompatible with type \"Literal[0]\" \"int\" cannot be assigned to type \"Literal[0]\""
+  ]
+ ],
+ "actual": [
+  [
+   8,
+   6,
+   8,
+   7,
+   4,
+   "",
+   "Pyright",
+   "\"x\" is not accessed"
+  ],
+  [
+   10,
+   2,
+   10,
+   3,
+   3,
+   "reportGeneralTypeIssues",
+   "Pyright",
+   "Argument of type \"Literal[0]\" cannot be assigned to parameter \"x\" of type \"Negatable\" in function \"f\" \"Literal[0]\" is incompatible with protocol \"Negatable\" \"__neg__\" is an incompatible type Type \"() -> int\" cannot be assigned to type \"() -> Literal[0]\" Function return type \"int\" is incompatible with type \"Literal[0]\" \"int\" cannot be assigned to type \"Literal[0]\""
+  ],
+  [
+   12,
+   2,
+   12,
+   3,
+   3,
+   "reportGeneralTypeIssues",
+   "Pyright",
+   "Argument of type \"Literal[0]\" cannot be assigned to parameter \"x\" of type \"Negatable\" in function \"f\" \"Literal[0]\" is incompatible with protocol \"Negatable\" \"__neg__\" is an incompatible type Type \"() -> int\" cannot be assigned to type \"() -> Literal[0]\" Function return type \"int\" is incompatible with type \"Literal[0]\" \"int\" cannot be assigned to type \"Literal[0]\""
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "H8: after main.py: replace 'Negatable' by 'Negatable_x' on line 5 and its inverse, 7 requests in a shuffled order: completion@main.py:12:0, completion@main.py:3:22, references@main.py:8:6, hover@main.py:8; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 23s",
+ "violation": {
+  "oracle": "r1_history",
+  "server": "pyright-1.1.300",
+  "project": "pyright-4844",
+  "key": {
+   "method": "diagnostics",
+   "path": "main.py",
+   "line": -1,
+   "character": -1,
+   "extra": ""
+  },
+  "expected": [
+   [
+    8,
+    6,
+    8,
+    7,
+    4,
+    "",
+    "Pyright",
+    "\"x\" is not accessed"
+   ],
+   [
+    10,
+    2,
+    10,
+    3,
+    3,
+    "reportGeneralTypeIssues",
+    "Pyright",
+    "Argument of type \"Literal[0]\" cannot be assigned to parameter \"x\" of type \"Negatable\" in function \"f\" \"Literal[0]\" is incompatible with protocol \"Negatable\" \"__neg__\" is an incompatible type Type \"() -> int\" cannot be assigned to type \"() -> Literal[0]\" Function return type \"int\" is incompatible with type \"Literal[0]\" \"int\" cannot be assigned to type \"Literal[0]\""
+   ]
+  ],
+  "actual": [
+   [
+    8,
+    6,
+    8,
+    7,
+    4,
+    "",
+    "Pyright",
+    "\"x\" is not accessed"
+   ],
+   [
+    10,
+    2,
+    10,
+    3,
+    3,
+    "reportGeneralTypeIssues",
+    "Pyright",
+    "Argument of type \"Literal[0]\" cannot be assigned to parameter \"x\" of type \"Negatable\" in function \"f\" \"Literal[0]\" is incompatible with protocol \"Negatable\" \"__neg__\" is an incompatible type Type \"() -> int\" cannot be assigned to type \"() -> Literal[0]\" Function return type \"int\" is incompatible with type \"Literal[0]\" \"int\" cannot be assigned to type \"Literal[0]\""
+   ],
+   [
+    12,
+    2,
+    12,
+    3,
+    3,
+    "reportGeneralTypeIssues",
+    "Pyright",
+    "Argument of type \"Literal[0]\" cannot be assigned to parameter \"x\" of type \"Negatable\" in function \"f\" \"Literal[0]\" is incompatible with protocol \"Negatable\" \"__neg__\" is an incompatible type Type \"() -> int\" cannot be assigned to type \"() -> Literal[0]\" Function return type \"int\" is incompatible with type \"Literal[0]\" \"int\" cannot be assigned to type \"Literal[0]\""
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "main.py"
+   },
+   {
+    "kind": "change",
+    "path": "main.py",
+    "start": [
+     5,
+     6
+    ],
+    "end": [
+     5,
+     15
+    ],
+    "text": "Negatable_x"
+   },
+   {
+    "kind": "change",
+    "path": "main.py",
+    "start": [
+     5,
+     6
+    ],
+    "end": [
+     5,
+     17
+    ],
+    "text": "Negatable"
+   },
+   {
+    "kind": "request",
+    "path": "main.py",
+    "start": [
+     12,
+     0
+    ],
+    "text": "completion"
+   },
+   {
+    "kind": "request",
+    "path": "main.py",
+    "start": [
+     3,
+     22
+    ],
+    "text": "completion"
+   },
+   {
+    "kind": "request",
+    "path": "main.py",
+    "start": [
+     8,
+     6
+    ],
+    "text": "references"
+   },
+   {
+    "kind": "request",
+    "path": "main.py",
+    "start": [
+     8,
+     7
+    ],
+    "text": "hover"
+   },
+   {
+    "kind": "request",
+    "path": "main.py",
+    "start": [
+     6,
+     27
+    ],
+    "text": "typeDefinition"
+   },
+   {
+    "kind": "request",
+    "path": "main.py",
+    "start": [
+     0,
+     10
+    ],
+    "text": "typeDefinition"
+   },
+   {
+    "kind": "request",
+    "path": "main.py",
+    "start": [
+     6,
+     15
+    ],
+    "text": "completion"
+   }
+  ],
+  "detail": "{\"case\": {\"chain_step\": 0, \"families\": [], \"family\": \"H8\", \"history_index\": 9, \"history_seed\": 1012, \"mode\": \"fresh\", \"note\": \"after main.py: replace 'Negatable' by 'Negatable_x' on line 5 and its inverse, 7 requests in a shuffled order: completion@main.py:12:0, completion@main.py:3:22, references@main.py:8:6, hover@main.py:8:7, typeDefinition@main.py:6:27, ...\", \"seed\": 1, \"timing\": \"race0\"}, \"note\": \"H8: after main.py: replace 'Negatable' by 'Negatable_x' on line 5 and its inverse, 7 requests in a shuffled order: completion@main.py:12:0, completion@main.py:3:22, references@main.py:8:6, hover@main.py:8; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 23s\", \"shape\": \"diagnostics:extra:reportGeneralTypeIssues\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "pyright|r1_history|diagnostics:extra:reportGeneralTypeIssues",
+  "run_id": "28212517fd6f"
+ },
+ "replay_logs": [
+  "logs/pyright-1.1.300-28212517fd6f-replay-baseline-20260924-222828-e1e2e8.jsonl.gz",
+  "logs/pyright-1.1.300-28212517fd6f-replay-control-20260924-222828-3d6c78.jsonl.gz",
+  "logs/pyright-1.1.300-28212517fd6f-replay-history-20260924-222832-4b6018.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

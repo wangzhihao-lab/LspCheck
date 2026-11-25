@@ -1,0 +1,3 @@
+2026-09-24 09:51:27,824 INFO campaign_run run 63d55bb5d80b: r1_history on rust-analyzer 2026-09-21, rust-lang/rustlings@a650509c789d seed 2 settled, targets ['src/cargo_toml.rs', 'src/info_file.rs', 'src/list/scroll_state.rs']
+2026-09-24 09:55:56,006 INFO campaign_run run 63d55bb5d80b: 0 candidate(s) in 268s; confirming
+2026-09-24 09:55:56,007 INFO campaign_run run 63d55bb5d80b finished: ok, 0 confirmed of 0 candidate(s), 268s

@@ -1,0 +1,6 @@
+2026-11-18 11:21:34,409 INFO campaign_run run 8d087bf282e1: r4_edits on ts6 6.0.3, umami-software/umami@12ad773d621f seed 2 settled, targets ['src/app/(main)/settings/websites/WebsitesSettingsPage.tsx', 'src/app/(main)/websites/[websiteId]/(reports)/funnels/page.tsx', 'tests/api/helpers/constants.ts']
+2026-11-18 11:29:05,643 INFO campaign_run run 8d087bf282e1: 2 candidate(s) in 451s; confirming
+2026-11-18 11:33:14,760 INFO flake replay 1/3 of ts6|r4_edits|diagnostics:extra:2555: settled=True control_stable=True reproduced=True (249.1s)
+2026-11-18 11:37:05,808 INFO flake replay 2/3 of ts6|r4_edits|diagnostics:extra:2555: settled=True control_stable=True reproduced=True (231.1s)
+2026-11-18 11:40:45,492 INFO flake replay 3/3 of ts6|r4_edits|diagnostics:extra:2555: settled=True control_stable=True reproduced=True (219.7s)
+2026-11-18 11:40:45,508 INFO campaign_run run 8d087bf282e1 finished: ok, 1 confirmed of 2 candidate(s), 1151s

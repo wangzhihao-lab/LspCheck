@@ -1,0 +1,3 @@
+2026-11-18 13:14:24,874 INFO campaign_run run 0029c684f507: r0_crash on rust-analyzer 2026-09-21, niri-wm/niri@5f4469b6a992 seed 1 settled, targets ['niri-visual-tests/src/cases/gradient_oklch_alpha.rs', 'niri-visual-tests/src/cases/layout.rs', 'src/layer/mod.rs']
+2026-11-18 13:16:17,178 INFO campaign_run run 0029c684f507: 0 candidate(s) in 112s; confirming
+2026-11-18 13:16:17,179 INFO campaign_run run 0029c684f507 finished: ok, 0 confirmed of 0 candidate(s), 112s

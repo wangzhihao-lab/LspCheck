@@ -1,0 +1,480 @@
+{
+ "format": 1,
+ "campaign": "main_v2",
+ "vid": "53dd5e55330e-v00",
+ "run_id": "53dd5e55330e",
+ "oracle": "r3_routes",
+ "server": {
+  "kind": "rust-analyzer",
+  "version": "2026-09-21"
+ },
+ "project": {
+  "name": "casey/just@6119e6aff518",
+  "source": "corpus",
+  "ref": "temp/corpus/casey__just@6119e6aff518",
+  "commit": "6119e6aff518b6550d9030955f905b01051b5772",
+  "language": "rust"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "src/cache_lock.rs",
+    "positions": [
+     [
+      3,
+      21
+     ],
+     [
+      4,
+      24
+     ],
+     [
+      9,
+      38
+     ],
+     [
+      11,
+      9
+     ],
+     [
+      12,
+      24
+     ],
+     [
+      15,
+      28
+     ],
+     [
+      15,
+      36
+     ],
+     [
+      17,
+      26
+     ],
+     [
+      19,
+      10
+     ],
+     [
+      23,
+      45
+     ],
+     [
+      23,
+      69
+     ],
+     [
+      24,
+      9
+     ]
+    ],
+    "ends": [
+     [
+      3,
+      23
+     ],
+     [
+      4,
+      30
+     ],
+     [
+      9,
+      43
+     ],
+     [
+      11,
+      12
+     ],
+     [
+      12,
+      27
+     ],
+     [
+      15,
+      32
+     ],
+     [
+      15,
+      40
+     ],
+     [
+      17,
+      30
+     ],
+     [
+      19,
+      13
+     ],
+     [
+      23,
+      48
+     ],
+     [
+      23,
+      72
+     ],
+     [
+      24,
+      12
+     ]
+    ],
+    "names": [
+     "File",
+     "Utf8PathBuf",
+     "RunResult",
+     "source",
+     "clone",
+     "map_err",
+     "context",
+     "map_err",
+     "entry",
+     "entry",
+     "Error",
+     "source"
+    ]
+   },
+   {
+    "path": "src/path_error.rs",
+    "positions": [
+     [
+      2,
+      5
+     ],
+     [
+      3,
+      43
+     ],
+     [
+      5,
+      6
+     ],
+     [
+      5,
+      75
+     ],
+     [
+      7,
+      13
+     ],
+     [
+      10,
+      13
+     ],
+     [
+      13,
+      73
+     ],
+     [
+      14,
+      12
+     ],
+     [
+      15,
+      6
+     ],
+     [
+      15,
+      69
+     ],
+     [
+      16,
+      13
+     ],
+     [
+      18,
+      43
+     ]
+    ],
+    "ends": [
+     [
+      2,
+      8
+     ],
+     [
+      3,
+      46
+     ],
+     [
+      5,
+      9
+     ],
+     [
+      5,
+      79
+     ],
+     [
+      7,
+      17
+     ],
+     [
+      10,
+      25
+     ],
+     [
+      13,
+      77
+     ],
+     [
+      14,
+      22
+     ],
+     [
+      15,
+      9
+     ],
+     [
+      15,
+      72
+     ],
+     [
+      16,
+      25
+     ],
+     [
+      18,
+      45
+     ]
+    ],
+    "names": [
+     "derive",
+     "suffix",
+     "snafu",
+     "as_path",
+     "display",
+     "CurrentDirectoryUnicode",
+     "as_path",
+     "HomeDirectoryUnicode",
+     "snafu",
+     "source",
+     "RuntimeDirectoryUnicode",
+     "path"
+    ]
+   },
+   {
+    "path": "tests/datetime.rs",
+    "positions": [
+     [
+      2,
+      4
+     ],
+     [
+      4,
+      9
+     ],
+     [
+      11,
+      11
+     ],
+     [
+      16,
+      9
+     ],
+     [
+      17,
+      4
+     ],
+     [
+      24,
+      11
+     ],
+     [
+      28,
+      4
+     ],
+     [
+      30,
+      4
+     ],
+     [
+      30,
+      9
+     ],
+     [
+      32,
+      7
+     ],
+     [
+      42,
+      8
+     ],
+     [
+      59,
+      8
+     ]
+    ],
+    "ends": [
+     [
+      2,
+      6
+     ],
+     [
+      4,
+      11
+     ],
+     [
+      11,
+      17
+     ],
+     [
+      16,
+      15
+     ],
+     [
+      17,
+      6
+     ],
+     [
+      24,
+      17
+     ],
+     [
+      28,
+      6
+     ],
+     [
+      30,
+      6
+     ],
+     [
+      30,
+      11
+     ],
+     [
+      32,
+      9
+     ],
+     [
+      42,
+      12
+     ],
+     [
+      59,
+      12
+     ]
+    ],
+    "names": [
+     "test",
+     "new",
+     "stdout_regex",
+     "datetime_utc",
+     "Test",
+     "stdout_regex",
+     "test",
+     "Test",
+     "new",
+     "args",
+     "failure",
+     "failure"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "definitionConsistency",
+  "path": "src/cache_lock.rs",
+  "line": 10,
+  "character": 22,
+  "extra": "from:src/cache_lock.rs:11:9"
+ },
+ "ops": [],
+ "case": {
+  "loc": [
+   "src/cache_lock.rs",
+   10,
+   19,
+   10,
+   25
+  ],
+  "sub": "d",
+  "target": [
+   "src/cache_lock.rs",
+   11,
+   9
+  ]
+ },
+ "shape": "definitionConsistency:missing",
+ "signature": "rust-analyzer|r3_routes|definitionConsistency:missing",
+ "expected": [
+  [
+   "src/cache_lock.rs",
+   10,
+   19,
+   10,
+   25
+  ],
+  [
+   "src/error.rs",
+   163,
+   4,
+   163,
+   10
+  ]
+ ],
+ "actual": [
+  [
+   "src/cache_lock.rs",
+   10,
+   19,
+   10,
+   25
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "flake 3/3 [r1:SCR r2:SCR r3:SCR] in 133s",
+ "violation": {
+  "oracle": "r3_routes",
+  "server": "rust-analyzer-2026-09-21",
+  "project": "casey/just@6119e6aff518",
+  "key": {
+   "method": "definitionConsistency",
+   "path": "src/cache_lock.rs",
+   "line": 10,
+   "character": 22,
+   "extra": "from:src/cache_lock.rs:11:9"
+  },
+  "expected": [
+   [
+    "src/cache_lock.rs",
+    10,
+    19,
+    10,
+    25
+   ],
+   [
+    "src/error.rs",
+    163,
+    4,
+    163,
+    10
+   ]
+  ],
+  "actual": [
+   [
+    "src/cache_lock.rs",
+    10,
+    19,
+    10,
+    25
+   ]
+  ],
+  "ops": [],
+  "detail": "{\"case\": {\"loc\": [\"src/cache_lock.rs\", 10, 19, 10, 25], \"sub\": \"d\", \"target\": [\"src/cache_lock.rs\", 11, 9]}, \"note\": \"flake 3/3 [r1:SCR r2:SCR r3:SCR] in 133s\", \"shape\": \"definitionConsistency:missing\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "rust-analyzer|r3_routes|definitionConsistency:missing",
+  "run_id": "53dd5e55330e"
+ },
+ "replay_logs": [
+  "logs/rust-analyzer-2026-09-21-53dd5e55330e-r3-replay-baseline-20261118-085145-8bc62e.jsonl.gz",
+  "logs/rust-analyzer-2026-09-21-53dd5e55330e-r3-replay-control-20261118-085206-a07465.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

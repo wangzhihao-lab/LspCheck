@@ -1,0 +1,1354 @@
+{
+ "oracle": "r2_handles",
+ "server": "rust-analyzer",
+ "version": "2026-09-21",
+ "project": "rust-lang/rustlings@a650509c789d",
+ "language": "rust",
+ "seed": 1,
+ "targets": [
+  {
+   "path": "src/cargo_toml.rs",
+   "positions": [
+    [
+     1,
+     5
+    ],
+    [
+     29,
+     5
+    ],
+    [
+     55,
+     20
+    ],
+    [
+     71,
+     14
+    ],
+    [
+     92,
+     18
+    ],
+    [
+     94,
+     45
+    ],
+    [
+     122,
+     31
+    ],
+    [
+     129,
+     12
+    ]
+   ],
+   "ends": [
+    [
+     1,
+     7
+    ],
+    [
+     29,
+     7
+    ],
+    [
+     55,
+     29
+    ],
+    [
+     71,
+     24
+    ],
+    [
+     92,
+     30
+    ],
+    [
+     94,
+     46
+    ],
+    [
+     122,
+     33
+    ],
+    [
+     129,
+     17
+    ]
+   ],
+   "names": [
+    "std",
+    "buf",
+    "extend_from_slice",
+    "exercise_path_prefix",
+    "test_bins_start_end_ind",
+    "ok",
+    "new",
+    "assert_eq"
+   ]
+  },
+  {
+   "path": "src/watch/state.rs",
+   "positions": [
+    [
+     17,
+     22
+    ],
+    [
+     48,
+     17
+    ],
+    [
+     66,
+     46
+    ],
+    [
+     165,
+     13
+    ],
+    [
+     183,
+     31
+    ],
+    [
+     208,
+     12
+    ],
+    [
+     276,
+     15
+    ],
+    [
+     279,
+     27
+    ]
+   ],
+   "ends": [
+    [
+     17,
+     30
+    ],
+    [
+     48,
+     22
+    ],
+    [
+     66,
+     54
+    ],
+    [
+     165,
+     15
+    ],
+    [
+     183,
+     37
+    ],
+    [
+     208,
+     16
+    ],
+    [
+     276,
+     20
+    ],
+    [
+     279,
+     30
+    ]
+   ],
+   "names": [
+    "OUTPUT_CAPACITY",
+    "term_width",
+    "OUTPUT_CAPACITY",
+    "done",
+    "SetAttribute",
+    "show_key",
+    "show_hint",
+    "stdout"
+   ]
+  }
+ ],
+ "max_cases": 12,
+ "timing": "settled",
+ "result": {
+  "oracle": "r2_handles",
+  "run_id": "r2_handles-rust-analyzer-075835",
+  "cases": 12,
+  "invalid_cases": 0,
+  "sessions": 1,
+  "unsettled": 0,
+  "compared": {
+   "semanticTokensDelta": 4,
+   "completionResolve": 18
+  },
+  "unstable": {},
+  "seconds": 91.335,
+  "notes": [
+   "handle kinds: {'codeAction': True, 'completion': True, 'delta': True}",
+   "allowed codeActionResolve error:-32602: 8",
+   "allowed completionResolve no edit: 6"
+  ],
+  "candidates": [
+   {
+    "oracle": "r2_handles",
+    "server": "rust-analyzer-2026-09-21",
+    "project": "rust-lang/rustlings@a650509c789d",
+    "key": {
+     "method": "completionResolve",
+     "path": "src/cargo_toml.rs",
+     "line": 55,
+     "character": 29,
+     "extra": "end|top2|extend_from_slice|2|null|7ffffff6|0"
+    },
+    "expected": [
+     [
+      "textEdit",
+      57,
+      12,
+      57,
+      29,
+      "extend_from_slice"
+     ]
+    ],
+    "actual": [
+     [
+      "textEdit",
+      55,
+      12,
+      55,
+      29,
+      "extend_from_slice"
+     ]
+    ],
+    "ops": [
+     {
+      "kind": "open",
+      "path": "src/cargo_toml.rs"
+     },
+     {
+      "kind": "change",
+      "path": "src/cargo_toml.rs",
+      "start": [
+       0,
+       0
+      ],
+      "end": [
+       0,
+       0
+      ],
+      "text": "\n\n"
+     }
+    ],
+    "detail": "{\"case\": {\"extra\": \"end\", \"path\": \"src/cargo_toml.rs\", \"shift\": {\"col\": 0, \"line\": 0, \"text\": \"\\n\\n\", \"variant\": \"top\"}, \"sub\": \"completion\", \"where\": [55, 29]}, \"note\": \"\", \"shape\": \"completionResolve:changed\"}",
+    "reproduced": "0/0",
+    "reduced_ops": [],
+    "signature": "rust-analyzer|r2_handles|completionResolve:changed",
+    "run_id": "r2_handles-rust-analyzer-075835"
+   },
+   {
+    "oracle": "r2_handles",
+    "server": "rust-analyzer-2026-09-21",
+    "project": "rust-lang/rustlings@a650509c789d",
+    "key": {
+     "method": "completionResolve",
+     "path": "src/cargo_toml.rs",
+     "line": 55,
+     "character": 29,
+     "extra": "end|top2|arc(use std::sync::Arc)|15|null|7ffffffb|0"
+    },
+    "expected": [
+     [
+      "additionalTextEdits",
+      3,
+      4,
+      3,
+      19,
+      "std::{path::Path, sync::Arc}"
+     ],
+     [
+      "additionalTextEdits",
+      57,
+      8,
+      57,
+      12,
+      ""
+     ],
+     [
+      "textEdit",
+      57,
+      12,
+      57,
+      29,
+      "Arc::new(buf)"
+     ]
+    ],
+    "actual": [
+     [
+      "additionalTextEdits",
+      3,
+      4,
+      3,
+      19,
+      "std::{path::Path, sync::Arc}"
+     ],
+     [
+      "additionalTextEdits",
+      55,
+      8,
+      55,
+      12,
+      ""
+     ],
+     [
+      "textEdit",
+      55,
+      12,
+      55,
+      29,
+      "Arc::new(buf)"
+     ]
+    ],
+    "ops": [
+     {
+      "kind": "open",
+      "path": "src/cargo_toml.rs"
+     },
+     {
+      "kind": "change",
+      "path": "src/cargo_toml.rs",
+      "start": [
+       0,
+       0
+      ],
+      "end": [
+       0,
+       0
+      ],
+      "text": "\n\n"
+     }
+    ],
+    "detail": "{\"case\": {\"extra\": \"end\", \"path\": \"src/cargo_toml.rs\", \"shift\": {\"col\": 0, \"line\": 0, \"text\": \"\\n\\n\", \"variant\": \"top\"}, \"sub\": \"completion\", \"where\": [55, 29]}, \"note\": \"\", \"shape\": \"completionResolve:changed\"}",
+    "reproduced": "0/0",
+    "reduced_ops": [],
+    "signature": "rust-analyzer|r2_handles|completionResolve:changed",
+    "run_id": "r2_handles-rust-analyzer-075835"
+   },
+   {
+    "oracle": "r2_handles",
+    "server": "rust-analyzer-2026-09-21",
+    "project": "rust-lang/rustlings@a650509c789d",
+    "key": {
+     "method": "completionResolve",
+     "path": "src/cargo_toml.rs",
+     "line": 55,
+     "character": 29,
+     "extra": "end|top2|rc(use std::rc::Rc)|15|null|7ffffffb|0"
+    },
+    "expected": [
+     [
+      "additionalTextEdits",
+      3,
+      4,
+      3,
+      19,
+      "std::{path::Path, rc::Rc}"
+     ],
+     [
+      "additionalTextEdits",
+      57,
+      8,
+      57,
+      12,
+      ""
+     ],
+     [
+      "textEdit",
+      57,
+      12,
+      57,
+      29,
+      "Rc::new(buf)"
+     ]
+    ],
+    "actual": [
+     [
+      "additionalTextEdits",
+      3,
+      4,
+      3,
+      19,
+      "std::{path::Path, rc::Rc}"
+     ],
+     [
+      "additionalTextEdits",
+      55,
+      8,
+      55,
+      12,
+      ""
+     ],
+     [
+      "textEdit",
+      55,
+      12,
+      55,
+      29,
+      "Rc::new(buf)"
+     ]
+    ],
+    "ops": [
+     {
+      "kind": "open",
+      "path": "src/cargo_toml.rs"
+     },
+     {
+      "kind": "change",
+      "path": "src/cargo_toml.rs",
+      "start": [
+       0,
+       0
+      ],
+      "end": [
+       0,
+       0
+      ],
+      "text": "\n\n"
+     }
+    ],
+    "detail": "{\"case\": {\"extra\": \"end\", \"path\": \"src/cargo_toml.rs\", \"shift\": {\"col\": 0, \"line\": 0, \"text\": \"\\n\\n\", \"variant\": \"top\"}, \"sub\": \"completion\", \"where\": [55, 29]}, \"note\": \"\", \"shape\": \"completionResolve:changed\"}",
+    "reproduced": "0/0",
+    "reduced_ops": [],
+    "signature": "rust-analyzer|r2_handles|completionResolve:changed",
+    "run_id": "r2_handles-rust-analyzer-075835"
+   },
+   {
+    "oracle": "r2_handles",
+    "server": "rust-analyzer-2026-09-21",
+    "project": "rust-lang/rustlings@a650509c789d",
+    "key": {
+     "method": "completionResolve",
+     "path": "src/cargo_toml.rs",
+     "line": 55,
+     "character": 29,
+     "extra": "end|top2|concat|2|null|7fffffe8|0"
+    },
+    "expected": [
+     [
+      "textEdit",
+      57,
+      12,
+      57,
+      29,
+      "concat"
+     ]
+    ],
+    "actual": [
+     [
+      "textEdit",
+      55,
+      12,
+      55,
+      29,
+      "concat"
+     ]
+    ],
+    "ops": [
+     {
+      "kind": "open",
+      "path": "src/cargo_toml.rs"
+     },
+     {
+      "kind": "change",
+      "path": "src/cargo_toml.rs",
+      "start": [
+       0,
+       0
+      ],
+      "end": [
+       0,
+       0
+      ],
+      "text": "\n\n"
+     }
+    ],
+    "detail": "{\"case\": {\"extra\": \"end\", \"path\": \"src/cargo_toml.rs\", \"shift\": {\"col\": 0, \"line\": 0, \"text\": \"\\n\\n\", \"variant\": \"top\"}, \"sub\": \"completion\", \"where\": [55, 29]}, \"note\": \"\", \"shape\": \"completionResolve:changed\"}",
+    "reproduced": "0/0",
+    "reduced_ops": [],
+    "signature": "rust-analyzer|r2_handles|completionResolve:changed",
+    "run_id": "r2_handles-rust-analyzer-075835"
+   },
+   {
+    "oracle": "r2_handles",
+    "server": "rust-analyzer-2026-09-21",
+    "project": "rust-lang/rustlings@a650509c789d",
+    "key": {
+     "method": "completionResolve",
+     "path": "src/cargo_toml.rs",
+     "line": 55,
+     "character": 29,
+     "extra": "end|top2|join|2|null|7fffffe8|0"
+    },
+    "expected": [
+     [
+      "textEdit",
+      57,
+      12,
+      57,
+      29,
+      "join"
+     ]
+    ],
+    "actual": [
+     [
+      "textEdit",
+      55,
+      12,
+      55,
+      29,
+      "join"
+     ]
+    ],
+    "ops": [
+     {
+      "kind": "open",
+      "path": "src/cargo_toml.rs"
+     },
+     {
+      "kind": "change",
+      "path": "src/cargo_toml.rs",
+      "start": [
+       0,
+       0
+      ],
+      "end": [
+       0,
+       0
+      ],
+      "text": "\n\n"
+     }
+    ],
+    "detail": "{\"case\": {\"extra\": \"end\", \"path\": \"src/cargo_toml.rs\", \"shift\": {\"col\": 0, \"line\": 0, \"text\": \"\\n\\n\", \"variant\": \"top\"}, \"sub\": \"completion\", \"where\": [55, 29]}, \"note\": \"\", \"shape\": \"completionResolve:changed\"}",
+    "reproduced": "0/0",
+    "reduced_ops": [],
+    "signature": "rust-analyzer|r2_handles|completionResolve:changed",
+    "run_id": "r2_handles-rust-analyzer-075835"
+   },
+   {
+    "oracle": "r2_handles",
+    "server": "rust-analyzer-2026-09-21",
+    "project": "rust-lang/rustlings@a650509c789d",
+    "key": {
+     "method": "completionResolve",
+     "path": "src/cargo_toml.rs",
+     "line": 55,
+     "character": 29,
+     "extra": "end|top2|remove|2|null|7fffffe8|0"
+    },
+    "expected": [
+     [
+      "textEdit",
+      57,
+      12,
+      57,
+      29,
+      "remove"
+     ]
+    ],
+    "actual": [
+     [
+      "textEdit",
+      55,
+      12,
+      55,
+      29,
+      "remove"
+     ]
+    ],
+    "ops": [
+     {
+      "kind": "open",
+      "path": "src/cargo_toml.rs"
+     },
+     {
+      "kind": "change",
+      "path": "src/cargo_toml.rs",
+      "start": [
+       0,
+       0
+      ],
+      "end": [
+       0,
+       0
+      ],
+      "text": "\n\n"
+     }
+    ],
+    "detail": "{\"case\": {\"extra\": \"end\", \"path\": \"src/cargo_toml.rs\", \"shift\": {\"col\": 0, \"line\": 0, \"text\": \"\\n\\n\", \"variant\": \"top\"}, \"sub\": \"completion\", \"where\": [55, 29]}, \"note\": \"\", \"shape\": \"completionResolve:changed\"}",
+    "reproduced": "0/0",
+    "reduced_ops": [],
+    "signature": "rust-analyzer|r2_handles|completionResolve:changed",
+    "run_id": "r2_handles-rust-analyzer-075835"
+   }
+  ]
+ },
+ "replays": [
+  {
+   "signature": "rust-analyzer|r2_handles|completionResolve:changed",
+   "key": {
+    "method": "completionResolve",
+    "path": "src/cargo_toml.rs",
+    "line": 55,
+    "character": 29,
+    "extra": "end|top2|extend_from_slice|2|null|7ffffff6|0"
+   },
+   "outcomes": [
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 128.845,
+     "observed_shape": "completionResolve:changed",
+     "observed_actual": [
+      [
+       "textEdit",
+       55,
+       12,
+       55,
+       29,
+       "extend_from_slice"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "textEdit",
+       57,
+       12,
+       57,
+       29,
+       "extend_from_slice"
+      ]
+     ]
+    },
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 66.098,
+     "observed_shape": "completionResolve:changed",
+     "observed_actual": [
+      [
+       "textEdit",
+       55,
+       12,
+       55,
+       29,
+       "extend_from_slice"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "textEdit",
+       57,
+       12,
+       57,
+       29,
+       "extend_from_slice"
+      ]
+     ]
+    },
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 102.981,
+     "observed_shape": "completionResolve:changed",
+     "observed_actual": [
+      [
+       "textEdit",
+       55,
+       12,
+       55,
+       29,
+       "extend_from_slice"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "textEdit",
+       57,
+       12,
+       57,
+       29,
+       "extend_from_slice"
+      ]
+     ]
+    }
+   ],
+   "reproduced": "3/3"
+  },
+  {
+   "signature": "rust-analyzer|r2_handles|completionResolve:changed",
+   "key": {
+    "method": "completionResolve",
+    "path": "src/cargo_toml.rs",
+    "line": 55,
+    "character": 29,
+    "extra": "end|top2|arc(use std::sync::Arc)|15|null|7ffffffb|0"
+   },
+   "outcomes": [
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 52.46,
+     "observed_shape": "completionResolve:changed",
+     "observed_actual": [
+      [
+       "additionalTextEdits",
+       3,
+       4,
+       3,
+       19,
+       "std::{path::Path, sync::Arc}"
+      ],
+      [
+       "additionalTextEdits",
+       55,
+       8,
+       55,
+       12,
+       ""
+      ],
+      [
+       "textEdit",
+       55,
+       12,
+       55,
+       29,
+       "Arc::new(buf)"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "additionalTextEdits",
+       3,
+       4,
+       3,
+       19,
+       "std::{path::Path, sync::Arc}"
+      ],
+      [
+       "additionalTextEdits",
+       57,
+       8,
+       57,
+       12,
+       ""
+      ],
+      [
+       "textEdit",
+       57,
+       12,
+       57,
+       29,
+       "Arc::new(buf)"
+      ]
+     ]
+    },
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 53.367,
+     "observed_shape": "completionResolve:changed",
+     "observed_actual": [
+      [
+       "additionalTextEdits",
+       3,
+       4,
+       3,
+       19,
+       "std::{path::Path, sync::Arc}"
+      ],
+      [
+       "additionalTextEdits",
+       55,
+       8,
+       55,
+       12,
+       ""
+      ],
+      [
+       "textEdit",
+       55,
+       12,
+       55,
+       29,
+       "Arc::new(buf)"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "additionalTextEdits",
+       3,
+       4,
+       3,
+       19,
+       "std::{path::Path, sync::Arc}"
+      ],
+      [
+       "additionalTextEdits",
+       57,
+       8,
+       57,
+       12,
+       ""
+      ],
+      [
+       "textEdit",
+       57,
+       12,
+       57,
+       29,
+       "Arc::new(buf)"
+      ]
+     ]
+    },
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 36.283,
+     "observed_shape": "completionResolve:changed",
+     "observed_actual": [
+      [
+       "additionalTextEdits",
+       3,
+       4,
+       3,
+       19,
+       "std::{path::Path, sync::Arc}"
+      ],
+      [
+       "additionalTextEdits",
+       55,
+       8,
+       55,
+       12,
+       ""
+      ],
+      [
+       "textEdit",
+       55,
+       12,
+       55,
+       29,
+       "Arc::new(buf)"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "additionalTextEdits",
+       3,
+       4,
+       3,
+       19,
+       "std::{path::Path, sync::Arc}"
+      ],
+      [
+       "additionalTextEdits",
+       57,
+       8,
+       57,
+       12,
+       ""
+      ],
+      [
+       "textEdit",
+       57,
+       12,
+       57,
+       29,
+       "Arc::new(buf)"
+      ]
+     ]
+    }
+   ],
+   "reproduced": "3/3"
+  },
+  {
+   "signature": "rust-analyzer|r2_handles|completionResolve:changed",
+   "key": {
+    "method": "completionResolve",
+    "path": "src/cargo_toml.rs",
+    "line": 55,
+    "character": 29,
+    "extra": "end|top2|rc(use std::rc::Rc)|15|null|7ffffffb|0"
+   },
+   "outcomes": [
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 102.424,
+     "observed_shape": "completionResolve:changed",
+     "observed_actual": [
+      [
+       "additionalTextEdits",
+       3,
+       4,
+       3,
+       19,
+       "std::{path::Path, rc::Rc}"
+      ],
+      [
+       "additionalTextEdits",
+       55,
+       8,
+       55,
+       12,
+       ""
+      ],
+      [
+       "textEdit",
+       55,
+       12,
+       55,
+       29,
+       "Rc::new(buf)"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "additionalTextEdits",
+       3,
+       4,
+       3,
+       19,
+       "std::{path::Path, rc::Rc}"
+      ],
+      [
+       "additionalTextEdits",
+       57,
+       8,
+       57,
+       12,
+       ""
+      ],
+      [
+       "textEdit",
+       57,
+       12,
+       57,
+       29,
+       "Rc::new(buf)"
+      ]
+     ]
+    },
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 90.024,
+     "observed_shape": "completionResolve:changed",
+     "observed_actual": [
+      [
+       "additionalTextEdits",
+       3,
+       4,
+       3,
+       19,
+       "std::{path::Path, rc::Rc}"
+      ],
+      [
+       "additionalTextEdits",
+       55,
+       8,
+       55,
+       12,
+       ""
+      ],
+      [
+       "textEdit",
+       55,
+       12,
+       55,
+       29,
+       "Rc::new(buf)"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "additionalTextEdits",
+       3,
+       4,
+       3,
+       19,
+       "std::{path::Path, rc::Rc}"
+      ],
+      [
+       "additionalTextEdits",
+       57,
+       8,
+       57,
+       12,
+       ""
+      ],
+      [
+       "textEdit",
+       57,
+       12,
+       57,
+       29,
+       "Rc::new(buf)"
+      ]
+     ]
+    },
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 56.381,
+     "observed_shape": "completionResolve:changed",
+     "observed_actual": [
+      [
+       "additionalTextEdits",
+       3,
+       4,
+       3,
+       19,
+       "std::{path::Path, rc::Rc}"
+      ],
+      [
+       "additionalTextEdits",
+       55,
+       8,
+       55,
+       12,
+       ""
+      ],
+      [
+       "textEdit",
+       55,
+       12,
+       55,
+       29,
+       "Rc::new(buf)"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "additionalTextEdits",
+       3,
+       4,
+       3,
+       19,
+       "std::{path::Path, rc::Rc}"
+      ],
+      [
+       "additionalTextEdits",
+       57,
+       8,
+       57,
+       12,
+       ""
+      ],
+      [
+       "textEdit",
+       57,
+       12,
+       57,
+       29,
+       "Rc::new(buf)"
+      ]
+     ]
+    }
+   ],
+   "reproduced": "3/3"
+  },
+  {
+   "signature": "rust-analyzer|r2_handles|completionResolve:changed",
+   "key": {
+    "method": "completionResolve",
+    "path": "src/cargo_toml.rs",
+    "line": 55,
+    "character": 29,
+    "extra": "end|top2|concat|2|null|7fffffe8|0"
+   },
+   "outcomes": [
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 50.974,
+     "observed_shape": "completionResolve:changed",
+     "observed_actual": [
+      [
+       "textEdit",
+       55,
+       12,
+       55,
+       29,
+       "concat"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "textEdit",
+       57,
+       12,
+       57,
+       29,
+       "concat"
+      ]
+     ]
+    },
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 42.036,
+     "observed_shape": "completionResolve:changed",
+     "observed_actual": [
+      [
+       "textEdit",
+       55,
+       12,
+       55,
+       29,
+       "concat"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "textEdit",
+       57,
+       12,
+       57,
+       29,
+       "concat"
+      ]
+     ]
+    },
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 38.891,
+     "observed_shape": "completionResolve:changed",
+     "observed_actual": [
+      [
+       "textEdit",
+       55,
+       12,
+       55,
+       29,
+       "concat"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "textEdit",
+       57,
+       12,
+       57,
+       29,
+       "concat"
+      ]
+     ]
+    }
+   ],
+   "reproduced": "3/3"
+  },
+  {
+   "signature": "rust-analyzer|r2_handles|completionResolve:changed",
+   "key": {
+    "method": "completionResolve",
+    "path": "src/cargo_toml.rs",
+    "line": 55,
+    "character": 29,
+    "extra": "end|top2|join|2|null|7fffffe8|0"
+   },
+   "outcomes": [
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 41.18,
+     "observed_shape": "completionResolve:changed",
+     "observed_actual": [
+      [
+       "textEdit",
+       55,
+       12,
+       55,
+       29,
+       "join"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "textEdit",
+       57,
+       12,
+       57,
+       29,
+       "join"
+      ]
+     ]
+    },
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 39.798,
+     "observed_shape": "completionResolve:changed",
+     "observed_actual": [
+      [
+       "textEdit",
+       55,
+       12,
+       55,
+       29,
+       "join"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "textEdit",
+       57,
+       12,
+       57,
+       29,
+       "join"
+      ]
+     ]
+    },
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 47.02,
+     "observed_shape": "completionResolve:changed",
+     "observed_actual": [
+      [
+       "textEdit",
+       55,
+       12,
+       55,
+       29,
+       "join"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "textEdit",
+       57,
+       12,
+       57,
+       29,
+       "join"
+      ]
+     ]
+    }
+   ],
+   "reproduced": "3/3"
+  },
+  {
+   "signature": "rust-analyzer|r2_handles|completionResolve:changed",
+   "key": {
+    "method": "completionResolve",
+    "path": "src/cargo_toml.rs",
+    "line": 55,
+    "character": 29,
+    "extra": "end|top2|remove|2|null|7fffffe8|0"
+   },
+   "outcomes": [
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 33.124,
+     "observed_shape": "completionResolve:changed",
+     "observed_actual": [
+      [
+       "textEdit",
+       55,
+       12,
+       55,
+       29,
+       "remove"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "textEdit",
+       57,
+       12,
+       57,
+       29,
+       "remove"
+      ]
+     ]
+    },
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 41.103,
+     "observed_shape": "completionResolve:changed",
+     "observed_actual": [
+      [
+       "textEdit",
+       55,
+       12,
+       55,
+       29,
+       "remove"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "textEdit",
+       57,
+       12,
+       57,
+       29,
+       "remove"
+      ]
+     ]
+    },
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 34.36,
+     "observed_shape": "completionResolve:changed",
+     "observed_actual": [
+      [
+       "textEdit",
+       55,
+       12,
+       55,
+       29,
+       "remove"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "textEdit",
+       57,
+       12,
+       57,
+       29,
+       "remove"
+      ]
+     ]
+    }
+   ],
+   "reproduced": "3/3"
+  }
+ ],
+ "total_seconds": 1148.7
+}

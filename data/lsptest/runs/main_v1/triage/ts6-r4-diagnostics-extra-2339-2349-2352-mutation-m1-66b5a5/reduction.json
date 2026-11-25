@@ -1,0 +1,62 @@
+{
+ "vid": "9f1de78ccead-v00",
+ "ops_before": 3,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 2,
+ "cache_hits": 0,
+ "reduce_seconds": 12.545,
+ "budget_exhausted": false,
+ "probe_log": [
+  [
+   2,
+   false
+  ],
+  [
+   2,
+   false
+  ]
+ ],
+ "logs": [
+  "ts6-6.0.3-tr66b5a5-r4-replay-baseline-20260925-191048-105aec.jsonl.gz",
+  "ts6-6.0.3-tr66b5a5-r4-replay-case-20260925-191025-ab15b0.jsonl.gz",
+  "ts6-6.0.3-tr66b5a5-r4-replay-control-20260925-191113-6b5fb5.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [],
+  "actual": [
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2339",
+    "typescript",
+    "Property 'delete' does not exist on type '[string, string]'."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2349",
+    "typescript",
+    "This expression is not callable. Type '[string, string]' has no call signatures."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2352",
+    "typescript",
+    "Conversion of type 'number' to type 'keyof Commands' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first."
+   ]
+  ]
+ },
+ "ops_after": 3,
+ "total_seconds": 261.0
+}

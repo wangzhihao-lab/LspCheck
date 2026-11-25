@@ -1,0 +1,3 @@
+2026-11-19 03:56:59,992 INFO campaign_run run dd83acb38e28: r1_history on rust-analyzer 2026-09-21, googleworkspace/cli@a3768d0e82ad seed 3 settled, targets ['crates/google-workspace-cli/src/auth.rs', 'crates/google-workspace-cli/src/helpers/events/mod.rs', 'crates/google-workspace-cli/src/setup_tui.rs']
+2026-11-19 04:03:49,094 INFO campaign_run run dd83acb38e28: 0 candidate(s) in 409s; confirming
+2026-11-19 04:03:49,094 INFO campaign_run run dd83acb38e28 finished: ok, 0 confirmed of 0 candidate(s), 409s

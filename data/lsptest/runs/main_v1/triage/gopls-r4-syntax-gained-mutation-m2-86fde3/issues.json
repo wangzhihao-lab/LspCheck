@@ -1,0 +1,90 @@
+{
+ "queries": [
+  "syntax unexpected repo:golang/go is:issue label:gopls",
+  "syntax \"wrong edit\" repo:golang/go is:issue label:gopls"
+ ],
+ "matches": [
+  {
+   "repo": "golang/go",
+   "number": 79772,
+   "title": "go/types: SEGV in tpWalker.isParameterized, case Signature",
+   "url": "https://github.com/golang/go/issues/79772",
+   "state": "open",
+   "created": "2026-06-01",
+   "comments": 1,
+   "query": "syntax unexpected repo:golang/go is:issue label:gopls"
+  },
+  {
+   "repo": "golang/go",
+   "number": 73779,
+   "title": "x/tools/gopls: ChangeSignature: \"cannot inline: corrupted reference\" bug",
+   "url": "https://github.com/golang/go/issues/73779",
+   "state": "open",
+   "created": "2025-05-19",
+   "comments": 1,
+   "query": "syntax unexpected repo:golang/go is:issue label:gopls"
+  },
+  {
+   "repo": "golang/go",
+   "number": 73874,
+   "title": "x/tools/gopls: Completion: add description to suggested function literals",
+   "url": "https://github.com/golang/go/issues/73874",
+   "state": "open",
+   "created": "2025-05-27",
+   "comments": 4,
+   "query": "syntax unexpected repo:golang/go is:issue label:gopls"
+  },
+  {
+   "repo": "golang/go",
+   "number": 69626,
+   "title": "x/tools/gopls: usePlaceholders=false disables variable name suggestions when using the var! suffix completion ",
+   "url": "https://github.com/golang/go/issues/69626",
+   "state": "open",
+   "created": "2024-09-25",
+   "comments": 4,
+   "query": "syntax unexpected repo:golang/go is:issue label:gopls"
+  },
+  {
+   "repo": "golang/go",
+   "number": 70603,
+   "title": "x/tools/gopls: DidOpen (et al?) fail to reject non-absolute path from client early, triggering assertion failure",
+   "url": "https://github.com/golang/go/issues/70603",
+   "state": "open",
+   "created": "2024-11-27",
+   "comments": 20,
+   "query": "syntax unexpected repo:golang/go is:issue label:gopls"
+  },
+  {
+   "repo": "golang/go",
+   "number": 79892,
+   "title": "x/tools/gopls: mcp go_diagnostics misattributes diagnostics to files[0] (and drops its own) when given multiple files",
+   "url": "https://github.com/golang/go/issues/79892",
+   "state": "closed",
+   "created": "2026-06-07",
+   "comments": 2,
+   "query": "syntax \"wrong edit\" repo:golang/go is:issue label:gopls"
+  },
+  {
+   "repo": "golang/go",
+   "number": 68026,
+   "title": "x/tools/gopls: broken hovering in the builtin file",
+   "url": "https://github.com/golang/go/issues/68026",
+   "state": "closed",
+   "created": "2024-06-16",
+   "comments": 11,
+   "query": "syntax \"wrong edit\" repo:golang/go is:issue label:gopls"
+  },
+  {
+   "repo": "golang/go",
+   "number": 32209,
+   "title": "x/tools/gopls: doesn't work well when jumping to definitions through the module cache",
+   "url": "https://github.com/golang/go/issues/32209",
+   "state": "closed",
+   "created": "2019-05-23",
+   "comments": 22,
+   "query": "syntax \"wrong edit\" repo:golang/go is:issue label:gopls"
+  }
+ ],
+ "notes": [],
+ "authenticated": true
+}

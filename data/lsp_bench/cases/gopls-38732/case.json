@@ -1,0 +1,95 @@
+{
+ "schema": 1,
+ "id": "gopls-38732",
+ "meta": {
+  "server": "gopls",
+  "kind": "gopls",
+  "number": 38732,
+  "url": "https://github.com/golang/go/issues/38732",
+  "title": "x/tools/gopls: diagnostics doesn't update when build tags specification changes",
+  "oracle_class": "R1",
+  "subtype": "edit-undo",
+  "fix_ref": "golang/tools@6422c5c8c7ed (internal/lsp/cache: invalidate metadata on magic comment changes; CL 296549)",
+  "fix_shas": [
+   "6422c5c8c7ed4d16817458e4be083e2807c874b3"
+  ],
+  "pre_version": "v0.6.6",
+  "post_version": "v0.6.7",
+  "pre_build": "v0.6.6",
+  "post_build": "v0.6.7",
+  "build_notes": "go install golang.org/x/tools/gopls@<version> with the local Go (go1.27.1), which builds both; the server runs the local go command, which still honors '// +build' lines (checked: go list puts foo.go in IgnoredGoFiles). Reported 2020-04-28 (go1.14.1, gopls master); v0.6.6 was tagged 2021-02-22, the fix merged 2021-03-02, v0.6.7 was tagged 2021-03-10.",
+  "candidate_rank": 49,
+  "effort_minutes": 8,
+  "notes": "Removing a build constraint changes the file set of the package, but gopls re-ran go list only for import changes, so bar.go kept 'undefined: Foo'. The fix invalidates metadata when a file's magic comments (build constraints) change."
+ },
+ "language": "go",
+ "settings": {},
+ "settings_note": "The issue names no settings.",
+ "session": {
+  "settle_timeout_s": 180
+ },
+ "files": [
+  {
+   "path": "foo.go",
+   "provenance": "issue",
+   "source": "issue body, pre block, section '--- foo/foo.go ---'",
+   "note": ""
+  },
+  {
+   "path": "bar.go",
+   "provenance": "issue",
+   "source": "issue body, pre block, section '--- foo/bar.go ---'",
+   "note": ""
+  },
+  {
+   "path": "go.mod",
+   "provenance": "scaffold",
+   "source": "",
+   "note": "the module root is the directory foo of the txtar (the reporter's log loads package_path \"foo\" from /Users/hakim/scratch/foo with GOMOD=.../foo/go.mod), so the two files sit at the root of module foo; go 1.14, the reporter's Go"
+  }
+ ],
+ "repro": {
+  "attempt": 1,
+  "timing": "settled",
+  "steps": "Open foo.go and bar.go: foo.go is excluded by '// +build foo', so bar.go reports 'undefined: Foo'. Remove the build-tag line from foo.go (line 0) and save foo.go. Reported: the diagnostics on bar.go remain. Probe: the diagnostics of bar.go after the edit are compared with a fresh session on the edited files and a fresh control.",
+  "ops": [
+   {
+    "kind": "open",
+    "path": "foo.go"
+   },
+   {
+    "kind": "open",
+    "path": "bar.go"
+   },
+   {
+    "kind": "change",
+    "path": "foo.go",
+    "start": [
+     0,
+     0
+    ],
+    "end": [
+     1,
+     0
+    ],
+    "text": ""
+   },
+   {
+    "kind": "save",
+    "path": "foo.go"
+   }
+  ],
+  "probe": {
+   "type": "differs_from_fresh",
+   "params": {
+    "queries": [
+     {
+      "method": "diagnostics",
+      "path": "bar.go"
+     }
+    ]
+   }
+  }
+ },
+ "attempts": []
+}

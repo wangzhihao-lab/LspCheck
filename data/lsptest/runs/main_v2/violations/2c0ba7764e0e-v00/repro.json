@@ -1,0 +1,529 @@
+{
+ "format": 1,
+ "campaign": "main_v2",
+ "vid": "2c0ba7764e0e-v00",
+ "run_id": "2c0ba7764e0e",
+ "oracle": "r1_history",
+ "server": {
+  "kind": "gopls",
+  "version": "v0.23.0"
+ },
+ "project": {
+  "name": "beego/beego@939cfde380bb",
+  "source": "corpus",
+  "ref": "temp/corpus/beego__beego@939cfde380bb",
+  "commit": "939cfde380bb9f15844ad633b84f037f7da21584",
+  "language": "go"
+ },
+ "context": {
+  "seed": 3,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "client/orm/internal/models/models_utils_test.go",
+    "positions": [
+     [
+      24,
+      2
+     ],
+     [
+      27,
+      58
+     ],
+     [
+      31,
+      18
+     ],
+     [
+      31,
+      38
+     ],
+     [
+      40,
+      30
+     ],
+     [
+      46,
+      3
+     ],
+     [
+      46,
+      14
+     ],
+     [
+      48,
+      30
+     ],
+     [
+      54,
+      15
+     ],
+     [
+      64,
+      19
+     ],
+     [
+      76,
+      5
+     ],
+     [
+      76,
+      20
+     ]
+    ],
+    "ends": [
+     [
+      24,
+      3
+     ],
+     [
+      27,
+      61
+     ],
+     [
+      31,
+      31
+     ],
+     [
+      31,
+      42
+     ],
+     [
+      40,
+      33
+     ],
+     [
+      46,
+      5
+     ],
+     [
+      46,
+      20
+     ],
+     [
+      48,
+      31
+     ],
+     [
+      54,
+      18
+     ],
+     [
+      64,
+      20
+     ],
+     [
+      76,
+      8
+     ],
+     [
+      76,
+      21
+     ]
+    ],
+    "names": [
+     "Id",
+     "string",
+     "TestIsApplicableTableForDB",
+     "testing",
+     "string",
+     "res",
+     "SnakeString",
+     "v",
+     "string",
+     "v",
+     "answer",
+     "i"
+    ]
+   },
+   {
+    "path": "server/web/context/param/methodparams.go",
+    "positions": [
+     [
+      11,
+      16
+     ],
+     [
+      15,
+      17
+     ],
+     [
+      25,
+      6
+     ],
+     [
+      25,
+      11
+     ],
+     [
+      25,
+      24
+     ],
+     [
+      25,
+      38
+     ],
+     [
+      29,
+      22
+     ],
+     [
+      29,
+      49
+     ],
+     [
+      57,
+      5
+     ],
+     [
+      60,
+      15
+     ],
+     [
+      62,
+      11
+     ],
+     [
+      66,
+      4
+     ]
+    ],
+    "ends": [
+     [
+      11,
+      18
+     ],
+     [
+      15,
+      19
+     ],
+     [
+      25,
+      8
+     ],
+     [
+      25,
+      13
+     ],
+     [
+      25,
+      26
+     ],
+     [
+      25,
+      47
+     ],
+     [
+      29,
+      25
+     ],
+     [
+      29,
+      51
+     ],
+     [
+      57,
+      9
+     ],
+     [
+      60,
+      18
+     ],
+     [
+      62,
+      15
+     ],
+     [
+      66,
+      7
+     ]
+    ],
+    "names": [
+     "bool",
+     "byte",
+     "New",
+     "name",
+     "opts",
+     "MethodParamOption",
+     "string",
+     "opts",
+     "options",
+     "append",
+     "options",
+     "result"
+    ]
+   },
+   {
+    "path": "server/web/mock/session.go",
+    "positions": [
+     [
+      32,
+      2
+     ],
+     [
+      32,
+      46
+     ],
+     [
+      48,
+      16
+     ],
+     [
+      48,
+      31
+     ],
+     [
+      48,
+      87
+     ],
+     [
+      54,
+      12
+     ],
+     [
+      80,
+      30
+     ],
+     [
+      94,
+      15
+     ],
+     [
+      98,
+      15
+     ],
+     [
+      103,
+      27
+     ],
+     [
+      103,
+      48
+     ],
+     [
+      124,
+      12
+     ]
+    ],
+    "ends": [
+     [
+      32,
+      4
+     ],
+     [
+      32,
+      48
+     ],
+     [
+      48,
+      24
+     ],
+     [
+      48,
+      37
+     ],
+     [
+      48,
+      90
+     ],
+     [
+      54,
+      15
+     ],
+     [
+      80,
+      35
+     ],
+     [
+      94,
+      21
+     ],
+     [
+      98,
+      21
+     ],
+     [
+      103,
+      32
+     ],
+     [
+      103,
+      52
+     ],
+     [
+      124,
+      14
+     ]
+    ],
+    "names": [
+     "web",
+     "name",
+     "SessionProvider",
+     "SessionInit",
+     "string",
+     "Store",
+     "SessionGC",
+     "SessionStore",
+     "SessionStore",
+     "SessionID",
+     "Context",
+     "uuid"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "completion",
+  "path": "client/orm/internal/models/models_utils_test.go",
+  "line": 27,
+  "character": 61,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "client/orm/internal/models/models_utils_test.go"
+  },
+  {
+   "kind": "open",
+   "path": "server/web/context/param/methodparams.go"
+  },
+  {
+   "kind": "open",
+   "path": "server/web/mock/session.go"
+  },
+  {
+   "kind": "open",
+   "path": "core/bean/context.go"
+  },
+  {
+   "kind": "change",
+   "path": "core/bean/context.go",
+   "start": [
+    10,
+    43
+   ],
+   "end": [
+    10,
+    43
+   ],
+   "text": "0"
+  },
+  {
+   "kind": "change",
+   "path": "core/bean/context.go",
+   "start": [
+    10,
+    43
+   ],
+   "end": [
+    10,
+    44
+   ]
+  },
+  {
+   "kind": "close",
+   "path": "core/bean/context.go"
+  }
+ ],
+ "case": {
+  "chain_step": 0,
+  "families": [],
+  "family": "H6",
+  "history_index": 1,
+  "history_seed": 3002,
+  "mode": "fresh",
+  "note": "dep-editor round trip on core/bean/context.go: insert '0' on line 10",
+  "seed": 3,
+  "timing": "settled"
+ },
+ "shape": "completion:missing",
+ "signature": "gopls|r1_history|completion:missing",
+ "expected": [
+  "reflect.StringHeader",
+  "string"
+ ],
+ "actual": [
+  "string"
+ ],
+ "reproduced": "2/3",
+ "note": "H6: dep-editor round trip on core/bean/context.go: insert '0' on line 10; flake 2/3 [r1:SCr r2:SCR r3:SCR] in 111s",
+ "violation": {
+  "oracle": "r1_history",
+  "server": "gopls-v0.23.0",
+  "project": "beego/beego@939cfde380bb",
+  "key": {
+   "method": "completion",
+   "path": "client/orm/internal/models/models_utils_test.go",
+   "line": 27,
+   "character": 61,
+   "extra": ""
+  },
+  "expected": [
+   "reflect.StringHeader",
+   "string"
+  ],
+  "actual": [
+   "string"
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "client/orm/internal/models/models_utils_test.go"
+   },
+   {
+    "kind": "open",
+    "path": "server/web/context/param/methodparams.go"
+   },
+   {
+    "kind": "open",
+    "path": "server/web/mock/session.go"
+   },
+   {
+    "kind": "open",
+    "path": "core/bean/context.go"
+   },
+   {
+    "kind": "change",
+    "path": "core/bean/context.go",
+    "start": [
+     10,
+     43
+    ],
+    "end": [
+     10,
+     43
+    ],
+    "text": "0"
+   },
+   {
+    "kind": "change",
+    "path": "core/bean/context.go",
+    "start": [
+     10,
+     43
+    ],
+    "end": [
+     10,
+     44
+    ]
+   },
+   {
+    "kind": "close",
+    "path": "core/bean/context.go"
+   }
+  ],
+  "detail": "{\"case\": {\"chain_step\": 0, \"families\": [], \"family\": \"H6\", \"history_index\": 1, \"history_seed\": 3002, \"mode\": \"fresh\", \"note\": \"dep-editor round trip on core/bean/context.go: insert '0' on line 10\", \"seed\": 3, \"timing\": \"settled\"}, \"note\": \"H6: dep-editor round trip on core/bean/context.go: insert '0' on line 10; flake 2/3 [r1:SCr r2:SCR r3:SCR] in 111s\", \"shape\": \"completion:missing\"}",
+  "reproduced": "2/3",
+  "reduced_ops": [],
+  "signature": "gopls|r1_history|completion:missing",
+  "run_id": "2c0ba7764e0e"
+ },
+ "replay_logs": [],
+ "project_files": {},
+ "incomplete": false
+}

@@ -1,0 +1,65 @@
+{
+ "schema": 1,
+ "id": "pyright-3585",
+ "meta": {
+  "server": "pyright",
+  "kind": "pyright",
+  "number": 3585,
+  "url": "https://github.com/microsoft/pyright/issues/3585",
+  "title": "Order-dependent type error",
+  "oracle_class": "R1",
+  "subtype": "query-order",
+  "fix_ref": "none named (maintainer: 'This is included in pyright 1.1.255')",
+  "fix_shas": [],
+  "pre_version": "1.1.254",
+  "post_version": "1.1.255",
+  "pre_build": "1.1.254",
+  "post_build": "1.1.255",
+  "build_notes": "npm pyright@1.1.254 (2022-06-12) and pyright@1.1.255 (2022-06-20); release window from the maintainer's comment.",
+  "candidate_rank": 79,
+  "effort_minutes": 11,
+  "notes": "Mechanism differs from the screening class (R1 query-order): the result depends on the order of the two statements within one analysis of the file, not on edit history; the missed error appears on a fresh open of the original text. Attempt 1 probed the opposite direction (no error after the swap) and found the error on both builds; the fix defines the error as correct."
+ },
+ "language": "python",
+ "settings": {},
+ "settings_note": "The issue names no settings; the session defaults (basic type checking) apply.",
+ "session": {
+  "settle_timeout_s": 120
+ },
+ "files": [
+  {
+   "path": "main.py",
+   "provenance": "issue",
+   "source": "issue body, python code block",
+   "note": ""
+  }
+ ],
+ "repro": {
+  "attempt": 2,
+  "timing": "settled",
+  "steps": "Open main.py in the issue's original order ('y: P1 = A(3)' before 'x: P2 = B(A(3))'). Reported: no error is reported, but with the last two lines swapped pyright reports that B cannot be assigned to P2; the result must not depend on the order. The post-fix build reports the error in both orders (attempt 1), which is correct because the protocol attribute P2.y is mutable and therefore invariant. Probe: in the original order the error for 'x: P2 = B(A(3))' must be reported (a missing report is the bug).",
+  "ops": [
+   {
+    "kind": "open",
+    "path": "main.py"
+   }
+  ],
+  "probe": {
+   "type": "diagnostic_absent",
+   "params": {
+    "path": "main.py",
+    "match": {
+     "message_re": "declared type \"P2\""
+    }
+   }
+  }
+ },
+ "attempts": [
+  {
+   "attempt": 1,
+   "timing": "settled",
+   "summary": "Swap the last two lines, then probe that no error is reported. Pre 1.1.254 and post 1.1.255 both report 'Expression of type \"B\" cannot be assigned to declared type \"P2\" ... \"y\" is invariant because it is mutable' after the swap (still-present-post): the fix did not remove this error, it made the original order report it too. The error is correct (P2.y is a mutable protocol attribute, hence invariant), so the defect is the MISSED error in the original order.",
+   "verdict": "still-present-post"
+  }
+ ]
+}

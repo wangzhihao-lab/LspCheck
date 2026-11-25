@@ -1,0 +1,17 @@
+<scheduler message>
+2026-11-20 23:26:23,438 INFO release_sweep 36 job(s) for gopls,rust-analyzer,ts6,ts7,pyright
+2026-11-20 23:26:23,438 INFO release_sweep newest-2026-11-18: gopls-r1-codeaction-changed-h4-c5344e on gopls v0.24.0
+2026-11-20 23:28:18,961 INFO release_sweep   -> reproduced (3/3, 116s) 
+2026-11-20 23:28:18,961 INFO release_sweep newest-2026-11-18: rust-analyzer-r0-references-result-error-timeout-fresh-pair-8a4b8d on rust-analyzer 2026-11-16
+2026-11-20 23:31:45,571 INFO release_sweep   -> not-reproduced (0/3, 207s) 
+2026-11-20 23:31:45,571 INFO release_sweep newest-2026-11-18: rust-analyzer-r0-semantictokens-result-error-timeout-fresh-pair-62256f on rust-analyzer 2026-11-16
+2026-11-20 23:34:24,483 INFO release_sweep   -> not-reproduced (0/3, 159s) 
+2026-11-20 23:34:24,484 INFO release_sweep newest-2026-11-18: rust-analyzer-r3-diagnostics-missing-e0004-inactive-code-a-731c4f on rust-analyzer 2026-11-16
+2026-11-20 23:39:38,656 INFO release_sweep   -> reproduced (3/3, 314s) 
+2026-11-20 23:39:38,656 INFO release_sweep newest-2026-11-18: rust-analyzer-r3-diagnostics-missing-inactive-code-a-0b07f0 on rust-analyzer 2026-11-16
+2026-11-20 23:41:23,882 INFO release_sweep   -> reproduced (3/3, 105s) 
+2026-11-20 23:41:23,882 INFO release_sweep newest-2026-11-18: rust-analyzer-r3-semantictokensrange-changed-b-b6e28b on rust-analyzer 2026-11-16
+2026-11-20 23:42:33,353 INFO release_sweep   -> reproduced (3/3, 70s) 
+2026-11-20 23:42:33,353 INFO release_sweep newest-2026-11-18: rust-analyzer-r4-completioninsert-gained-completion-e99b79 on rust-analyzer 2026-11-16
+2026-11-20 23:46:24,725 INFO release_sweep   -> reproduced (3/3, 231s) 
+2026-11-20 23:46:24,726 INFO release_sweep all jobs of gopls,rust-analyzer,ts6,ts7,pyright done

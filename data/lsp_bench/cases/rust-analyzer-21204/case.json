@@ -1,0 +1,84 @@
+{
+ "schema": 1,
+ "id": "rust-analyzer-21204",
+ "meta": {
+  "server": "rust-analyzer",
+  "kind": "rust-analyzer",
+  "number": 21204,
+  "url": "https://github.com/rust-lang/rust-analyzer/issues/21204",
+  "title": "Create field assist puts wrong visibility on a field",
+  "oracle_class": "R4",
+  "subtype": "quickfix",
+  "fix_ref": "rust-lang/rust-analyzer#21221 (Fix pub in enum variant field for no_such_field)",
+  "fix_shas": [
+   "a50c1ccc9cf3dab1afdc857a965a9992fbad7a53"
+  ],
+  "pre_version": "2025-12-08",
+  "post_version": "2025-12-15",
+  "pre_build": "2025-12-08",
+  "post_build": "2025-12-15",
+  "build_notes": "GitHub release assets rust-analyzer-aarch64-apple-darwin.gz of the weekly tags 2025-12-08 and 2025-12-15; git tag --contains puts the fix first in 2025-12-15. The sysroot is the local rustup toolchain (rustc 1.98.1).",
+  "effort_minutes": 10,
+  "notes": "The no_such_field fix adds the missing field to the definition; when the definition is in another file it prefixed the field with pub(crate), which is not allowed on enum-variant fields (rustc rejects it only in AST validation, E0449). The result parses and rust-analyzer does not report it, so the case uses the specification probe edit_text_differs with the golden of the fix's regression test.",
+  "candidate_rank": 44
+ },
+ "language": "rust",
+ "settings": {},
+ "settings_note": "The issue names no settings; the session keeps checkOnSave off (native analysis only).",
+ "session": {
+  "settle_timeout_s": 240,
+  "request_timeout_s": 60,
+  "pull_diagnostics": false
+ },
+ "files": [
+  {
+   "path": "src/main.rs",
+   "provenance": "scaffold",
+   "source": "",
+   "note": "the fix's regression test test_add_enum_variant_field_in_other_file_from_usage (crates/ide-diagnostics/src/handlers/no_such_field.rs at a50c1ccc), file /main.rs (cursor marker $0 before baz removed); the issue's snippet uses Foo without importing it, so its no_such_field diagnostic cannot fire as given"
+  },
+  {
+   "path": "src/foo.rs",
+   "provenance": "scaffold",
+   "source": "",
+   "note": "the fix's regression test test_add_enum_variant_field_in_other_file_from_usage (crates/ide-diagnostics/src/handlers/no_such_field.rs at a50c1ccc), file /foo.rs; the issue's snippet uses Foo without importing it, so its no_such_field diagnostic cannot fire as given"
+  },
+  {
+   "path": "Cargo.toml",
+   "provenance": "scaffold",
+   "source": "",
+   "note": "a binary crate around the snippet (package name, version, edition 2021)"
+  }
+ ],
+ "repro": {
+  "attempt": 1,
+  "timing": "settled",
+  "steps": "The issue: with the enum declared in a separate file (foo.rs), a struct-literal use with an unknown field and the 'add field' fix adds 'pub(crate)' to the new variant field. Here (the fix's regression test): open src/main.rs; the field baz of 'foo::Foo::Variant { bar: 3, baz: false}' (line 3, character 32) is reported (no such field); apply its fix. Probe (specification): the edited src/foo.rs must equal the test's golden, which adds 'baz: bool' without a visibility.",
+  "ops": [
+   {
+    "kind": "open",
+    "path": "src/main.rs"
+   }
+  ],
+  "probe": {
+   "type": "edit_text_differs",
+   "params": {
+    "edit": {
+     "via": "code_action",
+     "path": "src/main.rs",
+     "diagnostic": {
+      "message_re": "(?i)no such field"
+     },
+     "title_re": "(?i)field",
+     "missing": "invalid"
+    },
+    "expected": {
+     "path": "src/foo.rs",
+     "text": "pub enum Foo {\n    Variant {\n        bar: i32,\n        baz: bool\n    }\n}\n",
+     "source": "crates/ide-diagnostics/src/handlers/no_such_field.rs@a50c1ccc (test_add_enum_variant_field_in_other_file_from_usage, expected after the fix)"
+    }
+   }
+  }
+ },
+ "attempts": []
+}

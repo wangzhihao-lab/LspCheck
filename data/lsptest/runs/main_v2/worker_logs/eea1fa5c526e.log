@@ -1,0 +1,6 @@
+2026-11-18 20:18:36,398 INFO campaign_run run eea1fa5c526e: r1_history on gopls v0.23.0, labstack/echo@3d084be90224 seed 3 settled, targets ['bind.go', 'bind_test.go', 'renderer.go']
+2026-11-18 20:26:38,722 INFO campaign_run run eea1fa5c526e: 1 candidate(s) in 482s; confirming
+2026-11-18 20:27:10,483 INFO flake replay 1/3 of gopls|r1_history|completion:missing: settled=True control_stable=True reproduced=False (31.8s)
+2026-11-18 20:27:42,527 INFO flake replay 2/3 of gopls|r1_history|completion:missing: settled=True control_stable=True reproduced=False (32.0s)
+2026-11-18 20:28:14,541 INFO flake replay 3/3 of gopls|r1_history|completion:missing: settled=True control_stable=True reproduced=False (32.0s)
+2026-11-18 20:28:14,543 INFO campaign_run run eea1fa5c526e finished: ok, 0 confirmed of 1 candidate(s), 578s

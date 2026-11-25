@@ -1,0 +1,9 @@
+2026-09-25 03:23:15,475 INFO campaign_run run 9d98b7004142: r4_edits on gopls v0.18.1, gopls-73661 seed 2 settled, targets ['main.go']
+2026-09-25 03:24:21,393 INFO campaign_run run 9d98b7004142: 2 candidate(s) in 66s; confirming
+2026-09-25 03:24:38,094 INFO flake replay 1/3 of gopls|r4_edits|diagnostics:extra:IncompatibleAssign: settled=True control_stable=True reproduced=True (16.7s)
+2026-09-25 03:24:54,517 INFO flake replay 2/3 of gopls|r4_edits|diagnostics:extra:IncompatibleAssign: settled=True control_stable=True reproduced=True (16.4s)
+2026-09-25 03:25:10,894 INFO flake replay 3/3 of gopls|r4_edits|diagnostics:extra:IncompatibleAssign: settled=True control_stable=True reproduced=True (16.4s)
+2026-09-25 03:25:25,731 INFO flake replay 1/3 of gopls|r4_edits|diagnostics:extra:NotAType: settled=True control_stable=True reproduced=True (14.8s)
+2026-09-25 03:25:40,822 INFO flake replay 2/3 of gopls|r4_edits|diagnostics:extra:NotAType: settled=True control_stable=True reproduced=True (15.1s)
+2026-09-25 03:25:56,056 INFO flake replay 3/3 of gopls|r4_edits|diagnostics:extra:NotAType: settled=True control_stable=True reproduced=True (15.2s)
+2026-09-25 03:25:56,066 INFO campaign_run run 9d98b7004142 finished: ok, 2 confirmed of 2 candidate(s), 161s

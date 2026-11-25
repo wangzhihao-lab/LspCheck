@@ -1,0 +1,3 @@
+2026-11-18 05:30:59,951 INFO campaign_run run bb15b3b43f59: r1_history on pyright 1.1.414, Alishahryar1/free-claude-code@1f8b1fd7d054 seed 1 settled, targets ['smoke/product/test_api_product_live.py', 'src/free_claude_code/providers/vertex/client.py', 'tests/providers/test_together.py']
+2026-11-18 05:38:08,341 INFO campaign_run run bb15b3b43f59: 0 candidate(s) in 429s; confirming
+2026-11-18 05:38:08,342 INFO campaign_run run bb15b3b43f59 finished: ok, 0 confirmed of 0 candidate(s), 428s

@@ -1,0 +1,9761 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "3ed0e189007e-v05",
+ "run_id": "3ed0e189007e",
+ "oracle": "r1_history",
+ "server": {
+  "kind": "ts6",
+  "version": "6.0.3"
+ },
+ "project": {
+  "name": "pmndrs/zustand@b57db4f86ef1",
+  "source": "corpus",
+  "ref": "temp/corpus/pmndrs__zustand@b57db4f86ef1",
+  "commit": "b57db4f86ef179285da216eeb291266da82c361c",
+  "language": "typescript"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "race0",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "src/react.ts",
+    "positions": [
+     [
+      0,
+      9
+     ],
+     [
+      1,
+      14
+     ],
+     [
+      5,
+      8
+     ],
+     [
+      7,
+      13
+     ],
+     [
+      22,
+      6
+     ],
+     [
+      25,
+      38
+     ],
+     [
+      29,
+      32
+     ],
+     [
+      31,
+      32
+     ],
+     [
+      32,
+      15
+     ],
+     [
+      40,
+      37
+     ],
+     [
+      49,
+      37
+     ],
+     [
+      52,
+      28
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      12
+     ],
+     [
+      1,
+      20
+     ],
+     [
+      5,
+      14
+     ],
+     [
+      7,
+      24
+     ],
+     [
+      22,
+      10
+     ],
+     [
+      25,
+      43
+     ],
+     [
+      29,
+      42
+     ],
+     [
+      31,
+      36
+     ],
+     [
+      32,
+      21
+     ],
+     [
+      40,
+      38
+     ],
+     [
+      49,
+      38
+     ],
+     [
+      52,
+      34
+     ]
+    ],
+    "names": [
+     "React",
+     "createStore",
+     "StateCreator",
+     "StoreMutatorIdentifier",
+     "selector",
+     "StateSlice",
+     "useSyncExternalStore",
+     "selector",
+     "useCallback",
+     "S",
+     "T",
+     "createState"
+    ]
+   },
+   {
+    "path": "src/vanilla/shallow.ts",
+    "positions": [
+     [
+      12,
+      15
+     ],
+     [
+      15,
+      42
+     ],
+     [
+      16,
+      53
+     ],
+     [
+      17,
+      27
+     ],
+     [
+      21,
+      11
+     ],
+     [
+      33,
+      38
+     ],
+     [
+      34,
+      23
+     ],
+     [
+      38,
+      34
+     ],
+     [
+      44,
+      35
+     ],
+     [
+      47,
+      46
+     ],
+     [
+      70,
+      24
+     ],
+     [
+      71,
+      39
+     ]
+    ],
+    "ends": [
+     [
+      12,
+      19
+     ],
+     [
+      15,
+      45
+     ],
+     [
+      16,
+      55
+     ],
+     [
+      17,
+      29
+     ],
+     [
+      21,
+      13
+     ],
+     [
+      33,
+      42
+     ],
+     [
+      34,
+      26
+     ],
+     [
+      38,
+      37
+     ],
+     [
+      44,
+      37
+     ],
+     [
+      47,
+      47
+     ],
+     [
+      70,
+      27
+     ],
+     [
+      71,
+      42
+     ]
+    ],
+    "names": [
+     "entries",
+     "valueA",
+     "Map",
+     "size",
+     "mapB",
+     "iterator",
+     "valueB",
+     "nextB",
+     "done",
+     "T",
+     "Object",
+     "valueB"
+    ]
+   },
+   {
+    "path": "tests/persistSync.test.tsx",
+    "positions": [
+     [
+      14,
+      37
+     ],
+     [
+      16,
+      6
+     ],
+     [
+      136,
+      15
+     ],
+     [
+      274,
+      9
+     ],
+     [
+      291,
+      41
+     ],
+     [
+      311,
+      25
+     ],
+     [
+      467,
+      20
+     ],
+     [
+      565,
+      64
+     ],
+     [
+      683,
+      24
+     ],
+     [
+      717,
+      16
+     ],
+     [
+      732,
+      22
+     ],
+     [
+      742,
+      30
+     ]
+    ],
+    "ends": [
+     [
+      14,
+      41
+     ],
+     [
+      16,
+      9
+     ],
+     [
+      136,
+      20
+     ],
+     [
+      274,
+      13
+     ],
+     [
+      291,
+      48
+     ],
+     [
+      311,
+      28
+     ],
+     [
+      467,
+      24
+     ],
+     [
+      565,
+      73
+     ],
+     [
+      683,
+      26
+     ],
+     [
+      717,
+      21
+     ],
+     [
+      732,
+      33
+     ],
+     [
+      742,
+      32
+     ]
+    ],
+    "names": [
+     "newState",
+     "state",
+     "setItemSpy",
+     "setItem",
+     "toBeCalledWith",
+     "count",
+     "entries",
+     "onFinishHydration",
+     "map",
+     "setItemSpy",
+     "onRehydrateStorageSpy2",
+     "name"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "inlayHint",
+  "path": "tests/persistSync.test.tsx",
+  "line": -1,
+  "character": -1,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "src/react.ts"
+  },
+  {
+   "kind": "open",
+   "path": "src/vanilla/shallow.ts"
+  },
+  {
+   "kind": "open",
+   "path": "tests/persistSync.test.tsx"
+  },
+  {
+   "kind": "fs_rename",
+   "path": "src/react.ts",
+   "new_path": "src/react_rt.ts"
+  },
+  {
+   "kind": "fs_rename",
+   "path": "src/react_rt.ts",
+   "new_path": "src/react.ts"
+  }
+ ],
+ "case": {
+  "chain_step": 0,
+  "families": [],
+  "family": "H5",
+  "history_index": 0,
+  "history_seed": 1001,
+  "mode": "fresh",
+  "note": "rename src/react.ts -> src/react_rt.ts -> back",
+  "seed": 1,
+  "timing": "race0"
+ },
+ "shape": "inlayHint:changed",
+ "signature": "ts6|r1_history|inlayHint:changed",
+ "expected": [
+  [
+   7,
+   27,
+   ": (initialValue: string | null) => { storage: { getItem: () => string | null; setItem: (name: string, newState: string) => void; removeItem: (name: string) => void }; getItemSpy: Mock<Procedure>; setItemSpy: Mock<...> }"
+  ],
+  [
+   7,
+   59,
+   ": { storage: { getItem: () => string | null; setItem: (name: string, newState: string) => void; removeItem: (name: string) => void }; getItemSpy: Mock<Procedure>; setItemSpy: Mock<...> }"
+  ],
+  [
+   8,
+   11,
+   ": string | null"
+  ],
+  [
+   10,
+   15,
+   ": () => string | null"
+  ],
+  [
+   14,
+   15,
+   ": (name: string, newState: string) => void"
+  ],
+  [
+   14,
+   50,
+   ": void"
+  ],
+  [
+   15,
+   15,
+   "...args:"
+  ],
+  [
+   18,
+   18,
+   ": (name: string) => void"
+  ],
+  [
+   18,
+   35,
+   ": void"
+  ],
+  [
+   19,
+   18,
+   "...args:"
+  ],
+  [
+   23,
+   18,
+   ": Mock<Procedure>"
+  ],
+  [
+   24,
+   18,
+   ": Mock<Procedure>"
+  ],
+  [
+   25,
+   21,
+   ": Mock<Procedure>"
+  ],
+  [
+   34,
+   9,
+   "name:"
+  ],
+  [
+   34,
+   55,
+   "fn:"
+  ],
+  [
+   34,
+   57,
+   ": void"
+  ],
+  [
+   35,
+   20,
+   ": (...data: any[]) => void"
+  ],
+  [
+   36,
+   12,
+   "fn:"
+  ],
+  [
+   36,
+   14,
+   ": void"
+  ],
+  [
+   40,
+   5,
+   "name:"
+  ],
+  [
+   40,
+   28,
+   "fn:"
+  ],
+  [
+   40,
+   30,
+   ": void"
+  ],
+  [
+   42,
+   29,
+   ": string"
+  ],
+  [
+   43,
+   23,
+   "value:"
+  ],
+  [
+   47,
+   17,
+   ": void"
+  ],
+  [
+   48,
+   20,
+   ": void"
+  ],
+  [
+   51,
+   31,
+   ": Mock<Procedure>"
+  ],
+  [
+   52,
+   23,
+   ": UseBoundStore<WithPersist<StoreApi<{ count: number; name: string }>, unknown>>"
+  ],
+  [
+   53,
+   6,
+   "initializer:"
+  ],
+  [
+   54,
+   8,
+   "initializer:"
+  ],
+  [
+   54,
+   10,
+   ": { count: number; name: string }"
+  ],
+  [
+   58,
+   8,
+   "options:"
+  ],
+  [
+   60,
+   37,
+   "getStorage:"
+  ],
+  [
+   60,
+   39,
+   ": { getItem: (name: string) => string; setItem: () => void; removeItem: () => void }"
+  ],
+  [
+   61,
+   32,
+   ": Mock<Procedure>"
+  ],
+  [
+   66,
+   11,
+   "actual:"
+  ],
+  [
+   66,
+   45,
+   "expected:"
+  ],
+  [
+   70,
+   11,
+   "actual:"
+  ],
+  [
+   76,
+   5,
+   "name:"
+  ],
+  [
+   76,
+   34,
+   "fn:"
+  ],
+  [
+   76,
+   36,
+   ": void"
+  ],
+  [
+   78,
+   17,
+   ": never"
+  ],
+  [
+   79,
+   24,
+   "message:"
+  ],
+  [
+   81,
+   17,
+   ": void"
+  ],
+  [
+   82,
+   20,
+   ": void"
+  ],
+  [
+   85,
+   13,
+   ": Mock<Procedure>"
+  ],
+  [
+   87,
+   6,
+   "initializer:"
+  ],
+  [
+   87,
+   14,
+   "initializer:"
+  ],
+  [
+   87,
+   16,
+   ": { count: number }"
+  ],
+  [
+   87,
+   36,
+   "options:"
+  ],
+  [
+   89,
+   35,
+   "getStorage:"
+  ],
+  [
+   89,
+   37,
+   ": { getItem: () => never; setItem: () => void; removeItem: () => void }"
+  ],
+  [
+   90,
+   30,
+   ": Mock<Procedure>"
+  ],
+  [
+   94,
+   11,
+   "actual:"
+  ],
+  [
+   94,
+   52,
+   "message:"
+  ],
+  [
+   97,
+   5,
+   "name:"
+  ],
+  [
+   97,
+   26,
+   "fn:"
+  ],
+  [
+   97,
+   28,
+   ": void"
+  ],
+  [
+   98,
+   58,
+   "initialValue:"
+  ],
+  [
+   100,
+   21,
+   ": () => { useBoundStore: UseBoundStore<WithPersist<StoreApi<{ count: number }>, unknown>>; onRehydrateStorageSpy: Mock<Procedure> }"
+  ],
+  [
+   100,
+   26,
+   ": { useBoundStore: UseBoundStore<WithPersist<StoreApi<{ count: number }>, unknown>>; onRehydrateStorageSpy: Mock<Procedure> }"
+  ],
+  [
+   101,
+   33,
+   ": Mock<Procedure>"
+  ],
+  [
+   102,
+   25,
+   ": UseBoundStore<WithPersist<StoreApi<{ count: number }>, unknown>>"
+  ],
+  [
+   103,
+   8,
+   "initializer:"
+  ],
+  [
+   103,
+   16,
+   "initializer:"
+  ],
+  [
+   103,
+   18,
+   ": { count: number }"
+  ],
+  [
+   103,
+   38,
+   "options:"
+  ],
+  [
+   105,
+   37,
+   "getStorage:"
+  ],
+  [
+   105,
+   39,
+   ": { getItem: () => string | null; setItem: (name: string, newState: string) => void; removeItem: (name: string) => void }"
+  ],
+  [
+   106,
+   32,
+   ": Mock<Procedure>"
+  ],
+  [
+   114,
+   11,
+   "actual:"
+  ],
+  [
+   114,
+   45,
+   "expected:"
+  ],
+  [
+   115,
+   11,
+   "actual:"
+  ],
+  [
+   118,
+   27,
+   "partial:"
+  ],
+  [
+   119,
+   11,
+   "actual:"
+  ],
+  [
+   119,
+   45,
+   "expected:"
+  ],
+  [
+   120,
+   11,
+   "actual:"
+  ],
+  [
+   122,
+   21,
+   "value:"
+  ],
+  [
+   131,
+   11,
+   "actual:"
+  ],
+  [
+   131,
+   46,
+   "expected:"
+  ],
+  [
+   132,
+   11,
+   "actual:"
+  ],
+  [
+   135,
+   5,
+   "name:"
+  ],
+  [
+   135,
+   46,
+   "fn:"
+  ],
+  [
+   135,
+   48,
+   ": void"
+  ],
+  [
+   136,
+   20,
+   ": Mock<Procedure>"
+  ],
+  [
+   137,
+   31,
+   ": Mock<Procedure>"
+  ],
+  [
+   138,
+   20,
+   ": Mock<() => { count: number }>"
+  ],
+  [
+   138,
+   29,
+   "originalImplementation:"
+  ],
+  [
+   138,
+   31,
+   ": { count: number }"
+  ],
+  [
+   141,
+   17,
+   ": string"
+  ],
+  [
+   142,
+   23,
+   "value:"
+  ],
+  [
+   147,
+   20,
+   ": void"
+  ],
+  [
+   150,
+   23,
+   ": UseBoundStore<WithPersist<StoreApi<{ count: number }>, unknown>>"
+  ],
+  [
+   151,
+   6,
+   "initializer:"
+  ],
+  [
+   151,
+   14,
+   "initializer:"
+  ],
+  [
+   151,
+   16,
+   ": { count: number }"
+  ],
+  [
+   151,
+   36,
+   "options:"
+  ],
+  [
+   154,
+   35,
+   "getStorage:"
+  ],
+  [
+   154,
+   37,
+   ": { getItem: () => string; setItem: Mock<Procedure>; removeItem: () => void }"
+  ],
+  [
+   155,
+   30,
+   ": Mock<Procedure>"
+  ],
+  [
+   160,
+   11,
+   "actual:"
+  ],
+  [
+   160,
+   45,
+   "expected:"
+  ],
+  [
+   161,
+   11,
+   "actual:"
+  ],
+  [
+   162,
+   11,
+   "actual:"
+  ],
+  [
+   164,
+   21,
+   "value:"
+  ],
+  [
+   169,
+   11,
+   "actual:"
+  ],
+  [
+   172,
+   5,
+   "name:"
+  ],
+  [
+   172,
+   56,
+   "fn:"
+  ],
+  [
+   172,
+   58,
+   ": void"
+  ],
+  [
+   174,
+   31,
+   ": Mock<Procedure>"
+  ],
+  [
+   176,
+   17,
+   ": string"
+  ],
+  [
+   177,
+   23,
+   "value:"
+  ],
+  [
+   181,
+   42,
+   ": void"
+  ],
+  [
+   182,
+   20,
+   ": void"
+  ],
+  [
+   185,
+   23,
+   ": UseBoundStore<WithPersist<StoreApi<{ count: number }>, unknown>>"
+  ],
+  [
+   186,
+   6,
+   "initializer:"
+  ],
+  [
+   186,
+   14,
+   "initializer:"
+  ],
+  [
+   186,
+   16,
+   ": { count: number }"
+  ],
+  [
+   186,
+   36,
+   "options:"
+  ],
+  [
+   189,
+   35,
+   "getStorage:"
+  ],
+  [
+   189,
+   37,
+   ": { getItem: () => string; setItem: (_: string, _value: string) => void; removeItem: () => void }"
+  ],
+  [
+   190,
+   30,
+   ": Mock<Procedure>"
+  ],
+  [
+   194,
+   11,
+   "actual:"
+  ],
+  [
+   194,
+   45,
+   "expected:"
+  ],
+  [
+   195,
+   11,
+   "actual:"
+  ],
+  [
+   196,
+   11,
+   "actual:"
+  ],
+  [
+   199,
+   5,
+   "name:"
+  ],
+  [
+   199,
+   32,
+   "fn:"
+  ],
+  [
+   199,
+   34,
+   ": void"
+  ],
+  [
+   200,
+   31,
+   ": Mock<Procedure>"
+  ],
+  [
+   203,
+   17,
+   ": string"
+  ],
+  [
+   204,
+   23,
+   "value:"
+  ],
+  [
+   208,
+   17,
+   ": void"
+  ],
+  [
+   209,
+   20,
+   ": void"
+  ],
+  [
+   212,
+   23,
+   ": UseBoundStore<WithPersist<StoreApi<{ count: number }>, unknown>>"
+  ],
+  [
+   213,
+   6,
+   "initializer:"
+  ],
+  [
+   213,
+   14,
+   "initializer:"
+  ],
+  [
+   213,
+   16,
+   ": { count: number }"
+  ],
+  [
+   213,
+   36,
+   "options:"
+  ],
+  [
+   216,
+   35,
+   "getStorage:"
+  ],
+  [
+   216,
+   37,
+   ": { getItem: () => string; setItem: () => void; removeItem: () => void }"
+  ],
+  [
+   217,
+   19,
+   ": never"
+  ],
+  [
+   218,
+   26,
+   "message:"
+  ],
+  [
+   220,
+   30,
+   ": Mock<Procedure>"
+  ],
+  [
+   224,
+   11,
+   "actual:"
+  ],
+  [
+   224,
+   45,
+   "expected:"
+  ],
+  [
+   225,
+   11,
+   "actual:"
+  ],
+  [
+   227,
+   16,
+   "message:"
+  ],
+  [
+   231,
+   5,
+   "name:"
+  ],
+  [
+   231,
+   85,
+   "fn:"
+  ],
+  [
+   231,
+   87,
+   ": void"
+  ],
+  [
+   232,
+   31,
+   ": Mock<Procedure>"
+  ],
+  [
+   235,
+   17,
+   ": string"
+  ],
+  [
+   235,
+   36,
+   "value:"
+  ],
+  [
+   236,
+   17,
+   ": void"
+  ],
+  [
+   237,
+   20,
+   ": void"
+  ],
+  [
+   240,
+   23,
+   ": UseBoundStore<WithPersist<StoreApi<{ count: number }>, unknown>>"
+  ],
+  [
+   241,
+   6,
+   "initializer:"
+  ],
+  [
+   241,
+   14,
+   "initializer:"
+  ],
+  [
+   241,
+   16,
+   ": { count: number }"
+  ],
+  [
+   241,
+   36,
+   "options:"
+  ],
+  [
+   243,
+   35,
+   "getStorage:"
+  ],
+  [
+   243,
+   37,
+   ": { getItem: () => string; setItem: () => void; removeItem: () => void }"
+  ],
+  [
+   261,
+   11,
+   "actual:"
+  ],
+  [
+   262,
+   11,
+   "actual:"
+  ],
+  [
+   262,
+   45,
+   "expected:"
+  ],
+  [
+   265,
+   5,
+   "name:"
+  ],
+  [
+   265,
+   53,
+   "fn:"
+  ],
+  [
+   265,
+   55,
+   ": void"
+  ],
+  [
+   266,
+   31,
+   ": Mock<Procedure>"
+  ],
+  [
+   269,
+   17,
+   ": string"
+  ],
+  [
+   270,
+   23,
+   "value:"
+  ],
+  [
+   274,
+   17,
+   ": void"
+  ],
+  [
+   275,
+   20,
+   ": void"
+  ],
+  [
+   278,
+   26,
+   ": () => void"
+  ],
+  [
+   278,
+   31,
+   ": void"
+  ],
+  [
+   280,
+   23,
+   ": UseBoundStore<WithPersist<StoreApi<{ count: number; unstorableMethod: () => void }>, unknown>>"
+  ],
+  [
+   281,
+   6,
+   "initializer:"
+  ],
+  [
+   281,
+   14,
+   "initializer:"
+  ],
+  [
+   281,
+   16,
+   ": { count: number; unstorableMethod: () => void }"
+  ],
+  [
+   281,
+   54,
+   "options:"
+  ],
+  [
+   283,
+   35,
+   "getStorage:"
+  ],
+  [
+   283,
+   37,
+   ": { getItem: () => string; setItem: () => void; removeItem: () => void }"
+  ],
+  [
+   284,
+   30,
+   ": Mock<Procedure>"
+  ],
+  [
+   290,
+   11,
+   "actual:"
+  ],
+  [
+   290,
+   45,
+   "expected:"
+  ],
+  [
+   291,
+   11,
+   "actual:"
+  ],
+  [
+   294,
+   5,
+   "name:"
+  ],
+  [
+   294,
+   42,
+   "fn:"
+  ],
+  [
+   294,
+   44,
+   ": void"
+  ],
+  [
+   296,
+   17,
+   ": string"
+  ],
+  [
+   297,
+   23,
+   "value:"
+  ],
+  [
+   304,
+   17,
+   ": void"
+  ],
+  [
+   305,
+   20,
+   ": void"
+  ],
+  [
+   308,
+   26,
+   ": () => void"
+  ],
+  [
+   308,
+   31,
+   ": void"
+  ],
+  [
+   310,
+   23,
+   ": UseBoundStore<WithPersist<StoreApi<{ count: number; actions: { unstorableMethod: () => void } }>, unknown>>"
+  ],
+  [
+   311,
+   6,
+   "initializer:"
+  ],
+  [
+   311,
+   14,
+   "initializer:"
+  ],
+  [
+   311,
+   16,
+   ": { count: number; actions: { unstorableMethod: () => void } }"
+  ],
+  [
+   311,
+   67,
+   "options:"
+  ],
+  [
+   313,
+   35,
+   "getStorage:"
+  ],
+  [
+   313,
+   37,
+   ": { getItem: () => string; setItem: () => void; removeItem: () => void }"
+  ],
+  [
+   314,
+   31,
+   ": unknown"
+  ],
+  [
+   314,
+   45,
+   ": { count: number; actions: { unstorableMethod: () => void } }"
+  ],
+  [
+   314,
+   46,
+   ": any"
+  ],
+  [
+   326,
+   11,
+   "actual:"
+  ],
+  [
+   326,
+   45,
+   "expected:"
+  ],
+  [
+   334,
+   5,
+   "name:"
+  ],
+  [
+   334,
+   73,
+   "fn:"
+  ],
+  [
+   334,
+   75,
+   ": void"
+  ],
+  [
+   336,
+   17,
+   ": string"
+  ],
+  [
+   337,
+   23,
+   "value:"
+  ],
+  [
+   342,
+   17,
+   ": void"
+  ],
+  [
+   343,
+   20,
+   ": void"
+  ],
+  [
+   346,
+   23,
+   ": UseBoundStore<WithPersist<StoreApi<{ count: number }>, unknown>>"
+  ],
+  [
+   347,
+   6,
+   "initializer:"
+  ],
+  [
+   347,
+   14,
+   "initializer:"
+  ],
+  [
+   347,
+   16,
+   ": { count: number }"
+  ],
+  [
+   347,
+   36,
+   "options:"
+  ],
+  [
+   349,
+   35,
+   "getStorage:"
+  ],
+  [
+   349,
+   37,
+   ": { getItem: () => string; setItem: () => void; removeItem: () => void }"
+  ],
+  [
+   353,
+   11,
+   "actual:"
+  ],
+  [
+   353,
+   45,
+   "expected:"
+  ],
+  [
+   358,
+   5,
+   "name:"
+  ],
+  [
+   358,
+   39,
+   "fn:"
+  ],
+  [
+   358,
+   41,
+   ": void"
+  ],
+  [
+   359,
+   20,
+   ": Mock<Procedure>"
+  ],
+  [
+   362,
+   17,
+   ": string"
+  ],
+  [
+   364,
+   20,
+   ": void"
+  ],
+  [
+   367,
+   23,
+   ": UseBoundStore<WithPersist<StoreApi<{ object: { first: string; second: string }; array: { value: string }[] }>, unknown>>"
+  ],
+  [
+   368,
+   6,
+   "initializer:"
+  ],
+  [
+   369,
+   8,
+   "initializer:"
+  ],
+  [
+   369,
+   10,
+   ": { object: { first: string; second: string }; array: { value: string }[] }"
+  ],
+  [
+   386,
+   8,
+   "options:"
+  ],
+  [
+   388,
+   37,
+   "getStorage:"
+  ],
+  [
+   388,
+   39,
+   ": { getItem: () => string; setItem: Mock<Procedure>; removeItem: () => void }"
+  ],
+  [
+   389,
+   28,
+   ": { object: { first: string; second: string }; array: { value: string }[] }"
+  ],
+  [
+   389,
+   29,
+   ": { object: { first: string }; array: { value: string }[] }"
+  ],
+  [
+   394,
+   40,
+   "predicate:"
+  ],
+  [
+   394,
+   42,
+   ": { value: string }"
+  ],
+  [
+   394,
+   43,
+   ": boolean"
+  ],
+  [
+   401,
+   27,
+   "partial:"
+  ],
+  [
+   402,
+   11,
+   "actual:"
+  ],
+  [
+   404,
+   21,
+   "value:"
+  ],
+  [
+   423,
+   5,
+   "name:"
+  ],
+  [
+   423,
+   47,
+   "fn:"
+  ],
+  [
+   423,
+   49,
+   ": void"
+  ],
+  [
+   425,
+   17,
+   ": null"
+  ],
+  [
+   427,
+   20,
+   ": void"
+  ],
+  [
+   430,
+   23,
+   ": UseBoundStore<WithPersist<StoreApi<{ count: number }>, unknown>>"
+  ],
+  [
+   431,
+   6,
+   "initializer:"
+  ],
+  [
+   431,
+   14,
+   "initializer:"
+  ],
+  [
+   431,
+   16,
+   ": { count: number }"
+  ],
+  [
+   431,
+   36,
+   "options:"
+  ],
+  [
+   433,
+   35,
+   "getStorage:"
+  ],
+  [
+   433,
+   37,
+   ": { getItem: () => null; setItem: Mock<Procedure>; removeItem: () => void }"
+  ],
+  [
+   436,
+   11,
+   "actual:"
+  ],
+  [
+   437,
+   11,
+   "actual:"
+  ],
+  [
+   437,
+   57,
+   "expected:"
+  ],
+  [
+   440,
+   5,
+   "name:"
+  ],
+  [
+   440,
+   47,
+   "fn:"
+  ],
+  [
+   440,
+   49,
+   ": void"
+  ],
+  [
+   441,
+   20,
+   ": Mock<Procedure>"
+  ],
+  [
+   444,
+   17,
+   ": null"
+  ],
+  [
+   446,
+   20,
+   ": void"
+  ],
+  [
+   449,
+   23,
+   ": UseBoundStore<WithPersist<StoreApi<{ count: number }>, unknown>>"
+  ],
+  [
+   450,
+   6,
+   "initializer:"
+  ],
+  [
+   450,
+   14,
+   "initializer:"
+  ],
+  [
+   450,
+   16,
+   ": { count: number }"
+  ],
+  [
+   450,
+   36,
+   "options:"
+  ],
+  [
+   452,
+   35,
+   "getStorage:"
+  ],
+  [
+   452,
+   37,
+   ": { getItem: () => null; setItem: Mock<Procedure>; removeItem: () => void }"
+  ],
+  [
+   453,
+   22,
+   ": { count: number }"
+  ],
+  [
+   453,
+   23,
+   ": Partial<{ count: number }>"
+  ],
+  [
+   457,
+   27,
+   "partial:"
+  ],
+  [
+   458,
+   11,
+   "actual:"
+  ],
+  [
+   463,
+   37,
+   "options:"
+  ],
+  [
+   465,
+   24,
+   ": { count: number }"
+  ],
+  [
+   465,
+   25,
+   ": { [k: string]: number }"
+  ],
+  [
+   467,
+   10,
+   "entries:"
+  ],
+  [
+   467,
+   25,
+   "o:"
+  ],
+  [
+   467,
+   39,
+   "predicate:"
+  ],
+  [
+   467,
+   45,
+   ": [string, number]"
+  ],
+  [
+   467,
+   46,
+   ": boolean"
+  ],
+  [
+   470,
+   27,
+   "partial:"
+  ],
+  [
+   471,
+   11,
+   "actual:"
+  ],
+  [
+   477,
+   5,
+   "name:"
+  ],
+  [
+   477,
+   46,
+   "fn:"
+  ],
+  [
+   477,
+   48,
+   ": void"
+  ],
+  [
+   478,
+   23,
+   ": Mock<Procedure>"
+  ],
+  [
+   481,
+   17,
+   ": null"
+  ],
+  [
+   482,
+   17,
+   ": void"
+  ],
+  [
+   486,
+   23,
+   ": UseBoundStore<WithPersist<StoreApi<{ count: number }>, unknown>>"
+  ],
+  [
+   487,
+   6,
+   "initializer:"
+  ],
+  [
+   487,
+   14,
+   "initializer:"
+  ],
+  [
+   487,
+   16,
+   ": { count: number }"
+  ],
+  [
+   487,
+   36,
+   "options:"
+  ],
+  [
+   489,
+   35,
+   "getStorage:"
+  ],
+  [
+   489,
+   37,
+   ": { getItem: () => null; setItem: () => void; removeItem: Mock<Procedure> }"
+  ],
+  [
+   494,
+   11,
+   "actual:"
+  ],
+  [
+   497,
+   5,
+   "name:"
+  ],
+  [
+   497,
+   47,
+   "fn:"
+  ],
+  [
+   497,
+   49,
+   ": void"
+  ],
+  [
+   501,
+   17,
+   ": string"
+  ],
+  [
+   502,
+   17,
+   ": void"
+  ],
+  [
+   503,
+   20,
+   ": void"
+  ],
+  [
+   506,
+   23,
+   ": UseBoundStore<WithPersist<StoreApi<{ count: number }>, unknown>>"
+  ],
+  [
+   507,
+   6,
+   "initializer:"
+  ],
+  [
+   507,
+   14,
+   "initializer:"
+  ],
+  [
+   507,
+   16,
+   ": { count: number }"
+  ],
+  [
+   507,
+   36,
+   "options:"
+  ],
+  [
+   509,
+   35,
+   "getStorage:"
+  ],
+  [
+   509,
+   37,
+   ": { getItem: () => string; setItem: () => void; removeItem: () => void }"
+  ],
+  [
+   513,
+   24,
+   ": string"
+  ],
+  [
+   515,
+   11,
+   "actual:"
+  ],
+  [
+   515,
+   45,
+   "expected:"
+  ],
+  [
+   520,
+   5,
+   "name:"
+  ],
+  [
+   520,
+   65,
+   "fn:"
+  ],
+  [
+   520,
+   73,
+   ": Promise<void>"
+  ],
+  [
+   522,
+   17,
+   ": null"
+  ],
+  [
+   523,
+   17,
+   ": void"
+  ],
+  [
+   524,
+   20,
+   ": void"
+  ],
+  [
+   527,
+   23,
+   ": UseBoundStore<WithPersist<StoreApi<{ count: number }>, unknown>>"
+  ],
+  [
+   528,
+   6,
+   "initializer:"
+  ],
+  [
+   528,
+   14,
+   "initializer:"
+  ],
+  [
+   528,
+   16,
+   ": { count: number }"
+  ],
+  [
+   528,
+   36,
+   "options:"
+  ],
+  [
+   530,
+   35,
+   "getStorage:"
+  ],
+  [
+   530,
+   37,
+   ": { getItem: () => null; setItem: () => void; removeItem: () => void }"
+  ],
+  [
+   534,
+   11,
+   "actual:"
+  ],
+  [
+   534,
+   53,
+   "expected:"
+  ],
+  [
+   537,
+   11,
+   "actual:"
+  ],
+  [
+   537,
+   53,
+   "expected:"
+  ],
+  [
+   540,
+   5,
+   "name:"
+  ],
+  [
+   540,
+   49,
+   "fn:"
+  ],
+  [
+   540,
+   57,
+   ": Promise<void>"
+  ],
+  [
+   544,
+   23,
+   ": Mock<Procedure>"
+  ],
+  [
+   545,
+   23,
+   ": Mock<Procedure>"
+  ],
+  [
+   546,
+   31,
+   ": Mock<Procedure>"
+  ],
+  [
+   547,
+   31,
+   ": Mock<Procedure>"
+  ],
+  [
+   550,
+   17,
+   ": string"
+  ],
+  [
+   551,
+   17,
+   ": void"
+  ],
+  [
+   552,
+   20,
+   ": void"
+  ],
+  [
+   555,
+   23,
+   ": UseBoundStore<WithPersist<StoreApi<{ count: number }>, unknown>>"
+  ],
+  [
+   556,
+   6,
+   "initializer:"
+  ],
+  [
+   556,
+   14,
+   "initializer:"
+  ],
+  [
+   556,
+   16,
+   ": { count: number }"
+  ],
+  [
+   556,
+   36,
+   "options:"
+  ],
+  [
+   558,
+   35,
+   "getStorage:"
+  ],
+  [
+   558,
+   37,
+   ": { getItem: () => string; setItem: () => void; removeItem: () => void }"
+  ],
+  [
+   562,
+   23,
+   ": () => void"
+  ],
+  [
+   562,
+   58,
+   "fn:"
+  ],
+  [
+   563,
+   36,
+   "fn:"
+  ],
+  [
+   565,
+   31,
+   ": () => void"
+  ],
+  [
+   566,
+   6,
+   "fn:"
+  ],
+  [
+   568,
+   44,
+   "fn:"
+  ],
+  [
+   570,
+   24,
+   ": string"
+  ],
+  [
+   572,
+   11,
+   "actual:"
+  ],
+  [
+   573,
+   11,
+   "actual:"
+  ],
+  [
+   574,
+   11,
+   "actual:"
+  ],
+  [
+   575,
+   11,
+   "actual:"
+  ],
+  [
+   580,
+   24,
+   ": string"
+  ],
+  [
+   582,
+   11,
+   "actual:"
+  ],
+  [
+   582,
+   46,
+   "times:"
+  ],
+  [
+   583,
+   11,
+   "actual:"
+  ],
+  [
+   584,
+   11,
+   "actual:"
+  ],
+  [
+   584,
+   54,
+   "times:"
+  ],
+  [
+   585,
+   11,
+   "actual:"
+  ],
+  [
+   588,
+   5,
+   "name:"
+  ],
+  [
+   588,
+   35,
+   "fn:"
+  ],
+  [
+   588,
+   43,
+   ": Promise<void>"
+  ],
+  [
+   590,
+   29,
+   ": { state: { count: number; name: string }; version: number }"
+  ],
+  [
+   594,
+   17,
+   ": void"
+  ],
+  [
+   595,
+   20,
+   ": void"
+  ],
+  [
+   598,
+   31,
+   ": Mock<Procedure>"
+  ],
+  [
+   599,
+   23,
+   ": UseBoundStore<WithPersist<StoreApi<{ count: number; name: string }>, { count: number; name: string }>>"
+  ],
+  [
+   600,
+   6,
+   "initializer:"
+  ],
+  [
+   601,
+   8,
+   "initializer:"
+  ],
+  [
+   601,
+   10,
+   ": { count: number; name: string }"
+  ],
+  [
+   605,
+   8,
+   "options:"
+  ],
+  [
+   608,
+   32,
+   ": Mock<Procedure>"
+  ],
+  [
+   614,
+   11,
+   "actual:"
+  ],
+  [
+   614,
+   45,
+   "expected:"
+  ],
+  [
+   620,
+   11,
+   "actual:"
+  ],
+  [
+   620,
+   53,
+   "expected:"
+  ],
+  [
+   624,
+   11,
+   "actual:"
+  ],
+  [
+   624,
+   45,
+   "expected:"
+  ],
+  [
+   628,
+   11,
+   "actual:"
+  ],
+  [
+   634,
+   5,
+   "name:"
+  ],
+  [
+   634,
+   56,
+   "fn:"
+  ],
+  [
+   634,
+   58,
+   ": void"
+  ],
+  [
+   636,
+   17,
+   ": string"
+  ],
+  [
+   636,
+   36,
+   "value:"
+  ],
+  [
+   637,
+   17,
+   ": void"
+  ],
+  [
+   638,
+   20,
+   ": void"
+  ],
+  [
+   641,
+   23,
+   ": UseBoundStore<WithPersist<StoreApi<{ count: number; inc: () => void }>, unknown>>"
+  ],
+  [
+   642,
+   6,
+   "initializer:"
+  ],
+  [
+   643,
+   8,
+   "initializer:"
+  ],
+  [
+   643,
+   12,
+   ": { (partial: { count: number; inc: () => void } | Partial<{ count: number; inc: () => void }> | ((state: { count: number; inc: () => void }) => { count: number; inc: () => void } | Partial<{ count: number; inc: () => void }>), replace?: false | undefined): unknown; (state: { ... } | ((state: { ... }) => { ... }), replace: true): unknown }"
+  ],
+  [
+   643,
+   13,
+   ": { count: number; inc: () => unknown }"
+  ],
+  [
+   645,
+   17,
+   ": unknown"
+  ],
+  [
+   645,
+   25,
+   "partial:"
+  ],
+  [
+   645,
+   27,
+   ": { count: number; inc: () => void }"
+  ],
+  [
+   645,
+   28,
+   ": { count: number }"
+  ],
+  [
+   647,
+   8,
+   "options:"
+  ],
+  [
+   649,
+   37,
+   "getStorage:"
+  ],
+  [
+   649,
+   39,
+   ": { getItem: () => string; setItem: () => void; removeItem: () => void }"
+  ],
+  [
+   650,
+   32,
+   ": (s: { count: number; inc: () => void } | undefined) => void | undefined"
+  ],
+  [
+   650,
+   38,
+   ": { count: number; inc: () => void } | undefined"
+  ],
+  [
+   650,
+   39,
+   ": void | undefined"
+  ],
+  [
+   655,
+   11,
+   "actual:"
+  ],
+  [
+   655,
+   51,
+   "expected:"
+  ],
+  [
+   658,
+   5,
+   "name:"
+  ],
+  [
+   658,
+   57,
+   "fn:"
+  ],
+  [
+   658,
+   59,
+   ": void"
+  ],
+  [
+   660,
+   17,
+   ": string"
+  ],
+  [
+   661,
+   23,
+   "value:"
+  ],
+  [
+   664,
+   17,
+   ": void"
+  ],
+  [
+   665,
+   20,
+   ": void"
+  ],
+  [
+   669,
+   31,
+   ": Mock<Procedure>"
+  ],
+  [
+   670,
+   23,
+   ": UseBoundStore<WithPersist<StoreApi<{ map: Map<any, any> }>, unknown>>"
+  ],
+  [
+   671,
+   6,
+   "initializer:"
+  ],
+  [
+   672,
+   8,
+   "initializer:"
+  ],
+  [
+   672,
+   10,
+   ": { map: Map<any, any> }"
+  ],
+  [
+   675,
+   8,
+   "options:"
+  ],
+  [
+   677,
+   37,
+   "getStorage:"
+  ],
+  [
+   677,
+   39,
+   ": { getItem: () => string; setItem: () => void; removeItem: () => void }"
+  ],
+  [
+   678,
+   32,
+   ": Mock<Procedure>"
+  ],
+  [
+   683,
+   20,
+   ": Map<any, any>"
+  ],
+  [
+   683,
+   31,
+   "key:"
+  ],
+  [
+   683,
+   38,
+   "value:"
+  ],
+  [
+   684,
+   11,
+   "actual:"
+  ],
+  [
+   684,
+   45,
+   "expected:"
+  ],
+  [
+   687,
+   11,
+   "actual:"
+  ],
+  [
+   690,
+   5,
+   "name:"
+  ],
+  [
+   690,
+   59,
+   "fn:"
+  ],
+  [
+   690,
+   61,
+   ": void"
+  ],
+  [
+   691,
+   58,
+   "initialValue:"
+  ],
+  [
+   694,
+   21,
+   ": () => { useBoundStore: UseBoundStore<WithPersist<StoreApi<{ map: Map<any, any> }>, unknown>>; onRehydrateStorageSpy: Mock<Procedure> }"
+  ],
+  [
+   694,
+   26,
+   ": { useBoundStore: UseBoundStore<WithPersist<StoreApi<{ map: Map<any, any> }>, unknown>>; onRehydrateStorageSpy: Mock<Procedure> }"
+  ],
+  [
+   695,
+   33,
+   ": Mock<Procedure>"
+  ],
+  [
+   696,
+   25,
+   ": UseBoundStore<WithPersist<StoreApi<{ map: Map<any, any> }>, unknown>>"
+  ],
+  [
+   697,
+   8,
+   "initializer:"
+  ],
+  [
+   697,
+   16,
+   "initializer:"
+  ],
+  [
+   697,
+   18,
+   ": { map: Map<any, any> }"
+  ],
+  [
+   697,
+   33,
+   "options:"
+  ],
+  [
+   699,
+   37,
+   "getStorage:"
+  ],
+  [
+   699,
+   39,
+   ": { getItem: () => string | null; setItem: (name: string, newState: string) => void; removeItem: (name: string) => void }"
+  ],
+  [
+   699,
+   52,
+   "options:"
+  ],
+  [
+   700,
+   32,
+   ": Mock<Procedure>"
+  ],
+  [
+   708,
+   11,
+   "actual:"
+  ],
+  [
+   708,
+   45,
+   "expected:"
+  ],
+  [
+   709,
+   11,
+   "actual:"
+  ],
+  [
+   712,
+   20,
+   ": Map<any, any>"
+  ],
+  [
+   712,
+   31,
+   "key:"
+  ],
+  [
+   712,
+   38,
+   "value:"
+  ],
+  [
+   713,
+   27,
+   "partial:"
+  ],
+  [
+   714,
+   11,
+   "actual:"
+  ],
+  [
+   714,
+   45,
+   "expected:"
+  ],
+  [
+   717,
+   11,
+   "actual:"
+  ],
+  [
+   719,
+   21,
+   "value:"
+  ],
+  [
+   731,
+   11,
+   "actual:"
+  ],
+  [
+   731,
+   46,
+   "expected:"
+  ],
+  [
+   732,
+   11,
+   "actual:"
+  ],
+  [
+   738,
+   5,
+   "name:"
+  ],
+  [
+   738,
+   66,
+   "fn:"
+  ],
+  [
+   738,
+   74,
+   ": Promise<void>"
+  ],
+  [
+   739,
+   17,
+   ": Mock<Procedure>"
+  ],
+  [
+   741,
+   29,
+   ": { state: { count: number; name: string }; version: number }"
+  ],
+  [
+   746,
+   20,
+   ": void"
+  ],
+  [
+   749,
+   23,
+   ": UseBoundStore<WithPersist<StoreApi<{}>, { count: number; name: string }>>"
+  ],
+  [
+   750,
+   6,
+   "initializer:"
+  ],
+  [
+   750,
+   14,
+   "initializer:"
+  ],
+  [
+   750,
+   16,
+   ": {}"
+  ],
+  [
+   750,
+   26,
+   "options:"
+  ],
+  [
+   756,
+   11,
+   "actual:"
+  ],
+  [
+   756,
+   53,
+   "expected:"
+  ],
+  [
+   757,
+   11,
+   "actual:"
+  ],
+  [
+   757,
+   36,
+   "times:"
+  ]
+ ],
+ "actual": [
+  [
+   7,
+   27,
+   ": (initialValue: string | null) => { storage: { getItem: () => string | null; setItem: (name: string, newState: string) => void; removeItem: (name: string) => void }; getItemSpy: Mock<Procedure>; setItemSpy: Mock<...> }"
+  ],
+  [
+   7,
+   59,
+   ": { storage: { getItem: () => string | null; setItem: (name: string, newState: string) => void; removeItem: (name: string) => void }; getItemSpy: Mock<Procedure>; setItemSpy: Mock<...> }"
+  ],
+  [
+   8,
+   11,
+   ": string | null"
+  ],
+  [
+   10,
+   15,
+   ": () => string | null"
+  ],
+  [
+   14,
+   15,
+   ": (name: string, newState: string) => void"
+  ],
+  [
+   14,
+   50,
+   ": void"
+  ],
+  [
+   15,
+   15,
+   "...args:"
+  ],
+  [
+   18,
+   18,
+   ": (name: string) => void"
+  ],
+  [
+   18,
+   35,
+   ": void"
+  ],
+  [
+   19,
+   18,
+   "...args:"
+  ],
+  [
+   23,
+   18,
+   ": Mock<Procedure>"
+  ],
+  [
+   24,
+   18,
+   ": Mock<Procedure>"
+  ],
+  [
+   25,
+   21,
+   ": Mock<Procedure>"
+  ],
+  [
+   34,
+   9,
+   "name:"
+  ],
+  [
+   34,
+   55,
+   "fn:"
+  ],
+  [
+   34,
+   57,
+   ": void"
+  ],
+  [
+   35,
+   20,
+   ": (...data: any[]) => void"
+  ],
+  [
+   36,
+   12,
+   "fn:"
+  ],
+  [
+   36,
+   14,
+   ": void"
+  ],
+  [
+   40,
+   5,
+   "name:"
+  ],
+  [
+   40,
+   28,
+   "fn:"
+  ],
+  [
+   40,
+   30,
+   ": void"
+  ],
+  [
+   42,
+   29,
+   ": string"
+  ],
+  [
+   43,
+   23,
+   "value:"
+  ],
+  [
+   47,
+   17,
+   ": void"
+  ],
+  [
+   48,
+   20,
+   ": void"
+  ],
+  [
+   51,
+   31,
+   ": Mock<Procedure>"
+  ],
+  [
+   52,
+   23,
+   ": any"
+  ],
+  [
+   54,
+   8,
+   "initializer:"
+  ],
+  [
+   54,
+   10,
+   ": { count: number; name: string }"
+  ],
+  [
+   58,
+   8,
+   "options:"
+  ],
+  [
+   60,
+   37,
+   "getStorage:"
+  ],
+  [
+   60,
+   39,
+   ": { getItem: (name: string) => string; setItem: () => void; removeItem: () => void }"
+  ],
+  [
+   61,
+   32,
+   ": Mock<Procedure>"
+  ],
+  [
+   66,
+   11,
+   "actual:"
+  ],
+  [
+   66,
+   45,
+   "expected:"
+  ],
+  [
+   70,
+   11,
+   "actual:"
+  ],
+  [
+   76,
+   5,
+   "name:"
+  ],
+  [
+   76,
+   34,
+   "fn:"
+  ],
+  [
+   76,
+   36,
+   ": void"
+  ],
+  [
+   78,
+   17,
+   ": never"
+  ],
+  [
+   79,
+   24,
+   "message:"
+  ],
+  [
+   81,
+   17,
+   ": void"
+  ],
+  [
+   82,
+   20,
+   ": void"
+  ],
+  [
+   85,
+   13,
+   ": Mock<Procedure>"
+  ],
+  [
+   87,
+   14,
+   "initializer:"
+  ],
+  [
+   87,
+   16,
+   ": { count: number }"
+  ],
+  [
+   87,
+   36,
+   "options:"
+  ],
+  [
+   89,
+   35,
+   "getStorage:"
+  ],
+  [
+   89,
+   37,
+   ": { getItem: () => never; setItem: () => void; removeItem: () => void }"
+  ],
+  [
+   90,
+   30,
+   ": Mock<Procedure>"
+  ],
+  [
+   94,
+   11,
+   "actual:"
+  ],
+  [
+   94,
+   52,
+   "message:"
+  ],
+  [
+   97,
+   5,
+   "name:"
+  ],
+  [
+   97,
+   26,
+   "fn:"
+  ],
+  [
+   97,
+   28,
+   ": void"
+  ],
+  [
+   98,
+   58,
+   "initialValue:"
+  ],
+  [
+   100,
+   21,
+   ": () => { useBoundStore: any; onRehydrateStorageSpy: Mock<Procedure> }"
+  ],
+  [
+   100,
+   26,
+   ": { useBoundStore: any; onRehydrateStorageSpy: Mock<Procedure> }"
+  ],
+  [
+   101,
+   33,
+   ": Mock<Procedure>"
+  ],
+  [
+   102,
+   25,
+   ": any"
+  ],
+  [
+   103,
+   16,
+   "initializer:"
+  ],
+  [
+   103,
+   18,
+   ": { count: number }"
+  ],
+  [
+   103,
+   38,
+   "options:"
+  ],
+  [
+   105,
+   37,
+   "getStorage:"
+  ],
+  [
+   105,
+   39,
+   ": { getItem: () => string | null; setItem: (name: string, newState: string) => void; removeItem: (name: string) => void }"
+  ],
+  [
+   106,
+   32,
+   ": Mock<Procedure>"
+  ],
+  [
+   114,
+   11,
+   "actual:"
+  ],
+  [
+   114,
+   45,
+   "expected:"
+  ],
+  [
+   115,
+   11,
+   "actual:"
+  ],
+  [
+   119,
+   11,
+   "actual:"
+  ],
+  [
+   119,
+   45,
+   "expected:"
+  ],
+  [
+   120,
+   11,
+   "actual:"
+  ],
+  [
+   122,
+   21,
+   "value:"
+  ],
+  [
+   131,
+   11,
+   "actual:"
+  ],
+  [
+   131,
+   46,
+   "expected:"
+  ],
+  [
+   132,
+   11,
+   "actual:"
+  ],
+  [
+   135,
+   5,
+   "name:"
+  ],
+  [
+   135,
+   46,
+   "fn:"
+  ],
+  [
+   135,
+   48,
+   ": void"
+  ],
+  [
+   136,
+   20,
+   ": Mock<Procedure>"
+  ],
+  [
+   137,
+   31,
+   ": Mock<Procedure>"
+  ],
+  [
+   138,
+   20,
+   ": Mock<() => { count: number }>"
+  ],
+  [
+   138,
+   29,
+   "originalImplementation:"
+  ],
+  [
+   138,
+   31,
+   ": { count: number }"
+  ],
+  [
+   141,
+   17,
+   ": string"
+  ],
+  [
+   142,
+   23,
+   "value:"
+  ],
+  [
+   147,
+   20,
+   ": void"
+  ],
+  [
+   150,
+   23,
+   ": any"
+  ],
+  [
+   151,
+   14,
+   "initializer:"
+  ],
+  [
+   151,
+   16,
+   ": { count: number }"
+  ],
+  [
+   151,
+   36,
+   "options:"
+  ],
+  [
+   154,
+   35,
+   "getStorage:"
+  ],
+  [
+   154,
+   37,
+   ": { getItem: () => string; setItem: Mock<Procedure>; removeItem: () => void }"
+  ],
+  [
+   155,
+   30,
+   ": Mock<Procedure>"
+  ],
+  [
+   160,
+   11,
+   "actual:"
+  ],
+  [
+   160,
+   45,
+   "expected:"
+  ],
+  [
+   161,
+   11,
+   "actual:"
+  ],
+  [
+   162,
+   11,
+   "actual:"
+  ],
+  [
+   164,
+   21,
+   "value:"
+  ],
+  [
+   169,
+   11,
+   "actual:"
+  ],
+  [
+   172,
+   5,
+   "name:"
+  ],
+  [
+   172,
+   56,
+   "fn:"
+  ],
+  [
+   172,
+   58,
+   ": void"
+  ],
+  [
+   174,
+   31,
+   ": Mock<Procedure>"
+  ],
+  [
+   176,
+   17,
+   ": string"
+  ],
+  [
+   177,
+   23,
+   "value:"
+  ],
+  [
+   181,
+   42,
+   ": void"
+  ],
+  [
+   182,
+   20,
+   ": void"
+  ],
+  [
+   185,
+   23,
+   ": any"
+  ],
+  [
+   186,
+   14,
+   "initializer:"
+  ],
+  [
+   186,
+   16,
+   ": { count: number }"
+  ],
+  [
+   186,
+   36,
+   "options:"
+  ],
+  [
+   189,
+   35,
+   "getStorage:"
+  ],
+  [
+   189,
+   37,
+   ": { getItem: () => string; setItem: (_: string, _value: string) => void; removeItem: () => void }"
+  ],
+  [
+   190,
+   30,
+   ": Mock<Procedure>"
+  ],
+  [
+   194,
+   11,
+   "actual:"
+  ],
+  [
+   194,
+   45,
+   "expected:"
+  ],
+  [
+   195,
+   11,
+   "actual:"
+  ],
+  [
+   196,
+   11,
+   "actual:"
+  ],
+  [
+   199,
+   5,
+   "name:"
+  ],
+  [
+   199,
+   32,
+   "fn:"
+  ],
+  [
+   199,
+   34,
+   ": void"
+  ],
+  [
+   200,
+   31,
+   ": Mock<Procedure>"
+  ],
+  [
+   203,
+   17,
+   ": string"
+  ],
+  [
+   204,
+   23,
+   "value:"
+  ],
+  [
+   208,
+   17,
+   ": void"
+  ],
+  [
+   209,
+   20,
+   ": void"
+  ],
+  [
+   212,
+   23,
+   ": any"
+  ],
+  [
+   213,
+   14,
+   "initializer:"
+  ],
+  [
+   213,
+   16,
+   ": { count: number }"
+  ],
+  [
+   213,
+   36,
+   "options:"
+  ],
+  [
+   216,
+   35,
+   "getStorage:"
+  ],
+  [
+   216,
+   37,
+   ": { getItem: () => string; setItem: () => void; removeItem: () => void }"
+  ],
+  [
+   217,
+   19,
+   ": never"
+  ],
+  [
+   218,
+   26,
+   "message:"
+  ],
+  [
+   220,
+   30,
+   ": Mock<Procedure>"
+  ],
+  [
+   224,
+   11,
+   "actual:"
+  ],
+  [
+   224,
+   45,
+   "expected:"
+  ],
+  [
+   225,
+   11,
+   "actual:"
+  ],
+  [
+   227,
+   16,
+   "message:"
+  ],
+  [
+   231,
+   5,
+   "name:"
+  ],
+  [
+   231,
+   85,
+   "fn:"
+  ],
+  [
+   231,
+   87,
+   ": void"
+  ],
+  [
+   232,
+   31,
+   ": Mock<Procedure>"
+  ],
+  [
+   235,
+   17,
+   ": string"
+  ],
+  [
+   235,
+   36,
+   "value:"
+  ],
+  [
+   236,
+   17,
+   ": void"
+  ],
+  [
+   237,
+   20,
+   ": void"
+  ],
+  [
+   240,
+   23,
+   ": any"
+  ],
+  [
+   241,
+   14,
+   "initializer:"
+  ],
+  [
+   241,
+   16,
+   ": { count: number }"
+  ],
+  [
+   241,
+   36,
+   "options:"
+  ],
+  [
+   243,
+   35,
+   "getStorage:"
+  ],
+  [
+   243,
+   37,
+   ": { getItem: () => string; setItem: () => void; removeItem: () => void }"
+  ],
+  [
+   261,
+   11,
+   "actual:"
+  ],
+  [
+   262,
+   11,
+   "actual:"
+  ],
+  [
+   262,
+   45,
+   "expected:"
+  ],
+  [
+   265,
+   5,
+   "name:"
+  ],
+  [
+   265,
+   53,
+   "fn:"
+  ],
+  [
+   265,
+   55,
+   ": void"
+  ],
+  [
+   266,
+   31,
+   ": Mock<Procedure>"
+  ],
+  [
+   269,
+   17,
+   ": string"
+  ],
+  [
+   270,
+   23,
+   "value:"
+  ],
+  [
+   274,
+   17,
+   ": void"
+  ],
+  [
+   275,
+   20,
+   ": void"
+  ],
+  [
+   278,
+   26,
+   ": () => void"
+  ],
+  [
+   278,
+   31,
+   ": void"
+  ],
+  [
+   280,
+   23,
+   ": any"
+  ],
+  [
+   281,
+   14,
+   "initializer:"
+  ],
+  [
+   281,
+   16,
+   ": { count: number; unstorableMethod: () => void }"
+  ],
+  [
+   281,
+   54,
+   "options:"
+  ],
+  [
+   283,
+   35,
+   "getStorage:"
+  ],
+  [
+   283,
+   37,
+   ": { getItem: () => string; setItem: () => void; removeItem: () => void }"
+  ],
+  [
+   284,
+   30,
+   ": Mock<Procedure>"
+  ],
+  [
+   290,
+   11,
+   "actual:"
+  ],
+  [
+   290,
+   45,
+   "expected:"
+  ],
+  [
+   291,
+   11,
+   "actual:"
+  ],
+  [
+   294,
+   5,
+   "name:"
+  ],
+  [
+   294,
+   42,
+   "fn:"
+  ],
+  [
+   294,
+   44,
+   ": void"
+  ],
+  [
+   296,
+   17,
+   ": string"
+  ],
+  [
+   297,
+   23,
+   "value:"
+  ],
+  [
+   304,
+   17,
+   ": void"
+  ],
+  [
+   305,
+   20,
+   ": void"
+  ],
+  [
+   308,
+   26,
+   ": () => void"
+  ],
+  [
+   308,
+   31,
+   ": void"
+  ],
+  [
+   310,
+   23,
+   ": any"
+  ],
+  [
+   311,
+   14,
+   "initializer:"
+  ],
+  [
+   311,
+   16,
+   ": { count: number; actions: { unstorableMethod: () => void } }"
+  ],
+  [
+   311,
+   67,
+   "options:"
+  ],
+  [
+   313,
+   35,
+   "getStorage:"
+  ],
+  [
+   313,
+   37,
+   ": { getItem: () => string; setItem: () => void; removeItem: () => void }"
+  ],
+  [
+   314,
+   31,
+   ": unknown"
+  ],
+  [
+   314,
+   45,
+   ": { count: number; actions: { unstorableMethod: () => void } }"
+  ],
+  [
+   314,
+   46,
+   ": any"
+  ],
+  [
+   326,
+   11,
+   "actual:"
+  ],
+  [
+   326,
+   45,
+   "expected:"
+  ],
+  [
+   334,
+   5,
+   "name:"
+  ],
+  [
+   334,
+   73,
+   "fn:"
+  ],
+  [
+   334,
+   75,
+   ": void"
+  ],
+  [
+   336,
+   17,
+   ": string"
+  ],
+  [
+   337,
+   23,
+   "value:"
+  ],
+  [
+   342,
+   17,
+   ": void"
+  ],
+  [
+   343,
+   20,
+   ": void"
+  ],
+  [
+   346,
+   23,
+   ": any"
+  ],
+  [
+   347,
+   14,
+   "initializer:"
+  ],
+  [
+   347,
+   16,
+   ": { count: number }"
+  ],
+  [
+   347,
+   36,
+   "options:"
+  ],
+  [
+   349,
+   35,
+   "getStorage:"
+  ],
+  [
+   349,
+   37,
+   ": { getItem: () => string; setItem: () => void; removeItem: () => void }"
+  ],
+  [
+   353,
+   11,
+   "actual:"
+  ],
+  [
+   353,
+   45,
+   "expected:"
+  ],
+  [
+   358,
+   5,
+   "name:"
+  ],
+  [
+   358,
+   39,
+   "fn:"
+  ],
+  [
+   358,
+   41,
+   ": void"
+  ],
+  [
+   359,
+   20,
+   ": Mock<Procedure>"
+  ],
+  [
+   362,
+   17,
+   ": string"
+  ],
+  [
+   364,
+   20,
+   ": void"
+  ],
+  [
+   367,
+   23,
+   ": any"
+  ],
+  [
+   369,
+   8,
+   "initializer:"
+  ],
+  [
+   369,
+   10,
+   ": { object: { first: string; second: string }; array: { value: string }[] }"
+  ],
+  [
+   386,
+   8,
+   "options:"
+  ],
+  [
+   388,
+   37,
+   "getStorage:"
+  ],
+  [
+   388,
+   39,
+   ": { getItem: () => string; setItem: Mock<Procedure>; removeItem: () => void }"
+  ],
+  [
+   389,
+   28,
+   ": { object: { first: string; second: string }; array: { value: string }[] }"
+  ],
+  [
+   389,
+   29,
+   ": { object: { first: string }; array: { value: string }[] }"
+  ],
+  [
+   394,
+   40,
+   "predicate:"
+  ],
+  [
+   394,
+   42,
+   ": { value: string }"
+  ],
+  [
+   394,
+   43,
+   ": boolean"
+  ],
+  [
+   402,
+   11,
+   "actual:"
+  ],
+  [
+   404,
+   21,
+   "value:"
+  ],
+  [
+   423,
+   5,
+   "name:"
+  ],
+  [
+   423,
+   47,
+   "fn:"
+  ],
+  [
+   423,
+   49,
+   ": void"
+  ],
+  [
+   425,
+   17,
+   ": null"
+  ],
+  [
+   427,
+   20,
+   ": void"
+  ],
+  [
+   430,
+   23,
+   ": any"
+  ],
+  [
+   431,
+   14,
+   "initializer:"
+  ],
+  [
+   431,
+   16,
+   ": { count: number }"
+  ],
+  [
+   431,
+   36,
+   "options:"
+  ],
+  [
+   433,
+   35,
+   "getStorage:"
+  ],
+  [
+   433,
+   37,
+   ": { getItem: () => null; setItem: Mock<Procedure>; removeItem: () => void }"
+  ],
+  [
+   436,
+   11,
+   "actual:"
+  ],
+  [
+   437,
+   11,
+   "actual:"
+  ],
+  [
+   437,
+   57,
+   "expected:"
+  ],
+  [
+   440,
+   5,
+   "name:"
+  ],
+  [
+   440,
+   47,
+   "fn:"
+  ],
+  [
+   440,
+   49,
+   ": void"
+  ],
+  [
+   441,
+   20,
+   ": Mock<Procedure>"
+  ],
+  [
+   444,
+   17,
+   ": null"
+  ],
+  [
+   446,
+   20,
+   ": void"
+  ],
+  [
+   449,
+   23,
+   ": any"
+  ],
+  [
+   450,
+   14,
+   "initializer:"
+  ],
+  [
+   450,
+   16,
+   ": { count: number }"
+  ],
+  [
+   450,
+   36,
+   "options:"
+  ],
+  [
+   452,
+   35,
+   "getStorage:"
+  ],
+  [
+   452,
+   37,
+   ": { getItem: () => null; setItem: Mock<Procedure>; removeItem: () => void }"
+  ],
+  [
+   453,
+   22,
+   ": { count: number }"
+  ],
+  [
+   453,
+   23,
+   ": Partial<{ count: number }>"
+  ],
+  [
+   458,
+   11,
+   "actual:"
+  ],
+  [
+   465,
+   24,
+   ": any"
+  ],
+  [
+   465,
+   25,
+   ": { [k: string]: unknown }"
+  ],
+  [
+   467,
+   10,
+   "entries:"
+  ],
+  [
+   467,
+   25,
+   "o:"
+  ],
+  [
+   467,
+   39,
+   "predicate:"
+  ],
+  [
+   467,
+   45,
+   ": [string, unknown]"
+  ],
+  [
+   467,
+   46,
+   ": boolean"
+  ],
+  [
+   471,
+   11,
+   "actual:"
+  ],
+  [
+   477,
+   5,
+   "name:"
+  ],
+  [
+   477,
+   46,
+   "fn:"
+  ],
+  [
+   477,
+   48,
+   ": void"
+  ],
+  [
+   478,
+   23,
+   ": Mock<Procedure>"
+  ],
+  [
+   481,
+   17,
+   ": null"
+  ],
+  [
+   482,
+   17,
+   ": void"
+  ],
+  [
+   486,
+   23,
+   ": any"
+  ],
+  [
+   487,
+   14,
+   "initializer:"
+  ],
+  [
+   487,
+   16,
+   ": { count: number }"
+  ],
+  [
+   487,
+   36,
+   "options:"
+  ],
+  [
+   489,
+   35,
+   "getStorage:"
+  ],
+  [
+   489,
+   37,
+   ": { getItem: () => null; setItem: () => void; removeItem: Mock<Procedure> }"
+  ],
+  [
+   494,
+   11,
+   "actual:"
+  ],
+  [
+   497,
+   5,
+   "name:"
+  ],
+  [
+   497,
+   47,
+   "fn:"
+  ],
+  [
+   497,
+   49,
+   ": void"
+  ],
+  [
+   501,
+   17,
+   ": string"
+  ],
+  [
+   502,
+   17,
+   ": void"
+  ],
+  [
+   503,
+   20,
+   ": void"
+  ],
+  [
+   506,
+   23,
+   ": any"
+  ],
+  [
+   507,
+   14,
+   "initializer:"
+  ],
+  [
+   507,
+   16,
+   ": { count: number }"
+  ],
+  [
+   507,
+   36,
+   "options:"
+  ],
+  [
+   509,
+   35,
+   "getStorage:"
+  ],
+  [
+   509,
+   37,
+   ": { getItem: () => string; setItem: () => void; removeItem: () => void }"
+  ],
+  [
+   513,
+   24,
+   ": string"
+  ],
+  [
+   515,
+   11,
+   "actual:"
+  ],
+  [
+   515,
+   45,
+   "expected:"
+  ],
+  [
+   520,
+   5,
+   "name:"
+  ],
+  [
+   520,
+   65,
+   "fn:"
+  ],
+  [
+   520,
+   73,
+   ": Promise<void>"
+  ],
+  [
+   522,
+   17,
+   ": null"
+  ],
+  [
+   523,
+   17,
+   ": void"
+  ],
+  [
+   524,
+   20,
+   ": void"
+  ],
+  [
+   527,
+   23,
+   ": any"
+  ],
+  [
+   528,
+   14,
+   "initializer:"
+  ],
+  [
+   528,
+   16,
+   ": { count: number }"
+  ],
+  [
+   528,
+   36,
+   "options:"
+  ],
+  [
+   530,
+   35,
+   "getStorage:"
+  ],
+  [
+   530,
+   37,
+   ": { getItem: () => null; setItem: () => void; removeItem: () => void }"
+  ],
+  [
+   534,
+   11,
+   "actual:"
+  ],
+  [
+   534,
+   53,
+   "expected:"
+  ],
+  [
+   537,
+   11,
+   "actual:"
+  ],
+  [
+   537,
+   53,
+   "expected:"
+  ],
+  [
+   540,
+   5,
+   "name:"
+  ],
+  [
+   540,
+   49,
+   "fn:"
+  ],
+  [
+   540,
+   57,
+   ": Promise<void>"
+  ],
+  [
+   544,
+   23,
+   ": Mock<Procedure>"
+  ],
+  [
+   545,
+   23,
+   ": Mock<Procedure>"
+  ],
+  [
+   546,
+   31,
+   ": Mock<Procedure>"
+  ],
+  [
+   547,
+   31,
+   ": Mock<Procedure>"
+  ],
+  [
+   550,
+   17,
+   ": string"
+  ],
+  [
+   551,
+   17,
+   ": void"
+  ],
+  [
+   552,
+   20,
+   ": void"
+  ],
+  [
+   555,
+   23,
+   ": any"
+  ],
+  [
+   556,
+   14,
+   "initializer:"
+  ],
+  [
+   556,
+   16,
+   ": { count: number }"
+  ],
+  [
+   556,
+   36,
+   "options:"
+  ],
+  [
+   558,
+   35,
+   "getStorage:"
+  ],
+  [
+   558,
+   37,
+   ": { getItem: () => string; setItem: () => void; removeItem: () => void }"
+  ],
+  [
+   562,
+   23,
+   ": any"
+  ],
+  [
+   565,
+   31,
+   ": any"
+  ],
+  [
+   570,
+   24,
+   ": string"
+  ],
+  [
+   572,
+   11,
+   "actual:"
+  ],
+  [
+   573,
+   11,
+   "actual:"
+  ],
+  [
+   574,
+   11,
+   "actual:"
+  ],
+  [
+   575,
+   11,
+   "actual:"
+  ],
+  [
+   580,
+   24,
+   ": string"
+  ],
+  [
+   582,
+   11,
+   "actual:"
+  ],
+  [
+   582,
+   46,
+   "times:"
+  ],
+  [
+   583,
+   11,
+   "actual:"
+  ],
+  [
+   584,
+   11,
+   "actual:"
+  ],
+  [
+   584,
+   54,
+   "times:"
+  ],
+  [
+   585,
+   11,
+   "actual:"
+  ],
+  [
+   588,
+   5,
+   "name:"
+  ],
+  [
+   588,
+   35,
+   "fn:"
+  ],
+  [
+   588,
+   43,
+   ": Promise<void>"
+  ],
+  [
+   590,
+   29,
+   ": { state: { count: number; name: string }; version: number }"
+  ],
+  [
+   594,
+   17,
+   ": void"
+  ],
+  [
+   595,
+   20,
+   ": void"
+  ],
+  [
+   598,
+   31,
+   ": Mock<Procedure>"
+  ],
+  [
+   599,
+   23,
+   ": any"
+  ],
+  [
+   601,
+   8,
+   "initializer:"
+  ],
+  [
+   601,
+   10,
+   ": { count: number; name: string }"
+  ],
+  [
+   605,
+   8,
+   "options:"
+  ],
+  [
+   608,
+   32,
+   ": Mock<Procedure>"
+  ],
+  [
+   614,
+   11,
+   "actual:"
+  ],
+  [
+   614,
+   45,
+   "expected:"
+  ],
+  [
+   620,
+   11,
+   "actual:"
+  ],
+  [
+   620,
+   53,
+   "expected:"
+  ],
+  [
+   624,
+   11,
+   "actual:"
+  ],
+  [
+   624,
+   45,
+   "expected:"
+  ],
+  [
+   628,
+   11,
+   "actual:"
+  ],
+  [
+   634,
+   5,
+   "name:"
+  ],
+  [
+   634,
+   56,
+   "fn:"
+  ],
+  [
+   634,
+   58,
+   ": void"
+  ],
+  [
+   636,
+   17,
+   ": string"
+  ],
+  [
+   636,
+   36,
+   "value:"
+  ],
+  [
+   637,
+   17,
+   ": void"
+  ],
+  [
+   638,
+   20,
+   ": void"
+  ],
+  [
+   641,
+   23,
+   ": any"
+  ],
+  [
+   643,
+   8,
+   "initializer:"
+  ],
+  [
+   643,
+   12,
+   ": { (partial: unknown, replace?: false | undefined): unknown; (state: unknown, replace: true): unknown }"
+  ],
+  [
+   643,
+   13,
+   ": { count: number; inc: () => unknown }"
+  ],
+  [
+   645,
+   17,
+   ": unknown"
+  ],
+  [
+   645,
+   25,
+   "partial:"
+  ],
+  [
+   645,
+   27,
+   ": any"
+  ],
+  [
+   645,
+   28,
+   ": { count: any }"
+  ],
+  [
+   647,
+   8,
+   "options:"
+  ],
+  [
+   649,
+   37,
+   "getStorage:"
+  ],
+  [
+   649,
+   39,
+   ": { getItem: () => string; setItem: () => void; removeItem: () => void }"
+  ],
+  [
+   650,
+   32,
+   ": (s: unknown) => any"
+  ],
+  [
+   650,
+   38,
+   ": unknown"
+  ],
+  [
+   650,
+   39,
+   ": any"
+  ],
+  [
+   655,
+   11,
+   "actual:"
+  ],
+  [
+   655,
+   51,
+   "expected:"
+  ],
+  [
+   658,
+   5,
+   "name:"
+  ],
+  [
+   658,
+   57,
+   "fn:"
+  ],
+  [
+   658,
+   59,
+   ": void"
+  ],
+  [
+   660,
+   17,
+   ": string"
+  ],
+  [
+   661,
+   23,
+   "value:"
+  ],
+  [
+   664,
+   17,
+   ": void"
+  ],
+  [
+   665,
+   20,
+   ": void"
+  ],
+  [
+   669,
+   31,
+   ": Mock<Procedure>"
+  ],
+  [
+   670,
+   23,
+   ": any"
+  ],
+  [
+   672,
+   8,
+   "initializer:"
+  ],
+  [
+   672,
+   10,
+   ": { map: Map<any, any> }"
+  ],
+  [
+   675,
+   8,
+   "options:"
+  ],
+  [
+   677,
+   37,
+   "getStorage:"
+  ],
+  [
+   677,
+   39,
+   ": { getItem: () => string; setItem: () => void; removeItem: () => void }"
+  ],
+  [
+   678,
+   32,
+   ": Mock<Procedure>"
+  ],
+  [
+   683,
+   20,
+   ": Map<any, any>"
+  ],
+  [
+   683,
+   31,
+   "key:"
+  ],
+  [
+   683,
+   38,
+   "value:"
+  ],
+  [
+   684,
+   11,
+   "actual:"
+  ],
+  [
+   684,
+   45,
+   "expected:"
+  ],
+  [
+   687,
+   11,
+   "actual:"
+  ],
+  [
+   690,
+   5,
+   "name:"
+  ],
+  [
+   690,
+   59,
+   "fn:"
+  ],
+  [
+   690,
+   61,
+   ": void"
+  ],
+  [
+   691,
+   58,
+   "initialValue:"
+  ],
+  [
+   694,
+   21,
+   ": () => { useBoundStore: any; onRehydrateStorageSpy: Mock<Procedure> }"
+  ],
+  [
+   694,
+   26,
+   ": { useBoundStore: any; onRehydrateStorageSpy: Mock<Procedure> }"
+  ],
+  [
+   695,
+   33,
+   ": Mock<Procedure>"
+  ],
+  [
+   696,
+   25,
+   ": any"
+  ],
+  [
+   697,
+   16,
+   "initializer:"
+  ],
+  [
+   697,
+   18,
+   ": { map: Map<any, any> }"
+  ],
+  [
+   697,
+   33,
+   "options:"
+  ],
+  [
+   699,
+   37,
+   "getStorage:"
+  ],
+  [
+   699,
+   39,
+   ": { getItem: () => string | null; setItem: (name: string, newState: string) => void; removeItem: (name: string) => void }"
+  ],
+  [
+   699,
+   52,
+   "options:"
+  ],
+  [
+   700,
+   32,
+   ": Mock<Procedure>"
+  ],
+  [
+   708,
+   11,
+   "actual:"
+  ],
+  [
+   708,
+   45,
+   "expected:"
+  ],
+  [
+   709,
+   11,
+   "actual:"
+  ],
+  [
+   712,
+   20,
+   ": Map<any, any>"
+  ],
+  [
+   712,
+   31,
+   "key:"
+  ],
+  [
+   712,
+   38,
+   "value:"
+  ],
+  [
+   714,
+   11,
+   "actual:"
+  ],
+  [
+   714,
+   45,
+   "expected:"
+  ],
+  [
+   717,
+   11,
+   "actual:"
+  ],
+  [
+   719,
+   21,
+   "value:"
+  ],
+  [
+   731,
+   11,
+   "actual:"
+  ],
+  [
+   731,
+   46,
+   "expected:"
+  ],
+  [
+   732,
+   11,
+   "actual:"
+  ],
+  [
+   738,
+   5,
+   "name:"
+  ],
+  [
+   738,
+   66,
+   "fn:"
+  ],
+  [
+   738,
+   74,
+   ": Promise<void>"
+  ],
+  [
+   739,
+   17,
+   ": Mock<Procedure>"
+  ],
+  [
+   741,
+   29,
+   ": { state: { count: number; name: string }; version: number }"
+  ],
+  [
+   746,
+   20,
+   ": void"
+  ],
+  [
+   749,
+   23,
+   ": any"
+  ],
+  [
+   750,
+   14,
+   "initializer:"
+  ],
+  [
+   750,
+   16,
+   ": {}"
+  ],
+  [
+   750,
+   26,
+   "options:"
+  ],
+  [
+   756,
+   11,
+   "actual:"
+  ],
+  [
+   756,
+   53,
+   "expected:"
+  ],
+  [
+   757,
+   11,
+   "actual:"
+  ],
+  [
+   757,
+   36,
+   "times:"
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "H5: rename src/react.ts -> src/react_rt.ts -> back; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 112s",
+ "violation": {
+  "oracle": "r1_history",
+  "server": "ts6-6.0.3",
+  "project": "pmndrs/zustand@b57db4f86ef1",
+  "key": {
+   "method": "inlayHint",
+   "path": "tests/persistSync.test.tsx",
+   "line": -1,
+   "character": -1,
+   "extra": ""
+  },
+  "expected": [
+   [
+    7,
+    27,
+    ": (initialValue: string | null) => { storage: { getItem: () => string | null; setItem: (name: string, newState: string) => void; removeItem: (name: string) => void }; getItemSpy: Mock<Procedure>; setItemSpy: Mock<...> }"
+   ],
+   [
+    7,
+    59,
+    ": { storage: { getItem: () => string | null; setItem: (name: string, newState: string) => void; removeItem: (name: string) => void }; getItemSpy: Mock<Procedure>; setItemSpy: Mock<...> }"
+   ],
+   [
+    8,
+    11,
+    ": string | null"
+   ],
+   [
+    10,
+    15,
+    ": () => string | null"
+   ],
+   [
+    14,
+    15,
+    ": (name: string, newState: string) => void"
+   ],
+   [
+    14,
+    50,
+    ": void"
+   ],
+   [
+    15,
+    15,
+    "...args:"
+   ],
+   [
+    18,
+    18,
+    ": (name: string) => void"
+   ],
+   [
+    18,
+    35,
+    ": void"
+   ],
+   [
+    19,
+    18,
+    "...args:"
+   ],
+   [
+    23,
+    18,
+    ": Mock<Procedure>"
+   ],
+   [
+    24,
+    18,
+    ": Mock<Procedure>"
+   ],
+   [
+    25,
+    21,
+    ": Mock<Procedure>"
+   ],
+   [
+    34,
+    9,
+    "name:"
+   ],
+   [
+    34,
+    55,
+    "fn:"
+   ],
+   [
+    34,
+    57,
+    ": void"
+   ],
+   [
+    35,
+    20,
+    ": (...data: any[]) => void"
+   ],
+   [
+    36,
+    12,
+    "fn:"
+   ],
+   [
+    36,
+    14,
+    ": void"
+   ],
+   [
+    40,
+    5,
+    "name:"
+   ],
+   [
+    40,
+    28,
+    "fn:"
+   ],
+   [
+    40,
+    30,
+    ": void"
+   ],
+   [
+    42,
+    29,
+    ": string"
+   ],
+   [
+    43,
+    23,
+    "value:"
+   ],
+   [
+    47,
+    17,
+    ": void"
+   ],
+   [
+    48,
+    20,
+    ": void"
+   ],
+   [
+    51,
+    31,
+    ": Mock<Procedure>"
+   ],
+   [
+    52,
+    23,
+    ": UseBoundStore<WithPersist<StoreApi<{ count: number; name: string }>, unknown>>"
+   ],
+   [
+    53,
+    6,
+    "initializer:"
+   ],
+   [
+    54,
+    8,
+    "initializer:"
+   ],
+   [
+    54,
+    10,
+    ": { count: number; name: string }"
+   ],
+   [
+    58,
+    8,
+    "options:"
+   ],
+   [
+    60,
+    37,
+    "getStorage:"
+   ],
+   [
+    60,
+    39,
+    ": { getItem: (name: string) => string; setItem: () => void; removeItem: () => void }"
+   ],
+   [
+    61,
+    32,
+    ": Mock<Procedure>"
+   ],
+   [
+    66,
+    11,
+    "actual:"
+   ],
+   [
+    66,
+    45,
+    "expected:"
+   ],
+   [
+    70,
+    11,
+    "actual:"
+   ],
+   [
+    76,
+    5,
+    "name:"
+   ],
+   [
+    76,
+    34,
+    "fn:"
+   ],
+   [
+    76,
+    36,
+    ": void"
+   ],
+   [
+    78,
+    17,
+    ": never"
+   ],
+   [
+    79,
+    24,
+    "message:"
+   ],
+   [
+    81,
+    17,
+    ": void"
+   ],
+   [
+    82,
+    20,
+    ": void"
+   ],
+   [
+    85,
+    13,
+    ": Mock<Procedure>"
+   ],
+   [
+    87,
+    6,
+    "initializer:"
+   ],
+   [
+    87,
+    14,
+    "initializer:"
+   ],
+   [
+    87,
+    16,
+    ": { count: number }"
+   ],
+   [
+    87,
+    36,
+    "options:"
+   ],
+   [
+    89,
+    35,
+    "getStorage:"
+   ],
+   [
+    89,
+    37,
+    ": { getItem: () => never; setItem: () => void; removeItem: () => void }"
+   ],
+   [
+    90,
+    30,
+    ": Mock<Procedure>"
+   ],
+   [
+    94,
+    11,
+    "actual:"
+   ],
+   [
+    94,
+    52,
+    "message:"
+   ],
+   [
+    97,
+    5,
+    "name:"
+   ],
+   [
+    97,
+    26,
+    "fn:"
+   ],
+   [
+    97,
+    28,
+    ": void"
+   ],
+   [
+    98,
+    58,
+    "initialValue:"
+   ],
+   [
+    100,
+    21,
+    ": () => { useBoundStore: UseBoundStore<WithPersist<StoreApi<{ count: number }>, unknown>>; onRehydrateStorageSpy: Mock<Procedure> }"
+   ],
+   [
+    100,
+    26,
+    ": { useBoundStore: UseBoundStore<WithPersist<StoreApi<{ count: number }>, unknown>>; onRehydrateStorageSpy: Mock<Procedure> }"
+   ],
+   [
+    101,
+    33,
+    ": Mock<Procedure>"
+   ],
+   [
+    102,
+    25,
+    ": UseBoundStore<WithPersist<StoreApi<{ count: number }>, unknown>>"
+   ],
+   [
+    103,
+    8,
+    "initializer:"
+   ],
+   [
+    103,
+    16,
+    "initializer:"
+   ],
+   [
+    103,
+    18,
+    ": { count: number }"
+   ],
+   [
+    103,
+    38,
+    "options:"
+   ],
+   [
+    105,
+    37,
+    "getStorage:"
+   ],
+   [
+    105,
+    39,
+    ": { getItem: () => string | null; setItem: (name: string, newState: string) => void; removeItem: (name: string) => void }"
+   ],
+   [
+    106,
+    32,
+    ": Mock<Procedure>"
+   ],
+   [
+    114,
+    11,
+    "actual:"
+   ],
+   [
+    114,
+    45,
+    "expected:"
+   ],
+   [
+    115,
+    11,
+    "actual:"
+   ],
+   [
+    118,
+    27,
+    "partial:"
+   ],
+   [
+    119,
+    11,
+    "actual:"
+   ],
+   [
+    119,
+    45,
+    "expected:"
+   ],
+   [
+    120,
+    11,
+    "actual:"
+   ],
+   [
+    122,
+    21,
+    "value:"
+   ],
+   [
+    131,
+    11,
+    "actual:"
+   ],
+   [
+    131,
+    46,
+    "expected:"
+   ],
+   [
+    132,
+    11,
+    "actual:"
+   ],
+   [
+    135,
+    5,
+    "name:"
+   ],
+   [
+    135,
+    46,
+    "fn:"
+   ],
+   [
+    135,
+    48,
+    ": void"
+   ],
+   [
+    136,
+    20,
+    ": Mock<Procedure>"
+   ],
+   [
+    137,
+    31,
+    ": Mock<Procedure>"
+   ],
+   [
+    138,
+    20,
+    ": Mock<() => { count: number }>"
+   ],
+   [
+    138,
+    29,
+    "originalImplementation:"
+   ],
+   [
+    138,
+    31,
+    ": { count: number }"
+   ],
+   [
+    141,
+    17,
+    ": string"
+   ],
+   [
+    142,
+    23,
+    "value:"
+   ],
+   [
+    147,
+    20,
+    ": void"
+   ],
+   [
+    150,
+    23,
+    ": UseBoundStore<WithPersist<StoreApi<{ count: number }>, unknown>>"
+   ],
+   [
+    151,
+    6,
+    "initializer:"
+   ],
+   [
+    151,
+    14,
+    "initializer:"
+   ],
+   [
+    151,
+    16,
+    ": { count: number }"
+   ],
+   [
+    151,
+    36,
+    "options:"
+   ],
+   [
+    154,
+    35,
+    "getStorage:"
+   ],
+   [
+    154,
+    37,
+    ": { getItem: () => string; setItem: Mock<Procedure>; removeItem: () => void }"
+   ],
+   [
+    155,
+    30,
+    ": Mock<Procedure>"
+   ],
+   [
+    160,
+    11,
+    "actual:"
+   ],
+   [
+    160,
+    45,
+    "expected:"
+   ],
+   [
+    161,
+    11,
+    "actual:"
+   ],
+   [
+    162,
+    11,
+    "actual:"
+   ],
+   [
+    164,
+    21,
+    "value:"
+   ],
+   [
+    169,
+    11,
+    "actual:"
+   ],
+   [
+    172,
+    5,
+    "name:"
+   ],
+   [
+    172,
+    56,
+    "fn:"
+   ],
+   [
+    172,
+    58,
+    ": void"
+   ],
+   [
+    174,
+    31,
+    ": Mock<Procedure>"
+   ],
+   [
+    176,
+    17,
+    ": string"
+   ],
+   [
+    177,
+    23,
+    "value:"
+   ],
+   [
+    181,
+    42,
+    ": void"
+   ],
+   [
+    182,
+    20,
+    ": void"
+   ],
+   [
+    185,
+    23,
+    ": UseBoundStore<WithPersist<StoreApi<{ count: number }>, unknown>>"
+   ],
+   [
+    186,
+    6,
+    "initializer:"
+   ],
+   [
+    186,
+    14,
+    "initializer:"
+   ],
+   [
+    186,
+    16,
+    ": { count: number }"
+   ],
+   [
+    186,
+    36,
+    "options:"
+   ],
+   [
+    189,
+    35,
+    "getStorage:"
+   ],
+   [
+    189,
+    37,
+    ": { getItem: () => string; setItem: (_: string, _value: string) => void; removeItem: () => void }"
+   ],
+   [
+    190,
+    30,
+    ": Mock<Procedure>"
+   ],
+   [
+    194,
+    11,
+    "actual:"
+   ],
+   [
+    194,
+    45,
+    "expected:"
+   ],
+   [
+    195,
+    11,
+    "actual:"
+   ],
+   [
+    196,
+    11,
+    "actual:"
+   ],
+   [
+    199,
+    5,
+    "name:"
+   ],
+   [
+    199,
+    32,
+    "fn:"
+   ],
+   [
+    199,
+    34,
+    ": void"
+   ],
+   [
+    200,
+    31,
+    ": Mock<Procedure>"
+   ],
+   [
+    203,
+    17,
+    ": string"
+   ],
+   [
+    204,
+    23,
+    "value:"
+   ],
+   [
+    208,
+    17,
+    ": void"
+   ],
+   [
+    209,
+    20,
+    ": void"
+   ],
+   [
+    212,
+    23,
+    ": UseBoundStore<WithPersist<StoreApi<{ count: number }>, unknown>>"
+   ],
+   [
+    213,
+    6,
+    "initializer:"
+   ],
+   [
+    213,
+    14,
+    "initializer:"
+   ],
+   [
+    213,
+    16,
+    ": { count: number }"
+   ],
+   [
+    213,
+    36,
+    "options:"
+   ],
+   [
+    216,
+    35,
+    "getStorage:"
+   ],
+   [
+    216,
+    37,
+    ": { getItem: () => string; setItem: () => void; removeItem: () => void }"
+   ],
+   [
+    217,
+    19,
+    ": never"
+   ],
+   [
+    218,
+    26,
+    "message:"
+   ],
+   [
+    220,
+    30,
+    ": Mock<Procedure>"
+   ],
+   [
+    224,
+    11,
+    "actual:"
+   ],
+   [
+    224,
+    45,
+    "expected:"
+   ],
+   [
+    225,
+    11,
+    "actual:"
+   ],
+   [
+    227,
+    16,
+    "message:"
+   ],
+   [
+    231,
+    5,
+    "name:"
+   ],
+   [
+    231,
+    85,
+    "fn:"
+   ],
+   [
+    231,
+    87,
+    ": void"
+   ],
+   [
+    232,
+    31,
+    ": Mock<Procedure>"
+   ],
+   [
+    235,
+    17,
+    ": string"
+   ],
+   [
+    235,
+    36,
+    "value:"
+   ],
+   [
+    236,
+    17,
+    ": void"
+   ],
+   [
+    237,
+    20,
+    ": void"
+   ],
+   [
+    240,
+    23,
+    ": UseBoundStore<WithPersist<StoreApi<{ count: number }>, unknown>>"
+   ],
+   [
+    241,
+    6,
+    "initializer:"
+   ],
+   [
+    241,
+    14,
+    "initializer:"
+   ],
+   [
+    241,
+    16,
+    ": { count: number }"
+   ],
+   [
+    241,
+    36,
+    "options:"
+   ],
+   [
+    243,
+    35,
+    "getStorage:"
+   ],
+   [
+    243,
+    37,
+    ": { getItem: () => string; setItem: () => void; removeItem: () => void }"
+   ],
+   [
+    261,
+    11,
+    "actual:"
+   ],
+   [
+    262,
+    11,
+    "actual:"
+   ],
+   [
+    262,
+    45,
+    "expected:"
+   ],
+   [
+    265,
+    5,
+    "name:"
+   ],
+   [
+    265,
+    53,
+    "fn:"
+   ],
+   [
+    265,
+    55,
+    ": void"
+   ],
+   [
+    266,
+    31,
+    ": Mock<Procedure>"
+   ],
+   [
+    269,
+    17,
+    ": string"
+   ],
+   [
+    270,
+    23,
+    "value:"
+   ],
+   [
+    274,
+    17,
+    ": void"
+   ],
+   [
+    275,
+    20,
+    ": void"
+   ],
+   [
+    278,
+    26,
+    ": () => void"
+   ],
+   [
+    278,
+    31,
+    ": void"
+   ],
+   [
+    280,
+    23,
+    ": UseBoundStore<WithPersist<StoreApi<{ count: number; unstorableMethod: () => void }>, unknown>>"
+   ],
+   [
+    281,
+    6,
+    "initializer:"
+   ],
+   [
+    281,
+    14,
+    "initializer:"
+   ],
+   [
+    281,
+    16,
+    ": { count: number; unstorableMethod: () => void }"
+   ],
+   [
+    281,
+    54,
+    "options:"
+   ],
+   [
+    283,
+    35,
+    "getStorage:"
+   ],
+   [
+    283,
+    37,
+    ": { getItem: () => string; setItem: () => void; removeItem: () => void }"
+   ],
+   [
+    284,
+    30,
+    ": Mock<Procedure>"
+   ],
+   [
+    290,
+    11,
+    "actual:"
+   ],
+   [
+    290,
+    45,
+    "expected:"
+   ],
+   [
+    291,
+    11,
+    "actual:"
+   ],
+   [
+    294,
+    5,
+    "name:"
+   ],
+   [
+    294,
+    42,
+    "fn:"
+   ],
+   [
+    294,
+    44,
+    ": void"
+   ],
+   [
+    296,
+    17,
+    ": string"
+   ],
+   [
+    297,
+    23,
+    "value:"
+   ],
+   [
+    304,
+    17,
+    ": void"
+   ],
+   [
+    305,
+    20,
+    ": void"
+   ],
+   [
+    308,
+    26,
+    ": () => void"
+   ],
+   [
+    308,
+    31,
+    ": void"
+   ],
+   [
+    310,
+    23,
+    ": UseBoundStore<WithPersist<StoreApi<{ count: number; actions: { unstorableMethod: () => void } }>, unknown>>"
+   ],
+   [
+    311,
+    6,
+    "initializer:"
+   ],
+   [
+    311,
+    14,
+    "initializer:"
+   ],
+   [
+    311,
+    16,
+    ": { count: number; actions: { unstorableMethod: () => void } }"
+   ],
+   [
+    311,
+    67,
+    "options:"
+   ],
+   [
+    313,
+    35,
+    "getStorage:"
+   ],
+   [
+    313,
+    37,
+    ": { getItem: () => string; setItem: () => void; removeItem: () => void }"
+   ],
+   [
+    314,
+    31,
+    ": unknown"
+   ],
+   [
+    314,
+    45,
+    ": { count: number; actions: { unstorableMethod: () => void } }"
+   ],
+   [
+    314,
+    46,
+    ": any"
+   ],
+   [
+    326,
+    11,
+    "actual:"
+   ],
+   [
+    326,
+    45,
+    "expected:"
+   ],
+   [
+    334,
+    5,
+    "name:"
+   ],
+   [
+    334,
+    73,
+    "fn:"
+   ],
+   [
+    334,
+    75,
+    ": void"
+   ],
+   [
+    336,
+    17,
+    ": string"
+   ],
+   [
+    337,
+    23,
+    "value:"
+   ],
+   [
+    342,
+    17,
+    ": void"
+   ],
+   [
+    343,
+    20,
+    ": void"
+   ],
+   [
+    346,
+    23,
+    ": UseBoundStore<WithPersist<StoreApi<{ count: number }>, unknown>>"
+   ],
+   [
+    347,
+    6,
+    "initializer:"
+   ],
+   [
+    347,
+    14,
+    "initializer:"
+   ],
+   [
+    347,
+    16,
+    ": { count: number }"
+   ],
+   [
+    347,
+    36,
+    "options:"
+   ],
+   [
+    349,
+    35,
+    "getStorage:"
+   ],
+   [
+    349,
+    37,
+    ": { getItem: () => string; setItem: () => void; removeItem: () => void }"
+   ],
+   [
+    353,
+    11,
+    "actual:"
+   ],
+   [
+    353,
+    45,
+    "expected:"
+   ],
+   [
+    358,
+    5,
+    "name:"
+   ],
+   [
+    358,
+    39,
+    "fn:"
+   ],
+   [
+    358,
+    41,
+    ": void"
+   ],
+   [
+    359,
+    20,
+    ": Mock<Procedure>"
+   ],
+   [
+    362,
+    17,
+    ": string"
+   ],
+   [
+    364,
+    20,
+    ": void"
+   ],
+   [
+    367,
+    23,
+    ": UseBoundStore<WithPersist<StoreApi<{ object: { first: string; second: string }; array: { value: string }[] }>, unknown>>"
+   ],
+   [
+    368,
+    6,
+    "initializer:"
+   ],
+   [
+    369,
+    8,
+    "initializer:"
+   ],
+   [
+    369,
+    10,
+    ": { object: { first: string; second: string }; array: { value: string }[] }"
+   ],
+   [
+    386,
+    8,
+    "options:"
+   ],
+   [
+    388,
+    37,
+    "getStorage:"
+   ],
+   [
+    388,
+    39,
+    ": { getItem: () => string; setItem: Mock<Procedure>; removeItem: () => void }"
+   ],
+   [
+    389,
+    28,
+    ": { object: { first: string; second: string }; array: { value: string }[] }"
+   ],
+   [
+    389,
+    29,
+    ": { object: { first: string }; array: { value: string }[] }"
+   ],
+   [
+    394,
+    40,
+    "predicate:"
+   ],
+   [
+    394,
+    42,
+    ": { value: string }"
+   ],
+   [
+    394,
+    43,
+    ": boolean"
+   ],
+   [
+    401,
+    27,
+    "partial:"
+   ],
+   [
+    402,
+    11,
+    "actual:"
+   ],
+   [
+    404,
+    21,
+    "value:"
+   ],
+   [
+    423,
+    5,
+    "name:"
+   ],
+   [
+    423,
+    47,
+    "fn:"
+   ],
+   [
+    423,
+    49,
+    ": void"
+   ],
+   [
+    425,
+    17,
+    ": null"
+   ],
+   [
+    427,
+    20,
+    ": void"
+   ],
+   [
+    430,
+    23,
+    ": UseBoundStore<WithPersist<StoreApi<{ count: number }>, unknown>>"
+   ],
+   [
+    431,
+    6,
+    "initializer:"
+   ],
+   [
+    431,
+    14,
+    "initializer:"
+   ],
+   [
+    431,
+    16,
+    ": { count: number }"
+   ],
+   [
+    431,
+    36,
+    "options:"
+   ],
+   [
+    433,
+    35,
+    "getStorage:"
+   ],
+   [
+    433,
+    37,
+    ": { getItem: () => null; setItem: Mock<Procedure>; removeItem: () => void }"
+   ],
+   [
+    436,
+    11,
+    "actual:"
+   ],
+   [
+    437,
+    11,
+    "actual:"
+   ],
+   [
+    437,
+    57,
+    "expected:"
+   ],
+   [
+    440,
+    5,
+    "name:"
+   ],
+   [
+    440,
+    47,
+    "fn:"
+   ],
+   [
+    440,
+    49,
+    ": void"
+   ],
+   [
+    441,
+    20,
+    ": Mock<Procedure>"
+   ],
+   [
+    444,
+    17,
+    ": null"
+   ],
+   [
+    446,
+    20,
+    ": void"
+   ],
+   [
+    449,
+    23,
+    ": UseBoundStore<WithPersist<StoreApi<{ count: number }>, unknown>>"
+   ],
+   [
+    450,
+    6,
+    "initializer:"
+   ],
+   [
+    450,
+    14,
+    "initializer:"
+   ],
+   [
+    450,
+    16,
+    ": { count: number }"
+   ],
+   [
+    450,
+    36,
+    "options:"
+   ],
+   [
+    452,
+    35,
+    "getStorage:"
+   ],
+   [
+    452,
+    37,
+    ": { getItem: () => null; setItem: Mock<Procedure>; removeItem: () => void }"
+   ],
+   [
+    453,
+    22,
+    ": { count: number }"
+   ],
+   [
+    453,
+    23,
+    ": Partial<{ count: number }>"
+   ],
+   [
+    457,
+    27,
+    "partial:"
+   ],
+   [
+    458,
+    11,
+    "actual:"
+   ],
+   [
+    463,
+    37,
+    "options:"
+   ],
+   [
+    465,
+    24,
+    ": { count: number }"
+   ],
+   [
+    465,
+    25,
+    ": { [k: string]: number }"
+   ],
+   [
+    467,
+    10,
+    "entries:"
+   ],
+   [
+    467,
+    25,
+    "o:"
+   ],
+   [
+    467,
+    39,
+    "predicate:"
+   ],
+   [
+    467,
+    45,
+    ": [string, number]"
+   ],
+   [
+    467,
+    46,
+    ": boolean"
+   ],
+   [
+    470,
+    27,
+    "partial:"
+   ],
+   [
+    471,
+    11,
+    "actual:"
+   ],
+   [
+    477,
+    5,
+    "name:"
+   ],
+   [
+    477,
+    46,
+    "fn:"
+   ],
+   [
+    477,
+    48,
+    ": void"
+   ],
+   [
+    478,
+    23,
+    ": Mock<Procedure>"
+   ],
+   [
+    481,
+    17,
+    ": null"
+   ],
+   [
+    482,
+    17,
+    ": void"
+   ],
+   [
+    486,
+    23,
+    ": UseBoundStore<WithPersist<StoreApi<{ count: number }>, unknown>>"
+   ],
+   [
+    487,
+    6,
+    "initializer:"
+   ],
+   [
+    487,
+    14,
+    "initializer:"
+   ],
+   [
+    487,
+    16,
+    ": { count: number }"
+   ],
+   [
+    487,
+    36,
+    "options:"
+   ],
+   [
+    489,
+    35,
+    "getStorage:"
+   ],
+   [
+    489,
+    37,
+    ": { getItem: () => null; setItem: () => void; removeItem: Mock<Procedure> }"
+   ],
+   [
+    494,
+    11,
+    "actual:"
+   ],
+   [
+    497,
+    5,
+    "name:"
+   ],
+   [
+    497,
+    47,
+    "fn:"
+   ],
+   [
+    497,
+    49,
+    ": void"
+   ],
+   [
+    501,
+    17,
+    ": string"
+   ],
+   [
+    502,
+    17,
+    ": void"
+   ],
+   [
+    503,
+    20,
+    ": void"
+   ],
+   [
+    506,
+    23,
+    ": UseBoundStore<WithPersist<StoreApi<{ count: number }>, unknown>>"
+   ],
+   [
+    507,
+    6,
+    "initializer:"
+   ],
+   [
+    507,
+    14,
+    "initializer:"
+   ],
+   [
+    507,
+    16,
+    ": { count: number }"
+   ],
+   [
+    507,
+    36,
+    "options:"
+   ],
+   [
+    509,
+    35,
+    "getStorage:"
+   ],
+   [
+    509,
+    37,
+    ": { getItem: () => string; setItem: () => void; removeItem: () => void }"
+   ],
+   [
+    513,
+    24,
+    ": string"
+   ],
+   [
+    515,
+    11,
+    "actual:"
+   ],
+   [
+    515,
+    45,
+    "expected:"
+   ],
+   [
+    520,
+    5,
+    "name:"
+   ],
+   [
+    520,
+    65,
+    "fn:"
+   ],
+   [
+    520,
+    73,
+    ": Promise<void>"
+   ],
+   [
+    522,
+    17,
+    ": null"
+   ],
+   [
+    523,
+    17,
+    ": void"
+   ],
+   [
+    524,
+    20,
+    ": void"
+   ],
+   [
+    527,
+    23,
+    ": UseBoundStore<WithPersist<StoreApi<{ count: number }>, unknown>>"
+   ],
+   [
+    528,
+    6,
+    "initializer:"
+   ],
+   [
+    528,
+    14,
+    "initializer:"
+   ],
+   [
+    528,
+    16,
+    ": { count: number }"
+   ],
+   [
+    528,
+    36,
+    "options:"
+   ],
+   [
+    530,
+    35,
+    "getStorage:"
+   ],
+   [
+    530,
+    37,
+    ": { getItem: () => null; setItem: () => void; removeItem: () => void }"
+   ],
+   [
+    534,
+    11,
+    "actual:"
+   ],
+   [
+    534,
+    53,
+    "expected:"
+   ],
+   [
+    537,
+    11,
+    "actual:"
+   ],
+   [
+    537,
+    53,
+    "expected:"
+   ],
+   [
+    540,
+    5,
+    "name:"
+   ],
+   [
+    540,
+    49,
+    "fn:"
+   ],
+   [
+    540,
+    57,
+    ": Promise<void>"
+   ],
+   [
+    544,
+    23,
+    ": Mock<Procedure>"
+   ],
+   [
+    545,
+    23,
+    ": Mock<Procedure>"
+   ],
+   [
+    546,
+    31,
+    ": Mock<Procedure>"
+   ],
+   [
+    547,
+    31,
+    ": Mock<Procedure>"
+   ],
+   [
+    550,
+    17,
+    ": string"
+   ],
+   [
+    551,
+    17,
+    ": void"
+   ],
+   [
+    552,
+    20,
+    ": void"
+   ],
+   [
+    555,
+    23,
+    ": UseBoundStore<WithPersist<StoreApi<{ count: number }>, unknown>>"
+   ],
+   [
+    556,
+    6,
+    "initializer:"
+   ],
+   [
+    556,
+    14,
+    "initializer:"
+   ],
+   [
+    556,
+    16,
+    ": { count: number }"
+   ],
+   [
+    556,
+    36,
+    "options:"
+   ],
+   [
+    558,
+    35,
+    "getStorage:"
+   ],
+   [
+    558,
+    37,
+    ": { getItem: () => string; setItem: () => void; removeItem: () => void }"
+   ],
+   [
+    562,
+    23,
+    ": () => void"
+   ],
+   [
+    562,
+    58,
+    "fn:"
+   ],
+   [
+    563,
+    36,
+    "fn:"
+   ],
+   [
+    565,
+    31,
+    ": () => void"
+   ],
+   [
+    566,
+    6,
+    "fn:"
+   ],
+   [
+    568,
+    44,
+    "fn:"
+   ],
+   [
+    570,
+    24,
+    ": string"
+   ],
+   [
+    572,
+    11,
+    "actual:"
+   ],
+   [
+    573,
+    11,
+    "actual:"
+   ],
+   [
+    574,
+    11,
+    "actual:"
+   ],
+   [
+    575,
+    11,
+    "actual:"
+   ],
+   [
+    580,
+    24,
+    ": string"
+   ],
+   [
+    582,
+    11,
+    "actual:"
+   ],
+   [
+    582,
+    46,
+    "times:"
+   ],
+   [
+    583,
+    11,
+    "actual:"
+   ],
+   [
+    584,
+    11,
+    "actual:"
+   ],
+   [
+    584,
+    54,
+    "times:"
+   ],
+   [
+    585,
+    11,
+    "actual:"
+   ],
+   [
+    588,
+    5,
+    "name:"
+   ],
+   [
+    588,
+    35,
+    "fn:"
+   ],
+   [
+    588,
+    43,
+    ": Promise<void>"
+   ],
+   [
+    590,
+    29,
+    ": { state: { count: number; name: string }; version: number }"
+   ],
+   [
+    594,
+    17,
+    ": void"
+   ],
+   [
+    595,
+    20,
+    ": void"
+   ],
+   [
+    598,
+    31,
+    ": Mock<Procedure>"
+   ],
+   [
+    599,
+    23,
+    ": UseBoundStore<WithPersist<StoreApi<{ count: number; name: string }>, { count: number; name: string }>>"
+   ],
+   [
+    600,
+    6,
+    "initializer:"
+   ],
+   [
+    601,
+    8,
+    "initializer:"
+   ],
+   [
+    601,
+    10,
+    ": { count: number; name: string }"
+   ],
+   [
+    605,
+    8,
+    "options:"
+   ],
+   [
+    608,
+    32,
+    ": Mock<Procedure>"
+   ],
+   [
+    614,
+    11,
+    "actual:"
+   ],
+   [
+    614,
+    45,
+    "expected:"
+   ],
+   [
+    620,
+    11,
+    "actual:"
+   ],
+   [
+    620,
+    53,
+    "expected:"
+   ],
+   [
+    624,
+    11,
+    "actual:"
+   ],
+   [
+    624,
+    45,
+    "expected:"
+   ],
+   [
+    628,
+    11,
+    "actual:"
+   ],
+   [
+    634,
+    5,
+    "name:"
+   ],
+   [
+    634,
+    56,
+    "fn:"
+   ],
+   [
+    634,
+    58,
+    ": void"
+   ],
+   [
+    636,
+    17,
+    ": string"
+   ],
+   [
+    636,
+    36,
+    "value:"
+   ],
+   [
+    637,
+    17,
+    ": void"
+   ],
+   [
+    638,
+    20,
+    ": void"
+   ],
+   [
+    641,
+    23,
+    ": UseBoundStore<WithPersist<StoreApi<{ count: number; inc: () => void }>, unknown>>"
+   ],
+   [
+    642,
+    6,
+    "initializer:"
+   ],
+   [
+    643,
+    8,
+    "initializer:"
+   ],
+   [
+    643,
+    12,
+    ": { (partial: { count: number; inc: () => void } | Partial<{ count: number; inc: () => void }> | ((state: { count: number; inc: () => void }) => { count: number; inc: () => void } | Partial<{ count: number; inc: () => void }>), replace?: false | undefined): unknown; (state: { ... } | ((state: { ... }) => { ... }), replace: true): unknown }"
+   ],
+   [
+    643,
+    13,
+    ": { count: number; inc: () => unknown }"
+   ],
+   [
+    645,
+    17,
+    ": unknown"
+   ],
+   [
+    645,
+    25,
+    "partial:"
+   ],
+   [
+    645,
+    27,
+    ": { count: number; inc: () => void }"
+   ],
+   [
+    645,
+    28,
+    ": { count: number }"
+   ],
+   [
+    647,
+    8,
+    "options:"
+   ],
+   [
+    649,
+    37,
+    "getStorage:"
+   ],
+   [
+    649,
+    39,
+    ": { getItem: () => string; setItem: () => void; removeItem: () => void }"
+   ],
+   [
+    650,
+    32,
+    ": (s: { count: number; inc: () => void } | undefined) => void | undefined"
+   ],
+   [
+    650,
+    38,
+    ": { count: number; inc: () => void } | undefined"
+   ],
+   [
+    650,
+    39,
+    ": void | undefined"
+   ],
+   [
+    655,
+    11,
+    "actual:"
+   ],
+   [
+    655,
+    51,
+    "expected:"
+   ],
+   [
+    658,
+    5,
+    "name:"
+   ],
+   [
+    658,
+    57,
+    "fn:"
+   ],
+   [
+    658,
+    59,
+    ": void"
+   ],
+   [
+    660,
+    17,
+    ": string"
+   ],
+   [
+    661,
+    23,
+    "value:"
+   ],
+   [
+    664,
+    17,
+    ": void"
+   ],
+   [
+    665,
+    20,
+    ": void"
+   ],
+   [
+    669,
+    31,
+    ": Mock<Procedure>"
+   ],
+   [
+    670,
+    23,
+    ": UseBoundStore<WithPersist<StoreApi<{ map: Map<any, any> }>, unknown>>"
+   ],
+   [
+    671,
+    6,
+    "initializer:"
+   ],
+   [
+    672,
+    8,
+    "initializer:"
+   ],
+   [
+    672,
+    10,
+    ": { map: Map<any, any> }"
+   ],
+   [
+    675,
+    8,
+    "options:"
+   ],
+   [
+    677,
+    37,
+    "getStorage:"
+   ],
+   [
+    677,
+    39,
+    ": { getItem: () => string; setItem: () => void; removeItem: () => void }"
+   ],
+   [
+    678,
+    32,
+    ": Mock<Procedure>"
+   ],
+   [
+    683,
+    20,
+    ": Map<any, any>"
+   ],
+   [
+    683,
+    31,
+    "key:"
+   ],
+   [
+    683,
+    38,
+    "value:"
+   ],
+   [
+    684,
+    11,
+    "actual:"
+   ],
+   [
+    684,
+    45,
+    "expected:"
+   ],
+   [
+    687,
+    11,
+    "actual:"
+   ],
+   [
+    690,
+    5,
+    "name:"
+   ],
+   [
+    690,
+    59,
+    "fn:"
+   ],
+   [
+    690,
+    61,
+    ": void"
+   ],
+   [
+    691,
+    58,
+    "initialValue:"
+   ],
+   [
+    694,
+    21,
+    ": () => { useBoundStore: UseBoundStore<WithPersist<StoreApi<{ map: Map<any, any> }>, unknown>>; onRehydrateStorageSpy: Mock<Procedure> }"
+   ],
+   [
+    694,
+    26,
+    ": { useBoundStore: UseBoundStore<WithPersist<StoreApi<{ map: Map<any, any> }>, unknown>>; onRehydrateStorageSpy: Mock<Procedure> }"
+   ],
+   [
+    695,
+    33,
+    ": Mock<Procedure>"
+   ],
+   [
+    696,
+    25,
+    ": UseBoundStore<WithPersist<StoreApi<{ map: Map<any, any> }>, unknown>>"
+   ],
+   [
+    697,
+    8,
+    "initializer:"
+   ],
+   [
+    697,
+    16,
+    "initializer:"
+   ],
+   [
+    697,
+    18,
+    ": { map: Map<any, any> }"
+   ],
+   [
+    697,
+    33,
+    "options:"
+   ],
+   [
+    699,
+    37,
+    "getStorage:"
+   ],
+   [
+    699,
+    39,
+    ": { getItem: () => string | null; setItem: (name: string, newState: string) => void; removeItem: (name: string) => void }"
+   ],
+   [
+    699,
+    52,
+    "options:"
+   ],
+   [
+    700,
+    32,
+    ": Mock<Procedure>"
+   ],
+   [
+    708,
+    11,
+    "actual:"
+   ],
+   [
+    708,
+    45,
+    "expected:"
+   ],
+   [
+    709,
+    11,
+    "actual:"
+   ],
+   [
+    712,
+    20,
+    ": Map<any, any>"
+   ],
+   [
+    712,
+    31,
+    "key:"
+   ],
+   [
+    712,
+    38,
+    "value:"
+   ],
+   [
+    713,
+    27,
+    "partial:"
+   ],
+   [
+    714,
+    11,
+    "actual:"
+   ],
+   [
+    714,
+    45,
+    "expected:"
+   ],
+   [
+    717,
+    11,
+    "actual:"
+   ],
+   [
+    719,
+    21,
+    "value:"
+   ],
+   [
+    731,
+    11,
+    "actual:"
+   ],
+   [
+    731,
+    46,
+    "expected:"
+   ],
+   [
+    732,
+    11,
+    "actual:"
+   ],
+   [
+    738,
+    5,
+    "name:"
+   ],
+   [
+    738,
+    66,
+    "fn:"
+   ],
+   [
+    738,
+    74,
+    ": Promise<void>"
+   ],
+   [
+    739,
+    17,
+    ": Mock<Procedure>"
+   ],
+   [
+    741,
+    29,
+    ": { state: { count: number; name: string }; version: number }"
+   ],
+   [
+    746,
+    20,
+    ": void"
+   ],
+   [
+    749,
+    23,
+    ": UseBoundStore<WithPersist<StoreApi<{}>, { count: number; name: string }>>"
+   ],
+   [
+    750,
+    6,
+    "initializer:"
+   ],
+   [
+    750,
+    14,
+    "initializer:"
+   ],
+   [
+    750,
+    16,
+    ": {}"
+   ],
+   [
+    750,
+    26,
+    "options:"
+   ],
+   [
+    756,
+    11,
+    "actual:"
+   ],
+   [
+    756,
+    53,
+    "expected:"
+   ],
+   [
+    757,
+    11,
+    "actual:"
+   ],
+   [
+    757,
+    36,
+    "times:"
+   ]
+  ],
+  "actual": [
+   [
+    7,
+    27,
+    ": (initialValue: string | null) => { storage: { getItem: () => string | null; setItem: (name: string, newState: string) => void; removeItem: (name: string) => void }; getItemSpy: Mock<Procedure>; setItemSpy: Mock<...> }"
+   ],
+   [
+    7,
+    59,
+    ": { storage: { getItem: () => string | null; setItem: (name: string, newState: string) => void; removeItem: (name: string) => void }; getItemSpy: Mock<Procedure>; setItemSpy: Mock<...> }"
+   ],
+   [
+    8,
+    11,
+    ": string | null"
+   ],
+   [
+    10,
+    15,
+    ": () => string | null"
+   ],
+   [
+    14,
+    15,
+    ": (name: string, newState: string) => void"
+   ],
+   [
+    14,
+    50,
+    ": void"
+   ],
+   [
+    15,
+    15,
+    "...args:"
+   ],
+   [
+    18,
+    18,
+    ": (name: string) => void"
+   ],
+   [
+    18,
+    35,
+    ": void"
+   ],
+   [
+    19,
+    18,
+    "...args:"
+   ],
+   [
+    23,
+    18,
+    ": Mock<Procedure>"
+   ],
+   [
+    24,
+    18,
+    ": Mock<Procedure>"
+   ],
+   [
+    25,
+    21,
+    ": Mock<Procedure>"
+   ],
+   [
+    34,
+    9,
+    "name:"
+   ],
+   [
+    34,
+    55,
+    "fn:"
+   ],
+   [
+    34,
+    57,
+    ": void"
+   ],
+   [
+    35,
+    20,
+    ": (...data: any[]) => void"
+   ],
+   [
+    36,
+    12,
+    "fn:"
+   ],
+   [
+    36,
+    14,
+    ": void"
+   ],
+   [
+    40,
+    5,
+    "name:"
+   ],
+   [
+    40,
+    28,
+    "fn:"
+   ],
+   [
+    40,
+    30,
+    ": void"
+   ],
+   [
+    42,
+    29,
+    ": string"
+   ],
+   [
+    43,
+    23,
+    "value:"
+   ],
+   [
+    47,
+    17,
+    ": void"
+   ],
+   [
+    48,
+    20,
+    ": void"
+   ],
+   [
+    51,
+    31,
+    ": Mock<Procedure>"
+   ],
+   [
+    52,
+    23,
+    ": any"
+   ],
+   [
+    54,
+    8,
+    "initializer:"
+   ],
+   [
+    54,
+    10,
+    ": { count: number; name: string }"
+   ],
+   [
+    58,
+    8,
+    "options:"
+   ],
+   [
+    60,
+    37,
+    "getStorage:"
+   ],
+   [
+    60,
+    39,
+    ": { getItem: (name: string) => string; setItem: () => void; removeItem: () => void }"
+   ],
+   [
+    61,
+    32,
+    ": Mock<Procedure>"
+   ],
+   [
+    66,
+    11,
+    "actual:"
+   ],
+   [
+    66,
+    45,
+    "expected:"
+   ],
+   [
+    70,
+    11,
+    "actual:"
+   ],
+   [
+    76,
+    5,
+    "name:"
+   ],
+   [
+    76,
+    34,
+    "fn:"
+   ],
+   [
+    76,
+    36,
+    ": void"
+   ],
+   [
+    78,
+    17,
+    ": never"
+   ],
+   [
+    79,
+    24,
+    "message:"
+   ],
+   [
+    81,
+    17,
+    ": void"
+   ],
+   [
+    82,
+    20,
+    ": void"
+   ],
+   [
+    85,
+    13,
+    ": Mock<Procedure>"
+   ],
+   [
+    87,
+    14,
+    "initializer:"
+   ],
+   [
+    87,
+    16,
+    ": { count: number }"
+   ],
+   [
+    87,
+    36,
+    "options:"
+   ],
+   [
+    89,
+    35,
+    "getStorage:"
+   ],
+   [
+    89,
+    37,
+    ": { getItem: () => never; setItem: () => void; removeItem: () => void }"
+   ],
+   [
+    90,
+    30,
+    ": Mock<Procedure>"
+   ],
+   [
+    94,
+    11,
+    "actual:"
+   ],
+   [
+    94,
+    52,
+    "message:"
+   ],
+   [
+    97,
+    5,
+    "name:"
+   ],
+   [
+    97,
+    26,
+    "fn:"
+   ],
+   [
+    97,
+    28,
+    ": void"
+   ],
+   [
+    98,
+    58,
+    "initialValue:"
+   ],
+   [
+    100,
+    21,
+    ": () => { useBoundStore: any; onRehydrateStorageSpy: Mock<Procedure> }"
+   ],
+   [
+    100,
+    26,
+    ": { useBoundStore: any; onRehydrateStorageSpy: Mock<Procedure> }"
+   ],
+   [
+    101,
+    33,
+    ": Mock<Procedure>"
+   ],
+   [
+    102,
+    25,
+    ": any"
+   ],
+   [
+    103,
+    16,
+    "initializer:"
+   ],
+   [
+    103,
+    18,
+    ": { count: number }"
+   ],
+   [
+    103,
+    38,
+    "options:"
+   ],
+   [
+    105,
+    37,
+    "getStorage:"
+   ],
+   [
+    105,
+    39,
+    ": { getItem: () => string | null; setItem: (name: string, newState: string) => void; removeItem: (name: string) => void }"
+   ],
+   [
+    106,
+    32,
+    ": Mock<Procedure>"
+   ],
+   [
+    114,
+    11,
+    "actual:"
+   ],
+   [
+    114,
+    45,
+    "expected:"
+   ],
+   [
+    115,
+    11,
+    "actual:"
+   ],
+   [
+    119,
+    11,
+    "actual:"
+   ],
+   [
+    119,
+    45,
+    "expected:"
+   ],
+   [
+    120,
+    11,
+    "actual:"
+   ],
+   [
+    122,
+    21,
+    "value:"
+   ],
+   [
+    131,
+    11,
+    "actual:"
+   ],
+   [
+    131,
+    46,
+    "expected:"
+   ],
+   [
+    132,
+    11,
+    "actual:"
+   ],
+   [
+    135,
+    5,
+    "name:"
+   ],
+   [
+    135,
+    46,
+    "fn:"
+   ],
+   [
+    135,
+    48,
+    ": void"
+   ],
+   [
+    136,
+    20,
+    ": Mock<Procedure>"
+   ],
+   [
+    137,
+    31,
+    ": Mock<Procedure>"
+   ],
+   [
+    138,
+    20,
+    ": Mock<() => { count: number }>"
+   ],
+   [
+    138,
+    29,
+    "originalImplementation:"
+   ],
+   [
+    138,
+    31,
+    ": { count: number }"
+   ],
+   [
+    141,
+    17,
+    ": string"
+   ],
+   [
+    142,
+    23,
+    "value:"
+   ],
+   [
+    147,
+    20,
+    ": void"
+   ],
+   [
+    150,
+    23,
+    ": any"
+   ],
+   [
+    151,
+    14,
+    "initializer:"
+   ],
+   [
+    151,
+    16,
+    ": { count: number }"
+   ],
+   [
+    151,
+    36,
+    "options:"
+   ],
+   [
+    154,
+    35,
+    "getStorage:"
+   ],
+   [
+    154,
+    37,
+    ": { getItem: () => string; setItem: Mock<Procedure>; removeItem: () => void }"
+   ],
+   [
+    155,
+    30,
+    ": Mock<Procedure>"
+   ],
+   [
+    160,
+    11,
+    "actual:"
+   ],
+   [
+    160,
+    45,
+    "expected:"
+   ],
+   [
+    161,
+    11,
+    "actual:"
+   ],
+   [
+    162,
+    11,
+    "actual:"
+   ],
+   [
+    164,
+    21,
+    "value:"
+   ],
+   [
+    169,
+    11,
+    "actual:"
+   ],
+   [
+    172,
+    5,
+    "name:"
+   ],
+   [
+    172,
+    56,
+    "fn:"
+   ],
+   [
+    172,
+    58,
+    ": void"
+   ],
+   [
+    174,
+    31,
+    ": Mock<Procedure>"
+   ],
+   [
+    176,
+    17,
+    ": string"
+   ],
+   [
+    177,
+    23,
+    "value:"
+   ],
+   [
+    181,
+    42,
+    ": void"
+   ],
+   [
+    182,
+    20,
+    ": void"
+   ],
+   [
+    185,
+    23,
+    ": any"
+   ],
+   [
+    186,
+    14,
+    "initializer:"
+   ],
+   [
+    186,
+    16,
+    ": { count: number }"
+   ],
+   [
+    186,
+    36,
+    "options:"
+   ],
+   [
+    189,
+    35,
+    "getStorage:"
+   ],
+   [
+    189,
+    37,
+    ": { getItem: () => string; setItem: (_: string, _value: string) => void; removeItem: () => void }"
+   ],
+   [
+    190,
+    30,
+    ": Mock<Procedure>"
+   ],
+   [
+    194,
+    11,
+    "actual:"
+   ],
+   [
+    194,
+    45,
+    "expected:"
+   ],
+   [
+    195,
+    11,
+    "actual:"
+   ],
+   [
+    196,
+    11,
+    "actual:"
+   ],
+   [
+    199,
+    5,
+    "name:"
+   ],
+   [
+    199,
+    32,
+    "fn:"
+   ],
+   [
+    199,
+    34,
+    ": void"
+   ],
+   [
+    200,
+    31,
+    ": Mock<Procedure>"
+   ],
+   [
+    203,
+    17,
+    ": string"
+   ],
+   [
+    204,
+    23,
+    "value:"
+   ],
+   [
+    208,
+    17,
+    ": void"
+   ],
+   [
+    209,
+    20,
+    ": void"
+   ],
+   [
+    212,
+    23,
+    ": any"
+   ],
+   [
+    213,
+    14,
+    "initializer:"
+   ],
+   [
+    213,
+    16,
+    ": { count: number }"
+   ],
+   [
+    213,
+    36,
+    "options:"
+   ],
+   [
+    216,
+    35,
+    "getStorage:"
+   ],
+   [
+    216,
+    37,
+    ": { getItem: () => string; setItem: () => void; removeItem: () => void }"
+   ],
+   [
+    217,
+    19,
+    ": never"
+   ],
+   [
+    218,
+    26,
+    "message:"
+   ],
+   [
+    220,
+    30,
+    ": Mock<Procedure>"
+   ],
+   [
+    224,
+    11,
+    "actual:"
+   ],
+   [
+    224,
+    45,
+    "expected:"
+   ],
+   [
+    225,
+    11,
+    "actual:"
+   ],
+   [
+    227,
+    16,
+    "message:"
+   ],
+   [
+    231,
+    5,
+    "name:"
+   ],
+   [
+    231,
+    85,
+    "fn:"
+   ],
+   [
+    231,
+    87,
+    ": void"
+   ],
+   [
+    232,
+    31,
+    ": Mock<Procedure>"
+   ],
+   [
+    235,
+    17,
+    ": string"
+   ],
+   [
+    235,
+    36,
+    "value:"
+   ],
+   [
+    236,
+    17,
+    ": void"
+   ],
+   [
+    237,
+    20,
+    ": void"
+   ],
+   [
+    240,
+    23,
+    ": any"
+   ],
+   [
+    241,
+    14,
+    "initializer:"
+   ],
+   [
+    241,
+    16,
+    ": { count: number }"
+   ],
+   [
+    241,
+    36,
+    "options:"
+   ],
+   [
+    243,
+    35,
+    "getStorage:"
+   ],
+   [
+    243,
+    37,
+    ": { getItem: () => string; setItem: () => void; removeItem: () => void }"
+   ],
+   [
+    261,
+    11,
+    "actual:"
+   ],
+   [
+    262,
+    11,
+    "actual:"
+   ],
+   [
+    262,
+    45,
+    "expected:"
+   ],
+   [
+    265,
+    5,
+    "name:"
+   ],
+   [
+    265,
+    53,
+    "fn:"
+   ],
+   [
+    265,
+    55,
+    ": void"
+   ],
+   [
+    266,
+    31,
+    ": Mock<Procedure>"
+   ],
+   [
+    269,
+    17,
+    ": string"
+   ],
+   [
+    270,
+    23,
+    "value:"
+   ],
+   [
+    274,
+    17,
+    ": void"
+   ],
+   [
+    275,
+    20,
+    ": void"
+   ],
+   [
+    278,
+    26,
+    ": () => void"
+   ],
+   [
+    278,
+    31,
+    ": void"
+   ],
+   [
+    280,
+    23,
+    ": any"
+   ],
+   [
+    281,
+    14,
+    "initializer:"
+   ],
+   [
+    281,
+    16,
+    ": { count: number; unstorableMethod: () => void }"
+   ],
+   [
+    281,
+    54,
+    "options:"
+   ],
+   [
+    283,
+    35,
+    "getStorage:"
+   ],
+   [
+    283,
+    37,
+    ": { getItem: () => string; setItem: () => void; removeItem: () => void }"
+   ],
+   [
+    284,
+    30,
+    ": Mock<Procedure>"
+   ],
+   [
+    290,
+    11,
+    "actual:"
+   ],
+   [
+    290,
+    45,
+    "expected:"
+   ],
+   [
+    291,
+    11,
+    "actual:"
+   ],
+   [
+    294,
+    5,
+    "name:"
+   ],
+   [
+    294,
+    42,
+    "fn:"
+   ],
+   [
+    294,
+    44,
+    ": void"
+   ],
+   [
+    296,
+    17,
+    ": string"
+   ],
+   [
+    297,
+    23,
+    "value:"
+   ],
+   [
+    304,
+    17,
+    ": void"
+   ],
+   [
+    305,
+    20,
+    ": void"
+   ],
+   [
+    308,
+    26,
+    ": () => void"
+   ],
+   [
+    308,
+    31,
+    ": void"
+   ],
+   [
+    310,
+    23,
+    ": any"
+   ],
+   [
+    311,
+    14,
+    "initializer:"
+   ],
+   [
+    311,
+    16,
+    ": { count: number; actions: { unstorableMethod: () => void } }"
+   ],
+   [
+    311,
+    67,
+    "options:"
+   ],
+   [
+    313,
+    35,
+    "getStorage:"
+   ],
+   [
+    313,
+    37,
+    ": { getItem: () => string; setItem: () => void; removeItem: () => void }"
+   ],
+   [
+    314,
+    31,
+    ": unknown"
+   ],
+   [
+    314,
+    45,
+    ": { count: number; actions: { unstorableMethod: () => void } }"
+   ],
+   [
+    314,
+    46,
+    ": any"
+   ],
+   [
+    326,
+    11,
+    "actual:"
+   ],
+   [
+    326,
+    45,
+    "expected:"
+   ],
+   [
+    334,
+    5,
+    "name:"
+   ],
+   [
+    334,
+    73,
+    "fn:"
+   ],
+   [
+    334,
+    75,
+    ": void"
+   ],
+   [
+    336,
+    17,
+    ": string"
+   ],
+   [
+    337,
+    23,
+    "value:"
+   ],
+   [
+    342,
+    17,
+    ": void"
+   ],
+   [
+    343,
+    20,
+    ": void"
+   ],
+   [
+    346,
+    23,
+    ": any"
+   ],
+   [
+    347,
+    14,
+    "initializer:"
+   ],
+   [
+    347,
+    16,
+    ": { count: number }"
+   ],
+   [
+    347,
+    36,
+    "options:"
+   ],
+   [
+    349,
+    35,
+    "getStorage:"
+   ],
+   [
+    349,
+    37,
+    ": { getItem: () => string; setItem: () => void; removeItem: () => void }"
+   ],
+   [
+    353,
+    11,
+    "actual:"
+   ],
+   [
+    353,
+    45,
+    "expected:"
+   ],
+   [
+    358,
+    5,
+    "name:"
+   ],
+   [
+    358,
+    39,
+    "fn:"
+   ],
+   [
+    358,
+    41,
+    ": void"
+   ],
+   [
+    359,
+    20,
+    ": Mock<Procedure>"
+   ],
+   [
+    362,
+    17,
+    ": string"
+   ],
+   [
+    364,
+    20,
+    ": void"
+   ],
+   [
+    367,
+    23,
+    ": any"
+   ],
+   [
+    369,
+    8,
+    "initializer:"
+   ],
+   [
+    369,
+    10,
+    ": { object: { first: string; second: string }; array: { value: string }[] }"
+   ],
+   [
+    386,
+    8,
+    "options:"
+   ],
+   [
+    388,
+    37,
+    "getStorage:"
+   ],
+   [
+    388,
+    39,
+    ": { getItem: () => string; setItem: Mock<Procedure>; removeItem: () => void }"
+   ],
+   [
+    389,
+    28,
+    ": { object: { first: string; second: string }; array: { value: string }[] }"
+   ],
+   [
+    389,
+    29,
+    ": { object: { first: string }; array: { value: string }[] }"
+   ],
+   [
+    394,
+    40,
+    "predicate:"
+   ],
+   [
+    394,
+    42,
+    ": { value: string }"
+   ],
+   [
+    394,
+    43,
+    ": boolean"
+   ],
+   [
+    402,
+    11,
+    "actual:"
+   ],
+   [
+    404,
+    21,
+    "value:"
+   ],
+   [
+    423,
+    5,
+    "name:"
+   ],
+   [
+    423,
+    47,
+    "fn:"
+   ],
+   [
+    423,
+    49,
+    ": void"
+   ],
+   [
+    425,
+    17,
+    ": null"
+   ],
+   [
+    427,
+    20,
+    ": void"
+   ],
+   [
+    430,
+    23,
+    ": any"
+   ],
+   [
+    431,
+    14,
+    "initializer:"
+   ],
+   [
+    431,
+    16,
+    ": { count: number }"
+   ],
+   [
+    431,
+    36,
+    "options:"
+   ],
+   [
+    433,
+    35,
+    "getStorage:"
+   ],
+   [
+    433,
+    37,
+    ": { getItem: () => null; setItem: Mock<Procedure>; removeItem: () => void }"
+   ],
+   [
+    436,
+    11,
+    "actual:"
+   ],
+   [
+    437,
+    11,
+    "actual:"
+   ],
+   [
+    437,
+    57,
+    "expected:"
+   ],
+   [
+    440,
+    5,
+    "name:"
+   ],
+   [
+    440,
+    47,
+    "fn:"
+   ],
+   [
+    440,
+    49,
+    ": void"
+   ],
+   [
+    441,
+    20,
+    ": Mock<Procedure>"
+   ],
+   [
+    444,
+    17,
+    ": null"
+   ],
+   [
+    446,
+    20,
+    ": void"
+   ],
+   [
+    449,
+    23,
+    ": any"
+   ],
+   [
+    450,
+    14,
+    "initializer:"
+   ],
+   [
+    450,
+    16,
+    ": { count: number }"
+   ],
+   [
+    450,
+    36,
+    "options:"
+   ],
+   [
+    452,
+    35,
+    "getStorage:"
+   ],
+   [
+    452,
+    37,
+    ": { getItem: () => null; setItem: Mock<Procedure>; removeItem: () => void }"
+   ],
+   [
+    453,
+    22,
+    ": { count: number }"
+   ],
+   [
+    453,
+    23,
+    ": Partial<{ count: number }>"
+   ],
+   [
+    458,
+    11,
+    "actual:"
+   ],
+   [
+    465,
+    24,
+    ": any"
+   ],
+   [
+    465,
+    25,
+    ": { [k: string]: unknown }"
+   ],
+   [
+    467,
+    10,
+    "entries:"
+   ],
+   [
+    467,
+    25,
+    "o:"
+   ],
+   [
+    467,
+    39,
+    "predicate:"
+   ],
+   [
+    467,
+    45,
+    ": [string, unknown]"
+   ],
+   [
+    467,
+    46,
+    ": boolean"
+   ],
+   [
+    471,
+    11,
+    "actual:"
+   ],
+   [
+    477,
+    5,
+    "name:"
+   ],
+   [
+    477,
+    46,
+    "fn:"
+   ],
+   [
+    477,
+    48,
+    ": void"
+   ],
+   [
+    478,
+    23,
+    ": Mock<Procedure>"
+   ],
+   [
+    481,
+    17,
+    ": null"
+   ],
+   [
+    482,
+    17,
+    ": void"
+   ],
+   [
+    486,
+    23,
+    ": any"
+   ],
+   [
+    487,
+    14,
+    "initializer:"
+   ],
+   [
+    487,
+    16,
+    ": { count: number }"
+   ],
+   [
+    487,
+    36,
+    "options:"
+   ],
+   [
+    489,
+    35,
+    "getStorage:"
+   ],
+   [
+    489,
+    37,
+    ": { getItem: () => null; setItem: () => void; removeItem: Mock<Procedure> }"
+   ],
+   [
+    494,
+    11,
+    "actual:"
+   ],
+   [
+    497,
+    5,
+    "name:"
+   ],
+   [
+    497,
+    47,
+    "fn:"
+   ],
+   [
+    497,
+    49,
+    ": void"
+   ],
+   [
+    501,
+    17,
+    ": string"
+   ],
+   [
+    502,
+    17,
+    ": void"
+   ],
+   [
+    503,
+    20,
+    ": void"
+   ],
+   [
+    506,
+    23,
+    ": any"
+   ],
+   [
+    507,
+    14,
+    "initializer:"
+   ],
+   [
+    507,
+    16,
+    ": { count: number }"
+   ],
+   [
+    507,
+    36,
+    "options:"
+   ],
+   [
+    509,
+    35,
+    "getStorage:"
+   ],
+   [
+    509,
+    37,
+    ": { getItem: () => string; setItem: () => void; removeItem: () => void }"
+   ],
+   [
+    513,
+    24,
+    ": string"
+   ],
+   [
+    515,
+    11,
+    "actual:"
+   ],
+   [
+    515,
+    45,
+    "expected:"
+   ],
+   [
+    520,
+    5,
+    "name:"
+   ],
+   [
+    520,
+    65,
+    "fn:"
+   ],
+   [
+    520,
+    73,
+    ": Promise<void>"
+   ],
+   [
+    522,
+    17,
+    ": null"
+   ],
+   [
+    523,
+    17,
+    ": void"
+   ],
+   [
+    524,
+    20,
+    ": void"
+   ],
+   [
+    527,
+    23,
+    ": any"
+   ],
+   [
+    528,
+    14,
+    "initializer:"
+   ],
+   [
+    528,
+    16,
+    ": { count: number }"
+   ],
+   [
+    528,
+    36,
+    "options:"
+   ],
+   [
+    530,
+    35,
+    "getStorage:"
+   ],
+   [
+    530,
+    37,
+    ": { getItem: () => null; setItem: () => void; removeItem: () => void }"
+   ],
+   [
+    534,
+    11,
+    "actual:"
+   ],
+   [
+    534,
+    53,
+    "expected:"
+   ],
+   [
+    537,
+    11,
+    "actual:"
+   ],
+   [
+    537,
+    53,
+    "expected:"
+   ],
+   [
+    540,
+    5,
+    "name:"
+   ],
+   [
+    540,
+    49,
+    "fn:"
+   ],
+   [
+    540,
+    57,
+    ": Promise<void>"
+   ],
+   [
+    544,
+    23,
+    ": Mock<Procedure>"
+   ],
+   [
+    545,
+    23,
+    ": Mock<Procedure>"
+   ],
+   [
+    546,
+    31,
+    ": Mock<Procedure>"
+   ],
+   [
+    547,
+    31,
+    ": Mock<Procedure>"
+   ],
+   [
+    550,
+    17,
+    ": string"
+   ],
+   [
+    551,
+    17,
+    ": void"
+   ],
+   [
+    552,
+    20,
+    ": void"
+   ],
+   [
+    555,
+    23,
+    ": any"
+   ],
+   [
+    556,
+    14,
+    "initializer:"
+   ],
+   [
+    556,
+    16,
+    ": { count: number }"
+   ],
+   [
+    556,
+    36,
+    "options:"
+   ],
+   [
+    558,
+    35,
+    "getStorage:"
+   ],
+   [
+    558,
+    37,
+    ": { getItem: () => string; setItem: () => void; removeItem: () => void }"
+   ],
+   [
+    562,
+    23,
+    ": any"
+   ],
+   [
+    565,
+    31,
+    ": any"
+   ],
+   [
+    570,
+    24,
+    ": string"
+   ],
+   [
+    572,
+    11,
+    "actual:"
+   ],
+   [
+    573,
+    11,
+    "actual:"
+   ],
+   [
+    574,
+    11,
+    "actual:"
+   ],
+   [
+    575,
+    11,
+    "actual:"
+   ],
+   [
+    580,
+    24,
+    ": string"
+   ],
+   [
+    582,
+    11,
+    "actual:"
+   ],
+   [
+    582,
+    46,
+    "times:"
+   ],
+   [
+    583,
+    11,
+    "actual:"
+   ],
+   [
+    584,
+    11,
+    "actual:"
+   ],
+   [
+    584,
+    54,
+    "times:"
+   ],
+   [
+    585,
+    11,
+    "actual:"
+   ],
+   [
+    588,
+    5,
+    "name:"
+   ],
+   [
+    588,
+    35,
+    "fn:"
+   ],
+   [
+    588,
+    43,
+    ": Promise<void>"
+   ],
+   [
+    590,
+    29,
+    ": { state: { count: number; name: string }; version: number }"
+   ],
+   [
+    594,
+    17,
+    ": void"
+   ],
+   [
+    595,
+    20,
+    ": void"
+   ],
+   [
+    598,
+    31,
+    ": Mock<Procedure>"
+   ],
+   [
+    599,
+    23,
+    ": any"
+   ],
+   [
+    601,
+    8,
+    "initializer:"
+   ],
+   [
+    601,
+    10,
+    ": { count: number; name: string }"
+   ],
+   [
+    605,
+    8,
+    "options:"
+   ],
+   [
+    608,
+    32,
+    ": Mock<Procedure>"
+   ],
+   [
+    614,
+    11,
+    "actual:"
+   ],
+   [
+    614,
+    45,
+    "expected:"
+   ],
+   [
+    620,
+    11,
+    "actual:"
+   ],
+   [
+    620,
+    53,
+    "expected:"
+   ],
+   [
+    624,
+    11,
+    "actual:"
+   ],
+   [
+    624,
+    45,
+    "expected:"
+   ],
+   [
+    628,
+    11,
+    "actual:"
+   ],
+   [
+    634,
+    5,
+    "name:"
+   ],
+   [
+    634,
+    56,
+    "fn:"
+   ],
+   [
+    634,
+    58,
+    ": void"
+   ],
+   [
+    636,
+    17,
+    ": string"
+   ],
+   [
+    636,
+    36,
+    "value:"
+   ],
+   [
+    637,
+    17,
+    ": void"
+   ],
+   [
+    638,
+    20,
+    ": void"
+   ],
+   [
+    641,
+    23,
+    ": any"
+   ],
+   [
+    643,
+    8,
+    "initializer:"
+   ],
+   [
+    643,
+    12,
+    ": { (partial: unknown, replace?: false | undefined): unknown; (state: unknown, replace: true): unknown }"
+   ],
+   [
+    643,
+    13,
+    ": { count: number; inc: () => unknown }"
+   ],
+   [
+    645,
+    17,
+    ": unknown"
+   ],
+   [
+    645,
+    25,
+    "partial:"
+   ],
+   [
+    645,
+    27,
+    ": any"
+   ],
+   [
+    645,
+    28,
+    ": { count: any }"
+   ],
+   [
+    647,
+    8,
+    "options:"
+   ],
+   [
+    649,
+    37,
+    "getStorage:"
+   ],
+   [
+    649,
+    39,
+    ": { getItem: () => string; setItem: () => void; removeItem: () => void }"
+   ],
+   [
+    650,
+    32,
+    ": (s: unknown) => any"
+   ],
+   [
+    650,
+    38,
+    ": unknown"
+   ],
+   [
+    650,
+    39,
+    ": any"
+   ],
+   [
+    655,
+    11,
+    "actual:"
+   ],
+   [
+    655,
+    51,
+    "expected:"
+   ],
+   [
+    658,
+    5,
+    "name:"
+   ],
+   [
+    658,
+    57,
+    "fn:"
+   ],
+   [
+    658,
+    59,
+    ": void"
+   ],
+   [
+    660,
+    17,
+    ": string"
+   ],
+   [
+    661,
+    23,
+    "value:"
+   ],
+   [
+    664,
+    17,
+    ": void"
+   ],
+   [
+    665,
+    20,
+    ": void"
+   ],
+   [
+    669,
+    31,
+    ": Mock<Procedure>"
+   ],
+   [
+    670,
+    23,
+    ": any"
+   ],
+   [
+    672,
+    8,
+    "initializer:"
+   ],
+   [
+    672,
+    10,
+    ": { map: Map<any, any> }"
+   ],
+   [
+    675,
+    8,
+    "options:"
+   ],
+   [
+    677,
+    37,
+    "getStorage:"
+   ],
+   [
+    677,
+    39,
+    ": { getItem: () => string; setItem: () => void; removeItem: () => void }"
+   ],
+   [
+    678,
+    32,
+    ": Mock<Procedure>"
+   ],
+   [
+    683,
+    20,
+    ": Map<any, any>"
+   ],
+   [
+    683,
+    31,
+    "key:"
+   ],
+   [
+    683,
+    38,
+    "value:"
+   ],
+   [
+    684,
+    11,
+    "actual:"
+   ],
+   [
+    684,
+    45,
+    "expected:"
+   ],
+   [
+    687,
+    11,
+    "actual:"
+   ],
+   [
+    690,
+    5,
+    "name:"
+   ],
+   [
+    690,
+    59,
+    "fn:"
+   ],
+   [
+    690,
+    61,
+    ": void"
+   ],
+   [
+    691,
+    58,
+    "initialValue:"
+   ],
+   [
+    694,
+    21,
+    ": () => { useBoundStore: any; onRehydrateStorageSpy: Mock<Procedure> }"
+   ],
+   [
+    694,
+    26,
+    ": { useBoundStore: any; onRehydrateStorageSpy: Mock<Procedure> }"
+   ],
+   [
+    695,
+    33,
+    ": Mock<Procedure>"
+   ],
+   [
+    696,
+    25,
+    ": any"
+   ],
+   [
+    697,
+    16,
+    "initializer:"
+   ],
+   [
+    697,
+    18,
+    ": { map: Map<any, any> }"
+   ],
+   [
+    697,
+    33,
+    "options:"
+   ],
+   [
+    699,
+    37,
+    "getStorage:"
+   ],
+   [
+    699,
+    39,
+    ": { getItem: () => string | null; setItem: (name: string, newState: string) => void; removeItem: (name: string) => void }"
+   ],
+   [
+    699,
+    52,
+    "options:"
+   ],
+   [
+    700,
+    32,
+    ": Mock<Procedure>"
+   ],
+   [
+    708,
+    11,
+    "actual:"
+   ],
+   [
+    708,
+    45,
+    "expected:"
+   ],
+   [
+    709,
+    11,
+    "actual:"
+   ],
+   [
+    712,
+    20,
+    ": Map<any, any>"
+   ],
+   [
+    712,
+    31,
+    "key:"
+   ],
+   [
+    712,
+    38,
+    "value:"
+   ],
+   [
+    714,
+    11,
+    "actual:"
+   ],
+   [
+    714,
+    45,
+    "expected:"
+   ],
+   [
+    717,
+    11,
+    "actual:"
+   ],
+   [
+    719,
+    21,
+    "value:"
+   ],
+   [
+    731,
+    11,
+    "actual:"
+   ],
+   [
+    731,
+    46,
+    "expected:"
+   ],
+   [
+    732,
+    11,
+    "actual:"
+   ],
+   [
+    738,
+    5,
+    "name:"
+   ],
+   [
+    738,
+    66,
+    "fn:"
+   ],
+   [
+    738,
+    74,
+    ": Promise<void>"
+   ],
+   [
+    739,
+    17,
+    ": Mock<Procedure>"
+   ],
+   [
+    741,
+    29,
+    ": { state: { count: number; name: string }; version: number }"
+   ],
+   [
+    746,
+    20,
+    ": void"
+   ],
+   [
+    749,
+    23,
+    ": any"
+   ],
+   [
+    750,
+    14,
+    "initializer:"
+   ],
+   [
+    750,
+    16,
+    ": {}"
+   ],
+   [
+    750,
+    26,
+    "options:"
+   ],
+   [
+    756,
+    11,
+    "actual:"
+   ],
+   [
+    756,
+    53,
+    "expected:"
+   ],
+   [
+    757,
+    11,
+    "actual:"
+   ],
+   [
+    757,
+    36,
+    "times:"
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "src/react.ts"
+   },
+   {
+    "kind": "open",
+    "path": "src/vanilla/shallow.ts"
+   },
+   {
+    "kind": "open",
+    "path": "tests/persistSync.test.tsx"
+   },
+   {
+    "kind": "fs_rename",
+    "path": "src/react.ts",
+    "new_path": "src/react_rt.ts"
+   },
+   {
+    "kind": "fs_rename",
+    "path": "src/react_rt.ts",
+    "new_path": "src/react.ts"
+   }
+  ],
+  "detail": "{\"case\": {\"chain_step\": 0, \"families\": [], \"family\": \"H5\", \"history_index\": 0, \"history_seed\": 1001, \"mode\": \"fresh\", \"note\": \"rename src/react.ts -> src/react_rt.ts -> back\", \"seed\": 1, \"timing\": \"race0\"}, \"note\": \"H5: rename src/react.ts -> src/react_rt.ts -> back; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 112s\", \"shape\": \"inlayHint:changed\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "ts6|r1_history|inlayHint:changed",
+  "run_id": "3ed0e189007e"
+ },
+ "replay_logs": [
+  "logs/ts6-6.0.3-3ed0e189007e-replay-baseline-20260924-081051-9e2561.jsonl.gz",
+  "logs/ts6-6.0.3-3ed0e189007e-replay-control-20260924-081051-029ac9.jsonl.gz",
+  "logs/ts6-6.0.3-3ed0e189007e-replay-history-20260924-081110-4c8039.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

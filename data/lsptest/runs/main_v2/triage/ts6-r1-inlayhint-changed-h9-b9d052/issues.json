@@ -1,0 +1,92 @@
+{
+ "queries": [
+  "\"inlay hint\" wrong repo:typescript-language-server/typescript-language-server is:issue",
+  "\"inlay hint\" stale repo:typescript-language-server/typescript-language-server is:issue",
+  "\"inlay hint\" wrong repo:microsoft/TypeScript is:issue",
+  "\"inlay hint\" stale repo:microsoft/TypeScript is:issue"
+ ],
+ "matches": [
+  {
+   "repo": "typescript-language-server/typescript-language-server",
+   "number": 738,
+   "title": "Do not send paddingLeft = true for type parameters' hints",
+   "url": "https://github.com/typescript-language-server/typescript-language-server/issues/738",
+   "state": "closed",
+   "created": "2023-07-07",
+   "comments": 7,
+   "query": "\"inlay hint\" wrong repo:typescript-language-server/typescript-language-server is:issue"
+  },
+  {
+   "repo": "typescript-language-server/typescript-language-server",
+   "number": 258,
+   "title": "Support inlay hints",
+   "url": "https://github.com/typescript-language-server/typescript-language-server/issues/258",
+   "state": "closed",
+   "created": "2021-09-16",
+   "comments": 0,
+   "query": "\"inlay hint\" wrong repo:typescript-language-server/typescript-language-server is:issue"
+  },
+  {
+   "repo": "typescript-language-server/typescript-language-server",
+   "number": 264,
+   "title": "Inlay Hints return empty result",
+   "url": "https://github.com/typescript-language-server/typescript-language-server/issues/264",
+   "state": "closed",
+   "created": "2021-10-06",
+   "comments": 4,
+   "query": "\"inlay hint\" wrong repo:typescript-language-server/typescript-language-server is:issue"
+  },
+  {
+   "repo": "microsoft/TypeScript",
+   "number": 45928,
+   "title": "Show function return type inlay hints even for JS functions that have explicit type annotations",
+   "url": "https://github.com/microsoft/TypeScript/issues/45928",
+   "state": "open",
+   "created": "2021-09-17",
+   "comments": 3,
+   "query": "\"inlay hint\" wrong repo:microsoft/TypeScript is:issue"
+  },
+  {
+   "repo": "microsoft/TypeScript",
+   "number": 55486,
+   "title": "TypeScript 5.3 Iteration Plan",
+   "url": "https://github.com/microsoft/TypeScript/issues/55486",
+   "state": "closed",
+   "created": "2023-08-23",
+   "comments": 41,
+   "query": "\"inlay hint\" wrong repo:microsoft/TypeScript is:issue"
+  },
+  {
+   "repo": "microsoft/TypeScript",
+   "number": 63800,
+   "title": "API usage patterns for complex editor extensions",
+   "url": "https://github.com/microsoft/TypeScript/issues/63800",
+   "state": "open",
+   "created": "2026-02-18",
+   "comments": 56,
+   "query": "\"inlay hint\" wrong repo:microsoft/TypeScript is:issue"
+  },
+  {
+   "repo": "microsoft/TypeScript",
+   "number": 44960,
+   "title": "Crash in inlay hints",
+   "url": "https://github.com/microsoft/TypeScript/issues/44960",
+   "state": "closed",
+   "created": "2021-07-09",
+   "comments": 2,
+   "query": "\"inlay hint\" wrong repo:microsoft/TypeScript is:issue"
+  },
+  {
+   "repo": "microsoft/TypeScript",
+   "number": 56078,
+   "title": "Parameter inlay hints show the wrong parameter names",
+   "url": "https://github.com/microsoft/TypeScript/issues/56078",
+   "state": "closed",
+   "created": "2023-10-12",
+   "comments": 2,
+   "query": "\"inlay hint\" wrong repo:microsoft/TypeScript is:issue"
+  }
+ ],
+ "notes": [],
+ "authenticated": true
+}

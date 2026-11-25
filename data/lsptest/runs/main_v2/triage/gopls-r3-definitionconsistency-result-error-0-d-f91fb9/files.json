@@ -1,0 +1,3 @@
+{
+ "protocol/bridge/linkname_darwin.go": "package bridge\n\nimport (\n\t\"unsafe\"\n)\n\n//go:linkname unixIoctlPtr golang.org/x/sys/unix.ioctlPtr\nfunc unixIoctlPtr(fd int, request uint, arg unsafe.Pointer) error\n\n//go:linkname unixSysctl golang.org/x/sys/unix.sysctl\nfunc unixSysctl(mib []int32, old *byte, oldLen *uintptr, newValue *byte, newLen uintptr) error\n"
+}

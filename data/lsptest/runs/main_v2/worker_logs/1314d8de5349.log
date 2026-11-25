@@ -1,0 +1,3 @@
+2026-11-18 11:43:01,472 INFO campaign_run run 1314d8de5349: r1_history on ts6 6.0.3, vadimdemedes/ink@02ae1e59e7c2 seed 2 settled, targets ['src/dom.ts', 'test/fixtures/issue-935-overflow-rerender.tsx', 'test/helpers/create-stdout.ts']
+2026-11-18 11:51:35,127 INFO campaign_run run 1314d8de5349: 15 candidate(s) in 514s; confirming
+2026-11-18 11:51:35,128 INFO campaign_run run 1314d8de5349 finished: ok, 0 confirmed of 15 candidate(s), 514s

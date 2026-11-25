@@ -1,0 +1,3 @@
+2026-11-18 13:15:34,217 INFO campaign_run run b0364645ae5e: r0_crash on gopls v0.23.0, zeromicro/go-zero@5b1b5bdc3adc seed 1 settled, targets ['core/discov/internal/vars.go', 'core/stores/sqlx/metrics_test.go', 'mcp/request_metadata.go']
+2026-11-18 13:15:45,666 INFO campaign_run run b0364645ae5e: 0 candidate(s) in 12s; confirming
+2026-11-18 13:15:45,667 INFO campaign_run run b0364645ae5e finished: ok, 0 confirmed of 0 candidate(s), 12s

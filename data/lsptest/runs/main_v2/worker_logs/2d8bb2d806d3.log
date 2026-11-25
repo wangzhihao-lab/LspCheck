@@ -1,0 +1,9 @@
+2026-11-18 02:22:09,779 INFO campaign_run run 2d8bb2d806d3: r3_routes on pyright 1.1.414, scrapy/scrapy@91d87364637c seed 1 settled, targets ['tests/AsyncCrawlerProcess/asyncio_custom_loop_custom_settings_different.py', 'tests/AsyncCrawlerProcess/default_name_resolver.py', 'tests/utils/decorators.py']
+2026-11-18 02:26:20,738 INFO campaign_run run 2d8bb2d806d3: 3 candidate(s) in 251s; confirming
+2026-11-18 02:26:27,268 INFO flake replay 1/3 of pyright|r3_routes|highlightVsReferences:gained: settled=True control_stable=True reproduced=True (6.5s)
+2026-11-18 02:26:34,048 INFO flake replay 2/3 of pyright|r3_routes|highlightVsReferences:gained: settled=True control_stable=True reproduced=True (6.8s)
+2026-11-18 02:26:42,392 INFO flake replay 3/3 of pyright|r3_routes|highlightVsReferences:gained: settled=True control_stable=True reproduced=True (8.3s)
+2026-11-18 02:26:55,600 INFO flake replay 1/3 of pyright|r3_routes|definitionConsistency:lost: settled=True control_stable=True reproduced=True (13.2s)
+2026-11-18 02:27:09,422 INFO flake replay 2/3 of pyright|r3_routes|definitionConsistency:lost: settled=True control_stable=True reproduced=True (13.8s)
+2026-11-18 02:27:22,143 INFO flake replay 3/3 of pyright|r3_routes|definitionConsistency:lost: settled=True control_stable=True reproduced=True (12.7s)
+2026-11-18 02:27:22,151 INFO campaign_run run 2d8bb2d806d3 finished: ok, 2 confirmed of 3 candidate(s), 312s

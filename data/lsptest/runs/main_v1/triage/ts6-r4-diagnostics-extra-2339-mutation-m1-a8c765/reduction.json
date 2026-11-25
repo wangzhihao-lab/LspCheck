@@ -1,0 +1,82 @@
+{
+ "vid": "044b664b39ee-v00",
+ "ops_before": 3,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 2,
+ "cache_hits": 0,
+ "reduce_seconds": 7.674,
+ "budget_exhausted": false,
+ "probe_log": [
+  [
+   2,
+   false
+  ],
+  [
+   2,
+   false
+  ]
+ ],
+ "logs": [
+  "ts6-6.0.3-tra8c765-r4-replay-baseline-20260925-190646-a3d2b0.jsonl.gz",
+  "ts6-6.0.3-tra8c765-r4-replay-case-20260925-190630-debe7c.jsonl.gz",
+  "ts6-6.0.3-tra8c765-r4-replay-control-20260925-190659-6d8383.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [],
+  "actual": [
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2339",
+    "typescript",
+    "Property 'deepStrictEqual' does not exist on type '(condition?: unknown, ...data: any[]) => void'."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2339",
+    "typescript",
+    "Property 'ok' does not exist on type '(condition?: unknown, ...data: any[]) => void'."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2339",
+    "typescript",
+    "Property 'ok' does not exist on type '(condition?: unknown, ...data: any[]) => void'."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2339",
+    "typescript",
+    "Property 'ok' does not exist on type '(condition?: unknown, ...data: any[]) => void'."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2339",
+    "typescript",
+    "Property 'strictEqual' does not exist on type '(condition?: unknown, ...data: any[]) => void'."
+   ]
+  ]
+ },
+ "ops_after": 3,
+ "total_seconds": 165.0
+}

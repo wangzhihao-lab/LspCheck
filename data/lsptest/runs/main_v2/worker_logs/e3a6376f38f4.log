@@ -1,0 +1,3 @@
+2026-11-18 08:40:36,125 INFO campaign_run run e3a6376f38f4: r1_history on pyright 1.1.414, Alishahryar1/free-claude-code@1f8b1fd7d054 seed 1 race0, targets ['smoke/product/test_api_product_live.py', 'src/free_claude_code/providers/vertex/client.py', 'tests/providers/test_together.py']
+2026-11-18 08:44:43,189 INFO campaign_run run e3a6376f38f4: 0 candidate(s) in 247s; confirming
+2026-11-18 08:44:43,189 INFO campaign_run run e3a6376f38f4 finished: ok, 0 confirmed of 0 candidate(s), 247s

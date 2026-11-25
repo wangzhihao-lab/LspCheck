@@ -1,0 +1,83 @@
+{
+ "schema": 1,
+ "id": "gopls-73663",
+ "meta": {
+  "server": "gopls",
+  "kind": "gopls",
+  "number": 73663,
+  "url": "https://github.com/golang/go/issues/73663",
+  "title": "x/tools/gopls: modernize slices.Delete suggestion not considering uint type",
+  "oracle_class": "R4",
+  "subtype": "quickfix",
+  "fix_ref": "golang/tools@5a46e4d95cb7 (gopls/internal/analysis/modernize/slicesdelete: convert index type if needed; CL 671735)",
+  "fix_shas": [
+   "5a46e4d95cb79a92437e0914a7318b20f77ae79f"
+  ],
+  "pre_version": "v0.18.1",
+  "post_version": "v0.19.0",
+  "pre_build": "v0.18.1",
+  "post_build": "v0.19.0",
+  "toolchain": "go1.24.4",
+  "build_notes": "Both built and run with go1.24.4 (golang.org/dl, under temp/lsp_servers/go-sdks; toolchain.json): the local go1.27 cannot build v0.18.1, go1.24.0 (current when v0.18.1 was tagged, 2025-02-24) cannot build v0.19.0 (its go.mod requires go >= 1.24.2), and go1.24.4 was the current Go release when v0.19.0 was tagged (2025-06-10). The fix merged 2025-05-16.",
+  "candidate_rank": 58,
+  "effort_minutes": 8,
+  "notes": "The slicesdelete pass passed the uint32 indices of append(s[:i], s[i+1:]...) to slices.Delete, whose indices are int. The fix converts the index expressions (int(i), int(i+1)), so the post-fix build still offers a fix, a valid one."
+ },
+ "language": "go",
+ "settings": {},
+ "settings_note": "The modernize analyzer is on by default in both builds; the reporter ran the modernize command, which runs the same analyzer.",
+ "session": {
+  "settle_timeout_s": 180
+ },
+ "files": [
+  {
+   "path": "main.go",
+   "provenance": "issue",
+   "source": "issue body, 'What did you do?' code block",
+   "note": ""
+  },
+  {
+   "path": "go.mod",
+   "provenance": "scaffold",
+   "source": "",
+   "note": "a module around the file (the reporter used gopls v0.18.1 and gives no go.mod); go 1.24 (slices needs go1.21)"
+  }
+ ],
+ "repro": {
+  "attempt": 1,
+  "timing": "settled",
+  "steps": "Open main.go. The slicesdelete pass reports 's = append(s[:i], s[i+1:]...)' with i of type uint32 ('Replace append with slices.Delete'). Apply its fix. Reported: 's = slices.Delete(s, i, i+1)' fails with 'cannot use i (variable of type uint32) as int value in argument to slices.Delete'. Probe: a fresh session on the edited text must report no error the original did not have.",
+  "ops": [
+   {
+    "kind": "open",
+    "path": "main.go"
+   }
+  ],
+  "probe": {
+   "type": "edit_leaves_diagnostic",
+   "params": {
+    "edit": {
+     "via": "code_action",
+     "path": "main.go",
+     "diagnostic": {
+      "message_re": "slices\\.Delete"
+     },
+     "title_re": "slices\\.Delete",
+     "missing": "invalid"
+    },
+    "target": {
+     "message_re": "Replace append with slices\\.Delete"
+    }
+   }
+  }
+ },
+ "attempts": [
+  {
+   "attempt": 1,
+   "timing": "settled",
+   "probe": "edit_leaves_diagnostic",
+   "summary": "Run 2026-09-23T09:0x (this case revision): v0.18.1 offered the slicesdelete fix and the result 's = slices.Delete(s, i, i+1)' failed with 'cannot use i (variable of type uint32) as int value' (3/3); v0.19.0 reported no slicesdelete diagnostic at all (verdict invalid, 'no code_action matching the spec was offered'). Cause: v0.19.0 disables the whole slicesdelete pass (EnableSlicesDelete = false in modernize/slicesdelete.go, because slices.Delete clears the vacated slots, golang/go#73686), and v0.20.0 keeps it disabled; it returns in v0.21.0 as a separate analyzer that is off by default. So the release after the fix cannot show the fixed behavior, and no release pair isolates the fix: pre-check 3 (the route exists in the post-fix build) fails. No second attempt.",
+   "verdict": "invalid (post-fix release has the pass disabled)"
+  }
+ ]
+}

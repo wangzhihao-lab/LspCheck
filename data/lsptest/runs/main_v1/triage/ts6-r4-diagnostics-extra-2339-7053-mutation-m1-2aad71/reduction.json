@@ -1,0 +1,62 @@
+{
+ "vid": "dc251ae86847-v00",
+ "ops_before": 3,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 2,
+ "cache_hits": 0,
+ "reduce_seconds": 3.355,
+ "budget_exhausted": false,
+ "probe_log": [
+  [
+   2,
+   false
+  ],
+  [
+   2,
+   false
+  ]
+ ],
+ "logs": [
+  "ts6-6.0.3-tr2aad71-r4-replay-baseline-20260925-191230-d9963f.jsonl.gz",
+  "ts6-6.0.3-tr2aad71-r4-replay-case-20260925-191222-da3471.jsonl.gz",
+  "ts6-6.0.3-tr2aad71-r4-replay-control-20260925-191234-fb9981.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [],
+  "actual": [
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2339",
+    "typescript",
+    "Property 'length' does not exist on type 'PositionedLine'."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "2339",
+    "typescript",
+    "Property 'slice' does not exist on type 'PositionedLine'."
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "7053",
+    "typescript",
+    "Element implicitly has an 'any' type because expression of type 'number' can't be used to index type 'PositionedLine'. No index signature with a parameter of type 'number' was found on type 'PositionedLine'."
+   ]
+  ]
+ },
+ "ops_after": 3,
+ "total_seconds": 68.1
+}

@@ -1,0 +1,3 @@
+2026-09-25 15:01:05,034 INFO campaign_run run d2c9572057a0: r2_handles on tsserver 4.0.2+tsls0.4.0, tsserver-37830 seed 2 settled, targets ['index.ts']
+2026-09-25 15:01:21,256 INFO campaign_run run d2c9572057a0: 0 candidate(s) in 16s; confirming
+2026-09-25 15:01:21,257 INFO campaign_run run d2c9572057a0 finished: ok, 0 confirmed of 0 candidate(s), 16s

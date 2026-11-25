@@ -1,0 +1,137 @@
+{
+ "vid": "ddfee926b769-v00",
+ "ops_before": 13,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 11,
+ "cache_hits": 1,
+ "reduce_seconds": 361.838,
+ "budget_exhausted": false,
+ "probe_log": [
+  [
+   8,
+   false
+  ],
+  [
+   8,
+   true
+  ],
+  [
+   5,
+   false
+  ],
+  [
+   6,
+   true
+  ],
+  [
+   4,
+   false
+  ],
+  [
+   5,
+   true
+  ],
+  [
+   4,
+   true
+  ],
+  [
+   3,
+   true
+  ],
+  [
+   2,
+   true
+  ],
+  [
+   1,
+   false
+  ],
+  [
+   1,
+   false
+  ]
+ ],
+ "logs": [
+  "gopls-v0.23.0-tr383b05-replay-baseline-20261118-215214-14f36e.jsonl.gz",
+  "gopls-v0.23.0-tr383b05-replay-control-20261118-215214-d20118.jsonl.gz",
+  "gopls-v0.23.0-tr383b05-replay-history-20261118-215219-94b116.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [
+   [
+    "Add test for Model",
+    "source.addTest"
+   ],
+   [
+    "Browse arm64 assembly for Model",
+    "source.assembly"
+   ],
+   [
+    "Browse documentation for method (*DB).Model",
+    "source.doc"
+   ],
+   [
+    "Browse free symbols",
+    "source.freesymbols"
+   ],
+   [
+    "Browse gopls feature documentation",
+    "gopls.doc.features"
+   ],
+   [
+    "Replace interface{} by any",
+    "quickfix"
+   ],
+   [
+    "Show compiler optimization details for \"ws\"",
+    "source.toggleCompilerOptDetails"
+   ],
+   [
+    "Split package \"gorm\"",
+    "source.splitPackage"
+   ]
+  ],
+  "actual": [
+   [
+    "Add test for Model",
+    "source.addTest"
+   ],
+   [
+    "Browse arm64 assembly for Model",
+    "source.assembly"
+   ],
+   [
+    "Browse documentation for method (*DB).Model",
+    "source.doc"
+   ],
+   [
+    "Browse free symbols",
+    "source.freesymbols"
+   ],
+   [
+    "Browse gopls feature documentation",
+    "gopls.doc.features"
+   ],
+   [
+    "Replace interface{} by any",
+    "quickfix"
+   ],
+   [
+    "Replace interface{} by any",
+    "quickfix"
+   ],
+   [
+    "Show compiler optimization details for \"ws\"",
+    "source.toggleCompilerOptDetails"
+   ],
+   [
+    "Split package \"gorm\"",
+    "source.splitPackage"
+   ]
+  ]
+ },
+ "ops_after": 2,
+ "total_seconds": 588.4
+}

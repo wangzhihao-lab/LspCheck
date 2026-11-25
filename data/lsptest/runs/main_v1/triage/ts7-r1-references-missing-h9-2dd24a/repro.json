@@ -1,0 +1,371 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "d682da8dbdea-v00",
+ "run_id": "d682da8dbdea",
+ "oracle": "r1_history",
+ "server": {
+  "kind": "ts7",
+  "version": "7.0.2"
+ },
+ "project": {
+  "name": "react-hook-form/react-hook-form@5fd9ef65290b",
+  "source": "corpus",
+  "ref": "temp/corpus/react-hook-form__react-hook-form@5fd9ef65290b",
+  "commit": "5fd9ef65290bef2ccaa7ac96dc8d5d55478b5410",
+  "language": "typescript"
+ },
+ "context": {
+  "seed": 3,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "examples/V7/disableNativeValidation.tsx",
+    "positions": [],
+    "ends": [],
+    "names": []
+   },
+   {
+    "path": "src/__tests__/logic/getValidateError.test.ts",
+    "positions": [
+     [
+      1,
+      14
+     ]
+    ],
+    "ends": [],
+    "names": [
+     ""
+    ]
+   },
+   {
+    "path": "src/__tests__/logic/skipValidation.test.ts",
+    "positions": [],
+    "ends": [],
+    "names": []
+   }
+  ]
+ },
+ "key": {
+  "method": "references",
+  "path": "src/__tests__/logic/getValidateError.test.ts",
+  "line": 1,
+  "character": 14,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "examples/V7/disableNativeValidation.tsx"
+  },
+  {
+   "kind": "open",
+   "path": "src/__tests__/logic/getValidateError.test.ts"
+  },
+  {
+   "kind": "open",
+   "path": "src/__tests__/logic/skipValidation.test.ts"
+  },
+  {
+   "kind": "open",
+   "path": "app/src/form.tsx"
+  },
+  {
+   "kind": "change",
+   "path": "app/src/form.tsx",
+   "start": [
+    1,
+    14
+   ],
+   "end": [
+    1,
+    25
+   ]
+  }
+ ],
+ "case": {
+  "chain_step": 0,
+  "families": [],
+  "family": "H9",
+  "history_index": 0,
+  "history_seed": 3001,
+  "mode": "fresh",
+  "note": "window: app/src/form.tsx in the editor: delete \"rom 'react'\" on line 1; inside: src/__tests__/logic/getValidateError.test.ts: insert '\\t' on line 32, then its inverse; src/__tests__/logic/skipValidation.test.ts: line 18 deleted and retyped in 2 chunk(s); examples/V7/disableNativeValidation.tsx: insert ')' on line 17, then its inverse; then W reverted",
+  "seed": 3,
+  "timing": "settled"
+ },
+ "shape": "references:missing",
+ "signature": "ts7|r1_history|references:missing",
+ "expected": [
+  [
+   "src/__tests__/logic/getValidateError.test.ts",
+   1,
+   18,
+   1,
+   34
+  ],
+  [
+   "src/form.tsx",
+   6,
+   7,
+   6,
+   11
+  ],
+  [
+   "src/form.tsx",
+   38,
+   15,
+   38,
+   19
+  ],
+  [
+   "src/form.tsx",
+   44,
+   14,
+   44,
+   18
+  ],
+  [
+   "src/form.tsx",
+   46,
+   16,
+   46,
+   20
+  ],
+  [
+   "src/utils/noop.ts",
+   0,
+   24,
+   0,
+   28
+  ]
+ ],
+ "actual": [
+  [
+   "src/__tests__/logic/getValidateError.test.ts",
+   1,
+   18,
+   1,
+   34
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "H9: window: app/src/form.tsx in the editor: delete \"rom 'react'\" on line 1; inside: src/__tests__/logic/getValidateError.test.ts: insert '\\t' on line 32, then its inverse; src/__tests__/logic/skipValidati; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 170s",
+ "violation": {
+  "oracle": "r1_history",
+  "server": "ts7-7.0.2",
+  "project": "react-hook-form/react-hook-form@5fd9ef65290b",
+  "key": {
+   "method": "references",
+   "path": "src/__tests__/logic/getValidateError.test.ts",
+   "line": 1,
+   "character": 14,
+   "extra": ""
+  },
+  "expected": [
+   [
+    "src/__tests__/logic/getValidateError.test.ts",
+    1,
+    18,
+    1,
+    34
+   ],
+   [
+    "src/form.tsx",
+    6,
+    7,
+    6,
+    11
+   ],
+   [
+    "src/form.tsx",
+    38,
+    15,
+    38,
+    19
+   ],
+   [
+    "src/form.tsx",
+    44,
+    14,
+    44,
+    18
+   ],
+   [
+    "src/form.tsx",
+    46,
+    16,
+    46,
+    20
+   ],
+   [
+    "src/utils/noop.ts",
+    0,
+    24,
+    0,
+    28
+   ]
+  ],
+  "actual": [
+   [
+    "src/__tests__/logic/getValidateError.test.ts",
+    1,
+    18,
+    1,
+    34
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "examples/V7/disableNativeValidation.tsx"
+   },
+   {
+    "kind": "open",
+    "path": "src/__tests__/logic/getValidateError.test.ts"
+   },
+   {
+    "kind": "open",
+    "path": "src/__tests__/logic/skipValidation.test.ts"
+   },
+   {
+    "kind": "open",
+    "path": "app/src/form.tsx"
+   },
+   {
+    "kind": "change",
+    "path": "app/src/form.tsx",
+    "start": [
+     1,
+     14
+    ],
+    "end": [
+     1,
+     25
+    ]
+   },
+   {
+    "kind": "change",
+    "path": "src/__tests__/logic/getValidateError.test.ts",
+    "start": [
+     32,
+     1
+    ],
+    "end": [
+     32,
+     1
+    ],
+    "text": "\t"
+   },
+   {
+    "kind": "change",
+    "path": "src/__tests__/logic/getValidateError.test.ts",
+    "start": [
+     32,
+     1
+    ],
+    "end": [
+     32,
+     2
+    ]
+   },
+   {
+    "kind": "change",
+    "path": "src/__tests__/logic/skipValidation.test.ts",
+    "start": [
+     18,
+     0
+    ],
+    "end": [
+     19,
+     0
+    ]
+   },
+   {
+    "kind": "change",
+    "path": "src/__tests__/logic/skipValidation.test.ts",
+    "start": [
+     18,
+     0
+    ],
+    "end": [
+     18,
+     0
+    ],
+    "text": "   "
+   },
+   {
+    "kind": "change",
+    "path": "src/__tests__/logic/skipValidation.test.ts",
+    "start": [
+     18,
+     3
+    ],
+    "end": [
+     18,
+     3
+    ],
+    "text": "   ),\n"
+   },
+   {
+    "kind": "change",
+    "path": "examples/V7/disableNativeValidation.tsx",
+    "start": [
+     17,
+     4
+    ],
+    "end": [
+     17,
+     4
+    ],
+    "text": ")"
+   },
+   {
+    "kind": "change",
+    "path": "examples/V7/disableNativeValidation.tsx",
+    "start": [
+     17,
+     4
+    ],
+    "end": [
+     17,
+     5
+    ]
+   },
+   {
+    "kind": "change",
+    "path": "app/src/form.tsx",
+    "start": [
+     1,
+     14
+    ],
+    "end": [
+     1,
+     14
+    ],
+    "text": "rom 'react'"
+   },
+   {
+    "kind": "close",
+    "path": "app/src/form.tsx"
+   }
+  ],
+  "detail": "{\"case\": {\"chain_step\": 0, \"families\": [], \"family\": \"H9\", \"history_index\": 0, \"history_seed\": 3001, \"mode\": \"fresh\", \"note\": \"window: app/src/form.tsx in the editor: delete \\\"rom 'react'\\\" on line 1; inside: src/__tests__/logic/getValidateError.test.ts: insert '\\\\t' on line 32, then its inverse; src/__tests__/logic/skipValidation.test.ts: line 18 deleted and retyped in 2 chunk(s); examples/V7/disableNativeValidation.tsx: insert ')' on line 17, then its inverse; then W reverted\", \"seed\": 3, \"timing\": \"settled\"}, \"note\": \"H9: window: app/src/form.tsx in the editor: delete \\\"rom 'react'\\\" on line 1; inside: src/__tests__/logic/getValidateError.test.ts: insert '\\\\t' on line 32, then its inverse; src/__tests__/logic/skipValidati; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 170s\", \"shape\": \"references:missing\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "ts7|r1_history|references:missing",
+  "run_id": "d682da8dbdea"
+ },
+ "replay_logs": [
+  "logs/ts7-7.0.2-tr2dd24a-replay-baseline-20260925-154537-c75925.jsonl.gz",
+  "logs/ts7-7.0.2-tr2dd24a-replay-control-20260925-154537-61effb.jsonl.gz",
+  "logs/ts7-7.0.2-tr2dd24a-replay-history-20260925-154550-cd9973.jsonl.gz"
+ ],
+ "project_files": {},
+ "group": "ts7-r1-references-missing-h9-2dd24a",
+ "reduced": true
+}

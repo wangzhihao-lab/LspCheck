@@ -1,0 +1,92 @@
+{
+ "queries": [
+  "\"while typing\" in:title repo:microsoft/pyright is:issue",
+  "hover wrong repo:microsoft/pyright is:issue",
+  "hover \"while typing\" repo:microsoft/pyright is:issue",
+  "hover stale repo:microsoft/pyright is:issue"
+ ],
+ "matches": [
+  {
+   "repo": "microsoft/pyright",
+   "number": 3860,
+   "title": "Errors while using Protocol classes from `typing_extensions`",
+   "url": "https://github.com/microsoft/pyright/issues/3860",
+   "state": "closed",
+   "created": "2022-08-23",
+   "comments": 6,
+   "query": "\"while typing\" in:title repo:microsoft/pyright is:issue"
+  },
+  {
+   "repo": "microsoft/pyright",
+   "number": 11317,
+   "title": "LSP: Slow semantic completion for built in types",
+   "url": "https://github.com/microsoft/pyright/issues/11317",
+   "state": "closed",
+   "created": "2026-03-06",
+   "comments": 2,
+   "query": "hover wrong repo:microsoft/pyright is:issue"
+  },
+  {
+   "repo": "microsoft/pyright",
+   "number": 10534,
+   "title": "How do I wrap functions in a class with a __call__ method while preserving both types and docstrings?",
+   "url": "https://github.com/microsoft/pyright/issues/10534",
+   "state": "closed",
+   "created": "2025-06-03",
+   "comments": 3,
+   "query": "hover wrong repo:microsoft/pyright is:issue"
+  },
+  {
+   "repo": "microsoft/pyright",
+   "number": 1118,
+   "title": "reportUnusedVariable ignore pattern",
+   "url": "https://github.com/microsoft/pyright/issues/1118",
+   "state": "closed",
+   "created": "2020-10-23",
+   "comments": 116,
+   "query": "hover wrong repo:microsoft/pyright is:issue"
+  },
+  {
+   "repo": "microsoft/pyright",
+   "number": 10229,
+   "title": "Variance check is inconsistent",
+   "url": "https://github.com/microsoft/pyright/issues/10229",
+   "state": "closed",
+   "created": "2025-03-31",
+   "comments": 3,
+   "query": "hover wrong repo:microsoft/pyright is:issue"
+  },
+  {
+   "repo": "microsoft/pyright",
+   "number": 9605,
+   "title": "2 different overloads are incorrectly considered equivalent",
+   "url": "https://github.com/microsoft/pyright/issues/9605",
+   "state": "closed",
+   "created": "2024-12-19",
+   "comments": 5,
+   "query": "hover wrong repo:microsoft/pyright is:issue"
+  },
+  {
+   "repo": "microsoft/pyright",
+   "number": 9687,
+   "title": "Pyright produces phantom int type from recursive type alias that includes float",
+   "url": "https://github.com/microsoft/pyright/issues/9687",
+   "state": "closed",
+   "created": "2025-01-10",
+   "comments": 2,
+   "query": "hover \"while typing\" repo:microsoft/pyright is:issue"
+  },
+  {
+   "repo": "microsoft/pyright",
+   "number": 6764,
+   "title": "False positive of \"reportUnnecessaryComparison\" with condition inside loop",
+   "url": "https://github.com/microsoft/pyright/issues/6764",
+   "state": "closed",
+   "created": "2023-12-17",
+   "comments": 5,
+   "query": "hover \"while typing\" repo:microsoft/pyright is:issue"
+  }
+ ],
+ "notes": [],
+ "authenticated": true
+}

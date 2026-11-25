@@ -1,0 +1,3 @@
+2026-11-18 05:50:45,761 INFO campaign_run run 55d7d573164a: r5_transforms on pyright 1.1.414, NanmiCoder/MediaCrawler@380b426000aa seed 1 settled, targets ['media_platform/tieba/core.py', 'tools/async_file_writer.py', 'tools/httpx_util.py']
+2026-11-18 05:52:44,064 INFO campaign_run run 55d7d573164a: 0 candidate(s) in 118s; confirming
+2026-11-18 05:52:44,065 INFO campaign_run run 55d7d573164a finished: ok, 0 confirmed of 0 candidate(s), 118s

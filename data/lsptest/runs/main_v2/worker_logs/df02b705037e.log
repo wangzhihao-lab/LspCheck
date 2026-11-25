@@ -1,0 +1,9 @@
+2026-11-18 06:15:27,724 INFO campaign_run run df02b705037e: r1_history on ts6 6.0.3, vadimdemedes/ink@02ae1e59e7c2 seed 1 race0, targets ['src/components/FocusContext.ts', 'src/dom.ts', 'test/colon-colors.tsx']
+2026-11-18 06:19:20,114 INFO campaign_run run df02b705037e: 3 candidate(s) in 232s; confirming
+2026-11-18 06:19:58,059 INFO flake replay 1/3 of ts6|r1_history|hover:text: settled=True control_stable=True reproduced=True (37.9s)
+2026-11-18 06:20:27,569 INFO flake replay 2/3 of ts6|r1_history|hover:text: settled=True control_stable=True reproduced=True (29.5s)
+2026-11-18 06:21:00,905 INFO flake replay 3/3 of ts6|r1_history|hover:text: settled=True control_stable=True reproduced=True (33.3s)
+2026-11-18 06:21:28,500 INFO flake replay 1/3 of ts6|r1_history|inlayHint:changed: settled=True control_stable=True reproduced=True (27.6s)
+2026-11-18 06:21:57,428 INFO flake replay 2/3 of ts6|r1_history|inlayHint:changed: settled=True control_stable=True reproduced=True (28.9s)
+2026-11-18 06:22:24,483 INFO flake replay 3/3 of ts6|r1_history|inlayHint:changed: settled=True control_stable=True reproduced=True (27.1s)
+2026-11-18 06:22:25,084 INFO campaign_run run df02b705037e finished: ok, 2 confirmed of 3 candidate(s), 417s

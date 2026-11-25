@@ -1,0 +1,70 @@
+{
+ "queries": [
+  "\"completion resolve\" wrong repo:rust-lang/rust-analyzer is:issue",
+  "\"completion resolve\" stale repo:rust-lang/rust-analyzer is:issue"
+ ],
+ "matches": [
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 16240,
+   "title": "No autocompletion for `inherent_associated_types` nightly feature",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/16240",
+   "state": "open",
+   "created": "2024-01-03",
+   "comments": 5,
+   "query": "\"completion resolve\" wrong repo:rust-lang/rust-analyzer is:issue"
+  },
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 18363,
+   "title": "Auto-imports not working in Kate",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/18363",
+   "state": "closed",
+   "created": "2024-10-21",
+   "comments": 12,
+   "query": "\"completion resolve\" wrong repo:rust-lang/rust-analyzer is:issue"
+  },
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 18547,
+   "title": "Autocomplete suggestion changes to something random once selected",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/18547",
+   "state": "closed",
+   "created": "2024-11-23",
+   "comments": 18,
+   "query": "\"completion resolve\" wrong repo:rust-lang/rust-analyzer is:issue"
+  },
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 18504,
+   "title": "No signatures shown in completion popup",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/18504",
+   "state": "closed",
+   "created": "2024-11-11",
+   "comments": 6,
+   "query": "\"completion resolve\" wrong repo:rust-lang/rust-analyzer is:issue"
+  },
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 13786,
+   "title": "Borrow/BorrowMut auto importing completions are confusing for newcomers",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/13786",
+   "state": "closed",
+   "created": "2022-12-16",
+   "comments": 4,
+   "query": "\"completion resolve\" wrong repo:rust-lang/rust-analyzer is:issue"
+  },
+  {
+   "repo": "rust-lang/rust-analyzer",
+   "number": 22442,
+   "title": "auto-import macro fails when exclamation mark is present",
+   "url": "https://github.com/rust-lang/rust-analyzer/issues/22442",
+   "state": "open",
+   "created": "2026-05-24",
+   "comments": 22,
+   "query": "\"completion resolve\" stale repo:rust-lang/rust-analyzer is:issue"
+  }
+ ],
+ "notes": [],
+ "authenticated": true
+}

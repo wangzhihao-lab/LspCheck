@@ -1,0 +1,3 @@
+2026-11-18 15:43:38,357 INFO campaign_run run 5f37976223dc: r2_handles on rust-analyzer 2026-09-21, sharkdp/hyperfine@0d6ade930afc seed 2 settled, targets ['src/benchmark/relative_speed.rs', 'src/cli.rs', 'src/main.rs']
+2026-11-18 15:45:20,985 INFO campaign_run run 5f37976223dc: 5 candidate(s) in 103s; confirming
+2026-11-18 15:45:20,985 INFO campaign_run run 5f37976223dc finished: ok, 0 confirmed of 5 candidate(s), 103s

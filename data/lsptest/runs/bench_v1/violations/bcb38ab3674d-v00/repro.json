@@ -1,0 +1,296 @@
+{
+ "format": 1,
+ "campaign": "bench_v1",
+ "vid": "bcb38ab3674d-v00",
+ "run_id": "bcb38ab3674d",
+ "oracle": "r4_edits",
+ "server": {
+  "kind": "gopls",
+  "version": "v0.18.1"
+ },
+ "project": {
+  "name": "gopls-73269",
+  "source": "dir",
+  "ref": "data/lsp_bench/cases/gopls-73269/project",
+  "commit": "",
+  "language": "go"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 180.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "main.go",
+    "positions": [
+     [
+      0,
+      10
+     ],
+     [
+      2,
+      7
+     ],
+     [
+      2,
+      15
+     ],
+     [
+      3,
+      3
+     ],
+     [
+      3,
+      12
+     ],
+     [
+      4,
+      5
+     ],
+     [
+      4,
+      9
+     ],
+     [
+      4,
+      23
+     ],
+     [
+      5,
+      8
+     ],
+     [
+      5,
+      13
+     ],
+     [
+      6,
+      12
+     ],
+     [
+      9,
+      10
+     ],
+     [
+      12,
+      8
+     ],
+     [
+      12,
+      13
+     ],
+     [
+      12,
+      17
+     ],
+     [
+      12,
+      22
+     ],
+     [
+      12,
+      29
+     ],
+     [
+      12,
+      35
+     ],
+     [
+      13,
+      9
+     ]
+    ],
+    "ends": [
+     [
+      0,
+      12
+     ],
+     [
+      2,
+      10
+     ],
+     [
+      2,
+      17
+     ],
+     [
+      3,
+      5
+     ],
+     [
+      3,
+      14
+     ],
+     [
+      4,
+      6
+     ],
+     [
+      4,
+      11
+     ],
+     [
+      4,
+      25
+     ],
+     [
+      5,
+      11
+     ],
+     [
+      5,
+      15
+     ],
+     [
+      6,
+      14
+     ],
+     [
+      9,
+      13
+     ],
+     [
+      12,
+      11
+     ],
+     [
+      12,
+      15
+     ],
+     [
+      12,
+      19
+     ],
+     [
+      12,
+      24
+     ],
+     [
+      12,
+      31
+     ],
+     [
+      12,
+      37
+     ],
+     [
+      13,
+      11
+     ]
+    ],
+    "names": [
+     "main",
+     "check",
+     "bool",
+     "nums",
+     "int",
+     "_",
+     "num",
+     "nums",
+     "isEven",
+     "num",
+     "true",
+     "false",
+     "isEven",
+     "num",
+     "int",
+     "opt",
+     "any",
+     "bool",
+     "num"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "diagnostics",
+  "path": "main.go",
+  "line": 4,
+  "character": 1,
+  "extra": "quickfix-errors:Replace loop by call to slices.ContainsFunc"
+ },
+ "ops": [],
+ "case": {
+  "action_kind": "quickfix",
+  "base_errors": 0,
+  "check": "errors",
+  "diag": {
+   "code": "slicescontains",
+   "message": "Loop can be simplified using slices.ContainsFunc",
+   "range": {
+    "end": {
+     "character": 2,
+     "line": 8
+    },
+    "start": {
+     "character": 1,
+     "line": 4
+    }
+   },
+   "severity": 4
+  },
+  "kind": "quickfix",
+  "path": "main.go",
+  "post_errors": 1,
+  "title": "Replace loop by call to slices.ContainsFunc",
+  "via": "edit"
+ },
+ "shape": "diagnostics:extra:CannotInferTypeArgs",
+ "signature": "gopls|r4_edits|diagnostics:extra:CannotInferTypeArgs",
+ "expected": [],
+ "actual": [
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   "CannotInferTypeArgs",
+   "compiler",
+   "in call to slices.ContainsFunc, type func(num int, opt ...any) bool of isEven does not match func(E) bool"
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "quick fix 'Replace loop by call to slices.ContainsFunc' for slicescontains at main.go:5:2 raises the error count in the edited files from 0 to 1; confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 46s",
+ "violation": {
+  "oracle": "r4_edits",
+  "server": "gopls-v0.18.1",
+  "project": "gopls-73269",
+  "key": {
+   "method": "diagnostics",
+   "path": "main.go",
+   "line": 4,
+   "character": 1,
+   "extra": "quickfix-errors:Replace loop by call to slices.ContainsFunc"
+  },
+  "expected": [],
+  "actual": [
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    "CannotInferTypeArgs",
+    "compiler",
+    "in call to slices.ContainsFunc, type func(num int, opt ...any) bool of isEven does not match func(E) bool"
+   ]
+  ],
+  "ops": [],
+  "detail": "{\"case\": {\"action_kind\": \"quickfix\", \"base_errors\": 0, \"check\": \"errors\", \"diag\": {\"code\": \"slicescontains\", \"message\": \"Loop can be simplified using slices.ContainsFunc\", \"range\": {\"end\": {\"character\": 2, \"line\": 8}, \"start\": {\"character\": 1, \"line\": 4}}, \"severity\": 4}, \"kind\": \"quickfix\", \"path\": \"main.go\", \"post_errors\": 1, \"title\": \"Replace loop by call to slices.ContainsFunc\", \"via\": \"edit\"}, \"note\": \"quick fix 'Replace loop by call to slices.ContainsFunc' for slicescontains at main.go:5:2 raises the error count in the edited files from 0 to 1; confirmed in a fresh session on the edited content; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 46s\", \"shape\": \"diagnostics:extra:CannotInferTypeArgs\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "gopls|r4_edits|diagnostics:extra:CannotInferTypeArgs",
+  "run_id": "bcb38ab3674d"
+ },
+ "replay_logs": [
+  "logs/gopls-v0.18.1-bcb38ab3674d-r4-replay-baseline-20260925-054804-a01663.jsonl.gz",
+  "logs/gopls-v0.18.1-bcb38ab3674d-r4-replay-case-20260925-054754-ef94c4.jsonl.gz",
+  "logs/gopls-v0.18.1-bcb38ab3674d-r4-replay-control-20260925-054806-131523.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

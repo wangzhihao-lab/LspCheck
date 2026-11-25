@@ -1,0 +1,30 @@
+{
+ "vid": "1862963f2542-v00",
+ "ops_before": 2,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 0,
+ "cache_hits": 0,
+ "reduce_seconds": 0.0,
+ "budget_exhausted": false,
+ "probe_log": [],
+ "logs": [
+  "pyright-1.1.414-trae8275-r5-replay-baseline-20260925-174632-c93f3d.jsonl.gz",
+  "pyright-1.1.414-trae8275-r5-replay-case-20260925-174640-544046.jsonl.gz",
+  "pyright-1.1.414-trae8275-r5-replay-control-20260925-174636-1c1632.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [
+   [
+    "boolean_algebra/multiplexer.py",
+    3,
+    0,
+    3,
+    0
+   ]
+  ],
+  "actual": []
+ },
+ "ops_after": 2,
+ "total_seconds": 41.8
+}

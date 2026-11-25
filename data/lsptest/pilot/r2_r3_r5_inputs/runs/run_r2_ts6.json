@@ -1,0 +1,796 @@
+{
+ "oracle": "r2_handles",
+ "server": "ts6",
+ "version": "6.0.3",
+ "project": "pmndrs/zustand@b57db4f86ef1",
+ "language": "typescript",
+ "seed": 1,
+ "targets": [
+  {
+   "path": "src/vanilla/shallow.ts",
+   "positions": [
+    [
+     12,
+     15
+    ],
+    [
+     16,
+     53
+    ],
+    [
+     21,
+     11
+    ],
+    [
+     33,
+     38
+    ],
+    [
+     34,
+     23
+    ],
+    [
+     38,
+     34
+    ],
+    [
+     44,
+     35
+    ],
+    [
+     47,
+     46
+    ]
+   ],
+   "ends": [
+    [
+     12,
+     19
+    ],
+    [
+     16,
+     55
+    ],
+    [
+     21,
+     13
+    ],
+    [
+     33,
+     42
+    ],
+    [
+     34,
+     26
+    ],
+    [
+     38,
+     37
+    ],
+    [
+     44,
+     37
+    ],
+    [
+     47,
+     47
+    ]
+   ],
+   "names": [
+    "entries",
+    "Map",
+    "mapB",
+    "iterator",
+    "valueB",
+    "nextB",
+    "done",
+    "T"
+   ]
+  },
+  {
+   "path": "tests/persistSync.test.tsx",
+   "positions": [
+    [
+     14,
+     37
+    ],
+    [
+     16,
+     6
+    ],
+    [
+     274,
+     9
+    ],
+    [
+     291,
+     41
+    ],
+    [
+     311,
+     25
+    ],
+    [
+     565,
+     64
+    ],
+    [
+     683,
+     24
+    ],
+    [
+     717,
+     16
+    ]
+   ],
+   "ends": [
+    [
+     14,
+     41
+    ],
+    [
+     16,
+     9
+    ],
+    [
+     274,
+     13
+    ],
+    [
+     291,
+     48
+    ],
+    [
+     311,
+     28
+    ],
+    [
+     565,
+     73
+    ],
+    [
+     683,
+     26
+    ],
+    [
+     717,
+     21
+    ]
+   ],
+   "names": [
+    "newState",
+    "state",
+    "setItem",
+    "toBeCalledWith",
+    "count",
+    "onFinishHydration",
+    "map",
+    "setItemSpy"
+   ]
+  }
+ ],
+ "max_cases": 12,
+ "timing": "settled",
+ "result": {
+  "oracle": "r2_handles",
+  "run_id": "r2_handles-ts6-075033",
+  "cases": 12,
+  "invalid_cases": 0,
+  "sessions": 1,
+  "unsettled": 0,
+  "compared": {
+   "completionResolve": 4
+  },
+  "unstable": {},
+  "seconds": 143.029,
+  "notes": [
+   "handle kinds: {'codeAction': True, 'completion': True, 'delta': False}",
+   "allowed completionResolve no edit: 9"
+  ],
+  "candidates": [
+   {
+    "oracle": "r2_handles",
+    "server": "ts6-6.0.3",
+    "project": "pmndrs/zustand@b57db4f86ef1",
+    "key": {
+     "method": "completionResolve",
+     "path": "tests/persistSync.test.tsx",
+     "line": 311,
+     "character": 28,
+     "extra": "end|top1|count|2|null|￿16|0"
+    },
+    "expected": [
+     [
+      "additionalTextEdits",
+      7,
+      0,
+      7,
+      0,
+      "import type { count } from 'node:console'\n"
+     ]
+    ],
+    "actual": [
+     [
+      "additionalTextEdits",
+      7,
+      0,
+      7,
+      0,
+      "import { count } from 'node:console'\n"
+     ]
+    ],
+    "ops": [
+     {
+      "kind": "open",
+      "path": "tests/persistSync.test.tsx"
+     },
+     {
+      "kind": "change",
+      "path": "tests/persistSync.test.tsx",
+      "start": [
+       0,
+       0
+      ],
+      "end": [
+       0,
+       0
+      ],
+      "text": "\n"
+     }
+    ],
+    "detail": "{\"case\": {\"extra\": \"end\", \"path\": \"tests/persistSync.test.tsx\", \"shift\": {\"col\": 0, \"line\": 0, \"text\": \"\\n\", \"variant\": \"top\"}, \"sub\": \"completion\", \"where\": [311, 28]}, \"note\": \"\", \"shape\": \"completionResolve:changed\"}",
+    "reproduced": "0/0",
+    "reduced_ops": [],
+    "signature": "ts6|r2_handles|completionResolve:changed",
+    "run_id": "r2_handles-ts6-075033"
+   },
+   {
+    "oracle": "r2_handles",
+    "server": "ts6-6.0.3",
+    "project": "pmndrs/zustand@b57db4f86ef1",
+    "key": {
+     "method": "completionResolve",
+     "path": "tests/persistSync.test.tsx",
+     "line": 311,
+     "character": 28,
+     "extra": "end|top1|count|2|null|￿16|1"
+    },
+    "expected": [
+     [
+      "additionalTextEdits",
+      7,
+      0,
+      7,
+      0,
+      "import type { count } from 'console'\n"
+     ]
+    ],
+    "actual": [
+     [
+      "additionalTextEdits",
+      7,
+      0,
+      7,
+      0,
+      "import { count } from 'console'\n"
+     ]
+    ],
+    "ops": [
+     {
+      "kind": "open",
+      "path": "tests/persistSync.test.tsx"
+     },
+     {
+      "kind": "change",
+      "path": "tests/persistSync.test.tsx",
+      "start": [
+       0,
+       0
+      ],
+      "end": [
+       0,
+       0
+      ],
+      "text": "\n"
+     }
+    ],
+    "detail": "{\"case\": {\"extra\": \"end\", \"path\": \"tests/persistSync.test.tsx\", \"shift\": {\"col\": 0, \"line\": 0, \"text\": \"\\n\", \"variant\": \"top\"}, \"sub\": \"completion\", \"where\": [311, 28]}, \"note\": \"\", \"shape\": \"completionResolve:changed\"}",
+    "reproduced": "0/0",
+    "reduced_ops": [],
+    "signature": "ts6|r2_handles|completionResolve:changed",
+    "run_id": "r2_handles-ts6-075033"
+   },
+   {
+    "oracle": "r2_handles",
+    "server": "ts6-6.0.3",
+    "project": "pmndrs/zustand@b57db4f86ef1",
+    "key": {
+     "method": "completionResolve",
+     "path": "tests/persistSync.test.tsx",
+     "line": 311,
+     "character": 28,
+     "extra": "end|top1|countReset|2|null|￿16|0"
+    },
+    "expected": [
+     [
+      "additionalTextEdits",
+      7,
+      0,
+      7,
+      0,
+      "import type { countReset } from 'node:console'\n"
+     ]
+    ],
+    "actual": [
+     [
+      "additionalTextEdits",
+      7,
+      0,
+      7,
+      0,
+      "import { countReset } from 'node:console'\n"
+     ]
+    ],
+    "ops": [
+     {
+      "kind": "open",
+      "path": "tests/persistSync.test.tsx"
+     },
+     {
+      "kind": "change",
+      "path": "tests/persistSync.test.tsx",
+      "start": [
+       0,
+       0
+      ],
+      "end": [
+       0,
+       0
+      ],
+      "text": "\n"
+     }
+    ],
+    "detail": "{\"case\": {\"extra\": \"end\", \"path\": \"tests/persistSync.test.tsx\", \"shift\": {\"col\": 0, \"line\": 0, \"text\": \"\\n\", \"variant\": \"top\"}, \"sub\": \"completion\", \"where\": [311, 28]}, \"note\": \"\", \"shape\": \"completionResolve:changed\"}",
+    "reproduced": "0/0",
+    "reduced_ops": [],
+    "signature": "ts6|r2_handles|completionResolve:changed",
+    "run_id": "r2_handles-ts6-075033"
+   },
+   {
+    "oracle": "r2_handles",
+    "server": "ts6-6.0.3",
+    "project": "pmndrs/zustand@b57db4f86ef1",
+    "key": {
+     "method": "completionResolve",
+     "path": "tests/persistSync.test.tsx",
+     "line": 311,
+     "character": 28,
+     "extra": "end|top1|countReset|2|null|￿16|1"
+    },
+    "expected": [
+     [
+      "additionalTextEdits",
+      7,
+      0,
+      7,
+      0,
+      "import type { countReset } from 'console'\n"
+     ]
+    ],
+    "actual": [
+     [
+      "additionalTextEdits",
+      7,
+      0,
+      7,
+      0,
+      "import { countReset } from 'console'\n"
+     ]
+    ],
+    "ops": [
+     {
+      "kind": "open",
+      "path": "tests/persistSync.test.tsx"
+     },
+     {
+      "kind": "change",
+      "path": "tests/persistSync.test.tsx",
+      "start": [
+       0,
+       0
+      ],
+      "end": [
+       0,
+       0
+      ],
+      "text": "\n"
+     }
+    ],
+    "detail": "{\"case\": {\"extra\": \"end\", \"path\": \"tests/persistSync.test.tsx\", \"shift\": {\"col\": 0, \"line\": 0, \"text\": \"\\n\", \"variant\": \"top\"}, \"sub\": \"completion\", \"where\": [311, 28]}, \"note\": \"\", \"shape\": \"completionResolve:changed\"}",
+    "reproduced": "0/0",
+    "reduced_ops": [],
+    "signature": "ts6|r2_handles|completionResolve:changed",
+    "run_id": "r2_handles-ts6-075033"
+   }
+  ]
+ },
+ "replays": [
+  {
+   "signature": "ts6|r2_handles|completionResolve:changed",
+   "key": {
+    "method": "completionResolve",
+    "path": "tests/persistSync.test.tsx",
+    "line": 311,
+    "character": 28,
+    "extra": "end|top1|count|2|null|￿16|0"
+   },
+   "outcomes": [
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 24.657,
+     "observed_shape": "completionResolve:changed",
+     "observed_actual": [
+      [
+       "additionalTextEdits",
+       7,
+       0,
+       7,
+       0,
+       "import { count } from 'node:console'\n"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "additionalTextEdits",
+       7,
+       0,
+       7,
+       0,
+       "import type { count } from 'node:console'\n"
+      ]
+     ]
+    },
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 22.176,
+     "observed_shape": "completionResolve:changed",
+     "observed_actual": [
+      [
+       "additionalTextEdits",
+       7,
+       0,
+       7,
+       0,
+       "import { count } from 'node:console'\n"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "additionalTextEdits",
+       7,
+       0,
+       7,
+       0,
+       "import type { count } from 'node:console'\n"
+      ]
+     ]
+    },
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 22.8,
+     "observed_shape": "completionResolve:changed",
+     "observed_actual": [
+      [
+       "additionalTextEdits",
+       7,
+       0,
+       7,
+       0,
+       "import { count } from 'node:console'\n"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "additionalTextEdits",
+       7,
+       0,
+       7,
+       0,
+       "import type { count } from 'node:console'\n"
+      ]
+     ]
+    }
+   ],
+   "reproduced": "3/3"
+  },
+  {
+   "signature": "ts6|r2_handles|completionResolve:changed",
+   "key": {
+    "method": "completionResolve",
+    "path": "tests/persistSync.test.tsx",
+    "line": 311,
+    "character": 28,
+    "extra": "end|top1|count|2|null|￿16|1"
+   },
+   "outcomes": [
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 19.707,
+     "observed_shape": "completionResolve:changed",
+     "observed_actual": [
+      [
+       "additionalTextEdits",
+       7,
+       0,
+       7,
+       0,
+       "import { count } from 'console'\n"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "additionalTextEdits",
+       7,
+       0,
+       7,
+       0,
+       "import type { count } from 'console'\n"
+      ]
+     ]
+    },
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 20.271,
+     "observed_shape": "completionResolve:changed",
+     "observed_actual": [
+      [
+       "additionalTextEdits",
+       7,
+       0,
+       7,
+       0,
+       "import { count } from 'console'\n"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "additionalTextEdits",
+       7,
+       0,
+       7,
+       0,
+       "import type { count } from 'console'\n"
+      ]
+     ]
+    },
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 21.189,
+     "observed_shape": "completionResolve:changed",
+     "observed_actual": [
+      [
+       "additionalTextEdits",
+       7,
+       0,
+       7,
+       0,
+       "import { count } from 'console'\n"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "additionalTextEdits",
+       7,
+       0,
+       7,
+       0,
+       "import type { count } from 'console'\n"
+      ]
+     ]
+    }
+   ],
+   "reproduced": "3/3"
+  },
+  {
+   "signature": "ts6|r2_handles|completionResolve:changed",
+   "key": {
+    "method": "completionResolve",
+    "path": "tests/persistSync.test.tsx",
+    "line": 311,
+    "character": 28,
+    "extra": "end|top1|countReset|2|null|￿16|0"
+   },
+   "outcomes": [
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 21.69,
+     "observed_shape": "completionResolve:changed",
+     "observed_actual": [
+      [
+       "additionalTextEdits",
+       7,
+       0,
+       7,
+       0,
+       "import { countReset } from 'node:console'\n"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "additionalTextEdits",
+       7,
+       0,
+       7,
+       0,
+       "import type { countReset } from 'node:console'\n"
+      ]
+     ]
+    },
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 21.303,
+     "observed_shape": "completionResolve:changed",
+     "observed_actual": [
+      [
+       "additionalTextEdits",
+       7,
+       0,
+       7,
+       0,
+       "import { countReset } from 'node:console'\n"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "additionalTextEdits",
+       7,
+       0,
+       7,
+       0,
+       "import type { countReset } from 'node:console'\n"
+      ]
+     ]
+    },
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 22.751,
+     "observed_shape": "completionResolve:changed",
+     "observed_actual": [
+      [
+       "additionalTextEdits",
+       7,
+       0,
+       7,
+       0,
+       "import { countReset } from 'node:console'\n"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "additionalTextEdits",
+       7,
+       0,
+       7,
+       0,
+       "import type { countReset } from 'node:console'\n"
+      ]
+     ]
+    }
+   ],
+   "reproduced": "3/3"
+  },
+  {
+   "signature": "ts6|r2_handles|completionResolve:changed",
+   "key": {
+    "method": "completionResolve",
+    "path": "tests/persistSync.test.tsx",
+    "line": 311,
+    "character": 28,
+    "extra": "end|top1|countReset|2|null|￿16|1"
+   },
+   "outcomes": [
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 22.207,
+     "observed_shape": "completionResolve:changed",
+     "observed_actual": [
+      [
+       "additionalTextEdits",
+       7,
+       0,
+       7,
+       0,
+       "import { countReset } from 'console'\n"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "additionalTextEdits",
+       7,
+       0,
+       7,
+       0,
+       "import type { countReset } from 'console'\n"
+      ]
+     ]
+    },
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 23.068,
+     "observed_shape": "completionResolve:changed",
+     "observed_actual": [
+      [
+       "additionalTextEdits",
+       7,
+       0,
+       7,
+       0,
+       "import { countReset } from 'console'\n"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "additionalTextEdits",
+       7,
+       0,
+       7,
+       0,
+       "import type { countReset } from 'console'\n"
+      ]
+     ]
+    },
+    {
+     "settled": true,
+     "control_stable": true,
+     "reproduced": true,
+     "seconds": 22.46,
+     "observed_shape": "completionResolve:changed",
+     "observed_actual": [
+      [
+       "additionalTextEdits",
+       7,
+       0,
+       7,
+       0,
+       "import { countReset } from 'console'\n"
+      ]
+     ],
+     "observed_expected": [
+      [
+       "additionalTextEdits",
+       7,
+       0,
+       7,
+       0,
+       "import type { countReset } from 'console'\n"
+      ]
+     ]
+    }
+   ],
+   "reproduced": "3/3"
+  }
+ ],
+ "total_seconds": 407.3
+}

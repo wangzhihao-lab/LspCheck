@@ -1,0 +1,3 @@
+2026-09-24 11:19:35,458 INFO campaign_run run 85d58853a21e: r1_history on ts7 7.0.2, ChatGPTNextWeb/NextChat@defdcdb55d85 seed 2 settled, targets ['app/command.ts', 'app/components/mask.tsx', 'app/utils/store.ts']
+2026-09-24 11:29:18,355 INFO campaign_run run 85d58853a21e: 0 candidate(s) in 583s; confirming
+2026-09-24 11:29:18,357 INFO campaign_run run 85d58853a21e finished: ok, 0 confirmed of 0 candidate(s), 583s

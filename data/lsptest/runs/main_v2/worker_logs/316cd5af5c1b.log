@@ -1,0 +1,3 @@
+2026-11-18 10:50:50,112 INFO campaign_run run 316cd5af5c1b: r0_crash on gopls v0.23.0, schollz/croc@5890191be511 seed 1 settled, targets ['src/cli/updatecheck_test.go', 'src/comm/comm.go', 'src/croc/overwrite_test.go']
+2026-11-18 10:50:59,927 INFO campaign_run run 316cd5af5c1b: 0 candidate(s) in 10s; confirming
+2026-11-18 10:50:59,929 INFO campaign_run run 316cd5af5c1b finished: ok, 0 confirmed of 0 candidate(s), 10s

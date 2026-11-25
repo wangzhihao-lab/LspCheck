@@ -1,0 +1,455 @@
+{
+  "rule": "Rule per language: GitHub repositories with stars >= 1000, pushed after the cutoff, size between 200 KB and 40 MB, not archived, not a fork, whose root contains the language's project file (tsconfig.json / pyproject.toml or setup.py / Cargo.toml / go.mod), whose name or description is not a list, tutorial or template, where the language is at least 60% of the code bytes and the tree holds at least 30 source files of that language. Take the first 10 by stars and pin the default-branch HEAD commit. ",
+  "cutoff": "2026-03-23",
+  "selected_on": "2026-09-23",
+  "corpus": {
+    "typescript": [
+      {
+        "language": "typescript",
+        "repo": "modelcontextprotocol/servers",
+        "stars": 90555,
+        "size_kb": 29607,
+        "lang_share": 0.82,
+        "source_files": 76,
+        "default_branch": "main",
+        "commit": "f46d9578190b476b3501923ea8977d899e8db2cb",
+        "pushed_at": "2026-09-22T14:30:16Z"
+      },
+      {
+        "language": "typescript",
+        "repo": "ChatGPTNextWeb/NextChat",
+        "stars": 88806,
+        "size_kb": 21025,
+        "lang_share": 0.92,
+        "source_files": 183,
+        "default_branch": "main",
+        "commit": "defdcdb55d850cd12c4c657eb83729fd66e215c0",
+        "pushed_at": "2026-08-11T02:07:25Z"
+      },
+      {
+        "language": "typescript",
+        "repo": "Fission-AI/OpenSpec",
+        "stars": 69909,
+        "size_kb": 9603,
+        "lang_share": 0.99,
+        "source_files": 427,
+        "default_branch": "main",
+        "commit": "f179ed4e40567cdb56501ee3f4d09efbcb1557b8",
+        "pushed_at": "2026-09-22T23:46:45Z"
+      },
+      {
+        "language": "typescript",
+        "repo": "upstash/context7",
+        "stars": 62347,
+        "size_kb": 37780,
+        "lang_share": 0.99,
+        "source_files": 135,
+        "default_branch": "master",
+        "commit": "6477e43e31d27a5c1bc044506e1c14de15f8a110",
+        "pushed_at": "2026-09-23T03:53:23Z"
+      },
+      {
+        "language": "typescript",
+        "repo": "reduxjs/redux",
+        "stars": 61489,
+        "size_kb": 35956,
+        "lang_share": 0.88,
+        "source_files": 59,
+        "default_branch": "master",
+        "commit": "fb3bad6804d651b8ae0e909f32765beb989ba6f8",
+        "pushed_at": "2026-09-22T21:08:14Z"
+      },
+      {
+        "language": "typescript",
+        "repo": "pmndrs/zustand",
+        "stars": 58728,
+        "size_kb": 8115,
+        "lang_share": 0.98,
+        "source_files": 34,
+        "default_branch": "main",
+        "commit": "b57db4f86ef179285da216eeb291266da82c361c",
+        "pushed_at": "2026-09-22T23:21:05Z"
+      },
+      {
+        "language": "typescript",
+        "repo": "ChromeDevTools/chrome-devtools-mcp",
+        "stars": 52499,
+        "size_kb": 11224,
+        "lang_share": 0.98,
+        "source_files": 211,
+        "default_branch": "main",
+        "commit": "2250cdcde4aad79d54101c80346df4190e0c2da7",
+        "pushed_at": "2026-09-23T06:29:10Z"
+      },
+      {
+        "language": "typescript",
+        "repo": "chenglou/pretext",
+        "stars": 50449,
+        "size_kb": 30160,
+        "lang_share": 0.95,
+        "source_files": 84,
+        "default_branch": "main",
+        "commit": "2e5e2bdaee398784b9cf27b24ca96df2e85396b8",
+        "pushed_at": "2026-09-21T01:04:28Z"
+      },
+      {
+        "language": "typescript",
+        "repo": "react-hook-form/react-hook-form",
+        "stars": 44864,
+        "size_kb": 32459,
+        "lang_share": 0.99,
+        "source_files": 408,
+        "default_branch": "master",
+        "commit": "5fd9ef65290bef2ccaa7ac96dc8d5d55478b5410",
+        "pushed_at": "2026-09-22T22:26:23Z"
+      },
+      {
+        "language": "typescript",
+        "repo": "vercel/hyper",
+        "stars": 44741,
+        "size_kb": 23469,
+        "lang_share": 0.98,
+        "source_files": 106,
+        "default_branch": "canary",
+        "commit": "30ec0a2a91de17eeb32dd71998fe8a8ec59f98eb",
+        "pushed_at": "2026-08-21T20:44:39Z"
+      }
+    ],
+    "python": [
+      {
+        "language": "python",
+        "repo": "TheAlgorithms/Python",
+        "stars": 224891,
+        "size_kb": 18225,
+        "lang_share": 1.0,
+        "source_files": 1586,
+        "default_branch": "master",
+        "commit": "60cea20f8537466e90b019f2a8fb2714165d10c5",
+        "pushed_at": "2026-09-23T06:46:45Z"
+      },
+      {
+        "language": "python",
+        "repo": "github/spec-kit",
+        "stars": 138451,
+        "size_kb": 18531,
+        "lang_share": 0.97,
+        "source_files": 549,
+        "default_branch": "main",
+        "commit": "67ab049e8d43d59d7092531fd0f1ff56943ad015",
+        "pushed_at": "2026-09-23T02:09:04Z"
+      },
+      {
+        "language": "python",
+        "repo": "Graphify-Labs/graphify",
+        "stars": 120660,
+        "size_kb": 18524,
+        "lang_share": 1.0,
+        "source_files": 415,
+        "default_branch": "v8",
+        "commit": "a5957aa6ef51c9be8d054de9783d25046c187f3f",
+        "pushed_at": "2026-09-22T21:40:05Z"
+      },
+      {
+        "language": "python",
+        "repo": "browser-use/browser-use",
+        "stars": 116005,
+        "size_kb": 36756,
+        "lang_share": 0.99,
+        "source_files": 404,
+        "default_branch": "main",
+        "commit": "d8110c5ff87ccba887aaa726cdb780f2f84bef8d",
+        "pushed_at": "2026-09-18T22:34:42Z"
+      },
+      {
+        "language": "python",
+        "repo": "TauricResearch/TradingAgents",
+        "stars": 108207,
+        "size_kb": 5685,
+        "lang_share": 1.0,
+        "source_files": 158,
+        "default_branch": "main",
+        "commit": "2d17df8da1536c121e4d7395ac5a5dcec9e96d6f",
+        "pushed_at": "2026-09-18T05:43:45Z"
+      },
+      {
+        "language": "python",
+        "repo": "Panniantong/Agent-Reach",
+        "stars": 84942,
+        "size_kb": 2024,
+        "lang_share": 0.96,
+        "source_files": 71,
+        "default_branch": "main",
+        "commit": "a19a171fa980a0785849596492e0af4db800c82f",
+        "pushed_at": "2026-09-15T16:16:24Z"
+      },
+      {
+        "language": "python",
+        "repo": "D4Vinci/Scrapling",
+        "stars": 83034,
+        "size_kb": 10509,
+        "lang_share": 1.0,
+        "source_files": 126,
+        "default_branch": "main",
+        "commit": "08f107b1240fd72847b0f5e10426c7e6cc16e67e",
+        "pushed_at": "2026-09-23T00:03:58Z"
+      },
+      {
+        "language": "python",
+        "repo": "Z4nzu/hackingtool",
+        "stars": 79655,
+        "size_kb": 6457,
+        "lang_share": 0.99,
+        "source_files": 80,
+        "default_branch": "master",
+        "commit": "ef5334f8d37e5be2eecbf56e334f5e3f0f6817ec",
+        "pushed_at": "2026-08-23T16:54:04Z"
+      },
+      {
+        "language": "python",
+        "repo": "hiyouga/LlamaFactory",
+        "stars": 74988,
+        "size_kb": 14039,
+        "lang_share": 1.0,
+        "source_files": 315,
+        "default_branch": "main",
+        "commit": "97b32d3133b501432141a82949d5c7bc4d94f23a",
+        "pushed_at": "2026-09-14T08:09:48Z"
+      },
+      {
+        "language": "python",
+        "repo": "pallets/flask",
+        "stars": 74768,
+        "size_kb": 12311,
+        "lang_share": 1.0,
+        "source_files": 83,
+        "default_branch": "main",
+        "commit": "d73fa1cdcbd8b1465c151db8924ba58b1dd14e35",
+        "pushed_at": "2026-09-08T16:40:53Z"
+      }
+    ],
+    "rust": [
+      {
+        "language": "rust",
+        "repo": "rtk-ai/rtk",
+        "stars": 81488,
+        "size_kb": 9872,
+        "lang_share": 0.96,
+        "source_files": 155,
+        "default_branch": "develop",
+        "commit": "b748a5f75563f410103551689097650be7210d99",
+        "pushed_at": "2026-09-21T15:06:25Z"
+      },
+      {
+        "language": "rust",
+        "repo": "BurntSushi/ripgrep",
+        "stars": 68521,
+        "size_kb": 5700,
+        "lang_share": 0.95,
+        "source_files": 110,
+        "default_branch": "master",
+        "commit": "3fce3b5bb0236da2df6d99672afb8a719642eca7",
+        "pushed_at": "2026-08-04T13:59:44Z"
+      },
+      {
+        "language": "rust",
+        "repo": "dani-garcia/vaultwarden",
+        "stars": 68034,
+        "size_kb": 12626,
+        "lang_share": 0.83,
+        "source_files": 62,
+        "default_branch": "main",
+        "commit": "cc67d644f62605cb46f4d16c4a2eed1a861cc8bb",
+        "pushed_at": "2026-09-18T18:35:12Z"
+      },
+      {
+        "language": "rust",
+        "repo": "alacritty/alacritty",
+        "stars": 65791,
+        "size_kb": 14582,
+        "lang_share": 0.96,
+        "source_files": 88,
+        "default_branch": "master",
+        "commit": "d692748d3f61253ebe9f5094320120d22f6a046f",
+        "pushed_at": "2026-08-31T21:11:12Z"
+      },
+      {
+        "language": "rust",
+        "repo": "rust-lang/rustlings",
+        "stars": 64194,
+        "size_kb": 4464,
+        "lang_share": 0.98,
+        "source_files": 222,
+        "default_branch": "main",
+        "commit": "a650509c789da1656f813392b16aa1fa043b7f3e",
+        "pushed_at": "2026-09-21T14:36:34Z"
+      },
+      {
+        "language": "rust",
+        "repo": "sharkdp/bat",
+        "stars": 60550,
+        "size_kb": 35177,
+        "lang_share": 0.98,
+        "source_files": 67,
+        "default_branch": "master",
+        "commit": "4987f76709aae3a1c4db723c53874c9ddcb0c4fd",
+        "pushed_at": "2026-09-22T18:13:30Z"
+      },
+      {
+        "language": "rust",
+        "repo": "FuelLabs/fuels-rs",
+        "stars": 43010,
+        "size_kb": 20144,
+        "lang_share": 0.92,
+        "source_files": 226,
+        "default_branch": "master",
+        "commit": "d9a250a51818dda64bfeb5ef7cc19cf27bdcd623",
+        "pushed_at": "2026-08-29T12:24:43Z"
+      },
+      {
+        "language": "rust",
+        "repo": "sxyazi/yazi",
+        "stars": 42365,
+        "size_kb": 9901,
+        "lang_share": 0.94,
+        "source_files": 1286,
+        "default_branch": "main",
+        "commit": "0ea4c5d9ef75d7165c2e3b4eb8d713fc11f26c96",
+        "pushed_at": "2026-09-21T23:25:15Z"
+      },
+      {
+        "language": "rust",
+        "repo": "lapce/lapce",
+        "stars": 38864,
+        "size_kb": 28666,
+        "lang_share": 0.99,
+        "source_files": 141,
+        "default_branch": "master",
+        "commit": "b604d57de4a820006d335a3be0d7583eb8fab558",
+        "pushed_at": "2026-09-23T00:51:31Z"
+      },
+      {
+        "language": "rust",
+        "repo": "AlexsJones/llmfit",
+        "stars": 37047,
+        "size_kb": 29901,
+        "lang_share": 0.83,
+        "source_files": 42,
+        "default_branch": "main",
+        "commit": "2ffe4fd899a66852dda82783da7ab8390f084d1c",
+        "pushed_at": "2026-09-21T08:49:53Z"
+      }
+    ],
+    "go": [
+      {
+        "language": "go",
+        "repo": "fatedier/frp",
+        "stars": 109577,
+        "size_kb": 32737,
+        "lang_share": 0.83,
+        "source_files": 351,
+        "default_branch": "dev",
+        "commit": "d20a232996007dfe6ab425abc0a39a3ae9a0889b",
+        "pushed_at": "2026-09-15T05:55:33Z"
+      },
+      {
+        "language": "go",
+        "repo": "gin-gonic/gin",
+        "stars": 89246,
+        "size_kb": 10691,
+        "lang_share": 1.0,
+        "source_files": 99,
+        "default_branch": "master",
+        "commit": "3b08cd7235bd5ad2f055aa9e38135f111f6c5926",
+        "pushed_at": "2026-09-19T13:11:32Z"
+      },
+      {
+        "language": "go",
+        "repo": "junegunn/fzf",
+        "stars": 83209,
+        "size_kb": 8439,
+        "lang_share": 0.65,
+        "source_files": 89,
+        "default_branch": "master",
+        "commit": "b1be3a8be1b833ce5b92fbbac11637643d60a046",
+        "pushed_at": "2026-09-21T14:49:46Z"
+      },
+      {
+        "language": "go",
+        "repo": "caddyserver/caddy",
+        "stars": 76009,
+        "size_kb": 21853,
+        "lang_share": 0.98,
+        "source_files": 350,
+        "default_branch": "master",
+        "commit": "c18099a0af5e88c8d9da0b9d797f6f2c62d60a23",
+        "pushed_at": "2026-09-21T22:13:02Z"
+      },
+      {
+        "language": "go",
+        "repo": "nektos/act",
+        "stars": 72082,
+        "size_kb": 17748,
+        "lang_share": 0.81,
+        "source_files": 128,
+        "default_branch": "master",
+        "commit": "4f411281417e88660bea1c1a1749aa71ae0bd60f",
+        "pushed_at": "2026-08-09T22:50:11Z"
+      },
+      {
+        "language": "go",
+        "repo": "router-for-me/CLIProxyAPI",
+        "stars": 52937,
+        "size_kb": 38269,
+        "lang_share": 1.0,
+        "source_files": 1432,
+        "default_branch": "main",
+        "commit": "673131f57484517c3a1eae7e36c4cfa7b9bb4efc",
+        "pushed_at": "2026-09-23T01:49:21Z"
+      },
+      {
+        "language": "go",
+        "repo": "jesseduffield/lazydocker",
+        "stars": 52924,
+        "size_kb": 30218,
+        "lang_share": 0.98,
+        "source_files": 1176,
+        "default_branch": "master",
+        "commit": "7e7aadc2071d58031bf2daafca1fbd4093efc23f",
+        "pushed_at": "2026-04-19T02:51:06Z"
+      },
+      {
+        "language": "go",
+        "repo": "charmbracelet/bubbletea",
+        "stars": 45092,
+        "size_kb": 5914,
+        "lang_share": 1.0,
+        "source_files": 111,
+        "default_branch": "main",
+        "commit": "657aaae216e3f87df09b60959a9fe5de7b2ca419",
+        "pushed_at": "2026-09-22T11:00:49Z"
+      },
+      {
+        "language": "go",
+        "repo": "spf13/cobra",
+        "stars": 44635,
+        "size_kb": 2107,
+        "lang_share": 1.0,
+        "source_files": 36,
+        "default_branch": "main",
+        "commit": "adbc8813901bba65827259daa8e22ff94ec1f30e",
+        "pushed_at": "2026-07-11T00:43:07Z"
+      },
+      {
+        "language": "go",
+        "repo": "XTLS/Xray-core",
+        "stars": 41739,
+        "size_kb": 31291,
+        "lang_share": 1.0,
+        "source_files": 949,
+        "default_branch": "main",
+        "commit": "d562d8947d3175db86b4fa849742433a9876cb63",
+        "pushed_at": "2026-09-23T04:05:27Z"
+      }
+    ]
+  }
+}

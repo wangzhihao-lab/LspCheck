@@ -1,0 +1,12 @@
+2026-09-24 20:38:48,753 INFO campaign_run run 2fb4af1ae90b: r5_transforms on gopls v0.9.5, gopls-43144 seed 1 settled, targets ['bar/bar.go', 'bar/bar_test.go', 'bar/bar_x_test.go', 'foo/foo.go']
+2026-09-24 20:39:22,846 INFO campaign_run run 2fb4af1ae90b: 3 candidate(s) in 34s; confirming
+2026-09-24 20:39:32,297 INFO flake replay 1/3 of gopls|r5_transforms|documentSymbol:changed: settled=True control_stable=True reproduced=True (9.4s)
+2026-09-24 20:39:42,070 INFO flake replay 2/3 of gopls|r5_transforms|documentSymbol:changed: settled=True control_stable=True reproduced=True (9.8s)
+2026-09-24 20:39:51,479 INFO flake replay 3/3 of gopls|r5_transforms|documentSymbol:changed: settled=True control_stable=True reproduced=True (9.4s)
+2026-09-24 20:40:01,168 INFO flake replay 1/3 of gopls|r5_transforms|semanticTokens:missing: settled=True control_stable=True reproduced=True (9.7s)
+2026-09-24 20:40:10,770 INFO flake replay 2/3 of gopls|r5_transforms|semanticTokens:missing: settled=True control_stable=True reproduced=True (9.6s)
+2026-09-24 20:40:20,325 INFO flake replay 3/3 of gopls|r5_transforms|semanticTokens:missing: settled=True control_stable=True reproduced=True (9.6s)
+2026-09-24 20:40:29,961 INFO flake replay 1/3 of gopls|r5_transforms|foldingRange:changed: settled=True control_stable=True reproduced=True (9.6s)
+2026-09-24 20:40:39,366 INFO flake replay 2/3 of gopls|r5_transforms|foldingRange:changed: settled=True control_stable=True reproduced=True (9.4s)
+2026-09-24 20:40:48,842 INFO flake replay 3/3 of gopls|r5_transforms|foldingRange:changed: settled=True control_stable=True reproduced=True (9.5s)
+2026-09-24 20:40:48,876 INFO campaign_run run 2fb4af1ae90b finished: ok, 3 confirmed of 3 candidate(s), 120s

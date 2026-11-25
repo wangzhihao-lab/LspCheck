@@ -1,0 +1,9 @@
+{
+ "queries": [
+  "completionInsert unexpected repo:rust-lang/rust-analyzer is:issue",
+  "completionInsert \"wrong edit\" repo:rust-lang/rust-analyzer is:issue"
+ ],
+ "matches": [],
+ "notes": [],
+ "authenticated": true
+}

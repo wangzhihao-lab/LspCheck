@@ -1,0 +1,164 @@
+{
+  "id": "main_v2",
+  "description": "Second corpus (user decision 2026-11-18): the projects ranked 11-20 per language by the corpus rule of main_v1 (data/lsptest/corpus_v2.json: same filters, the same cached search of 2026-09-23, commits pinned at 2026-09-23). Everything else is main_v1's configuration unchanged: the same five server builds, all seven oracles with the same seeds, case limits, targets, timeouts, concurrency, server limits, flake filter and signature cap. Run on the frozen tool v3 (engine, oracles and campaign code as for main_v1); the tool was frozen before this corpus was selected.",
+  "corpus": "data/lsptest/corpus_v2_prepared.json",
+  "servers": [
+    {
+      "kind": "pyright",
+      "version": "1.1.414"
+    },
+    {
+      "kind": "ts6",
+      "version": "6.0.3"
+    },
+    {
+      "kind": "ts7",
+      "version": "7.0.2"
+    },
+    {
+      "kind": "rust-analyzer",
+      "version": "2026-09-21"
+    },
+    {
+      "kind": "gopls",
+      "version": "v0.23.0"
+    }
+  ],
+  "oracles": {
+    "r0_crash": {
+      "seeds": {
+        "settled": [
+          1
+        ]
+      }
+    },
+    "r1_history": {
+      "seeds": {
+        "settled": [
+          1,
+          2,
+          3
+        ],
+        "race0": [
+          1
+        ],
+        "race200": [
+          1
+        ]
+      },
+      "max_cases": 12
+    },
+    "r2_handles": {
+      "seeds": {
+        "settled": [
+          1,
+          2
+        ]
+      },
+      "max_cases": 12
+    },
+    "r3_routes": {
+      "seeds": {
+        "settled": [
+          1,
+          2
+        ]
+      }
+    },
+    "r4_edits": {
+      "seeds": {
+        "settled": [
+          1,
+          2
+        ]
+      },
+      "max_cases": 12
+    },
+    "r5_transforms": {
+      "seeds": {
+        "settled": [
+          1,
+          2
+        ]
+      },
+      "max_cases": 6
+    },
+    "r6_crossimpl": {
+      "seeds": {
+        "settled": [
+          1,
+          2
+        ]
+      },
+      "servers": [
+        "ts7"
+      ]
+    }
+  },
+  "targets": {
+    "max_files": 3,
+    "max_positions_per_file": 12,
+    "max_file_bytes": 256000
+  },
+  "timeouts": {
+    "settle_s": 300,
+    "request_s": 30,
+    "run_s": 7200
+  },
+  "concurrency": 4,
+  "server_limits": {
+    "rust-analyzer": 2
+  },
+  "wall_clock_budget_h": 0,
+  "flake": {
+    "n": 3,
+    "per_signature": 1
+  },
+  "signature_cap": {
+    "runs": 3,
+    "scope": "campaign"
+  },
+  "eligibility": {
+    "force": [
+      {
+        "server": "ts6",
+        "repo": "umami-software/umami",
+        "reason": "the frozen preparation ran pnpm 10 (lockfile fallback) and failed on the project's engines field (pnpm 12.3.4); dependencies installed by hand with pnpm 12.3.4, --ignore-scripts --frozen-lockfile (data/lsptest/corpus_v2_deps_manual.md); re-probe settles with 0 errors"
+      },
+      {
+        "server": "ts7",
+        "repo": "umami-software/umami",
+        "reason": "the frozen preparation ran pnpm 10 (lockfile fallback) and failed on the project's engines field (pnpm 12.3.4); dependencies installed by hand with pnpm 12.3.4, --ignore-scripts --frozen-lockfile (data/lsptest/corpus_v2_deps_manual.md); re-probe settles with 0 errors"
+      },
+      {
+        "server": "ts6",
+        "repo": "pear-devs/pear-desktop",
+        "reason": "the frozen preparation ran pnpm 10 and failed on the project's engines field (pnpm >=11); dependencies installed by hand with pnpm 11.27.1 (the latest 11.x on 2026-09-23), --ignore-scripts --frozen-lockfile, Node engine check off for the build tool node-gyp (data/lsptest/corpus_v2_deps_manual.md); re-probe settles with 0 errors"
+      },
+      {
+        "server": "ts7",
+        "repo": "pear-devs/pear-desktop",
+        "reason": "the frozen preparation ran pnpm 10 and failed on the project's engines field (pnpm >=11); dependencies installed by hand with pnpm 11.27.1 (the latest 11.x on 2026-09-23), --ignore-scripts --frozen-lockfile, Node engine check off for the build tool node-gyp (data/lsptest/corpus_v2_deps_manual.md); re-probe settles with 0 errors"
+      },
+      {
+        "server": "ts6",
+        "repo": "vadimdemedes/ink",
+        "reason": "no lockfile in the repository, so the frozen preparation installed nothing; dependencies installed by hand with npm --ignore-scripts and only versions published by 2026-09-23 (npm --before; data/lsptest/corpus_v2_deps_manual.md); re-probe settles with 0 errors"
+      },
+      {
+        "server": "ts7",
+        "repo": "vadimdemedes/ink",
+        "reason": "no lockfile in the repository, so the frozen preparation installed nothing; dependencies installed by hand with npm --ignore-scripts and only versions published by 2026-09-23 (npm --before; data/lsptest/corpus_v2_deps_manual.md); re-probe settles with 0 errors"
+      }
+    ],
+    "exclude": []
+  },
+  "project_overrides": {},
+  "notes": [
+    "Identical to data/lsptest/campaigns/main_v1.json except id, description, corpus, eligibility, project overrides and these notes, so that the two corpora are two runs of one campaign design.",
+    "The signature cap is per campaign: signatures confirmed in main_v1 are not capped here; groups that repeat a main_v1 bug are matched to its cause when the groups are judged.",
+    "Eligibility and project overrides are decided from the corpus probe (data/lsptest/corpus_v2_prepared.md) before the run, and recorded here.",
+    "main_v1's notes on seeds, oracle options and cost controls apply unchanged: race0 and race200 use seed 1, the seed of the first settled run: same targets and histories, different timing, so that timing-only violations can be told apart. | r3_routes, r6_crossimpl and r0_crash do not use max_cases (they check every target). | server_limits: at most 2 rust-analyzer runs at a time (a session takes up to 3.5 GB; R1 runs two side by side). | Cost controls (campaign_costs.py): candidates with a registered legitimate-difference label (r3_routes definitionConsistency.signature / .shorthand) are recorded as labelled-legitimate without replay; a signature confirmed in 3 runs is capped (later candidates recorded as capped, not replayed).",
+    "Eligibility (2026-11-18, from data/lsptest/corpus_v2_prepared.md): all 50 probes settled. Dependencies failed in the frozen preparation for four TypeScript projects; three were installed by hand under the frozen pipeline's own rule (the project's package manager, no install scripts) and are forced above. colinhacks/zod stays out by the eligibility rule (deps failed): its package.json pins the package manager nub@0.8.3, which is not on the npm registry, and its lockfile is rejected by pnpm 10 (no entry for the workspace package) and by npm (workspace: protocol). So 48 of the 50 pairs run."
+  ]
+}

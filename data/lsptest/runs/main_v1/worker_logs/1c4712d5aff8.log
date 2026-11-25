@@ -1,0 +1,3 @@
+2026-09-24 04:29:08,913 INFO campaign_run run 1c4712d5aff8: r1_history on ts7 7.0.2, upstash/context7@6477e43e31d2 seed 1 settled, targets ['packages/cli/src/__tests__/command-auth-wiring.test.ts', 'packages/sdk/src/client.ts', 'packages/sdk/src/commands/command.ts']
+2026-09-24 04:39:26,324 INFO campaign_run run 1c4712d5aff8: 0 candidate(s) in 617s; confirming
+2026-09-24 04:39:26,324 INFO campaign_run run 1c4712d5aff8 finished: ok, 0 confirmed of 0 candidate(s), 618s

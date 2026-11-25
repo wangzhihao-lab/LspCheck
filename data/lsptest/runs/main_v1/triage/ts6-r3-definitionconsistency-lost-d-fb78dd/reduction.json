@@ -1,0 +1,29 @@
+{
+ "vid": "71f6d8ce3149-v00",
+ "ops_before": 0,
+ "narrowed": true,
+ "reduced_confirmed": "3/3",
+ "probes": 0,
+ "cache_hits": 0,
+ "reduce_seconds": 0.0,
+ "budget_exhausted": false,
+ "probe_log": [],
+ "logs": [
+  "ts6-6.0.3-trfb78dd-r3-replay-baseline-20260925-185335-885bc2.jsonl.gz",
+  "ts6-6.0.3-trfb78dd-r3-replay-control-20260925-185341-e6410e.jsonl.gz"
+ ],
+ "observed": {
+  "expected": [
+   [
+    "src/middleware/devtools.ts",
+    190,
+    52,
+    190,
+    59
+   ]
+  ],
+  "actual": []
+ },
+ "ops_after": 0,
+ "total_seconds": 47.6
+}

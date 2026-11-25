@@ -1,0 +1,6 @@
+2026-11-18 15:27:58,915 INFO campaign_run run 1ebb81637940: r4_edits on ts7 7.0.2, hexojs/hexo@751e856691bf seed 2 settled, targets ['lib/hexo/scaffold.ts', 'test/fixtures/post_render.ts', 'test/scripts/tags/blockquote.ts']
+2026-11-18 15:30:08,612 INFO campaign_run run 1ebb81637940: 4 candidate(s) in 130s; confirming
+2026-11-18 15:30:37,826 INFO flake replay 1/3 of ts7|r4_edits|diagnostics:extra:2322,2345: settled=True control_stable=True reproduced=True (29.2s)
+2026-11-18 15:31:06,269 INFO flake replay 2/3 of ts7|r4_edits|diagnostics:extra:2322,2345: settled=True control_stable=True reproduced=True (28.4s)
+2026-11-18 15:31:38,484 INFO flake replay 3/3 of ts7|r4_edits|diagnostics:extra:2322,2345: settled=True control_stable=True reproduced=True (32.2s)
+2026-11-18 15:31:38,490 INFO campaign_run run 1ebb81637940 finished: ok, 1 confirmed of 4 candidate(s), 220s

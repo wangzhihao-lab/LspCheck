@@ -1,0 +1,3 @@
+2026-11-18 13:43:38,790 INFO campaign_run run d089c84a0217: r1_history on ts6 6.0.3, pear-devs/pear-desktop@3ff0a86231fe seed 2 settled, targets ['src/plugins/album-actions/templates/undislike-button.tsx', 'src/plugins/downloader/main/index.ts', 'src/plugins/equalizer/index.ts']
+2026-11-18 13:56:25,599 INFO campaign_run run d089c84a0217: 0 candidate(s) in 767s; confirming
+2026-11-18 13:56:25,600 INFO campaign_run run d089c84a0217 finished: ok, 0 confirmed of 0 candidate(s), 767s

@@ -1,0 +1,92 @@
+{
+ "queries": [
+  "\"blank lines\" in:title repo:golang/go is:issue label:gopls",
+  "\"code action\" extra repo:golang/go is:issue label:gopls",
+  "\"code action\" \"blank lines\" repo:golang/go is:issue label:gopls",
+  "\"code action\" whitespace repo:golang/go is:issue label:gopls"
+ ],
+ "matches": [
+  {
+   "repo": "golang/go",
+   "number": 70085,
+   "title": "x/tools/gopls: add refactor.inline.variable-all code action",
+   "url": "https://github.com/golang/go/issues/70085",
+   "state": "open",
+   "created": "2024-10-29",
+   "comments": 11,
+   "query": "\"code action\" extra repo:golang/go is:issue label:gopls"
+  },
+  {
+   "repo": "golang/go",
+   "number": 39805,
+   "title": "x/tools/gopls: convert 'gofumpt' from formatter to code action provider",
+   "url": "https://github.com/golang/go/issues/39805",
+   "state": "open",
+   "created": "2020-06-24",
+   "comments": 5,
+   "query": "\"code action\" extra repo:golang/go is:issue label:gopls"
+  },
+  {
+   "repo": "golang/go",
+   "number": 56403,
+   "title": "x/tools/gopls: allow enabling gofumpt extra rules",
+   "url": "https://github.com/golang/go/issues/56403",
+   "state": "open",
+   "created": "2022-10-24",
+   "comments": 5,
+   "query": "\"code action\" extra repo:golang/go is:issue label:gopls"
+  },
+  {
+   "repo": "golang/go",
+   "number": 65944,
+   "title": "x/tools/gopls: extract variable returns an extra lhs expression and no template edit support is available",
+   "url": "https://github.com/golang/go/issues/65944",
+   "state": "open",
+   "created": "2024-02-22",
+   "comments": 5,
+   "query": "\"code action\" extra repo:golang/go is:issue label:gopls"
+  },
+  {
+   "repo": "golang/go",
+   "number": 81403,
+   "title": "x/tools/gopls: upgrade mvdan/gofumpt dependency",
+   "url": "https://github.com/golang/go/issues/81403",
+   "state": "closed",
+   "created": "2026-09-09",
+   "comments": 4,
+   "query": "\"code action\" extra repo:golang/go is:issue label:gopls"
+  },
+  {
+   "repo": "golang/go",
+   "number": 50262,
+   "title": "x/tools/gopls: add go:embed support",
+   "url": "https://github.com/golang/go/issues/50262",
+   "state": "closed",
+   "created": "2021-12-10",
+   "comments": 26,
+   "query": "\"code action\" \"blank lines\" repo:golang/go is:issue label:gopls"
+  },
+  {
+   "repo": "golang/go",
+   "number": 77910,
+   "title": "x/tools/gopls: add analyzer to report when code isn't gofmt'd properly",
+   "url": "https://github.com/golang/go/issues/77910",
+   "state": "open",
+   "created": "2026-03-03",
+   "comments": 4,
+   "query": "\"code action\" whitespace repo:golang/go is:issue label:gopls"
+  },
+  {
+   "repo": "golang/go",
+   "number": 31150,
+   "title": "x/tools/gopls: implement rangeFormatting LSP request",
+   "url": "https://github.com/golang/go/issues/31150",
+   "state": "closed",
+   "created": "2019-03-29",
+   "comments": 22,
+   "query": "\"code action\" whitespace repo:golang/go is:issue label:gopls"
+  }
+ ],
+ "notes": [],
+ "authenticated": true
+}

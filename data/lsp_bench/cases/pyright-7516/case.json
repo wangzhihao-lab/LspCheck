@@ -1,0 +1,112 @@
+{
+ "schema": 1,
+ "id": "pyright-7516",
+ "meta": {
+  "server": "pyright",
+  "kind": "pyright",
+  "number": 7516,
+  "url": "https://github.com/microsoft/pyright/issues/7516",
+  "title": "dataclass: Type of \"<parameter>\" could not be determined because it refers to itself",
+  "oracle_class": "R1",
+  "subtype": "query-order",
+  "fix_ref": "none named (maintainer: 'This will be addressed in the next release'; fixed in 1.1.358 per the candidate mapping)",
+  "fix_shas": [
+   "39dfca8acdc8141dac84b11d95071144f273fedf",
+   "4149eb3edaea9254bbf847ec1efacd8fe15f36bb"
+  ],
+  "pre_version": "1.1.357",
+  "post_version": "1.1.358",
+  "pre_build": "1.1.357",
+  "post_build": "1.1.358",
+  "build_notes": "npm pyright@1.1.357 (2024-04-03) and pyright@1.1.358 (2024-04-10), as mapped by the candidate list; the reporter used 1.1.354.",
+  "candidate_rank": 71,
+  "effort_minutes": 14,
+  "notes": "The maintainer's analysis: evaluating dir_b first (for example on a hover) needs the dataclass's synthesized __init__, which needs the types of dir_a and dir_b: a circularity that depends on the evaluation order. Race pattern as in pyright-2983: an edit, a hover on dir_b before the server re-analyses, then compare after settling."
+ },
+ "language": "python",
+ "settings": {},
+ "settings_note": "The issue names no settings (pyright CLI and Pylance defaults); the session defaults apply.",
+ "session": {
+  "settle_timeout_s": 120
+ },
+ "files": [
+  {
+   "path": "main.py",
+   "provenance": "issue-adapted",
+   "source": "issue body, first python code block (the class), preceded by the two import lines of the maintainer's comment",
+   "note": "the issue's first code block has no imports; 'from dataclasses import dataclass' and 'from pathlib import Path' are taken from the maintainer's code block in the same issue"
+  }
+ ],
+ "repro": {
+  "attempt": 2,
+  "timing": "race",
+  "steps": "Open main.py and let the server analyze it. Edit the file (press Enter at the end) and hover the dir_a reference in dir_b's initializer ('dir_a.joinpath(...)') right away, before the server re-analyzes it; the maintainer explains the error appears when dir_b's value is evaluated first, which needs dir_a, which needs the dataclass's synthesized __init__, which needs dir_a and dir_b. Reported (intermittent): 'Type of ... could not be determined because it refers to itself'. After the server settles, the diagnostics of main.py and the hovers on dir_a and dir_b must equal those of a fresh session on the same final text.",
+  "ops": [
+   {
+    "kind": "open",
+    "path": "main.py"
+   },
+   {
+    "kind": "wait",
+    "text": "settle"
+   },
+   {
+    "kind": "change",
+    "path": "main.py",
+    "start": [
+     8,
+     0
+    ],
+    "end": [
+     8,
+     0
+    ],
+    "text": "\n"
+   },
+   {
+    "kind": "request",
+    "path": "main.py",
+    "start": [
+     7,
+     18
+    ],
+    "text": "hover"
+   }
+  ],
+  "probe": {
+   "type": "differs_from_fresh",
+   "params": {
+    "queries": [
+     {
+      "method": "diagnostics",
+      "path": "main.py"
+     },
+     {
+      "method": "hover",
+      "path": "main.py",
+      "position": [
+       6,
+       4
+      ]
+     },
+     {
+      "method": "hover",
+      "path": "main.py",
+      "position": [
+       7,
+       4
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "attempts": [
+  {
+   "attempt": 1,
+   "timing": "race",
+   "summary": "Edit, then an immediate hover on the declared name dir_b (line 8, character 4), then compare diagnostics and hovers with a fresh session: equal on both builds (0/3). A hover on the declared name shows the declared type Path and does not evaluate the initializer, so it does not start the evaluation chain the maintainer describes.",
+   "verdict": "not-reproduced-pre"
+  }
+ ]
+}

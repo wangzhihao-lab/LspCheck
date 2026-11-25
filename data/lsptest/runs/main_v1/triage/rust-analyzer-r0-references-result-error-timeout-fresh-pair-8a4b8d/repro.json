@@ -1,0 +1,435 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "41afcf8c4817-v00",
+ "run_id": "41afcf8c4817",
+ "oracle": "r0_crash",
+ "server": {
+  "kind": "rust-analyzer",
+  "version": "2026-09-21"
+ },
+ "project": {
+  "name": "dani-garcia/vaultwarden@cc67d644f626",
+  "source": "corpus",
+  "ref": "temp/corpus/dani-garcia__vaultwarden@cc67d644f626",
+  "commit": "cc67d644f62605cb46f4d16c4a2eed1a861cc8bb",
+  "language": "rust"
+ },
+ "context": {
+  "seed": 1,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "src/api/core/two_factor/duo.rs",
+    "positions": [
+     [
+      7,
+      12
+     ],
+     [
+      20,
+      10
+     ],
+     [
+      179,
+      37
+     ],
+     [
+      184,
+      49
+     ],
+     [
+      196,
+      73
+     ],
+     [
+      196,
+      80
+     ],
+     [
+      201,
+      21
+     ],
+     [
+      207,
+      12
+     ],
+     [
+      216,
+      31
+     ],
+     [
+      256,
+      27
+     ],
+     [
+      315,
+      57
+     ],
+     [
+      325,
+      41
+     ]
+    ],
+    "ends": [
+     [
+      7,
+      17
+     ],
+     [
+      20,
+      13
+     ],
+     [
+      179,
+      39
+     ],
+     [
+      184,
+      51
+     ],
+     [
+      196,
+      75
+     ],
+     [
+      196,
+      83
+     ],
+     [
+      201,
+      24
+     ],
+     [
+      207,
+      16
+     ],
+     [
+      216,
+      32
+     ],
+     [
+      256,
+      36
+     ],
+     [
+      315,
+      60
+     ],
+     [
+      325,
+      44
+     ]
+    ],
+    "names": [
+     "ApiResult",
+     "routes",
+     "user",
+     "i32",
+     "conn",
+     "DbConn",
+     "Method",
+     "username",
+     "dt",
+     "get_user_duo_data",
+     "prefix",
+     "format"
+    ]
+   },
+   {
+    "path": "src/db/models/attachment.rs",
+    "positions": [
+     [
+      3,
+      20
+     ],
+     [
+      22,
+      5
+     ],
+     [
+      31,
+      10
+     ],
+     [
+      63,
+      92
+     ],
+     [
+      85,
+      19
+     ],
+     [
+      138,
+      115
+     ],
+     [
+      157,
+      20
+     ],
+     [
+      176,
+      25
+     ],
+     [
+      203,
+      48
+     ],
+     [
+      217,
+      31
+     ],
+     [
+      224,
+      21
+     ],
+     [
+      224,
+      57
+     ]
+    ],
+    "ends": [
+     [
+      3,
+      23
+     ],
+     [
+      22,
+      8
+     ],
+     [
+      31,
+      12
+     ],
+     [
+      63,
+      94
+     ],
+     [
+      85,
+      22
+     ],
+     [
+      138,
+      116
+     ],
+     [
+      157,
+      23
+     ],
+     [
+      176,
+      27
+     ],
+     [
+      203,
+      52
+     ],
+     [
+      217,
+      38
+     ],
+     [
+      224,
+      26
+     ],
+     [
+      224,
+      60
+     ]
+    ],
+    "names": [
+     "AsRef",
+     "derive",
+     "akey",
+     "uri",
+     "diesel",
+     "ok",
+     "select",
+     "conn",
+     "ciphers",
+     "OrganizationId",
+     "or_filter",
+     "eq_any"
+    ]
+   },
+   {
+    "path": "src/sso.rs",
+    "positions": [
+     [
+      74,
+      5
+     ],
+     [
+      123,
+      9
+     ],
+     [
+      144,
+      13
+     ],
+     [
+      157,
+      31
+     ],
+     [
+      160,
+      35
+     ],
+     [
+      188,
+      15
+     ],
+     [
+      211,
+      55
+     ],
+     [
+      232,
+      4
+     ],
+     [
+      279,
+      61
+     ],
+     [
+      306,
+      31
+     ],
+     [
+      445,
+      21
+     ],
+     [
+      458,
+      55
+     ]
+    ],
+    "ends": [
+     [
+      74,
+      6
+     ],
+     [
+      123,
+      11
+     ],
+     [
+      144,
+      21
+     ],
+     [
+      157,
+      33
+     ],
+     [
+      160,
+      36
+     ],
+     [
+      188,
+      20
+     ],
+     [
+      211,
+      58
+     ],
+     [
+      232,
+      7
+     ],
+     [
+      279,
+      63
+     ],
+     [
+      306,
+      34
+     ],
+     [
+      445,
+      26
+     ],
+     [
+      458,
+      57
+     ]
+    ],
+    "names": [
+     "Eq",
+     "exp",
+     "BasicTokenClaims",
+     "exp",
+     "ne",
+     "OIDCState",
+     "state",
+     "deref",
+     "code",
+     "clone",
+     "expires_in",
+     "new"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "references",
+  "path": "src/api/core/two_factor/duo.rs",
+  "line": 7,
+  "character": 12,
+  "extra": ""
+ },
+ "ops": [],
+ "case": {
+  "codes": [
+   "timeout",
+   "timeout"
+  ],
+  "mode": "fresh-pair",
+  "phase": [
+   "done",
+   "done"
+  ],
+  "seed": 1
+ },
+ "shape": "references:result->error:timeout",
+ "signature": "rust-analyzer|r0_crash|references:result->error:timeout",
+ "expected": "an answer that is not a server error, a crash or a timeout",
+ "actual": [
+  "error",
+  "timeout"
+ ],
+ "reproduced": "3/3",
+ "note": "references answered ['error', 'timeout'] in the fresh baseline and ['error', 'timeout'] in the fresh control; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 940s",
+ "violation": {
+  "oracle": "r0_crash",
+  "server": "rust-analyzer-2026-09-21",
+  "project": "dani-garcia/vaultwarden@cc67d644f626",
+  "key": {
+   "method": "references",
+   "path": "src/api/core/two_factor/duo.rs",
+   "line": 7,
+   "character": 12,
+   "extra": ""
+  },
+  "expected": "an answer that is not a server error, a crash or a timeout",
+  "actual": [
+   "error",
+   "timeout"
+  ],
+  "ops": [],
+  "detail": "{\"case\": {\"codes\": [\"timeout\", \"timeout\"], \"mode\": \"fresh-pair\", \"phase\": [\"done\", \"done\"], \"seed\": 1}, \"note\": \"references answered ['error', 'timeout'] in the fresh baseline and ['error', 'timeout'] in the fresh control; flake 3/3 [r1:SCR r2:SCR r3:SCR] in 940s\", \"shape\": \"references:result->error:timeout\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "rust-analyzer|r0_crash|references:result->error:timeout",
+  "run_id": "41afcf8c4817"
+ },
+ "replay_logs": [],
+ "project_files": {},
+ "group": "rust-analyzer-r0-references-result-error-timeout-fresh-pair-8a4b8d",
+ "reduced": true
+}

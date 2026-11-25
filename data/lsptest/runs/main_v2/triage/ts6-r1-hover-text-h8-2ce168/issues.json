@@ -1,0 +1,96 @@
+{
+ "queries": [
+  "order in:title repo:typescript-language-server/typescript-language-server is:issue",
+  "hover wrong repo:typescript-language-server/typescript-language-server is:issue",
+  "hover order repo:typescript-language-server/typescript-language-server is:issue",
+  "hover stale repo:typescript-language-server/typescript-language-server is:issue",
+  "order in:title repo:microsoft/TypeScript is:issue",
+  "hover wrong repo:microsoft/TypeScript is:issue",
+  "hover order repo:microsoft/TypeScript is:issue",
+  "hover stale repo:microsoft/TypeScript is:issue"
+ ],
+ "matches": [
+  {
+   "repo": "typescript-language-server/typescript-language-server",
+   "number": 1014,
+   "title": "TypeScript Language Server Hangs on Completion Resolution On Enter Key Pressed",
+   "url": "https://github.com/typescript-language-server/typescript-language-server/issues/1014",
+   "state": "closed",
+   "created": "2025-09-24",
+   "comments": 21,
+   "query": "hover wrong repo:typescript-language-server/typescript-language-server is:issue"
+  },
+  {
+   "repo": "typescript-language-server/typescript-language-server",
+   "number": 917,
+   "title": "Shows incorrect type completion item between VSCode and Neovim",
+   "url": "https://github.com/typescript-language-server/typescript-language-server/issues/917",
+   "state": "closed",
+   "created": "2024-09-27",
+   "comments": 9,
+   "query": "hover wrong repo:typescript-language-server/typescript-language-server is:issue"
+  },
+  {
+   "repo": "typescript-language-server/typescript-language-server",
+   "number": 865,
+   "title": "Fully resolve type aliases ",
+   "url": "https://github.com/typescript-language-server/typescript-language-server/issues/865",
+   "state": "closed",
+   "created": "2024-02-02",
+   "comments": 1,
+   "query": "hover wrong repo:typescript-language-server/typescript-language-server is:issue"
+  },
+  {
+   "repo": "typescript-language-server/typescript-language-server",
+   "number": 841,
+   "title": "Invalid completions",
+   "url": "https://github.com/typescript-language-server/typescript-language-server/issues/841",
+   "state": "closed",
+   "created": "2024-01-02",
+   "comments": 10,
+   "query": "hover wrong repo:typescript-language-server/typescript-language-server is:issue"
+  },
+  {
+   "repo": "typescript-language-server/typescript-language-server",
+   "number": 445,
+   "title": "Issue with tsconfig and first file opened",
+   "url": "https://github.com/typescript-language-server/typescript-language-server/issues/445",
+   "state": "closed",
+   "created": "2022-05-03",
+   "comments": 4,
+   "query": "hover wrong repo:typescript-language-server/typescript-language-server is:issue"
+  },
+  {
+   "repo": "typescript-language-server/typescript-language-server",
+   "number": 803,
+   "title": "Server error \"Could not find source file\" on opening second file in a project with large amount of code",
+   "url": "https://github.com/typescript-language-server/typescript-language-server/issues/803",
+   "state": "closed",
+   "created": "2023-11-14",
+   "comments": 4,
+   "query": "hover order repo:typescript-language-server/typescript-language-server is:issue"
+  },
+  {
+   "repo": "typescript-language-server/typescript-language-server",
+   "number": 191,
+   "title": "doRequestDiagnostics of LspServer looks did not handle err? no 'catch'?",
+   "url": "https://github.com/typescript-language-server/typescript-language-server/issues/191",
+   "state": "closed",
+   "created": "2021-03-11",
+   "comments": 61,
+   "query": "hover order repo:typescript-language-server/typescript-language-server is:issue"
+  },
+  {
+   "repo": "microsoft/TypeScript",
+   "number": 63758,
+   "title": "Investigate decorator initialization order re: renames of classes",
+   "url": "https://github.com/microsoft/TypeScript/issues/63758",
+   "state": "open",
+   "created": "2026-08-18",
+   "comments": 0,
+   "query": "order in:title repo:microsoft/TypeScript is:issue"
+  }
+ ],
+ "notes": [],
+ "authenticated": true
+}

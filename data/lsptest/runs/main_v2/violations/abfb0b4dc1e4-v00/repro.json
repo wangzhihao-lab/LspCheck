@@ -1,0 +1,510 @@
+{
+ "format": 1,
+ "campaign": "main_v2",
+ "vid": "abfb0b4dc1e4-v00",
+ "run_id": "abfb0b4dc1e4",
+ "oracle": "r5_transforms",
+ "server": {
+  "kind": "gopls",
+  "version": "v0.23.0"
+ },
+ "project": {
+  "name": "beego/beego@939cfde380bb",
+  "source": "corpus",
+  "ref": "temp/corpus/beego__beego@939cfde380bb",
+  "commit": "939cfde380bb9f15844ad633b84f037f7da21584",
+  "language": "go"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 6,
+  "targets": [
+   {
+    "path": "client/cache/bloom_filter_cache.go",
+    "positions": [
+     [
+      26,
+      17
+     ],
+     [
+      27,
+      5
+     ],
+     [
+      27,
+      39
+     ],
+     [
+      28,
+      6
+     ],
+     [
+      45,
+      3
+     ],
+     [
+      45,
+      15
+     ],
+     [
+      51,
+      30
+     ],
+     [
+      51,
+      48
+     ],
+     [
+      52,
+      7
+     ],
+     [
+      52,
+      28
+     ],
+     [
+      53,
+      12
+     ],
+     [
+      63,
+      10
+     ]
+    ],
+    "ends": [
+     [
+      26,
+      23
+     ],
+     [
+      27,
+      9
+     ],
+     [
+      27,
+      41
+     ],
+     [
+      28,
+      11
+     ],
+     [
+      45,
+      5
+     ],
+     [
+      45,
+      17
+     ],
+     [
+      51,
+      32
+     ],
+     [
+      51,
+      52
+     ],
+     [
+      52,
+      9
+     ],
+     [
+      52,
+      30
+     ],
+     [
+      53,
+      14
+     ],
+     [
+      63,
+      12
+     ]
+    ],
+    "names": [
+     "BloomFilter",
+     "loadFunc",
+     "key",
+     "expiration",
+     "blm",
+     "blm",
+     "Get",
+     "Context",
+     "err",
+     "ctx",
+     "nil",
+     "bfc"
+    ]
+   },
+   {
+    "path": "client/orm/ddl.go",
+    "positions": [
+     [
+      27,
+      3
+     ],
+     [
+      48,
+      33
+     ],
+     [
+      52,
+      9
+     ],
+     [
+      55,
+      43
+     ],
+     [
+      66,
+      16
+     ],
+     [
+      92,
+      13
+     ],
+     [
+      122,
+      14
+     ],
+     [
+      123,
+      13
+     ],
+     [
+      127,
+      13
+     ],
+     [
+      130,
+      67
+     ],
+     [
+      140,
+      11
+     ],
+     [
+      159,
+      5
+     ]
+    ],
+    "ends": [
+     [
+      27,
+      5
+     ],
+     [
+      48,
+      34
+     ],
+     [
+      52,
+      10
+     ],
+     [
+      55,
+      46
+     ],
+     [
+      66,
+      22
+     ],
+     [
+      92,
+      16
+     ],
+     [
+      122,
+      16
+     ],
+     [
+      123,
+      15
+     ],
+     [
+      127,
+      15
+     ],
+     [
+      130,
+      69
+     ],
+     [
+      140,
+      14
+     ],
+     [
+      159,
+      6
+     ]
+    ],
+    "names": [
+     "err",
+     "Q",
+     "mi",
+     "Repeat",
+     "getColumnTyp",
+     "Unique",
+     "make",
+     "name",
+     "fmt",
+     "cols",
+     "Model",
+     "Q"
+    ]
+   },
+   {
+    "path": "core/validation/validators.go",
+    "positions": [
+     [
+      196,
+      2
+     ],
+     [
+      204,
+      2
+     ],
+     [
+      283,
+      8
+     ],
+     [
+      287,
+      22
+     ],
+     [
+      288,
+      46
+     ],
+     [
+      375,
+      16
+     ],
+     [
+      420,
+      14
+     ],
+     [
+      502,
+      11
+     ],
+     [
+      583,
+      22
+     ],
+     [
+      629,
+      36
+     ],
+     [
+      635,
+      11
+     ],
+     [
+      750,
+      15
+     ]
+    ],
+    "ends": [
+     [
+      196,
+      3
+     ],
+     [
+      204,
+      3
+     ],
+     [
+      283,
+      9
+     ],
+     [
+      287,
+      29
+     ],
+     [
+      288,
+      48
+     ],
+     [
+      375,
+      18
+     ],
+     [
+      420,
+      20
+     ],
+     [
+      502,
+      14
+     ],
+     [
+      583,
+      29
+     ],
+     [
+      629,
+      39
+     ],
+     [
+      635,
+      13
+     ],
+     [
+      750,
+      16
+     ]
+    ],
+    "names": [
+     "v",
+     "v",
+     "r",
+     "DefaultMessage",
+     "Min",
+     "obj",
+     "MessageTmpls",
+     "string",
+     "DefaultMessage",
+     "string",
+     "Key",
+     "i"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "completion",
+  "path": "client/orm/ddl.go",
+  "line": 140,
+  "character": 14,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "client/cache/bloom_filter_cache.go"
+  },
+  {
+   "kind": "change",
+   "path": "client/cache/bloom_filter_cache.go",
+   "start": [
+    23,
+    0
+   ],
+   "end": [
+    23,
+    0
+   ],
+   "text": "\n"
+  }
+ ],
+ "case": {
+  "mapped_key": [
+   "completion",
+   "client/orm/ddl.go",
+   140,
+   14,
+   ""
+  ],
+  "transform": {
+   "back": {
+    "col": 0,
+    "eof": [],
+    "line": -1,
+    "n": 0,
+    "path": "client/cache/bloom_filter_cache.go",
+    "w": 0
+   },
+   "edits": [
+    [
+     23,
+     0,
+     23,
+     0,
+     "\n"
+    ]
+   ],
+   "kind": "T1",
+   "path": "client/cache/bloom_filter_cache.go",
+   "shift": {
+    "col": 0,
+    "eof": [],
+    "line": 23,
+    "n": 1,
+    "path": "client/cache/bloom_filter_cache.go",
+    "w": 0
+   }
+  }
+ },
+ "shape": "completion:changed",
+ "signature": "gopls|r5_transforms|completion:changed",
+ "expected": [
+  "Fields.Pk.RelModelInfo.AddrField.UnsafePointer",
+  "Fields.Pk.RelThroughModelInfo.AddrField.UnsafePointer",
+  "Fields.Pk.ReverseFieldInfo.RelThroughModelInfo.AddrField.UnsafePointer",
+  "Model"
+ ],
+ "actual": [
+  "Fields.Pk.Mi.Model",
+  "Fields.Pk.RelModelInfo.Model",
+  "Fields.Pk.RelThroughModelInfo.Model",
+  "Model"
+ ],
+ "reproduced": "0/3",
+ "note": "T1 client/cache/bloom_filter_cache.go: 1 edit(s), first [23, 0, 23, 0]; flake 0/3 [r1:SCr r2:SCr r3:SCr] in 50s",
+ "violation": {
+  "oracle": "r5_transforms",
+  "server": "gopls-v0.23.0",
+  "project": "beego/beego@939cfde380bb",
+  "key": {
+   "method": "completion",
+   "path": "client/orm/ddl.go",
+   "line": 140,
+   "character": 14,
+   "extra": ""
+  },
+  "expected": [
+   "Fields.Pk.RelModelInfo.AddrField.UnsafePointer",
+   "Fields.Pk.RelThroughModelInfo.AddrField.UnsafePointer",
+   "Fields.Pk.ReverseFieldInfo.RelThroughModelInfo.AddrField.UnsafePointer",
+   "Model"
+  ],
+  "actual": [
+   "Fields.Pk.Mi.Model",
+   "Fields.Pk.RelModelInfo.Model",
+   "Fields.Pk.RelThroughModelInfo.Model",
+   "Model"
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "client/cache/bloom_filter_cache.go"
+   },
+   {
+    "kind": "change",
+    "path": "client/cache/bloom_filter_cache.go",
+    "start": [
+     23,
+     0
+    ],
+    "end": [
+     23,
+     0
+    ],
+    "text": "\n"
+   }
+  ],
+  "detail": "{\"case\": {\"mapped_key\": [\"completion\", \"client/orm/ddl.go\", 140, 14, \"\"], \"transform\": {\"back\": {\"col\": 0, \"eof\": [], \"line\": -1, \"n\": 0, \"path\": \"client/cache/bloom_filter_cache.go\", \"w\": 0}, \"edits\": [[23, 0, 23, 0, \"\\n\"]], \"kind\": \"T1\", \"path\": \"client/cache/bloom_filter_cache.go\", \"shift\": {\"col\": 0, \"eof\": [], \"line\": 23, \"n\": 1, \"path\": \"client/cache/bloom_filter_cache.go\", \"w\": 0}}}, \"note\": \"T1 client/cache/bloom_filter_cache.go: 1 edit(s), first [23, 0, 23, 0]; flake 0/3 [r1:SCr r2:SCr r3:SCr] in 50s\", \"shape\": \"completion:changed\"}",
+  "reproduced": "0/3",
+  "reduced_ops": [],
+  "signature": "gopls|r5_transforms|completion:changed",
+  "run_id": "abfb0b4dc1e4"
+ },
+ "replay_logs": [],
+ "project_files": {},
+ "incomplete": false
+}

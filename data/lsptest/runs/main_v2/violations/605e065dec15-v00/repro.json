@@ -1,0 +1,444 @@
+{
+ "format": 1,
+ "campaign": "main_v2",
+ "vid": "605e065dec15-v00",
+ "run_id": "605e065dec15",
+ "oracle": "r3_routes",
+ "server": {
+  "kind": "ts7",
+  "version": "7.0.2"
+ },
+ "project": {
+  "name": "date-fns/date-fns@f34149bb1ba1",
+  "source": "corpus",
+  "ref": "temp/corpus/date-fns__date-fns@f34149bb1ba1",
+  "commit": "f34149bb1ba10046453e688207507e0d2c727e00",
+  "language": "typescript"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "pkgs/core/src/fp/lastDayOfWeekWithOptions/index.ts",
+    "positions": [
+     [
+      2,
+      15
+     ],
+     [
+      2,
+      27
+     ],
+     [
+      2,
+      33
+     ],
+     [
+      3,
+      14
+     ],
+     [
+      3,
+      25
+     ],
+     [
+      5,
+      25
+     ],
+     [
+      5,
+      45
+     ],
+     [
+      5,
+      53
+     ]
+    ],
+    "ends": [
+     [
+      2,
+      22
+     ],
+     [
+      2,
+      28
+     ],
+     [
+      2,
+      35
+     ],
+     [
+      3,
+      20
+     ],
+     [
+      3,
+      27
+     ],
+     [
+      5,
+      37
+     ],
+     [
+      5,
+      51
+     ],
+     [
+      5,
+      54
+     ]
+    ],
+    "names": [
+     "lastDayOfWeek",
+     "fn",
+     "from",
+     "convertToFP",
+     "from",
+     "lastDayOfWeekWithOptions",
+     "convertToFP",
+     "fn"
+    ]
+   },
+   {
+    "path": "pkgs/core/src/locale/nn/_lib/localize/index.ts",
+    "positions": [
+     [
+      47,
+      10
+     ],
+     [
+      69,
+      8
+     ],
+     [
+      74,
+      5
+     ],
+     [
+      76,
+      8
+     ],
+     [
+      77,
+      6
+     ],
+     [
+      85,
+      5
+     ],
+     [
+      100,
+      27
+     ],
+     [
+      109,
+      18
+     ],
+     [
+      111,
+      12
+     ],
+     [
+      111,
+      26
+     ],
+     [
+      115,
+      7
+     ],
+     [
+      121,
+      10
+     ]
+    ],
+    "ends": [
+     [
+      47,
+      15
+     ],
+     [
+      69,
+      13
+     ],
+     [
+      74,
+      6
+     ],
+     [
+      76,
+      12
+     ],
+     [
+      77,
+      8
+     ],
+     [
+      85,
+      6
+     ],
+     [
+      100,
+      31
+     ],
+     [
+      109,
+      25
+     ],
+     [
+      111,
+      20
+     ],
+     [
+      111,
+      30
+     ],
+     [
+      115,
+      10
+     ],
+     [
+      121,
+      16
+     ]
+    ],
+    "names": [
+     "dayValues",
+     "afternoon",
+     "am",
+     "midnight",
+     "noon",
+     "pm",
+     "Localize",
+     "quarterValues",
+     "argumentCallback",
+     "quarter",
+     "values",
+     "defaultWidth"
+    ]
+   },
+   {
+    "path": "pkgs/core/src/subYears/index.ts",
+    "positions": [
+     [
+      1,
+      21
+     ],
+     [
+      1,
+      33
+     ],
+     [
+      1,
+      42
+     ],
+     [
+      7,
+      6
+     ],
+     [
+      32,
+      20
+     ],
+     [
+      34,
+      23
+     ],
+     [
+      34,
+      32
+     ],
+     [
+      36,
+      4
+     ],
+     [
+      36,
+      11
+     ],
+     [
+      38,
+      19
+     ],
+     [
+      38,
+      33
+     ],
+     [
+      40,
+      36
+     ]
+    ],
+    "ends": [
+     [
+      1,
+      28
+     ],
+     [
+      1,
+      37
+     ],
+     [
+      1,
+      44
+     ],
+     [
+      7,
+      10
+     ],
+     [
+      32,
+      24
+     ],
+     [
+      34,
+      25
+     ],
+     [
+      34,
+      36
+     ],
+     [
+      36,
+      6
+     ],
+     [
+      36,
+      15
+     ],
+     [
+      38,
+      27
+     ],
+     [
+      38,
+      38
+     ],
+     [
+      40,
+      40
+     ]
+    ],
+    "names": [
+     "ContextOptions",
+     "DateArg",
+     "from",
+     "DateType",
+     "subYears",
+     "Date",
+     "DateType",
+     "date",
+     "DateArg",
+     "SubYearsOptions",
+     "ResultDate",
+     "options"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "definitionConsistency",
+  "path": "pkgs/core/src/locale/_lib/buildLocalizeFn/index.ts",
+  "line": 128,
+  "character": 19,
+  "extra": "from:pkgs/core/src/locale/nn/_lib/localize/index.ts:111:12"
+ },
+ "ops": [],
+ "case": {
+  "loc": [
+   "pkgs/core/src/locale/_lib/buildLocalizeFn/index.ts",
+   128,
+   11,
+   128,
+   27
+  ],
+  "sub": "d",
+  "target": [
+   "pkgs/core/src/locale/nn/_lib/localize/index.ts",
+   111,
+   12
+  ]
+ },
+ "shape": "definitionConsistency:extra",
+ "signature": "ts7|r3_routes|definitionConsistency:extra",
+ "expected": [
+  [
+   "pkgs/core/src/locale/_lib/buildLocalizeFn/index.ts",
+   18,
+   6,
+   18,
+   22
+  ]
+ ],
+ "actual": [
+  [
+   "pkgs/core/src/locale/_lib/buildLocalizeFn/index.ts",
+   17,
+   6,
+   17,
+   22
+  ],
+  [
+   "pkgs/core/src/locale/_lib/buildLocalizeFn/index.ts",
+   18,
+   6,
+   18,
+   22
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "flake 3/3 [r1:SCR r2:SCR r3:SCR] in 64s",
+ "violation": {
+  "oracle": "r3_routes",
+  "server": "ts7-7.0.2",
+  "project": "date-fns/date-fns@f34149bb1ba1",
+  "key": {
+   "method": "definitionConsistency",
+   "path": "pkgs/core/src/locale/_lib/buildLocalizeFn/index.ts",
+   "line": 128,
+   "character": 19,
+   "extra": "from:pkgs/core/src/locale/nn/_lib/localize/index.ts:111:12"
+  },
+  "expected": [
+   [
+    "pkgs/core/src/locale/_lib/buildLocalizeFn/index.ts",
+    18,
+    6,
+    18,
+    22
+   ]
+  ],
+  "actual": [
+   [
+    "pkgs/core/src/locale/_lib/buildLocalizeFn/index.ts",
+    17,
+    6,
+    17,
+    22
+   ],
+   [
+    "pkgs/core/src/locale/_lib/buildLocalizeFn/index.ts",
+    18,
+    6,
+    18,
+    22
+   ]
+  ],
+  "ops": [],
+  "detail": "{\"case\": {\"loc\": [\"pkgs/core/src/locale/_lib/buildLocalizeFn/index.ts\", 128, 11, 128, 27], \"sub\": \"d\", \"target\": [\"pkgs/core/src/locale/nn/_lib/localize/index.ts\", 111, 12]}, \"note\": \"flake 3/3 [r1:SCR r2:SCR r3:SCR] in 64s\", \"shape\": \"definitionConsistency:extra\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "ts7|r3_routes|definitionConsistency:extra",
+  "run_id": "605e065dec15"
+ },
+ "replay_logs": [
+  "logs/ts7-7.0.2-605e065dec15-r3-replay-baseline-20261118-204058-e1f86a.jsonl.gz",
+  "logs/ts7-7.0.2-605e065dec15-r3-replay-control-20261118-204109-2769f5.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

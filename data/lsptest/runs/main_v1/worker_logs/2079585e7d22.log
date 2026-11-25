@@ -1,0 +1,3 @@
+2026-09-23 16:34:00,415 INFO campaign_run run 2079585e7d22: r2_handles on ts7 7.0.2, pmndrs/zustand@b57db4f86ef1 seed 1 settled, targets ['src/react.ts', 'src/vanilla/shallow.ts', 'tests/persistSync.test.tsx']
+2026-09-23 16:35:08,147 INFO campaign_run run 2079585e7d22: 0 candidate(s) in 68s; confirming
+2026-09-23 16:35:08,148 INFO campaign_run run 2079585e7d22 finished: ok, 0 confirmed of 0 candidate(s), 68s

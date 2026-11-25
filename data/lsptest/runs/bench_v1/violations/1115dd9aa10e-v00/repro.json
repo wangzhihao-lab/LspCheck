@@ -1,0 +1,409 @@
+{
+ "format": 1,
+ "campaign": "bench_v1",
+ "vid": "1115dd9aa10e-v00",
+ "run_id": "1115dd9aa10e",
+ "oracle": "r2_handles",
+ "server": {
+  "kind": "gopls",
+  "version": "v0.19.0"
+ },
+ "project": {
+  "name": "gopls-73564",
+  "source": "dir",
+  "ref": "data/lsp_bench/cases/gopls-73564/project",
+  "commit": "",
+  "language": "go"
+ },
+ "context": {
+  "seed": 2,
+  "timing": "settled",
+  "settle_timeout_s": 180.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "main.go",
+    "positions": [
+     [
+      8,
+      14
+     ],
+     [
+      15,
+      9
+     ],
+     [
+      19,
+      10
+     ],
+     [
+      19,
+      18
+     ],
+     [
+      23,
+      10
+     ],
+     [
+      23,
+      19
+     ],
+     [
+      24,
+      8
+     ],
+     [
+      28,
+      21
+     ],
+     [
+      29,
+      12
+     ],
+     [
+      30,
+      21
+     ],
+     [
+      32,
+      22
+     ],
+     [
+      38,
+      2
+     ],
+     [
+      41,
+      10
+     ],
+     [
+      49,
+      2
+     ],
+     [
+      49,
+      12
+     ],
+     [
+      50,
+      3
+     ],
+     [
+      50,
+      66
+     ],
+     [
+      50,
+      74
+     ],
+     [
+      52,
+      15
+     ],
+     [
+      55,
+      19
+     ]
+    ],
+    "ends": [
+     [
+      8,
+      17
+     ],
+     [
+      15,
+      11
+     ],
+     [
+      19,
+      13
+     ],
+     [
+      19,
+      22
+     ],
+     [
+      23,
+      13
+     ],
+     [
+      23,
+      24
+     ],
+     [
+      24,
+      9
+     ],
+     [
+      28,
+      24
+     ],
+     [
+      29,
+      15
+     ],
+     [
+      30,
+      24
+     ],
+     [
+      32,
+      25
+     ],
+     [
+      38,
+      3
+     ],
+     [
+      41,
+      13
+     ],
+     [
+      49,
+      3
+     ],
+     [
+      49,
+      13
+     ],
+     [
+      50,
+      5
+     ],
+     [
+      50,
+      70
+     ],
+     [
+      50,
+      75
+     ],
+     [
+      52,
+      20
+     ],
+     [
+      55,
+      24
+     ]
+    ],
+    "names": [
+     "string",
+     "int",
+     "Fruit",
+     "GetName",
+     "Fruit",
+     "GetWeight",
+     "f",
+     "Fruit",
+     "Fruit",
+     "Weight",
+     "Weight",
+     "cb",
+     "fruit",
+     "cb",
+     "f",
+     "fmt",
+     "GetName",
+     "f",
+     "GetWeight",
+     "GetFruits"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "codeActionResolve",
+  "path": "main.go",
+  "line": 32,
+  "character": 22,
+  "extra": "pos:32:22|top1|Split elements into separate lines|refactor.rewrite.splitLines|0"
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "main.go"
+  },
+  {
+   "kind": "change",
+   "path": "main.go",
+   "start": [
+    0,
+    0
+   ],
+   "end": [
+    0,
+    0
+   ],
+   "text": "\n"
+  }
+ ],
+ "case": {
+  "extra": "pos",
+  "path": "main.go",
+  "shift": {
+   "col": 0,
+   "line": 0,
+   "text": "\n",
+   "variant": "top"
+  },
+  "sub": "codeAction",
+  "where": [
+   32,
+   22,
+   32,
+   22
+  ]
+ },
+ "shape": "codeActionResolve:changed",
+ "signature": "gopls|r2_handles|codeActionResolve:changed",
+ "expected": [
+  [
+   "main.go",
+   33,
+   17,
+   33,
+   19,
+   ",\n\t\t\t"
+  ],
+  [
+   "main.go",
+   33,
+   3,
+   33,
+   3,
+   "\n\t\t\t"
+  ],
+  [
+   "main.go",
+   33,
+   30,
+   33,
+   30,
+   ",\n\t\t"
+  ]
+ ],
+ "actual": [
+  [
+   "main.go",
+   32,
+   17,
+   32,
+   19,
+   ",\n\t\t\t"
+  ],
+  [
+   "main.go",
+   32,
+   3,
+   32,
+   3,
+   "\n\t\t\t"
+  ],
+  [
+   "main.go",
+   32,
+   30,
+   32,
+   30,
+   ",\n\t\t"
+  ]
+ ],
+ "reproduced": "3/3",
+ "note": "flake 3/3 [r1:SCR r2:SCR r3:SCR] in 25s",
+ "violation": {
+  "oracle": "r2_handles",
+  "server": "gopls-v0.19.0",
+  "project": "gopls-73564",
+  "key": {
+   "method": "codeActionResolve",
+   "path": "main.go",
+   "line": 32,
+   "character": 22,
+   "extra": "pos:32:22|top1|Split elements into separate lines|refactor.rewrite.splitLines|0"
+  },
+  "expected": [
+   [
+    "main.go",
+    33,
+    17,
+    33,
+    19,
+    ",\n\t\t\t"
+   ],
+   [
+    "main.go",
+    33,
+    3,
+    33,
+    3,
+    "\n\t\t\t"
+   ],
+   [
+    "main.go",
+    33,
+    30,
+    33,
+    30,
+    ",\n\t\t"
+   ]
+  ],
+  "actual": [
+   [
+    "main.go",
+    32,
+    17,
+    32,
+    19,
+    ",\n\t\t\t"
+   ],
+   [
+    "main.go",
+    32,
+    3,
+    32,
+    3,
+    "\n\t\t\t"
+   ],
+   [
+    "main.go",
+    32,
+    30,
+    32,
+    30,
+    ",\n\t\t"
+   ]
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "main.go"
+   },
+   {
+    "kind": "change",
+    "path": "main.go",
+    "start": [
+     0,
+     0
+    ],
+    "end": [
+     0,
+     0
+    ],
+    "text": "\n"
+   }
+  ],
+  "detail": "{\"case\": {\"extra\": \"pos\", \"path\": \"main.go\", \"shift\": {\"col\": 0, \"line\": 0, \"text\": \"\\n\", \"variant\": \"top\"}, \"sub\": \"codeAction\", \"where\": [32, 22, 32, 22]}, \"note\": \"flake 3/3 [r1:SCR r2:SCR r3:SCR] in 25s\", \"shape\": \"codeActionResolve:changed\"}",
+  "reproduced": "3/3",
+  "reduced_ops": [],
+  "signature": "gopls|r2_handles|codeActionResolve:changed",
+  "run_id": "1115dd9aa10e"
+ },
+ "replay_logs": [
+  "logs/gopls-v0.19.0-1115dd9aa10e-r2-replay-20260925-084311-ae0078.jsonl.gz"
+ ],
+ "project_files": {},
+ "incomplete": false
+}

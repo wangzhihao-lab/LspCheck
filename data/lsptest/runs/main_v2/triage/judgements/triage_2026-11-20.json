@@ -1,0 +1,734 @@
+{
+ "page": "triage",
+ "campaign": "main_v2",
+ "exported_at": "",
+ "reconstructed_from": "triage_paste_2026-11-20.json (the pasted items: a bare array without the page header and minutes)",
+ "items": [
+  {
+   "n": 1,
+   "id": "pyright-r0-references-result-error-32603-fresh-pair-2718c4",
+   "choice": "bug",
+   "note": "R0：未修改项目上 references 返回 -32603 内部错误，新会话稳定复现，1.1.406 也复现"
+  },
+  {
+   "n": 2,
+   "id": "gopls-r2-codeactionresolve-changed-codeaction-70b3e9",
+   "choice": "bug",
+   "note": "R2：编辑后 resolve 旧 codeAction 句柄，gopls 按旧坐标在新内容上重算，拆的是上一行另一处调用的参数（错误编辑）；v0.20.0 也复现"
+  },
+  {
+   "n": 3,
+   "id": "rust-analyzer-r2-completionresolve-changed-completion-3170a1",
+   "choice": "bug",
+   "note": "R2：编辑后 resolve 旧补全句柄，textEdit 被改成起点在终点之后的反向范围（407:0→406:61），不是合法编辑；一年前版本未复现，疑似回归"
+  },
+  {
+   "n": 4,
+   "id": "gopls-r4-completioninsert-gained-completion-22daf7",
+   "choice": "tool-artifact",
+   "note": "A2：光标在 *testing|.T 中间，工具接受的是深度补全项 testing.B，结果成了 testing.B.T；补全不会顾及光标后已有的 .T，这个位置插入任何 testing.X 都必然出错"
+  },
+  {
+   "n": 5,
+   "id": "gopls-r4-diagnostics-extra-incompatibleassign-inv-mutation-m2-3cfa07",
+   "choice": "tool-artifact",
+   "note": "A1：变异把内置 make 改成 mae，调用的第一个实参是类型 []error，任何新建函数都不可能让这行合法；新增的三个错误都由此而来"
+  },
+  {
+   "n": 6,
+   "id": "gopls-r4-diagnostics-extra-incompatibleassign-mutation-m2-ade1f0",
+   "choice": "bug",
+   "note": "R4：Create variable 生成 expiration := 0（int），用处要 time.Duration；具名类型丢失，修复引入新类型错误；v0.20.0 也复现"
+  },
+  {
+   "n": 7,
+   "id": "gopls-r4-diagnostics-extra-mismatchedtypes-mutation-m2-dc6e94",
+   "choice": "bug",
+   "note": "R4：Create variable 生成 BelonngsTo := \"\"（string），与 RelationshipType 比较类型不符；具名类型丢失，修复引入新错误"
+  },
+  {
+   "n": 8,
+   "id": "gopls-r4-diagnostics-extra-nonsliceableoperand-mutation-m2-d80a9a",
+   "choice": "bug",
+   "note": "R4：Create variable 生成 arggs := 0（int），用处是切片操作，修复引入 cannot slice 新错误"
+  },
+  {
+   "n": 9,
+   "id": "gopls-r4-diagnostics-extra-notatype-mutation-m2-477181",
+   "choice": "bug",
+   "note": "R4：Conttext 处在类型位置，gopls 仍给 Create variable 并生成 Conttext := 0，引入 not a type 新错误"
+  },
+  {
+   "n": 10,
+   "id": "gopls-r4-diagnostics-extra-undeclaredname-mutation-m2-12380c",
+   "choice": "bug",
+   "note": "R4：Remove variable 只删了 qemuArch 的声明，留下其他对它的引用，新增 undefined: qemuArch；另一条 undefined: qemurch 是工具埋的错（A1 部分）"
+  },
+  {
+   "n": 11,
+   "id": "gopls-r4-diagnostics-extra-untypedniluse-mutation-m2-354f70",
+   "choice": "bug",
+   "note": "R4：Create variable 生成 sshCCmd := nil，在 Go 里永远非法（use of untyped nil）"
+  },
+  {
+   "n": 12,
+   "id": "gopls-r4-diagnostics-extra-unusedimport-mutation-m3-aefa9e",
+   "choice": "bug",
+   "note": "R4：Delete var 删掉 sshCmd 整段声明，那是本文件唯一用到 cobra 的地方，修复后留下 imported and not used 编译错误；v0.20.0 也复现"
+  },
+  {
+   "n": 13,
+   "id": "gopls-r4-diagnostics-extra-wrongargcount-mutation-m3-ac10cc",
+   "choice": "tool-artifact",
+   "note": "A1：not enough arguments 来自工具变异本身删掉的实参；修复 Remove variable checker 只针对 declared and not used，没有引入它"
+  },
+  {
+   "n": 14,
+   "id": "pyright-r4-completioninsert-gained-completion-79a584",
+   "choice": "bug",
+   "note": "R4：自动导入把 __future__ 里的私有名 _VersionInfo 并进 from __future__ import，成了 SyntaxError（future feature not defined）；1.1.406 也复现"
+  },
+  {
+   "n": 15,
+   "id": "rust-analyzer-r4-completioninsert-gained-completion-e99b79",
+   "choice": "bug",
+   "note": "R4：在 #[derive|(…)] 处接受同名补全项 derive(…)，仍补一对括号，成了 #[derive(Debug)(Clone, …)]；r-a 对函数调用会检查后面已有括号，属性没有；一年前版本也复现"
+  },
+  {
+   "n": 16,
+   "id": "rust-analyzer-r4-diagnostics-extra-e0063-mutation-m1-aeef82",
+   "choice": "bug",
+   "note": "R4：类型不匹配的修复 Add .to_owned() here 用在结构体简写字段 space 上，生成 { space.to_owned() }，语法错误且缺字段；与第 19 组同一根因"
+  },
+  {
+   "n": 17,
+   "id": "rust-analyzer-r4-diagnostics-extra-e0560-mutation-m2-1f508d",
+   "choice": "tool-artifact",
+   "note": "A1：剩下的 no such field 是工具把字段名改成 weightlimit 埋的错；Fill struct fields 修的是缺字段，没有引入新错误"
+  },
+  {
+   "n": 18,
+   "id": "rust-analyzer-r4-diagnostics-extra-inactive-code-quickfix-f2d641",
+   "choice": "tool-artifact",
+   "note": "A2：inactive_code 是本机 cfg 不启用的提示，本来就没有修复；工具把同一范围里别的诊断的 Remove all unused imports 当成了它的修复"
+  },
+  {
+   "n": 19,
+   "id": "rust-analyzer-r4-syntax-gained-mutation-m1-7af5e4",
+   "choice": "bug",
+   "note": "R4：同第 16 组：Add .to_owned() here 用在结构体简写字段上，生成 space.to_owned()，语法错误"
+  },
+  {
+   "n": 20,
+   "id": "ts6-r4-diagnostics-changed-1064-2322-quickfix-d597f5",
+   "choice": "bug",
+   "note": "R4：Convert to async function 保留了显式返回类型 Bluebird<…>，async 函数必须返回全局 Promise，新增 TS1064；修复本应改写返回类型或不提供"
+  },
+  {
+   "n": 21,
+   "id": "ts6-r4-diagnostics-changed-mutation-m1-34f06f",
+   "choice": "bug",
+   "note": "R4：Fix all detected spelling errors 把 JSX 组件标签 <Reveal> 改成 <eval>；小写标签是内置元素、并不指向 eval，拼写建议本身不成立，新增 7026"
+  },
+  {
+   "n": 22,
+   "id": "ts6-r4-diagnostics-extra-17000-mutation-m3-07673d",
+   "choice": "tool-artifact",
+   "note": "A1：17000（JSX 属性值是空表达式）是变异删掉 {showActions} 里的引用直接造成的，Remove unused declaration 没有引入它"
+  },
+  {
+   "n": 23,
+   "id": "ts6-r4-diagnostics-extra-17002-2552-mutation-m1-727795",
+   "choice": "bug",
+   "note": "R4：Change spelling to eval 只改了 JSX 开标签，闭标签仍是 </Reveal>，新增 17002 语法错误；其余 2552 是工具埋的错"
+  },
+  {
+   "n": 24,
+   "id": "ts6-r4-diagnostics-extra-2304-mutation-m2-1554be",
+   "choice": "tool-artifact",
+   "note": "A1：剩下的 Cannot find name BoardVieewHeader 就是工具埋的拼写错；Remove import 修的是因此变成未使用的导入，没有引入新错误"
+  },
+  {
+   "n": 25,
+   "id": "ts6-r4-diagnostics-extra-2322-2345-mutation-m1-2566f2",
+   "choice": "tool-artifact",
+   "note": "A2：变异删掉 path 的 join 导入后，工具采用的是 bluebird 的同名 join 候选；导入别的模块的同名符号带来类型错误，服务器无从知道原意"
+  },
+  {
+   "n": 26,
+   "id": "ts6-r4-diagnostics-extra-2322-mutation-m1-dc576a",
+   "choice": "tool-artifact",
+   "note": "A2：工具采用的候选把 Command 从 @commander-js/extra-typings 导入，不是原来那个 Command 类型；同名不同物，类型错误来自候选选择"
+  },
+  {
+   "n": 27,
+   "id": "ts6-r4-diagnostics-extra-2322-mutation-m3-1879f3",
+   "choice": "bug",
+   "note": "R4：Add missing properties 给 Record<string, any> 类型的必填属性填 undefined，严格模式下立刻报 2322；属性类型已知，本可填 {}"
+  },
+  {
+   "n": 28,
+   "id": "ts6-r4-diagnostics-extra-2339-6133-mutation-m1-4cd363",
+   "choice": "tool-artifact",
+   "note": "A2：变异删掉 react 的 createContext 导入后，工具采用的是 Add missing function declaration，生成 throw 的桩函数（返回 void、形参不用）；桩函数在开了 noUnused 的项目里必然报错，正确修复是补导入"
+  },
+  {
+   "n": 29,
+   "id": "ts6-r4-diagnostics-extra-2345-2554-mutation-m1-d523d0",
+   "choice": "tool-artifact",
+   "note": "A2：拼写建议把 getClaudeConfigHomeDirOverrideForTesting 改成同文件已导入的 setClaudeConfigHomeDirForTesting，这是另一个合法函数，签名不同导致类型错误，属于候选与原意不符"
+  },
+  {
+   "n": 30,
+   "id": "ts6-r4-diagnostics-extra-2353-mutation-m1-2b6bdb",
+   "choice": "tool-artifact",
+   "note": "A2：工具采用的候选把 Command 从 vscode-languageserver-protocol 导入，不是原来那个 Command 类型；同名不同物，类型错误来自候选选择"
+  },
+  {
+   "n": 31,
+   "id": "ts6-r4-diagnostics-extra-2448-7022-mutation-m1-e5d199",
+   "choice": "bug",
+   "note": "R4：拼写建议把 getFolder 改成 folder，而 folder 正是这一行正在声明的 const，结果自引用（2448/7022）；建议了一个在该位置永远不合法的名字"
+  },
+  {
+   "n": 32,
+   "id": "ts6-r4-diagnostics-extra-2552-mutation-m2-f7e816",
+   "choice": "tool-artifact",
+   "note": "A1：剩下的 Cannot find name lie 就是工具埋的拼写错；Infer parameter types from usage 修的是回调参数的隐式 any，没有引入新错误"
+  },
+  {
+   "n": 33,
+   "id": "ts6-r4-diagnostics-extra-2554-mutation-m3-d2ab31",
+   "choice": "tool-artifact",
+   "note": "A1：2554（map 缺参数）是变异删掉整个回调、留下 tokens.map() 造成的；Remove unused declaration 没有引入它"
+  },
+  {
+   "n": 34,
+   "id": "ts6-r4-diagnostics-extra-2555-mutation-m3-8de4a9",
+   "choice": "tool-artifact",
+   "note": "A1：2555（formatMessage 缺参数）是变异删掉 labels.websites 实参、留下 formatMessage() 造成的；Remove unused declaration 没有引入它"
+  },
+  {
+   "n": 35,
+   "id": "ts6-r4-diagnostics-extra-2558-2604-mutation-m1-e220b8",
+   "choice": "tool-artifact",
+   "note": "A2：变异删掉 solid-js 的 createContext 导入后，工具采用的是 Node 内置 vm 的同名 createContext 候选；同名不同物，类型错误来自候选选择"
+  },
+  {
+   "n": 36,
+   "id": "ts6-r4-diagnostics-extra-2604-mutation-m1-0e3b68",
+   "choice": "tool-artifact",
+   "note": "A2：工具采用的是 Add missing function declaration，生成 throw 的桩函数（返回 void），用作 JSX 组件自然报 2604；正确修复是补 solid-js 导入"
+  },
+  {
+   "n": 37,
+   "id": "ts6-r4-syntax-gained-mutation-m1-7e3417",
+   "choice": "bug",
+   "note": "R4：同第 23 组（syntax 版）：Change spelling to eval 只改 JSX 开标签，闭标签没改，TS17002 语法错误"
+  },
+  {
+   "n": 38,
+   "id": "ts7-r4-diagnostics-extra-2322-2345-mutation-m1-5efcb9",
+   "choice": "tool-artifact",
+   "note": "A2：同第 25 组（ts7）：工具采用 bluebird 的同名 join 候选，类型错误来自候选选择"
+  },
+  {
+   "n": 39,
+   "id": "ts7-r4-diagnostics-extra-2322-mutation-m1-e5a893",
+   "choice": "tool-artifact",
+   "note": "A2：同第 26 组（ts7）：工具采用 @commander-js/extra-typings 的同名 Command 候选，类型错误来自候选选择"
+  },
+  {
+   "n": 40,
+   "id": "ts7-r4-diagnostics-extra-2353-mutation-m1-cf35f5",
+   "choice": "tool-artifact",
+   "note": "A2：同第 30 组（ts7）：工具采用 vscode-languageserver-protocol 的同名 Command 候选，类型错误来自候选选择"
+  },
+  {
+   "n": 41,
+   "id": "ts7-r4-diagnostics-extra-2558-2604-mutation-m1-ead3ee",
+   "choice": "tool-artifact",
+   "note": "A2：同第 35 组（ts7）：工具采用 node:vm 的同名 createContext 候选，类型错误来自候选选择"
+  },
+  {
+   "n": 42,
+   "id": "gopls-r3-definitionconsistency-changed-d-cf67f4",
+   "choice": "legitimate",
+   "note": "L4：第二次查询落在 import 路径字符串上；gopls 按设计把 import 路径的定义解析为被导入包的各个文件（在项目外），而不是这条 import 声明本身"
+  },
+  {
+   "n": 43,
+   "id": "gopls-r3-definitionconsistency-result-error-0-d-f91fb9",
+   "choice": "legitimate",
+   "note": "L4：同第 42 组的 import 路径设计；这里导入的是 unsafe，没有可读源文件，gopls 源码里有意返回错误（package has no readable files）"
+  },
+  {
+   "n": 44,
+   "id": "gopls-r3-highlightvsreferences-extra-c-84be95",
+   "choice": "legitimate",
+   "note": "L4：LSP 规定 documentHighlight 可以比 references 更模糊；gopls 在类型名 Table 上额外高亮了整个 Table{...} 复合字面量"
+  },
+  {
+   "n": 45,
+   "id": "pyright-r3-definitionconsistency-extra-d-3d112f",
+   "choice": "legitimate",
+   "note": "L4：tool_schemas 在类体有带注解的声明（33 行），129 行还有 self.tool_schemas 赋值；pyright 从成员访问处只给带注解的声明，在声明处给全部声明，属于设计"
+  },
+  {
+   "n": 46,
+   "id": "pyright-r3-definitionconsistency-lost-d-a4eaed",
+   "choice": "legitimate",
+   "note": "L4：这里的“引用”是 __all__ 列表里的字符串 \"VertexProvider\"；pyright 的 references 会列出 __all__ 字符串，但 definition 不在字符串上导航"
+  },
+  {
+   "n": 47,
+   "id": "pyright-r3-definitionconsistency-missing-d-81a7e5",
+   "choice": "legitimate",
+   "note": "L4：同第 45 组，方向相反：在声明处返回两处声明，从成员访问处只返回带注解的那一处"
+  },
+  {
+   "n": 48,
+   "id": "pyright-r3-highlightvsreferences-gained-c-3118cc",
+   "choice": "legitimate",
+   "note": "L4：位置在 ParamSpec 的 _P.args 上，没有可解析的声明；pyright 高亮在无声明时按同名匹配（源码 There were no declarations 分支），references 为空；LSP 允许高亮更模糊"
+  },
+  {
+   "n": 49,
+   "id": "rust-analyzer-r3-definitionconsistency-changed-d-2c6179",
+   "choice": "legitimate",
+   "note": "L4：引用处是 Self { ... }；rust-analyzer 对 Self 的定义按设计跳到 impl Layout 里的类型位置，而不是 struct 定义"
+  },
+  {
+   "n": 50,
+   "id": "rust-analyzer-r3-definitionconsistency-missing-d-586fd8",
+   "choice": "legitimate",
+   "note": "L4：第 12 行 source 是结构体简写字段，同时指向闭包参数和 Error::FilesystemIo 的字段，r-a 按设计返回两处；在闭包参数声明处只返回它自己"
+  },
+  {
+   "n": 51,
+   "id": "rust-analyzer-r3-diagnostics-missing-inactive-code-a-0b07f0",
+   "choice": "",
+   "note": "待重放（未点按钮）：push 路线里完全没有 r-a 的原生诊断。请看 replay 日志：若 push 会话 initialize 时仍声明了 textDocument.diagnostic（pull）能力，r-a 按设计只经 pull 给原生诊断 → A2；若稍后才推送 → A3；若始终不推送 → bug（一年前版本基本不复现，疑似回归）。本组是 inactive_code"
+  },
+  {
+   "n": 52,
+   "id": "rust-analyzer-r3-diagnostics-missing-unlinked-file-a-efb484",
+   "choice": "",
+   "note": "待重放（未点按钮）：push 路线里完全没有 r-a 的原生诊断。请看 replay 日志：若 push 会话 initialize 时仍声明了 textDocument.diagnostic（pull）能力，r-a 按设计只经 pull 给原生诊断 → A2；若稍后才推送 → A3；若始终不推送 → bug（一年前版本基本不复现，疑似回归）。本组是 unlinked-file，旧版本 1/3 复现，时机因素更可疑"
+  },
+  {
+   "n": 53,
+   "id": "rust-analyzer-r3-highlightvsreferences-extra-c-c2bfed",
+   "choice": "legitimate",
+   "note": "L4：光标在 use clap::Parser 的 Parser 上，r-a 新版高亮会额外标出 Opt::parse() 这类用到该 trait 的方法调用（说明导入被用到）；LSP 允许高亮比 references 更模糊，旧版本无此功能"
+  },
+  {
+   "n": 54,
+   "id": "rust-analyzer-r3-semantictokensrange-changed-b-b6e28b",
+   "choice": "bug",
+   "note": "R3：同一段代码 semanticTokens/range 与 full 不一致：range 里 proc-macro 展开中的记号丢了 macro/procMacro 修饰，一个 method 变成 unresolvedReference；一年前版本不复现，疑似回归"
+  },
+  {
+   "n": 55,
+   "id": "ts6-r3-definitionconsistency-changed-d-bf619d",
+   "choice": "legitimate",
+   "note": "L2：两边的定义都在 lib.dom.d.ts（项目外的标准库声明）里，只是行号不同（不同接口上的同名成员）"
+  },
+  {
+   "n": 56,
+   "id": "ts6-r3-definitionconsistency-extra-d-1fb668",
+   "choice": "legitimate",
+   "note": "L4：从调用处跳定义，TS 只给与这次调用匹配的那个重载签名；从非调用的引用处给全部三个重载声明，属于 TS 的设计"
+  },
+  {
+   "n": 57,
+   "id": "ts6-r3-definitionconsistency-lost-d-fb78dd",
+   "choice": "legitimate",
+   "note": "L4：引用处是解构参数里的剩余元素 ...props；TS 对对象解构绑定的定义会去找被解构类型上的同名属性，剩余元素找不到就返回空（边角情况，TS 设计如此）"
+  },
+  {
+   "n": 58,
+   "id": "ts6-r3-definitionconsistency-missing-d-0ab4de",
+   "choice": "legitimate",
+   "note": "L4：两处都是 JSX 属性 title，但在不同组件上：一处组件自己声明了 title 又带 React HTMLAttributes 的 title，另一处只有后者；definition 按各自的上下文类型返回，集合不同"
+  },
+  {
+   "n": 59,
+   "id": "ts6-r3-highlightvsreferences-gained-c-e8db7c",
+   "choice": "legitimate",
+   "note": "L4：位置在内置元素 <label> 的标签名上；高亮是 TS 对 JSX 开/闭标签的配对高亮，references 在这里为空（该示例里 JSX 内置元素类型不可用）；LSP 允许高亮更模糊"
+  },
+  {
+   "n": 60,
+   "id": "ts7-r3-definitionconsistency-changed-d-a42b32",
+   "choice": "legitimate",
+   "note": "L2：同第 55 组（ts7）：两边定义都在 lib.dom.d.ts（项目外）里，只是行号不同"
+  },
+  {
+   "n": 61,
+   "id": "ts7-r3-definitionconsistency-extra-d-fb74d3",
+   "choice": "legitimate",
+   "note": "L4：date-fns 的 formattingValues 在联合类型的两个成员里各声明一次；从对象字面量处按上下文只给匹配的那个成员，从 args.formattingValues 访问处给两个声明"
+  },
+  {
+   "n": 62,
+   "id": "ts7-r3-definitionconsistency-lost-d-0129b3",
+   "choice": "",
+   "note": "待重放（未点按钮，倾向 bug）：src/ink.tsx 147 行 stdin: NodeJS.ReadableStream 上跳定义，TS7 返回空，而测试文件里同一个 NodeJS 命名空间能跳到 @types/node 的 9 处声明；ts6 没有对应组，像是 TS7 在 .tsx 里的缺陷。日志只有 context canceled，看着是后台取消；请重放并对照 ts6 同位置结果，若 ink.tsx 那边本来就解析不到 NodeJS 则改判 legitimate"
+  },
+  {
+   "n": 63,
+   "id": "ts7-r3-definitionconsistency-missing-d-560852",
+   "choice": "legitimate",
+   "note": "L4：一处是插件对象字面量里的 name 属性，definition 同时给字面量自身的属性和 plugins.ts 里的类型声明；另一处只指向类型声明。字面量自身的属性只属于那个对象"
+  },
+  {
+   "n": 64,
+   "id": "ts7-r3-highlightvsreferences-gained-c-9f16d3",
+   "choice": "legitimate",
+   "note": "L4：同第 59 组（ts7）：<label> 开/闭标签的配对高亮，TS7 高亮整个标签；references 为空；LSP 允许高亮更模糊"
+  },
+  {
+   "n": 65,
+   "id": "ts7-r6-completion-changed-completion-997cb3",
+   "choice": "legitimate",
+   "note": "L6：全局补全列表的取舍不同：TS6 多给了模块里不能直接用的 UMD 全局 Long、protobuf；TS7 多给了正在本句解构声明的 addNotification/removeNotification（TS6 会在变量自身初始化式里过滤掉，TS7 这点可算小缺口）"
+  },
+  {
+   "n": 66,
+   "id": "ts7-r6-completion-missing-completion-60ede6",
+   "choice": "legitimate",
+   "note": "L6：TS7 少了 UMD 全局 babel 和 RevealOrder 这类候选，全局/自动导入候选范围与 TS6 不同，属补全列表取舍差别"
+  },
+  {
+   "n": 67,
+   "id": "ts7-r6-definition-changed-definition-1c2318",
+   "choice": "legitimate",
+   "note": "L6：TS6 停在本文件第 3 行的导入绑定，TS7 直接跳到被导入模块 hexo-util 的 d.ts（整文件范围）；两种目标都说得通"
+  },
+  {
+   "n": 68,
+   "id": "ts7-r6-definition-extra-definition-d8e982",
+   "choice": "legitimate",
+   "note": "L6：从调用处跳定义，TS6 只给与这次调用匹配的重载签名，TS7 给全部三个重载；TS7 精度低一些，但都是正确的声明"
+  },
+  {
+   "n": 69,
+   "id": "ts7-r6-definition-gained-definition-24364e",
+   "choice": "legitimate",
+   "note": "L6：位置在 ...props 的 ... 上；TS6 返回空，TS7 取了紧挨着的绑定 props 并返回它的声明；取词方式不同"
+  },
+  {
+   "n": 70,
+   "id": "ts7-r6-diagnostics-missing-2304-2339-2593-diagnostics-31eb88",
+   "choice": "legitimate",
+   "note": "L6：TS7 给这个 mocha 测试文件带上了 mocha/chai 类型，TS6 没有（describe/it/before 找不到、.should 不存在）；差别来自两边为测试文件选用的项目配置/类型包不同，不是检查规则不同（可核对 tsconfig）"
+  },
+  {
+   "n": 71,
+   "id": "ts7-r6-diagnostics-missing-2304-2593-diagnostics-58256c",
+   "choice": "legitimate",
+   "note": "L6：同第 70 组：测试文件里 describe/it 等测试框架全局名，TS6 报找不到，TS7 不报；来自两边带入的类型包不同"
+  },
+  {
+   "n": 72,
+   "id": "ts7-r6-diagnostics-missing-80006-diagnostics-da3300",
+   "choice": "legitimate",
+   "note": "L6：TS7 不报 80006（This may be converted to an async function）这个建议级诊断，TS6 报；属 TS7 未提供的建议诊断"
+  },
+  {
+   "n": 73,
+   "id": "ts7-r6-hover-changed-hover-e5c91e",
+   "choice": "legitimate",
+   "note": "L6：只是 hover 的打印方式不同：TS6 打成函数形式并注明 (+1 overload)，TS7 打成 const describe: <签名>；同一个符号"
+  },
+  {
+   "n": 74,
+   "id": "ts7-r6-hover-lost-hover-feed64",
+   "choice": "legitimate",
+   "note": "L6：在解析不到的 solid-js 导入说明符 useContext 上，TS6 给简短的 import useContext，TS7 不给 hover；两边对未解析别名的处理不同"
+  },
+  {
+   "n": 75,
+   "id": "gopls-r5-codeaction-extra-t1-6dfb45",
+   "choice": "legitimate",
+   "note": "L5：变换在 import 块里插入了空行，改变了导入分组/排布，goimports 的整理结果不再为空，于是多出 Organize Imports；该动作按设计取决于 import 块的行排布"
+  },
+  {
+   "n": 76,
+   "id": "gopls-r5-codeaction-extra-t2-86a8ac",
+   "choice": "legitimate",
+   "note": "L5：同第 75 组：变换在 import 块里插入注释行，Organize Imports 变得可用；按设计取决于 import 块的行排布"
+  },
+  {
+   "n": 77,
+   "id": "gopls-r5-foldingrange-changed-t4-b07c86",
+   "choice": "bug",
+   "note": "R5：块注释里含 \\r 时，gopls 给出的注释折叠区间结束列少了 \\r 的个数（14:2 变 14:1）；疑似用了 go/ast 的 Comment.End()（按去掉 \\r 后的文本长度算）；v0.20.0 也复现"
+  },
+  {
+   "n": 78,
+   "id": "gopls-r5-foldingrange-changed-t6-ecacad",
+   "choice": "tool-artifact",
+   "note": "A2：行内注释正好插在 assert.NotNil( 的左括号后，也就是折叠区间起点；gopls 变换后从 ( 后开始折叠（含注释）是对的，工具把原起点映射到注释之后，差别来自映射边界"
+  },
+  {
+   "n": 79,
+   "id": "gopls-r5-semantictokens-changed-t4-b423af",
+   "choice": "bug",
+   "note": "R5：块注释里含 \\r 时，gopls 的 semanticTokens 漏掉注释中间各行的 comment 记号、末行长度也不对；与第 77 组同一类 CR 处理问题；v0.20.0 也复现"
+  },
+  {
+   "n": 80,
+   "id": "gopls-r5-semantictokens-extra-t4-867006",
+   "choice": "bug",
+   "note": "R5：多行原始字符串里含 \\r 时，gopls 多出一个长度为 0 的 string 记号（13:0）；同属 CR 处理问题；v0.20.0 也复现"
+  },
+  {
+   "n": 81,
+   "id": "rust-analyzer-r5-codeaction-changed-t6-4ee734",
+   "choice": "legitimate",
+   "note": "L1：只是动作标题不同：r-a 的 Inline 标题直接取源码文本，插入的行内注释跟着进了标题；动作本身相同"
+  },
+  {
+   "n": 82,
+   "id": "rust-analyzer-r5-documentsymbol-changed-t6-a3a950",
+   "choice": "legitimate",
+   "note": "L1：只是符号名的打印不同：impl 块的名字取自源码文本，行内注释被带进名字；符号与范围相同"
+  },
+  {
+   "n": 83,
+   "id": "ts6-r5-foldingrange-extra-t2-625065",
+   "choice": "legitimate",
+   "note": "L5：插入的注释行和下面已有的 // 注释之间只隔一个空行，TS 把它们合成一个多行注释块并给出折叠区间；注释折叠按设计取决于行的排布"
+  },
+  {
+   "n": 84,
+   "id": "ts7-r5-foldingrange-extra-t2-5dd83a",
+   "choice": "legitimate",
+   "note": "L5：同第 83 组（ts7）：插入的注释与已有注释连成多行注释块，多出一个注释折叠区间"
+  },
+  {
+   "n": 85,
+   "id": "gopls-r1-codeaction-changed-h4-c5344e",
+   "choice": "bug",
+   "note": "R1：staticcheck 开了又关回原值后，codeAction 里同一诊断的 Replace interface{} by any 快修重复出现（原始违例 3 份，新会话 1 份）。注意：缩减步骤丢了“关回”这一步，最终配置与新会话不同，复现请用 repro.json 里 violation.ops 的原始步骤；v0.20.0 也复现"
+  },
+  {
+   "n": 86,
+   "id": "gopls-r1-codeaction-changed-h7-383b05",
+   "choice": "bug",
+   "note": "R1：与第 85 组同一根因：completeUnimported 切换后回到原值，Replace interface{} by any 快修重复出现（原始违例 3 份）；缩减步骤同样丢了“切回”，复现请用原始 ops"
+  },
+  {
+   "n": 87,
+   "id": "gopls-r1-codeaction-key-lost-h7-547744",
+   "choice": "bug",
+   "note": "R1：关闭/重开文件并改动 dummy_dialecter.go 后，joins_test.go 的诊断与新会话不同：第 10 行 9:15 那条诊断（对应 go get gorm.io/gorm 快修）在历史会话里没有，codeAction 无从对上（missing-key）；v0.20.0 也复现"
+  },
+  {
+   "n": 88,
+   "id": "gopls-r1-completion-extra-h5-2dfa5a",
+   "choice": "legitimate",
+   "note": "L3：多出的 atomic.Bool、internalcli.BoolFlag 是带包名的深度/未导入候选；gopls 文档写明补全有 completionBudget（默认 100ms）时间预算、超时即缩小搜索；新会话冷启动只来得及给 bool。缩减未确认（0/3），旧版本不复现"
+  },
+  {
+   "n": 89,
+   "id": "gopls-r1-completion-extra-h6-410566",
+   "choice": "legitimate",
+   "note": "L3：多出的 fmt.Stringer、fmt.GoStringer 是带包名的深度候选，受 gopls 文档写明的 completionBudget 时间预算影响；缩减未确认（0/3）"
+  },
+  {
+   "n": 90,
+   "id": "gopls-r1-completion-extra-h8-02679b",
+   "choice": "legitimate",
+   "note": "L3：同第 88 组（同一位置）：差别只在带包名的深度候选，受 completionBudget 限制；本组时序 race0，缩减未确认（0/3），旧版本不复现"
+  },
+  {
+   "n": 91,
+   "id": "gopls-r1-completion-lost-h7-1a1169",
+   "choice": "bug",
+   "note": "R1：go.mod 写出再写回、测试文件改名往返之后，geekbang_test.go 里的补全成了空列表，新会话给出 string；这不是深度候选，属状态没有恢复；v0.20.0 也复现"
+  },
+  {
+   "n": 92,
+   "id": "gopls-r1-diagnostics-message-h5-e59f2c",
+   "choice": "bug",
+   "note": "R1：clause/joins.go 改名往返后，hooks_test.go 的导入错误诊断内容变了：新会话说由 gorm.io/gorm/tests 导入、建议 go get -t gorm.io/gorm/tests，历史会话说由 gorm.io/gorm 导入、建议 go get gorm.io/gorm@v1.31.0；不只是措辞，反映模块解析状态不同；三种时序都出现，v0.20.0 也复现"
+  },
+  {
+   "n": 93,
+   "id": "gopls-r1-diagnostics-missing-h7-10a910",
+   "choice": "bug",
+   "note": "R1：与第 87 组同一历史（关闭重开 + 改 dummy_dialecter.go）：joins_test.go 第 10 行的导入错误诊断（missing go.sum entry … go get -t gorm.io/gorm/tests）在历史会话里消失；v0.20.0 也复现"
+  },
+  {
+   "n": 94,
+   "id": "gopls-r1-references-extra-h5-e2e003",
+   "choice": "bug",
+   "note": "R1：chainable_api.go 改名往返后，从 tests/count_test.go 查 references 多出根包 statement_test.go 里的 3 处引用，新会话没有；项目文件里的引用集合不同；v0.20.0 也复现"
+  },
+  {
+   "n": 95,
+   "id": "pyright-r1-definition-extra-h5-2e7477",
+   "choice": "legitimate",
+   "note": "L2：差别只是多出一个项目外的位置（site-packages 里的 typing_extensions.py），项目内的定义相同"
+  },
+  {
+   "n": 96,
+   "id": "pyright-r1-definition-missing-h5-964341",
+   "choice": "legitimate",
+   "note": "L2：差别只是少了一个项目外的位置（标准库 _py_warnings.py），项目内的定义相同；与第 98 组同一历史"
+  },
+  {
+   "n": 97,
+   "id": "pyright-r1-hover-text-h2-fb2ed0",
+   "choice": "bug",
+   "note": "R1：删掉 setup.py 一行后，iqiyi.py 里 tvid 的 hover 类型在历史会话是 str | Any | None，新会话是 Unknown | None；同样内容下类型推断结果取决于历史；1.1.406 也复现"
+  },
+  {
+   "n": 98,
+   "id": "pyright-r1-hover-text-h5-f24c4e",
+   "choice": "bug",
+   "note": "R1：versions.py 改名往返后，项目文件里 warn 的 hover 丢了文档字符串（新会话有 Issue a warning…）；根因与第 96 组相同（找不到标准库源码 _py_warnings.py），但 hover 是项目文件上的答案，按 R1 规则算 bug；若你认为应归入“项目外”例外可改 L2"
+  },
+  {
+   "n": 99,
+   "id": "pyright-r1-hover-text-h8-2a8227",
+   "choice": "bug",
+   "note": "R1：先在 suntv.py 加一行、在 pixnet.py 请求补全后，ifeng.py 参数 title 的 hover 类型是 str | Any | None，新会话是 Unknown | None；同样内容下推断结果取决于历史；1.1.406 也复现"
+  },
+  {
+   "n": 100,
+   "id": "pyright-r1-references-extra-h4-a63d47",
+   "choice": "legitimate",
+   "note": "L2：diagnosticMode 切 workspace 再切回后，references 多出 126 处，全部在 site-packages 等项目外文件（__future__.annotations 的引用）；项目内 103 处完全一致（已逐条核对 repro.json）"
+  },
+  {
+   "n": 101,
+   "id": "pyright-r1-references-extra-h9-37c1a2",
+   "choice": "bug",
+   "note": "R1：只是先打开了 scrapy/utils/misc.py，references 就在 misc.py 里多出 32:56 和 53:30 两处，新会话没有；项目文件里的引用集合取决于打开历史；1.1.406 也复现"
+  },
+  {
+   "n": 102,
+   "id": "pyright-r1-references-missing-h5-64453c",
+   "choice": "legitimate",
+   "note": "L2：差别只是少了标准库 _py_warnings.py 里的一处引用（项目外）；项目内引用相同；与第 96/98 组同一历史"
+  },
+  {
+   "n": 103,
+   "id": "pyright-r1-signaturehelp-changed-h9-846c6c",
+   "choice": "bug",
+   "note": "R1：只是先打开 models/common.py，dataloaders.py 里 letterbox 的 signatureHelp 返回类型就从 tuple[...] 变成 Unknown；推断结果取决于历史；一年前版本不复现，疑似回归"
+  },
+  {
+   "n": 104,
+   "id": "pyright-r1-typedefinition-extra-h2-764582",
+   "choice": "legitimate",
+   "note": "L2：类型定义只多了项目外 typeshed builtins.pyi 的 class str；根因与第 97 组相同（tvid 推断随历史变化，第 97 组已判 bug），本组答案只差项目外位置，按例外记 L2"
+  },
+  {
+   "n": 105,
+   "id": "pyright-r1-typedefinition-extra-h8-9c51fd",
+   "choice": "legitimate",
+   "note": "L2：同第 104 组，对应第 99 组的历史：类型定义只多了项目外 builtins.pyi 的 class str；根因已在第 99 组判 bug"
+  },
+  {
+   "n": 106,
+   "id": "ts6-r1-codeaction-extra-h5-f48d27",
+   "choice": "bug",
+   "note": "R1：只是先单独打开 blockquote.ts，describe 那条诊断的 codeAction 就多出 Add import from \"node:test\" 和 Add all missing imports，新会话没有；自动导入候选取决于打开顺序"
+  },
+  {
+   "n": 107,
+   "id": "ts6-r1-codeaction-key-lost-h8-3e0e0f",
+   "choice": "bug",
+   "note": "R1：与第 111 组同一历史（0 ms 间隔先发 typeDefinition 和 completion）：历史会话里 2875 诊断的范围变了（43:93 变 43:87），codeAction 对不上那条诊断（missing-key）；1 年前版本也复现"
+  },
+  {
+   "n": 108,
+   "id": "ts6-r1-completion-lost-h9-ce1ffc",
+   "choice": "bug",
+   "note": "R1：useUserSettings.ts 改名往返（中间改 TopMenu.tsx 再改回）后，TopMenu.tsx 里对设置对象的补全变成空列表；根因见第 110 组（模块解析没恢复）；旧版本也复现"
+  },
+  {
+   "n": 109,
+   "id": "ts6-r1-definition-lost-h9-898f29",
+   "choice": "bug",
+   "note": "R1：同第 108 组历史：TopMenu.tsx 里跳定义返回空，新会话能跳到 useUserSettingsRoot.ts:330；根因同第 110 组"
+  },
+  {
+   "n": 110,
+   "id": "ts6-r1-diagnostics-extra-2307-7006-h9-8325a2",
+   "choice": "bug",
+   "note": "R1：useUserSettings.ts 改名再改回后，TopMenu.tsx 仍报 Cannot find module ./hooks/useUserSettings（2307）及随之而来的隐式 any，新会话无此错误；模块解析缓存没随文件恢复而更新；旧版本也复现"
+  },
+  {
+   "n": 111,
+   "id": "ts6-r1-diagnostics-moved-2875-h8-751ff9",
+   "choice": "bug",
+   "note": "R1：0 ms 间隔先发 typeDefinition 和 completion 后，第 44 行两条诊断（2875 缺 jsx-runtime、7026）的范围对调/改变（2875 从 43:13-93 变成 43:13-87）；TS 一次性报告的错误挂在哪个节点取决于检查顺序；旧版本也复现"
+  },
+  {
+   "n": 112,
+   "id": "ts6-r1-documenthighlight-missing-h9-2e657a",
+   "choice": "bug",
+   "note": "R1：modelOptions.ts 改名往返后，documentHighlight 少了第 791 行的两处读引用（790:26、790:58）；旧版本也复现"
+  },
+  {
+   "n": 113,
+   "id": "ts6-r1-hover-text-h5-b3855d",
+   "choice": "legitimate",
+   "note": "L1：同一个属性 length: number，只是 hover 里容器类型印成泛型声明 Array<T> 还是实例化后的 Array<string>（取决于检查器缓存）；信息相同，属打印差异"
+  },
+  {
+   "n": 114,
+   "id": "ts6-r1-hover-text-h8-2ce168",
+   "choice": "legitimate",
+   "note": "L1：只是联合类型成员顺序不同（DOMElement | TextNode 对 TextNode | DOMElement），取决于类型创建顺序"
+  },
+  {
+   "n": 115,
+   "id": "ts6-r1-inlayhint-changed-h8-8f6569",
+   "choice": "legitimate",
+   "note": "L1：同第 114 组：各条 inlay hint 里联合类型成员顺序不同，内容相同"
+  },
+  {
+   "n": 116,
+   "id": "ts6-r1-inlayhint-changed-h9-b9d052",
+   "choice": "bug",
+   "note": "R1：modelOptions.ts 改名往返（期间改其他文件并保存）后，第 790 行的 inlay hint 从 : string 变成 : any，类型推断退化；缩减确认 2/3，旧版本不复现"
+  },
+  {
+   "n": 117,
+   "id": "ts6-r1-references-missing-h5-cc8950",
+   "choice": "bug",
+   "note": "R1：src/common/util.ts 改名往返后，references 少了 ffmpeg.ts、App.tsx 等 6 处项目内引用；其他文件对 util.ts 的导入没有重新解析；三个项目都出现，旧版本也复现"
+  },
+  {
+   "n": 118,
+   "id": "ts6-r1-semantictokens-changed-h9-c4368c",
+   "choice": "bug",
+   "note": "R1：useUserSettings.ts 改名往返后，TopMenu.tsx 里几处 hook 声明的语义记号从 function 变成 variable（导入解析成 any）；根因同第 110 组；旧版本也复现"
+  },
+  {
+   "n": 119,
+   "id": "ts6-r1-signaturehelp-changed-h5-db5a5e",
+   "choice": "legitimate",
+   "note": "L1：只是联合类型成员顺序不同（$ZodIssueInvalidType | $ZodIssueUnrecognizedKeys 的先后），签名内容相同"
+  },
+  {
+   "n": 120,
+   "id": "ts6-r1-typedefinition-lost-h9-b52749",
+   "choice": "bug",
+   "note": "R1：同第 108 组历史：TopMenu.tsx 里 typeDefinition 返回空，新会话能跳到 useUserSettingsRoot.ts；根因同第 110 组"
+  },
+  {
+   "n": 121,
+   "id": "ts7-r1-hover-text-h8-500422",
+   "choice": "legitimate",
+   "note": "L1：同第 113 组（ts7）：hover 里只是 Array<T> 与 Array<string> 的打印差异，同一属性"
+  }
+ ]
+}

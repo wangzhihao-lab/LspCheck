@@ -1,0 +1,707 @@
+{
+ "format": 1,
+ "campaign": "main_v1",
+ "vid": "8c629b528584-v00",
+ "run_id": "8c629b528584",
+ "oracle": "r1_history",
+ "server": {
+  "kind": "gopls",
+  "version": "v0.23.0"
+ },
+ "project": {
+  "name": "spf13/cobra@adbc8813901b",
+  "source": "corpus",
+  "ref": "temp/corpus/spf13__cobra@adbc8813901b",
+  "commit": "adbc8813901bba65827259daa8e22ff94ec1f30e",
+  "language": "go"
+ },
+ "context": {
+  "seed": 3,
+  "timing": "settled",
+  "settle_timeout_s": 300.0,
+  "request_timeout_s": 30.0,
+  "extra_settings": null,
+  "max_cases": 12,
+  "targets": [
+   {
+    "path": "bash_completionsV2_test.go",
+    "positions": [
+     [
+      22,
+      40
+     ],
+     [
+      22,
+      46
+     ],
+     [
+      23,
+      10
+     ],
+     [
+      23,
+      16
+     ],
+     [
+      23,
+      26
+     ],
+     [
+      25,
+      14
+     ],
+     [
+      27,
+      4
+     ],
+     [
+      30,
+      26
+     ],
+     [
+      30,
+      35
+     ],
+     [
+      30,
+      39
+     ],
+     [
+      31,
+      11
+     ],
+     [
+      31,
+      23
+     ]
+    ],
+    "ends": [
+     [
+      22,
+      41
+     ],
+     [
+      22,
+      50
+     ],
+     [
+      23,
+      14
+     ],
+     [
+      23,
+      18
+     ],
+     [
+      23,
+      28
+     ],
+     [
+      25,
+      17
+     ],
+     [
+      27,
+      7
+     ],
+     [
+      30,
+      34
+     ],
+     [
+      30,
+      36
+     ],
+     [
+      30,
+      41
+     ],
+     [
+      31,
+      12
+     ],
+     [
+      31,
+      25
+     ]
+    ],
+    "names": [
+     "t",
+     "testing",
+     "Command",
+     "Use",
+     "Run",
+     "bytes",
+     "output",
+     "activeHelpEnvVar",
+     "c",
+     "Name",
+     "t",
+     "fmt"
+    ]
+   },
+   {
+    "path": "flag_groups_test.go",
+    "positions": [
+     [
+      31,
+      25
+     ],
+     [
+      59,
+      29
+     ],
+     [
+      84,
+      5
+     ],
+     [
+      114,
+      31
+     ],
+     [
+      115,
+      31
+     ],
+     [
+      139,
+      5
+     ],
+     [
+      144,
+      16
+     ],
+     [
+      163,
+      2
+     ],
+     [
+      163,
+      13
+     ],
+     [
+      175,
+      7
+     ],
+     [
+      178,
+      7
+     ],
+     [
+      189,
+      28
+     ]
+    ],
+    "ends": [
+     [
+      31,
+      28
+     ],
+     [
+      59,
+      32
+     ],
+     [
+      84,
+      7
+     ],
+     [
+      114,
+      34
+     ],
+     [
+      115,
+      34
+     ],
+     [
+      139,
+      7
+     ],
+     [
+      144,
+      30
+     ],
+     [
+      163,
+      3
+     ],
+     [
+      163,
+      15
+     ],
+     [
+      175,
+      8
+     ],
+     [
+      178,
+      8
+     ],
+     [
+      189,
+      31
+     ]
+    ],
+    "names": [
+     "string",
+     "string",
+     "args",
+     "string",
+     "string",
+     "desc",
+     "subCmdFlagGroupsOneRequired",
+     "t",
+     "desc",
+     "_",
+     "_",
+     "Error"
+    ]
+   },
+   {
+    "path": "powershell_completions_test.go",
+    "positions": [
+     [
+      22,
+      42
+     ],
+     [
+      26,
+      6
+     ],
+     [
+      26,
+      16
+     ],
+     [
+      26,
+      29
+     ],
+     [
+      26,
+      43
+     ],
+     [
+      27,
+      4
+     ],
+     [
+      27,
+      18
+     ],
+     [
+      30,
+      26
+     ],
+     [
+      31,
+      3
+     ],
+     [
+      31,
+      13
+     ],
+     [
+      31,
+      19
+     ],
+     [
+      31,
+      51
+     ]
+    ],
+    "ends": [
+     [
+      22,
+      46
+     ],
+     [
+      26,
+      12
+     ],
+     [
+      26,
+      17
+     ],
+     [
+      26,
+      41
+     ],
+     [
+      26,
+      45
+     ],
+     [
+      27,
+      7
+     ],
+     [
+      27,
+      21
+     ],
+     [
+      30,
+      34
+     ],
+     [
+      31,
+      6
+     ],
+     [
+      31,
+      16
+     ],
+     [
+      31,
+      21
+     ],
+     [
+      31,
+      58
+     ]
+    ],
+    "names": [
+     "testing",
+     "assertNoErr",
+     "c",
+     "GenPowerShellCompletion",
+     "buf",
+     "output",
+     "String",
+     "activeHelpEnvVar",
+     "check",
+     "output",
+     "fmt",
+     "activeHelpVar"
+    ]
+   }
+  ]
+ },
+ "key": {
+  "method": "completion",
+  "path": "bash_completionsV2_test.go",
+  "line": 30,
+  "character": 41,
+  "extra": ""
+ },
+ "ops": [
+  {
+   "kind": "open",
+   "path": "bash_completionsV2_test.go"
+  },
+  {
+   "kind": "open",
+   "path": "flag_groups_test.go"
+  },
+  {
+   "kind": "open",
+   "path": "powershell_completions_test.go"
+  },
+  {
+   "kind": "open",
+   "path": "fish_completions_test.go"
+  },
+  {
+   "kind": "change",
+   "path": "fish_completions_test.go",
+   "start": [
+    25,
+    28
+   ],
+   "end": [
+    25,
+    49
+   ]
+  },
+  {
+   "kind": "change",
+   "path": "flag_groups_test.go",
+   "start": [
+    145,
+    3
+   ],
+   "end": [
+    145,
+    3
+   ],
+   "text": "_tmp"
+  },
+  {
+   "kind": "change",
+   "path": "flag_groups_test.go",
+   "start": [
+    145,
+    3
+   ],
+   "end": [
+    145,
+    7
+   ]
+  },
+  {
+   "kind": "close",
+   "path": "powershell_completions_test.go"
+  },
+  {
+   "kind": "open",
+   "path": "powershell_completions_test.go"
+  },
+  {
+   "kind": "change",
+   "path": "bash_completionsV2_test.go",
+   "start": [
+    3,
+    9
+   ],
+   "end": [
+    3,
+    9
+   ],
+   "text": "."
+  },
+  {
+   "kind": "save",
+   "path": "bash_completionsV2_test.go"
+  },
+  {
+   "kind": "change",
+   "path": "bash_completionsV2_test.go",
+   "start": [
+    3,
+    9
+   ],
+   "end": [
+    3,
+    10
+   ]
+  },
+  {
+   "kind": "save",
+   "path": "bash_completionsV2_test.go"
+  },
+  {
+   "kind": "change",
+   "path": "fish_completions_test.go",
+   "start": [
+    25,
+    28
+   ],
+   "end": [
+    25,
+    28
+   ],
+   "text": "ishScript(t *testing."
+  },
+  {
+   "kind": "close",
+   "path": "fish_completions_test.go"
+  }
+ ],
+ "case": {
+  "chain_step": 0,
+  "families": [],
+  "family": "H9",
+  "history_index": 0,
+  "history_seed": 3001,
+  "mode": "fresh",
+  "note": "window: fish_completions_test.go in the editor: delete 'ishScript(t *testing.' on line 25; inside: flag_groups_test.go: insert '_tmp' on line 145, then its inverse; powershell_completions_test.go: close, reopen; bash_completionsV2_test.go: insert '.' on line 3, then its inverse; then W reverted",
+  "seed": 3,
+  "timing": "settled"
+ },
+ "shape": "completion:changed",
+ "signature": "gopls|r1_history|completion:changed",
+ "expected": [
+  "DisplayName",
+  "MarkFlagDirname",
+  "MarkFlagFilename",
+  "MarkPersistentFlagDirname",
+  "MarkPersistentFlagFilename",
+  "Name",
+  "NameAndAliases",
+  "NamePadding",
+  "commandCalledAs.name",
+  "commandsMaxNameLen",
+  "flags.Name",
+  "hasNameOrAliasPrefix",
+  "lflags.Name"
+ ],
+ "actual": [
+  "DisplayName",
+  "MarkFlagDirname",
+  "MarkFlagFilename",
+  "MarkPersistentFlagDirname",
+  "MarkPersistentFlagFilename",
+  "Name",
+  "NameAndAliases",
+  "NamePadding",
+  "commandCalledAs.name",
+  "commandsMaxNameLen",
+  "hasNameOrAliasPrefix",
+  "helpCommand.commandCalledAs.name",
+  "parent.commandCalledAs.name"
+ ],
+ "reproduced": "1/3",
+ "note": "H9: window: fish_completions_test.go in the editor: delete 'ishScript(t *testing.' on line 25; inside: flag_groups_test.go: insert '_tmp' on line 145, then its inverse; powershell_completions_test.go: clo; flake 1/3 [r1:SCr r2:SCr r3:SCR] in 173s",
+ "violation": {
+  "oracle": "r1_history",
+  "server": "gopls-v0.23.0",
+  "project": "spf13/cobra@adbc8813901b",
+  "key": {
+   "method": "completion",
+   "path": "bash_completionsV2_test.go",
+   "line": 30,
+   "character": 41,
+   "extra": ""
+  },
+  "expected": [
+   "DisplayName",
+   "MarkFlagDirname",
+   "MarkFlagFilename",
+   "MarkPersistentFlagDirname",
+   "MarkPersistentFlagFilename",
+   "Name",
+   "NameAndAliases",
+   "NamePadding",
+   "commandCalledAs.name",
+   "commandsMaxNameLen",
+   "flags.Name",
+   "hasNameOrAliasPrefix",
+   "lflags.Name"
+  ],
+  "actual": [
+   "DisplayName",
+   "MarkFlagDirname",
+   "MarkFlagFilename",
+   "MarkPersistentFlagDirname",
+   "MarkPersistentFlagFilename",
+   "Name",
+   "NameAndAliases",
+   "NamePadding",
+   "commandCalledAs.name",
+   "commandsMaxNameLen",
+   "hasNameOrAliasPrefix",
+   "helpCommand.commandCalledAs.name",
+   "parent.commandCalledAs.name"
+  ],
+  "ops": [
+   {
+    "kind": "open",
+    "path": "bash_completionsV2_test.go"
+   },
+   {
+    "kind": "open",
+    "path": "flag_groups_test.go"
+   },
+   {
+    "kind": "open",
+    "path": "powershell_completions_test.go"
+   },
+   {
+    "kind": "open",
+    "path": "fish_completions_test.go"
+   },
+   {
+    "kind": "change",
+    "path": "fish_completions_test.go",
+    "start": [
+     25,
+     28
+    ],
+    "end": [
+     25,
+     49
+    ]
+   },
+   {
+    "kind": "change",
+    "path": "flag_groups_test.go",
+    "start": [
+     145,
+     3
+    ],
+    "end": [
+     145,
+     3
+    ],
+    "text": "_tmp"
+   },
+   {
+    "kind": "change",
+    "path": "flag_groups_test.go",
+    "start": [
+     145,
+     3
+    ],
+    "end": [
+     145,
+     7
+    ]
+   },
+   {
+    "kind": "close",
+    "path": "powershell_completions_test.go"
+   },
+   {
+    "kind": "open",
+    "path": "powershell_completions_test.go"
+   },
+   {
+    "kind": "change",
+    "path": "bash_completionsV2_test.go",
+    "start": [
+     3,
+     9
+    ],
+    "end": [
+     3,
+     9
+    ],
+    "text": "."
+   },
+   {
+    "kind": "save",
+    "path": "bash_completionsV2_test.go"
+   },
+   {
+    "kind": "change",
+    "path": "bash_completionsV2_test.go",
+    "start": [
+     3,
+     9
+    ],
+    "end": [
+     3,
+     10
+    ]
+   },
+   {
+    "kind": "save",
+    "path": "bash_completionsV2_test.go"
+   },
+   {
+    "kind": "change",
+    "path": "fish_completions_test.go",
+    "start": [
+     25,
+     28
+    ],
+    "end": [
+     25,
+     28
+    ],
+    "text": "ishScript(t *testing."
+   },
+   {
+    "kind": "close",
+    "path": "fish_completions_test.go"
+   }
+  ],
+  "detail": "{\"case\": {\"chain_step\": 0, \"families\": [], \"family\": \"H9\", \"history_index\": 0, \"history_seed\": 3001, \"mode\": \"fresh\", \"note\": \"window: fish_completions_test.go in the editor: delete 'ishScript(t *testing.' on line 25; inside: flag_groups_test.go: insert '_tmp' on line 145, then its inverse; powershell_completions_test.go: close, reopen; bash_completionsV2_test.go: insert '.' on line 3, then its inverse; then W reverted\", \"seed\": 3, \"timing\": \"settled\"}, \"note\": \"H9: window: fish_completions_test.go in the editor: delete 'ishScript(t *testing.' on line 25; inside: flag_groups_test.go: insert '_tmp' on line 145, then its inverse; powershell_completions_test.go: clo; flake 1/3 [r1:SCr r2:SCr r3:SCR] in 173s\", \"shape\": \"completion:changed\"}",
+  "reproduced": "1/3",
+  "reduced_ops": [],
+  "signature": "gopls|r1_history|completion:changed",
+  "run_id": "8c629b528584"
+ },
+ "replay_logs": [],
+ "project_files": {},
+ "incomplete": false
+}
